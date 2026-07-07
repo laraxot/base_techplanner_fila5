@@ -28,13 +28,21 @@ use Override;
 use Webmozart\Assert\Assert;
 
 /**
+<<<<<<< HEAD
  * @property Schema $emailForm
+=======
+ * @property \Filament\Schemas\Schema $emailForm
+>>>>>>> 6ed19256f (.)
  */
 class SendSpatieEmailPage extends XotBasePage
 {
     public ?array $emailData = [];
 
+<<<<<<< HEAD
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-paper-airplane';
+=======
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-paper-airplane';
+>>>>>>> 6ed19256f (.)
 
     protected string $view = 'notify::filament.pages.send-email';
 
@@ -66,7 +74,11 @@ class SendSpatieEmailPage extends XotBasePage
     }
 
     /**
+<<<<<<< HEAD
      * @return array<string, TextInput|Select|RichEditor>
+=======
+     * @return array<string, \Filament\Forms\Components\TextInput|\Filament\Forms\Components\Select|\Filament\Forms\Components\RichEditor>
+>>>>>>> 6ed19256f (.)
      */
     public function getEmailFormSchema(): array
     {

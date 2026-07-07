@@ -33,7 +33,11 @@ class Register extends Component implements HasSchemas
      *
      * @var array<string, mixed>
      */
+<<<<<<< HEAD
     public $data = [];
+=======
+    public array $data = [];
+>>>>>>> 6ed19256f (.)
 
     /**
      * Mount the component.
@@ -52,19 +56,39 @@ class Register extends Component implements HasSchemas
             ->components([
                 TextInput::make('name')
                     ->required()
+<<<<<<< HEAD
+=======
+                    ->label(__('Name'))
+                    ->placeholder(__('Enter your name'))
+>>>>>>> 6ed19256f (.)
                     ->autofocus(),
                 TextInput::make('email')
                     ->email()
                     ->required()
+<<<<<<< HEAD
+=======
+                    ->label(__('Email'))
+                    ->placeholder(__('Enter your email'))
+>>>>>>> 6ed19256f (.)
                     ->unique('users', 'email'),
                 TextInput::make('password')
                     ->password()
                     ->required()
+<<<<<<< HEAD
+=======
+                    ->label(__('Password'))
+                    ->placeholder(__('Enter your password'))
+>>>>>>> 6ed19256f (.)
                     ->rules([PasswordRule::defaults()])
                     ->revealable(),
                 TextInput::make('password_confirmation')
                     ->password()
                     ->required()
+<<<<<<< HEAD
+=======
+                    ->label(__('Confirm Password'))
+                    ->placeholder(__('Confirm your password'))
+>>>>>>> 6ed19256f (.)
                     ->same('password')
                     ->revealable(),
             ])

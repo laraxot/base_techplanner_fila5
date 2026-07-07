@@ -40,5 +40,8 @@ return new class extends Migration
         Schema::dropIfExists('posts');
     }
 };
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 6ed19256f (.)

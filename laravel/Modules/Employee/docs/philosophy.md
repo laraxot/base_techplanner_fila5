@@ -53,4 +53,8 @@ The `Employee` module, as the central repository for sensitive HR and workforce 
 4.  **Git (MCP)**: Aids in reviewing changes to employee data models, HR-related actions, or access control policies, ensuring secure and compliant development practices.
 5.  **Sequential Thinking (MCP)**: Crucial for analyzing complex HR workflows (e.g., onboarding, performance review cycles), helping to break down and understand intricate process flows.
 
+<<<<<<< HEAD
 By leveraging these MCPs, the `Employee` module can ensure its critical role in managing the workforce is more efficient, secure, and transparent, ultimately contributing to a more robust and compliant HR system.
+=======
+By leveraging these MCPs, the `Employee` module can ensure its critical role in managing the workforce is more efficient, secure, and transparent, ultimately contributing to a more robust and compliant HR system.
+>>>>>>> 6ed19256f (.)

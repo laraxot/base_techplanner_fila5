@@ -1,7 +1,10 @@
 # Activity Module - Path Assets Resolution
 
 **Data Creazione**: 2026-01-02
+<<<<<<< HEAD
 **Data Creazione**: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 **Status**: ✅ RESOLVED
 **Versione**: 1.0.0
 
@@ -58,10 +61,17 @@ Il problema è stato risolto a livello di framework (Xot) con:
 
 - [Xot Module Path Generation Philosophy](../Xot/docs/module-path-generation-philosophy.md)
 - [Xot Module Path Error Resolution](../Xot/docs/module-path-error-resolution.md)
+<<<<<<< HEAD
 - [Xot Module Path Generation Philosophy](../xot/docs/module-path-generation-philosophy.md)
 - [Xot Module Path Error Resolution](../xot/docs/module-path-error-resolution.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Activity Philosophy](./philosophy.md)
 
 ---
 
+<<<<<<< HEAD
 **Filosofia**: Activity è non-intrusivo - non blocca il sistema per risorse opzionali.
+=======
+**Filosofia**: Activity è non-intrusivo - non blocca il sistema per risorse opzionali.
+>>>>>>> 6ed19256f (.)

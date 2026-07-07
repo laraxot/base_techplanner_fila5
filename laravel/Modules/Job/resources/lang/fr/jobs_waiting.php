@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -71,6 +72,35 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'connection' => [
+            'label' => 'Connexion',
+        ],
+        'queue' => [
+            'label' => 'File d\'attente',
+        ],
+        'payload' => [
+            'label' => 'Charge Utile',
+        ],
+        'attempts' => [
+            'label' => 'Tentatives',
+        ],
+        'status' => [
+            'label' => 'Statut',
+        ],
+        'display_name' => [
+            'label' => 'Nom d\'Affichage',
+        ],
+        'reserved_at' => [
+            'label' => 'Réservé À',
+        ],
+        'available_at' => [
+            'label' => 'Disponible À',
+        ],
+        'created_at' => [
+            'label' => 'Créé À',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [

@@ -116,7 +116,10 @@ $prop = property_exists($class, 'property') ? $class::$property : [];
 
 ### **Documentazione Correlata**
 - [Wizard Step Implementation](../../../Modules/<main module>/docs/wizard-step-implementation.md)
+<<<<<<< HEAD
 - [Wizard Step Implementation](../../../modules/<main module>/docs/wizard-step-implementation.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Infinite Loop Prevention](../critical-fixes/infinite-loop-prevention.md)
 
 ---
@@ -135,4 +138,8 @@ Questo fix dimostra l'importanza di:
 3. **Property existence checking** per codice robusto
 4. **Xdebug monitoring** per rilevazione loop infiniti
 
+<<<<<<< HEAD
 *Il sistema <main module> ora è resiliente a questo tipo di errori critici.*
+=======
+*Il sistema <main module> ora è resiliente a questo tipo di errori critici.*
+>>>>>>> 6ed19256f (.)

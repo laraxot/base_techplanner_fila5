@@ -1,6 +1,10 @@
 includes:
     - ./phpstan-baseline.neon
+<<<<<<< HEAD
     #- ./../../vendor/larastan/larastan/extension.neon
+=======
+    - ./../../vendor/larastan/larastan/extension.neon
+>>>>>>> 6ed19256f (.)
     #- ./../../vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
     #- ./vendor/symplify/phpstan-rules/config/code-complexity-rules.neon
     #- ./vendor/symplify/phpstan-rules/config/collector-rules.neon
@@ -13,6 +17,7 @@ parameters:
     level: max
 
     paths:
+<<<<<<< HEAD
         - ../../app
         - ../../database
         - ../../resources
@@ -42,6 +47,9 @@ parameters:
         - ../../Modules/User/storage
         - ../../Modules/User/public
         - ../../Modules/User/node_modules
+=======
+        - .
+>>>>>>> 6ed19256f (.)
     
           
 
@@ -58,6 +66,10 @@ parameters:
         - ./*/build/*
         - ./*/vendor/*
         - ./*/docs/*
+<<<<<<< HEAD
+=======
+        - ./*/Tests/*
+>>>>>>> 6ed19256f (.)
         - ./*/_ide_helper.php
 
     bootstrapFiles:
@@ -82,8 +94,11 @@ parameters:
     reportUnmatchedIgnoredErrors: false
     checkOctaneCompatibility: false
     checkModelProperties: false
+<<<<<<< HEAD
     bootstrapFiles:
         - ./phpstan_constants.php
         - ../../vendor/autoload.php
     bootstrapped: false
+=======
+>>>>>>> 6ed19256f (.)
 

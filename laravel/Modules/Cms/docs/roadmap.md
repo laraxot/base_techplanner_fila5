@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Roadmap (Module Cms)
 
 ## Current roadmap
@@ -287,6 +288,8 @@ Cms Module
 
 ---
 
+=======
+>>>>>>> 6ed19256f (.)
 # CMS Module - Complete Roadmap
 
 ## Module Overview
@@ -489,4 +492,7 @@ Cms/
 **Last Updated**: 2026-01-02
 **Maintainer**: Team Laraxot
 **Status**: Active Development
+<<<<<<< HEAD
 *Questa roadmap è specifica per il modulo Cms e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
+=======
+>>>>>>> 6ed19256f (.)

@@ -86,4 +86,7 @@ Rimuovere @mixin per classi IdeHelper* generate da ide-helper package (non esist
 ---
 
 **Aggiornato**: 2025-10-10T10:54:56+02:00
+<<<<<<< HEAD
 **Aggiornato**: [DATE]T10:54:56+02:00
+=======
+>>>>>>> 6ed19256f (.)

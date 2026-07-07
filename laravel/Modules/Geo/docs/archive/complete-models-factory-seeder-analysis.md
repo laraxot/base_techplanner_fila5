@@ -277,6 +277,7 @@ Tutti i modelli BaseModel, BasePivot, BaseUser, etc. sono classi astratte utiliz
 ## Collegamenti Documentazione
 
 ### Documentazione Moduli
+<<<<<<< HEAD
 - [<nome progetto> Analysis](../laravel/modules/<nome progetto>/docs/modelli_factory_seeder_analisi.md)
 - [User Analysis](../laravel/modules/user/docs/modelli_factory_seeder_analisi.md)
 - [Geo Analysis](../laravel/modules/geo/docs/modelli_factory_seeder_analisi.md)
@@ -284,6 +285,8 @@ Tutti i modelli BaseModel, BasePivot, BaseUser, etc. sono classi astratte utiliz
 - [Notify Analysis](../laravel/modules/notify/docs/modelli_factory_seeder_analisi.md)
 - [Job Analysis](../laravel/modules/job/docs/modelli_factory_seeder_analisi.md)
 - [Altri Moduli Analysis](../laravel/modules/activity/docs/modelli_factory_seeder_analisi.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [<nome progetto> Analysis](../laravel/Modules/<nome progetto>/docs/modelli_factory_seeder_analisi.md)
 - [User Analysis](../laravel/Modules/User/docs/modelli_factory_seeder_analisi.md)
 - [Geo Analysis](../laravel/Modules/Geo/docs/modelli_factory_seeder_analisi.md)
@@ -306,4 +309,8 @@ Tutti i modelli BaseModel, BasePivot, BaseUser, etc. sono classi astratte utiliz
 
 *Ultimo aggiornamento: Gennaio 2025*
 *Autore: Sistema di analisi automatizzata*
+<<<<<<< HEAD
 *Scope: Completo sistema <nome progetto> (14 moduli, ~150 modelli)*
+=======
+*Scope: Completo sistema <nome progetto> (14 moduli, ~150 modelli)*
+>>>>>>> 6ed19256f (.)

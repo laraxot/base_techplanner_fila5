@@ -588,8 +588,13 @@ Consulta l'esempio completo all'inizio di questo documento per una implementazio
 ## Riferimenti
 
 - [Documentazione Filament](https://filamentphp.com/docs)
+<<<<<<< HEAD
 - [Documentazione XotBaseResource](/var/www/html/exa/base_orisbroker_fila5/laravel/Modules/Xot/project_docs/resource.md)
 - [Best Practices Laraxot](/var/www/html/exa/base_orisbroker_fila5/laravel/Modules/Xot/project_docs/best-practices.md)
+=======
+- [Documentazione XotBaseResource](/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/project_docs/resource.md)
+- [Best Practices Laraxot](/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/project_docs/best-practices.md)
+>>>>>>> 6ed19256f (.)
 
 ## Regole per Widget Filament: Path View e Localizzazione
 
@@ -1014,4 +1019,8 @@ Prima di considerare completa una risorsa Filament, verificare:
 - `CreateAppointment.php` - Estende `XotBaseCreateRecord`
 - `EditAppointment.php` - Estende `XotBaseEditRecord`
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: gennaio 2025 - Correzioni per campi reali e rimozione label hardcoded*
+=======
+*Ultimo aggiornamento: gennaio 2025 - Correzioni per campi reali e rimozione label hardcoded*
+>>>>>>> 6ed19256f (.)

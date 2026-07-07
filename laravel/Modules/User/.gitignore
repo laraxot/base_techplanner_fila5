@@ -102,8 +102,11 @@ Thumbs.db
 *.old2
 *.backup
 *.backup.*
+<<<<<<< HEAD
 *.backup-*
 *.backup_*
+=======
+>>>>>>> 6ed19256f (.)
 *.bak
 *.bakcup
 *.new
@@ -160,6 +163,7 @@ user_test_data.csv
 *.fila2
 laravel
 public_html
+<<<<<<< HEAD
 lang/lang/
 _docs/
 _docs/
@@ -174,3 +178,5 @@ _docs/
 *.orig
 *.rej
 *~head
+=======
+>>>>>>> 6ed19256f (.)

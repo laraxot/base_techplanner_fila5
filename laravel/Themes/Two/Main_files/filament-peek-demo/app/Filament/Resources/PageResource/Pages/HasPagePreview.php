@@ -2,8 +2,13 @@
 
 namespace App\Filament\Resources\PageResource\Pages;
 
+<<<<<<< HEAD
 use App\Filament\Fields\PageContent;
 use Filament\Schemas\Components\Component;
+=======
+use Filament\Schemas\Components\Component;
+use App\Filament\Fields\PageContent;
+>>>>>>> 6ed19256f (.)
 use Pboivin\FilamentPeek\Pages\Actions\PreviewAction;
 use Pboivin\FilamentPeek\Pages\Concerns\HasBuilderPreview;
 use Pboivin\FilamentPeek\Pages\Concerns\HasPreviewModal;
@@ -45,5 +50,8 @@ trait HasPagePreview
         ];
     }
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 6ed19256f (.)

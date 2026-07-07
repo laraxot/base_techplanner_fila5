@@ -85,7 +85,11 @@ final class GetAddressFromGoogleMapsAction
     {
         $firstResult = $responseData->results->first();
 
+<<<<<<< HEAD
         if (! $firstResult instanceof GoogleMapResultData) {
+=======
+        if (! ($firstResult instanceof GoogleMapResultData)) {
+>>>>>>> 6ed19256f (.)
             throw GoogleMapsApiException::noResultsFound();
         }
 
@@ -120,14 +124,22 @@ final class GetAddressFromGoogleMapsAction
         $component = $components
             ->toCollection()
             ->first(function ($component) use ($types) {
+<<<<<<< HEAD
                 if (! $component instanceof GoogleMapAddressComponentData) {
+=======
+                if (! ($component instanceof GoogleMapAddressComponentData)) {
+>>>>>>> 6ed19256f (.)
                     return false;
                 }
 
                 return ! empty($component->types) && count(array_intersect($component->types, $types)) > 0;
             });
 
+<<<<<<< HEAD
         if (! $component instanceof GoogleMapAddressComponentData) {
+=======
+        if (! ($component instanceof GoogleMapAddressComponentData)) {
+>>>>>>> 6ed19256f (.)
             return null;
         }
 

@@ -158,4 +158,8 @@ Quando sistemo un test esistente che non funziona:
 
 **Ultimo aggiornamento**: Gennaio 2025
 **Status**: REGOLA ASSOLUTA E NON NEGOZIABILE
+<<<<<<< HEAD
 **Applicabilità**: UNIVERSALE - ogni test, ogni modulo, ogni scenario
+=======
+**Applicabilità**: UNIVERSALE - ogni test, ogni modulo, ogni scenario
+>>>>>>> 6ed19256f (.)

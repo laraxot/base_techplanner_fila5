@@ -172,7 +172,11 @@ php artisan view:clear
 ## Collegamenti Correlati
 
 - [Documentazione Temi](../../temi.md)
+<<<<<<< HEAD
 - [Gestione Conflitti Git](../../../../docs/git-conflicts-management.md)
+=======
+- [Gestione Conflitti Git](../../../docs/git-conflicts-management.md)
+>>>>>>> 6ed19256f (.)
 - [Architettura CMS](../../architecture.md)
 - [Best Practices Sviluppo](../../best-practices.md)
 
@@ -186,4 +190,7 @@ php artisan view:clear
 
 *Ultimo aggiornamento: 6 gennaio 2025*
 *Autore: Sistema di Risoluzione Conflitti Git*
+<<<<<<< HEAD
 *Autore: Sistema di Risoluzione Conflitti Git*
+=======
+>>>>>>> 6ed19256f (.)

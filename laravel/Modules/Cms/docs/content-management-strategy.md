@@ -7,7 +7,10 @@ Seguendo i principi **zen** e **minimalista** di Laraxot, la gestione dei conten
 ### 🧘 **Principi Zen del Contenuto**
 - **Semplicità**: Informazioni chiare e immediate
 - **Trasparenza**: Conformità normativa GDPR per dati sanitari
+<<<<<<< HEAD
 - **Trasparenza**: Conformità normativa GDPR per dati sanitari  
+=======
+>>>>>>> 6ed19256f (.)
 - **Accessibilità**: Contenuti comprensibili a tutti gli utenti
 - **Fiducia**: Linguaggio professionale e rassicurante
 - **Etica**: Rispetto della privacy e dei diritti del paziente
@@ -18,7 +21,10 @@ Le pagine istituzionali devono:
 - Garantire **compliance normativa** (GDPR, Codice Privacy)
 - Facilitare l'**accessibilità** per tutti i pazienti
 - Riflettere la **missione** di promozione della <slogan>
+<<<<<<< HEAD
 - Riflettere la **missione** di promozione della salute orale
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Struttura delle Pagine Istituzionali
 
@@ -32,7 +38,10 @@ Le pagine istituzionali devono:
 - Certificazioni e riconoscimenti
 
 ### 🔒 **Pagina 14: Privacy Policy**
+<<<<<<< HEAD
 ### 🔒 **Pagina 14: Privacy Policy**  
+=======
+>>>>>>> 6ed19256f (.)
 **Filosofia**: Trasparenza totale nella gestione dati sanitari
 **Compliance**: GDPR, Codice Privacy, normative sanitarie
 **Componenti strutturati**:
@@ -97,12 +106,18 @@ Le pagine istituzionali devono:
 Questa strategia integra:
 - [Gestione Homepage](/var/www/html/_bases/<directory progetto>/project_docs/gestione-homepage.md)
 - [Best Practice UX](/var/www/html/_bases/<directory progetto>/project_docs/ux-design-principles.md)
+<<<<<<< HEAD
 - [Best Practice UX](/var/www/html/_bases/<directory progetto>/project_docs/ux-design-principles.md)  
+=======
+>>>>>>> 6ed19256f (.)
 - [Compliance GDPR](/var/www/html/_bases/<directory progetto>/project_docs/privacy-compliance.md)
 
 ---
 
 **Ultimo aggiornamento**: Gennaio 2025
 **Revisione**: Conforme regole Laraxot olistica e filosofia zen del contenuto sanitario
+<<<<<<< HEAD
 **Ultimo aggiornamento**: Gennaio 2025  
 **Revisione**: Conforme regole Laraxot olistica e filosofia zen del contenuto sanitario 
+=======
+>>>>>>> 6ed19256f (.)

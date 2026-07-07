@@ -6,6 +6,7 @@ return [
     'fields' => [
         'name' => [
             'label' => 'name',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -21,6 +22,14 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'email' => [
+            'label' => 'email',
+        ],
+        'password' => [
+            'label' => 'password',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -34,6 +43,7 @@ return [
             'label' => 'cancel',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -43,4 +53,6 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

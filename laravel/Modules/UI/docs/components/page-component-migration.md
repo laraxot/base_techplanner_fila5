@@ -224,4 +224,7 @@ Log::error('Error loading page content', [
 - [Documentazione Componenti Blade](https://laravel.com/docs/blade#components)
 - [Sistema di Blocchi UI](../blocks/blocks-system.md)
 - [Migrazione CMS](../../Cms/docs/migrations/02_theme_content_to_page_component.md)
+<<<<<<< HEAD
 - [Migrazione CMS](../../cms/docs/migrations/02_theme_content_to_page_component.md)
+=======
+>>>>>>> 6ed19256f (.)

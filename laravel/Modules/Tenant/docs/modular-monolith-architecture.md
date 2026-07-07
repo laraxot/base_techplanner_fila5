@@ -76,8 +76,12 @@ Use one of these patterns for inter-module communication:
    ```php
    // In source module
    event(new TenantCreated($tenant));
+<<<<<<< HEAD
    
    
+=======
+
+>>>>>>> 6ed19256f (.)
    // In consuming module
    class UpdateBillingOnTenantCreated
    {
@@ -92,8 +96,12 @@ Use one of these patterns for inter-module communication:
    ```php
    // In service provider
    $this->app->bind(TenantBillingServiceInterface::class, TenantBillingService::class);
+<<<<<<< HEAD
    
    
+=======
+
+>>>>>>> 6ed19256f (.)
    // In consuming class
    public function __construct(
        private TenantBillingServiceInterface $billingService
@@ -170,16 +178,24 @@ sequenceDiagram
     participant App as Application Layer
     participant Domain as Domain Layer
     participant Infra as Infrastructure
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     UI->>App: CreateTenantRequest
     App->>Domain: CreateTenantCommand
     Domain->>Infra: TenantRepository::create()
     Infra-->>Domain: Tenant
     Domain-->>App: TenantCreated event
     App-->>UI: TenantResource
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     Note over Domain,Infra: Transaction boundary
     Note over Domain: Business rules validation
     Note over App: Event dispatch
@@ -385,12 +401,19 @@ sequenceDiagram
 - [Module Structure](structure.md)
 - [Event System](../Xot/docs/event_system.md)
 - [Testing Strategy](../testing/README.md)
+<<<<<<< HEAD
 - [Event System](../xot/docs/event_system.md)
 - [Testing Strategy](../testing/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [API Documentation](../api.md)
 
 ## References
 
 - [Architecting Laravel the Right Way](https://medium.com/@mohamadshahkhajeh/architecting-laravel-the-right-way-modular-monoliths-done-right-ef-b8-8f-62d30a8b0efd)
 - [Domain-Driven Design](https://domainlanguage.com/ddd/)
+<<<<<<< HEAD
 - [Laravel Modules Documentation](https://nwidart.com/laravel-modules/v6/introduction)
+=======
+- [Laravel Modules Documentation](https://nwidart.com/laravel-modules/v6/introduction)
+>>>>>>> 6ed19256f (.)

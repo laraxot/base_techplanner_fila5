@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 use Filament\Facades\Filament;
 use LaraZeus\SpatieTranslatable\SpatieTranslatablePlugin;
 use Livewire\Livewire;

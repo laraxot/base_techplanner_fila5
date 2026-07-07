@@ -6,6 +6,10 @@ use Rector\Config\RectorConfig;
 use Rector\Set\ValueObject\LevelSetList;
 use Rector\Set\ValueObject\SetList;
 use Rector\ValueObject\PhpVersion;
+<<<<<<< HEAD
+=======
+use Rector\ValueObject\PhpVersion;
+>>>>>>> 6ed19256f (.)
 
 /*
  * Standard Rector Configuration for Laravel Modules

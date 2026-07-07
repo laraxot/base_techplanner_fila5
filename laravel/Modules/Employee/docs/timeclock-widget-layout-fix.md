@@ -198,4 +198,8 @@
 
 *Documento creato: 02/09/2025*  
 *Issue identificata: Layout verticale non responsive*  
+<<<<<<< HEAD
 *Fix target: 3-column responsive grid*
+=======
+*Fix target: 3-column responsive grid*
+>>>>>>> 6ed19256f (.)

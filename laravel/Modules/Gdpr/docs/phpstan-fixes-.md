@@ -280,12 +280,19 @@ Il modulo GDPR gestisce:
 - [← GDPR Module README](./README.md)
 - [← PHPStan Session Report](../../../docs/phpstan/filament-v4-fixes-session.md)
 - [← Root Documentation](../../../docs/index.md)
+<<<<<<< HEAD
 - [← GDPR Module README](./readme.md)
 - [← PHPStan Session Report](../../../../docs/phpstan/filament-v4-fixes-session.md)
 - [← Root Documentation](../../../../docs/index.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ---
 
 **Status**: ✅ COMPLETATO
 **PHPStan Level**: 9
+<<<<<<< HEAD
 **Maintenance**: Nessuna azione richiesta
+=======
+**Maintenance**: Nessuna azione richiesta
+>>>>>>> 6ed19256f (.)

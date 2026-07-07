@@ -19,27 +19,37 @@ return [
             'placeholder' => 'name',
             'helper_text' => 'name',
             'description' => 'name',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'email' => [
             'label' => 'email',
             'placeholder' => 'email',
             'helper_text' => 'email',
             'description' => 'email',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'Current password' => [
             'label' => 'Current password',
             'placeholder' => 'Current password',
             'helper_text' => 'Current password',
             'description' => 'Current password',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'passwordConfirmation' => [
             'label' => 'passwordConfirmation',
             'placeholder' => 'passwordConfirmation',
             'helper_text' => 'passwordConfirmation',
             'description' => 'passwordConfirmation',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
         'current_password' => [
@@ -53,6 +63,8 @@ return [
             'placeholder' => 'password_confirmation',
             'helper_text' => 'password_confirmation',
             'description' => 'password_confirmation',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -67,6 +79,7 @@ return [
             'tooltip' => 'updatePasswordAction',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'name' => 'My Profile',
         'plural' => 'My Profile',
@@ -80,4 +93,9 @@ return [
     ],
     'label' => 'My Profile',
     'plural_label' => 'My Profile (Plurale)',
+=======
+    'navigation' => [],
+    'label' => '',
+    'plural_label' => '',
+>>>>>>> 6ed19256f (.)
 ];

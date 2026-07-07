@@ -74,4 +74,8 @@ Sistema completo per la gestione degli utenti, inclusi CRUD, validazione e integ
 
 ## Related Features
 - [Autenticazione](./autenticazione.md)
+<<<<<<< HEAD
 - [Autorizzazione](./autorizzazione.md) 
+=======
+- [Autorizzazione](./autorizzazione.md)
+>>>>>>> 6ed19256f (.)

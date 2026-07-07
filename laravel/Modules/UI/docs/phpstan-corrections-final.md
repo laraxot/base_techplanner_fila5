@@ -110,4 +110,8 @@
 **Data**: 2025-01-06
 **Status**: ✅ Tutte le correzioni completate
 **PHPStan Level**: 10 ✅
+<<<<<<< HEAD
 **Errori totali**: 0 ✅
+=======
+**Errori totali**: 0 ✅
+>>>>>>> 6ed19256f (.)

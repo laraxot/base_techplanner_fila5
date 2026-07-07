@@ -518,5 +518,9 @@ echo "5. Run quality checks"
 
 **Workflow Version**: 1.0
 **Last Updated**: 2025-11-17
+<<<<<<< HEAD
 
 **Maintained by**: Xot Module Development Team
+=======
+**Maintained by**: Xot Module Development Team
+>>>>>>> 6ed19256f (.)

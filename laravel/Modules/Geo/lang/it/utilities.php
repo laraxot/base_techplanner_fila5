@@ -8,49 +8,67 @@ return [
             'label' => 'Operazione',
             'placeholder' => 'Seleziona l\'operazione da eseguire',
             'help' => 'Operazione di utilità da eseguire',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'input' => [
             'label' => 'Input',
             'placeholder' => 'Inserisci i dati di input',
             'help' => 'Dati di input per l\'operazione',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'options' => [
             'label' => 'Opzioni',
             'placeholder' => 'Configura le opzioni dell\'operazione',
             'help' => 'Opzioni per personalizzare l\'operazione',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'format' => [
             'label' => 'Formato',
             'placeholder' => 'Seleziona il formato di output',
             'help' => 'Formato per l\'output dell\'operazione',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'precision' => [
             'label' => 'Precisione',
             'placeholder' => 'Inserisci la precisione',
             'help' => 'Precisione per i calcoli numerici',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'units' => [
             'label' => 'Unità',
             'placeholder' => 'Seleziona le unità di misura',
             'help' => 'Unità di misura per i calcoli',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'validation' => [
@@ -163,6 +181,7 @@ return [
         'gpx' => 'GPX',
         'shapefile' => 'Shapefile',
     ],
+<<<<<<< HEAD
     'label' => 'Utilities',
     'plural_label' => 'Utilities (Plurale)',
     'navigation' => [
@@ -187,4 +206,6 @@ return [
             'label' => 'Elimina Utilities',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

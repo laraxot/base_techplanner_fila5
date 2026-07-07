@@ -72,6 +72,7 @@
 ---
 
 ## 5. Collegamenti e approfondimenti
+<<<<<<< HEAD
 - [Geo/project_docs/geo-json-model.md](geo-json-model.md)
 - [Sushi - usesushi.dev](https://usesushi.dev/)
 - [Squire PHP](https://github.com/squirephp/squire)
@@ -81,6 +82,8 @@
 ---
 
 Responsabile: Cascade AI 
+=======
+>>>>>>> 6ed19256f (.)
 - [geo-json-model.md](geo-json-model.md)
 - [Sushi - usesushi.dev](https://usesushi.dev/)
 - [Squire PHP](https://github.com/squirephp/squire)
@@ -90,4 +93,8 @@ Responsabile: Cascade AI
 ---
 
 **Ultimo aggiornamento:** 2025-01-15
+<<<<<<< HEAD
 Responsabile: Antigravity
+=======
+Responsabile: Antigravity
+>>>>>>> 6ed19256f (.)

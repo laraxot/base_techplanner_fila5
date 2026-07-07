@@ -4,11 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Model\Update;
 
+<<<<<<< HEAD
+=======
+use Exception;
+>>>>>>> 6ed19256f (.)
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Facades\Session;
 use Modules\Xot\Actions\Model\UpdateAction;
 use Modules\Xot\Datas\RelationData as RelationDTO;
+<<<<<<< HEAD
+=======
+use RuntimeException;
+>>>>>>> 6ed19256f (.)
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
@@ -21,8 +29,13 @@ class BelongsToManyAction
         Assert::isInstanceOf($rows = $relationDTO->rows, BelongsToMany::class);
         // dddx(['row' => $row, 'relation' => $relation]);
         if (
+<<<<<<< HEAD
             \in_array('to', array_keys($relationDTO->data), false)
                 || \in_array('from', array_keys($relationDTO->data), false)
+=======
+            \in_array('to', array_keys($relationDTO->data), false) ||
+                \in_array('from', array_keys($relationDTO->data), false)
+>>>>>>> 6ed19256f (.)
         ) {
             // $this->saveMultiselectTwoSides($row, $relation->name, $relation->data);
             $to = $relationDTO->data['to'] ?? [];
@@ -57,7 +70,11 @@ class BelongsToManyAction
                 $ids[] = $res->getKey();
                 $models[] = $res;
             } else {
+<<<<<<< HEAD
                 throw new \RuntimeException(sprintf('Key "%s" not found in relation data.', $keyName));
+=======
+                throw new RuntimeException(sprintf('Key "%s" not found in relation data.', $keyName));
+>>>>>>> 6ed19256f (.)
             }
         }
 
@@ -69,8 +86,13 @@ class BelongsToManyAction
                 Assert::allScalar($ids, 'The "ids" array must contain only scalar values.');
 
                 $rows->syncWithoutDetaching($ids);
+<<<<<<< HEAD
             } catch (\Exception $e) {
                 throw new \RuntimeException(sprintf('Error during syncWithoutDetaching: %s', $e->getMessage()));
+=======
+            } catch (Exception $e) {
+                throw new RuntimeException(sprintf('Error during syncWithoutDetaching: %s', $e->getMessage()));
+>>>>>>> 6ed19256f (.)
             }
         }
     }

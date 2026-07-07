@@ -33,7 +33,11 @@ trait HasTeams
             ->withTimestamps()
             ->withPivot(['role']);
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     /**
      * @param Team|int $team
      * @param string|null $role
@@ -43,6 +47,7 @@ trait HasTeams
     {
         $teamId = $team instanceof Team ? $team->id : $team;
         $query = $this->teams()->where('team_id', $teamId);
+<<<<<<< HEAD
         
         if ($role !== null) {
             $query->wherePivot('role', $role);
@@ -51,6 +56,16 @@ trait HasTeams
         return $query->exists();
     }
     
+=======
+
+        if ($role !== null) {
+            $query->wherePivot('role', $role);
+        }
+
+        return $query->exists();
+    }
+
+>>>>>>> 6ed19256f (.)
     /**
      * @param Team $team
      * @param string $role
@@ -97,7 +112,11 @@ class TeamRoleManager
                 fn() => $this->loadRolePermissions($team)
             );
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     /**
      * @param Team $team
      * @param string $role
@@ -113,7 +132,11 @@ class TeamRoleManager
         return isset($permissions[$role][$permission])
             && $permissions[$role][$permission] === true;
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     /**
      * @param Team $team
      * @param string $role
@@ -129,7 +152,11 @@ class TeamRoleManager
             TeamPermission::where('team_id', $team->id)
                 ->where('role', $role)
                 ->delete();
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> 6ed19256f (.)
             $data = array_map(
                 fn($permission) => [
                     'team_id' => $team->id,
@@ -140,7 +167,11 @@ class TeamRoleManager
                 ],
                 $permissions
             );
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> 6ed19256f (.)
             TeamPermission::insert($data);
             Cache::tags(['teams', 'roles'])->flush();
         });
@@ -197,9 +228,15 @@ class HasTeamsTraitTest extends TestCase
     {
         $user = User::factory()->create();
         $team = Team::factory()->create();
+<<<<<<< HEAD
         
         $user->assignTeam($team, 'member');
         
+=======
+
+        $user->assignTeam($team, 'member');
+
+>>>>>>> 6ed19256f (.)
         $this->assertTrue($user->belongsToTeam($team));
         $this->assertTrue($user->belongsToTeam($team, 'member'));
         $this->assertFalse($user->belongsToTeam($team, 'admin'));
@@ -215,14 +252,22 @@ class TeamRoleManagerTest extends TestCase
     {
         $team = Team::factory()->create();
         $manager = new TeamRoleManager();
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         $manager->assignPermissions($team, 'admin', [
             'view',
             'create',
             'update',
             'delete'
         ]);
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         $this->assertTrue(
             $manager->hasPermission($team, 'admin', 'view')
         );

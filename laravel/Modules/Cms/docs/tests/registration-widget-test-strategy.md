@@ -229,6 +229,7 @@ $resourceClass = XotData::make()->getUserResourceClassByType($type);
 - [Register Type Test Implementation](./register-type-test-implementation.md)
 
 ### **Documentazione Root**
+<<<<<<< HEAD
 - [User Module: RegistrationWidget](../../../User/docs/widgets/registration-widget.md)
 - [Xot Module: Testing Infrastructure](../../../Xot/docs/testing/infrastructure.md)
 - [Testing Organization](../../../../../docs/testing-organization.md)
@@ -237,6 +238,14 @@ $resourceClass = XotData::make()->getUserResourceClassByType($type);
 ### **Documentazione Moduli Correlati**
 - [User Module: RegistrationWidget](../../../user/docs/widgets/registration-widget.md)
 - [Xot Module: Testing Infrastructure](../../../xot/docs/testing/infrastructure.md)
+=======
+- [Testing Organization](../../../../docs/testing-organization.md)
+- [PestPHP Best Practices](../../../../docs/testing/pestphp-best-practices.md)
+
+### **Documentazione Moduli Correlati**
+- [User Module: RegistrationWidget](../../../User/docs/widgets/registration-widget.md)
+- [Xot Module: Testing Infrastructure](../../../Xot/docs/testing/infrastructure.md)
+>>>>>>> 6ed19256f (.)
 
 ## 🎉 Conclusioni
 
@@ -254,4 +263,8 @@ Il modulo Cms ora ha una **strategia di testing solida** e **replicabile** per a
 ---
 **Ultimo aggiornamento**: Gennaio 2025
 **Status**: ✅ PRODUCTION READY
+<<<<<<< HEAD
 **Performance**: 9 test / 4.44s / 100% pass rate
+=======
+**Performance**: 9 test / 4.44s / 100% pass rate
+>>>>>>> 6ed19256f (.)

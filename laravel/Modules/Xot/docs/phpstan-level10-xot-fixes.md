@@ -313,4 +313,8 @@ $data = process_items();
 
 Il modulo Xot è ora **completamente compliant** con PHPStan Level 10. Tutti i pattern applicati possono essere riutilizzati negli altri moduli per una correzione sistematica e coerente.
 
+<<<<<<< HEAD
 **Status**: ✅ **COMPLETATO** - Pronto per production con type safety massima.
+=======
+**Status**: ✅ **COMPLETATO** - Pronto per production con type safety massima.
+>>>>>>> 6ed19256f (.)

@@ -291,4 +291,8 @@ return [
         'metadata_ttl' => env('SPID_METADATA_CACHE_TTL', 86400), // 24 ore
         'provider_metadata_ttl' => env('SPID_PROVIDER_METADATA_CACHE_TTL', 3600), // 1 ora
     ],
+<<<<<<< HEAD
 ];
+=======
+];
+>>>>>>> 6ed19256f (.)

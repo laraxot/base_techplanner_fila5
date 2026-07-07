@@ -7,6 +7,7 @@ I moduli Laraxot sono componenti fondamentali del progetto il progetto, fornendo
 ## Elenco Moduli Essenziali
 
 ### Moduli Core
+<<<<<<< HEAD
 1. **module_xot_fila5** - Modulo base con utility e configurazioni core
 2. **module_lang_fila5** - Gestione multilingua
 3. **module_tenant_fila5** - Supporto multi-tenant
@@ -23,6 +24,24 @@ I moduli Laraxot sono componenti fondamentali del progetto il progetto, fornendo
 10. **module_notify_fila5** - Sistema di notifiche
 11. **module_cms_fila5** - Gestione contenuti
 12. **module_job_fila5** - Gestione job in background
+=======
+1. **module_xot_fila3** - Modulo base con utility e configurazioni core
+2. **module_lang_fila3** - Gestione multilingua
+3. **module_tenant_fila3** - Supporto multi-tenant
+4. **module_user_fila3** - Gestione utenti e autenticazione
+
+### Moduli Frontend
+5. **module_ui_fila3** - Interfaccia utente base
+6. **theme_one_fila3** - Tema per Filament 3 (da installare in `/laravel/Themes/One/`)
+
+### Moduli Funzionali
+7. **module_media_fila3** - Gestione media e file
+8. **module_activity_fila3** - Logging e monitoraggio attività
+9. **module_gdpr_fila3** - Gestione privacy e GDPR
+10. **module_notify_fila3** - Sistema di notifiche
+11. **module_cms_fila3** - Gestione contenuti
+12. **module_job_fila3** - Gestione job in background
+>>>>>>> 6ed19256f (.)
 
 ## Struttura dei Namespace
 
@@ -52,6 +71,7 @@ git subtree add --prefix laravel/Modules/[NomeModulo] git@github.com:laraxot/[no
 ```
 
 ### Ordine di Installazione (in base alle dipendenze)
+<<<<<<< HEAD
 1. module_xot_fila5 (base)
 2. module_lang_fila5 (dipende da Xot)
 3. module_tenant_fila5 (dipende da Xot)
@@ -64,6 +84,20 @@ git subtree add --prefix laravel/Modules/[NomeModulo] git@github.com:laraxot/[no
 10. module_cms_fila5 (dipende da Xot, Media)
 11. module_job_fila5 (dipende da Xot)
 12. theme_one_fila5 (dipende da UI) - Da installare in `/laravel/Themes/One/`
+=======
+1. module_xot_fila3 (base)
+2. module_lang_fila3 (dipende da Xot)
+3. module_tenant_fila3 (dipende da Xot)
+4. module_ui_fila3 (dipende da Xot)
+5. module_user_fila3 (dipende da Xot, Tenant)
+6. module_media_fila3 (dipende da Xot)
+7. module_activity_fila3 (dipende da Xot, User)
+8. module_gdpr_fila3 (dipende da Xot, User)
+9. module_notify_fila3 (dipende da Xot, User)
+10. module_cms_fila3 (dipende da Xot, Media)
+11. module_job_fila3 (dipende da Xot)
+12. theme_one_fila3 (dipende da UI) - Da installare in `/laravel/Themes/One/`
+>>>>>>> 6ed19256f (.)
 
 ## Separazione tra Moduli e Temi
 
@@ -79,7 +113,11 @@ git subtree add --prefix laravel/Modules/[NomeModulo] git@github.com:laraxot/[no
 
 ### Installazione dei Temi
 ```bash
+<<<<<<< HEAD
 git subtree add --prefix laravel/Themes/One git@github.com:laraxot/theme_one_fila5.git dev --squash
+=======
+git subtree add --prefix laravel/Themes/One git@github.com:laraxot/theme_one_fila3.git dev --squash
+>>>>>>> 6ed19256f (.)
 ```
 
 ## Compatibilità con Laravel 12
@@ -111,4 +149,8 @@ Nel progetto il progetto, è fondamentale NON includere la riga `"Modules\\": "M
 
 Dopo qualsiasi modifica al composer.json, eseguire sempre:
 - `composer dump-autoload`
+<<<<<<< HEAD
 - `php artisan optimize:clear`
+=======
+- `php artisan optimize:clear`
+>>>>>>> 6ed19256f (.)

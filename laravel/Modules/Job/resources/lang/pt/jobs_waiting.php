@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -71,6 +72,35 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'connection' => [
+            'label' => 'Conexão',
+        ],
+        'queue' => [
+            'label' => 'Fila',
+        ],
+        'payload' => [
+            'label' => 'Carga Útil',
+        ],
+        'attempts' => [
+            'label' => 'Tentativas',
+        ],
+        'status' => [
+            'label' => 'Status',
+        ],
+        'display_name' => [
+            'label' => 'Nome de Exibição',
+        ],
+        'reserved_at' => [
+            'label' => 'Reservado Em',
+        ],
+        'available_at' => [
+            'label' => 'Disponível Em',
+        ],
+        'created_at' => [
+            'label' => 'Criado Em',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [

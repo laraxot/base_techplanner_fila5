@@ -2,6 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+use Illuminate\Support\Carbon;
+use Modules\Job\Models\Job;
+>>>>>>> 6ed19256f (.)
 
 describe('Job Business Logic', function () {
     it('can create job with basic information', function () {
@@ -30,4 +35,8 @@ describe('Job Business Logic', function () {
             ->and($job->reserved_at)
             ->toBeNull();
     });
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 6ed19256f (.)

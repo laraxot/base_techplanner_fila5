@@ -12,6 +12,7 @@ use Exception;
 use Filament\Widgets\Widget;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Process;
+<<<<<<< HEAD
 use Symfony\Component\Console\Output\StreamOutput;
 
 use function Safe\fopen;
@@ -19,6 +20,15 @@ use function Safe\fopen;
 class QueueListenWidget extends Widget
 {
     public string $time = '---';
+=======
+use function Safe\fopen;
+use Symfony\Component\Console\Output\StreamOutput;
+
+class QueueListenWidget extends Widget
+{
+    /** @var string */
+    public $time = '---';
+>>>>>>> 6ed19256f (.)
 
     public bool $run = false;
 
@@ -81,7 +91,11 @@ class QueueListenWidget extends Widget
          */
         $resource = fopen('php://stdout', 'w');
         if ($resource === false) {
+<<<<<<< HEAD
             throw new Exception('['.__LINE__.']['.class_basename($this).']');
+=======
+            throw new Exception('[' . __LINE__ . '][' . class_basename($this) . ']');
+>>>>>>> 6ed19256f (.)
         }
         $output = new StreamOutput($resource);
         // $output = new StreamOutput(fopen('/path/to/output.log', 'a', false));

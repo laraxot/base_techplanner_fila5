@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\Geo\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< HEAD
 use Illuminate\Support\Carbon;
+=======
+>>>>>>> 6ed19256f (.)
 use Modules\Geo\Database\Factories\PlaceTypeFactory;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Models\Traits\HasXotFactory;
@@ -22,6 +25,7 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  *
  * @method static PlaceTypeFactory factory($count = null, $state = [])
  *
+<<<<<<< HEAD
  * @property string      $id
  * @property string      $name
  * @property string|null $description
@@ -34,6 +38,8 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @method static Builder<static>|PlaceType whereName($value)
  * @method static Builder<static>|PlaceType whereUpdatedAt($value)
  *
+=======
+>>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class PlaceType extends BaseModel

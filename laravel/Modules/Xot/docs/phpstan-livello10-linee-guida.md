@@ -94,9 +94,12 @@ public function processValue(?string $value): string
 - [Best Practices](./BEST-PRACTICES.md)
 - [Code Standards](./CODE-STANDARDS.md)
 - [Risoluzione Conflitti](./CONFLITTI_MERGE_RISOLTI.md)
+<<<<<<< HEAD
 - [Best Practices](./best-practices.md)
 - [Code Standards](./code-standards.md)
 - [Risoluzione Conflitti](./conflitti_merge_risolti.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 # Linee Guida per PHPStan Livello 10 - Regole Comuni
 
@@ -643,4 +646,8 @@ Errori PHPStan come `Class Modules\Xot\app\Console\Commands\DatabaseSchemaExport
 namespace Modules\Xot\Console\Commands;
 ```
 
+<<<<<<< HEAD
 Errori PHPStan come `Class Modules\Xot\Console\Commands\DatabaseSchemaExportCommand not found` indicano che è necessario rimuovere il segmento `app` dal namespace.
+=======
+Errori PHPStan come `Class Modules\Xot\Console\Commands\DatabaseSchemaExportCommand not found` indicano che è necessario rimuovere il segmento `app` dal namespace.
+>>>>>>> 6ed19256f (.)

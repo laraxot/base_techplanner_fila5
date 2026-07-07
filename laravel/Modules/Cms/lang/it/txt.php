@@ -4,95 +4,141 @@ declare(strict_types=1);
 
 return [
     'fields' => [
+<<<<<<< HEAD
+=======
+        // Core Content Fields
+>>>>>>> 6ed19256f (.)
         'title' => [
             'label' => 'Titolo',
             'placeholder' => 'Inserisci il titolo principale',
             'help' => 'Titolo principale',
             'helper_text' => 'Titolo che apparirà come intestazione principale',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'slug' => [
             'label' => 'Slug',
             'placeholder' => 'testo-per-url',
+<<<<<<< HEAD
             'help' => 'Versione dell\'URL del titolo (solo lettere minuscole, trattini e numeri]',
             'helper_text' => 'URL SEO-friendly generato automaticamente dal titolo',
             'tooltip' => '',
             'description' => '',
+=======
+            'help' => 'Versione dell\'URL del titolo (solo lettere minuscole, trattini e numeri)',
+            'helper_text' => 'URL SEO-friendly generato automaticamente dal titolo',
+>>>>>>> 6ed19256f (.)
         ],
         'subtitle' => [
             'label' => 'Sottotitolo',
             'placeholder' => 'Inserisci un sottotitolo',
             'help' => 'Sottotitolo opzionale',
             'helper_text' => 'Testo secondario che accompagna il titolo principale',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'description' => [
             'label' => 'Descrizione',
             'placeholder' => 'Inserisci una descrizione',
             'help' => 'Testo descrittivo',
             'helper_text' => 'Descrizione utilizzata per SEO e preview social',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'content' => [
             'label' => 'Contenuto',
             'placeholder' => 'Scrivi il contenuto principale qui...',
             'helper_text' => 'Contenuto principale dell\'articolo o pagina',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'text' => [
             'label' => 'Testo',
             'placeholder' => 'Inserisci il testo',
             'helper_text' => 'Contenuto testuale semplice senza formattazione',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
         ],
+=======
+        ],
+        // Media & Visual Elements
+>>>>>>> 6ed19256f (.)
         'image' => [
             'label' => 'Immagine',
             'help' => 'Carica un\'immagine',
             'placeholder' => 'Seleziona o carica immagine',
             'helper_text' => 'Immagine principale associata al contenuto',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'alt' => [
             'label' => 'Testo Alternativo',
             'placeholder' => 'Descrizione immagine per accessibilità',
             'helper_text' => 'Testo letto dagli screen reader per utenti non vedenti',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'width' => [
             'label' => 'Larghezza',
             'placeholder' => '100%, 500px, auto',
             'helper_text' => 'Larghezza dell\'elemento in pixel, percentuale o auto',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'height' => [
             'label' => 'Altezza',
             'placeholder' => '300px, auto, 50vh',
             'helper_text' => 'Altezza dell\'elemento in pixel, percentuale o viewport',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
         ],
+=======
+        ],
+        // Layout & Design
+>>>>>>> 6ed19256f (.)
         'style' => [
             'label' => 'Stile',
             'help' => 'Stile di visualizzazione',
             'placeholder' => 'Seleziona stile di visualizzazione',
             'helper_text' => 'Stile predefinito per la visualizzazione dell\'elemento',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'size' => [
             'label' => 'Dimensione',
             'placeholder' => 'Piccolo, Medio, Grande',
             'helper_text' => 'Dimensione relativa dell\'elemento',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'alignment' => [
             'label' => 'Allineamento',
@@ -105,94 +151,138 @@ return [
             ],
             'placeholder' => 'Sinistra, Centro, Destra',
             'helper_text' => 'Allineamento del contenuto all\'interno dell\'elemento',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'gap' => [
             'label' => 'Spaziatura',
             'placeholder' => '10px, 1rem, small',
             'helper_text' => 'Spazio tra gli elementi',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'orientation' => [
             'label' => 'Orientamento',
             'placeholder' => 'Orizzontale, Verticale',
             'helper_text' => 'Orientamento del layout o degli elementi',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'background_color' => [
             'label' => 'Colore di sfondo',
             'help' => 'Seleziona un colore di sfondo',
             'placeholder' => '#FFFFFF, bianco, transparent',
             'helper_text' => 'Colore di sfondo dell\'elemento',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'text_color' => [
             'label' => 'Colore Testo',
             'placeholder' => '#000000, nero, inherit',
             'helper_text' => 'Colore del testo dell\'elemento',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'cta_color' => [
             'label' => 'Colore CTA',
             'placeholder' => '#007BFF, blu, primary',
             'helper_text' => 'Colore dei pulsanti call-to-action',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
         ],
+=======
+        ],
+        // Navigation & Links
+>>>>>>> 6ed19256f (.)
         'items' => [
             'label' => 'Elementi',
             'help' => 'Elenco di elementi',
             'placeholder' => 'Aggiungi elementi alla lista',
             'helper_text' => 'Lista di elementi che compongono menu o collezioni',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'label' => [
             'label' => 'Etichetta',
             'placeholder' => 'Testo dell\'etichetta',
             'helper_text' => 'Testo visibile per link, pulsanti o elementi interattivi',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'url' => [
             'label' => 'URL',
             'placeholder' => 'https://esempio.com',
+<<<<<<< HEAD
             'help' => 'Inserisci un URL valido (inizia con http:// o https://]',
             'helper_text' => 'Indirizzo web completo di destinazione',
             'tooltip' => '',
             'description' => '',
+=======
+            'help' => 'Inserisci un URL valido (inizia con http:// o https://)',
+            'helper_text' => 'Indirizzo web completo di destinazione',
+>>>>>>> 6ed19256f (.)
         ],
         'target' => [
             'label' => 'Destinazione',
             'placeholder' => '_blank, _self, _parent, _top',
+<<<<<<< HEAD
             'helper_text' => 'Come aprire il collegamento (stessa finestra o nuova]',
             'tooltip' => '',
             'description' => '',
+=======
+            'helper_text' => 'Come aprire il collegamento (stessa finestra o nuova)',
+>>>>>>> 6ed19256f (.)
         ],
         'icon' => [
             'label' => 'Icona',
             'help' => 'Seleziona un\'icona da visualizzare',
             'placeholder' => 'Seleziona icona rappresentativa',
             'helper_text' => 'Icona da mostrare accanto al testo o come elemento standalone',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
         ],
+=======
+        ],
+        // UI Components
+>>>>>>> 6ed19256f (.)
         'view' => [
             'label' => 'Template',
             'placeholder' => 'Seleziona template di visualizzazione',
             'helper_text' => 'Template Blade utilizzato per renderizzare questo elemento',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'type' => [
             'label' => 'Tipo',
             'placeholder' => 'Categoria o tipologia',
             'helper_text' => 'Tipo di contenuto o categoria dell\'elemento',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
         ],
@@ -202,171 +292,257 @@ return [
             'helper_text' => 'Livello di importanza nella gerarchia del contenuto',
             'tooltip' => '',
             'description' => '',
+=======
+        ],
+        'level' => [
+            'label' => 'Livello',
+            'placeholder' => 'Livello gerarchico (1-6)',
+            'helper_text' => 'Livello di importanza nella gerarchia del contenuto',
+>>>>>>> 6ed19256f (.)
         ],
         'children' => [
             'label' => 'Elementi Figli',
             'placeholder' => 'Elementi nested o subordinati',
             'helper_text' => 'Elementi contenuti o dipendenti da questo elemento',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
         ],
+=======
+        ],
+        // Company & Contact Information
+>>>>>>> 6ed19256f (.)
         'email' => [
             'label' => 'Email',
             'placeholder' => 'esempio@dominio.com',
             'help' => 'Indirizzo email valido',
             'helper_text' => 'Indirizzo email principale per contatti',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'phone' => [
             'label' => 'Telefono',
             'placeholder' => '+39 000 000 0000',
             'helper_text' => 'Numero di telefono principale',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'address' => [
             'label' => 'Indirizzo',
             'placeholder' => 'Via Roma 1, 00100 Roma RM',
             'help' => 'Indirizzo completo',
             'helper_text' => 'Indirizzo fisico completo dell\'azienda',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'map_url' => [
             'label' => 'Link Mappa',
             'placeholder' => 'https://maps.google.com/...',
             'helper_text' => 'Link a Google Maps o altro servizio di mappe',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'logo' => [
             'label' => 'Logo',
             'placeholder' => 'Carica logo aziendale',
             'helper_text' => 'Logo rappresentativo dell\'azienda o brand',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'copyright' => [
             'label' => 'Copyright',
             'placeholder' => '2024 Nome Azienda. Tutti i diritti riservati.',
             'helper_text' => 'Testo di copyright da visualizzare nel footer',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
         ],
+=======
+        ],
+        // Call-to-Action Elements
+>>>>>>> 6ed19256f (.)
         'button_text' => [
             'label' => 'Testo del pulsante',
             'placeholder' => 'Scopri di più',
             'help' => 'Testo visualizzato sul pulsante',
             'helper_text' => 'Testo che apparirà sul pulsante',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'button_link' => [
             'label' => 'Collegamento del pulsante',
             'placeholder' => 'https://esempio.com',
             'help' => 'URL di destinazione del pulsante',
             'helper_text' => 'URL di destinazione quando si clicca il pulsante',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'cta_text' => [
             'label' => 'Testo Call-to-Action',
             'placeholder' => 'Inizia ora, Contattaci oggi',
             'helper_text' => 'Testo persuasivo per invitare all\'azione',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'cta_link' => [
             'label' => 'Collegamento CTA',
             'placeholder' => 'https://esempio.com',
             'help' => 'URL di destinazione per la call-to-action',
             'helper_text' => 'URL della pagina di destinazione per la CTA',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
         ],
+=======
+        ],
+        // Social Media
+>>>>>>> 6ed19256f (.)
         'social_links' => [
             'label' => 'Link Social',
             'placeholder' => 'Aggiungi profili social media',
             'helper_text' => 'Collegamenti ai profili social dell\'azienda',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'platform' => [
             'label' => 'Piattaforma',
             'placeholder' => 'Facebook, Instagram, LinkedIn, Twitter',
             'helper_text' => 'Nome della piattaforma social media',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'links' => [
             'label' => 'Collegamenti',
             'placeholder' => 'Lista di link di navigazione',
             'helper_text' => 'Collezione di collegamenti per menu o footer',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
         ],
+=======
+        ],
+        // Statistics & Data
+>>>>>>> 6ed19256f (.)
         'stats' => [
             'label' => 'Statistiche',
             'placeholder' => 'Dati numerici da evidenziare',
             'helper_text' => 'Statistiche o metriche da mostrare',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'number' => [
             'label' => 'Numero',
             'placeholder' => 'Valore numerico',
             'helper_text' => 'Valore numerico per contatori o statistiche',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
         ],
+=======
+        ],
+        // Page Structure
+>>>>>>> 6ed19256f (.)
         'sections' => [
             'label' => 'Sezioni',
             'help' => 'Elenco delle sezioni',
             'placeholder' => 'Sezioni che compongono la pagina',
             'helper_text' => 'Sezioni principali che strutturano il contenuto',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'content_blocks' => [
             'label' => 'Blocchi Contenuto',
             'placeholder' => 'Blocchi di contenuto principale',
             'helper_text' => 'Blocchi che compongono il corpo principale della pagina',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'sidebar_blocks' => [
             'label' => 'Blocchi Sidebar',
             'placeholder' => 'Contenuti della barra laterale',
             'helper_text' => 'Elementi da visualizzare nella barra laterale',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'footer_blocks' => [
             'label' => 'Blocchi Footer',
             'placeholder' => 'Contenuti del piè di pagina',
             'helper_text' => 'Elementi da includere nel footer del sito',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
         ],
+=======
+        ],
+        // Interactive Elements
+>>>>>>> 6ed19256f (.)
         'placeholder' => [
             'label' => 'Placeholder',
             'placeholder' => 'Testo segnaposto per campi input',
             'helper_text' => 'Testo mostrato nei campi vuoti come suggerimento',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'success_message' => [
             'label' => 'Messaggio Successo',
             'placeholder' => 'Operazione completata con successo',
             'helper_text' => 'Messaggio mostrato quando un\'operazione ha successo',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'error_message' => [
             'label' => 'Messaggio Errore',
             'placeholder' => 'Si è verificato un errore',
             'helper_text' => 'Messaggio mostrato in caso di errore',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
         ],
@@ -376,76 +552,114 @@ return [
             'helper_text' => 'Sfondo della sezione (immagine, colore o gradiente]',
             'tooltip' => '',
             'description' => '',
+=======
+        ],
+        // Advanced Layout
+        'background' => [
+            'label' => 'Sfondo',
+            'placeholder' => 'Immagine o colore di sfondo',
+            'helper_text' => 'Sfondo della sezione (immagine, colore o gradiente)',
+>>>>>>> 6ed19256f (.)
         ],
         'buttons' => [
             'label' => 'Pulsanti',
             'placeholder' => 'Pulsanti di azione per l\'utente',
             'helper_text' => 'Collezione di pulsanti per interazioni utente',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'class' => [
             'label' => 'Classe CSS',
             'placeholder' => 'custom-class another-class',
             'helper_text' => 'Classi CSS personalizzate per styling avanzato',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'link' => [
             'label' => 'Collegamento',
             'placeholder' => 'https://link-destinazione.it',
             'helper_text' => 'URL generico di collegamento',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'ratio' => [
             'label' => 'Proporzioni',
             'placeholder' => '16:9, 4:3, 1:1, 21:9',
             'helper_text' => 'Rapporto di proporzione per immagini e video',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'caption' => [
             'label' => 'Didascalia',
             'placeholder' => 'Didascalia per immagine o video',
             'helper_text' => 'Testo descrittivo mostrato sotto contenuti multimediali',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'img_uuid' => [
             'label' => 'ID Immagine',
             'placeholder' => 'UUID dell\'immagine',
             'helper_text' => 'Identificatore univoco dell\'immagine nel sistema',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'gallery' => [
             'label' => 'Galleria',
             'placeholder' => 'Collezione di immagini',
             'helper_text' => 'Galleria di immagini correlate',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'version' => [
             'label' => 'Versione',
             'placeholder' => '1.0.0, v2.1, beta',
             'helper_text' => 'Versione del contenuto o componente',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'method' => [
             'label' => 'Metodo',
             'placeholder' => 'GET, POST, PUT, DELETE',
             'helper_text' => 'Metodo HTTP per form o richieste API',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'video' => [
             'label' => 'Video',
             'placeholder' => 'URL video YouTube/Vimeo o carica file',
             'helper_text' => 'Video da incorporare o collegare',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -525,6 +739,7 @@ return [
         'image_size' => 'L\'immagine deve essere inferiore a 5MB',
         'video_format' => 'Formato video non supportato',
         'required_field' => 'Questo campo è obbligatorio',
+<<<<<<< HEAD
         'max_length' => 'Il testo è troppo lungo (massimo :max caratteri]',
         'min_length' => 'Il testo è troppo corto (minimo :min caratteri]',
     ],
@@ -540,5 +755,9 @@ return [
         'label' => 'Txt',
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
+=======
+        'max_length' => 'Il testo è troppo lungo (massimo :max caratteri)',
+        'min_length' => 'Il testo è troppo corto (minimo :min caratteri)',
+>>>>>>> 6ed19256f (.)
     ],
 ];

@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources;
 
+<<<<<<< HEAD
 use App\Filament\Resources\CategoryResource\Pages\ManageCategories;
 use App\Models\Category;
 use Filament\Actions\ActionGroup;
@@ -14,6 +15,8 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Support\Str;
 use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
+=======
+>>>>>>> 6ed19256f (.)
 use Filament\Schemas\Schema;
 use Filament\Forms\Components\TextInput;
 use Filament\Tables\Columns\TextColumn;
@@ -34,9 +37,15 @@ class CategoryResource extends Resource
 {
     protected static ?string $model = Category::class;
 
+<<<<<<< HEAD
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-tag';
 
     protected static string|\UnitEnum|null $navigationGroup = 'Blog';
+=======
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-tag';
+
+    protected static string | \UnitEnum | null $navigationGroup = 'Blog';
+>>>>>>> 6ed19256f (.)
 
     public static function form(Schema $schema): Schema
     {
@@ -93,7 +102,10 @@ class CategoryResource extends Resource
         ];
     }
 }
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> 6ed19256f (.)

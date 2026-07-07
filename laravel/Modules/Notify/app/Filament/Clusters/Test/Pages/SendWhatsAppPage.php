@@ -24,13 +24,21 @@ use Modules\Xot\Filament\Pages\XotBasePage;
 use Override;
 
 /**
+<<<<<<< HEAD
  * @property Schema $whatsappForm
+=======
+ * @property \Filament\Schemas\Schema $whatsappForm
+>>>>>>> 6ed19256f (.)
  */
 class SendWhatsAppPage extends XotBasePage
 {
     public ?array $whatsappData = [];
 
+<<<<<<< HEAD
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-chat-bubble-left-right';
+=======
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-chat-bubble-left-right';
+>>>>>>> 6ed19256f (.)
 
     protected string $view = 'notify::filament.pages.send-whatsapp';
 
@@ -69,7 +77,11 @@ class SendWhatsAppPage extends XotBasePage
     }
 
     /**
+<<<<<<< HEAD
      * @return array<string, KeyValue|Select|TextInput>
+=======
+     * @return array<string, \Filament\Forms\Components\KeyValue|\Filament\Forms\Components\Select|\Filament\Forms\Components\TextInput>
+>>>>>>> 6ed19256f (.)
      */
     public function getWhatsAppFormSchema(): array
     {

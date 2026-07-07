@@ -198,7 +198,11 @@ class UserServiceProvider extends XotBaseServiceProvider
 
 ```json
 {
+<<<<<<< HEAD
     "name": "laraxot/module_user_fila5",
+=======
+    "name": "laraxot/module_user_fila3",
+>>>>>>> 6ed19256f (.)
     "extra": {
         "laravel": {
             "providers": [
@@ -369,9 +373,12 @@ test('user service provider only configures, not registers dependencies', functi
 - [PASSPORT_INTEGRATION.md](./PASSPORT_INTEGRATION.md) - Passport integration completa
 - [FILOSOFIA_MODULO_USER.md](./FILOSOFIA_MODULO_USER.md) - Filosofia generale modulo
 - [README.md](./README.md) - Overview modulo
+<<<<<<< HEAD
 - [PASSPORT_INTEGRATION.md](./passport_integration.md) - Passport integration completa
 - [FILOSOFIA_MODULO_USER.md](./filosofia_modulo_user.md) - Filosofia generale modulo
 - [README.md](./readme.md) - Overview modulo
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Documentazione Esterna
 - [Laravel Modules Documentation](https://nwidart.com/laravel-modules)
@@ -395,4 +402,8 @@ test('user service provider only configures, not registers dependencies', functi
 
 ---
 
+<<<<<<< HEAD
 **Conclusione**: Il Module Pattern richiede che `module.json` sia la fonte di verità per la registrazione dei providers. UserServiceProvider deve occuparsi SOLO della configurazione specifica del modulo, NON della registrazione di dipendenze già dichiarate nel manifest. Questo garantisce DRY, maintainability e aderenza agli standard Laravel Modules.
+=======
+**Conclusione**: Il Module Pattern richiede che `module.json` sia la fonte di verità per la registrazione dei providers. UserServiceProvider deve occuparsi SOLO della configurazione specifica del modulo, NON della registrazione di dipendenze già dichiarate nel manifest. Questo garantisce DRY, maintainability e aderenza agli standard Laravel Modules.
+>>>>>>> 6ed19256f (.)

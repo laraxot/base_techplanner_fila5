@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+# 🐄 DRY & KISS Analysis - Tenant
+
+>>>>>>> 6ed19256f (.)
 **Data:** 2025-10-15 | **Status:** ✅
 
 ## 📊 Struttura
@@ -21,6 +26,7 @@ abstract class BaseModel extends EloquentModel  // ⚠️
 2. Services (6): Audit vs Actions (2)
 
 **Status:** 🟡 RICHIEDE ATTENZIONE
+<<<<<<< HEAD
 ---
 module: theme
 topic: dry-kiss-analysis
@@ -28,3 +34,5 @@ canonical: ../../../Themes/docs/shared-components/dry-kiss-analysis-2025-10-15-M
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/dry-kiss-analysis-2025-10-15-Modules.md
+=======
+>>>>>>> 6ed19256f (.)

@@ -22,9 +22,14 @@
     "config": {
         "active": true,
         "default": false
+<<<<<<< HEAD
     },
     "providers": [
         "Themes\\Two\\Providers\\ThemeServiceProvider"
     ]
     }
 }
+=======
+    }
+}
+>>>>>>> 6ed19256f (.)

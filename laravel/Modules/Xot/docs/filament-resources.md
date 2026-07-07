@@ -96,12 +96,19 @@ return [
 * [filament-resources.md](../../../Gdpr/docs/filament-resources.md)
 * [filament-resources.md](../../../Xot/docs/filament-resources.md)
 * [filament-resources.md](../../../Cms/docs/filament-resources.md)
+<<<<<<< HEAD
 * [filament-resources.md](../../../gdpr/docs/filament-resources.md)
 * [filament-resources.md](../../../xot/docs/filament-resources.md)
 * [filament-resources.md](../../../cms/docs/filament-resources.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Versione Incoming
 
 - Mantenute le validazioni e la struttura del form
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> 6ed19256f (.)

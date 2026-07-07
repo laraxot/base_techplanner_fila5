@@ -271,8 +271,12 @@ if (isset($record->email)) {
 - User/Filament/Resources/BaseProfileResource
 - User/Filament/Resources/UserResource
 - Media/Filament/Resources (3 file)
+<<<<<<< HEAD
 - healthcare_app/Filament (2 file)
 - ExternalProject/Filament (2 file)
+=======
+- Quaeris/Filament (2 file)
+>>>>>>> 6ed19256f (.)
 
 **Impact**: Alto (UI user-facing)
 **Risk**: Medio (bugs visibili)
@@ -400,8 +404,12 @@ if (method_exists($record, 'getUrl')) {
 | Xot | 12 | High | Alta |
 | User | 5 | Critical | Media |
 | Media | 3 | High | Bassa |
+<<<<<<< HEAD
 | healthcare_app | 2 | Medium | Bassa |
 | ExternalProject | 2 | Medium | Bassa |
+=======
+| Quaeris | 2 | Medium | Bassa |
+>>>>>>> 6ed19256f (.)
 | Others | 52 (docs) | Low | Zero |
 
 ### Estimated Effort
@@ -469,4 +477,8 @@ if (method_exists($record, 'getUrl')) {
 **Status**: 📜 Manifesto Filosofico
 **Revision**: 1.0
 
+<<<<<<< HEAD
 Ora procediamo all'**IMPLEMENTAZIONE SISTEMATICA**! ⚔️
+=======
+Ora procediamo all'**IMPLEMENTAZIONE SISTEMATICA**! ⚔️
+>>>>>>> 6ed19256f (.)

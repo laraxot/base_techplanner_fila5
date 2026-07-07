@@ -50,6 +50,7 @@ This document tracks the progress of fixing PHPStan level 10 issues across vario
 - Focus on completing the Setting module first to ensure it's error-free
 - Then continue with the Xot module which has more complex issues
 - Consider grouping fixes by error type (type annotations, null checks, method access) for efficiency
+<<<<<<< HEAD
 ---
 module: theme
 topic: phpstan-progress
@@ -57,3 +58,5 @@ canonical: ../../../Themes/docs/shared-components/phpstan-progress-report-Module
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-progress-report-Modules.md
+=======
+>>>>>>> 6ed19256f (.)

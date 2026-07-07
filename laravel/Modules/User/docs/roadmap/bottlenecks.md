@@ -141,6 +141,7 @@
 - Testing automatizzato
 - Documentazione aggiornata
 ## Collegamenti tra versioni di bottlenecks.md
+<<<<<<< HEAD
 * [bottlenecks.md](../../../gdpr/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../xot/docs/bottlenecks.md)
 * [bottlenecks.md](../../../xot/docs/performance/bottlenecks.md)
@@ -161,6 +162,8 @@
 * [bottlenecks.md](../../../job/project_docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../media/project_docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../patient/project_docs/roadmap/bottlenecks.md)
+=======
+>>>>>>> 6ed19256f (.)
 * [bottlenecks.md](../../../Gdpr/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../Xot/docs/bottlenecks.md)
 * [bottlenecks.md](../../../Xot/docs/performance/bottlenecks.md)
@@ -180,4 +183,8 @@
 * [bottlenecks.md](../../../Lang/project_docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../Job/project_docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../Media/project_docs/performance/bottlenecks.md)
+<<<<<<< HEAD
 * [bottlenecks.md](../../../Patient/project_docs/roadmap/bottlenecks.md)
+=======
+* [bottlenecks.md](../../../Patient/project_docs/roadmap/bottlenecks.md)
+>>>>>>> 6ed19256f (.)

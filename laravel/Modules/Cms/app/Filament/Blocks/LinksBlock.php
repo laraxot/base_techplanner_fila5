@@ -28,6 +28,10 @@ final class LinksBlock extends XotBaseBlock
 
     public static function getBlockLabel(): string
     {
+<<<<<<< HEAD
         return \trans_string('cms::filament.blocks.footer.links.label');
+=======
+        return \trans_string('cms::filament.blocks.footer.links.label') ?? 'Links';
+>>>>>>> 6ed19256f (.)
     }
 }

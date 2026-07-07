@@ -17,6 +17,7 @@
 - [GitHub Workflows Standard](./github-workflows-standard.md)
 
 ## PHPStan Analysis Reports
+<<<<<<< HEAD
 - [PHPStan Analysis [DATE]](./phpstan-analysis-[DATE].md)
 - [PHPStan Analysis [DATE]](./phpstan-analysis-[DATE].md)
 - [PHPStan Analysis [DATE]](./phpstan-analysis-[DATE].md)
@@ -24,6 +25,8 @@
 
 ## Quality & Improvement
 - [Quality Improvements Summary [DATE]](./quality-improvements-summary-[DATE].md)
+=======
+>>>>>>> 6ed19256f (.)
 - [PHPStan Analysis 2025-01-27](./phpstan-analysis-2025-01-27.md)
 - [PHPStan Analysis 2025-12-17](./phpstan-analysis-2025-12-17.md)
 - [PHPStan Analysis 2025-12-18](./phpstan-analysis-2025-12-18.md)
@@ -47,4 +50,7 @@
 
 ---
 *Last updated: 2025-12-18*
+<<<<<<< HEAD
 *
+=======
+>>>>>>> 6ed19256f (.)

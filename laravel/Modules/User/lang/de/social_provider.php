@@ -18,6 +18,7 @@ return [
         'icon' => 'user-user-social',
     ],
     'fields' => [
+<<<<<<< HEAD
         'name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -67,6 +68,20 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        'name' => 'Nome',
+        'guard_name' => 'Guard',
+        'permissions' => 'Permessi',
+        'updated_at' => 'Aggiornato il',
+        'first_name' => 'Nome',
+        'last_name' => 'Cognome',
+        'select_all' => [
+            'name' => 'Seleziona Tutti',
+            'message' => '',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -91,6 +106,9 @@ return [
             'label' => 'social provider.plural.model',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

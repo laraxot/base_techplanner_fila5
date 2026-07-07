@@ -59,4 +59,8 @@ include(...PageContentResource.php): Failed to open stream: No such file or dire
 ## Collegamenti
 - [Refactoring PageContent → Section](../refactoring/page-content-to-section.md)
 - [Gestione Sezioni](../section-management.md)
+<<<<<<< HEAD
 - [Documentazione Root](../../../../../docs/errors.md)
+=======
+- [Documentazione Root](../../../../docs/errors.md)
+>>>>>>> 6ed19256f (.)

@@ -202,8 +202,11 @@ Prima di creare un nuovo modello, verifica:
 
 - [Documentazione Xot BaseModel](../../Xot/docs/model-inheritance-rules.md)
 - [Documentazione Geo Model Pattern](../../Geo/docs/model-inheritance-pattern.md)
+<<<<<<< HEAD
 - [Documentazione Xot BaseModel](../../xot/docs/model-inheritance-rules.md)
 - [Documentazione Geo Model Pattern](../../geo/docs/model-inheritance-pattern.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Laravel Eloquent Documentation](https://laravel.com/docs/eloquent)
 
 ## Note Tecniche
@@ -264,4 +267,8 @@ Il comando dovrebbe restituire solo:
 
 - `Modules\User\Models\Extra` usa ora `getConnectionName()` pubblico per forzare la connection `user` senza violare le proprietà @final ereditate.
 - PHPStan L10 ✅, PHPMD ✅, PHPInsights ✅ (nessun avviso dopo refactor).
+<<<<<<< HEAD
 - Regola: quando serve una connection custom, override tramite metodo, mai riscrivere `$connection` nelle sottoclassi.
+=======
+- Regola: quando serve una connection custom, override tramite metodo, mai riscrivere `$connection` nelle sottoclassi.
+>>>>>>> 6ed19256f (.)

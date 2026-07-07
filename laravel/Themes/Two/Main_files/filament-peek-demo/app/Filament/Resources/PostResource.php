@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources;
 
+<<<<<<< HEAD
 use App\Filament\Fields\PostContent;
 use App\Filament\Fields\PostFooter;
 use App\Filament\Resources\PostResource\Pages\CreatePost;
@@ -27,6 +28,8 @@ use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
 use Illuminate\Support\Str;
 use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
+=======
+>>>>>>> 6ed19256f (.)
 use Filament\Schemas\Schema;
 use Filament\Schemas\Components\Grid;
 use Filament\Forms\Components\TextInput;
@@ -62,9 +65,15 @@ class PostResource extends Resource
 {
     protected static ?string $model = Post::class;
 
+<<<<<<< HEAD
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-newspaper';
 
     protected static string|\UnitEnum|null $navigationGroup = 'Blog';
+=======
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-newspaper';
+
+    protected static string | \UnitEnum | null $navigationGroup = 'Blog';
+>>>>>>> 6ed19256f (.)
 
     public static function form(Schema $schema): Schema
     {
@@ -182,7 +191,10 @@ class PostResource extends Resource
         ];
     }
 }
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> 6ed19256f (.)

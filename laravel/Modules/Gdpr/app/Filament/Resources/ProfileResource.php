@@ -11,12 +11,20 @@ use Modules\Gdpr\Filament\Resources\ProfileResource\Pages\EditProfile;
 use Modules\Gdpr\Filament\Resources\ProfileResource\Pages\ListProfiles;
 use Modules\Gdpr\Models\Profile;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+<<<<<<< HEAD
+=======
+use Override;
+>>>>>>> 6ed19256f (.)
 
 class ProfileResource extends XotBaseResource
 {
     protected static ?string $model = Profile::class;
 
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> 6ed19256f (.)
     public static function getFormSchema(): array
     {
         return [
@@ -36,13 +44,21 @@ class ProfileResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> 6ed19256f (.)
     public static function getRelations(): array
     {
         return [];
     }
 
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> 6ed19256f (.)
     public static function getPages(): array
     {
         return [

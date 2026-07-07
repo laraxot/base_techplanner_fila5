@@ -145,5 +145,8 @@ new class extends Component
 - [Documentazione Laravel Localization](https://github.com/mcamara/laravel-localization)
 - [Best Practices UI](./UI_BEST_PRACTICES.md)
 - [Regole Architetturali](./ARCHITECTURE_RULES.md)
+<<<<<<< HEAD
 - [Best Practices UI](./ui_best_practices.md)
 - [Regole Architetturali](./architecture_rules.md)
+=======
+>>>>>>> 6ed19256f (.)

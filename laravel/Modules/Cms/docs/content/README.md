@@ -13,6 +13,7 @@ Questa cartella contiene la documentazione relativa alla gestione dei contenuti.
 
 Questa documentazione descrive come gestire i contenuti nel CMS.
 ## Collegamenti tra versioni di README.md
+<<<<<<< HEAD
 * [README.md](bashscripts/docs/readme.md)
 * [README.md](bashscripts/docs/it/readme.md)
 * [README.md](docs/laravel-app/phpstan/readme.md)
@@ -89,6 +90,8 @@ Questa documentazione descrive come gestire i contenuti nel CMS.
 * [README.md](laravel/modules/cms/docs/components/readme.md)
 * [README.md](laravel/themes/two/docs/readme.md)
 * [README.md](laravel/themes/one/docs/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
 * [README.md](docs/laravel-app/phpstan/README.md)
@@ -164,4 +167,8 @@ Questa documentazione descrive come gestire i contenuti nel CMS.
 * [README.md](laravel/Modules/Cms/docs/frontoffice/README.md)
 * [README.md](laravel/Modules/Cms/docs/components/README.md)
 * [README.md](laravel/Themes/Two/docs/README.md)
+<<<<<<< HEAD
 * [README.md](laravel/Themes/One/docs/README.md)
+=======
+* [README.md](laravel/Themes/One/docs/README.md)
+>>>>>>> 6ed19256f (.)

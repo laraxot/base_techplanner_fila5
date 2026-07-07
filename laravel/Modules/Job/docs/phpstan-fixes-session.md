@@ -36,4 +36,8 @@
 ## 📈 Metriche: 58 → 49 errori (-15.5%)
 
 **Status**: 🔄 IN PROGRESS
+<<<<<<< HEAD
 **Prossimo**: Gdpr (94 errori)
+=======
+**Prossimo**: Gdpr (94 errori)
+>>>>>>> 6ed19256f (.)

@@ -263,10 +263,17 @@ abstract class XotBaseMigration extends Migration
 - **Query analysis** automatica
 
 ## 🔗 Collegamenti Correlati
+<<<<<<< HEAD
 - [XotBaseServiceProvider.php](Modules/Xot/app/Providers/XotBaseServiceProvider.php)
 - [XotBaseWidget.php](Modules/Xot/app/Filament/Widgets/XotBaseWidget.php)
 - [XotBaseFormComponent.php](Modules/Xot/app/Filament/Forms/Components/XotBaseFormComponent.php)
 - [AnalyzePerformanceCommand.php](Modules/Xot/app/Console/Commands/AnalyzePerformanceCommand.php)
+=======
+- [XotBaseServiceProvider.php](/var/www/html/_bases/base_quaeris_fila3_mono/laravel/Modules/Xot/app/Providers/XotBaseServiceProvider.php)
+- [XotBaseWidget.php](/var/www/html/_bases/base_quaeris_fila3_mono/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php)
+- [XotBaseFormComponent.php](/var/www/html/_bases/base_quaeris_fila3_mono/laravel/Modules/Xot/app/Filament/Forms/Components/XotBaseFormComponent.php)
+- [AnalyzePerformanceCommand.php](/var/www/html/_bases/base_quaeris_fila3_mono/laravel/Modules/Xot/app/Console/Commands/AnalyzePerformanceCommand.php)
+>>>>>>> 6ed19256f (.)
 
 ---
 *Analisi completata con principi DRY + KISS | Data: $(date)*

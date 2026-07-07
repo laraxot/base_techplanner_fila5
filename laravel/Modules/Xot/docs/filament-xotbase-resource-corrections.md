@@ -85,7 +85,11 @@ protected static ?string $navigationGroup = "Geo";
 ```
 
 ### 4. AdminResource.php
+<<<<<<< HEAD
 **File**: `laravel/Modules/<nome progetto>/app/Filament/Resources/AdminResource.php`
+=======
+**File**: `laravel/Modules/SaluteOra/app/Filament/Resources/AdminResource.php`
+>>>>>>> 6ed19256f (.)
 
 **Violazione**: Metodo `table()` presente
 ```php
@@ -196,4 +200,8 @@ class ExampleResource extends XotBaseResource
 *Ultimo aggiornamento: 2025-08-04*
 *Modulo: Xot*
 *Categoria: Filament*
+<<<<<<< HEAD
 *Status: ✅ Correzioni Implementate*
+=======
+*Status: ✅ Correzioni Implementate*
+>>>>>>> 6ed19256f (.)

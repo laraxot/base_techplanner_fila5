@@ -1,7 +1,10 @@
 # PHPStan Level 10 Fixes - Modulo Job
 
 ## Data: 2025-01-22
+<<<<<<< HEAD
 ## Data: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 ## Status: ✅ COMPLETATO (0 errori)
 
 ## 🎯 FILOSOFIA E BUSINESS LOGIC
@@ -186,4 +189,8 @@ if ($someCondition) {
 
 ---
 
+<<<<<<< HEAD
 **Conclusione:** Il modulo Job è ora completamente compliant con PHPStan Level 10, dimostrando eccellenza nella qualità del codice e type safety.
+=======
+**Conclusione:** Il modulo Job è ora completamente compliant con PHPStan Level 10, dimostrando eccellenza nella qualità del codice e type safety.
+>>>>>>> 6ed19256f (.)

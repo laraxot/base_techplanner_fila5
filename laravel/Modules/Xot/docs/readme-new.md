@@ -1,7 +1,10 @@
 # Xot Module - Core Foundation
 
 **Last Update**: 2025-12-05
+<<<<<<< HEAD
 **Last Update**: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 **Status**: ✅ Production Ready
 **PHPStan Level**: 10
 **Maintainers**: Laraxot Team
@@ -635,7 +638,10 @@ Located in `bashscripts/`:
 ### Quality & Tools
 - [Code Quality Tools](./code-quality-tools.md) - PHPStan, Pint, PHPInsights
 - [Automation Scripts](./bashscripts/README.md) - Available automation scripts
+<<<<<<< HEAD
 - [Automation Scripts](./bashscripts/readme.md) - Available automation scripts
+=======
+>>>>>>> 6ed19256f (.)
 - [PHPStan Patterns](./phpstan-pattern-soluzioni.md) - Common PHPStan solutions
 
 ### Migration & Upgrade
@@ -654,7 +660,10 @@ Located in `bashscripts/`:
 ## 🔄 Recent Updates
 
 ### v3.0.0 - 2025-12-05
+<<<<<<< HEAD
 ### v3.0.0 - [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 - **Added**: Laravel 12 support
 - **Added**: Filament 4 support
 - **Added**: PHP 8.3 support
@@ -663,14 +672,20 @@ Located in `bashscripts/`:
 - **Fixed**: Git merge conflict resolution improvements
 
 ### v2.9.0 - 2025-11-18
+<<<<<<< HEAD
 ### v2.9.0 - [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 - **Added**: New XotBaseChartWidget
 - **Fixed**: HasXotTable duplicate if statements
 - **Fixed**: Mass syntax errors across modules
 - **Improved**: PHP Insights score (Code: 52.6%, Complexity: 93.1%)
 
 See [CHANGELOG.md](./CHANGELOG.md) for full history.
+<<<<<<< HEAD
 See [CHANGELOG.md](./changelog.md) for full history.
+=======
+>>>>>>> 6ed19256f (.)
 
 ---
 
@@ -688,13 +703,17 @@ See [CHANGELOG.md](./changelog.md) for full history.
 - Advanced caching strategies
 
 See [ROADMAP.md](./ROADMAP.md) for details.
+<<<<<<< HEAD
 See [ROADMAP.md](./roadmap.md) for details.
+=======
+>>>>>>> 6ed19256f (.)
 
 ---
 
 ## 📖 Related Documentation
 
 ### Internal Modules
+<<<<<<< HEAD
 - [User Module](../user/docs/readme.md) - User management and authentication
 - [UI Module](../ui/docs/readme.md) - UI components and design system
 - [Tenant Module](../tenant/docs/readme.md) - Multi-tenancy support
@@ -704,6 +723,8 @@ See [ROADMAP.md](./roadmap.md) for details.
 ### Project Documentation
 - [CLAUDE.md](../../../claude.md) - Project architecture and development rules
 - [Project README](../../../readme.md) - Main project documentation
+=======
+>>>>>>> 6ed19256f (.)
 - [User Module](../User/docs/README.md) - User management and authentication
 - [UI Module](../UI/docs/README.md) - UI components and design system
 - [Tenant Module](../Tenant/docs/README.md) - Multi-tenancy support
@@ -734,7 +755,10 @@ Contributions to the Xot module should follow strict guidelines as it's the foun
 4. Follow architectural patterns
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines.
+<<<<<<< HEAD
 See [CONTRIBUTING.md](./contributing.md) for detailed guidelines.
+=======
+>>>>>>> 6ed19256f (.)
 
 ---
 
@@ -748,4 +772,8 @@ Part of the Laraxot PTVX ecosystem.
 **Version**: 3.0.0
 **Framework**: Laravel 12 + Filament 4 + PHP 8.3
 **PHPStan**: Level 10 ✅
+<<<<<<< HEAD
 **Test Coverage**: 85%+ ✅
+=======
+**Test Coverage**: 85%+ ✅
+>>>>>>> 6ed19256f (.)

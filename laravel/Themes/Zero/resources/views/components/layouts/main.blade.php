@@ -41,8 +41,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
+<<<<<<< HEAD
     @livewireStyles
     @filamentStyles
+=======
+>>>>>>> 6ed19256f (.)
     @vite(['resources/css/app.css', 'resources/js/app.js'],'themes/Zero')
     
     <!-- Custom Styles -->
@@ -119,13 +122,24 @@
     </footer>
 
     <!-- Scripts -->
+<<<<<<< HEAD
     @filamentScripts(withCore: true)
     @stack('scripts')
     
     <!-- Alpine.js -->
     <!-- <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script> -->
+=======
+    @stack('scripts')
+    
+    <!-- Alpine.js -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+>>>>>>> 6ed19256f (.)
     
     <!-- Custom Scripts -->
     @stack('custom-scripts')
 </body>
+<<<<<<< HEAD
 </html> 
+=======
+</html> 
+>>>>>>> 6ed19256f (.)

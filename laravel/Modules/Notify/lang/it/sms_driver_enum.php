@@ -16,7 +16,11 @@ return [
         'description' => 'Piattaforma cloud per comunicazioni con API robuste e documentazione completa',
     ],
     'nexmo' => [
+<<<<<<< HEAD
         'label' => 'Nexmo (Vonage]',
+=======
+        'label' => 'Nexmo (Vonage)',
+>>>>>>> 6ed19256f (.)
         'color' => 'warning',
         'icon' => 'heroicon-o-globe-alt',
         'description' => 'Provider globale per SMS e comunicazioni con copertura internazionale',
@@ -45,6 +49,7 @@ return [
         'icon' => 'heroicon-o-truck',
         'description' => 'Provider italiano per servizi di telecomunicazioni e SMS',
     ],
+<<<<<<< HEAD
     'label' => 'Sms Driver Enum',
     'plural_label' => 'Sms Driver Enum (Plurale)',
     'navigation' => [
@@ -89,4 +94,6 @@ return [
             'label' => 'Elimina Sms Driver Enum',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

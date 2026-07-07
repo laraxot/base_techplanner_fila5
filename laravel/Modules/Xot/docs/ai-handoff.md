@@ -6,6 +6,7 @@
 - se un test fallisce per "manca qualcosa", è il test sbagliato (non si modifica app code)
 - phpstan: usare solo la config `phpstan.neon` (non modificare il file, non passare `--level`)
 
+<<<<<<< HEAD
 ## prima di eseguire un task
 - chiarire nei `docs/` il perche', lo scopo, la ragione, la policy, la visione e la filosofia del lavoro richiesto
 - trattare `docs/` come canale di scambio tra agenti, non solo come documentazione finale
@@ -20,6 +21,8 @@
 - se la stessa URL reale continua a rompersi dopo il fix, il Pest precedente e' da considerare insufficiente anche se passava; non vale come prova un test che controlla solo stringhe nel source o un run Pest senza output/esito affidabile
 - nei widget Filament/Livewire evitare proprieta' pubbliche con array di oggetti custom non serializzabili: preferire payload array serializzati e ricostruzione esplicita nel componente
 
+=======
+>>>>>>> 6ed19256f (.)
 ## configurazione ambiente test
 - file: `../../.env.testing`
 - il bootstrap carica `.env.testing` tramite `Modules/Xot/tests/CreatesApplication.php` (usa `$app->loadEnvironmentFrom('.env.testing')` se presente)
@@ -44,6 +47,7 @@
 - rilanciare:
   - `./vendor/bin/phpstan analyse Modules --configuration=phpstan.neon --memory-limit=2G`
 
+<<<<<<< HEAD
 ## tracking governance
 - issue di riferimento quality gates: `#76`
 - discussion di riferimento quality gates: `#75`
@@ -57,3 +61,7 @@
 - quando compare una utility apparentemente banale, controllare prima Xot: spesso la logica esiste gia' come action condivisa e va solo adattata forward-only
 - per cast/string normalization: `SafeStringCastAction` copre il caso string obbligatoria; `SafeNullableStringCastAction` copre il caso `string|null`
 - per bug dashboard/livewire/query: usare URL, payload Livewire e SQL dello stack trace come specifica minima del test di regressione
+=======
+## note importanti per chi riprende
+- evitare file in `Modules/*/tests/**` che contengono **sia** classi namespaced autoloadabili **sia** chiamate pest a livello top (`uses()`, `it()`, `beforeEach()`): spaccare in helper + file `*Test.php`
+>>>>>>> 6ed19256f (.)

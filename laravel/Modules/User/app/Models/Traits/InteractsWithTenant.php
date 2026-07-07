@@ -10,7 +10,10 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\User\Contracts\TeamContract;
 use Modules\User\Models\Scopes\TenantScope;
 use Modules\User\Models\Tenant;
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
+=======
+>>>>>>> 6ed19256f (.)
 
 /**
  * @property TeamContract $currentTeam
@@ -38,11 +41,16 @@ trait InteractsWithTenant
         }
 
         $tenantClass = config('tenant.tenant_model', Tenant::class);
+<<<<<<< HEAD
         Assert::string($tenantClass);
         Assert::classExists($tenantClass);
         Assert::subclassOf($tenantClass, Model::class);
 
         /** @var class-string<Model> $tenantClass */
+=======
+
+        // @phpstan-ignore argument.type, argument.templateType
+>>>>>>> 6ed19256f (.)
         return $this->belongsTo($tenantClass, 'tenant_id');
     }
 

@@ -92,4 +92,8 @@ public function getTableBulkActions(): array
 
 ---
 
+<<<<<<< HEAD
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+=======
+*Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+>>>>>>> 6ed19256f (.)

@@ -348,6 +348,7 @@ $user->revokeDevice($deviceId);
 #### UserResource
 **Purpose**: Complete CRUD interface for user management
 
+<<<<<<< HEAD
 
 **Features**:
 - User creation and editing
@@ -416,6 +417,8 @@ $user->revokeDevice($deviceId);
 - Tenant isolation settings
 
 
+=======
+>>>>>>> 6ed19256f (.)
 **Features**:
 - User creation and editing
 - Role and permission assignment
@@ -447,6 +450,10 @@ $user->revokeDevice($deviceId);
 - Permission grouping
 - Role assignment
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6ed19256f (.)
 #### TeamResource
 **Purpose**: Team management interface
 
@@ -458,6 +465,10 @@ $user->revokeDevice($deviceId);
 
 #### TenantResource
 **Purpose**: Tenant management interface
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 6ed19256f (.)
 - **User**: `UserResource` (model dinamico via `XotData::getUserClass()`)
 - **Profile**: `ProfileResource`
 - **Team**: `TeamResource` (model dinamico via `XotData::getTeamClass()`)
@@ -476,6 +487,10 @@ $user->revokeDevice($deviceId);
   - `OauthAuthCodeResource`
   - `OauthRefreshTokenResource`
 - **SSO**: `SsoProviderResource`
+<<<<<<< HEAD
+=======
+>>>>>>> 32e772a8 (.)
+>>>>>>> 6ed19256f (.)
 
 **Features**:
 - Tenant creation and configuration
@@ -511,10 +526,17 @@ $user->revokeDevice($deviceId);
 - Account lockouts
 - Recent authentication logs
 
+<<<<<<< HEAD
 #### EditProfile Page
 **Purpose**: User profile editing interface
 #### EditProfile Page
 **Purpose**: User profile editing interface
+=======
+<<<<<<< HEAD
+#### EditProfile Page
+**Purpose**: User profile editing interface
+=======
+>>>>>>> 6ed19256f (.)
 - ✅ **Docs**: Risolti conflitti Git nella cartella `docs/`
 
 - ✅ **EditProfile.php**: Rimossi marker Git
@@ -524,6 +546,10 @@ $user->revokeDevice($deviceId);
   - Corrette proprietà duplicate
   - Fixato metodo `confirmPasswordReset()` con if duplicati
   - Corretta logica auto-login dopo reset password
+<<<<<<< HEAD
+=======
+>>>>>>> 32e772a8 (.)
+>>>>>>> 6ed19256f (.)
 
 **Features**:
 - Personal information editing
@@ -630,10 +656,18 @@ php artisan cache:clear
 return [
     // User model configuration
     'user_model' => \Modules\User\Models\User::class,
+<<<<<<< HEAD
     // Profile configuration
     'profile_model' => \Modules\User\Models\Profile::class,
     // Profile configuration
     'profile_model' => \Modules\User\Models\Profile::class,
+=======
+
+<<<<<<< HEAD
+    // Profile configuration
+    'profile_model' => \Modules\User\Models\Profile::class,
+=======
+>>>>>>> 6ed19256f (.)
 #### Architettura e Filosofia
 - [Filosofia Modulo User](./FILOSOFIA_MODULO_USER.md) - Logica, politica, business logic, filosofia, zen
 - [Service Provider Architecture](./SERVICE_PROVIDER_ARCHITECTURE.md) - Module Pattern, DRY, Separation of Concerns
@@ -642,6 +676,10 @@ return [
 #### Guide Tecniche
 - [Troubleshooting Login Component](./troubleshooting-login-component.md)
 - [Filament Filters and Widgets](./filament-filters-and-widgets.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 32e772a8 (.)
+>>>>>>> 6ed19256f (.)
 
     // Authentication configuration
     'auth' => [
@@ -1192,6 +1230,7 @@ See [ROADMAP.md](./ROADMAP.md) for details.
 **PHPStan**: Level 10 ✅
 **Test Coverage**: 88%+ ✅
 **Security**: OWASP Compliant ✅
+<<<<<<< HEAD
 
 ## 🚀 Release su GitHub
 Le release sono basate su tag Git e possono includere release notes generate automaticamente.
@@ -1300,3 +1339,5 @@ Rule: never commit files with conflict markers. Fix immediately when found.
 - [QMD Setup](./QMD-SETUP.md) — Configurazione ricerca locale
 - [Performance](./PERFORMANCE-OPTIMIZATION.md) — Metriche e best practice
 - [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout
+=======
+>>>>>>> 6ed19256f (.)

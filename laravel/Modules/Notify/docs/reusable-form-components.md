@@ -66,7 +66,11 @@ use Modules\Notify\Filament\Forms\Components\ChannelCheckboxList;
 ChannelCheckboxList::make('channels')
 ```
 
+<<<<<<< HEAD
 #### Features  
+=======
+#### Features
+>>>>>>> 6ed19256f (.)
 - Pre-configured with proper label from translation files
 - Automatically loads channel options from ChannelEnum
 - 3-column layout by default
@@ -121,7 +125,11 @@ class ChannelCheckboxList extends CheckboxList
 ### KISS (Keep It Simple, Stupid)
 - Simple API for reusing complex form fields
 - Minimal configuration needed when using these components
+<<<<<<< HEAD
 - Clear and <nome progetto>able behavior
+=======
+- Clear and predictable behavior
+>>>>>>> 6ed19256f (.)
 
 ### Maintainability
 - Changes to mail template or channel selection logic only need to be made in one place
@@ -164,7 +172,13 @@ These components are used in `SendRecordsNotificationBulkAction` to replace the 
 - [Send Notification Bulk Action](./send-notification-bulk-action.md)
 - [Enums Documentation](../enums/)
 - [Filament Extension Rules](../FILAMENT_EXTENSION_RULES.md)
+<<<<<<< HEAD
 - [Filament Extension Rules](../FILAMENT_EXTENSION_RULES.md)
 
 ## Last Updated
 December 19, 2025
+=======
+
+## Last Updated
+December 19, 2025
+>>>>>>> 6ed19256f (.)

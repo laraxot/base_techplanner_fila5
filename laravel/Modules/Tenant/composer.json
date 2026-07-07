@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "laraxot/module_tenant_fila5",
   "description": "Multi-tenancy module for the Laraxot ecosystem: single application instance serving multiple tenants with data isolation.",
   "keywords": [
@@ -81,6 +82,8 @@
   "minimum-stability": "dev",
   "prefer-stable": true
 }
+=======
+>>>>>>> 6ed19256f (.)
     "name": "laraxot/module_tenant_fila3",
     "description": "tenant module for software architecture that allows a single instance of a software application to serve multiple tenants",
     "keywords": [

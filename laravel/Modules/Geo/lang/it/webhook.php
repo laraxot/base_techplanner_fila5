@@ -8,88 +8,121 @@ return [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il nome del webhook',
             'help' => 'Nome identificativo del webhook',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'url' => [
             'label' => 'URL',
             'placeholder' => 'Inserisci l\'URL del webhook',
             'help' => 'URL di destinazione per il webhook',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'events' => [
             'label' => 'Eventi',
             'placeholder' => 'Seleziona gli eventi da monitorare',
             'help' => 'Eventi che attivano il webhook',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'method' => [
             'label' => 'Metodo',
             'placeholder' => 'Seleziona il metodo HTTP',
             'help' => 'Metodo HTTP per l\'invio del webhook',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'headers' => [
             'label' => 'Headers',
             'placeholder' => 'Configura gli headers personalizzati',
             'help' => 'Headers HTTP personalizzati per il webhook',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'payload_template' => [
             'label' => 'Template payload',
             'placeholder' => 'Configura il template del payload',
             'help' => 'Template per il payload del webhook',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'secret' => [
             'label' => 'Segreto',
             'placeholder' => 'Inserisci il segreto per la firma',
             'help' => 'Segreto per firmare il payload del webhook',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'is_active' => [
             'label' => 'Attivo',
             'help' => 'Indica se il webhook è attivo',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'retry_count' => [
             'label' => 'Numero tentativi',
             'placeholder' => 'Inserisci il numero di tentativi',
             'help' => 'Numero di tentativi in caso di fallimento',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'retry_delay' => [
             'label' => 'Ritardo tentativi',
             'placeholder' => 'Inserisci il ritardo in secondi',
             'help' => 'Ritardo tra i tentativi in secondi',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'timeout' => [
             'label' => 'Timeout',
             'placeholder' => 'Inserisci il timeout in secondi',
             'help' => 'Timeout per l\'invio del webhook',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'validation' => [
@@ -221,6 +254,7 @@ return [
         'hmac_sha256' => 'HMAC-SHA256',
         'hmac_sha512' => 'HMAC-SHA512',
     ],
+<<<<<<< HEAD
     'label' => 'Webhook',
     'plural_label' => 'Webhook (Plurale)',
     'navigation' => [
@@ -245,4 +279,6 @@ return [
             'label' => 'Elimina Webhook',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

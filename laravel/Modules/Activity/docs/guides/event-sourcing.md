@@ -33,29 +33,49 @@ class activity_aggregate_root
 {
     private $uuid;
     private $activities = [];
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public static function start(string $uuid): self
     {
         $aggregate = new self();
         $aggregate->record_that(new activity_started($uuid));
         return $aggregate;
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function log_activity(string $type, array $data)
     {
         $this->record_that(new activity_logged($this->uuid, $type, $data));
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     protected function apply_activity_started(activity_started $event)
     {
         $this->uuid = $event->uuid;
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     protected function apply_activity_logged(activity_logged $event)
     {
         $this->activities[] = ['type' => $event->type, 'data' => $event->data];
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     private function record_that($event)
     {
         // logic to record the event
@@ -310,6 +330,7 @@ class user_activity_report_projector
 ## conclusion
 
 event sourcing offers a powerful approach to manage complexity in the `activity` module, ensuring traceability and flexibility. by implementing aggregate roots, projectors, and strategies like snapshotting, existing code robustness and scalability can be improved. following the described patterns and recommendations, the module can evolve to support future requirements without compromising data consistency.
+<<<<<<< HEAD
 ---
 module: theme
 topic: event-sourcing
@@ -317,3 +338,5 @@ canonical: ../../../../Themes/docs/shared-components/event-sourcing.md
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/event-sourcing.md
+=======
+>>>>>>> 6ed19256f (.)

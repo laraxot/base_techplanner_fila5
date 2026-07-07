@@ -14,6 +14,7 @@ Questa cartella contiene la documentazione relativa all'implementazione di Filam
 Questa documentazione si applica a tutti i moduli che utilizzano Filament per il backend.
 
 ## Collegamenti tra versioni di README.md
+<<<<<<< HEAD
 * [README.md](bashscripts/project_docs/readme.md)
 * [README.md](bashscripts/project_docs/it/readme.md)
 * [README.md](docs/laravel-app/phpstan/readme.md)
@@ -134,6 +135,8 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 * [README.md](../../../cms/project_docs/components/readme.md)
 * [README.md](../../../../themes/two/project_docs/readme.md)
 * [README.md](../../../../themes/one/project_docs/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 * [README.md](bashscripts/project_docs/README.md)
 * [README.md](bashscripts/project_docs/it/README.md)
 * [README.md](docs/laravel-app/phpstan/README.md)
@@ -281,7 +284,11 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 - Aggiornare la documentazione ogni volta che si corregge questo errore.
 
 ### Collegamento
+<<<<<<< HEAD
 - Vedi anche: [<nome progetto>/project_docs/filament-best-practices.mdc](../../../<nome progetto>/project_docs/filament-best-practices.mdc)
+=======
+- Vedi anche: [SaluteOra/project_docs/filament-best-practices.mdc](../../../SaluteOra/project_docs/filament-best-practices.mdc)
+>>>>>>> 6ed19256f (.)
 
 ### Checklist
 - [ ] Nessuna closure void restituisce un valore
@@ -316,5 +323,9 @@ $prefix = static::$translationPrefix;
 
 ## Moduli che fanno riferimento a questa regola
 - [Patient: DoctorResource](../../../Patient/project_docs/filament/resources/doctor-resource.md)
+<<<<<<< HEAD
 - [Patient: DoctorResource](../../../patient/project_docs/filament/resources/doctor-resource.md)
 // Aggiungere qui altri moduli se necessario
+=======
+// Aggiungere qui altri moduli se necessario
+>>>>>>> 6ed19256f (.)

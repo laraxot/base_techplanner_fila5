@@ -3,9 +3,12 @@
 > **Generato**: 2026-01-07
 > **Filosofia**: L'Architetto Laraxot (Vincitore del Dibattito Interno)
 > **PHPStan Status**: ✅ Level MAX Compliant (Zero Errori)
+<<<<<<< HEAD
 > **Generato**: [DATE]
 > **Filosofia**: L'Architetto Laraxot (Vincitore del Dibattito Interno)
 > **PHPStan Status**: ✅ Modulo `User` verificato pulito il 2026-03-10
+=======
+>>>>>>> 6ed19256f (.)
 
 ---
 
@@ -41,6 +44,7 @@ Durante l'analisi dell'integrazione Passport, sono emerse tre posizioni:
 laravel/Modules/User/app/Models/
 ├── BaseUser.php              # Implements OAuthenticatable + HasApiTokens
 ├── OauthClient.php          # Extends Laravel\Passport\Client
+<<<<<<< HEAD
 ├── OauthToken.php           # Extends Laravel\Passport\Token
 ├── OauthAccessToken.php     # Local alias/model used by app consumers when needed
 ├── OauthRefreshToken.php    # Extends Laravel\Passport\RefreshToken
@@ -54,6 +58,14 @@ laravel/Modules/User/app/Models/
 - `Laravel\Passport\PersonalAccessClient` non e un model Eloquent vendor disponibile come wrapper 1:1 nel progetto
 - `OauthPersonalAccessClient` resta quindi un model locale del modulo `User`, non un mirror diretto del vendor
 
+=======
+├── OauthAccessToken.php     # Extends Laravel\Passport\Token
+├── OauthRefreshToken.php    # Extends Laravel\Passport\RefreshToken
+├── OauthAuthCode.php        # Extends Laravel\Passport\AuthCode
+└── OauthPersonalAccessClient.php  # Extends Laravel\Passport\PersonalAccessClient
+```
+
+>>>>>>> 6ed19256f (.)
 ### BaseUser + Passport
 
 ```php
@@ -505,9 +517,12 @@ $ ./vendor/bin/phpstan analyse Modules --memory-limit=-1
 - [FILOSOFIA_MODULO_USER.md](./FILOSOFIA_MODULO_USER.md) - Filosofia generale
 - [README.md](./README.md) - Overview modulo
 - [BUSINESS_LOGIC_DEEP_DIVE.md](./BUSINESS_LOGIC_DEEP_DIVE.md) - Business logic completa
+<<<<<<< HEAD
 - [FILOSOFIA_MODULO_USER.md](./filosofia_modulo_user.md) - Filosofia generale
 - [README.md](./readme.md) - Overview modulo
 - [BUSINESS_LOGIC_DEEP_DIVE.md](./business_logic_deep_dive.md) - Business logic completa
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Documentazione Esterna
 - [Laravel Passport Official](https://laravel.com/docs/passport)
@@ -533,4 +548,8 @@ $ ./vendor/bin/phpstan analyse Modules --memory-limit=-1
 
 ---
 
+<<<<<<< HEAD
 **Conclusione**: Passport è integrato seguendo la filosofia Laraxot - estendere senza rompere, documentare decisioni, mantenere compatibilità con le librerie upstream. Zero compromessi su qualità, zero codice ridondante, massima type safety dove possibile senza rompere le API di Laravel.
+=======
+**Conclusione**: Passport è integrato seguendo la filosofia Laraxot - estendere senza rompere, documentare decisioni, mantenere compatibilità con le librerie upstream. Zero compromessi su qualità, zero codice ridondante, massima type safety dove possibile senza rompere le API di Laravel.
+>>>>>>> 6ed19256f (.)

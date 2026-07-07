@@ -9,21 +9,30 @@ return [
             'placeholder' => 'email',
             'helper_text' => 'email',
             'description' => 'email',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'password' => [
             'label' => 'password',
             'placeholder' => 'password',
             'helper_text' => 'password',
             'description' => 'password',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'remember' => [
             'label' => 'remember',
             'placeholder' => 'remember',
             'helper_text' => 'remember',
             'description' => 'remember',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -43,6 +52,7 @@ return [
             'tooltip' => 'authenticate',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -52,4 +62,6 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

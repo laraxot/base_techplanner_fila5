@@ -85,8 +85,11 @@ mkdir -p archive
 # Spostare file con date
 mv dry-kiss-analysis-2025-10-15.md archive/dry-kiss-analysis.md 2>/dev/null
 mv phpstan-level-10-cleanup-2025-11-06.md archive/phpstan-level-10-cleanup.md 2>/dev/null
+<<<<<<< HEAD
 mv dry-kiss-analysis-[DATE].md archive/dry-kiss-analysis.md 2>/dev/null
 mv phpstan-level-10-cleanup-[DATE].md archive/phpstan-level-10-cleanup.md 2>/dev/null
+=======
+>>>>>>> 6ed19256f (.)
 
 # Consolidare file PHPStan con date
 # phpstan-fixes-gennaio-2025.md → consolidare in phpstan-compliance.md
@@ -134,4 +137,8 @@ grep -r "filament_4x_upgrade" . --include="*.md"
 
 ---
 
+<<<<<<< HEAD
 **Nota**: Eseguire questo script con cautela, verificando sempre prima di eliminare.
+=======
+**Nota**: Eseguire questo script con cautela, verificando sempre prima di eliminare.
+>>>>>>> 6ed19256f (.)

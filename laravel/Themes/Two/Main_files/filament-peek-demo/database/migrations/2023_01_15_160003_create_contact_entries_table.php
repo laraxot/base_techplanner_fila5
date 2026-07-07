@@ -32,5 +32,8 @@ return new class extends Migration
         Schema::dropIfExists('contact_entries');
     }
 };
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 6ed19256f (.)

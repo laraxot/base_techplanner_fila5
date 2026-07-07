@@ -36,7 +36,11 @@ class Login extends Component implements HasActions, HasForms
      *
      * @var array<string, mixed>
      */
+<<<<<<< HEAD
     public $data = [];
+=======
+    public array $data = [];
+>>>>>>> 6ed19256f (.)
 
     /**
      * Inizializza il componente.

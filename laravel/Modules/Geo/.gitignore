@@ -158,6 +158,7 @@ test_geo_data.sql
 # 🚫 File specifici del progetto
 *.fila2
 laravel
+<<<<<<< HEAD
 public_html
 lang/lang/
 _docs/
@@ -173,3 +174,6 @@ _docs/
 *.orig
 *.rej
 *~head
+=======
+public_html
+>>>>>>> 6ed19256f (.)

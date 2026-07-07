@@ -2,7 +2,10 @@
 
 **Data**: 2025-07-30
 **File**: `/laravel/Modules/Geo/app/Filament/Resources/AddressResource.php`
+<<<<<<< HEAD
 **File**: `/laravel/Modules/Geo/app/Filament/Resources/AddressResource.php`  
+=======
+>>>>>>> 6ed19256f (.)
 **Priorità**: Alta (per performance e manutenibilità)
 
 ## 🎯 Obiettivi di Miglioramento
@@ -100,7 +103,10 @@ class GeoDataService
 {
     public function getRegionOptions(): array
     public function getProvinceOptions(int $regionId): array
+<<<<<<< HEAD
     public function getProvinceOptions(int $regionId): array  
+=======
+>>>>>>> 6ed19256f (.)
     public function getLocalityOptions(int $regionId, int $provinceId): array
     public function getPostalCodeOptions(int $regionId, int $provinceId, ?int $localityId = null): array
 }
@@ -109,8 +115,12 @@ class GeoDataService
 public static function getFormSchema(): array
 {
     $geoService = app(GeoDataService::class);
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     return [
         // Utilizzo del service per le opzioni
         'administrative_area_level_1' => Select::make('administrative_area_level_1')
@@ -199,7 +209,10 @@ public static function getSearchStep(): array
 - [ ] Aggiungere loading states
 
 ### Fase 2 (Settimana 3-4): UX e Validazioni
+<<<<<<< HEAD
 ### Fase 2 (Settimana 3-4): UX e Validazioni  
+=======
+>>>>>>> 6ed19256f (.)
 - [ ] Integrazione Google Maps nel form
 - [ ] Implementare validazioni geografiche
 - [ ] Aggiungere feedback utente migliorato
@@ -236,7 +249,10 @@ public static function getSearchStep(): array
 - Cache mechanisms
 
 ### Integration Tests
+<<<<<<< HEAD
 ### Integration Tests  
+=======
+>>>>>>> 6ed19256f (.)
 - Form submission completa
 - Cascade updates tra Select
 - Google Maps integration
@@ -253,4 +269,8 @@ public static function getSearchStep(): array
 - [ ] Configurazione Google Maps API
 - [ ] Preparazione dati di test geografici
 - [ ] Review architetturale con team
+<<<<<<< HEAD
 - [ ] Pianificazione rollback strategy
+=======
+- [ ] Pianificazione rollback strategy
+>>>>>>> 6ed19256f (.)

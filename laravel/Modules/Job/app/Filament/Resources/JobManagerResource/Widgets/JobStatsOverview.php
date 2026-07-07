@@ -35,7 +35,11 @@ class JobStatsOverview extends BaseWidget
                 ? ceil(
                     (float) app(SafeEloquentCastAction::class)
                         ->getStringAttribute($aggregatedInfo, 'average_time_elapsed', '0'),
+<<<<<<< HEAD
                 ).'s'
+=======
+                ) . 's'
+>>>>>>> 6ed19256f (.)
                 : '0';
 
             $totalTime = app(SafeEloquentCastAction::class)

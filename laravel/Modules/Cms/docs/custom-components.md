@@ -231,4 +231,7 @@ npm run build
 - [Documentazione Filament](https://filamentphp.com)
 - [Documentazione Livewire](https://livewire.laravel.com)
 - [Documentazione TailwindCSS](https://tailwindcss.com)
+<<<<<<< HEAD
 - [Documentazione TailwindCSS](https://tailwindcss.com) 
+=======
+>>>>>>> 6ed19256f (.)

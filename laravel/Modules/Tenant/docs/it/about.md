@@ -92,12 +92,19 @@ Per ulteriori informazioni su come utilizzare il modulo, consulta la documentazi
 * [about.md](../../../Xot/docs/about.md)
 * [about.md](../../../Tenant/docs/en/about.md)
 * [about.md](../../../Tenant/docs/it/about.md)
+<<<<<<< HEAD
 * [about.md](../../../xot/docs/about.md)
 * [about.md](../../../tenant/docs/en/about.md)
 * [about.md](../../../tenant/docs/it/about.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Versione Incoming
 
 Per ulteriori informazioni su come utilizzare il modulo, consulta la documentazione ufficiale sul sito web del suo autore o sulla pagina GitHub del progetto.
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> 6ed19256f (.)

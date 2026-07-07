@@ -612,6 +612,7 @@ class AlertWidget extends BaseTableWidget
 
 ## 🔗 Collegamenti Correlati
 
+<<<<<<< HEAD
 - [Analisi Completa Codice](./comprehensive_code_analysis.md)
 - [Architettura Moduli](./architecture.md)
 - [Performance Guide](./performance_guide.md)
@@ -619,6 +620,8 @@ class AlertWidget extends BaseTableWidget
 ---
 
 **Data Creazione**: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
 - [Architettura Moduli](./ARCHITECTURE.md)
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
@@ -628,4 +631,8 @@ class AlertWidget extends BaseTableWidget
 **Data Creazione**: 2025-01-06
 **Priorità**: CRITICA
 **Effort Stimato**: 20-30 ore
+<<<<<<< HEAD
 **Benefici**: ALTI
+=======
+**Benefici**: ALTI
+>>>>>>> 6ed19256f (.)

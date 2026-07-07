@@ -40,9 +40,12 @@ vendor/
 *.bakcup
 *.backup.*
 node_modules
+<<<<<<< HEAD
 *.*Zone.Identifier
 *.*Zone.Identifier
 _docs/
 
 # Database locale vector search (non versionare)
 ruvector.db
+=======
+>>>>>>> 6ed19256f (.)

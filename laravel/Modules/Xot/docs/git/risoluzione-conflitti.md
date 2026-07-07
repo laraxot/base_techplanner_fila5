@@ -7,6 +7,7 @@ Questo documento descrive i file con conflitti git identificati nel progetto e l
 ## Moduli con Conflitti
 
 ### Modulo Media
+<<<<<<< HEAD
 - [Documentazione dettagliata del modulo Media](../../media/docs/conflitti_merge_risolti.md)
 - [Azioni delle tabelle Filament](../../media/docs/filament_table_actions_conflict_resolution.md)
 
@@ -15,6 +16,8 @@ Questo documento descrive i file con conflitti git identificati nel progetto e l
 
 ### Modulo Job
 - [Documentazione dettagliata del modulo Job](../../job/docs/conflict_resolution.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Documentazione dettagliata del modulo Media](../../Media/docs/CONFLITTI_MERGE_RISOLTI.md)
 - [Azioni delle tabelle Filament](../../Media/docs/filament_table_actions_conflict_resolution.md)
 
@@ -107,6 +110,9 @@ I file modificati sono stati documentati sia nel loro specifico modulo che in qu
 - [PHPStan Report](../../Media/docs/phpstan_report.md)
 - [Test Report](test_report.md)
 - [Documentazione Conflitti Job](../../Job/docs/conflict_resolution.md)
+<<<<<<< HEAD
 - [PHPStan Report](../../media/docs/phpstan_report.md)
 - [Test Report](test_report.md)
 - [Documentazione Conflitti Job](../../job/docs/conflict_resolution.md)
+=======
+>>>>>>> 6ed19256f (.)

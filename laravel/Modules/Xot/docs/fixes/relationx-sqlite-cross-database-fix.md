@@ -12,7 +12,11 @@ Il trait `RelationX` aggiungeva automaticamente il prefisso del database al nome
 ## Soluzione Implementata
 
 ### File Modificato
+<<<<<<< HEAD
 `Modules/Xot/app/Models/Traits/RelationX.php`
+=======
+`/var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/Xot/app/Models/Traits/RelationX.php`
+>>>>>>> 6ed19256f (.)
 
 ### Correzione Applicata
 Righe 51-59, aggiunto controllo del driver database:
@@ -75,7 +79,10 @@ echo $tenants->count(); // ✅ Output: 1
 
 - [Customer User Fix Summary](../../<nome progetto>/docs/customer_user_fix_summary.md)
 - [Cross Database Relations](../../User/docs/cross_database_relations_issue.md)
+<<<<<<< HEAD
 - [Cross Database Relations](../../user/docs/cross_database_relations_issue.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Multi-Tenant Architecture](../architecture/multi_tenant_design.md)
 
 ## Note per Manutenzione Futura
@@ -98,6 +105,7 @@ echo $tenants->count(); // ✅ Output: 1
 ## Causa Radice
 
 Il trait `RelationX` aggiungeva automaticamente il prefisso del database al nome della tabella pivot (`quaeris_data.customer_user`) per le relazioni cross-database. Questo approccio funziona con MySQL ma non con SQLite, che non supporta la sintassi `database.table`.
+<<<<<<< HEAD
 **Errore**: `SQLSTATE[HY000]: General error: 1 no such table: healthcare_app_data.customer_user`
 
 ## Causa Radice
@@ -108,11 +116,17 @@ Il trait `RelationX` aggiungeva automaticamente il prefisso del database al nome
 ## Causa Radice
 
 Il trait `RelationX` aggiungeva automaticamente il prefisso del database al nome della tabella pivot (`modulo_data.customer_user`) per le relazioni cross-database. Questo approccio funziona con MySQL ma non con SQLite, che non supporta la sintassi `database.table`.
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Soluzione Implementata
 
 ### File Modificato
+<<<<<<< HEAD
 `Modules/Xot/app/Models/Traits/RelationX.php`
+=======
+`/var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/Xot/app/Models/Traits/RelationX.php`
+>>>>>>> 6ed19256f (.)
 
 ### Correzione Applicata
 Righe 51-59, aggiunto controllo del driver database:
@@ -145,8 +159,12 @@ if ($pivotDbName !== $dbName || $relatedDbName !== $dbName) {
 - ✅ Multi-tenancy cross-database
 
 ### Moduli Affetti
+<<<<<<< HEAD
 - **healthcare_app Module**: Customer-User relationships
 - **Modulo con database separato**: Customer-User relationships
+=======
+- **Quaeris Module**: Customer-User relationships
+>>>>>>> 6ed19256f (.)
 - **User Module**: HasTenants trait functionality
 - **Tutti i moduli**: che usano `belongsToManyX` con database separati
 
@@ -176,8 +194,11 @@ echo $tenants->count(); // ✅ Output: 1
 
 - [Customer User Fix Summary](../../Quaeris/docs/customer_user_fix_summary.md)
 - [Cross Database Relations](../../User/docs/cross_database_relations_issue.md)
+<<<<<<< HEAD
 - [Customer User Fix Summary](../../healthcare_app/docs/customer_user_fix_summary.md)
 - [Cross Database Relations](../../user/docs/cross_database_relations_issue.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Multi-Tenant Architecture](../architecture/multi_tenant_design.md)
 
 ## Note per Manutenzione Futura
@@ -189,4 +210,8 @@ echo $tenants->count(); // ✅ Output: 1
 
 ---
 
+<<<<<<< HEAD
 *Fix implementato e verificato - Sistema multi-tenant completamente funzionante*
+=======
+*Fix implementato e verificato - Sistema multi-tenant completamente funzionante*
+>>>>>>> 6ed19256f (.)

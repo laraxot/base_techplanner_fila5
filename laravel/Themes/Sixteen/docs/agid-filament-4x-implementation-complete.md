@@ -260,7 +260,11 @@ Themes/Sixteen/
 
 ### 1. Installation
 ```bash
+<<<<<<< HEAD
 cd /var/www/_bases/base_fixcity_fila5_mono/laravel/Themes/Sixteen
+=======
+cd /var/www/_bases/base_fixcity_fila4_mono/laravel/Themes/Sixteen
+>>>>>>> 6ed19256f (.)
 npm install
 ```
 

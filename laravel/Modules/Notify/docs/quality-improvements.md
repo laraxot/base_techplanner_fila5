@@ -2,7 +2,10 @@
 
 ## Data
 2025-01-06
+<<<<<<< HEAD
 2025-01-06
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Obiettivo
 Migliorare sistematicamente la qualità del codice del modulo Notify utilizzando strumenti di analisi statica e refactoring automatico.
@@ -170,4 +173,7 @@ Tutti i pattern di correzione sono documentati in:
 - [Index](./index.md)
 
 *Ultimo aggiornamento: 2025-01-06*
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-06*
+=======
+>>>>>>> 6ed19256f (.)

@@ -7,6 +7,7 @@
    - I namespace possono essere in PascalCase ma devono mappare correttamente alle directory lowercase
 
 2. **Struttura Directory Principale**
+<<<<<<< HEAD
    - `Modules/Notify/app/` (CORRETTO)
    - `Modules/Notify/App/` (ERRATO)
 
@@ -17,6 +18,18 @@
 4. **Struttura Directory Datas**
    - `Modules/Notify/app/Datas/` (CORRETTO)
    - `Modules/Notify/App/Datas/` (ERRATO)
+=======
+   - `/var/www/html/saluteora/laravel/Modules/Notify/app/` (CORRETTO)
+   - `/var/www/html/saluteora/laravel/Modules/Notify/App/` (ERRATO)
+
+3. **Struttura Directory Actions**
+   - `/var/www/html/saluteora/laravel/Modules/Notify/app/Actions/` (CORRETTO)
+   - `/var/www/html/saluteora/laravel/Modules/Notify/App/Actions/` (ERRATO)
+
+4. **Struttura Directory Datas**
+   - `/var/www/html/saluteora/laravel/Modules/Notify/app/Datas/` (CORRETTO)
+   - `/var/www/html/saluteora/laravel/Modules/Notify/App/Datas/` (ERRATO)
+>>>>>>> 6ed19256f (.)
 
 ## Namespace vs Directory
 
@@ -30,8 +43,13 @@
 ## Errori Comuni da Evitare
 
 1. **Mai utilizzare la "A" maiuscola nel percorso fisico della directory app**
+<<<<<<< HEAD
    - ✅ CORRETTO: `Modules/Notify/app/Actions/`
    - ❌ ERRATO: `Modules/Notify/App/Actions/`
+=======
+   - ✅ CORRETTO: `/var/www/html/saluteora/laravel/Modules/Notify/app/Actions/`
+   - ❌ ERRATO: `/var/www/html/saluteora/laravel/Modules/Notify/App/Actions/`
+>>>>>>> 6ed19256f (.)
 
 2. **Mai aggiungere "App" nel namespace se non definito nel composer.json del modulo**
    - ✅ CORRETTO: `namespace Modules\Notify\Actions;`

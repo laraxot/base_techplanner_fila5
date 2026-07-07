@@ -1,7 +1,10 @@
 # Analisi Metodi Duplicati - Modulo Lang
 
 **Data Generazione**: 2025-10-15 06:41:17
+<<<<<<< HEAD
 **Data Generazione**: 2025-10-15 06:41:17
+=======
+>>>>>>> 6ed19256f (.)
 **Totale Gruppi di Duplicati**:
 
 ## Sommario Esecutivo
@@ -475,4 +478,8 @@ Indica quanto è probabile che il refactoring sia vantaggioso:
 - **90-100%**: Altamente raccomandato
 - **70-89%**: Raccomandato
 - **50-69%**: Valutare caso per caso
+<<<<<<< HEAD
 - **< 50%**: Richiede analisi dettagliata
+=======
+- **< 50%**: Richiede analisi dettagliata
+>>>>>>> 6ed19256f (.)

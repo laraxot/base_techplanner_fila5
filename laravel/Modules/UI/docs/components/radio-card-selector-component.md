@@ -136,7 +136,11 @@ Forms\Components\TextInput::make('studio_name')
     ->required()
 ```
 
+<<<<<<< HEAD
 ## 🎯 **Caso d'Uso: Studio Selector (<nome progetto>)**
+=======
+## 🎯 **Caso d'Uso: Studio Selector (SaluteOra)**
+>>>>>>> 6ed19256f (.)
 
 ### Implementazione nel Widget
 ```php
@@ -145,12 +149,21 @@ protected function getStudioStepSchema(): array
 {
     return [
         \Modules\UI\Forms\Components\RadioCardSelector::make('selected_studio')
+<<<<<<< HEAD
             ->sectionTitle(__('<nome progetto>::widgets.find_doctor_and_appointment.studio_list.title'))
             ->sectionSubtitle(__('<nome progetto>::widgets.find_doctor_and_appointment.studio_list.subtitle'))
             ->cards(fn (Get $get) => $this->getStudioCards($get))
             ->populatesField('selected_studio_name')
             ->emptyStateTitle(__('<nome progetto>::widgets.find_doctor_and_appointment.studio_list.empty_state.title'))
             ->emptyStateDescription(__('<nome progetto>::widgets.find_doctor_and_appointment.studio_list.empty_state.description'))
+=======
+            ->sectionTitle(__('saluteora::widgets.find_doctor_and_appointment.studio_list.title'))
+            ->sectionSubtitle(__('saluteora::widgets.find_doctor_and_appointment.studio_list.subtitle'))
+            ->cards(fn (Get $get) => $this->getStudioCards($get))
+            ->populatesField('selected_studio_name')
+            ->emptyStateTitle(__('saluteora::widgets.find_doctor_and_appointment.studio_list.empty_state.title'))
+            ->emptyStateDescription(__('saluteora::widgets.find_doctor_and_appointment.studio_list.empty_state.description'))
+>>>>>>> 6ed19256f (.)
             ->required()
             ->columnSpanFull(),
 
@@ -271,6 +284,7 @@ RadioCardSelector::make('item')
 
 ## 🔗 **Collegamenti**
 
+<<<<<<< HEAD
 - [Widget FindDoctorAndAppointment](../../../../Modules/<nome progetto>/docs/widgets/find-doctor-widget-studio-step-analysis.md)
 - [Componenti UI Overview](../components.md)
 - [Best Practices Filament](../../../../docs/filament-best-practices.md)
@@ -284,3 +298,15 @@ RadioCardSelector::make('item')
 **Ultima modifica**: Gennaio 2025
 **Versione**: 1.0.0
 **Status**: ✅ Production Ready
+=======
+- [Widget FindDoctorAndAppointment](../../../../Modules/SaluteOra/docs/widgets/find-doctor-widget-studio-step-analysis.md)
+- [Componenti UI Overview](../components.md)
+- [Best Practices Filament](../../../../docs/filament-best-practices.md)
+
+---
+
+**Autore**: Implementazione completata per SaluteOra widget
+**Ultima modifica**: Gennaio 2025
+**Versione**: 1.0.0
+**Status**: ✅ Production Ready
+>>>>>>> 6ed19256f (.)

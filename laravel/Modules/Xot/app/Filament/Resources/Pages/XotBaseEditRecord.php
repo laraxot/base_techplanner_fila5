@@ -4,12 +4,17 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\Pages;
 
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup; // Added missing use statement
 use Filament\Actions\DeleteAction;
 use Filament\Forms\Form; // Keep if still used elsewhere
 use Filament\Resources\Pages\EditRecord as FilamentEditRecord;
 use Filament\Schemas\Schema;
+=======
+use Filament\Actions\DeleteAction;
+use Filament\Resources\Pages\EditRecord as FilamentEditRecord;
+>>>>>>> 6ed19256f (.)
 use Filament\Support\Components\Component;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Filament\Traits\TransTrait;
@@ -30,7 +35,11 @@ abstract class XotBaseEditRecord extends FilamentEditRecord
 
     public static function canDelete(Model $record): bool
     {
+<<<<<<< HEAD
         $resource = static::getResource();
+=======
+        $resource = static::$resource;
+>>>>>>> 6ed19256f (.)
 
         $result = $resource::canDelete($record);
 
@@ -39,7 +48,11 @@ abstract class XotBaseEditRecord extends FilamentEditRecord
 
     public static function canForceDelete(Model $record): bool
     {
+<<<<<<< HEAD
         $resource = static::getResource();
+=======
+        $resource = static::$resource;
+>>>>>>> 6ed19256f (.)
 
         $result = $resource::canForceDelete($record);
 
@@ -48,7 +61,11 @@ abstract class XotBaseEditRecord extends FilamentEditRecord
 
     public static function canRestore(Model $record): bool
     {
+<<<<<<< HEAD
         $resource = static::getResource();
+=======
+        $resource = static::$resource;
+>>>>>>> 6ed19256f (.)
 
         $result = $resource::canRestore($record);
 
@@ -68,7 +85,11 @@ abstract class XotBaseEditRecord extends FilamentEditRecord
     /**
      * Get the header actions.
      *
+<<<<<<< HEAD
      * @return array<string, Action|ActionGroup>
+=======
+     * @return array<string, \Filament\Actions\Action|\Filament\Actions\ActionGroup>
+>>>>>>> 6ed19256f (.)
      */
     protected function getHeaderActions(): array
     {

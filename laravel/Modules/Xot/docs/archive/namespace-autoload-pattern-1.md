@@ -82,5 +82,10 @@ namespace Modules\ModuleName\App\Console\Commands;
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Convenzioni di Namespace](../xot/docs/namespace_conventions.md)
 - [Struttura Moduli](../xot/docs/module_structure.md)
+=======
+- [Convenzioni di Namespace](/var/www/html/base_<nome progetto>/laravel/Modules/Xot/docs/namespace_conventions.md)
+- [Struttura Moduli](/var/www/html/base_<nome progetto>/laravel/Modules/Xot/docs/module_structure.md)
+>>>>>>> 6ed19256f (.)

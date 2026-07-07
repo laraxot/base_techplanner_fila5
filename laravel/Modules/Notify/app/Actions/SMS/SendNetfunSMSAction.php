@@ -11,9 +11,14 @@ use Illuminate\Support\Facades\Log;
 use Modules\Notify\Contracts\SMS\SmsActionContract;
 use Modules\Notify\Datas\SmsData;
 use Override;
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\mb_convert_encoding;
+=======
+use function Safe\mb_convert_encoding;
+use Spatie\QueueableAction\QueueableAction;
+>>>>>>> 6ed19256f (.)
 
 final class SendNetfunSMSAction implements SmsActionContract
 {
@@ -58,6 +63,10 @@ final class SendNetfunSMSAction implements SmsActionContract
      * Execute the action.
      *
      * @param  SmsData  $smsData  I dati del messaggio SMS
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> 6ed19256f (.)
      * @return array Risultato dell'operazione
      *
      * @throws Exception In caso di errore durante l'invio
@@ -71,14 +80,24 @@ final class SendNetfunSMSAction implements SmsActionContract
         ];
 
         // Normalizza il numero di telefono usando l'azione dedicata
+<<<<<<< HEAD
         $recipient = app(NormalizePhoneNumberAction::class)->execute($smsData->getRecipient());
 
         $plainText = strip_tags($smsData->getBody());
+=======
+        $recipient = app(NormalizePhoneNumberAction::class)->execute($smsData->recipient);
+
+        $plainText = strip_tags($smsData->body);
+>>>>>>> 6ed19256f (.)
         $textTemplate = mb_convert_encoding($plainText, 'UTF-8', 'UTF-8');
 
         $body = [
             'api_token' => $this->token,
+<<<<<<< HEAD
             'sender' => $smsData->from ?: $this->defaultSender,
+=======
+            'sender' => $smsData->from ?? $this->defaultSender,
+>>>>>>> 6ed19256f (.)
             'text_template' => $textTemplate,
             'async' => true,
             'utf8_enabled' => true,

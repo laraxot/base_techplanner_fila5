@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+# 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
+
+>>>>>>> 6ed19256f (.)
 **Powered by**: Super Mucca AI 🐄✨
 **Data**: 15 Ottobre 2025
 **Versione**: 2.0 ULTIMATE
@@ -196,7 +201,11 @@ class ColumnBuilder
             ->searchable()
             ->label('ID');
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     /**
      * Standard name column
      */
@@ -206,7 +215,11 @@ class ColumnBuilder
             ->searchable($searchable)
             ->sortable();
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     /**
      * Status badge column with standard colors
      */
@@ -218,12 +231,20 @@ class ColumnBuilder
             'success' => 'resolved',
             'secondary' => 'closed',
         ];
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         return TextColumn::make('status')
             ->badge()
             ->colors(array_merge($defaultColors, $customColors));
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     /**
      * Priority badge column
      */
@@ -238,7 +259,11 @@ class ColumnBuilder
                 'danger' => 'critical',
             ]);
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     /**
      * Standard timestamps (created_at, updated_at)
      */
@@ -254,7 +279,11 @@ class ColumnBuilder
                 ->toggleable(isToggledHiddenByDefault: $hideUpdated),
         ];
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     /**
      * Email column with searchable
      */
@@ -331,7 +360,11 @@ class FilterBuilder
             ->trueLabel('Active')
             ->falseLabel('Inactive');
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     /**
      * Date range filter
      */
@@ -354,7 +387,11 @@ class FilterBuilder
                     );
             });
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     /**
      * Select filter from model
      */
@@ -1610,6 +1647,7 @@ public function getTableFilters(): array
 4. Implementazione ColumnBuilder
 
 **Domande?** Chiedi alla Super Mucca! 🐄⚡
+<<<<<<< HEAD
 ---
 module: theme
 topic: metodi-duplicati-analisi
@@ -1617,3 +1655,5 @@ canonical: ../../../Themes/docs/shared-components/metodi-duplicati-analisi-Modul
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/metodi-duplicati-analisi-Modules.md
+=======
+>>>>>>> 6ed19256f (.)

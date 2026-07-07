@@ -64,6 +64,7 @@
                     {{ __('pub_theme::cookies.accept_all') }}
                 </button>
                 </button>
+<<<<<<< HEAD
                 
                 <button
                     @click="acceptAll"
@@ -78,6 +79,12 @@
                 >
                     {{ __('pub_theme::cookies.accept_all') }}
                 </button>
+=======
+            </div>
+        </div>
+    </div>
+</div>
+>>>>>>> 6ed19256f (.)
             </div>
         </div>
     </div>

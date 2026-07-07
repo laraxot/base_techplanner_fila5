@@ -35,7 +35,11 @@ Questo documento descrive la correzione completa di tutti gli errori PHPStan nel
 
 ## ✅ Risultato Finale
 ```
+<<<<<<< HEAD
 Note: Using configuration file phpstan.neon.
+=======
+Note: Using configuration file /var/www/_bases/base_techplanner_fila4_mono/laravel/phpstan.neon.
+>>>>>>> 6ed19256f (.)
 
 [OK] No errors
 ```
@@ -58,6 +62,11 @@ Note: Using configuration file phpstan.neon.
 
 ---
 **Documento creato**: 2025-01-27
+<<<<<<< HEAD
 **Documento creato**: [DATE]
 **Stato**: ✅ COMPLETATO
 **Prossima revisione**: Con necessità
+=======
+**Stato**: ✅ COMPLETATO
+**Prossima revisione**: Con necessità
+>>>>>>> 6ed19256f (.)

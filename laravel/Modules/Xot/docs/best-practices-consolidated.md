@@ -483,7 +483,11 @@ Modules/UI/resources/views/components/ui/
 
 ### Livello 9+ Obbligatorio
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/html/_bases/base_saluteora/laravel
+>>>>>>> 6ed19256f (.)
 ./vendor/bin/phpstan analyze --level=9 --memory-limit=2G
 ```
 
@@ -715,7 +719,11 @@ return new class extends XotBaseMigration {
 **Soluzione**:
 ```bash
 # Eseguire da directory Laravel
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/html/_bases/base_saluteora/laravel
+>>>>>>> 6ed19256f (.)
 ./vendor/bin/phpstan analyze --level=9 --memory-limit=2G
 ```
 
@@ -899,4 +907,8 @@ php artisan view:clear
 
 *Ultimo aggiornamento: 2025-08-04*
 *Modulo: Xot*
+<<<<<<< HEAD
 *Categoria: Best Practices*
+=======
+*Categoria: Best Practices*
+>>>>>>> 6ed19256f (.)

@@ -23,15 +23,21 @@ return [
             'label' => 'Titolo',
             'helper_text' => 'Titolo della notifica',
             'placeholder' => 'Inserisci il titolo',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'message' => [
             'label' => 'Messaggio',
             'helper_text' => 'Contenuto della notifica',
             'placeholder' => 'Inserisci il messaggio',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'type' => [
             'label' => 'Tipo',
@@ -45,8 +51,11 @@ return [
                 'warning' => 'Attenzione',
                 'error' => 'Errore',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'status' => [
             'label' => 'Stato',
@@ -57,33 +66,48 @@ return [
                 'read' => 'Letta',
                 'archived' => 'Archiviata',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'recipient' => [
             'label' => 'Destinatario',
             'helper_text' => 'Utente destinatario della notifica',
             'placeholder' => 'Seleziona il destinatario',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'sent_at' => [
             'label' => 'Inviata il',
             'helper_text' => 'Data e ora di invio della notifica',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'read_at' => [
             'label' => 'Letta il',
             'helper_text' => 'Data e ora di lettura della notifica',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'archived_at' => [
             'label' => 'Archiviata il',
             'helper_text' => 'Data e ora di archiviazione della notifica',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'channel' => [
             'label' => 'Canale',
@@ -108,7 +132,10 @@ return [
                     'tooltip' => 'Invia tramite Telegram',
                 ],
             ],
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'template' => [
             'label' => 'Template',
@@ -132,7 +159,10 @@ return [
                     'helper_text' => 'Usa {variable} per inserire valori dinamici',
                 ],
             ],
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'schedule' => [
             'label' => 'Programmazione',
@@ -159,6 +189,7 @@ return [
                     'placeholder' => 'es: 14:30',
                 ],
             ],
+<<<<<<< HEAD
             'description' => '',
         ],
         'applyFilters' => [
@@ -166,6 +197,11 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -224,6 +260,9 @@ return [
         'success' => 'Operazione completata con successo',
         'error' => 'Si è verificato un errore durante l\'operazione',
     ],
+<<<<<<< HEAD
     'label' => 'Notification',
     'plural_label' => 'Notification (Plurale)',
+=======
+>>>>>>> 6ed19256f (.)
 ];

@@ -1,7 +1,12 @@
 <?php
 
+<<<<<<< HEAD
 use FilamentTiptapEditor\Actions\LinkAction;
 use FilamentTiptapEditor\Actions\MediaAction;
+=======
+use FilamentTiptapEditor\Actions\MediaAction;
+use FilamentTiptapEditor\Actions\LinkAction;
+>>>>>>> 6ed19256f (.)
 use FilamentTiptapEditor\Enums\TiptapOutput;
 
 return [
@@ -84,5 +89,8 @@ return [
     'disable_bubble_menus' => true,
     'floating_menu_tools' => ['media', 'grid', 'grid-builder', 'details', 'table', 'oembed', 'code-block'],
 ];
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 6ed19256f (.)

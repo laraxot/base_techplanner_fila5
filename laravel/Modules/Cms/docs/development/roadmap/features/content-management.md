@@ -94,5 +94,8 @@ Il sistema di gestione media supporta:
 ## Collegamenti tra versioni di content-management.md
 * [content-management.md](laravel/Modules/Cms/docs/content-management.md)
 * [content-management.md](laravel/Modules/Cms/docs/roadmap/features/content-management.md)
+<<<<<<< HEAD
 * [content-management.md](laravel/modules/cms/docs/content-management.md)
 * [content-management.md](laravel/modules/cms/docs/roadmap/features/content-management.md)
+=======
+>>>>>>> 6ed19256f (.)

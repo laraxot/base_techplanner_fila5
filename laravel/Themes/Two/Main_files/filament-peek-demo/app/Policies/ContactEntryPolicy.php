@@ -2,10 +2,13 @@
 
 namespace App\Policies;
 
+<<<<<<< HEAD
 use App\Models\ContactEntry;
 use Illuminate\Auth\Access\HandlesAuthorization;
 use Illuminate\Auth\Access\Response;
 use Modules\User\Models\User;
+=======
+>>>>>>> 6ed19256f (.)
 use Illuminate\Auth\Access\Response;
 use App\Models\ContactEntry;
 use Modules\User\Models\User;
@@ -85,6 +88,9 @@ class ContactEntryPolicy
         return true;
     }
 }
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 6ed19256f (.)

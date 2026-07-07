@@ -30,7 +30,10 @@
 ### Struttura Proposta
 ```php
 class Comune extends GeoJsonModel
+<<<<<<< HEAD
 class Comune extends GeoJsonModel 
+=======
+>>>>>>> 6ed19256f (.)
 {
     // Tutti i dati in un'unica struttura
     protected static string $jsonFile = 'resources/json/comuni.json';
@@ -40,8 +43,12 @@ class Comune extends GeoJsonModel
     public static function getProvinceByRegione($regione) { /* ... */ }
     public static function getComuniByProvincia($provincia) { /* ... */ }
     public static function getCapByComune($comune) { /* ... */ }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // Metodo unificato
     public static function getDatiCompleti($filtri = []) { /* ... */ }
 }
@@ -86,8 +93,11 @@ class Comune extends GeoJsonModel
 | Utilizzo Memoria     | 25MB            | 18MB             | +28%      |
 | Manutenzione         | Media           | Alta             | +40%      |
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 6ed19256f (.)
 ## Raccomandazione (90% Favorevole)
 
 Si consiglia di procedere con l'unificazione per i seguenti motivi:
@@ -149,4 +159,8 @@ Si raccomanda di procedere con la migrazione seguendo il piano proposto, assicur
 2. Aggiornare tutta la documentazione
 3. Eseguire test approfonditi
 
+<<<<<<< HEAD
 La stima del tempo di implementazione è di 2-3 giorni/uomo, con un ROI atteso di 3-4 mesi grazie alla riduzione dei costi di manutenzione.
+=======
+La stima del tempo di implementazione è di 2-3 giorni/uomo, con un ROI atteso di 3-4 mesi grazie alla riduzione dei costi di manutenzione.
+>>>>>>> 6ed19256f (.)

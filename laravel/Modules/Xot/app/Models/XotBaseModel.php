@@ -27,6 +27,15 @@ abstract class XotBaseModel extends EloquentModel
      */
     public static $snakeAttributes = true;
 
+<<<<<<< HEAD
+=======
+    /** @var bool */
+    public $incrementing = true;
+
+    /** @var bool */
+    public $timestamps = true;
+
+>>>>>>> 6ed19256f (.)
     /** @var int */
     protected $perPage = 30;
 
@@ -36,6 +45,15 @@ abstract class XotBaseModel extends EloquentModel
     /** @var list<string> */
     protected $appends = [];
 
+<<<<<<< HEAD
+=======
+    /** @var string */
+    protected $primaryKey = 'id';
+
+    /** @var string */
+    protected $keyType = 'int';
+
+>>>>>>> 6ed19256f (.)
     /** @var list<string> */
     protected $hidden = [
         // 'password'

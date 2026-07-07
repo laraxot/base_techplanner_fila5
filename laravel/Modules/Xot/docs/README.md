@@ -135,6 +135,7 @@ Il modulo Xot ha raggiunto la piena conformità PHPStan Level 10 senza compromes
 - [Guida alla Risoluzione dei Conflitti Git](../../../bashscripts/docs/git-conflict-resolution-guide.md)
 - [Convenzioni sui Namespace](./namespace_conventions.md)
 - [Linee Guida per il Testing](./testing.md)
+<<<<<<< HEAD
 ---
 title: "Xot Module Documentation"
 type: documentation
@@ -201,3 +202,5 @@ Il modulo **Xot** è il nucleo fondativo dell'intero progetto [PROJECT_NAME] pla
 - [[BMAD Method](../../../../docs/wiki/concepts/bmad-method.md)]
 - [[Context Engineering](../../../../docs/wiki/concepts/context-engineering.md)]
 - [[LLM Wiki Governance](../../../../docs/wiki/concepts/llm-wiki-governance.md)]
+=======
+>>>>>>> 6ed19256f (.)

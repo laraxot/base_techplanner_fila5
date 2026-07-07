@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
     "name": "laraxot/theme_sixteen_fila5",
+=======
+    "name": "laraxot/theme_sixteen_fila3",
+>>>>>>> 6ed19256f (.)
     "description": "Sixteen theme for Laraxot projects (AGID-compliant, Tailwind-based)",
     "keywords": [
         "laraxot",
@@ -9,7 +13,11 @@
         "Laravel",
         "Ticket module"
     ],
+<<<<<<< HEAD
     "homepage": "https://github.com/laraxot/theme_sixteen_fila5",
+=======
+    "homepage": "https://github.com/laraxot/theme_sixteen_fila3",
+>>>>>>> 6ed19256f (.)
     "license": "MIT",
     "require": {
         "filament/filament": "^4.0",
@@ -56,6 +64,10 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require-dev": {
+<<<<<<< HEAD
         "orchestra/testbench": "*"
+=======
+        "orchestra/testbench": "^9.4"
+>>>>>>> 6ed19256f (.)
     }
 }

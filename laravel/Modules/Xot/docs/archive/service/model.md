@@ -291,7 +291,12 @@ foreach ((new ReflectionClass($model))->getMethods(ReflectionMethod::IS_PUBLIC) 
 ## Collegamenti tra versioni di model.md
 * [model.md](../../../Xot/project_docs/model.md)
 * [model.md](../../../Xot/project_docs/service/model.md)
+<<<<<<< HEAD
 * [model.md](../../../xot/project_docs/model.md)
 * [model.md](../../../xot/project_docs/service/model.md)
 
 ```
+=======
+
+```
+>>>>>>> 6ed19256f (.)

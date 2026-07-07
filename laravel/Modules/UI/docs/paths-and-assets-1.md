@@ -22,7 +22,11 @@
 , è fondamentale rispettare la struttura corretta delle directory per gli asset pubblici:
 
 ```
+<<<<<<< HEAD
 
+=======
+/var/www/html/saluteora/
+>>>>>>> 6ed19256f (.)
 ├── laravel/                 # Applicazione Laravel (codice sorgente)
 │   ├── Modules/             # Moduli dell'applicazione
 │   ├── resources/           # Risorse non compilate
@@ -40,10 +44,17 @@
 
 | Tipo di Asset | ✅ Percorso Corretto | ❌ Percorso Errato |
 |---------------|---------------------|-------------------|
+<<<<<<< HEAD
 | Immagini | `public_html/images/` | `public/images/` |
 | CSS | `public_html/css/` | `public/css/` |
 | JavaScript | `public_html/js/` | `public/js/` |
 | SVG | `public_html/images/` | `public/images/` |
+=======
+| Immagini | `/var/www/html/saluteora/public_html/images/` | `/var/www/html/saluteora/laravel/public/images/` |
+| CSS | `/var/www/html/saluteora/public_html/css/` | `/var/www/html/saluteora/laravel/public/css/` |
+| JavaScript | `/var/www/html/saluteora/public_html/js/` | `/var/www/html/saluteora/laravel/public/js/` |
+| SVG | `/var/www/html/saluteora/public_html/images/` | `/var/www/html/saluteora/laravel/public/images/` |
+>>>>>>> 6ed19256f (.)
 
 ## Utilizzo degli Asset nei Componenti Blade
 
@@ -74,7 +85,11 @@ Per garantire una buona esperienza utente, implementare sempre un fallback per l
 Gli SVG utilizzati come icone o componenti UI dovrebbero essere implementati come componenti Blade in:
 
 ```
+<<<<<<< HEAD
 Themes/One/resources/views/components/ui/
+=======
+/var/www/html/saluteora/laravel/Themes/One/resources/views/components/ui/
+>>>>>>> 6ed19256f (.)
 ```
 
 ### SVG come Asset Pubblici
@@ -82,7 +97,11 @@ Themes/One/resources/views/components/ui/
 Gli SVG utilizzati come immagini (avatar, loghi, ecc.) dovrebbero essere posizionati in:
 
 ```
+<<<<<<< HEAD
 public_html/images/
+=======
+/var/www/html/saluteora/public_html/images/
+>>>>>>> 6ed19256f (.)
 ```
 
 ## Gestione dei Componenti UI
@@ -92,13 +111,21 @@ public_html/images/
 Il componente avatar è implementato in:
 
 ```
+<<<<<<< HEAD
 Themes/One/resources/views/components/ui/avatar.blade.php
+=======
+/var/www/html/saluteora/laravel/Themes/One/resources/views/components/ui/avatar.blade.php
+>>>>>>> 6ed19256f (.)
 ```
 
 E utilizza gli avatar SVG dalla directory pubblica:
 
 ```
+<<<<<<< HEAD
 public_html/images/avatars/
+=======
+/var/www/html/saluteora/public_html/images/avatars/
+>>>>>>> 6ed19256f (.)
 ```
 
 ### Componente Icon
@@ -106,7 +133,11 @@ public_html/images/avatars/
 Il componente icon è implementato in:
 
 ```
+<<<<<<< HEAD
 Themes/One/resources/views/components/ui/icon.blade.php
+=======
+/var/www/html/saluteora/laravel/Themes/One/resources/views/components/ui/icon.blade.php
+>>>>>>> 6ed19256f (.)
 ```
 
 E include le definizioni SVG direttamente nel componente.
@@ -115,7 +146,11 @@ E include le definizioni SVG direttamente nel componente.
 
 > **IMPORTANTE:** Tutti i componenti Blade UI condivisi (es. logo, button, badge, ecc.) devono essere posizionati esclusivamente in:
 >
+<<<<<<< HEAD
 > `Modules/UI/resources/views/components/ui/`
+=======
+> `/var/www/html/ptvx/laravel/Modules/UI/resources/views/components/ui/`
+>>>>>>> 6ed19256f (.)
 >
 > **MAI** in `resources/views/components/ui/` della root Laravel.
 
@@ -129,11 +164,19 @@ E include le definizioni SVG direttamente nel componente.
 
 **❌ Errato:**
 ```
+<<<<<<< HEAD
 resources/views/components/ui/logo.blade.php
 ```
 **✅ Corretto:**
 ```
 Modules/UI/resources/views/components/ui/logo.blade.php
+=======
+/var/www/html/ptvx/laravel/resources/views/components/ui/logo.blade.php
+```
+**✅ Corretto:**
+```
+/var/www/html/ptvx/laravel/Modules/UI/resources/views/components/ui/logo.blade.php
+>>>>>>> 6ed19256f (.)
 ```
 
 ## Best Practices
@@ -147,7 +190,11 @@ Modules/UI/resources/views/components/ui/logo.blade.php
 
 ## Errori Comuni
 
+<<<<<<< HEAD
 1. **Utilizzo del percorso Laravel public**: Utilizzare `public/` invece di `public_html/`
+=======
+1. **Utilizzo del percorso Laravel public**: Utilizzare `/var/www/html/saluteora/laravel/public/` invece di `/var/www/html/saluteora/public_html/`
+>>>>>>> 6ed19256f (.)
 2. **Riferimenti diretti ai file**: Utilizzare percorsi assoluti invece dell'helper `asset()`
 3. **Mancanza di fallback**: Non fornire alternative quando un'immagine non è disponibile
 4. **Inconsistenza nei nomi dei file**: Utilizzare convenzioni di naming diverse per file simili

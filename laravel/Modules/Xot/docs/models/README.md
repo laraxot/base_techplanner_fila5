@@ -62,9 +62,16 @@ For polymorphic pivot tables.
 ## References
 
 - [Xot Model Architecture](../../Xot/docs/models/model-architecture.md)
+<<<<<<< HEAD
 - [Xot Model Architecture](../../xot/docs/models/model-architecture.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [CLAUDE.md - Model Inheritance Rules](../../CLAUDE.md#model-inheritance-rules)
 
 ---
 
+<<<<<<< HEAD
 **Last Updated**: 2025-11-15
+=======
+**Last Updated**: 2025-11-15
+>>>>>>> 6ed19256f (.)

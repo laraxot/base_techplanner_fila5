@@ -46,5 +46,8 @@
 - [Roadmap Principale](../../roadmap.md)
 - [Architettura Folio + Volt](../../FOLIO_VOLT_ARCHITECTURE.md)
 - [Best Practices](../../BEST-PRACTICES.md)
+<<<<<<< HEAD
 - [Architettura Folio + Volt](../../folio_volt_architecture.md)
 - [Best Practices](../../best-practices.md)
+=======
+>>>>>>> 6ed19256f (.)

@@ -10,11 +10,19 @@ Durante lo sviluppo del progetto <nome progetto>, sono stati identificati divers
 ## Problema
 
 Durante lo sviluppo del progetto <nome progetto>, sono stati identificati diversi file con conflitti di merge non risolti. Questi conflitti erano indicati dalla presenza di marcatori  nel codice sorgente. I conflitti non risolti impedivano la corretta esecuzione del codice e causavano errori durante l'analisi statica con PHPStan.
+<<<<<<< HEAD
 # Risoluzione Conflitti di Merge in <nome progetto>
 
 ## Problema
 
 Durante lo sviluppo del progetto <nome progetto>, sono stati identificati diversi file con conflitti di merge non risolti. Questi conflitti erano indicati dalla presenza di marcatori  nel codice sorgente. I conflitti non risolti impedivano la corretta esecuzione del codice e causavano errori durante l'analisi statica con PHPStan.
+=======
+# Risoluzione Conflitti di Merge in SaluteOra
+
+## Problema
+
+Durante lo sviluppo del progetto SaluteOra, sono stati identificati diversi file con conflitti di merge non risolti. Questi conflitti erano indicati dalla presenza di marcatori  nel codice sorgente. I conflitti non risolti impedivano la corretta esecuzione del codice e causavano errori durante l'analisi statica con PHPStan.
+>>>>>>> 6ed19256f (.)
 # Risoluzione Conflitti di Merge in <nome progetto>
 
 ## Problema
@@ -116,7 +124,11 @@ Per prevenire problemi simili in futuro, si raccomanda di:
 
 ### Caso concreto: XotBaseManageRelatedRecords.php
 
+<<<<<<< HEAD
 Durante la risoluzione dei conflitti, nel file `Modules/Xot/app/Filament/Resources/XotBaseResource/Pages/XotBaseManageRelatedRecords.php` sono emerse chiamate sia a `getListTableColumns` che a `getTableColumns`. In linea con le regole di standardizzazione adottate nel progetto (vedi [FILAMENT_TABLE_COLUMNS.md](./filament_table_columns.md)), è stato scelto di mantenere **solo** `getTableColumns` come metodo per la definizione delle colonne delle tabelle Filament.
+=======
+Durante la risoluzione dei conflitti, nel file `Modules/Xot/app/Filament/Resources/XotBaseResource/Pages/XotBaseManageRelatedRecords.php` sono emerse chiamate sia a `getListTableColumns` che a `getTableColumns`. In linea con le regole di standardizzazione adottate nel progetto (vedi [FILAMENT_TABLE_COLUMNS.md](./FILAMENT_TABLE_COLUMNS.md)), è stato scelto di mantenere **solo** `getTableColumns` come metodo per la definizione delle colonne delle tabelle Filament.
+>>>>>>> 6ed19256f (.)
 
 **Motivazione:**
 - Coerenza con lo standard Filament e con le regole di progetto
@@ -124,9 +136,17 @@ Durante la risoluzione dei conflitti, nel file `Modules/Xot/app/Filament/Resourc
 - Facilità di upgrade futuro e riduzione delle ambiguità
 
 **Backlink:**
+<<<<<<< HEAD
 - [Regola generale e motivazione in FILAMENT_TABLE_COLUMNS.md](./filament_table_columns.md)
+=======
+- [Regola generale e motivazione in FILAMENT_TABLE_COLUMNS.md](./FILAMENT_TABLE_COLUMNS.md)
+>>>>>>> 6ed19256f (.)
 
 ---
 ## Conclusioni
 
+<<<<<<< HEAD
 La risoluzione dei conflitti di merge ha ripristinato la corretta funzionalità delle classi nel modulo Xot, permettendo l'analisi statica con PHPStan e garantendo il corretto funzionamento dell'applicazione. Le soluzioni implementate hanno mantenuto la coerenza del codice e migliorato la robustezza delle classi interessate.
+=======
+La risoluzione dei conflitti di merge ha ripristinato la corretta funzionalità delle classi nel modulo Xot, permettendo l'analisi statica con PHPStan e garantendo il corretto funzionamento dell'applicazione. Le soluzioni implementate hanno mantenuto la coerenza del codice e migliorato la robustezza delle classi interessate.
+>>>>>>> 6ed19256f (.)

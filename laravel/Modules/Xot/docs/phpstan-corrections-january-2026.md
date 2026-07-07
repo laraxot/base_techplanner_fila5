@@ -134,4 +134,7 @@
 - [Filament Class Extension Rules](../filament-class-extension-rules.md)
 
 *Ultimo aggiornamento: 2026-01-22*
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2026-01-22*
+=======
+>>>>>>> 6ed19256f (.)

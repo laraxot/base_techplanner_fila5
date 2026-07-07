@@ -41,8 +41,15 @@ FilamentIcon::register([
 ```
 
 ## Collegamenti
+<<<<<<< HEAD
 - [CMS Module Documentation](./README.md)
 - [Design System Globale](../../../../../docs/module-icons-design-system.md)
 - [CMS Module Documentation](./readme.md)
 
 *Creato: Agosto 2025*
+=======
+- [Design System Globale](../../../../docs/module-icons-design-system.md)
+- [CMS Module Documentation](./README.md)
+
+*Creato: Agosto 2025*
+>>>>>>> 6ed19256f (.)

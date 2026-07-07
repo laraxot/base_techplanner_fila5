@@ -46,7 +46,11 @@ Nella documentazione di il progetto, **tutti i collegamenti devono essere relati
 
 ❌ **Collegamenti assoluti basati su percorso**:
 ```markdown
+<<<<<<< HEAD
 [Documento errato](project_docs/documento.md)
+=======
+[Documento errato](/var/www/html/<nome progetto>/project_docs/documento.md)
+>>>>>>> 6ed19256f (.)
 ```
 
 ❌ **Collegamenti senza estensione**:

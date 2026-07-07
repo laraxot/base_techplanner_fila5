@@ -217,11 +217,18 @@ Notify Module
 
 **Last Updated**: 2025-10-01
 **Next Review**: 2025-11-01
+<<<<<<< HEAD
 **
 **Next Review**: 2025-11-01
+=======
+>>>>>>> 6ed19256f (.)
 **Status**: 🚧 PLANNING
 **Confidence Level**: 70%
 
 ---
 
+<<<<<<< HEAD
 *Questa roadmap è specifica per il modulo Notify e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
+=======
+*Questa roadmap è specifica per il modulo Notify e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
+>>>>>>> 6ed19256f (.)

@@ -1,24 +1,42 @@
 # Compatibilità Filament 4.x - Modulo Geo
 
+<<<<<<< HEAD
 **Data**: 2025-01-27  
 **Status**: ✅ COMPLETATO  
 **Versione Filament**: 4.0.17  
+=======
+**Data**: 2025-01-27
+**Status**: ✅ COMPLETATO
+**Versione Filament**: 4.0.17
+>>>>>>> 6ed19256f (.)
 
 ## 🔧 Correzioni Implementate
 
 ### 1. Widget Google Maps Disabilitati
+<<<<<<< HEAD
 **Problema**: Dipendenze da pacchetti non compatibili con Filament 4.x  
+=======
+**Problema**: Dipendenze da pacchetti non compatibili con Filament 4.x
+>>>>>>> 6ed19256f (.)
 **Soluzione**: Disabilitazione temporanea dei widget
 
 **File disabilitati**:
 - `LocationMapTableWidget.php.disabled`
+<<<<<<< HEAD
 - `LocationMapWidget.php.disabled` 
+=======
+- `LocationMapWidget.php.disabled`
+>>>>>>> 6ed19256f (.)
 - `WebbingbrasilMap.php.disabled`
 - `OSMMapWidget.php.disabled`
 - `DotswanMap.php.disabled`
 
 ### 2. LocationResource
+<<<<<<< HEAD
 **Problema**: Uso di componenti Map da pacchetti non installati  
+=======
+**Problema**: Uso di componenti Map da pacchetti non installati
+>>>>>>> 6ed19256f (.)
 **Soluzione**: Commentato temporaneamente il componente Map
 
 ```php
@@ -57,7 +75,11 @@
 
 ### Stato Compatibilità
 - ❌ **Google Maps**: In attesa di aggiornamento pacchetto
+<<<<<<< HEAD
 - ❌ **Webbingbrasil Maps**: In attesa di aggiornamento pacchetto  
+=======
+- ❌ **Webbingbrasil Maps**: In attesa di aggiornamento pacchetto
+>>>>>>> 6ed19256f (.)
 - ❌ **OSM Maps**: In attesa di aggiornamento pacchetto
 - ❌ **Dotswan MapPicker**: In attesa di aggiornamento pacchetto
 
@@ -100,8 +122,16 @@ TextInput::make('lng')
 
 ## 🔗 Collegamenti
 
+<<<<<<< HEAD
 - [Rapporto Aggiornamento Filament 4.x](../../../docs/filament_4x_upgrade_report.md)
 - [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)
 - [Pacchetto Google Maps](https://github.com/cheesegrits/filament-google-maps)
 
 *Ultimo aggiornamento: 2025-01-27*
+=======
+- [Rapporto Aggiornamento Filament 4.x](../../docs/filament_4x_upgrade_report.md)
+- [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)
+- [Pacchetto Google Maps](https://github.com/cheesegrits/filament-google-maps)
+
+*Ultimo aggiornamento: 2025-01-27*
+>>>>>>> 6ed19256f (.)

@@ -150,5 +150,8 @@ return [
 ## Riferimenti
 - [Regole di Naming per i File di Traduzione](./TRANSLATION_FILE_NAMING_RULES.md)
 - [Regole Generali per le Traduzioni](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
+<<<<<<< HEAD
 - [Regole di Naming per i File di Traduzione](./TRANSLATION_FILE_NAMING_RULES.md)
 - [Regole Generali per le Traduzioni](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
+=======
+>>>>>>> 6ed19256f (.)

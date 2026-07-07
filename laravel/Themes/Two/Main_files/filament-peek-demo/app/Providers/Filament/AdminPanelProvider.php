@@ -9,14 +9,22 @@ use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use Filament\Navigation\NavigationGroup;
+<<<<<<< HEAD
 use Filament\Pages\Dashboard;
+=======
+use Filament\Pages;
+>>>>>>> 6ed19256f (.)
 use Filament\Panel;
 use Filament\PanelProvider;
 use Filament\Support\Assets\Js;
 use Filament\Support\Colors\Color;
 use Filament\Support\Facades\FilamentAsset;
+<<<<<<< HEAD
 use Filament\Widgets\AccountWidget;
 use Filament\Widgets\FilamentInfoWidget;
+=======
+use Filament\Widgets;
+>>>>>>> 6ed19256f (.)
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
@@ -84,5 +92,8 @@ class AdminPanelProvider extends PanelProvider
         });
     }
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 6ed19256f (.)

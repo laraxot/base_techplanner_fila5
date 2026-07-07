@@ -8,73 +8,100 @@ return [
             'label' => 'Latitudine',
             'placeholder' => 'Inserisci la latitudine',
             'help' => 'Coordinate geografiche - latitudine',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'longitude' => [
             'label' => 'Longitudine',
             'placeholder' => 'Inserisci la longitudine',
             'help' => 'Coordinate geografiche - longitudine',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'altitude' => [
             'label' => 'Altitudine',
             'placeholder' => 'Inserisci l\'altitudine',
             'help' => 'Altitudine sopra il livello del mare',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'accuracy' => [
             'label' => 'Precisione',
             'placeholder' => 'Seleziona la precisione',
             'help' => 'Livello di precisione delle coordinate',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'coordinate_system' => [
             'label' => 'Sistema di coordinate',
             'placeholder' => 'Seleziona il sistema',
             'help' => 'Sistema di coordinate utilizzato',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'datum' => [
             'label' => 'Datum',
             'placeholder' => 'Seleziona il datum',
             'help' => 'Datum geodetico di riferimento',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'zone' => [
             'label' => 'Zona',
             'placeholder' => 'Inserisci la zona',
             'help' => 'Zona UTM o altro sistema',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'easting' => [
             'label' => 'Est',
             'placeholder' => 'Inserisci la coordinata est',
             'help' => 'Coordinata est nel sistema UTM',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'northing' => [
             'label' => 'Nord',
             'placeholder' => 'Inserisci la coordinata nord',
             'help' => 'Coordinata nord nel sistema UTM',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'validation' => [
@@ -115,6 +142,7 @@ return [
         'feet' => 'Piedi',
         'nautical_miles' => 'Miglia nautiche',
     ],
+<<<<<<< HEAD
     'label' => 'Coordinates',
     'plural_label' => 'Coordinates (Plurale)',
     'navigation' => [
@@ -139,4 +167,6 @@ return [
             'label' => 'Elimina Coordinates',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

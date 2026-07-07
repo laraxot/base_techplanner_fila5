@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -65,6 +66,32 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'name' => [
+            'label' => 'Name',
+        ],
+        'queue' => [
+            'label' => 'Queue',
+        ],
+        'status' => [
+            'label' => 'Status',
+        ],
+        'progress' => [
+            'label' => 'Progress',
+        ],
+        'started_at' => [
+            'label' => 'Started At',
+        ],
+        'last_heartbeat' => [
+            'label' => 'Last Heartbeat',
+        ],
+        'created_at' => [
+            'label' => 'Created At',
+        ],
+        'updated_at' => [
+            'label' => 'Updated At',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [

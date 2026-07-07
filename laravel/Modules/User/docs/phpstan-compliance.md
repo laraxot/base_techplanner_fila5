@@ -57,4 +57,8 @@ The module maintains:
 - Strict type declarations
 - Comprehensive type hints
 - Authentication security best practices
+<<<<<<< HEAD
 - Modern PHP 8.2+ feature utilization
+=======
+- Modern PHP 8.2+ feature utilization
+>>>>>>> 6ed19256f (.)

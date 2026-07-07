@@ -175,6 +175,12 @@ class LoginWidget extends XotBaseWidget
 
 ## Riferimenti
 
+<<<<<<< HEAD
 - [XotBaseWidget](Modules/Xot/app/Filament/Widgets/XotBaseWidget.php)
 - [Documentazione Widget Structure](modules/user/widgets_structure.md)
 - [Best Practices Widget Filament](modules/user/best-practices/filament-widgets.md) 
+=======
+- [XotBaseWidget](/var/www/html/_bases/base_predict_fila3_mono/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php)
+- [Documentazione Widget Structure](modules/user/widgets_structure.md)
+- [Best Practices Widget Filament](modules/user/best-practices/filament-widgets.md)
+>>>>>>> 6ed19256f (.)

@@ -9,6 +9,10 @@ use Filament\Forms\Components\TextInput;
 use Filament\Resources\Pages\PageRegistration;
 use Filament\Support\Components\Component;
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< HEAD
+=======
+use Illuminate\Support\Carbon;
+>>>>>>> 6ed19256f (.)
 use Modules\User\Filament\Resources\TeamInvitationResource\Pages\EditTeamInvitations;
 use Modules\User\Filament\Resources\TeamInvitationResource\Pages\ListTeamInvitations;
 use Modules\User\Models\TeamInvitation;
@@ -21,6 +25,10 @@ class TeamInvitationResource extends XotBaseResource
 {
     protected static ?string $model = TeamInvitation::class;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6ed19256f (.)
     /**
      * Get the form schema for the resource.
      *
@@ -72,4 +80,8 @@ class TeamInvitationResource extends XotBaseResource
     {
         return parent::getEloquentQuery()->with(['team']);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 6ed19256f (.)

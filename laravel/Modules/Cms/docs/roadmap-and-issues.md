@@ -52,10 +52,17 @@
 ## 🔗 Collegamenti
 
 - [← Cms Module README](../README.md)
+<<<<<<< HEAD
 - [← Cms Module README](../readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [← Root Documentation](../../../docs/index.md)
 
 ---
 
 **Status**: ✅ COMPLETO
+<<<<<<< HEAD
 **Maintenance**: Routine
+=======
+**Maintenance**: Routine
+>>>>>>> 6ed19256f (.)

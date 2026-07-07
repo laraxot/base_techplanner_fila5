@@ -59,6 +59,7 @@ section: content
 
 - php artisan make:filament-user per creare utente
 ## Collegamenti tra versioni di installation.md
+<<<<<<< HEAD
 * [installation.md](../../../xot/project_docs/filament/installation.md)
 * [installation.md](../../../xot/project_docs/installation.md)
 * [installation.md](../../../xot/project_docs/base/installation.md)
@@ -66,6 +67,8 @@ section: content
 * [installation.md](../../../lang/project_docs/installation.md)
 * [installation.md](../../../cms/project_docs/installation.md)
 * [installation.md](../../../../themes/one/project_docs/installation.md)
+=======
+>>>>>>> 6ed19256f (.)
 * [installation.md](../../../Xot/project_docs/filament/installation.md)
 * [installation.md](../../../Xot/project_docs/installation.md)
 * [installation.md](../../../Xot/project_docs/base/installation.md)
@@ -78,4 +81,8 @@ section: content
 
 - php artisan make:filament-user per creare utente
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> 6ed19256f (.)

@@ -179,8 +179,12 @@ $this->label(__('media::s3test.actions.testCredentials.label'))
 public function test_no_direct_module_imports(): void
 {
     $file = file_get_contents(__DIR__ . '/../../app/Filament/Clusters/Test/Pages/S3Test.php');
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // Verifica che non ci siano import diretti tra moduli
     $this->assertStringNotContainsString('use Modules\\Notify', $file);
     $this->assertStringNotContainsString('use Modules\\User', $file);
@@ -193,8 +197,12 @@ public function test_no_direct_module_imports(): void
 public function test_phpstan_compliance(): void
 {
     $output = shell_exec('./vendor/bin/phpstan analyse Modules/Media --level=9 --no-progress');
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     $this->assertStringNotContainsString('ERROR', $output);
     $this->assertStringNotContainsString('mixed', $output);
 }
@@ -206,14 +214,22 @@ public function test_translation_completeness(): void
 {
     $languages = ['it', 'en', 'de'];
     $translationFiles = ['s3test.php'];
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     foreach ($languages as $lang) {
         foreach ($translationFiles as $file) {
             $path = "Modules/Media/lang/{$lang}/{$file}";
             $this->assertFileExists($path);
+<<<<<<< HEAD
             
             
+=======
+
+>>>>>>> 6ed19256f (.)
             $translations = require $path;
             $this->assertIsArray($translations);
             $this->assertNotEmpty($translations);
@@ -241,9 +257,12 @@ class NewTestPage extends XotBasePage
 
     protected static string $view = 'media::filament.pages.new-test-page';
 
+<<<<<<< HEAD
     
     protected static string $view = 'media::filament.pages.new-test-page';
     
+=======
+>>>>>>> 6ed19256f (.)
     /**
      * Test method with proper typing.
      *
@@ -254,22 +273,34 @@ class NewTestPage extends XotBasePage
         try {
             // Test logic here
             $result = $this->executeTest();
+<<<<<<< HEAD
             
             
+=======
+
+>>>>>>> 6ed19256f (.)
             Log::info('Test completed successfully', [
                 'test' => static::class,
                 'result' => $result
             ]);
+<<<<<<< HEAD
             
             
+=======
+
+>>>>>>> 6ed19256f (.)
             return $result;
         } catch (\Exception $e) {
             Log::error('Test failed', [
                 'test' => static::class,
                 'error' => $e->getMessage()
             ]);
+<<<<<<< HEAD
             
             
+=======
+
+>>>>>>> 6ed19256f (.)
             return ['error' => $e->getMessage()];
         }
     }
@@ -338,10 +369,13 @@ on: [push, pull_request]
 jobs:
   media-checks:
     runs-on: ubuntu-latest
+<<<<<<< HEAD
     
     steps:
     - uses: actions/checkout@v3
     
+=======
+>>>>>>> 6ed19256f (.)
 
     steps:
     - uses: actions/checkout@v3
@@ -350,6 +384,7 @@ jobs:
       uses: shivammathur/setup-php@v2
       with:
         php-version: '8.2'
+<<<<<<< HEAD
         
     - name: Install dependencies
       run: composer install
@@ -360,6 +395,8 @@ jobs:
     - name: Translation check
       run: php artisan translation:check --module=Media
         
+=======
+>>>>>>> 6ed19256f (.)
 
     - name: Install dependencies
       run: composer install
@@ -398,6 +435,13 @@ jobs:
 - [Correzioni S3Test.php](s3test_corrections.md)
 - [PHPStan Fixes](phpstan_level10_fixes.md)
 - [Translation Standards](translations.md)
+<<<<<<< HEAD
+=======
+- [Architecture Guidelines](../docs/architecture.md)
+
+---
+
+>>>>>>> 6ed19256f (.)
 **🔄 Ultimo aggiornamento**: 27 Gennaio 2025
 **📦 Versione**: 3.1.0
 **🎯 Obiettivo**: Prevenzione completa problemi futuri
@@ -785,6 +829,7 @@ jobs:
 **🔄 Ultimo aggiornamento**: 27 Gennaio 2025
 **📦 Versione**: 3.1.0
 **🎯 Obiettivo**: Prevenzione completa problemi futuri
+<<<<<<< HEAD
 - [Architecture Guidelines](../../docs/architecture.md)
 
 ---
@@ -793,3 +838,6 @@ jobs:
 **📦 Versione**: 3.1.0  
 **🎯 Obiettivo**: Prevenzione completa problemi futuri  
 **✅ Status**: Linee guida implementate e testate
+=======
+**✅ Status**: Linee guida implementate e testate
+>>>>>>> 6ed19256f (.)

@@ -1,11 +1,15 @@
 # Configurazione Provider SMS per le Notifiche
 
 Questa documentazione descrive le opzioni disponibili per l'integrazione di servizi SMS nei sistemi di notifica di , con focus sui diversi provider e sulla loro configurazione.
+<<<<<<< HEAD
 Questa documentazione descrive le opzioni disponibili per l'integrazione di servizi SMS nei sistemi di notifica di <nome progetto>, con focus sui diversi provider e sulla loro configurazione.
 # Configurazione Provider SMS per le Notifiche 
 
 Questa documentazione descrive le opzioni disponibili per l'integrazione di servizi SMS nei sistemi di notifica di <nome progetto>, con focus sui diversi provider e sulla loro configurazione.
 Questa documentazione descrive le opzioni disponibili per l'integrazione di servizi SMS nei sistemi di notifica di Quaeris, con focus sui diversi provider e sulla loro configurazione.
+=======
+Questa documentazione descrive le opzioni disponibili per l'integrazione di servizi SMS nei sistemi di notifica di SaluteOra, con focus sui diversi provider e sulla loro configurazione.
+>>>>>>> 6ed19256f (.)
 
 ## Indice
 
@@ -67,8 +71,12 @@ class AppointmentNotification extends Notification
     {
         return ['mail', TwilioChannel::class];
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function toTwilio($notifiable)
     {
         return (new TwilioSmsMessage())
@@ -113,9 +121,13 @@ composer require laravel-notification-channels/vonage
 VONAGE_KEY=abcd1234
 VONAGE_SECRET=xyz789...
 VONAGE_SMS_FROM=
+<<<<<<< HEAD
 VONAGE_SMS_FROM=<nome progetto>
 VONAGE_SMS_FROM=<nome progetto>
 VONAGE_SMS_FROM=Quaeris
+=======
+VONAGE_SMS_FROM=SaluteOra
+>>>>>>> 6ed19256f (.)
 ```
 
 ### Implementazione Notifica
@@ -130,8 +142,12 @@ class AppointmentNotification extends Notification
     {
         return ['mail', VonageChannel::class];
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function toVonage($notifiable)
     {
         return (new VonageMessage())
@@ -427,8 +443,12 @@ $this->app->bind(CustomSMSChannel::class, function ($app) {
     if ($app->environment('testing')) {
         return new TestSMSChannel();
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     return new CustomSMSChannel(
         new HttpClient(),
         config('services.sms.base_url'),
@@ -480,7 +500,11 @@ Log::info('SMS sent', [
 - [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./NOTIFICATIONS_IMPLEMENTATION_GUIDE.md)
 - [TELEGRAM_NOTIFICATIONS_GUIDE.md](./TELEGRAM_NOTIFICATIONS_GUIDE.md)
 Questa documentazione descrive le opzioni disponibili per l'integrazione di servizi SMS nei sistemi di notifica di <nome progetto>, con focus sui diversi provider e sulla loro configurazione.
+<<<<<<< HEAD
 Questa documentazione descrive le opzioni disponibili per l'integrazione di servizi SMS nei sistemi di notifica di <nome progetto>, con focus sui diversi provider e sulla loro configurazione.
+=======
+Questa documentazione descrive le opzioni disponibili per l'integrazione di servizi SMS nei sistemi di notifica di SaluteOra, con focus sui diversi provider e sulla loro configurazione.
+>>>>>>> 6ed19256f (.)
 # Configurazione Provider SMS per le Notifiche
 
 ## Indice
@@ -585,7 +609,11 @@ composer require laravel-notification-channels/vonage
 VONAGE_KEY=abcd1234
 VONAGE_SECRET=xyz789...
 VONAGE_SMS_FROM=<nome progetto>
+<<<<<<< HEAD
 VONAGE_SMS_FROM=<nome progetto>
+=======
+VONAGE_SMS_FROM=SaluteOra
+>>>>>>> 6ed19256f (.)
 ```
 
 ### Implementazione Notifica
@@ -935,6 +963,9 @@ Log::info('SMS sent', [
 - [MULTI_CHANNEL_NOTIFICATIONS.md](./MULTI_CHANNEL_NOTIFICATIONS.md)
 - [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./NOTIFICATIONS_IMPLEMENTATION_GUIDE.md)
 - [TELEGRAM_NOTIFICATIONS_GUIDE.md](./TELEGRAM_NOTIFICATIONS_GUIDE.md)
+<<<<<<< HEAD
 - [MULTI_CHANNEL_NOTIFICATIONS.md](./multi_channel_notifications.md)
 - [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./notifications_implementation_guide.md)
 - [TELEGRAM_NOTIFICATIONS_GUIDE.md](./telegram_notifications_guide.md)
+=======
+>>>>>>> 6ed19256f (.)

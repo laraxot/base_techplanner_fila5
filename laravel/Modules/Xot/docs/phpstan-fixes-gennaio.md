@@ -187,7 +187,10 @@ public function getModels(): array
 
 ### **Documentazione Correlata**
 - [README.md Modulo Xot](./README.md)
+<<<<<<< HEAD
 - [README.md Modulo Xot](./readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Service Architecture](./service-architecture.md)
 - [Best Practices](./best-practices.md)
 
@@ -203,4 +206,8 @@ public function getModels(): array
 **🐛 PHPStan Level**: 9 ✅
 **🌐 Translation Standards**: IT/EN complete ✅
 **🚀 Performance**: 98/100 score
+<<<<<<< HEAD
 **✨ Test Coverage**: 90% ✅
+=======
+**✨ Test Coverage**: 90% ✅
+>>>>>>> 6ed19256f (.)

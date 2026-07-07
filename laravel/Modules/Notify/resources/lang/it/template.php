@@ -7,44 +7,62 @@ return [
         'name' => [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il nome del template',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'code' => [
             'label' => 'Codice',
             'placeholder' => 'Inserisci il codice univoco del template',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'description' => [
             'label' => 'Descrizione',
             'placeholder' => 'Inserisci una descrizione del template',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'subject' => [
             'label' => 'Oggetto',
             'placeholder' => 'Inserisci l\'oggetto dell\'email',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'body_html' => [
             'label' => 'Corpo HTML',
             'placeholder' => 'Inserisci il contenuto HTML dell\'email',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'body_text' => [
             'label' => 'Corpo Testo',
             'placeholder' => 'Inserisci il contenuto testuale dell\'email',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'channels' => [
             'label' => 'Canali',
@@ -71,68 +89,98 @@ return [
                     'tooltip' => 'Invia notifica via Telegram',
                 ],
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'variables' => [
             'label' => 'Variabili',
             'placeholder' => 'Definisci le variabili disponibili nel template',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'conditions' => [
             'label' => 'Condizioni',
             'placeholder' => 'Definisci le condizioni di invio',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'preview_data' => [
             'label' => 'Dati Anteprima',
             'placeholder' => 'Inserisci i dati per l\'anteprima',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'metadata' => [
             'label' => 'Metadati',
             'placeholder' => 'Inserisci metadati aggiuntivi',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'category' => [
             'label' => 'Categoria',
             'placeholder' => 'Seleziona la categoria del template',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'is_active' => [
             'label' => 'Attivo',
             'tooltip' => 'Indica se il template è attivo',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'version' => [
             'label' => 'Versione',
             'tooltip' => 'Versione corrente del template',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'tenant_id' => [
             'label' => 'Tenant',
             'tooltip' => 'Tenant associato al template',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'grapesjs_data' => [
             'label' => 'Dati GrapesJS',
             'tooltip' => 'Dati dell\'editor GrapesJS',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -167,6 +215,7 @@ return [
             'color' => 'primary',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -176,4 +225,6 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

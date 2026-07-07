@@ -183,11 +183,14 @@ class StatsWidget extends Widget
 2. **Usa un nome descrittivo** (es. `user-profile.svg`)
 3. **L'icona sarà disponibile** come `ui-user-profile`
 
+<<<<<<< HEAD
 ### Sottocartelle (es. brands)
 
 - `brands/github.svg` → `ui-brands.github` (punto = separatore path)
 - **Vietato** SVG inline nelle Blade: vedi [no-svg-hardcoded-in-blade.md](no-svg-hardcoded-in-blade.md)
 
+=======
+>>>>>>> 6ed19256f (.)
 ### Esempio di Icona SVG
 
 ```svg
@@ -332,13 +335,19 @@ Tutte le icone sono compatibili con Filament 4.x e versioni successive.
 ## 📝 Changelog
 
 ### v1.1.0 - 2025-01-27
+<<<<<<< HEAD
 ### v1.1.0 - [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 - **🔧 Icone Aggiuntive**: Aggiunte icone mancanti (cancel, save, logout, showPassword, user-main, user-team, user-user-tenant)
 - **🐛 Bug Fix**: Risolto errore "SvgNotFound" per icona "cancel"
 - **📝 Traduzioni**: Aggiornati file di traduzione per utilizzare prefisso "ui-" corretto
 
 ### v1.0.0 - 2025-01-27
+<<<<<<< HEAD
 ### v1.0.0 - [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 - **🎨 Sistema Icone**: Implementato sistema completo di icone SVG
 - **🔧 Registrazione Automatica**: Icone registrate automaticamente
 - **📚 Documentazione**: Documentazione completa del sistema
@@ -350,4 +359,8 @@ Tutte le icone sono compatibili con Filament 4.x e versioni successive.
 - Validazione sicura dei percorsi: uso di `Symfony\Component\Finder\SplFileInfo` prima di costruire i nomi delle icone.
 - Prefisso garantito stringa: cast esplicito e fallback `''` per i set personalizzati.
 - Verifiche qualità: PHPStan L10 ✅, PHPMD ✅, PHPInsights ✅ (nota: soglia complessità legacy ancora 20).
+<<<<<<< HEAD
 - Documentare nuove icone o prefissi aggiuntivi in questa sezione prima del rilascio.
+=======
+- Documentare nuove icone o prefissi aggiuntivi in questa sezione prima del rilascio.
+>>>>>>> 6ed19256f (.)

@@ -6,7 +6,11 @@ Durante il login utente, si verificava un Fatal Error causato dalla mancanza del
 
 ## Problema
 
+<<<<<<< HEAD
 Il modello `DeviceUser` estende `BasePivot`, che a sua volta estende `Illuminate\Database\Eloquent\Relations\Pivot`. 
+=======
+Il modello `DeviceUser` estende `BasePivot`, che a sua volta estende `Illuminate\Database\Eloquent\Relations\Pivot`.
+>>>>>>> 6ed19256f (.)
 
 ```php
 class DeviceUser extends BasePivot
@@ -74,21 +78,36 @@ php artisan tinker
 
 ## Impatto
 
+<<<<<<< HEAD
 ✅ **DeviceUser** - Login utente funziona correttamente  
 ✅ **LoginListener** - Creazione/aggiornamento record device completata  
+=======
+✅ **DeviceUser** - Login utente funziona correttamente
+✅ **LoginListener** - Creazione/aggiornamento record device completata
+>>>>>>> 6ed19256f (.)
 ✅ **Testing** - Factory disponibile per tutti i modelli Pivot
 
 ## Link Correlati
 
 - [HasXotFactory Documentation](../../Xot/docs/traits/hasxotfactory.md)
 - [HasXotFactory Restoration](../../Xot/docs/bugfix/hasxotfactory-restoration.md)
+<<<<<<< HEAD
 - [HasXotFactory Documentation](../../xot/docs/traits/hasxotfactory.md)
 - [HasXotFactory Restoration](../../xot/docs/bugfix/hasxotfactory-restoration.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [BasePivot Documentation](../models/basepivot.md)
 
 ---
 
+<<<<<<< HEAD
 **Data**: 22 Ottobre 2025  
 **Stato**: ✅ RISOLTO  
 **Modulo**: User  
 **File Modificati**: `Modules/User/app/Models/BasePivot.php`
+=======
+**Data**: 22 Ottobre 2025
+**Stato**: ✅ RISOLTO
+**Modulo**: User
+**File Modificati**: `Modules/User/app/Models/BasePivot.php`
+>>>>>>> 6ed19256f (.)

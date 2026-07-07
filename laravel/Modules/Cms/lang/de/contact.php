@@ -20,49 +20,67 @@ return [
             'label' => 'Titolo Contatto',
             'placeholder' => 'Inserisci il titolo (es. Studio Dentistico)',
             'help' => 'Nome o titolo principale per identificare il contatto',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'description' => [
             'label' => 'Descrizione',
             'placeholder' => 'Descrivi brevemente l\'attività dello studio',
             'help' => 'Breve descrizione delle attività e servizi offerti',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'email' => [
             'label' => 'Email di Contatto',
             'placeholder' => 'inserisci@email.it',
             'help' => 'Indirizzo email principale per le comunicazioni',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'phone' => [
             'label' => 'Numero di Telefono',
             'placeholder' => '+39 06 1234567',
             'help' => 'Numero di telefono principale dello studio',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'address' => [
             'label' => 'Indirizzo Completo',
             'placeholder' => 'Via Roma, 123 - 00100 Roma',
             'help' => 'Indirizzo fisico completo dello studio',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'map_url' => [
             'label' => 'Link Mappa',
             'placeholder' => 'https://maps.google.com/...',
             'help' => 'URL per aprire la posizione su Google Maps o servizi simili',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -94,6 +112,9 @@ return [
         'loading' => 'Caricamento contatti in corso...',
         'saved' => 'Modifiche salvate correttamente',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

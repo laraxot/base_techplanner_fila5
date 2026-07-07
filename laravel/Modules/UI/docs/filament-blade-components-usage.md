@@ -40,11 +40,19 @@ Filament fornisce una serie di componenti Blade pronti all'uso che dovrebbero es
 ⚠️ **ATTENZIONE**: I seguenti layout **NON esistono** in Filament e non devono essere utilizzati:
 
 - ❌ `<x-filament::layouts.app>` - Non esiste, utilizzare invece `<x-layouts.app>` di
+<<<<<<< HEAD
 - ❌ `<x-filament::layouts.app>` - Non esiste, utilizzare invece `<x-layouts.app>` di <nome progetto>
 - ❌ `<x-filament::layouts.app>` - Non esiste, utilizzare invece `<x-layouts.app>` di
 - ❌ `<x-filament::layouts.app>` - Non esiste, utilizzare invece `<x-layouts.app>` di <nome progetto>
 - ❌ `<x-filament::layouts.app>` - Non esiste, utilizzare invece `<x-layouts.app>` di
 - ❌ `<x-filament::layouts.app>` - Non esiste, utilizzare invece `<x-layouts.app>` di <nome progetto>
+=======
+- ❌ `<x-filament::layouts.app>` - Non esiste, utilizzare invece `<x-layouts.app>` di SaluteOra
+- ❌ `<x-filament::layouts.app>` - Non esiste, utilizzare invece `<x-layouts.app>` di
+- ❌ `<x-filament::layouts.app>` - Non esiste, utilizzare invece `<x-layouts.app>` di SaluteOra
+- ❌ `<x-filament::layouts.app>` - Non esiste, utilizzare invece `<x-layouts.app>` di
+- ❌ `<x-filament::layouts.app>` - Non esiste, utilizzare invece `<x-layouts.app>` di SaluteOra
+>>>>>>> 6ed19256f (.)
 - ❌ `<x-filament::layouts.card>` - Non esiste, utilizzare invece una combinazione di `<x-filament::card>` e altri componenti
 - ❌ `<x-filament::layouts.base>` - Non esiste
 
@@ -196,12 +204,21 @@ I dropdown di Filament hanno una struttura specifica che deve essere rispettata.
    - Folio gestisce automaticamente le rotte del frontend
 
 2. **Per le pagine frontend**:
+<<<<<<< HEAD
    - Creare file Blade in `Themes/One/resources/views/pages/`
    - Creare file Blade in `Themes/One/resources/views/pages/`
    - Creare file Blade in `Themes/One/resources/views/pages/`
    - Creare file Blade in `Themes/One/resources/views/pages/`
    - Creare file Blade in `Themes/One/resources/views/pages/`
    - Creare file Blade in `Themes/One/resources/views/pages/`
+=======
+   - Creare file Blade in `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Themes/One/resources/views/pages/`
+   - Creare file Blade in `/var/www/html/saluteora/laravel/Themes/One/resources/views/pages/`
+   - Creare file Blade in `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Themes/One/resources/views/pages/`
+   - Creare file Blade in `/var/www/html/saluteora/laravel/Themes/One/resources/views/pages/`
+   - Creare file Blade in `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Themes/One/resources/views/pages/`
+   - Creare file Blade in `/var/www/html/saluteora/laravel/Themes/One/resources/views/pages/`
+>>>>>>> 6ed19256f (.)
    - Utilizzare Folio per il routing automatico
    - Esempio: `/profile/index.blade.php` sarà accessibile come `/it/profile`
 
@@ -424,7 +441,11 @@ I dropdown di Filament hanno una struttura specifica che deve essere rispettata.
    - Folio gestisce automaticamente le rotte del frontend
 
 2. **Per le pagine frontend**:
+<<<<<<< HEAD
    - Creare file Blade in `Themes/One/resources/views/pages/`
+=======
+   - Creare file Blade in `/var/www/html/<nome progetto>/laravel/Themes/One/resources/views/pages/`
+>>>>>>> 6ed19256f (.)
    - Utilizzare Folio per il routing automatico
    - Esempio: `/profile/index.blade.php` sarà accessibile come `/it/profile`
 
@@ -454,6 +475,7 @@ I dropdown di Filament hanno una struttura specifica che deve essere rispettata.
 ## Conclusione
 
 Utilizzando i componenti Blade nativi di Filament, possiamo garantire una maggiore coerenza visiva, una migliore manutenibilità del codice e un'esperienza utente più fluida . Inoltre, possiamo beneficiare degli aggiornamenti e dei miglioramenti futuri di Filament senza dover modificare i nostri componenti personalizzati.
+<<<<<<< HEAD
 ---
 module: theme
 topic: filament-blade-components-usage
@@ -461,3 +483,5 @@ canonical: ../../../Themes/docs/shared-components/filament-blade-components-usag
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/filament-blade-components-usage.md
+=======
+>>>>>>> 6ed19256f (.)

@@ -47,4 +47,8 @@ The module adheres to:
 - Strict type declarations
 - Comprehensive type hints
 - Safe function usage patterns
+<<<<<<< HEAD
 - Modern PHP 8.2+ features
+=======
+- Modern PHP 8.2+ features
+>>>>>>> 6ed19256f (.)

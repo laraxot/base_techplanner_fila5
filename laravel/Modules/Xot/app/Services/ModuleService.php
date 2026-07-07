@@ -4,9 +4,17 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Services;
 
+<<<<<<< HEAD
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Nwidart\Modules\Facades\Module;
+=======
+use Exception;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
+use Nwidart\Modules\Facades\Module;
+use ReflectionClass;
+>>>>>>> 6ed19256f (.)
 use stdClass;
 
 // ----------- Requests ----------
@@ -27,7 +35,11 @@ class ModuleService
      */
     public static function getInstance(): self
     {
+<<<<<<< HEAD
         if (! self::$_instance instanceof self) {
+=======
+        if (! (self::$_instance instanceof self)) {
+>>>>>>> 6ed19256f (.)
             self::$_instance = new self();
         }
 
@@ -65,7 +77,11 @@ class ModuleService
          * }
          */
         $mod = Module::find($this->name);
+<<<<<<< HEAD
         if (! $mod instanceof \Nwidart\Modules\Module) {
+=======
+        if (! ($mod instanceof \Nwidart\Modules\Module)) {
+>>>>>>> 6ed19256f (.)
             return [];
         }
 
@@ -80,7 +96,11 @@ class ModuleService
             $ext = '.php';
             // dddx(['ext' => $file->getExtension(), get_class_methods($file)]);
             if (Str::endsWith($filename, $ext)) {
+<<<<<<< HEAD
                 $tmp = new \stdClass();
+=======
+                $tmp = new stdClass();
+>>>>>>> 6ed19256f (.)
 
                 $name = mb_substr($filename, 0, -mb_strlen($ext));
 
@@ -98,11 +118,19 @@ class ModuleService
                 $tmp->name = $name;
 
                 try {
+<<<<<<< HEAD
                     $reflection_class = new \ReflectionClass($tmp->class);
                     if (! $reflection_class->isAbstract()) {
                         $data[$tmp->name] = $tmp->class;
                     }
                 } catch (\Exception) {
+=======
+                    $reflection_class = new ReflectionClass($tmp->class);
+                    if (! $reflection_class->isAbstract()) {
+                        $data[$tmp->name] = $tmp->class;
+                    }
+                } catch (Exception) {
+>>>>>>> 6ed19256f (.)
                     // Ignore reflection errors
                 }
             }

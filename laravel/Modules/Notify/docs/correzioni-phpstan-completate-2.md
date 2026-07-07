@@ -2,7 +2,10 @@
 
 ## Data
 2025-11-24
+<<<<<<< HEAD
 2025-11-24
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Riepilogo Esecutivo
  **Tutti i 147 errori PHPStan nel modulo Notify sono stati risolti con successo**
@@ -169,7 +172,10 @@ Durante la risoluzione:
 ## Collegamenti
 
 - [Git Conflicts Guide](../../Geo/docs_project/git-conflicts-resolution-guide.md)
+<<<<<<< HEAD
 - [Git Conflicts Guide](../../Geo/docs_project/git-conflicts-resolution-guide.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Notify Best Practices](best-practices.md)
 - [PHPStan Configuration](../../phpstan.neon)
 - [PHPStan User Guide](https://phpstan.org/user-guide/getting-started)
@@ -179,4 +185,8 @@ Durante la risoluzione:
 **Status**:  **COMPLETATO**
 **Verificato**:  S� - PHPStan passa senza errori
 **Testato**:  S� - Analisi completa su 3715 file
+<<<<<<< HEAD
 **Committato**: � Da verificare
+=======
+**Committato**: � Da verificare
+>>>>>>> 6ed19256f (.)

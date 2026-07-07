@@ -715,4 +715,7 @@ Modules/Xot/
 ```
 
 *Last updated: December 2025*
+<<<<<<< HEAD
 *
+=======
+>>>>>>> 6ed19256f (.)

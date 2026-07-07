@@ -41,13 +41,19 @@ public static function getConfigNames(): array
 ## 📚 Riferimenti
 
 - [Tenant Configuration Documentation](./configuration.md)
+<<<<<<< HEAD
 - [Service Locator Pattern](../../xot/docs/service-locator-pattern.md)
 
 ---
 
+=======
+>>>>>>> 6ed19256f (.)
 - [Service Locator Pattern](../../Xot/docs/service-locator-pattern.md)
 
 ---
 
 *Ultimo aggiornamento: 2025-01-10*
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-10*
+=======
+>>>>>>> 6ed19256f (.)

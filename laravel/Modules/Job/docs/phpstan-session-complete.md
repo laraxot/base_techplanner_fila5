@@ -181,4 +181,8 @@ $media = $record->getFirstMedia($attachment);
 
 ---
 
+<<<<<<< HEAD
 **Prossimi passi**: Completare UI (98), User (120), Xot (76) con approccio pattern-based batch.
+=======
+**Prossimi passi**: Completare UI (98), User (120), Xot (76) con approccio pattern-based batch.
+>>>>>>> 6ed19256f (.)

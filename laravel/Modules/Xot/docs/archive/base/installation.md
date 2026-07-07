@@ -20,11 +20,19 @@ Crearsi il virtual host con il nome del dominio uguale a quello del file di conf
 Noi suggeriamo l'utilizzo di Laragon perchè crea automaticamente i virtual host.
 Dopo aver installato laragon, Assicurarsi di abilitate tutte le estensioni php indicate nella foto
 
+<<<<<<< HEAD
 <img class="block m-auto" src="https://laraxot.github.io/module_xot_fila5/assets/img/php-extentions.png" alt="php extentions" />
 
 Configurare le preferenze di laragon come in foto
 
 <img class="block m-auto" src="https://laraxot.github.io/module_xot_fila5/assets/img/laragon-config.png" alt="laragon config" />
+=======
+<img class="block m-auto" src="https://laraxot.github.io/module_xot_fila3/assets/img/php-extentions.png" alt="php extentions" />
+
+Configurare le preferenze di laragon come in foto
+
+<img class="block m-auto" src="https://laraxot.github.io/module_xot_fila3/assets/img/laragon-config.png" alt="laragon config" />
+>>>>>>> 6ed19256f (.)
 
 Creare una cartella _bases dentro la cartella www, in questa cartella si andrà a clonare il progetto.
 
@@ -132,6 +140,7 @@ se il branch di un modulo vuole essere pubblicato, eseguire nel modulo
 ### Versione HEAD
 
 ## Collegamenti tra versioni di installation.md
+<<<<<<< HEAD
 * [installation.md](../../../xot/project_docs/filament/installation.md)
 * [installation.md](../../../xot/project_docs/installation.md)
 * [installation.md](../../../xot/project_docs/base/installation.md)
@@ -139,6 +148,8 @@ se il branch di un modulo vuole essere pubblicato, eseguire nel modulo
 * [installation.md](../../../lang/project_docs/installation.md)
 * [installation.md](../../../cms/project_docs/installation.md)
 * [installation.md](../../../../themes/one/project_docs/installation.md)
+=======
+>>>>>>> 6ed19256f (.)
 * [installation.md](../../../Xot/project_docs/filament/installation.md)
 * [installation.md](../../../Xot/project_docs/installation.md)
 * [installation.md](../../../Xot/project_docs/base/installation.md)
@@ -149,4 +160,8 @@ se il branch di un modulo vuole essere pubblicato, eseguire nel modulo
 
 ### Versione Incoming
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> 6ed19256f (.)

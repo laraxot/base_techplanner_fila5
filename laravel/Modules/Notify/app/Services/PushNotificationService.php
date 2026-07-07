@@ -13,9 +13,14 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 use Modules\Notify\Jobs\SendScheduledPushNotification;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 
 use function Safe\json_encode;
+=======
+use function Safe\json_encode;
+use Webmozart\Assert\Assert;
+>>>>>>> 6ed19256f (.)
 
 /**
  * Servizio per notifiche push avanzate

@@ -32,7 +32,11 @@ parameters:
         - ./phpstan_constants.php
 
     scanFiles:
+<<<<<<< HEAD
     #    - ./helpers/Helper.php
+=======
+    #    - ./Helpers/Helper.php
+>>>>>>> 6ed19256f (.)
     #   - ./vendor/amenadiel/jpgraph/src/config.inc.php
 
     editorUrl: 'vscode://file/%%file%%:%%line%%'
@@ -44,4 +48,8 @@ parameters:
     treatPhpDocTypesAsCertain: false
     reportUnmatchedIgnoredErrors: false
     checkOctaneCompatibility: false
+<<<<<<< HEAD
     checkModelProperties: false
+=======
+    checkModelProperties: false
+>>>>>>> 6ed19256f (.)

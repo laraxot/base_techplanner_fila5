@@ -77,6 +77,11 @@ Il file `Modules/Media/app/Filament/Tables/Columns/IconMediaColumn.php` presenta
 
 - [module_media.md](module_media.md)
 - [filament_table_actions.md](filament_table_actions.md)
+<<<<<<< HEAD
+=======
+- [Modules/Media/docs/](../docs/)
+
+>>>>>>> 6ed19256f (.)
 *Ultimo aggiornamento: 29 luglio 2025*
 # Risoluzione Conflitto IconMediaColumn.php
 
@@ -160,4 +165,7 @@ Il file `Modules/Media/app/Filament/Tables/Columns/IconMediaColumn.php` presenta
 - [Modules/Media/docs/](../docs/)
 
 *Ultimo aggiornamento: 29 luglio 2025*
+<<<<<<< HEAD
 - [Modules/Media/docs/](../../docs/)
+=======
+>>>>>>> 6ed19256f (.)

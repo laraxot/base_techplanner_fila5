@@ -154,7 +154,10 @@ Il componente è stato estratto dal template `report_pdf.blade.php` del tema One
 - [Documentazione Componenti](../componenti_personalizzati.md)
 - [Best Practices Filament](../filament-best-practices.mdc)
 - [README Principale](../README.md)
+<<<<<<< HEAD
 - [README Principale](../readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Note di Sviluppo
 
@@ -165,4 +168,8 @@ Quando si aggiungono nuovi stili CSS per PDF:
 3. **Documentare**: Aggiornare questa documentazione per nuovi componenti
 4. **Testare**: Verificare che i PDF generati abbiano l'aspetto corretto
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: Dicembre 2024
+=======
+**Ultimo aggiornamento**: Dicembre 2024
+>>>>>>> 6ed19256f (.)

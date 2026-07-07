@@ -13,6 +13,10 @@ use Filament\Schemas\Components\Component;
 use Illuminate\Support\Arr;
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Xot\Actions\GetTransKeyAction;
+<<<<<<< HEAD
+=======
+use ReflectionClass;
+>>>>>>> 6ed19256f (.)
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
@@ -26,7 +30,11 @@ class AutoLabelAction
     /**
      * Applica automaticamente le etichette ai componenti Filament.
      *
+<<<<<<< HEAD
      * @param Field|Component $component Il componente a cui applicare l'etichetta
+=======
+     * @param  Field|Component  $component  Il componente a cui applicare l'etichetta
+>>>>>>> 6ed19256f (.)
      *
      * @return Field|Component Il componente con l'etichetta applicata
      */
@@ -66,8 +74,12 @@ class AutoLabelAction
         $label_key = $trans_key.'.fields.'.$componentName.'.label';
         $label = trans($label_key);
 
+<<<<<<< HEAD
         /** @var string $label */
         if ($label !== $label_key) {
+=======
+        if (is_string($label)) {
+>>>>>>> 6ed19256f (.)
             if ($label_key === $label) {
                 // Se la traduzione non esiste, creiamone una utilizzando il nome del componente
                 $label_value = $componentName;
@@ -76,7 +88,11 @@ class AutoLabelAction
                 $label_key1 = $trans_key.'.fields.'.$componentName;
                 $label1 = trans($label_key1);
 
+<<<<<<< HEAD
                 if ($label_key1 !== $label1) {
+=======
+                if ($label_key1 !== $label1 && is_string($label1)) {
+>>>>>>> 6ed19256f (.)
                     $label_value = $label1;
                 }
 
@@ -98,13 +114,18 @@ class AutoLabelAction
     /**
      * Get the component name based on its actual type.
      *
+<<<<<<< HEAD
      * @param Field|Component $component Il componente di cui ottenere il nome
+=======
+     * @param  Field|Component  $component  Il componente di cui ottenere il nome
+>>>>>>> 6ed19256f (.)
      *
      * @return string Il nome del componente
      */
     private function getComponentName(Field|Component $component): string
     {
         // Per i componenti Field di Filament
+<<<<<<< HEAD
         if ($component instanceof Field) {
             $name = $component->getName();
 
@@ -114,5 +135,34 @@ class AutoLabelAction
         $statePath = $component->getStatePath();
 
         return $statePath ?? class_basename($component);
+=======
+        if (method_exists($component, 'getName')) {
+            $name = $component->getName();
+
+            return is_string($name) ? $name : ((string) $name);
+        }
+
+        // Per i componenti generali di Filament
+        // PHPStan rileva che questo controllo è sempre vero per Component
+        // ma lo manteniamo per chiarezza e per gestire eventuali cambiamenti futuri in Filament
+        // @phpstan-ignore function.alreadyNarrowedType
+        if (method_exists($component, 'getStatePath')) {
+            $statePath = $component->getStatePath();
+
+            return $statePath ?? class_basename($component);
+        }
+
+        // Fallback a reflection per altri casi
+        $reflectionClass = new ReflectionClass($component);
+        if ($reflectionClass->hasProperty('name') && $reflectionClass->getProperty('name')->isPublic()) {
+            $property = $reflectionClass->getProperty('name');
+            Assert::string($value = $property->getValue($component));
+
+            return $value;
+        }
+
+        // Ultima risorsa: ritorniamo il nome della classe
+        return class_basename($component);
+>>>>>>> 6ed19256f (.)
     }
 }

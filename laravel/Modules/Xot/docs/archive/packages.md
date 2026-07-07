@@ -62,6 +62,7 @@
 ### Versione HEAD
 
 ## Collegamenti tra versioni di packages.md
+<<<<<<< HEAD
 * [packages.md](../../../gdpr/project_docs/packages.md)
 * [packages.md](../../../notify/project_docs/packages.md)
 * [packages.md](../../../xot/project_docs/packages.md)
@@ -71,6 +72,8 @@
 * [packages.md](../../../job/project_docs/packages.md)
 * [packages.md](../../../media/project_docs/packages.md)
 * [packages.md](../../../tenant/project_docs/packages.md)
+=======
+>>>>>>> 6ed19256f (.)
 * [packages.md](../../../Gdpr/project_docs/packages.md)
 * [packages.md](../../../Notify/project_docs/packages.md)
 * [packages.md](../../../Xot/project_docs/packages.md)
@@ -83,4 +86,8 @@
 
 ### Versione Incoming
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> 6ed19256f (.)

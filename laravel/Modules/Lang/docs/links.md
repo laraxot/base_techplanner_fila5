@@ -130,4 +130,8 @@ php artisan translations:clean     # Pulisce le traduzioni non utilizzate
 ```
 
 - [Gestione console commands: filosofia e tecnica](./lang-service-provider.md)
+<<<<<<< HEAD
 - [Filosofia Xot: zen e automazione](./PHILOSOPHY.md)
+=======
+- [Filosofia Xot: zen e automazione](./PHILOSOPHY.md)
+>>>>>>> 6ed19256f (.)

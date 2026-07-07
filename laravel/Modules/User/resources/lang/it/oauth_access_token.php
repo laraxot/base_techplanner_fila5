@@ -8,10 +8,13 @@ return [
         'icon' => 'heroicon-o-key',
         'sort' => 9,
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

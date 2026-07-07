@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Tenant\Database\Factories;
 
+<<<<<<< HEAD
 use Carbon\Carbon;
+=======
+>>>>>>> 6ed19256f (.)
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\Tenant\Models\TenantDomain;
 
@@ -21,12 +24,21 @@ class TenantDomainFactory extends Factory
     public function definition(): array
     {
         return [
+<<<<<<< HEAD
             'name' => ['example.com', 'test.com', 'demo.org', 'sample.net', 'example.it'][array_rand(['example.com', 'test.com', 'demo.org', 'sample.net', 'example.it'])],
             'domain' => ['example.com', 'test.com', 'demo.org', 'sample.net', 'example.it'][array_rand(['example.com', 'test.com', 'demo.org', 'sample.net', 'example.it'])],
             'is_primary' => (bool) random_int(0, 1),
             'status' => ['active', 'pending', 'inactive', 'verified', 'unverified'][array_rand(['active', 'pending', 'inactive', 'verified', 'unverified'])],
             'verification_token' => (string) random_int(1000000000000000, 9999999999999999),
             'verified_at' => Carbon::now()->subDays(random_int(0, 30)),
+=======
+            'name' => $this->faker->domainName,
+            'domain' => $this->faker->domainName,
+            'is_primary' => $this->faker->boolean,
+            'status' => $this->faker->randomElement(['active', 'pending', 'inactive', 'verified', 'unverified']),
+            'verification_token' => $this->faker->uuid,
+            'verified_at' => $this->faker->dateTime,
+>>>>>>> 6ed19256f (.)
         ];
     }
 }

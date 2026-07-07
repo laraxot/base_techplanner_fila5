@@ -3,7 +3,11 @@
 ## Data: 2025-01-06
 
 ## Contesto
+<<<<<<< HEAD
 Sono stati identificati e risolti conflitti Git in diversi file del progetto <nome progetto>, coinvolgendo moduli Geo, User e tema Two.
+=======
+Sono stati identificati e risolti conflitti Git in diversi file del progetto SaluteOra, coinvolgendo moduli Geo, User e tema Two.
+>>>>>>> 6ed19256f (.)
 
 ## File Corretti
 
@@ -99,7 +103,11 @@ $res=Locality::query()
 ## Data: 2025-01-06
 
 ## Contesto
+<<<<<<< HEAD
 Sono stati identificati e risolti conflitti Git in diversi file del progetto <nome progetto>, coinvolgendo moduli Geo, User e tema Two.
+=======
+Sono stati identificati e risolti conflitti Git in diversi file del progetto SaluteOra, coinvolgendo moduli Geo, User e tema Two.
+>>>>>>> 6ed19256f (.)
 
 ## File Corretti
 
@@ -221,6 +229,7 @@ php artisan lang:check
 ## Documentazione Aggiornata
 
 ### Modulo Geo
+<<<<<<< HEAD
 - [Conflict Resolution](laravel/modules/geo/project_docs/conflict-resolution.md)
 
 ### Modulo User
@@ -228,6 +237,8 @@ php artisan lang:check
 
 ### Modulo Xot
 - [Git Conflicts Resolution](laravel/modules/xot/project_docs/git-conflicts-resolution-2025-01-06.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
 
 ### Modulo User
@@ -291,8 +302,11 @@ php artisan lang:check
 ### Documentazione Moduli
 - [Geo Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/Modules/User/project_docs/theme-translation-conflicts-resolution.md)
+<<<<<<< HEAD
 - [Geo Conflict Resolution](laravel/modules/geo/project_docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/modules/user/project_docs/theme-translation-conflicts-resolution.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Documentazione Generale
 - [Translation Standards](../../project_docs/translation-standards.md)
@@ -303,4 +317,8 @@ php artisan lang:check
 
 **Ultimo aggiornamento**: 2025-01-06
 **Autore**: Sistema di correzione automatica
+<<<<<<< HEAD
 **Stato**: ✅ Completato
+=======
+**Stato**: ✅ Completato
+>>>>>>> 6ed19256f (.)

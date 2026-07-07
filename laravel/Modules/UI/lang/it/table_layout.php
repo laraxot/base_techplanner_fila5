@@ -10,6 +10,7 @@ return [
             'helper_text' => 'Cambia il tipo di visualizzazione',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Table Layout',
     'plural_label' => 'Table Layout (Plurale)',
     'navigation' => [
@@ -43,4 +44,6 @@ return [
             'description' => '',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

@@ -31,6 +31,10 @@ final class ContactBlock extends XotBaseBlock
 
     public static function getBlockLabel(): string
     {
+<<<<<<< HEAD
         return \trans_string('cms::blocks.contact.label');
+=======
+        return \trans_string('cms::blocks.contact.label') ?? 'Contact';
+>>>>>>> 6ed19256f (.)
     }
 }

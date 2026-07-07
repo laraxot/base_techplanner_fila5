@@ -8,6 +8,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Actions\Table;
 
+<<<<<<< HEAD
+=======
+use Exception;
+>>>>>>> 6ed19256f (.)
 use Filament\Actions\Action;
 use Filament\Resources\RelationManagers\RelationManager;
 use Modules\Xot\Actions\Export\ExportXlsByCollection;
@@ -33,8 +37,13 @@ class ExportXlsTableAction extends Action
                 $transKey = app(GetTransKeyAction::class)->execute($livewire_class);
                 $transKey .= '.fields';
                 $query = $livewire->getFilteredTableQuery();
+<<<<<<< HEAD
                 if (null === $query) {
                     throw new \Exception('Query is null');
+=======
+                if ($query === null) {
+                    throw new Exception('Query is null');
+>>>>>>> 6ed19256f (.)
                 }
                 // ->getQuery(); // Staudenmeir\LaravelCte\Query\Builder
                 $rows = $query->get();

@@ -395,11 +395,17 @@ composer dump-autoload = Manifestation of Truth
 - [Wikimedia Composer Merge Plugin](https://github.com/wikimedia/composer-merge-plugin)
 
 **Documentazione Interna**:
+<<<<<<< HEAD
 - [../../Xot/docs/README.md](../../Xot/docs/README.md) - XotBase Pattern
 - [./README.md](./README.md) - UI Module Overview
 - [../../../../docs/modules-index.md](../../../../docs/modules-index.md) - Module Index
 - [../../Xot/docs/README.md](../../xot/docs/readme.md) - XotBase Pattern
 - [./README.md](./readme.md) - UI Module Overview
+=======
+- [../../../docs/modules-index.md](../../../docs/modules-index.md) - Module Index
+- [../../Xot/docs/README.md](../../Xot/docs/README.md) - XotBase Pattern
+- [./README.md](./README.md) - UI Module Overview
+>>>>>>> 6ed19256f (.)
 
 ---
 
@@ -542,4 +548,8 @@ fi
 
 **Prossimo Step**: Git commit + push
 
+<<<<<<< HEAD
 🤖 Generated with [Claude Code](https://claude.com/claude-code)
+=======
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+>>>>>>> 6ed19256f (.)

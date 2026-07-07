@@ -6,7 +6,11 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+<<<<<<< HEAD
 use Illuminate\Support\Carbon;
+=======
+use Modules\User\Database\Factories\TeamPermissionFactory;
+>>>>>>> 6ed19256f (.)
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
@@ -32,6 +36,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
+<<<<<<< HEAD
  * @property string|null          $name
  * @property string|null          $updated_by
  * @property string|null          $created_by
@@ -49,6 +54,10 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|TeamPermission                         whereTeamId($value)
  * @method static Builder<static>|TeamPermission                         whereUpdatedAt($value)
  * @method static Builder<static>|TeamPermission                         whereUpdatedBy($value)
+=======
+ *
+ * @method static TeamPermissionFactory factory($count = null, $state = [])
+>>>>>>> 6ed19256f (.)
  *
  * @mixin \Eloquent
  */
@@ -56,6 +65,11 @@ class TeamPermission extends BaseModel
 {
     /**
      * The database connection that should be used by the model.
+<<<<<<< HEAD
+=======
+     *
+     * @var string
+>>>>>>> 6ed19256f (.)
      */
     protected $connection = 'user';
 

@@ -6,6 +6,7 @@ return [
     'fields' => [
         'mailable' => [
             'label' => 'mailable',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -27,6 +28,17 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'subject' => [
+            'label' => 'subject',
+        ],
+        'html_template' => [
+            'label' => 'html_template',
+        ],
+        'text_template' => [
+            'label' => 'text_template',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -40,6 +52,7 @@ return [
             'label' => 'cancel',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Create Mail Template',
     'plural_label' => 'Create Mail Template (Plurale)',
     'navigation' => [
@@ -53,4 +66,6 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

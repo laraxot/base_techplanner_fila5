@@ -6,7 +6,13 @@ namespace Modules\Xot\Actions;
 
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Process;
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
+=======
+use RuntimeException;
+use Spatie\QueueableAction\QueueableAction;
+use Throwable;
+>>>>>>> 6ed19256f (.)
 use Webmozart\Assert\Assert;
 
 /**
@@ -30,18 +36,25 @@ class ExecuteArtisanCommandAction
         'route:cache',
         'event:cache',
         'queue:restart',
+<<<<<<< HEAD
         'passport:install --uuids',
         'passport:keys',
         'passport:purge',
         'passport:hash',
+=======
+>>>>>>> 6ed19256f (.)
     ];
 
     /**
      * Esegue un comando Artisan e restituisce i risultati.
      *
+<<<<<<< HEAD
      * @param string $command Il comando Artisan da eseguire (senza "php artisan")
      *
      * @throws \RuntimeException Se il comando non è consentito o si verifica un errore
+=======
+     * @param  string  $command  Il comando Artisan da eseguire (senza "php artisan")
+>>>>>>> 6ed19256f (.)
      *
      * @return array{
      *     command: string,
@@ -49,13 +62,22 @@ class ExecuteArtisanCommandAction
      *     status: 'completed'|'failed',
      *     exitCode: int
      * } Array con informazioni sull'esecuzione del comando
+<<<<<<< HEAD
+=======
+     *
+     * @throws RuntimeException Se il comando non è consentito o si verifica un errore
+>>>>>>> 6ed19256f (.)
      */
     public function execute(string $command): array
     {
         Assert::stringNotEmpty($command, 'Il comando non può essere vuoto');
 
         if (! $this->isCommandAllowed($command)) {
+<<<<<<< HEAD
             throw new \RuntimeException("Comando non consentito: {$command}");
+=======
+            throw new RuntimeException("Comando non consentito: {$command}");
+>>>>>>> 6ed19256f (.)
         }
 
         /** @var array<int, string> $output */
@@ -122,16 +144,30 @@ class ExecuteArtisanCommandAction
                 'status' => $status,
                 'exitCode' => $result->exitCode() ?? 0,
             ];
+<<<<<<< HEAD
         } catch (\Throwable $e) {
             Event::dispatch('artisan-command.error', [$command, $e->getMessage()]);
             throw new \RuntimeException("Errore durante l'esecuzione del comando {$command}: {$e->getMessage()}", (int) $e->getCode(), $e);
+=======
+        } catch (Throwable $e) {
+            Event::dispatch('artisan-command.error', [$command, $e->getMessage()]);
+            throw new RuntimeException(
+                "Errore durante l'esecuzione del comando {$command}: {$e->getMessage()}",
+                (int) $e->getCode(),
+                $e,
+            );
+>>>>>>> 6ed19256f (.)
         }
     }
 
     /**
      * Verifica se un comando è presente nella lista dei comandi consentiti.
      *
+<<<<<<< HEAD
      * @param string $command Il comando da verificare
+=======
+     * @param  string  $command  Il comando da verificare
+>>>>>>> 6ed19256f (.)
      *
      * @return bool True se il comando è consentito, false altrimenti
      */

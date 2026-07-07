@@ -83,6 +83,7 @@ return [
             ]) : [],
         ],
 
+<<<<<<< HEAD
         'user' => [
             'driver' => 'mysql',
             'host' => env('DB_HOST', '127.0.0.1'),
@@ -102,6 +103,8 @@ return [
             ]) : [],
         ],
 
+=======
+>>>>>>> 6ed19256f (.)
         'pgsql' => [
             'driver' => 'pgsql',
             'url' => env('DB_URL'),

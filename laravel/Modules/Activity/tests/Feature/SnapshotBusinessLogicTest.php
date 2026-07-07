@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use Illuminate\Support\Str;
 use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Tests\TestCase;
@@ -9,6 +10,16 @@ use Modules\Activity\Tests\TestCase;
 uses(TestCase::class);
 
 it('can create snapshot with basic information', function (): void {
+=======
+use Modules\Activity\Models\Snapshot;
+use Modules\Activity\Tests\TestCase;
+use Illuminate\Support\Str;
+
+uses(TestCase::class);
+
+it('can create snapshot with basic information', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $snapshot = Snapshot::factory()->create([
         'aggregate_uuid' => Str::uuid()->toString(),
         'aggregate_version' => 1,
@@ -22,7 +33,12 @@ it('can create snapshot with basic information', function (): void {
     expect($snapshot->state['status'])->toBe('active');
 });
 
+<<<<<<< HEAD
 it('can create snapshot with complex state', function (): void {
+=======
+it('can create snapshot with complex state', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $complexState = [
         'user_info' => [
             'id' => 123,
@@ -69,7 +85,12 @@ it('can create snapshot with complex state', function (): void {
     expect($snapshot->state['metadata']['tags'])->toContain('verified');
 });
 
+<<<<<<< HEAD
 it('can manage snapshot versioning', function (): void {
+=======
+it('can manage snapshot versioning', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $aggregateUuid = Str::uuid()->toString();
 
     // Crea snapshot con versioni progressive
@@ -101,7 +122,12 @@ it('can manage snapshot versioning', function (): void {
     expect(3)->toBe($snapshot3->aggregate_version);
 });
 
+<<<<<<< HEAD
 it('can query snapshots by aggregate uuid', function (): void {
+=======
+it('can query snapshots by aggregate uuid', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $uuid1 = Str::uuid()->toString();
     $uuid2 = Str::uuid()->toString();
 
@@ -136,7 +162,12 @@ it('can query snapshots by aggregate uuid', function (): void {
     expect($uuid2)->toBe($snapshots2->first()->aggregate_uuid);
 });
 
+<<<<<<< HEAD
 it('can query snapshots by version', function (): void {
+=======
+it('can query snapshots by version', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $uuid = Str::uuid()->toString();
 
     Snapshot::factory()->create([
@@ -179,7 +210,12 @@ it('can query snapshots by version', function (): void {
     expect(10)->toBe($version10Snapshot->aggregate_version);
 });
 
+<<<<<<< HEAD
 it('can handle snapshot with empty state', function (): void {
+=======
+it('can handle snapshot with empty state', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $snapshot = Snapshot::factory()->create([
         'aggregate_uuid' => Str::uuid()->toString(),
         'aggregate_version' => 1,
@@ -190,7 +226,12 @@ it('can handle snapshot with empty state', function (): void {
     expect($snapshot->state)->toBeEmpty();
 });
 
+<<<<<<< HEAD
 it('can handle snapshot with empty array state', function (): void {
+=======
+it('can handle snapshot with empty array state', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $snapshot = Snapshot::factory()->create([
         'aggregate_uuid' => Str::uuid()->toString(),
         'aggregate_version' => 1,
@@ -201,7 +242,12 @@ it('can handle snapshot with empty array state', function (): void {
     expect($snapshot->state)->toBeEmpty();
 });
 
+<<<<<<< HEAD
 it('can restore state from snapshot', function (): void {
+=======
+it('can restore state from snapshot', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $originalState = [
         'user_id' => 456,
         'settings' => [
@@ -232,7 +278,12 @@ it('can restore state from snapshot', function (): void {
     expect('EUR')->toBe($restoredState['preferences']['currency']);
 });
 
+<<<<<<< HEAD
 it('can compare snapshot versions', function (): void {
+=======
+it('can compare snapshot versions', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $uuid = Str::uuid()->toString();
 
     $snapshot1 = Snapshot::factory()->create([
@@ -267,9 +318,16 @@ it('can compare snapshot versions', function (): void {
     expect('final')->toBe($snapshot3->state['status']);
 });
 
+<<<<<<< HEAD
 it('can handle snapshot with timestamps', function (): void {
     $now = now();
 
+=======
+it('can handle snapshot with timestamps', function (): void
+{
+    $now = now();
+    
+>>>>>>> 6ed19256f (.)
     $snapshot = Snapshot::factory()->create([
         'aggregate_uuid' => Str::uuid()->toString(),
         'aggregate_version' => 1,
@@ -282,7 +340,12 @@ it('can handle snapshot with timestamps', function (): void {
     expect($snapshot->created_at)->toBeInstanceOf(\Illuminate\Support\Carbon::class);
 });
 
+<<<<<<< HEAD
 it('can query snapshots by date range', function (): void {
+=======
+it('can query snapshots by date range', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $yesterday = now()->subDay();
     $today = now();
     $tomorrow = now()->addDay();
@@ -316,7 +379,12 @@ it('can query snapshots by date range', function (): void {
     expect($recentSnapshots)->toHaveCount(3);
 });
 
+<<<<<<< HEAD
 it('can handle snapshot with metadata', function (): void {
+=======
+it('can handle snapshot with metadata', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $metadata = [
         'source' => 'user_action',
         'user_id' => 789,
@@ -344,4 +412,8 @@ it('can handle snapshot with metadata', function (): void {
     expect('user_action')->toBe($snapshot->state['metadata']['source']);
     expect(789)->toBe($snapshot->state['metadata']['user_id']);
     expect('profile_update')->toBe($snapshot->state['metadata']['action']);
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 6ed19256f (.)

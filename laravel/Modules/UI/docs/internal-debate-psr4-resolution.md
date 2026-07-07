@@ -1,7 +1,10 @@
 # Internal Debate: PSR-4 Autoloading Resolution Strategy
 
 **Date**: 2025-12-15
+<<<<<<< HEAD
 **Date**: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 **Context**: Resolving `composer dumpautoload -o` PSR-4 compliance errors
 **Debate Format**: Pro/Con analysis of different approaches
 
@@ -161,4 +164,8 @@
 
 ---
 
+<<<<<<< HEAD
 **Decision**: Proceed with complete fix (Option 3). Uphold standards, maintain functionality, follow project philosophy, and document everything.
+=======
+**Decision**: Proceed with complete fix (Option 3). Uphold standards, maintain functionality, follow project philosophy, and document everything.
+>>>>>>> 6ed19256f (.)

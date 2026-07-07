@@ -9,7 +9,10 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\View\Component;
 use Illuminate\View\View;
+<<<<<<< HEAD
 use Modules\Cms\Actions\ResolveLocalizedBlockDataAction;
+=======
+>>>>>>> 6ed19256f (.)
 use Webmozart\Assert\Assert;
 
 /**
@@ -48,9 +51,16 @@ class Block extends Component
 
             return view('ui::alert', $view_params);
         }
+<<<<<<< HEAD
         $view_params = $this->normalizeViewData($this->block['data'] ?? []);
         $view_params = app(ResolveLocalizedBlockDataAction::class)->execute($view_params);
         $view_params = $this->normalizeViewData($view_params);
+=======
+        $view_params_raw = $this->block['data'] ?? [];
+        $view_params = is_array($view_params_raw) ? $view_params_raw : [];
+        /** @var array<string, mixed> $view_params */
+        $view_params = (array) $view_params;
+>>>>>>> 6ed19256f (.)
         Assert::string($view, __FILE__.':'.__LINE__.' - '.class_basename(self::class));
         if (! view()->exists($view)) {
             throw new \Exception('view not found ['.$view.']');
@@ -58,6 +68,7 @@ class Block extends Component
 
         return view($view, $view_params);
     }
+<<<<<<< HEAD
 
     /**
      * @return array<string, mixed>
@@ -80,4 +91,6 @@ class Block extends Component
 
         return $viewData;
     }
+=======
+>>>>>>> 6ed19256f (.)
 }

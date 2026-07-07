@@ -132,10 +132,13 @@ protected function getFormSchema(): array
 - [Filament Best Practices](../../../docs/filament-best-practices.md)
 - [Translation Rules](../../../docs/translation-rules.md)
 - [PHPStan Guidelines](../../../docs/phpstan-guidelines.md)
+<<<<<<< HEAD
 - [Media Module README](../readme.md)
 - [Filament Best Practices](../../../../docs/filament-best-practices.md)
 - [Translation Rules](../../../../docs/translation-rules.md)
 - [PHPStan Guidelines](../../../../docs/phpstan-guidelines.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## 📊 **Metriche Miglioramento**
 
@@ -148,4 +151,8 @@ protected function getFormSchema(): array
 
 **Data Refactoring**: 2025-08-07
 **Versione PHPStan**: Livello 9
+<<<<<<< HEAD
 **Status**: ✅ Completato e Validato
+=======
+**Status**: ✅ Completato e Validato
+>>>>>>> 6ed19256f (.)

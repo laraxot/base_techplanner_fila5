@@ -5,7 +5,10 @@ declare(strict_types=1);
 return [
     'login' => [
         'title' => 'Sign in to your account',
+<<<<<<< HEAD
         'back_to_home' => 'Back to home',
+=======
+>>>>>>> 6ed19256f (.)
         'or' => 'or',
         'create_account' => 'create a new account',
         'forgot_password' => 'Forgot your password?',
@@ -187,5 +190,8 @@ return [
         'please_refresh' => 'An error occurred. Please refresh the page and try again.',
     ],
 ];
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 6ed19256f (.)

@@ -25,10 +25,13 @@ return [
         'places_by_category' => 'Luoghi per Categoria',
         'activity_timeline' => 'Timeline Attività',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

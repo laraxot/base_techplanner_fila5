@@ -9,20 +9,27 @@ return [
             'description' => 'Email',
             'helper_text' => '',
             'placeholder' => 'Inserisci la tua email',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'password' => [
             'label' => 'Password',
             'description' => 'Password',
             'helper_text' => '',
             'placeholder' => 'Inserisci la tua password',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'remember' => [
             'label' => 'Ricordami',
             'description' => 'Ricordami',
             'helper_text' => '',
             'placeholder' => 'Ricordami',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -75,4 +82,23 @@ return [
     'register_now' => 'Registrati ora',
     'forgot_password_text' => 'Hai dimenticato la tua password?',
     'reset_it' => 'Reimpostala qui',
+=======
+        ],
+    ],
+    'actions' => [
+        'hidePassword' => [
+            'label' => 'hidePassword',
+            'icon' => 'hidePassword',
+            'tooltip' => 'hidePassword',
+        ],
+        'showPassword' => [
+            'label' => 'showPassword',
+            'icon' => 'showPassword',
+            'tooltip' => 'showPassword',
+        ],
+    ],
+    'navigation' => [],
+    'label' => '',
+    'plural_label' => '',
+>>>>>>> 6ed19256f (.)
 ];

@@ -71,8 +71,12 @@ class GooglePlacesService
     public function searchPlaces(string $query, string $country = 'IT'): array
     {
         $cacheKey = $this->cachePrefix . md5($query . $country);
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         return cache()->remember($cacheKey, $this->cacheTtl, function () use ($query, $country) {
             return $this->performApiCall($query, $country);
         });
@@ -81,8 +85,12 @@ class GooglePlacesService
     public function getPlaceDetails(string $placeId): ?array
     {
         $cacheKey = $this->cachePrefix . 'details_' . $placeId;
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         return cache()->remember($cacheKey, $this->cacheTtl * 7, function () use ($placeId) {
             return $this->performDetailsCall($placeId);
         });
@@ -94,8 +102,12 @@ class GooglePlacesService
         if (!$this->checkRateLimit()) {
             throw new RateLimitExceededException();
         }
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         // API call con retry logic
         return retry(3, function () use ($query, $country) {
             return Http::timeout(10)
@@ -123,11 +135,14 @@ class GoogleApiRateLimiter
     {
         $key = $this->keyPrefix . now()->format('Y-m-d_H:i');
         $current = cache()->get($key, 0);
+<<<<<<< HEAD
         
         if ($current >= $this->maxCallsPerMinute) {
             return false;
         }
         
+=======
+>>>>>>> 6ed19256f (.)
 
         if ($current >= $this->maxCallsPerMinute) {
             return false;
@@ -223,7 +238,10 @@ class AddressFactory extends Factory
 - [ ] **Script check** passa senza errori
 
 ### Performance
+<<<<<<< HEAD
 ### Performance  
+=======
+>>>>>>> 6ed19256f (.)
 - [ ] **Google API calls** < 500ms
 - [ ] **Address validation** < 50ms
 - [ ] **Geocoding** < 200ms con caching
@@ -301,7 +319,15 @@ php artisan geo:test-api-integration
 
 ## Collegamenti
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: gennaio 2025*
 - [Analisi Moduli Globale](../../../../docs/modules_analysis_and_optimization.md)
 - [Google Places Integration](google-places.md)
 - [Address Model Documentation](models/address.md)
+=======
+- [Analisi Moduli Globale](../../../docs/modules_analysis_and_optimization.md)
+- [Google Places Integration](google-places.md)
+- [Address Model Documentation](models/address.md)
+
+*Ultimo aggiornamento: gennaio 2025*
+>>>>>>> 6ed19256f (.)

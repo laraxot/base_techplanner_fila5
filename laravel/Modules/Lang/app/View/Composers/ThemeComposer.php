@@ -95,7 +95,11 @@ class ThemeComposer
 
         return $this->languages()->filter(function (mixed $item) use ($currentLocale): bool {
             // Ensure the item is an instance of LangData
+<<<<<<< HEAD
             if (! $item instanceof LangData) {
+=======
+            if (! ($item instanceof LangData)) {
+>>>>>>> 6ed19256f (.)
                 throw new \Exception(sprintf('Expected instance of LangData, got %s', is_object($item) ? $item::class : gettype($item)));
             }
 
@@ -115,7 +119,11 @@ class ThemeComposer
         // Convert DataCollection to a Laravel Collection to use firstWhere()
         $lang = $this->languages()->toCollection()->firstWhere('id', $currentLocale);
 
+<<<<<<< HEAD
         if (! $lang instanceof LangData) {
+=======
+        if (! ($lang instanceof LangData)) {
+>>>>>>> 6ed19256f (.)
             throw new \Exception(sprintf('Current language not found on line %d in %s', __LINE__, class_basename($this)));
         }
 
@@ -141,7 +149,11 @@ class ThemeComposer
         if (! is_string($routeName)) {
             return '#';
         }
+<<<<<<< HEAD
         $routeParameters = array_merge(Route::current()?->parameters() ?? [], ['lang' => $locale]);
+=======
+        $routeParameters = array_merge(getRouteParameters(), ['lang' => $locale]);
+>>>>>>> 6ed19256f (.)
         $queryParameters = request()->all();
 
         $url = route($routeName, $routeParameters);

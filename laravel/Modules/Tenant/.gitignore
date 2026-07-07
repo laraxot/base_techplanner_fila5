@@ -160,6 +160,7 @@ test_tenants.sql
 *.fila2
 laravel
 public_html
+<<<<<<< HEAD
 lang/lang/
 _docs/
 _docs/
@@ -179,3 +180,5 @@ Tests/
 
 # Second brain: no-docs-archive (wiki) — non tracciare albero legacy docs/archive/
 docs/archive/
+=======
+>>>>>>> 6ed19256f (.)

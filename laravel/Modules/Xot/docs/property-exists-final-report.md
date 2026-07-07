@@ -1,7 +1,10 @@
 # REPORT FINALE: Eliminazione property_exists() da Eloquent Models
 
 ## Data: 2025-11-05
+<<<<<<< HEAD
 ## Data: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 ## Durata: ~3 ore
 ## Status: ✅ COMPLETATO
 
@@ -399,5 +402,9 @@ PHPStan + PHPMD + Pint + Tests = Qualità garantita
 
 **Firma:** Claude Code
 **Data:** 2025-11-05
+<<<<<<< HEAD
 **Data:** [DATE]
 **Status:** COMPLETATO CON SUCCESSO ✅
+=======
+**Status:** COMPLETATO CON SUCCESSO ✅
+>>>>>>> 6ed19256f (.)

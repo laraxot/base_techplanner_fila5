@@ -13,6 +13,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
 /**
  * Model Extra.
  *
+<<<<<<< HEAD
  * @property string                    $id
  * @property string                    $model_type
  * @property string                    $model_id
@@ -25,6 +26,20 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @property string|null               $deleted_by
  *
  * @method static ExtraFactory          factory($count = null, $state = [])
+=======
+ * @property string $id
+ * @property string $model_type
+ * @property string $model_id
+ * @property SchemalessAttributes|null $extra_attributes
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property Carbon|null $deleted_at
+ * @property string|null $deleted_by
+ *
+ * @method static ExtraFactory factory($count = null, $state = [])
+>>>>>>> 6ed19256f (.)
  * @method static Builder<static>|Extra newModelQuery()
  * @method static Builder<static>|Extra newQuery()
  * @method static Builder<static>|Extra query()
@@ -40,9 +55,15 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static Builder<static>|Extra whereUpdatedBy($value)
  * @method static Builder<static>|Extra withExtraAttributes()
  *
+<<<<<<< HEAD
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
+=======
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $deleter
+ * @property-read ProfileContract|null $updater
+>>>>>>> 6ed19256f (.)
  *
  * @mixin \Eloquent
  */

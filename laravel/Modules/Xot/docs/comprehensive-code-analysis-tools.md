@@ -1,7 +1,10 @@
 # 🔍 COMPREHENSIVE CODE ANALYSIS TOOLS GUIDE
 
 **Data Creazione**: 2025-01-27
+<<<<<<< HEAD
 **Data Creazione**: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 **Status**: 🚀 ATTIVO
 **Scope**: Tutti i moduli e temi
 **Priority**: CRITICAL
@@ -459,10 +462,17 @@ chmod +x scripts/*.sh
 
 **Last Updated**: 2025-01-27
 **Next Review**: 2025-02-27
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 **Status**: 🚀 ACTIVE IMPLEMENTATION
 **Confidence Level**: 98%
 
 ---
 
+<<<<<<< HEAD
 *Questa guida fornisce tutti gli strumenti necessari per mantenere la massima qualità del codice nel progetto FixCity.*
+=======
+*Questa guida fornisce tutti gli strumenti necessari per mantenere la massima qualità del codice nel progetto FixCity.*
+>>>>>>> 6ed19256f (.)

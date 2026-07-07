@@ -82,5 +82,10 @@ namespace Modules\ModuleName\App\Console\Commands;
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Convenzioni di Namespace](Modules/Xot/project_docs/namespace_conventions.md)
 - [Struttura Moduli](Modules/Xot/project_docs/module_structure.md)
+=======
+- [Convenzioni di Namespace](/var/www/html/base_saluteora/laravel/Modules/Xot/project_docs/namespace_conventions.md)
+- [Struttura Moduli](/var/www/html/base_saluteora/laravel/Modules/Xot/project_docs/module_structure.md)
+>>>>>>> 6ed19256f (.)

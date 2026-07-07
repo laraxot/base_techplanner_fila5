@@ -6,6 +6,7 @@ return [
     'fields' => [
         'sidebar_blocks' => [
             'label' => 'sidebar_blocks',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -33,6 +34,8 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Left Sidebar Content',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
 ];

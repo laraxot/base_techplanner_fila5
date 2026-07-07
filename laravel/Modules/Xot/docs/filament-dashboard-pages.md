@@ -251,6 +251,7 @@ class DashboardTest extends TestCase
 
 ## Documentazione Correlata
 
+<<<<<<< HEAD
 - [XotBasePanelProvider](../laravel/modules/xot/docs/filament/xotbasepanelprovider.md) - Configurazione panel provider
 - [Filament Integration](../laravel/modules/xot/docs/filament/filament_integration.md) - Integrazione generale Filament
 - [Best Practices](../laravel/modules/xot/docs/best-practices.md) - Best practices generali
@@ -258,6 +259,8 @@ class DashboardTest extends TestCase
 ## Collegamenti
 
 - [Documentazione Modulo Xot](../laravel/modules/xot/docs/filament/dashboard-pages.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [XotBasePanelProvider](../laravel/Modules/Xot/docs/filament/xotbasepanelprovider.md) - Configurazione panel provider
 - [Filament Integration](../laravel/Modules/Xot/docs/filament/filament_integration.md) - Integrazione generale Filament
 - [Best Practices](../laravel/Modules/Xot/docs/BEST-PRACTICES.md) - Best practices generali
@@ -272,4 +275,8 @@ class DashboardTest extends TestCase
 
 **Ultimo aggiornamento**: Giugno 2025
 **Stato**: Analisi completa completata, implementazione in corso
+<<<<<<< HEAD
 **Moduli da implementare**: 13 moduli identificati
+=======
+**Moduli da implementare**: 13 moduli identificati
+>>>>>>> 6ed19256f (.)

@@ -243,13 +243,21 @@ class Media extends Model
 # Supervisor config (/etc/supervisor/conf.d/laravel-media-worker.conf)
 [program:laravel-media-worker]
 process_name=%(program_name)s_%(process_num)02d
+<<<<<<< HEAD
 command=php artisan queue:work database --queue=media --sleep=3 --tries=3 --max-time=3600
+=======
+command=php /var/www/html/base_<nome progetto>/laravel/artisan queue:work database --queue=media --sleep=3 --tries=3 --max-time=3600
+>>>>>>> 6ed19256f (.)
 autostart=true
 autorestart=true
 user=www-data
 numprocs=2
 redirect_stderr=true
+<<<<<<< HEAD
 stdout_logfile=storage/logs/media-worker.log
+=======
+stdout_logfile=/var/www/html/base_<nome progetto>/laravel/storage/logs/media-worker.log
+>>>>>>> 6ed19256f (.)
 ```
 
 7. **Implementare Interfaccia per Monitoraggio Stato**
@@ -815,6 +823,7 @@ Implementando queste soluzioni, il modulo Media potrà superare i principali col
 
 ## Collegamenti
 - [Roadmap Principale](./roadmap.md)
+<<<<<<< HEAD
 - [Sintesi Colli di Bottiglia](../../../docs/performance_bottlenecks.md)
 - [Best Practices](../xot/docs/best-practices.md)
 - [Struttura Moduli](../xot/docs/module_structure.md)
@@ -846,6 +855,8 @@ Implementando queste soluzioni, il modulo Media potrà superare i principali col
 * [bottlenecks.md](../../activity/docs/bottlenecks.md)
 * [bottlenecks.md](../../patient/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../cms/docs/bottlenecks.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Sintesi Colli di Bottiglia](../../docs/PERFORMANCE_BOTTLENECKS.md)
 - [Best Practices](../Xot/docs/BEST-PRACTICES.md)
 - [Struttura Moduli](../Xot/docs/MODULE_STRUCTURE.md)
@@ -876,4 +887,8 @@ Implementando queste soluzioni, il modulo Media potrà superare i principali col
 * [bottlenecks.md](performance/bottlenecks.md)
 * [bottlenecks.md](../../Activity/docs/bottlenecks.md)
 * [bottlenecks.md](../../Patient/docs/roadmap/bottlenecks.md)
+<<<<<<< HEAD
 * [bottlenecks.md](../../Cms/docs/bottlenecks.md)
+=======
+* [bottlenecks.md](../../Cms/docs/bottlenecks.md)
+>>>>>>> 6ed19256f (.)

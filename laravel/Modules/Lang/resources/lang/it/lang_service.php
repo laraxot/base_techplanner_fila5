@@ -7,13 +7,17 @@ return [
         'created_at' => [
             'fields' => 'created_at',
             'label' => 'Data di creazione',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'values' => [
             'fields' => 'values',
             'label' => 'Valori',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -41,11 +45,26 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'value' => [
+            'label' => 'Valore',
+        ],
+        'email' => [
+            'label' => 'Email',
+        ],
+        'password' => [
+            'label' => 'Password',
+        ],
+        'remember' => [
+            'label' => 'Ricordami',
+>>>>>>> 6ed19256f (.)
         ],
         'assetType' => [
             'name' => [
                 'label' => 'Tipo di risorsa',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -86,11 +105,32 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'description' => [
+            'label' => 'Descrizione',
+        ],
+        'parent_id' => [
+            'label' => 'ID genitore',
+        ],
+        'technician_name' => [
+            'label' => 'Nome tecnico',
+        ],
+        'serial_number' => [
+            'label' => 'Numero di serie',
+        ],
+        'brand' => [
+            'label' => 'Marca',
+        ],
+        'model' => [
+            'label' => 'Modello',
+>>>>>>> 6ed19256f (.)
         ],
         'area' => [
             'name' => [
                 'label' => 'Area',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -107,11 +147,20 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'save' => [
+            'label' => 'Salva',
+        ],
+        'cancel' => [
+            'label' => 'Annulla',
+>>>>>>> 6ed19256f (.)
         ],
         'creator' => [
             'name' => [
                 'label' => 'Creatore',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -158,29 +207,59 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'isActive' => [
+            'label' => 'Attivo',
+        ],
+        'password_expires_at' => [
+            'label' => 'Scadenza password',
+        ],
+        'email_verified_at' => [
+            'label' => 'Email verificata il',
+        ],
+        'file' => [
+            'label' => 'File',
+        ],
+        'updated_at' => [
+            'label' => 'Ultima modifica',
+        ],
+        'name' => [
+            'label' => 'Nome',
+        ],
+        'id' => [
+            'label' => 'ID',
+>>>>>>> 6ed19256f (.)
         ],
         'roles' => [
             'name' => [
                 'label' => 'roles.name',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'role' => [
             'name' => [
                 'label' => 'role.name',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'teams' => [
             'name' => [
                 'label' => 'teams.name',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -233,6 +312,32 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+        ],
+        'determina' => [
+            'label' => 'determina',
+        ],
+        'matr' => [
+            'label' => 'matr',
+        ],
+        'cognome' => [
+            'label' => 'cognome',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -255,6 +360,7 @@ return [
             'label' => 'Crea un altro',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -264,4 +370,6 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

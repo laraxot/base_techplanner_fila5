@@ -177,7 +177,11 @@ class Wstr01lx extends Model
 Tutti i modelli devono passare la validazione PHPStan livello 9+:
 
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/html/ptvx/laravel
+>>>>>>> 6ed19256f (.)
 ./vendor/bin/phpstan analyse --level=9 --memory-limit=2G Modules/Sigma/app/Models/Integparam.php
 ```
 
@@ -193,4 +197,8 @@ Ogni nuovo modello deve essere documentato in:
 - [Best Practices Laravel](laraxot-conventions.md)
 - [Regole Migrazioni](migrations.md)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: giugno 2025*
+=======
+*Ultimo aggiornamento: giugno 2025*
+>>>>>>> 6ed19256f (.)

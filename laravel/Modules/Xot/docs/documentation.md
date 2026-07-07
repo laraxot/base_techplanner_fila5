@@ -48,6 +48,7 @@ Modules/[Nome]/
 * [documentation.md](../../../Xot/docs/documentation.md)
 * [documentation.md](../../../Xot/docs/guidelines/documentation.md)
 * [documentation.md](../../../Cms/docs/roadmap/features/documentation.md)
+<<<<<<< HEAD
 
 https://github.com/mpociot/laravel-apidoc-generator
 
@@ -83,3 +84,5 @@ https://beyondco.de/docs/laravel-apidoc-generator/getting-started/documenting-yo
 
 //-- forum un po' diverso
 https://flarum.org/
+=======
+>>>>>>> 6ed19256f (.)

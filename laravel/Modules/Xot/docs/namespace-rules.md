@@ -27,6 +27,7 @@
 ---
 
 **Ultimo aggiornamento:** 2025-05-13
+<<<<<<< HEAD
   - [Patient: Regole Modelli](../../patient/project_docs/models.md)
   - [Notify Namespace Rules](../../notify/project_docs/namespace_rules.md)
 
@@ -37,3 +38,7 @@
 
 
 **Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
+=======
+
+**Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
+>>>>>>> 6ed19256f (.)

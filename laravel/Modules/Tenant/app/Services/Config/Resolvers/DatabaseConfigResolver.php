@@ -21,6 +21,10 @@ class DatabaseConfigResolver implements ConfigResolverInterface
 
     /**
      * @param  array<string, mixed>  $extraConf
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> 6ed19256f (.)
      * @return array<string, mixed>
      */
     public function resolve(string $key, string|int|array|null $extraConf = null): float|int|string|array|null
@@ -68,6 +72,10 @@ class DatabaseConfigResolver implements ConfigResolverInterface
 
     /**
      * @param  array<string, mixed>  $extraConf
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> 6ed19256f (.)
      * @return array<string, mixed>
      */
     private function addModuleConnections(array $extraConf, ?string $default): array

@@ -1,7 +1,12 @@
 # Guida Rendering Widget Filament 4 - Modulo User
 
+<<<<<<< HEAD
 **Data**: 14 Ottobre 2025  
 **Modulo**: User  
+=======
+**Data**: 14 Ottobre 2025
+**Modulo**: User
+>>>>>>> 6ed19256f (.)
 **Framework**: Filament 4.x + Laraxot
 
 ## 🎯 Obiettivo
@@ -44,7 +49,11 @@ class LoginWidget extends XotBaseWidget
 {
     // ✅ CORRETTO: View path con pub_theme
     protected string $view = 'pub_theme::filament.widgets.auth.login';
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public ?array $data = [];
 
     // ✅ CORRETTO: Definire schema form
@@ -271,13 +280,21 @@ public function login(): void
 {
     try {
         $data = $this->form->getState();
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         if (!Auth::attempt($data)) {
             // ✅ CORRETTO: Errore specifico sul campo
             $this->addError('email', __('auth.failed'));
             return;
         }
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         redirect()->intended('/');
     } catch (\Exception $e) {
         // ✅ CORRETTO: Errore generico
@@ -354,8 +371,13 @@ class LoginWidget extends XotBaseWidget
             <form wire:submit="login" class="space-y-6">
                 {{ $this->form }}
 
+<<<<<<< HEAD
                 <button 
                     type="submit" 
+=======
+                <button
+                    type="submit"
+>>>>>>> 6ed19256f (.)
                     wire:loading.attr="disabled"
                     class="w-full py-3 bg-primary-600 text-white rounded-md hover:bg-primary-700"
                 >

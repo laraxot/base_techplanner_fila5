@@ -1,7 +1,12 @@
 # 🐄✨ DRY & KISS Analysis - Modulo User
 
+<<<<<<< HEAD
 **Data Analisi:** 2025-10-15  
 **Analista:** Super Mucca AI (Livello Infinito)  
+=======
+**Data Analisi:** 2025-10-15
+**Analista:** Super Mucca AI (Livello Infinito)
+>>>>>>> 6ed19256f (.)
 **Status:** 🔍 ANALISI COMPLETA
 
 ---
@@ -89,8 +94,13 @@ Modules\OAuth\Models\Client
 
 **Stima Riduzione:** 89 → 40-50 models core User
 
+<<<<<<< HEAD
 **Priority:** 🔴 CRITICA  
 **Effort:** 2-3 settimane  
+=======
+**Priority:** 🔴 CRITICA
+**Effort:** 2-3 settimane
+>>>>>>> 6ed19256f (.)
 **Benefit:** +100% manutenibilità
 
 ---
@@ -102,9 +112,15 @@ Modules\OAuth\Models\Client
 abstract class BaseModel extends XotBaseModel
 {
     use RelationX;  // ✅ Specifico User
+<<<<<<< HEAD
     
     protected $connection = 'user';
     
+=======
+
+    protected $connection = 'user';
+
+>>>>>>> 6ed19256f (.)
     protected function casts(): array
     {
         return array_merge(parent::casts(), [
@@ -134,14 +150,23 @@ abstract class BaseOAuthModel extends BaseModel {
     // OAuth-specific config
 }
 
+<<<<<<< HEAD
 // Device models  
+=======
+// Device models
+>>>>>>> 6ed19256f (.)
 abstract class BaseDeviceModel extends BaseModel {
     // Device-specific config
 }
 ```
 
+<<<<<<< HEAD
 **Priority:** 🟡 MEDIA  
 **Effort:** 1 settimana  
+=======
+**Priority:** 🟡 MEDIA
+**Effort:** 1 settimana
+>>>>>>> 6ed19256f (.)
 **Benefit:** +40% organizzazione
 
 ---
@@ -180,8 +205,13 @@ public static function getTableColumns(): array
 
 **Stima Riduzione:** 11 Resources × 20 LOC = ~220 LOC eliminabili
 
+<<<<<<< HEAD
 **Priority:** 🟡 MEDIA  
 **Effort:** 1 settimana  
+=======
+**Priority:** 🟡 MEDIA
+**Effort:** 1 settimana
+>>>>>>> 6ed19256f (.)
 **Benefit:** +30% leggibilità Resources
 
 ---
@@ -198,8 +228,13 @@ public static function getTableColumns(): array
 - ✅ Se è generico, spostare in Xot
 - ✅ Se è specifico User, OK mantenerlo qui
 
+<<<<<<< HEAD
 **Priority:** 🟢 BASSA  
 **Effort:** 2 ore  
+=======
+**Priority:** 🟢 BASSA
+**Effort:** 2 ore
+>>>>>>> 6ed19256f (.)
 **Benefit:** +20% comprensibilità
 
 ---
@@ -221,8 +256,13 @@ User module gestisce:
 - ✅ Definire chiaramente boundaries
 - ✅ Evitare logic duplicata
 
+<<<<<<< HEAD
 **Priority:** 🟡 MEDIA  
 **Effort:** 1 settimana  
+=======
+**Priority:** 🟡 MEDIA
+**Effort:** 1 settimana
+>>>>>>> 6ed19256f (.)
 **Benefit:** +30% chiarezza architettura
 
 ---
@@ -273,13 +313,21 @@ User module gestisce:
 for model in Modules/User/app/Models/*.php; do
     name=$(basename $model .php)
     category="unknown"
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     [[ $name == *"OAuth"* ]] && category="oauth"
     [[ $name == *"Device"* ]] && category="device"
     [[ $name == *"Team"* ]] && category="team"
     [[ $name == *"Tenant"* ]] && category="tenant"
     [[ $name == *"Permission"* || $name == *"Role"* ]] && category="permission"
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     echo "$category: $name"
 done | sort
 ```
@@ -291,7 +339,11 @@ done | sort
 - Session/Auth logs: **Valutare spostamento Activity module**
 - Obsoleti: **Eliminare**
 
+<<<<<<< HEAD
 **Effort:** 2 settimane  
+=======
+**Effort:** 2 settimane
+>>>>>>> 6ed19256f (.)
 **Benefit:** 89 → 40-50 models, +100% manutenibilità
 
 ---
@@ -306,7 +358,11 @@ done | sort
 3. Test: php artisan test --filter=UserResource
 ```
 
+<<<<<<< HEAD
 **Effort:** 1 settimana  
+=======
+**Effort:** 1 settimana
+>>>>>>> 6ed19256f (.)
 **Benefit:** ~220 LOC eliminate
 
 ---
@@ -322,8 +378,13 @@ find docs/ -name "*.md" -exec md5sum {} + | sort | uniq -w32 -D
 find docs/ -name "*old*" -o -name "*backup*" -o -name "*deprecated*"
 ```
 
+<<<<<<< HEAD
 **Target:** 356 → 280 files  
 **Effort:** 1 settimana  
+=======
+**Target:** 356 → 280 files
+**Effort:** 1 settimana
+>>>>>>> 6ed19256f (.)
 **Benefit:** +40% navigabilità
 
 ---
@@ -359,6 +420,7 @@ find docs/ -name "*old*" -o -name "*backup*" -o -name "*deprecated*"
 
 ---
 
+<<<<<<< HEAD
 **Status:** 🟡 MODULO DA OTTIMIZZARE  
 **Priority:** 🔴 ALTA (modulo critico)  
 **Overall:** Buona architettura ma troppo complesso
@@ -490,3 +552,10 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 ---
 
 **Conclusione:** Modulo User ha architettura solida, DRY eccellente, e complessità giustificata.
+=======
+**Status:** 🟡 MODULO DA OTTIMIZZARE
+**Priority:** 🔴 ALTA (modulo critico)
+**Overall:** Buona architettura ma troppo complesso
+
+🐄 **MU-UU-UU!** 🐄
+>>>>>>> 6ed19256f (.)

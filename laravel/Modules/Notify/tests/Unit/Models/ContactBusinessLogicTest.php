@@ -2,6 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+use Modules\Notify\Models\BaseModel;
+use Modules\Notify\Models\Contact;
+>>>>>>> 6ed19256f (.)
 
 describe('Contact Business Logic', function () {
     test('contact extends base model', function () {

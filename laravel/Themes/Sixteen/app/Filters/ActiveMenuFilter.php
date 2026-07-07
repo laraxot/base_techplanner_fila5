@@ -7,9 +7,12 @@ namespace Themes\Sixteen\Filters;
 use Illuminate\Support\Facades\Request;
 use Themes\Sixteen\Contracts\MenuFilterInterface;
 
+<<<<<<< HEAD
 use function Safe\parse_url;
 use function Safe\preg_match;
 
+=======
+>>>>>>> 6ed19256f (.)
 /**
  * Filtro menu per determinare elementi attivi
  * Marca come attivi gli elementi del menu basati sull'URL corrente
@@ -34,7 +37,11 @@ class ActiveMenuFilter implements MenuFilterInterface
                     break;
                 }
             }
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> 6ed19256f (.)
             if ($hasActiveChild) {
                 $item['active'] = true;
             }
@@ -53,7 +60,11 @@ class ActiveMenuFilter implements MenuFilterInterface
                     }
                 }
             }
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> 6ed19256f (.)
             if ($hasActiveChild) {
                 $item['active'] = true;
             }
@@ -73,10 +84,14 @@ class ActiveMenuFilter implements MenuFilterInterface
         // Se ha un array di URL attivi personalizzato
         if (isset($item['active_urls']) && is_array($item['active_urls'])) {
             foreach ($item['active_urls'] as $activeUrl) {
+<<<<<<< HEAD
                 if (! is_string($activeUrl)) {
                     continue;
                 }
                 if ($this->matchesPattern($currentPath, $activeUrl) ||
+=======
+                if ($this->matchesPattern($currentPath, $activeUrl) || 
+>>>>>>> 6ed19256f (.)
                     $this->matchesPattern($currentUrl, $activeUrl)) {
                     return true;
                 }
@@ -89,12 +104,17 @@ class ActiveMenuFilter implements MenuFilterInterface
         }
 
         // Se non ha URL, non può essere attivo
+<<<<<<< HEAD
         if (! isset($item['url'])) {
+=======
+        if (!isset($item['url'])) {
+>>>>>>> 6ed19256f (.)
             return false;
         }
 
         $itemUrl = $item['url'];
 
+<<<<<<< HEAD
         if (! is_string($itemUrl)) {
             return false;
         }
@@ -103,6 +123,11 @@ class ActiveMenuFilter implements MenuFilterInterface
         if (str_starts_with($itemUrl, 'http')) {
             $parsedUrl = parse_url($itemUrl, PHP_URL_PATH);
             $itemUrl = is_string($parsedUrl) && $parsedUrl !== '' ? $parsedUrl : '/';
+=======
+        // Rimuovi il domain per confronto
+        if (str_starts_with($itemUrl, 'http')) {
+            $itemUrl = parse_url($itemUrl, PHP_URL_PATH) ?: '/';
+>>>>>>> 6ed19256f (.)
         }
 
         // Normalizza gli URL
@@ -125,7 +150,11 @@ class ActiveMenuFilter implements MenuFilterInterface
         }
 
         // Sub-path match (l'URL corrente è sotto l'URL dell'elemento)
+<<<<<<< HEAD
         if (str_starts_with($currentPath.'/', $itemPath.'/')) {
+=======
+        if ($itemPath !== '' && str_starts_with($currentPath . '/', $itemPath . '/')) {
+>>>>>>> 6ed19256f (.)
             return true;
         }
 
@@ -145,17 +174,29 @@ class ActiveMenuFilter implements MenuFilterInterface
         // Wildcard pattern
         if (str_contains($pattern, '*')) {
             $pattern = str_replace('*', '.*', preg_quote($pattern, '/'));
+<<<<<<< HEAD
 
             return (bool) preg_match('/^'.$pattern.'$/i', $path);
+=======
+            return (bool) preg_match('/^' . $pattern . '$/i', $path);
+>>>>>>> 6ed19256f (.)
         }
 
         // Sub-path pattern (ends with /*)
         if (str_ends_with($pattern, '/*')) {
             $basePath = rtrim($pattern, '/*');
+<<<<<<< HEAD
 
             return str_starts_with($path, $basePath.'/') || $path === $basePath;
+=======
+            return str_starts_with($path, $basePath . '/') || $path === $basePath;
+>>>>>>> 6ed19256f (.)
         }
 
         return false;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 6ed19256f (.)

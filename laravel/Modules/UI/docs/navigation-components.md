@@ -247,7 +247,11 @@ I componenti di navigazione devono utilizzare sempre le funzioni di localizzazio
 
 ### Traduzioni Necessarie
 
+<<<<<<< HEAD
 Assicurarsi che le seguenti chiavi di traduzione siano definite in `lang/{locale}/auth.php`:
+=======
+Assicurarsi che le seguenti chiavi di traduzione siano definite in `/var/www/html/<nome progetto>/laravel/lang/{locale}/auth.php`:
+>>>>>>> 6ed19256f (.)
 
 ```php
 return [
@@ -290,6 +294,7 @@ return [
    - Utilizzare i componenti Filament per icone e avatar: `<x-filament::icon>`, `<x-filament::avatar>`
    - Utilizzare i componenti Filament per i dropdown quando possibile
    - Utilizzare i separatori corretti nei dropdown (div con bordo, non componenti inesistenti)
+<<<<<<< HEAD
 ---
 module: theme
 topic: navigation-components
@@ -297,3 +302,5 @@ canonical: ../../../Themes/docs/shared-components/navigation-components.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/navigation-components.md
+=======
+>>>>>>> 6ed19256f (.)

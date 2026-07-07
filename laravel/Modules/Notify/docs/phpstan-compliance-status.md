@@ -1,7 +1,10 @@
 # PHPStan Level 10 Compliance Status
 
 **Last Updated**: 2025-12-10
+<<<<<<< HEAD
 **Last Updated**: 2025-12-10
+=======
+>>>>>>> 6ed19256f (.)
 **Status**: ✅ FULLY COMPLIANT (0 errors)
 
 ## Summary
@@ -66,4 +69,8 @@ To maintain PHPStan compliance:
 - [Laravel HTTP Client](https://laravel.com/docs/12.x/http-client)
 - [Push Notification Services](push-notification-services.md)
 - [Notification Patterns](notification-patterns.md)
+<<<<<<< HEAD
 - [Service Architecture](service-architecture.md)
+=======
+- [Service Architecture](service-architecture.md)
+>>>>>>> 6ed19256f (.)

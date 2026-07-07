@@ -22,7 +22,11 @@ The `Job` module is built upon principles that emphasize efficiency, reliability
 *   **Architectural Conformity (via `Xot`):** By extending `XotBaseServiceProvider`, the `Job` module adheres to the consistent service provider patterns and modular structure enforced by the `Xot` module, ensuring its seamless integration into the overall application ecosystem.
 *   **"Politics" (Automation of Business Processes):** The "politics" of this module revolve around the application's ability to automate and control its internal processes. It dictates how non-immediate, resource-intensive business operations are handled, thereby empowering the application to manage its workload efficiently and strategically.
 *   **"Religion" (The Necessity of Asynchronous Efficiency):** The "religion" here is a deep-seated belief in the critical importance of asynchronous processing for modern, high-performance web applications. It's about efficiently utilizing resources, offloading work, and ensuring that the user experience is never degraded by operations that can occur in the background.
+<<<<<<< HEAD
 *   **"Zen" (Calm and Controlled Asynchronous Workflow):** The "zen" of the `Job` module is to bring calm, order, and control to the often-chaotic world of background tasks. It strives to create an environment where asynchronous operations run <nome progetto>ably, their progress is transparent, and any failures are gracefully managed, allowing the application to function smoothly and efficiently without constant manual intervention or user-facing delays.
+=======
+*   **"Zen" (Calm and Controlled Asynchronous Workflow):** The "zen" of the `Job` module is to bring calm, order, and control to the often-chaotic world of background tasks. It strives to create an environment where asynchronous operations run predictably, their progress is transparent, and any failures are gracefully managed, allowing the application to function smoothly and efficiently without constant manual intervention or user-facing delays.
+>>>>>>> 6ed19256f (.)
 
 ## 🤝 Business Logic (Core for Automation & Scale)
 
@@ -55,4 +59,8 @@ The `Job` module, as the orchestrator of background processes, can significantly
 4.  **Git (MCP)**: Aids in reviewing changes to job classes, queue configurations, or scheduled task definitions, ensuring robust and reliable background operations.
 5.  **Sequential Thinking (MCP)**: Crucial for analyzing complex job chains or scheduled workflows, helping to break down and understand intricate asynchronous processes.
 
+<<<<<<< HEAD
 By leveraging these MCPs, the `Job` module can ensure its critical role in orchestrating background operations is more efficient, verifiable, and transparent, ultimately contributing to a stable, scalable, and responsive application.
+=======
+By leveraging these MCPs, the `Job` module can ensure its critical role in orchestrating background operations is more efficient, verifiable, and transparent, ultimately contributing to a stable, scalable, and responsive application.
+>>>>>>> 6ed19256f (.)

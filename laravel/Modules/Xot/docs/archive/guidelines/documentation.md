@@ -104,7 +104,10 @@ Breve descrizione...
 
 ## Utilizzo
 [Guide all'uso](usage/README.md)
+<<<<<<< HEAD
 [Guide all'uso](usage/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 ```
 
 ## Manutenzione
@@ -163,9 +166,12 @@ php artisan api:generate
 - [Convenzioni di Codice](../conventions/README.md)
 - [Architettura](../architecture/README.md)
 - [Best Practices](../best-practices/README.md)
+<<<<<<< HEAD
 - [Convenzioni di Codice](../conventions/readme.md)
 - [Architettura](../architecture/readme.md)
 - [Best Practices](../best-practices/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Markdown Guide](https://www.markdownguide.org)
 
 ## Collegamenti tra versioni di documentation.md
@@ -173,6 +179,9 @@ php artisan api:generate
 * [documentation.md](../../../Xot/project_docs/documentation.md)
 * [documentation.md](../../../Xot/project_docs/guidelines/documentation.md)
 * [documentation.md](../../../Cms/project_docs/roadmap/features/documentation.md)
+<<<<<<< HEAD
 * [documentation.md](../../../xot/project_docs/documentation.md)
 * [documentation.md](../../../xot/project_docs/guidelines/documentation.md)
 * [documentation.md](../../../cms/project_docs/roadmap/features/documentation.md)
+=======
+>>>>>>> 6ed19256f (.)

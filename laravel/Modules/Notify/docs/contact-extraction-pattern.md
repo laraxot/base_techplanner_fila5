@@ -1,8 +1,13 @@
 # Pattern DRY: Estrazione Attributi Contatti da Modelli
 
+<<<<<<< HEAD
 **Data**: 2025-01-18  
 **Data**: 2025-01-18  
 **Modulo**: Notify  
+=======
+**Data**: 2025-01-18
+**Modulo**: Notify
+>>>>>>> 6ed19256f (.)
 **Status**: ✅ Pattern consolidato
 
 ## Problema Identificato
@@ -205,6 +210,12 @@ Utilizzo:
 
 ---
 
+<<<<<<< HEAD
 **Filosofia**: "Estrai una volta, usa ovunque" - DRY Principle  
 **Pattern**: Metodo generico + wrapper specifici  
 **Beneficio**: ~30 righe duplicate eliminate, codice più manutenibile
+=======
+**Filosofia**: "Estrai una volta, usa ovunque" - DRY Principle
+**Pattern**: Metodo generico + wrapper specifici
+**Beneficio**: ~30 righe duplicate eliminate, codice più manutenibile
+>>>>>>> 6ed19256f (.)

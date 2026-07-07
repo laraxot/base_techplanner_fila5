@@ -28,7 +28,12 @@ class SendScheduledPushNotification implements ShouldQueue
 
     public function __construct(
         private string $jobId
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> 6ed19256f (.)
 
     /**
      * Execute the job.
@@ -66,7 +71,11 @@ class SendScheduledPushNotification implements ShouldQueue
             );
 
             // Log risultato
+<<<<<<< HEAD
             Log::debug('Scheduled push notification sent', [
+=======
+            Log::info('Scheduled push notification sent', [
+>>>>>>> 6ed19256f (.)
                 'job_id' => $this->jobId,
                 'result' => $result,
             ]);

@@ -54,4 +54,8 @@ The `Lang` module, as the facilitator of multilingualism, can significantly bene
 4.  **Git (MCP)**: Aids in reviewing changes to translation files or `AutoLabelAction` logic, ensuring that localization efforts are consistent and correctly versioned.
 5.  **Sequential Thinking (MCP)**: Crucial for analyzing complex translation fallback mechanisms or debugging issues where labels are not resolving correctly across different locales.
 
+<<<<<<< HEAD
 By leveraging these MCPs, the `Lang` module can ensure its critical role in enabling global reach and enhancing usability is more efficient, verifiable, and transparent, ultimately contributing to a truly multilingual and inclusive application.
+=======
+By leveraging these MCPs, the `Lang` module can ensure its critical role in enabling global reach and enhancing usability is more efficient, verifiable, and transparent, ultimately contributing to a truly multilingual and inclusive application.
+>>>>>>> 6ed19256f (.)

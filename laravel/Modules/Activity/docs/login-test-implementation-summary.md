@@ -175,7 +175,10 @@ Pattern avanzato per testare widget Filament Livewire con form, validazione, not
 ### **Project Documentation**
 - [LoginTest.php](../laravel/Modules/Cms/tests/Feature/Auth/LoginTest.php) - Main test file
 - [Implementation Guide](../laravel/Modules/Cms/docs/tests/login-test-implementation.md) - Complete documentation
+<<<<<<< HEAD
 - [Implementation Guide](../laravel/modules/cms/docs/tests/login-test-implementation.md) - Complete documentation
+=======
+>>>>>>> 6ed19256f (.)
 - [LoginWidget](../laravel/Modules/User/app/Filament/Widgets/LoginWidget.php) - Widget under test
 - [Login Page](../laravel/Themes/One/resources/views/pages/auth/login.blade.php) - UI page
 
@@ -183,9 +186,12 @@ Pattern avanzato per testare widget Filament Livewire con form, validazione, not
 - [UserFactory Implementation](../laravel/Modules/<main module>/docs/factories/UserFactory-implementation-final.md) - Enterprise factory
 - [STI Architecture](../laravel/Modules/<main module>/docs/models/sti-architecture.md) - User type system
 - [Authentication Flow](../laravel/Modules/User/docs/authentication-flow.md) - Login process
+<<<<<<< HEAD
 - [UserFactory Implementation](../laravel/modules/<main module>/docs/factories/userfactory-implementation-final.md) - Enterprise factory
 - [STI Architecture](../laravel/modules/<main module>/docs/models/sti-architecture.md) - User type system
 - [Authentication Flow](../laravel/modules/user/docs/authentication-flow.md) - Login process
+=======
+>>>>>>> 6ed19256f (.)
 
 ### **Testing Framework**
 - [Pest PHP](https://pestphp.com/) - Modern testing framework
@@ -213,11 +219,19 @@ Questa implementazione fornisce una **base solida** per tutti i futuri test di a
 
 *Last Updated: Gennaio 2025*
 *Project: Laraxot <main module>*
+<<<<<<< HEAD
 # Login Test Implementation Summary - <nome progetto> Project
 
 ## 🎊 Mission Accomplished: Complete Login Testing Suite
 
 L'implementazione dei **test completi per il login** è stata completata con successo, fornendo una copertura totale di tutti gli scenari di autenticazione nel progetto <nome progetto>.
+=======
+# Login Test Implementation Summary - SaluteOra Project
+
+## 🎊 Mission Accomplished: Complete Login Testing Suite
+
+L'implementazione dei **test completi per il login** è stata completata con successo, fornendo una copertura totale di tutti gli scenari di autenticazione nel progetto SaluteOra.
+>>>>>>> 6ed19256f (.)
 
 ## 📈 Risultati Raggiunti
 
@@ -231,7 +245,11 @@ L'implementazione dei **test completi per il login** è stata completata con suc
 ### ✅ **Architettura Multi-Modulo Testata**
 - **Laravel Folio** + **Livewire Volt** page testing
 - **LoginWidget** (Filament) component testing
+<<<<<<< HEAD
 - **STI User Models** dal modulo <nome progetto>
+=======
+- **STI User Models** dal modulo SaluteOra
+>>>>>>> 6ed19256f (.)
 - **Factory avanzate** enterprise-grade integration
 - **Cross-module authentication** flow validation
 
@@ -272,9 +290,15 @@ L'implementazione dei **test completi per il login** è stata completata con suc
 - **Error Resilience**: Exception handling + edge cases
 
 ### **Integration Excellence**
+<<<<<<< HEAD
 - **Factory Integration**: UserFactory <nome progetto> enterprise-grade
 - **Widget Testing**: Filament Livewire components
 - **Cross-Module**: User, <nome progetto>, Xot, Cms integration
+=======
+- **Factory Integration**: UserFactory SaluteOra enterprise-grade
+- **Widget Testing**: Filament Livewire components
+- **Cross-Module**: User, SaluteOra, Xot, Cms integration
+>>>>>>> 6ed19256f (.)
 - **Translation Ready**: Messaggi localizzati italiani
 - **Performance Aware**: Session handling, memory efficiency
 
@@ -380,7 +404,11 @@ test('successful login regenerates session', function (): void {
 Primo progetto Laraxot a implementare test completi per architettura STI con Parental, testando Patient, Doctor, Admin come tipi distinti con factory specifiche.
 
 ### **Multi-Module Integration Testing**
+<<<<<<< HEAD
 Esempio perfetto di integrazione cross-module testing: Cms (test), User (widget), <nome progetto> (models), Xot (base), con zero conflitti.
+=======
+Esempio perfetto di integrazione cross-module testing: Cms (test), User (widget), SaluteOra (models), Xot (base), con zero conflitti.
+>>>>>>> 6ed19256f (.)
 
 ### **Livewire Widget Testing Excellence**
 Pattern avanzato per testare widget Filament Livewire con form, validazione, notifiche, state management completo.
@@ -390,17 +418,26 @@ Pattern avanzato per testare widget Filament Livewire con form, validazione, not
 ### **Project Documentation**
 - [LoginTest.php](../laravel/Modules/Cms/tests/Feature/Auth/LoginTest.php) - Main test file
 - [Implementation Guide](../laravel/Modules/Cms/docs/tests/login-test-implementation.md) - Complete documentation
+<<<<<<< HEAD
 - [Implementation Guide](../laravel/modules/cms/docs/tests/login-test-implementation.md) - Complete documentation
+=======
+>>>>>>> 6ed19256f (.)
 - [LoginWidget](../laravel/Modules/User/app/Filament/Widgets/LoginWidget.php) - Widget under test
 - [Login Page](../laravel/Themes/One/resources/views/pages/auth/login.blade.php) - UI page
 
 ### **Related Components**
+<<<<<<< HEAD
 - [UserFactory Implementation](../laravel/Modules/<nome progetto>/docs/factories/UserFactory-implementation-final.md) - Enterprise factory
 - [STI Architecture](../laravel/Modules/<nome progetto>/docs/models/sti-architecture.md) - User type system
 - [Authentication Flow](../laravel/Modules/User/docs/authentication-flow.md) - Login process
 - [UserFactory Implementation](../laravel/modules/<nome progetto>/docs/factories/userfactory-implementation-final.md) - Enterprise factory
 - [STI Architecture](../laravel/modules/<nome progetto>/docs/models/sti-architecture.md) - User type system
 - [Authentication Flow](../laravel/modules/user/docs/authentication-flow.md) - Login process
+=======
+- [UserFactory Implementation](../laravel/Modules/SaluteOra/docs/factories/UserFactory-implementation-final.md) - Enterprise factory
+- [STI Architecture](../laravel/Modules/SaluteOra/docs/models/sti-architecture.md) - User type system
+- [Authentication Flow](../laravel/Modules/User/docs/authentication-flow.md) - Login process
+>>>>>>> 6ed19256f (.)
 
 ### **Testing Framework**
 - [Pest PHP](https://pestphp.com/) - Modern testing framework
@@ -409,7 +446,11 @@ Pattern avanzato per testare widget Filament Livewire con form, validazione, not
 
 ## 🎉 Conclusion
 
+<<<<<<< HEAD
 L'implementazione dei **test completi per il login** rappresenta un **achievement di eccellenza** nel progetto <nome progetto>, stabilendo nuovi standard per:
+=======
+L'implementazione dei **test completi per il login** rappresenta un **achievement di eccellenza** nel progetto SaluteOra, stabilendo nuovi standard per:
+>>>>>>> 6ed19256f (.)
 
 - ✨ **Quality Assurance** enterprise-grade
 - ✨ **Multi-Module Integration** testing patterns
@@ -427,4 +468,8 @@ Questa implementazione fornisce una **base solida** per tutti i futuri test di a
 **Maintainability**: 📈 **EXCELLENT**
 
 *Last Updated: Gennaio 2025*
+<<<<<<< HEAD
 *Project: Laraxot <nome progetto>*
+=======
+*Project: Laraxot SaluteOra*
+>>>>>>> 6ed19256f (.)

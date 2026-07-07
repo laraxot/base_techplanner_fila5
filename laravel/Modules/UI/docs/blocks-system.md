@@ -22,7 +22,10 @@ laravel/Modules/Cms/
 ### Tipi di Blocchi
 
 1. **[NavigationBlock](../laravel/Modules/Cms/docs/blocks/navigation-block.md)**
+<<<<<<< HEAD
 1. **[NavigationBlock](../laravel/modules/cms/docs/blocks/navigation-block.md)**
+=======
+>>>>>>> 6ed19256f (.)
    - Gestione menu di navigazione
    - Header e footer
    - Menu multilivello
@@ -129,9 +132,12 @@ laravel/Modules/Cms/
 1. **[NavigationBlock](../laravel/Modules/Cms/project_docs/blocks/navigation-block.md)**
 1. **[NavigationBlock](../laravel/Modules/Cms/project_docs/blocks/navigation-block.md)**
 1. **[NavigationBlock](../laravel/Modules/Cms/project_docs/blocks/navigation-block.md)**
+<<<<<<< HEAD
 1. **[NavigationBlock](../laravel/modules/cms/project_docs/blocks/navigation-block.md)**
 1. **[NavigationBlock](../laravel/modules/cms/project_docs/blocks/navigation-block.md)**
 1. **[NavigationBlock](../laravel/modules/cms/project_docs/blocks/navigation-block.md)**
+=======
+>>>>>>> 6ed19256f (.)
    - Gestione menu di navigazione
    - Header e footer
    - Menu multilivello
@@ -213,4 +219,8 @@ public function render()
 - [Best Practices UI](ui-best-practices.md)
 
 ## Note
+<<<<<<< HEAD
 Questa documentazione è parte del sistema di documentazione di il progetto. Per dettagli specifici sui singoli blocchi, consultare la documentazione dei rispettivi moduli.
+=======
+Questa documentazione è parte del sistema di documentazione di il progetto. Per dettagli specifici sui singoli blocchi, consultare la documentazione dei rispettivi moduli.
+>>>>>>> 6ed19256f (.)

@@ -4,17 +4,33 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Database\Migrations;
 
+<<<<<<< HEAD
 use Doctrine\DBAL\Schema\Index;
+=======
+use Closure;
+use Exception;
+>>>>>>> 6ed19256f (.)
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Migrations\Migration as LaravelMigration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Schema\Builder;
+<<<<<<< HEAD
 use Illuminate\Database\Schema\ForeignIdColumnDefinition;
+=======
+use Illuminate\Database\Schema\ColumnDefinition;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Config;
+>>>>>>> 6ed19256f (.)
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
 use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Facades\Module;
+<<<<<<< HEAD
+=======
+use ReflectionClass;
+use RuntimeException;
+>>>>>>> 6ed19256f (.)
 use Webmozart\Assert\Assert;
 
 /**
@@ -24,7 +40,10 @@ abstract class XotBaseMigration extends LaravelMigration
 {
     protected Model $model;
 
+<<<<<<< HEAD
     /** @var class-string<Model>|null */
+=======
+>>>>>>> 6ed19256f (.)
     protected ?string $model_class = null;
 
     public function __construct()
@@ -36,12 +55,19 @@ abstract class XotBaseMigration extends LaravelMigration
 
     /**
      * Get the model class based on the migration class name.
+<<<<<<< HEAD
      *
      * @return class-string<Model>
      */
     public function getModelClass(): string
     {
         if (null !== $this->model_class) {
+=======
+     */
+    public function getModelClass(): string
+    {
+        if ($this->model_class !== null) {
+>>>>>>> 6ed19256f (.)
             return $this->model_class;
         }
 
@@ -57,11 +83,16 @@ abstract class XotBaseMigration extends LaravelMigration
                 ->toString();
         }
 
+<<<<<<< HEAD
         $reflectionClass = new \ReflectionClass($this);
+=======
+        $reflectionClass = new ReflectionClass($this);
+>>>>>>> 6ed19256f (.)
         $filename = $reflectionClass->getFilename();
         $mod_path = Module::getPath();
 
         // Controllo che $filename sia valido prima di passarlo a Str::of()
+<<<<<<< HEAD
         $mod_name = false !== $filename ? Str::of($filename)->after($mod_path)->explode(\DIRECTORY_SEPARATOR)[1] : ''; // Fallback nel caso in cui $filename non sia valido.
 
         $modelClass = Str::of('\Modules\\'.$mod_name.'\Models\\'.$name)
@@ -76,6 +107,15 @@ abstract class XotBaseMigration extends LaravelMigration
         $this->model_class = $modelClass;
 
         return $modelClass;
+=======
+        $mod_name = $filename !== false ? Str::of($filename)->after($mod_path)->explode(\DIRECTORY_SEPARATOR)[1] : ''; // Fallback nel caso in cui $filename non sia valido.
+
+        $this->model_class = Str::of('\Modules\\'.$mod_name.'\Models\\'.$name)
+            ->replace('/', \DIRECTORY_SEPARATOR)
+            ->toString();
+
+        return $this->model_class;
+>>>>>>> 6ed19256f (.)
     }
 
     public function getTable(): string
@@ -85,6 +125,7 @@ abstract class XotBaseMigration extends LaravelMigration
 
     public function getConn(): Builder
     {
+<<<<<<< HEAD
         $connectionName = $this->model->getConnectionName();
         // 如果连接名是 'user' 但数据库不存在，使用默认连接
         if ('user' === $connectionName && ! DB::connection($connectionName)->getDatabaseName()) {
@@ -93,6 +134,9 @@ abstract class XotBaseMigration extends LaravelMigration
         }
 
         return Schema::connection($connectionName);
+=======
+        return Schema::connection($this->model->getConnectionName());
+>>>>>>> 6ed19256f (.)
     }
 
     /**
@@ -117,9 +161,15 @@ abstract class XotBaseMigration extends LaravelMigration
     /**
      * Get the table indexes using Doctrine's schema manager.
      *
+<<<<<<< HEAD
      * @throws \Doctrine\DBAL\Exception
      *
      * @return array<Index>
+=======
+     * @return array<\Doctrine\DBAL\Schema\Index>
+     *
+     * @throws \Doctrine\DBAL\Exception
+>>>>>>> 6ed19256f (.)
      */
     // public function getTableIndexes(): array
     // {
@@ -129,7 +179,11 @@ abstract class XotBaseMigration extends LaravelMigration
     /**
      * Add common fields to the table.
      *
+<<<<<<< HEAD
      * @param Blueprint $table The table blueprint
+=======
+     * @param  Blueprint  $table  The table blueprint
+>>>>>>> 6ed19256f (.)
      */
     public function addCommonFields(Blueprint $table): void
     {
@@ -159,7 +213,11 @@ abstract class XotBaseMigration extends LaravelMigration
     {
         try {
             return $this->getConn()->getColumnType($this->getTable(), $column);
+<<<<<<< HEAD
         } catch (\Exception $e) {
+=======
+        } catch (Exception $e) {
+>>>>>>> 6ed19256f (.)
             return 'not-exists';
         }
     }
@@ -176,6 +234,7 @@ abstract class XotBaseMigration extends LaravelMigration
 
     public function hasIndex(string $column): bool
     {
+<<<<<<< HEAD
         $conn = $this->getConn();
         $table = $this->getTable();
 
@@ -189,6 +248,9 @@ abstract class XotBaseMigration extends LaravelMigration
         }
 
         return false;
+=======
+        return $this->getConn()->hasIndex($this->getTable(), $column);
+>>>>>>> 6ed19256f (.)
     }
 
     /**
@@ -210,7 +272,24 @@ abstract class XotBaseMigration extends LaravelMigration
 
         $result = $connection->selectOne($query, [$database, $table]);
 
+<<<<<<< HEAD
         return $this->extractPrimaryKeyCount($result) > 0;
+=======
+        // Check if result is an array or object and handle accordingly
+        if (is_array($result)) {
+            return isset($result['count']) && ((int) $result['count']) > 0;
+        }
+
+        // If it's an object, cast to array to avoid undefined property issues
+        if (is_object($result)) {
+            $resArray = (array) $result;
+
+            return isset($resArray['count']) && ((int) $resArray['count']) > 0;
+        }
+
+        // If neither, handle the error or unexpected case
+        return false;
+>>>>>>> 6ed19256f (.)
     }
 
     /**
@@ -218,9 +297,12 @@ abstract class XotBaseMigration extends LaravelMigration
      */
     public function dropPrimaryKey(): void
     {
+<<<<<<< HEAD
         if ('sqlite' === $this->driver()) {
             return;
         }
+=======
+>>>>>>> 6ed19256f (.)
         $sql = 'ALTER TABLE '.$this->getTable().' DROP PRIMARY KEY;';
         $this->query($sql);
     }
@@ -252,7 +334,11 @@ abstract class XotBaseMigration extends LaravelMigration
         });
     }
 
+<<<<<<< HEAD
     public function tableCreate(\Closure $next, ?string $table = null): void
+=======
+    public function tableCreate(Closure $next, ?string $table = null): void
+>>>>>>> 6ed19256f (.)
     {
         $tableName = $table ?? $this->getTable();
         if (! $this->tableExists($tableName)) {
@@ -260,6 +346,7 @@ abstract class XotBaseMigration extends LaravelMigration
         }
     }
 
+<<<<<<< HEAD
     public function tableUpdate(\Closure $next, ?string $table = null): void
     {
         $tableName = $table ?? $this->getTable();
@@ -286,6 +373,27 @@ abstract class XotBaseMigration extends LaravelMigration
         }
 
         return 0;
+=======
+    public function tableUpdate(Closure $next, ?string $table = null): void
+    {
+        $tableName = $table ?? $this->getTable();
+        $this->getConn()->table($tableName, $next);
+    }
+
+    public function timestamps(Blueprint $table, bool $hasSoftDeletes = false): void
+    {
+        $xot = XotData::make();
+        $userClass = $xot->getUserClass();
+
+        $table->timestamps();
+        $table->foreignIdFor($userClass, 'user_id')->nullable();
+        $table->foreignIdFor($userClass, 'updated_by')->nullable();
+        $table->foreignIdFor($userClass, 'created_by')->nullable();
+
+        if ($hasSoftDeletes) {
+            $table->softDeletes();
+        }
+>>>>>>> 6ed19256f (.)
     }
 
     public function updateTimestamps(Blueprint $table, bool $hasSoftDeletes = false): void
@@ -293,7 +401,10 @@ abstract class XotBaseMigration extends LaravelMigration
         $xot = XotData::make();
         $userClass = $xot->getUserClass();
 
+<<<<<<< HEAD
         // Check and add each timestamp column only if it doesn't exist
+=======
+>>>>>>> 6ed19256f (.)
         if (! $this->hasColumn('created_at')) {
             $table->timestamp('created_at')->nullable();
         }
@@ -302,7 +413,10 @@ abstract class XotBaseMigration extends LaravelMigration
             $table->timestamp('updated_at')->nullable();
         }
 
+<<<<<<< HEAD
         // Check and add foreign key columns only if they don't exist
+=======
+>>>>>>> 6ed19256f (.)
         if (! $this->hasColumn('updated_by')) {
             $table->foreignIdFor($userClass, 'updated_by')->nullable();
         }
@@ -311,6 +425,7 @@ abstract class XotBaseMigration extends LaravelMigration
             $table->foreignIdFor($userClass, 'created_by')->nullable();
         }
 
+<<<<<<< HEAD
         // Handle soft deletes
         if ($hasSoftDeletes) {
             if (! $this->hasColumn('deleted_at')) {
@@ -324,6 +439,17 @@ abstract class XotBaseMigration extends LaravelMigration
             if ($this->hasColumn('deleted_at') && ! $this->hasColumn('deleted_by')) {
                 $table->foreignIdFor($userClass, 'deleted_by')->nullable();
             }
+=======
+        if ($hasSoftDeletes && ! $this->hasColumn('deleted_at')) {
+            $table->softDeletes();
+            if (! $this->hasColumn('deleted_by')) {
+                $table->foreignIdFor($userClass, 'deleted_by')->nullable();
+            }
+        }
+
+        if ($this->hasColumn('deleted_at') && ! $this->hasColumn('deleted_by')) {
+            $table->foreignIdFor($userClass, 'deleted_by')->nullable();
+>>>>>>> 6ed19256f (.)
         }
     }
 
@@ -332,11 +458,19 @@ abstract class XotBaseMigration extends LaravelMigration
         $methodName = 'updateUserKey'.Str::studly($this->model->getKeyType());
         $this->{$methodName}($table);
 
+<<<<<<< HEAD
         if ($this->hasColumn('model_id') && 'bigint' === $this->getColumnType('model_id')) {
             $table->string('model_id', 36)->index()->change();
         }
 
         if ($this->hasColumn('team_id') && 'bigint' === $this->getColumnType('team_id')) {
+=======
+        if ($this->hasColumn('model_id') && $this->getColumnType('model_id') === 'bigint') {
+            $table->string('model_id', 36)->index()->change();
+        }
+
+        if ($this->hasColumn('team_id') && $this->getColumnType('team_id') === 'bigint') {
+>>>>>>> 6ed19256f (.)
             $table->uuid('team_id')->nullable()->change();
         }
     }
@@ -347,11 +481,19 @@ abstract class XotBaseMigration extends LaravelMigration
             $table->uuid('id')->primary()->first();
         }
 
+<<<<<<< HEAD
         if ($this->hasColumn('id') && 'bigint' === $this->getColumnType('id')) {
             $table->uuid('id')->change();
         }
 
         if ($this->hasColumn('user_id') && 'bigint' === $this->getColumnType('user_id')) {
+=======
+        if ($this->hasColumn('id') && $this->getColumnType('id') === 'bigint') {
+            $table->uuid('id')->change();
+        }
+
+        if ($this->hasColumn('user_id') && $this->getColumnType('user_id') === 'bigint') {
+>>>>>>> 6ed19256f (.)
             $table->uuid('user_id')->change();
         }
     }
@@ -378,10 +520,18 @@ abstract class XotBaseMigration extends LaravelMigration
         return $this->model->getConnectionName();
     }
 
+<<<<<<< HEAD
     /**
      * Add a foreign ID column to the table based on a related model.
      */
     public function foreignIdFor(Blueprint $table, string $class, ?string $column = null): ForeignIdColumnDefinition
+=======
+
+    /**
+     * Add a foreign ID column to the table based on a related model.
+     */
+    public function foreignIdFor(Blueprint $table, string $class, ?string $column = null): ColumnDefinition
+>>>>>>> 6ed19256f (.)
     {
         return $table->foreignIdFor($class, $column);
     }
@@ -393,6 +543,7 @@ abstract class XotBaseMigration extends LaravelMigration
     {
         return DB::connection($this->getConnection())->getDriverName();
     }
+<<<<<<< HEAD
 
     protected function isMysqlFamilyDriver(?string $driver = null): bool
     {
@@ -565,6 +716,8 @@ abstract class XotBaseMigration extends LaravelMigration
             $conn->statement('ALTER TABLE '.$pivotTable.' MODIFY '.$fkColumn.' BIGINT UNSIGNED NULL');
         }
     }
+=======
+>>>>>>> 6ed19256f (.)
 }
 
 // end XotBaseMigration

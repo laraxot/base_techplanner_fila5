@@ -2,6 +2,7 @@
 
 ## Riepilogo Intervento
 
+<<<<<<< HEAD
 Sono stati identificati e corretti tutti i file di traduzione non italiani contenenti "Città" nel modulo User, applicando la struttura completa a 7 elementi secondo gli standard Laraxot <nome progetto>.
 
 ## File Corretti
@@ -188,6 +189,8 @@ Utilizzare la documentazione centrale [`translation-field-structure-complete.md`
 
 ## Riepilogo Intervento
 
+=======
+>>>>>>> 6ed19256f (.)
 Sono stati identificati e corretti tutti i file di traduzione non italiani contenenti "Città" nel modulo User, applicando la struttura completa a 7 elementi secondo gli standard Laraxot SaluteOra.
 
 ## File Corretti
@@ -343,9 +346,15 @@ Tutti i file corretti mantengono:
 
 ## Collegamenti Bidirezionali
 
+<<<<<<< HEAD
 - [Struttura Completa Campi Traduzione](../../../docs/translation-field-structure-complete.md)
 - [SaluteOra Translation Audit](../../saluteora/docs/translation_audit_city_fields.md)
 - [Translation Syntax Fixes](../../../docs/translation_syntax_fixes.md)
+=======
+- [Struttura Completa Campi Traduzione](../../../project_docs/translation-field-structure-complete.md)
+- [SaluteOra Translation Audit](../../SaluteOra/project_docs/translation_audit_city_fields.md)
+- [Translation Syntax Fixes](../../../project_docs/translation_syntax_fixes.md)
+>>>>>>> 6ed19256f (.)
 - [User Module Widget Translation Rules](widget-translation-rules.md)
 
 ## Prevenzione Futura
@@ -360,12 +369,17 @@ grep -A 10 -B 2 "label.*City\|label.*Stadt" laravel/Modules/*/lang/
 ```
 
 ### Template di Riferimento
+<<<<<<< HEAD
 Utilizzare la documentazione centrale [`translation-field-structure-complete.md`](../../../docs/translation-field-structure-complete.md) come template per tutti i nuovi campi di traduzione.
+=======
+Utilizzare la documentazione centrale [`translation-field-structure-complete.md`](../../../project_docs/translation-field-structure-complete.md) come template per tutti i nuovi campi di traduzione.
+>>>>>>> 6ed19256f (.)
 
 ## Ultimo Aggiornamento
 2025-08-08 - Refactor completo campi "Città" modulo User ✅ COMPLETATO
 
 *Intervento eseguito seguendo rigorosamente i principi DRY + KISS e gli standard Laraxot SaluteOra*
+<<<<<<< HEAD
 ---
 module: theme
 topic: translation-city-field-refactor
@@ -373,3 +387,5 @@ canonical: ../../../Themes/docs/shared-components/translation-city-field-refacto
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-city-field-refactor.md
+=======
+>>>>>>> 6ed19256f (.)

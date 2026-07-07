@@ -60,6 +60,7 @@ Modules/Notify/
 - Performance testing
 ### Versione HEAD
 
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di analysis.md
 * [analysis.md](../../../notify/docs/analysis.md)
@@ -75,6 +76,9 @@ Modules/Notify/
 * [analysis.md](../../../media/docs/analysis.md)
 * [analysis.md](../../../media/docs/phpstan/analysis.md)
 * [analysis.md](../../../../themes/one/docs/analysis.md)
+=======
+## Collegamenti tra versioni di analysis.md
+>>>>>>> 6ed19256f (.)
 * [analysis.md](../../../Notify/docs/analysis.md)
 * [analysis.md](../../../Notify/docs/phpstan/analysis.md)
 * [analysis.md](../../../Xot/docs/analysis.md)
@@ -89,8 +93,14 @@ Modules/Notify/
 * [analysis.md](../../../Media/docs/phpstan/analysis.md)
 * [analysis.md](../../../../Themes/One/docs/analysis.md)
 
+<<<<<<< HEAD
 
 ### Versione Incoming
 
 
 ---
+=======
+### Versione Incoming
+
+---
+>>>>>>> 6ed19256f (.)

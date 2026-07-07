@@ -1,6 +1,10 @@
 # PHPStan Fixes - Modulo Cms
 
 ## Panoramica
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6ed19256f (.)
 Documentazione dei fix applicati al modulo Cms per raggiungere PHPStan livello 9.
 
 ## Fix Applicati
@@ -9,7 +13,10 @@ Documentazione dei fix applicati al modulo Cms per raggiungere PHPStan livello 9
 
 **Problema**: Uso di `file_put_contents` non sicuro
 
+<<<<<<< HEAD
 **Problema**: Uso di `file_put_contents` non sicuro
+=======
+>>>>>>> 6ed19256f (.)
 ```php
 // PRIMA (non sicuro)
 file_put_contents($filePath, $content);
@@ -21,7 +28,10 @@ file_put_contents($filePath, $content);
 
 **Motivazione**:
 
+<<<<<<< HEAD
 **Motivazione**: 
+=======
+>>>>>>> 6ed19256f (.)
 - Utilizzo della funzione sicura `Safe\file_put_contents` per gestione errori robusta
 - Prevenzione di errori runtime in caso di problemi di scrittura file
 - Conformità agli standard di sicurezza PHPStan
@@ -88,15 +98,21 @@ return [
 
 ## Risultati
 
+<<<<<<< HEAD
 ## Risultati
+=======
+>>>>>>> 6ed19256f (.)
 - ✅ **0 errori** PHPStan livello 9
 - ✅ **Conformità** agli standard di sicurezza
 - ✅ **Gestione errori** robusta per operazioni file
 
+<<<<<<< HEAD
 ## Collegamenti
 - [Report Completo PHPStan Fixes](../../../bashscripts/docs/phpstan_fixes_comprehensive_report.md)
 - [Script Risoluzione Conflitti](../../../bashscripts/docs/conflict_resolution_script_improvements.md)
 
+=======
+>>>>>>> 6ed19256f (.)
 ## Da migliorare (DRY + KISS)
 
 - [ ] Migrare le altre componenti Filament del modulo Cms all’uso esteso delle Cast Actions per eliminare mixed residui.
@@ -108,4 +124,8 @@ return [
 - [Report Completo PHPStan Fixes](../../../bashscripts/docs/phpstan_fixes_comprehensive_report.md)
 - [Script Risoluzione Conflitti](../../../bashscripts/docs/conflict_resolution_script_improvements.md)
 
+<<<<<<< HEAD
 _Ultimo aggiornamento: dicembre 2025_
+=======
+_Ultimo aggiornamento: dicembre 2025_
+>>>>>>> 6ed19256f (.)

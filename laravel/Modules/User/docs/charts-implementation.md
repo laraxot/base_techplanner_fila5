@@ -551,9 +551,12 @@ class UsersChartWidgetTest extends TestCase
 - [Filament Charts Complete Guide](../../Xot/docs/filament-charts-complete-guide.md)
 - [Chart Export Guide](../../Xot/docs/chart-export-guide.md)
 - [User Module README](./README.md)
+<<<<<<< HEAD
 - [Filament Charts Complete Guide](../../xot/docs/filament-charts-complete-guide.md)
 - [Chart Export Guide](../../xot/docs/chart-export-guide.md)
 - [User Module README](./readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Chart.js
 - [Chart.js Documentation](https://www.chartjs.org/docs/latest/)
@@ -568,4 +571,8 @@ class UsersChartWidgetTest extends TestCase
 **Modulo:** User
 **Framework:** Laraxot/PTVX
 **Filament:** 4.x
+<<<<<<< HEAD
 **PHPStan Level:** 10
+=======
+**PHPStan Level:** 10
+>>>>>>> 6ed19256f (.)

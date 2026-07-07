@@ -202,6 +202,7 @@ public function exportData()
 ### Versione HEAD
 
 ## Collegamenti tra versioni di bottlenecks.md
+<<<<<<< HEAD
 * [bottlenecks.md](../../../gdpr/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../xot/docs/bottlenecks.md)
 * [bottlenecks.md](../../../xot/docs/performance/bottlenecks.md)
@@ -212,6 +213,8 @@ public function exportData()
 * [bottlenecks.md](../../../job/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../media/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../patient/docs/roadmap/bottlenecks.md)
+=======
+>>>>>>> 6ed19256f (.)
 * [bottlenecks.md](../../../Gdpr/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../Xot/docs/bottlenecks.md)
 * [bottlenecks.md](../../../Xot/docs/performance/bottlenecks.md)
@@ -225,4 +228,8 @@ public function exportData()
 
 ### Versione Incoming
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> 6ed19256f (.)

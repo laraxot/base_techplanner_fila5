@@ -274,4 +274,8 @@ Il modulo Geo è il sistema di gestione geografica di <main module>, fornendo mo
 **Versione**: 1.0
 **Stato**: In Progress
 **Responsabile**: Team Sviluppo <main module>
+<<<<<<< HEAD
 **Prossima Revisione**: Gennaio 2025
+=======
+**Prossima Revisione**: Gennaio 2025
+>>>>>>> 6ed19256f (.)

@@ -38,6 +38,10 @@ trait HasNotificationRateLimiting
      * Ottiene il tempo rimanente prima che il rate limiting si resetti.
      *
      * @param  string  $key  Chiave univoca per il rate limiting
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> 6ed19256f (.)
      * @return int Secondi rimanenti
      */
     protected function getNotificationRateLimitRetryAfter(string $key): int
@@ -52,6 +56,10 @@ trait HasNotificationRateLimiting
      * Ottiene il numero di tentativi rimanenti per il rate limiting.
      *
      * @param  string  $key  Chiave univoca per il rate limiting
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> 6ed19256f (.)
      * @return int Tentativi rimanenti
      */
     protected function getNotificationRateLimitRemainingAttempts(string $key): int

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Themes\Sixteen\Models\Municipal;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -12,6 +13,8 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
+=======
+>>>>>>> 6ed19256f (.)
 use Illuminate\Database\Eloquent\{Model, SoftDeletes, Factories\HasFactory};
 use Illuminate\Database\Eloquent\Relations\{HasMany, BelongsTo, MorphMany, BelongsToMany};
 use Illuminate\Database\Eloquent\Casts\Attribute;
@@ -19,7 +22,11 @@ use Illuminate\Support\Str;
 
 /**
  * Modello per i servizi comunali (Municipal Service)
+<<<<<<< HEAD
  *
+=======
+ * 
+>>>>>>> 6ed19256f (.)
  * Rappresenta i servizi erogati dall'ente ai cittadini
  * secondo l'ontologia AGID e le specifiche dei servizi pubblici
  */
@@ -335,7 +342,10 @@ class MunicipalService extends Model
                 if (empty($this->attributes['slug'])) {
                     $this->attributes['slug'] = Str::slug($value);
                 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
                 return $value;
             }
         );
@@ -346,7 +356,11 @@ class MunicipalService extends Model
      */
     public function getFormattedRequirements(): array
     {
+<<<<<<< HEAD
         if (! $this->requirements || ! is_array($this->requirements)) {
+=======
+        if (!$this->requirements || !is_array($this->requirements)) {
+>>>>>>> 6ed19256f (.)
             return [];
         }
 
@@ -355,7 +369,10 @@ class MunicipalService extends Model
                 if (is_string($requirement)) {
                     return ['description' => $requirement, 'mandatory' => true];
                 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
                 return $requirement;
             })
             ->toArray();
@@ -366,7 +383,11 @@ class MunicipalService extends Model
      */
     public function getFormattedProcedures(): array
     {
+<<<<<<< HEAD
         if (! $this->procedures || ! is_array($this->procedures)) {
+=======
+        if (!$this->procedures || !is_array($this->procedures)) {
+>>>>>>> 6ed19256f (.)
             return [];
         }
 
@@ -375,7 +396,10 @@ class MunicipalService extends Model
                 if (is_string($procedure)) {
                     return ['step' => $index + 1, 'description' => $procedure];
                 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
                 return array_merge(['step' => $index + 1], $procedure);
             })
             ->toArray();
@@ -386,7 +410,11 @@ class MunicipalService extends Model
      */
     public function getFormattedRequiredDocuments(): array
     {
+<<<<<<< HEAD
         if (! $this->required_documents || ! is_array($this->required_documents)) {
+=======
+        if (!$this->required_documents || !is_array($this->required_documents)) {
+>>>>>>> 6ed19256f (.)
             return [];
         }
 
@@ -395,7 +423,10 @@ class MunicipalService extends Model
                 if (is_string($document)) {
                     return ['name' => $document, 'mandatory' => true];
                 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
                 return $document;
             })
             ->toArray();
@@ -406,7 +437,11 @@ class MunicipalService extends Model
      */
     public function getFormattedCosts(): array
     {
+<<<<<<< HEAD
         if (! $this->costs || ! is_array($this->costs)) {
+=======
+        if (!$this->costs || !is_array($this->costs)) {
+>>>>>>> 6ed19256f (.)
             return [];
         }
 
@@ -415,7 +450,10 @@ class MunicipalService extends Model
                 if (is_numeric($cost)) {
                     return ['amount' => $cost, 'description' => 'Costo del servizio'];
                 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
                 return $cost;
             })
             ->toArray();
@@ -426,7 +464,11 @@ class MunicipalService extends Model
      */
     public function getFormattedDigitalChannels(): array
     {
+<<<<<<< HEAD
         if (! $this->digital_channels || ! is_array($this->digital_channels)) {
+=======
+        if (!$this->digital_channels || !is_array($this->digital_channels)) {
+>>>>>>> 6ed19256f (.)
             return [];
         }
 
@@ -441,7 +483,11 @@ class MunicipalService extends Model
                     'cie' => 'CIE',
                     'pagopa' => 'PagoPA',
                 ];
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> 6ed19256f (.)
                 return [$channelNames[$channel] ?? $channel => $url];
             })
             ->toArray();
@@ -452,7 +498,11 @@ class MunicipalService extends Model
      */
     public function getFormattedFaq(): array
     {
+<<<<<<< HEAD
         if (! $this->faq || ! is_array($this->faq)) {
+=======
+        if (!$this->faq || !is_array($this->faq)) {
+>>>>>>> 6ed19256f (.)
             return [];
         }
 
@@ -461,7 +511,10 @@ class MunicipalService extends Model
                 if (is_array($item) && isset($item['question']) && isset($item['answer'])) {
                     return $item;
                 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
                 return ['question' => "Domanda {$index}", 'answer' => $item];
             })
             ->toArray();
@@ -472,13 +525,20 @@ class MunicipalService extends Model
      */
     public function isFree(): bool
     {
+<<<<<<< HEAD
         if (! $this->costs || ! is_array($this->costs)) {
+=======
+        if (!$this->costs || !is_array($this->costs)) {
+>>>>>>> 6ed19256f (.)
             return true;
         }
 
         return collect($this->costs)->every(function ($cost) {
             $amount = is_array($cost) ? ($cost['amount'] ?? 0) : $cost;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
             return $amount == 0;
         });
     }
@@ -488,10 +548,13 @@ class MunicipalService extends Model
      */
     public function isFullyDigital(): bool
     {
+<<<<<<< HEAD
         return $this->is_digital &&
                is_array($this->delivery_methods) &&
                in_array('online', $this->delivery_methods) &&
                ! in_array('in_person', $this->delivery_methods);
+=======
+>>>>>>> 6ed19256f (.)
         return $this->is_digital && 
                is_array($this->delivery_methods) &&
                in_array('online', $this->delivery_methods) &&
@@ -503,14 +566,21 @@ class MunicipalService extends Model
      */
     public function getProcessingTimeFormatted(): ?string
     {
+<<<<<<< HEAD
         if (! $this->processing_time) {
+=======
+        if (!$this->processing_time) {
+>>>>>>> 6ed19256f (.)
             return null;
         }
 
         // Se è un numero, assume giorni lavorativi
         if (is_numeric($this->processing_time)) {
             $days = (int) $this->processing_time;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
             return $days === 1 ? '1 giorno lavorativo' : "{$days} giorni lavorativi";
         }
 
@@ -522,7 +592,11 @@ class MunicipalService extends Model
      */
     public function needsReview(): bool
     {
+<<<<<<< HEAD
         if (! $this->next_review_date) {
+=======
+        if (!$this->next_review_date) {
+>>>>>>> 6ed19256f (.)
             return false;
         }
 
@@ -583,7 +657,11 @@ class MunicipalService extends Model
             $counter = 1;
 
             while (static::where('slug', $model->slug)->exists()) {
+<<<<<<< HEAD
                 $model->slug = $originalSlug.'-'.$counter;
+=======
+                $model->slug = $originalSlug . '-' . $counter;
+>>>>>>> 6ed19256f (.)
                 $counter++;
             }
         });
@@ -593,11 +671,14 @@ class MunicipalService extends Model
             if (is_null($model->service_status)) {
                 $model->service_status = 'active';
             }
+<<<<<<< HEAD
 
             if (is_null($model->priority_level)) {
                 $model->priority_level = 1;
             }
 
+=======
+>>>>>>> 6ed19256f (.)
             
             if (is_null($model->priority_level)) {
                 $model->priority_level = 1;
@@ -608,8 +689,12 @@ class MunicipalService extends Model
             }
         });
     }
+<<<<<<< HEAD
 }
 
 
 
 
+=======
+}
+>>>>>>> 6ed19256f (.)

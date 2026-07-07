@@ -11,6 +11,10 @@ use function Laravel\Prompts\select;
 use function Laravel\Prompts\text;
 
 use Modules\Xot\Datas\XotData;
+<<<<<<< HEAD
+=======
+use Symfony\Component\Console\Input\InputOption;
+>>>>>>> 6ed19256f (.)
 
 /**
  * Comando per impostare il team corrente per un utente.
@@ -19,11 +23,21 @@ class SetCurrentTeamCommand extends Command
 {
     /**
      * The name and signature of the console command.
+<<<<<<< HEAD
+=======
+     *
+     * @var string
+>>>>>>> 6ed19256f (.)
      */
     protected $name = 'user:set-current-team';
 
     /**
      * The console command description.
+<<<<<<< HEAD
+=======
+     *
+     * @var string
+>>>>>>> 6ed19256f (.)
      */
     protected $description = 'Assign current team to user';
 
@@ -42,7 +56,11 @@ class SetCurrentTeamCommand extends Command
         $xot = XotData::make();
         $user = $xot->getUserByEmail($email);
 
+<<<<<<< HEAD
         if (! $user instanceof Model) {
+=======
+        if (! ($user instanceof Model)) {
+>>>>>>> 6ed19256f (.)
             $this->error('Utente non trovato o non valido!');
 
             return;
@@ -86,6 +104,7 @@ class SetCurrentTeamCommand extends Command
         }
     }
 
+<<<<<<< HEAD
     /*
      * Get the console command options.
      */
@@ -95,4 +114,15 @@ class SetCurrentTeamCommand extends Command
     //        ['example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null],
     //    ];
     // }
+=======
+    /**
+     * Get the console command options.
+     */
+    protected function getOptions(): array
+    {
+        return [
+            ['example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null],
+        ];
+    }
+>>>>>>> 6ed19256f (.)
 }

@@ -104,6 +104,7 @@ class ActivityEvent
 }
 ```
 
+<<<<<<< HEAD
 # 📋 Activity
 
 [![Domain-Audit](https://img.shields.io/badge/Domain-Activity%20Log-455A64.svg)](#)
@@ -151,6 +152,8 @@ Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 
 ## Documentazione
 
+=======
+>>>>>>> 6ed19256f (.)
 ### 🔍 **Audit Trail System**
 ```php
 // Sistema audit trail completo
@@ -625,6 +628,7 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file [LICENSE](LICE
   <br>
   <em>Costruito con ❤️ per la comunità Laravel</em>
 </div>
+<<<<<<< HEAD
 | Lingua | Link |
 |--------|------|
 | 🇮🇹 Presentazione | Questo file (`README.md`) |
@@ -634,3 +638,5 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file [LICENSE](LICE
 ---
 
 **Modulo** `activity` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+>>>>>>> 6ed19256f (.)

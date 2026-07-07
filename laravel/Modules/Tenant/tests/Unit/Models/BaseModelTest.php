@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Modules\Tenant\Tests\Unit\Models;
 
+<<<<<<< HEAD
 uses(TestCase::class);
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\Tenant\Models\BaseModel;
 use Modules\Tenant\Tests\TestCase;
+=======
+use Illuminate\Database\Eloquent\Model;
+use Modules\Tenant\Models\BaseModel;
+>>>>>>> 6ed19256f (.)
 
 /**
  * @property BaseModel $baseModel

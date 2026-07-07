@@ -821,4 +821,7 @@ class ServiceTest extends TestCase
 
 **📝 Documento preparato da:** Super Mucca 🐮
 **📅 Data:** 2025-10-02
+<<<<<<< HEAD
 **📅 Data:** [DATE]
+=======
+>>>>>>> 6ed19256f (.)

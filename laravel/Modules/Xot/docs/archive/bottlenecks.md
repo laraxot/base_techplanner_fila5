@@ -628,13 +628,21 @@ public function generateReport(Request $request)
 # Aggiungere al Supervisor
 [program:laravel-worker]
 process_name=%(program_name)s_%(process_num)02d
+<<<<<<< HEAD
 command=php artisan queue:work database --sleep=3 --tries=3 --max-time=3600
+=======
+command=php /var/www/html/base_<nome progetto>/laravel/artisan queue:work database --sleep=3 --tries=3 --max-time=3600
+>>>>>>> 6ed19256f (.)
 autostart=true
 autorestart=true
 user=www-data
 numprocs=8
 redirect_stderr=true
+<<<<<<< HEAD
 stdout_logfile=storage/logs/worker.log
+=======
+stdout_logfile=/var/www/html/base_<nome progetto>/laravel/storage/logs/worker.log
+>>>>>>> 6ed19256f (.)
 ```
 
 5. **Implementare Notifiche di Completamento**
@@ -684,6 +692,7 @@ Implementando queste soluzioni, il modulo Xot potrà superare i principali colli
 ## Collegamenti
 - [Roadmap Principale](./roadmap.md)
 - [Best Practices Performance](./BEST-PRACTICES.md#performance)
+<<<<<<< HEAD
 - [Struttura Moduli](./module_structure.md)
 
 ## Collegamenti tra versioni di BOTTLENECKS.md
@@ -691,10 +700,16 @@ Implementando queste soluzioni, il modulo Xot potrà superare i principali colli
 * [BOTTLENECKS.md](../../../user/project_docs/bottlenecks.md)
 * [BOTTLENECKS.md](../../../media/project_docs/bottlenecks.md)
 * [BOTTLENECKS.md](../../../cms/project_docs/bottlenecks.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Struttura Moduli](./MODULE_STRUCTURE.md)
 
 ## Collegamenti tra versioni di BOTTLENECKS.md
 * [BOTTLENECKS.md](../../../Xot/project_docs/BOTTLENECKS.md)
 * [BOTTLENECKS.md](../../../User/project_docs/BOTTLENECKS.md)
 * [BOTTLENECKS.md](../../../Media/project_docs/BOTTLENECKS.md)
+<<<<<<< HEAD
 * [BOTTLENECKS.md](../../../Cms/project_docs/BOTTLENECKS.md)
+=======
+* [BOTTLENECKS.md](../../../Cms/project_docs/BOTTLENECKS.md)
+>>>>>>> 6ed19256f (.)

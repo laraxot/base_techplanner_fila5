@@ -2,8 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\User\Tests\Feature\Filament\Pages;
 
+=======
+>>>>>>> 6ed19256f (.)
 use Filament\Actions\Action;
 use Filament\Facades\Filament;
 use Filament\Tables\Columns\TextColumn;

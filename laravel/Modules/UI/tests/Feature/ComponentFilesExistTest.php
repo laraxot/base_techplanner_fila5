@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 describe('Component Files Existence Tests', function (): void {
     test('reorganized component files exist in correct locations', function (): void {
         $themeBasePath = base_path('Themes/Sixteen/resources/views/components');

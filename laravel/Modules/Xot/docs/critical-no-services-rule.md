@@ -1,7 +1,10 @@
 # Regola Critica: NO Services - Solo Spatie QueueableActions
 
 **Data Creazione**: 2025-01-18
+<<<<<<< HEAD
 **Data Creazione**: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 **Status**: Regola Fondamentale Laraxot
 **Priorità**: CRITICA - Mai Violare
 
@@ -19,7 +22,11 @@
 
 ```php
 // ❌ VIETATO - Non creare mai classi Service
+<<<<<<< HEAD
 namespace Modules\healthcare_app\Services\Charts;
+=======
+namespace Modules\Quaeris\Services\Charts;
+>>>>>>> 6ed19256f (.)
 
 class ChartService
 {
@@ -62,7 +69,11 @@ class UserService
 
 ```php
 // ✅ CORRETTO - Usa sempre Actions
+<<<<<<< HEAD
 namespace Modules\healthcare_app\Actions\Chart;
+=======
+namespace Modules\Quaeris\Actions\Chart;
+>>>>>>> 6ed19256f (.)
 
 use Spatie\QueueableAction\QueueableAction;
 
@@ -162,7 +173,11 @@ class [ActionName]Action
 
 **❌ PRIMA (Service)**:
 ```php
+<<<<<<< HEAD
 namespace Modules\healthcare_app\Services\Charts;
+=======
+namespace Modules\Quaeris\Services\Charts;
+>>>>>>> 6ed19256f (.)
 
 class ChartService
 {
@@ -183,12 +198,21 @@ class ChartService
 
 **✅ DOPO (Actions)**:
 ```php
+<<<<<<< HEAD
 // Modules/healthcare_app/Actions/Chart/GenerateChartAction.php
 namespace Modules\healthcare_app\Actions\Chart;
 
 use Spatie\QueueableAction\QueueableAction;
 use Modules\healthcare_app\Models\Chart;
 use Modules\healthcare_app\Actions\Chart\ProcessChartAction;
+=======
+// Modules/Quaeris/Actions/Chart/GenerateChartAction.php
+namespace Modules\Quaeris\Actions\Chart;
+
+use Spatie\QueueableAction\QueueableAction;
+use Modules\Quaeris\Models\Chart;
+use Modules\Quaeris\Actions\Chart\ProcessChartAction;
+>>>>>>> 6ed19256f (.)
 
 class GenerateChartAction
 {
@@ -202,11 +226,19 @@ class GenerateChartAction
     }
 }
 
+<<<<<<< HEAD
 // Modules/healthcare_app/Actions/Chart/ProcessChartAction.php
 namespace Modules\healthcare_app\Actions\Chart;
 
 use Spatie\QueueableAction\QueueableAction;
 use Modules\healthcare_app\Models\Chart;
+=======
+// Modules/Quaeris/Actions/Chart/ProcessChartAction.php
+namespace Modules\Quaeris\Actions\Chart;
+
+use Spatie\QueueableAction\QueueableAction;
+use Modules\Quaeris\Models\Chart;
+>>>>>>> 6ed19256f (.)
 
 class ProcessChartAction
 {
@@ -242,6 +274,7 @@ Prima di ogni commit, verifica:
 ---
 
 **Filosofia**: Le Actions sono unità atomiche di business logic, riutilizzabili, testabili e queueable. I Services creano accoppiamento e violano il principio di responsabilità singola.
+<<<<<<< HEAD
 
 ---
 
@@ -344,3 +377,5 @@ class Simple02ChartWidget extends XotBaseChartWidget
 - `Simple11ChartWidget.php` → Self-contained
 - `Simple13ChartWidget.php` → Self-contained
 - `Simple20ChartWidget.php` → Self-contained
+=======
+>>>>>>> 6ed19256f (.)

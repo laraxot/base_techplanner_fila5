@@ -1,7 +1,10 @@
 # PSR-4 Autoloading Error Analysis and Resolution Plan
 
 **Date**: 2025-12-15
+<<<<<<< HEAD
 **Date**: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 **Status**: Analysis Complete, Implementation Pending
 **Related Errors**: `composer dumpautoload -o` PSR-4 compliance warnings
 
@@ -232,4 +235,8 @@ Check if UI module `composer.json` needs:
 
 ---
 
+<<<<<<< HEAD
 **Next Step**: Begin implementation with Phase 1 (mock class separation)
+=======
+**Next Step**: Begin implementation with Phase 1 (mock class separation)
+>>>>>>> 6ed19256f (.)

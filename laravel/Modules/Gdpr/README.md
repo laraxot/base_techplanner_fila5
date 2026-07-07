@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🔒 Gdpr
 
 [![Domain-GDPR](https://img.shields.io/badge/Domain-GDPR%20Compliance-37474F.svg)](#)
@@ -45,6 +46,8 @@ Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 
 ## Documentazione
 
+=======
+>>>>>>> 6ed19256f (.)
 # GDPR Module Fila3 🔒 Your All-in-One GDPR Compliance Solution for Laravel 🚀
 
 [![Latest Release](https://img.shields.io/github/v/release/laraxot/module_gdpr_fila3)](https://github.com/laraxot/module_gdpr_fila3/releases)
@@ -174,6 +177,7 @@ php artisan module:enable Gdpr
 ## Run the Migrations
 ```bash
 php artisan module:migrate Gdpr
+<<<<<<< HEAD
 | Lingua | Link |
 |--------|------|
 | 🇮🇹 Presentazione | Questo file (`README.md`) |
@@ -183,3 +187,5 @@ php artisan module:migrate Gdpr
 ---
 
 **Modulo** `gdpr` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+>>>>>>> 6ed19256f (.)

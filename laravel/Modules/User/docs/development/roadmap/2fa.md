@@ -87,4 +87,8 @@ Implementazione dell'autenticazione a due fattori per aumentare la sicurezza deg
 - Priorità alla sicurezza
 - Mantenere semplicità d'uso
 - Documentare ogni step
+<<<<<<< HEAD
 - Testare edge cases 
+=======
+- Testare edge cases
+>>>>>>> 6ed19256f (.)

@@ -214,7 +214,10 @@ CREATE INDEX idx_activity_log_causer_type ON activity_log(causer_type);
 ## 📚 Related Documentation
 
 - [QUERY_OPTIMIZATION_ANALYSIS.md](./QUERY_OPTIMIZATION_ANALYSIS.md)
+<<<<<<< HEAD
 - [QUERY_OPTIMIZATION_ANALYSIS.md](./QUERY_OPTIMIZATION_ANALYSIS.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [bottlenecks.md](./bottlenecks.md)
 - [event-sourcing.md](./event-sourcing.md)
 
@@ -281,4 +284,8 @@ CREATE INDEX idx_activity_log_causer_type ON activity_log(causer_type);
 3. **Medium-term**: Implement systematic optimizations
 4. **Long-term**: Advanced performance strategies
 
+<<<<<<< HEAD
 This document provides the roadmap for resolving the performance issues in the Activity module while maintaining data integrity and functionality.
+=======
+This document provides the roadmap for resolving the performance issues in the Activity module while maintaining data integrity and functionality.
+>>>>>>> 6ed19256f (.)

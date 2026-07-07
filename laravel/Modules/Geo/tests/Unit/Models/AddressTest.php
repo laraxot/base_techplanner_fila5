@@ -4,13 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\Geo\Tests\Unit\Models;
 
+<<<<<<< HEAD
 uses(TestCase::class);
 
+=======
+>>>>>>> 6ed19256f (.)
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\Geo\Models\Address;
 use Modules\Geo\Models\Comune;
 use Modules\Geo\Models\Province;
+<<<<<<< HEAD
 use Modules\Geo\Tests\TestCase;
+=======
+>>>>>>> 6ed19256f (.)
 
 beforeEach(function () {
     $this->address = Address::factory()->create();

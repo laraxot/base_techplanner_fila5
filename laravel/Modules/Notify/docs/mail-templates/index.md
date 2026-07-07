@@ -1,6 +1,7 @@
 # Indice Documentazione Template Email
 
 ## Collegamenti Correlati
+<<<<<<< HEAD
 - [Indice Documentazione Notify](../index.md)
 - [README Modulo Notify](../readme.md)
 - [Sistema Email](../database-mail-system.md)
@@ -54,12 +55,18 @@
 - [Note di Implementazione](./implementation_notes.md) - Note sull'implementazione dei template
 - [Risoluzione Problemi](./troubleshooting.md) - Guida alla risoluzione dei problemi comuni
 - [Allegati](./attachments.md) - Gestione degli allegati nei template email
+=======
+>>>>>>> 6ed19256f (.)
 - [Indice Documentazione Notify](../INDEX.md)
 - [README Modulo Notify](../README.md)
 - [Sistema Email](../database-mail-system.md)
 - [Template Email](../EMAIL_TEMPLATES.md)
 - [Documentazione Generale ](../../../../../docs/README.md)
+<<<<<<< HEAD
 - [Documentazione Generale <nome progetto>](../../../../../docs/README.md)
+=======
+- [Documentazione Generale SaluteOra](../../../../../docs/README.md)
+>>>>>>> 6ed19256f (.)
 - [Collegamenti Documentazione](../../../../../docs/collegamenti-documentazione.md)
 
 ## Struttura e Architettura
@@ -111,4 +118,8 @@
 ## Note sulla Manutenzione
 Questa documentazione viene aggiornata regolarmente. Prima di apportare modifiche al codice dei template email, consultare la documentazione pertinente e aggiornare i documenti correlati.
 
+<<<<<<< HEAD
 Ultimo aggiornamento: 14 Maggio 2025
+=======
+Ultimo aggiornamento: 14 Maggio 2025
+>>>>>>> 6ed19256f (.)

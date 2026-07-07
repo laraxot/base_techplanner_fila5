@@ -855,4 +855,8 @@ Il sistema AutoLabel è un **meccanismo sofisticato ma elegante** che:
 **Versione**: 1.0
 **Data**: 2026-01-09
 **Autore**: System Architect
+<<<<<<< HEAD
 **Ultima Revisione**: 2026-01-09
+=======
+**Ultima Revisione**: 2026-01-09
+>>>>>>> 6ed19256f (.)

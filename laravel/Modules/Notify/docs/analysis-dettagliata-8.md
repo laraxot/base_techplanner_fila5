@@ -217,4 +217,8 @@ Il modulo è progettato per essere estensibile e personalizzabile, permettendo l
 #### 8.5.8 Monitoring
 - [Laravel Monitoring](https://laravel.com/docs/monitoring)
 - [Application Monitoring](https://en.wikipedia.org/wiki/Application_performance_management)
+<<<<<<< HEAD
 - [Log Management](https://en.wikipedia.org/wiki/Log_management) 
+=======
+- [Log Management](https://en.wikipedia.org/wiki/Log_management)
+>>>>>>> 6ed19256f (.)

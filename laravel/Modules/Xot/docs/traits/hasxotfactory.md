@@ -345,7 +345,10 @@ protected static function newFactory(): Factory
 - [GetFactoryAction](../actions/get-factory-action.md)
 - [BaseModel](../models/basemodel.md)
 - [BasePivot](../../User/docs/models/basepivot.md)
+<<<<<<< HEAD
 - [BasePivot](../../user/docs/models/basepivot.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Testing Guide](../testing/factory-testing.md)
 - [Laravel Factories Documentation](https://laravel.com/docs/eloquent-factories)
 
@@ -362,4 +365,8 @@ protected static function newFactory(): Factory
 **Autore**: Laraxot Core Team
 **Ultima modifica**: 22 Ottobre 2025
 **Stato**: ✅ Produzione
+<<<<<<< HEAD
 **PHPStan**: Level 9 compliant
+=======
+**PHPStan**: Level 9 compliant
+>>>>>>> 6ed19256f (.)

@@ -30,5 +30,8 @@ return new class extends Migration
         Schema::dropIfExists('password_resets');
     }
 };
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 6ed19256f (.)

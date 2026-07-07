@@ -107,9 +107,12 @@ git status --porcelain | grep "^UU\|^AA\|^DD"
 - [Priority Decision Rules](../../Xot/docs/priority-decision-rules.md)
 - [Super Mucca Workflow](../../Xot/docs/super-mucca-workflow.md)
 - [Git Conflict Resolution Guide](../../Xot/docs/git-conflict-resolution.md)
+<<<<<<< HEAD
 - [Priority Decision Rules](../../xot/docs/priority-decision-rules.md)
 - [Super Mucca Workflow](../../xot/docs/super-mucca-workflow.md)
 - [Git Conflict Resolution Guide](../../xot/docs/git-conflict-resolution.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ---
 
@@ -130,4 +133,8 @@ git status --porcelain | grep "^UU\|^AA\|^DD"
 
 ---
 
+<<<<<<< HEAD
 *"Un conflitto risolto è come una ferita guarita - il codice può finalmente respirare."* - Super Mucca Zen
+=======
+*"Un conflitto risolto è come una ferita guarita - il codice può finalmente respirare."* - Super Mucca Zen
+>>>>>>> 6ed19256f (.)

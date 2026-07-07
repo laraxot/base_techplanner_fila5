@@ -8,73 +8,100 @@ return [
             'label' => 'Metrica',
             'placeholder' => 'Seleziona la metrica da calcolare',
             'help' => 'Tipo di metrica statistica da calcolare',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'dimension' => [
             'label' => 'Dimensione',
             'placeholder' => 'Seleziona la dimensione di analisi',
             'help' => 'Dimensione per l\'analisi statistica',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'time_range' => [
             'label' => 'Intervallo temporale',
             'placeholder' => 'Seleziona l\'intervallo temporale',
             'help' => 'Intervallo temporale per l\'analisi',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'group_by' => [
             'label' => 'Raggruppa per',
             'placeholder' => 'Seleziona i campi di raggruppamento',
             'help' => 'Campi per raggruppare i risultati',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'filters' => [
             'label' => 'Filtri',
             'placeholder' => 'Configura i filtri per l\'analisi',
             'help' => 'Filtri da applicare ai dati',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'sort_by' => [
             'label' => 'Ordina per',
             'placeholder' => 'Seleziona il campo di ordinamento',
             'help' => 'Campo per ordinare i risultati',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'sort_direction' => [
             'label' => 'Direzione ordinamento',
             'placeholder' => 'Seleziona la direzione',
             'help' => 'Direzione dell\'ordinamento',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'limit' => [
             'label' => 'Limite',
             'placeholder' => 'Inserisci il numero massimo di risultati',
             'help' => 'Numero massimo di risultati da restituire',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'format' => [
             'label' => 'Formato',
             'placeholder' => 'Seleziona il formato di output',
             'help' => 'Formato per i risultati dell\'analisi',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'validation' => [
@@ -212,6 +239,7 @@ return [
         'candlestick' => 'Candeliere',
         'waterfall' => 'Cascata',
     ],
+<<<<<<< HEAD
     'label' => 'Statistics',
     'plural_label' => 'Statistics (Plurale)',
     'navigation' => [
@@ -236,4 +264,6 @@ return [
             'label' => 'Elimina Statistics',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

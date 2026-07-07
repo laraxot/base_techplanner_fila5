@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 # Convenzioni di Naming per Filament 
 
 Questo documento definisce le convenzioni di naming standardizzate per i componenti Filament nel sistema , con particolare attenzione alle pagine e alle risorse.
 Questo documento definisce le convenzioni di naming standardizzate per i componenti Filament nel sistema <nome progetto>, con particolare attenzione alle pagine e alle risorse.
+=======
+# Convenzioni di Naming per Filament
+
+Questo documento definisce le convenzioni di naming standardizzate per i componenti Filament nel sistema , con particolare attenzione alle pagine e alle risorse.
+Questo documento definisce le convenzioni di naming standardizzate per i componenti Filament nel sistema SaluteOra, con particolare attenzione alle pagine e alle risorse.
+>>>>>>> 6ed19256f (.)
 
 ## Convenzioni di Naming per Pagine Filament
 
@@ -46,7 +53,11 @@ class SendSmsPage extends XotBasePage
     protected static ?string $navigationIcon = 'heroicon-o-device-phone-mobile';
     protected static string $view = 'notify::filament.pages.send-sms';
     protected static ?string $cluster = Test::class;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // Resto dell'implementazione...
 }
 ```
@@ -117,7 +128,11 @@ use Filament\Clusters\Cluster;
 class Test extends Cluster
 {
     protected static ?string $navigationIcon = 'heroicon-o-beaker';
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // Configurazione del cluster...
 }
 ```

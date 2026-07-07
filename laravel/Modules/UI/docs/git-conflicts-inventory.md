@@ -28,5 +28,9 @@
 ## Stato
 - ❌ Conflitti da risolvere
 - 📅 Data rilevamento: 2025-11-12
+<<<<<<< HEAD
 - 📅 Data rilevamento: [DATE]
 - 🔄 Priorità: ALTA - Componenti UI critici
+=======
+- 🔄 Priorità: ALTA - Componenti UI critici
+>>>>>>> 6ed19256f (.)

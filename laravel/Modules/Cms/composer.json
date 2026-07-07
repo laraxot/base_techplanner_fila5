@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
     "name": "laraxot/module_cms_fila5",
+=======
+    "name": "laraxot/module_cms_fila3",
+>>>>>>> 6ed19256f (.)
     "description": "",
     "homepage": "https://laraxot.github.io/module_cms",
     "license": "MIT",
@@ -71,4 +75,8 @@
     "minimum-stability": "dev",
     "prefer-stable": true
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 6ed19256f (.)

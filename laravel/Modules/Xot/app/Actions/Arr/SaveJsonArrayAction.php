@@ -6,7 +6,10 @@ namespace Modules\Xot\Actions\Arr;
 
 use function Safe\file_put_contents;
 use function Safe\json_encode;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 use Spatie\QueueableAction\QueueableAction;
 
 class SaveJsonArrayAction

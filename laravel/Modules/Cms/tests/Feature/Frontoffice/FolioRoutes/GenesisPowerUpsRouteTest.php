@@ -7,6 +7,10 @@ use Modules\Cms\Tests\TestCase;
 uses(TestCase::class);
 
 it('GET /it/genesis/power-ups acceptable', function (): void {
+<<<<<<< HEAD
+=======
+    /** @phpstan-ignore-next-line property.notFound */
+>>>>>>> 6ed19256f (.)
     $res = $this->get('/it/genesis/power-ups');
 
     $status = (int) $res->getStatusCode();

@@ -87,10 +87,17 @@ public function panel(Panel $panel): Panel
 
 ### Collegamenti
 
+<<<<<<< HEAD
+=======
+- [Documentazione Root](../../../docs/filament_panel_provider_rules.md)
+>>>>>>> 6ed19256f (.)
 - [Architettura Filament](../../../docs/FILAMENT_BEST_PRACTICES.md)
 - [Configurazione Moduli](../../../docs/MODULE_ARCHITECTURE.md)
 
 *Ultimo aggiornamento: 2025-01-06*
+<<<<<<< HEAD
 - [Documentazione Root](../../../../docs/filament_panel_provider_rules.md)
 - [Architettura Filament](../../../../docs/filament_best_practices.md)
 - [Configurazione Moduli](../../../../docs/module_architecture.md)
+=======
+>>>>>>> 6ed19256f (.)

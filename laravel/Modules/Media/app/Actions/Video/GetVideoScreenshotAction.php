@@ -19,5 +19,9 @@ class GetVideoScreenshotAction
      *
      * @var array<int>|int
      */
+<<<<<<< HEAD
     public array|int $backoff = 3;
+=======
+    public $backoff = 3;
+>>>>>>> 6ed19256f (.)
 }

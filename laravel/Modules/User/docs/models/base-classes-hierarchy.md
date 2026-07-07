@@ -1,7 +1,12 @@
 # Gerarchia delle Classi Base - Modulo User
 
+<<<<<<< HEAD
 **Data:** 15 Ottobre 2025  
 **Tipo:** Documentazione Architetturale  
+=======
+**Data:** 15 Ottobre 2025
+**Tipo:** Documentazione Architetturale
+>>>>>>> 6ed19256f (.)
 **Stato:** ✅ Aggiornato
 
 ## Principio Fondamentale
@@ -82,7 +87,11 @@ namespace Modules\User\Models;
 class User extends BaseModel
 {
     protected $fillable = ['name', 'email'];
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function teams(): BelongsToMany
     {
         return $this->belongsToMany(Team::class);
@@ -130,24 +139,40 @@ namespace Modules\User\Models;
 
 /**
  * TeamUser Pivot Model
+<<<<<<< HEAD
  * 
+=======
+ *
+>>>>>>> 6ed19256f (.)
  * Tabella pivot per la relazione many-to-many tra Team e User.
  */
 class TeamUser extends BasePivot
 {
     protected $table = 'team_user';
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     protected $fillable = [
         'team_id',
         'user_id',
         'role',
     ];
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function team(): BelongsTo
     {
         return $this->belongsTo(Team::class);
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
@@ -186,13 +211,21 @@ namespace Modules\User\Models;
 
 /**
  * ModelHasRole Morph Pivot
+<<<<<<< HEAD
  * 
+=======
+ *
+>>>>>>> 6ed19256f (.)
  * Tabella pivot polymorphic: qualsiasi modello può avere ruoli.
  */
 class ModelHasRole extends BaseMorphPivot
 {
     protected $table = 'model_has_role';
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     protected $fillable = [
         'role_id',
         'model_type',
@@ -370,7 +403,14 @@ Quando crei un nuovo modello nel modulo User:
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento:** 15 Ottobre 2025  
 **Autore:** AI Assistant + Team Laraxot  
 **Versione:** 2.0 - Correzione gerarchia modelli  
 **Status:** ✅ Production Ready
+=======
+**Ultimo aggiornamento:** 15 Ottobre 2025
+**Autore:** AI Assistant + Team Laraxot
+**Versione:** 2.0 - Correzione gerarchia modelli
+**Status:** ✅ Production Ready
+>>>>>>> 6ed19256f (.)

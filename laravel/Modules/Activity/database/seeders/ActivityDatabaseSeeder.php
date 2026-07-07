@@ -15,5 +15,9 @@ class ActivityDatabaseSeeder extends Seeder
     public function run(): void
     {
         Model::unguard();
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6ed19256f (.)
     }
 }

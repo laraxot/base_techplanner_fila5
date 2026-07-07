@@ -14,5 +14,10 @@ class NetfunSmsData extends Data
         public string $sender,
         public ?string $reference = null,
         public ?string $scheduledDate = null,
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> 6ed19256f (.)
 }

@@ -19,15 +19,26 @@ final readonly class UserNameFieldsResolver
 
     public ?string $name;
 
+<<<<<<< HEAD
     public ?string $firstName;
 
     public ?string $lastName;
+=======
+    public ?string $first_name;
+
+    public ?string $last_name;
+>>>>>>> 6ed19256f (.)
 
     public function __construct(User $user)
     {
         $this->name = $this->resolveName($user);
+<<<<<<< HEAD
         $this->firstName = $this->resolveName($user);
         $this->lastName = $this->resolveSurname($user);
+=======
+        $this->first_name = $this->resolveName($user);
+        $this->last_name = $this->resolveSurname($user);
+>>>>>>> 6ed19256f (.)
     }
 
     public static function make(User $user): self
@@ -50,6 +61,7 @@ final readonly class UserNameFieldsResolver
      */
     private function resolveNameFields(User $idpUser, string $searchMethod): string
     {
+<<<<<<< HEAD
         $this->validateSearchMethod($searchMethod);
 
         $nameSection = $this->determineNameField($idpUser, $searchMethod);
@@ -113,6 +125,24 @@ final readonly class UserNameFieldsResolver
 
     private function getRawUserData(User $idpUser): array
     {
+=======
+        if (! in_array($searchMethod, [self::NAME_SEARCH, self::SURNAME_SEARCH], strict: true)) {
+            throw new \InvalidArgumentException('Metodo di ricerca non valido');
+        }
+
+        $name = $idpUser->getName();
+        if (! is_string($name) || empty($name)) {
+            return '';
+        }
+
+        $nameSection = $this->resolveNameFieldByNameAttributeAnalysis($name, $searchMethod);
+
+        if ($nameSection->isNotEmpty()) {
+            return $nameSection->toString();
+        }
+
+        // Ottenere i dati raw in modo sicuro attraverso reflection
+>>>>>>> 6ed19256f (.)
         $raw = [];
         try {
             $reflection = new \ReflectionClass($idpUser);
@@ -135,7 +165,56 @@ final readonly class UserNameFieldsResolver
             // Fallback silenzioso
         }
 
+<<<<<<< HEAD
         return $raw;
+=======
+        // Tenta di ottenere un nome dai dati raw
+        $nameField = '';
+        if (isset($raw['name']) && is_string($raw['name']) && ! empty($raw['name'])) {
+            $nameField = $raw['name'];
+        }
+
+        if (empty($nameField)) {
+            return '';
+        }
+
+        $nameSection = $this->resolveNameFieldByNameAttributeAnalysis($nameField, $searchMethod);
+        if (! $nameSection->isNotEmpty()) {
+            // If both sections were empty, try the "hardest way"
+            // by analyzing email address
+            $email = $idpUser->getEmail();
+            if (! is_string($email) || empty($email)) {
+                return '';
+            }
+
+            return Str::of($email)
+                ->trim()
+                ->before('@')
+                ->$searchMethod('.') // If no point is available, the whole string should be returned
+                ->trim()
+                ->title()
+                ->toString();
+        }
+
+        if (filter_var($nameSection->toString(), FILTER_VALIDATE_EMAIL)) {
+            // If both sections were empty, try the "hardest way"
+            // by analyzing email address
+            $email = $idpUser->getEmail();
+            if (! is_string($email) || empty($email)) {
+                return '';
+            }
+
+            return Str::of($email)
+                ->trim()
+                ->before('@')
+                ->$searchMethod('.') // If no point is available, the whole string should be returned
+                ->trim()
+                ->title()
+                ->toString();
+        }
+
+        return $nameSection->toString();
+>>>>>>> 6ed19256f (.)
     }
 
     private function resolveNameFieldByNameAttributeAnalysis(string $nameField, string $searchMethod): Stringable

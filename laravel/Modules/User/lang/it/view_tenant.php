@@ -8,6 +8,7 @@ return [
             'label' => 'edit',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'name' => 'View Tenant',
         'plural' => 'View Tenant',
@@ -41,4 +42,10 @@ return [
             'description' => '',
         ],
     ],
+=======
+    'navigation' => [],
+    'label' => '',
+    'plural_label' => '',
+    'fields' => [],
+>>>>>>> 6ed19256f (.)
 ];

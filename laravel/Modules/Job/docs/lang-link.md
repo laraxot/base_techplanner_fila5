@@ -6,9 +6,12 @@ Consulta la documentazione delle traduzioni:
 - [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../Lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
+<<<<<<< HEAD
 - [Introduzione alle Traduzioni](../../lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../lang/docs/module_lang.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Collegamento Bidirezionale
 
@@ -17,6 +20,7 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 > Aggiorna entrambi i riferimenti se aggiungi nuove chiavi di traduzione o modifichi la struttura.
 
 ## Collegamenti tra versioni di lang-link.md
+<<<<<<< HEAD
 * [lang-link.md](../../../chart/docs/lang-link.md)
 * [lang-link.md](../../../reporting/docs/lang-link.md)
 * [lang-link.md](../../../gdpr/docs/lang-link.md)
@@ -31,6 +35,8 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](../../../activity/docs/lang-link.md)
 * [lang-link.md](../../../patient/docs/lang-link.md)
 * [lang-link.md](../../../cms/docs/lang-link.md)
+=======
+>>>>>>> 6ed19256f (.)
 * [lang-link.md](../../../Chart/docs/lang-link.md)
 * [lang-link.md](../../../Reporting/docs/lang-link.md)
 * [lang-link.md](../../../Gdpr/docs/lang-link.md)
@@ -54,9 +60,12 @@ Consulta la documentazione delle traduzioni:
 - [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../Lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
+<<<<<<< HEAD
 - [Introduzione alle Traduzioni](../../lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../lang/docs/module_lang.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Collegamento Bidirezionale
 
@@ -68,6 +77,7 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 
 ### Collegamenti tra versioni di lang-link.md
 
+<<<<<<< HEAD
 - [lang-link.md](../../../chart/docs/lang-link.md)
 - [lang-link.md](../../../reporting/docs/lang-link.md)
 - [lang-link.md](../../../gdpr/docs/lang-link.md)
@@ -82,6 +92,8 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 - [lang-link.md](../../../activity/docs/lang-link.md)
 - [lang-link.md](../../../patient/docs/lang-link.md)
 - [lang-link.md](../../../cms/docs/lang-link.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [lang-link.md](../../../Chart/docs/lang-link.md)
 - [lang-link.md](../../../Reporting/docs/lang-link.md)
 - [lang-link.md](../../../Gdpr/docs/lang-link.md)
@@ -99,4 +111,8 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 
 ## Versione Incoming
 
+<<<<<<< HEAD
 La versione incoming coincide con la versione HEAD ed eredita gli stessi collegamenti e linee guida.
+=======
+La versione incoming coincide con la versione HEAD ed eredita gli stessi collegamenti e linee guida.
+>>>>>>> 6ed19256f (.)

@@ -184,6 +184,7 @@ class WorkHourDashboard extends Component
         }
 
         $entries = WorkHour::getTodayEntries($this->employee->id);
+<<<<<<< HEAD
         $mappedEntries = [];
         foreach ($entries as $entry) {
             $mappedEntries[] = [
@@ -198,6 +199,24 @@ class WorkHourDashboard extends Component
                 'status_color' => $entry->status->getColor(),
             ];
         }
+=======
+        /** @var array<int, array{id: int, date: string, time: string, type: WorkHourTypeEnum, type_label: string, type_color: string, notes: string|null, status: WorkHourStatusEnum, status_color: string}> $mappedEntries */
+        $mappedEntries = $entries->map(fn (WorkHour $entry): array => [
+            'id' => $entry->id,
+            'date' => $entry->timestamp->format('Y-m-d'),
+            'time' => $entry->timestamp->format('H:i'),
+            'type' => $entry->type,
+            // @phpstan-ignore-next-line
+            'type_label' => ($entry->type instanceof WorkHourTypeEnum)
+                ? $entry->type->getLabel()
+                : ((string) $entry->type),
+            // @phpstan-ignore-next-line
+            'type_color' => ($entry->type instanceof WorkHourTypeEnum) ? $entry->type->getColor() : 'gray',
+            'notes' => $entry->notes,
+            'status' => $entry->status,
+            'status_color' => ($entry->status instanceof WorkHourStatusEnum) ? $entry->status->getColor() : 'gray',
+        ])->toArray();
+>>>>>>> 6ed19256f (.)
         $this->recentEntries = $mappedEntries;
     }
 

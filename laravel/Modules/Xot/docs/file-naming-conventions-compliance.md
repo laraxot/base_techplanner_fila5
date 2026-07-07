@@ -1,8 +1,11 @@
 # File Naming Conventions Compliance - 2026-01-09
 
 **Data**: 2026-01-09  
+<<<<<<< HEAD
 # File Naming Conventions Compliance - [DATE]
 
+=======
+>>>>>>> 6ed19256f (.)
 **Status**: ✅ **COMPLETATO**
 
 ---
@@ -36,7 +39,10 @@
 ### Pattern di Rinomina
 ```
 ❌ PRIMA: nome-file-2026-01-09.md
+<<<<<<< HEAD
 ❌ PRIMA: nome-file-[DATE].md
+=======
+>>>>>>> 6ed19256f (.)
 ✅ DOPO: nome-file.md
 ```
 
@@ -83,4 +89,7 @@
 **Status**: ✅ **COMPLETATO**
 
 **Ultimo aggiornamento**: 2026-01-09
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+>>>>>>> 6ed19256f (.)

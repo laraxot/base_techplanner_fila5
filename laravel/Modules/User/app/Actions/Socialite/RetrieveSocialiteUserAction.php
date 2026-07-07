@@ -11,7 +11,10 @@ namespace Modules\User\Actions\Socialite;
 // use DutchCodingCompany\FilamentSocialite\FilamentSocialite;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Modules\User\Models\SocialiteUser;
+<<<<<<< HEAD
 use ReflectionClass;
+=======
+>>>>>>> 6ed19256f (.)
 use Spatie\QueueableAction\QueueableAction;
 
 class RetrieveSocialiteUserAction

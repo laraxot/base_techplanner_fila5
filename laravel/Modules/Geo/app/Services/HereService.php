@@ -46,6 +46,7 @@ class HereService
         if (! is_array($json['routes'])) {
             return null;
         }
+<<<<<<< HEAD
         if (! isset($json['routes'][0]) || ! is_array($json['routes'][0])) {
             return null;
         }
@@ -62,5 +63,15 @@ class HereService
         }
 
         return $summary;
+=======
+        if (! isset($json['routes'][0])) {
+            return null;
+        }
+
+        // @phpstan-ignore offsetAccess.nonOffsetAccessible, offsetAccess.nonOffsetAccessible, offsetAccess.nonOffsetAccessible
+        Assert::isArray($res = $json['routes'][0]['sections']['0']['summary']);
+
+        return $res;
+>>>>>>> 6ed19256f (.)
     }
 }

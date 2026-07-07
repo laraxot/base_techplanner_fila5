@@ -392,4 +392,8 @@ php artisan vendor:publish --tag=user-assets
 ---
 
 **Ultimo Aggiornamento**: 2025-11-11
+<<<<<<< HEAD
 **Versione Architettura**: 1.0
+=======
+**Versione Architettura**: 1.0
+>>>>>>> 6ed19256f (.)

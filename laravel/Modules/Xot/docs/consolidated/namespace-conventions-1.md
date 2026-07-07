@@ -182,7 +182,11 @@ namespace Modules\<nome progetto>\Console\Commands;
 Utilizzare grep per trovare tutti i file con namespace errato:
 
 ```bash
+<<<<<<< HEAD
 grep -r "namespace Modules\\\\.*\\\\App\\\\" Modules
+=======
+grep -r "namespace Modules\\\\.*\\\\App\\\\" /var/www/html/base_<nome progetto>/laravel/Modules
+>>>>>>> 6ed19256f (.)
 ```
 
 ### PHP Stan

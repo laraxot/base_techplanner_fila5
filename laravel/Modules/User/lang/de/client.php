@@ -17,6 +17,7 @@ return [
     'fields' => [
         'name' => [
             'label' => 'name',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -68,6 +69,32 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'create' => [
+            'label' => 'create',
+        ],
+        'edit' => [
+            'label' => 'edit',
+        ],
+        'delete' => [
+            'label' => 'delete',
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'plural' => [
@@ -75,8 +102,11 @@ return [
             'label' => 'client.plural.model',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

@@ -213,6 +213,7 @@ Tutti i modelli attivi hanno le factory corrispondenti.
 #### <nome progetto> Integration
 #### <nome progetto> Integration
 #### <nome progetto> Integration
+<<<<<<< HEAD
 #### <nome progetto> Integration
 #### <nome progetto> Integration
 #### <nome progetto> Integration
@@ -222,6 +223,17 @@ Tutti i modelli attivi hanno le factory corrispondenti.
 #### <nome progetto> Integration
 #### <nome progetto> Integration
 #### <nome progetto> Integration
+=======
+#### SaluteOra Integration
+#### <nome progetto> Integration
+#### <nome progetto> Integration
+#### SaluteOra Integration
+#### SaluteOra Integration
+#### SaluteOra Integration
+#### SaluteOra Integration
+#### <nome progetto> Integration
+#### SaluteOra Integration
+>>>>>>> 6ed19256f (.)
 - **Appointment Reminders**: Promemoria appuntamenti
 - **Report Notifications**: Notifiche nuovi referti
 - **Emergency Alerts**: Allerte mediche urgenti
@@ -273,6 +285,7 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 - [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
 - [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
 - [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
+<<<<<<< HEAD
 - [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
 - [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
 - [<nome progetto> Module](../../../../docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
@@ -282,6 +295,17 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 - [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
 - [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
 - [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
+=======
+- [SaluteOra Module](../../SaluteOra/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
+- [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
+- [<nome progetto> Module](../../../docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
+- [SaluteOra Module](../../SaluteOra/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
+- [SaluteOra Module](../../SaluteOra/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
+- [SaluteOra Module](../../SaluteOra/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
+- [SaluteOra Module](../../SaluteOra/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
+- [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
+- [SaluteOra Module](../../SaluteOra/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
+>>>>>>> 6ed19256f (.)
 - [User Module](../../User/docs/modelli_factory_seeder_analisi.md) - Notifiche utente
 - [Media Module](../../Media/docs/modelli_factory_seeder_analisi.md) - Allegati notifiche
 - [Lang Module](../../Lang/docs/modelli_factory_seeder_analisi.md) - Localizzazione
@@ -294,4 +318,8 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 
 *Ultimo aggiornamento: Gennaio 2025*
 *Analisi completa di 10 modelli attivi, 4 file backup da rimuovere*
+<<<<<<< HEAD
 *Sistema notifiche multi-canale completo*
+=======
+*Sistema notifiche multi-canale completo*
+>>>>>>> 6ed19256f (.)

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Themes\Sixteen\Http\Controllers;
 
+<<<<<<< HEAD
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -19,6 +20,8 @@ use Themes\Sixteen\Services\SpidAuthService;
 /**
  * Controller per l'autenticazione SPID
  *
+=======
+>>>>>>> 6ed19256f (.)
 use Illuminate\Http\{Request, RedirectResponse, Response};
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\{Auth, Log, Session};
@@ -35,7 +38,12 @@ class SpidAuthController extends Controller
 {
     public function __construct(
         protected SpidAuthService $spidService
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> 6ed19256f (.)
 
     /**
      * Reindirizza al provider SPID per l'autenticazione
@@ -48,12 +56,20 @@ class SpidAuthController extends Controller
 
             // Valida il provider
             $providers = $this->spidService->getProviders();
+<<<<<<< HEAD
             if (! isset($providers[$provider])) {
+=======
+            if (!isset($providers[$provider])) {
+>>>>>>> 6ed19256f (.)
                 throw new \InvalidArgumentException("Provider SPID '{$provider}' non supportato");
             }
 
             // Valida il livello SPID
+<<<<<<< HEAD
             if (! in_array($level, [1, 2, 3])) {
+=======
+            if (!in_array($level, [1, 2, 3])) {
+>>>>>>> 6ed19256f (.)
                 throw new \InvalidArgumentException("Livello SPID non valido: {$level}");
             }
 
@@ -65,7 +81,11 @@ class SpidAuthController extends Controller
             ]);
 
             $loginUrl = $this->spidService->getLoginUrl($provider, $level, $returnUrl);
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> 6ed19256f (.)
             return redirect()->to($loginUrl);
 
         } catch (\Exception $e) {
@@ -88,6 +108,7 @@ class SpidAuthController extends Controller
         try {
             // Processa la response SAML
             $userAttributes = $this->spidService->processCallback($request);
+<<<<<<< HEAD
 
             // Trova o crea l'utente
             $user = $this->findOrCreateUser($userAttributes);
@@ -102,6 +123,8 @@ class SpidAuthController extends Controller
             // Trigger evento
             event(new SpidAuthenticated($user, $userAttributes));
 
+=======
+>>>>>>> 6ed19256f (.)
             
             // Trova o crea l'utente
             $user = $this->findOrCreateUser($userAttributes);
@@ -124,7 +147,11 @@ class SpidAuthController extends Controller
 
             // Redirect all'URL di ritorno
             $returnUrl = Session::pull('spid.return_url', route('dashboard'));
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> 6ed19256f (.)
             return redirect()->to($returnUrl)
                 ->with('success', 'Autenticazione SPID completata con successo.');
 
@@ -139,7 +166,11 @@ class SpidAuthController extends Controller
             $this->spidService->logout();
 
             return redirect()->route('login')
+<<<<<<< HEAD
                 ->with('error', 'Errore durante l\'autenticazione SPID: '.$e->getMessage());
+=======
+                ->with('error', 'Errore durante l\'autenticazione SPID: ' . $e->getMessage());
+>>>>>>> 6ed19256f (.)
         }
     }
 
@@ -231,7 +262,11 @@ class SpidAuthController extends Controller
             if (Auth::check()) {
                 $user = Auth::user();
                 $userData = Session::get('spid.user_data', []);
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> 6ed19256f (.)
                 Auth::logout();
                 $this->spidService->logout();
                 Session::invalidate();
@@ -253,7 +288,11 @@ class SpidAuthController extends Controller
 
             // Response di errore
             $errorResponse = $this->generateSloErrorResponse();
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> 6ed19256f (.)
             return response($errorResponse, 500)
                 ->header('Content-Type', 'text/xml');
         }
@@ -266,7 +305,11 @@ class SpidAuthController extends Controller
     {
         try {
             $metadata = $this->spidService->getMetadata();
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> 6ed19256f (.)
             return response($metadata)
                 ->header('Content-Type', 'application/samlmetadata+xml')
                 ->header('Content-Disposition', 'inline; filename="metadata.xml"');
@@ -287,7 +330,11 @@ class SpidAuthController extends Controller
     protected function findOrCreateUser(array $attributes): User
     {
         $fiscalCode = $attributes['fiscal_code'];
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 6ed19256f (.)
         if (empty($fiscalCode)) {
             throw new \Exception('Codice fiscale mancante nei dati SPID');
         }
@@ -298,7 +345,10 @@ class SpidAuthController extends Controller
         if ($user) {
             // Aggiorna i dati se necessario
             $this->updateUserFromSpid($user, $attributes);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
             return $user;
         }
 
@@ -328,7 +378,11 @@ class SpidAuthController extends Controller
 
         // Genera email temporanea se mancante
         if (empty($userData['email'])) {
+<<<<<<< HEAD
             $userData['email'] = 'spid.'.$attributes['fiscal_code'].'@noemail.local';
+=======
+            $userData['email'] = 'spid.' . $attributes['fiscal_code'] . '@noemail.local';
+>>>>>>> 6ed19256f (.)
         }
 
         return User::create($userData);
@@ -345,7 +399,11 @@ class SpidAuthController extends Controller
         if ($user->name !== $attributes['name']) {
             $updateData['name'] = $attributes['name'];
         }
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 6ed19256f (.)
         if ($user->surname !== $attributes['surname']) {
             $updateData['surname'] = $attributes['surname'];
         }
@@ -367,7 +425,11 @@ class SpidAuthController extends Controller
         // Aggiorna ultimo accesso
         $updateData['last_login_at'] = now();
 
+<<<<<<< HEAD
         if (! empty($updateData)) {
+=======
+        if (!empty($updateData)) {
+>>>>>>> 6ed19256f (.)
             $user->update($updateData);
         }
     }
@@ -377,6 +439,7 @@ class SpidAuthController extends Controller
      */
     protected function generateSloResponse(string $relayState): string
     {
+<<<<<<< HEAD
         $responseId = 'res_'.bin2hex(random_bytes(16));
         $issueInstant = gmdate('Y-m-d\TH:i:s\Z');
 
@@ -390,6 +453,8 @@ class SpidAuthController extends Controller
                '  <samlp:Status>'.PHP_EOL.
                '    <samlp:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success"/>'.PHP_EOL.
                '  </samlp:Status>'.PHP_EOL.
+=======
+>>>>>>> 6ed19256f (.)
         $responseId = 'res_' . bin2hex(random_bytes(16));
         $issueInstant = gmdate('Y-m-d\TH:i:s\Z');
 
@@ -411,6 +476,7 @@ class SpidAuthController extends Controller
      */
     protected function generateSloErrorResponse(): string
     {
+<<<<<<< HEAD
         $responseId = 'res_'.bin2hex(random_bytes(16));
         $issueInstant = gmdate('Y-m-d\TH:i:s\Z');
 
@@ -427,6 +493,8 @@ class SpidAuthController extends Controller
                '</samlp:LogoutResponse>';
     }
 }
+=======
+>>>>>>> 6ed19256f (.)
         $responseId = 'res_' . bin2hex(random_bytes(16));
         $issueInstant = gmdate('Y-m-d\TH:i:s\Z');
 
@@ -442,7 +510,11 @@ class SpidAuthController extends Controller
                '  </samlp:Status>' . PHP_EOL .
                '</samlp:LogoutResponse>';
     }
+<<<<<<< HEAD
 }
 
 
 
+=======
+}
+>>>>>>> 6ed19256f (.)

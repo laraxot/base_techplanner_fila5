@@ -75,4 +75,8 @@ protected function setUp(): void
 ---
 
 **Status**: Completed
+<<<<<<< HEAD
 **Risultato**: Test Activity ora configurano correttamente le connessioni database
+=======
+**Risultato**: Test Activity ora configurano correttamente le connessioni database
+>>>>>>> 6ed19256f (.)

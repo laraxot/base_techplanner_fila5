@@ -10,6 +10,7 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\ModuleFactory;
 use Nwidart\Modules\Facades\Module as ModuleFacade;
 use Nwidart\Modules\Module as NModule;
+<<<<<<< HEAD
 
 use function Safe\json_encode;
 
@@ -23,6 +24,19 @@ use Sushi\Sushi;
  * @property int|null                     $priority
  * @property string|null                  $path
  * @property string|null                  $icon
+=======
+use function Safe\json_encode;
+use Sushi\Sushi;
+
+/**
+ * @property int $id
+ * @property string|null $name
+ * @property string|null $description
+ * @property bool|null $status
+ * @property int|null $priority
+ * @property string|null $path
+ * @property string|null $icon
+>>>>>>> 6ed19256f (.)
  * @property array<array-key, mixed>|null $colors
  *
  * @method static Builder<static>|Module newModelQuery()
@@ -37,9 +51,15 @@ use Sushi\Sushi;
  * @method static Builder<static>|Module wherePriority($value)
  * @method static Builder<static>|Module whereStatus($value)
  *
+<<<<<<< HEAD
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
+=======
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $deleter
+ * @property-read ProfileContract|null $updater
+>>>>>>> 6ed19256f (.)
  *
  * @method static ModuleFactory factory($count = null, $state = [])
  *
@@ -61,11 +81,14 @@ final class Module extends BaseModel
     ];
 
     /**
+<<<<<<< HEAD
      * @var string
      */
     protected $connection = 'xot';
 
     /**
+=======
+>>>>>>> 6ed19256f (.)
      * @return array<int, array<string, mixed>>
      */
     public function getRows(): array
@@ -90,10 +113,15 @@ final class Module extends BaseModel
             ];
         });
 
+<<<<<<< HEAD
         /** @var array<int, array<string, mixed>> $rows */
         $rows = array_values($modules);
 
         return $rows;
+=======
+        /** @var array<int, array<string, mixed>> */
+        return array_values($modules);
+>>>>>>> 6ed19256f (.)
     }
 
     protected function casts(): array

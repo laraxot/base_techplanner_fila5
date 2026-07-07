@@ -126,7 +126,11 @@ private function getStudiosForLocation(Get $get): Collection
         return collect();
     }
 
+<<<<<<< HEAD
     return \Modules\<nome progetto>\Models\Studio::whereHas('address', function($q) use ($cap, $province, $region) {
+=======
+    return \Modules\SaluteOra\Models\Studio::whereHas('address', function($q) use ($cap, $province, $region) {
+>>>>>>> 6ed19256f (.)
         $q->where('postal_code', $cap)
           ->where('administrative_area_level_3', $province)
           ->where('administrative_area_level_2', $region);
@@ -178,8 +182,13 @@ return [
 - [Components Overview](./components.md)
 - [Form Components Guide](./form-components.md)
 
+<<<<<<< HEAD
 ### Modulo <nome progetto>
 - [Widget Analysis](../<nome progetto>/docs/widgets/find-doctor-widget-studio-step-analysis.md)
+=======
+### Modulo SaluteOra
+- [Widget Analysis](../SaluteOra/docs/widgets/find-doctor-widget-studio-step-analysis.md)
+>>>>>>> 6ed19256f (.)
 
 ---
 

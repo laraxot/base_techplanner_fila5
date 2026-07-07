@@ -6,6 +6,7 @@ return [
     'fields' => [
         'provider' => [
             'label' => 'provider',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -46,4 +47,20 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        ],
+        'provider_id' => [
+            'label' => 'provider_id',
+        ],
+        'name' => [
+            'label' => 'name',
+        ],
+        'email' => [
+            'label' => 'email',
+        ],
+        'avatar' => [
+            'label' => 'avatar',
+        ],
+    ],
+>>>>>>> 6ed19256f (.)
 ];

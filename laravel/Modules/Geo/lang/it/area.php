@@ -8,72 +8,99 @@ return [
             'label' => 'Nome area',
             'placeholder' => 'Inserisci il nome dell\'area',
             'help' => 'Nome identificativo dell\'area',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'description' => [
             'label' => 'Descrizione',
             'placeholder' => 'Inserisci una descrizione',
             'help' => 'Descrizione dettagliata dell\'area',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'type' => [
             'label' => 'Tipo',
             'placeholder' => 'Seleziona il tipo di area',
             'help' => 'Tipo di area geografica',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'geometry' => [
             'label' => 'Geometria',
             'placeholder' => 'Inserisci la geometria',
             'help' => 'Geometria dell\'area in formato GeoJSON',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'center_latitude' => [
             'label' => 'Latitudine centro',
             'placeholder' => 'Inserisci la latitudine del centro',
             'help' => 'Latitudine del centro dell\'area',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'center_longitude' => [
             'label' => 'Longitudine centro',
             'placeholder' => 'Inserisci la longitudine del centro',
             'help' => 'Longitudine del centro dell\'area',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'area_value' => [
             'label' => 'Superficie',
             'placeholder' => 'Inserisci la superficie',
             'help' => 'Superficie dell\'area',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'perimeter' => [
             'label' => 'Perimetro',
             'placeholder' => 'Inserisci il perimetro',
             'help' => 'Perimetro dell\'area',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'is_active' => [
             'label' => 'Attiva',
             'help' => 'Indica se l\'area è attiva nel sistema',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'validation' => [
@@ -121,6 +148,7 @@ return [
         'ft' => 'Piedi',
         'yd' => 'Iarde',
     ],
+<<<<<<< HEAD
     'label' => 'Area',
     'plural_label' => 'Area (Plurale)',
     'navigation' => [
@@ -145,4 +173,6 @@ return [
             'label' => 'Elimina Area',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

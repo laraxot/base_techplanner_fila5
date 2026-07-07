@@ -236,11 +236,18 @@ return [
 ## Collegamenti tra versioni di services.md
 * [services.md](../../../Xot/docs/services.md)
 * [services.md](../../../Tenant/docs/it/config/services.md)
+<<<<<<< HEAD
 * [services.md](../../../xot/docs/services.md)
 * [services.md](../../../tenant/docs/it/config/services.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Versione Incoming
 
    - Testare i casi limite
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> 6ed19256f (.)

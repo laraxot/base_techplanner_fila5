@@ -54,7 +54,18 @@ MCP agisce come un **"ponte universale"** tra il tuo IDE/AI assistant e:
       "args": [
         "-y",
         "@modelcontextprotocol/server-filesystem",
+<<<<<<< HEAD
         "server-brave-search"
+=======
+        "/var/www/_bases/base_quaeris_fila4_mono"
+      ]
+    },
+    "brave-search": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-brave-search"
+>>>>>>> 6ed19256f (.)
       ],
       "env": {
         "BRAVE_API_KEY": "<YOUR_BRAVE_API_KEY>"
@@ -116,9 +127,15 @@ MCP agisce come un **"ponte universale"** tra il tuo IDE/AI assistant e:
       "args": [
         "-y",
         "@modelcontextprotocol/server-filesystem",
+<<<<<<< HEAD
         "laravel",
         "Modules",
         "Themes"
+=======
+        "/var/www/_bases/base_quaeris_fila4_mono/laravel",
+        "/var/www/_bases/base_quaeris_fila4_mono/Modules",
+        "/var/www/_bases/base_quaeris_fila4_mono/Themes"
+>>>>>>> 6ed19256f (.)
       ]
     },
     "github": {
@@ -236,7 +253,16 @@ Cline ha un **MCP Marketplace** integrato per installare server con 1 click.
       "args": [
         "-y",
         "@modelcontextprotocol/server-filesystem",
+<<<<<<< HEAD
         "server-github"],
+=======
+        "/var/www/_bases/base_quaeris_fila4_mono"
+      ]
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+>>>>>>> 6ed19256f (.)
       "env": {
         "GITHUB_PERSONAL_ACCESS_TOKEN": "<YOUR_TOKEN>"
       }
@@ -518,7 +544,10 @@ iflow
 ## Changelog
 
 - **2025-01-06**: Documentazione iniziale creata
+<<<<<<< HEAD
 - **[DATE]**: Documentazione iniziale creata
+=======
+>>>>>>> 6ed19256f (.)
   - Cursor, Windsurf, Cline, iFlow
   - Server MCP essenziali configurati
   - Best practices e troubleshooting
@@ -527,4 +556,8 @@ iflow
 
 ## Licenza
 
+<<<<<<< HEAD
 Questa documentazione è parte del progetto **base_healthcare_app_fila5_mono** ed è soggetta alla stessa licenza del progetto principale.
+=======
+Questa documentazione è parte del progetto **base_quaeris_fila4_mono** ed è soggetta alla stessa licenza del progetto principale.
+>>>>>>> 6ed19256f (.)

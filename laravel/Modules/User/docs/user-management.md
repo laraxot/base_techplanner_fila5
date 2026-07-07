@@ -1,3 +1,46 @@
+<<<<<<< HEAD
+=======
+# Gestione degli Utenti in SaluteOra
+
+## Panoramica
+
+Questo documento descrive il sistema di gestione degli utenti in SaluteOra, con particolare attenzione ai diversi tipi di utenti (pazienti, dottori, amministratori) e alla loro implementazione nel database e nel codice.
+
+## Tipi di Utenti
+
+SaluteOra supporta diversi tipi di utenti, ciascuno con caratteristiche e funzionalità specifiche:
+
+1. **Pazienti**: Utenti che ricevono servizi medici
+2. **Dottori**: Professionisti medici che forniscono servizi
+3. **Amministratori**: Utenti con privilegi di gestione del sistema
+
+## Implementazione Tecnica
+
+### Single Table Inheritance (STI)
+
+SaluteOra utilizza il pattern Single Table Inheritance tramite il pacchetto `parental` per gestire diversi tipi di utenti in un'unica tabella `users`. Questo approccio offre diversi vantaggi:
+
+- **Efficienza del Database**: Tutti gli utenti sono memorizzati in un'unica tabella
+- **Flessibilità**: Facile aggiunta di nuovi tipi di utenti
+- **Polimorfismo**: Trattare diversi tipi di utenti in modo uniforme quando necessario
+
+Per una documentazione dettagliata sul pattern di ereditarietà, consulta il [Pattern di Ereditarietà dei Modelli](/docs/model-inheritance-patterns.md).
+
+### Struttura dei Modelli
+
+```
+BaseUser (Modules\User\Models\BaseUser)
+   |
+   +--> User (Modules\Patient\Models\User)
+         |
+         +--> Doctor (Modules\Patient\Models\Doctor)
+         |
+         +--> Patient (Modules\Patient\Models\Patient)
+```
+
+### Campi del Database
+
+>>>>>>> 6ed19256f (.)
 La tabella `users` contiene campi comuni a tutti i tipi di utenti, oltre a campi specifici per ciascun tipo. Per una documentazione dettagliata sulla mappatura dei campi, consulta la [Mappatura dei Campi Database nel Modulo Patient](/laravel/Modules/Patient/docs/DATABASE_FIELD_MAPPING.md).
 
 ## Registrazione degli Utenti
@@ -69,6 +112,7 @@ $request->validate([
 - [Processo di Registrazione dei Dottori](/laravel/Modules/Patient/docs/DOCTOR_REGISTRATION_PROCESS.md)
 - [Gestione dei File Upload in Filament](/docs/filament-file-uploads.md)
 - [Migrazioni del Database](/docs/database-migrations.md)
+<<<<<<< HEAD
 ---
 module: theme
 topic: user-management
@@ -76,3 +120,5 @@ canonical: ../../../Themes/docs/shared-components/user-management.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/user-management.md
+=======
+>>>>>>> 6ed19256f (.)

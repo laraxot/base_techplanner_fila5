@@ -25,10 +25,13 @@ Questa scelta garantisce:
 - Possibile refactor per la registrazione di risorse custom
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Struttura moduli Xot](./module_namespace_rules.md)
 - [Best Practices Provider](./best-practices.md)
 - [docs/MODULE_NAMESPACE_RULES.md](./module_namespace_rules.md)
 - [docs/BEST-PRACTICES.md](./best-practices.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Struttura moduli Xot](./MODULE_NAMESPACE_RULES.md)
 - [Best Practices Provider](./BEST-PRACTICES.md)
 - [docs/MODULE_NAMESPACE_RULES.md](./MODULE_NAMESPACE_RULES.md)
@@ -39,8 +42,11 @@ Questa scelta garantisce:
 - [docs/links.md](../../../../project_docs/links.md)
 - [docs/MODULE_NAMESPACE_RULES.md](./MODULE_NAMESPACE_RULES.md)
 - [docs/BEST-PRACTICES.md](./BEST-PRACTICES.md)
+<<<<<<< HEAD
 - [docs/MODULE_NAMESPACE_RULES.md](./module_namespace_rules.md)
 - [docs/BEST-PRACTICES.md](./best-practices.md)
+=======
+>>>>>>> 6ed19256f (.)
 # Risoluzione Conflitto: XotBaseServiceProvider
 
 ## Contesto
@@ -76,6 +82,7 @@ Questa scelta garantisce:
 - [docs/links.md](../../../../docs/links.md)
 - [docs/MODULE_NAMESPACE_RULES.md](./MODULE_NAMESPACE_RULES.md)
 - [docs/BEST-PRACTICES.md](./BEST-PRACTICES.md)
+<<<<<<< HEAD
 - [Struttura moduli Xot](./module_namespace_rules.md)
 - [Best Practices Provider](./best-practices.md)
 - [docs/links.md globale](../../../../../docs/links.md)
@@ -84,3 +91,5 @@ Questa scelta garantisce:
 - [docs/links.md](../../../../../docs/links.md)
 - [docs/MODULE_NAMESPACE_RULES.md](./module_namespace_rules.md)
 - [docs/BEST-PRACTICES.md](./best-practices.md)
+=======
+>>>>>>> 6ed19256f (.)

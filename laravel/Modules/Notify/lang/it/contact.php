@@ -21,32 +21,44 @@ return [
             'tooltip' => 'Nome del contatto',
             'placeholder' => 'es: Mario Rossi',
             'help' => 'Inserisci il nome completo del contatto',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'email' => [
             'label' => 'Email',
             'tooltip' => 'Indirizzo email del contatto',
             'placeholder' => 'es: mario.rossi@example.com',
             'help' => 'Inserisci un indirizzo email valido',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'phone' => [
             'label' => 'Telefono',
             'tooltip' => 'Numero di telefono del contatto',
             'placeholder' => 'es: +39 123 456 7890',
             'help' => 'Inserisci il numero con prefisso internazionale',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'telegram_chat_id' => [
             'label' => 'Chat ID Telegram',
             'tooltip' => 'ID della chat Telegram del contatto',
             'placeholder' => 'es: 123456789',
             'help' => 'ID numerico fornito dal bot Telegram',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'group' => [
             'label' => 'Gruppo',
@@ -67,8 +79,11 @@ return [
                     'tooltip' => 'Team di supporto',
                 ],
             ],
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'channels' => [
             'label' => 'Canali',
@@ -92,8 +107,11 @@ return [
                     'tooltip' => 'Notifiche push sul browser',
                 ],
             ],
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'preferences' => [
             'label' => 'Preferenze',
@@ -124,21 +142,30 @@ return [
                     'help' => 'Le notifiche verranno inviate al termine del periodo',
                 ],
             ],
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'is_active' => [
             'label' => 'Attivo',
             'tooltip' => 'Stato di attivazione del contatto',
             'help' => 'Disattiva temporaneamente le notifiche',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'last_notified_at' => [
             'label' => 'Ultima notifica',
             'tooltip' => 'Data e ora dell\'ultima notifica inviata',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -205,6 +232,9 @@ return [
             'message' => 'Impossibile verificare il contatto: :error',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Contact',
     'plural_label' => 'Contact (Plurale)',
+=======
+>>>>>>> 6ed19256f (.)
 ];

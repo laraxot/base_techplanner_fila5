@@ -71,4 +71,8 @@ $actions['edit'] = EditAction::make()
 
 - Verificare che rimozione `$resource` non impatti funzionalità
 - `$me` è necessaria per accesso a `$this` in closure (pattern standard)
+<<<<<<< HEAD
 - Complexity warning accettabili per metodi con controlli runtime robusti
+=======
+- Complexity warning accettabili per metodi con controlli runtime robusti
+>>>>>>> 6ed19256f (.)

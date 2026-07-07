@@ -24,6 +24,10 @@ abstract class BaseUserResource extends XotBaseResource
 {
     // protected static ?string $model = \Modules\Xot\Datas\XotData::make()->getUserClass();
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6ed19256f (.)
     // Static property Modules\User\Filament\Resources\UserResource::$enablePasswordUpdates is never read, only written.
     // private static bool|\Closure $enablePasswordUpdates = true;
 
@@ -59,7 +63,11 @@ abstract class BaseUserResource extends XotBaseResource
             ])->columnSpan(8),
             'section02' => Section::make([
                 'created_at' => Placeholder::make('created_at')->content(static function ($record) {
+<<<<<<< HEAD
                     if (null === $record || ! $record instanceof Model) {
+=======
+                    if ($record === null || ! $record instanceof Model) {
+>>>>>>> 6ed19256f (.)
                         return new HtmlString('&mdash;');
                     }
 

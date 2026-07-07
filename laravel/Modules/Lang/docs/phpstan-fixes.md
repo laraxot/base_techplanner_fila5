@@ -89,5 +89,9 @@ private function castWithAction(mixed $value): string
 
 ---
 *Ultimo aggiornamento: Gennaio 2025*
+<<<<<<< HEAD
 *Ultimo aggiornamento: Gennaio 2025*
 *Stato: ✅ Completato - 0 errori PHPStan*
+=======
+*Stato: ✅ Completato - 0 errori PHPStan*
+>>>>>>> 6ed19256f (.)

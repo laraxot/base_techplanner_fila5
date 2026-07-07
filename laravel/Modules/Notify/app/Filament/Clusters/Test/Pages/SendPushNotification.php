@@ -10,6 +10,11 @@ use Filament\Facades\Filament;
 use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
+<<<<<<< HEAD
+=======
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Forms\Contracts\HasForms;
+>>>>>>> 6ed19256f (.)
 use Filament\Notifications\Notification;
 use Filament\Schemas\Schema;
 use Illuminate\Contracts\Auth\Authenticatable;
@@ -27,16 +32,29 @@ use Webmozart\Assert\Assert;
 use function Safe\json_encode;
 
 /**
+<<<<<<< HEAD
  * @property Schema $notificationForm
  */
 class SendPushNotification extends XotBasePage
 {
+=======
+ * @property \Filament\Schemas\Schema $notificationForm
+ */
+class SendPushNotification extends XotBasePage implements HasForms
+{
+    use InteractsWithForms;
+
+>>>>>>> 6ed19256f (.)
     // use NavigationLabelTrait;
 
     public ?array $notificationData = [];
 
     // protected static ?string $navigationIcon = 'heroicon-o-envelope';
+<<<<<<< HEAD
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-paper-airplane';
+=======
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-paper-airplane';
+>>>>>>> 6ed19256f (.)
 
     protected string $view = 'notify::filament.pages.send-push-notification';
 
@@ -179,8 +197,12 @@ class SendPushNotification extends XotBasePage
         // Verifichiamo che deviceToken sia una stringa non vuota (per soddisfare il tipo non-empty-string)
         Assert::stringNotEmpty($deviceToken, 'Il token del dispositivo non può essere vuoto');
 
+<<<<<<< HEAD
         $message = CloudMessage::new()
             ->withToken($deviceToken)
+=======
+        $message = CloudMessage::withTarget('token', $deviceToken)
+>>>>>>> 6ed19256f (.)
             ->withHighestPossiblePriority()
             ->withData($messageData);
 

@@ -194,8 +194,11 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 - [<main module> Module](../../<main module>/docs/modelli_factory_seeder_analisi.md)
 - [User Module](../../User/docs/modelli_factory_seeder_analisi.md)
 - [Cms Module](../../Cms/docs/modelli_factory_seeder_analisi.md)
+<<<<<<< HEAD
 - [User Module](../../user/docs/modelli_factory_seeder_analisi.md)
 - [Cms Module](../../cms/docs/modelli_factory_seeder_analisi.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Risorse Esterne
 - [ISTAT Comuni](https://www.istat.it/it/archivio/6789)
@@ -204,4 +207,8 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 
 *Ultimo aggiornamento: Gennaio 2025*
 *Analisi completa di 12 modelli attivi, 1 modello obsoleto identificato*
+<<<<<<< HEAD
 *Sistema geografico completo per Italia con supporto internazionale*
+=======
+*Sistema geografico completo per Italia con supporto internazionale*
+>>>>>>> 6ed19256f (.)

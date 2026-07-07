@@ -7,4 +7,8 @@
 
 ---
 
+<<<<<<< HEAD
 ## 🔴 Situazione Critica
+=======
+## 🔴 Situazione Critica
+>>>>>>> 6ed19256f (.)

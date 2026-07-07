@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\View;
 use Modules\UI\Models\Asset;

@@ -40,8 +40,16 @@ use Spatie\Translatable\HasTranslations;
  * @property Carbon $created_at
  * @property Carbon $updated_at
  * @property Carbon|null $deleted_at
+<<<<<<< HEAD
  * @property-read string $channels_label
  * @property NotificationTypeEnum $type
+=======
+ *
+ * @property-read string $channels_label
+ *
+ * @property NotificationTypeEnum $type
+ *
+>>>>>>> 6ed19256f (.)
  * @property-read ProfileContract|null $creator
  * @property-read int|null $logs_count
  * @property-read MediaCollection<int, Media> $media
@@ -65,6 +73,7 @@ use Spatie\Translatable\HasTranslations;
  * @mixin IdeHelperNotificationTemplate
  *
  * @property-read ProfileContract|null $deleter
+<<<<<<< HEAD
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_by
@@ -93,6 +102,8 @@ use Spatie\Translatable\HasTranslations;
  * @method static Builder<static>|NotificationTemplate whereUpdatedBy($value)
  * @method static Builder<static>|NotificationTemplate whereVariables($value)
  * @method static Builder<static>|NotificationTemplate whereVersion($value)
+=======
+>>>>>>> 6ed19256f (.)
  *
  * @mixin \Eloquent
  */
@@ -173,6 +184,10 @@ class NotificationTemplate extends BaseModel implements HasMedia
      * Compile the template with the given data.
      *
      * @param  array<string, mixed>  $data  The data to compile the template with
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> 6ed19256f (.)
      * @return array{subject: string, body_html: string|null, body_text: string|null}
      */
     public function compile(array $data = []): array
@@ -213,6 +228,10 @@ class NotificationTemplate extends BaseModel implements HasMedia
      * Preview the template with the given data.
      *
      * @param  array<string, mixed>  $data  Additional data to merge with preview data
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> 6ed19256f (.)
      * @return array{subject: string, body_html: string|null, body_text: string|null}
      */
     public function preview(array $data = []): array
@@ -227,24 +246,51 @@ class NotificationTemplate extends BaseModel implements HasMedia
 
     /**
      * Scope a query to only include active templates.
+<<<<<<< HEAD
      */
     public function scopeActive(Builder $query): Builder
+=======
+     *
+     * @param  Builder  $query
+     *
+     * @return Builder
+     */
+    public function scopeActive($query)
+>>>>>>> 6ed19256f (.)
     {
         return $query->where('is_active', true);
     }
 
     /**
      * Scope a query to only include templates for a specific channel.
+<<<<<<< HEAD
      */
     public function scopeForChannel(Builder $query, string $channel): Builder
+=======
+     *
+     * @param  Builder  $query
+     *
+     * @return Builder
+     */
+    public function scopeForChannel($query, string $channel)
+>>>>>>> 6ed19256f (.)
     {
         return $query->whereJsonContains('channels', $channel);
     }
 
     /**
      * Scope a query to only include templates for a specific category.
+<<<<<<< HEAD
      */
     public function scopeForCategory(Builder $query, string $category): Builder
+=======
+     *
+     * @param  Builder  $query
+     *
+     * @return Builder
+     */
+    public function scopeForCategory($query, string $category)
+>>>>>>> 6ed19256f (.)
     {
         return $query->where('category', $category);
     }

@@ -202,10 +202,13 @@ public function render(): View
 
 ## 🔗 Collegamenti
 
+<<<<<<< HEAD
 - [Priority Decision Rules](../../xot/docs/priority-decision-rules.md)
 - [Super Mucca Workflow](../../xot/docs/super-mucca-workflow.md)
 - [Git Conflict Resolution](./git-conflicts-resolution-2025-12-16.md)
 - [TenantService Actions](../../tenant/docs/configuration.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Priority Decision Rules](../../Xot/docs/priority-decision-rules.md)
 - [Super Mucca Workflow](../../Xot/docs/super-mucca-workflow.md)
 - [Git Conflict Resolution](./git-conflicts-resolution-2025-12-16.md)
@@ -233,4 +236,8 @@ public function render(): View
 
 ---
 
+<<<<<<< HEAD
 *"Un bug risolto è come un nodo sciolto - il codice può finalmente fluire."* - Super Mucca Zen
+=======
+*"Un bug risolto è come un nodo sciolto - il codice può finalmente fluire."* - Super Mucca Zen
+>>>>>>> 6ed19256f (.)

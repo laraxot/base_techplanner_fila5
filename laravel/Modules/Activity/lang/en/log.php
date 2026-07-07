@@ -25,6 +25,7 @@ return [
             'notice' => 'Notice',
             'info' => 'Info',
             'debug' => 'Debug',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -35,14 +36,21 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+=======
+        ],
+        'message' => 'Message',
+>>>>>>> 6ed19256f (.)
         'context' => [
             'label' => 'Context',
             'exception' => 'Exception',
             'stack_trace' => 'Stack Trace',
             'additional' => 'Additional Info',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'channel' => [
             'label' => 'Channel',
@@ -51,6 +59,7 @@ return [
             'security' => 'Security',
             'database' => 'Database',
             'queue' => 'Queues',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -67,6 +76,11 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+=======
+        ],
+        'datetime' => 'Date and Time',
+        'environment' => 'Environment',
+>>>>>>> 6ed19256f (.)
     ],
     'filters' => [
         'level' => 'Level',
@@ -99,6 +113,9 @@ return [
             'debug' => 'Debug',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

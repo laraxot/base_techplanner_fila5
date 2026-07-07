@@ -20,7 +20,12 @@ class BuildingSixteenMenu
     public function __construct(
         public MenuBuilder $menuBuilder,
         public string $location
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> 6ed19256f (.)
 
     /**
      * Aggiunge elementi al menu corrente in base alla location
@@ -53,4 +58,7 @@ class BuildingSixteenMenu
         return $this->location;
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)

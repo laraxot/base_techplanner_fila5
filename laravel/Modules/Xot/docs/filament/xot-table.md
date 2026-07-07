@@ -137,6 +137,7 @@ return [
 ## Best Practices per l'Utilizzo
 
 1. **Non Sovrascrivere il Metodo table()**:
+<<<<<<< HEAD
    Il metodo `table()` nel trait `HasXotTable` è `final` e contiene logica importante. Utilizzare invece `getTableColumns()`, `getTableActions()`, ecc.
    
    Per personalizzazioni (defaultSort, paginated array, poll), usare i metodi dedicati:
@@ -146,6 +147,9 @@ return [
 
 2. **Visibilità Metodi getTable*()**:
    Tutti i metodi `getTableHeading()`, `getTableHeaderActions()`, `getTableActions()`, `getTableBulkActions()`, `getTableFilters()`, `getTableSearch()` **DEVONO** essere `public`, non `protected`.
+=======
+   Il metodo `table()` nel trait `HasXotTable` contiene logica importante. Utilizzare invece `getTableColumns()`, `getTableActions()`, ecc.
+>>>>>>> 6ed19256f (.)
 
 2. **Utilizzare Traduzioni per Tutte le Label**:
    ```php
@@ -240,12 +244,19 @@ class DatiRelationManager extends XotBaseRelationManager
 
 ## Collegamenti alla Documentazione Correlata
 
+<<<<<<< HEAD
 - [XotBaseRelationManager](/laravel/modules/xot/docs/filament/relation_managers.md)
 - [Regole di Traduzione](/laravel/modules/xot/docs/translation_rules.md)
 - [Filament Resources](/laravel/modules/xot/docs/filament/resources.md)
 
+=======
+>>>>>>> 6ed19256f (.)
 - [XotBaseRelationManager](/laravel/Modules/Xot/docs/filament/relation_managers.md)
 - [Regole di Traduzione](/laravel/Modules/Xot/docs/translation_rules.md)
 - [Filament Resources](/laravel/Modules/Xot/docs/filament/resources.md)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: 3 Giugno 2025*
+=======
+*Ultimo aggiornamento: 3 Giugno 2025*
+>>>>>>> 6ed19256f (.)

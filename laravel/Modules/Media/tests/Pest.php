@@ -17,7 +17,11 @@ use Modules\Media\Tests\TestCase;
  * |
  */
 
+<<<<<<< HEAD
 pest()->uses(TestCase::class)->in('Feature', 'Unit');
+=======
+pest()->extend(TestCase::class)->in('Feature', 'Unit');
+>>>>>>> 6ed19256f (.)
 
 /*
  * |--------------------------------------------------------------------------

@@ -14,6 +14,7 @@ return [
         'sort' => 65,
         'icon' => 'heroicon-o-user-group',
     ],
+<<<<<<< HEAD
     'label' => 'Team User',
     'plural_label' => 'Team User (Plurale)',
     'fields' => [
@@ -47,4 +48,10 @@ return [
             'label' => 'Elimina Team User',
         ],
     ],
+=======
+    'label' => '',
+    'plural_label' => '',
+    'fields' => [],
+    'actions' => [],
+>>>>>>> 6ed19256f (.)
 ];

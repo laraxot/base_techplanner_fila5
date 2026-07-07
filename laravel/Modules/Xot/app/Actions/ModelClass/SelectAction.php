@@ -15,7 +15,11 @@ class SelectAction
     /**
      * Execute a select query.
      *
+<<<<<<< HEAD
      * @param class-string<Model> $modelClass
+=======
+     * @param  class-string<Model>  $modelClass
+>>>>>>> 6ed19256f (.)
      *
      * @return array<mixed>
      */

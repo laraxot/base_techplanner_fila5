@@ -1,7 +1,12 @@
 # Refactoring RecordNotification - Zen Delegation Pattern
 
+<<<<<<< HEAD
 **Data**: 19 Dicembre 2025  
 **Stato**: ✅ Implementato  
+=======
+**Data**: 19 Dicembre 2025
+**Stato**: ✅ Implementato
+>>>>>>> 6ed19256f (.)
 **Motivazione**: Zen Delegation, DRY assoluto, SRP
 
 ## 🎯 Problema Identificato
@@ -111,7 +116,11 @@ class RecordNotification extends Notification
         $email = new SpatieEmail($this->record, $this->slug);
         $email = $email->mergeData($this->data);
         $email = $email->addAttachments($this->attachments);
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         // Set recipient per envelope()
         if (method_exists($notifiable, 'routeNotificationFor')) {
             $to = $notifiable->routeNotificationFor('mail');
@@ -254,12 +263,20 @@ $client->notify($notification); // via() determina canali da routeNotificationFo
 ## 🔗 Riferimenti
 
 - [RECORD_NOTIFICATION_ZEN_CONSTRUCTOR.md](./RECORD_NOTIFICATION_ZEN_CONSTRUCTOR.md) - Filosofia Zen Delegation
+<<<<<<< HEAD
 - [RECORD_NOTIFICATION_ZEN_CONSTRUCTOR.md](./record_notification_zen_constructor.md) - Filosofia Zen Delegation
+=======
+>>>>>>> 6ed19256f (.)
 - [record-notification.md](../notifications/record-notification.md) - Documentazione completa RecordNotification
 - [record-notification-constructor-slug.md](./record-notification-constructor-slug.md) - Refactoring precedente (Lazy Resolution, ora superato)
 - [send-record-notification-action.md](../actions/send-record-notification-action.md) - Documentazione SendRecordNotificationAction
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: 19 Dicembre 2025  
 **Filosofia**: *"Delegation over duplication, bridge over God Object, simplicity over complexity"*
+=======
+**Ultimo aggiornamento**: 19 Dicembre 2025
+**Filosofia**: *"Delegation over duplication, bridge over God Object, simplicity over complexity"*
+>>>>>>> 6ed19256f (.)

@@ -140,7 +140,11 @@ php -l Modules/UI/app/Filament/Actions/Table/TableLayoutToggleTableAction.php
 php artisan tinker --execute="TableLayoutToggleTableAction::make('test');"
 
 # Testare l'URL che causava l'errore
+<<<<<<< HEAD
 curl -I http://127.0.0.1:8001/Quaeris/admin/gaia/survey-pdfs
+=======
+curl -I http://127.0.0.1:8001/quaeris/admin/gaia/survey-pdfs
+>>>>>>> 6ed19256f (.)
 ```
 
 ### Risultati Test
@@ -177,4 +181,8 @@ curl -I http://127.0.0.1:8001/Quaeris/admin/gaia/survey-pdfs
 **Modulo**: UI
 **Tipo**: Bug Fix
 **Priorità**: Alta
+<<<<<<< HEAD
 **Stato**: ✅ Risolto
+=======
+**Stato**: ✅ Risolto
+>>>>>>> 6ed19256f (.)

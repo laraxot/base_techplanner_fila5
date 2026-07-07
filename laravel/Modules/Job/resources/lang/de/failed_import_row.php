@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -47,6 +48,23 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'import_batch_id' => [
+            'label' => 'Import-Batch-ID',
+        ],
+        'row_index' => [
+            'label' => 'Zeilenindex',
+        ],
+        'errors' => [
+            'label' => 'Fehler',
+        ],
+        'data' => [
+            'label' => 'Daten',
+        ],
+        'created_at' => [
+            'label' => 'Erstellt Am',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [

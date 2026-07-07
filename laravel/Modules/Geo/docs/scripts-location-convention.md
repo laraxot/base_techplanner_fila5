@@ -311,4 +311,8 @@ find ./bashscripts ./Modules/*/bashscripts ./docker -name "*.sh" -type f
 
 ---
 
+<<<<<<< HEAD
 **Questa convenzione è OBBLIGATORIA per tutti gli script del progetto.**
+=======
+**Questa convenzione è OBBLIGATORIA per tutti gli script del progetto.**
+>>>>>>> 6ed19256f (.)

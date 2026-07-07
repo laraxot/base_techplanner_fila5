@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Errori Comuni nelle Notifiche
 
 ## 1. Errore Destinatario Mancante
@@ -163,3 +164,6 @@ class YourNotification extends Notification
 - [Documentazione Spatie Queueable Action](https://github.com/spatie/laravel-queueable-action)
 https://medium.com/@peterhrobar/push-notifications-with-laravel-61049ab9aec6
 - [Best Practices Email](https://www.campaignmonitor.com/dev-resources/guides/coding-html-emails/) 
+=======
+https://medium.com/@peterhrobar/push-notifications-with-laravel-61049ab9aec6
+>>>>>>> 6ed19256f (.)

@@ -39,4 +39,8 @@ Gestione privacy, consensi e compliance GDPR.
 ```
 
 ## Note
+<<<<<<< HEAD
 - Adatta la configurazione a seconda dei requisiti di compliance e audit.
+=======
+- Adatta la configurazione a seconda dei requisiti di compliance e audit.
+>>>>>>> 6ed19256f (.)

@@ -453,6 +453,7 @@ php artisan test
 **Versione**: 2.0.0
 **Autore**: Team Laraxot
 **Licenza**: MIT License
+<<<<<<< HEAD
 ---
 title: "Geo Module Documentation"
 type: documentation
@@ -522,3 +523,5 @@ Geo module owns ALL geo-spatial concerns. Other modules (Fixcity, Transport, Log
 - [QMD Setup](./QMD-SETUP.md) — Configurazione ricerca locale
 - [Performance](./PERFORMANCE-OPTIMIZATION.md) — Metriche e best practice
 - [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout
+=======
+>>>>>>> 6ed19256f (.)

@@ -4,13 +4,22 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Laravel\Passport\Token as PassportToken;
+=======
+// use Laravel\Passport\AccessToken as PassportAccessToken;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Carbon;
+use Laravel\Passport\Token as PassportToken;
+use Modules\Xot\Contracts\UserContract;
+>>>>>>> 6ed19256f (.)
 
 /**
  * Modules\User\Models\OauthAccessToken.
  *
+<<<<<<< HEAD
  * @property string           $id
  * @property string|null      $user_id
  * @property string           $client_id
@@ -22,6 +31,19 @@ use Laravel\Passport\Token as PassportToken;
  * @property Carbon|null      $expires_at
  * @property OauthClient|null $client
  * @property User|null        $user
+=======
+ * @property string            $id
+ * @property string|null       $user_id
+ * @property string            $client_id
+ * @property string|null       $name
+ * @property array|null        $scopes
+ * @property bool              $revoked
+ * @property Carbon|null       $created_at
+ * @property Carbon|null       $updated_at
+ * @property Carbon|null       $expires_at
+ * @property OauthClient|null  $client
+ * @property UserContract|null $user
+>>>>>>> 6ed19256f (.)
  *
  * @method static Builder|OauthAccessToken newModelQuery()
  * @method static Builder|OauthAccessToken newQuery()
@@ -51,12 +73,22 @@ use Laravel\Passport\Token as PassportToken;
  * @method static static                           updateOrCreate(array $attributes, array $values = [])
  *
  * @mixin IdeHelperOauthAccessToken
+<<<<<<< HEAD
  *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthAccessToken existsIn(array $haystack)
  *
+=======
+>>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class OauthAccessToken extends PassportToken
 {
+<<<<<<< HEAD
     protected $connection = 'user';
+=======
+    /** @var string */
+    protected $connection = 'user';
+
+    // protected $fillable = ['id', 'user_id', 'client_id', 'name', 'scopes', 'revoked', 'expires_at'];
+>>>>>>> 6ed19256f (.)
 }

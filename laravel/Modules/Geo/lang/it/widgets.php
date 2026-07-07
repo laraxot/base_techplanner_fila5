@@ -11,6 +11,7 @@ return [
             'error' => 'Errore durante la selezione della località',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Widgets',
     'plural_label' => 'Widgets (Plurale)',
     'navigation' => [
@@ -55,4 +56,6 @@ return [
             'label' => 'Elimina Widgets',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

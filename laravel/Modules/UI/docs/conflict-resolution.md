@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+# Git Conflict Resolution Audit
+
+## Data
+>>>>>>> 6ed19256f (.)
 - 2025-01-06
 
 ## File Coinvolti
@@ -36,6 +42,7 @@ Tutte le verifiche hanno avuto esito positivo.
 
 ---
 Ultimo aggiornamento: 2025-01-06
+<<<<<<< HEAD
 # Conflict Resolution — Module UI
 
 ## Summary
@@ -99,3 +106,5 @@ Ultimo aggiornamento: 2025-01-06
 
 ## Backlinks
 - [Root conflict resolution report](../../../../docs/conflict-resolution-report.md)
+=======
+>>>>>>> 6ed19256f (.)

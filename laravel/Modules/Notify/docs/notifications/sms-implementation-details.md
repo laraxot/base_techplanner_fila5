@@ -108,27 +108,43 @@ use NotificationChannels\Twilio\TwilioSmsMessage;
 class AppointmentReminder extends Notification
 {
     protected $appointment;
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function __construct($appointment)
     {
         $this->appointment = $appointment;
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function via($notifiable)
     {
         return [TwilioChannel::class];
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function toTwilio($notifiable)
     {
         $formattedDate = $this->appointment->formatted_date;
         $formattedTime = $this->appointment->formatted_time;
         $doctor = $this->appointment->doctor->name;
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         return (new TwilioSmsMessage())
             ->content("Promemoria: hai un appuntamento il {$formattedDate} alle {$formattedTime} con il Dr. {$doctor}. Conferma rispondendo SI o annulla con NO.");
     }
@@ -149,17 +165,23 @@ class User extends Authenticatable
 
     // ...
 
+<<<<<<< HEAD
     
     // ...
     
+=======
+>>>>>>> 6ed19256f (.)
     public function routeNotificationForTwilio()
     {
         // Garantisci che il numero sia in formato E.164 (es. +393331234567)
         $phoneNumber = $this->phone_number;
+<<<<<<< HEAD
         
         // Rimuovi eventuali spazi o caratteri non numerici
         $phoneNumber = preg_replace('/[^0-9]/', '', $phoneNumber);
         
+=======
+>>>>>>> 6ed19256f (.)
 
         // Rimuovi eventuali spazi o caratteri non numerici
         $phoneNumber = preg_replace('/[^0-9]/', '', $phoneNumber);
@@ -168,14 +190,22 @@ class User extends Authenticatable
         if (strpos($phoneNumber, '0') === 0) {
             $phoneNumber = '+39' . substr($phoneNumber, 1);
         }
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         // Se non ha prefisso, aggiungi +39
         if (strpos($phoneNumber, '+') !== 0) {
             $phoneNumber = '+39' . $phoneNumber;
         }
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         return $phoneNumber;
     }
 }
@@ -215,9 +245,12 @@ class SendSMSHostingAction
 
     protected $client;
 
+<<<<<<< HEAD
     
     protected $client;
     
+=======
+>>>>>>> 6ed19256f (.)
     public function __construct()
     {
         $this->client = new Client(
@@ -225,8 +258,12 @@ class SendSMSHostingAction
             config('sms.smshosting.password')
         );
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function execute(string $to, string $content, array $options = [])
     {
         try {
@@ -236,15 +273,23 @@ class SendSMSHostingAction
                 'from' => config('sms.smshosting.sender'),
                 'options' => $options,
             ]);
+<<<<<<< HEAD
             
             
+=======
+
+>>>>>>> 6ed19256f (.)
             Log::info('SMS inviato con successo', [
                 'to' => $to,
                 'provider' => 'SMSHosting',
                 'message_id' => $response->getId() ?? null,
             ]);
+<<<<<<< HEAD
             
             
+=======
+
+>>>>>>> 6ed19256f (.)
             return $response;
         } catch (\Exception $e) {
             Log::error('Errore invio SMS', [
@@ -252,8 +297,12 @@ class SendSMSHostingAction
                 'provider' => 'SMSHosting',
                 'error' => $e->getMessage(),
             ]);
+<<<<<<< HEAD
             
             
+=======
+
+>>>>>>> 6ed19256f (.)
             throw $e;
         }
     }
@@ -271,14 +320,22 @@ use Modules\Notify\Actions\SMS\SendSMSHostingAction;
 class SMSHostingChannel
 {
     protected $sendSMSAction;
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function __construct(SendSMSHostingAction $sendSMSAction)
     {
         $this->sendSMSAction = $sendSMSAction;
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function send($notifiable, Notification $notification)
     {
         if (! $to = $notifiable->routeNotificationForSMSHosting()) {
@@ -287,9 +344,12 @@ class SMSHostingChannel
 
         $message = $notification->toSMSHosting($notifiable);
 
+<<<<<<< HEAD
         
         $message = $notification->toSMSHosting($notifiable);
         
+=======
+>>>>>>> 6ed19256f (.)
         // Esecuzione asincrona dell'azione
         return $this->sendSMSAction->onQueue('sms')
             ->execute($to, $message->content, $message->options);
@@ -306,9 +366,13 @@ return [
         'username' => env('SMSHOSTING_USERNAME'),
         'password' => env('SMSHOSTING_PASSWORD'),
         'sender' => env('SMSHOSTING_SENDER', ''),
+<<<<<<< HEAD
         'sender' => env('SMSHOSTING_SENDER', '<nome progetto>'),
         'sender' => env('SMSHOSTING_SENDER', '<nome progetto>'),
 'sender' => env('SMSHOSTING_SENDER', 'Quaeris'),
+=======
+        'sender' => env('SMSHOSTING_SENDER', 'SaluteOra'),
+>>>>>>> 6ed19256f (.)
     ],
 ];
 ```
@@ -322,12 +386,17 @@ class SMSHostingMessage
 {
     public $content;
     public $options = [];
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function __construct($content = '')
     {
         $this->content = $content;
     }
+<<<<<<< HEAD
     
     public function content($content)
     {
@@ -347,6 +416,8 @@ class SMSHostingMessage
     {
         $this->options['flash'] = true;
         
+=======
+>>>>>>> 6ed19256f (.)
 
     public function content($content)
     {
@@ -387,11 +458,14 @@ use Illuminate\Support\Facades\Log;
 class SendTelcobSMSAction
 {
     use QueueableAction;
+<<<<<<< HEAD
     
     protected $apiKey;
     protected $sender;
     protected $baseUrl = 'https://api.telcob.com/sms/v1';
     
+=======
+>>>>>>> 6ed19256f (.)
 
     protected $apiKey;
     protected $sender;
@@ -402,8 +476,12 @@ class SendTelcobSMSAction
         $this->apiKey = config('sms.telcob.api_key');
         $this->sender = config('sms.telcob.sender');
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function execute(string $to, string $message, array $options = [])
     {
         try {
@@ -416,8 +494,12 @@ class SendTelcobSMSAction
                 'from' => $this->sender,
                 'options' => $options,
             ]);
+<<<<<<< HEAD
             
             
+=======
+
+>>>>>>> 6ed19256f (.)
             if ($response->successful()) {
                 Log::info('SMS Telcob inviato con successo', [
                     'to' => $to,
@@ -430,16 +512,24 @@ class SendTelcobSMSAction
                     'body' => $response->json(),
                 ]);
             }
+<<<<<<< HEAD
             
             
+=======
+
+>>>>>>> 6ed19256f (.)
             return $response;
         } catch (\Exception $e) {
             Log::error('Errore invio SMS Telcob', [
                 'to' => $to,
                 'error' => $e->getMessage(),
             ]);
+<<<<<<< HEAD
             
             
+=======
+
+>>>>>>> 6ed19256f (.)
             throw $e;
         }
     }
@@ -457,14 +547,22 @@ use Modules\Notify\Actions\SMS\SendTelcobSMSAction;
 class TelcobChannel
 {
     protected $sendSMSAction;
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function __construct(SendTelcobSMSAction $sendSMSAction)
     {
         $this->sendSMSAction = $sendSMSAction;
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function send($notifiable, Notification $notification)
     {
         if (! $to = $notifiable->routeNotificationForTelcob()) {
@@ -473,9 +571,12 @@ class TelcobChannel
 
         $message = $notification->toTelcob($notifiable);
 
+<<<<<<< HEAD
         
         $message = $notification->toTelcob($notifiable);
         
+=======
+>>>>>>> 6ed19256f (.)
         // Esecuzione asincrona dell'azione
         return $this->sendSMSAction->onQueue('sms')
             ->execute($to, $message->content, $message->options ?? []);
@@ -512,24 +613,37 @@ class PhoneNumberFormatter
     {
         // Rimuovi tutti i caratteri non numerici
         $phoneNumber = preg_replace('/[^0-9+]/', '', $phoneNumber);
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         // Se il numero inizia con + è già in formato internazionale
         if (strpos($phoneNumber, '+') === 0) {
             return $phoneNumber;
         }
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         // Se inizia con 00, sostituisci con +
         if (strpos($phoneNumber, '00') === 0) {
             return '+' . substr($phoneNumber, 2);
         }
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         // Se inizia con 0, assumi che sia un numero italiano e rimuovi lo 0
         if (strpos($phoneNumber, '0') === 0) {
             return '+' . $defaultCountryCode . substr($phoneNumber, 1);
         }
+<<<<<<< HEAD
         
         // Altrimenti aggiungi solo il prefisso
         return '+' . $defaultCountryCode . $phoneNumber;
@@ -539,6 +653,8 @@ class PhoneNumberFormatter
     {
         $e164 = self::formatToE164($phoneNumber);
         
+=======
+>>>>>>> 6ed19256f (.)
 
         // Altrimenti aggiungi solo il prefisso
         return '+' . $defaultCountryCode . $phoneNumber;
@@ -567,20 +683,32 @@ use Modules\Notify\Channels\SMSHostingChannel;
 class MockSMSChannel extends SMSHostingChannel
 {
     public $messages = [];
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function send($notifiable, Notification $notification)
     {
         $to = $notifiable->routeNotificationForSMSHosting();
         $message = $notification->toSMSHosting($notifiable);
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         $this->messages[] = [
             'to' => $to,
             'content' => $message->content,
         ];
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         return true;
     }
 }
@@ -605,6 +733,7 @@ class SMSNotificationTest extends TestCase
         // Arrange
         $user = User::factory()->create(['phone_number' => '+393331234567']);
         $appointment = Appointment::factory()->create(['user_id' => $user->id]);
+<<<<<<< HEAD
         
         $mockChannel = new MockSMSChannel();
         $this->app->instance(SMSHostingChannel::class, $mockChannel);
@@ -612,6 +741,8 @@ class SMSNotificationTest extends TestCase
         // Act
         $user->notify(new AppointmentReminder($appointment));
         
+=======
+>>>>>>> 6ed19256f (.)
 
         $mockChannel = new MockSMSChannel();
         $this->app->instance(SMSHostingChannel::class, $mockChannel);
@@ -624,18 +755,25 @@ class SMSNotificationTest extends TestCase
         $this->assertEquals('+393331234567', $mockChannel->messages[0]['to']);
         $this->assertStringContainsString($appointment->formatted_date, $mockChannel->messages[0]['content']);
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function testSMSNotSentWhenPhoneInvalid()
     {
         // Arrange
         Notification::fake();
         $user = User::factory()->create(['phone_number' => 'invalid-number']);
         $appointment = Appointment::factory()->create(['user_id' => $user->id]);
+<<<<<<< HEAD
         
         // Act
         $user->notify(new AppointmentReminder($appointment));
         
+=======
+>>>>>>> 6ed19256f (.)
 
         // Act
         $user->notify(new AppointmentReminder($appointment));
@@ -662,18 +800,25 @@ class ImportantNotification extends Notification
 {
     protected $record;
     protected $slug;
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function __construct($record, $slug)
     {
         $this->record = $record;
         $this->slug = $slug;
     }
+<<<<<<< HEAD
     
     public function via($notifiable)
     {
         $channels = ['mail'];
         
+=======
+>>>>>>> 6ed19256f (.)
 
     public function via($notifiable)
     {
@@ -683,6 +828,7 @@ class ImportantNotification extends Notification
         if ($notifiable->phone_number && $notifiable->sms_notifications_enabled) {
             $channels[] = TwilioChannel::class;
         }
+<<<<<<< HEAD
         
         return $channels;
     }
@@ -691,6 +837,8 @@ class ImportantNotification extends Notification
     {
         $email = new SpatieEmail($this->record, $this->slug);
         
+=======
+>>>>>>> 6ed19256f (.)
 
         return $channels;
     }
@@ -703,10 +851,13 @@ class ImportantNotification extends Notification
         if (method_exists($notifiable, 'routeNotificationFor')) {
             $email->to($notifiable->routeNotificationFor('mail'));
         }
+<<<<<<< HEAD
         
         return $email;
     }
     
+=======
+>>>>>>> 6ed19256f (.)
 
         return $email;
     }
@@ -734,29 +885,45 @@ use Modules\Notify\Notifications\SMSFailureNotification;
 class SendNotificationWithRetryAction
 {
     use QueueableAction;
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // Configurazione della coda
     public $tries = 3;
     public $backoff = 60; // 1 minuto tra i tentativi
     public $queue = 'notifications';
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function execute($notifiable, $notification, array $options = [])
     {
         try {
             // Invio della notifica
             $notifiable->notify($notification);
+<<<<<<< HEAD
             
             
+=======
+
+>>>>>>> 6ed19256f (.)
             // Registrazione del successo
             Log::info('Notifica inviata con successo', [
                 'notifiable_type' => get_class($notifiable),
                 'notifiable_id' => $notifiable->id,
                 'notification_class' => get_class($notification),
             ]);
+<<<<<<< HEAD
             
             
+=======
+
+>>>>>>> 6ed19256f (.)
             return true;
         } catch (\Exception $e) {
             // Registrazione dell'errore
@@ -766,10 +933,13 @@ class SendNotificationWithRetryAction
                 'notification_class' => get_class($notification),
                 'attempt' => $options['attempt'] ?? 1,
             ]);
+<<<<<<< HEAD
             
             // Incrementa il contatore di tentativi
             $attempt = ($options['attempt'] ?? 1) + 1;
             
+=======
+>>>>>>> 6ed19256f (.)
 
             // Incrementa il contatore di tentativi
             $attempt = ($options['attempt'] ?? 1) + 1;
@@ -783,14 +953,22 @@ class SendNotificationWithRetryAction
                 // Invia notifica di fallimento via email se abbiamo esaurito i tentativi
                 $this->sendFailureNotification($notifiable, $notification);
             }
+<<<<<<< HEAD
             
             
+=======
+
+>>>>>>> 6ed19256f (.)
             // Propaga l'eccezione per gestione esterna
             throw $e;
         }
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     protected function sendFailureNotification($notifiable, $notification)
     {
         // Controlla se il notifiable ha un indirizzo email
@@ -816,6 +994,7 @@ use Modules\Notify\Notifications\AppointmentReminder;
 class AppointmentService
 {
     public function sendReminders($appointments)
+<<<<<<< HEAD
     {   
         $sendNotificationAction = app(SendNotificationWithRetryAction::class);
         
@@ -823,6 +1002,8 @@ class AppointmentService
             // Crea la notifica
             $notification = new AppointmentReminder($appointment);
             
+=======
+>>>>>>> 6ed19256f (.)
     {
         $sendNotificationAction = app(SendNotificationWithRetryAction::class);
 
@@ -860,12 +1041,17 @@ public function toTwilio($notifiable)
     return (new TwilioSmsMessage())
         ->content(": Promemoria appuntamento {$this->appointment->formatted_date}.
         Per annullare rispondere NO. Per info: <nome progetto>.it/privacy");
+<<<<<<< HEAD
         ->content("<nome progetto>: Promemoria appuntamento {$this->appointment->formatted_date}.
         Per annullare rispondere NO. Per info: <nome progetto>.it/privacy");
         ->content("<nome progetto>: Promemoria appuntamento {$this->appointment->formatted_date}. 
         Per annullare rispondere NO. Per info: <nome progetto>.it/privacy");
 ->content("Quaeris: Promemoria appuntamento {$this->appointment->formatted_date}. 
         Per annullare rispondere NO. Per info: Quaeris.it/privacy");
+=======
+        ->content("SaluteOra: Promemoria appuntamento {$this->appointment->formatted_date}.
+        Per annullare rispondere NO. Per info: saluteora.it/privacy");
+>>>>>>> 6ed19256f (.)
 }
 ```
 
@@ -889,27 +1075,43 @@ class ConsentLog extends Model
         'consent_text',
         'revoked_at',
     ];
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     protected $casts = [
         'consented_at' => 'datetime',
         'revoked_at' => 'datetime',
     ];
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function user()
     {
         return $this->belongsTo(User::class);
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function scopeActive($query)
     {
         return $query->whereNotNull('consented_at')
             ->whereNull('revoked_at');
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function scopeForChannel($query, $channel)
     {
         return $query->where('channel', $channel);
@@ -919,6 +1121,7 @@ class ConsentLog extends Model
 
 ## Collegamenti alla Documentazione Correlata
 
+<<<<<<< HEAD
 - [MULTI_CHANNEL_NOTIFICATIONS.md](./multi_channel_notifications.md)
 - [SMS_PROVIDER_CONFIGURATION.md](./sms_provider_configuration.md)
 - [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./notifications_implementation_guide.md)
@@ -927,3 +1130,9 @@ class ConsentLog extends Model
 - [SMS_PROVIDER_CONFIGURATION.md](./SMS_PROVIDER_CONFIGURATION.md)
 - [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./NOTIFICATIONS_IMPLEMENTATION_GUIDE.md)
 - [TELEGRAM_NOTIFICATIONS_GUIDE.md](./TELEGRAM_NOTIFICATIONS_GUIDE.md)
+=======
+- [MULTI_CHANNEL_NOTIFICATIONS.md](./MULTI_CHANNEL_NOTIFICATIONS.md)
+- [SMS_PROVIDER_CONFIGURATION.md](./SMS_PROVIDER_CONFIGURATION.md)
+- [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./NOTIFICATIONS_IMPLEMENTATION_GUIDE.md)
+- [TELEGRAM_NOTIFICATIONS_GUIDE.md](./TELEGRAM_NOTIFICATIONS_GUIDE.md)
+>>>>>>> 6ed19256f (.)

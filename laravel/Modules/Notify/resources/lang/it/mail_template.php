@@ -8,29 +8,41 @@ return [
             'label' => 'Classe Mailable',
             'placeholder' => 'Inserisci la classe Mailable',
             'helper_text' => 'La classe che gestisce l\'invio dell\'email',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'subject' => [
             'label' => 'Oggetto',
             'placeholder' => 'Inserisci l\'oggetto dell\'email',
             'helper_text' => 'L\'oggetto che apparirà nell\'email',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'html_template' => [
             'label' => 'Template HTML',
             'placeholder' => 'Inserisci il template HTML',
             'helper_text' => 'Il contenuto HTML dell\'email',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'text_template' => [
             'label' => 'Template Testo',
             'placeholder' => 'Inserisci il template testuale',
             'helper_text' => 'Il contenuto testuale dell\'email (versione plain text)',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -55,6 +67,7 @@ return [
             'color' => 'info',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -64,4 +77,6 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

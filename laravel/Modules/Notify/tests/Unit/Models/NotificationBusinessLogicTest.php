@@ -2,6 +2,13 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+use Modules\Notify\Models\Notification;
+use Modules\Xot\Models\BaseModel;
+
+uses(\Modules\Notify\Tests\TestCase::class);
+>>>>>>> 6ed19256f (.)
 
 describe('Notification Business Logic', function () {
     test('notification extends xot base model', function () {
@@ -86,4 +93,8 @@ describe('Notification Business Logic', function () {
     test('notification has factory for testing', function () {
         expect(method_exists(Notification::class, 'factory'))->toBeTrue();
     });
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 6ed19256f (.)

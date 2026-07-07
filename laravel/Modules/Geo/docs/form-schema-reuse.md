@@ -45,8 +45,12 @@ public static function getFormSchema(): array
 {
     return [
         // Altri campi specifici dello Studio
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         'addresses' => Forms\Components\Repeater::make('addresses')
             ->relationship('addresses')
             ->schema(AddressResource::getFormSchema()),
@@ -115,4 +119,8 @@ Questo pattern rispetta DRY+KISS:
 - [address-resource.md](address-resource.md)
 - [pattern-filament-pages.md](../project_docs/pattern-filament-pages.md)
 - [AddressResource](../app/Filament/Resources/AddressResource.php)
+<<<<<<< HEAD
 - [StudioResource](../../<main module>/app/Filament/Resources/StudioResource.php)
+=======
+- [StudioResource](../../<main module>/app/Filament/Resources/StudioResource.php)
+>>>>>>> 6ed19256f (.)

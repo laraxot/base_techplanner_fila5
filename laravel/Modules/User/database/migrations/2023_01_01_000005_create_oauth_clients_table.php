@@ -28,7 +28,11 @@ return new class extends XotBaseMigration {
             if ('string' !== $this->getColumnType('id')) {
                 $table->uuid('id')->change(); // is  just primary
             }
+<<<<<<< HEAD
             if (! $this->hasColumn('owner_id')) {
+=======
+            if (! $this->hasColumn('owner_id') && ! $this->hasColumn('owner_type')) {
+>>>>>>> 6ed19256f (.)
                 $table->nullableMorphs('owner');
             }
             if (! $this->hasColumn('name')) {

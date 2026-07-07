@@ -241,4 +241,7 @@
 - Testare su diversi browser
 - Controllare l'accessibilità
 - Validare il codice HTML/CSS
+<<<<<<< HEAD
 - Validare il codice HTML/CSS 
+=======
+>>>>>>> 6ed19256f (.)

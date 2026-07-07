@@ -1,4 +1,5 @@
 {{-- CTA Banner Block - Theme Two --}}
+<<<<<<< HEAD
 @props([
     'title' => '',
     'description' => '',
@@ -40,6 +41,8 @@
                 <a href="{{ $cta_secondary['url'] }}" 
                    class="btn btn-lg btn-outline border-white text-white hover:bg-white hover:text-primary px-10 transition-all duration-300">
                     {{ $cta_secondary['label'] }}
+=======
+>>>>>>> 6ed19256f (.)
 <section class="py-12 {{ $background_color ?? 'bg-slate-800' }}">
     <div class="max-w-4xl mx-auto px-4 text-center {{ $text_color ?? 'text-white' }}">
         @if(isset($title))
@@ -67,8 +70,11 @@
         </div>
     </div>
 </section>
+<<<<<<< HEAD
 
 
 
 
 
+=======
+>>>>>>> 6ed19256f (.)

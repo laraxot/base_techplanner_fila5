@@ -95,4 +95,7 @@ public function getHeight(): ?string
 
 - [Documento principale risoluzione conflitti](risoluzione_conflitti.md)
 - [Documentazione modulo Media](../../Media/docs/CONFLITTI_MERGE_RISOLTI.md)
+<<<<<<< HEAD
 - [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
+=======
+>>>>>>> 6ed19256f (.)

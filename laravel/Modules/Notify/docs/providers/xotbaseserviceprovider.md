@@ -20,16 +20,28 @@ public function register(): void
 {
     // Converte il nome in minuscolo
     $this->nameLower = Str::lower($this->name);
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // Estrae il namespace del modulo
     $this->module_ns = collect(explode('\\', $this->module_ns))
         ->slice(0, -1)
         ->implode('\\');
+<<<<<<< HEAD
     
     // Registra i provider standard
     $this->app->register($this->module_ns.'\Providers\RouteServiceProvider');
     $this->app->register($this->module_ns.'\Providers\EventServiceProvider');
     
+=======
+
+    // Registra i provider standard
+    $this->app->register($this->module_ns.'\Providers\RouteServiceProvider');
+    $this->app->register($this->module_ns.'\Providers\EventServiceProvider');
+
+>>>>>>> 6ed19256f (.)
     // Registra le icone Blade
     $this->registerBladeIcons();
 }
@@ -43,10 +55,17 @@ public function boot(): void
     $this->registerTranslations();
     $this->registerConfig();
     $this->registerViews();
+<<<<<<< HEAD
     
     // Carica migrazioni
     $this->loadMigrationsFrom($this->module_dir.'/../Database/Migrations');
     
+=======
+
+    // Carica migrazioni
+    $this->loadMigrationsFrom($this->module_dir.'/../Database/Migrations');
+
+>>>>>>> 6ed19256f (.)
     // Registra componenti
     $this->registerLivewireComponents();
     $this->registerBladeComponents();
@@ -127,6 +146,7 @@ public function boot(): void
 - [Laravel Package Development](https://laravel.com/docs/packages)
 ### Versione HEAD
 
+<<<<<<< HEAD
 - [Laravel Module Development](https://nwidart.com/laravel-modules/v6/introduction) 
 
 ### Versione Incoming
@@ -138,3 +158,14 @@ public function boot(): void
 
 
 ---
+=======
+- [Laravel Module Development](https://nwidart.com/laravel-modules/v6/introduction)
+
+### Versione Incoming
+
+- [Laravel Module Development](https://nwidart.com/laravel-modules/v6/introduction)
+## Collegamenti tra versioni di xotbaseserviceprovider.md
+* [xotbaseserviceprovider.md](../../../Xot/docs/providers/xotbaseserviceprovider.md)
+
+---
+>>>>>>> 6ed19256f (.)

@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\UI\Tests\Unit\Filament\Widgets;
 
+<<<<<<< HEAD
+=======
+use Filament\Widgets\Widget;
+>>>>>>> 6ed19256f (.)
 use Illuminate\Contracts\View\View;
 use Modules\UI\Filament\Widgets\StatWithIconWidget;
 use Tests\TestCase;

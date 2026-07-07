@@ -19,6 +19,7 @@
 - [Link a docs/phpstan della root per sintesi trasversali]
 
 ## Collegamenti tra versioni di analysis.md
+<<<<<<< HEAD
 * [analysis.md](../../../notify/project_docs/analysis.md)
 * [analysis.md](../../../notify/project_docs/phpstan/analysis.md)
 * [analysis.md](../../../xot/project_docs/analysis.md)
@@ -32,6 +33,8 @@
 * [analysis.md](../../../media/project_docs/analysis.md)
 * [analysis.md](../../../media/project_docs/phpstan/analysis.md)
 * [analysis.md](../../../../themes/one/project_docs/analysis.md)
+=======
+>>>>>>> 6ed19256f (.)
 * [analysis.md](../../../Notify/project_docs/analysis.md)
 * [analysis.md](../../../Notify/project_docs/phpstan/analysis.md)
 * [analysis.md](../../../Xot/project_docs/analysis.md)
@@ -44,4 +47,8 @@
 * [analysis.md](../../../Job/project_docs/phpstan/analysis.md)
 * [analysis.md](../../../Media/project_docs/analysis.md)
 * [analysis.md](../../../Media/project_docs/phpstan/analysis.md)
+<<<<<<< HEAD
 * [analysis.md](../../../../Themes/One/project_docs/analysis.md)
+=======
+* [analysis.md](../../../../Themes/One/project_docs/analysis.md)
+>>>>>>> 6ed19256f (.)

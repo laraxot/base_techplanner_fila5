@@ -8,7 +8,11 @@ Trovati 4 errori al livello 5.
 
 ## Errori e suggerimenti
 
+<<<<<<< HEAD
 ### File: `Modules/Xot/app/Actions/Export/ExportXlsByView.php`
+=======
+### File: `/var/www/html/<nome progetto>/laravel/Modules/Xot/app/Actions/Export/ExportXlsByView.php`
+>>>>>>> 6ed19256f (.)
 
 #### Linea 40: Syntax error, unexpected T_SR on line 40
 
@@ -26,7 +30,11 @@ Trovati 4 errori al livello 5.
 - Le variabili siano inizializzate prima dell'uso
 - I nomi di metodi e proprietà siano corretti
 
+<<<<<<< HEAD
 ### File: `Modules/Xot/app/Actions/View/GetViewByClassAction.php`
+=======
+### File: `/var/www/html/<nome progetto>/laravel/Modules/Xot/app/Actions/View/GetViewByClassAction.php`
+>>>>>>> 6ed19256f (.)
 
 #### Linea 47: Syntax error, unexpected T_SR on line 47
 
@@ -54,6 +62,7 @@ aurmich/dev
 aurmich/dev
 
 ## Collegamenti tra versioni di level_5.md
+<<<<<<< HEAD
 * [level_5.md](laravel/modules/chart/docs/phpstan/level_5.md)
 * [level_5.md](laravel/modules/reporting/docs/phpstan/level_5.md)
 * [level_5.md](laravel/modules/gdpr/docs/phpstan/level_5.md)
@@ -69,3 +78,20 @@ aurmich/dev
 * [level_5.md](laravel/modules/activity/docs/phpstan/level_5.md)
 * [level_5.md](laravel/modules/patient/docs/phpstan/level_5.md)
 * [level_5.md](laravel/modules/cms/docs/phpstan/level_5.md)
+=======
+* [level_5.md](laravel/Modules/Chart/docs/phpstan/level_5.md)
+* [level_5.md](laravel/Modules/Reporting/docs/phpstan/level_5.md)
+* [level_5.md](laravel/Modules/Gdpr/docs/phpstan/level_5.md)
+* [level_5.md](laravel/Modules/Notify/docs/phpstan/level_5.md)
+* [level_5.md](laravel/Modules/Xot/docs/phpstan/level_5.md)
+* [level_5.md](laravel/Modules/Dental/docs/phpstan/level_5.md)
+* [level_5.md](laravel/Modules/User/docs/phpstan/level_5.md)
+* [level_5.md](laravel/Modules/UI/docs/phpstan/level_5.md)
+* [level_5.md](laravel/Modules/Lang/docs/phpstan/level_5.md)
+* [level_5.md](laravel/Modules/Job/docs/phpstan/level_5.md)
+* [level_5.md](laravel/Modules/Media/docs/phpstan/level_5.md)
+* [level_5.md](laravel/Modules/Tenant/docs/phpstan/level_5.md)
+* [level_5.md](laravel/Modules/Activity/docs/phpstan/level_5.md)
+* [level_5.md](laravel/Modules/Patient/docs/phpstan/level_5.md)
+* [level_5.md](laravel/Modules/Cms/docs/phpstan/level_5.md)
+>>>>>>> 6ed19256f (.)

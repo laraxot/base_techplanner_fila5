@@ -56,17 +56,29 @@
 private function formatContacts(Client $record): string
 {
     $contacts = [];
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     if ($record->phone) {
         $contacts[] = '<a href="tel:' . $record->phone . '" class="inline-flex items-center text-blue-600 hover:text-blue-800">
             <i class="heroicon-o-phone text-blue-500 w-4 h-4 inline mr-1" title="Telefono"></i> ' . $record->phone . '
         </a>';
     }
+<<<<<<< HEAD
     
     // ... altri contatti
     
     return empty($contacts) 
         ? '<span class="text-gray-400">Nessun contatto</span>' 
+=======
+
+    // ... altri contatti
+
+    return empty($contacts)
+        ? '<span class="text-gray-400">Nessun contatto</span>'
+>>>>>>> 6ed19256f (.)
         : implode('<br class="my-1">', $contacts);
 }
 ```
@@ -117,8 +129,11 @@ private function formatContacts(Client $record): string
 ### Pattern Corretti
 - [TechPlanner ContactsColumn](../../TechPlanner/docs/contacts-column-implementation-complete.md)
 - [Filament Best Practices](../../../docs/filament-best-practices.md)
+<<<<<<< HEAD
 - [TechPlanner ContactsColumn](../../techplanner/docs/contacts-column-implementation-complete.md)
 - [Filament Best Practices](../../../../docs/filament-best-practices.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## AZIONI CORRETTIVE
 
@@ -131,6 +146,7 @@ private function formatContacts(Client $record): string
 
 ---
 
+<<<<<<< HEAD
 **GRAVITÀ**: CRITICA  
 **IMPATTO**: Alto - Pattern sbagliato potrebbe essere copiato  
 **PRIORITÀ**: Immediata - Correggere subito  
@@ -139,3 +155,12 @@ private function formatContacts(Client $record): string
 *Ultimo aggiornamento: 2025-08-01*  
 *Ultimo aggiornamento: [DATE]*  
 *Errori identificati e documentati per prevenzione futura*
+=======
+**GRAVITÀ**: CRITICA
+**IMPATTO**: Alto - Pattern sbagliato potrebbe essere copiato
+**PRIORITÀ**: Immediata - Correggere subito
+**LEZIONE**: SEMPRE studiare docs/memories prima di implementare
+
+*Ultimo aggiornamento: 2025-08-01*
+*Errori identificati e documentati per prevenzione futura*
+>>>>>>> 6ed19256f (.)

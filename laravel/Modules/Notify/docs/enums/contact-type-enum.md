@@ -411,7 +411,10 @@ return [
 ## Riferimenti
 
 - [AddressItemEnum Documentation](../../Geo/docs/enums/address-item-enum.md) - Pattern gemello
+<<<<<<< HEAD
 - [AddressItemEnum Documentation](../../geo/docs/enums/address-item-enum.md) - Pattern gemello
+=======
+>>>>>>> 6ed19256f (.)
 - [Notify Module Architecture](../architecture.md)
 - [ContactTypeEnum Source](../../Notify/app/Enums/ContactTypeEnum.php)
 
@@ -425,4 +428,8 @@ return [
 ---
 
 > **Nota**: Questo documento segue la filosofia del progetto: Scopo, Logica, Filosofia, Politica, Religione, Zen.
+<<<<<<< HEAD
 > Ogni modifica all'enum DEVE essere documentata e tradotta.
+=======
+> Ogni modifica all'enum DEVE essere documentata e tradotta.
+>>>>>>> 6ed19256f (.)

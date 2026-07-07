@@ -35,4 +35,8 @@ Correggiamo solo variabili che:
 - **Warning totali PHPMD**: (da calcolare)
 - **Warning critici corretti**: 1
 - **Warning da ignorare**: (da categorizzare)
+<<<<<<< HEAD
 - **PHPStan**: 0 errori (mantenuto)
+=======
+- **PHPStan**: 0 errori (mantenuto)
+>>>>>>> 6ed19256f (.)

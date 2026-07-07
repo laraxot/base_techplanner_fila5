@@ -17,6 +17,7 @@ return [
     'fields' => [
         'name' => [
             'label' => 'name',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -50,6 +51,23 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'create' => [
+            'label' => 'create',
+        ],
+        'edit' => [
+            'label' => 'edit',
+        ],
+        'delete' => [
+            'label' => 'delete',
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -58,6 +76,11 @@ return [
             'icon' => 'reorderRecords',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Token',
     'plural_label' => 'Token (Plurale)',
+=======
+    'label' => '',
+    'plural_label' => '',
+>>>>>>> 6ed19256f (.)
 ];

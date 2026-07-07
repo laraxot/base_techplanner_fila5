@@ -159,11 +159,18 @@ public function definition(): array
 
 - [Regola Cursor](../../.cursor/rules/factory-email-rule.mdc)
 - [Regola <nome progetto>](../laravel/Modules/<nome progetto>/docs/factory-email-rule.md)
+<<<<<<< HEAD
 - [Regola <nome progetto>](../laravel/modules/<nome progetto>/docs/factory-email-rule.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Regola Windsurf](../../.windsurf/rules/factory-email-rule.mdc)
 - [Best Practices](best-practices.md)
 - [Factory Guidelines](factory-guidelines.md)
 
 ---
 
+<<<<<<< HEAD
 **⚠️ RICORDA SEMPRE: Questa regola è SACRA e non può essere violata. Ogni factory deve usare SEMPRE faker per le email, MAI "@example.com"!**
+=======
+**⚠️ RICORDA SEMPRE: Questa regola è SACRA e non può essere violata. Ogni factory deve usare SEMPRE faker per le email, MAI "@example.com"!**
+>>>>>>> 6ed19256f (.)

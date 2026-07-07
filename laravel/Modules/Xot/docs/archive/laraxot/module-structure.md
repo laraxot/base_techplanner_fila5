@@ -105,9 +105,16 @@ Route::middleware('api')->prefix('api')->group(function () {
 ## Collegamenti tra versioni di module-structure.md
 * [module-structure.md](../../../Xot/project_docs/laraxot/module-structure.md)
 * [module-structure.md](../../../Xot/project_docs/architecture/module-structure.md)
+<<<<<<< HEAD
 * [module-structure.md](../../../xot/project_docs/laraxot/module-structure.md)
 * [module-structure.md](../../../xot/project_docs/architecture/module-structure.md)
 
 ### Versione Incoming
 
 ---
+=======
+
+### Versione Incoming
+
+---
+>>>>>>> 6ed19256f (.)

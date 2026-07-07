@@ -13,8 +13,12 @@ class GetTenantConfigPathAction
 
     public function execute(string $name): string
     {
+<<<<<<< HEAD
         $filename = $name.'.php';
 
+=======
+        $filename = $name . '.php';
+>>>>>>> 6ed19256f (.)
         return app(GetTenantFilePathAction::class)->execute($filename);
     }
 }

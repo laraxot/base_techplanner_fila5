@@ -64,6 +64,7 @@
 ## Errori Comuni
 
 1. **Errore**: Directory errata
+<<<<<<< HEAD
    - ❌ `Modules/Module/Datas/`
    - ✅ `Modules/Module/Datas/`
    - ❌ `Modules/Module/Datas/`
@@ -150,6 +151,94 @@
    - ❌ `Modules/Module/Datas/`
    - ✅ `Modules/Module/Datas/`
    - ✅ `Modules/Module/Datas/`
+=======
+   - ❌ `/var/www/html/_bases/base_techplanner_fila3_mono/Modules/Module/Datas/`
+   - ✅ `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ❌ `/var/www/html/_bases/base_techplanner_fila3_mono/Modules/Module/Datas/`
+   - ✅ `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ❌ `/var/www/html/_bases/base_techplanner_fila3_mono/Modules/Module/Datas/`
+   - ❌ `/var/www/html/_bases/base_techplanner_fila3_mono/Modules/Module/Datas/`
+   - ✅ `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Module/Datas/`
+   - ✅ `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Module/Datas/`
+   - ❌ `/var/www/html/<nome progetto>/Modules/Module/Datas/`
+   - ❌ `/var/www/html/<nome progetto>/Modules/Module/Datas/`
+   - ✅ `/var/www/html/<nome progetto>/laravel/Modules/Module/Datas/`
+   - ✅ `/var/www/html/<nome progetto>/laravel/Modules/Module/Datas/`
+   - ❌ `/var/www/html/_bases/base_techplanner_fila3_mono/Modules/Module/Datas/`
+   - ❌ `/var/www/html/_bases/base_techplanner_fila3_mono/Modules/Module/Datas/`
+   - ✅ `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Module/Datas/`
+   - ✅ `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+>>>>>>> 6ed19256f (.)
 
 2. **Errore**: Namespace errato
    - ❌ `namespace Modules\Module\App\Datas;`
@@ -162,6 +251,11 @@
 ## Collegamenti
 
 - [Data Objects Patient](../Patient/docs/data-objects.md)
+<<<<<<< HEAD
 - [Data Objects Patient](../patient/docs/data-objects.md)
 - [Best Practices](./best-practices.md)
 - [Convenzioni di Codice](./coding-standards.md)
+=======
+- [Best Practices](./best-practices.md)
+- [Convenzioni di Codice](./coding-standards.md)
+>>>>>>> 6ed19256f (.)

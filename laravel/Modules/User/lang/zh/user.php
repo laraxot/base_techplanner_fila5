@@ -36,13 +36,17 @@ return [
             'placeholder' => '输入姓名',
             'description' => '姓名',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'email' => [
             'label' => '邮箱',
             'placeholder' => '输入邮箱',
             'description' => '邮箱',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
         'created_at' => [
@@ -74,17 +78,36 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'created_at' => [
+            'label' => '创建日期',
+        ],
+        'updated_at' => [
+            'label' => '最后修改',
+        ],
+        'role' => [
+            'label' => '角色',
+        ],
+        'active' => '活跃',
+        'id' => [
+            'label' => 'ID',
+>>>>>>> 6ed19256f (.)
         ],
         'password' => [
             'label' => '密码',
             'placeholder' => '输入密码',
             'description' => '密码',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'password_confirmation' => [
             'label' => '确认密码',
             'placeholder' => '确认密码',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -94,10 +117,16 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'email_verified_at' => [
+            'label' => '邮箱验证时间',
+>>>>>>> 6ed19256f (.)
         ],
         'current_password' => [
             'label' => '当前密码',
             'placeholder' => '输入当前密码',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -113,6 +142,14 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'roles' => [
+            'label' => '角色',
+        ],
+        'permissions' => [
+            'label' => '权限',
+>>>>>>> 6ed19256f (.)
         ],
         'status' => [
             'label' => '状态',
@@ -121,6 +158,7 @@ return [
                 'inactive' => '不活跃',
                 'blocked' => '已封禁',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -250,6 +288,71 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'last_login' => [
+            'label' => '最后登录',
+        ],
+        'avatar' => [
+            'label' => '头像',
+        ],
+        'language' => [
+            'label' => '语言',
+        ],
+        'timezone' => [
+            'label' => '时区',
+        ],
+        'password_expires_at' => [
+            'label' => '密码过期时间',
+        ],
+        'verified' => [
+            'label' => '已验证',
+        ],
+        'unverified' => [
+            'label' => '未验证',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+        ],
+        'isActive' => [
+            'label' => 'isActive',
+        ],
+        'deactivate' => [
+            'label' => 'deactivate',
+        ],
+        'delete' => [
+            'label' => 'delete',
+        ],
+        'edit' => [
+            'label' => 'edit',
+        ],
+        'view' => [
+            'label' => 'view',
+        ],
+        'create' => [
+            'label' => 'create',
+        ],
+        'detach' => [
+            'label' => 'detach',
+        ],
+        'attach' => [
+            'label' => 'attach',
+        ],
+        'changePassword' => [
+            'label' => 'changePassword',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'filters' => [
@@ -363,6 +466,9 @@ return [
     'model' => [
         'label' => '用户',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

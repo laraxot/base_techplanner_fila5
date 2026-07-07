@@ -172,5 +172,8 @@ class CounterTest extends TestCase
 ## Collegamenti tra versioni di volt-introduction.md
 * [volt-introduction.md](laravel/Modules/Cms/docs/volt-introduction.md)
 * [volt-introduction.md](laravel/Modules/Cms/docs/components/volt-introduction.md)
+<<<<<<< HEAD
 * [volt-introduction.md](laravel/modules/cms/docs/volt-introduction.md)
 * [volt-introduction.md](laravel/modules/cms/docs/components/volt-introduction.md)
+=======
+>>>>>>> 6ed19256f (.)

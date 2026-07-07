@@ -1,17 +1,31 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
     'breadcrumb' => 'تاریخچه',
     'title' => 'تاریخچه :record',
     'default_datetime_format' => 'Y-m-d، H:i:s',
+=======
+return [
+    'breadcrumb' => 'تاریخچه',
+
+    'title' => 'تاریخچه :record',
+
+    'default_datetime_format' => 'Y-m-d، H:i:s',
+
+>>>>>>> 6ed19256f (.)
     'table' => [
         'field' => 'فیلد',
         'old' => 'قدیمی',
         'new' => 'جدید',
         'restore' => 'بازیابی',
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6ed19256f (.)
     'events' => [
         'updated' => 'به‌روزرسانی شد',
         'created' => 'ایجاد شد',
@@ -20,6 +34,7 @@ return [
         'restore_successful' => 'با موفقیت بازیابی شد',
         'restore_failed' => 'بازیابی ناموفق بود',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -33,4 +48,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

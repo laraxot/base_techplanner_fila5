@@ -8,7 +8,10 @@ declare(strict_types=1);
 
 namespace Modules\User\Enums;
 
+<<<<<<< HEAD
 use Modules\Xot\Traits\EnumTrait;
+=======
+>>>>>>> 6ed19256f (.)
 use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasLabel;
@@ -17,8 +20,11 @@ use Filament\Support\Contracts\HasLabel;
 
 enum UserType: string implements HasColor, HasIcon, HasLabel
 {
+<<<<<<< HEAD
     use EnumTrait;
 
+=======
+>>>>>>> 6ed19256f (.)
     // //use LaravelEnumHelper;
 
     case MasterAdmin = 'master_admin';
@@ -39,4 +45,39 @@ enum UserType: string implements HasColor, HasIcon, HasLabel
         };
     }
 
+<<<<<<< HEAD
+=======
+    public function getLabel(): string
+    {
+        return match ($this) {
+            self::MasterAdmin => 'master_admin',
+            self::BoUser => 'backoffice_user',
+            self::CustomerUser => 'customer_user',
+            self::System => 'system',
+            self::Technician => 'technician',
+        };
+    }
+
+    public function getColor(): string
+    {
+        return match ($this) {
+            self::MasterAdmin => 'success',
+            self::BoUser => 'warning',
+            self::CustomerUser => 'gray',
+            self::System => 'blue',
+            self::Technician => 'green',
+        };
+    }
+
+    public function getIcon(): string
+    {
+        return match ($this) {
+            self::MasterAdmin => 'heroicon-m-pencil',
+            self::BoUser => 'heroicon-m-pencil',
+            self::CustomerUser => 'heroicon-m-pencil',
+            self::System => 'heroicon-m-pencil',
+            self::Technician => 'heroicon-m-pencil',
+        };
+    }
+>>>>>>> 6ed19256f (.)
 }

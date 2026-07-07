@@ -46,6 +46,10 @@ class SaveTenantConfigAction
     /**
      * @param  array<string, mixed>  $array1
      * @param  array<string, mixed>  $array2
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> 6ed19256f (.)
      * @return array<string, mixed>
      */
     private function arrayMergeRecursiveDistinct(array $array1, array $array2): array

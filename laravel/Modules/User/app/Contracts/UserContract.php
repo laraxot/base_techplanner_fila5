@@ -20,10 +20,15 @@ interface UserContract extends Authenticatable
 {
     /**
      * Get the primary key for the model.
+<<<<<<< HEAD
      *
      * @return mixed
      */
     public function getKey();
+=======
+     */
+    public function getKey(): mixed;
+>>>>>>> 6ed19256f (.)
 
     /**
      * Get the current team of the user's context.

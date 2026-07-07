@@ -269,4 +269,8 @@ class Template extends Model
 - Documentazione
 - Package
 - Tools
+<<<<<<< HEAD
 - Best Practices 
+=======
+- Best Practices
+>>>>>>> 6ed19256f (.)

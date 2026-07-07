@@ -3,7 +3,10 @@
 /**
  * --.
  */
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\TenantResource\RelationManagers;

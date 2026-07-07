@@ -1,7 +1,10 @@
 # Model/Factory/Seeder Audit
 
 Generated: 2025-08-22 16:29
+<<<<<<< HEAD
 Generated: 2025-08-22 16:29
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Coverage
 | Model | Factory | Seeded |
@@ -28,4 +31,8 @@ Seeders:
 - Keep `MailTemplate*` seeding as is; extend with relationships if needed.
 
 ## Likely non-business-critical
+<<<<<<< HEAD
 - None; all listed are domain entities but some may be configuration-only and safe to seed minimally.
+=======
+- None; all listed are domain entities but some may be configuration-only and safe to seed minimally.
+>>>>>>> 6ed19256f (.)

@@ -8,39 +8,52 @@ return [
             'label' => 'Name',
             'placeholder' => 'Enter permission name',
             'help' => 'Unique permission name',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'guard_name' => [
             'label' => 'Guard Name',
             'placeholder' => 'Enter guard name',
             'help' => 'Guard name for the permission',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'active' => [
             'label' => 'Active',
             'placeholder' => 'Select status',
             'help' => 'Indicates if the permission is active',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'created_at' => [
             'label' => 'Created At',
             'placeholder' => 'Creation date',
             'help' => 'Permission creation date',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'common' => [
         'yes' => 'Yes',
         'no' => 'No',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -52,4 +65,6 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

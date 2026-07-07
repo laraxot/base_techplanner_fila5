@@ -7,7 +7,10 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
 
 ### 1. Namespace e Convenzioni
 - [Convenzioni Namespace](NAMESPACE-CONVENTIONS.md)
+<<<<<<< HEAD
 - [Convenzioni Namespace](namespace-conventions.md)
+=======
+>>>>>>> 6ed19256f (.)
 - Risoluzione conflitti nelle convenzioni di namespace
 - Mantenimento della compatibilità con PHPStan
 
@@ -25,8 +28,11 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
 ### 3. Autenticazione e UI
 - [Componenti Filament](../../Themes/One/project_docs/FILAMENT_COMPONENTS.md)
 - [Registrazione Utenti](../../Themes/One/project_docs/AUTH.md)
+<<<<<<< HEAD
 - [Componenti Filament](../../themes/one/project_docs/filament_components.md)
 - [Registrazione Utenti](../../themes/one/project_docs/auth.md)
+=======
+>>>>>>> 6ed19256f (.)
   - Implementazione completa sistema registrazione
   - Gestione tipi utente dinamica
   - UI moderna con Filament
@@ -228,15 +234,23 @@ La risoluzione dei conflitti rimanenti dovrebbe seguire questi principi:
 
 * [risoluzione_conflitti.md](../../../Xot/project_docs/risoluzione_conflitti.md)
 * [risoluzione_conflitti.md](../../../Tenant/project_docs/risoluzione_conflitti.md)
+<<<<<<< HEAD
 * [risoluzione_conflitti.md](../../../xot/project_docs/risoluzione_conflitti.md)
 * [risoluzione_conflitti.md](../../../tenant/project_docs/risoluzione_conflitti.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 aurmich/dev
 5693302 (.)
 b6f667c (.)
 * [Risoluzione Conflitti Xot](../../../Xot/project_docs/risoluzione_conflitti.md)
 * [Risoluzione Conflitti Tenant](../../../Tenant/project_docs/risoluzione_conflitti.md)
+<<<<<<< HEAD
 * [Risoluzione Conflitti Xot](../../../xot/project_docs/risoluzione_conflitti.md)
 * [Risoluzione Conflitti Tenant](../../../tenant/project_docs/risoluzione_conflitti.md)
 * [Linee Guida Principali Risoluzione Conflitti](../../../../project_docs/conflict_resolution.md)
 fc83074 (.)
+=======
+* [Linee Guida Principali Risoluzione Conflitti](../../../../project_docs/conflict_resolution.md)
+fc83074 (.)
+>>>>>>> 6ed19256f (.)

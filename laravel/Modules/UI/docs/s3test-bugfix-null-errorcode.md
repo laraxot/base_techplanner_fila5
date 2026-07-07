@@ -122,10 +122,17 @@ try {
 
 ## Data Correzione
 2025-01-06
+<<<<<<< HEAD
 [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Autore
 AI Assistant
 
 ## Status
+<<<<<<< HEAD
 ✅ Risolto e testato
+=======
+✅ Risolto e testato
+>>>>>>> 6ed19256f (.)

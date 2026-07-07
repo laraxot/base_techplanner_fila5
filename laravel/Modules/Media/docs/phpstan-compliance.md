@@ -49,4 +49,8 @@ The module adheres to:
 - Strict type declarations
 - Comprehensive type hints
 - Media handling best practices
+<<<<<<< HEAD
 - Modern PHP 8.2+ feature usage
+=======
+- Modern PHP 8.2+ feature usage
+>>>>>>> 6ed19256f (.)

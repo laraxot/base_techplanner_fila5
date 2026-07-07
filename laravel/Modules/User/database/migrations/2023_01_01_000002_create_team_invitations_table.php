@@ -37,7 +37,11 @@ return new class extends XotBaseMigration {
                 $table->string('user_id')->nullable()->index();
             }
 
+<<<<<<< HEAD
             // if ($hasIndexName('team_invitations_team_id_foreign'))
+=======
+            // if ($this->hasIndexName('team_invitations_team_id_foreign')) {
+>>>>>>> 6ed19256f (.)
             //    $table->dropForeign('team_invitations_team_id_foreign');
             // }
 

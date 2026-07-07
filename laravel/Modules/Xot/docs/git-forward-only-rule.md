@@ -25,8 +25,11 @@ Questa non è una raccomandazione, è una **legge del progetto**.
 - Storia preservata SEMPRE
 - Tracciabilità totale
 - Documentare correzioni con commit message chiari
+<<<<<<< HEAD
 - Studiare lo storico con `git show` senza ripristinare file completi
 - Reintrodurre solo compatibilita' minima nel codice corrente quando serve
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Il Perché
 
@@ -53,6 +56,7 @@ Gli errori sono maestri. Non si nascondono, si documentano e si correggono andan
 
 ## Workflow Corretto
 
+<<<<<<< HEAD
 ### Scenario 0: Un file attuale e' sbagliato
 
 ```bash
@@ -66,6 +70,8 @@ git show HEAD~3:Modules/Foo/app/Bar.php
 # poi modifico il file attuale con una fix forward-only
 ```
 
+=======
+>>>>>>> 6ed19256f (.)
 ### Scenario 1: Ho committato un bug
 
 ```bash
@@ -107,6 +113,7 @@ git push
 git reset --hard HEAD~1
 
 # ✅ CORRETTO
+<<<<<<< HEAD
 # Ricrea la modifica corretta sul branch giusto
 git checkout correct-branch
 # studia il delta utile e reimplementalo nel presente
@@ -114,6 +121,17 @@ git push
 
 # Sul branch sbagliato fai un nuovo commit di riallineamento
 # senza usare revert automatici
+=======
+# Sposta il commit sul branch giusto
+git checkout correct-branch
+git cherry-pick wrong-branch
+git push
+
+# Annulla sul branch sbagliato
+git checkout wrong-branch
+git revert HEAD
+git push
+>>>>>>> 6ed19256f (.)
 ```
 
 ### Scenario 4: Voglio "annullare" modifiche
@@ -123,6 +141,7 @@ git push
 git reset --hard abc123
 
 # ✅ CORRETTO
+<<<<<<< HEAD
 # Studia la differenza e applica una correzione forward-only
 git diff abc123..HEAD -- path/to/file
 # poi fai un nuovo commit con la forma corretta del codice
@@ -138,6 +157,13 @@ git show <old-sha>:Modules/Xot/app/Datas/XotData.php
 # implemento un wrapper compatibile minimo nel file corrente
 ```
 
+=======
+# Usa revert per creare un nuovo commit che annulla
+git revert HEAD~2..HEAD
+git push
+```
+
+>>>>>>> 6ed19256f (.)
 ## Eccezioni Rarissime
 
 Le UNICHE 3 eccezioni accettabili:
@@ -164,7 +190,11 @@ Le UNICHE 3 eccezioni accettabili:
 3. **Team Trust**: Tutti si fidano della storia condivisa
 4. **Compliance**: Soddisfa audit e requisiti legali
 5. **Learning Culture**: Gli errori diventano lezioni documentate
+<<<<<<< HEAD
 6. **Correzione Sicura**: Posso sempre produrre un nuovo stato corretto senza distruggere il contesto accumulato
+=======
+6. **Rollback Sicuro**: Posso sempre tornare indietro con `git revert`
+>>>>>>> 6ed19256f (.)
 
 ## Commit Message Format
 
@@ -207,4 +237,8 @@ Non è una best practice, è **l'unica pratica**.
 ---
 
 **Ultima revisione**: Novembre 2025
+<<<<<<< HEAD
 **Status**: Regola Assoluta e Immutabile
+=======
+**Status**: Regola Assoluta e Immutabile
+>>>>>>> 6ed19256f (.)

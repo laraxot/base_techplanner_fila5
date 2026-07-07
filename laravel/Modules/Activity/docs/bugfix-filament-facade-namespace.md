@@ -3,7 +3,10 @@
 ## 🐛 Errore
 
 **Data:** 2025-01-22
+<<<<<<< HEAD
 **Data:** [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 **File:** `Modules/Activity/app/Filament/Actions/ListLogActivitiesAction.php:69`
 **Messaggio:** `Class "Filament\Support\Facades\Filament" not found`
 
@@ -112,7 +115,11 @@ class ListLogActivitiesAction extends XotBaseAction
 ### PHPStan Level 10
 
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/html/ptvx/laravel
+>>>>>>> 6ed19256f (.)
 php -d memory_limit=2G ./vendor/bin/phpstan analyse \
   Modules/Activity/app/Filament/Actions/ListLogActivitiesAction.php \
   --level=10 --no-progress
@@ -123,7 +130,11 @@ php -d memory_limit=2G ./vendor/bin/phpstan analyse \
 ### Laravel Pint
 
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/html/ptvx/laravel
+>>>>>>> 6ed19256f (.)
 vendor/bin/pint Modules/Activity/app/Filament/Actions/ListLogActivitiesAction.php
 ```
 
@@ -219,18 +230,24 @@ Usare sempre file esistenti del progetto come riferimento per i namespace.
 
 - [ListLogActivitiesAction.php](../app/Filament/Actions/ListLogActivitiesAction.php) - File fixato
 - [XotBasePage.php](../../Xot/app/Filament/Pages/XotBasePage.php) - Reference corretta
+<<<<<<< HEAD
 - [Activity Module README](./readme.md)
 
 ### Regole e Best Practices
 
 - [Filament Best Practices](../../xot/docs/filament-best-practices.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Activity Module README](./README.md)
 
 ### Regole e Best Practices
 
 - [Filament Best Practices](../../Xot/docs/FILAMENT-BEST-PRACTICES.md)
 - [Namespace Rules](../../../docs/MODULE_NAMESPACE_RULES.md)
+<<<<<<< HEAD
 - [Namespace Rules](../../../../docs/module_namespace_rules.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ---
 
@@ -265,8 +282,15 @@ Usare sempre file esistenti del progetto come riferimento per i namespace.
 ---
 
 **Ultimo Aggiornamento:** 2025-01-22
+<<<<<<< HEAD
 **Ultimo Aggiornamento:** [DATE]
 **Autore:** Analisi Errore + Fix Namespace
 **Stato:** ✅ RISOLTO - Pronto per produzione
 **Severity:** 🔴 CRITICA (500 error)
 **Time to Fix:** 2 minuti
+=======
+**Autore:** Analisi Errore + Fix Namespace
+**Stato:** ✅ RISOLTO - Pronto per produzione
+**Severity:** 🔴 CRITICA (500 error)
+**Time to Fix:** 2 minuti
+>>>>>>> 6ed19256f (.)

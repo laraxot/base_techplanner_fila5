@@ -42,7 +42,11 @@ class Snapshot extends SpatieSnapshot
 {
     use HasXotFactory;
 
+<<<<<<< HEAD
     /** @laravel/Modules/UI/docs/bugfix-awstest-undefined-variable.md string */
+=======
+    /** @var string */
+>>>>>>> 6ed19256f (.)
     protected $connection = 'activity';
 
     /** @var list<string> */

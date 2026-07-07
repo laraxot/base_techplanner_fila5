@@ -1,7 +1,10 @@
 # PHPStan Level 10 Compliance Status
 
 **Last Updated**: 2025-12-10
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 **Status**: ✅ FULLY COMPLIANT (0 errors)
 
 ## Summary
@@ -53,4 +56,8 @@ To maintain PHPStan compliance:
 ## Related Documentation
 - [Laravel Collections Best Practices](laravel-collections.md)
 - [Queueable Actions Pattern](queueable-actions.md)
+<<<<<<< HEAD
 - [Task Management Architecture](task-architecture.md)
+=======
+- [Task Management Architecture](task-architecture.md)
+>>>>>>> 6ed19256f (.)

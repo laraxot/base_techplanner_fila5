@@ -67,8 +67,11 @@
    ```markdown
    Vedi anche: [Implementazione nel modulo Xot](/laravel/Modules/Xot/docs/nome_documento.md)
    Vedi anche: [Implementazione nel modulo Xot](/laravel/Modules/Xot/project_docs/nome_documento.md)
+<<<<<<< HEAD
    Vedi anche: [Implementazione nel modulo Xot](/laravel/modules/xot/docs/nome_documento.md)
    Vedi anche: [Implementazione nel modulo Xot](/laravel/modules/xot/project_docs/nome_documento.md)
+=======
+>>>>>>> 6ed19256f (.)
    ```
 
 ## Manutenzione della documentazione
@@ -106,11 +109,14 @@ Utilizzare script nella cartella `bashscripts` per automatizzare le verifiche e 
 
 - [Regole per file di traduzione](../../../.cursor/rules/translation_files_rules.mdc)
 
+<<<<<<< HEAD
 - [Documentazione generale](../../../project_docs/documentation_rules.md)
 - [Convenzioni di naming in generale](../../../project_docs/naming_conventions.md)
 - [Regole per ServiceProvider](../../indennitacondizionilavoro/project_docs/service_provider.md)
 - [Regole per file di traduzione](../../../.cursor/rules/translation_files_rules.mdc)
 
+=======
+>>>>>>> 6ed19256f (.)
 *Ultimo aggiornamento: Giugno 2025*
 - [Documentazione generale](../../../project_docs/documentation_rules.md)
 - [Convenzioni di naming in generale](../../../project_docs/naming_conventions.md)
@@ -185,7 +191,10 @@ Utilizzare script nella cartella `bashscripts` per automatizzare le verifiche e 
 2. **Da root a modulo**: La documentazione root deve linkare ai documenti specifici dei moduli:
    ```markdown
    Vedi anche: [Implementazione nel modulo Xot](/laravel/Modules/Xot/docs/nome_documento.md)
+<<<<<<< HEAD
    Vedi anche: [Implementazione nel modulo Xot](/laravel/modules/xot/docs/nome_documento.md)
+=======
+>>>>>>> 6ed19256f (.)
    ```
 
 ## Manutenzione della documentazione
@@ -221,11 +230,19 @@ Utilizzare script nella cartella `bashscripts` per automatizzare le verifiche e 
 
 ## Collegamenti a documentazione correlata
 
+<<<<<<< HEAD
+=======
+- [Documentazione generale](../../../docs/documentation_rules.md)
+- [Convenzioni di naming in generale](../../../docs/naming_conventions.md)
+>>>>>>> 6ed19256f (.)
 - [Regole per ServiceProvider](../../IndennitaCondizioniLavoro/docs/service_provider.md)
 - [Regole per file di traduzione](../../../.cursor/rules/translation_files_rules.mdc)
 
 *Ultimo aggiornamento: Giugno 2025*
+<<<<<<< HEAD
 - [Documentazione generale](../../../../docs/documentation_rules.md)
 - [Convenzioni di naming in generale](../../../../docs/naming_conventions.md)
 - [Regole per ServiceProvider](../../indennitacondizionilavoro/docs/service_provider.md)
 - [Regole per file di traduzione](../../../.cursor/rules/translation_files_rules.mdc)
+=======
+>>>>>>> 6ed19256f (.)

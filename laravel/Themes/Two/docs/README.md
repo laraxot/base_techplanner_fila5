@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 📚 Documentazione Tema Two - TechPlanner
 
 ## 🎯 Panoramica
@@ -516,6 +517,8 @@ Per supporto o domande sul tema Two:
 ---
 
 *Questa documentazione è mantenuta attivamente dal team TechPlanner per garantire sempre informazioni aggiornate e precise.*
+=======
+>>>>>>> 6ed19256f (.)
 # Theme Two
 
 ## Introduzione
@@ -603,4 +606,7 @@ Il Tema Two è un tema alternativo per il progetto.
 * [README.md](laravel/Themes/Two/docs/README.md)
 * [README.md](laravel/Themes/One/docs/README.md)
 
+<<<<<<< HEAD
 # Theme Two Documentation\n\nActive theme for Sottana Service.\n\n## Updates\n- Brand: Sottana Service\n- Header: Updated with Elephant Logo and Sottana Service name.\n- Footer: Updated with new brand and contacts.
+=======
+>>>>>>> 6ed19256f (.)

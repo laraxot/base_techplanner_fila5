@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Employee\Models;
 
+<<<<<<< HEAD
+=======
+use Modules\User\Models\Tenant;
+>>>>>>> 6ed19256f (.)
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
@@ -26,7 +30,10 @@ use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\Team;
+<<<<<<< HEAD
 use Modules\User\Models\Tenant;
+=======
+>>>>>>> 6ed19256f (.)
 use Modules\Xot\Contracts\ProfileContract;
 use Override;
 use Parental\HasParent;
@@ -62,7 +69,10 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property string|null $created_by
  * @property string|null $updated_by
  * @property-read \Modules\User\Models\User|null $user
+<<<<<<< HEAD
  *
+=======
+>>>>>>> 6ed19256f (.)
  * @method static Builder|Admin newModelQuery()
  * @method static Builder|Admin newQuery()
  * @method static Builder|Admin query()
@@ -76,7 +86,10 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder|Admin whereUpdatedAt($value)
  * @method static Builder|Admin whereUpdatedBy($value)
  * @method static Builder|Admin whereUserId($value)
+<<<<<<< HEAD
  *
+=======
+>>>>>>> 6ed19256f (.)
  * @property string|null $name
  * @property string|null $first_name
  * @property string|null $last_name
@@ -134,7 +147,10 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property-read int|null $tokens_count
  * @property-read Collection<int, Treatment> $treatments
  * @property-read int|null $treatments_count
+<<<<<<< HEAD
  *
+=======
+>>>>>>> 6ed19256f (.)
  * @method static Builder<static>|Admin admins()
  * @method static Builder<static>|Admin doctors()
  * @method static UserFactory factory($count = null, $state = [])
@@ -170,7 +186,10 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder<static>|Admin whereUuid($value)
  * @method static Builder<static>|Admin withoutPermission($permissions)
  * @method static Builder<static>|Admin withoutRole($roles, $guard = null)
+<<<<<<< HEAD
  *
+=======
+>>>>>>> 6ed19256f (.)
  * @property-read Collection<int, Device> $devices
  * @property-read int|null $devices_count
  * @property string|null $dental_problems
@@ -182,7 +201,10 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property string|null $certificates
  * @property-read Collection<int, Membership> $teamUsers
  * @property-read int|null $team_users_count
+<<<<<<< HEAD
  *
+=======
+>>>>>>> 6ed19256f (.)
  * @method static Builder<static>|Admin whereCertificates($value)
  * @method static Builder<static>|Admin whereDentalProblems($value)
  * @method static Builder<static>|Admin whereHealthCard($value)
@@ -190,7 +212,10 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder<static>|Admin whereIseeCertificate($value)
  * @method static Builder<static>|Admin whereLastDentalVisit($value)
  * @method static Builder<static>|Admin wherePregnancyCertificate($value)
+<<<<<<< HEAD
  *
+=======
+>>>>>>> 6ed19256f (.)
  * @property string|null $country_code
  * @property string|null $children_count
  * @property string|null $family_members
@@ -201,7 +226,10 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property string|null $doctor_certificate
  * @property array<array-key, mixed>|null $certification
  * @property string|null $last_dental_visit_period
+<<<<<<< HEAD
  *
+=======
+>>>>>>> 6ed19256f (.)
  * @method static Builder<static>|Admin whereCertification($value)
  * @method static Builder<static>|Admin whereChildrenCount($value)
  * @method static Builder<static>|Admin whereCountryCode($value)
@@ -212,6 +240,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder<static>|Admin whereLastDentalVisitPeriod($value)
  * @method static Builder<static>|Admin whereNationality($value)
  * @method static Builder<static>|Admin whereYearsInItaly($value)
+<<<<<<< HEAD
  *
  * @property string|null $age_range
  *
@@ -222,6 +251,13 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property-read Collection<int, Tenant> $tenants
  * @property-read int|null $tenants_count
  *
+=======
+ * @property string|null $age_range
+ * @method static Builder<static>|Admin whereAgeRange($value)
+ * @mixin IdeHelperAdmin
+ * @property-read Collection<int, Tenant> $tenants
+ * @property-read int|null $tenants_count
+>>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class Admin extends User

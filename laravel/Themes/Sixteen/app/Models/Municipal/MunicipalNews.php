@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Themes\Sixteen\Models\Municipal;
 
+<<<<<<< HEAD
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Collection;
@@ -83,11 +84,25 @@ use Illuminate\Support\Str;
  * @property-read Collection<int, ContactPoint> $contacts
  * @property-read Collection<int, self> $categories
  * @property-read Collection<int, self> $tags
+=======
+use Illuminate\Database\Eloquent\{Model, SoftDeletes, Factories\HasFactory};
+use Illuminate\Database\Eloquent\Relations\{BelongsTo, MorphMany, BelongsToMany};
+use Illuminate\Database\Eloquent\Casts\Attribute;
+use Illuminate\Support\Str;
+use Carbon\Carbon;
+
+/**
+ * Modello per le notizie comunali (Municipal News)
+ * 
+ * Rappresenta notizie, comunicati stampa, avvisi pubblici
+ * e altre comunicazioni dell'ente secondo l'ontologia AGID
+>>>>>>> 6ed19256f (.)
  */
 class MunicipalNews extends Model
 {
     use HasFactory, SoftDeletes;
 
+<<<<<<< HEAD
     /**
      * Tipologie di notizia secondo AGID
      */
@@ -156,6 +171,8 @@ class MunicipalNews extends Model
         'international' => 'Internazionale',
     ];
 
+=======
+>>>>>>> 6ed19256f (.)
     protected $table = 'sixteen_municipal_news';
 
     protected $fillable = [
@@ -247,6 +264,77 @@ class MunicipalNews extends Model
     ];
 
     /**
+<<<<<<< HEAD
+=======
+     * Tipologie di notizia secondo AGID
+     */
+    public const NEWS_TYPES = [
+        'news' => 'Notizia',
+        'press_release' => 'Comunicato Stampa',
+        'public_notice' => 'Avviso Pubblico',
+        'announcement' => 'Annuncio',
+        'alert' => 'Allerta',
+        'service_update' => 'Aggiornamento Servizi',
+        'regulation_update' => 'Aggiornamento Normativo',
+        'event_announcement' => 'Annuncio Eventi',
+        'tender_notice' => 'Bando/Gara',
+        'job_posting' => 'Offerta Lavoro',
+        'council_update' => 'Aggiornamento Consiglio',
+        'mayor_message' => 'Messaggio del Sindaco',
+        'citizen_info' => 'Informazione ai Cittadini',
+        'emergency' => 'Emergenza',
+        'other' => 'Altro',
+    ];
+
+    /**
+     * Stati della notizia
+     */
+    public const NEWS_STATUSES = [
+        'draft' => 'Bozza',
+        'review' => 'In Revisione',
+        'approved' => 'Approvata',
+        'published' => 'Pubblicata',
+        'archived' => 'Archiviata',
+        'expired' => 'Scaduta',
+        'retracted' => 'Ritirata',
+    ];
+
+    /**
+     * Livelli di priorità
+     */
+    public const PRIORITY_LEVELS = [
+        1 => 'Bassa',
+        2 => 'Normale', 
+        3 => 'Alta',
+        4 => 'Urgente',
+        5 => 'Critica',
+    ];
+
+    /**
+     * Livelli di urgenza
+     */
+    public const URGENCY_LEVELS = [
+        1 => 'Non Urgente',
+        2 => 'Normale',
+        3 => 'Urgente',
+        4 => 'Molto Urgente',
+        5 => 'Emergenza',
+    ];
+
+    /**
+     * Ambiti geografici
+     */
+    public const GEOGRAPHIC_SCOPES = [
+        'municipal' => 'Comunale',
+        'district' => 'Quartiere/Circoscrizione',
+        'regional' => 'Regionale',
+        'national' => 'Nazionale',
+        'european' => 'Europeo',
+        'international' => 'Internazionale',
+    ];
+
+    /**
+>>>>>>> 6ed19256f (.)
      * Relazione con l'unità organizzativa
      */
     public function organizationalUnit(): BelongsTo
@@ -310,9 +398,15 @@ class MunicipalNews extends Model
         return $query->where('is_published', true)
             ->where('news_status', 'published')
             ->where('publication_date', '<=', now())
+<<<<<<< HEAD
             ->where(function ($q): void {
                 $q->whereNull('expiry_date')
                     ->orWhere('expiry_date', '>', now());
+=======
+            ->where(function ($q) {
+                $q->whereNull('expiry_date')
+                  ->orWhere('expiry_date', '>', now());
+>>>>>>> 6ed19256f (.)
             });
     }
 
@@ -382,6 +476,7 @@ class MunicipalNews extends Model
     }
 
     /**
+<<<<<<< HEAD
      * Ottiene l'excerpt con fallback al contenuto
      */
     public function getExcerptFormatted(int $length = 200): string
@@ -590,6 +685,8 @@ class MunicipalNews extends Model
     }
 
     /**
+=======
+>>>>>>> 6ed19256f (.)
      * Accessor per il nome del tipo di notizia
      */
     protected function newsTypeName(): Attribute
@@ -649,7 +746,11 @@ class MunicipalNews extends Model
                 if ($this->is_expired) {
                     return false;
                 }
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> 6ed19256f (.)
                 return $this->publication_date <= now();
             }
         );
@@ -685,10 +786,16 @@ class MunicipalNews extends Model
                 if ($this->reading_time) {
                     return $this->reading_time;
                 }
+<<<<<<< HEAD
 
                 // Stima basata su 200 parole al minuto
                 $wordCount = str_word_count(strip_tags($this->content));
 
+=======
+                
+                // Stima basata su 200 parole al minuto
+                $wordCount = str_word_count(strip_tags($this->content));
+>>>>>>> 6ed19256f (.)
                 return max(1, ceil($wordCount / 200));
             }
         );
@@ -710,7 +817,11 @@ class MunicipalNews extends Model
     protected function featuredImageUrl(): Attribute
     {
         return Attribute::make(
+<<<<<<< HEAD
             get: fn () => $this->featured_image ? asset('storage/'.$this->featured_image) : null
+=======
+            get: fn () => $this->featured_image ? asset('storage/' . $this->featured_image) : null
+>>>>>>> 6ed19256f (.)
         );
     }
 
@@ -725,7 +836,10 @@ class MunicipalNews extends Model
                 if (empty($this->attributes['slug'])) {
                     $this->attributes['slug'] = Str::slug($value);
                 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
                 return $value;
             }
         );
@@ -739,6 +853,7 @@ class MunicipalNews extends Model
         return Attribute::make(
             set: function ($value) {
                 $this->attributes['content'] = $value;
+<<<<<<< HEAD
 
                 // Auto-calcola reading time se non impostato
                 if (! isset($this->attributes['reading_time'])) {
@@ -746,37 +861,272 @@ class MunicipalNews extends Model
                     $this->attributes['reading_time'] = max(1, ceil($wordCount / 200));
                 }
 
+=======
+                
+                // Auto-calcola reading time se non impostato
+                if (!isset($this->attributes['reading_time'])) {
+                    $wordCount = str_word_count(strip_tags($value));
+                    $this->attributes['reading_time'] = max(1, ceil($wordCount / 200));
+                }
+                
+>>>>>>> 6ed19256f (.)
                 return $value;
             }
         );
     }
 
     /**
+<<<<<<< HEAD
      * Boot del modello
      */
     protected static function boot(): void
+=======
+     * Ottiene l'excerpt con fallback al contenuto
+     */
+    public function getExcerptFormatted(int $length = 200): string
+    {
+        if ($this->excerpt) {
+            return $this->excerpt;
+        }
+        
+        return Str::limit(strip_tags($this->content), $length);
+    }
+
+    /**
+     * Ottiene i tag formattati
+     */
+    public function getFormattedTags(): array
+    {
+        if (!$this->tags || !is_array($this->tags)) {
+            return [];
+        }
+
+        return collect($this->tags)
+            ->map(function ($tag) {
+                return is_string($tag) ? ['name' => $tag, 'slug' => Str::slug($tag)] : $tag;
+            })
+            ->toArray();
+    }
+
+    /**
+     * Ottiene i link esterni formattati
+     */
+    public function getFormattedExternalLinks(): array
+    {
+        if (!$this->external_links || !is_array($this->external_links)) {
+            return [];
+        }
+
+        return collect($this->external_links)
+            ->map(function ($link) {
+                if (is_string($link)) {
+                    return ['url' => $link, 'title' => parse_url($link, PHP_URL_HOST)];
+                }
+                return $link;
+            })
+            ->toArray();
+    }
+
+    /**
+     * Ottiene gli allegati formattati
+     */
+    public function getFormattedAttachments(): array
+    {
+        if (!$this->attachments || !is_array($this->attachments)) {
+            return [];
+        }
+
+        return collect($this->attachments)
+            ->map(function ($attachment) {
+                if (is_string($attachment)) {
+                    return [
+                        'path' => $attachment,
+                        'name' => basename($attachment),
+                        'url' => asset('storage/' . $attachment),
+                        'size' => null,
+                        'type' => pathinfo($attachment, PATHINFO_EXTENSION),
+                    ];
+                }
+                
+                return array_merge([
+                    'url' => isset($attachment['path']) ? asset('storage/' . $attachment['path']) : null,
+                ], $attachment);
+            })
+            ->toArray();
+    }
+
+    /**
+     * Ottiene la galleria immagini formattata
+     */
+    public function getFormattedGallery(): array
+    {
+        if (!$this->gallery || !is_array($this->gallery)) {
+            return [];
+        }
+
+        return collect($this->gallery)
+            ->map(function ($image) {
+                if (is_string($image)) {
+                    return [
+                        'path' => $image,
+                        'url' => asset('storage/' . $image),
+                        'caption' => null,
+                        'alt' => null,
+                    ];
+                }
+                
+                return array_merge([
+                    'url' => isset($image['path']) ? asset('storage/' . $image['path']) : null,
+                ], $image);
+            })
+            ->toArray();
+    }
+
+    /**
+     * Incrementa il contatore di visualizzazioni
+     */
+    public function incrementViewCount(): void
+    {
+        $this->increment('view_count');
+    }
+
+    /**
+     * Incrementa il contatore di condivisioni
+     */
+    public function incrementShareCount(): void
+    {
+        $this->increment('share_count');
+    }
+
+    /**
+     * Verifica se può essere pubblicata
+     */
+    public function canBePublished(): bool
+    {
+        return in_array($this->news_status, ['approved']) &&
+               $this->publication_date <= now();
+    }
+
+    /**
+     * Verifica se deve essere archiviata
+     */
+    public function shouldBeArchived(): bool
+    {
+        return $this->is_expired || 
+               ($this->expiry_date && $this->expiry_date->isPast());
+    }
+
+    /**
+     * Ottiene i dati strutturati per SEO
+     */
+    public function getStructuredData(): array
+    {
+        return [
+            '@context' => 'https://schema.org',
+            '@type' => 'NewsArticle',
+            'headline' => $this->title,
+            'description' => $this->getExcerptFormatted(),
+            'image' => $this->featured_image_url,
+            'datePublished' => $this->publication_date?->toISOString(),
+            'dateModified' => $this->last_modified?->toISOString(),
+            'author' => [
+                '@type' => 'Person',
+                'name' => $this->author?->full_name,
+            ],
+            'publisher' => [
+                '@type' => 'Organization',
+                'name' => $this->organizationalUnit?->name ?? 'Comune',
+            ],
+            'mainEntityOfPage' => $this->url,
+            'articleSection' => $this->category,
+            'keywords' => is_array($this->seo_keywords) ? implode(', ', $this->seo_keywords) : null,
+            'wordCount' => str_word_count(strip_tags($this->content)),
+            'timeRequired' => 'PT' . $this->estimated_reading_time . 'M',
+        ];
+    }
+
+    /**
+     * Ottiene le informazioni complete della notizia
+     */
+    public function getNewsDetails(): array
+    {
+        return [
+            'basic_info' => [
+                'title' => $this->title,
+                'subtitle' => $this->subtitle,
+                'type' => $this->news_type_name,
+                'category' => $this->category,
+                'status' => $this->news_status_name,
+                'priority' => $this->priority_name,
+                'urgency' => $this->urgency_name,
+            ],
+            'content' => [
+                'excerpt' => $this->getExcerptFormatted(),
+                'content' => $this->content,
+                'reading_time' => $this->estimated_reading_time,
+                'featured_image' => $this->featured_image_url,
+                'gallery' => $this->getFormattedGallery(),
+                'attachments' => $this->getFormattedAttachments(),
+            ],
+            'publication' => [
+                'publication_date' => $this->publication_date,
+                'expiry_date' => $this->expiry_date,
+                'last_modified' => $this->last_modified,
+                'is_current' => $this->is_current,
+                'is_fresh' => $this->is_fresh,
+                'age_in_days' => $this->age_in_days,
+            ],
+            'metadata' => [
+                'author' => $this->author?->full_name,
+                'source' => $this->source,
+                'tags' => $this->getFormattedTags(),
+                'external_links' => $this->getFormattedExternalLinks(),
+                'view_count' => $this->view_count,
+                'share_count' => $this->share_count,
+            ],
+        ];
+    }
+
+    /**
+     * Boot del modello
+     */
+    protected static function boot()
+>>>>>>> 6ed19256f (.)
     {
         parent::boot();
 
         // Genera slug se mancante
+<<<<<<< HEAD
         static::creating(function ($model): void {
+=======
+        static::creating(function ($model) {
+>>>>>>> 6ed19256f (.)
             if (empty($model->slug)) {
                 $model->slug = Str::slug($model->title);
             }
         });
 
         // Assicura unicità dello slug
+<<<<<<< HEAD
         static::creating(function ($model): void {
+=======
+        static::creating(function ($model) {
+>>>>>>> 6ed19256f (.)
             $originalSlug = $model->slug;
             $counter = 1;
 
             while (static::where('slug', $model->slug)->exists()) {
+<<<<<<< HEAD
                 $model->slug = $originalSlug.'-'.$counter;
+=======
+                $model->slug = $originalSlug . '-' . $counter;
+>>>>>>> 6ed19256f (.)
                 $counter++;
             }
         });
 
         // Set default values
+<<<<<<< HEAD
         static::creating(function ($model): void {
             if (is_null($model->news_status)) {
                 $model->news_status = 'draft';
@@ -794,27 +1144,61 @@ class MunicipalNews extends Model
                 $model->language = 'it';
             }
 
+=======
+        static::creating(function ($model) {
+            if (is_null($model->news_status)) {
+                $model->news_status = 'draft';
+            }
+            
+            if (is_null($model->priority_level)) {
+                $model->priority_level = 2; // Normale
+            }
+            
+            if (is_null($model->urgency_level)) {
+                $model->urgency_level = 2; // Normale
+            }
+            
+            if (is_null($model->language)) {
+                $model->language = 'it';
+            }
+            
+>>>>>>> 6ed19256f (.)
             if (is_null($model->revision_number)) {
                 $model->revision_number = 1;
             }
         });
 
         // Auto-publish se la data è raggiunta
+<<<<<<< HEAD
         static::updating(function ($model): void {
             if ($model->news_status === 'approved' &&
                 $model->publication_date <= now() &&
                 ! $model->is_published) {
+=======
+        static::updating(function ($model) {
+            if ($model->news_status === 'approved' && 
+                $model->publication_date <= now() && 
+                !$model->is_published) {
+>>>>>>> 6ed19256f (.)
                 $model->is_published = true;
                 $model->news_status = 'published';
             }
         });
 
         // Increment revision number on updates
+<<<<<<< HEAD
         static::updating(function ($model): void {
+=======
+        static::updating(function ($model) {
+>>>>>>> 6ed19256f (.)
             if ($model->isDirty(['title', 'content', 'excerpt'])) {
                 $model->revision_number++;
                 $model->last_modified = now();
             }
         });
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 6ed19256f (.)

@@ -179,6 +179,7 @@ class PatientResource extends XotBaseResource
 
 ## Collegamenti tra versioni di filament.md
 * [filament.md](docs/tecnico/filament/filament.md)
+<<<<<<< HEAD
 * [filament.md](../../../chart/docs/filament.md)
 * [filament.md](../../../gdpr/docs/filament.md)
 * [filament.md](../../../xot/docs/technical/filament.md)
@@ -187,6 +188,8 @@ class PatientResource extends XotBaseResource
 * [filament.md](../../../job/docs/filament.md)
 * [filament.md](../../../activity/docs/filament.md)
 * [filament.md](../../../cms/docs/filament.md)
+=======
+>>>>>>> 6ed19256f (.)
 * [filament.md](../../../Chart/docs/filament.md)
 * [filament.md](../../../Gdpr/docs/filament.md)
 * [filament.md](../../../Xot/docs/technical/filament.md)
@@ -194,4 +197,8 @@ class PatientResource extends XotBaseResource
 * [filament.md](../../../Lang/docs/filament.md)
 * [filament.md](../../../Job/docs/filament.md)
 * [filament.md](../../../Activity/docs/filament.md)
+<<<<<<< HEAD
 * [filament.md](../../../Cms/docs/filament.md)
+=======
+* [filament.md](../../../Cms/docs/filament.md)
+>>>>>>> 6ed19256f (.)

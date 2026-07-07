@@ -120,6 +120,7 @@ public function store(Request $request, CreateUserAction $action)
     $action->onQueue('users')->execute($userData);
 }
 ```
+<<<<<<< HEAD
 
 ## Caso Speciale: Filament Widgets
 
@@ -205,3 +206,5 @@ Regola architetturale canonica del progetto:
 
 - [product-docs-governance.md](../product-docs-governance.md)
 - [PRODUCT_DOCS_INDEX_2026_03_12.md](../../../../docs/project/PRODUCT_DOCS_INDEX_2026_03_12.md)
+=======
+>>>>>>> 6ed19256f (.)

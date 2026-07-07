@@ -27,10 +27,13 @@ return [
         'marker_removed' => 'Marker removed successfully',
         'marker_updated' => 'Marker updated successfully',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

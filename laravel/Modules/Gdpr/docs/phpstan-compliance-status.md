@@ -1,7 +1,10 @@
 # PHPStan Level 10 Compliance Status
 
 **Last Updated**: 2025-12-10
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 **Status**: ✅ FULLY COMPLIANT (0 errors)
 
 ## Summary
@@ -54,4 +57,8 @@ To maintain PHPStan compliance:
 - [GDPR Compliance Guide](gdpr-compliance-guide.md)
 - [Privacy Policy Management](privacy-policy-management.md)
 - [Data Export Patterns](data-export-patterns.md)
+<<<<<<< HEAD
 - [Consent Management](consent-management.md)
+=======
+- [Consent Management](consent-management.md)
+>>>>>>> 6ed19256f (.)

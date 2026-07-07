@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @props([
     'title' => '',
     'description' => '',
@@ -66,6 +67,8 @@
                                 </div>
                             @endif
                         </div>
+=======
+>>>>>>> 6ed19256f (.)
 {{--
 /**
  * Features Grid Block - Theme Two
@@ -113,7 +116,10 @@
         @endif
     </div>
 </section>
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> 6ed19256f (.)

@@ -1,7 +1,10 @@
 # PHPStan Level 10 Compliance Status
 
 **Last Updated**: 2025-12-10
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 **Status**: ✅ FULLY COMPLIANT (0 errors)
 
 ## Summary
@@ -67,4 +70,8 @@ To maintain PHPStan compliance:
 - [Activity Logging Guide](activity-log-ui-improvements.md)
 - [Event Sourcing Patterns](advanced_event_sourcing_patterns.md)
 - [Business Logic Analysis](business_logic_analysis.md)
+<<<<<<< HEAD
 - [Architecture Documentation](architecture/)
+=======
+- [Architecture Documentation](architecture/)
+>>>>>>> 6ed19256f (.)

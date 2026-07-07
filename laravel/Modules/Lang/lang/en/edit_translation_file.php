@@ -90,9 +90,12 @@ return [
                 'helper_text' => 'Critical level setting',
                 'description' => 'Critical level description',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'resources' => [
@@ -102,8 +105,11 @@ return [
             ],
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

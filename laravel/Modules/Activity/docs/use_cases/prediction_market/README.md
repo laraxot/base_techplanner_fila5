@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 # Use Case <nome progetto>ion Market – Event Sourcing e Console Commands
 
 ## Introduzione
 Questo modulo implementa un <nome progetto>ion market tramite event sourcing, aggregate root e proiezioni, ispirandosi alle best practice di progetti open source come [event-sourcing-with-laravel](https://github.com/cnastasi/event-sourcing-with-laravel).
+=======
+# Use Case Prediction Market – Event Sourcing e Console Commands
+
+## Introduzione
+Questo modulo implementa un prediction market tramite event sourcing, aggregate root e proiezioni, ispirandosi alle best practice di progetti open source come [event-sourcing-with-laravel](https://github.com/cnastasi/event-sourcing-with-laravel).
+>>>>>>> 6ed19256f (.)
 
 ## Obiettivi
 - Tracciabilità completa delle modifiche a mercati, scommesse e payout
@@ -11,7 +18,11 @@ Questo modulo implementa un <nome progetto>ion market tramite event sourcing, ag
 
 ## Console Commands Principali
 - `activity:market:create {title} {description} {endDate}` – Crea un nuovo mercato
+<<<<<<< HEAD
 - `activity:market:place-bet {marketUuid} {userId} {<nome progetto>ion} {amount}` – Piazza una scommessa
+=======
+- `activity:market:place-bet {marketUuid} {userId} {prediction} {amount}` – Piazza una scommessa
+>>>>>>> 6ed19256f (.)
 - `activity:market:resolve {marketUuid} {outcome}` – Risolve un mercato
 - Altri: gestione payout, reportistica, audit (vedi esempi nei file dedicati)
 
@@ -21,10 +32,17 @@ php artisan activity:market:create "Elezioni 2024" "Prevedi il vincitore" "2024-
 php artisan activity:market:place-bet market_xxx 12345 "Candidato A" 100
 php artisan activity:market:resolve market_xxx "Candidato A"
 
+<<<<<<< HEAD
 # 🎯 <nome progetto>ion Market Module
 
 ## 📚 Introduzione
 Il modulo <nome progetto>ion Market implementa un sistema completo di mercati predittivi utilizzando l'Event Sourcing in Laravel. Permette agli utenti di scommettere sull'esito di eventi futuri, con funzionalità avanzate di gestione dei mercati, calcolo delle quote e distribuzione dei pagamenti.
+=======
+# 🎯 Prediction Market Module
+
+## 📚 Introduzione
+Il modulo Prediction Market implementa un sistema completo di mercati predittivi utilizzando l'Event Sourcing in Laravel. Permette agli utenti di scommettere sull'esito di eventi futuri, con funzionalità avanzate di gestione dei mercati, calcolo delle quote e distribuzione dei pagamenti.
+>>>>>>> 6ed19256f (.)
 
 ## 🎯 Funzionalità Principali
 
@@ -114,7 +132,10 @@ php artisan user:balance {userId}
 ## 🤝 Contributi
 
 I contributi sono ben accetti! Si prega di leggere le nostre [linee guida per i contributi](./CONTRIBUTING.md) prima di inviare pull request.
+<<<<<<< HEAD
 I contributi sono ben accetti! Si prega di leggere le nostre [linee guida per i contributi](./contributing.md) prima di inviare pull request.
+=======
+>>>>>>> 6ed19256f (.)
 
 ## 📄 Licenza
 
@@ -122,7 +143,11 @@ Questo modulo è open-source con licenza [MIT](LICENSE).
 
 ## Panoramica
 
+<<<<<<< HEAD
 Un <nome progetto>ion market è un mercato finanziario in cui i partecipanti possono negoziare contratti il cui valore è legato al verificarsi di eventi futuri. Questi mercati sono utilizzati per raccogliere informazioni e fare previsioni su una vasta gamma di eventi, da quelli economici e politici a quelli sportivi e tecnologici.
+=======
+Un prediction market è un mercato finanziario in cui i partecipanti possono negoziare contratti il cui valore è legato al verificarsi di eventi futuri. Questi mercati sono utilizzati per raccogliere informazioni e fare previsioni su una vasta gamma di eventi, da quelli economici e politici a quelli sportivi e tecnologici.
+>>>>>>> 6ed19256f (.)
 
 ## Casi d'Uso Principali
 
@@ -152,7 +177,11 @@ Un <nome progetto>ion market è un mercato finanziario in cui i partecipanti pos
 ### 1. Modello dei Dati
 ```php
 // Esempio di modello per un contratto di previsione
+<<<<<<< HEAD
 class <nome progetto>ionContract extends Model
+=======
+class PredictionContract extends Model
+>>>>>>> 6ed19256f (.)
 {
     protected $fillable = [
         'title',
@@ -205,6 +234,7 @@ class <nome progetto>ionContract extends Model
 - Come estendere le proiezioni?
 
 ## Collegamenti correlati
+<<<<<<< HEAD
 - [README Shop](../shop/README.md)
 - [README Bank](../bank/README.md)
 - [Console Commands <nome progetto>ion Market](./console_commands.md)
@@ -221,3 +251,19 @@ class <nome progetto>ionContract extends Model
 
 ---
 **Questa documentazione è neutra e riutilizzabile, senza riferimenti a progetti specifici, e segue le regole di neutralità e modularità.**
+=======
+- [Console Commands Prediction Market](./console_commands.md)
+- [Best Practice Prediction Market](./best_practices.md)
+- [Architettura Prediction Market](./architecture.md)
+- [Eventi Prediction Market](./events.md)
+- [Implementazione Prediction Market](./implementation.md)
+- [Test Prediction Market](./07_test.md)
+- [Glossario Prediction Market](./08_glossario.md)
+- [Confronto Approcci](../shop/07_confronto_approcci.md)
+- [Build from Scratch](../shop/build_from_scratch.md)
+- [README Shop](../shop/README.md)
+- [README Bank](../bank/README.md)
+
+---
+**Questa documentazione è neutra e riutilizzabile, senza riferimenti a progetti specifici, e segue le regole di neutralità e modularità.**
+>>>>>>> 6ed19256f (.)

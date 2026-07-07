@@ -3,7 +3,10 @@
 ## Filosofia dei Contenuti
 
 <main module> segue una filosofia di contenuti modulari e riutilizzabili che riflette la missione sociale del progetto: **garantire l'accesso alla <slogan progetto> per le gestanti vulnerabili**.
+<<<<<<< HEAD
 <main module> segue una filosofia di contenuti modulari e riutilizzabili che riflette la missione sociale del progetto: **garantire l'accesso alla salute orale per le gestanti vulnerabili**.
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Principi Guida
 
@@ -20,8 +23,11 @@ La pagina servizi deve comunicare:
 - **Cosa**: Servizi odontoiatrici gratuiti per gestanti
 - **Chi**: Donne incinte con ISEE ≤ 20.000€
 - **Perché**: <slogan progetto> cruciale per mamma e bambino
+<<<<<<< HEAD
 - **Chi**: Donne incinte con ISEE ≤ 20.000€ 
 - **Perché**: Salute orale cruciale per mamma e bambino
+=======
+>>>>>>> 6ed19256f (.)
 - **Come**: Processo semplice e umano
 - **Dove**: Rete nazionale di professionisti qualificati
 
@@ -93,7 +99,10 @@ La pagina servizi deve comunicare:
 ### Parole Chiave SEO
 
 - <slogan progetto> gravidanza
+<<<<<<< HEAD
 - salute orale gravidanza
+=======
+>>>>>>> 6ed19256f (.)
 - odontoiatra gratuito gestanti
 - ISEE 20000 cure dentali
 - prevenzione dentale gravidanza
@@ -107,6 +116,9 @@ La pagina servizi deve comunicare:
 - [User Experience](../../../docs/frontend/ux-guidelines.md)
 
 *Ultimo aggiornamento: 2025-01-15*
+<<<<<<< HEAD
 - [UI Components](../ui/project_docs/components.md)
 - [Theme Blocks](../../themes/one/project_docs/blocks.md)
 - [User Experience](../../../../docs/project/frontend/ux-guidelines.md)
+=======
+>>>>>>> 6ed19256f (.)

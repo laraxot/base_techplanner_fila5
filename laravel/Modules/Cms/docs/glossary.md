@@ -105,8 +105,13 @@ Elemento interattivo che:
 - [Documentazione Componenti](./components/README.md)
 - [Guida allo Stile](./style/README.md)
 - [Convenzioni Layout](./layout/README.md)
+<<<<<<< HEAD
 - [Documentazione Componenti](./components/readme.md)
 - [Guida allo Stile](./style/readme.md)
 - [Convenzioni Layout](./layout/readme.md)
 
 [Fonte: sopralerighe.org](https://www.sopralerighe.org/sito-web-glossario-tecnico/)
+=======
+
+[Fonte: sopralerighe.org](https://www.sopralerighe.org/sito-web-glossario-tecnico/)
+>>>>>>> 6ed19256f (.)

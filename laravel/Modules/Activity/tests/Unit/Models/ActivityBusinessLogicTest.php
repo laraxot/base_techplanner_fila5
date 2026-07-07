@@ -2,12 +2,16 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 uses(\Modules\Activity\Tests\TestCase::class);
 
+=======
+>>>>>>> 6ed19256f (.)
 use Modules\Activity\Models\Activity;
 
 describe('Activity Business Logic', function () {
     test('activity has correct connection configured', function () {
+<<<<<<< HEAD
         $reflection = new \ReflectionClass(Activity::class);
         $property = $reflection->getProperty('connection');
         $property->setAccessible(true);
@@ -21,6 +25,15 @@ describe('Activity Business Logic', function () {
         $property->setAccessible(true);
 
         // Actual fillable fields in Activity model (line 114-124 in Activity.php)
+=======
+        $activity = new Activity;
+
+        expect($activity->getConnectionName())->toBe('activity');
+    });
+
+    test('activity has expected fillable fields', function () {
+        $activity = new Activity;
+>>>>>>> 6ed19256f (.)
         $expectedFillable = [
             'id',
             'log_name',
@@ -31,15 +44,25 @@ describe('Activity Business Logic', function () {
             'causer_type',
             'causer_id',
             'properties',
+<<<<<<< HEAD
         ];
 
         expect($property->getValue($reflection->newInstanceWithoutConstructor()))->toEqual($expectedFillable);
+=======
+            'batch_uuid',
+            'created_at',
+            'updated_at',
+        ];
+
+        expect($activity->getFillable())->toEqual($expectedFillable);
+>>>>>>> 6ed19256f (.)
     });
 
     test('activity extends spatie activity functionality', function () {
         expect(is_subclass_of(Activity::class, \Spatie\Activitylog\Models\Activity::class))->toBeTrue();
     });
 
+<<<<<<< HEAD
     test('activity has scope methods documented', function () {
         // Verify scope methods are available (either directly or through parent)
         // These scopes are provided by Spatie ActivityLog
@@ -55,5 +78,17 @@ describe('Activity Business Logic', function () {
 
         // At least verify the class structure allows these scopes
         expect(Activity::class)->toBeString();
+=======
+    test('activity has in log scope method', function () {
+        expect(method_exists(Activity::class, 'scopeInLog'))->toBeTrue();
+    });
+
+    test('activity has for event scope method', function () {
+        expect(method_exists(Activity::class, 'scopeForEvent'))->toBeTrue();
+    });
+
+    test('activity has batch scope method', function () {
+        expect(method_exists(Activity::class, 'scopeHasBatch'))->toBeTrue();
+>>>>>>> 6ed19256f (.)
     });
 });

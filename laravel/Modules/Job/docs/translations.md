@@ -4,8 +4,11 @@
 
 - [Modulo Lang](../../Lang/docs/module_lang.md) - Documentazione principale sulle traduzioni
 - [Regole Generali Traduzioni](../../Xot/docs/translations.md)
+<<<<<<< HEAD
 - [Modulo Lang](../../lang/docs/module_lang.md) - Documentazione principale sulle traduzioni
 - [Regole Generali Traduzioni](../../xot/docs/translations.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Struttura
 
@@ -57,6 +60,7 @@ return [
 
 ```
 ## Collegamenti tra versioni di translations.md
+<<<<<<< HEAD
 * [translations.md](../../../chart/docs/translations.md)
 * [translations.md](../../../reporting/docs/translations.md)
 * [translations.md](../../../gdpr/docs/translations.md)
@@ -74,6 +78,8 @@ return [
 * [translations.md](../../../activity/docs/translations.md)
 * [translations.md](../../../patient/docs/translations.md)
 * [translations.md](../../../cms/docs/translations.md)
+=======
+>>>>>>> 6ed19256f (.)
 * [translations.md](../../../Chart/docs/translations.md)
 * [translations.md](../../../Reporting/docs/translations.md)
 * [translations.md](../../../Gdpr/docs/translations.md)
@@ -96,4 +102,8 @@ return [
 
 ```
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> 6ed19256f (.)

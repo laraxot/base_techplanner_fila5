@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\Geo\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
+=======
+>>>>>>> 6ed19256f (.)
 use Modules\Geo\Models\Comune;
 
 /**
@@ -150,11 +153,15 @@ class ComuneFactory extends Factory
      */
     public function lombardia(): static
     {
+<<<<<<< HEAD
         /*
          * @param array<string, mixed> $attributes
          * @return array<string, mixed>
          */
         return $this->state(function (array $attributes, ?Model $model = null) {
+=======
+        return $this->state(function (array $attributes): array {
+>>>>>>> 6ed19256f (.)
             /** @var array<int, array{nome: string, provincia: string, cap: string}> $comuniLombardia */
             $comuniLombardia = [
                 ['nome' => 'Milano', 'provincia' => 'Milano', 'cap' => '20100'],
@@ -167,15 +174,22 @@ class ComuneFactory extends Factory
             /** @var array{nome: string, provincia: string, cap: string} $comuneData */
             $comuneData = $this->faker->randomElement($comuniLombardia);
 
+<<<<<<< HEAD
             /** @var array<string, mixed> $result */
             $result = array_merge($attributes, [
+=======
+            return array_merge($attributes, [
+>>>>>>> 6ed19256f (.)
                 'nome' => $comuneData['nome'],
                 'regione' => 'Lombardia',
                 'provincia' => $comuneData['provincia'],
                 'cap' => $comuneData['cap'],
             ]);
+<<<<<<< HEAD
 
             return $result;
+=======
+>>>>>>> 6ed19256f (.)
         });
     }
 
@@ -184,11 +198,15 @@ class ComuneFactory extends Factory
      */
     public function emiliaRomagna(): static
     {
+<<<<<<< HEAD
         /*
          * @param array<string, mixed> $attributes
          * @return array<string, mixed>
          */
         return $this->state(function (array $attributes, ?Model $model = null) {
+=======
+        return $this->state(function (array $attributes): array {
+>>>>>>> 6ed19256f (.)
             /** @var array<int, array{nome: string, provincia: string, cap: string}> $comuniEmiliaRomagna */
             $comuniEmiliaRomagna = [
                 ['nome' => 'Bologna', 'provincia' => 'Bologna', 'cap' => '40100'],
@@ -206,15 +224,22 @@ class ComuneFactory extends Factory
             /** @var array{nome: string, provincia: string, cap: string} $comuneData */
             $comuneData = $this->faker->randomElement($comuniEmiliaRomagna);
 
+<<<<<<< HEAD
             /** @var array<string, mixed> $result */
             $result = array_merge($attributes, [
+=======
+            return array_merge($attributes, [
+>>>>>>> 6ed19256f (.)
                 'nome' => $comuneData['nome'],
                 'regione' => 'Emilia-Romagna',
                 'provincia' => $comuneData['provincia'],
                 'cap' => $comuneData['cap'],
             ]);
+<<<<<<< HEAD
 
             return $result;
+=======
+>>>>>>> 6ed19256f (.)
         });
     }
 

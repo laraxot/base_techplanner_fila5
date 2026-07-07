@@ -45,7 +45,11 @@
 - Cerchi di localizzazione che si espandono (`ripple`)
 - Globo che ruota lentamente (`rotate`)
 
+<<<<<<< HEAD
 ### <nome progetto> Module
+=======
+### SaluteMo Module
+>>>>>>> 6ed19256f (.)
 **Concetto**: Salute e medicina con cuore e simboli medici
 **Animazioni**:
 - Cuore che batte (`heartbeat`)
@@ -145,6 +149,9 @@ return [
 - [Accessibility Guidelines](../docs/accessibility-standards.md)
 
 *Ultimo aggiornamento: Agosto 2025*
+<<<<<<< HEAD
 - [UI Module Icons](../laravel/modules/ui/docs/icons.md)
 - [Filament Icon Registration](../laravel/modules/xot/docs/filament-assets.md)
 - [Accessibility Guidelines](../../docs/accessibility-standards.md)
+=======
+>>>>>>> 6ed19256f (.)

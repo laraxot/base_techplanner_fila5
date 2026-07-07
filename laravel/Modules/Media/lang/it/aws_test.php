@@ -6,6 +6,7 @@ return [
     'navigation' => [
         'group' => 'Media',
     ],
+<<<<<<< HEAD
     'label' => 'Aws Test',
     'plural_label' => 'Aws Test (Plurale)',
     'fields' => [
@@ -39,4 +40,6 @@ return [
             'label' => 'Elimina Aws Test',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

@@ -77,7 +77,11 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
     use HasExtraTrait;
     use InteractsWithMedia;
 
+<<<<<<< HEAD
     protected $connection = 'module_name'; // Module-specific connection
+=======
+    protected $connection = 'quaeris'; // Module-specific connection
+>>>>>>> 6ed19256f (.)
 
     protected $with = [
         'extra', // Always load extra fields
@@ -125,6 +129,7 @@ The module BaseModel is where you add:
 - Module-specific relationship loading
 - Module-specific configurations
 
+<<<<<<< HEAD
 ### Rule 4: Use Contracts for Auditing PHPDocs (CRITICAL)
 Always use `\Modules\Xot\Contracts\ProfileContract|null` for auditing properties managed by the `Updater` trait (`creator`, `updater`, `deleter`). NEVER use the concrete `Profile` model of the module to avoid tight coupling and ensure modular decoupling.
 
@@ -138,6 +143,8 @@ Always use `\Modules\Xot\Contracts\ProfileContract|null` for auditing properties
 class Event extends BaseModel { ... }
 ```
 
+=======
+>>>>>>> 6ed19256f (.)
 ## Authentication Model Pattern
 
 For authentication models, there's an additional layer:
@@ -206,7 +213,11 @@ class SurveyPdf extends BaseModel
 
 ### KISS (Keep It Simple, Stupid)
 - Clear inheritance chain
+<<<<<<< HEAD
 - <nome progetto>able patterns
+=======
+- Predictable patterns
+>>>>>>> 6ed19256f (.)
 - Minimal configuration needed
 
 ## Type Safety and Contracts
@@ -257,4 +268,8 @@ The BaseModel pattern embodies the Laraxot philosophy of:
 - **Type Safety**: Contract-based development
 - **DRY Compliance**: No duplicated base functionality
 
+<<<<<<< HEAD
 This pattern ensures that every model in the system follows the same foundational principles while allowing for module-specific customizations where needed.
+=======
+This pattern ensures that every model in the system follows the same foundational principles while allowing for module-specific customizations where needed.
+>>>>>>> 6ed19256f (.)

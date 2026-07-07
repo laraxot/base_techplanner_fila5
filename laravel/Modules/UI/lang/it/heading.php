@@ -9,13 +9,17 @@ return [
             'description' => 'level',
             'helper_text' => 'level',
             'placeholder' => 'level',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'content' => [
             'label' => 'content',
             'description' => 'content',
             'helper_text' => 'content',
             'placeholder' => 'content',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -41,6 +45,8 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Heading',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
 ];

@@ -319,6 +319,7 @@ Mantenere Xot come framework base perfetto, completare funzionalità mancanti, m
 ---
 
 **Filosofia**: Xot è il cuore del framework Laraxot - deve essere perfetto, stabile, e fornisce le fondamenta per tutti gli altri moduli.
+<<<<<<< HEAD
 # Product Roadmap - Xot Core Framework
 
 ## 🎯 Vision & Strategy
@@ -345,3 +346,5 @@ Xot is the foundational module of the Laraxot ecosystem. Its mission is to provi
 ## 📂 Backlog / Future Ideas
 - Self-healing database migrations.
 - Automatic API documentation generation for all modules.
+=======
+>>>>>>> 6ed19256f (.)

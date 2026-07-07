@@ -185,8 +185,11 @@ public function __construct(string $output)
 ### **Documentazione Correlata**
 - [README.md Modulo Job](./README.md)
 - [Queue Management](./queue/README.md)
+<<<<<<< HEAD
 - [README.md Modulo Job](./readme.md)
 - [Queue Management](./queue/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Best Practices](./best-practices.md)
 
 ### **Risorse Esterne**
@@ -201,4 +204,8 @@ public function __construct(string $output)
 **🐛 PHPStan Level**: 9 ✅
 **🌐 Translation Standards**: IT/EN complete ✅
 **🚀 Performance**: 95/100 score
+<<<<<<< HEAD
 **✨ Test Coverage**: 85% ✅
+=======
+**✨ Test Coverage**: 85% ✅
+>>>>>>> 6ed19256f (.)

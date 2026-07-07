@@ -2,10 +2,15 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Notify\Tests\Feature;
 
 use Illuminate\Support\Facades\File;
 use Modules\Notify\Tests\TestCase;
+=======
+use Illuminate\Support\Facades\File;
+use Tests\TestCase;
+>>>>>>> 6ed19256f (.)
 
 uses(TestCase::class);
 
@@ -14,6 +19,10 @@ test('html template contains optional function', function (): void {
     $filePath = base_path('Modules/Notify/resources/views/emails/html.blade.php');
 
     // Verifico che il file esiste
+<<<<<<< HEAD
+=======
+    $this->assertTrue(File::exists($filePath), 'Il file html.blade.php non esiste');
+>>>>>>> 6ed19256f (.)
 
     // Leggo il contenuto del file
     $content = File::get($filePath);
@@ -29,6 +38,10 @@ test('html template contains optional function', function (): void {
     $hasSubjectVar = str_contains($content, '$subject');
 
     $this->assertTrue($hasEmailData || $hasSubjectVar, 'Il template html.blade.php non gestisce subject via $email_data o $subject');
+<<<<<<< HEAD
+=======
+    $this->assertTrue($hasOptional, 'Il template html.blade.php non utilizza optional() per gestire dati email');
+>>>>>>> 6ed19256f (.)
 });
 
 test('sunny sample template exists', function (): void {
@@ -36,6 +49,10 @@ test('sunny sample template exists', function (): void {
     $filePath = base_path('Modules/Notify/resources/views/emails/samples/sunny.blade.php');
 
     // Verifico che il file esiste
+<<<<<<< HEAD
+=======
+    $this->assertTrue(File::exists($filePath), 'Il file sunny.blade.php non esiste');
+>>>>>>> 6ed19256f (.)
 
     // Leggo il contenuto del file
     $content = File::get($filePath);
@@ -49,6 +66,10 @@ test('ark sample template exists', function (): void {
     $filePath = base_path('Modules/Notify/resources/views/emails/samples/ark.blade.php');
 
     // Verifico che il file esiste
+<<<<<<< HEAD
+=======
+    $this->assertTrue(File::exists($filePath), 'Il file ark.blade.php non esiste');
+>>>>>>> 6ed19256f (.)
 
     // Leggo il contenuto del file
     $content = File::get($filePath);

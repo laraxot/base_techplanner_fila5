@@ -33,7 +33,11 @@ class ListJobBatches extends XotBaseListRecords
     public function getTableColumns(): array
     {
         $date_format = config('app.date_format');
+<<<<<<< HEAD
         Assert::string($date_format, '['.__LINE__.']['.class_basename(self::class).']');
+=======
+        Assert::string($date_format, '[' . __LINE__ . '][' . class_basename(self::class) . ']');
+>>>>>>> 6ed19256f (.)
 
         return [
             'id' => TextColumn::make('id')
@@ -57,7 +61,11 @@ class ListJobBatches extends XotBaseListRecords
                             return '';
                         }
 
+<<<<<<< HEAD
                         return (string) $record->progress().'%';
+=======
+                        return (string) $record->progress() . '%';
+>>>>>>> 6ed19256f (.)
                     },
                 )
                 ->sortable(),

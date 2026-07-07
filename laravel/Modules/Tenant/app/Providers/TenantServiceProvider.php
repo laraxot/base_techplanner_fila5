@@ -69,6 +69,7 @@ class TenantServiceProvider extends XotBaseServiceProvider
 
     public function registerDB(): void
     {
+<<<<<<< HEAD
         Schema::defaultStringLength(191);
 
         $preMergeDefaultRaw = Config::get('database.default');
@@ -77,6 +78,18 @@ class TenantServiceProvider extends XotBaseServiceProvider
         if (Request::has('act') && Request::input('act') === 'migrate') {
             DB::purge($preMergeDefaultConn); // Call to a member function prepare() on null
             DB::reconnect($preMergeDefaultConn);
+=======
+        // Skip database purge/reconnect during testing to preserve test DB mappings
+        if ($this->app->environment('testing')) {
+            return;
+        }
+
+        Schema::defaultStringLength(191);
+
+        if (Request::has('act') && Request::input('act') === 'migrate') {
+            DB::purge('mysql'); // Call to a member function prepare() on null
+            DB::reconnect('mysql');
+>>>>>>> 6ed19256f (.)
         }
 
         $raw = TenantService::config('database');
@@ -106,6 +119,7 @@ class TenantServiceProvider extends XotBaseServiceProvider
             }
 
             $name = $module->getSnakeName();
+<<<<<<< HEAD
             $upperName = strtoupper($name);
 
             if (isset($connections[$default]) && ! isset($connections[$name])) {
@@ -122,11 +136,21 @@ class TenantServiceProvider extends XotBaseServiceProvider
 
                 $connections[$name] = $moduleConfig;
             }
+=======
+            // *
+            if (isset($connections[$default]) && ! isset($connections[$name])) {
+                // @var array|float|int|string|null $defaultConnection
+                $defaultConnection = $connections[$default];
+                $connections[$name] = $defaultConnection;
+            }
+            // */
+>>>>>>> 6ed19256f (.)
         }
 
         $data = Arr::set($data, 'connections', $connections);
         Config::set('database', $data);
 
+<<<<<<< HEAD
         // Skip purge/reconnect during testing to preserve test DB mappings
         if (! $this->app->environment('testing')) {
             // Call to a member function prepare() on null — connessione default da .env (mariadb|mysql ecc.)
@@ -135,6 +159,12 @@ class TenantServiceProvider extends XotBaseServiceProvider
             DB::purge($purgeConnName);
             DB::reconnect();
         }
+=======
+        // Call to a member function prepare() on null
+        // Database connection [mysql] not configured.
+        DB::purge('mysql');
+        DB::reconnect();
+>>>>>>> 6ed19256f (.)
     }
 
     #[Override]

@@ -81,11 +81,14 @@ Creato file `optimization_recommendations.md` in ogni modulo con:
 
 1. **Xot PathHelper** (2 ore)
    - Problema: Path hardcoded bloccano framework
+<<<<<<< HEAD
    - Soluzione: [Xot optimization_recommendations.md](../laravel/modules/xot/docs/optimization_recommendations.md)
 
 2. **Notify Riusabilità** (2 giorni)
    - Problema: 336 occorrenze bloccano notifiche
    - Soluzione: [Notify optimization_recommendations.md](../laravel/modules/notify/docs/optimization_recommendations.md)
+=======
+>>>>>>> 6ed19256f (.)
    - Soluzione: [Xot optimization_recommendations.md](../laravel/Modules/Xot/docs/optimization_recommendations.md)
 
 2. **Notify Riusabilità** (2 giorni)
@@ -97,11 +100,14 @@ Creato file `optimization_recommendations.md` in ogni modulo con:
 
 3. **User Restructuring** (1 giorno)
    - Problema: README gigantesco + hardcoding
+<<<<<<< HEAD
    - Soluzione: [User optimization_recommendations.md](../laravel/modules/user/docs/optimization_recommendations.md)
 
 4. **Cms Generalization** (1 giorno)
    - Problema: Content troppo specifico
    - Soluzione: [Cms optimization_recommendations.md](../laravel/modules/cms/docs/optimization_recommendations.md)
+=======
+>>>>>>> 6ed19256f (.)
    - Soluzione: [User optimization_recommendations.md](../laravel/Modules/User/docs/optimization_recommendations.md)
 
 4. **Cms Generalization** (1 giorno)
@@ -204,4 +210,8 @@ Per domande sull'implementazione delle raccomandazioni:
 **🎯 Priorità**: Definite con ROI e timeline
 **🔧 Strumenti**: Script automatici forniti
 
+<<<<<<< HEAD
 **✨ Ready for Implementation!**
+=======
+**✨ Ready for Implementation!**
+>>>>>>> 6ed19256f (.)

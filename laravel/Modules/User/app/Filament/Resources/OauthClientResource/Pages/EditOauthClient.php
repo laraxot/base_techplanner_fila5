@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\OauthClientResource\Pages;
 
 use Filament\Actions\Action;
+<<<<<<< HEAD
 use Filament\Actions\ActionGroup;
+=======
+>>>>>>> 6ed19256f (.)
 use Modules\User\Actions\Passport\RevokeClientAction;
 use Modules\User\Filament\Resources\OauthClientResource;
 use Modules\User\Models\OauthClient;
@@ -21,7 +24,11 @@ class EditOauthClient extends XotBaseEditRecord
     /**
      * Get the header actions.
      *
+<<<<<<< HEAD
      * @return array<string, Action|ActionGroup>
+=======
+     * @return array<string, Action|\Filament\Actions\ActionGroup>
+>>>>>>> 6ed19256f (.)
      */
     protected function getHeaderActions(): array
     {

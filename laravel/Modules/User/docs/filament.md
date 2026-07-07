@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Filament nel Modulo User
 
 ## Documentazione
@@ -67,3 +68,11 @@
 - RegisterWidget: Migrato al sistema Schema
 - ResetPasswordWidget: Migrato al sistema Schema
 - PasswordExpiredWidget: Migrato al sistema Schema 
+=======
+https://github.com/Althinect/filament-spatie-roles-permissions
+https://github.com/ryangjchandler/filament-profile
+
+https://github.com/andrewdwallo/filament-companies
+
+
+>>>>>>> 6ed19256f (.)

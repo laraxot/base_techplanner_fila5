@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 use Illuminate\Database\Eloquent\Model;
 use Modules\Cms\Models\Conf;
 

@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+# Implementazione del Logout con LaravelLocalization
+
+## Collegamenti correlati
+>>>>>>> 6ed19256f (.)
 - [README modulo User](./README.md)
 - [Best Practices Componenti di Autenticazione](./AUTH_COMPONENTS_BEST_PRACTICES.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
@@ -56,7 +62,11 @@ mount(function() {
 
 ## Utilizzo Corretto di LaravelLocalization
 
+<<<<<<< HEAD
 Per garantire la compatibilità con il sistema di localizzazione di <nome progetto>, è importante utilizzare le funzioni del pacchetto `mcamara/laravel-localization` invece di `app()->getLocale()`:
+=======
+Per garantire la compatibilità con il sistema di localizzazione di SaluteOra, è importante utilizzare le funzioni del pacchetto `mcamara/laravel-localization` invece di `app()->getLocale()`:
+>>>>>>> 6ed19256f (.)
 
 ```php
 // ERRATO
@@ -68,7 +78,11 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 ```
 
+<<<<<<< HEAD
 Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di <nome progetto> per la gestione della localizzazione.
+=======
+Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di SaluteOra per la gestione della localizzazione.
+>>>>>>> 6ed19256f (.)
 
 ## Template Blade con Componenti Filament
 
@@ -100,7 +114,11 @@ Il template Blade per il logout dovrebbe utilizzare i componenti Filament e most
 2. **Feedback Visivo**: L'utente riceve un feedback chiaro durante il processo di logout
 3. **Gestione Errori Robusta**: Gli errori vengono catturati e gestiti appropriatamente
 4. **Esperienza Utente Migliorata**: L'interfaccia è più intuitiva e reattiva
+<<<<<<< HEAD
 5. **Localizzazione Corretta**: Gli URL generati rispettano le convenzioni di <nome progetto> per la localizzazione
+=======
+5. **Localizzazione Corretta**: Gli URL generati rispettano le convenzioni di SaluteOra per la localizzazione
+>>>>>>> 6ed19256f (.)
 
 ## Chiavi di Traduzione per il Logout
 
@@ -214,7 +232,11 @@ mount(function() {
 
 ## Utilizzo Corretto di LaravelLocalization
 
+<<<<<<< HEAD
 Per garantire la compatibilità con il sistema di localizzazione di <nome progetto>, è importante utilizzare le funzioni del pacchetto `mcamara/laravel-localization` invece di `app()->getLocale()`:
+=======
+Per garantire la compatibilità con il sistema di localizzazione di SaluteOra, è importante utilizzare le funzioni del pacchetto `mcamara/laravel-localization` invece di `app()->getLocale()`:
+>>>>>>> 6ed19256f (.)
 
 ```php
 // ERRATO
@@ -226,7 +248,11 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 ```
 
+<<<<<<< HEAD
 Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di <nome progetto> per la gestione della localizzazione.
+=======
+Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di SaluteOra per la gestione della localizzazione.
+>>>>>>> 6ed19256f (.)
 
 ## Template Blade con Componenti Filament
 
@@ -258,7 +284,11 @@ Il template Blade per il logout dovrebbe utilizzare i componenti Filament e most
 2. **Feedback Visivo**: L'utente riceve un feedback chiaro durante il processo di logout
 3. **Gestione Errori Robusta**: Gli errori vengono catturati e gestiti appropriatamente
 4. **Esperienza Utente Migliorata**: L'interfaccia è più intuitiva e reattiva
+<<<<<<< HEAD
 5. **Localizzazione Corretta**: Gli URL generati rispettano le convenzioni di <nome progetto> per la localizzazione
+=======
+5. **Localizzazione Corretta**: Gli URL generati rispettano le convenzioni di SaluteOra per la localizzazione
+>>>>>>> 6ed19256f (.)
 
 ## Chiavi di Traduzione per il Logout
 
@@ -311,6 +341,7 @@ Queste chiavi devono essere definite nel file di traduzione `auth.php` per ogni 
 ## Conclusione
 
 Seguendo queste best practices, è possibile implementare un processo di logout robusto e user-friendly , che rispetta le convenzioni del progetto per la localizzazione e l'utilizzo dei componenti Filament.
+<<<<<<< HEAD
 ---
 module: theme
 topic: logout-implementation-with-laravel-localization
@@ -318,3 +349,5 @@ canonical: ../../../Themes/docs/shared-components/logout-implementation-with-lar
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-with-laravel-localization.md
+=======
+>>>>>>> 6ed19256f (.)

@@ -46,11 +46,14 @@ This document serves as the central index for the User module, providing guidanc
 - Update this index if new features or significant changes are introduced to the User module.
 
 ## Links to Related Documentation
+<<<<<<< HEAD
 - [BaseUser Model](./baseuser.md)
 - [Authentication Pages Implementation](./auth_pages_implementation.md)
 - [Profile Management](./profile_management.md)
 - [Routing Best Practices](./routing_best_practices.md)
 - [Session Management](./session_management.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [BaseUser Model](./BaseUser.md)
 - [Authentication Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
 - [Profile Management](./PROFILE_MANAGEMENT.md)
@@ -60,12 +63,15 @@ This document serves as the central index for the User module, providing guidanc
 ## Sottocartelle
 
 ### Models
+<<<<<<< HEAD
 - [Index](./models/index.md) - Indice della documentazione sui modelli
 - [Documentazione Traits](./traits/index.md) - Documentazione sui trait utilizzati
 
 ### Folio e Blade
 - [Documentazione Blade](./blade/index.md) - Documentazione sui template Blade
 - [Componenti](./components/index.md) - Documentazione sui componenti
+=======
+>>>>>>> 6ed19256f (.)
 - [Index](./Models/INDEX.md) - Indice della documentazione sui modelli
 - [Documentazione Traits](./traits/INDEX.md) - Documentazione sui trait utilizzati
 
@@ -83,4 +89,8 @@ Ultimo aggiornamento: 14 Maggio 2025
 
 # Indice Documentazione User
 
+<<<<<<< HEAD
 - [filament-best-practices.mdc](./filament-best-practices.mdc) — **Regola fondamentale:** chi estende XotBaseResource NON deve dichiarare $navigationGroup, $navigationLabel, né il metodo statico table(Table $table): Table. Seguire sempre questa regola per evitare errori di override e garantire coerenza tra i moduli.
+=======
+- [filament-best-practices.mdc](./filament-best-practices.mdc) — **Regola fondamentale:** chi estende XotBaseResource NON deve dichiarare $navigationGroup, $navigationLabel, né il metodo statico table(Table $table): Table. Seguire sempre questa regola per evitare errori di override e garantire coerenza tra i moduli.
+>>>>>>> 6ed19256f (.)

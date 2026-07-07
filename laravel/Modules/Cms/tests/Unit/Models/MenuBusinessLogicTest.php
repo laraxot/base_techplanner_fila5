@@ -1,11 +1,18 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 use Modules\Cms\Models\BaseModel;
 use Modules\Cms\Models\Menu;
 use Modules\Tenant\Models\Traits\SushiToJsons;
 use Modules\Xot\Contracts\HasRecursiveRelationshipsContract;
+<<<<<<< HEAD
+=======
+use Modules\Xot\Models\Traits\TypedHasRecursiveRelationships;
+>>>>>>> 6ed19256f (.)
 
 use function Safe\class_uses;
 
@@ -17,6 +24,7 @@ describe('Menu Business Logic', function () {
     });
 
     test('menu implements recursive relationships contract', function () {
+<<<<<<< HEAD
         $menu = new Menu();
         expect($menu)->toBeInstanceOf(HasRecursiveRelationshipsContract::class);
     });
@@ -25,6 +33,15 @@ describe('Menu Business Logic', function () {
         $traits = class_uses_recursive(Menu::class);
 
         // Menu uses HasRecursiveRelationships from staudenmeir/laravel-adjacency-list
+=======
+        expect(Menu::class)->toImplement(HasRecursiveRelationshipsContract::class);
+    });
+
+    test('menu has recursive relationships trait', function () {
+        $traits = class_uses(Menu::class);
+
+        expect($traits)->toHaveKey(TypedHasRecursiveRelationships::class);
+>>>>>>> 6ed19256f (.)
     });
 
     test('menu has sushi to json trait', function () {
@@ -68,6 +85,7 @@ describe('Menu Business Logic', function () {
     test('menu has schema definition for structured data', function () {
         $menu = new Menu();
 
+<<<<<<< HEAD
         // Use reflection to access protected $schema property
         $reflection = new ReflectionClass($menu);
         $schemaProperty = $reflection->getProperty('schema');
@@ -78,6 +96,11 @@ describe('Menu Business Logic', function () {
         expect($schema)->toBeArray();
         expect($schema['title'])->toBe('string');
         expect($schema['parent_id'])->toBe('integer');
+=======
+        expect($menu)->toHaveProperty('schema');
+        expect($menu->schema['title'])->toBe('string');
+        expect($menu->schema['parent_id'])->toBe('integer');
+>>>>>>> 6ed19256f (.)
     });
 
     test('menu can get rows for sushi functionality', function () {

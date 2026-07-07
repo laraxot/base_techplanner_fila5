@@ -238,6 +238,7 @@ User (base)
 ## 🔗 Collegamenti Documentazione
 
 ### Documentazione Moduli
+<<<<<<< HEAD
 - [<nome progetto>](../modules/<nome progetto>/docs/readme.md)
 - [<nome progetto>](../modules/<nome progetto>/docs/readme.md)
 - [User](../modules/user/docs/readme.md)
@@ -245,6 +246,8 @@ User (base)
 - [Media](../modules/media/docs/readme.md)
 - [UI](../modules/ui/docs/readme.md)
 - [Xot](../modules/xot/docs/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [<nome progetto>](../Modules/<nome progetto>/docs/README.md)
 - [<nome progetto>](../Modules/<nome progetto>/docs/README.md)
 - [User](../Modules/User/docs/README.md)
@@ -264,4 +267,8 @@ User (base)
 **Ultimo aggiornamento**: Gennaio 2025
 **Versione**: 2.0
 **Autore**: AI Assistant
+<<<<<<< HEAD
 **Stato**: Consolidata e Rifattorizzata
+=======
+**Stato**: Consolidata e Rifattorizzata
+>>>>>>> 6ed19256f (.)

@@ -54,27 +54,37 @@ return [
             'description' => 'email',
             'helper_text' => '',
             'placeholder' => 'email',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'password' => [
             'label' => 'password',
             'description' => 'password',
             'helper_text' => '',
             'placeholder' => 'password',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'remember' => [
             'label' => 'remember',
             'description' => 'remember',
             'helper_text' => '',
             'placeholder' => 'remember',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'cap' => [
             'description' => 'cap',
             'helper_text' => 'cap',
             'placeholder' => 'cap',
             'label' => 'cap',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
         'city' => [
@@ -82,6 +92,11 @@ return [
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
+=======
+        ],
+        'city' => [
+            'description' => 'city',
+>>>>>>> 6ed19256f (.)
         ],
         'options' => [
             'prefix-icon-color' => [
@@ -268,17 +283,23 @@ return [
                 'helper_text' => 'options.prefix',
                 'description' => 'options.prefix',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'itemIsDefault' => [
             'description' => 'itemIsDefault',
             'helper_text' => 'itemIsDefault',
             'placeholder' => 'itemIsDefault',
             'label' => 'itemIsDefault',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'zeusData' => [
             1 => [
@@ -299,170 +320,243 @@ return [
                 'placeholder' => 'zeusData.2',
                 'label' => 'zeusData.2',
             ],
+<<<<<<< HEAD
             4 => [
+=======
+            [
+>>>>>>> 6ed19256f (.)
                 'description' => 'zeusData.4',
                 'helper_text' => 'zeusData.4',
                 'placeholder' => 'zeusData.4',
                 'label' => 'zeusData.4',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'user_id' => [
             'label' => 'user_id',
             'placeholder' => 'user_id',
             'helper_text' => 'user_id',
             'description' => 'user_id',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'name' => [
             'label' => 'name',
             'placeholder' => 'name',
             'helper_text' => 'name',
             'description' => 'name',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'slug' => [
             'label' => 'slug',
             'placeholder' => 'slug',
             'helper_text' => 'slug',
             'description' => 'slug',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'category_id' => [
             'label' => 'category_id',
             'placeholder' => 'category_id',
             'helper_text' => 'category_id',
             'description' => 'category_id',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'description' => [
             'label' => 'description',
             'placeholder' => 'description',
             'helper_text' => 'description',
             'description' => 'description',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'details' => [
             'label' => 'details',
             'placeholder' => 'details',
             'helper_text' => 'details',
             'description' => 'details',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'is_active' => [
             'label' => 'is_active',
             'placeholder' => 'is_active',
             'helper_text' => 'is_active',
             'description' => 'is_active',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'ordering' => [
             'label' => 'ordering',
             'placeholder' => 'ordering',
             'helper_text' => 'ordering',
             'description' => 'ordering',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'start_date' => [
             'label' => 'start_date',
             'placeholder' => 'start_date',
             'helper_text' => 'start_date',
             'description' => 'start_date',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'end_date' => [
             'label' => 'end_date',
             'placeholder' => 'end_date',
             'helper_text' => 'end_date',
             'description' => 'end_date',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'extensions' => [
             'label' => 'extensions',
             'placeholder' => 'extensions',
             'helper_text' => 'extensions',
             'description' => 'extensions',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'sections' => [
             'label' => 'sections',
             'placeholder' => 'sections',
             'helper_text' => 'sections',
             'description' => 'sections',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'fields' => [
             'label' => 'fields',
             'placeholder' => 'fields',
             'helper_text' => 'fields',
             'description' => 'fields',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'type' => [
             'label' => 'type',
             'placeholder' => 'type',
             'helper_text' => 'type',
             'description' => 'type',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'compact' => [
             'label' => 'compact',
             'placeholder' => 'compact',
             'helper_text' => 'compact',
             'description' => 'compact',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'aside' => [
             'label' => 'aside',
             'placeholder' => 'aside',
             'helper_text' => 'aside',
             'description' => 'aside',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'borderless' => [
             'label' => 'borderless',
             'placeholder' => 'borderless',
             'helper_text' => 'borderless',
             'description' => 'borderless',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'icon' => [
             'label' => 'icon',
             'placeholder' => 'icon',
             'helper_text' => 'icon',
             'description' => 'icon',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'columns' => [
             'label' => 'columns',
             'placeholder' => 'columns',
             'helper_text' => 'columns',
             'description' => 'columns',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'itemKey' => [
             'description' => 'itemKey',
             'helper_text' => 'itemKey',
             'placeholder' => 'itemKey',
             'label' => 'itemKey',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'values' => [
             'label' => 'values',
             'placeholder' => 'values',
             'helper_text' => 'values',
             'description' => 'values',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'itemValue' => [
             'label' => 'itemValue',
             'placeholder' => 'itemValue',
             'helper_text' => 'itemValue',
             'description' => 'itemValue',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'steps' => [
@@ -470,6 +564,7 @@ return [
             'label' => 'Credenziali',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Set Default Tenant For Urls',
     'plural_label' => 'Set Default Tenant For Urls (Plurale)',
     'navigation' => [
@@ -483,4 +578,6 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

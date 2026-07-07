@@ -9,7 +9,11 @@ use Modules\Xot\Filament\Pages\XotBasePage;
 
 class SlackNotification extends XotBasePage
 {
+<<<<<<< HEAD
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-paper-airplane';
+=======
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-paper-airplane';
+>>>>>>> 6ed19256f (.)
 
     protected string $view = 'notify::filament.clusters.test.pages.slack-notification';
 

@@ -274,10 +274,13 @@ php artisan serve
 
 ---
 
+<<<<<<< HEAD
 **Last Updated**: February 2026  
 **Module Version**: 2.0  
 **Framework**: Laravel 12 + Filament 4  
 **Compliance**: XotBase Extension Rules + English Naming Standards + WCAG 2.1 AA
+=======
+>>>>>>> 6ed19256f (.)
 **Last Updated**: January 2025  
 **Module Version**: 2.0  
 **Framework**: Laravel 11 + Filament 3  

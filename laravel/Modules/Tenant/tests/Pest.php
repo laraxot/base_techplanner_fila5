@@ -49,7 +49,10 @@ function createTenant(array $attributes = []): Tenant
     /** @var Tenant $tenant */
     $tenant = Tenant::factory()->create($attributes);
     Assert::isInstanceOf($tenant, Tenant::class); // Added for PHPStan
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
     return $tenant;
 }
 
@@ -58,8 +61,15 @@ function makeTenant(array $attributes = []): Tenant
     /** @var Tenant $tenant */
     $tenant = Tenant::factory()->make($attributes);
     Assert::isInstanceOf($tenant, Tenant::class); // Added for PHPStan
+<<<<<<< HEAD
 
     return $tenant;
 }
 
 // Removed TenantUser functions as the model doesn't exist in this module
+=======
+    return $tenant;
+}
+
+// Removed TenantUser functions as the model doesn't exist in this module
+>>>>>>> 6ed19256f (.)

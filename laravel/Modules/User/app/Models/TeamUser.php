@@ -6,6 +6,10 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
+<<<<<<< HEAD
+=======
+use Modules\User\Database\Factories\TeamUserFactory;
+>>>>>>> 6ed19256f (.)
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
@@ -48,6 +52,7 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @mixin IdeHelperTeamUser
  *
+<<<<<<< HEAD
  * @property ProfileContract|null         $deleter
  * @property Team|null                    $team
  * @property User|null                    $user
@@ -59,6 +64,13 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static \Modules\User\Database\Factories\TeamUserFactory factory($count = null, $state = [])
  * @method static Builder<static>|TeamUser                         whereJoinedAt($value)
  * @method static Builder<static>|TeamUser                         wherePermissions($value)
+=======
+ * @property ProfileContract|null $deleter
+ * @property Team|null            $team
+ * @property User|null            $user
+ *
+ * @method static TeamUserFactory factory($count = null, $state = [])
+>>>>>>> 6ed19256f (.)
  *
  * @mixin \Eloquent
  */

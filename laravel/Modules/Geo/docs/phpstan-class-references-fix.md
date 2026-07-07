@@ -250,4 +250,8 @@ cd /var/www/html/_bases/<directory progetto>/laravel
 - [Geo Module Architecture](./architecture.md)
 - [Google Maps Service Documentation](./services/)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: Luglio 2025*
+=======
+*Ultimo aggiornamento: Luglio 2025*
+>>>>>>> 6ed19256f (.)

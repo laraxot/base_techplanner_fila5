@@ -161,14 +161,21 @@ GET / → Folio → index.blade.php
 - Monitoring performance
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Modulo <nome progetto>](laravel/modules/<nome progetto>/docs/homepage-architecture.md)
 - [Modulo CMS](laravel/modules/cms/docs/filament-blocks-system.md)
 - [Modulo UI](laravel/modules/ui/docs/blocks-system.md)
 - [Tema One](laravel/themes/one/docs/homepage-structure.md)
 
+=======
+>>>>>>> 6ed19256f (.)
 - [Modulo <nome progetto>](laravel/Modules/<nome progetto>/docs/homepage-architecture.md)
 - [Modulo CMS](laravel/Modules/Cms/docs/filament-blocks-system.md)
 - [Modulo UI](laravel/Modules/UI/docs/blocks-system.md)
 - [Tema One](laravel/Themes/One/docs/homepage-structure.md)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: Dicembre 2024*
+=======
+*Ultimo aggiornamento: Dicembre 2024*
+>>>>>>> 6ed19256f (.)

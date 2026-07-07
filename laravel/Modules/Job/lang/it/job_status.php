@@ -19,43 +19,61 @@ return [
             'label' => 'Nome',
             'tooltip' => 'Nome del job monitorato',
             'placeholder' => 'Inserisci nome del job',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'guard_name' => [
             'label' => 'Guard',
             'tooltip' => 'Guard associato al job',
             'placeholder' => 'Seleziona guard',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'permissions' => [
             'label' => 'Permessi',
             'tooltip' => 'Permessi associati al job',
             'placeholder' => 'Seleziona permessi',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'updated_at' => [
             'label' => 'Aggiornato il',
             'tooltip' => 'Data dell\'ultimo aggiornamento dello stato del job',
             'placeholder' => 'Data di aggiornamento',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'first_name' => [
             'label' => 'Nome',
             'tooltip' => 'Nome dell\'utente che ha creato o gestisce il job',
             'placeholder' => 'Nome responsabile',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'last_name' => [
             'label' => 'Cognome',
             'tooltip' => 'Cognome dell\'utente che ha creato o gestisce il job',
             'placeholder' => 'Cognome responsabile',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -132,6 +150,9 @@ return [
         'job_exported' => 'Dati esportati correttamente',
     ],
     'title' => 'job status',
+<<<<<<< HEAD
     'label' => 'Job Status',
     'plural_label' => 'Job Status (Plurale)',
+=======
+>>>>>>> 6ed19256f (.)
 ];

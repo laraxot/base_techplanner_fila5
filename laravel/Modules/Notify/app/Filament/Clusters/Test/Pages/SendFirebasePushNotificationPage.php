@@ -25,13 +25,21 @@ use Modules\Xot\Filament\Pages\XotBasePage;
 use Override;
 
 /**
+<<<<<<< HEAD
  * @property Schema $pushForm
+=======
+ * @property \Filament\Schemas\Schema $pushForm
+>>>>>>> 6ed19256f (.)
  */
 class SendFirebasePushNotificationPage extends XotBasePage
 {
     public ?array $pushData = [];
 
+<<<<<<< HEAD
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-bell-alert';
+=======
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-bell-alert';
+>>>>>>> 6ed19256f (.)
 
     protected string $view = 'notify::filament.pages.send-push';
 
@@ -60,7 +68,11 @@ class SendFirebasePushNotificationPage extends XotBasePage
     }
 
     /**
+<<<<<<< HEAD
      * @return array<string, TextInput|Textarea|Select|Toggle|KeyValue>
+=======
+     * @return array<string, \Filament\Forms\Components\TextInput|\Filament\Forms\Components\Textarea|\Filament\Forms\Components\Select|\Filament\Forms\Components\Toggle|\Filament\Forms\Components\KeyValue>
+>>>>>>> 6ed19256f (.)
      */
     public function getPushFormSchema(): array
     {
@@ -129,7 +141,11 @@ class SendFirebasePushNotificationPage extends XotBasePage
                 ->send();
 
             // Loggare l'invio
+<<<<<<< HEAD
             Log::debug('Notifica push inviata con successo', [
+=======
+            Log::info('Notifica push inviata con successo', [
+>>>>>>> 6ed19256f (.)
                 'token' => $data['token'],
                 'title' => $data['title'],
                 'type' => $data['notification_type'],

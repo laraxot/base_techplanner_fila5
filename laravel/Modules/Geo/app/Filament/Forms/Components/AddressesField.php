@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Geo\Filament\Forms\Components;
 
+<<<<<<< HEAD
 use Closure;
+=======
+>>>>>>> 6ed19256f (.)
 use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
@@ -58,13 +61,21 @@ class AddressesField extends Repeater
         $baseSchema['name'] = TextInput::make('name')
             ->maxLength(255)
             ->visible(function (Get $get): bool {
+<<<<<<< HEAD
                 return count(self::addressesFromGet($get)) > 1;
+=======
+                $addresses = $get('../../addresses') ?? [];
+
+                /* @phpstan-ignore argument.type */
+                return count($addresses) > 1;
+>>>>>>> 6ed19256f (.)
             })
             ->live();
 
         // Campo is_primary: logica complessa per esclusività
         $baseSchema['is_primary'] = Toggle::make('is_primary')
             ->visible(function (Get $get): bool {
+<<<<<<< HEAD
                 return count(self::addressesFromGet($get)) > 1;
             })
             ->default(function (Get $get): bool {
@@ -74,16 +85,45 @@ class AddressesField extends Repeater
                 if (true === $state) {
                     $addresses = self::addressesFromGet($get);
 
+=======
+                $addresses = $get('../../addresses') ?? [];
+
+                /* @phpstan-ignore argument.type */
+                return count($addresses) > 1;
+            })
+            ->default(function (Get $get): bool {
+                $addresses = $get('../../addresses') ?? [];
+
+                // Se è il primo elemento o c'è un solo elemento, default true
+                /* @phpstan-ignore argument.type */
+                return count($addresses) <= 1;
+            })
+            ->afterStateUpdated(function ($state, $set, Get $get, Component $component): void {
+                // Se questo diventa primary, disattiva tutti gli altri
+                if (true === $state) {
+                    $addresses = $get('../../addresses') ?? [];
+
+                    // Estrae l'indice dal path del componente (es. "addresses.0.is_primary")
+>>>>>>> 6ed19256f (.)
                     $path = $component->getStatePath();
                     preg_match('/addresses\.(\d+)\.is_primary/', $path ?? '', $matches);
                     $currentIndex = $matches[1] ?? null;
 
                     if (null !== $currentIndex) {
+<<<<<<< HEAD
+=======
+                        // Disattiva is_primary negli altri elementi
+                        /* @phpstan-ignore foreach.nonIterable */
+>>>>>>> 6ed19256f (.)
                         foreach ($addresses as $index => $address) {
                             $indexStr = app(SafeStringCastAction::class)->execute($index);
                             $currentIndexStr = app(SafeStringCastAction::class)
                                 ->execute($currentIndex);
                             if ($indexStr !== $currentIndexStr) {
+<<<<<<< HEAD
+=======
+                                /* @phpstan-ignore callable.nonCallable */
+>>>>>>> 6ed19256f (.)
                                 $set('../../addresses.'.$indexStr.'.is_primary', false);
                             }
                         }
@@ -92,7 +132,14 @@ class AddressesField extends Repeater
             })
             ->live()
             ->dehydrateStateUsing(function ($state, Get $get): bool {
+<<<<<<< HEAD
                 if (count(self::addressesFromGet($get)) <= 1) {
+=======
+                $addresses = $get('../../addresses') ?? [];
+                // Se c'è un solo elemento, forza sempre true
+                /* @phpstan-ignore argument.type */
+                if (count($addresses) <= 1) {
+>>>>>>> 6ed19256f (.)
                     return true;
                 }
 
@@ -101,6 +148,7 @@ class AddressesField extends Repeater
 
         return $baseSchema;
     }
+<<<<<<< HEAD
 
     /**
      * @return array<int|string, mixed>
@@ -111,4 +159,6 @@ class AddressesField extends Repeater
 
         return is_array($addresses) ? $addresses : [];
     }
+=======
+>>>>>>> 6ed19256f (.)
 }

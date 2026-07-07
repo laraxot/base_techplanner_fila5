@@ -278,7 +278,11 @@ public function redirectToProvider(string $provider)
 *"BaseUser is the bedrock upon which all security stands"*
 - UUID-based identity across all systems
 - Immutable core properties (id, email)
+<<<<<<< HEAD
 - <nome progetto>able behavior in all contexts
+=======
+- Predictable behavior in all contexts
+>>>>>>> 6ed19256f (.)
 
 #### **2. Water (Adaptability)**
 *"Authentication flows like water, taking the shape of any system"*
@@ -489,7 +493,11 @@ User Module Dependencies:
 **Modulo**: User (Authentication & Authorization)
 **Status**: 90% COMPLETATO
 **Priority**: HIGH
+<<<<<<< HEAD
 **PHPStan**: ✅ Level 10 (0 errori)
+=======
+**PHPStan**: ✅ Level 9 (0 errori)
+>>>>>>> 6ed19256f (.)
 **Filament**: ✅ 4.x Compatibile
 
 ---
@@ -568,7 +576,11 @@ User Module
 - [x] **Notification System**: User notifications
 
 ### 🔧 Technical Excellence
+<<<<<<< HEAD
 - [x] **PHPStan Level 10**: 0 errori
+=======
+- [x] **PHPStan Level 9**: 0 errori
+>>>>>>> 6ed19256f (.)
 - [x] **Filament 4.x**: Compatibilità completa
 - [x] **Type Safety**: Type hints completi
 - [x] **Error Handling**: Gestione errori robusta
@@ -735,7 +747,11 @@ User Module
 **Status**: 95% COMPLETATO
 
 #### ✅ Completed
+<<<<<<< HEAD
 - [x] PHPStan Level 10 compliance
+=======
+- [x] PHPStan Level 9 compliance
+>>>>>>> 6ed19256f (.)
 - [x] Type safety implementation
 - [x] Error handling improvement
 - [x] Code documentation
@@ -794,7 +810,11 @@ User Module
 ## 🎯 SUCCESS METRICS
 
 ### 📊 Technical Metrics
+<<<<<<< HEAD
 - [x] **PHPStan Level 10**: 0 errori ✅
+=======
+- [x] **PHPStan Level 9**: 0 errori ✅
+>>>>>>> 6ed19256f (.)
 - [x] **Filament 4.x**: Compatibile ✅
 - [ ] **Test Coverage**: 80% (target)
 - [ ] **Response Time**: < 200ms
@@ -965,4 +985,8 @@ User Module
 
 ---
 
+<<<<<<< HEAD
 *Questa roadmap è specifica per il modulo User e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
+=======
+*Questa roadmap è specifica per il modulo User e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
+>>>>>>> 6ed19256f (.)

@@ -8,70 +8,97 @@ return [
             'label' => 'Titolo',
             'placeholder' => 'Inserisci il titolo del marcatore',
             'help' => 'Titolo identificativo del marcatore',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'description' => [
             'label' => 'Descrizione',
             'placeholder' => 'Inserisci una descrizione',
             'help' => 'Descrizione dettagliata del marcatore',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'latitude' => [
             'label' => 'Latitudine',
             'placeholder' => 'Inserisci la latitudine',
             'help' => 'Coordinate geografiche - latitudine',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'longitude' => [
             'label' => 'Longitudine',
             'placeholder' => 'Inserisci la longitudine',
             'help' => 'Coordinate geografiche - longitudine',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'icon' => [
             'label' => 'Icona',
             'placeholder' => 'Seleziona l\'icona',
             'help' => 'Icona da visualizzare per il marcatore',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'color' => [
             'label' => 'Colore',
             'placeholder' => 'Seleziona il colore',
             'help' => 'Colore del marcatore',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'is_draggable' => [
             'label' => 'Trascinabile',
             'help' => 'Permette di trascinare il marcatore',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'is_clickable' => [
             'label' => 'Cliccabile',
             'help' => 'Permette di cliccare sul marcatore',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'show_info_window' => [
             'label' => 'Mostra finestra info',
             'help' => 'Mostra la finestra informativa al click',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'validation' => [
@@ -99,6 +126,7 @@ return [
         'park' => 'Parco',
         'custom' => 'Personalizzato',
     ],
+<<<<<<< HEAD
     'label' => 'Marker',
     'plural_label' => 'Marker (Plurale)',
     'navigation' => [
@@ -123,4 +151,6 @@ return [
             'label' => 'Elimina Marker',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

@@ -17,6 +17,7 @@ return [
             'label' => 'save',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'name' => 'Edit Role',
         'plural' => 'Edit Role',
@@ -50,4 +51,10 @@ return [
             'description' => '',
         ],
     ],
+=======
+    'navigation' => [],
+    'label' => '',
+    'plural_label' => '',
+    'fields' => [],
+>>>>>>> 6ed19256f (.)
 ];

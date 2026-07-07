@@ -107,15 +107,25 @@
 ### **Step 1: Backup**
 ```bash
 # Creare backup della documentazione esistente
+<<<<<<< HEAD
 cp -r docs docs_backup
 cp -r laravel/docs laravel/docs_backup
+=======
+cp -r /var/www/html/_bases/base_ptvx_fila3_mono/docs /var/www/html/_bases/base_ptvx_fila3_mono/docs_backup
+cp -r /var/www/html/_bases/base_ptvx_fila3_mono/laravel/docs /var/www/html/_bases/base_ptvx_fila3_mono/laravel/docs_backup
+>>>>>>> 6ed19256f (.)
 ```
 
 ### **Step 2: Spostamento File**
 ```bash
 # Spostare file per modulo (esempi)
+<<<<<<< HEAD
 mv docs/laraxot-conventions.md ../Xot/docs/conventions.md
 mv docs/blade-components.md ../UI/docs/blade-components.md
+=======
+mv /var/www/html/_bases/base_ptvx_fila3_mono/docs/laraxot-conventions.md /var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/conventions.md
+mv /var/www/html/_bases/base_ptvx_fila3_mono/docs/blade-components.md /var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/UI/docs/blade-components.md
+>>>>>>> 6ed19256f (.)
 # ... continuare per tutti i file
 ```
 
@@ -127,8 +137,13 @@ mv docs/blade-components.md ../UI/docs/blade-components.md
 ### **Step 4: Pulizia**
 ```bash
 # Rimuovere cartelle docs/ non conformi
+<<<<<<< HEAD
 rm -rf docs
 rm -rf laravel/docs
+=======
+rm -rf /var/www/html/_bases/base_ptvx_fila3_mono/docs
+rm -rf /var/www/html/_bases/base_ptvx_fila3_mono/laravel/docs
+>>>>>>> 6ed19256f (.)
 ```
 
 ## 📊 **Risultato Atteso**

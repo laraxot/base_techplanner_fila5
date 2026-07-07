@@ -27,7 +27,10 @@ use Illuminate\Support\Carbon;
  * @property-read Client $client
  * @property-read Profile|null $creator
  * @property-read Profile|null $updater
+<<<<<<< HEAD
  *
+=======
+>>>>>>> 6ed19256f (.)
  * @method static Builder<static>|LegalRepresentative newModelQuery()
  * @method static Builder<static>|LegalRepresentative newQuery()
  * @method static Builder<static>|LegalRepresentative query()
@@ -43,9 +46,13 @@ use Illuminate\Support\Carbon;
  * @method static Builder<static>|LegalRepresentative wherePhone($value)
  * @method static Builder<static>|LegalRepresentative whereUpdatedAt($value)
  * @method static Builder<static>|LegalRepresentative whereUpdatedBy($value)
+<<<<<<< HEAD
  *
  * @property-read Profile|null $deleter
  *
+=======
+ * @property-read Profile|null $deleter
+>>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class LegalRepresentative extends BaseModel

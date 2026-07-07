@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Filtro',
         'plural_label' => 'Filtri',
@@ -232,4 +233,15 @@ return [
             'placeholder' => 'Cerca...',
         ],
     ],
+=======
+    'role' => 'Ruolo',
+    'active_users' => 'Utenti attivi',
+    'created_from' => 'creati dal',
+    'created_until' => 'creati al',
+    'navigation' => [],
+    'label' => '',
+    'plural_label' => '',
+    'fields' => [],
+    'actions' => [],
+>>>>>>> 6ed19256f (.)
 ];

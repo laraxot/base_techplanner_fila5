@@ -147,12 +147,19 @@ Cache::remember("geocode:{$address}", 3600, function() use ($address) {
 
 - [← Geo Module README](../README.md)
 - [← Fixcity Integration](../../Fixcity/docs/roadmap-and-issues.md)
+<<<<<<< HEAD
 - [← Geo Module README](../readme.md)
 - [← Fixcity Integration](../../fixcity/docs/roadmap-and-issues.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [← Root Documentation](../../../docs/index.md)
 
 ---
 
 **Status**: ✅ BUONO
 **PHPStan**: ✅ 0 errori
+<<<<<<< HEAD
 **Focus**: Integration + Features
+=======
+**Focus**: Integration + Features
+>>>>>>> 6ed19256f (.)

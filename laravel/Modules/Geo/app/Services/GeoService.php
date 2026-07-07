@@ -29,7 +29,11 @@ class GeoService
      */
     public static function getInstance(): self
     {
+<<<<<<< HEAD
         if (! self::$_instance instanceof GeoService) {
+=======
+        if (! (self::$_instance instanceof GeoService)) {
+>>>>>>> 6ed19256f (.)
             self::$_instance = new self();
         }
 

@@ -759,8 +759,12 @@ class ConnectionManagerService
     public static function getConnectionForModule(string $module): string
     {
         return match($module) {
+<<<<<<< HEAD
             'healthcare_app' => 'healthcare_app',
             'ExternalProject' => '<nome progetto>',
+=======
+            'Quaeris' => 'quaeris',
+>>>>>>> 6ed19256f (.)
             'User' => 'user',
             'Notify' => 'notify',
             default => 'mysql'
@@ -843,16 +847,24 @@ class ContactValidationService
 **Solution**: Strategy pattern con interfaces
 
 ```php
+<<<<<<< HEAD
 // Modules/healthcare_app/Contracts/ChartRendererContract.php
 // Modules/ExternalProject/Contracts/ChartRendererContract.php
+=======
+// Modules/Quaeris/Contracts/ChartRendererContract.php
+>>>>>>> 6ed19256f (.)
 interface ChartRendererContract
 {
     public function supports(string $type): bool;
     public function render(array $data, array $config): string;
 }
 
+<<<<<<< HEAD
 // Modules/healthcare_app/Services/Chart/Renderers/PieChartRenderer.php
 // Modules/ExternalProject/Services/Chart/Renderers/PieChartRenderer.php
+=======
+// Modules/Quaeris/Services/Chart/Renderers/PieChartRenderer.php
+>>>>>>> 6ed19256f (.)
 class PieChartRenderer implements ChartRendererContract
 {
     public function supports(string $type): bool
@@ -1018,8 +1030,12 @@ $contacts = Contact::forContext('dashboard')->get(); // Optimized loading
 **Solution**: Chunking e memory management
 
 ```php
+<<<<<<< HEAD
 // Modules/healthcare_app/Services/BulkProcessingService.php
 // Modules/ExternalProject/Services/BulkProcessingService.php
+=======
+// Modules/Quaeris/Services/BulkProcessingService.php
+>>>>>>> 6ed19256f (.)
 class BulkProcessingService
 {
     public function processLargeDataset(\Closure $processor, Builder $query, int $chunkSize = 1000): void
@@ -1411,4 +1427,8 @@ class ContactNotificationService
    - Log for monitoring
 ```
 
+<<<<<<< HEAD
 Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
+=======
+Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
+>>>>>>> 6ed19256f (.)

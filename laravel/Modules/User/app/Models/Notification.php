@@ -8,6 +8,10 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\DatabaseNotification as BaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
+<<<<<<< HEAD
+=======
+use Modules\User\Database\Factories\NotificationFactory;
+>>>>>>> 6ed19256f (.)
 use Modules\Xot\Models\Traits\HasXotFactory;
 
 /**
@@ -27,7 +31,11 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  *
  * @mixin IdeHelperNotification
  *
+<<<<<<< HEAD
  * @method static \Modules\User\Database\Factories\NotificationFactory factory($count = null, $state = [])
+=======
+ * @method static NotificationFactory factory($count = null, $state = [])
+>>>>>>> 6ed19256f (.)
  *
  * @mixin \Eloquent
  */
@@ -35,6 +43,10 @@ class Notification extends BaseNotification
 {
     use HasXotFactory;
 
+<<<<<<< HEAD
+=======
+    /** @var string */
+>>>>>>> 6ed19256f (.)
     protected $connection = 'user';
 
     // protected $fillable = ['id', 'user_id', 'client_id', 'name', 'scopes', 'revoked', 'expires_at'];

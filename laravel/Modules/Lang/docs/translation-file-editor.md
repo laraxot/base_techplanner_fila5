@@ -123,7 +123,10 @@ return [
 
 **Problema**: Impossibile modificare un file
 **Soluzione**:
+<<<<<<< HEAD
 **Soluzione**: 
+=======
+>>>>>>> 6ed19256f (.)
 1. Verificare i permessi del file
 2. Controllare che il file non sia in sola lettura
 3. Verificare lo spazio su disco
@@ -355,4 +358,7 @@ php artisan lang:sync
 2. **Scalabilità**: Supporto per grandi volumi di traduzioni
 3. **Manutenibilità**: Struttura modulare e estendibile
 4. **Usabilità**: Interfaccia intuitiva per i traduttori
+<<<<<<< HEAD
 4. **Usabilità**: Interfaccia intuitiva per i traduttori 
+=======
+>>>>>>> 6ed19256f (.)

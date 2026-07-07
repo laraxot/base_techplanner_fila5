@@ -12,4 +12,8 @@ The `Xot` module was analyzed using PHPStan at its highest level (10).
 
 The `Xot` module is fully compliant with PHPStan level 10 standards. No corrections were necessary.
 
+<<<<<<< HEAD
 This result aligns with the "Super Mucca" quality standards, ensuring robust and clean code for this foundational module.
+=======
+This result aligns with the "Super Mucca" quality standards, ensuring robust and clean code for this foundational module.
+>>>>>>> 6ed19256f (.)

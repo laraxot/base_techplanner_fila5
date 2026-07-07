@@ -3,7 +3,10 @@
 ## Status: ✅ COMPLETATO (0 errori)
 
 ## Data: 2025-01-22
+<<<<<<< HEAD
 ## Data: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Progresso
 ```
@@ -103,16 +106,26 @@ Problema: Accesso a offset annidati su mixed.
 ```php
 // ❌ PRIMA
 return [
+<<<<<<< HEAD
     'message_id' => isset($responseData['result']['message_id']) 
         ? (int) $responseData['result']['message_id'] 
+=======
+    'message_id' => isset($responseData['result']['message_id'])
+        ? (int) $responseData['result']['message_id']
+>>>>>>> 6ed19256f (.)
         : null,
 ];
 
 // ✅ DOPO
 $messageId = null;
 if (isset($responseData['result']) && is_array($responseData['result']) && isset($responseData['result']['message_id'])) {
+<<<<<<< HEAD
     $messageId = is_int($responseData['result']['message_id']) 
         ? $responseData['result']['message_id'] 
+=======
+    $messageId = is_int($responseData['result']['message_id'])
+        ? $responseData['result']['message_id']
+>>>>>>> 6ed19256f (.)
         : (int) $responseData['result']['message_id'];
 }
 
@@ -205,12 +218,20 @@ foreach ($allKeys as $key) {
 // ✅ DOPO
 foreach ($allKeys as $key) {
     $row = [$key];
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // Type narrowing
     if (! is_string($key) && ! is_int($key)) {
         continue;
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     $row[] = isset($fileData[$key]) ? '✓' : '✗';  // OK
 }
 ```
@@ -224,8 +245,13 @@ Problema: Check ridondanti per tipo già noto.
 // ❌ PRIMA
 $searchableResult = ContactTypeEnum::getSearchable();
 /** @var array<string>|bool|string $searchable */
+<<<<<<< HEAD
 $searchable = is_array($searchableResult) || is_bool($searchableResult) || is_string($searchableResult) 
     ? $searchableResult 
+=======
+$searchable = is_array($searchableResult) || is_bool($searchableResult) || is_string($searchableResult)
+    ? $searchableResult
+>>>>>>> 6ed19256f (.)
     : false;
 
 // ✅ DOPO
@@ -338,6 +364,11 @@ Sistema di notifiche multi-canale (email, SMS, database, Telegram, WhatsApp) con
 
 **Status**: ✅ COMPLETATO
 **Data completamento**: 2025-01-22
+<<<<<<< HEAD
 **Data completamento**: [DATE]
 **Files corretti**: 13
 **Confidenza**: MASSIMA 🚀
+=======
+**Files corretti**: 13
+**Confidenza**: MASSIMA 🚀
+>>>>>>> 6ed19256f (.)

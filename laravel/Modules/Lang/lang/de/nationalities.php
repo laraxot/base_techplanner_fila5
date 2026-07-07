@@ -3,6 +3,10 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
+=======
+    // Europa
+>>>>>>> 6ed19256f (.)
     'it' => 'Italiener',
     'fr' => 'Franzose',
     'de' => 'Deutscher',
@@ -47,6 +51,10 @@ return [
     'ge' => 'Georgier',
     'am' => 'Armenier',
     'az' => 'Aserbaidschaner',
+<<<<<<< HEAD
+=======
+    // Amerika
+>>>>>>> 6ed19256f (.)
     'us' => 'Amerikaner',
     'ca' => 'Kanadier',
     'mx' => 'Mexikaner',
@@ -89,6 +97,10 @@ return [
     'kn' => 'Kittitianer',
     'dm' => 'Dominikaner',
     'bs' => 'Bahamaer',
+<<<<<<< HEAD
+=======
+    // Asien
+>>>>>>> 6ed19256f (.)
     'cn' => 'Chinese',
     'jp' => 'Japaner',
     'kr' => 'Südkoreaner',
@@ -133,6 +145,10 @@ return [
     'kg' => 'Kirgise',
     'tj' => 'Tadschike',
     'tm' => 'Turkmen',
+<<<<<<< HEAD
+=======
+    // Afrika
+>>>>>>> 6ed19256f (.)
     'eg' => 'Ägypter',
     'ly' => 'Libyer',
     'tn' => 'Tunesier',
@@ -187,6 +203,10 @@ return [
     'ao' => 'Angolaner',
     'aq' => 'Antarktiker',
     'zr' => 'Zairer',
+<<<<<<< HEAD
+=======
+    // Ozeanien
+>>>>>>> 6ed19256f (.)
     'au' => 'Australier',
     'ax' => 'Åländer',
     'nz' => 'Neuseeländer',
@@ -204,6 +224,10 @@ return [
     'pw' => 'Palauer',
     'fm' => 'Mikronesier',
     'mh' => 'Marshaller',
+<<<<<<< HEAD
+=======
+    // Andere
+>>>>>>> 6ed19256f (.)
     'xk' => 'Kosovare',
     'va' => 'Vatikaner',
     'sm' => 'San-Marinese',
@@ -256,6 +280,7 @@ return [
     'mp' => 'Nördliche Marianer',
     'um' => 'US-Außengebiete',
     'eh' => 'Westsahara',
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -269,4 +294,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

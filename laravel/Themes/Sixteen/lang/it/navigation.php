@@ -4,7 +4,11 @@ declare(strict_types=1);
 
 return [
     'main' => 'Navigazione principale',
+<<<<<<< HEAD
     'site_title' => 'Il mio Comune',
+=======
+    'site_title' => '<nome progetto>',
+>>>>>>> 6ed19256f (.)
     'home' => 'Home',
     'about' => 'Chi siamo',
     'contact' => 'Contatti',
@@ -12,6 +16,7 @@ return [
     'portfolio' => 'Portfolio',
     'news' => 'Notizie',
     'blog' => 'Blog',
+<<<<<<< HEAD
 
     // Homepage sections
     'homepage' => [
@@ -51,4 +56,6 @@ return [
         'report_issue' => 'Segnala disservizio',
         'maybe_searching' => 'Forse stavi cercando',
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

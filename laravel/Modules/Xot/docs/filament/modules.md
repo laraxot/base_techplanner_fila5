@@ -47,9 +47,16 @@ class AdminPanelProvider extends XotBasePanelProvider
 * [modules.md](docs/architecture/modules.md)
 * [modules.md](../../../Xot/docs/filament/modules.md)
 * [modules.md](../../../Xot/docs/config/modules.md)
+<<<<<<< HEAD
 * [modules.md](../../../xot/docs/filament/modules.md)
 * [modules.md](../../../xot/docs/config/modules.md)
 
 ### Versione Incoming
 
 ---
+=======
+
+### Versione Incoming
+
+---
+>>>>>>> 6ed19256f (.)

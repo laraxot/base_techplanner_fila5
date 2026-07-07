@@ -14,6 +14,7 @@ return [
         'sort' => 63,
         'icon' => 'activity-snapshot-animated',
     ],
+<<<<<<< HEAD
     'fields' => [
         'model_type' => [
             'label' => 'model_type',
@@ -51,4 +52,6 @@ return [
             'tooltip' => '',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

@@ -129,12 +129,20 @@ private function getStudiosForLocation(Get $get): Collection
         return collect();
     return \Modules\<nome modulo>\Models\Studio::whereHas('address', function($q) use ($cap, $province, $region) {
     return \Modules\<nome modulo>\Models\Studio::whereHas('address', function($q) use ($cap, $province, $region) {
+<<<<<<< HEAD
     return \Modules\<nome progetto>\Models\Studio::whereHas('address', function($q) use ($cap, $province, $region) {
+=======
+    return \Modules\SaluteOra\Models\Studio::whereHas('address', function($q) use ($cap, $province, $region) {
+>>>>>>> 6ed19256f (.)
 }
 
     return \Modules\<nome modulo>\Models\Studio::whereHas('address', function($q) use ($cap, $province, $region) {
     return \Modules\<nome modulo>\Models\Studio::whereHas('address', function($q) use ($cap, $province, $region) {
+<<<<<<< HEAD
     return \Modules\<nome progetto>\Models\Studio::whereHas('address', function($q) use ($cap, $province, $region) {
+=======
+    return \Modules\SaluteOra\Models\Studio::whereHas('address', function($q) use ($cap, $province, $region) {
+>>>>>>> 6ed19256f (.)
 }
 
 private function getStudiosForLocation(Get $get): Collection
@@ -146,6 +154,7 @@ private function getStudiosForLocation(Get $get): Collection
     return \Modules\<nome modulo>\Models\Studio::whereHas('address', function($q) use ($cap, $province, $region) {
     return \Modules\<nome modulo>\Models\Studio::whereHas('address', function($q) use ($cap, $province, $region) {
     return \Modules\<nome modulo>\Models\Studio::whereHas('address', function($q) use ($cap, $province, $region) {
+<<<<<<< HEAD
     return \Modules\<nome progetto>\Models\Studio::whereHas('address', function($q) use ($cap, $province, $region) {
     return \Modules\<nome modulo>\Models\Studio::whereHas('address', function($q) use ($cap, $province, $region) {
     return \Modules\<nome modulo>\Models\Studio::whereHas('address', function($q) use ($cap, $province, $region) {
@@ -153,6 +162,15 @@ private function getStudiosForLocation(Get $get): Collection
     return \Modules\<nome progetto>\Models\Studio::whereHas('address', function($q) use ($cap, $province, $region) {
     return \Modules\<nome modulo>\Models\Studio::whereHas('address', function($q) use ($cap, $province, $region) {
     return \Modules\<nome progetto>\Models\Studio::whereHas('address', function($q) use ($cap, $province, $region) {
+=======
+    return \Modules\SaluteOra\Models\Studio::whereHas('address', function($q) use ($cap, $province, $region) {
+    return \Modules\<nome modulo>\Models\Studio::whereHas('address', function($q) use ($cap, $province, $region) {
+    return \Modules\<nome modulo>\Models\Studio::whereHas('address', function($q) use ($cap, $province, $region) {
+    return \Modules\<nome modulo>\Models\Studio::whereHas('address', function($q) use ($cap, $province, $region) {
+    return \Modules\SaluteOra\Models\Studio::whereHas('address', function($q) use ($cap, $province, $region) {
+    return \Modules\<nome modulo>\Models\Studio::whereHas('address', function($q) use ($cap, $province, $region) {
+    return \Modules\SaluteOra\Models\Studio::whereHas('address', function($q) use ($cap, $province, $region) {
+>>>>>>> 6ed19256f (.)
         $q->where('postal_code', $cap)
           ->where('administrative_area_level_3', $province)
           ->where('administrative_area_level_2', $region);
@@ -212,16 +230,24 @@ return [
 - [Widget Analysis](../<nome modulo>/docs/widgets/find-doctor-widget-studio-step-analysis.md)
 ### Modulo Generico
 - [Widget Analysis](../<nome modulo>/docs/widgets/find-doctor-widget-studio-step-analysis.md)
+<<<<<<< HEAD
 ### Modulo <nome progetto>
 - [Widget Analysis](../<nome progetto>/docs/widgets/find-doctor-widget-studio-step-analysis.md)
+=======
+### Modulo SaluteOra
+- [Widget Analysis](../SaluteOra/docs/widgets/find-doctor-widget-studio-step-analysis.md)
+>>>>>>> 6ed19256f (.)
 
 ---
 **Component Status**: 📋 Documented - Ready for Implementation
 **Reusability**: 🔄 High - Cross-module compatible
 **Last Updated**: January 2025
 **Last Updated**: January 2025
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 6ed19256f (.)
         ],
 
 ---
@@ -229,8 +255,11 @@ return [
 **Reusability**: 🔄 High - Cross-module compatible
 **Last Updated**: January 2025
 **Last Updated**: January 2025
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'phone' => [
             'label' => 'Telefono',
@@ -253,8 +282,13 @@ return [
 - [Widget Analysis](../<nome modulo>/docs/widgets/find-doctor-widget-studio-step-analysis.md)
 ### Modulo Generico
 - [Widget Analysis](../<nome modulo>/docs/widgets/find-doctor-widget-studio-step-analysis.md)
+<<<<<<< HEAD
 ### Modulo <nome progetto>
 - [Widget Analysis](../<nome progetto>/docs/widgets/find-doctor-widget-studio-step-analysis.md)
+=======
+### Modulo SaluteOra
+- [Widget Analysis](../SaluteOra/docs/widgets/find-doctor-widget-studio-step-analysis.md)
+>>>>>>> 6ed19256f (.)
 
 ---
 **Component Status**: 📋 Documented - Ready for Implementation
@@ -266,6 +300,7 @@ return [
 ---
 **Component Status**: 📋 Documented - Ready for Implementation
 **Reusability**: 🔄 High - Cross-module compatible
+<<<<<<< HEAD
 
 
 
@@ -273,6 +308,8 @@ return [
 **Component Status**: 📋 Documented - Ready for Implementation
 **Reusability**: 🔄 High - Cross-module compatible
 
+=======
+>>>>>>> 6ed19256f (.)
 **Last Updated**: January 2025
 **Last Updated**: January 2025
 **Last Updated**: January 2025
@@ -280,12 +317,15 @@ return [
 **Component Status**: 📋 Documented - Ready for Implementation
 **Reusability**: 🔄 High - Cross-module compatible
 **Last Updated**: January 2025
+<<<<<<< HEAD
 
 
 ---
 **Component Status**: 📋 Documented - Ready for Implementation
 **Reusability**: 🔄 High - Cross-module compatible
 
+=======
+>>>>>>> 6ed19256f (.)
 # StudioCardSelector Component - Modulo UI
 
 ## 🎯 **Panoramica**
@@ -481,4 +521,8 @@ return [
 **Reusability**: 🔄 High - Cross-module compatible
 **Last Updated**: January 2025
 **Last Updated**: January 2025
+<<<<<<< HEAD
 **Last Updated**: January 2025
+=======
+**Last Updated**: January 2025
+>>>>>>> 6ed19256f (.)

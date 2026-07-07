@@ -18,7 +18,11 @@ class UpdateAction
     use QueueableAction;
 
     /**
+<<<<<<< HEAD
      * @param array<string, mixed> $data
+=======
+     * @param  array<string, mixed>  $data
+>>>>>>> 6ed19256f (.)
      */
     public function execute(Model $model, array $data, array $rules): Model
     {
@@ -27,7 +31,11 @@ class UpdateAction
 
         $keyName = $model->getKeyName();
         // $data['updated_by'] = authId();
+<<<<<<< HEAD
         if (null === $model->getKey()) {
+=======
+        if ($model->getKey() === null) {
+>>>>>>> 6ed19256f (.)
             $key = $data[$keyName];
             /** @var array<string, mixed> $data */
             $data = collect($data)->except($keyName)->toArray();
@@ -40,7 +48,14 @@ class UpdateAction
             $model = $model->firstOrCreate($where, $data);
         }
 
+<<<<<<< HEAD
         $model->update($data);
+=======
+        /**
+         * @phpstan-ignore method.notFound (.)
+         */
+        $model = tap($model)->update($data);
+>>>>>>> 6ed19256f (.)
 
         app(__NAMESPACE__.'\\Update\RelationAction')->execute($model, $data);
 

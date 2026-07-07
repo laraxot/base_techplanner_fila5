@@ -48,6 +48,10 @@ final class SendSmsFactorSMSAction implements SmsActionContract
      * Execute the action.
      *
      * @param  SmsData  $smsData  I dati del messaggio SMS
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> 6ed19256f (.)
      * @return array Risultato dell'operazione
      *
      * @throws Exception In caso di errore durante l'invio
@@ -60,7 +64,11 @@ final class SendSmsFactorSMSAction implements SmsActionContract
         // Normalizza il numero di telefono
         $to = (string) $smsData->recipient;
         if (Str::startsWith($to, '00')) {
+<<<<<<< HEAD
             $to = '+'.substr($to, 2);
+=======
+            $to = $to !== '' ? '+'.substr($to, 2) : $to;
+>>>>>>> 6ed19256f (.)
         }
 
         if (! Str::startsWith($to, '+')) {
@@ -69,7 +77,11 @@ final class SendSmsFactorSMSAction implements SmsActionContract
 
         $body = [
             'text' => $smsData->body,
+<<<<<<< HEAD
             'sender' => $smsData->from ?: $this->defaultSender,
+=======
+            'sender' => $smsData->from ?? $this->defaultSender,
+>>>>>>> 6ed19256f (.)
             'recipients' => [
                 [
                     'phone' => $to,

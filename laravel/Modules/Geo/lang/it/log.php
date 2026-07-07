@@ -8,65 +8,89 @@ return [
             'label' => 'Livello',
             'placeholder' => 'Seleziona il livello di log',
             'help' => 'Livello di severità del log',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'message' => [
             'label' => 'Messaggio',
             'placeholder' => 'Inserisci il messaggio di log',
             'help' => 'Messaggio descrittivo del log',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'context' => [
             'label' => 'Contesto',
             'placeholder' => 'Inserisci il contesto del log',
             'help' => 'Contesto aggiuntivo per il log',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'channel' => [
             'label' => 'Canale',
             'placeholder' => 'Seleziona il canale di log',
             'help' => 'Canale di log da utilizzare',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'file' => [
             'label' => 'File',
             'placeholder' => 'Seleziona il file di log',
             'help' => 'File di log da utilizzare',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'max_files' => [
             'label' => 'File massimi',
             'placeholder' => 'Inserisci il numero massimo di file',
             'help' => 'Numero massimo di file di log da mantenere',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'max_size' => [
             'label' => 'Dimensione massima',
             'placeholder' => 'Inserisci la dimensione massima in MB',
             'help' => 'Dimensione massima per file di log in MB',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'retention_days' => [
             'label' => 'Giorni di retention',
             'placeholder' => 'Inserisci il numero di giorni',
             'help' => 'Numero di giorni per mantenere i log',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'validation' => [
@@ -167,6 +191,7 @@ return [
         'html' => 'HTML',
         'pdf' => 'PDF',
     ],
+<<<<<<< HEAD
     'label' => 'Log',
     'plural_label' => 'Log (Plurale)',
     'navigation' => [
@@ -191,4 +216,6 @@ return [
             'label' => 'Elimina Log',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

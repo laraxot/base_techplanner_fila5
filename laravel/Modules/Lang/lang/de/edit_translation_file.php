@@ -9,7 +9,10 @@ return [
             'placeholder' => 'key',
             'helper_text' => 'key',
             'description' => 'key',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'data' => [
             'pippo' => [
@@ -17,16 +20,20 @@ return [
                 'helper_text' => 'data.pippo',
                 'placeholder' => 'data.pippo',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'pippo' => [
             'description' => 'pippo',
             'helper_text' => 'pippo',
             'placeholder' => 'pippo',
             'label' => 'pippo',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
         'pluto' => [
@@ -34,6 +41,11 @@ return [
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
+=======
+        ],
+        'pluto' => [
+            'description' => 'pluto',
+>>>>>>> 6ed19256f (.)
         ],
         'snapshots' => [
             'fields' => [
@@ -46,10 +58,13 @@ return [
                     ],
                 ],
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'content' => [
             'snapshots' => [
@@ -354,10 +369,13 @@ return [
                     'helper_text' => 'content.specialties.empty',
                 ],
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -371,6 +389,7 @@ return [
             'label' => 'lang',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -380,4 +399,6 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

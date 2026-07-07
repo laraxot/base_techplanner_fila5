@@ -52,12 +52,20 @@ I file di localizzazione **devono rimanere nella directory principale**:
 
 ✅ CORRETTO:
 ```
+<<<<<<< HEAD
 Modules/Rating/lang/it/rating.php
+=======
+/var/www/html/_bases/base_<nome progetto>_fila3/laravel/Modules/Rating/lang/it/rating.php
+>>>>>>> 6ed19256f (.)
 ```
 
 ❌ ERRATO:
 ```
+<<<<<<< HEAD
 Modules/Rating/app/lang/it/rating.php
+=======
+/var/www/html/_bases/base_<nome progetto>_fila3/laravel/Modules/Rating/app/lang/it/rating.php
+>>>>>>> 6ed19256f (.)
 ```
 
 ## Eccezioni Tecniche (NON spostare in app/)
@@ -111,4 +119,8 @@ Mentre la regola della directory `app` è importante per la coerenza e l'autoloa
 1. **Compatibilità con Laravel**: Il framework si aspetta certi file in posizioni specifiche
 2. **Convenzioni di Modularità**: Alcuni file devono seguire convenzioni specifiche per il loading modulare
 3. **Funzionalità degli Strumenti**: Certi strumenti di sviluppo richiedono file di configurazione in posizioni specifiche
+<<<<<<< HEAD
 4. **Separazione delle Responsabilità**: Separare il codice applicativo dai file di supporto migliora la manutenibilità
+=======
+4. **Separazione delle Responsabilità**: Separare il codice applicativo dai file di supporto migliora la manutenibilità
+>>>>>>> 6ed19256f (.)

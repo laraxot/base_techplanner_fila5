@@ -29,4 +29,8 @@ Modules/
 
 ## Risorse Aggiuntive
 - [Documentazione dettagliata di registerBladeIcons](registerBladeIcons.md)
+<<<<<<< HEAD
 - [Guida all'implementazione delle icone personalizzate](custom-icons-implementation.md)
+=======
+- [Guida all'implementazione delle icone personalizzate](custom-icons-implementation.md)
+>>>>>>> 6ed19256f (.)

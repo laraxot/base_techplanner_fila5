@@ -15,7 +15,11 @@ class GetViewNameSpacePathAction
     /**
      * Ottiene il percorso di un namespace di vista.
      *
+<<<<<<< HEAD
      * @param string $ns Il namespace della vista
+=======
+     * @param  string  $ns  Il namespace della vista
+>>>>>>> 6ed19256f (.)
      *
      * @return string|null Il percorso del namespace o null se non trovato
      */

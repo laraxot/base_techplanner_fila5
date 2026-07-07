@@ -10,6 +10,7 @@ return [
             'tooltip' => 'list_log_activities',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Log Activities Action Test',
     'plural_label' => 'Log Activities Action Test (Plurale)',
     'navigation' => [
@@ -43,4 +44,6 @@ return [
             'description' => '',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

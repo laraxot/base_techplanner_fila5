@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources;
 
+<<<<<<< HEAD
 use App\Filament\Resources\ContactEntryResource\Pages;
 use App\Filament\Resources\ContactEntryResource\Pages\ListContactEntries;
 use App\Filament\Resources\ContactEntryResource\Pages\ViewContactEntry;
@@ -15,6 +16,8 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Support\HtmlString;
 use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
+=======
+>>>>>>> 6ed19256f (.)
 use Filament\Schemas\Schema;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Tables\Columns\TextColumn;
@@ -35,9 +38,15 @@ class ContactEntryResource extends Resource
 {
     protected static ?string $model = ContactEntry::class;
 
+<<<<<<< HEAD
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-envelope';
 
     protected static string|\UnitEnum|null $navigationGroup = 'Contact';
+=======
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-envelope';
+
+    protected static string | \UnitEnum | null $navigationGroup = 'Contact';
+>>>>>>> 6ed19256f (.)
 
     public static function infolist(Schema $schema): Schema
     {
@@ -89,7 +98,10 @@ class ContactEntryResource extends Resource
         ];
     }
 }
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> 6ed19256f (.)

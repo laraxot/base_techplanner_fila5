@@ -63,9 +63,16 @@ if (isset($record->attribute)) {
 
 ## Analysis
 - **Date**: 2025-12-24
+<<<<<<< HEAD
 - **Date**: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 - **Total Errors**: 0
 - **Status**: Passed
 
 ## Verification
+<<<<<<< HEAD
 - UI module is compliant with current PHPStan configuration.
+=======
+- UI module is compliant with current PHPStan configuration.
+>>>>>>> 6ed19256f (.)

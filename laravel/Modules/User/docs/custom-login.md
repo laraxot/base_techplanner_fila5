@@ -2,7 +2,10 @@ https://ajaxray.com/blog/lets-beautify-filament-3-login-page/
 
 https://www.codef.site/blog/laravel/how-to-customize-laravel-filament-login-page
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 https://v2.filamentphp.com/tricks/customizing-filament-breezy-registration-profile-page
 
 ### Versione HEAD
@@ -14,7 +17,10 @@ https://v2.filamentphp.com/tricks/customizing-filament-breezy-registration-profi
 > - [Socialite Integration](socialite.txt) - Integrazione con provider social
 > - [Two Factor Authentication](two_factor.txt) - Autenticazione a due fattori
 > - [Filament Best Practices](FILAMENT_BEST_PRACTICES.md) - Best practices Filament
+<<<<<<< HEAD
 > - [Filament Best Practices](filament_best_practices.md) - Best practices Filament
+=======
+>>>>>>> 6ed19256f (.)
 > - [User Profile Models](user_profile_models.md) - Modelli del profilo utente
 
 ## Implementazione con Filament
@@ -29,14 +35,24 @@ use Filament\Forms\Form;
 class LoginWidget extends XotBaseWidget
 {
     protected static string $view = 'filament.widgets.auth.login-form';
+<<<<<<< HEAD
     
     public ?array $data = [];
     
+=======
+
+    public ?array $data = [];
+
+>>>>>>> 6ed19256f (.)
     public function mount(): void
     {
         $this->form->fill();
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
     {
         return $form
@@ -53,6 +69,7 @@ class LoginWidget extends XotBaseWidget
             ])
             ->statePath('data');
     }
+<<<<<<< HEAD
     
     public function login(): void
     {
@@ -62,6 +79,17 @@ class LoginWidget extends XotBaseWidget
             $this->redirect('/dashboard');
         }
         
+=======
+
+    public function login(): void
+    {
+        $data = $this->form->getState();
+
+        if (Auth::attempt($data)) {
+            $this->redirect('/dashboard');
+        }
+
+>>>>>>> 6ed19256f (.)
         $this->addError('email', 'Invalid credentials');
     }
 }
@@ -79,6 +107,7 @@ class LoginWidget extends XotBaseWidget
 
 - [Documentazione Filament](https://filamentphp.com/docs)
 - [Best Practices Filament](FILAMENT_BEST_PRACTICES.md)
+<<<<<<< HEAD
 - [Best Practices Filament](filament_best_practices.md)
 - [User Profile Models](user_profile_models.md)
 
@@ -87,3 +116,10 @@ class LoginWidget extends XotBaseWidget
 
 
 ---
+=======
+- [User Profile Models](user_profile_models.md)
+
+### Versione Incoming
+
+---
+>>>>>>> 6ed19256f (.)

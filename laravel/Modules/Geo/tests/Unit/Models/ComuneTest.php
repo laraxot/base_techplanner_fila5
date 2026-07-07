@@ -5,22 +5,32 @@ declare(strict_types=1);
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\File;
 use Modules\Geo\Models\Comune;
+<<<<<<< HEAD
 use Modules\Tenant\Services\TenantService;
+=======
+>>>>>>> 6ed19256f (.)
 use Tests\TestCase;
 
 uses(TestCase::class);
 
 beforeEach(function (): void {
+<<<<<<< HEAD
     // Clear any cached data before setting up test data
     Cache::forget('sushi_Comune_data');
 
+=======
+>>>>>>> 6ed19256f (.)
     // Crea un file JSON di test
     $this->testData = [
         [
             'id' => 1,
             'regione' => 'Lombardia',
             'provincia' => 'Milano',
+<<<<<<< HEAD
             'nome' => 'Milano',
+=======
+            'comune' => 'Milano',
+>>>>>>> 6ed19256f (.)
             'cap' => '20100',
             'lat' => 45.4642,
             'lng' => 9.1900,
@@ -31,7 +41,11 @@ beforeEach(function (): void {
             'id' => 2,
             'regione' => 'Lombardia',
             'provincia' => 'Milano',
+<<<<<<< HEAD
             'nome' => 'Sesto San Giovanni',
+=======
+            'comune' => 'Sesto San Giovanni',
+>>>>>>> 6ed19256f (.)
             'cap' => '20099',
             'lat' => 45.5347,
             'lng' => 9.2345,
@@ -40,6 +54,7 @@ beforeEach(function (): void {
         ],
     ];
 
+<<<<<<< HEAD
     // Use the path that matches the SushiToJson trait's getJsonFile() method
     $jsonPath = $this->app->make(TenantService::class)->filePath('database/content/comuni.json');
     $directory = dirname($jsonPath);
@@ -48,6 +63,9 @@ beforeEach(function (): void {
     }
 
     File::put($jsonPath, json_encode($this->testData, JSON_PRETTY_PRINT));
+=======
+    File::put(base_path('database/content/comuni.json'), json_encode($this->testData, JSON_PRETTY_PRINT));
+>>>>>>> 6ed19256f (.)
 });
 
 afterEach(function (): void {
@@ -55,8 +73,12 @@ afterEach(function (): void {
     Cache::forget('sushi_Comune_data');
 
     // Rimuovi il file di test
+<<<<<<< HEAD
     $jsonPath = app(TenantService::class)->filePath('database/content/comuni.json');
     File::delete($jsonPath);
+=======
+    File::delete(base_path('database/content/comuni.json'));
+>>>>>>> 6ed19256f (.)
 });
 
 test('it can load comuni from json', function (): void {
@@ -68,7 +90,11 @@ test('it can load comuni from json', function (): void {
 });
 
 test('it can filter comuni by region', function (): void {
+<<<<<<< HEAD
     $comuni = Comune::where('regione', 'Lombardia')->get();
+=======
+    $comuni = Comune::byRegion('Lombardia')->get();
+>>>>>>> 6ed19256f (.)
 
     expect($comuni)->toHaveCount(2);
     expect($comuni[0]->regione)->toBe('Lombardia');
@@ -156,17 +182,28 @@ test('it can filter comuni by name region and cap', function (): void {
 });
 
 test('it can filter comuni by name province region and cap', function (): void {
+<<<<<<< HEAD
     $comuni = Comune::where('nome', 'Milano')->where('provincia', 'Milano')->where('regione', 'Lombardia')->where('cap', '20100')->get();
 
     expect($comuni)->toHaveCount(1);
     expect($comuni[0]->nome)->toBe('Milano');
+=======
+    $comuni = Comune::byNameProvinceRegionAndCap('Milano', 'Milano', 'Lombardia', '20100')->get();
+
+    expect($comuni)->toHaveCount(1);
+    expect($comuni[0]->comune)->toBe('Milano');
+>>>>>>> 6ed19256f (.)
     expect($comuni[0]->provincia)->toBe('Milano');
     expect($comuni[0]->regione)->toBe('Lombardia');
     expect($comuni[0]->cap)->toBe('20100');
 });
 
 test('it can create a new comune', function (): void {
+<<<<<<< HEAD
     $comune = new Comune([
+=======
+    $comune = Comune::create([
+>>>>>>> 6ed19256f (.)
         'regione' => 'Lombardia',
         'provincia' => 'Milano',
         'comune' => 'Bresso',
@@ -174,7 +211,10 @@ test('it can create a new comune', function (): void {
         'lat' => 45.5389,
         'lng' => 9.1900,
     ]);
+<<<<<<< HEAD
     $comune->save();
+=======
+>>>>>>> 6ed19256f (.)
 
     expect($comune->id)->not->toBeNull();
     expect($comune->comune)->toBe('Bresso');
@@ -187,6 +227,7 @@ test('it can create a new comune', function (): void {
 
 test('it can update an existing comune', function (): void {
     $comune = Comune::first();
+<<<<<<< HEAD
     if ($comune) {
         $comune->comune = 'Milano Centro';
         $comune->cap = '20121';
@@ -209,6 +250,15 @@ test('it can update an existing comune', function (): void {
         expect($comune->comune)->toBe('Milano Centro');
         expect($comune->cap)->toBe('20121');
     }
+=======
+    $comune->update([
+        'comune' => 'Milano Centro',
+        'cap' => '20121',
+    ]);
+
+    expect($comune->comune)->toBe('Milano Centro');
+    expect($comune->cap)->toBe('20121');
+>>>>>>> 6ed19256f (.)
 });
 
 test('it can delete an existing comune', function (): void {

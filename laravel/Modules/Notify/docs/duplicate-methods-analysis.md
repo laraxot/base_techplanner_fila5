@@ -1,8 +1,12 @@
 # Analisi Metodi Duplicati - Modulo Notify
 
 **Data Generazione**: 2025-10-15 06:41:17
+<<<<<<< HEAD
 **Data Generazione**: 2025-10-15 06:41:17
 **Totale Gruppi di Duplicati**: 
+=======
+**Totale Gruppi di Duplicati**:
+>>>>>>> 6ed19256f (.)
 
 ## Sommario Esecutivo
 
@@ -663,7 +667,10 @@ public function execute(string $prompt): CompletionData
 
 ---
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 ---
 
 ## Legenda
@@ -687,4 +694,8 @@ Indica quanto è probabile che il refactoring sia vantaggioso:
 - **90-100%**: Altamente raccomandato
 - **70-89%**: Raccomandato
 - **50-69%**: Valutare caso per caso
+<<<<<<< HEAD
 - **< 50%**: Richiede analisi dettagliata
+=======
+- **< 50%**: Richiede analisi dettagliata
+>>>>>>> 6ed19256f (.)

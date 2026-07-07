@@ -22,9 +22,15 @@ class TenantSettingFactory extends Factory
     {
         return [
             'tenant_id' => Tenant::factory(),
+<<<<<<< HEAD
             'key' => ['email', 'phone', 'address', 'timezone', 'locale', 'currency', 'notifications', 'theme'][array_rand(['email', 'phone', 'address', 'timezone', 'locale', 'currency', 'notifications', 'theme'])],
             'value' => ['enabled', 'disabled', 'test@example.com', '+1234567890', 'Main Street 123', 'Europe/Rome', 'it', 'EUR'][array_rand(['enabled', 'disabled', 'test@example.com', '+1234567890', 'Main Street 123', 'Europe/Rome', 'it', 'EUR'])],
             'type' => ['string', 'integer', 'boolean', 'array', 'json'][array_rand(['string', 'integer', 'boolean', 'array', 'json'])],
+=======
+            'key' => $this->faker->word,
+            'value' => $this->faker->text,
+            'type' => $this->faker->randomElement(['string', 'integer', 'boolean', 'array', 'json']),
+>>>>>>> 6ed19256f (.)
         ];
     }
 }

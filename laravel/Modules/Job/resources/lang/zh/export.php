@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -59,6 +60,29 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'job_id' => [
+            'label' => '任务ID',
+        ],
+        'exportable_type' => [
+            'label' => '可导出类型',
+        ],
+        'file_path' => [
+            'label' => '文件路径',
+        ],
+        'format' => [
+            'label' => '格式',
+        ],
+        'status' => [
+            'label' => '状态',
+        ],
+        'created_at' => [
+            'label' => '创建时间',
+        ],
+        'completed_at' => [
+            'label' => '完成时间',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -69,4 +93,8 @@ return [
             'label' => '下载',
         ],
     ],
+<<<<<<< HEAD
 ];
+=======
+];
+>>>>>>> 6ed19256f (.)

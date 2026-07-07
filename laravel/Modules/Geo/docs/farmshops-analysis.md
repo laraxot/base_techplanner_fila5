@@ -339,10 +339,17 @@ class MapComponent {
 
 **Last Updated**: 2025-01-27
 **Next Review**: 2025-02-27
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 **Status**: 📋 ANALYSIS COMPLETE
 **Confidence Level**: 95%
 
 ---
 
+<<<<<<< HEAD
 *Questa analisi fornisce le basi per integrare le funzionalità di farmshops.eu nel progetto FixCity, migliorando significativamente l'esperienza utente con visualizzazioni geografiche avanzate.*
+=======
+*Questa analisi fornisce le basi per integrare le funzionalità di farmshops.eu nel progetto FixCity, migliorando significativamente l'esperienza utente con visualizzazioni geografiche avanzate.*
+>>>>>>> 6ed19256f (.)

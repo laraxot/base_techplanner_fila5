@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Modulo Cms - Filosofia, Religione, Politica, Zen
 
 ## 🎯 Panoramica
@@ -133,6 +134,8 @@ Questo componente incarna lo zen dell'auto-scoperta, creando automaticamente la 
 - [Documentazione Cms Blocks System](./content-blocks-system.md)
 - [Documentazione Cms Architecture](./architecture/)
 
+=======
+>>>>>>> 6ed19256f (.)
 # Cms Module: Philosophy, Purpose, and Design Principles
 
 **Date:** December 23, 2025
@@ -191,4 +194,8 @@ The `Cms` module, as the dynamic frontend and theme management layer, can signif
 4.  **Git (MCP)**: Aids in reviewing changes to theme files, configurations, or Blade components, ensuring version control and consistency in frontend development.
 5.  **Playwright/Puppeteer (MCP)**: Invaluable for UI testing of themes, generating screenshots, and verifying visual consistency across different browsers, directly supporting the quality of the frontend presentation.
 
+<<<<<<< HEAD
 By leveraging these MCPs, the `Cms` module can ensure its complex frontend management logic is robust, verifiable, and deeply integrated into the development and operational workflows, fostering truly effortless frontend customization.
+=======
+By leveraging these MCPs, the `Cms` module can ensure its complex frontend management logic is robust, verifiable, and deeply integrated into the development and operational workflows, fostering truly effortless frontend customization.
+>>>>>>> 6ed19256f (.)

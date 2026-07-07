@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+use Modules\Lang\Actions\ReadTranslationFileAction;
+>>>>>>> 6ed19256f (.)
 
 // Helper functions for this test
 if (! function_exists('createTranslationFile')) {

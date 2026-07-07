@@ -177,4 +177,8 @@ La risoluzione dei conflitti Git è stata completata con successo. Tutti i 28 fi
 ---
 **Ultimo aggiornamento**: 2025-07-31T09:20:00+02:00
 **Responsabile**: AI Assistant
+<<<<<<< HEAD
 **Status**: ✅ CONFLITTI GIT COMPLETAMENTE RISOLTI
+=======
+**Status**: ✅ CONFLITTI GIT COMPLETAMENTE RISOLTI
+>>>>>>> 6ed19256f (.)

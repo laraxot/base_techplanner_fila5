@@ -1,7 +1,10 @@
 # PHPStan Level 10 Compliance Status
 
 **Last Updated**: 2025-12-10
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 **Status**: ✅ FULLY COMPLIANT (0 errors)
 
 ## Summary
@@ -71,4 +74,8 @@ To maintain PHPStan compliance:
 - [Xot Base Classes](xot-base-classes.md)
 - [Framework Integration Patterns](framework-integration.md)
 - [HTTP Client Best Practices](http-client-best-practices.md)
+<<<<<<< HEAD
 - [Dummy Actions Pattern](dummy-actions-pattern.md)
+=======
+- [Dummy Actions Pattern](dummy-actions-pattern.md)
+>>>>>>> 6ed19256f (.)

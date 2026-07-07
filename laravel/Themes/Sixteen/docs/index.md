@@ -178,7 +178,11 @@ Questo indice organizza tutta la documentazione del tema Sixteen per facilitare 
 ### Setup Sviluppo
 ```bash
 # Installazione dipendenze
+<<<<<<< HEAD
 cd /var/www/html/_bases/base_predict_fila5_mono/laravel/Themes/Sixteen
+=======
+cd /var/www/html/_bases/base_predict_fila3_mono/laravel/Themes/Sixteen
+>>>>>>> 6ed19256f (.)
 npm install
 
 # Build sviluppo
@@ -236,4 +240,10 @@ npm run copy
 **Ultimo aggiornamento**: Gennaio 2025  
 **Versione Indice**: 1.0.0  
 **Status**: Completo e Aggiornato  
+<<<<<<< HEAD
 **Mantenuto da**: Team Sixteen
+=======
+**Mantenuto da**: Team Sixteen
+
+
+>>>>>>> 6ed19256f (.)

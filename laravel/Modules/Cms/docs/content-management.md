@@ -7,7 +7,10 @@ Il sistema di gestione dei contenuti di il progetto è basato su un'architettura
 
 ### PageContent
 - **Modello**: [`Modules\Cms\Models\PageContent`](../laravel/Modules/Cms/project_docs/page-content-management.md)
+<<<<<<< HEAD
 - **Modello**: [`Modules\Cms\Models\PageContent`](../laravel/modules/cms/project_docs/page-content-management.md)
+=======
+>>>>>>> 6ed19256f (.)
 - **Gestione**: Interfaccia admin Filament
 - **Storage**: File JSON con supporto multilingua
 - **Funzionalità**: Blocchi di contenuto flessibili e riutilizzabili
@@ -88,8 +91,11 @@ laravel/
 ## Links
 - [Documentazione PageContent](../laravel/Modules/Cms/project_docs/page-content-management.md)
 - [Filament Resources](../laravel/Modules/Cms/project_docs/filament-resources.md)
+<<<<<<< HEAD
 - [Documentazione PageContent](../laravel/modules/cms/project_docs/page-content-management.md)
 - [Filament Resources](../laravel/modules/cms/project_docs/filament-resources.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Performance](performance.md)
 
 ## Note
@@ -97,7 +103,10 @@ Questa documentazione è parte del sistema di documentazione di il progetto. Per
 
 ## Collegamenti Bidirezionali
 - [README](README.md) - Documentazione principale del modulo
+<<<<<<< HEAD
 - [README](readme.md) - Documentazione principale del modulo
+=======
+>>>>>>> 6ed19256f (.)
 - [Architettura](architecture.md) - Architettura del sistema CMS
 - [Gestione Pagine](page-management.md) - Sistema di gestione pagine
 - [Storage](content-storage.md) - Archiviazione contenuti
@@ -106,6 +115,7 @@ Questa documentazione è parte del sistema di documentazione di il progetto. Per
 - [Performance](performance.md) - Ottimizzazione performance
 
 ## Vedi Anche
+<<<<<<< HEAD
 - [Modulo UI](../ui/project_docs/readme.md) - Componenti di interfaccia
 - [Modulo Lang](../lang/project_docs/readme.md) - Gestione traduzioni
 - [Modulo Theme](../theme/project_docs/readme.md) - Gestione temi
@@ -118,6 +128,8 @@ Questa documentazione è parte del sistema di documentazione di <main module>. P
 * [content-management.md](laravel/modules/cms/project_docs/content-management.md)
 * [content-management.md](laravel/modules/cms/project_docs/roadmap/features/content-management.md)
 
+=======
+>>>>>>> 6ed19256f (.)
 - [Modulo UI](../UI/project_docs/README.md) - Componenti di interfaccia
 - [Modulo Lang](../Lang/project_docs/README.md) - Gestione traduzioni
 - [Modulo Theme](../Theme/project_docs/README.md) - Gestione temi
@@ -128,4 +140,8 @@ Questa documentazione è parte del sistema di documentazione di <main module>. P
 
 ## Collegamenti tra versioni di content-management.md
 * [content-management.md](laravel/Modules/Cms/project_docs/content-management.md)
+<<<<<<< HEAD
 * [content-management.md](laravel/Modules/Cms/project_docs/roadmap/features/content-management.md)
+=======
+* [content-management.md](laravel/Modules/Cms/project_docs/roadmap/features/content-management.md)
+>>>>>>> 6ed19256f (.)

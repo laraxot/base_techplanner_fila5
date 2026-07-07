@@ -642,4 +642,8 @@ protected function updateAnalytics(string $messageId, string $event): void
         ]
     ]);
 }
+<<<<<<< HEAD
 ``` 
+=======
+```
+>>>>>>> 6ed19256f (.)

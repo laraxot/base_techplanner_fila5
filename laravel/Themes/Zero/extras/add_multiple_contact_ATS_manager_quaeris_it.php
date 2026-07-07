@@ -23,7 +23,11 @@ $response = curl_exec($ch);
 $json = json_decode($response);
 
 $data = [
+<<<<<<< HEAD
 'a1' => [
+=======
+    'a1'=>[
+>>>>>>> 6ed19256f (.)
         'survey_pdf_id' => '16', // id survey/questionario assegnato, valore fisso
         'email' => 'marco.sottana@gmail.com',
         'mobile_phone' => '',
@@ -47,7 +51,11 @@ $data = [
         'attribute_13' => 'telefono segnalatore', // telefono segnalatore
         'attribute_14' => 'altraemail@mail.com', // email segnalatore
     ],
+<<<<<<< HEAD
 'a2' => [
+=======
+    'a2'=>[
+>>>>>>> 6ed19256f (.)
         'survey_pdf_id' => '16',
         'email' => 'vair81@gmail.com',
         'mobile_phone' => '3791339157',
@@ -71,7 +79,11 @@ $data = [
         'attribute_13' => 'telefono segnalatore', // telefono segnalatore
         'attribute_14' => 'altraemail@mail.com', // email segnalatore
     ],
+<<<<<<< HEAD
 'a3' => [
+=======
+    'a3'=>[
+>>>>>>> 6ed19256f (.)
         'survey_pdf_id' => '16',
         'email' => '',
         'mobile_phone' => '3791339157',
@@ -94,7 +106,13 @@ $data = [
         'attribute_12' => 'cellulare segnalatore', // cellulare segnalatore
         'attribute_13' => 'telefono segnalatore', // telefono segnalatore
         'attribute_14' => 'altraemail@mail.com', // email segnalatore
+<<<<<<< HEAD
 ],
+=======
+    ]
+    
+    
+>>>>>>> 6ed19256f (.)
 ];
 
 $headers = [
@@ -109,7 +127,11 @@ curl_setopt_array($ch, [
     CURLOPT_POST => true,
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_VERBOSE => true,
+<<<<<<< HEAD
 CURLOPT_POSTFIELDS => ['data' => json_encode($data)],
+=======
+    CURLOPT_POSTFIELDS => ['data'=>json_encode($data)],
+>>>>>>> 6ed19256f (.)
 ]);
 
 $response = curl_exec($ch);
@@ -118,6 +140,7 @@ echo '<pre>'.print_r($response, true).'</pre>';
 
 curl_close($ch);
 
+<<<<<<< HEAD
 function curl_postfields_flatten($data, $prefix = '')
 {
     if (! is_array($data)) {
@@ -137,3 +160,23 @@ function curl_postfields_flatten($data, $prefix = '')
     return $output;
 }
 
+=======
+
+function curl_postfields_flatten($data, $prefix = '') {
+    if (!is_array($data)) {
+      return $data;
+    }
+  
+    $output = array();
+    foreach($data as $key => $value) {
+      $final_key = $prefix ? "{$prefix}[{$key}]" : $key;
+      if (is_array($value)) {
+        $output += curl_postfields_flatten($value, $final_key);
+      }
+      else {
+        $output[$final_key] = $value;
+      }
+    }
+    return $output;
+  }
+>>>>>>> 6ed19256f (.)

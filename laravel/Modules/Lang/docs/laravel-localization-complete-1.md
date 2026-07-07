@@ -2,7 +2,11 @@
 
 ## Introduzione
 
+<<<<<<< HEAD
 Il pacchetto `mcamara/laravel-localization` è una soluzione potente per implementare la localizzazione in applicazioni Laravel. Questa guida, basata sul corso di Laravel Daily, fornisce istruzioni dettagliate per l'installazione, la configurazione e l'uso del pacchetto nel progetto `<nome progetto>`.
+=======
+Il pacchetto `mcamara/laravel-localization` è una soluzione potente per implementare la localizzazione in applicazioni Laravel. Questa guida, basata sul corso di Laravel Daily, fornisce istruzioni dettagliate per l'installazione, la configurazione e l'uso del pacchetto nel progetto `saluteora`.
+>>>>>>> 6ed19256f (.)
 
 ## Risorse
 

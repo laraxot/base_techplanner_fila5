@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\UI\Enums;
 
+<<<<<<< HEAD
 use Modules\Xot\Traits\EnumTrait;
 enum TableLayout: string
 {
@@ -12,6 +13,36 @@ enum TableLayout: string
     case LIST = 'list';
     case GRID = 'grid';
 
+=======
+enum TableLayout: string
+{
+    case LIST = 'list';
+    case GRID = 'grid';
+
+    public function getLabel(): string
+    {
+        return match ($this) {
+            self::LIST => 'List View',
+            self::GRID => 'Grid View',
+        };
+    }
+
+    public function getColor(): string
+    {
+        return match ($this) {
+            self::LIST => 'primary',
+            self::GRID => 'secondary',
+        };
+    }
+
+    public function getIcon(): string
+    {
+        return match ($this) {
+            self::LIST => 'heroicon-o-list-bullet',
+            self::GRID => 'heroicon-o-squares-2x2',
+        };
+    }
+>>>>>>> 6ed19256f (.)
 
     public function toggle(): self
     {

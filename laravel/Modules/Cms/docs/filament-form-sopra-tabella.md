@@ -74,6 +74,7 @@ class CreateRecordWidget extends Widget implements HasForms
     {
         // Ottieni i dati validati dal form
         $data = $this->form->getState();
+<<<<<<< HEAD
         
         // Crea il nuovo record
         MioModello::create($data);
@@ -81,6 +82,8 @@ class CreateRecordWidget extends Widget implements HasForms
         // Resetta il form
         $this->form->fill();
         
+=======
+>>>>>>> 6ed19256f (.)
 
         // Crea il nuovo record
         MioModello::create($data);
@@ -228,8 +231,12 @@ public function create(): void
     MioModello::create($data);
     $this->form->fill();
     $this->dispatch('record-created');
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // Mostra una notifica di successo
     Notification::make()
         ->title('Record creato con successo')
@@ -304,8 +311,12 @@ public function create(): void
         MioModello::create($data);
         $this->form->fill();
         $this->dispatch('record-created');
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         Notification::make()
             ->title('Record creato con successo')
             ->success()
@@ -343,4 +354,8 @@ Seguendo questa guida e rispettando le convenzioni di il progetto, potrai implem
 - [Documentazione ufficiale di Filament](https://filamentphp.com/docs)
 - [Documentazione di Livewire](https://livewire.laravel.com/docs)
 - [Repository di esempio su GitHub](https://github.com/LaravelDaily/Filament-Form-On-Top-Of-Resource)
+<<<<<<< HEAD
 - [FilamentExamples.com](https://filamentexamples.com)
+=======
+- [FilamentExamples.com](https://filamentexamples.com)
+>>>>>>> 6ed19256f (.)

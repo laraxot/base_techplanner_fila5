@@ -1,8 +1,14 @@
 # Correzione Estensioni Classi Base - Modulo User
 
+<<<<<<< HEAD
 **Data:** 15 Ottobre 2025  
 **Tipo:** Bug Fix / Refactoring Architetturale  
 **Severità:** Alta  
+=======
+**Data:** 15 Ottobre 2025
+**Tipo:** Bug Fix / Refactoring Architetturale
+**Severità:** Alta
+>>>>>>> 6ed19256f (.)
 **Stato:** ✅ Completato
 
 ## Problema Identificato
@@ -125,7 +131,11 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Tenant extends Model
 {
     use HasXotFactory;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     protected $connection = 'user';  // Ridondante
     protected $table = 'tenants';
 }
@@ -293,7 +303,11 @@ e
 ## Applicazione ad Altri Moduli
 
 Questo pattern di correzione può essere applicato a:
+<<<<<<< HEAD
 - **Modulo ExternalProject**: Verificare QuestionChart, SurveyPdf, Contact
+=======
+- **Modulo Quaeris**: Verificare QuestionChart, SurveyPdf, Contact
+>>>>>>> 6ed19256f (.)
 - **Modulo Blog**: Verificare Post, Category, Tag
 - **Modulo Dental**: Verificare Visit, Treatment, Patient
 - **Tutti gli altri moduli**: Audit sistematico
@@ -314,7 +328,14 @@ grep -r "extends Model" laravel/Modules/*/app/Models/*.php | grep -v "BaseModel\
 
 ---
 
+<<<<<<< HEAD
 **Autore:** AI Assistant  
 **Review:** Team Laraxot  
 **Deploy:** ✅ Ready for Production  
 **Breaking Changes:** Nessuna (backward compatible)
+=======
+**Autore:** AI Assistant
+**Review:** Team Laraxot
+**Deploy:** ✅ Ready for Production
+**Breaking Changes:** Nessuna (backward compatible)
+>>>>>>> 6ed19256f (.)

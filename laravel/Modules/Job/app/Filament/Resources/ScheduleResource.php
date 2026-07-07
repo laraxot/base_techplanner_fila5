@@ -34,7 +34,11 @@ use Webmozart\Assert\Assert;
 
 class ScheduleResource extends XotBaseResource
 {
+<<<<<<< HEAD
     protected static ?string $model = Schedule::class;
+=======
+    protected static null|string $model = Schedule::class;
+>>>>>>> 6ed19256f (.)
 
     protected static bool $shouldRegisterNavigation = true;
 
@@ -126,7 +130,11 @@ class ScheduleResource extends XotBaseResource
                     ->reorderable(false),
                 TextInput::make('expression')
                     ->placeholder('* * * * *')
+<<<<<<< HEAD
                     ->rules([new Corn])
+=======
+                    ->rules([new Corn()])
+>>>>>>> 6ed19256f (.)
                     ->required(),
                 TagsInput::make('environments')->placeholder(null),
                 TextInput::make('log_filename')->helperText(static::trans('messages.help-log-filename')),

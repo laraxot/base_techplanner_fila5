@@ -5,16 +5,29 @@ declare(strict_types=1);
 use Illuminate\Contracts\Cache\Factory;
 use Illuminate\Database\Schema\Blueprint;
 // ---- models ---
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Schema;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Datas\XotData;
+=======
+use Modules\Xot\Database\Migrations\XotBaseMigration;
+>>>>>>> 6ed19256f (.)
 
 /*
  * Class CreatePermissionsTable.
  */
 return new class extends XotBaseMigration {
     /**
+<<<<<<< HEAD
      * Run the migrations.
+=======
+     * Nome della tabella gestita dalla migrazione.
+     */
+    protected string $table_name = 'permissions';
+
+    /**
+     * Esegue la migrazione.
+>>>>>>> 6ed19256f (.)
      */
     public function up(): void
     {
@@ -45,6 +58,7 @@ return new class extends XotBaseMigration {
         $this->tableUpdate(function (Blueprint $table): void {
             // Usa Schema::hasColumn direttamente per verificare esistenza
             $tableName = 'permissions';
+<<<<<<< HEAD
             if (
                 ! Schema::connection('user')->hasColumn($tableName, 'created_at')
                 && ! Schema::connection('user')->hasColumn($tableName, 'updated_at')
@@ -58,6 +72,19 @@ return new class extends XotBaseMigration {
                     $table->foreignIdFor($userClass, 'updated_by')->nullable();
                 }
                 if (! Schema::connection('user')->hasColumn($tableName, 'created_by')) {
+=======
+            if (! Illuminate\Support\Facades\Schema::connection('user')->hasColumn($tableName, 'created_at')
+                && ! Illuminate\Support\Facades\Schema::connection('user')->hasColumn($tableName, 'updated_at')) {
+                $this->updateTimestamps($table);
+            } else {
+                // Se i timestamp esistono già, aggiungi solo i campi user se mancanti
+                $xot = Modules\Xot\Datas\XotData::make();
+                $userClass = $xot->getUserClass();
+                if (! Illuminate\Support\Facades\Schema::connection('user')->hasColumn($tableName, 'updated_by')) {
+                    $table->foreignIdFor($userClass, 'updated_by')->nullable();
+                }
+                if (! Illuminate\Support\Facades\Schema::connection('user')->hasColumn($tableName, 'created_by')) {
+>>>>>>> 6ed19256f (.)
                     $table->foreignIdFor($userClass, 'created_by')->nullable();
                 }
             }

@@ -8,83 +8,116 @@ return [
             'label' => 'Nome Stabilimento',
             'placeholder' => 'Inserisci il nome dello stabilimento',
             'help' => 'Nome identificativo dello stabilimento',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'codice' => [
             'label' => 'Codice',
             'placeholder' => 'Inserisci il codice stabilimento',
             'help' => 'Codice univoco dello stabilimento',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'tipo' => [
             'label' => 'Tipologia',
             'placeholder' => 'Seleziona la tipologia',
             'help' => 'Tipo di stabilimento',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'totale' => [
             'label' => 'Totale Performance',
             'placeholder' => 'Inserisci il totale',
             'help' => 'Punteggio totale delle performance',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'media' => [
             'label' => 'Media Performance',
             'help' => 'Media delle performance individuali',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'periodo' => [
             'label' => 'Periodo',
             'placeholder' => 'Seleziona il periodo',
             'help' => 'Periodo di riferimento',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'numero' => [
             'label' => 'Numero Dipendenti',
             'help' => 'Totale dipendenti dello stabilimento',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'valutati' => [
             'label' => 'Dipendenti Valutati',
             'help' => 'Numero di dipendenti con valutazione',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'da_valutare' => [
             'label' => 'Da Valutare',
             'help' => 'Dipendenti in attesa di valutazione',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'created_at' => [
             'label' => 'Data Creazione',
             'help' => 'Data di creazione del record',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'updated_at' => [
             'label' => 'Ultimo Aggiornamento',
             'help' => 'Data dell\'ultima modifica',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -104,6 +137,7 @@ return [
             'error' => 'Errore durante l\'aggiornamento',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -113,4 +147,6 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

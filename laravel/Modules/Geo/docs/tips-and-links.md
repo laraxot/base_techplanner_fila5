@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+=======
+mappa piu' carina con tanto di repository github
+https://farmshops.eu/
+https://github.com/CodeforKarlsruhe/direktvermarkter
+
+da studiare
+https://github.com/CodeforRuhrgebiet/schulradar
+https://github.com/meine-stadt-transparent/meine-stadt-transparent/
+
+//--- con pure aggiunta del punto
+https://codefor.de/projekte/ernteteilen/
+https://ernte-teilen.org/karte/#/
+https://github.com/teikei/teikei    !!!!!!
+
+>>>>>>> 6ed19256f (.)
 --- multi marker "ios"
 https://github.com/Stolpersteine/stolpersteine-ios
 
@@ -34,6 +50,7 @@ https://www.wrld3d.com/wrld.js/latest/project_docs/examples/adding-a-leaflet-mar
 https://openrouteservice.org/
 
 https://www.igismap.com/top-10-map-direction-api-routing-libraries-navigation-free-or-paid/
+<<<<<<< HEAD
 ---
 module: theme
 topic: tips-and-links
@@ -41,3 +58,5 @@ canonical: ../../../Themes/docs/shared-components/tips_and_links.txt
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/tips_and_links.txt
+=======
+>>>>>>> 6ed19256f (.)

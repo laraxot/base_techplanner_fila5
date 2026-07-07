@@ -9,6 +9,7 @@ uno degli errori più comuni è la confusione tra il namespace nel codice php e 
 i file dei moduli devono sempre seguire questa struttura:
 
 ```
+<<<<<<< HEAD
 Modules/{NomeModulo}/app/{Tipo}/...
 ```
 
@@ -16,6 +17,15 @@ per esempio:
 - `Modules/<nome progetto>/app/Filament/Resources/...`
 - `Modules/<nome progetto>/app/Models/...`
 - `Modules/<nome progetto>/app/Http/Controllers/...`
+=======
+/var/www/html/base_<nome progetto>/laravel/Modules/{NomeModulo}/app/{Tipo}/...
+```
+
+per esempio:
+- `/var/www/html/base_<nome progetto>/laravel/Modules/<nome progetto>/app/Filament/Resources/...`
+- `/var/www/html/base_<nome progetto>/laravel/Modules/<nome progetto>/app/Models/...`
+- `/var/www/html/base_<nome progetto>/laravel/Modules/<nome progetto>/app/Http/Controllers/...`
+>>>>>>> 6ed19256f (.)
 
 ### namespace corretto
 
@@ -35,7 +45,11 @@ per esempio:
 spesso si confonde il percorso fisico con il namespace, cercando file in:
 
 ```
+<<<<<<< HEAD
 Modules/{NomeModulo}/{Tipo}/...
+=======
+/var/www/html/base_<nome progetto>/laravel/Modules/{NomeModulo}/{Tipo}/...
+>>>>>>> 6ed19256f (.)
 ```
 
 questo è **errato** perché omette la directory `app/` nel percorso fisico.
@@ -49,8 +63,13 @@ questo è **errato** perché omette la directory `app/` nel percorso fisico.
 
 | namespace | percorso fisico |
 |-----------|----------------|
+<<<<<<< HEAD
 | `Modules\<nome progetto>\Filament\Resources\DoctorResource` | `Modules/<nome progetto>/app/Filament/Resources/DoctorResource.php` |
 | `Modules\User\Models\User` | `Modules/User/app/Models/User.php` |
+=======
+| `Modules\<nome progetto>\Filament\Resources\DoctorResource` | `/var/www/html/base_<nome progetto>/laravel/Modules/<nome progetto>/app/Filament/Resources/DoctorResource.php` |
+| `Modules\User\Models\User` | `/var/www/html/base_<nome progetto>/laravel/Modules/User/app/Models/User.php` |
+>>>>>>> 6ed19256f (.)
 
 ## come evitare l'errore
 
@@ -60,5 +79,10 @@ questo è **errato** perché omette la directory `app/` nel percorso fisico.
 
 ## linkback
 
+<<<<<<< HEAD
 - [convenzioni di codice](docs/conventions.md)
 - [struttura progetto](docs/project-structure.md)
+=======
+- [convenzioni di codice](/var/www/html/base_<nome progetto>/laravel/docs/conventions.md)
+- [struttura progetto](/var/www/html/base_<nome progetto>/laravel/docs/project-structure.md)
+>>>>>>> 6ed19256f (.)

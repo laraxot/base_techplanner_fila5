@@ -1,7 +1,10 @@
 # Code Quality Improvements - Documento Consolidato
 
 **Data creazione**: 2025-01-22
+<<<<<<< HEAD
 **Data creazione**: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 **Filosofia**: Super Mucca + DRY + KISS + Type Safety
 **Obiettivo**: Miglioramento continuo qualità codice basato su best practices 2024-2025
 
@@ -348,6 +351,11 @@ $content = file_get_contents($path); // Lancia eccezione se fallisce
 ---
 
 **Ultimo aggiornamento**: 2025-01-22
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
 **Versione**: 1.0.0
 **Status**: In progress
+=======
+**Versione**: 1.0.0
+**Status**: In progress
+>>>>>>> 6ed19256f (.)

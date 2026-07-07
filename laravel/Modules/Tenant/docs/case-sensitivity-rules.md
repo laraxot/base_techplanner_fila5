@@ -5,7 +5,10 @@
 **NON possono esistere file con lo stesso nome che differiscono solo per maiuscole/minuscole nella stessa directory.**
 
 Riferimento completo: [Xot Module Case Sensitivity Rules](../../Xot/docs/case-sensitivity-rules.md)
+<<<<<<< HEAD
 Riferimento completo: [Xot Module Case Sensitivity Rules](../../xot/docs/case-sensitivity-rules.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## File/Directory Rimossi da Tenant Module
 
@@ -53,7 +56,13 @@ Laravel usa le convenzioni lowercase per directory:
 ## Update Log
 
 - **2025-11-04**: Major cleanup
+<<<<<<< HEAD
 - **[DATE]**: Major cleanup
   - Removed `database/Factories/` uppercase directory
   - Removed `Tests/` uppercase directory
   - Removed `domaintest.php` lowercase test file
+=======
+  - Removed `database/Factories/` uppercase directory
+  - Removed `Tests/` uppercase directory
+  - Removed `domaintest.php` lowercase test file
+>>>>>>> 6ed19256f (.)

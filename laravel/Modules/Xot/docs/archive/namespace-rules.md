@@ -96,6 +96,7 @@ Se incontri errori come `name is empty on [Modules\NomeModulo\Providers\RouteSer
 ---
 
 **Ultimo aggiornamento:** 2025-05-13
+<<<<<<< HEAD
   - [Patient: Regole Modelli](../../patient/docs/models.md)
   - [Notify Namespace Rules](../../notify/docs/namespace_rules.md)
 
@@ -106,3 +107,7 @@ Se incontri errori come `name is empty on [Modules\NomeModulo\Providers\RouteSer
 
 
 **Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
+=======
+
+**Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
+>>>>>>> 6ed19256f (.)

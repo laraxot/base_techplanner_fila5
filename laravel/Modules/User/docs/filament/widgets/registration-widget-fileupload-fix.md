@@ -82,8 +82,13 @@ I componenti `FileUpload` si aspettano array:
 4. **Wizard Navigation**: Verifica navigazione tra step senza perdere file
 ### Comandi Test
 ```bash
+<<<<<<< HEAD
 cd laravel
 cd laravel
+=======
+cd /var/www/html/_bases/base_techplanner_fila3_mono/laravel
+cd /var/www/html/_bases/base_saluteora/laravel
+>>>>>>> 6ed19256f (.)
 php artisan test --filter=RegistrationWidget
 ./vendor/bin/phpstan analyze Modules/User/app/Filament/Widgets/RegistrationWidget.php --level=9
 ### Test Manuale per Verifica
@@ -133,15 +138,25 @@ Questo pattern può essere riutilizzato in altri widget che:
 - [RegistrationWidget.php](../../app/Filament/Widgets/RegistrationWidget.php) - Widget corretto
 - [XotBaseResource.php](../../../Xot/app/Filament/Resources/XotBaseResource.php) - Schema attachments migliorato
 - [PatientResource.php](../../../<nome modulo>/app/Filament/Resources/PatientResource.php) - Risorsa paziente
+<<<<<<< HEAD
 - [PatientResource.php](../../../<nome progetto>/app/Filament/Resources/PatientResource.php) - Risorsa paziente
 - [Widget Error Troubleshooting](../../../Xot/docs/troubleshooting/widget-errors.md) - Guide generali
 - [Widget Error Troubleshooting](../../../Xot/project_docs/troubleshooting/widget-errors.md) - Guide generali
 - [Widget Error Troubleshooting](../../../xot/docs/troubleshooting/widget-errors.md) - Guide generali
 - [Widget Error Troubleshooting](../../../xot/project_docs/troubleshooting/widget-errors.md) - Guide generali
+=======
+- [PatientResource.php](../../../SaluteOra/app/Filament/Resources/PatientResource.php) - Risorsa paziente
+- [Widget Error Troubleshooting](../../../Xot/docs/troubleshooting/widget-errors.md) - Guide generali
+- [Widget Error Troubleshooting](../../../Xot/project_docs/troubleshooting/widget-errors.md) - Guide generali
+>>>>>>> 6ed19256f (.)
 ---
 **Creato**: 2025-01-07
 **Aggiornato**: 2025-01-07
 **Autore**: AI Assistant
 **Tipo**: Bug Fix Documentation
 **Priorità**: Critica (blocca registrazione paziente)
+<<<<<<< HEAD
 **Status**: ✅ **RISOLTO**
+=======
+**Status**: ✅ **RISOLTO**
+>>>>>>> 6ed19256f (.)

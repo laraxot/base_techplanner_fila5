@@ -682,4 +682,8 @@ class TemplateTestPage extends Page
 
         $this->notify('success', 'Email inviata con successo');
     }
+<<<<<<< HEAD
 } 
+=======
+}
+>>>>>>> 6ed19256f (.)

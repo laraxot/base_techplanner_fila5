@@ -8,6 +8,7 @@ return [
         'create' => 'Aggiungi Luogo',
         'edit' => 'Modifica Luogo',
     ],
+<<<<<<< HEAD
     'label' => 'Places',
     'plural_label' => 'Places (Plurale)',
     'navigation' => [
@@ -52,4 +53,6 @@ return [
             'label' => 'Elimina Places',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

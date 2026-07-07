@@ -137,16 +137,27 @@ $safeForm = $form;
 - **Rapporto efficienza**: 1 correzione trait → 3-5 modelli corretti
 
 ### Aggiornamento 2025-11-17
+<<<<<<< HEAD
 ### Aggiornamento [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 - Normalizzazione di `getSushiRows()` ulteriormente rafforzata con `array_map` tipizzato e `ksort()` sulle chiavi per garantire `array<int, array<string, mixed>>` coerente in tutti i modelli dipendenti (Geo, Tenant, Xot).
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [../../../../docs/phpstan-level10-achievement.md](../../../../docs/phpstan-level10-achievement.md)
+=======
+- [../../../docs/phpstan-level10-achievement.md](../../../docs/phpstan-level10-achievement.md)
+>>>>>>> 6ed19256f (.)
 - [Sushi Package Documentation](https://github.com/calebporzio/sushi)
 
 ---
 
 **Data**: Novembre 2025
 **PHPStan Level**: 10
+<<<<<<< HEAD
 **Status**: ✅ COMPLETATO
+=======
+**Status**: ✅ COMPLETATO
+>>>>>>> 6ed19256f (.)

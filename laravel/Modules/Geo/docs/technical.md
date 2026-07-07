@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 # Documentazione Tecnica Modulo Geo
 
 ## Architettura del Sistema
@@ -7,6 +10,7 @@
 Il modulo è strutturato secondo il pattern Action, dove ogni operazione è incapsulata in una classe dedicata:
 
 #### Gerarchia delle Actions
+<<<<<<< HEAD
 ---
 module: theme
 topic: technical
@@ -14,3 +18,5 @@ canonical: ../../../Themes/docs/shared-components/TECHNICAL.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/TECHNICAL.md
+=======
+>>>>>>> 6ed19256f (.)

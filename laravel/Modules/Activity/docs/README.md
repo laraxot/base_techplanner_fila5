@@ -542,6 +542,7 @@ Elimina un'attività (soft delete).
 - [Deployment](./deployment.md)
 
 *Ultimo aggiornamento: gennaio 2025*
+<<<<<<< HEAD
 ---
 title: "Activity Module Documentation"
 type: documentation
@@ -597,3 +598,5 @@ Activity/
 
 ## AI Workflows
 - [AI Methodologies](./ai-methodologies.md)
+=======
+>>>>>>> 6ed19256f (.)

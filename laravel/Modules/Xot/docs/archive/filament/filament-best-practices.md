@@ -63,4 +63,7 @@ public function getTableActions(): array
 - [Principio di Sostituzione di Liskov](https://it.wikipedia.org/wiki/Principio_di_sostituzione_di_Liskov)
 - [Best Practices PHP](../php-strict-types.md)
 - [Best Practices PHP](../PHP-STRICT-TYPES.md)
+<<<<<<< HEAD
 - [Best Practices PHP](../php-strict-types.md)
+=======
+>>>>>>> 6ed19256f (.)

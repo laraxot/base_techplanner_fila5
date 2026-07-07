@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # GDPR Consent Implementation Guide
 
 ## Overview
@@ -110,3 +111,6 @@ canonical: ../../../Themes/docs/shared-components/implementation-guide-1.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/implementation-guide-1.md
+=======
+
+>>>>>>> 6ed19256f (.)

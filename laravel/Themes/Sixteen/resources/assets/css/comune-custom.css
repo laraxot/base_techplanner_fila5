@@ -8,6 +8,7 @@
     --comune-light: #f8f9fa;
 }
 
+<<<<<<< HEAD
 /* Header - AGID Blue */
 .it-header-wrapper {
     background: #0066CC;
@@ -60,6 +61,14 @@
     background: #f5f5f5;
 }
 
+=======
+/* Header */
+.it-header-wrapper {
+    background: linear-gradient(135deg, var(--comune-primary), var(--comune-secondary));
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+>>>>>>> 6ed19256f (.)
 .it-brand-text h2 {
     color: white;
     font-weight: 700;
@@ -199,6 +208,7 @@
     border-bottom: none;
 }
 
+<<<<<<< HEAD
 /* Footer - AGID Compliant */
 .it-footer {
     background-color: #003D73;
@@ -221,6 +231,13 @@
     background: #002855;
     padding: 1rem 0;
     border-top: 1px solid #004080;
+=======
+/* Footer */
+.it-footer {
+    background-color: var(--comune-dark);
+    color: white;
+    margin-top: 4rem;
+>>>>>>> 6ed19256f (.)
 }
 
 .it-footer h4 {

@@ -17,6 +17,7 @@ return [
             'label' => 'activeLocale',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Edit Mail Template',
     'plural_label' => 'Edit Mail Template (Plurale)',
     'navigation' => [
@@ -50,4 +51,6 @@ return [
             'description' => '',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

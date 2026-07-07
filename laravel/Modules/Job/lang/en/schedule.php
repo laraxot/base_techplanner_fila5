@@ -25,112 +25,158 @@ return [
             'label' => 'Name',
             'tooltip' => 'Enter the scheduled job name',
             'placeholder' => 'Job name',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'guard_name' => [
             'label' => 'Guard',
             'tooltip' => 'Select the guard for the job',
             'placeholder' => 'Guard name',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'permissions' => [
             'label' => 'Permissions',
             'tooltip' => 'Assign necessary permissions to the job',
             'placeholder' => 'Permissions',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'first_name' => [
             'label' => 'First Name',
             'tooltip' => 'Responsible person first name',
             'placeholder' => 'Responsible first name',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'last_name' => [
             'label' => 'Last Name',
             'tooltip' => 'Responsible person last name',
             'placeholder' => 'Responsible last name',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'command' => [
             'label' => 'Command',
             'tooltip' => 'Enter the command to execute',
             'placeholder' => 'Command',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'arguments' => [
             'label' => 'Arguments',
             'tooltip' => 'Specify any arguments for the command',
             'placeholder' => 'Arguments',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'options' => [
             'label' => 'Options',
             'tooltip' => 'Enter any options for the command',
             'placeholder' => 'Options',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'expression' => [
             'label' => 'Cron Expression',
             'tooltip' => 'Set the cron expression for scheduling',
             'placeholder' => 'Cron Expression',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'log_filename' => [
             'label' => 'Log Filename',
             'tooltip' => 'Log file name',
             'placeholder' => 'Log filename',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'status' => [
             'label' => 'Status',
             'tooltip' => 'Current job status',
             'placeholder' => 'Status',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'actions' => [
             'label' => 'Actions',
             'tooltip' => 'Available actions for the job',
             'icon' => 'action-icon',
             'color' => 'blue',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'run_in_background' => [
             'label' => 'Run in Background',
             'tooltip' => 'Run the job in background',
             'placeholder' => 'Run in background',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'created_at' => [
             'label' => 'Created At',
             'tooltip' => 'Job creation date',
             'placeholder' => 'Creation date',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'updated_at' => [
             'label' => 'Updated At',
             'tooltip' => 'Last update date',
             'placeholder' => 'Update date',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'timezone' => [
             'label' => 'Timezone',
             'tooltip' => 'Set the timezone for the job',
             'placeholder' => 'Timezone',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
         ],
@@ -151,6 +197,17 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'messages' => [
@@ -267,8 +324,11 @@ return [
     'model' => [
         'label' => 'schedule.model',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

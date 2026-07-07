@@ -41,8 +41,13 @@ Tutti i widget che gestiscono **autenticazione/UI tema**:
 
 ### Widget Funzionali → Namespace Modulo
 Tutti i widget con **logica di business specifica**:
+<<<<<<< HEAD
 - `DoctorAppointmentsWidget` → `<nome progetto>::`
 - `PatientStatsWidget` → `<nome progetto>::`
+=======
+- `DoctorAppointmentsWidget` → `saluteora::`
+- `PatientStatsWidget` → `saluteora::`
+>>>>>>> 6ed19256f (.)
 - `RecentLoginsWidget` → `user::`
 
 **Motivo**: Logica specifica del modulo.
@@ -95,7 +100,10 @@ Quando creo un nuovo widget, chiedermi:
 ### Documentazione di Riferimento
 - [Widget View Namespaces](../frontend/widget-view-namespaces.md)
 - [Auth Widgets Namespaces](../../laravel/Modules/User/docs/auth-widgets-view-namespaces.md)
+<<<<<<< HEAD
 - [Auth Widgets Namespaces](../../laravel/modules/user/docs/auth-widgets-view-namespaces.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Struttura Temi](../tecnico/themes/theme-structure.md)
 
 ### Pattern di Controllo
@@ -129,4 +137,8 @@ Questo errore ha evidenziato l'importanza di:
 
 La separazione tema/modulo è una decisione architetturale fondamentale che richiede comprensione, non automatismo.
 
+<<<<<<< HEAD
 *Errore commesso e documentato: Dicembre 2024*
+=======
+*Errore commesso e documentato: Dicembre 2024*
+>>>>>>> 6ed19256f (.)

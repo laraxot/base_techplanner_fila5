@@ -44,7 +44,11 @@ Il modulo User aveva **16 factory mancanti** su 31 modelli totali - il 52% dei m
 class DeviceProfileFactory extends DeviceUserFactory
 {
     protected $model = DeviceProfile::class;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function definition(): array
     {
         return array_merge(parent::definition(), [
@@ -102,9 +106,12 @@ class DeviceProfileFactory extends DeviceUserFactory
 - [Factory Lessons Learned CRITICAL](../../../project_docs/factory-lessons-learned-CRITICAL.md)
 - [Factory Creation Status](./factory-creation-status.md)
 - [User Module README](./README.md)
+<<<<<<< HEAD
 - [Factory Lessons Learned CRITICAL](../../../../docs/project/factory-lessons-learned-critical.md)
 - [Factory Creation Status](./factory-creation-status.md)
 - [User Module README](./readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## ⚠️ REGOLE DA NON DIMENTICARE MAI
 
@@ -118,4 +125,8 @@ class DeviceProfileFactory extends DeviceUserFactory
 
 *Creato: 2025-01-06*
 *Modulo: User - 16/16 factory completate*
+<<<<<<< HEAD
 *Status: ✅ ERRORE GRAVISSIMO RISOLTO*
+=======
+*Status: ✅ ERRORE GRAVISSIMO RISOLTO*
+>>>>>>> 6ed19256f (.)

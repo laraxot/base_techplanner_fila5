@@ -63,9 +63,15 @@ Questo errore indica che un metodo è stato erroneamente definito come statico q
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Documentazione Filament](Modules/Xot/project_docs/filament/filament_best_practices.md)
 - [XotBasePage](Modules/Xot/project_docs/filament/pages/xotbasepage.md)
 - [Linee Guida per l'Ereditarietà](Modules/Xot/project_docs/filament/filament_inheritance_guidelines.md)
 - [Documentazione Filament](modules/xot/project_docs/filament/filament_best_practices.md)
 - [XotBasePage](modules/xot/project_docs/filament/pages/xotbasepage.md)
 - [Linee Guida per l'Ereditarietà](modules/xot/project_docs/filament/filament_inheritance_guidelines.md)
+=======
+- [Documentazione Filament](/var/www/html/base_saluteora/laravel/Modules/Xot/project_docs/filament/filament_best_practices.md)
+- [XotBasePage](/var/www/html/base_saluteora/laravel/Modules/Xot/project_docs/filament/pages/xotbasepage.md)
+- [Linee Guida per l'Ereditarietà](/var/www/html/base_saluteora/laravel/Modules/Xot/project_docs/filament/filament_inheritance_guidelines.md)
+>>>>>>> 6ed19256f (.)

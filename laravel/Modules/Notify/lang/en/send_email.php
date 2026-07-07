@@ -17,54 +17,73 @@ return [
             'label' => 'Subject',
             'placeholder' => 'Enter email subject',
             'help' => 'Subject that will appear in the email header',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'template_id' => [
             'label' => 'Email Template',
             'placeholder' => 'Select the email template to use',
             'help' => 'Default template for the email (optional)',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'to' => [
             'label' => 'Recipient',
             'placeholder' => 'recipient@domain.com',
             'help' => 'Email address of the recipient',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'cc' => [
             'label' => 'Carbon Copy (CC)',
             'placeholder' => 'cc@domain.com (optional)',
             'help' => 'Email addresses in carbon copy, separated by commas',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'bcc' => [
             'label' => 'Blind Carbon Copy (BCC)',
             'placeholder' => 'bcc@domain.com (optional)',
             'help' => 'Email addresses in blind carbon copy, separated by commas',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'content' => [
             'label' => 'Text Content',
             'placeholder' => 'Enter the text content of the email',
             'help' => 'Text content of the email (plain text version)',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'body_html' => [
             'label' => 'HTML Content',
             'placeholder' => '<h1>Title</h1><p>Email content in HTML format</p>',
             'help' => 'HTML content of the email to send (optional)',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -76,14 +95,24 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'parameters' => [
+            'label' => 'Template Parameters',
+            'placeholder' => '{\"name\": \"John\", \"surname\": \"Doe\"}',
+            'help' => 'JSON parameters to customize the selected template',
+>>>>>>> 6ed19256f (.)
         ],
         'attachments' => [
             'label' => 'Attachments',
             'placeholder' => 'Select files to attach',
             'help' => 'Files to attach to the email (optional)',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'priority' => [
             'label' => 'Priority',
@@ -94,9 +123,12 @@ return [
                 'high' => 'High',
                 'urgent' => 'Urgent',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -148,6 +180,9 @@ return [
         'parameters_json' => 'Parameters must be in valid JSON format',
         'priority_valid' => 'Priority must be one of the available options',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

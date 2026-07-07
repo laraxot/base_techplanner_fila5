@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Best Practice <nome progetto>ion Market
+=======
+# Best Practice Prediction Market
+>>>>>>> 6ed19256f (.)
 
 ## Sicurezza
 - Audit trail completo tramite eventi
@@ -18,4 +22,8 @@
 ## Testing
 - Unit test per ogni evento, proiettore, reattore
 - Feature test per flussi utente (creazione mercato, scommessa, payout)
+<<<<<<< HEAD
 - Test di integrazione con oracoli esterni
+=======
+- Test di integrazione con oracoli esterni
+>>>>>>> 6ed19256f (.)

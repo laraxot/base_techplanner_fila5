@@ -18,9 +18,12 @@ _ide_helper_models.php
 *.old
 *.bak
 *.backup
+<<<<<<< HEAD
 *.backup.*
 *.backup-*
 *.backup_*
+=======
+>>>>>>> 6ed19256f (.)
 
 public_html/vendor
 public_html/js
@@ -69,12 +72,17 @@ public_html/css/
 .env
 laravel/database/migrations/
 logs
+<<<<<<< HEAD
+=======
+docs
+>>>>>>> 6ed19256f (.)
 bashscripts/
 laravel/
 public_html/
 .env.docker
 .env.latest
 node_modules/
+<<<<<<< HEAD
 
 # PHPStan output files
 phpstan*.json
@@ -98,3 +106,5 @@ docs/legacy/**
 
 # Database locale vector search (non versionare)
 ruvector.db
+=======
+>>>>>>> 6ed19256f (.)

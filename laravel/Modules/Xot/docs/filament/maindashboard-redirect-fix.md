@@ -73,7 +73,10 @@ public function mount(): void
 ```bash
 # Accedere direttamente al panel PDND
 curl -I http://personale2022.prov.tv.local/pdnd/admin
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 # Risultato atteso: 200 OK (non più redirect loop)
 ```
 
@@ -81,14 +84,20 @@ curl -I http://personale2022.prov.tv.local/pdnd/admin
 ```bash
 # Accedere al dashboard principale
 curl -I http://personale2022.prov.tv.local/admin
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 # Risultato atteso: 302 Redirect a /pdnd/admin (se utente ha ruolo pdnd::admin)
 ```
 
 ### 3. Test Utenti Multi-Ruolo
 ```bash
 # Utente con più ruoli admin dovrebbe vedere la lista dei moduli
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 # senza redirect automatico
 ```
 
@@ -150,10 +159,13 @@ performance::admin
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [PDND Redirect Loop Fix](../../pdnd/project_docs/redirect_loop_fix.md)
 - [XotBasePanelProvider](xotbasepanelprovider.md)
 - [User Role Management](../../user/project_docs/console_commands/readme.md)
 - [Filament Best Practices](../../../project_docs/filament-best-practices.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [PDND Redirect Loop Fix](../../Pdnd/project_docs/redirect_loop_fix.md)
 - [XotBasePanelProvider](xotbasepanelprovider.md)
 - [User Role Management](../../User/project_docs/console_commands/README.md)
@@ -173,4 +185,8 @@ performance::admin
 - ✅ **Multi-Ruolo**: Supporto mantenuto
 - ✅ **Performance**: Nessun impatto negativo
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-27*
+=======
+*Ultimo aggiornamento: 2025-01-27*
+>>>>>>> 6ed19256f (.)

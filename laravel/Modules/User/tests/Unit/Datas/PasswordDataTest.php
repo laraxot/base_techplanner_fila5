@@ -138,5 +138,9 @@ test('password data has correct strict types declaration', function (): void {
 
     if ($filename) {
         $content = file_get_contents($filename);
+<<<<<<< HEAD
+=======
+        expect($content)->toContain('declare(strict_types=1);');
+>>>>>>> 6ed19256f (.)
     }
 });

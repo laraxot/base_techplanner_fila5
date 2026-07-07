@@ -8,6 +8,11 @@ use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\Employee\Models\Employee;
 use Modules\Employee\Models\WorkHour;
+<<<<<<< HEAD
+=======
+use Tests\TestCase;
+
+>>>>>>> 6ed19256f (.)
 
 beforeEach(function () {
     $this->employee = Employee::factory()->create();

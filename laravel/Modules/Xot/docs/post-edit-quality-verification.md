@@ -58,7 +58,11 @@
 
 ```bash
 # Per file singolo
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/_bases/base_ptvx_fila4_mono/laravel
+>>>>>>> 6ed19256f (.)
 ./vendor/bin/phpstan analyze Modules/<Module>/app/path/to/File.php --level=10
 
 # Per modulo intero
@@ -81,7 +85,11 @@ timeout 60 ./vendor/bin/phpstan analyze Modules/<Module> --level=10 --memory-lim
 
 ```bash
 # Per file singolo
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/_bases/base_ptvx_fila4_mono/laravel
+>>>>>>> 6ed19256f (.)
 ./vendor/bin/phpmd Modules/<Module>/app/path/to/File.php text cleancode,codesize,controversial,design,naming,unusedcode
 
 # Per modulo
@@ -102,7 +110,11 @@ cd laravel
 
 ```bash
 # Per modulo
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/_bases/base_ptvx_fila4_mono/laravel
+>>>>>>> 6ed19256f (.)
 ./vendor/bin/phpinsights -n --dir=Modules/<Module>
 
 # Con dettagli
@@ -281,8 +293,15 @@ quality-check:
 ---
 
 **Creato**: 2025-01-29
+<<<<<<< HEAD
 **Creato**: [DATE]
 **Tipo**: Regola Quality Gate Obbligatoria
 **Applicazione**: Ogni modifica file
 **Severità**: 🔴 CRITICA
 **Memoria AI**: ID 10479003
+=======
+**Tipo**: Regola Quality Gate Obbligatoria
+**Applicazione**: Ogni modifica file
+**Severità**: 🔴 CRITICA
+**Memoria AI**: ID 10479003
+>>>>>>> 6ed19256f (.)

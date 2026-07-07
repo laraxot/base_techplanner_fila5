@@ -2,13 +2,23 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+use Illuminate\Support\Carbon;
+use Modules\Job\Models\Frequency;
+>>>>>>> 6ed19256f (.)
 use Modules\Job\Models\Result;
 use Modules\Job\Models\Task;
 use Modules\Job\Tests\TestCase;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
 it('can create task with basic information', function (): void {
+=======
+it('can create task with basic information', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $taskData = [
         'description' => 'Pulizia database giornaliera',
         'command' => 'db:cleanup',
@@ -43,7 +53,12 @@ it('can create task with basic information', function (): void {
     expect($task->is_active)->toBe(1);
 });
 
+<<<<<<< HEAD
 it('can manage task activation and deactivation', function (): void {
+=======
+it('can manage task activation and deactivation', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task = Task::create([
         'description' => 'Test Task',
         'command' => 'test:command',
@@ -63,7 +78,12 @@ it('can manage task activation and deactivation', function (): void {
     expect($task->is_active)->toBe(0);
 });
 
+<<<<<<< HEAD
 it('can handle task parameters and compilation', function (): void {
+=======
+it('can handle task parameters and compilation', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task = Task::create([
         'description' => 'Task con parametri',
         'command' => 'user:process',
@@ -83,7 +103,12 @@ it('can handle task parameters and compilation', function (): void {
     expect($executionParams)->toBeArray();
 });
 
+<<<<<<< HEAD
 it('can manage task frequencies', function (): void {
+=======
+it('can manage task frequencies', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task = Task::create([
         'description' => 'Task con frequenze',
         'command' => 'report:generate',
@@ -109,7 +134,12 @@ it('can manage task frequencies', function (): void {
     expect($task->frequencies->contains($frequency2))->toBeTrue();
 });
 
+<<<<<<< HEAD
 it('can handle task notifications', function (): void {
+=======
+it('can handle task notifications', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task = Task::create([
         'description' => 'Task con notifiche',
         'command' => 'backup:create',
@@ -126,7 +156,12 @@ it('can handle task notifications', function (): void {
     expect($task->notification_slack_webhook)->toBe('https://hooks.slack.com/services/...');
 });
 
+<<<<<<< HEAD
 it('can manage task execution settings', function (): void {
+=======
+it('can manage task execution settings', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task = Task::create([
         'description' => 'Task con impostazioni esecuzione',
         'command' => 'heavy:process',
@@ -146,7 +181,12 @@ it('can manage task execution settings', function (): void {
     expect($task->run_in_background)->toBe(1);
 });
 
+<<<<<<< HEAD
 it('can handle task cleanup settings', function (): void {
+=======
+it('can handle task cleanup settings', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task = Task::create([
         'description' => 'Task con pulizia automatica',
         'command' => 'logs:cleanup',
@@ -162,7 +202,12 @@ it('can handle task cleanup settings', function (): void {
     expect($task->auto_cleanup_type)->toBe('days');
 });
 
+<<<<<<< HEAD
 it('can manage task results and history', function (): void {
+=======
+it('can manage task results and history', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task = Task::create([
         'description' => 'Task con risultati',
         'command' => 'test:command',
@@ -194,7 +239,12 @@ it('can manage task results and history', function (): void {
     expect($task->results->contains($result2))->toBeTrue();
 });
 
+<<<<<<< HEAD
 it('can handle task priority management', function (): void {
+=======
+it('can handle task priority management', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $highPriorityTask = Task::create([
         'description' => 'Task alta priorità',
         'command' => 'critical:process',
@@ -218,7 +268,12 @@ it('can handle task priority management', function (): void {
     expect($lowPriorityTask->description)->toContain('bassa');
 });
 
+<<<<<<< HEAD
 it('can manage task timezone handling', function (): void {
+=======
+it('can manage task timezone handling', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $romeTask = Task::create([
         'description' => 'Task Roma',
         'command' => 'local:process',
@@ -241,7 +296,12 @@ it('can manage task timezone handling', function (): void {
     expect($utcTask->timezone)->toBe('UTC');
 });
 
+<<<<<<< HEAD
 it('can handle task status transitions', function (): void {
+=======
+it('can handle task status transitions', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task = Task::create([
         'description' => 'Task con transizioni stato',
         'command' => 'status:test',
@@ -263,7 +323,12 @@ it('can handle task status transitions', function (): void {
     expect($task->is_active)->toBe(1);
 });
 
+<<<<<<< HEAD
 it('can handle task ordering and sorting', function (): void {
+=======
+it('can handle task ordering and sorting', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task1 = Task::create([
         'description' => 'Primo task',
         'command' => 'first:command',
@@ -287,7 +352,12 @@ it('can handle task ordering and sorting', function (): void {
     expect($task2->description)->toBe('Secondo task');
 });
 
+<<<<<<< HEAD
 it('can handle task maintenance mode', function (): void {
+=======
+it('can handle task maintenance mode', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $maintenanceTask = Task::create([
         'description' => 'Task manutenzione',
         'command' => 'maintenance:task',

@@ -24,7 +24,10 @@ La scelta di estendere `\Modules\Geo\Models\BaseModel` invece di `Illuminate\Dat
 A livello filosofico, questa scelta riflette:
 
 1. **Principio DRY (Don't Repeat Yourself)**:
+<<<<<<< HEAD
 1. **Principio DRY (Don't Repeat Yourself)**: 
+=======
+>>>>>>> 6ed19256f (.)
    - Le configurazioni comuni sono definite una sola volta
    - Ogni conoscenza ha una rappresentazione singola e autorevole
 
@@ -150,4 +153,8 @@ In essenza, estendere `BaseModel` è un atto di rispetto verso:
 - Il codice esistente
 - I principi di design
 - I futuri sviluppatori
+<<<<<<< HEAD
 - L'armonia dell'intero sistema
+=======
+- L'armonia dell'intero sistema
+>>>>>>> 6ed19256f (.)

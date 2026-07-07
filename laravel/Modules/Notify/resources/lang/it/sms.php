@@ -7,6 +7,7 @@ return [
         'recipient' => [
             'label' => 'Destinatario',
             'helper_text' => 'Inserisci il numero di telefono nel formato internazionale (es. +393401234567).',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
         ],
@@ -15,18 +16,30 @@ return [
             'helper_text' => 'Inserisci il numero di telefono nel formato internazionale (es. +393401234567).',
             'tooltip' => '',
             'description' => '',
+=======
+        ],
+        'to' => [
+             'label' => 'Destinatario', // Fallback for old code
+             'helper_text' => 'Inserisci il numero di telefono nel formato internazionale (es. +393401234567).',
+>>>>>>> 6ed19256f (.)
         ],
         'message' => [
             'label' => 'Messaggio',
             'helper_text' => 'Inserisci il contenuto del messaggio (max 160 caratteri per un singolo SMS).',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'driver' => [
             'label' => 'Driver SMS',
             'helper_text' => 'Seleziona il provider per l\'invio dell\'SMS.',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -59,6 +72,7 @@ return [
             'label' => 'Provider',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -68,4 +82,6 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

@@ -13,7 +13,11 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Session;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+=======
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
+>>>>>>> 6ed19256f (.)
 
 /**
  * Provides a widget for user logout functionality within Filament admin panels.
@@ -30,7 +34,11 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  * @property array<string, mixed>|null $data         Widget data array managed by XotBaseWidget.
  * @property bool                      $isLoggingOut Flag indicating if logout is in progress.
  */
+<<<<<<< HEAD
 class LogoutWidget extends XotBaseSchemaWidget
+=======
+class LogoutWidget extends XotBaseWidget
+>>>>>>> 6ed19256f (.)
 {
     /**
      * Widget data array.
@@ -48,6 +56,18 @@ class LogoutWidget extends XotBaseSchemaWidget
     public bool $isLoggingOut = false;
 
     /**
+<<<<<<< HEAD
+=======
+     * The view to render the widget.
+     *
+     * IMPORTANT: When using @livewire() directly in Blade templates,
+     * the path should be without the module namespace.
+     */
+    /** @phpstan-ignore-next-line property.defaultValue */
+    protected string $view = 'user::widgets.logout';
+
+    /**
+>>>>>>> 6ed19256f (.)
      * Mount the widget and initialize the form.
      */
     public function mount(): void
@@ -63,10 +83,24 @@ class LogoutWidget extends XotBaseSchemaWidget
      *
      * @return array<string, Component>
      */
+<<<<<<< HEAD
     public function getFormSchema(): array
     {
         return [
             'message' => View::make('user::filament.widgets.auth.logout-message')->columnSpanFull(),
+=======
+    #[\Override]
+    public function getFormSchema(): array
+    {
+        $view = 'filament.widgets.auth.logout-message';
+        // @phpstan-ignore-next-line
+        if (! view()->exists($view)) {
+            throw new \Exception('View '.$view.' not found');
+        }
+
+        return [
+            'message' => View::make($view)->columnSpanFull(),
+>>>>>>> 6ed19256f (.)
         ];
     }
 
@@ -112,6 +146,10 @@ class LogoutWidget extends XotBaseSchemaWidget
      *
      * @return array<string, Action>
      */
+<<<<<<< HEAD
+=======
+    #[\Override]
+>>>>>>> 6ed19256f (.)
     public function getFormActions(): array
     {
         return [
@@ -204,7 +242,11 @@ class LogoutWidget extends XotBaseSchemaWidget
      */
     protected function logLogoutSuccess(Authenticatable $user): void
     {
+<<<<<<< HEAD
         Log::debug('User logged out', [
+=======
+        Log::info('User logged out', [
+>>>>>>> 6ed19256f (.)
             'user_id' => $user->getAuthIdentifier(),
             'timestamp' => now()->toDateTimeString(),
         ]);

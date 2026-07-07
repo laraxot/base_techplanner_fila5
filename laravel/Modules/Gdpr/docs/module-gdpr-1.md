@@ -1,10 +1,17 @@
 # Modulo GDPR
 
 ## Informazioni Generali
+<<<<<<< HEAD
 - **Nome**: `laraxot/module_gdpr_fila5`
 - **Descrizione**: Modulo per la gestione della conformità GDPR e privacy
 - **Namespace**: `Modules\Gdpr`
 - **Repository**: https://github.com/laraxot/module_gdpr_fila5.git
+=======
+- **Nome**: `laraxot/module_gdpr_fila3`
+- **Descrizione**: Modulo per la gestione della conformità GDPR e privacy
+- **Namespace**: `Modules\Gdpr`
+- **Repository**: https://github.com/laraxot/module_gdpr_fila3.git
+>>>>>>> 6ed19256f (.)
 
 ## Service Providers
 1. `Modules\Gdpr\Providers\GdprServiceProvider`
@@ -128,4 +135,8 @@ composer format        # Formatta il codice
 - Trasferimenti
 
 ## Changelog
+<<<<<<< HEAD
 Le modifiche vengono tracciate nel repository GitHub.
+=======
+Le modifiche vengono tracciate nel repository GitHub.
+>>>>>>> 6ed19256f (.)

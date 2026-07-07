@@ -138,6 +138,9 @@ Questo documento definisce lo stack tecnologico standard utilizzato in tutti i m
 - [Configurazione](../config/README.md)
 - [Sviluppo](../development/README.md)
 - [Testing](../testing/README.md)
+<<<<<<< HEAD
 - [Configurazione](../config/readme.md)
 - [Sviluppo](../development/readme.md)
 - [Testing](../testing/readme.md)
+=======
+>>>>>>> 6ed19256f (.)

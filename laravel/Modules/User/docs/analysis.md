@@ -48,6 +48,7 @@ Modules/User/
 - Integration tests for user flows
 ### Versione HEAD
 ## Collegamenti tra versioni di analysis.md
+<<<<<<< HEAD
 * [analysis.md](../../../notify/docs/analysis.md)
 * [analysis.md](../../../notify/docs/phpstan/analysis.md)
 * [analysis.md](../../../xot/docs/analysis.md)
@@ -74,6 +75,8 @@ Modules/User/
 * [analysis.md](../../../media/project_docs/analysis.md)
 * [analysis.md](../../../media/project_docs/phpstan/analysis.md)
 * [analysis.md](../../../../themes/one/project_docs/analysis.md)
+=======
+>>>>>>> 6ed19256f (.)
 * [analysis.md](../../../Notify/docs/analysis.md)
 * [analysis.md](../../../Notify/docs/phpstan/analysis.md)
 * [analysis.md](../../../Xot/docs/analysis.md)
@@ -101,4 +104,8 @@ Modules/User/
 * [analysis.md](../../../Media/project_docs/phpstan/analysis.md)
 * [analysis.md](../../../../Themes/One/project_docs/analysis.md)
 ### Versione Incoming
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> 6ed19256f (.)

@@ -101,4 +101,7 @@ middleware(['auth', 'verified']);
 
 ## Date
 2025-11-29
+<<<<<<< HEAD
 [DATE]
+=======
+>>>>>>> 6ed19256f (.)

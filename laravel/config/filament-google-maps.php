@@ -15,12 +15,17 @@ return [
      */
 
     'keys' => [
+<<<<<<< HEAD
         'web_key' => env('FILAMENT_GOOGLE_MAPS_WEB_API_KEY', env('GOOGLE_MAPS_API_KEY')),
         'server_key' => env('FILAMENT_GOOGLE_MAPS_SERVER_API_KEY', env('GOOGLE_MAPS_API_KEY')),
         'web_key'     => env('FILAMENT_GOOGLE_MAPS_WEB_API_KEY', env('GOOGLE_MAPS_API_KEY')),
         'server_key'  => env('FILAMENT_GOOGLE_MAPS_SERVER_API_KEY', env('GOOGLE_MAPS_API_KEY')),
         'web_key' => env('FILAMENT_GOOGLE_MAPS_WEB_API_KEY', env('GOOGLE_MAPS_API_KEY')),
         'server_key' => env('FILAMENT_GOOGLE_MAPS_SERVER_API_KEY', env('GOOGLE_MAPS_API_KEY')),
+=======
+        'web_key'     => env('FILAMENT_GOOGLE_MAPS_WEB_API_KEY', env('GOOGLE_MAPS_API_KEY')),
+        'server_key'  => env('FILAMENT_GOOGLE_MAPS_SERVER_API_KEY', env('GOOGLE_MAPS_API_KEY')),
+>>>>>>> 6ed19256f (.)
         'signing_key' => env('FILAMENT_GOOGLE_MAPS_SIGNING_KEY', null),
     ],
 
@@ -48,6 +53,7 @@ return [
      | https://developers.google.com/maps/faq#languagesupport
      */
     'locale' => [
+<<<<<<< HEAD
         'region' => env('FILAMENT_GOOGLE_MAPS_REGION_CODE', null),
         'language' => env('FILAMENT_GOOGLE_MAPS_LANGUAGE_CODE', null),
         'api' => env('FILAMENT_GOOGLE_MAPS_API_LANGUAGE_CODE', null),
@@ -57,6 +63,11 @@ return [
         'region' => env('FILAMENT_GOOGLE_MAPS_REGION_CODE', null),
         'language' => env('FILAMENT_GOOGLE_MAPS_LANGUAGE_CODE', null),
         'api' => env('FILAMENT_GOOGLE_MAPS_API_LANGUAGE_CODE', null),
+=======
+        'region'   => env('FILAMENT_GOOGLE_MAPS_REGION_CODE', null),
+        'language' => env('FILAMENT_GOOGLE_MAPS_LANGUAGE_CODE', null),
+        'api'      => env('FILAMENT_GOOGLE_MAPS_API_LANGUAGE_CODE', null),
+>>>>>>> 6ed19256f (.)
     ],
 
     /*
@@ -82,9 +93,13 @@ return [
 
     'cache' => [
         'duration' => env('FILAMENT_GOOGLE_MAPS_CACHE_DURATION_SECONDS', 60 * 60 * 24 * 30),
+<<<<<<< HEAD
         'store' => env('FILAMENT_GOOGLE_MAPS_CACHE_STORE', null),
         'store'    => env('FILAMENT_GOOGLE_MAPS_CACHE_STORE', null),
         'store' => env('FILAMENT_GOOGLE_MAPS_CACHE_STORE', null),
+=======
+        'store'    => env('FILAMENT_GOOGLE_MAPS_CACHE_STORE', null),
+>>>>>>> 6ed19256f (.)
     ],
 
     /*

@@ -182,8 +182,11 @@ it('previene appuntamenti sovrapposti', function () {
         'doctor_id' => $doctor->id,
         'starts_at' => '2024-01-01 10:00:00',
         'ends_at' => '2024-01-01 10:30:00',
+<<<<<<< HEAD
         'starts_at' => '[DATE] 10:00:00',
         'ends_at' => '[DATE] 10:30:00',
+=======
+>>>>>>> 6ed19256f (.)
     ]);
 
     // Prova a creare appuntamento sovrapposto
@@ -191,8 +194,11 @@ it('previene appuntamenti sovrapposti', function () {
         'doctor_id' => $doctor->id,
         'starts_at' => '2024-01-01 10:15:00', // Sovrappone
         'ends_at' => '2024-01-01 10:45:00',
+<<<<<<< HEAD
         'starts_at' => '[DATE] 10:15:00', // Sovrappone
         'ends_at' => '[DATE] 10:45:00',
+=======
+>>>>>>> 6ed19256f (.)
     ]);
 
     $response->assertStatus(422)
@@ -533,16 +539,22 @@ describe('Appointment Business Rules', function () {
             'doctor_id' => 1,
             'start_time' => '2024-01-01 10:00:00',
             'end_time' => '2024-01-01 10:30:00'
+<<<<<<< HEAD
             'start_time' => '[DATE] 10:00:00',
             'end_time' => '[DATE] 10:30:00'
+=======
+>>>>>>> 6ed19256f (.)
         ];
 
         $new = (object) [
             'doctor_id' => 1,
             'start_time' => '2024-01-01 10:15:00',
             'end_time' => '2024-01-01 10:45:00'
+<<<<<<< HEAD
             'start_time' => '[DATE] 10:15:00',
             'end_time' => '[DATE] 10:45:00'
+=======
+>>>>>>> 6ed19256f (.)
         ];
 
         // Business rule: no overlap
@@ -559,8 +571,11 @@ describe('Edge Cases', function () {
         $appointment = (object) [
             'start_time' => '2024-12-31 23:00:00',
             'end_time' => '2025-01-01 01:00:00'
+<<<<<<< HEAD
             'start_time' => '[DATE] 23:00:00',
             'end_time' => '[DATE] 01:00:00'
+=======
+>>>>>>> 6ed19256f (.)
         ];
 
         $start = new DateTime($appointment->start_time);
@@ -606,12 +621,15 @@ describe('Edge Cases', function () {
 
 - [Architettura Testing Principale](testing-architecture-overview.md)
 - [Guida Risoluzione Conflitti](git-conflicts-resolution-guide.md)
+<<<<<<< HEAD
 - [Best Practices Modulo <nome modulo>](../../laravel/modules/<nome modulo>/docs/testing-best-practices.md)
 - [Best Practices Modulo <nome progetto>](../../laravel/modules/<nome progetto>/docs/testing-best-practices.md)
 - [Testing Modulo Geo](../../laravel/modules/geo/docs/testing.md)
 
 ---
 
+=======
+>>>>>>> 6ed19256f (.)
 - [Best Practices Modulo <nome modulo>](../../laravel/Modules/<nome modulo>/docs/testing-best-practices.md)
 - [Best Practices Modulo <nome progetto>](../../laravel/Modules/<nome progetto>/docs/testing-best-practices.md)
 - [Testing Modulo Geo](../../laravel/Modules/Geo/docs/testing.md)
@@ -620,4 +638,8 @@ describe('Edge Cases', function () {
 
 **Ultimo aggiornamento**: Gennaio 2025
 **Versione**: 1.0
+<<<<<<< HEAD
 **Compatibilità**: Pest 2.x+, Laravel 12.x, PHP 8.3+
+=======
+**Compatibilità**: Pest 2.x+, Laravel 12.x, PHP 8.3+
+>>>>>>> 6ed19256f (.)

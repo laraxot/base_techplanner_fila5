@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 use Modules\Cms\Models\BaseModelLang;
 use Modules\Cms\Models\Page;
 use Modules\Tenant\Models\Traits\SushiToJsons;
@@ -28,7 +31,10 @@ describe('Page Business Logic', function (): void {
         $page = new Page();
         $expectedFillable = [
             'content',
+<<<<<<< HEAD
             'description',
+=======
+>>>>>>> 6ed19256f (.)
             'slug',
             'title',
             'middleware',
@@ -54,12 +60,26 @@ describe('Page Business Logic', function (): void {
 
     test('page has correct casts for blocks and arrays', function (): void {
         $page = new Page();
+<<<<<<< HEAD
+=======
+        /** @phpstan-ignore-next-line method.nonObject */
+        $casts = $page->getCasts();
+
+        /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+        expect($casts['content_blocks'])->toBe('array');
+        /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+        expect($casts['sidebar_blocks'])->toBe('array');
+        /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+        expect($casts['footer_blocks'])->toBe('array');
+        /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+>>>>>>> 6ed19256f (.)
         expect($casts['middleware'])->toBe('array');
     });
 
     test('page has schema definition for structured data', function (): void {
         $page = new Page();
 
+<<<<<<< HEAD
         // Use reflection to access protected $schema property
         $reflection = new ReflectionClass($page);
         $schemaProperty = $reflection->getProperty('schema');
@@ -71,6 +91,12 @@ describe('Page Business Logic', function (): void {
         expect($schema['content_blocks'])->toBe('json');
         expect($schema['sidebar_blocks'])->toBe('json');
         expect($schema['footer_blocks'])->toBe('json');
+=======
+        expect($page)->toHaveProperty('schema');
+        expect($page->schema['content_blocks'])->toBe('json');
+        expect($page->schema['sidebar_blocks'])->toBe('json');
+        expect($page->schema['footer_blocks'])->toBe('json');
+>>>>>>> 6ed19256f (.)
     });
 
     test('page can get rows for sushi functionality', function (): void {

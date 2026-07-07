@@ -1,6 +1,10 @@
 # Geo Module - Filament v4 Upgrade Notes
 
+<<<<<<< HEAD
 This document outlines specific considerations and changes for the `Geo` module during the Filament v4 upgrade. For a comprehensive overview of the Filament v4 upgrade process, refer to the main project documentation: [`docs/filament_v4_upgrade.md`](../../../docs/filament_upgrade_v4.md).
+=======
+This document outlines specific considerations and changes for the `Geo` module during the Filament v4 upgrade. For a comprehensive overview of the Filament v4 upgrade process, refer to the main project documentation: [`docs/filament_v4_upgrade.md`](../../docs/Filament_Upgrade_v4.md).
+>>>>>>> 6ed19256f (.)
 
 ## **Key Changes and Action Items for `Geo` Module**
 
@@ -72,4 +76,8 @@ By adhering to these principles, the `Geo` module maintains its architectural in
 *   **Reusable Components:** `AddressSection` itself promotes reusability. Adhering to Filament v4's component API ensures this reusability remains robust.
 *   **Global Configuration:** Utilizing `configureUsing()` in `AppServiceProvider` for global component behavior (e.g., `columnSpanFull()`) helps keep configuration DRY and easy to manage from a single location.
 
+<<<<<<< HEAD
 By adhering to these principles, the `Geo` module remains maintainable and aligned with the project's architectural standards.
+=======
+By adhering to these principles, the `Geo` module remains maintainable and aligned with the project's architectural standards.
+>>>>>>> 6ed19256f (.)

@@ -10,12 +10,20 @@ Per tutti i dati geografici statici (regioni, province, comuni, cap) di dimensio
 
 - I model specialistici (Region, Province, City, Cap) devono estendere la base GeoJsonModel e fornire metodi di filtro.
 - Versionare sempre il file json e documentare la struttura.
+<<<<<<< HEAD
 - Aggiornare la documentazione di Geo/docs, <nome progetto>/docs e questa stessa doc con collegamenti bidirezionali.
 
 Per dettagli implementativi e best practice vedi:
 - [Geo/project_docs/geo-json-model.md](../../Geo/project_docs/geo-json-model.md)
 - [Geo/project_docs/geo-json-model.md](../../geo/project_docs/geo-json-model.md)
 - [<nome progetto>/project_docs/geo-integration.md](../../<nome progetto>/project_docs/geo-integration.md)
+=======
+- Aggiornare la documentazione di Geo/docs, SaluteOra/docs e questa stessa doc con collegamenti bidirezionali.
+
+Per dettagli implementativi e best practice vedi:
+- [Geo/project_docs/geo-json-model.md](../../Geo/project_docs/geo-json-model.md)
+- [SaluteOra/project_docs/geo-integration.md](../../SaluteOra/project_docs/geo-integration.md)
+>>>>>>> 6ed19256f (.)
 - [Questa stessa doc (Xot/module-structure.md)](module-structure.md)
 
 ---
@@ -159,6 +167,7 @@ ModuleName/
 ## Collegamenti
 
 ### Documentazione Correlata
+<<<<<<< HEAD
 - [README](../readme.md) - Panoramica del modulo Xot
 - [Convenzioni di Naming](./naming-conventions.md) - Regole di naming
 - [Case Sensitivity](./directory-case-sensitivity.md) - Regole per la case sensitivity
@@ -169,6 +178,8 @@ ModuleName/
 - [Cms](../cms/docs/readme.md) - Gestione contenuti
 - [Lang](../lang/docs/readme.md) - Traduzioni
 - [User](../user/docs/readme.md) - Gestione utenti
+=======
+>>>>>>> 6ed19256f (.)
 - [README](../README.md) - Panoramica del modulo Xot
 - [Convenzioni di Naming](./naming-conventions.md) - Regole di naming
 - [Case Sensitivity](./DIRECTORY-CASE-SENSITIVITY.md) - Regole per la case sensitivity
@@ -336,6 +347,7 @@ User/
 ## Collegamenti Moduli
 
 ### Modulo UI
+<<<<<<< HEAD
 - [Componenti Volt](../ui/docs/components/volt.md)
 - [Layout](../ui/docs/layouts.md)
 - [Temi](../ui/docs/themes.md)
@@ -401,6 +413,8 @@ User/
 - [Grafici](../chart/docs/charts.md)
 - [Dashboard](../chart/docs/dashboard.md)
 - [Visualizzazione](../chart/docs/visualization.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Componenti Volt](../UI/docs/components/volt.md)
 - [Layout](../UI/docs/layouts.md)
 - [Temi](../UI/docs/themes.md)
@@ -608,4 +622,8 @@ Se trovi una directory con case errato:
 6. Committa le modifiche
 
 ## Collegamenti tra versioni di module_structure.md
+<<<<<<< HEAD
 * [module_structure.md](../../../../../docs/error_analysis/module_structure.md)
+=======
+* [module_structure.md](../../../../docs/error_analysis/module_structure.md)
+>>>>>>> 6ed19256f (.)

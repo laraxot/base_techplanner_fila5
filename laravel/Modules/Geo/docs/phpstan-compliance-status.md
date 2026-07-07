@@ -1,5 +1,6 @@
 # PHPStan Level 10 Compliance Status
 
+<<<<<<< HEAD
 
 **Status**: 🚧 REGRESSION DETECTED (8 errors found)
 
@@ -7,6 +8,8 @@
 The Geo module was previously compliant with PHPStan Level 10 (as of [DATE]), but recent code additions have introduced **8 return type errors**. All errors are related to type narrowing and can be resolved with Assert statements and proper PHPDoc annotations.
 
 **See**: [PHPStan Errors Roadmap [DATE]](./phpstan-errors-roadmap-[DATE].md) for detailed fix plan.
+=======
+>>>>>>> 6ed19256f (.)
 **Last Updated**: 2026-01-12
 **Status**: 🚧 REGRESSION DETECTED (8 errors found)
 
@@ -61,4 +64,8 @@ To maintain PHPStan compliance:
 - [Geographic Data Guide](geographic-data.md)
 - [Location Services](location-services.md)
 - [Address Handling](address-handling.md)
+<<<<<<< HEAD
 - [Map Integration](map-integration.md)
+=======
+- [Map Integration](map-integration.md)
+>>>>>>> 6ed19256f (.)

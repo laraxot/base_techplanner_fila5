@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+namespace Modules\UI\Tests\Unit\Widgets;
+>>>>>>> 6ed19256f (.)
 
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\TextInput;

@@ -17,54 +17,73 @@ return [
             'label' => 'Oggetto',
             'placeholder' => 'Inserisci l\'oggetto dell\'email',
             'help' => 'Oggetto che apparirà nell\'intestazione dell\'email',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'template_id' => [
             'label' => 'Template Email',
             'placeholder' => 'Seleziona il template email da utilizzare',
             'help' => 'Template predefinito per l\'email (opzionale)',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'to' => [
             'label' => 'Destinatario',
             'placeholder' => 'destinatario@dominio.com',
             'help' => 'Indirizzo email del destinatario',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'cc' => [
             'label' => 'Copia Conoscenza (CC)',
             'placeholder' => 'cc@dominio.com (opzionale)',
             'help' => 'Indirizzi email in copia conoscenza, separati da virgole',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'bcc' => [
             'label' => 'Copia Nascosta (BCC)',
             'placeholder' => 'bcc@dominio.com (opzionale)',
             'help' => 'Indirizzi email in copia nascosta, separati da virgole',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'content' => [
             'label' => 'Contenuto Testo',
             'placeholder' => 'Inserisci il contenuto testuale dell\'email',
             'help' => 'Contenuto testuale dell\'email (versione plain text)',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'body_html' => [
             'label' => 'Contenuto HTML',
             'placeholder' => '<h1>Titolo</h1><p>Contenuto dell\'email in formato HTML</p>',
             'help' => 'Contenuto HTML dell\'email da inviare (opzionale)',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -76,14 +95,24 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'parameters' => [
+            'label' => 'Parametri Template',
+            'placeholder' => '{\"nome\": \"Mario\", \"cognome\": \"Rossi\"}',
+            'help' => 'Parametri JSON per personalizzare il template selezionato',
+>>>>>>> 6ed19256f (.)
         ],
         'attachments' => [
             'label' => 'Allegati',
             'placeholder' => 'Seleziona i file da allegare',
             'help' => 'File da allegare all\'email (opzionale)',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'priority' => [
             'label' => 'Priorità',
@@ -94,9 +123,12 @@ return [
                 'high' => 'Alta',
                 'urgent' => 'Urgente',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -148,6 +180,9 @@ return [
         'parameters_json' => 'I parametri devono essere in formato JSON valido',
         'priority_valid' => 'La priorità deve essere una delle opzioni disponibili',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

@@ -275,4 +275,8 @@ php -l Modules/Tenant/app/Actions/Config/ResolveTenantConfigValueAction.php
 **Decision**: Remove `runningInConsole()` check permanently
 **Improvement**: Use `Arr::first()` for cleaner code
 **Filosofia**: Consistency + Multi-Tenant Zen + DRY + KISS
+<<<<<<< HEAD
 **Status**: ✅ DOCUMENTED - Ready for Implementation
+=======
+**Status**: ✅ DOCUMENTED - Ready for Implementation
+>>>>>>> 6ed19256f (.)

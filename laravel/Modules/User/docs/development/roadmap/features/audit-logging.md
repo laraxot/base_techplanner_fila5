@@ -80,4 +80,8 @@ Sistema completo di logging per audit delle attività degli utenti, con supporto
 
 ## Related Features
 - [Gestione Utenti](./gestione-utenti.md)
+<<<<<<< HEAD
 - [User Analytics](./user-analytics.md) 
+=======
+- [User Analytics](./user-analytics.md)
+>>>>>>> 6ed19256f (.)

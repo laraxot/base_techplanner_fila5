@@ -6,15 +6,24 @@
    - Tutti i file e le sottodirectory di `Modules/Lang/lang` devono essere di proprietà `www-data:www-data`.
    - Comando:
      ```bash
+<<<<<<< HEAD
      sudo chown -R www-data:www-data Modules/Lang/lang
+=======
+     sudo chown -R www-data:www-data /var/www/html/ptvx/laravel/Modules/Lang/lang
+>>>>>>> 6ed19256f (.)
      ```
 2. **Permessi sicuri e coerenti**
    - Tutte le directory: `ug+rwx,o+rx` (775)
    - Tutti i file: `ug+rw,o+r-w` (664)
    - Comando:
      ```bash
+<<<<<<< HEAD
      sudo find Modules/Lang/lang -type d -exec chmod 775 {} +
      sudo find Modules/Lang/lang -type f -exec chmod 664 {} +
+=======
+     sudo find /var/www/html/ptvx/laravel/Modules/Lang/lang -type d -exec chmod 775 {} +
+     sudo find /var/www/html/ptvx/laravel/Modules/Lang/lang -type f -exec chmod 664 {} +
+>>>>>>> 6ed19256f (.)
      ```
 3. **Motivazione**
    - Garantisce che Apache/PHP (utente www-data) possa sempre leggere/scrivere file lingua.
@@ -25,9 +34,15 @@
 Salva come `fix_lang_permissions.sh` e lancia con sudo:
 ```bash
 #!/bin/bash
+<<<<<<< HEAD
 sudo chown -R www-data:www-data Modules/Lang/lang
 sudo find Modules/Lang/lang -type d -exec chmod 775 {} +
 sudo find Modules/Lang/lang -type f -exec chmod 664 {} +
+=======
+sudo chown -R www-data:www-data /var/www/html/ptvx/laravel/Modules/Lang/lang
+sudo find /var/www/html/ptvx/laravel/Modules/Lang/lang -type d -exec chmod 775 {} +
+sudo find /var/www/html/ptvx/laravel/Modules/Lang/lang -type f -exec chmod 664 {} +
+>>>>>>> 6ed19256f (.)
 echo "Permessi corretti su Modules/Lang/lang."
 ```
 
@@ -44,9 +59,12 @@ Questa guida risolve in modo definitivo ogni errore di permessi su file lingua g
 **Ultimo aggiornamento: maggio 2025 – Windsurf/Laraxot standard**
 
 [Link diretto dalla root docs](../../../docs/lang_service_permessi.md)
+<<<<<<< HEAD
 **Ultimo aggiornamento: maggio 2025 – Windsurf/Laraxot standard**
 
 [Link diretto dalla root docs](../../../../docs/lang_service_permessi.md)
+=======
+>>>>>>> 6ed19256f (.)
 # Troubleshooting definitivo permessi file_put_contents su lang_service.php
 
 ## Sintesi della soluzione robusta
@@ -55,15 +73,24 @@ Questa guida risolve in modo definitivo ogni errore di permessi su file lingua g
    - Tutti i file e le sottodirectory di `Modules/Lang/lang` devono essere di proprietà `www-data:www-data`.
    - Comando:
      ```bash
+<<<<<<< HEAD
      sudo chown -R www-data:www-data Modules/Lang/lang
+=======
+     sudo chown -R www-data:www-data /var/www/html/ptvx/laravel/Modules/Lang/lang
+>>>>>>> 6ed19256f (.)
      ```
 2. **Permessi sicuri e coerenti**
    - Tutte le directory: `ug+rwx,o+rx` (775)
    - Tutti i file: `ug+rw,o+r-w` (664)
    - Comando:
      ```bash
+<<<<<<< HEAD
      sudo find Modules/Lang/lang -type d -exec chmod 775 {} +
      sudo find Modules/Lang/lang -type f -exec chmod 664 {} +
+=======
+     sudo find /var/www/html/ptvx/laravel/Modules/Lang/lang -type d -exec chmod 775 {} +
+     sudo find /var/www/html/ptvx/laravel/Modules/Lang/lang -type f -exec chmod 664 {} +
+>>>>>>> 6ed19256f (.)
      ```
 3. **Motivazione**
    - Garantisce che Apache/PHP (utente www-data) possa sempre leggere/scrivere file lingua.
@@ -74,9 +101,15 @@ Questa guida risolve in modo definitivo ogni errore di permessi su file lingua g
 Salva come `fix_lang_permissions.sh` e lancia con sudo:
 ```bash
 #!/bin/bash
+<<<<<<< HEAD
 sudo chown -R www-data:www-data Modules/Lang/lang
 sudo find Modules/Lang/lang -type d -exec chmod 775 {} +
 sudo find Modules/Lang/lang -type f -exec chmod 664 {} +
+=======
+sudo chown -R www-data:www-data /var/www/html/ptvx/laravel/Modules/Lang/lang
+sudo find /var/www/html/ptvx/laravel/Modules/Lang/lang -type d -exec chmod 775 {} +
+sudo find /var/www/html/ptvx/laravel/Modules/Lang/lang -type f -exec chmod 664 {} +
+>>>>>>> 6ed19256f (.)
 echo "Permessi corretti su Modules/Lang/lang."
 ```
 
@@ -93,6 +126,9 @@ Questa guida risolve in modo definitivo ogni errore di permessi su file lingua g
 **Ultimo aggiornamento: maggio 2025 – Windsurf/Laraxot standard**
 
 [Link diretto dalla root docs](../../../docs/lang_service_permessi.md)
+<<<<<<< HEAD
 **Ultimo aggiornamento: maggio 2025 – Windsurf/Laraxot standard**
 
 [Link diretto dalla root docs](../../../../docs/lang_service_permessi.md)
+=======
+>>>>>>> 6ed19256f (.)

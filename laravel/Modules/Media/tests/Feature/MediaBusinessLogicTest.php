@@ -3,8 +3,13 @@
 declare(strict_types=1);
 
 use Illuminate\Http\UploadedFile;
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Storage;
+=======
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Schema;
+>>>>>>> 6ed19256f (.)
 use Modules\Media\Models\Media;
 use Modules\Media\Models\MediaConvert;
 use Modules\Media\Models\TemporaryUpload;
@@ -19,6 +24,7 @@ describe('Media Business Logic', function () {
     });
 
     it('can create media from temporary upload', function () {
+<<<<<<< HEAD
         $file = UploadedFile::fake()->image('test-image.jpg', 100, 100);
 
         $temporaryColumns = Schema::connection('media')->getColumnListing('temporary_uploads');
@@ -82,10 +88,31 @@ describe('Media Business Logic', function () {
         }
 
         $media = Media::factory()->create($mediaPayload);
+=======
+        $user = User::factory()->create();
+        $file = UploadedFile::fake()->image('test-image.jpg', 100, 100);
+
+        $temporaryUpload = TemporaryUpload::factory()->create([
+            'user_id' => $user->id,
+            'file_name' => $file->getClientOriginalName(),
+            'file_size' => $file->getSize(),
+            'mime_type' => $file->getMimeType(),
+        ]);
+
+        $media = Media::factory()->create([
+            'user_id' => $user->id,
+            'file_name' => $temporaryUpload->file_name,
+            'file_size' => $temporaryUpload->file_size,
+            'mime_type' => $temporaryUpload->mime_type,
+            'disk' => 'public',
+            'collection_name' => 'default',
+        ]);
+>>>>>>> 6ed19256f (.)
 
         expect($media)
             ->toBeInstanceOf(Media::class)
             ->and($media->file_name)
+<<<<<<< HEAD
             ->toBe($mediaPayload['file_name'])
             ->and($media->mime_type)
             ->toBe($mediaPayload['mime_type']);
@@ -117,6 +144,29 @@ describe('Media Business Logic', function () {
         }
 
         $media = Media::factory()->create($payload);
+=======
+            ->toBe($temporaryUpload->file_name)
+            ->and($media->file_size)
+            ->toBe($temporaryUpload->file_size)
+            ->and($media->mime_type)
+            ->toBe($temporaryUpload->mime_type);
+
+        $this->assertDatabaseHas('media', [
+            'id' => $media->id,
+            'user_id' => $user->id,
+            'file_name' => $temporaryUpload->file_name,
+            'file_size' => $temporaryUpload->file_size,
+            'mime_type' => $temporaryUpload->mime_type,
+        ]);
+    });
+
+    it('can convert media to different formats', function () {
+        $user = User::factory()->create();
+        $media = Media::factory()->create([
+            'user_id' => $user->id,
+            'mime_type' => 'image/jpeg',
+        ]);
+>>>>>>> 6ed19256f (.)
 
         $mediaConvert = MediaConvert::factory()->create([
             'media_id' => $media->id,
@@ -135,6 +185,7 @@ describe('Media Business Logic', function () {
             ->toBe('png');
 
         $this->assertDatabaseHas('media_converts', [
+<<<<<<< HEAD
             'id' => (int) $mediaConvert->getKey(),
             'media_id' => (int) $media->getKey(),
             'original_format' => 'jpeg',
@@ -174,12 +225,34 @@ describe('Media Business Logic', function () {
         }
 
         $temporaryUpload = TemporaryUpload::factory()->create($payload);
+=======
+            'id' => $mediaConvert->id,
+            'media_id' => $media->id,
+            'original_format' => 'jpeg',
+            'target_format' => 'png',
+            'status' => 'pending',
+        ]);
+    });
+
+    it('can track temporary upload lifecycle', function () {
+        $user = User::factory()->create();
+        $file = UploadedFile::fake()->image('test-image.jpg', 100, 100);
+
+        $temporaryUpload = TemporaryUpload::factory()->create([
+            'user_id' => $user->id,
+            'file_name' => $file->getClientOriginalName(),
+            'file_size' => $file->getSize(),
+            'mime_type' => $file->getMimeType(),
+            'status' => 'uploading',
+        ]);
+>>>>>>> 6ed19256f (.)
 
         // Simulate upload completion
         $temporaryUpload->update(['status' => 'completed']);
 
         expect($temporaryUpload->fresh()->status)->toBe('completed');
 
+<<<<<<< HEAD
         $expected = [
             'id' => (int) $temporaryUpload->getKey(),
             'status' => 'completed',
@@ -214,6 +287,29 @@ describe('Media Business Logic', function () {
         $profileMedia = Media::factory()->create($profilePayload);
 
         $documentMedia = Media::factory()->create($documentPayload);
+=======
+        $this->assertDatabaseHas('temporary_uploads', [
+            'id' => $temporaryUpload->id,
+            'user_id' => $user->id,
+            'status' => 'completed',
+        ]);
+    });
+
+    it('can manage media collections', function () {
+        $user = User::factory()->create();
+
+        $profileMedia = Media::factory()->create([
+            'user_id' => $user->id,
+            'collection_name' => 'profile',
+            'disk' => 'public',
+        ]);
+
+        $documentMedia = Media::factory()->create([
+            'user_id' => $user->id,
+            'collection_name' => 'documents',
+            'disk' => 'public',
+        ]);
+>>>>>>> 6ed19256f (.)
 
         expect($profileMedia->collection_name)
             ->toBe('profile')
@@ -221,6 +317,7 @@ describe('Media Business Logic', function () {
             ->toBe('documents');
 
         $this->assertDatabaseHas('media', [
+<<<<<<< HEAD
             'id' => (int) $profileMedia->getKey(),
             'collection_name' => 'profile',
         ], 'media');
@@ -282,6 +379,44 @@ describe('Media Business Logic', function () {
         }
 
         $media = Media::factory()->create($payload);
+=======
+            'id' => $profileMedia->id,
+            'collection_name' => 'profile',
+        ]);
+
+        $this->assertDatabaseHas('media', [
+            'id' => $documentMedia->id,
+            'collection_name' => 'documents',
+        ]);
+    });
+
+    it('can validate media file types', function () {
+        $user = User::factory()->create();
+
+        $validImage = Media::factory()->create([
+            'user_id' => $user->id,
+            'mime_type' => 'image/jpeg',
+            'file_name' => 'valid-image.jpg',
+        ]);
+
+        expect($validImage->isImage())->toBeTrue()->and($validImage->isDocument())->toBeFalse();
+
+        $validDocument = Media::factory()->create([
+            'user_id' => $user->id,
+            'mime_type' => 'application/pdf',
+            'file_name' => 'valid-document.pdf',
+        ]);
+
+        expect($validDocument->isImage())->toBeFalse()->and($validDocument->isDocument())->toBeTrue();
+    });
+
+    it('can track media conversion status', function () {
+        $user = User::factory()->create();
+        $media = Media::factory()->create([
+            'user_id' => $user->id,
+            'mime_type' => 'image/jpeg',
+        ]);
+>>>>>>> 6ed19256f (.)
 
         $mediaConvert = MediaConvert::factory()->create([
             'media_id' => $media->id,
@@ -295,20 +430,29 @@ describe('Media Business Logic', function () {
         expect($mediaConvert->fresh()->status)->toBe('completed');
 
         $this->assertDatabaseHas('media_converts', [
+<<<<<<< HEAD
             'id' => (int) $mediaConvert->getKey(),
             'status' => 'completed',
         ], 'media');
+=======
+            'id' => $mediaConvert->id,
+            'status' => 'completed',
+        ]);
+>>>>>>> 6ed19256f (.)
     });
 
     it('can manage media permissions', function () {
         $owner = User::factory()->create();
         $otherUser = User::factory()->create();
 
+<<<<<<< HEAD
         $columns = Schema::connection('media')->getColumnListing('media');
         if (! in_array('user_id', $columns, true) || ! in_array('is_public', $columns, true)) {
             $this->markTestSkipped('This install does not have user_id/is_public columns on media table.');
         }
 
+=======
+>>>>>>> 6ed19256f (.)
         $media = Media::factory()->create([
             'user_id' => $owner->id,
             'is_public' => false,
@@ -323,6 +467,7 @@ describe('Media Business Logic', function () {
     });
 
     it('can handle media deletion', function () {
+<<<<<<< HEAD
         $columns = Schema::connection('media')->getColumnListing('media');
 
         if (in_array('deleted_at', $columns, true)) {
@@ -341,6 +486,29 @@ describe('Media Business Logic', function () {
 
     it('can generate media urls', function () {
         $media = Media::factory()->create([
+=======
+        $user = User::factory()->create();
+        $media = Media::factory()->create([
+            'user_id' => $user->id,
+        ]);
+
+        $media->delete();
+
+        $this->assertSoftDeleted('media', [
+            'id' => $media->id,
+        ]);
+
+        $this->assertDatabaseMissing('media', [
+            'id' => $media->id,
+            'deleted_at' => null,
+        ]);
+    });
+
+    it('can generate media urls', function () {
+        $user = User::factory()->create();
+        $media = Media::factory()->create([
+            'user_id' => $user->id,
+>>>>>>> 6ed19256f (.)
             'file_name' => 'test-image.jpg',
             'disk' => 'public',
         ]);
@@ -424,11 +592,14 @@ describe('Media Business Logic', function () {
             Media::query()->create($makePayload('application/pdf', "doc-{$i}.pdf"));
         }
 
+<<<<<<< HEAD
         $columns = Schema::connection('media')->getColumnListing('media');
         if (! in_array('user_id', $columns, true)) {
             $this->markTestSkipped('This install does not have user_id column on media table.');
         }
 
+=======
+>>>>>>> 6ed19256f (.)
         $totalMedia = Media::where('user_id', $user->id)->count();
         $imageCount = Media::where('user_id', $user->id)->where('mime_type', 'like', 'image/%')->count();
         $documentCount = Media::where('user_id', $user->id)->where('mime_type', 'like', 'application/%')->count();

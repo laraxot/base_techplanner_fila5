@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources;
 
 use Filament\Forms\Components\KeyValue;
+<<<<<<< HEAD
 use Filament\Forms\Components\Placeholder;
+=======
+>>>>>>> 6ed19256f (.)
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
@@ -32,6 +35,7 @@ class SocialProviderResource extends XotBaseResource
     public static function getFormSchema(): array
     {
         return [
+<<<<<<< HEAD
             'env_guide' => Placeholder::make('env_guide')
                 ->hiddenLabel()
                 ->content(__('fields.env_guide.content'))
@@ -39,14 +43,29 @@ class SocialProviderResource extends XotBaseResource
             'name' => TextInput::make('name')
                 ->required()
                 ->maxLength(255),
+=======
+            'name' => TextInput::make('name')
+                ->required()
+                ->maxLength(255)
+                ->placeholder(__('fields.name.placeholder'))
+                ->helperText(__('fields.name.helper_text')),
+>>>>>>> 6ed19256f (.)
             'scopes' => KeyValue::make('scopes')
                 // ->placeholder(static::trans('fields.scopes.placeholder'))
                 ->helperText(__('fields.scopes.helper_text')),
             'client_id' => TextInput::make('client_id')
+<<<<<<< HEAD
+=======
+                ->required()
+>>>>>>> 6ed19256f (.)
                 ->maxLength(255)
                 ->placeholder(__('fields.client_id.placeholder'))
                 ->helperText(__('fields.client_id.helper_text')),
             'client_secret' => TextInput::make('client_secret')
+<<<<<<< HEAD
+=======
+                ->required()
+>>>>>>> 6ed19256f (.)
                 ->maxLength(1024)
                 ->placeholder(__('fields.client_secret.placeholder'))
                 ->helperText(__('fields.client_secret.helper_text')),

@@ -23,7 +23,10 @@ use Override;
  * @property string|null $deleted_by
  * @property-read Profile|null $creator
  * @property-read Profile|null $updater
+<<<<<<< HEAD
  *
+=======
+>>>>>>> 6ed19256f (.)
  * @method static Builder<static>|PhoneCall newModelQuery()
  * @method static Builder<static>|PhoneCall newQuery()
  * @method static Builder<static>|PhoneCall query()
@@ -39,9 +42,13 @@ use Override;
  * @method static Builder<static>|PhoneCall whereNotes($value)
  * @method static Builder<static>|PhoneCall whereUpdatedAt($value)
  * @method static Builder<static>|PhoneCall whereUpdatedBy($value)
+<<<<<<< HEAD
  *
  * @property-read Profile|null $deleter
  *
+=======
+ * @property-read Profile|null $deleter
+>>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class PhoneCall extends BaseModel

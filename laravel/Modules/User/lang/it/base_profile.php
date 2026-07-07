@@ -17,6 +17,7 @@ return [
         'sort' => 31,
         'icon' => 'user-user-permission',
     ],
+<<<<<<< HEAD
     'label' => 'Base Profile',
     'plural_label' => 'Base Profile (Plurale)',
     'fields' => [
@@ -50,4 +51,10 @@ return [
             'label' => 'Elimina Base Profile',
         ],
     ],
+=======
+    'label' => '',
+    'plural_label' => '',
+    'fields' => [],
+    'actions' => [],
+>>>>>>> 6ed19256f (.)
 ];

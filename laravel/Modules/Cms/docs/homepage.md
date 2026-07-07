@@ -108,9 +108,12 @@ Per una documentazione più approfondita sull'architettura della homepage, consu
 - [Architettura della Homepage](../laravel/Modules/Cms/docs/homepage_architecture.md) - Analisi dettagliata del funzionamento della homepage
 - [Gestione dei Contenuti](../laravel/Modules/Cms/docs/content.md) - Come gestire i contenuti tramite file JSON
 - [Frontoffice](../laravel/Modules/Cms/docs/frontoffice.md) - Panoramica del frontoffice di il progetto
+<<<<<<< HEAD
 - [Architettura della Homepage](../laravel/modules/cms/docs/homepage_architecture.md) - Analisi dettagliata del funzionamento della homepage
 - [Gestione dei Contenuti](../laravel/modules/cms/docs/content.md) - Come gestire i contenuti tramite file JSON
 - [Frontoffice](../laravel/modules/cms/docs/frontoffice.md) - Panoramica del frontoffice di il progetto
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Riferimenti
 
@@ -119,7 +122,10 @@ Per una documentazione più approfondita sull'architettura della homepage, consu
 
 ## Collegamenti Bidirezionali
 - [README](README.md) - Documentazione principale del modulo
+<<<<<<< HEAD
 - [README](readme.md) - Documentazione principale del modulo
+=======
+>>>>>>> 6ed19256f (.)
 - [Architettura](homepage_architecture.md) - Architettura della homepage
 - [Gestione](homepage-management.md) - Gestione della homepage
 - [Struttura](homepage-structure.md) - Struttura dettagliata
@@ -131,9 +137,15 @@ Per una documentazione più approfondita sull'architettura della homepage, consu
 - [Modulo UI](../UI/docs/README.md) - Componenti UI per la homepage
 - [Modulo Theme](../Theme/docs/README.md) - Personalizzazione tema
 - [Modulo Lang](../Lang/docs/README.md) - Gestione traduzioni
+<<<<<<< HEAD
 - [Modulo UI](../ui/docs/readme.md) - Componenti UI per la homepage
 - [Modulo Theme](../theme/docs/readme.md) - Personalizzazione tema
 - [Modulo Lang](../lang/docs/readme.md) - Gestione traduzioni
 - [Gestione Contenuti](content-management.md) - Sistema di gestione contenuti
 - [Sezioni](sections.md) - Gestione delle sezioni
 - [Layout](struttura-layout-componenti-blade-<nome progetto>.md) - Struttura dei layout
+=======
+- [Gestione Contenuti](content-management.md) - Sistema di gestione contenuti
+- [Sezioni](sections.md) - Gestione delle sezioni
+- [Layout](struttura-layout-componenti-blade-<nome progetto>.md) - Struttura dei layout
+>>>>>>> 6ed19256f (.)

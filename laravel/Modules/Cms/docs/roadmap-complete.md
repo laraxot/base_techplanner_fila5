@@ -380,9 +380,12 @@ La cartella `docs/` è ben organizzata con:
 - [Modulo User](../../User/docs/roadmap_complete.md)
 - [Modulo Media](../../Media/docs/README.md)
 - [Theme Sixteen](../../../Themes/Sixteen/docs/README.md)
+<<<<<<< HEAD
 - [Modulo User](../../user/docs/roadmap_complete.md)
 - [Modulo Media](../../media/docs/readme.md)
 - [Theme Sixteen](../../../themes/sixteen/docs/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Resources
 - [Filament Documentation](https://filamentphp.com/docs)
@@ -397,6 +400,9 @@ La cartella `docs/` è ben organizzata con:
 **Maintainer**: CMS Team
 **Status**: 🚧 In Development (65% completo)
 **Prossima Revisione**: 2025-02-01
+<<<<<<< HEAD
 **Maintainer**: CMS Team
 **Status**: 🚧 In Development (65% completo)
 **Prossima Revisione**: [DATE]
+=======
+>>>>>>> 6ed19256f (.)

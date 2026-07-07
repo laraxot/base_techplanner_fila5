@@ -29,6 +29,7 @@ return [
         ],
         'applyFilters' => [
             'label' => 'applyFilters',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -44,6 +45,14 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+>>>>>>> 6ed19256f (.)
         ],
         'options' => [
             'prefix-icon-color' => [
@@ -230,6 +239,7 @@ return [
                 'helper_text' => 'options.prefix',
                 'description' => 'options.prefix',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -246,159 +256,231 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+>>>>>>> 6ed19256f (.)
         ],
         'value' => [
             'description' => 'value',
             'helper_text' => '',
             'placeholder' => 'value',
             'label' => 'value',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'values-list' => [
             'description' => 'values-list',
             'helper_text' => '',
             'placeholder' => 'values-list',
             'label' => 'values-list',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'user_id' => [
             'label' => 'user_id',
             'placeholder' => 'user_id',
             'helper_text' => '',
             'description' => 'user_id',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'name' => [
             'label' => 'name',
             'placeholder' => 'name',
             'helper_text' => '',
             'description' => 'name',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'slug' => [
             'label' => 'slug',
             'placeholder' => 'slug',
             'helper_text' => '',
             'description' => 'slug',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'category_id' => [
             'label' => 'category_id',
             'placeholder' => 'category_id',
             'helper_text' => '',
             'description' => 'category_id',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'description' => [
             'label' => 'description',
             'placeholder' => 'description',
             'helper_text' => '',
             'description' => 'description',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'details' => [
             'label' => 'details',
             'placeholder' => 'details',
             'helper_text' => '',
             'description' => 'details',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'is_active' => [
             'label' => 'is_active',
             'placeholder' => 'is_active',
             'helper_text' => '',
             'description' => 'is_active',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'ordering' => [
             'label' => 'ordering',
             'placeholder' => 'ordering',
             'helper_text' => '',
             'description' => 'ordering',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'start_date' => [
             'label' => 'start_date',
             'placeholder' => 'start_date',
             'helper_text' => '',
             'description' => 'start_date',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'end_date' => [
             'label' => 'end_date',
             'placeholder' => 'end_date',
             'helper_text' => '',
             'description' => 'end_date',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'extensions' => [
             'label' => 'extensions',
             'placeholder' => 'extensions',
             'helper_text' => '',
             'description' => 'extensions',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'sections' => [
             'label' => 'sections',
             'placeholder' => 'sections',
             'helper_text' => '',
             'description' => 'sections',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'fields' => [
             'label' => 'fields',
             'placeholder' => 'fields',
             'helper_text' => '',
             'description' => 'fields',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'type' => [
             'label' => 'type',
             'placeholder' => 'type',
             'helper_text' => '',
             'description' => 'type',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'compact' => [
             'label' => 'compact',
             'placeholder' => 'compact',
             'helper_text' => '',
             'description' => 'compact',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'aside' => [
             'label' => 'aside',
             'placeholder' => 'aside',
             'helper_text' => '',
             'description' => 'aside',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'borderless' => [
             'label' => 'borderless',
             'placeholder' => 'borderless',
             'helper_text' => '',
             'description' => 'borderless',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'icon' => [
             'label' => 'icon',
             'placeholder' => 'icon',
             'helper_text' => '',
             'description' => 'icon',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'columns' => [
             'label' => 'columns',
             'placeholder' => 'columns',
             'helper_text' => '',
             'description' => 'columns',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'itemIsDefault' => [
             'description' => 'itemIsDefault',
             'helper_text' => '',
             'placeholder' => 'itemIsDefault',
             'label' => 'itemIsDefault',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
         'delete' => [
@@ -412,12 +494,21 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'delete' => [
+            'label' => 'delete',
+        ],
+        'edit' => [
+            'label' => 'edit',
+>>>>>>> 6ed19256f (.)
         ],
         'isActive' => [
             'description' => 'isActive',
             'helper_text' => '',
             'placeholder' => 'isActive',
             'label' => 'isActive',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
         'status' => [
@@ -431,70 +522,103 @@ return [
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
+=======
+        ],
+        'status' => [
+            'label' => 'status',
+        ],
+        'notes' => [
+            'description' => 'notes',
+>>>>>>> 6ed19256f (.)
         ],
         'responses_count' => [
             'description' => 'responses_count',
             'helper_text' => '',
             'placeholder' => 'responses_count',
             'label' => 'responses_count',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'itemKey' => [
             'description' => 'itemKey',
             'helper_text' => '',
             'placeholder' => 'itemKey',
             'label' => 'itemKey',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'forms_count' => [
             'description' => 'forms_count',
             'helper_text' => '',
             'placeholder' => 'forms_count',
             'label' => 'forms_count',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'responses_exists' => [
             'description' => 'responses_exists',
             'helper_text' => '',
             'placeholder' => 'responses_exists',
             'label' => 'responses_exists',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'logo' => [
             'description' => 'logo',
             'helper_text' => '',
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'category' => [
             'name' => [
                 'description' => 'category.name',
                 'helper_text' => '',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'test_date' => [
             'label' => 'test_date',
             'placeholder' => 'test_date',
             'helper_text' => 'test_date',
             'description' => 'test_date',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'test' => [
             'label' => 'test',
             'placeholder' => 'test',
             'helper_text' => 'test',
             'description' => 'test',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'view' => [
             'label' => 'view',
             'placeholder' => 'view',
             'helper_text' => 'view',
             'description' => 'view',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
         'address' => [
@@ -544,6 +668,8 @@ return [
         ],
         'contact' => [
             'label' => 'contact',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -597,6 +723,7 @@ return [
             'icon' => 'list_log_activities',
             'tooltip' => 'list_log_activities',
         ],
+<<<<<<< HEAD
         'table_layout_toggle' => [
             'label' => 'table_layout_toggle',
             'icon' => 'table_layout_toggle',
@@ -646,5 +773,7 @@ return [
         'test' => [
             'label' => 'test',
         ],
+=======
+>>>>>>> 6ed19256f (.)
     ],
 ];

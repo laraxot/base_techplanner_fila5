@@ -45,6 +45,7 @@ return [
         'icon' => 'heroicon-o-truck',
         'description' => 'Italian provider for telecommunications services and SMS',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -58,4 +59,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

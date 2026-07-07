@@ -9,7 +9,11 @@ Questo documento descrive come è implementato e configurato il pacchetto `spati
 Il progetto utilizza il plugin ufficiale `filament/spatie-laravel-translatable-plugin` per l'integrazione con Filament:
 
 ```php
+<<<<<<< HEAD
 // Modules/<nome progetto>/app/Providers/Filament/AdminPanelProvider.php
+=======
+// Modules/SaluteOra/app/Providers/Filament/AdminPanelProvider.php
+>>>>>>> 6ed19256f (.)
 use Filament\SpatieLaravelTranslatablePlugin;
 
 public function panel(Panel $panel): Panel
@@ -226,13 +230,22 @@ trait HasStrictTranslations
 
 ### File di Contenuto Traducibili
 
+<<<<<<< HEAD
 I contenuti JSON come quelli in `config/local/<nome progetto>/database/content/pages/` supportano traduzioni:
+=======
+I contenuti JSON come quelli in `config/local/saluteora/database/content/pages/` supportano traduzioni:
+>>>>>>> 6ed19256f (.)
 
 ```json
 {
     "title": {
+<<<<<<< HEAD
         "it": "Area Dottore - <nome progetto>",
         "en": "Doctor Area - <nome progetto>"
+=======
+        "it": "Area Dottore - SaluteOra",
+        "en": "Doctor Area - SaluteOra"
+>>>>>>> 6ed19256f (.)
     },
     "content_blocks": {
         "it": [
@@ -240,7 +253,11 @@ I contenuti JSON come quelli in `config/local/<nome progetto>/database/content/p
                 "type": "hero",
                 "data": {
                     "title": "Benvenuto nella tua Area Dottore",
+<<<<<<< HEAD
                     "subtitle": "Gestisci le tue pazienti e monitora i loro percorsi di <slogan>",
+=======
+                    "subtitle": "Gestisci le tue pazienti e monitora i loro percorsi di salute orale",
+>>>>>>> 6ed19256f (.)
                     "cta_text": "Continua la registrazione"
                 }
             }
@@ -295,6 +312,11 @@ public function testTranslations()
 - [Gestione delle Traduzioni Mancanti](./gestione-traduzioni-mancanti.md)
 - [Best Practices per Laravel Translatable](./best-practices.md)
 - [Configurazione Laravel Localization](../../Cms/docs/localization/localization-setup.md)
+<<<<<<< HEAD
 - [Configurazione Laravel Localization](../../cms/docs/localization/localization-setup.md)
 - [Documentazione Ufficiale Spatie Translatable](https://spatie.be/docs/laravel-translatable/v6/basic-usage/handling-missing-translations)
 - [Documentazione Plugin Filament](https://filamentphp.com/plugins/filament-spatie-translatable)
+=======
+- [Documentazione Ufficiale Spatie Translatable](https://spatie.be/docs/laravel-translatable/v6/basic-usage/handling-missing-translations)
+- [Documentazione Plugin Filament](https://filamentphp.com/plugins/filament-spatie-translatable)
+>>>>>>> 6ed19256f (.)

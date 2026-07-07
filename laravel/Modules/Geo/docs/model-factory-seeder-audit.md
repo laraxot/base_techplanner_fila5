@@ -1,7 +1,10 @@
 # Model/Factory/Seeder Audit
 
 Generated: 2025-08-22 16:28
+<<<<<<< HEAD
 Generated: [DATE] 16:28
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Coverage
 | Model | Factory | Seeded |
@@ -31,4 +34,8 @@ Seeder: `database/seeders/GeoDatabaseSeeder.php`
 - Mark trait/utility/JSON helper classes as non-seed targets (n/a).
 
 ## Likely non-business-critical
+<<<<<<< HEAD
 - Trait/utility classes listed above; not direct domain entities.
+=======
+- Trait/utility classes listed above; not direct domain entities.
+>>>>>>> 6ed19256f (.)

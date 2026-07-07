@@ -1,7 +1,10 @@
 # Strategia Correzione Errori PHPStan - SendEmailPage.php
 
 **Data**: 2025-12-23
+<<<<<<< HEAD
 **Data**: 2025-12-23
+=======
+>>>>>>> 6ed19256f (.)
 **File**: `app/Filament/Clusters/Test/Pages/SendEmailPage.php`
 **Errori**: 4
 
@@ -121,4 +124,8 @@ Il PHPDoc `@return array<string, Component>` è corretto perché `Section extend
 
 ## 📝 Note
 
+<<<<<<< HEAD
 Tutti gli errori derivano da un namespace errato nell'import. La correzione è semplice: usare `Filament\Schemas\Components\Component` invece di `Filament\Facades\Filament\Schemas\Components\Component`.
+=======
+Tutti gli errori derivano da un namespace errato nell'import. La correzione è semplice: usare `Filament\Schemas\Components\Component` invece di `Filament\Facades\Filament\Schemas\Components\Component`.
+>>>>>>> 6ed19256f (.)

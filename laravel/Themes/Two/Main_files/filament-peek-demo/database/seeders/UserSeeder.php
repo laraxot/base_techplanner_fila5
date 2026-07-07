@@ -2,8 +2,13 @@
 
 namespace Database\Seeders;
 
+<<<<<<< HEAD
 use Illuminate\Database\Seeder;
 use Modules\User\Models\User;
+=======
+use Modules\User\Models\User;
+use Illuminate\Database\Seeder;
+>>>>>>> 6ed19256f (.)
 
 class UserSeeder extends Seeder
 {
@@ -16,5 +21,8 @@ class UserSeeder extends Seeder
         $admin->save();
     }
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 6ed19256f (.)

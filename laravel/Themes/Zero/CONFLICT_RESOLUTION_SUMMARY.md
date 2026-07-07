@@ -155,4 +155,8 @@ git commit -m "feat: migrazione completa a Filament 4
 Tutti i file modificati hanno backup con estensione `.backup` per eventuali rollback.
 
 ## Conclusione
+<<<<<<< HEAD
 La migrazione a Filament 4 è stata completata con successo per il 99% dei file. Rimane solo la risoluzione manuale del file Helper.php per completare al 100% la migrazione.
+=======
+La migrazione a Filament 4 è stata completata con successo per il 99% dei file. Rimane solo la risoluzione manuale del file Helper.php per completare al 100% la migrazione.
+>>>>>>> 6ed19256f (.)

@@ -10,6 +10,7 @@ Questo documento descrive le componenti UI ispirate al template "ChatAI" di [Tai
 
 ## Componenti proposti
 
+<<<<<<< HEAD
 - **ChatWindowComponent**  
   Contenitore principale della chat; gestisce la visibilità, il layout e lo stato di apertura/chiusura.
 
@@ -29,6 +30,8 @@ Questo documento descrive le componenti UI ispirate al template "ChatAI" di [Tai
   Pannello laterale per liste di conversazioni salvate, contatti o opzioni avanzate.
 
 - **ChatLauncherComponent**  
+=======
+>>>>>>> 6ed19256f (.)
 - **ChatWindowComponent**
   Contenitore principale della chat; gestisce la visibilità, il layout e lo stato di apertura/chiusura.
 
@@ -107,6 +110,9 @@ Questo documento descrive le componenti UI ispirate al template "ChatAI" di [Tai
 - [Template Tailkit ChatAI](https://tailkit.com/templates#chatai)
 - [Blocchi di Contenuto](blocks.md)
 - [Documentazione Root](../../../docs/README.md)
+<<<<<<< HEAD
 - [Template Tailkit ChatAI](https://tailkit.com/templates#chatai)  
 - [Blocchi di Contenuto](blocks.md)  
 - [Documentazione Root](../../../../docs/project/readme.md)
+=======
+>>>>>>> 6ed19256f (.)

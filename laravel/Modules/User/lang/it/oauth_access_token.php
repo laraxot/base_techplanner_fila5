@@ -4,12 +4,17 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
+<<<<<<< HEAD
         'label' => 'Token Accesso OAuth',
         'plural_label' => 'Token Accesso OAuth',
+=======
+        'label' => 'Token di accesso OAuth',
+>>>>>>> 6ed19256f (.)
         'group' => 'OAuth',
         'icon' => 'heroicon-o-key',
         'sort' => 33,
     ],
+<<<<<<< HEAD
     'label' => 'Token Accesso OAuth',
     'plural_label' => 'Token Accesso OAuth',
     'fields' => [
@@ -101,11 +106,37 @@ return [
             'tooltip' => 'Validità del token',
             'helper_text' => 'Indica se il token è valido',
             'description' => 'Stato di validità',
+=======
+    'label' => 'Token di accesso OAuth',
+    'plural_label' => 'Token di accesso OAuth',
+    'fields' => [
+        'id' => [
+            'label' => 'ID',
+        ],
+        'user_id' => [
+            'label' => 'Utente',
+        ],
+        'client_id' => [
+            'label' => 'Client',
+        ],
+        'name' => [
+            'label' => 'Nome',
+        ],
+        'scopes' => [
+            'label' => 'Ambiti',
+        ],
+        'revoked' => [
+            'label' => 'Revocato',
+        ],
+        'expires_at' => [
+            'label' => 'Scade il',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
         'revoke' => [
             'label' => 'Revoca',
+<<<<<<< HEAD
             'tooltip' => 'Revoca il token',
             'helper_text' => 'Revoca questo token',
             'description' => 'Azione per revocare il token',
@@ -149,5 +180,14 @@ return [
         'created' => 'Token creato con successo',
         'revoked' => 'Token revocato con successo',
         'deleted' => 'Token eliminato con successo',
+=======
+        ],
+        'refresh' => [
+            'label' => 'Aggiorna',
+        ],
+        'logout' => [
+            'tooltip' => 'logout',
+        ],
+>>>>>>> 6ed19256f (.)
     ],
 ];

@@ -1,7 +1,10 @@
 # Xot Module - Complete Architecture Guide (2025)
 
 > **Last Updated:** 2025-11-19
+<<<<<<< HEAD
 > **
+=======
+>>>>>>> 6ed19256f (.)
 > **PHPStan Level:** 10
 > **Status:** Core Foundation Module
 
@@ -862,4 +865,8 @@ The Xot module is a comprehensive foundation providing:
 
 **Document Version:** 1.0
 **Generated:** 2025-11-19
+<<<<<<< HEAD
 **Author:** Claude Code Analysis
+=======
+**Author:** Claude Code Analysis
+>>>>>>> 6ed19256f (.)

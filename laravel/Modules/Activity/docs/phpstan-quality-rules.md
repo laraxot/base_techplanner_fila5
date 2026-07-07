@@ -174,6 +174,11 @@ test('activity is logged correctly', function (): void {
 **Documento creato per prevenire la pratica sbagliata di escludere i test dall'analisi statica.**
 
 **Data:** 2025-10-10
+<<<<<<< HEAD
 **Data:** [DATE]
 **Severity:** CRITICA
 **Categoria:** Code Quality & Testing Standards
+=======
+**Severity:** CRITICA
+**Categoria:** Code Quality & Testing Standards
+>>>>>>> 6ed19256f (.)

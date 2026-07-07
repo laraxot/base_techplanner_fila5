@@ -107,4 +107,7 @@ Forms\Components\FileUpload::make('certification')
 - [Form Components](../form-components.md)
 - [Filament Resources Structure](../filament-resources-structure.md)
 - [Documentazione specifica nel modulo Patient](../../Patient/docs/filament-component-methods.md)
+<<<<<<< HEAD
 - [Documentazione specifica nel modulo Patient](../../patient/docs/filament-component-methods.md)
+=======
+>>>>>>> 6ed19256f (.)

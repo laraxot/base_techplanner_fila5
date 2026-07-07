@@ -1,10 +1,13 @@
 # Best Practices per le Chiavi di Traduzione
 
 ## Collegamenti correlati
+<<<<<<< HEAD
 - [README modulo Lang](./readme.md)
 - [Convenzioni Path](./path_conventions.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Header](/laravel/modules/user/docs/header_language_avatar_implementation.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [README modulo Lang](./README.md)
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
@@ -594,9 +597,15 @@ Per blocchi di testo lunghi, valuta se usare chiavi dedicate in PHP (es. `onboar
 
 ## [AGGIORNAMENTO 2024-06-XX] - Correzione appointment.php
 
+<<<<<<< HEAD
 La traduzione appointment.php del modulo <nome progetto> è stata riscritta secondo le regole di centralizzazione, DRY, KISS, nessun lock-in, e struttura gerarchica inglese. Tutte le chiavi sono ora coerenti con enums, actions, messages, filters, calendar, notifications. La motivazione è filosofica (un solo punto di verità), logica (manutenzione semplice), religiosa (nessuna duplicazione), politica (nessun lock-in tra moduli), zen (serenità del codice).
 
 Vedi esempio e motivazione in [<nome progetto>/docs/appointment-management.md](../../<nome progetto>/docs/appointment-management.md) e [translation-standards.md](./translation-standards.md).
+=======
+La traduzione appointment.php del modulo SaluteOra è stata riscritta secondo le regole di centralizzazione, DRY, KISS, nessun lock-in, e struttura gerarchica inglese. Tutte le chiavi sono ora coerenti con enums, actions, messages, filters, calendar, notifications. La motivazione è filosofica (un solo punto di verità), logica (manutenzione semplice), religiosa (nessuna duplicazione), politica (nessun lock-in tra moduli), zen (serenità del codice).
+
+Vedi esempio e motivazione in [SaluteOra/docs/appointment-management.md](../../SaluteOra/docs/appointment-management.md) e [translation-standards.md](./translation-standards.md).
+>>>>>>> 6ed19256f (.)
 
 ### Checklist aggiornata
 - Usare solo chiavi inglesi e struttura gerarchica
@@ -619,4 +628,8 @@ Seguire queste best practices per le chiavi di traduzione garantirà un'applicaz
 - Al ritorno, sostituisci i file nella lingua target e verifica la sintassi.
 - Nei Blade, sostituisci tutte le stringhe hardcoded con chiavi strutturate.
 - Nei file PHP, uniforma la struttura e aggiungi commenti per i traduttori.
+<<<<<<< HEAD
 - Versiona i file di traduzione separatamente.
+=======
+- Versiona i file di traduzione separatamente.
+>>>>>>> 6ed19256f (.)

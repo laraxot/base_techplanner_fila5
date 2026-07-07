@@ -31,7 +31,11 @@ php artisan module_lang:install
 
 ```
 
+<<<<<<< HEAD
 ## Documentazione collegata
 - [Composer merge plugin](composer-merge-plugin.md)
 
 ---
+=======
+---
+>>>>>>> 6ed19256f (.)

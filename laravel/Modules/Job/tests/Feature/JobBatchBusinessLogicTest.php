@@ -2,13 +2,22 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+use Illuminate\Support\Carbon;
+>>>>>>> 6ed19256f (.)
 use Modules\Job\Models\Job;
 use Modules\Job\Models\JobBatch;
 use Modules\Job\Tests\TestCase;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
 it('can create job batch with basic information', function (): void {
+=======
+it('can create job batch with basic information', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $batchData = [
         'id' => 'batch-123',
         'name' => 'Processamento utenti batch',
@@ -41,7 +50,12 @@ it('can create job batch with basic information', function (): void {
     expect($batch->failed_jobs)->toBe(0);
 });
 
+<<<<<<< HEAD
 it('can manage batch job progression', function (): void {
+=======
+it('can manage batch job progression', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $batch = JobBatch::create([
         'id' => 'progression-test',
         'name' => 'Test progressione',
@@ -64,7 +78,12 @@ it('can manage batch job progression', function (): void {
     expect($batch->total_jobs - $batch->pending_jobs)->toBe(3);
 });
 
+<<<<<<< HEAD
 it('can handle batch job failures', function (): void {
+=======
+it('can handle batch job failures', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $batch = JobBatch::create([
         'id' => 'failure-test',
         'name' => 'Test fallimenti',
@@ -88,7 +107,12 @@ it('can handle batch job failures', function (): void {
     expect(json_decode($batch->failed_job_ids, true))->toBe($failedJobIds);
 });
 
+<<<<<<< HEAD
 it('can manage batch completion status', function (): void {
+=======
+it('can manage batch completion status', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $batch = JobBatch::create([
         'id' => 'completion-test',
         'name' => 'Test completamento',
@@ -112,7 +136,12 @@ it('can manage batch completion status', function (): void {
     expect($batch->cancelled())->toBeFalse();
 });
 
+<<<<<<< HEAD
 it('can handle batch cancellation', function (): void {
+=======
+it('can handle batch cancellation', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $batch = JobBatch::create([
         'id' => 'cancellation-test',
         'name' => 'Test cancellazione',
@@ -133,7 +162,12 @@ it('can handle batch cancellation', function (): void {
     expect($batch->cancelled())->toBeTrue();
 });
 
+<<<<<<< HEAD
 it('can manage batch options and configuration', function (): void {
+=======
+it('can manage batch options and configuration', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $options = [
         'priority' => 'high',
         'notify_on_completion' => true,
@@ -158,7 +192,12 @@ it('can manage batch options and configuration', function (): void {
     expect(json_decode($batch->options, true)['notify_on_completion'])->toBeTrue();
 });
 
+<<<<<<< HEAD
 it('can calculate batch progress percentage', function (): void {
+=======
+it('can calculate batch progress percentage', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $batch = JobBatch::create([
         'id' => 'progress-test',
         'name' => 'Test progresso',
@@ -177,7 +216,12 @@ it('can calculate batch progress percentage', function (): void {
     expect($progressPercentage)->toBe(25.0);
 });
 
+<<<<<<< HEAD
 it('can handle batch job relationships', function (): void {
+=======
+it('can handle batch job relationships', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $batch = JobBatch::create([
         'id' => 'relationships-test',
         'name' => 'Test relazioni',
@@ -214,7 +258,12 @@ it('can handle batch job relationships', function (): void {
     expect($job2->payload)->toContain($batch->id);
 });
 
+<<<<<<< HEAD
 it('can manage batch cleanup and maintenance', function (): void {
+=======
+it('can manage batch cleanup and maintenance', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $batch = JobBatch::create([
         'id' => 'cleanup-test',
         'name' => 'Test pulizia',
@@ -233,7 +282,12 @@ it('can manage batch cleanup and maintenance', function (): void {
     expect($batch->finished_at < now()->subDays(5))->toBeTrue();
 });
 
+<<<<<<< HEAD
 it('can handle batch retry logic', function (): void {
+=======
+it('can handle batch retry logic', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $batch = JobBatch::create([
         'id' => 'retry-test',
         'name' => 'Test retry',
@@ -264,7 +318,12 @@ it('can handle batch retry logic', function (): void {
     expect($batch->finished())->toBeFalse();
 });
 
+<<<<<<< HEAD
 it('can handle batch notification settings', function (): void {
+=======
+it('can handle batch notification settings', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $batch = JobBatch::create([
         'id' => 'notification-test',
         'name' => 'Test notifiche',
@@ -287,7 +346,12 @@ it('can handle batch notification settings', function (): void {
     expect($options['notification_slack'])->toBe('https://hooks.slack.com/...');
 });
 
+<<<<<<< HEAD
 it('can handle batch bulk operations', function (): void {
+=======
+it('can handle batch bulk operations', function (): void
+{
+>>>>>>> 6ed19256f (.)
     // Crea un batch di batch per testare operazioni bulk
     $batchList = [];
     $statuses = ['active', 'completed', 'failed'];
@@ -308,13 +372,22 @@ it('can handle batch bulk operations', function (): void {
     expect($batchList)->toHaveCount(3);
 
     foreach ($batchList as $index => $batch) {
+<<<<<<< HEAD
         expect($batch->id)->toBe('bulk-batch-'.($index + 1));
+=======
+        expect($batch->id)->toBe('bulk-batch-' . ($index + 1));
+>>>>>>> 6ed19256f (.)
         expect($batch->total_jobs)->toBe(($index + 1) * 10);
         expect($batch->status)->toBe($statuses[$index]);
     }
 });
 
+<<<<<<< HEAD
 it('can validate batch integrity', function (): void {
+=======
+it('can validate batch integrity', function (): void
+{
+>>>>>>> 6ed19256f (.)
     // Test con batch valido
     $validBatch = JobBatch::create([
         'id' => 'valid-batch',
@@ -331,4 +404,8 @@ it('can validate batch integrity', function (): void {
     // Verifica che i contatori siano coerenti
     expect($validBatch->failed_jobs)->toBeGreaterThanOrEqual(0);
     expect($validBatch->pending_jobs + $validBatch->failed_jobs)->toBeLessThanOrEqual($validBatch->total_jobs);
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 6ed19256f (.)

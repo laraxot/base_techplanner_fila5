@@ -15,16 +15,27 @@ return [
             'buttons' => [
                 'refresh' => 'Refresh',
             ],
+<<<<<<< HEAD
             'heading' => 'Application Health',
+=======
+
+            'heading' => 'Application Health',
+
+>>>>>>> 6ed19256f (.)
             'navigation' => [
                 'group' => 'Settings',
                 'label' => 'Application Health',
             ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6ed19256f (.)
             'notifications' => [
                 'check_results' => 'Check results from',
             ],
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Env',
     'plural_label' => 'Env (Plurale)',
     'fields' => [
@@ -58,4 +69,6 @@ return [
             'label' => 'Elimina Env',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

@@ -44,4 +44,8 @@ L'analisi PHPStan di livello 1 non ha rilevato errori nel modulo Lang. Questo è
 
    - Verificare il comportamento con lingue diverse
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> 6ed19256f (.)

@@ -56,5 +56,9 @@
 ## Stato
 - ❌ Conflitti da risolvere
 - 📅 Data rilevamento: 2025-11-12
+<<<<<<< HEAD
 - 📅 Data rilevamento: [DATE]
 - 🔄 Priorità: ALTA - File critici del core framework
+=======
+- 🔄 Priorità: ALTA - File critici del core framework
+>>>>>>> 6ed19256f (.)

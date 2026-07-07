@@ -292,6 +292,7 @@ Completare il modulo Tenant con tutti i modelli mancanti, migliorare qualità e 
 ---
 
 **Filosofia**: Tenant incarna il paradosso dell'unità nella diversità - un solo codebase, infinite istanze isolate.
+<<<<<<< HEAD
 # 🎯 TENANT MODULE - ROADMAP 2025
 
 **Modulo**: Tenant ([Description])  
@@ -508,3 +509,5 @@ Tenant Module
 ---
 
 *Questa roadmap è specifica per il modulo Tenant e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
+=======
+>>>>>>> 6ed19256f (.)

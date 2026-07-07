@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Linee Guida API <nome progetto>ion Market
+=======
+# Linee Guida API Prediction Market
+>>>>>>> 6ed19256f (.)
 
 ## Endpoints Principali
 - GET /markets: lista mercati attivi
@@ -13,4 +17,8 @@
 - Rate limiting e logging
 - Webhook per notifiche di payout
 - API pubblica per dati di mercato (come Polymarket, Kalshi)
+<<<<<<< HEAD
 - Versionamento API
+=======
+- Versionamento API
+>>>>>>> 6ed19256f (.)

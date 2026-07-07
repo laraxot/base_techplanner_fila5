@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Standard per Modal Heading e Description nelle Traduzioni <nome progetto>
+=======
+# Standard per Modal Heading e Description nelle Traduzioni SaluteOra
+>>>>>>> 6ed19256f (.)
 
 ## Regola: Stringhe Dirette per Modal Properties
 
@@ -108,9 +112,16 @@ Questa regola si applica a:
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Regole Traduzioni <nome progetto>](translation-helper-text-standards.md)
+=======
+- [Regole Traduzioni SaluteOra](translation-helper-text-standards.md)
+>>>>>>> 6ed19256f (.)
 - [Standard Helper Text](translation-helper-text-standards.md)
 - [Convenzioni Filament](filament-best-practices.md)
 
 *Ultimo aggiornamento: 2025-01-06*
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-06*
+=======
+>>>>>>> 6ed19256f (.)

@@ -10,6 +10,7 @@ return [
     'create' => 'Kanal erstellen',
     'edit' => 'Kanal bearbeiten',
     'delete' => 'Kanal löschen',
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -23,4 +24,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

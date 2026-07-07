@@ -39,7 +39,10 @@ Laravel offre diverse varianti di metodi per creare campi polimorfici:
 Nel nostro caso specifico:
 
 1. **Uso di `model` invece di `addressable`**:
+<<<<<<< HEAD
 1. **Uso di `model` invece di `addressable`**: 
+=======
+>>>>>>> 6ed19256f (.)
    - Mantiene la coerenza con altre parti del sistema
    - Riflette una terminologia più generale e neutrale
    - Si allinea con le convenzioni di naming esistenti nel progetto
@@ -69,7 +72,10 @@ $this->updateTimestamps($table, true); // Nella sezione tableUpdate
 ```
 
 Questo codice crea una duplicazione:
+<<<<<<< HEAD
 Questo codice crea una duplicazione: 
+=======
+>>>>>>> 6ed19256f (.)
 1. `$table->timestamps()` crea le colonne `created_at` e `updated_at`
 2. `$this->updateTimestamps($table, true)` tenta di creare nuovamente queste colonne, più `deleted_at`
 
@@ -145,4 +151,8 @@ In una visione zen, la corretta implementazione delle relazioni polimorfiche rap
 
 La rimozione della duplicazione dei timestamps riflette il principio di semplicità e non-ridondanza, creando uno schema più pulito, coerente e manutenibile.
 
+<<<<<<< HEAD
 Questa implementazione non è solo tecnicamente corretta, ma riflette una comprensione profonda dei principi architetturali, filosofici e persino spirituali che guidano lo sviluppo di software di qualità.
+=======
+Questa implementazione non è solo tecnicamente corretta, ma riflette una comprensione profonda dei principi architetturali, filosofici e persino spirituali che guidano lo sviluppo di software di qualità.
+>>>>>>> 6ed19256f (.)

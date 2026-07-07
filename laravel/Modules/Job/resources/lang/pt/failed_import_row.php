@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -47,6 +48,23 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'import_batch_id' => [
+            'label' => 'ID do Lote de Importação',
+        ],
+        'row_index' => [
+            'label' => 'Índice da Linha',
+        ],
+        'errors' => [
+            'label' => 'Erros',
+        ],
+        'data' => [
+            'label' => 'Dados',
+        ],
+        'created_at' => [
+            'label' => 'Criado Em',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [

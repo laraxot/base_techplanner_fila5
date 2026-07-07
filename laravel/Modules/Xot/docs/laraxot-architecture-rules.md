@@ -723,4 +723,8 @@ BadgeColumn::make('status')
 - [Translation System](./translation_system.md)
 - [Spatie Queueable Actions](https://github.com/spatie/laravel-queueable-action)
 
+<<<<<<< HEAD
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
+=======
+Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
+>>>>>>> 6ed19256f (.)

@@ -8,7 +8,11 @@ Questo documento traccia tutti gli interventi di manutenzione e audit delle trad
 ### Problema Identificato
 Il `LoginWidget` utilizzava 4 chiavi di traduzione che non esistevano:
 - `user::messages.credentials_incorrect`
+<<<<<<< HEAD
 - `user::messages.login_success` 
+=======
+- `user::messages.login_success`
+>>>>>>> 6ed19256f (.)
 - `user::messages.validation_error`
 - `user::messages.login_error`
 
@@ -19,7 +23,11 @@ Il `LoginWidget` utilizzava 4 chiavi di traduzione che non esistevano:
 
 ### Files Aggiunti
 - `Modules/User/lang/it/messages.php` - 61 chiavi
+<<<<<<< HEAD
 - `Modules/User/lang/en/messages.php` - 61 chiavi  
+=======
+- `Modules/User/lang/en/messages.php` - 61 chiavi
+>>>>>>> 6ed19256f (.)
 - `Modules/User/lang/de/messages.php` - 61 chiavi
 - `Modules/User/project_docs/login-widget-translation-audit-2025.md` - Documentazione
 
@@ -63,7 +71,11 @@ Modules/User/lang/
 
 ### 3. Quality Checklist
 - [ ] Tutte le chiavi utilizzate nel codice esistono
+<<<<<<< HEAD
 - [ ] Traduzioni coerenti tra tutte le lingue supportate  
+=======
+- [ ] Traduzioni coerenti tra tutte le lingue supportate
+>>>>>>> 6ed19256f (.)
 - [ ] Messaggi user-friendly e informativi
 - [ ] `declare(strict_types=1)` in tutti i file PHP
 - [ ] Commenti documentativi appropriati
@@ -84,7 +96,11 @@ Utilizzato per:
 - Validazione generale
 - Operazioni CRUD
 
+<<<<<<< HEAD
 ### auth.php - Autenticazione Dettagliata  
+=======
+### auth.php - Autenticazione Dettagliata
+>>>>>>> 6ed19256f (.)
 Utilizzato per:
 - Login/logout complesso
 - Registrazione utenti
@@ -129,7 +145,11 @@ Utilizzato per:
 - [ ] EditUserWidget translation audit
 - [ ] User Resources translations
 
+<<<<<<< HEAD
 ### 2. Automation (Q2 2025)  
+=======
+### 2. Automation (Q2 2025)
+>>>>>>> 6ed19256f (.)
 - [ ] Script per rilevare chiavi translation mancanti
 - [ ] Test automatici per translation resolution
 - [ ] CI/CD integration per verifica traduzioni
@@ -142,13 +162,22 @@ Utilizzato per:
 ## Learning e Memoria
 Questo maintenance log serve come:
 - **Traccia storica** di tutti gli interventi
+<<<<<<< HEAD
 - **Pattern documentation** per future manutenzioni  
+=======
+- **Pattern documentation** per future manutenzioni
+>>>>>>> 6ed19256f (.)
 - **Knowledge base** per il team
 - **Quality assurance** reference
 
 Ogni intervento deve essere documentato seguendo questo template per mantenere la memoria del sistema e facilitare future manutenzioni.
 
 ---
+<<<<<<< HEAD
 **Log iniziato**: 25 Gennaio 2025  
 **Ultimo update**: 25 Gennaio 2025  
+=======
+**Log iniziato**: 25 Gennaio 2025
+**Ultimo update**: 25 Gennaio 2025
+>>>>>>> 6ed19256f (.)
 **Prossimo audit**: Da programmare Q1 2025

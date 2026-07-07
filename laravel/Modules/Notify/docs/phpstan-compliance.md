@@ -3,7 +3,10 @@
 ## Status: ✅ FULLY COMPLIANT
 
 **Analysis Date:** September 22, 2025
+<<<<<<< HEAD
 **Analysis Date:** September 22, 2025
+=======
+>>>>>>> 6ed19256f (.)
 **PHPStan Level:** 9 (Maximum)
 **Files Analyzed:** 342
 **Errors Found:** 0
@@ -54,4 +57,8 @@ The module maintains:
 - Strict type declarations
 - Comprehensive type hints
 - Notification handling best practices
+<<<<<<< HEAD
 - Modern PHP 8.2+ feature utilization
+=======
+- Modern PHP 8.2+ feature utilization
+>>>>>>> 6ed19256f (.)

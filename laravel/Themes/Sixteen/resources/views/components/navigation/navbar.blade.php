@@ -129,7 +129,11 @@
                                     <li>
                                         <a class="dropdown-item" href="{{ $dropdownItem['href'] ?? '#' }}">
                                             @if(!empty($dropdownItem['icon']))
+<<<<<<< HEAD
                                                 <x-filament::icon icon="heroicon-o-{{" $dropdownItem['icon'] }} class="me-2" />
+=======
+                                                <x-heroicon-o-{{ $dropdownItem['icon'] }} class="me-2" />
+>>>>>>> 6ed19256f (.)
                                             @endif
                                             {{ $dropdownItem['text'] }}
                                         </a>
@@ -151,7 +155,11 @@
                                 @endif
                             >
                                 @if(!empty($item['icon']))
+<<<<<<< HEAD
                                     <x-filament::icon icon="heroicon-o-{{" $item['icon'] }} class="me-1" />
+=======
+                                    <x-heroicon-o-{{ $item['icon'] }} class="me-1" />
+>>>>>>> 6ed19256f (.)
                                 @endif
                                 {{ $item['text'] }}
                             </a>
@@ -181,8 +189,12 @@
                                     x-on:click="performSearch()"
                                     aria-label="Esegui ricerca"
                                 >
+<<<<<<< HEAD
                                     <x-filament::icon icon="heroicon-o-magnifying-glass" class="w-4 h-4" />
 f7ac8eda (.)
+=======
+                                    <x-heroicon-o-magnifying-glass class="w-4 h-4" />
+>>>>>>> 6ed19256f (.)
                                 </button>
                             </div>
                         </form>
@@ -216,7 +228,11 @@ f7ac8eda (.)
                                 <li>
                                     <a class="dropdown-item" href="{{ $userItem['href'] ?? '#' }}">
                                         @if(!empty($userItem['icon']))
+<<<<<<< HEAD
                                             <x-filament::icon icon="heroicon-o-{{" $userItem['icon'] }} class="me-2" />
+=======
+                                            <x-heroicon-o-{{ $userItem['icon'] }} class="me-2" />
+>>>>>>> 6ed19256f (.)
                                         @endif
                                         {{ $userItem['text'] }}
                                     </a>

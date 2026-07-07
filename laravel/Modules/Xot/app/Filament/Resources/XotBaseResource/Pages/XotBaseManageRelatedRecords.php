@@ -26,8 +26,12 @@ use Override;
  */
 abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 {
+<<<<<<< HEAD
     use HasXotTable;
     use InteractsWithForms;
+=======
+    use HasXotTable, InteractsWithForms;
+>>>>>>> 6ed19256f (.)
     // protected static string $resource;
 
     /**
@@ -41,7 +45,11 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     /**
      * Restituisce lo schema del form per i record correlati.
      *
+<<<<<<< HEAD
      * @return array<Component>
+=======
+     * @return array<\Filament\Schemas\Components\Component>
+>>>>>>> 6ed19256f (.)
      */
     // abstract public static function getFormSchema(): array;
 
@@ -61,7 +69,11 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      *
      * @return array<Component>
      */
+<<<<<<< HEAD
     protected function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> 6ed19256f (.)
     {
         return [];
     }
@@ -72,7 +84,11 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      *
      * @return array<string, TextColumn>
      */
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> 6ed19256f (.)
     public function getTableColumns(): array
     {
         return [
@@ -109,6 +125,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      */
     public function getTableActions(): array
     {
+<<<<<<< HEAD
         // Preferisci la risorsa correlata per i record nested; altrimenti usa la risorsa della pagina.
         $resource = static::$relatedResource ?? static::getResource();
         // Mostra "view" solo se la risorsa correlata espone quella pagina.
@@ -139,6 +156,14 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
                     if ('' === $url) {
                         $url = $resource::getUrl('edit', ['record' => $record], shouldGuessMissingParameters: false);
                     }
+=======
+        return [
+            'edit' => Action::make('edit')
+                ->label('Modifica')
+                ->icon('heroicon-o-pencil')
+                ->url(function (Model $record): string {
+                    $url = static::getResource()::getUrl('edit', ['record' => $record]);
+>>>>>>> 6ed19256f (.)
 
                     return is_string($url) ? $url : (string) $url;
                 }),

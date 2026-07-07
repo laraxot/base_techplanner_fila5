@@ -9,6 +9,10 @@ use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 use Modules\Media\Models\Media;
+<<<<<<< HEAD
+=======
+use Modules\User\Database\Factories\TenantFactory;
+>>>>>>> 6ed19256f (.)
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
@@ -16,6 +20,10 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 /**
  * Modules\User\Models\Tenant.
  *
+<<<<<<< HEAD
+=======
+ * @method static TenantFactory  factory($count = null, $state = [])
+>>>>>>> 6ed19256f (.)
  * @method static Builder|Tenant newModelQuery()
  * @method static Builder|Tenant newQuery()
  * @method static Builder|Tenant query()
@@ -53,6 +61,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder<static>|Tenant whereSlug($value)
  * @method static Builder<static>|Tenant whereUpdatedAt($value)
  *
+<<<<<<< HEAD
  * @property string|null $email_address
  * @property string|null $phone
  * @property string|null $mobile
@@ -80,6 +89,8 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  *
  * @method static Builder<static>|Tenant whereTrialEndsAt($value)
  *
+=======
+>>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class Tenant extends BaseTenant

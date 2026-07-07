@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 uses(\Modules\Activity\Tests\TestCase::class);
@@ -33,3 +34,8 @@ test('activity model has expected attributes', function () {
     expect(isset($activity->description))->toBeTrue()
         ->and(isset($activity->event))->toBeTrue();
 });
+=======
+test('a basic module pest test runs', function () {
+    expect(true)->toBeTrue();
+});
+>>>>>>> 6ed19256f (.)

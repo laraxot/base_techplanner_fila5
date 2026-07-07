@@ -4,6 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Module;
 
+<<<<<<< HEAD
+=======
+use Error;
+use Exception;
+>>>>>>> 6ed19256f (.)
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\File;
 
@@ -14,10 +19,17 @@ class GetModulePathByGeneratorAction
         $relativePath = Config::string('modules.paths.generator.'.$generatorPath.'.path');
         try {
             $res = module_path($moduleName, $relativePath);
+<<<<<<< HEAD
             if ('' !== $res) {
                 return $res;
             }
         } catch (\Exception|\Error $e) {
+=======
+            if ($res !== '') {
+                return $res;
+            }
+        } catch (Exception|Error $e) {
+>>>>>>> 6ed19256f (.)
             // Fallback: costruisci path manualmente per graceful degradation
             $modulePath = base_path('Modules/'.$moduleName);
             $fullPath = $modulePath.'/'.$relativePath;
@@ -27,6 +39,7 @@ class GetModulePathByGeneratorAction
             }
 
             // Se path non esiste e non è opzionale, lancia eccezione
+<<<<<<< HEAD
             throw new \Exception('Module path not found: 
             name:['.$moduleName.'] 
             generatorPath:['.$generatorPath.']
@@ -38,5 +51,32 @@ class GetModulePathByGeneratorAction
         name:['.$moduleName.'] 
         generatorPath:['.$generatorPath.']
         relativePath:['.$relativePath.']');
+=======
+            throw new Exception('Module path not found: 
+            name:['.
+            $moduleName.
+            '] 
+            generatorPath:['.
+            $generatorPath.
+            ']
+            relativePath:['.
+            $relativePath.
+            ']
+            error_message:['.
+            $e->getMessage().
+                ']');
+        }
+
+        throw new Exception('Module path not found: 
+        name:['.
+        $moduleName.
+        '] 
+        generatorPath:['.
+        $generatorPath.
+        ']
+        relativePath:['.
+        $relativePath.
+        ']');
+>>>>>>> 6ed19256f (.)
     }
 }

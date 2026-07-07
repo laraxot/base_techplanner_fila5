@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 ?>
+<<<<<<< HEAD
 <x-filament-panels::page>
     <div class="space-y-6">
         <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -24,3 +25,8 @@ declare(strict_types=1);
         {{ $this->table }}
     </div>
 </x-filament-panels::page>
+=======
+<x-filament::page>
+    
+</x-filament::page>
+>>>>>>> 6ed19256f (.)

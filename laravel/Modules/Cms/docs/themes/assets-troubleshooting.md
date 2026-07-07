@@ -12,7 +12,10 @@ Unable to locate file in Vite manifest: resources/css/app.css.
 ```
 
 Questo errore è uno dei più comuni nella gestione dei temi. Per la risoluzione dettagliata, consultare la [documentazione principale sulla risoluzione problemi Vite](/docs/VITE_ASSETS_TROUBLESHOOTING.md).
+<<<<<<< HEAD
 Questo errore è uno dei più comuni nella gestione dei temi. Per la risoluzione dettagliata, consultare la [documentazione principale sulla risoluzione problemi Vite](/docs/vite_assets_troubleshooting.md).
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Perché documentare qui?
 
@@ -25,7 +28,10 @@ Questo errore è uno dei più comuni nella gestione dei temi. Per la risoluzione
 - [Processo di Build dei Temi](theme-build-process.md)
 - [Compilazione dei Temi](theme_compilation.md)
 - [Documentazione Principale Vite](/docs/VITE_ASSETS_TROUBLESHOOTING.md)
+<<<<<<< HEAD
 - [Documentazione Principale Vite](/docs/vite_assets_troubleshooting.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Comandi Utili
 
@@ -56,4 +62,7 @@ Per maggiori dettagli sul funzionamento interno, consultare:
    - In produzione: utilizzare `npm run copy`
 
 Per una guida completa sulla risoluzione dei problemi, consultare la [documentazione principale](/docs/VITE_ASSETS_TROUBLESHOOTING.md).
+<<<<<<< HEAD
 Per una guida completa sulla risoluzione dei problemi, consultare la [documentazione principale](/docs/vite_assets_troubleshooting.md).
+=======
+>>>>>>> 6ed19256f (.)

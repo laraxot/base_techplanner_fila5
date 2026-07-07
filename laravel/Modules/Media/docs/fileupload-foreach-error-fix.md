@@ -13,7 +13,11 @@ L'errore si verifica nel metodo `getUploadedFiles` di `Filament\Forms\Components
 
 ### Contesto dell'Errore
 - **Widget**: `Modules\User\Filament\Widgets\RegistrationWidget`
+<<<<<<< HEAD
 - **Resource**: `Modules\<nome progetto>\Filament\Resources\PatientResource`
+=======
+- **Resource**: `Modules\SaluteOra\Filament\Resources\PatientResource`
+>>>>>>> 6ed19256f (.)
 - **Campi coinvolti**:
   - `data.health_card`
   - `data.identity_document`
@@ -202,8 +206,13 @@ public function getFormFill(): array
 - [Modules/User/docs/registration-widget.md](../laravel/Modules/User/docs/registration-widget.md)
 
 *Ultimo aggiornamento: 2025-01-03*
+<<<<<<< HEAD
 - [Modules/Xot/docs/fileupload-components.md](../laravel/modules/xot/docs/fileupload-components.md)
 - [Modules/User/docs/registration-widget.md](../laravel/modules/user/docs/registration-widget.md)
 
 *Autore: AI Assistant*
 *Versione: 1.0*
+=======
+*Autore: AI Assistant*
+*Versione: 1.0*
+>>>>>>> 6ed19256f (.)

@@ -260,5 +260,9 @@ return [
 - [Modello Address](../models/address.md)
 - [Trait HasAddress](../traits/hasaddress-implementation.md)
 - [XotBaseResource](../../Xot/docs/filament/xotbase-resource.md)
+<<<<<<< HEAD
 - [XotBaseResource](../../xot/docs/filament/xotbase-resource.md)
 - [Documentazione Filament](https://filamentphp.com/docs/3.x/panels/resources/getting-started)
+=======
+- [Documentazione Filament](https://filamentphp.com/docs/3.x/panels/resources/getting-started)
+>>>>>>> 6ed19256f (.)

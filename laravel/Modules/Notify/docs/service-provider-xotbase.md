@@ -86,11 +86,17 @@ class NotifyServiceProvider extends XotBaseServiceProvider
 - [x] Solo binding custom in `register()`
 
 ## 7. Riferimenti
+<<<<<<< HEAD
 - [XotBaseServiceProvider](Modules/Xot/app/Providers/XotBaseServiceProvider.php)
 - [Best Practices](Modules/Xot/project_docs/service-provider-best-practices.md)
 - [Best Practices](Modules/Xot/docs/service-provider-best-practices.md)
 - [Best Practices](Modules/Xot/project_docs/service-provider-best-practices.md)
 - [Best Practices](Modules/Xot/docs/service-provider-best-practices.md)
+=======
+- [XotBaseServiceProvider](/var/www/html/base_<nome progetto>/laravel/Modules/Xot/app/Providers/XotBaseServiceProvider.php)
+- [Best Practices](/var/www/html/base_<nome progetto>/laravel/Modules/Xot/project_docs/service-provider-best-practices.md)
+- [Best Practices](/var/www/html/base_<nome progetto>/laravel/Modules/Xot/docs/service-provider-best-practices.md)
+>>>>>>> 6ed19256f (.)
 
 ---
 
@@ -183,6 +189,7 @@ class NotifyServiceProvider extends XotBaseServiceProvider
 - [x] Solo binding custom in `register()`
 
 ## 7. Riferimenti
+<<<<<<< HEAD
 - [XotBaseServiceProvider](Modules/Xot/app/Providers/XotBaseServiceProvider.php)
 - [Best Practices](Modules/Xot/project_docs/service-provider-best-practices.md)
 - [Best Practices](Modules/Xot/project_docs/service-provider-best-practices.md)
@@ -190,3 +197,11 @@ class NotifyServiceProvider extends XotBaseServiceProvider
 ---
 
 > **Questa documentazione è stata aggiornata dopo un errore di override errato del metodo boot. Seguire SEMPRE queste regole per evitare errori futuri.**
+=======
+- [XotBaseServiceProvider](/var/www/html/base_<nome progetto>/laravel/Modules/Xot/app/Providers/XotBaseServiceProvider.php)
+- [Best Practices](/var/www/html/base_<nome progetto>/laravel/Modules/Xot/project_docs/service-provider-best-practices.md)
+
+---
+
+> **Questa documentazione è stata aggiornata dopo un errore di override errato del metodo boot. Seguire SEMPRE queste regole per evitare errori futuri.**
+>>>>>>> 6ed19256f (.)

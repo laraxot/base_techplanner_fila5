@@ -309,11 +309,14 @@ public function it_sends_email_with_generated_pdf(): void
 - [Laravel Notifications](https://laravel.com/docs/notifications)
 
 ### Moduli
+<<<<<<< HEAD
 - [Ptv - Complete Guide](../../ptv/docs/pdf-email-attachments-complete-guide.md)
 - [Notify - Email System](../../notify/docs/readme.md)
 
 ---
 
+=======
+>>>>>>> 6ed19256f (.)
 - [Ptv - Complete Guide](../../Ptv/docs/pdf-email-attachments-complete-guide.md)
 - [Notify - Email System](../../Notify/docs/README.md)
 
@@ -322,4 +325,8 @@ public function it_sends_email_with_generated_pdf(): void
 **Ultimo aggiornamento:** 2025-01-22
 **Versione:** 1.0.0
 **Stato:** ✅ Production Ready
+<<<<<<< HEAD
 **PHPStan Level:** 10
+=======
+**PHPStan Level:** 10
+>>>>>>> 6ed19256f (.)

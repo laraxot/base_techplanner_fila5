@@ -251,10 +251,13 @@ expect()->extend('toHaveDynamicHeading', function (string $type) {
 - [Folio Pages Implementation](../folio-pages.md)
 - [Login Test Implementation](./login-test-implementation.md)
 - [Test Organization Rules](../../../docs/test-organization-rules.md)
+<<<<<<< HEAD
 - [RegistrationWidget Documentation](../../../user/docs/filament/widgets/registration-widget.md)
 - [Folio Pages Implementation](../folio-pages.md)
 - [Login Test Implementation](./login-test-implementation.md)
 - [Test Organization Rules](../../../../docs/test-organization-rules.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ### File Correlati
 - **Page**: `/Themes/One/resources/views/pages/auth/[type]/register.blade.php`
@@ -277,4 +280,8 @@ expect()->extend('toHaveDynamicHeading', function (string $type) {
 
 *Ultimo aggiornamento: Gennaio 2025*
 *Versione PestPHP: 2.x*
+<<<<<<< HEAD
 *Compatibilità Laravel: 11.x*
+=======
+*Compatibilità Laravel: 11.x*
+>>>>>>> 6ed19256f (.)

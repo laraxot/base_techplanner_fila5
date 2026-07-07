@@ -111,11 +111,14 @@ The application is built using Nwidart Laravel Modules package with the followin
 - `vendor/bin/phpstan analyse` - Run PHPStan static analysis
 - `php artisan module:make-command CommandName ModuleName` - Create new module command
 
+<<<<<<< HEAD
 ### Deployment e validazione (sottana.net)
 - Sito in produzione: https://sottana.net
 - Push su branch `master` attiva l’auto-deploy
 - Dopo modifiche: verificare su produzione le pagine coinvolte (es. [deployment-and-validation.md](deployment-and-validation.md))
 
+=======
+>>>>>>> 6ed19256f (.)
 ## 🔍 Pre-Implementation Checklist
 
 **Before ANY Filament implementation:**
@@ -211,11 +214,14 @@ php artisan test --coverage
 - [`analysis/`](./analysis/) - Technical analysis, implementation studies, and architectural reviews
   - Various analysis files for specific implementations and corrections
 
+<<<<<<< HEAD
 ### 🎯 Site Replication Documentation
 - [`site-replication-complete-summary.md`](./site-replication-complete-summary.md) - ⭐ NEW: Complete summary of site replication from target site
 - [`site-comparison-analysis.md`](./site-comparison-analysis.md) - Analysis of differences between sites
 - [`site-comparison.md`](./site-comparison.md) - Site comparison overview
 
+=======
+>>>>>>> 6ed19256f (.)
 ### 🔧 Maintenance and Troubleshooting
 - [`maintenance/`](./maintenance/) - Maintenance procedures and operational guides
   - [`git-merge-conflicts.md`](./maintenance/git-merge-conflicts.md) - Git conflict resolution procedures

@@ -6,7 +6,11 @@ use Modules\Job\Actions\GetTaskFrequenciesAction;
 
 describe('GetTaskFrequenciesAction', function () {
     beforeEach(function () {
+<<<<<<< HEAD
         $this->action = new GetTaskFrequenciesAction;
+=======
+        $this->action = new GetTaskFrequenciesAction();
+>>>>>>> 6ed19256f (.)
     });
 
     it('can be instantiated', function () {

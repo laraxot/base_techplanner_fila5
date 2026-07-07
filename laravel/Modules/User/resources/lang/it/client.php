@@ -7,6 +7,7 @@ return [
         'name' => [
             'placeholder' => 'name',
             'description' => 'name',
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -16,12 +17,18 @@ return [
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
+=======
+        ],
+        'client_name' => [
+            'description' => 'client_name',
+>>>>>>> 6ed19256f (.)
         ],
         'client_id' => [
             'description' => 'client_id',
             'label' => 'client_id',
             'placeholder' => 'client_id',
             'helper_text' => 'client_id',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
         'plain_secret' => [
@@ -41,13 +48,27 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'plain_secret' => [
+            'label' => 'plain_secret',
+        ],
+        'secret' => [
+            'label' => 'secret',
+        ],
+        'id' => [
+            'label' => 'id',
+>>>>>>> 6ed19256f (.)
         ],
         'recordId' => [
             'description' => 'recordId',
             'placeholder' => 'recordId',
             'helper_text' => 'recordId',
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -82,6 +103,7 @@ return [
             'tooltip' => 'associateAnother',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -91,4 +113,6 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

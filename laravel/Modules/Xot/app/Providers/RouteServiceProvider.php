@@ -70,7 +70,11 @@ class RouteServiceProvider extends ServiceProvider
         $lang = app()->getLocale();
         if ($user instanceof Model) {
             $userLang = $user->getAttribute('lang');
+<<<<<<< HEAD
             if (is_string($userLang) && '' !== $userLang) {
+=======
+            if (is_string($userLang) && $userLang !== '') {
+>>>>>>> 6ed19256f (.)
                 $lang = $userLang;
             }
         }
@@ -86,7 +90,11 @@ class RouteServiceProvider extends ServiceProvider
 
         if (in_array(request()->segment(1), $langs, false)) {
             $lang = request()->segment(1);
+<<<<<<< HEAD
             if (null !== $lang) {
+=======
+            if ($lang !== null) {
+>>>>>>> 6ed19256f (.)
                 app()->setLocale($lang);
             }
         }

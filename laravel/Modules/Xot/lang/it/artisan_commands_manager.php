@@ -65,6 +65,7 @@ return [
         ],
     ],
     'title' => 'artisan commands manager',
+<<<<<<< HEAD
     'label' => 'Artisan Commands Manager',
     'plural_label' => 'Artisan Commands Manager (Plurale)',
     'fields' => [
@@ -87,4 +88,6 @@ return [
             'description' => '',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

@@ -69,6 +69,10 @@ Usage Examples:
 
 2. Custom skiplinks:
 <x-pub_theme::skiplinks 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 6ed19256f (.)
     :links="[
         ['href' => '#nav', 'text' => 'Vai al menu'],
         ['href' => '#content', 'text' => 'Vai al contenuto'],
@@ -80,5 +84,9 @@ Usage Examples:
 3. Simple div version:
 <x-pub_theme::skiplinks :show-list="false" />
 <x-pub_theme::skiplinks :show-list="false" />
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 6ed19256f (.)
 <x-pub_theme::skiplinks :show-list="false" />
 --}}

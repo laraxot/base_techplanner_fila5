@@ -13,7 +13,11 @@ class GetPronounceablePasswordAction
     /**
      * Genera una password pronunciabile con caratteri speciali e numeri.
      *
+<<<<<<< HEAD
      * @param int $length Lunghezza minima della password (default: 12)
+=======
+     * @param  int  $length  Lunghezza minima della password (default: 12)
+>>>>>>> 6ed19256f (.)
      *
      * @return string Password generata
      */
@@ -54,7 +58,11 @@ class GetPronounceablePasswordAction
         }
 
         // Verifica che la password non sia vuota prima di accedere agli offset
+<<<<<<< HEAD
         if (0 === strlen($password)) {
+=======
+        if (strlen($password) === 0) {
+>>>>>>> 6ed19256f (.)
             // Fallback: genera almeno una consonante e una vocale
             $password = $consonants[array_rand($consonants)].$vowels[array_rand($vowels)];
         }

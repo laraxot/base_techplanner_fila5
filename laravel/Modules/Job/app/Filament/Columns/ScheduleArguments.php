@@ -75,10 +75,17 @@ class ScheduleArguments extends TextColumn
                             : (string) $key;
                         $val = isset($value['value']) ? (string) $value['value'] : '';
 
+<<<<<<< HEAD
                         return $name.'='.$val;
                     }
 
                     return (string) $key.'='.(string) $value;
+=======
+                        return $name . '=' . $val;
+                    }
+
+                    return (string) $key . '=' . (string) $value;
+>>>>>>> 6ed19256f (.)
                 },
             )
             ->values()

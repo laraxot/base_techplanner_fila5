@@ -2,7 +2,11 @@
 
 ## Panoramica
 
+<<<<<<< HEAD
 iFlow supporta server MCP tramite pacchetti Python. Questa guida descrive come configurare i server MCP per il progetto healthcare_app Fila4 Mono con iFlow.
+=======
+iFlow supporta server MCP tramite pacchetti Python. Questa guida descrive come configurare i server MCP per il progetto Quaeris Fila4 Mono con iFlow.
+>>>>>>> 6ed19256f (.)
 
 ## Prerequisiti
 
@@ -141,7 +145,11 @@ def analyze_php_file(file_path: str) -> dict:
             ["vendor/bin/phpstan", "analyse", file_path, "--level", "10", "--no-progress", "--error-format", "json"],
             capture_output=True,
             text=True,
+<<<<<<< HEAD
             cwd="laravel"
+=======
+            cwd="/var/www/_bases/base_quaeris_fila4_mono/laravel"
+>>>>>>> 6ed19256f (.)
         )
 
         if result.returncode == 0:
@@ -181,7 +189,11 @@ def run_artisan_command(command: str, args: list = None) -> dict:
             cmd,
             capture_output=True,
             text=True,
+<<<<<<< HEAD
             cwd="laravel"
+=======
+            cwd="/var/www/_bases/base_quaeris_fila4_mono/laravel"
+>>>>>>> 6ed19256f (.)
         )
 
         return {
@@ -240,10 +252,17 @@ Aggiungere al file `~/.cursor/mcp.json`:
         "MINIMAX_API_KEY": "${MINIMAX_API_KEY}"
       }
     },
+<<<<<<< HEAD
     "phpstan-healthcare_app": {
       "url": "http://localhost:8003/sse"
     },
     "artisan-healthcare_app": {
+=======
+    "phpstan-quaeris": {
+      "url": "http://localhost:8003/sse"
+    },
+    "artisan-quaeris": {
+>>>>>>> 6ed19256f (.)
       "url": "http://localhost:8004/sse"
     }
   }
@@ -332,4 +351,8 @@ Aggiungere al file `~/.codeium/windsurf/mcp_config.json`:
 
 - [MCP Editors Configuration](./mcp-editors-configuration.md) - Configurazione generale editor
 - [MCP Claude Code Configuration](./mcp-claude-code-configuration.md) - Configurazione Claude Code
+<<<<<<< HEAD
 - [MCP Integration Guide](./mcp-integration.md) - Integrazione MCP nel codice PHP
+=======
+- [MCP Integration Guide](./mcp-integration.md) - Integrazione MCP nel codice PHP
+>>>>>>> 6ed19256f (.)

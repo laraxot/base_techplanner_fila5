@@ -6,6 +6,7 @@ Questo file contiene i collegamenti alla documentazione frontend che si trova ne
 
 ## Documenti Frontend
 
+<<<<<<< HEAD
 - [Sistema di Blocchi](../laravel/modules/cms/docs/blocks-system.md)
 - [Blocchi](../laravel/modules/cms/docs/blocks.md)
 - [Componenti Blocchi Contenuto](../laravel/modules/cms/docs/componenti-blocchi-contenuto.md)
@@ -18,6 +19,8 @@ Questo file contiene i collegamenti alla documentazione frontend che si trova ne
 - [Struttura Homepage](../laravel/modules/cms/docs/homepage-struttura-corretta.md)
 - [Homepage](../laravel/modules/cms/docs/homepage.md)
 - [Gestione Pagine](../laravel/modules/cms/docs/page-content-management.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Sistema di Blocchi](../laravel/Modules/Cms/docs/blocks-system.md)
 - [Blocchi](../laravel/Modules/Cms/docs/blocks.md)
 - [Componenti Blocchi Contenuto](../laravel/Modules/Cms/docs/componenti-blocchi-contenuto.md)
@@ -35,4 +38,7 @@ Questo file contiene i collegamenti alla documentazione frontend che si trova ne
 
 Per la documentazione completa sull'architettura frontend, consultare:
 [Architettura Frontend](../laravel/Modules/Cms/docs/frontend-architecture.md)
+<<<<<<< HEAD
 [Architettura Frontend](../laravel/modules/cms/docs/frontend-architecture.md)
+=======
+>>>>>>> 6ed19256f (.)

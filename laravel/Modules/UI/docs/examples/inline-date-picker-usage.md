@@ -7,10 +7,17 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Forms;
 
 use Modules\UI\Filament\Forms\Components\InlineDatePicker;
 use Modules\<nome progetto>\Models\Appointment;
+=======
+namespace Modules\SaluteOra\Filament\Forms;
+
+use Modules\UI\Filament\Forms\Components\InlineDatePicker;
+use Modules\SaluteOra\Models\Appointment;
+>>>>>>> 6ed19256f (.)
 use Carbon\Carbon;
 
 class AppointmentBookingForm
@@ -433,4 +440,8 @@ class InlineDatePickerTest extends TestCase
 ---
 
 *Ultima modifica: Gennaio 2025*
+<<<<<<< HEAD
 *Versione: 1.0.0*
+=======
+*Versione: 1.0.0*
+>>>>>>> 6ed19256f (.)

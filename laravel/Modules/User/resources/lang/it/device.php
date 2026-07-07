@@ -7,32 +7,47 @@ return [
         'is_robot' => [
             'label' => 'È Robot',
             'helper_text' => 'Indica se il dispositivo è un robot',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'is_desktop' => [
             'label' => 'È Desktop',
             'helper_text' => 'Indica se il dispositivo è un desktop',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'is_mobile' => [
             'label' => 'È Mobile',
             'helper_text' => 'Indica se il dispositivo è mobile',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'is_tablet' => [
             'label' => 'È Tablet',
             'helper_text' => 'Indica se il dispositivo è un tablet',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'is_phone' => [
             'label' => 'È Telefono',
             'helper_text' => 'Indica se il dispositivo è un telefono',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -52,6 +67,7 @@ return [
             'color' => 'danger',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -61,4 +77,6 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

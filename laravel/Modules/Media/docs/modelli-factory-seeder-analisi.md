@@ -33,7 +33,11 @@ Questo documento analizza tutti i modelli del modulo Media verificando la presen
 - **Versioning**: Gestione versioni multiple file
 
 **Relazioni Business Logic**:
+<<<<<<< HEAD
 - **<nome progetto>**: Documenti pazienti, referti medici, immagini profilo
+=======
+- **SaluteOra**: Documenti pazienti, referti medici, immagini profilo
+>>>>>>> 6ed19256f (.)
 - **User**: Avatar utenti, documenti identità
 - **Cms**: Immagini contenuti, allegati pagine
 - **Notify**: Allegati notifiche email
@@ -196,6 +200,7 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 - [Performance Optimization](./performance_optimization.md)
 
 ### Moduli Collegati
+<<<<<<< HEAD
 - [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Documenti medici
 - [User Module](../../User/docs/modelli_factory_seeder_analisi.md) - Avatar e documenti utente
 - [Cms Module](../../Cms/docs/modelli_factory_seeder_analisi.md) - Contenuti multimediali
@@ -203,6 +208,12 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 - [User Module](../../user/docs/modelli_factory_seeder_analisi.md) - Avatar e documenti utente
 - [Cms Module](../../cms/docs/modelli_factory_seeder_analisi.md) - Contenuti multimediali
 - [Notify Module](../../notify/docs/modelli_factory_seeder_analisi.md) - Allegati notifiche
+=======
+- [SaluteOra Module](../../SaluteOra/docs/modelli_factory_seeder_analisi.md) - Documenti medici
+- [User Module](../../User/docs/modelli_factory_seeder_analisi.md) - Avatar e documenti utente
+- [Cms Module](../../Cms/docs/modelli_factory_seeder_analisi.md) - Contenuti multimediali
+- [Notify Module](../../Notify/docs/modelli_factory_seeder_analisi.md) - Allegati notifiche
+>>>>>>> 6ed19256f (.)
 
 ### Librerie e Servizi
 - [Intervention Image](http://image.intervention.io/) - Image processing
@@ -212,4 +223,8 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 
 *Ultimo aggiornamento: Gennaio 2025*
 *Analisi completa di 4 modelli attivi, sistema media completo*
+<<<<<<< HEAD
 *Supporto upload, conversioni, storage locale/cloud*
+=======
+*Supporto upload, conversioni, storage locale/cloud*
+>>>>>>> 6ed19256f (.)

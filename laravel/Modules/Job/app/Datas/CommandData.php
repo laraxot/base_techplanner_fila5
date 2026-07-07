@@ -18,7 +18,12 @@ class CommandData extends Data
         public string $full_name,
         public array $arguments,
         public array $options,
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> 6ed19256f (.)
 
     public static function collection(EloquentCollection|Collection|array $data): DataCollection
     {

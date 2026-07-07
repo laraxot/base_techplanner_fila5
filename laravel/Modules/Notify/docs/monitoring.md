@@ -41,7 +41,10 @@
     'status' => 'success',
     'execution_time' => 0.5,
     'timestamp' => '2024-03-20 10:00:00',
+<<<<<<< HEAD
     'timestamp' => '[DATE] 10:00:00',
+=======
+>>>>>>> 6ed19256f (.)
     'metadata' => [
         'queue' => 'notifications',
         'attempt' => 1,
@@ -152,7 +155,11 @@ final class NotificationQueueHealthCheck
     {
         $queueSize = $this->getQueueSize();
         $failedJobs = $this->getFailedJobsCount();
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         return new HealthCheckResult(
             status: $this->determineStatus($queueSize, $failedJobs),
             message: $this->getStatusMessage($queueSize, $failedJobs)
@@ -169,7 +176,11 @@ final class TemplateHealthCheck
     {
         $invalidTemplates = $this->findInvalidTemplates();
         $expiredTemplates = $this->findExpiredTemplates();
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         return new HealthCheckResult(
             status: $this->determineStatus($invalidTemplates, $expiredTemplates),
             message: $this->getStatusMessage($invalidTemplates, $expiredTemplates)
@@ -293,10 +304,17 @@ final class NotificationCleanup
     {
         // Rimuovi notifiche più vecchie di 30 giorni
         NotificationLog::where('created_at', '<', now()->subDays(30))->delete();
+<<<<<<< HEAD
         
         // Rimuovi analytics più vecchi di 90 giorni
         TemplateAnalytics::where('created_at', '<', now()->subDays(90))->delete();
         
+=======
+
+        // Rimuovi analytics più vecchi di 90 giorni
+        TemplateAnalytics::where('created_at', '<', now()->subDays(90))->delete();
+
+>>>>>>> 6ed19256f (.)
         // Archivia template non utilizzati
         Template::where('last_used_at', '<', now()->subMonths(6))
             ->update(['status' => TemplateStatus::ARCHIVED]);
@@ -318,7 +336,11 @@ final class NotificationIndexes
             $table->index('created_at');
             $table->index('status');
         });
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         Schema::table('template_analytics', function (Blueprint $table) {
             $table->index('notification_id');
             $table->index('event_type');
@@ -326,4 +348,8 @@ final class NotificationIndexes
         });
     }
 }
+<<<<<<< HEAD
 ``` 
+=======
+```
+>>>>>>> 6ed19256f (.)

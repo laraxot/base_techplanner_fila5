@@ -66,8 +66,13 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder|NotifyTheme whereUpdatedBy($value)
  * @method static Builder|NotifyTheme whereViewParams($value)
  *
+<<<<<<< HEAD
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $updater
+=======
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+>>>>>>> 6ed19256f (.)
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
  *

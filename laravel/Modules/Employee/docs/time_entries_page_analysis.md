@@ -55,4 +55,10 @@ This document analyses the provided screenshot and derives a faithful, optimized
 
 ### open questions / future work
 - Contract hours source per weekday: configuration table vs. HR integration.
+<<<<<<< HEAD
 - Added/Reduced logic: confirm semantics (overtime vs. manual adjustments).
+=======
+- Added/Reduced logic: confirm semantics (overtime vs. manual adjustments).
+
+
+>>>>>>> 6ed19256f (.)

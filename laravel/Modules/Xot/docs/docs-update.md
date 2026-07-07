@@ -216,6 +216,7 @@ Aggiornamento massivo documentazione progetto con:
 
 ### Documentazione Moduli
 
+<<<<<<< HEAD
 - [Xot Module](./readme.md) - Questo file
 - [Tenant Module](../../tenant/docs/readme.md)
 - [IndennitaResponsabilita Module](../../indennitaresponsabilita/docs/readme.md)
@@ -225,6 +226,8 @@ Aggiornamento massivo documentazione progetto con:
 ### bashscripts
 
 - [bashscripts README](../../../bashscripts/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Xot Module](./README.md) - Questo file
 - [Tenant Module](../../Tenant/docs/README.md)
 - [IndennitaResponsabilita Module](../../IndennitaResponsabilita/docs/README.md)
@@ -253,4 +256,8 @@ Aggiornamento massivo documentazione progetto con:
 *"La documentazione è la memoria permanente del progetto. Aggiornala sempre."*
 EOF
 
+<<<<<<< HEAD
 echo "✅ Documento aggiornamento creato"
+=======
+echo "✅ Documento aggiornamento creato"
+>>>>>>> 6ed19256f (.)

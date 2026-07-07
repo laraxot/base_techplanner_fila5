@@ -2,7 +2,11 @@
 
 ## Overview
 
+<<<<<<< HEAD
 This module follows the project's [testing guidelines](../../docs/TESTING.md) and uses Pest PHP as the testing framework.
+=======
+This module follows the project's [testing guidelines](../docs/TESTING.md) and uses Pest PHP as the testing framework.
+>>>>>>> 6ed19256f (.)
 
 ## Test Structure
 
@@ -31,12 +35,20 @@ Authentication tests are located in `tests/Feature/Auth/`. These tests cover:
 ```php
 test('users can login with valid credentials', function () {
     $user = User::factory()->create();
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     $response = $this->post('/login', [
         'email' => $user->email,
         'password' => 'password',
     ]);
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     $response->assertRedirect('/dashboard');
     $this->assertAuthenticatedAs($user);
 });
@@ -60,6 +72,7 @@ Run a specific test file:
 2. **Test Edge Cases**: Include tests for validation errors and edge cases
 3. **Keep Tests Focused**: Each test should verify one specific behavior
 4. **Use Descriptive Names**: Test names should clearly indicate what's being tested
+<<<<<<< HEAD
 # Testing Documentation
 
 ## Overview
@@ -417,3 +430,5 @@ Remember: Good tests are the foundation of reliable software development.
 ---
 
 *Last updated: January 2025*
+=======
+>>>>>>> 6ed19256f (.)

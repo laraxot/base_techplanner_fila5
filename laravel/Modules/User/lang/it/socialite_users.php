@@ -6,6 +6,7 @@ return [
     'fields' => [
         'provider' => [
             'label' => 'provider',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -59,4 +60,24 @@ return [
             'label' => 'Elimina Socialite Users',
         ],
     ],
+=======
+        ],
+        'provider_id' => [
+            'label' => 'provider_id',
+        ],
+        'name' => [
+            'label' => 'name',
+        ],
+        'email' => [
+            'label' => 'email',
+        ],
+        'avatar' => [
+            'label' => 'avatar',
+        ],
+    ],
+    'navigation' => [],
+    'label' => '',
+    'plural_label' => '',
+    'actions' => [],
+>>>>>>> 6ed19256f (.)
 ];

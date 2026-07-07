@@ -24,11 +24,19 @@ return [
     // Anmeldung
     'login' => [
         'title' => 'Anmelden',
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6ed19256f (.)
         'email' => 'E-Mail',
         'password' => 'Passwort',
         'remember_me' => 'Angemeldet bleiben',
         'forgot_password' => 'Passwort vergessen?',
         'submit' => 'Anmelden',
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6ed19256f (.)
         'or' => 'oder',
         'create_account' => 'ein neues Konto erstellen',
         'link' => 'Anmelden',

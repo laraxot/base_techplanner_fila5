@@ -50,10 +50,17 @@ graph TD
 ## Implementazione Attuale
 
 Il file principale del provider si trova in:
+<<<<<<< HEAD
 `Modules/Lang/app/Providers/LangServiceProvider.php`
 
 L'azione principale che gestisce l'etichettatura automatica è:
 `Modules/Lang/app/Actions/Filament/AutoLabelAction.php`
+=======
+`/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Lang/app/Providers/LangServiceProvider.php`
+
+L'azione principale che gestisce l'etichettatura automatica è:
+`/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Lang/app/Actions/Filament/AutoLabelAction.php`
+>>>>>>> 6ed19256f (.)
 
 ### Esempio di Utilizzo Corretto
 
@@ -265,7 +272,11 @@ Il `
 
 ## Analisi dell'Implementazione Attuale
 
+<<<<<<< HEAD
 Il `LangServiceProvider` è un componente fondamentale di <nome progetto> che gestisce automaticamente le traduzioni per i componenti Filament senza richiedere l'uso esplicito del metodo `->label()`. Questo approccio garantisce:
+=======
+Il `LangServiceProvider` è un componente fondamentale di SaluteOra che gestisce automaticamente le traduzioni per i componenti Filament senza richiedere l'uso esplicito del metodo `->label()`. Questo approccio garantisce:
+>>>>>>> 6ed19256f (.)
 
 1. **Coerenza**: Tutte le etichette seguono lo stesso pattern di traduzione
 2. **Manutenibilità**: Le traduzioni sono centralizzate nei file di lingua
@@ -313,10 +324,17 @@ graph TD
 ## Implementazione Attuale
 
 Il file principale del provider si trova in:
+<<<<<<< HEAD
 `Modules/Lang/app/Providers/LangServiceProvider.php`
 
 L'azione principale che gestisce l'etichettatura automatica è:
 `Modules/Lang/app/Actions/Filament/AutoLabelAction.php`
+=======
+`/var/www/html/saluteora/laravel/Modules/Lang/app/Providers/LangServiceProvider.php`
+
+L'azione principale che gestisce l'etichettatura automatica è:
+`/var/www/html/saluteora/laravel/Modules/Lang/app/Actions/Filament/AutoLabelAction.php`
+>>>>>>> 6ed19256f (.)
 
 ### Esempio di Utilizzo Corretto
 

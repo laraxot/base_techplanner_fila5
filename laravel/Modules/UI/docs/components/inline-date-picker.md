@@ -342,7 +342,11 @@ public function setCurrentViewMonth(string $monthString): void
 ### Versione 3.0 - AI-Powered Temporal Intelligence
 - **Smart Suggestions**: Suggerimenti AI per date ottimali
 - **Pattern Recognition**: Riconoscimento pattern utente
+<<<<<<< HEAD
 - **<nome progetto>ive Availability**: Previsione disponibilità
+=======
+- **Predictive Availability**: Previsione disponibilità
+>>>>>>> 6ed19256f (.)
 ### Versione 4.0 - Universal Temporal Interface
 - **Multiple Calendars**: Supporto calendari diversi (Gregoriano, Lunare, etc.)
 - **Timezone Handling**: Gestione fusi orari avanzata
@@ -398,14 +402,27 @@ public function register(): void
 **Versione**: 2.0 con Navigazione Temporale Avanzata
 **Compatibilità**: Laraxot , Filament 4.x, Alpine.js 3.x
 **Compatibilità**: Laraxot , Filament 4.x, Alpine.js 3.x
+<<<<<<< HEAD
 **Compatibilità**: Laraxot <nome progetto>, Filament 3.x, Alpine.js 3.x
+=======
+**Compatibilità**: Laraxot SaluteOra, Filament 3.x, Alpine.js 3.x
+>>>>>>> 6ed19256f (.)
 **Filosofia**: Fenomenologia Quantistica applicata al Design Temporale
 **Filosofia**: Fenomenologia Quantistica applicata al Design Temporale
 **Compatibilità**: Laraxot , Filament 4.x, Alpine.js 3.x
 **Compatibilità**: Laraxot , Filament 4.x, Alpine.js 3.x
+<<<<<<< HEAD
 **Compatibilità**: Laraxot <nome progetto>, Filament 3.x, Alpine.js 3.x
 **Filosofia**: Fenomenologia Quantistica applicata al Design Temporale
 **Filosofia**: Fenomenologia Quantistica applicata al Design Temporale
 **Compatibilità**: Laraxot , Filament 4.x, Alpine.js 3.x
 **Compatibilità**: Laraxot <nome progetto>, Filament 3.x, Alpine.js 3.x
 **Filosofia**: Fenomenologia Quantistica applicata al Design Temporale
+=======
+**Compatibilità**: Laraxot SaluteOra, Filament 3.x, Alpine.js 3.x
+**Filosofia**: Fenomenologia Quantistica applicata al Design Temporale
+**Filosofia**: Fenomenologia Quantistica applicata al Design Temporale
+**Compatibilità**: Laraxot , Filament 4.x, Alpine.js 3.x
+**Compatibilità**: Laraxot SaluteOra, Filament 3.x, Alpine.js 3.x
+**Filosofia**: Fenomenologia Quantistica applicata al Design Temporale
+>>>>>>> 6ed19256f (.)

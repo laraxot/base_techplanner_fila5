@@ -1,14 +1,20 @@
 # PHPStan Level 10 Compliance - Job Module
 
 **Ultimo aggiornamento**: 2025-12-10
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 **Status**: ✅ Completamente conforme a PHPStan Level 10
 
 ## 📊 Stato Corrente
 - **Errori PHPStan**: 0
 - **Livello analisi**: Level 10 (massimo)
 - **Data ultima verifica**: 2025-12-10
+<<<<<<< HEAD
 - **Data ultima verifica**: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 
 ## 🔧 Correzioni Applicate
 
@@ -79,4 +85,8 @@ Per mantenere la conformità:
 1. Eseguire `./vendor/bin/phpstan analyse Modules/Job` prima di ogni commit
 2. Non usare type hints nelle closure dei metodi collection
 3. Usare PHPDoc per specificare i tipi all'interno delle closure
+<<<<<<< HEAD
 4. Verificare i type hints su tutti i nuovi metodi
+=======
+4. Verificare i type hints su tutti i nuovi metodi
+>>>>>>> 6ed19256f (.)

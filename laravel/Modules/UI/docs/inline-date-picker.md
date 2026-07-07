@@ -40,7 +40,10 @@ Specify which dates should be selectable. Other dates will be disabled.
 
 ```php
 ->enabledDates(['2023-06-15', '2023-06-20', '2023-06-25'])
+<<<<<<< HEAD
 ->enabledDates(['[DATE]', '[DATE]', '[DATE]'])
+=======
+>>>>>>> 6ed19256f (.)
 
 // Or using a closure
 ->enabledDates(fn () => \App\Models\Appointment::pluck('date')->toArray())
@@ -185,8 +188,11 @@ When writing tests for forms that use the InlineDatePicker, you can interact wit
 Livewire::test(YourForm::class)
     ->set('appointment_date', '2023-06-15')
     ->assertSet('appointment_date', '2023-06-15');
+<<<<<<< HEAD
     ->set('appointment_date', '[DATE]')
     ->assertSet('appointment_date', '[DATE]');
+=======
+>>>>>>> 6ed19256f (.)
 
 // Test validation
 Livewire::test(YourForm::class)
@@ -260,7 +266,10 @@ Specify which dates should be selectable. Other dates will be disabled.
 
 ```php
 ->enabledDates(['2023-06-15', '2023-06-20', '2023-06-25'])
+<<<<<<< HEAD
 ->enabledDates(['[DATE]', '[DATE]', '[DATE]'])
+=======
+>>>>>>> 6ed19256f (.)
 
 // Or using a closure
 ->enabledDates(fn () => \App\Models\Appointment::pluck('date')->toArray())
@@ -405,8 +414,11 @@ When writing tests for forms that use the InlineDatePicker, you can interact wit
 Livewire::test(YourForm::class)
     ->set('appointment_date', '2023-06-15')
     ->assertSet('appointment_date', '2023-06-15');
+<<<<<<< HEAD
     ->set('appointment_date', '[DATE]')
     ->assertSet('appointment_date', '[DATE]');
+=======
+>>>>>>> 6ed19256f (.)
 
 // Test validation
 Livewire::test(YourForm::class)
@@ -430,4 +442,8 @@ If the component doesn't look right, make sure you have the required Tailwind CS
 
 ## Contributing
 
+<<<<<<< HEAD
 Contributions are welcome! Please feel free to submit a Pull Request.
+=======
+Contributions are welcome! Please feel free to submit a Pull Request.
+>>>>>>> 6ed19256f (.)

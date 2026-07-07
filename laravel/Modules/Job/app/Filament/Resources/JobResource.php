@@ -17,12 +17,28 @@ use Override;
 
 class JobResource extends XotBaseResource
 {
+<<<<<<< HEAD
     protected static ?string $model = Job::class;
+=======
+    protected static null|string $model = Job::class;
+
+
+>>>>>>> 6ed19256f (.)
 
     #[Override]
     public static function getFormSchema(): array
     {
+<<<<<<< HEAD
         return [];
+=======
+        return [
+            'queue' => TextInput::make('queue')->required()->maxLength(255),
+            'payload' => TextInput::make('payload')->required(),
+            'attempts' => TextInput::make('attempts')->numeric()->required(),
+            'available_at' => DateTimePicker::make('available_at')->required(),
+            'created_at' => DateTimePicker::make('created_at')->required(),
+        ];
+>>>>>>> 6ed19256f (.)
     }
 
     #[Override]

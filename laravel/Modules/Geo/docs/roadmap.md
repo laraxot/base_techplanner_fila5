@@ -406,6 +406,7 @@ Geo/
 **Last Updated**: 2026-01-02
 **Maintainer**: Team Laraxot
 **Status**: Active Development
+<<<<<<< HEAD
 # Roadmap (Module Geo)
 
 ## Current roadmap
@@ -444,3 +445,5 @@ Geo/
 - [roadmap/quality.md](roadmap/quality.md)
 - [roadmap/vision.md](roadmap/vision.md)
 - [stabilization-roadmap.md](stabilization-roadmap.md)
+=======
+>>>>>>> 6ed19256f (.)

@@ -1,6 +1,7 @@
 # Indice della Documentazione - Modulo Cms
 
 ## Collegamenti Correlati
+<<<<<<< HEAD
 - [Documentazione Generale <nome progetto>](../../../../../docs/readme.md)
 - [Collegamenti Documentazione](../../../../../docs/collegamenti-documentazione.md)
 - [Standard di Documentazione](../../../../../docs/documentation_standards.md)
@@ -8,6 +9,8 @@
 - [Modulo User](../../user/docs/readme.md)
 - [Modulo UI](../../ui/docs/readme.md)
 - [Tema One](../../../themes/one/docs/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Documentazione Generale <nome progetto>](../../../../docs/README.md)
 - [Collegamenti Documentazione](../../../../docs/collegamenti-documentazione.md)
 - [Standard di Documentazione](../../../../docs/DOCUMENTATION_STANDARDS.md)
@@ -20,7 +23,10 @@
 
 ### Architettura e Struttura
 - [README](./README.md) - Panoramica generale del modulo
+<<<<<<< HEAD
 - [README](./readme.md) - Panoramica generale del modulo
+=======
+>>>>>>> 6ed19256f (.)
 - [Architettura](./architecture.md) - Architettura generale del modulo
 - [Struttura](./structure.md) - Struttura delle directory e dei componenti
 - [Struttura Cartelle](./folder-structure.md) - Organizzazione delle cartelle
@@ -60,8 +66,11 @@
 - [Gestione Contenuti](./content-management.md) - Gestione dei contenuti
 - [Storage Contenuti](./content-storage.md) - Archiviazione dei contenuti
 - [Mappatura JSON Contenuti](./content_json_mapping.md) - Mappatura dei contenuti JSON
+<<<<<<< HEAD
 - [CMS-Driven Pages](./cms-driven-pages-system.md) - Sistema pagine JSON con container0/slug0
 - [CMS-Driven Pages](./cms-driven-pages-system.md) - Sistema pagine JSON con container0/slug0
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Volt e Folio
 - [Introduzione Volt](./volt-introduction.md) - Introduzione a Laravel Volt
@@ -89,6 +98,7 @@
 ## Sottocartelle
 
 ### Blocchi
+<<<<<<< HEAD
 - [Index](./blocks/index.md) - Indice della documentazione sui blocchi
 
 ### Sezioni
@@ -101,6 +111,8 @@
 
 ### Frontoffice
 - [Index](./frontoffice/index.md) - Indice della documentazione sul frontoffice
+=======
+>>>>>>> 6ed19256f (.)
 - [Index](./blocks/INDEX.md) - Indice della documentazione sui blocchi
 
 ### Sezioni
@@ -118,12 +130,20 @@
 - [PHPStan](./phpstan.md) - Utilizzo di PHPStan
 - [PHPStan Incrementale](./phpstan-incremental.md) - Utilizzo incrementale di PHPStan
 - [Problemi PHPStan](./phpstan_issues.md) - Problemi comuni con PHPStan
+<<<<<<< HEAD
 - [PHPStan Cluster 2026-03-10](./phpstan-cluster-2026-03-10.md) - Contratti fuori sync tra composer, componenti e factory legacy
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Roadmap e Sviluppo Futuro
 - [Roadmap](./roadmap.md) - Piano di sviluppo futuro del modulo CMS
 
 ## Note sulla Manutenzione
 Questa documentazione viene aggiornata regolarmente. Prima di apportare modifiche al codice del modulo CMS, consultare la documentazione pertinente e aggiornare i documenti correlati.
+<<<<<<< HEAD
 Ultimo aggiornamento: 14 Maggio 2025
 - [Tests Pages Block Bridge](./tests-pages-block-bridge.md) - Bridge tema/CMS per le pagine tests.* con view mancanti
+=======
+
+Ultimo aggiornamento: 14 Maggio 2025
+>>>>>>> 6ed19256f (.)

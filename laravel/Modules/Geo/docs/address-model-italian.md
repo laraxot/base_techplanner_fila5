@@ -122,10 +122,13 @@ public static function getFormSchema(): array
             ->options(fn () => GeoJsonModel::getRegionsForSelect())
             ->reactive()
             ->required(),
+<<<<<<< HEAD
             
         'administrative_area_level_2' => Select::make('administrative_area_level_2')
             ->label('Provincia')
             ->options(fn (callable $get) => 
+=======
+>>>>>>> 6ed19256f (.)
 
         'administrative_area_level_2' => Select::make('administrative_area_level_2')
             ->label('Provincia')
@@ -134,10 +137,13 @@ public static function getFormSchema(): array
             ->reactive()
             ->required()
             ->disabled(fn (callable $get) => !$get('administrative_area_level_1')),
+<<<<<<< HEAD
             
         'administrative_area_level_3' => Select::make('administrative_area_level_3')
             ->label('Comune')
             ->options(fn (callable $get) => 
+=======
+>>>>>>> 6ed19256f (.)
 
         'administrative_area_level_3' => Select::make('administrative_area_level_3')
             ->label('Comune')
@@ -146,10 +152,13 @@ public static function getFormSchema(): array
             ->reactive()
             ->required()
             ->disabled(fn (callable $get) => !$get('administrative_area_level_2')),
+<<<<<<< HEAD
             
         'postal_code' => Select::make('postal_code')
             ->label('CAP')
             ->options(fn (callable $get) => 
+=======
+>>>>>>> 6ed19256f (.)
 
         'postal_code' => Select::make('postal_code')
             ->label('CAP')
@@ -181,8 +190,12 @@ Esempio di implementazione:
 public function formatItalianAddress(): string
 {
     $parts = [];
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // Nome via e numero civico
     if (!empty($this->route)) {
         $addressLine = $this->route;
@@ -191,17 +204,24 @@ public function formatItalianAddress(): string
         }
         $parts[] = $addressLine;
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // CAP, Comune e Provincia
     $locationLine = '';
     if (!empty($this->postal_code)) {
         $locationLine .= $this->postal_code . ' ';
     }
+<<<<<<< HEAD
     
     if (!empty($this->administrative_area_level_3)) {
         $locationLine .= $this->administrative_area_level_3;
         
+=======
+>>>>>>> 6ed19256f (.)
 
     if (!empty($this->administrative_area_level_3)) {
         $locationLine .= $this->administrative_area_level_3;
@@ -211,11 +231,14 @@ public function formatItalianAddress(): string
             $locationLine .= ' (' . $this->administrative_area_level_2 . ')';
         }
     }
+<<<<<<< HEAD
     
     if (!empty($locationLine)) {
         $parts[] = $locationLine;
     }
     
+=======
+>>>>>>> 6ed19256f (.)
 
     if (!empty($locationLine)) {
         $parts[] = $locationLine;
@@ -225,8 +248,12 @@ public function formatItalianAddress(): string
     if (!empty($this->country) && strtoupper($this->country) !== 'ITALIA' && strtoupper($this->country_code) !== 'IT') {
         $parts[] = strtoupper($this->country);
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     return implode("\n", $parts);
 }
 ```
@@ -283,8 +310,12 @@ public function populateFromGoogleComponents(array $components): self
         $types = $component['types'] ?? [];
         $value = $component['long_name'] ?? '';
         $shortValue = $component['short_name'] ?? '';
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         if (in_array('postal_code', $types)) {
             $this->postal_code = $value;
         } elseif (in_array('administrative_area_level_1', $types)) {
@@ -307,8 +338,12 @@ public function populateFromGoogleComponents(array $components): self
             $this->country_code = $shortValue;
         }
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     return $this;
 }
 ```
@@ -338,10 +373,13 @@ Esempio di implementazione:
 public function geocode(): bool
 {
     $address = $this->formatItalianAddress();
+<<<<<<< HEAD
     
     // Utilizzo di un servizio di geocodifica
     $result = app(GeocodingService::class)->geocode($address);
     
+=======
+>>>>>>> 6ed19256f (.)
 
     // Utilizzo di un servizio di geocodifica
     $result = app(GeocodingService::class)->geocode($address);
@@ -350,10 +388,13 @@ public function geocode(): bool
         $this->latitude = $result['latitude'];
         $this->longitude = $result['longitude'];
         $this->save();
+<<<<<<< HEAD
         
         return true;
     }
     
+=======
+>>>>>>> 6ed19256f (.)
 
         return true;
     }
@@ -372,4 +413,8 @@ Per supportare gli indirizzi italiani in un contesto multilingua:
 
 ## Conclusione
 
+<<<<<<< HEAD
 La corretta gestione degli indirizzi italiani richiede una struttura dedicata che rispetti la suddivisione amministrativa del paese. Il modello `Address` proposto, con i campi e le relazioni specifiche per regioni, province e comuni italiani, fornisce una base solida per implementare un sistema di indirizzi completo e conforme agli standard italiani.
+=======
+La corretta gestione degli indirizzi italiani richiede una struttura dedicata che rispetti la suddivisione amministrativa del paese. Il modello `Address` proposto, con i campi e le relazioni specifiche per regioni, province e comuni italiani, fornisce una base solida per implementare un sistema di indirizzi completo e conforme agli standard italiani.
+>>>>>>> 6ed19256f (.)

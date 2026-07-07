@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 use Filament\Resources\Pages\ListRecords;
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
+=======
+use Mockery\MockInterface;
+>>>>>>> 6ed19256f (.)
 use Modules\Activity\Filament\Actions\ListLogActivitiesAction;
 
 uses(\Modules\Activity\Tests\TestCase::class);
@@ -25,8 +29,12 @@ test('action has correct configuration', function (): void {
 test('action generates a log-activity URL containing record key', function (): void {
     $action = ListLogActivitiesAction::make();
 
+<<<<<<< HEAD
     $resource = new class
     {
+=======
+    $resource = new class() {
+>>>>>>> 6ed19256f (.)
         public static function getUrl(string $name, array $parameters = []): string
         {
             $record = $parameters['record'] ?? null;

@@ -1,6 +1,7 @@
 # Implementazione Corretta delle Pagine Auth
 
 ## Collegamenti correlati
+<<<<<<< HEAD
 - [Documentazione centrale](../../../../docs/readme.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./readme.md)
@@ -12,6 +13,19 @@
 ## Introduzione
 
 Questo documento descrive l'implementazione corretta delle pagine di autenticazione nel tema One di <nome progetto>, utilizzando Laravel Folio, Livewire Volt e seguendo le convenzioni del progetto.
+=======
+- [Documentazione centrale](../../../docs/README.md)
+- [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
+- [README modulo User](./README.md)
+- [Convenzioni Path](./PATH_CONVENTIONS.md)
+- [Volt Errors](./VOLT_ERRORS.md)
+- [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
+- [Volt Logout Action](./VOLT_LOGOUT_ACTION.md)
+
+## Introduzione
+
+Questo documento descrive l'implementazione corretta delle pagine di autenticazione nel tema One di SaluteOra, utilizzando Laravel Folio, Livewire Volt e seguendo le convenzioni del progetto.
+>>>>>>> 6ed19256f (.)
 
 ## Struttura delle Directory
 
@@ -460,4 +474,8 @@ Utilizzare sempre la funzione `__()` per le stringhe visualizzate all'utente:
 
 - [Documentazione ufficiale Volt](https://livewire.laravel.com/docs/volt)
 - [Documentazione Laravel Folio](https://laravel.com/docs/10.x/folio)
+<<<<<<< HEAD
 - [Componenti Filament](https://filamentphp.com/docs/3.x/support/blade-components/overview)
+=======
+- [Componenti Filament](https://filamentphp.com/docs/3.x/support/blade-components/overview)
+>>>>>>> 6ed19256f (.)

@@ -8,16 +8,22 @@ Questo documento descrive l'architettura frontend basata su Folio, Volt e Filame
 ### Documentazione Correlata
 - [README](../README.md) - Panoramica del modulo Xot
 - [Struttura dei Moduli](./MODULE_STRUCTURE.md) - Convenzioni di struttura dei moduli
+<<<<<<< HEAD
 - [README](../readme.md) - Panoramica del modulo Xot
 - [Struttura dei Moduli](./module_structure.md) - Convenzioni di struttura dei moduli
+=======
+>>>>>>> 6ed19256f (.)
 - [Convenzioni di Naming](../../../project_docs/convenzioni-naming-campi.md) - Convenzioni per i nomi dei campi
 - [Flusso di Registrazione](../../../project_docs/flusso-registrazione.md) - Implementazione del wizard multi-step
 
 ### Moduli Collegati
+<<<<<<< HEAD
 - [UI](../../ui/project_docs/readme.md) - Componenti di interfaccia
 - [Cms](../../cms/project_docs/readme.md) - Gestione contenuti
 - [Lang](../../lang/project_docs/readme.md) - Traduzioni
 - [Patient](../../patient/project_docs/readme.md) - Gestione pazienti
+=======
+>>>>>>> 6ed19256f (.)
 - [UI](../../UI/project_docs/README.md) - Componenti di interfaccia
 - [Cms](../../Cms/project_docs/README.md) - Gestione contenuti
 - [Lang](../../Lang/project_docs/README.md) - Traduzioni
@@ -224,6 +230,7 @@ new class extends Component {
 ## Collegamenti Moduli
 
 ### Modulo UI
+<<<<<<< HEAD
 - [Componenti Volt](../ui/project_docs/components/volt.md)
 - [Layout](../ui/project_docs/layouts.md)
 - [Temi](../ui/project_docs/themes.md)
@@ -289,6 +296,8 @@ new class extends Component {
 - [Grafici](../chart/project_docs/charts.md)
 - [Dashboard](../chart/project_docs/dashboard.md)
 - [Visualizzazione](../chart/project_docs/visualization.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Componenti Volt](../UI/project_docs/components/volt.md)
 - [Layout](../UI/project_docs/layouts.md)
 - [Temi](../UI/project_docs/themes.md)
@@ -368,6 +377,7 @@ Questo documento descrive l'architettura frontend basata su Folio, Volt e Filame
 - [Flusso di Registrazione](../../../docs/flusso-registrazione.md) - Implementazione del wizard multi-step
 
 ### Moduli Collegati
+<<<<<<< HEAD
 - [README](../readme.md) - Panoramica del modulo Xot
 - [Struttura dei Moduli](./module_structure.md) - Convenzioni di struttura dei moduli
 - [Convenzioni di Naming](../../../../docs/convenzioni-naming-campi.md) - Convenzioni per i nomi dei campi
@@ -378,6 +388,8 @@ Questo documento descrive l'architettura frontend basata su Folio, Volt e Filame
 - [Cms](../../cms/docs/readme.md) - Gestione contenuti
 - [Lang](../../lang/docs/readme.md) - Traduzioni
 - [Patient](../../patient/docs/readme.md) - Gestione pazienti
+=======
+>>>>>>> 6ed19256f (.)
 - [UI](../../UI/docs/README.md) - Componenti di interfaccia
 - [Cms](../../Cms/docs/README.md) - Gestione contenuti
 - [Lang](../../Lang/docs/README.md) - Traduzioni
@@ -584,6 +596,7 @@ new class extends Component {
 ## Collegamenti Moduli
 
 ### Modulo UI
+<<<<<<< HEAD
 - [Componenti Volt](../ui/docs/components/volt.md)
 - [Layout](../ui/docs/layouts.md)
 - [Temi](../ui/docs/themes.md)
@@ -649,6 +662,8 @@ new class extends Component {
 - [Grafici](../chart/docs/charts.md)
 - [Dashboard](../chart/docs/dashboard.md)
 - [Visualizzazione](../chart/docs/visualization.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Componenti Volt](../UI/docs/components/volt.md)
 - [Layout](../UI/docs/layouts.md)
 - [Temi](../UI/docs/themes.md)
@@ -713,4 +728,8 @@ new class extends Component {
 ### Modulo Chart
 - [Grafici](../Chart/docs/charts.md)
 - [Dashboard](../Chart/docs/dashboard.md)
+<<<<<<< HEAD
 - [Visualizzazione](../Chart/docs/visualization.md)
+=======
+- [Visualizzazione](../Chart/docs/visualization.md)
+>>>>>>> 6ed19256f (.)

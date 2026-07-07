@@ -7,9 +7,15 @@ Data: 2025-04-23 19:09:56
 - **Namespace principale**: Modules\\User
 Modules\\User\\Database\\Factories
 Modules\\User\\Database\\Seeders
+<<<<<<< HEAD
 - **Pacchetto Composer**: laraxot/module_user_fila5
 Marco Sottana
 - **Dipendenze**: flowframe/laravel-trend * jenssegers/agent * laravel/passport * socialiteproviders/auth0 * spatie/laravel-personal-data-export * repositories type path url ../Xot type path url ../Tenant type path url ../UI 
+=======
+- **Pacchetto Composer**: laraxot/module_user_fila3
+Marco Sottana
+- **Dipendenze**: flowframe/laravel-trend * jenssegers/agent * laravel/passport * socialiteproviders/auth0 * spatie/laravel-personal-data-export * repositories type path url ../Xot type path url ../Tenant type path url ../UI
+>>>>>>> 6ed19256f (.)
 - **Totale file PHP**: 673
 - **Totale classi/interfacce**: 300
 
@@ -611,6 +617,7 @@ tests_old
 - [Analisi strutturale complessiva](/project_docs/phpstan/modules_structure_analysis.md)
 - [Report PHPStan](/project_docs/phpstan/)
 
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/project_docs/structure.md)
@@ -629,6 +636,10 @@ tests_old
 * [structure.md](../../../cms/project_docs/structure.md)
 * [structure.md](../../../cms/project_docs/themes/structure.md)
 * [structure.md](../../../cms/project_docs/components/structure.md)
+=======
+## Collegamenti tra versioni di structure.md
+* [structure.md](bashscripts/project_docs/structure.md)
+>>>>>>> 6ed19256f (.)
 * [structure.md](../../../Gdpr/project_docs/structure.md)
 * [structure.md](../../../Notify/project_docs/structure.md)
 * [structure.md](../../../Xot/project_docs/structure.md)
@@ -643,4 +654,8 @@ tests_old
 * [structure.md](../../../Activity/project_docs/structure.md)
 * [structure.md](../../../Cms/project_docs/structure.md)
 * [structure.md](../../../Cms/project_docs/themes/structure.md)
+<<<<<<< HEAD
 * [structure.md](../../../Cms/project_docs/components/structure.md)
+=======
+* [structure.md](../../../Cms/project_docs/components/structure.md)
+>>>>>>> 6ed19256f (.)

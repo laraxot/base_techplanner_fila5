@@ -67,11 +67,19 @@ Prima di ogni commit, verificare che le risorse Filament non contengano metodi p
 ```bash
 
 # Cerca implementazioni non necessarie
+<<<<<<< HEAD
 grep -r "public static function getTableColumns" --include="*Resource.php" Modules/
 grep -r "public static function getTableFilters" --include="*Resource.php" Modules/
 grep -r "public static function getTableActions" --include="*Resource.php" Modules/
 grep -r "public static function getTableBulkActions" --include="*Resource.php" Modules/
 grep -r "public static function getNavigationGroup" --include="*Resource.php" Modules/
+=======
+grep -r "public static function getTableColumns" --include="*Resource.php" /var/www/html/base_saluteora/laravel/Modules/
+grep -r "public static function getTableFilters" --include="*Resource.php" /var/www/html/base_saluteora/laravel/Modules/
+grep -r "public static function getTableActions" --include="*Resource.php" /var/www/html/base_saluteora/laravel/Modules/
+grep -r "public static function getTableBulkActions" --include="*Resource.php" /var/www/html/base_saluteora/laravel/Modules/
+grep -r "public static function getNavigationGroup" --include="*Resource.php" /var/www/html/base_saluteora/laravel/Modules/
+>>>>>>> 6ed19256f (.)
 ```
 
 ## Processo di refactoring

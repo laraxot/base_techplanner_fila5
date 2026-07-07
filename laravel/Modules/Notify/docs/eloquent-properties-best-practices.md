@@ -18,6 +18,7 @@ protected function getRecipientName($notifiable): string
     if (is_object($notifiable) && method_exists($notifiable, 'getFullName')) {
         return $notifiable->getFullName();
     }
+<<<<<<< HEAD
     
     if (is_object($notifiable) && property_exists($notifiable, 'full_name') && $notifiable->full_name) {
         return (string) ($notifiable->full_name ?? '');
@@ -31,6 +32,21 @@ protected function getRecipientName($notifiable): string
         return (string) ($notifiable->name ?? '');
     }
     
+=======
+
+    if (is_object($notifiable) && property_exists($notifiable, 'full_name') && $notifiable->full_name) {
+        return (string) ($notifiable->full_name ?? '');
+    }
+
+    if (is_object($notifiable) && property_exists($notifiable, 'first_name') && $notifiable->first_name) {
+        return (string) ($notifiable->first_name ?? '');
+    }
+
+    if (is_object($notifiable) && property_exists($notifiable, 'name') && $notifiable->name) {
+        return (string) ($notifiable->name ?? '');
+    }
+
+>>>>>>> 6ed19256f (.)
     return 'Utente';
 }
 ```
@@ -43,11 +59,16 @@ protected function getRecipientName($notifiable): string
     if (is_object($notifiable) && method_exists($notifiable, 'getFullName')) {
         return $notifiable->getFullName();
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // Usa isset invece di property_exists per proprietà magiche dei modelli
     if (is_object($notifiable) && isset($notifiable->full_name) && $notifiable->full_name) {
         return (string) $notifiable->full_name;
     }
+<<<<<<< HEAD
     
     if (is_object($notifiable) && isset($notifiable->first_name) && $notifiable->first_name) {
         return (string) $notifiable->first_name;
@@ -57,6 +78,17 @@ protected function getRecipientName($notifiable): string
         return (string) $notifiable->name;
     }
     
+=======
+
+    if (is_object($notifiable) && isset($notifiable->first_name) && $notifiable->first_name) {
+        return (string) $notifiable->first_name;
+    }
+
+    if (is_object($notifiable) && isset($notifiable->name) && $notifiable->name) {
+        return (string) $notifiable->name;
+    }
+
+>>>>>>> 6ed19256f (.)
     return 'Utente';
 }
 ```
@@ -137,7 +169,11 @@ if ($notifiable->hasAttribute('email') && $notifiable->email) {
 Il file corretto passa la validazione PHPStan livello 9+:
 
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/html/ptvx/laravel
+>>>>>>> 6ed19256f (.)
 ./vendor/bin/phpstan analyze Modules/Notify/app/Notifications/GenericNotification.php --level=9
 ```
 
@@ -160,7 +196,10 @@ Prima di ogni commit nel modulo Notify, verificare:
 - [Regola Cursor](../.cursor/rules/eloquent-properties.md)
 - [Memoria Cursor](../.cursor/memories)
 - [Linee Guida AI](../../.ai/guidelines/CORE.md)
+<<<<<<< HEAD
 - [Linee Guida AI](../../.ai/guidelines/core.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [File Corretto](../app/Notifications/GenericNotification.php)
 
 ## Esempi di Utilizzo nel Modulo
@@ -170,7 +209,11 @@ Prima di ogni commit nel modulo Notify, verificare:
 public function toMail($notifiable): MailMessage
 {
     $recipientName = $this->getRecipientName($notifiable);
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     return (new MailMessage())
         ->subject($this->title)
         ->greeting('Gentile ' . $recipientName)
@@ -187,7 +230,11 @@ public function toTwilio($notifiable): array
         $routeResult = $notifiable->routeNotificationForTwilio($this);
         $to = (string) ($routeResult ?? '');
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     return [
         'content' => $this->message,
         'to' => $to,
@@ -209,5 +256,9 @@ public function toDatabase($notifiable): array
 ```
 
 *Ultimo aggiornamento: Giugno 2025*
+<<<<<<< HEAD
 *Ultimo aggiornamento: Giugno 2025*
 *File corretto: GenericNotification.php*
+=======
+*File corretto: GenericNotification.php*
+>>>>>>> 6ed19256f (.)

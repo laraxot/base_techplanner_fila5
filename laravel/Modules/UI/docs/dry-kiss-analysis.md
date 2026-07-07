@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+# 🐄 DRY & KISS Analysis - UI
+
+>>>>>>> 6ed19256f (.)
 **Data:** 2025-10-15 | **Status:** ✅
 
 ## 📊 Struttura
@@ -17,6 +22,7 @@ Models: 5 | Resources: 0 | Services: 1 | Actions: 5 | Docs: 233 🟡
 Docs cleanup (1 sett)
 
 **Status:** 🟢 OTTIMO, docs da consolidare
+<<<<<<< HEAD
 ---
 module: theme
 topic: dry-kiss-analysis
@@ -24,3 +30,5 @@ canonical: ../../../Themes/docs/shared-components/dry-kiss-analysis-2025-10-15-M
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/dry-kiss-analysis-2025-10-15-Modules.md
+=======
+>>>>>>> 6ed19256f (.)

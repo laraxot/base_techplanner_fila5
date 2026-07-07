@@ -674,7 +674,11 @@ test('no memory leaks in repeated operations', function (): void {
 
 ### Internal Documentation
 - [Root Testing Organization](../../../docs/testing-organization.md)
+<<<<<<< HEAD
 - [<nome progetto> Testing Guidelines](../../<nome progetto>/docs/testing.md)
+=======
+- [SaluteOra Testing Guidelines](../../SaluteOra/docs/testing.md)
+>>>>>>> 6ed19256f (.)
 - [Cms Testing Guidelines](../../Cms/docs/testing.md)
 
 ### Framework Documentation
@@ -692,6 +696,7 @@ test('no memory leaks in repeated operations', function (): void {
 **Ultimo aggiornamento**: Dicembre 2024
 **Framework**: Pest v2.x
 **Coverage Target**: 90%+ per core framework
+<<<<<<< HEAD
 ---
 module: theme
 topic: testing
@@ -699,3 +704,5 @@ canonical: ../../../Themes/docs/shared-components/testing-guide.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/testing-guide.md
+=======
+>>>>>>> 6ed19256f (.)

@@ -30,27 +30,43 @@ Questa guida fornisce indicazioni pratiche su come implementare i principi UX do
   --primary: hsl(220, 70%, 50%);
   --primary-focus: hsl(220, 70%, 40%);
   --primary-content: hsl(220, 70%, 98%);
+<<<<<<< HEAD
   
   
+=======
+
+>>>>>>> 6ed19256f (.)
   /* Colori secondari */
   --secondary: hsl(250, 60%, 50%);
   --secondary-focus: hsl(250, 60%, 40%);
   --secondary-content: hsl(250, 60%, 98%);
+<<<<<<< HEAD
   
   
+=======
+
+>>>>>>> 6ed19256f (.)
   /* Colori neutrali */
   --neutral: hsl(220, 10%, 40%);
   --neutral-focus: hsl(220, 10%, 30%);
   --neutral-content: hsl(220, 10%, 98%);
+<<<<<<< HEAD
   
   
+=======
+
+>>>>>>> 6ed19256f (.)
   /* Colori di stato */
   --success: hsl(150, 80%, 40%);
   --warning: hsl(40, 90%, 50%);
   --error: hsl(0, 90%, 60%);
   --info: hsl(200, 90%, 60%);
+<<<<<<< HEAD
   
   
+=======
+
+>>>>>>> 6ed19256f (.)
   /* Background e testo */
   --base-100: hsl(220, 20%, 98%);
   --base-200: hsl(220, 20%, 95%);
@@ -174,11 +190,14 @@ TextInput::make('name')
     <x-dashboard.card title="Pazienti">
         <!-- contenuto card -->
     </x-dashboard.card>
+<<<<<<< HEAD
     
     <x-dashboard.card title="Appuntamenti">
         <!-- contenuto card -->
     </x-dashboard.card>
     
+=======
+>>>>>>> 6ed19256f (.)
 
     <x-dashboard.card title="Appuntamenti">
         <!-- contenuto card -->
@@ -201,8 +220,12 @@ TextInput::make('name')
             <div>{{ $action }}</div>
         @endif
     </div>
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     <div>
         {{ $slot }}
     </div>
@@ -235,8 +258,12 @@ Organizzare gli elementi dashboard in ordine di importanza:
             <button class="btn btn-outline">Documenti</button>
         </div>
     </div>
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     <!-- Contenuto principale -->
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <!-- Colonna sinistra -->
@@ -245,10 +272,13 @@ Organizzare gli elementi dashboard in ordine di importanza:
             <div class="card bg-white shadow rounded-lg mb-6">
                 <!-- Contenuto card -->
             </div>
+<<<<<<< HEAD
             
             <!-- Altre sezioni -->
         </div>
         
+=======
+>>>>>>> 6ed19256f (.)
 
             <!-- Altre sezioni -->
         </div>
@@ -272,32 +302,45 @@ Organizzare gli elementi dashboard in ordine di importanza:
         <nav class="flex -mb-px">
             <button
                 @click="activeTab = 'info'"
+<<<<<<< HEAD
             <button 
                 @click="activeTab = 'info'" 
+=======
+>>>>>>> 6ed19256f (.)
                 :class="{'border-primary text-primary': activeTab === 'info', 'border-transparent': activeTab !== 'info'}"
                 class="px-4 py-2 border-b-2 font-medium text-sm">
                 Informazioni
             </button>
             <button
                 @click="activeTab = 'documents'"
+<<<<<<< HEAD
             <button 
                 @click="activeTab = 'documents'" 
+=======
+>>>>>>> 6ed19256f (.)
                 :class="{'border-primary text-primary': activeTab === 'documents', 'border-transparent': activeTab !== 'documents'}"
                 class="px-4 py-2 border-b-2 font-medium text-sm">
                 Documenti
             </button>
             <button
                 @click="activeTab = 'appointments'"
+<<<<<<< HEAD
             <button 
                 @click="activeTab = 'appointments'" 
+=======
+>>>>>>> 6ed19256f (.)
                 :class="{'border-primary text-primary': activeTab === 'appointments', 'border-transparent': activeTab !== 'appointments'}"
                 class="px-4 py-2 border-b-2 font-medium text-sm">
                 Appuntamenti
             </button>
         </nav>
     </div>
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     <div x-show="activeTab === 'info'">
         <!-- Contenuto tab info -->
     </div>
@@ -474,7 +517,10 @@ Repeater::make('documents')
         // campi documento
     ])
     ->itemLabel(fn (array $state): ?string =>
+<<<<<<< HEAD
     ->itemLabel(fn (array $state): ?string => 
+=======
+>>>>>>> 6ed19256f (.)
         $state['title'] ?? null
     )
     ->collapsible()
@@ -490,4 +536,7 @@ Per approfondimenti, consultare:
 - [UX del Wizard di Registrazione](/project_docs/07-frontend/ux-wizard-registrazione-paziente.md)
 - [DaisyUI Documentation](https://daisyui.com/components/)
 - [Filament Documentation](https://filamentphp.com/project_docs/forms)
+<<<<<<< HEAD
 - [Filament Documentation](https://filamentphp.com/project_docs/forms) 
+=======
+>>>>>>> 6ed19256f (.)

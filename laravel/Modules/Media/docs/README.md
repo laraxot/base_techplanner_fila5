@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Media Module Documentation"
 type: documentation
@@ -82,6 +83,8 @@ Workflow locale: `.github/workflows/release.yml`.
 - Marco Sottana <marco.sottana@gmail.com>
 
 **License:** MIT
+=======
+>>>>>>> 6ed19256f (.)
 # 📁 **Media Module** - Sistema Avanzato Gestione File Multimediali
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
@@ -387,6 +390,7 @@ ffmpeg -codecs
 **🌐 Translation Standards**: File traduzione certificati ✅
 **🚀 Performance**: 95/100 score
 **🔧 S3Test Corrections**: Completate ✅
+<<<<<<< HEAD
 
 
 ## Standard Rules & Workflow
@@ -401,3 +405,5 @@ ffmpeg -codecs
 - [QMD Setup](./QMD-SETUP.md) — Configurazione ricerca locale
 - [Performance](./PERFORMANCE-OPTIMIZATION.md) — Metriche e best practice
 - [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout
+=======
+>>>>>>> 6ed19256f (.)

@@ -134,7 +134,11 @@ cd laravel
 Durante il tentativo di validare il codice con PHPStan, è stato rilevato un errore nel file `Modules/Xot/app/Providers/XotServiceProvider.php` alla linea 81:
 
 ```
+<<<<<<< HEAD
 ParseError thrown in Modules/Xot/app/Providers/XotServiceProvider.php on line 81 while loading bootstrap file: syntax error, unexpected token "<<"
+=======
+ParseError thrown in /var/www/html/_bases/base_<nome progetto>_fila3_mono/laravel/Modules/Xot/app/Providers/XotServiceProvider.php on line 81 while loading bootstrap file: syntax error, unexpected token "<<"
+>>>>>>> 6ed19256f (.)
 ```
 
 Questo errore indica che ci sono ancora conflitti git non risolti in altri moduli che devono essere affrontati prima di poter completare l'analisi del codice.
@@ -149,10 +153,18 @@ Questo errore indica che ci sono ancora conflitti git non risolti in altri modul
 
 **Motivazione**: L'aggregazione delle entità pazienti e appuntamenti in moduli dedicati favorisce la modularità, la riusabilità e la scalabilità del sistema multi-tenant. L'utilizzo di un modulo "macro" come `<nome progetto>` avrebbe introdotto una dipendenza non necessaria e ridotto la chiarezza delle responsabilità.
 
+<<<<<<< HEAD
 **Backlink**: Consulta anche la [documentazione globale sulla risoluzione dei conflitti git](../../../../docs/risoluzione_conflitti_git.md) per la procedura e le linee guida generali.
+=======
+**Backlink**: Consulta anche la [documentazione globale sulla risoluzione dei conflitti git](../../../docs/risoluzione_conflitti_git.md) per la procedura e le linee guida generali.
+>>>>>>> 6ed19256f (.)
 
 ## Collegamenti Utili
 
 - [Documentazione Principale Tenant](module_tenant.md)
 - [Rapporti PHPStan](phpstan/)
+<<<<<<< HEAD
 - [Panoramica della Risoluzione dei Conflitti](../../../../docs/risoluzione_conflitti_git.md)
+=======
+- [Panoramica della Risoluzione dei Conflitti](../../../docs/risoluzione_conflitti_git.md)
+>>>>>>> 6ed19256f (.)

@@ -3,8 +3,12 @@
 ## Panoramica
 
 Questo documento descrive l'integrazione dei template email [mailpace/templates](https://github.com/mailpace/templates) nel modulo Notify di . Questi template offrono un design moderno basato su TailwindCSS con supporto nativo per la modalità scura.
+<<<<<<< HEAD
 Questo documento descrive l'integrazione dei template email [mailpace/templates](https://github.com/mailpace/templates) nel modulo Notify di <nome progetto>. Questi template offrono un design moderno basato su TailwindCSS con supporto nativo per la modalità scura.
 Questo documento descrive l'integrazione dei template email [mailpace/templates](https://github.com/mailpace/templates) nel modulo Notify di Quaeris. Questi template offrono un design moderno basato su TailwindCSS con supporto nativo per la modalità scura.
+=======
+Questo documento descrive l'integrazione dei template email [mailpace/templates](https://github.com/mailpace/templates) nel modulo Notify di SaluteOra. Questi template offrono un design moderno basato su TailwindCSS con supporto nativo per la modalità scura.
+>>>>>>> 6ed19256f (.)
 
 ## Template Disponibili
 
@@ -26,15 +30,24 @@ MailPace offre i seguenti template transazionali:
 - **Personalizzazione** - Facilmente personalizzabili con Maizzle
 
 ## Integrazione
+<<<<<<< HEAD
 ## Integrazione 
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Struttura della Directory
 
 ```
+<<<<<<< HEAD
 Modules/Notify/resources/mail-layouts/
 Modules/Notify/resources/mail-layouts/
 Modules/Notify/resources/mail-layouts/
 /var/www/html/Quaeris/laravel/Modules/Notify/resources/mail-layouts/
+=======
+/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/resources/mail-layouts/
+/var/www/html/saluteora/laravel/Modules/Notify/resources/mail-layouts/
+/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/resources/mail-layouts/
+>>>>>>> 6ed19256f (.)
 ├── default.html       # Layout base per la maggior parte delle email
 ├── main.html          # Alternativa semplificata
 ├── marketing.html     # Layout ottimizzato per email marketing
@@ -86,7 +99,10 @@ use Modules\Notify\Models\MailTemplate;
 $mailTemplate = MailTemplate::findBySlug('welcome-email');
 $mailTemplate->send($user->email, [
     'name' => $user->name,
+<<<<<<< HEAD
     'name' => $user->name, 
+=======
+>>>>>>> 6ed19256f (.)
     'action_url' => $actionUrl
 ]);
 ```
@@ -97,8 +113,12 @@ $mailTemplate->send($user->email, [
 2. **Usa Variabili** - Utilizza variabili Blade per contenuti dinamici
 3. **Test Cross-Client** - Testa i template su diversi client email
 4. **Segui le Convenzioni di Branding** - Usa i colori e font definiti per
+<<<<<<< HEAD
 4. **Segui le Convenzioni di Branding** - Usa i colori e font definiti per <nome progetto>
 4. **Segui le Convenzioni di Branding** - Usa i colori e font definiti per Quaeris
+=======
+4. **Segui le Convenzioni di Branding** - Usa i colori e font definiti per SaluteOra
+>>>>>>> 6ed19256f (.)
 
 ## Riferimenti
 
@@ -136,7 +156,11 @@ MailPace offre i seguenti template transazionali:
 ### Struttura della Directory
 
 ```
+<<<<<<< HEAD
 Modules/Notify/resources/mail-layouts/
+=======
+/var/www/html/<directory progetto>/laravel/Modules/Notify/resources/mail-layouts/
+>>>>>>> 6ed19256f (.)
 ├── default.html       # Layout base per la maggior parte delle email
 ├── main.html          # Alternativa semplificata
 ├── marketing.html     # Layout ottimizzato per email marketing
@@ -205,5 +229,8 @@ $mailTemplate->send($user->email, [
 - [Repository MailPace Templates](https://github.com/mailpace/templates)
 - [Guida Spatie Email](../SPATIE_EMAIL_USAGE_GUIDE.md)
 - [Implementazione Slug Field](./SLUG_FIELD_IMPLEMENTATION.md)
+<<<<<<< HEAD
 - [Guida Spatie Email](../spatie_email_usage_guide.md)
 - [Implementazione Slug Field](./slug_field_implementation.md)
+=======
+>>>>>>> 6ed19256f (.)

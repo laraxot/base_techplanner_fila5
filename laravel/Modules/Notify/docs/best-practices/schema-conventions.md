@@ -57,11 +57,18 @@ Here's a complete example of a properly formatted schema:
 ## Collegamenti tra versioni di schema_conventions.md
 * [schema_conventions.md](docs/schema_conventions.md)
 * [schema_conventions.md](../../../Notify/docs/schema_conventions.md)
+<<<<<<< HEAD
 * [schema_conventions.md](../../../Notify/docs/schema_conventions.md)
 
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Versione Incoming
 
 ```
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> 6ed19256f (.)

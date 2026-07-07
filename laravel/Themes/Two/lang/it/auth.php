@@ -10,7 +10,10 @@ return [
     */
     'login' => [
         'title' => 'Accedi al tuo account',
+<<<<<<< HEAD
         'back_to_home' => 'Torna alla home',
+=======
+>>>>>>> 6ed19256f (.)
         'or' => 'oppure',
         'create_account' => 'crea un nuovo account',
         'forgot_password' => 'Hai dimenticato la password?',
@@ -201,6 +204,10 @@ return [
         'loading_failed' => 'Errore di caricamento',
         'please_refresh' => 'Si è verificato un errore. Ricarica la pagina e riprova.',
     ],
+<<<<<<< HEAD
 ];
 
 
+=======
+]; 
+>>>>>>> 6ed19256f (.)

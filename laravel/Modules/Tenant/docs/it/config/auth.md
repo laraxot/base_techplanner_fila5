@@ -112,6 +112,7 @@ return [
 * [auth.md](../../../Xot/docs/install/auth.md)
 * [auth.md](../../../User/docs/lang/en/auth.md)
 * [auth.md](../../../Tenant/docs/it/config/auth.md)
+<<<<<<< HEAD
 * [auth.md](../../../xot/docs/install/auth.md)
 * [auth.md](../../../user/docs/lang/en/auth.md)
 * [auth.md](../../../tenant/docs/it/config/auth.md)
@@ -119,3 +120,9 @@ return [
 ### Versione Incoming
 
 ---
+=======
+
+### Versione Incoming
+
+---
+>>>>>>> 6ed19256f (.)

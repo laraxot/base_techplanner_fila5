@@ -90,7 +90,10 @@ SlackAlert::to('channel-name')->message('Job in corso...');
 ## Collegamenti tra versioni di integrations.md
 * [integrations.md](docs/tecnico/filament/integrations.md)
 * [integrations.md](../../../Job/docs/packages/integrations.md)
+<<<<<<< HEAD
 * [integrations.md](../../../job/docs/packages/integrations.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Versione Incoming
 
@@ -98,4 +101,8 @@ SlackAlert::to('channel-name')->message('Job in corso...');
 
 ### Versione Incoming
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> 6ed19256f (.)

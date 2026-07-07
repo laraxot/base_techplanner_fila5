@@ -3,14 +3,20 @@
 ## Panoramica
 Volt è un framework per la creazione di componenti Livewire in modo dichiarativo. Questa guida spiega come utilizzare Volt nel nostro sistema.
 
+<<<<<<< HEAD
 Nel progetto la regola di default per le componenti Volt interattive è la sintassi **class-based** (`new class extends Livewire\Volt\Component`). Gli esempi più sotto usano la sintassi functional solo come **legacy/mantenimento**: per nuovi componenti usa la sezione “Struttura Base” in basso.
 
+=======
+>>>>>>> 6ed19256f (.)
 ## Collegamenti
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Livewire](https://livewire.laravel.com)
 - [Filament](https://filamentphp.com)
 - [Documentazione UI](../README.md)
+<<<<<<< HEAD
 - [Documentazione UI](../readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Best Practices](../best-practices.md)
 - [Layout](../layouts.md)
 - [Temi](../themes.md)
@@ -20,6 +26,7 @@ Nel progetto la regola di default per le componenti Volt interattive è la sinta
 ### Componente Base
 ```php
 <?php
+<<<<<<< HEAD
 use Livewire\Volt\Component;
 
 new class extends Component {
@@ -31,6 +38,20 @@ new class extends Component {
         // logica di submit
     }
 };
+=======
+
+use function Livewire\Volt\{state, mount};
+
+state([
+    'name' => '',
+    'email' => '',
+]);
+
+$submit = function() {
+    // logica di submit
+};
+
+>>>>>>> 6ed19256f (.)
 ?>
 
 <form wire:submit="submit">
@@ -329,6 +350,7 @@ mount(function() {
 ## Collegamenti Moduli
 
 ### Modulo Xot
+<<<<<<< HEAD
 - [Core](../../xot/docs/core.md)
 - [Servizi](../../xot/docs/services.md)
 - [Traits](../../xot/docs/traits.md)
@@ -394,6 +416,8 @@ mount(function() {
 - [Grafici](../../chart/docs/charts.md)
 - [Dashboard](../../chart/docs/dashboard.md)
 - [Visualizzazione](../../chart/docs/visualization.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Core](../../Xot/docs/core.md)
 - [Servizi](../../Xot/docs/services.md)
 - [Traits](../../Xot/docs/traits.md)
@@ -458,4 +482,8 @@ mount(function() {
 ### Modulo Chart
 - [Grafici](../../Chart/docs/charts.md)
 - [Dashboard](../../Chart/docs/dashboard.md)
+<<<<<<< HEAD
 - [Visualizzazione](../../Chart/docs/visualization.md)
+=======
+- [Visualizzazione](../../Chart/docs/visualization.md)
+>>>>>>> 6ed19256f (.)

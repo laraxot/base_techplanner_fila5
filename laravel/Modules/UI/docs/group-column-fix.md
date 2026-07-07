@@ -104,5 +104,9 @@ Sono stati creati test per verificare:
 
 ## Collegamenti
 - [ProgressioniResource Usage](../../Progressioni/docs/progressioni-resource.md)
+<<<<<<< HEAD
 - [ProgressioniResource Usage](../../progressioni/docs/progressioni-resource.md)
 - [Filament Tables Documentation](https://filamentphp.com/docs/3.x/tables/columns)
+=======
+- [Filament Tables Documentation](https://filamentphp.com/docs/3.x/tables/columns)
+>>>>>>> 6ed19256f (.)

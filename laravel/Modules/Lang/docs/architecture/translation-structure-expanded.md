@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Struttura Espansa per File di Traduzione - Progetto <nome progetto>
+=======
+# Struttura Espansa per File di Traduzione - Progetto SaluteOra
+>>>>>>> 6ed19256f (.)
 
 ## Scopo
 Definizione della struttura standard espansa per tutti i file di traduzione del progetto, seguendo i principi DRY/KISS per massima usabilità e manutenibilità.
@@ -152,10 +156,17 @@ Ogni campo deve avere la seguente struttura completa:
 - [x] Documentazione struttura espansa
 - [ ] Geo (location, address)
 - [ ] User (registration, profile)
+<<<<<<< HEAD
 - [ ] <nome progetto> (patient, doctor, studio)
 
 ### Fase 2: Moduli Secondari
 - [ ] <nome progetto>
+=======
+- [ ] SaluteOra (patient, doctor, studio)
+
+### Fase 2: Moduli Secondari
+- [ ] SaluteMo
+>>>>>>> 6ed19256f (.)
 - [ ] Job
 - [ ] Notify
 
@@ -186,7 +197,11 @@ Ogni campo deve avere la seguente struttura completa:
 ### Documentazione Correlata
 - **Modulo Geo**: `/Modules/Geo/docs/translation-structure.md`
 - **Modulo User**: `/Modules/User/docs/translation-guidelines.md`
+<<<<<<< HEAD
 - **Modulo <nome progetto>**: `/Modules/<nome progetto>/docs/multilingual-support.md`
+=======
+- **Modulo SaluteOra**: `/Modules/SaluteOra/docs/multilingual-support.md`
+>>>>>>> 6ed19256f (.)
 - **Tema One**: `/Themes/One/docs/translations.md`
 
 ### File di Implementazione
@@ -199,4 +214,8 @@ Ogni campo deve avere la seguente struttura completa:
 **Versione**: 1.0
 **Data**: 2025-08-08
 **Stato**: Implementazione in corso
+<<<<<<< HEAD
 **Responsabile**: Sistema automatico DRY/KISS
+=======
+**Responsabile**: Sistema automatico DRY/KISS
+>>>>>>> 6ed19256f (.)

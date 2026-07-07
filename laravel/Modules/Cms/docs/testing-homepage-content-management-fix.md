@@ -66,4 +66,8 @@ $response->assertStatus(200);
 ---
 
 **Status**: In Progress
+<<<<<<< HEAD
 **Prossimo step**: Correggere tutti i test per usare `/{locale}` invece di `/`
+=======
+**Prossimo step**: Correggere tutti i test per usare `/{locale}` invece di `/`
+>>>>>>> 6ed19256f (.)

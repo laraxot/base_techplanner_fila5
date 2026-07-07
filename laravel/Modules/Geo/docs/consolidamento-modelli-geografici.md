@@ -39,8 +39,12 @@ class Comune extends GeoJsonModel
     {
         return static::loadData()->pluck('regione')->unique()->values();
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // Recupera le province di una regione
     public static function getProvince(string $codiceRegione): Collection
     {
@@ -50,8 +54,12 @@ class Comune extends GeoJsonModel
             ->unique()
             ->values();
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // Recupera le città di una provincia
     public static function getCitta(string $codiceProvincia): Collection
     {
@@ -61,8 +69,12 @@ class Comune extends GeoJsonModel
             ->unique()
             ->values();
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // Recupera i CAP di una città
     public static function getCap(string $codiceCitta): Collection
     {
@@ -72,15 +84,22 @@ class Comune extends GeoJsonModel
             ->unique()
             ->values();
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // Cerca comuni per nome (funzionalità aggiuntiva)
     public static function cercaPerNome(string $nome): Collection
     {
         return static::loadData()
             ->filter(fn($item) => str_contains(
                 strtolower($item['comune']['nome']),
+<<<<<<< HEAD
                 strtolower($item['comune']['nome']), 
+=======
+>>>>>>> 6ed19256f (.)
                 strtolower($nome)
             ));
     }
@@ -146,7 +165,10 @@ Select::make('region')
 
 Select::make('province')
     ->options(fn (Get $get) =>
+<<<<<<< HEAD
     ->options(fn (Get $get) => 
+=======
+>>>>>>> 6ed19256f (.)
         Province::byRegion($get('region'))->pluck('nome', 'codice'))
     ->visible(fn (Get $get) => filled($get('region'))),
 ```
@@ -159,7 +181,10 @@ Select::make('region')
 
 Select::make('province')
     ->options(fn (Get $get) =>
+<<<<<<< HEAD
     ->options(fn (Get $get) => 
+=======
+>>>>>>> 6ed19256f (.)
         Comune::getProvince($get('region'))->pluck('nome', 'codice'))
     ->visible(fn (Get $get) => filled($get('region'))),
 ```
@@ -272,4 +297,8 @@ In sintesi, il modello `Comune` implementato rappresenta un caso di studio posit
 
 ---
 
+<<<<<<< HEAD
 *Documento creato il: 27/05/2025*
+=======
+*Documento creato il: 27/05/2025*
+>>>>>>> 6ed19256f (.)

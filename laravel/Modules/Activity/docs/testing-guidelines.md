@@ -6,6 +6,7 @@
 All tests MUST use `.env.testing` configuration:
 ```env
 APP_ENV=testing
+<<<<<<< HEAD
 DB_CONNECTION=mysql
 DB_DATABASE=<nome progetto>_data_test
 DB_DATABASE=<nome progetto>_data_test
@@ -13,6 +14,11 @@ DB_DATABASE_USER=<nome progetto>_user_test
 DB_DATABASE=<nome progetto>_data_test
 DB_DATABASE=<nome progetto>_data_test
 DB_DATABASE_USER=<nome progetto>_user_test
+=======
+DB_CONNECTION=sqlite
+DB_DATABASE=<nome progetto>_data_test
+DB_DATABASE=<nome progetto>_data_test
+>>>>>>> 6ed19256f (.)
 ```
 
 ### Pest Framework Usage
@@ -248,6 +254,11 @@ it('creates snapshots efficiently', function () {
 ---
 
 **Last Updated**: 2025-08-28
+<<<<<<< HEAD
 
 **Testing Framework**: Pest
 **Environment**: .env.testing
+=======
+**Testing Framework**: Pest
+**Environment**: .env.testing
+>>>>>>> 6ed19256f (.)

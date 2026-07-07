@@ -5,6 +5,10 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< HEAD
+=======
+use Modules\User\Database\Factories\DeviceProfileFactory;
+>>>>>>> 6ed19256f (.)
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
@@ -27,7 +31,11 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @property ProfileContract|null $deleter
  *
+<<<<<<< HEAD
  * @method static \Modules\User\Database\Factories\DeviceProfileFactory factory($count = null, $state = [])
+=======
+ * @method static DeviceProfileFactory factory($count = null, $state = [])
+>>>>>>> 6ed19256f (.)
  *
  * @mixin \Eloquent
  */

@@ -11,7 +11,10 @@ use Illuminate\Support\Facades\Log;
 use Kreait\Firebase\Contract\Messaging;
 use Kreait\Firebase\Exception\FirebaseException;
 use Kreait\Firebase\Exception\MessagingException;
+<<<<<<< HEAD
 use Kreait\Firebase\Messaging\Message;
+=======
+>>>>>>> 6ed19256f (.)
 use Kreait\Firebase\Messaging\MulticastSendReport;
 use Kreait\Firebase\Messaging\RegistrationToken;
 use Kreait\Firebase\Messaging\RegistrationTokens;
@@ -19,7 +22,10 @@ use Modules\Notify\Contracts\CanReceivePushNotifications;
 use Modules\Notify\Contracts\MobilePushNotification;
 use Modules\Notify\Datas\PushNotificationDebugData;
 use Psr\Log\LoggerInterface;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 use function Safe\json_encode;
 
 final class FirebaseCloudMessagingChannel
@@ -90,6 +96,7 @@ final class FirebaseCloudMessagingChannel
          * @var list<RegistrationToken|string>|RegistrationToken|RegistrationTokens|non-empty-string
          */
         $registrationTokens = $userDeviceTokens->toArray();
+<<<<<<< HEAD
         $message = $notification->toCloudMessage();
 
         if (! $message instanceof Message) {
@@ -98,6 +105,11 @@ final class FirebaseCloudMessagingChannel
 
         return $this->firebaseCloudMessaging->sendMulticast(
             message: $message,
+=======
+
+        return $this->firebaseCloudMessaging->sendMulticast(
+            message: $notification->toCloudMessage(),
+>>>>>>> 6ed19256f (.)
             registrationTokens: $registrationTokens,
         );
     }

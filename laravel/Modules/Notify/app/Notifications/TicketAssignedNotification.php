@@ -16,7 +16,12 @@ class TicketAssignedNotification extends Notification
     public function __construct(
         public mixed $ticket, // Using mixed type since Ticket model doesn't exist
         public User $assignedBy
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> 6ed19256f (.)
 
     /**
      * @return array<int, string>
@@ -28,7 +33,11 @@ class TicketAssignedNotification extends Notification
 
     public function toMail(mixed $notifiable): MailMessage
     {
+<<<<<<< HEAD
         return (new MailMessage)
+=======
+        return (new MailMessage())
+>>>>>>> 6ed19256f (.)
             ->subject('New Ticket Assigned')
             ->line("A new ticket has been assigned to you by {$this->assignedBy->name}")
             ->action('View Ticket', url('/'));

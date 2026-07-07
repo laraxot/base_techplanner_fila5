@@ -54,8 +54,12 @@ class MioServizio
         protected UserContract $user
     ) {
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function eseguiOperazione(): void
     {
         // Utilizzo dell'interfaccia UserContract
@@ -81,14 +85,22 @@ use Illuminate\Support\Facades\Hash;
 public function register(array $data): UserContract
 {
     $user = app(UserContract::class);
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     $user->name = $data['name'];
     $user->email = $data['email'];
     $user->password = Hash::make($data['password']);
     $user->save();
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     return $user;
 }
 ```
@@ -128,4 +140,8 @@ Passport è preferito in il progetto perché offre:
 
 ## Conclusione
 
+<<<<<<< HEAD
 L'utilizzo corretto dei modelli User in il progetto è fondamentale per mantenere un'architettura pulita e modulare. Seguendo le best practices descritte in questo documento, è possibile evitare errori comuni e garantire che il codice sia manutenibile e scalabile.
+=======
+L'utilizzo corretto dei modelli User in il progetto è fondamentale per mantenere un'architettura pulita e modulare. Seguendo le best practices descritte in questo documento, è possibile evitare errori comuni e garantire che il codice sia manutenibile e scalabile.
+>>>>>>> 6ed19256f (.)

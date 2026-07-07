@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import 'tailwindcss';
 @plugin "daisyui";
 
@@ -322,6 +323,8 @@ html {
 .skip-to-content:focus {
     top: 0;
 }
+=======
+>>>>>>> 6ed19256f (.)
 @tailwind base;
 
 :root {
@@ -354,4 +357,8 @@ a, .prose a {
     margin-top: calc(-1 * var(--main-nav-height));
 }
 
+<<<<<<< HEAD
 @tailwind utilities;
+=======
+@tailwind utilities;
+>>>>>>> 6ed19256f (.)

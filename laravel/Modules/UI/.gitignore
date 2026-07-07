@@ -109,8 +109,11 @@ Thumbs.db
 *.old2
 *.backup
 *.backup.*
+<<<<<<< HEAD
 *.backup-*
 *.backup_*
+=======
+>>>>>>> 6ed19256f (.)
 *.bak
 *.new
 
@@ -176,6 +179,7 @@ public_html
 # ==============================================
 # END OF UI .GITIGNORE
 # ==============================================
+<<<<<<< HEAD
 lang/lang/
 _docs/
 docs/legacy/
@@ -191,3 +195,5 @@ docs/legacy/**
 *.orig
 *.rej
 *~head
+=======
+>>>>>>> 6ed19256f (.)

@@ -11,7 +11,11 @@
 ### Installazione Pest
 Pest è già installato nel progetto. Verifica con:
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/_bases/base_laravelpizza/laravel
+>>>>>>> 6ed19256f (.)
 ./vendor/bin/pest --version
 ```
 
@@ -29,7 +33,11 @@ cd laravel
 ### Comando Base
 **SEMPRE eseguire dalla cartella `laravel/`**:
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/_bases/base_laravelpizza/laravel
+>>>>>>> 6ed19256f (.)
 ./vendor/bin/pest [opzioni] [path]
 ```
 
@@ -130,31 +138,51 @@ function create{Model}(array $attributes = []): {Model}
 
 ### Pattern 1: Test Singolo Modulo
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/_bases/base_laravelpizza/laravel
+>>>>>>> 6ed19256f (.)
 ./vendor/bin/pest Modules/User/tests/
 ```
 
 ### Pattern 2: Test Multipli Moduli
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/_bases/base_laravelpizza/laravel
+>>>>>>> 6ed19256f (.)
 ./vendor/bin/pest Modules/User/tests/ Modules/Cms/tests/
 ```
 
 ### Pattern 3: Test con Coverage
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/_bases/base_laravelpizza/laravel
+>>>>>>> 6ed19256f (.)
 ./vendor/bin/pest Modules/User/tests/ --coverage --min=100
 ```
 
 ### Pattern 4: Test con Filtro
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/_bases/base_laravelpizza/laravel
+>>>>>>> 6ed19256f (.)
 ./vendor/bin/pest Modules/User/tests/ --filter="User Model"
 ```
 
 ### Pattern 5: Test Verboso per Debug
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/_bases/base_laravelpizza/laravel
+>>>>>>> 6ed19256f (.)
 ./vendor/bin/pest Modules/User/tests/ -vv --filter="can be created"
 ```
 
@@ -203,7 +231,11 @@ abstract class TestCase extends BaseTestCase
 ## ⚠️ Problemi Comuni e Soluzioni
 
 ### Problema 1: "Test directory not found"
+<<<<<<< HEAD
 **Errore**: `Test directory "tests/Feature" not found`
+=======
+**Errore**: `Test directory "/var/www/_bases/base_laravelpizza/laravel/tests/Feature" not found`
+>>>>>>> 6ed19256f (.)
 
 **Causa**: Il file `laravel/tests/Pest.php` cerca directory che non esistono.
 
@@ -316,7 +348,11 @@ abstract class TestCase extends BaseTestCase
 
 **Esecuzione**:
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/_bases/base_laravelpizza/laravel
+>>>>>>> 6ed19256f (.)
 composer test
 ```
 
@@ -328,7 +364,11 @@ composer test
 
 ### Esempio 1: Test Modulo User
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/_bases/base_laravelpizza/laravel
+>>>>>>> 6ed19256f (.)
 ./vendor/bin/pest Modules/User/tests/
 ```
 
@@ -345,13 +385,21 @@ Duration: 4.18s
 
 ### Esempio 2: Test con Coverage
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/_bases/base_laravelpizza/laravel
+>>>>>>> 6ed19256f (.)
 ./vendor/bin/pest Modules/User/tests/ --coverage --min=100
 ```
 
 ### Esempio 3: Test Specifico
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/_bases/base_laravelpizza/laravel
+>>>>>>> 6ed19256f (.)
 ./vendor/bin/pest Modules/User/tests/Unit/UserModelTest.php -vv
 ```
 
@@ -383,4 +431,8 @@ cd laravel
 
 **Ultimo aggiornamento**: 9 Gennaio 2026  
 **Versione Pest**: 3.8.4  
+<<<<<<< HEAD
 **Status**: ✅ Documentazione Completa
+=======
+**Status**: ✅ Documentazione Completa
+>>>>>>> 6ed19256f (.)

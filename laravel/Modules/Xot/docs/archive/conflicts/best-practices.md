@@ -76,7 +76,10 @@ namespace Modules\ModuleName\App\Models;
 ## Collegamenti Correlati
 
 - [Convenzioni Namespace](../NAMESPACE-CONVENTIONS.md)
+<<<<<<< HEAD
 - [Convenzioni Namespace](../namespace-conventions.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [PHPStan Livello 10](../phpstan_livello10_linee_guida.md)
 - [Struttura Moduli](../module-structure.md)
 - [Risoluzione Conflitti Merge](../risoluzione_conflitti_merge.md)
@@ -108,4 +111,8 @@ namespace Modules\ModuleName\App\Models;
 3. **Testing**
    - Verificare le modifiche con PHPStan
    - Testare la compatibilità
+<<<<<<< HEAD
    - Validare le funzionalità
+=======
+   - Validare le funzionalità
+>>>>>>> 6ed19256f (.)

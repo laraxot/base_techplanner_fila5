@@ -2,8 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Geo\Tests\Unit\Models;
 
+=======
+>>>>>>> 6ed19256f (.)
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Modules\Geo\Database\Factories\RegionFactory;

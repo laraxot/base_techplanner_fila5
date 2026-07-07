@@ -510,4 +510,8 @@ composer dump-autoload
 
 *Ultimo aggiornamento: 2025-08-04*
 *Modulo: Xot*
+<<<<<<< HEAD
 *Categoria: Migrazioni*
+=======
+*Categoria: Migrazioni*
+>>>>>>> 6ed19256f (.)

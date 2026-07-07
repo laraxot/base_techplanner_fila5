@@ -1,7 +1,10 @@
 # ServiceProvider Minimal Structure - Laraxot
 
 **Ultimo aggiornamento**: 2025-01-10
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 **Principio**: DRY + KISS - Struttura minima necessaria, niente di più
 
 ## 🚨 Regola Fondamentale
@@ -293,4 +296,8 @@ Prima di creare un ServiceProvider:
 
 ---
 
+<<<<<<< HEAD
 **Filosofia**: "La semplicità è la massima sofisticazione" - Struttura minima, funzionalità massima.
+=======
+**Filosofia**: "La semplicità è la massima sofisticazione" - Struttura minima, funzionalità massima.
+>>>>>>> 6ed19256f (.)

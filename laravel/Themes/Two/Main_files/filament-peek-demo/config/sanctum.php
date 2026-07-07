@@ -1,7 +1,12 @@
 <?php
 
+<<<<<<< HEAD
 use App\Http\Middleware\EncryptCookies;
 use App\Http\Middleware\VerifyCsrfToken;
+=======
+use App\Http\Middleware\VerifyCsrfToken;
+use App\Http\Middleware\EncryptCookies;
+>>>>>>> 6ed19256f (.)
 use Laravel\Sanctum\Sanctum;
 
 return [
@@ -67,5 +72,8 @@ return [
     ],
 
 ];
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 6ed19256f (.)

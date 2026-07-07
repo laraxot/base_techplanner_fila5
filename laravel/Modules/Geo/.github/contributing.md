@@ -96,7 +96,10 @@ Before submitting a pull request:
 If the project maintainer has any additional requirements, you will find them listed here.
 
 - **[PSR-2 Coding Standard](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md)** - The standard can be enforced by running the `composer lint` console command.
+<<<<<<< HEAD
 - **[PSR-2 Coding Standard](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md)** - The standard can be enforced by running the `composer lint` console command.
+=======
+>>>>>>> 6ed19256f (.)
 
 - **Add tests!** - Your patch won't be accepted if it doesn't have tests.
 
@@ -108,4 +111,8 @@ If the project maintainer has any additional requirements, you will find them li
 
 - **Send coherent history** - Make sure each individual commit in your pull request is meaningful. If you had to make multiple intermediate commits while developing, please [squash them](https://www.git-scm.com/book/en/v2/Git-Tools-Rewriting-History#Changing-Multiple-Commit-Messages) before submitting.
 
+<<<<<<< HEAD
 **Happy coding**!
+=======
+**Happy coding**!
+>>>>>>> 6ed19256f (.)

@@ -12,7 +12,11 @@ Documentazione delle correzioni apportate durante l'esecuzione di `composer upda
 
 ### 1. Errore di Sintassi in Helper.php
 
+<<<<<<< HEAD
 **File**: `Modules/Xot/helpers/Helper.php:727`
+=======
+**File**: `Modules/Xot/Helpers/Helper.php:727`
+>>>>>>> 6ed19256f (.)
 
 **Problema**:
 ```php
@@ -29,7 +33,11 @@ $related = $return->getRelated();
 $related_model = (new ReflectionClass($related))->getName();
 ```
 
+<<<<<<< HEAD
 **File Modificato**: `Modules/Xot/helpers/Helper.php:727-728`
+=======
+**File Modificato**: `Modules/Xot/Helpers/Helper.php:727-728`
+>>>>>>> 6ed19256f (.)
 
 ---
 
@@ -152,4 +160,8 @@ Tutti gli errori erano legati alla sintassi PHP per la chiamata di metodi su nuo
 
 - [PHP Manual: Object Instantiation](https://www.php.net/manual/en/language.oop5.basic.php)
 - [Laravel Documentation](https://laravel.com/docs)
+<<<<<<< HEAD
 - [Filament Documentation](https://filamentphp.com/docs)
+=======
+- [Filament Documentation](https://filamentphp.com/docs)
+>>>>>>> 6ed19256f (.)

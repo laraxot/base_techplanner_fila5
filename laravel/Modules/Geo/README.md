@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🗺️ Geo
 
 [![Domain-Geo](https://img.shields.io/badge/Domain-Maps%20%26%20Geo-2E7D32.svg)](#)
@@ -45,6 +46,8 @@ Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 
 ## Documentazione
 
+=======
+>>>>>>> 6ed19256f (.)
 # 🌍 Geo - Il SISTEMA di GEOLOCALIZZAZIONE più POTENTE! 🗺️
 
 <!-- Dynamic validation badges -->
@@ -519,6 +522,7 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file [LICENSE](LICE
   <br>
   <em>Costruito con ❤️ per la comunità Laravel</em>
 </div>
+<<<<<<< HEAD
 | Lingua | Link |
 |--------|------|
 | 🇮🇹 Presentazione | Questo file (`README.md`) |
@@ -528,3 +532,5 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file [LICENSE](LICE
 ---
 
 **Modulo** `geo` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+>>>>>>> 6ed19256f (.)

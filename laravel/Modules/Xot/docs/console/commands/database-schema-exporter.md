@@ -54,5 +54,8 @@ Tabelle trovate: users, migrations, password_resets
 ## Collegamenti tra versioni di database-schema-exporter.md
 * [database-schema-exporter.md](../../../Xot/docs/commands/database-schema-exporter.md)
 * [database-schema-exporter.md](../../../Xot/docs/console/commands/database-schema-exporter.md)
+<<<<<<< HEAD
 * [database-schema-exporter.md](../../../xot/docs/commands/database-schema-exporter.md)
 * [database-schema-exporter.md](../../../xot/docs/console/commands/database-schema-exporter.md)
+=======
+>>>>>>> 6ed19256f (.)

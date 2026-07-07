@@ -121,7 +121,11 @@ Si può utilizzare un script per automatizzare la modifica dei namespace nei fil
 #!/bin/bash
 
 # Trova tutti i file PHP nel modulo Chart
+<<<<<<< HEAD
 find Modules/Chart -type f -name "*.php" | while read file; do
+=======
+find /var/www/html/<nome progetto>/laravel/Modules/Chart -type f -name "*.php" | while read file; do
+>>>>>>> 6ed19256f (.)
     # Sostituisci namespace Modules\Chart\App\ con Modules\Chart\
     sed -i 's/namespace Modules\\\\Chart\\\\App\\\\/namespace Modules\\\\Chart\\\\/g' "$file"
 
@@ -1065,4 +1069,8 @@ b6f667c (.)
 - La registrazione dei comandi nel ServiceProvider del modulo deve usare il namespace e path corretti.
 - Aggiornare la documentazione del modulo con esempi e riferimenti.
 
+<<<<<<< HEAD
 Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
+=======
+Vedi anche la documentazione specifica del modulo per dettagli e casi particolari.
+>>>>>>> 6ed19256f (.)

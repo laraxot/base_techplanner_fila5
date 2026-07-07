@@ -33,4 +33,7 @@ abstract class BaseModel extends XotBaseModel implements HasMedia
 
 ---
 [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
+<<<<<<< HEAD
 [DRY/KISS Global](../../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
+=======
+>>>>>>> 6ed19256f (.)

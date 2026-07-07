@@ -30,7 +30,11 @@
 **Soluzione**:
 - Aggiunto cast esplicito `@var array<string, mixed>` al risultato
 
+<<<<<<< HEAD
 ### 4. <nome progetto>/app/States/Appointment/ReportPending.php
+=======
+### 4. SaluteOra/app/States/Appointment/ReportPending.php
+>>>>>>> 6ed19256f (.)
 
 **Problema**: Linea 27 - Tipo di ritorno errato
 - Metodo doveva restituire `array<string, Component>` ma restituiva `array<int|string, Component>`

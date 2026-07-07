@@ -202,7 +202,11 @@ function generateItalianTextReport(array $issues): string
 }
 
 // Esegui audit
+<<<<<<< HEAD
 $basePath = '/var/www/html/_bases/base_<nome progetto>/laravel';
+=======
+$basePath = '/var/www/html/_bases/base_saluteora/laravel';
+>>>>>>> 6ed19256f (.)
 echo "Inizio audit per testi italiani in file non italiani...\n";
 
 $issues = auditItalianTextInNonItalianFiles($basePath);

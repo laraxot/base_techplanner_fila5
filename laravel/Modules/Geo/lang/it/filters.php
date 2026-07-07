@@ -8,80 +8,110 @@ return [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il nome del filtro',
             'help' => 'Nome identificativo del filtro',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'type' => [
             'label' => 'Tipo',
             'placeholder' => 'Seleziona il tipo di filtro',
             'help' => 'Tipo di filtro da applicare',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'field' => [
             'label' => 'Campo',
             'placeholder' => 'Seleziona il campo da filtrare',
             'help' => 'Campo del database da filtrare',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'operator' => [
             'label' => 'Operatore',
             'placeholder' => 'Seleziona l\'operatore',
             'help' => 'Operatore di confronto per il filtro',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'value' => [
             'label' => 'Valore',
             'placeholder' => 'Inserisci il valore del filtro',
             'help' => 'Valore per il confronto del filtro',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'min_value' => [
             'label' => 'Valore minimo',
             'placeholder' => 'Inserisci il valore minimo',
             'help' => 'Valore minimo per il range del filtro',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'max_value' => [
             'label' => 'Valore massimo',
             'placeholder' => 'Inserisci il valore massimo',
             'help' => 'Valore massimo per il range del filtro',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'is_active' => [
             'label' => 'Attivo',
             'help' => 'Indica se il filtro è attivo',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'priority' => [
             'label' => 'Priorità',
             'placeholder' => 'Inserisci la priorità del filtro',
             'help' => 'Priorità di applicazione del filtro',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'description' => [
             'label' => 'Descrizione',
             'placeholder' => 'Inserisci una descrizione',
             'help' => 'Descrizione del filtro',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'validation' => [
@@ -198,6 +228,7 @@ return [
         'phone_code' => 'Prefisso telefonico',
     ],
     'filter_priorities' => [
+<<<<<<< HEAD
         1 => 'Molto bassa',
         2 => 'Bassa',
         3 => 'Media',
@@ -227,5 +258,12 @@ return [
         'delete' => [
             'label' => 'Elimina Filters',
         ],
+=======
+        '1' => 'Molto bassa',
+        '2' => 'Bassa',
+        '3' => 'Media',
+        '4' => 'Alta',
+        '5' => 'Molto alta',
+>>>>>>> 6ed19256f (.)
     ],
 ];

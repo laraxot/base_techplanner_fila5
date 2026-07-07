@@ -10,7 +10,10 @@ return [
             'help' => 'Identificerende naam van het element',
             'description' => 'Objectnaam',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'edit-name' => [
             'label' => 'Naam bewerken',
@@ -18,7 +21,10 @@ return [
             'help' => 'Bestaande naam wijzigen',
             'description' => 'Actie om de naam te wijzigen',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'change-state' => [
             'label' => 'Status wijzigen',
@@ -26,7 +32,10 @@ return [
             'help' => 'Huidige status wijzigen',
             'description' => 'Actie om de status te wijzigen',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'state' => [
             'label' => 'Status',
@@ -34,7 +43,10 @@ return [
             'help' => 'Huidige status van het element',
             'description' => 'Huidige systeemconditie',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'message' => [
             'label' => 'Bericht',
@@ -42,7 +54,10 @@ return [
             'help' => 'Informatief bericht',
             'description' => 'Berichttekst',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'messages' => [
@@ -56,6 +71,7 @@ return [
             'title' => 'Overgangsfout',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -67,4 +83,6 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

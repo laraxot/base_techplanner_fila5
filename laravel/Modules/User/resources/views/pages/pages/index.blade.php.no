@@ -153,7 +153,10 @@ render(function (View $view) {
             @forelse($pages as $page)
                 <a
                     href="{{ url('/' . $locale . '/pages/' . $page->slug) }}"
+<<<<<<< HEAD
                     href="{{ url('/' . $locale . '/' . $page->slug) }}"
+=======
+>>>>>>> 6ed19256f (.)
                     class="group flex flex-col h-full overflow-hidden bg-white rounded-lg shadow hover:shadow-md transition duration-300"
                 >
                     @if(isset($page->featured_image) && $page->featured_image)
@@ -254,4 +257,8 @@ render(function (View $view) {
             </div>
         @endif
     </div>
+<<<<<<< HEAD
 </x-layouts.marketing>
+=======
+</x-layouts.marketing>
+>>>>>>> 6ed19256f (.)

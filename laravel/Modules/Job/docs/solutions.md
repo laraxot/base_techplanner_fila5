@@ -352,9 +352,12 @@ class RetryTest extends TestCase {
 * [solutions.md](../../../Gdpr/docs/solutions.md)
 * [solutions.md](../../../Xot/docs/solutions.md)
 * [solutions.md](../../../Job/docs/solutions.md)
+<<<<<<< HEAD
 * [solutions.md](../../../gdpr/docs/solutions.md)
 * [solutions.md](../../../xot/docs/solutions.md)
 * [solutions.md](../../../job/docs/solutions.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Versione Incoming
 
@@ -366,4 +369,8 @@ class RetryTest extends TestCase {
 
    - Aggiornamento strategie retry
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> 6ed19256f (.)

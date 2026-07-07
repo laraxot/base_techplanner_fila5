@@ -127,8 +127,12 @@ class GeoDataService
     public function getCap(string $provinceCode, string $cityCode): ?string
     {
         $cities = $this->getCities($provinceCode);
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         $city = collect($cities)
             ->firstWhere('id', $cityCode);
 
@@ -168,7 +172,10 @@ class LocationForm
 
                     'province' => Select::make('province')
                         ->options(fn (Get $get) =>
+<<<<<<< HEAD
                         ->options(fn (Get $get) => 
+=======
+>>>>>>> 6ed19256f (.)
                             $geoService->getProvinces($get('region'))
                         )
                         ->searchable()
@@ -180,7 +187,10 @@ class LocationForm
 
                     'city' => Select::make('city')
                         ->options(fn (Get $get) =>
+<<<<<<< HEAD
                         ->options(fn (Get $get) => 
+=======
+>>>>>>> 6ed19256f (.)
                             $geoService->getCities($get('province'))
                         )
                         ->searchable()
@@ -192,7 +202,10 @@ class LocationForm
 
                     'cap' => Select::make('cap')
                         ->options(fn (Get $get) =>
+<<<<<<< HEAD
                         ->options(fn (Get $get) => 
+=======
+>>>>>>> 6ed19256f (.)
                             collect($geoService->getCities($get('province')))
                                 ->firstWhere('id', $get('city'))['cap']
                         )
@@ -273,6 +286,9 @@ class GeoDataValidator
 - [Documentazione Squire](../../Geo/project_docs/squire-integration.md)
 - [Best Practices Filament](../../../project_docs/filament-best-practices.md)
 - [Clean Code](../../../project_docs/clean-code.md)
+<<<<<<< HEAD
 - [Documentazione Squire](../../geo/project_docs/squire-integration.md)
 - [Best Practices Filament](../../../../docs/project/filament-best-practices.md)
 - [Clean Code](../../../../docs/project/clean-code.md) 
+=======
+>>>>>>> 6ed19256f (.)

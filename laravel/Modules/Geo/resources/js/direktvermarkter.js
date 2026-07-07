@@ -60,7 +60,11 @@ var blackMarker = L.ExtraMarkers.icon({
 
 //Marker
 
+<<<<<<< HEAD
 var geojson1 = L.geoJson(sampleGeoJsonData, {
+=======
+var geojson1 = L.geoJson(farmshopGeoJson, {
+>>>>>>> 6ed19256f (.)
     pointToLayer: function pointToLayer(feature, latlng)
     {
         if (feature.properties.p === 'beekeeper') {
@@ -223,4 +227,8 @@ L.control.locate({
         inView: 'setView',
         outOfView: 'setView'
     }
+<<<<<<< HEAD
 }).addTo(map);
+=======
+}).addTo(map);
+>>>>>>> 6ed19256f (.)

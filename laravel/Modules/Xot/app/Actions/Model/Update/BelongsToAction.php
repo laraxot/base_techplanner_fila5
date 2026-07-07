@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Model\Update;
 
+<<<<<<< HEAD
+=======
+use Exception;
+>>>>>>> 6ed19256f (.)
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -32,9 +36,15 @@ class BelongsToAction
          * }
          */
 
+<<<<<<< HEAD
         if (! Arr::isAssoc($relationDTO->data) && 1 === \count($relationDTO->data)) {
             $related_id = reset($relationDTO->data);
             if (null === $related_id) {
+=======
+        if (! Arr::isAssoc($relationDTO->data) && \count($relationDTO->data) === 1) {
+            $related_id = Arr::first($relationDTO->data);
+            if ($related_id === null) {
+>>>>>>> 6ed19256f (.)
                 return;
             }
 
@@ -44,8 +54,13 @@ class BelongsToAction
                 $related = $related->first(); // Prendi il primo modello della collezione
             }
 
+<<<<<<< HEAD
             if (! $related instanceof Model) {
                 throw new \Exception('Expected a single model, got null or invalid object.');
+=======
+            if (! ($related instanceof Model)) {
+                throw new Exception('Expected a single model, got null or invalid object.');
+>>>>>>> 6ed19256f (.)
             }
             $res = $rows->associate($related);
             $res->save();
@@ -56,8 +71,13 @@ class BelongsToAction
         if (Arr::isAssoc($relationDTO->data)) {
             $sub = $rows->firstOrCreate();
             // $sub = $rows->first() ?? $rows->getModel();
+<<<<<<< HEAD
             if (null === $sub) {
                 throw new \Exception('['.__LINE__.']['.class_basename($this).']');
+=======
+            if ($sub === null) {
+                throw new Exception('['.__LINE__.']['.class_basename($this).']');
+>>>>>>> 6ed19256f (.)
             }
 
             app(RelationAction::class)->execute($sub, $relationDTO->data);

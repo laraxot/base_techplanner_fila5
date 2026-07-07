@@ -48,6 +48,7 @@ Il file JSON generato contiene:
 5. Conforme alle convenzioni Laraxot/<nome progetto>
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Database Guidelines](../database-guidelines.md)
 - [Schema Documentation](../directory-structure-guide.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
@@ -72,6 +73,8 @@ Il file JSON generato contiene:
 ## Collegamenti tra versioni di database-schema-exporter.md
 * [database-schema-exporter.md](../../../xot/docs/commands/database-schema-exporter.md)
 * [database-schema-exporter.md](../../../xot/docs/console/commands/database-schema-exporter.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Database Guidelines](../DATABASE-GUIDELINES.md)
 - [Schema Documentation](../DIRECTORY-STRUCTURE-GUIDE.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
@@ -95,4 +98,8 @@ Il file JSON generato contiene:
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
 ## Collegamenti tra versioni di database-schema-exporter.md
 * [database-schema-exporter.md](../../../Xot/docs/commands/database-schema-exporter.md)
+<<<<<<< HEAD
 * [database-schema-exporter.md](../../../Xot/docs/console/commands/database-schema-exporter.md)
+=======
+* [database-schema-exporter.md](../../../Xot/docs/console/commands/database-schema-exporter.md)
+>>>>>>> 6ed19256f (.)

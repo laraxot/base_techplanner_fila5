@@ -8,73 +8,100 @@ return [
             'label' => 'Endpoint',
             'placeholder' => 'Enter API endpoint',
             'help' => 'URL of the API endpoint',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'method' => [
             'label' => 'Method',
             'placeholder' => 'Select HTTP method',
             'help' => 'HTTP method for the request',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'headers' => [
             'label' => 'Headers',
             'placeholder' => 'Configure request headers',
             'help' => 'HTTP headers for the request',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'parameters' => [
             'label' => 'Parameters',
             'placeholder' => 'Configure request parameters',
             'help' => 'Parameters for the API request',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'body' => [
             'label' => 'Body',
             'placeholder' => 'Enter request body',
             'help' => 'HTTP request body',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'timeout' => [
             'label' => 'Timeout',
             'placeholder' => 'Enter timeout in seconds',
             'help' => 'Request timeout in seconds',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'retries' => [
             'label' => 'Retries',
             'placeholder' => 'Enter number of retries',
             'help' => 'Number of retries for the request',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'rate_limit' => [
             'label' => 'Rate Limit',
             'placeholder' => 'Enter rate limit',
             'help' => 'Requests per minute limit',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'authentication' => [
             'label' => 'Authentication',
             'placeholder' => 'Configure authentication',
             'help' => 'API authentication configuration',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'validation' => [
@@ -165,6 +192,7 @@ return [
         'multipart' => 'Multipart',
     ],
     'status_codes' => [
+<<<<<<< HEAD
         200 => '200 - OK',
         201 => '201 - Created',
         204 => '204 - No Content',
@@ -188,5 +216,19 @@ return [
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'actions' => [
+=======
+        '200' => '200 - OK',
+        '201' => '201 - Created',
+        '204' => '204 - No Content',
+        '400' => '400 - Bad Request',
+        '401' => '401 - Unauthorized',
+        '403' => '403 - Forbidden',
+        '404' => '404 - Not Found',
+        '429' => '429 - Too Many Requests',
+        '500' => '500 - Internal Server Error',
+        '502' => '502 - Bad Gateway',
+        '503' => '503 - Service Unavailable',
+        '504' => '504 - Gateway Timeout',
+>>>>>>> 6ed19256f (.)
     ],
 ];

@@ -253,11 +253,14 @@ To use the widget in a Blade view:
 
 ## Backlinks and References
 
+<<<<<<< HEAD
 - [Ptv Module - Calendar Usage](../../ptv/docs/features/full_calendar.md)
 - [Official Saade FullCalendar Documentation](https://github.com/saade/filament-fullcalendar)
 - [FullCalendar.io Documentation](https://fullcalendar.io/docs)
 
 *
+=======
+>>>>>>> 6ed19256f (.)
 - [Ptv Module - Calendar Usage](../../Ptv/docs/features/full_calendar.md)
 - [Official Saade FullCalendar Documentation](https://github.com/saade/filament-fullcalendar)
 - [FullCalendar.io Documentation](https://fullcalendar.io/docs)
@@ -518,13 +521,20 @@ To use the widget in a Blade view:
 
 ## Backlinks and References
 
+<<<<<<< HEAD
 - [Ptv Module - Calendar Usage](../../ptv/docs/features/full_calendar.md)
 - [Official Saade FullCalendar Documentation](https://github.com/saade/filament-fullcalendar)
 - [FullCalendar.io Documentation](https://fullcalendar.io/docs)
 
 *
+=======
+>>>>>>> 6ed19256f (.)
 - [Ptv Module - Calendar Usage](../../Ptv/docs/features/full_calendar.md)
 - [Official Saade FullCalendar Documentation](https://github.com/saade/filament-fullcalendar)
 - [FullCalendar.io Documentation](https://fullcalendar.io/docs)
 
+<<<<<<< HEAD
 *Last updated: June 2025*
+=======
+*Last updated: June 2025*
+>>>>>>> 6ed19256f (.)

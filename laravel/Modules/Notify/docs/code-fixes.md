@@ -1,7 +1,10 @@
 # Notify Module - Code Fixes & Improvements (2025)
 
 > **Last Updated:** 2025-11-23
+<<<<<<< HEAD
 > **Last Updated:** 2025-11-23
+=======
+>>>>>>> 6ed19256f (.)
 > **PHPStan Level:** Target 10
 > **Status:** Major Syntax Fixes Completed
 
@@ -394,4 +397,8 @@ The Notify module has undergone a complete syntax cleanup, resolving 41 files wi
 
 **Document Version:** 1.0
 **Author:** Claude Code Analysis
+<<<<<<< HEAD
 **Next Review:** After PHPStan L10 completion
+=======
+**Next Review:** After PHPStan L10 completion
+>>>>>>> 6ed19256f (.)

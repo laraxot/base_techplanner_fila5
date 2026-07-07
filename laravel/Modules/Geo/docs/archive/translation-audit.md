@@ -81,9 +81,12 @@ Translation files include extra messages beyond immediate needs to:
 - **Primary**: [User Module Login Widget Audit](../laravel/Modules/User/docs/login-widget-translation-audit.md)
 - **Supporting**: [Widget Translation Rules](../laravel/Modules/User/docs/widget-translation-rules.md)
 - **Architecture**: [User Authentication Documentation](../laravel/Modules/User/docs/authentication.md)
+<<<<<<< HEAD
 - **Primary**: [User Module Login Widget Audit](../laravel/modules/user/docs/login-widget-translation-audit.md)
 - **Supporting**: [Widget Translation Rules](../laravel/modules/user/docs/widget-translation-rules.md)
 - **Architecture**: [User Authentication Documentation](../laravel/modules/user/docs/authentication.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Development Standards
 This audit reinforces the following project standards:
@@ -143,8 +146,11 @@ The comprehensive approach taken demonstrates:
 ### Module Level
 - [User Module Translation Guidelines](../laravel/Modules/User/docs/widget-translation-rules.md)
 - [User Module Authentication](../laravel/Modules/User/docs/authentication.md)
+<<<<<<< HEAD
 - [User Module Translation Guidelines](../laravel/modules/user/docs/widget-translation-rules.md)
 - [User Module Authentication](../laravel/modules/user/docs/authentication.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Widget Development Standards](../laravel/Modules/User/docs/widgets/)
 
 ### Project Level
@@ -159,4 +165,8 @@ This translation audit successfully resolved critical missing translation files 
 The audit serves as a template for future translation audits and reinforces the importance of maintaining the documentation folders as the project's institutional memory.
 
 *Audit conducted: 2025-01-06*
+<<<<<<< HEAD
 *Next review: As needed for new components*
+=======
+*Next review: As needed for new components*
+>>>>>>> 6ed19256f (.)

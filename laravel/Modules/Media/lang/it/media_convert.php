@@ -12,6 +12,7 @@ return [
     'fields' => [
         'applyFilters' => [
             'label' => 'applyFilters',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -97,6 +98,11 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Media Convert',
+=======
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+>>>>>>> 6ed19256f (.)
         ],
     ],
 ];

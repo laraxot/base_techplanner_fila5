@@ -70,8 +70,14 @@ php artisan activity:shop:checkout cart_12345_xxx
 - [Build from Scratch](./build_from_scratch.md)
 - [README Prediction Market](../prediction_market/README.md)
 - [README Bank](../bank/README.md)
+<<<<<<< HEAD
 - [README <nome progetto>ion Market](../<nome progetto>ion_market/readme.md)
 - [README Bank](../bank/readme.md)
 
 ---
 **Questa documentazione è neutra e riutilizzabile, senza riferimenti a progetti specifici, e segue le regole di neutralità e modularità.**
+=======
+
+---
+**Questa documentazione è neutra e riutilizzabile, senza riferimenti a progetti specifici, e segue le regole di neutralità e modularità.**
+>>>>>>> 6ed19256f (.)

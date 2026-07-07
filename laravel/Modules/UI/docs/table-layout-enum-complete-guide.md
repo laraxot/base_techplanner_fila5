@@ -361,8 +361,11 @@ dd($this->layout->getTableContentGrid());
 
 ## Ultimo Aggiornamento
 2025-01-27 - Documentazione completa TableLayoutEnum
+<<<<<<< HEAD
 - [Translation Standards](../../xot/docs/translation-standards.md)
 - [Enum Standards](../../../../docs/enum_standards.md)
 
 ## Ultimo Aggiornamento
 [DATE] - Documentazione completa TableLayoutEnum
+=======
+>>>>>>> 6ed19256f (.)

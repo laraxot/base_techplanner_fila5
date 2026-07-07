@@ -10,6 +10,10 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Modules\Tenant\Models\Traits\SushiToPhpArray;
+<<<<<<< HEAD
+=======
+use Modules\User\Database\Factories\SocialProviderFactory;
+>>>>>>> 6ed19256f (.)
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
@@ -26,6 +30,10 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
+<<<<<<< HEAD
+=======
+ * @method static SocialProviderFactory  factory($count = null, $state = [])
+>>>>>>> 6ed19256f (.)
  * @method static Builder|SocialProvider newModelQuery()
  * @method static Builder|SocialProvider newQuery()
  * @method static Builder|SocialProvider query()
@@ -54,14 +62,21 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @property ProfileContract|null $deleter
  *
+<<<<<<< HEAD
  * @method static \Modules\User\Database\Factories\SocialProviderFactory factory($count = null, $state = [])
  *
+=======
+>>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class SocialProvider extends BaseModel
 {
     use SushiToPhpArray;
 
+<<<<<<< HEAD
+=======
+    /** @var bool */
+>>>>>>> 6ed19256f (.)
     public $incrementing = false;
 
     /** @var list<string> */

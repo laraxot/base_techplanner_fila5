@@ -5,7 +5,10 @@
 **Priorità**: MEDIUM
 **Allineamento**: Laravel 11.x/12-ready · Filament 4.x compatibile · PHPStan Level 9 ✅
 **Last Updated**: 2025-10-02
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 **Quality Score**: 96/100 🏆
 
 ## 🎯 Validation Status
@@ -288,7 +291,10 @@
 ### Collegamenti Interni
 - [Bottlenecks](bottlenecks.md)
 - [Best Practices](BEST-PRACTICES.md)
+<<<<<<< HEAD
 - [Best Practices](best-practices.md)
+=======
+>>>>>>> 6ed19256f (.)
 ## Note
 - Le percentuali sono aggiornate mensilmente
 - I dettagli specifici sono disponibili nelle sottocartelle
@@ -297,6 +303,7 @@
 ## Collegamenti tra versioni di roadmap.md
 - [roadmap.md](bashscripts/docs/roadmap.md)
 - [roadmap.md](docs/roadmap.md)
+<<<<<<< HEAD
 - [roadmap.md](laravel/modules/gdpr/docs/roadmap.md)
 - [roadmap.md](laravel/modules/notify/docs/roadmap.md)
 - [roadmap.md](laravel/modules/xot/docs/roadmap.md)
@@ -311,6 +318,8 @@
 - [roadmap.md](laravel/modules/patient/docs/roadmap.md)
 - [roadmap.md](laravel/modules/cms/docs/roadmap.md)
 - [roadmap.md](laravel/themes/one/docs/roadmap.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [roadmap.md](laravel/Modules/Gdpr/docs/roadmap.md)
 - [roadmap.md](laravel/Modules/Notify/docs/roadmap.md)
 - [roadmap.md](laravel/Modules/Xot/docs/roadmap.md)
@@ -324,4 +333,8 @@
 - [roadmap.md](laravel/Modules/Activity/docs/roadmap.md)
 - [roadmap.md](laravel/Modules/Patient/docs/roadmap.md)
 - [roadmap.md](laravel/Modules/Cms/docs/roadmap.md)
+<<<<<<< HEAD
 - [roadmap.md](laravel/Themes/One/docs/roadmap.md)
+=======
+- [roadmap.md](laravel/Themes/One/docs/roadmap.md)
+>>>>>>> 6ed19256f (.)

@@ -5,6 +5,10 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\ModelClass;
 
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
+=======
+use InvalidArgumentException;
+>>>>>>> 6ed19256f (.)
 use Modules\Xot\Models\InformationSchemaTable;
 use Spatie\QueueableAction\QueueableAction;
 
@@ -18,11 +22,19 @@ class CountAction
     /**
      * Execute the count action for the given model class.
      *
+<<<<<<< HEAD
      * @param class-string<Model> $modelClass The fully qualified model class name
      *
      * @throws \InvalidArgumentException If model class is invalid or not found
      *
      * @return int The total count of records
+=======
+     * @param  class-string<Model>  $modelClass  The fully qualified model class name
+     *
+     * @return int The total count of records
+     *
+     * @throws InvalidArgumentException If model class is invalid or not found
+>>>>>>> 6ed19256f (.)
      */
     public function execute(string $modelClass): int
     {

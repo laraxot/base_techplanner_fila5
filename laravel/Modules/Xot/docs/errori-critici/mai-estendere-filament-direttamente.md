@@ -414,7 +414,10 @@ return [
 
 ### Errori Simili Documentati
 - [No Hint Path Defined](../../Activity/docs/errori/no-hint-path-defined.md)
+<<<<<<< HEAD
 - [No Hint Path Defined](../../activity/docs/errori/no-hint-path-defined.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Service Provider Issues](./service-provider-issues.md)
 
 ---
@@ -422,4 +425,8 @@ return [
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **Severità**: CRITICA
 **Categoria**: Violazione Architettura Fondamentale
+<<<<<<< HEAD
 **Status**: ✅ CORRETTO e DOCUMENTATO
+=======
+**Status**: ✅ CORRETTO e DOCUMENTATO
+>>>>>>> 6ed19256f (.)

@@ -7,44 +7,65 @@ return [
         'id' => [
             'label' => 'ID',
             'tooltip' => 'Unique identifier of the activity',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'description' => [
             'label' => 'Description',
             'tooltip' => 'Description of the activity',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'subject_type' => [
             'label' => 'Subject Type',
             'tooltip' => 'Type of entity subject to the activity',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'subject_id' => [
             'label' => 'Subject ID',
             'tooltip' => 'Identifier of the entity subject to the activity',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'causer_type' => [
             'label' => 'Causer Type',
             'tooltip' => 'Type of entity that caused the activity',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'causer_id' => [
             'label' => 'Causer ID',
             'tooltip' => 'Identifier of the entity that caused the activity',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'created_at' => [
             'label' => 'Created At',
             'tooltip' => 'Date and time when the activity was created',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -96,6 +117,7 @@ return [
             ],
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -105,4 +127,6 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

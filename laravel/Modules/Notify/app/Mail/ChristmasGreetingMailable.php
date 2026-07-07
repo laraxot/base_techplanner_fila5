@@ -24,7 +24,12 @@ class ChristmasGreetingMailable extends Mailable
     public function __construct(
         public string $recipientName = 'Cliente Valutato',
         public string $senderName = 'Il Team del nostro Studio',
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> 6ed19256f (.)
 
     /**
      * Get the message envelope.

@@ -53,6 +53,7 @@ The `Geo` module, as the guardian of geographical data, can significantly benefi
 5.  **Sequential Thinking (MCP)**: Crucial for analyzing complex geo-spatial queries or geocoding workflows, helping to break down and understand intricate location-based processes.
 
 By leveraging these MCPs, the `Geo` module can ensure its critical role in managing geographical data is more efficient, verifiable, and transparent, ultimately contributing to more accurate and reliable location-aware applications.
+<<<<<<< HEAD
 ---
 module: theme
 topic: philosophy
@@ -60,3 +61,5 @@ canonical: ../../../Themes/docs/shared-components/philosophy.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/philosophy.md
+=======
+>>>>>>> 6ed19256f (.)

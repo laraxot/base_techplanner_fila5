@@ -12,8 +12,12 @@ Il sistema di widget è organizzato attorno a classi base che forniscono funzion
 
 ### Widget Base
 
+<<<<<<< HEAD
 - [XotBaseWidget](Modules/Xot/project_docs/filament/widgets/xotbasewidget.md) - Classe base per tutti i widget
 - [XotBaseWidget](modules/xot/project_docs/filament/widgets/xotbasewidget.md) - Classe base per tutti i widget
+=======
+- [XotBaseWidget](/var/www/html/base_generic/laravel/Modules/Xot/project_docs/filament/widgets/xotbasewidget.md) - Classe base per tutti i widget
+>>>>>>> 6ed19256f (.)
 
 ## Best Practices
 
@@ -39,4 +43,8 @@ class DashboardStatsWidget extends XotBaseWidget
         ];
     }
 }
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> 6ed19256f (.)

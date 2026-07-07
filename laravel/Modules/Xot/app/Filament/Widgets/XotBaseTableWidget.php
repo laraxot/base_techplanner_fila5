@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
+<<<<<<< HEAD
 use Filament\Tables\Table;
 use Filament\Widgets\Concerns\InteractsWithPageFilters;
 use Filament\Widgets\TableWidget as FilamentTableWidget;
@@ -12,10 +13,14 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Livewire\Attributes\On;
 use Modules\Xot\Filament\Traits\HasXotTable;
+=======
+use Filament\Widgets\TableWidget as FilamentTableWidget;
+>>>>>>> 6ed19256f (.)
 use Modules\Xot\Filament\Traits\TransTrait;
 
 abstract class XotBaseTableWidget extends FilamentTableWidget
 {
+<<<<<<< HEAD
     // use TransTrait;
     use HasXotTable;
     use InteractsWithPageFilters;
@@ -77,4 +82,7 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
 
         return '' !== $search ? $search : null;
     }
+=======
+    use TransTrait;
+>>>>>>> 6ed19256f (.)
 }

@@ -228,12 +228,18 @@ I file usano chiavi di traduzione nidificate che rimandano a chiavi principali:
 
 - [Translation Standards](../../Xot/docs/translation-standards.md)
 - [Navigation Translations Fixes](../../Lang/docs/navigation-translations-fixes.md)
+<<<<<<< HEAD
 - [Translation Standards](../../xot/docs/translation-standards.md)
 - [Navigation Translations Fixes](../../lang/docs/navigation-translations-fixes.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ---
 
 **Status**: 📝 **ROADMAP CREATA - PRONTA PER IMPLEMENTAZIONE**
 
 **Ultimo aggiornamento**: 2026-01-09
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+>>>>>>> 6ed19256f (.)

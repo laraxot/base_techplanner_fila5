@@ -8,80 +8,111 @@ return [
             'label' => 'Formato',
             'placeholder' => 'Seleziona il formato di esportazione',
             'help' => 'Formato del file di esportazione',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'encoding' => [
             'label' => 'Codifica',
             'placeholder' => 'Seleziona la codifica',
             'help' => 'Codifica del file di esportazione',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'delimiter' => [
             'label' => 'Delimitatore',
             'placeholder' => 'Seleziona il delimitatore',
             'help' => 'Delimitatore per file CSV',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'include_headers' => [
             'label' => 'Includi intestazioni',
             'help' => 'Includi le intestazioni delle colonne',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'fields' => [
             'label' => 'Campi',
             'placeholder' => 'Seleziona i campi da esportare',
             'help' => 'Campi da includere nell\'esportazione',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'filters' => [
             'label' => 'Filtri',
             'placeholder' => 'Configura i filtri per l\'esportazione',
             'help' => 'Filtri da applicare ai dati da esportare',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'sort_by' => [
             'label' => 'Ordina per',
             'placeholder' => 'Seleziona il campo di ordinamento',
             'help' => 'Campo per ordinare i dati esportati',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'sort_direction' => [
             'label' => 'Direzione ordinamento',
             'placeholder' => 'Seleziona la direzione',
+<<<<<<< HEAD
             'help' => 'Direzione dell\'ordinamento (crescente/decrescente]',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+            'help' => 'Direzione dell\'ordinamento (crescente/decrescente)',
+>>>>>>> 6ed19256f (.)
         ],
         'limit' => [
             'label' => 'Limite',
             'placeholder' => 'Inserisci il numero massimo di record',
             'help' => 'Numero massimo di record da esportare',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'compression' => [
             'label' => 'Compressione',
             'placeholder' => 'Seleziona il tipo di compressione',
             'help' => 'Tipo di compressione per il file di esportazione',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'validation' => [
@@ -131,10 +162,17 @@ return [
         'ascii' => 'ASCII',
     ],
     'delimiters' => [
+<<<<<<< HEAD
         'comma' => 'Virgola (,]',
         'semicolon' => 'Punto e virgola (;]',
         'tab' => 'Tab',
         'pipe' => 'Pipe (|]',
+=======
+        'comma' => 'Virgola (,)',
+        'semicolon' => 'Punto e virgola (;)',
+        'tab' => 'Tab',
+        'pipe' => 'Pipe (|)',
+>>>>>>> 6ed19256f (.)
         'space' => 'Spazio',
     ],
     'compression_types' => [
@@ -148,6 +186,7 @@ return [
         'asc' => 'Crescente',
         'desc' => 'Decrescente',
     ],
+<<<<<<< HEAD
     'label' => 'Export',
     'plural_label' => 'Export (Plurale)',
     'navigation' => [
@@ -172,4 +211,6 @@ return [
             'label' => 'Elimina Export',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

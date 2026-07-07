@@ -3,6 +3,7 @@
 ## Principle (MANDATORY)
 - Base modules MUST NOT depend on specific/domain modules.
 - Allowed dependencies for `Modules/User`: `Modules/Xot`, `Modules/UI`, other base/intermediate modules.
+<<<<<<< HEAD
 - Forbidden: any import from `Modules/<nome progetto>`, `Modules/Patient`, `Modules/Doctor`, etc.
 
 ## Symptoms of violations
@@ -11,6 +12,16 @@
 
 ## Remediation options
 - Option A (move): Move feature-specific classes into the domain module (e.g., `<nome progetto>`) and update namespaces.
+=======
+- Forbidden: any import from `Modules/SaluteOra`, `Modules/Patient`, `Modules/Doctor`, etc.
+
+## Symptoms of violations
+- `use Modules\SaluteOra\...` inside `Modules/User/...`
+- Widgets/Resources/Providers in `User` referencing domain types like `Patient`, `Appointment`, etc.
+
+## Remediation options
+- Option A (move): Move feature-specific classes into the domain module (e.g., `SaluteOra`) and update namespaces.
+>>>>>>> 6ed19256f (.)
 - Option B (contract): Define a contract in `Modules\User\Contracts\...` (e.g., `UserTypeStatProvider`) and implement/bind it inside the domain module’s ServiceProvider.
 
 ## Test policy alignment

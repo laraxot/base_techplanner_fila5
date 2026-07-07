@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
+<<<<<<< HEAD
+=======
+use Filament\Forms\Components\DatePicker;
+>>>>>>> 6ed19256f (.)
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
@@ -49,4 +53,8 @@ class PasswordResetResource extends XotBaseResource
     {
         return parent::getEloquentQuery();
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 6ed19256f (.)

@@ -292,4 +292,8 @@ class ComplianceHeatmapChart extends HeatmapChartWidget
 ---
 
 **Autore**: PTVX Development Team
+<<<<<<< HEAD
 **Ultimo Aggiornamento**: 2025-12-09
+=======
+**Ultimo Aggiornamento**: 2025-12-09
+>>>>>>> 6ed19256f (.)

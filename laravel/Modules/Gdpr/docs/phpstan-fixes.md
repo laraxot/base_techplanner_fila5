@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+# PHPStan Fixes - Modulo Gdpr
+
+## ✅ Status: 90 Errori Rimanenti (94 → 90)
+
+>>>>>>> 6ed19256f (.)
 **Data**: 11 Ottobre 2025
 **Errori Risolti**: 4 ✅
 
@@ -25,6 +32,7 @@
 
 **Status**: ✅ BaseModel corretti
 **Prossimo**: Lang (185 errori)
+<<<<<<< HEAD
 # GDPR Module - PHPStan Fixes Session 2025-10-01
 
 ## ✅ Stato: ZERO ERRORI - PHPStan Level 9 Compliance
@@ -156,3 +164,5 @@ Il modulo GDPR gestisce:
 **Status**: ✅ COMPLETATO  
 **PHPStan Level**: 9  
 **Maintenance**: Nessuna azione richiesta
+=======
+>>>>>>> 6ed19256f (.)

@@ -5,8 +5,11 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Resources\Pages;
 
 use Filament\Actions\Action;
+<<<<<<< HEAD
 use Filament\Actions\ActionGroup;
 use Filament\Actions\CreateAction;
+=======
+>>>>>>> 6ed19256f (.)
 use Filament\Resources\Pages\ListRecords as FilamentListRecords;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Builder;
@@ -19,9 +22,15 @@ use Webmozart\Assert\Assert;
 /**
  * Base class for list records pages.
  *
+<<<<<<< HEAD
  * @property ?string         $model
  * @property ?string         $resource
  * @property ?string         $slug
+=======
+ * @property ?string $model
+ * @property ?string $resource
+ * @property ?string $slug
+>>>>>>> 6ed19256f (.)
  * @property TableLayoutEnum $layoutView
  */
 abstract class XotBaseListRecords extends FilamentListRecords
@@ -64,24 +73,41 @@ abstract class XotBaseListRecords extends FilamentListRecords
     /**
      * Get the header actions.
      *
+<<<<<<< HEAD
      * @return array<string, Action|ActionGroup>
+=======
+     * @return array<string, Action>
+>>>>>>> 6ed19256f (.)
      */
     protected function getHeaderActions(): array
     {
         return [
+<<<<<<< HEAD
             'create' => CreateAction::make()->icon('heroicon-o-plus'),
+=======
+            // \Filament\Actions\CreateAction::make(),
+            // ExportXlsAction::make('export_xls'),
+>>>>>>> 6ed19256f (.)
         ];
     }
 
     /**
      * Paginate the table query.
      */
+<<<<<<< HEAD
     protected function paginateTableQueryOLD(Builder $query): Paginator
     {
         $perPage = $this->getTableRecordsPerPage();
         $perPageValue = 'all' === $perPage ? $query->count() : (is_numeric($perPage) ? (int) $perPage : null);
 
         $paginator = $query->paginate($perPageValue);
+=======
+    protected function paginateTableQuery(Builder $query): Paginator
+    {
+        $paginator = $query->fastPaginate(
+            $this->getTableRecordsPerPage() === 'all' ? $query->count() : $this->getTableRecordsPerPage(),
+        );
+>>>>>>> 6ed19256f (.)
 
         Assert::isInstanceOf($paginator, Paginator::class);
 

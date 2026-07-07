@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 📚 **Indice Documentazione Modulo UI**
 
 **Status**: ✅ PHPStan Level 10 Compliant
@@ -105,3 +106,7 @@
 ## Dependency Intelligence
 
 - [Dependency intelligence](dependency-intelligence.md)
+=======
+# Documentation Index
+# Documentation Index
+>>>>>>> 6ed19256f (.)

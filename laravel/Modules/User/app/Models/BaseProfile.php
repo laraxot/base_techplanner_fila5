@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
+<<<<<<< HEAD
 // // use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
@@ -11,6 +12,16 @@ use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Str;
+=======
+// use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\Concerns\HasUuids;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Notifications\DatabaseNotification;
+use Illuminate\Notifications\DatabaseNotificationCollection;
+use Illuminate\Notifications\Notifiable;
+>>>>>>> 6ed19256f (.)
 use Modules\Media\Models\Media;
 use Modules\User\Models\Traits\IsProfileTrait;
 use Modules\Xot\Contracts\ProfileContract;
@@ -23,8 +34,11 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
 
 /**
+<<<<<<< HEAD
  * @property int                                                       $id
  * @property string                                                    $uuid
+=======
+>>>>>>> 6ed19256f (.)
  * @property \Spatie\SchemalessAttributes\SchemalessAttributes         $extra
  * @property string                                                    $avatar
  * @property Collection<int, DeviceUser>                               $deviceUsers
@@ -55,24 +69,38 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
  * @method static Builder|ProfileContract permission($permissions, $without = false)
  * @method static Builder|ProfileContract query()
  * @method static Builder|ProfileContract role($roles, $guard = null, $without = false)
+<<<<<<< HEAD
  * @method static Builder|ProfileContract byUuid(string $uuid)
+=======
+>>>>>>> 6ed19256f (.)
  * @method static Builder|BaseProfile     withExtraAttributes()
  * @method static Builder|ProfileContract withoutPermission($permissions)
  * @method static Builder|ProfileContract withoutRole($roles, $guard = null)
  *
  * @mixin \Eloquent
  */
+<<<<<<< HEAD
 // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+=======
+>>>>>>> 6ed19256f (.)
 abstract class BaseProfile extends BaseModel implements ProfileContract
 {
     use HasChildren;
     use HasRoles;
+<<<<<<< HEAD
 
     // use HasUuids;
+=======
+    use HasUuids;
+>>>>>>> 6ed19256f (.)
     use InteractsWithMedia;
     use IsProfileTrait;
     use Notifiable;
     use SchemalessAttributesTrait;
+<<<<<<< HEAD
+=======
+    use SoftDeletes;
+>>>>>>> 6ed19256f (.)
 
     /**
      * Undocumented variable.
@@ -82,6 +110,10 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
 
     /** @var list<string> */
     protected $fillable = [
+<<<<<<< HEAD
+=======
+        'id',
+>>>>>>> 6ed19256f (.)
         'uuid',
         'user_id',
         'type',
@@ -112,6 +144,7 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
         'user',
     ];
 
+<<<<<<< HEAD
     /** @var list<string> */
     protected array $formlessAttributes = [
         'extra',
@@ -125,6 +158,13 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
         return $query->where('uuid', $uuid);
     }
 
+=======
+    /** @var array */
+    protected $formlessAttributes = [
+        'extra',
+    ];
+
+>>>>>>> 6ed19256f (.)
     // ✅ CORRETTO: NON implementare scopeWithExtraAttributes() manualmente
     // Il trait SchemalessAttributesTrait lo fornisce automaticamente!
     // NOTA: BaseProfile ha attributo 'extra' diretto, non relazione 'extra'
@@ -181,6 +221,7 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
 
         return $userLang;
     }
+<<<<<<< HEAD
     // use SoftDeletes;
 
     /**
@@ -194,13 +235,19 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
             }
         });
     }
+=======
+>>>>>>> 6ed19256f (.)
 
     /** @return array<string, string> */
     #[\Override]
     protected function casts(): array
     {
         return [
+<<<<<<< HEAD
             'id' => 'integer',
+=======
+            'id' => 'string',
+>>>>>>> 6ed19256f (.)
             'uuid' => 'string',
             'created_at' => 'datetime',
             'updated_at' => 'datetime',

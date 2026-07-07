@@ -406,4 +406,8 @@ fn (ModelType $item): ReturnType => ...
 
 ---
 
+<<<<<<< HEAD
 **Nota**: Tutte le correzioni seguono i principi DRY + KISS e mantengono la business logic invariata, migliorando solo la type safety e la verificabilità statica del codice.
+=======
+**Nota**: Tutte le correzioni seguono i principi DRY + KISS e mantengono la business logic invariata, migliorando solo la type safety e la verificabilità statica del codice.
+>>>>>>> 6ed19256f (.)

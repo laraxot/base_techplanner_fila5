@@ -24,42 +24,60 @@ return [
             'helper_text' => 'Seleziona il provider per l\'invio SMS',
             'placeholder' => 'Seleziona un driver',
             'label' => 'Driver',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'message' => [
             'description' => 'Contenuto del messaggio',
             'helper_text' => 'Testo del messaggio da inviare',
             'placeholder' => 'Scrivi il messaggio',
             'label' => 'Messaggio',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'phone' => [
             'description' => 'Numero di telefono',
             'helper_text' => 'Numero del destinatario',
             'placeholder' => 'Inserisci il numero',
             'label' => 'Numero telefono',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'gateway' => [
             'description' => 'Gateway SMS',
             'helper_text' => 'Gateway utilizzato per l\'invio',
             'placeholder' => 'Gateway SMS',
             'label' => 'Gateway',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'to' => [
             'description' => 'to',
             'helper_text' => 'to',
             'placeholder' => 'to',
             'label' => 'to',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'template_slug' => [
             'description' => 'template_slug',
             'helper_text' => 'template_slug',
             'placeholder' => 'template_slug',
             'label' => 'template_slug',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -81,6 +99,9 @@ return [
         'error' => 'Si è verificato un errore durante l\'invio dell\'SMS',
         'confirmation' => 'Sei sicuro di voler inviare questo SMS?',
     ],
+<<<<<<< HEAD
     'label' => 'Send Sms',
     'plural_label' => 'Send Sms (Plurale)',
+=======
+>>>>>>> 6ed19256f (.)
 ];

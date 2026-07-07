@@ -348,9 +348,15 @@ abstract class BaseModel extends XotBaseModel
 
 **Widget problematici**:
 - `Modules/UI/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
+<<<<<<< HEAD
 - `Modules/healthcare_app/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
 - `Modules/UI/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
 - `Modules/healthcare_app/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
+=======
+- `Modules/Quaeris/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
+- `Modules/UI/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
+- `Modules/Quaeris/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
+>>>>>>> 6ed19256f (.)
 
 **Soluzione DRY + KISS**:
 ```php
@@ -615,4 +621,8 @@ return array_merge(
 ---
 
 *Ultimo aggiornamento: Giugno 2025*
+<<<<<<< HEAD
 *Autore: Analisi Automatica del Progetto*
+=======
+*Autore: Analisi Automatica del Progetto*
+>>>>>>> 6ed19256f (.)

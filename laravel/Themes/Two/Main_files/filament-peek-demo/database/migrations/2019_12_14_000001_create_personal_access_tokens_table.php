@@ -35,5 +35,8 @@ return new class extends Migration
         Schema::dropIfExists('personal_access_tokens');
     }
 };
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 6ed19256f (.)

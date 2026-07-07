@@ -85,6 +85,7 @@
 ## 🔗 Collegamenti Moduli
 
 ### Documentazione Moduli
+<<<<<<< HEAD
 - [**<nome progetto>**](../modules/<nome progetto>/docs/readme.md) - Documentazione modulo core sanitario
 - [**<nome progetto>**](../modules/<nome progetto>/docs/readme.md) - Documentazione modulo core sanitario
 - [**User**](../modules/user/docs/readme.md) - Documentazione modulo gestione utenti
@@ -92,6 +93,8 @@
 - [**Media**](../modules/media/docs/readme.md) - Documentazione modulo gestione media
 - [**UI**](../modules/ui/docs/readme.md) - Documentazione modulo componenti UI
 - [**Xot**](../modules/xot/docs/readme.md) - Documentazione modulo base
+=======
+>>>>>>> 6ed19256f (.)
 - [**<nome progetto>**](../Modules/<nome progetto>/docs/README.md) - Documentazione modulo core sanitario
 - [**<nome progetto>**](../Modules/<nome progetto>/docs/README.md) - Documentazione modulo core sanitario
 - [**User**](../Modules/User/docs/README.md) - Documentazione modulo gestione utenti
@@ -100,6 +103,7 @@
 - [**UI**](../Modules/UI/docs/README.md) - Documentazione modulo componenti UI
 - [**Xot**](../Modules/Xot/docs/README.md) - Documentazione modulo base
 
+<<<<<<< HEAD
 ## 🗺️ Geo Filament Components
 
 ### Filosofia e Regole
@@ -116,6 +120,8 @@
 - LeafletMarkerMapInput - L'amarker con memoria
 - GeopointPicker - Il punto geografico puro
 
+=======
+>>>>>>> 6ed19256f (.)
 ## 📋 Convenzioni e Standard
 
 ### Naming e Struttura
@@ -127,4 +133,8 @@
 **Ultimo aggiornamento**: Gennaio 2025
 **Versione**: 3.0
 **Autore**: AI Assistant
+<<<<<<< HEAD
 **Stato**: Consolidata e Aggiornata
+=======
+**Stato**: Consolidata e Aggiornata
+>>>>>>> 6ed19256f (.)

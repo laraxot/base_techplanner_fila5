@@ -197,7 +197,10 @@ TextInput::make('full_name')
 - [Form Components](form-components.md)
 - [Naming Conventions](naming-conventions.md)
 - [Translation System](../../Lang/docs/translation-system.md)
+<<<<<<< HEAD
 - [Translation System](../../lang/docs/translation-system.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Vedi Anche
 - [VSCode PHP Setup](vscode-php-setup.md)
@@ -404,13 +407,20 @@ TextInput::make('full_name')
 - [Translation System](../../Lang/project_docs/translation-system.md)
 - [Translation System](../../Lang/project_docs/translation-system.md)
 - [Translation System](../../Lang/project_docs/translation-system.md)
+<<<<<<< HEAD
 - [Translation System](../../lang/project_docs/translation-system.md)
 - [Translation System](../../lang/project_docs/translation-system.md)
 - [Translation System](../../lang/project_docs/translation-system.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Vedi Anche
 - [VSCode PHP Setup](vscode-php-setup.md)
 - [Development Tools](development-tools.md)
 - [Filament Documentation](https://filamentphp.com/docs)
 - [Filament Documentation](https://filamentphp.com/docs)
+<<<<<<< HEAD
 - [Filament Documentation](https://filamentphp.com/docs)
+=======
+- [Filament Documentation](https://filamentphp.com/docs)
+>>>>>>> 6ed19256f (.)

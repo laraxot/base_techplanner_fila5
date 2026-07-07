@@ -21,7 +21,11 @@
     'modal_description' => 'Il referto odontoiatrico è in attesa di compilazione',
 ],
 
+<<<<<<< HEAD
 // Modulo <nome progetto>
+=======
+// Modulo SaluteMo
+>>>>>>> 6ed19256f (.)
 'model' => [
     'label' => 'Referto Odontoiatrico',
     'plural' => 'Referti Odontoiatrici',

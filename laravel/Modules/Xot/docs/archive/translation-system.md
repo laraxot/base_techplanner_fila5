@@ -460,4 +460,8 @@ Eseguire regolarmente questi controlli:
 
 *Ultimo aggiornamento: 2025-08-04*
 *Modulo: Xot*
+<<<<<<< HEAD
 *Categoria: Traduzioni*
+=======
+*Categoria: Traduzioni*
+>>>>>>> 6ed19256f (.)

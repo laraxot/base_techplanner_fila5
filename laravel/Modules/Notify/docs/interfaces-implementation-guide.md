@@ -10,22 +10,34 @@ Le interfacce sono organizzate in due livelli:
 
 1. **Interfacce Generiche**: Posizionate direttamente nella directory `app/Contracts/`
    ```
+<<<<<<< HEAD
    Modules/Notify/app/Contracts/SmsActionContract.php
    Modules/Notify/app/Contracts/SmsActionContract.php
    Modules/Notify/app/Contracts/SmsActionContract.php
    Modules/Notify/app/Contracts/SmsActionContract.php
    Modules/Notify/app/Contracts/SmsActionContract.php
    Modules/Notify/app/Contracts/SmsActionContract.php
+=======
+   /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Contracts/SmsActionContract.php
+   /var/www/html/saluteora/laravel/Modules/Notify/app/Contracts/SmsActionContract.php
+   /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Contracts/SmsActionContract.php
+>>>>>>> 6ed19256f (.)
    ```
 
 2. **Interfacce Specifiche per Canale**: Posizionate in sottodirectory dedicate
    ```
+<<<<<<< HEAD
    Modules/Notify/app/Contracts/SMS/SmsActionContract.php
    Modules/Notify/app/Contracts/SMS/SmsActionContract.php
    Modules/Notify/app/Contracts/SMS/SmsActionContract.php
    Modules/Notify/app/Contracts/SMS/SmsActionContract.php
    Modules/Notify/app/Contracts/SMS/SmsActionContract.php
    Modules/Notify/app/Contracts/SMS/SmsActionContract.php
+=======
+   /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Contracts/SMS/SmsActionContract.php
+   /var/www/html/saluteora/laravel/Modules/Notify/app/Contracts/SMS/SmsActionContract.php
+   /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Contracts/SMS/SmsActionContract.php
+>>>>>>> 6ed19256f (.)
    ```
 
 ### Convenzioni di Naming
@@ -34,7 +46,10 @@ Le interfacce sono organizzate in due livelli:
    ```php
    // ✅ CORRETTO
    interface SmsActionContract
+<<<<<<< HEAD
    
+=======
+>>>>>>> 6ed19256f (.)
 
    // ❌ ERRATO
    interface SmsActionInterface
@@ -44,7 +59,10 @@ Le interfacce sono organizzate in due livelli:
    ```php
    // Per interfacce nella directory principale
    namespace Modules\Notify\Contracts;
+<<<<<<< HEAD
    
+=======
+>>>>>>> 6ed19256f (.)
 
    // Per interfacce in sottodirectory
    namespace Modules\Notify\Contracts\SMS;
@@ -77,7 +95,10 @@ use Modules\Notify\Datas\SmsData;
 final class SendNetfunSMSAction implements SmsActionContract
 {
     // Implementazione...
+<<<<<<< HEAD
     
+=======
+>>>>>>> 6ed19256f (.)
 
     public function execute(SmsData $smsData): array
     {
@@ -121,12 +142,20 @@ Le interfacce sono organizzate in due livelli:
 
 1. **Interfacce Generiche**: Posizionate direttamente nella directory `app/Contracts/`
    ```
+<<<<<<< HEAD
    Modules/Notify/app/Contracts/SmsActionContract.php
+=======
+   /var/www/html/<directory progetto>/laravel/Modules/Notify/app/Contracts/SmsActionContract.php
+>>>>>>> 6ed19256f (.)
    ```
 
 2. **Interfacce Specifiche per Canale**: Posizionate in sottodirectory dedicate
    ```
+<<<<<<< HEAD
    Modules/Notify/app/Contracts/SMS/SmsActionContract.php
+=======
+   /var/www/html/<directory progetto>/laravel/Modules/Notify/app/Contracts/SMS/SmsActionContract.php
+>>>>>>> 6ed19256f (.)
    ```
 
 ### Convenzioni di Naming
@@ -206,4 +235,8 @@ Se si verifica l'errore `Interface "Modules\Notify\Contracts\SMS\SmsActionContra
 
 - [Convenzioni di Naming per le Interfacce](./INTERFACE_NAMING_CONVENTION.md)
 - [Chiarimento sulla Struttura delle Interfacce](./INTERFACE_STRUCTURE_CLARIFICATION.md)
+<<<<<<< HEAD
 - [Architettura dei Contratti](./CONTRACTS_ARCHITECTURE.md)
+=======
+- [Architettura dei Contratti](./CONTRACTS_ARCHITECTURE.md)
+>>>>>>> 6ed19256f (.)

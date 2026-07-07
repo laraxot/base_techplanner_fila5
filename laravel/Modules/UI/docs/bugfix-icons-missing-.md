@@ -99,6 +99,7 @@ php artisan config:clear
 ---
 
 **Data**: 27 Gennaio 2025
+<<<<<<< HEAD
 - [XotBaseServiceProvider](../xotbaseserviceprovider.md)
 
 ---
@@ -107,3 +108,9 @@ php artisan config:clear
 **Tipo**: Bug Fix
 **Priorità**: Alta
 **Stato**: ✅ Risolto
+=======
+**Modulo**: UI
+**Tipo**: Bug Fix
+**Priorità**: Alta
+**Stato**: ✅ Risolto
+>>>>>>> 6ed19256f (.)

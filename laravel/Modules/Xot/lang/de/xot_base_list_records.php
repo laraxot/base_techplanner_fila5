@@ -6,6 +6,7 @@ return [
     'fields' => [
         'message' => [
             'label' => 'message',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -39,6 +40,23 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'delete' => [
+            'label' => 'delete',
+        ],
+        'edit' => [
+            'label' => 'edit',
+        ],
+        'view' => [
+            'label' => 'view',
+        ],
+        'create' => [
+            'label' => 'create',
+        ],
+        'layout' => [
+            'label' => 'layout',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -49,6 +67,7 @@ return [
             'label' => 'export_xls',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -58,4 +77,6 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

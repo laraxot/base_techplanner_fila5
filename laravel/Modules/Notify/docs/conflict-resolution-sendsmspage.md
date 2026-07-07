@@ -1,7 +1,11 @@
 # Risoluzione Conflitti SendSmsPage.php
 
 ## Contesto del Conflitto
+<<<<<<< HEAD
 **File**: `Modules/Notify/app/Filament/Clusters/Test/Pages/SendSmsPage.php`
+=======
+**File**: `/var/www/html/ptvx/laravel/Modules/Notify/app/Filament/Clusters/Test/Pages/SendSmsPage.php`
+>>>>>>> 6ed19256f (.)
 **Linee**: 10-13, 20-23
 **Tipo**: Conflitto di import delle classi
 
@@ -68,6 +72,7 @@ Verificare che:
 - [Root Conflict Resolution Guidelines](../../../docs/conflict-resolution-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
+<<<<<<< HEAD
 - [Notify Module Documentation](README.md)
 - [SMS Testing Guide](sms/testing.md)
 - [MailTemplate Integration](mail_templates_structure.md)
@@ -78,6 +83,12 @@ Verificare che:
 
 ## Contesto del Conflitto
 **File**: `Modules/Notify/app/Filament/Clusters/Test/Pages/SendSmsPage.php`
+=======
+# Risoluzione Conflitti SendSmsPage.php
+
+## Contesto del Conflitto
+**File**: `/var/www/html/ptvx/laravel/Modules/Notify/app/Filament/Clusters/Test/Pages/SendSmsPage.php`
+>>>>>>> 6ed19256f (.)
 **Linee**: 10-13, 20-23
 **Tipo**: Conflitto di import delle classi
 
@@ -144,9 +155,12 @@ Verificare che:
 - [Root Conflict Resolution Guidelines](../../../project_docs/conflict-resolution-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
+<<<<<<< HEAD
 - [Notify Module Documentation](README.md)
 - [SMS Testing Guide](sms/testing.md)
 - [MailTemplate Integration](mail_templates_structure.md)
 - [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
+=======
+>>>>>>> 6ed19256f (.)

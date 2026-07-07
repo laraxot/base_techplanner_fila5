@@ -15,6 +15,7 @@ use Themes\Sixteen\Contracts\MenuFilterInterface;
 class MenuBuilder
 {
     protected Collection $slimHeader;
+<<<<<<< HEAD
 
     protected Collection $header;
 
@@ -22,6 +23,8 @@ class MenuBuilder
 
     protected Collection $footerBar;
 
+=======
+>>>>>>> 6ed19256f (.)
     protected Collection $header;
     protected Collection $footer;
     protected Collection $footerBar;
@@ -42,7 +45,11 @@ class MenuBuilder
     {
         $processedItems = $this->transformItems($items);
         $this->slimHeader = $this->slimHeader->merge($processedItems);
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 6ed19256f (.)
         return $this;
     }
 
@@ -53,7 +60,11 @@ class MenuBuilder
     {
         $processedItems = $this->transformItems($items);
         $this->header = $this->header->merge($processedItems);
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 6ed19256f (.)
         return $this;
     }
 
@@ -64,7 +75,11 @@ class MenuBuilder
     {
         $processedItems = $this->transformItems($items);
         $this->footer = $this->footer->merge($processedItems);
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 6ed19256f (.)
         return $this;
     }
 
@@ -75,7 +90,11 @@ class MenuBuilder
     {
         $processedItems = $this->transformItems($items);
         $this->footerBar = $this->footerBar->merge($processedItems);
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 6ed19256f (.)
         return $this;
     }
 
@@ -85,7 +104,10 @@ class MenuBuilder
     public function setFilters(array $filters): self
     {
         $this->filters = $filters;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
         return $this;
     }
 
@@ -141,6 +163,7 @@ class MenuBuilder
     {
         $config = config('sixteen.menu', []);
 
+<<<<<<< HEAD
         if (! empty($config['slim_header'])) {
             $this->addSlimHeader($config['slim_header']);
         }
@@ -154,6 +177,8 @@ class MenuBuilder
         }
 
         if (! empty($config['footer_bar'])) {
+=======
+>>>>>>> 6ed19256f (.)
         if (!empty($config['slim_header'])) {
             $this->addSlimHeader($config['slim_header']);
         }
@@ -221,7 +246,11 @@ class MenuBuilder
         foreach ($this->filters as $filter) {
             if ($filter instanceof MenuFilterInterface) {
                 $item = $filter->filter($item);
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> 6ed19256f (.)
                 // Se il filtro restituisce false, rimuovi l'elemento
                 if ($item === false) {
                     return false;
@@ -309,7 +338,11 @@ class MenuBuilder
     /**
      * Trova un elemento del menu per ID
      */
+<<<<<<< HEAD
     public function findItem(string $id, ?string $menu = null): ?array
+=======
+    public function findItem(string $id, string $menu = null): array|null
+>>>>>>> 6ed19256f (.)
     {
         $menus = $menu ? [$menu => $this->{$menu}] : [
             'slim_header' => $this->slimHeader,
@@ -331,7 +364,11 @@ class MenuBuilder
     /**
      * Rimuovi un elemento del menu per ID
      */
+<<<<<<< HEAD
     public function removeItem(string $id, ?string $menu = null): self
+=======
+    public function removeItem(string $id, string $menu = null): self
+>>>>>>> 6ed19256f (.)
     {
         $menus = $menu ? [$menu] : ['slim_header', 'header', 'footer', 'footer_bar'];
 
@@ -347,7 +384,11 @@ class MenuBuilder
     /**
      * Aggiorna un elemento del menu
      */
+<<<<<<< HEAD
     public function updateItem(string $id, array $updates, ?string $menu = null): self
+=======
+    public function updateItem(string $id, array $updates, string $menu = null): self
+>>>>>>> 6ed19256f (.)
     {
         $menus = $menu ? [$menu] : ['slim_header', 'header', 'footer', 'footer_bar'];
 
@@ -356,7 +397,10 @@ class MenuBuilder
                 if (isset($item['id']) && $item['id'] === $id) {
                     return array_merge($item, $updates);
                 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
                 return $item;
             });
         }
@@ -374,16 +418,26 @@ class MenuBuilder
             'header_count' => $this->header->count(),
             'footer_count' => $this->footer->count(),
             'footer_bar_count' => $this->footerBar->count(),
+<<<<<<< HEAD
             'total_items' => $this->slimHeader->count() +
                            $this->header->count() +
                            $this->footer->count() +
+=======
+            'total_items' => $this->slimHeader->count() + 
+                           $this->header->count() + 
+                           $this->footer->count() + 
+>>>>>>> 6ed19256f (.)
                            $this->footerBar->count(),
             'has_dropdowns' => $this->header->contains('type', 'dropdown'),
             'has_megamenus' => $this->header->contains('type', 'megamenu'),
         ];
     }
+<<<<<<< HEAD
 }
 
 
 
 
+=======
+}
+>>>>>>> 6ed19256f (.)

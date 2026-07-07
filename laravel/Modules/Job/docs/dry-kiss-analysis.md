@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+# 🐄 DRY & KISS Analysis - Job
+
+>>>>>>> 6ed19256f (.)
 **Data:** 2025-10-15 | **Status:** ✅
 
 ## 📊 Struttura
@@ -39,6 +44,7 @@ Models/
 2. Resources refactoring (1 sett)
 
 **Status:** 🟡 DA RIORGANIZZARE
+<<<<<<< HEAD
 ---
 module: theme
 topic: dry-kiss-analysis
@@ -46,3 +52,5 @@ canonical: ../../../Themes/docs/shared-components/dry-kiss-analysis-.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/dry-kiss-analysis-.md
+=======
+>>>>>>> 6ed19256f (.)

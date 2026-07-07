@@ -104,7 +104,11 @@ $avatarClasses = [
         <span class="font-semibold">{{ $initials }}</span>
     @elseif($icon)
         {{-- Avatar con icona --}}
+<<<<<<< HEAD
         <x-filament::icon icon="heroicon-$icon" class="w-1/2 h-1/2" aria-hidden="true" />
+=======
+        <x-filament::icon :name="$icon" class="w-1/2 h-1/2" aria-hidden="true" />
+>>>>>>> 6ed19256f (.)
     @else
         {{-- Avatar placeholder --}}
         <svg class="w-1/2 h-1/2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">

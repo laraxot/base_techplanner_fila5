@@ -43,7 +43,11 @@ Sistema di analisi e monitoraggio degli utenti, inclusi pattern di utilizzo, met
 
 ### Pending
 - Real-time monitoring
+<<<<<<< HEAD
 - <nome progetto>ive analytics
+=======
+- Predictive analytics
+>>>>>>> 6ed19256f (.)
 - Custom metrics
 - Export system
 
@@ -80,4 +84,8 @@ Sistema di analisi e monitoraggio degli utenti, inclusi pattern di utilizzo, met
 
 ## Related Features
 - [Gestione Utenti](./gestione-utenti.md)
+<<<<<<< HEAD
 - [Audit Logging](./audit-logging.md) 
+=======
+- [Audit Logging](./audit-logging.md)
+>>>>>>> 6ed19256f (.)

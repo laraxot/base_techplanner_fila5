@@ -1,10 +1,17 @@
 # Guida Migrazione Step-by-Step: Modulo Notify - Filament 4
 
 ## Panoramica Migrazione
+<<<<<<< HEAD
 **Modulo**: Notify  
 **Complessità**: ⭐⭐⭐⭐ ALTA  
 **Tempo Stimato**: 21-28 giorni  
 **Rischio**: ALTO (comunicazioni critiche)  
+=======
+**Modulo**: Notify
+**Complessità**: ⭐⭐⭐⭐ ALTA
+**Tempo Stimato**: 21-28 giorni
+**Rischio**: ALTO (comunicazioni critiche)
+>>>>>>> 6ed19256f (.)
 **Priorità**: 2 (dopo User per dipendenze di autenticazione)
 
 ## Pre-requisiti
@@ -64,7 +71,11 @@ use Filament\Schema\Slot;
 abstract class NotifyBaseResource extends XotBaseResource
 {
     protected static ?string $navigationGroup = 'Comunicazioni';
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public static function getMainSchema(): Schema
     {
         return Schema::make([
@@ -74,7 +85,11 @@ abstract class NotifyBaseResource extends XotBaseResource
             static::getSchedulingSlot(),
         ]);
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     protected static function getNotificationDetailsSlot(): Slot
     {
         return Slot::make([
@@ -82,29 +97,46 @@ abstract class NotifyBaseResource extends XotBaseResource
                 ->label('Nome Template')
                 ->required()
                 ->maxLength(255),
+<<<<<<< HEAD
                 
             Textarea::make('description')
                 ->label('Descrizione')
                 ->rows(3),
                 
+=======
+
+            Textarea::make('description')
+                ->label('Descrizione')
+                ->rows(3),
+
+>>>>>>> 6ed19256f (.)
             Select::make('type')
                 ->label('Tipo Notifica')
                 ->options([
                     'system' => 'Sistema',
+<<<<<<< HEAD
                     'marketing' => 'Marketing', 
+=======
+                    'marketing' => 'Marketing',
+>>>>>>> 6ed19256f (.)
                     'transactional' => 'Transazionale',
                     'alert' => 'Allarme',
                 ])
                 ->required(),
         ]);
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     protected static function getChannelConfigSlot(): Slot
     {
         return Slot::make([
             Toggle::make('email_enabled')
                 ->label('Email Attiva')
                 ->default(true),
+<<<<<<< HEAD
                 
             Toggle::make('sms_enabled')
                 ->label('SMS Attivo'),
@@ -115,11 +147,27 @@ abstract class NotifyBaseResource extends XotBaseResource
             Toggle::make('telegram_enabled')
                 ->label('Telegram Attivo'),
                 
+=======
+
+            Toggle::make('sms_enabled')
+                ->label('SMS Attivo'),
+
+            Toggle::make('push_enabled')
+                ->label('Push Notification Attiva'),
+
+            Toggle::make('telegram_enabled')
+                ->label('Telegram Attivo'),
+
+>>>>>>> 6ed19256f (.)
             Toggle::make('whatsapp_enabled')
                 ->label('WhatsApp Attivo'),
         ]);
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     protected static function getTemplateSlot(): Slot
     {
         return Slot::make([
@@ -127,6 +175,7 @@ abstract class NotifyBaseResource extends XotBaseResource
                 ->label('Oggetto')
                 ->required()
                 ->placeholder('{{nome_utente}}, bentornato!'),
+<<<<<<< HEAD
                 
             Textarea::make('body_html')
                 ->label('Corpo HTML')
@@ -136,24 +185,47 @@ abstract class NotifyBaseResource extends XotBaseResource
                 ->label('Corpo Testo')
                 ->rows(8),
                 
+=======
+
+            Textarea::make('body_html')
+                ->label('Corpo HTML')
+                ->rows(10),
+
+            Textarea::make('body_text')
+                ->label('Corpo Testo')
+                ->rows(8),
+
+>>>>>>> 6ed19256f (.)
             KeyValue::make('variables')
                 ->label('Variabili Template')
                 ->keyLabel('Nome Variabile')
                 ->valueLabel('Valore Default'),
         ]);
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     protected static function getSchedulingSlot(): Slot
     {
         return Slot::make([
             Toggle::make('is_scheduled')
                 ->label('Programmata')
                 ->reactive(),
+<<<<<<< HEAD
                 
             DateTimePicker::make('send_at')
                 ->label('Invia il')
                 ->visible(fn($get) => $get('is_scheduled')),
                 
+=======
+
+            DateTimePicker::make('send_at')
+                ->label('Invia il')
+                ->visible(fn($get) => $get('is_scheduled')),
+
+>>>>>>> 6ed19256f (.)
             Select::make('frequency')
                 ->label('Frequenza')
                 ->options([
@@ -165,7 +237,11 @@ abstract class NotifyBaseResource extends XotBaseResource
                 ->visible(fn($get) => $get('is_scheduled')),
         ]);
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public static function getTableColumns(): array
     {
         return [
@@ -173,7 +249,11 @@ abstract class NotifyBaseResource extends XotBaseResource
                 ->label('Nome')
                 ->searchable()
                 ->sortable(),
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> 6ed19256f (.)
             BadgeColumn::make('type')
                 ->label('Tipo')
                 ->colors([
@@ -182,6 +262,7 @@ abstract class NotifyBaseResource extends XotBaseResource
                     'warning' => 'transactional',
                     'danger' => 'alert',
                 ]),
+<<<<<<< HEAD
                 
             ToggleColumn::make('email_enabled')
                 ->label('Email'),
@@ -192,11 +273,27 @@ abstract class NotifyBaseResource extends XotBaseResource
             ToggleColumn::make('push_enabled')
                 ->label('Push'),
                 
+=======
+
+            ToggleColumn::make('email_enabled')
+                ->label('Email'),
+
+            ToggleColumn::make('sms_enabled')
+                ->label('SMS'),
+
+            ToggleColumn::make('push_enabled')
+                ->label('Push'),
+
+>>>>>>> 6ed19256f (.)
             TextColumn::make('sent_count')
                 ->label('Inviate')
                 ->badge()
                 ->color('success'),
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> 6ed19256f (.)
             TextColumn::make('updated_at')
                 ->label('Ultimo Aggiornamento')
                 ->dateTime()
@@ -225,7 +322,11 @@ class NotificationTemplateResource extends NotifyBaseResource
     protected static ?string $model = NotificationTemplate::class;
     protected static ?string $navigationLabel = 'Template Notifiche';
     protected static ?string $navigationIcon = 'heroicon-o-bell';
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public static function getMainSchema(): Schema
     {
         return Schema::make([
@@ -234,17 +335,29 @@ class NotificationTemplateResource extends NotifyBaseResource
                     ->schema([
                         parent::getNotificationDetailsSlot()->getComponents(),
                     ]),
+<<<<<<< HEAD
                     
+=======
+
+>>>>>>> 6ed19256f (.)
                 Wizard\Step::make('Canali')
                     ->schema([
                         parent::getChannelConfigSlot()->getComponents(),
                     ]),
+<<<<<<< HEAD
                     
+=======
+
+>>>>>>> 6ed19256f (.)
                 Wizard\Step::make('Template')
                     ->schema([
                         static::getAdvancedTemplateSlot()->getComponents(),
                     ]),
+<<<<<<< HEAD
                     
+=======
+
+>>>>>>> 6ed19256f (.)
                 Wizard\Step::make('Test & Preview')
                     ->schema([
                         static::getTestingSlot()->getComponents(),
@@ -252,7 +365,11 @@ class NotificationTemplateResource extends NotifyBaseResource
             ]),
         ]);
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     protected static function getAdvancedTemplateSlot(): Slot
     {
         return Slot::make([
@@ -261,36 +378,59 @@ class NotificationTemplateResource extends NotifyBaseResource
                     TextInput::make('subject')
                         ->label('Oggetto')
                         ->required(),
+<<<<<<< HEAD
                         
+=======
+
+>>>>>>> 6ed19256f (.)
                     RichEditor::make('body_html')
                         ->label('Corpo HTML')
                         ->toolbarButtons([
                             'bold', 'italic', 'link', 'bulletList',
                             'orderedList', 'h2', 'h3', 'blockquote',
                         ]),
+<<<<<<< HEAD
                         
+=======
+
+>>>>>>> 6ed19256f (.)
                     CodeEditor::make('body_text')
                         ->label('Versione Testo')
                         ->language('text'),
                 ]),
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> 6ed19256f (.)
             Section::make('Template SMS/Push')
                 ->schema([
                     Textarea::make('sms_body')
                         ->label('Testo SMS')
                         ->maxLength(160)
                         ->hint('Massimo 160 caratteri'),
+<<<<<<< HEAD
                         
                     TextInput::make('push_title')
                         ->label('Titolo Push'),
                         
+=======
+
+                    TextInput::make('push_title')
+                        ->label('Titolo Push'),
+
+>>>>>>> 6ed19256f (.)
                     Textarea::make('push_body')
                         ->label('Corpo Push')
                         ->maxLength(200),
                 ]),
         ]);
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     protected static function getTestingSlot(): Slot
     {
         return Slot::make([
@@ -299,16 +439,27 @@ class NotificationTemplateResource extends NotifyBaseResource
                     TextInput::make('test_email')
                         ->label('Email Test')
                         ->email(),
+<<<<<<< HEAD
                         
                     TextInput::make('test_phone')
                         ->label('Telefono Test'),
                         
+=======
+
+                    TextInput::make('test_phone')
+                        ->label('Telefono Test'),
+
+>>>>>>> 6ed19256f (.)
                     KeyValue::make('test_variables')
                         ->label('Variabili Test'),
                 ]),
         ]);
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public static function getCustomActions(): array
     {
         return [
@@ -316,7 +467,11 @@ class NotificationTemplateResource extends NotifyBaseResource
                 ->label('Anteprima')
                 ->modalHeading('Anteprima Template')
                 ->modalContent(view('notify::preview-template')),
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> 6ed19256f (.)
             Action::make('test_send')
                 ->label('Invia Test')
                 ->icon('heroicon-o-paper-airplane')
@@ -326,13 +481,21 @@ class NotificationTemplateResource extends NotifyBaseResource
                 ])
                 ->action(function (array $data, NotificationTemplate $record) {
                     $record->sendTest($data['test_email'], $data['test_data'] ?? []);
+<<<<<<< HEAD
                     
+=======
+
+>>>>>>> 6ed19256f (.)
                     Notification::make()
                         ->success()
                         ->title('Test inviato con successo')
                         ->send();
                 }),
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> 6ed19256f (.)
             DuplicateAction::make()
                 ->label('Duplica Template'),
         ];
@@ -359,7 +522,11 @@ class ContactResource extends NotifyBaseResource
     protected static ?string $model = Contact::class;
     protected static ?string $navigationLabel = 'Contatti';
     protected static ?string $navigationIcon = 'heroicon-o-users';
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public static function getMainSchema(): Schema
     {
         return Schema::make([
@@ -370,16 +537,28 @@ class ContactResource extends NotifyBaseResource
                             TextInput::make('name')
                                 ->label('Nome Completo')
                                 ->required(),
+<<<<<<< HEAD
                                 
+=======
+
+>>>>>>> 6ed19256f (.)
                             TextInput::make('email')
                                 ->label('Email')
                                 ->email()
                                 ->unique(ignoreRecord: true),
+<<<<<<< HEAD
                                 
                             TextInput::make('phone')
                                 ->label('Telefono')
                                 ->tel(),
                                 
+=======
+
+                            TextInput::make('phone')
+                                ->label('Telefono')
+                                ->tel(),
+
+>>>>>>> 6ed19256f (.)
                             TagsInput::make('groups')
                                 ->label('Gruppi')
                                 ->suggestions([
@@ -387,12 +566,17 @@ class ContactResource extends NotifyBaseResource
                                     'newsletter', 'vip', 'test'
                                 ]),
                         ]),
+<<<<<<< HEAD
                         
+=======
+
+>>>>>>> 6ed19256f (.)
                     Tabs\Tab::make('Preferenze Canali')
                         ->schema([
                             Toggle::make('email_opt_in')
                                 ->label('Accetta Email')
                                 ->default(true),
+<<<<<<< HEAD
                                 
                             Toggle::make('sms_opt_in')
                                 ->label('Accetta SMS'),
@@ -403,6 +587,18 @@ class ContactResource extends NotifyBaseResource
                             Toggle::make('telegram_opt_in')
                                 ->label('Accetta Telegram'),
                                 
+=======
+
+                            Toggle::make('sms_opt_in')
+                                ->label('Accetta SMS'),
+
+                            Toggle::make('push_opt_in')
+                                ->label('Accetta Push Notifications'),
+
+                            Toggle::make('telegram_opt_in')
+                                ->label('Accetta Telegram'),
+
+>>>>>>> 6ed19256f (.)
                             Select::make('preferred_language')
                                 ->label('Lingua Preferita')
                                 ->options([
@@ -411,7 +607,11 @@ class ContactResource extends NotifyBaseResource
                                     'fr' => 'Français',
                                 ]),
                         ]),
+<<<<<<< HEAD
                         
+=======
+
+>>>>>>> 6ed19256f (.)
                     Tabs\Tab::make('Canali Social')
                         ->schema([
                             Repeater::make('social_channels')
@@ -425,11 +625,19 @@ class ContactResource extends NotifyBaseResource
                                             'twitter' => 'Twitter',
                                         ])
                                         ->required(),
+<<<<<<< HEAD
                                         
                                     TextInput::make('identifier')
                                         ->label('ID/Username')
                                         ->required(),
                                         
+=======
+
+                                    TextInput::make('identifier')
+                                        ->label('ID/Username')
+                                        ->required(),
+
+>>>>>>> 6ed19256f (.)
                                     Toggle::make('verified')
                                         ->label('Verificato'),
                                 ])
@@ -439,7 +647,11 @@ class ContactResource extends NotifyBaseResource
                 ]),
         ]);
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public static function getTableColumns(): array
     {
         return [
@@ -447,11 +659,16 @@ class ContactResource extends NotifyBaseResource
                 ->label('Nome')
                 ->searchable()
                 ->sortable(),
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> 6ed19256f (.)
             TextColumn::make('email')
                 ->label('Email')
                 ->searchable()
                 ->copyable(),
+<<<<<<< HEAD
                 
             TextColumn::make('phone')
                 ->label('Telefono')
@@ -472,6 +689,28 @@ class ContactResource extends NotifyBaseResource
                 ->label('🔔')
                 ->boolean(),
                 
+=======
+
+            TextColumn::make('phone')
+                ->label('Telefono')
+                ->searchable(),
+
+            TagsColumn::make('groups')
+                ->label('Gruppi'),
+
+            IconColumn::make('email_opt_in')
+                ->label('📧')
+                ->boolean(),
+
+            IconColumn::make('sms_opt_in')
+                ->label('📱')
+                ->boolean(),
+
+            IconColumn::make('push_opt_in')
+                ->label('🔔')
+                ->boolean(),
+
+>>>>>>> 6ed19256f (.)
             TextColumn::make('last_notification_sent')
                 ->label('Ultima Notifica')
                 ->dateTime()
@@ -500,7 +739,11 @@ class UnifiedSendAction
         protected PushService $pushService,
         protected TelegramService $telegramService,
     ) {}
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function execute(NotificationTemplate $template, array $contacts, array $variables = []): array
     {
         $results = [
@@ -509,33 +752,53 @@ class UnifiedSendAction
             'push' => [],
             'telegram' => [],
         ];
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         foreach ($contacts as $contact) {
             if ($template->email_enabled && $contact->email_opt_in) {
                 $results['email'][] = Queue::push(
                     new SendEmailJob($template, $contact, $variables)
                 );
             }
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> 6ed19256f (.)
             if ($template->sms_enabled && $contact->sms_opt_in && $contact->phone) {
                 $results['sms'][] = Queue::push(
                     new SendSmsJob($template, $contact, $variables)
                 );
             }
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> 6ed19256f (.)
             if ($template->push_enabled && $contact->push_opt_in) {
                 $results['push'][] = Queue::push(
                     new SendPushJob($template, $contact, $variables)
                 );
             }
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> 6ed19256f (.)
             if ($template->telegram_enabled && $contact->telegram_opt_in) {
                 $results['telegram'][] = Queue::push(
                     new SendTelegramJob($template, $contact, $variables)
                 );
             }
         }
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         return $results;
     }
 }
@@ -558,7 +821,11 @@ class NotificationStatsWidget extends BaseWidget
 {
     protected static ?int $sort = 1;
     protected int | string | array $columnSpan = 'full';
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     protected function getStats(): array
     {
         return [
@@ -567,29 +834,49 @@ class NotificationStatsWidget extends BaseWidget
                 ->descriptionIcon('heroicon-m-paper-airplane')
                 ->color('success')
                 ->chart($this->getWeeklyChart()),
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> 6ed19256f (.)
             Stat::make('Tasso Apertura Email', $this->getEmailOpenRate())
                 ->description('Media ultimi 7 giorni')
                 ->descriptionIcon('heroicon-m-envelope-open')
                 ->color('primary'),
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> 6ed19256f (.)
             Stat::make('SMS Consegnati', $this->getSmsDeliveryRate())
                 ->description('Tasso di consegna')
                 ->descriptionIcon('heroicon-m-device-phone-mobile')
                 ->color('warning'),
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> 6ed19256f (.)
             Stat::make('Contatti Attivi', Contact::where('is_active', true)->count())
                 ->description('Con almeno un canale attivo')
                 ->descriptionIcon('heroicon-m-users')
                 ->color('info'),
         ];
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     protected function getTodayCount(): int
     {
         return NotificationLog::whereDate('created_at', today())->count();
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     protected function getWeeklyChart(): array
     {
         return NotificationLog::selectRaw('DATE(created_at) as date, COUNT(*) as count')
@@ -598,32 +885,55 @@ class NotificationStatsWidget extends BaseWidget
             ->pluck('count')
             ->toArray();
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     protected function getEmailOpenRate(): string
     {
         $sent = NotificationLog::where('channel', 'email')
             ->whereBetween('created_at', [now()->subWeek(), now()])
             ->count();
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> 6ed19256f (.)
         $opened = NotificationLog::where('channel', 'email')
             ->whereBetween('created_at', [now()->subWeek(), now()])
             ->whereNotNull('opened_at')
             ->count();
+<<<<<<< HEAD
             
         return $sent > 0 ? round(($opened / $sent) * 100, 1) . '%' : '0%';
     }
     
+=======
+
+        return $sent > 0 ? round(($opened / $sent) * 100, 1) . '%' : '0%';
+    }
+
+>>>>>>> 6ed19256f (.)
     protected function getSmsDeliveryRate(): string
     {
         $sent = NotificationLog::where('channel', 'sms')
             ->whereBetween('created_at', [now()->subWeek(), now()])
             ->count();
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> 6ed19256f (.)
         $delivered = NotificationLog::where('channel', 'sms')
             ->whereBetween('created_at', [now()->subWeek(), now()])
             ->where('status', 'delivered')
             ->count();
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> 6ed19256f (.)
         return $sent > 0 ? round(($delivered / $sent) * 100, 1) . '%' : '0%';
     }
 }
@@ -645,21 +955,33 @@ class QueueMonitorWidget extends BaseWidget
 {
     protected static ?int $sort = 2;
     protected int | string | array $columnSpan = 2;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     protected function getTableQuery(): Builder
     {
         return NotificationQueue::query()
             ->where('status', '!=', 'completed')
             ->latest();
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     protected function getTableColumns(): array
     {
         return [
             TextColumn::make('template.name')
                 ->label('Template')
                 ->limit(30),
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> 6ed19256f (.)
             BadgeColumn::make('channel')
                 ->label('Canale')
                 ->colors([
@@ -668,7 +990,11 @@ class QueueMonitorWidget extends BaseWidget
                     'warning' => 'push',
                     'info' => 'telegram',
                 ]),
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> 6ed19256f (.)
             BadgeColumn::make('status')
                 ->label('Stato')
                 ->colors([
@@ -677,29 +1003,49 @@ class QueueMonitorWidget extends BaseWidget
                     'danger' => 'failed',
                     'success' => 'sent',
                 ]),
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> 6ed19256f (.)
             TextColumn::make('created_at')
                 ->label('Accodato')
                 ->since()
                 ->sortable(),
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> 6ed19256f (.)
             TextColumn::make('attempts')
                 ->label('Tentativi')
                 ->badge()
                 ->color(fn($state) => $state > 1 ? 'danger' : 'success'),
         ];
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     protected function getDefaultTableSortColumn(): ?string
     {
         return 'created_at';
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     protected function getDefaultTableSortDirection(): ?string
     {
         return 'desc';
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     protected function getTablePollingInterval(): ?string
     {
         return '10s'; // Aggiornamento ogni 10 secondi
@@ -728,11 +1074,19 @@ class NotificationTestPage extends Page
     protected static ?string $navigationIcon = 'heroicon-o-beaker';
     protected static ?string $navigationLabel = 'Test Notifiche';
     protected static ?string $navigationGroup = 'Comunicazioni';
+<<<<<<< HEAD
     
     protected static string $view = 'filament.pages.notification-test-page';
     
     public ?array $data = [];
     
+=======
+
+    protected static string $view = 'filament.pages.notification-test-page';
+
+    public ?array $data = [];
+
+>>>>>>> 6ed19256f (.)
     public function form(Form $form): Form
     {
         return $form
@@ -747,7 +1101,11 @@ class NotificationTestPage extends Page
                                 ->reactive()
                                 ->afterStateUpdated(fn($state, $set) => $this->loadTemplate($state, $set)),
                         ]),
+<<<<<<< HEAD
                         
+=======
+
+>>>>>>> 6ed19256f (.)
                     Wizard\Step::make('Destinatari')
                         ->schema([
                             Tabs::make('Recipients')
@@ -760,19 +1118,31 @@ class NotificationTestPage extends Page
                                                 ->multiple()
                                                 ->searchable(),
                                         ]),
+<<<<<<< HEAD
                                         
+=======
+
+>>>>>>> 6ed19256f (.)
                                     Tabs\Tab::make('Test Rapido')
                                         ->schema([
                                             TextInput::make('test_email')
                                                 ->label('Email Test')
                                                 ->email(),
+<<<<<<< HEAD
                                                 
+=======
+
+>>>>>>> 6ed19256f (.)
                                             TextInput::make('test_phone')
                                                 ->label('Telefono Test'),
                                         ]),
                                 ]),
                         ]),
+<<<<<<< HEAD
                         
+=======
+
+>>>>>>> 6ed19256f (.)
                     Wizard\Step::make('Variabili')
                         ->schema([
                             KeyValue::make('variables')
@@ -784,7 +1154,11 @@ class NotificationTestPage extends Page
                                     'data_oggi' => now()->format('d/m/Y'),
                                 ]),
                         ]),
+<<<<<<< HEAD
                         
+=======
+
+>>>>>>> 6ed19256f (.)
                     Wizard\Step::make('Preview & Invio')
                         ->schema([
                             Placeholder::make('preview')
@@ -806,7 +1180,11 @@ class NotificationTestPage extends Page
             ])
             ->statePath('data');
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     protected function getActions(): array
     {
         return [
@@ -818,11 +1196,19 @@ class NotificationTestPage extends Page
                 ->modalDescription('Sei sicuro di voler inviare questo test?'),
         ];
     }
+<<<<<<< HEAD
     
     public function sendTest(): void
     {
         $template = NotificationTemplate::find($this->data['template_id']);
         
+=======
+
+    public function sendTest(): void
+    {
+        $template = NotificationTemplate::find($this->data['template_id']);
+
+>>>>>>> 6ed19256f (.)
         if ($this->data['contacts']) {
             $contacts = Contact::whereIn('id', $this->data['contacts'])->get();
         } else {
@@ -836,16 +1222,24 @@ class NotificationTestPage extends Page
                 ]
             ]);
         }
+<<<<<<< HEAD
         
         $sendAction = app(UnifiedSendAction::class);
         $results = $sendAction->execute($template, $contacts, $this->data['variables'] ?? []);
         
+=======
+
+        $sendAction = app(UnifiedSendAction::class);
+        $results = $sendAction->execute($template, $contacts, $this->data['variables'] ?? []);
+
+>>>>>>> 6ed19256f (.)
         Notification::make()
             ->success()
             ->title('Test Inviato!')
             ->body('Il test è stato accodato per l\'invio.')
             ->send();
     }
+<<<<<<< HEAD
     
     protected function loadTemplate($templateId, $set): void
     {
@@ -854,20 +1248,41 @@ class NotificationTestPage extends Page
         $template = NotificationTemplate::find($templateId);
         if (!$template) return;
         
+=======
+
+    protected function loadTemplate($templateId, $set): void
+    {
+        if (!$templateId) return;
+
+        $template = NotificationTemplate::find($templateId);
+        if (!$template) return;
+
+>>>>>>> 6ed19256f (.)
         // Pre-popolare variabili dal template
         $variables = $template->getVariables();
         $set('variables', $variables);
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     protected function getPreview($get): string
     {
         if (!$get('template_id')) {
             return 'Seleziona un template per vedere l\'anteprima.';
         }
+<<<<<<< HEAD
         
         $template = NotificationTemplate::find($get('template_id'));
         $variables = $get('variables') ?? [];
         
+=======
+
+        $template = NotificationTemplate::find($get('template_id'));
+        $variables = $get('variables') ?? [];
+
+>>>>>>> 6ed19256f (.)
         return view('notify::preview.unified', [
             'template' => $template,
             'variables' => $variables,
@@ -898,16 +1313,28 @@ return new class extends Migration
             $table->boolean('push_enabled')->default(false);
             $table->boolean('telegram_enabled')->default(false);
             $table->boolean('whatsapp_enabled')->default(false);
+<<<<<<< HEAD
             
             $table->text('sms_body')->nullable();
             $table->string('push_title')->nullable();
             $table->text('push_body')->nullable();
             
+=======
+
+            $table->text('sms_body')->nullable();
+            $table->string('push_title')->nullable();
+            $table->text('push_body')->nullable();
+
+>>>>>>> 6ed19256f (.)
             $table->json('channel_config')->nullable();
             $table->timestamp('last_sent_at')->nullable();
             $table->integer('sent_count')->default(0);
         });
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         // Tabella per tracking aperture/click
         Schema::create('notification_tracking', function (Blueprint $table) {
             $table->id();
@@ -916,10 +1343,17 @@ return new class extends Migration
             $table->string('event_type'); // opened, clicked, bounced, etc.
             $table->json('metadata')->nullable();
             $table->timestamp('created_at');
+<<<<<<< HEAD
             
             $table->index(['tracking_id', 'event_type']);
         });
         
+=======
+
+            $table->index(['tracking_id', 'event_type']);
+        });
+
+>>>>>>> 6ed19256f (.)
         // Aggiornare contatti per multi-canale
         Schema::table('contacts', function (Blueprint $table) {
             $table->json('social_channels')->nullable();
@@ -929,7 +1363,11 @@ return new class extends Migration
             $table->timestamp('last_notification_sent')->nullable();
         });
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function down()
     {
         Schema::table('notification_templates', function (Blueprint $table) {
@@ -940,9 +1378,15 @@ return new class extends Migration
                 'channel_config', 'last_sent_at', 'sent_count'
             ]);
         });
+<<<<<<< HEAD
         
         Schema::dropIfExists('notification_tracking');
         
+=======
+
+        Schema::dropIfExists('notification_tracking');
+
+>>>>>>> 6ed19256f (.)
         Schema::table('contacts', function (Blueprint $table) {
             $table->dropColumn([
                 'social_channels', 'preferred_language',
@@ -967,6 +1411,7 @@ class MigrateNotifyToFilament4Command extends Command
 {
     protected $signature = 'notify:migrate-filament4 {--dry-run : Solo simulazione}';
     protected $description = 'Migra dati Notify per compatibilità Filament 4';
+<<<<<<< HEAD
     
     public function handle()
     {
@@ -986,11 +1431,36 @@ class MigrateNotifyToFilament4Command extends Command
         $this->info('Migrazione completata!');
     }
     
+=======
+
+    public function handle()
+    {
+        $dryRun = $this->option('dry-run');
+
+        $this->info('Inizio migrazione dati Notify per Filament 4...');
+
+        // Migrazione template
+        $this->migrateTemplates($dryRun);
+
+        // Migrazione contatti
+        $this->migrateContacts($dryRun);
+
+        // Pulizia dati inconsistenti
+        $this->cleanupData($dryRun);
+
+        $this->info('Migrazione completata!');
+    }
+
+>>>>>>> 6ed19256f (.)
     protected function migrateTemplates($dryRun)
     {
         $templates = NotificationTemplate::all();
         $bar = $this->output->createProgressBar($templates->count());
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         foreach ($templates as $template) {
             if (!$dryRun) {
                 // Convertire vecchi template al nuovo formato
@@ -1001,20 +1471,35 @@ class MigrateNotifyToFilament4Command extends Command
                     'channel_config' => $this->buildChannelConfig($template),
                 ]);
             }
+<<<<<<< HEAD
             
             $bar->advance();
         }
         
+=======
+
+            $bar->advance();
+        }
+
+>>>>>>> 6ed19256f (.)
         $bar->finish();
         $this->newLine();
         $this->info("Migrati {$templates->count()} template.");
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     protected function migrateContacts($dryRun)
     {
         $contacts = Contact::all();
         $bar = $this->output->createProgressBar($contacts->count());
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         foreach ($contacts as $contact) {
             if (!$dryRun) {
                 $contact->update([
@@ -1022,15 +1507,26 @@ class MigrateNotifyToFilament4Command extends Command
                     'social_channels' => $this->extractSocialChannels($contact),
                 ]);
             }
+<<<<<<< HEAD
             
             $bar->advance();
         }
         
+=======
+
+            $bar->advance();
+        }
+
+>>>>>>> 6ed19256f (.)
         $bar->finish();
         $this->newLine();
         $this->info("Migrati {$contacts->count()} contatti.");
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     protected function cleanupData($dryRun)
     {
         if (!$dryRun) {
@@ -1038,10 +1534,17 @@ class MigrateNotifyToFilament4Command extends Command
             NotificationTemplate::whereNull('name')->delete();
             Contact::whereNull('email')->whereNull('phone')->delete();
         }
+<<<<<<< HEAD
         
         $this->info('Pulizia dati completata.');
     }
     
+=======
+
+        $this->info('Pulizia dati completata.');
+    }
+
+>>>>>>> 6ed19256f (.)
     protected function buildChannelConfig($template): array
     {
         return [
@@ -1055,13 +1558,21 @@ class MigrateNotifyToFilament4Command extends Command
             ],
         ];
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     protected function detectLanguage($contact): string
     {
         // Logica per rilevare lingua preferita
         return 'it'; // Default
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     protected function extractSocialChannels($contact): array
     {
         // Logica per estrarre canali social esistenti
@@ -1088,28 +1599,51 @@ use Modules\Notify\Filament\Resources\NotificationTemplateResource;
 class NotificationTemplateResourceTest extends TestCase
 {
     protected User $admin;
+<<<<<<< HEAD
     
     protected function setUp(): void
     {
         parent::setUp();
         
+=======
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+>>>>>>> 6ed19256f (.)
         $this->admin = User::factory()->create([
             'email' => 'admin@test.com',
         ]);
         $this->admin->assignRole('super_admin');
+<<<<<<< HEAD
         
         $this->actingAs($this->admin);
     }
     
+=======
+
+        $this->actingAs($this->admin);
+    }
+
+>>>>>>> 6ed19256f (.)
     /** @test */
     public function can_list_notification_templates()
     {
         $templates = NotificationTemplate::factory()->count(3)->create();
+<<<<<<< HEAD
         
         Livewire::test(NotificationTemplateResource\Pages\ListNotificationTemplates::class)
             ->assertCanSeeTableRecords($templates);
     }
     
+=======
+
+        Livewire::test(NotificationTemplateResource\Pages\ListNotificationTemplates::class)
+            ->assertCanSeeTableRecords($templates);
+    }
+
+>>>>>>> 6ed19256f (.)
     /** @test */
     public function can_create_notification_template_with_all_channels()
     {
@@ -1126,12 +1660,20 @@ class NotificationTemplateResourceTest extends TestCase
             'push_title' => 'Test Push Title',
             'push_body' => 'Test push body',
         ];
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         Livewire::test(NotificationTemplateResource\Pages\CreateNotificationTemplate::class)
             ->fillForm($templateData)
             ->call('create')
             ->assertHasNoFormErrors();
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> 6ed19256f (.)
         $this->assertDatabaseHas('notification_templates', [
             'name' => 'Test Multi-Channel Template',
             'email_enabled' => true,
@@ -1139,7 +1681,11 @@ class NotificationTemplateResourceTest extends TestCase
             'push_enabled' => true,
         ]);
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     /** @test */
     public function can_test_send_notification()
     {
@@ -1147,14 +1693,22 @@ class NotificationTemplateResourceTest extends TestCase
             'email_enabled' => true,
             'sms_enabled' => true,
         ]);
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         $contact = Contact::factory()->create([
             'email' => 'test@example.com',
             'phone' => '+39123456789',
             'email_opt_in' => true,
             'sms_opt_in' => true,
         ]);
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         Livewire::test(NotificationTemplateResource\Pages\EditNotificationTemplate::class, [
             'record' => $template->id,
         ])
@@ -1163,11 +1717,19 @@ class NotificationTemplateResourceTest extends TestCase
                 'test_data' => ['nome_utente' => 'Mario'],
             ])
             ->assertHasNoActionErrors();
+<<<<<<< HEAD
             
         // Verificare che il job sia stato accodato
         Queue::assertPushed(SendEmailJob::class);
     }
     
+=======
+
+        // Verificare che il job sia stato accodato
+        Queue::assertPushed(SendEmailJob::class);
+    }
+
+>>>>>>> 6ed19256f (.)
     /** @test */
     public function validates_required_fields()
     {
@@ -1179,20 +1741,32 @@ class NotificationTemplateResourceTest extends TestCase
             ->call('create')
             ->assertHasFormErrors(['name', 'type']);
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     /** @test */
     public function can_duplicate_template()
     {
         $original = NotificationTemplate::factory()->create([
             'name' => 'Original Template',
         ]);
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         Livewire::test(NotificationTemplateResource\Pages\EditNotificationTemplate::class, [
             'record' => $original->id,
         ])
             ->callAction('duplicate')
             ->assertHasNoActionErrors();
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> 6ed19256f (.)
         $this->assertDatabaseHas('notification_templates', [
             'name' => 'Original Template (Copy)',
         ]);
@@ -1218,19 +1792,28 @@ class MultiChannelSendTest extends TestCase
     public function can_handle_bulk_multi_channel_send()
     {
         $this->markTestSkipped('Performance test - eseguire solo manualmente');
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         // Creare 1000 contatti
         $contacts = Contact::factory()->count(1000)->create([
             'email_opt_in' => true,
             'sms_opt_in' => true,
             'push_opt_in' => true,
         ]);
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         $template = NotificationTemplate::factory()->create([
             'email_enabled' => true,
             'sms_enabled' => true,
             'push_enabled' => true,
         ]);
+<<<<<<< HEAD
         
         $startTime = microtime(true);
         $startMemory = memory_get_usage(true);
@@ -1247,12 +1830,34 @@ class MultiChannelSendTest extends TestCase
         $this->assertLessThan(30, $executionTime, 'Invio dovrebbe completarsi in meno di 30 secondi');
         $this->assertLessThan(50, $memoryUsed, 'Dovrebbe usare meno di 50MB di memoria');
         
+=======
+
+        $startTime = microtime(true);
+        $startMemory = memory_get_usage(true);
+
+        $sendAction = app(UnifiedSendAction::class);
+        $results = $sendAction->execute($template, $contacts, []);
+
+        $endTime = microtime(true);
+        $endMemory = memory_get_usage(true);
+
+        $executionTime = $endTime - $startTime;
+        $memoryUsed = ($endMemory - $startMemory) / 1024 / 1024; // MB
+
+        $this->assertLessThan(30, $executionTime, 'Invio dovrebbe completarsi in meno di 30 secondi');
+        $this->assertLessThan(50, $memoryUsed, 'Dovrebbe usare meno di 50MB di memoria');
+
+>>>>>>> 6ed19256f (.)
         // Verificare che tutti i job siano stati accodati
         $expectedJobs = $contacts->count() * 3; // email + sms + push
         Queue::assertPushed(SendEmailJob::class, $contacts->count());
         Queue::assertPushed(SendSmsJob::class, $contacts->count());
         Queue::assertPushed(SendPushJob::class, $contacts->count());
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         $this->info("Tempo esecuzione: {$executionTime}s");
         $this->info("Memoria utilizzata: {$memoryUsed}MB");
         $this->info("Job accodati: {$expectedJobs}");
@@ -1275,27 +1880,43 @@ return [
         'telegram' => env('NOTIFY_TELEGRAM_ENABLED', false),
         'whatsapp' => env('NOTIFY_WHATSAPP_ENABLED', false),
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     'rate_limiting' => [
         'email' => 100, // per minuto
         'sms' => 10,   // per minuto
         'push' => 500, // per minuto
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     'queue_connections' => [
         'email' => 'redis',
         'sms' => 'redis',
         'push' => 'redis',
         'telegram' => 'sync', // Per testing
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     'tracking' => [
         'enabled' => true,
         'track_opens' => true,
         'track_clicks' => true,
         'pixel_tracking' => true,
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     'security' => [
         'require_opt_in' => true,
         'double_opt_in' => true,
@@ -1380,6 +2001,12 @@ echo "🔔 Configurare monitoring per code"
 - **Giorni 26-28**: Validazione e performance
 - **Giorni 29-30**: Deploy e monitoring
 
+<<<<<<< HEAD
 **Stima Totale**: 28 giorni lavorativi  
 **Team Richiesto**: 2 senior developer + 1 QA specialist  
 **Budget Stimato**: €35.000 - €42.000
+=======
+**Stima Totale**: 28 giorni lavorativi
+**Team Richiesto**: 2 senior developer + 1 QA specialist
+**Budget Stimato**: €35.000 - €42.000
+>>>>>>> 6ed19256f (.)

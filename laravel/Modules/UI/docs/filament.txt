@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 module: theme
 topic: filament
@@ -5,3 +6,18 @@ canonical: ../../../Themes/docs/shared-components/filament-Modules.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/filament-Modules.md
+=======
+https://github.com/savannabits/filament-signature-pad
+
+
+https://github.com/bezhanSalleh/filament-exceptions?tab=readme-ov-file
+
+https://github.com/shuvroroy/filament-spatie-laravel-health
+
+
+--- Select Tree ---
+https://filamentphp.com/plugins/saade-adjacency-list
+https://filamentphp.com/plugins/codewithdennis-select-tree
+https://github.com/beholdr/filament-trilist
+
+>>>>>>> 6ed19256f (.)

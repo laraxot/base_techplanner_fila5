@@ -78,9 +78,15 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Resources\ReportResource\Pages;
 
 use Modules\<nome progetto>\Filament\Resources\ReportResource;
+=======
+namespace Modules\SaluteMo\Filament\Resources\ReportResource\Pages;
+
+use Modules\SaluteMo\Filament\Resources\ReportResource;
+>>>>>>> 6ed19256f (.)
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Filament\Actions;
 use Filament\Tables;
@@ -230,9 +236,15 @@ public static function getFormSchema(): array
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Resources\AppointmentResource\Pages;
 
 use Modules\<nome progetto>\Filament\Resources\AppointmentResource;
+=======
+namespace Modules\SaluteMo\Filament\Resources\AppointmentResource\Pages;
+
+use Modules\SaluteMo\Filament\Resources\AppointmentResource;
+>>>>>>> 6ed19256f (.)
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
 use Filament\Actions;
 
@@ -267,9 +279,15 @@ class EditAppointment extends XotBaseEditRecord
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Resources\AppointmentResource\Pages;
 
 use Modules\<nome progetto>\Filament\Resources\AppointmentResource;
+=======
+namespace Modules\SaluteMo\Filament\Resources\AppointmentResource\Pages;
+
+use Modules\SaluteMo\Filament\Resources\AppointmentResource;
+>>>>>>> 6ed19256f (.)
 use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
 
 /**
@@ -344,9 +362,15 @@ TextInput::make('nome')
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Resources;
 
 use Modules\<nome progetto>\Filament\Resources\ReportResource\Pages;
+=======
+namespace Modules\SaluteMo\Filament\Resources;
+
+use Modules\SaluteMo\Filament\Resources\ReportResource\Pages;
+>>>>>>> 6ed19256f (.)
 use Modules\<nome modulo>\Models\Report;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Filament\Forms;
@@ -937,10 +961,15 @@ Consulta l'esempio completo all'inizio di questo documento per una implementazio
 ## Riferimenti
 
 - [Documentazione Filament](https://filamentphp.com/docs)
+<<<<<<< HEAD
 - [Documentazione XotBaseResource](base_orisbroker_fila3/laravel/Modules/Xot/docs/resource.md)
 - [Best Practices Laraxot](base_orisbroker_fila3/laravel/Modules/Xot/docs/best-practices.md)
 - [Documentazione XotBaseResource](base_orisbroker_fila5/laravel/modules/xot/project_docs/resource.md)
 - [Best Practices Laraxot](base_orisbroker_fila5/laravel/modules/xot/project_docs/best-practices.md)
+=======
+- [Documentazione XotBaseResource](/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/docs/resource.md)
+- [Best Practices Laraxot](/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/docs/best-practices.md)
+>>>>>>> 6ed19256f (.)
 
 ## Regole per Widget Filament: Path View e Localizzazione
 
@@ -952,13 +981,21 @@ Consulta l'esempio completo all'inizio di questo documento per una implementazio
 
 ### Esempio corretto
 ```php
+<<<<<<< HEAD
 protected static string $view = '<nome progetto>::filament.widgets.find-doctor-and-appointment';
+=======
+protected static string $view = 'saluteora::filament.widgets.find-doctor-and-appointment';
+>>>>>>> 6ed19256f (.)
 TextInput::make('location')->required()
 ```
 
 ### Esempio errato
 ```php
+<<<<<<< HEAD
 protected static string $view = '<nome progetto>::widgets.find-doctor-and-appointment';
+=======
+protected static string $view = 'saluteora::widgets.find-doctor-and-appointment';
+>>>>>>> 6ed19256f (.)
 TextInput::make('location')->label(__('modulo::campo.label'))
 ```
 
@@ -1011,4 +1048,9 @@ Appointment::where('doctor_id', $doctorId)
 ### Motivazione filosofica, politica, zen
 - Un solo punto di verità: nessuna duplicazione, nessun lock-in
 - DRY, KISS, serenità del codice
+<<<<<<< HEAD
 - Refactoring sicuro, massima estendibilità
+=======
+- Refactoring sicuro, massima estendibilità
+
+>>>>>>> 6ed19256f (.)

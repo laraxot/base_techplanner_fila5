@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Widgets\Auth;
 
+<<<<<<< HEAD
 use Filament\Schemas\Schema;
 use Illuminate\Support\Facades\Auth;
 use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
@@ -34,10 +35,49 @@ class LoginWidget extends XotBaseSchemaWidget
     protected static function schemaMethod(): string
     {
         return 'getLoginFormSchema';
+=======
+use Filament\Forms\Components\Checkbox;
+use Filament\Forms\Components\Field;
+use Filament\Forms\Components\TextInput;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Validation\ValidationException;
+use Modules\Xot\Datas\XotData;
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
+
+/**
+ * LoginWidget: Widget di login conforme alle regole Windsurf/Xot.
+ * - Estende XotBaseWidget
+ * - Usa solo componenti Filament importati
+ * - Validazione e sicurezza integrate
+ * - Facilmente estendibile (2FA, captcha, login social).
+ */
+class LoginWidget extends XotBaseWidget
+{
+    /**
+     * @return array<string, Field>
+     */
+    #[\Override]
+    public function getFormSchema(): array
+    {
+        return [
+            'email' => TextInput::make('email')
+                ->email()
+                ->required()
+                ->autofocus(),
+            'password' => TextInput::make('password')
+                ->password()
+                ->required(),
+            'remember' => Checkbox::make('remember'),
+        ];
+>>>>>>> 6ed19256f (.)
     }
 
     public function login(): void
     {
+<<<<<<< HEAD
+=======
+        // try {
+>>>>>>> 6ed19256f (.)
         /** @var array<string, mixed> $data */
         $data = $this->form->getState();
 
@@ -50,6 +90,7 @@ class LoginWidget extends XotBaseSchemaWidget
 
         if (Auth::attempt($credentials, $remember)) {
             session()->regenerate();
+<<<<<<< HEAD
             $redirectUrl = \Illuminate\Support\Facades\Route::has('dashboard')
                 ? route('dashboard')
                 : url('/'.app()->getLocale());
@@ -65,5 +106,23 @@ class LoginWidget extends XotBaseSchemaWidget
     public function save(): void
     {
         $this->login();
+=======
+            redirect()->intended('/');
+        }
+
+        $userClass = XotData::make()->getUserClass();
+        $user = $userClass::where('email', $credentials['email'])->first();
+
+        $this->addError('data.email', __('auth.failed'));
+        // } catch (ValidationException $e) {
+        // dddx([
+        //    'credentials' => $credentials,
+        //    'remember' => $remember,
+        //    'e' => $e,
+        // ]);
+        // La validazione Filament gestisce automaticamente gli errori
+        // throw $e;
+        // }
+>>>>>>> 6ed19256f (.)
     }
 }

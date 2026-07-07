@@ -404,5 +404,8 @@ public function mount()
 ## Collegamenti tra versioni di multi-step-forms.md
 * [multi-step-forms.md](laravel/Modules/Cms/docs/multi-step-forms.md)
 * [multi-step-forms.md](laravel/Modules/Cms/docs/components/multi-step-forms.md)
+<<<<<<< HEAD
 * [multi-step-forms.md](laravel/modules/cms/docs/multi-step-forms.md)
 * [multi-step-forms.md](laravel/modules/cms/docs/components/multi-step-forms.md)
+=======
+>>>>>>> 6ed19256f (.)

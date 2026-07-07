@@ -6,6 +6,7 @@ return [
     'fields' => [
         'name' => [
             'label' => 'name',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -35,4 +36,12 @@ return [
             'label' => 'Elimina Clients',
         ],
     ],
+=======
+        ],
+    ],
+    'navigation' => [],
+    'label' => '',
+    'plural_label' => '',
+    'actions' => [],
+>>>>>>> 6ed19256f (.)
 ];

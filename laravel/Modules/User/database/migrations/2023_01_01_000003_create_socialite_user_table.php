@@ -27,7 +27,11 @@ return new class extends XotBaseMigration {
             $table->string('avatar')->nullable();
 
             /*
+<<<<<<< HEAD
              * $table->unique([)
+=======
+             * $table->unique([
+>>>>>>> 6ed19256f (.)
              * 'provider',
              * 'provider_id',
              * ]);
@@ -36,7 +40,11 @@ return new class extends XotBaseMigration {
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
+<<<<<<< HEAD
             // if (! $this->hasColumn('email'))
+=======
+            // if (! $this->hasColumn('email')) {
+>>>>>>> 6ed19256f (.)
             //    $table->string('email')->nullable();
             // }
             if ('varchar' === $this->getColumnType('token')) {

@@ -1,10 +1,17 @@
 # Modulo Lang
 
 ## Informazioni Generali
+<<<<<<< HEAD
 - **Nome**: `laraxot/module_lang_fila5`
 - **Descrizione**: Modulo per la gestione delle traduzioni e localizzazione
 - **Namespace**: `Modules\Lang`
 - **Repository**: https://github.com/laraxot/module_lang_fila5.git
+=======
+- **Nome**: `laraxot/module_lang_fila3`
+- **Descrizione**: Modulo per la gestione delle traduzioni e localizzazione
+- **Namespace**: `Modules\Lang`
+- **Repository**: https://github.com/laraxot/module_lang_fila3.git
+>>>>>>> 6ed19256f (.)
 
 ### Versione HEAD
 
@@ -27,7 +34,10 @@
 
 ### Regole Generali
 - [Regole Traduzioni](../../Xot/docs/translations.md) - Documentazione base sulle traduzioni
+<<<<<<< HEAD
 - [Composer merge plugin](composer-merge-plugin.md) - Integrazione pacchetti locali
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Versione Incoming
 
@@ -288,8 +298,11 @@ public function testTranslations()
 
 - [Modulo Patient](../../Patient/docs/translations.md) - Esempio di implementazione delle traduzioni
 - [Regole Generali Traduzioni](../../Xot/docs/translations.md)
+<<<<<<< HEAD
 - [Modulo Patient](../../Patient/docs/translations.md) - Esempio di implementazione delle traduzioni
 - [Regole Generali Traduzioni](../../Xot/docs/translations.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Esempi
 
@@ -302,4 +315,8 @@ $translation = Lang::get('patient.registration.label');
 
 Le modifiche vengono tracciate nel repository GitHub.
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> 6ed19256f (.)

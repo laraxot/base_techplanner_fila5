@@ -49,4 +49,8 @@ class LegalOfficeResource extends XotBaseResource
             'edit' => EditLegalOffice::route('/{record}/edit'),
         ];
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 6ed19256f (.)

@@ -8,17 +8,23 @@ return [
             'label' => 'Email',
             'placeholder' => 'Enter your email',
             'help' => 'Your email address for authentication',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'password' => [
             'label' => 'Password',
             'placeholder' => 'Enter your password',
             'help' => 'Your account password',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -34,6 +40,7 @@ return [
         ],
     ],
     'messages' => [
+<<<<<<< HEAD
         'failed' => [
             'key' => 'user::auth.messages.failed',
             'text' => 'Invalid credentials.',
@@ -44,6 +51,13 @@ return [
         'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
         'unauthorized' => 'You are not authorized to access this resource.',
     ],
+=======
+        'failed' => 'These credentials do not match our records.',
+        'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
+        'unauthorized' => 'You are not authorized to access this resource.',
+    ],
+    // Password Reset Widget - specific translations
+>>>>>>> 6ed19256f (.)
     'password_reset' => [
         'email_placeholder' => 'Enter your email address',
         'send_button' => 'Send reset link',
@@ -90,6 +104,7 @@ return [
             'try_again' => 'Try again',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -187,4 +202,6 @@ return [
             'personal_area' => 'Access personal area',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

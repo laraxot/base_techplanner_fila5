@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 📚 **Indice Documentazione Modulo Job**
 
 **Status**: ✅ PHPStan Level 10 Compliant
@@ -38,3 +39,6 @@
 ## Dependency Intelligence
 
 - [Dependency intelligence](dependency-intelligence.md)
+=======
+# Documentation Index
+>>>>>>> 6ed19256f (.)

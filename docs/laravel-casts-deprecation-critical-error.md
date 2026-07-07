@@ -216,4 +216,8 @@ protected function casts(): array
 **IMPATTO: ALTO**  
 **EFFORT: MEDIO**  
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: Agosto 2025*
+=======
+*Ultimo aggiornamento: Agosto 2025*
+>>>>>>> 6ed19256f (.)

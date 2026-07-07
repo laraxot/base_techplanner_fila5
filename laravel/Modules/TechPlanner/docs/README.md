@@ -252,4 +252,7 @@ Il modulo TechPlanner è stato aggiornato con successo a Filament 4.x. Il codice
 - Widget FullCalendar (in attesa di Saade\FilamentFullCalendar)
 
 *Ultima modifica: 2025-12-16 - ✅ SUCCESSO COMPLETO: Filament 4.x aggiornato, refactoring Super Cow completato*
+<<<<<<< HEAD
 # TechPlanner Module Documentation\n\nMain module for Sottana Service project.\n\n## Contents\n- [Brand Update 2026](../../../docs/brand-update-2026.md)\n- [Project Roadmap](../../../migration_plan.md)
+=======
+>>>>>>> 6ed19256f (.)

@@ -15,6 +15,10 @@ class TeamPermissionResource extends XotBaseResource
 {
     protected static ?string $model = TeamPermission::class;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6ed19256f (.)
     /**
      * Get the form schema for the resource (XotBaseResource pattern).
      *
@@ -42,4 +46,8 @@ class TeamPermissionResource extends XotBaseResource
             ]),
         ];
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 6ed19256f (.)

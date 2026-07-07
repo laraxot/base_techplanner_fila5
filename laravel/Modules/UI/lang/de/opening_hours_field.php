@@ -49,10 +49,13 @@ return [
                 'placeholder' => 'es. Consulenze',
                 'helper_text' => 'Descrizione attività pomeridiane del lunedì',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'tuesday' => [
             'morning' => [
@@ -99,10 +102,13 @@ return [
                 'placeholder' => 'es. Consulenze',
                 'helper_text' => 'Descrizione attività pomeridiane del martedì',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'wednesday' => [
             'morning' => [
@@ -149,10 +155,13 @@ return [
                 'placeholder' => 'es. Consulenze',
                 'helper_text' => 'Descrizione attività pomeridiane del mercoledì',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'thursday' => [
             'morning' => [
@@ -199,10 +208,13 @@ return [
                 'placeholder' => 'es. Consulenze',
                 'helper_text' => 'Descrizione attività pomeridiane del giovedì',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'friday' => [
             'morning' => [
@@ -249,10 +261,13 @@ return [
                 'placeholder' => 'es. Consulenze',
                 'helper_text' => 'Descrizione attività pomeridiane del venerdì',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'saturday' => [
             'morning' => [
@@ -299,10 +314,13 @@ return [
                 'placeholder' => 'es. Consulenze',
                 'helper_text' => 'Descrizione attività pomeridiane del sabato',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'sunday' => [
             'morning' => [
@@ -345,24 +363,33 @@ return [
                 'placeholder' => 'es. Consulenze',
                 'helper_text' => 'Descrizione attività pomeridiane della domenica',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'schedule' => [
             'label' => 'Programma Orari',
             'placeholder' => 'Configura gli orari di apertura',
             'helper_text' => 'Gestione completa degli orari di disponibilità',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'availability' => [
             'label' => 'Disponibilità',
             'placeholder' => 'Imposta la tua disponibilità',
             'helper_text' => 'Configura quando sei disponibile per appuntamenti',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'sections' => [
@@ -392,6 +419,7 @@ return [
         'schedule_saved' => 'Orari salvati correttamente',
         'invalid_time_range' => 'Orario non valido: l\'ora di fine deve essere successiva all\'ora di inizio',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -401,4 +429,6 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

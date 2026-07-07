@@ -11,11 +11,16 @@ namespace Modules\Media\Actions\Video;
 
 use Exception;
 use Modules\Media\Datas\ConvertData;
+<<<<<<< HEAD
 use ProtoneMedia\LaravelFFMpeg\Exporters\MediaExporter;
 use ProtoneMedia\LaravelFFMpeg\MediaOpener;
 use ProtoneMedia\LaravelFFMpeg\Support\FFMpeg;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
+=======
+use ProtoneMedia\LaravelFFMpeg\Support\FFMpeg;
+use Spatie\QueueableAction\QueueableAction;
+>>>>>>> 6ed19256f (.)
 
 /**
  * Classe per convertire video utilizzando i dati di conversione specificati.
@@ -41,6 +46,7 @@ class ConvertVideoByConvertDataAction
         }
 
         // Instanziamo il formato prima di usarlo
+<<<<<<< HEAD
         $formatInstance = new $format;
 
         /** @var MediaOpener $media */
@@ -66,6 +72,24 @@ class ConvertVideoByConvertDataAction
         Assert::isInstanceOf($export, MediaExporter::class);
 
         $export->save($file_new);
+=======
+        $formatInstance = new $format();
+
+        // @phpstan-ignore method.notFound
+        FFMpeg::fromDisk($data->disk)
+            ->open($data->file)
+            ->export()
+            ->onProgress(function (float $percentage, float $remaining, float $rate): void {
+                // Gestione del progresso
+                $msg = "{$percentage}% transcoded";
+                $msg .= "{$remaining} seconds left at rate: {$rate}";
+
+                // Log o notifica del progresso
+            })
+            ->addFilter('-preset', 'ultrafast')
+            // Utilizziamo il formato istanziato come parametro
+            ->save($file_new, $formatInstance);
+>>>>>>> 6ed19256f (.)
 
         // Restituisci il percorso del file senza usare il metodo url()
         return $file_new;

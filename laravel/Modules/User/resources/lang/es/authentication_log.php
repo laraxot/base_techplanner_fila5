@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -59,6 +60,29 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'user_id' => [
+            'label' => 'Usuario',
+        ],
+        'ip_address' => [
+            'label' => 'Dirección IP',
+        ],
+        'user_agent' => [
+            'label' => 'Agente de Usuario',
+        ],
+        'login_at' => [
+            'label' => 'Inicio de Sesión',
+        ],
+        'logout_at' => [
+            'label' => 'Cierre de Sesión',
+        ],
+        'login_method' => [
+            'label' => 'Método de Inicio de Sesión',
+        ],
+        'success' => [
+            'label' => 'Éxito',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [

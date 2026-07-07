@@ -34,7 +34,12 @@ use function Safe\unlink;
  * S3Test Page for AWS S3 testing and diagnostics.
  *
  * @property array<string, mixed> $debugResults
+<<<<<<< HEAD
  * @property \Filament\Schemas\Schema $form
+=======
+ *
+ * @phpstan-ignore-next-line
+>>>>>>> 6ed19256f (.)
  */
 class S3Test extends XotBasePage
 {
@@ -128,6 +133,10 @@ class S3Test extends XotBasePage
      */
     protected function fillForms(): void
     {
+<<<<<<< HEAD
+=======
+        /** @phpstan-ignore-next-line */
+>>>>>>> 6ed19256f (.)
         $this->form->fill([
             'debug_output' => $this->getDebugOutput(),
         ]);
@@ -232,6 +241,10 @@ class S3Test extends XotBasePage
 
     public function test01(): void
     {
+<<<<<<< HEAD
+=======
+        /** @phpstan-ignore-next-line */
+>>>>>>> 6ed19256f (.)
         $formState = $this->form->getState();
         Assert::isArray($formState, 'Form state must be array');
         $data = $formState;
@@ -255,7 +268,11 @@ class S3Test extends XotBasePage
             'url2' => Storage::disk('s3')->url((string) $filePath),
             'url3' => Storage::disk('s3')->temporaryUrl((string) $filePath, now()->addMinutes(5)),
         ]);
+<<<<<<< HEAD
         $debugResults = [];
+=======
+        $this->debugResults = [];
+>>>>>>> 6ed19256f (.)
         $this->updateDebugOutput();
     }
 
@@ -372,7 +389,11 @@ class S3Test extends XotBasePage
                     'Bucket Accessible' => '❌ No',
                     'Error Code' => $e->getAwsErrorCode() ?? 'UnknownError',
                     'Message' => $e->getMessage(),
+<<<<<<< HEAD
                     'Solution' => $this->getSolutionForError($e->getAwsErrorCode()),
+=======
+                    'Solution' => $this->getSolutionForError($e->getAwsErrorCode() ?? null),
+>>>>>>> 6ed19256f (.)
                 ],
             ];
         }
@@ -633,6 +654,10 @@ class S3Test extends XotBasePage
     public function sendEmail(): void
     {
         try {
+<<<<<<< HEAD
+=======
+            /** @phpstan-ignore-next-line */
+>>>>>>> 6ed19256f (.)
             $formState = $this->form->getState();
             Assert::isArray($formState, 'Form state must be array');
             $data = $formState;
@@ -652,7 +677,11 @@ class S3Test extends XotBasePage
             $signedUrl = app(GetCloudFrontSignedUrlAction::class)->execute((string) $filePath, 60);
 
             // Log the email data for testing purposes (no actual email sent)
+<<<<<<< HEAD
             Log::debug('S3 Test Email Data', [
+=======
+            Log::info('S3 Test Email Data', [
+>>>>>>> 6ed19256f (.)
                 'attachment_path' => $filePath,
                 'signed_url' => $signedUrl,
                 'timestamp' => now()->toISOString(),
@@ -688,7 +717,11 @@ class S3Test extends XotBasePage
         try {
             $testData = 'This is a test file content for S3 upload/download test.';
             $testFileName = 'test-file-'.time().'.txt';
+<<<<<<< HEAD
             $localTestPath = storage_path('framework/cache/'.$testFileName);
+=======
+            $localTestPath = sys_get_temp_dir().'/'.$testFileName;
+>>>>>>> 6ed19256f (.)
 
             // Create test file
             file_put_contents($localTestPath, $testData);
@@ -757,6 +790,10 @@ class S3Test extends XotBasePage
      */
     private function updateDebugOutput(): void
     {
+<<<<<<< HEAD
+=======
+        /** @phpstan-ignore-next-line */
+>>>>>>> 6ed19256f (.)
         $this->form->fill([
             'debug_output' => $this->getDebugOutput(),
         ]);
@@ -780,6 +817,10 @@ class S3Test extends XotBasePage
             $s3Disk = Storage::disk('s3');
             $temporaryUrl = $s3Disk->temporaryUrl($filename, now()->addMinutes(5));
 
+<<<<<<< HEAD
+=======
+            /** @phpstan-ignore-next-line */
+>>>>>>> 6ed19256f (.)
             $formState = $this->form->getState();
             Assert::isArray($formState, 'Form state must be array');
             $data = $formState;
@@ -809,7 +850,11 @@ class S3Test extends XotBasePage
                 ->send();
 
             // Log results for debugging
+<<<<<<< HEAD
             Log::debug('S3 Test Results', $results);
+=======
+            Log::info('S3 Test Results', $results);
+>>>>>>> 6ed19256f (.)
         } catch (Exception $e) {
             Notification::make()
                 ->danger()

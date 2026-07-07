@@ -11,7 +11,11 @@
 - **Zen Principle**: One truth, many manifestations
 
 #### 2. **Consistency Over Flexibility**
+<<<<<<< HEAD
 - **<nome progetto>able behavior > Unlimited options**
+=======
+- **Predictable behavior > Unlimited options**
+>>>>>>> 6ed19256f (.)
 - Same patterns across all modules, same file structures
 - **Violation Example**: Different test structures across modules
 - **Zen Principle**: Harmony through uniformity
@@ -28,7 +32,11 @@
 ```
 Xot (Core Engine)
 ├── User (Authentication & Authorization)
+<<<<<<< HEAD
 ├── healthcare_app (Core Business Logic - Surveys)
+=======
+├── Quaeris (Core Business Logic - Surveys)
+>>>>>>> 6ed19256f (.)
 ├── Cms (Content Management)
 ├── Media (File Management)
 ├── Geo (Location Services)
@@ -108,7 +116,11 @@ TextInput::make('name');
 - **Power**: Controls access to all resources
 - **Responsibility**: Security and permissions
 
+<<<<<<< HEAD
 #### 3. **healthcare_app Module (The Economy)**
+=======
+#### 3. **Quaeris Module (The Economy)**
+>>>>>>> 6ed19256f (.)
 - **Role**: Core business logic, surveys, reporting
 - **Power**: Main revenue-generating functionality
 - **Responsibility**: Business operations
@@ -178,7 +190,11 @@ if (isset($model->email)) { ... }
 
 #### 3. **Test Structure Consistency**
 - **Rule**: Tests in traditional Laravel structure only
+<<<<<<< HEAD
 - **Reason**: <nome progetto>able autoloader behavior
+=======
+- **Reason**: Predictable autoloader behavior
+>>>>>>> 6ed19256f (.)
 - **Location**: `Modules/{Module}/tests/`
 
 ## 🎯 Implementation Guidelines
@@ -302,6 +318,12 @@ grep -r "\.navigation" Modules/*/lang/**/*.php
 ---
 
 **Maintained by**: Xot Module (The Laraxot Government)
+<<<<<<< HEAD
 **Last Updated**: 2025-11-17
 **Philosophy**: Consistency, <nome progetto>ability, Simplicity
 **Goal**: Create a harmonious, maintainable, and scalable application architecture
+=======
+**Philosophy**: Consistency, Predictability, Simplicity
+**Goal**: Create a harmonious, maintainable, and scalable application architecture
+**Last Updated**: 2025-11-17
+>>>>>>> 6ed19256f (.)

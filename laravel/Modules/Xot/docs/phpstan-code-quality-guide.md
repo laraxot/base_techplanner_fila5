@@ -1,5 +1,6 @@
 # PHPStan Code Quality Guide - Laraxot
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
 **Principi**: DRY + KISS + SOLID + Robust
 **Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot
@@ -10,6 +11,11 @@
 **Ultimo aggiornamento**: 2025-12-22  
 **Principi**: DRY + KISS + SOLID + Robust  
 **Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot  
+=======
+**Ultimo aggiornamento**: 2025-12-22
+**Principi**: DRY + KISS + SOLID + Robust
+**Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot
+>>>>>>> 6ed19256f (.)
 **Obiettivo**: 0 errori PHPStan Level 10 + Complexity < 10 + Quality > 80%
 
 ---
@@ -154,7 +160,10 @@ php artisan cache:clear
 ### Metodi Resource Filament
 - Chi estende `XotBaseResource` **NON deve avere** `getTableColumns()`
 - `getTableActions()` e `getTableBulkActions()` devono restituire `array<string, mixed>`
+<<<<<<< HEAD
 - `getInfolistSchema()` deve restituire `array<string, mixed>` con chiavi stringa
+=======
+>>>>>>> 6ed19256f (.)
 - Se solo azioni standard → **rimuovile completamente**
 - Se azioni personalizzate → includi `...parent::getTableActions()`
 
@@ -456,6 +465,7 @@ $address->update($up);
 
 **Regola**: Quando si usa `Arr::only()`, `Arr::except()`, o altri helper Laravel che restituiscono `array` non tipizzato, aggiungere sempre un PHPDoc esplicito se il risultato viene passato a metodi che richiedono tipi specifici.
 
+<<<<<<< HEAD
 ### 14. Infolist Schema con String Keys
 
 **Problema**: `getInfolistSchema()` restituisce array indicizzato invece di associativo
@@ -488,6 +498,8 @@ public function getInfolistSchema(): array
 }
 ```
 
+=======
+>>>>>>> 6ed19256f (.)
 ---
 
 ## 🎯 Complexity Reduction Patterns
@@ -506,8 +518,13 @@ protected function getStats(): array
 {
     if ($this->record === null) {
         return [
+<<<<<<< HEAD
             Stat::make(__('healthcare_app::question_chart_stats_overview.stats.total_responses.label'), '0')
                 ->description(__('healthcare_app::question_chart_stats_overview.messages.no_data_available'))
+=======
+            Stat::make(__('quaeris::question_chart_stats_overview.stats.total_responses.label'), '0')
+                ->description(__('quaeris::question_chart_stats_overview.messages.no_data_available'))
+>>>>>>> 6ed19256f (.)
                 ->color('gray'),
         ];
     }
@@ -884,10 +901,17 @@ public function getTableRecordKey(\Illuminate\Database\Eloquent\Model|array $rec
 private function createTotalResponsesStat(int $count): Stat
 {
     return Stat::make(
+<<<<<<< HEAD
         __('healthcare_app::question_chart_stats_overview.stats.total_responses.label'),
         number_format((float) $count)
     )
         ->description(__('healthcare_app::question_chart_stats_overview.stats.total_responses.description'))
+=======
+        __('quaeris::question_chart_stats_overview.stats.total_responses.label'),
+        number_format((float) $count)
+    )
+        ->description(__('quaeris::question_chart_stats_overview.stats.total_responses.description'))
+>>>>>>> 6ed19256f (.)
         ->color($count > 0 ? 'success' : 'gray')
         ->icon('heroicon-o-document-text');
 }
@@ -895,10 +919,17 @@ private function createTotalResponsesStat(int $count): Stat
 private function createCompletionRateStat(float $rate): Stat
 {
     return Stat::make(
+<<<<<<< HEAD
         __('healthcare_app::question_chart_stats_overview.stats.completion_rate.label'),
         $rate.'%'
     )
         ->description(__('healthcare_app::question_chart_stats_overview.stats.completion_rate.description'))
+=======
+        __('quaeris::question_chart_stats_overview.stats.completion_rate.label'),
+        $rate.'%'
+    )
+        ->description(__('quaeris::question_chart_stats_overview.stats.completion_rate.description'))
+>>>>>>> 6ed19256f (.)
         ->color($rate >= 75 ? 'success' : ($rate >= 50 ? 'warning' : 'danger'))
         ->icon('heroicon-o-chart-bar');
 }
@@ -1688,7 +1719,11 @@ class DashboardPage extends XotBasePage
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\healthcare_app\Filament\Widgets;
+=======
+namespace Modules\Quaeris\Filament\Widgets;
+>>>>>>> 6ed19256f (.)
 
 use Modules\Xot\Filament\Widgets\XotBaseTableWidget;
 use Filament\Widgets\Concerns\InteractsWithPageFilters;
@@ -1963,7 +1998,10 @@ $model->update($filtered);
 - [XotBase Extension Rules](./filament-class-extension-rules.md) - Regole complete Filament
 - [PHPStan Code Quality Guide](./phpstan-code-quality-guide.md) - Guida completa PHPStan
 - [PHPStan Specific Patterns](./phpstan-specific-patterns.md) - Pattern specifici PHPStan
+<<<<<<< HEAD
 **Riferimenti**: 
 - `laravel/Modules/Xot/docs/filament-extension-rules-complete.md` - Regole complete Filament
 - `laravel/Modules/Xot/docs/phpstan-code-quality-guide.md` - Guida completa PHPStan
 - `laravel/Modules/Xot/docs/phpstan-specific-patterns.md` - Pattern specifici PHPStan
+=======
+>>>>>>> 6ed19256f (.)

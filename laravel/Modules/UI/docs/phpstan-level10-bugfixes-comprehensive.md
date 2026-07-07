@@ -1,12 +1,21 @@
 # PHPStan Level 10 Comprehensive Bugfixes
 
 ## Problema Generale
+<<<<<<< HEAD
 Errori PHPStan Level 9+ rilevati durante la scansione multi-modulo: Media, <nome progetto>, , UI, Xot.
 Errori PHPStan Level 9+ rilevati durante la scansione multi-modulo: Media, <nome progetto>, <nome progetto>, UI, Xot.
 Errori PHPStan Level 9+ rilevati durante la scansione multi-modulo: Media, <nome progetto>, , UI, Xot.
 Errori PHPStan Level 9+ rilevati durante la scansione multi-modulo: Media, <nome progetto>, <nome progetto>, UI, Xot.
 Errori PHPStan Level 9+ rilevati durante la scansione multi-modulo: Media, <nome progetto>, , UI, Xot.
 Errori PHPStan Level 9+ rilevati durante la scansione multi-modulo: Media, <nome progetto>, <nome progetto>, UI, Xot.
+=======
+Errori PHPStan Level 9+ rilevati durante la scansione multi-modulo: Media, SaluteMo, , UI, Xot.
+Errori PHPStan Level 9+ rilevati durante la scansione multi-modulo: Media, SaluteMo, SaluteOra, UI, Xot.
+Errori PHPStan Level 9+ rilevati durante la scansione multi-modulo: Media, SaluteMo, , UI, Xot.
+Errori PHPStan Level 9+ rilevati durante la scansione multi-modulo: Media, SaluteMo, SaluteOra, UI, Xot.
+Errori PHPStan Level 9+ rilevati durante la scansione multi-modulo: Media, SaluteMo, , UI, Xot.
+Errori PHPStan Level 9+ rilevati durante la scansione multi-modulo: Media, SaluteMo, SaluteOra, UI, Xot.
+>>>>>>> 6ed19256f (.)
 
 ## Moduli Interessati e Correzioni
 
@@ -63,11 +72,19 @@ $this->debugResults['file_operations'] = $this->getFileOperationsData();
 ```
 
 ### 🟢 ** Module** - Report Model
+<<<<<<< HEAD
 ### 🟢 **<nome progetto> Module** - Report Model
 ### 🟢 ** Module** - Report Model
 ### 🟢 **<nome progetto> Module** - Report Model
 ### 🟢 ** Module** - Report Model
 ### 🟢 **<nome progetto> Module** - Report Model
+=======
+### 🟢 **SaluteOra Module** - Report Model
+### 🟢 ** Module** - Report Model
+### 🟢 **SaluteOra Module** - Report Model
+### 🟢 ** Module** - Report Model
+### 🟢 **SaluteOra Module** - Report Model
+>>>>>>> 6ed19256f (.)
 **Stato**: ✅ Corretto
 
 #### Report.php
@@ -80,9 +97,15 @@ public function getSpecifyDiseases(): array
 {
 ```
 
+<<<<<<< HEAD
 ### 🟡 **<nome progetto> Module** - ListReports
 ### 🟡 **<nome progetto> Module** - ListReports
 ### 🟡 **<nome progetto> Module** - ListReports
+=======
+### 🟡 **SaluteMo Module** - ListReports
+### 🟡 **SaluteMo Module** - ListReports
+### 🟡 **SaluteMo Module** - ListReports
+>>>>>>> 6ed19256f (.)
 **Stato**: ⚠️ Da Verificare
 
 #### ListReports.php
@@ -101,6 +124,7 @@ public function getSpecifyDiseases(): array
 | UI         | en/s3test.php                 | Duplicate array key        | ✅ Fix |
 | Xot        | GetCloudFrontSignedUrlAction  | Parameter type mismatch    | ✅ Fix |
 |   | Report.php                    | Missing return type        | ✅ Fix |
+<<<<<<< HEAD
 | <nome progetto>  | Report.php                    | Missing return type        | ✅ Fix |
 | <nome progetto>   | ListReports.php               | Invalid return type        | ⚠️ TBD |
 |   | Report.php                    | Missing return type        | ✅ Fix |
@@ -109,24 +133,49 @@ public function getSpecifyDiseases(): array
 |   | Report.php                    | Missing return type        | ✅ Fix |
 | <nome progetto>  | Report.php                    | Missing return type        | ✅ Fix |
 | <nome progetto>   | ListReports.php               | Invalid return type        | ⚠️ TBD |
+=======
+| SaluteOra  | Report.php                    | Missing return type        | ✅ Fix |
+| SaluteMo   | ListReports.php               | Invalid return type        | ⚠️ TBD |
+|   | Report.php                    | Missing return type        | ✅ Fix |
+| SaluteOra  | Report.php                    | Missing return type        | ✅ Fix |
+| SaluteMo   | ListReports.php               | Invalid return type        | ⚠️ TBD |
+|   | Report.php                    | Missing return type        | ✅ Fix |
+| SaluteOra  | Report.php                    | Missing return type        | ✅ Fix |
+| SaluteMo   | ListReports.php               | Invalid return type        | ⚠️ TBD |
+>>>>>>> 6ed19256f (.)
 
 ## Verifica Post-Correzione
 
 ### PHPStan Command
 ```bash
+<<<<<<< HEAD
 cd laravel
 cd laravel
 cd laravel
 cd laravel
 cd laravel
 cd laravel
+=======
+cd /var/www/html/_bases/base_techplanner_fila3_mono/laravel
+cd /var/www/html/_bases/base_saluteora/laravel
+cd /var/www/html/_bases/base_techplanner_fila3_mono/laravel
+cd /var/www/html/_bases/base_saluteora/laravel
+cd /var/www/html/_bases/base_techplanner_fila3_mono/laravel
+cd /var/www/html/_bases/base_saluteora/laravel
+>>>>>>> 6ed19256f (.)
 ./vendor/bin/phpstan analyse --level=9 --memory-limit=2G
 ```
 
 ### Problemi Residui
+<<<<<<< HEAD
 1. **<nome progetto>/ListReports**: Richiede cache clear PHPStan
 1. **<nome progetto>/ListReports**: Richiede cache clear PHPStan
 1. **<nome progetto>/ListReports**: Richiede cache clear PHPStan
+=======
+1. **SaluteMo/ListReports**: Richiede cache clear PHPStan
+1. **SaluteMo/ListReports**: Richiede cache clear PHPStan
+1. **SaluteMo/ListReports**: Richiede cache clear PHPStan
+>>>>>>> 6ed19256f (.)
 2. **Media Module**: Verificare se la scansione PHPStan è aggiornata
 
 ## Best Practice Implementate
@@ -154,13 +203,21 @@ cd laravel
 - [S3Test Null ErrorCode Handling](s3test-bugfix-null-errorcode.md)
 - [AwsTest Undefined Variable Fix](awstest-bugfix-undefined-variable.md)
 - [Media Module PHPStan Fixes](../Media/project_docs/phpstan_level10_fixes.md)
+<<<<<<< HEAD
 - [Media Module PHPStan Fixes](../media/project_docs/phpstan_level10_fixes.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Aggiornamento Continuo
 
 Questo documento deve essere aggiornato ogni volta che vengono rilevati e corretti nuovi errori PHPStan level 9+.
 
 **Data Ultimo Aggiornamento**: 2025-01-06
+<<<<<<< HEAD
 **Data Ultimo Aggiornamento**: [DATE]
 **PHPStan Version**: 1.12.x
 **Laravel Version**: 12.21.0
+=======
+**PHPStan Version**: 1.12.x
+**Laravel Version**: 12.21.0
+>>>>>>> 6ed19256f (.)

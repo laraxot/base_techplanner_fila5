@@ -230,7 +230,11 @@ done
 ## 🎯 Comando Finale di Verifica
 
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/_bases/base_fixcity_fila4_mono/laravel
+>>>>>>> 6ed19256f (.)
 ./vendor/bin/phpstan analyse Modules --no-progress
 
 # Output:
@@ -260,7 +264,10 @@ cd laravel
 ## 🔗 Collegamenti
 
 - [Report Dettagliato](phpstan-fixes-report.md) - Tutte le correzioni implementate
+<<<<<<< HEAD
 - [PHPStan Level 9 Achievement](phpstan-level9-achievement.md) - Achievement precedente
+=======
+>>>>>>> 6ed19256f (.)
 - [PHPStan level 10 Achievement](phpstan-level9-achievement.md) - Achievement precedente
 - [PHPStan Complete Guide](consolidated/phpstan-complete-guide.md) - Guida completa
 

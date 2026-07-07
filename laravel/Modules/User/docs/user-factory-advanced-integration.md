@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # UserFactory Advanced Integration - Modulo User & <nome progetto>
+=======
+# UserFactory Advanced Integration - Modulo User & SaluteOra
+>>>>>>> 6ed19256f (.)
 
 ## Post Deep-Study Analysis
 
@@ -9,7 +13,11 @@ Dopo uno studio approfondito dei modelli User, Patient, Doctor e Admin, l'integr
 ### Hierarchy Mapping
 ```
 BaseUser (User Module)
+<<<<<<< HEAD
 ├── User (<nome progetto>) - STI Base + Business Logic
+=======
+├── User (SaluteOra) - STI Base + Business Logic
+>>>>>>> 6ed19256f (.)
     ├── Patient (HasParent) - Healthcare Consumer
     ├── Doctor (HasParent) - Healthcare Provider
     └── Admin (HasParent) - System Administrator
@@ -17,7 +25,11 @@ BaseUser (User Module)
 
 ### Cross-Module Compatibility Matrix
 
+<<<<<<< HEAD
 | BaseUser Field | <nome progetto> User | Business Logic | Factory Support |
+=======
+| BaseUser Field | SaluteOra User | Business Logic | Factory Support |
+>>>>>>> 6ed19256f (.)
 |----------------|----------------|----------------|-----------------|
 | `name` | `name` | Full name concat | ✅ Complete |
 | `email` | `email` | Authentication | ✅ Complete |
@@ -84,11 +96,19 @@ User::factory()->gdprCompliant()->create();
 // BaseUser (User Module)
 protected $connection = 'user';
 
+<<<<<<< HEAD
 // <nome progetto> User (Healthcare Domain)
 protected $connection = '<nome progetto>';
 
 // Factory automatically handles connection switching
 User::factory()->create(); // Uses '<nome progetto>' connection
+=======
+// SaluteOra User (Healthcare Domain)
+protected $connection = 'salute_ora';
+
+// Factory automatically handles connection switching
+User::factory()->create(); // Uses 'salute_ora' connection
+>>>>>>> 6ed19256f (.)
 ```
 
 ### Morph Relations Support
@@ -115,7 +135,11 @@ public function test_cross_module_compatibility()
     expect($user)->toHaveProperty('password');
     expect($user->email_verified_at)->toBeInstanceOf(Carbon::class);
 
+<<<<<<< HEAD
     // <nome progetto> domain contracts
+=======
+    // SaluteOra domain contracts
+>>>>>>> 6ed19256f (.)
     expect($user->type)->toBeInstanceOf(UserTypeEnum::class);
     expect($user->state)->toBeInstanceOf(UserState::class);
 }
@@ -261,7 +285,11 @@ public function run(): void
 - **Reusability**: Base authentication contracts preserved
 - **Testability**: Comprehensive user scenario testing
 
+<<<<<<< HEAD
 ### For <nome progetto> Module
+=======
+### For SaluteOra Module
+>>>>>>> 6ed19256f (.)
 - **Domain Focus**: Healthcare-specific data generation
 - **Business Logic**: Real-world scenario testing
 - **Compliance**: GDPR and healthcare regulation support
@@ -280,11 +308,18 @@ public function run(): void
 
 ## Link Documentazione
 
+<<<<<<< HEAD
 ### <nome progetto> Module
 - [Advanced Improvements Analysis](../../<nome progetto>/docs/factories/UserFactory-advanced-improvements-analysis.md)
 - [Advanced Improvements Analysis](../../<nome progetto>/docs/factories/userfactory-advanced-improvements-analysis.md)
 - [Implementation Completed](../../<nome progetto>/docs/factories/userfactory_implementation_completed.md)
 - [Model States](../../<nome progetto>/docs/models/states.md)
+=======
+### SaluteOra Module
+- [Advanced Improvements Analysis](../../SaluteOra/docs/factories/UserFactory-advanced-improvements-analysis.md)
+- [Implementation Completed](../../SaluteOra/docs/factories/userfactory_implementation_completed.md)
+- [Model States](../../SaluteOra/docs/models/states.md)
+>>>>>>> 6ed19256f (.)
 
 ### User Module
 - [User Factory Integration](./user_factory_integration.md)
@@ -292,9 +327,15 @@ public function run(): void
 - [BaseUser Architecture](./parental_inheritance.md)
 
 ### Root Documentation
+<<<<<<< HEAD
 - [UserFactory <nome progetto> Integration](../../../../../docs/userfactory_<nome progetto>_integration.md)
 - [Testing Standards](../../../../../docs/testing_standards.md)
 # UserFactory Advanced Integration - Modulo User & <nome progetto>
+=======
+- [UserFactory SaluteOra Integration](../../../../docs/userfactory_saluteora_integration.md)
+- [Testing Standards](../../../../docs/testing_standards.md)
+# UserFactory Advanced Integration - Modulo User & SaluteOra
+>>>>>>> 6ed19256f (.)
 
 ## Post Deep-Study Analysis
 
@@ -305,7 +346,11 @@ Dopo uno studio approfondito dei modelli User, Patient, Doctor e Admin, l'integr
 ### Hierarchy Mapping
 ```
 BaseUser (User Module)
+<<<<<<< HEAD
 ├── User (<nome progetto>) - STI Base + Business Logic
+=======
+├── User (SaluteOra) - STI Base + Business Logic
+>>>>>>> 6ed19256f (.)
     ├── Patient (HasParent) - Healthcare Consumer
     ├── Doctor (HasParent) - Healthcare Provider
     └── Admin (HasParent) - System Administrator
@@ -313,7 +358,11 @@ BaseUser (User Module)
 
 ### Cross-Module Compatibility Matrix
 
+<<<<<<< HEAD
 | BaseUser Field | <nome progetto> User | Business Logic | Factory Support |
+=======
+| BaseUser Field | SaluteOra User | Business Logic | Factory Support |
+>>>>>>> 6ed19256f (.)
 |----------------|----------------|----------------|-----------------|
 | `name` | `name` | Full name concat | ✅ Complete |
 | `email` | `email` | Authentication | ✅ Complete |
@@ -380,11 +429,19 @@ User::factory()->gdprCompliant()->create();
 // BaseUser (User Module)
 protected $connection = 'user';
 
+<<<<<<< HEAD
 // <nome progetto> User (Healthcare Domain)
 protected $connection = '<nome progetto>';
 
 // Factory automatically handles connection switching
 User::factory()->create(); // Uses '<nome progetto>' connection
+=======
+// SaluteOra User (Healthcare Domain)
+protected $connection = 'salute_ora';
+
+// Factory automatically handles connection switching
+User::factory()->create(); // Uses 'salute_ora' connection
+>>>>>>> 6ed19256f (.)
 ```
 
 ### Morph Relations Support
@@ -411,7 +468,11 @@ public function test_cross_module_compatibility()
     expect($user)->toHaveProperty('password');
     expect($user->email_verified_at)->toBeInstanceOf(Carbon::class);
 
+<<<<<<< HEAD
     // <nome progetto> domain contracts
+=======
+    // SaluteOra domain contracts
+>>>>>>> 6ed19256f (.)
     expect($user->type)->toBeInstanceOf(UserTypeEnum::class);
     expect($user->state)->toBeInstanceOf(UserState::class);
 }
@@ -557,7 +618,11 @@ public function run(): void
 - **Reusability**: Base authentication contracts preserved
 - **Testability**: Comprehensive user scenario testing
 
+<<<<<<< HEAD
 ### For <nome progetto> Module
+=======
+### For SaluteOra Module
+>>>>>>> 6ed19256f (.)
 - **Domain Focus**: Healthcare-specific data generation
 - **Business Logic**: Real-world scenario testing
 - **Compliance**: GDPR and healthcare regulation support
@@ -576,11 +641,18 @@ public function run(): void
 
 ## Link Documentazione
 
+<<<<<<< HEAD
 ### <nome progetto> Module
 - [Advanced Improvements Analysis](../../<nome progetto>/docs/factories/UserFactory-advanced-improvements-analysis.md)
 - [Advanced Improvements Analysis](../../<nome progetto>/docs/factories/userfactory-advanced-improvements-analysis.md)
 - [Implementation Completed](../../<nome progetto>/docs/factories/userfactory_implementation_completed.md)
 - [Model States](../../<nome progetto>/docs/models/states.md)
+=======
+### SaluteOra Module
+- [Advanced Improvements Analysis](../../SaluteOra/docs/factories/UserFactory-advanced-improvements-analysis.md)
+- [Implementation Completed](../../SaluteOra/docs/factories/userfactory_implementation_completed.md)
+- [Model States](../../SaluteOra/docs/models/states.md)
+>>>>>>> 6ed19256f (.)
 
 ### User Module
 - [User Factory Integration](./user_factory_integration.md)
@@ -588,5 +660,10 @@ public function run(): void
 - [BaseUser Architecture](./parental_inheritance.md)
 
 ### Root Documentation
+<<<<<<< HEAD
 - [UserFactory <nome progetto> Integration](../../../../../docs/userfactory_<nome progetto>_integration.md)
 - [Testing Standards](../../../../../docs/testing_standards.md)
+=======
+- [UserFactory SaluteOra Integration](../../../../docs/userfactory_saluteora_integration.md)
+- [Testing Standards](../../../../docs/testing_standards.md)
+>>>>>>> 6ed19256f (.)

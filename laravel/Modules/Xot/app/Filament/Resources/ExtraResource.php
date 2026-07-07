@@ -11,6 +11,10 @@ use Modules\Xot\Filament\Resources\ExtraResource\Pages\CreateExtra;
 use Modules\Xot\Filament\Resources\ExtraResource\Pages\EditExtra;
 use Modules\Xot\Filament\Resources\ExtraResource\Pages\ListExtras;
 use Modules\Xot\Models\Extra;
+<<<<<<< HEAD
+=======
+use Override;
+>>>>>>> 6ed19256f (.)
 
 class ExtraResource extends XotBaseResource
 {
@@ -21,7 +25,11 @@ class ExtraResource extends XotBaseResource
      *
      * @return array<string, Component>
      */
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> 6ed19256f (.)
     public static function getFormSchema(): array
     {
         return [
@@ -36,13 +44,21 @@ class ExtraResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> 6ed19256f (.)
     public static function getRelations(): array
     {
         return [];
     }
 
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> 6ed19256f (.)
     public static function getPages(): array
     {
         return [

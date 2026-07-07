@@ -87,10 +87,13 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @method static AddressFactory factory($count = null, $state = [])
  *
+<<<<<<< HEAD
  * @property string|null $phone
  *
  * @method static Builder<static>|Address wherePhone($value)
  *
+=======
+>>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class Address extends BaseModel
@@ -166,11 +169,19 @@ class Address extends BaseModel
      */
     public function getRegione(): ?array
     {
+<<<<<<< HEAD
+=======
+        /** @phpstan-ignore method.unresolvableReturnType */
+>>>>>>> 6ed19256f (.)
         $res = Comune::select('regione')
             ->distinct()
             ->orderBy('regione->nome')
             ->where('regione->codice', $this->administrative_area_level_1)
             ->get()
+<<<<<<< HEAD
+=======
+            /* @phpstan-ignore argument.unresolvableType */
+>>>>>>> 6ed19256f (.)
             ->map(function ($item) {
                 $regione = $item->regione;
                 if (! is_array($regione) || ! isset($regione['codice'], $regione['nome'])) {
@@ -186,11 +197,16 @@ class Address extends BaseModel
 
     public function getProvincia(): ?array
     {
+<<<<<<< HEAD
+=======
+        /** @phpstan-ignore method.unresolvableReturnType */
+>>>>>>> 6ed19256f (.)
         $res = Comune::select('provincia')
             ->distinct()
             ->orderBy('provincia->nome')
             ->where('provincia->codice', $this->administrative_area_level_2)
             ->get()
+<<<<<<< HEAD
             ->map(function ($item) {
                 $provincia = $item->provincia;
                 if (! is_array($provincia) || ! isset($provincia['codice'], $provincia['nome'])) {
@@ -200,12 +216,25 @@ class Address extends BaseModel
                 return ['codice' => $provincia['codice'] ?? null, 'nome' => $provincia['nome'] ?? null];
             })
             ->filter(fn ($p) => isset($p['codice'], $p['nome']));
+=======
+            /* @phpstan-ignore argument.unresolvableType */
+            ->map(fn ($item) => [
+                /* @phpstan-ignore offsetAccess.notFound */
+                'codice' => $item->provincia['codice'],
+                /* @phpstan-ignore offsetAccess.notFound */
+                'nome' => $item->provincia['nome'],
+            ]);
+>>>>>>> 6ed19256f (.)
 
         return $res->first();
     }
 
     public function getLocality(): ?array
     {
+<<<<<<< HEAD
+=======
+        /* @phpstan-ignore-next-line */
+>>>>>>> 6ed19256f (.)
         return Comune::where('codice', $this->locality)
             ->distinct()
             ->first()

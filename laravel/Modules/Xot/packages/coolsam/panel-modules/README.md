@@ -11,6 +11,11 @@ Modules is a FilamentPHP Plugin to enable easy integration with `nwidart/laravel
 
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 
+<<<<<<< HEAD
+=======
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+
+>>>>>>> 6ed19256f (.)
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
@@ -378,7 +383,10 @@ Modules is a FilamentPHP Plugin to enable easy integration with `nwidart/laravel
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 
+<<<<<<< HEAD
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+=======
+>>>>>>> 6ed19256f (.)
 v2, [see the documentation here](https://github.com/savannabits/filament-modules/tree/main#readme) to get started.**
 
 For example, if you have two modules (**Blog** and **Pos**), you should be able to have filament installed in each module with separate resources as below:
@@ -494,4 +502,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+<<<<<<< HEAD
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+=======
+>>>>>>> 6ed19256f (.)

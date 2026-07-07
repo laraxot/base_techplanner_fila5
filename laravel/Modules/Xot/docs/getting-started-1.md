@@ -78,6 +78,7 @@ npm run dev
 ### Versione HEAD
 
 ## Collegamenti tra versioni di getting-started.md
+<<<<<<< HEAD
 * [getting-started.md](../../../gdpr/docs/getting-started.md)
 * [getting-started.md](../../../xot/docs/getting-started.md)
 * [getting-started.md](../../../ui/docs/getting-started.md)
@@ -87,3 +88,14 @@ npm run dev
 ### Versione Incoming
 
 ---
+=======
+* [getting-started.md](../../../Gdpr/docs/getting-started.md)
+* [getting-started.md](../../../Xot/docs/getting-started.md)
+* [getting-started.md](../../../UI/docs/getting-started.md)
+* [getting-started.md](../../../Tenant/docs/it/getting-started.md)
+* [getting-started.md](../../../Cms/docs/getting-started.md)
+
+### Versione Incoming
+
+---
+>>>>>>> 6ed19256f (.)

@@ -170,6 +170,9 @@ class ChatMessageWrapper extends Component
 - [Documentazione UI](../ui/README.md)
 - [Gestione Sezioni](../section-management.md)
 - [Componenti Base](../components/README.md)
+<<<<<<< HEAD
 - [Documentazione UI](../ui/readme.md)
 - [Gestione Sezioni](../section-management.md)
 - [Componenti Base](../components/readme.md)
+=======
+>>>>>>> 6ed19256f (.)

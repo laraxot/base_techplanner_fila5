@@ -41,3 +41,7 @@ class EventServiceProvider extends ServiceProvider
         return false;
     }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6ed19256f (.)

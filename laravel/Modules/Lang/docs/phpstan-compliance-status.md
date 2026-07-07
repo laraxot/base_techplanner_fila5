@@ -1,7 +1,10 @@
 # PHPStan Level 10 Compliance Status
 
 **Last Updated**: 2025-12-10
+<<<<<<< HEAD
 **Last Updated**: 2025-12-10
+=======
+>>>>>>> 6ed19256f (.)
 **Status**: ✅ FULLY COMPLIANT (0 errors)
 
 ## Summary
@@ -46,4 +49,8 @@ To maintain PHPStan compliance:
 ## Related Documentation
 - [Laravel Localization](https://laravel.com/docs/12.x/localization)
 - [Route Service Providers](route-service-providers.md)
+<<<<<<< HEAD
 - [Language Detection Patterns](language-detection.md)
+=======
+- [Language Detection Patterns](language-detection.md)
+>>>>>>> 6ed19256f (.)

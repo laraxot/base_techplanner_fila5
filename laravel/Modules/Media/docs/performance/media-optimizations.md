@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+=======
+# Ottimizzazioni Performance Modulo Media
+
+## 1. Ottimizzazione Conversione Video
+**File**: `laravel/Modules/Media/app/Actions/Video/ConvertVideoByMediaConvertAction.php`
+**Linee**: 1-100
+
+>>>>>>> 6ed19256f (.)
 **Problema**:
 - Nessun caching dei parametri di conversione
 - Notifiche inviate ad ogni progresso
@@ -50,7 +59,11 @@ final class ConvertVideoByMediaConvertAction
                         'remaining' => $remaining,
                         'rate' => $rate,
                     ];
+<<<<<<< HEAD
                     
+=======
+
+>>>>>>> 6ed19256f (.)
                     // Notifica solo ogni NOTIFICATION_THRESHOLD%
                     if (($percentage - $lastNotificationPercentage) >= self::NOTIFICATION_THRESHOLD) {
                         $msg = sprintf(
@@ -59,7 +72,11 @@ final class ConvertVideoByMediaConvertAction
                             $remaining,
                             $rate
                         );
+<<<<<<< HEAD
                         
+=======
+
+>>>>>>> 6ed19256f (.)
                         Notification::make()
                             ->title($msg)
                             ->success()
@@ -142,7 +159,11 @@ final class GetVideoFrameContentAction
         }
 
         $cacheKey = $this->getCacheKey($disk_mp4, $file_mp4, $time);
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         return Cache::tags(['video_frames'])
             ->remember($cacheKey, self::CACHE_TTL, function() use ($disk_mp4, $file_mp4, $time) {
                 return $this->extractFrame($disk_mp4, $file_mp4, $time);
@@ -193,7 +214,11 @@ final class GetVideoFrameContentAction
     private function getFallbackImage(): string
     {
         $fallbackPath = config('media.video.fallback_image', self::DEFAULT_FALLBACK);
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         return Cache::remember('video_fallback_image', self::CACHE_TTL, function() use ($fallbackPath) {
             return Storage::disk('public_html')->get($fallbackPath);
         });
@@ -237,7 +262,11 @@ final class TemporaryUploadPathGenerator implements PathGenerator
     public function getPath(Media $media): string
     {
         Assert::lessThanEq($media->size, self::MAX_SIZE, 'File troppo grande');
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         return Cache::remember(
             "temp_path_{$media->id}",
             self::CACHE_TTL,
@@ -634,6 +663,7 @@ final class TemporaryUploadPathGenerator implements PathGenerator
 - Cache tags richiedono Redis/Memcached
 - Compatibile con FFmpeg e Laravel
 - Configurazioni esternalizzate
+<<<<<<< HEAD
 ---
 module: theme
 topic: media-optimizations
@@ -641,3 +671,5 @@ canonical: ../../../../Themes/docs/shared-components/media-optimizations.md
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/media-optimizations.md
+=======
+>>>>>>> 6ed19256f (.)

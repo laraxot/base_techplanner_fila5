@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @props([
     'title' => '',
     'description' => '',
@@ -42,6 +43,8 @@
                             <div class="text-sm text-gray-500">
                                 {{ $stat['description'] }}
                             </div>
+=======
+>>>>>>> 6ed19256f (.)
 {{-- Stats Overview Block - Theme Two --}}
 <section class="py-12 {{ $background_color ?? 'bg-gray-50' }}">
     <div class="max-w-6xl mx-auto px-4">
@@ -68,7 +71,10 @@
         @endif
     </div>
 </section>
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> 6ed19256f (.)

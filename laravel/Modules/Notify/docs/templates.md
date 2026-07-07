@@ -33,7 +33,10 @@ Il sistema di template permette di:
 | {{ $row }} |
 @endforeach
 </x-mail::table>
+<<<<<<< HEAD
 @endif
+=======
+>>>>>>> 6ed19256f (.)
 
 {{ $footer }}<br>
 {{ config('app.name') }}
@@ -46,6 +49,7 @@ Il sistema di template permette di:
 ```html
 <x-mail::message>
 Il contenuto del messaggio
+<<<<<<< HEAD
 </x-mail::message>
 ```
 
@@ -58,6 +62,15 @@ Testo Bottone
 
 ### Panel
 ```html
+=======
+
+### Button
+<x-mail::button :url="$url" :color="$color">
+Testo Bottone
+</x-mail::button>
+
+### Panel
+>>>>>>> 6ed19256f (.)
 <x-mail::panel>
 Contenuto in evidenza
 </x-mail::panel>
@@ -71,10 +84,15 @@ Contenuto in evidenza
 | Prodotto 1  | €10    |
 | Prodotto 2  | €20    |
 </x-mail::table>
+<<<<<<< HEAD
 ```
 
 ### Subcopy
 ```html
+=======
+
+### Subcopy
+>>>>>>> 6ed19256f (.)
 <x-mail::subcopy>
 Testo più piccolo sotto il contenuto principale
 </x-mail::subcopy>
@@ -98,11 +116,17 @@ Testo più piccolo sotto il contenuto principale
 
     <div class="content">
         {{ $slot }}
+<<<<<<< HEAD
     </div>
 
     <div class="footer">
         {{ $footer }}
     </div>
+=======
+
+    <div class="footer">
+        {{ $footer }}
+>>>>>>> 6ed19256f (.)
 </body>
 </html>
 ```
@@ -124,18 +148,27 @@ Testo più piccolo sotto il contenuto principale
 
     <div class="content">
         {{ $slot }}
+<<<<<<< HEAD
     </div>
 
     <div class="cta">
         {{ $cta }}
     </div>
+=======
+
+    <div class="cta">
+        {{ $cta }}
+>>>>>>> 6ed19256f (.)
 
     <div class="footer">
         {{ $footer }}
         <div class="social">
             {{ $social }}
+<<<<<<< HEAD
         </div>
     </div>
+=======
+>>>>>>> 6ed19256f (.)
 </body>
 </html>
 ```
@@ -147,20 +180,30 @@ Testo più piccolo sotto il contenuto principale
 <x-mail::alert :type="$type">
     {{ $slot }}
 </x-mail::alert>
+<<<<<<< HEAD
 ```
 
 ### Card
 ```html
+=======
+
+### Card
+>>>>>>> 6ed19256f (.)
 <x-mail::card>
     <x-slot name="header">
         {{ $header }}
     </x-slot>
 
+<<<<<<< HEAD
     {{ $slot }}
 
     <x-slot name="footer">
         {{ $footer }}
     </x-slot>
+=======
+    <x-slot name="footer">
+        {{ $footer }}
+>>>>>>> 6ed19256f (.)
 </x-mail::card>
 ```
 
@@ -168,7 +211,11 @@ Testo più piccolo sotto il contenuto principale
 ```html
 <x-mail::timeline>
     @foreach($events as $event)
+<<<<<<< HEAD
     <x-mail::timeline-item 
+=======
+    <x-mail::timeline-item
+>>>>>>> 6ed19256f (.)
         :date="$event->date"
         :title="$event->title"
         :description="$event->description"
@@ -192,7 +239,10 @@ Testo più piccolo sotto il contenuto principale
 ```
 
 ### Tipografia
+<<<<<<< HEAD
 ```css
+=======
+>>>>>>> 6ed19256f (.)
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
     line-height: 1.5;
@@ -270,7 +320,10 @@ Spediremo il tuo ordine a:<br>
 
 <x-mail::panel>
 Totale: €{{ $order->total }}
+<<<<<<< HEAD
 </x-mail::panel>
+=======
+>>>>>>> 6ed19256f (.)
 
 <x-mail::button :url="$trackingUrl">
 Traccia il tuo ordine

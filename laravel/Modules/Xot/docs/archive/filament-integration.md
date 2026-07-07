@@ -184,7 +184,13 @@ class AddressPage extends XotBasePage
 
 ## Collegamenti
 - [README del Modulo](../README.md)
+<<<<<<< HEAD
 - [README del Modulo](../readme.md)
 - [Documentazione JSON Database](json-database.md)
 - [Best Practices Filament](../../../project_docs/filament-best-practices.md)
 - [Clean Code](../../../project_docs/clean-code.md)
+=======
+- [Documentazione JSON Database](json-database.md)
+- [Best Practices Filament](../../../project_docs/filament-best-practices.md)
+- [Clean Code](../../../project_docs/clean-code.md)
+>>>>>>> 6ed19256f (.)

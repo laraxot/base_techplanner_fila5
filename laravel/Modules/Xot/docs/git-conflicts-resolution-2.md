@@ -1,10 +1,16 @@
 # Risoluzione Conflitti Git - 6 Gennaio 2025
 
 ## Data: 2025-01-06
+<<<<<<< HEAD
 ## Data: [DATE]
 
 ## Contesto
 Sono stati identificati e risolti conflitti Git in diversi file del progetto <nome progetto>, coinvolgendo moduli Geo, User e tema Two.
+=======
+
+## Contesto
+Sono stati identificati e risolti conflitti Git in diversi file del progetto SaluteOra, coinvolgendo moduli Geo, User e tema Two.
+>>>>>>> 6ed19256f (.)
 
 ## File Corretti
 
@@ -126,6 +132,7 @@ php artisan lang:check
 ## Documentazione Aggiornata
 
 ### Modulo Geo
+<<<<<<< HEAD
 - [Conflict Resolution](laravel/modules/geo/docs/conflict-resolution.md)
 
 ### Modulo User
@@ -133,6 +140,8 @@ php artisan lang:check
 
 ### Modulo Xot
 - [Git Conflicts Resolution](laravel/modules/xot/docs/git-conflicts-resolution-[date].md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Conflict Resolution](laravel/Modules/Geo/docs/conflict-resolution.md)
 
 ### Modulo User
@@ -205,6 +214,7 @@ php artisan lang:check
 ---
 
 **Ultimo aggiornamento**: 2025-01-06
+<<<<<<< HEAD
 - [Geo Conflict Resolution](laravel/modules/geo/docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/modules/user/docs/theme-translation-conflicts-resolution.md)
 
@@ -218,3 +228,7 @@ php artisan lang:check
 **Ultimo aggiornamento**: [DATE]
 **Autore**: Sistema di correzione automatica
 **Stato**: ✅ Completato
+=======
+**Autore**: Sistema di correzione automatica
+**Stato**: ✅ Completato
+>>>>>>> 6ed19256f (.)

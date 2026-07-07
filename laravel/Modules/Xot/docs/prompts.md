@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Struttura dei prompt
 
 ## Scopo
@@ -21,6 +22,8 @@ I prompt definiscono regole operative riutilizzabili tra progetti. Devono essere
 - [regole documentazione](./consolidated/documentation-rules.md)
 - [prompts consolidati](./consolidated/prompts.md)
 - [indice documentazione](./00-index.md)
+=======
+>>>>>>> 6ed19256f (.)
 # Struttura dei Prompt
 
 I prompt sono file di testo che contengono istruzioni per l'AI. Devono seguire queste regole:
@@ -85,7 +88,10 @@ Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompt
 ## Collegamenti tra versioni di prompts.md
 * [prompts.md](docs/prompts.md)
 * [prompts.md](../../../Xot/docs/prompts.md)
+<<<<<<< HEAD
 * [prompts.md](../../../xot/project_docs/prompts.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Modifiche al Prompt docs.txt
 
@@ -104,16 +110,23 @@ Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompt
 ### Collegamenti Correlati
 - [Regole Universali](./PROMPT_RULES.md)
 - [Gestione Documentazione](./DOCUMENTATION_MANAGEMENT.md)
+<<<<<<< HEAD
 - [Regole Universali](./prompt_rules.md)
 - [Gestione Documentazione](./documentation_management.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Struttura Moduli](./module-structure.md)
 
 ## Errori Comuni da Evitare
 
 ### Percorsi Assoluti
 ⚠️ **Problema Identificato**: Uso di percorsi assoluti nei collegamenti
+<<<<<<< HEAD
 ❌ Esempio errato: `../Xot/docs/file.md`
 ❌ Esempio errato: `Modules/Xot/project_docs/file.md`
+=======
+❌ Esempio errato: `/var/www/html/saluteora/laravel/Modules/Xot/docs/file.md`
+>>>>>>> 6ed19256f (.)
 ✅ Esempio corretto: `./file.md` o `../altro-modulo/file.md`
 
 ### Impatto dell'Errore
@@ -200,4 +213,8 @@ Il prompt `docs.txt` serve come:
 3. **Collegamenti Standardizzati**:
    ```markdown
    [Documento](./path/relativo) #tag-correlati
+<<<<<<< HEAD
    ```
+=======
+   ```
+>>>>>>> 6ed19256f (.)

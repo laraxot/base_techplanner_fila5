@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Themes\Sixteen\Models\Municipal;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -16,6 +17,8 @@ use Illuminate\Support\Str;
 /**
  * Modello per le persone pubbliche (Public Person)
  *
+=======
+>>>>>>> 6ed19256f (.)
 use Illuminate\Database\Eloquent\{Model, SoftDeletes, Factories\HasFactory};
 use Illuminate\Database\Eloquent\Relations\{HasMany, BelongsToMany, MorphMany};
 use Illuminate\Database\Eloquent\Casts\Attribute;
@@ -196,7 +199,11 @@ class PublicPerson extends Model
         return $query->where('start_date', '<=', now())
             ->where(function ($q) {
                 $q->whereNull('end_date')
+<<<<<<< HEAD
                     ->orWhere('end_date', '>', now());
+=======
+                  ->orWhere('end_date', '>', now());
+>>>>>>> 6ed19256f (.)
             });
     }
 
@@ -214,7 +221,11 @@ class PublicPerson extends Model
     protected function fullName(): Attribute
     {
         return Attribute::make(
+<<<<<<< HEAD
             get: fn () => trim($this->first_name.' '.$this->last_name)
+=======
+            get: fn () => trim($this->first_name . ' ' . $this->last_name)
+>>>>>>> 6ed19256f (.)
         );
     }
 
@@ -224,7 +235,11 @@ class PublicPerson extends Model
     protected function displayName(): Attribute
     {
         return Attribute::make(
+<<<<<<< HEAD
             get: fn () => trim($this->last_name.', '.$this->first_name)
+=======
+            get: fn () => trim($this->last_name . ', ' . $this->first_name)
+>>>>>>> 6ed19256f (.)
         );
     }
 
@@ -265,11 +280,14 @@ class PublicPerson extends Model
     {
         return Attribute::make(
             get: function () {
+<<<<<<< HEAD
                 if (! $this->start_date || $this->start_date->isFuture()) {
                     return false;
                 }
 
                 return ! $this->end_date || $this->end_date->isFuture();
+=======
+>>>>>>> 6ed19256f (.)
                 if (!$this->start_date || $this->start_date->isFuture()) {
                     return false;
                 }
@@ -286,10 +304,13 @@ class PublicPerson extends Model
     {
         return Attribute::make(
             get: function () {
+<<<<<<< HEAD
                 if (! $this->is_in_office) {
                     return;
                 }
 
+=======
+>>>>>>> 6ed19256f (.)
                 if (!$this->is_in_office) {
                     return null;
                 }
@@ -317,10 +338,13 @@ class PublicPerson extends Model
         return Attribute::make(
             set: function ($value) {
                 $this->attributes['last_name'] = $value;
+<<<<<<< HEAD
                 if (empty($this->attributes['slug']) && ! empty($this->attributes['first_name'])) {
                     $this->attributes['slug'] = Str::slug($this->attributes['first_name'].' '.$value);
                 }
 
+=======
+>>>>>>> 6ed19256f (.)
                 if (empty($this->attributes['slug']) && !empty($this->attributes['first_name'])) {
                     $this->attributes['slug'] = Str::slug($this->attributes['first_name'] . ' ' . $value);
                 }
@@ -334,7 +358,11 @@ class PublicPerson extends Model
      */
     public function getFormattedEducation(): array
     {
+<<<<<<< HEAD
         if (! $this->education || ! is_array($this->education)) {
+=======
+        if (!$this->education || !is_array($this->education)) {
+>>>>>>> 6ed19256f (.)
             return [];
         }
 
@@ -343,7 +371,10 @@ class PublicPerson extends Model
                 if (is_string($education)) {
                     return ['degree' => $education];
                 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
                 return $education;
             })
             ->toArray();
@@ -354,7 +385,11 @@ class PublicPerson extends Model
      */
     public function getFormattedWorkExperience(): array
     {
+<<<<<<< HEAD
         if (! $this->work_experience || ! is_array($this->work_experience)) {
+=======
+        if (!$this->work_experience || !is_array($this->work_experience)) {
+>>>>>>> 6ed19256f (.)
             return [];
         }
 
@@ -363,7 +398,10 @@ class PublicPerson extends Model
                 if (is_string($experience)) {
                     return ['position' => $experience];
                 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
                 return $experience;
             })
             ->sortByDesc('start_date')
@@ -376,7 +414,11 @@ class PublicPerson extends Model
      */
     public function getFormattedSocialProfiles(): array
     {
+<<<<<<< HEAD
         if (! $this->social_profiles || ! is_array($this->social_profiles)) {
+=======
+        if (!$this->social_profiles || !is_array($this->social_profiles)) {
+>>>>>>> 6ed19256f (.)
             return [];
         }
 
@@ -402,7 +444,11 @@ class PublicPerson extends Model
      */
     public function hasCurriculumVitae(): bool
     {
+<<<<<<< HEAD
         return ! empty($this->cv_file_path) || ! empty($this->curriculum_vitae);
+=======
+        return !empty($this->cv_file_path) || !empty($this->curriculum_vitae);
+>>>>>>> 6ed19256f (.)
     }
 
     /**
@@ -410,11 +456,14 @@ class PublicPerson extends Model
      */
     public function getCvUrl(): ?string
     {
+<<<<<<< HEAD
         if (! $this->cv_file_path) {
             return null;
         }
 
         return asset('storage/'.$this->cv_file_path);
+=======
+>>>>>>> 6ed19256f (.)
         if (!$this->cv_file_path) {
             return null;
         }
@@ -427,7 +476,11 @@ class PublicPerson extends Model
      */
     public function shouldPublishCompensation(): bool
     {
+<<<<<<< HEAD
         return in_array($this->category, ['politician', 'manager', 'consultant'])
+=======
+        return in_array($this->category, ['politician', 'manager', 'consultant']) 
+>>>>>>> 6ed19256f (.)
             && $this->is_public;
     }
 
@@ -476,8 +529,13 @@ class PublicPerson extends Model
 
         // Genera slug se mancante
         static::creating(function ($model) {
+<<<<<<< HEAD
             if (empty($model->slug) && ! empty($model->first_name) && ! empty($model->last_name)) {
                 $model->slug = Str::slug($model->first_name.' '.$model->last_name);
+=======
+            if (empty($model->slug) && !empty($model->first_name) && !empty($model->last_name)) {
+                $model->slug = Str::slug($model->first_name . ' ' . $model->last_name);
+>>>>>>> 6ed19256f (.)
             }
         });
 
@@ -487,7 +545,11 @@ class PublicPerson extends Model
             $counter = 1;
 
             while (static::where('slug', $model->slug)->exists()) {
+<<<<<<< HEAD
                 $model->slug = $originalSlug.'-'.$counter;
+=======
+                $model->slug = $originalSlug . '-' . $counter;
+>>>>>>> 6ed19256f (.)
                 $counter++;
             }
         });
@@ -505,8 +567,12 @@ class PublicPerson extends Model
             }
         });
     }
+<<<<<<< HEAD
 }
 
 
 
 
+=======
+}
+>>>>>>> 6ed19256f (.)

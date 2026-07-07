@@ -1971,14 +1971,22 @@ A partire dal 10 Marzo 2025, tutti i moduli devono essere validati con PHPStan a
 Per validare tutti i moduli con PHPStan a livello 7:
 
 ```bash
+<<<<<<< HEAD
 cd base_orisbroker_fila5/laravel
+=======
+cd /var/www/html/exa/base_orisbroker_fila3/laravel
+>>>>>>> 6ed19256f (.)
 vendor/bin/phpstan analyse Modules --configuration=phpstan.neon
 ```
 
 Per validare un singolo modulo:
 
 ```bash
+<<<<<<< HEAD
 cd base_orisbroker_fila5/laravel
+=======
+cd /var/www/html/exa/base_orisbroker_fila3/laravel
+>>>>>>> 6ed19256f (.)
 vendor/bin/phpstan analyse Modules/NomeModulo --configuration=phpstan.neon
 ```
 
@@ -8015,8 +8023,13 @@ Le pagine di lista devono seguire questa struttura:
 
 La struttura base del progetto segue questo schema:
 ```
+<<<<<<< HEAD
                    # Root del workspace
 └── base_orisbroker_fila5/          # Directory principale del progetto
+=======
+/var/www/html/exa/                   # Root del workspace
+└── base_orisbroker_fila3/          # Directory principale del progetto
+>>>>>>> 6ed19256f (.)
     └── laravel/                    # Applicazione Laravel
         └── Modules/               # Directory dei moduli
             └── [ModuleName]/     # Singolo modulo
@@ -8828,4 +8841,8 @@ class ClientMapWidget extends Widget
 3. Implementare sempre controlli di tipo
 4. Gestire i casi di errore in modo graceful
 5. La reattività funziona automaticamente con Livewire 3
+<<<<<<< HEAD
   - Contact section
+=======
+  - Contact section
+>>>>>>> 6ed19256f (.)

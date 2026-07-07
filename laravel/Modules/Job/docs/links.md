@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 https://betterprogramming.pub/laravel-fail-retry-or-delay-a-queued-job-from-itself-41e0bb14440c
 
 
@@ -25,3 +26,6 @@ canonical: ../../../Themes/docs/shared-components/links.txt
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/links.txt
+=======
+
+>>>>>>> 6ed19256f (.)

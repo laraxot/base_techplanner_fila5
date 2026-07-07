@@ -24,13 +24,21 @@ use Modules\Xot\Filament\Pages\XotBasePage;
 use Override;
 
 /**
+<<<<<<< HEAD
  * @property Schema $emailForm
+=======
+ * @property \Filament\Schemas\Schema $emailForm
+>>>>>>> 6ed19256f (.)
  */
 class SendAwsEmailPage extends XotBasePage
 {
     public ?array $emailData = [];
 
+<<<<<<< HEAD
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-envelope';
+=======
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-envelope';
+>>>>>>> 6ed19256f (.)
 
     protected string $view = 'notify::filament.pages.send-email';
 
@@ -69,7 +77,11 @@ class SendAwsEmailPage extends XotBasePage
     }
 
     /**
+<<<<<<< HEAD
      * @return array<string, TextInput|RichEditor|Select|Toggle>
+=======
+     * @return array<string, \Filament\Forms\Components\TextInput|\Filament\Forms\Components\RichEditor|\Filament\Forms\Components\Select|\Filament\Forms\Components\Toggle>
+>>>>>>> 6ed19256f (.)
      */
     public function getEmailFormSchema(): array
     {

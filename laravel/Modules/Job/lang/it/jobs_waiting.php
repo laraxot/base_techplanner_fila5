@@ -14,43 +14,64 @@ return [
             'label' => 'ID',
             'description' => 'Unique identifier for the job',
             'helper_text' => 'Auto-generated job identifier',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'queue' => [
             'label' => 'Queue',
             'description' => 'Queue name where the job is waiting',
             'helper_text' => 'Name of the queue this job belongs to',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'payload' => [
             'label' => 'Payload',
             'description' => 'Job data and parameters',
             'helper_text' => 'Serialized job data and parameters',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'attempts' => [
             'label' => 'Attempts',
             'description' => 'Number of execution attempts',
             'helper_text' => 'How many times this job has been attempted',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'reserved_at' => [
             'label' => 'Reserved At',
             'description' => 'When the job was reserved for processing',
             'helper_text' => 'Timestamp when job was picked up for processing',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'available_at' => [
             'label' => 'Available At',
             'description' => 'When the job becomes available for processing',
             'helper_text' => 'Timestamp when job becomes available for execution',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'created_at' => [
             'label' => 'Created At',
             'description' => 'When the job was created',
             'helper_text' => 'Timestamp when job was added to queue',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -135,6 +156,9 @@ return [
         'recurring' => 'Ricorrente',
         'batch' => 'Batch',
     ],
+<<<<<<< HEAD
     'label' => 'Jobs Waiting',
     'plural_label' => 'Jobs Waiting (Plurale)',
+=======
+>>>>>>> 6ed19256f (.)
 ];

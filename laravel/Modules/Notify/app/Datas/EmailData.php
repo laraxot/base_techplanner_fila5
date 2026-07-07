@@ -73,7 +73,11 @@ class EmailData extends Data
             $this->body = strip_tags($this->body_html);
         }
 
+<<<<<<< HEAD
         $email = (new MimeEmail)
+=======
+        $email = (new MimeEmail())
+>>>>>>> 6ed19256f (.)
             ->from($this->getFrom())
             ->to($this->recipient)
             ->subject(strip_tags($this->subject))

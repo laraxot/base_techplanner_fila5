@@ -102,12 +102,15 @@ Per la versione dark:
 ## Collegamenti Bidirezionali
 
 ### Collegamenti ad Altri Moduli
+<<<<<<< HEAD
 - [Gestione Domini e Configurazioni](domain_configuration.md)
 - [Configurazione Generale](configuration.md)
 - [Struttura dei Moduli](module_structure.md)
 - [Architettura Folio + Volt](folio_volt_architecture.md)
 - [Regole per la Case Sensitivity](directory-case-sensitivity.md)
 - [Regole per i Namespace](namespace-rules.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Gestione Domini e Configurazioni](DOMAIN_CONFIGURATION.md)
 - [Configurazione Generale](CONFIGURATION.md)
 - [Struttura dei Moduli](MODULE_STRUCTURE.md)
@@ -121,6 +124,7 @@ Per la versione dark:
 - [Configurazione e Risoluzione dei Loghi](../../../docs/configurazione-logo.md)
 - [Struttura dei Moduli in il progetto](../../../docs/struttura-moduli.md)
 - [Architettura Folio + Volt in il progetto](../../../docs/architettura-folio-volt.md)
+<<<<<<< HEAD
 - [Convenzioni di Naming](naming-conventions.md)
 
 ### Collegamenti alla Root del Progetto
@@ -128,8 +132,14 @@ Per la versione dark:
 - [Configurazione e Risoluzione dei Loghi](../../../../docs/configurazione-logo.md)
 - [Struttura dei Moduli in il progetto](../../../../docs/struttura-moduli.md)
 - [Architettura Folio + Volt in il progetto](../../../../docs/architettura-folio-volt.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ---
 
 ### Nota Importante
+<<<<<<< HEAD
 Questo documento è parte della documentazione generale del modulo Xot e descrive un meccanismo riutilizzabile in diversi progetti. La documentazione nei moduli è generica e riutilizzabile, mentre le informazioni specifiche del progetto si trovano nella documentazione nella root del progetto.
+=======
+Questo documento è parte della documentazione generale del modulo Xot e descrive un meccanismo riutilizzabile in diversi progetti. La documentazione nei moduli è generica e riutilizzabile, mentre le informazioni specifiche del progetto si trovano nella documentazione nella root del progetto.
+>>>>>>> 6ed19256f (.)

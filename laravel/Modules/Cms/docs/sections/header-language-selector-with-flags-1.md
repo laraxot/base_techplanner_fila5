@@ -1,10 +1,17 @@
 # Implementazione del Selettore di Lingua con Bandiere SVG
 
 ## Collegamenti correlati
+<<<<<<< HEAD
 - [README modulo Cms](../readme.md)
 - [Documentazione User](/laravel/modules/user/docs/header_language_selector_with_flags.md)
 - [Documentazione Sezioni](./sections_structure.md)
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
+=======
+- [README modulo Cms](../README.md)
+- [Documentazione User](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
+- [Documentazione Sezioni](./SECTIONS_STRUCTURE.md)
+- [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
+>>>>>>> 6ed19256f (.)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica
@@ -181,4 +188,8 @@ return [
 
 - [Documentazione Blade Icons](https://github.com/blade-ui-kit/blade-icons)
 - [Documentazione Alpine.js](https://alpinejs.dev/) - Per le interazioni dropdown
+<<<<<<< HEAD
 - [Documentazione Accessibilità WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/menubutton/)
+=======
+- [Documentazione Accessibilità WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/menubutton/)
+>>>>>>> 6ed19256f (.)

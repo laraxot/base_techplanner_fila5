@@ -95,6 +95,7 @@ actionlint -color
 ## Documentation
 - Each module/theme must have `quality-tools` page linking back here.
 - Record deviations and suppressions with rationale and next review date.
+<<<<<<< HEAD
 ---
 module: theme
 topic: quality-tools
@@ -102,3 +103,5 @@ canonical: ../../../Themes/docs/shared-components/quality-tools-philosophy.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/quality-tools-philosophy.md
+=======
+>>>>>>> 6ed19256f (.)

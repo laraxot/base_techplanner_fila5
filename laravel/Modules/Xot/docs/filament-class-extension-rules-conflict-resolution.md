@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+# Risoluzione Conflitti Git - Filament Class Extension Rules
+
+## Data Risoluzione
+>>>>>>> 6ed19256f (.)
 2026-01-02
 
 ## Problema Identificato
@@ -69,6 +75,7 @@ Il file `filament-class-extension-rules.md` conteneva conflitti Git multipli:
 
 - [Filament Class Extension Rules](./filament-class-extension-rules.md)
 - [Base Classes Documentation](./consolidated/base-classes.md)
+<<<<<<< HEAD
 ---
 module: theme
 topic: filament-class-extension-rules-conflict-resolution
@@ -76,3 +83,5 @@ canonical: ../../../Themes/docs/shared-components/filament-class-extension-resol
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/filament-class-extension-resolution.md
+=======
+>>>>>>> 6ed19256f (.)

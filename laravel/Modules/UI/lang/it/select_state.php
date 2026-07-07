@@ -10,7 +10,10 @@ return [
             'help' => 'Stato attuale della selezione',
             'description' => 'Stato selezionabile',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'message' => [
             'label' => 'Messaggio',
@@ -18,6 +21,7 @@ return [
             'help' => 'Messaggio informativo per la selezione',
             'description' => 'Testo del messaggio',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -43,6 +47,8 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Select State',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
 ];

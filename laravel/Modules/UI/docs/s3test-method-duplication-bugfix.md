@@ -188,7 +188,10 @@ public function testAndReturnData(): array // Viola SRP
 
 ## Data Correzione
 2025-01-06
+<<<<<<< HEAD
 [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Correzioni Aggiuntive Implementate
 
@@ -272,4 +275,8 @@ curl -I http://127.0.0.1:8000/ui/admin/test/s3-test
 ✅ **RISOLTO E TESTATO**
 
 ## Priorità
+<<<<<<< HEAD
 🟢 Completato
+=======
+🟢 Completato
+>>>>>>> 6ed19256f (.)

@@ -9,6 +9,7 @@ return [
             'placeholder' => 'fields',
             'helper_text' => 'fields',
             'description' => 'fields',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -34,6 +35,8 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Translation Editor',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
 ];

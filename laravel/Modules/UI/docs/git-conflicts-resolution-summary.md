@@ -45,9 +45,18 @@ Tutti i file risolti rispettano:
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Documentazione Root UI](../../../../docs/modules/ui.md)
 - [Components Documentation](./components.md)
 - [Design System Guidelines](../../../../docs/design-system.md)
 
 ---
 *Aggiornato automaticamente dopo risoluzione conflitti Git*
+=======
+- [Documentazione Root UI](../../../docs/modules/ui.md)
+- [Components Documentation](./components.md)
+- [Design System Guidelines](../../../docs/design-system.md)
+
+---
+*Aggiornato automaticamente dopo risoluzione conflitti Git*
+>>>>>>> 6ed19256f (.)

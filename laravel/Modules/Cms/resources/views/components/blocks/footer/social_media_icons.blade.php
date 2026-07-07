@@ -12,7 +12,11 @@ declare(strict_types=1);
                   <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3" alt="FlowBite Logo" />
                   <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
                 --}}
+<<<<<<< HEAD
                   <img src="{{ asset('assets/predict/img/logo-ft.svg') }}" alt="{{ config('app.name') }}" class="h-8 w-auto" />
+=======
+                  <x-filament-panels::logo />
+>>>>>>> 6ed19256f (.)
               </a>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">

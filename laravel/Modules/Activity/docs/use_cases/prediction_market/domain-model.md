@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Modello di Dominio - <nome progetto>ion Market
+=======
+# Modello di Dominio - Prediction Market
+>>>>>>> 6ed19256f (.)
 
 ## Aggregate
 - **Market**: rappresenta un mercato predittivo
@@ -33,4 +37,8 @@ class BetPlaced implements ShouldBeStored
         public string $outcome
     ) {}
 }
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> 6ed19256f (.)

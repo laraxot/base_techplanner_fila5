@@ -52,6 +52,7 @@ return [
         'event_updated' => 'Evento aggiornato con successo',
         'event_deleted' => 'Evento eliminato con successo',
     ],
+<<<<<<< HEAD
     'label' => 'Calendar',
     'plural_label' => 'Calendar (Plurale)',
     'navigation' => [
@@ -96,4 +97,6 @@ return [
             'label' => 'Elimina Calendar',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

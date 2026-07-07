@@ -7,6 +7,7 @@ return [
         'label' => 'Impostazioni Notifiche',
         'group' => 'Notifiche',
     ],
+<<<<<<< HEAD
     'label' => 'Setting',
     'plural_label' => 'Setting (Plurale)',
     'fields' => [
@@ -40,4 +41,6 @@ return [
             'label' => 'Elimina Setting',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

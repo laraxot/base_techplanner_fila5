@@ -1,6 +1,10 @@
 # PHPStan Config Immutability (Global Project Rule)
 
+<<<<<<< HEAD
 - File target: `phpstan.neon`
+=======
+- File target: `/var/www/html/_bases/base_saluteora/laravel/phpstan.neon`
+>>>>>>> 6ed19256f (.)
 - Status: IMMUTABLE — never modify this file via automation or PRs. Only the user may edit it manually.
 
 ## Rationale

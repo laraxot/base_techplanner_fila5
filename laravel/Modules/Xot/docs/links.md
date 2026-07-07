@@ -5,6 +5,7 @@
 ### Framework e Architettura
 - [Laravel Framework](laravel-framework.md) - Documentazione completa del framework Laravel
 - [Convenzioni Laraxot](conventions.md) - Regole e convenzioni per lo sviluppo
+<<<<<<< HEAD
 - [Piano Consolidamento Docs](docs_consolidation_plan.md) - Piano per consolidare la documentazione
 
 ### Moduli Core
@@ -13,6 +14,8 @@
 - [Modulo UI](../ui/docs/readme.md) - Componenti UI e design system
 - [Modulo Performance](../performance/docs/readme.md) - Sistema di valutazione e performance
 - [Modulo Lang](../lang/docs/readme.md) - Gestione multilingua e traduzioni
+=======
+>>>>>>> 6ed19256f (.)
 - [Piano Consolidamento Docs](DOCS_CONSOLIDATION_PLAN.md) - Piano per consolidare la documentazione
 
 ### Moduli Core
@@ -184,6 +187,7 @@
 - [Regole di Progetto](./rules/PROMPT_RULES.md)
 - [Standard di Codice](./standards/CODE-STANDARDS.md)
 - [Convenzioni di Nomenclatura](./conventions/NAMING-CONVENTIONS.md)
+<<<<<<< HEAD
 - [README](../../docs/readme.md) - Documentazione principale del progetto
 - [Roadmap](../../docs/roadmap.md) - Piano di sviluppo
 - [Filosofia](../../docs/filosofia.md) - Principi e filosofia del progetto
@@ -192,11 +196,14 @@
 - [Regole di Progetto](./rules/prompt_rules.md)
 - [Standard di Codice](./standards/code-standards.md)
 - [Convenzioni di Nomenclatura](./conventions/naming-conventions.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Installazione](./installation.md)
 - [Configurazione](./configuration.md)
 - [Risoluzione Problemi](./troubleshooting.md)
 
 ## Collegamenti ai Moduli
+<<<<<<< HEAD
 - [Cms](../cms/docs/readme.md) - Frontend
 - [UI](../ui/docs/readme.md) - Componenti
 - [User](../user/docs/readme.md) - Utenti e Permessi
@@ -231,6 +238,8 @@
 * [links.md](../../tenant/docs/it/links/links.md)
 * [links.md](../../cms/docs/links.md)
 * [links.md](../../../themes/one/docs/links.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Cms](../Cms/docs/README.md) - Frontend
 - [UI](../UI/docs/README.md) - Componenti
 - [User](../User/docs/README.md) - Utenti e Permessi
@@ -264,4 +273,8 @@
 * [links.md](../../Job/docs/links.md)
 * [links.md](../../Tenant/docs/it/links/links.md)
 * [links.md](../../Cms/docs/links.md)
+<<<<<<< HEAD
 * [links.md](../../../Themes/One/docs/links.md)
+=======
+* [links.md](../../../Themes/One/docs/links.md)
+>>>>>>> 6ed19256f (.)

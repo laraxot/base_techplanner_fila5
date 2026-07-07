@@ -68,6 +68,7 @@ public static function getFormSchema(): array
 * [filament-integration.md](../../../Xot/docs/laraxot/filament-integration.md)
 * [filament-integration.md](../../../Cms/docs/roadmap/features/filament-integration.md)
 * [filament-integration.md](../../../Cms/docs/filament-integration.md)
+<<<<<<< HEAD
 * [filament-integration.md](../../../xot/docs/laraxot/filament-integration.md)
 * [filament-integration.md](../../../cms/docs/roadmap/features/filament-integration.md)
 * [filament-integration.md](../../../cms/docs/filament-integration.md)
@@ -75,3 +76,9 @@ public static function getFormSchema(): array
 ### Versione Incoming
 
 ---
+=======
+
+### Versione Incoming
+
+---
+>>>>>>> 6ed19256f (.)

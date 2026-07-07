@@ -5,7 +5,11 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'OAuth एक्सेस टोकन',
+<<<<<<< HEAD
         'group' => '',
+=======
+        'group' => 'OAuth',
+>>>>>>> 6ed19256f (.)
         'icon' => 'heroicon-o-key',
         'sort' => 33,
     ],
@@ -14,6 +18,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'आईडी',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -53,6 +58,26 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'user_id' => [
+            'label' => 'उपयोगकर्ता',
+        ],
+        'client_id' => [
+            'label' => 'क्लाइंट',
+        ],
+        'name' => [
+            'label' => 'नाम',
+        ],
+        'scopes' => [
+            'label' => 'स्कोप',
+        ],
+        'revoked' => [
+            'label' => 'रद्द किया गया',
+        ],
+        'expires_at' => [
+            'label' => 'समाप्ति तिथि',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [

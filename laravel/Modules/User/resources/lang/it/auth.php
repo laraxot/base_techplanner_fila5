@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     'login' => [
         'title' => 'Accedi al tuo account',
         'welcome_back' => 'Bentornato',
@@ -23,6 +24,9 @@ return [
         'no_account' => 'Non hai un account?',
         'create_account' => 'Crea account',
     ],
+=======
+    'login' => 'Accedi',
+>>>>>>> 6ed19256f (.)
     'register' => 'Registrati',
     'logout' => 'Esci',
     'logout_success' => 'Logout effettuato con successo',
@@ -36,6 +40,7 @@ return [
     'name' => 'Nome',
     'already_registered' => 'Già registrato?',
     'not_registered' => 'Non sei registrato?',
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -56,4 +61,6 @@ return [
         'context' => 'login_form.credentials',
         'placeholder' => '',
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

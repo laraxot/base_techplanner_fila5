@@ -7,6 +7,7 @@ return [
         'label' => 'Slack Notification',
         'group' => 'Notifiche',
     ],
+<<<<<<< HEAD
     'label' => 'Slack Notification',
     'plural_label' => 'Slack Notification (Plurale)',
     'fields' => [
@@ -40,4 +41,6 @@ return [
             'label' => 'Elimina Slack Notification',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

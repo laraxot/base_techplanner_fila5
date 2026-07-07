@@ -10,7 +10,10 @@ return [
             'help' => 'The identifying name of the template',
             'tooltip' => 'This field is required',
             'helper_text' => 'Inserisci un nome descrittivo per il template',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'subject' => [
             'label' => 'Subject',
@@ -18,38 +21,53 @@ return [
             'help' => 'The subject that will appear in the notification',
             'tooltip' => 'This field is required',
             'helper_text' => 'Oggetto visualizzato nella notifica (es. oggetto email)',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'body_text' => [
             'label' => 'Text',
             'placeholder' => 'Enter notification text',
             'help' => 'The text content of the notification',
             'tooltip' => 'This field is required',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'body_html' => [
             'label' => 'HTML',
             'placeholder' => 'Enter notification HTML content',
             'help' => 'The HTML content of the notification',
             'tooltip' => 'This field is required',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'preview_data' => [
             'label' => 'Preview Data',
             'placeholder' => 'Enter preview data',
             'help' => 'The data used to display the preview',
             'tooltip' => 'JSON format',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'description' => [
             'label' => 'Descrizione',
             'tooltip' => 'Descrizione del template',
             'placeholder' => 'es: Template per le notifiche di scadenza',
             'helper_text' => 'Breve descrizione dello scopo del template',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'type' => [
             'label' => 'Tipo',
@@ -63,39 +81,57 @@ return [
                 'telegram' => 'Telegram',
                 'whatsapp' => 'WhatsApp',
             ],
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'content' => [
             'label' => 'Contenuto',
             'tooltip' => 'Corpo del messaggio',
             'placeholder' => 'Inserisci il testo del messaggio',
             'helper_text' => 'Contenuto principale della notifica',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'variables' => [
             'label' => 'Variabili',
             'tooltip' => 'Variabili disponibili',
             'placeholder' => '{{nome}}, {{email}}, ecc.',
             'helper_text' => 'Variabili che possono essere utilizzate nel template',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'is_active' => [
             'label' => 'Attivo',
             'tooltip' => 'Stato del template',
             'helper_text' => 'Se attivo, il template può essere utilizzato per l\'invio di notifiche',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'created_at' => [
             'label' => 'Data creazione',
             'tooltip' => 'Data di creazione del template',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'updated_at' => [
             'label' => 'Ultima modifica',
             'tooltip' => 'Data dell\'ultima modifica del template',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'navigation' => [
@@ -152,6 +188,9 @@ return [
             'error_message' => 'Errore nell\'invio della notifica di test',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

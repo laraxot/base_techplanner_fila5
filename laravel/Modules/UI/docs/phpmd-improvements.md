@@ -88,4 +88,8 @@ Questi metodi sono già stati refactorizzati e la complessità è al limite acce
 **Data**: 2025-01-06
 **Status**: Correzioni completate per modulo UI
 **Problemi critici rimanenti**: 0
+<<<<<<< HEAD
 **Problemi al limite soglia**: ~4 (non critici)
+=======
+**Problemi al limite soglia**: ~4 (non critici)
+>>>>>>> 6ed19256f (.)

@@ -19,11 +19,19 @@ class UrlService
     public function __construct()
     {
         // ---
+<<<<<<< HEAD
+=======
+        include_once __DIR__.'/vendor/autoload.php';
+>>>>>>> 6ed19256f (.)
     }
 
     public static function getInstance(): self
     {
+<<<<<<< HEAD
         if (! self::$instance instanceof self) {
+=======
+        if (! (self::$instance instanceof self)) {
+>>>>>>> 6ed19256f (.)
             self::$instance = new self();
         }
 
@@ -40,6 +48,10 @@ class UrlService
 
     public function checkValidUrl(string $url): bool
     {
+<<<<<<< HEAD
         return false !== filter_var($url, FILTER_VALIDATE_URL);
+=======
+        return filter_var($url, FILTER_VALIDATE_URL) !== false;
+>>>>>>> 6ed19256f (.)
     }
 }

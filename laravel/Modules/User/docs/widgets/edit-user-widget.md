@@ -127,6 +127,7 @@ All widget text follows the expanded translation structure:
 ## Related Documentation
 * [User Module Widget Structure](../widgets_structure.md)
 * [Widget Translation Guidelines](./translation-guidelines.md)
+<<<<<<< HEAD
 * [Filament Widget Conventions](../../xot/docs/filament-widgets.md)
 * [Translation System Overview](../../xot/docs/translations.md)
 * [Filament Widget Conventions](../../xot/project_docs/filament-widgets.md)
@@ -135,3 +136,9 @@ All widget text follows the expanded translation structure:
 * [Translation System Overview](../../Xot/docs/translations.md)
 * [Filament Widget Conventions](../../Xot/project_docs/filament-widgets.md)
 * [Translation System Overview](../../Xot/project_docs/translations.md)
+=======
+* [Filament Widget Conventions](../../Xot/docs/filament-widgets.md)
+* [Translation System Overview](../../Xot/docs/translations.md)
+* [Filament Widget Conventions](../../Xot/project_docs/filament-widgets.md)
+* [Translation System Overview](../../Xot/project_docs/translations.md)
+>>>>>>> 6ed19256f (.)

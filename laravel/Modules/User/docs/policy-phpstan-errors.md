@@ -51,10 +51,17 @@ Aggiungere il metodo `hasPermissionTo()` al `UserContract`:
 
 ```php
 // In Modules/Xot/app/Contracts/UserContract.php
+<<<<<<< HEAD
 interface UserContract 
 {
     // ... altri metodi
     
+=======
+interface UserContract
+{
+    // ... altri metodi
+
+>>>>>>> 6ed19256f (.)
     /**
      * Check if user has permission to perform action.
      *
@@ -93,10 +100,17 @@ Definire il comportamento tramite trait che implementa il metodo.
 **ALTA** - Questo errore blocca l'analisi statica del codice e potrebbe causare errori runtime.
 
 ## Collegamenti
+<<<<<<< HEAD
+=======
+- [Documentazione Root - Errori PHPStan](../../../project_docs/troubleshooting/phpstan-errors.md)
+>>>>>>> 6ed19256f (.)
 - [Contratti Xot](../../Xot/project_docs/contracts.md)
 - [Spatie Permission Documentation](https://spatie.be/project_docs/laravel-permission)
 
 *Ultimo aggiornamento: 2025-01-06*
+<<<<<<< HEAD
 - [Documentazione Root - Errori PHPStan](../../../../docs/project/troubleshooting/phpstan-errors.md)
 - [Contratti Xot](../../xot/project_docs/contracts.md)
 - [Spatie Permission Documentation](https://spatie.be/project_docs/laravel-permission)
+=======
+>>>>>>> 6ed19256f (.)

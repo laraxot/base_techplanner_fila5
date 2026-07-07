@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 module: theme
 topic: global_search
@@ -5,3 +6,7 @@ canonical: ../../../Themes/docs/shared-components/global-search.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/global-search.md
+=======
+https://github.com/spatie/laravel-searchable
+
+>>>>>>> 6ed19256f (.)

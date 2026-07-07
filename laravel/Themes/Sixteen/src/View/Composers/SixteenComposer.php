@@ -5,12 +5,15 @@ declare(strict_types=1);
 namespace Themes\Sixteen\View\Composers;
 
 use Illuminate\View\View;
+<<<<<<< HEAD
 use Themes\Sixteen\Events\BuildingSixteenMenu;
 use Themes\Sixteen\Services\MenuBuilder;
 
 /**
  * View Composer per il tema Sixteen
  *
+=======
+>>>>>>> 6ed19256f (.)
 use Themes\Sixteen\Services\MenuBuilder;
 use Themes\Sixteen\Events\BuildingSixteenMenu;
 
@@ -24,7 +27,12 @@ class SixteenComposer
 {
     public function __construct(
         protected MenuBuilder $menuBuilder
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> 6ed19256f (.)
 
     /**
      * Componi la vista con i dati del tema
@@ -33,10 +41,13 @@ class SixteenComposer
     {
         // Configurazioni base del tema
         $config = config('sixteen', []);
+<<<<<<< HEAD
 
         // Costruzione dinamica dei menu tramite eventi
         $this->buildMenus();
 
+=======
+>>>>>>> 6ed19256f (.)
         
         // Costruzione dinamica dei menu tramite eventi
         $this->buildMenus();
@@ -65,10 +76,13 @@ class SixteenComposer
     {
         // Inizializza i menu con quelli della configurazione
         $this->initializeMenusFromConfig();
+<<<<<<< HEAD
 
         // Lancia eventi per permettere modifiche dinamiche
         $locations = ['slim_header', 'header', 'footer', 'footer_bar'];
 
+=======
+>>>>>>> 6ed19256f (.)
         
         // Lancia eventi per permettere modifiche dinamiche
         $locations = ['slim_header', 'header', 'footer', 'footer_bar'];
@@ -84,6 +98,7 @@ class SixteenComposer
     protected function initializeMenusFromConfig(): void
     {
         $menuConfig = config('sixteen.menu', []);
+<<<<<<< HEAD
 
         if (isset($menuConfig['slim_header'])) {
             $this->menuBuilder->addSlimHeader($menuConfig['slim_header']);
@@ -97,6 +112,8 @@ class SixteenComposer
             $this->menuBuilder->addFooter($menuConfig['footer']);
         }
 
+=======
+>>>>>>> 6ed19256f (.)
         
         if (isset($menuConfig['slim_header'])) {
             $this->menuBuilder->addSlimHeader($menuConfig['slim_header']);
@@ -114,8 +131,12 @@ class SixteenComposer
             $this->menuBuilder->addFooterBar($menuConfig['footer_bar']);
         }
     }
+<<<<<<< HEAD
 }
 
 
 
 
+=======
+}
+>>>>>>> 6ed19256f (.)

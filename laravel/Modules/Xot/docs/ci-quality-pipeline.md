@@ -3,15 +3,25 @@
 This pipeline defines a staged adoption of linters/scanners across the monorepo. All jobs run in report/dry-run mode initially. Enforce gates only after manual review.
 
 ## Stage 0 (Advisory Only)
+<<<<<<< HEAD
 - phpstan (level 9/10) — configured
 - pint (test) — configured (GitHub Action: `pint.yml`)
+=======
+- phpstan (level 9) — pass/fail (already 0 errors)
+- pint (test) — advisory
+>>>>>>> 6ed19256f (.)
 - php-cs-fixer (dry-run) — advisory
 - phpmd (report) — advisory
 - psalm (info) — advisory
 - markdownlint (report) — advisory
+<<<<<<< HEAD
 - actionlint (report) — configured (GitHub Action: `actionlint.yml`)
 - gitleaks (report) — advisory
 - duster (lint) — configured (GitHub Action: `duster.yml`)
+=======
+- actionlint (report) — advisory
+- gitleaks (report) — advisory
+>>>>>>> 6ed19256f (.)
 
 ## Stage 1 (Incremental Enforcement)
 - Enable fail on pint/php-cs-fixer for specific paths once reviewed.

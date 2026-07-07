@@ -51,7 +51,10 @@ userfactory.php              → ELIMINA
 - `CHANGELOG.md`, `LICENSE`, `CONTRIBUTING.md` - Uppercase per visibilità
 
 ## 🗑️ Cleanup Effettuato (2025-11-04)
+<<<<<<< HEAD
 ## 🗑️ Cleanup Effettuato ([DATE])
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Modulo Xot (6 file)
 ```bash
@@ -71,11 +74,14 @@ userfactory.php              → ELIMINA
 ✗ database/Migrations/
 ```
 
+<<<<<<< HEAD
 ### Modulo Tenant (1 directory)
 ```bash
 ✗ Tests/ → tests (eliminata, duplicato di tests/)
 ```
 
+=======
+>>>>>>> 6ed19256f (.)
 ### Modulo Media (1 file)
 ```bash
 ✗ tests/Filament/Resources/mediaconvertresourcetest.php
@@ -184,7 +190,11 @@ Laravel usa `database/migrations/`, `database/factories/`, `database/seeders/` (
 ### Script di Controllo
 
 ```bash
+<<<<<<< HEAD
 cd Modules
+=======
+cd /var/www/_bases/base_ptvx_fila4_mono/laravel/Modules
+>>>>>>> 6ed19256f (.)
 python3 << 'EOF'
 import os
 from collections import defaultdict
@@ -252,6 +262,7 @@ EOF
 Ogni modulo interessato ha documentazione dettagliata:
 
 - [Xot Module](./case-sensitivity-rules.md)
+<<<<<<< HEAD
 - [Gdpr Module](../../gdpr/docs/case-sensitivity-rules.md)
 - [Lang Module](../../lang/docs/case-sensitivity-rules.md)
 - [Media Module](../../media/docs/case-sensitivity-rules.md)
@@ -259,6 +270,8 @@ Ogni modulo interessato ha documentazione dettagliata:
 - [Rating Module](../../rating/docs/case-sensitivity-rules.md)
 - [Tenant Module](../../tenant/docs/case-sensitivity-rules.md)
 - [User Module](../../user/docs/case-sensitivity-rules.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Gdpr Module](../../Gdpr/docs/case-sensitivity-rules.md)
 - [Lang Module](../../Lang/docs/case-sensitivity-rules.md)
 - [Media Module](../../Media/docs/case-sensitivity-rules.md)
@@ -323,8 +336,12 @@ python3 /path/to/check_duplicates.py
 ### Internal Documentation
 - [Modulo Xot Architecture](./architecture.md)
 - [Bashscripts Location Policy](./bashscripts-location-policy.md)
+<<<<<<< HEAD
 - [CLAUDE.md - Project Guidelines](CLAUDE.md)
 - [CLAUDE.md - Project Guidelines](claude.md)
+=======
+- [CLAUDE.md - Project Guidelines](/var/www/_bases/base_ptvx_fila4_mono/laravel/CLAUDE.md)
+>>>>>>> 6ed19256f (.)
 
 ## 🎯 Conclusioni
 
@@ -351,6 +368,11 @@ Questa non è solo una regola tecnica, è una **filosofia di sviluppo**:
 ---
 
 **Ultimo aggiornamento**: 2025-11-04
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
 **Status**: ✅ Cleanup completato, enforcement attivo
 **Revisione**: Trimestrale (ogni 3 mesi)
+=======
+**Status**: ✅ Cleanup completato, enforcement attivo
+**Revisione**: Trimestrale (ogni 3 mesi)
+>>>>>>> 6ed19256f (.)

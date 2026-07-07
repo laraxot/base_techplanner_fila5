@@ -5,10 +5,13 @@
 > - [Struttura dei Prompt](./prompts.md)
 > - [Regole per i Prompt](./PROMPT_RULES.md)
 > - [README.md toolkit bashscripts](../../../../bashscripts/docs/README.md)
+<<<<<<< HEAD
 > - [README.md documentazione generale](../../../../../docs/readme.md)
 > - [Struttura dei Prompt](./prompts.md)
 > - [Regole per i Prompt](./prompt_rules.md)
 > - [README.md toolkit bashscripts](../../../../bashscripts/docs/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Regola Fondamentale
 
@@ -22,45 +25,64 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 
 ```markdown
 [Modulo Xot](./laravel/Modules/Xot/docs/README.md)
+<<<<<<< HEAD
 [Modulo Xot](./laravel/modules/xot/docs/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 ```
 
 ### Da un file in un modulo verso un altro modulo
 
 ```markdown
 [Altro Modulo](../../../AltroModulo/docs/README.md)
+<<<<<<< HEAD
 [Altro Modulo](../../../altromodulo/docs/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 ```
 
 ### Da un file in un modulo verso la root
 
 ```markdown
 [Documentazione Root](../../../../docs/README.md)
+<<<<<<< HEAD
 [Documentazione Root](../../../../../docs/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 ```
 
 ## Errori Comuni da Evitare
 
 1. **MAI utilizzare percorsi assoluti** come:
    ```markdown
+<<<<<<< HEAD
    [ERRATO](../Xot/docs/README.md)
    [ERRATO](../xot/docs/readme.md)
+=======
+   [ERRATO](/var/www/html/saluteora/laravel/Modules/Xot/docs/README.md)
+>>>>>>> 6ed19256f (.)
    ```
 
 2. **MAI utilizzare percorsi che iniziano con /**:
    ```markdown
    [ERRATO](/docs/README.md)
    [ERRATO](/laravel/Modules/Xot/docs/README.md)
+<<<<<<< HEAD
    [ERRATO](/docs/readme.md)
    [ERRATO](/laravel/modules/xot/docs/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
    ```
 
 3. **MAI utilizzare percorsi che non tengono conto della posizione relativa del file sorgente**:
    ```markdown
    [ERRATO](Modules/Xot/docs/README.md) <!-- Da un file nella root -->
    [ERRATO](../Xot/docs/README.md) <!-- Da un file in un modulo, senza contare correttamente i livelli -->
+<<<<<<< HEAD
    [ERRATO](modules/xot/docs/readme.md) <!-- Da un file nella root -->
    [ERRATO](../xot/docs/readme.md) <!-- Da un file in un modulo, senza contare correttamente i livelli -->
+=======
+>>>>>>> 6ed19256f (.)
    ```
 
 ## Come Calcolare Correttamente i Percorsi Relativi
@@ -76,7 +98,11 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 | Posizione File Sorgente | Posizione File Destinazione | Percorso Relativo Corretto |
 |-------------------------|------------------------------|----------------------------|
 | `/docs/README.md` | `/laravel/Modules/Xot/docs/README.md` | `./laravel/Modules/Xot/docs/README.md` |
+<<<<<<< HEAD
 | `/laravel/Modules/Xot/docs/README.md` | `/docs/README.md` | `../../../../../docs/README.md` |
+=======
+| `/laravel/Modules/Xot/docs/README.md` | `/docs/README.md` | `../../../../docs/README.md` |
+>>>>>>> 6ed19256f (.)
 | `/laravel/Modules/Xot/docs/README.md` | `/laravel/Modules/User/docs/README.md` | `../../../User/docs/README.md` |
 | `/laravel/Modules/Xot/docs/structure.md` | `/laravel/Modules/Xot/docs/README.md` | `./README.md` |
 
@@ -99,4 +125,8 @@ L'uso di percorsi relativi garantisce che la documentazione funzioni correttamen
 ## Riferimenti
 
 - [Markdown Link Syntax](https://www.markdownguide.org/basic-syntax/#links)
+<<<<<<< HEAD
 - [Relative vs Absolute URLs](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2)
+=======
+- [Relative vs Absolute URLs](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2)
+>>>>>>> 6ed19256f (.)

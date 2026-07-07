@@ -3,7 +3,11 @@
 **Modulo**: Xot (Core Framework Base)
 **Data Analisi**: 1 Ottobre 2025
 **Maintainer**: Laraxot Core Team
+<<<<<<< HEAD
 **Status PHPStan**: ⚠️ 9 errori (Level 10)
+=======
+**Status PHPStan**: ⚠️ 9 errori (Level 9)
+>>>>>>> 6ed19256f (.)
 
 ---
 
@@ -22,7 +26,11 @@
 
 ---
 
+<<<<<<< HEAD
 ## 🔴 COMPLETED PHPSTAN DA CORREGGERE (9)
+=======
+## 🔴 ERRORI PHPSTAN DA CORREGGERE (9)
+>>>>>>> 6ed19256f (.)
 
 ### Priorità CRITICA - Blocca altri moduli
 
@@ -234,7 +242,11 @@ function xot_config(string $key): mixed
 - [ ] Rimuovere dead catch block (5 min)
 
 **Totale**: ~2 ore
+<<<<<<< HEAD
 **Risultato**: ✅ 0 errori PHPStan Level 10
+=======
+**Risultato**: ✅ 0 errori PHPStan Level 9
+>>>>>>> 6ed19256f (.)
 
 ---
 
@@ -279,7 +291,11 @@ function xot_config(string $key): mixed
 ## 📋 CHECKLIST QUALITÀ
 
 ### Code Quality ✅
+<<<<<<< HEAD
 - [x] PHPStan Level 10 (83% - domani 100%)
+=======
+- [x] PHPStan Level 9 (83% - domani 100%)
+>>>>>>> 6ed19256f (.)
 - [ ] PHPDoc 100% coverage
 - [ ] No dead code
 - [ ] No deprecated methods
@@ -323,7 +339,10 @@ function xot_config(string $key): mixed
 ## 🔗 Collegamenti
 
 - [← Xot Module README](./README.md)
+<<<<<<< HEAD
 - [← Xot Module README](./readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [← Best Practices](./best-practices.md)
 - [← Troubleshooting](./troubleshooting.md)
 - [← Project Roadmap](../../../docs/project-analysis-and-roadmap.md)
@@ -331,7 +350,14 @@ function xot_config(string $key): mixed
 
 ---
 
+<<<<<<< HEAD
 **Status**: ⚠️ 9 COMPLETED DA CORREGGERE
 **Priorità**: 🔴 CRITICA (Core Framework)
 **Timeline**: 2 Ottobre 2025 (domani)
 **Effort**: ~2 ore → 100% CLEAN
+=======
+**Status**: ⚠️ 9 ERRORI DA CORREGGERE
+**Priorità**: 🔴 CRITICA (Core Framework)
+**Timeline**: 2 Ottobre 2025 (domani)
+**Effort**: ~2 ore → 100% CLEAN
+>>>>>>> 6ed19256f (.)

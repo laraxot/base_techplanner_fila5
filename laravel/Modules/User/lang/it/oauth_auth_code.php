@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
+<<<<<<< HEAD
         'label' => 'Codici Autorizzazione OAuth',
         'plural_label' => 'Codici Autorizzazione OAuth',
         'group' => 'OAuth',
@@ -66,4 +67,19 @@ return [
     'messages' => [
         'revoked' => 'Codice revocato con successo',
     ],
+=======
+        'label' => 'OAuth Authorization Codes',
+        'group' => 'API',
+        'icon' => 'heroicon-o-code-bracket',
+        'sort' => 31,
+    ],
+    'actions' => [
+        'logout' => [
+            'tooltip' => 'logout',
+        ],
+    ],
+    'label' => '',
+    'plural_label' => '',
+    'fields' => [],
+>>>>>>> 6ed19256f (.)
 ];

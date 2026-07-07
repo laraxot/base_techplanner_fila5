@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 use function Laravel\Folio\name;
 use function Laravel\Folio\middleware;
 
@@ -121,6 +122,8 @@ middleware(['guest']);
     </div>
 
 </x-layouts.base>
+=======
+>>>>>>> 6ed19256f (.)
 
 use function Livewire\Volt\{state, mount};
 
@@ -150,6 +153,9 @@ $login = function() {
         </div>
     </div>
 </x-filament::page>
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 6ed19256f (.)

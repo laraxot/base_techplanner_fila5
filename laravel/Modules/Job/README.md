@@ -714,6 +714,7 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file [LICENSE](LICE
   <br>
   <em>Costruito con ❤️ per la comunità Laravel</em>
 </div>
+<<<<<<< HEAD
 # ⚙️ Job
 
 [![Domain-Queue](https://img.shields.io/badge/Domain-Queues%20%26%20Jobs-5D4037.svg)](#)
@@ -770,3 +771,5 @@ Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 ---
 
 **Modulo** `job` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+>>>>>>> 6ed19256f (.)

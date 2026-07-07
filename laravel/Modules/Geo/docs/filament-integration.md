@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Integrazione con Filament
 
 ## Descrizione
@@ -185,6 +186,8 @@ class AddressPage extends XotBasePage
 ## Collegamenti
 - [README del Modulo](../readme.md)
 - [Documentazione JSON Database](json-database.md)
+=======
+>>>>>>> 6ed19256f (.)
 # filament
 
 <!-- Contenuto migrato da _docs/filament.txt -->
@@ -245,5 +248,8 @@ function showPosition(position) {
 https://polodev.github.io/tuts/2018/11/05/nearby-location-using-latitude-and-longitude-in-laravel-application-mysql-query-plus-vue-implementation/
 
 https://github.com/geocoder-php/GeocoderLaravel
+<<<<<<< HEAD
 - [Best Practices Filament](../../../../docs/project/filament-best-practices.md)
 - [Clean Code](../../../../docs/project/clean-code.md) 
+=======
+>>>>>>> 6ed19256f (.)

@@ -491,4 +491,8 @@ La documentazione deve essere mantenuta aggiornata in:
 **Versione**: 1.0.0
 **Status**: Production Ready
 **Business Logic**: Completa e documentata
+<<<<<<< HEAD
 **Architettura**: Modulare e scalabile
+=======
+**Architettura**: Modulare e scalabile
+>>>>>>> 6ed19256f (.)

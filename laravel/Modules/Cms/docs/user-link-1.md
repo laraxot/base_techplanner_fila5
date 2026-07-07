@@ -11,7 +11,11 @@ Sia il modulo Cms che il modulo User seguono le stesse convenzioni di namespace 
 
 Per dettagli specifici, consulta:
 - [Convenzioni Namespace Filament](./convenzioni-namespace-filament.md) in questo modulo
+<<<<<<< HEAD
 - [Convenzioni di Namespace](../../user/docs/namespace-conventions.md) nel modulo User
+=======
+- [Convenzioni di Namespace](../../User/docs/namespace-conventions.md) nel modulo User
+>>>>>>> 6ed19256f (.)
 
 ## Punti di Integrazione
 
@@ -21,8 +25,13 @@ Per dettagli specifici, consulta:
 
 ## Collegamenti Bidirezionali
 
+<<<<<<< HEAD
 - [Convenzioni di Namespace nel modulo User](../../user/docs/namespace-conventions.md)
 - [Best Practices Filament nel modulo User](../../user/docs/filament_best_practices.md)
+=======
+- [Convenzioni di Namespace nel modulo User](../../User/docs/namespace-conventions.md)
+- [Best Practices Filament nel modulo User](../../User/docs/FILAMENT_BEST_PRACTICES.md)
+>>>>>>> 6ed19256f (.)
 
 ---
 
@@ -33,5 +42,10 @@ Quando aggiungi nuovi componenti Filament, assicurati di:
 3. Mantenere aggiornata la documentazione in entrambi i moduli
 
 ## Collegamenti tra versioni di user-link.md
+<<<<<<< HEAD
 * [user-link.md](laravel/modules/lang/docs/user-link.md)
 * [user-link.md](laravel/modules/cms/docs/user-link.md)
+=======
+* [user-link.md](laravel/Modules/Lang/docs/user-link.md)
+* [user-link.md](laravel/Modules/Cms/docs/user-link.md)
+>>>>>>> 6ed19256f (.)

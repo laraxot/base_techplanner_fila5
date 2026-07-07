@@ -32,6 +32,7 @@ Il modello `Team` accede direttamente a proprietà che potrebbero non essere dis
 
 ### Collegamenti Bidirezionali
 - [Documentazione Generale PHPStan](/docs/phpstan/PHPSTAN_LEVEL10_LINEE_GUIDA.md)
+<<<<<<< HEAD
 - [Documentazione Generale PHPStan](/docs/phpstan/phpstan_level10_linee_guida.md)
 - [Contratti del Modulo User](/docs/modules/user/contracts.md)
 - [Best Practices per i Modelli](/docs/modules/user/models.md)
@@ -46,3 +47,14 @@ Il modello `Team` accede direttamente a proprietà che potrebbero non essere dis
 * [phpstan_fixes.md](../../../User/docs/phpstan_fixes.md)
 * [phpstan_fixes.md](../../../User/docs/fixes/phpstan_fixes.md)
 * [phpstan_fixes.md](../../../Activity/docs/phpstan_fixes.md)
+=======
+- [Contratti del Modulo User](/docs/modules/user/contracts.md)
+- [Best Practices per i Modelli](/docs/modules/user/models.md)
+- [Interfacce e Contratti](/docs/modules/xot/contracts.md)
+
+## Collegamenti tra versioni di phpstan_fixes.md
+* [phpstan_fixes.md](../../../Xot/docs/phpstan_fixes.md)
+* [phpstan_fixes.md](../../../User/docs/phpstan_fixes.md)
+* [phpstan_fixes.md](../../../User/docs/fixes/phpstan_fixes.md)
+* [phpstan_fixes.md](../../../Activity/docs/phpstan_fixes.md)
+>>>>>>> 6ed19256f (.)

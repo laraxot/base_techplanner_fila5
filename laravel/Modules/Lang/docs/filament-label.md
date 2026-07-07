@@ -44,5 +44,8 @@
 ## Collegamenti
 - [docs root](../../../../docs/actions.md)
 - [docs Xot](../../../Xot/docs/MODULE_NAMESPACE_RULES.md)
+<<<<<<< HEAD
 - [docs root](../../../../../docs/actions.md)
 - [docs Xot](../../../xot/docs/module_namespace_rules.md)
+=======
+>>>>>>> 6ed19256f (.)

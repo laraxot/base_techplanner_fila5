@@ -139,7 +139,11 @@ class User extends Authenticatable
     {
         return $this->hasOne(Profile::class);
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // Altri metodi relativi all'autenticazione...
 }
 
@@ -170,7 +174,11 @@ class Profile extends Model
     {
         return $this->belongsTo(User::class);
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // Altri metodi relativi ai dati personali...
 }
 ```

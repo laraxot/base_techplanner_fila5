@@ -1,7 +1,13 @@
+<<<<<<< HEAD
 **Ultimo aggiornamento**: 2025-01-10
 # GitHub Workflows Standard - base_<nome progetto>
 
 **Ultimo aggiornamento**: [DATE]
+=======
+# GitHub Workflows Standard - base_laravelpizza
+
+**Ultimo aggiornamento**: 2025-01-10
+>>>>>>> 6ed19256f (.)
 **Principi**: DRY + KISS + SOLID + Robust
 **Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot
 
@@ -108,6 +114,7 @@ Per ogni modulo/tema:
 
 ---
 
+<<<<<<< HEAD
 ## 🔄 Operational Workflows
 
 ### Sync Remote Repo (`sync-remote-repo.yml`)
@@ -141,6 +148,8 @@ Il checkout principale deve disabilitare i submodule per evitare errori su indic
 
 ---
 
+=======
+>>>>>>> 6ed19256f (.)
 ## 📚 Documentazione Correlata
 
 - [CI/CD Tools Execution Report](./ci-cd-tools-execution-report.md)
@@ -149,4 +158,8 @@ Il checkout principale deve disabilitare i submodule per evitare errori su indic
 
 ---
 
+<<<<<<< HEAD
 **Filosofia**: DRY + KISS - Workflow standardizzati per tutti i moduli/temi, mantenibilità e coerenza.
+=======
+**Filosofia**: DRY + KISS - Workflow standardizzati per tutti i moduli/temi, mantenibilità e coerenza.
+>>>>>>> 6ed19256f (.)

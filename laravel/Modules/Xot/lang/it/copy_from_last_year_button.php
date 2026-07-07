@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 |<|?|p|h|p|
 |
 |d|e|c|l|a|r|e|(|s|t|r|i|c|t|_|t|y|p|e|s|=|1|)|;|
@@ -43,3 +44,16 @@
 | | | | |]|,|
 |]|;|
 |
+=======
+<?php
+
+declare(strict_types=1);
+
+return [
+    'actions' => [
+        'copy_from_last_year' => [
+            'label' => 'copy_from_last_year',
+        ],
+    ],
+];
+>>>>>>> 6ed19256f (.)

@@ -1,5 +1,8 @@
 # DRY/KISS Model Refactoring Analysis - 2025-10-15
+<<<<<<< HEAD
 # DRY/KISS Model Refactoring Analysis - [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Executive Summary
 
@@ -486,9 +489,12 @@ grep -h "class Base.*Model extends" Modules/*/app/Models/Base*.php | sort | uniq
 - [User Module Model Inheritance Rules](../../User/docs/model-inheritance-rules.md)
 - [CLAUDE.md - Eloquent Models Section](../../../CLAUDE.md#eloquent-models)
 - [Geo Model Inheritance Pattern](../../Geo/docs/model-inheritance-pattern.md)
+<<<<<<< HEAD
 - [User Module Model Inheritance Rules](../../user/docs/model-inheritance-rules.md)
 - [CLAUDE.md - Eloquent Models Section](../../../CLAUDE.md#eloquent-models)
 - [Geo Model Inheritance Pattern](../../geo/docs/model-inheritance-pattern.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ---
 
@@ -508,4 +514,8 @@ Il refactoring ha applicato con successo i principi DRY e KISS alla gerarchia de
 
 *Refactoring completato: 15 ottobre 2025*
 *Analizzato da: Claude Code*
+<<<<<<< HEAD
 *Validato: ✅ Test passed, PHPStan level 10 passed*
+=======
+*Validato: ✅ Test passed, PHPStan level 10 passed*
+>>>>>>> 6ed19256f (.)

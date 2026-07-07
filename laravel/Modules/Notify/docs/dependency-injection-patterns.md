@@ -1,7 +1,12 @@
 # Dependency Injection Pattern in QueueableActions
 
+<<<<<<< HEAD
 **Date**: 18 Dicembre 2025  
 **Status**: ✅ Pattern Documented  
+=======
+**Date**: 18 Dicembre 2025
+**Status**: ✅ Pattern Documented
+>>>>>>> 6ed19256f (.)
 **Module**: Notify
 
 ## Overview
@@ -91,4 +96,8 @@ This approach aligns with:
 
 ---
 
+<<<<<<< HEAD
 *Documento conforme agli standard Laraxot - DRY + KISS + SOLID*
+=======
+*Documento conforme agli standard Laraxot - DRY + KISS + SOLID*
+>>>>>>> 6ed19256f (.)

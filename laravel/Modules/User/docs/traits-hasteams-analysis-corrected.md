@@ -529,7 +529,10 @@ trait HasTeams
 - [Modules/User/project_docs/traits.md](traits.md)
 - [docs/phpstan_fixes.md](../../../project_docs/phpstan_fixes.md)
 - [Modules/Xot/project_docs/RELATION_X.md](../../Xot/project_docs/RELATION_X.md)
+<<<<<<< HEAD
 - [docs/USER_MODULE.md](../../../../docs/project/user_module.md)
 - [Modules/User/project_docs/traits.md](traits.md)
 - [docs/phpstan_fixes.md](../../../../docs/project/phpstan_fixes.md)
 - [Modules/Xot/project_docs/RELATION_X.md](../../xot/project_docs/relation_x.md)
+=======
+>>>>>>> 6ed19256f (.)

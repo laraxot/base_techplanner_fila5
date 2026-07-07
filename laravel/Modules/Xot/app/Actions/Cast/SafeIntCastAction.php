@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Cast;
 
 use function Safe\preg_match;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -26,8 +29,13 @@ class SafeIntCastAction
     /**
      * Converte in modo sicuro un valore mixed in int.
      *
+<<<<<<< HEAD
      * @param mixed    $value   Il valore da convertire
      * @param int|null $default Valore di default se la conversione fallisce (default: 0)
+=======
+     * @param  mixed  $value  Il valore da convertire
+     * @param  int|null  $default  Valore di default se la conversione fallisce (default: 0)
+>>>>>>> 6ed19256f (.)
      *
      * @return int Il valore convertito in int
      */
@@ -59,7 +67,11 @@ class SafeIntCastAction
         }
 
         // Se è un array e ha un solo elemento numerico
+<<<<<<< HEAD
         if (is_array($value) && 1 === count($value)) {
+=======
+        if (is_array($value) && count($value) === 1) {
+>>>>>>> 6ed19256f (.)
             return $this->execute(reset($value), $default);
         }
 
@@ -75,8 +87,13 @@ class SafeIntCastAction
     /**
      * Metodo statico di convenienza per chiamate dirette.
      *
+<<<<<<< HEAD
      * @param mixed    $value   Il valore da convertire
      * @param int|null $default Valore di default se la conversione fallisce (default: 0)
+=======
+     * @param  mixed  $value  Il valore da convertire
+     * @param  int|null  $default  Valore di default se la conversione fallisce (default: 0)
+>>>>>>> 6ed19256f (.)
      *
      * @return int Il valore convertito in int
      */
@@ -88,10 +105,17 @@ class SafeIntCastAction
     /**
      * Converte un valore in int con validazione di range.
      *
+<<<<<<< HEAD
      * @param mixed    $value   Il valore da convertire
      * @param int      $min     Valore minimo consentito
      * @param int      $max     Valore massimo consentito
      * @param int|null $default Valore di default se la conversione fallisce
+=======
+     * @param  mixed  $value  Il valore da convertire
+     * @param  int  $min  Valore minimo consentito
+     * @param  int  $max  Valore massimo consentito
+     * @param  int|null  $default  Valore di default se la conversione fallisce
+>>>>>>> 6ed19256f (.)
      *
      * @return int Il valore convertito e validato
      */
@@ -106,10 +130,17 @@ class SafeIntCastAction
     /**
      * Metodo statico di convenienza per cast con range.
      *
+<<<<<<< HEAD
      * @param mixed    $value   Il valore da convertire
      * @param int      $min     Valore minimo consentito
      * @param int      $max     Valore massimo consentito
      * @param int|null $default Valore di default se la conversione fallisce
+=======
+     * @param  mixed  $value  Il valore da convertire
+     * @param  int  $min  Valore minimo consentito
+     * @param  int  $max  Valore massimo consentito
+     * @param  int|null  $default  Valore di default se la conversione fallisce
+>>>>>>> 6ed19256f (.)
      *
      * @return int Il valore convertito e validato
      */
@@ -121,8 +152,13 @@ class SafeIntCastAction
     /**
      * Converte un valore in ID positivo (sempre >= 1).
      *
+<<<<<<< HEAD
      * @param mixed    $value   Il valore da convertire
      * @param int|null $default Valore di default se la conversione fallisce (default: 1)
+=======
+     * @param  mixed  $value  Il valore da convertire
+     * @param  int|null  $default  Valore di default se la conversione fallisce (default: 1)
+>>>>>>> 6ed19256f (.)
      *
      * @return int Il valore convertito come ID positivo
      */
@@ -136,8 +172,13 @@ class SafeIntCastAction
     /**
      * Metodo statico per cast come ID positivo.
      *
+<<<<<<< HEAD
      * @param mixed    $value   Il valore da convertire
      * @param int|null $default Valore di default se la conversione fallisce (default: 1)
+=======
+     * @param  mixed  $value  Il valore da convertire
+     * @param  int|null  $default  Valore di default se la conversione fallisce (default: 1)
+>>>>>>> 6ed19256f (.)
      *
      * @return int Il valore convertito come ID positivo
      */
@@ -149,8 +190,13 @@ class SafeIntCastAction
     /**
      * Converte una stringa in int con gestione avanzata.
      *
+<<<<<<< HEAD
      * @param string   $value   La stringa da convertire
      * @param int|null $default Valore di default
+=======
+     * @param  string  $value  La stringa da convertire
+     * @param  int|null  $default  Valore di default
+>>>>>>> 6ed19256f (.)
      *
      * @return int Il valore convertito
      */
@@ -173,7 +219,11 @@ class SafeIntCastAction
 
         // Prova a estrarre solo i numeri
         $matches = [];
+<<<<<<< HEAD
         if (1 === preg_match('/^[+-]?[0-9]+/', $normalized, $matches) && ! empty($matches[0])) {
+=======
+        if (preg_match('/^[+-]?[0-9]+/', $normalized, $matches) === 1 && ! empty($matches[0])) {
+>>>>>>> 6ed19256f (.)
             return (int) $matches[0];
         }
 

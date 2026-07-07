@@ -479,4 +479,8 @@ User Module
 
 ---
 
+<<<<<<< HEAD
 *Questa roadmap è specifica per il modulo User e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
+=======
+*Questa roadmap è specifica per il modulo User e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
+>>>>>>> 6ed19256f (.)

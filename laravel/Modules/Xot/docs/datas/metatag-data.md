@@ -23,7 +23,10 @@ La classe `MetatagData` gestisce i metadati del sito, inclusi loghi, colori e co
 - `generator`: Generatore del sito
 
 ### Colori
+<<<<<<< HEAD
 - Palette Filament PA: `PaDesignColors` → [filament-pa-design-colors.md](../wiki/concepts/filament-pa-design-colors.md)
+=======
+>>>>>>> 6ed19256f (.)
 - `color_primary`: Colore primario
 - `color_title`: Colore del titolo
 - `color_megamenu`: Colore del megamenu
@@ -295,4 +298,8 @@ La classe utilizza `Assert` per validare:
 - Presenza dei campi obbligatori
 - Formato corretto degli URL
 - Lunghezza appropriata dei testi
+<<<<<<< HEAD
 - Valori validi per i tipi di card
+=======
+- Valori validi per i tipi di card
+>>>>>>> 6ed19256f (.)

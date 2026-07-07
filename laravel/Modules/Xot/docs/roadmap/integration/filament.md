@@ -44,6 +44,7 @@
 
 ## Collegamenti
 - [Roadmap Principale](../../roadmap.md)
+<<<<<<< HEAD
 - [Integrazione Filament](../../folio_volt_filament_integration.md)
 - [Best Practices](../../best-practices.md)
 ## Collegamenti tra versioni di filament.md
@@ -56,6 +57,8 @@
 * [filament.md](../../../job/docs/filament.md)
 * [filament.md](../../../activity/docs/filament.md)
 * [filament.md](../../../cms/docs/filament.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Integrazione Filament](../../FOLIO_VOLT_FILAMENT_INTEGRATION.md)
 - [Best Practices](../../BEST-PRACTICES.md)
 ## Collegamenti tra versioni di filament.md
@@ -67,4 +70,8 @@
 * [filament.md](../../../Lang/docs/filament.md)
 * [filament.md](../../../Job/docs/filament.md)
 * [filament.md](../../../Activity/docs/filament.md)
+<<<<<<< HEAD
 * [filament.md](../../../Cms/docs/filament.md)
+=======
+* [filament.md](../../../Cms/docs/filament.md)
+>>>>>>> 6ed19256f (.)

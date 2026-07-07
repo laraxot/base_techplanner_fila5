@@ -158,9 +158,12 @@ Result: No changes made to user modules.
 - [User Models](models/README.md)
 - [Role Management](models/role-management.md)
 - [README.md](../README.md)
+<<<<<<< HEAD
 - [User Models](models/readme.md)
 - [Role Management](models/role-management.md)
 - [README.md](../readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Aggiornamenti
 
@@ -171,4 +174,8 @@ Result: No changes made to user modules.
 - ✅ **Gestione Errori**: Controlli preventivi per utenti non trovati
 - ✅ **Documentazione**: Documentazione completa con esempi
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-27*
+=======
+*Ultimo aggiornamento: 2025-01-27*
+>>>>>>> 6ed19256f (.)

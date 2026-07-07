@@ -92,6 +92,7 @@ return [
         'required' => 'This field is required',
 ],
 ## Widget Implementation Rules
+<<<<<<< HEAD
 ### Never Use ->label(), ->placeholder(), ->helperText()
 
 **Regola critica**: Mai usare `->label()`, `->placeholder()` o `->helperText()` nei componenti Filament. Il LangServiceProvider risolve automaticamente da `modulo::risorsa.fields.campo.*` (es. `user::login_widget.fields.email.label`).
@@ -102,6 +103,8 @@ TextInput::make('name')->label('Name')->placeholder('Enter name')
 // ✅ CORRECT - Let LangServiceProvider handle translations
 TextInput::make('name')
 ```
+=======
+>>>>>>> 6ed19256f (.)
 ### Never Use Direct Labels
 // ❌ WRONG - Never use ->label() in widgets
 TextInput::make('name')->label('Name')
@@ -156,12 +159,19 @@ The User module's LangServiceProvider automatically loads and manages widget tra
 4. Document any breaking changes
 ## Related Documentation
 - [User Module Widget Structure](../widgets_structure.md)
+<<<<<<< HEAD
 - [Filament Widget Conventions](../../xot/docs/filament-widgets.md)
 - [Translation System Overview](../../xot/docs/translations.md)
 - [Filament Widget Conventions](../../xot/project_docs/filament-widgets.md)
 - [Translation System Overview](../../xot/project_docs/translations.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Filament Widget Conventions](../../Xot/docs/filament-widgets.md)
 - [Translation System Overview](../../Xot/docs/translations.md)
 - [Filament Widget Conventions](../../Xot/project_docs/filament-widgets.md)
 - [Translation System Overview](../../Xot/project_docs/translations.md)
+<<<<<<< HEAD
 - [EditUserWidget Documentation](./edit-user-widget.md)
+=======
+- [EditUserWidget Documentation](./edit-user-widget.md)
+>>>>>>> 6ed19256f (.)

@@ -35,7 +35,10 @@ Nella documentazione di il progetto, **tutti i collegamenti devono essere relati
 
 ```markdown
 [Documento in altro modulo](../../laravel/Modules/User/docs/documento.md)
+<<<<<<< HEAD
 [Documento in altro modulo](../../laravel/modules/user/docs/documento.md)
+=======
+>>>>>>> 6ed19256f (.)
 ```
 
 ### Formati Errati da Evitare
@@ -47,7 +50,11 @@ Nella documentazione di il progetto, **tutti i collegamenti devono essere relati
 
 ❌ **Collegamenti assoluti basati su percorso**:
 ```markdown
+<<<<<<< HEAD
 [Documento errato](docs/documento.md)
+=======
+[Documento errato](/var/www/html/<nome progetto>/docs/documento.md)
+>>>>>>> 6ed19256f (.)
 ```
 
 ❌ **Collegamenti senza estensione**:
@@ -74,4 +81,7 @@ Questa regola si integra con il sistema di documentazione centralizzato descritt
 ## Collegamenti tra versioni di collegamenti-relativi.md
 * [collegamenti-relativi.md](docs/regole/collegamenti-relativi.md)
 * [collegamenti-relativi.md](../../../Xot/docs/rules/collegamenti-relativi.md)
+<<<<<<< HEAD
 * [collegamenti-relativi.md](../../../xot/docs/rules/collegamenti-relativi.md)
+=======
+>>>>>>> 6ed19256f (.)

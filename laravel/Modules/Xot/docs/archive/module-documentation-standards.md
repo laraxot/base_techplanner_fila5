@@ -53,6 +53,9 @@ Per supporto e domande, contattare il team di sviluppo.
 - [Standard di Documentazione Generale](../../Xot/project_docs/standards/documentation.md)
 - [Convenzioni di Nomenclatura](../../Xot/project_docs/conventions/naming.md)
 - [Struttura dei Moduli](../../Xot/project_docs/architecture/modules.md)
+<<<<<<< HEAD
 - [Standard di Documentazione Generale](../../xot/project_docs/standards/documentation.md)
 - [Convenzioni di Nomenclatura](../../xot/project_docs/conventions/naming.md)
 - [Struttura dei Moduli](../../xot/project_docs/architecture/modules.md)
+=======
+>>>>>>> 6ed19256f (.)

@@ -118,6 +118,9 @@ Per dettagli su configurazione e template, consulta: [Documentazione Sezione Foo
 - [Gestione Blocchi](../blocks/README.md)
 - [Componenti UI](../components/README.md)
 - [Documentazione Root](../../../../docs/sections.md)
+<<<<<<< HEAD
 - [Gestione Blocchi](../blocks/readme.md)
 - [Componenti UI](../components/readme.md)
 - [Documentazione Root](../../../../../docs/sections.md)
+=======
+>>>>>>> 6ed19256f (.)

@@ -2,8 +2,13 @@
 
 ## L'Errore Gravissimo
 
+<<<<<<< HEAD
 **Data**: 2025-01-06  
 **Problema**: 35+ factory mancanti su 13 moduli  
+=======
+**Data**: 2025-01-06
+**Problema**: 35+ factory mancanti su 13 moduli
+>>>>>>> 6ed19256f (.)
 **Gravità**: CRITICA - Sistema di testing compromesso
 
 ## Lezioni Fondamentali
@@ -31,7 +36,11 @@ use Modules\ModuleName\Models\ModelName;
 
 /**
  * ModelName Factory
+<<<<<<< HEAD
  * 
+=======
+ *
+>>>>>>> 6ed19256f (.)
  * @extends Factory<ModelName>
  */
 class ModelNameFactory extends Factory
@@ -61,14 +70,22 @@ class ModelNameFactory extends Factory
 
 ### Models Aggiornati con HasFactory
 - ✅ Authentication, Membership, TeamUser, TenantUser (User)
+<<<<<<< HEAD
 - ✅ PlaceType, Location (Geo)  
+=======
+- ✅ PlaceType, Location (Geo)
+>>>>>>> 6ed19256f (.)
 - ✅ Media, TemporaryUpload (Media)
 - ✅ Snapshot, StoredEvent (Activity)
 
 ### Factory Create e Validate
 - ✅ **8 factory User**: Authentication, Membership, TeamUser, OauthAccessToken, OauthClient, PermissionRole, Notification, TenantUser
 - ✅ **4 factory Geo**: Address, Place, Location, PlaceType
+<<<<<<< HEAD
 - ✅ **2 factory Media**: Media, TemporaryUpload  
+=======
+- ✅ **2 factory Media**: Media, TemporaryUpload
+>>>>>>> 6ed19256f (.)
 - ✅ **2 factory Activity**: Snapshot, StoredEvent
 
 ### Tipizzazione PHPStan Applicata
@@ -124,7 +141,11 @@ done
 1. **Dati Realistici**: Non solo lorem ipsum, ma dati significativi
 2. **Relazioni**: Gestire correttamente foreign key e relazioni
 3. **Stati**: Metodi per creare istanze in stati specifici
+<<<<<<< HEAD
 4. **Localizzazione**: Dati italiani per <nome progetto> (CAP, città, regioni)
+=======
+4. **Localizzazione**: Dati italiani per SaluteOra (CAP, città, regioni)
+>>>>>>> 6ed19256f (.)
 5. **Variabilità**: Stati diversi per testing completo
 
 ## Impatto Sistemico Risolto
@@ -132,7 +153,11 @@ done
 ### Prima (CRITICO)
 - ❌ 35+ factory mancanti
 - ❌ Testing impossibile
+<<<<<<< HEAD
 - ❌ Seeding fallimentare  
+=======
+- ❌ Seeding fallimentare
+>>>>>>> 6ed19256f (.)
 - ❌ Sviluppo locale bloccato
 - ❌ CI/CD compromesso
 
@@ -145,12 +170,19 @@ done
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Geo Factory Audit](../../Geo/project_docs/missing-factories-audit.md)
 - [Laravel Factory Best Practices](../../../project_docs/laravel-factory-best-practices.md)
 - [Factory Audit Root](../../../../docs/project/factory-audit-2025.md)
 - [Missing Factories Audit](./missing-factories-audit.md)
 - [Geo Factory Audit](../../geo/project_docs/missing-factories-audit.md)
 - [Laravel Factory Best Practices](../../../../docs/project/laravel-factory-best-practices.md)
+=======
+- [Factory Audit Root](../../../project_docs/factory-audit-2025.md)
+- [Missing Factories Audit](./missing-factories-audit.md)
+- [Geo Factory Audit](../../Geo/project_docs/missing-factories-audit.md)
+- [Laravel Factory Best Practices](../../../project_docs/laravel-factory-best-practices.md)
+>>>>>>> 6ed19256f (.)
 
 ---
 
@@ -158,4 +190,8 @@ done
 
 Ogni model DEVE avere la sua factory. È obbligatorio per il corretto funzionamento del sistema.
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-06*
+=======
+*Ultimo aggiornamento: 2025-01-06*
+>>>>>>> 6ed19256f (.)

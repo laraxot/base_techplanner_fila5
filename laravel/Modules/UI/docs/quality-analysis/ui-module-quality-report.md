@@ -75,11 +75,18 @@
 - [Optimization Recommendations](./optimization_recommendations.md)
 - [Modularity Optimizations](./modularity-optimizations.md)
 - [Xot Quality Analysis](../Xot/docs/quality-analysis/current-status.md)
+<<<<<<< HEAD
 - [Xot Quality Analysis](../xot/docs/quality-analysis/current-status.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## 📝 Note
 
 - PHPStan livello 10: **PERFETTO** ✅
 - PHPMD: Warnings accettabili (Facades Laravel)
 - PHPInsights: Da eseguire per score completo
+<<<<<<< HEAD
 - Documentazione esistente: Molto completa, ma con duplicazioni
+=======
+- Documentazione esistente: Molto completa, ma con duplicazioni
+>>>>>>> 6ed19256f (.)

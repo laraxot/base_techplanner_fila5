@@ -216,7 +216,11 @@ grep -r "auth()->user()" Modules/*/View/Composers/
 
 ## 🔗 Collegamenti
 
+<<<<<<< HEAD
 - [XotComposer](Modules/Xot/app/View/Composers/XotComposer.php)
+=======
+- [XotComposer](/var/www/html/base_<nome progetto>/laravel/Modules/Xot/app/View/Composers/XotComposer.php)
+>>>>>>> 6ed19256f (.)
 - [View Composer Laravel Docs](https://laravel.com/project_docs/views#view-composers)
 - [Container Resolution Laravel](https://laravel.com/project_docs/container)
 

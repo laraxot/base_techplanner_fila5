@@ -41,8 +41,13 @@ use Modules\<nome modulo>\States\Appointment\AppointmentState;
 use Modules\<nome modulo>\Models\Appointment;
 use Modules\<nome modulo>\States\Appointment\AppointmentState;
 use Modules\<nome modulo>\Models\Appointment;
+<<<<<<< HEAD
 use Modules\<nome progetto>\States\Appointment\AppointmentState;
 use Modules\<nome progetto>\Models\Appointment;
+=======
+use Modules\SaluteOra\States\Appointment\AppointmentState;
+use Modules\SaluteOra\Models\Appointment;
+>>>>>>> 6ed19256f (.)
 
 ## Implementation
 ### Basic Usage
@@ -50,8 +55,13 @@ use Modules\<nome progetto>\Models\Appointment;
 use Modules\UI\Filament\Tables\Columns\IconStateSplitColumn;
 use Modules\<nome modulo>\States\Appointment\AppointmentState;
 use Modules\<nome modulo>\Models\Appointment;
+<<<<<<< HEAD
 use Modules\<nome progetto>\States\Appointment\AppointmentState;
 use Modules\<nome progetto>\Models\Appointment;
+=======
+use Modules\SaluteOra\States\Appointment\AppointmentState;
+use Modules\SaluteOra\Models\Appointment;
+>>>>>>> 6ed19256f (.)
 
 use Modules\<nome modulo>\States\Appointment\AppointmentState;
 use Modules\<nome modulo>\Models\Appointment;
@@ -488,7 +498,10 @@ document.addEventListener('state-transition', function(event) {
 ---
 **Last Updated**: June 2025
 **Version**: 2.1
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 **Compatibility**: Filament 3.x, Laravel 10.x
 **Compatibility**: Filament 3.x, Laravel 10.x
 **Compatibility**: Filament 3.x, Laravel 10.x
@@ -499,7 +512,10 @@ document.addEventListener('state-transition', function(event) {
 ---
 **Last Updated**: June 2025
 **Version**: 2.1
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 **Compatibility**: Filament 3.x, Laravel 10.x
 **Compatibility**: Filament 3.x, Laravel 10.x
 **Compatibility**: Filament 3.x, Laravel 10.x
@@ -507,7 +523,10 @@ document.addEventListener('state-transition', function(event) {
 ---
 **Last Updated**: June 2025
 **Version**: 2.1
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 **Compatibility**: Filament 3.x, Laravel 10.x
 # IconStateSplitColumn Implementation
 
@@ -840,7 +859,13 @@ document.addEventListener('state-transition', function(event) {
 
 **Last Updated**: June 2025
 **Version**: 2.1
+<<<<<<< HEAD
 
 **Compatibility**: Filament 3.x, Laravel 10.x
 **Compatibility**: Filament 3.x, Laravel 10.x
 **Compatibility**: Filament 3.x, Laravel 10.x
+=======
+**Compatibility**: Filament 3.x, Laravel 10.x
+**Compatibility**: Filament 3.x, Laravel 10.x
+**Compatibility**: Filament 3.x, Laravel 10.x
+>>>>>>> 6ed19256f (.)

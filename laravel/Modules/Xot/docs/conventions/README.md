@@ -12,6 +12,7 @@ Questa cartella contiene le convenzioni di nomenclatura e le regole di stile uti
 
 Queste convenzioni devono essere seguite per mantenere la coerenza del codice in tutto il progetto.
 ## Collegamenti tra versioni di README.md
+<<<<<<< HEAD
 * [README.md](bashscripts/docs/readme.md)
 * [README.md](bashscripts/docs/it/readme.md)
 * [README.md](docs/laravel-app/phpstan/readme.md)
@@ -88,6 +89,8 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 * [README.md](../../../cms/docs/components/readme.md)
 * [README.md](../../../../themes/two/docs/readme.md)
 * [README.md](../../../../themes/one/docs/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
 * [README.md](docs/laravel-app/phpstan/README.md)
@@ -163,4 +166,8 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 * [README.md](../../../Cms/docs/frontoffice/README.md)
 * [README.md](../../../Cms/docs/components/README.md)
 * [README.md](../../../../Themes/Two/docs/README.md)
+<<<<<<< HEAD
 * [README.md](../../../../Themes/One/docs/README.md)
+=======
+* [README.md](../../../../Themes/One/docs/README.md)
+>>>>>>> 6ed19256f (.)

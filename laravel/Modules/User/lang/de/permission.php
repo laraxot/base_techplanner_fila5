@@ -17,50 +17,72 @@ return [
     'fields' => [
         'name' => [
             'label' => 'Nome Permesso',
+<<<<<<< HEAD
             'tooltip' => 'Inserisci il nome del permesso, ad esempio \\"Accesso Admin\\".',
             'placeholder' => 'Nome del permesso',
             'helper_text' => '',
             'description' => '',
+=======
+            'tooltip' => 'Inserisci il nome del permesso, ad esempio \"Accesso Admin\".',
+            'placeholder' => 'Nome del permesso',
+>>>>>>> 6ed19256f (.)
         ],
         'guard_name' => [
             'label' => 'Guard',
             'tooltip' => 'Specifica la guardia associata al permesso.',
+<<<<<<< HEAD
             'placeholder' => 'Nome della guardia, es. \\"web\\"',
             'helper_text' => '',
             'description' => '',
+=======
+            'placeholder' => 'Nome della guardia, es. \"web\"',
+>>>>>>> 6ed19256f (.)
         ],
         'roles' => [
             'label' => 'Ruoli',
             'tooltip' => 'Seleziona i ruoli a cui assegnare il permesso.',
             'placeholder' => 'Seleziona uno o più ruoli',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'users' => [
             'label' => 'Utenti',
             'tooltip' => 'Seleziona gli utenti a cui assegnare il permesso.',
             'placeholder' => 'Seleziona uno o più utenti',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'created_at' => [
             'label' => 'Data Creazione',
             'tooltip' => 'La data in cui il permesso è stato creato.',
             'placeholder' => 'Data di creazione',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'updated_at' => [
             'label' => 'Ultima Modifica',
             'tooltip' => 'La data dell\'ultima modifica al permesso.',
             'placeholder' => 'Ultima modifica',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'description' => [
             'label' => 'Descrizione',
             'tooltip' => 'Fornisci una breve descrizione del permesso.',
             'placeholder' => 'Descrizione del permesso',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
         ],
@@ -69,6 +91,11 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -151,6 +178,9 @@ return [
         'manage' => 'Gestisci',
         'full' => 'Accesso Completo',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

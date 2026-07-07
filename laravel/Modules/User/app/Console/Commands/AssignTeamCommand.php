@@ -12,17 +12,31 @@ use function Laravel\Prompts\text;
 
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
+<<<<<<< HEAD
+=======
+use Symfony\Component\Console\Input\InputOption;
+>>>>>>> 6ed19256f (.)
 use Webmozart\Assert\Assert;
 
 class AssignTeamCommand extends Command
 {
     /**
      * The name and signature of the console command.
+<<<<<<< HEAD
+=======
+     *
+     * @var string
+>>>>>>> 6ed19256f (.)
      */
     protected $name = 'user:assign-team';
 
     /**
      * The console command description.
+<<<<<<< HEAD
+=======
+     *
+     * @var string
+>>>>>>> 6ed19256f (.)
      */
     protected $description = 'Assign a team to user';
 
@@ -83,6 +97,7 @@ class AssignTeamCommand extends Command
         }
     }
 
+<<<<<<< HEAD
     /*
      * Get the console command options.
      */
@@ -92,4 +107,15 @@ class AssignTeamCommand extends Command
     //        ['example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null],
     //    ];
     // }
+=======
+    /**
+     * Get the console command options.
+     */
+    protected function getOptions(): array
+    {
+        return [
+            ['example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null],
+        ];
+    }
+>>>>>>> 6ed19256f (.)
 }

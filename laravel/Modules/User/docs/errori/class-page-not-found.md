@@ -181,7 +181,11 @@ class Colors extends XotBasePage
 ### Step 1: Identificare Files Violazione
 
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/html/ptvx/laravel
+>>>>>>> 6ed19256f (.)
 
 # Trova tutti i file che importano Page direttamente
 grep -r "use Filament\\\\Pages\\\\Page" Modules/User/app/Filament/Clusters/ --include="*.php"
@@ -302,7 +306,11 @@ use Modules\Xot\Filament\Clusters\XotBaseCluster;
 class MyCluster extends XotBaseCluster
 {
     protected static ?string $navigationIcon = 'heroicon-o-folder';
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // NO navigationLabel hardcoded!
     // Gestito automaticamente da NavigationLabelTrait
 }
@@ -322,7 +330,11 @@ use Modules\[Module]\Filament\Clusters\MyCluster;
 
 /**
  * ⚠️ IMPORTANTE: Estende XotBasePage (Standalone), MAI Filament\Pages\Page!
+<<<<<<< HEAD
  * 
+=======
+ *
+>>>>>>> 6ed19256f (.)
  * Cluster Pages sono SEMPRE Standalone Pages con property $cluster.
  */
 class MyPage extends XotBasePage
@@ -335,6 +347,7 @@ class MyPage extends XotBasePage
 ## Collegamenti
 
 ### Documentazione Correlata
+<<<<<<< HEAD
 - [XotBase Architecture](../../xot/docs/xotbase-architecture-complete.md)
 - [Mai Estendere Filament Direttamente](../../xot/docs/errori-critici/mai-estendere-filament-direttamente.md)
 - [Standalone vs Resource Pages](../../xot/docs/filament/standalone-vs-resource-pages.md)
@@ -342,6 +355,8 @@ class MyPage extends XotBasePage
 ### Clusters in Xot
 - [XotBaseCluster](../../Xot/app/Filament/Clusters/XotBaseCluster.php)
 - [Cluster Best Practices](../../xot/docs/filament/clusters.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [XotBase Architecture](../../Xot/docs/xotbase-architecture-complete.md)
 - [Mai Estendere Filament Direttamente](../../Xot/docs/errori-critici/mai-estendere-filament-direttamente.md)
 - [Standalone vs Resource Pages](../../Xot/docs/filament/standalone-vs-resource-pages.md)
@@ -352,7 +367,14 @@ class MyPage extends XotBasePage
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: 27 Ottobre 2025  
 **Severità**: Alta  
 **Tipo Errore**: Import classe inesistente + Violazione regola XotBase  
 **Files Affetti**: 3 Pages + 1 Cluster
+=======
+**Ultimo aggiornamento**: 27 Ottobre 2025
+**Severità**: Alta
+**Tipo Errore**: Import classe inesistente + Violazione regola XotBase
+**Files Affetti**: 3 Pages + 1 Cluster
+>>>>>>> 6ed19256f (.)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Regola del Buon Boy Scout - Progetto <nome progetto>
 
 ## Principio Fondamentale
@@ -100,6 +101,8 @@ Questa regola è **SACRA** e **IMMUTABILE** nel progetto <nome progetto>. Ogni m
 ---
 
 **⚠️ RICORDA SEMPRE: Questa regola è SACRA e non può essere violata. Ogni modifica deve migliorare la codebase.**
+=======
+>>>>>>> 6ed19256f (.)
 # Regola del Boy Scout nel Progetto <nome progetto>
 
 ## Introduzione
@@ -201,4 +204,8 @@ Ogni intervento deve seguire questa checklist:
 ---
 *Ultimo aggiornamento: 2025-01-07*
 *Versione: 1.0*
+<<<<<<< HEAD
 *Status: Implementazione in corso*
+=======
+*Status: Implementazione in corso*
+>>>>>>> 6ed19256f (.)

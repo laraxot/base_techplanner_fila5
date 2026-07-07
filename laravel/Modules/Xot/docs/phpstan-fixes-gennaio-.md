@@ -169,4 +169,8 @@ public function getAllColors(): array
 - [Exception Handler Types](exceptions/exception-handler-types.md)
 - [PHPStan Level 10 Guide](phpstan_livello10_linee_guida.md)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: Gennaio 2025*
+=======
+*Ultimo aggiornamento: Gennaio 2025*
+>>>>>>> 6ed19256f (.)

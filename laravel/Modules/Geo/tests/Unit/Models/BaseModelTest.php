@@ -4,11 +4,16 @@ declare(strict_types=1);
 
 namespace Modules\Geo\Tests\Unit\Models;
 
+<<<<<<< HEAD
 uses(TestCase::class);
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\Geo\Models\BaseModel;
 use Modules\Geo\Tests\TestCase;
+=======
+use Illuminate\Database\Eloquent\Model;
+use Modules\Geo\Models\BaseModel;
+>>>>>>> 6ed19256f (.)
 
 beforeEach(function () {
     $this->baseModel = new class extends BaseModel {

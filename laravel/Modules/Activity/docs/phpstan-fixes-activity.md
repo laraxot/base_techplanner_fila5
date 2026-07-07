@@ -82,4 +82,8 @@ $activities = \Modules\Activity\Database\Factories\ActivityFactory::new()
 - **Translation files**: Chiavi duplicate rimosse
 - **PHPStan Level 9**: Compliance ripristinata
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: gennaio 2025*
+=======
+*Ultimo aggiornamento: gennaio 2025*
+>>>>>>> 6ed19256f (.)

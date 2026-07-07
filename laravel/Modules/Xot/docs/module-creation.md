@@ -188,6 +188,9 @@ NomeModulo/
 - [XotBaseServiceProvider.md](XotBaseServiceProvider.md)
 - [XotBaseRouteServiceProvider.md](XotBaseRouteServiceProvider.md)
 - [XotBaseEventServiceProvider.md](XotBaseEventServiceProvider.md)
+<<<<<<< HEAD
 - [XotBaseServiceProvider.md](xotbaseserviceprovider.md)
 - [XotBaseRouteServiceProvider.md](xotbaserouteserviceprovider.md)
 - [XotBaseEventServiceProvider.md](xotbaseeventserviceprovider.md)
+=======
+>>>>>>> 6ed19256f (.)

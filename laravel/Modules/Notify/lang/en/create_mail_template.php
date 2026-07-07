@@ -6,6 +6,7 @@ return [
     'fields' => [
         'mailable' => [
             'label' => 'mailable',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -27,6 +28,17 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'subject' => [
+            'label' => 'subject',
+        ],
+        'html_template' => [
+            'label' => 'html_template',
+        ],
+        'text_template' => [
+            'label' => 'text_template',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -40,6 +52,7 @@ return [
             'label' => 'cancel',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -49,4 +62,6 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

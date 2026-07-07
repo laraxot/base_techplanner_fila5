@@ -41,4 +41,8 @@ The module adheres to:
 - Strict type declarations
 - Comprehensive type hints
 - GDPR compliance best practices
+<<<<<<< HEAD
 - Modern PHP 8.2+ features
+=======
+- Modern PHP 8.2+ features
+>>>>>>> 6ed19256f (.)

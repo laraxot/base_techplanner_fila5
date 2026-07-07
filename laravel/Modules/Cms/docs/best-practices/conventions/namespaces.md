@@ -92,7 +92,10 @@ return [
 
 ## Collegamenti
 - [Documentazione Filament](../filament/README.md)
+<<<<<<< HEAD
 - [Documentazione Filament](../filament/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Struttura Moduli](../modules/structure.md)
 - [Convenzioni di Codice](../coding/conventions.md)
 - [Regole Traduzioni](../translations.md)
@@ -101,5 +104,8 @@ return [
 * [namespaces.md](docs/conventions/namespaces.md)
 * [namespaces.md](laravel/Modules/Xot/docs/conventions/namespaces.md)
 * [namespaces.md](laravel/Modules/Cms/docs/conventions/namespaces.md)
+<<<<<<< HEAD
 * [namespaces.md](laravel/modules/xot/docs/conventions/namespaces.md)
 * [namespaces.md](laravel/modules/cms/docs/conventions/namespaces.md)
+=======
+>>>>>>> 6ed19256f (.)

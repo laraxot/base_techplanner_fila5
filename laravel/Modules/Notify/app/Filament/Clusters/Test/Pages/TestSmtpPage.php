@@ -9,6 +9,11 @@ use Filament\Actions\Action;
 use Filament\Facades\Filament;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\TextInput;
+<<<<<<< HEAD
+=======
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Forms\Contracts\HasForms;
+>>>>>>> 6ed19256f (.)
 use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
@@ -24,15 +29,28 @@ use Override;
 use Webmozart\Assert\Assert;
 
 /**
+<<<<<<< HEAD
  * @property Schema $emailForm
  */
 class TestSmtpPage extends XotBasePage
 {
+=======
+ * @property \Filament\Schemas\Schema $emailForm
+ */
+class TestSmtpPage extends XotBasePage implements HasForms
+{
+    use InteractsWithForms;
+
+>>>>>>> 6ed19256f (.)
     public ?array $emailData = [];
 
     public ?string $error_message = null;
 
+<<<<<<< HEAD
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-paper-airplane';
+=======
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-paper-airplane';
+>>>>>>> 6ed19256f (.)
 
     protected string $view = 'notify::filament.pages.send-email';
 

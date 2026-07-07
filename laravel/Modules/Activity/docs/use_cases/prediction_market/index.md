@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 # <nome progetto>ion Market Use Case
 
 ## Introduzione
 
 Un **<nome progetto>ion Market** è un mercato in cui i partecipanti possono scommettere sul risultato di eventi futuri, come elezioni, risultati sportivi o trend di mercato. Questo use case descrive come il modulo `Activity` può essere utilizzato per implementare un sistema di <nome progetto>ion market utilizzando l'approccio di Event Sourcing in Laravel.
+=======
+# Prediction Market Use Case
+
+## Introduzione
+
+Un **Prediction Market** è un mercato in cui i partecipanti possono scommettere sul risultato di eventi futuri, come elezioni, risultati sportivi o trend di mercato. Questo use case descrive come il modulo `Activity` può essere utilizzato per implementare un sistema di prediction market utilizzando l'approccio di Event Sourcing in Laravel.
+>>>>>>> 6ed19256f (.)
 
 ## Meccanismo di Pricing: Logarithmic Market Scoring Rule (LMSR)
 
@@ -86,14 +94,22 @@ class LMSRMarketMaker
 
 ## Radice Aggregate
 
+<<<<<<< HEAD
 **<nome progetto>ionMarketAggregateRoot**: Gestisce la logica di business per un mercato di previsione.
+=======
+**PredictionMarketAggregateRoot**: Gestisce la logica di business per un mercato di previsione.
+>>>>>>> 6ed19256f (.)
 
 ```php
 namespace Modules\Activity\Aggregates;
 
 use Modules\Activity\Services\LMSRMarketMaker;
 
+<<<<<<< HEAD
 class <nome progetto>ionMarketAggregateRoot
+=======
+class PredictionMarketAggregateRoot
+>>>>>>> 6ed19256f (.)
 {
     private $uuid;
     private $bets = [];
@@ -245,4 +261,8 @@ class MarketSummaryProjector
 
 ## Conclusione
 
+<<<<<<< HEAD
 Implementare un <nome progetto>ion market nel modulo `Activity` utilizzando l'Event Sourcing permette di gestire in modo efficace la complessità di mercati e scommesse, garantendo tracciabilità e flessibilità per future espansioni. Seguendo i pattern descritti, è possibile creare un sistema robusto e scalabile per mercati di previsione.
+=======
+Implementare un prediction market nel modulo `Activity` utilizzando l'Event Sourcing permette di gestire in modo efficace la complessità di mercati e scommesse, garantendo tracciabilità e flessibilità per future espansioni. Seguendo i pattern descritti, è possibile creare un sistema robusto e scalabile per mercati di previsione.
+>>>>>>> 6ed19256f (.)

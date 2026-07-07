@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 Adding Multiple Instances of Google Places on Same Page
 https://lindarawson.com/adding-multiple-instances-of-google-places-on-same-page/
 
@@ -21,6 +24,7 @@ app('geocoder')->geocode('8.8.8.8')->get();
 app('geocoder')->reverse(43.882587,-103.454067)->get();
 
 --------------------------------------------------------
+<<<<<<< HEAD
 ---
 module: theme
 topic: link3
@@ -28,3 +32,5 @@ canonical: ../../../Themes/docs/shared-components/link3.txt
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/link3.txt
+=======
+>>>>>>> 6ed19256f (.)

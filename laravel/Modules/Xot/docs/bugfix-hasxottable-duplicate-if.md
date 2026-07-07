@@ -2,7 +2,10 @@
 
 > **Versione**: 1.0
 > **Ultima modifica**: Vedi [CHANGELOG.md](./CHANGELOG.md)
+<<<<<<< HEAD
 > **Ultima modifica**: Vedi [CHANGELOG.md](./changelog.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 **File**: `Modules/Xot/app/Filament/Traits/HasXotTable.php`
 **Linee**: 226-228, 242-243
@@ -165,4 +168,7 @@ done
 **Autore Fix**: AI Assistant
 **Review**: Pending
 **Data**: Vedi [CHANGELOG.md](./CHANGELOG.md)
+<<<<<<< HEAD
 **Data**: Vedi [CHANGELOG.md](./changelog.md)
+=======
+>>>>>>> 6ed19256f (.)

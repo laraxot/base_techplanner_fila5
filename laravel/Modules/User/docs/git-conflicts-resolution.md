@@ -7,6 +7,7 @@
 Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i file modificati e le decisioni prese per migliorare la stabilità del sistema.
 
 ## Collegamenti correlati
+<<<<<<< HEAD
 - [Indice documentazione User](/laravel/modules/user/project_docs/index.md)
 - [README User](/laravel/modules/user/project_docs/readme.md)
 - [Auth Components Best Practices](/laravel/modules/user/project_docs/auth_components_best_practices.md)
@@ -326,6 +327,8 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth_components_best_practices.md)
 - [Filament Widgets Structure](/laravel/modules/user/docs/widgets_structure.md)
 - [BaseUser Documentation](/laravel/modules/user/docs/baseuser.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Indice documentazione User](/laravel/Modules/User/project_docs/index.md)
 - [README User](/laravel/Modules/User/project_docs/README.md)
 - [Auth Components Best Practices](/laravel/Modules/User/project_docs/auth_components_best_practices.md)
@@ -594,7 +597,11 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 2. Verificare funzionalità critiche
 3. Aggiornare documentazione correlata
 4. Monitorare performance in produzione
+<<<<<<< HEAD
 5. Implementare test automatizzati 
+=======
+5. Implementare test automatizzati
+>>>>>>> 6ed19256f (.)
 5. Implementare test automatizzati
 
 ## 🔥 **NUOVI CONFLITTI IDENTIFICATI - 2025-01-27 15:30**
@@ -602,7 +609,11 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 ### **File con Conflitti Attivi:**
 1. `resources/views/pages/profile/edit.blade.php` - View profilo utente
 2. `resources/views/pages/genesis/power-ups.blade.php` - View gamification
+<<<<<<< HEAD
 3. `app/Filament/Widgets/Auth/ResetPasswordWidget.php` - Widget reset password  
+=======
+3. `app/Filament/Widgets/Auth/ResetPasswordWidget.php` - Widget reset password
+>>>>>>> 6ed19256f (.)
 4. `app/Filament/Widgets/Auth/RegisterWidget.php` - Widget registrazione
 5. `app/Filament/Widgets/LogoutWidget.php` - Widget logout
 
@@ -621,9 +632,17 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel
+<<<<<<< HEAD
 - [ ] Testare widget con direttiva @livewire nelle view Blade  
+=======
+- [ ] Testare widget con direttiva @livewire nelle view Blade
+>>>>>>> 6ed19256f (.)
 - [ ] Validare traduzioni per tutti i widget
 - [ ] Aggiornare esempi in documentazione
 - [ ] Creare test di regressione per prevenire conflitti futuri
 
+<<<<<<< HEAD
 --- 
+=======
+---
+>>>>>>> 6ed19256f (.)

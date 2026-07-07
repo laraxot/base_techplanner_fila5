@@ -9,6 +9,10 @@ use Carbon\Carbon;
 use Exception;
 use Illuminate\Contracts\Mail\Mailable;
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< HEAD
+=======
+use Illuminate\Database\Eloquent\Collection;
+>>>>>>> 6ed19256f (.)
 use Spatie\MailTemplates\Interfaces\MailTemplateInterface;
 use Spatie\MailTemplates\Models\MailTemplate as SpatieMailTemplate;
 use Spatie\Sluggable\HasSlug;
@@ -26,6 +30,11 @@ use Spatie\Translatable\HasTranslations;
  * @property Carbon $created_at
  * @property Carbon $updated_at
  * @property Carbon|null $deleted_at
+<<<<<<< HEAD
+=======
+ * @property Collection<int, MailTemplateVersion> $versions
+ * @property Collection<int, MailTemplateLog> $logs
+>>>>>>> 6ed19256f (.)
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_by
@@ -69,10 +78,13 @@ use Spatie\Translatable\HasTranslations;
  * @method static Builder<static>|MailTemplate whereWhatsappTemplate($value)
  *
  * @mixin IdeHelperMailTemplate
+<<<<<<< HEAD
  *
  * @method static Builder<static>|MailTemplate whereHtmlLayoutPath($value)
  * @method static Builder<static>|MailTemplate whereVersion($value)
  *
+=======
+>>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class MailTemplate extends SpatieMailTemplate implements MailTemplateInterface
@@ -85,6 +97,10 @@ class MailTemplate extends SpatieMailTemplate implements MailTemplateInterface
     /** @var list<string> */
     public array $translatable = ['subject', 'html_template', 'text_template', 'sms_template'];
 
+<<<<<<< HEAD
+=======
+    /** @var string */
+>>>>>>> 6ed19256f (.)
     protected $connection = 'notify';
 
     /** @var list<string> */
@@ -136,4 +152,45 @@ class MailTemplate extends SpatieMailTemplate implements MailTemplateInterface
             'deleted_at' => 'datetime',
         ];
     }
+<<<<<<< HEAD
+=======
+
+    /*
+     * Versioni del template email.
+     *
+     * @return HasMany<MailTemplateVersion>
+     *
+     * public function versions(): HasMany
+     * {
+     * return $this->hasMany(MailTemplateVersion::class, 'template_id')
+     * ->orderByDesc('version');
+     * }
+     *
+     * public function logs(): HasMany
+     * {
+     * return $this->hasMany(MailTemplateLog::class, 'template_id');
+     * }
+     *
+     * Create a new version of the template.
+     *
+     * @param string $createdBy The user who created the version
+     * @param string|null $notes Optional notes about the changes
+     * @return self
+     * public function createNewVersion(string $createdBy, ?string $notes = null): self
+     * {
+     * $this->versions()->create([
+     * 'mailable' => $this->mailable,
+     * 'subject' => $this->subject,
+     * 'html_template' => $this->html_template,
+     * 'text_template' => $this->text_template,
+     * 'version' => $this->version,
+     * 'created_by' => $createdBy,
+     * 'change_notes' => $notes,
+     * ]);
+     *
+     * $this->increment('version');
+     * return $this;
+     * }
+     */
+>>>>>>> 6ed19256f (.)
 }

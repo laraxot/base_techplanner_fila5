@@ -27,6 +27,7 @@ return [
         'marker_removed' => 'Marker rimosso con successo',
         'marker_updated' => 'Marker aggiornato con successo',
     ],
+<<<<<<< HEAD
     'label' => 'Webbingbrasil Map',
     'plural_label' => 'Webbingbrasil Map (Plurale)',
     'fields' => [
@@ -60,4 +61,6 @@ return [
             'label' => 'Elimina Webbingbrasil Map',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

@@ -84,7 +84,11 @@
    // ERRATO
    app/Data/NetfunSmsRequestData.php
    app/DTOs/NetfunSmsRequestData.php
+<<<<<<< HEAD
    
+=======
+
+>>>>>>> 6ed19256f (.)
    // CORRETTO
    app/Datas/NetfunSmsRequestData.php
    ```
@@ -94,7 +98,11 @@
    // ERRATO
    namespace App\Datas;
    namespace Modules\Notify\App\Datas;
+<<<<<<< HEAD
    
+=======
+
+>>>>>>> 6ed19256f (.)
    // CORRETTO
    namespace Modules\Notify\Datas;
    ```
@@ -104,7 +112,11 @@
    // ERRATO
    class NetfunSmsRequestDTO
    class NetfunSmsRequest
+<<<<<<< HEAD
    
+=======
+
+>>>>>>> 6ed19256f (.)
    // CORRETTO
    class NetfunSmsRequestData
    ```
@@ -113,4 +125,8 @@
 
 - [PSR-4 Autoloading](https://www.php-fig.org/psr/psr-4/)
 - [spatie/laravel-data](https://github.com/spatie/laravel-data)
+<<<<<<< HEAD
 - [Laravel Best Practices](https://laravel.com/docs/best-practices) 
+=======
+- [Laravel Best Practices](https://laravel.com/docs/best-practices)
+>>>>>>> 6ed19256f (.)

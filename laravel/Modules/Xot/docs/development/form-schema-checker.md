@@ -38,6 +38,11 @@ Lo script produce:
 
 ## Collegamenti Correlati
 - [Filament Best Practices](../FILAMENT_BEST_PRACTICES.md)
+<<<<<<< HEAD
 - [Filament Best Practices](../filament_best_practices.md)
 - [XotBaseResource Documentation](../architecture/xot_base_resource.md)
 - [PHPStan Configuration](../phpstan-usage.md)
+=======
+- [XotBaseResource Documentation](../architecture/xot_base_resource.md)
+- [PHPStan Configuration](../phpstan-usage.md)
+>>>>>>> 6ed19256f (.)

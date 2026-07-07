@@ -10,6 +10,7 @@ class ExecuteTaskAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
     public function execute(string $taskId): string
     {
         // TODO: Implement task execution
@@ -17,5 +18,25 @@ class ExecuteTaskAction
         throw new \BadMethodCallException(
             'Method ExecuteTaskAction::execute() not implemented yet. See ROADMAP-2026.md'
         );
+=======
+    public function execute(string $_task_id): string
+    {
+        /*
+         * $task = Task::findOrFail($task_id);
+         * $start = microtime(true);
+         * try {
+         * Artisan::call($task->command, $task->compileParameters());
+         * $output = Artisan::output();
+         * } catch (\Exception $e) {
+         * $output = $e->getMessage();
+         * }
+         * Executed::dispatch($task, $start, $output);
+         *
+         * return $output;
+         */
+        dddx('wip');
+
+        return 'WIP';
+>>>>>>> 6ed19256f (.)
     }
 }

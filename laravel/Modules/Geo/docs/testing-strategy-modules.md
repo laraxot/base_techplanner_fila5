@@ -364,12 +364,19 @@ class DatabaseHelper
 - [Test Autenticazione Esistenti](../tests/Feature/Auth/) - Pattern di riferimento
 - [Documentazione Modulo <nome progetto>](../Modules/<nome progetto>/docs/README.md)
 - [Documentazione Modulo User](../Modules/User/docs/README.md)
+<<<<<<< HEAD
 - [Documentazione Modulo <nome progetto>](../modules/<nome progetto>/docs/readme.md)
 - [Documentazione Modulo User](../modules/user/docs/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Configurazione Pest](../tests/Pest.php)
 
 ---
 
 **Ultimo aggiornamento**: 28 Gennaio 2025
 **Stato**: 🚧 In implementazione
+<<<<<<< HEAD
 **Responsabile**: Team Development
+=======
+**Responsabile**: Team Development
+>>>>>>> 6ed19256f (.)

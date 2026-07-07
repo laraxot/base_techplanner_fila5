@@ -291,14 +291,25 @@ class ExampleComponent extends Component
 
 ## 🔗 Collegamenti
 
+<<<<<<< HEAD
 - [Documentazione Core](../../../../docs/core/)
 - [Best Practices Filament](../../../../docs/core/filament-best-practices.md)
 - [Convenzioni Sistema](../../../../docs/core/conventions.md)
 - [Template Modulo](../../../../docs/templates/module-template.md)
+=======
+- [Documentazione Core](../../../docs/core/)
+- [Best Practices Filament](../../../docs/core/filament-best-practices.md)
+- [Convenzioni Sistema](../../../docs/core/conventions.md)
+- [Template Modulo](../../../docs/templates/module-template.md)
+>>>>>>> 6ed19256f (.)
 
 ---
 
 **Responsabile:** Team UI
 **Data:** 2025-01-XX
 **Stato:** In Analisi
+<<<<<<< HEAD
 **Priorità:** ALTA
+=======
+**Priorità:** ALTA
+>>>>>>> 6ed19256f (.)

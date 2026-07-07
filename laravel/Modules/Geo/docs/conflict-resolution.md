@@ -1,7 +1,10 @@
 # Risoluzione Conflitti Git - Modulo Geo
 
 ## Data: 2025-01-06
+<<<<<<< HEAD
 ## Data: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 
 ## File Corretti
 
@@ -95,6 +98,7 @@ use function Safe\json_decode;
 
 ## Verifiche Post-Correzione
 
+<<<<<<< HEAD
 
 ### 2. Validazione PHPStan
 ```bash
@@ -158,3 +162,7 @@ php artisan lang:check
 ### 1. Controllo Conflitti
 ```bash
 **Stato**: ✅ Completato
+=======
+### 1. Controllo Conflitti
+```bash
+>>>>>>> 6ed19256f (.)

@@ -31,6 +31,10 @@ use Override;
  * @property string|null $created_by
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> 6ed19256f (.)
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $updater
  *

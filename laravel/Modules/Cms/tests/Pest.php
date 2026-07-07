@@ -27,6 +27,12 @@ uses(Modules\Cms\Tests\TestCase::class)->in('Feature', 'Unit');
  * |
  */
 
+<<<<<<< HEAD
+=======
+// expect()->extend('toBeValidHtml', function () {
+//     return $this->toContain('<html');
+// });
+>>>>>>> 6ed19256f (.)
 
 /*
  * |--------------------------------------------------------------------------

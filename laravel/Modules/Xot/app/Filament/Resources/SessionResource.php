@@ -8,6 +8,10 @@ use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\TextInput;
 use Filament\Support\Components\Component;
 use Modules\Xot\Models\Session;
+<<<<<<< HEAD
+=======
+use Override;
+>>>>>>> 6ed19256f (.)
 
 class SessionResource extends XotBaseResource
 {
@@ -16,7 +20,11 @@ class SessionResource extends XotBaseResource
     /**
      * @return array<int, Component>
      */
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> 6ed19256f (.)
     public static function getFormSchema(): array
     {
         return [

@@ -57,7 +57,11 @@ class SendSMSPage extends XotBasePage
 Per verificare che tutte le classi seguano questa regola:
 
 ```bash
+<<<<<<< HEAD
 find Modules -path "*/Filament/*/*.php" -type f -exec grep -l "extends.*Filament" {} \;
+=======
+find /var/www/html/saluteora/laravel/Modules -path "*/Filament/*/*.php" -type f -exec grep -l "extends.*Filament" {} \;
+>>>>>>> 6ed19256f (.)
 ```
 
 Le pagine che violano questa regola devono essere immediatamente corrette per mantenere l'integrità dell'architettura.

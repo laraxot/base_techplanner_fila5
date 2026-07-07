@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -83,12 +84,50 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'name' => [
+            'label' => 'Nombre',
+        ],
+        'host' => [
+            'label' => 'Host',
+        ],
+        'port' => [
+            'label' => 'Puerto',
+        ],
+        'username' => [
+            'label' => 'Nombre de Usuario',
+        ],
+        'password' => [
+            'label' => 'Contraseña',
+        ],
+        'encryption' => [
+            'label' => 'Cifrado',
+        ],
+        'from_address' => [
+            'label' => 'Dirección Remitente',
+        ],
+        'from_name' => [
+            'label' => 'Nombre Remitente',
+        ],
+        'status' => [
+            'label' => 'Estado',
+        ],
+        'last_tested_at' => [
+            'label' => 'Última Prueba En',
+        ],
+        'created_at' => [
+            'label' => 'Creado En',
+>>>>>>> 6ed19256f (.)
         ],
         'body_html' => [
             'description' => 'Cuerpo HTML',
             'helper_text' => 'Contenido HTML del correo',
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [

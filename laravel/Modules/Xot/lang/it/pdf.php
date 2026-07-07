@@ -6,6 +6,7 @@ return [
     'fields' => [
         'pdf' => [
             'label' => 'pdf',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -33,6 +34,8 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Pdf',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
 ];

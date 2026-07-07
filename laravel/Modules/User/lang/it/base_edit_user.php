@@ -8,6 +8,7 @@ return [
             'label' => 'delete',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'name' => 'Base Edit User',
         'plural' => 'Base Edit User',
@@ -41,4 +42,10 @@ return [
             'description' => '',
         ],
     ],
+=======
+    'navigation' => [],
+    'label' => '',
+    'plural_label' => '',
+    'fields' => [],
+>>>>>>> 6ed19256f (.)
 ];

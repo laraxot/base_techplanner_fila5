@@ -2,15 +2,21 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Geo\Tests\Unit;
 
 uses(TestCase::class);
 
+=======
+>>>>>>> 6ed19256f (.)
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Modules\Geo\Contracts\HasGeolocation;
 use Modules\Geo\Enums\AddressTypeEnum;
 use Modules\Geo\Models\Address;
+<<<<<<< HEAD
 use Modules\Geo\Tests\TestCase;
+=======
+>>>>>>> 6ed19256f (.)
 
 describe('Address Model', function () {
     it('can be created with factory', function () {

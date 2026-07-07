@@ -9,33 +9,46 @@ return [
             'description' => 'caption',
             'helper_text' => 'caption',
             'placeholder' => 'caption',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'alt' => [
             'label' => 'alt',
             'description' => 'alt',
             'helper_text' => 'alt',
             'placeholder' => 'alt',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'ratio' => [
             'label' => 'ratio',
             'description' => 'ratio',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'url' => [
             'label' => 'url',
             'description' => 'url',
             'helper_text' => 'url',
             'placeholder' => 'url',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'image' => [
             'label' => 'image',
             'description' => 'image',
             'helper_text' => 'image',
             'placeholder' => 'image',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -50,4 +63,8 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        ],
+    ],
+>>>>>>> 6ed19256f (.)
 ];

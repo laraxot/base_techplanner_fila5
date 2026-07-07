@@ -123,5 +123,10 @@ $returnType = $parentMethod->getReturnType();
 
 ## collegamento ad altre risorse
 
+<<<<<<< HEAD
 - [regole di ereditarietà in php](docs/standards/php-inheritance-rules.md)
 - [estensione pattern filament](../xot/docs/filament_extension_pattern.md)
+=======
+- [regole di ereditarietà in php](/var/www/html/base_<nome progetto>/laravel/docs/standards/php-inheritance-rules.md)
+- [estensione pattern filament](/var/www/html/base_<nome progetto>/laravel/Modules/Xot/docs/filament_extension_pattern.md)
+>>>>>>> 6ed19256f (.)

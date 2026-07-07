@@ -15,20 +15,27 @@ return [
             'placeholder' => 'Seleziona un file',
             'helper_text' => 'Carica un nuovo file o selezionalo dalla libreria',
             'description' => 'I file supportati sono: PDF, documenti Word, Excel, immagini e archivi ZIP',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'title' => [
             'label' => 'Titolo',
             'placeholder' => 'Inserisci il titolo',
             'helper_text' => 'Inserisci un titolo descrittivo per questo allegato',
             'description' => 'Il titolo verrà mostrato nell\'elenco degli allegati',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'slug' => [
             'label' => 'Slug',
             'placeholder' => 'slug-del-file',
             'helper_text' => 'Identificativo univoco per il file',
             'description' => 'Lo slug verrà generato automaticamente dal titolo',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
         'created_at' => [
@@ -102,20 +109,64 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'created_at' => [
+            'label' => 'Data di creazione',
+        ],
+        'updated_at' => [
+            'label' => 'Ultima modifica',
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+        ],
+        'delete' => [
+            'label' => 'delete',
+        ],
+        'edit' => [
+            'label' => 'edit',
+        ],
+        'view' => [
+            'label' => 'view',
+        ],
+        'layout' => [
+            'label' => 'layout',
+        ],
+        'create' => [
+            'label' => 'create',
+>>>>>>> 6ed19256f (.)
         ],
         'description' => [
             'description' => 'description',
             'label' => 'description',
             'placeholder' => 'description',
             'helper_text' => 'description',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'disk' => [
             'description' => 'disk',
             'label' => 'disk',
             'placeholder' => 'disk',
             'helper_text' => 'disk',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -188,8 +239,13 @@ return [
             'description' => 'Carica o seleziona un file',
         ],
         'empty' => [
+<<<<<<< HEAD
             'heading' => 'empty3',
             'label' => 'empty4',
+=======
+            'heading' => 'empty',
+            'label' => 'empty',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'empty' => [
@@ -199,6 +255,9 @@ return [
     'model' => [
         'label' => 'attachment.model',
     ],
+<<<<<<< HEAD
     'label' => 'Attachment',
     'plural_label' => 'Attachment (Plurale)',
+=======
+>>>>>>> 6ed19256f (.)
 ];

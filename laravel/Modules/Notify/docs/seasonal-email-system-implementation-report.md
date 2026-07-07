@@ -1,10 +1,17 @@
 # Report di Revisione Sistema Email Stagionali - Dicembre 2025
 
+<<<<<<< HEAD
 **Data**: 19 Dicembre 2025  
 **Data**: 19 Dicembre 2025  
 **Progetto**: TechPlanner Laravel Multi-Tenant Application  
 **Moduli Interessati**: Notify, Themes/Sixteen  
 **Stato**: ✅ Revisione Completata  
+=======
+**Data**: 19 Dicembre 2025
+**Progetto**: TechPlanner Laravel Multi-Tenant Application
+**Moduli Interessati**: Notify, Themes/Sixteen
+**Stato**: ✅ Revisione Completata
+>>>>>>> 6ed19256f (.)
 
 ## Panoramica
 
@@ -172,8 +179,16 @@ La revisione del sistema di email stagionali rappresenta un esempio eccellente d
 
 Il nuovo approccio diretto integra la logica nel metodo `getHtmlLayout()` mantenendo tutte le funzionalità richieste ma con molta meno complessità. L'integrazione con il sistema esistente è stata eseguita senza interruzioni e mantenendo la piena compatibilità con le funzionalità precedenti.
 
+<<<<<<< HEAD
 **Firma Digitale della Revisione**: 
 - Autore: iFlow CLI
 - Data: 19 Dicembre 2025
 - Versione: 1.1 (revisionata)
 - Stato: Approvato e Pronto per la Produzione
+=======
+**Firma Digitale della Revisione**:
+- Autore: iFlow CLI
+- Data: 19 Dicembre 2025
+- Versione: 1.1 (revisionata)
+- Stato: Approvato e Pronto per la Produzione
+>>>>>>> 6ed19256f (.)

@@ -1,7 +1,10 @@
 # Configuration System Architecture - Tenant Module
 
 ## Data: 2026-01-08
+<<<<<<< HEAD
 ## Data: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 ## Metodologia: Super Mucca - La Litigata Interna
 ## File: `Modules/Tenant/app/Services/TenantService.php` e `app/Actions/Config/GetTenantFilePathAction.php`
 
@@ -10,7 +13,11 @@
 ## 🧠 La Litigata Interna
 
 ### Contesto
+<<<<<<< HEAD
 Il sistema di configurazione multi-tenant utilizza percorsi specifici per ogni tenant. L'utente ha identificato che i file di configurazione non sono nella directory sbagliata (`config/<nome progetto>.local/`) ma nella directory corretta (`config/local/<nome progetto>/`).
+=======
+Il sistema di configurazione multi-tenant utilizza percorsi specifici per ogni tenant. L'utente ha identificato che i file di configurazione non sono nella directory sbagliata (`config/laravelpizza.local/`) ma nella directory corretta (`config/local/laravelpizza/`).
+>>>>>>> 6ed19256f (.)
 
 ### Le Voci in Dibattito
 
@@ -105,7 +112,11 @@ Il sistema di configurazione multi-tenant permette di avere configurazioni diver
 ```
 config/
 ├── local/                 # Tenant locale per sviluppo
+<<<<<<< HEAD
 │   └── <nome progetto>/      # Tenant specifico per <nome progetto>.com
+=======
+│   └── laravelpizza/      # Tenant specifico per laravelpizza.com
+>>>>>>> 6ed19256f (.)
 │       ├── app.php
 │       ├── database.php
 │       ├── middleware.php
@@ -118,7 +129,11 @@ config/
 │               └── sections/
 │                   ├── header.json
 │                   └── footer.json
+<<<<<<< HEAD
 └── <nome progetto>.local/    # Vecchia directory (probabilmente non usata)
+=======
+└── laravelpizza.local/    # Vecchia directory (probabilmente non usata)
+>>>>>>> 6ed19256f (.)
 ```
 
 ### Filosofia Architetturale (Laraxot)
@@ -159,15 +174,25 @@ config/
 TenantService::filePath('database/content/pages/home.json')
 
 // Il sistema fa:
+<<<<<<< HEAD
 // 1. GetTenantNameAction → ritorna 'local/<nome progetto>'
 // 2. Costruisce: base_path('config/local/<nome progetto>/database/content/pages/home.json')
 // 3. Risolve a: config/local/<nome progetto>/database/content/pages/home.json
+=======
+// 1. GetTenantNameAction → ritorna 'local/laravelpizza'
+// 2. Costruisce: base_path('config/local/laravelpizza/database/content/pages/home.json')
+// 3. Risolve a: /var/www/_bases/base_laravelpizza/laravel/config/local/laravelpizza/database/content/pages/home.json
+>>>>>>> 6ed19256f (.)
 ```
 
 ### Scenario 2: Configurazione Multi-Tenant
 
 Il sistema supporta diversi tenant:
+<<<<<<< HEAD
 - `config/local/<nome progetto>/` → Tenant per sviluppo
+=======
+- `config/local/laravelpizza/` → Tenant per sviluppo
+>>>>>>> 6ed19256f (.)
 - `config/production/` → Tenant per produzione
 - `config/cliente1/` → Tenant per cliente specifico
 - `config/localhost/` → Tenant per testing locale
@@ -205,7 +230,11 @@ I contenuti delle pagine sono memorizzati in JSON:
 
 **Motivazione**:
 1. **Sistema Funzionante**: Il sistema esiste e funziona correttamente
+<<<<<<< HEAD
 2. **Percorsi Corretti**: `config/local/<nome progetto>/` è il percorso corretto
+=======
+2. **Percorsi Corretti**: `config/local/laravelpizza/` è il percorso corretto
+>>>>>>> 6ed19256f (.)
 3. **Architettura Chiara**: Sistema multi-tenant ben progettato
 4. **KISS**: Soluzione semplice e chiara
 5. **DRY**: Nessuna duplicazione, uso della logica esistente
@@ -226,6 +255,11 @@ I contenuti delle pagine sono memorizzati in JSON:
 ---
 
 **Ultimo aggiornamento**: 2026-01-08
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
 **Versione**: 1.0.0
 **Status**: ✅ Completato
+=======
+**Versione**: 1.0.0
+**Status**: ✅ Completato
+>>>>>>> 6ed19256f (.)

@@ -94,10 +94,17 @@ Questa regola è **SACRA** e **IMMUTABILE** nel progetto <nome progetto>. Ogni m
 
 - [Regola Cursor](../../.cursor/rules/boy-scout-rule.mdc)
 - [Regola <nome progetto>](../laravel/Modules/<nome progetto>/docs/boy-scout-rule.md)
+<<<<<<< HEAD
 - [Regola <nome progetto>](../laravel/modules/<nome progetto>/docs/boy-scout-rule.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Convenzioni Laraxot](laraxot-conventions.md)
 - [Best Practices](best-practices.md)
 
 ---
 
+<<<<<<< HEAD
 **⚠️ RICORDA SEMPRE: Questa regola è SACRA e non può essere violata. Ogni modifica deve migliorare la codebase.**
+=======
+**⚠️ RICORDA SEMPRE: Questa regola è SACRA e non può essere violata. Ogni modifica deve migliorare la codebase.**
+>>>>>>> 6ed19256f (.)

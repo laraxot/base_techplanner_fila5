@@ -54,7 +54,11 @@ final class TemplateValidator
     public function validate(Template $template): ValidationResult
     {
         $errors = [];
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         // Verifica sintassi MJML
         if ($template->type === TemplateType::EMAIL) {
             $mjmlErrors = $this->validateMjml($template->content);
@@ -62,13 +66,21 @@ final class TemplateValidator
                 $errors['mjml'] = $mjmlErrors;
             }
         }
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         // Verifica variabili
         $variableErrors = $this->validateVariables($template->content);
         if (!empty($variableErrors)) {
             $errors['variables'] = $variableErrors;
         }
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         return new ValidationResult(
             isValid: empty($errors),
             errors: $errors
@@ -87,7 +99,11 @@ final class TemplateVersionManager
     {
         $latestVersion = $template->latestVersion();
         $newVersion = $latestVersion ? $latestVersion->version + 1 : 1;
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         return $template->versions()->create([
             'version' => $newVersion,
             'content' => $data['content'],
@@ -100,11 +116,19 @@ final class TemplateVersionManager
         $targetVersion = $template->versions()
             ->where('version', $version)
             ->first();
+<<<<<<< HEAD
             
         if (!$targetVersion) {
             return false;
         }
         
+=======
+
+        if (!$targetVersion) {
+            return false;
+        }
+
+>>>>>>> 6ed19256f (.)
         return $this->createNewVersion($template, [
             'content' => $targetVersion->content,
             'metadata' => $targetVersion->metadata,
@@ -125,18 +149,30 @@ final class NotificationBackup
     {
         $backupPath = storage_path('backups/notifications');
         $filename = 'notifications_' . now()->format('Y-m-d_His') . '.json';
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         $data = [
             'notifications' => NotificationLog::all()->toArray(),
             'templates' => Template::with('versions')->get()->toArray(),
             'analytics' => TemplateAnalytics::all()->toArray(),
         ];
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         File::put(
             $backupPath . '/' . $filename,
             json_encode($data, JSON_PRETTY_PRINT)
         );
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         return $filename;
     }
 }
@@ -153,11 +189,19 @@ final class DataCleanup
         // Notifiche vecchie
         NotificationLog::where('created_at', '<', now()->subDays(30))
             ->delete();
+<<<<<<< HEAD
             
         // Analytics vecchi
         TemplateAnalytics::where('created_at', '<', now()->subDays(90))
             ->delete();
             
+=======
+
+        // Analytics vecchi
+        TemplateAnalytics::where('created_at', '<', now()->subDays(90))
+            ->delete();
+
+>>>>>>> 6ed19256f (.)
         // Template non utilizzati
         Template::where('last_used_at', '<', now()->subMonths(6))
             ->update(['status' => TemplateStatus::ARCHIVED]);
@@ -181,7 +225,11 @@ final class DatabaseOptimizer
             $table->index('created_at');
             $table->index('status');
         });
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         Schema::table('template_analytics', function (Blueprint $table) {
             $table->index('notification_id');
             $table->index('event_type');
@@ -233,10 +281,17 @@ final class SystemHealthCheck
             'cache' => $this->checkCache(),
             'storage' => $this->checkStorage(),
         ];
+<<<<<<< HEAD
         
         $status = !in_array(false, $checks);
         $message = $this->generateStatusMessage($checks);
         
+=======
+
+        $status = !in_array(false, $checks);
+        $message = $this->generateStatusMessage($checks);
+
+>>>>>>> 6ed19256f (.)
         return new HealthCheckResult($status, $message);
     }
 }
@@ -300,7 +355,11 @@ final class PackageManager
             'spatie/laravel-queueable-action',
             'filament/filament',
         ];
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         foreach ($packages as $package) {
             $this->updatePackage($package);
         }
@@ -340,6 +399,7 @@ final class RecoveryTool
     {
         // Ripristina code
         $this->recoverQueues();
+<<<<<<< HEAD
         
         // Ripristina cache
         $this->recoverCache();
@@ -347,8 +407,21 @@ final class RecoveryTool
         // Ripristina storage
         $this->recoverStorage();
         
+=======
+
+        // Ripristina cache
+        $this->recoverCache();
+
+        // Ripristina storage
+        $this->recoverStorage();
+
+>>>>>>> 6ed19256f (.)
         // Notifica amministratori
         $this->notifyAdmins();
     }
 }
+<<<<<<< HEAD
 ``` 
+=======
+```
+>>>>>>> 6ed19256f (.)

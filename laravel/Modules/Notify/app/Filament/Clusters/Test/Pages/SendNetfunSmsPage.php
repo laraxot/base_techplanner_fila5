@@ -24,13 +24,21 @@ use Modules\Xot\Filament\Pages\XotBasePage;
 use Override;
 
 /**
+<<<<<<< HEAD
  * @property Schema $smsForm
+=======
+ * @property \Filament\Schemas\Schema $smsForm
+>>>>>>> 6ed19256f (.)
  */
 class SendNetfunSmsPage extends XotBasePage
 {
     public ?array $smsData = [];
 
+<<<<<<< HEAD
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-device-phone-mobile';
+=======
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-device-phone-mobile';
+>>>>>>> 6ed19256f (.)
 
     protected string $view = 'notify::filament.pages.send-sms';
 
@@ -69,7 +77,11 @@ class SendNetfunSmsPage extends XotBasePage
     }
 
     /**
+<<<<<<< HEAD
      * @return array<string, TextInput|Textarea|Select>
+=======
+     * @return array<string, \Filament\Forms\Components\TextInput|\Filament\Forms\Components\Textarea|\Filament\Forms\Components\Select>
+>>>>>>> 6ed19256f (.)
      */
     public function getSmsFormSchema(): array
     {
@@ -111,11 +123,15 @@ class SendNetfunSmsPage extends XotBasePage
     {
         $data = $this->smsForm->getState();
 
+<<<<<<< HEAD
         $smsData = SmsData::from([
             'recipient' => (string) ($data['recipient'] ?? ''),
             'body' => (string) ($data['body'] ?? ''),
             'from' => (string) ($data['from'] ?? ''),
         ]);
+=======
+        $smsData = SmsData::from($data);
+>>>>>>> 6ed19256f (.)
         $provider = $data['provider'] ?? 'netfun';
 
         try {
@@ -127,7 +143,11 @@ class SendNetfunSmsPage extends XotBasePage
                 ->body(__('notify::sms.notifications.sent.body'))
                 ->send();
 
+<<<<<<< HEAD
             Log::debug('SMS inviato con successo', [
+=======
+            Log::info('SMS inviato con successo', [
+>>>>>>> 6ed19256f (.)
                 'recipient' => $data['recipient'],
                 'from' => $data['from'],
                 'provider' => $provider,

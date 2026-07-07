@@ -114,13 +114,22 @@ Ogni file modificato verificato con:
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Activity Module Overview](./README.md)
 - [Guida PHPStan Level 10](../../../docs/phpstan-level10-achievement.md)
 - [Activity Module Overview](./readme.md)
+=======
+- [Guida PHPStan Level 10](../../docs/phpstan-level10-achievement.md)
+- [Activity Module Overview](./README.md)
+>>>>>>> 6ed19256f (.)
 
 ---
 
 **Data correzioni**: Novembre 2025
 **PHPStan Level**: 10 (MAX)
 **Errori risolti**: 21 → 0
+<<<<<<< HEAD
 **Stato**: ✅ PRODUCTION READY
+=======
+**Stato**: ✅ PRODUCTION READY
+>>>>>>> 6ed19256f (.)

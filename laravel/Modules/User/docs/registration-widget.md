@@ -1,8 +1,13 @@
 # Registration Widget Documentation
 
 ## Overview
+<<<<<<< HEAD
 Il file `RegistrationWidget.php` si trova in `Modules/User/app/Filament/Widgets/RegistrationWidget.php`. Questo widget è utilizzato per la registrazione di diversi tipi di utenti in applicazioni basate su Laravel con Filament. Il modulo `User` è progettato per essere riutilizzabile in vari progetti, quindi la logica del widget deve essere flessibile e adattabile a contesti diversi.
 Il file `RegistrationWidget.php` si trova in `Modules/User/app/Filament/Widgets/RegistrationWidget.php`. Questo widget è utilizzato per la registrazione di diversi tipi di utenti in applicazioni basate su Laravel con Filament. Il modulo `User` è progettato per essere riutilizzabile in vari progetti, quindi la logica del widget deve essere flessibile e adattabile a contesti diversi.
+=======
+Il file `RegistrationWidget.php` si trova in `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/User/app/Filament/Widgets/RegistrationWidget.php`. Questo widget è utilizzato per la registrazione di diversi tipi di utenti in applicazioni basate su Laravel con Filament. Il modulo `User` è progettato per essere riutilizzabile in vari progetti, quindi la logica del widget deve essere flessibile e adattabile a contesti diversi.
+Il file `RegistrationWidget.php` si trova in `/var/www/html/saluteora/laravel/Modules/User/app/Filament/Widgets/RegistrationWidget.php`. Questo widget è utilizzato per la registrazione di diversi tipi di utenti in applicazioni basate su Laravel con Filament. Il modulo `User` è progettato per essere riutilizzabile in vari progetti, quindi la logica del widget deve essere flessibile e adattabile a contesti diversi.
+>>>>>>> 6ed19256f (.)
 ## Current Issues
 Dopo aver esaminato il codice, ho notato che manca la parte relativa al salvataggio vero e proprio dei dati dell'utente e all'impostazione dello stato dell'utente dopo la registrazione. Questo è essenziale per completare il flusso di registrazione. Inoltre, il widget deve gestire diversi tipi di utenti, quindi la logica di salvataggio deve essere configurabile in base al tipo di utente specificato tramite la proprietà `$type`.
 ## Recent Updates
@@ -41,6 +46,7 @@ protected function getConfirmationRoute(): string
     return $mapping[$this->type] ?? 'user.registration.confirmation';
 ```
 ## References
+<<<<<<< HEAD
 - [Filament Resource Guidelines](../../../Modules/Xot/project_docs/rules/filament-resource-guidelines.md)
 - [Namespace Issues](../../../docs/references/namespace-issues.md)
 - [Filament Resource Guidelines](../../../Modules/Xot/docs/rules/filament-resource-guidelines.md)
@@ -48,11 +54,21 @@ protected function getConfirmationRoute(): string
 - [Filament Resource Guidelines](../../../modules/xot/project_docs/rules/filament-resource-guidelines.md)
 - [Namespace Issues](../../../../docs/references/namespace-issues.md)
 - [Filament Resource Guidelines](../../../modules/xot/docs/rules/filament-resource-guidelines.md)
+=======
+- [Namespace Issues](../../../project_docs/references/namespace-issues.md)
+- [Filament Resource Guidelines](../../../Modules/Xot/project_docs/rules/filament-resource-guidelines.md)
+- [Namespace Issues](../../../docs/references/namespace-issues.md)
+- [Filament Resource Guidelines](../../../Modules/Xot/docs/rules/filament-resource-guidelines.md)
+>>>>>>> 6ed19256f (.)
 # Registration Widget Documentation
 
 ## Overview
 
+<<<<<<< HEAD
 Il file `RegistrationWidget.php` si trova in `Modules/User/app/Filament/Widgets/RegistrationWidget.php`. Questo widget è utilizzato per la registrazione di diversi tipi di utenti in applicazioni basate su Laravel con Filament. Il modulo `User` è progettato per essere riutilizzabile in vari progetti, quindi la logica del widget deve essere flessibile e adattabile a contesti diversi.
+=======
+Il file `RegistrationWidget.php` si trova in `/var/www/html/saluteora/laravel/Modules/User/app/Filament/Widgets/RegistrationWidget.php`. Questo widget è utilizzato per la registrazione di diversi tipi di utenti in applicazioni basate su Laravel con Filament. Il modulo `User` è progettato per essere riutilizzabile in vari progetti, quindi la logica del widget deve essere flessibile e adattabile a contesti diversi.
+>>>>>>> 6ed19256f (.)
 
 ## Current Issues
 
@@ -111,6 +127,11 @@ protected function getConfirmationRoute(): string
 
 ## References
 
+<<<<<<< HEAD
 - [Filament Resource Guidelines](../../../Modules/Xot/docs/rules/filament-resource-guidelines.md)
 - [Namespace Issues](../../../../docs/references/namespace-issues.md)
 - [Filament Resource Guidelines](../../../modules/xot/docs/rules/filament-resource-guidelines.md)
+=======
+- [Namespace Issues](../../../docs/references/namespace-issues.md)
+- [Filament Resource Guidelines](../../../Modules/Xot/docs/rules/filament-resource-guidelines.md)
+>>>>>>> 6ed19256f (.)

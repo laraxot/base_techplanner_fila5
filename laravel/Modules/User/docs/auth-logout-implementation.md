@@ -63,7 +63,11 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 ```
 
+<<<<<<< HEAD
 Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di <nome progetto> per la gestione della localizzazione.
+=======
+Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di SaluteOra per la gestione della localizzazione.
+>>>>>>> 6ed19256f (.)
 
 ## Componenti Filament
 
@@ -91,7 +95,11 @@ Il template Blade per il logout deve utilizzare i componenti Filament per garant
 
 ## Chiavi di Traduzione
 
+<<<<<<< HEAD
 Le chiavi di traduzione per il logout devono seguire la struttura gerarchica definita nelle best practices di <nome progetto>:
+=======
+Le chiavi di traduzione per il logout devono seguire la struttura gerarchica definita nelle best practices di SaluteOra:
+>>>>>>> 6ed19256f (.)
 
 ```php
 'logout' => [
@@ -290,7 +298,11 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 ```
 
+<<<<<<< HEAD
 Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di <nome progetto> per la gestione della localizzazione.
+=======
+Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di SaluteOra per la gestione della localizzazione.
+>>>>>>> 6ed19256f (.)
 
 ## Componenti Filament
 
@@ -318,7 +330,11 @@ Il template Blade per il logout deve utilizzare i componenti Filament per garant
 
 ## Chiavi di Traduzione
 
+<<<<<<< HEAD
 Le chiavi di traduzione per il logout devono seguire la struttura gerarchica definita nelle best practices di <nome progetto>:
+=======
+Le chiavi di traduzione per il logout devono seguire la struttura gerarchica definita nelle best practices di SaluteOra:
+>>>>>>> 6ed19256f (.)
 
 ```php
 'logout' => [

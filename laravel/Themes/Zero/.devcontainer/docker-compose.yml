@@ -16,7 +16,11 @@ services:
     networks:
       - app-network
     extra_hosts:
+<<<<<<< HEAD
       - "ptvx.local:127.0.0.1"
+=======
+      - "quaeris.local:127.0.0.1"
+>>>>>>> 6ed19256f (.)
 
   db:
     image: mysql:8
@@ -34,4 +38,8 @@ networks:
   app-network:
 
 volumes:
+<<<<<<< HEAD
   db_data:
+=======
+  db_data:
+>>>>>>> 6ed19256f (.)

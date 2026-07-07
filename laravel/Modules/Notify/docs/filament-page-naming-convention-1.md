@@ -53,7 +53,11 @@ Le pagine con nomi non conformi potrebbero:
 Eseguire il seguente comando per trovare pagine non conformi:
 
 ```bash
+<<<<<<< HEAD
 find Modules -path "*/Filament/*/Pages/*.php" | grep -v "Page.php$"
+=======
+find /var/www/html/saluteora/laravel/Modules -path "*/Filament/*/Pages/*.php" | grep -v "Page.php$"
+>>>>>>> 6ed19256f (.)
 ```
 
 ## Riferimenti

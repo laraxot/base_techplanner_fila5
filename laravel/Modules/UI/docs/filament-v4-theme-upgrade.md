@@ -346,4 +346,8 @@ npm run build
 **Versione**: 1.0
 **Stato**: Ready for Implementation
 **Priority**: HIGH
+<<<<<<< HEAD
 **Deadline**: 31 Dicembre 2025
+=======
+**Deadline**: 31 Dicembre 2025
+>>>>>>> 6ed19256f (.)

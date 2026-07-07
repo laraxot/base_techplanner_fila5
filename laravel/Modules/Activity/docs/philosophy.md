@@ -54,4 +54,8 @@ The `Activity` module, as the application's memory and audit trail provider, can
 4.  **Git (MCP)**: Aids in reviewing changes to activity logging configurations or the underlying activity models, ensuring that audit capabilities are not compromised.
 5.  **Sequential Thinking (MCP)**: Crucial for analyzing sequences of activities to understand complex user journeys or diagnose multi-step issues, providing a structured approach to interpreting the audit trail.
 
+<<<<<<< HEAD
 By leveraging these MCPs, the `Activity` module can ensure its role as the application's memory is robust, easily verifiable, and deeply integrated into the development and operational workflows.
+=======
+By leveraging these MCPs, the `Activity` module can ensure its role as the application's memory is robust, easily verifiable, and deeply integrated into the development and operational workflows.
+>>>>>>> 6ed19256f (.)

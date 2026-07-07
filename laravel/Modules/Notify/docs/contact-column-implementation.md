@@ -4,7 +4,10 @@
 Implementare `ContactColumn.php` come colonna Filament riutilizzabile che utilizza `ContactTypeEnum` per il rendering centralizzato dei contatti seguendo i principi DRY e KISS.
 
 ## 🚨 **PROBLEMA CRITICO IDENTIFICATO** (2025-08-01)
+<<<<<<< HEAD
 ## 🚨 **PROBLEMA CRITICO IDENTIFICATO** (2025-08-01)
+=======
+>>>>>>> 6ed19256f (.)
 **ICONE NON VISIBILI**: La sintassi `@svg()` nel template Blade non è compatibile con Filament 3.x
 - 📋 **Analisi Completa**: [contact-column-icon-issue-analysis.md](./contact-column-icon-issue-analysis.md)
 - 🛠️ **Soluzione**: Sostituire `@svg()` con `<x-filament::icon>`
@@ -21,7 +24,11 @@ Implementare `ContactColumn.php` come colonna Filament riutilizzabile che utiliz
 
 ### **Pattern Centralizzato**
 - **ContactColumn**: Classe Filament personalizzata per rendering contatti
+<<<<<<< HEAD
 - **ContactTypeEnum**: Single source of truth per icone, colori, etichette  
+=======
+- **ContactTypeEnum**: Single source of truth per icone, colori, etichette
+>>>>>>> 6ed19256f (.)
 - **Translation Files**: Localizzazione centralizzata
 - **Helper Methods**: Logica di rendering e formattazione
 
@@ -101,7 +108,11 @@ class ContactColumn extends TextColumn
     protected static function formatContact(Contact $record): string
     {
         $contactInfo = [];
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         // Nome completo
         if ($record->first_name || $record->last_name) {
             $fullName = trim($record->first_name . ' ' . $record->last_name);
@@ -109,22 +120,38 @@ class ContactColumn extends TextColumn
                 $contactInfo[] = '<span class="font-medium text-gray-900">' . $fullName . '</span>';
             }
         }
+<<<<<<< HEAD
         
         // Tipo di contatto con icona
         $contactType = $record->contact_type ?? 'unknown';
         $value = $record->value ?? $record->email ?? $record->mobile_phone ?? '';
         
+=======
+
+        // Tipo di contatto con icona
+        $contactType = $record->contact_type ?? 'unknown';
+        $value = $record->value ?? $record->email ?? $record->mobile_phone ?? '';
+
+>>>>>>> 6ed19256f (.)
         if ($value) {
             $icon = static::getContactTypeIcon($contactType);
             $color = static::getContactTypeColor($contactType);
             $contactInfo[] = '<span class="flex items-center ' . $color . '">' . $icon . ' ' . $value . '</span>';
         }
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         // Stato di verifica
         if ($record->verified_at) {
             $contactInfo[] = '<span class="text-green-600 text-xs">✓ Verificato</span>';
         }
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         // Statistiche
         $stats = [];
         if ($record->sms_count > 0) {
@@ -133,6 +160,7 @@ class ContactColumn extends TextColumn
         if ($record->mail_count > 0) {
             $stats[] = '<span class="text-green-600 text-xs">📧 ' . $record->mail_count . ' Email</span>';
         }
+<<<<<<< HEAD
         
         if (!empty($stats)) {
             $contactInfo[] = '<div class="flex gap-2 mt-1">' . implode('', $stats) . '</div>';
@@ -140,6 +168,15 @@ class ContactColumn extends TextColumn
         
         return empty($contactInfo) 
             ? '<span class="text-gray-400">Nessun contatto</span>' 
+=======
+
+        if (!empty($stats)) {
+            $contactInfo[] = '<div class="flex gap-2 mt-1">' . implode('', $stats) . '</div>';
+        }
+
+        return empty($contactInfo)
+            ? '<span class="text-gray-400">Nessun contatto</span>'
+>>>>>>> 6ed19256f (.)
             : implode('<br class="my-1">', $contactInfo);
     }
 
@@ -172,6 +209,7 @@ class ContactColumn extends TextColumn
     protected static function getContactTooltip(Contact $record): string
     {
         $tooltip = [];
+<<<<<<< HEAD
         
         if ($record->contact_type) {
             $tooltip[] = 'Tipo: ' . ucfirst($record->contact_type);
@@ -189,6 +227,25 @@ class ContactColumn extends TextColumn
             $tooltip[] = 'Email inviate: ' . $record->mail_count;
         }
         
+=======
+
+        if ($record->contact_type) {
+            $tooltip[] = 'Tipo: ' . ucfirst($record->contact_type);
+        }
+
+        if ($record->verified_at) {
+            $tooltip[] = 'Verificato: ' . $record->verified_at->format('d/m/Y H:i');
+        }
+
+        if ($record->sms_count > 0) {
+            $tooltip[] = 'SMS inviati: ' . $record->sms_count;
+        }
+
+        if ($record->mail_count > 0) {
+            $tooltip[] = 'Email inviate: ' . $record->mail_count;
+        }
+
+>>>>>>> 6ed19256f (.)
         return implode(' | ', $tooltip);
     }
 }
@@ -209,7 +266,11 @@ class ContactColumn extends TextColumn
             {{ trim($record->first_name . ' ' . $record->last_name) }}
         </div>
     @endif
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     @if($record->value || $record->email || $record->mobile_phone)
         <div class="flex items-center text-sm">
             @php
@@ -234,42 +295,77 @@ class ContactColumn extends TextColumn
                     default => 'text-gray-600',
                 };
             @endphp
+<<<<<<< HEAD
             
             <x-filament::icon 
                 :name="$icon" 
                 class="w-4 h-4 mr-1 {{ $color }}" 
+=======
+
+            <x-filament::icon
+                :name="$icon"
+                class="w-4 h-4 mr-1 {{ $color }}"
+>>>>>>> 6ed19256f (.)
             />
             <span class="{{ $color }}">{{ $value }}</span>
         </div>
     @endif
+<<<<<<< HEAD
     
     @if($record->verified_at)
         <div class="text-green-600 text-xs flex items-center">
             <x-filament::icon 
                 name="heroicon-o-check-circle" 
                 class="w-3 h-3 mr-1" 
+=======
+
+    @if($record->verified_at)
+        <div class="text-green-600 text-xs flex items-center">
+            <x-filament::icon
+                name="heroicon-o-check-circle"
+                class="w-3 h-3 mr-1"
+>>>>>>> 6ed19256f (.)
             />
             Verificato
         </div>
     @endif
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     @if($record->sms_count > 0 || $record->mail_count > 0)
         <div class="flex gap-2 text-xs">
             @if($record->sms_count > 0)
                 <span class="text-blue-600 flex items-center">
+<<<<<<< HEAD
                     <x-filament::icon 
                         name="heroicon-o-chat-bubble-left-right" 
                         class="w-3 h-3 mr-1" 
+=======
+                    <x-filament::icon
+                        name="heroicon-o-chat-bubble-left-right"
+                        class="w-3 h-3 mr-1"
+>>>>>>> 6ed19256f (.)
                     />
                     {{ $record->sms_count }} SMS
                 </span>
             @endif
+<<<<<<< HEAD
             
             @if($record->mail_count > 0)
                 <span class="text-green-600 flex items-center">
                     <x-filament::icon 
                         name="heroicon-o-envelope" 
                         class="w-3 h-3 mr-1" 
+=======
+
+            @if($record->mail_count > 0)
+                <span class="text-green-600 flex items-center">
+                    <x-filament::icon
+                        name="heroicon-o-envelope"
+                        class="w-3 h-3 mr-1"
+>>>>>>> 6ed19256f (.)
                     />
                     {{ $record->mail_count }} Email
                 </span>
@@ -359,5 +455,9 @@ public function table(Table $table): Table
 4. **Documentare** l'utilizzo
 5. **Aggiornare** le regole e memorie
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-06* 
 *Ultimo aggiornamento: 2025-01-06* 
+=======
+*Ultimo aggiornamento: 2025-01-06*
+>>>>>>> 6ed19256f (.)

@@ -11,7 +11,11 @@
 ### Stack Trace
 ```
 Symfony\Component\ErrorHandler\Error\FatalError - Internal Server Error
+<<<<<<< HEAD
 During class fetch: Uncaught ErrorException: include(vendor/composer/../../Modules/Xot/app/Models/Traits/HasXotFactory.php):
+=======
+During class fetch: Uncaught ErrorException: include(/var/www/_bases/base_quaeris_fila4_mono/laravel/vendor/composer/../../Modules/Xot/app/Models/Traits/HasXotFactory.php):
+>>>>>>> 6ed19256f (.)
 Failed to open stream: No such file or directory
 ```
 
@@ -189,7 +193,11 @@ Creati documenti:
 ### Test 1: Autoload Trait
 
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/_bases/base_quaeris_fila4_mono/laravel
+>>>>>>> 6ed19256f (.)
 composer dump-autoload
 ```
 
@@ -351,7 +359,10 @@ Aggiungere al pipeline CI:
 - [GetFactoryAction](../actions/get-factory-action.md)
 - [BaseModel](../models/basemodel.md)
 - [BasePivot Documentation](../../User/docs/models/basepivot.md)
+<<<<<<< HEAD
 - [BasePivot Documentation](../../user/docs/models/basepivot.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Commit Rilevanti
 
@@ -397,4 +408,8 @@ Aggiungere al pipeline CI:
 
 **Autore**: AI Assistant con supervisione Marco Sottana
 **Revisore**: Marco Sottana
+<<<<<<< HEAD
 **Data Chiusura**: 22 Ottobre 2025
+=======
+**Data Chiusura**: 22 Ottobre 2025
+>>>>>>> 6ed19256f (.)

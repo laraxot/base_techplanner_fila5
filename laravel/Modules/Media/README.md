@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🖼️ Media
 
 [![Domain-Media](https://img.shields.io/badge/Domain-Media%20Library-AD1457.svg)](#)
@@ -45,6 +46,8 @@ Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 
 ## Documentazione
 
+=======
+>>>>>>> 6ed19256f (.)
 ### Versione HEAD
 
 # 🎉 Unlock the Power of Media with Fila3 Module! 🚀
@@ -228,6 +231,7 @@ This project is distributed under the MIT license. See the [LICENSE](LICENSE) fi
 Este proyecto está distribuido bajo la licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
 
 ---
+<<<<<<< HEAD
 | Lingua | Link |
 |--------|------|
 | 🇮🇹 Presentazione | Questo file (`README.md`) |
@@ -237,3 +241,5 @@ Este proyecto está distribuido bajo la licencia MIT. Ver el archivo [LICENSE](L
 ---
 
 **Modulo** `media` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+>>>>>>> 6ed19256f (.)

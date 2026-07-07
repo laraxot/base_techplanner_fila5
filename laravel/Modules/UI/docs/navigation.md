@@ -35,12 +35,15 @@ $page->navigation
 ### Versione HEAD
 
 ## Collegamenti tra versioni di navigation.md
+<<<<<<< HEAD
 * [navigation.md](../../../gdpr/docs/navigation.md)
 * [navigation.md](../../../xot/docs/navigation.md)
 * [navigation.md](../../../ui/docs/navigation.md)
 * [navigation.md](../../../cms/docs/blocks/navigation.md)
 * [navigation.md](../../../cms/docs/navigation.md)
 * [navigation.md](../../../cms/docs/components/navigation.md)
+=======
+>>>>>>> 6ed19256f (.)
 * [navigation.md](../../../Gdpr/docs/navigation.md)
 * [navigation.md](../../../Xot/docs/navigation.md)
 * [navigation.md](../../../UI/docs/navigation.md)
@@ -50,4 +53,8 @@ $page->navigation
 
 ### Versione Incoming
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> 6ed19256f (.)

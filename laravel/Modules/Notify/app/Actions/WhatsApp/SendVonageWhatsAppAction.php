@@ -9,9 +9,14 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 use Illuminate\Support\Facades\Log;
 use Modules\Notify\Datas\WhatsAppData;
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\json_decode;
+=======
+use function Safe\json_decode;
+use Spatie\QueueableAction\QueueableAction;
+>>>>>>> 6ed19256f (.)
 
 final class SendVonageWhatsAppAction
 {
@@ -61,6 +66,10 @@ final class SendVonageWhatsAppAction
      * Execute the action.
      *
      * @param  WhatsAppData  $whatsAppData  I dati del messaggio WhatsApp
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> 6ed19256f (.)
      * @return array<string, mixed> Risultato dell'operazione
      *
      * @throws Exception In caso di errore durante l'invio
@@ -69,6 +78,18 @@ final class SendVonageWhatsAppAction
     {
         $from = $whatsAppData->from ?? $this->defaultSender;
 
+<<<<<<< HEAD
+=======
+        // Log di debug se abilitato
+        if ($this->debug) {
+            Log::debug('Invio WhatsApp Vonage', [
+                'to' => $whatsAppData->recipient,
+                'from' => $from,
+                'message_length' => strlen($whatsAppData->body),
+            ]);
+        }
+
+>>>>>>> 6ed19256f (.)
         $client = new Client([
             'timeout' => $this->timeout,
             'headers' => [
@@ -130,7 +151,11 @@ final class SendVonageWhatsAppAction
             $this->vars['status_txt'] = $responseContent;
             $this->vars['response_data'] = $responseData;
 
+<<<<<<< HEAD
             Log::debug('WhatsApp Vonage inviato con successo', [
+=======
+            Log::info('WhatsApp Vonage inviato con successo', [
+>>>>>>> 6ed19256f (.)
                 'to' => $whatsAppData->recipient,
                 'response_code' => $statusCode,
             ]);
@@ -175,6 +200,10 @@ final class SendVonageWhatsAppAction
      * Determina il tipo di media basato sull'URL o sull'estensione del file.
      *
      * @param  string  $url  URL del media
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> 6ed19256f (.)
      * @return string Tipo di media (image, video, audio, file)
      */
     private function determineMediaType(string $url): string

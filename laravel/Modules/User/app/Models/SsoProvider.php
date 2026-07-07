@@ -8,6 +8,10 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
+<<<<<<< HEAD
+=======
+use Modules\User\Database\Factories\SsoProviderFactory;
+>>>>>>> 6ed19256f (.)
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Models\Traits\HasXotFactory;
 
@@ -64,7 +68,11 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
  *
+<<<<<<< HEAD
  * @method static \Modules\User\Database\Factories\SsoProviderFactory factory($count = null, $state = [])
+=======
+ * @method static SsoProviderFactory factory($count = null, $state = [])
+>>>>>>> 6ed19256f (.)
  *
  * @mixin \Eloquent
  */

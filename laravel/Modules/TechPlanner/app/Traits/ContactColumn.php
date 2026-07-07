@@ -108,4 +108,8 @@ trait ContactColumn
     {
         return ContactTypeEnum::getFormSchema();
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 6ed19256f (.)

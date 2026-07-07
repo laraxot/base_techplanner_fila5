@@ -224,7 +224,12 @@ public function template(): BelongsTo
 ## Collegamenti tra versioni di migrations.md
 * [migrations.md](../../Gdpr/docs/migrations.md)
 * [migrations.md](../../Activity/docs/database/migrations.md)
+<<<<<<< HEAD
 * [migrations.md](../../Gdpr/docs/migrations.md)
 * [migrations.md](../../Activity/docs/database/migrations.md)
 
 ---
+=======
+
+---
+>>>>>>> 6ed19256f (.)

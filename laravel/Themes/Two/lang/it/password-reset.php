@@ -129,6 +129,10 @@ return [
     // Stati di elaborazione
     'processing' => 'Elaborazione in corso...',
     'sending' => 'Invio in corso...',
+<<<<<<< HEAD
 ];
 
 
+=======
+];
+>>>>>>> 6ed19256f (.)

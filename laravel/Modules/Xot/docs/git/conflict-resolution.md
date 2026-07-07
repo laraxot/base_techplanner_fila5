@@ -194,6 +194,9 @@ php artisan test --filter=TestClass
 - [Workflow Git](../../../Xot/docs/git/workflow.md)
 - [Best Practices](../../../Xot/docs/best-practices/git.md)
 - [CI/CD Pipeline](../../../Xot/docs/ci-cd/README.md)
+<<<<<<< HEAD
 - [Workflow Git](../../../xot/docs/git/workflow.md)
 - [Best Practices](../../../xot/docs/best-practices/git.md)
 - [CI/CD Pipeline](../../../xot/docs/ci-cd/readme.md)
+=======
+>>>>>>> 6ed19256f (.)

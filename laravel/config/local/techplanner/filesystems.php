@@ -57,9 +57,13 @@ return [
         'public_html' => [
             'driver' => 'local',
             'root' => public_path('/'),
+<<<<<<< HEAD
             // 'url' => url('/'),
             //'url' => url('/'),
             // 'url' => url('/'),
+=======
+            //'url' => url('/'),
+>>>>>>> 6ed19256f (.)
             'url' => '/',
             'visibility' => 'public',
         ],
@@ -92,6 +96,7 @@ return [
 
         'cache' => [
             'driver' => 'local',
+<<<<<<< HEAD
             // 'root' => storage_path('app/public'),
             'root' => base_path('../cache'),
             // 'url' => env('APP_URL').'/storage',
@@ -101,6 +106,11 @@ return [
             // 'root' => storage_path('app/public'),
             'root' => base_path('../cache'),
             // 'url' => env('APP_URL').'/storage',
+=======
+            //'root' => storage_path('app/public'),
+            'root' => base_path('../cache'),
+            //'url' => env('APP_URL').'/storage',
+>>>>>>> 6ed19256f (.)
             'visibility' => 'public',
         ],
 

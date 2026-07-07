@@ -932,6 +932,7 @@ class BlogPostsChartTest extends TestCase
 **Chart.js:** 4.x
 **Framework:** Laraxot/PTVX
 **PHPStan Level:** 10
+<<<<<<< HEAD
 
 ---
 
@@ -955,3 +956,5 @@ Pattern:
 
 Vedi: **[Dashboard Best Practices](../../../Limesurvey/docs/dashboard-best-practices.md)**.
 Vedi: **[Dashboard Best Practices](../../../limesurvey/docs/dashboard-best-practices.md)**.
+=======
+>>>>>>> 6ed19256f (.)

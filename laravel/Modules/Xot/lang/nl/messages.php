@@ -26,6 +26,7 @@ return [
         'finished' => 'Applicatie is succesvol geïnstalleerd.',
         'exit' => 'Klik hier om af te sluiten.',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -39,4 +40,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

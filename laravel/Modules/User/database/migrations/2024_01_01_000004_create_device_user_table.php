@@ -35,7 +35,11 @@ return new class extends XotBaseMigration {
             if ($this->hasColumn('device_id')) {
                 $table->string('device_id', 36)->nullable()->change();
             }
+<<<<<<< HEAD
             // dddx($getColumnType('device_id');//varchar)
+=======
+            // dddx($this->getColumnType('device_id'));//varchar
+>>>>>>> 6ed19256f (.)
             if ('uuid' === $this->getColumnType('user_id')) {
                 $table->string('user_id', 36)->nullable()->change();
             }

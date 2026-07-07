@@ -13,7 +13,11 @@ I was about to remove (or considered removing) the `fields` key from a translati
 
 **File in Question**:
 ```
+<<<<<<< HEAD
 Modules/User/lang/fr/authentication_log.php
+=======
+/var/www/_bases/base_laravelpizza/laravel/Modules/User/lang/fr/authentication_log.php
+>>>>>>> 6ed19256f (.)
 ```
 
 **What I Almost Did**: Remove the `fields` nesting level, flattening the structure.
@@ -138,7 +142,11 @@ user::authentication_log.fields.id.label
 > "This structure was designed specifically to allow:
 > - Multiple sections in one file (fields, actions, messages, navigation)
 > - Clear semantic separation (field translations vs action translations)
+<<<<<<< HEAD
 > - <nome progetto>able key resolution (GetTransKeyAction → GetTransPathAction → GetTranslationAction)"
+=======
+> - Predictable key resolution (GetTransKeyAction → GetTransPathAction → GetTranslationAction)"
+>>>>>>> 6ed19256f (.)
 
 **The Business Logic**:
 > "Without 'fields' section:
@@ -467,4 +475,8 @@ If 'fields' key missing:
 > Touch it, and the system breaks.
 > Respect it, and the system thrives."
 
+<<<<<<< HEAD
 **— The Architect (Winner of the Litigation)**
+=======
+**— The Architect (Winner of the Litigation)**
+>>>>>>> 6ed19256f (.)

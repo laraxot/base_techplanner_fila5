@@ -29,9 +29,13 @@ return [
     /**
      * this will be setup the default seo site description. read more about it in 'laravel-seo'.
      */
+<<<<<<< HEAD
     'site_description' => 'All about '.config('app.name', 'Laravel'),
     'site_description' => 'All about ' . config('app.name', 'Laravel'),
     'site_description' => 'All about '.config('app.name', 'Laravel'),
+=======
+    'site_description' => 'All about ' . config('app.name', 'Laravel'),
+>>>>>>> 6ed19256f (.)
 
     /**
      * this will be setup the default seo site color theme. read more about it in 'laravel-seo'.

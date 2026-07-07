@@ -98,7 +98,11 @@ function generateReport(array $issues): string
 }
 
 // Esegui audit
+<<<<<<< HEAD
 $basePath = '/var/www/html/_bases/base_<nome progetto>/laravel';
+=======
+$basePath = '/var/www/html/_bases/base_saluteora/laravel';
+>>>>>>> 6ed19256f (.)
 $issues = auditHelperTextFiles($basePath);
 $report = generateReport($issues);
 

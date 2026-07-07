@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Azioni',
         'plural_label' => 'Azioni',
@@ -112,40 +113,80 @@ return [
             'tooltip' => 'Revoca il client OAuth',
             'helper_text' => 'Revoca questo client OAuth',
             'description' => 'Azione per revocare il client',
+=======
+    'attach_user' => 'Collega Utente',
+    'associate_user' => 'Associa Utente',
+    'user_actions' => 'Azioni Utente',
+    'view' => 'Visualizza',
+    'edit' => 'Modifica',
+    'delete' => 'Cancella',
+    'detach' => 'Scollega',
+    'replicate' => 'Duplica',
+    'row_actions' => 'Azioni',
+    'delete_selected' => 'Elimina Selezionati',
+    'confirm_detach' => 'Sei sicuro di voler scollegare questo utente?',
+    'confirm_delete' => 'Sei sicuro di voler eliminare gli utenti selezionati?',
+    'success_attached' => 'Utente collegato con successo',
+    'success_detached' => 'Utente scollegato con successo',
+    'success_deleted' => 'Utenti eliminati con successo',
+    'oauth' => [
+        'revoke_client' => [
+            'label' => 'Revoca Client',
+>>>>>>> 6ed19256f (.)
             'modal' => [
                 'heading' => 'Revoca Client OAuth',
                 'description' => 'Sei sicuro di voler revocare questo client OAuth? Questa azione revocherà il client e tutti i token associati. L\'operazione non può essere annullata.',
                 'confirm' => 'Revoca Client',
+<<<<<<< HEAD
                 'cancel' => 'Annulla',
+=======
+>>>>>>> 6ed19256f (.)
             ],
             'success' => 'Client revocato con successo',
             'error' => 'Errore durante la revoca del client',
         ],
         'revoke_token' => [
             'label' => 'Revoca Token',
+<<<<<<< HEAD
             'tooltip' => 'Revoca il token OAuth',
             'helper_text' => 'Revoca questo token',
             'description' => 'Azione per revocare il token',
+=======
+>>>>>>> 6ed19256f (.)
             'modal' => [
                 'heading' => 'Revoca Token OAuth',
                 'description' => 'Sei sicuro di voler revocare questo token? L\'operazione non può essere annullata.',
                 'confirm' => 'Revoca Token',
+<<<<<<< HEAD
                 'cancel' => 'Annulla',
+=======
+>>>>>>> 6ed19256f (.)
             ],
             'success' => 'Token revocato con successo',
             'error' => 'Errore durante la revoca del token',
         ],
         'create_client' => [
             'label' => 'Crea Client',
+<<<<<<< HEAD
             'tooltip' => 'Crea un nuovo client',
             'helper_text' => 'Crea un nuovo client OAuth',
             'description' => 'Azione per creare un client',
+=======
+>>>>>>> 6ed19256f (.)
             'success' => 'Client creato con successo',
             'error' => 'Errore durante la creazione del client',
         ],
     ],
+<<<<<<< HEAD
     'messages' => [
         'success' => 'Operazione completata con successo',
         'error' => 'Si è verificato un errore',
     ],
+=======
+    'navigation' => [],
+    'label' => '',
+    'plural_label' => '',
+    'fields' => [],
+    'actions' => [],
+>>>>>>> 6ed19256f (.)
 ];

@@ -39,15 +39,21 @@ I nomi specifici dell'applicazione devono apparire solo:
 
 ## Collegamenti Bidirezionali
 - [README](README.md)
+<<<<<<< HEAD
 - [README](readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Design System](design-system.md)
 - [Componenti](components.md)
 
 ## Vedi Anche
 - [Documentazione Principale](../../../docs/README.md)
 - [Standard di Codice](../../../docs/standards/coding-standards.md)
+<<<<<<< HEAD
 - [Documentazione Principale](../../../../docs/readme.md)
 - [Standard di Codice](../../../../docs/standards/coding-standards.md)
+=======
+>>>>>>> 6ed19256f (.)
 # Regole di Naming nei Moduli
 
 ## Regola: No Nomi Specifici dell'Applicazione
@@ -87,7 +93,10 @@ I nomi specifici dell'applicazione devono apparire solo:
 
 ## Collegamenti Bidirezionali
 - [README](README.md)
+<<<<<<< HEAD
 - [README](readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Design System](design-system.md)
 - [Componenti](components.md)
 
@@ -95,6 +104,9 @@ I nomi specifici dell'applicazione devono apparire solo:
 - [Documentazione Principale](../../../project_docs/README.md)
 - [Standard di Codice](../../../project_docs/standards/coding-standards.md)
 - [Best Practices](../../../project_docs/standards/best-practices.md)
+<<<<<<< HEAD
 - [Documentazione Principale](../../../../docs/project/readme.md)
 - [Standard di Codice](../../../../docs/project/standards/coding-standards.md)
 - [Best Practices](../../../../docs/project/standards/best-practices.md)
+=======
+>>>>>>> 6ed19256f (.)

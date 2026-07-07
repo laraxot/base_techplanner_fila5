@@ -2,7 +2,10 @@
 
 ## Data Aggiornamento
 2025-01-27
+<<<<<<< HEAD
 [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 
 ## File Modificato
 `Modules/UI/app/Filament/Forms/Components/RadioBadge.php`
@@ -149,7 +152,10 @@ class RadioBadge extends Radio
 
 ## Data Aggiornamento
 2025-01-27
+<<<<<<< HEAD
 [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 
 ## File Modificato
 `Modules/UI/app/Filament/Forms/Components/RadioBadge.php`
@@ -297,4 +303,8 @@ class RadioBadge extends Radio
 - [PHPStan Intersection Types](https://phpstan.org/writing-php-code/phpdoc-types#intersection-types)
 - [Filament HasColor Interface](https://filamentphp.com/project_docs/3.x/support/colors)
 - [Filament HasIcon Interface](https://filamentphp.com/project_docs/3.x/support/icons)
+<<<<<<< HEAD
 - [PHPStan Intersection Types](https://phpstan.org/writing-php-code/phpdoc-types#intersection-types)
+=======
+- [PHPStan Intersection Types](https://phpstan.org/writing-php-code/phpdoc-types#intersection-types)
+>>>>>>> 6ed19256f (.)

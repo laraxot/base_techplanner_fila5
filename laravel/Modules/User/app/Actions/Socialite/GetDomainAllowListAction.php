@@ -15,11 +15,14 @@ class GetDomainAllowListAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
     public function __construct(
         private readonly Arr $arrHelper,
     ) {
     }
 
+=======
+>>>>>>> 6ed19256f (.)
     /**
      * Execute the action.
      */
@@ -27,7 +30,11 @@ class GetDomainAllowListAction
     {
         $res = config('filament-socialite.domain_allowlist');
         if (\is_string($res)) {
+<<<<<<< HEAD
             return $this->arrHelper->wrap($res);
+=======
+            return Arr::wrap($res);
+>>>>>>> 6ed19256f (.)
         }
 
         if (\is_array($res)) {

@@ -3,7 +3,10 @@
 ## Status: ✅ FULLY COMPLIANT
 
 **Analysis Date:** September 22, 2025
+<<<<<<< HEAD
 **Analysis Date:** Febbraio 2026
+=======
+>>>>>>> 6ed19256f (.)
 **PHPStan Level:** 9 (Maximum)
 **Files Analyzed:** 79
 **Errors Found:** 0
@@ -38,4 +41,8 @@ The module follows these coding standards:
 - Strict type declarations
 - Comprehensive type hints
 - Null safety practices
+<<<<<<< HEAD
 - Modern PHP 8.2+ features utilization
+=======
+- Modern PHP 8.2+ features utilization
+>>>>>>> 6ed19256f (.)

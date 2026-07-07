@@ -17,11 +17,14 @@ class RevokeTokenAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
     public function __construct(
         private readonly OauthToken $oauthTokenModel,
     ) {
     }
 
+=======
+>>>>>>> 6ed19256f (.)
     /**
      * Revoca un token OAuth2.
      *
@@ -32,7 +35,11 @@ class RevokeTokenAction
     public function execute(OauthToken|string $token): bool
     {
         if (is_string($token)) {
+<<<<<<< HEAD
             $token = $this->oauthTokenModel->find($token);
+=======
+            $token = OauthToken::find($token);
+>>>>>>> 6ed19256f (.)
         }
 
         if (! $token instanceof OauthToken) {

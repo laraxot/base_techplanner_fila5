@@ -296,4 +296,8 @@ $testProps = [
 
 ---
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: Luglio 2025*
+>>>>>>> 6ed19256f (.)
 *Versione Sistema Blocchi: 1.0*

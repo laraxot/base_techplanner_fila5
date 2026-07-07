@@ -2,10 +2,17 @@
 # Modulo Xot
 
 ## Informazioni Generali
+<<<<<<< HEAD
 - **Nome**: `laraxot/module_xot_fila5`
 - **Descrizione**: Modulo core del repository laraxot
 - **Namespace**: `Modules\Xot`
 - **Repository**: https://github.com/laraxot/module_xot_fila5
+=======
+- **Nome**: `laraxot/module_xot_fila3`
+- **Descrizione**: Modulo core del repository laraxot
+- **Namespace**: `Modules\Xot`
+- **Repository**: https://github.com/laraxot/module_xot_fila3
+>>>>>>> 6ed19256f (.)
 
 ## Service Providers
 1. `Modules\Xot\Providers\XotServiceProvider`
@@ -106,4 +113,8 @@ composer format        # Formatta il codice
 - Pest
 
 ## Changelog
+<<<<<<< HEAD
 Le modifiche vengono tracciate nel repository GitHub.
+=======
+Le modifiche vengono tracciate nel repository GitHub.
+>>>>>>> 6ed19256f (.)

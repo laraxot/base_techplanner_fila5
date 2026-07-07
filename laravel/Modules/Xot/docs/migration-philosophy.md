@@ -1,5 +1,6 @@
 # Laraxot Migration Architecture Philosophy
 
+<<<<<<< HEAD
 ## 🚨 ABSOLUTE RULE: NEVER USE DESTRUCTIVE MIGRATION COMMANDS
 
 **FORBIDDEN - NEVER USE THESE COMMANDS:**
@@ -13,6 +14,8 @@
 
 **ALTERNATIVE**: Use proper migration updates following Laraxot philosophy - one migration per table, modify existing migrations with timestamp updates, never drop or recreate.
 
+=======
+>>>>>>> 6ed19256f (.)
 ## Core Migration Principles
 
 ### The Single Source of Truth Principle
@@ -21,7 +24,11 @@
 
 ### Why This Architecture Matters
 
+<<<<<<< HEAD
 1. **<nome progetto>able Schema Evolution**: Clear, linear progression of database changes
+=======
+1. **Predictable Schema Evolution**: Clear, linear progression of database changes
+>>>>>>> 6ed19256f (.)
 2. **Environment Consistency**: Same migration order across all environments
 3. **Maintainability**: Single file to modify for each table's base schema
 4. **DRY Compliance**: Eliminates redundant schema definitions
@@ -62,12 +69,16 @@ $this->tableUpdate(function (Blueprint $table) {
 ### Migration Types and Their Purpose
 
 #### 1. Table Creation Migrations
+<<<<<<< HEAD
 #### 1. Table Creation Migrations (UNICA per tabella)
+=======
+>>>>>>> 6ed19256f (.)
 - **Pattern**: `{timestamp}_create_{table}_table.php`
 - **Purpose**: Define the base table schema
 - **Rule**: Exactly ONE per table per module
 - **Example**: `2024_01_01_000011_create_roles_table.php`
 
+<<<<<<< HEAD
 #### 2. Modifiche allo schema: stessa migrazione
 - **Regola**: Per modificare campi o aggiungere colonne, **NON** creare nuove migrazioni separate
 - **Procedura**: Modificare la **stessa** migrazione esistente e aggiornare il **timestamp** nel nome del file
@@ -77,6 +88,8 @@ $this->tableUpdate(function (Blueprint $table) {
 #### 3. Data Migration Migrations (solo per trasformazioni dati)
 - **Pattern**: `{timestamp}_migrate_{purpose}.php`
 - **Purpose**: Transform or seed data (NON modifiche schema)
+=======
+>>>>>>> 6ed19256f (.)
 #### 2. Schema Evolution Migrations
 - **Pattern**: `{timestamp}_{action}_{table}.php`
 - **Purpose**: Modify existing table schema
@@ -120,11 +133,14 @@ Modules/User/database/migrations/
 ├── 2024_01_01_000001_create_users_table.php
 ├── 2024_01_01_000011_create_roles_table.php      # Single authoritative
 ├── 2024_01_01_000021_create_permissions_table.php
+<<<<<<< HEAD
 └── 2026_02_22_000000_create_profiles_table.php   # Modifiche: stessa migrazione, timestamp aggiornato
 ```
 
 **NON** creare `add_team_id_to_roles.php` separata: modificare `create_roles_table.php` e aggiornare il timestamp.
 
+=======
+>>>>>>> 6ed19256f (.)
 └── 2024_06_15_143000_add_team_id_to_roles.php    # Schema evolution
 ```
 
@@ -133,10 +149,13 @@ Modules/User/database/migrations/
 When you need to modify a table:
 
 1. **NEVER** create a new `create_table` migration
+<<<<<<< HEAD
 2. **NEVER** creare migrazioni separate tipo `add_column_to_table`
 3. **ALWAYS** modificare la **stessa** migrazione esistente
 4. **ALWAYS** aggiornare il timestamp nel nome del file
 5. **USE** `XotBaseMigration::tableUpdate()` per aggiunte sicure
+=======
+>>>>>>> 6ed19256f (.)
 2. **ALWAYS** create a schema evolution migration
 3. **USE** `XotBaseMigration::tableUpdate()` for safe modifications
 
@@ -202,6 +221,7 @@ Each module should:
 3. Document migration dependencies in module README
 4. Follow consistent naming conventions
 
+<<<<<<< HEAD
 ### Main-Module Dependency Rule
 
 **Modelli strettamente dipendenti dal main_module** (es. Profile): la migrazione deve stare nel modulo main (es. TechPlanner), NON in moduli generici (User). Profile è dominio del main_module.
@@ -422,6 +442,8 @@ protected function registerLivewireAuthWidgets(): void
 
 **REGOLA**: I form devono essere gestiti SEMPRE tramite Filament Widget, NON con form HTML tradizionali.
 
+=======
+>>>>>>> 6ed19256f (.)
 ### Exception Cases
 
 **The ONLY exception** to the one-migration-per-table rule:
@@ -432,4 +454,8 @@ protected function registerLivewireAuthWidgets(): void
 
 ---
 
+<<<<<<< HEAD
 **Philosophy Summary**: In Laraxot, migrations are the definitive history of your database schema. Keep that history clean, linear, and unambiguous. One table, one creation story.
+=======
+**Philosophy Summary**: In Laraxot, migrations are the definitive history of your database schema. Keep that history clean, linear, and unambiguous. One table, one creation story.
+>>>>>>> 6ed19256f (.)

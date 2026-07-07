@@ -4,7 +4,10 @@
 - **PHPStan Level**: 10
 - **Errors**: 0
 - **Last Checked**: 2025-11-17
+<<<<<<< HEAD
 - **Last Checked**: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Module Overview
 The UI module provides user interface components, themes, and frontend utilities for the application.
@@ -72,4 +75,7 @@ The UI module integrates with:
 
 *Status: ✅ PHPStan Level 10 Compliant*
 *Last Updated: 2025-11-17*
+<<<<<<< HEAD
 *
+=======
+>>>>>>> 6ed19256f (.)

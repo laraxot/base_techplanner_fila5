@@ -33,6 +33,10 @@ class Switcher extends Component
         unset($langs[$this->lang]);
         $this->url = Request::getRequestUri();
         $langs = Arr::map($langs, function (array $item, string $key) {
+<<<<<<< HEAD
+=======
+            // @phpstan-ignore staticMethod.notFound
+>>>>>>> 6ed19256f (.)
             $url = LaravelLocalization::getLocalizedURL($key, $this->url, [], true);
             if (false !== $url) {
                 // Verifichiamo che $url sia una stringa o lo convertiamo in modo sicuro

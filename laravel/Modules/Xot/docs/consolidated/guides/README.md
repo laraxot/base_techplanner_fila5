@@ -39,5 +39,9 @@ Per accedere alla documentazione dettagliata originale, vedere il backup in:
 
 ## Links
 - [Root Documentation](../../../project_docs/)
+<<<<<<< HEAD
 - [<nome progetto> Module](../<nome progetto>/project_docs/)
+=======
+- [SaluteOra Module](../SaluteOra/project_docs/)
+>>>>>>> 6ed19256f (.)
 - [Original Documentation Backup](../../../docs-consolidation-backup-*/Xot-docs-original/)

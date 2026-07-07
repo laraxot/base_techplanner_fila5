@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 # Business Logic Analysis Report - SaluteOra Project
 
 ## Executive Summary
 
 The SaluteOra project follows a modular Laraxot architecture with 14 modules containing comprehensive business logic for a dental healthcare management system. The analysis reveals a well-structured codebase with proper separation of concerns and extensive factory support for testing.
+=======
+>>>>>>> 6ed19256f (.)
 # Business Logic Analysis Report - <nome progetto> Project
 
 ## Executive Summary
@@ -14,14 +17,20 @@ The <nome progetto> project follows a modular Laraxot architecture with 14 modul
 ### Core Business Modules
 
 #### <nome progetto> Module (Primary Business Logic)
+<<<<<<< HEAD
 #### SaluteOra Module (Primary Business Logic)
+=======
+>>>>>>> 6ed19256f (.)
 - **Models**: Patient, Doctor, Admin, Studio, Appointment, Report, Profile, User
 - **Factories**: 16 factories (100% coverage)
 - **Seeders**: 15 seeders
 - **Test Data Generated**: 300 records successfully created
   - ✅ Patient: 100 records
   - ✅ Studio: 100 records
+<<<<<<< HEAD
   - ✅ Studio: 100 records  
+=======
+>>>>>>> 6ed19256f (.)
   - ✅ Profile: 100 records
   - ❌ Doctor: Constraint violations (unique email conflicts)
   - ❌ Appointment: Foreign key constraints
@@ -293,7 +302,10 @@ The SaluteOra project follows a modular Laraxot architecture with 14 modules con
 Create missing seeders for:
 - Cms: 6 missing seeders
 - Gdpr: 4 missing seeders
+<<<<<<< HEAD
 - Gdpr: 4 missing seeders  
+=======
+>>>>>>> 6ed19256f (.)
 - Lang: 3 missing seeders
 - Media: 3 missing seeders
 
@@ -335,4 +347,8 @@ Create missing seeders for:
 
 The SaluteOra project demonstrates a well-architected business logic layer with comprehensive factory support and proper modular separation. The successful generation of 300 test records validates the core business model functionality, while the constraint violations highlight areas for factory refinement and dependency management improvements.
 
+<<<<<<< HEAD
 The modular architecture supports scalability and maintainability, with clear separation between business logic (SaluteOra), configuration (Cms), compliance (Gdpr), and infrastructure (User, Xot) concerns.
+=======
+The modular architecture supports scalability and maintainability, with clear separation between business logic (SaluteOra), configuration (Cms), compliance (Gdpr), and infrastructure (User, Xot) concerns.
+>>>>>>> 6ed19256f (.)

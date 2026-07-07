@@ -1,8 +1,14 @@
 # PHPStan Fixes Report - 19 Dicembre 2025
 
+<<<<<<< HEAD
 **Status**: ✅ Correzioni Implementate  
 **Module**: Notify  
 **PHPStan Level**: 10  
+=======
+**Status**: ✅ Correzioni Implementate
+**Module**: Notify
+**PHPStan Level**: 10
+>>>>>>> 6ed19256f (.)
 **Errors Fixed**: 17 → 0 (nel modulo Notify)
 
 ## Overview
@@ -276,7 +282,11 @@ $notify = new RecordNotification($this->record, $slug);
 
 ### 13. SendSmsPage e SendSpatieEmailPage - RecordNotification Constructor
 
+<<<<<<< HEAD
 **File**: 
+=======
+**File**:
+>>>>>>> 6ed19256f (.)
 - `Modules/Notify/app/Filament/Clusters/Test/Pages/SendSmsPage.php`
 - `Modules/Notify/app/Filament/Clusters/Test/Pages/SendSpatieEmailPage.php`
 
@@ -323,9 +333,15 @@ test('RecordNotification mergeData merges additional data correctly', function (
     $record = Client::factory()->create();
     $template = MailTemplate::factory()->create();
     $notification = new RecordNotification($record, $template);
+<<<<<<< HEAD
     
     $notification->mergeData(['custom' => 'value']);
     
+=======
+
+    $notification->mergeData(['custom' => 'value']);
+
+>>>>>>> 6ed19256f (.)
     expect($notification->additionalData)->toHaveKey('custom');
 });
 
@@ -365,6 +381,7 @@ L'errore `WhatsAppChannel not found` in `ChannelEnum.php` è stato risolto esegu
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: 19 Dicembre 2025  
 **Filosofia**: *"Type safety first, simplicity second, DRY always"*
 # Notify Module - PHPStan Level 10 Fixes - Marzo 2026
@@ -437,3 +454,71 @@ class SendNotificationAction
 ---
 *Ultimo aggiornamento: Marzo 2026*
 *Stato: ✅ Completato - 0 errori PHPStan*
+=======
+**Ultimo aggiornamento**: 19 Dicembre 2025
+**Filosofia**: *"Type safety first, simplicity second, DRY always"*
+# PHPStan Fixes - Modulo Notify
+
+## Panoramica
+Documentazione dei fix applicati al modulo Notify per raggiungere PHPStan livello 9.
+
+## Fix Applicati
+
+### 1. NotificationLog.php
+**Problema**: Metodi `markAsOpened()` e `markAsClicked()` mancanti
+
+**Soluzione**: Aggiunta dei metodi mancanti
+```php
+/**
+ * Marca la notifica come aperta.
+ */
+public function markAsOpened(): void
+{
+    $this->update([
+        'opened_at' => now(),
+        'status' => NotificationLogStatusEnum::OPENED,
+    ]);
+}
+
+/**
+ * Marca la notifica come cliccata.
+ */
+public function markAsClicked(): void
+{
+    $this->update([
+        'clicked_at' => now(),
+        'status' => NotificationLogStatusEnum::CLICKED,
+    ]);
+}
+```
+
+### 2. NotificationTrackingController.php
+**Problema**: Uso di `base64_decode` non sicuro
+
+**Soluzione**: Utilizzo della funzione sicura
+```php
+// PRIMA (non sicuro)
+$decodedData = base64_decode($encodedData);
+
+// DOPO (sicuro)
+use function Safe\base64_decode;
+$decodedData = base64_decode($encodedData);
+```
+
+## Dipendenze
+- `NotificationLogStatusEnum::OPENED` - già presente
+- `NotificationLogStatusEnum::CLICKED` - già presente
+- `Safe\base64_decode` - funzione sicura per decodifica base64
+
+## Risultati
+- ✅ **0 errori** PHPStan livello 9
+- ✅ **Metodi mancanti** implementati correttamente
+- ✅ **Gestione sicura** di base64_decode
+- ✅ **Conformità** agli standard di sicurezza
+
+## Collegamenti
+- [Report Completo PHPStan Fixes](../../../bashscripts/docs/phpstan_fixes_comprehensive_report.md)
+- [Script Risoluzione Conflitti](../../../bashscripts/docs/conflict_resolution_script_improvements.md)
+
+*Ultimo aggiornamento: Dicembre 2024*
+>>>>>>> 6ed19256f (.)

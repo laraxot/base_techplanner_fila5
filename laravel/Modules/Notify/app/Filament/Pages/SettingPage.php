@@ -9,7 +9,11 @@ use Modules\Xot\Filament\Widgets\EnvWidget;
 
 class SettingPage extends XotBasePage
 {
+<<<<<<< HEAD
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-document-text';
+=======
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-document-text';
+>>>>>>> 6ed19256f (.)
 
     protected string $view = 'notify::filament.pages.setting';
 

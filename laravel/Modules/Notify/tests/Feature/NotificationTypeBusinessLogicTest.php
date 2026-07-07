@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+use Modules\Notify\Models\NotificationType;
+>>>>>>> 6ed19256f (.)
 
 describe('Notification Type Business Logic', function () {
     it('can create notification type with basic information', function () {

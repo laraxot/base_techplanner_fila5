@@ -1,12 +1,23 @@
+<<<<<<< HEAD
 # healthcare_app Fila4 Mono - Filosofia Completa del Progetto
+=======
+# Quaeris Fila4 Mono - Filosofia Completa del Progetto
+>>>>>>> 6ed19256f (.)
 
 ## Logica (Logic)
 
 ### Architettura del Sistema
+<<<<<<< HEAD
 healthcare_app è un sistema completo di gestione survey basato su Laravel 12 + Filament 4 con il framework Laraxot. L'architettura è modulare e segue il pattern:
 
 ```
 Xot (Motore) → Moduli Specifici (User, healthcare_app, etc.) → Funzionalità
+=======
+Quaeris è un sistema completo di gestione survey basato su Laravel 12 + Filament 4 con il framework Laraxot. L'architettura è modulare e segue il pattern:
+
+```
+Xot (Motore) → Moduli Specifici (User, Quaeris, etc.) → Funzionalità
+>>>>>>> 6ed19256f (.)
 ```
 
 ### Domain Model Principale
@@ -77,7 +88,11 @@ Xot (Motore) → Moduli Specifici (User, healthcare_app, etc.) → Funzionalità
 
 ## Business Logic
 
+<<<<<<< HEAD
 ### Modulo healthcare_app
+=======
+### Modulo Quaeris
+>>>>>>> 6ed19256f (.)
 - **Customer Management**: Gestione clienti e organizzazioni
 - **Survey Management**: Creazione e gestione survey tramite LimeSurvey
 - **Contact Management**: Gestione contatti e inviti
@@ -121,6 +136,12 @@ Il sistema è configurato con Model Context Protocol (MCP) per potenziare IDE AI
 
 ## Conclusione
 
+<<<<<<< HEAD
 healthcare_app rappresenta un sistema che riflette principi profondi di semplicità, chiarezza e armonia. Ogni riga di codice è una manifestazione dei principi DRY, KISS, SOLID e robustezza. Il sistema è progettato per essere mantenibile, scalabile e affidabile, seguendo un'architettura rigorosamente modulare dove ogni componente ha un ruolo preciso e prevedibile.
 
 La "Super Mucca" approccio richiede di analizzare a fondo il codice e le cartelle docs per capire la logica, la filosofia, la religione, la politica e lo zen del progetto prima di implementare qualsiasi cambiamento. La cartella docs è la memoria del sistema e deve essere costantemente aggiornata, studiata e migliorata.
+=======
+Quaeris rappresenta un sistema che riflette principi profondi di semplicità, chiarezza e armonia. Ogni riga di codice è una manifestazione dei principi DRY, KISS, SOLID e robustezza. Il sistema è progettato per essere mantenibile, scalabile e affidabile, seguendo un'architettura rigorosamente modulare dove ogni componente ha un ruolo preciso e prevedibile.
+
+La "Super Mucca" approccio richiede di analizzare a fondo il codice e le cartelle docs per capire la logica, la filosofia, la religione, la politica e lo zen del progetto prima di implementare qualsiasi cambiamento. La cartella docs è la memoria del sistema e deve essere costantemente aggiornata, studiata e migliorata.
+>>>>>>> 6ed19256f (.)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 - [Testing Guidelines](./TESTING.md) - Linee guida testing
 - [Optimization Analysis](./optimization-analysis.md) - Analisi ottimizzazioni
 
@@ -23,6 +24,8 @@ Il modulo CMS presenta problemi critici che bloccano l'analisi completa e richie
 
 --- Merged from code-quality-analysis-2025-11-24.md ---
 
+=======
+>>>>>>> 6ed19256f (.)
 # Code Quality Analysis - CMS Module - November 2025
 
 ## 📊 Risultato Analisi Completa
@@ -163,7 +166,11 @@ Il modulo CMS presenta problemi critici che bloccano l'analisi completa e richie
 
 - [PHPMD Report](./phpmd-report.md) - Analisi precedente PHPMD
 - [Filament Integration](./filament_integration.md) - Integrazione Filament
+<<<<<<< HEAD
 - [Testing Guidelines](./testing.md) - Linee guida testing
+=======
+- [Testing Guidelines](./TESTING.md) - Linee guida testing
+>>>>>>> 6ed19256f (.)
 - [Optimization Analysis](./optimization-analysis.md) - Analisi ottimizzazioni
 
 ---
@@ -184,6 +191,7 @@ Il modulo CMS presenta problemi critici che bloccano l'analisi completa e richie
 **Ultimo Aggiornamento:** 24 Novembre 2025
 **Versione Analisi:** 1.0
 **Status:** ❌ CRITICAL - Requires Immediate Fixes
+<<<<<<< HEAD
 ---
 module: theme
 topic: code-quality-analysis
@@ -191,3 +199,5 @@ canonical: ../../../Themes/docs/shared-components/code-quality-analysis-legacy.m
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/code-quality-analysis-legacy.md
+=======
+>>>>>>> 6ed19256f (.)

@@ -61,6 +61,7 @@ Modules/Xot/
 ### Versione HEAD
 
 ## Collegamenti tra versioni di analysis.md
+<<<<<<< HEAD
 * [analysis.md](../../../notify/docs/analysis.md)
 * [analysis.md](../../../notify/docs/phpstan/analysis.md)
 * [analysis.md](../../../xot/docs/analysis.md)
@@ -74,6 +75,8 @@ Modules/Xot/
 * [analysis.md](../../../media/docs/analysis.md)
 * [analysis.md](../../../media/docs/phpstan/analysis.md)
 * [analysis.md](../../../../themes/one/docs/analysis.md)
+=======
+>>>>>>> 6ed19256f (.)
 * [analysis.md](../../../Notify/docs/analysis.md)
 * [analysis.md](../../../Notify/docs/phpstan/analysis.md)
 * [analysis.md](../../../Xot/docs/analysis.md)
@@ -90,4 +93,8 @@ Modules/Xot/
 
 ### Versione Incoming
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> 6ed19256f (.)

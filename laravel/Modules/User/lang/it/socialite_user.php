@@ -6,6 +6,7 @@ return [
     'fields' => [
         'provider' => [
             'label' => 'provider',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -75,6 +76,41 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'provider_id' => [
+            'label' => 'provider_id',
+        ],
+        'name' => [
+            'label' => 'name',
+        ],
+        'email' => [
+            'label' => 'email',
+        ],
+        'avatar' => [
+            'label' => 'avatar',
+        ],
+        'create' => [
+            'label' => 'create',
+        ],
+        'attach' => [
+            'label' => 'attach',
+        ],
+        'layout' => [
+            'label' => 'layout',
+        ],
+        'view' => [
+            'label' => 'view',
+        ],
+        'edit' => [
+            'label' => 'edit',
+        ],
+        'detach' => [
+            'label' => 'detach',
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'navigation' => [
@@ -83,6 +119,7 @@ return [
         'group' => 'Authentication',
         'label' => 'Social Authentications',
     ],
+<<<<<<< HEAD
     'label' => 'Socialite User',
     'plural_label' => 'Socialite User (Plurale)',
     'actions' => [
@@ -96,4 +133,9 @@ return [
             'label' => 'Elimina Socialite User',
         ],
     ],
+=======
+    'label' => '',
+    'plural_label' => '',
+    'actions' => [],
+>>>>>>> 6ed19256f (.)
 ];

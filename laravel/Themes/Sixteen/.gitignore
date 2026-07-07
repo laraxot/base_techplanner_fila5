@@ -52,6 +52,7 @@ docs/cache/
 *.backup.*
 *.backup
 *.backup.*
+<<<<<<< HEAD
 _docs/
 
 # Second brain: no-docs-archive (wiki) — non tracciare albero legacy docs/archive/
@@ -75,3 +76,5 @@ laravel
 .supermemory
 components
 layouts
+=======
+>>>>>>> 6ed19256f (.)

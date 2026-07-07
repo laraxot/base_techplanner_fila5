@@ -1,7 +1,10 @@
 # Analisi Approfondita del Modulo Lang
 
 > **Generato**: 2025-12-24
+<<<<<<< HEAD
 > **Generato**: 2025-12-24
+=======
+>>>>>>> 6ed19256f (.)
 > **Scopo**: Documentare la filosofia, logica e architettura del modulo Lang
 
 ---
@@ -147,4 +150,8 @@ $post->getTranslation('title', 'it')  // 'Titolo'
 
 ---
 
+<<<<<<< HEAD
 **CONCLUSIONE**: Il modulo Lang è il **cuore invisibile** del sistema multilingua, fornendo auto-discovery, Spatie integration e LangBase classes per moduli multilingua.
+=======
+**CONCLUSIONE**: Il modulo Lang è il **cuore invisibile** del sistema multilingua, fornendo auto-discovery, Spatie integration e LangBase classes per moduli multilingua.
+>>>>>>> 6ed19256f (.)

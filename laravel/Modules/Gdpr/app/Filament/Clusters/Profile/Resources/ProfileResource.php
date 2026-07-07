@@ -10,6 +10,10 @@ use Modules\Gdpr\Filament\Clusters\Profile\Resources\ProfileResource\Pages\EditP
 use Modules\Gdpr\Filament\Clusters\Profile\Resources\ProfileResource\Pages\ListProfiles;
 use Modules\Gdpr\Models\Profile;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+<<<<<<< HEAD
+=======
+use Override;
+>>>>>>> 6ed19256f (.)
 
 class ProfileResource extends XotBaseResource
 {
@@ -17,13 +21,21 @@ class ProfileResource extends XotBaseResource
 
     protected static ?string $cluster = ProfileCluster::class;
 
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> 6ed19256f (.)
     public static function getFormSchema(): array
     {
         return [];
     }
 
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> 6ed19256f (.)
     public static function getPages(): array
     {
         return [

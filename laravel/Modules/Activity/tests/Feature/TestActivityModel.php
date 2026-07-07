@@ -22,6 +22,7 @@ class TestActivityModel extends BaseModel
     /** @var list<string> */
     protected $fillable = ['name', 'value', 'uuid', 'published_at', 'created_by', 'updated_by', 'deleted_by'];
 
+<<<<<<< HEAD
     /**
      * Get the attributes that should be cast.
      *
@@ -33,4 +34,10 @@ class TestActivityModel extends BaseModel
             // Module-specific casts only
         ]);
     }
+=======
+    /** @var array<string, string> */
+    protected $casts = [
+        'published_at' => 'datetime',
+    ];
+>>>>>>> 6ed19256f (.)
 }

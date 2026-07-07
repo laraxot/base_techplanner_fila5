@@ -50,7 +50,10 @@ if (app(SafeObjectCastAction::class)->hasProperty($object, 'value')) {
 ### Collegamenti
 
 - [Documentazione Azioni Cast](../../laravel/Modules/Xot/docs/cast-actions.md)
+<<<<<<< HEAD
 - [Documentazione Azioni Cast](../../laravel/modules/xot/docs/cast-actions.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [SafeEloquentCastAction](../../laravel/Modules/Xot/app/Actions/Cast/SafeEloquentCastAction.php)
 - [SafeObjectCastAction](../../laravel/Modules/Xot/app/Actions/Cast/SafeObjectCastAction.php)
 
@@ -256,4 +259,8 @@ php artisan test
 - [Regole Cursor](../../.cursor/rules)
 - [Regole Windsurf](../../.windsurf/rules)
 - [Documentazione Moduli](../../laravel/Modules/)
+<<<<<<< HEAD
 - [PHPStan Configuration](../../laravel/phpstan.neon)
+=======
+- [PHPStan Configuration](../../laravel/phpstan.neon)
+>>>>>>> 6ed19256f (.)

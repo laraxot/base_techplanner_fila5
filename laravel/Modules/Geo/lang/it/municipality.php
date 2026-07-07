@@ -8,88 +8,121 @@ return [
             'label' => 'Nome comune',
             'placeholder' => 'Inserisci il nome del comune',
             'help' => 'Nome ufficiale del comune',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'code' => [
             'label' => 'Codice ISTAT',
             'placeholder' => 'Inserisci il codice ISTAT',
             'help' => 'Codice ISTAT del comune',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'province' => [
             'label' => 'Provincia',
             'placeholder' => 'Seleziona la provincia',
             'help' => 'Provincia di appartenenza',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'region' => [
             'label' => 'Regione',
             'placeholder' => 'Seleziona la regione',
             'help' => 'Regione di appartenenza',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'country' => [
             'label' => 'Paese',
             'placeholder' => 'Seleziona il paese',
             'help' => 'Paese di appartenenza',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'postal_code' => [
             'label' => 'CAP',
             'placeholder' => 'Inserisci il CAP',
             'help' => 'Codice di avviamento postale',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'latitude' => [
             'label' => 'Latitudine',
             'placeholder' => 'Inserisci la latitudine',
             'help' => 'Coordinate geografiche - latitudine',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'longitude' => [
             'label' => 'Longitudine',
             'placeholder' => 'Inserisci la longitudine',
             'help' => 'Coordinate geografiche - longitudine',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'population' => [
             'label' => 'Popolazione',
             'placeholder' => 'Inserisci il numero di abitanti',
             'help' => 'Numero di abitanti del comune',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'area' => [
             'label' => 'Superficie',
             'placeholder' => 'Inserisci la superficie in km²',
             'help' => 'Superficie del comune in chilometri quadrati',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'is_active' => [
             'label' => 'Attivo',
             'help' => 'Indica se il comune è attivo nel sistema',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'validation' => [
@@ -107,6 +140,7 @@ return [
         'municipality_activated' => 'Comune attivato con successo',
         'municipality_deactivated' => 'Comune disattivato con successo',
     ],
+<<<<<<< HEAD
     'label' => 'Municipality',
     'plural_label' => 'Municipality (Plurale)',
     'navigation' => [
@@ -131,4 +165,6 @@ return [
             'label' => 'Elimina Municipality',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

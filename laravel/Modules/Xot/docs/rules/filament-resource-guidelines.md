@@ -9,6 +9,7 @@
 
 ## Collegamenti Bidirezionali
 
+<<<<<<< HEAD
 - [Documentazione del Modulo Patient](../Patient/docs/errors/undefined-type-pending.md)
 - [Riferimento alle Linee Guida nel Modulo Patient](../Patient/docs/references/filament-guidelines-link.md)
 - [Documentazione Principale sui Problemi di Namespace](../../../../../docs/references/namespace-issues.md)
@@ -18,3 +19,12 @@
 ## Note
 
 Queste linee guida sono centrali per tutti i moduli del progetto <nome progetto>. Ogni modulo deve fare riferimento a questo documento per garantire coerenza nello sviluppo delle risorse Filament.
+=======
+- [Documentazione Principale sui Problemi di Namespace](../../../../docs/references/namespace-issues.md)
+- [Documentazione del Modulo Patient](../Patient/docs/errors/undefined-type-pending.md)
+- [Riferimento alle Linee Guida nel Modulo Patient](../Patient/docs/references/filament-guidelines-link.md)
+
+## Note
+
+Queste linee guida sono centrali per tutti i moduli del progetto <nome progetto>. Ogni modulo deve fare riferimento a questo documento per garantire coerenza nello sviluppo delle risorse Filament.
+>>>>>>> 6ed19256f (.)

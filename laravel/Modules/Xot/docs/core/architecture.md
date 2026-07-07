@@ -260,12 +260,22 @@ return [
 
 ## 🔗 Collegamenti
 
+<<<<<<< HEAD
 - [Best Practices Sistema](../../../../docs/core/best-practices.md)
 - [Convenzioni Sistema](../../../../docs/core/conventions.md)
 - [Template Modulo](../../../../docs/templates/module-template.md)
+=======
+- [Best Practices Sistema](../../../docs/core/best-practices.md)
+- [Convenzioni Sistema](../../../docs/core/conventions.md)
+- [Template Modulo](../../../docs/templates/module-template.md)
+>>>>>>> 6ed19256f (.)
 - [PHPStan Guide](../development/phpstan-guide.md)
 
 ---
 
 **Ultimo aggiornamento:** Gennaio 2025
+<<<<<<< HEAD
 **Versione:** 2.0 - Consolidata DRY + KISS
+=======
+**Versione:** 2.0 - Consolidata DRY + KISS
+>>>>>>> 6ed19256f (.)

@@ -218,4 +218,8 @@ Modules/TechPlanner/
 **Status**: ✅ Homepage completamente funzionante
 **Last Update**: 2024-12-27
 **Author**: Sistema di correzione automatica
+<<<<<<< HEAD
 **Next Steps**: Implementazione controller API e sistema di autenticazione
+=======
+**Next Steps**: Implementazione controller API e sistema di autenticazione
+>>>>>>> 6ed19256f (.)

@@ -12,6 +12,7 @@ return [
     'fields' => [
         'applyFilters' => [
             'label' => 'applyFilters',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -27,4 +28,11 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+    ],
+>>>>>>> 6ed19256f (.)
 ];

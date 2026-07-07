@@ -122,7 +122,11 @@ if (mm < 10) {
 
 // query overpass, write to folders by id
 query_overpass(query, (error, data)  => {
+<<<<<<< HEAD
     const sampleGeoJsonDataFeatures = [];
+=======
+    const farmshopGeoJsonFeatures = [];
+>>>>>>> 6ed19256f (.)
 
     for (Item in data) {
         for (subItem in data[Item]) {
@@ -130,6 +134,7 @@ query_overpass(query, (error, data)  => {
             mkdirSyncRecursive(`data/${node.id}`);
             writeFileSync(`data/${node.id}`, JSON.stringify(node, null, 0));
             const simpleNode = getSimpleNode(node);
+<<<<<<< HEAD
             simpleNode ? sampleGeoJsonDataFeatures.push(simpleNode) : null;
         }
     }
@@ -138,3 +143,13 @@ query_overpass(query, (error, data)  => {
     fs.writeFileSync("data/sampleGeoJsonData.js",  `var lastUpdate = "${lastUpdate}"; var sampleGeoJsonData = ${farmshopGeo};`);
 
 }, {flatProperties: true});
+=======
+            simpleNode ? farmshopGeoJsonFeatures.push(simpleNode) : null;
+        }
+    }
+
+    const farmshopGeo = JSON.stringify({"type": "FeatureCollection","features": farmshopGeoJsonFeatures}, null, 0);
+    fs.writeFileSync("data/farmshopGeoJson.js",  `var lastUpdate = "${lastUpdate}"; var farmshopGeoJson = ${farmshopGeo};`);
+
+}, {flatProperties: true});
+>>>>>>> 6ed19256f (.)

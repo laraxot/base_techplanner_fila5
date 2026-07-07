@@ -270,10 +270,18 @@ grep -r "array<mixed" Modules/ --include="*.php"
 
 - [Filament Class Extension Rules](./filament-class-extension-rules.md) - Regole generali estensione classi
 - [PHPStan Code Quality Guide](./phpstan-code-quality-guide.md) - Guide PHPStan
+<<<<<<< HEAD
 - [Filament Form Schema Structure](../../../../docs/filament_form_schema_structure.md) - Struttura form schema
+=======
+- [Filament Form Schema Structure](../../../docs/filament_form_schema_structure.md) - Struttura form schema
+>>>>>>> 6ed19256f (.)
 
 ---
 
 **Filosofia**: Type Safety, Coerenza, Manutenibilità
 **Pattern**: `array<string, T>` sempre, mai `array<int, T>` o `array<mixed, T>`
+<<<<<<< HEAD
 **Priorità**: CRITICA - PHPStan Level 10 compliance
+=======
+**Priorità**: CRITICA - PHPStan Level 10 compliance
+>>>>>>> 6ed19256f (.)

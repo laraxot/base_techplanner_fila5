@@ -66,7 +66,10 @@ protected function getInfolistSchema(): array
 ```
 
 Per linee guida più dettagliate sul metodo `getInfolistSchema`, consultare il documento [INFOLIST_SCHEMA_GUIDELINES.md](../filament/INFOLIST_SCHEMA_GUIDELINES.md).
+<<<<<<< HEAD
 Per linee guida più dettagliate sul metodo `getInfolistSchema`, consultare il documento [INFOLIST_SCHEMA_GUIDELINES.md](../filament/infolist_schema_guidelines.md).
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Gestione degli Errori Comuni
 
@@ -88,4 +91,8 @@ Errore che si verifica quando una funzione restituisce un tipo specifico ma è d
 2. Raggruppare gli errori per tipo e modulo
 3. Risolvere prima gli errori più comuni e semplici
 4. Documentare ogni soluzione nella cartella `docs` del modulo corrispondente
+<<<<<<< HEAD
 5. Verificare che le soluzioni non introducano nuovi errori
+=======
+5. Verificare che le soluzioni non introducano nuovi errori
+>>>>>>> 6ed19256f (.)

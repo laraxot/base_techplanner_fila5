@@ -9,6 +9,10 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Support\Carbon;
 use Modules\Media\Models\Media;
+<<<<<<< HEAD
+=======
+use Modules\User\Database\Factories\UserFactory;
+>>>>>>> 6ed19256f (.)
 use Modules\Xot\Contracts\ProfileContract;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 
@@ -58,9 +62,16 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property int|null                                          $teams_count
  * @property Collection<int, Tenant>                           $tenants
  * @property int|null                                          $tenants_count
+<<<<<<< HEAD
  * @property Collection<int, OauthToken>                       $tokens
  * @property int|null                                          $tokens_count
  *
+=======
+ * @property Collection<int, OauthAccessToken>                 $tokens
+ * @property int|null                                          $tokens_count
+ *
+ * @method static UserFactory          factory($count = null, $state = [])
+>>>>>>> 6ed19256f (.)
  * @method static Builder|User         newModelQuery()
  * @method static Builder|User         newQuery()
  * @method static Builder|User         permission($permissions, $without = false)
@@ -129,6 +140,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property User|null $updater
  * @property User|null $user
  *
+<<<<<<< HEAD
  * @method static \Modules\User\Database\Factories\UserFactory factory($count = null, $state = [])
  *
  * @property string|null                  $uuid
@@ -147,10 +159,18 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder<static>|User whereTwoFactorSecret($value)
  * @method static Builder<static>|User whereUuid($value)
  *
+=======
+>>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class User extends BaseUser
 {
+<<<<<<< HEAD
+=======
+    /** @var string */
+    public $connection = 'user';
+
+>>>>>>> 6ed19256f (.)
     /** @var array<string, class-string> */
     protected $childTypes = [
         'master_admin' => self::class,

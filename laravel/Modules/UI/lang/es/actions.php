@@ -13,6 +13,7 @@ return [
         'title' => 'Prueba',
         'body' => 'Este es un mensaje de prueba para el registro con ID: :id',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -26,4 +27,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

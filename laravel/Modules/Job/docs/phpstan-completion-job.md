@@ -145,4 +145,8 @@ $traits = \Safe\class_uses($action);
 ---
 
 **Status**: ✅ COMPLETATO AL 100%
+<<<<<<< HEAD
 **Prossimo Modulo**: Lang (185 errori) o Cms (717 errori)
+=======
+**Prossimo Modulo**: Lang (185 errori) o Cms (717 errori)
+>>>>>>> 6ed19256f (.)

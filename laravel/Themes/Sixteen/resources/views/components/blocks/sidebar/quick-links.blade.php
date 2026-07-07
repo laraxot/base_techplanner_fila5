@@ -40,8 +40,12 @@
                         </span>
 
                         {{-- Arrow --}}
+<<<<<<< HEAD
                         <x-filament::icon icon="heroicon-o-chevron-right" class="w-4 h-4 text-gray-400 ml-auto group-hover:text-blue-600" />
 f7ac8eda (.)
+=======
+                        <x-heroicon-o-chevron-right class="w-4 h-4 text-gray-400 ml-auto group-hover:text-blue-600" />
+>>>>>>> 6ed19256f (.)
                     </a>
                 </li>
             @endforeach

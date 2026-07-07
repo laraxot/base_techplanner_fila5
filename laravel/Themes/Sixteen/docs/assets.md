@@ -13,7 +13,11 @@ significa che gli asset Vite non sono stati pubblicati correttamente nella carte
 Portarsi nella cartella del tema:
 
 ```bash
+<<<<<<< HEAD
 cd /var/www/html/_bases/base_fixcity_fila5_mono/laravel/Themes/Sixteen
+=======
+cd /var/www/html/_bases/base_fixcity_fila3_mono/laravel/Themes/Sixteen
+>>>>>>> 6ed19256f (.)
 npm run copy
 ```
 
@@ -22,6 +26,10 @@ Questo comando si occupa di copiare e generare tutti gli asset necessari, risolv
 ---
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Guida risoluzione errore Vite nella root](../../../../../docs/project/modules/cms.md)
+=======
+- [Guida risoluzione errore Vite nella root](../../../../project_docs/modules/cms.md)
+>>>>>>> 6ed19256f (.)
 
 Vedi anche la sezione "Gestione temi e asset" nella documentazione di root del progetto.

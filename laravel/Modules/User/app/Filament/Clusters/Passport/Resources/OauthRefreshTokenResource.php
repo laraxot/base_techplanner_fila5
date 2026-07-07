@@ -4,15 +4,21 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Clusters\Passport\Resources;
 
+<<<<<<< HEAD
 use Filament\Actions\Action;
+=======
+>>>>>>> 6ed19256f (.)
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
+<<<<<<< HEAD
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\PageRegistration;
+=======
+>>>>>>> 6ed19256f (.)
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
@@ -20,7 +26,10 @@ use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< HEAD
 use Modules\User\Actions\Passport\RevokeRefreshTokenAction;
+=======
+>>>>>>> 6ed19256f (.)
 use Modules\User\Filament\Clusters\Passport;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthRefreshTokenResource\Pages\ListOauthRefreshTokens;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthRefreshTokenResource\Pages\ViewOauthRefreshToken;
@@ -33,6 +42,16 @@ class OauthRefreshTokenResource extends XotBaseResource
 
     protected static ?string $model = OauthRefreshToken::class;
 
+<<<<<<< HEAD
+=======
+    protected static ?string $recordTitleAttribute = 'id';
+
+    /**
+     * ⚠️ IMPORTANTE: NavigationIcon, ModelLabel e PluralModelLabel sono gestiti
+     * automaticamente da NavigationLabelTrait e Filament v4 tramite i file di traduzione.
+     * NON definire queste proprietà qui!
+     */
+>>>>>>> 6ed19256f (.)
     /**
      * Get the form schema for the resource.
      *
@@ -42,7 +61,11 @@ class OauthRefreshTokenResource extends XotBaseResource
     public static function getFormSchema(): array
     {
         return [
+<<<<<<< HEAD
             'oauth_refresh_token_info' => Section::make(static::trans('label'))
+=======
+            'oauth_refresh_token_info' => Section::make('OAuth Refresh Token Information')
+>>>>>>> 6ed19256f (.)
                 ->schema([
                     'grid_1' => Grid::make(2)
                         ->schema([
@@ -65,6 +88,7 @@ class OauthRefreshTokenResource extends XotBaseResource
             ->columns([
                 TextColumn::make('id')
                     ->searchable()
+<<<<<<< HEAD
                     ->sortable()
                     ->copyable(),
 
@@ -79,11 +103,28 @@ class OauthRefreshTokenResource extends XotBaseResource
                 TextColumn::make('expires_at')
                     ->dateTime()
                     ->sortable(),
+=======
+                    ->sortable(),
+                TextColumn::make('accessToken.id')
+                    ->searchable()
+                    ->sortable()
+                    ->toggleable(),
+                IconColumn::make('revoked')
+                    ->boolean()
+                    ->sortable(),
+                TextColumn::make('expires_at')
+                    ->dateTime()
+                    ->sortable(),
+                TextColumn::make('created_at')
+                    ->dateTime()
+                    ->sortable(),
+>>>>>>> 6ed19256f (.)
             ])
             ->filters([
                 // Add filters for revoked status, expiration
             ])
             ->recordActions([
+<<<<<<< HEAD
                 Action::make('revoke')
                     ->icon('heroicon-o-x-circle')
                     ->color('danger')
@@ -100,15 +141,28 @@ class OauthRefreshTokenResource extends XotBaseResource
                 DeleteAction::make(),
             ])
             ->bulkActions([
+=======
+                DeleteAction::make(),
+            ])
+            ->toolbarActions([
+>>>>>>> 6ed19256f (.)
                 BulkActionGroup::make([
                     DeleteBulkAction::make(),
                 ]),
             ])
+<<<<<<< HEAD
             ->defaultSort('expires_at', 'desc');
     }
 
     /**
      * @return array<string, PageRegistration>
+=======
+            ->defaultSort('created_at', 'desc');
+    }
+
+    /**
+     * @return array<string, \Filament\Resources\Pages\PageRegistration>
+>>>>>>> 6ed19256f (.)
      */
     #[\Override]
     public static function getPages(): array

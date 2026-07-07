@@ -379,12 +379,20 @@ $table->foreign('user_id')->references('id')->on('users')
 - **Relazioni**: User, Notifiable polymorphic
 - **Campi specifici**: `type`, `data`, `read_at`
 
+<<<<<<< HEAD
 ### <nome progetto> Module
+=======
+### SaluteMo Module
+>>>>>>> 6ed19256f (.)
 - **Tabelle**: `appointments`, `patients`, `doctors`
 - **Relazioni**: User, Studio, Treatment
 - **Campi specifici**: `appointment_date`, `status`, `notes`
 
+<<<<<<< HEAD
 ### <nome progetto> Module (CRITICO)
+=======
+### SaluteOra Module (CRITICO)
+>>>>>>> 6ed19256f (.)
 - **Tabelle**: `appointments`, `patients`, `doctors`, `studios`
 - **Relazioni**: User, Studio, Doctor, Patient
 - **Campi specifici**: `appointment_id`, `patient_id`, `doctor_id`
@@ -441,8 +449,13 @@ rm Modules/Notify/docs/migration_rules.md
 rm Modules/Notify/docs/migrations.md
 rm Modules/Notify/docs/migrations_changelog.md
 
+<<<<<<< HEAD
 # <nome progetto>
 rm Modules/<nome progetto>/docs/database/migrations.md
+=======
+# SaluteMo
+rm Modules/SaluteMo/docs/database/migrations.md
+>>>>>>> 6ed19256f (.)
 rm Modules/Activity/project_docs/database/migrations.md
 
 # Cms
@@ -468,8 +481,13 @@ rm Modules/Notify/project_docs/migration_rules.md
 rm Modules/Notify/project_docs/migrations.md
 rm Modules/Notify/project_docs/migrations_changelog.md
 
+<<<<<<< HEAD
 # <nome progetto>
 rm Modules/<nome progetto>/project_docs/database/migrations.md
+=======
+# SaluteMo
+rm Modules/SaluteMo/project_docs/database/migrations.md
+>>>>>>> 6ed19256f (.)
 
 # E tutti gli altri file duplicati...
 ```
@@ -499,6 +517,11 @@ rm Modules/<nome progetto>/project_docs/database/migrations.md
 **🔗 Vedi anche**: [database-guidelines.md](database-guidelines.md) | [best-practices.md](best-practices.md)
 
 **Aggiornato**: 2025-08-07
+<<<<<<< HEAD
 **Aggiornato**: [DATE]
 **Categoria**: database
 **Priorità**: CRITICA
+=======
+**Categoria**: database
+**Priorità**: CRITICA
+>>>>>>> 6ed19256f (.)

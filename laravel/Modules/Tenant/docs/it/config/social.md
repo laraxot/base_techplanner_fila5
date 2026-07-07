@@ -28,9 +28,16 @@ return [
 ## Collegamenti tra versioni di social.md
 * [social.md](../../../Tenant/docs/it/config/social.md)
 * [social.md](../../../Cms/docs/blocks/social.md)
+<<<<<<< HEAD
 * [social.md](../../../tenant/docs/it/config/social.md)
 * [social.md](../../../cms/docs/blocks/social.md)
 
 ### Versione Incoming
 
 ---
+=======
+
+### Versione Incoming
+
+---
+>>>>>>> 6ed19256f (.)

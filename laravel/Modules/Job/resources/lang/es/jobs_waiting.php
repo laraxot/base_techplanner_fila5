@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -59,6 +60,29 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'connection' => [
+            'label' => 'Conexión',
+        ],
+        'queue' => [
+            'label' => 'Cola',
+        ],
+        'payload' => [
+            'label' => 'Carga Útil',
+        ],
+        'attempts' => [
+            'label' => 'Intentos',
+        ],
+        'reserved_at' => [
+            'label' => 'Reservado En',
+        ],
+        'available_at' => [
+            'label' => 'Disponible En',
+        ],
+        'created_at' => [
+            'label' => 'Creado En',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [

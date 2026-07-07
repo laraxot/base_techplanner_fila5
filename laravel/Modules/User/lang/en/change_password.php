@@ -9,6 +9,7 @@ return [
             'description' => 'Please type the new password again to confirm',
             'helper_text' => '',
             'placeholder' => 'Re-enter your new password',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
         'changePassword' => [
@@ -29,4 +30,11 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        ],
+        'changePassword' => [
+            'label' => 'Change password',
+        ],
+    ],
+>>>>>>> 6ed19256f (.)
 ];

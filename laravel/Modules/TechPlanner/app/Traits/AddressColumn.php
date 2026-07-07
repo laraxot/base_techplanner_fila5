@@ -110,4 +110,8 @@ trait AddressColumn
     {
         return AddressItemEnum::getColumnNames();
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 6ed19256f (.)

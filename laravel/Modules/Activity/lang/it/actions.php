@@ -19,6 +19,7 @@ return [
             'loading' => 'Caricamento storico in corso...',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Actions',
     'plural_label' => 'Actions (Plurale)',
     'navigation' => [
@@ -63,4 +64,6 @@ return [
             'label' => 'Elimina Actions',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

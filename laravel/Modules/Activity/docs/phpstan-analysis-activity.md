@@ -5,7 +5,10 @@
 **PHPStan Level 10**: ✅ **PASSED** - No errors found
 
 **Last Analysis**: 2025-11-12
+<<<<<<< HEAD
 **Last Analysis**: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 
 ## 🎯 Module Overview
 
@@ -75,7 +78,13 @@
 ---
 
 **Analysis Date**: 2025-11-05
+<<<<<<< HEAD
 **Analysis Date**: [DATE]
 **PHPStan Version**: 2.1.2
 **Laravel Version**: 12.31.1
 **Filament Version**: 4.2.0
+=======
+**PHPStan Version**: 2.1.2
+**Laravel Version**: 12.31.1
+**Filament Version**: 4.2.0
+>>>>>>> 6ed19256f (.)

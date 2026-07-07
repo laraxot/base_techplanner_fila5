@@ -19,7 +19,12 @@ class LogUserLogoutAction
 
     public function __construct(
         public User $user
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> 6ed19256f (.)
 
     public function execute(): Activity
     {

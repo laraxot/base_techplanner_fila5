@@ -85,6 +85,7 @@ Notification::make()
 ## Collegamenti Bidirezionali
 
 ### Collegamenti nella Root
+<<<<<<< HEAD
 - [LangServiceProvider](../../Lang/docs/service-provider.md)
 - [Regole Traduzioni](../../../../docs/regole/traduzioni.md)
 - [Architettura delle Traduzioni](../../../../../docs/architecture/translations.md)
@@ -93,6 +94,14 @@ Notification::make()
 ### Collegamenti ai Moduli
 - [LangServiceProvider](../../Lang/docs/service-provider.md)
 - [Regole Traduzioni](../../../../../docs/regole/traduzioni.md)
+=======
+- [Architettura delle Traduzioni](../../../../docs/architecture/translations.md)
+- [Gestione Lingue](../../../../docs/architecture/languages.md)
+
+### Collegamenti ai Moduli
+- [LangServiceProvider](../../Lang/docs/service-provider.md)
+- [Regole Traduzioni](../../../../docs/regole/traduzioni.md)
+>>>>>>> 6ed19256f (.)
 
 ## Note Importanti
 
@@ -126,4 +135,8 @@ Notification::make()
 * [translations.md](../../../Patient/docs/translations.md)
 * [translations.md](../../../Cms/docs/translations.md)
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> 6ed19256f (.)

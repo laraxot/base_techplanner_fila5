@@ -9,7 +9,12 @@ return [
         'studio_address' => 'Indirizzo studio',
         'phone' => 'Telefono',
         'email' => 'Email',
+<<<<<<< HEAD
     ],
 ];
 
 
+=======
+    ]
+];
+>>>>>>> 6ed19256f (.)

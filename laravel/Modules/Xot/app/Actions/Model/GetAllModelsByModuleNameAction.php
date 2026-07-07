@@ -8,11 +8,19 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Model;
 
+<<<<<<< HEAD
+=======
+use Exception;
+>>>>>>> 6ed19256f (.)
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Nwidart\Modules\Facades\Module;
 use ReflectionClass;
 use Spatie\QueueableAction\QueueableAction;
+<<<<<<< HEAD
+=======
+use stdClass;
+>>>>>>> 6ed19256f (.)
 
 class GetAllModelsByModuleNameAction
 {
@@ -26,7 +34,11 @@ class GetAllModelsByModuleNameAction
     public function execute(string $moduleName): array
     {
         $mod = Module::find($moduleName);
+<<<<<<< HEAD
         if (! $mod instanceof \Nwidart\Modules\Module) {
+=======
+        if (! ($mod instanceof \Nwidart\Modules\Module)) {
+>>>>>>> 6ed19256f (.)
             return [];
         }
 
@@ -43,7 +55,11 @@ class GetAllModelsByModuleNameAction
             $ext = '.php';
             // dddx(['ext' => $file->getExtension(), get_class_methods($file)]);
             if (Str::endsWith($filename, $ext)) {
+<<<<<<< HEAD
                 $tmp = new \stdClass();
+=======
+                $tmp = new stdClass();
+>>>>>>> 6ed19256f (.)
                 $name = mb_substr($filename, 0, -mb_strlen($ext));
                 // dddx(['name' => $name, 'name1' => $file->getFilenameWithoutExtension()]);
                 /**
@@ -57,11 +73,19 @@ class GetAllModelsByModuleNameAction
                 // }
                 // 434    Parameter #1 $argument of class ReflectionClass constructor expects class-string<T of object>|T of object, string given.
                 try {
+<<<<<<< HEAD
                     $reflection_class = new \ReflectionClass($tmp->class);
                     if (! $reflection_class->isAbstract()) {
                         $data[$tmp->name] = $tmp->class;
                     }
                 } catch (\Exception) {
+=======
+                    $reflection_class = new ReflectionClass($tmp->class);
+                    if (! $reflection_class->isAbstract()) {
+                        $data[$tmp->name] = $tmp->class;
+                    }
+                } catch (Exception) {
+>>>>>>> 6ed19256f (.)
                 }
             }
         }

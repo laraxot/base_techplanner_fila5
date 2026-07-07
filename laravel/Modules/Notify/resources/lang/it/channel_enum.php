@@ -18,6 +18,7 @@ return [
         'color' => 'warning',
         'icon' => 'heroicon-o-chat-bubble-bottom-center-text',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -31,4 +32,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

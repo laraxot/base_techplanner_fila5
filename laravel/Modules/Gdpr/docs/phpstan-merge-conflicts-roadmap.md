@@ -7,4 +7,8 @@
 
 ---
 
+<<<<<<< HEAD
 ## 🔴 Problema Critico Identificato
+=======
+## 🔴 Problema Critico Identificato
+>>>>>>> 6ed19256f (.)

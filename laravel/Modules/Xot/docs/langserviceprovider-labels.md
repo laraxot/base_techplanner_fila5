@@ -33,10 +33,16 @@ TextInput::make('first_name') // la label viene risolta automaticamente
 
 ## Collegamenti
 - [Doc specifica Patient](../../Patient/docs/langserviceprovider-labels.md)
+<<<<<<< HEAD
 - [Doc specifica Patient](../../patient/docs/langserviceprovider-labels.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 **Questa regola è obbligatoria per tutti i moduli.**
 
 ## Collegamenti tra versioni di langserviceprovider-labels.md
 * [langserviceprovider-labels.md](../../Patient/docs/langserviceprovider-labels.md)
+<<<<<<< HEAD
 * [langserviceprovider-labels.md](../../patient/docs/langserviceprovider-labels.md)
+=======
+>>>>>>> 6ed19256f (.)

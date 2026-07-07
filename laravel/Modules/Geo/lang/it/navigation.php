@@ -252,6 +252,7 @@ return [
         'public' => 'Pubblico',
         'private' => 'Privato',
     ],
+<<<<<<< HEAD
     'label' => 'Navigation',
     'plural_label' => 'Navigation (Plurale)',
     'fields' => [
@@ -274,4 +275,6 @@ return [
             'description' => '',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Themes\Sixteen\Providers;
 
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Blade;
 use Modules\Xot\Actions\Blade\RegisterBladeComponentsAction;
 use Modules\Xot\Providers\XotBaseThemeServiceProvider;
@@ -25,6 +26,15 @@ use Themes\Sixteen\View\Composers\SixteenComposer;
  * Questo provider gestisce la registrazione e configurazione
  * del tema Sixteen nell'applicazione Laravel, integrando il
  * nuovo Menu Builder System e le funzionalità avanzate.
+=======
+use Modules\Xot\Providers\XotBaseThemeServiceProvider;
+
+/**
+ * Service Provider per il tema Sixteen.
+ *
+ * Questo provider gestisce la registrazione e configurazione
+ * del tema Sixteen nell'applicazione Laravel.
+>>>>>>> 6ed19256f (.)
  *
  * IMPORTANTE: Il tema Sixteen usa il namespace 'pub_theme' per le viste,
  * non 'sixteen', per essere compatibile con il sistema di temi.
@@ -32,11 +42,16 @@ use Themes\Sixteen\View\Composers\SixteenComposer;
 class ThemeServiceProvider extends XotBaseThemeServiceProvider
 {
     public string $name = 'Sixteen';
+<<<<<<< HEAD
 
     public string $nameLower = 'sixteen';
 
     protected string $module_dir = __DIR__.'/../../';
 
+=======
+    public string $nameLower = 'sixteen';
+    protected string $module_dir = __DIR__ . '/../../';
+>>>>>>> 6ed19256f (.)
     protected string $module_ns = __NAMESPACE__;
 
     /**
@@ -44,6 +59,7 @@ class ThemeServiceProvider extends XotBaseThemeServiceProvider
      */
     public function boot(): void
     {
+<<<<<<< HEAD
         // Load theme resources BEFORE parent to ensure pub_theme namespace is registered first
         $this->loadCoreThemeResources();
 
@@ -65,6 +81,29 @@ class ThemeServiceProvider extends XotBaseThemeServiceProvider
         $this->registerAuthRoutes();
 
         // Layout shortcuts (legacy compatibility)
+=======
+        parent::boot();
+
+        // Caricamento specifico per pub_theme namespace
+        // IMPORTANTE: pub_theme è il namespace standard per i temi
+        $this->loadViewsFrom(__DIR__ . '/../../resources/views', 'pub_theme');
+        $this->loadTranslationsFrom(__DIR__ . '/../../lang', 'pub_theme');
+
+        // Caricamento delle configurazioni del tema
+        $this->loadConfigFrom(__DIR__ . '/../../config', 'sixteen');
+
+        // Pubblicazione degli assets del tema
+        $this->publishes([
+            __DIR__ . '/../../resources/assets' => public_path('themes/sixteen/assets'),
+        ], 'sixteen-assets');
+
+        // Pubblicazione delle configurazioni del tema
+        $this->publishes([
+            __DIR__ . '/../../config' => config_path('themes/sixteen'),
+        ], 'sixteen-config');
+
+        // Registrazione Layout Shortcuts AGID
+>>>>>>> 6ed19256f (.)
         $this->registerLayoutShortcuts();
     }
 
@@ -75,6 +114,7 @@ class ThemeServiceProvider extends XotBaseThemeServiceProvider
     {
         parent::register();
 
+<<<<<<< HEAD
         // Register core services
         $this->registerCoreServices();
 
@@ -262,10 +302,21 @@ class ThemeServiceProvider extends XotBaseThemeServiceProvider
 
     /**
      * Registra i layout shortcuts AGID per il tema (legacy compatibility).
+=======
+        // Registrazione dei servizi del tema
+        $this->app->singleton('sixteen.theme', function ($app) {
+            return new \Themes\Sixteen\Services\ThemeService();
+        });
+    }
+
+    /**
+     * Registra i layout shortcuts AGID per il tema.
+>>>>>>> 6ed19256f (.)
      */
     protected function registerLayoutShortcuts(): void
     {
         // Registrazione dei layout shortcuts per facilitare l'uso
+<<<<<<< HEAD
         $this->app['view']->addNamespace('layouts', __DIR__.'/../../resources/views/layouts');
 
         // Enhanced composer per layout AGID-compliant
@@ -278,6 +329,16 @@ class ThemeServiceProvider extends XotBaseThemeServiceProvider
                 'agid_compliant' => true,
                 'accessibility_level' => 'WCAG 2.1 AA',
                 'compliance_check' => $themeService->checkAgidCompliance(),
+=======
+        $this->app['view']->addNamespace('layouts', __DIR__ . '/../../resources/views/layouts');
+
+        // Alias per layout AGID-compliant
+        $this->app['view']->composer('layouts.guest-agid', function ($view) {
+            $view->with([
+                'theme_name' => 'Sixteen',
+                'agid_compliant' => true,
+                'accessibility_level' => 'WCAG 2.1 AA'
+>>>>>>> 6ed19256f (.)
             ]);
         });
     }
@@ -288,9 +349,15 @@ class ThemeServiceProvider extends XotBaseThemeServiceProvider
     protected function loadConfigFrom(string $path, string $namespace): void
     {
         if (is_dir($path)) {
+<<<<<<< HEAD
             foreach (glob($path.'/*.php') as $file) {
                 $name = basename($file, '.php');
                 $this->mergeConfigFrom($file, $namespace.'.'.$name);
+=======
+            foreach (glob($path . '/*.php') as $file) {
+                $name = basename($file, '.php');
+                $this->mergeConfigFrom($file, $namespace . '.' . $name);
+>>>>>>> 6ed19256f (.)
             }
         }
     }

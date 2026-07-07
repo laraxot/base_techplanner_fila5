@@ -60,7 +60,11 @@
      ```
    - IMPORTANTE: Per regole significative, aggiornare anche:
      ```
+<<<<<<< HEAD
      base_predict_fila5_mono/
+=======
+     base_predict_fila3_mono/
+>>>>>>> 6ed19256f (.)
      ├── .cursor/
      │   └── rules/        # Regole per Cursor AI
      └── .windsurfrules    # Regole per Windsurf
@@ -265,7 +269,11 @@ Il progetto utilizza un'architettura modulare con Laravel Modules:
      ```
    - IMPORTANTE: Per regole significative, aggiornare anche:
      ```
+<<<<<<< HEAD
      base_predict_fila5_mono/
+=======
+     base_predict_fila3_mono/
+>>>>>>> 6ed19256f (.)
      ├── .cursor/
      │   └── rules/        # Regole per Cursor AI
      └── .windsurfrules    # Regole per Windsurf
@@ -384,4 +392,8 @@ class MyModel extends BaseModel
 
 * [phpstan_workflow.md](../phpstan_workflow.md)
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> 6ed19256f (.)

@@ -2,7 +2,11 @@
 
 ## Riferimento Principale
 
+<<<<<<< HEAD
 📚 **Documento Completo:** [../../../../docs/analisi-metodi-duplicati.md](../../../../docs/analisi-metodi-duplicati.md)
+=======
+📚 **Documento Completo:** [../../../docs/analisi-metodi-duplicati.md](../../../docs/analisi-metodi-duplicati.md)
+>>>>>>> 6ed19256f (.)
 
 ## Stato del Modulo User
 
@@ -61,7 +65,11 @@ abstract class BaseModel extends XotBaseModel
 {
     // ✅ SOLO connection specifica del modulo
     protected $connection = 'user';
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // ✅ SOLO se necessari override specifici
     protected function casts(): array
     {
@@ -140,13 +148,23 @@ protected function registerObservers(): void
 
 ## Link Correlati
 
+<<<<<<< HEAD
 - 📖 [Modulo Xot - Classi Base](../../Xot/docs/analisi-metodi-duplicati.md)
 - 📚 [Analisi Completa](../../../../docs/analisi-metodi-duplicati.md)
 - 📖 [Modulo Xot - Classi Base](../../xot/docs/analisi-metodi-duplicati.md)
+=======
+- 📚 [Analisi Completa](../../../docs/analisi-metodi-duplicati.md)
+- 📖 [Modulo Xot - Classi Base](../../Xot/docs/analisi-metodi-duplicati.md)
+>>>>>>> 6ed19256f (.)
 - 📖 [Architettura User](./core/architecture.md)
 - 📖 [Regole Business Logic](./business-logic-deep-dive.md)
 
 ---
 
+<<<<<<< HEAD
 **Data:** 2025-10-15  
 **Status:** 📋 Draft per Review
+=======
+**Data:** 2025-10-15
+**Status:** 📋 Draft per Review
+>>>>>>> 6ed19256f (.)

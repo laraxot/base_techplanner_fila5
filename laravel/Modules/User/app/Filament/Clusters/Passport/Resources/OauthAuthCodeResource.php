@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Clusters\Passport\Resources;
 
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\DeleteAction;
 use Filament\Forms\Components\Select;
@@ -16,6 +17,13 @@ use Filament\Schemas\Components\Section;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
+=======
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Components\Component;
+use Filament\Schemas\Components\Grid;
+use Filament\Schemas\Components\Section;
+>>>>>>> 6ed19256f (.)
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Filament\Clusters\Passport;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource\Pages\ListOauthAuthCodes;
@@ -41,7 +49,11 @@ class OauthAuthCodeResource extends XotBaseResource
     public static function getFormSchema(): array
     {
         return [
+<<<<<<< HEAD
             'oauth_auth_code_info' => Section::make(static::trans('label'))
+=======
+            'oauth_auth_code_info' => Section::make('OAuth Authorization Code Information')
+>>>>>>> 6ed19256f (.)
                 ->schema([
                     'grid_1' => Grid::make(2)
                         ->schema([
@@ -59,12 +71,16 @@ class OauthAuthCodeResource extends XotBaseResource
                             'revoked' => TextInput::make('revoked')
                                 ->numeric()
                                 ->required(),
+<<<<<<< HEAD
                             'expires_at' => TextInput::make('expires_at'),
+=======
+>>>>>>> 6ed19256f (.)
                         ]),
                 ]),
         ];
     }
 
+<<<<<<< HEAD
     public static function table(Table $table): Table
     {
         return $table
@@ -117,6 +133,10 @@ class OauthAuthCodeResource extends XotBaseResource
 
     /**
      * @return array<string, PageRegistration>
+=======
+    /**
+     * @return array<string, \Filament\Resources\Pages\PageRegistration>
+>>>>>>> 6ed19256f (.)
      */
     #[\Override]
     public static function getPages(): array

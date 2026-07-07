@@ -77,6 +77,10 @@ class NavigationBlock extends XotBaseBlock
 
     public static function getBlockLabel(): string
     {
+<<<<<<< HEAD
         return \trans_string('cms::blocks.navigation.label');
+=======
+        return \trans_string('cms::blocks.navigation.label') ?? 'Block';
+>>>>>>> 6ed19256f (.)
     }
 }

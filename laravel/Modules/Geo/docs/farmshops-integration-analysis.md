@@ -26,7 +26,10 @@
 | **Stars** | 40 |
 | **Forks** | 10 |
 | **Ultimo Update** | 2025-09-23 |
+<<<<<<< HEAD
 | **Ultimo Update** | [DATE] |
+=======
+>>>>>>> 6ed19256f (.)
 | **Homepage** | https://farmshops.eu |
 
 ### Stack Tecnologico
@@ -618,9 +621,16 @@ Realtà aumentata per visualizzare punti di interesse tramite fotocamera smartph
 
 **📝 Documento preparato da:** Super Mucca 🐮
 **📅 Data:** 2025-10-02
+<<<<<<< HEAD
 **📅 Data:** [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 **📧 Contatto:** geo-team@fixcity.com
 
 ---
 
+<<<<<<< HEAD
 *Prossimi passi: Creare POC (Proof of Concept) con subset di dati per validare approccio.*
+=======
+*Prossimi passi: Creare POC (Proof of Concept) con subset di dati per validare approccio.*
+>>>>>>> 6ed19256f (.)

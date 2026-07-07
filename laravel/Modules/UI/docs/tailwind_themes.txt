@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 module: theme
 topic: tailwind_themes
@@ -5,3 +6,11 @@ canonical: ../../../Themes/docs/shared-components/tailwind-themes.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/tailwind-themes.md
+=======
+https://dev.to/mariann93502220/30-free-tailwind-css-templates-to-kick-start-your-next-project-3igo
+
+https://merakiui.com/
+
+
+
+>>>>>>> 6ed19256f (.)

@@ -1,7 +1,10 @@
 # PHPStan Code Quality Guide - Laraxot
 
 **Ultimo aggiornamento**: 2025-01-10
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 **Principi**: DRY + KISS + SOLID + Robust
 **Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot
 **Obiettivo**: 0 errori PHPStan Level 10 + Complexity < 10 + Quality > 80%
@@ -47,7 +50,11 @@
 
 ```bash
 # Analisi PHPStan completa
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/_bases/base_laravelpizza/laravel
+>>>>>>> 6ed19256f (.)
 ./vendor/bin/phpstan analyse Modules --memory-limit=-1
 
 # Analisi singolo modulo
@@ -327,8 +334,13 @@ protected function getStats(): array
 {
     if ($this->record === null) {
         return [
+<<<<<<< HEAD
             Stat::make(__('healthcare_app::question_chart_stats_overview.stats.total_responses.label'), '0')
                 ->description(__('healthcare_app::question_chart_stats_overview.messages.no_data_available'))
+=======
+            Stat::make(__('quaeris::question_chart_stats_overview.stats.total_responses.label'), '0')
+                ->description(__('quaeris::question_chart_stats_overview.messages.no_data_available'))
+>>>>>>> 6ed19256f (.)
                 ->color('gray'),
         ];
     }
@@ -705,10 +717,17 @@ public function getTableRecordKey(\Illuminate\Database\Eloquent\Model|array $rec
 private function createTotalResponsesStat(int $count): Stat
 {
     return Stat::make(
+<<<<<<< HEAD
         __('healthcare_app::question_chart_stats_overview.stats.total_responses.label'),
         number_format((float) $count)
     )
         ->description(__('healthcare_app::question_chart_stats_overview.stats.total_responses.description'))
+=======
+        __('quaeris::question_chart_stats_overview.stats.total_responses.label'),
+        number_format((float) $count)
+    )
+        ->description(__('quaeris::question_chart_stats_overview.stats.total_responses.description'))
+>>>>>>> 6ed19256f (.)
         ->color($count > 0 ? 'success' : 'gray')
         ->icon('heroicon-o-document-text');
 }
@@ -716,10 +735,17 @@ private function createTotalResponsesStat(int $count): Stat
 private function createCompletionRateStat(float $rate): Stat
 {
     return Stat::make(
+<<<<<<< HEAD
         __('healthcare_app::question_chart_stats_overview.stats.completion_rate.label'),
         $rate.'%'
     )
         ->description(__('healthcare_app::question_chart_stats_overview.stats.completion_rate.description'))
+=======
+        __('quaeris::question_chart_stats_overview.stats.completion_rate.label'),
+        $rate.'%'
+    )
+        ->description(__('quaeris::question_chart_stats_overview.stats.completion_rate.description'))
+>>>>>>> 6ed19256f (.)
         ->color($rate >= 75 ? 'success' : ($rate >= 50 ? 'warning' : 'danger'))
         ->icon('heroicon-o-chart-bar');
 }
@@ -1108,4 +1134,8 @@ Dopo ogni modifica file:
 
 ---
 
+<<<<<<< HEAD
 **Ricorda**: Le cartelle docs sono la tua bibbia. Studiale, rispettale, aggiornale costantemente.
+=======
+**Ricorda**: Le cartelle docs sono la tua bibbia. Studiale, rispettale, aggiornale costantemente.
+>>>>>>> 6ed19256f (.)

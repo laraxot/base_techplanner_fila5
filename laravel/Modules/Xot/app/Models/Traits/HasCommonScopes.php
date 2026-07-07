@@ -83,7 +83,11 @@ trait HasCommonScopes
     /**
      * Scope query to records created after a date.
      *
+<<<<<<< HEAD
      * @param Builder<static> $query
+=======
+     * @param  Builder<static>  $query
+>>>>>>> 6ed19256f (.)
      *
      * @return Builder<static>
      */
@@ -95,7 +99,11 @@ trait HasCommonScopes
     /**
      * Scope query to records created before a date.
      *
+<<<<<<< HEAD
      * @param Builder<static> $query
+=======
+     * @param  Builder<static>  $query
+>>>>>>> 6ed19256f (.)
      *
      * @return Builder<static>
      */
@@ -107,7 +115,11 @@ trait HasCommonScopes
     /**
      * Scope query to records updated after a date.
      *
+<<<<<<< HEAD
      * @param Builder<static> $query
+=======
+     * @param  Builder<static>  $query
+>>>>>>> 6ed19256f (.)
      *
      * @return Builder<static>
      */
@@ -119,7 +131,11 @@ trait HasCommonScopes
     /**
      * Scope query to records created by a specific user.
      *
+<<<<<<< HEAD
      * @param Builder<static> $query
+=======
+     * @param  Builder<static>  $query
+>>>>>>> 6ed19256f (.)
      *
      * @return Builder<static>
      */
@@ -137,8 +153,13 @@ trait HasCommonScopes
             return false;
         }
 
+<<<<<<< HEAD
         return null !== $this->published_at
                && $this->published_at->isPast();
+=======
+        return $this->published_at !== null &&
+               $this->published_at->isPast();
+>>>>>>> 6ed19256f (.)
     }
 
     /**
@@ -154,6 +175,10 @@ trait HasCommonScopes
      */
     public function isActive(): bool
     {
+<<<<<<< HEAD
         return isset($this->is_active) && true === $this->is_active;
+=======
+        return isset($this->is_active) && $this->is_active === true;
+>>>>>>> 6ed19256f (.)
     }
 }

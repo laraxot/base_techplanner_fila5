@@ -5,9 +5,14 @@ declare(strict_types=1);
 namespace Modules\Tenant\Actions\Config;
 
 use Modules\Tenant\Actions\GetTenantNameAction;
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\realpath;
+=======
+use function Safe\realpath;
+use Spatie\QueueableAction\QueueableAction;
+>>>>>>> 6ed19256f (.)
 
 class GetTenantFilePathAction
 {

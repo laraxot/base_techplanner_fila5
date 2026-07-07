@@ -5,7 +5,11 @@
 , le interfacce per le azioni SMS seguono questa struttura:
 
 ```
+<<<<<<< HEAD
 Modules/Notify/app/Contracts/SMS/SmsActionContract.php
+=======
+/var/www/html/saluteora/laravel/Modules/Notify/app/Contracts/SMS/SmsActionContract.php
+>>>>>>> 6ed19256f (.)
 ```
 
 Con il namespace corrispondente:

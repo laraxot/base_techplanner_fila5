@@ -12,12 +12,20 @@ use Modules\Gdpr\Filament\Resources\EventResource\Pages\EditEvent;
 use Modules\Gdpr\Filament\Resources\EventResource\Pages\ListEvents;
 use Modules\Gdpr\Models\Event;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+<<<<<<< HEAD
+=======
+use Override;
+>>>>>>> 6ed19256f (.)
 
 class EventResource extends XotBaseResource
 {
     protected static ?string $model = Event::class;
 
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> 6ed19256f (.)
     public static function getFormSchema(): array
     {
         return [
@@ -30,13 +38,21 @@ class EventResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> 6ed19256f (.)
     public static function getRelations(): array
     {
         return [];
     }
 
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> 6ed19256f (.)
     public static function getPages(): array
     {
         return [

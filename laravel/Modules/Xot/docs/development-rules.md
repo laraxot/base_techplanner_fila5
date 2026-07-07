@@ -2,7 +2,10 @@
 
 ## Collegamenti
 - [Documentazione generale progetto](/docs/README.md)
+<<<<<<< HEAD
 - [Documentazione generale progetto](/docs/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Regole Filament](filament-best-practices.md)
 - [Convenzioni Namespace](namespace-conventions.md)
 - [Standard di Codice](code-standards.md)
@@ -425,4 +428,8 @@ TextInput::make('name')
 
 ---
 
+<<<<<<< HEAD
 **Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.
+=======
+**Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.
+>>>>>>> 6ed19256f (.)

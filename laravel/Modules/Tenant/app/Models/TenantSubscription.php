@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Tenant\Models;
 
+<<<<<<< HEAD
 use Carbon\Carbon;
+=======
+>>>>>>> 6ed19256f (.)
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\Tenant\Database\Factories\TenantSubscriptionFactory;
@@ -21,8 +24,13 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property float|null $current_storage_gb
  * @property string|null $billing_cycle
  * @property float|null $billing_amount
+<<<<<<< HEAD
  * @property Carbon|null $next_billing_date
  * @property Carbon|null $expires_at
+=======
+ * @property string|null $next_billing_date
+ * @property string|null $expires_at
+>>>>>>> 6ed19256f (.)
  *
  * @method static Builder|TenantSubscription newModelQuery()
  * @method static Builder|TenantSubscription newQuery()
@@ -46,8 +54,11 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @method static TenantSubscriptionFactory factory($count = null, $state = [])
  *
+<<<<<<< HEAD
  * @property-read Tenant|null $tenant
  *
+=======
+>>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class TenantSubscription extends BaseModel
@@ -70,6 +81,7 @@ class TenantSubscription extends BaseModel
     {
         return $this->belongsTo(Tenant::class);
     }
+<<<<<<< HEAD
 
     /**
      * Get the attributes that should be cast.
@@ -83,4 +95,6 @@ class TenantSubscription extends BaseModel
             'expires_at' => 'datetime',
         ]);
     }
+=======
+>>>>>>> 6ed19256f (.)
 }

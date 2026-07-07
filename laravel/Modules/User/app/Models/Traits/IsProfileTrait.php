@@ -50,13 +50,21 @@ trait IsProfileTrait
     /**
      * Relazione con l'utente a cui appartiene il profilo.
      *
+<<<<<<< HEAD
      * @return BelongsTo<Model&UserContract, $this>
+=======
+     * @return BelongsTo<Model&UserContract, static>
+>>>>>>> 6ed19256f (.)
      */
     public function user(): BelongsTo
     {
         /** @var class-string<Model&UserContract> $userClass */
         $userClass = XotData::make()->getUserClass();
 
+<<<<<<< HEAD
+=======
+        // @phpstan-ignore return.type
+>>>>>>> 6ed19256f (.)
         return $this->belongsTo($userClass);
     }
 
@@ -220,17 +228,32 @@ trait IsProfileTrait
     /**
      * Relazione con i dispositivi mobili associati al profilo.
      *
+<<<<<<< HEAD
      * @return BelongsToMany<Device, $this>
      */
     public function mobileDevices(): BelongsToMany
     {
         return $this->belongsToManyX(Device::class);
+=======
+     * @return BelongsToMany<Device, static>
+     */
+    public function mobileDevices(): BelongsToMany
+    {
+        // @phpstan-ignore return.type
+        return $this->belongsToMany(Device::class, 'mobile_device_users', 'profile_id', 'device_id')
+            ->withPivot('token')
+            ->withTimestamps();
+>>>>>>> 6ed19256f (.)
     }
 
     /**
      * Relazione con tutti i dispositivi associati al profilo.
      *
+<<<<<<< HEAD
      * @return BelongsToMany<Device, $this>
+=======
+     * @return BelongsToMany<Device, static>
+>>>>>>> 6ed19256f (.)
      */
     public function devices(): BelongsToMany
     {
@@ -240,20 +263,36 @@ trait IsProfileTrait
     /**
      * Relazione con gli utenti di dispositivi mobili.
      *
+<<<<<<< HEAD
      * @return HasMany<DeviceUser, $this>
      */
     public function mobileDeviceUsers(): HasMany
     {
+=======
+     * @return HasMany<DeviceUser, static>
+     */
+    public function mobileDeviceUsers(): HasMany
+    {
+        // @phpstan-ignore return.type
+>>>>>>> 6ed19256f (.)
         return $this->hasMany(DeviceUser::class, 'profile_id')->where('type', 'mobile');
     }
 
     /**
      * Relazione con gli utenti di dispositivi generici.
      *
+<<<<<<< HEAD
      * @return HasMany<DeviceUser, $this>
      */
     public function deviceUsers(): HasMany
     {
+=======
+     * @return HasMany<DeviceUser, static>
+     */
+    public function deviceUsers(): HasMany
+    {
+        // @phpstan-ignore return.type
+>>>>>>> 6ed19256f (.)
         return $this->hasMany(DeviceUser::class, 'profile_id');
     }
 

@@ -16,6 +16,10 @@ use Maatwebsite\Excel\Concerns\WithChunkReading;
 use Maatwebsite\Excel\Concerns\WithHeadings;
 use Maatwebsite\Excel\Concerns\WithMapping;
 use Modules\Lang\Actions\TransCollectionAction;
+<<<<<<< HEAD
+=======
+use Traversable;
+>>>>>>> 6ed19256f (.)
 
 // use Staudenmeir\LaravelCte\Query\Builder as CteBuilder;
 
@@ -33,7 +37,11 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
     public QueryBuilder|EloquentBuilder $query;
 
     /**
+<<<<<<< HEAD
      * @param array<int, int|string> $fields
+=======
+     * @param  array<int, int|string>  $fields
+>>>>>>> 6ed19256f (.)
      */
     public function __construct(QueryBuilder|EloquentBuilder $query, ?string $transKey = null, array $fields = [])
     {
@@ -74,7 +82,11 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
          * @var Arrayable<(int|string), mixed>|iterable<(int|string), mixed>|null
          */
         $first = $this->query->first();
+<<<<<<< HEAD
         if (null === $first) {
+=======
+        if ($first === null) {
+>>>>>>> 6ed19256f (.)
             /** @var Collection<int, int|string> $emptyCollection */
             $emptyCollection = collect([]);
 
@@ -148,22 +160,39 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
      */
     private function normalizeRow(mixed $row): array
     {
+<<<<<<< HEAD
         if (null === $row) {
+=======
+        if ($row === null) {
+>>>>>>> 6ed19256f (.)
             return [];
         }
 
         if ($row instanceof Arrayable) {
+<<<<<<< HEAD
             /* @var array<int|string, mixed> */
+=======
+            /** @var array<int|string, mixed> */
+>>>>>>> 6ed19256f (.)
             return $row->toArray();
         }
 
         if (\is_array($row)) {
+<<<<<<< HEAD
             /* @var array<int|string, mixed> */
             return $row;
         }
 
         if ($row instanceof \Traversable) {
             /* @var array<int|string, mixed> */
+=======
+            /** @var array<int|string, mixed> */
+            return $row;
+        }
+
+        if ($row instanceof Traversable) {
+            /** @var array<int|string, mixed> */
+>>>>>>> 6ed19256f (.)
             return iterator_to_array($row);
         }
 

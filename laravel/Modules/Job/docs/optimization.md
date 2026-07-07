@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 https://filamentphp.com/community/danharrin-fast-table-pagination
 
 ---
@@ -7,3 +8,6 @@ canonical: ../../../Themes/docs/shared-components/optimization.txt
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/optimization.txt
+=======
+
+>>>>>>> 6ed19256f (.)

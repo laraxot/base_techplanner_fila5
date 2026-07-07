@@ -52,6 +52,10 @@ final class SendTwilioSMSAction implements SmsActionContract
      * Execute the action.
      *
      * @param  SmsData  $smsData  I dati del messaggio SMS
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> 6ed19256f (.)
      * @return array Risultato dell'operazione
      *
      * @throws Exception In caso di errore durante l'invio
@@ -69,7 +73,11 @@ final class SendTwilioSMSAction implements SmsActionContract
             $to = '+39'.$to;
         }
 
+<<<<<<< HEAD
         $from = $smsData->from ?: $this->defaultSender;
+=======
+        $from = $smsData->from ?? $this->defaultSender;
+>>>>>>> 6ed19256f (.)
 
         // Twilio richiede l'autenticazione Basic
         $client = new Client([

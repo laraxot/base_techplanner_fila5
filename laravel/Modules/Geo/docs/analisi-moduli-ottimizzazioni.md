@@ -225,6 +225,7 @@ class ModuleMetricsService
 ## 🔗 Collegamenti Documentazione
 
 ### Moduli Base
+<<<<<<< HEAD
 - [Xot - Core Framework](../laravel/modules/xot/docs/ottimizzazioni-e-miglioramenti.md)
 - [User - Authentication](../laravel/modules/user/docs/ottimizzazioni-e-miglioramenti.md)
 - [Geo - Geographic Data](../laravel/modules/geo/docs/ottimizzazioni-e-miglioramenti.md)
@@ -245,6 +246,8 @@ class ModuleMetricsService
 - [<nome modulo> - Mobile Features](../laravel/modules/<nome modulo>/docs/ottimizzazioni-e-miglioramenti.md)
 - [<nome progetto> - Main Healthcare](../laravel/modules/<nome progetto>/docs/ottimizzazioni-e-miglioramenti.md)
 - [<nome progetto> - Mobile Features](../laravel/modules/<nome progetto>/docs/ottimizzazioni-e-miglioramenti.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Xot - Core Framework](../laravel/Modules/Xot/docs/ottimizzazioni-e-miglioramenti.md)
 - [User - Authentication](../laravel/Modules/User/docs/ottimizzazioni-e-miglioramenti.md)
 - [Geo - Geographic Data](../laravel/Modules/Geo/docs/ottimizzazioni-e-miglioramenti.md)
@@ -282,4 +285,8 @@ La roadmap proposta è **incrementale** e **non disruptive**, permettendo miglio
 
 **Ultimo aggiornamento**: Dicembre 2024
 **Versione**: 1.0
+<<<<<<< HEAD
 **Stato**: ✅ Analisi completa di tutti i 14 moduli
+=======
+**Stato**: ✅ Analisi completa di tutti i 14 moduli
+>>>>>>> 6ed19256f (.)

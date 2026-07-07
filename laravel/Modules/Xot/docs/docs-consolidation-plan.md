@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 📋 Piano di Consolidamento Documentazione - Laraxot PTVX
 
 ## 🚨 **Violazioni Identificate**
@@ -157,3 +158,7 @@ canonical: ../../../Themes/docs/shared-components/docs-consolidation-plan-confli
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/docs-consolidation-plan-conflict.md
+=======
+
+
+>>>>>>> 6ed19256f (.)

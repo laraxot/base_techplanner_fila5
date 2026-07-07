@@ -35,8 +35,13 @@ class MembershipFactory extends Factory
         return [
             'team_id' => Team::factory(),
             'user_id' => User::factory(),
+<<<<<<< HEAD
             'role' => fake()->randomElement(['admin', 'editor', 'member', 'viewer']),
             'customer_id' => fake()->optional(0.3)->uuid(),
+=======
+            'role' => $this->faker->randomElement(['admin', 'editor', 'member', 'viewer']),
+            'customer_id' => $this->faker->optional(0.3)->uuid(),
+>>>>>>> 6ed19256f (.)
         ];
     }
 

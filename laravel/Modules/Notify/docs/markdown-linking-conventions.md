@@ -9,6 +9,7 @@
 ### ❌ ERRATO: Percorsi Assoluti
 
 ```markdown
+<<<<<<< HEAD
 [Convenzioni di Naming per le Interfacce](Modules/Notify/docs/INTERFACE_NAMING_CONVENTION.md)
 [Chiarimento sulla Struttura delle Interfacce](Modules/Notify/docs/INTERFACE_STRUCTURE_CLARIFICATION.md)
 [Architettura dei Contratti](Modules/Notify/docs/CONTRACTS_ARCHITECTURE.md)
@@ -18,6 +19,17 @@
 [Convenzioni di Naming per le Interfacce](Modules/Notify/docs/INTERFACE_NAMING_CONVENTION.md)
 [Chiarimento sulla Struttura delle Interfacce](Modules/Notify/docs/INTERFACE_STRUCTURE_CLARIFICATION.md)
 [Architettura dei Contratti](Modules/Notify/docs/CONTRACTS_ARCHITECTURE.md)
+=======
+[Convenzioni di Naming per le Interfacce](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/docs/INTERFACE_NAMING_CONVENTION.md)
+[Chiarimento sulla Struttura delle Interfacce](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/docs/INTERFACE_STRUCTURE_CLARIFICATION.md)
+[Architettura dei Contratti](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/docs/CONTRACTS_ARCHITECTURE.md)
+[Convenzioni di Naming per le Interfacce](/var/www/html/saluteora/laravel/Modules/Notify/docs/INTERFACE_NAMING_CONVENTION.md)
+[Chiarimento sulla Struttura delle Interfacce](/var/www/html/saluteora/laravel/Modules/Notify/docs/INTERFACE_STRUCTURE_CLARIFICATION.md)
+[Architettura dei Contratti](/var/www/html/saluteora/laravel/Modules/Notify/docs/CONTRACTS_ARCHITECTURE.md)
+[Convenzioni di Naming per le Interfacce](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/docs/INTERFACE_NAMING_CONVENTION.md)
+[Chiarimento sulla Struttura delle Interfacce](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/docs/INTERFACE_STRUCTURE_CLARIFICATION.md)
+[Architettura dei Contratti](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/docs/CONTRACTS_ARCHITECTURE.md)
+>>>>>>> 6ed19256f (.)
 ```
 
 ### ✅ CORRETTO: Percorsi Relativi
@@ -26,9 +38,12 @@
 [Convenzioni di Naming per le Interfacce](./INTERFACE_NAMING_CONVENTION.md)
 [Chiarimento sulla Struttura delle Interfacce](./INTERFACE_STRUCTURE_CLARIFICATION.md)
 [Architettura dei Contratti](./CONTRACTS_ARCHITECTURE.md)
+<<<<<<< HEAD
 [Convenzioni di Naming per le Interfacce](./INTERFACE_NAMING_CONVENTION.md)
 [Chiarimento sulla Struttura delle Interfacce](./INTERFACE_STRUCTURE_CLARIFICATION.md)
 [Architettura dei Contratti](./CONTRACTS_ARCHITECTURE.md)
+=======
+>>>>>>> 6ed19256f (.)
 ```
 
 Per collegamenti a documenti in altre directory:
@@ -36,8 +51,11 @@ Per collegamenti a documenti in altre directory:
 ```markdown
 [Regole Generali per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
 [Best Practices per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
+<<<<<<< HEAD
 [Regole Generali per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
 [Best Practices per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
+=======
+>>>>>>> 6ed19256f (.)
 ```
 
 ## Motivazione
@@ -46,7 +64,11 @@ Per collegamenti a documenti in altre directory:
 2. **Compatibilità tra ambienti**: I percorsi assoluti potrebbero non funzionare in ambienti diversi
 3. **Manutenibilità**: I percorsi relativi sono più facili da mantenere quando la struttura del progetto cambia
 4. **Standard del progetto**:  segue lo standard di utilizzare percorsi relativi in tutti i documenti Markdown
+<<<<<<< HEAD
 4. **Standard del progetto**: <nome progetto> segue lo standard di utilizzare percorsi relativi in tutti i documenti Markdown
+=======
+4. **Standard del progetto**: SaluteOra segue lo standard di utilizzare percorsi relativi in tutti i documenti Markdown
+>>>>>>> 6ed19256f (.)
 
 ## Regole per i Collegamenti Relativi
 
@@ -65,8 +87,13 @@ grep -r "\[.*\](/var" --include="*.md" /percorso/al/progetto
 
 ## Collegamenti Correlati
 
+<<<<<<< HEAD
 - [Convenzioni di Documentazione](../../../../docs/documentation-conventions.md)
 - [Markdown Best Practices](../../../../docs/markdown-best-practices.md)
+=======
+- [Convenzioni di Documentazione](../../../docs/documentation-conventions.md)
+- [Markdown Best Practices](../../../docs/markdown-best-practices.md)
+>>>>>>> 6ed19256f (.)
 # Convenzioni per i Collegamenti nei File Markdown
 
 ## Regola Fondamentale
@@ -78,12 +105,18 @@ grep -r "\[.*\](/var" --include="*.md" /percorso/al/progetto
 ### ❌ ERRATO: Percorsi Assoluti
 
 ```markdown
+<<<<<<< HEAD
 [Convenzioni di Naming per le Interfacce](Modules/Notify/docs/INTERFACE_NAMING_CONVENTION.md)
 [Chiarimento sulla Struttura delle Interfacce](Modules/Notify/docs/INTERFACE_STRUCTURE_CLARIFICATION.md)
 [Architettura dei Contratti](Modules/Notify/docs/CONTRACTS_ARCHITECTURE.md)
 [Convenzioni di Naming per le Interfacce](Modules/Notify/docs/INTERFACE_NAMING_CONVENTION.md)
 [Chiarimento sulla Struttura delle Interfacce](Modules/Notify/docs/INTERFACE_STRUCTURE_CLARIFICATION.md)
 [Architettura dei Contratti](Modules/Notify/docs/CONTRACTS_ARCHITECTURE.md)
+=======
+[Convenzioni di Naming per le Interfacce](/var/www/html/<directory progetto>/laravel/Modules/Notify/docs/INTERFACE_NAMING_CONVENTION.md)
+[Chiarimento sulla Struttura delle Interfacce](/var/www/html/<directory progetto>/laravel/Modules/Notify/docs/INTERFACE_STRUCTURE_CLARIFICATION.md)
+[Architettura dei Contratti](/var/www/html/<directory progetto>/laravel/Modules/Notify/docs/CONTRACTS_ARCHITECTURE.md)
+>>>>>>> 6ed19256f (.)
 ```
 
 ### ✅ CORRETTO: Percorsi Relativi
@@ -92,9 +125,12 @@ grep -r "\[.*\](/var" --include="*.md" /percorso/al/progetto
 [Convenzioni di Naming per le Interfacce](./INTERFACE_NAMING_CONVENTION.md)
 [Chiarimento sulla Struttura delle Interfacce](./INTERFACE_STRUCTURE_CLARIFICATION.md)
 [Architettura dei Contratti](./CONTRACTS_ARCHITECTURE.md)
+<<<<<<< HEAD
 [Convenzioni di Naming per le Interfacce](./INTERFACE_NAMING_CONVENTION.md)
 [Chiarimento sulla Struttura delle Interfacce](./INTERFACE_STRUCTURE_CLARIFICATION.md)
 [Architettura dei Contratti](./CONTRACTS_ARCHITECTURE.md)
+=======
+>>>>>>> 6ed19256f (.)
 ```
 
 Per collegamenti a documenti in altre directory:
@@ -102,8 +138,11 @@ Per collegamenti a documenti in altre directory:
 ```markdown
 [Regole Generali per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
 [Best Practices per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
+<<<<<<< HEAD
 [Regole Generali per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
 [Best Practices per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
+=======
+>>>>>>> 6ed19256f (.)
 ```
 
 ## Motivazione
@@ -130,5 +169,10 @@ grep -r "\[.*\](/var" --include="*.md" /percorso/al/progetto
 
 ## Collegamenti Correlati
 
+<<<<<<< HEAD
 - [Convenzioni di Documentazione](../../../../docs/documentation-conventions.md)
 - [Markdown Best Practices](../../../../docs/markdown-best-practices.md)
+=======
+- [Convenzioni di Documentazione](../../../docs/documentation-conventions.md)
+- [Markdown Best Practices](../../../docs/markdown-best-practices.md)
+>>>>>>> 6ed19256f (.)

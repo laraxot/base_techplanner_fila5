@@ -323,7 +323,11 @@ Filament resources integrate with Laraxot's multi-tenancy system:
 - Standardized patterns across all modules
 
 ### KISS (Keep It Simple, Stupid)
+<<<<<<< HEAD
 - Clear, <nome progetto>able inheritance
+=======
+- Clear, predictable inheritance
+>>>>>>> 6ed19256f (.)
 - Minimal configuration required
 - Consistent API across resources
 
@@ -363,4 +367,8 @@ The Filament integration in Laraxot embodies the project's core values:
 - **Type Safety**: Contract-based development
 - **User Experience**: Modern, intuitive admin interfaces
 
+<<<<<<< HEAD
 This integration ensures that every admin interface in the system follows the same high standards while providing the flexibility needed for module-specific requirements.
+=======
+This integration ensures that every admin interface in the system follows the same high standards while providing the flexibility needed for module-specific requirements.
+>>>>>>> 6ed19256f (.)

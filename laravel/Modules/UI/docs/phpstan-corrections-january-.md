@@ -156,5 +156,9 @@ if ($color !== '') {  // Non serve is_string()
 ## Collegamenti
 
 - [PHPStan Code Quality Guide](../../Xot/docs/phpstan-code-quality-guide.md)
+<<<<<<< HEAD
 - [PHPStan Code Quality Guide](../../xot/docs/phpstan-code-quality-guide.md)
 - [Correzioni Precedenti](./phpstan-corrections.md)
+=======
+- [Correzioni Precedenti](./phpstan-corrections.md)
+>>>>>>> 6ed19256f (.)

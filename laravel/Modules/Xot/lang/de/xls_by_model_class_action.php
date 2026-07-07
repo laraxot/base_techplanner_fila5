@@ -13,6 +13,7 @@ return [
     'created_at' => 'created_at',
     'updated_at' => 'updated_at',
     'deleted_at' => 'deleted_at',
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -26,4 +27,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

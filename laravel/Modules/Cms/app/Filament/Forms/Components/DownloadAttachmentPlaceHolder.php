@@ -26,6 +26,10 @@ class DownloadAttachmentPlaceHolder extends XotBasePlaceholder
 
         $title = SafeStringCastAction::cast($attachment->title);
         $description = SafeStringCastAction::cast($attachment->description);
+<<<<<<< HEAD
+=======
+        /* @phpstan-ignore-next-line method.notFound */
+>>>>>>> 6ed19256f (.)
         $asset = SafeStringCastAction::cast($attachment->asset());
 
         $html = sprintf(

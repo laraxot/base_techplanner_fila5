@@ -86,7 +86,11 @@ class MjmlService
         try {
             $mjml = $this->convertToMjml($template);
             $result = $this->mjml->render($mjml, $this->options);
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> 6ed19256f (.)
             return [
                 'html' => $result->html,
                 'errors' => $result->errors
@@ -232,7 +236,11 @@ class LocalizationService
     public function translate($template, $locale)
     {
         $cacheKey = "template.{$template->id}.{$locale}";
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         return $this->cache->remember($cacheKey, 3600, function () use ($template, $locale) {
             return $template->translations()
                 ->where('locale', $locale)
@@ -609,4 +617,8 @@ class TemplatePreview extends Component
 - [Beefree Documentation](https://beefree.io/templates)
 - [Unlayer Documentation](https://unlayer.com/)
 - [Mailersend Documentation](https://www.mailersend.com/)
+<<<<<<< HEAD
 - [Mailjet Documentation](https://www.mailjet.com/) 
+=======
+- [Mailjet Documentation](https://www.mailjet.com/)
+>>>>>>> 6ed19256f (.)

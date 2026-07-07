@@ -14,6 +14,7 @@ return [
         'sort' => 87,
         'icon' => 'heroicon-o-building-office',
     ],
+<<<<<<< HEAD
     'label' => 'Tenant User',
     'plural_label' => 'Tenant User (Plurale)',
     'fields' => [
@@ -47,4 +48,10 @@ return [
             'label' => 'Elimina Tenant User',
         ],
     ],
+=======
+    'label' => '',
+    'plural_label' => '',
+    'fields' => [],
+    'actions' => [],
+>>>>>>> 6ed19256f (.)
 ];

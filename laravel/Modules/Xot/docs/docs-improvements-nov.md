@@ -106,8 +106,18 @@ docs/
 
 **Esempi trovati**:
 ```markdown
+<<<<<<< HEAD
 [regole php](docs/standards/php-inheritance-rules.md)
 public static string $projectBasePath = '../../../docs/standards/php-inheritance-rules.md)
+=======
+[regole php](/var/www/html/<directory progetto>/laravel/docs/standards/php-inheritance-rules.md)
+public static string $projectBasePath = '/var/www/html/<nome progetto>';
+```
+
+**Dovrebbe essere**:
+```markdown
+[regole php](../../../docs/standards/php-inheritance-rules.md)
+>>>>>>> 6ed19256f (.)
 // Path configurabili tramite env, non hardcoded
 ```
 
@@ -150,13 +160,20 @@ docs/
 
 ### Da Modules/Xot/docs/ a root docs/
 ```markdown
+<<<<<<< HEAD
 [guida principale](../../../../docs/guide.md)
+=======
+[guida principale](../../../docs/guide.md)
+>>>>>>> 6ed19256f (.)
 ```
 
 ### Tra moduli (Xot → User)
 ```markdown
 [user docs](../../User/docs/user-guide.md)
+<<<<<<< HEAD
 [user docs](../../user/docs/user-guide.md)
+=======
+>>>>>>> 6ed19256f (.)
 ```
 
 ### All'interno dello stesso modulo
@@ -369,8 +386,18 @@ docs/
 
 **Esempi trovati**:
 ```markdown
+<<<<<<< HEAD
 [regole php](docs/standards/php-inheritance-rules.md)
 public static string $projectBasePath = '../../../docs/standards/php-inheritance-rules.md)
+=======
+[regole php](/var/www/html/<directory progetto>/laravel/docs/standards/php-inheritance-rules.md)
+public static string $projectBasePath = '/var/www/html/saluteora';
+```
+
+**Dovrebbe essere**:
+```markdown
+[regole php](../../../docs/standards/php-inheritance-rules.md)
+>>>>>>> 6ed19256f (.)
 // Path configurabili tramite env, non hardcoded
 ```
 
@@ -413,13 +440,20 @@ docs/
 
 ### Da Modules/Xot/docs/ a root docs/
 ```markdown
+<<<<<<< HEAD
 [guida principale](../../../../docs/guide.md)
+=======
+[guida principale](../../../docs/guide.md)
+>>>>>>> 6ed19256f (.)
 ```
 
 ### Tra moduli (Xot → User)
 ```markdown
 [user docs](../../User/docs/user-guide.md)
+<<<<<<< HEAD
 [user docs](../../user/docs/user-guide.md)
+=======
+>>>>>>> 6ed19256f (.)
 ```
 
 ### All'interno dello stesso modulo
@@ -523,4 +557,8 @@ find . -name "readme.md" -o -name "Readme.md"
 1. **Correzione link assoluti**: Eseguire script `fix-absolute-paths-in-docs.sh` (con supervisione)
 2. **Applicare a tutti i moduli**: Replicare miglioramenti in Modules/*/docs/
 3. **Verificare backlink**: Assicurare collegamenti bidirezionali
+<<<<<<< HEAD
 4. **Index centrali**: Creare README.md con indici per navigazione rapida
+=======
+4. **Index centrali**: Creare README.md con indici per navigazione rapida
+>>>>>>> 6ed19256f (.)

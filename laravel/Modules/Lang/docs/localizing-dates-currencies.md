@@ -128,7 +128,11 @@ Questo approccio è coerente con le regole di localizzazione del progetto, che r
 Di seguito elenco i file che modificherei e le modifiche specifiche che apporterei per implementare la localizzazione di date e valute nel progetto `<nome progetto>`:
 
 1. **Configurazione di Carbon per la Localizzazione delle Date**:
+<<<<<<< HEAD
    - File: `app/Providers/AppServiceProvider.php`
+=======
+   - File: `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/app/Providers/AppServiceProvider.php`
+>>>>>>> 6ed19256f (.)
    - Modifica: Aggiungere la configurazione del locale di Carbon nel metodo `boot()`:
      ```php
      use Carbon\Carbon;
@@ -146,7 +150,11 @@ Di seguito elenco i file che modificherei e le modifiche specifiche che apporter
    - **Ragionamento**: Impostare il locale di Carbon con `app()->getLocale()` garantisce che tutte le date e differenze temporali siano formattate in base alla lingua corrente dell'utente (es. 'it' o 'en'). Questo è essenziale per un'applicazione multilingue come `<nome progetto>`, dove gli utenti devono vedere date nei formati familiari della loro lingua, come 'lunedì, 3 aprile 2023' in italiano. Questa modifica è coerente con le regole di localizzazione del progetto che richiedono l'uso del locale corrente.
 
 2. **Creazione di una Funzione Helper per Formattare Valute**:
+<<<<<<< HEAD
    - File: `app/helpers.php`
+=======
+   - File: `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/app/helpers.php`
+>>>>>>> 6ed19256f (.)
    - Modifica: Creare o aggiornare il file con la funzione `formatCurrency()`:
      ```php
      if (!function_exists('formatCurrency')) {
@@ -161,7 +169,11 @@ Di seguito elenco i file che modificherei e le modifiche specifiche che apporter
    - **Ragionamento**: Una funzione helper per formattare valute rende facile visualizzare prezzi in modo localizzato in tutta l'applicazione `<nome progetto>`. Usare `app()->getLocale()` come valore predefinito per il locale garantisce che la formattazione rispetti la lingua corrente dell'utente, come richiesto dalle regole di localizzazione del progetto. Impostare 'EUR' come valuta predefinita è appropriato per un contesto italiano, ma la funzione è flessibile per altre valute se necessario. Questo approccio è utile per mostrare costi di trattamenti o servizi in modo chiaro e corretto.
 
 3. **Uso della Localizzazione nelle Viste per Date e Valute**:
+<<<<<<< HEAD
    - File: `Modules/Dental/Resources/views/appointment.blade.php`
+=======
+   - File: `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Dental/Resources/views/appointment.blade.php`
+>>>>>>> 6ed19256f (.)
    - Modifica: Usare Carbon e la funzione helper per formattare date e valute:
      ```blade
      <!-- Data dell'appuntamento -->
@@ -176,7 +188,11 @@ Di seguito elenco i file che modificherei e le modifiche specifiche che apporter
 
 ## Introduzione
 
+<<<<<<< HEAD
 La localizzazione di date e valute è un aspetto cruciale per un'applicazione multilingue come `<nome progetto>`. Questa documentazione, basata sul corso di Laravel Daily, esplora come utilizzare Carbon per localizzare date e differenze temporali, e la classe `NumberFormatter` di PHP per formattare valute in base alla lingua corrente dell'utente.
+=======
+La localizzazione di date e valute è un aspetto cruciale per un'applicazione multilingue come `saluteora`. Questa documentazione, basata sul corso di Laravel Daily, esplora come utilizzare Carbon per localizzare date e differenze temporali, e la classe `NumberFormatter` di PHP per formattare valute in base alla lingua corrente dell'utente.
+>>>>>>> 6ed19256f (.)
 
 ## Localizzazione di Date con Carbon
 
@@ -289,9 +305,15 @@ if (!function_exists('formatCurrency')) {
 
 **Vantaggi**: Una funzione helper rende la formattazione delle valute accessibile ovunque nell'applicazione senza dover ripetere il codice di inizializzazione di `NumberFormatter`.
 
+<<<<<<< HEAD
 ## Analisi e Ragionamento per il Progetto `<nome progetto>`
 
 Nel contesto del progetto `<nome progetto>`, la localizzazione di date e valute è essenziale per garantire un'esperienza utente coerente e comprensibile in diverse lingue. Propongo di:
+=======
+## Analisi e Ragionamento per il Progetto `saluteora`
+
+Nel contesto del progetto `saluteora`, la localizzazione di date e valute è essenziale per garantire un'esperienza utente coerente e comprensibile in diverse lingue. Propongo di:
+>>>>>>> 6ed19256f (.)
 - Configurare Carbon per utilizzare il locale corrente in `AppServiceProvider`, garantendo che date e differenze temporali siano mostrate correttamente in italiano, inglese o altre lingue supportate.
 - Implementare una funzione helper per formattare valute, considerando che in un'applicazione sanitaria potrebbero essere visualizzati costi di trattamenti o servizi. Usare `NumberFormatter` assicura che i prezzi siano formattati correttamente in base alla lingua e al paese dell'utente.
 
@@ -299,10 +321,17 @@ Questo approccio è coerente con le regole di localizzazione del progetto, che r
 
 ## Modifiche Proposte
 
+<<<<<<< HEAD
 Di seguito elenco i file che modificherei e le modifiche specifiche che apporterei per implementare la localizzazione di date e valute nel progetto `<nome progetto>`:
 
 1. **Configurazione di Carbon per la Localizzazione delle Date**:
    - File: `app/Providers/AppServiceProvider.php`
+=======
+Di seguito elenco i file che modificherei e le modifiche specifiche che apporterei per implementare la localizzazione di date e valute nel progetto `saluteora`:
+
+1. **Configurazione di Carbon per la Localizzazione delle Date**:
+   - File: `/var/www/html/saluteora/laravel/app/Providers/AppServiceProvider.php`
+>>>>>>> 6ed19256f (.)
    - Modifica: Aggiungere la configurazione del locale di Carbon nel metodo `boot()`:
      ```php
      use Carbon\Carbon;
@@ -317,10 +346,17 @@ Di seguito elenco i file che modificherei e le modifiche specifiche che apporter
          }
      }
      ```
+<<<<<<< HEAD
    - **Ragionamento**: Impostare il locale di Carbon con `app()->getLocale()` garantisce che tutte le date e differenze temporali siano formattate in base alla lingua corrente dell'utente (es. 'it' o 'en'). Questo è essenziale per un'applicazione multilingue come `<nome progetto>`, dove gli utenti devono vedere date nei formati familiari della loro lingua, come 'lunedì, 3 aprile 2023' in italiano. Questa modifica è coerente con le regole di localizzazione del progetto che richiedono l'uso del locale corrente.
 
 2. **Creazione di una Funzione Helper per Formattare Valute**:
    - File: `app/helpers.php`
+=======
+   - **Ragionamento**: Impostare il locale di Carbon con `app()->getLocale()` garantisce che tutte le date e differenze temporali siano formattate in base alla lingua corrente dell'utente (es. 'it' o 'en'). Questo è essenziale per un'applicazione multilingue come `saluteora`, dove gli utenti devono vedere date nei formati familiari della loro lingua, come 'lunedì, 3 aprile 2023' in italiano. Questa modifica è coerente con le regole di localizzazione del progetto che richiedono l'uso del locale corrente.
+
+2. **Creazione di una Funzione Helper per Formattare Valute**:
+   - File: `/var/www/html/saluteora/laravel/app/helpers.php`
+>>>>>>> 6ed19256f (.)
    - Modifica: Creare o aggiornare il file con la funzione `formatCurrency()`:
      ```php
      if (!function_exists('formatCurrency')) {
@@ -332,10 +368,17 @@ Di seguito elenco i file che modificherei e le modifiche specifiche che apporter
          }
      }
      ```
+<<<<<<< HEAD
    - **Ragionamento**: Una funzione helper per formattare valute rende facile visualizzare prezzi in modo localizzato in tutta l'applicazione `<nome progetto>`. Usare `app()->getLocale()` come valore predefinito per il locale garantisce che la formattazione rispetti la lingua corrente dell'utente, come richiesto dalle regole di localizzazione del progetto. Impostare 'EUR' come valuta predefinita è appropriato per un contesto italiano, ma la funzione è flessibile per altre valute se necessario. Questo approccio è utile per mostrare costi di trattamenti o servizi in modo chiaro e corretto.
 
 3. **Uso della Localizzazione nelle Viste per Date e Valute**:
    - File: `Modules/Dental/Resources/views/appointment.blade.php`
+=======
+   - **Ragionamento**: Una funzione helper per formattare valute rende facile visualizzare prezzi in modo localizzato in tutta l'applicazione `saluteora`. Usare `app()->getLocale()` come valore predefinito per il locale garantisce che la formattazione rispetti la lingua corrente dell'utente, come richiesto dalle regole di localizzazione del progetto. Impostare 'EUR' come valuta predefinita è appropriato per un contesto italiano, ma la funzione è flessibile per altre valute se necessario. Questo approccio è utile per mostrare costi di trattamenti o servizi in modo chiaro e corretto.
+
+3. **Uso della Localizzazione nelle Viste per Date e Valute**:
+   - File: `/var/www/html/saluteora/laravel/Modules/Dental/Resources/views/appointment.blade.php`
+>>>>>>> 6ed19256f (.)
    - Modifica: Usare Carbon e la funzione helper per formattare date e valute:
      ```blade
      <!-- Data dell'appuntamento -->
@@ -345,4 +388,8 @@ Di seguito elenco i file che modificherei e le modifiche specifiche che apporter
      <!-- Costo del trattamento -->
      <p>Costo: {{ formatCurrency($appointment->cost) }}</p>
      ```
+<<<<<<< HEAD
    - **Ragionamento**: Nelle viste di `<nome progetto>`, come quelle per gli appuntamenti dentistici, mostrare date e differenze temporali con Carbon garantisce che siano localizzate automaticamente in base alla lingua dell'utente (es. 'lunedì, 3 aprile 2023' in italiano). Usare la funzione `formatCurrency()` per i costi assicura che i prezzi siano formattati correttamente (es. '35,578.88 €' in italiano). Questo migliora l'usabilità e rispetta le regole di localizzazione del progetto che richiedono l'uso del locale corrente per tutti gli elementi visibili all'utente.
+=======
+   - **Ragionamento**: Nelle viste di `saluteora`, come quelle per gli appuntamenti dentistici, mostrare date e differenze temporali con Carbon garantisce che siano localizzate automaticamente in base alla lingua dell'utente (es. 'lunedì, 3 aprile 2023' in italiano). Usare la funzione `formatCurrency()` per i costi assicura che i prezzi siano formattati correttamente (es. '35,578.88 €' in italiano). Questo migliora l'usabilità e rispetta le regole di localizzazione del progetto che richiedono l'uso del locale corrente per tutti gli elementi visibili all'utente.
+>>>>>>> 6ed19256f (.)

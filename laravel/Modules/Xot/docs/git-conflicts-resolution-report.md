@@ -80,6 +80,10 @@ I seguenti 4 file PHP hanno ancora conflitti di merge:
 ## Data
 - **Data rilevamento**: 2025-11-12
 - **Data risoluzione**: 2025-11-12
+<<<<<<< HEAD
 - **Data rilevamento**: [DATE]
 - **Data risoluzione**: [DATE]
 - **Percentuale completamento**: 95%
+=======
+- **Percentuale completamento**: 95%
+>>>>>>> 6ed19256f (.)

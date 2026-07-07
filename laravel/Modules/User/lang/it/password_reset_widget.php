@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Reset Password',
         'plural_label' => 'Reset Password',
@@ -33,4 +34,18 @@ return [
         'success' => 'Link di reset inviato con successo',
         'error' => 'Si è verificato un errore',
     ],
+=======
+    'fields' => [
+        'email' => [
+            'label' => 'email',
+            'placeholder' => 'email',
+            'helper_text' => '',
+            'description' => 'email',
+        ],
+    ],
+    'navigation' => [],
+    'label' => '',
+    'plural_label' => '',
+    'actions' => [],
+>>>>>>> 6ed19256f (.)
 ];

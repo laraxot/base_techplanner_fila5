@@ -3,9 +3,12 @@
 > - [FILAMENT_COMPONENTS.md tema One](../../../../Themes/One/docs/FILAMENT_COMPONENTS.md)
 
 # Utilizzo dei Componenti Filament
+<<<<<<< HEAD
 > - [FILAMENT_COMPONENTS.md tema One](../../../../themes/one/project_docs/filament_components.md)
 
 # Utilizzo dei Componenti Filament 
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Regola Fondamentale
 
@@ -15,9 +18,12 @@ In il progetto, **privilegiare sempre i componenti Blade nativi di Filament** ri
 > - [Indice generale dei collegamenti](../../../../docs/collegamenti-documentazione.md)
 > - [Documentazione principale](../../../../docs/rules/filament-components.md)
 > - [Documentazione nel tema](../../../../Themes/One/docs/FILAMENT_COMPONENTS.md)
+<<<<<<< HEAD
 > - [Indice generale dei collegamenti](../../../../../docs/project/collegamenti-documentazione.md)
 > - [Documentazione principale](../../../../../docs/project/rules/filament-components.md)
 > - [Documentazione nel tema](../../../../themes/one/project_docs/filament_components.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Motivazione
 
@@ -60,7 +66,10 @@ Filament offre una vasta gamma di componenti Blade riutilizzabili. Di seguito i 
 </x-filament::button>
 
 <x-filament::button
+<<<<<<< HEAD
 <x-filament::button 
+=======
+>>>>>>> 6ed19256f (.)
     color="success"           {{-- primary, secondary, success, warning, danger --}}
     size="md"                {{-- xs, sm, md, lg, xl --}}
     icon="heroicon-o-plus"   {{-- qualsiasi icona Heroicon --}}
@@ -81,7 +90,10 @@ Filament offre una vasta gamma di componenti Blade riutilizzabili. Di seguito i 
 </x-filament::badge>
 
 <x-filament::badge
+<<<<<<< HEAD
 <x-filament::badge 
+=======
+>>>>>>> 6ed19256f (.)
     color="success"         {{-- primary, secondary, success, warning, danger --}}
     size="md"              {{-- xs, sm, md, lg --}}
     icon="heroicon-o-check" {{-- qualsiasi icona Heroicon --}}
@@ -110,10 +122,13 @@ Filament offre una vasta gamma di componenti Blade riutilizzabili. Di seguito i 
 
 ```blade
 <x-filament::input.wrapper>
+<<<<<<< HEAD
     <x-filament::input 
         type="text" 
         wire:model="name" 
         placeholder="Nome" 
+=======
+>>>>>>> 6ed19256f (.)
     <x-filament::input
         type="text"
         wire:model="name"
@@ -133,17 +148,23 @@ Filament offre una vasta gamma di componenti Blade riutilizzabili. Di seguito i 
 
 1. **Mai Sovrascrivere gli Stili Base**: Estendere i componenti Filament aggiungendo classi CSS, non sovrascrivendo quelle esistenti
 2. **Utilizzare Props Documentate**: Consultare la [documentazione ufficiale](https://filamentphp.com/docs/3.x/support/blade-components/overview) per le props disponibili
+<<<<<<< HEAD
 2. **Utilizzare Props Documentate**: Consultare la [documentazione ufficiale](https://filamentphp.com/project_docs/3.x/support/blade-components/overview) per le props disponibili
+=======
+>>>>>>> 6ed19256f (.)
 3. **Dark Mode**: Utilizzare le funzionalità native di dark mode invece di implementazioni personalizzate
 4. **Estensibilità**: Sfruttare gli slot per personalizzare sezioni specifiche dei componenti
 
 ## Riferimenti
 
+<<<<<<< HEAD
 - [Documentazione ufficiale Filament](https://filamentphp.com/project_docs/3.x/support/blade-components/overview)
 - [Demo dei componenti](https://demo.filamentphp.com/)
 
 ## Collegamenti Bidirezionali
 - [README](readme.md) - Documentazione principale del modulo
+=======
+>>>>>>> 6ed19256f (.)
 - [Documentazione ufficiale Filament](https://filamentphp.com/docs/3.x/support/blade-components/overview)
 - [Demo dei componenti](https://demo.filamentphp.com/)
 
@@ -157,6 +178,7 @@ Filament offre una vasta gamma di componenti Blade riutilizzabili. Di seguito i 
 - [Blade Components](filament-blade-components.md) - Componenti Blade personalizzati
 
 ## Vedi Anche
+<<<<<<< HEAD
 - [Modulo UI](../ui/project_docs/readme.md) - Componenti UI riutilizzabili
 - [Modulo Xot](../xot/project_docs/readme.md) - Classi base Filament personalizzate
 - [Modulo Theme](../theme/project_docs/readme.md) - Personalizzazione temi Filament
@@ -168,6 +190,8 @@ Filament offre una vasta gamma di componenti Blade riutilizzabili. Di seguito i 
 * [filament-components.md](laravel/modules/cms/project_docs/filament-components.md)
 * [filament-components.md](laravel/project_docs/rules/filament-components.md)
 
+=======
+>>>>>>> 6ed19256f (.)
 - [Modulo UI](../UI/docs/README.md) - Componenti UI riutilizzabili
 - [Modulo Xot](../Xot/docs/README.md) - Classi base Filament personalizzate
 - [Modulo Theme](../Theme/docs/README.md) - Personalizzazione temi Filament
@@ -177,4 +201,8 @@ Filament offre una vasta gamma di componenti Blade riutilizzabili. Di seguito i 
 * [filament-components.md](laravel/Modules/User/docs/best-practices/filament-components.md)
 * [filament-components.md](laravel/Modules/Cms/docs/best-practices/filament-components.md)
 * [filament-components.md](laravel/Modules/Cms/docs/filament-components.md)
+<<<<<<< HEAD
 * [filament-components.md](laravel/docs/rules/filament-components.md)
+=======
+* [filament-components.md](laravel/docs/rules/filament-components.md)
+>>>>>>> 6ed19256f (.)

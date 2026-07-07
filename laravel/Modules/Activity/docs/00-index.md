@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 📚 **Indice Documentazione Modulo Activity**
 
 **Status**: ✅ PHPStan Level 10 Compliant
@@ -67,6 +68,8 @@
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+=======
+>>>>>>> 6ed19256f (.)
 # Activity Module - Documentation Index
 
 **Last Update**: 13 Dicembre 2025
@@ -191,6 +194,7 @@ Il modulo Activity serve da **riferimento** per compliance nativa:
 ---
 
 *Modulo di riferimento per PHPStan compliance nel progetto Laraxot*
+<<<<<<< HEAD
 
 ## Dependency Intelligence
 
@@ -202,3 +206,5 @@ Il modulo Activity serve da **riferimento** per compliance nativa:
 - Riferimento globale: [Pre-Edit Docs-First Rule](../../../../docs/rules/pre-edit-docs-first-rule.md)
 - Memory: [Pre-Edit Docs-First Memory](../../../../docs/memory/pre-edit-docs-first-memory.md)
 - Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
+=======
+>>>>>>> 6ed19256f (.)

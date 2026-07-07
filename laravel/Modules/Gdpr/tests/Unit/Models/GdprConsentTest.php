@@ -2,6 +2,12 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+use Modules\Gdpr\Models\GdprConsent;
+use Modules\User\Models\User;
+
+>>>>>>> 6ed19256f (.)
 test('gdpr consent can be created', function () {
     $user = User::factory()->create();
 

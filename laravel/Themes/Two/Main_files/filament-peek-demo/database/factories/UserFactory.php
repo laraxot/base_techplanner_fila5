@@ -2,9 +2,15 @@
 
 namespace Database\Factories;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 use Modules\User\Models\User;
+=======
+use Modules\User\Models\User;
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
+>>>>>>> 6ed19256f (.)
 
 /**
  * @extends Factory<User>
@@ -39,5 +45,8 @@ class UserFactory extends Factory
         ]);
     }
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 6ed19256f (.)

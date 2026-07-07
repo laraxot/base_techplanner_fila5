@@ -8,13 +8,21 @@ use Exception;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
+<<<<<<< HEAD
 use SimpleXMLElement;
 use Webmozart\Assert\Assert;
 
+=======
+>>>>>>> 6ed19256f (.)
 use function Safe\file_put_contents;
 use function Safe\fopen;
 use function Safe\realpath;
 use function Safe\simplexml_load_string;
+<<<<<<< HEAD
+=======
+use SimpleXMLElement;
+use Webmozart\Assert\Assert;
+>>>>>>> 6ed19256f (.)
 
 /**
  * SubtitleService.
@@ -40,7 +48,11 @@ class SubtitleService
     public static function getInstance(): self
     {
         if (! (self::$instance instanceof self)) {
+<<<<<<< HEAD
             self::$instance = new self;
+=======
+            self::$instance = new self();
+>>>>>>> 6ed19256f (.)
         }
 
         return self::$instance;
@@ -158,8 +170,13 @@ class SubtitleService
                     'item_i' => $item_i,
                     'start' => $start,
                     'end' => $end,
+<<<<<<< HEAD
                     'time' => $this->secondsToHms($start).','.$this->secondsToHms($end),
                     'text' => (string) $item,
+=======
+                    'time' => secondsToHms($start).','.secondsToHms($end),
+                    'text' => $item->__toString(),
+>>>>>>> 6ed19256f (.)
                 ];
                 $data[] = $tmp;
                 $item_i++;
@@ -171,6 +188,7 @@ class SubtitleService
         return $data;
     }
 
+<<<<<<< HEAD
     private function secondsToHms(int|float $seconds): string
     {
         $totalMs = (int) round($seconds * 1000);
@@ -182,6 +200,8 @@ class SubtitleService
         return sprintf('%02d:%02d:%02d,%03d', $hours, $minutes, $secs, $ms);
     }
 
+=======
+>>>>>>> 6ed19256f (.)
     /**
      * Undocumented function.
      */

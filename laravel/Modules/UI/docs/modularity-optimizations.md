@@ -12,9 +12,15 @@ Durante l'audit del modulo `UI`, sono state identificate **violazioni critiche d
 use Modules\<nome modulo>\Models\User;
 use Modules\<nome modulo>\Models\Patient;
 use Modules\<nome modulo>\States\User\UserState;
+<<<<<<< HEAD
 use Modules\<nome progetto>\Models\User;
 use Modules\<nome progetto>\Models\Patient;
 use Modules\<nome progetto>\States\User\UserState;
+=======
+use Modules\SaluteOra\Models\User;
+use Modules\SaluteOra\Models\Patient;
+use Modules\SaluteOra\States\User\UserState;
+>>>>>>> 6ed19256f (.)
 ```
 
 **File contaminati:**
@@ -28,12 +34,21 @@ use Modules\<nome progetto>\States\User\UserState;
 // ❌ ERRORE CRITICO - Traduzioni hardcoded
 __('<nome progetto>::widgets.find_doctor_and_appointment.messages.studio_selected_title')
 __('<nome progetto>::widgets.find_doctor_and_appointment.studio_list.title')
+<<<<<<< HEAD
 __('<nome progetto>::widgets.find_doctor_and_appointment.messages.studio_selected_title')
 __('<nome progetto>::widgets.find_doctor_and_appointment.studio_list.title')
 __('<nome progetto>::widgets.find_doctor_and_appointment.messages.studio_selected_title')
 __('<nome progetto>::widgets.find_doctor_and_appointment.studio_list.title')
 __('<nome progetto>::widgets.find_doctor_and_appointment.messages.studio_selected_title')
 __('<nome progetto>::widgets.find_doctor_and_appointment.studio_list.title')
+=======
+__('saluteora::widgets.find_doctor_and_appointment.messages.studio_selected_title')
+__('saluteora::widgets.find_doctor_and_appointment.studio_list.title')
+__('saluteora::widgets.find_doctor_and_appointment.messages.studio_selected_title')
+__('saluteora::widgets.find_doctor_and_appointment.studio_list.title')
+__('saluteora::widgets.find_doctor_and_appointment.messages.studio_selected_title')
+__('saluteora::widgets.find_doctor_and_appointment.studio_list.title')
+>>>>>>> 6ed19256f (.)
 ```
 
 **File contaminati:**
@@ -201,8 +216,13 @@ Ogni progetto può personalizzare i modelli, stati e traduzioni tramite variabil
 # Verifica dipendenze hardcoded
 grep -r "Modules\\" laravel/Modules/UI/ --include="*.php"
 grep -r "<nome progetto>::" laravel/Modules/UI/ --include="*.php"
+<<<<<<< HEAD
 grep -r "Modules\\<nome progetto>" laravel/Modules/UI/ --include="*.php"
 grep -r "<nome progetto>::" laravel/Modules/UI/ --include="*.php"
+=======
+grep -r "Modules\\SaluteOra" laravel/Modules/UI/ --include="*.php"
+grep -r "saluteora::" laravel/Modules/UI/ --include="*.php"
+>>>>>>> 6ed19256f (.)
 ```
 
 ### Risultato Atteso
@@ -210,11 +230,18 @@ Dopo l'ottimizzazione completa, i comandi devono restituire **0 occorrenze**.
 
 ## Documentazione Correlata
 
+<<<<<<< HEAD
 - [UI Best Practices](./best-practices/README.md)
 - [Root Docs: Modularity Hardcoded Names](../../../../docs/modularity-hardcoded-names.md)
 - [Regole Cursor: Modularity Rules](../../../.cursor/rules/modularity-hardcoded-names.mdc)
 - [UI Architecture Overview](./architecture-overview.md)
 - [UI Best Practices](./best-practices/readme.md)
+=======
+- [Root Docs: Modularity Hardcoded Names](../../../docs/modularity-hardcoded-names.md)
+- [Regole Cursor: Modularity Rules](../../../.cursor/rules/modularity-hardcoded-names.mdc)
+- [UI Architecture Overview](./architecture-overview.md)
+- [UI Best Practices](./best-practices/README.md)
+>>>>>>> 6ed19256f (.)
 
 ## Note di Implementazione
 
@@ -232,4 +259,8 @@ Dopo l'ottimizzazione completa, i comandi devono restituire **0 occorrenze**.
 
 ---
 
+<<<<<<< HEAD
 **Queste ottimizzazioni sono CRITICHE per mantenere l'architettura modulare del sistema. Ogni violazione deve essere corretta immediatamente.**
+=======
+**Queste ottimizzazioni sono CRITICHE per mantenere l'architettura modulare del sistema. Ogni violazione deve essere corretta immediatamente.**
+>>>>>>> 6ed19256f (.)

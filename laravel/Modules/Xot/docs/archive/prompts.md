@@ -4,7 +4,10 @@ I prompt sono file di testo che contengono istruzioni per l'AI. Devono seguire q
 
 1. **Regola Fondamentale**:
    - Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompts), vedi [Regola prompt condivisi](./PROMPT_RULES.md)
+<<<<<<< HEAD
    - Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompts), vedi [Regola prompt condivisi](./prompt_rules.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 2. **Contenuto**:
    - Devono essere chiari e concisi
@@ -50,7 +53,10 @@ I prompt sono file di testo che contengono istruzioni per l'AI. Devono seguire q
 Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompts), vedi:
 
 - [Regola Universale per i Prompt](./PROMPT_RULES.md)
+<<<<<<< HEAD
 - [Regola Universale per i Prompt](./prompt_rules.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Collegamenti
 - [Documentazione Generale](./documentation.md)
@@ -64,7 +70,10 @@ Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompt
 ## Collegamenti tra versioni di prompts.md
 * [prompts.md](docs/prompts.md)
 * [prompts.md](../../../Xot/project_docs/prompts.md)
+<<<<<<< HEAD
 * [prompts.md](../../../xot/project_docs/prompts.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Modifiche al Prompt docs.txt
 
@@ -83,15 +92,22 @@ Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompt
 ### Collegamenti Correlati
 - [Regole Universali](./PROMPT_RULES.md)
 - [Gestione Documentazione](./DOCUMENTATION_MANAGEMENT.md)
+<<<<<<< HEAD
 - [Regole Universali](./prompt_rules.md)
 - [Gestione Documentazione](./documentation_management.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Struttura Moduli](./module-structure.md)
 
 ## Errori Comuni da Evitare
 
 ### Percorsi Assoluti
 ⚠️ **Problema Identificato**: Uso di percorsi assoluti nei collegamenti
+<<<<<<< HEAD
 ❌ Esempio errato: `Modules/Xot/project_docs/file.md`
+=======
+❌ Esempio errato: `/var/www/html/saluteora/laravel/Modules/Xot/project_docs/file.md`
+>>>>>>> 6ed19256f (.)
 ✅ Esempio corretto: `./file.md` o `../altro-modulo/file.md`
 
 ### Impatto dell'Errore
@@ -178,4 +194,8 @@ Il prompt `docs.txt` serve come:
 3. **Collegamenti Standardizzati**:
    ```markdown
    [Documento](./path/relativo) #tag-correlati
+<<<<<<< HEAD
    ```
+=======
+   ```
+>>>>>>> 6ed19256f (.)

@@ -184,8 +184,12 @@ trait SushiToJsons
     protected function loadFromJson(): array
     {
         $path = $this->getJsonFile();
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         if (!File::exists($path)) {
             return [];
         }
@@ -302,8 +306,12 @@ class SushiCommand extends Command
 
         try {
             $path = base_path('database/content/comuni.json');
+<<<<<<< HEAD
             
             
+=======
+
+>>>>>>> 6ed19256f (.)
             if (!File::exists($path)) {
                 $this->error('File comuni.json non trovato');
                 return 1;
@@ -311,9 +319,12 @@ class SushiCommand extends Command
 
             $data = json_decode(File::get($path), true);
 
+<<<<<<< HEAD
             
             $data = json_decode(File::get($path), true);
             
+=======
+>>>>>>> 6ed19256f (.)
             if (json_last_error() !== JSON_ERROR_NONE) {
                 $this->error('Errore nel parsing del file JSON: ' . json_last_error_msg());
                 return 1;
@@ -321,9 +332,12 @@ class SushiCommand extends Command
 
             DB::table('comuni')->truncate();
 
+<<<<<<< HEAD
             
             DB::table('comuni')->truncate();
             
+=======
+>>>>>>> 6ed19256f (.)
             foreach ($data as $comune) {
                 DB::table('comuni')->insert([
                     'id' => $comune['id'],
@@ -337,8 +351,12 @@ class SushiCommand extends Command
                     'updated_at' => $comune['updated_at'] ?? now(),
                 ]);
             }
+<<<<<<< HEAD
             
             
+=======
+
+>>>>>>> 6ed19256f (.)
             $this->info('Database SQLite di Sushi aggiornato con successo');
             return 0;
         } catch (\Exception $e) {
@@ -368,29 +386,45 @@ class SushiCommand extends Command
         try {
             $count = DB::table('comuni')->count();
             $this->info("Numero di comuni: {$count}");
+<<<<<<< HEAD
             
             
+=======
+
+>>>>>>> 6ed19256f (.)
             $regioni = DB::table('comuni')
                 ->select('regione')
                 ->distinct()
                 ->count();
             $this->info("Numero di regioni: {$regioni}");
+<<<<<<< HEAD
             
             
+=======
+
+>>>>>>> 6ed19256f (.)
             $province = DB::table('comuni')
                 ->select('provincia')
                 ->distinct()
                 ->count();
             $this->info("Numero di province: {$province}");
+<<<<<<< HEAD
             
             
+=======
+
+>>>>>>> 6ed19256f (.)
             $cap = DB::table('comuni')
                 ->select('cap')
                 ->distinct()
                 ->count();
             $this->info("Numero di CAP: {$cap}");
+<<<<<<< HEAD
             
             
+=======
+
+>>>>>>> 6ed19256f (.)
             return 0;
         } catch (\Exception $e) {
             $this->error('Errore durante la verifica dello stato del database: ' . $e->getMessage());
@@ -429,8 +463,12 @@ class ComuneTest extends TestCase
     protected function setUp(): void
     {
         parent::setUp();
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         $this->testData = [
             [
                 'id' => 1,
@@ -455,8 +493,12 @@ class ComuneTest extends TestCase
                 'updated_at' => now(),
             ],
         ];
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         File::put(
             base_path('database/content/comuni.json'),
             json_encode($this->testData, JSON_PRETTY_PRINT)
@@ -474,8 +516,12 @@ class ComuneTest extends TestCase
     public function it_can_load_comuni_from_json()
     {
         $comuni = Comune::all();
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         $this->assertCount(2, $comuni);
         $this->assertEquals('Milano', $comuni[0]->comune);
         $this->assertEquals('Sesto San Giovanni', $comuni[1]->comune);
@@ -552,4 +598,8 @@ git checkout -- app/Models/Comune.php
 - [Sushi Documentation](https://github.com/calebporzio/sushi)
 - [Comune Model](comune-model.md)
 - [Sushi Configuration](sushi-configuration.md)
+<<<<<<< HEAD
 - [Sushi Command](sushi-command.md)
+=======
+- [Sushi Command](sushi-command.md)
+>>>>>>> 6ed19256f (.)

@@ -3,6 +3,10 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
+=======
+    // NAVIGATION & STRUCTURE
+>>>>>>> 6ed19256f (.)
     'navigation' => [
         'label' => 'Azioni CMS',
         'plural_label' => 'Azioni CMS',
@@ -11,11 +15,19 @@ return [
         'sort' => 120,
         'badge' => 'Gestione azioni CMS',
     ],
+<<<<<<< HEAD
+=======
+    // MODEL INFORMATION
+>>>>>>> 6ed19256f (.)
     'model' => [
         'label' => 'Azione CMS',
         'plural' => 'Azioni CMS',
         'description' => 'Sistema di azioni e controlli per il Content Management System',
     ],
+<<<<<<< HEAD
+=======
+    // FIELDS - STRUTTURA ESPANSA OBBLIGATORIA
+>>>>>>> 6ed19256f (.)
     'fields' => [
         'items' => [
             'label' => 'Elementi',
@@ -23,7 +35,10 @@ return [
             'tooltip' => 'Elementi dell\'azione',
             'helper_text' => 'Lista degli elementi che compongono l\'azione',
             'help' => 'Seleziona gli elementi che faranno parte di questa azione',
+<<<<<<< HEAD
             'description' => 'items',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'label' => [
             'label' => 'Etichetta',
@@ -31,7 +46,10 @@ return [
             'tooltip' => 'Etichetta dell\'azione',
             'helper_text' => 'Testo che viene visualizzato per identificare l\'azione',
             'help' => 'Inserisci un\'etichetta descrittiva per l\'azione',
+<<<<<<< HEAD
             'description' => 'label',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'url' => [
             'label' => 'URL',
@@ -39,7 +57,10 @@ return [
             'tooltip' => 'URL di destinazione',
             'helper_text' => 'Indirizzo web a cui l\'azione reindirizzerà l\'utente',
             'help' => 'Inserisci l\'URL completo di destinazione',
+<<<<<<< HEAD
             'description' => 'url',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'style' => [
             'label' => 'Stile',
@@ -47,7 +68,10 @@ return [
             'tooltip' => 'Stile visivo dell\'azione',
             'helper_text' => 'Aspetto visivo e styling applicato all\'azione',
             'help' => 'Scegli lo stile più appropriato per l\'azione',
+<<<<<<< HEAD
             'description' => 'style',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'icon' => [
             'label' => 'Icona',
@@ -55,7 +79,10 @@ return [
             'tooltip' => 'Icona dell\'azione',
             'helper_text' => 'Icona grafica che rappresenta l\'azione nell\'interfaccia',
             'help' => 'Scegli un\'icona che rappresenti chiaramente l\'azione',
+<<<<<<< HEAD
             'description' => 'icon',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'size' => [
             'label' => 'Dimensione',
@@ -63,7 +90,10 @@ return [
             'tooltip' => 'Dimensione dell\'elemento',
             'helper_text' => 'Dimensione fisica dell\'azione nell\'interfaccia utente',
             'help' => 'Seleziona la dimensione appropriata per l\'azione',
+<<<<<<< HEAD
             'description' => 'size',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'alignment' => [
             'label' => 'Allineamento',
@@ -71,7 +101,10 @@ return [
             'tooltip' => 'Allineamento dell\'azione',
             'helper_text' => 'Posizionamento dell\'azione rispetto agli altri elementi',
             'help' => 'Scegli l\'allineamento più appropriato nell\'interfaccia',
+<<<<<<< HEAD
             'description' => 'alignment',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'gap' => [
             'label' => 'Spaziatura',
@@ -79,9 +112,15 @@ return [
             'tooltip' => 'Spazio tra gli elementi',
             'helper_text' => 'Distanza tra l\'azione e gli elementi circostanti',
             'help' => 'Imposta la spaziatura adeguata per una buona leggibilità',
+<<<<<<< HEAD
             'description' => 'gap',
         ],
     ],
+=======
+        ],
+    ],
+    // ACTIONS - STRUTTURA ESPANSA OBBLIGATORIA
+>>>>>>> 6ed19256f (.)
     'actions' => [
         'create' => [
             'label' => 'Crea Azione',
@@ -138,6 +177,10 @@ return [
             'tooltip' => 'Visualizza anteprima dell\'azione',
         ],
     ],
+<<<<<<< HEAD
+=======
+    // SECTIONS - ORGANIZZAZIONE FORM
+>>>>>>> 6ed19256f (.)
     'sections' => [
         'basic_info' => [
             'label' => 'Informazioni Base',
@@ -155,6 +198,10 @@ return [
             'icon' => 'heroicon-o-cog',
         ],
     ],
+<<<<<<< HEAD
+=======
+    // FILTERS - RICERCA E FILTRI
+>>>>>>> 6ed19256f (.)
     'filters' => [
         'style' => [
             'label' => 'Stile',
@@ -169,6 +216,10 @@ return [
             'placeholder' => 'Filtra per allineamento',
         ],
     ],
+<<<<<<< HEAD
+=======
+    // MESSAGES - FEEDBACK UTENTE
+>>>>>>> 6ed19256f (.)
     'messages' => [
         'empty_state' => 'Nessuna azione configurata',
         'search_placeholder' => 'Cerca azioni...',
@@ -182,12 +233,20 @@ return [
         'error_permission' => 'Non hai i permessi per eseguire questa azione.',
         'success_operation' => 'Operazione completata con successo',
     ],
+<<<<<<< HEAD
+=======
+    // VALIDATION - MESSAGGI DI VALIDAZIONE
+>>>>>>> 6ed19256f (.)
     'validation' => [
         'label_required' => 'L\'etichetta è obbligatoria',
         'url_format' => 'L\'URL deve essere in formato valido',
         'style_required' => 'Lo stile è obbligatorio',
         'icon_required' => 'L\'icona è obbligatoria',
     ],
+<<<<<<< HEAD
+=======
+    // OPTIONS - OPZIONI E VALORI PREDEFINITI
+>>>>>>> 6ed19256f (.)
     'options' => [
         'styles' => [
             'primary' => 'Primario',
@@ -208,6 +267,9 @@ return [
             'right' => 'Destra',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Actions',
     'plural_label' => 'Actions (Plurale)',
+=======
+>>>>>>> 6ed19256f (.)
 ];

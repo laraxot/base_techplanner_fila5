@@ -3,7 +3,10 @@
 /**
  * --.
  */
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\TenantResource\Pages;
@@ -34,10 +37,17 @@ class CreateTenant extends XotBaseCreateRecord
     //  */
     // private function createTenantRecord(array $data)
     // {
+<<<<<<< HEAD
     //     \Log::debug('Saving Tenant');
     //     $record = new Tenant(collect($data)->except('domain')->toArray());
     //     $record->saveOrFail();
     //     \Log::debug('Saving Domains');
+=======
+    //     \Log::info('Saving Tenant');
+    //     $record = new Tenant(collect($data)->except('domain')->toArray());
+    //     $record->saveOrFail();
+    //     \Log::info('Saving Domains');
+>>>>>>> 6ed19256f (.)
     //     $record = $record::find($record->);
     //     $record->domains()->create(['domain' => collect($data)->get('domain')]);
     //     return $record;

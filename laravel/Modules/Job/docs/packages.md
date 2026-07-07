@@ -6,9 +6,12 @@
 - [laraxot/module_xot_fila3](../Xot/docs/packages.md) - Modulo base per funzionalità comuni
 - [laraxot/module_ui](../UI/docs/packages.md) - Componenti UI e temi
 - [laraxot/module_tenant_fila3](../Tenant/docs/packages.md) - Gestione multi-tenant
+<<<<<<< HEAD
 - [laraxot/module_xot_fila5](../xot/docs/packages.md) - Modulo base per funzionalità comuni
 - [laraxot/module_ui](../ui/docs/packages.md) - Componenti UI e temi
 - [laraxot/module_tenant_fila5](../tenant/docs/packages.md) - Gestione multi-tenant
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Queue
 - [laravel/horizon](https://github.com/laravel/horizon)
@@ -67,6 +70,7 @@
 ### Versione HEAD
 
 ## Collegamenti tra versioni di packages.md
+<<<<<<< HEAD
 * [packages.md](../../../gdpr/docs/packages.md)
 * [packages.md](../../../notify/docs/packages.md)
 * [packages.md](../../../xot/docs/packages.md)
@@ -76,6 +80,8 @@
 * [packages.md](../../../job/docs/packages.md)
 * [packages.md](../../../media/docs/packages.md)
 * [packages.md](../../../tenant/docs/packages.md)
+=======
+>>>>>>> 6ed19256f (.)
 * [packages.md](../../../Gdpr/docs/packages.md)
 * [packages.md](../../../Notify/docs/packages.md)
 * [packages.md](../../../Xot/docs/packages.md)
@@ -92,4 +98,8 @@
 
 ### Versione Incoming
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> 6ed19256f (.)

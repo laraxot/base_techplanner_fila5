@@ -2,7 +2,11 @@
 
 ## Riferimento Principale
 
+<<<<<<< HEAD
 📚 **Documento Completo:** [../../../../docs/analisi-metodi-duplicati.md](../../../../docs/analisi-metodi-duplicati.md)
+=======
+📚 **Documento Completo:** [../../../docs/analisi-metodi-duplicati.md](../../../docs/analisi-metodi-duplicati.md)
+>>>>>>> 6ed19256f (.)
 
 ## Stato del Modulo Cms
 
@@ -199,14 +203,23 @@ protected function casts(): array
 
 ## Link Correlati
 
+<<<<<<< HEAD
 - 📖 [Modulo Xot - Classi Base](../../Xot/docs/analisi-metodi-duplicati.md)
 - 📚 [Analisi Completa](../../../../docs/analisi-metodi-duplicati.md)
 - 📖 [Modulo Xot - Classi Base](../../xot/docs/analisi-metodi-duplicati.md)
+=======
+- 📚 [Analisi Completa](../../../docs/analisi-metodi-duplicati.md)
+- 📖 [Modulo Xot - Classi Base](../../Xot/docs/analisi-metodi-duplicati.md)
+>>>>>>> 6ed19256f (.)
 - 📖 [Convenzioni Namespace Filament](./convenzioni-namespace-filament.md)
 - 📖 [Gestione Temi](./frontoffice/create-theme.md)
 
 ---
 
 **Data:** 2025-10-15
+<<<<<<< HEAD
 **Data:** [DATE]
 **Status:** 📋 Draft per Review
+=======
+**Status:** 📋 Draft per Review
+>>>>>>> 6ed19256f (.)

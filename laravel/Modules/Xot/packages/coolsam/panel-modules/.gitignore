@@ -25,6 +25,7 @@ cache/
 -e 
 # PHPStan documentation
 docs/phpstan/
+<<<<<<< HEAD
 _docs/
 
 # Backup files
@@ -32,3 +33,5 @@ _docs/
 *.backup.*
 *.backup-*
 *.backup_*
+=======
+>>>>>>> 6ed19256f (.)

@@ -325,7 +325,11 @@ function generateRefinedReport(array $issues): string
 }
 
 // Esegui audit raffinato
+<<<<<<< HEAD
 $basePath = '/var/www/html/_bases/base_<nome progetto>/laravel';
+=======
+$basePath = '/var/www/html/_bases/base_saluteora/laravel';
+>>>>>>> 6ed19256f (.)
 echo "Inizio audit raffinato per testi italiani REALI in file non italiani...\n";
 
 $issues = auditRealItalianText($basePath);

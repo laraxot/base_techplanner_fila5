@@ -539,6 +539,7 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file [LICENSE](LICE
   <br>
   <em>Costruito con ❤️ per la comunità Laravel</em>
 </div>
+<<<<<<< HEAD
 # 📬 Notify
 
 [![Domain-Notify](https://img.shields.io/badge/Domain-Notifications-E65100.svg)](#)
@@ -595,3 +596,5 @@ Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 ---
 
 **Modulo** `notify` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+>>>>>>> 6ed19256f (.)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Code Quality Guidelines for Laravel Modules
 
 ## Overview
@@ -40,6 +41,30 @@ This document outlines the best practices for maintaining high code quality with
 - Use dependency injection to avoid direct instantiation of dependencies, promoting testability and flexibility.
 
 ## Code Quality Tools
+=======
+# Laraxot Code Quality Standards
+
+## Overview
+
+This document defines the mandatory code quality standards for Laraxot projects. These rules ensure consistency, maintainability, and adherence to the Laraxot framework philosophy across all modules.
+
+## Core Principles
+
+### 1. Strict Typing and PHPStan Level 9+
+- **ALWAYS** use `declare(strict_types=1);` at the beginning of every PHP file
+- **MINIMUM** PHPStan level 9 for all new code
+- **NEVER** use `mixed` types unless absolutely necessary
+- **ALWAYS** provide explicit return types and parameter types
+
+```php
+<?php
+
+declare(strict_types=1);
+
+namespace Modules\ModuleName\Models;
+
+use Modules\ModuleName\Models\BaseModel;
+>>>>>>> 6ed19256f (.)
 
 /**
  * @property int $id
@@ -62,6 +87,7 @@ class ExampleModel extends BaseModel
     }
 }
 ```
+<<<<<<< HEAD
 ### Automation Scripts
 
 - [fix_docs_case](../../../../../bashscripts/project_docs/docs/fix_docs_case.md) - Automatic standardization of documentation filenames
@@ -78,6 +104,29 @@ class ExampleModel extends BaseModel
 - **Type Errors**: Ensure all methods and functions have explicit return types and parameter types to avoid type-related bugs.
 - **Static Analysis Failures**: Address PHPStan errors by refining code or updating the baseline for existing code.
 - **Code Duplication**: Refactor duplicated code into reusable methods or traits to reduce maintenance overhead.
+=======
+
+### 2. Laraxot Module Structure Compliance
+
+#### Model Inheritance
+- **ALWAYS** extend `BaseModel` of the same module
+- **NEVER** extend `Illuminate\Database\Eloquent\Model` directly
+- **NEVER** extend `Modules\Xot\Models\XotBaseModel` directly
+
+```php
+// ✅ CORRECT
+class User extends \Modules\User\Models\BaseModel
+
+// ❌ WRONG
+class User extends \Illuminate\Database\Eloquent\Model
+class User extends \Modules\Xot\Models\XotBaseModel
+```
+
+#### Migration Standards
+- **ALWAYS** use anonymous classes extending `XotBaseMigration`
+- **NEVER** implement `down()` method
+- **ALWAYS** use `hasTable()` and `hasColumn()` checks
+>>>>>>> 6ed19256f (.)
 
 ```php
 return new class extends XotBaseMigration {
@@ -94,6 +143,7 @@ return new class extends XotBaseMigration {
     }
 };
 ```
+<<<<<<< HEAD
 ## Testing and Verification
 - Run PHPStan analysis regularly to maintain code quality (`./vendor/bin/phpstan analyse`).
 - Use automated tools in CI/CD pipelines to enforce coding standards on every commit or pull request.
@@ -101,6 +151,12 @@ return new class extends XotBaseMigration {
 ## Documentation and Updates
 - Document any deviations from these guidelines or custom quality rules in the relevant module's documentation folder.
 - Update this document if new tools or standards for code quality are introduced.
+=======
+
+### 3. Namespace Conventions
+- **NEVER** include 'App' segment in module namespaces
+- **ALWAYS** use `Modules\{ModuleName}\{Directory}\{ClassName}` pattern
+>>>>>>> 6ed19256f (.)
 
 ```php
 // ✅ CORRECT
@@ -197,7 +253,11 @@ $content = \file_get_contents($path); // Può restituire false
 
 ### 1. PHPStan Pre-Commit
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/html/_bases/base_saluteora/laravel
+>>>>>>> 6ed19256f (.)
 ./vendor/bin/phpstan analyze Modules/ModuleName --level=9
 ```
 
@@ -295,7 +355,11 @@ unset($translations['existing_key']); // MAI!
 
 **Data**: 2025-08-01
 **Versione**: 2.0
+<<<<<<< HEAD
 **Compatibilità**: Laraxot <nome progetto>, PHP 8.2+, Laravel 11+
+=======
+**Compatibilità**: Laraxot SaluteOra, PHP 8.2+, Laravel 11+
+>>>>>>> 6ed19256f (.)
 
 ---
 
@@ -443,4 +507,8 @@ This document outlines the best practices for maintaining high code quality with
 - [PHPStan Implementation Guide](./PHPSTAN-IMPLEMENTATION-GUIDE.md)
 - [Naming Conventions](./NAMING-CONVENTIONS.md)
 - [Service Provider Best Practices](./SERVICE-PROVIDER-BEST-PRACTICES.md)
+<<<<<<< HEAD
 - [Filament Best Practices](./FILAMENT-BEST-PRACTICES.md)
+=======
+- [Filament Best Practices](./FILAMENT-BEST-PRACTICES.md)
+>>>>>>> 6ed19256f (.)

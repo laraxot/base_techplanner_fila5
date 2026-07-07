@@ -75,5 +75,10 @@ protected function getInfolistSchema(): array
 
 ## linkback
 
+<<<<<<< HEAD
 - [errore override metodo final](docs/errors/filament_final_method_override.md)
 - [linee guida filament](../<nome progetto>/docs/filament-resources.md)
+=======
+- [errore override metodo final](/var/www/html/base_<nome progetto>/laravel/docs/errors/filament_final_method_override.md)
+- [linee guida filament](/var/www/html/base_<nome progetto>/laravel/Modules/<nome progetto>/docs/filament-resources.md)
+>>>>>>> 6ed19256f (.)

@@ -31,13 +31,20 @@ I form Filament complessi, in particolare quelli di registrazione e wizard multi
 - Wizard con layout a griglia complessi: Nessuna limitazione di larghezza
 ## Documentazione Correlata
 - [Layout Responsivo dei Widget Filament](../../../UI/docs/blocks/filament-component-integration.md#layout-responsivo-dei-widget-filament)
+<<<<<<< HEAD
 - [Best Practices per i Form Filament](../../../ui/docs/filament/form-best-practices.md)
 - [Implementazione Corretta dei Widget](../../../xot/docs/filament-widgets.md)
 - [Layout Responsivo dei Widget Filament](../../../UI/project_docs/blocks/filament-component-integration.md#layout-responsivo-dei-widget-filament)
 - [Best Practices per i Form Filament](../../../ui/project_docs/filament/form-best-practices.md)
 - [Implementazione Corretta dei Widget](../../../xot/project_docs/filament-widgets.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Best Practices per i Form Filament](../../../UI/docs/filament/form-best-practices.md)
 - [Implementazione Corretta dei Widget](../../../Xot/docs/filament-widgets.md)
 - [Layout Responsivo dei Widget Filament](../../../UI/project_docs/blocks/filament-component-integration.md#layout-responsivo-dei-widget-filament)
 - [Best Practices per i Form Filament](../../../UI/project_docs/filament/form-best-practices.md)
+<<<<<<< HEAD
 - [Implementazione Corretta dei Widget](../../../Xot/project_docs/filament-widgets.md)
+=======
+- [Implementazione Corretta dei Widget](../../../Xot/project_docs/filament-widgets.md)
+>>>>>>> 6ed19256f (.)

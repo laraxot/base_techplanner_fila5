@@ -1,7 +1,10 @@
 # Esempio Implementazione TableLayoutEnum
 
 ## Data: 2025-01-27
+<<<<<<< HEAD
 ## Data: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Scenario
 Implementazione di una lista utenti con toggle tra layout lista e griglia utilizzando il `TableLayoutEnum`.
@@ -409,10 +412,18 @@ TextColumn::make('name')
 
 - [Analisi TableLayoutEnum](table_layout_enum_analysis.md)
 - [Usage Guide](table-layout-enum-usage.md)
+<<<<<<< HEAD
+=======
+- [Translation Standards](../../../docs/translation_standards.md)
+- [Filament Best Practices](../../../docs/filament_best_practices.md)
+- [Enum Translation Pattern](../../../docs/enum-translation-pattern.md)
+
+>>>>>>> 6ed19256f (.)
 *Ultimo aggiornamento: 2025-01-27*
 # Esempio Implementazione TableLayoutEnum
 
 ## Data: 2025-01-27
+<<<<<<< HEAD
 - [Translation Standards](../../../../docs/translation_standards.md)
 - [Filament Best Practices](../../../../docs/filament_best_practices.md)
 - [Enum Translation Pattern](../../../../docs/enum-translation-pattern.md)
@@ -420,6 +431,8 @@ TextColumn::make('name')
 # Esempio Implementazione TableLayoutEnum
 
 ## Data: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Scenario
 Implementazione di una lista utenti con toggle tra layout lista e griglia utilizzando il `TableLayoutEnum`.
@@ -827,7 +840,15 @@ TextColumn::make('name')
 
 - [Analisi TableLayoutEnum](table_layout_enum_analysis.md)
 - [Usage Guide](table-layout-enum-usage.md)
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-27*
 - [Translation Standards](../../../../docs/translation_standards.md)
 - [Filament Best Practices](../../../../docs/filament_best_practices.md)
 - [Enum Translation Pattern](../../../../docs/enum-translation-pattern.md)
+=======
+- [Translation Standards](../../../docs/translation_standards.md)
+- [Filament Best Practices](../../../docs/filament_best_practices.md)
+- [Enum Translation Pattern](../../../docs/enum-translation-pattern.md)
+
+*Ultimo aggiornamento: 2025-01-27*
+>>>>>>> 6ed19256f (.)

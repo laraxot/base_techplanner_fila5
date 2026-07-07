@@ -1,9 +1,12 @@
 # UI Module - Architecture Guide (2025)
 
 > **Last Updated:** 2025-11-19
+<<<<<<< HEAD
 # UI Module - Architecture Guide (2025)
 
 > **
+=======
+>>>>>>> 6ed19256f (.)
 > **PHPStan Level:** 10
 > **Status:** Shared UI Components & Filament Customizations
 
@@ -547,6 +550,7 @@ class MyFormComponent extends Field
         $this->validateUsing([/* validation rules */]);
     }
 }
+<<<<<<< HEAD
 
 // Non aggiungere route manualmente
 Route::get('/example', [ExampleController::class, 'index']);
@@ -568,6 +572,8 @@ Blade::component('ui::components.icon', 'ui.icon');
 
 // Non creare componenti personalizzati se esiste un equivalente Filament
 <x-ui.button>Click me</x-ui.button>
+=======
+>>>>>>> 6ed19256f (.)
 ```
 
 ### Widget Development
@@ -674,4 +680,9 @@ The UI module is a **well-architected, feature-rich Filament customization layer
 ---
 
 **Document Version:** 1.0
+<<<<<<< HEAD
 **Author:** Claude Code Analysis
+=======
+**Generated:** 2025-11-19
+**Author:** Claude Code Analysis
+>>>>>>> 6ed19256f (.)

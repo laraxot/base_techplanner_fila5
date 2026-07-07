@@ -10,7 +10,10 @@
 
 ### Missione Sociale
 - **Democratizzazione**: Accesso gratuito alla <slogan> per gestanti vulnerabili
+<<<<<<< HEAD
 - **Democratizzazione**: Accesso gratuito alla salute orale per gestanti vulnerabili
+=======
+>>>>>>> 6ed19256f (.)
 - **Umanità**: Oltre la tecnologia, toccare il cuore delle persone
 - **Inclusività**: Nessuna discriminazione, massima apertura sociale
 - **Competenza Medica**: Expertise certificata e protocolli sicuri
@@ -155,7 +158,10 @@ L'implementazione riflette una comprensione profonda delle implicazioni:
 
 ### SEO
 - **Keywords**: <slogan> gravidanza, odontoiatra gratuito gestanti
+<<<<<<< HEAD
 - **Keywords**: salute orale gravidanza, odontoiatra gratuito gestanti
+=======
+>>>>>>> 6ed19256f (.)
 - **Structured Data**: MedicalOrganization, MedicalService
 - **Meta Tags**: Ottimizzati per search intent
 
@@ -180,6 +186,7 @@ L'implementazione riflette una comprensione profonda delle implicazioni:
 - [Architettura Sistema](../../../project_docs/architettura_sistema.md)
 - [Rules](../../../project_docs/rules.md)
 - [README Principale](../../../project_docs/README.md)
+<<<<<<< HEAD
 - [Componenti Servizi](../../themes/one/project_docs/components/services-blocks.md)
 - [Content Strategy Frontend](../../../../docs/project/frontend/content-strategy.md)
 
@@ -192,6 +199,8 @@ L'implementazione riflette una comprensione profonda delle implicazioni:
 - [Architettura Sistema](../../../../docs/project/architettura_sistema.md)
 - [Rules](../../../../docs/project/rules.md)
 - [README Principale](../../../../docs/project/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## ✅ Checklist Completamento
 
@@ -266,15 +275,22 @@ L'implementazione riflette una comprensione profonda delle implicazioni:
 
 ---
 
+<<<<<<< HEAD
 **Data Implementazione**: 15 Gennaio 2025  
 **Versione Documentazione**: 1.0.0  
 **Maintainer**: Team <main module>  
 **Review**: Approvazione stakeholder medici, tecnici, UX
 
 *Implementazione completata seguendo rigorosamente la filosofia <main module>: democratizzazione dell'accesso alla salute orale attraverso tecnologia umana, competente e inclusiva.* 
+=======
+>>>>>>> 6ed19256f (.)
 **Data Implementazione**: 15 Gennaio 2025
 **Versione Documentazione**: 1.0.0
 **Maintainer**: Team <main module>
 **Review**: Approvazione stakeholder medici, tecnici, UX
 
+<<<<<<< HEAD
 *Implementazione completata seguendo rigorosamente la filosofia <main module>: democratizzazione dell'accesso alla <slogan> attraverso tecnologia umana, competente e inclusiva.*
+=======
+*Implementazione completata seguendo rigorosamente la filosofia <main module>: democratizzazione dell'accesso alla <slogan> attraverso tecnologia umana, competente e inclusiva.*
+>>>>>>> 6ed19256f (.)

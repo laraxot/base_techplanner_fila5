@@ -42,4 +42,8 @@ Questo documento descrive le componenti UI ispirate al template "ChatAI" di [Tai
 
 - [Template Tailkit ChatAI](https://tailkit.com/templates#chatai)
 - [Blocchi di Contenuto](blocks.md)
+<<<<<<< HEAD
 - [Documentazione Root](../../../../docs/readme.md)
+=======
+- [Documentazione Root](../../../docs/README.md)
+>>>>>>> 6ed19256f (.)

@@ -211,5 +211,9 @@ Questo compendio fornisce un punto di partenza per navigare nella documentazione
 ---
 
 *Documento creato il: 28/05/2025*
+<<<<<<< HEAD
 *Documento creato il: 28/05/2025*  
 *Autore: Team <main module>*
+=======
+*Autore: Team <main module>*
+>>>>>>> 6ed19256f (.)

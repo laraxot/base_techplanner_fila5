@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Cms\Tests;
 
+<<<<<<< HEAD
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
 use Modules\Cms\Providers\CmsServiceProvider;
@@ -46,4 +47,13 @@ abstract class TestCase extends BaseTestCase
             CmsServiceProvider::class,
         ];
     }
+=======
+use Modules\Xot\Tests\TestCase as BaseTestCase;
+
+/**
+ * TestCase base per il modulo Cms.
+ */
+abstract class TestCase extends BaseTestCase
+{
+>>>>>>> 6ed19256f (.)
 }

@@ -31,7 +31,11 @@ class StandardConfigResolver implements ConfigResolverInterface
 
         // Handle database configuration specially
         if ($key === 'database') {
+<<<<<<< HEAD
             $databaseResolver = new DatabaseConfigResolver;
+=======
+            $databaseResolver = new DatabaseConfigResolver();
+>>>>>>> 6ed19256f (.)
             $extraConf = $databaseResolver->resolve($key, $extraConf);
 
             if (! is_array($extraConf)) {

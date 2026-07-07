@@ -11,13 +11,21 @@ use Modules\Xot\Models\XotBaseModel;
  */
 abstract class BaseModel extends XotBaseModel
 {
+<<<<<<< HEAD
+=======
+    /** @var string */
+>>>>>>> 6ed19256f (.)
     protected $connection = 'user';
 
     /** @return array<string, string> */
     protected function casts(): array
     {
         return [
+<<<<<<< HEAD
             // 'id' => 'string',
+=======
+            'id' => 'string',
+>>>>>>> 6ed19256f (.)
             'uuid' => 'string',
             'published_at' => 'datetime',
             'verified_at' => 'datetime',

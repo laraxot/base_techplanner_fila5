@@ -6,6 +6,7 @@ namespace Modules\Notify\Datas;
 
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
+<<<<<<< HEAD
 /**
  * @property string $from
  * @property string $recipient
@@ -18,24 +19,42 @@ final class SmsData
     private string $recipient = '';
 
     private string $body = '';
+=======
+class SmsData
+{
+    public string $from;
+
+    public string $recipient;
+
+    public string $body;
+>>>>>>> 6ed19256f (.)
 
     /**
      * Create a new SmsData instance.
      *
+<<<<<<< HEAD
      * @param  array<string, string>  $data
+=======
+     * @param  array<string, mixed>  $data
+>>>>>>> 6ed19256f (.)
      */
     public function __construct(array $data = [])
     {
         $this->from = SafeStringCastAction::cast($data['from'] ?? '');
+<<<<<<< HEAD
         $this->recipient = SafeStringCastAction::cast(
             $data['recipient'] ?? ''
         );
+=======
+        $this->recipient = SafeStringCastAction::cast($data['recipient'] ?? '');
+>>>>>>> 6ed19256f (.)
         $this->body = SafeStringCastAction::cast($data['body'] ?? '');
     }
 
     /**
      * Named constructor for convenience.
      *
+<<<<<<< HEAD
      * @param  array<string, string>  $data
      */
     public static function from(array $data): self
@@ -78,5 +97,12 @@ final class SmsData
                 default => null,
             };
         }
+=======
+     * @param  array<string, mixed>  $data
+     */
+    public static function from(array $data): static
+    {
+        return new static($data);
+>>>>>>> 6ed19256f (.)
     }
 }

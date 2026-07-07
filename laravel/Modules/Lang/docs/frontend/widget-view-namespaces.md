@@ -5,7 +5,11 @@
 ### 🔑 **Regola Fondamentale**
 
 - **Widget di Autenticazione** (login, registrazione, password reset): DEVONO usare `pub_theme::`
+<<<<<<< HEAD
 - **Widget Normali/Funzionali**: possono usare il namespace del modulo (`user::`, `<nome progetto>::`, etc.)
+=======
+- **Widget Normali/Funzionali**: possono usare il namespace del modulo (`user::`, `saluteora::`, etc.)
+>>>>>>> 6ed19256f (.)
 
 ### 🎯 **Motivazione**
 
@@ -85,12 +89,20 @@ laravel/Themes/One/resources/views/filament/widgets/auth/
 
 ### Pattern Corretto
 ```php
+<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Widgets;
+=======
+namespace Modules\SaluteOra\Filament\Widgets;
+>>>>>>> 6ed19256f (.)
 
 class DoctorAppointmentsWidget extends XotBaseWidget
 {
     // ✅ CORRETTO: View nel modulo per logica funzionale
+<<<<<<< HEAD
     protected static string $view = '<nome progetto>::filament.widgets.doctor-appointments';
+=======
+    protected static string $view = 'saluteora::filament.widgets.doctor-appointments';
+>>>>>>> 6ed19256f (.)
 
     // Logica specifica del modulo
 }
@@ -160,5 +172,8 @@ protected static string $view = 'pub_theme::filament.widgets.doctor-appointments
 - [Implementazione Temi](../frontend/theme-implementation.md)
 
 *Ultimo aggiornamento: Dicembre 2024*
+<<<<<<< HEAD
 - [Widget Autenticazione](../../laravel/modules/user/docs/auth-widgets.md)
 - [Implementazione Temi](../frontend/theme-implementation.md)
+=======
+>>>>>>> 6ed19256f (.)

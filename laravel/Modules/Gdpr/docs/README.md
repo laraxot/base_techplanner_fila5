@@ -146,6 +146,7 @@ php artisan test --filter=PrivacyTest
 - [Filament GDPR Resources](https://filamentphp.com/plugins/filament-gdpr)
 
 *Ultimo aggiornamento: Sistema di documentazione automatica*
+<<<<<<< HEAD
 ---
 title: "Gdpr Module Documentation"
 type: documentation
@@ -199,3 +200,5 @@ Gdpr/
 - [QMD Setup](./QMD-SETUP.md) — Configurazione ricerca locale
 - [Performance](./PERFORMANCE-OPTIMIZATION.md) — Metriche e best practice
 - [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout
+=======
+>>>>>>> 6ed19256f (.)

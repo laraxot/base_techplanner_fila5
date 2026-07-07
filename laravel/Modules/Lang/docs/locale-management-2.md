@@ -259,4 +259,8 @@ php artisan config:clear
 </php>
 ```
 
+<<<<<<< HEAD
 Questo documento fornisce una panoramica completa sulla gestione delle lingue in Laravel, con particolare attenzione alle esigenze del progetto <nome progetto>.
+=======
+Questo documento fornisce una panoramica completa sulla gestione delle lingue in Laravel, con particolare attenzione alle esigenze del progetto SaluteOra.
+>>>>>>> 6ed19256f (.)

@@ -3,8 +3,12 @@
 ## Introduzione
 
 Il pacchetto `filament-title-with-slug` di Camya fornisce un componente specializzato per la gestione combinata di titoli e slug nei form Filament. Questo documento analizza le funzionalità del componente e la sua potenziale integrazione nel modulo Notify di , in particolare per la gestione dei template email.
+<<<<<<< HEAD
 Il pacchetto `filament-title-with-slug` di Camya fornisce un componente specializzato per la gestione combinata di titoli e slug nei form Filament. Questo documento analizza le funzionalità del componente e la sua potenziale integrazione nel modulo Notify di <nome progetto>, in particolare per la gestione dei template email.
 Il pacchetto `filament-title-with-slug` di Camya fornisce un componente specializzato per la gestione combinata di titoli e slug nei form Filament. Questo documento analizza le funzionalità del componente e la sua potenziale integrazione nel modulo Notify di Quaeris, in particolare per la gestione dei template email.
+=======
+Il pacchetto `filament-title-with-slug` di Camya fornisce un componente specializzato per la gestione combinata di titoli e slug nei form Filament. Questo documento analizza le funzionalità del componente e la sua potenziale integrazione nel modulo Notify di SaluteOra, in particolare per la gestione dei template email.
+>>>>>>> 6ed19256f (.)
 
 ## Panoramica del Pacchetto
 
@@ -21,18 +25,27 @@ Il pacchetto `filament-title-with-slug` di Camya fornisce un componente speciali
 ### Compatibilità con
 
 Il componente è compatibile con l'architettura di  e può essere integrato seguendo le convenzioni del progetto:
+<<<<<<< HEAD
 ### Compatibilità con <nome progetto>
 
 Il componente è compatibile con l'architettura di <nome progetto> e può essere integrato seguendo le convenzioni del progetto:
 ### Compatibilità con Quaeris
 
 Il componente è compatibile con l'architettura di Quaeris e può essere integrato seguendo le convenzioni del progetto:
+=======
+### Compatibilità con SaluteOra
+
+Il componente è compatibile con l'architettura di SaluteOra e può essere integrato seguendo le convenzioni del progetto:
+>>>>>>> 6ed19256f (.)
 
 - Non utilizza componenti UI personalizzati
 - Può essere configurato per restituire array associativi con chiavi stringhe
 - Supporta la localizzazione attraverso file di traduzione
 - Si integra con il pattern di form di Filament utilizzato
+<<<<<<< HEAD
 - Si integra con il pattern di form di Filament utilizzato 
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Installazione
 
@@ -53,8 +66,12 @@ php artisan vendor:publish --tag="filament-title-with-slug-config"
 ### Configurazione Base
 
 Ecco come il componente potrebbe essere implementato in `MailTemplateResource` seguendo le convenzioni di :
+<<<<<<< HEAD
 Ecco come il componente potrebbe essere implementato in `MailTemplateResource` seguendo le convenzioni di <nome progetto>:
 Ecco come il componente potrebbe essere implementato in `MailTemplateResource` seguendo le convenzioni di Quaeris:
+=======
+Ecco come il componente potrebbe essere implementato in `MailTemplateResource` seguendo le convenzioni di SaluteOra:
+>>>>>>> 6ed19256f (.)
 
 ```php
 use Camya\Filament\Forms\Components\TitleWithSlugInput;
@@ -67,17 +84,24 @@ public static function getFormSchema(): array
             fieldSlug: 'slug',
         )
         ->columnSpanFull(),
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         // Altri campi del form
         'subject' => Forms\Components\TextInput::make('subject')
             ->required()
             ->maxLength(255),
+<<<<<<< HEAD
             
         'html_template' => Forms\Components\RichEditor::make('html_template')
             ->required()
             ->columnSpanFull(),
             
+=======
+>>>>>>> 6ed19256f (.)
 
         'html_template' => Forms\Components\RichEditor::make('html_template')
             ->required()
@@ -93,8 +117,12 @@ public static function getFormSchema(): array
 ### Personalizzazione Avanzata
 
 Per adattare il componente alle esigenze specifiche di :
+<<<<<<< HEAD
 Per adattare il componente alle esigenze specifiche di <nome progetto>:
 Per adattare il componente alle esigenze specifiche di Quaeris:
+=======
+Per adattare il componente alle esigenze specifiche di SaluteOra:
+>>>>>>> 6ed19256f (.)
 
 ```php
 'titleSlug' => TitleWithSlugInput::make(
@@ -132,8 +160,12 @@ Il componente mostra un'anteprima dell'URL completo, personalizzabile attraverso
 ```php
 ->urlPath('/mail-templates/')
 ->urlHost('https://<nome progetto>.example.com')
+<<<<<<< HEAD
 ->urlHost('https://<nome progetto>.example.com')
 ->urlHost('https://Quaeris.example.com')
+=======
+->urlHost('https://saluteora.example.com')
+>>>>>>> 6ed19256f (.)
 ->urlHostVisible(true)
 ```
 
@@ -164,14 +196,21 @@ Il componente può generare un link per visualizzare direttamente la risorsa:
 
 ```php
 ->urlVisitLinkRoute(fn(?Model $record) => $record?->slug
+<<<<<<< HEAD
 ->urlVisitLinkRoute(fn(?Model $record) => $record?->slug 
+=======
+>>>>>>> 6ed19256f (.)
     ? route('notify.mail-templates.view', ['slug' => $record->slug])
     : null)
 ```
 
 ## Vantaggi per
+<<<<<<< HEAD
 ## Vantaggi per <nome progetto>
 ## Vantaggi per Quaeris
+=======
+## Vantaggi per SaluteOra
+>>>>>>> 6ed19256f (.)
 
 L'integrazione di questo componente nel modulo Notify offrirebbe:
 
@@ -188,6 +227,7 @@ L'integrazione di questo componente nel modulo Notify offrirebbe:
 Per rispettare le convenzioni del progetto, è necessario:
 
 1. **Traduzione**: Configurare le etichette per utilizzare il sistema di traduzione di  anziché testi hardcoded
+<<<<<<< HEAD
 ### Conformità con le Convenzioni di <nome progetto>
 
 Per rispettare le convenzioni del progetto, è necessario:
@@ -198,6 +238,13 @@ Per rispettare le convenzioni del progetto, è necessario:
 Per rispettare le convenzioni del progetto, è necessario:
 
 1. **Traduzione**: Configurare le etichette per utilizzare il sistema di traduzione di Quaeris anziché testi hardcoded
+=======
+### Conformità con le Convenzioni di SaluteOra
+
+Per rispettare le convenzioni del progetto, è necessario:
+
+1. **Traduzione**: Configurare le etichette per utilizzare il sistema di traduzione di SaluteOra anziché testi hardcoded
+>>>>>>> 6ed19256f (.)
 2. **Array Associativo**: Utilizzare chiavi stringhe nell'array di schema del form
 3. **Nomenclatura**: Seguire le convenzioni di nomenclatura del progetto
 
@@ -218,8 +265,12 @@ public static function getFormSchema(): array
             if (!$record?->slug) return null;
             return route('notify.mail-templates.view', ['slug' => $record->slug]);
         }),
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         // Altri campi...
     ];
 }
@@ -231,23 +282,35 @@ public static function getFormSchema(): array
 
 1. **Dipendenza Esterna**: Introduce una dipendenza aggiuntiva nel progetto
 2. **Personalizzazione Visiva**: Potrebbe richiedere adattamenti per integrarsi perfettamente con il tema di
+<<<<<<< HEAD
 2. **Personalizzazione Visiva**: Potrebbe richiedere adattamenti per integrarsi perfettamente con il tema di <nome progetto>
 2. **Personalizzazione Visiva**: Potrebbe richiedere adattamenti per integrarsi perfettamente con il tema di Quaeris
+=======
+2. **Personalizzazione Visiva**: Potrebbe richiedere adattamenti per integrarsi perfettamente con il tema di SaluteOra
+>>>>>>> 6ed19256f (.)
 3. **Modifiche Future**: Come ogni dipendenza, è soggetto a cambiamenti nelle versioni future
 
 ### Alternative
 
 1. **Soluzione Custom**: Sviluppare un componente su misura basato sulle esigenze specifiche di
+<<<<<<< HEAD
 1. **Soluzione Custom**: Sviluppare un componente su misura basato sulle esigenze specifiche di <nome progetto>
 1. **Soluzione Custom**: Sviluppare un componente su misura basato sulle esigenze specifiche di Quaeris
+=======
+1. **Soluzione Custom**: Sviluppare un componente su misura basato sulle esigenze specifiche di SaluteOra
+>>>>>>> 6ed19256f (.)
 2. **Approccio Modulare**: Utilizzare i componenti nativi di Filament con logica personalizzata
 3. **Altri Pacchetti**: Valutare pacchetti alternativi con funzionalità simili
 
 ## Conclusioni
 
 Il componente `TitleWithSlugInput` offre una soluzione elegante e completa per la gestione combinata di titoli e slug nei form Filament. La sua integrazione nel modulo Notify di  potrebbe migliorare significativamente l'esperienza utente nella gestione dei template email, semplificando il processo di creazione e modifica.
+<<<<<<< HEAD
 Il componente `TitleWithSlugInput` offre una soluzione elegante e completa per la gestione combinata di titoli e slug nei form Filament. La sua integrazione nel modulo Notify di <nome progetto> potrebbe migliorare significativamente l'esperienza utente nella gestione dei template email, semplificando il processo di creazione e modifica.
 Il componente `TitleWithSlugInput` offre una soluzione elegante e completa per la gestione combinata di titoli e slug nei form Filament. La sua integrazione nel modulo Notify di Quaeris potrebbe migliorare significativamente l'esperienza utente nella gestione dei template email, semplificando il processo di creazione e modifica.
+=======
+Il componente `TitleWithSlugInput` offre una soluzione elegante e completa per la gestione combinata di titoli e slug nei form Filament. La sua integrazione nel modulo Notify di SaluteOra potrebbe migliorare significativamente l'esperienza utente nella gestione dei template email, semplificando il processo di creazione e modifica.
+>>>>>>> 6ed19256f (.)
 
 L'implementazione dovrebbe seguire le convenzioni del progetto, con particolare attenzione alla localizzazione e alla struttura del form schema.
 
@@ -477,6 +540,9 @@ L'implementazione dovrebbe seguire le convenzioni del progetto, con particolare 
 - [Implementazione Modello con Slug](./MODEL_SLUG_IMPLEMENTATION.md)
 - [Implementazione Risorsa con Slug](./RESOURCE_SLUG_IMPLEMENTATION.md)
 - [Miglioramenti UI/UX](./UI_UX_ENHANCEMENTS.md)
+<<<<<<< HEAD
 - [Implementazione Modello con Slug](./model_slug_implementation.md)
 - [Implementazione Risorsa con Slug](./resource_slug_implementation.md)
 - [Miglioramenti UI/UX](./ui_ux_enhancements.md)
+=======
+>>>>>>> 6ed19256f (.)

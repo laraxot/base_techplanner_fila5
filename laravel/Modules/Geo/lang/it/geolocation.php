@@ -8,73 +8,100 @@ return [
             'label' => 'Indirizzo IP',
             'placeholder' => 'Inserisci l\'indirizzo IP',
             'help' => 'Indirizzo IP da geolocalizzare',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'latitude' => [
             'label' => 'Latitudine',
             'placeholder' => 'Inserisci la latitudine',
             'help' => 'Coordinate geografiche - latitudine',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'longitude' => [
             'label' => 'Longitudine',
             'placeholder' => 'Inserisci la longitudine',
             'help' => 'Coordinate geografiche - longitudine',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'accuracy' => [
             'label' => 'Precisione',
             'placeholder' => 'Seleziona la precisione',
             'help' => 'Livello di precisione della geolocalizzazione',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'provider' => [
             'label' => 'Provider',
             'placeholder' => 'Seleziona il provider',
             'help' => 'Servizio di geolocalizzazione da utilizzare',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'country' => [
             'label' => 'Paese',
             'placeholder' => 'Seleziona il paese',
             'help' => 'Paese rilevato',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'region' => [
             'label' => 'Regione',
             'placeholder' => 'Seleziona la regione',
             'help' => 'Regione rilevata',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'city' => [
             'label' => 'Città',
             'placeholder' => 'Seleziona la città',
             'help' => 'Città rilevata',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'timezone' => [
             'label' => 'Fuso orario',
             'placeholder' => 'Seleziona il fuso orario',
             'help' => 'Fuso orario rilevato',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'validation' => [
@@ -109,6 +136,7 @@ return [
         'street' => 'Via',
         'building' => 'Edificio',
     ],
+<<<<<<< HEAD
     'label' => 'Geolocation',
     'plural_label' => 'Geolocation (Plurale)',
     'navigation' => [
@@ -133,4 +161,6 @@ return [
             'label' => 'Elimina Geolocation',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

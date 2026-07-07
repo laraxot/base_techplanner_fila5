@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Exports;
 
+<<<<<<< HEAD
+=======
+use BackedEnum;
+>>>>>>> 6ed19256f (.)
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
@@ -31,7 +35,11 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
     public ?array $fields = null;
 
     /**
+<<<<<<< HEAD
      * @param array<int, string> $fields
+=======
+     * @param  array<int, string>  $fields
+>>>>>>> 6ed19256f (.)
      */
     public function __construct(Collection $collection, ?string $transKey = null, array $fields = [])
     {
@@ -67,12 +75,20 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
 
     public function map(mixed $row): array
     {
+<<<<<<< HEAD
         if (null === $this->fields || empty($this->fields)) {
+=======
+        if ($this->fields === null || empty($this->fields)) {
+>>>>>>> 6ed19256f (.)
             Assert::isInstanceOf($row, Model::class);
             $res = app(SafeArrayByModelCastAction::class)->execute($row);
 
             return Arr::map($res, function ($value, $_key) {
+<<<<<<< HEAD
                 if ($value instanceof \BackedEnum) {
+=======
+                if ($value instanceof BackedEnum) {
+>>>>>>> 6ed19256f (.)
                     if (method_exists($value, 'getLabel')) {
                         return $value->getLabel();
                     }

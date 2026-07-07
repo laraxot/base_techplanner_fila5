@@ -38,8 +38,13 @@ class SafeFloatCastAction
     /**
      * Converte in modo sicuro un valore mixed in float.
      *
+<<<<<<< HEAD
      * @param mixed      $value   Il valore da convertire
      * @param float|null $default Valore di default se la conversione fallisce (default: 0.0)
+=======
+     * @param  mixed  $value  Il valore da convertire
+     * @param  float|null  $default  Valore di default se la conversione fallisce (default: 0.0)
+>>>>>>> 6ed19256f (.)
      *
      * @return float Il valore convertito
      */
@@ -71,7 +76,11 @@ class SafeFloatCastAction
         }
 
         // Se è un array e ha un solo elemento numerico
+<<<<<<< HEAD
         if (is_array($value) && 1 === count($value)) {
+=======
+        if (is_array($value) && count($value) === 1) {
+>>>>>>> 6ed19256f (.)
             return $this->execute(reset($value), $default);
         }
 
@@ -87,8 +96,13 @@ class SafeFloatCastAction
     /**
      * Metodo statico di convenienza per chiamate dirette.
      *
+<<<<<<< HEAD
      * @param mixed      $value   Il valore da convertire
      * @param float|null $default Valore di default se la conversione fallisce (default: 0.0)
+=======
+     * @param  mixed  $value  Il valore da convertire
+     * @param  float|null  $default  Valore di default se la conversione fallisce (default: 0.0)
+>>>>>>> 6ed19256f (.)
      *
      * @return float Il valore convertito in float
      */
@@ -100,10 +114,17 @@ class SafeFloatCastAction
     /**
      * Converte un valore in float con validazione di range.
      *
+<<<<<<< HEAD
      * @param mixed      $value   Il valore da convertire
      * @param float      $min     Valore minimo consentito
      * @param float      $max     Valore massimo consentito
      * @param float|null $default Valore di default se la conversione fallisce
+=======
+     * @param  mixed  $value  Il valore da convertire
+     * @param  float  $min  Valore minimo consentito
+     * @param  float  $max  Valore massimo consentito
+     * @param  float|null  $default  Valore di default se la conversione fallisce
+>>>>>>> 6ed19256f (.)
      *
      * @return float Il valore convertito e validato
      */
@@ -118,10 +139,17 @@ class SafeFloatCastAction
     /**
      * Metodo statico di convenienza per cast con range.
      *
+<<<<<<< HEAD
      * @param mixed      $value   Il valore da convertire
      * @param float      $min     Valore minimo consentito
      * @param float      $max     Valore massimo consentito
      * @param float|null $default Valore di default se la conversione fallisce
+=======
+     * @param  mixed  $value  Il valore da convertire
+     * @param  float  $min  Valore minimo consentito
+     * @param  float  $max  Valore massimo consentito
+     * @param  float|null  $default  Valore di default se la conversione fallisce
+>>>>>>> 6ed19256f (.)
      *
      * @return float Il valore convertito e validato
      */
@@ -133,9 +161,15 @@ class SafeFloatCastAction
     /**
      * Converte un valore in float con controllo di precisione.
      *
+<<<<<<< HEAD
      * @param mixed      $value     Il valore da convertire
      * @param int        $precision Numero di decimali (default: 2)
      * @param float|null $default   Valore di default se la conversione fallisce
+=======
+     * @param  mixed  $value  Il valore da convertire
+     * @param  int  $precision  Numero di decimali (default: 2)
+     * @param  float|null  $default  Valore di default se la conversione fallisce
+>>>>>>> 6ed19256f (.)
      *
      * @return float Il valore convertito con precisione specificata
      */
@@ -149,9 +183,15 @@ class SafeFloatCastAction
     /**
      * Metodo statico per cast con precisione.
      *
+<<<<<<< HEAD
      * @param mixed      $value     Il valore da convertire
      * @param int        $precision Numero di decimali (default: 2)
      * @param float|null $default   Valore di default se la conversione fallisce
+=======
+     * @param  mixed  $value  Il valore da convertire
+     * @param  int  $precision  Numero di decimali (default: 2)
+     * @param  float|null  $default  Valore di default se la conversione fallisce
+>>>>>>> 6ed19256f (.)
      *
      * @return float Il valore convertito con precisione specificata
      */
@@ -163,8 +203,13 @@ class SafeFloatCastAction
     /**
      * Converte un valore in percentuale (0-100).
      *
+<<<<<<< HEAD
      * @param mixed      $value   Il valore da convertire
      * @param float|null $default Valore di default se la conversione fallisce
+=======
+     * @param  mixed  $value  Il valore da convertire
+     * @param  float|null  $default  Valore di default se la conversione fallisce
+>>>>>>> 6ed19256f (.)
      *
      * @return float Il valore convertito come percentuale (0-100)
      */
@@ -176,8 +221,13 @@ class SafeFloatCastAction
     /**
      * Metodo statico per cast come percentuale.
      *
+<<<<<<< HEAD
      * @param mixed      $value   Il valore da convertire
      * @param float|null $default Valore di default se la conversione fallisce
+=======
+     * @param  mixed  $value  Il valore da convertire
+     * @param  float|null  $default  Valore di default se la conversione fallisce
+>>>>>>> 6ed19256f (.)
      *
      * @return float Il valore convertito come percentuale (0-100)
      */
@@ -189,8 +239,13 @@ class SafeFloatCastAction
     /**
      * Converte un valore in formato monetario (sempre positivo, 2 decimali).
      *
+<<<<<<< HEAD
      * @param mixed      $value   Il valore da convertire
      * @param float|null $default Valore di default se la conversione fallisce
+=======
+     * @param  mixed  $value  Il valore da convertire
+     * @param  float|null  $default  Valore di default se la conversione fallisce
+>>>>>>> 6ed19256f (.)
      *
      * @return float Il valore convertito come importo monetario
      */
@@ -204,8 +259,13 @@ class SafeFloatCastAction
     /**
      * Metodo statico per cast come importo monetario.
      *
+<<<<<<< HEAD
      * @param mixed      $value   Il valore da convertire
      * @param float|null $default Valore di default se la conversione fallisce
+=======
+     * @param  mixed  $value  Il valore da convertire
+     * @param  float|null  $default  Valore di default se la conversione fallisce
+>>>>>>> 6ed19256f (.)
      *
      * @return float Il valore convertito come importo monetario
      */
@@ -217,8 +277,13 @@ class SafeFloatCastAction
     /**
      * Converte una stringa in float con gestione avanzata.
      *
+<<<<<<< HEAD
      * @param string     $value   La stringa da convertire
      * @param float|null $default Valore di default
+=======
+     * @param  string  $value  La stringa da convertire
+     * @param  float|null  $default  Valore di default
+>>>>>>> 6ed19256f (.)
      *
      * @return float Il valore convertito
      */

@@ -32,5 +32,8 @@ return new class extends Migration
         Schema::dropIfExists('pages');
     }
 };
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 6ed19256f (.)

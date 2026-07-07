@@ -15,6 +15,7 @@ return [
         'icon' => 'ui-geo-map',
     ],
     'fields' => [
+<<<<<<< HEAD
         'title' => [
             'label' => 'Titolo',
             'tooltip' => '',
@@ -63,6 +64,16 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+=======
+        'title' => 'Titolo',
+        'type' => 'Tipo Mappa',
+        'zoom_level' => 'Livello Zoom',
+        'center_lat' => 'Latitudine Centro',
+        'center_lng' => 'Longitudine Centro',
+        'markers' => 'Marcatori',
+        'layers' => 'Livelli',
+        'style' => 'Stile',
+>>>>>>> 6ed19256f (.)
     ],
     'map_types' => [
         'roadmap' => 'Stradale',
@@ -83,6 +94,9 @@ return [
         'measure_distance' => 'Misura Distanza',
         'export' => 'Esporta',
     ],
+<<<<<<< HEAD
     'label' => 'Map',
     'plural_label' => 'Map (Plurale)',
+=======
+>>>>>>> 6ed19256f (.)
 ];

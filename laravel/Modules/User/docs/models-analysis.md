@@ -7,7 +7,11 @@ Core business models have factories. Missing factories are mainly abstract base 
 
 ### Models senza Factory ❌ (23/56) - Correctly Missing
 - All `Base*` classes (abstract infrastructure)
+<<<<<<< HEAD
 - All `*Policy` classes (authorization logic) 
+=======
+- All `*Policy` classes (authorization logic)
+>>>>>>> 6ed19256f (.)
 - `UserBasePolicy` (base authorization)
 - Infrastructure models that don't need testing
 
@@ -58,4 +62,8 @@ All business models have factories. Infrastructure correctly excluded.
 - **Comprehensive**: Covers all user management aspects
 - **Security Focused**: Authentication, authorization, devices
 - **Modern Architecture**: Multi-tenancy, teams, social auth
+<<<<<<< HEAD
 - **Healthcare Ready**: Role-based access for medical data
+=======
+- **Healthcare Ready**: Role-based access for medical data
+>>>>>>> 6ed19256f (.)

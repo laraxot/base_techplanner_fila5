@@ -23,5 +23,8 @@ usefull links:
 ## Collegamenti tra versioni di zsh.md
 * [zsh.md](../../../Xot/project_docs/install/zsh.md)
 * [zsh.md](../../../Xot/project_docs/ubuntu/zsh.md)
+<<<<<<< HEAD
 * [zsh.md](../../../xot/project_docs/install/zsh.md)
 * [zsh.md](../../../xot/project_docs/ubuntu/zsh.md)
+=======
+>>>>>>> 6ed19256f (.)

@@ -7,7 +7,11 @@
 ## 📂 Struttura Corretta
 
 ```
+<<<<<<< HEAD
 
+=======
+/var/www/_bases/base_ptvx_fila4_mono/
+>>>>>>> 6ed19256f (.)
 ├── laravel/                    # Codice applicativo (PHP/Laravel)
 │   ├── Modules/
 │   ├── composer.json
@@ -49,7 +53,11 @@ laravel/deploy.sh
 laravel/Modules/Xot/fix-something.sh
 
 # ❌ VIETATO - Script nella root progetto
+<<<<<<< HEAD
 cleanup.sh
+=======
+/var/www/_bases/base_ptvx_fila4_mono/cleanup.sh
+>>>>>>> 6ed19256f (.)
 ```
 
 ## 🧘 La Filosofia (WHY)
@@ -153,6 +161,7 @@ git commit -m "refactor: move script to bashscripts/fix/ (location policy compli
 **Ultimo aggiornamento**: Gennaio 2025
 **Motivazione**: Enforcement della separazione tra codice applicativo e script operativi
 **Filosofia**: "Separazione delle responsabilità, organizzazione scalabile, deploy pulito"
+<<<<<<< HEAD
 ## Regola Operativa Rafforzata
 
 Gli script standalone di progetto non devono vivere dentro `laravel/Modules/*/`.
@@ -168,3 +177,5 @@ Motivo:
 - separa chiaramente codice applicativo da tooling operativo
 - evita che PHPStan/quality gates del modulo analizzino script non applicativi
 - riallinea `base_predict_fila5` ai progetti gemelli sotto `/var/www/_bases`
+=======
+>>>>>>> 6ed19256f (.)

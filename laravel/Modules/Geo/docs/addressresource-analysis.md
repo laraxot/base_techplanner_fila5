@@ -2,8 +2,11 @@
 
 **Data analisi**: 2025-07-30
 **File**: `/laravel/Modules/Geo/app/Filament/Resources/AddressResource.php`
+<<<<<<< HEAD
 **Data analisi**: [DATE]  
 **File**: `/laravel/Modules/Geo/app/Filament/Resources/AddressResource.php`  
+=======
+>>>>>>> 6ed19256f (.)
 **Stato**: Analizzato completamente (404 righe)
 
 ## 📋 Panoramica Generale
@@ -106,7 +109,10 @@ Regione → Province → Località → CAP
 - `Address` - Modello principale
 - `Region` - Regioni italiane
 - `Province` - Province italiane
+<<<<<<< HEAD
 - `Province` - Province italiane  
+=======
+>>>>>>> 6ed19256f (.)
 - `Locality` - Comuni/Località
 - `Comune` - Importato ma non utilizzato
 
@@ -150,4 +156,8 @@ Regione → Province → Località → CAP
 - **Metodi**: 5
 - **Complessità ciclomatica**: Media-Alta (per le closure nei Select)
 - **Dipendenze**: 11 import
+<<<<<<< HEAD
 - **Modelli coinvolti**: 5
+=======
+- **Modelli coinvolti**: 5
+>>>>>>> 6ed19256f (.)

@@ -5,7 +5,10 @@
 **PHPStan Level 10**: ✅ **PASSED** - No errors found
 
 **Last Analysis**: 2025-11-05
+<<<<<<< HEAD
 **Last Analysis**: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 
 ## 🎯 Module Overview
 
@@ -17,11 +20,14 @@
 
 ### Historical Status (from documentation)
 - **Initial Errors**: 57
+<<<<<<< HEAD
 - **Progress ([DATE])**: 68% reduction (39 errors fixed)
 - **Remaining Errors ([DATE])**: 18
 - **Completion Percentage ([DATE])**: 68%
 
 ### Current Status ([DATE])
+=======
+>>>>>>> 6ed19256f (.)
 - **Progress (2025-10-13)**: 68% reduction (39 errors fixed)
 - **Remaining Errors (2025-10-13)**: 18
 - **Completion Percentage (2025-10-13)**: 68%
@@ -133,7 +139,10 @@ function createConsent(array $attributes = []): Consent
 
 ### Current Documentation
 - ✅ `phpstan-fixes-2025-10-13.md` - Historical progress documentation
+<<<<<<< HEAD
 - ✅ `phpstan-fixes-[DATE].md` - Historical progress documentation
+=======
+>>>>>>> 6ed19256f (.)
 - ✅ `phpstan-fixes.md` - General fixes documentation
 - ✅ `phpstan-compliance.md` - Compliance status
 - ✅ `phpstan-analysis-gdpr.md` - Current status (this file)
@@ -160,8 +169,15 @@ function createConsent(array $attributes = []): Consent
 ---
 
 **Analysis Date**: 2025-11-05
+<<<<<<< HEAD
 **Analysis Date**: [DATE]
 **PHPStan Version**: 2.1.2
 **Laravel Version**: 12.31.1
 **Status**: ✅ Fully PHPStan Level 10 Compliant
 **Documentation Quality**: ⭐⭐⭐⭐⭐ Excellent
+=======
+**PHPStan Version**: 2.1.2
+**Laravel Version**: 12.31.1
+**Status**: ✅ Fully PHPStan Level 10 Compliant
+**Documentation Quality**: ⭐⭐⭐⭐⭐ Excellent
+>>>>>>> 6ed19256f (.)

@@ -16,8 +16,12 @@ Cannot make non static method Filament\Pages\BasePage::getView() static in class
 ```
 
 ```
+<<<<<<< HEAD
 Access level to Modules\<nome progetto>\Filament\Resources\AppointmentWorkflowResource\Pages\WorkflowAppointment::getFormActionsAlignment() must be public (as in class Filament\Pages\BasePage)
 Access level to Modules\<nome progetto>\Filament\Resources\AppointmentWorkflowResource\Pages\WorkflowAppointment::getFormActionsAlignment() must be public (as in class Filament\Pages\BasePage)
+=======
+Access level to Modules\SaluteOra\Filament\Resources\AppointmentWorkflowResource\Pages\WorkflowAppointment::getFormActionsAlignment() must be public (as in class Filament\Pages\BasePage)
+>>>>>>> 6ed19256f (.)
 ```
 
 esempio di errore:
@@ -124,6 +128,11 @@ $returnType = $parentMethod->getReturnType();
 
 ## collegamento ad altre risorse
 
+<<<<<<< HEAD
 - [regole di ereditarietà in php](docs/standards/php-inheritance-rules.md)
 - [regole di ereditarietà in php](docs/standards/php-inheritance-rules.md)
 - [estensione pattern filament](../xot/docs/filament_extension_pattern.md)
+=======
+- [regole di ereditarietà in php](/var/www/html/base_saluteora/laravel/docs/standards/php-inheritance-rules.md)
+- [estensione pattern filament](/var/www/html/base_saluteora/laravel/Modules/Xot/docs/filament_extension_pattern.md)
+>>>>>>> 6ed19256f (.)

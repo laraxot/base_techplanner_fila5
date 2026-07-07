@@ -18,7 +18,12 @@ final class PushNotificationDebugData extends Data implements Arrayable
         private readonly CanReceivePushNotifications $notifiable,
         private readonly MobilePushNotification $notification,
         private readonly MulticastSendReport $sendReport,
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> 6ed19256f (.)
 
     public static function make(
         CanReceivePushNotifications $notifiable,

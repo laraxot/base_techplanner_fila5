@@ -638,4 +638,8 @@ Schema::create('template_analytics', function (Blueprint $table) {
     $table->index('created_at');
     $table->index(['template_id', 'event']);
 });
+<<<<<<< HEAD
 ``` 
+=======
+```
+>>>>>>> 6ed19256f (.)

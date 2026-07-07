@@ -103,6 +103,7 @@ return [
 ### Pattern da Cercare
 ```bash
 # Cercare enum con metodi di traduzione hardcoded
+<<<<<<< HEAD
 grep -r "return match" Modules/UI/app/Enums/
 grep -r "__(" Modules/UI/app/Enums/
 grep -r "return match" Modules/UI/app/Enums/
@@ -115,6 +116,20 @@ grep -r "return match" Modules/UI/app/Enums/
 grep -r "__(" Modules/UI/app/Enums/
 grep -r "return match" Modules/UI/app/Enums/
 grep -r "__(" Modules/UI/app/Enums/
+=======
+grep -r "return match" /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/UI/app/Enums/
+grep -r "__(" /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/UI/app/Enums/
+grep -r "return match" /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/UI/app/Enums/
+grep -r "__(" /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/UI/app/Enums/
+grep -r "return match" /var/www/html/_bases/base_saluteora/laravel/Modules/UI/app/Enums/
+grep -r "__(" /var/www/html/_bases/base_saluteora/laravel/Modules/UI/app/Enums/
+grep -r "return match" /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/UI/app/Enums/
+grep -r "__(" /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/UI/app/Enums/
+grep -r "return match" /var/www/html/_bases/base_saluteora/laravel/Modules/UI/app/Enums/
+grep -r "__(" /var/www/html/_bases/base_saluteora/laravel/Modules/UI/app/Enums/
+grep -r "return match" /var/www/html/_bases/base_saluteora/laravel/Modules/UI/app/Enums/
+grep -r "__(" /var/www/html/_bases/base_saluteora/laravel/Modules/UI/app/Enums/
+>>>>>>> 6ed19256f (.)
 ```
 
 ## Filosofia del Modulo UI
@@ -133,7 +148,15 @@ grep -r "__(" Modules/UI/app/Enums/
 **"Ogni enum del modulo UI DEVE utilizzare transClass() per TUTTE le sue proprietà traducibili."**
 
 ## Collegamenti
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-08-04*
 - [../../../../../docs/enum-transclass-rule.md](../../../../../docs/enum-transclass-rule.md)
 - [../filament/no-label-rule.md](../filament/no-label-rule.md)
 - [../clean-code/no-obvious-comments.md](../clean-code/no-obvious-comments.md)
+=======
+- [../../../../docs/enum-transclass-rule.md](../../../../docs/enum-transclass-rule.md)
+- [../filament/no-label-rule.md](../filament/no-label-rule.md)
+- [../clean-code/no-obvious-comments.md](../clean-code/no-obvious-comments.md)
+
+*Ultimo aggiornamento: 2025-08-04*
+>>>>>>> 6ed19256f (.)

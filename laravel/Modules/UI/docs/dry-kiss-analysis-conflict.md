@@ -30,8 +30,15 @@ Il modulo UI è l'esempio **perfetto** di come dovrebbe essere un BaseModel quan
 
 ## 🔗 Collegamenti
 [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
+<<<<<<< HEAD
 [DRY/KISS Global](../../../docs/dry_kiss_analysis_[date].md)
 
 ---
 
 **Conclusione:** 🏆 **GOLD STANDARD** per BaseModel minimali!
+=======
+
+---
+
+**Conclusione:** 🏆 **GOLD STANDARD** per BaseModel minimali!
+>>>>>>> 6ed19256f (.)

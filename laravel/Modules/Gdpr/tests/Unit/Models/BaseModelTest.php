@@ -2,6 +2,17 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+namespace Modules\Gdpr\Tests\Unit\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use Modules\Gdpr\Models\BaseModel;
+
+beforeEach(function () {
+    $this->baseModel = new class extends BaseModel
+    {
+>>>>>>> 6ed19256f (.)
         protected $table = 'test_gdpr_table';
     };
 });
@@ -24,4 +35,8 @@ test('base model has proper inheritance chain', function () {
 });
 
 test('base model has timestamps enabled', function () {
+<<<<<<< HEAD
+=======
+    expect($this->baseModel)->usesTimestamps()->toBeTrue();
+>>>>>>> 6ed19256f (.)
 });

@@ -75,7 +75,11 @@ use Modules\Activity\Filament\Resources\ActivityResource;
 class ActivityResource extends XotBaseResource
 {
     protected static ?string $model = Activity::class;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public static function getTableColumns(): array
     {
         return [
@@ -292,6 +296,7 @@ class ActivityTest extends TestCase
    - Pulizia periodica dei log
    - Backup dei dati di attività
    - Monitoraggio delle performance
+<<<<<<< HEAD
 ---
 module: theme
 topic: module-activity
@@ -299,3 +304,5 @@ canonical: ../../../../../Themes/docs/shared-components/module-activity.md
 ---
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/module-activity.md
+=======
+>>>>>>> 6ed19256f (.)

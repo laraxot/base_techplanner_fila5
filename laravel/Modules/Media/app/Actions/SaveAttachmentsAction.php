@@ -6,6 +6,7 @@ namespace Modules\Media\Actions;
 
 use Exception;
 use Illuminate\Support\Facades\Storage;
+<<<<<<< HEAD
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\MediaCollections\FileAdder;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
@@ -14,6 +15,13 @@ use Webmozart\Assert\Assert;
 use function Safe\file_put_contents;
 use function Safe\tempnam;
 use function Safe\unlink;
+=======
+use function Safe\file_put_contents;
+use function Safe\tempnam;
+use function Safe\unlink;
+use Spatie\MediaLibrary\HasMedia;
+use Webmozart\Assert\Assert;
+>>>>>>> 6ed19256f (.)
 
 class SaveAttachmentsAction
 {
@@ -46,7 +54,11 @@ class SaveAttachmentsAction
 
             // Ottieni il contenuto del file prima che venga eliminato
             $fileContent = $storage->get($path);
+<<<<<<< HEAD
             $tempPath = tempnam(storage_path('framework/cache'), 'media_');
+=======
+            $tempPath = tempnam(sys_get_temp_dir(), 'media_');
+>>>>>>> 6ed19256f (.)
 
             file_put_contents($tempPath, $fileContent);
 
@@ -95,14 +107,23 @@ class SaveAttachmentsAction
                 throw new Exception('Method addMediaFromDisk not found');
             }
             $fileAdder = $record->addMediaFromDisk($path, $disk);
+<<<<<<< HEAD
             Assert::nullOrIsInstanceOf($fileAdder, FileAdder::class);
+=======
+>>>>>>> 6ed19256f (.)
             // $media=$record->addMediaFromRequest($attachment)
 
             // $media=$record->addMedia($full_path)
             if ($fileAdder === null) {
                 continue;
             }
+<<<<<<< HEAD
             $media = $fileAdder->toMediaCollection($attachment);
+=======
+            /** @phpstan-ignore-next-line - Spatie MediaLibrary fluent API */
+            $media = $fileAdder->toMediaCollection($attachment);
+            /** @phpstan-ignore-next-line - Spatie MediaLibrary Media model */
+>>>>>>> 6ed19256f (.)
             $data_attachments[$attachment] = $media->getPathRelativeToRoot();
         }
         /** @var array<string, string> $data_attachments */

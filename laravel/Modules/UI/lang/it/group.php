@@ -6,6 +6,7 @@ return [
     'fields' => [
         'lavoratore' => [
             'label' => 'lavoratore',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -75,6 +76,29 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Group',
+=======
+        ],
+        'qua' => [
+            'label' => 'qua',
+        ],
+        'rep' => [
+            'label' => 'rep',
+        ],
+        'periodo' => [
+            'label' => 'periodo',
+        ],
+        'info' => [
+            'label' => 'info',
+        ],
+        'diritto' => [
+            'label' => 'diritto',
+        ],
+        'motivo/invio email' => [
+            'label' => 'motivo/invio email',
+        ],
+        'motivo/invio_email' => [
+            'label' => 'motivo/invio_email',
+>>>>>>> 6ed19256f (.)
         ],
     ],
 ];

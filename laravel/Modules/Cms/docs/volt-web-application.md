@@ -61,8 +61,12 @@ $mount = function ($initialName = '') {
 // Metodi
 $save = function () {
     $this->validate();
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // Logica di salvataggio
 };
 ?>
@@ -105,10 +109,13 @@ $save = function () {
 state([
     // Stato primitivo
     'counter' => 0,
+<<<<<<< HEAD
     
     // Array
     'items' => [],
     
+=======
+>>>>>>> 6ed19256f (.)
 
     // Array
     'items' => [],
@@ -178,11 +185,14 @@ rules([
 
 $save = function () {
     $validated = $this->validate();
+<<<<<<< HEAD
     
     $post = Post::create($validated['form']);
     
     session()->flash('message', 'Post creato con successo!');
     
+=======
+>>>>>>> 6ed19256f (.)
 
     $post = Post::create($validated['form']);
 
@@ -310,8 +320,11 @@ $getFilteredUsers = function () {
 // Input con debounce
 <input
     type="text"
+<<<<<<< HEAD
 <input 
     type="text" 
+=======
+>>>>>>> 6ed19256f (.)
     wire:model.live.debounce.300ms="search"
     placeholder="Cerca..."
 >
@@ -320,7 +333,10 @@ $getFilteredUsers = function () {
 $users = computed(function () {
     return User::with('profile', 'posts')
         ->when($this->search, fn($query) =>
+<<<<<<< HEAD
         ->when($this->search, fn($query) => 
+=======
+>>>>>>> 6ed19256f (.)
             $query->where('name', 'like', "%{$this->search}%")
         )
         ->paginate(10);
@@ -773,4 +789,7 @@ class UserFormTest extends TestCase
 - [Livewire Documentation](https://livewire.laravel.com)
 - [Laravel Documentation](https://laravel.com/docs)
 - [Articolo Originale di Moinuddin Chowdhury](https://medium.com/@moinuddinchowdhury/how-to-create-web-application-using-laravel-volt-the-magical-way-2145071046b2)
+<<<<<<< HEAD
 - [Articolo Originale di Moinuddin Chowdhury](https://medium.com/@moinuddinchowdhury/how-to-create-web-application-using-laravel-volt-the-magical-way-2145071046b2) 
+=======
+>>>>>>> 6ed19256f (.)

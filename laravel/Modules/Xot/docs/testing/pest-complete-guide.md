@@ -249,7 +249,11 @@ abstract class TestCase extends BaseTestCase
 ### Comando Base
 ```bash
 # Dalla cartella laravel/
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/_bases/base_laravelpizza/laravel
+>>>>>>> 6ed19256f (.)
 ./vendor/bin/pest Modules/User/tests/
 ```
 

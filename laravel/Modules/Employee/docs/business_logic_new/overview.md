@@ -412,4 +412,8 @@ class ProcessBulkTimeEntriesAction
 
 *Documento creato: 2025-01-06*  
 *Pattern: Spatie QueueableActions*  
+<<<<<<< HEAD
 *Compliance: Laraxot conventions*
+=======
+*Compliance: Laraxot conventions*
+>>>>>>> 6ed19256f (.)

@@ -156,5 +156,8 @@ npm run copy
 * [themes.md](docs/rules/themes.md)
 * [themes.md](laravel/Modules/Xot/docs/themes.md)
 * [themes.md](laravel/Modules/Cms/docs/frontoffice/themes.md)
+<<<<<<< HEAD
 * [themes.md](laravel/modules/xot/docs/themes.md)
 * [themes.md](laravel/modules/cms/docs/frontoffice/themes.md)
+=======
+>>>>>>> 6ed19256f (.)

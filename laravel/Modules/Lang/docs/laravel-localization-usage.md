@@ -4,9 +4,12 @@
 - [README modulo Lang](./README.md)
 - [Best Practices Chiavi di Traduzione](./TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
+<<<<<<< HEAD
 - [README modulo Lang](./README.md)
 - [Best Practices Chiavi di Traduzione](./TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica
@@ -31,7 +34,11 @@ Questo documento descrive come utilizzare correttamente il pacchetto `mcamara/la
 ## Configurazione
 
 Il pacchetto `mcamara/laravel-localization` è già configurato . La configurazione si trova in:
+<<<<<<< HEAD
 - `config/laravellocalization.php`
+=======
+- `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/config/laravellocalization.php`
+>>>>>>> 6ed19256f (.)
 
 Le lingue supportate sono definite nella chiave `supportedLocales` di questo file.
 
@@ -100,7 +107,11 @@ $currentLocale = app()->getLocale();
 
 ## Utilizzo delle Bandiere SVG
 
+<<<<<<< HEAD
 Le bandiere SVG sono disponibili in `Modules/UI/resources/svg/flags` e sono autoregistrate come componenti Blade con il prefisso `ui-flags`.
+=======
+Le bandiere SVG sono disponibili in `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/UI/resources/svg/flags` e sono autoregistrate come componenti Blade con il prefisso `ui-flags`.
+>>>>>>> 6ed19256f (.)
 
 ### Utilizzo Corretto
 
@@ -241,9 +252,12 @@ Questi middleware sono già configurati  e non è necessario modificarli.
 - [README modulo Lang](./README.md)
 - [Best Practices Chiavi di Traduzione](./TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
+<<<<<<< HEAD
 - [README modulo Lang](./README.md)
 - [Best Practices Chiavi di Traduzione](./TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica
@@ -268,7 +282,11 @@ Questo documento descrive come utilizzare correttamente il pacchetto `mcamara/la
 ## Configurazione
 
 Il pacchetto `mcamara/laravel-localization` è già configurato . La configurazione si trova in:
+<<<<<<< HEAD
 - `config/laravellocalization.php`
+=======
+- `/var/www/html/saluteora/laravel/config/laravellocalization.php`
+>>>>>>> 6ed19256f (.)
 
 Le lingue supportate sono definite nella chiave `supportedLocales` di questo file.
 
@@ -337,7 +355,11 @@ $currentLocale = app()->getLocale();
 
 ## Utilizzo delle Bandiere SVG
 
+<<<<<<< HEAD
 Le bandiere SVG sono disponibili in `Modules/UI/resources/svg/flags` e sono autoregistrate come componenti Blade con il prefisso `ui-flags`.
+=======
+Le bandiere SVG sono disponibili in `/var/www/html/saluteora/laravel/Modules/UI/resources/svg/flags` e sono autoregistrate come componenti Blade con il prefisso `ui-flags`.
+>>>>>>> 6ed19256f (.)
 
 ### Utilizzo Corretto
 
@@ -471,4 +493,8 @@ Questi middleware sono già configurati  e non è necessario modificarli.
 
 - [Documentazione ufficiale mcamara/laravel-localization](https://github.com/mcamara/laravel-localization)
 - [Documentazione Laravel Localization](https://laravel.com/docs/10.x/localization)
+<<<<<<< HEAD
 - [Blade Components Documentation](https://laravel.com/docs/10.x/blade#components)
+=======
+- [Blade Components Documentation](https://laravel.com/docs/10.x/blade#components)
+>>>>>>> 6ed19256f (.)

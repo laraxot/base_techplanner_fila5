@@ -17,6 +17,7 @@ return [
     'fields' => [
         'password' => [
             'label' => 'password',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -43,4 +44,14 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+        ],
+        'email' => [
+            'label' => 'email',
+        ],
+        'name' => [
+            'label' => 'name',
+        ],
+    ],
+>>>>>>> 6ed19256f (.)
 ];

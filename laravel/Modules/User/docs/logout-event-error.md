@@ -1,6 +1,7 @@
 # Analisi dell'Errore negli Eventi di Logout
 
 ## Collegamenti correlati
+<<<<<<< HEAD
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth_pages_implementation.md)
@@ -8,6 +9,8 @@
 - [Analisi Errore Logout](logout_blade_error_analysis.md)
 - [Widget Filament Corretto](logout_filament_widget_corrected.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](AUTH_PAGES_IMPLEMENTATION.md)
@@ -18,7 +21,11 @@
 
 ## Errore Identificato
 
+<<<<<<< HEAD
 L'implementazione attuale del file `Themes/One/resources/views/pages/auth/logout.blade.php` causa un errore quando viene eseguito il logout:
+=======
+L'implementazione attuale del file `/var/www/html/saluteora/laravel/Themes/One/resources/views/pages/auth/logout.blade.php` causa un errore quando viene eseguito il logout:
+>>>>>>> 6ed19256f (.)
 
 ```
 Call to a member function getAuthIdentifier() on null
@@ -153,6 +160,7 @@ Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier
 # Analisi dell'Errore negli Eventi di Logout
 
 ## Collegamenti correlati
+<<<<<<< HEAD
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth_pages_implementation.md)
@@ -160,6 +168,8 @@ Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier
 - [Analisi Errore Logout](logout_blade_error_analysis.md)
 - [Widget Filament Corretto](logout_filament_widget_corrected.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](AUTH_PAGES_IMPLEMENTATION.md)
@@ -170,7 +180,11 @@ Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier
 
 ## Errore Identificato
 
+<<<<<<< HEAD
 L'implementazione attuale del file `Themes/One/resources/views/pages/auth/logout.blade.php` causa un errore quando viene eseguito il logout:
+=======
+L'implementazione attuale del file `/var/www/html/saluteora/laravel/Themes/One/resources/views/pages/auth/logout.blade.php` causa un errore quando viene eseguito il logout:
+>>>>>>> 6ed19256f (.)
 
 ```
 Call to a member function getAuthIdentifier() on null
@@ -301,4 +315,8 @@ Si raccomanda di implementare l'**Opzione 1** perché:
 2. Evita di modificare il `LogoutListener` che potrebbe essere utilizzato da altre parti dell'applicazione
 3. Garantisce che gli eventi di logout abbiano sempre accesso all'utente che si è disconnesso
 
+<<<<<<< HEAD
 Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier() on null` e garantirà un corretto funzionamento del processo di logout.
+=======
+Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier() on null` e garantirà un corretto funzionamento del processo di logout.
+>>>>>>> 6ed19256f (.)

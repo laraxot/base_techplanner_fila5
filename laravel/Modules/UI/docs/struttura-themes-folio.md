@@ -1,9 +1,17 @@
 # Struttura Themes e Folio in
+<<<<<<< HEAD
 # Struttura Themes e Folio in <nome progetto>
 # Struttura Themes e Folio in
 # Struttura Themes e Folio in <nome progetto>
 # Struttura Themes e Folio in
 # Struttura Themes e Folio in <nome progetto>
+=======
+# Struttura Themes e Folio in SaluteOra
+# Struttura Themes e Folio in
+# Struttura Themes e Folio in SaluteOra
+# Struttura Themes e Folio in
+# Struttura Themes e Folio in SaluteOra
+>>>>>>> 6ed19256f (.)
 
 ## ⚠️ ATTENZIONE CRITICA
 
@@ -14,11 +22,19 @@
 ## Struttura del Progetto
 
 Il progetto  utilizza un sistema di **Themes** che modifica la struttura standard di Laravel Folio:
+<<<<<<< HEAD
 Il progetto <nome progetto> utilizza un sistema di **Themes** che modifica la struttura standard di Laravel Folio:
 Il progetto  utilizza un sistema di **Themes** che modifica la struttura standard di Laravel Folio:
 Il progetto <nome progetto> utilizza un sistema di **Themes** che modifica la struttura standard di Laravel Folio:
 Il progetto  utilizza un sistema di **Themes** che modifica la struttura standard di Laravel Folio:
 Il progetto <nome progetto> utilizza un sistema di **Themes** che modifica la struttura standard di Laravel Folio:
+=======
+Il progetto SaluteOra utilizza un sistema di **Themes** che modifica la struttura standard di Laravel Folio:
+Il progetto  utilizza un sistema di **Themes** che modifica la struttura standard di Laravel Folio:
+Il progetto SaluteOra utilizza un sistema di **Themes** che modifica la struttura standard di Laravel Folio:
+Il progetto  utilizza un sistema di **Themes** che modifica la struttura standard di Laravel Folio:
+Il progetto SaluteOra utilizza un sistema di **Themes** che modifica la struttura standard di Laravel Folio:
+>>>>>>> 6ed19256f (.)
 
 ```
 /laravel/
@@ -342,6 +358,7 @@ config('theme.views_path') // Output: "Themes/One/resources/views"
 - [Documentazione Laravel Folio](https://laravel.com/docs/folio)
 - [mcamara/laravel-localization](https://github.com/mcamara/laravel-localization)
 - Configurazione Theme: `/laravel/config/theme.php`
+<<<<<<< HEAD
 ---
 module: theme
 topic: struttura-themes-folio
@@ -349,3 +366,5 @@ canonical: ../../../Themes/docs/shared-components/struttura-themes-folio.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/struttura-themes-folio.md
+=======
+>>>>>>> 6ed19256f (.)

@@ -97,4 +97,8 @@ enum PdfEngineEnum
     case SPIPU;    // spipu/html2pdf (default)
     case SPATIE;   // spatie/laravel-pdf (alternative)
 }
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> 6ed19256f (.)

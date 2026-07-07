@@ -6,6 +6,10 @@ namespace Modules\User\Actions\Otp;
 
 use Filament\Notifications\Notification as FilamentNotification;
 use Illuminate\Support\Carbon;
+<<<<<<< HEAD
+=======
+use Illuminate\Support\Facades\Hash;
+>>>>>>> 6ed19256f (.)
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Str;
 use Modules\User\Datas\PasswordData;
@@ -22,11 +26,20 @@ class SendOtpByUserAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
     public function __construct(
         private readonly PasswordData $passwordData,
         private readonly Str $stringHelper,
         private readonly Hasher $hasher,
     ) {
+=======
+    private PasswordData $passwordData;
+
+    public function __construct()
+    {
+        // Initialize PasswordData instance, relying on dependency injection if required.
+        $this->passwordData = PasswordData::make();
+>>>>>>> 6ed19256f (.)
     }
 
     /**
@@ -51,7 +64,11 @@ class SendOtpByUserAction
      */
     private function generateTemporaryPassword(): string
     {
+<<<<<<< HEAD
         return $this->stringHelper->random(12);
+=======
+        return Str::random(12);
+>>>>>>> 6ed19256f (.)
     }
 
     /**
@@ -74,7 +91,11 @@ class SendOtpByUserAction
     private function updateUserWithOtp(UserContract $user, string $temporaryPassword, Carbon $expirationTime): void
     {
         $user->update([
+<<<<<<< HEAD
             'password' => $this->hasher->make($temporaryPassword),
+=======
+            'password' => Hash::make($temporaryPassword),
+>>>>>>> 6ed19256f (.)
             'is_otp' => true,
             'password_expires_at' => $expirationTime,
         ]);

@@ -9,9 +9,14 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 use Illuminate\Support\Facades\Log;
 use Modules\Notify\Datas\WhatsAppData;
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\json_decode;
+=======
+use function Safe\json_decode;
+use Spatie\QueueableAction\QueueableAction;
+>>>>>>> 6ed19256f (.)
 
 final class SendFacebookWhatsAppAction
 {
@@ -60,12 +65,28 @@ final class SendFacebookWhatsAppAction
      * Execute the action.
      *
      * @param  WhatsAppData  $whatsAppData  I dati del messaggio WhatsApp
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> 6ed19256f (.)
      * @return array<string, mixed> Risultato dell'operazione
      *
      * @throws Exception In caso di errore durante l'invio
      */
     public function execute(WhatsAppData $whatsAppData): array
     {
+<<<<<<< HEAD
+=======
+        // Log di debug se abilitato
+        if ($this->debug) {
+            Log::debug('Invio WhatsApp Facebook', [
+                'to' => $whatsAppData->recipient,
+                'message_length' => strlen($whatsAppData->body),
+                'type' => $whatsAppData->type,
+            ]);
+        }
+
+>>>>>>> 6ed19256f (.)
         $client = new Client([
             'timeout' => $this->timeout,
             'headers' => [
@@ -114,7 +135,11 @@ final class SendFacebookWhatsAppAction
             $this->vars['status_txt'] = $responseContent;
             $this->vars['response_data'] = $responseData;
 
+<<<<<<< HEAD
             Log::debug('WhatsApp Facebook inviato con successo', [
+=======
+            Log::info('WhatsApp Facebook inviato con successo', [
+>>>>>>> 6ed19256f (.)
                 'to' => $whatsAppData->recipient,
                 'response_code' => $statusCode,
             ]);

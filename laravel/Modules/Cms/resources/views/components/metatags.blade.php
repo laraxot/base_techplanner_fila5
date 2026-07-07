@@ -4,6 +4,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<<<<<<< HEAD
+=======
+    {{-- Content Security Policy --}}
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://unpkg.com https://kit.fontawesome.com;
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://unpkg.com https://kit.fontawesome.com;
+        font-src 'self' https://fonts.gstatic.com https://fonts.googleapis.com https://kit.fontawesome.com data:;
+        img-src 'self' data: https: blob:;
+        connect-src 'self' https://www.google-analytics.com;
+        media-src 'self';
+        object-src 'none';
+        frame-ancestors 'self';
+        form-action 'self';
+        base-uri 'self';
+        manifest-src 'self';
+        worker-src 'self' blob:;
+        child-src 'self' blob:;
+
+        upgrade-insecure-requests;
+    ">
+
+>>>>>>> 6ed19256f (.)
     {{-- SEO Basics --}}
     <meta name="title" content="{{ $meta->getTitle() }}">
     <meta name="description" content="{{ $meta->getDescription(limit: 160) }}">
@@ -47,10 +70,13 @@
     <meta name="theme-color" content="#ffffff">
     --}}
 
+<<<<<<< HEAD
     @if(isset($pageSchema) && is_array($pageSchema) && $pageSchema !== [])
         <script type="application/ld+json">{!! json_encode($pageSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}</script>
     @endif
 
+=======
+>>>>>>> 6ed19256f (.)
     {{ $slot }}
     @filamentStyles
     @vite(['resources/css/app.css', 'resources/js/app.js'], 'themes/' . $meta->getPubTheme())

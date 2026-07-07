@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\UserResource\Pages;
 
 use Filament\Actions\Action;
+<<<<<<< HEAD
 use Filament\Actions\ActionGroup;
+=======
+>>>>>>> 6ed19256f (.)
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\BaseFilter;
@@ -54,8 +57,16 @@ abstract class BaseListUsers extends XotBaseListRecords
     /**
      * Get table actions for user records.
      *
+<<<<<<< HEAD
      * @return array<string, Action|ActionGroup>
      */
+=======
+     * @return array<string, Action|\Filament\Actions\ActionGroup>
+     *
+     * @phpstan-ignore-next-line
+     */
+    /** @phpstan-ignore-next-line */
+>>>>>>> 6ed19256f (.)
     #[\Override]
     public function getTableActions(): array
     {
@@ -76,6 +87,10 @@ abstract class BaseListUsers extends XotBaseListRecords
          * ->icon('heroicon-o-trash')
          * ->action(static fn (UserContract $user) => $user->delete());
          */
+<<<<<<< HEAD
+=======
+        /* @phpstan-ignore-next-line */
+>>>>>>> 6ed19256f (.)
     }
 
     /**

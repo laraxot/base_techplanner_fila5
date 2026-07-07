@@ -85,8 +85,12 @@ All tests should be **green** without hitting the database schema-refresh.
            // Test code...
        });
    });
+<<<<<<< HEAD
    
    
+=======
+
+>>>>>>> 6ed19256f (.)
    // Piuttosto che questo (può causare problemi)
    describe('RegistrationWidget', function () {
        describe('Form Interaction', function () {
@@ -165,10 +169,13 @@ All tests should be **green** without hitting the database schema-refresh.
         test('widget handles different types with different behaviors', function () {
             // Patient widget
             $patientWidget = Livewire::test(RegistrationWidget::class, ['type' => 'patient']);
+<<<<<<< HEAD
             
             // Doctor widget
             $doctorWidget = Livewire::test(RegistrationWidget::class, ['type' => 'doctor']);
             
+=======
+>>>>>>> 6ed19256f (.)
 
             // Doctor widget
             $doctorWidget = Livewire::test(RegistrationWidget::class, ['type' => 'doctor']);
@@ -230,4 +237,7 @@ After implementare le migliorie descritte sopra, tutti i test passano con succes
 
 ---
 Last update: 2025-07-06
+<<<<<<< HEAD
 Last update: [DATE]
+=======
+>>>>>>> 6ed19256f (.)

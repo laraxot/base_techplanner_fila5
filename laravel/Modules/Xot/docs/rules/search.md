@@ -172,5 +172,8 @@
 * [search.md](docs/rules/search.md)
 * [search.md](../../../Xot/docs/features/search.md)
 * [search.md](../../../Xot/docs/rules/search.md)
+<<<<<<< HEAD
 * [search.md](../../../xot/docs/features/search.md)
 * [search.md](../../../xot/docs/rules/search.md)
+=======
+>>>>>>> 6ed19256f (.)

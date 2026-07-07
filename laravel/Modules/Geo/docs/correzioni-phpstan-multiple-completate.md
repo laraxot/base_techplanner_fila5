@@ -1,3 +1,18 @@
+<<<<<<< HEAD
+=======
+# ✅ CORREZIONI PHPStan MULTIPLE COMPLETATE
+
+## 🎯 Sessione di Bug Fixing Completata
+
+Ho risolto **tutti gli errori PHPStan** identificati nei moduli Notify, User e Activity, implementando correzioni sistematiche e regole per prevenire errori futuri.
+
+## 📊 ERRORI RISOLTI
+
+### Modulo Notify (12 errori → 0)
+1. **ConfigHelper.php**: 11 errori type safety array_merge
+2. **NotifyThemeableFactory.php**: 1 errore metodo mancante XotData
+
+>>>>>>> 6ed19256f (.)
 ### Modulo User (1 errore → 0)
 3. **HasAuthenticationLogTrait.php**: 1 errore relationship type hint
 
@@ -302,6 +317,7 @@ array_merge(
 *Correzioni completate: 6 Gennaio 2025*
 *Metodologia: Studio → Correzione → Prevenzione*
 *Risultato: 0 errori PHPStan + regole preventive*
+<<<<<<< HEAD
 ---
 module: theme
 topic: correzioni-phpstan-multiple-completate
@@ -309,3 +325,5 @@ canonical: ../../../Themes/docs/shared-components/CORREZIONI_PHPSTAN_MULTIPLE_CO
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/CORREZIONI_PHPSTAN_MULTIPLE_COMPLETATE.md
+=======
+>>>>>>> 6ed19256f (.)

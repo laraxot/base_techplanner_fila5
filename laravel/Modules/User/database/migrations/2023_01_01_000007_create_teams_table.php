@@ -28,7 +28,11 @@ return new class extends XotBaseMigration {
         $this->tableUpdate(function (Blueprint $table): void {
             // MySqlConnection::getDoctrineSchemaManager does not exist.
             // MySqlConnection::getSchemaGrammar() ?
+<<<<<<< HEAD
             // if ($hasIndexName('team_invitations_team_id_foreign'))
+=======
+            // if ($this->hasIndexName('team_invitations_team_id_foreign')) {
+>>>>>>> 6ed19256f (.)
             //    $table->dropForeign('team_invitations_team_id_foreign');
             // }
             if ($this->hasColumn('uuid')) {

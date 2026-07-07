@@ -1,5 +1,6 @@
 # PHPStan Level 10 Compliance Status
 
+<<<<<<< HEAD
 **Last Updated**: 2026-03-10
 **Status**: ✅ FULLY COMPLIANT (0 errors)
 
@@ -37,6 +38,20 @@ The recovery removed residual static-analysis drift in:
 - `RegisterWidget` now imports the `Log` facade explicitly
 - Refresh token revoke logic now uses attribute APIs instead of fragile direct dynamic property access where PHPStan could not infer the field safely
 
+=======
+**Last Updated**: 2025-12-10
+**Status**: ✅ FULLY COMPLIANT (0 errors)
+
+## Summary
+The User module is already compliant with PHPStan Level 10 analysis. No errors were found during the verification process, demonstrating excellent type safety and code quality standards.
+
+## Compliance Verification
+```bash
+./vendor/bin/phpstan analyse Modules/User --level=10 --memory-limit=-1
+# Result: [OK] No errors
+```
+
+>>>>>>> 6ed19256f (.)
 ## Module Overview
 
 The User module provides:
@@ -81,14 +96,26 @@ The module follows strict patterns for user management:
 ## Ongoing Maintenance
 
 To maintain PHPStan compliance:
+<<<<<<< HEAD
 1. Keep `PassportServiceProvider` and all OAuth consumers aligned to the actual vendor Eloquent models exposed by `laravel/passport`
 2. Distinguish strictly between vendor Passport Eloquent wrappers and local application OAuth models
 3. Prefer typed local variables over property access on `JsonResource` and similar proxy objects
 4. Run `./vendor/bin/phpstan analyse Modules/User --error-format=raw` after each Passport/OAuth batch
 5. Re-run `./vendor/bin/phpstan analyse Modules` before considering the work complete
+=======
+1. Continue following established type safety patterns
+2. Test all authentication flows
+3. Verify permission system works correctly
+4. Run PHPStan before committing changes
+5. Ensure all new user features maintain type safety
+>>>>>>> 6ed19256f (.)
 
 ## Related Documentation
 - [User Management Guide](user-management.md)
 - [Authentication Patterns](authentication-patterns.md)
 - [Role and Permissions](role-permissions.md)
+<<<<<<< HEAD
 - [Team Management](team-management.md)
+=======
+- [Team Management](team-management.md)
+>>>>>>> 6ed19256f (.)

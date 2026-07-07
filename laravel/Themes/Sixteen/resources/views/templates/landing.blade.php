@@ -14,8 +14,12 @@
                     @if($service->icon)
                         <x-dynamic-component :component="$service->icon" class="w-8 h-8" />
                     @else
+<<<<<<< HEAD
                         <x-filament::icon icon="heroicon-o-cog-6-tooth" class="w-8 h-8" />
 f7ac8eda (.)
+=======
+                        <x-heroicon-o-cog-6-tooth class="w-8 h-8" />
+>>>>>>> 6ed19256f (.)
                     @endif
                 </div>
                 <div>
@@ -23,6 +27,7 @@ f7ac8eda (.)
                         <ol class="flex items-center space-x-2">
                             <li><a href="{{ route('home') }}" class="hover:text-white">Home</a></li>
                             <li class="flex items-center">
+<<<<<<< HEAD
                                 <x-filament::icon icon="heroicon-o-chevron-right" class="w-4 h-4 mx-2" />
 f7ac8eda (.)
                                 <a href="{{ route('services') }}" class="hover:text-white">Servizi</a>
@@ -30,6 +35,13 @@ f7ac8eda (.)
                             <li class="flex items-center">
                                 <x-filament::icon icon="heroicon-o-chevron-right" class="w-4 h-4 mx-2" />
 f7ac8eda (.)
+=======
+                                <x-heroicon-o-chevron-right class="w-4 h-4 mx-2" />
+                                <a href="{{ route('services') }}" class="hover:text-white">Servizi</a>
+                            </li>
+                            <li class="flex items-center">
+                                <x-heroicon-o-chevron-right class="w-4 h-4 mx-2" />
+>>>>>>> 6ed19256f (.)
                                 <span class="text-white" aria-current="page">{{ $service->name }}</span>
                             </li>
                         </ol>
@@ -60,8 +72,12 @@ f7ac8eda (.)
                                 <div class="border border-gray-200 rounded-lg p-6 hover:border-blue-300 transition-colors">
                                     <div class="flex items-center mb-4">
                                         <div class="bg-blue-100 p-2 rounded-lg mr-4">
+<<<<<<< HEAD
                                             <x-filament::icon icon="heroicon-o-arrow-right-on-rectangle" class="w-6 h-6 text-blue-600" />
 f7ac8eda (.)
+=======
+                                            <x-heroicon-o-arrow-right-on-rectangle class="w-6 h-6 text-blue-600" />
+>>>>>>> 6ed19256f (.)
                                         </div>
                                         <h3 class="text-lg font-semibold text-gray-900">{{ $action['title'] }}</h3>
                                     </div>
@@ -101,8 +117,12 @@ f7ac8eda (.)
                             <div class="space-y-3">
                                 @foreach($service->requirements as $requirement)
                                     <div class="flex items-start">
+<<<<<<< HEAD
                                         <x-filament::icon icon="heroicon-o-check-circle" class="w-5 h-5 text-green-500 mt-0.5 mr-3 flex-shrink-0" />
 f7ac8eda (.)
+=======
+                                        <x-heroicon-o-check-circle class="w-5 h-5 text-green-500 mt-0.5 mr-3 flex-shrink-0" />
+>>>>>>> 6ed19256f (.)
                                         <span class="text-gray-700">{{ $requirement }}</span>
                                     </div>
                                 @endforeach
@@ -136,24 +156,36 @@ f7ac8eda (.)
                         <div class="space-y-3">
                             @if($service->cost)
                                 <div class="flex items-center">
+<<<<<<< HEAD
                                     <x-filament::icon icon="heroicon-o-currency-euro" class="w-5 h-5 text-gray-400 mr-3" />
 f7ac8eda (.)
+=======
+                                    <x-heroicon-o-currency-euro class="w-5 h-5 text-gray-400 mr-3" />
+>>>>>>> 6ed19256f (.)
                                     <span class="text-gray-700">{{ $service->cost }}</span>
                                 </div>
                             @endif
                             
                             @if($service->processing_time)
                                 <div class="flex items-center">
+<<<<<<< HEAD
                                     <x-filament::icon icon="heroicon-o-clock" class="w-5 h-5 text-gray-400 mr-3" />
 f7ac8eda (.)
+=======
+                                    <x-heroicon-o-clock class="w-5 h-5 text-gray-400 mr-3" />
+>>>>>>> 6ed19256f (.)
                                     <span class="text-gray-700">{{ $service->processing_time }}</span>
                                 </div>
                             @endif
                             
                             @if($service->availability)
                                 <div class="flex items-center">
+<<<<<<< HEAD
                                     <x-filament::icon icon="heroicon-o-globe-alt" class="w-5 h-5 text-gray-400 mr-3" />
 f7ac8eda (.)
+=======
+                                    <x-heroicon-o-globe-alt class="w-5 h-5 text-gray-400 mr-3" />
+>>>>>>> 6ed19256f (.)
                                     <span class="text-gray-700">{{ $service->availability }}</span>
                                 </div>
                             @endif
@@ -167,8 +199,12 @@ f7ac8eda (.)
                         <div class="space-y-3">
                             @if($service->contact_phone)
                                 <div class="flex items-center">
+<<<<<<< HEAD
                                     <x-filament::icon icon="heroicon-o-phone" class="w-5 h-5 text-gray-400 mr-3" />
 f7ac8eda (.)
+=======
+                                    <x-heroicon-o-phone class="w-5 h-5 text-gray-400 mr-3" />
+>>>>>>> 6ed19256f (.)
                                     <a href="tel:{{ $service->contact_phone }}" class="text-blue-600 hover:text-blue-800">
                                         {{ $service->contact_phone }}
                                     </a>
@@ -177,8 +213,12 @@ f7ac8eda (.)
                             
                             @if($service->contact_email)
                                 <div class="flex items-center">
+<<<<<<< HEAD
                                     <x-filament::icon icon="heroicon-o-envelope" class="w-5 h-5 text-gray-400 mr-3" />
 f7ac8eda (.)
+=======
+                                    <x-heroicon-o-envelope class="w-5 h-5 text-gray-400 mr-3" />
+>>>>>>> 6ed19256f (.)
                                     <a href="mailto:{{ $service->contact_email }}" class="text-blue-600 hover:text-blue-800">
                                         {{ $service->contact_email }}
                                     </a>
@@ -187,8 +227,12 @@ f7ac8eda (.)
                             
                             @if($service->office_hours)
                                 <div class="flex items-start">
+<<<<<<< HEAD
                                     <x-filament::icon icon="heroicon-o-calendar-days" class="w-5 h-5 text-gray-400 mr-3 mt-0.5" />
 f7ac8eda (.)
+=======
+                                    <x-heroicon-o-calendar-days class="w-5 h-5 text-gray-400 mr-3 mt-0.5" />
+>>>>>>> 6ed19256f (.)
                                     <span class="text-gray-700">{{ $service->office_hours }}</span>
                                 </div>
                             @endif
@@ -258,8 +302,12 @@ f7ac8eda (.)
                         @for($i = 1; $i <= 5; $i++)
                             <label class="cursor-pointer">
                                 <input type="radio" name="rating" value="{{ $i }}" class="sr-only">
+<<<<<<< HEAD
                                 <x-filament::icon icon="heroicon-o-star" class="w-8 h-8 text-gray-300 hover:text-yellow-400 peer-checked:text-yellow-500" />
 f7ac8eda (.)
+=======
+                                <x-heroicon-o-star class="w-8 h-8 text-gray-300 hover:text-yellow-400 peer-checked:text-yellow-500" />
+>>>>>>> 6ed19256f (.)
                             </label>
                         @endfor
                     </div>

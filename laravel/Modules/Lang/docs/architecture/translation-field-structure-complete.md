@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Struttura Completa dei Campi di Traduzione - Standard Laraxot <nome progetto>
+=======
+# Struttura Completa dei Campi di Traduzione - Standard Laraxot SaluteOra
+>>>>>>> 6ed19256f (.)
 
 ## Principi Fondamentali DRY + KISS
 
@@ -300,7 +304,11 @@ return [
 ## File da Aggiornare (Priorità)
 
 ### Alta Priorità - Tedeschi
+<<<<<<< HEAD
 1. `/laravel/Modules/<nome progetto>/lang/de/patient-resource.php`
+=======
+1. `/laravel/Modules/SaluteOra/lang/de/patient-resource.php`
+>>>>>>> 6ed19256f (.)
 2. `/laravel/Modules/User/lang/de/registration.php`
 3. `/laravel/Modules/User/lang/de/register_tenant.php`
 
@@ -310,10 +318,15 @@ return [
 
 ## Collegamenti Bidirezionali
 
+<<<<<<< HEAD
 - [<nome progetto> Translation Audit](../Modules/<nome progetto>/docs/translation_audit_city_fields.md)
 - [User Module Translation Rules](../Modules/User/docs/widget-translation-rules.md)
 - [<nome progetto> Translation Audit](../modules/<nome progetto>/docs/translation_audit_city_fields.md)
 - [User Module Translation Rules](../modules/user/docs/widget-translation-rules.md)
+=======
+- [SaluteOra Translation Audit](../Modules/SaluteOra/docs/translation_audit_city_fields.md)
+- [User Module Translation Rules](../Modules/User/docs/widget-translation-rules.md)
+>>>>>>> 6ed19256f (.)
 - [Translation Syntax Fixes](translation_syntax_fixes.md)
 - [Windsurf Translation Rules](../.windsurf/rules/translation-complete-structure.mdc)
 
@@ -330,4 +343,8 @@ grep -r "label.*Città" laravel/Modules/*/lang/de/ laravel/Modules/*/lang/en/
 cd laravel && ./vendor/bin/phpstan analyze Modules/*/lang/ --level=9
 ```
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-08-08 - Struttura completa standardizzata*
+=======
+*Ultimo aggiornamento: 2025-08-08 - Struttura completa standardizzata*
+>>>>>>> 6ed19256f (.)

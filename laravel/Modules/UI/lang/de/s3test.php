@@ -13,15 +13,21 @@ return [
             'label' => 'Test Datei',
             'placeholder' => 'Datei hochladen um S3 zu testen',
             'helper_text' => 'Datei wird zu S3 hochgeladen um die Konfiguration zu testen',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'debug_output' => [
             'label' => 'Debug Ergebnisse',
             'placeholder' => 'Test Ergebnisse erscheinen hier',
             'helper_text' => 'Detaillierte Ausgabe der AWS Konfigurationstests',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -81,6 +87,7 @@ return [
         'complete' => '✅ Vollständig',
         'incomplete' => '❌ Unvollständig',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -90,4 +97,6 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

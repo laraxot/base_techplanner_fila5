@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  ------ -------------- 
   Line   app/Filament  
          /Resources/R  
@@ -34,6 +35,8 @@
 
  [ERROR] Found 1 error 
 
+=======
+>>>>>>> 6ed19256f (.)
 # PHPStan Livello 10 (MAX) - Report Qualità Codice
 
 ## Data Analisi
@@ -251,4 +254,8 @@ vendor/bin/phpstan analyse --level=8 --error-format=github
 - [PHPStan Docs](https://phpstan.org/user-guide/rule-levels)
 - [Assert Best Practices](https://github.com/webmozarts/assert)
 - [PHP Type System](https://www.php.net/manual/en/language.types.php)
+<<<<<<< HEAD
 - [Generics in PHP](https://phpstan.org/blog/generics-in-php-using-phpdocs)
+=======
+- [Generics in PHP](https://phpstan.org/blog/generics-in-php-using-phpdocs)
+>>>>>>> 6ed19256f (.)

@@ -391,7 +391,11 @@ class ClosedDays extends Field { /* Focused on day selection */ }
 
 #### **3.1 AI-Enhanced Components**
 - Smart form validation with ML suggestions
+<<<<<<< HEAD
 - Auto-complete components with intelligent <nome progetto>ions
+=======
+- Auto-complete components with intelligent predictions
+>>>>>>> 6ed19256f (.)
 - Dynamic form generation based on data patterns
 - Voice-controlled component interactions
 
@@ -728,7 +732,11 @@ class UserCalendarWidget extends XotBaseWidget
 **Modulo**: UI (User Interface Components & Design System)
 **Status**: 85% COMPLETATO
 **Priority**: HIGH
+<<<<<<< HEAD
 **PHPStan**: ✅ Level 10 (0 errori)
+=======
+**PHPStan**: ✅ Level 9 (0 errori)
+>>>>>>> 6ed19256f (.)
 **Filament**: ✅ 4.x Compatibile
 
 ---
@@ -800,7 +808,11 @@ UI Module
 - [x] **Orientation Handling**: Gestione orientamento dispositivo
 
 ### 🛠️ Technical Excellence
+<<<<<<< HEAD
 - [x] **PHPStan Level 10**: 0 errori
+=======
+- [x] **PHPStan Level 9**: 0 errori
+>>>>>>> 6ed19256f (.)
 - [x] **Filament 4.x**: Compatibilità completa
 - [x] **Type Safety**: Type hints completi
 - [x] **Error Handling**: Gestione errori robusta
@@ -928,7 +940,11 @@ UI Module
 ## 🎯 SUCCESS METRICS
 
 ### 📊 Technical Metrics
+<<<<<<< HEAD
 - [x] **PHPStan Level 10**: 0 errori ✅
+=======
+- [x] **PHPStan Level 9**: 0 errori ✅
+>>>>>>> 6ed19256f (.)
 - [x] **Filament 4.x**: Compatibile ✅
 - [ ] **Test Coverage**: 80% (target)
 - [ ] **Response Time**: < 200ms
@@ -1021,4 +1037,8 @@ UI Module
 
 ---
 
+<<<<<<< HEAD
 *Questa roadmap è specifica per il modulo UI e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
+=======
+*Questa roadmap è specifica per il modulo UI e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
+>>>>>>> 6ed19256f (.)

@@ -3,7 +3,11 @@
 ## Introduzione
 
 Questa guida fornisce una panoramica completa sulla creazione e l'utilizzo di template email HTML responsive nel contesto di , con focus su compatibilità, engagement e best practices di settore.
+<<<<<<< HEAD
 Questa guida fornisce una panoramica completa sulla creazione e l'utilizzo di template email HTML responsive nel contesto di <nome progetto>, con focus su compatibilità, engagement e best practices di settore.
+=======
+Questa guida fornisce una panoramica completa sulla creazione e l'utilizzo di template email HTML responsive nel contesto di SaluteOra, con focus su compatibilità, engagement e best practices di settore.
+>>>>>>> 6ed19256f (.)
 
 ## Principi Fondamentali
 
@@ -76,7 +80,11 @@ Migliore esperienza su client moderni:
 ```
 
 Per , si raccomanda un **approccio ibrido**:
+<<<<<<< HEAD
 Per <nome progetto>, si raccomanda un **approccio ibrido**:
+=======
+Per SaluteOra, si raccomanda un **approccio ibrido**:
+>>>>>>> 6ed19256f (.)
 - Struttura base con tabelle per massima compatibilità
 - CSS moderno con fallback per funzionalità avanzate
 
@@ -377,4 +385,8 @@ I template nella directory `mail-layouts` supportano variabili Blade:
 - [Guida ai Layout Email](./MAIL_LAYOUTS_GUIDE.md)
 - [Email Best Practices](./mail-templates/EMAIL_BEST_PRACTICES.md)
 - [HTML Email Compatibility](./mail-templates/HTML_EMAIL_COMPATIBILITY.md)
+<<<<<<< HEAD
 - [MailPace Integration](./mail-templates/MAILPACE_TEMPLATES_INTEGRATION.md)
+=======
+- [MailPace Integration](./mail-templates/MAILPACE_TEMPLATES_INTEGRATION.md)
+>>>>>>> 6ed19256f (.)

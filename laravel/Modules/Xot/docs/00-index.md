@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## 🏛️ Architettura Core
 - 📐 [Architecture Complete Guide](./architecture-complete.md) - Deep dive nel sistema modulare.
 - 🧬 [Base Classes (XotBase)](./xot-base-classes.md) - Regole per estendere Resource, Page e Widget.
@@ -27,6 +28,8 @@
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+=======
+>>>>>>> 6ed19256f (.)
 # Xot Module Documentation Index
 
 ## Core Architecture
@@ -81,6 +84,7 @@
 
 ---
 *Last updated: 2025-12-18*
+<<<<<<< HEAD
 # Xot Module Documentation Index
 
 > **Core Framework Module** - Provides base classes and shared functionality for all modules
@@ -157,3 +161,5 @@
 ## Dependency Intelligence
 
 - [Dependency intelligence](dependency-intelligence.md)
+=======
+>>>>>>> 6ed19256f (.)

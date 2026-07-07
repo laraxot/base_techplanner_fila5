@@ -25,14 +25,20 @@ return [
             'placeholder' => 'es: Notifica Scadenza',
             'helper_text' => 'Inserisci un nome descrittivo per il template',
             'help' => 'Inserisci un nome descrittivo per il template',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'description' => [
             'label' => 'Descrizione',
             'tooltip' => 'Descrizione del template',
             'placeholder' => 'es: Template per le notifiche di scadenza',
             'helper_text' => 'Breve descrizione dello scopo del template',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'type' => [
             'label' => 'Tipo',
@@ -46,46 +52,68 @@ return [
                 'telegram' => 'Telegram',
                 'whatsapp' => 'WhatsApp',
             ],
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'subject' => [
             'label' => 'Oggetto',
             'tooltip' => 'Oggetto della notifica',
             'placeholder' => 'es: Promemoria appuntamento',
+<<<<<<< HEAD
             'helper_text' => 'Oggetto visualizzato nella notifica (es. oggetto email]',
             'description' => '',
+=======
+            'helper_text' => 'Oggetto visualizzato nella notifica (es. oggetto email)',
+>>>>>>> 6ed19256f (.)
         ],
         'content' => [
             'label' => 'Contenuto',
             'tooltip' => 'Corpo del messaggio',
             'placeholder' => 'Inserisci il testo del messaggio',
             'helper_text' => 'Contenuto principale della notifica',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'variables' => [
             'label' => 'Variabili',
             'tooltip' => 'Variabili disponibili',
             'placeholder' => '{{nome}}, {{email}}, ecc.',
             'helper_text' => 'Variabili che possono essere utilizzate nel template',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'is_active' => [
             'label' => 'Attivo',
             'tooltip' => 'Stato del template',
             'helper_text' => 'Se attivo, il template può essere utilizzato per l\'invio di notifiche',
+<<<<<<< HEAD
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'created_at' => [
             'label' => 'Data creazione',
             'tooltip' => 'Data di creazione del template',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'updated_at' => [
             'label' => 'Ultima modifica',
             'tooltip' => 'Data dell\'ultima modifica del template',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -119,6 +147,9 @@ return [
         'template_updated' => 'Il template è stato aggiornato con successo',
         'template_deleted' => 'Il template è stato eliminato con successo',
     ],
+<<<<<<< HEAD
     'label' => 'Template',
     'plural_label' => 'Template (Plurale)',
+=======
+>>>>>>> 6ed19256f (.)
 ];

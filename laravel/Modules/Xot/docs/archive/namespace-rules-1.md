@@ -18,14 +18,26 @@
 - Questa regola si applica a **tutti** i moduli (Notify, Cms, Xot, ecc.), **inclusi i modelli**.
 - Evitare l'uso di proprietà deprecate come `protected $casts` nei modelli: preferire override tramite metodo `casts()`.
 - Per esempi specifici, vedere la documentazione nei singoli moduli:
+<<<<<<< HEAD
   - [Patient: Regole Modelli](../../patient/docs/models.md)
   - [Notify Namespace Rules](../../notify/docs/namespace_rules.md)
 
 ## Collegamenti
 - [Regole Namespace Moduli - Root Docs](../../../../docs/namespace-moduli.md)
+=======
+  - [Patient: Regole Modelli](../../Patient/docs/models.md)
+  - [Notify Namespace Rules](../../Notify/docs/NAMESPACE_RULES.md)
+
+## Collegamenti
+- [Regole Namespace Moduli - Root Docs](../../../docs/namespace-moduli.md)
+>>>>>>> 6ed19256f (.)
 
 ---
 
 **Ultimo aggiornamento:** 2025-05-13
 
+<<<<<<< HEAD
 **Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
+=======
+**Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
+>>>>>>> 6ed19256f (.)

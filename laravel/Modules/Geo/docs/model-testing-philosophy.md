@@ -60,9 +60,15 @@ public function test_fillable_fields(): void
 
 ---
 **Ultimo aggiornamento**: Dicembre 2024
+<<<<<<< HEAD
 - [Laraxot Framework](../../laravel/modules/xot/docs/laraxot-framework.md)
 
 ---
 **Versione**: 1.0
 **Compatibilità**: Laraxot <nome progetto>, Testing Philosophy
 **Compatibilità**: Laraxot <nome progetto>, Testing Philosophy
+=======
+**Versione**: 1.0
+**Compatibilità**: Laraxot <nome progetto>, Testing Philosophy
+**Compatibilità**: Laraxot <nome progetto>, Testing Philosophy
+>>>>>>> 6ed19256f (.)

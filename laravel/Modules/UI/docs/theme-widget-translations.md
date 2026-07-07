@@ -3,11 +3,19 @@
 ## Panoramica
 
 Questo documento descrive le regole e le best practice per gestire le traduzioni dei widget Filament nei temi One e Two del progetto .
+<<<<<<< HEAD
 Questo documento descrive le regole e le best practice per gestire le traduzioni dei widget Filament nei temi One e Two del progetto <nome progetto>.
 Questo documento descrive le regole e le best practice per gestire le traduzioni dei widget Filament nei temi One e Two del progetto .
 Questo documento descrive le regole e le best practice per gestire le traduzioni dei widget Filament nei temi One e Two del progetto <nome progetto>.
 Questo documento descrive le regole e le best practice per gestire le traduzioni dei widget Filament nei temi One e Two del progetto .
 Questo documento descrive le regole e le best practice per gestire le traduzioni dei widget Filament nei temi One e Two del progetto <nome progetto>.
+=======
+Questo documento descrive le regole e le best practice per gestire le traduzioni dei widget Filament nei temi One e Two del progetto SaluteOra.
+Questo documento descrive le regole e le best practice per gestire le traduzioni dei widget Filament nei temi One e Two del progetto .
+Questo documento descrive le regole e le best practice per gestire le traduzioni dei widget Filament nei temi One e Two del progetto SaluteOra.
+Questo documento descrive le regole e le best practice per gestire le traduzioni dei widget Filament nei temi One e Two del progetto .
+Questo documento descrive le regole e le best practice per gestire le traduzioni dei widget Filament nei temi One e Two del progetto SaluteOra.
+>>>>>>> 6ed19256f (.)
 
 ## Struttura File di Traduzione
 
@@ -65,11 +73,19 @@ Le traduzioni del tema utilizzano il namespace `pub_theme::`:
 ### Namespace Alternativi
 - `pub_theme::` - Per traduzioni del tema attivo
 - `<nome progetto>::` - Per traduzioni del modulo
+<<<<<<< HEAD
 - `<nome progetto>::` - Per traduzioni del modulo <nome progetto>
 - `<nome progetto>::` - Per traduzioni del modulo
 - `<nome progetto>::` - Per traduzioni del modulo <nome progetto>
 - `<nome progetto>::` - Per traduzioni del modulo
 - `<nome progetto>::` - Per traduzioni del modulo <nome progetto>
+=======
+- `saluteora::` - Per traduzioni del modulo SaluteOra
+- `<nome progetto>::` - Per traduzioni del modulo
+- `saluteora::` - Per traduzioni del modulo SaluteOra
+- `<nome progetto>::` - Per traduzioni del modulo
+- `saluteora::` - Per traduzioni del modulo SaluteOra
+>>>>>>> 6ed19256f (.)
 - `ui::` - Per traduzioni del modulo UI
 
 ## Caso Studio: Profilo Dottore
@@ -173,9 +189,18 @@ Lo script `ThemeTranslationSynchronizer` gestisce automaticamente:
 
 ### Comando Manuale
 ```bash
+<<<<<<< HEAD
 cd var/www/html/_bases/base_<nome progetto>
 cd var/www/html/_bases/base_<nome progetto>
 cd var/www/html/_bases/base_<nome progetto>
+=======
+cd /var/www/html/_bases/base_techplanner_fila3_mono
+cd /var/www/html/_bases/base_saluteora
+cd /var/www/html/_bases/base_techplanner_fila3_mono
+cd /var/www/html/_bases/base_saluteora
+cd /var/www/html/_bases/base_techplanner_fila3_mono
+cd /var/www/html/_bases/base_saluteora
+>>>>>>> 6ed19256f (.)
 php bashscripts/translations/sync_theme_translations.php
 ```
 
@@ -229,4 +254,8 @@ Includi sempre esempi pratici:
 
 ---
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: Dicembre 2024*
+=======
+*Ultimo aggiornamento: Dicembre 2024*
+>>>>>>> 6ed19256f (.)

@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "@tailwindcss/vite": "^4.1.13",
     "@tailwindplus/elements": "^1.0.14",
     "daisyui": "^5.1.22",
@@ -20,6 +21,19 @@
     "vite": "npm:rolldown-vite@7.1.12"
   },
   "dependencies": {
+=======
+    "axios": "^1.11.0",
+    "concurrently": "^9.0.1",
+    "@tailwindcss/vite": "^4.1.13",
+    "@tailwindplus/elements": "^1.0.14",
+    "laravel-vite-plugin": "^2.0.0",
+    "daisyui": "^5.1.22",
+    "tailwindcss": "^4.1.13",
+    "typescript": "~5.8.3",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "vite": "^7.1",
+>>>>>>> 6ed19256f (.)
     "alpinejs": "^3.15.0"
   }
 }

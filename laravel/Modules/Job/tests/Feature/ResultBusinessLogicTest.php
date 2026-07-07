@@ -2,13 +2,22 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+use Illuminate\Support\Carbon;
+>>>>>>> 6ed19256f (.)
 use Modules\Job\Models\Result;
 use Modules\Job\Models\Task;
 use Modules\Job\Tests\TestCase;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
 it('can create result with basic information', function (): void {
+=======
+it('can create result with basic information', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task = Task::create([
         'description' => 'Test Task',
         'command' => 'test:command',
@@ -37,7 +46,12 @@ it('can create result with basic information', function (): void {
     expect($result->duration)->toBe('5.2');
 });
 
+<<<<<<< HEAD
 it('can manage result execution lifecycle', function (): void {
+=======
+it('can manage result execution lifecycle', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task = Task::create([
         'description' => 'Lifecycle Task',
         'command' => 'lifecycle:test',
@@ -64,7 +78,12 @@ it('can manage result execution lifecycle', function (): void {
     expect($result->duration)->toBe('3.5');
 });
 
+<<<<<<< HEAD
 it('can handle result relationships with task', function (): void {
+=======
+it('can handle result relationships with task', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task = Task::create([
         'description' => 'Relationship Task',
         'command' => 'relationship:test',
@@ -99,7 +118,12 @@ it('can handle result relationships with task', function (): void {
     expect($task->results->contains($result2))->toBeTrue();
 });
 
+<<<<<<< HEAD
 it('can manage result status variations', function (): void {
+=======
+it('can manage result status variations', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task = Task::create([
         'description' => 'Status Task',
         'command' => 'status:test',
@@ -133,7 +157,12 @@ it('can manage result status variations', function (): void {
     expect($result->duration)->toBe('2.5');
 });
 
+<<<<<<< HEAD
 it('can handle result with different durations', function (): void {
+=======
+it('can handle result with different durations', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task = Task::create([
         'description' => 'Duration Task',
         'command' => 'duration:test',
@@ -158,7 +187,12 @@ it('can handle result with different durations', function (): void {
     expect($result->duration)->toBe('0.001');
 });
 
+<<<<<<< HEAD
 it('can validate result data integrity', function (): void {
+=======
+it('can validate result data integrity', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task = Task::create([
         'description' => 'Validation Task',
         'command' => 'validation:test',
@@ -185,7 +219,12 @@ it('can validate result data integrity', function (): void {
     expect($validResult->duration)->toBe('1.0');
 });
 
+<<<<<<< HEAD
 it('can manage multiple results for same task', function (): void {
+=======
+it('can manage multiple results for same task', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task = Task::create([
         'description' => 'Batch Task',
         'command' => 'batch:test',
@@ -208,7 +247,11 @@ it('can manage multiple results for same task', function (): void {
         $results[] = Result::create([
             'task_id' => $task->id,
             'ran_at' => now()->subMinutes($i),
+<<<<<<< HEAD
             'duration' => (string) (0.5 * $i),
+=======
+            'duration' => (string)(0.5 * $i),
+>>>>>>> 6ed19256f (.)
             'result' => $statuses[$i - 1],
         ]);
     }
@@ -225,7 +268,12 @@ it('can manage multiple results for same task', function (): void {
     expect($failedCount)->toBe(2);
 });
 
+<<<<<<< HEAD
 it('can access task last result', function (): void {
+=======
+it('can access task last result', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task = Task::create([
         'description' => 'Last Result Task',
         'command' => 'last-result:test',
@@ -261,7 +309,12 @@ it('can access task last result', function (): void {
     expect($taskWithLastResult->last_result->result)->toBe('failed');
 });
 
+<<<<<<< HEAD
 it('can calculate average runtime', function (): void {
+=======
+it('can calculate average runtime', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task = Task::create([
         'description' => 'Average Runtime Task',
         'command' => 'avg-runtime:test',
@@ -303,7 +356,12 @@ it('can calculate average runtime', function (): void {
     expect($taskWithAvg->average_runtime)->toBeGreaterThan(0);
 });
 
+<<<<<<< HEAD
 it('can handle result with empty values', function (): void {
+=======
+it('can handle result with empty values', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task = Task::create([
         'description' => 'Empty Result Task',
         'command' => 'empty:test',
@@ -329,7 +387,12 @@ it('can handle result with empty values', function (): void {
     expect($result->result)->toBe('pending');
 });
 
+<<<<<<< HEAD
 it('can handle result with large duration', function (): void {
+=======
+it('can handle result with large duration', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task = Task::create([
         'description' => 'Large Duration Task',
         'command' => 'large-duration:test',
@@ -354,7 +417,12 @@ it('can handle result with large duration', function (): void {
     expect($result->duration)->toBe('3600.0');
 });
 
+<<<<<<< HEAD
 it('can manage result timestamps', function (): void {
+=======
+it('can manage result timestamps', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task = Task::create([
         'description' => 'Timestamp Task',
         'command' => 'timestamp:test',
@@ -378,4 +446,8 @@ it('can manage result timestamps', function (): void {
 
     expect($result->created_at)->not->toBeNull();
     expect($result->updated_at)->not->toBeNull();
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 6ed19256f (.)

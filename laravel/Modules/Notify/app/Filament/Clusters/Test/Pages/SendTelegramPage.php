@@ -14,6 +14,11 @@ use Filament\Actions\Action;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
+<<<<<<< HEAD
+=======
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Forms\Contracts\HasForms;
+>>>>>>> 6ed19256f (.)
 use Filament\Notifications\Notification as FilamentNotification;
 use Filament\Schemas\Schema;
 use Illuminate\Support\Facades\Log;
@@ -26,13 +31,24 @@ use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 /**
  * @property Schema $telegramForm
  */
+<<<<<<< HEAD
 class SendTelegramPage extends XotBasePage
 {
+=======
+class SendTelegramPage extends XotBasePage implements HasForms
+{
+    use InteractsWithForms;
+
+>>>>>>> 6ed19256f (.)
     // use NavigationLabelTrait;
 
     public ?array $telegramData = [];
 
+<<<<<<< HEAD
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-paper-airplane';
+=======
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-paper-airplane';
+>>>>>>> 6ed19256f (.)
 
     protected string $view = 'notify::filament.pages.send-telegram';
 

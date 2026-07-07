@@ -33,7 +33,14 @@ class CreateUserAction
     public function execute(string $provider, SocialiteUserContract $oauthUser): UserContract
     {
         // Resolve user attributes from the identity provider
+<<<<<<< HEAD
         $userAttributes = app(GetUserModelAttributesFromSocialiteAction::class)->execute($provider, $oauthUser);
+=======
+        $userAttributes = app(GetUserModelAttributesFromSocialiteAction::class, [
+            'provider' => $provider,
+            'oauthUser' => $oauthUser,
+        ]);
+>>>>>>> 6ed19256f (.)
 
         // Get the user class from Xot configuration
         $userClass = XotData::make()->getUserClass();
@@ -42,7 +49,11 @@ class CreateUserAction
         $newlyCreatedUser = $userClass::create([
             'name' => $userAttributes->name,
             'first_name' => $userAttributes->name,
+<<<<<<< HEAD
             'last_name' => $userAttributes->lastName,
+=======
+            'last_name' => $userAttributes->last_name,
+>>>>>>> 6ed19256f (.)
             'email' => $userAttributes->email,
         ]);
 
@@ -51,16 +62,28 @@ class CreateUserAction
         Assert::isInstanceOf($newlyCreatedUser, UserContract::class);
 
         // Assign default roles to the new user
+<<<<<<< HEAD
         app(SetDefaultRolesBySocialiteUserAction::class)->execute(
             provider: $provider,
+=======
+        app(SetDefaultRolesBySocialiteUserAction::class, [
+            'provider' => $provider,
+            'userModel' => $newlyCreatedUser,
+        ])->execute(
+>>>>>>> 6ed19256f (.)
             userModel: $newlyCreatedUser,
             oauthUser: $oauthUser,
         );
 
         // Return the refreshed user instance
+<<<<<<< HEAD
         /** @var UserContract $refreshedUser */
         $refreshedUser = $newlyCreatedUser->refresh();
 
         return $refreshedUser;
+=======
+        /* @var UserContract $refreshedUser */
+        return $newlyCreatedUser->refresh();
+>>>>>>> 6ed19256f (.)
     }
 }

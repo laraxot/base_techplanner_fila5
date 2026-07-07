@@ -194,4 +194,18 @@ npx lighthouse http://localhost --view
 
 ---
 
+<<<<<<< HEAD
 *Il tema Sixteen mantiene i più alti standard di qualità del codice attraverso l'utilizzo di strumenti di analisi all'avanguardia.*
+=======
+*Il tema Sixteen mantiene i più alti standard di qualità del codice attraverso l'utilizzo di strumenti di analisi all'avanguardia.*
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 6ed19256f (.)

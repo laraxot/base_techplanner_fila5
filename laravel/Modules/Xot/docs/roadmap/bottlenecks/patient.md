@@ -229,4 +229,7 @@
 * [patient.md](docs/moduli/patient.md)
 * [patient.md](docs/roadmap/moduli/patient.md)
 * [patient.md](../../../Xot/docs/roadmap/bottlenecks/patient.md)
+<<<<<<< HEAD
 * [patient.md](../../../xot/docs/roadmap/bottlenecks/patient.md)
+=======
+>>>>>>> 6ed19256f (.)

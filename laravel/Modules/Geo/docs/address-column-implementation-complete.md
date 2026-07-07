@@ -1,7 +1,10 @@
 # AddressColumn Implementation Complete
 
 **Date**: 2025-12-12
+<<<<<<< HEAD
 **Date**: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 **Module**: Geo
 **Status**: ✅ **COMPLETED**
 
@@ -154,4 +157,8 @@ This implementation resolves:
 1. Update existing migrations to use new AddressColumn trait
 2. Migrate legacy Place::$address_components usage
 3. Document best practices in module docs
+<<<<<<< HEAD
 4. Consider deprecating manual column definitions
+=======
+4. Consider deprecating manual column definitions
+>>>>>>> 6ed19256f (.)

@@ -6,6 +6,7 @@ return [
     'fields' => [
         'newstate' => [
             'label' => 'newstate',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -33,6 +34,8 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Radio Icon',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
 ];

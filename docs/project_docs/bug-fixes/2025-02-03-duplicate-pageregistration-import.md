@@ -34,4 +34,8 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 ## Impact
 - Fixed PHP namespace conflict error
 - Improved code maintainability
+<<<<<<< HEAD
 - No functional changes to the application
+=======
+- No functional changes to the application
+>>>>>>> 6ed19256f (.)

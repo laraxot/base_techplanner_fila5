@@ -139,10 +139,15 @@ Se la localizzazione dei path è fondamentale, valuta se usare ancora le rotte c
 - [Documentazione ufficiale mcamara/laravel-localization](https://github.com/mcamara/laravel-localization)
 - [Documentazione Laravel Folio](https://laravel.com/project_docs/12.x/folio)
 - [Esempio di mapping rotte](https://github.com/mcamara/laravel-localization#translated-routes)
+<<<<<<< HEAD
 - [FAQ e problemi comuni](Modules/Lang/project_docs/translations-faq.md)
 - [Guida language switcher](Modules/Lang/project_docs/README.md)
 - [FAQ e problemi comuni](Modules/Lang/project_docs/translations-faq.md)
 - [Guida language switcher](Modules/Lang/project_docs/README.md)
+=======
+- [FAQ e problemi comuni](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Lang/project_docs/translations-faq.md)
+- [Guida language switcher](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Lang/project_docs/README.md)
+>>>>>>> 6ed19256f (.)
 
 ---
 
@@ -288,6 +293,7 @@ Se la localizzazione dei path è fondamentale, valuta se usare ancora le rotte c
 - [Documentazione ufficiale mcamara/laravel-localization](https://github.com/mcamara/laravel-localization)
 - [Documentazione Laravel Folio](https://laravel.com/docs/12.x/folio)
 - [Esempio di mapping rotte](https://github.com/mcamara/laravel-localization#translated-routes)
+<<<<<<< HEAD
 - [FAQ e problemi comuni](Modules/Lang/docs/translations-faq.md)
 - [Guida language switcher](Modules/Lang/docs/README.md)
 - [FAQ e problemi comuni](Modules/Lang/docs/translations-faq.md)
@@ -296,3 +302,11 @@ Se la localizzazione dei path è fondamentale, valuta se usare ancora le rotte c
 ---
 
 **Se vuoi che aggiorni direttamente la documentazione o vuoi esempi pratici di override/mapping path Folio, chiedi pure!**
+=======
+- [FAQ e problemi comuni](/var/www/html/saluteora/laravel/Modules/Lang/docs/translations-faq.md)
+- [Guida language switcher](/var/www/html/saluteora/laravel/Modules/Lang/docs/README.md)
+
+---
+
+**Se vuoi che aggiorni direttamente la documentazione o vuoi esempi pratici di override/mapping path Folio, chiedi pure!**
+>>>>>>> 6ed19256f (.)

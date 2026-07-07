@@ -72,5 +72,10 @@ Se hai bisogno di personalizzazioni nella registrazione dei componenti:
 
 ## Riferimenti
 
+<<<<<<< HEAD
 - [XotBaseServiceProvider](Modules/Xot/app/Providers/XotBaseServiceProvider.php)
 - [RegisterBladeComponentsAction](Modules/Xot/Actions/Blade/RegisterBladeComponentsAction.php)
+=======
+- [XotBaseServiceProvider](/var/www/html/base_saluteora/laravel/Modules/Xot/app/Providers/XotBaseServiceProvider.php)
+- [RegisterBladeComponentsAction](/var/www/html/base_saluteora/laravel/Modules/Xot/Actions/Blade/RegisterBladeComponentsAction.php)
+>>>>>>> 6ed19256f (.)

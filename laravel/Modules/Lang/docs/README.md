@@ -16,6 +16,7 @@ https://blog.quickadminpanel.com/10-best-laravel-packages-for-multi-language-tra
 ## Extra risorse da _docs
 
 (Nessun nuovo link da aggiungere: i link di _docs/readme.txt sono già presenti in questo file)
+<<<<<<< HEAD
 ---
 title: "Lang Module Documentation"
 type: documentation
@@ -97,3 +98,5 @@ Lang/
 - [QMD Setup](./QMD-SETUP.md) — Configurazione ricerca locale
 - [Performance](./PERFORMANCE-OPTIMIZATION.md) — Metriche e best practice
 - [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout
+=======
+>>>>>>> 6ed19256f (.)

@@ -17,12 +17,21 @@ class MeasureAction
     /**
      * Esegue una closure misurando il tempo di esecuzione e l'utilizzo di memoria.
      *
+<<<<<<< HEAD
      * @param \Closure():T $closure La closure da eseguire e misurare
      * @param string       $label   Etichetta opzionale per identificare la misurazione
      *
      * @return T Il risultato dell'esecuzione della closure
      */
     public function execute(\Closure $closure, string $label = ''): mixed
+=======
+     * @param  Closure():T  $closure  La closure da eseguire e misurare
+     * @param  string  $label  Etichetta opzionale per identificare la misurazione
+     *
+     * @return T Il risultato dell'esecuzione della closure
+     */
+    public function execute(Closure $closure, string $label = ''): mixed
+>>>>>>> 6ed19256f (.)
     {
         $start = microtime(true);
         $memory_start = memory_get_usage();
@@ -46,7 +55,11 @@ class MeasureAction
 
         // Mostriamo una notifica con le metriche
         Notification::make()
+<<<<<<< HEAD
             ->title('Performance Metrics '.('' !== $label ? $label : 'Unnamed'))
+=======
+            ->title('Performance Metrics '.($label !== '' ? $label : 'Unnamed'))
+>>>>>>> 6ed19256f (.)
             ->body($metrics['execution_time'].'  '.$metrics['memory_usage'])
             ->success()
             ->persistent()
@@ -54,7 +67,11 @@ class MeasureAction
 
         // Log::debug('Performance Metrics', $metrics);
 
+<<<<<<< HEAD
         /* @var T $result */
+=======
+        /** @var T $result */
+>>>>>>> 6ed19256f (.)
         return $result;
     }
 }

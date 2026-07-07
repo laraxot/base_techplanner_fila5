@@ -132,7 +132,11 @@ Applicare la stessa logica a tutti i file di traduzione con conflitti simili:
 
 ## Collegamenti Correlati
 
+<<<<<<< HEAD
 - [Translation Standards](../../../../docs/translation-standards.md)
+=======
+- [Translation Standards](../../../docs/translation-standards.md)
+>>>>>>> 6ed19256f (.)
 - [PHP Strict Types](./strict_types_implementation.md)
 - [UI Module Structure](./structure.md)
 - [Best Practices](./best-practices.md)
@@ -285,7 +289,11 @@ Applicare la stessa logica a tutti i file di traduzione con conflitti simili:
 
 ## Collegamenti Correlati
 
+<<<<<<< HEAD
 - [Translation Standards](../../../../docs/project/translation-standards.md)
+=======
+- [Translation Standards](../../../project_docs/translation-standards.md)
+>>>>>>> 6ed19256f (.)
 - [PHP Strict Types](./strict_types_implementation.md)
 - [UI Module Structure](./structure.md)
 - [Best Practices](./best-practices.md)
@@ -303,4 +311,8 @@ Applicare la stessa logica a tutti i file di traduzione con conflitti simili:
 - **Modulo**: UI
 - **File**: Multipli file di traduzione
 - **Tipo Conflitto**: Dichiarazione PHP e sintassi array
+<<<<<<< HEAD
 - **Scelta**: Versione HEAD (con strict types e sintassi moderna)
+=======
+- **Scelta**: Versione HEAD (con strict types e sintassi moderna)
+>>>>>>> 6ed19256f (.)

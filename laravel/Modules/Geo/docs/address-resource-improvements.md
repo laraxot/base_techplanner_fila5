@@ -248,4 +248,8 @@ public static function getSearchStep(): array
 - [ ] Configurazione Google Maps API
 - [ ] Preparazione dati di test geografici
 - [ ] Review architetturale con team
+<<<<<<< HEAD
 - [ ] Pianificazione rollback strategy
+=======
+- [ ] Pianificazione rollback strategy
+>>>>>>> 6ed19256f (.)

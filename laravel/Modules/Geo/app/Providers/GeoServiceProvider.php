@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Geo\Providers;
 
+<<<<<<< HEAD
 use Filament\Support\Assets\Css;
 use Filament\Support\Assets\Js;
 use Filament\Support\Facades\FilamentAsset;
@@ -71,4 +72,19 @@ class GeoServiceProvider extends XotBaseServiceProvider
     // REMOVED: public function register(): void
     // XotBaseServiceProvider gia' gestisce register() con registerBladeIcons().
     // Non sovrascrivere: causa doppia registrazione del prefix "geo" nei BladeIcons.
+=======
+// ---- bases ----
+use Modules\Xot\Providers\XotBaseServiceProvider;
+
+/**
+ * Class GeoServiceProvider.
+ */
+class GeoServiceProvider extends XotBaseServiceProvider
+{
+    public string $name = 'Geo';
+
+    protected string $module_dir = __DIR__;
+
+    protected string $module_ns = __NAMESPACE__;
+>>>>>>> 6ed19256f (.)
 }

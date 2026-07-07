@@ -86,10 +86,13 @@ rules([
 
 $submit = function () {
     $this->validate();
+<<<<<<< HEAD
     
     // Logica di invio
     session()->flash('success', 'Messaggio inviato con successo!');
     
+=======
+>>>>>>> 6ed19256f (.)
 
     // Logica di invio
     session()->flash('success', 'Messaggio inviato con successo!');
@@ -138,7 +141,10 @@ state(['search' => '']);
 $users = computed(function () {
     return User::query()
         ->when($this->search, fn($query) =>
+<<<<<<< HEAD
         ->when($this->search, fn($query) => 
+=======
+>>>>>>> 6ed19256f (.)
             $query->where('name', 'like', "%{$this->search}%")
         )
         ->latest()
@@ -150,8 +156,11 @@ $users = computed(function () {
 <div>
     <input type="text"
            wire:model.live="search"
+<<<<<<< HEAD
     <input type="text" 
            wire:model.live="search" 
+=======
+>>>>>>> 6ed19256f (.)
            placeholder="Cerca utenti...">
 
     <ul>
@@ -561,4 +570,7 @@ class ContactFormTest extends TestCase
 - [Documentazione Laravel Volt](https://livewire.laravel.com/docs/volt)
 - [Documentazione Laravel Folio](https://github.com/laravel/folio)
 - [Livewire](https://livewire.laravel.com)
+<<<<<<< HEAD
 - [Livewire](https://livewire.laravel.com) 
+=======
+>>>>>>> 6ed19256f (.)

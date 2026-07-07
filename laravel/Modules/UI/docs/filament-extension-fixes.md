@@ -86,5 +86,8 @@ class S3Test extends XotBasePage
 
 *Ultimo aggiornamento: 2025-01-06*
 *Ultimo aggiornamento: 2025-01-06*
+<<<<<<< HEAD
 - [XotBasePage Implementation](../../xot/project_docs/xotbasepage_implementation.md)
 - [Filament Best Practices](../../../../docs/project/filament-best-practices.md)
+=======
+>>>>>>> 6ed19256f (.)

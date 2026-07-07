@@ -23,6 +23,7 @@ return new class() extends XotBaseMigration
         }
 
         // -- CREATE --
+<<<<<<< HEAD
         // Nota: nessuna FK verso 'users' perché la tabella users è sulla connessione 'user',
         // mentre work_hours è sulla connessione 'xot' (techplanner_data). MySQL non permette
         // FK cross-database. Le relazioni sono gestite a livello applicativo (Eloquent).
@@ -30,6 +31,13 @@ return new class() extends XotBaseMigration
             $table->id();
 
             $table->uuid('employee_id')->index();
+=======
+        $this->tableCreate(static function (Blueprint $table): void {
+            $table->id();
+
+            $table->uuid('employee_id');
+            $table->foreign('employee_id')->references('id')->on('users')->onDelete('cascade');
+>>>>>>> 6ed19256f (.)
 
             $table->enum('type', ['clock_in', 'clock_out', 'break_start', 'break_end']);
 
@@ -49,7 +57,12 @@ return new class() extends XotBaseMigration
 
             $table->enum('status', ['pending', 'approved', 'rejected'])->default('pending');
 
+<<<<<<< HEAD
             $table->uuid('approved_by')->nullable()->index();
+=======
+            $table->uuid('approved_by')->nullable();
+            $table->foreign('approved_by')->references('id')->on('users')->onDelete('set null');
+>>>>>>> 6ed19256f (.)
 
             $table->dateTime('approved_at')->nullable();
 
@@ -64,4 +77,8 @@ return new class() extends XotBaseMigration
             $table->unique(['employee_id', 'timestamp', 'type'], 'work_hours_unique_entry');
         });
     }
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> 6ed19256f (.)

@@ -284,4 +284,7 @@ foreach ($models as $oldModel) {
 ## Risoluzione conflitti e standard
 - Il file `lang/it/lang_service.php` è stato risolto manualmente per conflitti git: rimossi duplicati, mantenute solo le chiavi effettive secondo queste best practices.
 - Vedi anche: [../README.md](../README.md)
+<<<<<<< HEAD
 - Vedi anche: [../README.md](../readme.md)
+=======
+>>>>>>> 6ed19256f (.)

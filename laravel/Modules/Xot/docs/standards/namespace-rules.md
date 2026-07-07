@@ -15,10 +15,17 @@ Nonostante le classi possano risiedere fisicamente nella sottodirectory `app/` d
 ## Esempi Corretti
 
 ```php
+<<<<<<< HEAD
 // File in: Modules/Patient/app/Models/Patient.php
 namespace Modules\Patient\Models;
 
 // File in: Modules/Dental/app/Services/AppointmentService.php
+=======
+// File in: /var/www/html/<nome progetto>/laravel/Modules/Patient/app/Models/Patient.php
+namespace Modules\Patient\Models;
+
+// File in: /var/www/html/<nome progetto>/laravel/Modules/Dental/app/Services/AppointmentService.php
+>>>>>>> 6ed19256f (.)
 namespace Modules\Dental\Services;
 ```
 
@@ -82,6 +89,7 @@ Se si verificano errori "Class not found" o problemi di autoloading:
 
 ## Collegamenti Correlati
 
+<<<<<<< HEAD
 - [Documentazione Xot](../CODE-STANDARDS.md)
 - [Collegamenti Documentazione](../../../../docs/collegamenti-documentazione.md)
 - [Convenzioni](../../../../docs/conventions.md)
@@ -90,3 +98,11 @@ Se si verificano errori "Class not found" o problemi di autoloading:
 - [Collegamenti Documentazione](../../../../../docs/collegamenti-documentazione.md)
 
 Ultima modifica: 31/03/2025
+=======
+- [Convenzioni](../../../docs/conventions.md)
+- [Naming Conventions](../../../docs/naming-conventions.md)
+- [Documentazione Xot](../CODE-STANDARDS.md)
+- [Collegamenti Documentazione](../../../../docs/collegamenti-documentazione.md)
+
+Ultima modifica: 31/03/2025
+>>>>>>> 6ed19256f (.)

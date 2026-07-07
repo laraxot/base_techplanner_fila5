@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 # Status Server MCP - base_techplanner_fila5
 
 **Ultimo aggiornamento**: 2026-02-06  
 **Configurazione**: `.windsurf/mcp.json`
+=======
+>>>>>>> 6ed19256f (.)
 # Status Server MCP - base_techplanner_fila4_mono
 
 **Ultimo aggiornamento**: 2025-01-27  
@@ -11,6 +14,7 @@
 
 ## ✅ Server MCP Attivi
 
+<<<<<<< HEAD
 ### Infrastruttura
 
 1. **filesystem** — Accesso file progetto
@@ -40,6 +44,8 @@
 13. **mui-mcp** — Documentazione Material UI accurata, zero hallucination
     - `npx -y @mui/mcp@latest`
     - Docs: https://mui.com/material-ui/getting-started/mcp/
+=======
+>>>>>>> 6ed19256f (.)
 ### Configurati e Funzionanti
 
 1. **laravel-boost** ⭐
@@ -86,6 +92,7 @@
 ### mcp-package-docs (Deprecato)
 - **Rimosso**: 2025-01-27
 - **Motivo**: Package deprecato, errori `ERR_MODULE_NOT_FOUND`
+<<<<<<< HEAD
 
 ---
 
@@ -98,6 +105,8 @@
 | Figma MCP (Cursor Talk) | Richiede plugin Figma + Cursor specifico |
 | Magic UI MCP | Docs insufficienti |
 | tailwindcss-mcp-server | Ridondante con flowbite che include già contesto Tailwind |
+=======
+>>>>>>> 6ed19256f (.)
 - **Alternativa**: Laravel Boost fornisce documentazione nativa
 
 ---
@@ -111,9 +120,12 @@ cat .windsurf/mcp.json | jq -r '.mcpServers | keys[]' | sort
 # Verifica assenza mcp-package-docs
 grep -c "mcp-package-docs" .windsurf/mcp.json .cursor/mcp.json
 # Output atteso: 0
+<<<<<<< HEAD
 # Output atteso (2026-02-06):
 # asana, daisyui, deepwiki, fetch, filesystem, flowbite, git,
 # memory, mui-mcp, puppeteer, sequential-thinking, shadcn, time
+=======
+>>>>>>> 6ed19256f (.)
 ```
 
 ---
@@ -122,6 +134,9 @@ grep -c "mcp-package-docs" .windsurf/mcp.json .cursor/mcp.json
 
 - [MCP Configuration](../laravel/Modules/Xot/docs/mcp-configuration-optimized.md)
 - [Memoria Rimozione](../.cursor/memories/mcp-package-docs-removed.md)
+<<<<<<< HEAD
 - [MCP UI/UX Tema Two](../laravel/Themes/Two/docs/mcp-ui-ux.md)
 - [Configurazione Windsurf](../.windsurf/mcp.json)
 - [Prompt MCP](../bashscripts/tools/prompts/mcp.txt)
+=======
+>>>>>>> 6ed19256f (.)

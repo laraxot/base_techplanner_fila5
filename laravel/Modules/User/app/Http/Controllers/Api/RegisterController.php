@@ -16,7 +16,10 @@
  *
  * @return JsonResponse The JSON response
  */
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 declare(strict_types=1);
 
 namespace Modules\User\Http\Controllers\Api;

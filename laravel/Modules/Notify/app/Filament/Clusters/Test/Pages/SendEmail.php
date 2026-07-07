@@ -9,6 +9,11 @@ use Filament\Actions\Action;
 use Filament\Facades\Filament;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\TextInput;
+<<<<<<< HEAD
+=======
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Forms\Contracts\HasForms;
+>>>>>>> 6ed19256f (.)
 use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
@@ -20,17 +25,32 @@ use Modules\Notify\Emails\EmailDataEmail;
 use Modules\Notify\Filament\Clusters\Test;
 use Modules\Xot\Filament\Pages\XotBasePage;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
+<<<<<<< HEAD
 
 /**
  * @property Schema $emailForm
  */
 class SendEmail extends XotBasePage
 {
+=======
+ 
+/**
+ * @property \Filament\Schemas\Schema $emailForm
+ */
+class SendEmail extends XotBasePage implements HasForms
+{
+    use InteractsWithForms;
+
+>>>>>>> 6ed19256f (.)
     // use NavigationLabelTrait;
 
     public ?array $emailData = [];
 
+<<<<<<< HEAD
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-paper-airplane';
+=======
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-paper-airplane';
+>>>>>>> 6ed19256f (.)
 
     protected string $view = 'notify::filament.pages.send-email';
 

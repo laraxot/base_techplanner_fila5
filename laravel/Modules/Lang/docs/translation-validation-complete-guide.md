@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 # Guida Completa alla Validazione delle Traduzioni - <nome progetto>
 
 ## Panoramica
 
 Questa guida documenta il processo completo di validazione delle traduzioni nel progetto <nome progetto>, seguendo i principi DRY (Don't Repeat Yourself) e KISS (Keep It Simple, Stupid).
+=======
+# Guida Completa alla Validazione delle Traduzioni - SaluteOra
+
+## Panoramica
+
+Questa guida documenta il processo completo di validazione delle traduzioni nel progetto SaluteOra, seguendo i principi DRY (Don't Repeat Yourself) e KISS (Keep It Simple, Stupid).
+>>>>>>> 6ed19256f (.)
 
 ## Regole Fondamentali
 
@@ -129,7 +137,11 @@ Ogni campo di traduzione DEVE includere:
 
 ### 1. Helper Text Audit
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/html/_bases/base_saluteora/laravel
+>>>>>>> 6ed19256f (.)
 php docs/helper-text-audit-script.php
 ```
 
@@ -183,10 +195,16 @@ php docs/obbligatorio-audit-script.php
 3. Verificare conformità agli standard
 4. Documentare il completamento
 
+<<<<<<< HEAD
 ## Status Progetto <nome progetto>
 
 ### ✅ Validazioni Completate (2025-08-08)
 ### ✅ Validazioni Completate ([DATE])
+=======
+## Status Progetto SaluteOra
+
+### ✅ Validazioni Completate (2025-08-08)
+>>>>>>> 6ed19256f (.)
 
 1. **Helper Text Normalizzazione**: ✅ CONFORME
    - Nessun helper_text uguale alla chiave padre
@@ -234,11 +252,16 @@ php docs/obbligatorio-audit-script.php
 
 ### Documentazione Moduli
 - [User Module - City Field Refactor](../Modules/User/docs/translation-city-field-refactor-2025-08-08.md)
+<<<<<<< HEAD
 - [<nome progetto> Module - Refactor Summary](../Modules/<nome progetto>/docs/translation-refactor-summary-2025-08-08.md)
 - [Geo Module - Helper Text Fix](../Modules/Geo/docs/helper-text-normalization-fix.md)
 - [User Module - City Field Refactor](../modules/user/docs/translation-city-field-refactor-[date].md)
 - [<nome progetto> Module - Refactor Summary](../modules/<nome progetto>/docs/translation-refactor-summary-[date].md)
 - [Geo Module - Helper Text Fix](../modules/geo/docs/helper-text-normalization-fix.md)
+=======
+- [SaluteOra Module - Refactor Summary](../Modules/SaluteOra/docs/translation-refactor-summary-2025-08-08.md)
+- [Geo Module - Helper Text Fix](../Modules/Geo/docs/helper-text-normalization-fix.md)
+>>>>>>> 6ed19256f (.)
 
 ### Script e Tool
 - [Helper Text Audit Script](helper-text-audit-script.php)
@@ -250,4 +273,8 @@ php docs/obbligatorio-audit-script.php
 **Data Creazione**: 8 Agosto 2025
 **Ultima Validazione**: 8 Agosto 2025
 **Status**: ✅ TUTTI I CONTROLLI SUPERATI
+<<<<<<< HEAD
 **Conformità**: ✅ PROGETTO COMPLETAMENTE CONFORME
+=======
+**Conformità**: ✅ PROGETTO COMPLETAMENTE CONFORME
+>>>>>>> 6ed19256f (.)

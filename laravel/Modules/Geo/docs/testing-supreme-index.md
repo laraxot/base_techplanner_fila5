@@ -24,7 +24,10 @@ Questa è la regola fondamentale che ha precedenza ASSOLUTA su qualsiasi altra c
 
 ### 📁 Regole per Modulo
 - **[<nome progetto> Testing Guidelines](../laravel/Modules/<nome progetto>/docs/testing-guidelines.md)**
+<<<<<<< HEAD
 - **[<nome progetto> Testing Guidelines](../laravel/modules/<nome progetto>/docs/testing-guidelines.md)**
+=======
+>>>>>>> 6ed19256f (.)
 
 ### ⚙️ Regole Sistema
 - **[Windsurf Rules - Testing Business Behavior](../.windsurf/rules/testing-business-behavior-supreme.mdc)**
@@ -110,4 +113,8 @@ Queste regole si applicano a:
 
 **Ultimo aggiornamento**: Gennaio 2025
 **Status**: REGOLA SUPREMA E NON NEGOZIABILE
+<<<<<<< HEAD
 **Applicabilità**: UNIVERSALE - tutto il progetto
+=======
+**Applicabilità**: UNIVERSALE - tutto il progetto
+>>>>>>> 6ed19256f (.)

@@ -49,7 +49,11 @@
 
 ### Esecuzione Base
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/_bases/base_laravelpizza/laravel
+>>>>>>> 6ed19256f (.)
 
 # Test singolo modulo
 ./vendor/bin/pest Modules/User/tests/
@@ -201,4 +205,8 @@ test('user can be saved to database', function () {
 ---
 
 **Ultimo aggiornamento**: 9 Gennaio 2026  
+<<<<<<< HEAD
 **Status**: 🔄 **IN CORREZIONE**
+=======
+**Status**: 🔄 **IN CORREZIONE**
+>>>>>>> 6ed19256f (.)

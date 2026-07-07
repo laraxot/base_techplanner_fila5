@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Themes\Sixteen\Models\Municipal;
 
+<<<<<<< HEAD
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -14,10 +15,16 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Collection;
+=======
+use Illuminate\Database\Eloquent\{Model, SoftDeletes, Factories\HasFactory};
+use Illuminate\Database\Eloquent\Relations\{HasMany, BelongsTo, MorphMany, BelongsToMany};
+use Illuminate\Database\Eloquent\Casts\Attribute;
+>>>>>>> 6ed19256f (.)
 use Illuminate\Support\Str;
 
 /**
  * Modello per le unità organizzative
+<<<<<<< HEAD
  *
  * Rappresenta uffici, dipartimenti, settori e altre unità organizzative
  * dell'ente secondo l'ontologia AGID
@@ -52,11 +59,17 @@ use Illuminate\Support\Str;
  * @property-read \Illuminate\Database\Eloquent\Collection<int, self> $children
  * @property-read \Illuminate\Database\Eloquent\Collection<int, ContactPoint> $contacts
  * @property-read \Illuminate\Database\Eloquent\Collection<int, self> $allChildren
+=======
+ * 
+ * Rappresenta uffici, dipartimenti, settori e altre unità organizzative
+ * dell'ente secondo l'ontologia AGID
+>>>>>>> 6ed19256f (.)
  */
 class OrganizationalUnit extends Model
 {
     use HasFactory, SoftDeletes;
 
+<<<<<<< HEAD
     /**
      * Tipi di unità organizzative secondo AGID
      */
@@ -76,6 +89,8 @@ class OrganizationalUnit extends Model
         'agency' => 'Agenzia',
     ];
 
+=======
+>>>>>>> 6ed19256f (.)
     protected $table = 'sixteen_organizational_units';
 
     protected $fillable = [
@@ -115,6 +130,28 @@ class OrganizationalUnit extends Model
     ];
 
     /**
+<<<<<<< HEAD
+=======
+     * Tipi di unità organizzative secondo AGID
+     */
+    public const TYPES = [
+        'municipality' => 'Comune',
+        'department' => 'Dipartimento',
+        'sector' => 'Settore',
+        'office' => 'Ufficio',
+        'service' => 'Servizio',
+        'area' => 'Area',
+        'division' => 'Divisione',
+        'unit' => 'Unità',
+        'committee' => 'Commissione',
+        'council' => 'Consiglio',
+        'board' => 'Giunta',
+        'authority' => 'Autorità',
+        'agency' => 'Agenzia',
+    ];
+
+    /**
+>>>>>>> 6ed19256f (.)
      * Relazione con l'unità parent
      */
     public function parent(): BelongsTo
@@ -224,11 +261,104 @@ class OrganizationalUnit extends Model
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Accessor per il nome del tipo
+     */
+    protected function typeName(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => self::TYPES[$this->type] ?? $this->type
+        );
+    }
+
+    /**
+     * Accessor per il percorso gerarchico
+     */
+    protected function hierarchyPath(): Attribute
+    {
+        return Attribute::make(
+            get: function () {
+                $path = collect([$this->name]);
+                $current = $this;
+                
+                while ($current->parent) {
+                    $current = $current->parent;
+                    $path->prepend($current->name);
+                }
+                
+                return $path->implode(' › ');
+            }
+        );
+    }
+
+    /**
+     * Accessor per verificare se ha figli
+     */
+    protected function hasChildren(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => $this->children()->exists()
+        );
+    }
+
+    /**
+     * Accessor per il livello gerarchico
+     */
+    protected function level(): Attribute
+    {
+        return Attribute::make(
+            get: function () {
+                $level = 0;
+                $current = $this;
+                
+                while ($current->parent) {
+                    $level++;
+                    $current = $current->parent;
+                }
+                
+                return $level;
+            }
+        );
+    }
+
+    /**
+     * Accessor per l'URL dell'unità
+     */
+    protected function url(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => route('municipal.organizational-units.show', $this->slug)
+        );
+    }
+
+    /**
+     * Mutator per il nome (genera automaticamente lo slug)
+     */
+    protected function name(): Attribute
+    {
+        return Attribute::make(
+            set: function ($value) {
+                $this->attributes['name'] = $value;
+                if (empty($this->attributes['slug'])) {
+                    $this->attributes['slug'] = Str::slug($value);
+                }
+                return $value;
+            }
+        );
+    }
+
+    /**
+>>>>>>> 6ed19256f (.)
      * Ottiene le competenze formattate
      */
     public function getFormattedCompetences(): array
     {
+<<<<<<< HEAD
         if (! $this->competences || ! is_array($this->competences)) {
+=======
+        if (!$this->competences || !is_array($this->competences)) {
+>>>>>>> 6ed19256f (.)
             return [];
         }
 
@@ -237,7 +367,10 @@ class OrganizationalUnit extends Model
                 if (is_string($competence)) {
                     return ['title' => $competence];
                 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
                 return $competence;
             })
             ->toArray();
@@ -248,7 +381,11 @@ class OrganizationalUnit extends Model
      */
     public function getFormattedServices(): array
     {
+<<<<<<< HEAD
         if (! $this->services_provided || ! is_array($this->services_provided)) {
+=======
+        if (!$this->services_provided || !is_array($this->services_provided)) {
+>>>>>>> 6ed19256f (.)
             return [];
         }
 
@@ -257,7 +394,10 @@ class OrganizationalUnit extends Model
                 if (is_string($service)) {
                     return ['name' => $service];
                 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
                 return $service;
             })
             ->toArray();
@@ -268,14 +408,22 @@ class OrganizationalUnit extends Model
      */
     public function getFormattedOfficeHours(): array
     {
+<<<<<<< HEAD
         if (! $this->office_hours || ! is_array($this->office_hours)) {
+=======
+        if (!$this->office_hours || !is_array($this->office_hours)) {
+>>>>>>> 6ed19256f (.)
             return [];
         }
 
         $days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
         $dayNames = [
             'monday' => 'Lunedì',
+<<<<<<< HEAD
             'tuesday' => 'Martedì',
+=======
+            'tuesday' => 'Martedì', 
+>>>>>>> 6ed19256f (.)
             'wednesday' => 'Mercoledì',
             'thursday' => 'Giovedì',
             'friday' => 'Venerdì',
@@ -286,7 +434,10 @@ class OrganizationalUnit extends Model
         return collect($days)
             ->mapWithKeys(function ($day) use ($dayNames) {
                 $hours = $this->office_hours[$day] ?? null;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
                 return [$dayNames[$day] => $hours];
             })
             ->filter()
@@ -304,7 +455,11 @@ class OrganizationalUnit extends Model
 
         $todayHours = $this->office_hours[$currentDay] ?? null;
 
+<<<<<<< HEAD
         if (! $todayHours || ! is_array($todayHours)) {
+=======
+        if (!$todayHours || !is_array($todayHours)) {
+>>>>>>> 6ed19256f (.)
             return false;
         }
 
@@ -322,7 +477,11 @@ class OrganizationalUnit extends Model
     /**
      * Ottiene tutti gli antenati
      */
+<<<<<<< HEAD
     public function getAncestors(): Collection
+=======
+    public function getAncestors(): \Illuminate\Support\Collection
+>>>>>>> 6ed19256f (.)
     {
         $ancestors = collect();
         $current = $this->parent;
@@ -338,7 +497,11 @@ class OrganizationalUnit extends Model
     /**
      * Ottiene tutti i discendenti (recursivo)
      */
+<<<<<<< HEAD
     public function getAllDescendants(): Collection
+=======
+    public function getAllDescendants(): \Illuminate\Support\Collection
+>>>>>>> 6ed19256f (.)
     {
         $descendants = collect();
 
@@ -367,6 +530,7 @@ class OrganizationalUnit extends Model
     }
 
     /**
+<<<<<<< HEAD
      * Accessor per il nome del tipo
      */
     protected function typeName(): Attribute
@@ -457,11 +621,20 @@ class OrganizationalUnit extends Model
      * Boot del modello
      */
     protected static function boot(): void
+=======
+     * Boot del modello
+     */
+    protected static function boot()
+>>>>>>> 6ed19256f (.)
     {
         parent::boot();
 
         // Auto-increment position nella stessa categoria
+<<<<<<< HEAD
         static::creating(function ($model): void {
+=======
+        static::creating(function ($model) {
+>>>>>>> 6ed19256f (.)
             if (is_null($model->position)) {
                 $model->position = static::where('parent_id', $model->parent_id)
                     ->where('type', $model->type)
@@ -470,21 +643,37 @@ class OrganizationalUnit extends Model
         });
 
         // Genera slug se mancante
+<<<<<<< HEAD
         static::creating(function ($model): void {
+=======
+        static::creating(function ($model) {
+>>>>>>> 6ed19256f (.)
             if (empty($model->slug)) {
                 $model->slug = Str::slug($model->name);
             }
         });
 
         // Assicura unicità dello slug
+<<<<<<< HEAD
         static::creating(function ($model): void {
+=======
+        static::creating(function ($model) {
+>>>>>>> 6ed19256f (.)
             $originalSlug = $model->slug;
             $counter = 1;
 
             while (static::where('slug', $model->slug)->exists()) {
+<<<<<<< HEAD
                 $model->slug = $originalSlug.'-'.$counter;
+=======
+                $model->slug = $originalSlug . '-' . $counter;
+>>>>>>> 6ed19256f (.)
                 $counter++;
             }
         });
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 6ed19256f (.)

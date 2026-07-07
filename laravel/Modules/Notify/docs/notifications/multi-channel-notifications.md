@@ -1,11 +1,15 @@
 # Implementazione di Notifiche Multi-Canale
 
 Questa documentazione descrive come implementare correttamente notifiche multi-canale (email, SMS, Telegram) nel modulo Notify di .
+<<<<<<< HEAD
 Questa documentazione descrive come implementare correttamente notifiche multi-canale (email, SMS, Telegram) nel modulo Notify di <nome progetto>.
 # Implementazione di Notifiche Multi-Canale 
 
 Questa documentazione descrive come implementare correttamente notifiche multi-canale (email, SMS, Telegram) nel modulo Notify di <nome progetto>.
 Questa documentazione descrive come implementare correttamente notifiche multi-canale (email, SMS, Telegram) nel modulo Notify di Quaeris.
+=======
+Questa documentazione descrive come implementare correttamente notifiche multi-canale (email, SMS, Telegram) nel modulo Notify di SaluteOra.
+>>>>>>> 6ed19256f (.)
 
 ## Indice
 
@@ -21,9 +25,13 @@ Questa documentazione descrive come implementare correttamente notifiche multi-c
 ## Introduzione
 
  utilizza il sistema di notifiche di Laravel per inviare comunicazioni attraverso diversi canali. Ogni canale richiede un'implementazione specifica per garantire la corretta consegna dei messaggi.
+<<<<<<< HEAD
 <nome progetto> utilizza il sistema di notifiche di Laravel per inviare comunicazioni attraverso diversi canali. Ogni canale richiede un'implementazione specifica per garantire la corretta consegna dei messaggi.
 <nome progetto> utilizza il sistema di notifiche di Laravel per inviare comunicazioni attraverso diversi canali. Ogni canale richiede un'implementazione specifica per garantire la corretta consegna dei messaggi.
 Quaeris utilizza il sistema di notifiche di Laravel per inviare comunicazioni attraverso diversi canali. Ogni canale richiede un'implementazione specifica per garantire la corretta consegna dei messaggi.
+=======
+SaluteOra utilizza il sistema di notifiche di Laravel per inviare comunicazioni attraverso diversi canali. Ogni canale richiede un'implementazione specifica per garantire la corretta consegna dei messaggi.
+>>>>>>> 6ed19256f (.)
 
 ## Architettura delle Notifiche
 
@@ -67,14 +75,22 @@ Quando si utilizza `SpatieEmail` con le notifiche, è **fondamentale** impostare
 public function toMail($notifiable): SpatieEmail
 {
     $email = new SpatieEmail($this->record, $this->slug);
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // IMPORTANTE: garantisci che ci sia sempre un destinatario
     if (method_exists($notifiable, 'routeNotificationFor')) {
         $email->to($notifiable->routeNotificationFor('mail'));
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     return $email;
 }
 ```
@@ -95,9 +111,13 @@ public function toMail($notifiable): SpatieEmail
 ### Configurazione Provider SMS
 
  supporta diversi provider SMS. La configurazione di base prevede:
+<<<<<<< HEAD
 <nome progetto> supporta diversi provider SMS. La configurazione di base prevede:
 <nome progetto> supporta diversi provider SMS. La configurazione di base prevede:
 Quaeris supporta diversi provider SMS. La configurazione di base prevede:
+=======
+SaluteOra supporta diversi provider SMS. La configurazione di base prevede:
+>>>>>>> 6ed19256f (.)
 
 1. Installazione del provider scelto:
    ```bash
@@ -202,19 +222,28 @@ class AppointmentNotification extends Notification
 {
     protected $record;
     protected $slug;
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function __construct($record, $slug)
     {
         $this->record = $record;
         $this->slug = $slug;
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function via($notifiable)
     {
         // Determina dinamicamente i canali basandosi sulle preferenze dell'utente
         $channels = ['mail'];
+<<<<<<< HEAD
         
         if ($notifiable->sms_notifications_enabled) {
             $channels[] = TwilioChannel::class;
@@ -231,6 +260,8 @@ class AppointmentNotification extends Notification
     {
         $email = new SpatieEmail($this->record, $this->slug);
         
+=======
+>>>>>>> 6ed19256f (.)
 
         if ($notifiable->sms_notifications_enabled) {
             $channels[] = TwilioChannel::class;
@@ -251,10 +282,13 @@ class AppointmentNotification extends Notification
         if (method_exists($notifiable, 'routeNotificationFor')) {
             $email->to($notifiable->routeNotificationFor('mail'));
         }
+<<<<<<< HEAD
         
         return $email;
     }
     
+=======
+>>>>>>> 6ed19256f (.)
 
         return $email;
     }
@@ -264,8 +298,12 @@ class AppointmentNotification extends Notification
         return (new TwilioSmsMessage())
             ->content("Notifica: {$this->record->title}");
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function toTelegram($notifiable)
     {
         return TelegramMessage::create()
@@ -277,9 +315,13 @@ class AppointmentNotification extends Notification
 ## Implementazione Netfun SMS
 
 Netfun è un provider di SMS italiano che offre API per l'invio di messaggi SMS. Seguendo l'architettura di , implementeremo l'integrazione con Netfun utilizzando Spatie Queueable Actions.
+<<<<<<< HEAD
 Netfun è un provider di SMS italiano che offre API per l'invio di messaggi SMS. Seguendo l'architettura di <nome progetto>, implementeremo l'integrazione con Netfun utilizzando Spatie Queueable Actions.
 Netfun è un provider di SMS italiano che offre API per l'invio di messaggi SMS. Seguendo l'architettura di <nome progetto>, implementeremo l'integrazione con Netfun utilizzando Spatie Queueable Actions.
 Netfun è un provider di SMS italiano che offre API per l'invio di messaggi SMS. Seguendo l'architettura di Quaeris, implementeremo l'integrazione con Netfun utilizzando Spatie Queueable Actions.
+=======
+Netfun è un provider di SMS italiano che offre API per l'invio di messaggi SMS. Seguendo l'architettura di SaluteOra, implementeremo l'integrazione con Netfun utilizzando Spatie Queueable Actions.
+>>>>>>> 6ed19256f (.)
 
 ### 1. Configurazione
 
@@ -289,18 +331,25 @@ Per prima cosa, aggiungiamo la configurazione nel file `config/sms.php`:
 // config/sms.php
 return [
     // Altre configurazioni...
+<<<<<<< HEAD
     
     'netfun' => [
         'username' => env('NETFUN_USERNAME'),
         'password' => env('NETFUN_PASSWORD'),
         'sender' => env('NETFUN_SENDER', '<nome progetto>'),
+=======
+>>>>>>> 6ed19256f (.)
 
     'netfun' => [
         'username' => env('NETFUN_USERNAME'),
         'password' => env('NETFUN_PASSWORD'),
         'sender' => env('NETFUN_SENDER', ''),
+<<<<<<< HEAD
         'sender' => env('NETFUN_SENDER', '<nome progetto>'),
 'sender' => env('NETFUN_SENDER', 'Quaeris'),
+=======
+        'sender' => env('NETFUN_SENDER', 'SaluteOra'),
+>>>>>>> 6ed19256f (.)
         'api_url' => env('NETFUN_API_URL', 'https://api.netfun.it/sms/v1/'),
     ],
 ];
@@ -312,9 +361,13 @@ Assicurati di aggiungere le corrispondenti variabili al tuo file `.env`:
 NETFUN_USERNAME=your_username
 NETFUN_PASSWORD=your_password
 NETFUN_SENDER=
+<<<<<<< HEAD
 NETFUN_SENDER=<nome progetto>
 NETFUN_SENDER=<nome progetto>
 NETFUN_SENDER=Quaeris
+=======
+NETFUN_SENDER=SaluteOra
+>>>>>>> 6ed19256f (.)
 ```
 
 ### 2. Creazione della Queueable Action
@@ -334,14 +387,22 @@ use Illuminate\Support\Str;
 class SendNetfunSMSAction
 {
     use QueueableAction;
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     protected string $username;
     protected string $password;
     protected string $sender;
     protected string $apiUrl;
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function __construct()
     {
         $this->username = config('sms.netfun.username');
@@ -349,16 +410,23 @@ class SendNetfunSMSAction
         $this->sender = config('sms.netfun.sender');
         $this->apiUrl = config('sms.netfun.api_url');
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function execute(string $to, string $message, array $options = [])
     {
         // Normalizza il numero di telefono (formato E.164)
         $to = $this->normalizePhoneNumber($to);
+<<<<<<< HEAD
         
         // Genera un ID di riferimento univoco per il messaggio
         $reference = $options['reference'] ?? (string) Str::uuid();
         
+=======
+>>>>>>> 6ed19256f (.)
 
         // Genera un ID di riferimento univoco per il messaggio
         $reference = $options['reference'] ?? (string) Str::uuid();
@@ -374,10 +442,13 @@ class SendNetfunSMSAction
                 // Altri parametri opzionali
                 'date' => $options['scheduled_date'] ?? null, // Data pianificata di invio
             ]);
+<<<<<<< HEAD
             
             if ($response->successful()) {
                 $responseData = $response->json();
                 
+=======
+>>>>>>> 6ed19256f (.)
 
             if ($response->successful()) {
                 $responseData = $response->json();
@@ -387,8 +458,12 @@ class SendNetfunSMSAction
                     'reference' => $reference,
                     'message_id' => $responseData['message_id'] ?? null,
                 ]);
+<<<<<<< HEAD
                 
                 
+=======
+
+>>>>>>> 6ed19256f (.)
                 return [
                     'success' => true,
                     'message_id' => $responseData['message_id'] ?? null,
@@ -401,8 +476,12 @@ class SendNetfunSMSAction
                     'status' => $response->status(),
                     'response' => $response->json(),
                 ]);
+<<<<<<< HEAD
                 
                 
+=======
+
+>>>>>>> 6ed19256f (.)
                 return [
                     'success' => false,
                     'error' => $response->json()['message'] ?? 'Errore sconosciuto',
@@ -415,6 +494,7 @@ class SendNetfunSMSAction
                 'reference' => $reference,
                 'error' => $e->getMessage(),
             ]);
+<<<<<<< HEAD
             
             throw $e;
         }
@@ -423,6 +503,8 @@ class SendNetfunSMSAction
     /**
      * Normalizza il numero di telefono nel formato E.164
      * 
+=======
+>>>>>>> 6ed19256f (.)
 
             throw $e;
         }
@@ -438,8 +520,12 @@ class SendNetfunSMSAction
     {
         // Rimuovi tutti i caratteri non numerici
         $digits = preg_replace('/[^0-9]/', '', $phoneNumber);
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         // Se il numero non inizia con '+' e non ha un prefisso internazionale,
         // aggiungi il prefisso italiano per default
         if (!Str::startsWith($phoneNumber, '+')) {
@@ -447,14 +533,21 @@ class SendNetfunSMSAction
             if (Str::startsWith($digits, '00')) {
                 $digits = '+' . substr($digits, 2);
             }
+<<<<<<< HEAD
             } 
+=======
+>>>>>>> 6ed19256f (.)
             // Se il numero inizia con '3' (cellulare italiano), aggiungi prefisso italiano
             elseif (Str::startsWith($digits, '3')) {
                 $digits = '+39' . $digits;
             }
         }
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         return $digits;
     }
 }
@@ -475,10 +568,13 @@ class NetfunSMSMessage
     public ?string $sender = null;
     public ?string $reference = null;
     public ?string $scheduledDate = null;
+<<<<<<< HEAD
     
     /**
      * Imposta il contenuto del messaggio
      * 
+=======
+>>>>>>> 6ed19256f (.)
 
     /**
      * Imposta il contenuto del messaggio
@@ -491,10 +587,13 @@ class NetfunSMSMessage
         $this->content = $content;
         return $this;
     }
+<<<<<<< HEAD
     
     /**
      * Imposta il mittente del messaggio
      * 
+=======
+>>>>>>> 6ed19256f (.)
 
     /**
      * Imposta il mittente del messaggio
@@ -507,10 +606,13 @@ class NetfunSMSMessage
         $this->sender = $sender;
         return $this;
     }
+<<<<<<< HEAD
     
     /**
      * Imposta un riferimento personalizzato
      * 
+=======
+>>>>>>> 6ed19256f (.)
 
     /**
      * Imposta un riferimento personalizzato
@@ -523,10 +625,13 @@ class NetfunSMSMessage
         $this->reference = $reference;
         return $this;
     }
+<<<<<<< HEAD
     
     /**
      * Pianifica l'invio del messaggio
      * 
+=======
+>>>>>>> 6ed19256f (.)
 
     /**
      * Pianifica l'invio del messaggio
@@ -539,10 +644,13 @@ class NetfunSMSMessage
         $this->scheduledDate = $date;
         return $this;
     }
+<<<<<<< HEAD
     
     /**
      * Converte l'oggetto in array di opzioni
      * 
+=======
+>>>>>>> 6ed19256f (.)
 
     /**
      * Converte l'oggetto in array di opzioni
@@ -576,16 +684,23 @@ use Modules\Notify\Datas\NetfunSMSMessage;
 class NetfunChannel
 {
     protected SendNetfunSMSAction $sendSMSAction;
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function __construct(SendNetfunSMSAction $sendSMSAction)
     {
         $this->sendSMSAction = $sendSMSAction;
     }
+<<<<<<< HEAD
     
     /**
      * Invia la notifica tramite Netfun SMS
      * 
+=======
+>>>>>>> 6ed19256f (.)
 
     /**
      * Invia la notifica tramite Netfun SMS
@@ -600,6 +715,7 @@ class NetfunChannel
         if (!$to = $notifiable->routeNotificationForNetfun($notification)) {
             return null;
         }
+<<<<<<< HEAD
         
         // Ottieni il messaggio dalla notifica
         $message = $notification->toNetfun($notifiable);
@@ -608,6 +724,8 @@ class NetfunChannel
             throw new \Exception('Il metodo toNetfun() deve restituire un\'istanza di NetfunSMSMessage');
         }
         
+=======
+>>>>>>> 6ed19256f (.)
 
         // Ottieni il messaggio dalla notifica
         $message = $notification->toNetfun($notifiable);
@@ -642,12 +760,15 @@ use Illuminate\Notifications\Notifiable;
 class User extends Authenticatable
 {
     use Notifiable;
+<<<<<<< HEAD
     
     // ... altri metodi e proprietà
     
     /**
      * Restituisce il numero di telefono per invio notifiche Netfun
      * 
+=======
+>>>>>>> 6ed19256f (.)
 
     // ... altri metodi e proprietà
 
@@ -680,16 +801,23 @@ use Modules\Notify\Datas\NetfunSMSMessage;
 class AppointmentReminder extends Notification
 {
     protected $appointment;
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function __construct($appointment)
     {
         $this->appointment = $appointment;
     }
+<<<<<<< HEAD
     
     /**
      * Definisci i canali su cui inviare la notifica
      * 
+=======
+>>>>>>> 6ed19256f (.)
 
     /**
      * Definisci i canali su cui inviare la notifica
@@ -701,10 +829,13 @@ class AppointmentReminder extends Notification
     {
         return ['mail', NetfunChannel::class];
     }
+<<<<<<< HEAD
     
     /**
      * Formatta il messaggio per il canale Netfun
      * 
+=======
+>>>>>>> 6ed19256f (.)
 
     /**
      * Formatta il messaggio per il canale Netfun
@@ -718,6 +849,7 @@ class AppointmentReminder extends Notification
 
         return (new NetfunSMSMessage())
             ->content("Gentile {$notifiable->first_name}, le ricordiamo il suo appuntamento del {$date}. .")
+<<<<<<< HEAD
             ->content("Gentile {$notifiable->first_name}, le ricordiamo il suo appuntamento del {$date}. <nome progetto>.")
             ->reference('app_' . $this->appointment->id);
     }
@@ -729,6 +861,12 @@ class AppointmentReminder extends Notification
             ->reference('app_' . $this->appointment->id);
     }
     
+=======
+            ->content("Gentile {$notifiable->first_name}, le ricordiamo il suo appuntamento del {$date}. SaluteOra.")
+            ->reference('app_' . $this->appointment->id);
+    }
+
+>>>>>>> 6ed19256f (.)
     // Altri metodi per altri canali (mail, ecc.)
 }
 ```
@@ -752,8 +890,12 @@ use Illuminate\Support\Facades\Http;
 class NetfunSMSTest extends TestCase
 {
     use DatabaseTransactions;
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function testSendSMS()
     {
         // Mock della risposta HTTP
@@ -763,6 +905,7 @@ class NetfunSMSTest extends TestCase
                 'message_id' => '123456789',
             ], 200),
         ]);
+<<<<<<< HEAD
         
         $user = User::factory()->create([
             'phone_number' => '+393401234567',
@@ -772,6 +915,8 @@ class NetfunSMSTest extends TestCase
         
         $message = (new NetfunSMSMessage())
             ->content('Test SMS da <nome progetto>')
+=======
+>>>>>>> 6ed19256f (.)
 
         $user = User::factory()->create([
             'phone_number' => '+393401234567',
@@ -781,19 +926,29 @@ class NetfunSMSTest extends TestCase
 
         $message = (new NetfunSMSMessage())
             ->content('Test SMS da ')
+<<<<<<< HEAD
             ->content('Test SMS da <nome progetto>')
             ->reference('test_123');
 
 ->content('Test SMS da Quaeris')
             ->reference('test_123');
         
+=======
+            ->content('Test SMS da SaluteOra')
+            ->reference('test_123');
+
+>>>>>>> 6ed19256f (.)
         $result = $action->execute(
             $user->phone_number,
             $message->content,
             $message->toArray()
         );
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         $this->assertTrue($result['success']);
         $this->assertEquals('123456789', $result['message_id']);
     }
@@ -822,6 +977,7 @@ class AppointmentReminderController extends Controller
 
         $message = (new NetfunSMSMessage())
             ->content("Gentile {$appointment->patient->first_name}, le ricordiamo il suo appuntamento del {$appointment->date->format('d/m/Y H:i')}. .")
+<<<<<<< HEAD
             ->content("Gentile {$appointment->patient->first_name}, le ricordiamo il suo appuntamento del {$appointment->date->format('d/m/Y H:i')}. <nome progetto>.")
             ->reference('app_' . $appointment->id);
 
@@ -831,6 +987,11 @@ class AppointmentReminderController extends Controller
 ->content("Gentile {$appointment->patient->first_name}, le ricordiamo il suo appuntamento del {$appointment->date->format('d/m/Y H:i')}. Quaeris.")
             ->reference('app_' . $appointment->id);
         
+=======
+            ->content("Gentile {$appointment->patient->first_name}, le ricordiamo il suo appuntamento del {$appointment->date->format('d/m/Y H:i')}. SaluteOra.")
+            ->reference('app_' . $appointment->id);
+
+>>>>>>> 6ed19256f (.)
         // Esecuzione asincrona
         $sendSMSAction->onQueue('sms')
             ->execute(
@@ -838,8 +999,12 @@ class AppointmentReminderController extends Controller
                 $message->content,
                 $message->toArray()
             );
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         return response()->json([
             'message' => 'Promemoria inviato con successo',
         ]);
@@ -937,7 +1102,11 @@ TELEGRAM_BOT_TOKEN=12345:ABC...
 - [SMS_PROVIDER_CONFIGURATION.md](./SMS_PROVIDER_CONFIGURATION.md)
 - [TELEGRAM_NOTIFICATIONS_GUIDE.md](./TELEGRAM_NOTIFICATIONS_GUIDE.md)
 Questa documentazione descrive come implementare correttamente notifiche multi-canale (email, SMS, Telegram) nel modulo Notify di <nome progetto>.
+<<<<<<< HEAD
 Questa documentazione descrive come implementare correttamente notifiche multi-canale (email, SMS, Telegram) nel modulo Notify di <nome progetto>.
+=======
+Questa documentazione descrive come implementare correttamente notifiche multi-canale (email, SMS, Telegram) nel modulo Notify di SaluteOra.
+>>>>>>> 6ed19256f (.)
 # Implementazione di Notifiche Multi-Canale
 
 ## Indice
@@ -954,7 +1123,11 @@ Questa documentazione descrive come implementare correttamente notifiche multi-c
 ## Introduzione
 
 <nome progetto> utilizza il sistema di notifiche di Laravel per inviare comunicazioni attraverso diversi canali. Ogni canale richiede un'implementazione specifica per garantire la corretta consegna dei messaggi.
+<<<<<<< HEAD
 <nome progetto> utilizza il sistema di notifiche di Laravel per inviare comunicazioni attraverso diversi canali. Ogni canale richiede un'implementazione specifica per garantire la corretta consegna dei messaggi.
+=======
+SaluteOra utilizza il sistema di notifiche di Laravel per inviare comunicazioni attraverso diversi canali. Ogni canale richiede un'implementazione specifica per garantire la corretta consegna dei messaggi.
+>>>>>>> 6ed19256f (.)
 
 ## Architettura delle Notifiche
 
@@ -1024,7 +1197,11 @@ public function toMail($notifiable): SpatieEmail
 ### Configurazione Provider SMS
 
 <nome progetto> supporta diversi provider SMS. La configurazione di base prevede:
+<<<<<<< HEAD
 <nome progetto> supporta diversi provider SMS. La configurazione di base prevede:
+=======
+SaluteOra supporta diversi provider SMS. La configurazione di base prevede:
+>>>>>>> 6ed19256f (.)
 
 1. Installazione del provider scelto:
    ```bash
@@ -1176,7 +1353,11 @@ class AppointmentNotification extends Notification
 ## Implementazione Netfun SMS
 
 Netfun è un provider di SMS italiano che offre API per l'invio di messaggi SMS. Seguendo l'architettura di <nome progetto>, implementeremo l'integrazione con Netfun utilizzando Spatie Queueable Actions.
+<<<<<<< HEAD
 Netfun è un provider di SMS italiano che offre API per l'invio di messaggi SMS. Seguendo l'architettura di <nome progetto>, implementeremo l'integrazione con Netfun utilizzando Spatie Queueable Actions.
+=======
+Netfun è un provider di SMS italiano che offre API per l'invio di messaggi SMS. Seguendo l'architettura di SaluteOra, implementeremo l'integrazione con Netfun utilizzando Spatie Queueable Actions.
+>>>>>>> 6ed19256f (.)
 
 ### 1. Configurazione
 
@@ -1191,7 +1372,11 @@ return [
         'username' => env('NETFUN_USERNAME'),
         'password' => env('NETFUN_PASSWORD'),
         'sender' => env('NETFUN_SENDER', '<nome progetto>'),
+<<<<<<< HEAD
         'sender' => env('NETFUN_SENDER', '<nome progetto>'),
+=======
+        'sender' => env('NETFUN_SENDER', 'SaluteOra'),
+>>>>>>> 6ed19256f (.)
         'api_url' => env('NETFUN_API_URL', 'https://api.netfun.it/sms/v1/'),
     ],
 ];
@@ -1202,7 +1387,11 @@ Assicurati di aggiungere le corrispondenti variabili al tuo file `.env`:
 NETFUN_USERNAME=your_username
 NETFUN_PASSWORD=your_password
 NETFUN_SENDER=<nome progetto>
+<<<<<<< HEAD
 NETFUN_SENDER=<nome progetto>
+=======
+NETFUN_SENDER=SaluteOra
+>>>>>>> 6ed19256f (.)
 
 ### 2. Creazione della Queueable Action
 
@@ -1510,7 +1699,11 @@ class AppointmentReminder extends Notification
 
         return (new NetfunSMSMessage())
             ->content("Gentile {$notifiable->first_name}, le ricordiamo il suo appuntamento del {$date}. <nome progetto>.")
+<<<<<<< HEAD
             ->content("Gentile {$notifiable->first_name}, le ricordiamo il suo appuntamento del {$date}. <nome progetto>.")
+=======
+            ->content("Gentile {$notifiable->first_name}, le ricordiamo il suo appuntamento del {$date}. SaluteOra.")
+>>>>>>> 6ed19256f (.)
             ->reference('app_' . $this->appointment->id);
     }
 
@@ -1555,7 +1748,11 @@ class NetfunSMSTest extends TestCase
 
         $message = (new NetfunSMSMessage())
             ->content('Test SMS da <nome progetto>')
+<<<<<<< HEAD
             ->content('Test SMS da <nome progetto>')
+=======
+            ->content('Test SMS da SaluteOra')
+>>>>>>> 6ed19256f (.)
             ->reference('test_123');
 
         $result = $action->execute(
@@ -1592,7 +1789,11 @@ class AppointmentReminderController extends Controller
 
         $message = (new NetfunSMSMessage())
             ->content("Gentile {$appointment->patient->first_name}, le ricordiamo il suo appuntamento del {$appointment->date->format('d/m/Y H:i')}. <nome progetto>.")
+<<<<<<< HEAD
             ->content("Gentile {$appointment->patient->first_name}, le ricordiamo il suo appuntamento del {$appointment->date->format('d/m/Y H:i')}. <nome progetto>.")
+=======
+            ->content("Gentile {$appointment->patient->first_name}, le ricordiamo il suo appuntamento del {$appointment->date->format('d/m/Y H:i')}. SaluteOra.")
+>>>>>>> 6ed19256f (.)
             ->reference('app_' . $appointment->id);
 
         // Esecuzione asincrona
@@ -1695,6 +1896,9 @@ TELEGRAM_BOT_TOKEN=12345:ABC...
 - [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./NOTIFICATIONS_IMPLEMENTATION_GUIDE.md)
 - [SMS_PROVIDER_CONFIGURATION.md](./SMS_PROVIDER_CONFIGURATION.md)
 - [TELEGRAM_NOTIFICATIONS_GUIDE.md](./TELEGRAM_NOTIFICATIONS_GUIDE.md)
+<<<<<<< HEAD
 - [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./notifications_implementation_guide.md)
 - [SMS_PROVIDER_CONFIGURATION.md](./sms_provider_configuration.md)
 - [TELEGRAM_NOTIFICATIONS_GUIDE.md](./telegram_notifications_guide.md)
+=======
+>>>>>>> 6ed19256f (.)

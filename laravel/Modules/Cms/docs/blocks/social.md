@@ -146,5 +146,8 @@ Il blocco può essere utilizzato in vari contesti:
 ## Collegamenti tra versioni di social.md
 * [social.md](laravel/Modules/Tenant/docs/it/config/social.md)
 * [social.md](laravel/Modules/Cms/docs/blocks/social.md)
+<<<<<<< HEAD
 * [social.md](laravel/modules/tenant/docs/it/config/social.md)
 * [social.md](laravel/modules/cms/docs/blocks/social.md)
+=======
+>>>>>>> 6ed19256f (.)

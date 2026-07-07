@@ -7,7 +7,11 @@ Data: 2025-04-23 19:09:56
 - **Namespace principale**: Modules\\Lang
 Modules\\Lang\\Database\\Factories
 Modules\\Lang\\Database\\Seeders
+<<<<<<< HEAD
 - **Pacchetto Composer**: laraxot/module_lang_fila5
+=======
+- **Pacchetto Composer**: laraxot/module_lang_fila3
+>>>>>>> 6ed19256f (.)
 Marco Sottana
 - **Dipendenze**: mcamara/laravel-localization ^2.2 spatie/laravel-sluggable * repositories type path url ../Xot type path url ../Tenant type path url ../UI autoload psr-4
 - **Totale file PHP**: 103
@@ -474,6 +478,7 @@ tests/Unit
 
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/docs/structure.md)
+<<<<<<< HEAD
 * [structure.md](../../../gdpr/docs/structure.md)
 * [structure.md](../../../notify/docs/structure.md)
 * [structure.md](../../../xot/docs/structure.md)
@@ -489,6 +494,8 @@ tests/Unit
 * [structure.md](../../../cms/docs/structure.md)
 * [structure.md](../../../cms/docs/themes/structure.md)
 * [structure.md](../../../cms/docs/components/structure.md)
+=======
+>>>>>>> 6ed19256f (.)
 * [structure.md](../../../Gdpr/docs/structure.md)
 * [structure.md](../../../Notify/docs/structure.md)
 * [structure.md](../../../Xot/docs/structure.md)
@@ -510,4 +517,7 @@ tests/Unit
 - Tutti i comandi console sono autoregistrati tramite la struttura di XotBaseServiceProvider.
 - Non aggiungere mai manualmente $this->commands([...]) nei provider.
 - Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md)
+<<<<<<< HEAD
 - Perché? Vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./philosophy.md)
+=======
+>>>>>>> 6ed19256f (.)

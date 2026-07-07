@@ -514,6 +514,7 @@ $batch = Bus::batch([
 **PHPStan Level:** 10 ✅
 **Test Coverage:** 85% 🔄
 **HTML2PDF Integration:** ✅
+<<<<<<< HEAD
 ---
 title: "Job Module Documentation"
 type: documentation
@@ -568,3 +569,5 @@ Job\Services\QueueManager
 
 - [Queue Config](./queue/)
 - [Failed Jobs](./failed/)
+=======
+>>>>>>> 6ed19256f (.)

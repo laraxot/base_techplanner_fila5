@@ -32,14 +32,20 @@ return [
             'placeholder' => 'test',
             'helper_text' => 'test',
             'description' => 'test',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'test_date' => [
             'label' => 'test_date',
             'placeholder' => 'test_date',
             'helper_text' => 'test_date',
             'description' => 'test_date',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -59,6 +65,7 @@ return [
             'label' => 'request',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -68,4 +75,6 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

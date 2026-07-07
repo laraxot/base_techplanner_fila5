@@ -1,7 +1,12 @@
 # Componenti Form Riutilizzabili - Notify Module
 
+<<<<<<< HEAD
 **Data**: 19 Dicembre 2025  
 **Stato**: ✅ Implementato  
+=======
+**Data**: 19 Dicembre 2025
+**Stato**: ✅ Implementato
+>>>>>>> 6ed19256f (.)
 **Motivazione**: DRY, Riutilizzabilità, Manutenibilità
 
 ## 🎯 Obiettivo
@@ -303,5 +308,10 @@ Lo schema deve sempre avere chiavi string per conformità Filament:
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: 19 Dicembre 2025  
 **Filosofia**: *"Define once, reuse everywhere - DRY over duplication, simplicity over complexity"*
+=======
+**Ultimo aggiornamento**: 19 Dicembre 2025
+**Filosofia**: *"Define once, reuse everywhere - DRY over duplication, simplicity over complexity"*
+>>>>>>> 6ed19256f (.)

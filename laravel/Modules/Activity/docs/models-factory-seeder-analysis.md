@@ -67,4 +67,8 @@ Il modulo Activity è completamente configurato con tutte le factory necessarie 
 
 ---
 *Ultimo aggiornamento: 2025-01-06*
+<<<<<<< HEAD
 *Analizzato da: Sistema di analisi automatica moduli*
+=======
+*Analizzato da: Sistema di analisi automatica moduli*
+>>>>>>> 6ed19256f (.)

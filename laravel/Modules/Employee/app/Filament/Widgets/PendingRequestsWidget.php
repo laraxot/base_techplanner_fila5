@@ -5,7 +5,11 @@ declare(strict_types=1);
 namespace Modules\Employee\Filament\Widgets;
 
 use Filament\Schemas\Components\Component;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+=======
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
+>>>>>>> 6ed19256f (.)
 use Override;
 
 /**
@@ -14,7 +18,11 @@ use Override;
  * Displays pending approval requests for the current employee
  * with status tracking and illustrations for empty states.
  */
+<<<<<<< HEAD
 class PendingRequestsWidget extends XotBaseSchemaWidget
+=======
+class PendingRequestsWidget extends XotBaseWidget
+>>>>>>> 6ed19256f (.)
 {
     protected string $view = 'employee::filament.widgets.pending-requests-widget';
 

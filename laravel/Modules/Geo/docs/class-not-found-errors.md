@@ -192,7 +192,10 @@ Mantenere un log delle classi rimosse/rinominate:
 ## Changelog Classi
 
 ### 2025-07-31
+<<<<<<< HEAD
 ### [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 - `Modules\Fixcity\Models\Profile` → `Modules\User\Models\User`
 - Motivo: Consolidamento moduli utente
 ```
@@ -259,6 +262,7 @@ Includere controlli PHPStan nella pipeline:
 - [Employee PHPStan Covariance](../../Employee/project_docs/phpstan_covariance_issues.md)
 
 *Ultimo aggiornamento: 2025-07-31*
+<<<<<<< HEAD
 - [Modules/Geo/project_docs/README.md](./readme.md)
 
 ## Backlink
@@ -266,3 +270,5 @@ Includere controlli PHPStan nella pipeline:
 - [Root PHPStan Rules](../../../../docs/project/phpstan_rules.md)
 - [Geo Module Structure](./structure.md)
 - [Employee PHPStan Covariance](../../employee/project_docs/phpstan_covariance_issues.md)
+=======
+>>>>>>> 6ed19256f (.)

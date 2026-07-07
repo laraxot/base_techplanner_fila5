@@ -387,7 +387,10 @@ test('ListLogActivities has route method', function () {
 ### Documentazione Correlata
 - [XotBase Architecture Complete](../xotbase-architecture-complete.md)
 - [Activity - Route Method Error](../../Activity/docs/errori/route-method-does-not-exist.md)
+<<<<<<< HEAD
 - [Activity - Route Method Error](../../activity/docs/errori/route-method-does-not-exist.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Mai Estendere Filament Direttamente](../errori-critici/mai-estendere-filament-direttamente.md)
 
 ### Classi Base
@@ -399,4 +402,8 @@ test('ListLogActivities has route method', function () {
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **Importanza**: CRITICA
 **Categoria**: Architettura Filament 4
+<<<<<<< HEAD
 **Pattern**: DRY + KISS con type safety
+=======
+**Pattern**: DRY + KISS con type safety
+>>>>>>> 6ed19256f (.)

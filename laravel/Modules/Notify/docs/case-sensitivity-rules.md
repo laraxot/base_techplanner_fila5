@@ -5,7 +5,10 @@
 **NON possono esistere file con lo stesso nome che differiscono solo per maiuscole/minuscole nella stessa directory.**
 
 Riferimento completo: [Xot Module Case Sensitivity Rules](../../Xot/docs/case-sensitivity-rules.md)
+<<<<<<< HEAD
 Riferimento completo: [Xot Module Case Sensitivity Rules](../../Xot/docs/case-sensitivity-rules.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## File/Directory Rimossi da Notify Module
 
@@ -103,8 +106,15 @@ Questa convenzione migliora la leggibilità e mantiene la coerenza con le conven
 ## Update Log
 
 - **2025-11-04**: Major cleanup
+<<<<<<< HEAD
 - **2025-11-04**: Major cleanup
   - Removed 14 duplicate blade templates (ark, minty, sunny, widgets)
   - Removed 2 duplicate test files
   - Removed Config/ directory and duplicate config files
   - Removed duplicate .php-cs-fixer file
+=======
+  - Removed 14 duplicate blade templates (ark, minty, sunny, widgets)
+  - Removed 2 duplicate test files
+  - Removed Config/ directory and duplicate config files
+  - Removed duplicate .php-cs-fixer file
+>>>>>>> 6ed19256f (.)

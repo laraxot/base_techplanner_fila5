@@ -16,8 +16,12 @@ Questo documento descrive le best practices per la creazione e gestione di email
 ### 2. Branding Coerente
 
 - **Elementi visuali**: Utilizzare logo, colori e font
+<<<<<<< HEAD
 - **Elementi visuali**: Utilizzare logo, colori e font <nome progetto>
 - **Elementi visuali**: Utilizzare logo, colori e font Quaeris
+=======
+- **Elementi visuali**: Utilizzare logo, colori e font SaluteOra
+>>>>>>> 6ed19256f (.)
 - **Voce e tono**: Mantenere un tono professionale ma amichevole
 - **Firma coerente**: Includere sempre lo stesso formato di firma e disclaimer
 
@@ -51,7 +55,10 @@ Questo documento descrive le best practices per la creazione e gestione di email
 - Supportare lingue RTL quando necessario
 
 ## Template e Layout
+<<<<<<< HEAD
 ## Template e Layout 
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Utilizzo di MailPace Templates
 
@@ -64,10 +71,16 @@ I template di [mailpace/templates](https://github.com/mailpace/templates) integr
 
 ### Directory `mail-layouts`
 
+<<<<<<< HEAD
 La directory `Modules/Notify/resources/mail-layouts/` contiene:
 La directory `Modules/Notify/resources/mail-layouts/` contiene:
 La directory `Modules/Notify/resources/mail-layouts/` contiene:
 La directory `/var/www/html/Quaeris/laravel/Modules/Notify/resources/mail-layouts/` contiene:
+=======
+La directory `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/resources/mail-layouts/` contiene:
+La directory `/var/www/html/saluteora/laravel/Modules/Notify/resources/mail-layouts/` contiene:
+La directory `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/resources/mail-layouts/` contiene:
+>>>>>>> 6ed19256f (.)
 
 - **default.html**: Template base per la maggior parte delle comunicazioni
 - **main.html**: Alternativa minimalista
@@ -77,8 +90,12 @@ La directory `/var/www/html/Quaeris/laravel/Modules/Notify/resources/mail-layout
 ### Integrazione con Spatie Mail Templates
 
 Seguendo le regole di progetto , ricordare di:
+<<<<<<< HEAD
 Seguendo le regole di progetto <nome progetto>, ricordare di:
 Seguendo le regole di progetto Quaeris, ricordare di:
+=======
+Seguendo le regole di progetto SaluteOra, ricordare di:
+>>>>>>> 6ed19256f (.)
 
 - NON creare controller personalizzati per gestire l'invio di email
 - Utilizzare il package `spatie/laravel-mail-templates`
@@ -122,10 +139,13 @@ $mailTemplate->send($user->email, [
 
 ## Riferimenti
 
+<<<<<<< HEAD
 - [Guida Layout Email](../mail_layouts_guide.md)
 - [Integrazione MailPace](./mailpace_templates_integration.md)
 - [HTML Email Compatibility](./html_email_compatibility.md)
 - [Spatie Email Usage Guide](../spatie_email_usage_guide.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Guida Layout Email](../MAIL_LAYOUTS_GUIDE.md)
 - [Integrazione MailPace](./MAILPACE_TEMPLATES_INTEGRATION.md)
 - [HTML Email Compatibility](./HTML_EMAIL_COMPATIBILITY.md)
@@ -193,7 +213,11 @@ I template di [mailpace/templates](https://github.com/mailpace/templates) integr
 
 ### Directory `mail-layouts`
 
+<<<<<<< HEAD
 La directory `Modules/Notify/resources/mail-layouts/` contiene:
+=======
+La directory `/var/www/html/<directory progetto>/laravel/Modules/Notify/resources/mail-layouts/` contiene:
+>>>>>>> 6ed19256f (.)
 
 - **default.html**: Template base per la maggior parte delle comunicazioni
 - **main.html**: Alternativa minimalista
@@ -249,4 +273,8 @@ $mailTemplate->send($user->email, [
 - [Guida Layout Email](../MAIL_LAYOUTS_GUIDE.md)
 - [Integrazione MailPace](./MAILPACE_TEMPLATES_INTEGRATION.md)
 - [HTML Email Compatibility](./HTML_EMAIL_COMPATIBILITY.md)
+<<<<<<< HEAD
 - [Spatie Email Usage Guide](../SPATIE_EMAIL_USAGE_GUIDE.md)
+=======
+- [Spatie Email Usage Guide](../SPATIE_EMAIL_USAGE_GUIDE.md)
+>>>>>>> 6ed19256f (.)

@@ -87,6 +87,7 @@ php docs/helper-text-audit-script.php
 - ✅ Script di audit automatico creato per controlli futuri
 
 ### Collegamenti Bidirezionali
+<<<<<<< HEAD
 - [Documentazione Centrale Traduzioni](../../../../docs/translation-field-structure-complete.md)
 - [Script Audit Helper Text](../../../../docs/helper-text-audit-script.php)
 - [Memoria Regola Critica](../../../../docs/translation-refactor-complete-summary-2025-08-08.md)
@@ -232,6 +233,8 @@ php docs/helper-text-audit-script.php
 - ✅ Script di audit automatico creato per controlli futuri
 
 ### Collegamenti Bidirezionali
+=======
+>>>>>>> 6ed19256f (.)
 - [Documentazione Centrale Traduzioni](../../../docs/translation-field-structure-complete.md)
 - [Script Audit Helper Text](../../../docs/helper-text-audit-script.php)
 - [Memoria Regola Critica](../../../docs/translation-refactor-complete-summary-2025-08-08.md)
@@ -283,7 +286,11 @@ Assicurarsi che tutti i membri del team conoscano e applichino questa regola cri
 **Status**: ✅ COMPLETATO
 **Validazione**: ✅ SUPERATA
 **Conformità**: ✅ REGOLA APPLICATA
+<<<<<<< HEAD
 **Status**: ✅ COMPLETATO  
 **Validazione**: ✅ SUPERATA  
 **Conformità**: ✅ REGOLA APPLICATA  
 **Documentazione**: ✅ AGGIORNATA
+=======
+**Documentazione**: ✅ AGGIORNATA
+>>>>>>> 6ed19256f (.)

@@ -6,7 +6,11 @@ la classe `XotBasePage` è una classe base astratta per tutte le pagine filament
 ## struttura
 la classe `XotBasePage` estende `Filament\Pages\Page` e si trova in:
 ```
+<<<<<<< HEAD
 Modules/Xot/app/Filament/Pages/XotBasePage.php
+=======
+/var/www/html/base_<nome progetto>/laravel/Modules/Xot/app/Filament/Pages/XotBasePage.php
+>>>>>>> 6ed19256f (.)
 ```
 
 ## namespace
@@ -172,9 +176,18 @@ class DashboardSettingsPolicy
 - wizard personalizzati
 
 ## collegamento ad altre documentazioni
+<<<<<<< HEAD
 - [pattern di estensione filament](../xot/docs/filament_extension_pattern.md)
 - [best practices filament](../<nome progetto>/docs/filament-best-practices.md)
 
 ## ATTENZIONE: errori critici da evitare
 - NON dichiarare mai abstract getFormSchema() in XotBasePage: la classe base Filament lo implementa già. Fornire sempre una implementazione di default (array vuoto).
 - Se serve uno schema custom, sovrascrivere il metodo nella classe figlia.
+=======
+- [pattern di estensione filament](/var/www/html/base_<nome progetto>/laravel/Modules/Xot/docs/filament_extension_pattern.md)
+- [best practices filament](/var/www/html/base_<nome progetto>/laravel/Modules/<nome progetto>/docs/filament-best-practices.md)
+
+## ATTENZIONE: errori critici da evitare
+- NON dichiarare mai abstract getFormSchema() in XotBasePage: la classe base Filament lo implementa già. Fornire sempre una implementazione di default (array vuoto).
+- Se serve uno schema custom, sovrascrivere il metodo nella classe figlia.
+>>>>>>> 6ed19256f (.)

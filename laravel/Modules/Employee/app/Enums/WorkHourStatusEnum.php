@@ -33,6 +33,7 @@ enum WorkHourStatusEnum: string
             self::CANCELLED => 'Cancelled',
         };
     }
+<<<<<<< HEAD
 
     public function getColor(): string
     {
@@ -43,4 +44,6 @@ enum WorkHourStatusEnum: string
             self::CANCELLED => 'gray',
         };
     }
+=======
+>>>>>>> 6ed19256f (.)
 }

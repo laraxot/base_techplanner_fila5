@@ -105,8 +105,11 @@ Durante l'audit delle traduzioni del modulo User, sono state identificate traduz
 
 - [Documentazione Modulo User](../README.md)
 - [Best Practices Traduzioni](../../Lang/docs/translation_standards.md)
+<<<<<<< HEAD
 - [Documentazione Modulo User](../readme.md)
 - [Best Practices Traduzioni](../../lang/docs/translation_standards.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Sicurezza Password](../security/password_policies.md)
 
 ## Note per il Futuro
@@ -118,4 +121,8 @@ Durante l'audit delle traduzioni del modulo User, sono state identificate traduz
 
 ---
 *Ultimo aggiornamento: 2025-01-06*
+<<<<<<< HEAD
 *Autore: Sistema di Audit Traduzioni*
+=======
+*Autore: Sistema di Audit Traduzioni*
+>>>>>>> 6ed19256f (.)

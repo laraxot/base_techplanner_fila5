@@ -8,6 +8,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Datas;
 
+<<<<<<< HEAD
+=======
+use Exception;
+>>>>>>> 6ed19256f (.)
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
@@ -148,12 +152,20 @@ class PdfData extends Data
     }
 
     /**
+<<<<<<< HEAD
      * @param array<string, mixed> $params
+=======
+     * @param  array<string, mixed>  $params
+>>>>>>> 6ed19256f (.)
      */
     public function view(string $view, array $params = []): self
     {
         if (! view()->exists($view)) {
+<<<<<<< HEAD
             throw new \Exception('View '.$view.' not found');
+=======
+            throw new Exception('View '.$view.' not found');
+>>>>>>> 6ed19256f (.)
         }
         $out = view($view, $params);
         $this->html = $out->render();

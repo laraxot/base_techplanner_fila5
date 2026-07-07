@@ -20,10 +20,16 @@ Questo assicura che qualsiasi client possa utilizzare qualsiasi provider senza m
 ### 2. Posizione delle Azioni
 
 Le azioni specifiche dei provider SMS si trovano nella directory:
+<<<<<<< HEAD
 - `Modules/Notify/app/Actions/SMS/`
 - `Modules/Notify/app/Actions/SMS/`
 - `Modules/Notify/app/Actions/SMS/`
 - `/var/www/html/Quaeris/laravel/Modules/Notify/app/Actions/SMS/`
+=======
+- `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Actions/SMS/`
+- `/var/www/html/saluteora/laravel/Modules/Notify/app/Actions/SMS/`
+- `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Actions/SMS/`
+>>>>>>> 6ed19256f (.)
 
 ### 3. Convenzioni di Nomenclatura
 
@@ -135,7 +141,11 @@ Questo assicura che qualsiasi client possa utilizzare qualsiasi provider senza m
 ### 2. Posizione delle Azioni
 
 Le azioni specifiche dei provider SMS si trovano nella directory:
+<<<<<<< HEAD
 - `Modules/Notify/app/Actions/SMS/`
+=======
+- `/var/www/html/<directory progetto>/laravel/Modules/Notify/app/Actions/SMS/`
+>>>>>>> 6ed19256f (.)
 
 ### 3. Convenzioni di Nomenclatura
 
@@ -224,4 +234,8 @@ Tutte le azioni devono gestire correttamente gli errori:
 
 1. Log appropriati degli errori
 2. Lancio di eccezioni in caso di errori critici
+<<<<<<< HEAD
 3. Restituzione di un array con `'success' => false` in caso di errori non critici
+=======
+3. Restituzione di un array con `'success' => false` in caso di errori non critici
+>>>>>>> 6ed19256f (.)

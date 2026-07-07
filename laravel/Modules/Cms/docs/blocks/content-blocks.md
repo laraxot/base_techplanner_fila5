@@ -203,5 +203,8 @@ class SocialBlock extends Block
 - [Gestione Contenuti](../content-storage.md)
 - [Best Practices UI](../../UI/docs/best-practices.md)
 - [Documentazione Blocchi](../../Xot/docs/blocks.md)
+<<<<<<< HEAD
 - [Best Practices UI](../../ui/docs/best-practices.md)
 - [Documentazione Blocchi](../../xot/docs/blocks.md)
+=======
+>>>>>>> 6ed19256f (.)

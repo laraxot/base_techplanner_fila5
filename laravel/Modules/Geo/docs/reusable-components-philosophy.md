@@ -105,4 +105,8 @@ L'AddressColumn risiede in Geo perché la sua anima è la logica degli indirizzi
 
 ## Conclusione
 
+<<<<<<< HEAD
 Seguendo questa filosofia, manteniamo un'architettura pulita, manutenibile e scalabile dove ogni modulo ha le sue responsabilità chiare e i componenti riutilizzabili sono centralizzati dove la loro logica appartiene.
+=======
+Seguendo questa filosofia, manteniamo un'architettura pulita, manutenibile e scalabile dove ogni modulo ha le sue responsabilità chiare e i componenti riutilizzabili sono centralizzati dove la loro logica appartiene.
+>>>>>>> 6ed19256f (.)

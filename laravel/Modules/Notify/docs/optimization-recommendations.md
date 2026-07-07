@@ -222,8 +222,12 @@ php artisan notify:benchmark
 ## Collegamenti
 
 - [Linee Guida Riusabilità](reusability_guidelines.md)
+<<<<<<< HEAD
 *Ultimo aggiornamento: gennaio 2025*
 - [Piano Implementazione](../../../../docs/module_reusability_implementation_plan.md)
+=======
+- [Piano Implementazione](../../../docs/module_reusability_implementation_plan.md)
+>>>>>>> 6ed19256f (.)
 - [Script Controllo](../../../bashscripts/check_module_reusability.sh)
 
 *Ultimo aggiornamento: gennaio 2025*
@@ -235,7 +239,11 @@ php artisan notify:benchmark
 
 #### 1. Riusabilità Compromessa
 - **336+ occorrenze hardcoded** di "<nome progetto>" in test e documentazione
+<<<<<<< HEAD
 - **336+ occorrenze hardcoded** di "<nome progetto>" in test e documentazione
+=======
+- **336+ occorrenze hardcoded** di "saluteora" in test e documentazione
+>>>>>>> 6ed19256f (.)
 - **Import diretti** da moduli project-specific
 - **Configurazioni database** hardcoded nei test
 - **Email domains** hardcoded nei test
@@ -250,13 +258,21 @@ php artisan notify:benchmark
 - Test che utilizzano `User::factory()` invece di `XotData::make()->getUserClass()`
 - Configurazioni database hardcoded
 - Riferimenti diretti a modelli <nome progetto>
+<<<<<<< HEAD
 - Riferimenti diretti a modelli <nome progetto>
+=======
+- Riferimenti diretti a modelli SaluteOra
+>>>>>>> 6ed19256f (.)
 
 ## ✅ OTTIMIZZAZIONI IMPLEMENTATE
 
 ### Riusabilità
 1. **NotificationManagementBusinessLogicTest.php**: Rimosso hardcoding "<nome progetto>"
+<<<<<<< HEAD
 1. **NotificationManagementBusinessLogicTest.php**: Rimosso hardcoding "<nome progetto>"
+=======
+1. **NotificationManagementBusinessLogicTest.php**: Rimosso hardcoding "SaluteOra"
+>>>>>>> 6ed19256f (.)
 2. **NotifyThemeableFactory.php**: Implementato `getProjectNamespace()` dinamico
 3. **File di traduzione**: Aggiornati placeholder con `{{app_name}}`
 4. **Documentazione base**: Creata guida riusabilità
@@ -271,7 +287,11 @@ php artisan notify:benchmark
 // ❌ PRIMA
 $user = User::factory()->create();
 'database' => '<nome progetto>_test'
+<<<<<<< HEAD
 'database' => '<nome progetto>_test'
+=======
+'database' => 'saluteora_test'
+>>>>>>> 6ed19256f (.)
 
 // ✅ DOPO
 $userClass = XotData::make()->getUserClass();
@@ -455,8 +475,15 @@ php artisan notify:benchmark
 ## Collegamenti
 
 - [Linee Guida Riusabilità](reusability_guidelines.md)
+<<<<<<< HEAD
 *Ultimo aggiornamento: gennaio 2025*
 - [Piano Implementazione](../../../../docs/module_reusability_implementation_plan.md)
 - [Script Controllo](../../../bashscripts/check_module_reusability.sh)
 
 *Ultimo aggiornamento: gennaio 2025*
+=======
+- [Piano Implementazione](../../../docs/module_reusability_implementation_plan.md)
+- [Script Controllo](../../../bashscripts/check_module_reusability.sh)
+
+*Ultimo aggiornamento: gennaio 2025*
+>>>>>>> 6ed19256f (.)

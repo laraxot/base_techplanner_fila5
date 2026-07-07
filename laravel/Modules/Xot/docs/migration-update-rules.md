@@ -3,7 +3,10 @@
 ## Collegamento bidirezionale
 - Questo file è collegato a casi specifici documentati nei moduli, ad esempio:
   [Modules/Performance/docs/organizzativa-migration-errors.md](../../Performance/docs/organizzativa-migration-errors.md)
+<<<<<<< HEAD
   [Modules/Performance/docs/organizzativa-migration-errors.md](../../performance/docs/organizzativa-migration-errors.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Caso pratico: Performance
 - Per l’errore su `valutatore_id` in `performance_organizzativa`, vedere la documentazione dettagliata nel modulo Performance.
@@ -21,4 +24,8 @@
 - Aggiornare la documentazione di ogni intervento strutturale.
 
 ## Note
+<<<<<<< HEAD
 - Per casi specifici e casistiche di errore consultare la documentazione dei singoli moduli (es. Performance).
+=======
+- Per casi specifici e casistiche di errore consultare la documentazione dei singoli moduli (es. Performance).
+>>>>>>> 6ed19256f (.)

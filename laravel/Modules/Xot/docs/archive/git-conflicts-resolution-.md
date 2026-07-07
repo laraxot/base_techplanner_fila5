@@ -125,6 +125,7 @@ php artisan lang:check
 ## Documentazione Aggiornata
 
 ### Modulo Geo
+<<<<<<< HEAD
 - [Conflict Resolution](laravel/modules/geo/docs/conflict-resolution.md)
 
 ### Modulo User
@@ -132,6 +133,8 @@ php artisan lang:check
 
 ### Modulo Xot
 - [Git Conflicts Resolution](laravel/modules/xot/docs/git-conflicts-resolution-2025-01-06.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Conflict Resolution](laravel/Modules/Geo/docs/conflict-resolution.md)
 
 ### Modulo User
@@ -200,6 +203,7 @@ php artisan lang:check
 - [Translation Standards](../../docs/translation-standards.md)
 - [PHPStan Guidelines](../../docs/phpstan_usage.md)
 - [Git Best Practices](../../docs/git-best-practices.md)
+<<<<<<< HEAD
 - [Geo Conflict Resolution](laravel/modules/geo/docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/modules/user/docs/theme-translation-conflicts-resolution.md)
 
@@ -207,6 +211,8 @@ php artisan lang:check
 - [Translation Standards](../../../docs/translation-standards.md)
 - [PHPStan Guidelines](../../../docs/phpstan_usage.md)
 - [Git Best Practices](../../../docs/git-best-practices.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ---
 
@@ -218,7 +224,11 @@ php artisan lang:check
 ## Data: 2025-01-06
 
 ## Contesto
+<<<<<<< HEAD
 Sono stati identificati e risolti conflitti Git in diversi file del progetto <nome progetto>, coinvolgendo moduli Geo, User e tema Two.
+=======
+Sono stati identificati e risolti conflitti Git in diversi file del progetto SaluteOra, coinvolgendo moduli Geo, User e tema Two.
+>>>>>>> 6ed19256f (.)
 
 ## File Corretti
 
@@ -340,6 +350,7 @@ php artisan lang:check
 ## Documentazione Aggiornata
 
 ### Modulo Geo
+<<<<<<< HEAD
 - [Conflict Resolution](laravel/modules/geo/docs/conflict-resolution.md)
 
 ### Modulo User
@@ -347,6 +358,8 @@ php artisan lang:check
 
 ### Modulo Xot
 - [Git Conflicts Resolution](laravel/modules/xot/docs/git-conflicts-resolution-2025-01-06.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Conflict Resolution](laravel/Modules/Geo/docs/conflict-resolution.md)
 
 ### Modulo User
@@ -415,6 +428,7 @@ php artisan lang:check
 - [Translation Standards](../../docs/translation-standards.md)
 - [PHPStan Guidelines](../../docs/phpstan_usage.md)
 - [Git Best Practices](../../docs/git-best-practices.md)
+<<<<<<< HEAD
 - [Geo Conflict Resolution](laravel/modules/geo/docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/modules/user/docs/theme-translation-conflicts-resolution.md)
 
@@ -422,9 +436,15 @@ php artisan lang:check
 - [Translation Standards](../../../docs/translation-standards.md)
 - [PHPStan Guidelines](../../../docs/phpstan_usage.md)
 - [Git Best Practices](../../../docs/git-best-practices.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ---
 
 **Ultimo aggiornamento**: 2025-01-06
 **Autore**: Sistema di correzione automatica
+<<<<<<< HEAD
 **Stato**: ✅ Completato
+=======
+**Stato**: ✅ Completato
+>>>>>>> 6ed19256f (.)

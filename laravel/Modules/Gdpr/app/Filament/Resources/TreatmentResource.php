@@ -12,12 +12,20 @@ use Modules\Gdpr\Filament\Resources\TreatmentResource\Pages\EditTreatment;
 use Modules\Gdpr\Filament\Resources\TreatmentResource\Pages\ListTreatments;
 use Modules\Gdpr\Models\Treatment;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+<<<<<<< HEAD
+=======
+use Override;
+>>>>>>> 6ed19256f (.)
 
 class TreatmentResource extends XotBaseResource
 {
     protected static ?string $model = Treatment::class;
 
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> 6ed19256f (.)
     public static function getFormSchema(): array
     {
         return [
@@ -31,7 +39,11 @@ class TreatmentResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> 6ed19256f (.)
     public static function getPages(): array
     {
         return [

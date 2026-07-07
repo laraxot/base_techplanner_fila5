@@ -175,5 +175,8 @@ class HeaderBlock extends Block
 - [Gestione Navigazione](../navigation.md)
 - [Best Practices UI](../../UI/docs/best-practices.md)
 - [Accessibilità](../../UI/docs/accessibility.md)
+<<<<<<< HEAD
 - [Best Practices UI](../../ui/docs/best-practices.md)
 - [Accessibilità](../../ui/docs/accessibility.md)
+=======
+>>>>>>> 6ed19256f (.)

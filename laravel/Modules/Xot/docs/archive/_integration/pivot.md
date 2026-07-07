@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 6ed19256f (.)
 # _pivot
 
 <!-- Contenuto migrato da _docs/_pivot.txt -->

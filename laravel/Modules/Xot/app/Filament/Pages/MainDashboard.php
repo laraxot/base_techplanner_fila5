@@ -15,7 +15,11 @@ use Webmozart\Assert\Assert;
  */
 class MainDashboard extends XotBaseDashboard
 {
+<<<<<<< HEAD
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-home';
+=======
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-home';
+>>>>>>> 6ed19256f (.)
 
     protected string $view = 'xot::filament.pages.dashboard';
 
@@ -41,14 +45,22 @@ class MainDashboard extends XotBaseDashboard
         // Usa roles() come metodo invece della magic property per type safety
         $modules = $user->getModules();
 
+<<<<<<< HEAD
         if (0 === count($modules)) {
+=======
+        if (count($modules) === 0) {
+>>>>>>> 6ed19256f (.)
             $url = '/'.app()->getLocale();
             redirect($url);
 
             return;
         }
 
+<<<<<<< HEAD
         if (1 === count($modules)) {
+=======
+        if (count($modules) === 1) {
+>>>>>>> 6ed19256f (.)
             $module_first = Arr::first($modules);
             Assert::isInstanceOf($module_first, Module::class);
             $module_name = $module_first->getLowerName();

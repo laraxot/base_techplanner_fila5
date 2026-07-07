@@ -63,12 +63,20 @@ Il modulo Xot definisce le **linee guida strategiche** per l'approccio al testin
 uses(Tests\TestCase::class);
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
+<<<<<<< HEAD
 // ✅ Fast, isolated, <nome progetto>able
+=======
+// ✅ Fast, isolated, predictable
+>>>>>>> 6ed19256f (.)
 test('user registration with mock data', function () {
     // Database reset every test
     $user = User::factory()->create();
 
+<<<<<<< HEAD
     expect($user->id)->toBe(1); // Always <nome progetto>able
+=======
+    expect($user->id)->toBe(1); // Always predictable
+>>>>>>> 6ed19256f (.)
 
     // Data destroyed after test
 });
@@ -78,7 +86,11 @@ test('user registration with mock data', function () {
 - ⚡ **Speed**: 10x faster execution
 - 🎯 **Isolation**: Perfect test independence
 - 🛠️ **Simplicity**: Easy setup and maintenance
+<<<<<<< HEAD
 - 🐛 **Debugging**: Clear, <nome progetto>able outcomes
+=======
+- 🐛 **Debugging**: Clear, predictable outcomes
+>>>>>>> 6ed19256f (.)
 
 **Disadvantages (Mock)**:
 - 🎭 **Unrealistic**: Doesn't reflect production
@@ -191,7 +203,11 @@ test('complete tax filing process', function () {
 
 ## 🏢 Domain-Specific Recommendations
 
+<<<<<<< HEAD
 ### Healthcare Domain (<nome progetto>) - **Real Data Preferred**
+=======
+### Healthcare Domain (SaluteOra) - **Real Data Preferred**
+>>>>>>> 6ed19256f (.)
 
 **Rationale**:
 - **Regulatory Compliance**: GDPR, medical data validation
@@ -372,7 +388,11 @@ test('legacy feature with mocks', function () {
 
 ### Final Recommendation
 
+<<<<<<< HEAD
 **For <nome progetto> Healthcare Domain**:
+=======
+**For SaluteOra Healthcare Domain**:
+>>>>>>> 6ed19256f (.)
 ✅ **Real Data Testing (80%) + Mock Testing (20%)**
 
 **Rationale**:
@@ -386,4 +406,8 @@ test('legacy feature with mocks', function () {
 **Strategic Analysis Date**: Gennaio 2025
 **Review Cycle**: Quarterly assessment
 **Decision Authority**: Technical Architecture Committee
+<<<<<<< HEAD
 **Implementation Timeline**: 4-week migration
+=======
+**Implementation Timeline**: 4-week migration
+>>>>>>> 6ed19256f (.)

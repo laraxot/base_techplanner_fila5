@@ -17,9 +17,15 @@ Le interfacce devono sempre essere collocate nella directory `/app/Contracts/`, 
 ### Corretta Organizzazione delle Interfacce
 
 ```
+<<<<<<< HEAD
 Modules/Notify/app/Contracts/
 Modules/Notify/app/Contracts/
 Modules/Notify/app/Contracts/
+=======
+/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Contracts/
+/var/www/html/saluteora/laravel/Modules/Notify/app/Contracts/
+/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Contracts/
+>>>>>>> 6ed19256f (.)
 ├── SmsProviderActionInterface.php   ✅ CORRETTO
 ├── NotificationChannelInterface.php ✅ CORRETTO
 └── ...
@@ -28,9 +34,15 @@ Modules/Notify/app/Contracts/
 ### Errori da Evitare
 
 ```
+<<<<<<< HEAD
 Modules/Notify/app/Actions/SMS/
 Modules/Notify/app/Actions/SMS/
 Modules/Notify/app/Actions/SMS/
+=======
+/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Actions/SMS/
+/var/www/html/saluteora/laravel/Modules/Notify/app/Actions/SMS/
+/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Actions/SMS/
+>>>>>>> 6ed19256f (.)
 ├── SmsActionInterface.php           ❌ ERRATO
 └── ...
 ```
@@ -100,7 +112,11 @@ Le interfacce devono sempre essere collocate nella directory `/app/Contracts/`, 
 ### Corretta Organizzazione delle Interfacce
 
 ```
+<<<<<<< HEAD
 Modules/Notify/app/Contracts/
+=======
+/var/www/html/<directory progetto>/laravel/Modules/Notify/app/Contracts/
+>>>>>>> 6ed19256f (.)
 ├── SmsProviderActionInterface.php   ✅ CORRETTO
 ├── NotificationChannelInterface.php ✅ CORRETTO
 └── ...
@@ -109,7 +125,11 @@ Modules/Notify/app/Contracts/
 ### Errori da Evitare
 
 ```
+<<<<<<< HEAD
 Modules/Notify/app/Actions/SMS/
+=======
+/var/www/html/<directory progetto>/laravel/Modules/Notify/app/Actions/SMS/
+>>>>>>> 6ed19256f (.)
 ├── SmsActionInterface.php           ❌ ERRATO
 └── ...
 ```

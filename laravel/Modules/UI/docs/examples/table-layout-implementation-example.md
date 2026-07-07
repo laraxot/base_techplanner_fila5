@@ -340,5 +340,10 @@ class ListUsersTest extends TestCase
 
 - [TableLayoutEnum Documentation](../table-layout-enum-comprehensive.md)
 - [UI Module Architecture](../architecture_rules.md)
+<<<<<<< HEAD
 - [Filament Best Practices](../../../../docs/filament_best_practices.md)
 - [Translation Standards](../../../../docs/translation_standards.md)
+=======
+- [Filament Best Practices](../../../docs/filament_best_practices.md)
+- [Translation Standards](../../../docs/translation_standards.md)
+>>>>>>> 6ed19256f (.)

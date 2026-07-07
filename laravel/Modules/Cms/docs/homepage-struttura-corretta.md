@@ -8,7 +8,10 @@ Questo documento descrive in dettaglio la struttura e il contenuto corretto che 
 
 ### Titolo Principale
 "Benvenuta su <slogan>,"
+<<<<<<< HEAD
 "Benvenuta su Salute Orale,"
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Testo Principale
 Il testo principale da mostrare è:
@@ -25,7 +28,10 @@ Il pulsante deve contenere il testo: "INIZIA ORA"
 
 1. **Intestazione**:
    - Logo "<slogan>" (con la "O" stilizzata)
+<<<<<<< HEAD
    - Logo "Salute Orale" (con la "O" stilizzata) 
+=======
+>>>>>>> 6ed19256f (.)
    - Selettore lingua (IT/EN)
 
 2. **Sezione Centrale**:
@@ -75,4 +81,7 @@ Per verificare che l'implementazione sia corretta:
 4. Non rispettare gli accordi con i partner del progetto
 
 Questo documento serve come riferimento definitivo per il contenuto dell'homepage e deve essere consultato prima di qualsiasi modifica all'interfaccia utente del portale il progetto.
+<<<<<<< HEAD
 Questo documento serve come riferimento definitivo per il contenuto dell'homepage e deve essere consultato prima di qualsiasi modifica all'interfaccia utente del portale il progetto. 
+=======
+>>>>>>> 6ed19256f (.)

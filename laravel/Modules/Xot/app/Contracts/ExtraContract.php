@@ -23,9 +23,15 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static Builder|ExtraContract query()
  * @method static Builder|ExtraContract withExtraAttributes()
  *
+<<<<<<< HEAD
  * @property int         $id
  * @property string      $model_type
  * @property string      $model_id
+=======
+ * @property int $id
+ * @property string $model_type
+ * @property string $model_id
+>>>>>>> 6ed19256f (.)
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by

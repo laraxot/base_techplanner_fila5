@@ -87,7 +87,11 @@ Modules/{ModuleName}/
 
 ### 1. **Autoloader Confusion**
 - PHP autoloader cannot determine which file to use
+<<<<<<< HEAD
 - "First found" approach leads to un<nome progetto>able behavior
+=======
+- "First found" approach leads to unpredictable behavior
+>>>>>>> 6ed19256f (.)
 - Different environments may load different files
 
 ### 2. **Maintenance Nightmare**
@@ -167,8 +171,12 @@ Modules/
 │   │   ├── migrations/
 │   │   └── seeders/
 │   └── app/
+<<<<<<< HEAD
 └── healthcare_app/
 └── ExternalProject/
+=======
+└── Quaeris/
+>>>>>>> 6ed19256f (.)
     ├── database/
     │   ├── factories/
     │   ├── migrations/
@@ -204,4 +212,8 @@ find Modules -name "*.php" | grep -E "(factories|seeders)" | sort
 
 ---
 
+<<<<<<< HEAD
 **Philosophy Summary**: In Laraxot, consistency and <nome progetto>ability are more valuable than flexibility. Choose one file structure pattern and apply it consistently across all modules. Eliminate ambiguity to ensure reliable, <nome progetto>able behavior.
+=======
+**Philosophy Summary**: In Laraxot, consistency and predictability are more valuable than flexibility. Choose one file structure pattern and apply it consistently across all modules. Eliminate ambiguity to ensure reliable, predictable behavior.
+>>>>>>> 6ed19256f (.)

@@ -968,7 +968,10 @@ test('user can switch teams', function () {
 - **Improved**: Security alert widgets
 
 See [CHANGELOG.md](./CHANGELOG.md) for full history.
+<<<<<<< HEAD
 See [CHANGELOG.md](./changelog.md) for full history.
+=======
+>>>>>>> 6ed19256f (.)
 
 ---
 
@@ -987,13 +990,17 @@ See [CHANGELOG.md](./changelog.md) for full history.
 - Advanced audit reporting
 
 See [ROADMAP.md](./ROADMAP.md) for details.
+<<<<<<< HEAD
 See [ROADMAP.md](./roadmap.md) for details.
+=======
+>>>>>>> 6ed19256f (.)
 
 ---
 
 ## 📖 Related Documentation
 
 ### Internal Modules
+<<<<<<< HEAD
 - [Xot Module](../xot/docs/readme.md) - Core foundation
 - [Activity Module](../activity/docs/readme.md) - Activity tracking
 - [Lang Module](../lang/docs/readme.md) - Translations
@@ -1001,6 +1008,8 @@ See [ROADMAP.md](./roadmap.md) for details.
 
 ### Project Documentation
 - [CLAUDE.md](../../../claude.md) - Project architecture
+=======
+>>>>>>> 6ed19256f (.)
 - [Xot Module](../Xot/docs/README.md) - Core foundation
 - [Activity Module](../Activity/docs/README.md) - Activity tracking
 - [Lang Module](../Lang/docs/README.md) - Translations
@@ -1009,7 +1018,10 @@ See [ROADMAP.md](./roadmap.md) for details.
 ### Project Documentation
 - [CLAUDE.md](../../../CLAUDE.md) - Project architecture
 - [Security Guidelines](../../../docs/security.md)
+<<<<<<< HEAD
 - [Security Guidelines](../../../../docs/security.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ### External Resources
 - [Laravel Authentication](https://laravel.com/docs/12.x/authentication)
@@ -1025,4 +1037,8 @@ See [ROADMAP.md](./roadmap.md) for details.
 **Framework**: Laravel 12 + Filament 4
 **PHPStan**: Level 10 ✅
 **Test Coverage**: 88%+ ✅
+<<<<<<< HEAD
 **Security**: OWASP Compliant ✅
+=======
+**Security**: OWASP Compliant ✅
+>>>>>>> 6ed19256f (.)

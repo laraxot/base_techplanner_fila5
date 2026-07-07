@@ -7,9 +7,15 @@ Data: 2025-04-23 19:09:56
 - **Namespace principale**: Modules\\Notify
 Modules\\Notify\\Database\\Factories
 Modules\\Notify\\Database\\Seeders
+<<<<<<< HEAD
 - **Pacchetto Composer**: laraxot/module_notify_fila5
 Marco Sottana
 - **Dipendenze**: aws/aws-sdk-php * filament/filament * illuminate/contracts * illuminate/support * irazasyed/telegram-bot-sdk * kreait/laravel-firebase * laravel-notification-channels/fcm * laravel-notification-channels/telegram * phpdocumentor/type-resolver * symfony/http-client * symfony/postmark-mailer * repositories type path url ../Xot type path 
+=======
+- **Pacchetto Composer**: laraxot/module_notify_fila3
+Marco Sottana
+- **Dipendenze**: aws/aws-sdk-php * filament/filament * illuminate/contracts * illuminate/support * irazasyed/telegram-bot-sdk * kreait/laravel-firebase * laravel-notification-channels/fcm * laravel-notification-channels/telegram * phpdocumentor/type-resolver * symfony/http-client * symfony/postmark-mailer * repositories type path url ../Xot type path
+>>>>>>> 6ed19256f (.)
 - **Totale file PHP**: 165
 - **Totale classi/interfacce**: 73
 
@@ -431,6 +437,7 @@ tests/Unit
 - [Regola sulle rotte vuote in grapesjs-filament.md](grapesjs-filament.md#regola-sulle-rotte)
 ### Versione HEAD
 
+<<<<<<< HEAD
 
 ### Versione Incoming
 
@@ -452,6 +459,12 @@ tests/Unit
 * [structure.md](../../../cms/docs/structure.md)
 * [structure.md](../../../cms/docs/themes/structure.md)
 * [structure.md](../../../cms/docs/components/structure.md)
+=======
+### Versione Incoming
+
+## Collegamenti tra versioni di structure.md
+* [structure.md](bashscripts/docs/structure.md)
+>>>>>>> 6ed19256f (.)
 * [structure.md](../../../Gdpr/docs/structure.md)
 * [structure.md](../../../Notify/docs/structure.md)
 * [structure.md](../../../Xot/docs/structure.md)
@@ -468,5 +481,9 @@ tests/Unit
 * [structure.md](../../../Cms/docs/themes/structure.md)
 * [structure.md](../../../Cms/docs/components/structure.md)
 
+<<<<<<< HEAD
 
 ---
+=======
+---
+>>>>>>> 6ed19256f (.)

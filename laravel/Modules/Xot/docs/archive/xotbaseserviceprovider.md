@@ -104,8 +104,11 @@ class NotifyServiceProvider extends XotBaseServiceProvider
 ### Collegamenti ai Moduli
 - [Notify ServiceProvider](../../Notify/project_docs/service-provider.md)
 - [User ServiceProvider](../../User/project_docs/service-provider.md)
+<<<<<<< HEAD
 - [Notify ServiceProvider](../../notify/project_docs/service-provider.md)
 - [User ServiceProvider](../../user/project_docs/service-provider.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Note Importanti
 
@@ -116,7 +119,10 @@ class NotifyServiceProvider extends XotBaseServiceProvider
 5. Mantenere la coerenza tra i moduli
 ## Collegamenti tra versioni di XotBaseServiceProvider.md
 * [XotBaseServiceProvider.md](../../../../project_docs/moduli/xot/XotBaseServiceProvider.md)
+<<<<<<< HEAD
 * [XotBaseServiceProvider.md](../../../../project_docs/moduli/xot/xotbaseserviceprovider.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Correzione, motivazione e miglioramenti (2025-05-13)
 
@@ -133,7 +139,10 @@ class NotifyServiceProvider extends XotBaseServiceProvider
 - **Pattern di override**: ogni override deve chiamare sempre `parent::method()`. Vietato cambiare la visibilità delle proprietà/metodi ereditati.
 - **Testabilità**: usare metodi protected per facilitare il mocking nei test.
 - **Registrazione icone Blade**: seguire il pattern documentato in [registerBladeIcons.md](./registerBladeIcons.md), con fallback e validazione dei path.
+<<<<<<< HEAD
 - **Registrazione icone Blade**: seguire il pattern documentato in [registerBladeIcons.md](./registerbladeicons.md), con fallback e validazione dei path.
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Consigli di miglioramento
 - Centralizzare la gestione dei path (views, lang, svg, ecc.) in un helper o trait.
@@ -166,7 +175,10 @@ public function boot(): void
 ### Collegamenti
 - [Best practices per i provider](./service-provider-best-practices.md)
 - [Registrazione icone Blade](./registerBladeIcons.md)
+<<<<<<< HEAD
 - [Registrazione icone Blade](./registerbladeicons.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Gestione dei Path delle Traduzioni
 
@@ -201,7 +213,10 @@ Applicare la stessa regola per la registrazione delle traduzioni JSON.
 
 **Collegamento:**
 Vedi anche [registerBladeIcons.md](./registerBladeIcons.md) per la gestione centralizzata dei path.
+<<<<<<< HEAD
 Vedi anche [registerBladeIcons.md](./registerbladeicons.md) per la gestione centralizzata dei path.
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Console Commands: Religione, Politica, Filosofia, Zen
 
@@ -232,4 +247,8 @@ $this->commands([
 - [Filosofia](../../../.windsurf/rules/filosofia.mdc)
 
 ### Zen finale
+<<<<<<< HEAD
 > "Il miglior comando è quello che non devi mai registrare a mano."
+=======
+> "Il miglior comando è quello che non devi mai registrare a mano."
+>>>>>>> 6ed19256f (.)

@@ -179,7 +179,11 @@ $content = \file_get_contents($path); // Può restituire false
 
 ### 1. PHPStan Pre-Commit
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/html/_bases/base_saluteora/laravel
+>>>>>>> 6ed19256f (.)
 ./vendor/bin/phpstan analyze Modules/ModuleName --level=9
 ```
 
@@ -277,7 +281,11 @@ unset($translations['existing_key']); // MAI!
 
 **Data**: 2025-08-01
 **Versione**: 2.0
+<<<<<<< HEAD
 **Compatibilità**: Laraxot <nome progetto>, PHP 8.2+, Laravel 11+
+=======
+**Compatibilità**: Laraxot SaluteOra, PHP 8.2+, Laravel 11+
+>>>>>>> 6ed19256f (.)
 
 ---
 
@@ -351,6 +359,7 @@ This document outlines the best practices for maintaining high code quality with
 - Update this document if new tools or standards for code quality are introduced.
 
 ## Links to Related Documentation
+<<<<<<< HEAD
 - [Xot Base Classes](../xot/docs/xot_base_classes.md)
 - [Filament Extension Pattern](../../notify/docs/filament_extension_pattern.md)
 - [Filament Extension Pattern Analysis](../../notify/docs/filament_extension_pattern_analysis.md)
@@ -361,6 +370,8 @@ This document outlines the best practices for maintaining high code quality with
 - [Naming Conventions](./naming-conventions.md)
 - [Service Provider Best Practices](./service-provider-best-practices.md)
 - [Filament Best Practices](./filament-best-practices.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Xot Base Classes](../Xot/docs/XOT_BASE_CLASSES.md)
 - [Filament Extension Pattern](../../Notify/docs/FILAMENT_EXTENSION_PATTERN.md)
 - [Filament Extension Pattern Analysis](../../Notify/docs/FILAMENT_EXTENSION_PATTERN_ANALYSIS.md)
@@ -370,4 +381,8 @@ This document outlines the best practices for maintaining high code quality with
 - [PHPStan Implementation Guide](./PHPSTAN-IMPLEMENTATION-GUIDE.md)
 - [Naming Conventions](./NAMING-CONVENTIONS.md)
 - [Service Provider Best Practices](./SERVICE-PROVIDER-BEST-PRACTICES.md)
+<<<<<<< HEAD
 - [Filament Best Practices](./FILAMENT-BEST-PRACTICES.md)
+=======
+- [Filament Best Practices](./FILAMENT-BEST-PRACTICES.md)
+>>>>>>> 6ed19256f (.)

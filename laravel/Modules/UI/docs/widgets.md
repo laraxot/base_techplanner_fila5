@@ -82,4 +82,7 @@ To create a new widget:
 - Use configuration arrays for customization
 - Document all available options and their defaults
 - Follow the established naming conventions and patterns
+<<<<<<< HEAD
 https://ahmedash.dev/blog/laravel-core-bits/volt-live-users-stats/
+=======
+>>>>>>> 6ed19256f (.)

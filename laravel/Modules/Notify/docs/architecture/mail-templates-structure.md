@@ -122,15 +122,22 @@ $attachments = [
 - [Documentazione MailPace](https://github.com/mailpace/templates)
 - [Best Practices Email HTML](./EMAIL_HTML_BEST_PRACTICES.md)
 - [Guida Testing](./EMAIL_TESTING.md)
+<<<<<<< HEAD
 - [Best Practices Email HTML](./EMAIL_HTML_BEST_PRACTICES.md)
 - [Guida Testing](./EMAIL_TESTING.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Supporto
 
 Per supporto tecnico:
 - Email: support@example.com
 - Documentazione: https://docs.example.com
+<<<<<<< HEAD
 - Repository: https://github.com/organization/notify 
+=======
+- Repository: https://github.com/organization/notify
+>>>>>>> 6ed19256f (.)
 
 ## Lezioni Apprese
 
@@ -221,4 +228,8 @@ Per supporto tecnico:
 2. I path relativi sono preferibili
 3. I mime type devono essere corretti
 4. La documentazione deve essere aggiornata
+<<<<<<< HEAD
 5. I test devono essere completi 
+=======
+5. I test devono essere completi
+>>>>>>> 6ed19256f (.)

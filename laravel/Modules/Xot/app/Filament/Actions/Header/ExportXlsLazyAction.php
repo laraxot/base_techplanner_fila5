@@ -8,6 +8,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Actions\Header;
 
+<<<<<<< HEAD
+=======
+use Exception;
+>>>>>>> 6ed19256f (.)
 use Filament\Actions\Action;
 use Filament\Resources\Pages\ListRecords;
 use Modules\Xot\Actions\Export\ExportXlsByLazyCollection;
@@ -47,6 +51,12 @@ class ExportXlsLazyAction extends Action
                     $rawFields = $resource::getXlsFields($livewire->tableFilters);
                     if (is_array($rawFields)) {
                         $fields = array_map(
+<<<<<<< HEAD
+=======
+                            /**
+                             * @param  mixed  $field
+                             */
+>>>>>>> 6ed19256f (.)
                             static function ($field): string {
                                 // Handle objects with __toString method
                                 if (is_object($field) && method_exists($field, '__toString')) {
@@ -70,8 +80,13 @@ class ExportXlsLazyAction extends Action
                 }
 
                 $lazy = $livewire->getFilteredTableQuery();
+<<<<<<< HEAD
                 if (null === $lazy) {
                     throw new \Exception('Query is null');
+=======
+                if ($lazy === null) {
+                    throw new Exception('Query is null');
+>>>>>>> 6ed19256f (.)
                 }
 
                 if ($lazy->count() < 7) {

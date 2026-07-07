@@ -108,5 +108,8 @@ class Section extends Component
 - [Gestione Sezioni](../section-management.md)
 - [Documentazione Blocchi](../blocks/README.md)
 - [Documentazione Root](../../../../docs/components.md)
+<<<<<<< HEAD
 - [Documentazione Blocchi](../blocks/readme.md)
 - [Documentazione Root](../../../../../docs/components.md)
+=======
+>>>>>>> 6ed19256f (.)

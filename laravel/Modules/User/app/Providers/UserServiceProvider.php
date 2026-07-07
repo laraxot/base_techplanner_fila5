@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Validation\Rules\Password;
+<<<<<<< HEAD
 use Livewire\Livewire;
 use Modules\Notify\Emails\SpatieEmail;
 use Modules\User\Datas\PasswordData;
@@ -25,6 +26,10 @@ use Modules\User\Filament\Widgets\Auth\PasswordResetWidget;
 use Modules\User\Filament\Widgets\Auth\RegisterWidget;
 use Modules\User\Filament\Widgets\Auth\ResetPasswordWidget;
 use Modules\User\Filament\Widgets\Auth\SocialLoginWidget;
+=======
+use Modules\Notify\Emails\SpatieEmail;
+use Modules\User\Datas\PasswordData;
+>>>>>>> 6ed19256f (.)
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Providers\XotBaseServiceProvider;
 use Webmozart\Assert\Assert;
@@ -41,7 +46,10 @@ class UserServiceProvider extends XotBaseServiceProvider
     public function boot(): void
     {
         parent::boot();
+<<<<<<< HEAD
         $this->registerLivewireAuthWidgets();
+=======
+>>>>>>> 6ed19256f (.)
         // $this->registerEventListener();
         $this->registerPasswordRules();
         $this->registerPulse();
@@ -84,6 +92,7 @@ class UserServiceProvider extends XotBaseServiceProvider
             // ✅ FIX CRITICO: Imposta il destinatario dell'email con metodo Laravel standard
             if (method_exists($notifiable, 'getEmailForPasswordReset')) {
                 $emailAddress = $notifiable->getEmailForPasswordReset();
+<<<<<<< HEAD
                 if (is_string($emailAddress)) {
                     $email->to($emailAddress);
                 } else {
@@ -95,6 +104,15 @@ class UserServiceProvider extends XotBaseServiceProvider
                     $email->to($emailAddress);
                 } else {
                     throw new \InvalidArgumentException('Email address must be a string.');
+=======
+                if (is_string($emailAddress) || is_array($emailAddress) || is_object($emailAddress)) {
+                    $email->to($emailAddress);
+                }
+            } elseif (isset($notifiable->email)) {
+                $emailAddress = $notifiable->email;
+                if (is_string($emailAddress) || is_array($emailAddress) || is_object($emailAddress)) {
+                    $email->to($emailAddress);
+>>>>>>> 6ed19256f (.)
                 }
             } else {
                 // Fallback per debug
@@ -128,6 +146,7 @@ class UserServiceProvider extends XotBaseServiceProvider
             ]);
             if (method_exists($notifiable, 'getEmailForPasswordReset')) {
                 $emailAddress = $notifiable->getEmailForPasswordReset();
+<<<<<<< HEAD
                 if (is_string($emailAddress)) {
                     $email->to($emailAddress);
                 } else {
@@ -139,6 +158,15 @@ class UserServiceProvider extends XotBaseServiceProvider
                     $email->to($emailAddress);
                 } else {
                     throw new \InvalidArgumentException('Email address must be a string.');
+=======
+                if (is_string($emailAddress) || is_array($emailAddress) || is_object($emailAddress)) {
+                    $email->to($emailAddress);
+                }
+            } elseif (isset($notifiable->email)) {
+                $emailAddress = $notifiable->email;
+                if (is_string($emailAddress) || is_array($emailAddress) || is_object($emailAddress)) {
+                    $email->to($emailAddress);
+>>>>>>> 6ed19256f (.)
                 }
             }
 
@@ -162,6 +190,7 @@ class UserServiceProvider extends XotBaseServiceProvider
     }
 
     /**
+<<<<<<< HEAD
      * Registra i widget Livewire auth per le viste Blade/Folio.
      * In Livewire v4, resolveClassComponentClassName con namespace '::' cerca SOLO in classNamespaces
      * (non in classComponents), quindi Livewire::component('user::...', class) non funziona.
@@ -185,6 +214,8 @@ class UserServiceProvider extends XotBaseServiceProvider
     }
 
     /**
+=======
+>>>>>>> 6ed19256f (.)
      * Register policies (excluding OAuth ones which are handled by PassportServiceProvider).
      */
     protected function registerPolicies(): void

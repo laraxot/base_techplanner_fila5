@@ -6,9 +6,12 @@ namespace Modules\Media\Tests\Unit\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\Media\Models\BaseModel;
+<<<<<<< HEAD
 use Modules\Media\Tests\TestCase;
 
 uses(TestCase::class);
+=======
+>>>>>>> 6ed19256f (.)
 
 beforeEach(function () {
     $this->baseModel = new class extends BaseModel

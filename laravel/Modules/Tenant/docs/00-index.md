@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 📚 **Indice Documentazione Modulo Tenant**
 
 **Last Update**: 31 Gennaio 2026
@@ -28,6 +29,8 @@
 ## 🧹 **Manutenzione**
 - 🗑️ **[Cleanup Plan](./duplicate-files-to-remove.md)** - Eliminazione dei file duplicati e obsoleti.
 
+=======
+>>>>>>> 6ed19256f (.)
 # Tenant Module Documentation Index
 
 **Last Update**: 18 Dicembre 2025
@@ -170,6 +173,7 @@
 ---
 
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+<<<<<<< HEAD
 ## 📦 **Pacchetti Composer**
 - [Riferimento](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md) - Nessuna dipendenza diretta; usa Xot
 - [Package Dependency Chaos Map](./package-dependency-chaos-map.md)
@@ -184,3 +188,5 @@
 ## Dependency Intelligence
 
 - [Dependency intelligence](dependency-intelligence.md)
+=======
+>>>>>>> 6ed19256f (.)

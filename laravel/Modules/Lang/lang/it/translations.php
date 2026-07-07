@@ -8,6 +8,7 @@ return [
         'create' => 'Crea',
         'edit' => 'Modifica',
     ],
+<<<<<<< HEAD
     'label' => 'Translations',
     'plural_label' => 'Translations (Plurale)',
     'navigation' => [
@@ -52,4 +53,6 @@ return [
             'label' => 'Elimina Translations',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

@@ -51,6 +51,9 @@
 * [status.md](../../../Xot/docs/roadmap/docs/status.md)
 * [status.md](../../../Xot/docs/roadmap/testing/status.md)
 * [status.md](../../../Xot/docs/roadmap/security/status.md)
+<<<<<<< HEAD
 * [status.md](../../../xot/docs/roadmap/docs/status.md)
 * [status.md](../../../xot/docs/roadmap/testing/status.md)
 * [status.md](../../../xot/docs/roadmap/security/status.md)
+=======
+>>>>>>> 6ed19256f (.)

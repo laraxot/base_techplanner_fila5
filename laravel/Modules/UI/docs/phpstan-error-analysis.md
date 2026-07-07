@@ -75,4 +75,8 @@ public function getIconForOption(string $value): ?string
 
 ## 📝 Note
 
+<<<<<<< HEAD
 Le correzioni mantengono la logica esistente ma aggiungono type guards espliciti che permettono a PHPStan di inferire correttamente i tipi. Il codice è più type-safe e PHPStan-compliant.
+=======
+Le correzioni mantengono la logica esistente ma aggiungono type guards espliciti che permettono a PHPStan di inferire correttamente i tipi. Il codice è più type-safe e PHPStan-compliant.
+>>>>>>> 6ed19256f (.)

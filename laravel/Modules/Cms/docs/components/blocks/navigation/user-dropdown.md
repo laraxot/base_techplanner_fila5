@@ -118,6 +118,11 @@ public function boot()
 
 ## Collegamenti
 - [Documentazione Blocchi](../README.md)
+<<<<<<< HEAD
 - [Documentazione Blocchi](../readme.md)
 - [Best Practices CMS](../../best-practices.md)
 - [Guida Componenti](../../components.md)
+=======
+- [Best Practices CMS](../../best-practices.md)
+- [Guida Componenti](../../components.md)
+>>>>>>> 6ed19256f (.)

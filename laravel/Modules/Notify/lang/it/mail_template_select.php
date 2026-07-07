@@ -9,6 +9,7 @@ return [
             'placeholder' => 'mail_template_slug',
             'helper_text' => 'mail_template_slug',
             'description' => 'mail_template_slug',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -34,6 +35,8 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Mail Template Select',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
 ];

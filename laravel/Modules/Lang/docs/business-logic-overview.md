@@ -185,6 +185,11 @@ $localizedContent = Translation::getForKey(
 ---
 
 **Last Updated**: 2025-08-28
+<<<<<<< HEAD
 
 **Module Version**: Latest
 **Business Logic Status**: Core functionality implemented
+=======
+**Module Version**: Latest
+**Business Logic Status**: Core functionality implemented
+>>>>>>> 6ed19256f (.)

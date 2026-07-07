@@ -63,6 +63,10 @@ test('stats overview widget has correct strict types declaration', function (): 
 
     if ($filename) {
         $content = file_get_contents($filename);
+<<<<<<< HEAD
+=======
+        expect($content)->toContain('declare(strict_types=1);');
+>>>>>>> 6ed19256f (.)
     }
 });
 

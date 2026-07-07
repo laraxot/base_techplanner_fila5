@@ -407,8 +407,11 @@ La cartella `docs/` contiene ~300+ file con molti duplicati:
 - [Roadmap Progetto](../../../docs/roadmap_project.md)
 - [Modulo Fixcity](../../Fixcity/docs/ROADMAP.md)
 - [Modulo Tenant](../../Tenant/docs/README.md)
+<<<<<<< HEAD
 - [Modulo Fixcity](../../fixcity/docs/roadmap.md)
 - [Modulo Tenant](../../tenant/docs/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Spatie Permissions](https://spatie.be/docs/laravel-permission)
 
 ### Best Practices
@@ -418,8 +421,16 @@ La cartella `docs/` contiene ~300+ file con molti duplicati:
 
 ---
 
+<<<<<<< HEAD
 **Versione**: 1.0.0  
 **
 **Maintainer**: User Module Team  
 **Status**: 🚧 In Development (70% completo)  
 **Prossima Revisione**: 2025-02-01
+=======
+**Versione**: 1.0.0
+**Ultimo Aggiornamento**: 2025-01-01
+**Maintainer**: User Module Team
+**Status**: 🚧 In Development (70% completo)
+**Prossima Revisione**: 2025-02-01
+>>>>>>> 6ed19256f (.)

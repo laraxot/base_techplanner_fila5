@@ -12,15 +12,21 @@ return [
             'label' => 'Empfänger',
             'placeholder' => 'Telefonnummer eingeben',
             'helper_text' => 'Telefonnummer mit internationaler Vorwahl eingeben (z.B. +49)',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'message' => [
             'label' => 'Nachricht',
             'placeholder' => 'Nachrichtentext eingeben',
             'helper_text' => 'Nachricht darf 160 Zeichen nicht überschreiten',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'driver' => [
             'label' => 'Anbieter',
@@ -34,8 +40,11 @@ return [
                 'gammu' => 'Gammu',
                 'netfun' => 'Netfun',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -48,6 +57,9 @@ return [
         'success' => 'SMS erfolgreich gesendet',
         'error' => 'Fehler beim Senden der SMS: :error',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

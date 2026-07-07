@@ -126,6 +126,7 @@ $gdprService->deleteUserAccount($user);
 5. **Breach Response Plan**: Have a plan for data breaches
 
 ## Related Modules
+<<<<<<< HEAD
 - [User Module](../user/docs/readme.md) - User authentication and management
 - [Activity Module](../activity/docs/index.md) - Activity logging
 - [Notify Module](../notify/docs/index.md) - Notification system
@@ -287,6 +288,8 @@ All module connections are automatically mapped to the test MySQL connection def
 
 ## Marketing & Conversion
 - [Clickbait Marketing Best Practices](../themes/meetup/docs/clickbait-marketing-best-practices.md) - Ethical clickbait techniques for conversion optimization
+=======
+>>>>>>> 6ed19256f (.)
 - [User Module](../User/docs/README.md) - User authentication and management
 - [Activity Module](../Activity/docs/index.md) - Activity logging
 - [Notify Module](../Notify/docs/index.md) - Notification system
@@ -298,9 +301,12 @@ Common issues and solutions:
 - Data export format issues
 - Account deletion complications
 - Privacy policy version management
+<<<<<<< HEAD
 - Hardcoded strings in multilingual sites
 - Translation key inconsistencies
 - Hardcoded strings in multilingual sites
 - Translation key inconsistencies
 
 - [Conflict Resolution](conflict-resolution.md)
+=======
+>>>>>>> 6ed19256f (.)

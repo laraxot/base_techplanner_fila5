@@ -8,41 +8,56 @@ return [
             'label' => 'Indirizzo',
             'placeholder' => 'Inserisci l\'indirizzo da geocodificare',
             'help' => 'Indirizzo completo da convertire in coordinate',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'latitude' => [
             'label' => 'Latitudine',
             'placeholder' => 'Inserisci la latitudine',
             'help' => 'Coordinate geografiche - latitudine',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'longitude' => [
             'label' => 'Longitudine',
             'placeholder' => 'Inserisci la longitudine',
             'help' => 'Coordinate geografiche - longitudine',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'accuracy' => [
             'label' => 'Precisione',
             'placeholder' => 'Seleziona la precisione',
             'help' => 'Livello di precisione della geocodifica',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'provider' => [
             'label' => 'Provider',
             'placeholder' => 'Seleziona il provider',
             'help' => 'Servizio di geocodifica da utilizzare',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'validation' => [
@@ -67,6 +82,7 @@ return [
         'invalid_coordinates' => 'Coordinate geografiche non valide',
         'no_results_found' => 'Nessun risultato trovato',
     ],
+<<<<<<< HEAD
     'label' => 'Geocoding',
     'plural_label' => 'Geocoding (Plurale)',
     'navigation' => [
@@ -91,4 +107,6 @@ return [
             'label' => 'Elimina Geocoding',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

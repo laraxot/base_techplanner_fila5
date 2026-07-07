@@ -2,6 +2,7 @@
 
 namespace App\Http;
 
+<<<<<<< HEAD
 use App\Http\Middleware\Authenticate;
 use App\Http\Middleware\EncryptCookies;
 use App\Http\Middleware\PreventRequestsDuringMaintenance;
@@ -26,6 +27,8 @@ use Illuminate\Routing\Middleware\ThrottleRequests;
 use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+=======
+>>>>>>> 6ed19256f (.)
 use App\Http\Middleware\TrustProxies;
 use Illuminate\Http\Middleware\HandleCors;
 use App\Http\Middleware\PreventRequestsDuringMaintenance;
@@ -113,6 +116,9 @@ class Kernel extends HttpKernel
         'verified' => EnsureEmailIsVerified::class,
     ];
 }
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 6ed19256f (.)

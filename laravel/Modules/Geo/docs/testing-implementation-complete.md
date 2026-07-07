@@ -303,9 +303,12 @@ jobs:
 - [Documentazione <nome progetto>](../Modules/<nome progetto>/docs/README.md) - Funzionalità business
 - [Documentazione <nome progetto>](../Modules/<nome progetto>/docs/README.md) - Funzionalità business
 - [Documentazione User](../Modules/User/docs/README.md) - Modulo core
+<<<<<<< HEAD
 - [Documentazione <nome progetto>](../modules/<nome progetto>/docs/readme.md) - Funzionalità business
 - [Documentazione <nome progetto>](../modules/<nome progetto>/docs/readme.md) - Funzionalità business
 - [Documentazione User](../modules/user/docs/readme.md) - Modulo core
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Stato Implementazione
 
@@ -331,4 +334,8 @@ jobs:
 **Ultimo aggiornamento**: 28 Gennaio 2025
 **Stato**: ✅ Implementazione Completa
 **Responsabile**: Team Development
+<<<<<<< HEAD
 **Review**: Richiesta per validazione e deployment
+=======
+**Review**: Richiesta per validazione e deployment
+>>>>>>> 6ed19256f (.)

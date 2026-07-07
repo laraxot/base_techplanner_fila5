@@ -8,16 +8,27 @@ return [
             'buttons' => [
                 'refresh' => 'Refresh',
             ],
+<<<<<<< HEAD
             'heading' => 'Application Health',
+=======
+
+            'heading' => 'Application Health',
+
+>>>>>>> 6ed19256f (.)
             'navigation' => [
                 'group' => 'Settings',
                 'label' => 'Application Health',
             ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6ed19256f (.)
             'notifications' => [
                 'check_results' => 'Check results from',
             ],
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -31,4 +42,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

@@ -81,20 +81,32 @@ use Sushi\Sushi;
 class ComuneSushi extends \Illuminate\Database\Eloquent\Model
 {
     use Sushi;
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     /**
      * Disable auto-incrementing IDs
      */
     public $incrementing = false;
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     /**
      * The "type" of the auto-incrementing ID.
      */
     protected $keyType = 'string';
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     /**
      * The attributes that should be cast.
      */
@@ -104,8 +116,12 @@ class ComuneSushi extends \Illuminate\Database\Eloquent\Model
         'cap' => 'array',
         'popolazione' => 'integer',
     ];
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     /**
      * Cache duration in seconds (1 week)
      */
@@ -117,15 +133,23 @@ class ComuneSushi extends \Illuminate\Database\Eloquent\Model
     public function getRows()
     {
         $cacheKey = 'sushi_comuni_data';
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         return Cache::remember($cacheKey, $this->sushiCacheDuration, function () {
             $path = module_path('Geo', 'Resources/json/comuni.json');
             return json_decode(File::get($path), true);
         });
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     /**
      * Get the connection for the model.
      */
@@ -133,34 +157,54 @@ class ComuneSushi extends \Illuminate\Database\Eloquent\Model
     {
         return 'sushi';
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // Relazioni
     public function regione()
     {
         return $this->belongsTo(Regione::class, 'regione.codice', 'codice');
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function provincia()
     {
         return $this->belongsTo(Provincia::class, 'provincia.codice', 'codice');
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // Scope
     public function scopeByRegion($query, string $regionCode)
     {
         return $query->where('regione->codice', $regionCode);
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function scopeByProvince($query, string $provinceCode)
     {
         return $query->where('provincia->codice', $provinceCode);
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // Metodi statici per compatibilità
     public static function allRegions()
     {
@@ -170,8 +214,12 @@ class ComuneSushi extends \Illuminate\Database\Eloquent\Model
             ->get()
             ->pluck('nome', 'codice');
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public static function getProvincesByRegion(string $regionCode)
     {
         return static::query()
@@ -181,8 +229,12 @@ class ComuneSushi extends \Illuminate\Database\Eloquent\Model
             ->get()
             ->pluck('nome', 'codice');
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     /**
      * Clear all cached data
      */
@@ -300,5 +352,9 @@ Basandoci sull'analisi, raccomandiamo l'adozione di Laravel Sushi per il modello
 - [Documentazione Ufficiale Sushi](https://github.com/calebporzio/sushi)
 - [Guida alla Migrazione](migration-guide.md)
 - [Benchmark Dettagliati](benchmarks/README.md)
+<<<<<<< HEAD
 - [Benchmark Dettagliati](benchmarks/readme.md)
 - [Documentazione GeoJsonModel](geo-json-model.md)
+=======
+- [Documentazione GeoJsonModel](geo-json-model.md)
+>>>>>>> 6ed19256f (.)

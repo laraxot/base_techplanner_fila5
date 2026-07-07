@@ -42,4 +42,8 @@ The module adheres to:
 - Strict type declarations throughout
 - Comprehensive type hints
 - Employment data handling best practices
+<<<<<<< HEAD
 - Modern PHP 8.2+ feature usage
+=======
+- Modern PHP 8.2+ feature usage
+>>>>>>> 6ed19256f (.)

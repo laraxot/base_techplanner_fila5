@@ -27,7 +27,11 @@ class PathHelper
     /**
      * Ottiene il percorso completo di un modulo.
      *
+<<<<<<< HEAD
      * @param string $moduleName Nome del modulo
+=======
+     * @param  string  $moduleName  Nome del modulo
+>>>>>>> 6ed19256f (.)
      *
      * @return string Percorso completo del modulo
      */
@@ -39,7 +43,11 @@ class PathHelper
     /**
      * Ottiene il percorso dei modelli di un modulo.
      *
+<<<<<<< HEAD
      * @param string $moduleName Nome del modulo
+=======
+     * @param  string  $moduleName  Nome del modulo
+>>>>>>> 6ed19256f (.)
      *
      * @return string Percorso dei modelli
      */
@@ -51,7 +59,11 @@ class PathHelper
     /**
      * Ottiene il percorso delle migrazioni di un modulo.
      *
+<<<<<<< HEAD
      * @param string $moduleName Nome del modulo
+=======
+     * @param  string  $moduleName  Nome del modulo
+>>>>>>> 6ed19256f (.)
      *
      * @return string Percorso delle migrazioni
      */
@@ -63,7 +75,11 @@ class PathHelper
     /**
      * Ottiene il percorso dei seeder di un modulo.
      *
+<<<<<<< HEAD
      * @param string $moduleName Nome del modulo
+=======
+     * @param  string  $moduleName  Nome del modulo
+>>>>>>> 6ed19256f (.)
      *
      * @return string Percorso dei seeder
      */
@@ -75,7 +91,11 @@ class PathHelper
     /**
      * Ottiene il percorso dei controller di un modulo.
      *
+<<<<<<< HEAD
      * @param string $moduleName Nome del modulo
+=======
+     * @param  string  $moduleName  Nome del modulo
+>>>>>>> 6ed19256f (.)
      *
      * @return string Percorso dei controller
      */
@@ -87,7 +107,11 @@ class PathHelper
     /**
      * Ottiene il percorso delle risorse Filament di un modulo.
      *
+<<<<<<< HEAD
      * @param string $moduleName Nome del modulo
+=======
+     * @param  string  $moduleName  Nome del modulo
+>>>>>>> 6ed19256f (.)
      *
      * @return string Percorso delle risorse Filament
      */
@@ -99,7 +123,11 @@ class PathHelper
     /**
      * Ottiene il percorso dei provider di un modulo.
      *
+<<<<<<< HEAD
      * @param string $moduleName Nome del modulo
+=======
+     * @param  string  $moduleName  Nome del modulo
+>>>>>>> 6ed19256f (.)
      *
      * @return string Percorso dei provider
      */
@@ -111,7 +139,11 @@ class PathHelper
     /**
      * Ottiene il percorso delle viste di un modulo.
      *
+<<<<<<< HEAD
      * @param string $moduleName Nome del modulo
+=======
+     * @param  string  $moduleName  Nome del modulo
+>>>>>>> 6ed19256f (.)
      *
      * @return string Percorso delle viste
      */
@@ -123,7 +155,11 @@ class PathHelper
     /**
      * Verifica se un percorso è corretto secondo le convenzioni del progetto.
      *
+<<<<<<< HEAD
      * @param string $path Percorso da verificare
+=======
+     * @param  string  $path  Percorso da verificare
+>>>>>>> 6ed19256f (.)
      *
      * @return bool True se il percorso è corretto, false altrimenti
      */
@@ -140,7 +176,11 @@ class PathHelper
     /**
      * Corregge un percorso errato secondo le convenzioni del progetto.
      *
+<<<<<<< HEAD
      * @param string $path Percorso da correggere
+=======
+     * @param  string  $path  Percorso da correggere
+>>>>>>> 6ed19256f (.)
      *
      * @return string Percorso corretto
      */
@@ -176,7 +216,11 @@ class PathHelper
     /**
      * Verifica se un modulo esiste.
      *
+<<<<<<< HEAD
      * @param string $moduleName Nome del modulo
+=======
+     * @param  string  $moduleName  Nome del modulo
+>>>>>>> 6ed19256f (.)
      *
      * @return bool True se il modulo esiste, false altrimenti
      */

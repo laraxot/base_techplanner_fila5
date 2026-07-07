@@ -60,4 +60,8 @@
 ---
 
 **Ultimo aggiornamento:** {{date('Y-m-d')}}
+<<<<<<< HEAD
 Responsabile: Cascade AI
+=======
+Responsabile: Cascade AI
+>>>>>>> 6ed19256f (.)

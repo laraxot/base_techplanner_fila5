@@ -118,4 +118,8 @@ $this->artisan('module:migrate', ['module' => 'Tenant', '--force' => true]);
 ### Prossimi Step
 1. Verificare se il modello `Modules\Tenant\Models\Tenant` può usare connessione 'user' durante i test
 2. Oppure modificare la migrazione per creare la tabella anche sulla connessione 'tenant'
+<<<<<<< HEAD
 3. Oppure usare un approccio diverso per i test (es: usare `Modules\User\Models\Tenant` nel test)
+=======
+3. Oppure usare un approccio diverso per i test (es: usare `Modules\User\Models\Tenant` nel test)
+>>>>>>> 6ed19256f (.)

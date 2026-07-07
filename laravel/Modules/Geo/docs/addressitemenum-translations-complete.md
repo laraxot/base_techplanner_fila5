@@ -1,7 +1,10 @@
 # AddressItemEnum Translations - Complete Implementation
 
 **Date**: 2025-12-12
+<<<<<<< HEAD
 **Date**: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 **Module**: Geo
 **Status**: ✅ **COMPLETED**
 
@@ -145,4 +148,8 @@ $faxLabel = AddressItemEnum::FAX->getLabel(); // Returns localized label
 
 ## Conclusion
 
+<<<<<<< HEAD
 The AddressItemEnum translation system is now complete and robust, providing full internationalization support and eliminating icon reference errors across all supported languages.
+=======
+The AddressItemEnum translation system is now complete and robust, providing full internationalization support and eliminating icon reference errors across all supported languages.
+>>>>>>> 6ed19256f (.)

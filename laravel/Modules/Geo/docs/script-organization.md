@@ -129,4 +129,8 @@ Ogni script deve includere:
 - [Struttura Progetto](project-structure.md)
 - [Database Seeding](database-seeding.md)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-06*
+=======
+*Ultimo aggiornamento: 2025-01-06*
+>>>>>>> 6ed19256f (.)

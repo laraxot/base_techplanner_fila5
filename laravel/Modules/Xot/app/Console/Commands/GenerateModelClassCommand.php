@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\Xot\Console\Commands;
 
 use Illuminate\Console\GeneratorCommand;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 use function Safe\realpath;
 
 class GenerateModelClassCommand extends GeneratorCommand

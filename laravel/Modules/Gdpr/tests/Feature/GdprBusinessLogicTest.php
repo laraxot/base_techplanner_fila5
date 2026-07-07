@@ -2,8 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Gdpr\Tests\Feature;
 
+=======
+>>>>>>> 6ed19256f (.)
 use Modules\Gdpr\Models\Consent;
 use Modules\Gdpr\Models\Event;
 use Modules\Gdpr\Models\Treatment;
@@ -12,6 +15,7 @@ use Modules\User\Models\User;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
 beforeEach(function (): void {
     // Skip if database not available
     try {
@@ -22,6 +26,10 @@ beforeEach(function (): void {
 });
 
 it('can create and manage gdpr consents', function (): void {
+=======
+it('can create and manage gdpr consents', function (): void
+{
+>>>>>>> 6ed19256f (.)
     // Arrange
     $user = User::factory()->create();
 
@@ -40,7 +48,12 @@ it('can create and manage gdpr consents', function (): void {
     expect($consent->subject_id)->toBe($user->id);
 });
 
+<<<<<<< HEAD
 it('can work with gdpr treatments', function (): void {
+=======
+it('can work with gdpr treatments', function (): void
+{
+>>>>>>> 6ed19256f (.)
     // Act
     $treatment = Treatment::create([
         'name' => 'Email Marketing',
@@ -62,7 +75,12 @@ it('can work with gdpr treatments', function (): void {
     expect($treatment->required)->toBeFalse();
 });
 
+<<<<<<< HEAD
 it('can link consents to treatments', function (): void {
+=======
+it('can link consents to treatments', function (): void
+{
+>>>>>>> 6ed19256f (.)
     // Arrange
     $user = User::factory()->create();
     $treatment = Treatment::create([
@@ -90,7 +108,12 @@ it('can link consents to treatments', function (): void {
     expect($consent->subject_id)->toBe($user->id);
 });
 
+<<<<<<< HEAD
 it('can manage gdpr events', function (): void {
+=======
+it('can manage gdpr events', function (): void
+{
+>>>>>>> 6ed19256f (.)
     // Arrange
     $user = User::factory()->create();
 
@@ -118,7 +141,12 @@ it('can manage gdpr events', function (): void {
     expect($event->ip)->toBe('192.168.1.1');
 });
 
+<<<<<<< HEAD
 it('can track gdpr audit trail', function (): void {
+=======
+it('can track gdpr audit trail', function (): void
+{
+>>>>>>> 6ed19256f (.)
     // Arrange
     $user = User::factory()->create();
 
@@ -156,7 +184,12 @@ it('can track gdpr audit trail', function (): void {
     expect($userEvents)->toHaveCount(2);
 });
 
+<<<<<<< HEAD
 it('can handle different treatment types', function (): void {
+=======
+it('can handle different treatment types', function (): void
+{
+>>>>>>> 6ed19256f (.)
     // Act
     $treatment1 = Treatment::create([
         'name' => 'Marketing Communications',
@@ -185,15 +218,27 @@ it('can handle different treatment types', function (): void {
     // Assert
     expect($treatment1->name)->toBe('Marketing Communications');
     expect($treatment1->required)->toBeFalse();
+<<<<<<< HEAD
 
     expect($treatment2->name)->toBe('Service Delivery');
     expect($treatment2->required)->toBeTrue();
 
+=======
+    
+    expect($treatment2->name)->toBe('Service Delivery');
+    expect($treatment2->required)->toBeTrue();
+    
+>>>>>>> 6ed19256f (.)
     expect($treatment3->name)->toBe('Analytics');
     expect($treatment3->active)->toBeFalse();
 });
 
+<<<<<<< HEAD
 it('can manage treatment weights', function (): void {
+=======
+it('can manage treatment weights', function (): void
+{
+>>>>>>> 6ed19256f (.)
     // Act
     $treatmentLow = Treatment::create([
         'name' => 'Low Priority',
@@ -214,14 +259,23 @@ it('can manage treatment weights', function (): void {
     // Assert
     expect($treatmentLow->weight)->toBe(1);
     expect($treatmentHigh->weight)->toBe(100);
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 6ed19256f (.)
     // Check ordering by weight
     $treatments = Treatment::orderBy('weight', 'asc')->get();
     expect($treatments->first()->name)->toBe('Low Priority');
     expect($treatments->last()->name)->toBe('High Priority');
 });
 
+<<<<<<< HEAD
 it('can manage consent with treatment relationships', function (): void {
+=======
+it('can manage consent with treatment relationships', function (): void
+{
+>>>>>>> 6ed19256f (.)
     // Arrange
     $user = User::factory()->create();
     $treatment = Treatment::create([
@@ -249,7 +303,12 @@ it('can manage consent with treatment relationships', function (): void {
     expect($consent->treatment_id)->toBe($treatment->id);
 });
 
+<<<<<<< HEAD
 it('can manage multiple consents per subject', function (): void {
+=======
+it('can manage multiple consents per subject', function (): void
+{
+>>>>>>> 6ed19256f (.)
     // Arrange
     $user = User::factory()->create();
     $treatment1 = Treatment::create([
@@ -259,7 +318,11 @@ it('can manage multiple consents per subject', function (): void {
         'active' => true,
         'required' => false,
     ]);
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 6ed19256f (.)
     $treatment2 = Treatment::create([
         'name' => 'Treatment 2',
         'description' => 'Second treatment',
@@ -289,7 +352,12 @@ it('can manage multiple consents per subject', function (): void {
     expect($consentTreatmentIds)->toContain($treatment2->id);
 });
 
+<<<<<<< HEAD
 it('can create events with detailed payloads', function (): void {
+=======
+it('can create events with detailed payloads', function (): void
+{
+>>>>>>> 6ed19256f (.)
     // Arrange
     $user = User::factory()->create();
 
@@ -303,7 +371,11 @@ it('can create events with detailed payloads', function (): void {
             'data_categories' => ['personal', 'contact'],
             'request_date' => now()->toISOString(),
             'user_agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+<<<<<<< HEAD
             'session_id' => 'session_'.uniqid(),
+=======
+            'session_id' => 'session_' . uniqid(),
+>>>>>>> 6ed19256f (.)
         ]),
     ]);
 
@@ -320,7 +392,12 @@ it('can create events with detailed payloads', function (): void {
     expect($payload['data_categories'])->toContain('personal');
 });
 
+<<<<<<< HEAD
 it('can handle treatment document references', function (): void {
+=======
+it('can handle treatment document references', function (): void
+{
+>>>>>>> 6ed19256f (.)
     // Act
     $treatmentWithDoc = Treatment::create([
         'name' => 'Policy Update',
@@ -345,12 +422,21 @@ it('can handle treatment document references', function (): void {
     // Assert
     expect($treatmentWithDoc->documentVersion)->toBe('2.1');
     expect($treatmentWithDoc->documentUrl)->toBe('/docs/privacy-policy-v2.1.pdf');
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 6ed19256f (.)
     expect($treatmentWithoutDoc->documentVersion)->toBeNull();
     expect($treatmentWithoutDoc->documentUrl)->toBeNull();
 });
 
+<<<<<<< HEAD
 it('can manage treatment active status', function (): void {
+=======
+it('can manage treatment active status', function (): void
+{
+>>>>>>> 6ed19256f (.)
     // Act
     $activeTreatment = Treatment::create([
         'name' => 'Active Treatment',
@@ -377,7 +463,12 @@ it('can manage treatment active status', function (): void {
     expect($activeTreatments)->not->toContain($inactiveTreatment);
 });
 
+<<<<<<< HEAD
 it('can manage consent timestamps', function (): void {
+=======
+it('can manage consent timestamps', function (): void
+{
+>>>>>>> 6ed19256f (.)
     // Arrange
     $user = User::factory()->create();
 
@@ -390,8 +481,16 @@ it('can manage consent timestamps', function (): void {
     // Assert
     expect($consent->created_at)->not->toBeNull();
     expect($consent->updated_at)->not->toBeNull();
+<<<<<<< HEAD
 
     // Created and updated should be close to now
     $now = now();
     expect($consent->created_at->between($now->subMinute(), $now->addMinute()))->toBeTrue();
 });
+=======
+    
+    // Created and updated should be close to now
+    $now = now();
+    expect($consent->created_at->between($now->subMinute(), $now->addMinute()))->toBeTrue();
+});
+>>>>>>> 6ed19256f (.)

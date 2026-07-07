@@ -4,13 +4,18 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Clusters\Passport\Resources;
 
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Actions\BulkAction;
+=======
+use Filament\Actions\BulkActionGroup;
+>>>>>>> 6ed19256f (.)
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
+<<<<<<< HEAD
 use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Grid;
@@ -28,6 +33,21 @@ use Illuminate\Support\Collection;
 use Modules\User\Actions\Passport\RevokeAllUserTokensAction;
 use Modules\User\Actions\Passport\RevokeTokenAction;
 use Modules\User\Filament\Clusters\Passport;
+=======
+use Filament\Schemas\Components\Component;
+use Filament\Schemas\Components\Grid;
+use Filament\Schemas\Components\Section;
+use Filament\Tables\Columns\IconColumn;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Filters\Filter;
+use Filament\Tables\Table;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Carbon;
+use Modules\User\Filament\Clusters\Passport;
+use Modules\User\Filament\Clusters\Passport\Resources\OauthAccessTokenResource\Pages\EditOauthAccessTokens;
+use Modules\User\Filament\Clusters\Passport\Resources\OauthAccessTokenResource\Pages\ListOauthAccessTokens;
+use Modules\User\Filament\Clusters\Passport\Resources\OauthAccessTokenResource\Pages\ViewOauthAccessToken;
+>>>>>>> 6ed19256f (.)
 use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Models\OauthAccessToken;
 use Modules\Xot\Filament\Resources\XotBaseResource;
@@ -57,7 +77,11 @@ class OauthAccessTokenResource extends XotBaseResource
                             return null;
                         }
                         $user = $record->user;
+<<<<<<< HEAD
                         if ($user !== null && method_exists($user, 'exists') && $user->exists) {
+=======
+                        if (null !== $user && method_exists($user, 'exists') && $user->exists) {
+>>>>>>> 6ed19256f (.)
                             return UserResource::getUrl('view', ['record' => $user]);
                         }
 
@@ -76,7 +100,11 @@ class OauthAccessTokenResource extends XotBaseResource
                 TextColumn::make('scopes')
                     ->limit(30)
                     ->tooltip(function (mixed $state): ?string {
+<<<<<<< HEAD
                         if ($state === null) {
+=======
+                        if (null === $state) {
+>>>>>>> 6ed19256f (.)
                             return null;
                         }
                         if (is_array($state)) {
@@ -122,6 +150,7 @@ class OauthAccessTokenResource extends XotBaseResource
                     ->query(fn (Builder $query) => $query->where('revoked', false)->where('expires_at', '>', now())),
             ])
             ->recordActions([
+<<<<<<< HEAD
                 Action::make('revoke')
                     ->icon('heroicon-o-x-circle')
                     ->color('danger')
@@ -303,6 +332,27 @@ class OauthAccessTokenResource extends XotBaseResource
                         ->send();
                 }),
             'delete' => DeleteBulkAction::make(),
+=======
+                DeleteAction::make(),
+            ])
+            ->toolbarActions([
+                BulkActionGroup::make([
+                    DeleteBulkAction::make(),
+                ]),
+            ])
+                        ->defaultSort('created_at', 'desc');
+                }
+    /**
+     * @return array<string, \Filament\Resources\Pages\PageRegistration>
+     */
+    #[\Override]
+    public static function getPages(): array
+    {
+        return [
+            'index' => ListOauthAccessTokens::route('/'),
+            'view' => ViewOauthAccessToken::route('/{record}'),
+            'edit' => EditOauthAccessTokens::route('/{record}/edit'),
+>>>>>>> 6ed19256f (.)
         ];
     }
 

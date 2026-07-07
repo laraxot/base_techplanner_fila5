@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 # PHPStan Level 10 Cleanup Session - [DATE]
 
 ## Executive Summary
 
 - Session precedente ([DATE]): ✅ zero errori PHPStan Level 10.
 - Nuova esecuzione ([DATE]): ⚠️ rilevato 1 parse error in `UI/app/Filament/Blocks/Title.php` (`unexpected EOF`).
+=======
+>>>>>>> 6ed19256f (.)
 # PHPStan Level 10 Cleanup Session - 2025-11-06
 
 ## Executive Summary
@@ -377,4 +380,8 @@ This session successfully eliminated all PHPStan Level 10 errors across the enti
 
 All fixes maintain backward compatibility and improve code quality through better type safety.
 
+<<<<<<< HEAD
 **Status**: ⚠️ PHPStan Level 10 - parse error aperto su `Blocks/Title.php`
+=======
+**Status**: ⚠️ PHPStan Level 10 - parse error aperto su `Blocks/Title.php`
+>>>>>>> 6ed19256f (.)

@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\User\Database\Seeders;
 
+<<<<<<< HEAD
 use Illuminate\Console\Command;
+=======
+>>>>>>> 6ed19256f (.)
 use Illuminate\Database\Seeder;
 use Modules\User\Models\Role;
 
@@ -39,9 +42,14 @@ class RolesSeeder extends Seeder
      */
     private function displayResults(array $roles): void
     {
+<<<<<<< HEAD
         $command = $this->getConsoleCommand();
         $command->info('Roles seeded successfully:');
         $command->table(
+=======
+        $this->command->info('Roles seeded successfully:');
+        $this->command->table(
+>>>>>>> 6ed19256f (.)
             self::$OUTPUT_TABLE_HEADERS,
             collect($roles)
                 ->map(fn (Role $role, int $index) => [
@@ -52,9 +60,12 @@ class RolesSeeder extends Seeder
                 ->toArray(),
         );
     }
+<<<<<<< HEAD
 
     private function getConsoleCommand(): Command
     {
         return $this->command;
     }
+=======
+>>>>>>> 6ed19256f (.)
 }

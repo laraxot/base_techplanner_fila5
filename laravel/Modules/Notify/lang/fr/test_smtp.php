@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -83,12 +84,50 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'name' => [
+            'label' => 'Nom',
+        ],
+        'host' => [
+            'label' => 'Hôte',
+        ],
+        'port' => [
+            'label' => 'Port',
+        ],
+        'username' => [
+            'label' => 'Nom d\'Utilisateur',
+        ],
+        'password' => [
+            'label' => 'Mot de Passe',
+        ],
+        'encryption' => [
+            'label' => 'Chiffrement',
+        ],
+        'from_address' => [
+            'label' => 'Adresse Expéditeur',
+        ],
+        'from_name' => [
+            'label' => 'Nom Expéditeur',
+        ],
+        'status' => [
+            'label' => 'Statut',
+        ],
+        'last_tested_at' => [
+            'label' => 'Dernier Test À',
+        ],
+        'created_at' => [
+            'label' => 'Créé À',
+>>>>>>> 6ed19256f (.)
         ],
         'body_html' => [
             'description' => 'Corps HTML',
             'helper_text' => 'Contenu HTML de l\'email',
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [

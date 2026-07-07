@@ -114,6 +114,7 @@ return [
         'duration' => 'La durata deve essere positiva',
     ],
     'http_status' => [
+<<<<<<< HEAD
         100 => 'Continua',
         101 => 'Cambio protocollo',
         200 => 'OK',
@@ -142,6 +143,36 @@ return [
         503 => 'Servizio non disponibile',
         504 => 'Timeout del gateway',
         505 => 'Versione HTTP non supportata',
+=======
+        '100' => 'Continua',
+        '101' => 'Cambio protocollo',
+        '200' => 'OK',
+        '201' => 'Creato',
+        '202' => 'Accettato',
+        '204' => 'Nessun contenuto',
+        '300' => 'Scelte multiple',
+        '301' => 'Spostato permanentemente',
+        '302' => 'Trovato',
+        '304' => 'Non modificato',
+        '307' => 'Reindirizzamento temporaneo',
+        '308' => 'Reindirizzamento permanente',
+        '400' => 'Richiesta non valida',
+        '401' => 'Non autorizzato',
+        '403' => 'Vietato',
+        '404' => 'Non trovato',
+        '405' => 'Metodo non consentito',
+        '406' => 'Non accettabile',
+        '409' => 'Conflitto',
+        '410' => 'Non più disponibile',
+        '422' => 'Entità non processabile',
+        '429' => 'Troppe richieste',
+        '500' => 'Errore interno del server',
+        '501' => 'Non implementato',
+        '502' => 'Gateway non valido',
+        '503' => 'Servizio non disponibile',
+        '504' => 'Timeout del gateway',
+        '505' => 'Versione HTTP non supportata',
+>>>>>>> 6ed19256f (.)
     ],
     'suggestions' => [
         'check_connection' => 'Verifica la connessione di rete',
@@ -165,6 +196,7 @@ return [
         'validate_coordinates' => 'Verifica le coordinate geografiche',
         'check_projection' => 'Verifica la proiezione cartografica',
     ],
+<<<<<<< HEAD
     'label' => 'Errors',
     'plural_label' => 'Errors (Plurale)',
     'navigation' => [
@@ -209,4 +241,6 @@ return [
             'label' => 'Elimina Errors',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

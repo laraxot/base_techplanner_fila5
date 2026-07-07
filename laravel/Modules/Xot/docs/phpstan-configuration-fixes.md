@@ -16,10 +16,17 @@ ignoreErrors:
     - '#Method .+::.+ should return .+<.+, (.+)> but returns .+<.+, \$this\(\1\)>#' # Ignora errori di covarianza nei tipi generici delle relazioni Eloquent
 ```
 
+<<<<<<< HEAD
 **Moduli Interessati**: <nome progetto>, Geo, User, e tutti i moduli con relazioni Eloquent
 
 **Documentazione Specifica**:
 - [<nome progetto> - PHPStan Relationship Covariance Fix](../<nome progetto>/docs/phpstan-relationship-covariance-fix.md)
+=======
+**Moduli Interessati**: SaluteOra, Geo, User, e tutti i moduli con relazioni Eloquent
+
+**Documentazione Specifica**:
+- [SaluteOra - PHPStan Relationship Covariance Fix](../SaluteOra/docs/phpstan-relationship-covariance-fix.md)
+>>>>>>> 6ed19256f (.)
 
 ### 2. Cast da Mixed
 
@@ -107,11 +114,16 @@ parameters:
         - ./Modules/Xot/Helpers/Helper.php
 
     editorUrl: 'vscode://file/%%file%%:%%line%%'
+<<<<<<< HEAD
     tmpDir: ./storage/app/phpstan
+=======
+    tmpDir: /tmp/phpstan
+>>>>>>> 6ed19256f (.)
     treatPhpDocTypesAsCertain: false
     reportUnmatchedIgnoredErrors: false
 ```
 
+<<<<<<< HEAD
 ## Runtime Rule
 
 - non usare `/tmp/phpstan`;
@@ -119,6 +131,8 @@ parameters:
 - in caso di crash anticipato del tool, il comando di recovery e':
   `XDEBUG_MODE=off ./vendor/bin/phpstan analyse Modules --memory-limit=-1 --no-progress`
 
+=======
+>>>>>>> 6ed19256f (.)
 ## Best Practices per PHPStan
 
 ### 1. Livello di Analisi
@@ -210,4 +224,8 @@ La configurazione PHPStan implementata mantiene un alto livello di qualità del 
 **PHPStan Version**: 1.10+
 **Laravel Version**: 10+
 **Larastan Version**: 2.9+
+<<<<<<< HEAD
 **Stato**: ✅ Configurazione Stabile
+=======
+**Stato**: ✅ Configurazione Stabile
+>>>>>>> 6ed19256f (.)

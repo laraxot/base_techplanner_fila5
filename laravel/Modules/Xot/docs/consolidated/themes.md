@@ -87,5 +87,10 @@ Per personalizzare un tema:
 * [themes.md](../../../Xot/project_docs/themes.md)
 * [themes.md](../../../Cms/project_docs/frontoffice/themes.md)
 
+<<<<<<< HEAD
 * [README.md Tema One](laravel/Themes/One/project_docs/README.md)
 * [Convenzioni Namespace Tema One](laravel/Themes/One/project_docs/namespace-conventions.md)b6f667c (.)
+=======
+* [README.md Tema One](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Themes/One/project_docs/README.md)
+* [Convenzioni Namespace Tema One](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Themes/One/project_docs/namespace-conventions.md)b6f667c (.)
+>>>>>>> 6ed19256f (.)

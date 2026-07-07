@@ -93,6 +93,7 @@ protected function getOptions(): array
 
 ## 3. Best Practices
 
+<<<<<<< HEAD
 -   **Data Loading**: Use `polling` sparingly to avoid server load.
 
 ## 4. Professional Configuration (Standards 2026)
@@ -121,3 +122,11 @@ The architectural standard for Quaeris is **Spatie Laravel PDF** (a wrapper arou
 -   [Professional Charts & PDF Guide](../../../Limesurvey/docs/professional-charts-and-pdfs.md)
 -   [Dashboard Best Practices](../../../limesurvey/docs/dashboard-best-practices.md)
 -   [Professional Charts & PDF Guide](../../../limesurvey/docs/professional-charts-and-pdfs.md)
+=======
+-   **Lazy Loading**: Enabled by default in Filament. Keep it.
+-   **Colors**: Use Filament's color system or CSS variables rather than hardcoded hex codes to support Dark Mode.
+-   **Data Loading**: Use `polling` sparingly to avoid server load.
+
+---
+**See Also**: [Export Strategy](./export-strategy.md)
+>>>>>>> 6ed19256f (.)

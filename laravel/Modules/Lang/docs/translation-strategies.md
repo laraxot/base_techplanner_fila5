@@ -67,7 +67,10 @@ lang/
 - `__()`: Helper per stringhe di traduzione
   - Restituisce `null` se chiamato senza parametri
   - Sintassi: `__('chiave.traduzione')`
+<<<<<<< HEAD
   
+=======
+>>>>>>> 6ed19256f (.)
 
 - `trans()`: Versione più flessibile
   - Restituisce l'istanza del Translator se chiamato senza parametri
@@ -84,7 +87,10 @@ trans('messages.welcome', ['name' => $user->name]);
 // Con namespace
 __('auth::validation.required')
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 // Nei file blade
 {{ __('Benvenuto') }}
 {!! __('<strong>Importante</strong>') !!}
@@ -510,4 +516,8 @@ La scelta tra file PHP e JSON dipende dalle esigenze del progetto:
 - **PHP**: migliore per progetti grandi con molte traduzioni
 - **JSON**: ideale per progetti più piccoli o con contenuti più fluidi
 
+<<<<<<< HEAD
 Per questo progetto, si consiglia di utilizzare i file PHP per le traduzioni di sistema e i moduli, mantenendo una struttura organizzata e scalabile.
+=======
+Per questo progetto, si consiglia di utilizzare i file PHP per le traduzioni di sistema e i moduli, mantenendo una struttura organizzata e scalabile.
+>>>>>>> 6ed19256f (.)

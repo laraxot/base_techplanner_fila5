@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+# Pacchetti del Modulo User
+
+## Pacchetti Utilizzati
+### Core
+>>>>>>> 6ed19256f (.)
 - [laraxot/module_xot_fila3](../Xot/docs/packages.md) - Modulo base per funzionalità comuni
 - [laraxot/module_ui](../UI/docs/packages.md) - Componenti UI e temi
 - [laraxot/module_tenant_fila3](../Tenant/docs/packages.md) - Gestione multi-tenant
@@ -64,6 +71,7 @@
 * [packages.md](../../../Tenant/project_docs/packages.md)
 ### Versione Incoming
 ---
+<<<<<<< HEAD
 ---
 module: theme
 topic: packages
@@ -71,3 +79,5 @@ canonical: ../../../Themes/docs/shared-components/packages.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/packages.md
+=======
+>>>>>>> 6ed19256f (.)

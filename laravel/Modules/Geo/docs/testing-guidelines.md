@@ -359,6 +359,11 @@ describe('Geographic Performance', function () {
 ---
 
 **Last Updated**: 2025-08-28
+<<<<<<< HEAD
 
 **Testing Framework**: Pest
 **Environment**: .env.testing
+=======
+**Testing Framework**: Pest
+**Environment**: .env.testing
+>>>>>>> 6ed19256f (.)

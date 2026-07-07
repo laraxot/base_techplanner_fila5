@@ -27,7 +27,11 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property array|null $settings
  * @property bool $is_active
  * @property string|null $logo
+<<<<<<< HEAD
  * @property \Carbon\Carbon|null $last_activity_at
+=======
+ *
+>>>>>>> 6ed19256f (.)
  * @property-read string $url
  * @property-read Collection<int, User> $users
  * @property-read int|null $users_count
@@ -61,7 +65,10 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|Tenant whereName($value)
  * @method static Builder<static>|Tenant whereSlug($value)
  * @method static Builder<static>|Tenant whereUpdatedAt($value)
+<<<<<<< HEAD
  * @method static Builder<static>|Tenant whereSettings($value)
+=======
+>>>>>>> 6ed19256f (.)
  *
  * @mixin \Eloquent
  */
@@ -89,7 +96,10 @@ class Tenant extends BaseModel
         'country',
         'tax_code',
         'vat_number',
+<<<<<<< HEAD
         'last_activity_at',
+=======
+>>>>>>> 6ed19256f (.)
     ];
 
     /**
@@ -159,7 +169,10 @@ class Tenant extends BaseModel
         return [
             'settings' => 'array',
             'is_active' => 'boolean',
+<<<<<<< HEAD
             'last_activity_at' => 'datetime',
+=======
+>>>>>>> 6ed19256f (.)
         ];
     }
 }

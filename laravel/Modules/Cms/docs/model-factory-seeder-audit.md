@@ -1,7 +1,10 @@
 # Model/Factory/Seeder Audit
 
 Generated: 2025-08-22 16:28
+<<<<<<< HEAD
 Generated: [DATE] 16:28
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Coverage
 | Model | Factory | Seeded |
@@ -21,4 +24,8 @@ Seeder: `database/seeders/CmsDatabaseSeeder.php`
 - `HasBlocks`: infrastructure/behavioral; no factory/seeding required.
 
 ## Likely non-business-critical
+<<<<<<< HEAD
 - `HasBlocks` (behavioral helper). Documented as infra; exclude from factory/seeding.
+=======
+- `HasBlocks` (behavioral helper). Documented as infra; exclude from factory/seeding.
+>>>>>>> 6ed19256f (.)

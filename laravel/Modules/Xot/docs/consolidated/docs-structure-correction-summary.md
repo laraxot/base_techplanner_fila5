@@ -2,7 +2,11 @@
 
 ## Contesto e Problema Identificato
 
+<<<<<<< HEAD
 Durante l'audit del sistema <nome progetto>, è stata identificata una **violazione critica dell'architettura modulare**: l'esistenza di cartelle `docs/` in posizioni inappropriate che violano i principi di modularità e creano confusione nella struttura del progetto.
+=======
+Durante l'audit del sistema SaluteOra, è stata identificata una **violazione critica dell'architettura modulare**: l'esistenza di cartelle `docs/` in posizioni inappropriate che violano i principi di modularità e creano confusione nella struttura del progetto.
+>>>>>>> 6ed19256f (.)
 
 ## Violazioni Identificate e Corrette
 
@@ -22,7 +26,11 @@ Durante l'audit del sistema <nome progetto>, è stata identificata una **violazi
 **Stato**: ✅ CORRETTA - Cartella eliminata, documentazione spostata nei moduli
 
 **File migrati**:
+<<<<<<< HEAD
 - `eloquent-unit-tests.md` → `laravel/Modules/<nome progetto>/project_docs/testing/`
+=======
+- `eloquent-unit-tests.md` → `laravel/Modules/SaluteMo/project_docs/testing/`
+>>>>>>> 6ed19256f (.)
 - Altri documenti analizzati e spostati nei moduli appropriati
 
 ## Regola Critica Implementata
@@ -30,8 +38,13 @@ Durante l'audit del sistema <nome progetto>, è stata identificata una **violazi
 ### **Struttura Cartelle Docs - Mai Cartelle Docs nella Root**
 
 **REGOLA ASSOLUTAMENTE VIETATA**:
+<<<<<<< HEAD
 - ❌ `project_docs/` (root progetto)
 - ❌ `project_docs/` (root Laravel)
+=======
+- ❌ `/var/www/html/_bases/base_{nome_progetto}/project_docs/` (root progetto)
+- ❌ `/var/www/html/_bases/base_{nome_progetto}/laravel/project_docs/` (root Laravel)
+>>>>>>> 6ed19256f (.)
 
 **STRUTTURA CORRETTA OBBLIGATORIA**:
 - ✅ `laravel/Modules/{ModuleName}/project_docs/` - Documentazione del modulo
@@ -96,8 +109,13 @@ laravel/
 │   ├── Lang/project_docs/             # ✅ Documentazione modulo Lang
 │   ├── Activity/project_docs/         # ✅ Documentazione modulo Activity
 │   ├── Job/project_docs/              # ✅ Documentazione modulo Job
+<<<<<<< HEAD
 │   ├── <nome progetto>/project_docs/         # ✅ Documentazione modulo <nome progetto>
 │   └── <nome progetto>/project_docs/        # ✅ Documentazione modulo <nome progetto>
+=======
+│   ├── SaluteMo/project_docs/         # ✅ Documentazione modulo SaluteMo
+│   └── SaluteOra/project_docs/        # ✅ Documentazione modulo SaluteOra
+>>>>>>> 6ed19256f (.)
 ├── Themes/
 │   ├── One/project_docs/              # ✅ Documentazione tema One
 │   └── Two/project_docs/              # ✅ Documentazione tema Two
@@ -195,8 +213,13 @@ find laravel/Themes -name "docs" -type d
 - [Modulo Notify](../Notify/project_docs/)
 - [Modulo User](../User/project_docs/)
 - [Modulo UI](../UI/project_docs/)
+<<<<<<< HEAD
 - [Modulo <nome progetto>](../<nome progetto>/project_docs/)
 - [Modulo <nome progetto>](../<nome progetto>/project_docs/)
+=======
+- [Modulo SaluteMo](../SaluteMo/project_docs/)
+- [Modulo SaluteOra](../SaluteOra/project_docs/)
+>>>>>>> 6ed19256f (.)
 
 ### **Documentazione Correlata**:
 - [Regole Modularità](modularity-hardcoded-names.md)

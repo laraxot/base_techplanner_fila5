@@ -16,9 +16,12 @@ Questa pagina raccoglie la regola e i collegamenti per l’adozione del metodo `
 - [Regola Generale - Modulo Xot](../laravel/Modules/Xot/docs/FILAMENT_TABLE_COLUMNS.md)
 - [Regola e Applicazione - Modulo Performance](../laravel/Modules/Performance/docs/filament-resources.md)
 - [Esempio e Applicazione - Modulo User](../laravel/Modules/User/docs/filament/FILAMENT_TABLE_COLUMNS.md)
+<<<<<<< HEAD
 - [Regola Generale - Modulo Xot](../laravel/modules/xot/docs/filament_table_columns.md)
 - [Regola e Applicazione - Modulo Performance](../laravel/modules/performance/docs/filament-resources.md)
 - [Esempio e Applicazione - Modulo User](../laravel/modules/user/docs/filament/filament_table_columns.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 **Nota:** Nei moduli Laraxot, le pagine tabellari devono estendere `Modules\Xot\Filament\Resources\Pages\XotBaseListRecords` e non la classe base Filament.
 
@@ -30,4 +33,8 @@ Questa pagina raccoglie la regola e i collegamenti per l’adozione del metodo `
 
 **Ultimo aggiornamento:** 2025-05-13
 
+<<<<<<< HEAD
 **Link bidirezionale:** Aggiornare anche le docs dei moduli coinvolti.
+=======
+**Link bidirezionale:** Aggiornare anche le docs dei moduli coinvolti.
+>>>>>>> 6ed19256f (.)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Data Objects in Laraxot
 
@@ -69,6 +70,8 @@ Questa correzione garantisce che quando il metodo viene ereditato da classi figl
 - **PHPDoc incompleto per le relazioni Eloquent**: Aggiungere tutti i tipi di template nella documentazione PHPDoc.
 - **Accesso a proprietà inesistenti**: Verificare l'esistenza delle proprietà prima dell'accesso.
 - **Tipo di ritorno `class-string`**: Usare asserzioni o casting appropriati quando si restituiscono stringhe che rappresentano classi.
+=======
+>>>>>>> 6ed19256f (.)
 # Data Objects
 
 ## Principi Fondamentali
@@ -135,8 +138,13 @@ Questa correzione garantisce che quando il metodo viene ereditato da classi figl
 ## Errori Comuni
 
 1. **Errore**: Directory errata
+<<<<<<< HEAD
    - ❌ `Modules/Module/Datas/`
    - ✅ `Modules/Module/Datas/`
+=======
+   - ❌ `/var/www/html/<nome progetto>/Modules/Module/Datas/`
+   - ✅ `/var/www/html/<nome progetto>/laravel/Modules/Module/Datas/`
+>>>>>>> 6ed19256f (.)
 
 2. **Errore**: Namespace errato
    - ❌ `namespace Modules\Module\App\Datas;`
@@ -150,4 +158,8 @@ Questa correzione garantisce che quando il metodo viene ereditato da classi figl
 
 - [Data Objects Patient](../Patient/docs/data-objects.md)
 - [Best Practices](./best-practices.md)
+<<<<<<< HEAD
 - [Convenzioni di Codice](./coding-standards.md)
+=======
+- [Convenzioni di Codice](./coding-standards.md)
+>>>>>>> 6ed19256f (.)

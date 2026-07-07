@@ -1,14 +1,21 @@
 # Modulo Notify
 
 Data: 2025-04-23 19:09:56
+<<<<<<< HEAD
 Data: 2025-04-23 19:09:56
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Informazioni generali
 
 - **Namespace principale**: Modules\\Notify
 Modules\\Notify\\Database\\Factories
 Modules\\Notify\\Database\\Seeders
+<<<<<<< HEAD
 - **Pacchetto Composer**: laraxot/module_notify_fila5
+=======
+- **Pacchetto Composer**: laraxot/module_notify_fila3
+>>>>>>> 6ed19256f (.)
 Marco Sottana
 - **Dipendenze**: aws/aws-sdk-php * filament/filament * illuminate/contracts * illuminate/support * irazasyed/telegram-bot-sdk * kreait/laravel-firebase * laravel-notification-channels/fcm * laravel-notification-channels/telegram * phpdocumentor/type-resolver * symfony/http-client * symfony/postmark-mailer * repositories type path url ../Xot type path
 - **Totale file PHP**: 165
@@ -451,4 +458,8 @@ tests/Unit
 * [structure.md](../../../Cms/docs/themes/structure.md)
 * [structure.md](../../../Cms/docs/components/structure.md)
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> 6ed19256f (.)

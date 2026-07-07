@@ -39,6 +39,7 @@ return [
         'color' => 'text-gray-600',
         'description' => 'Numero fax',
     ],
+<<<<<<< HEAD
     'label' => 'Contact Type Enum',
     'plural_label' => 'Contact Type Enum (Plurale)',
     'navigation' => [
@@ -83,4 +84,6 @@ return [
             'label' => 'Elimina Contact Type Enum',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

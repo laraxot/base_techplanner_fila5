@@ -1,4 +1,19 @@
 ---
+<<<<<<< HEAD
+=======
+title: links
+description: links
+extends: _layouts.documentation
+section: content
+---
+
+# links links
+
+...
+### Versione HEAD
+
+## Collegamenti tra versioni di links.md
+>>>>>>> 6ed19256f (.)
 * [links.md](../../../Gdpr/docs/links.md)
 * [links.md](../../../Notify/docs/links.md)
 * [links.md](../../../Xot/docs/ci/links.md)
@@ -13,9 +28,12 @@
 ### Versione Incoming
 
 ---
+<<<<<<< HEAD
 module: theme
 topic: links
 canonical: ../../../../../Themes/docs/shared-components/links-Modules.md
 ---
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/links-Modules.md
+=======
+>>>>>>> 6ed19256f (.)

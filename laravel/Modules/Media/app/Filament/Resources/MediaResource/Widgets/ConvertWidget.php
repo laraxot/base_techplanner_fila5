@@ -6,16 +6,27 @@ namespace Modules\Media\Filament\Resources\MediaResource\Widgets;
 
 use FFMpeg\Format\Video\WebM;
 use Filament\Notifications\Notification;
+<<<<<<< HEAD
+=======
+use Filament\Widgets\Widget;
+>>>>>>> 6ed19256f (.)
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Modules\Media\Filament\Resources\MediaResource;
 use Modules\Media\Models\Media;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use ProtoneMedia\LaravelFFMpeg\Exporters\MediaExporter;
 use ProtoneMedia\LaravelFFMpeg\Support\FFMpeg;
 use RuntimeException;
 
 class ConvertWidget extends XotBaseWidget
+=======
+use ProtoneMedia\LaravelFFMpeg\Support\FFMpeg;
+use RuntimeException;
+
+class ConvertWidget extends Widget
+>>>>>>> 6ed19256f (.)
 {
     public Media $record;
 
@@ -25,6 +36,7 @@ class ConvertWidget extends XotBaseWidget
 
     public float $percentage = 0;
 
+<<<<<<< HEAD
     public float $remaining;
 
     public float $rate;
@@ -37,6 +49,17 @@ class ConvertWidget extends XotBaseWidget
     {
         return [];
     }
+=======
+    /** @var float */
+    public $remaining;
+
+    /** @var float */
+    public $rate;
+
+    protected string $view = 'media::filament.widgets.convert';
+
+    protected static string $resource = MediaResource::class;
+>>>>>>> 6ed19256f (.)
 
     public function begin(): void
     {
@@ -48,14 +71,21 @@ class ConvertWidget extends XotBaseWidget
 
         // dddx($file_mp4);
 
+<<<<<<< HEAD
         $format = new WebM;
+=======
+        $format = new WebM();
+>>>>>>> 6ed19256f (.)
         $extension = mb_strtolower(class_basename($format));
         $file_new = Str::of($file_mp4)->replaceLast('.mp4', '.'.$extension)->toString();
 
         /*
          * -preset ultrafast.
          */
+<<<<<<< HEAD
         /** @var MediaExporter $exportedMedia */
+=======
+>>>>>>> 6ed19256f (.)
         $exportedMedia = FFMpeg::fromDisk($disk_mp4)
             ->open($file_mp4)
             ->export();
@@ -76,11 +106,29 @@ class ConvertWidget extends XotBaseWidget
                 ->send();
         });
 
+<<<<<<< HEAD
         /** @var MediaExporter $toDiskMedia */
         $toDiskMedia = $exportedMedia->toDisk($disk_mp4);
 
         /** @var MediaExporter $formattedMedia */
         $formattedMedia = $toDiskMedia->inFormat($format);
+=======
+        /** @phpstan-ignore-next-line - FFMpeg fluent API */
+        $toDiskMedia = $exportedMedia->toDisk($disk_mp4);
+        if ($toDiskMedia === null) {
+            throw new RuntimeException('Failed to export media to disk');
+        }
+
+        /** @phpstan-ignore-next-line - FFMpeg fluent API */
+        $formattedMedia = $toDiskMedia->inFormat($format);
+        if ($formattedMedia === null || ! is_object($formattedMedia)) {
+            throw new RuntimeException('Failed to format media');
+        }
+
+        if (! method_exists($formattedMedia, 'save')) {
+            throw new RuntimeException('Formatted media does not have save method');
+        }
+>>>>>>> 6ed19256f (.)
 
         $formattedMedia->save($file_new);
 
@@ -97,6 +145,16 @@ class ConvertWidget extends XotBaseWidget
 
             $this->start =
                 "{$this->percentage}% transcoded".PHP_EOL."{$this->remaining} seconds left at rate: {$this->rate}";
+<<<<<<< HEAD
+=======
+
+            // Decrement the counter...
+            // $this->start = $this->start - 1;
+            // $this->start = (string) now();
+            // if ('impossible' === $this->start) {
+            //    $cond = false;
+            // }
+>>>>>>> 6ed19256f (.)
         }
     }
 }

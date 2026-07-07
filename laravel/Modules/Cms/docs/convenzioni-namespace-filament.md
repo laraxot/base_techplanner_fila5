@@ -45,7 +45,10 @@ namespace Modules\User\App\Filament\Widgets;
   ```
 
 - Per le regole generali e best practice consulta la doc del modulo [Xot](../../Xot/project_docs/README.md).
+<<<<<<< HEAD
 - Per le regole generali e best practice consulta la doc del modulo [Xot](../../xot/project_docs/readme.md).
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Regole Tailwind CSS con Filament
 - **IMPORTANTE:** Con Filament 3.x, usare solo `tailwindcss@3.x` (NO 4.x). Riferimento: [Filament Docs](https://filamentphp.com/project_docs/3.x/notifications/installation#installing-tailwind-css).
@@ -59,7 +62,10 @@ namespace Modules\User\App\Filament\Widgets;
   ```
 - Non usare mai `vendor:publish` per asset dei temi custom.
 - Vedi anche [README tema One](../../../../Themes/One/README.md)
+<<<<<<< HEAD
 - Vedi anche [README tema One](../../../../themes/one/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Preview custom in Filament
 - **Per anteprime custom nelle pagine Filament usare sempre `ViewEntry`** (mai `CustomEntry`).
@@ -82,6 +88,7 @@ Section::make('Anteprima')
 ## Collegamenti Bidirezionali
 
 ### Modulo Xot (Core)
+<<<<<<< HEAD
 - [README.md](../../xot/project_docs/readme.md) - Indice principale della documentazione
 - [Struttura dei Moduli](../../xot/project_docs/module_structure.md) - Struttura standard dei moduli
 - [Case Sensitivity delle Directory](../../xot/project_docs/directory-case-sensitivity.md) - Regole per la case sensitivity
@@ -99,6 +106,8 @@ Section::make('Anteprima')
 
 ### Documentazione Interna
 - [README del modulo Cms](./readme.md) - Indice principale del modulo Cms
+=======
+>>>>>>> 6ed19256f (.)
 - [README.md](../../Xot/project_docs/README.md) - Indice principale della documentazione
 - [Struttura dei Moduli](../../Xot/project_docs/MODULE_STRUCTURE.md) - Struttura standard dei moduli
 - [Case Sensitivity delle Directory](../../Xot/project_docs/DIRECTORY-CASE-SENSITIVITY.md) - Regole per la case sensitivity
@@ -121,4 +130,8 @@ Section::make('Anteprima')
 
 ---
 
+<<<<<<< HEAD
 > **Nota**: Questo documento è linkato anche dal README di Xot per garantire coerenza tra i moduli.
+=======
+> **Nota**: Questo documento è linkato anche dal README di Xot per garantire coerenza tra i moduli.
+>>>>>>> 6ed19256f (.)

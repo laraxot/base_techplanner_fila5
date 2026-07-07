@@ -43,4 +43,8 @@ Gestione interfaccia utente, componenti, asset e frontend.
 ```
 
 ## Note
+<<<<<<< HEAD
 - Personalizza la configurazione per esigenze di frontend avanzato.
+=======
+- Personalizza la configurazione per esigenze di frontend avanzato.
+>>>>>>> 6ed19256f (.)

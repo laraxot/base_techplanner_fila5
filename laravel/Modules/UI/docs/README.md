@@ -125,6 +125,7 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
 {
     use TransTrait;
 
+<<<<<<< HEAD
 ---
 title: "UI Module Documentation"
 type: documentation
@@ -194,6 +195,8 @@ resources/views/components/ui/
 ## AI Workflows
 - [AI Methodologies](./ai-methodologies.md)
 ||||||| parent of 9a84589 (.)
+=======
+>>>>>>> 6ed19256f (.)
     case LIST = 'list';
     case GRID = 'grid';
 
@@ -201,6 +204,7 @@ resources/views/components/ui/
     {
         return $this->transClass(self::class, $this->value . '.label');
     }
+<<<<<<< HEAD
 }
 ```
 
@@ -222,6 +226,8 @@ resources/views/components/ui/
 - [Xot Module](../xot/docs/readme.md) - Framework core
 - [User Module](../user/docs/readme.md) - Gestione utenti
 - [Lang Module](../lang/docs/readme.md) - Traduzioni
+=======
+>>>>>>> 6ed19256f (.)
 
     public function getTableContentGrid(): array
     {
@@ -633,6 +639,7 @@ protected TableLayoutEnum $layout = TableLayoutEnum::GRID;
 
 **🔄 Ultimo aggiornamento**: 27 Gennaio 2025
 **📦 Versione**: 4.1.0
+<<<<<<< HEAD
 
 ---
 
@@ -644,6 +651,8 @@ Workflow: `.github/workflows/semantic-versioning.yml`
 
 ## 📄 License
 MIT
+=======
+>>>>>>> 6ed19256f (.)
 **🐛 PHPStan level 10**: File core certificati ✅
 **🐛 PHPStan Level 9**: File core certificati ✅
 **🐛 PHPStan Level 9**: File core certificati ✅
@@ -664,6 +673,7 @@ MIT
 *Ultimo aggiornamento: gennaio 2025*
 *Ultimo aggiornamento: gennaio 2025*
 *Ultimo aggiornamento: gennaio 2025*
+<<<<<<< HEAD
 
 
 ## Standard Rules & Workflow
@@ -678,3 +688,5 @@ MIT
 - [QMD Setup](./QMD-SETUP.md) — Configurazione ricerca locale
 - [Performance](./PERFORMANCE-OPTIMIZATION.md) — Metriche e best practice
 - [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout
+=======
+>>>>>>> 6ed19256f (.)

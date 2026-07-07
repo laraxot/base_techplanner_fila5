@@ -4,12 +4,22 @@ declare(strict_types=1);
 
 namespace Themes\Sixteen\Services;
 
+<<<<<<< HEAD
 /**
  * Servizio per la gestione del tema Sixteen.
  *
  * Questo servizio fornisce metodi per la gestione
  * delle configurazioni e funzionalità del tema.
  *
+=======
+use Themes\Sixteen\Services\MenuBuilder;
+/**
+ * Servizio per la gestione del tema Sixteen.
+ * 
+ * Questo servizio fornisce metodi per la gestione
+ * delle configurazioni e funzionalità del tema.
+ * 
+>>>>>>> 6ed19256f (.)
  * Enhanced version integrating with the new Menu Builder System
  */
 class ThemeService
@@ -26,7 +36,12 @@ class ThemeService
 
     public function __construct(
         protected MenuBuilder $menuBuilder
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> 6ed19256f (.)
 
     /**
      * Ottiene il nome del tema.
@@ -73,6 +88,11 @@ class ThemeService
 
     /**
      * Inizializza le risorse del tema.
+<<<<<<< HEAD
+=======
+     *
+     * @return void
+>>>>>>> 6ed19256f (.)
      */
     public function initialize(): void
     {
@@ -129,7 +149,11 @@ class ThemeService
             'implemented' => 26,
             'compliance_percentage' => 48,
             'critical_missing' => ['dropdown', 'pagination', 'spid_integration'],
+<<<<<<< HEAD
             'status' => 'in_development',
+=======
+            'status' => 'in_development'
+>>>>>>> 6ed19256f (.)
         ];
     }
 
@@ -144,12 +168,20 @@ class ThemeService
     /**
      * Ottiene le configurazioni del tema.
      */
+<<<<<<< HEAD
     public function getConfig(?string $key = null, mixed $default = null): mixed
+=======
+    public function getConfig(string $key = null, mixed $default = null): mixed
+>>>>>>> 6ed19256f (.)
     {
         if ($key === null) {
             return config('sixteen');
         }
 
+<<<<<<< HEAD
         return config('sixteen.'.$key, $default);
+=======
+        return config('sixteen.' . $key, $default);
+>>>>>>> 6ed19256f (.)
     }
 }

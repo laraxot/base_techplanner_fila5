@@ -4,18 +4,22 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Modules\User\Actions\Passport\CreateGenericClientAction;
 use Modules\User\Actions\Passport\CreatePasswordClientAction;
 use Modules\User\Actions\Passport\CreatePersonalAccessClientAction;
+=======
+>>>>>>> 6ed19256f (.)
 use Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 class ListOauthClients extends XotBaseListRecords
 {
     protected static string $resource = OauthClientResource::class;
+<<<<<<< HEAD
 
     /**
      * @return array<string, Action>
@@ -96,4 +100,6 @@ class ListOauthClients extends XotBaseListRecords
                 }),
         ];
     }
+=======
+>>>>>>> 6ed19256f (.)
 }

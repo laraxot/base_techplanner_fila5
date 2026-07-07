@@ -1,7 +1,10 @@
 # Module Path Error Resolution - Activity Assets Issue
 
 **Data Creazione**: 2026-01-02
+<<<<<<< HEAD
 **Data Creazione**: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 **Status**: 🔧 RESOLVED
 **Versione**: 1.0.0
 
@@ -132,8 +135,15 @@ try {
 - [Module Path Generation Philosophy](./module-path-generation-philosophy.md)
 - [Xot Philosophy](./philosophy.md)
 - [Activity Philosophy](../Activity/docs/philosophy.md)
+<<<<<<< HEAD
 - [Activity Philosophy](../activity/docs/philosophy.md)
 
 ---
 
 **Filosofia Applicata**: Graceful degradation, non-intrusive, robusto.
+=======
+
+---
+
+**Filosofia Applicata**: Graceful degradation, non-intrusive, robusto.
+>>>>>>> 6ed19256f (.)

@@ -6,6 +6,7 @@ return [
     'fields' => [
         'view' => [
             'label' => 'view',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -33,6 +34,8 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Radio Image',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
 ];

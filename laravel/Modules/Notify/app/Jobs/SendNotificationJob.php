@@ -11,7 +11,10 @@ use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Modules\Notify\Actions\SendNotificationAction;
+<<<<<<< HEAD
 use Modules\Notify\Models\Notification;
+=======
+>>>>>>> 6ed19256f (.)
 use Throwable;
 
 class SendNotificationJob implements ShouldQueue
@@ -23,6 +26,7 @@ class SendNotificationJob implements ShouldQueue
 
     /**
      * Numero di tentativi massimi.
+<<<<<<< HEAD
      */
     public int $tries;
 
@@ -30,6 +34,19 @@ class SendNotificationJob implements ShouldQueue
      * Timeout del job in secondi.
      */
     public int $timeout;
+=======
+     *
+     * @var int
+     */
+    public $tries;
+
+    /**
+     * Timeout del job in secondi.
+     *
+     * @var int
+     */
+    public $timeout;
+>>>>>>> 6ed19256f (.)
 
     /**
      * Crea una nuova istanza del job.
@@ -62,11 +79,15 @@ class SendNotificationJob implements ShouldQueue
      */
     public function handle(SendNotificationAction $action): void
     {
+<<<<<<< HEAD
         $notification = $action->handle($this->recipient, $this->templateCode, $this->data, $this->channels, $this->options);
 
         if ($notification instanceof Notification) {
             return;
         }
+=======
+        $action->execute($this->recipient, $this->templateCode, $this->data, $this->channels, $this->options);
+>>>>>>> 6ed19256f (.)
     }
 
     /**

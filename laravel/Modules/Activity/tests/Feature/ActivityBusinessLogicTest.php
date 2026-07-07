@@ -2,12 +2,21 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use Illuminate\Support\Str;
 use Modules\Activity\Models\Activity;
 
 use function Safe\json_decode;
 use function Safe\json_encode;
 
+=======
+use function Safe\json_decode;
+use function Safe\json_encode;
+
+use Illuminate\Support\Str;
+use Modules\Activity\Models\Activity;
+
+>>>>>>> 6ed19256f (.)
 uses(\Modules\Activity\Tests\TestCase::class);
 
 describe('Activity Business Logic', function () {

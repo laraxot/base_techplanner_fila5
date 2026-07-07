@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+=======
+# Sistema di Prompt per la Documentazione
+
+## Panoramica
+
+Questo documento descrive l'integrazione tra il sistema di documentazione di Xot e il sistema di prompt fornito dal modulo bashscripts.
+
+## Collegamenti
+
+>>>>>>> 6ed19256f (.)
 - [Documentazione Completa del Sistema di Prompt](../../../../bashscripts/docs/PROMPTS_DOCUMENTATION_SYSTEM.md)
 - [Linee Guida Generali per la Documentazione](./DOCUMENTATION-GUIDELINES.md)
 
@@ -5,7 +16,11 @@
 
 Il modulo bashscripts include un sistema di prompt che fornisce istruzioni standardizzate per l'organizzazione e la manutenzione della documentazione attraverso tutti i moduli del progetto.
 
+<<<<<<< HEAD
 Il file principale è `bashscripts/prompts/docs.txt`, che contiene linee guida dettagliate su:
+=======
+Il file principale è `/var/www/html/saluteora/bashscripts/prompts/docs.txt`, che contiene linee guida dettagliate su:
+>>>>>>> 6ed19256f (.)
 
 1. Struttura gerarchica della documentazione
 2. Sistema di collegamenti bidirezionali
@@ -46,6 +61,7 @@ Qualsiasi aggiornamento al sistema di prompt deve essere:
 - [Linee Guida per la Documentazione in Xot](./DOCUMENTATION-GUIDELINES.md)
 - [Percorsi Relativi nella Documentazione](../../../../bashscripts/docs/PERCORSI_RELATIVI_DOCUMENTAZIONE.md)
 - [Documentazione del Sistema di Prompt](../../../../bashscripts/docs/PROMPTS_DOCUMENTATION_SYSTEM.md)
+<<<<<<< HEAD
 ---
 module: theme
 topic: documentation-prompt-system
@@ -53,3 +69,5 @@ canonical: ../../../Themes/docs/shared-components/documentation-prompt-system-1.
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/documentation-prompt-system-1.md
+=======
+>>>>>>> 6ed19256f (.)

@@ -40,8 +40,12 @@ class GeoDataService
     {
         $json = File::get(module_path('Geo', 'resources/json/comuni.json'));
         $data = json_decode($json, true);
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         return collect($data['regions'])
             ->map(fn ($region) => [
                 'id' => $region['code'],
@@ -54,8 +58,12 @@ class GeoDataService
     {
         $json = File::get(module_path('Geo', 'resources/json/comuni.json'));
         $data = json_decode($json, true);
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         return collect($data['regions'])
             ->firstWhere('code', $regionCode)['provinces']
             ->map(fn ($province) => [
@@ -69,8 +77,12 @@ class GeoDataService
     {
         $json = File::get(module_path('Geo', 'resources/json/comuni.json'));
         $data = json_decode($json, true);
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         foreach ($data['regions'] as $region) {
             foreach ($region['provinces'] as $province) {
                 if ($province['code'] === $provinceCode) {
@@ -84,8 +96,12 @@ class GeoDataService
                 }
             }
         }
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         return [];
     }
 }
@@ -122,7 +138,10 @@ class LocationForm extends Component
 
                     'province' => Select::make('province')
                         ->options(fn (Get $get) =>
+<<<<<<< HEAD
                         ->options(fn (Get $get) => 
+=======
+>>>>>>> 6ed19256f (.)
                             $this->geoDataService->getProvinces($get('region'))
                         )
                         ->searchable()
@@ -134,7 +153,10 @@ class LocationForm extends Component
 
                     'city' => Select::make('city')
                         ->options(fn (Get $get) =>
+<<<<<<< HEAD
                         ->options(fn (Get $get) => 
+=======
+>>>>>>> 6ed19256f (.)
                             $this->geoDataService->getCities($get('province'))
                         )
                         ->searchable()
@@ -146,7 +168,10 @@ class LocationForm extends Component
 
                     'cap' => Select::make('cap')
                         ->options(fn (Get $get) =>
+<<<<<<< HEAD
                         ->options(fn (Get $get) => 
+=======
+>>>>>>> 6ed19256f (.)
                             collect($this->geoDataService->getCities($get('province')))
                                 ->firstWhere('code', $get('city'))['cap']
                         )
@@ -187,8 +212,12 @@ class GeoDataService
         return Cache::remember('geo_regions', 86400, function () {
             $json = File::get(module_path('Geo', 'resources/json/comuni.json'));
             $data = json_decode($json, true);
+<<<<<<< HEAD
             
             
+=======
+
+>>>>>>> 6ed19256f (.)
             return collect($data['regions'])
                 ->map(fn ($region) => [
                     'id' => $region['code'],
@@ -223,8 +252,11 @@ class GeoDataService
 - [Clean Code](../../../docs/clean-code.md)
 
 **Nota:** Il namespace corretto per LocationForm è `Modules\Geo\Filament\Forms\LocationForm`. Non usare mai `Modules\Geo\App\Filament\Forms\LocationForm`.
+<<<<<<< HEAD
 - [Documentazione Squire](../../geo/project_docs/squire-integration.md)
 - [Best Practices Filament](../../../../docs/project/filament-best-practices.md)
 - [Clean Code](../../../../docs/project/clean-code.md)
 
 **Nota:** Il namespace corretto per LocationForm è `Modules\Geo\Filament\Forms\LocationForm`. Non usare mai `Modules\Geo\App\Filament\Forms\LocationForm`. 
+=======
+>>>>>>> 6ed19256f (.)

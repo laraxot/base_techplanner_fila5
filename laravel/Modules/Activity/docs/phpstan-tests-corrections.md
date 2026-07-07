@@ -123,4 +123,8 @@ Sempre verificare con `instanceof` prima di accedere alle proprietà.
 
 ### UUID Handling
 Larav `Str::uuid()` restituisce `UuidInterface`, ma molti metodi richiedono `string`.
+<<<<<<< HEAD
 Usare sempre `(string) $uuid` quando necessario.
+=======
+Usare sempre `(string) $uuid` quando necessario.
+>>>>>>> 6ed19256f (.)

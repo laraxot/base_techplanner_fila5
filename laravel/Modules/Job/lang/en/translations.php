@@ -23,6 +23,7 @@ return [
     'started_at' => 'Started at',
     'created_at' => 'Created at',
     'reserved_at' => 'Reserved at',
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -36,4 +37,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

@@ -17,12 +17,34 @@ use Override;
 
 class FailedJobResource extends XotBaseResource
 {
+<<<<<<< HEAD
     protected static ?string $model = FailedJob::class;
+=======
+    protected static null|string $model = FailedJob::class;
+>>>>>>> 6ed19256f (.)
 
     #[Override]
     public static function getFormSchema(): array
     {
+<<<<<<< HEAD
         return [];
+=======
+        return [
+            'uuid' => TextInput::make('uuid')->disabled()->columnSpan(4),
+            'failed_at' => TextInput::make('failed_at')->disabled(),
+            'id' => TextInput::make('id')->disabled(),
+            'connection' => TextInput::make('connection')->disabled(),
+            'queue' => TextInput::make('queue')->disabled(),
+            'exception' => Textarea::make('exception')
+                ->disabled()
+                ->columnSpan(4)
+                ->extraInputAttributes(['style' => 'font-size: 80%;']),
+            'payload' => Textarea::make('payload')
+                ->disabled()
+                ->columnSpan(4)
+                ->extraInputAttributes(['style' => 'font-size: 80%;']),
+        ];
+>>>>>>> 6ed19256f (.)
     }
 
     #[Override]

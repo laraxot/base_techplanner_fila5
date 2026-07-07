@@ -8,221 +8,311 @@ return [
             'label' => 'Titolo',
             'placeholder' => 'Inserisci il titolo',
             'help' => 'Il titolo principale della pagina o della sezione',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'slug' => [
             'label' => 'Slug',
             'placeholder' => 'testo-per-url',
             'help' => 'Versione dell\'URL del titolo (solo lettere minuscole, trattini e numeri)',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'content' => [
             'label' => 'Contenuto',
             'placeholder' => 'Scrivi il contenuto qui...',
             'helper_text' => 'Il contenuto principale della pagina o sezione',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'description' => [
             'label' => 'Descrizione',
             'placeholder' => 'Inserisci una descrizione',
             'help' => 'Testo descrittivo del contenuto',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'type' => [
             'label' => 'Tipo',
             'help' => 'Seleziona il tipo di contenuto',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'view' => [
             'label' => 'Template',
             'placeholder' => 'Seleziona template',
             'helper_text' => 'Template di visualizzazione per questo contenuto',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'is_active' => [
             'label' => 'Attivo',
             'help' => 'Attiva/disattiva questo elemento',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'label' => [
             'label' => 'Etichetta',
             'placeholder' => 'Etichetta del pulsante/collegamento',
             'help' => 'Testo visualizzato per il pulsante o il collegamento',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'version' => [
             'label' => 'Versione',
             'placeholder' => '1.0.0',
             'helper_text' => 'Versione del contenuto per tracking modifiche',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'method' => [
             'label' => 'Metodo',
             'placeholder' => 'GET, POST, PUT',
             'helper_text' => 'Metodo HTTP per form o azioni',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'text' => [
             'label' => 'Testo',
             'placeholder' => 'Inserisci testo',
             'helper_text' => 'Contenuto testuale semplice',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'subtitle' => [
             'label' => 'Sottotitolo',
             'placeholder' => 'Sottotitolo del contenuto',
             'helper_text' => 'Sottotitolo o descrizione aggiuntiva',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'caption' => [
             'label' => 'Didascalia',
             'placeholder' => 'Didascalia per immagine o media',
             'helper_text' => 'Testo descrittivo per contenuti multimediali',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'image' => [
             'label' => 'Immagine',
             'placeholder' => 'Seleziona immagine',
             'helper_text' => 'Immagine principale del contenuto',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'video' => [
             'label' => 'Video',
             'placeholder' => 'URL o file video',
             'helper_text' => 'Video da incorporare o collegare',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'gallery' => [
             'label' => 'Galleria',
             'placeholder' => 'Seleziona immagini per galleria',
             'helper_text' => 'Collezione di immagini per galleria',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'logo' => [
             'label' => 'Logo',
             'help' => 'Carica il file del logo',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'img_uuid' => [
             'label' => 'ID Immagine',
             'placeholder' => 'UUID immagine',
             'helper_text' => 'Identificatore univoco dell\'immagine',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'src' => [
             'label' => 'Sorgente',
             'placeholder' => 'URL o percorso file',
             'helper_text' => 'Percorso o URL della risorsa',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'alt' => [
             'label' => 'Testo alternativo',
             'placeholder' => 'Descrizione per screen reader',
             'helper_text' => 'Testo alternativo per accessibilità',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'ratio' => [
             'label' => 'Proporzioni',
             'placeholder' => '16:9, 4:3, 1:1',
             'helper_text' => 'Rapporto di proporzione per immagini',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'width' => [
             'label' => 'Larghezza',
             'placeholder' => 'Larghezza in px o %',
             'helper_text' => 'Larghezza dell\'elemento',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'height' => [
             'label' => 'Altezza',
             'placeholder' => 'es. auto o 200px',
             'help' => 'Altezza in pixel o lasciare su auto',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'company_name' => [
             'label' => 'Ragione Sociale',
             'placeholder' => 'Azienda S.p.A.',
             'help' => 'Nome completo dell\'azienda',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'address' => [
             'label' => 'Indirizzo',
             'placeholder' => 'Via Roma 1, 00100 Roma RM',
             'help' => 'Indirizzo completo',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'phone' => [
             'label' => 'Telefono',
             'placeholder' => '+39 06 1234567',
             'help' => 'Numero di telefono con prefisso internazionale',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'email' => [
             'label' => 'Email',
             'placeholder' => 'esempio@dominio.com',
             'help' => 'Indirizzo email valido',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'items' => [
             'label' => 'Elementi',
             'help' => 'Elenco degli elementi da visualizzare',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'links' => [
             'label' => 'Collegamenti',
             'placeholder' => 'Aggiungi collegamenti',
             'helper_text' => 'Lista di collegamenti o link',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'url' => [
             'label' => 'URL',
             'placeholder' => 'https://esempio.com',
             'help' => 'Inserisci un URL valido (inizia con http:// o https://)',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'target' => [
             'label' => 'Destinazione',
@@ -231,59 +321,83 @@ return [
                 '_self' => 'Stessa scheda',
                 '_blank' => 'Nuova scheda',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'button_text' => [
             'label' => 'Testo del pulsante',
             'placeholder' => 'Scopri di più',
             'help' => 'Testo visualizzato sul pulsante',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'social_links' => [
             'label' => 'Social Media',
             'help' => 'Collegamenti ai profili social',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'platform' => [
             'label' => 'Piattaforma',
             'help' => 'Seleziona la piattaforma social',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'icon' => [
             'label' => 'Icona',
             'help' => 'Seleziona un\'icona da visualizzare',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'content_blocks' => [
             'label' => 'Blocchi Contenuto',
             'help' => 'Sezioni di contenuto principale',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'sidebar_blocks' => [
             'label' => 'Blocchi Sidebar',
             'help' => 'Contenuti della barra laterale',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'footer_blocks' => [
             'label' => 'Blocchi Footer',
             'help' => 'Contenuti del piè di pagina',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -303,6 +417,7 @@ return [
         'email' => 'Inserisci un indirizzo email valido',
         'url' => 'Inserisci un URL valido (inizia con http:// o https://)',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -312,4 +427,6 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

@@ -17,8 +17,12 @@ class LangServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->loadTranslationsFrom(__DIR__.'/../lang', 'lang');
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         // Cache delle traduzioni
         if ($this->app->runningInConsole()) {
             $this->commands([
@@ -38,15 +42,23 @@ class TranslationValidator
     {
         // Verifica che tutte le lingue supportate abbiano la traduzione
         $supportedLocales = config('app.supported_locales', ['it', 'en']);
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         foreach ($supportedLocales as $locale) {
             if (!isset($translations[$locale][$key])) {
                 return false;
             }
         }
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         return true;
     }
 }
@@ -60,6 +72,7 @@ class TranslationManager
     {
         $locale = $locale ?? app()->getLocale();
         $fallbackLocale = config('app.fallback_locale', 'en');
+<<<<<<< HEAD
         
         $translation = $this->getTranslation($key, $replace, $locale);
         
@@ -67,6 +80,8 @@ class TranslationManager
             return $this->getTranslation($key, $replace, $fallbackLocale);
         }
         
+=======
+>>>>>>> 6ed19256f (.)
 
         $translation = $this->getTranslation($key, $replace, $locale);
 
@@ -86,8 +101,12 @@ class LangServiceProvider extends ServiceProvider
     protected function registerNamespaces(): void
     {
         $this->app['translator']->addNamespace('lang', __DIR__.'/../lang');
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         // Supporto per namespace personalizzati
         foreach (config('lang.namespaces', []) as $namespace => $path) {
             $this->app['translator']->addNamespace($namespace, $path);
@@ -107,8 +126,12 @@ class CacheTranslationsCommand extends Command
     {
         $translations = $this->getAllTranslations();
         Cache::put('translations', $translations, now()->addDay());
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         $this->info('Traduzioni cacheate con successo.');
     }
 }
@@ -140,11 +163,14 @@ class LocaleMiddleware
     public function handle($request, Closure $next)
     {
         $locale = $request->header('Accept-Language');
+<<<<<<< HEAD
         
         if ($locale && in_array($locale, config('lang.supported_locales'))) {
             app()->setLocale($locale);
         }
         
+=======
+>>>>>>> 6ed19256f (.)
 
         if ($locale && in_array($locale, config('lang.supported_locales'))) {
             app()->setLocale($locale);
@@ -184,7 +210,10 @@ class TranslationMissing
 
 ## Collegamenti
 - [Documentazione Traduzioni](../README.md)
+<<<<<<< HEAD
 - [Documentazione Traduzioni](../readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Guida Implementazione](./implementation-guide.md)
 - [Best Practices](./best-practices.md)
 
@@ -372,4 +401,7 @@ class TranslationMissing
 - Gestire fallback locale
 - Supportare namespace personalizzati
 - Ottimizzare performance
+<<<<<<< HEAD
 - Ottimizzare performance 
+=======
+>>>>>>> 6ed19256f (.)

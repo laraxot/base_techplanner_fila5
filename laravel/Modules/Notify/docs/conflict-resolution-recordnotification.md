@@ -1,7 +1,11 @@
 # Risoluzione Conflitti RecordNotification.php
 
 ## Contesto del Conflitto
+<<<<<<< HEAD
 **File**: `Modules/Notify/app/Notifications/RecordNotification.php`
+=======
+**File**: `/var/www/html/ptvx/laravel/Modules/Notify/app/Notifications/RecordNotification.php`
+>>>>>>> 6ed19256f (.)
 **Linee**: 77-91
 **Tipo**: Conflitto tra codice pulito e codice di debug
 
@@ -80,6 +84,7 @@ Verificare che:
 - [Root Conflict Resolution Guidelines](../../../docs/conflict-resolution-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
+<<<<<<< HEAD
 - [Notify Module Documentation](README.md)
 - [RecordNotification Implementation](notifications/record_notification.md)
 - [SpatieEmail Integration](spatie_email_usage_guide.md)
@@ -90,6 +95,12 @@ Verificare che:
 
 ## Contesto del Conflitto
 **File**: `Modules/Notify/app/Notifications/RecordNotification.php`
+=======
+# Risoluzione Conflitti RecordNotification.php
+
+## Contesto del Conflitto
+**File**: `/var/www/html/ptvx/laravel/Modules/Notify/app/Notifications/RecordNotification.php`
+>>>>>>> 6ed19256f (.)
 **Linee**: 77-91
 **Tipo**: Conflitto tra codice pulito e codice di debug
 
@@ -168,9 +179,12 @@ Verificare che:
 - [Root Conflict Resolution Guidelines](../../../project_docs/conflict-resolution-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
+<<<<<<< HEAD
 - [Notify Module Documentation](README.md)
 - [RecordNotification Implementation](notifications/record_notification.md)
 - [SpatieEmail Integration](spatie_email_usage_guide.md)
 - [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
+=======
+>>>>>>> 6ed19256f (.)

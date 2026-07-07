@@ -152,6 +152,7 @@ class UserResource extends XotBaseResource
 }
 ```
 
+<<<<<<< HEAD
 **⚠️ REGOLA CRITICA**: Chi estende `XotBaseResource` **NON deve avere**:
 
 - `protected static ?string $recordTitleAttribute` 
@@ -169,6 +170,8 @@ class UserResource extends XotBaseResource
 2. **Rimuoverli**: Elimina le proprietà e i metodi dalla Resource
 3. **Verificare le traduzioni**: Assicurati che i file di traduzione contengano tutte le chiavi necessarie
 
+=======
+>>>>>>> 6ed19256f (.)
 **Metodi NON consentiti**:
 ```php
 // ❌ SBAGLIATO
@@ -204,6 +207,7 @@ class UserResource extends XotBaseResource
 2. **Rimuovi proprietà/metodi**: Elimina le proprietà e i metodi dalla Resource
 3. **Verifica funzionamento**: Assicurati che le traduzioni vengano caricate correttamente dal `LangServiceProvider`
 
+<<<<<<< HEAD
 **⚠️ REGOLA CRITICA**: Chi estende `XotBaseResource` **NON deve avere**:
 
 - `protected static ?string $recordTitleAttribute` 
@@ -221,6 +225,8 @@ class UserResource extends XotBaseResource
 2. **Rimuoverli**: Elimina le proprietà e i metodi dalla Resource
 3. **Verificare le traduzioni**: Assicurati che i file di traduzione contengano tutte le chiavi necessarie (`navigation`, `label`, `plural_label`, `fields`, `actions`)
 
+=======
+>>>>>>> 6ed19256f (.)
 **Struttura file traduzione per Resource**:
 
 ⚠️ **REGOLA OBBLIGATORIA**: I file di traduzione devono **SEMPRE** contenere le seguenti chiavi:
@@ -673,8 +679,12 @@ class DashboardPage extends XotBasePage
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\healthcare_app\Filament\Widgets;
 namespace Modules\Chart\Filament\Widgets;
+=======
+namespace Modules\Quaeris\Filament\Widgets;
+>>>>>>> 6ed19256f (.)
 
 use Modules\Xot\Filament\Widgets\XotBaseTableWidget;
 use Filament\Widgets\Concerns\InteractsWithPageFilters;
@@ -826,8 +836,11 @@ Prima di creare una nuova classe Filament:
 
 - [XotBaseResource Documentation](../../laravel/Modules/Xot/docs/consolidated/filament/resources/xot-base-resource.md)
 - [Base Classes Documentation](../../laravel/Modules/Xot/docs/consolidated/base-classes.md)
+<<<<<<< HEAD
 - [XotBaseResource Documentation](../../laravel/modules/xot/docs/consolidated/filament/resources/xot-base-resource.md)
 - [Base Classes Documentation](../../laravel/modules/xot/docs/consolidated/base-classes.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Spatie Queueable Actions](https://github.com/spatie/laravel-queueable-action)
 - [Filament v4 Documentation](https://filamentphp.com/docs/4.x)
 
@@ -881,4 +894,8 @@ Quando finisci una modifica devi sempre controllare con:
 
 ---
 
+<<<<<<< HEAD
 **Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
+=======
+**Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
+>>>>>>> 6ed19256f (.)

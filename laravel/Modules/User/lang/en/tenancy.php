@@ -8,6 +8,7 @@ return [
         'edit' => 'Edit Shop Data',
     ],
     'fields' => [
+<<<<<<< HEAD
         'name' => [
             'label' => 'Name',
             'tooltip' => '',
@@ -26,12 +27,20 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+=======
+        'name' => 'Name',
+        'phone' => 'Phone',
+        'email' => 'Email',
+>>>>>>> 6ed19256f (.)
     ],
     'actions' => [
         'register_tenant' => [
             'label' => 'Add Studio',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

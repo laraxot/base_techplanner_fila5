@@ -1,6 +1,7 @@
 # XotBaseResource Pattern
 
 ## Panoramica
+<<<<<<< HEAD
 
 `XotBaseResource` estende `Resource` di Filament e centralizza configurazione comune (DRY).
 
@@ -18,6 +19,8 @@
 - `getTableColumns()` — **NON richiesto**, gestito da `XotBaseListRecords::getListTableColumns()` nella pagina ListRecords
 - `getPages()` — NON necessario se standard (CRUD)
 - `getTableActions()` — NON necessario se standard
+=======
+>>>>>>> 6ed19256f (.)
 Il `XotBaseResource` è una classe astratta che estende il `Resource` di Filament e fornisce una base comune per tutte le risorse dei moduli. Questo pattern segue il principio DRY (Don't Repeat Yourself) centralizzando la configurazione comune delle risorse.
 
 ## Caratteristiche Principali
@@ -46,10 +49,13 @@ Ogni modulo può personalizzare:
 ```php
 namespace Modules\YourModule\Filament\Resources;
 
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
+=======
+>>>>>>> 6ed19256f (.)
 class YourResource extends XotBaseResource
 {
     protected static ?string $model = YourModel::class;
@@ -67,11 +73,15 @@ class YourResource extends XotBaseResource
             // Definisci qui le colonne della tabella
         ];
     }
+<<<<<<< HEAD
     // getTableColumns() NON necessario - gestito da XotBaseListRecords
+=======
+>>>>>>> 6ed19256f (.)
 }
 ```
 
 ## Best Practices
+<<<<<<< HEAD
 
 1. NON sovrascrivere `form()` e `table()` (sono `final`)
 2. Le colonne tabella vanno in `ListRecords::getListTableColumns()`, NON nella Resource
@@ -79,6 +89,8 @@ class YourResource extends XotBaseResource
 4. `declare(strict_types=1)` obbligatorio
 
 Per la guida completa: `filament-class-extension-rules.md`
+=======
+>>>>>>> 6ed19256f (.)
 1. Non sovrascrivere i metodi `form()` e `table()`
 2. Utilizzare i metodi `getFormSchema()` e `getTableColumns()` per la personalizzazione
 3. Mantenere la coerenza dei namespace seguendo la convenzione `Modules\{ModuleName}\Filament\Resources`
@@ -87,4 +99,8 @@ Per la guida completa: `filament-class-extension-rules.md`
 ## Note Tecniche
 - Il resource utilizza `strict_types=1`
 - Supporta la configurazione dei metatag attraverso `MetatagData`
+<<<<<<< HEAD
 - Integra con il sistema di moduli Laravel attraverso la configurazione `modules.namespace`
+=======
+- Integra con il sistema di moduli Laravel attraverso la configurazione `modules.namespace`
+>>>>>>> 6ed19256f (.)

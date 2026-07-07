@@ -8,7 +8,11 @@ use Spatie\LaravelData\Data;
 
 class LinkData extends Data
 {
+<<<<<<< HEAD
     public string $title = '';
+=======
+    public string $title;
+>>>>>>> 6ed19256f (.)
 
     public string $icon;
 

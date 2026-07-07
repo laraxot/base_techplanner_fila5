@@ -31,11 +31,18 @@ L'azione accetta un'istanza di `Panel` come parametro di riferimento e applica l
 - [Filament Best Practices](../filament-best-practices.md)
 - [PHPStan Guidelines](../PHPSTAN-LEVEL9-GUIDE.md)
 - [Spatie QueueableAction Documentation](../DATA-QUEABLEACTIONS.md)
+<<<<<<< HEAD
 - [PHPStan Guidelines](../phpstan-level9-guide.md)
 - [Spatie QueueableAction Documentation](../data-queableactions.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Modifiche e Miglioramenti
 - Risoluzione dei conflitti di merge
 - Aggiunta di type hints appropriati
 - Implementazione della gestione degli errori
+<<<<<<< HEAD
 - Documentazione del codice
+=======
+- Documentazione del codice
+>>>>>>> 6ed19256f (.)

@@ -83,11 +83,14 @@ public function test_user_can_withdraw_consent()
 {
     $user = User::factory()->create();
     $consent = $user->consents()->create([/* ... */]);
+<<<<<<< HEAD
     
     $this->actingAs($user)
          ->delete(route('gdpr.consent.destroy', $consent))
          ->assertStatus(204);
          
+=======
+>>>>>>> 6ed19256f (.)
 
     $this->actingAs($user)
          ->delete(route('gdpr.consent.destroy', $consent))
@@ -218,4 +221,8 @@ public function test_user_can_withdraw_consent()
 ## Continuous Improvement
 - Regular policy reviews
 - Stay updated with regulations
+<<<<<<< HEAD
 - Solicit user feedback
+=======
+- Solicit user feedback
+>>>>>>> 6ed19256f (.)

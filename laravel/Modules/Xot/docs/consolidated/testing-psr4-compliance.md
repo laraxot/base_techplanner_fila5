@@ -105,7 +105,11 @@ composer dump-autoload
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Testing Guide - Modulo <nome progetto>](../../<nome progetto>/project_docs/testing.md)
+=======
+- [Testing Guide - Modulo SaluteMo](../../SaluteMo/project_docs/testing.md)
+>>>>>>> 6ed19256f (.)
 - [PHPStan Configuration](./phpstan-configuration-fixes.md)
 - [Best Practices](./best-practices-consolidated.md)
 

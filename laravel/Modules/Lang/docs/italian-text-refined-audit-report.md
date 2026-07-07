@@ -32,4 +32,8 @@ Si concentra su:
 
 **I file di traduzione non italiani NON devono contenere testi chiaramente italiani.**
 
+<<<<<<< HEAD
 Ogni testo deve essere tradotto nella lingua appropriata del file, escludendo termini internazionali standard.
+=======
+Ogni testo deve essere tradotto nella lingua appropriata del file, escludendo termini internazionali standard.
+>>>>>>> 6ed19256f (.)

@@ -108,6 +108,9 @@ Wrappare sempre gli elementi multipli in un singolo elemento container:
 - [Documentazione Principale](../../docs/INDEX.md)
 - [Best Practices Frontend](web-design-rules.md)
 - [Gestione Componenti](components.md)
+<<<<<<< HEAD
 - [Documentazione Principale](../../project_docs/index.md)
 - [Best Practices Frontend](web-design-rules.md)
 - [Gestione Componenti](components.md) 
+=======
+>>>>>>> 6ed19256f (.)

@@ -1,5 +1,8 @@
 <?php
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 declare(strict_types=1);
 
 return [
@@ -18,30 +21,42 @@ return [
         'resource_type' => [
             'label' => 'Tipo Risorsa',
             'help' => 'Tipo di risorsa attività',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'resource_id' => [
             'label' => 'ID Risorsa',
             'help' => 'Identificativo della risorsa',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'activity_count' => [
             'label' => 'Numero Attività',
             'help' => 'Numero di attività associate',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'last_activity' => [
             'label' => 'Ultima Attività',
             'help' => 'Data e ora dell\'ultima attività',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -58,6 +73,9 @@ return [
         'no_resources' => 'Nessuna risorsa trovata',
         'resource_exported' => 'Risorsa esportata con successo',
     ],
+<<<<<<< HEAD
     'label' => 'Activity Resource',
     'plural_label' => 'Activity Resource (Plurale)',
+=======
+>>>>>>> 6ed19256f (.)
 ];

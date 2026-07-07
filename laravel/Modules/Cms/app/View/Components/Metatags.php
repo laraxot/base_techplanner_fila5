@@ -6,7 +6,10 @@ namespace Modules\Cms\View\Components;
 
 use Illuminate\Contracts\View\View as ViewContract;
 use Illuminate\View\Component;
+<<<<<<< HEAD
 use Modules\Cms\Support\PageSchemaBuilder;
+=======
+>>>>>>> 6ed19256f (.)
 use Modules\Xot\Actions\GetViewAction;
 use Modules\Xot\Datas\MetatagData;
 
@@ -19,6 +22,7 @@ class Metatags extends Component
     {
         $metatag = MetatagData::make();
         $view = app(GetViewAction::class)->execute();
+<<<<<<< HEAD
         $route = request()->route();
         $routeName = $route?->getName();
         /** @var array<string, mixed> $routeParameters */
@@ -40,6 +44,13 @@ class Metatags extends Component
                 user: auth()->user(),
             ),
         ];
+=======
+
+        $view_params = [
+            'meta' => $metatag,
+        ];
+        // @phpstan-ignore-next-line
+>>>>>>> 6ed19256f (.)
         if (! view()->exists($view)) {
             throw new \Exception('view not found: '.$view);
         }

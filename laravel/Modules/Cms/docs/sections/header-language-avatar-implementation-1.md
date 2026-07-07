@@ -1,9 +1,15 @@
 # Implementazione del Selettore di Lingua e Avatar Utente nell'Header
 
 ## Collegamenti correlati
+<<<<<<< HEAD
 - [README modulo Cms](./readme.md)
 - [Documentazione User](../../user/docs/header_language_avatar_implementation.md)
 - [Documentazione Sezioni](./sections_structure.md)
+=======
+- [README modulo Cms](./README.md)
+- [Documentazione User](../../User/docs/HEADER_LANGUAGE_AVATAR_IMPLEMENTATION.md)
+- [Documentazione Sezioni](./SECTIONS_STRUCTURE.md)
+>>>>>>> 6ed19256f (.)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica
@@ -375,4 +381,8 @@ Ecco come dovrebbe apparire il file JSON completo dell'header dopo le modifiche:
 
 - [Documentazione Alpine.js](https://alpinejs.dev/) - Per le interazioni dropdown
 - [Documentazione Filament](https://filamentphp.com/docs) - Per i componenti UI
+<<<<<<< HEAD
 - [Documentazione Laravel Localization](https://laravel.com/docs/10.x/localization) - Per la gestione delle lingue
+=======
+- [Documentazione Laravel Localization](https://laravel.com/docs/10.x/localization) - Per la gestione delle lingue
+>>>>>>> 6ed19256f (.)

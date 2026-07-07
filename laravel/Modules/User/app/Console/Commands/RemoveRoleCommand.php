@@ -13,16 +13,30 @@ use function Laravel\Prompts\text;
 use Modules\User\Models\Role;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
+<<<<<<< HEAD
+=======
+use Symfony\Component\Console\Input\InputOption;
+>>>>>>> 6ed19256f (.)
 
 class RemoveRoleCommand extends Command
 {
     /**
      * The name and signature of the console command.
+<<<<<<< HEAD
+=======
+     *
+     * @var string
+>>>>>>> 6ed19256f (.)
      */
     protected $name = 'user:remove-role';
 
     /**
      * The console command description.
+<<<<<<< HEAD
+=======
+     *
+     * @var string
+>>>>>>> 6ed19256f (.)
      */
     protected $description = 'remove a role to user';
 
@@ -66,6 +80,7 @@ class RemoveRoleCommand extends Command
         $this->info(implode(', ', $rows).' dessigned to '.$email);
     }
 
+<<<<<<< HEAD
     /*
      * Get the console command options.
      */
@@ -75,4 +90,18 @@ class RemoveRoleCommand extends Command
     //        ['example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null],
     //    ];
     // }
+=======
+    /**
+     * Get the console command arguments.
+     */
+    /**
+     * Get the console command options.
+     */
+    protected function getOptions(): array
+    {
+        return [
+            ['example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null],
+        ];
+    }
+>>>>>>> 6ed19256f (.)
 }

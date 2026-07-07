@@ -12,7 +12,11 @@ Il trait `RelationX` aggiungeva automaticamente il prefisso del database al nome
 ## Soluzione Implementata
 
 ### File Modificato
+<<<<<<< HEAD
 `Modules/Xot/app/Models/Traits/RelationX.php`
+=======
+`/var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/Xot/app/Models/Traits/RelationX.php`
+>>>>>>> 6ed19256f (.)
 
 ### Correzione Applicata
 Righe 51-59, aggiunto controllo del driver database:
@@ -74,7 +78,11 @@ echo $tenants->count(); // ✅ Output: 1
 ## Riferimenti
 
 - [Customer User Fix Summary](../../<nome progetto>/docs/customer_user_fix_summary.md)
+<<<<<<< HEAD
 - [Cross Database Relations](../../user/docs/cross_database_relations_issue.md)
+=======
+- [Cross Database Relations](../../User/docs/cross_database_relations_issue.md)
+>>>>>>> 6ed19256f (.)
 - [Multi-Tenant Architecture](../architecture/multi_tenant_design.md)
 
 ## Note per Manutenzione Futura
@@ -86,4 +94,8 @@ echo $tenants->count(); // ✅ Output: 1
 
 ---
 
+<<<<<<< HEAD
 *Fix implementato e verificato - Sistema multi-tenant completamente funzionante*
+=======
+*Fix implementato e verificato - Sistema multi-tenant completamente funzionante*
+>>>>>>> 6ed19256f (.)

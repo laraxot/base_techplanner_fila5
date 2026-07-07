@@ -42,7 +42,11 @@ use Modules\User\Models\Traits\HasTenants;
 class User extends Authenticatable
 {
     use HasTenants;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // ... resto del codice
 }
 ```
@@ -51,4 +55,8 @@ class User extends Authenticatable
 - Il trait richiede che il modello utilizzi anche il trait `HasRoles` per la gestione dei ruoli
 - È necessario avere una tabella pivot `tenant_user` con le colonne `user_id`, `tenant_id`, `role` e `timestamps`
 - La tabella dei tenant deve avere le colonne `id`, `name`, `domain`, `settings`, `owner_id` e `timestamps`
+<<<<<<< HEAD
 - Il trait è integrato con Filament per la gestione dei tenant nel pannello amministrativo 
+=======
+- Il trait è integrato con Filament per la gestione dei tenant nel pannello amministrativo
+>>>>>>> 6ed19256f (.)

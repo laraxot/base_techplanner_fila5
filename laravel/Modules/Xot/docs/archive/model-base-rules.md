@@ -87,10 +87,13 @@ abstract class BaseModel extends XotBaseModel
 
 ## Backlink e Riferimenti
 
+<<<<<<< HEAD
 - [modules/xot/project_docs/model_base_rules.md](model_base_rules.md)
 - [docs/MODULE_NAMESPACE_RULES.md](../../project_docs/module_namespace_rules.md)
 - [modules/performance/project_docs/organizzativa-models.md](../performance/project_docs/organizzativa-models.md)
 
+=======
+>>>>>>> 6ed19256f (.)
 *Ultimo aggiornamento: maggio 2025*
 - [modules/xot/project_docs/model_base_rules.md](model_base_rules.md)
 - [docs/MODULE_NAMESPACE_RULES.md](../../project_docs/MODULE_NAMESPACE_RULES.md)
@@ -191,5 +194,8 @@ abstract class BaseModel extends XotBaseModel
 - [modules/performance/docs/organizzativa-models.md](../Performance/docs/organizzativa-models.md)
 
 *Ultimo aggiornamento: maggio 2025*
+<<<<<<< HEAD
 - [docs/MODULE_NAMESPACE_RULES.md](../../../docs/module_namespace_rules.md)
 - [modules/performance/docs/organizzativa-models.md](../performance/docs/organizzativa-models.md)
+=======
+>>>>>>> 6ed19256f (.)

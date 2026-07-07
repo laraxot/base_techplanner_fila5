@@ -19,8 +19,11 @@ return [
         'id' => [
             'label' => 'ID',
             'helper_text' => 'Identificativo univoco del template',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'mailable' => [
             'label' => 'Mailable Class',
@@ -28,7 +31,10 @@ return [
             'help' => 'The PHP class that handles email sending',
             'helper_text' => 'Classe PHP che gestisce l\'invio dell\'email',
             'description' => 'mailable',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'subject' => [
             'label' => 'Subject',
@@ -36,7 +42,10 @@ return [
             'help' => 'The subject that will appear in the email',
             'helper_text' => 'Oggetto dell\'email',
             'description' => 'subject',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'html_template' => [
             'label' => 'HTML Content',
@@ -44,7 +53,10 @@ return [
             'help' => 'The email content in HTML format',
             'helper_text' => 'Contenuto HTML del template email',
             'description' => 'html_template',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'text_template' => [
             'label' => 'Text Content',
@@ -52,57 +64,82 @@ return [
             'help' => 'Text version of the email for clients that don\'t support HTML',
             'helper_text' => 'Versione testuale del template email',
             'description' => 'text_template',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'version' => [
             'label' => 'Version',
             'help' => 'Template version number',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'created_at' => [
             'label' => 'Created At',
             'helper_text' => 'Data di creazione del template',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'updated_at' => [
             'label' => 'Last Modified',
             'helper_text' => 'Data dell\'ultima modifica del template',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'from_email' => [
             'label' => 'Email mittente',
             'helper_text' => 'Indirizzo email del mittente',
             'placeholder' => 'noreply@example.com',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'from_name' => [
             'label' => 'Nome mittente',
             'helper_text' => 'Nome visualizzato del mittente',
             'placeholder' => 'Nome Azienda',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'variables' => [
             'label' => 'Variabili disponibili',
             'helper_text' => 'Elenco delle variabili che possono essere utilizzate nel template',
             'placeholder' => 'es: {{name}}, {{email}}',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'is_markdown' => [
             'label' => 'Usa Markdown',
             'helper_text' => 'Indica se il template utilizza la sintassi Markdown',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'status' => [
             'label' => 'Stato',
             'helper_text' => 'Stato attuale del template',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
         ],
@@ -141,27 +178,56 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+        ],
+        'layout' => [
+            'label' => 'layout',
+>>>>>>> 6ed19256f (.)
         ],
         'slug' => [
             'label' => 'slug',
             'description' => 'slug',
             'helper_text' => 'slug',
             'placeholder' => 'slug',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'name' => [
             'description' => 'Nome del template',
             'helper_text' => 'Nome descrittivo per identificare il template',
             'placeholder' => 'Es: Benvenuto, Conferma ordine, Reset password',
             'label' => 'Nome Template',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'params' => [
             'label' => 'Parametri',
             'helper_text' => 'Inserisci i parametri separati da virgola che possono essere utilizzati nel template',
             'placeholder' => 'name, email, date, company',
             'description' => 'Parametri disponibili per il template email',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'filters' => [
@@ -295,6 +361,9 @@ return [
     'model' => [
         'label' => 'mail template.model',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

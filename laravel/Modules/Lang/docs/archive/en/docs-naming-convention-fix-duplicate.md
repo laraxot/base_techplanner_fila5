@@ -31,7 +31,11 @@ Le cartelle `docs` contenevano file e sottocartelle con caratteri maiuscoli, vio
 ### Modulo User
 - ✅ `phpstan/analisi_phpstan.md` → `phpstan/analisi-phpstan.md`
 
+<<<<<<< HEAD
 ### Modulo <nome progetto>
+=======
+### Modulo SaluteOra
+>>>>>>> 6ed19256f (.)
 - ✅ `factories/Factory-Ecosystem-Implementation.md` → `factories/factory-ecosystem-implementation.md`
 - ✅ `factories/UserFactory-improvements-analysis.md` → `factories/userfactory-improvements-analysis.md`
 - ✅ `factories/UserFactory-advanced-improvements-analysis.md` → `factories/userfactory-advanced-improvements-analysis.md`

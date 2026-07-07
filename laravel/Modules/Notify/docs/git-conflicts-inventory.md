@@ -18,5 +18,9 @@
 ## Stato
 - ❌ Conflitti da risolvere
 - 📅 Data rilevamento: 2025-11-12
+<<<<<<< HEAD
 - 📅 Data rilevamento: [DATE]
 - 🔄 Priorità: MEDIA - Template email e test
+=======
+- 🔄 Priorità: MEDIA - Template email e test
+>>>>>>> 6ed19256f (.)

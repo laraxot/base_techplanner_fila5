@@ -7,6 +7,10 @@ use Modules\Cms\Tests\TestCase;
 uses(TestCase::class);
 
 it('GET /it/dashboard acceptable for unauthenticated (redirect/401/403)', function (): void {
+<<<<<<< HEAD
+=======
+    /** @phpstan-ignore-next-line property.notFound */
+>>>>>>> 6ed19256f (.)
     $res = $this->get('/it/dashboard');
     $status = (int) $res->getStatusCode();
 

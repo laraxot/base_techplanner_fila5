@@ -237,6 +237,12 @@ Ora posso procedere a:
 
 **Questa regola è ora SUPREMA e ha precedenza su qualsiasi altra considerazione di testing.**
 
+<<<<<<< HEAD
 **Data implementazione**: Gennaio 2025  
 **Status**: COMPLETATO  
 **Applicabilità**: UNIVERSALE - tutto il progetto <nome progetto>
+=======
+**Data implementazione**: Gennaio 2025
+**Status**: COMPLETATO
+**Applicabilità**: UNIVERSALE - tutto il progetto <nome progetto>
+>>>>>>> 6ed19256f (.)

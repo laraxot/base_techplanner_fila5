@@ -5,7 +5,11 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Código de Autorização OAuth',
+<<<<<<< HEAD
         'group' => '',
+=======
+        'group' => 'OAuth',
+>>>>>>> 6ed19256f (.)
         'icon' => 'heroicon-o-key',
         'sort' => 32,
     ],
@@ -14,6 +18,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -53,6 +58,26 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'user_id' => [
+            'label' => 'Usuário',
+        ],
+        'client_id' => [
+            'label' => 'Cliente',
+        ],
+        'name' => [
+            'label' => 'Nome',
+        ],
+        'scopes' => [
+            'label' => 'Escopos',
+        ],
+        'revoked' => [
+            'label' => 'Revogado',
+        ],
+        'expires_at' => [
+            'label' => 'Expira Em',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [

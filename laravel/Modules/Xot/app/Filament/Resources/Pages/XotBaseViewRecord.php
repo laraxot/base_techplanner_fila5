@@ -6,15 +6,21 @@ namespace Modules\Xot\Filament\Resources\Pages;
 
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
+<<<<<<< HEAD
 use Filament\Pages\Dashboard\Concerns\HasFiltersForm;
+=======
+>>>>>>> 6ed19256f (.)
 use Filament\Resources\Pages\ViewRecord as FilamentViewRecord;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
 
 abstract class XotBaseViewRecord extends FilamentViewRecord
 {
+<<<<<<< HEAD
     use HasFiltersForm;
 
+=======
+>>>>>>> 6ed19256f (.)
     final public function infolist(Schema $schema): Schema
     {
         return $schema->components($this->getInfolistSchema());

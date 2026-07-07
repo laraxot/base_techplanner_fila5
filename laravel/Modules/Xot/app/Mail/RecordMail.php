@@ -9,14 +9,22 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
 /**
+<<<<<<< HEAD
  * Class RecordMail.
+=======
+ * Class RecordMail
+>>>>>>> 6ed19256f (.)
  *
  * Mailable per l'invio di dati di record via email.
  */
 class RecordMail extends Mailable
 {
+<<<<<<< HEAD
     use Queueable;
     use SerializesModels;
+=======
+    use Queueable, SerializesModels;
+>>>>>>> 6ed19256f (.)
 
     /**
      * @var array<string, mixed>
@@ -26,7 +34,11 @@ class RecordMail extends Mailable
     /**
      * Crea una nuova istanza del mailable.
      *
+<<<<<<< HEAD
      * @param array<string, mixed> $data I dati del record
+=======
+     * @param  array<string, mixed>  $data  I dati del record
+>>>>>>> 6ed19256f (.)
      */
     public function __construct(array $data)
     {

@@ -4,14 +4,23 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit;
 
+<<<<<<< HEAD
+=======
+use function Safe\json_decode;
+use function Safe\json_encode;
+
+>>>>>>> 6ed19256f (.)
 use Carbon\Carbon;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Models\Snapshot;
 use Tests\TestCase;
 
+<<<<<<< HEAD
 use function Safe\json_decode;
 use function Safe\json_encode;
 
+=======
+>>>>>>> 6ed19256f (.)
 uses(TestCase::class);
 
 describe('Event Sourcing Business Logic', function () {

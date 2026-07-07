@@ -1,10 +1,14 @@
 # Notifiche Telegram
 
 Questa documentazione descrive come implementare notifiche Telegram nel modulo Notify di .
+<<<<<<< HEAD
 Questa documentazione descrive come implementare notifiche Telegram nel modulo Notify di <nome progetto>.
 # Notifiche Telegram 
 
 Questa documentazione descrive come implementare notifiche Telegram nel modulo Notify di Quaeris.
+=======
+Questa documentazione descrive come implementare notifiche Telegram nel modulo Notify di SaluteOra.
+>>>>>>> 6ed19256f (.)
 
 ## Indice
 
@@ -20,8 +24,12 @@ Questa documentazione descrive come implementare notifiche Telegram nel modulo N
 ## Introduzione
 
 Telegram offre un'ottima piattaforma per notifiche istantanee grazie alla sua API per bot.  integra Telegram per inviare notifiche relative ad appuntamenti, promemoria e altre comunicazioni importanti.
+<<<<<<< HEAD
 Telegram offre un'ottima piattaforma per notifiche istantanee grazie alla sua API per bot. <nome progetto> integra Telegram per inviare notifiche relative ad appuntamenti, promemoria e altre comunicazioni importanti.
 Telegram offre un'ottima piattaforma per notifiche istantanee grazie alla sua API per bot. Quaeris integra Telegram per inviare notifiche relative ad appuntamenti, promemoria e altre comunicazioni importanti.
+=======
+Telegram offre un'ottima piattaforma per notifiche istantanee grazie alla sua API per bot. SaluteOra integra Telegram per inviare notifiche relative ad appuntamenti, promemoria e altre comunicazioni importanti.
+>>>>>>> 6ed19256f (.)
 
 ## Setup del Bot Telegram
 
@@ -38,6 +46,7 @@ Il bot di  deve avere:
 - Privacy Mode disattivata (per leggere messaggi nei gruppi)
 - Comandi personalizzati configurati
 - Immagine del profilo con logo
+<<<<<<< HEAD
 Il bot di <nome progetto> deve avere:
 - Privacy Mode disattivata (per leggere messaggi nei gruppi)
 - Comandi personalizzati configurati
@@ -46,6 +55,12 @@ Il bot di Quaeris deve avere:
 - Privacy Mode disattivata (per leggere messaggi nei gruppi)
 - Comandi personalizzati configurati
 - Immagine del profilo con logo Quaeris
+=======
+Il bot di SaluteOra deve avere:
+- Privacy Mode disattivata (per leggere messaggi nei gruppi)
+- Comandi personalizzati configurati
+- Immagine del profilo con logo SaluteOra
+>>>>>>> 6ed19256f (.)
 
 ### Comandi Consigliati
 
@@ -53,8 +68,12 @@ Configura i seguenti comandi per il tuo bot:
 ```
 start - Inizia l'interazione con il bot
 register - Collega il tuo account Telegram a
+<<<<<<< HEAD
 register - Collega il tuo account Telegram a <nome progetto>
 register - Collega il tuo account Telegram a Quaeris
+=======
+register - Collega il tuo account Telegram a SaluteOra
+>>>>>>> 6ed19256f (.)
 unregister - Scollega il tuo account Telegram
 settings - Gestisci le tue preferenze di notifica
 help - Ottieni assistenza
@@ -98,23 +117,34 @@ use NotificationChannels\Telegram\TelegramMessage;
 class AppointmentNotification extends Notification
 {
     protected $appointment;
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function __construct($appointment)
     {
         $this->appointment = $appointment;
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function via($notifiable)
     {
         return [TelegramChannel::class];
     }
+<<<<<<< HEAD
     
     public function toTelegram($notifiable)
     {
         $url = url("/appointments/{$this->appointment->id}");
         
+=======
+>>>>>>> 6ed19256f (.)
 
     public function toTelegram($notifiable)
     {
@@ -158,8 +188,12 @@ public function toTelegram($notifiable)
 public function toTelegram($notifiable)
 {
     $appointmentId = $this->appointment->id;
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     return TelegramMessage::create()
         ->content("Confermi l'appuntamento del {$this->appointment->formatted_date}?")
         ->buttonWithCallback('Conferma', "confirm_appointment_{$appointmentId}")
@@ -187,6 +221,7 @@ Per collegare un account Telegram a un utente :
 
 1. Implementa un comando `/register` nel bot che generi un token univoco.
 2. L'utente inserisce questo token nel proprio profilo nell'app .
+<<<<<<< HEAD
 Per collegare un account Telegram a un utente <nome progetto>:
 
 1. Implementa un comando `/register` nel bot che generi un token univoco.
@@ -195,6 +230,12 @@ Per collegare un account Telegram a un utente Quaeris:
 
 1. Implementa un comando `/register` nel bot che generi un token univoco.
 2. L'utente inserisce questo token nel proprio profilo nell'app Quaeris.
+=======
+Per collegare un account Telegram a un utente SaluteOra:
+
+1. Implementa un comando `/register` nel bot che generi un token univoco.
+2. L'utente inserisce questo token nel proprio profilo nell'app SaluteOra.
+>>>>>>> 6ed19256f (.)
 3. Salva il `chat_id` Telegram dell'utente nel database.
 
 ```php
@@ -208,16 +249,25 @@ class RegisterCommand extends Command
 {
     protected $name = 'register';
     protected $description = 'Collega il tuo account Telegram a ';
+<<<<<<< HEAD
     protected $description = 'Collega il tuo account Telegram a <nome progetto>';
 
 protected $description = 'Collega il tuo account Telegram a Quaeris';
     
+=======
+    protected $description = 'Collega il tuo account Telegram a SaluteOra';
+
+>>>>>>> 6ed19256f (.)
     public function handle()
     {
         $chatId = $this->update->getMessage()->getChat()->getId();
         $token = Str::random(8);
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         // Salva il token temporaneo
         TelegramToken::create([
             'token' => $token,
@@ -227,10 +277,14 @@ protected $description = 'Collega il tuo account Telegram a Quaeris';
 
         $this->replyWithMessage([
             'text' => "Il tuo codice di collegamento è: {$token}\n\nInseriscilo nel tuo profilo  per completare il collegamento."
+<<<<<<< HEAD
             'text' => "Il tuo codice di collegamento è: {$token}\n\nInseriscilo nel tuo profilo <nome progetto> per completare il collegamento."
         
         $this->replyWithMessage([
 'text' => "Il tuo codice di collegamento è: {$token}\n\nInseriscilo nel tuo profilo Quaeris per completare il collegamento."
+=======
+            'text' => "Il tuo codice di collegamento è: {$token}\n\nInseriscilo nel tuo profilo SaluteOra per completare il collegamento."
+>>>>>>> 6ed19256f (.)
         ]);
     }
 }
@@ -250,12 +304,17 @@ class VerifyTelegramToken
     public function handle(Request $request, Closure $next)
     {
         $token = $request->input('token');
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         $telegramToken = TelegramToken::where('token', $token)
             ->where('expires_at', '>', now())
             ->whereNull('user_id')
             ->first();
+<<<<<<< HEAD
         
         if (!$telegramToken) {
             return response()->json(['error' => 'Token non valido o scaduto'], 400);
@@ -263,6 +322,8 @@ class VerifyTelegramToken
         
         $request->merge(['telegram_token' => $telegramToken]);
         
+=======
+>>>>>>> 6ed19256f (.)
 
         if (!$telegramToken) {
             return response()->json(['error' => 'Token non valido o scaduto'], 400);
@@ -296,11 +357,14 @@ class TelegramNotificationTest extends TestCase
     {
         $user = User::factory()->create(['telegram_chat_id' => '123456789']);
         $appointment = Appointment::factory()->create();
+<<<<<<< HEAD
         
         $notification = new AppointmentNotification($appointment);
         
         $telegramMessage = $notification->toTelegram($user);
         
+=======
+>>>>>>> 6ed19256f (.)
 
         $notification = new AppointmentNotification($appointment);
 
@@ -310,8 +374,12 @@ class TelegramNotificationTest extends TestCase
             $appointment->formatted_date,
             $telegramMessage->content
         );
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         $this->assertCount(2, $telegramMessage->buttons);
     }
 }
@@ -658,6 +726,9 @@ class TelegramNotificationTest extends TestCase
 - [MULTI_CHANNEL_NOTIFICATIONS.md](./MULTI_CHANNEL_NOTIFICATIONS.md)
 - [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./NOTIFICATIONS_IMPLEMENTATION_GUIDE.md)
 - [SMS_PROVIDER_CONFIGURATION.md](./SMS_PROVIDER_CONFIGURATION.md)
+<<<<<<< HEAD
 - [MULTI_CHANNEL_NOTIFICATIONS.md](./multi_channel_notifications.md)
 - [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./notifications_implementation_guide.md)
 - [SMS_PROVIDER_CONFIGURATION.md](./sms_provider_configuration.md)
+=======
+>>>>>>> 6ed19256f (.)

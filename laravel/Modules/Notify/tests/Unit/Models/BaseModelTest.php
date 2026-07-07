@@ -2,6 +2,13 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+namespace Modules\Notify\Tests\Unit\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use Modules\Notify\Models\BaseModel;
+>>>>>>> 6ed19256f (.)
 
 beforeEach(function () {
     $this->baseModel = new class extends BaseModel

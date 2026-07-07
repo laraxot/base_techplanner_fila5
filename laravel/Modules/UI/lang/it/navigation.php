@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Navigazione',
         'plural_label' => 'Navigazioni',
@@ -51,6 +52,26 @@ return [
             'success' => 'Navigazione eliminata con successo',
             'failure' => 'Errore nell\'eliminazione della navigazione',
             'confirm' => 'Sei sicuro di voler eliminare questa navigazione?',
+=======
+    'fields' => [
+        'items' => [
+            'label' => 'items',
+            'placeholder' => 'items',
+            'helper_text' => 'items',
+            'description' => 'items',
+        ],
+        'label' => [
+            'label' => 'label',
+            'placeholder' => 'label',
+            'helper_text' => 'label',
+            'description' => 'label',
+        ],
+        'url' => [
+            'label' => 'url',
+            'placeholder' => 'url',
+            'helper_text' => 'url',
+            'description' => 'url',
+>>>>>>> 6ed19256f (.)
         ],
     ],
 ];

@@ -10,9 +10,14 @@ use GuzzleHttp\Exception\ClientException;
 use Illuminate\Support\Facades\Log;
 use Modules\Notify\Contracts\WhatsAppProviderActionInterface;
 use Modules\Notify\Datas\WhatsAppData;
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\json_decode;
+=======
+use function Safe\json_decode;
+use Spatie\QueueableAction\QueueableAction;
+>>>>>>> 6ed19256f (.)
 
 final class SendTwilioWhatsAppAction implements WhatsAppProviderActionInterface
 {
@@ -65,6 +70,10 @@ final class SendTwilioWhatsAppAction implements WhatsAppProviderActionInterface
      * Execute the action.
      *
      * @param  WhatsAppData  $whatsAppData  I dati del messaggio WhatsApp
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> 6ed19256f (.)
      * @return array Risultato dell'operazione
      *
      * @throws Exception In caso di errore durante l'invio
@@ -74,6 +83,18 @@ final class SendTwilioWhatsAppAction implements WhatsAppProviderActionInterface
         $from = 'whatsapp:'.($whatsAppData->from ?? $this->defaultSender);
         $to = 'whatsapp:'.$whatsAppData->recipient;
 
+<<<<<<< HEAD
+=======
+        // Log di debug se abilitato
+        if ($this->debug) {
+            Log::debug('Invio WhatsApp Twilio', [
+                'to' => $to,
+                'from' => $from,
+                'message_length' => strlen($whatsAppData->body),
+            ]);
+        }
+
+>>>>>>> 6ed19256f (.)
         $client = new Client([
             'timeout' => $this->timeout,
             'auth' => [$this->accountSid, $this->authToken],
@@ -107,7 +128,11 @@ final class SendTwilioWhatsAppAction implements WhatsAppProviderActionInterface
             $this->vars['status_txt'] = $responseContent;
             $this->vars['response_data'] = $responseData;
 
+<<<<<<< HEAD
             Log::debug('WhatsApp Twilio inviato con successo', [
+=======
+            Log::info('WhatsApp Twilio inviato con successo', [
+>>>>>>> 6ed19256f (.)
                 'to' => $whatsAppData->recipient,
                 'response_code' => $statusCode,
             ]);

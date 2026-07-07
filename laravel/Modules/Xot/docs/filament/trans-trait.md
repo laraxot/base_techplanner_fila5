@@ -47,5 +47,8 @@ class MyResource
 - [Filament Best Practices](../filament-best-practices.md)
 - [Translation Guidelines](../TRANSLATIONS-BEST-PRACTICES.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
+<<<<<<< HEAD
 - [Translation Guidelines](../translations-best-practices.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+=======
+>>>>>>> 6ed19256f (.)

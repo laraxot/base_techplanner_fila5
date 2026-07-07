@@ -6,7 +6,10 @@ namespace Modules\User\Filament\Resources;
 
 use Filament\Forms\Components\Field;
 use Filament\Forms\Components\TextInput;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
+=======
+>>>>>>> 6ed19256f (.)
 use Laravel\Passport\Client;
 use Laravel\Passport\Passport;
 use Modules\User\Filament\Resources\ClientResource\Pages\CreateClient;
@@ -15,7 +18,10 @@ use Modules\User\Filament\Resources\ClientResource\Pages\ListClients;
 use Modules\User\Filament\Resources\ClientResource\Pages\ViewClient;
 use Modules\Xot\Filament\Forms\Components\XotBaseSelect;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
+=======
+>>>>>>> 6ed19256f (.)
 
 class ClientResource extends XotBaseResource
 {
@@ -54,21 +60,30 @@ class ClientResource extends XotBaseResource
             $components = array_merge($components, $additionalComponents);
         }
 
+<<<<<<< HEAD
         /* @var array<string, Field> $components */
+=======
+        /* @var array<string, \Filament\Forms\Components\Field> $components */
+>>>>>>> 6ed19256f (.)
         return $components;
     }
 
     /**
      * Get the model class for the resource from Passport.
      *
+<<<<<<< HEAD
      * @return class-string<Model>
      */
     /**
      * @return class-string<Model>
+=======
+     * @return class-string<\Illuminate\Database\Eloquent\Model>
+>>>>>>> 6ed19256f (.)
      */
     public static function getModel(): string
     {
         $model = Passport::clientModel();
+<<<<<<< HEAD
         if (! class_exists($model)) {
             return Client::class;
         }
@@ -76,6 +91,14 @@ class ClientResource extends XotBaseResource
         Assert::subclassOf($model, Model::class);
 
         /* @var class-string<Model> $model */
+=======
+        if (! is_string($model) || ! class_exists($model)) {
+            /* @var class-string<\Illuminate\Database\Eloquent\Model> */
+            return Client::class;
+        }
+
+        /* @var class-string<\Illuminate\Database\Eloquent\Model> */
+>>>>>>> 6ed19256f (.)
         return $model;
     }
 

@@ -208,10 +208,13 @@ public function canAccessTenant(\Illuminate\Database\Eloquent\Model $tenant): bo
 - [← PHPStan Session Report](../../../docs/phpstan/filament-v4-fixes-session.md)
 - [← Final Report](../../../docs/phpstan/final-report-session-2025-10-01.md)
 - [← Root Documentation](../../../docs/index.md)
+<<<<<<< HEAD
 - [← User Module README](./readme.md)
 - [← PHPStan Session Report](../../../../docs/phpstan/filament-v4-fixes-session.md)
 - [← Final Report](../../../../docs/phpstan/final-report-session-2025-10-01.md)
 - [← Root Documentation](../../../../docs/index.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ---
 
@@ -617,10 +620,13 @@ public string $currentState = 'default';
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Filament Class Extension Rules](../../xot/docs/filament-class-extension-rules.md)
 - [PHPStan Usage](../../xot/docs/phpstan-usage.md)
 - [XotBaseResource Documentation](../../xot/docs/filament/xot-base-resource.md)
 
+=======
+>>>>>>> 6ed19256f (.)
 - [Filament Class Extension Rules](../../Xot/docs/filament-class-extension-rules.md)
 - [PHPStan Usage](../../Xot/docs/phpstan-usage.md)
 - [XotBaseResource Documentation](../../Xot/docs/filament/xot-base-resource.md)
@@ -652,4 +658,8 @@ public static function getFormSchema(): array
 ### Verifica
 - PHPStan Level 10: PASS
 - PHPMD: PASS
+<<<<<<< HEAD
 - PHP Insights: PASS
+=======
+- PHP Insights: PASS
+>>>>>>> 6ed19256f (.)

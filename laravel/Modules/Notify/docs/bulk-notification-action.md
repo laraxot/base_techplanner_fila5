@@ -1,7 +1,12 @@
 # Bulk Notification Action
 
+<<<<<<< HEAD
 **Date**: 18 Dicembre 2025  
 **Status**: ✅ Implementation Complete  
+=======
+**Date**: 18 Dicembre 2025
+**Status**: ✅ Implementation Complete
+>>>>>>> 6ed19256f (.)
 **Module**: Notify
 
 ## Overview
@@ -23,16 +28,28 @@ Notify Module
 
 ### Clean Code Principles Applied
 
+<<<<<<< HEAD
 1. **Separation of Concerns**: 
+=======
+1. **Separation of Concerns**:
+>>>>>>> 6ed19256f (.)
    - UI logic in Filament Action
    - Business logic in QueueableAction
    - Reusable across different resources
 
+<<<<<<< HEAD
 2. **Single Responsibility**: 
    - Each action has one specific purpose
    - Easy to test and maintain
 
 3. **Reusability**: 
+=======
+2. **Single Responsibility**:
+   - Each action has one specific purpose
+   - Easy to test and maintain
+
+3. **Reusability**:
+>>>>>>> 6ed19256f (.)
    - Actions can be used across multiple resources
    - Consistent behavior across the application
 
@@ -122,7 +139,11 @@ The action provides detailed error reporting:
 
 Full multi-language support with:
 - Italian (it)
+<<<<<<< HEAD
 - English (en) 
+=======
+- English (en)
+>>>>>>> 6ed19256f (.)
 - German (de)
 - Spanish (es)
 - French (fr)
@@ -130,4 +151,8 @@ Full multi-language support with:
 
 ---
 
+<<<<<<< HEAD
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+=======
+*Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+>>>>>>> 6ed19256f (.)

@@ -957,4 +957,8 @@ describe('Ticket Form Accessibility', () => {
 
 **Document Version**: 1.0
 **Last Updated**: October 3, 2025
+<<<<<<< HEAD
 **Next Review**: January 2026
+=======
+**Next Review**: January 2026
+>>>>>>> 6ed19256f (.)

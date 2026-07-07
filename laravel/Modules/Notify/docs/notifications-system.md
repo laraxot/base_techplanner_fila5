@@ -136,10 +136,17 @@ return [
 - [Documentazione API](./api.md)
 - [Template Email](./templates.md)
 - [Guida Contribuzione](./CONTRIBUTING.md)
+<<<<<<< HEAD
 - [Guida Contribuzione](./contributing.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Note
 - Testare le notifiche in ambiente di sviluppo
 - Monitorare i tassi di consegna
 - Aggiornare i template regolarmente
+<<<<<<< HEAD
 - Mantenere le traduzioni aggiornate 
+=======
+- Mantenere le traduzioni aggiornate
+>>>>>>> 6ed19256f (.)

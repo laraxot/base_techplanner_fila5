@@ -110,6 +110,7 @@ Questo documento descrive le tecnologie principali utilizzate nel modulo CMS.
 ## Collegamenti
 
 - [Architettura](architecture.md)
+<<<<<<< HEAD
 - [API](api/readme.md)
 - [Frontend](frontoffice/readme.md)
 - [Sviluppo](developer/readme.md)
@@ -118,3 +119,9 @@ Questo documento descrive le tecnologie principali utilizzate nel modulo CMS.
 - [Frontend](frontoffice/README.md)
 - [Sviluppo](developer/README.md)
 - [Utente](user/README.md)
+=======
+- [API](api/README.md)
+- [Frontend](frontoffice/README.md)
+- [Sviluppo](developer/README.md)
+- [Utente](user/README.md)
+>>>>>>> 6ed19256f (.)

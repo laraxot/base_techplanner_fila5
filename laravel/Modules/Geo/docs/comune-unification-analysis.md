@@ -57,13 +57,20 @@
 - [geo-json-model.md](geo-json-model.md)
 - [geo-sushi-comparison.md](geo-sushi-comparison.md)
 - [module_geo.md](module_geo.md)
+<<<<<<< HEAD
 - [Xot/module-structure.md](../../xot/docs/module-structure.md)
 
 ---
 
+=======
+>>>>>>> 6ed19256f (.)
 - [Xot/module-structure.md](../../Xot/docs/module-structure.md)
 
 ---
 
 **Ultimo aggiornamento:** {{date('Y-m-d')}}
+<<<<<<< HEAD
 Responsabile: Cascade AI
+=======
+Responsabile: Cascade AI
+>>>>>>> 6ed19256f (.)

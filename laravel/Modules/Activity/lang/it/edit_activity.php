@@ -25,25 +25,34 @@ return [
             'label' => 'Descrizione',
             'placeholder' => 'Inserisci descrizione',
             'help' => 'Descrizione dettagliata dell\'attività',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'properties' => [
             'label' => 'Proprietà',
             'placeholder' => 'Inserisci proprietà',
             'help' => 'Proprietà aggiuntive in formato JSON',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'metadata' => [
             'label' => 'Metadata',
             'placeholder' => 'Inserisci metadata',
             'help' => 'Informazioni metadata aggiuntive',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'messages' => [
@@ -56,6 +65,7 @@ return [
         'description.max' => 'La descrizione non può superare :max caratteri',
         'properties.json' => 'Le proprietà devono essere un JSON valido',
     ],
+<<<<<<< HEAD
     'label' => 'Edit Activity',
     'plural_label' => 'Edit Activity (Plurale)',
     'actions' => [
@@ -69,4 +79,6 @@ return [
             'label' => 'Elimina Edit Activity',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

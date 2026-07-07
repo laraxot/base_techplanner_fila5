@@ -7,32 +7,47 @@ return [
         'id' => [
             'label' => 'ID',
             'tooltip' => 'Unique identifier of the snapshot',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'aggregate_uuid' => [
             'label' => 'Aggregate UUID',
             'tooltip' => 'Unique identifier of the aggregate',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'aggregate_version' => [
             'label' => 'Aggregate Version',
             'tooltip' => 'Version number of the aggregate',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'state' => [
             'label' => 'State',
             'tooltip' => 'Current state of the snapshot',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'created_at' => [
             'label' => 'Created At',
             'tooltip' => 'Date and time when the snapshot was created',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -56,6 +71,7 @@ return [
             'tooltip' => 'Filter by state',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -65,4 +81,6 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -59,6 +60,29 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'job_id' => [
+            'label' => 'Lavoro',
+        ],
+        'status' => [
+            'label' => 'Stato',
+        ],
+        'progress' => [
+            'label' => 'Progresso',
+        ],
+        'start_time' => [
+            'label' => 'Ora inizio',
+        ],
+        'end_time' => [
+            'label' => 'Ora fine',
+        ],
+        'estimated_completion' => [
+            'label' => 'Completamento stimato',
+        ],
+        'created_at' => [
+            'label' => 'Creato il',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -69,4 +93,8 @@ return [
             'label' => 'Annulla lavoro',
         ],
     ],
+<<<<<<< HEAD
 ];
+=======
+];
+>>>>>>> 6ed19256f (.)

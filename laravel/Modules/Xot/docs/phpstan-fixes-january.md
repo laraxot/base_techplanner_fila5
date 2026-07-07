@@ -192,7 +192,10 @@ public function getModels(): array
 
 ### **Documentazione Correlata**
 - [README.md Modulo Xot](./README.md)
+<<<<<<< HEAD
 - [README.md Modulo Xot](./readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Service Architecture](./service-architecture.md)
 - [Best Practices](./best-practices.md)
 
@@ -387,8 +390,11 @@ public function getAllColors(): array
 
 *Ultimo aggiornamento: Gennaio 2025*
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 6ed19256f (.)
 ## Collegamenti Correlati
 - [Architettura Modulo Xot](./architecture.md)
 - [Filament Widgets](./filament-widgets.md)
@@ -591,7 +597,10 @@ public function getModels(): array
 
 ### **Documentazione Correlata**
 - [README.md Modulo Xot](./README.md)
+<<<<<<< HEAD
 - [README.md Modulo Xot](./readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Service Architecture](./service-architecture.md)
 - [Best Practices](./best-practices.md)
 
@@ -788,9 +797,12 @@ public function getAllColors(): array
 
 *Ultimo aggiornamento: Gennaio 2025*
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 6ed19256f (.)
 ## Collegamenti Correlati
 - [Architettura Modulo Xot](./architecture.md)
 - [Filament Widgets](./filament-widgets.md)
@@ -985,7 +997,10 @@ public function getModels(): array
 
 ### **Documentazione Correlata**
 - [README.md Modulo Xot](./README.md)
+<<<<<<< HEAD
 - [README.md Modulo Xot](./readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Service Architecture](./service-architecture.md)
 - [Best Practices](./best-practices.md)
 
@@ -1005,4 +1020,8 @@ public function getModels(): array
 
 *Ultimo aggiornamento: Gennaio 2025*
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: Gennaio 2025*
+=======
+*Ultimo aggiornamento: Gennaio 2025*
+>>>>>>> 6ed19256f (.)

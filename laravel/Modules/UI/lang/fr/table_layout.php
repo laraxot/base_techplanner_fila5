@@ -7,6 +7,7 @@ return [
         'toggle' => [
             'label' => 'Basculer la disposition',
             'tooltip' => 'Basculer entre la vue liste et la vue grille',
+<<<<<<< HEAD
             'helper_text' => 'Changer le type d\'affichage',
         ],
     ],
@@ -21,4 +22,9 @@ return [
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
+=======
+            'helper_text' => "Changer le type d'affichage",
+        ],
+    ],
+>>>>>>> 6ed19256f (.)
 ];

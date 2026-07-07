@@ -23,6 +23,10 @@ use Override;
  * @property array<array-key, mixed> $payload
  * @property string $exception
  * @property string $failed_at
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> 6ed19256f (.)
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $updater
  *

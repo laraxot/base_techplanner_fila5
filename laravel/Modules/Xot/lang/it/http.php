@@ -11,6 +11,7 @@ return [
         'title' => 'Torniamo subito.',
         'description' => 'Torniamo subito.',
     ],
+<<<<<<< HEAD
     'label' => 'Http',
     'plural_label' => 'Http (Plurale)',
     'navigation' => [
@@ -55,4 +56,6 @@ return [
             'label' => 'Elimina Http',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

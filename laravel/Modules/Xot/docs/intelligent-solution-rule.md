@@ -274,6 +274,11 @@ Questa regola si integra perfettamente con la [Metodologia Super Mucca](./super-
 ---
 
 **Ultimo aggiornamento**: 2025-01-22
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
 **Versione**: 1.0.0
 **Status**: ✅ Regola Critica OBBLIGATORIA
+=======
+**Versione**: 1.0.0
+**Status**: ✅ Regola Critica OBBLIGATORIA
+>>>>>>> 6ed19256f (.)

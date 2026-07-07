@@ -1,7 +1,10 @@
 # 🐄 DRY & KISS Analysis - Geo
 
 **Data:** 2025-10-15 | **Status:** ✅
+<<<<<<< HEAD
 **Data:** [DATE] | **Status:** ✅
+=======
+>>>>>>> 6ed19256f (.)
 
 ## 📊 Struttura
 Models: 21 | Resources: 2 | Services: 6 | Actions: 40 🟡 | Docs: 212 🟡
@@ -36,4 +39,8 @@ DRY: 7/10 🟢 | KISS: 6/10 🟡 | **Overall: 6.5/10 🟡**
 2. Resources refactoring (2 giorni)
 3. Docs cleanup (1 sett)
 
+<<<<<<< HEAD
 **Status:** 🟢 BUONO, ottimizzabile
+=======
+**Status:** 🟢 BUONO, ottimizzabile
+>>>>>>> 6ed19256f (.)

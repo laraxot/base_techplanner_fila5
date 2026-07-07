@@ -162,7 +162,10 @@ grep -r "public static function table(Table" laravel/Modules/*/app/Filament/Reso
 - [HasXotTable Trait](../../app/Filament/Traits/HasXotTable.php)
 - [XotBaseResource](../../app/Filament/Resources/XotBaseResource.php)
 - [Regole Traduzioni](../../../Xot/docs/translation-philosophy.md)
+<<<<<<< HEAD
 - [Regole Traduzioni](../../../xot/docs/translation-philosophy.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [No Table Override](./no-table-override.md)
 
 ### ⚠️ Note Importanti
@@ -177,4 +180,8 @@ grep -r "public static function table(Table" laravel/Modules/*/app/Filament/Reso
 
 **Data Decisione**: Gennaio 2026  
 **Vincitore Dibattito**: Posizione B - Centralizzazione Totale  
+<<<<<<< HEAD
 **Conforme a**: DRY, KISS, Filosofia Laraxot
+=======
+**Conforme a**: DRY, KISS, Filosofia Laraxot
+>>>>>>> 6ed19256f (.)

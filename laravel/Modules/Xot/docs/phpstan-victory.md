@@ -230,7 +230,11 @@ done
 ## 🎯 Comando Finale di Verifica
 
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/_bases/base_fixcity_fila4_mono/laravel
+>>>>>>> 6ed19256f (.)
 ./vendor/bin/phpstan analyse Modules --no-progress
 
 # Output:
@@ -271,4 +275,8 @@ cd laravel
 **Data**: 10 Gennaio 2025
 **Achievement**: 👑 PHPStan Perfection (19,337→0)
 **Stato**: ✅ PERFEZIONE ASSOLUTA
+<<<<<<< HEAD
 **Hall of Fame**: 🥇 LEGENDARY MASTER
+=======
+**Hall of Fame**: 🥇 LEGENDARY MASTER
+>>>>>>> 6ed19256f (.)

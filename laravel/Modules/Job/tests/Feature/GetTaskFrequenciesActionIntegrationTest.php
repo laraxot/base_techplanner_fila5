@@ -2,10 +2,19 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 
 describe('GetTaskFrequenciesAction Integration', function () {
     beforeEach(function () {
         $this->action = new GetTaskFrequenciesAction;
+=======
+use Modules\Job\Actions\GetTaskFrequenciesAction;
+use Modules\Job\Models\TaskFrequency;
+
+describe('GetTaskFrequenciesAction Integration', function () {
+    beforeEach(function () {
+        $this->action = new GetTaskFrequenciesAction();
+>>>>>>> 6ed19256f (.)
     });
 
     it('returns array when config exists', function () {

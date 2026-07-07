@@ -28,6 +28,7 @@ return [
     'actions' => [
         'refresh' => [
             'label' => 'refresh',
+<<<<<<< HEAD
             'tooltip' => 'refresh',
             'icon' => 'refresh',
         ],
@@ -55,6 +56,8 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
 ];

@@ -203,7 +203,11 @@ class IndennitaResponsabilita extends BaseScheda
 ### Test Manuale
 
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/html/ptvx/laravel
+>>>>>>> 6ed19256f (.)
 php artisan tinker
 ```
 
@@ -344,12 +348,19 @@ $record->update(['stabi' => 999]);
 - [Activity Module - README](../README.md)
 - [BaseScheda Configuration](../../Ptv/docs/models/base-scheda-activity-log.md)
 - [IndennitaResponsabilita Integration](../../IndennitaResponsabilita/docs/activity-log-integration.md)
+<<<<<<< HEAD
 - [Activity Module - README](../readme.md)
 - [BaseScheda Configuration](../../ptv/docs/models/base-scheda-activity-log.md)
 - [IndennitaResponsabilita Integration](../../indennitaresponsabilita/docs/activity-log-integration.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ---
 
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **Severità**: Media (funziona ma properties vuote)
+<<<<<<< HEAD
 **Soluzione**: Aggiungere `->logAll()` o `->logOnly()` in getActivitylogOptions()
+=======
+**Soluzione**: Aggiungere `->logAll()` o `->logOnly()` in getActivitylogOptions()
+>>>>>>> 6ed19256f (.)

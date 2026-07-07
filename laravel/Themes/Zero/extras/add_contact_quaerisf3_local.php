@@ -5,7 +5,11 @@ error_reporting(E_ALL);
 ini_set('display_errors', true);
 
 $base_url = 'http://quaerisf3.local';
+<<<<<<< HEAD
 // $base_url = 'https://manager.quaeris.it';
+=======
+//$base_url = 'https://manager.quaeris.it';
+>>>>>>> 6ed19256f (.)
 $login = '/api/user/login';
 $addContact = '/api/quaeris/add-contact';
 $email = 'marco.sottana@gmail.com';
@@ -20,10 +24,19 @@ $post = ['email' => $email, 'password' => $pass];
 curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
 
 $response = curl_exec($ch);
+<<<<<<< HEAD
 // die('<pre>'.print_r($response, true).'<hr>'.curl_error($ch).'</pre>['.__LINE__.']');
 
 $json = json_decode($response);
 // die('<pre>'.print_r($response, true).'<hr>'.curl_error($ch).'</pre>['.__LINE__.']');
+=======
+//die('<pre>'.print_r($response, true).'<hr>'.curl_error($ch).'</pre>['.__LINE__.']');
+
+
+$json = json_decode($response);
+//die('<pre>'.print_r($response, true).'<hr>'.curl_error($ch).'</pre>['.__LINE__.']');
+
+>>>>>>> 6ed19256f (.)
 
 $data = [
     'survey_pdf_id' => '10',
@@ -61,4 +74,7 @@ $response = curl_exec($ch);
 echo '<pre>'.print_r($response, true).'</pre>';
 
 curl_close($ch);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)

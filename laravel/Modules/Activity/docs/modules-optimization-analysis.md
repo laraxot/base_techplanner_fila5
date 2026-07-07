@@ -240,6 +240,11 @@ public function logActivity(string $description, Model $subject, array $properti
 ---
 
 **Last Updated**: December 2024
+<<<<<<< HEAD
 
 **Module Health**: 🟢 Good - Ready for optimization
 **Priority Level**: High - Foundation module
+=======
+**Module Health**: 🟢 Good - Ready for optimization
+**Priority Level**: High - Foundation module
+>>>>>>> 6ed19256f (.)

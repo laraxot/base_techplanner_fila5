@@ -14,7 +14,12 @@ abstract class GdprBasePolicy
 
     public function before(UserContract $user, string $_ability): ?bool
     {
+<<<<<<< HEAD
         if (XotData::make()->super_admin === $user->email) {
+=======
+        $xotData = XotData::make();
+        if ($user->hasRole('super-admin')) {
+>>>>>>> 6ed19256f (.)
             return true;
         }
 

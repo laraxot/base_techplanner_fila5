@@ -24,6 +24,7 @@ return [
 * [xra.md](../../../Xot/project_docs/install/xra.md)
 * [xra.md](../../../Tenant/project_docs/it/xra.md)
 * [xra.md](../../../Tenant/project_docs/it/config/xra.md)
+<<<<<<< HEAD
 * [xra.md](../../../xot/project_docs/install/xra.md)
 * [xra.md](../../../tenant/project_docs/it/xra.md)
 * [xra.md](../../../tenant/project_docs/it/config/xra.md)
@@ -31,3 +32,9 @@ return [
 ### Versione Incoming
 
 ---
+=======
+
+### Versione Incoming
+
+---
+>>>>>>> 6ed19256f (.)

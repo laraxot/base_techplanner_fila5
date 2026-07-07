@@ -8,16 +8,27 @@ return [
             'buttons' => [
                 'refresh' => 'Yenile',
             ],
+<<<<<<< HEAD
             'heading' => 'Uygulama Sağlığı',
+=======
+
+            'heading' => 'Uygulama Sağlığı',
+
+>>>>>>> 6ed19256f (.)
             'navigation' => [
                 'group' => 'Ayarlar',
                 'label' => 'Uygulama Sağlığı',
             ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6ed19256f (.)
             'notifications' => [
                 'check_results' => 'Sonuçları kontrol et.',
             ],
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -31,4 +42,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

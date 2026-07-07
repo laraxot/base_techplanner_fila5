@@ -14,7 +14,10 @@ return [
                 'mimes' => 'Die Datei muss ein PDF-Dokument oder ein Bild sein',
                 'max' => 'Die maximale Dateigröße beträgt 10MB',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'prescription' => [
             'label' => 'Ärztliches Rezept',
@@ -26,7 +29,10 @@ return [
                 'mimes' => 'Unterstützte Formate: PDF, JPG, PNG',
                 'max' => 'Maximale Größe: 10MB',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'medical_report' => [
             'label' => 'Medizinischer Bericht',
@@ -37,7 +43,10 @@ return [
                 'mimes' => 'Unterstützte Formate: PDF, JPG, PNG',
                 'max' => 'Maximale Größe: 10MB',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'certificate' => [
             'label' => 'Zertifikat',
@@ -48,7 +57,10 @@ return [
                 'mimes' => 'Unterstützte Formate: PDF, JPG, PNG',
                 'max' => 'Maximale Größe: 10MB',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'consent_form' => [
             'label' => 'Einverständniserklärung',
@@ -59,7 +71,10 @@ return [
                 'mimes' => 'Unterstützte Formate: PDF, DOC, DOCX',
                 'max' => 'Maximale Größe: 10MB',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'xray_image' => [
             'label' => 'Röntgenbild',
@@ -70,7 +85,10 @@ return [
                 'mimes' => 'Unterstützte Formate: JPG, PNG, DICOM',
                 'max' => 'Maximale Größe: 20MB',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'treatment_plan' => [
             'label' => 'Behandlungsplan',
@@ -81,7 +99,10 @@ return [
                 'mimes' => 'Unterstützte Formate: PDF, DOC, DOCX',
                 'max' => 'Maximale Größe: 10MB',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'medical_history' => [
             'label' => 'Krankengeschichte',
@@ -92,7 +113,10 @@ return [
                 'mimes' => 'Unterstützte Formate: PDF, DOC, DOCX',
                 'max' => 'Maximale Größe: 10MB',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'validation' => [
@@ -107,6 +131,7 @@ return [
         'delete_success' => 'Datei erfolgreich gelöscht',
         'delete_error' => 'Fehler beim Löschen der Datei',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -118,4 +143,6 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

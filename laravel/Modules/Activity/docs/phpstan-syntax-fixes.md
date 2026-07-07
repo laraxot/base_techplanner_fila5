@@ -148,9 +148,14 @@ use function Safe\json_encode;
 
 ## 🔗 Collegamenti
 
+<<<<<<< HEAD
 - [PHPStan Quality Rules](./PHPSTAN_QUALITY_RULES.md)
 - [Analisi Generale PHPStan](../../../../docs/project/quality/phpstan-analysis.md)
 - [PHPStan Quality Rules](./phpstan_quality_rules.md)
+=======
+- [Analisi Generale PHPStan](../../../project_docs/quality/phpstan-analysis.md)
+- [PHPStan Quality Rules](./PHPSTAN_QUALITY_RULES.md)
+>>>>>>> 6ed19256f (.)
 - [PHPStan Fixes Activity (Completo)](./phpstan_fixes_activity.md)
 
 ## 📝 Note
@@ -165,6 +170,11 @@ Questi fix erano necessari per permettere a PHPStan di completare l'analisi del 
 ---
 
 **Fix Completati**: 2025-01-11
+<<<<<<< HEAD
 **Fix Completati**: [DATE]
 **Priority**: ALTA
 **Impact**: MEDIO (Bloccava analisi modulo Activity)
+=======
+**Priority**: ALTA
+**Impact**: MEDIO (Bloccava analisi modulo Activity)
+>>>>>>> 6ed19256f (.)

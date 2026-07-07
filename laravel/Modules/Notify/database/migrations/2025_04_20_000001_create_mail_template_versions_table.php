@@ -17,6 +17,10 @@ return new class extends XotBaseMigration
             $table->longText('html_template');
             $table->longText('text_template')->nullable();
             $table->json('metadata')->nullable();
+<<<<<<< HEAD
+=======
+            $table->string('created_by')->nullable();
+>>>>>>> 6ed19256f (.)
             $table->text('change_notes')->nullable();
 
             $table->foreign('mail_template_id')->references('id')->on('mail_templates')->onDelete('cascade');

@@ -43,7 +43,10 @@ Questo documento descrive le risoluzioni applicate ai file con conflitti git ide
 - Mantenuta la coerenza con la documentazione `@psalm-return`
 
 **Documentazione correlata**: [CONFLITTI_MERGE_RISOLTI.md](../../Media/docs/CONFLITTI_MERGE_RISOLTI.md)
+<<<<<<< HEAD
 **Documentazione correlata**: [CONFLITTI_MERGE_RISOLTI.md](../../media/docs/conflitti_merge_risolti.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ### 4. _components.json
 
@@ -84,7 +87,10 @@ Questo documento descrive le risoluzioni applicate ai file con conflitti git ide
 - [Risoluzione conflitti git generale](risoluzione_conflitti.md)
 - [Documentazione conflitti Modulo Xot](../conflicts/model_with_pos_contract_resolution.md)
 - [Documentazione conflitti Modulo Media](../../Media/docs/CONFLITTI_MERGE_RISOLTI.md)
+<<<<<<< HEAD
 - [Documentazione conflitti Modulo Media](../../media/docs/conflitti_merge_risolti.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Test Effettuati
 
@@ -97,4 +103,8 @@ I file modificati sono stati analizzati con particolare attenzione a:
 
 ## Conclusioni
 
+<<<<<<< HEAD
 Tutti i conflitti git identificati sono stati risolti con successo, ripristinando la coerenza del codice e mantenendo le convenzioni del progetto. È stata data priorità alla qualità del codice, alla tipizzazione forte e alla documentazione adeguata.
+=======
+Tutti i conflitti git identificati sono stati risolti con successo, ripristinando la coerenza del codice e mantenendo le convenzioni del progetto. È stata data priorità alla qualità del codice, alla tipizzazione forte e alla documentazione adeguata.
+>>>>>>> 6ed19256f (.)

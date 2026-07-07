@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+# Modulo Xot - Framework Base
+
+>>>>>>> 6ed19256f (.)
 > **Version**: 3.0 - DRY + KISS Documentation Refactor
 > **Status**: ✅ Core Framework Module
 > **Last Updated**: December 2025
@@ -79,10 +84,13 @@ php artisan xot:status
 
 ---
 
+<<<<<<< HEAD
 **📖 [Docs](docs/readme.md)** · **🏗️ [Architettura](docs/conventions/readme.md)** · **✅ [PHPStan](docs/standards/readme.md)** · **🤝 Contribuisci seguendo le [best practices](docs/best-practices/readme.md)**
 
 ---
 
+=======
+>>>>>>> 6ed19256f (.)
 **Module Type**: Core Framework
 **Critical Level**: 🔴 Maximum (Required by all modules)
 **Architecture**: SOLID, DRY, KISS compliant
@@ -450,6 +458,7 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file [LICENSE](LICE
   <br>
   <em>Costruito con ❤️ per la comunità Laravel</em>
 </div>
+<<<<<<< HEAD
 # ⚡ Xot
 
 [![Core](https://img.shields.io/badge/Role-Platform%20Core-6A1B9A.svg)](#)
@@ -506,3 +515,5 @@ Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 ---
 
 **Modulo** `xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+>>>>>>> 6ed19256f (.)

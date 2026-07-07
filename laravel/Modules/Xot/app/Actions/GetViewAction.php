@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions;
 
+<<<<<<< HEAD
+=======
+use Exception;
+>>>>>>> 6ed19256f (.)
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\File\FixPathAction;
 use Spatie\QueueableAction\QueueableAction;
@@ -15,6 +19,7 @@ class GetViewAction
     /**
      * Summary of execute.
      *
+<<<<<<< HEAD
      * @throws \Exception
      *
      * @return view-string
@@ -22,13 +27,26 @@ class GetViewAction
     public function execute(string $tpl = '', string $file0 = ''): string
     {
         if ('' === $file0) {
+=======
+     * @return view-string
+     *
+     * @throws Exception
+     */
+    public function execute(string $tpl = '', string $file0 = ''): string
+    {
+        if ($file0 === '') {
+>>>>>>> 6ed19256f (.)
             $backtrace = debug_backtrace();
             $file0 = app(FixPathAction::class)->execute($backtrace[0]['file'] ?? '');
         }
 
         $file0 = Str::after($file0, base_path());
         $arr = explode(DIRECTORY_SEPARATOR, $file0);
+<<<<<<< HEAD
         if ('' === $arr[0]) {
+=======
+        if ($arr[0] === '') {
+>>>>>>> 6ed19256f (.)
             $arr = array_slice($arr, 1);
             $arr = array_values($arr);
         }
@@ -48,7 +66,11 @@ class GetViewAction
         $pub_view = 'pub_theme::'.$tmp;
         // $pub_view è sempre stringa perché costruita da stringhe
 
+<<<<<<< HEAD
         if ('' !== $tpl) {
+=======
+        if ($tpl !== '') {
+>>>>>>> 6ed19256f (.)
             $pub_view .= '.'.$tpl;
         }
         // PHPStan: $pub_view è sempre non-falsy-string, Assert ridondante rimosso
@@ -58,7 +80,11 @@ class GetViewAction
 
         $view = Str::lower($mod).'::'.$tmp;
 
+<<<<<<< HEAD
         if ('' !== $tpl) {
+=======
+        if ($tpl !== '') {
+>>>>>>> 6ed19256f (.)
             $view .= '.'.$tpl;
         }
 
@@ -72,7 +98,11 @@ class GetViewAction
         // }
         // $view è sempre stringa perché costruita da stringhe
         if (! view()->exists($view)) {
+<<<<<<< HEAD
             throw new \Exception('View ['.$view.'] not found');
+=======
+            throw new Exception('View ['.$view.'] not found');
+>>>>>>> 6ed19256f (.)
         }
 
         return $view;

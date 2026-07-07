@@ -5,10 +5,13 @@
 > - [Struttura dei Prompt](./prompts.md)
 > - [Regole per i Prompt](./PROMPT_RULES.md)
 > - [README.md toolkit bashscripts](../../../../bashscripts/docs/README.md)
+<<<<<<< HEAD
 > - [README.md documentazione generale](../../../../../docs/readme.md)
 > - [Struttura dei Prompt](./prompts.md)
 > - [Regole per i Prompt](./prompt_rules.md)
 > - [README.md toolkit bashscripts](../../../../bashscripts/docs/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 > - [Documentazione miglioramenti prompt docs.txt](../../../../bashscripts/docs/prompt_docs_improvements.md)
 
 ## Introduzione
@@ -69,4 +72,8 @@ Il prompt rimane conforme alla [Regola Universale](./prompt_rules.md) per i prom
 
 ## Utilizzo
 
+<<<<<<< HEAD
 Il prompt aggiornato può essere utilizzato in qualsiasi progetto modulare Laravel senza modifiche, rendendo il modulo `bashscripts` completamente riutilizzabile.
+=======
+Il prompt aggiornato può essere utilizzato in qualsiasi progetto modulare Laravel senza modifiche, rendendo il modulo `bashscripts` completamente riutilizzabile.
+>>>>>>> 6ed19256f (.)

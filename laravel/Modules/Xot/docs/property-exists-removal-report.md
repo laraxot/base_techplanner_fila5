@@ -95,7 +95,10 @@ if (isset($table->$tableProp) && is_string($table->$tableProp)) {
 Aggiunta sezione di stato:
 ```markdown
 ## ✅ STATO: property_exists() ELIMINATO (Data: 2025-01-05)
+<<<<<<< HEAD
 ## ✅ STATO: property_exists() ELIMINATO (Data: [DATE])
+=======
+>>>>>>> 6ed19256f (.)
 
 **Nel modulo Xot, `property_exists()` è stato completamente eliminato dal codice eseguibile.**
 
@@ -275,4 +278,7 @@ La rimozione di `property_exists()` dal modulo Xot rappresenta un importante pas
 ---
 
 *Report generato automaticamente - Cascade AI - 2025-01-05*
+<<<<<<< HEAD
 *Report generato automaticamente - Cascade AI - [DATE]*
+=======
+>>>>>>> 6ed19256f (.)

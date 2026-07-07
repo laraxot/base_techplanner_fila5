@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Arr;
 
 use function Safe\file_put_contents;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\VarExporter\VarExporter;
 

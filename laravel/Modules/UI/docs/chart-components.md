@@ -138,7 +138,10 @@ class UserStats extends Component
 - [Componenti Table](./table-components.md)
 - [Componenti Layout](./layout-components.md)
 - [Documentazione Frontend](../Cms/docs/frontend-architecture.md)
+<<<<<<< HEAD
 - [Documentazione Frontend](../cms/docs/frontend-architecture.md)
+=======
+>>>>>>> 6ed19256f (.)
 # Componenti Chart
 
 ## Introduzione
@@ -281,6 +284,9 @@ class UserStats extends Component
 - [Documentazione Frontend](../Cms/project_docs/frontend-architecture.md)
 - [Documentazione Frontend](../Cms/project_docs/frontend-architecture.md)
 - [Documentazione Frontend](../Cms/project_docs/frontend-architecture.md)
+<<<<<<< HEAD
 - [Documentazione Frontend](../cms/project_docs/frontend-architecture.md)
 - [Documentazione Frontend](../cms/project_docs/frontend-architecture.md)
 - [Documentazione Frontend](../cms/project_docs/frontend-architecture.md)
+=======
+>>>>>>> 6ed19256f (.)

@@ -146,7 +146,10 @@ public function __construct()
 - [LanguageSwitcherWidget](../app/Filament/Widgets/LanguageSwitcherWidget.php)
 - [Widgets Documentation](./widgets.md)
 - [Super Mucca Workflow](../../Xot/docs/super-mucca-workflow.md)
+<<<<<<< HEAD
 - [Super Mucca Workflow](../../xot/docs/super-mucca-workflow.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ---
 
@@ -168,4 +171,8 @@ public function __construct()
 
 ---
 
+<<<<<<< HEAD
 *"Un oggetto duplicato è come un'ombra che segue il codice senza scopo."* - Super Mucca Zen
+=======
+*"Un oggetto duplicato è come un'ombra che segue il codice senza scopo."* - Super Mucca Zen
+>>>>>>> 6ed19256f (.)

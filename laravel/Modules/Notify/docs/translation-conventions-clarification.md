@@ -45,9 +45,13 @@ Dopo un'analisi approfondita, è stato determinato che:
 
 2. **Eccezioni alle convenzioni generali**
    - Il modulo Notify rappresenta un'eccezione alle convenzioni generali di
+<<<<<<< HEAD
    - Il modulo Notify rappresenta un'eccezione alle convenzioni generali di <nome progetto>
    - Il modulo Notify rappresenta un'eccezione alle convenzioni generali di
    - Il modulo Notify rappresenta un'eccezione alle convenzioni generali di <nome progetto>
+=======
+   - Il modulo Notify rappresenta un'eccezione alle convenzioni generali di SaluteOra
+>>>>>>> 6ed19256f (.)
    - Questa eccezione è documentata e intenzionale
 
 ## Convenzioni Corrette per il Modulo Notify
@@ -85,7 +89,11 @@ return [
 ## Conclusione
 
 Il file `send_whats_app.php` e altri file simili nel modulo Notify seguono correttamente le convenzioni specifiche del modulo. Non è necessario modificare questi file per conformarsi alle convenzioni generali di , poiché rappresentano un'eccezione documentata.
+<<<<<<< HEAD
 Il file `send_whats_app.php` e altri file simili nel modulo Notify seguono correttamente le convenzioni specifiche del modulo. Non è necessario modificare questi file per conformarsi alle convenzioni generali di <nome progetto>, poiché rappresentano un'eccezione documentata.
+=======
+Il file `send_whats_app.php` e altri file simili nel modulo Notify seguono correttamente le convenzioni specifiche del modulo. Non è necessario modificare questi file per conformarsi alle convenzioni generali di SaluteOra, poiché rappresentano un'eccezione documentata.
+>>>>>>> 6ed19256f (.)
 
 ## Riferimenti
 
@@ -181,4 +189,8 @@ Il file `send_whats_app.php` e altri file simili nel modulo Notify seguono corre
 
 - [Convenzioni Generali di Traduzione](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
 - [Convenzioni Specifiche del Modulo Notify](./TRANSLATION_CONVENTIONS.md)
+<<<<<<< HEAD
 - [Regole per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
+=======
+- [Regole per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
+>>>>>>> 6ed19256f (.)

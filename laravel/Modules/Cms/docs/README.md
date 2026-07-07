@@ -163,6 +163,7 @@ $title = (string) $attachment->title; // Può fallire con null
 **Versione**: 2.0.0
 **PHPStan Level**: 10 ✅
 **Status**: Production Ready
+<<<<<<< HEAD
 ---
 title: "Cms Module Documentation"
 type: documentation
@@ -526,3 +527,5 @@ npm run dev
 - [QMD Setup](./QMD-SETUP.md) — Configurazione ricerca locale
 - [Performance](./PERFORMANCE-OPTIMIZATION.md) — Metriche e best practice
 - [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout
+=======
+>>>>>>> 6ed19256f (.)

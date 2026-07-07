@@ -1,7 +1,10 @@
 # Test Fix Philosophy: Fix Tests, Not Production Code
 
 **Date**: 2025-12-15
+<<<<<<< HEAD
 **Date**: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 **Context**: Understanding the correct approach to fixing test failures
 
 ## 🎯 Core Principle
@@ -176,4 +179,8 @@ it('extends UserCalendarWidget', function () {
 
 ---
 
+<<<<<<< HEAD
 **Remember**: The site works. Tests fail. Therefore, tests are wrong. Fix the tests, not the working code.
+=======
+**Remember**: The site works. Tests fail. Therefore, tests are wrong. Fix the tests, not the working code.
+>>>>>>> 6ed19256f (.)

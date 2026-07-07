@@ -17,7 +17,10 @@ Il metodo `buttonLabel()` **NON esiste** sul componente `Filament\Forms\Componen
 
 ## Collegamenti
 - [Errore e best practice modulo Patient](../../Patient/docs/filament-error-fileupload-buttonlabel.md)
+<<<<<<< HEAD
 - [Errore e best practice modulo Patient](../../patient/docs/filament-error-fileupload-buttonlabel.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Tabella metodi supportati](filament-component-methods.md)
 
 ---
@@ -29,7 +32,10 @@ Questa doc va sempre consultata e linkata in ogni review e sviluppo che coinvolg
 
 ## Collegamenti tra versioni di filament-error-fileupload-buttonlabel.md
 * [filament-error-fileupload-buttonlabel.md](../../Patient/docs/filament-error-fileupload-buttonlabel.md)
+<<<<<<< HEAD
 * [filament-error-fileupload-buttonlabel.md](../../patient/docs/filament-error-fileupload-buttonlabel.md)
+=======
+>>>>>>> 6ed19256f (.)
 # Errore: Metodo `buttonLabel()` su FileUpload di Filament
 
 ## Descrizione
@@ -49,7 +55,10 @@ Il metodo `buttonLabel()` **NON esiste** sul componente `Filament\Forms\Componen
 
 ## Collegamenti
 - [Errore e best practice modulo Patient](../../Patient/project_docs/filament-error-fileupload-buttonlabel.md)
+<<<<<<< HEAD
 - [Errore e best practice modulo Patient](../../patient/project_docs/filament-error-fileupload-buttonlabel.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Tabella metodi supportati](filament-component-methods.md)
 
 ---
@@ -63,6 +72,9 @@ Questa doc va sempre consultata e linkata in ogni review e sviluppo che coinvolg
 * [filament-error-fileupload-buttonlabel.md](../../Patient/project_docs/filament-error-fileupload-buttonlabel.md)
 * [filament-error-fileupload-buttonlabel.md](../../Patient/project_docs/filament-error-fileupload-buttonlabel.md)
 * [filament-error-fileupload-buttonlabel.md](../../Patient/project_docs/filament-error-fileupload-buttonlabel.md)
+<<<<<<< HEAD
 * [filament-error-fileupload-buttonlabel.md](../../patient/project_docs/filament-error-fileupload-buttonlabel.md)
 * [filament-error-fileupload-buttonlabel.md](../../patient/project_docs/filament-error-fileupload-buttonlabel.md)
 * [filament-error-fileupload-buttonlabel.md](../../patient/project_docs/filament-error-fileupload-buttonlabel.md)
+=======
+>>>>>>> 6ed19256f (.)

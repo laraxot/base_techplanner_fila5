@@ -13,22 +13,31 @@ return [
             'label' => 'CloudFront Distribution URL',
             'placeholder' => 'CloudFront URL eingeben',
             'helper_text' => 'URL der konfigurierten CloudFront Distribution',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'iam_user' => [
             'label' => 'IAM Benutzer/Rolle',
             'placeholder' => 'IAM Benutzer eingeben',
             'helper_text' => 'IAM Benutzer oder Rolle für AWS Zugang',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'aws_config' => [
             'label' => 'AWS Konfiguration',
             'placeholder' => 'Aktuelle AWS Konfiguration',
             'helper_text' => 'Übersicht der aktuellen AWS Konfiguration',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -133,6 +142,7 @@ return [
         'full_diagnostic_completed' => 'Vollständige Diagnose abgeschlossen',
         'check_cloudfront_settings' => 'CloudFront Einstellungen in der Konfiguration überprüfen',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -142,4 +152,6 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

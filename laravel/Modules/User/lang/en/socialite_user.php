@@ -6,6 +6,7 @@ return [
     'fields' => [
         'provider' => [
             'label' => 'Provider',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -75,6 +76,41 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'provider_id' => [
+            'label' => 'Provider ID',
+        ],
+        'name' => [
+            'label' => 'Name',
+        ],
+        'email' => [
+            'label' => 'Email',
+        ],
+        'avatar' => [
+            'label' => 'Avatar',
+        ],
+        'create' => [
+            'label' => 'Create',
+        ],
+        'attach' => [
+            'label' => 'Attach',
+        ],
+        'layout' => [
+            'label' => 'Layout',
+        ],
+        'view' => [
+            'label' => 'View',
+        ],
+        'edit' => [
+            'label' => 'Edit',
+        ],
+        'detach' => [
+            'label' => 'Detach',
+        ],
+        'toggleColumns' => [
+            'label' => 'Toggle Columns',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'navigation' => [
@@ -83,8 +119,11 @@ return [
         'group' => 'Authentication',
         'label' => 'Socialite Users',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

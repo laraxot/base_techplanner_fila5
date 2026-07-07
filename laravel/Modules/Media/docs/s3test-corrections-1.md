@@ -247,14 +247,21 @@ private function getSolutionForError(?string $errorCode): string
 - [Documentazione Generale Media](../README.md)
 - [Best Practice Traduzioni](../../../docs/translation-standards.md)
 - [Convenzioni Laraxot](../../../docs/laraxot_conventions.md)
+<<<<<<< HEAD
 ||||||| parent of 53258b2 (.)
 - [Documentazione Generale Media](../readme.md)
 - [Best Practice Traduzioni](../../../docs/translation-standards.md)
 - [Convenzioni Laraxot](../../../docs/laraxot_conventions.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [PHPStan Level 10 Fixes](./phpstan_level10_fixes.md)
 
 ---
 
 **Ultimo aggiornamento**: Gennaio 2025
 **Autore**: Sistema di correzione automatica
+<<<<<<< HEAD
 **Stato**: ✅ Completato e verificato
+=======
+**Stato**: ✅ Completato e verificato
+>>>>>>> 6ed19256f (.)

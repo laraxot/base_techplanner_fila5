@@ -131,6 +131,7 @@ return [
     'email_format' => 'L\'email deve avere un formato valido.',
     'phone_format' => 'Il numero di telefono deve avere un formato valido.',
     'birth_date_before' => 'La data di nascita deve essere precedente ad oggi.',
+<<<<<<< HEAD
     'navigation' => [
         'name' => 'Validation',
         'plural' => 'Validation',
@@ -175,4 +176,11 @@ return [
             'label' => 'Elimina Validation',
         ],
     ],
+=======
+    'navigation' => [],
+    'label' => '',
+    'plural_label' => '',
+    'fields' => [],
+    'actions' => [],
+>>>>>>> 6ed19256f (.)
 ];

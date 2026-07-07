@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+use Illuminate\View\Component;
+>>>>>>> 6ed19256f (.)
 
 test('ui components can be rendered', function () {
     $component = new class extends Component {

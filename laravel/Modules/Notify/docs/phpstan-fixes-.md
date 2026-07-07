@@ -90,9 +90,12 @@ Stesso pattern di Chart: usare `Assert::string()` per type narrowing dopo `preg_
 - [Code Quality Standards](../../Xot/docs/code-quality-standards.md)
 
 *Ultimo aggiornamento: 2025-01-22*
+<<<<<<< HEAD
 - [PHPStan Usage](../../xot/docs/phpstan-usage.md)
 - [Code Quality Standards](../../xot/docs/code-quality-standards.md)
 
+=======
+>>>>>>> 6ed19256f (.)
 # PHPStan Level 10 Fixes - Session 2026-01-05
 
 ## Module: Notify (2 errors)
@@ -192,6 +195,10 @@ $message = "Using driver: {$driverString}";
 
 - [Safe Functions Guide](../Xot/docs/safe-functions.md)
 - [Type Narrowing Patterns](../Xot/docs/type-narrowing.md)
+<<<<<<< HEAD
 - [Safe Functions Guide](../xot/docs/safe-functions.md)
 - [Type Narrowing Patterns](../xot/docs/type-narrowing.md)
 - [SMS Configuration](./sms_global_vs_specific_params.md)
+=======
+- [SMS Configuration](./sms_global_vs_specific_params.md)
+>>>>>>> 6ed19256f (.)

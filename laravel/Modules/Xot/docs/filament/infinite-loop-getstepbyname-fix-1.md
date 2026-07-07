@@ -117,7 +117,11 @@ $prop = property_exists($class, 'property') ? $class::$property : [];
 - [DoctorResource.php](../../../Modules/<nome progetto>/app/Filament/Resources/DoctorResource.php) - Utilizzo step
 
 ### **Documentazione Correlata**
+<<<<<<< HEAD
 - [Wizard Step Implementation](../../../modules/<nome progetto>/project_docs/wizard-step-implementation.md)
+=======
+- [Wizard Step Implementation](../../../Modules/<nome progetto>/project_docs/wizard-step-implementation.md)
+>>>>>>> 6ed19256f (.)
 - [Infinite Loop Prevention](../critical-fixes/infinite-loop-prevention.md)
 
 ---
@@ -136,6 +140,10 @@ Questo fix dimostra l'importanza di:
 3. **Property existence checking** per codice robusto
 4. **Xdebug monitoring** per rilevazione loop infiniti
 
+<<<<<<< HEAD
 
 *Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
 *Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.* 
+=======
+*Il sistema <nome progetto> ora è resiliente a questo tipo di errori critici.*
+>>>>>>> 6ed19256f (.)

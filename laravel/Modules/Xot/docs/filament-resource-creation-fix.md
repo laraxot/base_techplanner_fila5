@@ -87,14 +87,22 @@ php artisan filament:generate-resources ModuleName
 
 ### Test 1: Comando Standard
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/html/ptvx/laravel
+>>>>>>> 6ed19256f (.)
 php artisan make:filament-resource TestResource3
 ```
 ✅ **Risultato**: Successo - Resource creata in `Modules\Ptv\Filament\Resources\TestResource3s\TestResource3Resource`
 
 ### Test 2: Comando Personalizzato
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/html/ptvx/laravel
+>>>>>>> 6ed19256f (.)
 php artisan filament:generate-resources User
 ```
 ✅ **Risultato**: Successo - 49 resources generate per il modulo User
@@ -160,4 +168,8 @@ Il macro `generateSlug` è stato disabilitato temporaneamente. Per riabilitarlo:
 2. Aggiornare i metodi utilizzati
 3. Testare in ambiente di sviluppo
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: giugno 2025*
+=======
+*Ultimo aggiornamento: giugno 2025*
+>>>>>>> 6ed19256f (.)

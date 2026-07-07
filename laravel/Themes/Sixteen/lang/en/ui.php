@@ -11,6 +11,7 @@ return [
     'menu' => 'Menu',
     'close' => 'Close',
     'open' => 'Open',
+<<<<<<< HEAD
 
     // Header
     'region_name' => 'Region Name',
@@ -133,4 +134,6 @@ return [
 
     // Hero
     'highlighted_content' => 'Featured content',
+=======
+>>>>>>> 6ed19256f (.)
 ];

@@ -178,6 +178,7 @@ L'implementazione riflette una comprensione profonda delle implicazioni:
 - [Architettura Sistema](../../../docs/architettura_sistema.md)
 - [Rules](../../../docs/rules.md)
 - [README Principale](../../../docs/README.md)
+<<<<<<< HEAD
 - [Componenti Servizi](../../themes/one/docs/components/services-blocks.md)
 - [Content Strategy Frontend](../../../../docs/frontend/content-strategy.md)
 
@@ -190,6 +191,8 @@ L'implementazione riflette una comprensione profonda delle implicazioni:
 - [Architettura Sistema](../../../../docs/architettura_sistema.md)
 - [Rules](../../../../docs/rules.md)
 - [README Principale](../../../../docs/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## ✅ Checklist Completamento
 
@@ -269,4 +272,8 @@ L'implementazione riflette una comprensione profonda delle implicazioni:
 **Maintainer**: Team <main module>
 **Review**: Approvazione stakeholder medici, tecnici, UX
 
+<<<<<<< HEAD
 *Implementazione completata seguendo rigorosamente la filosofia <main module>: democratizzazione dell'accesso alla <slogan> attraverso tecnologia umana, competente e inclusiva.*
+=======
+*Implementazione completata seguendo rigorosamente la filosofia <main module>: democratizzazione dell'accesso alla <slogan> attraverso tecnologia umana, competente e inclusiva.*
+>>>>>>> 6ed19256f (.)

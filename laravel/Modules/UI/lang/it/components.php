@@ -6,6 +6,7 @@ return [
     'state_icons' => [
         'no_transitions' => 'Nessuna transizione disponibile',
     ],
+<<<<<<< HEAD
     'label' => 'Components',
     'plural_label' => 'Components (Plurale)',
     'navigation' => [
@@ -50,4 +51,6 @@ return [
             'label' => 'Elimina Components',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

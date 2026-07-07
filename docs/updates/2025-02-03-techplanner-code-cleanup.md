@@ -50,4 +50,8 @@
 ## Prossimi Passi
 - Applicare gli stessi standard di pulizia agli altri Resource
 - Verificare e ottimizzare altri file del modulo
+<<<<<<< HEAD
 - Mantenere la documentazione aggiornata con le modifiche future
+=======
+- Mantenere la documentazione aggiornata con le modifiche future
+>>>>>>> 6ed19256f (.)

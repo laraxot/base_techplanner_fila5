@@ -2,7 +2,11 @@
 
 ## Panoramica
 
+<<<<<<< HEAD
 Questo documento descrive la configurazione dei server MCP (Model Context Protocol) per gli editor AI utilizzati nello sviluppo del progetto healthcare_app Fila4 Mono.
+=======
+Questo documento descrive la configurazione dei server MCP (Model Context Protocol) per gli editor AI utilizzati nello sviluppo del progetto Quaeris Fila4 Mono.
+>>>>>>> 6ed19256f (.)
 
 ## Cos'è MCP?
 
@@ -89,7 +93,38 @@ claude mcp remove <nome-server>
   "mcpServers": {
     "filesystem": {
       "command": "npx",
+<<<<<<< HEAD
       "args": ["-y", "@modelcontextprotocol/server-filesystem", "server-filesystem", "server-fetch"]
+=======
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_quaeris_fila4_mono"]
+    }
+  }
+}
+```
+
+**Configurazione Windsurf**:
+```json
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_quaeris_fila4_mono"]
+    }
+  }
+}
+```
+
+#### 2. Fetch Server
+**Scopo**: Chiamate HTTP e API
+
+**Configurazione**:
+```json
+{
+  "mcpServers": {
+    "fetch": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-fetch"]
+>>>>>>> 6ed19256f (.)
     }
   }
 }
@@ -206,7 +241,15 @@ File: `~/.cursor/mcp.json`
   "mcpServers": {
     "filesystem": {
       "command": "npx",
+<<<<<<< HEAD
       "args": ["-y", "@modelcontextprotocol/server-filesystem", "server-fetch"]
+=======
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_quaeris_fila4_mono"]
+    },
+    "fetch": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-fetch"]
+>>>>>>> 6ed19256f (.)
     },
     "memory": {
       "command": "npx",
@@ -240,7 +283,15 @@ File: `~/.codeium/windsurf/mcp_config.json`
   "mcpServers": {
     "filesystem": {
       "command": "npx",
+<<<<<<< HEAD
       "args": ["-y", "@modelcontextprotocol/server-filesystem", "server-fetch"]
+=======
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_quaeris_fila4_mono"]
+    },
+    "fetch": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-fetch"]
+>>>>>>> 6ed19256f (.)
     },
     "memory": {
       "command": "npx",
@@ -390,4 +441,8 @@ cp Modules/Xot/docs/windsurf-mcp-config.json ~/.codeium/windsurf/mcp_config.json
 - [MCP Integration Guide](./mcp-integration.md) - Integrazione MCP nel codice PHP
 - [MCP Server Recommended](./mcp-server-recommended.md) - Server consigliati per moduli
 - [Model Context Protocol](./model-context-protocol.md) - Panoramica generale MCP
+<<<<<<< HEAD
 - [PHPStan Level 10 Success](./phpstan-level10-success-nov2025.md) - Successo PHPStan Level 10
+=======
+- [PHPStan Level 10 Success](./phpstan-level10-success-nov2025.md) - Successo PHPStan Level 10
+>>>>>>> 6ed19256f (.)

@@ -7,6 +7,10 @@ use Modules\Cms\Tests\TestCase;
 uses(TestCase::class);
 
 it('GET /it/auth/logout_fixed acceptable', function (): void {
+<<<<<<< HEAD
+=======
+    /** @phpstan-ignore-next-line property.notFound */
+>>>>>>> 6ed19256f (.)
     $res = $this->get('/it/auth/logout_fixed');
     /** @var Illuminate\Testing\TestResponse $res */
     $status = (int) $res->getStatusCode();

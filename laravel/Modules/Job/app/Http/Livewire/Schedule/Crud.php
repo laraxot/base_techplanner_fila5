@@ -32,7 +32,11 @@ class Crud extends Component
             return $res;
         }
 
+<<<<<<< HEAD
         throw new Exception('['.__LINE__.']['.class_basename(self::class).']');
+=======
+        throw new Exception('[' . __LINE__ . '][' . class_basename(self::class) . ']');
+>>>>>>> 6ed19256f (.)
     }
 
     public function render(): Renderable
@@ -85,11 +89,21 @@ class Crud extends Component
          */
 
         return $all_commands->sortBy(
+<<<<<<< HEAD
+=======
+            /**
+             * @param  Command  $command
+             */
+>>>>>>> 6ed19256f (.)
             static function (Command $command): string {
                 Assert::string($name = $command->getName());
 
                 if (mb_strpos($name, ':') === false) {
+<<<<<<< HEAD
                     return ':'.$name;
+=======
+                    return ':' . $name;
+>>>>>>> 6ed19256f (.)
                 }
 
                 return $name;
@@ -101,6 +115,10 @@ class Crud extends Component
     {
         app(ExecuteTaskAction::class)->execute($task_id);
 
+<<<<<<< HEAD
         session()->flash('message', 'task ['.$task_id.'] executed at '.now());
+=======
+        session()->flash('message', 'task [' . $task_id . '] executed at ' . now());
+>>>>>>> 6ed19256f (.)
     }
 }

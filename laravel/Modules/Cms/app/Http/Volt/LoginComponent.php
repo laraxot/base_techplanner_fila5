@@ -17,7 +17,11 @@ use Webmozart\Assert\Assert;
 /**
  * Summary of LoginComponent.
  *
+<<<<<<< HEAD
  * @see https://github.com/thedevdojo/genesis/blob/main/stubs/class/resources/views/auth/login.blade.php
+=======
+ * @see https://github.com/thedevdojo/genesis/blob/main/stubs/class/resources/views/pages/auth/login.blade.php
+>>>>>>> 6ed19256f (.)
  */
 class LoginComponent extends Component
 {

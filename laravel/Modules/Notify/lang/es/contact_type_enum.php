@@ -52,6 +52,7 @@ return [
         'hex_color' => '#6b7280',
         'description' => 'Notas de contacto',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -65,4 +66,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

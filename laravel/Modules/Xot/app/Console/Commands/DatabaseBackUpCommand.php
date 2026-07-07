@@ -11,9 +11,13 @@ namespace Modules\Xot\Console\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
+<<<<<<< HEAD
 
 use function Safe\exec;
 
+=======
+use function Safe\exec;
+>>>>>>> 6ed19256f (.)
 use Webmozart\Assert\Assert;
 
 class DatabaseBackUpCommand extends Command

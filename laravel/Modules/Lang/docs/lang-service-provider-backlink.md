@@ -2,14 +2,21 @@
 
 ## Panoramica
 
+<<<<<<< HEAD
 Il LangServiceProvider è un componente fondamentale di <nome progetto> che gestisce automaticamente le traduzioni per i componenti Filament senza richiedere l'uso esplicito del metodo `->label()`.
+=======
+Il LangServiceProvider è un componente fondamentale di SaluteOra che gestisce automaticamente le traduzioni per i componenti Filament senza richiedere l'uso esplicito del metodo `->label()`.
+>>>>>>> 6ed19256f (.)
 
 ## Documentazione Dettagliata
 
 La documentazione completa del LangServiceProvider è disponibile nel modulo Lang:
 
 - [Analisi e Proposte di Miglioramento](../laravel/Modules/Lang/docs/lang-service-provider.md)
+<<<<<<< HEAD
 - [Analisi e Proposte di Miglioramento](../laravel/modules/lang/docs/lang-service-provider.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Caratteristiche Principali
 
@@ -38,4 +45,8 @@ TextInput::make('name')
 - **Campi form**: `modulo::risorsa.fields.nome_campo.label`
 - **Azioni**: `modulo::risorsa.actions.nome_azione.label`
 - **Passi wizard**: `modulo::risorsa.steps.nome_passo.label`
+<<<<<<< HEAD
 - **Altri attributi**: `.placeholder`, `.helperText`, `.description`
+=======
+- **Altri attributi**: `.placeholder`, `.helperText`, `.description`
+>>>>>>> 6ed19256f (.)

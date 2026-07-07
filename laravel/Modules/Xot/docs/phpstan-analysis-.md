@@ -20,8 +20,12 @@
   - Array access on mixed types
   - Invalid binary operations
 
+<<<<<<< HEAD
 #### healthcare_app Module (Complex Issues)
 #### ModuloEsempio Module (Complex Issues)
+=======
+#### Quaeris Module (Complex Issues)
+>>>>>>> 6ed19256f (.)
 - **Errors:** ~500+ across chart export and quantum actions
 - **Main Issues:**
   - Missing class definitions (quantum-related classes)
@@ -56,12 +60,18 @@ Function preg_replace is unsafe to use. Please add 'use function Safe\preg_repla
 #### Missing Class Definitions
 ```php
 // ❌ Quantum-related classes not found
+<<<<<<< HEAD
 Class Modules\healthcare_app\Actions\Charts\Quantum\GenerateConsciousChartAction
 implements unknown interface Spatie\Queable\Contracts\Queable.
 Class Modules\healthcare_app\Actions\Charts\Quantum\GenerateConsciousChartAction
 Class Modules\ModuloEsempio\Actions\Charts\Quantum\GenerateConsciousChartAction
 implements unknown interface Spatie\Queable\Contracts\Queable.
 Class Modules\ModuloEsempio\Actions\Charts\Quantum\GenerateConsciousChartAction
+=======
+Class Modules\Quaeris\Actions\Charts\Quantum\GenerateConsciousChartAction
+implements unknown interface Spatie\Queable\Contracts\Queable.
+Class Modules\Quaeris\Actions\Charts\Quantum\GenerateConsciousChartAction
+>>>>>>> 6ed19256f (.)
 uses unknown trait Spatie\Queable\QueableAction.
 ```
 
@@ -79,6 +89,7 @@ uses unknown trait Spatie\Queable\QueableAction.
 3. **Function Safety**: Missing Safe library imports
 4. **Return Types**: Incorrect PHPDoc return types
 
+<<<<<<< HEAD
 #### healthcare_app Module Issues
 **Primary Files:**
 - `healthcare_app/app/Actions/Charts/Export/ExportFilamentWidgetToPngAction.php` (100+ errors)
@@ -89,6 +100,13 @@ uses unknown trait Spatie\Queable\QueableAction.
 - `ModuloEsempio/app/Actions/Charts/Export/ExportFilamentWidgetToPngAction.php` (100+ errors)
 - `ModuloEsempio/app/Actions/Charts/Export/ExportFilamentWidgetToSvgAction.php` (150+ errors)
 - `ModuloEsempio/app/Actions/Charts/Quantum/GenerateConsciousChartAction.php` (200+ errors)
+=======
+#### Quaeris Module Issues
+**Primary Files:**
+- `Quaeris/app/Actions/Charts/Export/ExportFilamentWidgetToPngAction.php` (100+ errors)
+- `Quaeris/app/Actions/Charts/Export/ExportFilamentWidgetToSvgAction.php` (150+ errors)
+- `Quaeris/app/Actions/Charts/Quantum/GenerateConsciousChartAction.php` (200+ errors)
+>>>>>>> 6ed19256f (.)
 
 **Key Problems:**
 1. **Missing Classes**: Quantum architecture classes not implemented
@@ -425,9 +443,12 @@ jobs:
 - [Geo Module Errors](../../Geo/docs/phpstan-errors-2025-12-16.md)
 - [Cms Module Errors](../../Cms/docs/phpstan-errors-2025-12-16.md)
 - [Activity Module Errors](../../Activity/docs/phpstan-errors-2025-12-16.md)
+<<<<<<< HEAD
 - [Geo Module Errors](../../geo/docs/phpstan-errors-2025-12-16.md)
 - [Cms Module Errors](../../cms/docs/phpstan-errors-2025-12-16.md)
 - [Activity Module Errors](../../activity/docs/phpstan-errors-2025-12-16.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Xot Module TransTrait Errors](phpstan-transtrait-errors-2025-12-16.md)
 
 ### PHPStan Documentation
@@ -500,7 +521,11 @@ jobs:
 Run this command to see all 169 errors in detail:
 
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/_bases/base_laravelpizza/laravel
+>>>>>>> 6ed19256f (.)
 ./vendor/bin/phpstan analyse Modules --error-format=table > phpstan-full-report.txt
 ```
 
@@ -768,7 +793,11 @@ test('it can create and manage tenants', function (): void {
 - ✅ **check-all-modules.sh** - Controllo batch tutti i moduli
 
 ### Path Corretti
+<<<<<<< HEAD
 - ✅ **mysql-db-connector.js** - Path corretto a `base_techplanner_fila5_mono`
+=======
+- ✅ **mysql-db-connector.js** - Path corretto a `base_techplanner_fila4_mono`
+>>>>>>> 6ed19256f (.)
 
 ---
 
@@ -873,7 +902,11 @@ test('it can create and manage tenants', function (): void {
 
 ## 🚨 REGOLA CRITICA RISPETTATA 🚨
 
+<<<<<<< HEAD
 **NON è stato modificato** `phpstan.neon`
+=======
+**NON è stato modificato** `/var/www/html/_bases/base_saluteora/laravel/phpstan.neon`
+>>>>>>> 6ed19256f (.)
 
 ## Analisi Completa
 
@@ -928,7 +961,11 @@ Accesso a proprietà non definite nei modelli.
 - Modelli User/Profile
 - Contratti e interfacce
 
+<<<<<<< HEAD
 ### 3. **<nome progetto>** (Applicazione) - 15% errori
+=======
+### 3. **SaluteMo** (Applicazione) - 15% errori
+>>>>>>> 6ed19256f (.)
 - Risorse Filament
 - Modelli dominio
 - Widget personalizzati
@@ -957,8 +994,13 @@ Accesso a proprietà non definite nei modelli.
 4. `User/app/Models/Profile.php` - Metodi e proprietà
 
 ### Priorità 3 (Applicazione)
+<<<<<<< HEAD
 1. `<nome progetto>/app/Filament/Resources/*` - Form schemas e table columns
 2. `<nome progetto>/app/Models/*` - Proprietà e relazioni
+=======
+1. `SaluteMo/app/Filament/Resources/*` - Form schemas e table columns
+2. `SaluteMo/app/Models/*` - Proprietà e relazioni
+>>>>>>> 6ed19256f (.)
 3. `Geo/app/Models/*` - Proprietà geografiche
 
 ## Strategia di Correzione
@@ -969,7 +1011,11 @@ Correggere tutti gli errori nel modulo Xot per stabilizzare la base.
 ### Fase 2: Autenticazione (User)
 Sistemare traits e contratti utilizzati in tutto il progetto.
 
+<<<<<<< HEAD
 ### Fase 3: Applicazione (<nome progetto>, Geo, Cms)
+=======
+### Fase 3: Applicazione (SaluteMo, Geo, Cms)
+>>>>>>> 6ed19256f (.)
 Correggere errori specifici dell'applicazione.
 
 ### Fase 4: Verifica Finale
@@ -1061,4 +1107,8 @@ class MyModel extends BaseModel
 
 **Stato**: 🔄 Analisi Completata - Correzioni in Corso
 **phpstan.neon**: ✅ INTOCCATO
+<<<<<<< HEAD
 **Approccio**: DRY + KISS + Type Safety
+=======
+**Approccio**: DRY + KISS + Type Safety
+>>>>>>> 6ed19256f (.)

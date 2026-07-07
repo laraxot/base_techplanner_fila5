@@ -7,7 +7,13 @@ namespace Modules\Xot\Actions\Model\Update;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Support\Facades\App;
+<<<<<<< HEAD
 use Modules\Xot\Datas\RelationData as RelationDTO;
+=======
+use InvalidArgumentException;
+use Modules\Xot\Datas\RelationData as RelationDTO;
+use RuntimeException;
+>>>>>>> 6ed19256f (.)
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
@@ -23,11 +29,19 @@ final class MorphOneAction
     /**
      * Execute the morphOne relationship action.
      *
+<<<<<<< HEAD
      * @param Model       $model       The model instance
      * @param RelationDTO $relationDTO The relation data transfer object
      *
      * @throws \InvalidArgumentException When relation is not MorphOne
      * @throws \RuntimeException         When data array is invalid
+=======
+     * @param  Model  $model  The model instance
+     * @param  RelationDTO  $relationDTO  The relation data transfer object
+     *
+     * @throws InvalidArgumentException When relation is not MorphOne
+     * @throws RuntimeException When data array is invalid
+>>>>>>> 6ed19256f (.)
      */
     public function execute(Model $model, RelationDTO $relationDTO): void
     {
@@ -49,7 +63,11 @@ final class MorphOneAction
     /**
      * Validate and prepare the data array.
      *
+<<<<<<< HEAD
      * @param array<string, mixed> $data The input data array
+=======
+     * @param  array<string, mixed>  $data  The input data array
+>>>>>>> 6ed19256f (.)
      *
      * @return array<string, mixed> The validated and prepared data
      */
@@ -61,6 +79,10 @@ final class MorphOneAction
         }
 
         // Remove null values from the data array
+<<<<<<< HEAD
         return array_filter($data, static fn ($value): bool => null !== $value);
+=======
+        return array_filter($data, static fn ($value): bool => $value !== null);
+>>>>>>> 6ed19256f (.)
     }
 }

@@ -47,11 +47,14 @@ public function getFormattedAddressAttribute(): string
 public function getFormattedAddressAttribute(): string
 {
     $value = $this->some_property;
+<<<<<<< HEAD
     
     if (is_string($value)) {
         return $value;
     }
     
+=======
+>>>>>>> 6ed19256f (.)
 
     if (is_string($value)) {
         return $value;
@@ -121,8 +124,12 @@ public function getFormattedAddressAttribute(): string
 {
     // Utilizzo di safe casting per garantire string
     $address = \Modules\Xot\Actions\Cast\SafeStringCastAction::cast($this->address, '');
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // Formattazione aggiuntiva se necessaria
     return trim($address) ?: 'Indirizzo non disponibile';
 }
@@ -143,6 +150,7 @@ public function getDataAttribute(): array
 public function getDataAttribute(): array
 {
     $data = $this->data;
+<<<<<<< HEAD
     
     if (is_array($data)) {
         return $data;
@@ -152,6 +160,8 @@ public function getDataAttribute(): array
         return json_decode($data, true) ?: [];
     }
     
+=======
+>>>>>>> 6ed19256f (.)
 
     if (is_array($data)) {
         return $data;
@@ -194,6 +204,7 @@ public function getIsActiveAttribute(): bool
 public function getIsActiveAttribute(): bool
 {
     $value = $this->is_active;
+<<<<<<< HEAD
     
     if (is_bool($value)) {
         return $value;
@@ -207,6 +218,8 @@ public function getIsActiveAttribute(): bool
         return in_array(strtolower($value), ['true', '1', 'yes', 'on'], true);
     }
     
+=======
+>>>>>>> 6ed19256f (.)
 
     if (is_bool($value)) {
         return $value;
@@ -235,8 +248,12 @@ public function getFormattedValueAttribute(): string
     if (!isset($this->value)) {
         return '';
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     return \Modules\Xot\Actions\Cast\SafeStringCastAction::cast($this->value, '');
 }
 ```
@@ -267,8 +284,12 @@ public function getFormattedAddressAttribute(): string
         $this->city,
         $this->postal_code,
     ]);
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     return implode(', ', $components);
 }
 ```
@@ -310,6 +331,7 @@ grep -n "Attribute.*string" Modules/*/Models/*.php | grep -v "SafeStringCastActi
 - [Class Not Found Errors](./class_not_found_errors.md)
 
 *Ultimo aggiornamento: 2025-07-31*
+<<<<<<< HEAD
 - [Safe Casting Actions](../../xot/project_docs/safe-casting-actions.md)
 
 ## Backlink
@@ -317,3 +339,5 @@ grep -n "Attribute.*string" Modules/*/Models/*.php | grep -v "SafeStringCastActi
 - [Root PHPStan Rules](../../../../docs/project/phpstan_rules.md)
 - [Geo Module Structure](./structure.md)
 - [Class Not Found Errors](./class_not_found_errors.md)
+=======
+>>>>>>> 6ed19256f (.)

@@ -42,7 +42,11 @@ parameters:
 ### Esecuzione Corretta
 ```bash
 # ✅ CORRETTO - Eseguire da directory Laravel
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/html/_bases/base_saluteora/laravel
+>>>>>>> 6ed19256f (.)
 ./vendor/bin/phpstan analyze --level=9 --memory-limit=2G
 
 # ❌ ERRATO - Mai usare artisan per phpstan
@@ -259,9 +263,16 @@ $variabile = $oggetto->proprietaNonStandard;
 - [PHPStan Documentation](https://phpstan.org/user-guide/getting-started)
 - [Modules/Xot/docs/PHPSTAN_LIVELLO10_LINEE_GUIDA.md](PHPSTAN_LIVELLO10_LINEE_GUIDA.md)
 - [docs/PHPSTAN_LEVEL10_FIXES.md](../../../docs/PHPSTAN_LEVEL10_FIXES.md)
+<<<<<<< HEAD
 - [Modules/Xot/docs/PHPSTAN_LIVELLO10_LINEE_GUIDA.md](phpstan_livello10_linee_guida.md)
 - [docs/PHPSTAN_LEVEL10_FIXES.md](../../../../docs/phpstan_level10_fixes.md)
 
 ---
 
 *Guida consolidata che elimina duplicazioni e semplifica la manutenzione della documentazione PHPStan.*
+=======
+
+---
+
+*Guida consolidata che elimina duplicazioni e semplifica la manutenzione della documentazione PHPStan.*
+>>>>>>> 6ed19256f (.)

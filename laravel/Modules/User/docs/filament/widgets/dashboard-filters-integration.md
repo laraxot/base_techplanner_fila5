@@ -128,6 +128,7 @@ protected function getFooterWidgets(): array
 ## Riferimenti e Collegamenti
 ### Documentazione Correlata
 - [Modules/User/docs/best-practices/filament-widgets.md](../best-practices/filament-widgets.md)
+<<<<<<< HEAD
 - [Modules/Xot/docs/filament/widgets/base-chart-widget.md](../../../xot/docs/filament/widgets/base-chart-widget.md)
 - [Modules/<nome progetto>/docs/dashboard-implementation.md](../../../<nome progetto>/docs/dashboard-implementation.md)
 - [Modules/User/project_docs/best-practices/filament-widgets.md](../best-practices/filament-widgets.md)
@@ -137,6 +138,13 @@ protected function getFooterWidgets(): array
 - [Modules/User/project_docs/best-practices/filament-widgets.md](../best-practices/filament-widgets.md)
 - [Modules/Xot/project_docs/filament/widgets/base-chart-widget.md](../../../Xot/project_docs/filament/widgets/base-chart-widget.md)
 - [Modules/<nome progetto>/project_docs/dashboard-implementation.md](../../../<nome progetto>/project_docs/dashboard-implementation.md)
+=======
+- [Modules/Xot/docs/filament/widgets/base-chart-widget.md](../../../Xot/docs/filament/widgets/base-chart-widget.md)
+- [Modules/SaluteMo/docs/dashboard-implementation.md](../../../SaluteMo/docs/dashboard-implementation.md)
+- [Modules/User/project_docs/best-practices/filament-widgets.md](../best-practices/filament-widgets.md)
+- [Modules/Xot/project_docs/filament/widgets/base-chart-widget.md](../../../Xot/project_docs/filament/widgets/base-chart-widget.md)
+- [Modules/SaluteMo/project_docs/dashboard-implementation.md](../../../SaluteMo/project_docs/dashboard-implementation.md)
+>>>>>>> 6ed19256f (.)
 ### Widget Correlati
 - `UsersChartWidget`: Esempio di implementazione corretta dei filtri
 - Altri widget che estendono `XotBaseChartWidget`
@@ -150,4 +158,8 @@ protected function getFooterWidgets(): array
 - **Problema**: Widget non riceveva filtri Dashboard
 - **Soluzione**: Accesso sicuro con fallback appropriati
 - **Impatto**: Risolto per tutti i widget che usano lo stesso pattern
+<<<<<<< HEAD
 *Ultimo aggiornamento: Gennaio 2025*
+=======
+*Ultimo aggiornamento: Gennaio 2025*
+>>>>>>> 6ed19256f (.)

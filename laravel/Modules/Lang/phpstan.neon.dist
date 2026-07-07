@@ -21,8 +21,13 @@ parameters:
 
 
     scanFiles:
+<<<<<<< HEAD
         # - ./helpers/Helper.php
         # - ./vendor/laraxot/module_xot/helpers/Helper.php
+=======
+        # - ./Helpers/Helper.php
+        # - ./vendor/laraxot/module_xot/Helpers/Helper.php
+>>>>>>> 6ed19256f (.)
 
     tmpDir: build/phpstan
     reportUnmatchedIgnoredErrors: false
@@ -30,4 +35,9 @@ parameters:
     checkModelProperties: false
     checkMissingIterableValueType: false
     checkGenericClassInNonGenericObjectType: false
+<<<<<<< HEAD
     checkImplicitMixed: false
+=======
+    checkImplicitMixed: false
+
+>>>>>>> 6ed19256f (.)

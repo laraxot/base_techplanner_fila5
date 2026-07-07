@@ -376,7 +376,10 @@ class MyModel extends BaseModel implements HasRecursiveRelationshipsContract
 ## 🔄 Changelog
 
 ### 2025-01-18 - Aggiornamento Completo del Contratto
+<<<<<<< HEAD
 ### [DATE] - Aggiornamento Completo del Contratto
+=======
+>>>>>>> 6ed19256f (.)
 
 - ✅ Aggiunti metodi mancanti al contratto:
   - `getQualifiedParentKeyName(): string` - Nome qualificato della colonna parent
@@ -393,4 +396,8 @@ class MyModel extends BaseModel implements HasRecursiveRelationshipsContract
 
 ---
 
+<<<<<<< HEAD
 **Filosofia**: In Laraxot, rispettiamo i vendor packages ma creiamo wrapper type-safe per garantire qualità del codice e manutenibilità.
+=======
+**Filosofia**: In Laraxot, rispettiamo i vendor packages ma creiamo wrapper type-safe per garantire qualità del codice e manutenibilità.
+>>>>>>> 6ed19256f (.)

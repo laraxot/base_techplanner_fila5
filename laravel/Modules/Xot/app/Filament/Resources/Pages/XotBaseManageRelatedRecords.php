@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\Pages;
 
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ManageRelatedRecords as FilamentManageRelatedRecords;
@@ -110,4 +111,15 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     {
         return static::transFunc(__FUNCTION__);
     }
+=======
+use Filament\Resources\Pages\ManageRelatedRecords as FilamentManageRelatedRecords;
+use Modules\Xot\Filament\Traits\HasXotTable;
+
+/**
+ * ---
+ */
+abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
+{
+    use HasXotTable;
+>>>>>>> 6ed19256f (.)
 }

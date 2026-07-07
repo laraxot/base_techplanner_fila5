@@ -2,7 +2,11 @@
 
 ## Problema Identificato
 
+<<<<<<< HEAD
 Il file `/var/www/html/_bases/base_<nome progetto>_fila5_mono/laravel/Themes/Sixteen/resources/views/pages/auth/login.blade.php` è stato segnalato come non conforme alle aspettative.
+=======
+Il file `/var/www/html/_bases/base_<nome progetto>_fila3_mono/laravel/Themes/Sixteen/resources/views/pages/auth/login.blade.php` è stato segnalato come non conforme alle aspettative.
+>>>>>>> 6ed19256f (.)
 
 ## Analisi del File Attuale
 

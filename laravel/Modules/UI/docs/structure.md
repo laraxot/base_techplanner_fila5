@@ -1,14 +1,21 @@
 # Modulo UI
 
 Data: 2025-04-23 19:09:56
+<<<<<<< HEAD
 Data: [DATE] 19:09:56
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Informazioni generali
 
 - **Namespace principale**: Modules\\UI
 Modules\\UI\\Database\\Factories
 Modules\\UI\\Database\\Seeders
+<<<<<<< HEAD
 - **Pacchetto Composer**: laraxot/module_ui_fila5
+=======
+- **Pacchetto Composer**: laraxot/module_ui_fila3
+>>>>>>> 6ed19256f (.)
 Marco Sottana
 - **Dipendenze**: owenvoke/blade-fontawesome * repositories type path url ../User type path url ../Tenant type path url ../Xot scripts post-autoload-dump1 @php vendor/bin/testbench package:discover --ansi
 - **Totale file PHP**: 330
@@ -502,6 +509,7 @@ tests_old
 
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/docs/structure.md)
+<<<<<<< HEAD
 * [structure.md](../../../gdpr/docs/structure.md)
 * [structure.md](../../../notify/docs/structure.md)
 * [structure.md](../../../xot/docs/structure.md)
@@ -517,6 +525,8 @@ tests_old
 * [structure.md](../../../cms/docs/structure.md)
 * [structure.md](../../../cms/docs/themes/structure.md)
 * [structure.md](../../../cms/docs/components/structure.md)
+=======
+>>>>>>> 6ed19256f (.)
 * [structure.md](../../../Gdpr/docs/structure.md)
 * [structure.md](../../../Notify/docs/structure.md)
 * [structure.md](../../../Xot/docs/structure.md)
@@ -531,4 +541,8 @@ tests_old
 * [structure.md](../../../Activity/docs/structure.md)
 * [structure.md](../../../Cms/docs/structure.md)
 * [structure.md](../../../Cms/docs/themes/structure.md)
+<<<<<<< HEAD
 * [structure.md](../../../Cms/docs/components/structure.md)
+=======
+* [structure.md](../../../Cms/docs/components/structure.md)
+>>>>>>> 6ed19256f (.)

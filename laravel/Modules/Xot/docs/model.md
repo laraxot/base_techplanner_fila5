@@ -12,11 +12,18 @@ section: content
 ## Collegamenti tra versioni di model.md
 * [model.md](../../../Xot/docs/model.md)
 * [model.md](../../../Xot/docs/service/model.md)
+<<<<<<< HEAD
 * [model.md](../../../xot/project_docs/model.md)
 * [model.md](../../../xot/project_docs/service/model.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Versione Incoming
 
 # Model Queuable Actions
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> 6ed19256f (.)

@@ -9,6 +9,10 @@ use Tests\TestCase;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
+=======
+test('get form schema returns expected components', function (): void {
+>>>>>>> 6ed19256f (.)
     $form = MediaConvertResource::getFormSchema();
 
     expect($form)->toBeArray();

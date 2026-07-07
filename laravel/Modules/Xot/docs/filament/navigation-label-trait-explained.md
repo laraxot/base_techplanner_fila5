@@ -314,7 +314,10 @@ Ordinare risorse per frequenza uso:
 
 ### Documentazione Interna
 - [Progressioni MailTemplate Integration](../../Progressioni/docs/mailtemplate-resource-integration.md)
+<<<<<<< HEAD
 - [Progressioni MailTemplate Integration](../../progressioni/docs/mailtemplate-resource-integration.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [TransTrait](./trans-trait.md)
 - [GetTransKeyAction](../actions/get-trans-key-action.md)
 
@@ -325,4 +328,8 @@ Ordinare risorse per frequenza uso:
 ---
 
 **Ultimo aggiornamento**: 27 Ottobre 2025
+<<<<<<< HEAD
 **Maintainer**: Team PTVX
+=======
+**Maintainer**: Team PTVX
+>>>>>>> 6ed19256f (.)

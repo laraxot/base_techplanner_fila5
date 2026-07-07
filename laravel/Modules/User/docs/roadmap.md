@@ -283,6 +283,7 @@
 ---
 
 **Filosofia**: User è il modulo BASE più importante - deve essere perfetto, riutilizzabile, e senza dipendenze da moduli business specifici.
+<<<<<<< HEAD
 # Product Roadmap - User Module
 
 ## 🎯 Vision & Strategy
@@ -303,3 +304,5 @@ Provide a secure, highly-scalable authentication and authorization system for th
 ## 📂 Backlog / Future Ideas
 - Passkey (WebAuthn) support.
 - Centralized Auth across multiple Laraxot instances.
+=======
+>>>>>>> 6ed19256f (.)

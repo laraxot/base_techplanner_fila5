@@ -24,7 +24,10 @@ final class InteractiveMap extends Component
 
     public array $markers = [];
 
+<<<<<<< HEAD
     /** @var array<string, mixed> */
+=======
+>>>>>>> 6ed19256f (.)
     public array $filters = [
         'tickets' => true,
         'users' => false,
@@ -46,11 +49,15 @@ final class InteractiveMap extends Component
 
     public string $searchQuery = '';
 
+<<<<<<< HEAD
     /**
      * Untyped to match HandlesEvents::$listeners.
      *
      * @var array<string, string>
      */
+=======
+    /** @var array<string, string> */
+>>>>>>> 6ed19256f (.)
     protected $listeners = [
         'markerSelected' => 'selectMarker',
         'filtersChanged' => 'updateFilters',
@@ -58,10 +65,13 @@ final class InteractiveMap extends Component
         'refreshMap' => 'loadMarkers',
     ];
 
+<<<<<<< HEAD
     /**
      * @param array<string, mixed> $filters
      * @param array<string, mixed> $filters
      */
+=======
+>>>>>>> 6ed19256f (.)
     public function mount(?array $center = null, ?int $zoom = null, array $filters = []): void
     {
         if ($center) {
@@ -95,16 +105,23 @@ final class InteractiveMap extends Component
         $marker = collect($this->markers)
             ->firstWhere('id', $markerId);
 
+<<<<<<< HEAD
         $this->selectedMarker = \is_array($marker) ? $marker : null;
+=======
+        $this->selectedMarker = is_array($marker) ? $marker : null;
+>>>>>>> 6ed19256f (.)
 
         $this->dispatch('markerSelected', $this->selectedMarker);
     }
 
     /**
      * Aggiorna i filtri.
+<<<<<<< HEAD
      *
      * @param array<string, mixed> $filters
      * @param array<string, mixed> $filters
+=======
+>>>>>>> 6ed19256f (.)
      */
     public function updateFilters(array $filters): void
     {
@@ -129,10 +146,19 @@ final class InteractiveMap extends Component
         $this->isLoading = true;
 
         try {
+<<<<<<< HEAD
             $mapService = app(MapService::class);
             $filters = $this->getMapFilters();
             $this->markers = $mapService->getMarkers($filters);
             $this->stats = $mapService->getMapStats($filters);
+=======
+            /** @phpstan-ignore-next-line class.notFound */
+            $mapService = app(MapService::class);
+            /* @phpstan-ignore-next-line class.notFound, assign.propertyType */
+            $this->markers = $mapService->getMarkers($this->filters);
+            /* @phpstan-ignore-next-line class.notFound, assign.propertyType */
+            $this->stats = $mapService->getMapStats($this->filters);
+>>>>>>> 6ed19256f (.)
         } catch (\Exception $e) {
             $this->addError('map', 'Errore nel caricamento dei marker: '.$e->getMessage());
             $this->markers = [];
@@ -156,8 +182,15 @@ final class InteractiveMap extends Component
     public function exportData(string $format = 'json'): void
     {
         try {
+<<<<<<< HEAD
             $mapService = app(MapService::class);
             $data = $mapService->exportData($this->getMapFilters(), $format);
+=======
+            /** @phpstan-ignore-next-line class.notFound */
+            $mapService = app(MapService::class);
+            /** @phpstan-ignore-next-line class.notFound */
+            $data = $mapService->exportData($this->filters, $format);
+>>>>>>> 6ed19256f (.)
 
             $filename = 'map_export_'.now()->format('Y_m_d_H_i_s').'.'.$format;
 
@@ -186,7 +219,13 @@ final class InteractiveMap extends Component
         }
 
         try {
+<<<<<<< HEAD
             $geocodingService = app(GeocodingService::class);
+=======
+            /** @phpstan-ignore-next-line class.notFound */
+            $geocodingService = app(GeocodingService::class);
+            /** @phpstan-ignore-next-line class.notFound */
+>>>>>>> 6ed19256f (.)
             $result = $geocodingService->geocodeAddress($this->searchQuery);
             Assert::isArray($result, 'Geocoding result must be array');
 
@@ -212,17 +251,29 @@ final class InteractiveMap extends Component
      */
     public function getSuggestions(): array
     {
+<<<<<<< HEAD
         if (\strlen($this->searchQuery) < 3) {
+=======
+        if (strlen($this->searchQuery) < 3) {
+>>>>>>> 6ed19256f (.)
             return [];
         }
 
         try {
+<<<<<<< HEAD
             $geocodingService = app(GeocodingService::class);
 
             /** @var array<int, array<string, mixed>> $suggestions */
             $suggestions = $geocodingService->getSuggestions($this->searchQuery);
 
             return $suggestions;
+=======
+            /** @phpstan-ignore-next-line class.notFound */
+            $geocodingService = app(GeocodingService::class);
+
+            /* @phpstan-ignore-next-line class.notFound, return.type */
+            return $geocodingService->getSuggestions($this->searchQuery);
+>>>>>>> 6ed19256f (.)
         } catch (\Exception $e) {
             return [];
         }
@@ -252,6 +303,7 @@ final class InteractiveMap extends Component
     {
         $currentStatus = $this->filters['status'] ?? [];
         Assert::isArray($currentStatus, 'Status filter must be array');
+<<<<<<< HEAD
         $statusList = array_values(array_filter(
             $currentStatus,
             static fn (mixed $value): bool => \is_string($value),
@@ -260,13 +312,24 @@ final class InteractiveMap extends Component
         if ($enabled) {
             $statusList[] = $status;
             $this->filters['status'] = array_values(array_unique($statusList));
+=======
+
+        if ($enabled) {
+            $currentStatus[] = $status;
+            $this->filters['status'] = array_unique($currentStatus);
+>>>>>>> 6ed19256f (.)
             $this->loadMarkers();
 
             return;
         }
 
+<<<<<<< HEAD
         $statusList = array_values(array_diff($statusList, [$status]));
         $this->filters['status'] = array_values(array_unique($statusList));
+=======
+        $currentStatus = array_diff($currentStatus, [$status]);
+        $this->filters['status'] = array_unique($currentStatus);
+>>>>>>> 6ed19256f (.)
         $this->loadMarkers();
     }
 
@@ -277,6 +340,7 @@ final class InteractiveMap extends Component
     {
         $currentPriority = $this->filters['priority'] ?? [];
         Assert::isArray($currentPriority, 'Priority filter must be array');
+<<<<<<< HEAD
         $priorityList = array_values(array_filter(
             $currentPriority,
             static fn (mixed $value): bool => \is_string($value),
@@ -285,13 +349,24 @@ final class InteractiveMap extends Component
         if ($enabled) {
             $priorityList[] = $priority;
             $this->filters['priority'] = array_values(array_unique($priorityList));
+=======
+
+        if ($enabled) {
+            $currentPriority[] = $priority;
+            $this->filters['priority'] = array_unique($currentPriority);
+>>>>>>> 6ed19256f (.)
             $this->loadMarkers();
 
             return;
         }
 
+<<<<<<< HEAD
         $priorityList = array_values(array_diff($priorityList, [$priority]));
         $this->filters['priority'] = array_values(array_unique($priorityList));
+=======
+        $currentPriority = array_diff($currentPriority, [$priority]);
+        $this->filters['priority'] = array_unique($currentPriority);
+>>>>>>> 6ed19256f (.)
         $this->loadMarkers();
     }
 
@@ -321,18 +396,30 @@ final class InteractiveMap extends Component
     {
         return collect($this->markers)
             ->groupBy('type')
+<<<<<<< HEAD
             ->map(static fn ($markers) => $markers->count())
+=======
+            ->map(fn ($markers) => $markers->count())
+>>>>>>> 6ed19256f (.)
             ->toArray();
     }
 
     public function getVisibleMarkersCountProperty(): int
     {
+<<<<<<< HEAD
         return \count($this->markers);
+=======
+        return count($this->markers);
+>>>>>>> 6ed19256f (.)
     }
 
     public function getFilteredMarkersCountProperty(): int
     {
+<<<<<<< HEAD
         return \count($this->markers);
+=======
+        return count($this->markers);
+>>>>>>> 6ed19256f (.)
     }
 
     /**
@@ -347,6 +434,7 @@ final class InteractiveMap extends Component
             default => 'application/json',
         };
     }
+<<<<<<< HEAD
 
     /**
      * @return array<string, mixed>
@@ -365,4 +453,6 @@ final class InteractiveMap extends Component
 
         return $filters;
     }
+=======
+>>>>>>> 6ed19256f (.)
 }

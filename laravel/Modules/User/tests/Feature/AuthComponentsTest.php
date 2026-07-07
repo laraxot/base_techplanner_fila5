@@ -2,14 +2,21 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\User\Tests\Feature;
 
+=======
+>>>>>>> 6ed19256f (.)
 use Illuminate\Support\Facades\View;
 use Modules\User\Models\User;
 
 use function Pest\Laravel\actingAs;
 use function Pest\Laravel\get;
 
+<<<<<<< HEAD
+=======
+uses(Modules\User\Tests\TestCase::class);
+>>>>>>> 6ed19256f (.)
 
 describe('Auth Components Tests', function (): void {
     test('auth components exist and work correctly', function (): void {
@@ -28,12 +35,20 @@ describe('Auth Components Tests', function (): void {
     test('login page loads correctly', function (): void {
         // Test that login page loads correctly
         $response = get('/it/auth/login');
+<<<<<<< HEAD
+=======
+        /* @phpstan-ignore-next-line method.nonObject */
+>>>>>>> 6ed19256f (.)
         $response->assertStatus(200);
     });
 
     test('register page loads correctly', function (): void {
         // Test that register page loads correctly
         $response = get('/it/auth/register');
+<<<<<<< HEAD
+=======
+        /* @phpstan-ignore-next-line method.nonObject */
+>>>>>>> 6ed19256f (.)
         $response->assertStatus(200);
     });
 
@@ -64,11 +79,28 @@ describe('Authentication Flow with Reorganized Components', function (): void {
         // Visit login page and ensure all reorganized components render
         $response = get('/it/auth/login');
 
+<<<<<<< HEAD
+=======
+        /* @phpstan-ignore-next-line method.nonObject */
+        $response->assertStatus(200);
+        /* @phpstan-ignore-next-line method.nonObject */
+        $response->assertSee('Login');
+    });
+
+    test('password confirmation uses reorganized components', function (): void {
+        /** @var User */
+        $user = User/* @phpstan-ignore-line */ ::factory()->create();
+
+        actingAs($user)
+            ->get('/it/auth/password/confirm')
+            ->assertStatus(200);
+>>>>>>> 6ed19256f (.)
     });
 });
 
 describe('User Profile Components Tests', function (): void {
     test('profile pages use reorganized components correctly', function (): void {
+<<<<<<< HEAD
         $response->assertStatus(200);
         $user = User::factory()->create();
 
@@ -99,5 +131,14 @@ describe('User Profile Components Tests', function (): void {
         } catch (Throwable $e) {
             expect($e->getMessage())->not->toBe('');
         }
+=======
+        /** @var User */
+        $user = User/* @phpstan-ignore-line */ ::factory()->create();
+
+        $response = actingAs($user)->get('/it/profile/edit');
+
+        /* @phpstan-ignore-next-line method.nonObject */
+        $response->assertStatus(200);
+>>>>>>> 6ed19256f (.)
     });
 });

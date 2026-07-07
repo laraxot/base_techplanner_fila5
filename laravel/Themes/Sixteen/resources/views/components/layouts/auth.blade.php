@@ -199,7 +199,11 @@
         }
     </style>
 </head>
+<<<<<<< HEAD
 <body>
+=======
+<body class="h-full bg-gray-50">
+>>>>>>> 6ed19256f (.)
     <!-- Skip Links AGID -->
     <a href="#main-content" class="agid-skip-link">Salta al contenuto principale</a>
     <a href="#login-form" class="agid-skip-link">Vai al modulo di accesso</a>
@@ -233,7 +237,11 @@
             <ol class="flex items-center space-x-2 text-sm">
                 <li>
                     <a href="{{ route('home') }}" class="text-blue-600 hover:text-blue-800 transition-colors">
+<<<<<<< HEAD
                         <x-filament::icon icon="heroicon-o-home" class="w-4 h-4 inline mr-1" />
+=======
+                        <x-filament::icon name="heroicon-o-home" class="w-4 h-4 inline mr-1" />
+>>>>>>> 6ed19256f (.)
                         Home
                     </a>
                 </li>

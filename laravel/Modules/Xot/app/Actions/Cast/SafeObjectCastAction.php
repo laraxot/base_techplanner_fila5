@@ -4,7 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Cast;
 
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
+=======
+use InvalidArgumentException;
+use Spatie\QueueableAction\QueueableAction;
+use Throwable;
+>>>>>>> 6ed19256f (.)
 use Webmozart\Assert\Assert;
 
 /**
@@ -29,8 +35,13 @@ class SafeObjectCastAction
     /**
      * Verifica se un oggetto ha una proprietà specifica.
      *
+<<<<<<< HEAD
      * @param object $object   L'oggetto da verificare
      * @param string $property Il nome della proprietà
+=======
+     * @param  object  $object  L'oggetto da verificare
+     * @param  string  $property  Il nome della proprietà
+>>>>>>> 6ed19256f (.)
      *
      * @return bool True se l'oggetto ha la proprietà
      */
@@ -44,8 +55,13 @@ class SafeObjectCastAction
     /**
      * Verifica se un oggetto ha una proprietà con valore non null.
      *
+<<<<<<< HEAD
      * @param object $object   L'oggetto da verificare
      * @param string $property Il nome della proprietà
+=======
+     * @param  object  $object  L'oggetto da verificare
+     * @param  string  $property  Il nome della proprietà
+>>>>>>> 6ed19256f (.)
      *
      * @return bool True se l'oggetto ha la proprietà con valore non null
      */
@@ -54,7 +70,11 @@ class SafeObjectCastAction
         Assert::stringNotEmpty($property);
 
         $hasProperty = isset($object->{$property});
+<<<<<<< HEAD
         $isNotNull = $hasProperty && null !== $object->{$property};
+=======
+        $isNotNull = $hasProperty && $object->{$property} !== null;
+>>>>>>> 6ed19256f (.)
 
         Assert::true(
             ! $hasProperty || $isNotNull,
@@ -67,8 +87,13 @@ class SafeObjectCastAction
     /**
      * Verifica se un oggetto ha una proprietà con valore non vuoto.
      *
+<<<<<<< HEAD
      * @param object $object   L'oggetto da verificare
      * @param string $property Il nome della proprietà
+=======
+     * @param  object  $object  L'oggetto da verificare
+     * @param  string  $property  Il nome della proprietà
+>>>>>>> 6ed19256f (.)
      *
      * @return bool True se l'oggetto ha la proprietà con valore non vuoto
      */
@@ -82,15 +107,25 @@ class SafeObjectCastAction
 
         $value = $object->{$property};
 
+<<<<<<< HEAD
         return '' !== $value;
+=======
+        return $value !== '';
+>>>>>>> 6ed19256f (.)
     }
 
     /**
      * Ottiene una proprietà con cast sicuro a string.
      *
+<<<<<<< HEAD
      * @param object      $object   L'oggetto da cui ottenere la proprietà
      * @param string      $property Il nome della proprietà
      * @param string|null $default  Valore di default se la proprietà non esiste o è null
+=======
+     * @param  object  $object  L'oggetto da cui ottenere la proprietà
+     * @param  string  $property  Il nome della proprietà
+     * @param  string|null  $default  Valore di default se la proprietà non esiste o è null
+>>>>>>> 6ed19256f (.)
      *
      * @return string Il valore della proprietà convertito in string
      */
@@ -110,9 +145,15 @@ class SafeObjectCastAction
     /**
      * Ottiene una proprietà con cast sicuro a int.
      *
+<<<<<<< HEAD
      * @param object   $object   L'oggetto da cui ottenere la proprietà
      * @param string   $property Il nome della proprietà
      * @param int|null $default  Valore di default se la proprietà non esiste o è null
+=======
+     * @param  object  $object  L'oggetto da cui ottenere la proprietà
+     * @param  string  $property  Il nome della proprietà
+     * @param  int|null  $default  Valore di default se la proprietà non esiste o è null
+>>>>>>> 6ed19256f (.)
      *
      * @return int Il valore della proprietà convertito in int
      */
@@ -132,9 +173,15 @@ class SafeObjectCastAction
     /**
      * Ottiene una proprietà con cast sicuro a float.
      *
+<<<<<<< HEAD
      * @param object     $object   L'oggetto da cui ottenere la proprietà
      * @param string     $property Il nome della proprietà
      * @param float|null $default  Valore di default se la proprietà non esiste o è null
+=======
+     * @param  object  $object  L'oggetto da cui ottenere la proprietà
+     * @param  string  $property  Il nome della proprietà
+     * @param  float|null  $default  Valore di default se la proprietà non esiste o è null
+>>>>>>> 6ed19256f (.)
      *
      * @return float Il valore della proprietà convertito in float
      */
@@ -154,9 +201,15 @@ class SafeObjectCastAction
     /**
      * Ottiene una proprietà con cast sicuro a boolean.
      *
+<<<<<<< HEAD
      * @param object    $object   L'oggetto da cui ottenere la proprietà
      * @param string    $property Il nome della proprietà
      * @param bool|null $default  Valore di default se la proprietà non esiste o è null
+=======
+     * @param  object  $object  L'oggetto da cui ottenere la proprietà
+     * @param  string  $property  Il nome della proprietà
+     * @param  bool|null  $default  Valore di default se la proprietà non esiste o è null
+>>>>>>> 6ed19256f (.)
      *
      * @return bool Il valore della proprietà convertito in boolean
      */
@@ -176,9 +229,15 @@ class SafeObjectCastAction
     /**
      * Ottiene una proprietà con cast sicuro a array.
      *
+<<<<<<< HEAD
      * @param object     $object   L'oggetto da cui ottenere la proprietà
      * @param string     $property Il nome della proprietà
      * @param array|null $default  Valore di default se la proprietà non esiste o è null
+=======
+     * @param  object  $object  L'oggetto da cui ottenere la proprietà
+     * @param  string  $property  Il nome della proprietà
+     * @param  array|null  $default  Valore di default se la proprietà non esiste o è null
+>>>>>>> 6ed19256f (.)
      *
      * @return array Il valore della proprietà convertito in array
      */
@@ -198,10 +257,17 @@ class SafeObjectCastAction
     /**
      * Ottiene una proprietà con cast sicuro a un tipo specifico.
      *
+<<<<<<< HEAD
      * @param object $object   L'oggetto da cui ottenere la proprietà
      * @param string $property Il nome della proprietà
      * @param string $type     Il tipo di cast desiderato (string, int, float, bool, array)
      * @param mixed  $default  Valore di default se la proprietà non esiste o è null
+=======
+     * @param  object  $object  L'oggetto da cui ottenere la proprietà
+     * @param  string  $property  Il nome della proprietà
+     * @param  string  $type  Il tipo di cast desiderato (string, int, float, bool, array)
+     * @param  mixed  $default  Valore di default se la proprietà non esiste o è null
+>>>>>>> 6ed19256f (.)
      *
      * @return mixed Il valore della proprietà convertito nel tipo specificato
      */
@@ -216,16 +282,26 @@ class SafeObjectCastAction
             'float' => $this->getFloatProperty($object, $property, is_float($default) ? $default : null),
             'bool' => $this->getBooleanProperty($object, $property, is_bool($default) ? $default : null),
             'array' => $this->getArrayProperty($object, $property, is_array($default) ? $default : null),
+<<<<<<< HEAD
             default => throw new \InvalidArgumentException("Tipo non supportato: {$type}"),
+=======
+            default => throw new InvalidArgumentException("Tipo non supportato: {$type}"),
+>>>>>>> 6ed19256f (.)
         };
     }
 
     /**
      * Verifica se un oggetto ha una proprietà con valore specifico.
      *
+<<<<<<< HEAD
      * @param object $object        L'oggetto da verificare
      * @param string $property      Il nome della proprietà
      * @param mixed  $expectedValue Il valore atteso
+=======
+     * @param  object  $object  L'oggetto da verificare
+     * @param  string  $property  Il nome della proprietà
+     * @param  mixed  $expectedValue  Il valore atteso
+>>>>>>> 6ed19256f (.)
      *
      * @return bool True se l'oggetto ha la proprietà con il valore atteso
      */
@@ -245,11 +321,19 @@ class SafeObjectCastAction
     /**
      * Ottiene una proprietà con validazione di tipo e valore.
      *
+<<<<<<< HEAD
      * @param object        $object    L'oggetto da cui ottenere la proprietà
      * @param string        $property  Il nome della proprietà
      * @param string        $type      Il tipo di cast desiderato
      * @param callable|null $validator Funzione di validazione opzionale
      * @param mixed         $default   Valore di default se la validazione fallisce
+=======
+     * @param  object  $object  L'oggetto da cui ottenere la proprietà
+     * @param  string  $property  Il nome della proprietà
+     * @param  string  $type  Il tipo di cast desiderato
+     * @param  callable|null  $validator  Funzione di validazione opzionale
+     * @param  mixed  $default  Valore di default se la validazione fallisce
+>>>>>>> 6ed19256f (.)
      *
      * @return mixed Il valore della proprietà validato e convertito
      */
@@ -265,7 +349,11 @@ class SafeObjectCastAction
 
         $value = $this->getTypedProperty($object, $property, $type, $default);
 
+<<<<<<< HEAD
         if (null !== $validator && ! $validator($value)) {
+=======
+        if ($validator !== null && ! $validator($value)) {
+>>>>>>> 6ed19256f (.)
             return $default;
         }
 
@@ -275,8 +363,13 @@ class SafeObjectCastAction
     /**
      * Verifica se un oggetto ha un metodo specifico.
      *
+<<<<<<< HEAD
      * @param object $object L'oggetto da verificare
      * @param string $method Il nome del metodo
+=======
+     * @param  object  $object  L'oggetto da verificare
+     * @param  string  $method  Il nome del metodo
+>>>>>>> 6ed19256f (.)
      *
      * @return bool True se l'oggetto ha il metodo
      */
@@ -290,10 +383,17 @@ class SafeObjectCastAction
     /**
      * Esegue un metodo su un oggetto in modo sicuro.
      *
+<<<<<<< HEAD
      * @param object $object     L'oggetto su cui eseguire il metodo
      * @param string $method     Il nome del metodo
      * @param array  $parameters I parametri del metodo
      * @param mixed  $default    Valore di default se il metodo non esiste o fallisce
+=======
+     * @param  object  $object  L'oggetto su cui eseguire il metodo
+     * @param  string  $method  Il nome del metodo
+     * @param  array  $parameters  I parametri del metodo
+     * @param  mixed  $default  Valore di default se il metodo non esiste o fallisce
+>>>>>>> 6ed19256f (.)
      *
      * @return mixed Il risultato del metodo o il valore di default
      */
@@ -311,7 +411,11 @@ class SafeObjectCastAction
 
         try {
             return $object->{$method}(...$parameters);
+<<<<<<< HEAD
         } catch (\Throwable $e) {
+=======
+        } catch (Throwable $e) {
+>>>>>>> 6ed19256f (.)
             return $default;
         }
     }

@@ -78,7 +78,15 @@ npm install -g @iflow-ai/iflow-cli
 **Primo Utilizzo**:
 
 ```bash
+<<<<<<< HEAD
 cd init
+=======
+cd /var/www/_bases/base_quaeris_fila4_mono
+
+# Inizializza progetto
+iflow
+> /init
+>>>>>>> 6ed19256f (.)
 
 # Esempio: Analizza architettura
 > Analizza l'architettura modulare del progetto e documenta le dipendenze tra Modules
@@ -92,9 +100,15 @@ cd init
 
 **Accesso a**:
 
+<<<<<<< HEAD
 - `laravel`
 - `Modules`
 - `Themes`
+=======
+- `/var/www/_bases/base_quaeris_fila4_mono/laravel`
+- `/var/www/_bases/base_quaeris_fila4_mono/Modules`
+- `/var/www/_bases/base_quaeris_fila4_mono/Themes`
+>>>>>>> 6ed19256f (.)
 
 **Cosa fa**: Legge/scrive file, esplora struttura progetto
 
@@ -138,7 +152,11 @@ cd init
 
 ```
 # In Cursor/Windsurf/Cline
+<<<<<<< HEAD
 Analizza gli errori PHPStan in Modules/healthcare_app e suggerisci correzioni seguendo le regole in .windsurf/rules/
+=======
+Analizza gli errori PHPStan in Modules/Quaeris e suggerisci correzioni seguendo le regole in .windsurf/rules/
+>>>>>>> 6ed19256f (.)
 ```
 
 ### 2. Refactoring Modulo
@@ -174,7 +192,11 @@ iflow
 
 ```
 # Con memory + sequential-thinking
+<<<<<<< HEAD
 Analizza l'architettura del modulo healthcare_app:
+=======
+Analizza l'architettura del modulo Quaeris:
+>>>>>>> 6ed19256f (.)
 1. Identifica pattern utilizzati
 2. Documenta dipendenze
 3. Suggerisci miglioramenti
@@ -208,10 +230,17 @@ cat ~/.cursor/mcp.json | jq '.mcpServers.github.env'
 
 ```bash
 # Verifica permessi
+<<<<<<< HEAD
 ls -la 
 
 # Fix permessi se necessario
 sudo chown -R $USER:$USER 
+=======
+ls -la /var/www/_bases/base_quaeris_fila4_mono/
+
+# Fix permessi se necessario
+sudo chown -R $USER:$USER /var/www/_bases/base_quaeris_fila4_mono/
+>>>>>>> 6ed19256f (.)
 ```
 
 ---
@@ -256,4 +285,7 @@ Per problemi o domande:
 ---
 
 **Ultimo aggiornamento**: 2025-01-06
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+>>>>>>> 6ed19256f (.)

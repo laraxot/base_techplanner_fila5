@@ -16,7 +16,11 @@ class SafeStringCastAction
      * Converte in modo sicuro un valore mixed in string.
      * impostare delle eccezzioni ?
      *
+<<<<<<< HEAD
      * @param mixed $value Il valore da convertire
+=======
+     * @param  mixed  $value  Il valore da convertire
+>>>>>>> 6ed19256f (.)
      *
      * @return string Il valore convertito in string
      */
@@ -50,7 +54,11 @@ class SafeStringCastAction
     /**
      * Metodo statico di convenienza per chiamate dirette.
      *
+<<<<<<< HEAD
      * @param mixed $value Il valore da convertire
+=======
+     * @param  mixed  $value  Il valore da convertire
+>>>>>>> 6ed19256f (.)
      *
      * @return string Il valore convertito in string
      */

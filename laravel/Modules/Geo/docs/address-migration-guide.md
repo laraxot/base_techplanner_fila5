@@ -14,15 +14,19 @@ use Modules\Geo\Enums\AddressItemEnum;
 public function up(): void
 {
     Schema::create('addresses', function (Blueprint $table): void {
+<<<<<<< HEAD
 public function up(): void
 {
     Schema::create('addresses', function (Blueprint $table) {
+=======
+>>>>>>> 6ed19256f (.)
         $table->id();
         $table->nullableMorphs('addressable'); // Relazione polimorfica
         $table->string('name')->nullable()->comment('Nome identificativo dell\'indirizzo');
         $table->text('description')->nullable()->comment('Descrizione dell\'indirizzo');
         $table->string('type', 20)->nullable()->comment('Tipo di indirizzo (casa, lavoro, ecc.)');
         $table->boolean('is_primary')->default(false)->comment('Indica se è l\'indirizzo principale');
+<<<<<<< HEAD
         
         // Componenti dell'indirizzo
         $table->string('street_number', 20)->nullable()->comment('Numero civico');
@@ -43,6 +47,8 @@ public function up(): void
         // Dati aggiuntivi
         $table->json('extra_data')->nullable()->comment('Dati aggiuntivi in formato JSON');
         
+=======
+>>>>>>> 6ed19256f (.)
 
         // Tutti i componenti dell'indirizzo definiti da AddressItemEnum (route, locality, ...)
         AddressItemEnum::columns($table);
@@ -81,7 +87,10 @@ Nella tua domanda hai giustamente notato:
 > $table->string('postal_code', 20)->nullable()->comment('Codice postale');
 > $table->string('address_country', 2)->nullable()->comment('Codice paese ISO 3166-1 alpha-2');`
 >
+<<<<<<< HEAD
 > 
+=======
+>>>>>>> 6ed19256f (.)
 > ripetere "address" quando siamo già nella tabella address?
 
 Hai perfettamente ragione. Esistono diverse considerazioni riguardo alle convenzioni di naming:
@@ -158,4 +167,8 @@ La scelta di evitare il prefisso `address_` nei campi della tabella `addresses` 
 4. **Segue le convenzioni Laravel**
 5. **Rende il codice più manutenibile**
 
+<<<<<<< HEAD
 Questa struttura, combinata con l'uso di `nullableMorphs('addressable')` per la relazione polimorfica, fornisce un modello Address flessibile e riutilizzabile in diversi contesti applicativi.
+=======
+Questa struttura, combinata con l'uso di `nullableMorphs('addressable')` per la relazione polimorfica, fornisce un modello Address flessibile e riutilizzabile in diversi contesti applicativi.
+>>>>>>> 6ed19256f (.)

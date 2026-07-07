@@ -1,20 +1,34 @@
+<<<<<<< HEAD
 **Data Creazione**: 2025-01-27
 **Ultimo Aggiornamento**: 2025-01-27
 # Configurazione MCP Ottimizzata per base_techplanner_fila5_mono
 
 **Data Creazione**: [DATE]
+=======
+# Configurazione MCP Ottimizzata per base_techplanner_fila4_mono
+
+**Data Creazione**: 2025-01-27
+**Ultimo Aggiornamento**: 2025-01-27
+>>>>>>> 6ed19256f (.)
 **Status**: ✅ Configurazione Completa e Ottimizzata
 **Metodologia**: Super Mucca 🐮⚡
 
 ### ⚠️ Cambiamenti Recenti
 - **2025-01-27**: Rimosso `mcp-package-docs` (deprecato e non supportato) - Usare Laravel Boost per documentazione
+<<<<<<< HEAD
 - **[DATE]**: Rimosso `mcp-package-docs` (deprecato e non supportato) - Usare Laravel Boost per documentazione
+=======
+>>>>>>> 6ed19256f (.)
 
 ---
 
 ## 🎯 Scopo del Documento
 
+<<<<<<< HEAD
 Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_techplanner_fila5_mono**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
+=======
+Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_techplanner_fila4_mono**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
+>>>>>>> 6ed19256f (.)
 
 ---
 
@@ -30,7 +44,11 @@ File: `.windsurf/mcp.json` (o `.cursor/mcp.json` per Cursor)
     "laravel-boost": {
       "command": "php",
       "args": [
+<<<<<<< HEAD
         "artisan",
+=======
+        "/var/www/_bases/base_techplanner_fila4_mono/laravel/artisan",
+>>>>>>> 6ed19256f (.)
         "boost:mcp"
       ],
       "env": {
@@ -42,10 +60,17 @@ File: `.windsurf/mcp.json` (o `.cursor/mcp.json` per Cursor)
       "args": [
         "-y",
         "@modelcontextprotocol/server-filesystem",
+<<<<<<< HEAD
         "laravel",
         "docs",
         "public_html",
         "bashscripts"
+=======
+        "/var/www/_bases/base_techplanner_fila4_mono/laravel",
+        "/var/www/_bases/base_techplanner_fila4_mono/docs",
+        "/var/www/_bases/base_techplanner_fila4_mono/public_html",
+        "/var/www/_bases/base_techplanner_fila4_mono/bashscripts"
+>>>>>>> 6ed19256f (.)
       ]
     },
     "memory": {
@@ -66,7 +91,15 @@ File: `.windsurf/mcp.json` (o `.cursor/mcp.json` per Cursor)
     },
     "git": {
       "command": "npx",
+<<<<<<< HEAD
       "args": ["-y", "@modelcontextprotocol/server-git", "playwright-mcp-server"],
+=======
+      "args": ["-y", "@modelcontextprotocol/server-git", "/var/www/_bases/base_techplanner_fila4_mono"]
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@executeautomation/playwright-mcp-server"],
+>>>>>>> 6ed19256f (.)
       "env": {}
     },
     "puppeteer": {
@@ -80,7 +113,11 @@ File: `.windsurf/mcp.json` (o `.cursor/mcp.json` per Cursor)
     "mysql": {
       "command": "node",
       "args": [
+<<<<<<< HEAD
         "bashscripts/mcp/mysql-db-connector.js"
+=======
+        "/var/www/_bases/base_techplanner_fila4_mono/bashscripts/mcp/mysql-db-connector.js"
+>>>>>>> 6ed19256f (.)
       ]
     },
   }
@@ -107,7 +144,11 @@ File: `.windsurf/mcp.json` (o `.cursor/mcp.json` per Cursor)
 
 **Installazione**:
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/_bases/base_techplanner_fila4_mono/laravel
+>>>>>>> 6ed19256f (.)
 composer require laravel/boost
 php artisan boost:install
 ```
@@ -121,10 +162,17 @@ php artisan boost:install
 **Scopo**: Accesso completo ai file del progetto, anche quelli in gitignore.
 
 **Path Configurati**:
+<<<<<<< HEAD
 - `laravel` - Codice Laravel e moduli
 - `docs` - Documentazione progetto
 - `public_html` - Assets pubblici
 - `bashscripts` - Script utility
+=======
+- `/var/www/_bases/base_techplanner_fila4_mono/laravel` - Codice Laravel e moduli
+- `/var/www/_bases/base_techplanner_fila4_mono/docs` - Documentazione progetto
+- `/var/www/_bases/base_techplanner_fila4_mono/public_html` - Assets pubblici
+- `/var/www/_bases/base_techplanner_fila4_mono/bashscripts` - Script utility
+>>>>>>> 6ed19256f (.)
 
 **Capacità**:
 - ✅ Read/Write file (anche in gitignore come .env)
@@ -132,7 +180,41 @@ php artisan boost:install
 - ✅ Search file per pattern
 - ✅ File info (size, permissions, timestamps)
 
+<<<<<<< HEAD
 **Miglioramento**: Path aggiornati dal vecchio `API) ✅
+=======
+**Miglioramento**: Path aggiornati dal vecchio `/var/www/html/_bases/` al path completo del progetto.
+
+### 3. Memory (Knowledge Graph) ✅
+
+**Stato**: Configurato
+
+**Scopo**: Memoria persistente con knowledge graph per ricordare pattern e decisioni architetturali.
+
+**Capacità**:
+- ✅ Knowledge graph persistente
+- ✅ Ricerca pattern nel codice
+- ✅ Memorizzazione decisioni tecniche
+- ✅ Contesto tra richieste multiple
+
+**Utilizzo**: Memorizzare pattern architetturali, decisioni business logic, fix comuni.
+
+### 4. Sequential Thinking ✅
+
+**Stato**: Configurato
+
+**Scopo**: Problem-solving dinamico e riflessivo per problemi complessi.
+
+**Capacità**:
+- ✅ Ragionamento strutturato step-by-step
+- ✅ Analisi multi-step
+- ✅ Revisione e correzione pensieri precedenti
+- ✅ Generazione ipotesi e verifica
+
+**Utilizzo**: Analisi complesse, debugging difficile, decisioni architetturali.
+
+### 5. Fetch (HTTP/API) ✅
+>>>>>>> 6ed19256f (.)
 
 **Stato**: Aggiunto nella nuova configurazione
 
@@ -196,7 +278,11 @@ php artisan boost:install
 
 **Scopo**: Query dirette MySQL con credenziali da `.env`.
 
+<<<<<<< HEAD
 **Path Script**: `bashscripts/mcp/mysql-db-connector.js`
+=======
+**Path Script**: `/var/www/_bases/base_techplanner_fila4_mono/bashscripts/mcp/mysql-db-connector.js`
+>>>>>>> 6ed19256f (.)
 
 **Capacità**:
 - ✅ Query SQL dirette
@@ -244,7 +330,11 @@ php artisan boost:install
 
 **Passi per Laravel Boost**:
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/_bases/base_techplanner_fila4_mono/laravel
+>>>>>>> 6ed19256f (.)
 composer require laravel/boost
 php artisan boost:install
 ```
@@ -274,13 +364,21 @@ npx -y @modelcontextprotocol/server-git --version
 npx -y @executeautomation/playwright-mcp-server --version
 
 # Test mysql script
+<<<<<<< HEAD
 node bashscripts/mcp/mysql-db-connector.js
+=======
+node /var/www/_bases/base_techplanner_fila4_mono/bashscripts/mcp/mysql-db-connector.js
+>>>>>>> 6ed19256f (.)
 ```
 
 ### Test Laravel Boost (Dopo Installazione)
 
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/_bases/base_techplanner_fila4_mono/laravel
+>>>>>>> 6ed19256f (.)
 php artisan boost:mcp
 ```
 
@@ -355,7 +453,11 @@ npm install -g @executeautomation/playwright-mcp-server
 
 - [MCP Servers Configuration](./mcp-servers-configuration.md) - Configurazione generale MCP
 - [MCP Servers Complete List](./mcp-servers.md) - Lista completa server disponibili
+<<<<<<< HEAD
 - [Project Understanding Consolidated](../../../../../docs/project-understanding-consolidated.md) - Panoramica progetto
+=======
+- [Project Understanding Consolidated](../../../../docs/project-understanding-consolidated.md) - Panoramica progetto
+>>>>>>> 6ed19256f (.)
 
 ### External Resources
 
@@ -372,7 +474,11 @@ npm install -g @executeautomation/playwright-mcp-server
 Sempre usare path assoluti nella configurazione MCP:
 ```json
 // ✅ CORRETTO
+<<<<<<< HEAD
 "artisan"
+=======
+"/var/www/_bases/base_techplanner_fila4_mono/laravel/artisan"
+>>>>>>> 6ed19256f (.)
 
 // ❌ ERRATO
 "./laravel/artisan"
@@ -399,7 +505,11 @@ Mai hardcodare credenziali:
 Limitare sempre lo scope alle directory necessarie:
 ```json
 // ✅ CORRETTO - Directory specifiche
+<<<<<<< HEAD
 "laravel"
+=======
+"/var/www/_bases/base_techplanner_fila4_mono/laravel"
+>>>>>>> 6ed19256f (.)
 
 // ❌ PERICOLOSO - Root directory
 "/"
@@ -461,6 +571,11 @@ npx -y @modelcontextprotocol/server-filesystem --version
 ---
 
 **Ultimo aggiornamento**: 2025-01-27
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
 **Autore**: Super Mucca Analysis
 **Status**: ✅ Configurazione Completa e Ottimizzata
+=======
+**Autore**: Super Mucca Analysis
+**Status**: ✅ Configurazione Completa e Ottimizzata
+>>>>>>> 6ed19256f (.)

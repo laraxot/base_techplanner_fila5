@@ -64,8 +64,13 @@
 ## Errori Comuni
 
 1. **Errore**: Directory errata
+<<<<<<< HEAD
    - ❌ `Modules/Module/Datas/`
    - ✅ `Modules/Module/Datas/`
+=======
+   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
+   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
+>>>>>>> 6ed19256f (.)
 
 2. **Errore**: Namespace errato
    - ❌ `namespace Modules\Module\App\Datas;`
@@ -77,6 +82,12 @@
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Data Objects Patient](../patient/docs/data-objects.md)
 - [Best Practices](./best-practices.md)
 - [Convenzioni di Codice](./coding-standards.md)
+=======
+- [Data Objects Patient](../Patient/docs/data-objects.md)
+- [Best Practices](./best-practices.md)
+- [Convenzioni di Codice](./coding-standards.md)
+>>>>>>> 6ed19256f (.)

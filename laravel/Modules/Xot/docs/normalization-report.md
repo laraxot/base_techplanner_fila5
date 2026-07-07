@@ -6,11 +6,14 @@
 
 ### File Eliminati (Duplicati con Date)
 
+<<<<<<< HEAD
 1. ✅ **`Modules/UI/docs/bugfix-icons-missing-[DATE].md`**
    - **Motivo**: Duplicato identico di `bugfix-icons-missing.md`
    - **Stato**: Eliminato con successo
 
 2. ✅ **`Modules/UI/docs/bugfix-table-layout-action-[DATE].md`**
+=======
+>>>>>>> 6ed19256f (.)
 1. ✅ **`Modules/UI/docs/bugfix-icons-missing-2025-01-27.md`**
    - **Motivo**: Duplicato identico di `bugfix-icons-missing.md`
    - **Stato**: Eliminato con successo
@@ -22,7 +25,10 @@
 ### File Rinominati (Rimozione Date)
 
 1. ✅ **`translation-refactor-complete-summary-2025-08-08.md` → `translation-refactor-complete-summary.md`**
+<<<<<<< HEAD
 1. ✅ **`translation-refactor-complete-summary-[DATE].md` → `translation-refactor-complete-summary.md`**
+=======
+>>>>>>> 6ed19256f (.)
    - **Modulo**: Lang
    - **Motivo**: File attivo con data nel nome
    - **Stato**: Rinominato con successo
@@ -117,6 +123,7 @@
 ---
 
 **Data**: Gennaio 2025
+<<<<<<< HEAD
 - [Processo Normalizzazione](../xot/docs/docs-normalization-process.md)
 - [Regole Naming File](../xot/docs/file-naming-rules.md)
 - [Filosofia DRY + KISS](../../../docs/philosophy-guide.md)
@@ -125,3 +132,7 @@
 
 **Stato**: In corso
 **Prossima Revisione**: Dopo normalizzazione batch successivo
+=======
+**Stato**: In corso
+**Prossima Revisione**: Dopo normalizzazione batch successivo
+>>>>>>> 6ed19256f (.)

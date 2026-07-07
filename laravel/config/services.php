@@ -35,6 +35,7 @@ return [
         ],
     ],
 
+<<<<<<< HEAD
     'google' => [
         'client_id' => env('GOOGLE_CLIENT_ID'),
         'client_secret' => env('GOOGLE_CLIENT_SECRET'),
@@ -54,4 +55,6 @@ return [
         'tenant' => env('MICROSOFT_TENANT_ID', 'common'),
     ],
 
+=======
+>>>>>>> 6ed19256f (.)
 ];

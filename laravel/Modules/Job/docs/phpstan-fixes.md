@@ -72,6 +72,7 @@ protected function getHeaderActions(): array
 
 ## Collegamenti tra versioni di lang-link.md
 
+<<<<<<< HEAD
 - [lang-link.md](../../../chart/docs/lang-link.md)
 - [lang-link.md](../../../reporting/docs/lang-link.md)
 - [lang-link.md](../../../gdpr/docs/lang-link.md)
@@ -86,6 +87,8 @@ protected function getHeaderActions(): array
 - [lang-link.md](../../../activity/docs/lang-link.md)
 - [lang-link.md](../../../patient/docs/lang-link.md)
 - [lang-link.md](../../../cms/docs/lang-link.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [lang-link.md](../../../Chart/docs/lang-link.md)
 - [lang-link.md](../../../Reporting/docs/lang-link.md)
 - [lang-link.md](../../../Gdpr/docs/lang-link.md)
@@ -99,4 +102,8 @@ protected function getHeaderActions(): array
 - [lang-link.md](../../../Tenant/docs/lang-link.md)
 - [lang-link.md](../../../Activity/docs/lang-link.md)
 - [lang-link.md](../../../Patient/docs/lang-link.md)
+<<<<<<< HEAD
 - [lang-link.md](../../../Cms/docs/lang-link.md)
+=======
+- [lang-link.md](../../../Cms/docs/lang-link.md)
+>>>>>>> 6ed19256f (.)

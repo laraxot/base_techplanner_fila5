@@ -124,7 +124,11 @@ done
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Documentazione Root Traduzioni](../../../../../docs/translation_standards_links.md)
+=======
+- [Documentazione Root Traduzioni](../../../../docs/translation_standards_links.md)
+>>>>>>> 6ed19256f (.)
 - [Regole Traduzioni UI](translation_rules.md)
 - [Best Practices Filament](filament_best_practices.md)
 
@@ -260,7 +264,11 @@ done
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Documentazione Root Traduzioni](../../../../../docs/translation_standards_links.md)
+=======
+- [Documentazione Root Traduzioni](../../../../docs/translation_standards_links.md)
+>>>>>>> 6ed19256f (.)
 - [Regole Traduzioni UI](translation_rules.md)
 - [Best Practices Filament](filament_best_practices.md)
 
@@ -269,4 +277,8 @@ done
 - **REGOLA CRITICA**: Sincronizzazione obbligatoria tra lingue
 - **REGOLA CRITICA**: Struttura espansa per tutti i campi
 - **REGOLA CRITICA**: Sintassi moderna e tipizzazione stretta
+<<<<<<< HEAD
 - **REGOLA CRITICA**: Controllo automatico con script
+=======
+- **REGOLA CRITICA**: Controllo automatico con script
+>>>>>>> 6ed19256f (.)

@@ -1,7 +1,10 @@
 # PHPStan Syntax Errors Fix - Notify Module
 
 **Data**: 2026-01-09  
+<<<<<<< HEAD
 **Data**: 2026-01-09  
+=======
+>>>>>>> 6ed19256f (.)
 **Modulo**: Notify  
 **Livello PHPStan**: 10  
 **Status**: ✅ **COMPLETATO**
@@ -90,4 +93,7 @@ protected $fillable = [...];
 **Status**: ✅ **COMPLETATO**
 
 **Ultimo aggiornamento**: 2026-01-09
+<<<<<<< HEAD
 **Ultimo aggiornamento**: 2026-01-09
+=======
+>>>>>>> 6ed19256f (.)

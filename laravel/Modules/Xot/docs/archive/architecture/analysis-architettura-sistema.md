@@ -92,4 +92,7 @@ L'architettura proposta dovrà evolvere attraverso iterazioni successive, valida
 ## Collegamenti tra versioni di analisi-architettura-sistema.md
 * [analisi-architettura-sistema.md](docs/analisi/architettura/analisi-architettura-sistema.md)
 * [analisi-architettura-sistema.md](../../../Xot/project_docs/architecture/analisi-architettura-sistema.md)
+<<<<<<< HEAD
 * [analisi-architettura-sistema.md](../../../xot/project_docs/architecture/analisi-architettura-sistema.md)
+=======
+>>>>>>> 6ed19256f (.)

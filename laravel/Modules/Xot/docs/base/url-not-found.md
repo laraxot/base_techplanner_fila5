@@ -39,11 +39,18 @@ define ROOT "C:/var/www/nome_giunzione/public_html"
 ## Collegamenti tra versioni di url-not-found.md
 * [url-not-found.md](../../../Xot/docs/base/url-not-found.md)
 * [url-not-found.md](../../../Xot/docs/errors/url-not-found.md)
+<<<<<<< HEAD
 * [url-not-found.md](../../../xot/docs/base/url-not-found.md)
 * [url-not-found.md](../../../xot/docs/errors/url-not-found.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Versione Incoming
 
 **NB**: dopo aver fatto questa modifica, riavviare laragon
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> 6ed19256f (.)

@@ -142,8 +142,12 @@ document.addEventListener('DOMContentLoaded', function() {
                     } else {
                         previewItem.innerHTML = `
                             <div class="h-20 w-20 bg-gray-100 rounded-lg flex items-center justify-center">
+<<<<<<< HEAD
                                 <x-filament::icon icon="heroicon-o-document" class="h-8 w-8 text-gray-400" />
 f7ac8eda (.)
+=======
+                                <x-heroicon-o-document class="h-8 w-8 text-gray-400" />
+>>>>>>> 6ed19256f (.)
                             </div>
                             <p class="text-xs text-gray-500 mt-1 truncate">${file.name}</p>
                         `;

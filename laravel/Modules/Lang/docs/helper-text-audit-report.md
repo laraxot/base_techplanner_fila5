@@ -11,4 +11,8 @@
 
 ## Regola Applicata
 
+<<<<<<< HEAD
 **Se il valore di `helper_text` è uguale alla chiave del campo padre, DEVE essere impostato a stringa vuota (`''`).**
+=======
+**Se il valore di `helper_text` è uguale alla chiave del campo padre, DEVE essere impostato a stringa vuota (`''`).**
+>>>>>>> 6ed19256f (.)

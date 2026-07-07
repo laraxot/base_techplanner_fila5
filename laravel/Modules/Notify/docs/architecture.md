@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Architectural Rules & Guidelines
 
 This module adheres to the **Laraxot Architecture** and **Super Cow Methodology**.
@@ -13,6 +14,8 @@ For strict coding standards, Filament extension rules, and PHPStan guidelines, p
 2.  **Zero Errors**: PHPStan Level 10 compliance is mandatory.
 3.  **XotBase**: Always extend `XotBase` classes, never Filament classes directly.
 4.  **Translations**: Use `LangServiceProvider` for automatic label resolution.
+=======
+>>>>>>> 6ed19256f (.)
 # Notify Module Architecture
 
 ## Overview
@@ -58,4 +61,8 @@ This document outlines the architectural design of the Notify module, focusing o
 - [Notification Channels Implementation](./NOTIFICATION_CHANNELS_IMPLEMENTATION.md)
 - [Email Templates](./EMAIL_TEMPLATES.md)
 - [SMS Implementation](./SMS_IMPLEMENTATION.md)
+<<<<<<< HEAD
 - [Troubleshooting](./TROUBLESHOOTING.md)
+=======
+- [Troubleshooting](./TROUBLESHOOTING.md)
+>>>>>>> 6ed19256f (.)

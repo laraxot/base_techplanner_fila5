@@ -21,6 +21,7 @@ Http::sink($tmpPath)->throw()->get($videoUrl->toString());
 $tmpFile->delete();
 
 ----------------------------------------------------------------------------
+<<<<<<< HEAD
 ---
 module: theme
 topic: stream
@@ -28,3 +29,5 @@ canonical: ../../../Themes/docs/shared-components/__stream.txt
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/__stream.txt
+=======
+>>>>>>> 6ed19256f (.)

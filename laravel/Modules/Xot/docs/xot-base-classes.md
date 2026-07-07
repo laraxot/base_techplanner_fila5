@@ -59,4 +59,8 @@ The Xot base classes provide a centralized way to customize and extend functiona
 - [Filament Extension Pattern](../../Notify/docs/FILAMENT_EXTENSION_PATTERN.md)
 - [Filament Extension Pattern Analysis](../../Notify/docs/FILAMENT_EXTENSION_PATTERN_ANALYSIS.md)
 - [Patient Module - Filament Customization](../../Patient/docs/FILAMENT_CUSTOMIZATION.md)
+<<<<<<< HEAD
 - [Patient Module - Namespace Conventions](../../Patient/docs/NAMESPACE_CONVENTIONS.md)
+=======
+- [Patient Module - Namespace Conventions](../../Patient/docs/NAMESPACE_CONVENTIONS.md)
+>>>>>>> 6ed19256f (.)

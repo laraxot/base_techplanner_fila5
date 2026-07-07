@@ -1,14 +1,20 @@
 # PHPStan Level 10 Compliance - UI Module
 
 **Ultimo aggiornamento**: 2025-12-10
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 **Status**: ✅ Completamente conforme a PHPStan Level 10
 
 ## 📊 Stato Corrente
 - **Errori PHPStan**: 0
 - **Livello analisi**: Level 10 (massimo)
 - **Data ultima verifica**: 2025-12-10
+<<<<<<< HEAD
 - **Data ultima verifica**: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 
 ## 🔧 Correzioni Applicate
 
@@ -77,4 +83,8 @@ Per mantenere la conformità:
 2. Evitare controlli instanceof ridondanti
 3. Usare isset() per verificare proprietà
 4. Testare i componenti Filament
+<<<<<<< HEAD
 5. Verificare le transizioni di stato
+=======
+5. Verificare le transizioni di stato
+>>>>>>> 6ed19256f (.)

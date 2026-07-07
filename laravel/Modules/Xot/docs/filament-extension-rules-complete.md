@@ -3,7 +3,10 @@
 **Principio Fondamentale**: Mai estendere classi Filament direttamente - sempre usare classi XotBase
 
 **Ultimo aggiornamento**: 2025-12-22
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 
 ---
 
@@ -579,4 +582,8 @@ Prima di creare una nuova classe Filament:
 
 ---
 
+<<<<<<< HEAD
 **Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
+=======
+**Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
+>>>>>>> 6ed19256f (.)

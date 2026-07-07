@@ -17,14 +17,18 @@ return [
     'fields' => [
         'name' => [
             'label' => 'Nome',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'user' => [
             'email' => [
                 'label' => 'Proprietario',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -83,12 +87,42 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'create' => [
+            'label' => 'Crea',
+        ],
+        'edit' => [
+            'label' => 'Modifica',
+        ],
+        'delete' => [
+            'label' => 'Elimina',
+        ],
+        'toggleColumns' => [
+            'label' => 'Gestisci Colonne',
+        ],
+        'reorderRecords' => [
+            'label' => 'Riordina Record',
+        ],
+        'resetFilters' => [
+            'label' => 'Reimposta Filtri',
+        ],
+        'applyFilters' => [
+            'label' => 'Applica Filtri',
+        ],
+        'openFilters' => [
+            'label' => 'Apri Filtri',
+        ],
+        'recordId' => [
+            'label' => 'ID Record',
+>>>>>>> 6ed19256f (.)
         ],
         'client_id' => [
             'description' => 'client_id',
             'helper_text' => 'client_id',
             'placeholder' => 'client_id',
             'label' => 'client_id',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
         'secret' => [
@@ -102,6 +136,14 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'secret' => [
+            'label' => 'secret',
+        ],
+        'id' => [
+            'label' => 'id',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'plural' => [
@@ -206,6 +248,11 @@ return [
             'heading' => 'empty',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Client',
     'plural_label' => 'Client (Plurale)',
+=======
+    'label' => '',
+    'plural_label' => '',
+>>>>>>> 6ed19256f (.)
 ];

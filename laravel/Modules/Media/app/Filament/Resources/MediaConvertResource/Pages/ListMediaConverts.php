@@ -24,7 +24,11 @@ use Override;
 
 class ListMediaConverts extends XotBaseListRecords
 {
+<<<<<<< HEAD
     public static string $resource = MediaConvertResource::class;
+=======
+    protected static string $resource = MediaConvertResource::class;
+>>>>>>> 6ed19256f (.)
 
     /**
      * @return array<string, Tables\Columns\Column>

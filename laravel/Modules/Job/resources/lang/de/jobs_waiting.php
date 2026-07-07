@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -71,6 +72,35 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'connection' => [
+            'label' => 'Verbindung',
+        ],
+        'queue' => [
+            'label' => 'Warteschlange',
+        ],
+        'payload' => [
+            'label' => 'Nutzlast',
+        ],
+        'attempts' => [
+            'label' => 'Versuche',
+        ],
+        'status' => [
+            'label' => 'Status',
+        ],
+        'display_name' => [
+            'label' => 'Anzeigename',
+        ],
+        'reserved_at' => [
+            'label' => 'Reserviert Am',
+        ],
+        'available_at' => [
+            'label' => 'Verfügbar Am',
+        ],
+        'created_at' => [
+            'label' => 'Erstellt Am',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [

@@ -13,6 +13,7 @@ Questa cartella contiene la documentazione relativa ai temi e allo styling.
 
 Questa documentazione descrive come gestire e personalizzare i temi del progetto.
 ## Collegamenti tra versioni di README.md
+<<<<<<< HEAD
 * [README.md](bashscripts/docs/readme.md)
 * [README.md](bashscripts/docs/it/readme.md)
 * [README.md](docs/laravel-app/phpstan/readme.md)
@@ -89,6 +90,8 @@ Questa documentazione descrive come gestire e personalizzare i temi del progetto
 * [README.md](../../../cms/docs/components/readme.md)
 * [README.md](../../../../themes/two/docs/readme.md)
 * [README.md](../../../../themes/one/docs/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
 * [README.md](docs/laravel-app/phpstan/README.md)
@@ -164,4 +167,8 @@ Questa documentazione descrive come gestire e personalizzare i temi del progetto
 * [README.md](../../../Cms/docs/frontoffice/README.md)
 * [README.md](../../../Cms/docs/components/README.md)
 * [README.md](../../../../Themes/Two/docs/README.md)
+<<<<<<< HEAD
 * [README.md](../../../../Themes/One/docs/README.md)
+=======
+* [README.md](../../../../Themes/One/docs/README.md)
+>>>>>>> 6ed19256f (.)

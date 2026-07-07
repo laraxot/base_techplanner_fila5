@@ -14,6 +14,10 @@ use Modules\Xot\Filament\Resources\LogResource\Pages\ListLogs;
 use Modules\Xot\Filament\Resources\LogResource\Pages\ViewLog;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 use Modules\Xot\Models\Log;
+<<<<<<< HEAD
+=======
+use Override;
+>>>>>>> 6ed19256f (.)
 
 class LogResource extends XotBaseResource
 {
@@ -24,7 +28,11 @@ class LogResource extends XotBaseResource
     /**
      * @return array<string, Component>
      */
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> 6ed19256f (.)
     public static function getFormSchema(): array
     {
         return [
@@ -56,13 +64,21 @@ class LogResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> 6ed19256f (.)
     public static function getRelations(): array
     {
         return [];
     }
 
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> 6ed19256f (.)
     public static function getPages(): array
     {
         return [

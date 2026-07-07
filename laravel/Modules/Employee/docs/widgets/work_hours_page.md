@@ -46,4 +46,10 @@ This guide documents how to implement the WorkHoursPage for the Employee module,
 - Queue the Action when generating heavy ranges; call `.onQueue()->execute(...)`.
 
 ### references
+<<<<<<< HEAD
 - Spatie Queueable Actions: https://github.com/spatie/laravel-queueable-action
+=======
+- Spatie Queueable Actions: https://github.com/spatie/laravel-queueable-action
+
+
+>>>>>>> 6ed19256f (.)

@@ -67,7 +67,11 @@ public function get<Nome>Attribute(?type $value): ?type
 ### Scopo Business
 
 **Nei sistemi PA (PTVX)**:
+<<<<<<< HEAD
 - Scheda valutazione calcola valori durante edit
+=======
+- Schede valutazione calcolano valori durante edit
+>>>>>>> 6ed19256f (.)
 - Performance evaluation aggrega dati storici
 - Indennità calcola importi da timbrature
 
@@ -124,7 +128,11 @@ if (null == $this->getKey()) {
 
 6. ⏳ **Rating/Models/Traits/RatingTrait.php**
 7. ⏳ **Ptv/Models/BaseScheda.php**
+<<<<<<< HEAD
 8. ⏳ **Progressioni/Models/Scheda.php**
+=======
+8. ⏳ **Progressioni/Models/Schede.php**
+>>>>>>> 6ed19256f (.)
 9. ⏳ **Performance/Models/StabiDirigente.php**
 10. ⏳ **User/Models/BaseTenant.php**
 
@@ -219,7 +227,11 @@ public function getMediaAttribute(): float {
 **Settimana 2**:
 - [ ] Rating/RatingTrait
 - [ ] Ptv/BaseScheda
+<<<<<<< HEAD
 - [ ] Progressioni/Scheda
+=======
+- [ ] Progressioni/Schede
+>>>>>>> 6ed19256f (.)
 
 **Settimana 3**:
 - [ ] Altri moduli + cleanup finale
@@ -289,6 +301,7 @@ test('accessor salva se model ha PK', function () {
 ## Collegamenti
 
 ### Implementazioni Modulo-Specifiche
+<<<<<<< HEAD
 - [Sigma - SchedaTrait Fix](../../sigma/docs/fix-duplicate-entry-error-summary.md)
 - [Performance - MutatorTrait](../../performance/docs/mutator-guard-fix.md) (da creare)
 - [IndennitaCondizioniLavoro - MutatorTrait](../../indennitacondizionilavoro/docs/accessor-guard.md) (da creare)
@@ -296,6 +309,8 @@ test('accessor salva se model ha PK', function () {
 ### Documentazione Pattern
 - [Accessor Pattern](../../sigma/docs/scheda-trait-accessor-pattern.md)
 - [Refactoring Philosophy](../../sigma/docs/accessor-refactoring-philosophy.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Sigma - SchedaTrait Fix](../../Sigma/docs/fix-duplicate-entry-error-summary.md)
 - [Performance - MutatorTrait](../../Performance/docs/mutator-guard-fix.md) (da creare)
 - [IndennitaCondizioniLavoro - MutatorTrait](../../IndennitaCondizioniLavoro/docs/accessor-guard.md) (da creare)
@@ -311,8 +326,15 @@ test('accessor salva se model ha PK', function () {
 ---
 
 **Creato**: 2025-01-29
+<<<<<<< HEAD
 **Creato**: [DATE]
 **Tipo**: Regola Architettutale Globale
 **Applicazione**: Tutti i moduli
 **Severità**: 🔴 CRITICA
 **Status**: 📖 Documentata, 🔄 Implementazione in corso
+=======
+**Tipo**: Regola Architettutale Globale
+**Applicazione**: Tutti i moduli
+**Severità**: 🔴 CRITICA
+**Status**: 📖 Documentata, 🔄 Implementazione in corso
+>>>>>>> 6ed19256f (.)

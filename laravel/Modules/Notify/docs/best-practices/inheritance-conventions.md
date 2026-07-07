@@ -68,4 +68,8 @@ class ChildPage extends BasePage
 - Verificare sempre la gerarchia di ereditarietà
 - Documentare le interfacce e i trait usati nelle classi base
 - Usare strumenti di analisi statica
+<<<<<<< HEAD
 - Seguire le convenzioni del framework 
+=======
+- Seguire le convenzioni del framework
+>>>>>>> 6ed19256f (.)

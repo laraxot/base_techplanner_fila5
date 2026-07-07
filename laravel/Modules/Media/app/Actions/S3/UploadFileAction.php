@@ -6,7 +6,10 @@ namespace Modules\Media\Actions\S3;
 
 use Aws\S3\ObjectUploader;
 use Exception;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 use function Safe\fclose;
 use function Safe\filesize;
 use function Safe\fopen;
@@ -18,6 +21,10 @@ class UploadFileAction extends BaseS3Action
      * Upload a file to S3
      *
      * @param  array<string, mixed>  $options
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> 6ed19256f (.)
      * @return array<string, mixed>
      */
     public function execute(string $localFilePath, string $destinationFilePath, array $options = []): array

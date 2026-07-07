@@ -15,6 +15,7 @@ return [
             'icon' => 'reorderRecords',
             'label' => 'reorderRecords',
         ],
+<<<<<<< HEAD
         'openColumnManager' => [
             'tooltip' => 'openColumnManager',
             'label' => 'openColumnManager',
@@ -106,4 +107,10 @@ return [
             'label' => 'location',
         ],
     ],
+=======
+    ],
+    'label' => '',
+    'plural_label' => '',
+    'fields' => [],
+>>>>>>> 6ed19256f (.)
 ];

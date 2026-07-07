@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 module: theme
 topic: to_integrate
@@ -5,3 +6,6 @@ canonical: ../../../Themes/docs/shared-components/to-integrate.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/to-integrate.md
+=======
+https://filamentphp.com/plugins/andrew-wallo-companies
+>>>>>>> 6ed19256f (.)

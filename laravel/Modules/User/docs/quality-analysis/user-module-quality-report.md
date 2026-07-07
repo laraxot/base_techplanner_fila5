@@ -77,12 +77,19 @@
 - [Optimization Analysis](./optimization-analysis.md)
 - [Business Logic Deep Dive](./BUSINESS_LOGIC_DEEP_DIVE.md)
 - [Xot Quality Analysis](../Xot/docs/quality-analysis/current-status.md)
+<<<<<<< HEAD
 - [Business Logic Deep Dive](./business_logic_deep_dive.md)
 - [Xot Quality Analysis](../xot/docs/quality-analysis/current-status.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## 📝 Note
 
 - PHPStan livello 10: **PERFETTO** ✅
 - PHPMD: Warnings accettabili (Facades Laravel)
 - PHPInsights: Da eseguire per score completo
+<<<<<<< HEAD
 - Documentazione esistente: Molto completa, ben strutturata
+=======
+- Documentazione esistente: Molto completa, ben strutturata
+>>>>>>> 6ed19256f (.)

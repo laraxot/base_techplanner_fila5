@@ -24,7 +24,11 @@ use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 use Override;
 
 /**
+<<<<<<< HEAD
  * @property Schema $emailForm
+=======
+ * @property \Filament\Schemas\Schema $emailForm
+>>>>>>> 6ed19256f (.)
  */
 class SendEmailPage extends XotBasePage
 {
@@ -32,7 +36,11 @@ class SendEmailPage extends XotBasePage
 
     public ?array $emailData = [];
 
+<<<<<<< HEAD
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-paper-airplane';
+=======
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-paper-airplane';
+>>>>>>> 6ed19256f (.)
 
     protected string $view = 'notify::filament.pages.send-email';
 

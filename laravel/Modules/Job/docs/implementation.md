@@ -299,9 +299,12 @@ class JobPageTest extends TestCase
 * [implementation.md](../../../Gdpr/docs/implementation.md)
 * [implementation.md](../../../Xot/docs/implementation.md)
 * [implementation.md](../../../Job/docs/implementation.md)
+<<<<<<< HEAD
 * [implementation.md](../../../gdpr/docs/implementation.md)
 * [implementation.md](../../../xot/docs/implementation.md)
 * [implementation.md](../../../job/docs/implementation.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Versione Incoming
 
@@ -309,4 +312,8 @@ class JobPageTest extends TestCase
 
 ### Versione Incoming
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> 6ed19256f (.)

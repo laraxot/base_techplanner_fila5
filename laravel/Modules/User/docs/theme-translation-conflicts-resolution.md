@@ -398,9 +398,14 @@ php artisan lang:missing --locale=it,en,de
 - [Filament Best Practices](filament_best_practices.md)
 
 ### Collegamenti Esterni
+<<<<<<< HEAD
 - [Theme Documentation](../../../Themes/Two/project_docs/README.md)
 - [Translation Standards](../../../../docs/project/translation-standards.md)
 - [Theme Documentation](../../../themes/two/project_docs/readme.md)
+=======
+- [Translation Standards](../../../project_docs/translation-standards.md)
+- [Theme Documentation](../../../Themes/Two/project_docs/README.md)
+>>>>>>> 6ed19256f (.)
 
 ## Note per Sviluppatori
 
@@ -432,4 +437,8 @@ php artisan lang:missing --locale=it,en,de
 ---
 
 **Ultimo aggiornamento**: 2025-01-06
+<<<<<<< HEAD
 **Autore**: Sistema di correzione automatica
+=======
+**Autore**: Sistema di correzione automatica
+>>>>>>> 6ed19256f (.)

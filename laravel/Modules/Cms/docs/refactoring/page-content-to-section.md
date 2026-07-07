@@ -60,5 +60,10 @@ protected $fillable = [
 
 ## Collegamenti
 - [Gestione Sezioni](../section-management.md)
+<<<<<<< HEAD
 - [Documentazione Root](../../../../../../docs/sections.md)
 - [Documentazione Pagine](../page-management.md)
+=======
+- [Documentazione Root](../../../../../docs/sections.md)
+- [Documentazione Pagine](../page-management.md)
+>>>>>>> 6ed19256f (.)

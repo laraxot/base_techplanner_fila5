@@ -247,9 +247,13 @@ declare(strict_types=1);
 
 namespace Modules\<nome modulo>\Filament\Resources;
 
+<<<<<<< HEAD
 
 use Modules\<nome modulo>\Filament\Resources\ReportResource\Pages;
 use Modules\<nome progetto>\Filament\Resources\ReportResource\Pages;
+=======
+use Modules\<nome modulo>\Filament\Resources\ReportResource\Pages;
+>>>>>>> 6ed19256f (.)
 use Modules\<nome progetto>\Models\Report;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Filament\Forms;

@@ -30,6 +30,7 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 5. Conforme alle convenzioni Laraxot/<nome progetto>
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Exception Handling Guidelines](../exception-handling-guide.md)
 - [Logging Best Practices](../logging-best-practices.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
@@ -110,6 +111,8 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 * [README.md](../../../cms/project_docs/components/readme.md)
 * [README.md](../../../../themes/two/project_docs/readme.md)
 * [README.md](../../../../themes/one/project_docs/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Exception Handling Guidelines](../EXCEPTION-HANDLING-GUIDE.md)
 - [Logging Best Practices](../LOGGING-BEST-PRACTICES.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
@@ -189,4 +192,8 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 * [README.md](../../../Cms/project_docs/frontoffice/README.md)
 * [README.md](../../../Cms/project_docs/components/README.md)
 * [README.md](../../../../Themes/Two/project_docs/README.md)
+<<<<<<< HEAD
 * [README.md](../../../../Themes/One/project_docs/README.md)
+=======
+* [README.md](../../../../Themes/One/project_docs/README.md)
+>>>>>>> 6ed19256f (.)

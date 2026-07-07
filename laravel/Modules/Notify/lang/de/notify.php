@@ -20,16 +20,22 @@ return [
             'tooltip' => 'Titolo della notifica',
             'placeholder' => 'es: Aggiornamento sistema',
             'help' => 'Inserisci un titolo chiaro e conciso',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'message' => [
             'label' => 'Messaggio',
             'tooltip' => 'Contenuto della notifica',
             'placeholder' => 'es: Il sistema verrà aggiornato alle ore...',
             'help' => 'Inserisci il messaggio completo della notifica',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'type' => [
             'label' => 'Tipo',
@@ -60,8 +66,11 @@ return [
                     'tooltip' => 'Errori e problemi',
                 ],
             ],
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'status' => [
             'label' => 'Stato',
@@ -80,34 +89,49 @@ return [
                     'tooltip' => 'Notifica spostata nell\'archivio',
                 ],
             ],
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'recipient' => [
             'label' => 'Destinatario',
             'tooltip' => 'Utente o gruppo destinatario della notifica',
             'placeholder' => 'es: mario.rossi@example.com',
             'help' => 'Seleziona uno o più destinatari',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'sent_at' => [
             'label' => 'Inviata il',
             'tooltip' => 'Data e ora di invio della notifica',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'read_at' => [
             'label' => 'Letta il',
             'tooltip' => 'Data e ora di lettura della notifica',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'archived_at' => [
             'label' => 'Archiviata il',
             'tooltip' => 'Data e ora di archiviazione della notifica',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -283,6 +307,9 @@ return [
             'push' => 'Notifica Push',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

@@ -207,10 +207,13 @@ $avgTime = $jobMonitor->getAverageProcessingTime();
 6. **Monitoring**: Monitor job performance and failure rates
 
 ## Related Modules
+<<<<<<< HEAD
 - [Xot Module](../xot/docs/index.md) - Core base classes
 - [Activity Module](../activity/docs/index.md) - Activity logging
 - [Notify Module](../notify/docs/index.md) - Notification system
 - [User Module](../user/docs/readme.md) - User authentication and management
+=======
+>>>>>>> 6ed19256f (.)
 - [Xot Module](../Xot/docs/index.md) - Core base classes
 - [Activity Module](../Activity/docs/index.md) - Activity logging
 - [Notify Module](../Notify/docs/index.md) - Notification system
@@ -222,4 +225,8 @@ Common issues and solutions:
 - Memory exhaustion in long-running jobs
 - Database connection issues
 - Retry loop problems
+<<<<<<< HEAD
 - Worker process crashes
+=======
+- Worker process crashes
+>>>>>>> 6ed19256f (.)

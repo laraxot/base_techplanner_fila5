@@ -1,14 +1,26 @@
+<<<<<<< HEAD
 # Comandi da Console per il Caso d'Uso <nome progetto>ion Market
 
 ## Introduzione
 
 Questo documento descrive in dettaglio come creare e utilizzare comandi da console personalizzati per il caso d'uso `<nome progetto>ion Market` nel modulo `Activity`. I comandi da console in Laravel consentono di eseguire operazioni amministrative, di manutenzione o di debug direttamente dalla riga di comando. Qui spiegheremo come crearli, registrarli e utilizzarli per gestire mercati delle previsioni, scommesse e risoluzioni.
+=======
+# Comandi da Console per il Caso d'Uso Prediction Market
+
+## Introduzione
+
+Questo documento descrive in dettaglio come creare e utilizzare comandi da console personalizzati per il caso d'uso `Prediction Market` nel modulo `Activity`. I comandi da console in Laravel consentono di eseguire operazioni amministrative, di manutenzione o di debug direttamente dalla riga di comando. Qui spiegheremo come crearli, registrarli e utilizzarli per gestire mercati delle previsioni, scommesse e risoluzioni.
+>>>>>>> 6ed19256f (.)
 
 ## Creazione di un Comando da Console
 
 ### 1. Generazione del Comando
 
+<<<<<<< HEAD
 Laravel fornisce un comando Artisan per generare la struttura base di un comando da console. Per creare un comando per il caso d'uso `<nome progetto>ion Market`, esegui:
+=======
+Laravel fornisce un comando Artisan per generare la struttura base di un comando da console. Per creare un comando per il caso d'uso `Prediction Market`, esegui:
+>>>>>>> 6ed19256f (.)
 
 ```bash
 php artisan make:command MarketCreateCommand
@@ -26,7 +38,11 @@ Modifichiamo il file `MarketCreateCommand.php` per adattarlo al nostro caso d'us
 namespace Modules\Activity\App\Console\Commands;
 
 use Illuminate\Console\Command;
+<<<<<<< HEAD
 use Modules\Activity\App\Domain\<nome progetto>ionMarket\MarketAggregate;
+=======
+use Modules\Activity\App\Domain\PredictionMarket\MarketAggregate;
+>>>>>>> 6ed19256f (.)
 
 class MarketCreateCommand extends Command
 {
@@ -97,7 +113,11 @@ php artisan activity:market:create "Chi vincerà le elezioni?" "Prevedi il vinci
 Mercato delle previsioni creato con UUID: market_xxxxxxxxxx, Titolo: Chi vincerà le elezioni?, Data di fine: 2024-11-30
 ```
 
+<<<<<<< HEAD
 ## Altri Comandi Utili per il Caso d'Uso <nome progetto>ion Market
+=======
+## Altri Comandi Utili per il Caso d'Uso Prediction Market
+>>>>>>> 6ed19256f (.)
 
 ### Comando per Piazzare una Scommessa
 
@@ -113,11 +133,19 @@ Modifichiamo il file `MarketPlaceBetCommand.php`:
 namespace Modules\Activity\App\Console\Commands;
 
 use Illuminate\Console\Command;
+<<<<<<< HEAD
 use Modules\Activity\App\Domain\<nome progetto>ionMarket\MarketAggregate;
 
 class MarketPlaceBetCommand extends Command
 {
     protected $signature = 'activity:market:place-bet {marketUuid} {userId} {<nome progetto>ion} {amount}';
+=======
+use Modules\Activity\App\Domain\PredictionMarket\MarketAggregate;
+
+class MarketPlaceBetCommand extends Command
+{
+    protected $signature = 'activity:market:place-bet {marketUuid} {userId} {prediction} {amount}';
+>>>>>>> 6ed19256f (.)
 
     protected $description = 'Piazza una scommessa su un mercato delle previsioni nel modulo Activity';
 
@@ -125,15 +153,26 @@ class MarketPlaceBetCommand extends Command
     {
         $marketUuid = $this->argument('marketUuid');
         $userId = $this->argument('userId');
+<<<<<<< HEAD
         $<nome progetto>ion = $this->argument('<nome progetto>ion');
+=======
+        $prediction = $this->argument('prediction');
+>>>>>>> 6ed19256f (.)
         $amount = (float) $this->argument('amount');
 
         $market = MarketAggregate::retrieve($marketUuid);
 
+<<<<<<< HEAD
         $market->placeBet($userId, $<nome progetto>ion, $amount);
         $market->persist();
 
         $this->info("Scommessa piazzata sul mercato {$marketUuid} dall'utente {$userId}: {$amount} su {$<nome progetto>ion}");
+=======
+        $market->placeBet($userId, $prediction, $amount);
+        $market->persist();
+
+        $this->info("Scommessa piazzata sul mercato {$marketUuid} dall'utente {$userId}: {$amount} su {$prediction}");
+>>>>>>> 6ed19256f (.)
     }
 }
 ```
@@ -160,7 +199,11 @@ Modifichiamo il file `MarketResolveCommand.php`:
 namespace Modules\Activity\App\Console\Commands;
 
 use Illuminate\Console\Command;
+<<<<<<< HEAD
 use Modules\Activity\App\Domain\<nome progetto>ionMarket\MarketAggregate;
+=======
+use Modules\Activity\App\Domain\PredictionMarket\MarketAggregate;
+>>>>>>> 6ed19256f (.)
 
 class MarketResolveCommand extends Command
 {
@@ -193,7 +236,11 @@ php artisan activity:market:resolve market_xxxxxxxxxx "Candidato A"
 
 ## Comandi Aggiuntivi Ispirati a Event Sourcing con Laravel (cnastasi)
 
+<<<<<<< HEAD
 Prendendo spunto dal repository [event-sourcing-with-laravel](https://github.com/cnastasi/event-sourcing-with-laravel) di cnastasi, possiamo estendere i comandi da console per il caso d'uso `<nome progetto>ion Market` con un approccio minimalista e didattico. Questi comandi aggiuntivi sono progettati per gestire operazioni di mercato delle previsioni in modo semplice, generando eventi che possono essere tracciati per ricostruire lo stato del sistema.
+=======
+Prendendo spunto dal repository [event-sourcing-with-laravel](https://github.com/cnastasi/event-sourcing-with-laravel) di cnastasi, possiamo estendere i comandi da console per il caso d'uso `Prediction Market` con un approccio minimalista e didattico. Questi comandi aggiuntivi sono progettati per gestire operazioni di mercato delle previsioni in modo semplice, generando eventi che possono essere tracciati per ricostruire lo stato del sistema.
+>>>>>>> 6ed19256f (.)
 
 ### Comando per Simulare una Scommessa Massiva
 
@@ -209,7 +256,11 @@ Modifichiamo il file `MarketMassBetCommand.php`:
 namespace Modules\Activity\App\Console\Commands;
 
 use Illuminate\Console\Command;
+<<<<<<< HEAD
 use Modules\Activity\App\Domain\<nome progetto>ionMarket\MarketAggregate;
+=======
+use Modules\Activity\App\Domain\PredictionMarket\MarketAggregate;
+>>>>>>> 6ed19256f (.)
 
 class MarketMassBetCommand extends Command
 {
@@ -228,10 +279,17 @@ class MarketMassBetCommand extends Command
 
         for ($i = 0; $i < $numberOfBets; $i++) {
             $userId = 'user_' . uniqid();
+<<<<<<< HEAD
             $<nome progetto>ion = rand(0, 1) ? 'yes' : 'no';
             $amount = rand($minAmount * 100, $maxAmount * 100) / 100;
             $market->placeBet($userId, $<nome progetto>ion, $amount);
             $this->info("Scommessa #$i: Utente {$userId} ha scommesso {$amount} su {$<nome progetto>ion}");
+=======
+            $prediction = rand(0, 1) ? 'yes' : 'no';
+            $amount = rand($minAmount * 100, $maxAmount * 100) / 100;
+            $market->placeBet($userId, $prediction, $amount);
+            $this->info("Scommessa #$i: Utente {$userId} ha scommesso {$amount} su {$prediction}");
+>>>>>>> 6ed19256f (.)
         }
 
         $market->persist();
@@ -263,7 +321,11 @@ Modifichiamo il file `MarketListActiveCommand.php`:
 namespace Modules\Activity\App\Console\Commands;
 
 use Illuminate\Console\Command;
+<<<<<<< HEAD
 use Modules\Activity\App\Domain\<nome progetto>ionMarket\MarketRepository;
+=======
+use Modules\Activity\App\Domain\PredictionMarket\MarketRepository;
+>>>>>>> 6ed19256f (.)
 
 class MarketListActiveCommand extends Command
 {
@@ -318,7 +380,11 @@ Modifichiamo il file `MarketQuickCreateCommand.php`:
 namespace Modules\Activity\App\Console\Commands;
 
 use Illuminate\Console\Command;
+<<<<<<< HEAD
 use Modules\Activity\App\Domain\<nome progetto>ionMarket\MarketAggregate;
+=======
+use Modules\Activity\App\Domain\PredictionMarket\MarketAggregate;
+>>>>>>> 6ed19256f (.)
 
 class MarketQuickCreateCommand extends Command
 {
@@ -369,6 +435,12 @@ php artisan activity:market:quick-create "Prossimo Campionato" 14
 
 ## Conclusione
 
+<<<<<<< HEAD
 I comandi da console sono strumenti essenziali per gestire operazioni nel caso d'uso `<nome progetto>ion Market` del modulo `Activity`. Seguendo i passaggi descritti, puoi creare comandi personalizzati per creare mercati, piazzare scommesse e risolvere mercati, migliorando la gestione e il debug del sistema. Questi comandi possono essere ulteriormente estesi per coprire altre funzionalità specifiche come report di mercato, simulazioni di scommesse o gestione degli utenti.
 
 Integrando l'approccio minimalista e didattico del repository di cnastasi, abbiamo esteso i comandi da console per il caso d'uso `<nome progetto>ion Market` con strumenti pratici come `activity:market:mass-bet`, `activity:market:list-active` e `activity:market:quick-create`. Questi comandi, ispirati a quelli di cnastasi per la gestione del magazzino, migliorano la capacità di testare, dimostrare e amministrare i mercati di previsioni, mantenendo un focus sugli eventi come fonte di verità. Questo approccio ci permette di bilanciare semplicità e potenza, rendendo il sistema accessibile a sviluppatori di diversi livelli di esperienza.
+=======
+I comandi da console sono strumenti essenziali per gestire operazioni nel caso d'uso `Prediction Market` del modulo `Activity`. Seguendo i passaggi descritti, puoi creare comandi personalizzati per creare mercati, piazzare scommesse e risolvere mercati, migliorando la gestione e il debug del sistema. Questi comandi possono essere ulteriormente estesi per coprire altre funzionalità specifiche come report di mercato, simulazioni di scommesse o gestione degli utenti.
+
+Integrando l'approccio minimalista e didattico del repository di cnastasi, abbiamo esteso i comandi da console per il caso d'uso `Prediction Market` con strumenti pratici come `activity:market:mass-bet`, `activity:market:list-active` e `activity:market:quick-create`. Questi comandi, ispirati a quelli di cnastasi per la gestione del magazzino, migliorano la capacità di testare, dimostrare e amministrare i mercati di previsioni, mantenendo un focus sugli eventi come fonte di verità. Questo approccio ci permette di bilanciare semplicità e potenza, rendendo il sistema accessibile a sviluppatori di diversi livelli di esperienza.
+>>>>>>> 6ed19256f (.)

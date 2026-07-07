@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+# 🐄 DRY & KISS Analysis - Media
+
+>>>>>>> 6ed19256f (.)
 **Data:** 2025-10-15 | **Status:** ✅
 
 ## 📊 Struttura
@@ -19,6 +24,7 @@ Models: 8 | Resources: 3 | Services: 2 | Actions: 17 | Docs: 83
 Resources refactoring (2 giorni)
 
 **Status:** 🟢 BUONO
+<<<<<<< HEAD
 # DRY & KISS Analysis - Modulo Media
 
 **Data:** 15 Ottobre 2025  
@@ -45,3 +51,5 @@ abstract class BaseModel extends XotBaseModel
 
 ---
 [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
+=======
+>>>>>>> 6ed19256f (.)

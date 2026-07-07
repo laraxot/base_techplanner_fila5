@@ -2,6 +2,13 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+use Modules\Gdpr\Models\GdprConsent;
+use Modules\User\Models\User;
+
+describe('GDPR Consent Business Logic', function () {
+>>>>>>> 6ed19256f (.)
     it('records consent with required metadata', function () {
         $user = User::factory()->create();
 

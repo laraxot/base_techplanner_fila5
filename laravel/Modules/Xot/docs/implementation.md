@@ -301,4 +301,8 @@ class XotPageTest extends TestCase
 
 ### Versione Incoming
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> 6ed19256f (.)

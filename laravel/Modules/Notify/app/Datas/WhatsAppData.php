@@ -31,5 +31,10 @@ class WhatsAppData extends Data
         public ?array $buttons = null,
         public ?array $template = null,
         public string $type = 'text',
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> 6ed19256f (.)
 }

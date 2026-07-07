@@ -24,9 +24,12 @@ Ultimo aggiornamento: maggio 2025.
 - [docs Lang](../../Lang/project_docs/filament-label.md)
 
 Ultimo aggiornamento: maggio 2025.
+<<<<<<< HEAD
 - [docs root](../../../../project_docs/actions.md)
 - [docs Lang](../../lang/project_docs/filament-label.md)
 
+=======
+>>>>>>> 6ed19256f (.)
 # Regola generale: Label e traduzioni in Filament
 
 ## Regola
@@ -48,8 +51,15 @@ Ultimo aggiornamento: maggio 2025.
 - Test che verifica la presenza di tutte le chiavi di traduzione.
 
 ## Collegamenti
+<<<<<<< HEAD
 - [docs Lang](../../Lang/docs/filament-label.md)
 
 Ultimo aggiornamento: maggio 2025.
 - [docs root](../../../../../docs/actions.md)
 - [docs Lang](../../lang/docs/filament-label.md)
+=======
+- [docs root](../../../../docs/actions.md)
+- [docs Lang](../../Lang/docs/filament-label.md)
+
+Ultimo aggiornamento: maggio 2025.
+>>>>>>> 6ed19256f (.)

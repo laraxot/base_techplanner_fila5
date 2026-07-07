@@ -10,7 +10,10 @@ return [
             'help' => 'Nom d\'identification de l\'élément',
             'description' => 'Nom de l\'objet',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'edit-name' => [
             'label' => 'Modifier le nom',
@@ -18,7 +21,10 @@ return [
             'help' => 'Modifier le nom existant',
             'description' => 'Action pour modifier le nom',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'change-state' => [
             'label' => 'Changer l\'état',
@@ -26,7 +32,10 @@ return [
             'help' => 'Modifier l\'état actuel',
             'description' => 'Action pour changer l\'état',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'state' => [
             'label' => 'État',
@@ -34,7 +43,10 @@ return [
             'help' => 'État actuel de l\'élément',
             'description' => 'Condition actuelle du système',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'message' => [
             'label' => 'Message',
@@ -42,7 +54,10 @@ return [
             'help' => 'Message informatif',
             'description' => 'Texte du message',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'messages' => [
@@ -56,6 +71,7 @@ return [
             'title' => 'Erreur de transition',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -67,4 +83,6 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

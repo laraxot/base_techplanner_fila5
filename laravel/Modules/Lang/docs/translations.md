@@ -122,4 +122,8 @@ Prima di committare:
 
 - [Filament Translations](/.cursor/rules/filament-translations.rule)
 - [Laravel Localization](https://laravel.com/docs/10.x/localization)
+<<<<<<< HEAD
 - [Best Practices](/.cursor/rules/translations.rule)
+=======
+- [Best Practices](/.cursor/rules/translations.rule)
+>>>>>>> 6ed19256f (.)

@@ -23,15 +23,21 @@ return [
             'label' => 'ID Chat',
             'placeholder' => 'Inserisci l\'ID della chat',
             'helper_text' => 'ID della chat Telegram a cui inviare il messaggio',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'message' => [
             'label' => 'Messaggio',
             'placeholder' => 'Inserisci il messaggio',
             'helper_text' => 'Testo del messaggio da inviare',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'parse_mode' => [
             'label' => 'Formato',
@@ -42,15 +48,21 @@ return [
                 'html' => 'HTML',
                 'markdown' => 'Markdown',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'driver' => [
             'label' => 'Provider Telegram',
             'placeholder' => 'Seleziona il provider Telegram',
             'helper_text' => 'Seleziona il provider Telegram da utilizzare',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'drivers' => [
@@ -66,6 +78,9 @@ return [
         'success' => 'Messaggio Telegram inviato con successo',
         'error' => 'Si è verificato un errore durante l\'invio del messaggio Telegram',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

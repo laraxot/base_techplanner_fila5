@@ -2,9 +2,15 @@
 
 namespace App\Filament\Resources\PostResource\Pages;
 
+<<<<<<< HEAD
 use App\Filament\Fields\PostContent;
 use App\Filament\Fields\PostFooter;
 use Filament\Schemas\Components\Component;
+=======
+use Filament\Schemas\Components\Component;
+use App\Filament\Fields\PostContent;
+use App\Filament\Fields\PostFooter;
+>>>>>>> 6ed19256f (.)
 use Pboivin\FilamentPeek\Pages\Actions\PreviewAction;
 use Pboivin\FilamentPeek\Pages\Concerns\HasBuilderPreview;
 use Pboivin\FilamentPeek\Pages\Concerns\HasPreviewModal;
@@ -58,5 +64,8 @@ trait HasPostPreview
         };
     }
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 6ed19256f (.)

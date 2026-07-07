@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 # Cms Module Documentation
 
 ## Overview
 
+=======
+>>>>>>> 6ed19256f (.)
 # Cms Module Documentation Index
 
 ## Core Concepts
@@ -44,6 +47,7 @@
 ## Missing Features & Gaps
 - [Missing Features](../Meetup/docs/missing-features.md) - Identified missing functionality
 - [Gap Analysis](../Meetup/docs/gap-analysis.md) - Gap analysis between current and desired state
+<<<<<<< HEAD
 Il modulo Cms gestisce contenuti, composizione pagina e rendering CMS-driven dei blocchi. Nel lavoro corrente sulla parity Design Comuni, il Cms governa la struttura della homepage di test, mentre la resa visuale viene rifinita nel tema Sixteen.
 
 ## 📚 Design Comuni - Index Completo
@@ -83,3 +87,5 @@ Il modulo Cms gestisce contenuti, composizione pagina e rendering CMS-driven dei
 - Se il problema e' strutturale, verificare prima Cms JSON + routing.
 - Se il problema e' visivo, lavorare nel tema e documentare i risultati anche qui.
 - Mantenere collegamenti bidirezionali tra docs di modulo e docs di tema.
+=======
+>>>>>>> 6ed19256f (.)

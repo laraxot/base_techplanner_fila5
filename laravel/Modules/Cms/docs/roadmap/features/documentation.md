@@ -102,6 +102,9 @@ La documentazione dettagliata degli endpoint, esempi e Swagger/OpenAPI sono in f
 * [documentation.md](laravel/Modules/Xot/docs/documentation.md)
 * [documentation.md](laravel/Modules/Xot/docs/guidelines/documentation.md)
 * [documentation.md](laravel/Modules/Cms/docs/roadmap/features/documentation.md)
+<<<<<<< HEAD
 * [documentation.md](laravel/modules/xot/docs/documentation.md)
 * [documentation.md](laravel/modules/xot/docs/guidelines/documentation.md)
 * [documentation.md](laravel/modules/cms/docs/roadmap/features/documentation.md)
+=======
+>>>>>>> 6ed19256f (.)

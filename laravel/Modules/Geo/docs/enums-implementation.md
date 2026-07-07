@@ -42,8 +42,12 @@ enum ComuneType: string implements HasLabel
     case CAPOLUOGO = 'capoluogo';
     case COMUNE = 'comune';
     case FRAZIONE = 'frazione';
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function getLabel(): string
     {
         return match($this) {
@@ -52,8 +56,12 @@ enum ComuneType: string implements HasLabel
             self::FRAZIONE => 'Frazione',
         };
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function getColor(): string
     {
         return match($this) {
@@ -133,4 +141,7 @@ $request->validate([
 - [Documentazione PHP sugli Enum](https://www.php.net/manual/en/language.enumerations.php)
 - [Filament Enums Docs](https://filamentphp.com/project_docs/3.x/support/enums)
 - [Best Practices Enum](enums-best-practices.md)
+<<<<<<< HEAD
 - [Best Practices Enum](enums-best-practices.md) 
+=======
+>>>>>>> 6ed19256f (.)

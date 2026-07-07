@@ -42,11 +42,19 @@ class JobStatsOverview extends BaseWidget
             $totalJobs = $cast->getIntAttribute($aggregatedInfo, 'count', 0);
 
             $averageTime = $averageSeconds > 0.0
+<<<<<<< HEAD
                 ? (string) ceil($averageSeconds).'s'
                 : '0';
 
             $totalTime = $totalSeconds > 0
                 ? $this->formatSeconds($totalSeconds)
+=======
+                ? (string) ceil($averageSeconds) . 's'
+                : '0';
+
+            $totalTime = $totalSeconds > 0
+                ? $this->formatSeconds($totalSeconds) . 's'
+>>>>>>> 6ed19256f (.)
                 : '0';
         }
 

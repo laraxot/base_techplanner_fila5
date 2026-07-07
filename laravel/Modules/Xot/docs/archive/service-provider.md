@@ -60,7 +60,10 @@ public function registerTranslations(): void
 - Questa regola va rispettata anche da tutte le classi che estendono il provider
 
 **Backlink:** Vedi anche [CONFLITTI_MERGE_RISOLTI.md](./CONFLITTI_MERGE_RISOLTI.md)
+<<<<<<< HEAD
 **Backlink:** Vedi anche [CONFLITTI_MERGE_RISOLTI.md](./conflitti_merge_risolti.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Esempio di Override Sicuro
 ```php
@@ -81,12 +84,15 @@ class CustomModuleServiceProvider extends XotBaseServiceProvider
 - Evitare collisioni di prefissi tra moduli diversi.
 
 ## Collegamenti e Backlink
+<<<<<<< HEAD
 - [COMPONENTI_PERSONALIZZATI.md](./componenti_personalizzati.md) — Regole e path per Blade components modulari
 - [CONFLITTI_MERGE_RISOLTI.md](./conflitti_merge_risolti.md) — Tracciamento conflitti risolti su ServiceProvider
 - [FILAMENT_TABLE_COLUMNS.md](./filament_table_columns.md) — Standardizzazione metodi colonne Filament
 
 ---
 
+=======
+>>>>>>> 6ed19256f (.)
 - [COMPONENTI_PERSONALIZZATI.md](./COMPONENTI_PERSONALIZZATI.md) — Regole e path per Blade components modulari
 - [CONFLITTI_MERGE_RISOLTI.md](./CONFLITTI_MERGE_RISOLTI.md) — Tracciamento conflitti risolti su ServiceProvider
 - [FILAMENT_TABLE_COLUMNS.md](./FILAMENT_TABLE_COLUMNS.md) — Standardizzazione metodi colonne Filament
@@ -95,4 +101,8 @@ class CustomModuleServiceProvider extends XotBaseServiceProvider
 
 **Ultimo aggiornamento:** 2025-05-13
 
+<<<<<<< HEAD
 **Nota:** Aggiornare SEMPRE questa documentazione in caso di modifiche architetturali o override nei moduli.
+=======
+**Nota:** Aggiornare SEMPRE questa documentazione in caso di modifiche architetturali o override nei moduli.
+>>>>>>> 6ed19256f (.)

@@ -21,5 +21,10 @@ class SendNotificationBulkResultData extends Data
         /** @var Collection<int, array{record: string, channel: string, error: string}> */
         public readonly Collection $errors,
         public readonly int $totalProcessed,
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> 6ed19256f (.)
 }

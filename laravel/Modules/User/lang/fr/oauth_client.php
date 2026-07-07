@@ -5,7 +5,11 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Client OAuth',
+<<<<<<< HEAD
         'group' => '',
+=======
+        'group' => 'OAuth',
+>>>>>>> 6ed19256f (.)
         'icon' => 'heroicon-o-key',
         'sort' => 46,
     ],
@@ -14,6 +18,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -77,6 +82,38 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'user_id' => [
+            'label' => 'Utilisateur',
+        ],
+        'name' => [
+            'label' => 'Nom',
+        ],
+        'secret' => [
+            'label' => 'Secret',
+        ],
+        'provider' => [
+            'label' => 'Fournisseur',
+        ],
+        'redirect' => [
+            'label' => 'Redirection',
+        ],
+        'personal_access_client' => [
+            'label' => 'Client d\'accès personnel',
+        ],
+        'password_client' => [
+            'label' => 'Client de mot de passe',
+        ],
+        'revoked' => [
+            'label' => 'Révoqué',
+        ],
+        'created_at' => [
+            'label' => 'Créé le',
+        ],
+        'updated_at' => [
+            'label' => 'Mis à jour le',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [

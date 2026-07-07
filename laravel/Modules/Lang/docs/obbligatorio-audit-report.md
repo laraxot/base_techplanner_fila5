@@ -26,4 +26,8 @@ Tutti i file di traduzione sono conformi e non contengono la parola "obbligatori
 
 **La parola "obbligatorio" e sue varianti NON devono apparire in file di traduzione non italiani.**
 
+<<<<<<< HEAD
 Ogni occorrenza deve essere tradotta nella lingua appropriata del file.
+=======
+Ogni occorrenza deve essere tradotta nella lingua appropriata del file.
+>>>>>>> 6ed19256f (.)

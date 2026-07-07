@@ -77,6 +77,7 @@ Se la proprietà `$data` viene rimossa da `XotBaseWidget`, si verificano i segue
 Prima di ogni commit che coinvolge `XotBaseWidget`, eseguire questo controllo:
 
 ```bash
+<<<<<<< HEAD
 grep -n "public ?array \$data" Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
 grep -n "public ?array \$data" Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
 grep -n "public ?array \$data" Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
@@ -126,6 +127,57 @@ grep -n "public ?array \$data" Modules/Xot/app/Filament/Widgets/XotBaseWidget.ph
 grep -n "public ?array \$data" Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
 grep -n "public ?array \$data" Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
 grep -n "public ?array \$data" Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+=======
+grep -n "public ?array \$data" /var/www/html/base_techplanner_fila3_mono/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_techplanner_fila3_mono/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_techplanner_fila3_mono/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_techplanner_fila3_mono/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_<nome progetto>/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_<nome progetto>/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_techplanner_fila3_mono/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_techplanner_fila3_mono/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_techplanner_fila3_mono/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_techplanner_fila3_mono/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_techplanner_fila3_mono/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_techplanner_fila3_mono/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
+>>>>>>> 6ed19256f (.)
 ```
 
 Se il comando non restituisce risultati, LA PROPRIETÀ È STATA RIMOSSA e deve essere ripristinata immediatamente.
@@ -143,12 +195,18 @@ Questa struttura deriva dall'architettura Livewire+Filament in cui:
 - [Livewire Properties Documentation](https://livewire.laravel.com/docs/properties)
 - [Filament Forms Documentation](https://filamentphp.com/docs/3.x/forms/installation)
 - [RegistrationWidget Example](../../User/docs/filament/widgets/registration-widget.md)
+<<<<<<< HEAD
 - [RegistrationWidget Example](../../user/docs/filament/widgets/registration-widget.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Livewire Properties Documentation](https://livewire.laravel.com/project_docs/properties)
 - [Livewire Properties Documentation](https://livewire.laravel.com/project_docs/properties)
 - [Filament Forms Documentation](https://filamentphp.com/project_docs/3.x/forms/installation)
 - [Filament Forms Documentation](https://filamentphp.com/project_docs/3.x/forms/installation)
 - [RegistrationWidget Example](../../User/project_docs/filament/widgets/registration-widget.md)
 - [RegistrationWidget Example](../../User/project_docs/filament/widgets/registration-widget.md)
+<<<<<<< HEAD
 - [RegistrationWidget Example](../../user/project_docs/filament/widgets/registration-widget.md)
 - [RegistrationWidget Example](../../user/project_docs/filament/widgets/registration-widget.md)
+=======
+>>>>>>> 6ed19256f (.)

@@ -222,15 +222,25 @@ use Modules\User\Models\User;
 
 class CreateTenantUserCommand extends Command
 {
+<<<<<<< HEAD
     protected $signature = 'user:create-tenant-user 
                             {tenant : The tenant ID} 
                             {name : User name} 
+=======
+    protected $signature = 'user:create-tenant-user
+                            {tenant : The tenant ID}
+                            {name : User name}
+>>>>>>> 6ed19256f (.)
                             {email : User email}';
 
     public function handle(): int
     {
         $tenantId = $this->argument('tenant');
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         // ✅ Imposta manualmente tenant_id in contesto console
         $user = User::create([
             'name' => $this->argument('name'),
@@ -275,8 +285,11 @@ class CreateTenantUserCommand extends Command
 
 - [../../../docs/modules/user/README.md](../../../docs/modules/user/README.md) - Panoramica modulo User
 - [../../../docs/architecture/multi-tenancy.md](../../../docs/architecture/multi-tenancy.md) - Architettura globale
+<<<<<<< HEAD
 - [../../../../docs/modules/user/README.md](../../../../docs/modules/user/readme.md) - Panoramica modulo User
 - [../../../../docs/architecture/multi-tenancy.md](../../../../docs/architecture/multi-tenancy.md) - Architettura globale
+=======
+>>>>>>> 6ed19256f (.)
 
 ## 🎓 Lezioni Apprese
 
@@ -341,7 +354,11 @@ Monitorare log per:
 ## 👥 Contributors
 
 - **Analisi**: AI Assistant
+<<<<<<< HEAD
 - **Fix**: AI Assistant  
+=======
+- **Fix**: AI Assistant
+>>>>>>> 6ed19256f (.)
 - **Testing**: Da eseguire
 - **Review**: Da assegnare
 
@@ -372,4 +389,8 @@ Monitorare log per:
 
 **File Creati**:
 - `Modules/User/tests/Feature/TenantScopeConsoleTest.php`
+<<<<<<< HEAD
 - `Modules/User/docs/bug-fixes/make-filament-user-crash-loop.md`
+=======
+- `Modules/User/docs/bug-fixes/make-filament-user-crash-loop.md`
+>>>>>>> 6ed19256f (.)

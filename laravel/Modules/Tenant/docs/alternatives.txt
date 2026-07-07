@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 module: theme
 topic: alternatives
@@ -5,3 +6,6 @@ canonical: ../../../Themes/docs/shared-components/alternatives.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/alternatives.md
+=======
+https://github.com/InterNACHI/modular
+>>>>>>> 6ed19256f (.)

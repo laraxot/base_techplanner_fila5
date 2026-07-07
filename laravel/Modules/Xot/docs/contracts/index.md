@@ -48,6 +48,7 @@ Il [ModelWithStatusContract](model-with-status-contract.md) definisce l'interfac
 
 [Vai alla documentazione completa](model-with-status-contract.md)
 ## Collegamenti tra versioni di index.md
+<<<<<<< HEAD
 * [index.md](../../../xot/docs/contracts/index.md)
 * [index.md](../../../cms/docs/frontend-architecture/index.md)
 * [index.md](../../../../themes/one/docs/roadmap/philosophy/index.md)
@@ -56,3 +57,9 @@ Il [ModelWithStatusContract](model-with-status-contract.md) definisce l'interfac
 * [index.md](../../../Cms/docs/frontend-architecture/index.md)
 * [index.md](../../../../Themes/One/docs/roadmap/philosophy/index.md)
 * [index.md](../../../../Themes/One/docs/roadmap/inspiration/index.md)
+=======
+* [index.md](../../../Xot/docs/contracts/index.md)
+* [index.md](../../../Cms/docs/frontend-architecture/index.md)
+* [index.md](../../../../Themes/One/docs/roadmap/philosophy/index.md)
+* [index.md](../../../../Themes/One/docs/roadmap/inspiration/index.md)
+>>>>>>> 6ed19256f (.)

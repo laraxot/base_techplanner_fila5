@@ -44,6 +44,7 @@
 
 ## Collegamenti
 - [Roadmap Principale](../../roadmap.md)
+<<<<<<< HEAD
 - [Best Practices](../../best-practices.md)
 - [Performance Guidelines](../../performance/optimization.md)
 ## Collegamenti tra versioni di performance.md
@@ -55,6 +56,8 @@
 * [performance.md](../../../lang/docs/packages/performance.md)
 * [performance.md](../../../job/docs/packages/performance.md)
 * [performance.md](../../../cms/docs/frontoffice/performance.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Best Practices](../../BEST-PRACTICES.md)
 - [Performance Guidelines](../../performance/optimization.md)
 ## Collegamenti tra versioni di performance.md
@@ -65,4 +68,8 @@
 * [performance.md](../../../UI/docs/standards/performance.md)
 * [performance.md](../../../Lang/docs/packages/performance.md)
 * [performance.md](../../../Job/docs/packages/performance.md)
+<<<<<<< HEAD
 * [performance.md](../../../Cms/docs/frontoffice/performance.md)
+=======
+* [performance.md](../../../Cms/docs/frontoffice/performance.md)
+>>>>>>> 6ed19256f (.)

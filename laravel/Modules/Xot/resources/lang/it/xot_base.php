@@ -6,6 +6,7 @@ return [
     'fields' => [
         'attach' => [
             'label' => 'attach',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -46,4 +47,20 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        ],
+        'detach' => [
+            'label' => 'detach',
+        ],
+        'layout' => [
+            'label' => 'layout',
+        ],
+        'create' => [
+            'label' => 'create',
+        ],
+        'edit' => [
+            'label' => 'edit',
+        ],
+    ],
+>>>>>>> 6ed19256f (.)
 ];

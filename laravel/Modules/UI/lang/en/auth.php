@@ -52,6 +52,7 @@ return [
         'login_link' => 'Sign in',
         'register_link' => 'Register',
     ],
+<<<<<<< HEAD
     'profile_services' => [
         'services' => 'My Services',
         'practices' => 'My Practices',
@@ -59,6 +60,8 @@ return [
         'settings' => 'Settings',
         'logout' => 'Log Out',
     ],
+=======
+>>>>>>> 6ed19256f (.)
     'navigation' => [
         'open_menu' => 'Open main menu',
         'close_menu' => 'Close main menu',
@@ -67,10 +70,13 @@ return [
         'profile' => 'Profile',
         'settings' => 'Settings',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

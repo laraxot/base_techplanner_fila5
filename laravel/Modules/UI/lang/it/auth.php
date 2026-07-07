@@ -38,6 +38,7 @@ return [
         'login_link' => 'Accedi',
         'register_link' => 'Registrati',
     ],
+<<<<<<< HEAD
     'user_menu_profile' => [
         'services' => 'I miei servizi',
         'practices' => 'Le mie pratiche',
@@ -45,6 +46,8 @@ return [
         'settings' => 'Impostazioni',
         'logout' => 'Esci',
     ],
+=======
+>>>>>>> 6ed19256f (.)
     'logout' => [
         'title' => 'Logout',
         'confirm_message' => 'Sei sicuro di voler effettuare il logout?',
@@ -67,6 +70,7 @@ return [
     ],
     'failed' => 'Le credenziali non corrispondono ai nostri record.',
     'throttle' => 'Troppi tentativi di accesso. Riprova tra :seconds secondi.',
+<<<<<<< HEAD
     'label' => 'Auth',
     'plural_label' => 'Auth (Plurale)',
     'fields' => [
@@ -100,4 +104,6 @@ return [
             'label' => 'Elimina Auth',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

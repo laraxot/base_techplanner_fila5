@@ -607,11 +607,18 @@ public function getTableBulkActions(): array
 ## Collegamenti tra versioni di resource.md
 * [resource.md](../../../Xot/project_docs/filament/resource.md)
 * [resource.md](../../../Xot/project_docs/resource.md)
+<<<<<<< HEAD
 * [resource.md](../../../xot/project_docs/filament/resource.md)
 * [resource.md](../../../xot/project_docs/resource.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Versione Incoming
 
 // ... existing code ...
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> 6ed19256f (.)

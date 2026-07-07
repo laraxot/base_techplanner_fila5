@@ -6,7 +6,11 @@
 
 ### File: `auth.php` (English)
 
+<<<<<<< HEAD
 **Path completo**: `resources/lang/en/auth.php`
+=======
+**Path completo**: `/var/www/html/_bases/base_saluteora/laravel/resources/lang/en/auth.php`
+>>>>>>> 6ed19256f (.)
 
 - **Linea 8**: Pattern italiano `email` trovato
   ```php
@@ -102,4 +106,8 @@
 
 **I file di traduzione non italiani NON devono contenere testi in italiano.**
 
+<<<<<<< HEAD
 Ogni testo deve essere tradotto nella lingua appropriata del file.
+=======
+Ogni testo deve essere tradotto nella lingua appropriata del file.
+>>>>>>> 6ed19256f (.)

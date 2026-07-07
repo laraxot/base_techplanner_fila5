@@ -6,6 +6,10 @@ namespace Modules\Activity\Filament\Pages;
 
 use Exception;
 use Filament\Forms\Components\Field;
+<<<<<<< HEAD
+=======
+use Filament\Forms\Contracts\HasForms;
+>>>>>>> 6ed19256f (.)
 use Filament\Notifications\Notification;
 use Filament\Pages\Concerns\InteractsWithFormActions;
 use Filament\Resources\Pages\Concerns\InteractsWithRecord;
@@ -21,11 +25,17 @@ use Illuminate\Support\Collection;
 use InvalidArgumentException;
 use Livewire\WithPagination;
 use LogicException;
+<<<<<<< HEAD
 use Modules\Activity\Actions\RestoreActivityAction;
 use Modules\Activity\Filament\Pages\Concerns\CanPaginate;
 use Modules\Activity\Models\Activity;
 use Modules\Xot\Filament\Resources\Pages\XotBasePage;
 use Webmozart\Assert\Assert;
+=======
+use Modules\Activity\Filament\Pages\Concerns\CanPaginate;
+use Modules\Activity\Models\Activity;
+use Modules\Xot\Filament\Resources\Pages\XotBasePage;
+>>>>>>> 6ed19256f (.)
 
 /**
  * Classe base per visualizzare lo storico delle attività di un record.
@@ -39,7 +49,11 @@ use Webmozart\Assert\Assert;
  * @see XotBasePage
  * @see \Modules\Activity\docs\errori\route-method-does-not-exist.md
  */
+<<<<<<< HEAD
 abstract class ListLogActivities extends XotBasePage
+=======
+abstract class ListLogActivities extends XotBasePage implements HasForms
+>>>>>>> 6ed19256f (.)
 {
     use CanPaginate;
     use InteractsWithFormActions;
@@ -64,7 +78,11 @@ abstract class ListLogActivities extends XotBasePage
 
         // Convert to string (__() returns string|array|null)
         if (is_array($breadcrumb)) {
+<<<<<<< HEAD
             return implode(' ', array_map(fn (mixed $v): string => (string) $v, $breadcrumb));
+=======
+            return implode(' ', $breadcrumb);
+>>>>>>> 6ed19256f (.)
         }
 
         return (string) $breadcrumb;
@@ -84,7 +102,11 @@ abstract class ListLogActivities extends XotBasePage
 
         // __() returns string|array|null
         if (is_array($title)) {
+<<<<<<< HEAD
             return implode(' ', array_map(fn (mixed $v): string => (string) $v, $title));
+=======
+            return implode(' ', $title);
+>>>>>>> 6ed19256f (.)
         }
 
         return (string) $title;
@@ -163,6 +185,7 @@ abstract class ListLogActivities extends XotBasePage
             abort(403);
         }
 
+<<<<<<< HEAD
         try {
             $activity = $this->resolveActivity($key);
             $oldProperties = $this->getOldProperties($activity);
@@ -174,6 +197,39 @@ abstract class ListLogActivities extends XotBasePage
         } catch (Exception $e) {
             $this->sendRestoreFailureNotification($e->getMessage());
         }
+=======
+        $result = $this->prepareRestore($key);
+        $error = $result['error'] ?? null;
+        if ($error !== null && $error !== '') {
+            $this->sendRestoreFailureNotification((string) $error);
+
+            return;
+        }
+
+        $activity = $result['activity'] ?? null;
+        $record = $result['record'] ?? null;
+
+        if (! $record instanceof Model) {
+            $this->sendRestoreFailureNotification('Invalid record type');
+
+            return;
+        }
+
+        $oldProperties = data_get($activity, 'properties.old');
+        if ($oldProperties === null) {
+            $this->sendRestoreFailureNotification();
+
+            return;
+        }
+
+        if (! \is_array($oldProperties)) {
+            $this->sendRestoreFailureNotification('Invalid properties format');
+
+            return;
+        }
+
+        $this->performRestore($record, $oldProperties);
+>>>>>>> 6ed19256f (.)
     }
 
     /**
@@ -236,6 +292,10 @@ abstract class ListLogActivities extends XotBasePage
             ->filter(static fn ($field): bool => $field instanceof Field)
             ->mapWithKeys(
                 /** @param Field $field
+<<<<<<< HEAD
+=======
+                 *
+>>>>>>> 6ed19256f (.)
                  * @return array<string, string>
                  */
                 static function (Component $field): array {
@@ -253,7 +313,11 @@ abstract class ListLogActivities extends XotBasePage
     protected function sendRestoreSuccessNotification(): Notification
     {
         $title = __('activity::activities.events.restore_successful');
+<<<<<<< HEAD
         $titleString = is_array($title) ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title)) : (string) $title;
+=======
+        $titleString = is_array($title) ? implode(' ', $title) : (string) $title;
+>>>>>>> 6ed19256f (.)
 
         return Notification::make()
             ->title($titleString)
@@ -264,7 +328,11 @@ abstract class ListLogActivities extends XotBasePage
     protected function sendRestoreFailureNotification(?string $message = null): Notification
     {
         $title = __('activity::activities.events.restore_failed');
+<<<<<<< HEAD
         $titleString = is_array($title) ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title)) : (string) $title;
+=======
+        $titleString = is_array($title) ? implode(' ', $title) : (string) $title;
+>>>>>>> 6ed19256f (.)
 
         $notification = Notification::make()
             ->title($titleString)
@@ -277,6 +345,7 @@ abstract class ListLogActivities extends XotBasePage
         return $notification->send();
     }
 
+<<<<<<< HEAD
     private function resolveActivity(int|string $key): Activity
     {
         $record = $this->record;
@@ -316,5 +385,41 @@ abstract class ListLogActivities extends XotBasePage
 
         /** @var array<string, mixed> $old */
         return $old;
+=======
+    private function prepareRestore(int|string $key): array
+    {
+        $record = $this->record;
+        if (! \is_object($record) || ! method_exists($record, 'activities')) {
+            return ['error' => 'Invalid record', 'activity' => null, 'record' => null];
+        }
+
+        $activitiesRelation = $record->activities();
+        if (! \is_object($activitiesRelation) || ! method_exists($activitiesRelation, 'whereKey')) {
+            return ['error' => 'Invalid activities relation', 'activity' => null, 'record' => null];
+        }
+
+        $whereKeyQuery = $activitiesRelation->whereKey($key);
+        if (! \is_object($whereKeyQuery) || ! method_exists($whereKeyQuery, 'first')) {
+            return ['error' => 'Invalid query', 'activity' => null, 'record' => null];
+        }
+
+        $activity = $whereKeyQuery->first();
+
+        return ['error' => null, 'activity' => $activity, 'record' => $record];
+    }
+
+    private function performRestore(Model $record, array $oldProperties): void
+    {
+        try {
+            /** @var array<string, mixed> $safeProperties */
+            $safeProperties = $oldProperties;
+
+            $record->update($safeProperties);
+
+            $this->sendRestoreSuccessNotification();
+        } catch (Exception $e) {
+            $this->sendRestoreFailureNotification($e->getMessage());
+        }
+>>>>>>> 6ed19256f (.)
     }
 }

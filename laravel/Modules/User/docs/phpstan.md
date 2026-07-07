@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi PHPStan del Modulo User
 
 ## Stato Attuale
@@ -41,3 +42,7 @@ Il modulo User è attualmente in fase di analisi con PHPStan. Questo documento t
 3. Verificare e correggere tutti i tipi nelle relazioni
 4. Aggiornare la documentazione PHPDoc
 5. Eseguire nuovi test PHPStan 
+=======
+https://staabm.github.io/2024/01/15/phpstan-require-extends-implements.html
+
+>>>>>>> 6ed19256f (.)

@@ -30,6 +30,7 @@ return [
             'tooltip' => 'logout',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'name' => 'Create Oauth Client',
         'plural' => 'Create Oauth Client',
@@ -63,4 +64,10 @@ return [
             'description' => '',
         ],
     ],
+=======
+    'navigation' => [],
+    'label' => '',
+    'plural_label' => '',
+    'fields' => [],
+>>>>>>> 6ed19256f (.)
 ];

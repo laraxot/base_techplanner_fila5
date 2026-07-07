@@ -9,13 +9,19 @@ Pest PHP è un framework di test estremamente leggero ed espressivo per PHP. In 
 Pest è già configurato nel progetto. La configurazione principale si trova in `phpunit.xml` e si integra con la struttura dei moduli.
 
 ### File di configurazione
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 - `phpunit.xml` - Configurazione principale di PHPUnit/Pest
 - `.env.testing` - Variabili d'ambiente per i test
 
 ### Struttura PSR-4
 La configurazione PSR-4 per lo sviluppo è:
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 ```json
 {
     "autoload-dev": {
@@ -32,11 +38,15 @@ Grazie all'uso di `wikimedia/composer-merge-plugin`, i moduli sono gestiti autom
 
 ### Comando base
 Dalla cartella `laravel/`:
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 ```bash
 ./vendor/bin/pest
 ```
 
+<<<<<<< HEAD
 ## Regole progetto
 
 - I test vanno eseguiti usando `laravel/.env.testing`.
@@ -50,18 +60,27 @@ Di conseguenza, in `laravel/composer.json` **non** va aggiunto `"Modules\\": "Mo
 
 ### Eseguire test per un modulo specifico
 
+=======
+### Eseguire test per un modulo specifico
+>>>>>>> 6ed19256f (.)
 ```bash
 ./vendor/bin/pest Modules/{ModuleName}/tests/
 ```
 
 ### Eseguire test specifici
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 ```bash
 ./vendor/bin/pest Modules/User/tests/Feature/UserRegistrationTest.php
 ```
 
 ### Eseguire test con opzioni specifiche
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 ```bash
 # Con coverage
 ./vendor/bin/pest --coverage
@@ -83,13 +102,19 @@ Di conseguenza, in `laravel/composer.json` **non** va aggiunto `"Modules\\": "Mo
 2. **Feature Test** - Testano funzionalità complete
 
 ### Convenzioni di denominazione
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 - I test sono scritti esclusivamente in Pest PHP (non in PHPUnit)
 - I file di test seguono la struttura: `Modules/{ModuleName}/tests/{Type}/{TestName}.php`
 - I test utilizzano la funzione `it()` per descrivere il comportamento
 
 ### Esempio di test Pest
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 ```php
 <?php
 
@@ -107,11 +132,20 @@ it('can register a new user', function () {
 });
 ```
 
+<<<<<<< HEAD
 ### File .env.testing
 I test utilizzano il file `.env.testing` che contiene le configurazioni specifiche per l'ambiente di test:
 
 - `APP_ENV=testing`
 - `DB_CONNECTION=mysql` (Deve corrispondere a quello di produzione/locale)
+=======
+## Ambiente di test
+
+### File .env.testing
+I test utilizzano il file `.env.testing` che contiene le configurazioni specifiche per l'ambiente di test:
+- `APP_ENV=testing`
+- `DB_CONNECTION=sqlite` (di solito con database in memoria)
+>>>>>>> 6ed19256f (.)
 - `SESSION_DRIVER=array`
 - `CACHE_DRIVER=array`
 - `QUEUE_CONNECTION=sync`
@@ -122,7 +156,10 @@ Ogni modulo dovrebbe avere un TestCase base che estende il TestCase principale d
 ## Best Practices
 
 ### 1. DRY + KISS + SOLID + Robust
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 - **DRY** (Don't Repeat Yourself): Non duplicare logica di test
 - **KISS** (Keep It Simple, Stupid): Mantieni i test semplici e diretti
 - **SOLID**: Segui principi SOLID nei componenti testati
@@ -134,7 +171,10 @@ Ogni modulo dovrebbe avere un TestCase base che estende il TestCase principale d
 - **Assert**: Verifica i risultati attesi
 
 ### 3. Coverage del 100%
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 - Obiettivo: 100% di code coverage per ogni modulo
 - Testa tutti i percorsi logici
 - Testa anche i casi limite e le eccezioni
@@ -143,8 +183,12 @@ Ogni modulo dovrebbe avere un TestCase base che estende il TestCase principale d
 
 Se trovi test scritti in stile PHPUnit, devono essere convertiti in Pest:
 
+<<<<<<< HEAD
 ### Vecchio stile (PHPUnit)
 
+=======
+### Vecchio stile (PHPUnit):
+>>>>>>> 6ed19256f (.)
 ```php
 class UserTest extends TestCase
 {
@@ -157,8 +201,12 @@ class UserTest extends TestCase
 }
 ```
 
+<<<<<<< HEAD
 ### Nuovo stile (Pest)
 
+=======
+### Nuovo stile (Pest):
+>>>>>>> 6ed19256f (.)
 ```php
 <?php
 
@@ -171,16 +219,26 @@ it('can register user', function () {
 ## Risoluzione problemi comuni
 
 ### Problemi di autoloading
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 - Assicurati che Composer sia stato aggiornato: `composer dump-autoload`
 - Verifica che la configurazione PSR-4 sia corretta
 
 ### Problemi di connessione al database
+<<<<<<< HEAD
 
 - Controlla che il file `.env.testing` sia configurato correttamente
 - MAI usare `RefreshDatabase`. Se necessario, usa database temporanei o cleanup manuale.
 
 ### Test che falliscono a causa di dipendenze esterne
 
+=======
+- Controlla che il file `.env.testing` sia configurato correttamente
+- Usa `RefreshDatabase` o `DatabaseMigrations` quando necessario
+
+### Test che falliscono a causa di dipendenze esterne
+>>>>>>> 6ed19256f (.)
 - Usa mocking per simulare dipendenze esterne
 - Isola i test dalle dipendenze esterne dove possibile

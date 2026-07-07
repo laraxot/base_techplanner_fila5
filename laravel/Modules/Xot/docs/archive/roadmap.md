@@ -236,6 +236,7 @@
 ## Collegamenti Bidirezionali
 
 ### Collegamenti ad Altri Moduli
+<<<<<<< HEAD
 - [Roadmap Modulo User](../user/project_docs/roadmap.md)
 - [Roadmap Modulo Lang](../lang/project_docs/roadmap.md)
 - [Roadmap Modulo UI](../ui/project_docs/roadmap.md)
@@ -243,6 +244,8 @@
 ### Collegamenti Interni
 - [Architettura](./structure.md)
 - [Best Practices](./best-practices.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Roadmap Modulo User](../User/project_docs/roadmap.md)
 - [Roadmap Modulo Lang](../Lang/project_docs/roadmap.md)
 - [Roadmap Modulo UI](../UI/project_docs/roadmap.md)
@@ -427,7 +430,10 @@
 ### Collegamenti Interni
 - [Bottlenecks](bottlenecks.md)
 - [Best Practices](BEST-PRACTICES.md)
+<<<<<<< HEAD
 - [Best Practices](best-practices.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Testing](testing.md)
 
 ### Versione HEAD
@@ -437,6 +443,7 @@
 ## Collegamenti tra versioni di roadmap.md
 * [roadmap.md](bashscripts/project_docs/roadmap.md)
 * [roadmap.md](docs/roadmap.md)
+<<<<<<< HEAD
 * [roadmap.md](../../../gdpr/project_docs/roadmap.md)
 * [roadmap.md](../../../notify/project_docs/roadmap.md)
 * [roadmap.md](../../../xot/project_docs/roadmap.md)
@@ -451,6 +458,8 @@
 * [roadmap.md](../../../patient/project_docs/roadmap.md)
 * [roadmap.md](../../../cms/project_docs/roadmap.md)
 * [roadmap.md](../../../../themes/one/project_docs/roadmap.md)
+=======
+>>>>>>> 6ed19256f (.)
 * [roadmap.md](../../../Gdpr/project_docs/roadmap.md)
 * [roadmap.md](../../../Notify/project_docs/roadmap.md)
 * [roadmap.md](../../../Xot/project_docs/roadmap.md)
@@ -548,4 +557,8 @@ Overall Module Completion: 60%
    - Cache implementation
    - Priority: High
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> 6ed19256f (.)

@@ -176,3 +176,7 @@ resources/views/
 
 **Prossimi Step**: Implementazione del nuovo layout AGID e refactoring completo della pagina di login.
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 31 luglio 2025*
+>>>>>>> 6ed19256f (.)

@@ -191,10 +191,17 @@ class ListOauthClients extends XotBaseListRecords
 - [Passport Cluster Resources Pattern](./passport-cluster-resources-pattern.md)
 - [Passport Cluster Summary](./passport-cluster-summary.md)
 - [Filament Class Extension Rules](../../Xot/docs/filament-class-extension-rules.md)
+<<<<<<< HEAD
 - [Filament Class Extension Rules](../../xot/docs/filament-class-extension-rules.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ---
 
 **Ultimo aggiornamento**: 2025-01-22
 **Versione**: 1.0.0
+<<<<<<< HEAD
 **Status**: 🔴 DA IMPLEMENTARE
+=======
+**Status**: 🔴 DA IMPLEMENTARE
+>>>>>>> 6ed19256f (.)

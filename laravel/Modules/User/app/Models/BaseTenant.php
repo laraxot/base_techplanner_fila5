@@ -10,6 +10,10 @@ use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Modules\User\Contracts\TenantContract;
+<<<<<<< HEAD
+=======
+use Modules\User\Database\Factories\TenantFactory;
+>>>>>>> 6ed19256f (.)
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
@@ -21,6 +25,10 @@ use Spatie\Sluggable\SlugOptions;
 /**
  * Modules\User\Models\Tenant.
  *
+<<<<<<< HEAD
+=======
+ * @method static TenantFactory  factory($count = null, $state = [])
+>>>>>>> 6ed19256f (.)
  * @method static Builder|Tenant newModelQuery()
  * @method static Builder|Tenant newQuery()
  * @method static Builder|Tenant query()
@@ -37,8 +45,15 @@ abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, Tena
     use HasSlug;
     use InteractsWithMedia;
 
+<<<<<<< HEAD
     public $incrementing = false;
 
+=======
+    /** @var bool */
+    public $incrementing = false;
+
+    /** @var string */
+>>>>>>> 6ed19256f (.)
     protected $keyType = 'string';
 
     /** @var list<string> */

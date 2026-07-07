@@ -25,7 +25,10 @@ use Illuminate\Support\Carbon;
  * @property-read Client $client
  * @property-read Collection<int, Machine> $machines
  * @property-read int|null $machines_count
+<<<<<<< HEAD
  *
+=======
+>>>>>>> 6ed19256f (.)
  * @method static Builder<static>|Appointment newModelQuery()
  * @method static Builder<static>|Appointment newQuery()
  * @method static Builder<static>|Appointment query()
@@ -39,7 +42,10 @@ use Illuminate\Support\Carbon;
  * @method static Builder<static>|Appointment whereNotes($value)
  * @method static Builder<static>|Appointment whereUpdatedAt($value)
  * @method static Builder<static>|Appointment whereUpdatedBy($value)
+<<<<<<< HEAD
  *
+=======
+>>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class Appointment extends Model

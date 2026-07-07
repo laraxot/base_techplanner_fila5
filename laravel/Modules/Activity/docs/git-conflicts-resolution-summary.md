@@ -12,7 +12,11 @@
 ### Documentazione
 - `docs/README.md` - Documentazione principale del modulo
 - `docs/event-sourcing.md` - Architettura event sourcing
+<<<<<<< HEAD
 - `docs/use_cases/<nome progetto>ion_market/` - Documentazione completa casi d'uso
+=======
+- `docs/use_cases/prediction_market/` - Documentazione completa casi d'uso
+>>>>>>> 6ed19256f (.)
 
 ## Modifiche Applicate
 
@@ -29,7 +33,11 @@ La documentazione è stata aggiornata per riflettere:
 - Gestione degli stored events
 - Integrazione con il sistema di attività
 
+<<<<<<< HEAD
 ### <nome progetto>ion Market Use Cases
+=======
+### Prediction Market Use Cases
+>>>>>>> 6ed19256f (.)
 Documentazione completa per:
 - Introduzione e architettura
 - Esempi pratici di implementazione
@@ -45,9 +53,18 @@ Tutti i file risolti rispettano:
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Documentazione Root Activity](../../../../docs/modules/activity.md)
 - [Event Sourcing Architecture](./event-sourcing.md)
 - [<nome progetto>ion Market Use Cases](./use_cases/<nome progetto>ion_market/index.md)
 
 ---
 *Aggiornato automaticamente dopo risoluzione conflitti Git*
+=======
+- [Documentazione Root Activity](../../../docs/modules/activity.md)
+- [Event Sourcing Architecture](./event-sourcing.md)
+- [Prediction Market Use Cases](./use_cases/prediction_market/index.md)
+
+---
+*Aggiornato automaticamente dopo risoluzione conflitti Git*
+>>>>>>> 6ed19256f (.)

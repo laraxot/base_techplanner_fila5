@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -47,6 +48,23 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'name' => [
+            'label' => '名称',
+        ],
+        'description' => [
+            'label' => '描述',
+        ],
+        'color' => [
+            'label' => '颜色',
+        ],
+        'created_at' => [
+            'label' => '创建时间',
+        ],
+        'updated_at' => [
+            'label' => '更新时间',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -57,4 +75,8 @@ return [
             'label' => '分配给任务',
         ],
     ],
+<<<<<<< HEAD
 ];
+=======
+];
+>>>>>>> 6ed19256f (.)

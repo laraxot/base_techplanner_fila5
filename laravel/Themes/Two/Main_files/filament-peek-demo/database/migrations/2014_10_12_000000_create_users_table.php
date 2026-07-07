@@ -34,5 +34,8 @@ return new class extends Migration
         Schema::dropIfExists('users');
     }
 };
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 6ed19256f (.)

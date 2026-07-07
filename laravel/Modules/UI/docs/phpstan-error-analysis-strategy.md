@@ -122,4 +122,8 @@ public function getColorForOption(string $value): string
 
 ## 📝 Note
 
+<<<<<<< HEAD
 Il codice verifica già le interfacce a runtime (line 43), ma PHPStan ha bisogno di type guards espliciti o PHPDoc corretto per inferire i tipi corretti.
+=======
+Il codice verifica già le interfacce a runtime (line 43), ma PHPStan ha bisogno di type guards espliciti o PHPDoc corretto per inferire i tipi corretti.
+>>>>>>> 6ed19256f (.)

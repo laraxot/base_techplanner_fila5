@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Filament;
 
+<<<<<<< HEAD
+=======
+use Exception;
+>>>>>>> 6ed19256f (.)
 use Filament\Navigation\NavigationItem;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Support\Facades\Auth;
@@ -12,10 +16,16 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\Tenant\Services\TenantService;
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
+<<<<<<< HEAD
 
 use function Safe\json_encode;
 
 use Spatie\QueueableAction\QueueableAction;
+=======
+use function Safe\json_encode;
+use Spatie\QueueableAction\QueueableAction;
+use Throwable;
+>>>>>>> 6ed19256f (.)
 use Webmozart\Assert\Assert;
 
 /**
@@ -54,7 +64,11 @@ class GetModulesNavigationItems
             // Tolleranza: durante comandi CLI alcuni moduli possono non avere ancora struttura completa
             try {
                 $configPath = app(GetModulePathByGeneratorAction::class)->execute($module, 'config');
+<<<<<<< HEAD
             } catch (\Throwable $e) {
+=======
+            } catch (Throwable $e) {
+>>>>>>> 6ed19256f (.)
                 // Skip modulo non pronto/senza generator path config
                 continue;
             }
@@ -70,7 +84,11 @@ class GetModulesNavigationItems
                 /** @var array<string, mixed> $config */
                 $config = File::getRequire($configFilePath);
                 Assert::isArray($config, 'Il file di configurazione deve restituire un array');
+<<<<<<< HEAD
             } catch (\Exception $e) {
+=======
+            } catch (Exception $e) {
+>>>>>>> 6ed19256f (.)
                 continue;
             }
 
@@ -113,7 +131,11 @@ class GetModulesNavigationItems
                      * @var Authenticatable|null $user
                      */
                     $user = Auth::user();
+<<<<<<< HEAD
                     if (null === $user) {
+=======
+                    if ($user === null) {
+>>>>>>> 6ed19256f (.)
                         return false;
                     }
 
@@ -122,6 +144,10 @@ class GetModulesNavigationItems
                         return false;
                     }
 
+<<<<<<< HEAD
+=======
+                    /** @phpstan-ignore-next-line */
+>>>>>>> 6ed19256f (.)
                     return (bool) $user->hasRole($role);
                 });
 
@@ -167,7 +193,11 @@ class GetModulesNavigationItems
                     /** @var array<string, mixed> $config */
                     $config = File::getRequire($configFilePath);
                     Assert::isArray($config);
+<<<<<<< HEAD
                 } catch (\Exception $e) {
+=======
+                } catch (Exception $e) {
+>>>>>>> 6ed19256f (.)
                     continue;
                 }
                 $icon = $config['icon'] ?? 'heroicon-o-cube';
@@ -196,7 +226,11 @@ class GetModulesNavigationItems
             Assert::integer($item['sort']);
         }
 
+<<<<<<< HEAD
         /* @var array<int, array{module: string, module_low: string, icon: string, sort: int}> $result */
+=======
+        /** @var array<int, array{module: string, module_low: string, icon: string, sort: int}> $result */
+>>>>>>> 6ed19256f (.)
         return $result;
     }
 }

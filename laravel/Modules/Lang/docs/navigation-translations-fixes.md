@@ -2,7 +2,10 @@
 
 ## Data Intervento
 **2025-08-07** - Sistemazione traduzioni secondo regole DRY + KISS
+<<<<<<< HEAD
 **[DATE]** - Sistemazione traduzioni secondo regole DRY + KISS
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Analisi File
 
@@ -80,6 +83,7 @@ Il modulo Lang risulta **CONFORME** agli standard di traduzione:
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Documentazione Modulo Lang](README.md)
 - [Sistema Localizzazione](comprehensive_guide.md)
 - [Regole Traduzioni Laraxot](../Xot/docs/translation-rules.md)
@@ -87,6 +91,12 @@ Il modulo Lang risulta **CONFORME** agli standard di traduzione:
 - [Documentazione Modulo Lang](readme.md)
 - [Sistema Localizzazione](comprehensive_guide.md)
 - [Regole Traduzioni Laraxot](../xot/docs/translation-rules.md)
+=======
+- [Audit Generale Traduzioni Navigation](../../docs/navigation-translations-audit.md)
+- [Documentazione Modulo Lang](README.md)
+- [Sistema Localizzazione](comprehensive_guide.md)
+- [Regole Traduzioni Laraxot](../Xot/docs/translation-rules.md)
+>>>>>>> 6ed19256f (.)
 
 ## Note Tecniche
 
@@ -103,5 +113,9 @@ Il modulo Lang risulta **CONFORME** agli standard di traduzione:
 4. **Standard**: Continuare ad applicare le regole DRY + KISS
 
 *Verifica completata il: 2025-08-07*
+<<<<<<< HEAD
 *Verifica completata il: [DATE]*
 *Status: CONFORME agli standard*
+=======
+*Status: CONFORME agli standard*
+>>>>>>> 6ed19256f (.)

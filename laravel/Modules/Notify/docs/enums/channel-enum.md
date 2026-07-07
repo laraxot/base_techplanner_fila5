@@ -89,4 +89,8 @@ foreach ($channels as $channelEnum) {
 *   [`SmsChannel` Documentation](`../notifications/channels/sms-channel.md`)
 *   [`WhatsAppChannel` Documentation](`../notifications/channels/whatsapp-channel.md`)
 ```
+<<<<<<< HEAD
 Let's create this file.
+=======
+Let's create this file.
+>>>>>>> 6ed19256f (.)

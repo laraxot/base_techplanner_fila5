@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 📚 **Indice Documentazione Modulo Notify**
 
 **Status**: ✅ PHPStan Level 10 Compliant
@@ -43,6 +44,12 @@
 
 **Last Update**: 19 Dicembre 2025 (Integrated with collaborative AI agents work)  
 **Status**: ✅ PHPStan Level 10 Compliant  
+=======
+# Notify Module Documentation Index
+
+**Last Update**: 19 Dicembre 2025 (Integrated with collaborative AI agents work)
+**Status**: ✅ PHPStan Level 10 Compliant
+>>>>>>> 6ed19256f (.)
 **Module Version**: 1.0
 
 ## 📚 Quick Navigation
@@ -138,8 +145,11 @@
 ---
 
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+<<<<<<< HEAD
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
 
 ## Dependency Intelligence
 
 - [Dependency intelligence](dependency-intelligence.md)
+=======
+>>>>>>> 6ed19256f (.)

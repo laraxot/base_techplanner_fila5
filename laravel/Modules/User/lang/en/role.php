@@ -17,6 +17,7 @@ return [
     'fields' => [
         'name' => [
             'label' => 'Nome Ruolo',
+<<<<<<< HEAD
             'tooltip' => 'Il nome identificativo del ruolo, es. \\"Admin\\".',
             'placeholder' => 'Nome del ruolo',
             'helper_text' => '',
@@ -28,38 +29,60 @@ return [
             'placeholder' => 'Nome della guardia',
             'helper_text' => '',
             'description' => '',
+=======
+            'tooltip' => 'Il nome identificativo del ruolo, es. \"Admin\".',
+            'placeholder' => 'Nome del ruolo',
+        ],
+        'guard_name' => [
+            'label' => 'Guard',
+            'tooltip' => 'Il nome della guardia per questo ruolo, es. \"web\".',
+            'placeholder' => 'Nome della guardia',
+>>>>>>> 6ed19256f (.)
         ],
         'permissions' => [
             'label' => 'Permessi',
             'tooltip' => 'Seleziona i permessi associati a questo ruolo.',
             'placeholder' => 'Seleziona permessi',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'users_count' => [
             'label' => 'Numero Utenti',
             'tooltip' => 'Il numero di utenti assegnati a questo ruolo.',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'created_at' => [
             'label' => 'Data Creazione',
             'tooltip' => 'La data in cui il ruolo è stato creato.',
             'placeholder' => 'Data di creazione',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'updated_at' => [
             'label' => 'Ultima Modifica',
             'tooltip' => 'La data dell\'ultima modifica del ruolo.',
             'placeholder' => 'Ultima modifica',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'description' => [
             'label' => 'Descrizione',
             'tooltip' => 'Una descrizione del ruolo e delle sue funzioni.',
             'placeholder' => 'Descrizione del ruolo',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
         ],
@@ -80,12 +103,24 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+>>>>>>> 6ed19256f (.)
         ],
         'team_id' => [
             'description' => 'team_id',
             'helper_text' => 'team_id',
             'placeholder' => 'team_id',
             'label' => 'team_id',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
         'detach' => [
@@ -117,12 +152,30 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'detach' => [
+            'label' => 'detach',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'edit' => [
+            'label' => 'edit',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+        ],
+        'attach' => [
+            'label' => 'attach',
+>>>>>>> 6ed19256f (.)
         ],
         'recordId' => [
             'description' => 'recordId',
             'helper_text' => 'recordId',
             'placeholder' => 'recordId',
             'label' => 'recordId',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
         'id' => [
@@ -130,6 +183,11 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'id' => [
+            'label' => 'id',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'roles' => [
@@ -193,6 +251,9 @@ return [
         'settings' => 'Impostazioni',
         'reports' => 'Report',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

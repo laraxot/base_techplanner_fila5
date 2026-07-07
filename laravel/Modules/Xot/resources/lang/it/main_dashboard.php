@@ -19,6 +19,7 @@ return [
             'icon' => 'logout',
             'tooltip' => 'logout',
         ],
+<<<<<<< HEAD
         'userdefaultprofilemy-profile' => [
             'tooltip' => 'userdefaultprofilemy-profile',
         ],
@@ -33,5 +34,7 @@ return [
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
+=======
+>>>>>>> 6ed19256f (.)
     ],
 ];

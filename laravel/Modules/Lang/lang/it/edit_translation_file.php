@@ -9,7 +9,10 @@ return [
             'placeholder' => 'key',
             'helper_text' => 'key',
             'description' => 'key',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'data' => [
             'pippo' => [
@@ -17,16 +20,20 @@ return [
                 'helper_text' => 'data.pippo',
                 'placeholder' => 'data.pippo',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'pippo' => [
             'description' => 'pippo',
             'helper_text' => 'pippo',
             'placeholder' => 'pippo',
             'label' => 'pippo',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
         'pluto' => [
@@ -34,6 +41,11 @@ return [
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
+=======
+        ],
+        'pluto' => [
+            'description' => 'pluto',
+>>>>>>> 6ed19256f (.)
         ],
         'snapshots' => [
             'fields' => [
@@ -46,10 +58,13 @@ return [
                     ],
                 ],
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'content' => [
             'snapshots' => [
@@ -409,10 +424,13 @@ return [
                     'description' => 'content.stats.no_show_rate',
                 ],
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -426,6 +444,7 @@ return [
             'label' => 'lang',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Edit Translation File',
     'plural_label' => 'Edit Translation File (Plurale)',
     'navigation' => [
@@ -439,4 +458,6 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

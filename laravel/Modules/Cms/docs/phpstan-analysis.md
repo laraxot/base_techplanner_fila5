@@ -24,4 +24,8 @@
 
 ---
 
+<<<<<<< HEAD
 **Prossimo modulo**: Fixcity
+=======
+**Prossimo modulo**: Fixcity
+>>>>>>> 6ed19256f (.)

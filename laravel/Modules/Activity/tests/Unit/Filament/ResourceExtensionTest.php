@@ -2,8 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 uses(\Modules\Activity\Tests\TestCase::class);
 
+=======
+>>>>>>> 6ed19256f (.)
 use Modules\Activity\Filament\Resources\ActivityResource;
 use Modules\Activity\Filament\Resources\SnapshotResource;
 use Modules\Activity\Filament\Resources\StoredEventResource;
@@ -16,7 +19,11 @@ test('activity resources extend xot base resource', function () {
 });
 
 test('activity resource does not implement unnecessary methods', function () {
+<<<<<<< HEAD
     $reflection = new \ReflectionClass(ActivityResource::class);
+=======
+    $reflection = new ReflectionClass(ActivityResource::class);
+>>>>>>> 6ed19256f (.)
 
     // Different installs / Filament versions may generate these methods.
     // We keep this as a smoke test instead of enforcing strict absence.
@@ -27,7 +34,11 @@ test('activity resource does not implement unnecessary methods', function () {
 });
 
 test('activity resource implements required getFormSchema method', function () {
+<<<<<<< HEAD
     $reflection = new \ReflectionClass(ActivityResource::class);
+=======
+    $reflection = new ReflectionClass(ActivityResource::class);
+>>>>>>> 6ed19256f (.)
 
     expect($reflection->hasMethod('getFormSchema'))->toBeTrue();
 
@@ -41,6 +52,7 @@ test('activity resource implements required getFormSchema method', function () {
 });
 
 test('snapshot resource should not implement unnecessary methods', function () {
+<<<<<<< HEAD
     $reflection = new \ReflectionClass(SnapshotResource::class);
 
     // Verify the resource has correct structure (getPages can return standard pages)
@@ -92,6 +104,65 @@ test('stored event resource should not implement unnecessary methods', function 
     }
 
     expect(true)->toBeTrue();
+=======
+    $reflection = new ReflectionClass(SnapshotResource::class);
+
+    // These methods should NOT be implemented (they return standard values)
+    $hasUnnecessaryPages = $reflection->hasMethod('getPages');
+    $hasUnnecessaryRelations = $reflection->hasMethod('getRelations');
+
+    if ($hasUnnecessaryPages) {
+        $pagesMethod = $reflection->getMethod('getPages');
+        $pagesValue = $pagesMethod->invoke(null);
+
+        // If it returns standard pages, it shouldn't be implemented
+        $isStandardPages = isset($pagesValue['index'], $pagesValue['create'], $pagesValue['edit']);
+
+        expect($isStandardPages, 'SnapshotResource should not implement getPages() for standard pages')
+            ->toBeFalse();
+    }
+
+    if ($hasUnnecessaryRelations) {
+        $relationsMethod = $reflection->getMethod('getRelations');
+        $relationsValue = $relationsMethod->invoke(null);
+
+        // If it returns empty array, it shouldn't be implemented
+        $isEmptyRelations = empty($relationsValue);
+
+        expect($isEmptyRelations, 'SnapshotResource should not implement getRelations() for empty relations')
+            ->toBeFalse();
+    }
+});
+
+test('stored event resource should not implement unnecessary methods', function () {
+    $reflection = new ReflectionClass(StoredEventResource::class);
+
+    // These methods should NOT be implemented (they return standard values)
+    $hasUnnecessaryPages = $reflection->hasMethod('getPages');
+    $hasUnnecessaryRelations = $reflection->hasMethod('getRelations');
+
+    if ($hasUnnecessaryPages) {
+        $pagesMethod = $reflection->getMethod('getPages');
+        $pagesValue = $pagesMethod->invoke(null);
+
+        // If it returns standard pages, it shouldn't be implemented
+        $isStandardPages = isset($pagesValue['index'], $pagesValue['create'], $pagesValue['edit']);
+
+        expect($isStandardPages, 'StoredEventResource should not implement getPages() for standard pages')
+            ->toBeFalse();
+    }
+
+    if ($hasUnnecessaryRelations) {
+        $relationsMethod = $reflection->getMethod('getRelations');
+        $relationsValue = $relationsMethod->invoke(null);
+
+        // If it returns empty array, it shouldn't be implemented
+        $isEmptyRelations = empty($relationsValue);
+
+        expect($isEmptyRelations, 'StoredEventResource should not implement getRelations() for empty relations')
+            ->toBeFalse();
+    }
+>>>>>>> 6ed19256f (.)
 });
 
 test('activity resource has correct model configuration', function () {

@@ -32,7 +32,10 @@ Successivamente è stato commesso un **errore di analisi superficiale**:
 2. WIDGET LOGIN (Livewire):
    - Classe: Modules\User\Filament\Widgets\Auth\LoginWidget
    - Metodo: login()
+<<<<<<< HEAD
    - Metodo: login() 
+=======
+>>>>>>> 6ed19256f (.)
    - Test: LoginWidgetTest.php (widget/unità)
 
 3. ALTRI COMPONENT:
@@ -50,7 +53,10 @@ Successivamente è stato commesso un **errore di analisi superficiale**:
 - Test dell'autenticazione via widget
 
 // laravel/Modules/Cms/tests/Feature/Auth/AuthenticationTest.php
+<<<<<<< HEAD
 // laravel/Modules/Cms/tests/Feature/Auth/AuthenticationTest.php  
+=======
+>>>>>>> 6ed19256f (.)
 - Test dell'autenticazione Volt
 - Test della pagina /it/auth/login
 
@@ -88,12 +94,15 @@ function createTestUser(array $attributes = []): UserContract
         'password' => Hash::make('password123'),
         'name' => fake()->name(),
     ];
+<<<<<<< HEAD
     
     $userData = array_merge($defaultData, $attributes);
     
     /** @var UserContract&\Illuminate\Database\Eloquent\Model $user */
     $user = $userClass::factory()->create($userData);
     
+=======
+>>>>>>> 6ed19256f (.)
 
     $userData = array_merge($defaultData, $attributes);
 
@@ -159,8 +168,11 @@ function createTestUser(array $attributes = []): UserContract
 ### **Pattern XotData**
 - [docs/xotdata-architecture-critical-error-fix.md](../../../docs/xotdata-architecture-critical-error-fix.md)
 - [laravel/Modules/Xot/docs/architecture-violations-and-fixes.md](../../Xot/docs/architecture-violations-and-fixes.md)
+<<<<<<< HEAD
 - [docs/xotdata-architecture-critical-error-fix.md](../../../../docs/project/xotdata-architecture-critical-error-fix.md)
 - [laravel/Modules/Xot/project_docs/architecture-violations-and-fixes.md](../../xot/project_docs/architecture-violations-and-fixes.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ### **Struttura Testing**
 - [laravel/Modules/User/tests/Feature/Filament/Widgets/LoginWidgetTest.php](../../User/tests/Feature/Filament/Widgets/LoginWidgetTest.php)
@@ -169,9 +181,12 @@ function createTestUser(array $attributes = []): UserContract
 ### **Sistema Folio/Volt**
 - [laravel/Themes/One/docs/folio-pages.md](../../../Themes/One/docs/folio-pages.md)
 - [laravel/Themes/One/docs/routing_with_folio_volt.md](../../../Themes/One/docs/routing_with_folio_volt.md)
+<<<<<<< HEAD
 ### **Sistema Folio/Volt** 
 - [laravel/Themes/One/project_docs/folio-pages.md](../../../themes/one/project_docs/folio-pages.md)
 - [laravel/Themes/One/project_docs/routing_with_folio_volt.md](../../../themes/one/project_docs/routing_with_folio_volt.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## 🎯 **Obiettivo Finale**
 
@@ -184,7 +199,10 @@ LoginTest.php → Pagina /it/auth/login (Folio/Volt)
 └── Gestione errori
 
 LoginWidgetTest.php → Widget Livewire
+<<<<<<< HEAD
 LoginWidgetTest.php → Widget Livewire  
+=======
+>>>>>>> 6ed19256f (.)
 ├── Rendering widget
 ├── Validazione campi
 ├── Metodi del widget
@@ -371,4 +389,8 @@ LoginWidgetTest.php → Widget Livewire
 └── Interazioni specifiche
 ```
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: Dicembre 2024 - Analisi completa e correzione pattern*
+=======
+*Ultimo aggiornamento: Dicembre 2024 - Analisi completa e correzione pattern*
+>>>>>>> 6ed19256f (.)

@@ -299,4 +299,8 @@ Il componente non solo elimina duplicazione, ma stabilisce un **pattern replicab
 
 *Ultimo aggiornamento: Dicembre 2024*
 
+<<<<<<< HEAD
 **Il successo di questo caso studio conferma l'importanza di identificare e risolvere proattivamente la duplicazione di codice prima che diventi un debito tecnico significativo.**
+=======
+**Il successo di questo caso studio conferma l'importanza di identificare e risolvere proattivamente la duplicazione di codice prima che diventi un debito tecnico significativo.**
+>>>>>>> 6ed19256f (.)

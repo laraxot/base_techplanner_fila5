@@ -6,6 +6,7 @@ return [
     'fields' => [
         'deactivate' => [
             'label' => 'deactivate',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -65,4 +66,27 @@ return [
             'label' => 'Elimina Base List Users',
         ],
     ],
+=======
+        ],
+        'unverified' => [
+            'label' => 'unverified',
+        ],
+        'verified' => [
+            'label' => 'verified',
+        ],
+        'email' => [
+            'label' => 'email',
+        ],
+        'name' => [
+            'label' => 'name',
+        ],
+        'changePassword' => [
+            'label' => 'changePassword',
+        ],
+    ],
+    'navigation' => [],
+    'label' => '',
+    'plural_label' => '',
+    'actions' => [],
+>>>>>>> 6ed19256f (.)
 ];

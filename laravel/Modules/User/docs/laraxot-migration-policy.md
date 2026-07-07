@@ -6,7 +6,11 @@ To ensure all database migrations within the project, especially those in module
 
 ## Problem Description
 
+<<<<<<< HEAD
 The migration file `Modules/User/database/migrations/2025_05_16_221811_add_owner_id_to_teams_table.php` has been flagged as not respecting the "Laraxot policy, philosophy, religion." This indicates a violation of established project conventions or best practices for database schema management.
+=======
+The migration file `/var/www/_bases/base_laravelpizza/laravel/Modules/User/database/migrations/2025_05_16_221811_add_owner_id_to_teams_table.php` has been flagged as not respecting the "Laraxot policy, philosophy, religion." This indicates a violation of established project conventions or best practices for database schema management.
+>>>>>>> 6ed19256f (.)
 
 ## Laraxot Principles (Deducted)
 
@@ -31,7 +35,11 @@ The specific migration `add_owner_id_to_teams_table.php` suggests adding an `own
 
 ## Planned Next Steps
 
+<<<<<<< HEAD
 1.  Read the content of `Modules/User/database/migrations/2025_05_16_221811_add_owner_id_to_teams_table.php`.
+=======
+1.  Read the content of `/var/www/_bases/base_laravelpizza/laravel/Modules/User/database/migrations/2025_05_16_221811_add_owner_id_to_teams_table.php`.
+>>>>>>> 6ed19256f (.)
 2.  Analyze the `up()` and `down()` methods for violations of the deduced Laraxot principles.
 3.  Propose specific changes to rectify the migration.
 4.  Implement the corrected migration file.

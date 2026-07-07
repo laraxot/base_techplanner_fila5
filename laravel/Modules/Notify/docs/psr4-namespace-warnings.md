@@ -5,12 +5,21 @@
 I seguenti warning PSR-4 sono stati segnalati:
 
 ```
+<<<<<<< HEAD
 Class Modules\Notify\App\Jobs\SendScheduledPushNotification located in 
 ./Modules/Notify/app/Jobs/SendScheduledPushNotification.php does not comply 
 with psr-4 autoloading standard (rule: Modules\Notify\ => ./Modules/Notify/app). 
 
 Class Modules\Notify\App\Services\PushNotificationService located in 
 ./Modules/Notify/app/Services/PushNotificationService.php does not comply 
+=======
+Class Modules\Notify\App\Jobs\SendScheduledPushNotification located in
+./Modules/Notify/app/Jobs/SendScheduledPushNotification.php does not comply
+with psr-4 autoloading standard (rule: Modules\Notify\ => ./Modules/Notify/app).
+
+Class Modules\Notify\App\Services\PushNotificationService located in
+./Modules/Notify/app/Services/PushNotificationService.php does not comply
+>>>>>>> 6ed19256f (.)
 with psr-4 autoloading standard (rule: Modules\Notify\ => ./Modules/Notify/app).
 ```
 
@@ -86,6 +95,7 @@ php artisan optimize:clear
 **Documentazione correlata**:
 - [Xot/docs/module-namespace-path-convention.md](../../Xot/docs/module-namespace-path-convention.md)
 - [Xot/docs/modules/structure.md](../../Xot/docs/modules/structure.md)
+<<<<<<< HEAD
 - [Xot/docs/module-namespace-path-convention.md](../../xot/docs/module-namespace-path-convention.md)
 - [Xot/docs/modules/structure.md](../../xot/docs/modules/structure.md)
 
@@ -94,3 +104,11 @@ php artisan optimize:clear
 **Verifica**: Gennaio 2025  
 **Status**: ✅ File conformi PSR-4  
 **Azione**: Nessuna (già corretti)
+=======
+
+---
+
+**Verifica**: Gennaio 2025
+**Status**: ✅ File conformi PSR-4
+**Azione**: Nessuna (già corretti)
+>>>>>>> 6ed19256f (.)

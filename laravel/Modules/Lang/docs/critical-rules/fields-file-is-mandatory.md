@@ -319,4 +319,8 @@ Prima di considerare un modulo "completo":
 **Versione**: 1.0
 **Data**: 2026-01-09
 **Autore**: System Architect (dopo litigata interna)
+<<<<<<< HEAD
 **Status**: ✅ **REGOLA DEFINITIVA**
+=======
+**Status**: ✅ **REGOLA DEFINITIVA**
+>>>>>>> 6ed19256f (.)

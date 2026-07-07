@@ -10,7 +10,11 @@ use Modules\Lang\Filament\Resources\Pages\LangBaseListRecords;
 
 class ListAttachments extends LangBaseListRecords
 {
+<<<<<<< HEAD
     public static string $resource = AttachmentResource::class;
+=======
+    protected static string $resource = AttachmentResource::class;
+>>>>>>> 6ed19256f (.)
 
     /**
      * @return array<string, mixed>

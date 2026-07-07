@@ -12,11 +12,14 @@ La migrazione del database crea una tabella `addresses` con la seguente struttur
 Schema::create('addresses', function (Blueprint $table) {
     $table->id();
     $table->nullableMorphs('addressable'); // Relazione polimorfica
+<<<<<<< HEAD
     
     // Campi informativi
     $table->string('name')->nullable()->comment('Nome identificativo dell\'indirizzo');
     $table->text('description')->nullable()->comment('Descrizione opzionale');
     
+=======
+>>>>>>> 6ed19256f (.)
 
     // Campi informativi
     $table->string('name')->nullable()->comment('Nome identificativo dell\'indirizzo');
@@ -31,13 +34,18 @@ Schema::create('addresses', function (Blueprint $table) {
     $table->string('administrative_area_level_1')->nullable()->comment('Stato/Paese');
     $table->string('country', 2)->nullable()->comment('Codice paese ISO');
     $table->string('postal_code', 20)->nullable()->comment('CAP');
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // Dati di geocoding
     $table->text('formatted_address')->nullable();
     $table->string('place_id')->nullable()->comment('ID Google Places');
     $table->decimal('latitude', 15, 10)->nullable();
     $table->decimal('longitude', 15, 10)->nullable();
+<<<<<<< HEAD
     
     // Campi tipo indirizzo
     $table->string('type', 50)->nullable()->index()->comment('Tipo indirizzo (home, work, etc.)');
@@ -46,6 +54,8 @@ Schema::create('addresses', function (Blueprint $table) {
     // Dati aggiuntivi
     $table->json('extra_data')->nullable();
     
+=======
+>>>>>>> 6ed19256f (.)
 
     // Campi tipo indirizzo
     $table->string('type', 50)->nullable()->index()->comment('Tipo indirizzo (home, work, etc.)');
@@ -81,7 +91,10 @@ use Modules\Geo\Contracts\HasGeolocation;
 /**
  * Class Address - Modello per gli indirizzi conforme a schema.org/PostalAddress.
  *
+<<<<<<< HEAD
  * 
+=======
+>>>>>>> 6ed19256f (.)
  * @see https://schema.org/PostalAddress
  */
 class Address extends BaseModel implements HasGeolocation
@@ -164,8 +177,12 @@ class Address extends BaseModel implements HasGeolocation
     {
         return $this->morphTo();
     }
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     /**
      * Ottiene la latitudine.
      */
@@ -239,12 +256,15 @@ class Address extends BaseModel implements HasGeolocation
             }
         });
     }
+<<<<<<< HEAD
     
     /**
      * Restituisce i dati in formato Schema.org PostalAddress.
      * 
      * @see https://schema.org/PostalAddress
      * 
+=======
+>>>>>>> 6ed19256f (.)
 
     /**
      * Restituisce i dati in formato Schema.org PostalAddress.
@@ -283,7 +303,10 @@ class Address extends BaseModel implements HasGeolocation
             'street_number' => $components->get('street_number')['long_name'] ?? null,
             'route' => $components->get('route')['long_name'] ?? null,
             'locality' => $components->get('locality')['long_name'] ??
+<<<<<<< HEAD
             'locality' => $components->get('locality')['long_name'] ?? 
+=======
+>>>>>>> 6ed19256f (.)
                          $components->get('administrative_area_level_3')['long_name'] ?? null,
             'administrative_area_level_3' => $components->get('administrative_area_level_2')['long_name'] ?? null, // Provincia
             'administrative_area_level_2' => $components->get('administrative_area_level_1')['long_name'] ?? null, // Regione
@@ -537,4 +560,8 @@ Questo modello `Address` fornisce una struttura robusta, flessibile e riutilizza
 - **Politica**: Ogni modulo deve essere autonomo e la sua documentazione navigabile anche se spostata.
 - **Filosofia**: Un solo punto di verità, nessun path assoluto, nessun lock-in.
 - **Religione**: "Non avrai altro path all'infuori del relativo".
+<<<<<<< HEAD
 - **Zen**: Serenità nella navigazione, nessun errore di path, nessun link rotto dopo un refactor.
+=======
+- **Zen**: Serenità nella navigazione, nessun errore di path, nessun link rotto dopo un refactor.
+>>>>>>> 6ed19256f (.)

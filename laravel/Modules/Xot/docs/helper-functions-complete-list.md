@@ -65,7 +65,11 @@ $json = dddx(['key' => 'value']);
 ```
 
 **Caratteristiche**:
+<<<<<<< HEAD
 - Solo sviluppo: non usare in produzione (policy no-log-debug)
+=======
+- Logga sempre via `Log::debug()`
+>>>>>>> 6ed19256f (.)
 - Usa `Safe\json_encode()` per type safety
 - Ritorna string (non void)
 
@@ -363,11 +367,18 @@ composer dump-autoload
 ---
 
 **Last Updated**: 2 Dicembre 2025
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 **Total Functions**: 10
 **PHPStan Level**: 10 ✅
 **Status**: Production Ready
 
 ---
 
+<<<<<<< HEAD
 *"Helper functions sono il vocabolario comune del framework: semplici da usare, potenti nell'implementazione."*
+=======
+*"Helper functions sono il vocabolario comune del framework: semplici da usare, potenti nell'implementazione."*
+>>>>>>> 6ed19256f (.)

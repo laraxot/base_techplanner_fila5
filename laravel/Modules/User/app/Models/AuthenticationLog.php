@@ -12,6 +12,10 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Carbon;
+<<<<<<< HEAD
+=======
+use Modules\User\Database\Factories\AuthenticationLogFactory;
+>>>>>>> 6ed19256f (.)
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
@@ -33,6 +37,10 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
+<<<<<<< HEAD
+=======
+ * @method static AuthenticationLogFactory  factory($count = null, $state = [])
+>>>>>>> 6ed19256f (.)
  * @method static Builder|AuthenticationLog newModelQuery()
  * @method static Builder|AuthenticationLog newQuery()
  * @method static Builder|AuthenticationLog query()
@@ -55,8 +63,11 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @property ProfileContract|null $deleter
  *
+<<<<<<< HEAD
  * @method static \Modules\User\Database\Factories\AuthenticationLogFactory factory($count = null, $state = [])
  *
+=======
+>>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class AuthenticationLog extends BaseModel

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 module: theme
 topic: ffmpeg
@@ -5,3 +6,21 @@ canonical: ../../../Themes/docs/shared-components/ffmpeg.txt
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/ffmpeg.txt
+=======
+WINDOWS
+
+https://www.gyan.dev/ffmpeg/builds/
+
+choco install ffmpeg
+choco install ffmpeg-full
+winget install ffmpeg
+
+
+$ which ffmpeg
+$ which ffprobe
+
+
+add to .env
+FFMPEG_PATH=c:/ProgramData/chocolatey/bin/ffmpeg.exe
+FFPROBE_PATH=c:/ProgramData/chocolatey/bin/ffprobe.exe
+>>>>>>> 6ed19256f (.)

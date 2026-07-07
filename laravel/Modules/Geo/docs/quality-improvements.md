@@ -97,7 +97,13 @@ private function extractBingCoordinates(array $data): ?array
 
 ## Date
 2025-11-23
+<<<<<<< HEAD
 [DATE]
 
 ## Version
 1.0.0
+=======
+
+## Version
+1.0.0
+>>>>>>> 6ed19256f (.)

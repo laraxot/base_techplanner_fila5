@@ -1,11 +1,14 @@
 # 🎨 Theme Assets Workflow - CSS/JS Frontend
 
+<<<<<<< HEAD
 Related documents:
 - [Vite Configuration](./vite-configuration.md)
 - [Xot Documentation Index](./index.md)
 - [Sixteen Theme Documentation Index](../../Themes/Sixteen/docs/00-index.md)
 
 
+=======
+>>>>>>> 6ed19256f (.)
 **⚠️ REGOLA CRITICA**: Per modifiche CSS/JS del frontend, lavorare SEMPRE nella cartella del tema, NON nella root Laravel.
 
 ## 📁 Struttura Corretta
@@ -43,7 +46,10 @@ npm run copy
 
 ## ✅ Processo Corretto
 1. **Modifica sorgenti** in `/Themes/[Theme]/resources/`
+<<<<<<< HEAD
 2. **Usa `@vite([...], 'themes/[Theme]')`** nei layout del tema per evitare il fallback a `public/build/manifest.json`
+=======
+>>>>>>> 6ed19256f (.)
 2. **Build assets** con `npm run build` dalla cartella tema
 3. **Copy assets** con `npm run copy` dalla cartella tema
 4. **Verifica risultato** nel browser
@@ -52,7 +58,11 @@ npm run copy
 
 ### Tema One
 ```bash
+<<<<<<< HEAD
 cd Themes/One
+=======
+cd /var/www/html/_bases/base_saluteora/laravel/Themes/One
+>>>>>>> 6ed19256f (.)
 npm install          # Prima volta
 npm run build        # Compila Sass/JS
 npm run copy         # Copia in /public/
@@ -60,7 +70,11 @@ npm run copy         # Copia in /public/
 
 ### Tema Two
 ```bash
+<<<<<<< HEAD
 cd Themes/Two
+=======
+cd /var/www/html/_bases/base_saluteora/laravel/Themes/Two
+>>>>>>> 6ed19256f (.)
 npm install
 npm run build
 npm run copy
@@ -103,4 +117,8 @@ export default defineConfig({
 
 ---
 
+<<<<<<< HEAD
 **⚠️ RICORDA**: Il workflow dei temi è DIVERSO dal normale workflow Laravel. Sempre theme → build → copy → public!
+=======
+**⚠️ RICORDA**: Il workflow dei temi è DIVERSO dal normale workflow Laravel. Sempre theme → build → copy → public!
+>>>>>>> 6ed19256f (.)

@@ -13,41 +13,57 @@ return [
         'name' => [
             'label' => 'Nome',
             'helper' => 'Nome univoco del template',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'subject' => [
             'label' => 'Oggetto',
             'helper' => 'Oggetto della notifica',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'type' => [
             'label' => 'Tipo',
             'helper' => 'Tipo di notifica',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'body_text' => [
             'label' => 'Testo Semplice',
             'helper' => 'Versione testo semplice della notifica',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'body_html' => [
             'label' => 'HTML',
             'helper' => 'Versione HTML della notifica',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'preview_data' => [
             'label' => 'Dati di Anteprima',
             'helper' => 'Dati JSON per l\'anteprima',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -63,6 +79,14 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'columns' => [
@@ -82,6 +106,9 @@ return [
             'push' => 'Notifica Push',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Notification Template',
     'plural_label' => 'Notification Template (Plurale)',
+=======
+>>>>>>> 6ed19256f (.)
 ];

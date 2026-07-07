@@ -4,10 +4,17 @@ declare(strict_types=1);
 
 namespace Modules\Employee\Models;
 
+<<<<<<< HEAD
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\Employee\Database\Factories\TimeRecordFactory;
+=======
+use Modules\Employee\Database\Factories\TimeRecordFactory;
+use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+>>>>>>> 6ed19256f (.)
 use Modules\TechPlanner\Models\Profile;
 use Modules\User\Models\User;
 
@@ -37,7 +44,10 @@ use Modules\User\Models\User;
  * @property-read string $formatted_time
  * @property-read string $formatted_timestamp
  * @property-read Profile|null $updater
+<<<<<<< HEAD
  *
+=======
+>>>>>>> 6ed19256f (.)
  * @method static Builder<static>|TimeRecord forDate(\Carbon\Carbon $date)
  * @method static Builder<static>|TimeRecord forUser(int $userId)
  * @method static Builder<static>|TimeRecord newModelQuery()
@@ -45,11 +55,16 @@ use Modules\User\Models\User;
  * @method static Builder<static>|TimeRecord ofType(string $type)
  * @method static Builder<static>|TimeRecord query()
  * @method static Builder<static>|TimeRecord valid()
+<<<<<<< HEAD
  *
  * @property-read Profile|null $deleter
  *
  * @method static TimeRecordFactory factory($count = null, $state = [])
  *
+=======
+ * @property-read Profile|null $deleter
+ * @method static TimeRecordFactory factory($count = null, $state = [])
+>>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class TimeRecord extends BaseModel

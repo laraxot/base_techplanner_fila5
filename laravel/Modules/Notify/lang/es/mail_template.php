@@ -19,8 +19,11 @@ return [
         'id' => [
             'label' => 'ID',
             'helper_text' => 'Identificador único de la plantilla',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'mailable' => [
             'label' => 'Clase Mailable',
@@ -28,7 +31,10 @@ return [
             'help' => 'La clase PHP que maneja el envío de correos electrónicos',
             'helper_text' => 'Clase PHP que gestiona el envío de correos electrónicos',
             'description' => 'mailable',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'subject' => [
             'label' => 'Asunto',
@@ -36,7 +42,10 @@ return [
             'help' => 'El asunto que aparecerá en el correo electrónico',
             'helper_text' => 'Asunto del correo electrónico',
             'description' => 'subject',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'html_template' => [
             'label' => 'Contenido HTML',
@@ -44,7 +53,10 @@ return [
             'help' => 'El contenido del correo electrónico en formato HTML',
             'helper_text' => 'Contenido HTML de la plantilla de correo electrónico',
             'description' => 'html_template',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'text_template' => [
             'label' => 'Contenido de Texto',
@@ -52,57 +64,82 @@ return [
             'help' => 'Versión de texto del correo electrónico para clientes que no admiten HTML',
             'helper_text' => 'Versión de texto de la plantilla de correo electrónico',
             'description' => 'text_template',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'version' => [
             'label' => 'Versión',
             'help' => 'Número de versión de la plantilla',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'created_at' => [
             'label' => 'Creado el',
             'helper_text' => 'Fecha de creación de la plantilla',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'updated_at' => [
             'label' => 'Última Modificación',
             'helper_text' => 'Fecha de la última modificación de la plantilla',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'from_email' => [
             'label' => 'Email del remitente',
             'helper_text' => 'Dirección de correo electrónico del remitente',
             'placeholder' => 'noreply@ejemplo.com',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'from_name' => [
             'label' => 'Nombre del remitente',
             'helper_text' => 'Nombre mostrado del remitente',
             'placeholder' => 'Nombre de la Empresa',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'variables' => [
             'label' => 'Variables disponibles',
             'helper_text' => 'Lista de variables que se pueden utilizar en la plantilla',
             'placeholder' => 'ej: {{name}}, {{email}}',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'is_markdown' => [
             'label' => 'Usar Markdown',
             'helper_text' => 'Indica si la plantilla utiliza sintaxis Markdown',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'status' => [
             'label' => 'Estado',
             'helper_text' => 'Estado actual de la plantilla',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
         ],
@@ -141,27 +178,56 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+        ],
+        'layout' => [
+            'label' => 'layout',
+>>>>>>> 6ed19256f (.)
         ],
         'slug' => [
             'label' => 'slug',
             'description' => 'slug',
             'helper_text' => 'slug',
             'placeholder' => 'slug',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'name' => [
             'description' => 'Nombre de la plantilla',
             'helper_text' => 'Nombre descriptivo para identificar la plantilla',
             'placeholder' => 'Ej: Bienvenida, Confirmación de pedido, Restablecer contraseña',
             'label' => 'Nombre de la Plantilla',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'params' => [
             'label' => 'Parámetros',
             'helper_text' => 'Ingrese los parámetros separados por comas que se pueden utilizar en la plantilla',
             'placeholder' => 'name, email, date, company',
             'description' => 'Parámetros disponibles para la plantilla de correo electrónico',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'filters' => [
@@ -291,6 +357,9 @@ return [
     'model' => [
         'label' => 'plantilla de correo',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

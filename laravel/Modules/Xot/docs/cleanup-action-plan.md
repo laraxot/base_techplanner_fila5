@@ -1,7 +1,10 @@
 # Documentation Cleanup & Reorganization - Action Plan
 
 **Date**: 2025-10-17
+<<<<<<< HEAD
 **Date**: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 **Status**: 🐮 SUPER MUCCA MODE ACTIVATED
 **Scope**: Complete documentation overhaul across all modules and themes
 
@@ -12,7 +15,10 @@
 - Multiple duplicate files with variations (file.md, file_backup.md, file-duplicate.md)
 - Inconsistent naming (kebab-case, snake_case, PascalCase mixed)
 - Date-suffixed files (dry-kiss-analysis-2025-10-15.md)
+<<<<<<< HEAD
 - Date-suffixed files (dry-kiss-analysis-[DATE].md)
+=======
+>>>>>>> 6ed19256f (.)
 - Outdated/obsolete documentation
 - Missing documentation for core features
 
@@ -24,7 +30,10 @@
 2. ❌ **snake_case**: `model_architecture.md`
 3. ❌ **PascalCase**: `ModelArchitecture.md`
 4. ❌ **Dates**: `analysis-2025-10-15.md`
+<<<<<<< HEAD
 4. ❌ **Dates**: `analysis-[DATE].md`
+=======
+>>>>>>> 6ed19256f (.)
 5. ❌ **Duplicates**: `file-duplicate.md`, `file-backup.md`
 
 ## 🎯 Phased Approach
@@ -57,7 +66,11 @@ For each module, create/update:
 2. **Rename files** - Apply kebab-case consistently
 3. **Remove dates** - Update content, remove date from filename
 4. **Consolidate** - Merge similar/overlapping docs
+<<<<<<< HEAD
 5. **Archive obsolete** - Move to `docs/archived/` if needed
+=======
+5. **Archive obsolete** - Move to `docs/archive/` if needed
+>>>>>>> 6ed19256f (.)
 
 ### Phase 5: Quality Assurance
 1. PHPStan level 10 on all modified code
@@ -76,7 +89,11 @@ Based on importance and interdependencies:
 3. **Tenant** - Multi-tenancy
 
 ### Tier 2 - Major Business Logic
+<<<<<<< HEAD
 4. **healthcare_app** - Survey management (main application)
+=======
+4. **Quaeris** - Survey management (main application)
+>>>>>>> 6ed19256f (.)
 5. **Limesurvey** - Survey integration
 6. **Cms** - Content management
 7. **Notify** - Notifications (email/SMS)
@@ -149,7 +166,11 @@ done
 
 ## 📝 Notes
 
+<<<<<<< HEAD
 - Keep `docs/archived/` for historical documentation
+=======
+- Keep `docs/archive/` for historical documentation
+>>>>>>> 6ed19256f (.)
 - Document reasons for major architectural decisions
 - Include practical examples in all guides
 - Link related documentation between modules
@@ -157,4 +178,8 @@ done
 
 ---
 
+<<<<<<< HEAD
 **Next Step**: Begin Phase 2 - Module Code Analysis (starting with Xot)
+=======
+**Next Step**: Begin Phase 2 - Module Code Analysis (starting with Xot)
+>>>>>>> 6ed19256f (.)

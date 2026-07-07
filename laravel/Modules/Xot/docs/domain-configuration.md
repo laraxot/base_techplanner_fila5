@@ -76,6 +76,7 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 ```
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Configurazione Generale](configuration.md)
 - [Risoluzione dei Loghi](logo_resolution.md) - **IMPORTANTE**: Processo dettagliato di risoluzione dei loghi
 - [Gestione Asset](assets.md)
@@ -97,6 +98,8 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 - [Documentazione UI](../../ui/docs/configuration.md)
 - [Documentazione Media](../../media/docs/assets.md)
 - [Documentazione Temi](../../cms/docs/theming.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Configurazione Generale](CONFIGURATION.md)
 - [Risoluzione dei Loghi](LOGO_RESOLUTION.md) - **IMPORTANTE**: Processo dettagliato di risoluzione dei loghi
 - [Gestione Asset](assets.md)
@@ -120,8 +123,11 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 - [Documentazione Temi](../../Cms/docs/theming.md)
 - [Standard Interfaccia](../../../docs/standards/interface_guidelines.md)
 - [Best Practices](../../../docs/standards/best_practices.md)
+<<<<<<< HEAD
 - [Standard Interfaccia](../../../../docs/standards/interface_guidelines.md)
 - [Best Practices](../../../../docs/standards/best_practices.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 # Configurazione Basata sul Dominio
 
@@ -193,6 +199,11 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 
 ## Collegamenti
 - [Configurazione Generale](CONFIGURATION.md)
+<<<<<<< HEAD
 - [Configurazione Generale](configuration.md)
 - [Gestione Asset](assets.md)
 - [Struttura Temi](themes.md)
+=======
+- [Gestione Asset](assets.md)
+- [Struttura Temi](themes.md)
+>>>>>>> 6ed19256f (.)

@@ -126,7 +126,10 @@ All notable changes to `:package_name` will be documented in this file.
 
 ### Documenti Correlati
 - [README.md](./docs/README.md) - Entry point
+<<<<<<< HEAD
 - [README.md](./docs/README.md) - Entry point
+=======
+>>>>>>> 6ed19256f (.)
 - [File Locking Pattern](./docs/file-locking-pattern.md) - Nuova regola
 - [Architecture Rules](./docs/laraxot-architecture-rules.md) - Regole base
 - [Merge Conflict Resolution](./docs/merge-conflict-resolution-2025-11-04.md) - Latest fix
@@ -141,4 +144,8 @@ All notable changes to `:package_name` will be documented in this file.
 
 **Maintained by:** Team Laraxot PTVX
 **Format:** [Keep a Changelog](https://keepachangelog.com/)
+<<<<<<< HEAD
 **Versioning:** [Semantic Versioning](https://semver.org/)
+=======
+**Versioning:** [Semantic Versioning](https://semver.org/)
+>>>>>>> 6ed19256f (.)

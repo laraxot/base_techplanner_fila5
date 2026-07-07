@@ -58,6 +58,7 @@ use Webmozart\Assert\Assert;
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $deleter
  * @property-read ProfileContract|null $updater
+<<<<<<< HEAD
  * @property string|null $user_id
  * @property string $file_name
  * @property int|null $file_size
@@ -69,6 +70,8 @@ use Webmozart\Assert\Assert;
  * @method static Builder<static>|TemporaryUpload whereMimeType($value)
  * @method static Builder<static>|TemporaryUpload whereStatus($value)
  * @method static Builder<static>|TemporaryUpload whereUserId($value)
+=======
+>>>>>>> 6ed19256f (.)
  *
  * @mixin \Eloquent
  */
@@ -82,6 +85,10 @@ class TemporaryUpload extends BaseModel implements HasMedia
 
     public static ?string $disk = null;
 
+<<<<<<< HEAD
+=======
+    /** @var string */
+>>>>>>> 6ed19256f (.)
     protected $connection = 'media';
 
     /**
@@ -92,6 +99,7 @@ class TemporaryUpload extends BaseModel implements HasMedia
     public static function findByMediaUuid(?string $mediaUuid): ?self
     {
         Assert::string($mediaModelClass = config('media-library.media_model'));
+<<<<<<< HEAD
         Assert::classExists($mediaModelClass);
         Assert::true(is_a($mediaModelClass, Media::class, true), 'media-library.media_model must be a Media model class');
 
@@ -100,6 +108,13 @@ class TemporaryUpload extends BaseModel implements HasMedia
 
         /**
          * @var Media|null $media
+=======
+
+        /**
+         * @var Media|null $media
+         *
+         * @phpstan-ignore-next-line
+>>>>>>> 6ed19256f (.)
          */
         $media = $mediaModelClass::query()->where('uuid', $mediaUuid)->first();
 

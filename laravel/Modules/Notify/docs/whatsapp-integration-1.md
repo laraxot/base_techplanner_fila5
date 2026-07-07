@@ -2,7 +2,11 @@
 
 ## Panoramica
 
+<<<<<<< HEAD
 Questo documento descrive l'architettura e l'implementazione dell'integrazione WhatsApp nel modulo Notify di <nome progetto>, seguendo gli stessi standard e pattern utilizzati per l'invio di email e SMS.
+=======
+Questo documento descrive l'architettura e l'implementazione dell'integrazione WhatsApp nel modulo Notify di SaluteOra, seguendo gli stessi standard e pattern utilizzati per l'invio di email e SMS.
+>>>>>>> 6ed19256f (.)
 
 ## Architettura
 
@@ -399,7 +403,11 @@ $action = app(SendTwilioWhatsAppAction::class);
 
 $whatsAppData = new WhatsAppData(
     to: '+393401234567',
+<<<<<<< HEAD
     body: 'Questo è un messaggio di test da <nome progetto>',
+=======
+    body: 'Questo è un messaggio di test da SaluteOra',
+>>>>>>> 6ed19256f (.)
 );
 
 $result = $action->execute($whatsAppData);
@@ -532,7 +540,11 @@ L'integrazione WhatsApp  segue gli stessi pattern e standard utilizzati per l'in
 3. **Estensibilità**: È facile aggiungere nuovi provider WhatsApp
 4. **Testabilità**: Le azioni sono facilmente testabili grazie all'interfaccia comune
 
+<<<<<<< HEAD
 Seguendo questa architettura, l'integrazione WhatsApp si inserisce perfettamente nell'ecosistema di notifiche di <nome progetto>, mantenendo la coerenza con le altre modalità di comunicazione.
+=======
+Seguendo questa architettura, l'integrazione WhatsApp si inserisce perfettamente nell'ecosistema di notifiche di SaluteOra, mantenendo la coerenza con le altre modalità di comunicazione.
+>>>>>>> 6ed19256f (.)
 
 ---
 

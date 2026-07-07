@@ -6,12 +6,18 @@ namespace Modules\Media\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
 use Illuminate\Http\UploadedFile;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 use function in_array;
 
 class FileExtensionRule implements Rule
 {
+<<<<<<< HEAD
     /** @var array<int, string> */
+=======
+>>>>>>> 6ed19256f (.)
     protected array $validExtensions = [];
 
     /**
@@ -22,6 +28,10 @@ class FileExtensionRule implements Rule
         $this->validExtensions = array_map(
             /**
              * @param  mixed  $ext
+<<<<<<< HEAD
+=======
+             *
+>>>>>>> 6ed19256f (.)
              * @return lowercase-string
              */
             static fn ($ext): string => mb_strtolower((string) $ext),

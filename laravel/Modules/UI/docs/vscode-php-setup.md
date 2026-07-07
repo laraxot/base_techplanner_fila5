@@ -132,7 +132,21 @@
             "request": "launch",
             "port": 9003,
             "pathMappings": {
+<<<<<<< HEAD
                 "/ tasks.json
+=======
+                "/var/www/html/base_<nome progetto>": "${workspaceFolder}"
+            }
+        }
+    ]
+}
+```
+
+## Tasks Personalizzati
+
+```json
+// tasks.json
+>>>>>>> 6ed19256f (.)
 {
     "version": "2.0.0",
     "tasks": [
@@ -360,7 +374,21 @@
             "request": "launch",
             "port": 9003,
             "pathMappings": {
+<<<<<<< HEAD
                 "/ tasks.json
+=======
+                "/var/www/html/base_<nome progetto>": "${workspaceFolder}"
+            }
+        }
+    ]
+}
+```
+
+## Tasks Personalizzati
+
+```json
+// tasks.json
+>>>>>>> 6ed19256f (.)
 {
     "version": "2.0.0",
     "tasks": [

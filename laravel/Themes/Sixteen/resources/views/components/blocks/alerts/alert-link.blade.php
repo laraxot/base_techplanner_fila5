@@ -83,8 +83,12 @@
                         class="inline-flex items-center ml-1 font-medium {$variantClasses['link']} underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                     >
                         {{ $link-text }}
+<<<<<<< HEAD
                         <x-filament::icon icon="heroicon-o-arrow-right" class="ml-1 h-3 w-3" />
 f7ac8eda (.)
+=======
+                        <x-heroicon-o-arrow-right class="ml-1 h-3 w-3" />
+>>>>>>> 6ed19256f (.)
                     </a>
                 @endif
             </div>

@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 use Modules\Lang\Models\Post;
 use Modules\Lang\Models\Translation;
 use Modules\Lang\Models\TranslationFile;
@@ -165,6 +168,10 @@ describe('Lang Business Logic', function () {
             'user_id' => $user->id,
             'filename' => 'welcome.php',
             'locale' => 'en',
+<<<<<<< HEAD
+=======
+            'content' => '<?php return ["welcome" => "Welcome"];',
+>>>>>>> 6ed19256f (.)
         ]);
 
         expect($translationFile)

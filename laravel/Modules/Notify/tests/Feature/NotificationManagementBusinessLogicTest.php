@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 use Modules\Notify\Helpers\ConfigHelper;
 use Modules\Notify\Models\Contact;
 use Modules\Notify\Models\Notification;

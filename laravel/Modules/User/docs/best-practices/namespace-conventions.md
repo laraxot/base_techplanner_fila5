@@ -62,7 +62,11 @@ class LoginWidget extends XotBaseWidget
     protected static string $view = 'user::filament.widgets.auth.login';
 }
 
+<<<<<<< HEAD
 class PasswordResetWidget extends XotBaseWidget  
+=======
+class PasswordResetWidget extends XotBaseWidget
+>>>>>>> 6ed19256f (.)
 {
     protected static string $view = 'user::filament.widgets.auth.password.reset';
 }
@@ -134,7 +138,11 @@ Themes/One/
 class UserWidget extends XotBaseWidget
 {
     protected static string $view = 'pub_theme::filament.widgets.user.profile';
+<<<<<<< HEAD
     //                               ^^^^^^^^^^ 
+=======
+    //                               ^^^^^^^^^^
+>>>>>>> 6ed19256f (.)
     //                               Dovrebbe essere user::
 }
 ```
@@ -190,9 +198,16 @@ Se l'override del tema non funziona:
 - [Documentazione Laravel View](https://laravel.com/project_docs/views)
 - [Regole Struttura Directory Auth](../../../.windsurf/rules/translations.md#regola-critica-struttura-directory-auth-laravel)
 - [Documentazione Tema One](../../../Themes/One/project_docs/README.md)
+<<<<<<< HEAD
 - [Documentazione Tema One](../../../themes/one/project_docs/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ---
 
 *Documento creato: Dicembre 2024*
+<<<<<<< HEAD
 *Ultimo aggiornamento: Dicembre 2024*
+=======
+*Ultimo aggiornamento: Dicembre 2024*
+>>>>>>> 6ed19256f (.)

@@ -143,5 +143,8 @@ grep -r "PassportServiceProvider" laravel/Modules/User/module.json
 - [DRY Principle](../../../docs/dry-kiss-principles.md)
 
 *Ultimo aggiornamento: Gennaio 2026*
+<<<<<<< HEAD
 - [Service Provider Architecture](../../user/docs/service_provider_architecture.md)
 - [DRY Principle](../../../../docs/dry-kiss-principles.md)
+=======
+>>>>>>> 6ed19256f (.)

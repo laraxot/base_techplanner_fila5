@@ -216,8 +216,15 @@ $success = $action->execute($client);
 ---
 
 **Last Updated**: December 2025
+<<<<<<< HEAD
 
 **Architectural Version**: 2.0
 **Compliance**: PHPStan Level 10 ✅
 **Patterns**: Strategy, Command, Adapter, Observer ✅
 **Principles**: SoC, DRY, Interface Segregation ✅
+=======
+**Architectural Version**: 2.0
+**Compliance**: PHPStan Level 10 ✅
+**Patterns**: Strategy, Command, Adapter, Observer ✅
+**Principles**: SoC, DRY, Interface Segregation ✅
+>>>>>>> 6ed19256f (.)

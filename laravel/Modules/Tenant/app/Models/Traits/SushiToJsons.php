@@ -13,10 +13,16 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\File;
 use InvalidArgumentException;
 use Modules\Tenant\Services\TenantService;
+<<<<<<< HEAD
 use Sushi\Sushi;
 
 use function Safe\json_encode;
 use function Safe\unlink;
+=======
+use function Safe\json_encode;
+use function Safe\unlink;
+use Sushi\Sushi;
+>>>>>>> 6ed19256f (.)
 
 trait SushiToJsons
 {
@@ -29,7 +35,11 @@ trait SushiToJsons
     {
         $tbl = $this->getTable();
         $path = TenantService::filePath('database/content/'.$tbl);
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 6ed19256f (.)
         $files = File::glob($path.'/*.json');
 
         /** @var array<int, array<string, mixed>> $rows */
@@ -46,7 +56,11 @@ trait SushiToJsons
             $item = [];
 
             // Ensure schema is an array
+<<<<<<< HEAD
             $schema = $this->resolveSchema();
+=======
+            $schema = $this->schema ?? [];
+>>>>>>> 6ed19256f (.)
 
             /** @var array<string, mixed> $schema */
             foreach ($schema as $name => $type) {
@@ -75,7 +89,14 @@ trait SushiToJsons
         return TenantService::filePath($filename);
     }
 
+<<<<<<< HEAD
     public function getConnectionName(): ?string
+=======
+    /**
+     * @return ?string
+     */
+    public function getConnectionName()
+>>>>>>> 6ed19256f (.)
     {
         return parent::getConnectionName();
     }
@@ -111,10 +132,19 @@ trait SushiToJsons
             $item = [];
 
             // PHPStan Level 10: Type-safe schema access
+<<<<<<< HEAD
             $schema = $model->resolveSchema();
             if ($schema === []) {
                 throw new Exception('Schema property must be iterable');
             }
+=======
+            if (! isset($model->schema) || ! is_iterable($model->schema)) {
+                throw new Exception('Schema property must be iterable');
+            }
+
+            /** @var iterable<string, mixed> $schema */
+            $schema = $model->schema;
+>>>>>>> 6ed19256f (.)
             foreach ($schema as $name => $type) {
                 $value = $data[$name] ?? null;
                 $item[$name] = $value;
@@ -173,6 +203,7 @@ trait SushiToJsons
         // ----------------------
     }
 
+<<<<<<< HEAD
     /**
      * @return array<string, mixed>
      */
@@ -195,6 +226,8 @@ trait SushiToJsons
         return $schemaValue;
     }
 
+=======
+>>>>>>> 6ed19256f (.)
     // end function boot
 }
 

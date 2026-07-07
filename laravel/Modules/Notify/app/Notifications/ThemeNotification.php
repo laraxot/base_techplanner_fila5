@@ -26,7 +26,12 @@ class ThemeNotification extends Notification implements ShouldQueue
     public function __construct(
         public string $name,
         public array $view_params,
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> 6ed19256f (.)
 
     /**
      * Get the notification's delivery channels.

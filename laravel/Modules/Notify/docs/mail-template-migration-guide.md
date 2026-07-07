@@ -8,12 +8,18 @@ Questo documento descrive l'implementazione del campo `slug` nella tabella `mail
 
 Il file di migrazione principale per la tabella `mail_templates` è:
 ```
+<<<<<<< HEAD
 Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php
 Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php
 Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php
 Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php
 Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php
 Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php
+=======
+/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php
+/var/www/html/saluteora/laravel/Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php
+/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php
+>>>>>>> 6ed19256f (.)
 ```
 
 Questo file è implementato usando `XotBaseMigration`, che utilizza un pattern evolutivo che differisce dalle migrazioni standard di Laravel.
@@ -154,7 +160,11 @@ Questo documento descrive l'implementazione del campo `slug` nella tabella `mail
 
 Il file di migrazione principale per la tabella `mail_templates` è:
 ```
+<<<<<<< HEAD
 Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php
+=======
+/var/www/html/<directory progetto>/laravel/Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php
+>>>>>>> 6ed19256f (.)
 ```
 
 Questo file è implementato usando `XotBaseMigration`, che utilizza un pattern evolutivo che differisce dalle migrazioni standard di Laravel.
@@ -284,4 +294,8 @@ Per una comprensione completa, consultare anche:
 
 ## Conclusione
 
+<<<<<<< HEAD
 Seguire il pattern di migrazione `XotBaseMigration` è essenziale per mantenere la coerenza in tutto il progetto. L'implementazione del campo `slug` nella tabella `mail_templates` dimostra l'applicazione corretta di questo pattern e offre numerosi vantaggi per l'usabilità del sistema di template email.
+=======
+Seguire il pattern di migrazione `XotBaseMigration` è essenziale per mantenere la coerenza in tutto il progetto. L'implementazione del campo `slug` nella tabella `mail_templates` dimostra l'applicazione corretta di questo pattern e offre numerosi vantaggi per l'usabilità del sistema di template email.
+>>>>>>> 6ed19256f (.)

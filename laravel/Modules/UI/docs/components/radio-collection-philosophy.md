@@ -94,7 +94,11 @@ The component design reflects principles from game theory:
 - Clear rules of engagement (how selection works)
 - Immediate feedback for actions
 - Consistent application of rules
+<<<<<<< HEAD
 - <nome progetto>able outcomes for interactions
+=======
+- Predictable outcomes for interactions
+>>>>>>> 6ed19256f (.)
 
 ### Information Architecture
 
@@ -126,4 +130,8 @@ The component should evolve through:
 
 The RadioCollection component is not merely a UI element but a complex system that bridges user intent and application state. Its design must balance technical considerations with human factors, composability with reliability, and simplicity with power.
 
+<<<<<<< HEAD
 When properly implemented, it becomes invisible—users don't think about the component itself, only about the choice they're making. This invisibility of interface is the ultimate goal of thoughtful component design.
+=======
+When properly implemented, it becomes invisible—users don't think about the component itself, only about the choice they're making. This invisibility of interface is the ultimate goal of thoughtful component design.
+>>>>>>> 6ed19256f (.)

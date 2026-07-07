@@ -475,8 +475,12 @@ Utilizzo:
 ```blade
 <div class="container mx-auto p-4">
   <h1 class="text-2xl font-bold mb-6">Dashboard Paziente</h1>
+<<<<<<< HEAD
   
   
+=======
+
+>>>>>>> 6ed19256f (.)
   <!-- Informazioni Paziente -->
   <div class="card bg-base-100 shadow-xl mb-6">
     <div class="card-body">
@@ -499,16 +503,24 @@ Utilizzo:
       </div>
     </div>
   </div>
+<<<<<<< HEAD
   
   
+=======
+
+>>>>>>> 6ed19256f (.)
   <!-- Tabs -->
   <div class="tabs mb-4">
     <a class="tab tab-bordered tab-active">Appuntamenti</a>
     <a class="tab tab-bordered">Documenti</a>
     <a class="tab tab-bordered">ISEE</a>
   </div>
+<<<<<<< HEAD
   
   
+=======
+
+>>>>>>> 6ed19256f (.)
   <!-- Contenuto Tab -->
   <div class="overflow-x-auto">
     <table class="table w-full">
@@ -551,10 +563,13 @@ Utilizzo:
 ```blade
 <div class="container mx-auto p-4 max-w-md">
   <h1 class="text-2xl font-bold mb-6">Registrazione Paziente</h1>
+<<<<<<< HEAD
   
   <form action="{{ route('patients.store') }}" method="POST">
     @csrf
     
+=======
+>>>>>>> 6ed19256f (.)
 
   <form action="{{ route('patients.store') }}" method="POST">
     @csrf
@@ -570,8 +585,12 @@ Utilizzo:
         </label>
       @enderror
     </div>
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     <div class="form-control w-full mb-4">
       <label class="label">
         <span class="label-text">Cognome</span>
@@ -583,8 +602,12 @@ Utilizzo:
         </label>
       @enderror
     </div>
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     <div class="form-control w-full mb-4">
       <label class="label">
         <span class="label-text">Codice Fiscale</span>
@@ -596,8 +619,12 @@ Utilizzo:
         </label>
       @enderror
     </div>
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     <div class="form-control w-full mb-4">
       <label class="label">
         <span class="label-text">Email</span>
@@ -609,6 +636,7 @@ Utilizzo:
         </label>
       @enderror
     </div>
+<<<<<<< HEAD
     
     <div class="form-control w-full mb-6">
       <label class="label cursor-pointer">
@@ -617,6 +645,8 @@ Utilizzo:
       </label>
     </div>
     
+=======
+>>>>>>> 6ed19256f (.)
 
     <div class="form-control w-full mb-6">
       <label class="label cursor-pointer">
@@ -1270,4 +1300,7 @@ Utilizzo:
 ---
 
 Per ulteriori informazioni sull'implementazione di DaisyUI in il progetto o per segnalare problemi, contattare il team di sviluppo.
+<<<<<<< HEAD
 Per ulteriori informazioni sull'implementazione di DaisyUI in il progetto o per segnalare problemi, contattare il team di sviluppo. 
+=======
+>>>>>>> 6ed19256f (.)

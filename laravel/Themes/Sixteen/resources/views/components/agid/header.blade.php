@@ -128,8 +128,13 @@
     </div>
     
     {{-- Navigazione Principale --}}
+<<<<<<< HEAD
     <div class="it-nav-wrapper" data-sixteen-mobile-nav>
         <div class="it-header-navbar-wrapper" data-sixteen-mobile-nav>
+=======
+    <div class="it-nav-wrapper">
+        <div class="it-header-navbar-wrapper">
+>>>>>>> 6ed19256f (.)
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -140,19 +145,32 @@
                                 aria-controls="nav" 
                                 aria-expanded="false" 
                                 aria-label="{{ __('Apri menu di navigazione') }}"
+<<<<<<< HEAD
                                 data-sixteen-mobile-nav-toggle
                                 data-sixteen-mobile-nav-target="#nav"
+=======
+                                data-bs-toggle="navbarcollapsible"
+                                data-bs-target="#nav"
+>>>>>>> 6ed19256f (.)
                             >
                                 <svg class="icon"><use href="#it-burger"></use></svg>
                             </button>
                             
+<<<<<<< HEAD
                             <div class="navbar-collapsable" id="nav" data-sixteen-mobile-nav-panel>
                                 <div class="overlay" data-sixteen-mobile-nav-overlay hidden></div>
+=======
+                            <div class="navbar-collapsable" id="nav">
+                                <div class="overlay"></div>
+>>>>>>> 6ed19256f (.)
                                 <div class="close-div">
                                     <button 
                                         class="btn close-menu" 
                                         type="button"
+<<<<<<< HEAD
                                         data-sixteen-mobile-nav-close
+=======
+>>>>>>> 6ed19256f (.)
                                         aria-label="{{ __('Chiudi menu') }}"
                                     >
                                         <svg class="icon"><use href="#it-close-big"></use></svg>

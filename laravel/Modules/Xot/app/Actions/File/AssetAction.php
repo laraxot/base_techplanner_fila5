@@ -20,11 +20,19 @@ class AssetAction
     /**
      * Gestisce i percorsi degli asset, copiandoli nella directory pubblica se necessario.
      *
+<<<<<<< HEAD
      * @param string $path Il percorso dell'asset
      *
      * @throws \Exception Se il file sorgente non esiste o non può essere copiato
      *
      * @return string Il percorso pubblico dell'asset
+=======
+     * @param  string  $path  Il percorso dell'asset
+     *
+     * @return string Il percorso pubblico dell'asset
+     *
+     * @throws Exception Se il file sorgente non esiste o non può essere copiato
+>>>>>>> 6ed19256f (.)
      */
     public function execute(string $path): string
     {
@@ -109,13 +117,21 @@ class AssetAction
             if (isRunningTestBench()) {
                 return $originalPath;
             }
+<<<<<<< HEAD
             throw new \Exception('file ['.$filename_from.'] not Exists , path ['.$originalPath.']');
+=======
+            throw new Exception('file ['.$filename_from.'] not Exists , path ['.$originalPath.']');
+>>>>>>> 6ed19256f (.)
         }
 
         $assetPath = 'assets/'.$ns.'/'.$ns_after;
         $filename_to = app(FixPathAction::class)->execute(public_path($assetPath));
 
+<<<<<<< HEAD
         $forceCopy = 'production' !== app()->environment();
+=======
+        $forceCopy = app()->environment() !== 'production';
+>>>>>>> 6ed19256f (.)
         $this->copyAsset($filename_from, $filename_to, $assetPath, $forceCopy);
 
         $asset = Str::replace(url(''), '', asset($assetPath));
@@ -134,7 +150,11 @@ class AssetAction
 
             try {
                 File::copy($from, $to);
+<<<<<<< HEAD
             } catch (\Exception $e) {
+=======
+            } catch (Exception $e) {
+>>>>>>> 6ed19256f (.)
                 $this->throwCopyException($e, $path, $from, $to);
             }
         }
@@ -153,6 +173,7 @@ class AssetAction
     /**
      * Throws a formatted exception for a file copy error.
      */
+<<<<<<< HEAD
     private function throwCopyException(\Exception $e, string $path, string $from, string $to): void
     {
         throw new \Exception('message:['.$e->getMessage().']
@@ -160,5 +181,18 @@ class AssetAction
             path ['.$path.']
             file from ['.$from.']
             file to ['.$to.']', $e->getCode(), $e, );
+=======
+    private function throwCopyException(Exception $e, string $path, string $from, string $to): void
+    {
+        throw new Exception(
+            'message:['.$e->getMessage().']
+            public_path ['.public_path().']
+            path ['.$path.']
+            file from ['.$from.']
+            file to ['.$to.']',
+            $e->getCode(),
+            $e,
+        );
+>>>>>>> 6ed19256f (.)
     }
 }

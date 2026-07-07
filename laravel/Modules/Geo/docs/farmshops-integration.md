@@ -437,4 +437,8 @@ class TicketMap extends Component
 **Estimated Time**: 3 weeks
 **Impact**: MAJOR UX improvement
 
+<<<<<<< HEAD
 *"Integrando le migliori pratiche da farmshops.eu, FixCity avrà una mappa interattiva di livello mondiale!"*
+=======
+*"Integrando le migliori pratiche da farmshops.eu, FixCity avrà una mappa interattiva di livello mondiale!"*
+>>>>>>> 6ed19256f (.)

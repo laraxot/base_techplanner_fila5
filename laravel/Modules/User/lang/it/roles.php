@@ -6,6 +6,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'id',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -47,4 +48,18 @@ return [
             'label' => 'Elimina Roles',
         ],
     ],
+=======
+        ],
+        'name' => [
+            'label' => 'name',
+        ],
+        'team_id' => [
+            'label' => 'team_id',
+        ],
+    ],
+    'navigation' => [],
+    'label' => '',
+    'plural_label' => '',
+    'actions' => [],
+>>>>>>> 6ed19256f (.)
 ];

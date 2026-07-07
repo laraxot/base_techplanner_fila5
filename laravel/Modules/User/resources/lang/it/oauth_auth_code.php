@@ -9,10 +9,13 @@ return [
         'icon' => 'heroicon-o-lock-closed',
         'sort' => 27,
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

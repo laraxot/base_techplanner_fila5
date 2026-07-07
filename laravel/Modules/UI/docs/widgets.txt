@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 module: theme
 topic: widgets
@@ -5,3 +6,6 @@ canonical: ../../../Themes/docs/shared-components/widgets.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/widgets.md
+=======
+https://ahmedash.dev/blog/laravel-core-bits/volt-live-users-stats/
+>>>>>>> 6ed19256f (.)

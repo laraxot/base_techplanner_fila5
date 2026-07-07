@@ -284,7 +284,11 @@ private function getStudiosForLocation(Get $get): Collection
         return collect();
     }
 
+<<<<<<< HEAD
     return \Modules\<nome progetto>\Models\Studio::whereHas('address', function($q) use ($cap, $province, $region) {
+=======
+    return \Modules\SaluteOra\Models\Studio::whereHas('address', function($q) use ($cap, $province, $region) {
+>>>>>>> 6ed19256f (.)
         $q->where('postal_code', $cap)
           ->where('administrative_area_level_3', $province)
           ->where('administrative_area_level_2', $region);
@@ -488,6 +492,7 @@ class StudioCardSelectorTest extends DuskTestCase
 
 ### Modulo UI
 - [Components Overview](./README.md)
+<<<<<<< HEAD
 - [Components Overview](./readme.md)
 - [Form Components Guide](../form-components.md)
 - [Accessibility Guidelines](../accessibility.md)
@@ -495,6 +500,14 @@ class StudioCardSelectorTest extends DuskTestCase
 ### Modulo <nome progetto>
 - [Studio Models](../../<nome progetto>/docs/models/studio-address-relationship.md)
 - [Widget Analysis](../../<nome progetto>/docs/widgets/find-doctor-widget-studio-step-analysis.md)
+=======
+- [Form Components Guide](../form-components.md)
+- [Accessibility Guidelines](../accessibility.md)
+
+### Modulo SaluteOra
+- [Studio Models](../../SaluteOra/docs/models/studio-address-relationship.md)
+- [Widget Analysis](../../SaluteOra/docs/widgets/find-doctor-widget-studio-step-analysis.md)
+>>>>>>> 6ed19256f (.)
 
 ### External References
 - [Filament Form Components](https://filamentphp.com/docs/forms/fields)
@@ -507,4 +520,8 @@ class StudioCardSelectorTest extends DuskTestCase
 **Reusability**: 🔄 High - Cross-module compatible
 **Complexity**: 🟡 Medium - Custom view with Alpine.js
 **Maintenance**: 🟢 Low - Well-documented and tested
+<<<<<<< HEAD
 **Last Updated**: January 2025
+=======
+**Last Updated**: January 2025
+>>>>>>> 6ed19256f (.)

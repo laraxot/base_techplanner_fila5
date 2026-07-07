@@ -5,8 +5,13 @@
 Questo caso d'uso esplora l'implementazione di un carrello della spesa utilizzando Event Sourcing in Laravel, basandosi sui progetti di Spatie. L'obiettivo è analizzare come l'Event Sourcing può essere applicato per gestire lo stato di un carrello della spesa, tracciando ogni modifica attraverso eventi.
 
 I progetti analizzati sono:
+<<<<<<< HEAD
 - **Laravel Shop Main** (``): Un'applicazione di riferimento per dimostrare il potere dell'Event Sourcing, con un carrello della spesa di base.
 - **Laravel Shop Command Bus** (``): Un pacchetto che fornisce un'implementazione più strutturata del carrello con Event Sourcing.
+=======
+- **Laravel Shop Main** (`/var/www/html/laravel-shop-main/`): Un'applicazione di riferimento per dimostrare il potere dell'Event Sourcing, con un carrello della spesa di base.
+- **Laravel Shop Command Bus** (`/var/www/html/laravel-shop-command-bus/`): Un pacchetto che fornisce un'implementazione più strutturata del carrello con Event Sourcing.
+>>>>>>> 6ed19256f (.)
 
 ## Obiettivo
 

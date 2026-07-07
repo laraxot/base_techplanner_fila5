@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Consigli e Best Practice - <nome progetto>ion Market
+=======
+# Consigli e Best Practice - Prediction Market
+>>>>>>> 6ed19256f (.)
 
 ## Refactoring e Miglioramenti
 - Separare sempre comandi (write) e query (read) secondo CQRS
@@ -19,4 +23,8 @@
 ## Errori Comuni
 - Non validare input lato comando
 - Non gestire la concorrenza sugli aggregate
+<<<<<<< HEAD
 - Dimenticare il rollback in caso di errore
+=======
+- Dimenticare il rollback in caso di errore
+>>>>>>> 6ed19256f (.)

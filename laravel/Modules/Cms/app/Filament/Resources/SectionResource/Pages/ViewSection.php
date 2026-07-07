@@ -11,13 +11,24 @@ use Modules\Lang\Filament\Resources\Pages\LangBaseViewRecord;
 
 class ViewSection extends LangBaseViewRecord
 {
+<<<<<<< HEAD
     public static string $resource = SectionResource::class;
+=======
+    protected static string $resource = SectionResource::class;
+>>>>>>> 6ed19256f (.)
 
     #[\Override]
     protected function getInfolistSchema(): array
     {
         // $view='pub_theme::components.sections.'.$this->record->slug;
         $view = 'cms::sections.preview';
+<<<<<<< HEAD
+=======
+        // @phpstan-ignore-next-line
+        if (! view()->exists($view)) {
+            throw new \Exception('View '.$view.' not found');
+        }
+>>>>>>> 6ed19256f (.)
 
         return [
             'preview' => Section::make('Anteprima')->schema([

@@ -146,7 +146,13 @@ Creare sistema di navigazione coerente:
 
 ---
 
+<<<<<<< HEAD
 **Stato**: In corso  
 **Priorità**: Alta  
 **Responsabile**: Sistema automatico  
+=======
+**Stato**: In corso
+**Priorità**: Alta
+**Responsabile**: Sistema automatico
+>>>>>>> 6ed19256f (.)
 **Deadline**: Immediata

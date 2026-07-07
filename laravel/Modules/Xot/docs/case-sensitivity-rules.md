@@ -92,7 +92,11 @@ I seguenti file sono stati eliminati perché violavano le regole:
 Per verificare che non ci siano duplicati case-insensitive nel modulo:
 
 ```bash
+<<<<<<< HEAD
 cd Modules/Xot
+=======
+cd /var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/Xot
+>>>>>>> 6ed19256f (.)
 python3 << 'EOF'
 import os
 from collections import defaultdict
@@ -194,6 +198,11 @@ EOF
 ## Update Log
 
 - **2025-11-04**: Initial documentation and cleanup
+<<<<<<< HEAD
 - **[DATE]**: Initial documentation and cleanup
   - Removed: `metatagdatatest.php`, `pest.php`, `xotbasecontroller.php`, `pt_br/`
   - Established rules and conventions
+=======
+  - Removed: `metatagdatatest.php`, `pest.php`, `xotbasecontroller.php`, `pt_br/`
+  - Established rules and conventions
+>>>>>>> 6ed19256f (.)

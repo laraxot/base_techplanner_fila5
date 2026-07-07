@@ -88,7 +88,11 @@ protected $fillable;
 // ✅ Target
 public function passes(string $_attribute, mixed $value): bool { }
 /** @var array<int, string> */
+<<<<<<< HEAD
 protected $fillable;
+=======
+protected array $fillable;
+>>>>>>> 6ed19256f (.)
 ```
 
 ### 🟢 Medium Priority
@@ -203,4 +207,7 @@ protected $fillable;
 
 **Next Review:** After Phase 1 completion
 **Last Updated:** 2025-11-12 08:15 UTC
+<<<<<<< HEAD
 **
+=======
+>>>>>>> 6ed19256f (.)

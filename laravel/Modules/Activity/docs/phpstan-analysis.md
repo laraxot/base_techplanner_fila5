@@ -222,6 +222,11 @@ Gli errori rimanenti sono principalmente:
 ---
 
 **Report generato**: 2025-10-10T12:40:18+02:00
+<<<<<<< HEAD
 **Report generato**: [DATE]T12:40:18+02:00
 **Analista**: Cascade AI
 **Prossimo modulo**: Blog
+=======
+**Analista**: Cascade AI
+**Prossimo modulo**: Blog
+>>>>>>> 6ed19256f (.)

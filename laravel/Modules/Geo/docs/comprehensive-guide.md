@@ -1,3 +1,47 @@
+<<<<<<< HEAD
+=======
+# Comprehensive Guide for Geo Module
+
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Installation](#installation)
+3. [Configuration](#configuration)
+4. [API Documentation](#api-documentation)
+5. [UI/UX Best Practices](#uiux-best-practices)
+6. [Performance Optimization](#performance-optimization)
+7. [Troubleshooting](#troubleshooting)
+8. [Examples](#examples)
+9. [Changelog](#changelog)
+
+## Introduction
+The Geo module provides geographic functionality including:
+- Map integration (Google Maps)
+- Location selection
+- Coordinate management
+- Geographic data services
+
+## Installation
+```bash
+composer require laraxot/module_geo_fila3
+```
+
+## Configuration
+### Google Maps API
+Add to `.env`:
+```env
+GOOGLE_MAPS_API_KEY=your_api_key
+```
+
+## API Documentation
+
+### Location Services
+```php
+use Modules\Geo\Services\LocationService;
+
+// Get coordinates from address
+$location = LocationService::getCoordinates('Rome, Italy');
+
+>>>>>>> 6ed19256f (.)
 // Get address from coordinates
 $address = LocationService::getAddress(41.9028, 12.4964);
 ```
@@ -75,6 +119,7 @@ MapComponent::make()
 
 ## Changelog
 See GitHub repository for full changelog.
+<<<<<<< HEAD
 ---
 module: theme
 topic: comprehensive-guide
@@ -82,3 +127,5 @@ canonical: ../../../Themes/docs/shared-components/COMPREHENSIVE_GUIDE.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/COMPREHENSIVE_GUIDE.md
+=======
+>>>>>>> 6ed19256f (.)

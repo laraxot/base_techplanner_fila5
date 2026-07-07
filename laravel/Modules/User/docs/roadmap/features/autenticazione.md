@@ -66,7 +66,12 @@ Sistema di autenticazione completo con supporto per multiple strategie di login,
 * [autenticazione.md](docs/roadmap/core/autenticazione.md)
 * [autenticazione.md](../../../User/docs/roadmap/features/autenticazione.md)
 * [autenticazione.md](../../../User/project_docs/roadmap/features/autenticazione.md)
+<<<<<<< HEAD
 * [autenticazione.md](../../../user/docs/roadmap/features/autenticazione.md)
 * [autenticazione.md](../../../user/project_docs/roadmap/features/autenticazione.md)
 ### Versione Incoming
 ---
+=======
+### Versione Incoming
+---
+>>>>>>> 6ed19256f (.)

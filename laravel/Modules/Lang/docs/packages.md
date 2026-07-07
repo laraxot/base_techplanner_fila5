@@ -6,18 +6,24 @@
 - [laraxot/module_xot_fila3](../Xot/docs/packages.md) - Modulo base per funzionalità comuni
 - [laraxot/module_ui](../UI/docs/packages.md) - Componenti UI e temi
 - [laraxot/module_tenant_fila3](../Tenant/docs/packages.md) - Gestione multi-tenant
+<<<<<<< HEAD
 - [laraxot/module_xot_fila5](../Xot/docs/packages.md) - Modulo base per funzionalità comuni
 - [laraxot/module_ui](../UI/docs/packages.md) - Componenti UI e temi
 - [laraxot/module_tenant_fila5](../Tenant/docs/packages.md) - Gestione multi-tenant
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Localizzazione
 - [mcamara/laravel-localization](https://github.com/mcamara/laravel-localization)
   - Gestione lingue e traduzioni
   - Routing multilingua
   - Middleware per lingua
+<<<<<<< HEAD
 - [lara-zeus/spatie-translatable](../packages/lara-zeus/spatie-translatable/docs/introduction.md)
   - Supporto Filament per campi translatable
   - Pacchetto locale gestito via `path` repository
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Slug
 - [spatie/laravel-sluggable](https://github.com/spatie/laravel-sluggable)
@@ -61,7 +67,10 @@
 - [Traduzioni](packages/translations.md)
 - [SEO](packages/seo.md)
 - [Performance](packages/performance.md)
+<<<<<<< HEAD
 - [Composer merge plugin](composer-merge-plugin.md)
+=======
+>>>>>>> 6ed19256f (.)
 ### Versione HEAD
 
 ## Collegamenti tra versioni di packages.md
@@ -77,4 +86,8 @@
 
 ### Versione Incoming
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> 6ed19256f (.)

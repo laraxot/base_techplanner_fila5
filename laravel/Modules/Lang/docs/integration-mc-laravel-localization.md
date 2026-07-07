@@ -1,6 +1,10 @@
 # Integrazione di mcamara/laravel-localization
 
+<<<<<<< HEAD
 Questo documento descrive come integrare e configurare il pacchetto `mcamara/laravel-localization` nel progetto <nome progetto>.
+=======
+Questo documento descrive come integrare e configurare il pacchetto `mcamara/laravel-localization` nel progetto SaluteOra.
+>>>>>>> 6ed19256f (.)
 
 ## Panoramica
 
@@ -159,7 +163,11 @@ protected $middlewareGroups = [
 - [Guida all'Implementazione](https://laraveldaily.com/lesson/multi-language-laravel/mcamara-laravel-localization)
 # Integrazione di mcamara/laravel-localization
 
+<<<<<<< HEAD
 Questo documento descrive come integrare e configurare il pacchetto `mcamara/laravel-localization` nel progetto <nome progetto>.
+=======
+Questo documento descrive come integrare e configurare il pacchetto `mcamara/laravel-localization` nel progetto SaluteOra.
+>>>>>>> 6ed19256f (.)
 
 ## Panoramica
 

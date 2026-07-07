@@ -47,7 +47,11 @@
 # 2. Identifica modulo/file coinvolto
 # 3. Studia documentazione modulo
 
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/_bases/base_ptvx_fila4_mono/laravel
+>>>>>>> 6ed19256f (.)
 ls -la Modules/{ModuleName}/docs/
 cat Modules/{ModuleName}/docs/README.md
 ```
@@ -359,7 +363,10 @@ nano Modules/{ModuleName}/docs/{pattern-name}.md
 
 - [Doc correlata 1](./related-doc.md)
 - [Doc correlata 2](../../OtherModule/docs/related.md)
+<<<<<<< HEAD
 - [Doc correlata 2](../../othermodule/docs/related.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ---
 
@@ -404,7 +411,10 @@ CHANGELOG.md
 # ❌ SBAGLIATO
 Business-Logic-Analysis.md           # Maiuscole
 phpstan-fixes-2025-12-02.md         # Date
+<<<<<<< HEAD
 phpstan-fixes-[DATE].md         # Date
+=======
+>>>>>>> 6ed19256f (.)
 GUIDE.md                             # Maiuscolo (non README/CHANGELOG)
 ```
 
@@ -424,11 +434,19 @@ Modules/{Module}/documentation/doc.md
 
 ```bash
 # ✅ CORRETTO - Categorizzato in bashscripts
+<<<<<<< HEAD
 bashscripts/quality-assurance/script.sh
 
 # ❌ SBAGLIATO - Root o laravel
 script.sh
 script.sh
+=======
+/var/www/_bases/base_ptvx_fila4_mono/bashscripts/quality-assurance/script.sh
+
+# ❌ SBAGLIATO - Root o laravel
+/var/www/_bases/base_ptvx_fila4_mono/script.sh
+/var/www/_bases/base_ptvx_fila4_mono/laravel/script.sh
+>>>>>>> 6ed19256f (.)
 ```
 
 ---
@@ -709,4 +727,8 @@ Mai tornare indietro. Sempre avanti. Fix forward.
 **Approccio**: Sistematico e Completo
 **Risultato Garantito**: Eccellenza
 
+<<<<<<< HEAD
 🐮⚡ **"Con grande potere viene grande responsabilità... e documentazione completa!"**
+=======
+🐮⚡ **"Con grande potere viene grande responsabilità... e documentazione completa!"**
+>>>>>>> 6ed19256f (.)

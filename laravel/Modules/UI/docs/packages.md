@@ -4,7 +4,10 @@
 
 ### Core
 - [laraxot/module_xot_fila3](../Xot/docs/packages.md) - Modulo base per funzionalità comuni
+<<<<<<< HEAD
 - [laraxot/module_xot_fila5](../xot/docs/packages.md) - Modulo base per funzionalità comuni
+=======
+>>>>>>> 6ed19256f (.)
 - [filament/filament](https://filamentphp.com) - Admin panel e componenti UI
 - [tailwindcss/tailwindcss](https://tailwindcss.com) - Framework CSS utility-first
 
@@ -56,6 +59,7 @@
 ### Versione HEAD
 
 ## Collegamenti tra versioni di packages.md
+<<<<<<< HEAD
 * [packages.md](../../../gdpr/docs/packages.md)
 * [packages.md](../../../notify/docs/packages.md)
 * [packages.md](../../../xot/docs/packages.md)
@@ -65,6 +69,8 @@
 * [packages.md](../../../job/docs/packages.md)
 * [packages.md](../../../media/docs/packages.md)
 * [packages.md](../../../tenant/docs/packages.md)
+=======
+>>>>>>> 6ed19256f (.)
 * [packages.md](../../../Gdpr/docs/packages.md)
 * [packages.md](../../../Notify/docs/packages.md)
 * [packages.md](../../../Xot/docs/packages.md)
@@ -77,4 +83,8 @@
 
 ### Versione Incoming
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> 6ed19256f (.)

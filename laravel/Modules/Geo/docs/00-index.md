@@ -136,6 +136,7 @@
 ---
 
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+<<<<<<< HEAD
 # Geo Module — Documentation Index
 
 ## Architecture
@@ -233,3 +234,5 @@ Placeholder::make('address')
 - **DRY**: Un solo componente, molti consumatori
 - **Consistency**: Stesso comportamento in tutti i moduli
 - **Maintainability**: Fix in un posto, beneficio ovunque
+=======
+>>>>>>> 6ed19256f (.)

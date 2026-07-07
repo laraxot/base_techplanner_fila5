@@ -4,7 +4,11 @@
 
 ### Struttura
 ```php
+<<<<<<< HEAD
 // Themes/One/resources/views/pages/auth/logout.blade.php
+=======
+// /var/www/html/base_<nome progetto>/laravel/Themes/One/resources/views/pages/auth/logout.blade.php
+>>>>>>> 6ed19256f (.)
 
 <?php
 
@@ -114,7 +118,11 @@ $logout = function() {
 
 ### Struttura
 ```php
+<<<<<<< HEAD
 // Themes/One/resources/views/pages/auth/logout.blade.php
+=======
+// /var/www/html/base_<nome progetto>/laravel/Themes/One/resources/views/pages/auth/logout.blade.php
+>>>>>>> 6ed19256f (.)
 
 <?php
 

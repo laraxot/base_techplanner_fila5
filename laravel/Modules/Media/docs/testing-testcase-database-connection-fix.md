@@ -83,10 +83,17 @@ protected function setUp(): void
 - [Testing Rules](testing-rules.md)
 - [Activity TestCase Fix](../../Activity/docs/testing-testcase-database-connection-fix.md)
 - [Geo TestCase Fix](../../Geo/docs/testing-testcase-database-connection-fix.md)
+<<<<<<< HEAD
 - [Activity TestCase Fix](../../activity/docs/testing-testcase-database-connection-fix.md)
 - [Geo TestCase Fix](../../geo/docs/testing-testcase-database-connection-fix.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ---
 
 **Status**: Completed
+<<<<<<< HEAD
 **Risultato**: Test Media ora configurano correttamente le connessioni database senza dipendere da MySQL
+=======
+**Risultato**: Test Media ora configurano correttamente le connessioni database senza dipendere da MySQL
+>>>>>>> 6ed19256f (.)

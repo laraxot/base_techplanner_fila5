@@ -45,6 +45,7 @@
 ## Collegamenti
 - [Roadmap Principale](../../roadmap.md)
 - [Gestione Traduzioni](../../translations.md)
+<<<<<<< HEAD
 - [Best Practices](../../best-practices.md)
 ## Collegamenti tra versioni di translations.md
 * [translations.md](../../../chart/docs/translations.md)
@@ -64,6 +65,8 @@
 * [translations.md](../../../activity/docs/translations.md)
 * [translations.md](../../../patient/docs/translations.md)
 * [translations.md](../../../cms/docs/translations.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Best Practices](../../BEST-PRACTICES.md)
 ## Collegamenti tra versioni di translations.md
 * [translations.md](../../../Chart/docs/translations.md)
@@ -82,4 +85,8 @@
 * [translations.md](../../../Tenant/docs/translations.md)
 * [translations.md](../../../Activity/docs/translations.md)
 * [translations.md](../../../Patient/docs/translations.md)
+<<<<<<< HEAD
 * [translations.md](../../../Cms/docs/translations.md)
+=======
+* [translations.md](../../../Cms/docs/translations.md)
+>>>>>>> 6ed19256f (.)

@@ -26,16 +26,29 @@ class IconPicker extends TextInput
         $packsKeys = $packs;
         $packsCombined = array_combine($packsKeys, $packsKeys);
         /** @var array<string, string> $packs */
+<<<<<<< HEAD
         $packs = $packsCombined ?: [];
+=======
+        $packs = $packsCombined ? $packsCombined : [];
+>>>>>>> 6ed19256f (.)
         // dddx($icons->toCollection()->get('heroicons')->toArray());
 
         $this->suffixAction(
             Action::make('icon')
+<<<<<<< HEAD
                 ->icon(static fn (?string $state) => $state)
                 // ->modalContent(fn ($record) => view('ui::filament.forms.components.icon-picker', ['record' => $record]))
                 ->schema([
                     Select::make('pack')
                         ->options(static function () use ($packs): array {
+=======
+                ->icon(fn (?string $state) => $state)
+                // ->modalContent(fn ($record) => view('ui::filament.forms.components.icon-picker', ['record' => $record]))
+                ->schema([
+                    Select::make('pack')
+                        ->options(function () use ($packs): array {
+                            /* @var array<string, string> $packsOptions */
+>>>>>>> 6ed19256f (.)
                             return $packs;
                         })
                         ->reactive()
@@ -43,7 +56,11 @@ class IconPicker extends TextInput
                     RadioIcon::make('newstate')
                         ->options(function (Get $get) use ($icons): array {
                             $pack = $get('pack');
+<<<<<<< HEAD
                             if (! \is_string($pack)) {
+=======
+                            if (! is_string($pack)) {
+>>>>>>> 6ed19256f (.)
                                 return [];
                             }
                             $key = $pack.'.icons';
@@ -53,6 +70,7 @@ class IconPicker extends TextInput
                                 '['.__LINE__.']['.class_basename($this).']',
                             );
                             /** @var array<int|string, mixed> $optsRaw */
+<<<<<<< HEAD
                             $optsValues = array_map(static fn ($v) => \is_string($v) ? $v : (string) $v, array_values($optsRaw));
                             /** @var array<int|string> $optsKeys */
                             $optsKeys = array_map(static fn ($k) => \is_string($k) ? $k : (string) $k, array_keys($optsRaw));
@@ -68,6 +86,23 @@ class IconPicker extends TextInput
                             $optsValues = array_map(static fn ($v) => \is_string($v) ? $v : (string) $v, array_values($optsRaw));
                             /** @var array<int|string> $optsKeys */
                             $optsKeys = array_map(static fn ($k) => \is_string($k) ? $k : (string) $k, array_keys($optsRaw));
+=======
+                            $optsValues = array_map(fn ($v) => is_string($v) ? $v : (string) $v, array_values($optsRaw));
+                            /** @var array<int|string> $optsKeys */
+                            $optsKeys = array_map(fn ($k) => is_string($k) ? $k : (string) $k, array_keys($optsRaw));
+                            $optsValues = array_map(fn ($v) => is_string($v) ? $v : (string) $v, array_values($optsRaw));
+                            /** @var array<int|string> $optsKeys */
+                            $optsKeys = array_map(fn ($k) => is_string($k) ? $k : (string) $k, array_keys($optsRaw));
+                            $optsValues = array_map(fn ($v) => is_string($v) ? $v : (string) $v, array_values($optsRaw));
+                            /** @var array<int|string> $optsKeys */
+                            $optsKeys = array_map(fn ($k) => is_string($k) ? $k : (string) $k, array_keys($optsRaw));
+                            $optsValues = array_map(fn ($v) => is_string($v) ? $v : (string) $v, array_values($optsRaw));
+                            /** @var array<int|string> $optsKeys */
+                            $optsKeys = array_map(fn ($k) => is_string($k) ? $k : (string) $k, array_keys($optsRaw));
+                            $optsValues = array_map(fn ($v) => is_string($v) ? $v : (string) $v, array_values($optsRaw));
+                            /** @var array<int|string> $optsKeys */
+                            $optsKeys = array_map(fn ($k) => is_string($k) ? $k : (string) $k, array_keys($optsRaw));
+>>>>>>> 6ed19256f (.)
                             $optsCombined = array_combine($optsKeys, $optsValues);
 
                             return $optsCombined ? $optsCombined : [];
@@ -75,7 +110,11 @@ class IconPicker extends TextInput
                         ->inline()
                         ->inlineLabel(false),
                 ])
+<<<<<<< HEAD
                 ->action(static function (array $data, Set $set): void {
+=======
+                ->action(function (array $data, Set $set) {
+>>>>>>> 6ed19256f (.)
                     $set('icon', $data['newstate']);
                 }),
         );

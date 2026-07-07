@@ -1,7 +1,10 @@
 # Convenzioni di Naming per Documentazione
 
 ## Data: 2025-01-27
+<<<<<<< HEAD
 ## Data: 2025-01-27
+=======
+>>>>>>> 6ed19256f (.)
 
 ## REGOLA CRITICA: SEMPRE MINUSCOLO IN DOCS
 
@@ -134,5 +137,9 @@ Components/ → components/
 ---
 
 *Ultimo aggiornamento: 2025-01-27*
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-27*
 *Stato: ATTIVO - REGOLA CRITICA*
+=======
+*Stato: ATTIVO - REGOLA CRITICA*
+>>>>>>> 6ed19256f (.)

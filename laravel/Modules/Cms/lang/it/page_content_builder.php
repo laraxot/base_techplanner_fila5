@@ -9,6 +9,7 @@ return [
             'placeholder' => 'blocks',
             'helper_text' => 'blocks',
             'description' => 'blocks',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
         'content_blocks' => [
@@ -62,6 +63,8 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Page Content Builder',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
 ];

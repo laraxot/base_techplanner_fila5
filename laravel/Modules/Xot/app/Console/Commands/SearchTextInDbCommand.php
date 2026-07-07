@@ -7,7 +7,10 @@ namespace Modules\Xot\Console\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 use function Safe\json_encode;
 
 class SearchTextInDbCommand extends Command

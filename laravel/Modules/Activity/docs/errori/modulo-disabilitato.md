@@ -27,7 +27,11 @@ GET /[modulo]/admin/[resource]/{record}/activities
 
 ```bash
 # Verificare stato modulo
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/html/ptvx/laravel
+>>>>>>> 6ed19256f (.)
 php artisan module:list | grep Activity
 
 # Output se disabilitato:
@@ -69,7 +73,11 @@ Il modulo Activity può essere disabilitato per diversi motivi:
 ### 1. Abilitare il Modulo
 
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/html/ptvx/laravel
+>>>>>>> 6ed19256f (.)
 php artisan module:enable Activity
 ```
 
@@ -136,7 +144,11 @@ php artisan module:list | grep Activity
 ```bash
 php artisan tinker
 >> app('view')->getFinder()->getHints()['activity']
+<<<<<<< HEAD
 # Output: ["Modules/Activity/resources/views"]
+=======
+# Output: ["/var/www/html/ptvx/laravel/Modules/Activity/resources/views"]
+>>>>>>> 6ed19256f (.)
 ```
 
 ### Test 3: Pagina Accessibile
@@ -240,7 +252,11 @@ php artisan view:cache
 Assicurarsi che il container abbia i permessi corretti:
 ```dockerfile
 # Dockerfile
+<<<<<<< HEAD
 RUN chown -R www-data:www-data Modules
+=======
+RUN chown -R www-data:www-data /var/www/html/ptvx/laravel/Modules
+>>>>>>> 6ed19256f (.)
 ```
 
 ### Multi-Ambiente
@@ -263,13 +279,22 @@ Se `module:enable Activity` non funziona:
 
 1. **Verificare permessi file**:
    ```bash
+<<<<<<< HEAD
    ls -la Modules/Activity/module.json
    chmod 644 Modules/Activity/module.json
+=======
+   ls -la /var/www/html/ptvx/laravel/Modules/Activity/module.json
+   chmod 644 /var/www/html/ptvx/laravel/Modules/Activity/module.json
+>>>>>>> 6ed19256f (.)
    ```
 
 2. **Verificare module.json sintassi**:
    ```bash
+<<<<<<< HEAD
    cat Modules/Activity/module.json | json_pp
+=======
+   cat /var/www/html/ptvx/laravel/Modules/Activity/module.json | json_pp
+>>>>>>> 6ed19256f (.)
    ```
 
 3. **Verificare cache moduli**:
@@ -313,12 +338,15 @@ Se `module:enable Activity` non funziona:
 
 ### Documentazione Correlata
 - [No Hint Path Defined - Guida Completa](./no-hint-path-defined.md)
+<<<<<<< HEAD
 - [Activity Module - README](../readme.md)
 - [Service Provider Architecture](../../xot/docs/service-provider-architecture.md)
 
 ### Issue Simili
 - [Xot - Module Discovery](../../xot/docs/module-discovery.md)
 - [Deployment Best Practices](../../xot/docs/deployment.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Activity Module - README](../README.md)
 - [Service Provider Architecture](../../Xot/docs/service-provider-architecture.md)
 
@@ -331,4 +359,8 @@ Se `module:enable Activity` non funziona:
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **Caso Reale**: personale2022.prov.tv.local
 **Soluzione Verificata**: ✅ Testata e funzionante
+<<<<<<< HEAD
 **Severità**: Critica (blocca completamente feature Activity Log)
+=======
+**Severità**: Critica (blocca completamente feature Activity Log)
+>>>>>>> 6ed19256f (.)

@@ -7,6 +7,7 @@ return [
     'edit' => 'modifica',
     'view' => 'vedi',
     'note' => 'note',
+<<<<<<< HEAD
     'label' => 'Txt',
     'plural_label' => 'Txt (Plurale)',
     'navigation' => [
@@ -51,4 +52,6 @@ return [
             'label' => 'Elimina Txt',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

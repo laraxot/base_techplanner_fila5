@@ -195,6 +195,7 @@ php artisan docs:validate
 ## 🔗 Collegamenti Documentazione
 
 ### Moduli Principali
+<<<<<<< HEAD
 - [<nome progetto> - Core Business](../modules/<nome progetto>/docs/optimization-analysis.md)
 - [<nome progetto> - Core Business](../modules/<nome progetto>/docs/optimization-analysis.md)
 - [User - Authentication](../modules/user/docs/optimization-analysis.md)
@@ -209,6 +210,8 @@ php artisan docs:validate
 - [Media - File Management](../modules/media/docs/optimization-analysis.md)
 - [Lang - Translations](../modules/lang/docs/optimization-analysis.md)
 - [Notify - Notifications](../modules/notify/docs/optimization-analysis.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [<nome progetto> - Core Business](../Modules/<nome progetto>/docs/optimization-analysis.md)
 - [<nome progetto> - Core Business](../Modules/<nome progetto>/docs/optimization-analysis.md)
 - [User - Authentication](../Modules/User/docs/optimization-analysis.md)
@@ -255,4 +258,8 @@ Il sistema <nome progetto> presenta una **architettura solida** con il framework
 *Documento creato: Gennaio 2025*
 *Analisi: 14 moduli, 50+ problemi identificati*
 *Principi: DRY + KISS + SOLID + ROBUST + Laraxot*
+<<<<<<< HEAD
 *Stato: 📋 Roadmap Completa per Ottimizzazione Sistemica*
+=======
+*Stato: 📋 Roadmap Completa per Ottimizzazione Sistemica*
+>>>>>>> 6ed19256f (.)

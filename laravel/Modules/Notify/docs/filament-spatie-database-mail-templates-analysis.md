@@ -1,7 +1,10 @@
 # Analisi Repository: filament-spatie-laravel-database-mail-templates
 
 **Data**: 2026-01-09  
+<<<<<<< HEAD
 **Data**: 2026-01-09  
+=======
+>>>>>>> 6ed19256f (.)
 **Repository**: https://github.com/olivierguerriat/filament-spatie-laravel-database-mail-templates  
 **Modulo**: Notify  
 **Status**: 📝 **ANALISI COMPLETATA**
@@ -469,4 +472,7 @@ public static function getHeaderActions(): array
 **Status**: 📝 **ANALISI COMPLETATA - PRONTA PER IMPLEMENTAZIONE**
 
 **Ultimo aggiornamento**: 2026-01-09
+<<<<<<< HEAD
 **Ultimo aggiornamento**: 2026-01-09
+=======
+>>>>>>> 6ed19256f (.)

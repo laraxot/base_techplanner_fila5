@@ -9,5 +9,10 @@
   - [ ] Tutte le chiamate a `transitionTo` forniscono i parametri richiesti
   - [ ] La documentazione delle transizioni specifica i parametri richiesti
 - **Collegamenti**:
+<<<<<<< HEAD
   - [Errori comuni nelle transizioni custom (<nome progetto>)](../../<nome progetto>/docs/model-states-errors.md)
   - [README.md centrale](../../../../docs/readme.md)
+=======
+  - [Errori comuni nelle transizioni custom (SaluteOra)](../../SaluteOra/docs/model-states-errors.md)
+  - [README.md centrale](../../../docs/README.md)
+>>>>>>> 6ed19256f (.)

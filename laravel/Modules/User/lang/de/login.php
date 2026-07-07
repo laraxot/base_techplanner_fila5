@@ -9,20 +9,27 @@ return [
             'description' => 'email',
             'helper_text' => '',
             'placeholder' => 'email',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'password' => [
             'label' => 'password',
             'description' => 'password',
             'helper_text' => '',
             'placeholder' => 'password',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'remember' => [
             'label' => 'remember',
             'description' => 'remember',
             'helper_text' => '',
             'placeholder' => 'remember',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -65,4 +72,8 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+        ],
+    ],
+>>>>>>> 6ed19256f (.)
 ];

@@ -2,14 +2,24 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\User\Tests\Feature\Filament\Resources;
 
+=======
+>>>>>>> 6ed19256f (.)
 use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Section;
 use Illuminate\Support\Facades\Hash;
+<<<<<<< HEAD
 use Modules\User\Enums\UserType;
 use Modules\User\Filament\Resources\UserResource;
+=======
+use Illuminate\Support\HtmlString;
+use Modules\User\Enums\UserType;
+use Modules\User\Filament\Resources\UserResource;
+use Modules\User\Filament\Resources\UserResource\Pages\EditUser;
+>>>>>>> 6ed19256f (.)
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
@@ -18,12 +28,20 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 uses(TestCase::class);
 
 beforeEach(function (): void {
+<<<<<<< HEAD
     $user = User::factory()
         ->create([
             'type' => UserType::MasterAdmin,
             'email' => 'admin-'.uniqid().'@example.com',
             'password' => Hash::make('password123'),
         ]);
+=======
+    $this->user = User::factory()->create([
+        'type' => UserType::MasterAdmin,
+        'email' => 'admin@example.com',
+        'password' => Hash::make('password123'),
+    ]);
+>>>>>>> 6ed19256f (.)
 });
 
 test('user resource has correct navigation icon', function (): void {
@@ -48,18 +66,41 @@ test('user resource has correct form schema', function (): void {
     expect($section01)->toBeInstanceOf(Section::class);
 
     $section01Schema = $section01->getDefaultChildComponents();
+<<<<<<< HEAD
     expect(count($section01Schema))->toBeGreaterThanOrEqual(1);
 
     // Check if name or email field exists in section01
     $hasNameOrEmail = collect($section01Schema)->contains(fn ($c) => in_array($c->getName(), ['name', 'email', 'password'], true));
     expect($hasNameOrEmail)->toBeTrue();
+=======
+    expect($section01Schema)->toHaveCount(3);
+
+    // Check if name field exists
+    $nameField = collect($section01Schema)->first(fn ($c) => 'name' === $c->getName());
+    expect($nameField)->not->toBeNull();
+    expect($nameField)->toBeInstanceOf(TextInput::class);
+
+    // Check if email field exists
+    $emailField = collect($section01Schema)->first(fn ($c) => 'email' === $c->getName());
+    expect($emailField)->not->toBeNull();
+    expect($emailField)->toBeInstanceOf(TextInput::class);
+
+    // Check if password field exists
+    $passwordField = collect($section01Schema)->first(fn ($c) => 'password' === $c->getName());
+    expect($passwordField)->not->toBeNull();
+    expect($passwordField)->toBeInstanceOf(TextInput::class);
+>>>>>>> 6ed19256f (.)
 
     // Test section02
     $section02 = $form['section02'];
     expect($section02)->toBeInstanceOf(Section::class);
 
     $section02Schema = $section02->getDefaultChildComponents();
+<<<<<<< HEAD
     expect(count($section02Schema))->toBeGreaterThanOrEqual(1);
+=======
+    expect($section02Schema)->toHaveCount(1);
+>>>>>>> 6ed19256f (.)
 
     // Check if created_at field exists
     $createdAtField = collect($section02Schema)->first(fn ($c) => 'created_at' === $c->getName());
@@ -85,9 +126,14 @@ test('user resource form schema has correct column spans', function (): void {
     $section01 = $form['section01'];
     $section02 = $form['section02'];
 
+<<<<<<< HEAD
     // Verify sections exist and are Section instances
     expect($section01)->toBeInstanceOf(Section::class);
     expect($section02)->toBeInstanceOf(Section::class);
+=======
+    expect($section01->getColumnSpan())->toBe(['default' => 1, 'lg' => 8]);
+    expect($section02->getColumnSpan())->toBe(['default' => 1, 'lg' => 4]);
+>>>>>>> 6ed19256f (.)
 });
 
 test('user resource name field is required', function (): void {
@@ -97,11 +143,15 @@ test('user resource name field is required', function (): void {
 
     $nameField = collect($section01Schema)->first(fn ($c) => 'name' === $c->getName());
 
+<<<<<<< HEAD
     if (null === $nameField) {
         $this->markTestSkipped('name field not found in section01 schema');
     }
 
     expect($nameField)->toBeInstanceOf(TextInput::class);
+=======
+    expect($nameField->isRequired())->toBeTrue();
+>>>>>>> 6ed19256f (.)
 });
 
 test('user resource email field is required', function (): void {
@@ -111,11 +161,15 @@ test('user resource email field is required', function (): void {
 
     $emailField = collect($section01Schema)->first(fn ($c) => 'email' === $c->getName());
 
+<<<<<<< HEAD
     if (null === $emailField) {
         $this->markTestSkipped('email field not found in section01 schema');
     }
 
     expect($emailField)->toBeInstanceOf(TextInput::class);
+=======
+    expect($emailField->isRequired())->toBeTrue();
+>>>>>>> 6ed19256f (.)
 });
 
 test('user resource password field is required only on create', function (): void {
@@ -125,11 +179,19 @@ test('user resource password field is required only on create', function (): voi
 
     $passwordField = collect($section01Schema)->first(fn ($c) => 'password' === $c->getName());
 
+<<<<<<< HEAD
     if (null === $passwordField) {
         $this->markTestSkipped('password field not found in section01 schema');
     }
 
     expect($passwordField)->toBeInstanceOf(TextInput::class);
+=======
+    expect($passwordField->isRequired($createUserPage))->toBeTrue();
+
+    // Test with EditUser page
+    $editUserPage = new EditUser();
+    expect($passwordField->isRequired($editUserPage))->toBeFalse();
+>>>>>>> 6ed19256f (.)
 });
 
 test('user resource password field has correct type', function (): void {
@@ -149,11 +211,17 @@ test('user resource email field has unique validation', function (): void {
 
     $emailField = collect($section01Schema)->first(fn ($c) => 'email' === $c->getName());
 
+<<<<<<< HEAD
     if (null === $emailField) {
         $this->markTestSkipped('email field not found in section01 schema');
     }
 
     expect($emailField)->toBeInstanceOf(TextInput::class);
+=======
+    // Check if the field has unique validation
+    $validationRules = $emailField->getValidationRules();
+    expect($validationRules)->toContain('unique');
+>>>>>>> 6ed19256f (.)
 });
 
 test('user resource created_at field shows diff for humans', function (): void {
@@ -163,11 +231,22 @@ test('user resource created_at field shows diff for humans', function (): void {
 
     $createdAtField = collect($section02Schema)->first(fn ($c) => 'created_at' === $c->getName());
 
+<<<<<<< HEAD
     if (null === $createdAtField) {
         $this->markTestSkipped('created_at field not found in section02 schema');
     }
 
     expect($createdAtField)->toBeInstanceOf(Placeholder::class);
+=======
+    // Test with a record
+    $content = $createdAtField->getContent($this->user);
+    expect($content)->toBe($this->user->created_at->diffForHumans());
+
+    // Test with null record
+    $contentNull = $createdAtField->getContent(null);
+    expect($contentNull)->toBeInstanceOf(HtmlString::class);
+    expect((string) $contentNull)->toContain('&mdash;');
+>>>>>>> 6ed19256f (.)
 });
 
 test('user resource can be instantiated', function (): void {

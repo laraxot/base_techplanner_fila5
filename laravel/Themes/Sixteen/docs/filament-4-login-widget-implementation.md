@@ -50,11 +50,20 @@ use Override;
 
 class LoginWidget extends XotBaseWidget
 {
+<<<<<<< HEAD
     public ?array $data = [];
 
     /**
      * View path per il tema corrente.
      * IMPORTANTE: usa 'pub_theme::' per riferirsi al tema attivo
+=======
+    /**
+     * View path per il tema corrente.
+     * IMPORTANTE: usa 'pub_theme::' per riferirsi al tema attivo
+     * 
+     * NOTA: NON ridichiarare $data perché è già definito in XotBaseWidget
+     * NOTA: NON sovrascrivere mount() perché XotBaseWidget gestisce già l'inizializzazione
+>>>>>>> 6ed19256f (.)
      */
     protected string $view = 'pub_theme::filament.widgets.auth.login';
 
@@ -83,12 +92,22 @@ class LoginWidget extends XotBaseWidget
             'password' => is_string($data['password'] ?? null) ? $data['password'] : '',
         ];
 
+<<<<<<< HEAD
         if (Auth::attempt($credentials, $data['remember'] ?? false)) {
+=======
+        $remember = isset($data['remember']) && true === $data['remember'];
+
+        if (Auth::attempt($credentials, $remember)) {
+>>>>>>> 6ed19256f (.)
             session()->regenerate();
             redirect()->intended('/');
         }
 
+<<<<<<< HEAD
         $this->addError('email', __('auth.failed'));
+=======
+        $this->addError('data.email', __('auth.failed'));
+>>>>>>> 6ed19256f (.)
     }
 }
 ```

@@ -838,15 +838,24 @@ public function generateWithErrorHandling(array $options = []): string
 
 - [HTML2PDF Best Practices](../Xot/docs/html2pdf-best-practices.md)
 - [Job Module README](./README.md)
+<<<<<<< HEAD
 - [HTML2PDF Best Practices](../xot/docs/html2pdf-best-practices.md)
 - [Job Module README](./readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Laravel Queue Documentation](https://laravel.com/docs/queues)
 - [Filament Actions Documentation](https://filamentphp.com/docs/3.x/actions/overview)
 
 ---
 
 **Last Updated:** 2025-12-09
+<<<<<<< HEAD
 **
 **Version:** 1.0.0
 **HTML2PDF Version:** 5.2.x
 **PHPStan Level:** 10 ✅
+=======
+**Version:** 1.0.0
+**HTML2PDF Version:** 5.2.x
+**PHPStan Level:** 10 ✅
+>>>>>>> 6ed19256f (.)

@@ -12,16 +12,30 @@ use function Laravel\Prompts\text;
 
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
+<<<<<<< HEAD
+=======
+use Symfony\Component\Console\Input\InputOption;
+>>>>>>> 6ed19256f (.)
 
 class AssignTenantCommand extends Command
 {
     /**
      * The name and signature of the console command.
+<<<<<<< HEAD
+=======
+     *
+     * @var string
+>>>>>>> 6ed19256f (.)
      */
     protected $name = 'user:assign-tenant';
 
     /**
      * The console command description.
+<<<<<<< HEAD
+=======
+     *
+     * @var string
+>>>>>>> 6ed19256f (.)
      */
     protected $description = 'Assign a tenant to user';
 
@@ -66,6 +80,7 @@ class AssignTenantCommand extends Command
         $this->info(implode(', ', $rows).' assigned to '.$email);
     }
 
+<<<<<<< HEAD
     /*
      * Get the console command options.
      */
@@ -75,4 +90,15 @@ class AssignTenantCommand extends Command
     //     ['example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null],
     //    ];
     // }
+=======
+    /**
+     * Get the console command options.
+     */
+    protected function getOptions(): array
+    {
+        return [
+            ['example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null],
+        ];
+    }
+>>>>>>> 6ed19256f (.)
 }

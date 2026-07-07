@@ -23,6 +23,7 @@ return [
         'placeholder' => 'Seleziona un CAP',
         'tooltip' => 'CAP della città selezionata',
     ],
+<<<<<<< HEAD
     'label' => 'Fields',
     'plural_label' => 'Fields (Plurale)',
     'navigation' => [
@@ -67,4 +68,6 @@ return [
             'label' => 'Elimina Fields',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

@@ -29,12 +29,15 @@ docs/cache/
 cache/
 
 # ==============================================
+<<<<<<< HEAD
 # MERGE / CONFLICT BACKUP SYMLINKS (mai in git — LFS GH008)
 # ==============================================
 *~cc6378f*
 *~cc6378f (*)
 
 # ==============================================
+=======
+>>>>>>> 6ed19256f (.)
 # CACHE & TEMPORARY FILES
 # ==============================================
 *.cache
@@ -108,7 +111,10 @@ Thumbs.db
 *.old
 *.old1
 *.old2
+<<<<<<< HEAD
 *.old*
+=======
+>>>>>>> 6ed19256f (.)
 *.backup
 *.backup.*
 *.bak
@@ -167,6 +173,7 @@ test_notifications.sql
 *.old
 laravel
 public_html
+<<<<<<< HEAD
 lang/lang/
 _docs/
 _docs/
@@ -199,3 +206,5 @@ config/config
 *.orig
 *.rej
 *~head
+=======
+>>>>>>> 6ed19256f (.)

@@ -9,6 +9,11 @@ use Filament\Forms\Components\ColorPicker;
 use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
+<<<<<<< HEAD
+=======
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Forms\Contracts\HasForms;
+>>>>>>> 6ed19256f (.)
 use Filament\Notifications\Notification;
 use Filament\Schemas\Schema;
 use Filament\Support\Colors\Color;
@@ -20,13 +25,23 @@ use Webmozart\Assert\Assert;
 /**
  * @property Schema $form
  */
+<<<<<<< HEAD
 class MetatagPage extends XotBasePage
 {
+=======
+class MetatagPage extends XotBasePage implements HasForms
+{
+    use InteractsWithForms;
+>>>>>>> 6ed19256f (.)
     use NavigationLabelTrait;
 
     public array $data = [];
 
+<<<<<<< HEAD
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-document-text';
+=======
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-document-text';
+>>>>>>> 6ed19256f (.)
 
     protected string $view = 'xot::filament.pages.metatag';
 
@@ -34,7 +49,11 @@ class MetatagPage extends XotBasePage
     {
         Assert::isArray($data = config('metatag'));
 
+<<<<<<< HEAD
         /** @var array<string, mixed> $data */
+=======
+        // @phpstan-ignore argument.type
+>>>>>>> 6ed19256f (.)
         $this->form->fill($data);
     }
 
@@ -79,7 +98,11 @@ class MetatagPage extends XotBasePage
 
         Notification::make()
             ->success()
+<<<<<<< HEAD
             ->title(__('filament-panels::resources/edit-record.notifications.saved.title'))
+=======
+            ->title(__('filament-panels::resources/pages/edit-record.notifications.saved.title'))
+>>>>>>> 6ed19256f (.)
             ->send();
     }
 

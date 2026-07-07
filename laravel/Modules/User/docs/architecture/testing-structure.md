@@ -136,7 +136,11 @@ class LoginTest extends TestCase
     public function test_login_page_renders_correctly(): void
     {
         $response = $this->get('/it/auth/login');
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         $response->assertStatus(200);
         $response->assertSeeLivewire('auth.login');
         $response->assertSee(__('user::auth.login.title'));
@@ -145,7 +149,11 @@ class LoginTest extends TestCase
     public function test_unauthenticated_user_redirected_to_login(): void
     {
         $response = $this->get('/dashboard');
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         $response->assertRedirect('/it/auth/login');
     }
 }
@@ -169,7 +177,11 @@ class UserTest extends TestCase
     {
         $userClass = XotData::make()->getUserClass();
         $user = $userClass::factory()->create();
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         expect($user)->toBeInstanceOf($userClass);
         expect($user->id)->toBeGreaterThan(0);
     }
@@ -178,7 +190,11 @@ class UserTest extends TestCase
     {
         $userClass = XotData::make()->getUserClass();
         $user = $userClass::factory()->create();
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         expect($user->teams)->toBeInstanceOf(\Illuminate\Database\Eloquent\Collection::class);
     }
 }
@@ -288,11 +304,18 @@ dump($variable);
 - [README Modulo User](../README.md)
 - [Best Practices Testing](../../../project_docs/testing-best-practices.md)
 - [Architettura Modulo User](../architecture/README.md)
+<<<<<<< HEAD
 - [README Modulo User](../readme.md)
 - [Best Practices Testing](../../../project_docs/testing-best-practices.md)
 - [Architettura Modulo User](../architecture/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Factory e Seeder](../models/factory-seeder-status.md)
 
 ---
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-06*
+=======
+*Ultimo aggiornamento: 2025-01-06*
+>>>>>>> 6ed19256f (.)

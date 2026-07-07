@@ -44,9 +44,12 @@ Per `LoginWidget`, che non ha un modello associato (`getFormModel()` restituisce
 ### 2. Schema con chiavi stringa
 
 Corretto lo schema per usare array associativo con chiavi stringa (conforme alle regole Filament):
+<<<<<<< HEAD
 ### 2. Schema con chiavi stringa e NO label/placeholder
 
 Corretto lo schema per usare array associativo con chiavi stringa (conforme alle regole Filament). **MAI usare `->label()`, `->placeholder()` o `->helperText()`**: il LangServiceProvider risolve automaticamente da `user::login_widget.fields.*` (file `lang/it/login_widget.php`).
+=======
+>>>>>>> 6ed19256f (.)
 
 ```php
 #[\Override]
@@ -147,7 +150,10 @@ Tutti i widget Filament che estendono `XotBaseWidget` e usano `statePath('data')
 ## Riferimenti
 
 - [XotBaseWidget Documentation](../../Xot/docs/README.md)
+<<<<<<< HEAD
 - [XotBaseWidget Documentation](../../xot/docs/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Filament Form State Management](https://filamentphp.com/docs/3.x/forms/fields#state-management)
 - [RegisterWidget Implementation](../app/Filament/Widgets/Auth/RegisterWidget.php) - Esempio corretto
 
@@ -169,4 +175,8 @@ Tutti i widget Filament che estendono `XotBaseWidget` e usano `statePath('data')
 
 ---
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: Dicembre 2024*
+=======
+*Ultimo aggiornamento: Dicembre 2024*
+>>>>>>> 6ed19256f (.)

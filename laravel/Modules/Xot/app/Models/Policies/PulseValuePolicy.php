@@ -6,13 +6,21 @@ namespace Modules\Xot\Models\Policies;
 
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Models\PulseValue;
+<<<<<<< HEAD
+=======
+use Override;
+>>>>>>> 6ed19256f (.)
 
 class PulseValuePolicy extends XotBasePolicy
 {
     /**
      * Determine whether the user can view any models.
      */
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> 6ed19256f (.)
     public function viewAny(UserContract $user): bool
     {
         return $user->hasPermissionTo('pulse_value.viewAny');

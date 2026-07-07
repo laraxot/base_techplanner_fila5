@@ -6,7 +6,11 @@ namespace Modules\Lang\Filament\Widgets;
 
 use Filament\Schemas\Components\Component;
 use Illuminate\Support\Collection;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+=======
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
+>>>>>>> 6ed19256f (.)
 
 /**
  * Widget per il cambio di lingua.
@@ -14,7 +18,11 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  * Fornisce un selettore dropdown per cambiare la lingua dell'interfaccia.
  * Utilizza il sistema di localizzazione di Laravel per gestire le traduzioni.
  */
+<<<<<<< HEAD
 class LanguageSwitcherWidget extends XotBaseSchemaWidget
+=======
+class LanguageSwitcherWidget extends XotBaseWidget
+>>>>>>> 6ed19256f (.)
 {
     /**
      * Vista del widget.
@@ -34,6 +42,10 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
      *
      * @return array<int, Component>
      */
+<<<<<<< HEAD
+=======
+    #[\Override]
+>>>>>>> 6ed19256f (.)
     public function getFormSchema(): array
     {
         return [];

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 module: theme
 topic: filament
@@ -5,3 +6,11 @@ canonical: ../../../Themes/docs/shared-components/filament.txt
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/filament.txt
+=======
+https://github.com/Althinect/filament-spatie-roles-permissions
+https://github.com/ryangjchandler/filament-profile
+
+https://github.com/andrewdwallo/filament-companies
+
+
+>>>>>>> 6ed19256f (.)

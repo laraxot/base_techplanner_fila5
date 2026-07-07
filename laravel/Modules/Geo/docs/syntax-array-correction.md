@@ -116,8 +116,11 @@ php -l laravel/Modules/Geo/lang/it/address.php
 - [Address Translation Fixes](address-translation-fixes.md) - Correzioni traduzioni address
 - [README Modulo Geo](README.md) - Documentazione principale
 - [Translation Standards](../../Lang/docs/translation-helper-text-standards.md) - Standard traduzioni
+<<<<<<< HEAD
 - [README Modulo Geo](readme.md) - Documentazione principale
 - [Translation Standards](../../lang/docs/translation-helper-text-standards.md) - Standard traduzioni
+=======
+>>>>>>> 6ed19256f (.)
 
 ## 🎯 Lezioni Apprese
 
@@ -136,4 +139,8 @@ php -l laravel/Modules/Geo/lang/it/address.php
 
 **Ultimo aggiornamento**: 6 Gennaio 2025
 **Autore**: AI Assistant
+<<<<<<< HEAD
 **Stato**: ✅ COMPLETATO
+=======
+**Stato**: ✅ COMPLETATO
+>>>>>>> 6ed19256f (.)

@@ -120,7 +120,10 @@ Esempio di un blocco di tipo hero:
     "data": {
         "view": "ui::components.blocks.hero.v1",
         "title": "Promozione della <slogan progetto> per le gestanti",
+<<<<<<< HEAD
         "title": "Promozione della salute orale per le gestanti",
+=======
+>>>>>>> 6ed19256f (.)
         "subtitle": "Servizi odontoiatrici gratuiti per donne in gravidanza",
         "image": "/images/hero/dental-care.jpg",
         "cta_text": "Scopri di più",
@@ -177,4 +180,7 @@ Per ottimizzare le performance della homepage:
 3. **Localizzazione**: Gestire correttamente le traduzioni dei contenuti
 4. **Testing**: Verificare la responsiveness su diversi dispositivi
 5. **Manutenibilità**: Documentare le personalizzazioni e i blocchi personalizzati
+<<<<<<< HEAD
 5. **Manutenibilità**: Documentare le personalizzazioni e i blocchi personalizzati 
+=======
+>>>>>>> 6ed19256f (.)

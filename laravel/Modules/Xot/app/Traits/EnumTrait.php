@@ -15,22 +15,38 @@ trait EnumTrait
 
     public function getLabel(): string
     {
+<<<<<<< HEAD
         return $this->transClass(static::class, 'values.'.$this->value.'.label');
+=======
+        return $this->transClass(static::class, $this->value.'.label');
+>>>>>>> 6ed19256f (.)
     }
 
     public function getColor(): string
     {
+<<<<<<< HEAD
         return $this->transClass(static::class, 'values.'.$this->value.'.color');
+=======
+        return $this->transClass(static::class, $this->value.'.color');
+>>>>>>> 6ed19256f (.)
     }
 
     public function getIcon(): string
     {
+<<<<<<< HEAD
         return $this->transClass(static::class, 'values.'.$this->value.'.icon');
+=======
+        return $this->transClass(static::class, $this->value.'.icon');
+>>>>>>> 6ed19256f (.)
     }
 
     public function getDescription(): string
     {
+<<<<<<< HEAD
         return $this->transClass(static::class, 'values.'.$this->value.'.description');
+=======
+        return $this->transClass(static::class, $this->value.'.description');
+>>>>>>> 6ed19256f (.)
     }
 
     /**
@@ -38,11 +54,19 @@ trait EnumTrait
      */
     public static function getSearchable(): array
     {
+<<<<<<< HEAD
         return array_map(fn ($item) => (string) $item->value, static::cases());
     }
 
     /**
      * @return array<int|string, TextInput>
+=======
+        return array_map(fn ($item) => $item->value, static::cases());
+    }
+
+    /**
+     * @return array<string, TextInput>
+>>>>>>> 6ed19256f (.)
      */
     public static function getFormSchema(): array
     {
@@ -51,8 +75,12 @@ trait EnumTrait
         /** @var array<string, TextInput> $result */
         $result = [];
         foreach ($cases as $item) {
+<<<<<<< HEAD
             $name = (string) $item->value;
             $result[$name] = TextInput::make($name)->prefixIcon($item->getIcon());
+=======
+            $result[$item->value] = TextInput::make($item->value)->prefixIcon($item->getIcon());
+>>>>>>> 6ed19256f (.)
         }
 
         return $result;
@@ -75,7 +103,11 @@ trait EnumTrait
      * - **Religion**: Strong typing through enum values
      * - **Zen**: Form without form - one method adapts to both contexts
      *
+<<<<<<< HEAD
      * Inspired by Modules/<nome progetto>/database/migrations/2019_12_12_000004_create_workers_table.php:
+=======
+     * Inspired by Modules/TechPlanner/database/migrations/2019_12_12_000004_create_workers_table.php:
+>>>>>>> 6ed19256f (.)
      * ```php
      * $address_components = Place::$address_components;
      * foreach ($address_components as $el) {
@@ -100,6 +132,7 @@ trait EnumTrait
      * ```
      */
     /**
+<<<<<<< HEAD
      * @param Blueprint             $table     The table blueprint
      * @param XotBaseMigration|null $migration XotBaseMigration instance for UPDATE context (provides hasColumn())
      */
@@ -111,6 +144,19 @@ trait EnumTrait
 
         foreach (static::getColumnDefinitions() as $name => $definition) {
             if (null === $migration || ! $migration->hasColumn($name)) {
+=======
+     * @param  Blueprint  $table  The table blueprint
+     * @param  XotBaseMigration|null  $migration  XotBaseMigration instance for UPDATE context (provides hasColumn())
+     */
+    public static function columns(Blueprint $table, ?XotBaseMigration $migration = null): void
+    {
+        //if (! method_exists(static::class, 'getColumnDefinitions')) {
+        //    return;
+        //}
+
+        foreach (static::getColumnDefinitions() as $name => $definition) {
+            if ($migration === null || ! $migration->hasColumn($name)) {
+>>>>>>> 6ed19256f (.)
                 $definition($table);
             }
         }
@@ -139,7 +185,11 @@ trait EnumTrait
      */
     public static function getColumnNames(): array
     {
+<<<<<<< HEAD
         return array_values(array_map(fn ($case): string => (string) $case->value, static::cases()));
+=======
+        return array_map(fn ($case) => $case->value, static::cases());
+>>>>>>> 6ed19256f (.)
     }
 
     /**
@@ -152,6 +202,7 @@ trait EnumTrait
     {
         return [];
     }
+<<<<<<< HEAD
 
     public static function toArray(): array
     {
@@ -164,4 +215,6 @@ trait EnumTrait
 
         return $result;
     }
+=======
+>>>>>>> 6ed19256f (.)
 }

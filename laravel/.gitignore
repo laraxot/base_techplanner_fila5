@@ -23,6 +23,9 @@ Homestead.json
 Homestead.yaml
 Thumbs.db
 config/net/sottana/database/content/information_schema_tables.json
+<<<<<<< HEAD
 config/local/techplanner/database/content/information_schema_tables.json
 config/local/techplanner/database/content/information_schema_tables.json
 ruvector.db
+=======
+>>>>>>> 6ed19256f (.)

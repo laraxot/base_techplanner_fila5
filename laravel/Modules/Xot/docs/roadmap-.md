@@ -204,7 +204,11 @@ done
 *"XotBase classes provide unshakeable foundation"*
 - Consistent API across all modules
 - Backward compatibility guaranteed
+<<<<<<< HEAD
 - <nome progetto>able behavior everywhere
+=======
+- Predictable behavior everywhere
+>>>>>>> 6ed19256f (.)
 
 #### **2. Water (Adaptability)**
 *"Xot flows into any module shape"*
@@ -349,7 +353,11 @@ done
 **Modulo**: Xot (Core Framework)
 **Status**: 95% COMPLETATO
 **Priority**: CRITICAL
+<<<<<<< HEAD
 **PHPStan**: ✅ Level 10 (0 errori)
+=======
+**PHPStan**: ✅ Level 9 (0 errori)
+>>>>>>> 6ed19256f (.)
 **Filament**: ✅ 4.x Compatibile
 
 ---
@@ -437,7 +445,11 @@ Xot Module (Core Framework)
 - [x] **Events**: Eventi del sistema
 
 ### 🔧 Technical Excellence
+<<<<<<< HEAD
 - [x] **PHPStan Level 10**: 0 errori
+=======
+- [x] **PHPStan Level 9**: 0 errori
+>>>>>>> 6ed19256f (.)
 - [x] **Filament 4.x**: Compatibilità completa
 - [x] **Type Safety**: Type hints completi
 - [x] **Error Handling**: Gestione errori robusta
@@ -516,13 +528,22 @@ Xot Module (Core Framework)
 
 #### 📋 Features
 - [ ] **Smart Caching** (Priority: MEDIUM)
+<<<<<<< HEAD
   - [ ] ML-based cache <nome progetto>ion
+=======
+  - [ ] ML-based cache prediction
+>>>>>>> 6ed19256f (.)
   - [ ] Intelligent cache invalidation
   - [ ] Adaptive cache strategies
   - [ ] Performance optimization
 
+<<<<<<< HEAD
 - [ ] **<nome progetto>ive Services** (Priority: MEDIUM)
   - [ ] Load <nome progetto>ion
+=======
+- [ ] **Predictive Services** (Priority: MEDIUM)
+  - [ ] Load prediction
+>>>>>>> 6ed19256f (.)
   - [ ] Resource optimization
   - [ ] Performance forecasting
   - [ ] Anomaly detection
@@ -535,7 +556,11 @@ Xot Module (Core Framework)
 
 #### 🎯 Success Criteria
 - [ ] AI caching working
+<<<<<<< HEAD
 - [ ] <nome progetto>ive services active
+=======
+- [ ] Predictive services active
+>>>>>>> 6ed19256f (.)
 - [ ] Automated optimization functional
 - [ ] Performance improved by 30%
 
@@ -575,7 +600,11 @@ Xot Module (Core Framework)
 **Status**: 95% COMPLETATO
 
 #### ✅ Completed
+<<<<<<< HEAD
 - [x] PHPStan Level 10 compliance
+=======
+- [x] PHPStan Level 9 compliance
+>>>>>>> 6ed19256f (.)
 - [x] Type safety implementation
 - [x] Error handling improvement
 - [x] Code documentation
@@ -634,7 +663,11 @@ Xot Module (Core Framework)
 ## 🎯 SUCCESS METRICS
 
 ### 📊 Technical Metrics
+<<<<<<< HEAD
 - [x] **PHPStan Level 10**: 0 errori ✅
+=======
+- [x] **PHPStan Level 9**: 0 errori ✅
+>>>>>>> 6ed19256f (.)
 - [x] **Filament 4.x**: Compatibile ✅
 - [ ] **Test Coverage**: 90% (target)
 - [ ] **Response Time**: < 50ms
@@ -687,7 +720,11 @@ Xot Module (Core Framework)
 - [ ] AI research and planning
 - [ ] ML model development
 - [ ] Smart caching implementation
+<<<<<<< HEAD
 - [ ] <nome progetto>ive services
+=======
+- [ ] Predictive services
+>>>>>>> 6ed19256f (.)
 
 #### May 2025
 - [ ] AI integration testing
@@ -811,7 +848,11 @@ Xot Module (Core Framework)
 
 ### Development Tools
 - **Testing**: Pest/PHPUnit
+<<<<<<< HEAD
 - **Code Quality**: PHPStan Level 10
+=======
+- **Code Quality**: PHPStan Level 9
+>>>>>>> 6ed19256f (.)
 - **Performance**: Blackfire, New Relic
 - **Monitoring**: Grafana, Prometheus
 - **Documentation**: MkDocs, Swagger
@@ -825,11 +866,19 @@ Xot Module (Core Framework)
 
 ---
 
+<<<<<<< HEAD
 **
+=======
+**Last Updated**: 2025-10-01
+>>>>>>> 6ed19256f (.)
 **Next Review**: 2025-11-01
 **Status**: 🚧 ACTIVE DEVELOPMENT
 **Confidence Level**: 98%
 
 ---
 
+<<<<<<< HEAD
 *Questa roadmap è specifica per il modulo Xot e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
+=======
+*Questa roadmap è specifica per il modulo Xot e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
+>>>>>>> 6ed19256f (.)

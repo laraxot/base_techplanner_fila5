@@ -83,10 +83,17 @@ protected function setUp(): void
 
 - [Testing Rules](testing-rules.md)
 - [Activity TestCase Fix](../../Activity/docs/testing-testcase-database-connection-fix.md)
+<<<<<<< HEAD
 - [Activity TestCase Fix](../../activity/docs/testing-testcase-database-connection-fix.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [User TestCase](../../User/tests/TestCase.php)
 
 ---
 
 **Status**: Completed
+<<<<<<< HEAD
 **Risultato**: Test Geo ora configurano correttamente le connessioni database
+=======
+**Risultato**: Test Geo ora configurano correttamente le connessioni database
+>>>>>>> 6ed19256f (.)

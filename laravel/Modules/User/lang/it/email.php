@@ -14,6 +14,7 @@ return [
     'reset_password' => 'Clicca qui per reimpostare la tua password',
     'click_to_confirm' => 'Clicca qui per confermare il tuo account:',
     'password_reset_expiration' => 'Questo link per il reset della password scadrà tra :count minuti.',
+<<<<<<< HEAD
     'navigation' => [
         'name' => 'Email',
         'plural' => 'Email',
@@ -58,4 +59,11 @@ return [
             'label' => 'Elimina Email',
         ],
     ],
+=======
+    'navigation' => [],
+    'label' => '',
+    'plural_label' => '',
+    'fields' => [],
+    'actions' => [],
+>>>>>>> 6ed19256f (.)
 ];

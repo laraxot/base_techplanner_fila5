@@ -7,8 +7,11 @@ return [
     'enable_ads' => '1',
     'main_module' => 'TechPlanner',
     'primary_lang' => 'it',
+<<<<<<< HEAD
     'pub_theme' => 'Two',
     'pub_theme' => 'Sixteen',
+=======
+>>>>>>> 6ed19256f (.)
     'pub_theme' => 'Sixteen',
     'show_trans_key' => false,
     'disable_admin_dynamic_route' => true, // dovremmo cancellarlo

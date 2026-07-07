@@ -286,7 +286,11 @@ if (inAdmin()) { }
 ### Test 1: Composer Autoload
 
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/_bases/base_ptvx_fila4_mono/laravel
+>>>>>>> 6ed19256f (.)
 composer dump-autoload
 
 # ✅ Output:
@@ -358,7 +362,10 @@ echo 'User models count: ' . count(getModuleModels('User')) . PHP_EOL;
 - [wikimedia/composer-merge-plugin GitHub](https://github.com/wikimedia/composer-merge-plugin)
 - [Xot Helpers Documentation](./helpers.md)
 - [Tenant Helper Dependency](../../Tenant/docs/helper-functions-dependency.md)
+<<<<<<< HEAD
 - [Tenant Helper Dependency](../../tenant/docs/helper-functions-dependency.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [RouteService Implementation](../app/Services/RouteService.php)
 - [GetAllModelsByModuleNameAction](../app/Actions/Model/GetAllModelsByModuleNameAction.php)
 
@@ -476,4 +483,8 @@ $models = $action->execute($moduleName);
 
 ---
 
+<<<<<<< HEAD
 *"Il miglior fix è quello che non solo risolve il problema, ma documenta il perché esisteva."*
+=======
+*"Il miglior fix è quello che non solo risolve il problema, ma documenta il perché esisteva."*
+>>>>>>> 6ed19256f (.)

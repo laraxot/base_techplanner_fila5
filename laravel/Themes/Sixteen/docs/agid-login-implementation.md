@@ -185,3 +185,7 @@ I seguenti testi sono **intenzionalmente hardcoded** per garantire conformità A
 - [Layout Guest](resources/views/layouts/guest.blade.php)
 - [Login Component](../../../laravel/Modules/User/app/Http/Livewire/Auth/Login.php)
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2025-01-06*
+>>>>>>> 6ed19256f (.)

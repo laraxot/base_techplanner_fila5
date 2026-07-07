@@ -1,7 +1,10 @@
 # Best Practices per Proprietà Modelli Eloquent - Modulo Xot
 
 ## ✅ STATO: property_exists() ELIMINATO (Data: 2025-01-05)
+<<<<<<< HEAD
 ## ✅ STATO: property_exists() ELIMINATO (Data: [DATE])
+=======
+>>>>>>> 6ed19256f (.)
 
 **Nel modulo Xot, `property_exists()` è stato completamente eliminato dal codice eseguibile.**
 
@@ -187,7 +190,11 @@ public function getStatus(): string
 Tutti i file devono passare la validazione PHPStan livello 9+:
 
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/html/ptvx/laravel
+>>>>>>> 6ed19256f (.)
 ./vendor/bin/phpstan analyze Modules --level=9
 ```
 
@@ -209,7 +216,10 @@ Prima di ogni commit in qualsiasi modulo, verificare:
 - [Regola Cursor](../../.cursor/rules/eloquent-properties.md)
 - [Memoria Cursor](../../.cursor/memories)
 - [Linee Guida AI](../../.ai/guidelines/CORE.md)
+<<<<<<< HEAD
 - [Linee Guida AI](../../.ai/guidelines/core.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Esempio Corretto](../../Notify/app/Notifications/GenericNotification.php)
 
 ## Esempi di Correzione
@@ -246,4 +256,8 @@ Questa regola si applica a tutti i moduli che estendono Xot:
 - [PHPStan Eloquent Analysis](https://phpstan.org/user-guide/rule-levels)
 
 *Ultimo aggiornamento: Giugno 2025*
+<<<<<<< HEAD
 *Regola applicabile a tutti i moduli*
+=======
+*Regola applicabile a tutti i moduli*
+>>>>>>> 6ed19256f (.)

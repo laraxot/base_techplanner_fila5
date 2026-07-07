@@ -88,9 +88,16 @@ return $def1;
 * [database.md](docs/tecnico/database/database.md)
 * [database.md](../../../Xot/project_docs/install/database.md)
 * [database.md](../../../Tenant/project_docs/it/config/database.md)
+<<<<<<< HEAD
 * [database.md](../../../xot/project_docs/install/database.md)
 * [database.md](../../../tenant/project_docs/it/config/database.md)
 
 ### Versione Incoming
 
 ---
+=======
+
+### Versione Incoming
+
+---
+>>>>>>> 6ed19256f (.)

@@ -203,7 +203,10 @@ $consent->delete();
 ### Guide Principali
 
 - [README.md](./README.md) - Overview modulo
+<<<<<<< HEAD
 - [README.md](./readme.md) - Overview modulo
+=======
+>>>>>>> 6ed19256f (.)
 - [implementation-guide.md](./implementation-guide.md) - Guida implementazione
 - [api.md](./api.md) - API reference
 - [testing.md](./testing.md) - Testing guide
@@ -247,4 +250,8 @@ $consent->delete();
 
 ---
 
+<<<<<<< HEAD
 *"Privacy by design, security by default."*
+=======
+*"Privacy by design, security by default."*
+>>>>>>> 6ed19256f (.)

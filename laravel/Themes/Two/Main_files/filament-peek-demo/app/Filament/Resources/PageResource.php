@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources;
 
+<<<<<<< HEAD
 use App\Filament\Fields\PageContent;
 use App\Filament\Resources\PageResource\Pages\CreatePage;
 use App\Filament\Resources\PageResource\Pages\EditPage;
@@ -18,6 +19,8 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Support\Str;
 use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
+=======
+>>>>>>> 6ed19256f (.)
 use Filament\Schemas\Schema;
 use Filament\Schemas\Components\Grid;
 use Filament\Forms\Components\TextInput;
@@ -44,9 +47,15 @@ class PageResource extends Resource
 {
     protected static ?string $model = Page::class;
 
+<<<<<<< HEAD
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-document';
 
     protected static string|\UnitEnum|null $navigationGroup = 'Site';
+=======
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-document';
+
+    protected static string | \UnitEnum | null $navigationGroup = 'Site';
+>>>>>>> 6ed19256f (.)
 
     public static function form(Schema $schema): Schema
     {
@@ -110,7 +119,10 @@ class PageResource extends Resource
         ];
     }
 }
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> 6ed19256f (.)

@@ -17,11 +17,18 @@ bisogna modificare il file /laravel/config/modules.php ed indicare la cartella g
 * [modules.md](docs/architecture/modules.md)
 * [modules.md](../../../Xot/project_docs/filament/modules.md)
 * [modules.md](../../../Xot/project_docs/config/modules.md)
+<<<<<<< HEAD
 * [modules.md](../../../xot/project_docs/filament/modules.md)
 * [modules.md](../../../xot/project_docs/config/modules.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Versione Incoming
 
 bisogna modificare il file /laravel/config/modules.php ed indicare la cartella giusta che è Models.
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> 6ed19256f (.)

@@ -7,11 +7,16 @@ namespace Modules\Xot\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
+<<<<<<< HEAD
+=======
+use InvalidArgumentException;
+>>>>>>> 6ed19256f (.)
 use Modules\Tenant\Models\Traits\SushiToJson;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\InformationSchemaTableFactory;
 
 /**
+<<<<<<< HEAD
  * @property int|null             $table_rows
  * @property string               $table_schema
  * @property string               $table_name
@@ -26,6 +31,23 @@ use Modules\Xot\Database\Factories\InformationSchemaTableFactory;
  * @property ProfileContract|null $updater
  *
  * @method static InformationSchemaTableFactory          factory($count = null, $state = [])
+=======
+ * @property int|null $table_rows
+ * @property string $table_schema
+ * @property string $table_name
+ * @property string|null $model_class
+ * @property Carbon|null $created_at
+ * @property string|null $created_by
+ * @property int $id
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ *
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $deleter
+ * @property-read ProfileContract|null $updater
+ *
+ * @method static InformationSchemaTableFactory factory($count = null, $state = [])
+>>>>>>> 6ed19256f (.)
  * @method static Builder<static>|InformationSchemaTable newModelQuery()
  * @method static Builder<static>|InformationSchemaTable newQuery()
  * @method static Builder<static>|InformationSchemaTable query()
@@ -99,18 +121,30 @@ class InformationSchemaTable extends BaseModel
     /**
      * Aggiorna il numero di record memorizzato per un modello.
      *
+<<<<<<< HEAD
      * @param class-string<Model> $modelClass
+=======
+     * @param  class-string<Model>  $modelClass
+>>>>>>> 6ed19256f (.)
      */
     public static function updateModelCount(string $modelClass, int $total): void
     {
         if (! class_exists($modelClass)) {
+<<<<<<< HEAD
             throw new \InvalidArgumentException("Model class [{$modelClass}] does not exist");
+=======
+            throw new InvalidArgumentException("Model class [{$modelClass}] does not exist");
+>>>>>>> 6ed19256f (.)
         }
 
         /** @var Model $model */
         $model = app($modelClass);
         if (! $model instanceof Model) {
+<<<<<<< HEAD
             throw new \InvalidArgumentException("Class [{$modelClass}] must be an instance of ".Model::class);
+=======
+            throw new InvalidArgumentException("Class [{$modelClass}] must be an instance of ".Model::class);
+>>>>>>> 6ed19256f (.)
         }
 
         $connection = $model->getConnection();
@@ -129,18 +163,30 @@ class InformationSchemaTable extends BaseModel
     /**
      * Restituisce il numero di record per un modello.
      *
+<<<<<<< HEAD
      * @param class-string<Model> $modelClass
+=======
+     * @param  class-string<Model>  $modelClass
+>>>>>>> 6ed19256f (.)
      */
     public static function getModelCount(string $modelClass): int
     {
         if (! class_exists($modelClass)) {
+<<<<<<< HEAD
             throw new \InvalidArgumentException("Model class [{$modelClass}] does not exist");
+=======
+            throw new InvalidArgumentException("Model class [{$modelClass}] does not exist");
+>>>>>>> 6ed19256f (.)
         }
 
         /** @var Model $model */
         $model = app($modelClass);
         if (! $model instanceof Model) {
+<<<<<<< HEAD
             throw new \InvalidArgumentException("Class [{$modelClass}] must be an instance of ".Model::class);
+=======
+            throw new InvalidArgumentException("Class [{$modelClass}] must be an instance of ".Model::class);
+>>>>>>> 6ed19256f (.)
         }
 
         $connection = $model->getConnection();
@@ -153,7 +199,11 @@ class InformationSchemaTable extends BaseModel
             'table_name' => $table,
         ]);
 
+<<<<<<< HEAD
         if (null === $record->table_rows) {
+=======
+        if ($record->table_rows === null) {
+>>>>>>> 6ed19256f (.)
             $record->update(['table_rows' => $model->count()]);
         }
 

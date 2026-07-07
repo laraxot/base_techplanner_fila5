@@ -328,10 +328,18 @@ Applicando questi pattern abbiamo ottenuto:
 - [Registration Widget Test Strategy](./registration-widget-test-strategy.md)
 
 ### **Root Documentation**
+<<<<<<< HEAD
 - [Testing Organization](../../../../../docs/testing-organization.md)
+=======
+- [Testing Organization](../../../../docs/testing-organization.md)
+>>>>>>> 6ed19256f (.)
 - [<nome progetto> Testing Architecture](../../../<nome progetto>/docs/testing.md)
 
 ---
 **Ultimo aggiornamento**: Gennaio 2025
 **Status**: ✅ PRODUCTION READY
+<<<<<<< HEAD
 **Verified**: 9 test / 4.44s / 100% pass rate
+=======
+**Verified**: 9 test / 4.44s / 100% pass rate
+>>>>>>> 6ed19256f (.)

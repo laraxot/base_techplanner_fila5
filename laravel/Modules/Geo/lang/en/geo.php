@@ -190,6 +190,7 @@ return [
             'date_range' => 'Periodo',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
@@ -223,4 +224,6 @@ return [
         'no_results' => 'No results',
         'coordinates_set' => 'Coordinates set',
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

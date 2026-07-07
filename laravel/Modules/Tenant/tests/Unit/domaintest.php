@@ -2,11 +2,17 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Tenant\Tests\Unit;
 
 use Modules\Tenant\Actions\Domains\GetDomainsArrayAction;
 use Modules\Tenant\Models\Domain;
 use Modules\Tenant\Tests\TestCase;
+=======
+use Modules\Tenant\Actions\Domains\GetDomainsArrayAction;
+use Modules\Tenant\Models\Domain;
+use Tests\TestCase;
+>>>>>>> 6ed19256f (.)
 
 uses(TestCase::class);
 
@@ -18,7 +24,11 @@ test('domain model can be instantiated', function (): void {
 
 test('get rows method works correctly', function (): void {
     // Mock della Action GetDomainsArrayAction
+<<<<<<< HEAD
     $this->mock(GetDomainsArrayAction::class, function ($mock): void {
+=======
+    $this->mock(GetDomainsArrayAction::class, function ($mock) {
+>>>>>>> 6ed19256f (.)
         $mock
             ->shouldReceive('execute')
             ->once()

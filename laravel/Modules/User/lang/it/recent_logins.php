@@ -8,6 +8,7 @@ return [
             'name' => [
                 'label' => 'authenticatable.name',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -66,6 +67,35 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'login_at' => [
+            'label' => 'login_at',
+        ],
+        'ip_address' => [
+            'label' => 'ip_address',
+        ],
+        'user_agent' => [
+            'label' => 'user_agent',
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+        ],
+        'user' => [
+            'label' => 'user',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -99,6 +129,7 @@ return [
             'icon' => 'openFilters',
             'label' => 'openFilters',
         ],
+<<<<<<< HEAD
         'resetColumnManager' => [
             'tooltip' => 'resetColumnManager',
             'icon' => 'resetColumnManager',
@@ -118,4 +149,10 @@ return [
     ],
     'label' => 'Recent Logins',
     'plural_label' => 'Recent Logins (Plurale)',
+=======
+    ],
+    'navigation' => [],
+    'label' => '',
+    'plural_label' => '',
+>>>>>>> 6ed19256f (.)
 ];

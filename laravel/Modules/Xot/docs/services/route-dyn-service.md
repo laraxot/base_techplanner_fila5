@@ -44,6 +44,7 @@ Determina il nome del controller basandosi sulla configurazione.
 ]
 ```
 
+<<<<<<< HEAD
 ### Contratto tipizzato consigliato
 
 Per ridurre errori PHPStan su `mixed`, array access e narrowing runtime, il payload di configurazione deve restare coerente con questa shape minima:
@@ -71,6 +72,8 @@ Linee guida operative:
 - `method` puo' essere stringa singola o lista di stringhe; il servizio la restringe a `array<int, string>`.
 - Per i risultati SQL/DBAL-like nei runtime helpers Xot, preferire extractor espliciti su `array|object` invece di property/offset access diretto su `mixed`.
 
+=======
+>>>>>>> 6ed19256f (.)
 ## Best Practices
 
 1. **Organizzazione delle Rotte**
@@ -129,4 +132,8 @@ Il servizio è coperto da test unitari completi che verificano:
 Per eseguire i test:
 ```bash
 php artisan test --filter=RouteDynServiceTest
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> 6ed19256f (.)

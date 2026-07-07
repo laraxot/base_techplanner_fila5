@@ -1,7 +1,10 @@
 # PHPStan Level 10 Compliance Status
 
 **Last Updated**: 2025-12-10
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 **Status**: ✅ FULLY COMPLIANT (0 errors)
 
 ## Summary
@@ -69,4 +72,8 @@ To maintain PHPStan compliance:
 - [Filament Components](filament-components.md)
 - [State Management](state-management.md)
 - [Custom Table Columns](custom-table-columns.md)
+<<<<<<< HEAD
 - [Form Components](form-components.md)
+=======
+- [Form Components](form-components.md)
+>>>>>>> 6ed19256f (.)

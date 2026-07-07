@@ -2,10 +2,16 @@
 
 ## Informazioni Generali
 
+<<<<<<< HEAD
 - **File**: `Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php`
 - **File**: `Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php`
 - **File**: `Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php`
 - **File**: `/var/www/html/Quaeris/laravel/Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php`
+=======
+- **File**: `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php`
+- **File**: `/var/www/html/saluteora/laravel/Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php`
+- **File**: `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php`
+>>>>>>> 6ed19256f (.)
 - **Base**: `XotBaseMigration`
 - **Tabella**: `mail_templates`
 
@@ -222,7 +228,11 @@ public function tableUpdate(\Closure $next, ?string $table = null): void
 
 ## Informazioni Generali
 
+<<<<<<< HEAD
 - **File**: `Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php`
+=======
+- **File**: `/var/www/html/<directory progetto>/laravel/Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php`
+>>>>>>> 6ed19256f (.)
 - **Base**: `XotBaseMigration`
 - **Tabella**: `mail_templates`
 
@@ -435,6 +445,9 @@ public function tableUpdate(\Closure $next, ?string $table = null): void
 - [Documentazione XotBaseMigration](../Xot/docs/XotBaseMigration.md)
 - [Best Practices Migrazioni](./MIGRATION_BEST_PRACTICES.md)
 - [Gestione Errori](./ERROR_HANDLING.md)
+<<<<<<< HEAD
 - [Documentazione XotBaseMigration](../xot/docs/xotbasemigration.md)
 - [Best Practices Migrazioni](./migration_best_practices.md)
 - [Gestione Errori](./error_handling.md)
+=======
+>>>>>>> 6ed19256f (.)

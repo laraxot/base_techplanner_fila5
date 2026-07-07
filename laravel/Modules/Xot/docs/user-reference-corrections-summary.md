@@ -147,4 +147,8 @@ $userClass = XotData::make()->getUserClass();
 
 ---
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-10*
+=======
+*Ultimo aggiornamento: 2025-01-10*
+>>>>>>> 6ed19256f (.)

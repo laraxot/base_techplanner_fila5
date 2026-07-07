@@ -69,7 +69,10 @@
 
 ## Collegamenti
 - [WIDGETS_STRUCTURE.md](../WIDGETS_STRUCTURE.md) — Regole di struttura per widget Filament nel modulo User.
+<<<<<<< HEAD
 - [WIDGETS_STRUCTURE.md](../widgets_structure.md) — Regole di struttura per widget Filament nel modulo User.
+=======
+>>>>>>> 6ed19256f (.)
 - [filament_best_practices.md](filament_best_practices.md) — Best practices per risorse Filament.
 - [login-widget-conversion.md](login-widget-conversion.md) — Conversione del componente Livewire a LoginWidget.
 # Analisi Dettagliata di LoginWidget
@@ -143,6 +146,11 @@
 
 ## Collegamenti
 - [WIDGETS_STRUCTURE.md](../WIDGETS_STRUCTURE.md) — Regole di struttura per widget Filament nel modulo User.
+<<<<<<< HEAD
 - [WIDGETS_STRUCTURE.md](../widgets_structure.md) — Regole di struttura per widget Filament nel modulo User.
 - [filament_best_practices.md](filament_best_practices.md) — Best practices per risorse Filament.
 - [login-widget-conversion.md](login-widget-conversion.md) — Conversione del componente Livewire a LoginWidget.
+=======
+- [filament_best_practices.md](filament_best_practices.md) — Best practices per risorse Filament.
+- [login-widget-conversion.md](login-widget-conversion.md) — Conversione del componente Livewire a LoginWidget.
+>>>>>>> 6ed19256f (.)

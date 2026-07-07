@@ -5,7 +5,10 @@ ffmpeg -i in.mp4 -c:v libvpx-vp9 -threads 4 out.mp4
 ffmpeg -i input.mp4 -c:v libvpx-vp9 -preset ultrafast -b:v 1M -c:a libvorbis output.webm
 ffmpeg -i input.mp4 -c:v libvpx-vp9 -preset ultrafast -b:v 1M -c:a libvorbis -threads 4 -speed 4 output.webm
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 -i input.mp4: Specifica il file di input.
 -c:v libvpx-vp9: Utilizza il codec video VP9 per WebM.
 -preset ultrafast: Imposta il preset di velocità su ultrafast.
@@ -39,6 +42,7 @@ ffmpeg -h encoder=hevc_nvenc
 
 ----------------------------------
 ffmpeg -h encoder=hevc_nvenc
+<<<<<<< HEAD
 ---
 module: theme
 topic: webm
@@ -46,3 +50,5 @@ canonical: ../../../Themes/docs/shared-components/webm.txt
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/webm.txt
+=======
+>>>>>>> 6ed19256f (.)

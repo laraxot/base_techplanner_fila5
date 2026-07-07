@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 # Autenticazione in <nome progetto>
 
 ## Panoramica
 Il sistema di autenticazione in <nome progetto> è basato su Laravel Volt e supporta sia l'autenticazione tradizionale che quella sociale.
+=======
+# Autenticazione in Predict
+
+## Panoramica
+Il sistema di autenticazione in Predict è basato su Laravel Volt e supporta sia l'autenticazione tradizionale che quella sociale.
+>>>>>>> 6ed19256f (.)
 
 ## Configurazione
 
@@ -40,23 +47,40 @@ class LoginComponent extends Component
 {
     #[Validate('required|email')]
     public string $email = '';
+<<<<<<< HEAD
     
     #[Validate('required')]
     public string $password = '';
     
+=======
+
+    #[Validate('required')]
+    public string $password = '';
+
+>>>>>>> 6ed19256f (.)
     public bool $remember = false;
 
     public function authenticate(): RedirectResponse
     {
         $this->validate();
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         if (!Auth::attempt(['email' => $this->email, 'password' => $this->password], $this->remember)) {
             $this->addError('email', trans('auth.failed'));
             return back();
         }
+<<<<<<< HEAD
         
         event(new Login('web', User::where('email', $this->email)->first(), $this->remember));
         
+=======
+
+        event(new Login('web', User::where('email', $this->email)->first(), $this->remember));
+
+>>>>>>> 6ed19256f (.)
         return redirect()->intended('/');
     }
 }
@@ -123,10 +147,18 @@ Route::middleware('guest')->group(function () {
 3. **Problemi di Sessione**
    - Verificare la configurazione della sessione
    - Controllare il middleware web
+<<<<<<< HEAD
    - Verificare la configurazione del cookie 
+=======
+   - Verificare la configurazione del cookie
+>>>>>>> 6ed19256f (.)
 
 ## Implementazioni Specifiche
 
 ### Logout con Volt e Folio
+<<<<<<< HEAD
 Per dettagli sull'implementazione del logout utilizzando Volt e Folio, consultare la [documentazione del modulo User](../laravel/Modules/User/project_docs/VOLT_FOLIO_LOGOUT_ERROR.md). 
 Per dettagli sull'implementazione del logout utilizzando Volt e Folio, consultare la [documentazione del modulo User](../laravel/modules/user/project_docs/volt_folio_logout_error.md). 
+=======
+Per dettagli sull'implementazione del logout utilizzando Volt e Folio, consultare la [documentazione del modulo User](../laravel/Modules/User/project_docs/VOLT_FOLIO_LOGOUT_ERROR.md).
+>>>>>>> 6ed19256f (.)

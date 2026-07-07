@@ -1,3 +1,29 @@
+<<<<<<< HEAD
+=======
+# Struttura delle Pagine con Laravel Folio
+
+## Introduzione
+
+Laravel Folio viene utilizzato per gestire le pagine frontend del tema One. Questo documento spiega come sono organizzate le pagine e quali convenzioni seguire.
+
+## Struttura delle Directory
+
+```
+Themes/One/resources/views/pages/
+├── index.blade.php             # Homepage principale
+├── about.blade.php             # Pagina "Chi siamo"
+├── pages/                      # Sottocartella per le pagine dinamiche
+│   ├── index.blade.php         # Indice delle pagine dinamiche
+│   └── [slug].blade.php        # Gestore per le pagine dinamiche dal CMS
+└── ... altre sezioni ...
+```
+
+## Convenzioni di Nomenclatura
+
+Laravel Folio utilizza delle convenzioni specifiche:
+
+- `/` → `index.blade.php`
+>>>>>>> 6ed19256f (.)
 - `/pages` → `pages/index.blade.php`
 - `/pages/{slug}` → `pages/[slug].blade.php`
 
@@ -17,7 +43,11 @@ name('page_slug.view');
 render(function (View $view, string $slug) {
     $locale = app()->getLocale();
     $page = Page::firstWhere(['slug' => $slug]);
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     return $view->with('page', $page);
 });
 ?>
@@ -69,7 +99,11 @@ render(function (View $view) {
 ### Prefissi di Lingua negli URL
 
  utilizza prefissi di lingua negli URL. Tutti i link devono includere la locale corrente:
+<<<<<<< HEAD
 <nome progetto> utilizza prefissi di lingua negli URL. Tutti i link devono includere la locale corrente:
+=======
+SaluteOra utilizza prefissi di lingua negli URL. Tutti i link devono includere la locale corrente:
+>>>>>>> 6ed19256f (.)
 
 ```
 /{locale}/percorso/pagina
@@ -220,7 +254,11 @@ render(function (View $view) {
 ### Prefissi di Lingua negli URL
 
 <nome progetto> utilizza prefissi di lingua negli URL. Tutti i link devono includere la locale corrente:
+<<<<<<< HEAD
 <nome progetto> utilizza prefissi di lingua negli URL. Tutti i link devono includere la locale corrente:
+=======
+SaluteOra utilizza prefissi di lingua negli URL. Tutti i link devono includere la locale corrente:
+>>>>>>> 6ed19256f (.)
 
 ```
 /{locale}/percorso/pagina
@@ -277,6 +315,7 @@ Per creare una nuova pagina nel tema One:
 - Verificare che il modello `Page` contenga lo slug corretto
 - Controllare i logs per eventuali errori
 - Se i link non funzionano, assicurarsi che includano la locale corrente (ad es. `/it/pages/pagina`)
+<<<<<<< HEAD
 ---
 module: theme
 topic: folio-pages
@@ -284,3 +323,5 @@ canonical: ../../../../../Themes/docs/shared-components/folio-pages-1.md
 ---
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/folio-pages-1.md
+=======
+>>>>>>> 6ed19256f (.)

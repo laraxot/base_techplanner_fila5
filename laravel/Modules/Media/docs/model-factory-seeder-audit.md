@@ -1,7 +1,10 @@
 # Model/Factory/Seeder Audit
 
 Generated: 2025-08-22 16:29
+<<<<<<< HEAD
 Generated: [DATE] 16:29
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Coverage
 | Model | Factory | Seeded |
@@ -16,4 +19,8 @@ Seeder: `database/seeders/MediaDatabaseSeeder.php`
 - Add exemplar seeding for Media, TemporaryUpload (small count) in `MediaDatabaseSeeder` or dedicated seeders.
 
 ## Likely non-business-critical
+<<<<<<< HEAD
 - None; all three are concrete but can be optionally seeded for demos/tests.
+=======
+- None; all three are concrete but can be optionally seeded for demos/tests.
+>>>>>>> 6ed19256f (.)

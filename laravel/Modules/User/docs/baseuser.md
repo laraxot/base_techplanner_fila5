@@ -47,11 +47,14 @@ This document outlines the structure and usage of the `BaseUser` model within a 
 - Update this document if significant changes are made to the `BaseUser` structure or functionality.
 
 ## Links to Related Documentation
+<<<<<<< HEAD
 - [User Module Index](./index.md)
 - [Authentication Pages Implementation](./auth_pages_implementation.md)
 - [Profile Management](./profile_management.md)
 - [Routing Best Practices](./routing_best_practices.md)
 - [Session Management](./session_management.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [User Module Index](./INDEX.md)
 - [Authentication Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
 - [Profile Management](./PROFILE_MANAGEMENT.md)
@@ -64,4 +67,8 @@ This document outlines the structure and usage of the `BaseUser` model within a 
 - [[Tenant]]
 - [[Device]]
 - [[SocialiteUser]]
+<<<<<<< HEAD
 - [[AuthenticationLog]]
+=======
+- [[AuthenticationLog]]
+>>>>>>> 6ed19256f (.)

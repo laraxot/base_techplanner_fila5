@@ -1,4 +1,22 @@
+<<<<<<< HEAD
 - [XotBaseWidget](../Xot/docs/filament/widgets/xotbasewidget.md) - Classe base per tutti i widget
+=======
+# Filament Widgets
+
+## Panoramica
+
+Questa sezione documenta l'implementazione e l'utilizzo dei widget Filament nel progetto. I widget forniscono componenti riutilizzabili per dashboard e interfacce amministrative.
+
+## Struttura
+
+Il sistema di widget è organizzato attorno a classi base che forniscono funzionalità comuni e standardizzano l'implementazione.
+
+## Widget Disponibili
+
+### Widget Base
+
+- [XotBaseWidget](/var/www/html/base_generic/laravel/Modules/Xot/docs/filament/widgets/xotbasewidget.md) - Classe base per tutti i widget
+>>>>>>> 6ed19256f (.)
 
 ## Best Practices
 
@@ -25,6 +43,7 @@ class DashboardStatsWidget extends XotBaseWidget
     }
 }
 ```
+<<<<<<< HEAD
 # Wizard Widget Documentation — Indice Completo
 
 **Status**: Active  
@@ -234,3 +253,5 @@ Prima di committare un wizard widget, verifica TUTTI i punti:
 ---
 
 *Ultimo aggiornamento: 2026-04-14*
+=======
+>>>>>>> 6ed19256f (.)

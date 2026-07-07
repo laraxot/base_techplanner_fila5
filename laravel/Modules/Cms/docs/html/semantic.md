@@ -150,6 +150,11 @@ Contenuto autonomo con didascalia:
 - [Struttura Layout](../structure/layout.md)
 - [Componenti HTML](../components/html.md)
 - [Accessibilità](../accessibility/README.md)
+<<<<<<< HEAD
 - [Accessibilità](../accessibility/readme.md)
 
 [Fonte: W3Schools](https://www.w3schools.com/html/html5_semantic_elements.asp)
+=======
+
+[Fonte: W3Schools](https://www.w3schools.com/html/html5_semantic_elements.asp)
+>>>>>>> 6ed19256f (.)

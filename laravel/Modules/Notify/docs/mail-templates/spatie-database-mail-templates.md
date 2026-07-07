@@ -23,9 +23,15 @@ Il pacchetto funziona con i seguenti componenti principali:
 In questo progetto, i layout HTML delle email sono memorizzati in:
 
 ```
+<<<<<<< HEAD
 Modules/Notify/resources/mail-layouts/
 Modules/Notify/resources/mail-layouts/
 Modules/Notify/resources/mail-layouts/
+=======
+/var/www/html/base_techplanner_fila3_mono/laravel/Modules/Notify/resources/mail-layouts/
+/var/www/html/base_saluteora/laravel/Modules/Notify/resources/mail-layouts/
+/var/www/html/base_techplanner_fila3_mono/laravel/Modules/Notify/resources/mail-layouts/
+>>>>>>> 6ed19256f (.)
 ```
 
 Questi layout forniscono la struttura base per tutte le email, con un placeholder `{{{ body }}}` dove verrà inserito il contenuto specifico del template.
@@ -39,7 +45,11 @@ public function getHtmlLayout(): string
 {
     // Percorso al layout HTML
     $pathToLayout = base_path('Modules/Notify/resources/mail-layouts/main.html');
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // Legge il contenuto del file e lo restituisce
     return file_get_contents($pathToLayout);
 }
@@ -61,7 +71,11 @@ class WelcomeMail extends TemplateMailable
 {
     /** @var string */
     public $name;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     /** @var string */
     public $activationUrl;
 
@@ -70,12 +84,20 @@ class WelcomeMail extends TemplateMailable
         $this->name = $user->name;
         $this->activationUrl = $activationUrl;
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function getHtmlLayout(): string
     {
         // Percorso al layout HTML
         $pathToLayout = base_path('Modules/Notify/resources/mail-layouts/main.html');
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         return file_get_contents($pathToLayout);
     }
 }
@@ -92,9 +114,15 @@ MailTemplate::create([
     'subject' => 'Benvenuto su <nome progetto>, {{ name }}',
     'html_template' => '<h1>Ciao, {{ name }}!</h1><p>Benvenuto su <nome progetto>. Clicca <a href="{{ activationUrl }}">qui</a> per attivare il tuo account.</p>',
     'text_template' => 'Ciao, {{ name }}! Benvenuto su <nome progetto>. Visita {{ activationUrl }} per attivare il tuo account.'
+<<<<<<< HEAD
     'subject' => 'Benvenuto su <nome progetto>, {{ name }}',
     'html_template' => '<h1>Ciao, {{ name }}!</h1><p>Benvenuto su <nome progetto>. Clicca <a href="{{ activationUrl }}">qui</a> per attivare il tuo account.</p>',
     'text_template' => 'Ciao, {{ name }}! Benvenuto su <nome progetto>. Visita {{ activationUrl }} per attivare il tuo account.'
+=======
+    'subject' => 'Benvenuto su SaluteOra, {{ name }}',
+    'html_template' => '<h1>Ciao, {{ name }}!</h1><p>Benvenuto su SaluteOra. Clicca <a href="{{ activationUrl }}">qui</a> per attivare il tuo account.</p>',
+    'text_template' => 'Ciao, {{ name }}! Benvenuto su SaluteOra. Visita {{ activationUrl }} per attivare il tuo account.'
+>>>>>>> 6ed19256f (.)
 ]);
 ```
 
@@ -128,10 +156,17 @@ Un layout HTML contiene l'intera struttura della mail, con un segnaposto `{{{ bo
 <head>
     <meta charset="utf-8">
     <title><nome progetto></title>
+<<<<<<< HEAD
     <title><nome progetto></title>
     <style>
         /* Stili CSS inline */
         body { 
+=======
+    <title>SaluteOra</title>
+    <style>
+        /* Stili CSS inline */
+        body {
+>>>>>>> 6ed19256f (.)
             font-family: Arial, sans-serif;
             line-height: 1.6;
             color: #333;
@@ -159,6 +194,7 @@ Un layout HTML contiene l'intera struttura della mail, con un segnaposto `{{{ bo
 <body>
     <div class="header">
         <h1><nome progetto></h1>
+<<<<<<< HEAD
         <h1><nome progetto></h1>
     </div>
     
@@ -169,6 +205,18 @@ Un layout HTML contiene l'intera struttura della mail, con un segnaposto `{{{ bo
     <div class="footer">
         <p>© 2025 <nome progetto> - Tutti i diritti riservati</p>
         <p>© 2025 <nome progetto> - Tutti i diritti riservati</p>
+=======
+        <h1>SaluteOra</h1>
+    </div>
+
+    <div class="content">
+        {{{ body }}}
+    </div>
+
+    <div class="footer">
+        <p>© 2025 <nome progetto> - Tutti i diritti riservati</p>
+        <p>© 2025 SaluteOra - Tutti i diritti riservati</p>
+>>>>>>> 6ed19256f (.)
         <p>Se hai ricevuto questa email per errore, per favore ignorala o contattaci.</p>
     </div>
 </body>
@@ -181,7 +229,11 @@ Il template specifico dell'email (memorizzato nel campo `html_template` del mode
 
 ```html
 <h2>Benvenuto su <nome progetto>, {{ name }}!</h2>
+<<<<<<< HEAD
 <h2>Benvenuto su <nome progetto>, {{ name }}!</h2>
+=======
+<h2>Benvenuto su SaluteOra, {{ name }}!</h2>
+>>>>>>> 6ed19256f (.)
 
 <p>Siamo felici di darti il benvenuto sulla nostra piattaforma.</p>
 
@@ -197,7 +249,11 @@ Il template specifico dell'email (memorizzato nel campo `html_template` del mode
 <p>{{ activationUrl }}</p>
 
 <p>Grazie,<br>Il team di <nome progetto></p>
+<<<<<<< HEAD
 <p>Grazie,<br>Il team di <nome progetto></p>
+=======
+<p>Grazie,<br>Il team di SaluteOra</p>
+>>>>>>> 6ed19256f (.)
 ```
 
 ## Best Practices

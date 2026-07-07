@@ -31,5 +31,8 @@ return new class extends Migration
         Schema::dropIfExists('menus');
     }
 };
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 6ed19256f (.)

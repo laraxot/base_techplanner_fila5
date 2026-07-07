@@ -201,6 +201,7 @@ This project is distributed under the MIT license. See the [LICENSE](LICENSE) fi
 Este proyecto está distribuido bajo la licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
 
 ---
+<<<<<<< HEAD
 # 🏢 Tenant
 
 [![Domain-Multi-Tenant](https://img.shields.io/badge/Domain-Multi--Tenant-283593.svg)](#)
@@ -257,3 +258,5 @@ Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 ---
 
 **Modulo** `tenant` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+>>>>>>> 6ed19256f (.)

@@ -1,7 +1,10 @@
 # Gestione della Homepage in il progetto
 
 Questo documento fornisce una panoramica generale della gestione della homepage in il progetto. Per i dettagli tecnici dell'implementazione, consultare la [documentazione tecnica nel modulo CMS](../laravel/Modules/Cms/project_docs/homepage.md).
+<<<<<<< HEAD
 Questo documento fornisce una panoramica generale della gestione della homepage in il progetto. Per i dettagli tecnici dell'implementazione, consultare la [documentazione tecnica nel modulo CMS](../laravel/modules/cms/project_docs/homepage.md).
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Panoramica
 
@@ -36,7 +39,10 @@ Il file `1.json` contiene la struttura completa della homepage:
     "id": "1",
     "title": {
         "it": "il progetto - Promozione della <slogan> per le gestanti"
+<<<<<<< HEAD
         "it": "il progetto - Promozione della salute orale per le gestanti"
+=======
+>>>>>>> 6ed19256f (.)
     },
     "slug": "home",
     "content_blocks": {
@@ -113,12 +119,19 @@ Per i dettagli tecnici sulla gestione dei contenuti, consultare:
 - [Documentazione Tecnica CMS](../laravel/Modules/Cms/project_docs/homepage.md)
 - [Gestione dei Blocchi](../laravel/Modules/Cms/project_docs/content-blocks.md)
 - [Sistema dei Temi](../laravel/Modules/Cms/project_docs/themes.md)
+<<<<<<< HEAD
 - [Documentazione Tecnica CMS](../laravel/modules/cms/project_docs/homepage.md)
 - [Gestione dei Blocchi](../laravel/modules/cms/project_docs/content-blocks.md)
 - [Sistema dei Temi](../laravel/modules/cms/project_docs/themes.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Collegamenti alla Documentazione
 
 - [Architettura del Frontoffice](./architettura_frontoffice.md)
 - [Linee Guida per la Documentazione](./linee-guida-documentazione.md)
+<<<<<<< HEAD
 - [Standard di Codice](./standard-codice.md)
+=======
+- [Standard di Codice](./standard-codice.md)
+>>>>>>> 6ed19256f (.)

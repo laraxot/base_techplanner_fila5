@@ -105,7 +105,11 @@ public function boot(): void
 **Senza namespace**:
 ```blade
 {{-- Deve sapere il percorso esatto --}}
+<<<<<<< HEAD
 @include('Modules/Activity/resources/views/filament/pages/list-log-activities.blade.php')
+=======
+@include('/var/www/html/ptvx/laravel/Modules/Activity/resources/views/filament/pages/list-log-activities.blade.php')
+>>>>>>> 6ed19256f (.)
 ```
 
 **Con namespace**:
@@ -225,7 +229,11 @@ Per ogni modulo con `$name = 'Activity'`:
 
 ```php
 $path = app(GetViewNameSpacePathAction::class)->execute('activity');
+<<<<<<< HEAD
 // Ritorna: "Modules/Activity/resources/views"
+=======
+// Ritorna: "/var/www/html/ptvx/laravel/Modules/Activity/resources/views"
+>>>>>>> 6ed19256f (.)
 ```
 
 **Implementazione**:
@@ -262,10 +270,17 @@ php artisan tinker
 // Output esempio:
 => [
      "activity" => [
+<<<<<<< HEAD
        "Modules/Activity/resources/views",
      ],
      "xot" => [
        "Modules/Xot/resources/views",
+=======
+       "/var/www/html/ptvx/laravel/Modules/Activity/resources/views",
+     ],
+     "xot" => [
+       "/var/www/html/ptvx/laravel/Modules/Xot/resources/views",
+>>>>>>> 6ed19256f (.)
      ],
      // ...
    ]
@@ -535,7 +550,10 @@ Il sistema `nwidart/laravel-modules` scansiona e registra automaticamente i modu
 
 ### Documentazione Correlata
 - [Activity Module - Errore No Hint Path](../../Activity/docs/errori/no-hint-path-defined.md)
+<<<<<<< HEAD
 - [Activity Module - Errore No Hint Path](../../activity/docs/errori/no-hint-path-defined.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [View Namespace Resolution System](./view-namespace-resolution.md)
 - [Module Discovery Process](./module-discovery.md)
 
@@ -548,4 +566,8 @@ Il sistema `nwidart/laravel-modules` scansiona e registra automaticamente i modu
 
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **Versione Laravel**: 12.35.1
+<<<<<<< HEAD
 **Filosofia**: DRY + KISS per registrazione automatica risorse modulari
+=======
+**Filosofia**: DRY + KISS per registrazione automatica risorse modulari
+>>>>>>> 6ed19256f (.)

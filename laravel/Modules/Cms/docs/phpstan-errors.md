@@ -1,7 +1,10 @@
 # PHPStan Errors - Cms Module
 
 **Date**: 2025-12-16
+<<<<<<< HEAD
 **Date**: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 **PHPStan Level**: 10
 **Total Errors in Module**: ~15
 
@@ -331,11 +334,18 @@ Same as Error 1 - correct the import and add proper type hint.
 **Owner**: Cms Module Team
 **Last Updated**: 2025-12-16
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 ---
 
 ## Related Documentation
 
 - [Spatie Laravel Data Documentation](https://spatie.be/docs/laravel-data)
 - [DataCollection Usage](https://spatie.be/docs/laravel-data/v3/as-a-data-transfer-object/collections)
+<<<<<<< HEAD
 - [UserContract Interface](../../Xot/Contracts/UserContract.php)
+=======
+- [UserContract Interface](../../Xot/Contracts/UserContract.php)
+>>>>>>> 6ed19256f (.)

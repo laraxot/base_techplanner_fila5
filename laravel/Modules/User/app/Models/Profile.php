@@ -6,12 +6,19 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+=======
+>>>>>>> 6ed19256f (.)
 use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Support\Carbon;
 use Modules\Media\Models\Media;
 use Modules\User\Contracts\UserContract;
+<<<<<<< HEAD
+=======
+use Modules\User\Database\Factories\ProfileFactory;
+>>>>>>> 6ed19256f (.)
 use Modules\Xot\Contracts\ProfileContract;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
@@ -66,6 +73,10 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @property UserContract|null                                         $user
  * @property string|null                                               $user_name
  *
+<<<<<<< HEAD
+=======
+ * @method static ProfileFactory          factory($count = null, $state = [])
+>>>>>>> 6ed19256f (.)
  * @method static Builder<static>|Profile newModelQuery()
  * @method static Builder<static>|Profile newQuery()
  * @method static Builder<static>|Profile permission($permissions, $without = false)
@@ -86,6 +97,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @property string|null          $deleted_by
  * @property ProfileContract|null $deleter
  *
+<<<<<<< HEAD
  * @method static Builder<static>|Profile                         whereBio($value)
  * @method static Builder<static>|Profile                         whereCreatedAt($value)
  * @method static Builder<static>|Profile                         whereCreatedBy($value)
@@ -186,6 +198,21 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @method static Builder<static>|Profile whereIsActive($value)
  * @method static Builder<static>|Profile whereType($value)
  * @method static Builder<static>|Profile whereUserName($value)
+=======
+ * @method static Builder<static>|Profile whereBio($value)
+ * @method static Builder<static>|Profile whereCreatedAt($value)
+ * @method static Builder<static>|Profile whereCreatedBy($value)
+ * @method static Builder<static>|Profile whereDeletedAt($value)
+ * @method static Builder<static>|Profile whereDeletedBy($value)
+ * @method static Builder<static>|Profile whereEmail($value)
+ * @method static Builder<static>|Profile whereFirstName($value)
+ * @method static Builder<static>|Profile whereId($value)
+ * @method static Builder<static>|Profile whereLastName($value)
+ * @method static Builder<static>|Profile wherePhone($value)
+ * @method static Builder<static>|Profile whereUpdatedAt($value)
+ * @method static Builder<static>|Profile whereUpdatedBy($value)
+ * @method static Builder<static>|Profile whereUserId($value)
+>>>>>>> 6ed19256f (.)
  *
  * @mixin \Eloquent
  */
@@ -196,6 +223,7 @@ class Profile extends BaseProfile implements HasMedia
     use InteractsWithMedia;
 
     /**
+<<<<<<< HEAD
      * The table associated with the model.
      */
     protected $table = 'profiles';
@@ -204,6 +232,11 @@ class Profile extends BaseProfile implements HasMedia
      * Get the teams that the profile belongs to.
      */
     public function teams(): BelongsToMany
+=======
+     * Get the teams that the profile belongs to.
+     */
+    public function teams(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
+>>>>>>> 6ed19256f (.)
     {
         return $this->belongsToManyX(Team::class);
     }
@@ -229,6 +262,7 @@ class Profile extends BaseProfile implements HasMedia
     }
 
     /**
+<<<<<<< HEAD
      * Generate Schema.org ProfilePage/Person JSON-LD structured data.
      *
      * @see https://schema.org/Person
@@ -250,4 +284,11 @@ class Profile extends BaseProfile implements HasMedia
             'url' => url('/profile/'.$this->user_name),
         ];
     }
+=======
+     * The table associated with the model.
+     *
+     * @var string
+     */
+    protected $table = 'profiles';
+>>>>>>> 6ed19256f (.)
 }

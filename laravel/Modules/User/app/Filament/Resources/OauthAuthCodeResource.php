@@ -12,10 +12,19 @@ use Filament\Forms\Components\TextInput;
 use Filament\Resources\Pages\PageRegistration;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Str;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource\Pages\ListOauthAuthCodes;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource\Pages\ViewOauthAuthCode;
+=======
+use Filament\Tables\Table;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Str;
+use Modules\User\Filament\Resources\OauthAuthCodeResource\Pages;
+use Modules\User\Filament\Resources\OauthAuthCodeResource\Pages\ListOauthAuthCodes;
+use Modules\User\Filament\Resources\OauthAuthCodeResource\Pages\ViewOauthAuthCode;
+>>>>>>> 6ed19256f (.)
 use Modules\User\Models\OauthAuthCode;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 

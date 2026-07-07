@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 
 declare(strict_types=1);
 
@@ -40,3 +41,5 @@ Route::prefix('comune')->name('comune.')->group(function (): void {
     // Eventi
     Route::get('/eventi', [ComuneController::class, 'eventi'])->name('eventi');
 });
+=======
+>>>>>>> 6ed19256f (.)

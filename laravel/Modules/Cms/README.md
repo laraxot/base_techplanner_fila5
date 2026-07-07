@@ -149,6 +149,7 @@ Le pull request sono benvenute. Per modifiche importanti, aprire prima una issue
 ## Licenza
 
 MIT
+<<<<<<< HEAD
 # 📄 Cms
 
 [![Domain-CMS](https://img.shields.io/badge/Domain-CMS%20Folio-00838F.svg)](#)
@@ -205,3 +206,5 @@ Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 ---
 
 **Modulo** `cms` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+>>>>>>> 6ed19256f (.)

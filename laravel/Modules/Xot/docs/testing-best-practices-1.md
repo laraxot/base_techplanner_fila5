@@ -39,7 +39,11 @@ function mockXotData(): void
     $mockXotData = \Mockery::mock(\Modules\Xot\Datas\XotData::class)->makePartial();
 
     $mockXotData->shouldReceive('getUserClass')
+<<<<<<< HEAD
         ->andReturn(\Modules\<nome progetto>\Models\User::class);
+=======
+        ->andReturn(\Modules\SaluteOra\Models\User::class);
+>>>>>>> 6ed19256f (.)
 
     $mockXotData->shouldReceive('make')
         ->andReturn($mockXotData);
@@ -204,13 +208,23 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 
 ## 🔗 **Related Documentation**
 
+<<<<<<< HEAD
 - [Widget Test Patterns](../cms/docs/tests/widget-test-patterns.md)
 - [Architecture Separation Rules](../cms/docs/tests/architecture-separation-rules.md)
 - [XotData Testing Strategy](xotdata_testing.md)
+=======
+- [Widget Test Patterns](../Cms/docs/tests/widget-test-patterns.md)
+- [Architecture Separation Rules](../Cms/docs/tests/architecture-separation-rules.md)
+- [XotData Testing Strategy](XOTDATA_TESTING.md)
+>>>>>>> 6ed19256f (.)
 
 ---
 
 **Status**: ✅ Best Practices Validate
 **Enforcement**: Obbligatorio per tutti i test
 **Version**: 1.0 - Gold Standard
+<<<<<<< HEAD
 **Last Update**: Dicembre 2024
+=======
+**Last Update**: Dicembre 2024
+>>>>>>> 6ed19256f (.)

@@ -57,7 +57,10 @@ use Modules\Geo\Models\Province;
 
 Select::make('province')
     ->options(fn (Get $get) =>
+<<<<<<< HEAD
     ->options(fn (Get $get) => 
+=======
+>>>>>>> 6ed19256f (.)
         Province::where('region_id', $get('region'))
             ->orderBy('name')
             ->pluck('name', 'id')
@@ -76,7 +79,10 @@ use Modules\Geo\Models\City;
 
 Select::make('city')
     ->options(fn (Get $get) =>
+<<<<<<< HEAD
     ->options(fn (Get $get) => 
+=======
+>>>>>>> 6ed19256f (.)
         City::where('province_id', $get('province'))
             ->orderBy('name')
             ->pluck('name', 'id')
@@ -95,7 +101,10 @@ use Modules\Geo\Models\Cap;
 
 Select::make('cap')
     ->options(fn (Get $get) =>
+<<<<<<< HEAD
     ->options(fn (Get $get) => 
+=======
+>>>>>>> 6ed19256f (.)
         Cap::where('city_id', $get('city'))
             ->orderBy('code')
             ->pluck('code', 'id')
@@ -156,7 +165,10 @@ public function getFormSchema(): array
 
                 'province' => Select::make('province')
                     ->options(fn (Get $get) =>
+<<<<<<< HEAD
                     ->options(fn (Get $get) => 
+=======
+>>>>>>> 6ed19256f (.)
                         Province::where('region_id', $get('region'))
                             ->orderBy('name')
                             ->pluck('name', 'id')
@@ -170,7 +182,10 @@ public function getFormSchema(): array
 
                 'city' => Select::make('city')
                     ->options(fn (Get $get) =>
+<<<<<<< HEAD
                     ->options(fn (Get $get) => 
+=======
+>>>>>>> 6ed19256f (.)
                         City::where('province_id', $get('province'))
                             ->orderBy('name')
                             ->pluck('name', 'id')
@@ -184,7 +199,10 @@ public function getFormSchema(): array
 
                 'cap' => Select::make('cap')
                     ->options(fn (Get $get) =>
+<<<<<<< HEAD
                     ->options(fn (Get $get) => 
+=======
+>>>>>>> 6ed19256f (.)
                         Cap::where('city_id', $get('city'))
                             ->orderBy('code')
                             ->pluck('code', 'id')
@@ -221,7 +239,10 @@ public function getFormSchema(): array
 - [Clean Code](../../../docs/clean-code.md)
 
 **Nota:** Il namespace corretto per LocationForm è `Modules\Geo\Filament\Forms\LocationForm`. Non usare mai `Modules\Geo\App\Filament\Forms\LocationForm`.
+<<<<<<< HEAD
 - [Best Practices Filament](../../../../docs/project/filament-best-practices.md)
 - [Clean Code](../../../../docs/project/clean-code.md)
 
 **Nota:** Il namespace corretto per LocationForm è `Modules\Geo\Filament\Forms\LocationForm`. Non usare mai `Modules\Geo\App\Filament\Forms\LocationForm`. 
+=======
+>>>>>>> 6ed19256f (.)

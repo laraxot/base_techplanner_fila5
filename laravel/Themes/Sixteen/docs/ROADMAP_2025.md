@@ -528,4 +528,8 @@ Sixteen Theme
 
 ---
 
+<<<<<<< HEAD
 *Questa roadmap è specifica per il tema Sixteen e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
+=======
+*Questa roadmap è specifica per il tema Sixteen e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
+>>>>>>> 6ed19256f (.)

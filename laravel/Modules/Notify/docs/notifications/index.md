@@ -1,6 +1,7 @@
 # Indice Documentazione Notifiche
 
 ## Collegamenti Correlati
+<<<<<<< HEAD
 - [Indice Documentazione Notify](../index.md)
 - [README Modulo Notify](../readme.md)
 - [Documentazione Generale Quaeris](../../../../../../docs/readme.md)
@@ -13,6 +14,11 @@
 - [Indice Documentazione Notify](../INDEX.md)
 - [README Modulo Notify](../README.md)
 - [Documentazione Generale SaluteOra](../../../../../docs/README.md)
+=======
+- [Indice Documentazione Notify](../INDEX.md)
+- [README Modulo Notify](../README.md)
+- [Documentazione Generale <main module>](../../../../../docs/README.md)
+>>>>>>> 6ed19256f (.)
 - [Collegamenti Documentazione](../../../../../docs/collegamenti-documentazione.md)
 
 ## Guida Implementazione
@@ -23,6 +29,7 @@
 ## Canali di Notifica
 
 ### SMS
+<<<<<<< HEAD
 - [Implementazione SMS Dettagliata](./sms_implementation_details.md) - Dettagli implementativi per il canale SMS
 - [Configurazione Provider SMS](./sms_provider_configuration.md) - Configurazione dei provider SMS
 - [Implementazione Netfun SMS](./netfun_sms_implementation.md) - Implementazione specifica per il provider Netfun
@@ -39,6 +46,8 @@
 - [Implementazione SMS](../sms_implementation.md) - Panoramica dell'implementazione SMS
 - [Canale WhatsApp](../whatsapp_channel.md) - Documentazione del canale WhatsApp
 - [Canale Telegram](../telegram_channel.md) - Documentazione del canale Telegram
+=======
+>>>>>>> 6ed19256f (.)
 - [Implementazione SMS Dettagliata](./SMS_IMPLEMENTATION_DETAILS.md) - Dettagli implementativi per il canale SMS
 - [Configurazione Provider SMS](./SMS_PROVIDER_CONFIGURATION.md) - Configurazione dei provider SMS
 - [Implementazione Netfun SMS](./NETFUN_SMS_IMPLEMENTATION.md) - Implementazione specifica per il provider Netfun
@@ -57,10 +66,14 @@
 - [Canale Telegram](../TELEGRAM_CHANNEL.md) - Documentazione del canale Telegram
 
 ## Note Importanti
+<<<<<<< HEAD
 - SaluteOra utilizza il pattern Factory per la creazione delle azioni di invio messaggi
 
 ## Note Importanti
 - Quaeris utilizza il pattern Factory per la creazione delle azioni di invio messaggi
+=======
+- <main module> utilizza il pattern Factory per la creazione delle azioni di invio messaggi
+>>>>>>> 6ed19256f (.)
 - Il sistema si basa su Queueable Actions (spatie/laravel-queueable-action) e non su Service Pattern
 - Le azioni specifiche per provider devono implementare l'interfaccia comune corrispondente
 - I DTO standardizzati vengono utilizzati come ponte tra il sistema e i provider specifici
@@ -72,4 +85,8 @@
 3. I canali devono utilizzare le factory per la creazione delle azioni
 4. Le factory devono gestire la selezione del driver predefinito
 
+<<<<<<< HEAD
 Ultimo aggiornamento: 14 Maggio 2025
+=======
+Ultimo aggiornamento: 14 Maggio 2025
+>>>>>>> 6ed19256f (.)

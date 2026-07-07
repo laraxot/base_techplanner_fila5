@@ -13,6 +13,7 @@ return [
         'title' => 'Test',
         'body' => 'Toto je testovací zpráva pro záznam s ID: :id',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -26,4 +27,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

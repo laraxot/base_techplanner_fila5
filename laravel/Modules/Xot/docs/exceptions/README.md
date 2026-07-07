@@ -30,6 +30,7 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 5. Conforme alle convenzioni Laraxot/<nome progetto>
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Exception Handling Guidelines](../exception-handling-guide.md)
 - [Logging Best Practices](../logging-best-practices.md)
 ## Collegamenti tra versioni di README.md
@@ -109,6 +110,8 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 * [README.md](../../../cms/docs/components/readme.md)
 * [README.md](../../../../themes/two/docs/readme.md)
 * [README.md](../../../../themes/one/docs/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Exception Handling Guidelines](../EXCEPTION-HANDLING-GUIDE.md)
 - [Logging Best Practices](../LOGGING-BEST-PRACTICES.md)
 ## Collegamenti tra versioni di README.md
@@ -187,4 +190,8 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 * [README.md](../../../Cms/docs/frontoffice/README.md)
 * [README.md](../../../Cms/docs/components/README.md)
 * [README.md](../../../../Themes/Two/docs/README.md)
+<<<<<<< HEAD
 * [README.md](../../../../Themes/One/docs/README.md)
+=======
+* [README.md](../../../../Themes/One/docs/README.md)
+>>>>>>> 6ed19256f (.)

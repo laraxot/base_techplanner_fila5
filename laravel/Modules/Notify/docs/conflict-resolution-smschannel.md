@@ -1,8 +1,12 @@
 # Risoluzione Conflitti SmsChannel.php
 
 ## Contesto del Conflitto
+<<<<<<< HEAD
 **File**: `Modules/Notify/app/Channels/SmsChannel.php`
 **File**: `Modules/Notify/app/Channels/SmsChannel.php`
+=======
+**File**: `/var/www/html/ptvx/laravel/Modules/Notify/app/Channels/SmsChannel.php`
+>>>>>>> 6ed19256f (.)
 **Linee**: 55-58
 **Tipo**: Conflitto di formattazione (riga vuota aggiuntiva)
 
@@ -12,7 +16,10 @@ Il conflitto è molto semplice e riguarda solo la presenza di una riga vuota agg
 ### Versione HEAD
 ```php
 $action = $this->factory->create();
+<<<<<<< HEAD
         
+=======
+>>>>>>> 6ed19256f (.)
 
 return $action->execute($smsData);
 ```
@@ -42,7 +49,10 @@ Rimuovere i marker di conflitto mantenendo la versione HEAD con la riga vuota ag
 ## Codice Finale
 ```php
 $action = $this->factory->create();
+<<<<<<< HEAD
         
+=======
+>>>>>>> 6ed19256f (.)
 
 return $action->execute($smsData);
 ```
@@ -56,15 +66,22 @@ return $action->execute($smsData);
 - [Notify Module Documentation](README.md)
 - [SMS Channel Architecture](sms_channel_action_resolution.md)
 - [Root Conflict Resolution Guidelines](../../../docs/conflict-resolution-guidelines.md)
+<<<<<<< HEAD
 - [Notify Module Documentation](readme.md)
 - [SMS Channel Architecture](sms_channel_action_resolution.md)
 - [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 *Ultimo aggiornamento: giugno 2025*
 # Risoluzione Conflitti SmsChannel.php
 
 ## Contesto del Conflitto
+<<<<<<< HEAD
 **File**: `Modules/Notify/app/Channels/SmsChannel.php`
+=======
+**File**: `/var/www/html/ptvx/laravel/Modules/Notify/app/Channels/SmsChannel.php`
+>>>>>>> 6ed19256f (.)
 **Linee**: 55-58
 **Tipo**: Conflitto di formattazione (riga vuota aggiuntiva)
 
@@ -115,6 +132,12 @@ return $action->execute($smsData);
 ## Collegamenti
 - [Notify Module Documentation](README.md)
 - [SMS Channel Architecture](sms_channel_action_resolution.md)
+<<<<<<< HEAD
 - [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
+=======
+- [Root Conflict Resolution Guidelines](../../../project_docs/conflict-resolution-guidelines.md)
+
+*Ultimo aggiornamento: giugno 2025*
+>>>>>>> 6ed19256f (.)

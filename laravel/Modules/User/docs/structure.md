@@ -5,7 +5,11 @@ Data: 2025-04-23 19:09:56
 - **Namespace principale**: Modules\\User
 Modules\\User\\Database\\Factories
 Modules\\User\\Database\\Seeders
+<<<<<<< HEAD
 - **Pacchetto Composer**: laraxot/module_user_fila5
+=======
+- **Pacchetto Composer**: laraxot/module_user_fila3
+>>>>>>> 6ed19256f (.)
 Marco Sottana
 - **Dipendenze**: flowframe/laravel-trend * jenssegers/agent * laravel/passport * socialiteproviders/auth0 * spatie/laravel-personal-data-export * repositories type path url ../Xot type path url ../Tenant type path url ../UI
 - **Totale file PHP**: 673
@@ -595,6 +599,7 @@ tests_old
 - [Report PHPStan](/docs/phpstan/)
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/docs/structure.md)
+<<<<<<< HEAD
 * [structure.md](../../../gdpr/docs/structure.md)
 * [structure.md](../../../notify/docs/structure.md)
 * [structure.md](../../../xot/docs/structure.md)
@@ -628,6 +633,8 @@ tests_old
 * [structure.md](../../../cms/project_docs/structure.md)
 * [structure.md](../../../cms/project_docs/themes/structure.md)
 * [structure.md](../../../cms/project_docs/components/structure.md)
+=======
+>>>>>>> 6ed19256f (.)
 * [structure.md](../../../Gdpr/docs/structure.md)
 * [structure.md](../../../Notify/docs/structure.md)
 * [structure.md](../../../Xot/docs/structure.md)
@@ -660,4 +667,8 @@ tests_old
 * [structure.md](../../../Activity/project_docs/structure.md)
 * [structure.md](../../../Cms/project_docs/structure.md)
 * [structure.md](../../../Cms/project_docs/themes/structure.md)
+<<<<<<< HEAD
 * [structure.md](../../../Cms/project_docs/components/structure.md)
+=======
+* [structure.md](../../../Cms/project_docs/components/structure.md)
+>>>>>>> 6ed19256f (.)

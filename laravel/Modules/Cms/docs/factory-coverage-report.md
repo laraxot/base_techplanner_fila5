@@ -55,4 +55,8 @@ All factories have been tested and:
 - ✅ Support config hierarchy system
 
 ---
+<<<<<<< HEAD
 *Report generated automatically - Factory coverage: 100%*
+=======
+*Report generated automatically - Factory coverage: 100%*
+>>>>>>> 6ed19256f (.)

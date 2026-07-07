@@ -7,6 +7,7 @@ namespace Modules\Xot\Datas;
 use Spatie\LaravelData\Data;
 
 /**
+<<<<<<< HEAD
  * Class AuthData - Gestisce la configurazione dell'autenticazione.
  * Utilizzato esclusivamente nell'ambito dell'architettura Filament-first.
  *
@@ -30,6 +31,28 @@ final class AuthData extends Data
         ],
         public readonly bool $verifyEmail = true,
         public readonly int $passwordResetTimeout = 60,
+=======
+ * Class AuthData - Gestisce la configurazione dell'autenticazione per il framework Laraxot.
+ * Utilizzato esclusivamente nell'ambito dell'architettura Filament-first.
+ */
+class AuthData extends Data
+{
+    /**
+     * @param  string  $guard  Guard predefinita
+     * @param  array  $guards  Guards disponibili
+     * @param  array  $providers  Provider di autenticazione
+     * @param  bool  $verify_email  Se richiedere verifica email
+     * @param  int  $password_reset_timeout  Password reset timeout in minuti
+     * @param  array  $throttle  Configurazione throttling
+     * @param  array  $social  Provider social abilitati
+     */
+    public function __construct(
+        public readonly string $guard = 'web',
+        public readonly array $guards = ['web', 'api'],
+        public readonly array $providers = ['users' => ['driver' => 'eloquent', 'model' => '']],
+        public readonly bool $verify_email = true,
+        public readonly int $password_reset_timeout = 60,
+>>>>>>> 6ed19256f (.)
         public readonly array $throttle = [
             'enabled' => true,
             'decay_minutes' => 1,
@@ -47,8 +70,14 @@ final class AuthData extends Data
     /**
      * Create a new instance of AuthData with default values.
      */
+<<<<<<< HEAD
     public static function make(): self
     {
         return new self();
+=======
+    public static function make(): static
+    {
+        return new static();
+>>>>>>> 6ed19256f (.)
     }
 }

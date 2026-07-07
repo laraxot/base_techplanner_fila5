@@ -44,7 +44,11 @@ parameters:
 ### **2. Esecuzione Comando**
 ```bash
 # Esecuzione dalla root del progetto Laravel
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/html/_bases/base_ptvx_fila3_mono/laravel
+>>>>>>> 6ed19256f (.)
 
 # Analisi modulo specifico
 ./vendor/bin/phpstan analyze Modules/Xot --level=9
@@ -154,9 +158,18 @@ use Modules\User\Models\User; // Namespace corretto
 
 - [Architettura Modulo Xot](../core/architecture.md)
 - [Convenzioni di Naming](../core/naming-conventions.md)
+<<<<<<< HEAD
 **Ultimo aggiornamento:** Gennaio 2025
 - [Best Practices Sistema](../../../../docs/core/best-practices.md)
 
 ---
 
 **Versione:** 2.0 - Consolidata DRY + KISS
+=======
+- [Best Practices Sistema](../../../docs/core/best-practices.md)
+
+---
+
+**Ultimo aggiornamento:** Gennaio 2025
+**Versione:** 2.0 - Consolidata DRY + KISS
+>>>>>>> 6ed19256f (.)

@@ -207,8 +207,16 @@ view:cache compila
 
 ---
 
+<<<<<<< HEAD
 **Data migrazione**: [DATE]
 **Versione Filament**: v4.x
 **Files modificati**: 4
 **Errori risolti**: 2 (form.actions, form component)
 **Status**: ✅ Completo
+=======
+**Data migrazione**: 2025-12-12
+**Versione Filament**: v4.x
+**Files modificati**: 4
+**Errori risolti**: 2 (form.actions, form component)
+**Status**: ✅ Completo
+>>>>>>> 6ed19256f (.)

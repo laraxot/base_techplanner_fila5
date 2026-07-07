@@ -89,12 +89,15 @@ ehthumbs.db
 Thumbs.db
 *.exe
 
+<<<<<<< HEAD
 # Copy files (duplicati temporanei)
 * copy
 * copy.*
 *.copy
 *~
 
+=======
+>>>>>>> 6ed19256f (.)
 # ==============================================
 # BACKUP FILES
 # ==============================================
@@ -103,6 +106,7 @@ Thumbs.db
 *.old2
 *.backup
 *.backup.*
+<<<<<<< HEAD
 *.backup-*
 *.backup_*
 *.bak
@@ -111,6 +115,11 @@ Thumbs.db
 * copy.*
 * copy/
 *.copy
+=======
+*.bak
+*.bakcup
+*.new
+>>>>>>> 6ed19256f (.)
 
 # ==============================================
 # DEVELOPMENT TOOLS
@@ -123,8 +132,11 @@ Thumbs.db
 # ==============================================
 docs/phpstan/
 docs/cache/
+<<<<<<< HEAD
 docs/archive/
 docs/archive/**
+=======
+>>>>>>> 6ed19256f (.)
 
 # ==============================================
 # OLD DIRECTORIES (LEGACY CLEANUP)
@@ -159,6 +171,7 @@ packages/temp/
 # ==============================================
 # END OF XOT .GITIGNORE
 # ==============================================
+<<<<<<< HEAD
 lang/lang/
 _docs/
 _docs/
@@ -172,3 +185,5 @@ _docs/
 *.orig
 *.rej
 *~head
+=======
+>>>>>>> 6ed19256f (.)

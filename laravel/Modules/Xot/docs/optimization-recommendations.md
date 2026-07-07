@@ -11,7 +11,12 @@
 
 ```php
 // ❌ PROBLEMA ATTUALE
+<<<<<<< HEAD
 public static string $projectBasePath = 'var/www/html/<nome progetto>/laravel';
+=======
+public static string $projectBasePath = '/var/www/html/saluteora';
+public static string $laravelBasePath = '/var/www/html/saluteora/laravel';
+>>>>>>> 6ed19256f (.)
 ```
 
 #### 2. XotData Incompleto
@@ -268,7 +273,11 @@ abstract class XotBaseModel extends Model
 ### Pre-Implementazione
 ```bash
 # Verifica path hardcoded
+<<<<<<< HEAD
 grep -r "Xot/ --include="*.php"
+=======
+grep -r "/var/www/html/saluteora" Modules/Xot/ --include="*.php"
+>>>>>>> 6ed19256f (.)
 
 # Verifica XotData usage
 grep -r "XotData::make()" Modules/Xot/ --include="*.php"
@@ -312,11 +321,19 @@ php artisan xot:test-framework
 
 ## Collegamenti
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: gennaio 2025*
 - [Analisi Moduli Globale](../../../../docs/project/modules_analysis_and_optimization.md)
 - [PathHelper Current](../Helpers/PathHelper.php)
 - [XotData Current](../Datas/XotData.php)
 
+=======
+- [Analisi Moduli Globale](../../../project_docs/modules_analysis_and_optimization.md)
+- [PathHelper Current](../Helpers/PathHelper.php)
+- [XotData Current](../Datas/XotData.php)
+
+*Ultimo aggiornamento: gennaio 2025*
+>>>>>>> 6ed19256f (.)
 # Raccomandazioni di Ottimizzazione - Modulo Xot
 
 ## 🎯 Stato Attuale e Problemi Critici
@@ -330,7 +347,12 @@ php artisan xot:test-framework
 
 ```php
 // ❌ PROBLEMA ATTUALE
+<<<<<<< HEAD
 public static string $projectBasePath = 'var/www/html/<nome progetto>/laravel';
+=======
+public static string $projectBasePath = '/var/www/html/saluteora';
+public static string $laravelBasePath = '/var/www/html/saluteora/laravel';
+>>>>>>> 6ed19256f (.)
 ```
 
 #### 2. XotData Incompleto
@@ -587,7 +609,11 @@ abstract class XotBaseModel extends Model
 ### Pre-Implementazione
 ```bash
 # Verifica path hardcoded
+<<<<<<< HEAD
 grep -r "Xot/ --include="*.php"
+=======
+grep -r "/var/www/html/saluteora" Modules/Xot/ --include="*.php"
+>>>>>>> 6ed19256f (.)
 
 # Verifica XotData usage
 grep -r "XotData::make()" Modules/Xot/ --include="*.php"
@@ -631,7 +657,15 @@ php artisan xot:test-framework
 
 ## Collegamenti
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: gennaio 2025*
 - [Analisi Moduli Globale](../../../../docs/modules_analysis_and_optimization.md)
 - [PathHelper Current](../Helpers/PathHelper.php)
 - [XotData Current](../Datas/XotData.php)
+=======
+- [Analisi Moduli Globale](../../../docs/modules_analysis_and_optimization.md)
+- [PathHelper Current](../Helpers/PathHelper.php)
+- [XotData Current](../Datas/XotData.php)
+
+*Ultimo aggiornamento: gennaio 2025*
+>>>>>>> 6ed19256f (.)

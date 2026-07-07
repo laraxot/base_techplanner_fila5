@@ -36,18 +36,29 @@ Il tema principale utilizzato in il progetto è ThemeOne, basato su Filament 3, 
 /var/www/html/<directory progetto>/laravel/Themes/One/
 laravel/Themes/One/
 /var/www/html/_bases/<directory progetto>/laravel/Themes/One/
+<<<<<<< HEAD
 laravel/Themes/One/
+=======
+>>>>>>> 6ed19256f (.)
 ```
 
 ### Installazione Corretta
 ```bash
+<<<<<<< HEAD
 git subtree add --prefix laravel/Themes/One git@github.com:laraxot/theme_one_fila5.git dev --squash
+=======
+git subtree add --prefix laravel/Themes/One git@github.com:laraxot/theme_one_fila3.git dev --squash
+>>>>>>> 6ed19256f (.)
 ```
 
 ### Errore da Evitare
 ❌ **NON** utilizzare:
 ```bash
+<<<<<<< HEAD
 git subtree add --prefix laravel/Modules/ThemeOne git@github.com:laraxot/theme_one_fila5.git dev --squash
+=======
+git subtree add --prefix laravel/Modules/ThemeOne git@github.com:laraxot/theme_one_fila3.git dev --squash
+>>>>>>> 6ed19256f (.)
 ```
 
 ## Struttura del Tema
@@ -115,4 +126,7 @@ class AdminPanelProvider extends PanelProvider
 ## Collegamenti tra versioni di temi.md
 * [temi.md](docs/regole/temi.md)
 * [temi.md](laravel/Modules/Cms/docs/temi.md)
+<<<<<<< HEAD
 * [temi.md](laravel/modules/cms/docs/temi.md)
+=======
+>>>>>>> 6ed19256f (.)

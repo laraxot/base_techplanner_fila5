@@ -49,6 +49,7 @@ Il modulo **Tenant** fornisce supporto completo per **multi-tenancy** nel framew
 
 **Ultimo Aggiornamento**: 5 Novembre 2025
 **Status**: PHPStan Fixes In Progress
+<<<<<<< HEAD
 ---
 title: "Tenant Module Documentation"
 type: documentation
@@ -144,3 +145,5 @@ class User extends Authenticatable
 - [QMD Setup](./QMD-SETUP.md) — Configurazione ricerca locale
 - [Performance](./PERFORMANCE-OPTIMIZATION.md) — Metriche e best practice
 - [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout
+=======
+>>>>>>> 6ed19256f (.)

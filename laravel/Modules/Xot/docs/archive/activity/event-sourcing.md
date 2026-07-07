@@ -35,9 +35,16 @@ avere un controllo su un eventuale corruzione dei dati (bug, malicius, errore um
 ## Collegamenti tra versioni di event-sourcing.md
 * [event-sourcing.md](../../../Xot/project_docs/activity/event-sourcing.md)
 * [event-sourcing.md](../../../Tenant/project_docs/it/config/event-sourcing.md)
+<<<<<<< HEAD
 * [event-sourcing.md](../../../xot/project_docs/activity/event-sourcing.md)
 * [event-sourcing.md](../../../tenant/project_docs/it/config/event-sourcing.md)
 
 ### Versione Incoming
 
 ---
+=======
+
+### Versione Incoming
+
+---
+>>>>>>> 6ed19256f (.)

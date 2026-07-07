@@ -23,6 +23,7 @@ return [
             'placeholder' => 'Selecteer indelingstype',
             'tooltip' => 'Kies tussen lijst- en rasterweergave',
             'help' => 'Kies het meest geschikte indelingstype om de gegevens weer te geven',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
         ],
@@ -36,4 +37,8 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+        ],
+    ],
+>>>>>>> 6ed19256f (.)
 ];

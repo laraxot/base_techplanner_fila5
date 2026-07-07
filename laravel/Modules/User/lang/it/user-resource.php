@@ -12,9 +12,12 @@ return [
                 'required' => 'Il nome è obbligatorio',
                 'max' => 'Il nome non può superare i 255 caratteri',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'last_name' => [
             'label' => 'Cognome',
@@ -24,9 +27,12 @@ return [
                 'required' => 'Il cognome è obbligatorio',
                 'max' => 'Il cognome non può superare i 255 caratteri',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'email' => [
             'label' => 'Email',
@@ -38,9 +44,12 @@ return [
                 'max' => 'L\'email non può superare i 255 caratteri',
                 'unique' => 'Questa email è già registrata',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'password' => [
             'label' => 'Password',
@@ -51,9 +60,12 @@ return [
                 'min' => 'La password deve essere di almeno 8 caratteri',
                 'max' => 'La password non può superare i 255 caratteri',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'password_confirmation' => [
             'label' => 'Conferma Password',
@@ -65,16 +77,22 @@ return [
                 'max' => 'La password non può superare i 255 caratteri',
                 'same' => 'Le password non coincidono',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'remember_me' => [
             'label' => 'Ricordami',
             'help' => 'Mantieni la sessione attiva',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -159,6 +177,7 @@ return [
             ],
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'name' => 'User Resource',
         'plural' => 'User Resource',
@@ -172,4 +191,9 @@ return [
     ],
     'label' => 'User Resource',
     'plural_label' => 'User Resource (Plurale)',
+=======
+    'navigation' => [],
+    'label' => '',
+    'plural_label' => '',
+>>>>>>> 6ed19256f (.)
 ];

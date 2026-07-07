@@ -16,7 +16,12 @@ class TicketStatusChangedNotification extends Notification
         public mixed $ticket, // Using mixed type since Ticket model doesn't exist
         public string $oldStatus,
         public string $newStatus
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> 6ed19256f (.)
 
     public function via(mixed $notifiable): array
     {
@@ -25,7 +30,11 @@ class TicketStatusChangedNotification extends Notification
 
     public function toMail(mixed $notifiable): MailMessage
     {
+<<<<<<< HEAD
         return (new MailMessage)
+=======
+        return (new MailMessage())
+>>>>>>> 6ed19256f (.)
             ->subject('Ticket Status Changed')
             ->line("Ticket status has changed from {$this->oldStatus} to {$this->newStatus}")
             ->action('View Ticket', url('/'));

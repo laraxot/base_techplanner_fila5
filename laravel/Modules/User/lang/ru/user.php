@@ -36,13 +36,17 @@ return [
             'placeholder' => 'Введите имя',
             'description' => 'имя',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'email' => [
             'label' => 'Email',
             'placeholder' => 'Введите email',
             'description' => 'email',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
         'created_at' => [
@@ -74,17 +78,36 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'created_at' => [
+            'label' => 'Дата создания',
+        ],
+        'updated_at' => [
+            'label' => 'Последнее изменение',
+        ],
+        'role' => [
+            'label' => 'Роль',
+        ],
+        'active' => 'Активный',
+        'id' => [
+            'label' => 'ID',
+>>>>>>> 6ed19256f (.)
         ],
         'password' => [
             'label' => 'Пароль',
             'placeholder' => 'Введите пароль',
             'description' => 'пароль',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'password_confirmation' => [
             'label' => 'Подтверждение пароля',
             'placeholder' => 'Подтвердите пароль',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -94,10 +117,16 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'email_verified_at' => [
+            'label' => 'Email подтвержден',
+>>>>>>> 6ed19256f (.)
         ],
         'current_password' => [
             'label' => 'Текущий пароль',
             'placeholder' => 'Введите текущий пароль',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -113,6 +142,14 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'roles' => [
+            'label' => 'Роли',
+        ],
+        'permissions' => [
+            'label' => 'Разрешения',
+>>>>>>> 6ed19256f (.)
         ],
         'status' => [
             'label' => 'Статус',
@@ -121,6 +158,7 @@ return [
                 'inactive' => 'Неактивный',
                 'blocked' => 'Заблокирован',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -250,6 +288,71 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'last_login' => [
+            'label' => 'Последний вход',
+        ],
+        'avatar' => [
+            'label' => 'Аватар',
+        ],
+        'language' => [
+            'label' => 'Язык',
+        ],
+        'timezone' => [
+            'label' => 'Часовой пояс',
+        ],
+        'password_expires_at' => [
+            'label' => 'Истечение пароля',
+        ],
+        'verified' => [
+            'label' => 'Подтвержден',
+        ],
+        'unverified' => [
+            'label' => 'Не подтвержден',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+        ],
+        'isActive' => [
+            'label' => 'isActive',
+        ],
+        'deactivate' => [
+            'label' => 'deactivate',
+        ],
+        'delete' => [
+            'label' => 'delete',
+        ],
+        'edit' => [
+            'label' => 'edit',
+        ],
+        'view' => [
+            'label' => 'view',
+        ],
+        'create' => [
+            'label' => 'create',
+        ],
+        'detach' => [
+            'label' => 'detach',
+        ],
+        'attach' => [
+            'label' => 'attach',
+        ],
+        'changePassword' => [
+            'label' => 'changePassword',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'filters' => [
@@ -363,6 +466,9 @@ return [
     'model' => [
         'label' => 'Пользователь',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

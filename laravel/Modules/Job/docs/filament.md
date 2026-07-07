@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 https://gitlab.com/amvisor/filament-failed-jobs/-/blob/master/src/FilamentFailedJobsServiceProvider.php
 
 https://github.com/croustibat/filament-jobs-monitor
@@ -21,6 +24,7 @@ https://medium.com/@laravelprotips/laravel-filament-top-12-plugins-simplified-wi
 ### Versione Incoming
 
 ---
+<<<<<<< HEAD
 ---
 module: theme
 topic: filament
@@ -28,3 +32,5 @@ canonical: ../../../Themes/docs/shared-components/filament-Modules.txt
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/filament-Modules.txt
+=======
+>>>>>>> 6ed19256f (.)

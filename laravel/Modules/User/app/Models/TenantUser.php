@@ -6,6 +6,10 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
+<<<<<<< HEAD
+=======
+use Modules\User\Database\Factories\TenantUserFactory;
+>>>>>>> 6ed19256f (.)
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Models\Traits\HasXotFactory;
 
@@ -46,7 +50,11 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
  *
+<<<<<<< HEAD
  * @method static \Modules\User\Database\Factories\TenantUserFactory factory($count = null, $state = [])
+=======
+ * @method static TenantUserFactory factory($count = null, $state = [])
+>>>>>>> 6ed19256f (.)
  *
  * @mixin \Eloquent
  */

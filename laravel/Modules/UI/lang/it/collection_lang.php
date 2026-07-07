@@ -19,34 +19,47 @@ return [
             'label' => 'Elemento Predefinito',
             'placeholder' => 'Seleziona elemento predefinito',
             'helper_text' => 'Elemento predefinito della collezione',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'itemKey' => [
             'label' => 'Chiave Elemento',
             'placeholder' => 'Inserisci chiave elemento',
             'helper_text' => 'Chiave identificativa dell\'elemento',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'itemValue' => [
             'label' => 'Valore Elemento',
             'placeholder' => 'Inserisci valore elemento',
             'helper_text' => 'Valore dell\'elemento della collezione',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'values' => [
             'label' => 'Valori',
             'placeholder' => 'Inserisci valori',
             'helper_text' => 'Valori della collezione',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'name' => [
             'label' => 'Nome',
             'placeholder' => 'Inserisci nome collezione',
             'helper_text' => 'Nome identificativo della collezione',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
         ],
@@ -62,6 +75,8 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Collection Lang',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
 ];

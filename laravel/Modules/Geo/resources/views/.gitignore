@@ -3,4 +3,7 @@ CNAME
 -e 
 # PHPStan documentation
 docs/phpstan/
+<<<<<<< HEAD
 _docs/
+=======
+>>>>>>> 6ed19256f (.)

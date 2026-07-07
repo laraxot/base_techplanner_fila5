@@ -105,6 +105,11 @@ File `tests/Feature/ScheduleBusinessLogicTest.php` will be DELETED because:
 ---
 
 **Date**: 2026-01-09
+<<<<<<< HEAD
 **Date**: [DATE]
 **Status**: Test File Deleted
 **Reason**: Complete schema mismatch - test was fiction, not reality
+=======
+**Status**: Test File Deleted
+**Reason**: Complete schema mismatch - test was fiction, not reality
+>>>>>>> 6ed19256f (.)

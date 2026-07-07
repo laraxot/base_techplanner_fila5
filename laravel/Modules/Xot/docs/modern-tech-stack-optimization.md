@@ -15,7 +15,11 @@ Questa guida fornisce strategie specifiche per ottimizzare il codebase esistente
 - **Volt**: 1.7.2 ✅
 
 ### Packages Status
+<<<<<<< HEAD
 - Laravel Passport: 13.4.x ✅
+=======
+- Laravel Passport: 12.4.2 ✅
+>>>>>>> 6ed19256f (.)
 - Laravel Pennant: 1.18.2 ✅
 - Laravel Pulse: 1.4.3 ✅
 - Laravel Socialite: 5.23.0 ✅
@@ -975,7 +979,11 @@ Questa guida fornisce strategie specifiche per ottimizzare il codebase esistente
 - **Volt**: 1.7.2 ✅
 
 ### Packages Status
+<<<<<<< HEAD
 - Laravel Passport: 13.4.x ✅
+=======
+- Laravel Passport: 12.4.2 ✅
+>>>>>>> 6ed19256f (.)
 - Laravel Pennant: 1.18.2 ✅
 - Laravel Pulse: 1.4.3 ✅
 - Laravel Socialite: 5.23.0 ✅
@@ -1808,6 +1816,7 @@ class ContactDashboard extends Dashboard
         return [
             'overview' => [
                 'label' => 'Overview',
+<<<<<<< HEAD
                 'url' => route('filament.healthcare_app.dashboard'),
                 'isActive' => request()->routeIs('filament.healthcare_app.dashboard'),
             ],
@@ -1820,6 +1829,20 @@ class ContactDashboard extends Dashboard
                 'label' => 'Reports',
                 'url' => route('filament.healthcare_app.reports'),
                 'isActive' => request()->routeIs('filament.healthcare_app.reports'),
+=======
+                'url' => route('filament.quaeris.dashboard'),
+                'isActive' => request()->routeIs('filament.quaeris.dashboard'),
+            ],
+            'analytics' => [
+                'label' => 'Analytics',
+                'url' => route('filament.quaeris.analytics'),
+                'isActive' => request()->routeIs('filament.quaeris.analytics'),
+            ],
+            'reports' => [
+                'label' => 'Reports',
+                'url' => route('filament.quaeris.reports'),
+                'isActive' => request()->routeIs('filament.quaeris.reports'),
+>>>>>>> 6ed19256f (.)
             ],
         ];
     }
@@ -1917,4 +1940,8 @@ class PerformanceMonitoringMiddleware
 - [ ] Documentation updated
 - [ ] Tests comprehensive (85%+ coverage)
 
+<<<<<<< HEAD
 Questa guida fornisce una roadmap completa per modernizzare il tech stack e sfruttare al massimo le capacità delle versioni più recenti dei framework utilizzati.
+=======
+Questa guida fornisce una roadmap completa per modernizzare il tech stack e sfruttare al massimo le capacità delle versioni più recenti dei framework utilizzati.
+>>>>>>> 6ed19256f (.)

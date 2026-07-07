@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Gdpr\Tests\Feature;
 
+<<<<<<< HEAD
 uses(TestCase::class);
 
 use Modules\Gdpr\Models\Profile;
@@ -18,6 +19,19 @@ it('verifica che le classi corrette siano istanziabili', function (): void {
 it('verifica che le proprietà delle classi siano accessibili', function (): void {
     $treatment = new Treatment();
     $profile = new Profile();
+=======
+use Modules\Gdpr\Models\Profile;
+use Modules\Gdpr\Models\Treatment;
+
+it('verifica che le classi corrette siano istanziabili', function (): void {
+    expect(new Treatment)->toBeInstanceOf(Treatment::class);
+    expect(new Profile)->toBeInstanceOf(Profile::class);
+});
+
+it('verifica che le proprietà delle classi siano accessibili', function (): void {
+    $treatment = new Treatment;
+    $profile = new Profile;
+>>>>>>> 6ed19256f (.)
 
     // Verifica che le proprietà fillable siano definite
     expect($treatment->getFillable())->toBeArray();

@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -59,6 +60,29 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'command' => [
+            'label' => 'Comando',
+        ],
+        'expression' => [
+            'label' => 'Espressione cron',
+        ],
+        'description' => [
+            'label' => 'Descrizione',
+        ],
+        'timezone' => [
+            'label' => 'Fuso orario',
+        ],
+        'status' => [
+            'label' => 'Stato',
+        ],
+        'created_at' => [
+            'label' => 'Creato il',
+        ],
+        'updated_at' => [
+            'label' => 'Aggiornato il',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -72,4 +96,8 @@ return [
             'label' => 'Disabilita',
         ],
     ],
+<<<<<<< HEAD
 ];
+=======
+];
+>>>>>>> 6ed19256f (.)

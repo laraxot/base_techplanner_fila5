@@ -43,6 +43,10 @@ final class SocialBlock extends XotBaseBlock
 
     public static function getBlockLabel(): string
     {
+<<<<<<< HEAD
         return \trans_string('cms::blocks.social.label');
+=======
+        return \trans_string('cms::blocks.social.label') ?? 'Social';
+>>>>>>> 6ed19256f (.)
     }
 }

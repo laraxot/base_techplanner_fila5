@@ -9,6 +9,7 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -16,6 +17,12 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
+=======
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Modules\User\Database\Factories\RoleFactory;
+>>>>>>> 6ed19256f (.)
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Models\Traits\RelationX;
@@ -26,6 +33,7 @@ use Webmozart\Assert\Assert;
 /**
  * Modules\User\Models\Role.
  *
+<<<<<<< HEAD
  * @property int                                 $id
  * @property string                              $uuid
  * @property string|null                         $team_id
@@ -43,6 +51,24 @@ use Webmozart\Assert\Assert;
  * @property Collection<int, Model&UserContract> $users
  * @property int|null                            $users_count
  * @property PermissionRole|null                 $pivot
+=======
+ * <<<<<<< HEAD
+ *
+ * @property int                                         $id
+ *                                                                          =======
+ * @property string                                      $id
+ * @property string                                      $uuid
+ * @property string|null                                 $team_id
+ * @property string                                      $name
+ * @property string                                      $guard_name
+ * @property Carbon|null                                 $created_at
+ * @property Carbon|null                                 $updated_at
+ * @property Collection<int, Permission>                 $permissions
+ * @property int|null                                    $permissions_count
+ * @property Team|null                                   $team
+ * @property EloquentCollection<int, Model&UserContract> $users
+ * @property int|null                                    $users_count
+>>>>>>> 6ed19256f (.)
  *
  * @method static Builder|Role newModelQuery()
  * @method static Builder|Role newQuery()
@@ -53,6 +79,7 @@ use Webmozart\Assert\Assert;
  * @method static Builder|Role whereName($value)
  * @method static Builder|Role whereTeamId($value)
  * @method static Builder|Role whereUpdatedAt($value)
+<<<<<<< HEAD
  * @method static Builder|Role whereId($value)
  * @method static Builder|Role whereCreatedBy($value)
  * @method static Builder|Role whereUpdatedBy($value)
@@ -68,6 +95,38 @@ use Webmozart\Assert\Assert;
  *
  * @method static \Modules\User\Database\Factories\RoleFactory factory($count = null, $state = [])
  * @method static Builder<static>|Role                         whereUuid($value)
+=======
+ * @method static Builder|Role whereUuid($value)
+ *
+ * >>>>>>> 32e772a8 (.)
+ *
+ * @property int $id
+ *
+ * @method static Builder|Role whereId($value)
+ *
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ *
+ * @method static Builder|Role whereCreatedBy($value)
+ * @method static Builder|Role whereUpdatedBy($value)
+ *
+ * @mixin Eloquent
+ *
+ * @method static Builder|Role withoutPermission($permissions)
+ *
+ * @property PermissionRole|null $pivot
+ *
+ * @mixin IdeHelperRole
+ *
+ * @property string|null $display_name
+ * @property string|null $description
+ *
+ * @method static RoleFactory          factory($count = null, $state = [])
+ * @method static Builder<static>|Role whereDescription($value)
+ * @method static Builder<static>|Role whereDisplayName($value)
+ * @method static static               firstOrCreate(array $attributes, array $values = [])
+ * @method static static               updateOrCreate(array $attributes, array $values = [])
+>>>>>>> 6ed19256f (.)
  *
  * @mixin \Eloquent
  */
@@ -85,8 +144,15 @@ class Role extends SpatieRole
 
     final public const ROLE_USER = 3;
 
+<<<<<<< HEAD
     protected $connection = 'user';
 
+=======
+    /** @var string */
+    protected $connection = 'user';
+
+    /** @var string */
+>>>>>>> 6ed19256f (.)
     protected $keyType = 'int';
 
     /** @var list<string> */

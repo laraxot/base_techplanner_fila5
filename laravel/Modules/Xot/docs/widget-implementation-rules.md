@@ -414,7 +414,10 @@ class MyTableWidget extends XotBaseTableWidget
 - [XotBaseWidget Implementation](./xotbasewidget_implementation.md)
 - [XotBaseTableWidget Implementation](./xotbasetablewidget_implementation.md)
 - [Laraxot Architecture Rules](./LARAXOT_ARCHITECTURE_RULES.md)
+<<<<<<< HEAD
 - [Laraxot Architecture Rules](./laraxot_architecture_rules.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
 # Widget Implementation Rules - Xot Module
@@ -490,8 +493,12 @@ class MyTableWidget extends XotBaseTableWidget
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\healthcare_app\Filament\Widgets;
 namespace Modules\Chart\Filament\Widgets;
+=======
+namespace Modules\Quaeris\Filament\Widgets;
+>>>>>>> 6ed19256f (.)
 
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Select;
@@ -547,8 +554,12 @@ class QuestionChartFilterWidget extends XotBaseWidget
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\healthcare_app\Filament\Widgets;
 namespace Modules\Chart\Filament\Widgets;
+=======
+namespace Modules\Quaeris\Filament\Widgets;
+>>>>>>> 6ed19256f (.)
 
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
@@ -625,8 +636,12 @@ class QuestionChartDataWidget extends XotBaseTableWidget
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\healthcare_app\Filament\Widgets;
 namespace Modules\Chart\Filament\Widgets;
+=======
+namespace Modules\Quaeris\Filament\Widgets;
+>>>>>>> 6ed19256f (.)
 
 use Filament\Widgets\ChartWidget;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
@@ -836,6 +851,11 @@ class MyTableWidget extends XotBaseTableWidget
 - [XotBaseWidget Implementation](./xotbasewidget_implementation.md)
 - [XotBaseTableWidget Implementation](./xotbasetablewidget_implementation.md)
 - [Laraxot Architecture Rules](./LARAXOT_ARCHITECTURE_RULES.md)
+<<<<<<< HEAD
 - [Laraxot Architecture Rules](./laraxot_architecture_rules.md)
 
 Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
+=======
+
+Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
+>>>>>>> 6ed19256f (.)

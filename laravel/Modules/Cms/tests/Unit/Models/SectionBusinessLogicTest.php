@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 use Modules\Cms\Models\BaseModelLang;
 use Modules\Cms\Models\Section;
 use Modules\Cms\Models\Traits\HasBlocks;
@@ -48,12 +51,24 @@ describe('Section Business Logic', function (): void {
 
     test('section has correct casts for multilingual and structured data', function (): void {
         $section = new Section();
+<<<<<<< HEAD
+=======
+        /** @phpstan-ignore-next-line method.nonObject */
+        $casts = $section->getCasts();
+
+        /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+        expect($casts['name'])->toBe('array');
+        /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+        expect($casts['blocks'])->toBe('array');
+        /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+>>>>>>> 6ed19256f (.)
         expect($casts['id'])->toBe('string');
     });
 
     test('section has schema definition for structured data', function (): void {
         $section = new Section();
 
+<<<<<<< HEAD
         // Use reflection to access protected $schema property
         $reflection = new ReflectionClass($section);
         $schemaProperty = $reflection->getProperty('schema');
@@ -65,6 +80,12 @@ describe('Section Business Logic', function (): void {
         expect($schema['name'])->toBe('json');
         expect($schema['blocks'])->toBe('json');
         expect($schema['slug'])->toBe('string');
+=======
+        expect($section)->toHaveProperty('schema');
+        expect($section->schema['name'])->toBe('json');
+        expect($section->schema['blocks'])->toBe('json');
+        expect($section->schema['slug'])->toBe('string');
+>>>>>>> 6ed19256f (.)
     });
 
     test('section can get rows for sushi functionality', function (): void {

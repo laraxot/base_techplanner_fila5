@@ -9,6 +9,7 @@ return [
         'icon' => 'temporary upload',
         'sort' => 96,
     ],
+<<<<<<< HEAD
     'label' => 'Temporary Upload',
     'plural_label' => 'Temporary Upload (Plurale)',
     'fields' => [
@@ -42,4 +43,6 @@ return [
             'label' => 'Elimina Temporary Upload',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

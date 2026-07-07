@@ -4,12 +4,20 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Http\Middleware;
 
+<<<<<<< HEAD
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
 
 use function Safe\sys_getloadavg;
 
+=======
+use Closure;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\DB;
+use function Safe\sys_getloadavg;
+>>>>>>> 6ed19256f (.)
 use Symfony\Component\HttpFoundation\Response;
 use Webmozart\Assert\Assert;
 
@@ -28,7 +36,11 @@ class PerformanceMonitoringMiddleware
     /**
      * Handle an incoming request.
      */
+<<<<<<< HEAD
     public function handle(Request $request, \Closure $next): Response
+=======
+    public function handle(Request $request, Closure $next): Response
+>>>>>>> 6ed19256f (.)
     {
         $startTime = microtime(true);
         $startMemory = memory_get_usage(true);

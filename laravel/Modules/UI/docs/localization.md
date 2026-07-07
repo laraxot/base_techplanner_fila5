@@ -127,5 +127,8 @@ Modules/UI/
 - [Documentazione Folio](https://laravel.com/docs/folio)
 - [Best Practices UI](./UI_BEST_PRACTICES.md)
 - [Guida Componenti](./COMPONENTS_GUIDE.md)
+<<<<<<< HEAD
 - [Best Practices UI](./ui_best_practices.md)
 - [Guida Componenti](./components_guide.md)
+=======
+>>>>>>> 6ed19256f (.)

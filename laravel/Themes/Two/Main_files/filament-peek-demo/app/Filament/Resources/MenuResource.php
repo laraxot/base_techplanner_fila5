@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources;
 
+<<<<<<< HEAD
 use App\Filament\Resources\MenuResource\Pages;
 use App\Filament\Resources\MenuResource\Pages\EditMenu;
 use App\Filament\Resources\MenuResource\Pages\ListMenus;
@@ -16,6 +17,8 @@ use Filament\Schemas\Schema;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
+=======
+>>>>>>> 6ed19256f (.)
 use Filament\Schemas\Schema;
 use Filament\Forms\Components\Repeater;
 use Filament\Schemas\Components\Grid;
@@ -37,9 +40,15 @@ class MenuResource extends Resource
 {
     protected static ?string $model = Menu::class;
 
+<<<<<<< HEAD
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-clipboard-document-list';
 
     protected static string|\UnitEnum|null $navigationGroup = 'Site';
+=======
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-clipboard-document-list';
+
+    protected static string | \UnitEnum | null $navigationGroup = 'Site';
+>>>>>>> 6ed19256f (.)
 
     protected static ?string $navigationLabel = 'Navigation';
 
@@ -102,7 +111,10 @@ class MenuResource extends Resource
         ];
     }
 }
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> 6ed19256f (.)

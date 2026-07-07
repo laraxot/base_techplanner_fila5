@@ -17,6 +17,11 @@ class EventServiceProvider extends BaseEventServiceProvider
 
     /**
      * Indicates if events should be discovered.
+<<<<<<< HEAD
+=======
+     *
+     * @var bool
+>>>>>>> 6ed19256f (.)
      */
     protected static $shouldDiscoverEvents = true;
 

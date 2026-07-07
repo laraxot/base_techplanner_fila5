@@ -135,9 +135,17 @@ The User module contains multiple violations of the Laraxot migration philosophy
 
 These violations directly contravene the Laraxot migration philosophy:
 - ❌ Single source of truth principle
+<<<<<<< HEAD
 - ❌ <nome progetto>able migration order
+=======
+- ❌ Predictable migration order
+>>>>>>> 6ed19256f (.)
 - ❌ DRY principle
 - ❌ Maintenance simplicity
 - ❌ Clear schema definition
 
+<<<<<<< HEAD
 The violations demonstrate a clear gap in understanding and implementation of the core Laraxot migration philosophy that emphasizes: **ONE TABLE, ONE MIGRATION, ONE MODULE**.
+=======
+The violations demonstrate a clear gap in understanding and implementation of the core Laraxot migration philosophy that emphasizes: **ONE TABLE, ONE MIGRATION, ONE MODULE**.
+>>>>>>> 6ed19256f (.)

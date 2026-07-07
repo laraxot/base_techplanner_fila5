@@ -224,7 +224,11 @@ Prima di committare modelli con relazioni, verificare:
 - [ ] **NO** annotazioni generiche `@return RelationType<Model, self>`
 - [ ] I tipi di relazione sono corretti nel tipo di ritorno del metodo
 - [ ] PHPStan livello 9+ passa senza errori
+<<<<<<< HEAD
 - [ ] **MAI** modificare `phpstan.neon`
+=======
+- [ ] **MAI** modificare `/var/www/html/_bases/base_saluteora/laravel/phpstan.neon`
+>>>>>>> 6ed19256f (.)
 
 ## Verifica PHPStan
 

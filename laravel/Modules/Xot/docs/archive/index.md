@@ -8,7 +8,10 @@ Questo documento fornisce un indice della documentazione del modulo Xot, organiz
 - [Base Classes](./base_classes.md) - Classi base
 - [Service Providers](./service_providers.md) - Provider di servizi
 - [Volt Folio Best Practices](./VOLT_FOLIO_BEST_PRACTICES.md) - Best practices per Volt e Folio
+<<<<<<< HEAD
 - [Volt Folio Best Practices](./volt_folio_best_practices.md) - Best practices per Volt e Folio
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Filament
 - [Filament Integration](./filament_integration.md) - Integrazione con Filament
@@ -25,17 +28,23 @@ Questo documento fornisce un indice della documentazione del modulo Xot, organiz
 - [Best Practices](./BEST-PRACTICES.md) - Linee guida generali
 - [Security](./security.md) - Sicurezza e hardening
 - [PHPStan Level 10](./PHPSTAN_LIVELLO10_LINEE_GUIDA.md) - Linee guida PHPStan livello 10
+<<<<<<< HEAD
 - [Best Practices](./best-practices.md) - Linee guida generali
 - [Security](./security.md) - Sicurezza e hardening
 - [PHPStan Level 10](./phpstan_livello10_linee_guida.md) - Linee guida PHPStan livello 10
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Documentazione Tecnica
 - [Roadmap](./roadmap.md) - Piano di sviluppo futuro
 - [Bottlenecks](./bottlenecks.md) - Analisi performance e ottimizzazioni
 - [Module Structure](./MODULE_STRUCTURE.md) - Struttura moduli
 - [Conflitti Merge Risolti](./CONFLITTI_MERGE_RISOLTI.md) - Documentazione conflitti risolti
+<<<<<<< HEAD
 - [Module Structure](./module_structure.md) - Struttura moduli
 - [Conflitti Merge Risolti](./conflitti_merge_risolti.md) - Documentazione conflitti risolti
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Link Esterni
 - [Laravel Framework](https://laravel.com/project_docs/12.x)
@@ -98,4 +107,8 @@ Il modulo Xot fornisce funzionalità base attraverso:
 - Gestione risorse
 
 ## Panoramica
+<<<<<<< HEAD
 Il modulo Xot è il cuore dell'architettura dell'applicazione. Fornisce le classi base, i trait e le interfacce fondamentali utilizzate da tutti gli altri moduli.
+=======
+Il modulo Xot è il cuore dell'architettura dell'applicazione. Fornisce le classi base, i trait e le interfacce fondamentali utilizzate da tutti gli altri moduli.
+>>>>>>> 6ed19256f (.)

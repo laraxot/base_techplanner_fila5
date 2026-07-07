@@ -13,7 +13,10 @@
 2. **Nessuna data nel nome file**
    - ✅ CORRETTO: `phpstan-fixes.md`, `roadmap.md`
    - ❌ SBAGLIATO: `phpstan-fixes-2025-10-10.md`, `ROADMAP_2025.md`
+<<<<<<< HEAD
    - ❌ SBAGLIATO: `phpstan-fixes-[DATE].md`, `ROADMAP_2025.md`
+=======
+>>>>>>> 6ed19256f (.)
    - **Motivo**: Le date nei nomi file causano duplicazione, rendono difficile il refactoring e non riflettono lo stato corrente del documento
 
 3. **Usa trattini `-` per separare parole** (non underscore `_`)
@@ -58,9 +61,12 @@
    - ✅ CORRETTO: `[Documentazione](../Xot/docs/architecture.md)`
    - ✅ CORRETTO: `[Esempio](./examples/example.md)`
    - ❌ SBAGLIATO: `[Doc](/var/www/laravel/Modules/Xot/docs/architecture.md)`
+<<<<<<< HEAD
    - ✅ CORRETTO: `[Documentazione](../xot/docs/architecture.md)`
    - ✅ CORRETTO: `[Esempio](./examples/example.md)`
    - ❌ SBAGLIATO: `[Doc](/var/www/laravel/modules/xot/docs/architecture.md)`
+=======
+>>>>>>> 6ed19256f (.)
 
 2. **Portabilità totale**
    - I link devono funzionare ovunque il progetto venga clonato
@@ -147,7 +153,11 @@ bashscripts/
 set -e  # Exit on error
 
 # Configuration
+<<<<<<< HEAD
 LARAVEL_DIR="laravel"
+=======
+LARAVEL_DIR="/var/www/_bases/base_fixcity_fila4_mono/laravel"
+>>>>>>> 6ed19256f (.)
 cd "$LARAVEL_DIR"
 
 # Script logic here
@@ -241,6 +251,11 @@ find Modules -name "*.md" ! -name "README.md" -exec bash -c '
 ---
 
 **Last Updated**: 2025-10-11
+<<<<<<< HEAD
 
 **Status**: ✅ ACTIVE STANDARD
 **Compliance**: MANDATORY for all modules and themes
+=======
+**Status**: ✅ ACTIVE STANDARD
+**Compliance**: MANDATORY for all modules and themes
+>>>>>>> 6ed19256f (.)

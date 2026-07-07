@@ -20,109 +20,161 @@ return [
         'id' => [
             'label' => 'ID',
             'tooltip' => 'Eindeutige Job-Kennung',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'queue' => [
             'label' => 'Warteschlange',
             'tooltip' => 'Die Warteschlange, zu der dieser Job gehört',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'payload' => [
             'label' => 'Payload',
             'tooltip' => 'Mit dem Job verknüpfte Daten',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'attempts' => [
             'label' => 'Versuche',
             'tooltip' => 'Anzahl der Versuche, den Job auszuführen',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'reserved_at' => [
             'label' => 'Reserviert am',
             'tooltip' => 'Datum und Uhrzeit, zu der der Job reserviert wurde',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'available_at' => [
             'label' => 'Verfügbar am',
             'tooltip' => 'Datum und Uhrzeit, zu der der Job verfügbar wurde',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'created_at' => [
             'label' => 'Erstellt am',
             'tooltip' => 'Job-Erstellungsdatum',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'status' => [
             'label' => 'Status',
             'tooltip' => 'Aktueller Job-Status',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'progress' => [
             'label' => 'Fortschritt',
             'tooltip' => 'Job-Abschlussprozentsatz',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'type' => [
             'label' => 'Typ',
             'tooltip' => 'Job-Typ (z.B. Import, Export)',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'name' => [
             'label' => 'Name',
             'tooltip' => 'Job-Name',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'description' => [
             'label' => 'Beschreibung',
             'tooltip' => 'Job-Beschreibung',
             'placeholder' => 'Geben Sie eine Beschreibung ein',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'guard_name' => [
             'label' => 'Guard',
             'tooltip' => 'Job-Wächter',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'permissions' => [
             'label' => 'Berechtigungen',
             'tooltip' => 'Mit dem Job verknüpfte Berechtigungen',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'updated_at' => [
             'label' => 'Aktualisiert am',
             'tooltip' => 'Datum der letzten Job-Aktualisierung',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'first_name' => [
             'label' => 'Vorname',
             'tooltip' => 'Vorname der verantwortlichen Person',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'last_name' => [
             'label' => 'Nachname',
             'tooltip' => 'Nachname der verantwortlichen Person',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'select_all' => [
             'label' => 'Alle auswählen',
             'tooltip' => 'Alle verfügbaren Elemente auswählen',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
         ],
@@ -161,6 +213,26 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+        ],
+        'value' => [
+            'label' => 'value',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -251,6 +323,9 @@ return [
         'notification' => 'Benachrichtigung',
         'cleanup' => 'Bereinigung',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

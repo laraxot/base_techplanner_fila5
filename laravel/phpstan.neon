@@ -1,6 +1,10 @@
 includes:
     - ./phpstan-baseline.neon
+<<<<<<< HEAD
     - ./vendor/larastan/larastan/extension.neon
+=======
+    - ./vendor/larastan/larastan/extension.neon  
+>>>>>>> 6ed19256f (.)
     - ./vendor/nesbot/carbon/extension.neon
     - ./vendor/phpstan/phpstan/conf/bleedingEdge.neon
     - ./vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
@@ -8,6 +12,7 @@ includes:
 
 parameters:
     level: max
+<<<<<<< HEAD
 
     paths:
         - ./Modules/
@@ -17,14 +22,38 @@ parameters:
         #- '#Static call to instance method Nwidart#'
         # - "#^Unsafe usage of new static#"
         - '#Cannot cast mixed to (string|float|double|int|bool|boolean).#'
+=======
+    
+    #parallel:
+    #    maximumNumberOfProcesses: 4
+    #    jobSize: 1
+    #    minimumNumberOfJobsPerProcess: 1
+
+    paths:
+        - ./Modules/
+        # - ./Modules/*/app
+        # - ./Themes
+        # - ./app
+
+    ignoreErrors:
+        - '#PHPDoc tag @mixin contains unknown class #'
+        - '#Static call to instance method Nwidart#'
+        - "#^Unsafe usage of new static#"
+        - '#Cannot cast mixed to (string|float|double|int|bool|boolean).#' # Ignora errori di cast da mixed a tipi specifici
+>>>>>>> 6ed19256f (.)
         - identifier: missingType.generics
         - identifier: missingType.iterableValue
         - identifier: larastan.noEnvCallsOutsideOfConfig
         - '#is used zero times and is not analysed#'
         - identifier: method.unused
+<<<<<<< HEAD
         # - identifier: method.internalClass
         # - identifier: method.internal
         # - identifier: function.alreadyNarrowedType
+=======
+        - identifier: method.internalClass # Ignora metodi internal di Pest (toBe, toBeTrue, etc.)
+        - identifier: function.alreadyNarrowedType # Ignora check ridondanti type-safe
+>>>>>>> 6ed19256f (.)
 
     excludePaths:
         - ./vendor/*
@@ -38,10 +67,18 @@ parameters:
         - ./*/*.blade.php
         - ./_ide_helper.php
         - ./_ide_helper_models.php
+<<<<<<< HEAD
 
     bootstrapFiles:
         - ./phpstan_bootstrap.php
         - ./phpstan_constants.php
+=======
+        
+    bootstrapFiles:
+        - ./phpstan_bootstrap.php
+        - ./phpstan_constants.php
+        # - ./vendor/amenadiel/jpgraph/src/config.inc.php
+>>>>>>> 6ed19256f (.)
 
     scanFiles:
         - ./Modules/Xot/Helpers/Helper.php
@@ -49,4 +86,8 @@ parameters:
     editorUrl: 'vscode://file/%%file%%:%%line%%'
     tmpDir: /tmp/phpstan
     treatPhpDocTypesAsCertain: false
+<<<<<<< HEAD
     # reportUnmatchedIgnoredErrors: false
+=======
+    reportUnmatchedIgnoredErrors: false
+>>>>>>> 6ed19256f (.)

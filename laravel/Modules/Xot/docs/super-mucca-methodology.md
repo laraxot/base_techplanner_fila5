@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🐃 **Metodologia Super Mucca: AI-Native Edition**
 
 **Ultimo aggiornamento**: 31 Gennaio 2026  
@@ -109,6 +110,8 @@ L'AI deve usare strumenti di validazione per assicurarsi che i link tra i docume
 
 ---
 *Documentazione conforme agli standard Laraxot - L'eccellenza è un'abitudine.*
+=======
+>>>>>>> 6ed19256f (.)
 # 🐄 Metodologia "Super Mucca"
 
 ## Filosofia
@@ -307,6 +310,7 @@ Vedi [Intelligent Solution Rule](./intelligent-solution-rule.md) per dettagli co
 **🔄 Ultimo aggiornamento**: Gennaio 2025
 **📦 Versione**: 1.0.0
 **🐄 Metodologia**: Super Mucca ✅
+<<<<<<< HEAD
 # 🐄 Metodologia "Super Mucca"
 
 **Ultimo aggiornamento**: 31 Gennaio 2026  
@@ -344,3 +348,5 @@ L'AI deve usare strumenti di validazione per assicurarsi che i link tra i docume
 
 ---
 *Documentazione conforme agli standard Laraxot - L'eccellenza è un'abitudine.*
+=======
+>>>>>>> 6ed19256f (.)

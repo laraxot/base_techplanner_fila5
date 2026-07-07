@@ -139,6 +139,7 @@ a:hover,
     color: var(--italia-blue-800) !important;
 }
 
+<<<<<<< HEAD
 /* Override Filament — verde PA (PaDesignColors), non blu istituzionale */
 .fi-btn-primary,
 .fi-btn.fi-btn-color-primary {
@@ -157,6 +158,22 @@ a:hover,
 .fi-input:focus {
     border-color: #007a52 !important;
     box-shadow: 0 0 0 3px rgba(0, 122, 82, 0.15) !important;
+=======
+/* Override specifico per Filament */
+.fi-btn-primary {
+    background-color: var(--italia-blue-500) !important;
+    border-color: var(--italia-blue-500) !important;
+}
+
+.fi-btn-primary:hover {
+    background-color: var(--italia-blue-600) !important;
+    border-color: var(--italia-blue-600) !important;
+}
+
+.fi-input:focus {
+    border-color: var(--italia-blue-500) !important;
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1) !important;
+>>>>>>> 6ed19256f (.)
 }
 
 /* Override per Bootstrap Italia */

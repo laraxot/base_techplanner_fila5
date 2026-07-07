@@ -1,9 +1,14 @@
 # Sistema di Traduzioni
 
 ## Collegamenti Bidirezionali
+<<<<<<< HEAD
 - [Modulo <nome progetto> - Regole Consolidate Traduzioni](../../<nome progetto>/docs/translation-rules-consolidated.md)
 - [Modulo <nome progetto> - Implementazione Appointment Report](../../<nome progetto>/docs/appointment_report_translations_implementation.md)
 - [Modulo User - Translation Best Practices](../../User/docs/translation_best_practices.md)
+=======
+- [Modulo SaluteMo - Regole Consolidate Traduzioni](../../SaluteMo/docs/translation-rules-consolidated.md)
+- [Modulo SaluteMo - Implementazione Appointment Report](../../SaluteMo/docs/appointment_report_translations_implementation.md)
+>>>>>>> 6ed19256f (.)
 - [Modulo User - Translation Best Practices](../../User/docs/translation_best_practices.md)
 
 ## Panoramica
@@ -151,7 +156,11 @@ return [
 
 ## Esempi di Implementazione Corretta
 
+<<<<<<< HEAD
 ### Modulo <nome progetto> - Appointment Report
+=======
+### Modulo SaluteMo - Appointment Report
+>>>>>>> 6ed19256f (.)
 ```php
 <?php
 
@@ -198,6 +207,11 @@ return [
 ---
 
 *Ultimo aggiornamento: Gennaio 2025*
+<<<<<<< HEAD
 *Ultimo aggiornamento: Gennaio 2025*
 *Versione: 2.0*
 *Compatibilità: Laravel 12.x, Filament 4.x*
+=======
+*Versione: 2.0*
+*Compatibilità: Laravel 12.x, Filament 4.x*
+>>>>>>> 6ed19256f (.)

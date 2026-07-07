@@ -52,6 +52,10 @@ final class SendPlivoSMSAction implements SmsActionContract
      * Execute the action.
      *
      * @param  SmsData  $smsData  I dati del messaggio SMS
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> 6ed19256f (.)
      * @return array Risultato dell'operazione
      *
      * @throws Exception In caso di errore durante l'invio
@@ -62,14 +66,22 @@ final class SendPlivoSMSAction implements SmsActionContract
         // Normalizza il numero di telefono
         $to = (string) $smsData->recipient;
         if (Str::startsWith($to, '00')) {
+<<<<<<< HEAD
             $to = '+'.substr($to, 2);
+=======
+            $to = $to !== '' ? '+'.substr($to, 2) : $to;
+>>>>>>> 6ed19256f (.)
         }
 
         if (! Str::startsWith($to, '+')) {
             $to = '+39'.$to;
         }
 
+<<<<<<< HEAD
         $from = $smsData->from ?: $this->defaultSender;
+=======
+        $from = $smsData->from ?? $this->defaultSender;
+>>>>>>> 6ed19256f (.)
 
         // Plivo richiede l'autenticazione Basic
         $client = new Client([

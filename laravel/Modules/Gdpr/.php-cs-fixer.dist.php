@@ -38,6 +38,10 @@ $config
         'class_definition' => true,
         'elseif' => true,
     ])
+<<<<<<< HEAD
     ->setFinder($finder);
+=======
+    ->setFinder($finder)
+>>>>>>> 6ed19256f (.)
 
 return $config;

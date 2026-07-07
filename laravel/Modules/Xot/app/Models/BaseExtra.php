@@ -8,12 +8,17 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ExtraContract;
 use Modules\Xot\Database\Factories\ExtraFactory;
+<<<<<<< HEAD
+=======
+use Override;
+>>>>>>> 6ed19256f (.)
 use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
 
 /**
  * Model Extra.
  *
+<<<<<<< HEAD
  * @property int                                               $id
  * @property int|null                                          $model_id
  * @property string|null                                       $model_type
@@ -26,6 +31,20 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
  * @method static Builder|Extra     query()
  * @method static Builder|BaseModel withCacheCooldownSeconds(?int $seconds = null)
  * @method static Builder|Extra     withExtraAttributes()
+=======
+ * @property int $id
+ * @property int|null $model_id
+ * @property string|null $model_type
+ * @property \Spatie\SchemalessAttributes\SchemalessAttributes $extra_attributes
+ *
+ * @method static Builder|BaseModel disableCache()
+ * @method static ExtraFactory factory($count = null, $state = [])
+ * @method static Builder|Extra newModelQuery()
+ * @method static Builder|Extra newQuery()
+ * @method static Builder|Extra query()
+ * @method static Builder|BaseModel withCacheCooldownSeconds(?int $seconds = null)
+ * @method static Builder|Extra withExtraAttributes()
+>>>>>>> 6ed19256f (.)
  *
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
@@ -69,7 +88,11 @@ abstract class BaseExtra extends BaseModel implements ExtraContract
      *
      * @return array<string, string>
      */
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> 6ed19256f (.)
     protected function casts(): array
     {
         return [

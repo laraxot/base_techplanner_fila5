@@ -223,5 +223,8 @@
 ## Collegamenti tra versioni di media.md
 * [media.md](../../../Xot/docs/features/media.md)
 * [media.md](../../../Xot/docs/roadmap/bottlenecks/media.md)
+<<<<<<< HEAD
 * [media.md](../../../xot/docs/features/media.md)
 * [media.md](../../../xot/docs/roadmap/bottlenecks/media.md)
+=======
+>>>>>>> 6ed19256f (.)

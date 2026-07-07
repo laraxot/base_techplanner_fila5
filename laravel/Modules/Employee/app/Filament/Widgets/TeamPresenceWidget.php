@@ -12,7 +12,11 @@ use Filament\Schemas\Components\Actions;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Modules\Employee\Models\Employee;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+=======
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
+>>>>>>> 6ed19256f (.)
 use Override;
 
 /**
@@ -21,7 +25,11 @@ use Override;
  * Displays current team presence status with department filtering
  * and detailed view capabilities.
  */
+<<<<<<< HEAD
 class TeamPresenceWidget extends XotBaseSchemaWidget
+=======
+class TeamPresenceWidget extends XotBaseWidget
+>>>>>>> 6ed19256f (.)
 {
     protected static ?int $sort = 4;
 
@@ -154,10 +162,15 @@ class TeamPresenceWidget extends XotBaseSchemaWidget
     private function renderStatsDisplay(array $presenceData): string
     {
         try {
+<<<<<<< HEAD
             /** @var view-string $view */
             $view = 'employee::widgets.team-presence.stats-display';
 
             return view($view, [
+=======
+            /** @phpstan-ignore-next-line */
+            return view('employee::widgets.team-presence.stats-display', [
+>>>>>>> 6ed19256f (.)
                 'present' => $presenceData['present'],
                 'absent' => $presenceData['absent'],
                 'presentCount' => is_countable($presenceData['present'])
@@ -178,10 +191,15 @@ class TeamPresenceWidget extends XotBaseSchemaWidget
     private function renderPresenceList(array $presenceData): string
     {
         try {
+<<<<<<< HEAD
             /** @var view-string $view */
             $view = 'employee::widgets.team-presence.presence-list';
 
             return view($view, [
+=======
+            /** @phpstan-ignore-next-line */
+            return view('employee::widgets.team-presence.presence-list', [
+>>>>>>> 6ed19256f (.)
                 'present' => is_array($presenceData['present']) ? $presenceData['present'] : [],
                 'absent' => is_array($presenceData['absent']) ? $presenceData['absent'] : [],
             ])->render();

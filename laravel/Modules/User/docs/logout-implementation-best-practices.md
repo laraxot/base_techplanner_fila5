@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+# Best Practices per l'Implementazione del Logout
+
+## Collegamenti correlati
+>>>>>>> 6ed19256f (.)
 - [README modulo User](./README.md)
 - [Best Practices Componenti di Autenticazione](./AUTH_COMPONENTS_BEST_PRACTICES.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
@@ -184,7 +190,11 @@ Il template Blade associato al componente Volt dovrebbe gestire i diversi stati 
 
 ## Chiavi di Traduzione
 
+<<<<<<< HEAD
 Le chiavi di traduzione per il processo di logout devono seguire la struttura gerarchica definita nelle best practices di <nome progetto>:
+=======
+Le chiavi di traduzione per il processo di logout devono seguire la struttura gerarchica definita nelle best practices di SaluteOra:
+>>>>>>> 6ed19256f (.)
 
 ```php
 'logout' => [
@@ -425,7 +435,11 @@ Il template Blade associato al componente Volt dovrebbe gestire i diversi stati 
 
 ## Chiavi di Traduzione
 
+<<<<<<< HEAD
 Le chiavi di traduzione per il processo di logout devono seguire la struttura gerarchica definita nelle best practices di <nome progetto>:
+=======
+Le chiavi di traduzione per il processo di logout devono seguire la struttura gerarchica definita nelle best practices di SaluteOra:
+>>>>>>> 6ed19256f (.)
 
 ```php
 'logout' => [
@@ -477,6 +491,7 @@ $this->redirect(LaravelLocalization::getLocalizedURL($locale, route('home')));
 - [Documentazione Livewire Volt](https://livewire.laravel.com/docs/volt)
 - [Documentazione Laravel Folio](https://laravel.com/docs/10.x/folio)
 - [Documentazione Laravel Localization](https://github.com/mcamara/laravel-localization)
+<<<<<<< HEAD
 ---
 module: theme
 topic: logout-implementation-best-practices
@@ -484,3 +499,5 @@ canonical: ../../../Themes/docs/shared-components/logout-implementation-best-pra
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-best-practices.md
+=======
+>>>>>>> 6ed19256f (.)

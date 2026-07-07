@@ -53,7 +53,10 @@ Overall Module Completion: 60%
 2. Code Quality Improvements
    - Implement missing tests
    - Reduce code duplication
+<<<<<<< HEAD
    - Priority: High
+=======
+>>>>>>> 6ed19256f (.)
 
 3. Documentation
    - Complete API documentation
@@ -69,16 +72,25 @@ Overall Module Completion: 60%
 2. Documentation
    - API documentation
    - Integration guides
+<<<<<<< HEAD
    - Priority: Medium
+=======
+>>>>>>> 6ed19256f (.)
 
 3. Performance
    - Query optimization
    - Cache implementation
+<<<<<<< HEAD
    - Priority: High
 
 ### Versione HEAD
 
 
+=======
+
+### Versione HEAD
+
+>>>>>>> 6ed19256f (.)
 ## Collegamenti tra versioni di roadmap.md
 * [roadmap.md](bashscripts/docs/roadmap.md)
 * [roadmap.md](docs/roadmap.md)
@@ -98,7 +110,10 @@ Overall Module Completion: 60%
 * [roadmap.md](../../../../Themes/One/docs/roadmap.md)* [roadmap.md](bashscripts/project_docs/roadmap.md)
 * [roadmap.md](../../../../Themes/One/docs/roadmap.md)
 * [roadmap.md](bashscripts/project_docs/roadmap.md)
+<<<<<<< HEAD
 * [roadmap.md](../../../../Themes/One/docs/roadmap.md)* [roadmap.md](bashscripts/project_docs/roadmap.md)
+=======
+>>>>>>> 6ed19256f (.)
 * [roadmap.md](docs/roadmap.md)
 * [roadmap.md](../../../Gdpr/project_docs/roadmap.md)
 * [roadmap.md](../../../Notify/project_docs/roadmap.md)
@@ -114,6 +129,10 @@ Overall Module Completion: 60%
 * [roadmap.md](../../../Patient/project_docs/roadmap.md)
 * [roadmap.md](../../../Cms/project_docs/roadmap.md)
 * [roadmap.md](../../../../Themes/One/project_docs/roadmap.md)
+<<<<<<< HEAD
+=======
+* [roadmap.md](../../../../Themes/One/docs/roadmap.md)
+>>>>>>> 6ed19256f (.)
 
 # Roadmap Implementazione
 
@@ -265,6 +284,7 @@ Overall Module Completion: 60%
 Per contribuire alla documentazione, seguire le [Linee Guida](../../../docs/linee-guida-documentazione.md) e le [Regole dei Collegamenti](../../../docs/regole_collegamenti_documentazione.md).
 
 ## Collegamenti Completi
+<<<<<<< HEAD
 Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../docs/README_links.md).Per contribuire alla documentazione, seguire le [Linee Guida](../../../project_docs/linee-guida-documentazione.md) e le [Regole dei Collegamenti](../../../project_docs/regole_collegamenti_documentazione.md).
 Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../docs/README_links.md).
 Per contribuire alla documentazione, seguire le [Linee Guida](../../../project_docs/linee-guida-documentazione.md) e le [Regole dei Collegamenti](../../../project_docs/regole_collegamenti_documentazione.md).
@@ -290,3 +310,15 @@ updated: 2026-05-21
 Contenuto in wiki di progetto — non duplicare nei moduli ([#124](https://github.com/provtv/base_ptv_fila5_mono/issues/124)).
 
 → [docs/wiki/rules/00-TRIGGER_MAP.md](../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
+=======
+
+Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../docs/README_links.md).Per contribuire alla documentazione, seguire le [Linee Guida](../../../project_docs/linee-guida-documentazione.md) e le [Regole dei Collegamenti](../../../project_docs/regole_collegamenti_documentazione.md).
+Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../docs/README_links.md).
+Per contribuire alla documentazione, seguire le [Linee Guida](../../../project_docs/linee-guida-documentazione.md) e le [Regole dei Collegamenti](../../../project_docs/regole_collegamenti_documentazione.md).
+
+Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../project_docs/README_links.md).
+
+### Versione Incoming
+
+---
+>>>>>>> 6ed19256f (.)

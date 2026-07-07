@@ -4,9 +4,12 @@
 - [README modulo Cms](./README.md)
 - [Documentazione User](../../User/project_docs/HEADER_LANGUAGE_AVATAR_IMPLEMENTATION.md)
 - [Documentazione Sezioni](./SECTIONS_STRUCTURE.md)
+<<<<<<< HEAD
 - [README modulo Cms](./readme.md)
 - [Documentazione User](../../user/project_docs/header_language_avatar_implementation.md)
 - [Documentazione Sezioni](./sections_structure.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Collegamenti Documentazione](/project_docs/collegamenti-documentazione.md)
 
 ## Panoramica
@@ -49,8 +52,12 @@ Creare un nuovo componente per il selettore di lingua:
             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
         </svg>
     </button>
+<<<<<<< HEAD
     
     
+=======
+
+>>>>>>> 6ed19256f (.)
     <div
         x-show="open"
         x-transition:enter="transition ease-out duration-100"
@@ -124,8 +131,12 @@ Creare un nuovo componente per l'avatar utente con dropdown:
                 @endif
             </button>
         </div>
+<<<<<<< HEAD
         
         
+=======
+
+>>>>>>> 6ed19256f (.)
         <div
             x-show="open"
             x-transition:enter="transition ease-out duration-100"
@@ -140,6 +151,7 @@ Creare un nuovo componente per l'avatar utente con dropdown:
                 <div class="font-medium">{{ $user->first_name }} {{ $user->last_name }}</div>
                 <div class="text-gray-500 truncate">{{ $user->email }}</div>
             </div>
+<<<<<<< HEAD
             
             <a href="{{ '/' . app()->getLocale() . '/profile' }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                 {{ __('user.profile.link') }}
@@ -149,6 +161,8 @@ Creare un nuovo componente per l'avatar utente con dropdown:
                 {{ __('user.dashboard.link') }}
             </a>
             
+=======
+>>>>>>> 6ed19256f (.)
 
             <a href="{{ '/' . app()->getLocale() . '/profile' }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                 {{ __('user.profile.link') }}
@@ -393,4 +407,8 @@ Ecco come dovrebbe apparire il file JSON completo dell'header dopo le modifiche:
 
 - [Documentazione Alpine.js](https://alpinejs.dev/) - Per le interazioni dropdown
 - [Documentazione Filament](https://filamentphp.com/docs) - Per i componenti UI
+<<<<<<< HEAD
 - [Documentazione Laravel Localization](https://laravel.com/project_docs/10.x/localization) - Per la gestione delle lingue
+=======
+- [Documentazione Laravel Localization](https://laravel.com/project_docs/10.x/localization) - Per la gestione delle lingue
+>>>>>>> 6ed19256f (.)

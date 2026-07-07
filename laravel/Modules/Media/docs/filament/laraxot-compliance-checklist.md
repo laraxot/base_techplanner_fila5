@@ -120,7 +120,11 @@ namespace Modules\Media\Models;               // Corretto
 
 ### PHPStan Check
 ```bash
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/html/_bases/base_saluteora/laravel
+>>>>>>> 6ed19256f (.)
 ./vendor/bin/phpstan analyze Modules/Media --level=9
 ```
 
@@ -199,12 +203,19 @@ class ExamplePage extends XotBasePage
 - [Media Module README](../README.md)
 - [Laraxot Best Practices](../../../../docs/laraxot-best-practices.md)
 - [PHPStan Guidelines](../../../../docs/phpstan-guidelines.md)
+<<<<<<< HEAD
 - [Media Module README](../readme.md)
 - [Laraxot Best Practices](../../../../../docs/laraxot-best-practices.md)
 - [PHPStan Guidelines](../../../../../docs/phpstan-guidelines.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ---
 
 **Versione**: 1.0
 **Data**: 2025-08-07
+<<<<<<< HEAD
 **Applicabilità**: Tutti i file Filament del modulo Media
+=======
+**Applicabilità**: Tutti i file Filament del modulo Media
+>>>>>>> 6ed19256f (.)

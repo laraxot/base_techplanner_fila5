@@ -100,11 +100,19 @@ This approach ensures that users can manually select their preferred language wh
 # Advanced Language Switching Strategies
 
 ## Overview
+<<<<<<< HEAD
 In a healthcare application like `<nome progetto>`, providing a seamless multi-language experience is crucial for accessibility and user satisfaction. This document explores advanced strategies for language switching, building upon our existing URL-based approach.
 
 ## Combined URL and Session-Based Language Switching
 
 For optimal user experience and SEO benefits, `<nome progetto>` can implement a hybrid approach combining URL-based language prefixes with session/database storage.
+=======
+In a healthcare application like `saluteora`, providing a seamless multi-language experience is crucial for accessibility and user satisfaction. This document explores advanced strategies for language switching, building upon our existing URL-based approach.
+
+## Combined URL and Session-Based Language Switching
+
+For optimal user experience and SEO benefits, `saluteora` can implement a hybrid approach combining URL-based language prefixes with session/database storage.
+>>>>>>> 6ed19256f (.)
 
 ### Benefits
 - SEO friendly URLs with language prefix (e.g., `/en/services`)

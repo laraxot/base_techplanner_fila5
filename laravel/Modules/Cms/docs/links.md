@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //---- making documentation
 
 https://github.com/42coders/document-templates
@@ -49,6 +50,8 @@ https://laravel-bootstrap-components.com/themes/liara/features
 
 
 
+=======
+>>>>>>> 6ed19256f (.)
 # Collegamenti Modulo Cms
 
 ## Collegamenti in Uscita
@@ -69,4 +72,8 @@ https://laravel-bootstrap-components.com/themes/liara/features
 * [LINKS.md](laravel/Modules/User/docs/LINKS.md)
 * [LINKS.md](laravel/Modules/UI/docs/LINKS.md)
 * [LINKS.md](laravel/Modules/Cms/docs/LINKS.md)
+<<<<<<< HEAD
 * [LINKS.md](laravel/Themes/One/docs/LINKS.md)
+=======
+* [LINKS.md](laravel/Themes/One/docs/LINKS.md)
+>>>>>>> 6ed19256f (.)

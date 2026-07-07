@@ -6,7 +6,12 @@ use Illuminate\Database\Schema\Blueprint;
 use Modules\Gdpr\Models\Consent;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
+<<<<<<< HEAD
 return new class extends XotBaseMigration {
+=======
+return new class extends XotBaseMigration
+{
+>>>>>>> 6ed19256f (.)
     protected ?string $model_class = Consent::class;
 
     /**
@@ -17,7 +22,12 @@ return new class extends XotBaseMigration {
         // -- CREATE --
 
         $this->tableCreate(
+<<<<<<< HEAD
             function (Blueprint $table): void {
+=======
+            function ($table): void {
+                /** @var Blueprint $table */
+>>>>>>> 6ed19256f (.)
                 $table->uuid('id')->primary();
                 $table->uuid('treatment_id');
                 // $table->foreignId('treatment_id')->nullable()->index();
@@ -42,12 +52,15 @@ return new class extends XotBaseMigration {
                 if (! $this->hasColumn('accepted_at')) {
                     $table->timestamp('accepted_at')->nullable();
                 }
+<<<<<<< HEAD
                 if (! $this->hasColumn('ip_address')) {
                     $table->string('ip_address', 45)->nullable();
                 }
                 if (! $this->hasColumn('user_agent')) {
                     $table->string('user_agent')->nullable();
                 }
+=======
+>>>>>>> 6ed19256f (.)
                 // -- Change --
                 if ($this->hasColumn('user_id')) {
                     $table->string('user_id')->nullable()->change();
@@ -59,4 +72,8 @@ return new class extends XotBaseMigration {
             }
         );
     }
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> 6ed19256f (.)

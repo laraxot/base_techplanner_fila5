@@ -27,4 +27,10 @@
 2. Add page class and blade view (no hardcoded strings).
 3. Add translations (en/it).
 4. Run PHPStan level 10 and fix issues.
+<<<<<<< HEAD
 5. Update docs links from README to this plan and analysis.
+=======
+5. Update docs links from README to this plan and analysis.
+
+
+>>>>>>> 6ed19256f (.)

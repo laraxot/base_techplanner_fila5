@@ -40,6 +40,7 @@ class MailgunService
         try {
             // 1. Validazione
             $this->validateRequest($to, $subject, $template);
+<<<<<<< HEAD
             
             // 2. Preparazione
             $payload = $this->preparePayload($to, $subject, $template, $data);
@@ -50,10 +51,23 @@ class MailgunService
             // 4. Logging
             $this->logDelivery($response);
             
+=======
+
+            // 2. Preparazione
+            $payload = $this->preparePayload($to, $subject, $template, $data);
+
+            // 3. Invio
+            $response = $this->mailgun->messages()->send($this->domain, $payload);
+
+            // 4. Logging
+            $this->logDelivery($response);
+
+>>>>>>> 6ed19256f (.)
             return $response;
         } catch (Exception $e) {
             // 1. Log errore
             $this->logError($e);
+<<<<<<< HEAD
             
             // 2. Notifica admin
             $this->notifyAdmin($e);
@@ -61,6 +75,15 @@ class MailgunService
             // 3. Retry
             $this->retry($to, $subject, $template, $data);
             
+=======
+
+            // 2. Notifica admin
+            $this->notifyAdmin($e);
+
+            // 3. Retry
+            $this->retry($to, $subject, $template, $data);
+
+>>>>>>> 6ed19256f (.)
             throw $e;
         }
     }
@@ -74,7 +97,11 @@ class MailgunService
 // config/mail.php
 return [
     'default' => env('MAIL_MAILER', 'smtp'),
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     'mailers' => [
         'smtp' => [
             'transport' => 'smtp',
@@ -97,6 +124,7 @@ class MailtrapService
     {
         // 1. Validazione ambiente
         $this->validateEnvironment();
+<<<<<<< HEAD
         
         // 2. Preparazione test
         $testData = $this->prepareTestData($data);
@@ -104,6 +132,15 @@ class MailtrapService
         // 3. Invio test
         $response = $this->sendTest($to, $subject, $template, $testData);
         
+=======
+
+        // 2. Preparazione test
+        $testData = $this->prepareTestData($data);
+
+        // 3. Invio test
+        $response = $this->sendTest($to, $subject, $template, $testData);
+
+>>>>>>> 6ed19256f (.)
         // 4. Verifica risultato
         return $this->verifyTest($response);
     }
@@ -146,6 +183,7 @@ class WebhookController extends Controller
     {
         // 1. Verifica firma
         $this->verifySignature($request);
+<<<<<<< HEAD
         
         // 2. Processa evento
         $event = $this->processEvent($request);
@@ -156,6 +194,18 @@ class WebhookController extends Controller
         // 4. Notifica se necessario
         $this->notifyIfNeeded($event);
         
+=======
+
+        // 2. Processa evento
+        $event = $this->processEvent($request);
+
+        // 3. Aggiorna analytics
+        $this->updateAnalytics($event);
+
+        // 4. Notifica se necessario
+        $this->notifyIfNeeded($event);
+
+>>>>>>> 6ed19256f (.)
         return response()->json(['status' => 'success']);
     }
 }
@@ -192,6 +242,7 @@ class AnalyticsService
     {
         // 1. Validazione evento
         $this->validateEvent($event);
+<<<<<<< HEAD
         
         // 2. Processa evento
         $processed = $this->processEvent($event);
@@ -199,6 +250,15 @@ class AnalyticsService
         // 3. Aggiorna metriche
         $this->updateMetrics($processed);
         
+=======
+
+        // 2. Processa evento
+        $processed = $this->processEvent($event);
+
+        // 3. Aggiorna metriche
+        $this->updateMetrics($processed);
+
+>>>>>>> 6ed19256f (.)
         // 4. Genera report
         $this->generateReport($processed);
     }
@@ -215,14 +275,22 @@ class IntegrationTest extends TestCase
     public function test_mailgun_integration()
     {
         $mailgun = $this->app->make(MailgunService::class);
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         $response = $mailgun->send(
             'test@example.com',
             'Test Subject',
             'test-template',
             ['name' => 'Test User']
         );
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         $this->assertTrue($response->successful());
     }
 }
@@ -237,6 +305,7 @@ class WebhookTest extends TestCase
     {
         // 1. Simula evento
         $event = $this->createTestEvent();
+<<<<<<< HEAD
         
         // 2. Invia webhook
         $response = $this->postJson('/webhook/mailgun', $event);
@@ -244,6 +313,15 @@ class WebhookTest extends TestCase
         // 3. Verifica risposta
         $response->assertStatus(200);
         
+=======
+
+        // 2. Invia webhook
+        $response = $this->postJson('/webhook/mailgun', $event);
+
+        // 3. Verifica risposta
+        $response->assertStatus(200);
+
+>>>>>>> 6ed19256f (.)
         // 4. Verifica analytics
         $this->assertEventTracked($event);
     }
@@ -305,8 +383,15 @@ class IntegrationAlertService
 - Ogni sezione ha il suo README.md specifico
 
 ## Contribuire
+<<<<<<< HEAD
 Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../docs/README_links.md). 
 Per contribuire alla documentazione, seguire le [Linee Guida](../../../../docs/linee-guida-documentazione.md) e le [Regole dei Collegamenti](../../../../docs/regole_collegamenti_documentazione.md).
 
 ## Collegamenti Completi
 Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../../docs/readme_links.md). 
+=======
+Per contribuire alla documentazione, seguire le [Linee Guida](../../../docs/linee-guida-documentazione.md) e le [Regole dei Collegamenti](../../../docs/regole_collegamenti_documentazione.md).
+
+## Collegamenti Completi
+Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../docs/README_links.md).
+>>>>>>> 6ed19256f (.)

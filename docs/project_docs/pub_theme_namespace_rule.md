@@ -227,4 +227,8 @@ Ogni volta che si lavora con temi e CMS, consultare questa regola per garantire 
 - [ThemeServiceProvider Sixteen](../laravel/Themes/Sixteen/app/Providers/ThemeServiceProvider.php)
 - [CmsServiceProvider](../laravel/Modules/Cms/app/Providers/CmsServiceProvider.php)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: Gennaio 2025*
+=======
+*Ultimo aggiornamento: Gennaio 2025*
+>>>>>>> 6ed19256f (.)

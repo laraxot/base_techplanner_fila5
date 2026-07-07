@@ -20,9 +20,15 @@ La sintassi `@svg()` utilizzata nella view Blade non è compatibile con il siste
 ### **Sintassi Corretta per Filament 3.x**
 ```blade
 {{-- ✅ CORRETTO: Sintassi Filament per icone Heroicons --}}
+<<<<<<< HEAD
 <x-filament::icon 
     :icon="$icon" 
     class="w-4 h-4 flex-shrink-0 {{ $color }}" 
+=======
+<x-filament::icon
+    :icon="$icon"
+    class="w-4 h-4 flex-shrink-0 {{ $color }}"
+>>>>>>> 6ed19256f (.)
 />
 ```
 
@@ -52,18 +58,30 @@ La sintassi `@svg()` utilizzata nella view Blade non è compatibile con il siste
 
 ### **Opzione 1: Componente Filament Icon (RACCOMANDATO)**
 ```blade
+<<<<<<< HEAD
 <x-filament::icon 
     :icon="$icon" 
     class="w-4 h-4 flex-shrink-0 {{ $color }}" 
+=======
+<x-filament::icon
+    :icon="$icon"
+    class="w-4 h-4 flex-shrink-0 {{ $color }}"
+>>>>>>> 6ed19256f (.)
 />
 ```
 
 ### **Opzione 2: Blade Icons Package**
 ```blade
 @if(str_starts_with($icon, 'heroicon-'))
+<<<<<<< HEAD
     <x-dynamic-component 
         :component="$icon" 
         class="w-4 h-4 flex-shrink-0 {{ $color }}" 
+=======
+    <x-dynamic-component
+        :component="$icon"
+        class="w-4 h-4 flex-shrink-0 {{ $color }}"
+>>>>>>> 6ed19256f (.)
     />
 @endif
 ```
@@ -90,9 +108,15 @@ La sintassi `@svg()` utilizzata nella view Blade non è compatibile con il siste
 ### **Modifica Specifica**
 ```diff
 - @svg($icon, 'w-4 h-4 flex-shrink-0 ' . $color)
+<<<<<<< HEAD
 + <x-filament::icon 
 +     :icon="$icon" 
 +     class="w-4 h-4 flex-shrink-0 {{ $color }}" 
+=======
++ <x-filament::icon
++     :icon="$icon"
++     class="w-4 h-4 flex-shrink-0 {{ $color }}"
+>>>>>>> 6ed19256f (.)
 + />
 ```
 
@@ -135,8 +159,15 @@ La sintassi `@svg()` utilizzata nella view Blade non è compatibile con il siste
 
 ---
 
+<<<<<<< HEAD
 **Data Analisi**: 2025-08-01  
 **Data Analisi**: 2025-08-01  
 **Priorità**: 🔴 ALTA (Funzionalità core non funzionante)  
 **Tempo Stimato Fix**: 5 minuti  
 **Rischio**: 🟢 BASSO (Modifica isolata)
+=======
+**Data Analisi**: 2025-08-01
+**Priorità**: 🔴 ALTA (Funzionalità core non funzionante)
+**Tempo Stimato Fix**: 5 minuti
+**Rischio**: 🟢 BASSO (Modifica isolata)
+>>>>>>> 6ed19256f (.)

@@ -2,12 +2,16 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Geo\Tests\Feature;
 
 uses(TestCase::class);
 
 use Modules\Geo\Enums\AddressTypeEnum;
 use Modules\Geo\Tests\TestCase;
+=======
+use Modules\Geo\Enums\AddressTypeEnum;
+>>>>>>> 6ed19256f (.)
 
 /**
  * In-memory Address tests (no factories / DB / container).

@@ -70,6 +70,7 @@ quindi le relazioni verranno create utilizzando il MorphMap, ovvero la stringa '
 - altri files
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/docs/structure.md)
+<<<<<<< HEAD
 * [structure.md](../../../gdpr/docs/structure.md)
 * [structure.md](../../../notify/docs/structure.md)
 * [structure.md](../../../xot/docs/structure.md)
@@ -85,6 +86,8 @@ quindi le relazioni verranno create utilizzando il MorphMap, ovvero la stringa '
 * [structure.md](../../../cms/docs/structure.md)
 * [structure.md](../../../cms/docs/themes/structure.md)
 * [structure.md](../../../cms/docs/components/structure.md)
+=======
+>>>>>>> 6ed19256f (.)
 * [structure.md](../../../Gdpr/docs/structure.md)
 * [structure.md](../../../Notify/docs/structure.md)
 * [structure.md](../../../Xot/docs/structure.md)
@@ -105,4 +108,8 @@ quindi le relazioni verranno create utilizzando il MorphMap, ovvero la stringa '
 
 - altri files
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> 6ed19256f (.)

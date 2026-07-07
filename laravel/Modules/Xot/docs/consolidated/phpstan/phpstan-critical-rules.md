@@ -2,7 +2,11 @@
 
 ## 🚨 REGOLA ASSOLUTA 🚨
 
+<<<<<<< HEAD
 **MAI, MAI, MAI modificare il file `phpstan.neon`**
+=======
+**MAI, MAI, MAI modificare il file `/var/www/html/_bases/base_saluteora/laravel/phpstan.neon`**
+>>>>>>> 6ed19256f (.)
 
 ## Motivazione
 

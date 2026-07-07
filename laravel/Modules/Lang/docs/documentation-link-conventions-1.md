@@ -14,8 +14,13 @@ I collegamenti nei file di documentazione devono **sempre** utilizzare percorsi 
 
 ❌ **ERRATO**:
 ```markdown
+<<<<<<< HEAD
 [Regole Generali](Modules/Xot/docs/translations.md)
 [Best Practices](Modules/Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
+=======
+[Regole Generali](/var/www/html/saluteora/laravel/Modules/Xot/docs/translations.md)
+[Best Practices](/var/www/html/saluteora/laravel/Modules/Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
+>>>>>>> 6ed19256f (.)
 ```
 
 ### 2. Navigazione Tra Cartelle
@@ -31,7 +36,11 @@ Esempi:
 
 ### 3. Struttura della Documentazione
 
+<<<<<<< HEAD
 Quando si creano collegamenti, considerare la struttura standard dei moduli <nome progetto>:
+=======
+Quando si creano collegamenti, considerare la struttura standard dei moduli SaluteOra:
+>>>>>>> 6ed19256f (.)
 
 ```
 laravel/
@@ -55,7 +64,11 @@ Per collegare documenti tra moduli diversi:
 [Link a ModuloB](../../ModuloB/docs/file.md)
 
 <!-- Da Modules/ModuloA/docs/file.md a docs/file.md nella root -->
+<<<<<<< HEAD
 [Link a docs root](../../../../docs/file.md)
+=======
+[Link a docs root](../../../docs/file.md)
+>>>>>>> 6ed19256f (.)
 ```
 
 ### 5. Verificare Sempre i Link
@@ -74,7 +87,11 @@ Prima di fare commit dei documenti:
 
 ### Da Modules/Lang/docs/ a docs/ nella root
 ```markdown
+<<<<<<< HEAD
 [Documentazione Principale](../../../../docs/README.md)
+=======
+[Documentazione Principale](../../../docs/README.md)
+>>>>>>> 6ed19256f (.)
 ```
 
 ### Da Modules/Lang/docs/ a un altro file nella stessa cartella
@@ -87,4 +104,8 @@ Prima di fare commit dei documenti:
 1. **Portabilità**: La documentazione funziona in qualsiasi ambiente
 2. **Manutenibilità**: Se la struttura cambia, sono necessarie meno modifiche
 3. **Collaborazione**: Facilita il lavoro di più sviluppatori
+<<<<<<< HEAD
 4. **Coerenza**: Rispetta gli standard del progetto <nome progetto>
+=======
+4. **Coerenza**: Rispetta gli standard del progetto SaluteOra
+>>>>>>> 6ed19256f (.)

@@ -35,12 +35,21 @@ class FirebaseAndroidNotification extends Notification implements MobilePushNoti
      */
     public function __construct(
         public FirebaseNotificationData $data,
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> 6ed19256f (.)
 
     /**
      * Get the notification's delivery channels.
      *
      * @param  object  $_notifiable  The entity to be notified (l'entità da notificare)
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> 6ed19256f (.)
      * @return array<int, class-string>
      */
     public function via(object $_notifiable): array
@@ -95,6 +104,10 @@ class FirebaseAndroidNotification extends Notification implements MobilePushNoti
      * Get the array representation of the notification.
      *
      * @param  object|null  $notifiable  The entity to be notified
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> 6ed19256f (.)
      * @return array<string, mixed>
      */
     #[Override]
@@ -113,14 +126,22 @@ class FirebaseAndroidNotification extends Notification implements MobilePushNoti
         $notificationData = $this->data->data;
 
         /**
+<<<<<<< HEAD
          * @var array<non-empty-string, string> $data
+=======
+         * @var array<non-empty-string, string|Stringable>
+>>>>>>> 6ed19256f (.)
          */
         $data = [];
 
         // Ensure each key is a non-empty string and each value is string or Stringable (Assicuriamoci che ogni chiave sia una stringa non vuota e ogni valore sia string o Stringable)
         foreach ($notificationData as $key => $value) {
             if (is_string($key) && $key !== '' && (is_string($value) || $value instanceof Stringable)) {
+<<<<<<< HEAD
                 $data[$key] = $value instanceof Stringable ? $value->toString() : $value;
+=======
+                $data[$key] = $value;
+>>>>>>> 6ed19256f (.)
             }
         }
 

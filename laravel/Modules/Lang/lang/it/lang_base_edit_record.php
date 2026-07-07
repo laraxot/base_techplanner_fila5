@@ -8,6 +8,7 @@ return [
             'label' => 'activeLocale',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Lang Base Edit Record',
     'plural_label' => 'Lang Base Edit Record (Plurale)',
     'navigation' => [
@@ -41,4 +42,6 @@ return [
             'description' => '',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

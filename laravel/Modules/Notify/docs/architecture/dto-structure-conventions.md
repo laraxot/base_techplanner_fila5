@@ -160,4 +160,8 @@ Prima di creare un nuovo DTO, verificare che:
 
 ---
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-05-12*
+=======
+*Ultimo aggiornamento: 2025-05-12*
+>>>>>>> 6ed19256f (.)

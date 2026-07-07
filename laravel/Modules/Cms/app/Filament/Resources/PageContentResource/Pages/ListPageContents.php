@@ -12,7 +12,11 @@ use Modules\Lang\Filament\Resources\Pages\LangBaseListRecords;
 class ListPageContents extends LangBaseListRecords
 {
     // use ListRecords\Concerns\Translatable;
+<<<<<<< HEAD
     // public static string $resource = PageContentResource::class;
+=======
+    // protected static string $resource = PageContentResource::class;
+>>>>>>> 6ed19256f (.)
     /**
      * @return array<int, Column|Stack>
      */

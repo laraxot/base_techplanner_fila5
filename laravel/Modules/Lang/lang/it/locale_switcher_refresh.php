@@ -9,6 +9,7 @@ return [
             'placeholder' => 'locale',
             'helper_text' => 'locale',
             'description' => 'locale',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -34,6 +35,8 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Locale Switcher Refresh',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
 ];

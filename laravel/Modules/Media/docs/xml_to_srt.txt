@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 module: theme
 topic: xml_to_srt
@@ -5,3 +6,7 @@ canonical: ../../../Themes/docs/shared-components/xml-to-srt.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/xml-to-srt.md
+=======
+https://github.com/mokhosh/laravel-xml2srt
+
+>>>>>>> 6ed19256f (.)

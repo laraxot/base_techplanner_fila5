@@ -6,15 +6,19 @@ return [
     'fields' => [
         'newstate' => [
             'label' => 'newstate',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'pack' => [
             'label' => 'pack',
             'description' => 'pack',
             'helper_text' => 'pack',
             'placeholder' => 'pack',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
         'icon' => [
@@ -46,6 +50,11 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Icon Picker',
+=======
+        ],
+        'icon' => [
+            'label' => 'icon',
+>>>>>>> 6ed19256f (.)
         ],
     ],
 ];

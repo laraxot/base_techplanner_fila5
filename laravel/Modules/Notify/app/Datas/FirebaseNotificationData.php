@@ -16,7 +16,10 @@ class FirebaseNotificationData extends Data
 
     public string $body; // ' => $data['body'],
 
+<<<<<<< HEAD
     /** @var array<string, mixed> */
+=======
+>>>>>>> 6ed19256f (.)
     public array $data; // ' => json_encode($data['data']),
 
     public static function fromType(string $type): self

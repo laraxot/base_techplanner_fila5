@@ -9,27 +9,37 @@ return [
             'placeholder' => 'title',
             'helper_text' => 'title',
             'description' => 'title',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'stats' => [
             'label' => 'stats',
             'placeholder' => 'stats',
             'helper_text' => 'stats',
             'description' => 'stats',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'number' => [
             'label' => 'number',
             'placeholder' => 'number',
             'helper_text' => 'number',
             'description' => 'number',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'label' => [
             'label' => 'label',
             'placeholder' => 'label',
             'helper_text' => 'label',
             'description' => 'label',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -44,4 +54,8 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        ],
+    ],
+>>>>>>> 6ed19256f (.)
 ];

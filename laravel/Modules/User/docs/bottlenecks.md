@@ -409,6 +409,7 @@ class AuthLogAnalyticsService
 Implementando queste soluzioni, il modulo User potrà superare i principali colli di bottiglia e migliorare significativamente le performance dell'applicazione. È consigliabile implementare le soluzioni in modo incrementale, misurando l'impatto di ciascuna modifica per garantire miglioramenti effettivi.
 ## Collegamenti
 - [Roadmap Principale](./roadmap.md)
+<<<<<<< HEAD
 - [Best Practices Filament](./filament_best_practices.md)
 - [Best Practices Widget](./best-practices/filament-widgets.md)
 - [Struttura Moduli](../xot/docs/module_structure.md)
@@ -462,6 +463,8 @@ Implementando queste soluzioni, il modulo User potrà superare i principali coll
 * [bottlenecks.md](../../activity/project_docs/bottlenecks.md)
 * [bottlenecks.md](../../patient/project_docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../cms/project_docs/bottlenecks.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Best Practices Filament](./FILAMENT_BEST_PRACTICES.md)
 - [Best Practices Widget](./best-practices/filament-widgets.md)
 - [Struttura Moduli](../Xot/docs/MODULE_STRUCTURE.md)
@@ -514,4 +517,8 @@ Implementando queste soluzioni, il modulo User potrà superare i principali coll
 * [bottlenecks.md](../../Media/project_docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../Activity/project_docs/bottlenecks.md)
 * [bottlenecks.md](../../Patient/project_docs/roadmap/bottlenecks.md)
+<<<<<<< HEAD
 * [bottlenecks.md](../../Cms/project_docs/bottlenecks.md)
+=======
+* [bottlenecks.md](../../Cms/project_docs/bottlenecks.md)
+>>>>>>> 6ed19256f (.)

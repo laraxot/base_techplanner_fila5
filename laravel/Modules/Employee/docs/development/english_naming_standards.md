@@ -200,4 +200,8 @@ Questa regola è ora permanentemente implementata per prevenire errori futuri!
 - [English Naming Rule](.cursor/rules/english-naming-critical-rule.mdc)
 - [Professional Standards](../README.md#naming-standards)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: Gennaio 2025*
+=======
+*Ultimo aggiornamento: Gennaio 2025*
+>>>>>>> 6ed19256f (.)

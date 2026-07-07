@@ -31,8 +31,13 @@ The `IconStateSplitColumn` is designed to display multiple state transition icon
 use Modules\UI\Filament\Tables\Columns\IconStateSplitColumn;
 use Modules\<nome modulo>\States\Appointment\AppointmentState;
 use Modules\<nome modulo>\Models\Appointment;
+<<<<<<< HEAD
 use Modules\<nome progetto>\States\Appointment\AppointmentState;
 use Modules\<nome progetto>\Models\Appointment;
+=======
+use Modules\SaluteOra\States\Appointment\AppointmentState;
+use Modules\SaluteOra\Models\Appointment;
+>>>>>>> 6ed19256f (.)
 // In your Filament resource table configuration
 'states' => IconStateSplitColumn::make()
     ->stateClass(AppointmentState::class, Appointment::class),
@@ -169,7 +174,10 @@ use Modules\UI\Filament\Tables\Columns\SelectStateColumn;
 ---
 **Last Updated**: June 2025
 **Version**: 2.0
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
 **Compatibility**: Filament 4.x, Laravel 11.x
 **Compatibility**: Filament 4.x, Laravel 11.x
 **Compatibility**: Filament 3.x, Laravel 10.x
@@ -177,4 +185,8 @@ use Modules\UI\Filament\Tables\Columns\SelectStateColumn;
 **Compatibility**: Filament 4.x, Laravel 11.x
 **Compatibility**: Filament 3.x, Laravel 10.x
 **Compatibility**: Filament 4.x, Laravel 11.x
+<<<<<<< HEAD
 **Compatibility**: Filament 3.x, Laravel 10.x
+=======
+**Compatibility**: Filament 3.x, Laravel 10.x
+>>>>>>> 6ed19256f (.)

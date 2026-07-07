@@ -2,10 +2,20 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 
 beforeEach(function () {
     $this->baseModel = new class extends BaseModel
     {
+=======
+namespace Modules\Job\Tests\Unit\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use Modules\Job\Models\BaseModel;
+
+beforeEach(function () {
+    $this->baseModel = new class extends BaseModel {
+>>>>>>> 6ed19256f (.)
         protected $table = 'test_job_table';
     };
 });

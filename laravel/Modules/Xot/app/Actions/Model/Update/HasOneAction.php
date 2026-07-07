@@ -6,7 +6,13 @@ namespace Modules\Xot\Actions\Model\Update;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasOne;
+<<<<<<< HEAD
 use Modules\Xot\Datas\RelationData as RelationDTO;
+=======
+use InvalidArgumentException;
+use Modules\Xot\Datas\RelationData as RelationDTO;
+use RuntimeException;
+>>>>>>> 6ed19256f (.)
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
@@ -24,11 +30,19 @@ class HasOneAction
     /**
      * Execute the update operation for a HasOne relationship.
      *
+<<<<<<< HEAD
      * @param Model       $model       The parent model instance
      * @param RelationDTO $relationDTO Data transfer object containing relationship information
      *
      * @throws \InvalidArgumentException When relationship type is invalid
      * @throws \RuntimeException         When relationship data is invalid
+=======
+     * @param  Model  $model  The parent model instance
+     * @param  RelationDTO  $relationDTO  Data transfer object containing relationship information
+     *
+     * @throws InvalidArgumentException When relationship type is invalid
+     * @throws RuntimeException When relationship data is invalid
+>>>>>>> 6ed19256f (.)
      */
     public function execute(Model $model, RelationDTO $relationDTO): void
     {
@@ -44,7 +58,11 @@ class HasOneAction
 
         // Validate that the relationship data is not empty
         if (empty($relationDTO->data)) {
+<<<<<<< HEAD
             throw new \RuntimeException('Relationship data cannot be empty');
+=======
+            throw new RuntimeException('Relationship data cannot be empty');
+>>>>>>> 6ed19256f (.)
         }
 
         // Check if the related model exists

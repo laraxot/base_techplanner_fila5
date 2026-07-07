@@ -4,15 +4,23 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Contracts;
 
+<<<<<<< HEAD
 use Filament\Models\Contracts\HasName;
 use Filament\Models\Contracts\HasTenants;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
+=======
+use BackedEnum;
+use Illuminate\Contracts\Auth\Authenticatable;
+>>>>>>> 6ed19256f (.)
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
+<<<<<<< HEAD
 use Laravel\Passport\Contracts\OAuthenticatable;
+=======
+>>>>>>> 6ed19256f (.)
 use Laravel\Passport\PersonalAccessTokenResult;
 use Laravel\Passport\Token;
 use Laravel\Passport\TransientToken;
@@ -21,13 +29,17 @@ use Modules\User\Models\Role as UserRole;
 use Modules\User\Models\Team;
 use Modules\User\Models\Tenant;
 use Nwidart\Modules\Laravel\Module;
+<<<<<<< HEAD
 use Spatie\MediaLibrary\HasMedia;
+=======
+>>>>>>> 6ed19256f (.)
 use Spatie\Permission\Contracts\Permission;
 use Spatie\Permission\Exceptions\PermissionDoesNotExist;
 
 /**
  * Modules\Xot\Contracts\UserContract.
  *
+<<<<<<< HEAD
  * @property string|null               $id
  * @property string|null               $email
  * @property \Illuminate\Support\Carbon|null $email_verified_at
@@ -43,12 +55,32 @@ use Spatie\Permission\Exceptions\PermissionDoesNotExist;
  * @property Collection<int, UserRole> $roles
  * @property Collection<int, Team>     $teams
  * @property Collection<int, Tenant>   $tenants
+=======
+ * @property string|null $id
+ * @property string|null $email
+ * @property string|null $first_name
+ * @property string|null $last_name
+ * @property string|null $full_name
+ * @property string|null $name
+ * @property string|null $phone
+ * @property string|null $type
+ * @property string|null $current_team_id
+ * @property TeamContract $currentTeam
+ * @property ProfileContract|null $profile
+ * @property Collection<int, UserRole> $roles
+ * @property Collection<int, Team> $teams
+ * @property Collection<int, Tenant> $tenants
+>>>>>>> 6ed19256f (.)
  *
  * @phpstan-require-extends Model
  *
  * @mixin \Eloquent
  */
+<<<<<<< HEAD
 interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, MustVerifyEmail, OAuthenticatable
+=======
+interface UserContract extends Authenticatable
+>>>>>>> 6ed19256f (.)
 {
     /*
      * public function isSuperAdmin();
@@ -75,6 +107,11 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     /**
      * Passport API tokens support.
      */
+<<<<<<< HEAD
+=======
+    // @phpstan-ignore-next-line interface should extend this contract
+
+>>>>>>> 6ed19256f (.)
     /**
      * Determine if the model has (one of) the given role(s).
      */
@@ -127,7 +164,11 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     /**
      * Revoke the given role from the model.
      *
+<<<<<<< HEAD
      * @param string|int|array|UserRole|Collection|\BackedEnum ...$role
+=======
+     * @param  string|int|array|UserRole|Collection|BackedEnum  ...$role
+>>>>>>> 6ed19256f (.)
      *
      * @return $this
      */
@@ -154,7 +195,11 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     public function switchTeam(TeamContract $team): bool;
 
     /**
+<<<<<<< HEAD
      * @return array<string, Module>
+=======
+     * @return array<string, \Nwidart\Modules\Laravel\Module>
+>>>>>>> 6ed19256f (.)
      */
     public function getModules(): array;
 

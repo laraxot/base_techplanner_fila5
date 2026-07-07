@@ -19,7 +19,11 @@ Questo documento descrive il processo per determinare il logo di un'applicazione
 
 3. **Risoluzione del Percorso del Logo**:
    - I percorsi specificati in `metatag.php` utilizzano un namespace (es. `patient::`), che corrisponde a una directory specifica del modulo.
+<<<<<<< HEAD
    - Ad esempio, `patient::images/logo.svg` si traduce in `Modules/Patient/resources/images/logo.svg`.
+=======
+   - Ad esempio, `patient::images/logo.svg` si traduce in `/var/www/html/base_<nome progetto>/laravel/Modules/Patient/resources/images/logo.svg`.
+>>>>>>> 6ed19256f (.)
 
 ## Considerazioni
 - **Modularità**: Questo approccio permette configurazioni diverse per domini diversi, garantendo adattabilità.
@@ -30,9 +34,12 @@ Questo documento descrive il processo per determinare il logo di un'applicazione
 - Per ulteriori dettagli sul progetto specifico, consultare la documentazione nella root del progetto: [INDEX.md](../../../project_docs/INDEX.md).
 - Linee guida generali per i loghi: [Linee Guida per i Loghi](../../../project_docs/standards/logo_guidelines.md).
 - Convenzioni sui namespace e Filament: [Convenzioni Namespace Filament](../Cms/project_docs/convenzioni-namespace-filament.md).
+<<<<<<< HEAD
 - Per ulteriori dettagli sul progetto specifico, consultare la documentazione nella root del progetto: [INDEX.md](../../../project_docs/index.md).
 - Linee guida generali per i loghi: [Linee Guida per i Loghi](../../../project_docs/standards/logo_guidelines.md).
 - Convenzioni sui namespace e Filament: [Convenzioni Namespace Filament](../cms/project_docs/convenzioni-namespace-filament.md).
+=======
+>>>>>>> 6ed19256f (.)
 # Determinazione del Logo Basata sul Dominio
 
 ## Introduzione
@@ -54,7 +61,11 @@ Questo documento descrive il processo per determinare il logo di un'applicazione
 
 3. **Risoluzione del Percorso del Logo**:
    - I percorsi specificati in `metatag.php` utilizzano un namespace (es. `patient::`), che corrisponde a una directory specifica del modulo.
+<<<<<<< HEAD
    - Ad esempio, `patient::images/logo.svg` si traduce in `Modules/Patient/resources/images/logo.svg`.
+=======
+   - Ad esempio, `patient::images/logo.svg` si traduce in `/var/www/html/base_<nome progetto>/laravel/Modules/Patient/resources/images/logo.svg`.
+>>>>>>> 6ed19256f (.)
 
 ## Considerazioni
 - **Modularità**: Questo approccio permette configurazioni diverse per domini diversi, garantendo adattabilità.
@@ -65,6 +76,9 @@ Questo documento descrive il processo per determinare il logo di un'applicazione
 - Per ulteriori dettagli sul progetto specifico, consultare la documentazione nella root del progetto: [INDEX.md](../../../docs/INDEX.md).
 - Linee guida generali per i loghi: [Linee Guida per i Loghi](../../../docs/standards/logo_guidelines.md).
 - Convenzioni sui namespace e Filament: [Convenzioni Namespace Filament](../Cms/docs/convenzioni-namespace-filament.md).
+<<<<<<< HEAD
 - Per ulteriori dettagli sul progetto specifico, consultare la documentazione nella root del progetto: [INDEX.md](../../../../docs/index.md).
 - Linee guida generali per i loghi: [Linee Guida per i Loghi](../../../../docs/standards/logo_guidelines.md).
 - Convenzioni sui namespace e Filament: [Convenzioni Namespace Filament](../cms/docs/convenzioni-namespace-filament.md).
+=======
+>>>>>>> 6ed19256f (.)

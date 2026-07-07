@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+quando clikki su elemento si mostra il dettaglio nella bar
+http://www.smartredfox.com/plugins/map-list-pro/
+
+>>>>>>> 6ed19256f (.)
 bottone su mappa,
 http://danielmontague.com/projects/easyButton.js/v2/examples/
 
@@ -19,6 +25,7 @@ instructionsType=text&language=en-US\
 https://www.mapbox.com/
 
 https://www.mapfit.com/
+<<<<<<< HEAD
 ---
 module: theme
 topic: link2
@@ -26,3 +33,5 @@ canonical: ../../../Themes/docs/shared-components/link2.txt
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/link2.txt
+=======
+>>>>>>> 6ed19256f (.)

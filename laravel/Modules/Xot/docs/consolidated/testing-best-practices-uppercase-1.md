@@ -41,8 +41,11 @@ function mockXotData(): void
     $mockXotData->shouldReceive('getUserClass')
         ->andReturn(\Modules\<nome progetto>\Models\User::class);
 
+<<<<<<< HEAD
 
         
+=======
+>>>>>>> 6ed19256f (.)
     $mockXotData->shouldReceive('make')
         ->andReturn($mockXotData);
 
@@ -215,4 +218,8 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 **Status**: ✅ Best Practices Validate
 **Enforcement**: Obbligatorio per tutti i test
 **Version**: 1.0 - Gold Standard
+<<<<<<< HEAD
 **Last Update**: Dicembre 2024
+=======
+**Last Update**: Dicembre 2024
+>>>>>>> 6ed19256f (.)

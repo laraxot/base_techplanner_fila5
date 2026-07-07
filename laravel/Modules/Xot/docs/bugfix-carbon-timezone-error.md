@@ -2,7 +2,11 @@
 
 ## Problema Identificato
 **Errore**: `Non-static method Carbon\Carbon::setTimezone() cannot be called statically`
+<<<<<<< HEAD
 **File**: `Modules/Xot/app/Providers/XotServiceProvider.php`
+=======
+**File**: `/var/www/html/ptvx/laravel/Modules/Xot/app/Providers/XotServiceProvider.php`
+>>>>>>> 6ed19256f (.)
 **Linea**: 78
 **Contesto**: Errore emerso dopo risoluzione conflitti Git
 
@@ -73,15 +77,25 @@ public function registerTimezone(): void
 - [Carbon Documentation](https://carbon.nesbot.com/project_docs/)
 - [Laravel Timezone Configuration](https://laravel.com/project_docs/configuration#timezone)
 - [PHP date_default_timezone_set](https://www.php.net/manual/en/function.date-default-timezone-set.php)
+<<<<<<< HEAD
 *Ultimo aggiornamento: giugno 2025*
 - [Root Bugfix Guidelines](../../../../docs/project/bugfix-guidelines.md)
 
+=======
+- [Root Bugfix Guidelines](../../../project_docs/bugfix-guidelines.md)
+
+*Ultimo aggiornamento: giugno 2025*
+>>>>>>> 6ed19256f (.)
 *Risolto da: Windsurf AI Assistant*
 # Bugfix: Carbon Timezone Error in XotServiceProvider
 
 ## Problema Identificato
 **Errore**: `Non-static method Carbon\Carbon::setTimezone() cannot be called statically`
+<<<<<<< HEAD
 **File**: `Modules/Xot/app/Providers/XotServiceProvider.php`
+=======
+**File**: `/var/www/html/ptvx/laravel/Modules/Xot/app/Providers/XotServiceProvider.php`
+>>>>>>> 6ed19256f (.)
 **Linea**: 78
 **Contesto**: Errore emerso dopo risoluzione conflitti Git
 
@@ -152,7 +166,14 @@ public function registerTimezone(): void
 - [Carbon Documentation](https://carbon.nesbot.com/project_docs/)
 - [Laravel Timezone Configuration](https://laravel.com/project_docs/configuration#timezone)
 - [PHP date_default_timezone_set](https://www.php.net/manual/en/function.date-default-timezone-set.php)
+<<<<<<< HEAD
 *Ultimo aggiornamento: giugno 2025*
 - [Root Bugfix Guidelines](../../../../docs/project/bugfix-guidelines.md)
 
 *Risolto da: Windsurf AI Assistant*
+=======
+- [Root Bugfix Guidelines](../../../project_docs/bugfix-guidelines.md)
+
+*Ultimo aggiornamento: giugno 2025*
+*Risolto da: Windsurf AI Assistant*
+>>>>>>> 6ed19256f (.)

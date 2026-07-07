@@ -126,14 +126,20 @@ public function test_filament_components_rendering()
 ## Collegamenti
 
 - [Documentazione CMS](../README.md)
+<<<<<<< HEAD
 - [Documentazione CMS](../readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Best Practices](../best_practices/theme-reusability.md)
 - [Configurazione](../config.md)
 - [Testing](../testing.md)
 
 ## Collegamenti Bidirezionali
 - [README](README.md) - Documentazione principale del modulo
+<<<<<<< HEAD
 - [README](readme.md) - Documentazione principale del modulo
+=======
+>>>>>>> 6ed19256f (.)
 - [Architettura](architecture.md) - Architettura del sistema CMS
 - [Componenti](filament-components.md) - Componenti Filament
 - [Form](filament-forms.md) - Sistema di form
@@ -142,6 +148,7 @@ public function test_filament_components_rendering()
 - [Personalizzazioni](filament-personalizzazioni-avanzate.md) - Personalizzazioni avanzate
 
 ## Vedi Anche
+<<<<<<< HEAD
 - [Modulo UI](../ui/project_docs/readme.md) - Componenti di interfaccia
 - [Modulo Xot](../xot/project_docs/readme.md) - Classi base e utilities
 - [Modulo Theme](../theme/project_docs/readme.md) - Gestione temi
@@ -155,6 +162,8 @@ public function test_filament_components_rendering()
 * [filament-integration.md](laravel/modules/cms/project_docs/roadmap/features/filament-integration.md)
 * [filament-integration.md](laravel/modules/cms/project_docs/filament-integration.md)
 
+=======
+>>>>>>> 6ed19256f (.)
 - [Modulo UI](../UI/project_docs/README.md) - Componenti di interfaccia
 - [Modulo Xot](../Xot/project_docs/README.md) - Classi base e utilities
 - [Modulo Theme](../Theme/project_docs/README.md) - Gestione temi
@@ -166,4 +175,8 @@ public function test_filament_components_rendering()
 ## Collegamenti tra versioni di filament-integration.md
 * [filament-integration.md](laravel/Modules/Xot/project_docs/laraxot/filament-integration.md)
 * [filament-integration.md](laravel/Modules/Cms/project_docs/roadmap/features/filament-integration.md)
+<<<<<<< HEAD
 * [filament-integration.md](laravel/Modules/Cms/project_docs/filament-integration.md)
+=======
+* [filament-integration.md](laravel/Modules/Cms/project_docs/filament-integration.md)
+>>>>>>> 6ed19256f (.)

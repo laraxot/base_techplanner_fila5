@@ -5,7 +5,10 @@
 **RIDURRE** il numero di file documentation da **migliaia** a **~10 file focalizzati per modulo**, seguendo i principi **KISS** e **DRY**.
 
 ## 📊 Stato Attuale (2025-11-04)
+<<<<<<< HEAD
 ## 📊 Stato Attuale ([DATE])
+=======
+>>>>>>> 6ed19256f (.)
 
 | Modulo | File .md Attuali | Target | Riduzione Necessaria |
 |--------|------------------|--------|---------------------|
@@ -37,9 +40,12 @@ model-inheritance-audit.md
 merge-conflict-resolution-2025-11-04.md
 lessons-learned-2025-11-04-merge-conflicts.md
 phpstan-analysis-2025-08-18.md
+<<<<<<< HEAD
 merge-conflict-resolution-[DATE].md
 lessons-learned-[DATE]-merge-conflicts.md
 phpstan-analysis-[DATE].md
+=======
+>>>>>>> 6ed19256f (.)
 
 # ✅ Usare CHANGELOG.md invece
 # Oppure nomi generici aggiornati:
@@ -142,6 +148,7 @@ rm auth_pages.md         # Keep auth-pages.md
 ### Fase 4: Archiviare File Obsoleti
 ```bash
 # Creare cartella archive
+<<<<<<< HEAD
 mv Modules/Xot/docs/archive/merge-conflict-resolution-2025-11-04.md \
 mkdir -p Modules/ModuleName/docs/archived
 
@@ -151,6 +158,16 @@ mv Modules/Xot/docs/*-2025-*.md Modules/Xot/docs/archived/
 
 # Mantenere solo l'ultimo se rilevante
 mv Modules/Xot/docs/archived/merge-conflict-resolution-[DATE].md \
+=======
+mkdir -p Modules/ModuleName/docs/archive
+
+# Spostare file obsoleti/datati
+mv Modules/Xot/docs/*-2024-*.md Modules/Xot/docs/archive/
+mv Modules/Xot/docs/*-2025-*.md Modules/Xot/docs/archive/
+
+# Mantenere solo l'ultimo se rilevante
+mv Modules/Xot/docs/archive/merge-conflict-resolution-2025-11-04.md \
+>>>>>>> 6ed19256f (.)
    Modules/Xot/docs/merge-conflict-resolution.md
 ```
 
@@ -159,14 +176,20 @@ mv Modules/Xot/docs/archived/merge-conflict-resolution-[DATE].md \
 # Changelog - Modulo Xot
 
 ## 2025-11-04 - Merge Conflicts Resolution
+<<<<<<< HEAD
 ## [DATE] - Merge Conflicts Resolution
+=======
+>>>>>>> 6ed19256f (.)
 - Corretti 18 file con merge conflicts massivi
 - Implementato File Locking Pattern
 - Fix PSR-4 namespace violations
 - Server Laravel ora funzionante
 
 ## 2025-10-29 - PHPStan Level 10 Achievement
+<<<<<<< HEAD
 ## [DATE] - PHPStan Level 10 Achievement
+=======
+>>>>>>> 6ed19256f (.)
 - Raggiunto PHPStan Level 10 su tutto il modulo
 - Corretti 500+ type hints
 - Documentazione aggiornata
@@ -180,7 +203,10 @@ mv Modules/Xot/docs/archived/merge-conflict-resolution-[DATE].md \
 - ✅ **kebab-case lowercase**: `my-document.md`
 - ❌ **NO UPPERCASE**: ~~`MY_DOCUMENT.md`~~
 - ❌ **NO dates**: ~~`analysis-2025-11-04.md`~~
+<<<<<<< HEAD
 - ❌ **NO dates**: ~~`analysis-[DATE].md`~~
+=======
+>>>>>>> 6ed19256f (.)
 - ❌ **NO underscores**: ~~`my_document.md`~~
 - ✅ **Exception**: `README.md`, `CHANGELOG.md`
 
@@ -201,7 +227,10 @@ See /var/www/.../Modules/Xot/docs/xotbase-rules.md
 
 <!-- ✅ CORRECT -->
 See [XotBase Rules](../../Xot/docs/xotbase-rules.md)
+<<<<<<< HEAD
 See [XotBase Rules](../../xot/docs/xotbase-rules.md)
+=======
+>>>>>>> 6ed19256f (.)
 ```
 
 ## 📝 Template README.md Standard
@@ -249,10 +278,13 @@ Common issues e soluzioni.
 
 ## References
 - [Doc interna 1](./other-doc.md)
+<<<<<<< HEAD
 - [Doc Xot](../../xot/docs/core-doc.md)
 - [External](https://example.com)
 
 ---
+=======
+>>>>>>> 6ed19256f (.)
 - [Doc Xot](../../Xot/docs/core-doc.md)
 - [External](https://example.com)
 
@@ -267,7 +299,11 @@ Common issues e soluzioni.
 #!/bin/bash
 # find_duplicate_docs.sh
 
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/_bases/base_ptvx_fila4_mono/laravel
+>>>>>>> 6ed19256f (.)
 
 for MODULE in Modules/*/docs; do
     echo "Analyzing: $MODULE"
@@ -367,6 +403,11 @@ Prima di considerare un modulo "consolidato":
 ---
 
 **Created:** 2025-11-04
+<<<<<<< HEAD
 **Created:** [DATE]
 **Purpose:** Strategic plan per ridurre documentation bloat
 **Target:** ~350 total files across all modules (da ~5,267)
+=======
+**Purpose:** Strategic plan per ridurre documentation bloat
+**Target:** ~350 total files across all modules (da ~5,267)
+>>>>>>> 6ed19256f (.)

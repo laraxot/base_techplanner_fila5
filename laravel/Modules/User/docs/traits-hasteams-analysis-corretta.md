@@ -4,7 +4,11 @@
 
 ### **Religione Laraxot**: Convention over Configuration
 - **Auto-Discovery**: Il sistema "indovina" le configurazioni corrette
+<<<<<<< HEAD
 - **Zero Boilerplate**: Eliminare codice ripetitivo  
+=======
+- **Zero Boilerplate**: Eliminare codice ripetitivo
+>>>>>>> 6ed19256f (.)
 - **Smart Defaults**: Convenzioni intelligenti automatiche
 
 ### **Logica di `belongsToManyX`**:
@@ -23,7 +27,11 @@
 ```php
 // ❌ ERRATO - Parametri non tipizzati
 public function addTeamMember($user, $role = null)
+<<<<<<< HEAD
 public function hasTeamMember($user)  
+=======
+public function hasTeamMember($user)
+>>>>>>> 6ed19256f (.)
 public function removeTeamMember($user)
 ```
 
@@ -52,7 +60,11 @@ public function switchTeam(?TeamContract $team): bool
     if (! $this->belongsToTeam($team)) { // $team può essere null!
         return false;
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     $this->current_team_id = (string) $team->id; // Null pointer se $team è null
 }
 ```
@@ -66,11 +78,19 @@ public function switchTeam(?TeamContract $team): bool
         $this->save();
         return true;
     }
+<<<<<<< HEAD
     
     if (! $this->belongsToTeam($team)) {
         return false;
     }
     
+=======
+
+    if (! $this->belongsToTeam($team)) {
+        return false;
+    }
+
+>>>>>>> 6ed19256f (.)
     $this->current_team_id = (string) $team->id;
     $this->save();
     return true;
@@ -95,7 +115,11 @@ public function teamInvitations(): HasMany
     return $this->hasMany(TeamInvitation::class, 'team_id');
 }
 
+<<<<<<< HEAD
 public function teamUsers(): HasMany  
+=======
+public function teamUsers(): HasMany
+>>>>>>> 6ed19256f (.)
 {
     return $this->hasMany(TeamUser::class, 'team_id');
 }
@@ -125,7 +149,11 @@ public function getAllTeamUsersAttribute(): Collection
 ```php
 // ❌ ERRORE: Questi metodi dovrebbero essere nel modello Team, non User
 public function addTeamMember($user, $role = null)      // Team responsibility
+<<<<<<< HEAD
 public function removeTeamMember($user)                 // Team responsibility  
+=======
+public function removeTeamMember($user)                 // Team responsibility
+>>>>>>> 6ed19256f (.)
 public function teamUsers()                             // Team responsibility
 public function teamInvitations()                       // Team responsibility
 ```
@@ -134,7 +162,11 @@ public function teamInvitations()                       // Team responsibility
 ```php
 // Nel modello Team
 public function addMember(UserContract $user, ?Role $role = null): Model
+<<<<<<< HEAD
 public function removeMember(UserContract $user): void  
+=======
+public function removeMember(UserContract $user): void
+>>>>>>> 6ed19256f (.)
 public function users(): HasMany
 public function invitations(): HasMany
 ```
@@ -176,7 +208,11 @@ public function belongsToTeam(?TeamContract $team): bool
     if ($team === null) {
         return false;
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     return $this->teams()->where($this->teams()->getTable().'.id', $team->id)->exists();
 }
 
@@ -205,7 +241,11 @@ public function teamRole(TeamContract $team): ?Role
         ->where('team_id', $team->id)
         ->with('role')
         ->first();
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
     return $teamUser?->role instanceof Role ? $teamUser->role : null;
 }
 ```
@@ -251,7 +291,11 @@ public function currentTeam(): BelongsTo
 {
     $xot = XotData::make();
     $teamClass = $xot->getTeamClass();
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     return $this->belongsTo($teamClass, 'current_team_id');
 }
 
@@ -295,7 +339,11 @@ use Modules\Xot\Models\Traits\RelationX;
  * Trait HasTeams.
  *
  * @property-read Collection<int, TeamContract> $teams
+<<<<<<< HEAD
  * @property-read Collection<int, TeamContract> $ownedTeams  
+=======
+ * @property-read Collection<int, TeamContract> $ownedTeams
+>>>>>>> 6ed19256f (.)
  * @property-read TeamContract|null $currentTeam
  * @property int|null $current_team_id
  */
@@ -321,7 +369,11 @@ trait HasTeams
         if ($team === null) {
             return false;
         }
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         return $this->teams()->where($this->teams()->getTable().'.id', $team->id)->exists();
     }
 
@@ -334,7 +386,11 @@ trait HasTeams
     {
         $xot = XotData::make();
         $teamClass = $xot->getTeamClass();
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         return $this->belongsTo($teamClass, 'current_team_id');
     }
 
@@ -381,7 +437,11 @@ trait HasTeams
             $this->save();
             return true;
         }
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         if (! $this->belongsToTeam($team)) {
             return false;
         }
@@ -507,7 +567,11 @@ trait HasTeams
 ## Compliance PHPStan Livello 9+
 
 1. ✅ **`declare(strict_types=1);`** (già presente)
+<<<<<<< HEAD
 2. ✅ **Tipizzazione completa** di tutti i metodi  
+=======
+2. ✅ **Tipizzazione completa** di tutti i metodi
+>>>>>>> 6ed19256f (.)
 3. ✅ **PHPDoc completi** con generics
 4. ✅ **Gestione sicura dei nullable**
 5. ✅ **Uso di classi concrete** invece di helper dinamici
@@ -526,6 +590,7 @@ trait HasTeams
 ## Backlink e Riferimenti
 
 - [docs/USER_MODULE.md](../../../project_docs/USER_MODULE.md)
+<<<<<<< HEAD
 - [Modules/User/project_docs/traits.md](traits.md)  
 - [docs/phpstan_fixes.md](../../../project_docs/phpstan_fixes.md)
 - [Modules/Xot/project_docs/RELATION_X.md](../../Xot/project_docs/RELATION_X.md)
@@ -535,3 +600,10 @@ trait HasTeams
 - [Modules/User/project_docs/traits.md](traits.md)  
 - [docs/phpstan_fixes.md](../../../../docs/project/phpstan_fixes.md)
 - [Modules/Xot/project_docs/RELATION_X.md](../../xot/project_docs/relation_x.md)
+=======
+- [Modules/User/project_docs/traits.md](traits.md)
+- [docs/phpstan_fixes.md](../../../project_docs/phpstan_fixes.md)
+- [Modules/Xot/project_docs/RELATION_X.md](../../Xot/project_docs/RELATION_X.md)
+
+*Ultimo aggiornamento: gennaio 2025*
+>>>>>>> 6ed19256f (.)

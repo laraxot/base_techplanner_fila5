@@ -67,6 +67,7 @@ Per il modello `Comune.php`, Sushi rappresenta una scelta eccellente (valutazion
 - **Caricamento iniziale**: Rallentamento di 100-300ms all'avvio dell'applicazione
 
 #### Valutazione complessiva: 95% positiva
+<<<<<<< HEAD
 ---
 module: theme
 topic: sushi-implementation
@@ -74,3 +75,5 @@ canonical: ../../../Themes/docs/shared-components/sushi-implementation-analysis.
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/sushi-implementation-analysis.md
+=======
+>>>>>>> 6ed19256f (.)

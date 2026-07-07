@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 module: theme
 topic: custom_theme
@@ -5,3 +6,17 @@ canonical: ../../../Themes/docs/shared-components/custom-theme.txt
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/custom-theme.txt
+=======
+https://blog.jpat.dev/build-custom-components-inside-a-filament-v3-panel-with-livewire-and-tailwindcss
+
+
+php artisan make:filament-theme admin
+
+add resources/css/filament/admin/theme.css entry to vite.config.js
+
+in app/Providers/Filament/AdminPanelProvider.php
+add
+->viteTheme('resources/css/filament/admin/theme.css')
+
+
+>>>>>>> 6ed19256f (.)

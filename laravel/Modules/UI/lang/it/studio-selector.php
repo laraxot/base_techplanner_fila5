@@ -17,20 +17,29 @@ return [
         'distance' => [
             'label' => 'Distanza',
             'helper_text' => 'Distanza approssimativa dalla tua posizione',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'phone' => [
             'label' => 'Telefono',
             'helper_text' => 'Numero di telefono dello studio',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'specializations' => [
             'label' => 'Specializzazioni',
             'helper_text' => 'Servizi offerti dallo studio',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'accessibility' => [
@@ -38,6 +47,7 @@ return [
         'selected_studio' => 'Studio selezionato',
         'select_studio' => 'Premi spazio o invio per selezionare questo studio',
     ],
+<<<<<<< HEAD
     'label' => 'Studio Selector',
     'plural_label' => 'Studio Selector (Plurale)',
     'navigation' => [
@@ -51,4 +61,6 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

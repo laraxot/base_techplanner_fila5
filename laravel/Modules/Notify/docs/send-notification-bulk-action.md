@@ -1,12 +1,21 @@
 # SendNotificationBulkAction - Implementazione Completa
 
+<<<<<<< HEAD
 **Data**: 2025-01-18  
 **Status**: ✅ Implementazione completata e PHPStan Level 10 compliant  
+=======
+**Data**: 2025-01-18
+**Status**: ✅ Implementazione completata e PHPStan Level 10 compliant
+>>>>>>> 6ed19256f (.)
 **Module**: Notify
 
 ## Overview
 
+<<<<<<< HEAD
 `SendNotificationBulkAction` è la BulkAction Filament riutilizzabile che permette di inviare notifiche a più record contemporaneamente utilizzando template MailTemplate e canali multipli (Email, SMS, WhatsApp).  
+=======
+`SendNotificationBulkAction` è la BulkAction Filament riutilizzabile che permette di inviare notifiche a più record contemporaneamente utilizzando template MailTemplate e canali multipli (Email, SMS, WhatsApp).
+>>>>>>> 6ed19256f (.)
 Dal 2025‑12‑18 la catena interna è stata ulteriormente semplificata:
 
 ```
@@ -318,17 +327,26 @@ Vedi: [Actions Calling Actions Pattern](./actions-calling-actions-pattern.md)
 - [MailTemplate Model](./models.md#mailtemplate)
 - [RecordNotification Class](../../app/Notifications/RecordNotification.php)
 - [TechPlanner Client Management](../TechPlanner/docs/README.md#client-management)
+<<<<<<< HEAD
 - [Geo Module Reusable Components Philosophy](../geo/docs/reusable-components-philosophy.md)
 - [Xot Filament Class Extension Rules](../xot/docs/filament-class-extension-rules.md)
 
 ---
 
 **Ultimo aggiornamento**: [DATE]  
+=======
+>>>>>>> 6ed19256f (.)
 - [Geo Module Reusable Components Philosophy](../Geo/docs/reusable-components-philosophy.md)
 - [Xot Filament Class Extension Rules](../Xot/docs/filament-class-extension-rules.md)
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: 2025-01-18  
 **PHPStan Level**: ✅ 10  
 **Quality**: ✅ PHPMD, PHPInsights compliant
+=======
+**Ultimo aggiornamento**: 2025-01-18
+**PHPStan Level**: ✅ 10
+**Quality**: ✅ PHPMD, PHPInsights compliant
+>>>>>>> 6ed19256f (.)

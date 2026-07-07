@@ -52,6 +52,7 @@ Deptrac
 ### Versione HEAD
 
 ## Collegamenti tra versioni di links.md
+<<<<<<< HEAD
 * [links.md](../../../gdpr/project_docs/links.md)
 * [links.md](../../../notify/project_docs/links.md)
 * [links.md](../../../xot/project_docs/ci/links.md)
@@ -62,6 +63,8 @@ Deptrac
 * [links.md](../../../tenant/project_docs/it/links/links.md)
 * [links.md](../../../cms/project_docs/links.md)
 * [links.md](../../../../themes/one/project_docs/links.md)
+=======
+>>>>>>> 6ed19256f (.)
 * [links.md](../../../Gdpr/project_docs/links.md)
 * [links.md](../../../Notify/project_docs/links.md)
 * [links.md](../../../Xot/project_docs/ci/links.md)
@@ -105,6 +108,7 @@ Deptrac
 ## Collegamenti ai Moduli Correlati
 
 ### Moduli Core
+<<<<<<< HEAD
 - [Modulo Lang](../../../lang/project_docs/links.md)
   > Gestione delle traduzioni per il core system. Fondamentale per l'internazionalizzazione.
 
@@ -116,6 +120,8 @@ Deptrac
   > Sistema di code per operazioni asincrone. Gestione dei processi in background.
 
 - [Modulo Cache](../../../cache/project_docs/links.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Modulo Lang](../../../Lang/project_docs/links.md)
   > Gestione delle traduzioni per il core system. Fondamentale per l'internazionalizzazione.
 
@@ -309,4 +315,8 @@ return [
     Modules\Xot\Providers\RouteServiceProvider::class,
     Modules\Xot\Providers\EventServiceProvider::class,
 ],
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> 6ed19256f (.)

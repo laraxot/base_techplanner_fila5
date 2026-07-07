@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6ed19256f (.)
 # _uuid
 
 <!-- Contenuto migrato da _docs/_uuid.txt -->

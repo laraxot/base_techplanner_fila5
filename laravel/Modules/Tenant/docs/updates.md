@@ -1,8 +1,13 @@
 # Tenant Module Updates - December 2025
 
 ## PHPStan Fixes
+<<<<<<< HEAD
 - **DocBlock Updates**: Fixed `class.notFound` errors in `Tenant`, `Domain`, and `TestSushiModel` by replacing incorrect `TechPlanner` and `<nome progetto>` profile references with `Modules\Xot\Contracts\ProfileContract`.
 - **Helper Functions**: Added `getAllModulesModels` and `array_merge_recursive_distinct` to `Modules/Xot/helpers/Helper.php` to resolve undefined function errors.
+=======
+- **DocBlock Updates**: Fixed `class.notFound` errors in `Tenant`, `Domain`, and `TestSushiModel` by replacing incorrect `TechPlanner` and `Quaeris` profile references with `Modules\Xot\Contracts\ProfileContract`.
+- **Helper Functions**: Added `getAllModulesModels` and `array_merge_recursive_distinct` to `Modules/Xot/Helpers/Helper.php` to resolve undefined function errors.
+>>>>>>> 6ed19256f (.)
 - **TenantService Refactor**: Adhering to the "Fat Model, Skinny Controller" (and Service) philosophy, all business logic has been extracted into dedicated Action classes:
     - `GetTenantFilePathAction`
     - `ResolveTenantConfigValueAction`
@@ -20,4 +25,8 @@
 ## Architectural Alignment
 This module adheres to the **Super Cow Methodology**:
 - **Compliance**: Module now passes PHPStan analysis at Level 10.
+<<<<<<< HEAD
 - **Documentation**: Referenced core architecture rules in `Modules/Xot/docs/`.
+=======
+- **Documentation**: Referenced core architecture rules in `Modules/Xot/docs/`.
+>>>>>>> 6ed19256f (.)

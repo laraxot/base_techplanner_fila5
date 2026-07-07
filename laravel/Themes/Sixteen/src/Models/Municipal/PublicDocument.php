@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Themes\Sixteen\Models\Municipal;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -16,6 +17,8 @@ use Illuminate\Support\Str;
 /**
  * Modello per i documenti pubblici (Public Document)
  *
+=======
+>>>>>>> 6ed19256f (.)
 use Illuminate\Database\Eloquent\{Model, SoftDeletes, Factories\HasFactory};
 use Illuminate\Database\Eloquent\Relations\{BelongsTo, MorphMany, BelongsToMany};
 use Illuminate\Database\Eloquent\Casts\Attribute;
@@ -137,7 +140,11 @@ class PublicDocument extends Model
         'regulation' => 'Regolamento',
         'ordinance' => 'Ordinanza',
         'directive' => 'Direttiva',
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 6ed19256f (.)
         // Atti amministrativi
         'deliberation' => 'Deliberazione',
         'determination' => 'Determinazione',
@@ -145,13 +152,21 @@ class PublicDocument extends Model
         'resolution' => 'Risoluzione',
         'circular' => 'Circolare',
         'instruction' => 'Istruzione',
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 6ed19256f (.)
         // Atti di programmazione
         'plan' => 'Piano',
         'program' => 'Programma',
         'budget' => 'Bilancio',
         'report' => 'Relazione',
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 6ed19256f (.)
         // Documenti contrattuali
         'contract' => 'Contratto',
         'agreement' => 'Convenzione',
@@ -159,13 +174,21 @@ class PublicDocument extends Model
         'authorization' => 'Autorizzazione',
         'permit' => 'Permesso',
         'license' => 'Licenza',
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 6ed19256f (.)
         // Atti di trasparenza
         'transparency_act' => 'Atto di Trasparenza',
         'publication_notice' => 'Avviso di Pubblicazione',
         'selection_notice' => 'Avviso di Selezione',
         'tender_notice' => 'Bando di Gara',
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 6ed19256f (.)
         // Altri documenti
         'form' => 'Modulistica',
         'guide' => 'Guida',
@@ -297,7 +320,11 @@ class PublicDocument extends Model
         return $query->where('is_active', true)
             ->where(function ($q) {
                 $q->whereNull('expiry_date')
+<<<<<<< HEAD
                     ->orWhere('expiry_date', '>', now());
+=======
+                  ->orWhere('expiry_date', '>', now());
+>>>>>>> 6ed19256f (.)
             });
     }
 
@@ -333,7 +360,11 @@ class PublicDocument extends Model
         return $query->where('document_status', 'effective')
             ->where(function ($q) {
                 $q->whereNull('effective_date')
+<<<<<<< HEAD
                     ->orWhere('effective_date', '<=', now());
+=======
+                  ->orWhere('effective_date', '<=', now());
+>>>>>>> 6ed19256f (.)
             });
     }
 
@@ -405,6 +436,7 @@ class PublicDocument extends Model
                 if ($this->document_status !== 'effective') {
                     return false;
                 }
+<<<<<<< HEAD
 
                 if ($this->effective_date && $this->effective_date->isFuture()) {
                     return false;
@@ -414,6 +446,8 @@ class PublicDocument extends Model
                     return false;
                 }
 
+=======
+>>>>>>> 6ed19256f (.)
                 
                 if ($this->effective_date && $this->effective_date->isFuture()) {
                     return false;
@@ -445,6 +479,7 @@ class PublicDocument extends Model
     {
         return Attribute::make(
             get: function () {
+<<<<<<< HEAD
                 if (! $this->file_size) {
                     return;
                 }
@@ -453,6 +488,8 @@ class PublicDocument extends Model
                 $size = $this->file_size;
                 $unit = 0;
 
+=======
+>>>>>>> 6ed19256f (.)
                 if (!$this->file_size) {
                     return null;
                 }
@@ -465,8 +502,13 @@ class PublicDocument extends Model
                     $size /= 1024;
                     $unit++;
                 }
+<<<<<<< HEAD
 
                 return round($size, 2).' '.$units[$unit];
+=======
+                
+                return round($size, 2) . ' ' . $units[$unit];
+>>>>>>> 6ed19256f (.)
             }
         );
     }
@@ -502,7 +544,10 @@ class PublicDocument extends Model
                 if (empty($this->attributes['slug'])) {
                     $this->attributes['slug'] = Str::slug($value);
                 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
                 return $value;
             }
         );
@@ -513,7 +558,11 @@ class PublicDocument extends Model
      */
     public function getFormattedKeywords(): array
     {
+<<<<<<< HEAD
         if (! $this->keywords || ! is_array($this->keywords)) {
+=======
+        if (!$this->keywords || !is_array($this->keywords)) {
+>>>>>>> 6ed19256f (.)
             return [];
         }
 
@@ -529,7 +578,11 @@ class PublicDocument extends Model
      */
     public function getFormattedAttachments(): array
     {
+<<<<<<< HEAD
         if (! $this->attachments || ! is_array($this->attachments)) {
+=======
+        if (!$this->attachments || !is_array($this->attachments)) {
+>>>>>>> 6ed19256f (.)
             return [];
         }
 
@@ -539,6 +592,7 @@ class PublicDocument extends Model
                     return [
                         'path' => $attachment,
                         'name' => basename($attachment),
+<<<<<<< HEAD
                         'url' => asset('storage/'.$attachment),
                         'type' => pathinfo($attachment, PATHINFO_EXTENSION),
                     ];
@@ -546,6 +600,8 @@ class PublicDocument extends Model
 
                 return array_merge([
                     'url' => isset($attachment['path']) ? asset('storage/'.$attachment['path']) : null,
+=======
+>>>>>>> 6ed19256f (.)
                         'url' => asset('storage/' . $attachment),
                         'type' => pathinfo($attachment, PATHINFO_EXTENSION),
                     ];
@@ -563,7 +619,11 @@ class PublicDocument extends Model
      */
     public function getFormattedVersions(): array
     {
+<<<<<<< HEAD
         if (! $this->versions || ! is_array($this->versions)) {
+=======
+        if (!$this->versions || !is_array($this->versions)) {
+>>>>>>> 6ed19256f (.)
             return [];
         }
 
@@ -586,7 +646,11 @@ class PublicDocument extends Model
      */
     public function getFormattedLegislativeReferences(): array
     {
+<<<<<<< HEAD
         if (! $this->legislative_references || ! is_array($this->legislative_references)) {
+=======
+        if (!$this->legislative_references || !is_array($this->legislative_references)) {
+>>>>>>> 6ed19256f (.)
             return [];
         }
 
@@ -595,7 +659,10 @@ class PublicDocument extends Model
                 if (is_string($reference)) {
                     return ['title' => $reference];
                 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
                 return $reference;
             })
             ->toArray();
@@ -615,10 +682,13 @@ class PublicDocument extends Model
      */
     public function isPubliclyAccessible(): bool
     {
+<<<<<<< HEAD
         return $this->is_published &&
                $this->visibility_level === 'public' &&
                $this->privacy_level === 'public' &&
                ! $this->requires_authentication;
+=======
+>>>>>>> 6ed19256f (.)
         return $this->is_published && 
                $this->visibility_level === 'public' &&
                $this->privacy_level === 'public' &&
@@ -630,6 +700,7 @@ class PublicDocument extends Model
      */
     public function verifyFileIntegrity(): bool
     {
+<<<<<<< HEAD
         if (! $this->file_path || ! $this->checksum) {
             return false;
         }
@@ -640,6 +711,8 @@ class PublicDocument extends Model
             return false;
         }
 
+=======
+>>>>>>> 6ed19256f (.)
         if (!$this->file_path || !$this->checksum) {
             return false;
         }
@@ -664,6 +737,7 @@ class PublicDocument extends Model
             'metadata' => $this->metadata_compliance,
             'overall' => false,
         ];
+<<<<<<< HEAD
 
         // Verifica requisiti AGID
         $requirements = [
@@ -681,6 +755,8 @@ class PublicDocument extends Model
         $compliance['score'] = count(array_filter($requirements)) / count($requirements) * 100;
         $compliance['overall'] = $compliance['score'] >= 80;
 
+=======
+>>>>>>> 6ed19256f (.)
         
         // Verifica requisiti AGID
         $requirements = [
@@ -800,7 +876,11 @@ class PublicDocument extends Model
             $counter = 1;
 
             while (static::where('slug', $model->slug)->exists()) {
+<<<<<<< HEAD
                 $model->slug = $originalSlug.'-'.$counter;
+=======
+                $model->slug = $originalSlug . '-' . $counter;
+>>>>>>> 6ed19256f (.)
                 $counter++;
             }
         });
@@ -810,6 +890,7 @@ class PublicDocument extends Model
             if (is_null($model->document_status)) {
                 $model->document_status = 'draft';
             }
+<<<<<<< HEAD
 
             if (is_null($model->publication_status)) {
                 $model->publication_status = 'unpublished';
@@ -823,6 +904,8 @@ class PublicDocument extends Model
                 $model->language = 'it';
             }
 
+=======
+>>>>>>> 6ed19256f (.)
             
             if (is_null($model->publication_status)) {
                 $model->publication_status = 'unpublished';
@@ -844,7 +927,11 @@ class PublicDocument extends Model
         // Calcola checksum del file se presente
         static::creating(function ($model) {
             if ($model->file_path && empty($model->checksum)) {
+<<<<<<< HEAD
                 $filePath = storage_path('app/'.$model->file_path);
+=======
+                $filePath = storage_path('app/' . $model->file_path);
+>>>>>>> 6ed19256f (.)
                 if (file_exists($filePath)) {
                     $model->checksum = hash_file('sha256', $filePath);
                     $model->file_size = filesize($filePath);
@@ -852,8 +939,12 @@ class PublicDocument extends Model
             }
         });
     }
+<<<<<<< HEAD
 }
 
 
 
 
+=======
+}
+>>>>>>> 6ed19256f (.)

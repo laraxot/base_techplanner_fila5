@@ -5,8 +5,12 @@ declare(strict_types=1);
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
+<<<<<<< HEAD
 return new class extends XotBaseMigration
 {
+=======
+return new class extends XotBaseMigration {
+>>>>>>> 6ed19256f (.)
     /**
      * Run the migrations.
      */
@@ -28,7 +32,11 @@ return new class extends XotBaseMigration
         });
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
+<<<<<<< HEAD
             if (! $this->hasColumn('user_type')) {
+=======
+            if (!$this->hasColumn('user_type')) {
+>>>>>>> 6ed19256f (.)
                 $table->string('user_type', 36)->nullable()->index();
             }
 

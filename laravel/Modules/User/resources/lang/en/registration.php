@@ -8,91 +8,130 @@ return [
             'label' => 'First Name',
             'placeholder' => 'Enter your first name',
             'tooltip' => 'Enter your first name',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'last_name' => [
             'label' => 'Last Name',
             'placeholder' => 'Enter your last name',
             'tooltip' => 'Enter your last name',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'email' => [
             'label' => 'Email',
             'placeholder' => 'Enter your email',
             'tooltip' => 'Enter a valid email address',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'phone' => [
             'label' => 'Phone',
             'placeholder' => 'Enter your phone number',
             'tooltip' => 'Enter a valid phone number',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'address' => [
             'label' => 'Address',
             'placeholder' => 'Enter your address',
             'tooltip' => 'Enter your residential address',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'city' => [
             'label' => 'City',
             'placeholder' => 'Enter your city',
             'tooltip' => 'Enter your city of residence',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'postal_code' => [
             'label' => 'Postal Code',
             'placeholder' => 'Enter postal code',
             'tooltip' => 'Enter your postal code',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'province' => [
             'label' => 'Province',
             'placeholder' => 'Enter province',
             'tooltip' => 'Enter your province of residence',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'country' => [
             'label' => 'Country',
             'placeholder' => 'Enter country',
             'tooltip' => 'Enter your country of residence',
             'default' => 'Italy',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'password' => [
             'label' => 'Password',
             'placeholder' => 'Enter your password',
             'tooltip' => 'Password must be at least 8 characters long',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'password_confirmation' => [
             'label' => 'Confirm Password',
             'placeholder' => 'Confirm your password',
             'tooltip' => 'Re-enter your password for confirmation',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'terms' => [
             'label' => 'I accept the terms and conditions',
             'tooltip' => 'You must accept the terms and conditions to proceed',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'newsletter' => [
             'label' => 'Subscribe to newsletter',
             'tooltip' => 'Receive updates and news via email',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'buttons' => [
@@ -124,6 +163,7 @@ return [
             'description' => 'Verify your information before completing registration',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -135,4 +175,6 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];
