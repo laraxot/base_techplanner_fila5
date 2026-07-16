@@ -34,7 +34,7 @@ describe('Component Model', function (): void {
     test('can be instantiated', function (): void {
         /** @phpstan-ignore-next-line class.notFound (Component model absent from artifact set) */
         $component = new \Modules\UI\Models\Component();
-        /** @phpstan-ignore-next-line class.notFound (Component model absent from artifact set) */
+        /* @phpstan-ignore-next-line class.notFound (Component model absent from artifact set) */
         Assert::assertInstanceOf(\Modules\UI\Models\Component::class, $component);
     });
 
@@ -50,7 +50,7 @@ describe('Component Model', function (): void {
         ];
 
         foreach ($expected as $field) {
-            /** @phpstan-ignore-next-line class.notFound, argument.type (Component model absent from artifact set) */
+            /* @phpstan-ignore-next-line class.notFound, argument.type (Component model absent from artifact set) */
             Assert::assertTrue(in_array($field, $component->getFillable()));
         }
     });
@@ -81,7 +81,7 @@ describe('Component Model', function (): void {
     test('has correct table name', function (): void {
         /** @phpstan-ignore-next-line class.notFound (Component model absent from artifact set) */
         $component = new \Modules\UI\Models\Component();
-        /** @phpstan-ignore-next-line class.notFound (Component model absent from artifact set) */
+        /* @phpstan-ignore-next-line class.notFound (Component model absent from artifact set) */
         Assert::assertSame('components', $component->getTable());
     });
 

@@ -34,7 +34,7 @@ describe('Asset Model', function (): void {
     test('can be instantiated', function (): void {
         /** @phpstan-ignore-next-line class.notFound (Asset model absent from artifact set) */
         $asset = new \Modules\UI\Models\Asset();
-        /** @phpstan-ignore-next-line class.notFound (Asset model absent from artifact set) */
+        /* @phpstan-ignore-next-line class.notFound (Asset model absent from artifact set) */
         Assert::assertInstanceOf(\Modules\UI\Models\Asset::class, $asset);
     });
 
@@ -44,7 +44,7 @@ describe('Asset Model', function (): void {
         /** @phpstan-ignore-next-line class.notFound (Asset model absent from artifact set) */
         $asset = new \Modules\UI\Models\Asset();
         foreach ($expected as $field) {
-            /** @phpstan-ignore-next-line class.notFound, argument.type (Asset model absent from artifact set) */
+            /* @phpstan-ignore-next-line class.notFound, argument.type (Asset model absent from artifact set) */
             Assert::assertTrue(in_array($field, $asset->getFillable()));
         }
     });
@@ -73,12 +73,12 @@ describe('Asset Model', function (): void {
     test('has correct table name', function (): void {
         /** @phpstan-ignore-next-line class.notFound (Asset model absent from artifact set) */
         $asset = new \Modules\UI\Models\Asset();
-        /** @phpstan-ignore-next-line class.notFound (Asset model absent from artifact set) */
+        /* @phpstan-ignore-next-line class.notFound (Asset model absent from artifact set) */
         Assert::assertSame('assets', $asset->getTable());
     });
 
     test('has model base class', function (): void {
-        /** @phpstan-ignore-next-line class.notFound (Asset model absent from artifact set) */
+        /* @phpstan-ignore-next-line class.notFound (Asset model absent from artifact set) */
         Assert::assertTrue(is_a(\Modules\UI\Models\Asset::class, 'Modules\UI\Models\BaseModel', true));
     });
 
