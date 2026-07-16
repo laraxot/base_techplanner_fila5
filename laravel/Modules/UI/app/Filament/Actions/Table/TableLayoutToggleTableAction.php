@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\UI\Filament\Actions\Table;
 
-use Filament\Actions\Action;
 use Filament\Resources\Pages\ListRecords;
 use Modules\UI\Contracts\HasTableLayout;
+use Modules\Xot\Filament\Actions\XotBaseAction;
 
-final class TableLayoutToggleTableAction extends Action implements HasTableLayout
+final class TableLayoutToggleTableAction extends XotBaseAction implements HasTableLayout
 {
     use TableLayoutTrait;
 

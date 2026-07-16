@@ -4,19 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\UI\Filament\Tables\Columns;
 
-use Filament\Tables\Columns\SelectColumn;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Modules\Xot\Filament\Tables\Columns\XotBaseSelectColumn;
 
-class SelectStateColumn extends SelectColumn
+class SelectStateColumn extends XotBaseSelectColumn
 {
     protected function setUp(): void
     {
         parent::setUp();
         $this->options(function (Model $record, mixed $state): array {
             $name = $this->getName();
-            if (null === $state) {
+            if ($state === null) {
                 if (! method_exists($record, 'getDefaultStateFor')) {
                     return [];
                 }
@@ -60,7 +60,7 @@ class SelectStateColumn extends SelectColumn
                         }
                     } catch (\ReflectionException) {
                     }
-                    if (null !== $stateNameProperty) {
+                    if ($stateNameProperty !== null) {
                         $statesValues = array_values($states);
                         /** @var list<int|string> $statesValuesTyped */
                         $statesValuesTyped = $statesValues;
@@ -99,8 +99,7 @@ class SelectStateColumn extends SelectColumn
     }
 
     /**
-     * @param array<int|string, mixed> $states
-     *
+     * @param  array<int|string, mixed>  $states
      * @return array<int|string, string>
      */
     private function combineStateOptions(array $states): array

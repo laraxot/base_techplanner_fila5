@@ -38,6 +38,7 @@ return [
         'SendRecordsNotificationBulkAction' => ['tooltip' => 'SendRecordsNotificationBulkAction', 'icon' => 'SendRecordsNotificationBulkAction', 'label' => 'SendRecordsNotificationBulkAction'],
         'sendRecordsNotification' => ['tooltip' => 'sendRecordsNotification', 'icon' => 'sendRecordsNotification', 'label' => 'sendRecordsNotification'],
         'removeAllFilters' => ['tooltip' => 'removeAllFilters', 'icon' => 'removeAllFilters', 'label' => 'removeAllFilters'],
+        'resetColumnManager' => ['tooltip' => 'resetColumnManager', 'icon' => 'resetColumnManager', 'label' => 'resetColumnManager'],
     ],
     'fields' => [
         'id' => ['label' => 'ID'],

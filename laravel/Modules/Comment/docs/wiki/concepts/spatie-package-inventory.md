@@ -4,7 +4,7 @@ type: concept
 module: Comment
 tags: [comment, spatie, inventory, migration, mapping]
 created: 2026-06-06
-updated: 2026-06-06
+updated: 2026-07-16
 qmd: "spatie laravel-comments inventory mapping Modules Comment internalize packages"
 issues:
   - "https://github.com/laraxot/module_comment_fila5/issues/4"
@@ -18,6 +18,14 @@ related:
 **111 file PHP** circa (core + livewire). Questo documento mappa **cosa** portare e **dove**.
 
 Legenda fase: **P1** core, **P2** UI, **P3** HTTP/mail, **P4** drop.
+
+## Contratto PSR-4 del fork temporaneo
+
+Finché `packages/spatie` non viene eliminata, i path sotto `src/` devono
+replicare esattamente il case del namespace (`Actions`, `Models`, `View`,
+`Livewire`, ecc.). Directory duplicate minuscole fanno sì che Composer salti
+le classi durante `dump-autoload`; la correzione è un rename case-only, non
+una modifica a namespace o autoload.
 
 ---
 

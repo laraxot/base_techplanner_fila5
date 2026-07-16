@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Modules\UI\Filament\Forms\Components;
 
 // use bjeavons\ZxcvbnPhp\Zxcvbn;
-use Filament\Forms\Components\TextInput;
+use Modules\Xot\Filament\Forms\Components\XotBaseTextInput;
 
-class PasswordStrengthField extends TextInput
+class PasswordStrengthField extends XotBaseTextInput
 {
     /**
      * Setup iniziale del componente.

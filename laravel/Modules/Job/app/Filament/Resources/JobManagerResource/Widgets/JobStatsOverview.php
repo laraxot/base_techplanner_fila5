@@ -8,14 +8,14 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources\JobManagerResource\Widgets;
 
-use Filament\Widgets\StatsOverviewWidget as BaseWidget;
 use Filament\Widgets\StatsOverviewWidget\Stat;
 use Illuminate\Support\Facades\DB;
 use Modules\Job\Models\JobManager;
 use Modules\Job\Traits\FormatSeconds;
 use Modules\Xot\Actions\Cast\SafeEloquentCastAction;
+use Modules\Xot\Filament\Widgets\XotBaseStatsOverviewWidget;
 
-class JobStatsOverview extends BaseWidget
+class JobStatsOverview extends XotBaseStatsOverviewWidget
 {
     use FormatSeconds;
 

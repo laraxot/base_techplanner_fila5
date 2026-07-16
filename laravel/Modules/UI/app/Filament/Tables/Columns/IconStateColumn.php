@@ -9,14 +9,14 @@ use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Utilities\Get;
-use Filament\Tables\Columns\IconColumn;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\StateContract as XotStateContract;
+use Modules\Xot\Filament\Tables\Columns\XotBaseIconColumn;
 
-class IconStateColumn extends IconColumn
+class IconStateColumn extends XotBaseIconColumn
 {
     protected function setUp(): void
     {
@@ -43,7 +43,7 @@ class IconStateColumn extends IconColumn
                         ->options(function (Model $record, string $_state): array {
                             $name = $this->getName();
                             $state = $record->getAttribute($name);
-                            if (null === $state) {
+                            if ($state === null) {
                                 if (! method_exists($record, 'getDefaultStateFor')) {
                                     return [];
                                 }

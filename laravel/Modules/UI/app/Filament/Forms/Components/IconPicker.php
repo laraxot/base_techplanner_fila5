@@ -6,15 +6,15 @@ namespace Modules\UI\Filament\Forms\Components;
 
 use Filament\Actions\Action;
 use Filament\Forms\Components\Select;
-use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Utilities\Get;
 use Filament\Schemas\Components\Utilities\Set;
 use Illuminate\Support\Arr;
 use Modules\UI\Actions\Icon\GetAllIconsAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Modules\Xot\Filament\Forms\Components\XotBaseTextInput;
 use Webmozart\Assert\Assert;
 
-class IconPicker extends TextInput
+class IconPicker extends XotBaseTextInput
 {
     protected function setUp(): void
     {

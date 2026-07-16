@@ -10,8 +10,9 @@ namespace Modules\Rating\Filament\Actions\Table;
 
 use Filament\Actions\Action;
 use Filament\Forms\Components\TextInput;
+use Modules\Xot\Filament\Actions\XotBaseAction;
 
-class BetTableAction extends Action
+class BetTableAction extends XotBaseAction
 {
     protected function setUp(): void
     {

@@ -94,6 +94,7 @@ return [
         'openFilters' => ['tooltip' => 'openFilters', 'icon' => 'openFilters', 'label' => 'openFilters'],
         'detach' => ['tooltip' => 'detach', 'icon' => 'detach', 'label' => 'detach'],
         'attach' => ['tooltip' => 'attach', 'icon' => 'attach', 'label' => 'attach'],
+        'resetColumnManager' => ['tooltip' => 'resetColumnManager', 'icon' => 'resetColumnManager', 'label' => 'resetColumnManager'],
     ],
     'sections' => [
         'basic_info' => ['label' => 'Informazioni Base', 'description' => 'Informazioni fondamentali dell\'appuntamento', 'icon' => 'heroicon-o-information-circle'],

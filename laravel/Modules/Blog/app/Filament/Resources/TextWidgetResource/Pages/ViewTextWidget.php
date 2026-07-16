@@ -5,17 +5,31 @@ declare(strict_types=1);
 namespace Modules\Blog\Filament\Resources\TextWidgetResource\Pages;
 
 use Filament\Actions\EditAction;
-use Filament\Resources\Pages\ViewRecord;
+use Filament\Infolists\Components\TextEntry;
 use Modules\Blog\Filament\Resources\TextWidgetResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
-class ViewTextWidget extends ViewRecord
+class ViewTextWidget extends XotBaseViewRecord
 {
     protected static string $resource = TextWidgetResource::class;
 
     protected function getHeaderActions(): array
     {
         return [
-            EditAction::make(),
+            'edit' => EditAction::make(),
+        ];
+    }
+
+    /**
+     * @return array<string, TextEntry>
+     */
+    protected function getInfolistSchema(): array
+    {
+        return [
+            'key' => TextEntry::make('key'),
+            'title' => TextEntry::make('title'),
+            'content' => TextEntry::make('content')->html(),
+            'active' => TextEntry::make('active'),
         ];
     }
 }

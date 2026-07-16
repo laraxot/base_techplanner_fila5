@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Tables\Columns;
 
-use Filament\Tables\Columns\TextColumn;
+use Modules\Xot\Filament\Tables\Columns\XotBaseTextColumn;
 use Webmozart\Assert\Assert;
 
-class ScheduleOptions extends TextColumn
+class ScheduleOptions extends XotBaseTextColumn
 {
     protected bool $withValue = true;
 

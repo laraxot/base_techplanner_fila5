@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Rating\Filament\Widgets;
 
-use Filament\Widgets\StatsOverviewWidget as BaseWidget;
 use Filament\Widgets\StatsOverviewWidget\Stat;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
@@ -12,19 +11,20 @@ use Modules\Rating\Actions\HasRating\GetCountByModelRatingIdAction;
 use Modules\Rating\Actions\HasRating\GetSumByModelRatingIdAction;
 use Modules\Rating\Models\Contracts\HasRatingContract;
 use Modules\Rating\Models\Rating;
+use Modules\Xot\Filament\Widgets\XotBaseStatsOverviewWidget;
 use Webmozart\Assert\Assert;
 
 /**
  * @property (Model&HasRatingContract)|null $record
  */
-class StatsOverview extends BaseWidget
+class StatsOverview extends XotBaseStatsOverviewWidget
 {
     public (Model&HasRatingContract)|null $record = null;
 
     protected function getStats(): array
     {
         $stats = [];
-        if (null === $this->record) {
+        if ($this->record === null) {
             return $stats;
         }
         $ratings = $this->record->ratings()->wherePivot('user_id', null)->get();

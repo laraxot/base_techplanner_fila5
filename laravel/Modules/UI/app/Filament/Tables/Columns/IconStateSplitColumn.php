@@ -6,11 +6,11 @@ namespace Modules\UI\Filament\Tables\Columns;
 
 use Filament\Actions\Action;
 use Filament\Notifications\Notification;
-use Filament\Tables\Columns\Column;
 use Illuminate\Database\Eloquent\Model;
 use Livewire\Attributes\On;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\StateContract;
+use Modules\Xot\Filament\Tables\Columns\XotBaseColumn;
 
 /**
  * IconStateSplitColumn - Enhanced state transition column with compact grid layout.
@@ -22,7 +22,7 @@ use Modules\Xot\Contracts\StateContract;
  * - Proper error handling and notifications
  * - Mobile-friendly design
  */
-final class IconStateSplitColumn extends Column
+final class IconStateSplitColumn extends XotBaseColumn
 {
     protected string $view = 'ui::filament.tables.columns.icon-state-split';
 
@@ -33,10 +33,10 @@ final class IconStateSplitColumn extends Column
     /**
      * Configure the state class and model class for this column.
      *
-     * @param string $stateClass The state machine class (e.g., AppointmentState::class)
-     * @param string $modelClass The model class (e.g., Appointment::class)
-     * @param string $stateClass The state machine class (e.g., AppointmentState::class)
-     * @param string $modelClass The model class (e.g., Appointment::class)
+     * @param  string  $stateClass  The state machine class (e.g., AppointmentState::class)
+     * @param  string  $modelClass  The model class (e.g., Appointment::class)
+     * @param  string  $stateClass  The state machine class (e.g., AppointmentState::class)
+     * @param  string  $modelClass  The model class (e.g., Appointment::class)
      */
     public function stateClass(string $stateClass, string $modelClass): static
     {
@@ -131,7 +131,7 @@ final class IconStateSplitColumn extends Column
     #[On('table-action')]
     public function handleTableAction(string $action, int|string $recordId): void
     {
-        if ('prova' === $action) {
+        if ($action === 'prova') {
             $this->prova($recordId);
         }
     }
@@ -223,15 +223,15 @@ final class IconStateSplitColumn extends Column
     }
 
     /**
-     * @param array{class: StateContract, icon: string, label: string, color: string, tooltip: string} $stateData
-     * @param array{class: StateContract, icon: string, label: string, color: string, tooltip: string} $stateData
+     * @param  array{class: StateContract, icon: string, label: string, color: string, tooltip: string}  $stateData
+     * @param  array{class: StateContract, icon: string, label: string, color: string, tooltip: string}  $stateData
      */
     private function getTransitionAction(string $stateKey, array $stateData): ?Action
     {
         $record = $this->getRecord();
         $recordIdRaw = \is_object($record) && isset($record->id) ? $record->id : null;
 
-        if (null === $recordIdRaw || (! \is_int($recordIdRaw) && ! \is_string($recordIdRaw))) {
+        if ($recordIdRaw === null || (! \is_int($recordIdRaw) && ! \is_string($recordIdRaw))) {
             return null;
         }
 

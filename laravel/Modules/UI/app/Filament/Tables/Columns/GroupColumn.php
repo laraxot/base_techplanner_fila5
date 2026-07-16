@@ -5,8 +5,9 @@ declare(strict_types=1);
 namespace Modules\UI\Filament\Tables\Columns;
 
 use Filament\Tables\Columns\Column;
+use Modules\Xot\Filament\Tables\Columns\XotBaseColumn;
 
-class GroupColumn extends Column
+class GroupColumn extends XotBaseColumn
 {
     /** @var array<int|string, mixed> */
     public array $form = [];
@@ -37,7 +38,7 @@ class GroupColumn extends Column
     }
 
     /**
-     * @param array<int|string, mixed> $form
+     * @param  array<int|string, mixed>  $form
      */
     public function schema(array $form): self
     {

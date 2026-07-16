@@ -6,6 +6,7 @@ namespace Modules\Rating\Filament\Blocks;
 
 use Filament\Forms\Components\Builder\Block;
 use Filament\Forms\Components\ColorPicker;
+use Modules\Xot\Filament\Forms\Components\Builder\XotBaseBuilderBlock;
 use Filament\Forms\Components\Radio;
 use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
@@ -17,7 +18,7 @@ use Modules\Rating\Datas\RatingData;
 use Modules\Rating\Enums\SupportedLocale;
 use Modules\Xot\Actions\Filament\Block\GetViewBlocksOptionsByTypeAction;
 
-class Rating extends Block
+class Rating extends XotBaseBuilderBlock
 {
     public const BLOCK_TYPE = 'rating';
 
