@@ -5,7 +5,6 @@ package-lock.json
 *.phar
 .git-rewrite
 .php-cs-fixer.cache
-package-lock.json
 vendor/
 node_modules/
 .env
@@ -18,22 +17,14 @@ error_log
 
 *.stackdump
 *.cache
-*.log
-*.lock
 *.bakup
 *.old
 *.old1
-package-lock.json
 
 node_modules
 .git-blame-ignore-revs
-node_modules
 vendor
-.git-blame-ignore-revs
 build/
-vendor/
-build/
-node_modules
 docs/cache/
 cache/
 *:Zone.Identifier
@@ -46,7 +37,6 @@ cache/
 # PHPStan documentation
 docs/phpstan/
 lang/lang/
-_docs/
 _docs/
 
 # Second brain: no-docs-archive (wiki) — non tracciare albero legacy docs/archive/
@@ -61,3 +51,24 @@ docs/archive/
 *~head
 
 agentdb.rvf
+tests/AuditCoverage
+
+# AI/TOOL SCAFFOLD — must never exist in module tree (see docs/wiki/rules/module-theme-root-cleanup.md)
+scripts/
+bashscripts/
+docs/archived/
+docs/legacy/
+docs/workbench/
+.circleci/
+.claude-audit/
+tests/.claude-audit/
+_bmad-output/
+test-results/
+.devcontainer/
+.kilocode/
+.kiro/
+.ralph/
+
+# Logs and lock markers
+*.log
+*.lock
