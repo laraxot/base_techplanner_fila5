@@ -50,15 +50,24 @@ related:
 - Cambio `/* @var ... */` (singolo asterisco, ignorato da PHPStan) → `/** @var ... $relation */` (doppio asterisco)
 - Aggiunto `/** @phpstan-ignore return.type */` prima di `return $relation` per covarianza `$this` vs `Model`
 
-## Stato a fine sessione
+## Stato a fine sessione (22:00 CEST)
 
 ```
 ./vendor/bin/phpstan analyse Modules --no-progress
 [OK] No errors  (exit 0)
 ```
 
-1 errore residuo in `Modules/Cms/tests/Feature/HomepageFilamentBlocksArchitectureTest.php:36`
-→ file LOCKED da altro agente (21:33 CEST) — skipped per protocollo.
+## Fix aggiuntivi — sotto-sessione (22:00)
+
+### SendAgiletelecomSMSv1/v2ActionTest.php — regressione da altro agente
+
+Un altro agente aveva reinserito `namespace Modules\Notify\Tests\Unit\Actions\SMS` +
+`uses(TestCase::class)` → PDOException su tutti i test (pure reflection, nessun DB
+necessario). Fix:
+
+- Rimosso `namespace`, `use TestCase`, `uses(TestCase::class)`
+- `assertReflectionTypeName()` inline (vedi Pattern 6 sotto)
+- PHPStan: 0 errori · Pest: 18/18 test passano
 
 ## Pattern chiave documentati
 
@@ -71,3 +80,11 @@ related:
 4. **`@var` cast**: deve essere `/** @var Type $var */` (doppio asterisco). `/* @var ... */` (singolo) è ignorato da PHPStan.
 
 5. **`it()->with()` PHPStan**: l'errore `method.internalClass` su `.with()` è reportato sulla riga dell'`it(` iniziale, non sulla riga di `})->with()`. Il `@phpstan-ignore` va messo PRIMA della riga `it(`.
+
+6. **`assertReflectionTypeName()` non disponibile senza `uses()`**: funzione definita in `Pest.php` ma non caricata per file senza `uses(TestCase::class)`. Fix inline:
+```php
+expect($type)->toBeInstanceOf(\ReflectionNamedType::class);
+expect($type instanceof \ReflectionNamedType ? $type->getName() : '')->toBe(SmsData::class);
+```
+
+7. **namespace + uses(TestCase::class) = PDO su test puramente reflection**: qualsiasi `uses(TestCase::class)` porta il bootstrapping completo del framework incluso il tentativo di connessione DB. Per test che fanno solo reflection senza DB, rimuovere sia namespace che uses().

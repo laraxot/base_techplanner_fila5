@@ -383,3 +383,14 @@ esserci solo README.md". `CHANGELOG.md` esiste ancora alla root di
 dell'utente, per non perdere contenuto storico senza conferma.
 
 *Ultimo aggiornamento: 2026-07-06*
+
+## 2026-07-06 - Root module hygiene
+
+Regola obbligatoria per la root di ogni modulo:
+
+- Le directory direttamente sotto `Modules/<Modulo>/` non devono contenere caratteri maiuscoli. Le directory applicative canoniche stanno sotto `app/` (`app/Datas`, `app/Filament`, `app/Providers`, ecc.), non nella root del modulo.
+- Nella root del modulo non devono esistere file `.txt`.
+- Nella root del modulo l'unico file `.md` ammesso e' `README.md`.
+- La documentazione operativa va in `docs/` o `docs/wiki/`, non dispersa nella root.
+
+Pulizia applicata a `Modules/Xot`: rimosse directory root legacy con maiuscole (`Datas`, `Filament`, `Helpers`, `Providers`, `Services`, `View`, `Xot`) e directory legacy non canoniche (`_docs`, `claude-code-bmad-skills`); rimossi i file root `.txt` e `.md` diversi da `README.md`. Dopo la pulizia `phpstan analyse Modules` e' a zero errori.
