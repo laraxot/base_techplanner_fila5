@@ -7,9 +7,10 @@ namespace Modules\Media\Tests;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Modules\Media\Providers\MediaServiceProvider;
+use Modules\Media\Tests\Support\HasMediaTestStub;
 use Modules\User\Providers\UserServiceProvider;
-use Modules\Xot\Providers\XotServiceProvider;
 use Modules\Xot\Tests\XotBaseTestCase;
+use PHPUnit\Framework\MockObject\MockObject;
 
 /**
  * Base test case for Media module.
@@ -35,11 +36,21 @@ abstract class TestCase extends XotBaseTestCase
      * @template T of object
      *
      * @param  class-string<T>  $class
-     * @return T&\PHPUnit\Framework\MockObject\MockObject
+     * @return T&MockObject
      */
     public function makeTestMock(string $class): object
     {
         return $this->createMock($class);
+    }
+
+    /**
+     * Mock HasMedia con metodo update (persistenza path allegati).
+     *
+     * @return HasMediaTestStub&MockObject
+     */
+    public function makeHasMediaRecordMock(): object
+    {
+        return $this->createPartialMock(HasMediaTestStub::class, ['addMedia', 'update']);
     }
 
     /**
