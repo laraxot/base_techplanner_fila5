@@ -1,76 +1,92 @@
+# ==============================================
+# DEPENDENCIES
+# ==============================================
 /vendor/
-node_modules/
-npm-debug.log
-*.cache
 *.phar
-*.lock
+node_modules/
 package-lock.json
-yarn-error.log
+/docs/package-lock.json
 
-# Laravel 4 specific
-bootstrap/compiled.php
-app/storage/
-
-# Laravel 5 & Lumen specific
-public/storage
-public/hot
-
-# Laravel 5 & Lumen specific with changed public path
-public_html/storage
-public_html/hot
-
-storage/*.key
+# ==============================================
+# ENV & SECRETS
+# ==============================================
 .env
+storage/*.key
 Homestead.yaml
 Homestead.json
 /.vagrant
-.phpunit.result.cache
-*.lock
-package-lock.json
+
+# ==============================================
+# LARAVEL / LUMEN RUNTIME
+# ==============================================
+bootstrap/compiled.php
+app/storage/
+public/storage
+public/hot
+public_html/storage
+public_html/hot
 build
-/docs/package-lock.json
-.git-blame-ignore-revs
-
-*.phar
-*.cache
-*.log
-*.lock
-.git-blame-ignore-revs
-package-lock.json
-.php-cs-fixer.cache
-package-lock.json
-.git-rewrite/
-
-node_modules
-
-.git-blame-ignore-revs
-/vendor
-vendor
-vendor/
 build/docs/cache/
 cache/
--e 
-# PHPStan documentation
+
+# ==============================================
+# CACHES & LOGS
+# ==============================================
+*.cache
+*.log
+npm-debug.log
+yarn-error.log
+.phpunit.result.cache
+.php-cs-fixer.cache
+.git-rewrite/
+.git-blame-ignore-revs
+*.lock
+
+# ==============================================
+# PHPSTAN / DOCS CACHE
+# ==============================================
 docs/phpstan/
 
-# Backup files
+# ==============================================
+# BACKUP / MERGE RESIDUE (never commit)
+# ==============================================
 *.old
 *.old1
 *.backup
 *.backup.*
-lang/lang/
-_docs/
-_docs/
-
-# Second brain: no-docs-archive (wiki) — non tracciare albero legacy docs/archive/
-docs/archive/
-# Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
+*.orig
+*.rej
 *~HEAD
 *~BASE
 *~LOCAL
 *~REMOTE
-*.orig
-*.rej
 *~head
 
+# ==============================================
+# PROJECT SCRATCH
+# ==============================================
+lang/lang/
+_docs/
 agentdb.rvf
+tests/AuditCoverage
+
+# ==============================================
+# AI / TOOL SCAFFOLD — must never exist in the module tree
+# (see docs/module-root-hygiene.md and
+#  docs/wiki/rules/module-theme-root-cleanup.md)
+# ==============================================
+scripts/
+bashscripts/
+docs/archive/
+docs/archived/
+docs/legacy/
+docs/workbench/
+.circleci/
+.claude-audit/
+tests/.claude-audit/
+_bmad-output/
+test-results/
+.devcontainer/
+.kilocode/
+.kiro/
+.ralph/
