@@ -25,8 +25,12 @@ Flask: Per creare l'API che riceve le richieste POST da Laravel.
 Pandas: Per la gestione dei dataset (CSV, JSON, Markdown).
 Transformers e torch: Per gestire i modelli di NLP e il fine-tuning.
 
+The fine-tuning service lives at the repo root under
+`bashscripts/tools/ai-fine-tuning/` (a standalone Python/Flask sidecar — it is not
+part of the PHP module tree; see `docs/module-root-hygiene.md`).
+
 ~~~bash
-python fine_tuning.py
+python bashscripts/tools/ai-fine-tuning/fine_tuning.py
 ~~~
 
 ~~~bash
