@@ -80,3 +80,6 @@ Canon: [multi-agent-coordination-discipline.md](../wiki/how-to/multi-agent-coord
 ## Cursor rule
 
 `.cursor/rules/multi-agent-coordination.mdc` (alwaysApply)
+# Active coordination
+
+- [Gitmodules multi-repo sync](gitmodules-multi-repo-sync.md) — issue #42, discussion #43

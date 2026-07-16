@@ -61,10 +61,10 @@ describe('Send notification flow', function (): void {
         $recipient = UserFactory::new()->createOne();
         $notification = NotificationFactory::new()->createOne();
 
-        $action = $this->createUnitMock(SendNotificationAction::class);
-        $action->expects($this->expectsOnce())
-            ->method('handle')
-            ->willReturn($notification);
+        $action = typedMock(SendNotificationAction::class);
+        mockExpectation($action, 'handle')
+            ->__call('once', [])
+            ->andReturn($notification);
 
         app()->instance(SendNotificationAction::class, $action);
 

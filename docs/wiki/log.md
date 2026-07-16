@@ -16,6 +16,10 @@ discussions:
 
 # TechPlanner LLM Wiki Log
 
+## 2026-07-16
+
+- **Contenuto JSON FO dichiarato sacro** — dopo la cancellazione massiva nel commit `d6e43cc`, ricostruiti forward-only i JSON TechPlanner da history, aggiunte rule, memory, skill, documentazione owner Cms/Theme Two e gate di presenza/sintassi. Tracciamento: issue #40, discussion #41.
+
 ## 2026-07-06
 
 - **QMD installato e second brain reindicizzato** — `@tobilu/qmd@2.5.3` installato globalmente via npm (sudo, `--allow-scripts` per `better-sqlite3`/`node-llama-cpp`). Collection `wiki` creata su percorso reale `bashscripts/ai/wiki` (i mirror `docs/wiki/*` sono symlink non seguiti da `find`/qmd glob di default; indicizzare `docs/wiki` da solo produceva solo 2 file). 5058 file BM25-indicizzati e ricercabili (`bash bashscripts/docs/llm-wiki-qmd.sh search "<query>"`). Embedding vettoriali (`embeddinggemma-300M`) in corso in background su CPU (nessuna GPU disponibile nel container) — lento (~4-5 doc/min), BM25 lessicale è già pienamente funzionante nel frattempo. Aggiunto server MCP `qmd` in `.mcp.json` (`qmd mcp`, stessi env `XDG_CACHE_HOME`/`XDG_CONFIG_HOME` del wrapper). Riferimento mancante `docs/project/qmd-local-docs-search.md` citato da `llm-wiki-qmd-workflow.md` non esiste — da creare o correggere il link.

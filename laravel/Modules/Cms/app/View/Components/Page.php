@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Cms\View\Components;
 
+use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View as ViewContract;
 use Illuminate\View\Component;
 use Modules\Cms\Datas\BlockData;
@@ -39,8 +40,8 @@ final class Page extends Component
         $this->side = $side;
         $this->data = $data;
 
-        if ($slug === null && isset($data['slug'])) {
-            $slug = (string) $data['slug'];
+        if ($slug === null && isset($data['slug']) && is_string($data['slug'])) {
+            $slug = $data['slug'];
         }
 
         if ($slug === null) {
@@ -56,9 +57,8 @@ final class Page extends Component
         $this->blocks = PageModel::getBlocksBySlug($this->slug, $this->side);
     }
 
-    public function render(): ViewContract
+    public function render(): ViewContract|Factory
     {
-        /** @phpstan-var view-string */
         $viewName = 'cms::components.page';
 
         return view($viewName, array_merge($this->data, [

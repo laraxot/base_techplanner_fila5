@@ -66,13 +66,13 @@ describe('HasExtraTrait', function (): void {
     });
 
     it('handles different data types correctly', function () use ($testModel): void {
-        $testModel->extra = makeExtraWithValues([
+        $testModel->setRelation('extra', makeExtraWithValues([
             'string_value' => 'test_string',
             'int_value' => 123,
             'bool_value' => true,
             'array_value' => ['nested', 'array'],
             'null_value' => null,
-        ]);
+        ]));
 
         Assert::assertSame('test_string', $testModel->getExtra('string_value'));
         Assert::assertSame(123, $testModel->getExtra('int_value'));
@@ -82,9 +82,9 @@ describe('HasExtraTrait', function (): void {
     });
 
     it('returns null for unsupported stored types', function () use ($testModel): void {
-        $testModel->extra = makeExtraWithValues([
+        $testModel->setRelation('extra', makeExtraWithValues([
             'invalid_value' => new \stdClass(),
-        ]);
+        ]));
 
         Assert::assertNull($testModel->getExtra('invalid_value'));
     });

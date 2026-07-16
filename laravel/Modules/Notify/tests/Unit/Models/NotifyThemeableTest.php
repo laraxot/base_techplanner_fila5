@@ -7,7 +7,6 @@ namespace Modules\Notify\Tests\Unit\Models;
 use PHPUnit\Framework\Assert;
 use Modules\Notify\Models\NotifyThemeable;
 use Modules\Notify\Tests\TestCase;
-use function Pest\Laravel\get;
 
 uses(\Modules\Notify\Tests\TestCase::class);
 

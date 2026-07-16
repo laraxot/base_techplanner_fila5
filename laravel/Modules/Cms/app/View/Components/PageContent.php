@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Cms\View\Components;
 
+use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View as ViewContract;
 use Illuminate\View\Component;
 use Modules\Cms\Datas\BlockData;
@@ -41,21 +42,11 @@ class PageContent extends Component
 
     /**
      * Get the view / contents that represents the component.
+     *
+     * @return Factory|ViewContract
      */
-    public function render(): ViewContract
+    public function render(): Factory|ViewContract
     {
-        /*
-         * $comps=Blade::getClassComponentAliases();
-         * $paths = Blade::getAnonymousComponentPaths();
-         * $filtered=Arr::where($comps,function ($value,$key){
-         * return Str::startsWith($key,'blocks.');
-         * });
-         * dddx([
-         * 'filtered'=>$filtered
-         * ,'paths'=>$paths
-         * ]);
-         */
-        /** @phpstan-var view-string */
         $view = 'cms::components.page-content';
         $view_params = [];
 

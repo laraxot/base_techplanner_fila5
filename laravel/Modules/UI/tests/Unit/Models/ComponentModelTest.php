@@ -60,6 +60,7 @@ describe('Component Model', function (): void {
         $component = new \Modules\UI\Models\Component();
         /** @phpstan-ignore-next-line class.notFound (Component model absent from artifact set) */
         $casts = $component->getCasts();
+        Assert::assertIsArray($casts);
         Assert::assertSame('boolean', $casts['is_active']);
         Assert::assertSame('boolean', $casts['is_cacheable']);
         Assert::assertSame('array', $casts['dependencies']);

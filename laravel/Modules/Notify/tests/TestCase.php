@@ -9,6 +9,7 @@ use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
+use Modules\Notify\Actions\NotificationManager;
 use Modules\Notify\Providers\NotifyServiceProvider;
 use Modules\User\Models\User;
 use Modules\User\Providers\UserServiceProvider;
@@ -28,6 +29,8 @@ use PHPUnit\Framework\Assert;
 abstract class TestCase extends XotBaseTestCase
 {
     use DatabaseTransactions;
+
+    public NotificationManager $notificationManager;
 
     /** @var list<string> */
     protected $connectionsToTransact = ['sqlite', 'notify', 'user'];
