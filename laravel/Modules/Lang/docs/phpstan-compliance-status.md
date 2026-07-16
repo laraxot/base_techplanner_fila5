@@ -1,4 +1,21 @@
+---
+title: "PHPStan Level 10 Compliance Status"
+module: "Lang"
+type: concept
+tags: [lang, service, helper, text]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "lang service helper text fix"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # PHPStan Level 10 Compliance Status
+
+**Last Updated**: 2025-12-10
+**Last Updated**: 2025-12-10
+
+
+
 
 **Last Updated**: 2025-12-10
 **Last Updated**: 2025-12-10
@@ -47,9 +64,7 @@ To maintain PHPStan compliance:
 - [Laravel Localization](https://laravel.com/docs/12.x/localization)
 - [Route Service Providers](route-service-providers.md)
 - [Language Detection Patterns](language-detection.md)
-## Aggiornamento 2026-07-06
-
-`app/Providers/TranslatorTraitPhpstanProbe.php` eliminato: probe PHPStan
-morto (nessuna registry lo referenzia, vedi
-`Modules/Xot/docs/wiki/concepts/phpstan-trait-probes.md`). Ri-verificato a
-zero errori.
+- [Language Detection Patterns](language-detection.md)
+- [Language Detection Patterns](language-detection.md)
+- [Language Detection Patterns](language-detection.md)
+- [Language Detection Patterns](language-detection.md)

@@ -3,9 +3,10 @@
 declare(strict_types=1);
 
 use Modules\Xot\Actions\String\NormalizeDriverNameAction;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(Modules\Xot\Tests\TestCase::class);
+uses(TestCase::class);
 
 it('normalizes driver names correctly', function (): void {
     $action = app(NormalizeDriverNameAction::class);

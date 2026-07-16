@@ -1,3 +1,21 @@
+---
+title: "Implementazione Netfun SMS"
+type: concept
+tags: [netfun, sms, implementation]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "netfun-sms-implementation implementazione netfun sms"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./errori-comuni-da-evitare.md"
+  - "./multi-channel-notifications.md"
+  - "./notifications-implementation-guide.md"
+  - "./sms-implementation-details.md"
+  - "./sms-provider-configuration.md"
+  - "./telegram-notifications-guide.md"
+---
+
 # Implementazione Netfun SMS 
 
 ## Introduzione

@@ -1,3 +1,23 @@
+---
+title: "Script Consolidamento Documentazione UI"
+type: concept
+tags: [consolidation, script]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "consolidation-script script consolidamento documentazione ui"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./04-datas.md"
+  - "./advanced-form-components-1.md"
+  - "./advanced-form-components.md"
+  - "./agent-confidence-discipline.md"
+  - "./agent-confidence-protocol.md"
+  - "./agent-edit-discipline.md"
+---
+
 # Script Consolidamento Documentazione UI
 
 ## File Vuoti da Eliminare
@@ -8,10 +28,10 @@ Questi file sono vuoti (0 bytes) e possono essere eliminati:
 cd laravel/Modules/UI/docs
 
 # File vuoti con underscore
-rm -f advanced_form_components.md
-rm -f blade_data_handling.md
-rm -f naming_conventions.md
-rm -f phpstan_fixes_2025.md
+rm -f advanced-form-components.md
+rm -f blade-data-handling-2.md
+rm -f naming-conventions-2.md
+rm -f phpstan-fixes-2025-1.md
 ```
 
 ## File Duplicati da Eliminare
@@ -20,61 +40,61 @@ Questi file hanno versioni con trattini che devono essere mantenute:
 
 ```bash
 # Advanced Form Components
-rm -f advanced_form_components.md
+rm -f advanced-form-components.md
 
 # Blade Components
-rm -f blade_data_handling.md
+rm -f blade-data-handling-2.md
 
 # Filament Components
-rm -f filament_4x_upgrade.md
-rm -f filament_4x_upgrade_report.md
-rm -f filament_blade_components_usage.md
-rm -f filament_components.md
-rm -f filament_components_errors.md
-rm -f filament_components_location_studio.md
-rm -f filament_components_usage.md
-rm -f filament_fileupload.md
-rm -f filament_fileupload_components.md
-rm -f filament_error_fileupload_buttonlabel.md
-rm -f filament_error_fileupload_icon.md
-rm -f filament_error_fileupload_prefixicon.md
-rm -f filament_dropdown_avatar_components.md
-rm -f filament_dropdown_avatar_usage.md
-rm -f filament_pages_refactoring.md
-rm -f filament_resources_structure.md
-rm -f filament_vscode.md
+rm -f filament-4x-upgrade-1.md
+rm -f filament-4x-upgrade-report-1.md
+rm -f filament-blade-components-usage-2.md
+rm -f filament-components-2.md
+rm -f filament-components-errors-2.md
+rm -f filament-components-location-studio-2.md
+rm -f filament-components-usage-1.md
+rm -f filament-fileupload-2.md
+rm -f filament-fileupload-components-2.md
+rm -f filament-error-fileupload-buttonlabel-2.md
+rm -f filament-error-fileupload-icon-2.md
+rm -f filament-error-fileupload-prefixicon-2.md
+rm -f filament-dropdown-avatar-components-1.md
+rm -f filament-dropdown-avatar-usage.md
+rm -f filament-pages-refactoring-1.md
+rm -f filament-resources-structure-2.md
+rm -f filament-vscode-2.md
 
 # Conflict Resolution
-rm -f conflict_resolution_iconstatecolumn.md
-rm -f conflict_resolution_locationselector.md
-rm -f conflict_resolution_tablelayoutenum.md
-rm -f conflict_resolution_translation_files.md
+rm -f conflict-resolution-iconstatecolumn-1.md
+rm -f conflict-resolution-locationselector-1.md
+rm -f conflict-resolution-tablelayoutenum-1.md
+rm -f conflict-resolution-translation-files-1.md
 
 # Naming Conventions
-rm -f convenzioni_naming_campi.md
-rm -f naming_conventions.md
-rm -f naming_rules.md
+rm -f convenzioni-naming-campi-2.md
+rm -f naming-conventions-2.md
+rm -f naming-rules-2.md
 
 # PHPStan
-rm -f phpstan_fixes_2025.md
-rm -f phpstan_corrections_summary.md
-rm -f phpstan_radio_badge_fix.md
+rm -f phpstan-fixes-2025-1.md
+rm -f phpstan-corrections-summary-1.md
+rm -f phpstan-radio-badge-fix-2.md
 
 # VSCode
-rm -f vscode_filament_extension.md
-rm -f vscode_filament_plugin.md
+rm -f vscode-filament-extension-1.md
+rm -f vscode-filament-plugin-2.md
 
 # Altri
-rm -f algolia_docsearch.md
-rm -f architecture_rules.md
-rm -f auth_pages.md
-rm -f base_components.md
-rm -f best_practices.md
-rm -f blocks_system.md
-rm -f chart_components.md
-rm -f components_guide.md
-rm -f cms_link.md
-rm -f cms_themes_link.md
+rm -f algolia-docsearch.md
+rm -f architecture-rules-1.md
+rm -f auth-pages-1.md
+rm -f base-components-1.md
+rm -f best-practices-2.md
+rm -f blocks-system-2.md
+rm -f chart-components-2.md
+rm -f components-guide-1.md
+rm -f cms-link-2.md
+rm -f cms-themes-link-2.md
 ```
 
 ## File con Date da Spostare in Archive
@@ -93,14 +113,14 @@ mv phpstan-level-10-cleanup-[DATE].md archive/phpstan-level-10-cleanup.md 2>/dev
 ## File con Maiuscole da Rinominare
 
 ```bash
-# Verificare se METODI_DUPLICATI_ANALISI.md è diverso da metodi-duplicati-analisi.md
+# Verificare se metodi-duplicati-analisi-2.md è diverso da metodi-duplicati-analisi.md
 # Se sono identici, eliminare quello con maiuscole
-if [ -f "METODI_DUPLICATI_ANALISI.md" ]; then
-    if cmp -s "METODI_DUPLICATI_ANALISI.md" "metodi-duplicati-analisi.md" 2>/dev/null; then
-        rm -f METODI_DUPLICATI_ANALISI.md
+if [ -f "metodi-duplicati-analisi-2.md" ]; then
+    if cmp -s "metodi-duplicati-analisi-2.md" "metodi-duplicati-analisi.md" 2>/dev/null; then
+        rm -f metodi-duplicati-analisi-2.md
     else
         # Se diversi, rinominare quello con maiuscole
-        mv METODI_DUPLICATI_ANALISI.md metodi-duplicati-analisi-uppercase.md
+        mv metodi-duplicati-analisi-2.md metodi-duplicati-analisi-uppercase.md
     fi
 fi
 ```

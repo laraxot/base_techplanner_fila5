@@ -1,7 +1,13 @@
 ---
-module: theme
-topic: sushi-to-json
-canonical: ../../../../Themes/docs/shared-components/algolia-docsearch-Modules.md
+title: "Sushi To Json"
+module: "Tenant"
+type: concept
+tags: [sushi, json]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "sushi to json"
+related:
+  - "./phpstan-corrections-january.md"
 ---
 
-See canonical documentation: ../../../../Themes/docs/shared-components/algolia-docsearch-Modules.md
+

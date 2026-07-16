@@ -8,12 +8,16 @@ created: 2026-06-30
 updated: 2026-07-01
 qmd: "UI modulo Config maiuscolo config minuscolo duplicato ponytail"
 issues:
-  - "https://github.com/laraxot/base_predict_fila5/issues/221"
 discussions:
-  - "https://github.com/laraxot/base_predict_fila5/discussions/222"
 related:
-  - ponytail-audit.md
-  - ../../../../../../docs/project/module-root-structure-analysis.md
+  - "./auth-register-focus-loss-overlay.md"
+  - "./block-rendering-and-optional-services.md"
+  - "./claude-audit-static.md"
+  - "./code-redundancy-ui.md"
+  - "./context-overflow-prevention.md"
+  - "./enum-select-best-practices.md"
+  - "./enum-select-component.md"
+  - "./enum-select-contract-and-false-friends.md"
 ---
 
 # Cartelle config duplicate — UI

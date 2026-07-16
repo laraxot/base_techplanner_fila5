@@ -1,3 +1,23 @@
+---
+title: "RadioCollection: Riassunto Correzione & Risultati FINALI"
+type: concept
+tags: [radio, collection, fix, summary]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "radio-collection-fix-summary radiocollection: riassunto correzione & risultati finali"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./address-field-1.md"
+  - "./address-field.md"
+  - "./blade-component-registration.md"
+  - "./filament-usage.md"
+  - "./filament.md"
+  - "./file-upload.md"
+  - "./footer.md"
+  - "./full-calendar-1.md"
+---
+
 # RadioCollection: Riassunto Correzione & Risultati FINALI
 
 ## 🎯 Problema Identificato

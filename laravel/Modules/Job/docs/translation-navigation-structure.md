@@ -1,3 +1,14 @@
+---
+title: "Translation Navigation Structure - Job Module"
+module: "Job"
+type: concept
+tags: [translation, navigation, structure]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "translation navigation structure"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 # Translation Navigation Structure - Job Module
 
 ## Problema Identificato
@@ -111,7 +122,7 @@ Verificare che User abbia le stesse 6 lingue per i file `.navigation` (passport.
 
 ## Backlink
 
-- [Modules/Job/docs/README.md](./readme.md)
+- [Modules/Job/docs/README.md](README.md)
 - [Modules/User/lang/it/passport.php](../../User/lang/it/passport.php)
 - [bashscripts/docs/translation-management.md](../../../bashscripts/docs/translation-management.md)
 

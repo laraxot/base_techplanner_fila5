@@ -1,3 +1,15 @@
+---
+title: "Architettura del Tema Zero"
+type: guide
+tags: ['filament', 'laravel', 'charts', 'testing']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "architettura del tema zero"
+related:
+  - "./00-INDEX.md"
+  - "./00-index.md"
+---
+
 # Architettura del Tema Zero
 
 ## Filosofia: "Il Tema come Vestito"

@@ -43,9 +43,7 @@ class LocationWidget extends XotBaseSchemaWidget
      */
     protected int|string|array $columnSpan = 'full';
 
-    /**
-     * Vista del widget.
-     */
+    /** @var view-string */
     protected string $view = 'geo::filament.widgets.location';
 
     /**

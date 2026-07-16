@@ -1,3 +1,15 @@
+---
+title: "PHPStan Level 10 Compliance Status"
+type: guide
+tags: ['filament', 'laravel', 'testing', 'phpstan']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan level 10 compliance status"
+related:
+  - "./00-INDEX.md"
+  - "./00-index.md"
+---
+
 # PHPStan Level 10 Compliance Status
 
 **Last Updated**: 2025-12-10  

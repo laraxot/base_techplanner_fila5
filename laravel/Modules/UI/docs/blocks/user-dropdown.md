@@ -1,3 +1,19 @@
+---
+title: "User Dropdown Component"
+type: concept
+tags: [user, dropdown]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "user-dropdown user dropdown component"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./correct-filament-components.md"
+  - "./filament-component-integration.md"
+  - "./logo.md"
+  - "./navigation.md"
+---
+
 # User Dropdown Component
 
 This document describes the User Dropdown component used in the header section and explains proper data handling patterns.

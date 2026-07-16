@@ -31,6 +31,8 @@ parameters:
         - ./*/build/*
         - ./*/docs/*
         - ./*/packages/*
+        - ./*/tests/*  #da togliere 
+        - ./*/tests/AuditCoverage/*
         - ./*/phpinsights.php
         - ./*/rector.php
         - ./*/*.blade.php

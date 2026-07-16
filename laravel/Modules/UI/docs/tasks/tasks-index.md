@@ -1,3 +1,22 @@
+---
+title: "Indice task - Modulo UI"
+type: concept
+tags: [tasks, index]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "tasks-index indice task - modulo ui"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./001-design-system-components.md"
+  - "./cleanup-redundant-files.md"
+  - "./filament-v5-alignment.md"
+  - "./increase-test-coverage.md"
+  - "./refactor-complex-components.md"
+  - "./ui-cleanup-docs.md"
+  - "./ui-filament-v5.md"
+---
+
 # Indice task - Modulo UI
 
 Lista dei task del modulo con link ai file .md separati. Ogni task è un file nella cartella `tasks/`. Dettagli dalla [roadmap](../roadmap.md).

@@ -1,3 +1,15 @@
+---
+title: "Gestione delle Traduzioni con LangServiceProvider"
+type: concept
+tags: [lang, service, provider]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "lang-service-provider gestione delle traduzioni con langserviceprovider"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+---
+
 # Gestione delle Traduzioni con LangServiceProvider
 
 ## Collegamenti Bidirezionali

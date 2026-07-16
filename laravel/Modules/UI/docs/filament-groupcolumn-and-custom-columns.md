@@ -1,3 +1,23 @@
+---
+title: "Guida all'utilizzo di GroupColumn e Colonne Custom"
+type: concept
+tags: [filament, groupcolumn, custom, columns]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament-groupcolumn-and-custom-columns guida all'utilizzo di groupcolumn e colonne custom"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./04-datas.md"
+  - "./advanced-form-components-1.md"
+  - "./advanced-form-components.md"
+  - "./agent-confidence-discipline.md"
+  - "./agent-confidence-protocol.md"
+  - "./agent-edit-discipline.md"
+---
+
 # Guida all'utilizzo di GroupColumn e Colonne Custom
 
 > **REGOLA IMPORTANTE**: Quando esiste una colonna personalizzata come `WorkerColumn`, `ValutatoreColumn`, ecc., USARLA invece di creare TextColumns separati. Le colonne personalizzate encapsulano la logica e mantengono DRY.

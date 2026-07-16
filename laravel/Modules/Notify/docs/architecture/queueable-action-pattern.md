@@ -1,3 +1,23 @@
+---
+title: "QueueableAction Pattern Guide"
+type: pattern
+tags: [queueable, action, pattern]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "queueable-action-pattern queueableaction pattern guide"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./config-structure.md"
+  - "./document-root-architecture.md"
+  - "./dto-structure-conventions.md"
+  - "./dto-structure-rules.md"
+  - "./interface-structure-clarification.md"
+  - "./mail-templates-structure.md"
+  - "./sms-config-structure.md"
+  - "./standardized-sms-config-structure.md"
+---
+
 # QueueableAction Pattern Guide
 
 ## 📖 **Introduzione**

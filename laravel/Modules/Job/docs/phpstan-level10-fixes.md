@@ -1,3 +1,14 @@
+---
+title: "Correzioni PHPStan Livello 10 - Modulo Job"
+module: "Job"
+type: concept
+tags: [phpstan, level10, fixes]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan level10 fixes"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 # Correzioni PHPStan Livello 10 - Modulo Job
 
 Questo documento traccia gli errori PHPStan di livello 10 identificati nel modulo Job e le relative soluzioni implementate.

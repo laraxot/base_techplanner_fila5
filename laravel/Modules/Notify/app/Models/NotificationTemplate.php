@@ -92,6 +92,8 @@ use Spatie\Translatable\HasTranslations;
  * @method static Builder<static>|NotificationTemplate whereVariables($value)
  * @method static Builder<static>|NotificationTemplate whereVersion($value)
  *
+ * @property-read array<int, string> $translatable_columns_from
+ *
  * @mixin \Eloquent
  */
 class NotificationTemplate extends BaseModel implements HasMedia

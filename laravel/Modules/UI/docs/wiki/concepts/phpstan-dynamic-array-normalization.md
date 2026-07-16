@@ -1,3 +1,23 @@
+---
+title: "PHPStan Dynamic Array Normalization"
+type: concept
+tags: [phpstan, dynamic, array, normalization]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-dynamic-array-normalization phpstan dynamic array normalization"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./auth-register-focus-loss-overlay.md"
+  - "./block-rendering-and-optional-services.md"
+  - "./claude-audit-static.md"
+  - "./code-redundancy-ui.md"
+  - "./context-overflow-prevention.md"
+  - "./enum-select-best-practices.md"
+  - "./enum-select-component.md"
+  - "./enum-select-contract-and-false-friends.md"
+---
+
 # PHPStan Dynamic Array Normalization
 
 ## Scopo

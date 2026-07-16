@@ -14,22 +14,19 @@ use Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter;
 use Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRoutes;
 use Mcamara\LaravelLocalization\Middleware\LocaleSessionRedirect;
 use Modules\Cms\Http\Middleware\SetFolioLocale;
-use Modules\Tenant\Services\TenantService;
+use Modules\Tenant\Actions\Config\ResolveTenantConfigValueAction;
 use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Facades\Module;
+use Webmozart\Assert\Assert;
 
 use function Safe\realpath;
-
-use Webmozart\Assert\Assert;
 
 class FolioVoltServiceProvider extends ServiceProvider
 {
     /**
      * Register services.
      */
-    public function register(): void
-    {
-    }
+    public function register(): void {}
 
     /**
      * Bootstrap services.
@@ -53,7 +50,7 @@ class FolioVoltServiceProvider extends ServiceProvider
                 // con la risoluzione di "env" come classe. Usiamo array vuoto come fallback.
                 $base_middleware = [];
             } else {
-                $middleware = TenantService::config('middleware');
+                $middleware = app(ResolveTenantConfigValueAction::class)->execute('middleware');
                 if (is_array($middleware)) {
                     $base_middleware = Arr::get($middleware, 'base', []);
                     if (! is_array($base_middleware)) {

@@ -1,7 +1,12 @@
 ---
-module: theme
-topic: getting-started
-canonical: ../../../Themes/docs/shared-components/.gitkeep
+title: "Getting Started"
+module: "Tenant"
+type: concept
+tags: [getting, started]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "getting started"
+related:
+  - "./phpstan-corrections-january.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep

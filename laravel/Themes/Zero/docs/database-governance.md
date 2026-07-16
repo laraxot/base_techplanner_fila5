@@ -1,3 +1,15 @@
+---
+title: "Documentation"
+type: guide
+tags: ['permission']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "documentation"
+related:
+  - "./00-INDEX.md"
+  - "./00-index.md"
+---
+
 ## migrazioni allineate con laraxot
 
 - ogni tabella del dominio utente deve essere creata/manutenuta da **una sola** migration per modulo  

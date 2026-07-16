@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Notify\Actions\SMS;
 
+use Spatie\QueueableAction\QueueableAction;
+
 use function Safe\preg_split;
 
 /**
@@ -11,6 +13,8 @@ use function Safe\preg_split;
  */
 class FormatSmsMessageAction
 {
+    use QueueableAction;
+
     /**
      * @return array{0: string, 1: int, 2: int}
      */

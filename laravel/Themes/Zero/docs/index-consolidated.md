@@ -1,3 +1,15 @@
+---
+title: "Theme Zero Documentation Index"
+type: guide
+tags: ['laravel', 'charts', 'phpstan']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "theme zero documentation index"
+related:
+  - "./00-INDEX.md"
+  - "./00-index.md"
+---
+
 # Theme Zero Documentation Index
 
 **Status**: Theme implementation for Laraxot monolith  

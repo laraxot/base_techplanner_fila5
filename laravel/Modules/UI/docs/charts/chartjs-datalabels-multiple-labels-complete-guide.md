@@ -1,3 +1,20 @@
+---
+title: "Guida Completa: Multiple Labels con chartjs-plugin-datalabels in Filament 5.x (Modulo UI)"
+type: guide
+tags: [chartjs, datalabels, multiple, labels]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "chartjs-datalabels-multiple-labels-complete-guide guida completa: multiple labels con chartjs-plugin-datalabels in filament 5.x (modulo ui)"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./chartjs-plugin-datalabels-filament5.md"
+  - "./export-strategy.md"
+  - "./filament-chart-js-guide.md"
+  - "./server-side-actions.md"
+  - "./shared-hosting-strategy.md"
+---
+
 # Guida Completa: Multiple Labels con chartjs-plugin-datalabels in Filament 5.x (Modulo UI)
 
 **Versione:** 1.0  

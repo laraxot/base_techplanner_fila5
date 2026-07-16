@@ -1,3 +1,23 @@
+---
+title: "Blocks"
+type: concept
+tags: [blocks]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "blocks blocks"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./api-relocated.md"
+  - "./api.md"
+  - "./blocks-relocated.md"
+  - "./carousel-slider.md"
+  - "./changelog.md"
+  - "./chunk.md"
+  - "./ci.md"
+  - "./custom-firm-fields.md"
+---
+
 https://github.com/whitecube/nova-flexible-content
 
 

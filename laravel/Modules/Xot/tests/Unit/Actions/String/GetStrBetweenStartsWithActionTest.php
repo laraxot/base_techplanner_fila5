@@ -3,9 +3,10 @@
 declare(strict_types=1);
 
 use Modules\Xot\Actions\String\GetStrBetweenStartsWithAction;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(Modules\Xot\Tests\TestCase::class);
+uses(TestCase::class);
 
 it('extracts string between markers correctly', function (): void {
     $action = app(GetStrBetweenStartsWithAction::class);

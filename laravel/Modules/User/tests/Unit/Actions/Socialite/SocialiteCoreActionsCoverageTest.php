@@ -15,6 +15,7 @@ use Modules\User\Datas\SocialiteUserAttributesData;
 use Modules\User\Events\InvalidState;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Tests\TestCase;
+use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -67,9 +68,15 @@ test('retrieves oauth user from socialite driver', function (): void {
         $mock->allows(['getEmail' => 'user@example.com']);
     });
 
-    $driver = Mockery::mock();
-    /* @phpstan-ignore-next-line */
-    $driver->shouldReceive('user')->once()->andReturn($oauthUser);
+    $driver = new class($oauthUser)
+    {
+        public function __construct(private SocialiteUserContract $oauthUser) {}
+
+        public function user(): SocialiteUserContract
+        {
+            return $this->oauthUser;
+        }
+    };
 
     Socialite::shouldReceive('driver')->with('github')->andReturn($driver);
 
@@ -85,9 +92,15 @@ test('retrieves oauth user from socialite driver', function (): void {
 test('returns null and dispatches invalid state event when socialite state is invalid', function (): void {
     $exception = new InvalidStateException();
 
-    $driver = Mockery::mock();
-    /* @phpstan-ignore-next-line */
-    $driver->shouldReceive('user')->once()->andThrow($exception);
+    $driver = new class($exception)
+    {
+        public function __construct(private InvalidStateException $exception) {}
+
+        public function user(): never
+        {
+            throw $this->exception;
+        }
+    };
 
     Socialite::shouldReceive('driver')->with('github')->andReturn($driver);
 
@@ -106,7 +119,7 @@ test('returns null and dispatches invalid state event when socialite state is in
 });
 
 test('creates socialite user model with normalized attributes', function (): void {
-    /** @var Modules\Xot\Contracts\UserContract $user */
+    /** @var UserContract $user */
     $user = UserFactory::new()->createOne();
 
     $oauthUser = configureMock(SocialiteUserContract::class, function (MockInterface $mock): void {

@@ -4,8 +4,9 @@ type: memory
 module: Notify
 updated: 2026-05-26
 related:
-  - ../../merge-conflicts-list.md
-  - ../../../../../../docs/wiki/how-to/git-merge-marker-sweep.md
+  - "./phpstan-pest-patterns-.md"
+  - "./phpstan-pest-patterns-1.md"
+  - "./phpstan-pest-patterns.md"
 ---
 
 # Lezioni merge — modulo Notify

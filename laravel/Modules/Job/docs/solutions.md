@@ -1,3 +1,14 @@
+---
+title: "Soluzioni Tecniche - Modulo Job"
+module: "Job"
+type: concept
+tags: [solutions]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "solutions"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 # Soluzioni Tecniche - Modulo Job
 
 ## Problemi Identificati e Soluzioni

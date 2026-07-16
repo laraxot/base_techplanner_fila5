@@ -1,3 +1,23 @@
+---
+title: "FullCalendar Component for Filament"
+type: concept
+tags: [full, calendar]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "full-calendar fullcalendar component for filament"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./address-field-1.md"
+  - "./address-field.md"
+  - "./blade-component-registration.md"
+  - "./filament-usage.md"
+  - "./filament.md"
+  - "./file-upload.md"
+  - "./footer.md"
+  - "./full-calendar-1.md"
+---
+
 # FullCalendar Component for Filament
 
 ## Introduction
@@ -253,7 +273,7 @@ To use the widget in a Blade view:
 
 ## Backlinks and References
 
-- [Ptv Module - Calendar Usage](../../ptv/docs/features/full_calendar.md)
+- [Ptv Module - Calendar Usage](../../ptv/docs/features/full-calendar-1.md)
 - [Official Saade FullCalendar Documentation](https://github.com/saade/filament-fullcalendar)
 - [FullCalendar.io Documentation](https://fullcalendar.io/docs)
 
@@ -513,7 +533,7 @@ To use the widget in a Blade view:
 
 ## Backlinks and References
 
-- [Ptv Module - Calendar Usage](../../ptv/docs/features/full_calendar.md)
+- [Ptv Module - Calendar Usage](../../ptv/docs/features/full-calendar-1.md)
 - [Official Saade FullCalendar Documentation](https://github.com/saade/filament-fullcalendar)
 - [FullCalendar.io Documentation](https://fullcalendar.io/docs)
 

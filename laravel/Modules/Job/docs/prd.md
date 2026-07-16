@@ -1,3 +1,14 @@
+---
+title: "PRD - Job Module (2025-2026 Lean Standard)"
+module: "Job"
+type: concept
+tags: [prd]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "prd"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 # PRD - Job Module (2025-2026 Lean Standard)
 
 ## 1. Problem Statement

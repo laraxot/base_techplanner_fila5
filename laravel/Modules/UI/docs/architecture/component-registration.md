@@ -1,3 +1,18 @@
+---
+title: "Registrazione dei Componenti nei Moduli"
+type: concept
+tags: [component, registration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "component-registration registrazione dei componenti nei moduli"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./filament-pages-structure.md"
+  - "./filament-resources-structure.md"
+  - "./structure.md"
+---
+
 # Registrazione dei Componenti nei Moduli
 
 ## Regola Fondamentale

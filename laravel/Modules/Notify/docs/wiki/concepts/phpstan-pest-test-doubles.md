@@ -6,13 +6,16 @@ created: 2026-06-13
 updated: 2026-07-06
 qmd: "Notify NotificationManager test doubles trait PHPStan Pest mockService"
 issues:
-  - "https://github.com/laraxot/module_fixcity_fila5/issues/52"
 discussions:
-  - "https://github.com/laraxot/module_fixcity_fila5/discussions/53"
 related:
-  - ./testing.md
-  - ../../phpstan-compliance-status.md
-  - ../../../Xot/docs/wiki/concepts/phpstan-pest-bridge-discipline.md
+  - "./claude-audit-static.md"
+  - "./code-redundancy-notify.md"
+  - "./composer-root-minimal-nwidart.md"
+  - "./context-overflow-prevention.md"
+  - "./enum-standards.md"
+  - "./llm-wiki-governance.md"
+  - "./method-name-homonyms.md"
+  - "./module-root-uppercase-folders-archive.md"
 ---
 
 # Notify — test doubles e helper PHPStan

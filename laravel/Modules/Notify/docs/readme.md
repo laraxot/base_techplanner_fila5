@@ -1,3 +1,23 @@
+---
+title: "Modulo Notify - Documentazione"
+type: concept
+tags: [readme]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "readme modulo notify - documentazione"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+  - "./acronym-naming-conventions.md"
+  - "./action-plan-immediate.md"
+---
+
 # Modulo Notify - Documentazione
 
 ## 📚 Overview
@@ -39,7 +59,7 @@ Supporta template dinamici, allegati binari, multi-canale e integrazione complet
 ### Guide Complete
 
 #### Email System
-- **[Email Attachments Usage](./email-sending/attachments_usage.md)** ⭐  
+- **[Email Attachments Usage](./email-sending/attachments-usage-2.md)** ⭐  
   Guida completa agli allegati email (path e binary data)
 
 - **[Spatie Mail Templates Deep Dive](./spatie-database-mail-templates-deep-dive.md)**  
@@ -49,14 +69,14 @@ Supporta template dinamici, allegati binari, multi-canale e integrazione complet
   Best practices layout email
 
 #### Notifications
-- **[Notifications Implementation Guide](./notifications/notifications_implementation_guide.md)**  
+- **[Notifications Implementation Guide](./notifications/notifications_implementation-guide-1.md)**  
   Come implementare notifiche custom
 
 - **[RecordNotification Usage](./notifications/record-notification.md)**  
   Notifiche basate su record Eloquent
 
 #### SMS & WhatsApp
-- **[WhatsApp Provider Architecture](./whatsapp_provider_architecture.md)**  
+- **[WhatsApp Provider Architecture](./whatsapp-provider-architecture-2.md)**  
   Architettura provider WhatsApp
 
 ---
@@ -93,7 +113,7 @@ Modules/Notify/
 └── docs/                                 # Documentazione
     ├── README.md                         ⭐ QUESTO FILE
     ├── email-sending/
-    │   └── attachments_usage.md
+    │   └── attachments-usage-2.md
     └── notifications/
         └── record-notification.md
 ```
@@ -264,7 +284,7 @@ Notification::route('mail', 'to@example.com')->notify($notify);
 - [Email Troubleshooting](./email-sending/EMAIL_TROUBLESHOOTING.md)
 
 #### Notifications
-- [Notifications Implementation Guide](./notifications/notifications_implementation_guide.md)
+- [Notifications Implementation Guide](./notifications/notifications_implementation-guide-1.md)
 - [Notification Management Business Logic](./notifications/notification-management-business-logic.md)
 
 ---

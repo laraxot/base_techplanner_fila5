@@ -1,3 +1,15 @@
+---
+title: "Theme Architecture and Best Practices"
+type: pattern
+tags: ['laravel', 'testing', 'phpstan']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "theme architecture and best practices"
+related:
+  - "./00-INDEX.md"
+  - "./00-index.md"
+---
+
 # Theme Architecture and Best Practices
 
 ## Overview

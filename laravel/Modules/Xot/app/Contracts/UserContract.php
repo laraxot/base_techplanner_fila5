@@ -12,6 +12,7 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Database\Eloquent\Relations\Pivot;
 use Illuminate\Support\Carbon;
 use Laravel\Passport\Contracts\OAuthenticatable;
 use Laravel\Passport\PersonalAccessTokenResult;
@@ -25,6 +26,7 @@ use Nwidart\Modules\Laravel\Module;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\Permission\Contracts\Permission;
 use Spatie\Permission\Exceptions\PermissionDoesNotExist;
+use Spatie\Permission\Traits\HasRoles;
 
 /**
  * Modules\Xot\Contracts\UserContract.
@@ -42,6 +44,7 @@ use Spatie\Permission\Exceptions\PermissionDoesNotExist;
  * @property TeamContract              $currentTeam
  * @property ProfileContract|null      $profile
  * @property Collection<int, UserRole> $roles
+ * @property Collection<int, Team>     $membershipTeams
  * @property Collection<int, Team>     $teams
  * @property Collection<int, Tenant>   $tenants
  *
@@ -58,9 +61,7 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      * public function avatar();
      */
     /**
-     * @return HasOne<Model&ProfileContract, $this>
-     *
-     * @phpstan-ignore generics.notSubtype
+     * @return HasOne<Model&ProfileContract, Model&static>
      */
     public function profile(): HasOne;
 
@@ -131,27 +132,23 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     public function roles(): BelongsToMany;
 
     /**
-     * Get the user's teams.
+     * Spatie Permission — team pivot for role scoping ({@see HasRoles::teams()}).
      *
-     * @return BelongsToMany<Model, Model>
+     * @return BelongsToMany<Model, Model&static>
      */
     public function teams(): BelongsToMany;
 
     /**
-     * Get the teams the user belongs to (excluding owned teams).
+     * Laraxot team membership (Jetstream-style pivot).
      *
-     * Aliased from HasTeams::teams() on BaseUser via `use ... { HasTeams::teams as membershipTeams; }`.
-     *
-     * @return BelongsToMany<Model&TeamContract, Model, \Illuminate\Database\Eloquent\Relations\Pivot, 'pivot'>
+     * @return BelongsToMany<Model&TeamContract, Model&static, Pivot, 'pivot'>
      */
     public function membershipTeams(): BelongsToMany;
 
     /**
      * Get the user's tenants.
      *
-     * @return BelongsToMany<Model, $this>
-     *
-     * @phpstan-ignore generics.notSubtype
+     * @return BelongsToMany<Model, Model&static>
      */
     public function tenants(): BelongsToMany;
 

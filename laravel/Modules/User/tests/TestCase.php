@@ -5,12 +5,14 @@ declare(strict_types=1);
 namespace Modules\User\Tests;
 
 use Filament\Actions\Action;
+use Filament\Actions\ActionGroup;
 use Filament\Facades\Filament;
 use Filament\Panel;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Filament\Widgets\Widget;
 use Illuminate\Console\Command;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Collection;
@@ -109,26 +111,7 @@ abstract class TestCase extends XotBaseTestCase
     public ?Collection $users = null;
 
     /** @var list<string> */
-    protected $connectionsToTransact = ['sqlite', 'user'];
-
-    protected function setUp(): void
-    {
-        parent::setUp();
-
-        $database = database_path('fixcity_data.sqlite');
-
-        /** @var array<string, array<string, mixed>> $connections */
-        $connections = config('database.connections', []);
-
-        foreach (array_keys($connections) as $connection) {
-            if ('sqlite' !== config("database.connections.{$connection}.driver")) {
-                continue;
-            }
-
-            $this->app['config']->set("database.connections.{$connection}.database", $database);
-            DB::purge($connection);
-        }
-    }
+    protected $connectionsToTransact = ['mysql', 'user'];
 
     public function setupFilamentAdminPanel(): void
     {
@@ -372,7 +355,7 @@ abstract class TestCase extends XotBaseTestCase
     public function skipUnlessUserSoftDeletes(string $reason = ''): void
     {
         if (! in_array(
-            \Illuminate\Database\Eloquent\SoftDeletes::class,
+            SoftDeletes::class,
             \class_uses_recursive(User::class),
             true
         )) {
@@ -538,7 +521,7 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
-     * @return array<int, Component|Action|\Filament\Actions\ActionGroup>
+     * @return array<int, Component|Action|ActionGroup>
      */
     public function filamentSectionChildComponents(Section $section): array
     {
@@ -551,7 +534,7 @@ abstract class TestCase extends XotBaseTestCase
         $traits = \class_uses_recursive(Team::class);
 
         return in_array(
-            \Illuminate\Database\Eloquent\SoftDeletes::class,
+            SoftDeletes::class,
             $traits,
             true
         );

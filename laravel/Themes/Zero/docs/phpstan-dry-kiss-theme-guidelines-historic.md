@@ -1,3 +1,15 @@
+---
+title: "PHPStan Level 10 + DRY/KISS Guidelines for Themes"
+type: rule
+tags: ['filament', 'laravel', 'permission', 'testing']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan level 10 drykiss guidelines for themes"
+related:
+  - "./00-INDEX.md"
+  - "./00-index.md"
+---
+
 # PHPStan Level 10 + DRY/KISS Guidelines for Themes
 
 ## Theme Code Quality Standards

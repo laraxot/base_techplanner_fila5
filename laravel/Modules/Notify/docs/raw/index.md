@@ -1,3 +1,16 @@
+---
+title: "Raw Sources — Notify"
+type: concept
+tags: [index]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "index raw sources — notify"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./claude-boost-snapshot.md"
+---
+
 # Raw Sources — Notify
 
 Questo layer contiene le fonti grezze: documenti immutabili che l'LLM legge ma non modifica.

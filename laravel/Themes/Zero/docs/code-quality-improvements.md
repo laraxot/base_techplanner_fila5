@@ -1,3 +1,15 @@
+---
+title: "Code Quality Improvements - Zero Theme"
+type: concept
+tags: ['testing', 'phpstan']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "code quality improvements - zero theme"
+related:
+  - "./00-INDEX.md"
+  - "./00-index.md"
+---
+
 # Code Quality Improvements - Zero Theme
 
 ## Overview

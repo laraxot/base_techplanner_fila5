@@ -1,3 +1,16 @@
+---
+title: "Accessibilita e standard cross-browser"
+type: rule
+tags: ['testing']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "accessibilita e standard cross-browser"
+related:
+  - "./accessibility-standards.md"
+  - "./advanced-features.md"
+  - "./component-library.md"
+---
+
 # Accessibilita e standard cross-browser
 
 ## Obiettivo

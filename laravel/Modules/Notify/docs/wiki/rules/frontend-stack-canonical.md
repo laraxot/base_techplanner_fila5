@@ -3,6 +3,7 @@ title: frontend stack canonico — notify module stub
 type: rule
 module: Notify
 updated: 2026-06-03
+related:
 ---
 
 # Stack frontend — modulo Notify

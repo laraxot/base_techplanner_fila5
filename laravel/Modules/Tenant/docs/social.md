@@ -1,7 +1,12 @@
 ---
-module: theme
-topic: social
-canonical: ../../../Themes/docs/shared-components/.gitkeep
+title: "Social"
+module: "Tenant"
+type: concept
+tags: [social]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "social"
+related:
+  - "./phpstan-corrections-january.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep

@@ -1,3 +1,14 @@
+---
+title: "PHPStan Level 10 Roadmap - Job Module"
+module: "Job"
+type: concept
+tags: [phpstan]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 # PHPStan Level 10 Roadmap - Job Module
 
 **Status**: ✅ Completato

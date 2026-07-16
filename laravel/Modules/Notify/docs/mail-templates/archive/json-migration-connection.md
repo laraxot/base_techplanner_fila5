@@ -1,3 +1,23 @@
+---
+title: "Connessione Database nelle Migrazioni JSON"
+type: concept
+tags: [json, migration, connection]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "json-migration-connection connessione database nelle migrazioni json"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./email-best-practices.md"
+  - "./email-layouts-best-practices.md"
+  - "./email-templates-best-practices.md"
+  - "./email-templates-guide.md"
+  - "./email-templates-update.md"
+  - "./filament-slug-generation.md"
+  - "./filament-ui-enhancements.md"
+  - "./html-email-compatibility.md"
+---
+
 # Connessione Database nelle Migrazioni JSON
 
 ## Importanza della Connessione Corretta
@@ -64,7 +84,7 @@ if ($this->hasColumn('subject') && !$this->isColumnType('subject', 'json')) {
 
 ## Documentazione Correlata
 
-- [XotBaseMigration Best Practices](./xotbasemigration_best_practices.md)
-- [JSON Migration Fixes](./json_migration_fixes.md)
-- [Migration Structure](./migration_structure.md)
-- [Mail Template Migration Guide](../mail_template_migration_guide.md)
+- [XotBaseMigration Best Practices](./xotbasemigration-best-practices-1.md)
+- [JSON Migration Fixes](./json-migration-fixes-1.md)
+- [Migration Structure](./migration-structure-1.md)
+- [Mail Template Migration Guide](../mail-template-migration-guide-2.md)

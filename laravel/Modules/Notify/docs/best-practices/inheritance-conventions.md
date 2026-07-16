@@ -1,3 +1,23 @@
+---
+title: "Convenzioni di Ereditarietà"
+type: concept
+tags: [inheritance, conventions]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "inheritance-conventions convenzioni di ereditarietà"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./acronym-naming-conventions.md"
+  - "./filament-naming-conventions.md"
+  - "./filament-template-conventions.md"
+  - "./form-schema-conventions.md"
+  - "./kdown-linking-conventions.md"
+  - "./laravel-path-conventions.md"
+  - "./markdown-linking-conventions.md"
+  - "./naming-conventions.md"
+---
+
 # Convenzioni di Ereditarietà
 
 ## Regole Generali

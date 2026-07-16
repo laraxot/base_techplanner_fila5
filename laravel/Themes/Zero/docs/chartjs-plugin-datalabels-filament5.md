@@ -1,3 +1,15 @@
+---
+title: "chartjs-plugin-datalabels with Filament 5 ChartWidget (multiple labels)"
+type: how-to
+tags: ['filament', 'laravel', 'charts']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "chartjs-plugin-datalabels with filament 5 chartwidget multiple labels"
+related:
+  - "./00-INDEX.md"
+  - "./00-index.md"
+---
+
 # chartjs-plugin-datalabels with Filament 5 ChartWidget (multiple labels)
 
 ## Scope

@@ -8,7 +8,8 @@ qmd: "istruzioni agenti LLM wiki modulo"
 issues: []
 discussions: []
 related:
-  - ./coding-agent-manifests.md
+  - "./index.md"
+  - "./log.md"
 ---
 
 # Notify {{TYPE^}} LLM Wiki Agent Instructions

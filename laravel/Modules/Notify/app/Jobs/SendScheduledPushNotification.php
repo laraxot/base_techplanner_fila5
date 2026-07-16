@@ -12,7 +12,7 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Log;
-use Modules\Notify\Services\PushNotificationService;
+use Modules\Notify\Actions\Push\SendPushToDevicesAction;
 use Throwable;
 use Webmozart\Assert\Assert;
 
@@ -33,7 +33,7 @@ class SendScheduledPushNotification implements ShouldQueue
     /**
      * Execute the job.
      */
-    public function handle(PushNotificationService $pushService): void
+    public function handle(SendPushToDevicesAction $sendPushToDevicesAction): void
     {
         try {
             // Recupera dati notifica programmata
@@ -64,7 +64,7 @@ class SendScheduledPushNotification implements ShouldQueue
             /** @var array<string, mixed> $data */
             $data = $rawData;
 
-            $result = $pushService->sendToDevices(
+            $result = $sendPushToDevicesAction->execute(
                 $tokens,
                 $notification,
                 $data

@@ -1,3 +1,14 @@
+---
+title: "Task: Aumentare Copertura Test - Job"
+module: "Job"
+type: concept
+tags: [task, aumentare, copertura, test]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "task aumentare copertura test"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 # Task: Aumentare Copertura Test - Job
 
 **Modulo**: Job

@@ -1,3 +1,23 @@
+---
+title: "Convenzioni per la Struttura dei DTO nel Modulo Notify"
+type: concept
+tags: [dto, structure, conventions]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "dto-structure-conventions convenzioni per la struttura dei dto nel modulo notify"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./config-structure.md"
+  - "./document-root-architecture.md"
+  - "./dto-structure-rules.md"
+  - "./interface-structure-clarification.md"
+  - "./mail-templates-structure.md"
+  - "./queueable-action-pattern.md"
+  - "./sms-config-structure.md"
+  - "./standardized-sms-config-structure.md"
+---
+
 # Convenzioni per la Struttura dei DTO nel Modulo Notify
 
 ## Introduzione

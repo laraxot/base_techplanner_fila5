@@ -8,7 +8,14 @@ qmd: "istruzioni agenti LLM wiki modulo"
 issues: []
 discussions: []
 related:
-  - ./coding-agent-manifests.md
+  - "./2-1-1-plan.md"
+  - "./2-1-context.md"
+  - "./ai-agent-lessons-learned.md"
+  - "./ai-skills-and-plugins-complete.md"
+  - "./commit-message.md"
+  - "./configuration.md"
+  - "./design-comuni-bmad-master-plan.md"
+  - "./docs-governance.md"
 ---
 
 # FixCity Platform - AGENTS.md
@@ -1692,9 +1699,9 @@ gh run list --limit 10
 
 ### Resources
 
-- **[docs/MULTI_AGENT_COLLABORATION.md](docs/MULTI_AGENT_COLLABORATION.md)** - Complete guide
+- **[docs/multi-agent-collaboration.md](docs/multi-agent-collaboration.md)** - Complete guide
 - **[Issue #12](https://github.com/laraxot/base_fixcity_fila5/issues/12)** - AI Agent Collaboration
-- **[docs/AI_AGENT_TEAMS.md](docs/AI_AGENT_TEAMS.md)** - Team organization
+- **[docs/ai-agent-teams.md](docs/ai-agent-teams.md)** - Team organization
 
 ### Success Story: 2026-03-13 Sync Fix
 
@@ -1784,13 +1791,13 @@ git push origin dev
 - Other AI agents can't see unpushed changes
 - Working code ≠ saved code until pushed
 
-**REFERENCE**: [Git Commit & Push Rule](docs/GIT_COMMIT_PUSH_RULE.md)
+**REFERENCE**: [Git Commit & Push Rule](docs/git-commit-push-rule.md)
 
 ### Documentation Resources
 
-- [Master Documentation Index](docs/MASTER_DOCUMENTATION_INDEX.md)
-- [Documentation Governance](docs/DOCUMENTATION_GOVERNANCE.md)
-- [Documentation Improvement Plan](docs/DOCUMENTATION_ANALYSIS_AND_IMPROVEMENT_PLAN.md)
+- [Master Documentation Index](docs/MASTER_documentation-index.md)
+- [Documentation Governance](docs/documentation-governance.md)
+- [Documentation Improvement Plan](docs/documentation-analysis-and-improvement-plan.md)
 
 ---
 

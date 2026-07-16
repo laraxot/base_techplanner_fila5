@@ -1,3 +1,14 @@
+---
+title: "Correzioni PHPStan Livello 10 - Modulo Job"
+module: "Job"
+type: concept
+tags: [phpstan, correzioni]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan correzioni"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 # Correzioni PHPStan Livello 10 - Modulo Job
 **Errori iniziali**: 31  
 **Errori finali**: 0  

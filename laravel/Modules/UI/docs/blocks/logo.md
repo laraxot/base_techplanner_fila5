@@ -1,3 +1,19 @@
+---
+title: "Logo Component"
+type: concept
+tags: [logo]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "logo logo component"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./correct-filament-components.md"
+  - "./filament-component-integration.md"
+  - "./navigation.md"
+  - "./user-dropdown.md"
+---
+
 # Logo Component
 
 This document describes the Logo component used in section headers and its proper implementation.

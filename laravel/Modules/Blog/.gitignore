@@ -1,24 +1,36 @@
+# Auto-generated forbidden paths — do not edit manually
+# Reason: root cleanup policy (see docs/wiki/rules/root-cleanup-policy.md)
+
+bashscripts
+_bmad-output
+.circleci
+.claude-audit
+.devcontainer
+_docs
+docs/archive
+docs/archived
+docs/legacy
+docs/workbench
+.kilocode
+.kiro
+.ralph
+scripts
+test-results
+tests/.claude-audit
 # ==============================================
 # DEPENDENCIES
-# ==============================================
 /vendor/
 *.phar
 node_modules/
 package-lock.json
 /docs/package-lock.json
-
-# ==============================================
 # ENV & SECRETS
-# ==============================================
 .env
 storage/*.key
 Homestead.yaml
 Homestead.json
 /.vagrant
-
-# ==============================================
 # LARAVEL / LUMEN RUNTIME
-# ==============================================
 bootstrap/compiled.php
 app/storage/
 public/storage
@@ -28,10 +40,7 @@ public_html/hot
 build
 build/docs/cache/
 cache/
-
-# ==============================================
 # CACHES & LOGS
-# ==============================================
 *.cache
 *.log
 npm-debug.log
@@ -41,15 +50,9 @@ yarn-error.log
 .git-rewrite/
 .git-blame-ignore-revs
 *.lock
-
-# ==============================================
 # PHPSTAN / DOCS CACHE
-# ==============================================
 docs/phpstan/
-
-# ==============================================
 # BACKUP / MERGE RESIDUE (never commit)
-# ==============================================
 *.old
 *.old1
 *.backup
@@ -61,32 +64,10 @@ docs/phpstan/
 *~LOCAL
 *~REMOTE
 *~head
-
-# ==============================================
 # PROJECT SCRATCH
-# ==============================================
 lang/lang/
-_docs/
 agentdb.rvf
 tests/AuditCoverage
-
-# ==============================================
 # AI / TOOL SCAFFOLD — must never exist in the module tree
 # (see docs/module-root-hygiene.md and
 #  docs/wiki/rules/module-theme-root-cleanup.md)
-# ==============================================
-scripts/
-bashscripts/
-docs/archive/
-docs/archived/
-docs/legacy/
-docs/workbench/
-.circleci/
-.claude-audit/
-tests/.claude-audit/
-_bmad-output/
-test-results/
-.devcontainer/
-.kilocode/
-.kiro/
-.ralph/

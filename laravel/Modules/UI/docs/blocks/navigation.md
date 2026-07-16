@@ -1,3 +1,19 @@
+---
+title: "Navigation Component"
+type: concept
+tags: [navigation]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "navigation navigation component"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./correct-filament-components.md"
+  - "./filament-component-integration.md"
+  - "./logo.md"
+  - "./user-dropdown.md"
+---
+
 # Navigation Component
 
 This document describes the Navigation component used in section headers and its proper implementation.

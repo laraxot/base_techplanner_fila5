@@ -1,3 +1,23 @@
+---
+title: "AVVISO IMPORTANTE ([DATE])"
+type: concept
+tags: [paths, assets]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "paths-and-assets avviso importante ([date])"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./04-datas.md"
+  - "./advanced-form-components-1.md"
+  - "./advanced-form-components.md"
+  - "./agent-confidence-discipline.md"
+  - "./agent-confidence-protocol.md"
+  - "./agent-edit-discipline.md"
+---
+
 # AVVISO IMPORTANTE ([DATE])
 
 > **ATTENZIONE:** Tutti i componenti UI condivisi (come `logo.blade.php`) devono essere SEMPRE posizionati in `Modules/UI/resources/views/components/ui/` e MAI in `resources/views/components/`. Qualsiasi violazione di questa regola causa errori di rendering, override errati, problemi di modularità e manutenzione.

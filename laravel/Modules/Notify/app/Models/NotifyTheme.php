@@ -76,7 +76,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  *
  * @property-read ProfileContract|null $deleter
  *
-
+ * @mixin Eloquent
  */
 class NotifyTheme extends BaseModel
 {

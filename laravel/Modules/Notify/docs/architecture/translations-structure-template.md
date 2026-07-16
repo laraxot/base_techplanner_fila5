@@ -1,3 +1,23 @@
+---
+title: "Template di Struttura per le Traduzioni"
+type: concept
+tags: [translations, structure, template]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "translations-structure-template template di struttura per le traduzioni"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./config-structure.md"
+  - "./document-root-architecture.md"
+  - "./dto-structure-conventions.md"
+  - "./dto-structure-rules.md"
+  - "./interface-structure-clarification.md"
+  - "./mail-templates-structure.md"
+  - "./queueable-action-pattern.md"
+  - "./sms-config-structure.md"
+---
+
 # Template di Struttura per le Traduzioni
 
 ## Struttura Generale per i File di Traduzione

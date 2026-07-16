@@ -1,3 +1,21 @@
+---
+title: "Guida all'Implementazione delle Notifiche"
+type: guide
+tags: [notifications, implementation, guide]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "notifications-implementation-guide guida all'implementazione delle notifiche"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./errori-comuni-da-evitare.md"
+  - "./multi-channel-notifications.md"
+  - "./netfun-sms-implementation.md"
+  - "./sms-implementation-details.md"
+  - "./sms-provider-configuration.md"
+  - "./telegram-notifications-guide.md"
+---
+
 # Guida all'Implementazione delle Notifiche 
 
 Questa documentazione descrive come implementare correttamente le notifiche utilizzando Laravel Notifications nel modulo Notify.
@@ -158,6 +176,6 @@ public function toMail(object $notifiable): \Illuminate\Mail\Mailable
 
 ## Collegamenti alla Documentazione Correlata
 
-- [ATTACHMENTS_USAGE.md](../email-sending/attachments_usage.md)
-- [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/email_layouts_best_practices.md)
-- [EMAIL_TROUBLESHOOTING.md](../email-sending/email_troubleshooting.md)
+- [ATTACHMENTS_USAGE.md](../email-sending/attachments-usage-2.md)
+- [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/email-layouts-best-practices-1.md)
+- [EMAIL_TROUBLESHOOTING.md](../email-sending/email-troubleshooting-2.md)

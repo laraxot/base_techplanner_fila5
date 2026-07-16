@@ -4,11 +4,12 @@ declare(strict_types=1);
 
 use Illuminate\Support\Collection;
 use Modules\Xot\Actions\Cast\SafeArrayCastAction;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\fopen;
 
-uses(Modules\Xot\Tests\TestCase::class);
+uses(TestCase::class);
 
 it('casts various values to array correctly', function (): void {
     $action = app(SafeArrayCastAction::class);

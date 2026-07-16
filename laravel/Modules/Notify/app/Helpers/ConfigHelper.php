@@ -136,6 +136,7 @@ class ConfigHelper
      */
     private static function recursiveReplace(array $data, array $variables): array
     {
+        /** @var array<string, mixed> $result */
         $result = [];
 
         foreach ($data as $key => $value) {

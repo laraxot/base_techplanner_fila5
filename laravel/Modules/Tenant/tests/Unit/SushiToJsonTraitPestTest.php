@@ -14,7 +14,6 @@ use function Safe\json_encode;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-    /** @var TestCase $this */
     $this->testDirectory = storage_path('tests/sushi-json');
     $this->testJsonPath = $this->testDirectory.'/test_sushi.json';
 
@@ -24,28 +23,24 @@ beforeEach(function (): void {
 });
 
 afterEach(function (): void {
-    /** @var TestCase $this */
     if (File::exists($this->testJsonPath)) {
         File::delete($this->testJsonPath);
     }
 });
 
 it('uses isolated json path in testing environment', function (): void {
-    /** @var TestCase $this */
     $path = $this->sushiModel()->getJsonFile();
 
     Assert::assertSame($this->testJsonPath, $path);
 });
 
 it('returns empty rows when json file is missing', function (): void {
-    /** @var TestCase $this */
     $rows = $this->sushiModel()->getSushiRows();
 
     Assert::assertSame([], $rows);
 });
 
 it('loads rows from valid json file', function (): void {
-    /** @var TestCase $this */
     $payload = [
         '1' => [
             'id' => 1,
@@ -67,7 +62,6 @@ it('loads rows from valid json file', function (): void {
 });
 
 it('throws when json file is not an array', function (): void {
-    /** @var TestCase $this */
     File::put($this->testJsonPath, json_encode('not-an-array'));
 
     assertTenantThrows(

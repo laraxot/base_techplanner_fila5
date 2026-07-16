@@ -1,7 +1,12 @@
 ---
-module: theme
-topic: filament-resources
-canonical: ../../../Themes/docs/shared-components/.gitkeep
+title: "Filament Resources"
+module: "Tenant"
+type: concept
+tags: [filament, resources]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament resources"
+related:
+  - "./phpstan-corrections-january.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep

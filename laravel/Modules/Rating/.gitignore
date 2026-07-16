@@ -1,3 +1,22 @@
+# Auto-generated forbidden paths — do not edit manually
+# Reason: root cleanup policy (see docs/wiki/rules/root-cleanup-policy.md)
+
+bashscripts
+_bmad-output
+.circleci
+.claude-audit
+.devcontainer
+_docs
+docs/archive
+docs/archived
+docs/legacy
+docs/workbench
+.kilocode
+.kiro
+.ralph
+scripts
+test-results
+tests/.claude-audit
 *.jar
 *.log
 *.lock
@@ -14,13 +33,11 @@ node_modules/
 error_log
 .phpintel
 /.idea
-
 *.stackdump
 *.cache
 *.bakup
 *.old
 *.old1
-
 node_modules
 .git-blame-ignore-revs
 vendor
@@ -28,19 +45,14 @@ build/
 docs/cache/
 cache/
 *:Zone.Identifier
-
 # Backup files
 *.bak
 *.backup
 *.backup.*
-
 # PHPStan documentation
 docs/phpstan/
 lang/lang/
-_docs/
-
 # Second brain: no-docs-archive (wiki) — non tracciare albero legacy docs/archive/
-docs/archive/
 # Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
 *~HEAD
 *~BASE
@@ -49,26 +61,7 @@ docs/archive/
 *.orig
 *.rej
 *~head
-
 agentdb.rvf
 tests/AuditCoverage
-
 # AI/TOOL SCAFFOLD — must never exist in module tree (see docs/wiki/rules/module-theme-root-cleanup.md)
-scripts/
-bashscripts/
-docs/archived/
-docs/legacy/
-docs/workbench/
-.circleci/
-.claude-audit/
-tests/.claude-audit/
-_bmad-output/
-test-results/
-.devcontainer/
-.kilocode/
-.kiro/
-.ralph/
-
 # Logs and lock markers
-*.log
-*.lock

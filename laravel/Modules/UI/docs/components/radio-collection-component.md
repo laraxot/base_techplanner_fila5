@@ -1,3 +1,23 @@
+---
+title: "RadioCollection Component: Analisi Ontologica e Fenomenologica"
+type: concept
+tags: [radio, collection, component]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "radio-collection-component radiocollection component: analisi ontologica e fenomenologica"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./address-field-1.md"
+  - "./address-field.md"
+  - "./blade-component-registration.md"
+  - "./filament-usage.md"
+  - "./filament.md"
+  - "./file-upload.md"
+  - "./footer.md"
+  - "./full-calendar-1.md"
+---
+
 # RadioCollection Component: Analisi Ontologica e Fenomenologica
 
 ## 🎭 Filosofia & Epistemologia del Componente

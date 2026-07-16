@@ -1,3 +1,17 @@
+---
+title: "🎨 Semantic HTML & CSS - Best Practices"
+type: concept
+tags: [semantic, html, css]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "semantic-html-css 🎨 semantic html & css - best practices"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./reusable-components-philosophy.md"
+---
+
 # 🎨 Semantic HTML & CSS - Best Practices
 
 **Path**: `.agents/docs/guidelines/semantic-html-css.md`  
@@ -289,9 +303,9 @@ Semantic HTML **REDUCES** need for ARIA:
 ## 🔗 Related Documentation
 
 ### AI Agents Docs
-- **[Guidelines Index](00-INDEX.md)** - All guidelines
+- **[Guidelines Index](00-index-1.md)** - All guidelines
 - **[Reusable Components](reusable-components-philosophy.md)** - DRY+KISS
-- **[Rules Index](../rules/00-INDEX.md)** - All rules
+- **[Rules Index](../rules/00-index-1.md)** - All rules
 
 ### External Resources
 - **[Maintainable CSS](https://maintainablecss.com/chapters/semantics/)** - Source material

@@ -1,3 +1,23 @@
+---
+title: "Gestione Conversioni JSON nelle Migrazioni"
+type: concept
+tags: [migration, json, conversion]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migration-json-conversion gestione conversioni json nelle migrazioni"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./email-best-practices.md"
+  - "./email-layouts-best-practices.md"
+  - "./email-templates-best-practices.md"
+  - "./email-templates-guide.md"
+  - "./email-templates-update.md"
+  - "./filament-slug-generation.md"
+  - "./filament-ui-enhancements.md"
+  - "./html-email-compatibility.md"
+---
+
 # Gestione Conversioni JSON nelle Migrazioni
 
 ## Problema Comune

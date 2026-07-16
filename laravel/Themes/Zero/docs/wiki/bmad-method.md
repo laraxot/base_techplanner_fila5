@@ -1,3 +1,16 @@
+---
+title: "BMAD Method v6.3 operativo nel progetto"
+type: guide
+tags: ['testing', 'phpstan']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "bmad method v63 operativo nel progetto"
+related:
+  - "./SCHEMA.md"
+  - "./bmad-method.md"
+  - "./log.md"
+---
+
 # BMAD Method v6.3 operativo nel progetto
 
 ## Regola pratica

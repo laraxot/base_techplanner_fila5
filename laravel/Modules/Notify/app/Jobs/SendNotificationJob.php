@@ -37,7 +37,7 @@ class SendNotificationJob implements ShouldQueue
      * @param  Model  $recipient  Il destinatario della notifica
      * @param  string  $templateCode  Il codice del template da utilizzare
      * @param  array<string, mixed>  $data  I dati per compilare il template
-     * @param  array<int, string>  $channels  I canali da utilizzare
+     * @param  list<string>  $channels  I canali da utilizzare
      * @param  array<string, mixed>  $options  Opzioni aggiuntive per l'invio
      */
     public function __construct(

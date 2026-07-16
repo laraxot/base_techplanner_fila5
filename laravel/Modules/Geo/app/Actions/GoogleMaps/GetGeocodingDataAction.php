@@ -11,15 +11,19 @@ use Modules\Geo\Datas\Geocoding\GeocodingData;
 
 use function Safe\json_decode;
 
+use Spatie\QueueableAction\QueueableAction;
+
 /**
  * Action per ottenere i dati di geocodifica da Google Maps.
  */
-readonly class GetGeocodingDataAction
+class GetGeocodingDataAction
 {
+    use QueueableAction;
+
     private const API_URL = 'https://maps.googleapis.com/maps/api/geocode/json';
 
     public function __construct(
-        private Client $client,
+        private readonly Client $client,
     ) {
     }
 

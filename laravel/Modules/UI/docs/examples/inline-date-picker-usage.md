@@ -1,3 +1,16 @@
+---
+title: "Esempi di Utilizzo di InlineDatePicker"
+type: concept
+tags: [inline, date, picker, usage]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "inline-date-picker-usage esempi di utilizzo di inlinedatepicker"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./table-layout-implementation-example.md"
+---
+
 # Esempi di Utilizzo di InlineDatePicker
 
 ## Esempio 1: Prenotazione Appuntamenti Medici

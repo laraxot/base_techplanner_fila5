@@ -1,3 +1,23 @@
+---
+title: "Chiarimento sulle Convenzioni di Traduzione nel Modulo Notify"
+type: concept
+tags: [translation, conventions, clarification]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "translation-conventions-clarification chiarimento sulle convenzioni di traduzione nel modulo notify"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./acronym-naming-conventions.md"
+  - "./filament-naming-conventions.md"
+  - "./filament-template-conventions.md"
+  - "./form-schema-conventions.md"
+  - "./inheritance-conventions.md"
+  - "./kdown-linking-conventions.md"
+  - "./laravel-path-conventions.md"
+  - "./markdown-linking-conventions.md"
+---
+
 # Chiarimento sulle Convenzioni di Traduzione nel Modulo Notify
 
 ## Identificazione di Convenzioni Contrastanti
@@ -87,6 +107,6 @@ Il file `send_whats_app.php` e altri file simili nel modulo Notify seguono corre
 
 ## Riferimenti
 
-- [Convenzioni Generali di Traduzione](../../lang/docs/translation_keys_rules.md)
-- [Convenzioni Specifiche del Modulo Notify](./translation_conventions.md)
-- [Regole per le Chiavi di Traduzione](../../lang/docs/translation_keys_best_practices.md)
+- [Convenzioni Generali di Traduzione](../../lang/docs/translation-keys-rules-1.md)
+- [Convenzioni Specifiche del Modulo Notify](./translation-conventions-2.md)
+- [Regole per le Chiavi di Traduzione](../../lang/docs/translation-keys-best-practices-1.md)

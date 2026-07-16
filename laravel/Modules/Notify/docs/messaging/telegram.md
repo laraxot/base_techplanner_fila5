@@ -1,3 +1,17 @@
+---
+title: "Telegram Bot Integration"
+type: concept
+tags: [telegram]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "telegram telegram bot integration"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./sms.md"
+  - "./whatsapp.md"
+---
+
 # Telegram Bot Integration
 
 ## Resources

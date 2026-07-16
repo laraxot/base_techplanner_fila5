@@ -10,17 +10,17 @@
 ### 🏆 Main Documents
 
 1. [**README.md**](../README.md) - Project overview and quick start
-2. [**CONTRIBUTING.md**](../CONTRIBUTING.md) - How to contribute
-3. [**ARCHITECTURE.md**](./ARCHITECTURE.md) - System architecture
-4. [**QUALITY_DASHBOARD.md**](./QUALITY_DASHBOARD.md) - Real-time metrics
+2. [**contributing.md**](../contributing.md) - How to contribute
+3. [**architecture.md**](./architecture.md) - System architecture
+4. [**quality-dashboard.md**](./quality-dashboard.md) - Real-time metrics
 
 ### 📊 Reports & Analysis
 
-5. [**MISSION_ACCOMPLISHED.md**](./MISSION_ACCOMPLISHED.md) - ⭐ Mission completion
-6. [**PROJECT_COMPLETION_CERTIFICATE.md**](./PROJECT_COMPLETION_CERTIFICATE.md) - Official certificate
-7. [**2025_EXCELLENCE_ACHIEVEMENT.md**](./2025_EXCELLENCE_ACHIEVEMENT.md) - Achievement report
-8. [**FINAL_REFACTORING_REPORT.md**](./FINAL_REFACTORING_REPORT.md) - Refactoring summary
-9. [**COMPLETE_REFACTORING_ANALYSIS.md**](./COMPLETE_REFACTORING_ANALYSIS.md) - Detailed analysis
+5. [**mission-accomplished.md**](./mission-accomplished.md) - ⭐ Mission completion
+6. [**project-completion-certificate.md**](./project-completion-certificate.md) - Official certificate
+7. [**2025-excellence-achievement.md**](./2025-excellence-achievement.md) - Achievement report
+8. [**final-refactoring-report.md**](./final-refactoring-report.md) - Refactoring summary
+9. [**COMPLETE_REFACTORING_analysis.md**](./COMPLETE_REFACTORING_analysis.md) - Detailed analysis
 
 ---
 
@@ -37,7 +37,7 @@
 - Module structure
 - Testing guide
 
-### 2. CONTRIBUTING.md
+### 2. contributing.md
 **Purpose:** Contribution guidelines  
 **Audience:** Contributors  
 **Content:**
@@ -48,7 +48,7 @@
 - Commit guidelines
 - PR process
 
-### 3. ARCHITECTURE.md
+### 3. architecture.md
 **Purpose:** System architecture documentation  
 **Audience:** Developers, architects  
 **Content:**
@@ -59,7 +59,7 @@
 - Performance architecture
 - Testing architecture
 
-### 4. QUALITY_DASHBOARD.md
+### 4. quality-dashboard.md
 **Purpose:** Real-time quality metrics  
 **Audience:** Team, stakeholders  
 **Content:**
@@ -70,7 +70,7 @@
 - Module quality scores
 - Trend analysis
 
-### 5. MISSION_ACCOMPLISHED.md ⭐
+### 5. mission-accomplished.md ⭐
 **Purpose:** Mission completion report  
 **Audience:** All stakeholders  
 **Content:**
@@ -81,7 +81,7 @@
 - Value created
 - Timeline
 
-### 6. PROJECT_COMPLETION_CERTIFICATE.md
+### 6. project-completion-certificate.md
 **Purpose:** Official certification  
 **Audience:** Management, clients  
 **Content:**
@@ -92,7 +92,7 @@
 - Skills demonstrated
 - Recognition
 
-### 7. 2025_EXCELLENCE_ACHIEVEMENT.md
+### 7. 2025-excellence-achievement.md
 **Purpose:** Excellence achievement report  
 **Audience:** Team, management  
 **Content:**
@@ -103,7 +103,7 @@
 - Industry impact
 - Future vision
 
-### 8. FINAL_REFACTORING_REPORT.md
+### 8. final-refactoring-report.md
 **Purpose:** Complete refactoring documentation  
 **Audience:** Developers  
 **Content:**
@@ -114,7 +114,7 @@
 - Testing summary
 - Tools used
 
-### 9. COMPLETE_REFACTORING_ANALYSIS.md
+### 9. COMPLETE_REFACTORING_analysis.md
 **Purpose:** Detailed complexity analysis  
 **Audience:** Technical team  
 **Content:**
@@ -154,12 +154,12 @@ Each module has a `docs/` directory containing:
 ## 🎨 Theme Documentation
 
 ### Sixteen Theme
-- [Code Quality Analysis](../Themes/Sixteen/docs/CODE_QUALITY_ANALYSIS.md)
+- [Code Quality Analysis](../Themes/Sixteen/docs/CODE_QUALITY_analysis.md)
 - [README](../Themes/Sixteen/docs/README.md)
 - [Roadmap 2025](../Themes/Sixteen/docs/ROADMAP_2025.md)
 
 ### TwentyOne Theme
-- [Code Quality Analysis](../Themes/TwentyOne/docs/CODE_QUALITY_ANALYSIS.md)
+- [Code Quality Analysis](../Themes/TwentyOne/docs/CODE_QUALITY_analysis.md)
 
 ---
 
@@ -205,26 +205,26 @@ Each module has a `docs/` directory containing:
 
 ### For Developers
 - README.md
-- CONTRIBUTING.md
-- ARCHITECTURE.md
+- contributing.md
+- architecture.md
 - Module documentation
 - Refactoring reports
 
 ### For Management
-- MISSION_ACCOMPLISHED.md
-- PROJECT_COMPLETION_CERTIFICATE.md
-- 2025_EXCELLENCE_ACHIEVEMENT.md
-- QUALITY_DASHBOARD.md
+- mission-accomplished.md
+- project-completion-certificate.md
+- 2025-excellence-achievement.md
+- quality-dashboard.md
 
 ### For Quality Team
-- QUALITY_DASHBOARD.md
+- quality-dashboard.md
 - Cyclomatic Complexity Reports
-- FINAL_REFACTORING_REPORT.md
-- COMPLETE_REFACTORING_ANALYSIS.md
+- final-refactoring-report.md
+- COMPLETE_REFACTORING_analysis.md
 
 ### For New Contributors
 - README.md
-- CONTRIBUTING.md
+- contributing.md
 - Module documentation
 - Code examples
 
@@ -254,23 +254,23 @@ Each module has a `docs/` directory containing:
 ### By Topic
 
 **Architecture & Design:**
-- ARCHITECTURE.md
+- architecture.md
 - Design patterns section
 - Module structure
 
 **Quality & Metrics:**
-- QUALITY_DASHBOARD.md
+- quality-dashboard.md
 - Cyclomatic complexity reports
 - Test coverage reports
 
 **Refactoring:**
-- FINAL_REFACTORING_REPORT.md
-- COMPLETE_REFACTORING_ANALYSIS.md
+- final-refactoring-report.md
+- COMPLETE_REFACTORING_analysis.md
 - Module-specific refactoring docs
 
 **Getting Started:**
 - README.md
-- CONTRIBUTING.md
+- contributing.md
 - Quick start guides
 
 **Testing:**
@@ -361,7 +361,7 @@ All documents include:
 - Outdated content
 
 ### Contributing to Docs
-- Follow CONTRIBUTING.md
+- Follow contributing.md
 - Use proper format
 - Include examples
 - Update index
@@ -388,15 +388,15 @@ All documents include:
 
 ### 2025-10-01
 - ✅ Created INDEX.md
-- ✅ Completed MISSION_ACCOMPLISHED.md
-- ✅ Finalized PROJECT_COMPLETION_CERTIFICATE.md
+- ✅ Completed mission-accomplished.md
+- ✅ Finalized project-completion-certificate.md
 - ✅ Updated all module reports
 - ✅ Enhanced README.md
 
 ### 2025-09-30
-- ✅ Created ARCHITECTURE.md
-- ✅ Created QUALITY_DASHBOARD.md
-- ✅ Created 2025_EXCELLENCE_ACHIEVEMENT.md
+- ✅ Created architecture.md
+- ✅ Created quality-dashboard.md
+- ✅ Created 2025-excellence-achievement.md
 
 ---
 

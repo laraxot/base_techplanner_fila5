@@ -1,3 +1,15 @@
+---
+title: "Zero Theme Documentation Index"
+type: concept
+tags: ['laravel']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "zero theme documentation index"
+related:
+  - "./00-INDEX.md"
+  - "./00-index.md"
+---
+
 # Zero Theme Documentation Index
 
 **Path**: `laravel/Themes/Zero/docs/`  

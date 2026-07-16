@@ -1,3 +1,23 @@
+---
+title: "Componenti UI - Modulo UI"
+type: concept
+tags: [components]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "ui-components componenti ui - modulo ui"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./address-field-1.md"
+  - "./address-field.md"
+  - "./blade-component-registration.md"
+  - "./filament-usage.md"
+  - "./filament.md"
+  - "./file-upload.md"
+  - "./footer.md"
+  - "./full-calendar-1.md"
+---
+
 # Componenti UI - Modulo UI
 
 ## Panoramica

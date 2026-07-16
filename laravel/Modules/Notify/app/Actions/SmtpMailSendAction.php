@@ -4,8 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Notify\Actions;
 
+use Spatie\QueueableAction\QueueableAction;
+
 class SmtpMailSendAction
 {
+    use QueueableAction;
+
     public function execute(string $_to, string $_subject, string $_body): void
     {
         dddx('WIP');

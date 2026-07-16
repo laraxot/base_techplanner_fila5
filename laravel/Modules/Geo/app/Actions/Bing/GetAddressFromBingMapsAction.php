@@ -11,12 +11,15 @@ use Modules\Geo\Datas\Geocoding\AddressData;
 use Modules\Geo\Datas\MapPlatforms\BingMapData;
 use Modules\Geo\Exceptions\InvalidLocationException;
 use Modules\Xot\Actions\Cast\SafeFloatCastAction;
+use Spatie\QueueableAction\QueueableAction;
 
 /**
  * Classe per ottenere l'indirizzo da Bing Maps.
  */
 class GetAddressFromBingMapsAction
 {
+    use QueueableAction;
+
     private const BASE_URL = 'http://dev.virtualearth.net/REST/v1/Locations';
 
     /**

@@ -1,3 +1,23 @@
+---
+title: "PHPStan Level 10 Compliance Status"
+type: concept
+tags: [phpstan, compliance, status]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-compliance-status phpstan level 10 compliance status"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+  - "./acronym-naming-conventions.md"
+  - "./action-plan-immediate.md"
+---
+
 # PHPStan Level 10 Compliance Status
 
 **Last Updated**: 2026-07-06
@@ -89,7 +109,6 @@ Fix applicati in questa sessione:
   rotto `getType()?->getName()` (solo `ReflectionNamedType` ha `getName()`),
   import `Safe\*` mancanti, sintassi corrotta da un refactor automatico
   precedente.
-- Rimossi i probe PHPStan morti (`*PhpstanProbe*`) — vedi
-  `Modules/Xot/docs/wiki/concepts/phpstan-trait-probes.md`.
+- Rimossi i probe PHPStan morti (`*PhpstanProbe*`).
 
 Dettagli completi: `docs/chat/phpstan-notify-module-zero-2026-07-06.md` (root repo).

@@ -42,9 +42,8 @@ class UpdateCoordinatesFromAddressAction
      */
     private Collection $errors;
 
-    public function __construct(
-        private readonly GetAddressDataFromFullAddressAction $getAddressDataAction,
-    ) {
+    public function __construct()
+    {
         $this->errors = new Collection();
     }
 
@@ -70,11 +69,12 @@ class UpdateCoordinatesFromAddressAction
         }
 
         // Esegui geocoding per ottenere i dati dell'indirizzo
-        $addressData = $this->getAddressDataAction->execute($fullAddress);
+        $getAddressDataAction = app(GetAddressDataFromFullAddressAction::class);
+        $addressData = $getAddressDataAction->execute($fullAddress);
 
         if (null === $addressData) {
             // Raccogli errori dal servizio di geocoding
-            $geocodingErrors = $this->getAddressDataAction->getErrors();
+            $geocodingErrors = $getAddressDataAction->getErrors();
             if ($geocodingErrors->isNotEmpty()) {
                 $this->errors->merge($geocodingErrors);
             } else {

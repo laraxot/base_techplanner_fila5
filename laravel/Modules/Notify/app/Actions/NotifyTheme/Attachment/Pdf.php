@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Modules\Notify\Actions\NotifyTheme\Get;
 use Modules\Notify\Datas\AttachmentData;
-use Modules\Xot\Services\HtmlService;
+use Modules\Xot\Actions\Html\HtmlToPdfAction;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
@@ -34,12 +34,7 @@ class Pdf
         Assert::string($file_name, __FILE__.':'.__LINE__.' - '.class_basename(self::class));
         $file_path = Storage::disk('cache')->path($file_name);
 
-        HtmlService::toPdf(
-            filename: $file_path,
-            html: $html,
-            out: 'file',
-            pdforientation: 'P',
-        );
+        app(HtmlToPdfAction::class)->execute($html, 'file', 'P', $file_path);
 
         return AttachmentData::from([
             'path' => $file_path,

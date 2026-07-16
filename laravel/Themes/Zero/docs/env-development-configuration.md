@@ -1,3 +1,15 @@
+---
+title: "Configurazione .env.development - Ambiente di Sviluppo"
+type: rule
+tags: ['filament', 'laravel', 'testing']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "configurazione envdevelopment - ambiente di sviluppo"
+related:
+  - "./00-INDEX.md"
+  - "./00-index.md"
+---
+
 # Configurazione .env.development - Ambiente di Sviluppo
 
 ## Panoramica

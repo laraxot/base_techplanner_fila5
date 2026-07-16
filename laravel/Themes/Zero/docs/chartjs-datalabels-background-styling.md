@@ -1,3 +1,15 @@
+---
+title: "Chart UI/UX Enhancements with Background Styling and Positioning"
+type: concept
+tags: ['charts']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "chart uiux enhancements with background styling and positioning"
+related:
+  - "./00-INDEX.md"
+  - "./00-index.md"
+---
+
 # Chart UI/UX Enhancements with Background Styling and Positioning
 
 ## Overview

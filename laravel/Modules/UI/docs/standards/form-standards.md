@@ -1,3 +1,21 @@
+---
+title: "Standard Form nei Temi"
+type: rule
+tags: [form, standards]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "form-standards standard form nei temi"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./accessibility.md"
+  - "./auth-form-standards-1.md"
+  - "./auth-form-standards.md"
+  - "./form-standards-1.md"
+  - "./performance.md"
+  - "./ui-standards.md"
+---
+
 # Standard Form nei Temi
 
 ## Principi Generali

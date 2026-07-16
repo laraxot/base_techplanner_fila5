@@ -5,7 +5,11 @@ type: concept
 created: "2026-04-29T00:00:00Z"
 updated: "2026-04-29T00:00:00Z"
 related:
-  - "[[UI Operating Model]]"
+  - "./agents.md"
+  - "./bmad-method.md"
+  - "./index.md"
+  - "./log.md"
+  - "./overview.md"
 ---
 
 # Context Compression Setup

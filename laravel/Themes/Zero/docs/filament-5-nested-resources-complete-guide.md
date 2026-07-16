@@ -1,3 +1,15 @@
+---
+title: "🎯 Filament 5.x Nested Resources - Guida Completa 2024"
+type: guide
+tags: ['filament', 'testing']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament 5x nested resources - guida completa 2024"
+related:
+  - "./00-INDEX.md"
+  - "./00-index.md"
+---
+
 # 🎯 Filament 5.x Nested Resources - Guida Completa 2024
 
 ## 📋 **Introduzione a Nested Resources**

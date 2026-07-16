@@ -1,3 +1,23 @@
+---
+title: "Implementazione del Campo `slug` in MailTemplate"
+type: concept
+tags: [slug, field, implementation]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "slug-field-implementation implementazione del campo `slug` in mailtemplate"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./email-best-practices.md"
+  - "./email-layouts-best-practices.md"
+  - "./email-templates-best-practices.md"
+  - "./email-templates-guide.md"
+  - "./email-templates-update.md"
+  - "./filament-slug-generation.md"
+  - "./filament-ui-enhancements.md"
+  - "./html-email-compatibility.md"
+---
+
 # Implementazione del Campo `slug` in MailTemplate
 
 ## Introduzione
@@ -166,6 +186,6 @@ L'implementazione del campo `slug` nella tabella `mail_templates` segue le migli
 
 ## Riferimenti
 
-- [Migration Structure](./migration_structure.md)
-- [Email Templates](../email_templates.md)
-- [Spatie Email Usage Guide](../spatie_email_usage_guide.md)
+- [Migration Structure](./migration-structure-1.md)
+- [Email Templates](../email-templates.md)
+- [Spatie Email Usage Guide](../spatie-email-usage-guide-1.md)

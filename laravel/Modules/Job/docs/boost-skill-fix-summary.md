@@ -1,3 +1,14 @@
+---
+title: "Boost Skill Fix Summary - Job Module"
+module: "Job"
+type: concept
+tags: [boost, skill, fix, summary]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "boost skill fix summary"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 # Boost Skill Fix Summary - Job Module
 
 **Date**: 2026-03-02  

@@ -1,3 +1,14 @@
+---
+title: "Job Module Testing Refactor - The Journey to Zen"
+module: "Job"
+type: concept
+tags: [testing, philosophy, refactor]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "testing philosophy refactor"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 # Job Module Testing Refactor - The Journey to Zen
 
 ## The Problem (Before Refactor)

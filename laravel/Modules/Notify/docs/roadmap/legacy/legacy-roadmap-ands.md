@@ -1,3 +1,18 @@
+---
+title: "Notify Module - Roadmap, Issues & Optimization"
+type: concept
+tags: [legacy, roadmap, ands]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "legacy-roadmap-ands notify module - roadmap, issues & optimization"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./legacy-roadmap-conflict.md"
+  - "./legacy-roadmap-x.md"
+  - "./legacy-roadmap.md"
+---
+
 # Notify Module - Roadmap, Issues & Optimization
 
 **Modulo**: Notify (Multi-Channel Notifications)  

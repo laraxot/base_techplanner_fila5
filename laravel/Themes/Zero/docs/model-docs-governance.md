@@ -1,3 +1,15 @@
+---
+title: "Theme Zero Docs Governance"
+type: guide
+tags: ['theme', 'model-docs-governance']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "theme zero docs governance"
+related:
+  - "./00-INDEX.md"
+  - "./00-index.md"
+---
+
 # Theme Zero Docs Governance
 
 ## Objectives

@@ -1,3 +1,23 @@
+---
+title: "Test di Risoluzione Conflitti nel Modulo UI"
+type: concept
+tags: [test, conflicts, resolution]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "test-conflicts-resolution test di risoluzione conflitti nel modulo ui"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./04-datas.md"
+  - "./advanced-form-components-1.md"
+  - "./advanced-form-components.md"
+  - "./agent-confidence-discipline.md"
+  - "./agent-confidence-protocol.md"
+  - "./agent-edit-discipline.md"
+---
+
 # Test di Risoluzione Conflitti nel Modulo UI
 
 ## Descrizione
@@ -33,8 +53,8 @@ cd laravel
 
 ## Collegamenti alla Documentazione
 
-- [CONFLITTI_MERGE_RISOLTI.md](conflitti_merge_risolti.md): Documentazione dei conflitti risolti nel modulo UI.
-- [actions/table_layout_toggle.md](actions/table_layout_toggle.md): Documentazione dell'azione TableLayoutToggle.
+- [CONFLITTI_MERGE_RISOLTI.md](conflitti-merge-risolti-1.md): Documentazione dei conflitti risolti nel modulo UI.
+- [actions/table-layout-toggle-1.md](actions/table-layout-toggle-1.md): Documentazione dell'azione TableLayoutToggle.
 - [components.md](components.md): Documentazione dei componenti UI, incluso AddressField.
 
 ## Collegamenti Principali
@@ -76,8 +96,8 @@ cd laravel
 
 ## Collegamenti alla Documentazione
 
-- [CONFLITTI_MERGE_RISOLTI.md](conflitti_merge_risolti.md): Documentazione dei conflitti risolti nel modulo UI.
-- [actions/table_layout_toggle.md](actions/table_layout_toggle.md): Documentazione dell'azione TableLayoutToggle.
+- [CONFLITTI_MERGE_RISOLTI.md](conflitti-merge-risolti-1.md): Documentazione dei conflitti risolti nel modulo UI.
+- [actions/table-layout-toggle-1.md](actions/table-layout-toggle-1.md): Documentazione dell'azione TableLayoutToggle.
 - [components.md](components.md): Documentazione dei componenti UI, incluso AddressField.
 
 ## Collegamenti Principali

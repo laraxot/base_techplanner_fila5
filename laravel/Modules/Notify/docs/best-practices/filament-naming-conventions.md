@@ -1,3 +1,23 @@
+---
+title: "Convenzioni di Naming per Filament"
+type: concept
+tags: [filament, naming, conventions]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament-naming-conventions convenzioni di naming per filament"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./acronym-naming-conventions.md"
+  - "./filament-template-conventions.md"
+  - "./form-schema-conventions.md"
+  - "./inheritance-conventions.md"
+  - "./kdown-linking-conventions.md"
+  - "./laravel-path-conventions.md"
+  - "./markdown-linking-conventions.md"
+  - "./naming-conventions.md"
+---
+
 # Convenzioni di Naming per Filament 
 
 Questo documento definisce le convenzioni di naming standardizzate per i componenti Filament nel sistema , con particolare attenzione alle pagine e alle risorse.

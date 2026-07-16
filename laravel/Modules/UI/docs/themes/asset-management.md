@@ -1,3 +1,20 @@
+---
+title: "Gestione degli Asset"
+type: concept
+tags: [asset, management]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "asset-management gestione degli asset"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./asset-management-1.md"
+  - "./compilation.md"
+  - "./components.md"
+  - "./optimizations.md"
+  - "./schemaless-attributes-guide.md"
+---
+
 # Gestione degli Asset
 
 ## Struttura delle Directory

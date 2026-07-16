@@ -1,3 +1,23 @@
+---
+title: "Guida ai Template Email Responsive"
+type: guide
+tags: [email, templates, guide]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "email-templates-guide guida ai template email responsive"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./email-best-practices.md"
+  - "./email-layouts-best-practices.md"
+  - "./email-templates-best-practices.md"
+  - "./email-templates-update.md"
+  - "./filament-slug-generation.md"
+  - "./filament-ui-enhancements.md"
+  - "./html-email-compatibility.md"
+  - "./implementation-notes.md"
+---
+
 # Guida ai Template Email Responsive
 
 Questa guida descrive i template email responsive disponibili nel modulo Notify, la loro struttura e come utilizzarli nelle comunicazioni con gli utenti.
@@ -196,7 +216,7 @@ class SendAppointmentConfirmationAction
 
 ## File Correlati
 
-- [HTML_EMAIL_COMPATIBILITY.md](./html_email_compatibility.md) - Guide sulla compatibilità cross-client
-- [EMAIL_BEST_PRACTICES.md](./email_best_practices.md) - Best practices per email transazionali
-- [RESPONSIVE_EMAIL_TEMPLATES.md](../responsive_email_templates.md) - Guide dettagliate sul design responsive
-- [MAILPACE_TEMPLATES_INTEGRATION.md](./mailpace_templates_integration.md) - Integrazione con template esterni
+- [HTML_EMAIL_COMPATIBILITY.md](./html-email-compatibility-1.md) - Guide sulla compatibilità cross-client
+- [EMAIL_BEST_PRACTICES.md](./email-best-practices-1.md) - Best practices per email transazionali
+- [RESPONSIVE_EMAIL_TEMPLATES.md](../responsive_email-templates.md) - Guide dettagliate sul design responsive
+- [MAILPACE_TEMPLATES_INTEGRATION.md](./mailpace-templates-integration-1.md) - Integrazione con template esterni

@@ -1,3 +1,15 @@
+---
+title: "Zero Theme - Filosofia Completa"
+type: guide
+tags: ['laravel', 'charts', 'pdf', 'permission']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "zero theme - filosofia completa"
+related:
+  - "./00-INDEX.md"
+  - "./00-index.md"
+---
+
 # Zero Theme - Filosofia Completa
 
 **Data Creazione**: 2025-01-18  

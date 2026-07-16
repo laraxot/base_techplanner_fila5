@@ -90,6 +90,7 @@ class AnalyzeTranslationFiles extends Command
      */
     private function flattenArray(array $array, string $prefix = ''): array
     {
+        /** @var array<string, mixed> $result */
         $result = [];
 
         foreach ($array as $key => $value) {

@@ -1,3 +1,14 @@
+---
+title: "Code Coverage: Job"
+module: "Job"
+type: concept
+tags: [coverage]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "coverage"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 # Code Coverage: Job
 
 **Lines Coverage:** N/A (Failed to parse)

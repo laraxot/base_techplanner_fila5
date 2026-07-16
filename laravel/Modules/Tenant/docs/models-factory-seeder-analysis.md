@@ -1,7 +1,12 @@
 ---
-module: theme
-topic: models-factory-seeder-analysis
-canonical: ../../../Themes/docs/shared-components/.gitkeep
+title: "Models Factory Seeder Analysis"
+module: "Tenant"
+type: concept
+tags: [models, factory, seeder, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "models factory seeder analysis"
+related:
+  - "./phpstan-corrections-january.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep

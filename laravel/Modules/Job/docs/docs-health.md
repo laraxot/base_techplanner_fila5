@@ -1,3 +1,14 @@
+---
+title: "Docs Health - Job"
+module: "Job"
+type: concept
+tags: [docs, health]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "docs health"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 # Docs Health - Job
 
 ## Snapshot

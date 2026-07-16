@@ -1,3 +1,15 @@
+---
+title: "UI Module Icon System"
+type: concept
+tags: [icon, system]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "icon-system ui module icon system"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+---
+
 # UI Module Icon System
 
 ## How It Works

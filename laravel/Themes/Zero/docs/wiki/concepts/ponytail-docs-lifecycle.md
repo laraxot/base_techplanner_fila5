@@ -1,3 +1,16 @@
+---
+title: "Ponytail Docs Lifecycle"
+type: concept
+tags: ['theme', 'ponytail-docs-lifecycle']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "ponytail docs lifecycle"
+related:
+  - "./code-redundancy-theme.md"
+  - "./context-overflow-prevention.md"
+  - "./method-name-homonyms.md"
+---
+
 # Ponytail Docs Lifecycle
 
 Theme docs should stay smaller than module docs.

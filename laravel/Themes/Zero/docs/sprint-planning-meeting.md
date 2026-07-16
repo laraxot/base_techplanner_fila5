@@ -1,3 +1,15 @@
+---
+title: "Zero - Sprint Planning Meeting"
+type: guide
+tags: ['testing']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "zero - sprint planning meeting"
+related:
+  - "./00-INDEX.md"
+  - "./00-index.md"
+---
+
 # Zero - Sprint Planning Meeting
 
 > Documento operativo per sprint planning. Tema.
@@ -46,4 +58,4 @@ Spostare **Zero** in avanti sui gap P0/P1 piu' vicini al valore, evitando lavoro
 
 - [Product Strategy](product-strategy.md)
 - [Product Launch Plan](product-launch-plan.md)
-- [Indice centrale](../../../../docs/project/PRODUCT_DOCS_INDEX_2026_03_12.md)
+- [Indice centrale](../../../docs/project/PRODUCT_DOCS_INDEX_2026_03_12.md)

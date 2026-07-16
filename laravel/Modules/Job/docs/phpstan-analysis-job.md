@@ -1,3 +1,14 @@
+---
+title: "PHPStan Analysis - Job Module"
+module: "Job"
+type: concept
+tags: [phpstan, analysis, job]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan analysis job"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 # PHPStan Analysis - Job Module
 
 ## 📊 Status

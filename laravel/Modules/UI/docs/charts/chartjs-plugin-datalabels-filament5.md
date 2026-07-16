@@ -1,3 +1,20 @@
+---
+title: "chartjs-plugin-datalabels with Filament 5 ChartWidget (multiple labels)"
+type: concept
+tags: [chartjs, plugin, datalabels, filament5]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "chartjs-plugin-datalabels-filament5 chartjs-plugin-datalabels with filament 5 chartwidget (multiple labels)"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./chartjs-datalabels-multiple-labels-complete-guide.md"
+  - "./export-strategy.md"
+  - "./filament-chart-js-guide.md"
+  - "./server-side-actions.md"
+  - "./shared-hosting-strategy.md"
+---
+
 # chartjs-plugin-datalabels with Filament 5 ChartWidget (multiple labels)
 
 ## Goal

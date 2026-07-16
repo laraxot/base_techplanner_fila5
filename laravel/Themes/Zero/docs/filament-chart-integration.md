@@ -1,3 +1,15 @@
+---
+title: "Filament Installation and Chart Widget Integration Guide for Zero Theme"
+type: how-to
+tags: ['filament', 'laravel', 'charts', 'testing']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament installation and chart widget integration guide for zero theme"
+related:
+  - "./00-INDEX.md"
+  - "./00-index.md"
+---
+
 # Filament Installation and Chart Widget Integration Guide for Zero Theme
 
 ## Overview

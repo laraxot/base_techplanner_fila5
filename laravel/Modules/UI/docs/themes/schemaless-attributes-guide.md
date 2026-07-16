@@ -1,3 +1,20 @@
+---
+title: "Schemaless Attributes Guide for UI Themes"
+type: guide
+tags: [schemaless, attributes, guide]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "schemaless-attributes-guide schemaless attributes guide for ui themes"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./asset-management-1.md"
+  - "./asset-management.md"
+  - "./compilation.md"
+  - "./components.md"
+  - "./optimizations.md"
+---
+
 # Schemaless Attributes Guide for UI Themes
 
 [![Laravel 12.47.0](https://img.shields.io/badge/Laravel-12.47.0-red.svg)](https://laravel.com/)

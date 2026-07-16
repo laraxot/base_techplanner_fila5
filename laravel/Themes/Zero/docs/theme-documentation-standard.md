@@ -1,3 +1,15 @@
+---
+title: "Theme Documentation Standard"
+type: rule
+tags: ['filament', 'laravel', 'testing']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "theme documentation standard"
+related:
+  - "./00-INDEX.md"
+  - "./00-index.md"
+---
+
 # Theme Documentation Standard
 
 Standard per la documentazione dei temi nell'architettura Laraxot.

@@ -1,7 +1,12 @@
 ---
-module: theme
-topic: sushi-to-csv
-canonical: ../../../../../Themes/docs/shared-components/.gitkeep
+title: "Sushi To Csv"
+module: "Tenant"
+type: concept
+tags: [sushi, csv]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "sushi to csv"
+related:
+  - "./phpstan-corrections-january.md"
 ---
 
-See canonical documentation: ../../../../../Themes/docs/shared-components/.gitkeep

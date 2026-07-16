@@ -13,7 +13,6 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Modules\User\Models\User;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
 use function Safe\strtotime;
 
@@ -24,15 +23,9 @@ use function Safe\strtotime;
  * across List pages in all modules.
  *
  * Usage:
- * ```php
- * public function getTableFilters(): array
- * {
- *     return [
- *         FilterBuilder::activeToggle(),
- *         FilterBuilder::selectFromModel('category', Category::class),
- *     ];
- * }
- * ```
+ *
+ * Use this builder from resource table filter methods to compose common
+ * Filament filters without duplicating filter callbacks.
  */
 class FilterBuilder
 {
@@ -104,11 +97,11 @@ class FilterBuilder
                 return $query
                     ->when(
                         $data['from'] ?? null,
-                        fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '>=', SafeStringCastAction::cast($date)),
+                        fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '>=', is_string($date) ? $date : (string) $date),
                     )
                     ->when(
                         $data['until'] ?? null,
-                        fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '<=', SafeStringCastAction::cast($date)),
+                        fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '<=', is_string($date) ? $date : (string) $date),
                     );
             })
             ->indicateUsing(function (array $data) use ($label): ?string {
@@ -120,20 +113,20 @@ class FilterBuilder
                 }
 
                 if ($from && $until) {
-                    $fromStr = SafeStringCastAction::cast($from);
-                    $untilStr = SafeStringCastAction::cast($until);
+                    $fromStr = is_string($from) ? $from : (string) $from;
+                    $untilStr = is_string($until) ? $until : (string) $until;
 
                     return $label.': '.date('d/m/Y', strtotime($fromStr)).' - '.date('d/m/Y', strtotime($untilStr));
                 }
 
                 if ($from) {
-                    $fromStr = SafeStringCastAction::cast($from);
+                    $fromStr = is_string($from) ? $from : (string) $from;
 
                     return $label.' from: '.date('d/m/Y', strtotime($fromStr));
                 }
 
                 if ($until) {
-                    $untilStr = SafeStringCastAction::cast($until);
+                    $untilStr = is_string($until) ? $until : (string) $until;
 
                     return $label.' until: '.date('d/m/Y', strtotime($untilStr));
                 }

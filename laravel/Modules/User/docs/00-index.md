@@ -1,3 +1,23 @@
+---
+title: "📚 **Indice Documentazione Modulo User**"
+type: concept
+tags: [index]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "00-index 📚 **indice documentazione modulo user**"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+---
+
 # 📚 **Indice Documentazione Modulo User**
 
 **Status**: ✅ PHPStan Level 10 Compliant
@@ -28,8 +48,9 @@
 
 ## 🧪 **Qualità e Sviluppo**
 - ✅ **[PHPStan Analysis](./phpstan-level10-user-fixes.md)** - Report di conformità Level 10.
-- 🚨 **[PHPStan Syntax Blockers 2026-03-10](./phpstan-syntax-blockers-2026-03-10.md)** - Severe syntax errors e merge marker da eliminare prima dell'analisi completa.
-- 🧭 **[IDE Helper Models Wave 2026-03-10](./ide-helper-models-wave-2026-03-10.md)** - Distinzione tra errori sandbox e reali durante `php artisan ide-helper:models -W`.
+- 🚨 **[PHPStan Syntax Blockers 2026-03-10](./phpstan-syntax-blockers.md)** - Severe syntax errors e merge marker da eliminare prima dell'analisi completa.
+- 🧭 **[IDE Helper Models Wave](./ide-helper-models-wave.md)** - Wave 2026-03-10 e 2026-07-15: sandbox vs segnalazioni Passport/OAuth.
+- 🔗 **[OAuth + IDE Helper](./oauth-token-relations-ide-helper.md)** - Perché `user()` segnala provider on null durante analisi statica.
 - 🔬 **[Testing Identity](./testing.md)** - Test di autenticazione e autorizzazione (Pest).
 - 🧬 **[Model Inheritance](./model-inheritance-rules.md)** - Regole per estendere il modello User.
 - 🧪 **PSR-4 Test Helpers** - Nei test trait/helper preferire anonymous classes o fixture dedicate sotto `tests/` con percorso coerente PSR-4.

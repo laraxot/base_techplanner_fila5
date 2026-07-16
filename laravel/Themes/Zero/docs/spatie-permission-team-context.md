@@ -1,3 +1,15 @@
+---
+title: "Spatie Permission Team Context"
+type: guide
+tags: ['laravel', 'permission']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "spatie permission team context"
+related:
+  - "./00-INDEX.md"
+  - "./00-index.md"
+---
+
 # Spatie Permission Team Context
 
 ## Theme Boundary

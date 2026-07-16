@@ -1,3 +1,23 @@
+---
+title: "Filament Pages Refactoring - UI Module"
+type: concept
+tags: [filament, pages, refactoring]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament-pages-refactoring filament pages refactoring - ui module"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./04-datas.md"
+  - "./advanced-form-components-1.md"
+  - "./advanced-form-components.md"
+  - "./agent-confidence-discipline.md"
+  - "./agent-confidence-protocol.md"
+  - "./agent-edit-discipline.md"
+---
+
 # Filament Pages Refactoring - UI Module
 
 ## S3Test.php Refactoring
@@ -138,7 +158,7 @@ class S3Test extends XotBasePage
 
 ## Collegamenti
 
-- [Filament Best Practices](../../xot/docs/filament_best_practices.md)
+- [Filament Best Practices](../../xot/docs/filament_best-practices-2.md)
 - [XotBasePage Implementation](../../xot/docs/xotbasepage_implementation.md)
 - [DRY + KISS Principles](../../xot/docs/dry_kiss_principles.md)
 

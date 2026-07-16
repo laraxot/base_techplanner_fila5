@@ -34,7 +34,7 @@ The underlying needs are legitimate; the module root is just the wrong home:
 | Real need | Proper home |
 |---|---|
 | Standalone Python/service tooling | repo-root `bashscripts/tools/` (see `ai-fine-tuning/`) |
-| CI helper scripts | `.github/scripts/`, referenced from the workflow |
+| CI helper scripts | `.github/ci/`, referenced from the workflow |
 | Historical versions of a doc | git history (`git log --follow <file>`) |
 | Agent/audit scratch output | ephemeral git-ignored temp dir, never committed |
 | Personal IDE/devcontainer setup | developer's machine + `.gitignore` |
@@ -44,7 +44,7 @@ The underlying needs are legitimate; the module root is just the wrong home:
 - `scripts/fine_tuning.py`, `scripts/test_fine_tuning.py` →
   `bashscripts/tools/ai-fine-tuning/` at the repo root. `docs/fine-tuning.md` was
   updated to point there.
-- `scripts/ci/contributor-lines-report.mjs` → `.github/scripts/`, and
+- `scripts/ci/contributor-lines-report.mjs` → `.github/ci/`, and
   `.github/workflows/contributor-lines-report.yml` updated to the new path.
 - `scripts/.gitignore` patterns (`venv/`, `docs/phpstan/`, `_docs/`, `agentdb.rvf`)
   were folded into this module's `.gitignore`.

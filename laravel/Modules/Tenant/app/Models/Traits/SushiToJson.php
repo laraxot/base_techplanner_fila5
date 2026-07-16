@@ -8,8 +8,8 @@ use Exception;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 use InvalidArgumentException;
-use Modules\Tenant\Services\Config\ConfigStringKeyFilter;
-use Modules\Tenant\Services\TenantService;
+use Modules\Tenant\Actions\Config\FilterConfigStringKeysAction;
+use Modules\Tenant\Actions\Config\GetTenantFilePathAction;
 use Sushi\Sushi;
 use Throwable;
 use Webmozart\Assert\Assert;
@@ -44,7 +44,7 @@ trait SushiToJson
             throw new InvalidArgumentException(__FILE__.':'.__LINE__.' - '.class_basename(self::class).': Table name must be string');
         }
 
-        return TenantService::filePath('database/content/'.$tbl.'.json');
+        return app(GetTenantFilePathAction::class)->execute('database/content/'.$tbl.'.json');
     }
 
     /**
@@ -62,9 +62,9 @@ trait SushiToJson
      * Ottiene i dati dal file JSON per il modello Sushi.
      * I dati vengono normalizzati per garantire compatibilità con Eloquent.
      *
-     * @return array<int, array<string, mixed>> Array di record per Sushi
+     * @return array<int, array<string, mixed>>
      *
-     * @throws Exception Se i dati non sono in formato array valido
+     * @phpstan-return array<int, array<string, mixed>>
      */
     public function getSushiRows(): array
     {
@@ -85,12 +85,14 @@ trait SushiToJson
                 continue;
             }
 
-            $typedData[] = ConfigStringKeyFilter::onlyStringKeys($item);
+            $typedData[] = app(FilterConfigStringKeysAction::class)->execute($item);
         }
 
         $normalizedData = $this->normalizeJsonItems($typedData);
         $schema = $this->getSchema();
-        $form = $this->normalizeSchemaFields(is_array($schema) ? $schema : []);
+        /** @var array<string, mixed> $schemaArray */
+        $schemaArray = $schema;
+        $form = $this->normalizeSchemaFields($schemaArray);
 
         return $this->completeSchemaFields($normalizedData, $form);
     }
@@ -412,19 +414,19 @@ trait SushiToJson
                 $normalizedItem[$stringKey] = $value;
             }
 
-            $normalizedData[] = ConfigStringKeyFilter::onlyStringKeys($normalizedItem);
+            $normalizedData[] = app(FilterConfigStringKeysAction::class)->execute($normalizedItem);
         }
 
         return $normalizedData;
     }
 
     /**
-     * @param  array<mixed, mixed>  $schema
+     * @param  array<string, mixed>  $schema
      * @return array<string, mixed>
      */
     protected function normalizeSchemaFields(array $schema): array
     {
-        return ConfigStringKeyFilter::onlyStringKeys($schema);
+        return app(FilterConfigStringKeysAction::class)->execute($schema);
     }
 
     /**
@@ -438,16 +440,18 @@ trait SushiToJson
         $completedData = [];
 
         foreach ($normalizedData as $item) {
+            /** @var array<string, mixed> $row */
+            $row = $item;
             foreach (array_keys($form) as $safeKey) {
-                if (! array_key_exists($safeKey, $item)) {
-                    $item[$safeKey] = null;
+                if (! array_key_exists($safeKey, $row)) {
+                    $row[$safeKey] = null;
                 }
             }
 
-            ksort($item);
-            $completedData[] = $item;
+            ksort($row);
+            $completedData[] = $row;
         }
 
-        return array_values($completedData);
+        return $completedData;
     }
 }

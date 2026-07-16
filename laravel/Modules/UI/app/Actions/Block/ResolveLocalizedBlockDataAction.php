@@ -14,7 +14,8 @@ final class ResolveLocalizedBlockDataAction
     use QueueableAction;
 
     /**
-     * @param  array<string, mixed>  $viewParams
+     * @param array<string, mixed> $viewParams
+     *
      * @return array<string, mixed>
      */
     public function execute(array $viewParams): array

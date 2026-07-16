@@ -16,7 +16,6 @@ uses(TestCase::class);
 
 describe('Get Tenant Config Actions', function (): void {
     test('gets tenant config array correctly', function (): void {
-        /** @var TestCase $this */
         $configName = 'test_config';
         $tempPath = tempnam(sys_get_temp_dir(), 'test_config_').'.php';
         $configData = ['key' => 'value'];
@@ -24,8 +23,7 @@ describe('Get Tenant Config Actions', function (): void {
         File::put($tempPath, 'return '.var_export($configData, true).';');
 
         $mock = $this->createUnitMock(GetTenantFilePathAction::class);
-        /* @phpstan-ignore-next-line */
-        $mock->expects($this->atLeastOnce())
+        $mock->expects($this->expectsAtLeastOnce())
             ->method('execute')
             ->with($configName.'.php')
             ->willReturn($tempPath);
@@ -40,12 +38,10 @@ describe('Get Tenant Config Actions', function (): void {
     });
 
     test('returns empty array if tenant config file does not exist', function (): void {
-        /** @var TestCase $this */
         $configName = 'non_existent';
 
         $mock = $this->createUnitMock(GetTenantFilePathAction::class);
-        /* @phpstan-ignore-next-line */
-        $mock->expects($this->atLeastOnce())
+        $mock->expects($this->expectsAtLeastOnce())
             ->method('execute')
             ->willReturn('/path/to/nothing.php');
 

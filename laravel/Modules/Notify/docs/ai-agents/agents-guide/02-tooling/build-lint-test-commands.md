@@ -1,3 +1,17 @@
+---
+title: "2. Build / Lint / Test Commands"
+type: concept
+tags: [build, lint, test, commands]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "build-lint-test-commands 2. build / lint / test commands"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./quick-commands.md"
+---
+
 # 2. Build / Lint / Test Commands
 
 ### Running Tests

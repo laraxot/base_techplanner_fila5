@@ -1,3 +1,14 @@
+---
+title: "Job - Product Strategy"
+module: "Job"
+type: concept
+tags: [product, strategy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "product strategy"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 # Job - Product Strategy
 
 > Strategia prodotto. Modulo.

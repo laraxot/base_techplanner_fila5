@@ -1,3 +1,15 @@
+---
+title: "Autenticazione - Tema Zero"
+type: guide
+tags: ['filament', 'laravel', 'testing']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "autenticazione - tema zero"
+related:
+  - "./00-INDEX.md"
+  - "./00-index.md"
+---
+
 # Autenticazione - Tema Zero
 
 ## Panoramica

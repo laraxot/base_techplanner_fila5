@@ -1,3 +1,15 @@
+---
+title: "PRD: Zero Theme"
+type: guide
+tags: ['filament', 'charts']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "prd zero theme"
+related:
+  - "./00-INDEX.md"
+  - "./00-index.md"
+---
+
 # PRD: Zero Theme
 
 ## 📋 Executive Summary

@@ -1,3 +1,21 @@
+---
+title: "Errori Comuni da Evitare nelle Implementazioni di Moduli SaluteOra"
+type: concept
+tags: [errori, comuni, evitare]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "errori-comuni-da-evitare errori comuni da evitare nelle implementazioni di moduli saluteora"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./multi-channel-notifications.md"
+  - "./netfun-sms-implementation.md"
+  - "./notifications-implementation-guide.md"
+  - "./sms-implementation-details.md"
+  - "./sms-provider-configuration.md"
+  - "./telegram-notifications-guide.md"
+---
+
 # Errori Comuni da Evitare nelle Implementazioni di Moduli SaluteOra
 
 ## Errori di Struttura Directory e Namespace

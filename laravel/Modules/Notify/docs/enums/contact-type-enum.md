@@ -1,3 +1,16 @@
+---
+title: "ContactTypeEnum - The Universal Contact Field Schema"
+type: concept
+tags: [contact, type, enum]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "contact-type-enum contacttypeenum - the universal contact field schema"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./channel-enum.md"
+---
+
 # ContactTypeEnum - The Universal Contact Field Schema
 
 ## Scopo (Purpose)

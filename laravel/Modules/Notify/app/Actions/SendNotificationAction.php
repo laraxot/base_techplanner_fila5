@@ -22,7 +22,7 @@ class SendNotificationAction
 
     /**
      * @param  array<string, mixed>  $data
-     * @param  array<int, string>  $channels
+     * @param  list<string>  $channels
      * @param  array<string, mixed>  $options
      *
      * @throws Exception
@@ -141,7 +141,7 @@ class SendNotificationAction
     ): NotificationModel {
         $bodyHtml = $compiled['body_html'];
         $message = $compiled['body_text'] ?? ($bodyHtml !== null ? strip_tags($bodyHtml) : '');
-        $notification = new NotificationModel;
+        $notification = new NotificationModel();
         $notification->forceFill([
             'type' => is_string($template->type) && $template->type !== '' ? $template->type : 'generic',
             'message' => $message,

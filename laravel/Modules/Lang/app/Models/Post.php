@@ -5,14 +5,15 @@ declare(strict_types=1);
 namespace Modules\Lang\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
-use Modules\Lang\Database\Factories\PostFactory;
 // --- traits ---
-use Modules\Xot\Contracts\ProfileContract;
+use Modules\Lang\Database\Factories\PostFactory;
 // use Laravel\Scout\Searchable;
+use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Traits\Updater;
 use Spatie\Sluggable\HasSlug;
@@ -118,7 +119,8 @@ use Spatie\Sluggable\SlugOptions;
 class Post extends BaseModel
 {
     use HasSlug;
-    /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
+
+    /** @phpstan-use HasXotFactory<Factory<static>> */
     use HasXotFactory;
 
     // use Cachable;
@@ -253,7 +255,7 @@ class Post extends BaseModel
             return $value;
         }
 
-        if (! empty($this->attributes['post_type'])) {
+        if (isset($this->attributes['post_type']) && '' !== $this->attributes['post_type'] && '0' !== $this->attributes['post_type']) {
             // Assicuriamoci che i valori siano stringhe prima della concatenazione
             $postType = isset($this->attributes['post_type']) && is_string($this->attributes['post_type'])
                 ? $this->attributes['post_type']

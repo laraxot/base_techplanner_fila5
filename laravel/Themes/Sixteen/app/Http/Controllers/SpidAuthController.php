@@ -11,10 +11,10 @@ use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Session;
+use Themes\Sixteen\Actions\SpidAuthAction;
 use Themes\Sixteen\Events\SpidAuthenticated;
 use Themes\Sixteen\Events\SpidLoggedOut;
 use Themes\Sixteen\Models\User;
-use Themes\Sixteen\Services\SpidAuthService;
 
 /**
  * Controller per l'autenticazione SPID
@@ -24,7 +24,7 @@ use Themes\Sixteen\Services\SpidAuthService;
 class SpidAuthController extends Controller
 {
     public function __construct(
-        protected SpidAuthService $spidService
+        protected SpidAuthAction $spidService
     ) {}
 
     /**

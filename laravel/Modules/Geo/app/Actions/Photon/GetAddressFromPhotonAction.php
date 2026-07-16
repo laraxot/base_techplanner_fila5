@@ -14,6 +14,7 @@ use Modules\Xot\Actions\Cast\SafeIntCastAction;
 
 use function Safe\json_decode;
 
+use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 /**
@@ -22,12 +23,14 @@ use Webmozart\Assert\Assert;
  * Questa classe utilizza l'API Photon per convertire
  * un indirizzo in coordinate geografiche e dettagli dell'indirizzo.
  */
-readonly class GetAddressFromPhotonAction
+class GetAddressFromPhotonAction
 {
+    use QueueableAction;
+
     private const API_URL = 'https://photon.komoot.io/api';
 
     public function __construct(
-        private Client $client,
+        private readonly Client $client,
     ) {
     }
 

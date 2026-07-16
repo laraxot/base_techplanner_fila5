@@ -1,3 +1,15 @@
+---
+title: "🏎️ F1 World Champion 2026 - Theme Zero Integration"
+type: guide
+tags: ['filament', 'laravel', 'charts']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "f1 world champion 2026 - theme zero integration"
+related:
+  - "./f1-world-champion-2026-theme-analysis.md"
+  - "./f1-world-champion-theme-analysis.md"
+---
+
 # 🏎️ F1 World Champion 2026 - Theme Zero Integration
 
 **URL**: `http://predict.local/it/predicts/f1-world-champion-2026`  

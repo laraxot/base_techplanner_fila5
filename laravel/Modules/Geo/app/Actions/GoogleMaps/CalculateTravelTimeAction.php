@@ -12,6 +12,7 @@ use Modules\Geo\Datas\Routing\TravelTimeData;
 
 use function Safe\json_decode;
 
+use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 /**
@@ -20,12 +21,14 @@ use Webmozart\Assert\Assert;
  * Questa classe utilizza l'API Google Maps Distance Matrix per calcolare
  * il tempo di percorrenza tra due località, considerando il traffico attuale.
  */
-readonly class CalculateTravelTimeAction
+class CalculateTravelTimeAction
 {
+    use QueueableAction;
+
     private const API_URL = 'https://maps.googleapis.com/maps/api/distancematrix/json';
 
     public function __construct(
-        private Client $client,
+        private readonly Client $client,
     ) {
     }
 

@@ -1,3 +1,14 @@
+---
+title: "Errore Critico: Rimozione Sezione 'fields' dalle Traduzioni"
+module: "Job"
+type: concept
+tags: [translation, fields, critical, error]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "translation fields critical error"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 # Errore Critico: Rimozione Sezione "fields" dalle Traduzioni
 
 **Modulo**: Job  

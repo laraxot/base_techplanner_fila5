@@ -1,3 +1,23 @@
+---
+title: "Modulo Notify"
+type: concept
+tags: [structure]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "structure modulo notify"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./config-structure.md"
+  - "./document-root-architecture.md"
+  - "./dto-structure-conventions.md"
+  - "./dto-structure-rules.md"
+  - "./interface-structure-clarification.md"
+  - "./mail-templates-structure.md"
+  - "./queueable-action-pattern.md"
+  - "./sms-config-structure.md"
+---
+
 # Modulo Notify
 
 Data: 2025-04-23 19:09:56

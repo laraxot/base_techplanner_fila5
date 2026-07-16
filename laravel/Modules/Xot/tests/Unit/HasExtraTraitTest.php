@@ -58,7 +58,7 @@ describe('HasExtraTrait', function (): void {
     });
 
     it('can set and get extra attributes', function () use ($testModel): void {
-        $testModel->extra = makeExtraWithValues(['test_key' => 'test_value']);
+        $testModel->setRelation('extra', makeExtraWithValues(['test_key' => 'test_value']));
 
         $result = $testModel->getExtra('test_key');
 
@@ -127,7 +127,7 @@ describe('HasExtraTrait', function (): void {
     });
 
     it('handles empty extra attributes', function () use ($testModel): void {
-        $testModel->extra = makeExtraWithValues([]);
+        $testModel->setRelation('extra', makeExtraWithValues([]));
 
         $result = $testModel->getExtra('non_existent');
         Assert::assertNull($result);

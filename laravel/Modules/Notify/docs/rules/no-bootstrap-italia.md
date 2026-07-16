@@ -1,3 +1,16 @@
+---
+title: "No Bootstrap Italia Rule"
+type: concept
+tags: [bootstrap, italia]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "no-bootstrap-italia no bootstrap italia rule"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./vhost-governance.md"
+---
+
 # No Bootstrap Italia Rule
 
 ## Rule
@@ -30,4 +43,4 @@ The project's core purpose is to **replicate Bootstrap Italia's visual design us
 - See: `docs/html-structure-comparison.md` for project bridge docs
 - See: `bashscripts/docs/html/html-structure-compare.md` for comparison tool docs
 - See: `laravel/Themes/Sixteen/docs/architecture/README.md` for theme architecture
-- See: `QWEN.md` for project memories and conventions
+- See: `qwen.md` for project memories and conventions

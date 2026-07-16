@@ -6,7 +6,10 @@ confidence: medium
 created: {{date}}
 updated: {{date}}
 tags: [comparison, analysis]
-related: []
+related:
+  - "./concept.md"
+  - "./entity.md"
+  - "./source.md"
 ---
 
 # {{title}}

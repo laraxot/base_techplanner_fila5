@@ -3,9 +3,10 @@
 declare(strict_types=1);
 
 use Modules\Xot\Actions\GetTransKeyAction;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(Modules\Xot\Tests\TestCase::class);
+uses(TestCase::class);
 
 it('generates translation keys correctly', function (): void {
     $action = app(GetTransKeyAction::class);

@@ -1,3 +1,16 @@
+---
+title: "Sistema responsive e grid"
+type: guide
+tags: ['testing']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "sistema responsive e grid"
+related:
+  - "./accessibility-standards.md"
+  - "./advanced-features.md"
+  - "./component-library.md"
+---
+
 # Sistema responsive e grid
 
 ## Obiettivo

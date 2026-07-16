@@ -1,3 +1,15 @@
+---
+title: "AI-Assisted Development Guide - Zero Theme"
+type: how-to
+tags: ['filament', 'laravel', 'testing']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "ai-assisted development guide - zero theme"
+related:
+  - "./00-INDEX.md"
+  - "./00-index.md"
+---
+
 # AI-Assisted Development Guide - Zero Theme
 
 ## Overview

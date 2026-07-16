@@ -1,3 +1,14 @@
+---
+title: "PHPStan Level 10 Compliance Status"
+module: "Job"
+type: concept
+tags: [phpstan, compliance, status]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan compliance status"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 # PHPStan Level 10 Compliance Status
 
 
@@ -53,13 +64,3 @@ To maintain PHPStan compliance:
 - [Laravel Collections Best Practices](laravel-collections.md)
 - [Queueable Actions Pattern](queueable-actions.md)
 - [Task Management Architecture](task-architecture.md)
-
-## Aggiornamento 2026-07-06
-
-`Modules/Job/tests/Unit/Traits/FormatSecondsTest.php` importava una classe
-probe (`Modules\Job\Phpstan\FormatSecondsPhpstanProbe`) **inesistente su
-disco** — test rotto. Corretto testando il trait `FormatSeconds` direttamente
-tramite classe anonima. Vedi
-`Modules/Job/docs/wiki/concepts/phpstan-format-seconds-trait-probe.md`
-(pattern probe dichiarato deprecato/mai completato a livello di progetto).
-Ri-verificato a zero errori.

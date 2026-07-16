@@ -1,3 +1,15 @@
+---
+title: "Chart.js Datalabels Plugin Integration in Zero Theme"
+type: how-to
+tags: ['filament', 'laravel', 'charts', 'testing']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "chartjs datalabels plugin integration in zero theme"
+related:
+  - "./00-INDEX.md"
+  - "./00-index.md"
+---
+
 # Chart.js Datalabels Plugin Integration in Zero Theme
 
 ## Overview

@@ -10,12 +10,15 @@ use Illuminate\Support\Facades\Http;
 use Modules\Geo\Datas\Geocoding\AddressData;
 use Modules\Geo\Datas\MapPlatforms\MapboxMapData;
 use Modules\Geo\Exceptions\InvalidLocationException;
+use Spatie\QueueableAction\QueueableAction;
 
 /**
  * Classe per ottenere i dati dell'indirizzo dal servizio Mapbox.
  */
 class GetAddressFromMapboxLatLngAction
 {
+    use QueueableAction;
+
     private const BASE_URL = 'https://api.mapbox.com/geocoding/v5/mapbox.places';
 
     /**

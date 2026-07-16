@@ -1,3 +1,23 @@
+---
+title: "Implementazione di strict_types nel Modulo UI"
+type: concept
+tags: [strict, types, implementation]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "strict-types-implementation implementazione di strict_types nel modulo ui"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./04-datas.md"
+  - "./advanced-form-components-1.md"
+  - "./advanced-form-components.md"
+  - "./agent-confidence-discipline.md"
+  - "./agent-confidence-protocol.md"
+  - "./agent-edit-discipline.md"
+---
+
 # Implementazione di strict_types nel Modulo UI
 
 ## Importanza di declare(strict_types=1)
@@ -53,5 +73,5 @@ Durante la risoluzione dei conflitti Git, è fondamentale assicurarsi che la dic
 
 - [Regole Generali per strict_types](../../xot/docs/php-strict-types.md)
 - [Linee Guida PHPStan Livello 10](../../xot/docs/phpstan/level10_linee_guida.md)
-- [Conflitti Merge Risolti](./conflitti_merge_risolti.md)
+- [Conflitti Merge Risolti](./conflitti-merge-risolti-1.md)
 - [README del Modulo UI](./readme.md)

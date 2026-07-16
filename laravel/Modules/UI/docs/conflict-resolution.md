@@ -1,3 +1,23 @@
+---
+title: "Conflict Resolution — Module UI"
+type: concept
+tags: [conflict, resolution]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "conflict-resolution conflict resolution — module ui"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./04-datas.md"
+  - "./advanced-form-components-1.md"
+  - "./advanced-form-components.md"
+  - "./agent-confidence-discipline.md"
+  - "./agent-confidence-protocol.md"
+  - "./agent-edit-discipline.md"
+---
+
 # Conflict Resolution — Module UI
 
 ## Summary
@@ -9,52 +29,52 @@
 - app/View/Components/Render/Block.php
 
 ## Documentation Files
-- docs/algolia_docsearch.md
+- docs/algolia-docsearch.md
 - docs/architecture.md
-- docs/best_practices.md
-- docs/blade_data_handling.md
-- docs/blocks_system.md
+- docs/best-practices-2.md
+- docs/blade-data-handling-2.md
+- docs/blocks-system-2.md
 - docs/bugfix-table-layout-action.md
-- docs/chart_components.md
-- docs/cms_link.md
-- docs/cms_themes_link.md
-- docs/conflict_resolution_iconstatecolumn.md
-- docs/conflict_resolution_locationselector.md
-- docs/conflict_resolution_tablelayoutenum.md
-- docs/conflict_resolution_translation_files.md
-- docs/convenzioni_naming_campi.md
-- docs/custom_404_page.md
-- docs/customizing_your_site.md
-- docs/design_system.md
-- docs/filament_components.md
-- docs/filament_components_errors.md
-- docs/filament_components_location_studio.md
-- docs/filament_error_fileupload_buttonlabel.md
-- docs/filament_error_fileupload_icon.md
-- docs/filament_error_fileupload_prefixicon.md
-- docs/filament_fileupload.md
-- docs/filament_fileupload_components.md
-- docs/filament_resources_structure.md
-- docs/filament_vscode.md
-- docs/form_components.md
-- docs/getting_started.md
-- docs/iconstatesplitcolumn_actions_implementation.md
-- docs/iconstatesplitcolumn_implementation.md
-- docs/lang_link.md
-- docs/layouts_and_themes.md
-- docs/naming_conventions.md
-- docs/naming_rules.md
+- docs/chart-components-2.md
+- docs/cms-link-2.md
+- docs/cms-themes-link-2.md
+- docs/conflict-resolution-iconstatecolumn-1.md
+- docs/conflict-resolution-locationselector-1.md
+- docs/conflict-resolution-tablelayoutenum-1.md
+- docs/conflict-resolution-translation-files-1.md
+- docs/convenzioni-naming-campi-2.md
+- docs/custom-404-page-2.md
+- docs/customizing-your-site-2.md
+- docs/design-system-2.md
+- docs/filament-components-2.md
+- docs/filament-components-errors-2.md
+- docs/filament-components-location-studio-2.md
+- docs/filament-error-fileupload-buttonlabel-2.md
+- docs/filament-error-fileupload-icon-2.md
+- docs/filament-error-fileupload-prefixicon-2.md
+- docs/filament-fileupload-2.md
+- docs/filament-fileupload-components-2.md
+- docs/filament-resources-structure-2.md
+- docs/filament-vscode-2.md
+- docs/form-components-2.md
+- docs/getting-started-2.md
+- docs/iconstatesplitcolumn-actions-implementation-1.md
+- docs/iconstatesplitcolumn-implementation-2.md
+- docs/lang-link-2.md
+- docs/layouts-and-themes-2.md
+- docs/naming-conventions-2.md
+- docs/naming-rules-2.md
 - docs/nestedset-migration-best-practices.md
-- docs/never_use_label_rule.md
-- docs/optimization_recommendations.md
+- docs/never-use-label-rule-1.md
+- docs/optimization-recommendations-1.md
 - docs/phpstan-corrections-gennaio.md
-- docs/phpstan_radio_badge_fix.md
+- docs/phpstan-radio-badge-fix-2.md
 - docs/roadmap.md
-- docs/selectstatecolumn_confirmation_modal.md
-- docs/spatie_media_library_migration.md
-- docs/studio_card_selector_implementation.md
-- docs/table_components.md
-- docs/vscode_filament_plugin.md
+- docs/selectstatecolumn-confirmation-modal-2.md
+- docs/spatie-media-library-migration-2.md
+- docs/studio-card-selector-implementation-2.md
+- docs/table-components-2.md
+- docs/vscode-filament-plugin-2.md
 
 ## Config Files
 - composer.json

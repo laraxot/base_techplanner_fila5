@@ -3,9 +3,10 @@
 declare(strict_types=1);
 
 use Modules\Xot\Actions\Arr\DiffAssocRecursiveAction;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(Modules\Xot\Tests\TestCase::class);
+uses(TestCase::class);
 
 it('calculates recursive diff correctly', function (): void {
     $arr1 = [

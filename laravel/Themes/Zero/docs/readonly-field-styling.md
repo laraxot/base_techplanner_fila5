@@ -1,3 +1,15 @@
+---
+title: "Readonly Field Styling - UI/UX Pattern"
+type: rule
+tags: ['filament', 'testing']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "readonly field styling - uiux pattern"
+related:
+  - "./00-INDEX.md"
+  - "./00-index.md"
+---
+
 # Readonly Field Styling - UI/UX Pattern
 
 **Theme**: Zero  
@@ -117,7 +129,7 @@ Questi colori sono coerenti con:
 
 - [Customization Guide](./customization.md) - Palette colori del tema
 - [Components Guide](./components.md) - Componenti disponibili
-- [IndennitaResponsabilita - Readonly Styling](../../Modules/IndennitaResponsabilita/docs/readonly-field-styling.md) - Implementazione nel modulo
+- [IndennitaResponsabilita - Readonly Styling](../../../laravel/Modules/IndennitaResponsabilita/docs/readonly-field-styling.md) - Implementazione nel modulo
 - [Theme One - Readonly Styling](../One/docs/readonly-field-styling.md) - Pattern condiviso
 
 ---

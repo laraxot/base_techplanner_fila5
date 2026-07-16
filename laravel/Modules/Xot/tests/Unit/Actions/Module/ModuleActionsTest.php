@@ -6,13 +6,14 @@ use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Module\GetModuleConfigAction;
 use Modules\Xot\Actions\Module\GetModuleNameByClassAction;
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\mkdir;
 use function Safe\tempnam;
 use function Safe\unlink;
 
-uses(Modules\Xot\Tests\TestCase::class);
+uses(TestCase::class);
 
 test('get module name by class action works', function (): void {
     $action = app(GetModuleNameByClassAction::class);

@@ -1,3 +1,23 @@
+---
+title: "GSD & BMAD — Guida Completa per Agenti AI"
+type: guide
+tags: [gsd, bmad, comprehensive, guide]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "gsd-bmad-comprehensive-guide gsd & bmad — guida completa per agenti ai"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./01-gsd-workflow.md"
+  - "./02-bmad-workflow.md"
+  - "./03-architecture-zen.md"
+  - "./04-filament-philosophy.md"
+  - "./05-front-office-audit.md"
+  - "./06-cinematic-effects.md"
+  - "./07-mcp-tailwind-ui.md"
+---
+
 # GSD & BMAD — Guida Completa per Agenti AI
 
 > **Scopo**: Questa guida è la risorsa definitiva per tutti gli agenti AI che lavorano sul progetto PTVX Fila5.
@@ -170,17 +190,17 @@ Ogni task: Contesto fresco (200k token) → Qualità costante ✅
 
 ```
 .planning/
-├── PROJECT.md           # Visione (sempre caricata)
-├── REQUIREMENTS.md      # Requisiti v1/v2
-├── ROADMAP.md           # Fasi + dipendenze
-├── STATE.md             # Decisioni, blocker, memoria
+├── project.md           # Visione (sempre caricata)
+├── requirements.md      # Requisiti v1/v2
+├── roadmap.md           # Fasi + dipendenze
+├── state.md             # Decisioni, blocker, memoria
 ├── research/
 │   ├── STACK.md         # Stack tecnologico
 │   ├── FEATURES.md      # Feature research
-│   ├── ARCHITECTURE.md  # Architettura
+│   ├── architecture.md  # Architettura
 │   └── PITFALLS.md      # Pitfalls da evitare
 ├── phase-1-PLAN.md      # Task atomici XML
-├── phase-1-SUMMARY.md   # Cosa è successo
+├── phase-1-summary.md   # Cosa è successo
 └── phase-1-UAT.md       # UAT report
 ```
 
@@ -377,7 +397,7 @@ Più agenti AI ricevono lo stesso task (es. da `bashscripts/ai/gsd.txt`).
 cat docs/project/gsd-and-bmad-workflow.md
 
 # 2. Verifica stato corrente
-cat .planning/STATE.md
+cat .planning/state.md
 
 # 3. Controlla coordinamento
 cat docs/project/gsd-agent-coordination.md
@@ -389,8 +409,8 @@ git pull origin dev
 #### 2. Durante il Lavoro
 
 ```bash
-# Aggiorna STATE.md con progress
-echo "## In Progress\n\nWorking on: [task]\nAgent: [name]\nTime: $(date)" >> .planning/STATE.md
+# Aggiorna state.md con progress
+echo "## In Progress\n\nWorking on: [task]\nAgent: [name]\nTime: $(date)" >> .planning/state.md
 
 # Commit frequenti e atomici
 git add .
@@ -401,8 +421,8 @@ git push origin dev
 #### 3. Dopo Completamento
 
 ```bash
-# Aggiorna STATE.md
-echo "## Complete\n\nCompleted by: [agent]\nNext: [next step]" >> .planning/STATE.md
+# Aggiorna state.md
+echo "## Complete\n\nCompleted by: [agent]\nNext: [next step]" >> .planning/state.md
 
 # Aggiorna coordinamento
 cat docs/project/gsd-agent-coordination.md
@@ -415,17 +435,17 @@ cat docs/project/gsd-agent-coordination.md
 Agent 1 (Researcher):
   Task: Research & Architecture
   Output: .planning/research/*.md
-  ↓ commit + STATE.md update
+  ↓ commit + state.md update
 
 Agent 2 (Architect):
   Task: Design architecture
-  Output: Architecture decisions in STATE.md
-  ↓ commit + STATE.md update
+  Output: Architecture decisions in state.md
+  ↓ commit + state.md update
 
 Agent 3 (Planner):
   Task: Create phase plans
   Output: phase-N-PLAN.md files
-  ↓ commit + STATE.md update
+  ↓ commit + state.md update
 
 Agent 4+ (Executors - paralleli):
   Task: Implement plans in waves
@@ -435,7 +455,7 @@ Agent 4+ (Executors - paralleli):
 Agent N (Verifier):
   Task: Verify deliverables
   Output: phase-N-UAT.md
-  ↓ commit + STATE.md update
+  ↓ commit + state.md update
 ```
 
 ### Communication via Git
@@ -449,12 +469,12 @@ Commit Messages:
 - "feat: add price chart component"
 - "test: verify phase 1 complete"
 
-STATE.md:
+state.md:
 - Decisioni architetturali
 - Blocker identificati
 - Next steps chiari
 
-SUMMARY.md:
+summary.md:
 - Cosa è successo nella fase
 - Cosa è cambiato
 - Lessons learned
@@ -494,7 +514,7 @@ git pull origin dev
 git diff HEAD  # Vedi cambiamenti recenti
 
 # Se conflitto potenziale
-echo "Working on: [file]" >> .planning/STATE.md
+echo "Working on: [file]" >> .planning/state.md
 
 # DOPO aver modificato
 git add .
@@ -585,7 +605,7 @@ Per usare BMAD agents:
 
 **MAI** scrivere codice prima di:
 1. Leggere `gsd-and-bmad-workflow.md`
-2. Verificare `.planning/STATE.md`
+2. Verificare `.planning/state.md`
 3. Capire architecture decisions
 4. Avere piano chiaro
 
@@ -613,7 +633,7 @@ xyz7890 feat: added user registration, email, password, login, etc.
 
 # Ma tu devi:
 git pull origin dev  # Latest code
-cat .planning/STATE.md  # Current state
+cat .planning/state.md  # Current state
 cat docs/project/gsd-and-bmad-workflow.md  # Workflow
 ```
 
@@ -637,7 +657,7 @@ cat docs/project/gsd-and-bmad-workflow.md  # Workflow
 
 **SEMPRE**:
 1. Leggi coordination docs prima di iniziare
-2. Aggiorna STATE.md con tuo progress
+2. Aggiorna state.md con tuo progress
 3. Non duplicare lavoro di altri agenti
 4. Usa Git per comunicare (commit messages chiari)
 5. Fai handoff pulito se ti fermi
@@ -661,7 +681,7 @@ npx get-shit-done-cc --claude --global --force
 
 ```bash
 # Verifica che GSD stia usando fresh context
-cat .planning/STATE.md  # Deve essere aggiornato
+cat .planning/state.md  # Deve essere aggiornato
 
 # Resetta context
 rm -rf .planning/

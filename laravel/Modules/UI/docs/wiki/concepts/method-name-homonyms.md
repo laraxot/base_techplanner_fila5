@@ -4,8 +4,14 @@ type: analysis
 module: UI
 updated: 2026-06-15
 related:
-  - ../../../../../../docs/wiki/method-name-homonym-census.md
-  - ../../../../../../bashscripts/docs/method-homonym-census.json
+  - "./auth-register-focus-loss-overlay.md"
+  - "./block-rendering-and-optional-services.md"
+  - "./claude-audit-static.md"
+  - "./code-redundancy-ui.md"
+  - "./context-overflow-prevention.md"
+  - "./enum-select-best-practices.md"
+  - "./enum-select-component.md"
+  - "./enum-select-contract-and-false-friends.md"
 ---
 
 # Censimento omonimi metodi — UI

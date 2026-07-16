@@ -210,7 +210,7 @@ test('record notification manages channels and merged payloads', function () {
     Assert::assertCount(2, $channels);
     Assert::assertContains('mail', $channels);
 
-    $notification->mergeData(['a' => 'b'])->addAttachments([['name' => 'file.pdf', 'path' => base_path('storage/app/f.pdf')]]);
+    $notification->mergeData(['a' => 'b'])->addAttachments([['as' => 'file.pdf', 'path' => base_path('storage/app/f.pdf')]]);
 
     Assert::assertArrayHasKey('a', $notification->data);
     Assert::assertSame('b', $notification->data['a']);

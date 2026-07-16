@@ -9,9 +9,12 @@ use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Http;
 use Modules\Geo\Datas\Location\CoordinatesData;
 use Modules\Xot\Actions\Cast\SafeFloatCastAction;
+use Spatie\QueueableAction\QueueableAction;
 
 class GetCoordinatesByAddressAction
 {
+    use QueueableAction;
+
     public function execute(string $address): ?CoordinatesData
     {
         // Prova con Google Maps

@@ -1,3 +1,23 @@
+---
+title: "Esempio Implementazione TableLayoutEnum"
+type: concept
+tags: [table, layout, enum, implementation]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "table-layout-enum-implementation-example esempio implementazione tablelayoutenum"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./04-datas.md"
+  - "./advanced-form-components-1.md"
+  - "./advanced-form-components.md"
+  - "./agent-confidence-discipline.md"
+  - "./agent-confidence-protocol.md"
+  - "./agent-edit-discipline.md"
+---
+
 # Esempio Implementazione TableLayoutEnum
 
 ## Data: [DATE]
@@ -406,10 +426,10 @@ TextColumn::make('name')
 
 ## Collegamenti
 
-- [Analisi TableLayoutEnum](table_layout_enum_analysis.md)
+- [Analisi TableLayoutEnum](table-layout-enum-analysis-1.md)
 - [Usage Guide](table-layout-enum-usage.md)
 - [Translation Standards](../../../../docs/translation_standards.md)
-- [Filament Best Practices](../../../../docs/filament_best_practices.md)
+- [Filament Best Practices](../../../../docs/filament_best-practices-2.md)
 - [Enum Translation Pattern](../../../../docs/enum-translation-pattern.md)
 
 # Esempio Implementazione TableLayoutEnum
@@ -820,9 +840,9 @@ TextColumn::make('name')
 
 ## Collegamenti
 
-- [Analisi TableLayoutEnum](table_layout_enum_analysis.md)
+- [Analisi TableLayoutEnum](table-layout-enum-analysis-1.md)
 - [Usage Guide](table-layout-enum-usage.md)
 - [Translation Standards](../../../../docs/translation_standards.md)
-- [Filament Best Practices](../../../../docs/filament_best_practices.md)
+- [Filament Best Practices](../../../../docs/filament_best-practices-2.md)
 - [Enum Translation Pattern](../../../../docs/enum-translation-pattern.md)
 

@@ -9,6 +9,7 @@ use Modules\Notify\Contracts\SMS\SmsActionContract;
 use Modules\Notify\Datas\SMS\AgiletelecomData;
 use Modules\Notify\Datas\SmsData;
 use Override;
+use Spatie\QueueableAction\QueueableAction;
 
 /**
  * Azione per l'invio di SMS tramite Agile Telecom.
@@ -17,6 +18,8 @@ use Override;
  */
 class SendAgiletelecomSMSv2Action implements SmsActionContract
 {
+    use QueueableAction;
+
     /**
      * @return array<string, mixed>
      */

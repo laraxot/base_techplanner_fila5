@@ -1,3 +1,16 @@
+---
+title: "Regole per le Risorse Filament"
+type: rule
+tags: [resource, rules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "resource-rules regole per le risorse filament"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./form-schema-conventions.md"
+---
+
 # Regole per le Risorse Filament
 
 ## Panoramica

@@ -7,7 +7,6 @@ namespace Modules\Notify\Providers;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Mail;
 use Modules\Notify\Providers\Concerns\MergesNotifyConfigFromEnv;
-use Modules\Tenant\Services\TenantService;
 use Modules\Xot\Providers\XotBaseServiceProvider;
 use Override;
 use Webmozart\Assert\Assert;
@@ -34,7 +33,7 @@ class NotifyServiceProvider extends XotBaseServiceProvider
     {
         parent::boot();
         // if (! app()->environment('production')) {
-        $mail = TenantService::config('mail');
+        $mail = config('mail');
         Assert::isArray($mail);
         $fallback_to = Arr::get($mail, 'fallback_to', null);
         if (is_string($fallback_to)) {

@@ -1,3 +1,23 @@
+---
+title: "REGOLA CRITICA: Usa SEMPRE transClass() negli Enum"
+type: rule
+tags: [transclass, rule]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "transclass-rule regola critica: usa sempre transclass() negli enum"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./04-datas.md"
+  - "./advanced-form-components-1.md"
+  - "./advanced-form-components.md"
+  - "./agent-confidence-discipline.md"
+  - "./agent-confidence-protocol.md"
+  - "./agent-edit-discipline.md"
+---
+
 # REGOLA CRITICA: Usa SEMPRE transClass() negli Enum
 
 ## Data: [DATE]
@@ -283,7 +303,7 @@ rules:
 ## Collegamenti
 
 - [Translation Standards](../../../../docs/translation_standards.md)
-- [Filament Best Practices](../../../../docs/filament_best_practices.md)
+- [Filament Best Practices](../../../../docs/filament_best-practices-2.md)
 - [TransTrait Documentation](../../xot/docs/trans_trait_usage.md)
 
 ## Memoria Permanente
@@ -580,7 +600,7 @@ rules:
 ## Collegamenti
 
 - [Translation Standards](../../../../docs/translation_standards.md)
-- [Filament Best Practices](../../../../docs/filament_best_practices.md)
+- [Filament Best Practices](../../../../docs/filament_best-practices-2.md)
 - [TransTrait Documentation](../../xot/docs/trans_trait_usage.md)
 
 ## Memoria Permanente

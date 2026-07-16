@@ -1,3 +1,15 @@
+---
+title: "🎨 CHART.JS EXPORT INTEGRATION - TEMA ZERO"
+type: guide
+tags: ['laravel', 'charts', 'pdf']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "chartjs export integration - tema zero"
+related:
+  - "./00-INDEX.md"
+  - "./00-index.md"
+---
+
 # 🎨 CHART.JS EXPORT INTEGRATION - TEMA ZERO
 
 ## 📋 INDICE

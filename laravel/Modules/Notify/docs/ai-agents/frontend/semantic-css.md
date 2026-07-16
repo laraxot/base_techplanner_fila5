@@ -1,3 +1,15 @@
+---
+title: "🎨 Semantic CSS - AI Agents Documentation"
+type: concept
+tags: [semantic, css]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "semantic-css 🎨 semantic css - ai agents documentation"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+---
+
 # 🎨 Semantic CSS - AI Agents Documentation
 
 **Path**: `bashscripts/ai/.agents/docs/frontend/semantic-css.md`  
@@ -93,7 +105,7 @@ class OutcomesTableWidget extends XotBaseTableWidget
 ### Rules & Enforcement
 
 - [Semantic CSS Rule](../../rules/frontend/semantic-css-rule.md) - **MANDATORY** rule
-- [Frontend Rules Index](../../rules/frontend/00-INDEX.md) - All frontend rules
+- [Frontend Rules Index](../../rules/frontend/00-index-1.md) - All frontend rules
 
 ---
 

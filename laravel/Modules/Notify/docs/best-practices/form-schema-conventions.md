@@ -1,3 +1,23 @@
+---
+title: "Convenzioni per i Form Schema"
+type: concept
+tags: [form, schema, conventions]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "form-schema-conventions convenzioni per i form schema"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./acronym-naming-conventions.md"
+  - "./filament-naming-conventions.md"
+  - "./filament-template-conventions.md"
+  - "./inheritance-conventions.md"
+  - "./kdown-linking-conventions.md"
+  - "./laravel-path-conventions.md"
+  - "./markdown-linking-conventions.md"
+  - "./naming-conventions.md"
+---
+
 # Convenzioni per i Form Schema 
 
 ## Regola Fondamentale per Array di Schema

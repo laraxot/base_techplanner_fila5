@@ -1,3 +1,20 @@
+---
+title: "Filament Chart.js Guide"
+type: guide
+tags: [filament, chart, guide]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament-chart-js-guide filament chart.js guide"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./chartjs-datalabels-multiple-labels-complete-guide.md"
+  - "./chartjs-plugin-datalabels-filament5.md"
+  - "./export-strategy.md"
+  - "./server-side-actions.md"
+  - "./shared-hosting-strategy.md"
+---
+
 # Filament Chart.js Guide
 
 > **Why this guide?**: To standardize how we use Chart.js in Filament, especially regarding advanced features like plugins (Zoom, Annotations) which are not enabled by default.

@@ -1,3 +1,23 @@
+---
+title: "Laravel Pennant"
+type: rule
+tags: [pennant, rules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "pennant-rules laravel pennant"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./boost-integration.md"
+  - "./boost-rules.md"
+  - "./filament-rules.md"
+  - "./fluxui-rules.md"
+  - "./folio-rules.md"
+  - "./foundation-rules.md"
+  - "./laravel-core-rules.md"
+  - "./laravel-v12-rules.md"
+---
+
 === pennant/core rules ===
 
 # Laravel Pennant
@@ -13,5 +33,5 @@
 
 - ← [GEMINI Index](INDEX.md) — All Gemini guidelines
 - ← [Main AI Docs Index](../INDEX.md) — Master index
-- ← [../../../../laravel/GEMINI.md](../../../../laravel/../../../../laravel/GEMINI.md) — Original source
+- ← [../../../../laravel/gemini.md](../../../../laravel/../../../../laravel/gemini.md) — Original source
 

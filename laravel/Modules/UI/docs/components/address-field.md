@@ -1,3 +1,23 @@
+---
+title: "AddressField Component"
+type: concept
+tags: [address, field]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "address-field addressfield component"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./address-field-1.md"
+  - "./blade-component-registration.md"
+  - "./filament-usage.md"
+  - "./filament.md"
+  - "./file-upload.md"
+  - "./footer.md"
+  - "./full-calendar-1.md"
+  - "./full-calendar.md"
+---
+
 # AddressField Component
 
 ## Panoramica
@@ -35,7 +55,7 @@ AddressField::make('address')
 3. Configurare correttamente i servizi di geocoding
 4. Testare con diversi formati di indirizzo
 
-[Torna alla documentazione UI](/docs/modules/module_ui.md#components)
+[Torna alla documentazione UI](/docs/modules/module-ui-1.md#components)
 # AddressField Component
 
 ## Panoramica
@@ -73,4 +93,4 @@ AddressField::make('address')
 3. Configurare correttamente i servizi di geocoding
 4. Testare con diversi formati di indirizzo
 
-[Torna alla documentazione UI](/docs/modules/module_ui.md#components)
+[Torna alla documentazione UI](/docs/modules/module-ui-1.md#components)

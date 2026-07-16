@@ -135,7 +135,7 @@ class SpatieEmail extends TemplateMailable
      */
     public function envelope(): Envelope
     {
-        $envelope = new Envelope;
+        $envelope = new Envelope();
 
         // Set the recipient if available
         if ($this->recipient) {
@@ -163,7 +163,7 @@ class SpatieEmail extends TemplateMailable
     }
 
     /**
-     * @param  array<string, string>  $attachment
+     * @param  array{path: string, as?: string|null, mime?: string|null}  $attachment
      */
     public function getAttachmentFromPath(array $attachment): Attachment
     {
@@ -215,7 +215,7 @@ class SpatieEmail extends TemplateMailable
     /**
      * Add attachments to the email.
      *
-     * @param  array<int, array<string, string>>  $attachments  Array of attachment data
+     * @param  array<int, array<string, mixed>>  $attachments  Array of attachment data
      */
     public function addAttachments(array $attachments): self
     {

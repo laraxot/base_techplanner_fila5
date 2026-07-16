@@ -1,3 +1,23 @@
+---
+title: "EnumSelect Contract And False Friends"
+type: concept
+tags: [enum, select, contract, false]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "enum-select-contract-and-false-friends enumselect contract and false friends"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./auth-register-focus-loss-overlay.md"
+  - "./block-rendering-and-optional-services.md"
+  - "./claude-audit-static.md"
+  - "./code-redundancy-ui.md"
+  - "./context-overflow-prevention.md"
+  - "./enum-select-best-practices.md"
+  - "./enum-select-component.md"
+  - "./enum-select-usage.md"
+---
+
 # EnumSelect Contract And False Friends
 
 ## Context

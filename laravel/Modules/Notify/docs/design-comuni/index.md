@@ -1,3 +1,17 @@
+---
+title: "REPLIKATE - Design Comuni Index"
+type: concept
+tags: [index]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "index replikate - design comuni index"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./documentazione-report-finale.md"
+  - "./master-index.md"
+---
+
 # REPLIKATE - Design Comuni Index
 
 Documentazione per replica Design Comuni → Tailwind + Alpine.js

@@ -1,3 +1,23 @@
+---
+title: "Token Optimization — base_fixcity_fila5"
+type: concept
+tags: [token, optimization]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "token-optimization token optimization — base_fixcity_fila5"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+  - "./acronym-naming-conventions.md"
+  - "./action-plan-immediate.md"
+---
+
 # Token Optimization — base_fixcity_fila5
 
 ## 🔴 Documento Aggiornato: [token-efficiency-religion.md](./token-efficiency-religion.md)
@@ -14,7 +34,7 @@
 
 | Tecnica | Risparmio stimato | Come applicarla |
 |---------|-------------------|-----------------|
-| CLAUDE.md root terse (< 500 token) | -40% input/sessione | Già applicato: `CLAUDE.md` in root |
+| claude.md root terse (< 500 token) | -40% input/sessione | Già applicato: `claude.md` in root |
 | `/clear` tra task non correlati | -30-60% contesto | Usare prima di ogni nuova story |
 | `Grep` + `offset/limit` su file grandi | -60-80% per navigazione CSS | NON fare `Read` su file > 500 righe |
 | Tabelle/bullet vs prosa | -20-30% output | Usato in tutte le stories BMAD |
@@ -49,14 +69,14 @@
 |------|-------|--------------------|
 | `segnalazione-parity.css` | ~3900 | `Grep pattern` → `Read offset+limit` |
 | `app.css` | ~700 | `Grep pattern` se basta |
-| `laravel/CLAUDE.md` | ~825 | Già in contesto automaticamente |
+| `laravel/claude.md` | ~825 | Già in contesto automaticamente |
 | `sprint-status.yaml` | ~170 | `Read offset+limit` per epic specifico |
 
-## Strategia CLAUDE.md/QWEN.md ottimale
+## Strategia claude.md/qwen.md ottimale
 
-Mantenere ≤ 2,000 token (≈ 1,500 parole). Il file root `CLAUDE.md` attuale è ~200 parole: dentro il limite.
+Mantenere ≤ 2,000 token (≈ 1,500 parole). Il file root `claude.md` attuale è ~200 parole: dentro il limite.
 
-`laravel/CLAUDE.md` è ~10,000 token ma è auto-generato da Laravel Boost — non modificabile.
+`laravel/claude.md` è ~10,000 token ma è auto-generato da Laravel Boost — non modificabile.
 
 ## Fonti
 

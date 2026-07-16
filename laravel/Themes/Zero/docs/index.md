@@ -57,6 +57,7 @@ Questo documento serve come indice centrale per il tema Zero, fornendo una guida
 
 ### Testing e Qualità
 - [Testing](./testing.md) - Strategie e approcci per il testing del tema
+- [ide-helper-phpdoc-boundary](./ide-helper-phpdoc-boundary.md) - Confine PHPDoc moduli ↔ tema
 - [Performance](./performance.md) - Ottimizzazioni e analisi performance
 - [Accessibilità](./accessibility.md) - Linee guida per l'accessibilità
 

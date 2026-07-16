@@ -1,3 +1,15 @@
+---
+title: "PHPStan Level 10 Compliance - Theme System"
+type: guide
+tags: ['phpstan']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan level 10 compliance - theme system"
+related:
+  - "./00-INDEX.md"
+  - "./00-index.md"
+---
+
 # PHPStan Level 10 Compliance - Theme System
 
 ## 📋 Riepilogo Intervento

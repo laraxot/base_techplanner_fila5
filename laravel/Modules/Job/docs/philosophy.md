@@ -1,3 +1,14 @@
+---
+title: "Job Module: Philosophy, Purpose, and Design Principles"
+module: "Job"
+type: concept
+tags: [philosophy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "philosophy"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 # Job Module: Philosophy, Purpose, and Design Principles
 
 

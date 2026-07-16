@@ -1,3 +1,14 @@
+---
+title: "PHPStan Level 10 Fixes - Modulo Job"
+module: "Job"
+type: concept
+tags: [phpstan, level, 10, fixes]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan level 10 fixes"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 # PHPStan Level 10 Fixes - Modulo Job
 
 ## Data: [DATE]

@@ -1,3 +1,23 @@
+---
+title: "Analisi del Componente TitleWithSlugInput per Filament"
+type: concept
+tags: [title, slug, component]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "title-with-slug-component analisi del componente titlewithsluginput per filament"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./email-best-practices.md"
+  - "./email-layouts-best-practices.md"
+  - "./email-templates-best-practices.md"
+  - "./email-templates-guide.md"
+  - "./email-templates-update.md"
+  - "./filament-slug-generation.md"
+  - "./filament-ui-enhancements.md"
+  - "./html-email-compatibility.md"
+---
+
 # Analisi del Componente TitleWithSlugInput per Filament
 
 ## Introduzione
@@ -214,6 +234,6 @@ L'implementazione dovrebbe seguire le convenzioni del progetto, con particolare 
 
 - [Repository GitHub del Pacchetto](https://github.com/camya/filament-title-with-slug)
 - [Documentazione Filament](https://filamentphp.com/docs)
-- [Implementazione Modello con Slug](./model_slug_implementation.md)
-- [Implementazione Risorsa con Slug](./resource_slug_implementation.md)
-- [Miglioramenti UI/UX](./ui_ux_enhancements.md)
+- [Implementazione Modello con Slug](./model-slug-implementation-1.md)
+- [Implementazione Risorsa con Slug](./resource-slug-implementation-1.md)
+- [Miglioramenti UI/UX](./ui-ux-enhancements-1.md)

@@ -1,3 +1,15 @@
+---
+title: "🎨 THEMES SYSTEM - IL VESTITO DI LARAXOT"
+type: guide
+tags: ['filament', 'laravel', 'charts', 'pdf']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "themes system - il vestito di laraxot"
+related:
+  - "./00-INDEX.md"
+  - "./00-index.md"
+---
+
 # 🎨 THEMES SYSTEM - IL VESTITO DI LARAXOT
 
 ## 📋 INDICE

@@ -12,8 +12,16 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Str;
 use Modules\Blog\Database\Factories\ArticleFactory;
+use Modules\Blog\Actions\Article\FilterArticleContentBlocksExceptAction;
+use Modules\Blog\Actions\Article\FilterArticleContentBlocksOnlyAction;
+use Modules\Blog\Actions\Article\FormatArticleDateAction;
+use Modules\Blog\Actions\Article\FormatArticleReadTimeAction;
+use Modules\Blog\Actions\Article\FormatArticleTimeLeftAction;
+use Modules\Blog\Actions\Article\GetArticleMainImageUrlAction;
+use Modules\Blog\Actions\Article\GetArticleThumbnailAction;
+use Modules\Blog\Actions\Article\GetArticleTranslationAction;
+use Modules\Blog\Actions\Article\ResolveArticleMainImageAction;
 use Modules\Blog\Models\Concerns\ArticleFeedable;
-use Modules\Blog\Support\ArticleDelegates;
 use Modules\Comment\Models\Comment;
 use Modules\Comment\Models\CommentNotificationSubscription;
 use Modules\Comment\Models\Concerns\HasComments;
@@ -321,7 +329,7 @@ class Article extends BaseModel implements Feedable, HasTranslationsContract, Su
      */
     public function getTranslation(string $key, string $locale, bool $useFallbackLocale = true): array|string|int|null
     {
-        return ArticleDelegates::translation($this, $key, $locale, $useFallbackLocale);
+        return app(GetArticleTranslationAction::class)->execute($this, $key, $locale, $useFallbackLocale);
     }
 
     /**
@@ -386,12 +394,12 @@ class Article extends BaseModel implements Feedable, HasTranslationsContract, Su
 
     public function getFormattedDate(): string
     {
-        return ArticleDelegates::formattedDate($this);
+        return app(FormatArticleDateAction::class)->execute($this);
     }
 
     public function getThumbnail(): ?string
     {
-        return ArticleDelegates::thumbnail($this);
+        return app(GetArticleThumbnailAction::class)->execute($this);
     }
 
     /**
@@ -403,7 +411,7 @@ class Article extends BaseModel implements Feedable, HasTranslationsContract, Su
             get: static function (mixed $value, array $attributes): string {
                 unset($value);
 
-                return ArticleDelegates::humanReadTime($attributes);
+                return app(FormatArticleReadTimeAction::class)->execute($attributes);
             },
         );
     }
@@ -441,7 +449,7 @@ class Article extends BaseModel implements Feedable, HasTranslationsContract, Su
 
     public function getMainImage(): string
     {
-        return ArticleDelegates::mainImageUrl($this);
+        return app(GetArticleMainImageUrlAction::class)->execute($this);
     }
 
     /*
@@ -483,7 +491,7 @@ class Article extends BaseModel implements Feedable, HasTranslationsContract, Su
 
     public function getTimeLeftForHumans(): ?string
     {
-        return ArticleDelegates::timeLeftForHumans($this);
+        return app(FormatArticleTimeLeftAction::class)->execute($this);
     }
 
     // /**
@@ -522,7 +530,7 @@ class Article extends BaseModel implements Feedable, HasTranslationsContract, Su
      */
     public function getOnlyContentBlocks(array $nameBlocks): array
     {
-        return ArticleDelegates::onlyContentBlocks($this, $nameBlocks);
+        return app(FilterArticleContentBlocksOnlyAction::class)->execute($this, $nameBlocks);
     }
 
     /**
@@ -532,7 +540,7 @@ class Article extends BaseModel implements Feedable, HasTranslationsContract, Su
      */
     public function getExceptContentBlocks(array $nameBlocks): array
     {
-        return ArticleDelegates::exceptContentBlocks($this, $nameBlocks);
+        return app(FilterArticleContentBlocksExceptAction::class)->execute($this, $nameBlocks);
     }
 
     /**
@@ -705,7 +713,7 @@ class Article extends BaseModel implements Feedable, HasTranslationsContract, Su
             get: static function (mixed $value, array $attributes): string {
                 unset($value);
 
-                return ArticleDelegates::mainImage($attributes);
+                return app(ResolveArticleMainImageAction::class)->execute($attributes);
             },
         );
     }

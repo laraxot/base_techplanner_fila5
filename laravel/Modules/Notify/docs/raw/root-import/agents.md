@@ -1,3 +1,23 @@
+---
+title: "Project Agents (Modular)"
+type: concept
+tags: [agents]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "agents project agents (modular)"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./changelog.md"
+  - "./claude.md"
+  - "./design-conversion-roadmap-1.md"
+  - "./design-conversion-roadmap.md"
+  - "./files-created-session-007-1.md"
+  - "./files-created-session-007.md"
+  - "./files-created-session-replikate.md"
+  - "./firebase-1.md"
+---
+
 # Project Agents (Modular)
 
 This file provides guidance and memory for Codex CLI. The content has been split into modular files for better efficiency.
@@ -76,9 +96,9 @@ docs/
 
 ---
 **See also:**
-- [CLAUDE.md](./CLAUDE.md)
-- [QWEN.md](./QWEN.md)
-- [GEMINI.md](./GEMINI.md)
+- [claude.md](./claude.md)
+- [qwen.md](./qwen.md)
+- [gemini.md](./gemini.md)
 
 *Ultimo aggiornamento: Aprile 2026*
 

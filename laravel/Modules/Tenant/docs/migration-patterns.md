@@ -1,7 +1,12 @@
 ---
-module: theme
-topic: migration-patterns
-canonical: ../../../Themes/docs/shared-components/.gitkeep
+title: "Migration Patterns"
+module: "Tenant"
+type: pattern
+tags: [migration, patterns]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migration patterns"
+related:
+  - "./phpstan-corrections-january.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep

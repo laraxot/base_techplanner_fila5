@@ -1,3 +1,23 @@
+---
+title: "Compatibilità dei Metodi nei Componenti Filament"
+type: concept
+tags: [component, methods, compatibility]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "component-methods-compatibility compatibilità dei metodi nei componenti filament"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./automatic-translations.md"
+  - "./best-practices.md"
+  - "./component-icon-support.md"
+  - "./filament-4-components-guide.md"
+  - "./filament-4-migration-guide.md"
+  - "./filament-4-migration-summary.md"
+  - "./filament-4-migration-sumy.md"
+  - "./file-upload-component.md"
+---
+
 # Compatibilità dei Metodi nei Componenti Filament
 
 ## Panoramica

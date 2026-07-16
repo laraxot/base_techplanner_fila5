@@ -1,3 +1,15 @@
+---
+title: "Raw Sources — UI"
+type: concept
+tags: [index]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "index raw sources — ui"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+---
+
 # Raw Sources — UI
 
 Questo layer contiene le fonti grezze: documenti immutabili che l'LLM legge ma non modifica.

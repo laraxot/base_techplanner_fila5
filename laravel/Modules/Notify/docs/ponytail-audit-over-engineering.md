@@ -1,3 +1,23 @@
+---
+title: "Ponytail audit — Notify (over-engineering)"
+type: concept
+tags: [ponytail, audit, over, engineering]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "ponytail-audit-over-engineering ponytail audit — notify (over-engineering)"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+  - "./acronym-naming-conventions.md"
+  - "./action-plan-immediate.md"
+---
+
 # Ponytail audit — Notify (over-engineering)
 
 **Ultimo run:** 2026-07-01  
@@ -75,6 +95,6 @@ Utility mantenute: `NormalizePhoneNumberAction`, `FormatSmsMessageAction`.
 
 ## Collegamenti
 
-- [wiki/decisions/sms-actions-consolidation-2026-06-30.md](./wiki/decisions/sms-actions-consolidation-2026-06-30.md)
+- [wiki/decisions/sms-actions-consolidation-.md.md](./wiki/decisions/sms-actions-consolidation-.md.md)
 - [provider-actions-architecture.md](./provider-actions-architecture.md)
 - [Xot Notify hub](../../Xot/docs/ponytail-audit-over-engineering.md)

@@ -9,9 +9,12 @@ use Modules\Geo\Datas\Map\GeoMapWidgetData;
 use Modules\Geo\Models\Place;
 use Modules\Xot\Actions\Cast\SafeFloatCastAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Spatie\QueueableAction\QueueableAction;
 
 class BuildGeoMapWidgetPayloadAction
 {
+    use QueueableAction;
+
     public function execute(): GeoMapWidgetData
     {
         $places = $this->getPlaces();

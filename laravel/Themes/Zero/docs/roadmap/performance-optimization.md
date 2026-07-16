@@ -1,3 +1,16 @@
+---
+title: "Performance e ottimizzazione asset"
+type: rule
+tags: ['testing']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "performance e ottimizzazione asset"
+related:
+  - "./accessibility-standards.md"
+  - "./advanced-features.md"
+  - "./component-library.md"
+---
+
 # Performance e ottimizzazione asset
 
 ## Obiettivo

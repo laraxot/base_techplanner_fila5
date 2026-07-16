@@ -14,9 +14,7 @@ class CmsDatabaseSeeder extends Seeder
     public function run(): void
     {
         if ($this->command !== null) {
-
             $this->command->info('CmsDatabaseSeeder: entity seeders…');
-
         }
 
         $this->call([
@@ -30,9 +28,7 @@ class CmsDatabaseSeeder extends Seeder
         ]);
 
         if ($this->command !== null) {
-
             $this->command->info('CmsDatabaseSeeder: completato.');
-
         }
     }
 }

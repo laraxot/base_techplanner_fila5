@@ -1,3 +1,23 @@
+---
+title: "Convenzioni di Naming per i Wizard Step in Filament"
+type: concept
+tags: [wizard, step, naming]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "wizard-step-naming convenzioni di naming per i wizard step in filament"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./automatic-translations.md"
+  - "./best-practices.md"
+  - "./component-icon-support.md"
+  - "./component-methods-compatibility.md"
+  - "./filament-4-components-guide.md"
+  - "./filament-4-migration-guide.md"
+  - "./filament-4-migration-summary.md"
+  - "./filament-4-migration-sumy.md"
+---
+
 # Convenzioni di Naming per i Wizard Step in Filament
 
 ## Regola Fondamentale

@@ -1,3 +1,16 @@
+---
+title: "Personalizzazione tema e varianti"
+type: guide
+tags: ['testing']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "personalizzazione tema e varianti"
+related:
+  - "./accessibility-standards.md"
+  - "./advanced-features.md"
+  - "./component-library.md"
+---
+
 # Personalizzazione tema e varianti
 
 ## Obiettivo

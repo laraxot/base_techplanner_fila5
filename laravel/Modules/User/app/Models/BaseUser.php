@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
+use Filament\Models\Contracts\FilamentUser;
 use Filament\Models\Contracts\HasName;
 use Filament\Models\Contracts\HasTenants;
 use Filament\Panel;
@@ -127,7 +128,7 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  *
  * @mixin \Eloquent
  */
-abstract class BaseUser extends Authenticatable implements HasAuthentications, HasMedia, HasName, HasTenants, MustVerifyEmail, OAuthenticatable, UserContract
+abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuthentications, HasMedia, HasName, HasTenants, MustVerifyEmail, OAuthenticatable, UserContract
 {
     use HasApiTokens;
     use HasAuthenticationLogTrait;
@@ -234,12 +235,14 @@ abstract class BaseUser extends Authenticatable implements HasAuthentications, H
         return (string) ($this->getAttribute('provider') ?? config('auth.guards.api.provider', 'users'));
     }
 
+    /*
     public function canAccessFilament(?Panel $panel = null): bool
     {
+         dddx($panel->getId());
         // return $this->role_id === Role::ROLE_ADMINISTRATOR;
         return true;
     }
-
+    */
     /**
      * Get the user's name for Filament.
      */
@@ -262,16 +265,16 @@ abstract class BaseUser extends Authenticatable implements HasAuthentications, H
     }
 
     /**
-     * @return HasOne<Model&ProfileContract, $this>
+     * @return HasOne<Model&ProfileContract, Model&static>
      *
-     * @phpstan-return HasOne<Model&ProfileContract, $this>
+     * @phpstan-return HasOne<Model&ProfileContract, Model&static>
      */
     #[\Override]
     public function profile(): HasOne
     {
         $profileClass = XotData::make()->getProfileClass();
         if (class_exists($profileClass)) {
-            /** @var HasOne<Model&ProfileContract, $this> $relation */
+            /** @var HasOne<Model&ProfileContract, Model&static> $relation */
             $relation = $this->hasOne($profileClass);
 
             return $relation;
@@ -280,14 +283,14 @@ abstract class BaseUser extends Authenticatable implements HasAuthentications, H
         // Try direct module class if XotData failed
         $directClass = 'Modules\User\Models\Profile';
         if (class_exists($directClass)) {
-            /** @var HasOne<Model&ProfileContract, $this> $relation */
+            /** @var HasOne<Model&ProfileContract, Model&static> $relation */
             $relation = $this->hasOne($directClass);
 
             return $relation;
         }
 
         // Fallback: stay on current model if nothing found
-        /** @var HasOne<Model&ProfileContract, $this> $relation */
+        /** @var HasOne<Model&ProfileContract, Model&static> $relation */
         $relation = $this->hasOne(static::class, 'id', 'id')->whereRaw('1=0');
 
         return $relation;

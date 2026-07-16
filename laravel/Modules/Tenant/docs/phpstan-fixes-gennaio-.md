@@ -1,3 +1,14 @@
+---
+title: "Correzioni PHPStan - Gennaio 2025"
+module: "Tenant"
+type: concept
+tags: [phpstan, fixes, gennaio]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan fixes gennaio "
+related:
+  - "./phpstan-corrections-january.md"
+---
 # Correzioni PHPStan - Gennaio 2025
 
 ## Panoramica
@@ -88,6 +99,6 @@ if (isset($extra_conf['connections'][$default]) && is_array($extra_conf['connect
 - Migliore gestione degli errori di configurazione
 
 ## Collegamenti Correlati
-- [Architettura Modulo Tenant](./architecture.md)
+- [Architettura Modulo Tenant](ARCHITECTURE.md)
 - [SushiToJsons Trait](./sushi-to-jsons-trait.md)
 - [Tenant Service](./tenant-service.md)

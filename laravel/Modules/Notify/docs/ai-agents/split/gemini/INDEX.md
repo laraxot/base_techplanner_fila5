@@ -1,6 +1,6 @@
-# Gemini AI Guidelines (../../../../laravel/GEMINI.md) Index
+# Gemini AI Guidelines (../../../../laravel/gemini.md) Index
 
-**Source**: [`laravel/../../../../laravel/GEMINI.md`](../../../../../../laravel/../../../../laravel/GEMINI.md) (581 lines)  
+**Source**: [`laravel/../../../../laravel/gemini.md`](../../../../../../laravel/../../../../laravel/gemini.md) (581 lines)  
 **Split Into**: 13 focused files  
 **Last Updated**: 2026-04-11  
 
@@ -61,14 +61,14 @@
 
 ### Bidirectional Links
 - ← Back to [Main AI Docs Index](../INDEX.md)
-- ← Back to [../../../../laravel/GEMINI.md](../../../../../../laravel/../../../../laravel/GEMINI.md) (original source)
+- ← Back to [../../../../laravel/gemini.md](../../../../../../laravel/../../../../laravel/gemini.md) (original source)
 - ← Back to [Project Docs](../../../docs/README.md)
 
 ---
 
 ## Usage
 
-These guidelines are loaded by Gemini AI for Laravel development context. For manual reference, see the original [`laravel/../../../../laravel/GEMINI.md`](../../../../../../laravel/../../../../laravel/GEMINI.md).
+These guidelines are loaded by Gemini AI for Laravel development context. For manual reference, see the original [`laravel/../../../../laravel/gemini.md`](../../../../../../laravel/../../../../laravel/gemini.md).
 
 ---
 

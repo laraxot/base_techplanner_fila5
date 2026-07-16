@@ -1,3 +1,23 @@
+---
+title: "Files Created in Session 007"
+type: concept
+tags: [files, created, session, 007]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "files-created-session-007 files created in session 007"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./agents.md"
+  - "./changelog.md"
+  - "./claude.md"
+  - "./design-conversion-roadmap-1.md"
+  - "./design-conversion-roadmap.md"
+  - "./files-created-session-007-1.md"
+  - "./files-created-session-replikate.md"
+  - "./firebase-1.md"
+---
+
 # Files Created in Session 007
 
 **Session**: 007 - Complete Visual Parity Assessment & Roadmap
@@ -57,7 +77,7 @@ bashscripts/docs/
 ### Per-Page Analysis (Detailed Example: Segnalazioni-Elenco)
 ```
 laravel/Themes/Sixteen/docs/pages/segnalazioni-elenco/
-├── DETAILED-ANALYSIS.md                        ✨ NEW
+├── DETAILED-analysis.md                        ✨ NEW
 ├── HTML-STRUCTURE-DIFF.md                      ✨ NEW
 ├── VISUAL-COMPARISON.md                        ✨ NEW
 ├── local-full.png                              ✨ NEW (screenshot)
@@ -77,8 +97,8 @@ laravel/Themes/Sixteen/docs/pages/segnalazioni-elenco/
 ### Project Root Documentation
 ```
 Project Root/
-├── DESIGN-CONVERSION-ROADMAP.md                ✨ NEW (executive summary)
-├── FILES-CREATED-SESSION-007.md                ✨ NEW (this file)
+├── design-conversion-roadmap.md                ✨ NEW (executive summary)
+├── files-created-session-007.md                ✨ NEW (this file)
 └── [existing files unchanged]
 ```
 
@@ -136,7 +156,7 @@ Project Root/
 
 ### Most Important Files (Must Read)
 
-1. **DESIGN-CONVERSION-ROADMAP.md** (Project Root)
+1. **design-conversion-roadmap.md** (Project Root)
    - Executive summary for all stakeholders
    - Phase breakdown (1-3) with timelines
    - Start here if new to the project
@@ -163,13 +183,13 @@ Project Root/
 ### Usage Recommendations
 
 **For Project Managers**:
-- Read: DESIGN-CONVERSION-ROADMAP.md
+- Read: design-conversion-roadmap.md
 - Reference: PRIORITY-MATRIX.json (for timeline/effort)
 
 **For Developers**:
 - Read: laravel/Themes/Sixteen/docs/INDEX.md
 - Reference: bashscripts/docs/INDEX.md (for tools)
-- Analyze: pages/<page-name>/DETAILED-ANALYSIS.md (per page)
+- Analyze: pages/<page-name>/DETAILED-analysis.md (per page)
 
 **For DevOps/CI-CD**:
 - Use: bash scripts/analysis/batch-visual-assessment-parallel.mjs (weekly)
@@ -200,7 +220,7 @@ COMPLETE-VISUAL-PARITY-REPORT.md
     ↓ (analyzed to create)
 PRIORITY-MATRIX.json
     ↓ (used for)
-DESIGN-CONVERSION-ROADMAP.md
+design-conversion-roadmap.md
     ↓ (communicates)
 GitHub Issues (created by script)
 ```
@@ -243,7 +263,7 @@ node bashscripts/github/create-design-issues.mjs
 node bashscripts/analysis/page-detailed-analysis.mjs persona
 
 # 3. Read the analysis
-cat laravel/Themes/Sixteen/docs/pages/persona/DETAILED-ANALYSIS.md
+cat laravel/Themes/Sixteen/docs/pages/persona/DETAILED-analysis.md
 
 # 4. Start CSS fixing
 cd laravel/Themes/Sixteen
@@ -289,8 +309,8 @@ diff <(cat laravel/Themes/Sixteen/docs/visual-parity-data.json) <(previous.json)
 - batch-visual-assessment-parallel.mjs (reusable)
 - page-detailed-analysis.mjs (reusable)
 - PRIORITY-MATRIX.json (reference)
-- DESIGN-CONVERSION-ROADMAP.md (historical)
-- Per-page DETAILED-ANALYSIS.md (proof of work)
+- design-conversion-roadmap.md (historical)
+- Per-page DETAILED-analysis.md (proof of work)
 
 ### Update Regularly
 - visual-parity-data.json (weekly)

@@ -1,3 +1,23 @@
+---
+title: "Convenzioni per i Collegamenti nei File Markdown"
+type: concept
+tags: [kdown, linking, conventions]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "kdown-linking-conventions convenzioni per i collegamenti nei file markdown"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./acronym-naming-conventions.md"
+  - "./filament-naming-conventions.md"
+  - "./filament-template-conventions.md"
+  - "./form-schema-conventions.md"
+  - "./inheritance-conventions.md"
+  - "./laravel-path-conventions.md"
+  - "./markdown-linking-conventions.md"
+  - "./naming-conventions.md"
+---
+
 # Convenzioni per i Collegamenti nei File Markdown
 
 ## Regola Fondamentale
@@ -9,30 +29,30 @@
 ### ❌ ERRATO: Percorsi Assoluti
 
 ```markdown
-[Convenzioni di Naming per le Interfacce](modules/notify/docs/interface_naming_convention.md)
-[Chiarimento sulla Struttura delle Interfacce](modules/notify/docs/interface_structure_clarification.md)
-[Architettura dei Contratti](modules/notify/docs/contracts_architecture.md)
-[Convenzioni di Naming per le Interfacce](modules/notify/docs/interface_naming_convention.md)
-[Chiarimento sulla Struttura delle Interfacce](modules/notify/docs/interface_structure_clarification.md)
-[Architettura dei Contratti](modules/notify/docs/contracts_architecture.md)
-[Convenzioni di Naming per le Interfacce](modules/notify/docs/interface_naming_convention.md)
-[Chiarimento sulla Struttura delle Interfacce](modules/notify/docs/interface_structure_clarification.md)
-[Architettura dei Contratti](modules/notify/docs/contracts_architecture.md)
+[Convenzioni di Naming per le Interfacce](modules/notify/docs/interface-naming-convention.md)
+[Chiarimento sulla Struttura delle Interfacce](modules/notify/docs/interface-structure-clarification.md)
+[Architettura dei Contratti](modules/notify/docs/contracts-architecture.md)
+[Convenzioni di Naming per le Interfacce](modules/notify/docs/interface-naming-convention.md)
+[Chiarimento sulla Struttura delle Interfacce](modules/notify/docs/interface-structure-clarification.md)
+[Architettura dei Contratti](modules/notify/docs/contracts-architecture.md)
+[Convenzioni di Naming per le Interfacce](modules/notify/docs/interface-naming-convention.md)
+[Chiarimento sulla Struttura delle Interfacce](modules/notify/docs/interface-structure-clarification.md)
+[Architettura dei Contratti](modules/notify/docs/contracts-architecture.md)
 ```
 
 ### ✅ CORRETTO: Percorsi Relativi
 
 ```markdown
-[Convenzioni di Naming per le Interfacce](./interface_naming_convention.md)
-[Chiarimento sulla Struttura delle Interfacce](./interface_structure_clarification.md)
-[Architettura dei Contratti](./contracts_architecture.md)
+[Convenzioni di Naming per le Interfacce](./interface-naming-convention.md)
+[Chiarimento sulla Struttura delle Interfacce](./interface-structure-clarification.md)
+[Architettura dei Contratti](./contracts-architecture.md)
 ```
 
 Per collegamenti a documenti in altre directory:
 
 ```markdown
-[Regole Generali per le Chiavi di Traduzione](../../lang/docs/translation_keys_rules.md)
-[Best Practices per le Chiavi di Traduzione](../../lang/docs/translation_keys_best_practices.md)
+[Regole Generali per le Chiavi di Traduzione](../../lang/docs/translation-keys-rules-1.md)
+[Best Practices per le Chiavi di Traduzione](../../lang/docs/translation-keys-best-practices-1.md)
 ```
 
 ## Motivazione

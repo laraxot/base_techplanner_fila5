@@ -1,3 +1,23 @@
+---
+title: "Generazione di Slug in Filament"
+type: concept
+tags: [filament, slug, generation]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament-slug-generation generazione di slug in filament"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./email-best-practices.md"
+  - "./email-layouts-best-practices.md"
+  - "./email-templates-best-practices.md"
+  - "./email-templates-guide.md"
+  - "./email-templates-update.md"
+  - "./filament-ui-enhancements.md"
+  - "./html-email-compatibility.md"
+  - "./implementation-notes.md"
+---
+
 # Generazione di Slug in Filament
 
 ## Panoramica

@@ -1,3 +1,14 @@
+---
+title: "Sessione PHPStan Completa - Tutti i Moduli"
+module: "Job"
+type: concept
+tags: [phpstan, session, complete]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan session complete"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 # Sessione PHPStan Completa - Tutti i Moduli
 **Obiettivo**: Portare tutti i moduli a PHPStan Level 10 (0 errori)
 **Status**: ⏳ IN CORSO

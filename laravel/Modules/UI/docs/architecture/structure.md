@@ -1,3 +1,18 @@
+---
+title: "Modulo UI"
+type: concept
+tags: [structure]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "structure modulo ui"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./component-registration.md"
+  - "./filament-pages-structure.md"
+  - "./filament-resources-structure.md"
+---
+
 # Modulo UI
 
 Data: 2025-04-23 19:09:56

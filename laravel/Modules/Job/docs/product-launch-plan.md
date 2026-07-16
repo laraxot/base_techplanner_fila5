@@ -1,3 +1,14 @@
+---
+title: "Job - Product Launch Plan"
+module: "Job"
+type: concept
+tags: [product, launch, plan]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "product launch plan"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 # Job - Product Launch Plan
 
 > Piano di lancio. Modulo.

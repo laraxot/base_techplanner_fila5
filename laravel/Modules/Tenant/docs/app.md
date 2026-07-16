@@ -1,7 +1,12 @@
 ---
-module: theme
-topic: app
-canonical: ../../../Themes/docs/shared-components/.gitkeep
+title: "App"
+module: "Tenant"
+type: concept
+tags: [app]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "app"
+related:
+  - "./phpstan-corrections-january.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep

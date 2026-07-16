@@ -1,3 +1,23 @@
+---
+title: "Implementazione del Campo `slug` nel Modello MailTemplate"
+type: concept
+tags: [model, slug, implementation]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "model-slug-implementation implementazione del campo `slug` nel modello mailtemplate"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./email-best-practices.md"
+  - "./email-layouts-best-practices.md"
+  - "./email-templates-best-practices.md"
+  - "./email-templates-guide.md"
+  - "./email-templates-update.md"
+  - "./filament-slug-generation.md"
+  - "./filament-ui-enhancements.md"
+  - "./html-email-compatibility.md"
+---
+
 # Implementazione del Campo `slug` nel Modello MailTemplate
 
 ## Panoramica delle Modifiche
@@ -171,7 +191,7 @@ echo $uniqueSlug;
 
 ## Riferimenti
 
-- [Struttura della Migrazione](./migration_structure.md)
-- [Implementazione Campo Slug nella Migrazione](./slug_field_implementation.md)
-- [Guida alla Migrazione MailTemplate](../mail_template_migration_guide.md)
+- [Struttura della Migrazione](./migration-structure-1.md)
+- [Implementazione Campo Slug nella Migrazione](./slug-field-implementation-1.md)
+- [Guida alla Migrazione MailTemplate](../mail-template-migration-guide-2.md)
 - [Documentazione Spatie Sluggable](https://github.com/spatie/laravel-sluggable)

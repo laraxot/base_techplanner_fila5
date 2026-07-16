@@ -1,3 +1,19 @@
+---
+title: "Form Components - 95% Completato"
+type: concept
+tags: [form, components]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "form-components form components - 95% completato"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./bottlenecks.md"
+  - "./component-system.md"
+  - "./form-component.md"
+  - "./theme-system.md"
+---
+
 # Form Components - 95% Completato
 
 ## Descrizione

@@ -66,6 +66,6 @@ describe('NotifyTheme\Attachment\Pdf', function () {
 
         Assert::assertStringContainsString('use Modules\Notify\Actions\NotifyTheme\Get', $content);
         Assert::assertStringContainsString('use Modules\Notify\Datas\AttachmentData', $content);
-        Assert::assertStringContainsString('use Modules\Xot\Services\HtmlService', $content);
+        Assert::assertStringContainsString('use Modules\Xot\Actions\Html\HtmlToPdfAction', $content);
     });
 });

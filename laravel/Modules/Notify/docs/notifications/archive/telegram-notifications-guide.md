@@ -1,3 +1,21 @@
+---
+title: "Notifiche Telegram"
+type: guide
+tags: [telegram, notifications, guide]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "telegram-notifications-guide notifiche telegram"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./errori-comuni-da-evitare.md"
+  - "./multi-channel-notifications.md"
+  - "./netfun-sms-implementation.md"
+  - "./notifications-implementation-guide.md"
+  - "./sms-implementation-details.md"
+  - "./sms-provider-configuration.md"
+---
+
 # Notifiche Telegram 
 
 Questa documentazione descrive come implementare notifiche Telegram nel modulo Notify di SaluteOra.
@@ -298,6 +316,6 @@ class TelegramNotificationTest extends TestCase
 
 ## Collegamenti alla Documentazione Correlata
 
-- [MULTI_CHANNEL_NOTIFICATIONS.md](./multi_channel_notifications.md)
-- [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./notifications_implementation_guide.md)
-- [SMS_PROVIDER_CONFIGURATION.md](./sms_provider_configuration.md)
+- [MULTI_CHANNEL_NOTIFICATIONS.md](./multi-channel-notifications-2.md)
+- [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./notifications-implementation-guide-1.md)
+- [SMS_PROVIDER_CONFIGURATION.md](./sms-provider-configuration-2.md)

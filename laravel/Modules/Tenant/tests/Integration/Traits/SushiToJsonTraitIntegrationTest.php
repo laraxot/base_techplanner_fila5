@@ -5,10 +5,10 @@ declare(strict_types=1);
 namespace Modules\Tenant\Tests\Integration\Traits;
 
 use Illuminate\Support\Facades\File;
+use Modules\Tenant\Actions\Config\GetTenantFilePathAction;
 use Modules\Tenant\Database\Factories\TenantFactory;
 use Modules\Tenant\Models\Tenant;
 use Modules\Tenant\Models\TestSushiModel;
-use Modules\Tenant\Services\TenantService;
 use Modules\Tenant\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -29,7 +29,7 @@ beforeEach(function (): void {
     $this->setCurrentTenant($this->tenantModel());
 
     $this->model = new TestSushiModel();
-    $this->testJsonPath = TenantService::filePath('database/content/test_sushi.json');
+    $this->testJsonPath = app(GetTenantFilePathAction::class)->execute('database/content/test_sushi.json');
 
     if (File::exists($this->sushiJsonPath())) {
         File::delete($this->sushiJsonPath());
@@ -42,7 +42,6 @@ beforeEach(function (): void {
 });
 
 afterEach(function (): void {
-    /** @var TestCase $this */
     if (File::exists($this->sushiJsonPath())) {
         File::delete($this->sushiJsonPath());
     }
@@ -71,7 +70,7 @@ describe('Sushi To Json Trait Integration', function (): void {
         Assert::assertTrue($result);
         Assert::assertTrue(File::exists($this->sushiJsonPath()));
         // Verifica che il file sia nella directory del tenant corretto
-        $expectedPath = TenantService::filePath('database/content/test_sushi.json');
+        $expectedPath = app(GetTenantFilePathAction::class)->execute('database/content/test_sushi.json');
         Assert::assertSame($expectedPath, $this->sushiJsonPath());
         // Verifica che il contenuto sia corretto
         $savedContent = File::get($this->sushiJsonPath());
@@ -82,7 +81,6 @@ describe('Sushi To Json Trait Integration', function (): void {
     });
 
     test('loads data with tenant isolation', function (): void {
-        /** @var TestCase $this */
         $testData = [
             '1' => [
                 'id' => 1,
@@ -112,7 +110,6 @@ describe('Sushi To Json Trait Integration', function (): void {
     });
 
     test('handles complex data structures', function (): void {
-        /** @var TestCase $this */
         $testData = [
             '1' => [
                 'id' => 1,
@@ -158,7 +155,6 @@ describe('Sushi To Json Trait Integration', function (): void {
     });
 
     test('manages file permissions correctly', function (): void {
-        /** @var TestCase $this */
         $testData = ['1' => ['id' => 1, 'name' => 'Permission Test']];
 
         $result = $this->sushiModel()->saveToJson($testData);
@@ -177,7 +173,6 @@ describe('Sushi To Json Trait Integration', function (): void {
 
     test('handles concurrent access safely', function (): void {
         // Simula accesso concorrente creando più istanze del modello
-        /** @var TestCase $this */
         $model1 = new TestSushiModel();
         $model2 = new TestSushiModel();
         $model3 = new TestSushiModel();
@@ -207,7 +202,6 @@ describe('Sushi To Json Trait Integration', function (): void {
 
     test('handles large datasets efficiently', function (): void {
         // Crea un dataset grande per testare le performance
-        /** @var TestCase $this */
         $largeDataset = [];
         for ($i = 1; $i <= 1000; $i++) {
             $largeDataset[$i] = [
@@ -249,7 +243,6 @@ describe('Sushi To Json Trait Integration', function (): void {
     });
 
     test('handles unicode and special characters', function (): void {
-        /** @var TestCase $this */
         $testData = [
             '1' => [
                 'id' => 1,
@@ -290,7 +283,6 @@ describe('Sushi To Json Trait Integration', function (): void {
     });
 
     test('handles empty and null values', function (): void {
-        /** @var TestCase $this */
         $testData = [
             '1' => [
                 'id' => 1,
@@ -339,7 +331,7 @@ describe('Sushi To Json Trait Integration', function (): void {
         $this->setCurrentTenant($this->secondTenantModel());
 
         $secondModel = new TestSushiModel();
-        $secondJsonPath = TenantService::filePath('database/content/test_sushi.json');
+        $secondJsonPath = app(GetTenantFilePathAction::class)->execute('database/content/test_sushi.json');
 
         $testData = [
             '1' => [

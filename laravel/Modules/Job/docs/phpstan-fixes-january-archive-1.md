@@ -1,3 +1,14 @@
+---
+title: "PHPStan Fixes - Gennaio 2025"
+module: "Job"
+type: concept
+tags: [phpstan, fixes, january, archive]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan fixes january archive 1"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 # PHPStan Fixes - Gennaio 2025
 
 ## Modulo Job - Correzioni Completate

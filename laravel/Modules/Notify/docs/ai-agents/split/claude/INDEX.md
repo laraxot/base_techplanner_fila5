@@ -1,6 +1,6 @@
-# Laravel Boost Guidelines (../../../../docs/CLAUDE.md) Index
+# Laravel Boost Guidelines (../../../../docs/claude.md) Index
 
-**Source**: [`docs/../../../../docs/CLAUDE.md`](../../../../../../docs/../../../../docs/CLAUDE.md) (833 lines)  
+**Source**: [`docs/../../../../docs/claude.md`](../../../../../../docs/../../../../docs/claude.md) (833 lines)  
 **Split Into**: 20 focused files  
 **Last Updated**: 2026-04-11  
 
@@ -78,14 +78,14 @@
 
 ### Bidirectional Links
 - ← Back to [Main AI Docs Index](../INDEX.md)
-- ← Back to [../../../../docs/CLAUDE.md](../../../../../../docs/../../../../docs/CLAUDE.md) (original source)
+- ← Back to [../../../../docs/claude.md](../../../../../../docs/../../../../docs/claude.md) (original source)
 - ← Back to [Project Docs](../../../docs/README.md)
 
 ---
 
 ## Usage
 
-These guidelines are automatically loaded by Claude/Laravel Boost MCP. For manual reference, see the original [`docs/../../../../docs/CLAUDE.md`](../../../../../../docs/../../../../docs/CLAUDE.md).
+These guidelines are automatically loaded by Claude/Laravel Boost MCP. For manual reference, see the original [`docs/../../../../docs/claude.md`](../../../../../../docs/../../../../docs/claude.md).
 
 ---
 

@@ -1,3 +1,23 @@
+---
+title: "Studio Selection Component con Pulsanti"
+type: concept
+tags: [studio, selection, component]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "studio-selection-component studio selection component con pulsanti"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./address-field-1.md"
+  - "./address-field.md"
+  - "./blade-component-registration.md"
+  - "./filament-usage.md"
+  - "./filament.md"
+  - "./file-upload.md"
+  - "./footer.md"
+  - "./full-calendar-1.md"
+---
+
 # Studio Selection Component con Pulsanti
 
 ## Descrizione

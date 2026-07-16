@@ -1,3 +1,15 @@
+---
+title: "PHPStan Configuration - Theme Zero"
+type: guide
+tags: ['laravel', 'phpstan']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan configuration - theme zero"
+related:
+  - "./00-INDEX.md"
+  - "./00-index.md"
+---
+
 # PHPStan Configuration - Theme Zero
 
 ## Regola Fondamentale
@@ -44,5 +56,5 @@ cd ./laravel
 
 ## Riferimenti
 
-- [PHPStan Level 10 Guidelines](../../docs/phpstan-level10.md)
-- [Root phpstan.neon](../../laravel/phpstan.neon)
+- [PHPStan Level 10 Guidelines](../../../docs/phpstan-level10.md)
+- [Root phpstan.neon](../../../laravel/phpstan.neon)

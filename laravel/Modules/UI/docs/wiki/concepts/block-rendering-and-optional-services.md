@@ -6,9 +6,14 @@ created: 2026-06-15
 updated: 2026-06-15
 qmd: "UI block render InteractiveMap MapServiceContract ResolveLocalizedBlockDataAction GetAllBlocksAction"
 related:
-  - ./phpstan-dynamic-array-normalization.md
-  - ../../../../../docs/wiki/patterns/phpstan-optional-contracts.md
-  - ../log.md
+  - "./auth-register-focus-loss-overlay.md"
+  - "./claude-audit-static.md"
+  - "./code-redundancy-ui.md"
+  - "./context-overflow-prevention.md"
+  - "./enum-select-best-practices.md"
+  - "./enum-select-component.md"
+  - "./enum-select-contract-and-false-friends.md"
+  - "./enum-select-usage.md"
 ---
 
 # Block rendering e servizi opzionali

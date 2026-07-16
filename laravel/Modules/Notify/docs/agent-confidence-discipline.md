@@ -5,9 +5,16 @@ status: approved
 tags: [agent, confidence, verification]
 created: "2026-05-26"
 updated: "2026-05-26"
-related:
-  - "../../Xot/docs/wiki/concepts/agent-confidence-discipline.md"
 issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/152"
+related:
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+  - "./acronym-naming-conventions.md"
+  - "./action-plan-immediate.md"
 ---
 
 # Disciplina agenti per massimizzare la confidenza

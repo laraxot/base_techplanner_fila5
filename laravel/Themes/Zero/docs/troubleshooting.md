@@ -1,3 +1,15 @@
+---
+title: "Zero Theme Troubleshooting Guide"
+type: how-to
+tags: ['filament', 'charts', 'pdf', 'permission']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "zero theme troubleshooting guide"
+related:
+  - "./00-INDEX.md"
+  - "./00-index.md"
+---
+
 # Zero Theme Troubleshooting Guide
 
 ## Advanced Charting Libraries

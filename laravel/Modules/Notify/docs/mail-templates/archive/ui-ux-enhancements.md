@@ -1,3 +1,23 @@
+---
+title: "UI/UX Enhancements per i Campi `name` e `slug` in MailTemplateResource"
+type: concept
+tags: [enhancements]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "ui-ux-enhancements ui/ux enhancements per i campi `name` e `slug` in mailtemplateresource"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./email-best-practices.md"
+  - "./email-layouts-best-practices.md"
+  - "./email-templates-best-practices.md"
+  - "./email-templates-guide.md"
+  - "./email-templates-update.md"
+  - "./filament-slug-generation.md"
+  - "./filament-ui-enhancements.md"
+  - "./html-email-compatibility.md"
+---
+
 # UI/UX Enhancements per i Campi `name` e `slug` in MailTemplateResource
 
 ## Introduzione
@@ -234,5 +254,5 @@ L'implementazione di questi miglioramenti rispetta le convenzioni del progetto S
 ## Riferimenti
 
 - [Documentazione Filament Forms](https://filamentphp.com/docs/forms/fields/text-input)
-- [Implementazione Modello con Slug](./model_slug_implementation.md)
-- [Implementazione Risorsa con Slug](./resource_slug_implementation.md)
+- [Implementazione Modello con Slug](./model-slug-implementation-1.md)
+- [Implementazione Risorsa con Slug](./resource-slug-implementation-1.md)

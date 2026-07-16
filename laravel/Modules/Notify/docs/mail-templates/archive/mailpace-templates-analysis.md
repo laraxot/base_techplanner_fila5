@@ -1,3 +1,23 @@
+---
+title: "Analisi Mailpace Templates"
+type: concept
+tags: [mailpace, templates, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "mailpace-templates-analysis analisi mailpace templates"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./email-best-practices.md"
+  - "./email-layouts-best-practices.md"
+  - "./email-templates-best-practices.md"
+  - "./email-templates-guide.md"
+  - "./email-templates-update.md"
+  - "./filament-slug-generation.md"
+  - "./filament-ui-enhancements.md"
+  - "./html-email-compatibility.md"
+---
+
 # Analisi Mailpace Templates
 
 ## Introduzione
@@ -207,5 +227,5 @@ return [
 
 ## Collegamenti
 - [Mailpace Templates](https://github.com/mailpace/templates)
-- [Email Best Practices](./email_best_practices.md)
+- [Email Best Practices](./email-best-practices-1.md)
 - [Template Management](./template-management.md) 

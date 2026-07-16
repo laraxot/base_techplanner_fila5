@@ -1,3 +1,14 @@
+---
+title: "PHPStan Syntax Fixes - Modulo Job"
+module: "Job"
+type: concept
+tags: [phpstan, syntax, fixes]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan syntax fixes"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 # PHPStan Syntax Fixes - Modulo Job
 
 **Versione PHPStan**: 1.12.x

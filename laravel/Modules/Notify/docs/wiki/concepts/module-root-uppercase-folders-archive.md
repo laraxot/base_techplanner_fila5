@@ -6,8 +6,14 @@ status: active
 tags: [module-structure, archive, docs]
 updated: "2026-06-30"
 related:
-  - ../../../../../../docs/project/module-root-structure-analysis.md
-  - ../../../../../Xot/docs/wiki/concepts/module-root-uppercase-folders-archive.md
+  - "./claude-audit-static.md"
+  - "./code-redundancy-notify.md"
+  - "./composer-root-minimal-nwidart.md"
+  - "./context-overflow-prevention.md"
+  - "./enum-standards.md"
+  - "./llm-wiki-governance.md"
+  - "./method-name-homonyms.md"
+  - "./no-app-support-queueable-actions.md"
 ---
 
 # Archivio `Modules.bak/` — Notify

@@ -1,3 +1,23 @@
+---
+title: "Miglioramenti UI/UX per MailTemplateResource"
+type: concept
+tags: [filament, enhancements]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament-ui-enhancements miglioramenti ui/ux per mailtemplateresource"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./email-best-practices.md"
+  - "./email-layouts-best-practices.md"
+  - "./email-templates-best-practices.md"
+  - "./email-templates-guide.md"
+  - "./email-templates-update.md"
+  - "./filament-slug-generation.md"
+  - "./html-email-compatibility.md"
+  - "./implementation-notes.md"
+---
+
 # Miglioramenti UI/UX per MailTemplateResource
 
 ## Componenti Filament Consigliati

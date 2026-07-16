@@ -1,7 +1,13 @@
 ---
-module: theme
-topic: lang-link
-canonical: ../../../Themes/docs/shared-components/algolia-docsearch-Modules.md
+title: "Lang Link"
+module: "Tenant"
+type: concept
+tags: [lang, link]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "lang link"
+related:
+  - "./phpstan-corrections-january.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/algolia-docsearch-Modules.md
+

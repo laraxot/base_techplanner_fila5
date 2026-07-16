@@ -1,3 +1,23 @@
+---
+title: "Convenzioni dei Path in Laravel e"
+type: concept
+tags: [laravel, path, conventions]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "laravel-path-conventions convenzioni dei path in laravel e"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./acronym-naming-conventions.md"
+  - "./filament-naming-conventions.md"
+  - "./filament-template-conventions.md"
+  - "./form-schema-conventions.md"
+  - "./inheritance-conventions.md"
+  - "./kdown-linking-conventions.md"
+  - "./markdown-linking-conventions.md"
+  - "./naming-conventions.md"
+---
+
 # Convenzioni dei Path in Laravel e 
 
 ## Regole Fondamentali per i Path di Cartelle

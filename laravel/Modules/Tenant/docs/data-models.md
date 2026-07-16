@@ -1,7 +1,12 @@
 ---
-module: theme
-topic: data-models
-canonical: ../../../Themes/docs/shared-components/.gitkeep
+title: "Data Models"
+module: "Tenant"
+type: concept
+tags: [data, models]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "data models"
+related:
+  - "./phpstan-corrections-january.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep

@@ -1,3 +1,15 @@
+---
+title: "MCP Server Index - FixCity Project"
+type: concept
+tags: [index]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "index mcp server index - fixcity project"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+---
+
 # MCP Server Index - FixCity Project
 
 **Purpose**: Central index for all MCP server documentation  

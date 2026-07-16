@@ -1,3 +1,21 @@
+---
+title: "Standard Form di Autenticazione"
+type: rule
+tags: [auth, form, standards]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "auth-form-standards standard form di autenticazione"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./accessibility.md"
+  - "./auth-form-standards-1.md"
+  - "./form-standards-1.md"
+  - "./form-standards.md"
+  - "./performance.md"
+  - "./ui-standards.md"
+---
+
 # Standard Form di Autenticazione
 
 ## Principi di Design
@@ -210,7 +228,7 @@
    - Sanitizzazione input
 
 ## Collegamenti
-- [Form Standards](./form_standards.md)
+- [Form Standards](./form-standards-1.md)
 - [UI Standards](./ui-standards.md)
 - [Accessibility](./accessibility.md)
 # Standard Form di Autenticazione
@@ -425,6 +443,6 @@
    - Sanitizzazione input
 
 ## Collegamenti
-- [Form Standards](./form_standards.md)
+- [Form Standards](./form-standards-1.md)
 - [UI Standards](./ui-standards.md)
 - [Accessibility](./accessibility.md)

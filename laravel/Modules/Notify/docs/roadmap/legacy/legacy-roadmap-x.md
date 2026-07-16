@@ -1,3 +1,18 @@
+---
+title: "🔔 NOTIFY MODULE - ROADMAP 2025"
+type: concept
+tags: [legacy, roadmap]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "legacy-roadmap-x 🔔 notify module - roadmap 2025"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./legacy-roadmap-ands.md"
+  - "./legacy-roadmap-conflict.md"
+  - "./legacy-roadmap.md"
+---
+
 # 🔔 NOTIFY MODULE - ROADMAP 2025
 
 **Modulo**: Notify (Notification System & Communication)  

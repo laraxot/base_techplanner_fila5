@@ -3,19 +3,24 @@
 declare(strict_types=1);
 
 use Illuminate\Support\Facades\DB;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 test('verify database connections config', function () {
-    $sqlitePath = database_path('fixcity_data.sqlite');
-    $user = config('database.connections.user.database');
-    $media = config('database.connections.media.database');
+    $userDatabase = config('database.connections.user.database');
+    $defaultDriver = config('database.connections.mysql.driver');
+    $userDriver = config('database.connections.user.driver');
 
-    Assert::assertSame($sqlitePath, $user);
-    Assert::assertSame($sqlitePath, $media);
+    Assert::assertIsString($userDatabase);
+    Assert::assertSame('mysql', $defaultDriver);
+    Assert::assertSame('mysql', $userDriver);
+    Assert::assertNotSame('sqlite', $userDriver);
+
     $resolvedUser = DB::connection('user')->getDatabaseName();
-    Assert::assertSame($sqlitePath, $resolvedUser);
+    Assert::assertSame($userDatabase, $resolvedUser);
+
     $profilesExists = DB::connection('user')->getSchemaBuilder()->hasTable('profiles');
     $tenantsExists = DB::connection('user')->getSchemaBuilder()->hasTable('tenants');
 

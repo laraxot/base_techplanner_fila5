@@ -11,9 +11,9 @@ use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Schema;
+use Modules\Tenant\Actions\Config\FilterConfigStringKeysAction;
 use Modules\Tenant\Actions\Config\GetTenantConfigNamesAction;
-use Modules\Tenant\Services\Config\ConfigStringKeyFilter;
-use Modules\Tenant\Services\TenantService;
+use Modules\Tenant\Actions\Config\ResolveTenantConfigValueAction;
 use Modules\Xot\Providers\XotBaseServiceProvider;
 use Nwidart\Modules\Facades\Module;
 use Nwidart\Modules\Laravel\Module as LaravelModule;
@@ -49,12 +49,13 @@ class TenantServiceProvider extends XotBaseServiceProvider
 
     public function registerMorphMap(): void
     {
-        $map = TenantService::config('morph_map');
+        $map = app(ResolveTenantConfigValueAction::class)->execute('morph_map');
         if (! \is_array($map)) {
             $map = [];
         }
 
-        Relation::morphMap($this->buildMorphMap($map));
+        /** @var array<string, mixed> $map */
+        Relation::morphMap($this->buildMorphMap(app(FilterConfigStringKeysAction::class)->execute($map)));
     }
 
     public function registerDB(): void
@@ -90,7 +91,7 @@ class TenantServiceProvider extends XotBaseServiceProvider
 
             $configName = $config['name'];
             if (is_string($configName)) {
-                TenantService::config($configName);
+                app(ResolveTenantConfigValueAction::class)->execute($configName);
             }
         }
     }
@@ -115,7 +116,7 @@ class TenantServiceProvider extends XotBaseServiceProvider
      */
     private function loadTenantDatabaseConfig(string $preMergeDefaultConn): array
     {
-        $raw = TenantService::config('database');
+        $raw = app(ResolveTenantConfigValueAction::class)->execute('database');
         /** @var array<string, mixed> $data */
         $data = is_array($raw) ? $raw : [];
 
@@ -127,12 +128,11 @@ class TenantServiceProvider extends XotBaseServiceProvider
             Arr::set($data, 'connections.user', Arr::get($data, 'connections.user_'.$default));
         }
 
-        return ConfigStringKeyFilter::onlyStringKeys($data);
+        return app(FilterConfigStringKeysAction::class)->execute($data);
     }
 
     /**
      * @param  array<string, mixed>  $data
-     *
      * @return array<string, mixed>
      */
     private function mergeModuleConnections(array $data, string $defaultConnection): array
@@ -171,8 +171,7 @@ class TenantServiceProvider extends XotBaseServiceProvider
     }
 
     /**
-     * @param  array<mixed, mixed>  $map
-     *
+     * @param  array<string, mixed>  $map
      * @return array<string, class-string<Model>>
      */
     private function buildMorphMap(array $map): array

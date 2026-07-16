@@ -10,9 +10,9 @@
 | Assistant | Original File | Split Files | Index |
 |-----------|--------------|----|----|
 | BMad Agents | [AGENTS.md](../../../AGENTS.md) | 32 files | [agents/INDEX.md](agents/INDEX.md) + [tasks/INDEX.md](tasks/INDEX.md) |
-| Claude/Laravel Boost | [CLAUDE.md](../../../docs/CLAUDE.md) | 21 files | [claude/INDEX.md](claude/INDEX.md) |
-| Gemini | [GEMINI.md](../../../laravel/GEMINI.md) | 14 files | [gemini/INDEX.md](gemini/INDEX.md) |
-| Qwen | [QWEN.md](../../../QWEN.md) | 1 file (no split needed) | — |
+| Claude/Laravel Boost | [claude.md](../../../docs/claude.md) | 21 files | [claude/INDEX.md](claude/INDEX.md) |
+| Gemini | [gemini.md](../../../laravel/gemini.md) | 14 files | [gemini/INDEX.md](gemini/INDEX.md) |
+| Qwen | [qwen.md](../../../qwen.md) | 1 file (no split needed) | — |
 
 **Total**: 68 split files across 4 assistants
 
@@ -52,7 +52,7 @@
 │   ├── foundation-rules.md
 │   ├── ... (11 more)
 └── qwen/                       ← Qwen rules (no split needed)
-    └── (referenced from ../../../QWEN.md)
+    └── (referenced from ../../../qwen.md)
 ```
 
 ---
@@ -61,8 +61,8 @@
 
 The original files were very large:
 - **AGENTS.md**: 5,349 lines → 32 focused files
-- **CLAUDE.md**: 833 lines → 21 focused files
-- **GEMINI.md**: 581 lines → 14 focused files
+- **claude.md**: 833 lines → 21 focused files
+- **gemini.md**: 581 lines → 14 focused files
 
 Splitting improves:
 - **Readability**: Each file focuses on one topic
@@ -104,7 +104,7 @@ Every split file contains links back to:
 ### Changelog
 | Date | Change | Author |
 |------|--------|--------|
-| 2026-04-11 | Initial split of AGENTS.md, CLAUDE.md, GEMINI.md | Qwen |
+| 2026-04-11 | Initial split of AGENTS.md, claude.md, gemini.md | Qwen |
 
 ---
 

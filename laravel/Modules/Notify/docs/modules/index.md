@@ -1,3 +1,20 @@
+---
+title: "📦 Moduli del Sistema"
+type: concept
+tags: [index]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "index 📦 moduli del sistema"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./activity.md"
+  - "./ai.md"
+  - "./cms.md"
+  - "./themes-sixteen.md"
+  - "./ui.md"
+---
+
 # 📦 Moduli del Sistema
 
 > **Architettura**: Nwidart + Laraxot - Modular Monolith

@@ -1,3 +1,23 @@
+---
+title: "effetcts"
+type: concept
+tags: [effetcts]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "effetcts effetcts"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./api.md"
+  - "./blocks.md"
+  - "./carousel-slider-1.md"
+  - "./carousel-slider.md"
+  - "./chunk.md"
+  - "./ci.md"
+  - "./custom-firm-fields-1.md"
+  - "./custom-firm-fields.md"
+---
+
 # effetcts
 
 <!-- Contenuto migrato da _docs/effetcts.txt -->

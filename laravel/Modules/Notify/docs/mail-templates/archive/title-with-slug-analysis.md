@@ -1,3 +1,23 @@
+---
+title: "Analisi del Pacchetto Filament Title With Slug"
+type: concept
+tags: [title, slug, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "title-with-slug-analysis analisi del pacchetto filament title with slug"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./email-best-practices.md"
+  - "./email-layouts-best-practices.md"
+  - "./email-templates-best-practices.md"
+  - "./email-templates-guide.md"
+  - "./email-templates-update.md"
+  - "./filament-slug-generation.md"
+  - "./filament-ui-enhancements.md"
+  - "./html-email-compatibility.md"
+---
+
 # Analisi del Pacchetto Filament Title With Slug
 
 ## Panoramica

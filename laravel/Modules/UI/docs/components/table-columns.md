@@ -1,3 +1,23 @@
+---
+title: "Table Columns Components"
+type: concept
+tags: [table, columns]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "table-columns table columns components"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./address-field-1.md"
+  - "./address-field.md"
+  - "./blade-component-registration.md"
+  - "./filament-usage.md"
+  - "./filament.md"
+  - "./file-upload.md"
+  - "./footer.md"
+  - "./full-calendar-1.md"
+---
+
 # Table Columns Components
 
 ## Overview
@@ -164,7 +184,7 @@ use Modules\UI\Filament\Tables\Columns\SelectStateColumn;
 ## Related Documentation
 - [State Management](../state-transitions.md)
 - [Filament Components](../filament-components.md)
-- [UI Architecture](../architecture_rules.md)
+- [UI Architecture](../architecture-rules-1.md)
 - [Accessibility Guidelines](../accessibility.md)
 ---
 

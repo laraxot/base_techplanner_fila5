@@ -1,3 +1,22 @@
+---
+title: "Task: Filament v5 Alignment (UI Module)"
+type: concept
+tags: [filament, alignment]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament-v5-alignment task: filament v5 alignment (ui module)"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./001-design-system-components.md"
+  - "./cleanup-redundant-files.md"
+  - "./increase-test-coverage.md"
+  - "./refactor-complex-components.md"
+  - "./tasks-index.md"
+  - "./ui-cleanup-docs.md"
+  - "./ui-filament-v5.md"
+---
+
 # Task: Filament v5 Alignment (UI Module)
 
 ## 📋 Obiettivo

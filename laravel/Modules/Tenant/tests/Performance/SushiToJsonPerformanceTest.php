@@ -8,8 +8,8 @@ use Exception;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\File;
 use Mockery;
+use Modules\Tenant\Actions\Config\GetTenantFilePathAction;
 use Modules\Tenant\Models\TestSushiModel;
-use Modules\Tenant\Services\TenantService;
 use Modules\Tenant\Tests\TestCase;
 
 use function Safe\json_decode;
@@ -17,7 +17,6 @@ use function Safe\json_decode;
 uses(TestCase::class, DatabaseTransactions::class);
 
 beforeEach(function (): void {
-    /** @var TestCase $this */
     $this->model = new TestSushiModel();
     $this->testDirectory = storage_path('tests/sushi-json-performance');
     $this->testJsonPath = $this->testDirectory.'/test_sushi.json';
@@ -27,15 +26,14 @@ beforeEach(function (): void {
     }
 
     $jsonPath = $this->testJsonPath;
-    $mock = Mockery::mock(TenantService::class);
-    tenantMockExpectation($mock, 'filePath')
+    $mock = Mockery::mock(GetTenantFilePathAction::class);
+    tenantMockExpectation($mock, 'execute')
         ->with('database/content/test_sushi.json')
         ->andReturn($jsonPath);
-    app()->instance(TenantService::class, $mock);
+    app()->instance(GetTenantFilePathAction::class, $mock);
 });
 
 afterEach(function (): void {
-    /** @var TestCase $this */
     if (File::exists($this->testJsonPath)) {
         File::delete($this->testJsonPath);
     }
@@ -84,7 +82,6 @@ function createTestData(int $recordCount): array
 }
 
 it('handles small datasets efficiently', function (): void {
-    /** @var TestCase $this */
     $smallData = createTestData(10);
 
     $startTime = microtime(true);
@@ -104,7 +101,6 @@ it('handles small datasets efficiently', function (): void {
 });
 
 it('handles medium datasets efficiently', function (): void {
-    /** @var TestCase $this */
     $mediumData = createTestData(100);
 
     $startTime = microtime(true);
@@ -124,7 +120,6 @@ it('handles medium datasets efficiently', function (): void {
 });
 
 it('handles large datasets efficiently', function (): void {
-    /** @var TestCase $this */
     $largeData = createTestData(1000);
 
     $startTime = microtime(true);
@@ -144,7 +139,6 @@ it('handles large datasets efficiently', function (): void {
 });
 
 it('manages memory usage efficiently', function (): void {
-    /** @var TestCase $this */
     $initialMemory = memory_get_usage();
 
     // Crea dataset grande
@@ -177,7 +171,6 @@ it('manages memory usage efficiently', function (): void {
 });
 
 it('handles different file sizes efficiently', function (): void {
-    /** @var TestCase $this */
     $sizes = [10, 50, 100, 250, 500];
 
     foreach ($sizes as $size) {
@@ -211,7 +204,6 @@ it('handles different file sizes efficiently', function (): void {
 });
 
 it('handles concurrent access efficiently', function (): void {
-    /** @var TestCase $this */
     $testData = createTestData(100);
 
     // Salva dati iniziali
@@ -236,7 +228,6 @@ it('handles concurrent access efficiently', function (): void {
 });
 
 it('parses json efficiently', function (): void {
-    /** @var TestCase $this */
     $testData = createTestData(200);
 
     // Salva dati
@@ -263,7 +254,6 @@ it('parses json efficiently', function (): void {
 });
 
 it('normalizes data efficiently', function (): void {
-    /** @var TestCase $this */
     $testData = createTestData(150);
 
     // Salva dati
@@ -290,7 +280,6 @@ it('normalizes data efficiently', function (): void {
 
 it('handles errors efficiently', function (): void {
     // Testa con file JSON malformato
-    /** @var TestCase $this */
     File::put($this->sushiJsonPath(), 'invalid json content');
 
     $startTime = microtime(true);
@@ -305,7 +294,6 @@ it('handles errors efficiently', function (): void {
 });
 
 it('performs file operations efficiently', function (): void {
-    /** @var TestCase $this */
     $testData = createTestData(300);
 
     // Testa operazioni di file
@@ -331,7 +319,6 @@ it('performs file operations efficiently', function (): void {
 });
 
 it('scales efficiently with data size', function (): void {
-    /** @var TestCase $this */
     $sizes = [10, 25, 50, 100, 200];
     $results = [];
 
@@ -380,7 +367,6 @@ it('scales efficiently with data size', function (): void {
 });
 
 it('meets performance benchmarks', function (): void {
-    /** @var TestCase $this */
     $benchmarks = [
         'small' => ['size' => 10, 'max_save' => 0.05, 'max_load' => 0.02],
         'medium' => ['size' => 100, 'max_save' => 0.2, 'max_load' => 0.1],
@@ -410,7 +396,6 @@ it('meets performance benchmarks', function (): void {
 });
 
 it('does not create memory leaks', function (): void {
-    /** @var TestCase $this */
     $initialMemory = memory_get_usage();
 
     // Esegui operazioni multiple

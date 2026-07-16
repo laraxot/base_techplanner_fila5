@@ -1,3 +1,15 @@
+---
+title: "📚 JpGraph Class Reference - Analisi Completta 2024"
+type: guide
+tags: ['charts', 'pdf', 'testing']
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "jpgraph class reference - analisi completta 2024"
+related:
+  - "./00-INDEX.md"
+  - "./00-index.md"
+---
+
 # 📚 JpGraph Class Reference - Analisi Completta 2024
 
 ## 🎯 **Introduzione alla Documentazione JpGraph**

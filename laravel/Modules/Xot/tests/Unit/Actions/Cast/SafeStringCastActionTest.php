@@ -3,9 +3,10 @@
 declare(strict_types=1);
 
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(Modules\Xot\Tests\TestCase::class);
+uses(TestCase::class);
 
 it('casts various values to string correctly', function (): void {
     $action = app(SafeStringCastAction::class);

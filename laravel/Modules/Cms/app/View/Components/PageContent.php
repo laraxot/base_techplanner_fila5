@@ -9,6 +9,7 @@ use Illuminate\View\Component;
 use Modules\Cms\Datas\BlockData;
 use Modules\Cms\Models\Page as PageModel;
 use Modules\Xot\Datas\XotData;
+use Spatie\LaravelData\DataCollection;
 use Webmozart\Assert\Assert;
 
 class PageContent extends Component
@@ -34,7 +35,7 @@ class PageContent extends Component
         }
         $collected = BlockData::collect($blocks);
         /** @var array<int, BlockData> $indexedBlocks */
-        $indexedBlocks = array_values($collected instanceof \Spatie\LaravelData\DataCollection ? $collected->all() : (array) $collected);
+        $indexedBlocks = array_values($collected instanceof DataCollection ? $collected->all() : (array) $collected);
         $this->blocks = $indexedBlocks;
     }
 
@@ -54,6 +55,7 @@ class PageContent extends Component
          * ,'paths'=>$paths
          * ]);
          */
+        /** @phpstan-var view-string */
         $view = 'cms::components.page-content';
         $view_params = [];
 

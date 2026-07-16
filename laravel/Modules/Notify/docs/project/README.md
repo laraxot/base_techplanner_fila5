@@ -26,10 +26,10 @@ This directory contains project-wide configuration and setup documentation for t
 | File | Description | Category |
 |------|-------------|----------|
 | [`AGENTS.md`](AGENTS.md) | AI agents configuration | AI |
-| [`AI_AGENT_LESSONS_LEARNED.md`](AI_AGENT_LESSONS_LEARNED.md) | AI agent learnings | AI |
-| [`AI_SKILLS_AND_PLUGINS_COMPLETE.md`](AI_SKILLS_AND_PLUGINS_COMPLETE.md) | AI skills setup | AI |
-| [`COMMIT_MESSAGE.md`](COMMIT_MESSAGE.md) | Commit message guidelines | Git |
-| [`VITE_FIX_AND_EXECUTION_PLAN.md`](VITE_FIX_AND_EXECUTION_PLAN.md) | Vite build fixes | Build |
+| [`ai-agent-lessons-learned.md`](ai-agent-lessons-learned.md) | AI agent learnings | AI |
+| [`ai-skills-and-plugins-complete.md`](ai-skills-and-plugins-complete.md) | AI skills setup | AI |
+| [`commit-message.md`](commit-message.md) | Commit message guidelines | Git |
+| [`vite-fix-and-execution-plan.md`](vite-fix-and-execution-plan.md) | Vite build fixes | Build |
 
 ### Infrastructure
 
@@ -41,26 +41,26 @@ This directory contains project-wide configuration and setup documentation for t
 
 | File | Description | Category |
 |------|-------------|----------|
-| [`2-1-1-PLAN.md`](2-1-1-PLAN.md) | Sprint planning | Planning |
-| [`2-1-CONTEXT.md`](2-1-CONTEXT.md) | Project context | Planning |
-| [`PROJECT.md`](PROJECT.md) | Project overview | Planning |
-| [`REQUIREMENTS.md`](REQUIREMENTS.md) | Requirements | Planning |
-| [`ROADMAP.md`](ROADMAP.md) | Project roadmap | Planning |
-| [`STATE.md`](STATE.md) | Current state | Planning |
+| [`2-1-1-plan.md`](2-1-1-plan.md) | Sprint planning | Planning |
+| [`2-1-context.md`](2-1-context.md) | Project context | Planning |
+| [`project.md`](project.md) | Project overview | Planning |
+| [`requirements.md`](requirements.md) | Requirements | Planning |
+| [`roadmap.md`](roadmap.md) | Project roadmap | Planning |
+| [`state.md`](state.md) | Current state | Planning |
 
 ### Philosophy
 
 | File | Description | Category |
 |------|-------------|----------|
 | [`philosophy.md`](philosophy.md) | Project philosophy | Guidelines |
-| [`FIXCITY_IMPROVEMENT_PLAN.md`](FIXCITY_IMPROVEMENT_PLAN.md) | Improvement plan | Planning |
-| [`FIXCITY_IMPROVEMENT_START_HERE.md`](FIXCITY_IMPROVEMENT_START_HERE.md) | Where to start | Planning |
+| [`fixcity-improvement-plan.md`](fixcity-improvement-plan.md) | Improvement plan | Planning |
+| [`fixcity-improvement-start-here.md`](fixcity-improvement-start-here.md) | Where to start | Planning |
 
 ### Integrations
 
 | File | Description | Category |
 |------|-------------|----------|
-| [`NOTEBOOKLM_SETUP_COMPLETE.md`](NOTEBOOKLM_SETUP_COMPLETE.md) | NotebookLM setup | AI |
+| [`notebooklm-setup-complete.md`](notebooklm-setup-complete.md) | NotebookLM setup | AI |
 | [`notebooklm-integration.md`](notebooklm-integration.md) | NotebookLM integration | AI |
 
 ---
@@ -122,9 +122,9 @@ echo "127.0.0.1 fixcity.local" | sudo tee -a /etc/hosts
 
 **AI & Agents:**
 - [`AGENTS.md`](AGENTS.md)
-- [`AI_AGENT_LESSONS_LEARNED.md`](AI_AGENT_LESSONS_LEARNED.md)
-- [`AI_SKILLS_AND_PLUGINS_COMPLETE.md`](AI_SKILLS_AND_PLUGINS_COMPLETE.md)
-- [`NOTEBOOKLM_SETUP_COMPLETE.md`](NOTEBOOKLM_SETUP_COMPLETE.md)
+- [`ai-agent-lessons-learned.md`](ai-agent-lessons-learned.md)
+- [`ai-skills-and-plugins-complete.md`](ai-skills-and-plugins-complete.md)
+- [`notebooklm-setup-complete.md`](notebooklm-setup-complete.md)
 - [`notebooklm-integration.md`](notebooklm-integration.md)
 
 **Configuration:**
@@ -132,21 +132,21 @@ echo "127.0.0.1 fixcity.local" | sudo tee -a /etc/hosts
 - [`kilo-configuration.md`](kilo-configuration.md)
 
 **Planning:**
-- [`PROJECT.md`](PROJECT.md)
-- [`REQUIREMENTS.md`](REQUIREMENTS.md)
-- [`ROADMAP.md`](ROADMAP.md)
-- [`STATE.md`](STATE.md)
-- [`2-1-1-PLAN.md`](2-1-1-PLAN.md)
-- [`2-1-CONTEXT.md`](2-1-CONTEXT.md)
+- [`project.md`](project.md)
+- [`requirements.md`](requirements.md)
+- [`roadmap.md`](roadmap.md)
+- [`state.md`](state.md)
+- [`2-1-1-plan.md`](2-1-1-plan.md)
+- [`2-1-context.md`](2-1-context.md)
 
 **Development:**
-- [`COMMIT_MESSAGE.md`](COMMIT_MESSAGE.md)
-- [`VITE_FIX_AND_EXECUTION_PLAN.md`](VITE_FIX_AND_EXECUTION_PLAN.md)
+- [`commit-message.md`](commit-message.md)
+- [`vite-fix-and-execution-plan.md`](vite-fix-and-execution-plan.md)
 
 **Philosophy:**
 - [`philosophy.md`](philosophy.md)
-- [`FIXCITY_IMPROVEMENT_PLAN.md`](FIXCITY_IMPROVEMENT_PLAN.md)
-- [`FIXCITY_IMPROVEMENT_START_HERE.md`](FIXCITY_IMPROVEMENT_START_HERE.md)
+- [`fixcity-improvement-plan.md`](fixcity-improvement-plan.md)
+- [`fixcity-improvement-start-here.md`](fixcity-improvement-start-here.md)
 
 ---
 
@@ -157,8 +157,8 @@ echo "127.0.0.1 fixcity.local" | sudo tee -a /etc/hosts
 1. Create markdown file in this directory
 2. Add to this index under appropriate category
 3. Update main index: [`../index.md`](../index.md)
-4. Update modules index: [`../../Modules/docs/DOCUMENTATION_INDEX.md`](../../Modules/docs/DOCUMENTATION_INDEX.md)
-5. Update themes index: [`../../Themes/docs/DOCUMENTATION_INDEX.md`](../../Themes/docs/DOCUMENTATION_INDEX.md)
+4. Update modules index: [`../../Modules/docs/documentation-index.md`](../../Modules/docs/documentation-index.md)
+5. Update themes index: [`../../Themes/docs/documentation-index.md`](../../Themes/docs/documentation-index.md)
 
 ### Review Schedule
 
