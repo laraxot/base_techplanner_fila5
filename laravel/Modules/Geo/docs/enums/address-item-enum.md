@@ -474,3 +474,8 @@ return [
 
 > **Nota**: Questo documento segue la filosofia del progetto: Scopo, Logica, Filosofia, Politica, Religione, Zen.
 > Ogni modifica all'enum DEVE essere documentata e tradotta.
+
+
+## Nota di coerenza dello schema — 2026-07-16
+
+La fonte eseguibile è l’elenco dei casi attivi. `getColumnDefinitions()` deve avere esattamente una definizione per ogni caso attivo e non deve conservare rami per casi rimossi. I campi di contatto (`phone`, `fax`, `mobile`, `pec`, `whatsapp`, `email`) sono esclusi da questo enum e appartengono a Notify; `description`, `formatted_address` e `place_id` non fanno parte dello schema Geo corrente.

@@ -70,15 +70,15 @@ function assertTenantThrows(callable $callback, string $exceptionClass, ?string 
     Assert::fail(sprintf('Expected exception %s was not thrown.', $exceptionClass));
 }
 
-/**
- * @template T of Model
- *
- * @param  T  $model
- * @param  class-string<T>  $class
- * @return T
- */
 if (! function_exists('assertFreshModel')) {
-    function assertFreshModel(Model $model, string $class)
+    /**
+     * @template T of Model
+     *
+     * @param  T  $model
+     * @param  class-string<T>  $class
+     * @return T
+     */
+    function assertFreshModel(Model $model, string $class): Model
     {
         $fresh = $model->fresh();
         Assert::assertInstanceOf($class, $fresh);
