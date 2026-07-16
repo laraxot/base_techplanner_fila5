@@ -2,22 +2,25 @@
 
 declare(strict_types=1);
 
-namespace Modules\Comment\Support;
+namespace Modules\Comment\Actions\Comment;
 
 use Modules\Comment\Datas\CommentConfigData;
+use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\HtmlSanitizer\HtmlSanitizer;
 use Symfony\Component\HtmlSanitizer\HtmlSanitizerConfig;
 
-class CommentSanitizer
+class SanitizeCommentTextAction
 {
-    public function sanitize(string $text): string
+    use QueueableAction;
+
+    public function execute(string $text): string
     {
         return (new HtmlSanitizer($this->buildConfig()))->sanitize($text);
     }
 
     private function buildConfig(): HtmlSanitizerConfig
     {
-        $config = new HtmlSanitizerConfig;
+        $config = new HtmlSanitizerConfig();
         $config = $config->allowRelativeLinks();
         $config = $config->allowRelativeMedias();
         $config = $config->allowSafeElements();

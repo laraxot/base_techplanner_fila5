@@ -7,6 +7,7 @@ namespace Modules\Comment\Datas;
 use Illuminate\Notifications\Notification;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Config;
+use Modules\Comment\Actions\Comment\SanitizeCommentTextAction;
 use Modules\Comment\Models\Comment;
 use Modules\Comment\Models\CommentNotificationSubscription;
 use Modules\Comment\Models\Contracts\CanComment;
@@ -15,7 +16,6 @@ use Modules\Comment\Notifications\ApprovedCommentNotification;
 use Modules\Comment\Notifications\PendingCommentNotification;
 use Modules\Comment\Policies\CommentPolicy;
 use Modules\Comment\Policies\ReactionPolicy;
-use Modules\Comment\Support\CommentSanitizer;
 use Modules\Comment\Transformers\CommentTransformer;
 use Spatie\LaravelData\Attributes\MapInputName;
 use Spatie\LaravelData\Attributes\MapOutputName;
@@ -62,7 +62,7 @@ class CommentConfigData extends Data
     /** @var list<class-string<CommentTransformer>> */
     public array $commentTransformers = [];
 
-    public string $commentSanitizer = CommentSanitizer::class;
+    public string $commentSanitizer = SanitizeCommentTextAction::class;
 
     /** @var list<string> */
     public array $allowedReactions = [];
@@ -122,12 +122,59 @@ class CommentConfigData extends Data
         return new Collection($resolved);
     }
 
-    public function commentSanitizer(): CommentSanitizer
+    public function commentSanitizer(): SanitizeCommentTextAction
     {
         $sanitizer = app($this->commentSanitizer);
-        Assert::isInstanceOf($sanitizer, CommentSanitizer::class);
+        Assert::isInstanceOf($sanitizer, SanitizeCommentTextAction::class);
 
         return $sanitizer;
+    }
+
+    public function showAvatars(): bool
+    {
+        $value = $this->uiSettings['show_avatars'] ?? true;
+
+        return (bool) $value;
+    }
+
+    public function paginationPageName(): string
+    {
+        $value = $this->pagination['page_name'] ?? 'page';
+
+        return is_string($value) ? $value : 'page';
+    }
+
+    public function paginationCount(): int
+    {
+        $value = $this->pagination['results'] ?? 10_000;
+
+        return is_int($value) ? $value : 10_000;
+    }
+
+    public function commentatorModelNameField(): string
+    {
+        $value = $this->models['name'] ?? 'name';
+
+        return is_string($value) && $value !== '' ? $value : 'name';
+    }
+
+    /** @return list<string> */
+    public function allowedReactions(): array
+    {
+        return array_values(array_filter($this->allowedReactions, is_string(...)));
+    }
+
+    /** @return class-string<CanComment>|null */
+    public function commentatorModelClass(): ?string
+    {
+        $class = $this->models['commentator'] ?? null;
+        if (! is_string($class) || $class === '') {
+            return null;
+        }
+        Assert::classExists($class);
+        Assert::subclassOf($class, CanComment::class);
+
+        return $class;
     }
 
     public function pendingCommentNotification(Comment $comment): Notification

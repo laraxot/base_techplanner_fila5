@@ -9,7 +9,7 @@ use Illuminate\Notifications\Notifiable;
 use Modules\Comment\Enums\NotificationSubscriptionType;
 use Modules\Comment\Models\CommentNotificationSubscription;
 use Modules\Comment\Models\Contracts\CanComment;
-use Modules\Comment\Support\CommentatorProperties;
+use Modules\Comment\Datas\CommentatorProperties;
 
 /**
  * Stub CanComment per test unitari — evita Mockery (PHPStan argument.type).

@@ -8,7 +8,7 @@ use Illuminate\Contracts\View\View;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Livewire\Component;
 use Modules\Comment\Models\Comment;
-use Modules\Comment\Support\CommentConfig;
+use Modules\Comment\Datas\CommentConfigData;
 
 class CommentComponent extends Component
 {
@@ -128,7 +128,7 @@ class CommentComponent extends Component
 
     public function toggleReaction(string $reaction): void
     {
-        if (! $this->comment || ! in_array($reaction, CommentConfig::allowedReactions(), true)) {
+        if (! $this->comment || ! in_array($reaction, CommentConfigData::make()->allowedReactions(), true)) {
             return;
         }
 

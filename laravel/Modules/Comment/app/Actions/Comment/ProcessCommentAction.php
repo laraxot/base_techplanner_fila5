@@ -31,6 +31,6 @@ class ProcessCommentAction
             $comment->text = $comment->original_text;
         }
 
-        $comment->text = $config->commentSanitizer()->sanitize($comment->text ?? '');
+        $comment->text = $config->commentSanitizer()->execute($comment->text ?? '');
     }
 }

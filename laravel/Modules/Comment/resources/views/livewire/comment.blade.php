@@ -76,7 +76,7 @@
                         <button type="button" wire:click="delete" class="text-red-600 underline">{{ __('comment::txt.delete') }}</button>
                     @endcan
                     @if($showReactions)
-                        @foreach(\Modules\Comment\Support\CommentConfig::allowedReactions() as $reaction)
+                        @foreach(\Modules\Comment\Datas\CommentConfigData::make()->allowedReactions() as $reaction)
                             <button type="button" wire:click="toggleReaction('{{ $reaction }}')" class="hover:opacity-80">{{ $reaction }}</button>
                         @endforeach
                     @endif

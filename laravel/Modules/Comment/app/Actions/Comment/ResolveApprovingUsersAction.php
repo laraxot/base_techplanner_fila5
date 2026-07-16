@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Comment\Support;
+namespace Modules\Comment\Actions\Comment;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Collection;
@@ -10,32 +10,35 @@ use Modules\Comment\Exceptions\CannotSendPendingCommentNotification;
 use Modules\Comment\Models\Comment;
 use Modules\Comment\Models\Contracts\CanComment;
 use Modules\Comment\Notifications\PendingCommentNotification;
+use Spatie\QueueableAction\QueueableAction;
 
-class CommentApprovingUsersResolver
+class ResolveApprovingUsersAction
 {
+    use QueueableAction;
+
     /** @return Collection<int, CanComment> */
-    public static function resolve(Comment $comment): Collection
+    public function execute(Comment $comment): Collection
     {
         $sendToClosure = PendingCommentNotification::$sendTo;
 
         if (! is_callable($sendToClosure)) {
-            return self::emptyCanCommentCollection();
+            return $this->emptyCanCommentCollection();
         }
 
         $users = once(fn () => $sendToClosure($comment));
 
-        return self::normalizeUsers($users);
+        return $this->normalizeUsers($users);
     }
 
     /** @return Collection<int, CanComment> */
-    private static function normalizeUsers(mixed $users): Collection
+    private function normalizeUsers(mixed $users): Collection
     {
         if (is_iterable($users)) {
-            return self::collectionFromIterable($users);
+            return $this->collectionFromIterable($users);
         }
 
         if (is_object($users)) {
-            return self::collectionFromObject($users);
+            return $this->collectionFromObject($users);
         }
 
         throw CannotSendPendingCommentNotification::doesNotImplementNotifiable();
@@ -44,12 +47,12 @@ class CommentApprovingUsersResolver
     /** @param iterable<mixed> $users
      * @return Collection<int, CanComment>
      */
-    private static function collectionFromIterable(iterable $users): Collection
+    private function collectionFromIterable(iterable $users): Collection
     {
         /** @var Collection<int, CanComment> $collection */
-        $collection = new Collection;
+        $collection = new Collection();
         foreach ($users as $user) {
-            if (! is_object($user) || ! self::isNotifiable($user)) {
+            if (! is_object($user) || ! $this->isNotifiable($user)) {
                 throw CannotSendPendingCommentNotification::doesNotImplementNotifiable();
             }
             if ($user instanceof CanComment) {
@@ -61,9 +64,9 @@ class CommentApprovingUsersResolver
     }
 
     /** @return Collection<int, CanComment> */
-    private static function collectionFromObject(object $users): Collection
+    private function collectionFromObject(object $users): Collection
     {
-        if (! self::isNotifiable($users)) {
+        if (! $this->isNotifiable($users)) {
             throw CannotSendPendingCommentNotification::doesNotImplementNotifiable();
         }
 
@@ -71,16 +74,16 @@ class CommentApprovingUsersResolver
             return new Collection([$users]);
         }
 
-        return self::emptyCanCommentCollection();
+        return $this->emptyCanCommentCollection();
     }
 
     /** @return Collection<int, CanComment> */
-    private static function emptyCanCommentCollection(): Collection
+    private function emptyCanCommentCollection(): Collection
     {
-        return new Collection;
+        return new Collection();
     }
 
-    private static function isNotifiable(object $object): bool
+    private function isNotifiable(object $object): bool
     {
         $traitsUsed = trait_uses_recursive($object);
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Comment\Support;
+namespace Modules\Comment\Datas;
 
 /**
  * @property-read string|null $email

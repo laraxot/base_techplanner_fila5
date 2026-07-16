@@ -15,7 +15,7 @@
                             wire:click="selectUser({{ $user->getKey() }})"
                             class="flex w-full items-center gap-2 px-3 py-2 text-left text-sm hover:bg-gray-100 dark:hover:bg-gray-700"
                         >
-                            <span>{{ $user->{ \Modules\Comment\Support\CommentConfig::commentatorModelNameField() } }}</span>
+                            <span>{{ $user->{ \Modules\Comment\Datas\CommentConfigData::make()->commentatorModelNameField() } }}</span>
                         </button>
                     </li>
                 @endforeach

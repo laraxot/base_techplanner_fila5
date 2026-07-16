@@ -2,13 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Modules\Comment\Support;
+namespace Modules\Comment\Actions\Gravatar;
 
 use Modules\Comment\Datas\CommentConfigData;
+use Spatie\QueueableAction\QueueableAction;
 
-class Gravatar
+class GetGravatarUrlAction
 {
-    public static function url(string $email): string
+    use QueueableAction;
+
+    public function execute(string $email): string
     {
         $defaultImage = (string) (CommentConfigData::make()->gravatar['default_image'] ?? 'mp');
         $segment = md5(strtolower($email));

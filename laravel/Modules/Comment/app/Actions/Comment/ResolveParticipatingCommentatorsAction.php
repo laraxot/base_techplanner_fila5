@@ -2,22 +2,25 @@
 
 declare(strict_types=1);
 
-namespace Modules\Comment\Support;
+namespace Modules\Comment\Actions\Comment;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Collection;
 use Modules\Comment\Models\Comment;
 use Modules\Comment\Models\Contracts\CanComment;
+use Spatie\QueueableAction\QueueableAction;
 
-class CommentParticipatingCommentatorsResolver
+class ResolveParticipatingCommentatorsAction
 {
+    use QueueableAction;
+
     /** @return Collection<int, CanComment> */
-    public static function resolve(Comment $comment): Collection
+    public function execute(Comment $comment): Collection
     {
         $commentable = $comment->commentable;
         if (! is_object($commentable) || ! method_exists($commentable, 'getKey') || ! method_exists($commentable, 'getMorphClass')) {
-            return new Collection;
+            return new Collection();
         }
 
         /** @var Collection<int, CanComment> $participants */
@@ -43,14 +46,14 @@ class CommentParticipatingCommentatorsResolver
             ->flatMap(function (Collection $related, string $class): Collection {
                 $resolvedClass = str_contains($class, '\\') ? $class : Relation::getMorphedModel($class);
                 if (! is_string($resolvedClass) || ! class_exists($resolvedClass)) {
-                    return new Collection;
+                    return new Collection();
                 }
 
                 $ids = $related->pluck('commentator_id')->toArray();
                 /** @var class-string<Model> $modelClass */
                 $modelClass = $resolvedClass;
                 /** @var Model $model */
-                $model = new $modelClass;
+                $model = new $modelClass();
 
                 $resolved = $modelClass::query()
                     ->whereIn($model->getKeyName(), $ids)

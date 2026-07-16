@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Comment\Support;
+namespace Modules\Comment\Actions\Comment;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
@@ -10,29 +10,32 @@ use Modules\Comment\Datas\CommentConfigData;
 use Modules\Comment\Models\Comment;
 use Modules\Comment\Models\Contracts\CanComment;
 use RuntimeException;
+use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\preg_match_all;
 
-class CommentMentioneesResolver
+class ResolveMentioneesAction
 {
+    use QueueableAction;
+
     /** @return Collection<int, CanComment> */
-    public static function resolve(Comment $comment): Collection
+    public function execute(Comment $comment): Collection
     {
         preg_match_all('/data-mention="([^"]+)"/', $comment->original_text, $matches);
         $mentioneeIds = $matches[1];
         if ($mentioneeIds === []) {
-            return new Collection;
+            return new Collection();
         }
 
         $modelClass = CommentConfigData::make()->models['commentator'] ?? null;
         if (! is_string($modelClass) || $modelClass === '' || ! is_a($modelClass, Model::class, true)) {
-            return new Collection;
+            return new Collection();
         }
 
         /** @var class-string<Model> $commentatorClass */
         $commentatorClass = $modelClass;
         /** @var Model $instance */
-        $instance = new $commentatorClass;
+        $instance = new $commentatorClass();
 
         $mentionees = $commentatorClass::query()
             ->whereIn($instance->getKeyName(), $mentioneeIds)

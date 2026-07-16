@@ -15,7 +15,7 @@ use Modules\Comment\Notifications\ApprovedCommentNotification;
 use Modules\Comment\Notifications\PendingCommentNotification;
 use Modules\Comment\Policies\CommentPolicy;
 use Modules\Comment\Policies\ReactionPolicy;
-use Modules\Comment\Support\CommentSanitizer;
+use Modules\Comment\Actions\Comment\SanitizeCommentTextAction;
 use Modules\Comment\Transformers\MarkdownToHtmlTransformer;
 use Modules\Comment\Transformers\MentionsTransformer;
 
@@ -63,7 +63,7 @@ return [
         MentionsTransformer::class,
     ],
 
-    'comment_sanitizer' => CommentSanitizer::class,
+    'comment_sanitizer' => SanitizeCommentTextAction::class,
 
     'allowed_reactions' => [
         '+1',

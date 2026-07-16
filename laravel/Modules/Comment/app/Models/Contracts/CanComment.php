@@ -6,7 +6,7 @@ namespace Modules\Comment\Models\Contracts;
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\Comment\Enums\NotificationSubscriptionType;
-use Modules\Comment\Support\CommentatorProperties;
+use Modules\Comment\Datas\CommentatorProperties;
 
 /**
  * Capacità commentator — owner **Comment** (dominio moderazione/FO).

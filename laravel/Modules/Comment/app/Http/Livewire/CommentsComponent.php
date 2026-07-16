@@ -16,7 +16,7 @@ use Modules\Comment\Enums\NotificationSubscriptionType;
 use Modules\Comment\Models\Comment;
 use Modules\Comment\Models\Contracts\CanComment;
 use Modules\Comment\Models\Contracts\Commentable;
-use Modules\Comment\Support\CommentConfigUi;
+use Modules\Comment\Datas\CommentConfigData;
 
 class CommentsComponent extends Component
 {
@@ -63,7 +63,7 @@ class CommentsComponent extends Component
         $this->showReplies = ! $this->noReplies;
         $this->showReactions = ! $this->noReactions;
         $this->notifyOptions = ! $this->hideNotifyOptions;
-        $this->showAvatars = $this->hideAvatars !== null ? ! $this->hideAvatars : CommentConfigUi::showAvatars();
+        $this->showAvatars = $this->hideAvatars !== null ? ! $this->hideAvatars : CommentConfigData::make()->showAvatars();
 
         $user = auth()->user();
         if ($user instanceof CanComment && $this->model instanceof Commentable) {
@@ -82,7 +82,7 @@ class CommentsComponent extends Component
 
         $this->text = '';
 
-        $pageName = CommentConfigUi::paginationPageName();
+        $pageName = CommentConfigData::make()->paginationPageName();
         if ($this->newestFirst) {
             $this->resetPage($pageName);
         }
@@ -144,13 +144,13 @@ class CommentsComponent extends Component
                 fn (Builder $builder) => $builder->oldest(),
             );
 
-        $perPage = CommentConfigUi::paginationCount();
+        $perPage = CommentConfigData::make()->paginationCount();
 
         /** @var LengthAwarePaginator<int, Comment> $paginator */
         $paginator = $query->paginate(
             $perPage,
             ['*'],
-            CommentConfigUi::paginationPageName(),
+            CommentConfigData::make()->paginationPageName(),
         );
 
         return $paginator;

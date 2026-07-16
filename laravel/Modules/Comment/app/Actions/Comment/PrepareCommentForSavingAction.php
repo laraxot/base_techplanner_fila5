@@ -2,15 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Modules\Comment\Support;
+namespace Modules\Comment\Actions\Comment;
 
 use Illuminate\Support\Facades\Schema;
-use Modules\Comment\Actions\Comment\ProcessCommentAction;
 use Modules\Comment\Models\Comment;
+use Spatie\QueueableAction\QueueableAction;
 
-class CommentSavingPipeline
+class PrepareCommentForSavingAction
 {
-    public static function handle(Comment $comment): void
+    use QueueableAction;
+
+    public function execute(Comment $comment): void
     {
         app(ProcessCommentAction::class)->execute($comment);
 

@@ -11,13 +11,24 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\URL;
+use Modules\Comment\Actions\Comment\ApproveCommentAction;
+use Modules\Comment\Actions\Comment\PrepareCommentForSavingAction;
+use Modules\Comment\Actions\Comment\RejectCommentAction;
+use Modules\Comment\Actions\Comment\ResolveApprovingUsersAction;
+use Modules\Comment\Actions\Comment\ResolveMentioneesAction;
+use Modules\Comment\Actions\Comment\ResolveParticipatingCommentatorsAction;
+use Modules\Comment\Actions\Reaction\DeleteReactionAction;
+use Modules\Comment\Actions\Reaction\FindReactionAction;
+use Modules\Comment\Actions\Reaction\GetReactionCountsAction;
+use Modules\Comment\Actions\Reaction\ReactToCommentAction;
 use Modules\Comment\Database\Factories\CommentFactory;
+use Modules\Comment\Datas\CommentatorProperties;
 use Modules\Comment\Models\Concerns\HasComments;
 use Modules\Comment\Models\Contracts\CanComment;
 use Modules\Comment\Models\Contracts\Commentable;
 use Modules\Comment\Models\Contracts\SupportsCommentNotifications;
-use Modules\Comment\Support\CommentatorProperties;
-use Modules\Comment\Support\CommentModelSupport;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Models\Traits\HasXotFactory;
 
 /**
@@ -67,7 +78,7 @@ class Comment extends Model implements Commentable, SupportsCommentNotifications
     public static function booted(): void
     {
         static::saving(function (Comment $comment): void {
-            CommentModelSupport::onSaving($comment);
+            app(PrepareCommentForSavingAction::class)->execute($comment);
         });
     }
 
@@ -141,25 +152,25 @@ class Comment extends Model implements Commentable, SupportsCommentNotifications
 
     public function findReaction(string $reaction, ?CanComment $commentator = null): ?Reaction
     {
-        return CommentModelSupport::findReaction($this, $reaction, $commentator);
+        return app(FindReactionAction::class)->execute($this, $reaction, $commentator);
     }
 
     /** @return list<array{reaction: string, count: int}> */
     public function reactionCounts(): array
     {
-        return CommentModelSupport::reactionCounts($this);
+        return app(GetReactionCountsAction::class)->execute($this);
     }
 
     public function react(string $reaction, ?CanComment $commentator = null): self
     {
-        CommentModelSupport::react($this, $reaction, $commentator);
+        app(ReactToCommentAction::class)->execute($this, $reaction, $commentator);
 
         return $this;
     }
 
     public function deleteReaction(string $reaction, ?CanComment $commentator = null): self
     {
-        CommentModelSupport::deleteReaction($this, $reaction, $commentator);
+        app(DeleteReactionAction::class)->execute($this, $reaction, $commentator);
 
         return $this;
     }
@@ -169,17 +180,29 @@ class Comment extends Model implements Commentable, SupportsCommentNotifications
      */
     public function participatingCommentators(): Collection
     {
-        return CommentModelSupport::participatingCommentators($this);
+        return app(ResolveParticipatingCommentatorsAction::class)->execute($this);
     }
 
     public function commentableName(): string
     {
-        return CommentModelSupport::commentableName($this);
+        $commentable = $this->commentable;
+        if (is_object($commentable) && method_exists($commentable, 'commentableName')) {
+            return SafeStringCastAction::cast($commentable->commentableName());
+        }
+
+        return '';
     }
 
     public function commentUrl(): string
     {
-        return CommentModelSupport::commentUrl($this);
+        $top = $this->topLevel();
+        $commentable = $top->commentable;
+        $base = '';
+        if (is_object($commentable) && method_exists($commentable, 'commentUrl')) {
+            $base = SafeStringCastAction::cast($commentable->commentUrl());
+        }
+
+        return $base."#comment-{$this->id}";
     }
 
     public function commentatorProperties(): ?CommentatorProperties
@@ -220,14 +243,14 @@ class Comment extends Model implements Commentable, SupportsCommentNotifications
 
     public function approve(): self
     {
-        CommentModelSupport::approve($this);
+        app(ApproveCommentAction::class)->execute($this);
 
         return $this;
     }
 
     public function reject(): self
     {
-        CommentModelSupport::reject($this);
+        app(RejectCommentAction::class)->execute($this);
 
         return $this;
     }
@@ -244,29 +267,41 @@ class Comment extends Model implements Commentable, SupportsCommentNotifications
 
     public function approveUrl(): string
     {
-        return CommentModelSupport::approveUrl($this);
+        return URL::signedRoute('comment::comment.approve', $this, now()->addWeek());
     }
 
     public function rejectUrl(): string
     {
-        return CommentModelSupport::rejectUrl($this);
+        return URL::signedRoute('comment::comment.reject', $this, now()->addWeek());
     }
 
     public function shouldBeAutomaticallyApproved(): bool
     {
-        return CommentModelSupport::shouldBeAutomaticallyApproved($this);
+        if ((bool) config('comments.automatically_approve_all_comments', false)) {
+            return true;
+        }
+
+        $commentator = $this->commentator;
+        if (! $commentator instanceof CanComment) {
+            return false;
+        }
+
+        return $this->getApprovingUsers()->contains(
+            static fn (CanComment $user): bool => $user->getMorphClass() === $commentator->getMorphClass()
+                && $user->getKey() === $commentator->getKey(),
+        );
     }
 
     /** @return Collection<int, CanComment> */
     public function getApprovingUsers(): Collection
     {
-        return CommentModelSupport::approvingUsers($this);
+        return app(ResolveApprovingUsersAction::class)->execute($this);
     }
 
     /** @return Collection<int, CanComment> */
     public function getMentionees(): Collection
     {
-        return CommentModelSupport::mentionees($this);
+        return app(ResolveMentioneesAction::class)->execute($this);
     }
 
     protected static function newFactory(): CommentFactory
