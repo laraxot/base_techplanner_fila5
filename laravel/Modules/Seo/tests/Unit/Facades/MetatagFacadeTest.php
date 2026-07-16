@@ -5,12 +5,12 @@ declare(strict_types=1);
 namespace Modules\Seo\Tests\Unit\Facades;
 
 use Modules\Seo\Facades\Metatag;
-use Modules\Seo\Services\MetatagService;
+use Modules\Seo\Adapters\MetatagManager;
 use PHPUnit\Framework\Assert;
 uses(\Modules\Seo\Tests\TestCase::class);
 
 it('resolves metatag service through facade accessor', function (): void {
-    $service = app(MetatagService::class);
+    $service = app(MetatagManager::class);
 
     Metatag::setTitle('Facade Title');
     Metatag::setDescription('Facade Description');

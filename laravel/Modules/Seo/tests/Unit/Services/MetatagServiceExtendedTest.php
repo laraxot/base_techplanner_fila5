@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Seo\Tests\Unit\Services;
 
-use Modules\Seo\Services\MetatagService;
+use Modules\Seo\Adapters\MetatagManager;
 use PHPUnit\Framework\Assert;
 uses(\Modules\Seo\Tests\TestCase::class);
 
 it('sets all optional seo fields through service', function (): void {
-    $service = new MetatagService;
+    $service = new MetatagManager;
     $published = now()->subDay();
     $modified = now();
 

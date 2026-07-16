@@ -2,12 +2,23 @@
 
 declare(strict_types=1);
 
-namespace Modules\Seo\Services;
+namespace Modules\Seo\Adapters;
 
 use DateTimeInterface;
 use Modules\Seo\Data\MetatagData;
+use Modules\Seo\Facades\Metatag;
 
-class MetatagService
+/**
+ * Metatag facade coordinator.
+ *
+ * Stateful accumulator for the current request's SEO metadata, exposed through
+ * the {@see Metatag} facade. It is intentionally an Adapter
+ * (facade coordinator) and not a QueueableAction: it holds mutable, per-request
+ * state built up by successive setter calls, whereas Actions expose a single
+ * stateless `execute()` entrypoint. See Xot canonical doc
+ * "queueable-action-trait-mandatory" — Facade coordinators live in app/Adapters/.
+ */
+class MetatagManager
 {
     /**
      * The metatag data.
@@ -15,13 +26,11 @@ class MetatagService
     protected MetatagData $metatagData;
 
     /**
-     * Create a new metatag service instance.
-     *
-     * @return void
+     * Create a new metatag manager instance.
      */
     public function __construct()
     {
-        $this->metatagData = new MetatagData;
+        $this->metatagData = new MetatagData();
     }
 
     /**
