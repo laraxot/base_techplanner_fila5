@@ -13,7 +13,7 @@
         @if (Route::has('password.request'))
             <div class="flex justify-end">
                 <a href="{{ route('password.request') }}" class="text-sm font-medium transition-colors duration-200" style="color: #1E5A96;">
-                    {{ __('user::auth.login.forgot_password') }}
+                    {{ __('user::auth.login.forgot_password.text') }}
                 </a>
             </div>
         @endif
@@ -29,11 +29,11 @@
         >
             <span wire:loading wire:target="save" class="flex items-center gap-2 italic">
                 <x-filament::icon icon="heroicon-o-arrow-path" class="animate-spin h-5 w-5" aria-hidden="true" />
-                {{ __('user::auth.login.logging_in') }}
+                {{ __('user::auth.login.logging_in.text') }}
             </span>
 
             <div wire:loading.remove wire:target="save" class="flex items-center gap-2">
-                <span>{{ __('user::auth.login.submit') }}</span>
+                <span>{{ __('user::auth.login.submit.text') }}</span>
                 <x-filament::icon icon="heroicon-o-arrow-right" class="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
             </div>
         </button>
@@ -53,7 +53,7 @@
         </div>
         <div class="relative flex justify-center text-sm font-medium leading-6">
             <span class="bg-white px-4 text-gray-400 font-normal italic">
-                {{ __('user::auth.login.or_continue_with') }}
+                {{ __('user::auth.login.or_continue_with.text') }}
             </span>
         </div>
     </div>
@@ -65,7 +65,7 @@
         >
             <x-filament::icon icon="ui-google" class="w-5 h-5 flex-shrink-0" />
             <span class="font-medium text-gray-700 group-hover:text-gray-900 transition-colors">
-                {{ __('user::auth.login.google') }}
+                {{ __('user::auth.login.google.text') }}
             </span>
         </a>
         @endif
@@ -75,7 +75,7 @@
         >
             <x-filament::icon icon="ui-brands.microsoft" class="w-5 h-5 flex-shrink-0 text-white" />
             <span class="font-medium text-white transition-colors">
-                {{ __('user::auth.login.microsoft') }}
+                {{ __('user::auth.login.microsoft.text') }}
             </span>
         </a>
         @endif
@@ -85,7 +85,7 @@
         >
             <x-filament::icon icon="ui-brands.github" class="w-5 h-5 flex-shrink-0 text-white" />
             <span class="font-medium text-white transition-colors">
-                {{ __('user::auth.login.github') }}
+                {{ __('user::auth.login.github.text') }}
             </span>
         </a>
         @endif
@@ -96,9 +96,9 @@
     @if (Route::has('register'))
         <div class="text-center pt-4">
             <p class="text-sm text-gray-500">
-                {{ __('user::auth.login.no_account') }}
+                {{ __('user::auth.login.no_account.text') }}
                 <a href="{{ route('register') }}" class="font-semibold transition-colors duration-200 ml-1" style="color: #1E5A96;">
-                    {{ __('user::auth.login.create_account') }}
+                    {{ __('user::auth.login.create_account.text') }}
                 </a>
             </p>
         </div>
