@@ -406,25 +406,30 @@ Le traduzioni per l'enum sono definite in:
 - `Modules/Geo/lang/it/address_item_enum.php`
 - `Modules/Geo/lang/de/address_item_enum.php`
 
-Struttura di ogni traduzione:
+Struttura di ogni traduzione (**obbligatorio** l'incapsulamento in `values`, richiesto da `EnumTrait::getIcon()`/`getLabel()`/`getColor()`/`getDescription()` che risolvono la chiave `values.{case}.{campo}`):
 
 ```php
 return [
-    'phone' => [
-        'label' => 'Phone',
-        'description' => 'Phone number',
-        'icon' => 'heroicon-o-phone',
-        'color' => 'primary',
+    'values' => [
+        'phone' => [
+            'label' => 'Phone',
+            'description' => 'Phone number',
+            'icon' => 'heroicon-o-phone',
+            'color' => 'primary',
+        ],
+        'route' => [
+            'label' => 'Street',
+            'description' => 'Street or road name',
+            'icon' => 'heroicon-o-map',
+            'color' => 'success',
+        ],
+        // ... tutti i case dell'enum
     ],
-    'route' => [
-        'label' => 'Street',
-        'description' => 'Street or road name',
-        'icon' => 'heroicon-o-map',
-        'color' => 'success',
-    ],
-    // ... tutti i case dell'enum
+    // 'navigation', 'label', 'plural_label', 'fields', 'actions' restano a livello root, fuori da 'values'
 ];
 ```
+
+> **Errore comune**: se `values` manca, `EnumTrait::transClass()` non trova la chiave e ritorna `fix:{module}::{file}.values.{case}.{campo}` invece del valore reale — causa nota di `BladeUI\Icons\Exceptions\SvgNotFound` quando il campo mancante è `icon`.
 
 ### Aggiungere una Nuova Lingua
 
