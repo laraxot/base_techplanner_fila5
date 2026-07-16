@@ -3,14 +3,25 @@
 declare(strict_types=1);
 
 return [
-    'mail' => [
-        'label' => 'Mail',
-    ],
-    'sms' => [
-        'label' => 'SMS',
-    ],
-    'whatsapp' => [
-        'label' => 'WhatsApp',
+    'values' => [
+        'mail' => [
+            'label' => 'Mail',
+            'color' => 'success',
+            'icon' => 'heroicon-o-envelope',
+            'description' => 'Canale email',
+        ],
+        'sms' => [
+            'label' => 'SMS',
+            'color' => 'info',
+            'icon' => 'heroicon-o-chat-bubble-left-ellipsis',
+            'description' => 'Canale SMS',
+        ],
+        'whatsapp' => [
+            'label' => 'WhatsApp',
+            'color' => 'warning',
+            'icon' => 'heroicon-o-chat-bubble-bottom-center-text',
+            'description' => 'Canale WhatsApp',
+        ],
     ],
     'label' => 'Channel Enum',
     'plural_label' => 'Channel Enum (Plurale)',

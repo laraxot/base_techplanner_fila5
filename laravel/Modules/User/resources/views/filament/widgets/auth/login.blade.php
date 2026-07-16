@@ -18,12 +18,17 @@
             </div>
         @endif
 
-        <!-- Submit Button - Colori espliciti per visibilità (WCAG AA) -->
+        <!--
+            Submit Button - Colori espliciti per visibilità (WCAG AA).
+            Era: background: url('/vendor/geo/img/btn/submit-button-bg.svg') — asset mai esistito
+            nel repo (404), lasciava testo bianco su sfondo trasparente = invisibile.
+            Fix: colore solido esplicito, stesso brand color dei link sopra (#1E5A96).
+        -->
         <button
             type="submit"
             wire:loading.attr="disabled"
             class="w-full py-3 px-5 rounded-xl font-semibold text-white disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 ease-in-out shadow-sm hover:shadow-md transform hover:scale-[1.02] active:scale-[1.00] flex justify-center items-center gap-2 group focus:outline-none focus:ring-4 focus:ring-[#1E5A96]/30"
-            style="background: url('/vendor/geo/img/btn/submit-button-bg.svg') center/cover/auto; background-size: 100%;"
+            style="background: linear-gradient(135deg, #1E5A96 0%, #164675 100%);"
             onmouseover="this.style.transform='scale(1.03)';"
             onmouseout="this.style.transform='scale(1.00)';"
         >

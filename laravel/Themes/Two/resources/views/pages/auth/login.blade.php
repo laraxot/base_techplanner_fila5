@@ -48,10 +48,10 @@ middleware(['guest']);
                 </a>
 
                 <h1 class="text-4xl xl:text-5xl font-bold leading-tight mb-6">
-                    {{ __('user::auth.login.welcome_back') }}
+                    {{ __('user::auth.login.welcome_back.text') }}
                 </h1>
                 <p class="text-lg leading-relaxed max-w-sm" style="color: rgba(255,255,255,0.8);">
-                    {{ __('user::auth.login.welcome_message') }}
+                    {{ __('user::auth.login.welcome_message.text') }}
                 </p>
 
                 {{-- Decorative trust badges --}}
@@ -91,10 +91,10 @@ middleware(['guest']);
                          style="ring: 1px solid rgba(229,231,235,0.8);">
 
                         <h2 id="login-heading" class="text-2xl font-bold mb-2" style="color: #111827;">
-                            {{ __('user::auth.login.title') }}
+                            {{ __('user::auth.login.title.label') }}
                         </h2>
                         <p class="text-sm mb-8" style="color: #6b7280;">
-                            {{ __('Inserisci le tue credenziali per accedere') }}
+                            {{ __('user::auth.login.subtitle.text') }}
                         </p>
 
                         @livewire(\Modules\User\Filament\Widgets\Auth\LoginWidget::class)

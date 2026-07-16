@@ -138,3 +138,8 @@ byte-identico di `tests/Unit/SumTest.php`, entrambi dichiaravano la stessa
 **Maintainer**: Dev Agent 3  
 **Last Updated**: 2026-07-06  
 **Status**: GREEN
+
+
+## PSR-4 su filesystem case-sensitive
+
+Il namespace `Modules\Blog\DataObjects` richiede `app/DataObjects`. Non mantenere copie in `app/dataobjects`: su Linux Composer le indicizza come percorsi distinti ma lo stesso FQCN, generando warning e autoload ambiguo.

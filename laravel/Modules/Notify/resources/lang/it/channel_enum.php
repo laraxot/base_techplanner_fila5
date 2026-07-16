@@ -3,20 +3,25 @@
 declare(strict_types=1);
 
 return [
-    'mail' => [
-        'label' => 'Email',
-        'color' => 'success',
-        'icon' => 'heroicon-o-envelope',
-    ],
-    'sms' => [
-        'label' => 'SMS',
-        'color' => 'info',
-        'icon' => 'heroicon-o-chat-bubble-left-ellipsis',
-    ],
-    'whatsapp' => [
-        'label' => 'WhatsApp',
-        'color' => 'warning',
-        'icon' => 'heroicon-o-chat-bubble-bottom-center-text',
+    'values' => [
+        'mail' => [
+            'label' => 'Email',
+            'color' => 'success',
+            'icon' => 'heroicon-o-envelope',
+            'description' => 'Canale email',
+        ],
+        'sms' => [
+            'label' => 'SMS',
+            'color' => 'info',
+            'icon' => 'heroicon-o-chat-bubble-left-ellipsis',
+            'description' => 'Canale SMS',
+        ],
+        'whatsapp' => [
+            'label' => 'WhatsApp',
+            'color' => 'warning',
+            'icon' => 'heroicon-o-chat-bubble-bottom-center-text',
+            'description' => 'Canale WhatsApp',
+        ],
     ],
     'navigation' => [
         'label' => 'Missing Navigation Label',

@@ -25,6 +25,23 @@ pest()->extend(Tests\TestCase::class)
 
 /*
 |--------------------------------------------------------------------------
+| Module Pest.php helpers (Pest 4 compat)
+|--------------------------------------------------------------------------
+|
+| Pest 4's --test-directory defaults to "tests" and only auto-loads that
+| single directory's Pest.php. Each Modules/{Module}/tests/Pest.php lives
+| outside that tree, so its global helper functions stop being discovered.
+| Require them explicitly here to restore the previous auto-discovery.
+| All module Pest.php helpers must guard declarations with
+| function_exists() to avoid redeclaration collisions across modules.
+*/
+
+foreach (glob(__DIR__.'/../Modules/*/tests/Pest.php') ?: [] as $modulePestFile) {
+    require_once $modulePestFile;
+}
+
+/*
+|--------------------------------------------------------------------------
 | Expectations
 |--------------------------------------------------------------------------
 |

@@ -370,27 +370,32 @@ Le traduzioni sono definite in:
 - `Modules/Notify/lang/it/contact_type_enum.php`
 - `Modules/Notify/lang/de/contact_type_enum.php`
 
-Struttura:
+Struttura (**obbligatorio** l'incapsulamento in `values`, richiesto da `EnumTrait::getIcon()`/`getLabel()`/`getColor()`/`getDescription()` che risolvono la chiave `values.{case}.{campo}`):
 
 ```php
 return [
-    'phone' => [
-        'label' => 'Phone',
-        'description' => 'Landline phone number',
-        'icon' => 'heroicon-o-phone',
-        'color' => 'text-green-600',
-        'hex_color' => '#16a34a',
+    'values' => [
+        'phone' => [
+            'label' => 'Phone',
+            'description' => 'Landline phone number',
+            'icon' => 'heroicon-o-phone',
+            'color' => 'text-green-600',
+            'hex_color' => '#16a34a',
+        ],
+        'email' => [
+            'label' => 'Email',
+            'description' => 'Email address',
+            'icon' => 'heroicon-o-envelope',
+            'color' => 'text-blue-600',
+            'hex_color' => '#2563eb',
+        ],
+        // ... tutti i case dell'enum
     ],
-    'email' => [
-        'label' => 'Email',
-        'description' => 'Email address',
-        'icon' => 'heroicon-o-envelope',
-        'color' => 'text-blue-600',
-        'hex_color' => '#2563eb',
-    ],
-    // ... tutti i case dell'enum
+    // 'navigation', 'label', 'plural_label', 'fields', 'actions' restano a livello root, fuori da 'values'
 ];
 ```
+
+> **Errore comune**: se `values` manca, `EnumTrait::transClass()` non trova la chiave e ritorna `fix:{module}::{file}.values.{case}.{campo}` invece del valore reale — causa nota di `BladeUI\Icons\Exceptions\SvgNotFound` quando il campo mancante è `icon`.
 
 ## Best Practices
 
