@@ -84,11 +84,17 @@ return [
         ],
 
         'user' => [
+            // No 'laravel'/'root' placeholder defaults here on purpose: this
+            // connection is optional per-tenant DB separation. XotBaseMigration
+            // ::getConn() falls back to the default connection when
+            // getDatabaseName() is empty, so a real placeholder default would
+            // make that check always-truthy and mask a missing configuration
+            // as a live (but wrong) MySQL connection attempt at migrate time.
             'driver' => 'mysql',
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE_USER', 'laravel'),
-            'username' => env('DB_USERNAME_USER', 'root'),
+            'database' => env('DB_DATABASE_USER'),
+            'username' => env('DB_USERNAME_USER'),
             'password' => env('DB_PASSWORD_USER', ''),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => env('DB_CHARSET', 'utf8mb4'),
