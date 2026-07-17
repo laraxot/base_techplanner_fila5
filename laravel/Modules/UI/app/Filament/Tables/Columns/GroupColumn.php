@@ -38,7 +38,7 @@ class GroupColumn extends XotBaseColumn
     }
 
     /**
-     * @param  array<int|string, mixed>  $form
+     * @param array<int|string, mixed> $form
      */
     public function schema(array $form): self
     {

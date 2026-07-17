@@ -43,7 +43,7 @@ class IconStateColumn extends XotBaseIconColumn
                         ->options(function (Model $record, string $_state): array {
                             $name = $this->getName();
                             $state = $record->getAttribute($name);
-                            if ($state === null) {
+                            if (null === $state) {
                                 if (! method_exists($record, 'getDefaultStateFor')) {
                                     return [];
                                 }
