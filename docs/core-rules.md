@@ -61,6 +61,7 @@ This is a fundamental rule for maintaining the TechPlanner application. Document
 3. **Type Safety**: Maintain PHPStan compliance at all times
 4. **Architecture Patterns**: Follow established extension and inheritance patterns
 5. **Conventions**: Respect project naming and structural conventions
+6. **Docs Location**: `laravel/` is the runtime tree only. New/generated documentation (reports, censuses, analyses) MUST be written under `docs/` at the repository root, never under `laravel/docs/`. The `laravel/docs/` folder is legacy debt in some projects — its existence does not authorize new writes there. See `.claude/skills/project-docs-location-governance/SKILL.md`.
 
 ## 🔄 Continuous Improvement
 

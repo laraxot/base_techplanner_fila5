@@ -74,7 +74,7 @@
 		"git.repositoryScanMaxDepth": 3,
 		"search.exclude": {
 			"**/node_modules": true,
-			"**/vendor": true,
+			"**/vendor": false,
 			"**/storage/logs": true,
 			"**/storage/framework": true,
 			"**/bootstrap/cache": true,

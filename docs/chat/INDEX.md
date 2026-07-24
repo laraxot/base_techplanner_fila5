@@ -43,6 +43,8 @@ Canon: [multi-agent-coordination-discipline.md](../wiki/how-to/multi-agent-coord
 
 | Data | File | Argomento | Issue |
 |------|------|-----------|-------|
+| 2026-07-24 | [handoff-second-brain-max.md](./handoff-second-brain-max.md) | Second brain max + write-back docs AI/Xot/Sixteen | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
+| 2026-07-24 | [handoff-git-sync-modules.md](./handoff-git-sync-modules.md) | Sync git moduli/temi post-PHPStan + bridge Xot rigenerato | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
 | 2026-07-24 | [handoff-phpstan-modules.md](./handoff-phpstan-modules.md) | PHPStan Modules 55→0 errori | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
 | 2026-07-24 | [handoff-composer-go.md](./handoff-composer-go.md) | composer go agent-safe + lock + gates Seo/Playwright | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
 | 2026-07-24 | [phpstan-modules-post-composer-go-2026-07-24.md](./phpstan-modules-post-composer-go-2026-07-24.md) | PHPStan Modules 90→55 dopo composer go: bridge stale regenerato, RegisterBladeComponentsActionTest fix, root cause per 5 file residui (Notify PHPUnit-legacy, AI scoping, Media drift) | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |

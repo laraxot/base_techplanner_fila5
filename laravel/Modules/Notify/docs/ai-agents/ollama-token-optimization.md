@@ -98,7 +98,7 @@ curl http://localhost:11434/api/chat -d '{
 ## Utilizzo in Laravel con QueueableActions
 
 ### Azioni Disponibili
-Le azioni sono in `Modules\Xot\Actions\AI\Ollama\`:
+Le azioni sono in `Modules\AI\Actions\Ollama\`:
 - `ChatOllamaAction` - Chat conversazionale
 - `GenerateOllamaAction` - Generazione testo
 
@@ -118,7 +118,7 @@ OLLAMA_THINKING=low
 ### Utilizzo
 
 ```php
-use Modules\User\Actions\Ollama\ChatOllamaAction;
+use Modules\AI\Actions\Ollama\ChatOllamaAction;
 
 // Usage standard ottimizzato
 $result = (new ChatOllamaAction())->executeOptimized('tua domanda');
