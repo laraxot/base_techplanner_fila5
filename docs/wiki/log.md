@@ -18,6 +18,8 @@ discussions:
 
 ## 2026-07-24
 
+- **PHPStan Modules → 0 errori** — da 55 a 0 (`analyse Modules --memory-limit=-1`). Fix: AI CompletionAction `$action`, Media rimozione `tests/unit` lowercase, Notify `mockExpectation`→`Expectation`, Tenant/Xot Mockery tipizzato, User migration `list<string>`, Employee Admin mixin, Gdpr probe eliminato. Handoff: `docs/chat/handoff-phpstan-modules.md`.
+- **`composer go` agent-safe** — `update -W` OK; skip `rm migrations`/`serve` (distruttivo/bloccante); gates Seo PHPStan 0 + Pest 33; Playwright screenshot `/it`; Puppeteer Chrome N/A; lock docs + `lock.sh` task/agent args. Handoff: `docs/chat/handoff-composer-go.md`.
 - **Filament 5 schema (`components/schema`)** — canon `concepts/filament-v5-schema-in-blade.md` + memoria `filament-schema-components.md`; verifiche: `filament/schemas` **v5.7.3**, Blade solo grid/fieldset, infolist `{{ $this->infolist }}`, 0 usi `RestrictsFileUploads*` in Modules; corretto `xotbase-schemawidget-pattern.md` (rimossi trait inventati). Handoff: `docs/chat/handoff-filament-v5-schema.md`.
 - **Filament 5 form + gate `view:cache`** — studiata doc ufficiale [components/form](https://filamentphp.com/docs/5.x/components/form); canon root `concepts/filament-v5-form-in-blade.md`; memoria `view-cache-gate-mandatory.md`; rule Cursor + TRIGGER_MAP + validation-post-edit §3d; docs Xot/User/Sixteen/Zero aggiornati. Verifica: `php artisan view:cache` → EXIT 0. Handoff: `docs/chat/handoff-filament-v5-form-view-cache.md`.
 
