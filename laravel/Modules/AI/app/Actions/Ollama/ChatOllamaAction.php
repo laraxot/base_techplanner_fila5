@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Actions\AI\Ollama;
+namespace Modules\AI\Actions\Ollama;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;

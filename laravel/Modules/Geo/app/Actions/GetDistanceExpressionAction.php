@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Actions\Geo;
+namespace Modules\Geo\Actions;
 
 use Illuminate\Contracts\Database\Query\Expression;
-use Modules\Xot\Database\Query\GeoDistanceExpression;
+use Modules\Geo\Database\Query\GeoDistanceExpression;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
