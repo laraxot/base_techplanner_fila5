@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Seo\Data;
+namespace Modules\Seo\Datas;
 
 use Spatie\LaravelData\Data;
 
@@ -30,6 +30,5 @@ class SocialShareData extends Data
         public ?string $hashtags = null,
         public ?string $via = null,
         public array $platforms = ['facebook', 'twitter', 'linkedin', 'whatsapp', 'telegram', 'copy'],
-    ) {
-    }
+    ) {}
 }

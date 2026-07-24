@@ -16,6 +16,11 @@ discussions:
 
 # TechPlanner LLM Wiki Log
 
+## 2026-07-24
+
+- **Filament 5 schema (`components/schema`)** — canon `concepts/filament-v5-schema-in-blade.md` + memoria `filament-schema-components.md`; verifiche: `filament/schemas` **v5.7.3**, Blade solo grid/fieldset, infolist `{{ $this->infolist }}`, 0 usi `RestrictsFileUploads*` in Modules; corretto `xotbase-schemawidget-pattern.md` (rimossi trait inventati). Handoff: `docs/chat/handoff-filament-v5-schema.md`.
+- **Filament 5 form + gate `view:cache`** — studiata doc ufficiale [components/form](https://filamentphp.com/docs/5.x/components/form); canon root `concepts/filament-v5-form-in-blade.md`; memoria `view-cache-gate-mandatory.md`; rule Cursor + TRIGGER_MAP + validation-post-edit §3d; docs Xot/User/Sixteen/Zero aggiornati. Verifica: `php artisan view:cache` → EXIT 0. Handoff: `docs/chat/handoff-filament-v5-form-view-cache.md`.
+
 ## 2026-07-16
 
 - **Contenuto JSON FO dichiarato sacro** — dopo la cancellazione massiva nel commit `d6e43cc`, ricostruiti forward-only i JSON TechPlanner da history, aggiunte rule, memory, skill, documentazione owner Cms/Theme Two e gate di presenza/sintassi. Tracciamento: issue #40, discussion #41.

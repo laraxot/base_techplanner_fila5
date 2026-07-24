@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Modules\Seo\Contracts;
 
 use DateTimeInterface;
-use Modules\Seo\Data\MetatagData;
+use Modules\Seo\Datas\MetatagData;
 
 /**
  * Contratto read-only per i metadati SEO (title, OG, canonical, …).

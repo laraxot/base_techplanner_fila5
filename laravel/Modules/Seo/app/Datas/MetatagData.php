@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Seo\Data;
+namespace Modules\Seo\Datas;
 
 use DateTimeInterface;
 use Illuminate\Support\Arr;

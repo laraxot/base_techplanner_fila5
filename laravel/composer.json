@@ -105,10 +105,11 @@
         "sort-packages": true,
         "allow-plugins": {
             "carthage-software/mago": true,
+            "codewithkyrian/transformers-libsloader": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
             "pestphp/pest-plugin": true,
             "php-http/discovery": true,
-            "wikimedia/composer-merge-plugin": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "wikimedia/composer-merge-plugin": true
         }
     },
     "minimum-stability": "dev",

@@ -8233,7 +8233,6 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Xot/docs/filament-extension-violations.md` — Filament Extension Violations Report
 - `laravel/Modules/Xot/docs/filament-extension.md` — pattern di estensione filament
 - `laravel/Modules/Xot/docs/filament-file-uploads.md` — Gestione dei File Upload in Filament
-- `laravel/Modules/Xot/docs/filament-form-schema-conventions-1.md` — Convenzioni per Form Schema in Filament
 - `laravel/Modules/Xot/docs/filament-form-schema-conventions.md` — Convenzioni per Form Schema in Filament
 - `laravel/Modules/Xot/docs/filament-forms-components-base-creation.md` — Creazione Classi Base Forms Components - [DATE]
 - `laravel/Modules/Xot/docs/filament-guide.md` — Guida a Filament

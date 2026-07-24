@@ -43,6 +43,10 @@ Canon: [multi-agent-coordination-discipline.md](../wiki/how-to/multi-agent-coord
 
 | Data | File | Argomento | Issue |
 |------|------|-----------|-------|
+| 2026-07-24 | [handoff-filament-v5-schema.md](./handoff-filament-v5-schema.md) | Schema Filament 5 (doc ufficiale) + anti-invenzione second brain | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
+| 2026-07-24 | [handoff-filament-v5-form-view-cache.md](./handoff-filament-v5-form-view-cache.md) | Filament 5 form docs + gate view:cache obbligatorio | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
+| 2026-07-24 | [handoff-quality-gates-execution.md](./handoff-quality-gates-execution.md) | Prompt 03 v3 + dedup Job Feature/Unit; drift phpunit↔env.testing | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
+| 2026-07-24 | [handoff-master-prompt-v32.md](./handoff-master-prompt-v32.md) | Master prompt v32: dedup, lock fix, gate sessione eseguito | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
 | 2026-07-24 | [handoff-gitmodules-path-iteration.md](./handoff-gitmodules-path-iteration.md) | Prompt 17: audit path gitmodules + fix Seo conflicts | [#42](https://github.com/laraxot/base_techplanner_fila5/issues/42) |
 | 2026-07-24 | [handoff-prompts-nn-unique-merge.md](./handoff-prompts-nn-unique-merge.md) | Prompt: 1 file per prefisso NN in `bashscripts/tools/prompts/` | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
 | 2026-06-06 | [handoff-bmad-one-migration-per-model.md](./handoff-bmad-one-migration-per-model.md) | /bmad/architecture N modelli = N migrazioni | [#23](https://github.com/laraxot/base_techplanner_fila5/issues/23) |
