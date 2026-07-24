@@ -43,6 +43,7 @@ Canon: [multi-agent-coordination-discipline.md](../wiki/how-to/multi-agent-coord
 
 | Data | File | Argomento | Issue |
 |------|------|-----------|-------|
+| 2026-07-24 | [handoff-token-efficiency.md](./handoff-token-efficiency.md) | Token efficiency 2026: query wrapper, context-mode, write-back AI/Xot/Sixteen, Obsidian lean | — |
 | 2026-07-24 | [handoff-second-brain-max.md](./handoff-second-brain-max.md) | Second brain max + write-back docs AI/Xot/Sixteen | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
 | 2026-07-24 | [handoff-git-sync-modules.md](./handoff-git-sync-modules.md) | Sync git moduli/temi post-PHPStan + bridge Xot rigenerato | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
 | 2026-07-24 | [handoff-phpstan-modules.md](./handoff-phpstan-modules.md) | PHPStan Modules 55→0 errori | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |

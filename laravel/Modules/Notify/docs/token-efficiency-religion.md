@@ -1,5 +1,14 @@
 # Token Optimization — La Religione dell'Efficienza
 
+> **Canonico**: questo è l'unico file attivo su token optimization in
+> `Modules/Notify/docs/`. `TOKEN-OPTIMIZATION-STRATEGY.md.old`,
+> `token-optimization-strategy.md.old` e `token-optimization.md.old`
+> (quest'ultimo già si autodichiarava storico) sono stati rinominati
+> `.old` il 2026-07-24 per deduplicazione — contenuto preservato per
+> riferimento, non cancellato. `token-optimization-strategy.md.old`
+> conteneva un riferimento GitHub errato di un altro progetto
+> (`provtv/base_ptv_fila5`), copiato per errore.
+
 **Status**: Active  
 **Created**: 2026-04-14  
 **Last Updated**: 2026-04-14  
