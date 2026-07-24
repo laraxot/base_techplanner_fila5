@@ -43,6 +43,9 @@ Canon: [multi-agent-coordination-discipline.md](../wiki/how-to/multi-agent-coord
 
 | Data | File | Argomento | Issue |
 |------|------|-----------|-------|
+| 2026-07-24 | [handoff-composer-go.md](./handoff-composer-go.md) | composer go agent-safe + lock + gates Seo/Playwright | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
+| 2026-07-24 | [phpstan-modules-post-composer-go-2026-07-24.md](./phpstan-modules-post-composer-go-2026-07-24.md) | PHPStan Modules 90→55 dopo composer go: bridge stale regenerato, RegisterBladeComponentsActionTest fix, root cause per 5 file residui (Notify PHPUnit-legacy, AI scoping, Media drift) | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
+| 2026-07-24 | [session-gate-blockers-2026-07-24.md](./session-gate-blockers-2026-07-24.md) | Bloccanti residui gate sessione (ide-junction, runtime-psr4) + bug riferimento verify-llm-wiki.sh rotto in 00-master-prompt.md | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
 | 2026-07-24 | [handoff-filament-v5-schema.md](./handoff-filament-v5-schema.md) | Schema Filament 5 (doc ufficiale) + anti-invenzione second brain | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
 | 2026-07-24 | [handoff-filament-v5-form-view-cache.md](./handoff-filament-v5-form-view-cache.md) | Filament 5 form docs + gate view:cache obbligatorio | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
 | 2026-07-24 | [handoff-quality-gates-execution.md](./handoff-quality-gates-execution.md) | Prompt 03 v3 + dedup Job Feature/Unit; drift phpunit↔env.testing | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
