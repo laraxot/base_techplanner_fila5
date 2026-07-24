@@ -1,17 +1,53 @@
-# Conflict Resolution — Module Seo
+---
+title: "Conflict resolution — MetatagFacadeAdapter"
+type: troubleshooting
+module: Seo
+tags: [git, merge-conflict, metatag, facade, forward-only]
+created: 2026-07-24
+updated: 2026-07-24
+qmd: "Seo merge conflict MetatagManager MetatagFacadeAdapter SocialShareWidget"
+issues:
+  - "https://github.com/laraxot/base_techplanner_fila5/issues/42"
+discussions:
+  - "https://github.com/laraxot/base_techplanner_fila5/discussions/43"
+related:
+  - ./wiki/concepts/metatag-data-contract.md
+  - ./wiki/concepts/no-app-support-queueable-actions.md
+  - ../../../../docs/chat/gitmodules-multi-repo-sync.md
+  - ../../../../bashscripts/tools/prompts/17-gitmodules-path-iteration.md
+---
 
-## Summary
-- **Files resolved**: 4
-- **Strategy**: Keep HEAD/local (ours) side
-- **Root cause**: Nested stash-on-merge conflicts
+# Conflict resolution — Metatag facade
 
-## Documentation Files
-- docs/README.md
-- docs/cyclomatic-complexity-report.md
-- docs/duplicate-methods-analysis.md
+## Perché
 
-## Config Files
-- composer.json
+Durante l’iterazione `gitmodules.ini` (prompt 17) risultavano marker `<<<<<<<` in provider, facade, widget e test Seo. HEAD usava `MetatagManager`; `laraxot/dev` usava `MetatagFacadeAdapter` + `MetatagState` + Actions.
 
-## Backlinks
-- [Root conflict resolution report](../../../../docs/conflict-resolution-report.md)
+## Canone scelto
+
+| Pezzo | Scelta | Motivo |
+|-------|--------|--------|
+| Binding | `MetatagFacadeAdapter` + `MetatagState` | Docs modulo + test Feature già su Adapter |
+| Facade accessor | `MetatagFacadeAdapter::class` | API facade → Actions via adapter |
+| Widget | `$view` esplicito + `XotBaseSchemaWidget` | View Blade social-share |
+| Test action | `app(...)->execute()` | Convenzione QueueableAction |
+
+`MetatagManager.php` resta nel tree come codice legacy non wired (candidato Ponytail, non cancellato qui).
+
+## File toccati
+
+- `app/Providers/SeoServiceProvider.php`
+- `app/Facades/Metatag.php`
+- `app/Filament/Widgets/SocialShareWidget.php`
+- test Unit: Providers, Facades, Actions, SocialShareWidget
+
+## Validazione
+
+- Marker PHP Seo: **0**
+- `php -l` OK sui file risolti
+- Pest Seo: fallito per bootstrap Tenant → `Modules/Blog/.../Article.php` mancante (preesistente, fuori Seo)
+
+## Collegamenti
+
+- [metatag-data-contract.md](./wiki/concepts/metatag-data-contract.md)
+- Prompt: [17-gitmodules-path-iteration.md](../../../../bashscripts/tools/prompts/17-gitmodules-path-iteration.md)

@@ -3,7 +3,7 @@ title: "Chat Agenti — Indice handoff"
 type: index
 tags: [chat, handoff, multi-agent, second-brain, coordination]
 created: 2026-06-06
-updated: 2026-06-06
+updated: 2026-07-24
 qmd: "chat index handoff agent session techplanner multi agent coordination github issue same task migrate artisan"
 issues:
   - "https://github.com/laraxot/base_techplanner_fila5/issues/18"
@@ -43,6 +43,8 @@ Canon: [multi-agent-coordination-discipline.md](../wiki/how-to/multi-agent-coord
 
 | Data | File | Argomento | Issue |
 |------|------|-----------|-------|
+| 2026-07-24 | [handoff-gitmodules-path-iteration.md](./handoff-gitmodules-path-iteration.md) | Prompt 17: audit path gitmodules + fix Seo conflicts | [#42](https://github.com/laraxot/base_techplanner_fila5/issues/42) |
+| 2026-07-24 | [handoff-prompts-nn-unique-merge.md](./handoff-prompts-nn-unique-merge.md) | Prompt: 1 file per prefisso NN in `bashscripts/tools/prompts/` | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
 | 2026-06-06 | [handoff-bmad-one-migration-per-model.md](./handoff-bmad-one-migration-per-model.md) | /bmad/architecture N modelli = N migrazioni | [#23](https://github.com/laraxot/base_techplanner_fila5/issues/23) |
 | 2026-06-06 | [handoff-phpstan-migrate-2026-06-06.md](./handoff-phpstan-migrate-2026-06-06.md) | migrate SQLite + PHPStan 0 | [#22](https://github.com/laraxot/base_techplanner_fila5/issues/22) |
 | 2026-06-06 | [handoff-composer-module-dependency-bmad.md](./handoff-composer-module-dependency-bmad.md) | folio→Cms, activitylog→Activity, pdf→Xot | [#16](https://github.com/laraxot/base_techplanner_fila5/issues/16) |

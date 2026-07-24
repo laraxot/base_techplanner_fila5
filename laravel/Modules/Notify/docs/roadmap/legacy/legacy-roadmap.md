@@ -1,18 +1,3 @@
----
-title: "Notify Module Roadmap 2026"
-type: concept
-tags: [legacy, roadmap]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "legacy-roadmap notify module roadmap 2026"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-related:
-  - "./legacy-roadmap-ands.md"
-  - "./legacy-roadmap-conflict.md"
-  - "./legacy-roadmap-x.md"
----
-
 # Notify Module Roadmap 2026
 
 ## 📡 Sacred Philosophy: "One Message, Many Paths"

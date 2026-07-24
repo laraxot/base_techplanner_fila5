@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Auto-generated forbidden paths — do not edit manually
 # Reason: root cleanup policy (see docs/wiki/rules/root-cleanup-policy.md)
 
@@ -17,17 +18,29 @@ docs/workbench
 scripts
 test-results
 tests/.claude-audit
+=======
+>>>>>>> laraxot/dev
 docs/cache/
 cache/
 -e 
 # PHPStan documentation
 docs/phpstan/
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 # Backup files
 *.old
 *.old1
 *.backup
 *.backup.*
 lang/lang/
+<<<<<<< HEAD
+=======
+_docs/
+_docs/
+
+>>>>>>> laraxot/dev
 # Second brain: no-docs-archive (wiki) — non tracciare albero legacy docs/archive/
 **/docs/archive/
 # Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
@@ -38,6 +51,17 @@ lang/lang/
 *.orig
 *.rej
 *~head
+<<<<<<< HEAD
 agentdb.rvf
 tests/AuditCoverage
 # AI/TOOL SCAFFOLD — must never exist in module tree (see docs/wiki/rules/module-theme-root-cleanup.md)
+=======
+
+agentdb.rvf
+tests/AuditCoverage/
+audit-coverage/
+.cursor/
+.vscode/
+.windsurf/
+.devcontainer/
+>>>>>>> laraxot/dev
