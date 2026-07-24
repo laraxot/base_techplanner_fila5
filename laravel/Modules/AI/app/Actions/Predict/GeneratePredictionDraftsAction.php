@@ -7,6 +7,7 @@ namespace Modules\AI\Actions\Predict;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Str;
+use Modules\AI\Actions\Prediction\GetPredictionFallbackTemplatesAction;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
@@ -41,11 +42,6 @@ final class GeneratePredictionDraftsAction
         /** @var string|null $apiKey */
         $apiKey = config('openai.api_key');
         if (! is_string($apiKey) || trim($apiKey) === '') {
-            return $this->fallbackDrafts($count);
-        }
-
-        $apiKey = config('openai.api_key');
-        if (! is_string($apiKey) || $apiKey === '') {
             return $this->fallbackDrafts($count);
         }
 
@@ -174,10 +170,8 @@ PROMPT;
             return $this->fallbackDrafts($expectedCount);
         }
 
-        /** @var array<int, array{title: string, subtitle: string, description: string, category: string, tags: array<int, string>, analysis: string, event_end_date: string, liquidity: int, options: array<int, string>}> $sliced */
-        $sliced = array_slice($drafts, 0, $expectedCount);
-
-        return $sliced;
+        /** @var array<int, array{title: string, subtitle: string, description: string, category: string, tags: array<int, string>, analysis: string, event_end_date: string, liquidity: int, options: array<int, string>}> */
+        return array_slice($drafts, 0, $expectedCount);
     }
 
     private function resolveModel(): string
@@ -277,7 +271,7 @@ PROMPT;
      */
     private function fallbackDrafts(int $count): array
     {
-        $templates = app(GetPredictionDraftFallbackTemplatesAction::class)->execute();
+        $templates = (new GetPredictionFallbackTemplatesAction)->execute();
 
         $drafts = [];
         $usedTitles = [];
@@ -287,6 +281,7 @@ PROMPT;
             $template = $templates[$templateIndex];
 
             // Generate unique title by adding index suffix for duplicates
+            Assert::string($template['title']);
             $baseTitle = $template['title'];
             $title = $baseTitle;
             $suffix = 1;
@@ -300,6 +295,7 @@ PROMPT;
 
             $usedTitles[] = $title;
 
+            Assert::string($template['subtitle']);
             $drafts[] = [
                 'title' => $title,
                 'subtitle' => $template['subtitle'].' ('.($index + 1).')',
@@ -313,10 +309,8 @@ PROMPT;
             ];
         }
 
-        /** @var list<array{title: string, subtitle: string, description: string, category: string, tags: array<int, string>, analysis: string, event_end_date: string, liquidity: int, options: array<int, string>}> $draftsList */
-        $draftsList = $drafts;
-
-        return $draftsList;
+        /** @var list<array{title: string, subtitle: string, description: string, category: string, tags: array<int, string>, analysis: string, event_end_date: string, liquidity: int, options: array<int, string>}> */
+        return $drafts;
     }
 
     private function replaceRegex(string $pattern, string $replacement, string $subject): string

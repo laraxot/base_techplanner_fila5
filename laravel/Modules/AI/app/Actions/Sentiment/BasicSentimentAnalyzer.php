@@ -5,14 +5,11 @@ declare(strict_types=1);
 namespace Modules\AI\Actions\Sentiment;
 
 use Modules\AI\Contracts\SentimentAnalyzer;
-use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\preg_match;
 
 class BasicSentimentAnalyzer implements SentimentAnalyzer
 {
-    use QueueableAction;
-
     /**
      * {@inheritDoc}
      *

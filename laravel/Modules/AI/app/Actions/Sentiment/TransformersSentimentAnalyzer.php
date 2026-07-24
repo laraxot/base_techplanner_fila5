@@ -6,14 +6,11 @@ namespace Modules\AI\Actions\Sentiment;
 
 use Exception;
 use Modules\AI\Contracts\SentimentAnalyzer;
-use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\error_log;
 
 class TransformersSentimentAnalyzer implements SentimentAnalyzer
 {
-    use QueueableAction;
-
     /**
      * {@inheritDoc}
      *
@@ -25,7 +22,7 @@ class TransformersSentimentAnalyzer implements SentimentAnalyzer
             error_log('Transformers sentiment pipeline disabled; using basic fallback.');
         }
 
-        return (new BasicSentimentAnalyzer())->analyze($text);
+        return (new BasicSentimentAnalyzer)->analyze($text);
     }
 
     private function canUseTransformersPipeline(): bool
