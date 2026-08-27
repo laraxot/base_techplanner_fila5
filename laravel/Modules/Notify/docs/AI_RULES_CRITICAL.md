@@ -23,8 +23,15 @@
 
 ```bash
 # After creating/modifying files
+<<<<<<< .merge_file_r8mb31
 cd /var/www/_bases/base_fixcity_fila5
+=======
+<<<<<<< .merge_file_zfMKnI
+cd /var/www/_bases/base_fixcity_fila5
+=======
+>>>>>>> .merge_file_ddVLfC
 cd /var/www/_bases/base_ptv_fila5
+>>>>>>> .merge_file_1NmPTn
 
 # 1. Add all changes
 git add .
@@ -43,8 +50,15 @@ git commit -m "Add feature X with documentation
 git push origin dev
 
 # 5. Verify on GitHub
+<<<<<<< .merge_file_r8mb31
 gh run list --repo laraxot/base_fixcity_fila5
+=======
+<<<<<<< .merge_file_zfMKnI
+gh run list --repo laraxot/base_fixcity_fila5
+=======
+>>>>>>> .merge_file_ddVLfC
 gh run list --repo laraxot/base_ptv_fila5
+>>>>>>> .merge_file_1NmPTn
 ```
 
 ---
@@ -69,8 +83,15 @@ gh run list --repo laraxot/base_ptv_fila5
 sleep 120
 
 # Check workflow status
+<<<<<<< .merge_file_r8mb31
 gh run list --repo laraxot/base_fixcity_fila5
+=======
+<<<<<<< .merge_file_zfMKnI
+gh run list --repo laraxot/base_fixcity_fila5
+=======
+>>>>>>> .merge_file_ddVLfC
 gh run list --repo laraxot/base_ptv_fila5
+>>>>>>> .merge_file_1NmPTn
 
 # View logs
 gh run view <run-id> --log
@@ -276,8 +297,15 @@ git push origin dev
 git log -n 3 --oneline
 
 # Compare with:
+<<<<<<< .merge_file_r8mb31
 # https://github.com/laraxot/base_fixcity_fila5/commits/dev
+=======
+<<<<<<< .merge_file_zfMKnI
+# https://github.com/laraxot/base_fixcity_fila5/commits/dev
+=======
+>>>>>>> .merge_file_ddVLfC
 # https://github.com/laraxot/base_ptv_fila5/commits/dev
+>>>>>>> .merge_file_1NmPTn
 ```
 
 ---

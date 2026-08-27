@@ -4,8 +4,15 @@ type: concept
 tags: [final, summary]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< .merge_file_neGBuu
 qmd: "final-summary 📊 fixcity - riepilogo finale completamento"
+=======
+<<<<<<< .merge_file_L9k7Pk
+qmd: "final-summary 📊 fixcity - riepilogo finale completamento"
+=======
+>>>>>>> .merge_file_YI5nWa
 qmd: "final-summary 📊 ptv - riepilogo finale completamento"
+>>>>>>> .merge_file_jBh97P
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -121,8 +128,15 @@ di eccellenza 2025 per la gestione delle segnalazioni urbane in Italia.
 ## 🏗️ STRUTTURA DOCUMENTAZIONE FINALE
 
 ```
+<<<<<<< .merge_file_neGBuu
 base_fixcity_fila5_mono/
+=======
+<<<<<<< .merge_file_L9k7Pk
+base_fixcity_fila5_mono/
+=======
+>>>>>>> .merge_file_YI5nWa
 base_ptv_fila5_mono/
+>>>>>>> .merge_file_jBh97P
 │
 ├── 📊 ROOT LEVEL (11 docs strategici)
 │   ├── documentation-index.md          ✅ Indice generale
@@ -294,14 +308,28 @@ base_ptv_fila5_mono/
 ### Per Sviluppatori
 - **Quick Start**: [quick-start.md](./quick-start.md)
 - **Documentation Index**: [documentation-index.md](./documentation-index.md)
+<<<<<<< .merge_file_neGBuu
 - **Slack**: #fixcity-dev
+=======
+<<<<<<< .merge_file_L9k7Pk
+- **Slack**: #fixcity-dev
+=======
+>>>>>>> .merge_file_YI5nWa
 - **Slack**: #ptv-dev
+>>>>>>> .merge_file_jBh97P
 
 ### Per Utenti
 - **User Guide**: [USER_GUIDE.md](./laravel/Modules/Fixcity/docs/USER_GUIDE.md)
 - **Admin Guide**: [ADMIN_GUIDE.md](./laravel/Modules/Fixcity/docs/ADMIN_GUIDE.md)
+<<<<<<< .merge_file_neGBuu
 - **Support**: support@fixcity.it
+=======
+<<<<<<< .merge_file_L9k7Pk
+- **Support**: support@fixcity.it
+=======
+>>>>>>> .merge_file_YI5nWa
 - **Support**: support@ptv.it
+>>>>>>> .merge_file_jBh97P
 
 ### Per API Developers
 - **API Documentation**: [API.md](./laravel/Modules/Fixcity/docs/API.md)
@@ -403,12 +431,21 @@ php artisan test --coverage
 ## 📞 CONTATTI
 
 **Team FixCity**
+<<<<<<< .merge_file_neGBuu
 - Email: dev@fixcity.it
 - Slack: #fixcity-dev
 - GitHub: github.com/laraxot/fixcity
+=======
+<<<<<<< .merge_file_L9k7Pk
+- Email: dev@fixcity.it
+- Slack: #fixcity-dev
+- GitHub: github.com/laraxot/fixcity
+=======
+>>>>>>> .merge_file_YI5nWa
 - Email: dev@ptv.it
 - Slack: #ptv-dev
 - GitHub: github.com/laraxot/ptv
+>>>>>>> .merge_file_jBh97P
 
 ---
 

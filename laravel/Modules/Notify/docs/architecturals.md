@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_KUiifH
+=======
 ---
 title: "Pattern Architetturali per le Notifiche"
 module: notify
@@ -7,6 +9,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+>>>>>>> .merge_file_OkzmAv
 # Pattern Architetturali per le Notifiche
 
 Questo documento analizza i pattern architetturali utilizzati nel sistema di notifiche di , con particolare attenzione alla selezione del driver e alla gestione delle dipendenze.

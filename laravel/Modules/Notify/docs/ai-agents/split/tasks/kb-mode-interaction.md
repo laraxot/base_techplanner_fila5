@@ -87,12 +87,21 @@ Or ask me about anything else related to BMad-Method!
 
 ## Cross-References
 
+<<<<<<< .merge_file_LOzH4W
+=======
+<<<<<<< .merge_file_meJVP0
+>>>>>>> .merge_file_i1MmZQ
 - ← [Tasks Index](INDEX.md) — All 22 BMad tasks
 - ← [Agents Index](../../agents/INDEX.md) — 10 agent definitions
 - ← [Main AI Docs Index](../INDEX.md) — Master index
 - ← [../../../../AGENTS.md](../../../../../../../../AGENTS.md) — Original source
+<<<<<<< .merge_file_LOzH4W
+=======
+=======
+>>>>>>> .merge_file_i1MmZQ
 - ← [Tasks Index](index.md) — All 22 BMad tasks
 - ← [Agents Index](../../agents/index.md) — 10 agent definitions
 - ← [Main AI Docs Index](../index.md) — Master index
 - ← [../../../../agents.md](../../../../../../../../agents.md) — Original source
+>>>>>>> .merge_file_7MtnH7
 

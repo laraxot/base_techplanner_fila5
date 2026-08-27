@@ -3,6 +3,17 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Actions;
+<<<<<<< .merge_file_WSKm4i
+use Modules\Notify\Tests\TestCase;
+use function Safe\file_get_contents;
+use function Safe\class_uses;
+use Illuminate\Notifications\Messages\MailMessage;
+use Modules\Notify\Actions\BuildMailMessageAction;
+use PHPUnit\Framework\Assert;
+use Spatie\QueueableAction\QueueableAction;
+
+uses(\Modules\Notify\Tests\TestCase::class);
+=======
 
 use Illuminate\Notifications\Messages\MailMessage;
 use Modules\Notify\Actions\BuildMailMessageAction;
@@ -14,6 +25,7 @@ use Spatie\QueueableAction\QueueableAction;
 use function Safe\class_uses;
 
 uses(TestCase::class)->group('notify-db');
+>>>>>>> .merge_file_12JX7T
 
 describe('BuildMailMessageAction', function () {
     // Test strutturali - non richiede container per la classe
@@ -41,7 +53,11 @@ describe('BuildMailMessageAction', function () {
         $method = $reflection->getMethod('execute');
         $returnType = $method->getReturnType();
 
+<<<<<<< .merge_file_WSKm4i
+        \assertReflectionTypeName($returnType, MailMessage::class);
+=======
         XotBasePest::assertReflectionTypeName($returnType, MailMessage::class);
+>>>>>>> .merge_file_12JX7T
     });
 
     it('has private decodeRichText method', function () {
@@ -53,7 +69,11 @@ describe('BuildMailMessageAction', function () {
 
     it('uses strict types', function () {
         $reflection = new \ReflectionClass(BuildMailMessageAction::class);
+<<<<<<< .merge_file_WSKm4i
+        $content = \notifyReflectionSource($reflection);
+=======
         $content = TestCase::notifyReflectionSource($reflection);
+>>>>>>> .merge_file_12JX7T
         Assert::assertStringContainsString('declare(strict_types=1)', $content);
     });
 
@@ -65,7 +85,11 @@ describe('BuildMailMessageAction', function () {
 
     it('has required imports', function () {
         $reflection = new \ReflectionClass(BuildMailMessageAction::class);
+<<<<<<< .merge_file_WSKm4i
+        $content = \notifyReflectionSource($reflection);
+=======
         $content = TestCase::notifyReflectionSource($reflection);
+>>>>>>> .merge_file_12JX7T
 
         Assert::assertStringContainsString('use Modules\Notify\Actions\NotifyTheme\Get;', $content);
         Assert::assertStringContainsString('use Modules\Notify\Datas\AttachmentData;', $content);

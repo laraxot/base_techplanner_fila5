@@ -40,11 +40,24 @@ Questo documento contiene esempi aggiuntivi di contenuto HTML per template email
 
 <div style="padding: 0 30px 30px;">
     <p>Gentile {{ $name }},</p>
+<<<<<<< .merge_file_O14mgM
+<<<<<<< .merge_file_cbAAuh
+=======
+<<<<<<< .merge_file_xtFB9W
+>>>>>>> .merge_file_CoR1VO
+    
+    <p>Abbiamo ricevuto una richiesta di ripristino della password per il tuo account. Se non hai richiesto questo cambiamento, puoi ignorare questa email e la tua password rimarrà invariata.</p>
+    
+=======
+<<<<<<< .merge_file_O14mgM
+=======
 <<<<<<< .merge_file_cbAAuh
     
     <p>Abbiamo ricevuto una richiesta di ripristino della password per il tuo account. Se non hai richiesto questo cambiamento, puoi ignorare questa email e la tua password rimarrà invariata.</p>
     
 =======
+>>>>>>> .merge_file_UKPqsa
+>>>>>>> .merge_file_CoR1VO
 
     <p>Abbiamo ricevuto una richiesta di ripristino della password per il tuo account. Se non hai richiesto questo cambiamento, puoi ignorare questa email e la tua password rimarrà invariata.</p>
 
@@ -56,9 +69,19 @@ Questo documento contiene esempi aggiuntivi di contenuto HTML per template email
         <h2 style="color: #1e40af; margin: 0 0 15px; font-size: 22px;">Ripristina la tua password</h2>
         <p style="color: #1e40af; margin: 0 0 20px;">Clicca sul pulsante qui sotto per creare una nuova password sicura per il tuo account.</p>
         <a href="{{ $reset_url ?? $action_url }}" style="display: inline-block; background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); color: white; text-decoration: none; padding: 16px 24px; border-radius: 6px; font-size: 18px; font-weight: 600; margin-bottom: 15px;">RIPRISTINA PASSWORD</a>
+<<<<<<< .merge_file_O14mgM
 <<<<<<< .merge_file_cbAAuh
         
 =======
+=======
+<<<<<<< .merge_file_xtFB9W
+        
+=======
+<<<<<<< .merge_file_cbAAuh
+        
+=======
+>>>>>>> .merge_file_UKPqsa
+>>>>>>> .merge_file_CoR1VO
 
 >>>>>>> .merge_file_73VwPr
         <p style="color: #1e40af; margin: 20px 0 10px;">In alternativa, puoi anche inserire il seguente codice di verifica:</p>
@@ -67,12 +90,26 @@ Questo documento contiene esempi aggiuntivi di contenuto HTML per template email
         </div>
         <p style="font-size: 14px; color: #64748b; margin: 10px 0 0;">Questo codice scadrà tra 60 minuti.</p>
     </div>
+<<<<<<< .merge_file_O14mgM
 <<<<<<< .merge_file_cbAAuh
+=======
+<<<<<<< .merge_file_xtFB9W
+=======
+<<<<<<< .merge_file_cbAAuh
+>>>>>>> .merge_file_UKPqsa
+>>>>>>> .merge_file_CoR1VO
     
     <div style="background-color: #f8fafc; border-radius: 8px; padding: 20px; margin: 30px 0;">
         <h3 style="color: #334155; margin: 0 0 15px; font-size: 18px;">Come ripristinare la password in sicurezza</h3>
         
+<<<<<<< .merge_file_O14mgM
 =======
+=======
+<<<<<<< .merge_file_xtFB9W
+=======
+=======
+>>>>>>> .merge_file_UKPqsa
+>>>>>>> .merge_file_CoR1VO
 
     <div style="background-color: #f8fafc; border-radius: 8px; padding: 20px; margin: 30px 0;">
         <h3 style="color: #334155; margin: 0 0 15px; font-size: 18px;">Come ripristinare la password in sicurezza</h3>
@@ -85,9 +122,19 @@ Questo documento contiene esempi aggiuntivi di contenuto HTML per template email
                 <p style="margin: 0; color: #64748b;">Utilizza il pulsante "Ripristina Password" qui sopra per essere indirizzato alla pagina di ripristino sicura.</p>
             </div>
         </div>
+<<<<<<< .merge_file_O14mgM
 <<<<<<< .merge_file_cbAAuh
         
 =======
+=======
+<<<<<<< .merge_file_xtFB9W
+        
+=======
+<<<<<<< .merge_file_cbAAuh
+        
+=======
+>>>>>>> .merge_file_UKPqsa
+>>>>>>> .merge_file_CoR1VO
 
 >>>>>>> .merge_file_73VwPr
         <div style="margin-bottom: 15px; display: flex; align-items: flex-start;">
@@ -97,9 +144,19 @@ Questo documento contiene esempi aggiuntivi di contenuto HTML per template email
                 <p style="margin: 0; color: #64748b;">Scegli una password sicura di almeno 8 caratteri, contenente lettere maiuscole, minuscole, numeri e simboli.</p>
             </div>
         </div>
+<<<<<<< .merge_file_O14mgM
 <<<<<<< .merge_file_cbAAuh
         
 =======
+=======
+<<<<<<< .merge_file_xtFB9W
+        
+=======
+<<<<<<< .merge_file_cbAAuh
+        
+=======
+>>>>>>> .merge_file_UKPqsa
+>>>>>>> .merge_file_CoR1VO
 
 >>>>>>> .merge_file_73VwPr
         <div style="margin-bottom: 15px; display: flex; align-items: flex-start;">
@@ -110,13 +167,27 @@ Questo documento contiene esempi aggiuntivi di contenuto HTML per template email
             </div>
         </div>
     </div>
+<<<<<<< .merge_file_O14mgM
 <<<<<<< .merge_file_cbAAuh
+=======
+<<<<<<< .merge_file_xtFB9W
+=======
+<<<<<<< .merge_file_cbAAuh
+>>>>>>> .merge_file_UKPqsa
+>>>>>>> .merge_file_CoR1VO
     
     <div style="background-color: #f8fafc; padding: 15px; border-radius: 6px; margin: 25px 0; border-left: 4px solid #cbd5e1;">
         <p style="margin: 0; font-size: 14px; color: #64748b;"><strong style="color: #334155;">Nota di sicurezza:</strong> Per proteggere il tuo account, non condividere mai questa email o il codice di ripristino con nessuno. {{ $app_name }} non ti chiederà mai la tua password tramite email, telefono o SMS.</p>
     </div>
     
+<<<<<<< .merge_file_O14mgM
 =======
+=======
+<<<<<<< .merge_file_xtFB9W
+=======
+=======
+>>>>>>> .merge_file_UKPqsa
+>>>>>>> .merge_file_CoR1VO
 
     <div style="background-color: #f8fafc; padding: 15px; border-radius: 6px; margin: 25px 0; border-left: 4px solid #cbd5e1;">
         <p style="margin: 0; font-size: 14px; color: #64748b;"><strong style="color: #334155;">Nota di sicurezza:</strong> Per proteggere il tuo account, non condividere mai questa email o il codice di ripristino con nessuno. {{ $app_name }} non ti chiederà mai la tua password tramite email, telefono o SMS.</p>
@@ -132,9 +203,19 @@ Questo documento contiene esempi aggiuntivi di contenuto HTML per template email
 <div style="background-color: #f8fafc; text-align: center; padding: 20px; font-size: 14px; color: #64748b; border-radius: 0 0 8px 8px;">
     <p style="margin: 0 0 10px;">© {{ date('Y') }} {{ $app_name }}. Tutti i diritti riservati.</p>
     <p style="margin: 0; font-size: 12px;">
+<<<<<<< .merge_file_O14mgM
 <<<<<<< .merge_file_cbAAuh
         <a href="{{ $privacy_url ?? '#' }}" style="color: #64748b; text-decoration: underline;">Privacy Policy</a> | 
 =======
+=======
+<<<<<<< .merge_file_xtFB9W
+        <a href="{{ $privacy_url ?? '#' }}" style="color: #64748b; text-decoration: underline;">Privacy Policy</a> | 
+=======
+<<<<<<< .merge_file_cbAAuh
+        <a href="{{ $privacy_url ?? '#' }}" style="color: #64748b; text-decoration: underline;">Privacy Policy</a> | 
+=======
+>>>>>>> .merge_file_UKPqsa
+>>>>>>> .merge_file_CoR1VO
         <a href="{{ $privacy_url ?? '#' }}" style="color: #64748b; text-decoration: underline;">Privacy Policy</a> |
 >>>>>>> .merge_file_73VwPr
         <a href="{{ $terms_url ?? '#' }}" style="color: #64748b; text-decoration: underline;">Termini di Servizio</a>
@@ -152,14 +233,28 @@ Questo documento contiene esempi aggiuntivi di contenuto HTML per template email
 
 <div style="padding: 0 30px 30px;">
     <p>Gentile {{ $name }},</p>
+<<<<<<< .merge_file_O14mgM
 <<<<<<< .merge_file_cbAAuh
+=======
+<<<<<<< .merge_file_xtFB9W
+=======
+<<<<<<< .merge_file_cbAAuh
+>>>>>>> .merge_file_UKPqsa
+>>>>>>> .merge_file_CoR1VO
     
     <p>Confermiamo il tuo appuntamento presso il nostro centro medico. Di seguito trovi tutti i dettagli.</p>
     
     <div style="background-color: #eef2ff; border-radius: 8px; border: 2px solid #c7d2fe; padding: 30px; margin: 25px 0;">
         <h2 style="text-align: center; color: #4338ca; margin: 0 0 20px; font-size: 22px;">Dettagli Appuntamento</h2>
         
+<<<<<<< .merge_file_O14mgM
 =======
+=======
+<<<<<<< .merge_file_xtFB9W
+=======
+=======
+>>>>>>> .merge_file_UKPqsa
+>>>>>>> .merge_file_CoR1VO
 
     <p>Confermiamo il tuo appuntamento presso il nostro centro medico. Di seguito trovi tutti i dettagli.</p>
 
@@ -177,9 +272,19 @@ Questo documento contiene esempi aggiuntivi di contenuto HTML per template email
                 <p style="margin: 0; font-size: 16px; color: #334155;">{{ $date ?? 'Lunedì, 20 Giugno 2024' }}</p>
             </div>
         </div>
+<<<<<<< .merge_file_O14mgM
 <<<<<<< .merge_file_cbAAuh
         
 =======
+=======
+<<<<<<< .merge_file_xtFB9W
+        
+=======
+<<<<<<< .merge_file_cbAAuh
+        
+=======
+>>>>>>> .merge_file_UKPqsa
+>>>>>>> .merge_file_CoR1VO
 
 >>>>>>> .merge_file_73VwPr
         <div style="margin-bottom: 12px; display: flex; align-items: flex-start;">
@@ -191,9 +296,19 @@ Questo documento contiene esempi aggiuntivi di contenuto HTML per template email
                 <p style="margin: 0; font-size: 16px; color: #334155;">{{ $time ?? '10:30' }}</p>
             </div>
         </div>
+<<<<<<< .merge_file_O14mgM
 <<<<<<< .merge_file_cbAAuh
         
 =======
+=======
+<<<<<<< .merge_file_xtFB9W
+        
+=======
+<<<<<<< .merge_file_cbAAuh
+        
+=======
+>>>>>>> .merge_file_UKPqsa
+>>>>>>> .merge_file_CoR1VO
 
 >>>>>>> .merge_file_73VwPr
         <div style="margin-bottom: 12px; display: flex; align-items: flex-start;">
@@ -205,9 +320,19 @@ Questo documento contiene esempi aggiuntivi di contenuto HTML per template email
                 <p style="margin: 0; font-size: 16px; color: #334155;">{{ $doctor ?? 'Dott. Marco Rossi' }}</p>
             </div>
         </div>
+<<<<<<< .merge_file_O14mgM
 <<<<<<< .merge_file_cbAAuh
         
 =======
+=======
+<<<<<<< .merge_file_xtFB9W
+        
+=======
+<<<<<<< .merge_file_cbAAuh
+        
+=======
+>>>>>>> .merge_file_UKPqsa
+>>>>>>> .merge_file_CoR1VO
 
 >>>>>>> .merge_file_73VwPr
         <div style="margin-bottom: 12px; display: flex; align-items: flex-start;">
@@ -216,12 +341,26 @@ Questo documento contiene esempi aggiuntivi di contenuto HTML per template email
             </svg>
             <div>
                 <p style="margin: 0 0 2px; font-weight: 600; color: #4338ca;">{{ __('notify.appointment.fields.location.label') }}</p>
+<<<<<<< .merge_file_O14mgM
 <<<<<<< .merge_file_cbAAuh
+=======
+<<<<<<< .merge_file_xtFB9W
+=======
+<<<<<<< .merge_file_cbAAuh
+>>>>>>> .merge_file_UKPqsa
+>>>>>>> .merge_file_CoR1VO
                 <p style="margin: 0; font-size: 16px; color: #334155;">{{ $location ?? 'SaluteOra Centro Medico, Via Roma 123, 00100 Roma' }}</p>
             </div>
         </div>
         
+<<<<<<< .merge_file_O14mgM
 =======
+=======
+<<<<<<< .merge_file_xtFB9W
+=======
+=======
+>>>>>>> .merge_file_UKPqsa
+>>>>>>> .merge_file_CoR1VO
                 <p style="margin: 0; font-size: 16px; color: #334155;">{{ $location ?? '<nome progetto> Centro Medico, Via Roma 123, 00100 Roma' }}</p>
             </div>
         </div>
@@ -236,9 +375,19 @@ Questo documento contiene esempi aggiuntivi di contenuto HTML per template email
                 <p style="margin: 0; font-size: 16px; color: #334155;">{{ $service ?? 'Visita Cardiologica' }}</p>
             </div>
         </div>
+<<<<<<< .merge_file_O14mgM
 <<<<<<< .merge_file_cbAAuh
         
 =======
+=======
+<<<<<<< .merge_file_xtFB9W
+        
+=======
+<<<<<<< .merge_file_cbAAuh
+        
+=======
+>>>>>>> .merge_file_UKPqsa
+>>>>>>> .merge_file_CoR1VO
 
 >>>>>>> .merge_file_73VwPr
         <div style="text-align: center; margin-top: 30px;">
@@ -247,9 +396,19 @@ Questo documento contiene esempi aggiuntivi di contenuto HTML per template email
             <a href="{{ $cancel_url ?? '#' }}" style="display: inline-block; background-color: #ef4444; color: white; text-decoration: none; padding: 12px 24px; border-radius: 6px; font-size: 16px; font-weight: 600; margin: 0 5px 10px;">{{ $cancel_text ?? 'Annulla' }}</a>
         </div>
     </div>
+<<<<<<< .merge_file_O14mgM
 <<<<<<< .merge_file_cbAAuh
     
 =======
+=======
+<<<<<<< .merge_file_xtFB9W
+    
+=======
+<<<<<<< .merge_file_cbAAuh
+    
+=======
+>>>>>>> .merge_file_UKPqsa
+>>>>>>> .merge_file_CoR1VO
 
 >>>>>>> .merge_file_73VwPr
     <div style="background-color: #f8fafc; border-radius: 8px; padding: 20px; margin: 30px 0;">
@@ -262,14 +421,28 @@ Questo documento contiene esempi aggiuntivi di contenuto HTML per template email
             <li style="margin-bottom: 10px;"><strong style="color: #334155;">Digiuno:</strong> {{ $fasting ?? 'Non è richiesto il digiuno per questa visita, puoi mangiare e bere normalmente.' }}</li>
         </ul>
     </div>
+<<<<<<< .merge_file_O14mgM
 <<<<<<< .merge_file_cbAAuh
+=======
+<<<<<<< .merge_file_xtFB9W
+=======
+<<<<<<< .merge_file_cbAAuh
+>>>>>>> .merge_file_UKPqsa
+>>>>>>> .merge_file_CoR1VO
     
     <div style="text-align: center; margin: 30px 0;">
         <img style="max-width: 100%; height: auto; border-radius: 8px;" src="{{ $map_image ?? asset('modules/notify/images/map.png') }}" alt="Mappa della posizione">
         <p style="margin: 10px 0 0; font-size: 14px; color: #64748b;">{{ $map_caption ?? 'SaluteOra Centro Medico, Via Roma 123, 00100 Roma' }}</p>
     </div>
     
+<<<<<<< .merge_file_O14mgM
 =======
+=======
+<<<<<<< .merge_file_xtFB9W
+=======
+=======
+>>>>>>> .merge_file_UKPqsa
+>>>>>>> .merge_file_CoR1VO
 
     <div style="text-align: center; margin: 30px 0;">
         <img style="max-width: 100%; height: auto; border-radius: 8px;" src="{{ $map_image ?? asset('modules/notify/images/map.png') }}" alt="Mappa della posizione">
@@ -286,9 +459,19 @@ Questo documento contiene esempi aggiuntivi di contenuto HTML per template email
 <div style="background-color: #f8fafc; text-align: center; padding: 20px; font-size: 14px; color: #64748b; border-radius: 0 0 8px 8px;">
     <p style="margin: 0 0 10px;">© {{ date('Y') }} {{ $app_name }}. Tutti i diritti riservati.</p>
     <p style="margin: 0; font-size: 12px;">
+<<<<<<< .merge_file_O14mgM
 <<<<<<< .merge_file_cbAAuh
         <a href="{{ $privacy_url ?? '#' }}" style="color: #64748b; text-decoration: underline;">Privacy Policy</a> | 
 =======
+=======
+<<<<<<< .merge_file_xtFB9W
+        <a href="{{ $privacy_url ?? '#' }}" style="color: #64748b; text-decoration: underline;">Privacy Policy</a> | 
+=======
+<<<<<<< .merge_file_cbAAuh
+        <a href="{{ $privacy_url ?? '#' }}" style="color: #64748b; text-decoration: underline;">Privacy Policy</a> | 
+=======
+>>>>>>> .merge_file_UKPqsa
+>>>>>>> .merge_file_CoR1VO
         <a href="{{ $privacy_url ?? '#' }}" style="color: #64748b; text-decoration: underline;">Privacy Policy</a> |
 >>>>>>> .merge_file_73VwPr
         <a href="{{ $terms_url ?? '#' }}" style="color: #64748b; text-decoration: underline;">Termini di Servizio</a>

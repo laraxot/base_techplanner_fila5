@@ -1,18 +1,18 @@
 public_html/themes/Two/resources
-No language servers available in the manager
+[Errno 2] No such file or directory: '/var/www/_bases/base_techplanner_fila5/public_html/themes/Two/resources'
 laravel/config/com/sottana~dev
-No language servers available in the manager
+[Errno 2] No such file or directory: '/var/www/_bases/base_techplanner_fila5/laravel/config/com/sottana~dev'
 laravel/config/com/sottana~HEAD
-No language servers available in the manager
+[Errno 2] No such file or directory: '/var/www/_bases/base_techplanner_fila5/laravel/config/com/sottana~HEAD'
 .opencode/command/ponytail-audit.md
-No language servers available in the manager
+[Errno 2] No such file or directory: '/var/www/_bases/base_techplanner_fila5/.opencode/command/ponytail-audit.md'
 .opencode/command/ponytail-gain.md
-No language servers available in the manager
+[Errno 2] No such file or directory: '/var/www/_bases/base_techplanner_fila5/.opencode/command/ponytail-gain.md'
 .opencode/command/ponytail-help.md
-No language servers available in the manager
+[Errno 2] No such file or directory: '/var/www/_bases/base_techplanner_fila5/.opencode/command/ponytail-help.md'
 .opencode/command/ponytail-debt.md
-No language servers available in the manager
+[Errno 2] No such file or directory: '/var/www/_bases/base_techplanner_fila5/.opencode/command/ponytail-debt.md'
 .opencode/command/ponytail-review.md
-No language servers available in the manager
+[Errno 2] No such file or directory: '/var/www/_bases/base_techplanner_fila5/.opencode/command/ponytail-review.md'
 .opencode/command/ponytail.md
-No language servers available in the manager
+[Errno 2] No such file or directory: '/var/www/_bases/base_techplanner_fila5/.opencode/command/ponytail.md'

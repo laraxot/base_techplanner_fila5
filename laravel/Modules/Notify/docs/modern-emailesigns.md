@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_0wM5qy
+=======
 ---
 title: "Pattern di Design per Email Moderne"
 module: notify
@@ -7,6 +9,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+>>>>>>> .merge_file_080wd8
 # Pattern di Design per Email Moderne
 
 ## Introduzione
@@ -356,6 +359,18 @@ return [
 ## Riferimenti
 
 - [Responsive Email Templates](./responsive_email_templates.md)
+<<<<<<< .merge_file_BYo44N
 - [Email Best Practices](./mail-templates/email_best_practices.md)
 - [HTML Email Compatibility](./mail-templates/html_email_compatibility.md)
 - [Spatie Email Integration](./spatie_email_usage_guide.md)
+=======
+<<<<<<< .merge_file_0wM5qy
+- [Email Best Practices](./mail-templates/email_best_practices.md)
+- [HTML Email Compatibility](./mail-templates/html_email_compatibility.md)
+- [Spatie Email Integration](./spatie_email_usage_guide.md)
+=======
+- [Email Best Practices](./mail-templates/email-best-practices.md)
+- [HTML Email Compatibility](./mail-templates/html_email_compatibility.md)
+- [Spatie Email Integration](./spatie-email-usage-guide.md)
+>>>>>>> .merge_file_080wd8
+>>>>>>> .merge_file_Ib71Dq

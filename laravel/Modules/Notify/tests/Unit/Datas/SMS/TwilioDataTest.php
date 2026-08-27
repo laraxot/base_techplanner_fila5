@@ -73,10 +73,24 @@ describe('TwilioData', function () {
 
         $headers = $data->getAuthHeaders();
 
+<<<<<<< .merge_file_BNbisC
         expect($headers)->toBeArray();
+=======
+<<<<<<< .merge_file_QIUIDI
+        expect($headers)->toBeArray();
+=======
+>>>>>>> .merge_file_ZNR5Ki
+>>>>>>> .merge_file_3ShWgx
         expect($headers)->toHaveKey('Authorization');
         expect($headers)->toHaveKey('Content-Type');
         expect($headers['Authorization'])->toStartWith('Basic ');
     });
+<<<<<<< .merge_file_BNbisC
 
+=======
+<<<<<<< .merge_file_QIUIDI
+
+=======
+>>>>>>> .merge_file_ZNR5Ki
+>>>>>>> .merge_file_3ShWgx
 });

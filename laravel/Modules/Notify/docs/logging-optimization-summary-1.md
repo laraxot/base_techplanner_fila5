@@ -144,9 +144,19 @@ After optimization:
    - `.env`: LOG_LEVEL=warning (production), LOG_LEVEL=debug (development)
    - Reduces log writes by 90%, overhead from 20-30% to 5-10%
 
+<<<<<<< .merge_file_LGkv6E
 <<<<<<< .merge_file_kyGXcw
 ### 3. AGENTS.md Updated
 =======
+=======
+<<<<<<< .merge_file_EdOpQg
+### 3. AGENTS.md Updated
+=======
+<<<<<<< .merge_file_kyGXcw
+### 3. AGENTS.md Updated
+=======
+>>>>>>> .merge_file_B78QZQ
+>>>>>>> .merge_file_IQvM0u
 ### 3. agents.md Updated
 >>>>>>> .merge_file_XJKv8z
 
@@ -426,9 +436,19 @@ LOG_LEVEL=debug
 
 1. ✅ Create documentation
 2. ✅ Update knowledge base
+<<<<<<< .merge_file_LGkv6E
 <<<<<<< .merge_file_kyGXcw
 3. ✅ Update AGENTS.md
 =======
+=======
+<<<<<<< .merge_file_EdOpQg
+3. ✅ Update AGENTS.md
+=======
+<<<<<<< .merge_file_kyGXcw
+3. ✅ Update AGENTS.md
+=======
+>>>>>>> .merge_file_B78QZQ
+>>>>>>> .merge_file_IQvM0u
 3. ✅ Update agents.md
 >>>>>>> .merge_file_XJKv8z
 4. ⏭️ Update `config/logging.php`
@@ -502,9 +522,19 @@ This session successfully:
 2. ✅ Identified 58 excessive `Log::info()` calls
 3. ✅ Documented logging best practices
 4. ✅ Updated knowledge base with 3 key lessons
+<<<<<<< .merge_file_LGkv6E
 <<<<<<< .merge_file_kyGXcw
 5. ✅ Updated AGENTS.md with performance rules
 =======
+=======
+<<<<<<< .merge_file_EdOpQg
+5. ✅ Updated AGENTS.md with performance rules
+=======
+<<<<<<< .merge_file_kyGXcw
+5. ✅ Updated AGENTS.md with performance rules
+=======
+>>>>>>> .merge_file_B78QZQ
+>>>>>>> .merge_file_IQvM0u
 5. ✅ Updated agents.md with performance rules
 >>>>>>> .merge_file_XJKv8z
 6. ✅ Created optimization plan (4 phases)

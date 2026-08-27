@@ -22,9 +22,19 @@ related:
 
 ## Informazioni Generali
 
+<<<<<<< .merge_file_YYHE7Y
 <<<<<<< .merge_file_jCyDkp
 - **File**: `/var/www/html/saluteora/laravel/Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php`
 =======
+=======
+<<<<<<< .merge_file_7oPK1c
+- **File**: `/var/www/html/saluteora/laravel/Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php`
+=======
+<<<<<<< .merge_file_jCyDkp
+- **File**: `/var/www/html/saluteora/laravel/Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php`
+=======
+>>>>>>> .merge_file_3yO87c
+>>>>>>> .merge_file_J6lO5b
 - **File**: `[project-root]/laravel/Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php`
 >>>>>>> .merge_file_n1uzaB
 - **Base**: `XotBaseMigration`

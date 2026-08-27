@@ -64,8 +64,15 @@ Multiple AI agents (Qwen, Claude, Cursor, etc.) are working on the same FixCity 
 
 **Current Tasks**:
 - ✅ Update `bashscripts/docs/ai/` with sync rules
+<<<<<<< .merge_file_XZF075
 - ✅ Update AGENTS.md with commit/push rules
+=======
+<<<<<<< .merge_file_0IFRQl
+- ✅ Update AGENTS.md with commit/push rules
+=======
+>>>>>>> .merge_file_sodnim
 - ✅ Update agents.md with commit/push rules
+>>>>>>> .merge_file_fBimkV
 - ✅ Update .windsurfrules
 - ⏳ Sync `.github/` with `bashscripts/ai/.github/`
 

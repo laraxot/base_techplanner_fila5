@@ -35,8 +35,15 @@ The active theme is configured in:
 config/{environment}/{domain}/xra.php
 ```
 
+<<<<<<< .merge_file_kH9PLU
 **Example** (`config/localhost/fixcity/xra.php`):
+=======
+<<<<<<< .merge_file_IkRniX
+**Example** (`config/localhost/fixcity/xra.php`):
+=======
+>>>>>>> .merge_file_BGMEno
 **Example** (`config/localhost/ptv/xra.php`):
+>>>>>>> .merge_file_6MZNrL
 ```php
 <?php
 return [
@@ -141,8 +148,15 @@ class ThemeServiceProvider extends XotBaseThemeServiceProvider
 
 1. Edit config file:
 ```php
+<<<<<<< .merge_file_kH9PLU
 // config/localhost/fixcity/xra.php
+=======
+<<<<<<< .merge_file_IkRniX
+// config/localhost/fixcity/xra.php
+=======
+>>>>>>> .merge_file_BGMEno
 // config/localhost/ptv/xra.php
+>>>>>>> .merge_file_6MZNrL
 return [
     'pub_theme' => 'TwentyOne',  // Change theme
     'register_pub_theme' => true,
@@ -165,8 +179,15 @@ THEME_REGISTER_PUB=true
 
 2. Update config to read env:
 ```php
+<<<<<<< .merge_file_kH9PLU
 // config/localhost/fixcity/xra.php
+=======
+<<<<<<< .merge_file_IkRniX
+// config/localhost/fixcity/xra.php
+=======
+>>>>>>> .merge_file_BGMEno
 // config/localhost/ptv/xra.php
+>>>>>>> .merge_file_6MZNrL
 return [
     'pub_theme' => env('THEME_PUB', 'Sixteen'),
     'register_pub_theme' => env('THEME_REGISTER_PUB', true),
@@ -220,8 +241,15 @@ class ThemeServiceProvider extends XotBaseThemeServiceProvider
 
 ### Step 3: Register Theme
 ```php
+<<<<<<< .merge_file_kH9PLU
 // config/localhost/fixcity/xra.php
+=======
+<<<<<<< .merge_file_IkRniX
+// config/localhost/fixcity/xra.php
+=======
+>>>>>>> .merge_file_BGMEno
 // config/localhost/ptv/xra.php
+>>>>>>> .merge_file_6MZNrL
 return [
     'pub_theme' => 'MyTheme',
     'register_pub_theme' => true,

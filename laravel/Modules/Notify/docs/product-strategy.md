@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_cEI6WC
+=======
 ---
 title: "Notify - Product Strategy"
 module: notify
@@ -7,6 +9,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+>>>>>>> .merge_file_22g5MT
 # Notify - Product Strategy
 
 > Strategia prodotto. Modulo.

@@ -4,6 +4,26 @@ declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Models;
 
+<<<<<<< .merge_file_hDs8Sr
+use function Safe\json_encode;
+use PHPUnit\Framework\Assert;
+use Modules\Notify\Models\MailTemplate;
+use Modules\Notify\Tests\TestCase;
+use Modules\Notify\Database\Factories\MailTemplateFactory;
+use function Pest\Laravel\get;
+
+uses(\Modules\Notify\Tests\TestCase::class);
+
+beforeEach(function (): void {
+    /** @var \Modules\Notify\Tests\TestCase $this */
+$this->disableExceptionHandling();
+});
+
+describe('Mail Template', function (): void {
+    test('_can_create_mail_template', function (): void {
+        /** @var \Modules\Notify\Tests\TestCase $this */
+$template = MailTemplateFactory::new()->createOne([
+=======
 use Modules\Notify\Database\Factories\MailTemplateFactory;
 use Modules\Notify\Models\MailTemplate;
 use Modules\Notify\Tests\TestCase;
@@ -22,6 +42,7 @@ beforeEach(function (): void {
 describe('Mail Template', function (): void {
     test('_can_create_mail_template', function (): void {
         $template = MailTemplateFactory::new()->createOne([
+>>>>>>> .merge_file_05CyBL
             'mailable' => 'App\Mail\WelcomeMail',
             'name' => 'Welcome Email Template',
             'subject' => 'Benvenuto {{name}}!',
@@ -34,7 +55,11 @@ describe('Mail Template', function (): void {
             'params' => ['name', 'email'],
             'counter' => 0,
         ]);
+<<<<<<< .merge_file_hDs8Sr
+        \assertNotifyTableHas('mail_templates', [
+=======
         XotBasePest::assertTableHas('notify', 'mail_templates', [
+>>>>>>> .merge_file_05CyBL
             'id' => $template->id,
             'mailable' => 'App\Mail\WelcomeMail',
             'name' => 'Welcome Email Template',
@@ -49,7 +74,15 @@ describe('Mail Template', function (): void {
     });
 
     test('_has_correct_fillable_fields', function (): void {
+<<<<<<< .merge_file_Z4Kt59
         $template = new MailTemplate();
+=======
+<<<<<<< .merge_file_hDs8Sr
+$template = new MailTemplate;
+=======
+        $template = new MailTemplate;
+>>>>>>> .merge_file_05CyBL
+>>>>>>> .merge_file_HfhoAt
 
         $expectedFillable = [
             'mailable',
@@ -67,7 +100,15 @@ describe('Mail Template', function (): void {
     });
 
     test('_has_correct_casts', function (): void {
+<<<<<<< .merge_file_Z4Kt59
         $template = new MailTemplate();
+=======
+<<<<<<< .merge_file_hDs8Sr
+$template = new MailTemplate;
+=======
+        $template = new MailTemplate;
+>>>>>>> .merge_file_05CyBL
+>>>>>>> .merge_file_HfhoAt
 
         $expectedCasts = [
             'created_at' => 'datetime',
@@ -79,7 +120,15 @@ describe('Mail Template', function (): void {
     });
 
     test('_has_translatable_fields', function (): void {
+<<<<<<< .merge_file_Z4Kt59
         $template = new MailTemplate();
+=======
+<<<<<<< .merge_file_hDs8Sr
+$template = new MailTemplate;
+=======
+        $template = new MailTemplate;
+>>>>>>> .merge_file_05CyBL
+>>>>>>> .merge_file_HfhoAt
 
         $expectedTranslatable = [
             'subject',
@@ -92,13 +141,25 @@ describe('Mail Template', function (): void {
     });
 
     test('_uses_notify_connection', function (): void {
+<<<<<<< .merge_file_Z4Kt59
         $template = new MailTemplate();
+=======
+<<<<<<< .merge_file_hDs8Sr
+$template = new MailTemplate;
+=======
+        $template = new MailTemplate;
+>>>>>>> .merge_file_05CyBL
+>>>>>>> .merge_file_HfhoAt
 
         Assert::assertEquals('notify', $template->getConnectionName());
     });
 
     test('_generates_slug_from_name', function (): void {
+<<<<<<< .merge_file_hDs8Sr
+$template = MailTemplateFactory::new()->createOne([
+=======
         $template = MailTemplateFactory::new()->createOne([
+>>>>>>> .merge_file_05CyBL
             'mailable' => 'App\Mail\TestMail',
             'name' => 'Test Email Template',
             'subject' => 'Test Subject',
@@ -108,14 +169,22 @@ describe('Mail Template', function (): void {
         ]);
 
         Assert::assertEquals('test-email-template', $template->slug);
+<<<<<<< .merge_file_hDs8Sr
+        \assertNotifyTableHas('mail_templates', [
+=======
         XotBasePest::assertTableHas('notify', 'mail_templates', [
+>>>>>>> .merge_file_05CyBL
             'id' => $template->id,
             'slug' => 'test-email-template',
         ]);
     });
 
     test('_can_store_json_params', function (): void {
+<<<<<<< .merge_file_hDs8Sr
+$params = ['name', 'email', 'company', 'role'];
+=======
         $params = ['name', 'email', 'company', 'role'];
+>>>>>>> .merge_file_05CyBL
 
         $template = MailTemplateFactory::new()->createOne([
             'mailable' => 'App\Mail\ComplexMail',
@@ -125,11 +194,19 @@ describe('Mail Template', function (): void {
             'params' => $params,
             'counter' => 0,
         ]);
+<<<<<<< .merge_file_hDs8Sr
+        \assertNotifyTableHas('mail_templates', [
+            'id' => $template->id,
+            'params' => json_encode($params),
+        ]);
+        $params = \assertNotifyArray($template->params);
+=======
         XotBasePest::assertTableHas('notify', 'mail_templates', [
             'id' => $template->id,
             'params' => json_encode($params),
         ]);
         $params = XotBasePest::assertArray($template->params);
+>>>>>>> .merge_file_05CyBL
         Assert::assertCount(4, $params);
         Assert::assertContains('name', $params);
         Assert::assertContains('email', $params);
@@ -138,7 +215,11 @@ describe('Mail Template', function (): void {
     });
 
     test('_can_store_json_sms_template', function (): void {
+<<<<<<< .merge_file_hDs8Sr
+$smsTemplate = [
+=======
         $smsTemplate = [
+>>>>>>> .merge_file_05CyBL
             'message' => 'Benvenuto {{name}}! La tua email è {{email}}',
             'variables' => ['name', 'email'],
             'max_length' => 160,
@@ -154,11 +235,19 @@ describe('Mail Template', function (): void {
             'params' => ['test'],
             'counter' => 0,
         ]);
+<<<<<<< .merge_file_hDs8Sr
+        \assertNotifyTableHas('mail_templates', [
+            'id' => $template->id,
+            'sms_template' => json_encode($smsTemplate),
+        ]);
+        $smsTemplateData = \assertNotifyArray($template->sms_template);
+=======
         XotBasePest::assertTableHas('notify', 'mail_templates', [
             'id' => $template->id,
             'sms_template' => json_encode($smsTemplate),
         ]);
         $smsTemplateData = XotBasePest::assertArray($template->sms_template);
+>>>>>>> .merge_file_05CyBL
         Assert::assertEquals('Benvenuto {{name}}! La tua email è {{email}}', $smsTemplateData['message']);
         Assert::assertEquals(['name', 'email'], $smsTemplateData['variables']);
         Assert::assertEquals(160, $smsTemplateData['max_length']);
@@ -166,7 +255,11 @@ describe('Mail Template', function (): void {
     });
 
     test('_can_increment_counter', function (): void {
+<<<<<<< .merge_file_hDs8Sr
+$template = MailTemplateFactory::new()->createOne([
+=======
         $template = MailTemplateFactory::new()->createOne([
+>>>>>>> .merge_file_05CyBL
             'mailable' => 'App\Mail\CounterMail',
             'name' => 'Counter Email Template',
             'subject' => 'Test Subject',
@@ -178,6 +271,16 @@ describe('Mail Template', function (): void {
         Assert::assertEquals(0, $template->counter);
 
         $template->increment('counter');
+<<<<<<< .merge_file_hDs8Sr
+        Assert::assertEquals(1, \assertFreshModel($template, \Modules\Notify\Models\MailTemplate::class)->counter);
+
+        $template->increment('counter', 5);
+        Assert::assertEquals(6, \assertFreshModel($template, \Modules\Notify\Models\MailTemplate::class)->counter);
+    });
+
+    test('_can_update_template', function (): void {
+$template = MailTemplateFactory::new()->createOne([
+=======
         Assert::assertEquals(1, XotBasePest::assertFreshModel($template, MailTemplate::class)->counter);
 
         $template->increment('counter', 5);
@@ -186,6 +289,7 @@ describe('Mail Template', function (): void {
 
     test('_can_update_template', function (): void {
         $template = MailTemplateFactory::new()->createOne([
+>>>>>>> .merge_file_05CyBL
             'mailable' => 'App\Mail\UpdateMail',
             'name' => 'Original Name',
             'subject' => 'Original Subject',
@@ -200,7 +304,11 @@ describe('Mail Template', function (): void {
             'html_template' => '<p>Updated content</p>',
             'params' => ['updated'],
         ]);
+<<<<<<< .merge_file_hDs8Sr
+        \assertNotifyTableHas('mail_templates', [
+=======
         XotBasePest::assertTableHas('notify', 'mail_templates', [
+>>>>>>> .merge_file_05CyBL
             'id' => $template->id,
             'name' => 'Updated Name',
             'subject' => 'Updated Subject',
@@ -208,11 +316,19 @@ describe('Mail Template', function (): void {
             'params' => json_encode(['updated']),
         ]);
 
+<<<<<<< .merge_file_hDs8Sr
+        Assert::assertEquals('updated-name', \assertFreshModel($template, \Modules\Notify\Models\MailTemplate::class)->slug);
+    });
+
+    test('_can_find_by_mailable_and_slug', function (): void {
+$template = MailTemplateFactory::new()->createOne([
+=======
         Assert::assertEquals('updated-name', XotBasePest::assertFreshModel($template, MailTemplate::class)->slug);
     });
 
     test('_can_find_by_mailable_and_slug', function (): void {
         $template = MailTemplateFactory::new()->createOne([
+>>>>>>> .merge_file_05CyBL
             'mailable' => 'App\Mail\FindMail',
             'name' => 'Find Test Template',
             'subject' => 'Test Subject',
@@ -232,7 +348,11 @@ describe('Mail Template', function (): void {
     });
 
     test('_can_find_by_name', function (): void {
+<<<<<<< .merge_file_hDs8Sr
+$template = MailTemplateFactory::new()->createOne([
+=======
         $template = MailTemplateFactory::new()->createOne([
+>>>>>>> .merge_file_05CyBL
             'mailable' => 'App\Mail\NameMail',
             'name' => 'Name Search Template',
             'subject' => 'Test Subject',
@@ -249,7 +369,11 @@ describe('Mail Template', function (): void {
     });
 
     test('_can_find_by_subject_pattern', function (): void {
+<<<<<<< .merge_file_hDs8Sr
+$template = MailTemplateFactory::new()->createOne([
+=======
         $template = MailTemplateFactory::new()->createOne([
+>>>>>>> .merge_file_05CyBL
             'mailable' => 'App\Mail\PatternMail',
             'name' => 'Pattern Template',
             'subject' => 'Welcome to our platform',
@@ -261,11 +385,19 @@ describe('Mail Template', function (): void {
         $foundTemplates = MailTemplate::where('subject', 'like', '%Welcome%')->get();
 
         Assert::assertCount(1, $foundTemplates);
+<<<<<<< .merge_file_hDs8Sr
+        Assert::assertEquals('Welcome to our platform', \assertFirstModel($foundTemplates, \Modules\Notify\Models\MailTemplate::class)->subject);
+    });
+
+    test('_can_find_by_params', function (): void {
+$template = MailTemplateFactory::new()->createOne([
+=======
         Assert::assertEquals('Welcome to our platform', XotBasePest::assertFirstModel($foundTemplates, MailTemplate::class)->subject);
     });
 
     test('_can_find_by_params', function (): void {
         $template = MailTemplateFactory::new()->createOne([
+>>>>>>> .merge_file_05CyBL
             'mailable' => 'App\Mail\ParamsMail',
             'name' => 'Params Template',
             'subject' => 'Test Subject',
@@ -277,12 +409,21 @@ describe('Mail Template', function (): void {
         $foundTemplates = MailTemplate::whereJsonContains('params', 'name')->get();
 
         Assert::assertCount(1, $foundTemplates);
+<<<<<<< .merge_file_hDs8Sr
+        Assert::assertEquals($template->id, \assertFirstModel($foundTemplates, \Modules\Notify\Models\MailTemplate::class)->id);
+        Assert::assertContains('name', \assertNotifyArray(\assertFirstModel($foundTemplates, \Modules\Notify\Models\MailTemplate::class)->params));
+    });
+
+    test('_can_find_by_counter_range', function (): void {
+MailTemplateFactory::new()->createOne([
+=======
         Assert::assertEquals($template->id, XotBasePest::assertFirstModel($foundTemplates, MailTemplate::class)->id);
         Assert::assertContains('name', XotBasePest::assertArray(XotBasePest::assertFirstModel($foundTemplates, MailTemplate::class)->params));
     });
 
     test('_can_find_by_counter_range', function (): void {
         MailTemplateFactory::new()->createOne([
+>>>>>>> .merge_file_05CyBL
             'mailable' => 'App\Mail\LowCounterMail',
             'name' => 'Low Counter Template',
             'subject' => 'Test Subject',
@@ -305,12 +446,21 @@ describe('Mail Template', function (): void {
 
         Assert::assertCount(1, $lowCounterTemplates);
         Assert::assertCount(1, $highCounterTemplates);
+<<<<<<< .merge_file_hDs8Sr
+        Assert::assertEquals(5, \assertFirstModel($lowCounterTemplates, \Modules\Notify\Models\MailTemplate::class)->counter);
+        Assert::assertEquals(50, \assertFirstModel($highCounterTemplates, \Modules\Notify\Models\MailTemplate::class)->counter);
+    });
+
+    test('_can_handle_empty_params', function (): void {
+$template = MailTemplateFactory::new()->createOne([
+=======
         Assert::assertEquals(5, XotBasePest::assertFirstModel($lowCounterTemplates, MailTemplate::class)->counter);
         Assert::assertEquals(50, XotBasePest::assertFirstModel($highCounterTemplates, MailTemplate::class)->counter);
     });
 
     test('_can_handle_empty_params', function (): void {
         $template = MailTemplateFactory::new()->createOne([
+>>>>>>> .merge_file_05CyBL
             'mailable' => 'App\Mail\EmptyParamsMail',
             'name' => 'Empty Params Template',
             'subject' => 'Test Subject',
@@ -322,7 +472,11 @@ describe('Mail Template', function (): void {
     });
 
     test('_can_handle_empty_sms_template', function (): void {
+<<<<<<< .merge_file_hDs8Sr
+$template = MailTemplateFactory::new()->createOne([
+=======
         $template = MailTemplateFactory::new()->createOne([
+>>>>>>> .merge_file_05CyBL
             'mailable' => 'App\Mail\EmptySmsMail',
             'name' => 'Empty SMS Template',
             'subject' => 'Test Subject',
@@ -335,7 +489,11 @@ describe('Mail Template', function (): void {
     });
 
     test('_can_store_complex_sms_template', function (): void {
+<<<<<<< .merge_file_hDs8Sr
+$complexSmsTemplate = [
+=======
         $complexSmsTemplate = [
+>>>>>>> .merge_file_05CyBL
             'message' => 'Benvenuto {{name}}!',
             'variables' => ['name', 'email'],
             'max_length' => 160,
@@ -361,11 +519,27 @@ describe('Mail Template', function (): void {
             'params' => ['test'],
             'counter' => 0,
         ]);
+<<<<<<< .merge_file_hDs8Sr
+        \assertNotifyTableHas('mail_templates', [
+=======
         XotBasePest::assertTableHas('notify', 'mail_templates', [
+>>>>>>> .merge_file_05CyBL
             'id' => $template->id,
             'sms_template' => json_encode($complexSmsTemplate),
         ]);
 
+<<<<<<< .merge_file_hDs8Sr
+        $smsData = \assertNotifyArray($template->sms_template);
+        Assert::assertEquals('Benvenuto {{name}}!', $smsData['message']);
+        Assert::assertEquals(['name', 'email'], $smsData['variables']);
+        Assert::assertEquals(160, $smsData['max_length']);
+        Assert::assertTrue(\notifyArrayGet($smsData, 'fallback', 'enabled'));
+        Assert::assertEquals('high', \notifyArrayGet($smsData, 'delivery_options', 'priority'));
+    });
+
+    test('_can_find_templates_by_multiple_criteria', function (): void {
+MailTemplateFactory::new()->createOne([
+=======
         $smsData = XotBasePest::assertArray($template->sms_template);
         Assert::assertEquals('Benvenuto {{name}}!', $smsData['message']);
         Assert::assertEquals(['name', 'email'], $smsData['variables']);
@@ -376,6 +550,7 @@ describe('Mail Template', function (): void {
 
     test('_can_find_templates_by_multiple_criteria', function (): void {
         MailTemplateFactory::new()->createOne([
+>>>>>>> .merge_file_05CyBL
             'mailable' => 'App\Mail\MultiCriteriaMail',
             'name' => 'Multi Criteria Template',
             'subject' => 'Welcome to our platform',
@@ -399,12 +574,21 @@ describe('Mail Template', function (): void {
             ->get();
 
         Assert::assertCount(1, $foundTemplates);
+<<<<<<< .merge_file_hDs8Sr
+        Assert::assertEquals('Another Multi Criteria Template', \assertFirstModel($foundTemplates, \Modules\Notify\Models\MailTemplate::class)->name);
+        Assert::assertEquals(20, \assertFirstModel($foundTemplates, \Modules\Notify\Models\MailTemplate::class)->counter);
+    });
+
+    test('_can_handle_null_values', function (): void {
+$template = MailTemplateFactory::new()->createOne([
+=======
         Assert::assertEquals('Another Multi Criteria Template', XotBasePest::assertFirstModel($foundTemplates, MailTemplate::class)->name);
         Assert::assertEquals(20, XotBasePest::assertFirstModel($foundTemplates, MailTemplate::class)->counter);
     });
 
     test('_can_handle_null_values', function (): void {
         $template = MailTemplateFactory::new()->createOne([
+>>>>>>> .merge_file_05CyBL
             'mailable' => 'App\Mail\NullValuesMail',
             'name' => 'Null Values Template',
             'subject' => null,
@@ -422,7 +606,11 @@ describe('Mail Template', function (): void {
     });
 
     test('_can_generate_unique_slugs', function (): void {
+<<<<<<< .merge_file_hDs8Sr
+MailTemplateFactory::new()->createOne([
+=======
         MailTemplateFactory::new()->createOne([
+>>>>>>> .merge_file_05CyBL
             'mailable' => 'App\Mail\UniqueSlugMail1',
             'name' => 'Test Template',
             'subject' => 'Test Subject',
@@ -443,7 +631,12 @@ describe('Mail Template', function (): void {
         $templates = MailTemplate::where('name', 'Test Template')->get();
 
         Assert::assertCount(2, $templates);
+<<<<<<< .merge_file_hDs8Sr
+        Assert::assertEquals('test-template', \assertFirstModel($templates, \Modules\Notify\Models\MailTemplate::class)->slug);
+        Assert::assertEquals('test-template-1', \assertFirstModel($templates->slice(1), \Modules\Notify\Models\MailTemplate::class)->slug);
+=======
         Assert::assertEquals('test-template', XotBasePest::assertFirstModel($templates, MailTemplate::class)->slug);
         Assert::assertEquals('test-template-1', XotBasePest::assertFirstModel($templates->slice(1), MailTemplate::class)->slug);
+>>>>>>> .merge_file_05CyBL
     });
 });

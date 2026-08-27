@@ -345,9 +345,19 @@ Completamento intensivo del progetto FixCity per diventare la piattaforma miglio
 - **Error Codes**: All documented
 
 ### Access
+<<<<<<< .merge_file_m122ZA
 <<<<<<< .merge_file_nVqxmI
 - **JSON**: `GET /api/fixcity/openapi.json`
 =======
+=======
+<<<<<<< .merge_file_0pcgzL
+- **JSON**: `GET /api/fixcity/openapi.json`
+=======
+<<<<<<< .merge_file_nVqxmI
+- **JSON**: `GET /api/fixcity/openapi.json`
+=======
+>>>>>>> .merge_file_0Ddhot
+>>>>>>> .merge_file_sPrKBr
 - **JSON**: `GET /api/laraxot/openapi.json`
 >>>>>>> .merge_file_WgnXoY
 - **Swagger UI**: Ready for integration

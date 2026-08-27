@@ -15,10 +15,21 @@ use Modules\Notify\Notifications\Channels\TelegramChannel;
 use Modules\Notify\Notifications\ThemeNotification;
 use Modules\Notify\Tests\Fixtures\NetfunChannelNotifiableDummy;
 use Modules\Notify\Tests\TestCase;
+<<<<<<< .merge_file_ejpK4m
+=======
+<<<<<<< .merge_file_Bh5FLe
+use Mockery;
+use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
+=======
+use PHPUnit\Framework\Assert;
+>>>>>>> .merge_file_AHqA36
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class)->group('no-notify-db');
+>>>>>>> .merge_file_unUhLx
 
 function makeThemeNotificationDummy(): ThemeNotification
 {
@@ -78,6 +89,13 @@ test('netfun notifications channel sends and increases counter', function () {
     $channel->send($notifiable, $notification);
 
     Assert::assertArrayHasKey('sms', $notifiable->increased);
+<<<<<<< .merge_file_Bh5FLe
+    Assert::assertSame(200, \notifyArrayGet($notifiable->increased, 'sms', 'status_code'));
+});
+
+test('telegram notifications channel logs when recipient and method are valid', function () {
+    Log::shouldReceive('info')->once();
+=======
     Assert::assertSame(200, TestCase::notifyArrayGet($notifiable->increased, 'sms', 'status_code'));
 });
 
@@ -86,6 +104,7 @@ test('telegram notifications channel logs when recipient and method are valid', 
         return str_contains($message, 'Telegram') && isset($context['chat_id']);
     });
     Log::shouldReceive('info')->zeroOrMoreTimes();
+>>>>>>> .merge_file_unUhLx
 
     $channel = new TelegramChannel();
     $channel->send(makeTelegramNotifiableDummy(), makeTelegramNotificationDummy());
@@ -94,8 +113,16 @@ test('telegram notifications channel logs when recipient and method are valid', 
 test('telegram notifications channel throws when notification has no toTelegram method', function () {
     $channel = new TelegramChannel();
 
+<<<<<<< .merge_file_Bh5FLe
+    \assertNotifyThrows(
+=======
     XotBasePest::assertThrows(
+<<<<<<< .merge_file_ejpK4m
         fn () => $channel->send(makeTelegramNotifiableDummy(), new class() extends Notification {}),
+=======
+>>>>>>> .merge_file_unUhLx
+        fn () => $channel->send(makeTelegramNotifiableDummy(), new class extends Notification {}),
+>>>>>>> .merge_file_AHqA36
         \Exception::class,
     );
 });

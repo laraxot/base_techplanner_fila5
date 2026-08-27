@@ -138,8 +138,15 @@ Section::make()
 use Filament\Schemas\Components\Text;
 use Illuminate\Support\HtmlString;
 
+<<<<<<< .merge_file_SkIFaC
 Text::make(new HtmlString((string) __('fixcity::privacy.notice.html')))
+=======
+<<<<<<< .merge_file_HhthZh
+Text::make(new HtmlString((string) __('fixcity::privacy.notice.html')))
+=======
+>>>>>>> .merge_file_veMMi4
 Text::make(new HtmlString((string) __('ptv::privacy.notice.html')))
+>>>>>>> .merge_file_3e6S7a
 ```
 
 ### Anti-pattern
@@ -172,5 +179,12 @@ TextInput::make('review_title')
 - Filament Schemas Overview: https://filamentphp.com/docs/5.x/schemas/overview
 - Filament Infolists Overview: https://filamentphp.com/docs/5.x/infolists/overview
 - Filament Schemas Prime Components: https://filamentphp.com/docs/5.x/schemas/primes
+<<<<<<< .merge_file_SkIFaC
 - Placeholder source locale: [Placeholder.php](/var/www/_bases/base_fixcity_fila5/laravel/Themes/Sixteen/vendor/filament/forms/src/Components/Placeholder.php)
+=======
+<<<<<<< .merge_file_HhthZh
+- Placeholder source locale: [Placeholder.php](/var/www/_bases/base_fixcity_fila5/laravel/Themes/Sixteen/vendor/filament/forms/src/Components/Placeholder.php)
+=======
+>>>>>>> .merge_file_veMMi4
 - Placeholder source locale: [Placeholder.php](/var/www/_bases/base_ptv_fila5/laravel/Themes/Sixteen/vendor/filament/forms/src/Components/Placeholder.php)
+>>>>>>> .merge_file_3e6S7a

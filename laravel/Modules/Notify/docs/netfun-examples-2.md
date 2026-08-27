@@ -711,6 +711,16 @@ class NetfunNotificationIntegrationTest extends TestCase
 
 <<<<<<< .merge_file_umObvj
 This document provides examples for Netfun integration.
+<<<<<<< .merge_file_GxotY6
 =======
 This document provides examples for Netfun integration.
 >>>>>>> .merge_file_IJWurY
+=======
+<<<<<<< .merge_file_e6xgAN
+This document provides examples for Netfun integration.
+=======
+=======
+This document provides examples for Netfun integration.
+>>>>>>> .merge_file_IJWurY
+>>>>>>> .merge_file_SijZny
+>>>>>>> .merge_file_fBmxbI

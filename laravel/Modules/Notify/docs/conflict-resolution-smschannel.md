@@ -50,10 +50,16 @@ return $action->execute($smsData);
 - Solo miglioramento della leggibilità del codice
 
 ## Collegamenti
+<<<<<<< .merge_file_aaAC8l
 - [Notify Module Documentation](readme.md)
 - [SMS Channel Architecture](sms_channel_action_resolution.md)
+<<<<<<< .merge_file_XuzItE
+=======
+=======
+>>>>>>> .merge_file_7tR2IL
 - [Notify Module Documentation](README.md)
 - [SMS Channel Architecture](sms-channel-action-resolution.md)
+>>>>>>> .merge_file_8DUI5u
 - [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
@@ -110,8 +116,15 @@ return $action->execute($smsData);
 
 ## Collegamenti
 - [Notify Module Documentation](README.md)
+<<<<<<< .merge_file_XuzItE
 - [SMS Channel Architecture](sms_channel_action_resolution.md)
+=======
+<<<<<<< .merge_file_aaAC8l
+- [SMS Channel Architecture](sms_channel_action_resolution.md)
+=======
+>>>>>>> .merge_file_7tR2IL
 - [SMS Channel Architecture](sms-channel-action-resolution.md)
+>>>>>>> .merge_file_8DUI5u
 - [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*

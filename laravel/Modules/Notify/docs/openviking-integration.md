@@ -24,8 +24,15 @@ OpenViking is an AI-powered context management and documentation system that hel
 ### 1. Initialize OpenViking Context
 
 ```bash
+<<<<<<< .merge_file_oB096B
 cd /var/www/_bases/base_fixcity_fila5
+=======
+<<<<<<< .merge_file_5WsNOp
+cd /var/www/_bases/base_fixcity_fila5
+=======
+>>>>>>> .merge_file_iezNjB
 cd /var/www/_bases/base_ptv_fila5
+>>>>>>> .merge_file_PMPI82
 openviking init
 ```
 

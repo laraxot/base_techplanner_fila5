@@ -1,12 +1,26 @@
 ---
+<<<<<<< .merge_file_ke2ih7
 title: "📸 Screenshot Analysis - Homepage FixCity"
+=======
+<<<<<<< .merge_file_BURWHr
+title: "📸 Screenshot Analysis - Homepage FixCity"
+=======
+>>>>>>> .merge_file_rZ64eU
 title: "📸 Screenshot Analysis - Homepage Notify"
+>>>>>>> .merge_file_ucFoJe
 type: concept
 tags: [screenshot, analysis]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< .merge_file_ke2ih7
 qmd: "screenshot-analysis 📸 screenshot analysis - homepage fixcity"
+=======
+<<<<<<< .merge_file_BURWHr
+qmd: "screenshot-analysis 📸 screenshot analysis - homepage fixcity"
+=======
+>>>>>>> .merge_file_rZ64eU
 qmd: "screenshot-analysis 📸 screenshot analysis - homepage laraxot"
+>>>>>>> .merge_file_ucFoJe
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -15,8 +29,15 @@ related:
   - "./fix-plan.md"
 ---
 
+<<<<<<< .merge_file_ke2ih7
 # 📸 Screenshot Analysis - Homepage FixCity
+=======
+<<<<<<< .merge_file_BURWHr
+# 📸 Screenshot Analysis - Homepage FixCity
+=======
+>>>>>>> .merge_file_rZ64eU
 # 📸 Screenshot Analysis - Homepage Notify
+>>>>>>> .merge_file_ucFoJe
 
 ## Reference: Bootstrap Italia
 
@@ -141,6 +162,10 @@ Screenshot: footer_bootstrap_italia.png
 
 ---
 
+<<<<<<< .merge_file_ke2ih7
+=======
+<<<<<<< .merge_file_BURWHr
+>>>>>>> .merge_file_rZ64eU
 ## FixCity Current State
 
 ### Screenshots
@@ -152,6 +177,10 @@ Screenshot: fixcity_events_current.png
 Screenshot: fixcity_topics_current.png
 Screenshot: fixcity_footer_current.png
 URL: http://fixcity.local/it/tests/homepage
+<<<<<<< .merge_file_ke2ih7
+=======
+=======
+>>>>>>> .merge_file_rZ64eU
 ## Notify Current State
 
 ### Screenshots
@@ -163,12 +192,20 @@ Screenshot: app_events_current.png
 Screenshot: app_topics_current.png
 Screenshot: app_footer_current.png
 URL: http://laraxot.local/it/tests/homepage
+>>>>>>> .merge_file_ucFoJe
 ```
 
 ### Differenze Principali
 
+<<<<<<< .merge_file_ke2ih7
 | Elemento | Bootstrap Italia | FixCity | Status |
+=======
+<<<<<<< .merge_file_BURWHr
+| Elemento | Bootstrap Italia | FixCity | Status |
+=======
+>>>>>>> .merge_file_rZ64eU
 | Elemento | Bootstrap Italia | Notify | Status |
+>>>>>>> .merge_file_ucFoJe
 |----------|-----------------|---------|--------|
 | Header slim | ✅ Presente | ❌ Assente | 🔴 |
 | Hero card-teaser | ✅ Sì | ❌ No | 🔴 |

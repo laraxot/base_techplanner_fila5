@@ -33,9 +33,19 @@ Il metodo `addAttachments()` supporta **due formati** per gli allegati:
 // Formato corretto - allegato da file su filesystem
 $attachments = [
     [
+<<<<<<< .merge_file_pUtX8x
 <<<<<<< .merge_file_tZxDvp
 'path' => '/var/www/html/Quaeris/public_html/images/avatars/default-3.svg',
 =======
+=======
+<<<<<<< .merge_file_AgZeqf
+'path' => '/var/www/html/Quaeris/public_html/images/avatars/default-3.svg',
+=======
+<<<<<<< .merge_file_tZxDvp
+'path' => '/var/www/html/Quaeris/public_html/images/avatars/default-3.svg',
+=======
+>>>>>>> .merge_file_3aD5uB
+>>>>>>> .merge_file_ISpVsj
 'path' => '/var/www/_bases/base_ptvx_fila5/public_html/images/avatars/default-3.svg',
 >>>>>>> .merge_file_In1syU
         'as' => 'logo.svg',  // Opzionale: nome del file da mostrare nell'email
@@ -43,9 +53,19 @@ $attachments = [
     ],
     // Eventualmente altri allegati...
     [
+<<<<<<< .merge_file_pUtX8x
 <<<<<<< .merge_file_tZxDvp
 'path' => '/var/www/html/Quaeris/public_html/documents/terms.pdf',
 =======
+=======
+<<<<<<< .merge_file_AgZeqf
+'path' => '/var/www/html/Quaeris/public_html/documents/terms.pdf',
+=======
+<<<<<<< .merge_file_tZxDvp
+'path' => '/var/www/html/Quaeris/public_html/documents/terms.pdf',
+=======
+>>>>>>> .merge_file_3aD5uB
+>>>>>>> .merge_file_ISpVsj
 'path' => '/var/www/_bases/base_ptvx_fila5/public_html/documents/terms.pdf',
 >>>>>>> .merge_file_In1syU
         'as' => 'termini.pdf',

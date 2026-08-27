@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_1DEW8o
+=======
 ---
 title: "Pattern: Actions che chiamano altre Actions"
 module: notify
@@ -7,6 +9,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+>>>>>>> .merge_file_EeTKy3
 # Pattern: Actions che chiamano altre Actions
 
 **Modulo**: Notify  

@@ -39,8 +39,15 @@ Errori comuni:
 
 ---
 
+<<<<<<< .merge_file_3FtZYS
 ## Predict List Page
+=======
+<<<<<<< .merge_file_ZwU0Vr
+## Predict List Page
+=======
+>>>>>>> .merge_file_DsPgYp
 ## Forecast List Page
+>>>>>>> .merge_file_pNbn5l
 
 Deve essere **BEST IN CLASS** per SEO e WCAG.
 
@@ -118,8 +125,15 @@ Discussion: apre alla community, chiede feedback
 
 - `config/database.php` allineato a Laravel 13.x
 - Produzione usa MySQL tramite .env
+<<<<<<< .merge_file_3FtZYS
 - Test usano MySQL (predict_test) tramite phpunit.xml
+=======
+<<<<<<< .merge_file_ZwU0Vr
+- Test usano MySQL (predict_test) tramite phpunit.xml
+=======
+>>>>>>> .merge_file_DsPgYp
 - Test usano MySQL (forecast_test) tramite phpunit.xml
+>>>>>>> .merge_file_pNbn5l
 - **MAI** cambiare default in config/database.php
 
 ---
@@ -138,8 +152,15 @@ Con default null per prevenire errori.
 ## CMS JSON Architecture
 
 - Tema agnostico basato su JSON
+<<<<<<< .merge_file_3FtZYS
 - Blocchi configurati in `config/local/predict/database/content/pages/home.json`
+=======
+<<<<<<< .merge_file_ZwU0Vr
+- Blocchi configurati in `config/local/predict/database/content/pages/home.json`
+=======
+>>>>>>> .merge_file_DsPgYp
 - Blocchi configurati in `config/local/forecast/database/content/pages/home.json`
+>>>>>>> .merge_file_pNbn5l
 - Struttura: `type`, `enabled`, `order`, `data`, `view`
 
 ---
@@ -159,11 +180,19 @@ Con default null per prevenire errori.
 __('<namespace>::<context>.<collection>.<key>.<type>')
 ```
 
+<<<<<<< .merge_file_ZwU0Vr
+Esempio: `__('predict::home.hero.cta_learn.label')`
+
+**MAI** usare 4 livelli (manca `.label`)
+
+**Eccezione**: `predict::messages.*` valore diretto
+=======
 Esempio: `__('forecast::home.hero.cta_learn.label')`
 
 **MAI** usare 4 livelli (manca `.label`)
 
 **Eccezione**: `forecast::messages.*` valore diretto
+>>>>>>> .merge_file_pNbn5l
 
 ---
 
@@ -172,8 +201,15 @@ Esempio: `__('forecast::home.hero.cta_learn.label')`
 - Footer caricato da JSON config via `<x-section slug="footer" />`
 - **NON** usare `GetFooterData` action (DEPRECATA)
 - **NON** aggiungere blocchi footer in `home.json`
+<<<<<<< .merge_file_3FtZYS
 - Config: `config/local/predict/database/content/sections/footer.json`
+=======
+<<<<<<< .merge_file_ZwU0Vr
+- Config: `config/local/predict/database/content/sections/footer.json`
+=======
+>>>>>>> .merge_file_DsPgYp
 - Config: `config/local/forecast/database/content/sections/footer.json`
+>>>>>>> .merge_file_pNbn5l
 
 ---
 
@@ -193,8 +229,15 @@ Esempio: `__('forecast::home.hero.cta_learn.label')`
 
 ---
 
+<<<<<<< .merge_file_3FtZYS
 ## Multi-Outcome Predictions
+=======
+<<<<<<< .merge_file_ZwU0Vr
+## Multi-Outcome Predictions
+=======
+>>>>>>> .merge_file_DsPgYp
 ## Multi-Outcome Forecasts
+>>>>>>> .merge_file_pNbn5l
 
 Previsioni **DEVONO** avere **3-5+ esiti** (NON solo SI/NO).
 

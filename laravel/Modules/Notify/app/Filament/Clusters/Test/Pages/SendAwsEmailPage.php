@@ -139,7 +139,11 @@ class SendAwsEmailPage extends XotBasePage
         }
     }
 
+<<<<<<< .merge_file_rl3KKI
     /** @return array<string, \Filament\Actions\Action> */
+=======
+    /** @return array<string, Action> */
+>>>>>>> .merge_file_bRiHo2
     protected function getEmailFormActions(): array
     {
         return [

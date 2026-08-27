@@ -1,12 +1,26 @@
 ---
+<<<<<<< .merge_file_MyPmhh
 title: "📸 Analisi Visiva Header & Footer - FixCity vs Bootstrap Italia"
+=======
+<<<<<<< .merge_file_oEAJGU
+title: "📸 Analisi Visiva Header & Footer - FixCity vs Bootstrap Italia"
+=======
+>>>>>>> .merge_file_9N2nhL
 title: "📸 Analisi Visiva Header & Footer - Notify vs Bootstrap Italia"
+>>>>>>> .merge_file_LWi06M
 type: concept
 tags: [analisi, colori, header, footer]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< .merge_file_MyPmhh
 qmd: "analisi-colori-header-footer 📸 analisi visiva header & footer - fixcity vs bootstrap italia"
+=======
+<<<<<<< .merge_file_oEAJGU
+qmd: "analisi-colori-header-footer 📸 analisi visiva header & footer - fixcity vs bootstrap italia"
+=======
+>>>>>>> .merge_file_9N2nhL
 qmd: "analisi-colori-header-footer 📸 analisi visiva header & footer - laraxot vs bootstrap italia"
+>>>>>>> .merge_file_LWi06M
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -15,8 +29,15 @@ related:
   - "./screenshot-analysis.md"
 ---
 
+<<<<<<< .merge_file_MyPmhh
 # 📸 Analisi Visiva Header & Footer - FixCity vs Bootstrap Italia
+=======
+<<<<<<< .merge_file_oEAJGU
+# 📸 Analisi Visiva Header & Footer - FixCity vs Bootstrap Italia
+=======
+>>>>>>> .merge_file_9N2nhL
 # 📸 Analisi Visiva Header & Footer - Notify vs Bootstrap Italia
+>>>>>>> .merge_file_LWi06M
 
 ## Data: {{ date('Y-m-d H:i:s') }}
 
@@ -25,8 +46,15 @@ related:
 ## 🎯 Problema Identificato
 
 **URL Reference**: https://italia.github.io/design-comuni-pagine-statiche/sito/homepage.html  
+<<<<<<< .merge_file_MyPmhh
 **FixCity**: http://fixcity.local/it/tests/homepage
+=======
+<<<<<<< .merge_file_oEAJGU
+**FixCity**: http://fixcity.local/it/tests/homepage
+=======
+>>>>>>> .merge_file_9N2nhL
 **Notify**: http://laraxot.local/it/tests/homepage
+>>>>>>> .merge_file_LWi06M
 
 **Differenze Principali**:
 1. ❌ Header: Colori non corretti
@@ -177,12 +205,21 @@ related:
 
 ---
 
+<<<<<<< .merge_file_MyPmhh
 ## 3. FixCity - Differenze Attuali
 
 ### Header FixCity (Errato)
+=======
+<<<<<<< .merge_file_oEAJGU
+## 3. FixCity - Differenze Attuali
+
+### Header FixCity (Errato)
+=======
+>>>>>>> .merge_file_9N2nhL
 ## 3. Notify - Differenze Attuali
 
 ### Header Notify (Errato)
+>>>>>>> .merge_file_LWi06M
 
 ```
 ❌ Barra regione: Colore sbagliato
@@ -192,8 +229,15 @@ related:
 ❌ Login: Stile non Bootstrap Italia
 ```
 
+<<<<<<< .merge_file_MyPmhh
 ### Footer FixCity (Errato)
+=======
+<<<<<<< .merge_file_oEAJGU
+### Footer FixCity (Errato)
+=======
+>>>>>>> .merge_file_9N2nhL
 ### Footer Notify (Errato)
+>>>>>>> .merge_file_LWi06M
 
 ```
 ❌ Feedback module: Assente o errato

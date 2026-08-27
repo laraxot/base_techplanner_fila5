@@ -12,10 +12,18 @@ This guide covers the Apache VirtualHost configuration for FixCity local develop
 
 ### Primary Domain
 
+<<<<<<< .merge_file_1PYnCB
 - **Domain**: `fixcity.local`
 - **Alias**: `www.fixcity.local`
+=======
+<<<<<<< .merge_file_CnQUQW
+- **Domain**: `fixcity.local`
+- **Alias**: `www.fixcity.local`
+=======
+>>>>>>> .merge_file_gKbMON
 - **Domain**: `ptv.local`
 - **Alias**: `www.ptv.local`
+>>>>>>> .merge_file_d1jlvg
 - **Document Root**: `public_html/`
 - **Port**: 80 (HTTP)
 
@@ -25,8 +33,15 @@ This guide covers the Apache VirtualHost configuration for FixCity local develop
 
 ### Master Configuration
 
+<<<<<<< .merge_file_1PYnCB
 **Location**: `laravel/config/vhost/fixcity.local.conf`
+=======
+<<<<<<< .merge_file_CnQUQW
+**Location**: `laravel/config/vhost/fixcity.local.conf`
+=======
+>>>>>>> .merge_file_gKbMON
 **Location**: `laravel/config/vhost/ptv.local.conf`
+>>>>>>> .merge_file_d1jlvg
 
 This is the **Single Source of Truth (SSOT)** for vhost configuration.
 
@@ -43,10 +58,24 @@ This is the **Single Source of Truth (SSOT)** for vhost configuration.
 
 ```bash
 # Copy to Apache sites-available
+<<<<<<< .merge_file_1PYnCB
 sudo cp laravel/config/vhost/fixcity.local.conf /etc/apache2/sites-available/
 
 # Enable site
 sudo a2ensite fixcity.local.conf
+=======
+<<<<<<< .merge_file_CnQUQW
+sudo cp laravel/config/vhost/fixcity.local.conf /etc/apache2/sites-available/
+
+# Enable site
+sudo a2ensite fixcity.local.conf
+=======
+sudo cp laravel/config/vhost/ptv.local.conf /etc/apache2/sites-available/
+
+# Enable site
+sudo a2ensite ptv.local.conf
+>>>>>>> .merge_file_d1jlvg
+>>>>>>> .merge_file_gKbMON
 
 # Reload Apache
 sudo systemctl reload apache2
@@ -57,10 +86,18 @@ sudo systemctl reload apache2
 Edit `/etc/hosts`:
 
 ```bash
+<<<<<<< .merge_file_1PYnCB
 127.0.0.1    fixcity.local
 127.0.0.1    www.fixcity.local
+=======
+<<<<<<< .merge_file_CnQUQW
+127.0.0.1    fixcity.local
+127.0.0.1    www.fixcity.local
+=======
+>>>>>>> .merge_file_gKbMON
 127.0.0.1    ptv.local
 127.0.0.1    www.ptv.local
+>>>>>>> .merge_file_d1jlvg
 ```
 
 ### 3. Verify
@@ -70,8 +107,15 @@ Edit `/etc/hosts`:
 sudo apache2ctl configtest
 
 # Check vhost is enabled
+<<<<<<< .merge_file_1PYnCB
 apache2ctl -S | grep fixcity
+=======
+<<<<<<< .merge_file_CnQUQW
+apache2ctl -S | grep fixcity
+=======
+>>>>>>> .merge_file_gKbMON
 apache2ctl -S | grep ptv
+>>>>>>> .merge_file_d1jlvg
 ```
 
 ---
@@ -81,16 +125,30 @@ apache2ctl -S | grep ptv
 ### Directory Structure
 
 ```
+<<<<<<< .merge_file_1PYnCB
 base_fixcity_fila5/
+=======
+<<<<<<< .merge_file_CnQUQW
+base_fixcity_fila5/
+=======
+>>>>>>> .merge_file_gKbMON
 base_ptv_fila5/
+>>>>>>> .merge_file_d1jlvg
 ├── public_html/              ← Document Root
 │   ├── index.php            ← Entry point
 │   └── .htaccess            ← URL rewriting
 ├── laravel/                  ← Application code
 │   ├── config/
 │   │   └── vhost/
+<<<<<<< .merge_file_1PYnCB
 │   │       └── fixcity.local.conf  ← VHost config
+=======
+<<<<<<< .merge_file_CnQUQW
+│   │       └── fixcity.local.conf  ← VHost config
+=======
+>>>>>>> .merge_file_gKbMON
 │   │       └── ptv.local.conf  ← VHost config
+>>>>>>> .merge_file_d1jlvg
 │   ├── Modules/             ← All modules
 │   └── Themes/              ← All themes
 └── docs/
@@ -101,8 +159,15 @@ base_ptv_fila5/
 ### Request Flow
 
 ```
+<<<<<<< .merge_file_1PYnCB
 Browser → Apache vhost (fixcity.local:80)
+=======
+<<<<<<< .merge_file_CnQUQW
+Browser → Apache vhost (fixcity.local:80)
+=======
+>>>>>>> .merge_file_gKbMON
 Browser → Apache vhost (ptv.local:80)
+>>>>>>> .merge_file_d1jlvg
     ↓
 DocumentRoot (public_html/)
     ↓
@@ -123,16 +188,25 @@ Modules/ + Themes/
 
 ```apache
 <VirtualHost *:80>
+<<<<<<< .merge_file_1PYnCB
+=======
+<<<<<<< .merge_file_CnQUQW
+>>>>>>> .merge_file_gKbMON
     ServerName fixcity.local
     ServerAlias www.fixcity.local
     DocumentRoot /var/www/_bases/base_fixcity_fila5/public_html
     
     <Directory /var/www/_bases/base_fixcity_fila5/public_html>
+<<<<<<< .merge_file_1PYnCB
+=======
+=======
+>>>>>>> .merge_file_gKbMON
     ServerName ptv.local
     ServerAlias www.ptv.local
     DocumentRoot /var/www/_bases/base_ptv_fila5/public_html
     
     <Directory /var/www/_bases/base_ptv_fila5/public_html>
+>>>>>>> .merge_file_d1jlvg
         Options -Indexes +FollowSymLinks +MultiViews
         AllowOverride All
         Require all granted
@@ -146,10 +220,18 @@ Modules/ + Themes/
         </IfModule>
     </Directory>
     
+<<<<<<< .merge_file_1PYnCB
     ErrorLog ${APACHE_LOG_DIR}/fixcity_local_error.log
     CustomLog ${APACHE_LOG_DIR}/fixcity_local_access.log combined
+=======
+<<<<<<< .merge_file_CnQUQW
+    ErrorLog ${APACHE_LOG_DIR}/fixcity_local_error.log
+    CustomLog ${APACHE_LOG_DIR}/fixcity_local_access.log combined
+=======
+>>>>>>> .merge_file_gKbMON
     ErrorLog ${APACHE_LOG_DIR}/ptv_local_error.log
     CustomLog ${APACHE_LOG_DIR}/ptv_local_access.log combined
+>>>>>>> .merge_file_d1jlvg
 </VirtualHost>
 ```
 
@@ -177,8 +259,15 @@ Modules/ + Themes/
 
 ```bash
 # Apache error log
+<<<<<<< .merge_file_1PYnCB
 tail -f /var/log/apache2/fixcity_local_error.log
+=======
+<<<<<<< .merge_file_CnQUQW
+tail -f /var/log/apache2/fixcity_local_error.log
+=======
+>>>>>>> .merge_file_gKbMON
 tail -f /var/log/apache2/ptv_local_error.log
+>>>>>>> .merge_file_d1jlvg
 
 # Laravel log
 tail -f laravel/storage/logs/laravel.log
@@ -192,16 +281,25 @@ tail -f laravel/storage/logs/laravel.log
 
 Every module in `laravel/Modules/` is accessible through the same vhost:
 
+<<<<<<< .merge_file_1PYnCB
+=======
+<<<<<<< .merge_file_CnQUQW
+>>>>>>> .merge_file_gKbMON
 - **Xot**: `fixcity.local/admin` (Filament)
 - **User**: `fixcity.local/login`, `fixcity.local/register`
 - **Cms**: `fixcity.local/pages/*` (CMS pages)
 - **Blog**: `fixcity.local/blog/*`
 - **Fixcity**: `fixcity.local/tickets/*`
+<<<<<<< .merge_file_1PYnCB
+=======
+=======
+>>>>>>> .merge_file_gKbMON
 - **Xot**: `ptv.local/admin` (Filament)
 - **User**: `ptv.local/login`, `ptv.local/register`
 - **Cms**: `ptv.local/pages/*` (CMS pages)
 - **Blog**: `ptv.local/blog/*`
 - **Fixcity**: `ptv.local/tickets/*`
+>>>>>>> .merge_file_d1jlvg
 - **All others**: Via their respective routes
 
 ### Theme Selection
@@ -245,19 +343,35 @@ For production:
 
 ### Update VHost Config
 
+<<<<<<< .merge_file_1PYnCB
 1. Edit `laravel/config/vhost/fixcity.local.conf`
 2. Copy to Apache: `sudo cp laravel/config/vhost/fixcity.local.conf /etc/apache2/sites-available/`
+=======
+<<<<<<< .merge_file_CnQUQW
+1. Edit `laravel/config/vhost/fixcity.local.conf`
+2. Copy to Apache: `sudo cp laravel/config/vhost/fixcity.local.conf /etc/apache2/sites-available/`
+=======
+>>>>>>> .merge_file_gKbMON
 1. Edit `laravel/config/vhost/ptv.local.conf`
 2. Copy to Apache: `sudo cp laravel/config/vhost/ptv.local.conf /etc/apache2/sites-available/`
+>>>>>>> .merge_file_d1jlvg
 3. Reload: `sudo systemctl reload apache2`
 
 ### Backup
 
 ```bash
+<<<<<<< .merge_file_1PYnCB
 sudo cp /etc/apache2/sites-available/fixcity.local.conf \
         /etc/apache2/sites-available/fixcity.local.conf.backup.$(date +%Y%m%d)
+=======
+<<<<<<< .merge_file_CnQUQW
+sudo cp /etc/apache2/sites-available/fixcity.local.conf \
+        /etc/apache2/sites-available/fixcity.local.conf.backup.$(date +%Y%m%d)
+=======
+>>>>>>> .merge_file_gKbMON
 sudo cp /etc/apache2/sites-available/ptv.local.conf \
         /etc/apache2/sites-available/ptv.local.conf.backup.$(date +%Y%m%d)
+>>>>>>> .merge_file_d1jlvg
 ```
 
 ---
@@ -274,18 +388,39 @@ apache2ctl -S
 apache2ctl configtest
 
 # Check enabled sites
+<<<<<<< .merge_file_1PYnCB
 ls -la /etc/apache2/sites-enabled/ | grep fixcity
+=======
+<<<<<<< .merge_file_CnQUQW
+ls -la /etc/apache2/sites-enabled/ | grep fixcity
+=======
+>>>>>>> .merge_file_gKbMON
 ls -la /etc/apache2/sites-enabled/ | grep ptv
+>>>>>>> .merge_file_d1jlvg
 ```
 
 ### Test Domain
 
 ```bash
 # Ping test
+<<<<<<< .merge_file_1PYnCB
 ping fixcity.local
 
 # Curl test
 curl -I http://fixcity.local
+=======
+<<<<<<< .merge_file_CnQUQW
+ping fixcity.local
+
+# Curl test
+curl -I http://fixcity.local
+=======
+ping ptv.local
+
+# Curl test
+curl -I http://ptv.local
+>>>>>>> .merge_file_d1jlvg
+>>>>>>> .merge_file_gKbMON
 ```
 
 ---

@@ -546,8 +546,15 @@ ls -la .planning/
 # Check skills
 /gsd-help
 
+<<<<<<< .merge_file_bdnpJl
 # Review AGENTS.md for GSD commands
+=======
+<<<<<<< .merge_file_ttQJlk
+# Review AGENTS.md for GSD commands
+=======
+>>>>>>> .merge_file_pReHov
 # Review agents.md for GSD commands
+>>>>>>> .merge_file_CaxNVq
 ```
 
 ### Ralph Loop Issues
@@ -570,8 +577,15 @@ cat .ralph/iteration-log.md
 - [OpenViking Integration](./openviking-integration.md)
 - [BMAD-GSD-Ralph Integration](./bmad-gsd-ralph-integration.md)
 - [BMAD Workflow](laravel/Modules/Xot/docs/bmad-workflow-guide.md)
+<<<<<<< .merge_file_bdnpJl
 - [AGENTS.md](../AGENTS.md)
+=======
+<<<<<<< .merge_file_ttQJlk
+- [AGENTS.md](../AGENTS.md)
+=======
+>>>>>>> .merge_file_pReHov
 - [agents.md](../agents.md)
+>>>>>>> .merge_file_CaxNVq
 
 ### Scripts
 - OpenViking Init: `bashscripts/ai/openviking-init.sh`

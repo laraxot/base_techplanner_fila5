@@ -1,7 +1,14 @@
 # Agents first rule: Read → Reason → Study → Update → Improve
 
+<<<<<<< .merge_file_BolnkQ
 > Source: [AGENTS.md](../../AGENTS.md)
+=======
+<<<<<<< .merge_file_idKMl3
+> Source: [AGENTS.md](../../AGENTS.md)
+=======
+>>>>>>> .merge_file_BPaMPG
 > Source: [agents.md](../../agents.md)
+>>>>>>> .merge_file_298UMN
 > Back: [index](index.md) | [workflow.md](workflow.md)
 
 ## The fundamental rule

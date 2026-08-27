@@ -36,8 +36,15 @@ All JSON files in `config/local/*/database/content/pages/` MUST follow:
 
 1. **Filename MUST match slug exactly**:
    - File `about.json` MUST have `"slug": "about"`
+<<<<<<< .merge_file_q99OyM
    - File `predicts.json` MUST have `"slug": "predicts"`
+=======
+<<<<<<< .merge_file_WBtt9o
+   - File `predicts.json` MUST have `"slug": "predicts"`
+=======
+>>>>>>> .merge_file_VIrkvS
    - File `forecasts.json` MUST have `"slug": "forecasts"`
+>>>>>>> .merge_file_6U5RY2
 
 2. **Empty files forbidden**:
    - Never create empty JSON files
@@ -64,8 +71,15 @@ done
 
 - Module SVG icons live in `Modules/<ModuleName>/resources/svg`
 - The blade icon name must use the module prefix + filename
+<<<<<<< .merge_file_q99OyM
 - Example: `predict-bottlecap` for `Modules/Predict/resources/svg/bottlecap.svg`
+=======
+<<<<<<< .merge_file_WBtt9o
+- Example: `predict-bottlecap` for `Modules/Predict/resources/svg/bottlecap.svg`
+=======
+>>>>>>> .merge_file_VIrkvS
 - Example: `forecast-bottlecap` for `Modules/Forecast/resources/svg/bottlecap.svg`
+>>>>>>> .merge_file_6U5RY2
 
 ---
 
@@ -108,6 +122,13 @@ done
 
 - [Indice AGENTS](./agents-split-index.md)
 - [regole-critiche.md](./regole-critiche.md) - Regole critiche
+<<<<<<< .merge_file_q99OyM
 - [AGENTS.md originale](../../AGENTS.md)
+=======
+<<<<<<< .merge_file_WBtt9o
+- [AGENTS.md originale](../../AGENTS.md)
+=======
+>>>>>>> .merge_file_VIrkvS
 - [agents.md originale](../../agents.md)
+>>>>>>> .merge_file_6U5RY2
 - [Index principale](./index.md)

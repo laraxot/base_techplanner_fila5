@@ -9,6 +9,18 @@ use Modules\Notify\Database\Factories\MailTemplateVersionFactory;
 use Modules\Notify\Models\MailTemplate;
 use Modules\Notify\Models\MailTemplateVersion;
 use Modules\Notify\Tests\TestCase;
+<<<<<<< .merge_file_P16v4d
+=======
+use PHPUnit\Framework\Assert;
+<<<<<<< .merge_file_UuRDlu
+
+uses(\Modules\Notify\Tests\TestCase::class);
+
+describe('Mail Template Version Business Logic', function (): void {
+    test('_can_create_mail_template_version_with_basic_information', function (): void {
+$template = MailTemplateFactory::new()->createOne();
+=======
+>>>>>>> .merge_file_h1Q2u8
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
@@ -17,6 +29,7 @@ uses(TestCase::class)->group('notify-db');
 describe('Mail Template Version Business Logic', function (): void {
     test('_can_create_mail_template_version_with_basic_information', function (): void {
         $template = MailTemplateFactory::new()->createOne();
+>>>>>>> .merge_file_H75dtl
 
         $version = MailTemplateVersionFactory::new()->createOne([
             'template_id' => $template->id,
@@ -26,7 +39,11 @@ describe('Mail Template Version Business Logic', function (): void {
             'version' => 2,
             'change_notes' => 'Aggiornamento copy',
         ]);
+<<<<<<< .merge_file_UuRDlu
+        \assertNotifyTableHas('mail_template_versions', [
+=======
         XotBasePest::assertTableHas('notify', 'mail_template_versions', [
+>>>>>>> .merge_file_H75dtl
             'id' => $version->id,
             'subject' => 'Conferma Appuntamento - Versione 2',
             'version' => 2,
@@ -38,7 +55,11 @@ describe('Mail Template Version Business Logic', function (): void {
     });
 
     test('_can_manage_mail_template_version_relationships', function (): void {
+<<<<<<< .merge_file_UuRDlu
+$template = MailTemplateFactory::new()->createOne();
+=======
         $template = MailTemplateFactory::new()->createOne();
+>>>>>>> .merge_file_H75dtl
         $version = MailTemplateVersionFactory::new()->createOne([
             'template_id' => $template->id,
         ]);
@@ -48,7 +69,11 @@ describe('Mail Template Version Business Logic', function (): void {
     });
 
     test('_can_store_metadata_on_mail_template_version', function (): void {
+<<<<<<< .merge_file_UuRDlu
+$template = MailTemplateFactory::new()->createOne();
+=======
         $template = MailTemplateFactory::new()->createOne();
+>>>>>>> .merge_file_H75dtl
         $metadata = [
             'author' => 'admin@example.com',
             'review_status' => 'approved',
@@ -63,11 +88,19 @@ describe('Mail Template Version Business Logic', function (): void {
 
         $fresh = $version->fresh();
         Assert::assertInstanceOf(MailTemplateVersion::class, $fresh);
+<<<<<<< .merge_file_UuRDlu
+        Assert::assertSame('approved', \assertNotifyArray($fresh->metadata)['review_status']);
+    });
+
+    test('_can_update_template_content_from_version_fields', function (): void {
+$template = MailTemplateFactory::new()->createOne([
+=======
         Assert::assertSame('approved', XotBasePest::assertArray($fresh->metadata)['review_status']);
     });
 
     test('_can_update_template_content_from_version_fields', function (): void {
         $template = MailTemplateFactory::new()->createOne([
+>>>>>>> .merge_file_H75dtl
             'subject' => 'Versione Corrente',
             'html_template' => '<p>Template corrente</p>',
             'text_template' => 'Template corrente',
@@ -87,7 +120,11 @@ describe('Mail Template Version Business Logic', function (): void {
             'text_template' => $version->text_template,
         ]);
 
+<<<<<<< .merge_file_UuRDlu
+        $freshTemplate = \assertFreshModel($template, \Modules\Notify\Models\MailTemplate::class);
+=======
         $freshTemplate = XotBasePest::assertFreshModel($template, MailTemplate::class);
+>>>>>>> .merge_file_H75dtl
         Assert::assertInstanceOf(MailTemplate::class, $freshTemplate);
         Assert::assertSame('Versione Precedente', $freshTemplate->subject);
         Assert::assertSame('<p>Template versione precedente</p>', $freshTemplate->html_template);

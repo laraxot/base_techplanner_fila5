@@ -795,6 +795,16 @@ class ConsentLog extends Model
 - [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./notifications_implementation_guide.md)
 <<<<<<< .merge_file_1Z1EDQ
 - [TELEGRAM_NOTIFICATIONS_GUIDE.md](./telegram_notifications_guide.md)
+<<<<<<< .merge_file_8bgJwb
 =======
 - [TELEGRAM_NOTIFICATIONS_GUIDE.md](./telegram_notifications_guide.md)
 >>>>>>> .merge_file_xN6fA8
+=======
+<<<<<<< .merge_file_ymWk19
+- [TELEGRAM_NOTIFICATIONS_GUIDE.md](./telegram_notifications_guide.md)
+=======
+=======
+- [TELEGRAM_NOTIFICATIONS_GUIDE.md](./telegram_notifications_guide.md)
+>>>>>>> .merge_file_xN6fA8
+>>>>>>> .merge_file_ICPpy6
+>>>>>>> .merge_file_95VZmN

@@ -93,8 +93,15 @@ TOTALE: ~2,500 righe  ✅ Organizzate, navigabili, mantenibili
 
 ### Da File Originali a Moduli
 ```markdown
+<<<<<<< .merge_file_IeY4OD
 # AGENTS.md (compatto)
+=======
+<<<<<<< .merge_file_T5LtKp
+# AGENTS.md (compatto)
+=======
+>>>>>>> .merge_file_JsTQsI
 # agents.md (compatto)
+>>>>>>> .merge_file_yKLZ6Z
 ## Contenuto Diviso
 | Sezione | File |
 |---------|------|
@@ -107,8 +114,15 @@ TOTALE: ~2,500 righe  ✅ Organizzate, navigabili, mantenibili
 ```markdown
 # .agents/docs/overview/agents-overview.md
 ## Riferimenti
+<<<<<<< .merge_file_IeY4OD
 - [AGENTS.md](../../AGENTS.md) - File originale compatto
+=======
+<<<<<<< .merge_file_T5LtKp
+- [AGENTS.md](../../AGENTS.md) - File originale compatto
+=======
+>>>>>>> .merge_file_JsTQsI
 - [agents.md](../../agents.md) - File originale compatto
+>>>>>>> .merge_file_yKLZ6Z
 - [QWEN.md](../../QWEN.md) - Contesto Qwen Code
 ```
 

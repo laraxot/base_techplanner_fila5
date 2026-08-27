@@ -4,8 +4,15 @@ type: concept
 tags: [master, plan]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< .merge_file_OGnxv6
 qmd: "master-plan fixcity platform - master plan 🚀"
+=======
+<<<<<<< .merge_file_USU5ON
+qmd: "master-plan fixcity platform - master plan 🚀"
+=======
+>>>>>>> .merge_file_l5EUJL
 qmd: "master-plan ptv platform - master plan 🚀"
+>>>>>>> .merge_file_47FpDF
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -448,8 +455,15 @@ docs/
 ├── API_REFERENCE.md (📋 API Documentation)
 ├── DEPLOYMENT.md (📋 Deployment Guide)
 └── modules/
+<<<<<<< .merge_file_OGnxv6
     ├── fixcity/ (✅ Business Logic + Roadmap)
+=======
+<<<<<<< .merge_file_USU5ON
+    ├── fixcity/ (✅ Business Logic + Roadmap)
+=======
+>>>>>>> .merge_file_l5EUJL
     ├── ptv/ (✅ Business Logic + Roadmap)
+>>>>>>> .merge_file_47FpDF
     ├── user/ (✅ IAM + Roadmap)
     ├── notify/ (✅ Notifications + Roadmap)
     ├── geo/ (✅ Geolocation + Roadmap)
@@ -504,6 +518,13 @@ FixCity è posizionata per diventare la **piattaforma leader europea** per il ci
 - *Technical capabilities e constraints*
 - *Team composition e roadmap feasibility*
 
+<<<<<<< .merge_file_OGnxv6
 **Per domande o approfondimenti**: development@fixcity.io
+=======
+<<<<<<< .merge_file_USU5ON
+**Per domande o approfondimenti**: development@fixcity.io
+=======
+>>>>>>> .merge_file_l5EUJL
 **Per domande o approfondimenti**: development@ptv.io
+>>>>>>> .merge_file_47FpDF
 

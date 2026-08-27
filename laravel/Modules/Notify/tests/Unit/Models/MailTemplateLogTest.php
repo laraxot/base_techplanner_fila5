@@ -4,8 +4,29 @@ declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Models;
 
+use function Safe\json_encode;
+use PHPUnit\Framework\Assert;
 use Modules\Notify\Models\MailTemplateLog;
 use Modules\Notify\Tests\TestCase;
+<<<<<<< .merge_file_ILbkNY
+=======
+<<<<<<< .merge_file_hNEXjO
+use function Pest\Laravel\get;
+
+uses(\Modules\Notify\Tests\TestCase::class);
+
+beforeEach(function (): void {
+    /** @var \Modules\Notify\Tests\TestCase $this */
+$this->disableExceptionHandling();
+});
+
+describe('Mail Template Log', function (): void {
+    test('_can_create_mail_template_log', function (): void {
+        /** @var \Modules\Notify\Tests\TestCase $this */
+$log = MailTemplateLog::create([
+=======
+use PHPUnit\Framework\Assert;
+>>>>>>> .merge_file_EABHfZ
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
@@ -21,6 +42,7 @@ beforeEach(function (): void {
 describe('Mail Template Log', function (): void {
     test('_can_create_mail_template_log', function (): void {
         $log = MailTemplateLog::create([
+>>>>>>> .merge_file_ymkLKM
             'template_id' => 123,
             'mailable_type' => 'App\Mail\WelcomeMail',
             'mailable_id' => 456,
@@ -39,7 +61,11 @@ describe('Mail Template Log', function (): void {
             'sent_at' => now(),
             'delivered_at' => now()->addMinutes(1),
         ]);
+<<<<<<< .merge_file_hNEXjO
+        \assertNotifyTableHas('mail_template_logs', [
+=======
         XotBasePest::assertTableHas('notify', 'mail_template_logs', [
+>>>>>>> .merge_file_ymkLKM
             'id' => $log->id,
             'template_id' => 123,
             'mailable_type' => 'App\Mail\WelcomeMail',
@@ -52,7 +78,15 @@ describe('Mail Template Log', function (): void {
     });
 
     test('_has_correct_fillable_fields', function (): void {
+<<<<<<< .merge_file_ILbkNY
         $log = new MailTemplateLog();
+=======
+<<<<<<< .merge_file_hNEXjO
+$log = new MailTemplateLog;
+=======
+        $log = new MailTemplateLog;
+>>>>>>> .merge_file_ymkLKM
+>>>>>>> .merge_file_EABHfZ
 
         $expectedFillable = [
             'template_id',
@@ -73,7 +107,15 @@ describe('Mail Template Log', function (): void {
     });
 
     test('_has_correct_casts', function (): void {
+<<<<<<< .merge_file_ILbkNY
         $log = new MailTemplateLog();
+=======
+<<<<<<< .merge_file_hNEXjO
+$log = new MailTemplateLog;
+=======
+        $log = new MailTemplateLog;
+>>>>>>> .merge_file_ymkLKM
+>>>>>>> .merge_file_EABHfZ
 
         $expectedCasts = [
             'id' => 'string',
@@ -97,7 +139,11 @@ describe('Mail Template Log', function (): void {
     });
 
     test('_can_store_json_data', function (): void {
+<<<<<<< .merge_file_hNEXjO
+$data = [
+=======
         $data = [
+>>>>>>> .merge_file_ymkLKM
             'to' => 'user@example.com',
             'cc' => ['cc1@example.com', 'cc2@example.com'],
             'bcc' => ['bcc@example.com'],
@@ -118,18 +164,31 @@ describe('Mail Template Log', function (): void {
             'status' => 'sent',
             'data' => $data,
         ]);
+<<<<<<< .merge_file_hNEXjO
+        \assertNotifyTableHas('mail_template_logs', [
+=======
         XotBasePest::assertTableHas('notify', 'mail_template_logs', [
+>>>>>>> .merge_file_ymkLKM
             'id' => $log->id,
             'data' => json_encode($data),
         ]);
         Assert::assertEquals('user@example.com', $log->data['to']);
         Assert::assertEquals(['cc1@example.com', 'cc2@example.com'], $log->data['cc']);
+<<<<<<< .merge_file_hNEXjO
+        Assert::assertEquals('John Doe', \notifyArrayGet($log->data, 'variables', 'name'));
+        Assert::assertEquals('Example Corp', \notifyArrayGet($log->data, 'variables', 'company'));
+    });
+
+    test('_can_store_json_metadata', function (): void {
+$metadata = [
+=======
         Assert::assertEquals('John Doe', TestCase::notifyArrayGet($log->data, 'variables', 'name'));
         Assert::assertEquals('Example Corp', TestCase::notifyArrayGet($log->data, 'variables', 'company'));
     });
 
     test('_can_store_json_metadata', function (): void {
         $metadata = [
+>>>>>>> .merge_file_ymkLKM
             'provider' => 'smtp',
             'queue_id' => 'queue_123',
             'attempts' => 3,
@@ -154,19 +213,32 @@ describe('Mail Template Log', function (): void {
             'status' => 'failed',
             'metadata' => $metadata,
         ]);
+<<<<<<< .merge_file_hNEXjO
+        \assertNotifyTableHas('mail_template_logs', [
+=======
         XotBasePest::assertTableHas('notify', 'mail_template_logs', [
+>>>>>>> .merge_file_ymkLKM
             'id' => $log->id,
             'metadata' => json_encode($metadata),
         ]);
         Assert::assertEquals('smtp', $log->metadata['provider']);
         Assert::assertEquals('queue_123', $log->metadata['queue_id']);
         Assert::assertEquals(3, $log->metadata['attempts']);
+<<<<<<< .merge_file_hNEXjO
+        Assert::assertEquals('SMTP_ERROR', \notifyArrayGet($log->metadata, 'error_details', 'code'));
+        Assert::assertEquals(4000, \notifyArrayGet($log->metadata, 'performance', 'total_time'));
+    });
+
+    test('_can_update_status_and_timestamps', function (): void {
+$log = MailTemplateLog::create([
+=======
         Assert::assertEquals('SMTP_ERROR', TestCase::notifyArrayGet($log->metadata, 'error_details', 'code'));
         Assert::assertEquals(4000, TestCase::notifyArrayGet($log->metadata, 'performance', 'total_time'));
     });
 
     test('_can_update_status_and_timestamps', function (): void {
         $log = MailTemplateLog::create([
+>>>>>>> .merge_file_ymkLKM
             'template_id' => 123,
             'mailable_type' => 'App\Mail\TestMail',
             'mailable_id' => 456,
@@ -178,12 +250,25 @@ describe('Mail Template Log', function (): void {
             'sent_at' => now(),
             'status_message' => 'Email sent successfully',
         ]);
+<<<<<<< .merge_file_hNEXjO
+        \assertNotifyTableHas('mail_template_logs', [
+=======
         XotBasePest::assertTableHas('notify', 'mail_template_logs', [
+>>>>>>> .merge_file_ymkLKM
             'id' => $log->id,
             'status' => 'sent',
             'status_message' => 'Email sent successfully',
         ]);
 
+<<<<<<< .merge_file_hNEXjO
+        Assert::assertEquals('sent', \assertFreshModel($log, \Modules\Notify\Models\MailTemplateLog::class)->status);
+        Assert::assertNotNull(\assertFreshModel($log, \Modules\Notify\Models\MailTemplateLog::class)->sent_at);
+        Assert::assertEquals('Email sent successfully', \assertFreshModel($log, \Modules\Notify\Models\MailTemplateLog::class)->status_message);
+    });
+
+    test('_can_mark_as_delivered', function (): void {
+$log = MailTemplateLog::create([
+=======
         Assert::assertEquals('sent', XotBasePest::assertFreshModel($log, MailTemplateLog::class)->status);
         Assert::assertNotNull(XotBasePest::assertFreshModel($log, MailTemplateLog::class)->sent_at);
         Assert::assertEquals('Email sent successfully', XotBasePest::assertFreshModel($log, MailTemplateLog::class)->status_message);
@@ -191,6 +276,7 @@ describe('Mail Template Log', function (): void {
 
     test('_can_mark_as_delivered', function (): void {
         $log = MailTemplateLog::create([
+>>>>>>> .merge_file_ymkLKM
             'template_id' => 123,
             'mailable_type' => 'App\Mail\TestMail',
             'mailable_id' => 456,
@@ -202,17 +288,30 @@ describe('Mail Template Log', function (): void {
             'status' => 'delivered',
             'delivered_at' => now()->addMinutes(1),
         ]);
+<<<<<<< .merge_file_hNEXjO
+        \assertNotifyTableHas('mail_template_logs', [
+=======
         XotBasePest::assertTableHas('notify', 'mail_template_logs', [
+>>>>>>> .merge_file_ymkLKM
             'id' => $log->id,
             'status' => 'delivered',
         ]);
 
+<<<<<<< .merge_file_hNEXjO
+        Assert::assertEquals('delivered', \assertFreshModel($log, \Modules\Notify\Models\MailTemplateLog::class)->status);
+        Assert::assertNotNull(\assertFreshModel($log, \Modules\Notify\Models\MailTemplateLog::class)->delivered_at);
+    });
+
+    test('_can_mark_as_failed', function (): void {
+$log = MailTemplateLog::create([
+=======
         Assert::assertEquals('delivered', XotBasePest::assertFreshModel($log, MailTemplateLog::class)->status);
         Assert::assertNotNull(XotBasePest::assertFreshModel($log, MailTemplateLog::class)->delivered_at);
     });
 
     test('_can_mark_as_failed', function (): void {
         $log = MailTemplateLog::create([
+>>>>>>> .merge_file_ymkLKM
             'template_id' => 123,
             'mailable_type' => 'App\Mail\TestMail',
             'mailable_id' => 456,
@@ -224,12 +323,25 @@ describe('Mail Template Log', function (): void {
             'failed_at' => now(),
             'status_message' => 'SMTP connection failed',
         ]);
+<<<<<<< .merge_file_hNEXjO
+        \assertNotifyTableHas('mail_template_logs', [
+=======
         XotBasePest::assertTableHas('notify', 'mail_template_logs', [
+>>>>>>> .merge_file_ymkLKM
             'id' => $log->id,
             'status' => 'failed',
             'status_message' => 'SMTP connection failed',
         ]);
 
+<<<<<<< .merge_file_hNEXjO
+        Assert::assertEquals('failed', \assertFreshModel($log, \Modules\Notify\Models\MailTemplateLog::class)->status);
+        Assert::assertNotNull(\assertFreshModel($log, \Modules\Notify\Models\MailTemplateLog::class)->failed_at);
+        Assert::assertEquals('SMTP connection failed', \assertFreshModel($log, \Modules\Notify\Models\MailTemplateLog::class)->status_message);
+    });
+
+    test('_can_mark_as_opened', function (): void {
+$log = MailTemplateLog::create([
+=======
         Assert::assertEquals('failed', XotBasePest::assertFreshModel($log, MailTemplateLog::class)->status);
         Assert::assertNotNull(XotBasePest::assertFreshModel($log, MailTemplateLog::class)->failed_at);
         Assert::assertEquals('SMTP connection failed', XotBasePest::assertFreshModel($log, MailTemplateLog::class)->status_message);
@@ -237,6 +349,7 @@ describe('Mail Template Log', function (): void {
 
     test('_can_mark_as_opened', function (): void {
         $log = MailTemplateLog::create([
+>>>>>>> .merge_file_ymkLKM
             'template_id' => 123,
             'mailable_type' => 'App\Mail\TestMail',
             'mailable_id' => 456,
@@ -247,6 +360,18 @@ describe('Mail Template Log', function (): void {
         $log->update([
             'opened_at' => now()->addMinutes(5),
         ]);
+<<<<<<< .merge_file_hNEXjO
+        \assertNotifyTableHas('mail_template_logs', [
+            'id' => $log->id,
+            'opened_at' => \assertFreshModel($log, \Modules\Notify\Models\MailTemplateLog::class)->opened_at,
+        ]);
+
+        Assert::assertNotNull(\assertFreshModel($log, \Modules\Notify\Models\MailTemplateLog::class)->opened_at);
+    });
+
+    test('_can_mark_as_clicked', function (): void {
+$log = MailTemplateLog::create([
+=======
         XotBasePest::assertTableHas('notify', 'mail_template_logs', [
             'id' => $log->id,
             'opened_at' => XotBasePest::assertFreshModel($log, MailTemplateLog::class)->opened_at,
@@ -257,6 +382,7 @@ describe('Mail Template Log', function (): void {
 
     test('_can_mark_as_clicked', function (): void {
         $log = MailTemplateLog::create([
+>>>>>>> .merge_file_ymkLKM
             'template_id' => 123,
             'mailable_type' => 'App\Mail\TestMail',
             'mailable_id' => 456,
@@ -268,6 +394,18 @@ describe('Mail Template Log', function (): void {
         $log->update([
             'clicked_at' => now()->addMinutes(10),
         ]);
+<<<<<<< .merge_file_hNEXjO
+        \assertNotifyTableHas('mail_template_logs', [
+            'id' => $log->id,
+            'clicked_at' => \assertFreshModel($log, \Modules\Notify\Models\MailTemplateLog::class)->clicked_at,
+        ]);
+
+        Assert::assertNotNull(\assertFreshModel($log, \Modules\Notify\Models\MailTemplateLog::class)->clicked_at);
+    });
+
+    test('_can_find_by_template_id', function (): void {
+MailTemplateLog::create([
+=======
         XotBasePest::assertTableHas('notify', 'mail_template_logs', [
             'id' => $log->id,
             'clicked_at' => XotBasePest::assertFreshModel($log, MailTemplateLog::class)->clicked_at,
@@ -278,6 +416,7 @@ describe('Mail Template Log', function (): void {
 
     test('_can_find_by_template_id', function (): void {
         MailTemplateLog::create([
+>>>>>>> .merge_file_ymkLKM
             'template_id' => 123,
             'mailable_type' => 'App\Mail\TestMail',
             'mailable_id' => 456,
@@ -303,6 +442,15 @@ describe('Mail Template Log', function (): void {
 
         Assert::assertCount(2, $template123Logs);
         Assert::assertCount(1, $template456Logs);
+<<<<<<< .merge_file_hNEXjO
+        Assert::assertEquals(123, \assertFirstModel($template123Logs, \Modules\Notify\Models\MailTemplateLog::class)->template_id);
+        Assert::assertEquals(123, \assertFirstModel($template123Logs->slice(1), \Modules\Notify\Models\MailTemplateLog::class)->template_id);
+        Assert::assertEquals(456, \assertFirstModel($template456Logs, \Modules\Notify\Models\MailTemplateLog::class)->template_id);
+    });
+
+    test('_can_find_by_status', function (): void {
+MailTemplateLog::create([
+=======
         Assert::assertEquals(123, XotBasePest::assertFirstModel($template123Logs, MailTemplateLog::class)->template_id);
         Assert::assertEquals(123, XotBasePest::assertFirstModel($template123Logs->slice(1), MailTemplateLog::class)->template_id);
         Assert::assertEquals(456, XotBasePest::assertFirstModel($template456Logs, MailTemplateLog::class)->template_id);
@@ -310,6 +458,7 @@ describe('Mail Template Log', function (): void {
 
     test('_can_find_by_status', function (): void {
         MailTemplateLog::create([
+>>>>>>> .merge_file_ymkLKM
             'template_id' => 123,
             'mailable_type' => 'App\Mail\TestMail',
             'mailable_id' => 456,
@@ -337,6 +486,15 @@ describe('Mail Template Log', function (): void {
         Assert::assertCount(1, $sentLogs);
         Assert::assertCount(1, $failedLogs);
         Assert::assertCount(1, $deliveredLogs);
+<<<<<<< .merge_file_hNEXjO
+        Assert::assertEquals('sent', \assertFirstModel($sentLogs, \Modules\Notify\Models\MailTemplateLog::class)->status);
+        Assert::assertEquals('failed', \assertFirstModel($failedLogs, \Modules\Notify\Models\MailTemplateLog::class)->status);
+        Assert::assertEquals('delivered', \assertFirstModel($deliveredLogs, \Modules\Notify\Models\MailTemplateLog::class)->status);
+    });
+
+    test('_can_find_by_mailable_type', function (): void {
+MailTemplateLog::create([
+=======
         Assert::assertEquals('sent', XotBasePest::assertFirstModel($sentLogs, MailTemplateLog::class)->status);
         Assert::assertEquals('failed', XotBasePest::assertFirstModel($failedLogs, MailTemplateLog::class)->status);
         Assert::assertEquals('delivered', XotBasePest::assertFirstModel($deliveredLogs, MailTemplateLog::class)->status);
@@ -344,6 +502,7 @@ describe('Mail Template Log', function (): void {
 
     test('_can_find_by_mailable_type', function (): void {
         MailTemplateLog::create([
+>>>>>>> .merge_file_ymkLKM
             'template_id' => 123,
             'mailable_type' => 'App\Mail\TestMail',
             'mailable_id' => 456,
@@ -369,6 +528,15 @@ describe('Mail Template Log', function (): void {
 
         Assert::assertCount(2, $testMailLogs);
         Assert::assertCount(1, $welcomeMailLogs);
+<<<<<<< .merge_file_hNEXjO
+        Assert::assertEquals('App\Mail\TestMail', \assertFirstModel($testMailLogs, \Modules\Notify\Models\MailTemplateLog::class)->mailable_type);
+        Assert::assertEquals('App\Mail\TestMail', \assertFirstModel($testMailLogs->slice(1), \Modules\Notify\Models\MailTemplateLog::class)->mailable_type);
+        Assert::assertEquals('App\Mail\WelcomeMail', \assertFirstModel($welcomeMailLogs, \Modules\Notify\Models\MailTemplateLog::class)->mailable_type);
+    });
+
+    test('_can_find_by_date_range', function (): void {
+$yesterday = now()->subDay();
+=======
         Assert::assertEquals('App\Mail\TestMail', XotBasePest::assertFirstModel($testMailLogs, MailTemplateLog::class)->mailable_type);
         Assert::assertEquals('App\Mail\TestMail', XotBasePest::assertFirstModel($testMailLogs->slice(1), MailTemplateLog::class)->mailable_type);
         Assert::assertEquals('App\Mail\WelcomeMail', XotBasePest::assertFirstModel($welcomeMailLogs, MailTemplateLog::class)->mailable_type);
@@ -376,6 +544,7 @@ describe('Mail Template Log', function (): void {
 
     test('_can_find_by_date_range', function (): void {
         $yesterday = now()->subDay();
+>>>>>>> .merge_file_ymkLKM
         $today = now();
         $tomorrow = now()->addDay();
 
@@ -408,11 +577,19 @@ describe('Mail Template Log', function (): void {
 
         Assert::assertCount(1, $todayLogs);
         Assert::assertCount(2, $recentLogs); // yesterday and today
+<<<<<<< .merge_file_hNEXjO
+        Assert::assertEquals('App\Mail\WelcomeMail', \assertFirstModel($todayLogs, \Modules\Notify\Models\MailTemplateLog::class)->mailable_type);
+    });
+
+    test('_can_find_by_data_pattern', function (): void {
+MailTemplateLog::create([
+=======
         Assert::assertEquals('App\Mail\WelcomeMail', XotBasePest::assertFirstModel($todayLogs, MailTemplateLog::class)->mailable_type);
     });
 
     test('_can_find_by_data_pattern', function (): void {
         MailTemplateLog::create([
+>>>>>>> .merge_file_ymkLKM
             'template_id' => 123,
             'mailable_type' => 'App\Mail\TestMail',
             'mailable_id' => 456,
@@ -441,12 +618,21 @@ describe('Mail Template Log', function (): void {
 
         Assert::assertCount(1, $welcomeSubjectLogs);
         Assert::assertCount(1, $welcomeTemplateLogs);
+<<<<<<< .merge_file_hNEXjO
+        Assert::assertEquals('Welcome to our platform', \assertFirstModel($welcomeSubjectLogs, \Modules\Notify\Models\MailTemplateLog::class)->data['subject']);
+        Assert::assertEquals('welcome_template', \notifyArrayGet(\assertFirstModel($welcomeTemplateLogs, \Modules\Notify\Models\MailTemplateLog::class)->data, 'template'));
+    });
+
+    test('_can_find_by_metadata_pattern', function (): void {
+MailTemplateLog::create([
+=======
         Assert::assertEquals('Welcome to our platform', XotBasePest::assertFirstModel($welcomeSubjectLogs, MailTemplateLog::class)->data['subject']);
         Assert::assertEquals('welcome_template', TestCase::notifyArrayGet(XotBasePest::assertFirstModel($welcomeTemplateLogs, MailTemplateLog::class)->data, 'template'));
     });
 
     test('_can_find_by_metadata_pattern', function (): void {
         MailTemplateLog::create([
+>>>>>>> .merge_file_ymkLKM
             'template_id' => 123,
             'mailable_type' => 'App\Mail\TestMail',
             'mailable_id' => 456,
@@ -475,12 +661,21 @@ describe('Mail Template Log', function (): void {
 
         Assert::assertCount(1, $smtpLogs);
         Assert::assertCount(1, $sesLogs);
+<<<<<<< .merge_file_hNEXjO
+        Assert::assertEquals('smtp', \assertFirstModel($smtpLogs, \Modules\Notify\Models\MailTemplateLog::class)->metadata['provider']);
+        Assert::assertEquals('ses', \assertFirstModel($sesLogs, \Modules\Notify\Models\MailTemplateLog::class)->metadata['provider']);
+    });
+
+    test('_can_find_by_multiple_criteria', function (): void {
+MailTemplateLog::create([
+=======
         Assert::assertEquals('smtp', XotBasePest::assertFirstModel($smtpLogs, MailTemplateLog::class)->metadata['provider']);
         Assert::assertEquals('ses', XotBasePest::assertFirstModel($sesLogs, MailTemplateLog::class)->metadata['provider']);
     });
 
     test('_can_find_by_multiple_criteria', function (): void {
         MailTemplateLog::create([
+>>>>>>> .merge_file_ymkLKM
             'template_id' => 123,
             'mailable_type' => 'App\Mail\TestMail',
             'mailable_id' => 456,
@@ -516,6 +711,15 @@ describe('Mail Template Log', function (): void {
             ->get();
 
         Assert::assertCount(1, $smtpWelcomeLogs);
+<<<<<<< .merge_file_hNEXjO
+        Assert::assertEquals('sent', \assertFirstModel($smtpWelcomeLogs, \Modules\Notify\Models\MailTemplateLog::class)->status);
+        Assert::assertEquals('smtp', \assertFirstModel($smtpWelcomeLogs, \Modules\Notify\Models\MailTemplateLog::class)->metadata['provider']);
+        Assert::assertEquals('Welcome email', \assertFirstModel($smtpWelcomeLogs, \Modules\Notify\Models\MailTemplateLog::class)->data['subject']);
+    });
+
+    test('_can_handle_null_values', function (): void {
+$log = MailTemplateLog::create([
+=======
         Assert::assertEquals('sent', XotBasePest::assertFirstModel($smtpWelcomeLogs, MailTemplateLog::class)->status);
         Assert::assertEquals('smtp', XotBasePest::assertFirstModel($smtpWelcomeLogs, MailTemplateLog::class)->metadata['provider']);
         Assert::assertEquals('Welcome email', XotBasePest::assertFirstModel($smtpWelcomeLogs, MailTemplateLog::class)->data['subject']);
@@ -523,6 +727,7 @@ describe('Mail Template Log', function (): void {
 
     test('_can_handle_null_values', function (): void {
         $log = MailTemplateLog::create([
+>>>>>>> .merge_file_ymkLKM
             'template_id' => null,
             'mailable_type' => null,
             'mailable_id' => null,
@@ -552,7 +757,11 @@ describe('Mail Template Log', function (): void {
     });
 
     test('_can_handle_empty_arrays', function (): void {
+<<<<<<< .merge_file_hNEXjO
+$log = MailTemplateLog::create([
+=======
         $log = MailTemplateLog::create([
+>>>>>>> .merge_file_ymkLKM
             'template_id' => 123,
             'mailable_type' => 'App\Mail\TestMail',
             'mailable_id' => 456,
@@ -560,7 +769,11 @@ describe('Mail Template Log', function (): void {
             'data' => [],
             'metadata' => [],
         ]);
+<<<<<<< .merge_file_hNEXjO
+        \assertNotifyTableHas('mail_template_logs', [
+=======
         XotBasePest::assertTableHas('notify', 'mail_template_logs', [
+>>>>>>> .merge_file_ymkLKM
             'id' => $log->id,
             'data' => json_encode([]),
             'metadata' => json_encode([]),

@@ -87,7 +87,16 @@ return [
             'color' => 'primary',
             'confirmation' => ['title' => 'Conferma impostazione predefinito', 'message' => 'Vuoi impostare questo tema come predefinito?', 'confirm' => 'Sì, imposta', 'cancel' => 'No, annulla'],
         ],
+<<<<<<< .merge_file_I0kgeA
         'delete' => ['tooltip' => 'delete'],
+=======
+        'delete' => ['tooltip' => 'delete', 'label' => 'delete', 'icon' => 'delete'],
+        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
+        'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+        'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
+>>>>>>> .merge_file_vUqDXW
     ],
     'messages' => [
         'created' => ['title' => 'Tema Creato', 'message' => 'Il tema è stato creato con successo'],

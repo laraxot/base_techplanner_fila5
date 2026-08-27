@@ -138,14 +138,29 @@ File: `.qwen-code-rules.md`
 ## 🔗 Related Documentation
 
 ### AI Agents Docs
+<<<<<<< .merge_file_0ytPpw
 - **[Rules Index](00-INDEX.md)** - All rules
+=======
+<<<<<<< .merge_file_laug3X
+- **[Rules Index](00-INDEX.md)** - All rules
+=======
+>>>>>>> .merge_file_zREfHf
 - **[Rules Index](00-index.md)** - All rules
+>>>>>>> .merge_file_g8B989
 - **[XotBase Extension Rule](xotbase-extension-rule.md)** - XotBase philosophy
 
 ### Project Rules
 - **[Qwen Code Rules](../../.qwen-code-rules.md)** - Project-specific rules
+<<<<<<< .merge_file_0ytPpw
 - **[AGENTS.md](../../AGENTS.md)** - Project agents guide
 - **[agents.md](../../AGENTS.md)** - Project agents guide
+=======
+<<<<<<< .merge_file_laug3X
+- **[AGENTS.md](../../AGENTS.md)** - Project agents guide
+=======
+- **[agents.md](../../AGENTS.md)** - Project agents guide
+>>>>>>> .merge_file_g8B989
+>>>>>>> .merge_file_zREfHf
 
 ---
 

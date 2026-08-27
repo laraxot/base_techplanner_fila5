@@ -1,3 +1,9 @@
+<<<<<<< .merge_file_0i93v7
+# Fix Namespace PSR-4 - Modulo Notify
+
+> **Versione**: 1.0  
+> **Ultima modifica**: Vedi [CHANGELOG.md](./changelog.md)
+=======
 ---
 title: "Fix Namespace PSR-4 - Modulo Notify"
 module: notify
@@ -11,6 +17,10 @@ updated: 2026-08-24
 
 > **Versione**: 1.0  
 > **Ultima modifica**: Vedi [changelog.md](./CHANGELOG.md)
+<<<<<<< .merge_file_B6FV1W
+=======
+>>>>>>> .merge_file_80uOw5
+>>>>>>> .merge_file_cfbGq0
 
 **Problema**: Namespace con `\App\` viola convenzione Laraxot  
 **Severità**: 🟡 Media (warning autoload, non blocca app)

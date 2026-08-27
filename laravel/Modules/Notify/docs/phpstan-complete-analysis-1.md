@@ -33,9 +33,19 @@ related:
 | Modulo | Errori | % Totale |
 |--------|--------|----------|
 | User | 4,810 | 24.4% |
+<<<<<<< .merge_file_qxqvG8
 <<<<<<< .merge_file_eSVZaL
 | Fixcity | 3,909 | 19.8% |
 =======
+=======
+<<<<<<< .merge_file_SFHJfM
+| Fixcity | 3,909 | 19.8% |
+=======
+<<<<<<< .merge_file_eSVZaL
+| Fixcity | 3,909 | 19.8% |
+=======
+>>>>>>> .merge_file_pwInWg
+>>>>>>> .merge_file_OZPo6e
 | App | 3,909 | 19.8% |
 >>>>>>> .merge_file_MEZZCc
 | Notify | 2,766 | 14.0% |
@@ -207,9 +217,19 @@ Function json_encode is unsafe to use
 1. ✅ Installata Pest extension per PHPStan
 2. ⏳ Creare script automatizzati per correzioni comuni
 3. ⏳ Iniziare correzioni modulo User (4,810 errori)
+<<<<<<< .merge_file_qxqvG8
 <<<<<<< .merge_file_eSVZaL
 4. ⏳ Proseguire con Fixcity (3,909 errori)
 =======
+=======
+<<<<<<< .merge_file_SFHJfM
+4. ⏳ Proseguire con Fixcity (3,909 errori)
+=======
+<<<<<<< .merge_file_eSVZaL
+4. ⏳ Proseguire con Fixcity (3,909 errori)
+=======
+>>>>>>> .merge_file_pwInWg
+>>>>>>> .merge_file_OZPo6e
 4. ⏳ Proseguire con App (3,909 errori)
 >>>>>>> .merge_file_MEZZCc
 5. ⏳ Continuare con altri moduli

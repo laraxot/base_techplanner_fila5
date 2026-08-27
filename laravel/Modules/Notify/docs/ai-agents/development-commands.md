@@ -16,8 +16,15 @@ npm run build
 php artisan serve
 ```
 
+<<<<<<< .merge_file_6nunXk
 **Access:** http://localhost:8000/quaeris/admin/{tenant}
+=======
+<<<<<<< .merge_file_PkaMwz
+**Access:** http://localhost:8000/quaeris/admin/{tenant}
+=======
+>>>>>>> .merge_file_fOwbdN
 **Access:** http://localhost:8000/this-project/admin/{tenant}
+>>>>>>> .merge_file_PJxthR
 
 ## Testing
 
@@ -42,8 +49,15 @@ php artisan test --coverage
 ./vendor/bin/pest --coverage --min=80
 
 # Per modulo
+<<<<<<< .merge_file_6nunXk
 ./vendor/bin/pest Modules/Quaeris/tests --coverage
+=======
+<<<<<<< .merge_file_PkaMwz
+./vendor/bin/pest Modules/Quaeris/tests --coverage
+=======
+>>>>>>> .merge_file_fOwbdN
 ./vendor/bin/pest Modules/App/tests --coverage
+>>>>>>> .merge_file_PJxthR
 
 # Report HTML → build/coverage/html/
 ./vendor/bin/pest --coverage

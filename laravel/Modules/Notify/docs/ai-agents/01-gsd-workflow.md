@@ -201,6 +201,8 @@ GSD maintains these files always loaded in context:
 **Last Updated**: 2026-03-20  
 **Status**: ✅ Active  
 **Enforcement**: Code Review + Pre-commit Hook
+<<<<<<< .merge_file_V8Tcru
+=======
 
 ---
 
@@ -389,3 +391,4 @@ GSD maintains these files always loaded in context:
 **Last Updated**: 2026-03-20  
 **Status**: ✅ Active  
 **Enforcement**: Code Review + Pre-commit Hook
+>>>>>>> .merge_file_SkyNFY

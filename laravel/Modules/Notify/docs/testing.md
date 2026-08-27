@@ -1,5 +1,7 @@
 # Testing Rules Summary
 
+<<<<<<< .merge_file_Iwtsbh
+=======
 ## Coverage baseline (story 5.26)
 
 | Story | Gate attuale | Suite offline | Note |
@@ -13,6 +15,7 @@ XDEBUG_MODE=coverage ./vendor/bin/pest -c Modules/Notify/phpunit.xml --coverage 
 
 Pattern: [module-test-skip-offline-pattern.md](../../Xot/docs/wiki/concepts/module-test-skip-offline-pattern.md).
 
+>>>>>>> .merge_file_aLyUZm
 ## Regole Fondamentali dei Test
 
 ### 1. **Pest Testing Mandatory**

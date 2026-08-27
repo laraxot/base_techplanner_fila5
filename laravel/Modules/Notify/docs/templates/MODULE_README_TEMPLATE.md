@@ -78,8 +78,15 @@ Key settings:
 │   └── [module-slug].php
 ├── docs/
 │   ├── README.md (this file)
+<<<<<<< .merge_file_7hIexm
 │   ├── ARCHITECTURE.md
+=======
+<<<<<<< .merge_file_EltSpg
+│   ├── ARCHITECTURE.md
+=======
+>>>>>>> .merge_file_MuLZdQ
 │   ├── architecture.md
+>>>>>>> .merge_file_ArW5t7
 │   ├── guides/
 │   └── api/
 └── composer.json
@@ -165,8 +172,15 @@ composer test -- Modules/[ModuleName]
 ## Related Documentation
 
 ### Within Module
+<<<<<<< .merge_file_7hIexm
 - [ARCHITECTURE.md](./ARCHITECTURE.md) - Design details
+=======
+<<<<<<< .merge_file_EltSpg
+- [ARCHITECTURE.md](./ARCHITECTURE.md) - Design details
+=======
+>>>>>>> .merge_file_MuLZdQ
 - [architecture.md](./architecture.md) - Design details
+>>>>>>> .merge_file_ArW5t7
 - [Guides](./guides/) - How-to guides
 
 ### Related Modules
@@ -174,6 +188,13 @@ composer test -- Modules/[ModuleName]
 
 ---
 
+<<<<<<< .merge_file_7hIexm
 Navigation: [Project Home](../../docs/INDEX.md) | [Modules](../../docs/modules/README.md)
+=======
+<<<<<<< .merge_file_EltSpg
+Navigation: [Project Home](../../docs/INDEX.md) | [Modules](../../docs/modules/README.md)
+=======
+>>>>>>> .merge_file_MuLZdQ
 Navigation: [Project Home](../../docs/index.md) | [Modules](../../docs/modules/README.md)
+>>>>>>> .merge_file_ArW5t7
 

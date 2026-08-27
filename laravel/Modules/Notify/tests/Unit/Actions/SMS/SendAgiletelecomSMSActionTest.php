@@ -6,16 +6,40 @@ namespace Modules\Notify\Tests\Unit\Actions\SMS;
 
 use Modules\Notify\Actions\SMS\SendAgiletelecomSMSAction;
 use Modules\Notify\Datas\SmsData;
+<<<<<<< .merge_file_lAxRf7
+=======
+<<<<<<< .merge_file_mFbmTz
+=======
+use PHPUnit\Framework\Assert;
+>>>>>>> .merge_file_A906xN
+>>>>>>> .merge_file_AVFaIL
 use ReflectionClass;
 use ReflectionNamedType;
 
 it('SendAgiletelecomSMSAction can be instantiated', function () {
+<<<<<<< .merge_file_lAxRf7
     $action = new SendAgiletelecomSMSAction();
     expect($action)->toBeInstanceOf(SendAgiletelecomSMSAction::class);
 });
 
 it('SendAgiletelecomSMSAction has execute method with correct signature', function () {
     $action = new SendAgiletelecomSMSAction();
+=======
+<<<<<<< .merge_file_mFbmTz
+    $action = new SendAgiletelecomSMSAction();
+    expect($action)->toBeInstanceOf(SendAgiletelecomSMSAction::class);
+});
+
+it('SendAgiletelecomSMSAction has execute method with correct signature', function () {
+    $action = new SendAgiletelecomSMSAction();
+=======
+    Assert::assertTrue(class_exists(SendAgiletelecomSMSAction::class));
+});
+
+it('SendAgiletelecomSMSAction has execute method with correct signature', function () {
+    $action = new SendAgiletelecomSMSAction;
+>>>>>>> .merge_file_A906xN
+>>>>>>> .merge_file_AVFaIL
     $reflection = new ReflectionClass($action);
     $method = $reflection->getMethod('execute');
 
@@ -24,7 +48,15 @@ it('SendAgiletelecomSMSAction has execute method with correct signature', functi
 });
 
 it('SendAgiletelecomSMSAction execute accepts SmsData parameter', function () {
+<<<<<<< .merge_file_lAxRf7
     $action = new SendAgiletelecomSMSAction();
+=======
+<<<<<<< .merge_file_mFbmTz
+    $action = new SendAgiletelecomSMSAction();
+=======
+    $action = new SendAgiletelecomSMSAction;
+>>>>>>> .merge_file_A906xN
+>>>>>>> .merge_file_AVFaIL
     $reflection = new ReflectionClass($action);
     $method = $reflection->getMethod('execute');
     $params = $method->getParameters();
@@ -34,7 +66,15 @@ it('SendAgiletelecomSMSAction execute accepts SmsData parameter', function () {
 });
 
 it('SendAgiletelecomSMSAction execute returns array', function () {
+<<<<<<< .merge_file_lAxRf7
     $action = new SendAgiletelecomSMSAction();
+=======
+<<<<<<< .merge_file_mFbmTz
+    $action = new SendAgiletelecomSMSAction();
+=======
+    $action = new SendAgiletelecomSMSAction;
+>>>>>>> .merge_file_A906xN
+>>>>>>> .merge_file_AVFaIL
     $reflection = new ReflectionClass($action);
     $method = $reflection->getMethod('execute');
     $returnType = $method->getReturnType();
@@ -43,7 +83,15 @@ it('SendAgiletelecomSMSAction execute returns array', function () {
 });
 
 it('SendAgiletelecomSMSAction uses strict types', function () {
+<<<<<<< .merge_file_lAxRf7
     $action = new SendAgiletelecomSMSAction();
+=======
+<<<<<<< .merge_file_mFbmTz
+    $action = new SendAgiletelecomSMSAction();
+=======
+    $action = new SendAgiletelecomSMSAction;
+>>>>>>> .merge_file_A906xN
+>>>>>>> .merge_file_AVFaIL
     $reflection = new ReflectionClass($action);
     $filename = $reflection->getFileName();
 
@@ -54,14 +102,30 @@ it('SendAgiletelecomSMSAction uses strict types', function () {
 });
 
 it('SendAgiletelecomSMSAction has correct namespace', function () {
+<<<<<<< .merge_file_lAxRf7
     $action = new SendAgiletelecomSMSAction();
+=======
+<<<<<<< .merge_file_mFbmTz
+    $action = new SendAgiletelecomSMSAction();
+=======
+    $action = new SendAgiletelecomSMSAction;
+>>>>>>> .merge_file_A906xN
+>>>>>>> .merge_file_AVFaIL
     $reflection = new ReflectionClass($action);
 
     expect($reflection->getNamespaceName())->toBe('Modules\\Notify\\Actions\\SMS');
 });
 
 it('SendAgiletelecomSMSAction has required imports', function () {
+<<<<<<< .merge_file_lAxRf7
     $action = new SendAgiletelecomSMSAction();
+=======
+<<<<<<< .merge_file_mFbmTz
+    $action = new SendAgiletelecomSMSAction();
+=======
+    $action = new SendAgiletelecomSMSAction;
+>>>>>>> .merge_file_A906xN
+>>>>>>> .merge_file_AVFaIL
     $reflection = new ReflectionClass($action);
     $filename = $reflection->getFileName();
     /** @var string $filename */
@@ -71,9 +135,17 @@ it('SendAgiletelecomSMSAction has required imports', function () {
     expect($content)->toContain('use Modules\\Notify\\Datas\\SmsData;');
 });
 
+<<<<<<< .merge_file_mFbmTz
+it('SendAgiletelecomSMSAction does not use QueueableAction trait', function () {
+    $action = new SendAgiletelecomSMSAction();
+    $traits = \Safe\class_uses($action);
+
+    expect($traits)->not->toContain('Spatie\\QueueableAction\\QueueableAction');
+=======
 it('SendAgiletelecomSMSAction uses QueueableAction trait', function () {
     $action = new SendAgiletelecomSMSAction();
     $traits = \Safe\class_uses($action);
 
     expect($traits)->toContain('Spatie\\QueueableAction\\QueueableAction');
+>>>>>>> .merge_file_A906xN
 });

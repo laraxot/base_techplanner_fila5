@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_dID4EI
+=======
 ---
 title: "Sessione Completata - Fix Homepage Bootstrap Italia"
 module: notify
@@ -7,6 +9,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+>>>>>>> .merge_file_x04ST2
 # ✅ Sessione Completata - Fix Homepage Bootstrap Italia
 
 ## 📋 Riepilogo Esecuzione

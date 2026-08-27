@@ -265,7 +265,13 @@ class XotData extends Data implements Wireable
     public function getProfileByEmail(string $email): ProfileContract
     {
         $user = $this->getUserByEmail($email);
+<<<<<<< .merge_file_guF7WE
+        $userId = $user->id;
+        Assert::string($userId);
+        $profile = $this->getProfileModelByUserId($userId);
+=======
         $profile = $this->getProfileModelByUserId($user->id);
+>>>>>>> .merge_file_9SLJKB
 
         return $profile;
     }
@@ -358,7 +364,17 @@ class XotData extends Data implements Wireable
     {
         $user_class = $this->getUserClass();
         $userInstance = app($user_class);
+<<<<<<< .merge_file_guF7WE
+        Assert::isInstanceOf($userInstance, Model::class);
+        Assert::methodExists($userInstance, 'getChildTypes');
+        // getChildTypes() is provided dynamically by HasChildTypes-style traits used on
+        // concrete user models, not declared on the base Eloquent Model contract.
+        // @phpstan-ignore-next-line method.notFound
         $types = $userInstance->getChildTypes();
+        Assert::isArray($types);
+=======
+        $types = $userInstance->getChildTypes();
+>>>>>>> .merge_file_9SLJKB
         $class = Arr::get($types, $type);
         if (is_null($class)) {
             throw new Exception('type '.$type.' not found in class '.$user_class);
@@ -408,8 +424,16 @@ class XotData extends Data implements Wireable
     public function getUserChildTypes(): array
     {
         $enum_class = $this->getUserChildTypeClass();
+        Assert::classExists($enum_class);
+        Assert::methodExists($enum_class, 'cases');
+        /** @var array<int, mixed> */
+        $cases = $enum_class::cases();
 
+<<<<<<< .merge_file_guF7WE
+        return $cases;
+=======
         return $enum_class::cases();
+>>>>>>> .merge_file_9SLJKB
 
         // $userInstance = app($user_class);
         // return $userInstance->getChildTypes();
@@ -419,6 +443,10 @@ class XotData extends Data implements Wireable
     {
         $user_class = $this->getUserClass();
         $user_instance = app($user_class);
+<<<<<<< .merge_file_guF7WE
+        Assert::isInstanceOf($user_instance, Model::class);
+=======
+>>>>>>> .merge_file_9SLJKB
         // $enum_class = Arr::get($user_class::casts(),'type',null);
         $enum_class = Arr::get($user_instance->getCasts(), 'type', null);
         if ($enum_class === null) {

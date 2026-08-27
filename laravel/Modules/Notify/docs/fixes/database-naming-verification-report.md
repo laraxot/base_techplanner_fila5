@@ -13,8 +13,15 @@
 La verifica ha confermato che:
 - ✅ 18/18 moduli hanno directory corrette
 - ✅ Documentazione del modulo Blog corretta
+<<<<<<< .merge_file_DMHvH8
 - ✅ AGENTS.md aggiornato con la rule
+=======
+<<<<<<< .merge_file_SsLqDo
+- ✅ AGENTS.md aggiornato con la rule
+=======
+>>>>>>> .merge_file_Il2jW9
 - ✅ agents.md aggiornato con la rule
+>>>>>>> .merge_file_YaWn8R
 - ✅ GitHub Issue #5 creata per tracking
 - ✅ Documentazione di convenzione creata
 
@@ -40,8 +47,15 @@ Tutti i 18 moduli hanno le directory corrette:
 | Blog | ✅ | ✅ | ✅ | ✅ Pass |
 | Cms | ✅ | ✅ | ✅ | ✅ Pass |
 | Comment | ✅ | ✅ | ✅ | ✅ Pass |
+<<<<<<< .merge_file_DMHvH8
 | Fixcity | ✅ | ✅ | ✅ | ✅ Pass |
+=======
+<<<<<<< .merge_file_SsLqDo
+| Fixcity | ✅ | ✅ | ✅ | ✅ Pass |
+=======
+>>>>>>> .merge_file_Il2jW9
 | App | ✅ | ✅ | ✅ | ✅ Pass |
+>>>>>>> .merge_file_YaWn8R
 | Gdpr | ✅ | ✅ | ✅ | ✅ Pass |
 | Geo | ✅ | ✅ | ✅ | ✅ Pass |
 | Job | ✅ | ✅ | ✅ | ✅ Pass |
@@ -152,8 +166,15 @@ Questi sono **accettabili** perché:
 
 ### 3. ✅ Created Preventive Documentation
 - Guida completa alla convenzione
+<<<<<<< .merge_file_DMHvH8
 - Rule in AGENTS.md
+=======
+<<<<<<< .merge_file_SsLqDo
+- Rule in AGENTS.md
+=======
+>>>>>>> .merge_file_Il2jW9
 - Rule in agents.md
+>>>>>>> .merge_file_YaWn8R
 - Esempi e best practices
 
 ### 4. ✅ Established GitHub Workflow
@@ -172,8 +193,15 @@ Questi sono **accettabili** perché:
 
 ### Immediate (Done ✅)
 - ✅ Fix Blog module documentation
+<<<<<<< .merge_file_DMHvH8
 - ✅ Update AGENTS.md
+=======
+<<<<<<< .merge_file_SsLqDo
+- ✅ Update AGENTS.md
+=======
+>>>>>>> .merge_file_Il2jW9
 - ✅ Update agents.md
+>>>>>>> .merge_file_YaWn8R
 - ✅ Create convention documentation
 - ✅ Create GitHub Issue #5
 
@@ -204,8 +232,15 @@ find laravel/Modules -type d \( -name "Factories" -o -name "Migrations" -o -name
 grep -r "database/Factories\|database/Migrations\|database/Seeders" \
   docs/ laravel/Modules/*/docs/ | \
   grep -v "database-naming.md" | \
+<<<<<<< .merge_file_DMHvH8
   grep -v "AGENTS.md" | \
+=======
+<<<<<<< .merge_file_SsLqDo
+  grep -v "AGENTS.md" | \
+=======
+>>>>>>> .merge_file_Il2jW9
   grep -v "agents.md" | \
+>>>>>>> .merge_file_YaWn8R
   grep -v "models/README.md"
 ```
 
@@ -224,9 +259,21 @@ find docs/ laravel/Modules/*/docs/ -type f -name "*.md" -exec sed -i \
 ## 📚 Related Documents
 
 - [Database Naming Convention](conventions/database-naming.md)
+<<<<<<< .merge_file_DMHvH8
 - [AGENTS.md](../../AGENTS.md)
 - [Fix Summary](fixes/database-naming-fix-summary.md)
 - [GitHub Issue #5](https://github.com/laraxot/base_fixcity_fila5/issues/5)
+=======
+<<<<<<< .merge_file_SsLqDo
+- [AGENTS.md](../../AGENTS.md)
+- [Fix Summary](fixes/database-naming-fix-summary.md)
+- [GitHub Issue #5](https://github.com/laraxot/base_fixcity_fila5/issues/5)
+=======
+- [agents.md](../../agents.md)
+- [Fix Summary](fixes/database-naming-fix-summary.md)
+- [GitHub Issue #5](https://github.com/laraxot/platform/issues/5)
+>>>>>>> .merge_file_YaWn8R
+>>>>>>> .merge_file_Il2jW9
 - [Laravel Directory Structure](https://laravel.com/docs/structure)
 
 ---

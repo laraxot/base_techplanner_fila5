@@ -20,12 +20,23 @@ namespace Modules\Notify\Tests\Unit\Models;
 
 use Modules\Notify\Models\MailTemplateLog;
 use Modules\Notify\Tests\TestCase;
+<<<<<<< .merge_file_JIsFph
+=======
+use PHPUnit\Framework\Assert;
+<<<<<<< .merge_file_xgvDQg
+
+use function Safe\json_encode;
+
+uses(TestCase::class);
+=======
+>>>>>>> .merge_file_7z2OqA
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
 
 uses(TestCase::class)->group('notify-db');
+>>>>>>> .merge_file_iS8RNY
 
 beforeEach(function (): void {
     /** @var TestCase $this */
@@ -34,7 +45,14 @@ beforeEach(function (): void {
 
 describe('Mail Template Log PartOne', function (): void {
     test('_can_create_mail_template_log', function (): void {
+<<<<<<< .merge_file_JIsFph
         /** @var TestCase $this */
+=======
+<<<<<<< .merge_file_xgvDQg
+        /** @var TestCase $this */
+=======
+>>>>>>> .merge_file_iS8RNY
+>>>>>>> .merge_file_7z2OqA
         $log = MailTemplateLog::create([
             'template_id' => 123,
             'mailable_type' => 'App\Mail\WelcomeMail',
@@ -54,7 +72,11 @@ describe('Mail Template Log PartOne', function (): void {
             'sent_at' => now(),
             'delivered_at' => now()->addMinutes(1),
         ]);
+<<<<<<< .merge_file_xgvDQg
+        \assertNotifyTableHas('mail_template_logs', [
+=======
         XotBasePest::assertTableHas('notify', 'mail_template_logs', [
+>>>>>>> .merge_file_iS8RNY
             'id' => $log->id,
             'template_id' => 123,
             'mailable_type' => 'App\Mail\WelcomeMail',
@@ -67,7 +89,15 @@ describe('Mail Template Log PartOne', function (): void {
     });
 
     test('_has_correct_fillable_fields', function (): void {
+<<<<<<< .merge_file_JIsFph
         $log = new MailTemplateLog();
+=======
+<<<<<<< .merge_file_xgvDQg
+        $log = new MailTemplateLog();
+=======
+        $log = new MailTemplateLog;
+>>>>>>> .merge_file_iS8RNY
+>>>>>>> .merge_file_7z2OqA
 
         $expectedFillable = [
             'template_id',
@@ -88,7 +118,15 @@ describe('Mail Template Log PartOne', function (): void {
     });
 
     test('_has_correct_casts', function (): void {
+<<<<<<< .merge_file_JIsFph
         $log = new MailTemplateLog();
+=======
+<<<<<<< .merge_file_xgvDQg
+        $log = new MailTemplateLog();
+=======
+        $log = new MailTemplateLog;
+>>>>>>> .merge_file_iS8RNY
+>>>>>>> .merge_file_7z2OqA
 
         $expectedCasts = [
             'id' => 'string',
@@ -133,14 +171,23 @@ describe('Mail Template Log PartOne', function (): void {
             'status' => 'sent',
             'data' => $data,
         ]);
+<<<<<<< .merge_file_xgvDQg
+        \assertNotifyTableHas('mail_template_logs', [
+=======
         XotBasePest::assertTableHas('notify', 'mail_template_logs', [
+>>>>>>> .merge_file_iS8RNY
             'id' => $log->id,
             'data' => json_encode($data),
         ]);
         Assert::assertEquals('user@example.com', $log->data['to']);
         Assert::assertEquals(['cc1@example.com', 'cc2@example.com'], $log->data['cc']);
+<<<<<<< .merge_file_xgvDQg
+        Assert::assertEquals('John Doe', \notifyArrayGet($log->data, 'variables', 'name'));
+        Assert::assertEquals('Example Corp', \notifyArrayGet($log->data, 'variables', 'company'));
+=======
         Assert::assertEquals('John Doe', TestCase::notifyArrayGet($log->data, 'variables', 'name'));
         Assert::assertEquals('Example Corp', TestCase::notifyArrayGet($log->data, 'variables', 'company'));
+>>>>>>> .merge_file_iS8RNY
     });
 
     test('_can_store_json_metadata', function (): void {
@@ -169,15 +216,24 @@ describe('Mail Template Log PartOne', function (): void {
             'status' => 'failed',
             'metadata' => $metadata,
         ]);
+<<<<<<< .merge_file_xgvDQg
+        \assertNotifyTableHas('mail_template_logs', [
+=======
         XotBasePest::assertTableHas('notify', 'mail_template_logs', [
+>>>>>>> .merge_file_iS8RNY
             'id' => $log->id,
             'metadata' => json_encode($metadata),
         ]);
         Assert::assertEquals('smtp', $log->metadata['provider']);
         Assert::assertEquals('queue_123', $log->metadata['queue_id']);
         Assert::assertEquals(3, $log->metadata['attempts']);
+<<<<<<< .merge_file_xgvDQg
+        Assert::assertEquals('SMTP_ERROR', \notifyArrayGet($log->metadata, 'error_details', 'code'));
+        Assert::assertEquals(4000, \notifyArrayGet($log->metadata, 'performance', 'total_time'));
+=======
         Assert::assertEquals('SMTP_ERROR', TestCase::notifyArrayGet($log->metadata, 'error_details', 'code'));
         Assert::assertEquals(4000, TestCase::notifyArrayGet($log->metadata, 'performance', 'total_time'));
+>>>>>>> .merge_file_iS8RNY
     });
 
     test('_can_update_status_and_timestamps', function (): void {
@@ -193,15 +249,25 @@ describe('Mail Template Log PartOne', function (): void {
             'sent_at' => now(),
             'status_message' => 'Email sent successfully',
         ]);
+<<<<<<< .merge_file_xgvDQg
+        \assertNotifyTableHas('mail_template_logs', [
+=======
         XotBasePest::assertTableHas('notify', 'mail_template_logs', [
+>>>>>>> .merge_file_iS8RNY
             'id' => $log->id,
             'status' => 'sent',
             'status_message' => 'Email sent successfully',
         ]);
 
+<<<<<<< .merge_file_xgvDQg
+        Assert::assertEquals('sent', \assertFreshModel($log, MailTemplateLog::class)->status);
+        Assert::assertNotNull(\assertFreshModel($log, MailTemplateLog::class)->sent_at);
+        Assert::assertEquals('Email sent successfully', \assertFreshModel($log, MailTemplateLog::class)->status_message);
+=======
         Assert::assertEquals('sent', XotBasePest::assertFreshModel($log, MailTemplateLog::class)->status);
         Assert::assertNotNull(XotBasePest::assertFreshModel($log, MailTemplateLog::class)->sent_at);
         Assert::assertEquals('Email sent successfully', XotBasePest::assertFreshModel($log, MailTemplateLog::class)->status_message);
+>>>>>>> .merge_file_iS8RNY
     });
 
     test('_can_mark_as_delivered', function (): void {
@@ -217,13 +283,22 @@ describe('Mail Template Log PartOne', function (): void {
             'status' => 'delivered',
             'delivered_at' => now()->addMinutes(1),
         ]);
+<<<<<<< .merge_file_xgvDQg
+        \assertNotifyTableHas('mail_template_logs', [
+=======
         XotBasePest::assertTableHas('notify', 'mail_template_logs', [
+>>>>>>> .merge_file_iS8RNY
             'id' => $log->id,
             'status' => 'delivered',
         ]);
 
+<<<<<<< .merge_file_xgvDQg
+        Assert::assertEquals('delivered', \assertFreshModel($log, MailTemplateLog::class)->status);
+        Assert::assertNotNull(\assertFreshModel($log, MailTemplateLog::class)->delivered_at);
+=======
         Assert::assertEquals('delivered', XotBasePest::assertFreshModel($log, MailTemplateLog::class)->status);
         Assert::assertNotNull(XotBasePest::assertFreshModel($log, MailTemplateLog::class)->delivered_at);
+>>>>>>> .merge_file_iS8RNY
     });
 
     test('_can_mark_as_failed', function (): void {
@@ -239,15 +314,25 @@ describe('Mail Template Log PartOne', function (): void {
             'failed_at' => now(),
             'status_message' => 'SMTP connection failed',
         ]);
+<<<<<<< .merge_file_xgvDQg
+        \assertNotifyTableHas('mail_template_logs', [
+=======
         XotBasePest::assertTableHas('notify', 'mail_template_logs', [
+>>>>>>> .merge_file_iS8RNY
             'id' => $log->id,
             'status' => 'failed',
             'status_message' => 'SMTP connection failed',
         ]);
 
+<<<<<<< .merge_file_xgvDQg
+        Assert::assertEquals('failed', \assertFreshModel($log, MailTemplateLog::class)->status);
+        Assert::assertNotNull(\assertFreshModel($log, MailTemplateLog::class)->failed_at);
+        Assert::assertEquals('SMTP connection failed', \assertFreshModel($log, MailTemplateLog::class)->status_message);
+=======
         Assert::assertEquals('failed', XotBasePest::assertFreshModel($log, MailTemplateLog::class)->status);
         Assert::assertNotNull(XotBasePest::assertFreshModel($log, MailTemplateLog::class)->failed_at);
         Assert::assertEquals('SMTP connection failed', XotBasePest::assertFreshModel($log, MailTemplateLog::class)->status_message);
+>>>>>>> .merge_file_iS8RNY
     });
 
     test('_can_mark_as_opened', function (): void {
@@ -262,6 +347,16 @@ describe('Mail Template Log PartOne', function (): void {
         $log->update([
             'opened_at' => now()->addMinutes(5),
         ]);
+<<<<<<< .merge_file_xgvDQg
+        \assertNotifyTableHas('mail_template_logs', [
+            'id' => $log->id,
+            'opened_at' => \assertFreshModel($log, MailTemplateLog::class)->opened_at,
+        ]);
+
+        Assert::assertNotNull(\assertFreshModel($log, MailTemplateLog::class)->opened_at);
+    });
+
+=======
         XotBasePest::assertTableHas('notify', 'mail_template_logs', [
             'id' => $log->id,
             'opened_at' => XotBasePest::assertFreshModel($log, MailTemplateLog::class)->opened_at,
@@ -269,4 +364,5 @@ describe('Mail Template Log PartOne', function (): void {
 
         Assert::assertNotNull(XotBasePest::assertFreshModel($log, MailTemplateLog::class)->opened_at);
     });
+>>>>>>> .merge_file_iS8RNY
 });

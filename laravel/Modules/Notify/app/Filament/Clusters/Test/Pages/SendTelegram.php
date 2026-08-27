@@ -111,7 +111,11 @@ class SendTelegram extends XotBasePage
         ];
     }
 
+<<<<<<< .merge_file_lIT0j6
     /** @return array<string, \Filament\Actions\Action> */
+=======
+    /** @return array<string, Action> */
+>>>>>>> .merge_file_z0cKWI
     protected function getEmailFormActions(): array
     {
         return [

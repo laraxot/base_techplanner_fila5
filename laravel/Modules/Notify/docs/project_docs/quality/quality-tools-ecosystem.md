@@ -1,5 +1,12 @@
+<<<<<<< .merge_file_KiB22R
 # 🔧 ECOSISTEMA STRUMENTI QUALITÀ - FIXCITY PLATFORM
+=======
+<<<<<<< .merge_file_aO6h0t
+# 🔧 ECOSISTEMA STRUMENTI QUALITÀ - FIXCITY PLATFORM
+=======
+>>>>>>> .merge_file_ul8OOZ
 # 🔧 ECOSISTEMA STRUMENTI QUALITÀ - NOTIFY PLATFORM
+>>>>>>> .merge_file_gUNRR9
 
 **Versione**: 1.0  
 **Data Creazione**: Gennaio 2025  
@@ -7,8 +14,15 @@
 **Priorità**: CRITICAL  
 
 ## 🎯 OBIETTIVO
+<<<<<<< .merge_file_KiB22R
 Implementare un ecosistema completo di strumenti di qualità del codice per il progetto FixCity, coprendo tutti gli aspetti: PHP, JavaScript, CSS, sicurezza, documentazione e CI/CD.
+=======
+<<<<<<< .merge_file_aO6h0t
+Implementare un ecosistema completo di strumenti di qualità del codice per il progetto FixCity, coprendo tutti gli aspetti: PHP, JavaScript, CSS, sicurezza, documentazione e CI/CD.
+=======
+>>>>>>> .merge_file_ul8OOZ
 Implementare un ecosistema completo di strumenti di qualità del codice per il progetto Notify, coprendo tutti gli aspetti: PHP, JavaScript, CSS, sicurezza, documentazione e CI/CD.
+>>>>>>> .merge_file_gUNRR9
 
 ## 🛠️ STRUMENTI IMPLEMENTATI
 
@@ -712,8 +726,15 @@ jobs:
 
 ---
 
+<<<<<<< .merge_file_KiB22R
 *Questo ecosistema garantisce la massima qualità del codice in tutti gli aspetti del progetto FixCity Platform.*
+=======
+<<<<<<< .merge_file_aO6h0t
+*Questo ecosistema garantisce la massima qualità del codice in tutti gli aspetti del progetto FixCity Platform.*
+=======
+>>>>>>> .merge_file_ul8OOZ
 *Questo ecosistema garantisce la massima qualità del codice in tutti gli aspetti del progetto Notify Platform.*
+>>>>>>> .merge_file_gUNRR9
 
 
 

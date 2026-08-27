@@ -3,6 +3,21 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Actions;
+<<<<<<< .merge_file_Yii6WR
+use Modules\Notify\Tests\TestCase;
+use function Safe\file_get_contents;
+use Modules\Notify\Actions\EsendexSendAction;
+use Modules\Notify\Datas\SmsData;
+use PHPUnit\Framework\Assert;
+use Spatie\QueueableAction\QueueableAction;
+
+use function Safe\class_uses;
+
+uses(\Modules\Notify\Tests\TestCase::class);
+
+describe('EsendexSendAction', function () {
+        it('can be instantiated', function () {
+=======
 
 use Modules\Notify\Actions\EsendexSendAction;
 use Modules\Notify\Datas\SmsData;
@@ -17,6 +32,7 @@ uses(TestCase::class)->group('no-notify-db');
 
 describe('EsendexSendAction', function () {
     it('can be instantiated', function () {
+>>>>>>> .merge_file_kdewWk
         Assert::assertTrue(class_exists(EsendexSendAction::class));
     });
 
@@ -38,7 +54,11 @@ describe('EsendexSendAction', function () {
         $method = $reflection->getMethod('execute');
         $params = $method->getParameters();
 
+<<<<<<< .merge_file_Yii6WR
+        \assertReflectionTypeName($params[0]->getType(), SmsData::class);
+=======
         XotBasePest::assertReflectionTypeName($params[0]->getType(), SmsData::class);
+>>>>>>> .merge_file_kdewWk
     });
 
     it('execute returns array', function () {
@@ -46,7 +66,11 @@ describe('EsendexSendAction', function () {
         $method = $reflection->getMethod('execute');
         $returnType = $method->getReturnType();
 
+<<<<<<< .merge_file_Yii6WR
+        \assertReflectionTypeName($returnType, 'array');
+=======
         XotBasePest::assertReflectionTypeName($returnType, 'array');
+>>>>>>> .merge_file_kdewWk
     });
 
     it('has login method', function () {
@@ -64,7 +88,11 @@ describe('EsendexSendAction', function () {
 
     it('uses strict types', function () {
         $reflection = new \ReflectionClass(EsendexSendAction::class);
+<<<<<<< .merge_file_Yii6WR
+        $content = \notifyReflectionSource($reflection);
+=======
         $content = TestCase::notifyReflectionSource($reflection);
+>>>>>>> .merge_file_kdewWk
         Assert::assertStringContainsString('declare(strict_types=1)', $content);
     });
 
@@ -75,7 +103,11 @@ describe('EsendexSendAction', function () {
     });
 
     it('has required imports', function () {
+<<<<<<< .merge_file_Yii6WR
+        $content = \notifyReflectionSource(new \ReflectionClass(EsendexSendAction::class));
+=======
         $content = TestCase::notifyReflectionSource(new \ReflectionClass(EsendexSendAction::class));
+>>>>>>> .merge_file_kdewWk
 
         Assert::assertStringContainsString('use Modules\Notify\Datas\SmsData', $content);
         Assert::assertStringContainsString('use Spatie\QueueableAction\QueueableAction', $content);

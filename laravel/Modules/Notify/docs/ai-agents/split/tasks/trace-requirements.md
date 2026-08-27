@@ -276,12 +276,21 @@ Trace matrix: qa.qaLocation/assessments/{epic}.{story}-trace-{YYYYMMDD}.md
 
 ## Cross-References
 
+<<<<<<< .merge_file_0vYzCl
+=======
+<<<<<<< .merge_file_SpEdRk
+>>>>>>> .merge_file_RWzWV2
 - ← [Tasks Index](INDEX.md) — All 22 BMad tasks
 - ← [Agents Index](../../agents/INDEX.md) — 10 agent definitions
 - ← [Main AI Docs Index](../INDEX.md) — Master index
 - ← [../../../../AGENTS.md](../../../../../../../../AGENTS.md) — Original source
+<<<<<<< .merge_file_0vYzCl
+=======
+=======
+>>>>>>> .merge_file_RWzWV2
 - ← [Tasks Index](index.md) — All 22 BMad tasks
 - ← [Agents Index](../../agents/index.md) — 10 agent definitions
 - ← [Main AI Docs Index](../index.md) — Master index
 - ← [../../../../agents.md](../../../../../../../../agents.md) — Original source
+>>>>>>> .merge_file_JbgUt5
 

@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_jktryA
+=======
 ---
 title: "Setup strumenti qualità codice"
 module: notify
@@ -7,6 +9,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+>>>>>>> .merge_file_wJ1Akt
 # Setup strumenti qualità codice
 
 ## Regola phpstan.neon

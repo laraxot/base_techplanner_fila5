@@ -1,7 +1,43 @@
 {
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
     "name": "laraxot/module_seo_fila5",
     "description": "Modulo SEO per l'ottimizzazione dei contenuti",
     "homepage": "https://github.com/laraxot/module_seo_fila5",
+=======
+    "name": "laraxot/module_seo_fila3",
+    "description": "Modulo SEO per l'ottimizzazione dei contenuti",
+    "homepage": "https://github.com/laraxot/module_seo_fila3",
+>>>>>>> dbf8b8d (.)
+=======
+    "name": "laraxot/module_seo_fila5",
+    "description": "Modulo SEO per l'ottimizzazione dei contenuti",
+    "homepage": "https://github.com/laraxot/module_seo_fila5",
+>>>>>>> 77e0353 (.)
+=======
+    "name": "laraxot/module_seo_fila5",
+    "description": "Modulo SEO per l'ottimizzazione dei contenuti",
+    "homepage": "https://github.com/laraxot/module_seo_fila5",
+>>>>>>> fc52fe0 (.)
+=======
+    "name": "laraxot/module_seo_fila5",
+    "description": "Modulo SEO per l'ottimizzazione dei contenuti",
+    "homepage": "https://github.com/laraxot/module_seo_fila5",
+>>>>>>> c101b34 (.)
+=======
+    "name": "laraxot/module_seo_fila5",
+    "description": "Modulo SEO per l'ottimizzazione dei contenuti",
+    "homepage": "https://github.com/laraxot/module_seo_fila5",
+>>>>>>> d0f51b6 (.)
+=======
+    "name": "laraxot/module_seo_fila3",
+    "description": "Modulo SEO per l'ottimizzazione dei contenuti",
+    "homepage": "https://github.com/laraxot/module_seo_fila3",
+>>>>>>> a771e9c (.)
     "license": "MIT",
     "authors": [
         {
@@ -28,6 +64,20 @@
             "Modules\\Seo\\Database\\Seeders\\": "database/seeders/"
         }
     },
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fc52fe0 (.)
+=======
+>>>>>>> c101b34 (.)
+=======
+>>>>>>> d0f51b6 (.)
     "autoload-dev": {
         "psr-4": {
             "Modules\\Seo\\Tests\\": "tests/"
@@ -35,6 +85,40 @@
     },
     "require": {
         "spatie/laravel-sitemap": "^7.0"
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    "require_comment": {
+        "openai-php/laravel": "*",
+        "thecodingmachine/safe": "^2.5"
+>>>>>>> 7ec200b (.)
+=======
+    "require_comment": {
+        "openai-php/laravel": "*",
+        "thecodingmachine/safe": "^2.5"
+>>>>>>> d20252d (.)
+=======
+    "require_comment": {
+        "openai-php/laravel": "*",
+        "thecodingmachine/safe": "^2.5"
+>>>>>>> dbf8b8d (.)
+=======
+    "require_comment": {
+        "openai-php/laravel": "*",
+        "thecodingmachine/safe": "^2.5"
+>>>>>>> 77e0353 (.)
+=======
+>>>>>>> fc52fe0 (.)
+=======
+>>>>>>> c101b34 (.)
+=======
+>>>>>>> d0f51b6 (.)
+=======
+    "require_comment": {
+        "openai-php/laravel": "*",
+        "thecodingmachine/safe": "^2.5"
+>>>>>>> a771e9c (.)
     },
     "require-dev_comment": {
         "laravel/pint": "^1.13",

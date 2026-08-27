@@ -3,7 +3,10 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Filament\Actions;
+<<<<<<< .merge_file_oLTsdm
+=======
 
+>>>>>>> .merge_file_5bHfr7
 use Closure;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Model;
@@ -13,10 +16,19 @@ use Modules\Notify\Filament\Forms\Components\ChannelCheckboxList;
 use Modules\Notify\Filament\Forms\Components\MailTemplateSelect;
 use Modules\Notify\Tests\Fixtures\SendRecordsNotificationBulkActionSpy;
 use Modules\Notify\Tests\TestCase;
+<<<<<<< .merge_file_E8Hk8V
+=======
+use PHPUnit\Framework\Assert;
+<<<<<<< .merge_file_oLTsdm
+
+uses(\Modules\Notify\Tests\TestCase::class);
+=======
+>>>>>>> .merge_file_duA5p9
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class)->group('no-notify-db');
+>>>>>>> .merge_file_5bHfr7
 
 /**
  * @param  array<string, mixed>  $attributes
@@ -52,7 +64,11 @@ test('send records notification bulk action exposes expected schema components',
         $schema = [];
     }
 
+<<<<<<< .merge_file_oLTsdm
+    $schema = \assertNotifyArray($schema);
+=======
     $schema = XotBasePest::assertArray($schema);
+>>>>>>> .merge_file_5bHfr7
     Assert::assertArrayHasKey('mail_template_slug', $schema);
     Assert::assertArrayHasKey('channels', $schema);
     Assert::assertInstanceOf(MailTemplateSelect::class, $schema['mail_template_slug']);

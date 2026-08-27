@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_f7VqZN
+=======
 ---
 title: "Product Strategy: Notify Module"
 module: notify
@@ -7,6 +9,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+>>>>>>> .merge_file_9kp5Fb
 # Product Strategy: Notify Module
 
 ## 🌍 Market Context

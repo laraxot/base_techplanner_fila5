@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_umxy9I
+=======
 ---
 title: "Analisi Architetturale: Selezione Provider nei Canali vs Data Transfer Objects"
 module: notify
@@ -7,6 +9,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+>>>>>>> .merge_file_5HUcun
 # Analisi Architetturale: Selezione Provider nei Canali vs Data Transfer Objects
 
 Questo documento analizza i vantaggi e gli svantaggi di spostare la logica di selezione del provider SMS dal canale (`SmsChannel`) al Data Transfer Object (`SmsData`).

@@ -94,9 +94,19 @@ Verificare che:
 *Ultimo aggiornamento: giugno 2025*
 <<<<<<< .merge_file_c6AI4v
 - [Notify Module Documentation](readme.md)
+<<<<<<< .merge_file_mhjh2W
 =======
 - [Notify Module Documentation](README.md)
 >>>>>>> .merge_file_jMnFyT
+=======
+<<<<<<< .merge_file_OW3oTE
+- [Notify Module Documentation](README.md)
+=======
+=======
+- [Notify Module Documentation](README.md)
+>>>>>>> .merge_file_jMnFyT
+>>>>>>> .merge_file_WaitbO
+>>>>>>> .merge_file_TTUtec
 - [SMS Implementation Guide](sms-implementation-1.md)
 - [Mail Templates Structure](mail-templates-structure-1.md)
 - [Translation Standards](translation-standards-2.md)

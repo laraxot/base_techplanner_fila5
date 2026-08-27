@@ -55,9 +55,19 @@
 - `Modules/UI/resources/views/components/accordion-item.blade.php`
 
 ### Traduzioni (8)
+<<<<<<< .merge_file_b6Rmrl
 <<<<<<< .merge_file_VymHaM
 - `Modules/Fixcity/lang/it/fixcity.php` (aggiornato)
 =======
+=======
+<<<<<<< .merge_file_oXh97b
+- `Modules/Fixcity/lang/it/fixcity.php` (aggiornato)
+=======
+<<<<<<< .merge_file_VymHaM
+- `Modules/Fixcity/lang/it/fixcity.php` (aggiornato)
+=======
+>>>>>>> .merge_file_OFsJ7m
+>>>>>>> .merge_file_J4uIIX
 - `Modules/Fixcity/lang/it/laraxot.php` (aggiornato)
 >>>>>>> .merge_file_WpnNp3
 - `Modules/Fixcity/lang/it/faq.php` ✨
@@ -104,9 +114,19 @@ protected static ?string $navigationGroup = 'Contenuti';
 
 ### 1. Esegui Migrations
 ```bash
+<<<<<<< .merge_file_b6Rmrl
 <<<<<<< .merge_file_VymHaM
 cd /var/www/_bases/base_fixcity_fila5_mono/laravel
 =======
+=======
+<<<<<<< .merge_file_oXh97b
+cd /var/www/_bases/base_fixcity_fila5_mono/laravel
+=======
+<<<<<<< .merge_file_VymHaM
+cd /var/www/_bases/base_fixcity_fila5_mono/laravel
+=======
+>>>>>>> .merge_file_OFsJ7m
+>>>>>>> .merge_file_J4uIIX
 cd /var/www/_bases/base_ptvx_fila5_mono/laravel
 >>>>>>> .merge_file_WpnNp3
 php artisan migrate

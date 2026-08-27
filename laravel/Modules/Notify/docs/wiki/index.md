@@ -7,11 +7,27 @@ created: 2026-04-15
 updated: 2026-06-05
 qmd: "notify module wiki index notifications qmd second brain"
 issues:
+<<<<<<< .merge_file_nYiGHJ
+  - "https://github.com/laraxot/base_fixcity_fila5/issues/272"
+=======
+<<<<<<< .merge_file_w2dINC
   - "https://github.com/laraxot/base_fixcity_fila5/issues/272"
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
 related:
   - ../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
+=======
+  - "https://github.com/laraxot/platform/issues/272"
+>>>>>>> .merge_file_OI6cga
+discussions:
+  - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
+related:
+<<<<<<< .merge_file_nYiGHJ
+  - ../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
+=======
+  - ../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-laraxot-map.md
+>>>>>>> .merge_file_66Dlup
+>>>>>>> .merge_file_OI6cga
   - ../../../../docs/wiki/bmad/architecture.md
   - ../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md
   - ../../docs/wiki/concepts/ai-harness-module-discipline.md
@@ -21,8 +37,15 @@ related:
 
 ## AI / second brain
 
+<<<<<<< .merge_file_nYiGHJ
 - [hackernoon-ai-coding-tips-fixcity-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md)
+=======
+<<<<<<< .merge_file_w2dINC
+- [hackernoon-ai-coding-tips-fixcity-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md)
+=======
+>>>>>>> .merge_file_OI6cga
 - [hackernoon-ai-coding-tips-laraxot-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-laraxot-map.md)
+>>>>>>> .merge_file_66Dlup
 - [bmad/architecture](../../../../docs/wiki/bmad/architecture.md)
 - [frontmatter + GitHub](../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md)
 - [ai-harness-module-discipline](../../docs/wiki/concepts/ai-harness-module-discipline.md)
@@ -49,8 +72,15 @@ QMD è configurato per ricerca locale su tutto il corpus markdown (14.177+ file 
 | Collezione | Path | Files | Descrizione |
 |------------|------|-------|-------------|
 | `root-docs` | `docs/` | 710 | Documentazione root progetto |
+<<<<<<< .merge_file_nYiGHJ
 | `mod-fixcity` | `Modules/Fixcity/docs/` | 69 | Ticket, wizard, segnalazioni |
+=======
+<<<<<<< .merge_file_w2dINC
+| `mod-fixcity` | `Modules/Fixcity/docs/` | 69 | Ticket, wizard, segnalazioni |
+=======
+>>>>>>> .merge_file_OI6cga
 | `mod-laraxot` | `Modules/App/docs/` | 69 | Ticket, wizard, segnalazioni |
+>>>>>>> .merge_file_66Dlup
 | `mod-xot` | `Modules/Xot/docs/` | 4409 | Core framework, modelli base |
 | `mod-cms` | `Modules/Cms/docs/` | 711 | Gestione contenuti, pagine |
 | `mod-user` | `Modules/User/docs/` | 1952 | Auth, profili, ruoli |
@@ -79,17 +109,32 @@ QMD è configurato per ricerca locale su tutto il corpus markdown (14.177+ file 
 # Ricerca keyword (BM25, veloce ~30ms)
 ## AI / second brain
 
+<<<<<<< .merge_file_nYiGHJ
 - [hackernoon-ai-coding-tips-fixcity-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md)
+=======
+<<<<<<< .merge_file_w2dINC
+- [hackernoon-ai-coding-tips-fixcity-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md)
+=======
+>>>>>>> .merge_file_OI6cga
 - [hackernoon-ai-coding-tips-laraxot-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-laraxot-map.md)
+>>>>>>> .merge_file_66Dlup
 - [bmad/architecture](../../../../docs/wiki/bmad/architecture.md)
 - [frontmatter + GitHub](../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md)
 - [ai-harness-module-discipline](../../docs/wiki/concepts/ai-harness-module-discipline.md)
 - [second-brain-local-discipline](./concepts/second-brain-local-discipline.md) → canon Xot
 
+<<<<<<< .merge_file_nYiGHJ
+=======
+<<<<<<< .merge_file_w2dINC
+>>>>>>> .merge_file_OI6cga
 qmd search "wizard ticket" -c mod-fixcity -n 5
 
 # Ricerca semantica (vector, ~2s)
 qmd vsearch "come creare una segnalazione" -c mod-fixcity
+<<<<<<< .merge_file_nYiGHJ
+=======
+=======
+>>>>>>> .merge_file_OI6cga
 qmd search "wizard ticket" -c mod-laraxot -n 5
 
 # Ricerca semantica (vector, ~2s)
@@ -250,6 +295,10 @@ qmd search "wizard ticket" -c mod-ptv -n 5
 
 # Ricerca semantica (vector, ~2s)
 qmd vsearch "come creare una segnalazione" -c mod-ptv
+<<<<<<< .merge_file_nYiGHJ
+=======
+>>>>>>> .merge_file_66Dlup
+>>>>>>> .merge_file_OI6cga
 
 # Ricerca ibrida + reranking (migliore qualità, ~10s)
 qmd query "architettura moduli Laravel" -n 10
@@ -329,4 +378,12 @@ Separate git repository with shell scripts and utilities:
 | [llm-wiki-governance](./concepts/llm-wiki-governance.md) | Concept | - | 2026-04-21 |
 | [module-test-location-rule](./concepts/module-test-location-rule.md) | Concept | - | 2026-04-21 |
 | [phpstan-central-config-rule](./concepts/phpstan-central-config-rule.md) | Concept | - | 2026-04-21 |
+<<<<<<< .merge_file_nYiGHJ
 | [xotbase-table-columns-enforcement](./concepts/xotbase-table-columns-enforcement.md) | Concept | 5 Table files populated — XotBaseResourceTable enforcement | 2026-05-07 |
+=======
+<<<<<<< .merge_file_w2dINC
+| [xotbase-table-columns-enforcement](./concepts/xotbase-table-columns-enforcement.md) | Concept | 5 Table files populated — XotBaseResourceTable enforcement | 2026-05-07 |
+=======
+| [xotbase-table-columns-enforcement](./concepts/xotbase-table-columns-enforcement.md) | Concept | 5 Table files populated — XotBaseResourceTable enforcement | 2026-05-07 |
+>>>>>>> .merge_file_66Dlup
+>>>>>>> .merge_file_OI6cga

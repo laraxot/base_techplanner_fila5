@@ -24,7 +24,10 @@ class TelegramData extends Data
      * @param  array<string, mixed>|null  $replyMarkup
      * @param  list<string>|null  $media
      * @param  string  $type  Tipo di messaggio: 'text', 'photo', 'video', 'document', 'audio', 'animation'
+<<<<<<< .merge_file_jlj82d
      *
+=======
+>>>>>>> .merge_file_n4QVhd
      * @return void
      */
     public function __construct(

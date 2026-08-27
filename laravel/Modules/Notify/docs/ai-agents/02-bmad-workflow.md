@@ -151,6 +151,8 @@ Agents discuss together and reach consensus.
 **Last Updated**: 2026-03-20  
 **Status**: ✅ Active  
 **Enforcement**: Code Review + Pre-commit Hook
+<<<<<<< .merge_file_iiQ0Nr
+=======
 
 ---
 
@@ -289,3 +291,4 @@ Agents discuss together and reach consensus.
 **Last Updated**: 2026-03-20  
 **Status**: ✅ Active  
 **Enforcement**: Code Review + Pre-commit Hook
+>>>>>>> .merge_file_LuAC5v

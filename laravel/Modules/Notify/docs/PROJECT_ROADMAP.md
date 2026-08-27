@@ -489,8 +489,15 @@ Funzionalità:
 - [ ] Report performance mensili
 
 **File da creare**:
+<<<<<<< .merge_file_3I1XhL
 - `config/fixcity-sla.php`
+=======
+<<<<<<< .merge_file_AA0JXh
+- `config/fixcity-sla.php`
+=======
+>>>>>>> .merge_file_BHe45G
 - `config/ptv-sla.php`
+>>>>>>> .merge_file_1Q377c
 - `Modules/Fixcity/app/Services/SlaTrackingService.php`
 - `Modules/Fixcity/app/Jobs/CheckSlaViolationsJob.php`
 

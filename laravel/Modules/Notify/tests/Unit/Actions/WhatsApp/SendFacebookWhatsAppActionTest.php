@@ -3,6 +3,17 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Actions\WhatsApp;
+<<<<<<< .merge_file_IKtB3f
+use Modules\Notify\Tests\TestCase;
+use function Safe\file_get_contents;
+use Modules\Notify\Actions\WhatsApp\SendFacebookWhatsAppAction;
+use Modules\Notify\Datas\WhatsAppData;
+use PHPUnit\Framework\Assert;
+
+use function Safe\class_uses;
+
+uses(\Modules\Notify\Tests\TestCase::class);
+=======
 
 use Modules\Notify\Actions\WhatsApp\SendFacebookWhatsAppAction;
 use Modules\Notify\Datas\WhatsAppData;
@@ -13,6 +24,7 @@ use PHPUnit\Framework\Assert;
 use function Safe\class_uses;
 
 uses(TestCase::class)->group('no-notify-db');
+>>>>>>> .merge_file_i8lbQj
 
 describe('SendFacebookWhatsAppAction', function () {
     it('can be referenced via ReflectionClass without instantiation', function () {
@@ -33,7 +45,11 @@ describe('SendFacebookWhatsAppAction', function () {
         $method = $reflection->getMethod('execute');
         $params = $method->getParameters();
 
+<<<<<<< .merge_file_IKtB3f
+        \assertReflectionTypeName($params[0]->getType(), WhatsAppData::class);
+=======
         XotBasePest::assertReflectionTypeName($params[0]->getType(), WhatsAppData::class);
+>>>>>>> .merge_file_i8lbQj
     });
 
     it('execute returns array', function () {
@@ -41,12 +57,20 @@ describe('SendFacebookWhatsAppAction', function () {
         $method = $reflection->getMethod('execute');
         $returnType = $method->getReturnType();
 
+<<<<<<< .merge_file_IKtB3f
+        \assertReflectionTypeName($returnType, 'array');
+=======
         XotBasePest::assertReflectionTypeName($returnType, 'array');
+>>>>>>> .merge_file_i8lbQj
     });
 
     it('uses strict types', function () {
         $reflection = new \ReflectionClass(SendFacebookWhatsAppAction::class);
+<<<<<<< .merge_file_IKtB3f
+        $content = \notifyReflectionSource($reflection);
+=======
         $content = TestCase::notifyReflectionSource($reflection);
+>>>>>>> .merge_file_i8lbQj
         Assert::assertStringContainsString('declare(strict_types=1)', (string) $content);
     });
 
@@ -59,7 +83,11 @@ describe('SendFacebookWhatsAppAction', function () {
     it('has required imports', function () {
         $reflection = new \ReflectionClass(SendFacebookWhatsAppAction::class);
         $filename = $reflection->getFileName();
+<<<<<<< .merge_file_IKtB3f
+        $content = \notifyReflectionSource(new \ReflectionClass(SendFacebookWhatsAppAction::class));
+=======
         $content = TestCase::notifyReflectionSource(new \ReflectionClass(SendFacebookWhatsAppAction::class));
+>>>>>>> .merge_file_i8lbQj
 
         Assert::assertStringContainsString('declare(strict_types=1)', (string) $content);
     });

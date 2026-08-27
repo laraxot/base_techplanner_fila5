@@ -100,8 +100,15 @@ php artisan boost:install
 
 **Usage**:
 ```
+<<<<<<< .merge_file_SLHS3Z
 "Create a Filament table widget for Predict model"
+=======
+<<<<<<< .merge_file_9kfqnV
+"Create a Filament table widget for Predict model"
+=======
+>>>>>>> .merge_file_bV3jUa
 "Create a Filament table widget for Forecast model"
+>>>>>>> .merge_file_G2ftQI
 "Generate a Livewire component for market cards"
 "Add validation rules for user registration"
 ```
@@ -434,8 +441,15 @@ npx shadcn@latest mcp init --client claude
 ### 3. Use Skills
 ```
 "Create a hero section using Flowbite with purple brand color"
+<<<<<<< .merge_file_SLHS3Z
 "Generate a Filament table widget for Predict model"
+=======
+<<<<<<< .merge_file_9kfqnV
+"Generate a Filament table widget for Predict model"
+=======
+>>>>>>> .merge_file_bV3jUa
 "Generate a Filament table widget for Forecast model"
+>>>>>>> .merge_file_G2ftQI
 "Add cinematic particles effect to homepage"
 ```
 

@@ -1,7 +1,14 @@
 # CLAUDE Overview
 
+<<<<<<< .merge_file_oUiD24
 Panoramica del progetto LaravelPizza/Base Predict Fila5.
+=======
+<<<<<<< .merge_file_3vwSGA
+Panoramica del progetto LaravelPizza/Base Predict Fila5.
+=======
+>>>>>>> .merge_file_RIpLsB
 Panoramica del progetto LaravelPizza/Base Forecast Fila5.
+>>>>>>> .merge_file_T0iOAi
 
 ## Progetto
 

@@ -21,12 +21,17 @@ class ThemeNotification extends Notification implements ShouldQueue
 
     /**
      * @param  array<string, mixed>  $view_params
+<<<<<<< .merge_file_GsnD29
+     *
+=======
+>>>>>>> .merge_file_UgkKjU
      * @return void
      */
     public function __construct(
         public string $name,
         public array $view_params,
-    ) {}
+    ) {
+    }
 
     /**
      * @return list<string>

@@ -32,7 +32,11 @@ class TryMailAction
     /**
      * @param  array<string, mixed>  $vars
      *
+<<<<<<< .merge_file_flY5ue
      * @throws \RuntimeException
+=======
+     * @throws RuntimeException
+>>>>>>> .merge_file_FlDTwe
      */
     public function execute(string $to = '', ?string $body = null, array $vars = [], ?string $from = null, string $driver = 'duocircle'): void
     {

@@ -20,9 +20,19 @@ Inoltre `laravel/Modules/Notify/composer.json` descriveva erroneamente un modulo
   - `Modules\\Notify\\` -> `app/`
   - `Modules\\Notify\\Database\\Factories\\` -> `database/factories/`
   - `Modules\\Notify\\Database\\Seeders\\` -> `database/seeders/`
+<<<<<<< .merge_file_NPbnsJ
 <<<<<<< .merge_file_sLkAdS
 - Non restano riferimenti `fixcity/user-module` o `Modules\\User\\` nel composer del modulo.
 =======
+=======
+<<<<<<< .merge_file_KVApmp
+- Non restano riferimenti `fixcity/user-module` o `Modules\\User\\` nel composer del modulo.
+=======
+<<<<<<< .merge_file_sLkAdS
+- Non restano riferimenti `fixcity/user-module` o `Modules\\User\\` nel composer del modulo.
+=======
+>>>>>>> .merge_file_fwgOlr
+>>>>>>> .merge_file_niJMkz
 - Non restano riferimenti `laraxot/user-module` o `Modules\\User\\` nel composer del modulo.
 >>>>>>> .merge_file_HMv5zc
 

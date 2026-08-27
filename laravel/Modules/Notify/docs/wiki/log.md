@@ -6,10 +6,18 @@
 
 ## [2026-06-05] docs | HackerNoon harness — tips 001-022 in wiki locale
 
+<<<<<<< .merge_file_fdz2zZ
 - Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt)
 - GitHub: [#272](https://github.com/laraxot/base_fixcity_fila5/issues/272) / [D#273](https://github.com/laraxot/base_fixcity_fila5/discussions/273)
+=======
+<<<<<<< .merge_file_npTnSq
+- Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt)
+- GitHub: [#272](https://github.com/laraxot/base_fixcity_fila5/issues/272) / [D#273](https://github.com/laraxot/base_fixcity_fila5/discussions/273)
+=======
+>>>>>>> .merge_file_as3XwS
 - Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-laraxot-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt)
 - GitHub: [#272](https://github.com/laraxot/platform/issues/272) / [D#273](https://github.com/laraxot/platform/discussions/273)
+>>>>>>> .merge_file_cjF1Yl
 
 ---
 title: "Notify Wiki Activity Log"
@@ -21,8 +29,15 @@ module: "Notify"
 ## [2026-05-11] Wiki Structure Created
 
 - Created wiki structure: rules/, skills/, commands/, memories/, concepts/
+<<<<<<< .merge_file_fdz2zZ
 - Created INDEX.md for each section
+=======
+<<<<<<< .merge_file_npTnSq
+- Created INDEX.md for each section
+=======
+>>>>>>> .merge_file_as3XwS
 - Created index.md for each section
+>>>>>>> .merge_file_cjF1Yl
 - Created module index.md
 - Ready for on-demand loading via QMD
 

@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_hGtKuB
+=======
 <?php
 
 declare(strict_types=1);
@@ -62,3 +64,4 @@ class CleanupNotificationLogsCommand extends Command
         return Command::SUCCESS;
     }
 }
+>>>>>>> .merge_file_zcncnE

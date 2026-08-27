@@ -28,9 +28,19 @@ related:
 
 ## 🎯 Obiettivo Raggiunto
 
+<<<<<<< .merge_file_KWHecC
 <<<<<<< .merge_file_GhtOfU
 **Implementazione completa AGID compliance per FixCity**
 =======
+=======
+<<<<<<< .merge_file_NNrVFn
+**Implementazione completa AGID compliance per FixCity**
+=======
+<<<<<<< .merge_file_GhtOfU
+**Implementazione completa AGID compliance per FixCity**
+=======
+>>>>>>> .merge_file_tZHYxk
+>>>>>>> .merge_file_LpuIn1
 **Implementazione completa AGID compliance per Notify**
 >>>>>>> .merge_file_r9TSpI
 - ✅ Multi-step form (4 passi obbligatori)
@@ -44,10 +54,21 @@ related:
 ## 📦 File Implementati (28 file)
 
 ### Models (2)
+<<<<<<< .merge_file_KWHecC
+=======
+<<<<<<< .merge_file_NNrVFn
+- `Modules/Fixcity/app/Models/Faq.php`
+- `Modules/Fixcity/app/Models/FaqCategory.php`
+=======
+>>>>>>> .merge_file_LpuIn1
 <<<<<<< .merge_file_GhtOfU
 - `Modules/Fixcity/app/Models/Faq.php`
 - `Modules/Fixcity/app/Models/FaqCategory.php`
 =======
+<<<<<<< .merge_file_KWHecC
+=======
+>>>>>>> .merge_file_tZHYxk
+>>>>>>> .merge_file_LpuIn1
 - `Modules/App/app/Models/Faq.php`
 - `Modules/App/app/Models/FaqCategory.php`
 >>>>>>> .merge_file_r9TSpI
@@ -84,13 +105,27 @@ related:
 - `Modules/UI/resources/views/components/accordion-item.blade.php`
 
 ### Traduzioni (8)
+<<<<<<< .merge_file_KWHecC
 <<<<<<< .merge_file_GhtOfU
+=======
+<<<<<<< .merge_file_NNrVFn
+=======
+<<<<<<< .merge_file_GhtOfU
+>>>>>>> .merge_file_tZHYxk
+>>>>>>> .merge_file_LpuIn1
 - `Modules/Fixcity/lang/it/fixcity.php` (aggiornato)
 - `Modules/Fixcity/lang/it/faq.php` ✨
 - `Modules/Fixcity/lang/it/faq-category.php` ✨
 - `Modules/Fixcity/lang/en/faq.php` ✨
 - `Modules/Fixcity/lang/en/faq-category.php` ✨
+<<<<<<< .merge_file_KWHecC
 =======
+=======
+<<<<<<< .merge_file_NNrVFn
+=======
+=======
+>>>>>>> .merge_file_tZHYxk
+>>>>>>> .merge_file_LpuIn1
 - `Modules/App/lang/it/laraxot.php` (aggiornato)
 - `Modules/App/lang/it/faq.php` ✨
 - `Modules/App/lang/it/faq-category.php` ✨
@@ -137,9 +172,19 @@ protected static ?string $navigationGroup = 'Contenuti';
 
 ### 1. Esegui Migrations
 ```bash
+<<<<<<< .merge_file_KWHecC
 <<<<<<< .merge_file_GhtOfU
 cd /var/www/_bases/base_fixcity_fila5_mono/laravel
 =======
+=======
+<<<<<<< .merge_file_NNrVFn
+cd /var/www/_bases/base_fixcity_fila5_mono/laravel
+=======
+<<<<<<< .merge_file_GhtOfU
+cd /var/www/_bases/base_fixcity_fila5_mono/laravel
+=======
+>>>>>>> .merge_file_tZHYxk
+>>>>>>> .merge_file_LpuIn1
 cd /var/www/_bases/base_ptvx_fila5_mono/laravel
 >>>>>>> .merge_file_r9TSpI
 php artisan migrate
@@ -147,9 +192,19 @@ php artisan migrate
 
 ### 2. Popola Database
 ```bash
+<<<<<<< .merge_file_KWHecC
 <<<<<<< .merge_file_GhtOfU
 php artisan db:seed --class=Modules\\Fixcity\\Database\\Seeders\\FaqSeeder
 =======
+=======
+<<<<<<< .merge_file_NNrVFn
+php artisan db:seed --class=Modules\\Fixcity\\Database\\Seeders\\FaqSeeder
+=======
+<<<<<<< .merge_file_GhtOfU
+php artisan db:seed --class=Modules\\Fixcity\\Database\\Seeders\\FaqSeeder
+=======
+>>>>>>> .merge_file_tZHYxk
+>>>>>>> .merge_file_LpuIn1
 php artisan db:seed --class=Modules\\App\\Database\\Seeders\\FaqSeeder
 >>>>>>> .merge_file_r9TSpI
 ```
@@ -208,9 +263,19 @@ Steps:
 
 ## 📚 Documentazione Creata
 
+<<<<<<< .merge_file_KWHecC
 <<<<<<< .merge_file_GhtOfU
 1. **AGID Gap Analysis** (`Modules/Fixcity/docs/agid-gap-analysis.md`)
 =======
+=======
+<<<<<<< .merge_file_NNrVFn
+1. **AGID Gap Analysis** (`Modules/Fixcity/docs/agid-gap-analysis.md`)
+=======
+<<<<<<< .merge_file_GhtOfU
+1. **AGID Gap Analysis** (`Modules/Fixcity/docs/agid-gap-analysis.md`)
+=======
+>>>>>>> .merge_file_tZHYxk
+>>>>>>> .merge_file_LpuIn1
 1. **AGID Gap Analysis** (`Modules/App/docs/agid-gap-analysis.md`)
 >>>>>>> .merge_file_r9TSpI
 2. **Theme Compliance** (`Themes/Sixteen/docs/agid-compliance-summary.md`)
@@ -262,9 +327,19 @@ Steps:
 - ✅ Documentazione completa
 - ✅ Production ready
 
+<<<<<<< .merge_file_KWHecC
 <<<<<<< .merge_file_GhtOfU
 **FixCity è ora completamente AGID-compliant e pronto per la produzione!**
 =======
+=======
+<<<<<<< .merge_file_NNrVFn
+**FixCity è ora completamente AGID-compliant e pronto per la produzione!**
+=======
+<<<<<<< .merge_file_GhtOfU
+**FixCity è ora completamente AGID-compliant e pronto per la produzione!**
+=======
+>>>>>>> .merge_file_tZHYxk
+>>>>>>> .merge_file_LpuIn1
 **Notify è ora completamente AGID-compliant e pronto per la produzione!**
 >>>>>>> .merge_file_r9TSpI
 

@@ -224,6 +224,7 @@ XML;
         Assert::assertArrayHasKey('media_grid', mediaTablePart($page, 'getInfolistSchema'));
 
         Storage::fake('local');
+        // @phpstan-ignore-next-line method.notFound, method.nonObject (Pest closure $this binds to a generic stub; project TestCase members not visible to PHPStan statically)
         $this->artisan('media:convert-video', ['disk' => 'local', 'file' => 'missing.mp4']);
     });
 

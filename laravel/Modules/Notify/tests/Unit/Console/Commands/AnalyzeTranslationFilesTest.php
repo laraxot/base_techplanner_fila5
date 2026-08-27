@@ -3,14 +3,26 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Console\Commands;
+<<<<<<< .merge_file_weQzMV
+=======
 
+>>>>>>> .merge_file_T1ZmGT
 use Illuminate\Console\Command;
 use Modules\Notify\Console\Commands\AnalyzeTranslationFiles;
 use Modules\Notify\Tests\TestCase;
+<<<<<<< .merge_file_1L0dNc
+=======
+use PHPUnit\Framework\Assert;
+<<<<<<< .merge_file_weQzMV
+
+uses(\Modules\Notify\Tests\TestCase::class);
+=======
+>>>>>>> .merge_file_l5jVN6
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class)->group('no-notify-db');
+>>>>>>> .merge_file_T1ZmGT
 
 describe('AnalyzeTranslationFiles', function () {
     it('has correct signature', function () {
@@ -81,7 +93,11 @@ describe('AnalyzeTranslationFiles', function () {
             ],
         ];
 
+<<<<<<< .merge_file_weQzMV
+        $result = \assertNotifyArray($method->invoke($command, $input));
+=======
         $result = XotBasePest::assertArray($method->invoke($command, $input));
+>>>>>>> .merge_file_T1ZmGT
 
         Assert::assertArrayHasKey('parent.child1', $result);
         Assert::assertArrayHasKey('parent.child2', $result);
@@ -95,7 +111,11 @@ describe('AnalyzeTranslationFiles', function () {
         $method = $reflection->getMethod('flattenArray');
         $method->setAccessible(true);
 
+<<<<<<< .merge_file_weQzMV
+        $result = \assertNotifyArray($method->invoke($command, []));
+=======
         $result = XotBasePest::assertArray($method->invoke($command, []));
+>>>>>>> .merge_file_T1ZmGT
 
         Assert::assertEmpty($result);
     });
@@ -115,7 +135,11 @@ describe('AnalyzeTranslationFiles', function () {
             ],
         ];
 
+<<<<<<< .merge_file_weQzMV
+        $result = \assertNotifyArray($method->invoke($command, $input));
+=======
         $result = XotBasePest::assertArray($method->invoke($command, $input));
+>>>>>>> .merge_file_T1ZmGT
 
         Assert::assertArrayHasKey('level1.level2.level3', $result);
         Assert::assertSame('deep value', $result['level1.level2.level3']);
@@ -130,7 +154,11 @@ describe('AnalyzeTranslationFiles', function () {
 
         $input = ['key' => 'value'];
 
+<<<<<<< .merge_file_weQzMV
+        $result = \assertNotifyArray($method->invoke($command, $input, 'prefix'));
+=======
         $result = XotBasePest::assertArray($method->invoke($command, $input, 'prefix'));
+>>>>>>> .merge_file_T1ZmGT
 
         Assert::assertArrayHasKey('prefix.key', $result);
     });

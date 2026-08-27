@@ -68,6 +68,7 @@ describe('Notify coverage 100 — extended provider paths', function (): void {
     });
 
     test('FirebaseCloudMessagingChannel e SendScheduledPushNotification istanziabili', function (): void {
+        /** @var TestCase $this */
         config(['notify.fcm.server_key' => 'fcm-key']);
         Http::fake(['*' => Http::response(['message_id' => 'x'], 200)]);
 

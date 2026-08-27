@@ -1,12 +1,26 @@
 ---
+<<<<<<< .merge_file_rVLoiZ
 title: "FixCity - Architecture Documentation"
+=======
+<<<<<<< .merge_file_V0XFfD
+title: "FixCity - Architecture Documentation"
+=======
+>>>>>>> .merge_file_5VPVEt
 title: "Notify - Architecture Documentation"
+>>>>>>> .merge_file_4jPha9
 type: concept
 tags: [architecture]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< .merge_file_rVLoiZ
 qmd: "architecture fixcity - architecture documentation"
+=======
+<<<<<<< .merge_file_V0XFfD
+qmd: "architecture fixcity - architecture documentation"
+=======
+>>>>>>> .merge_file_5VPVEt
 qmd: "architecture laraxot - architecture documentation"
+>>>>>>> .merge_file_4jPha9
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -20,8 +34,15 @@ related:
   - "./final-refactoring-report.md"
 ---
 
+<<<<<<< .merge_file_rVLoiZ
 # FixCity - Architecture Documentation
+=======
+<<<<<<< .merge_file_V0XFfD
+# FixCity - Architecture Documentation
+=======
+>>>>>>> .merge_file_5VPVEt
 # Notify - Architecture Documentation
+>>>>>>> .merge_file_4jPha9
 
 **Version:** 4.0  
 **Date:** 2025-10-01  
@@ -75,8 +96,15 @@ Modules/
 ├── Xot/              # Core framework extensions
 ├── Tenant/           # Multi-tenancy support
 ├── User/             # User management & authentication
+<<<<<<< .merge_file_rVLoiZ
 ├── Fixcity/          # Main application logic
+=======
+<<<<<<< .merge_file_V0XFfD
+├── Fixcity/          # Main application logic
+=======
+>>>>>>> .merge_file_5VPVEt
 ├── App/          # Main application logic
+>>>>>>> .merge_file_4jPha9
 ├── Blog/             # Content management
 ├── Cms/              # CMS functionality
 ├── Geo/              # Geographic services
@@ -100,8 +128,15 @@ graph TD
     A[Xot] --> B[Tenant]
     A --> C[User]
     A --> D[Lang]
+<<<<<<< .merge_file_rVLoiZ
     B --> E[Fixcity]
+=======
+<<<<<<< .merge_file_V0XFfD
+    B --> E[Fixcity]
+=======
+>>>>>>> .merge_file_5VPVEt
     B --> E[App]
+>>>>>>> .merge_file_4jPha9
     C --> E
     E --> F[Blog]
     E --> G[Cms]

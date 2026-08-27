@@ -20,6 +20,10 @@
 
 ```blade
 // ❌ SBAGLIATO: $tx() helper (VIETATO!)
+<<<<<<< .merge_file_D3vAz9
+=======
+<<<<<<< .merge_file_qhusgj
+>>>>>>> .merge_file_LrmNcN
 {{ $tx('predict::labels.outcomes.title', 'Outcomes') }}
 {{ $tx('predict::labels.volume', 'Volume') }}
 {{ $tx('predict::messages.loading', 'Loading...') }}
@@ -33,6 +37,10 @@
 
 // ❌ SBAGLIATO: Fallback inline
 {{ __('predict::labels.volume', 'Volume') }}    // ❌ Fallback VIETATO!
+<<<<<<< .merge_file_D3vAz9
+=======
+=======
+>>>>>>> .merge_file_LrmNcN
 {{ $tx('forecast::labels.outcomes.title', 'Outcomes') }}
 {{ $tx('forecast::labels.volume', 'Volume') }}
 {{ $tx('forecast::messages.loading', 'Loading...') }}
@@ -46,6 +54,7 @@
 
 // ❌ SBAGLIATO: Fallback inline
 {{ __('forecast::labels.volume', 'Volume') }}    // ❌ Fallback VIETATO!
+>>>>>>> .merge_file_PHXuwo
 ```
 
 ---
@@ -54,6 +63,10 @@
 
 ```blade
 // ✅ CORRETTO: 5 livelli con __()
+<<<<<<< .merge_file_D3vAz9
+=======
+<<<<<<< .merge_file_qhusgj
+>>>>>>> .merge_file_LrmNcN
 {{ __('predict::labels.market.volume.label') }}
 {{ __('predict::messages.bet.loading.message') }}
 {{ __('predict::titles.order.book.title.label') }}
@@ -66,6 +79,10 @@
 {{ __('predict::titles.{section}.{element}.label') }}
 {{ __('predict::fields.{entity}.{attribute}.label') }}
 {{ __('predict::actions.{action}.{target}.label') }}
+<<<<<<< .merge_file_D3vAz9
+=======
+=======
+>>>>>>> .merge_file_LrmNcN
 {{ __('forecast::labels.market.volume.label') }}
 {{ __('forecast::messages.bet.loading.message') }}
 {{ __('forecast::titles.order.book.title.label') }}
@@ -78,6 +95,7 @@
 {{ __('forecast::titles.{section}.{element}.label') }}
 {{ __('forecast::fields.{entity}.{attribute}.label') }}
 {{ __('forecast::actions.{action}.{target}.label') }}
+>>>>>>> .merge_file_PHXuwo
 ```
 
 ---
@@ -86,9 +104,15 @@
 
 ### Level 1: Namespace
 ```
+<<<<<<< .merge_file_qhusgj
+predict::
+```
+Il modulo (predict, blog, user, etc.)
+=======
 forecast::
 ```
 Il modulo (forecast, blog, user, etc.)
+>>>>>>> .merge_file_PHXuwo
 
 ### Level 2: Context
 ```
@@ -135,6 +159,16 @@ actions.trade.market.label      → Etichetta azione trade
 
 ```blade
 // 🚩 RED FLAG: $tx() helper
+<<<<<<< .merge_file_qhusgj
+{{ $tx('predict::labels.volume', 'Volume') }}
+
+// 🚩 RED FLAG: Meno di 5 livelli
+{{ __('predict::labels.volume') }}
+{{ __('predict::messages.loading') }}
+
+// 🚩 RED FLAG: Fallback inline
+{{ __('predict::labels.volume', 'Volume') }}
+=======
 {{ $tx('forecast::labels.volume', 'Volume') }}
 
 // 🚩 RED FLAG: Meno di 5 livelli
@@ -143,15 +177,24 @@ actions.trade.market.label      → Etichetta azione trade
 
 // 🚩 RED FLAG: Fallback inline
 {{ __('forecast::labels.volume', 'Volume') }}
+>>>>>>> .merge_file_PHXuwo
 ```
 
 **Immediate Fix**:
 ```blade
 // ✅ CORRETTO: 5 livelli con __()
+<<<<<<< .merge_file_D3vAz9
 {{ __('predict::labels.market.volume.label') }}
 {{ __('predict::messages.bet.loading.message') }}
+=======
+<<<<<<< .merge_file_qhusgj
+{{ __('predict::labels.market.volume.label') }}
+{{ __('predict::messages.bet.loading.message') }}
+=======
+>>>>>>> .merge_file_LrmNcN
 {{ __('forecast::labels.market.volume.label') }}
 {{ __('forecast::messages.bet.loading.message') }}
+>>>>>>> .merge_file_PHXuwo
 ```
 
 ---
@@ -173,12 +216,21 @@ actions.trade.market.label      → Etichetta azione trade
 ## 🔗 Related Documentation
 
 ### AI Agents Docs
+<<<<<<< .merge_file_qhusgj
+- **[Rules Index](00-INDEX.md)** - All rules
+- **[Translation Structure](translation-structure-5-levels.md)** - Original rule
+
+### Module Docs
+- **[Translation Files](../../laravel/Modules/Predict/lang/)** - Translation files
+- **[Blade Components](../../laravel/Modules/Predict/resources/views/components/)** - Blade components
+=======
 - **[Rules Index](00-index.md)** - All rules
 - **[Translation Structure](translation-structure-5-levels.md)** - Original rule
 
 ### Module Docs
 - **[Translation Files](../../laravel/Modules/Forecast/lang/)** - Translation files
 - **[Blade Components](../../laravel/Modules/Forecast/resources/views/components/)** - Blade components
+>>>>>>> .merge_file_PHXuwo
 
 ---
 

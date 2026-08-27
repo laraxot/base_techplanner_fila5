@@ -5,8 +5,27 @@ declare(strict_types=1);
 return [
     'navigation' => ['group' => 'Sistema', 'label' => 'Temi Notifiche', 'icon' => 'notify-theme-animated', 'sort' => 50, 'description' => 'Gestione dei temi per le notifiche'],
     'fields' => [
+<<<<<<< .merge_file_244Cnm
+        'name' => [
+            'label' => 'Nome',
+            'tooltip' => 'Nome del tema',
+            'placeholder' => 'es: Tema Aziendale',
+            'help' => 'Inserisci un nome descrittivo per il tema',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'description' => [
+            'label' => 'Descrizione',
+            'tooltip' => 'Descrizione del tema',
+            'placeholder' => 'es: Tema standard per le comunicazioni aziendali',
+            'help' => 'Breve descrizione dello scopo del tema',
+            'helper_text' => '',
+            'description' => '',
+        ],
+=======
         'name' => ['label' => 'Nome', 'tooltip' => 'Nome del tema', 'placeholder' => 'es: Tema Aziendale', 'help' => 'Inserisci un nome descrittivo per il tema', 'helper_text' => '', 'description' => ''],
         'description' => ['label' => 'Descrizione', 'tooltip' => 'Descrizione del tema', 'placeholder' => 'es: Tema standard per le comunicazioni aziendali', 'help' => 'Breve descrizione dello scopo del tema', 'helper_text' => '', 'description' => ''],
+>>>>>>> .merge_file_EYYzZn
         'colors' => [
             'label' => 'Colori',
             'tooltip' => 'Schema colori del tema',
@@ -33,9 +52,24 @@ return [
                     'label' => 'Dimensioni font',
                     'tooltip' => 'Dimensioni dei caratteri',
                     'options' => [
+<<<<<<< .merge_file_244Cnm
+                        'small' => [
+                            'label' => 'Piccolo',
+                            'tooltip' => 'Testo piccolo (es: note]',
+                        ],
+                        'normal' => [
+                            'label' => 'Normale',
+                            'tooltip' => 'Testo normale',
+                        ],
+                        'large' => [
+                            'label' => 'Grande',
+                            'tooltip' => 'Testo grande (es: titoli]',
+                        ],
+=======
                         'small' => ['label' => 'Piccolo', 'tooltip' => 'Testo piccolo (es: note]'],
                         'normal' => ['label' => 'Normale', 'tooltip' => 'Testo normale'],
                         'large' => ['label' => 'Grande', 'tooltip' => 'Testo grande (es: titoli]'],
+>>>>>>> .merge_file_EYYzZn
                     ],
                 ],
             ],
@@ -66,6 +100,22 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< .merge_file_244Cnm
+        'is_default' => [
+            'label' => 'Predefinito',
+            'tooltip' => 'Imposta come tema predefinito',
+            'help' => 'Il tema predefinito verrà utilizzato per tutte le notifiche senza tema specifico',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'is_active' => [
+            'label' => 'Attivo',
+            'tooltip' => 'Stato di attivazione del tema',
+            'help' => 'Solo i temi attivi possono essere utilizzati',
+            'helper_text' => '',
+            'description' => '',
+        ],
+=======
         'is_default' => ['label' => 'Predefinito', 'tooltip' => 'Imposta come tema predefinito', 'help' => 'Il tema predefinito verrà utilizzato per tutte le notifiche senza tema specifico', 'helper_text' => '', 'description' => ''],
         'is_active' => ['label' => 'Attivo', 'tooltip' => 'Stato di attivazione del tema', 'help' => 'Solo i temi attivi possono essere utilizzati', 'helper_text' => '', 'description' => ''],
         'id' => ['label' => 'id'],
@@ -77,6 +127,7 @@ return [
         'created_at' => ['label' => 'created_at'],
         'updated_at' => ['label' => 'updated_at'],
         'post_type' => ['label' => 'post_type'],
+>>>>>>> .merge_file_EYYzZn
     ],
     'actions' => [
         'preview' => ['label' => 'Anteprima', 'tooltip' => 'Visualizza anteprima del tema', 'icon' => 'heroicon-o-eye', 'color' => 'primary'],

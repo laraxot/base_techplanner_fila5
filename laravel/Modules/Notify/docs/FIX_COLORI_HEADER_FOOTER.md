@@ -187,6 +187,13 @@ body {
 ---
 
 **Cache**: ✅ Pulita  
+<<<<<<< .merge_file_MOptO3
 **URL Test**: http://fixcity.local/it/tests/homepage  
+=======
+<<<<<<< .merge_file_u1FJzx
+**URL Test**: http://fixcity.local/it/tests/homepage  
+=======
+>>>>>>> .merge_file_Bw5wrm
 **URL Test**: http://ptv.local/it/tests/homepage  
+>>>>>>> .merge_file_9l0wi7
 **Status**: Header e Footer 100% conformi

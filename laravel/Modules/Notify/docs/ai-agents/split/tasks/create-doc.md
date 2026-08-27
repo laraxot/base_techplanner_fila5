@@ -113,12 +113,21 @@ User can type `#yolo` to toggle to YOLO mode (process all sections at once).
 
 ## Cross-References
 
+<<<<<<< .merge_file_lGkA2a
+=======
+<<<<<<< .merge_file_0kIosf
+>>>>>>> .merge_file_2xupBG
 - ← [Tasks Index](INDEX.md) — All 22 BMad tasks
 - ← [Agents Index](../../agents/INDEX.md) — 10 agent definitions
 - ← [Main AI Docs Index](../INDEX.md) — Master index
 - ← [../../../../AGENTS.md](../../../../../../../../AGENTS.md) — Original source
+<<<<<<< .merge_file_lGkA2a
+=======
+=======
+>>>>>>> .merge_file_2xupBG
 - ← [Tasks Index](index.md) — All 22 BMad tasks
 - ← [Agents Index](../../agents/index.md) — 10 agent definitions
 - ← [Main AI Docs Index](../index.md) — Master index
 - ← [../../../../agents.md](../../../../../../../../agents.md) — Original source
+>>>>>>> .merge_file_0dsFk5
 

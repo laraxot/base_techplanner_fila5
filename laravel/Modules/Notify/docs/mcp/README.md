@@ -21,8 +21,15 @@ related:
 
 > **Last Updated**: 2026-03-13  
 > **Status**: 🔄 In Progress  
+<<<<<<< .merge_file_BhbH8e
 > **Repository**: FixCity Platform
+=======
+<<<<<<< .merge_file_C91WVd
+> **Repository**: FixCity Platform
+=======
+>>>>>>> .merge_file_5xYm9x
 > **Repository**: Notify Platform
+>>>>>>> .merge_file_h0nZ1i
 
 ---
 
@@ -325,6 +332,13 @@ To contribute to MCP configuration:
 ---
 
 **Maintainer**: @marco76tv  
+<<<<<<< .merge_file_BhbH8e
 **Contact**: dev @fixcity.example.com  
+=======
+<<<<<<< .merge_file_C91WVd
+**Contact**: dev @fixcity.example.com  
+=======
+>>>>>>> .merge_file_5xYm9x
 **Contact**: dev @laraxot.example.com  
+>>>>>>> .merge_file_h0nZ1i
 **Last Tested**: 2026-03-13

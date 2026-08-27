@@ -49,8 +49,15 @@ Analizzare e documentare la necessità di creare `XotBasePivot` seguendo princip
    - ✅ Next steps e pattern correlati
    - ✅ FAQ per nuovi developer
 
+<<<<<<< .merge_file_MD9sL9
 6. **[Executive Summary](./XotBasePivot-Executive-Summary.md)** (2.000+ parole)
+<<<<<<< .merge_file_uek41e
 6. **[Executive Summary](./xotbasepivot-executive-summary.md)** (2.000+ parole)
+=======
+=======
+6. **[Executive Summary](./xotbasepivot-executive-summary.md)** (2.000+ parole)
+>>>>>>> .merge_file_VFK2TN
+>>>>>>> .merge_file_ZwlBnR
    - ✅ TL;DR per management
    - ✅ Business case con ROI 58.500%
    - ✅ Risk assessment (basso)

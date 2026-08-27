@@ -27,8 +27,24 @@
 
 ## 🔗 Link
 
+<<<<<<< .merge_file_2G01yU
 **Precedente:** [INDEX](INDEX.md) | **Successivo:** [Module Architecture](module-architecture.md)
 
 **Di ritorno:**
 - [CLAUDE.md](../../CLAUDE.md)
 - [AGENTS.md](../../AGENTS.md)
+=======
+<<<<<<< .merge_file_mcEuIN
+**Precedente:** [INDEX](INDEX.md) | **Successivo:** [Module Architecture](module-architecture.md)
+
+**Di ritorno:**
+- [CLAUDE.md](../../CLAUDE.md)
+- [AGENTS.md](../../AGENTS.md)
+=======
+**Precedente:** [INDEX](index.md) | **Successivo:** [Module Architecture](module-architecture.md)
+
+**Di ritorno:**
+- [CLAUDE.md](../../CLAUDE.md)
+- [agents.md](../../agents.md)
+>>>>>>> .merge_file_Tc7kAL
+>>>>>>> .merge_file_g2MewE

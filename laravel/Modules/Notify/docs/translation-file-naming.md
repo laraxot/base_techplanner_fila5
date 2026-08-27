@@ -35,6 +35,13 @@ Se si identifica un file con naming non conforme:
 
 ## Riferimenti
 - [Regole Generali per le Traduzioni](../../lang/docs/translation_keys_rules.md)
+<<<<<<< .merge_file_h4xhoF
 - [Best Practices per le Traduzioni](../../lang/docs/translation_keys_best_practices.md)
+=======
+<<<<<<< .merge_file_RLYIP7
+- [Best Practices per le Traduzioni](../../lang/docs/translation_keys_best_practices.md)
+=======
+>>>>>>> .merge_file_jpmO3W
 - [Best Practices per le Traduzioni](../../lang/docs/translation-keys-best-practices.md)
+>>>>>>> .merge_file_yUyAHq
 - [Convenzioni di Traduzione nel Modulo Notify](./translation_conventions.md)

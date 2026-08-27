@@ -68,10 +68,18 @@ use Modules\Blog\Http\Controllers\BlogController;
 
 ```php
 // Only routing and dispatch
+<<<<<<< .merge_file_hv598S
 if ($container0 === 'predicts') {
     @include('predict::pages.predict-detail')
+=======
+<<<<<<< .merge_file_PkQG9p
+if ($container0 === 'predicts') {
+    @include('predict::pages.predict-detail')
+=======
+>>>>>>> .merge_file_lO4aeN
 if ($container0 === 'forecasts') {
     @include('forecast::pages.forecast-detail')
+>>>>>>> .merge_file_WESlE8
 } elseif ($container0 === 'events') {
     @include('events::pages.event-detail')
 } else {
@@ -83,12 +91,21 @@ if ($container0 === 'forecasts') {
 
 ```php
 // ❌ NEVER do this in the generic blade
+<<<<<<< .merge_file_hv598S
 private function getMarketData() { ... }  // Predict-specific
 private function buildOrderBook() { ... } // Predict-specific
 private function calculateQualityScore() { ... } // Predict-specific
+=======
+<<<<<<< .merge_file_PkQG9p
+private function getMarketData() { ... }  // Predict-specific
+private function buildOrderBook() { ... } // Predict-specific
+private function calculateQualityScore() { ... } // Predict-specific
+=======
+>>>>>>> .merge_file_lO4aeN
 private function getMarketData() { ... }  // Forecast-specific
 private function buildOrderBook() { ... } // Forecast-specific
 private function calculateQualityScore() { ... } // Forecast-specific
+>>>>>>> .merge_file_WESlE8
 ```
 
 ---
@@ -167,8 +184,15 @@ enum Status: string implements HasLabel, HasColor {
 - [Indice AGENTS](./agents-split-index.md)
 - [code-style.md](./code-style.md) - Più dettagliato
 - [critical-rules.md](./critical-rules.md) - Regole critiche
+<<<<<<< .merge_file_hv598S
 - [AGENTS.md originale](../../AGENTS.md)
+=======
+<<<<<<< .merge_file_PkQG9p
+- [AGENTS.md originale](../../AGENTS.md)
+=======
+>>>>>>> .merge_file_lO4aeN
 - [agents.md originale](../../agents.md)
+>>>>>>> .merge_file_WESlE8
 - [Index principale](./index.md)
 
 ## Miglioramenti vs Originale

@@ -20,9 +20,12 @@ class MailTemplateForm extends XotBaseResourceForm
      */
     public static function getFormSchema(): array
     {
+<<<<<<< .merge_file_P6crDX
+=======
         /** @var view-string $paramsBadgesView */
         $paramsBadgesView = 'notify::filament.components.params-badges';
 
+>>>>>>> .merge_file_RIJaRM
         return [
             'mailable_slug_group' => Group::make()
                 ->schema([
@@ -61,12 +64,30 @@ class MailTemplateForm extends XotBaseResourceForm
             'html_template' => RichEditor::make('html_template')
                 ->required()
                 ->columnSpanFull(),
+<<<<<<< .merge_file_COewNb
             'params_display' => View::make('notify::filament.components.params-badges')
                 ->viewData(fn ($record): array => [
                     'params' => is_object($record) && isset($record->params) ? $record->params : [],
                 ])
                 ->columnSpanFull()
                 ->visible(fn ($record): bool => is_object($record) && isset($record->params) && ! empty($record->params)),
+=======
+<<<<<<< .merge_file_P6crDX
+            'params_display' => View::make('notify::filament.components.params-badges')
+                ->viewData(fn ($record): array => [
+                    'params' => is_object($record) && isset($record->params) ? $record->params : [],
+                ])
+                ->columnSpanFull()
+                ->visible(fn ($record): bool => is_object($record) && isset($record->params) && ! empty($record->params)),
+=======
+            'params_display' => View::make($paramsBadgesView)
+                ->viewData(static fn (mixed $record): array => [
+                    'params' => is_object($record) && isset($record->params) ? $record->params : [],
+                ])
+                ->columnSpanFull()
+                ->visible(static fn (mixed $record): bool => is_object($record) && isset($record->params) && ! empty($record->params)),
+>>>>>>> .merge_file_RIJaRM
+>>>>>>> .merge_file_inID2g
             'text_template' => Textarea::make('text_template')
                 ->maxLength(65535)
                 ->columnSpanFull(),

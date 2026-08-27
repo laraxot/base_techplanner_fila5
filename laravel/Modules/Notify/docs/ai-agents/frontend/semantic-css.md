@@ -27,8 +27,15 @@
 </div>
 
 <div class="outcomes-grid">
+<<<<<<< .merge_file_ZF1nFX
   <x-predict.outcome-card />
+=======
+<<<<<<< .merge_file_O1jS9w
+  <x-predict.outcome-card />
+=======
+>>>>>>> .merge_file_YTxPhD
   <x-forecast.outcome-card />
+>>>>>>> .merge_file_HOGu7i
 </div>
 ```
 
@@ -50,10 +57,18 @@
 
 ```blade
 {{-- ✅ CORRETTO: Semantic Blade --}}
+<<<<<<< .merge_file_ZF1nFX
 <x-predict.hero :title="$title" :tagline="$tagline" />
 <x-predict.outcomes-grid :outcomes="$outcomes" />
+=======
+<<<<<<< .merge_file_O1jS9w
+<x-predict.hero :title="$title" :tagline="$tagline" />
+<x-predict.outcomes-grid :outcomes="$outcomes" />
+=======
+>>>>>>> .merge_file_YTxPhD
 <x-forecast.hero :title="$title" :tagline="$tagline" />
 <x-forecast.outcomes-grid :outcomes="$outcomes" />
+>>>>>>> .merge_file_HOGu7i
 
 {{-- ❌ SBAGLIATO: Utility classes --}}
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -86,10 +101,18 @@ class OutcomesTableWidget extends XotBaseTableWidget
 
 ### For Module Developers
 
+<<<<<<< .merge_file_ZF1nFX
 - [Semantic CSS Principles](../../../../laravel/Modules/Predict/docs/SEMANTIC_CSS_PRINCIPLES.md) - Complete guide
 - [Blade Minimal Logic](../../../../laravel/Modules/Predict/docs/BLADE_MINIMAL_LOGIC_BEST_PRACTICES.md) - Blade patterns
+=======
+<<<<<<< .merge_file_O1jS9w
+- [Semantic CSS Principles](../../../../laravel/Modules/Predict/docs/SEMANTIC_CSS_PRINCIPLES.md) - Complete guide
+- [Blade Minimal Logic](../../../../laravel/Modules/Predict/docs/BLADE_MINIMAL_LOGIC_BEST_PRACTICES.md) - Blade patterns
+=======
+>>>>>>> .merge_file_YTxPhD
 - [Semantic CSS Principles](../../../../laravel/Modules/Forecast/docs/SEMANTIC_CSS_PRINCIPLES.md) - Complete guide
 - [Blade Minimal Logic](../../../../laravel/Modules/Forecast/docs/BLADE_MINIMAL_LOGIC_BEST_PRACTICES.md) - Blade patterns
+>>>>>>> .merge_file_HOGu7i
 
 ### For Theme Developers
 
@@ -98,8 +121,15 @@ class OutcomesTableWidget extends XotBaseTableWidget
 ### Rules & Enforcement
 
 - [Semantic CSS Rule](../../rules/frontend/semantic-css-rule.md) - **MANDATORY** rule
+<<<<<<< .merge_file_ZF1nFX
 - [Frontend Rules Index](../../rules/frontend/00-INDEX.md) - All frontend rules
+=======
+<<<<<<< .merge_file_O1jS9w
+- [Frontend Rules Index](../../rules/frontend/00-INDEX.md) - All frontend rules
+=======
+>>>>>>> .merge_file_YTxPhD
 - [Frontend Rules Index](../../rules/frontend/00-index.md) - All frontend rules
+>>>>>>> .merge_file_HOGu7i
 
 ---
 
@@ -151,8 +181,15 @@ class OutcomesTableWidget extends XotBaseTableWidget
 
 - [Rule 005: Filament Table for Lists](../../rules/filament/005-filament-table-for-lists.md)
 - [Container Blade Agnostic Rule](../../rules/frontend/container-blade/agnostic-rule.md)
+<<<<<<< .merge_file_ZF1nFX
 - [Component-First Architecture](../../../../laravel/Modules/Predict/docs/PHILOSOPHY_AND_VISION.md)
+=======
+<<<<<<< .merge_file_O1jS9w
+- [Component-First Architecture](../../../../laravel/Modules/Predict/docs/PHILOSOPHY_AND_VISION.md)
+=======
+>>>>>>> .merge_file_YTxPhD
 - [Component-First Architecture](../../../../laravel/Modules/Forecast/docs/PHILOSOPHY_AND_VISION.md)
+>>>>>>> .merge_file_HOGu7i
 
 ---
 

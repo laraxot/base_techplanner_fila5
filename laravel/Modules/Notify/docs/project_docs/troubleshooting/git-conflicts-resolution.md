@@ -1,5 +1,12 @@
+<<<<<<< .merge_file_l6pWcn
 # Risoluzione Conflitti Git - Progetto Base FixCity Fila3 Mono
+=======
+<<<<<<< .merge_file_pUxikm
+# Risoluzione Conflitti Git - Progetto Base FixCity Fila3 Mono
+=======
+>>>>>>> .merge_file_4vJYKI
 # Risoluzione Conflitti Git - Progetto Base Notify Fila3 Mono
+>>>>>>> .merge_file_Z8ZPK6
 
 ## Panoramica
 

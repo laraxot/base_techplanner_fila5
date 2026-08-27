@@ -3,6 +3,17 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Actions\WhatsApp;
+<<<<<<< .merge_file_ZHH90X
+use Modules\Notify\Tests\TestCase;
+use function Safe\file_get_contents;
+use Modules\Notify\Actions\WhatsApp\Send360dialogWhatsAppAction;
+use Modules\Notify\Datas\WhatsAppData;
+use PHPUnit\Framework\Assert;
+
+use function Safe\class_uses;
+
+uses(\Modules\Notify\Tests\TestCase::class);
+=======
 
 use Modules\Notify\Actions\WhatsApp\Send360dialogWhatsAppAction;
 use Modules\Notify\Datas\WhatsAppData;
@@ -13,6 +24,7 @@ use PHPUnit\Framework\Assert;
 use function Safe\class_uses;
 
 uses(TestCase::class)->group('no-notify-db');
+>>>>>>> .merge_file_9kfsOm
 
 describe('Send360dialogWhatsAppAction', function () {
     it('can be referenced via ReflectionClass without instantiation', function () {
@@ -33,7 +45,11 @@ describe('Send360dialogWhatsAppAction', function () {
         $method = $reflection->getMethod('execute');
         $params = $method->getParameters();
 
+<<<<<<< .merge_file_ZHH90X
+        \assertReflectionTypeName($params[0]->getType(), WhatsAppData::class);
+=======
         XotBasePest::assertReflectionTypeName($params[0]->getType(), WhatsAppData::class);
+>>>>>>> .merge_file_9kfsOm
     });
 
     it('execute returns array', function () {
@@ -41,12 +57,20 @@ describe('Send360dialogWhatsAppAction', function () {
         $method = $reflection->getMethod('execute');
         $returnType = $method->getReturnType();
 
+<<<<<<< .merge_file_ZHH90X
+        \assertReflectionTypeName($returnType, 'array');
+=======
         XotBasePest::assertReflectionTypeName($returnType, 'array');
+>>>>>>> .merge_file_9kfsOm
     });
 
     it('uses strict types', function () {
         $reflection = new \ReflectionClass(Send360dialogWhatsAppAction::class);
+<<<<<<< .merge_file_ZHH90X
+        $content = \notifyReflectionSource($reflection);
+=======
         $content = TestCase::notifyReflectionSource($reflection);
+>>>>>>> .merge_file_9kfsOm
         Assert::assertStringContainsString('declare(strict_types=1)', (string) $content);
     });
 
@@ -59,7 +83,11 @@ describe('Send360dialogWhatsAppAction', function () {
     it('has required imports', function () {
         $reflection = new \ReflectionClass(Send360dialogWhatsAppAction::class);
         $filename = $reflection->getFileName();
+<<<<<<< .merge_file_ZHH90X
+        $content = \notifyReflectionSource(new \ReflectionClass(Send360dialogWhatsAppAction::class));
+=======
         $content = TestCase::notifyReflectionSource(new \ReflectionClass(Send360dialogWhatsAppAction::class));
+>>>>>>> .merge_file_9kfsOm
 
         Assert::assertStringContainsString('declare(strict_types=1)', (string) $content);
     });

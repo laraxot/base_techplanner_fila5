@@ -65,6 +65,10 @@ _bmad
 .DS_Store?
 .Spotlight-V100
 .Trashes
+<<<<<<< .merge_file_1dpbuD
+=======
+<<<<<<< .merge_file_6YYhOj
+>>>>>>> .merge_file_I2GDGU
 ehthumbs.db
 Thumbs.db
 
@@ -85,12 +89,17 @@ Thumbs.db
 # DEVELOPMENT TOOLS
 # ==============================================
 .windsurf/
+<<<<<<< .merge_file_1dpbuD
+=======
+=======
+>>>>>>> .merge_file_I2GDGU
 ._*
 .agent*
 .agent*/
 .ai*
 .c*
 .claude*
+>>>>>>> .merge_file_gaPbr8
 .cursor/
 .env
 .env.*
@@ -188,6 +197,10 @@ yarn.lock
 phpmd*
 reports
 
+<<<<<<< .merge_file_1dpbuD
+=======
+<<<<<<< .merge_file_6YYhOj
+>>>>>>> .merge_file_I2GDGU
 # 🚫 File specifici del progetto
 *.fila2
 *.old
@@ -233,9 +246,14 @@ agentdb.rvf
 public_html/
 docs/archived/
 *.db
+<<<<<<< .merge_file_1dpbuD
+=======
+=======
+>>>>>>> .merge_file_I2GDGU
 # Cartelle di configurazione IDE: non stanno nella root di un modulo o di un tema.
 # Sono impostazioni personali di chi sviluppa, non contratto del modulo, e su un
 # repository condiviso fra basi diverse producono conflitti a ogni sync (XOT-5.38).
 .devcontainer/
 .vscode/
 reports/
+>>>>>>> .merge_file_gaPbr8

@@ -100,8 +100,15 @@ di eccellenza 2025 per la gestione delle segnalazioni urbane in Italia.
 ## 🏗️ STRUTTURA DOCUMENTAZIONE FINALE
 
 ```
+<<<<<<< .merge_file_jQt3cc
 base_fixcity_fila5_mono/
+=======
+<<<<<<< .merge_file_LXtL0V
+base_fixcity_fila5_mono/
+=======
+>>>>>>> .merge_file_Wt5Rew
 base_ptv_fila5_mono/
+>>>>>>> .merge_file_wtoAFa
 │
 ├── 📊 ROOT LEVEL (11 docs strategici)
 │   ├── DOCUMENTATION_INDEX.md          ✅ Indice generale
@@ -273,14 +280,28 @@ base_ptv_fila5_mono/
 ### Per Sviluppatori
 - **Quick Start**: [QUICK_START.md](./QUICK_START.md)
 - **Documentation Index**: [DOCUMENTATION_INDEX.md](./DOCUMENTATION_INDEX.md)
+<<<<<<< .merge_file_jQt3cc
 - **Slack**: #fixcity-dev
+=======
+<<<<<<< .merge_file_LXtL0V
+- **Slack**: #fixcity-dev
+=======
+>>>>>>> .merge_file_Wt5Rew
 - **Slack**: #ptv-dev
+>>>>>>> .merge_file_wtoAFa
 
 ### Per Utenti
 - **User Guide**: [USER_GUIDE.md](./laravel/Modules/Fixcity/docs/USER_GUIDE.md)
 - **Admin Guide**: [ADMIN_GUIDE.md](./laravel/Modules/Fixcity/docs/ADMIN_GUIDE.md)
+<<<<<<< .merge_file_jQt3cc
 - **Support**: support@fixcity.it
+=======
+<<<<<<< .merge_file_LXtL0V
+- **Support**: support@fixcity.it
+=======
+>>>>>>> .merge_file_Wt5Rew
 - **Support**: support@ptv.it
+>>>>>>> .merge_file_wtoAFa
 
 ### Per API Developers
 - **API Documentation**: [API.md](./laravel/Modules/Fixcity/docs/API.md)
@@ -382,12 +403,21 @@ php artisan test --coverage
 ## 📞 CONTATTI
 
 **Team FixCity**
+<<<<<<< .merge_file_jQt3cc
 - Email: dev@fixcity.it
 - Slack: #fixcity-dev
 - GitHub: github.com/laraxot/fixcity
+=======
+<<<<<<< .merge_file_LXtL0V
+- Email: dev@fixcity.it
+- Slack: #fixcity-dev
+- GitHub: github.com/laraxot/fixcity
+=======
+>>>>>>> .merge_file_Wt5Rew
 - Email: dev@ptv.it
 - Slack: #ptv-dev
 - GitHub: github.com/laraxot/ptv
+>>>>>>> .merge_file_wtoAFa
 
 ---
 

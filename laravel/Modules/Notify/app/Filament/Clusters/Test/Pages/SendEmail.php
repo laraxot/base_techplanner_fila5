@@ -83,7 +83,11 @@ class SendEmail extends XotBasePage
         ];
     }
 
+<<<<<<< .merge_file_llKcS9
     /** @return array<string, \Filament\Actions\Action> */
+=======
+    /** @return array<string, Action> */
+>>>>>>> .merge_file_5dsfrv
     protected function getEmailFormActions(): array
     {
         return [

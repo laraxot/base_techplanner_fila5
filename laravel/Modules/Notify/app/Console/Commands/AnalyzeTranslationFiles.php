@@ -85,6 +85,10 @@ class AnalyzeTranslationFiles extends Command
 
     /**
      * @param  array<string, mixed>  $array
+<<<<<<< .merge_file_HHCAqZ
+     *
+=======
+>>>>>>> .merge_file_RERrpq
      * @return array<string, mixed>
      */
     private function flattenArray(array $array, string $prefix = ''): array

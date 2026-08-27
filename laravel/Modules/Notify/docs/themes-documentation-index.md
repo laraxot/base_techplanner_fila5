@@ -247,8 +247,15 @@ Request: GET /it/tests/homepage
    @mount('tests.homepage')
    
 4. Middleware loads JSON:
+<<<<<<< .merge_file_BIc1oH
    config/local/fixcity/database/content/pages/homepage.json
+=======
+<<<<<<< .merge_file_XGX4Ad
+   config/local/fixcity/database/content/pages/homepage.json
+=======
+>>>>>>> .merge_file_FLMFlO
    config/local/ptv/database/content/pages/homepage.json
+>>>>>>> .merge_file_xtFX2u
 
 5. Data passed to view:
    @props('content' => $content)
@@ -402,16 +409,31 @@ Integrates with:
 
 **Via .env:**
 ```bash
+<<<<<<< .merge_file_BIc1oH
 APP_URL=http://fixcity.local
 # Theme detected from APP_URL → fixcity → Sixteen (or override via config)
+=======
+<<<<<<< .merge_file_XGX4Ad
+APP_URL=http://fixcity.local
+# Theme detected from APP_URL → fixcity → Sixteen (or override via config)
+=======
+>>>>>>> .merge_file_FLMFlO
 APP_URL=http://ptv.local
 # Theme detected from APP_URL → ptv → Sixteen (or override via config)
+>>>>>>> .merge_file_xtFX2u
 ```
 
 **Via Config:**
 ```php
+<<<<<<< .merge_file_BIc1oH
 // laravel/config/local/fixcity/xra.php
+=======
+<<<<<<< .merge_file_XGX4Ad
+// laravel/config/local/fixcity/xra.php
+=======
+>>>>>>> .merge_file_FLMFlO
 // laravel/config/local/ptv/xra.php
+>>>>>>> .merge_file_xtFX2u
 'pub_theme' => 'Sixteen',  // or 'TwentyOne'
 ```
 

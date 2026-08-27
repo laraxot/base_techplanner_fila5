@@ -1,7 +1,14 @@
 # QWEN Competitor Analysis
 
+<<<<<<< .merge_file_PbmMS8
 Analisi dei competitor di prediction market.
+=======
+<<<<<<< .merge_file_fqDZA0
+Analisi dei competitor di prediction market.
+=======
+>>>>>>> .merge_file_24eKt8
 Analisi dei competitor di forecast market.
+>>>>>>> .merge_file_BzUIDZ
 
 ---
 
@@ -34,8 +41,15 @@ Analisi dei competitor di forecast market.
 
 ---
 
+<<<<<<< .merge_file_PbmMS8
 ### PredictIt
+=======
+<<<<<<< .merge_file_fqDZA0
+### PredictIt
+=======
+>>>>>>> .merge_file_24eKt8
 ### ForecastIt
+>>>>>>> .merge_file_BzUIDZ
 
 | Feature | Presente |
 |---------|----------|
@@ -66,8 +80,15 @@ Analisi dei competitor di forecast market.
 |------------|----------------|
 | Polymarket | LMSR, order book |
 | Kalshi | Regulated, clean UX |
+<<<<<<< .merge_file_PbmMS8
 | PredictIt | Academic, simple |
+=======
+<<<<<<< .merge_file_fqDZA0
+| PredictIt | Academic, simple |
+=======
+>>>>>>> .merge_file_24eKt8
 | ForecastIt | Academic, simple |
+>>>>>>> .merge_file_BzUIDZ
 | FantaSanremo | Italian, gamification |
 | Prediki | European, mobile-first |
 | Metaculus | Forecasting, accuracy |

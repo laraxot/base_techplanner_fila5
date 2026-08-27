@@ -154,9 +154,17 @@ livewire(ListUsers::class)
 
 ## Cross-References
 
+<<<<<<< .merge_file_F5Cfww
 - ← [GEMINI Index](INDEX.md) — All Gemini guidelines
 - ← [Main AI Docs Index](../INDEX.md) — Master index
+=======
+<<<<<<< .merge_file_qRa1nH
+- ← [GEMINI Index](INDEX.md) — All Gemini guidelines
+- ← [Main AI Docs Index](../INDEX.md) — Master index
+=======
+>>>>>>> .merge_file_JdVD5D
 - ← [GEMINI Index](index.md) — All Gemini guidelines
 - ← [Main AI Docs Index](../index.md) — Master index
+>>>>>>> .merge_file_3uMdRm
 - ← [../../../../laravel/GEMINI.md](../../../../laravel/../../../../laravel/GEMINI.md) — Original source
 

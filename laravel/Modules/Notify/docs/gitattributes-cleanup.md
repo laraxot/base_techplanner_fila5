@@ -181,8 +181,15 @@ cp /path/to/backup/.gitattributes laravel/Modules/Blog/
 - [x] Remove all `.gitattributes` files
 - [x] Update root `.gitignore`
 - [x] Create module `.gitignore` files
+<<<<<<< .merge_file_ZXUL35
 - [x] Update AGENTS.md
+=======
+<<<<<<< .merge_file_VwMj0j
+- [x] Update AGENTS.md
+=======
+>>>>>>> .merge_file_JXR5RD
 - [x] Update agents.md
+>>>>>>> .merge_file_JgpwbL
 - [x] Document cleanup
 - [x] Verify with git check-ignore
 

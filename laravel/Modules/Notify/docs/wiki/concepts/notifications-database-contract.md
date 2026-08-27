@@ -15,8 +15,15 @@ qmd: notifications database notify owner xotbasemigration user forbidden
 |-------|--------|-----------|
 | **Schema owner** | **Notify** | unica `create_notifications_table` (`XotBaseMigration`) |
 | **Runtime Eloquent** | **User** | `Modules\User\Models\Notification` |
+<<<<<<< .merge_file_OHSiRz
 | **Connessione** | `user` | `fixcity_user` |
+=======
+<<<<<<< .merge_file_5OuyBL
+| **Connessione** | `user` | `fixcity_user` |
+=======
+>>>>>>> .merge_file_wM57dI
 | **Connessione** | `user` | `app_user` |
+>>>>>>> .merge_file_oyce6j
 
 Notify **persiste** il canale DB; User **è** il notifiable. La migrazione **non** va in User.
 

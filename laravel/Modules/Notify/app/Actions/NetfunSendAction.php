@@ -17,7 +17,11 @@ class NetfunSendAction
 
     public string $token;
 
+<<<<<<< .merge_file_OzPGiL
+    /** @var array<string, mixed> */
+=======
     /** @var array{status_code?: int, status_txt?: string} */
+>>>>>>> .merge_file_v9qXc9
     public array $vars = [];
 
     /**
@@ -38,7 +42,11 @@ class NetfunSendAction
     /**
      * Execute the action.
      *
+<<<<<<< .merge_file_OzPGiL
+     * @return array<string, mixed>
+=======
      * @return array{status_code: int, status_txt: string}
+>>>>>>> .merge_file_v9qXc9
      */
     public function execute(SmsData $smsData): array
     {

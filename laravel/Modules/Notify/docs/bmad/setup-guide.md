@@ -1,8 +1,16 @@
+<<<<<<< .merge_file_3NnXMJ
 # bmad method: setup e configurazione (fixcity)
 
 ## scopo
 
 Rendere ripetibile e verificabile l’uso del **BMAD Method** nel progetto FixCity: installazione, struttura, configurazioni lingua/output, e punti di controllo minimi (“funziona / non funziona”).
+=======
+# bmad method: setup e configurazione (laraxot)
+
+## scopo
+
+Rendere ripetibile e verificabile l’uso del **BMAD Method** nel progetto Notify: installazione, struttura, configurazioni lingua/output, e punti di controllo minimi (“funziona / non funziona”).
+>>>>>>> .merge_file_ej4ALl
 
 ## cosa è “bmad” qui (business logic)
 

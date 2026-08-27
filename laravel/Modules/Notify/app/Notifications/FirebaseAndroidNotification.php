@@ -32,7 +32,10 @@ class FirebaseAndroidNotification extends Notification implements MobilePushNoti
      * Create a new notification instance.
      *
      * @param  FirebaseNotificationData  $data  The Firebase notification data (I dati della notifica Firebase)
+<<<<<<< .merge_file_rzAjXr
      *
+=======
+>>>>>>> .merge_file_w7FKRf
      * @return void
      */
     public function __construct(

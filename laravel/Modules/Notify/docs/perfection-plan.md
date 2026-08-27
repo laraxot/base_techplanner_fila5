@@ -4,8 +4,15 @@ type: concept
 tags: [perfection, plan]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< .merge_file_qH7KpT
 qmd: "perfection-plan 🎯 fixcity - perfection plan"
+=======
+<<<<<<< .merge_file_Lmz9kw
+qmd: "perfection-plan 🎯 fixcity - perfection plan"
+=======
+>>>>>>> .merge_file_3ZOcb5
 qmd: "perfection-plan 🎯 ptv - perfection plan"
+>>>>>>> .merge_file_cGMoIT
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:

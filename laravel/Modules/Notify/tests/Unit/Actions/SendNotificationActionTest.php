@@ -15,10 +15,19 @@ use Modules\Notify\Database\Factories\NotificationTemplateFactory;
 use Modules\Notify\Models\NotificationTemplate;
 use Modules\Notify\Notifications\GenericNotification;
 use Modules\Notify\Tests\TestCase;
+<<<<<<< .merge_file_P98A1d
+=======
+use PHPUnit\Framework\Assert;
+<<<<<<< .merge_file_T8Q9k7
+
+uses(TestCase::class);
+=======
+>>>>>>> .merge_file_rQk5ob
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class)->group('notify-db');
+>>>>>>> .merge_file_x8X4gX
 
 /**
  * @param  array<string, mixed>  $attributes
@@ -41,16 +50,24 @@ function makeDummySendNotificationRecipient(array $attributes = []): Model
 
         public function routeNotificationForMail(): string
         {
+<<<<<<< .merge_file_T8Q9k7
+            return (string) $this->getAttribute('email');
+=======
             $email = $this->getAttribute('email');
 
             return is_string($email) ? $email : '';
+>>>>>>> .merge_file_x8X4gX
         }
 
         public function routeNotificationForSms(): string
         {
+<<<<<<< .merge_file_T8Q9k7
+            return (string) $this->getAttribute('phone');
+=======
             $phone = $this->getAttribute('phone');
 
             return is_string($phone) ? $phone : '';
+>>>>>>> .merge_file_x8X4gX
         }
     };
 }
@@ -88,7 +105,11 @@ test('send notification action throws when template is missing', function (): vo
     /** @var TestCase $this */
     $recipient = makeDummySendNotificationRecipient(['email' => 'user@example.test']);
 
+<<<<<<< .merge_file_T8Q9k7
+    \assertNotifyThrows(
+=======
     XotBasePest::assertThrows(
+>>>>>>> .merge_file_x8X4gX
         fn () => app(SendNotificationAction::class)->handle($recipient, 'missing-template'),
         \Exception::class,
     );

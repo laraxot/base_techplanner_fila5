@@ -34,8 +34,15 @@ Le Commands progettuali vivono qui, nel wiki del Module **Notify**, e vengono ca
 
 - La sorgente di verita' per le Commands e' sempre il wiki locale
 - Non embeddare Commands nei prompt di avvio
+<<<<<<< .merge_file_NnxjZJ
 - Per Commands globali, consulta il [wiki root](../../docs/wiki/commands/INDEX.md)
+=======
+<<<<<<< .merge_file_z23rXW
+- Per Commands globali, consulta il [wiki root](../../docs/wiki/commands/INDEX.md)
+=======
+>>>>>>> .merge_file_XuuL8n
 - Per Commands globali, consulta il [wiki root](../../docs/wiki/commands/index.md)
+>>>>>>> .merge_file_FeqNAP
 
 ## Aggiungere una Nuova COMMANDS
 

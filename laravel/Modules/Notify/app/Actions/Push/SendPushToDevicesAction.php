@@ -18,12 +18,18 @@ class SendPushToDevicesAction
     use QueueableAction;
 
     /**
+<<<<<<< .merge_file_LgPqjC
+     * @param  list<string>  $tokens
+     * @param  array<string, mixed>  $data
+     * @return array<string, array<string, mixed>>
+=======
      * Chiave = piattaforma rilevata dal token; valore = esito del batch, sia sul ramo
      * riuscito sia su quello di eccezione.
      *
      * @param  list<string>  $tokens
      * @param  array<string, mixed>  $data
      * @return array<string, array{success: bool, sent: int, failed: int, ...}>
+>>>>>>> .merge_file_LWJhti
      */
     public function execute(array $tokens, PushNotificationData $notification, array $data = []): array
     {
@@ -57,7 +63,11 @@ class SendPushToDevicesAction
     /**
      * @param  list<string>  $tokens
      * @param  array<string, mixed>  $data
+<<<<<<< .merge_file_LgPqjC
+     * @return array<string, mixed>
+=======
      * @return array{success: bool, sent: int, failed: int, total: int, results: list<array{success: bool, ...}>}
+>>>>>>> .merge_file_LWJhti
      */
     private function sendBatchToPlatform(string $platform, array $tokens, PushNotificationData $notification, array $data): array
     {

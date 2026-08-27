@@ -29,8 +29,15 @@ related:
 
 ## 🎯 Rule #1: Filament Tables for Lists
 
+<<<<<<< .merge_file_lRaBJH
 > **MAI** creare blade personalizzati per liste di outcomes, predict, o dati tabellari.
+=======
+<<<<<<< .merge_file_MTTV7L
+> **MAI** creare blade personalizzati per liste di outcomes, predict, o dati tabellari.
+=======
+>>>>>>> .merge_file_u4TDAu
 > **MAI** creare blade personalizzati per liste di outcomes, forecast, o dati tabellari.
+>>>>>>> .merge_file_m3bmRE
 > **SEMPRE** usare Filament Table Widget che ha già:
 > - ✅ Search (debounce 400ms)
 > - ✅ Sorting (multi-column)
@@ -46,8 +53,15 @@ related:
 
 ```php
 // ✅ CORRETTO - Filament Table Widget
+<<<<<<< .merge_file_lRaBJH
 class PredictTableWidget extends TableWidget
+=======
+<<<<<<< .merge_file_MTTV7L
+class PredictTableWidget extends TableWidget
+=======
+>>>>>>> .merge_file_u4TDAu
 class ForecastTableWidget extends TableWidget
+>>>>>>> .merge_file_m3bmRE
 {
     public function table(Table $table): Table
     {
@@ -113,16 +127,30 @@ if ($isBinary) {
 ## 🎯 Rule #3: Container Agnostic
 
 > **MAI** logica specifica nel container blade
+<<<<<<< .merge_file_lRaBJH
 > Container deve essere **agnostico** (predicts, articles, events, etc.)
+=======
+<<<<<<< .merge_file_MTTV7L
+> Container deve essere **agnostico** (predicts, articles, events, etc.)
+=======
+>>>>>>> .merge_file_u4TDAu
 > Container deve essere **agnostico** (forecasts, articles, events, etc.)
+>>>>>>> .merge_file_m3bmRE
 
 ### ✅ CORRECT - Agnostic Container
 
 ```blade
 {{-- ✅ CORRETTO - Container agnostico --}}
 <div>
+<<<<<<< .merge_file_lRaBJH
     @livewire('view-predict-widget', ['predict' => $predict])
+=======
+<<<<<<< .merge_file_MTTV7L
+    @livewire('view-predict-widget', ['predict' => $predict])
+=======
+>>>>>>> .merge_file_u4TDAu
     @livewire('view-forecast-widget', ['forecast' => $forecast])
+>>>>>>> .merge_file_m3bmRE
 </div>
 ```
 
@@ -130,8 +158,15 @@ if ($isBinary) {
 
 ```blade
 {{-- ❌ SBAGLIATO - Logica specifica nel container --}}
+<<<<<<< .merge_file_lRaBJH
 @if($container0 === 'predicts')
+=======
+<<<<<<< .merge_file_MTTV7L
+@if($container0 === 'predicts')
+=======
+>>>>>>> .merge_file_u4TDAu
 @if($container0 === 'forecasts')
+>>>>>>> .merge_file_m3bmRE
     {{-- domain logic --}}
 @endif
 ```
@@ -149,8 +184,15 @@ if ($isBinary) {
 // ✅ CORRETTO - Action class
 class BuildOutcomesAction extends Action
 {
+<<<<<<< .merge_file_lRaBJH
     public function execute(Predict $predict): array
+=======
+<<<<<<< .merge_file_MTTV7L
+    public function execute(Predict $predict): array
+=======
+>>>>>>> .merge_file_u4TDAu
     public function execute(Forecast $forecast): array
+>>>>>>> .merge_file_m3bmRE
     {
         // Business logic here
     }
@@ -230,6 +272,8 @@ composer phpstan
 **Review Cycle**: Per-release  
 **Next Review**: 2026-04-02  
 **Enforcement**: 🔴 CRITICAL rules are BLOCKERS
+<<<<<<< .merge_file_MTTV7L
+=======
 
 ---
 
@@ -441,3 +485,4 @@ composer phpstan
 **Review Cycle**: Per-release  
 **Next Review**: 2026-04-02  
 **Enforcement**: 🔴 CRITICAL rules are BLOCKERS
+>>>>>>> .merge_file_m3bmRE

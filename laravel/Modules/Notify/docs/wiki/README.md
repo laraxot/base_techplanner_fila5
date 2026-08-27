@@ -1,13 +1,27 @@
 ---
+<<<<<<< .merge_file_LUR2MI
 title: "FixCity LLM Wiki"
+=======
+<<<<<<< .merge_file_KGd6yu
+title: "FixCity LLM Wiki"
+=======
+>>>>>>> .merge_file_I9dnt0
 title: "Notify LLM Wiki"
+>>>>>>> .merge_file_7a8Oq0
 type: index
 tags: [notify, docs, wiki]
 module: Notify
 created: 2026-07-20
 updated: 2026-07-20
+<<<<<<< .merge_file_LUR2MI
 qmd: "notify documentazione wiki readme fixcity llm wiki index readme frontmatter qmd search"
+=======
+<<<<<<< .merge_file_KGd6yu
+qmd: "notify documentazione wiki readme fixcity llm wiki index readme frontmatter qmd search"
+=======
+>>>>>>> .merge_file_I9dnt0
 qmd: "notify documentazione wiki readme laraxot llm wiki index readme frontmatter qmd search"
+>>>>>>> .merge_file_7a8Oq0
 issues:
   - "https://github.com/laraxot/module_notify_fila5/issues/56"
 discussions:
@@ -19,8 +33,15 @@ related:
   - ../integrations/readme.md
   - ../templates/readme.md
 ---
+<<<<<<< .merge_file_LUR2MI
 # FixCity LLM Wiki
+=======
+<<<<<<< .merge_file_KGd6yu
+# FixCity LLM Wiki
+=======
+>>>>>>> .merge_file_I9dnt0
 # Notify LLM Wiki
+>>>>>>> .merge_file_7a8Oq0
 
 This directory is the canonical compiled wiki layer for the Karpathy-style workflow in this repository.
 

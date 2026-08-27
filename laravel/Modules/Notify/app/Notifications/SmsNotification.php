@@ -57,7 +57,15 @@ class SmsNotification extends Notification implements ShouldQueue
     /**
      * Get the notification's delivery channels.
      *
+<<<<<<< .merge_file_yPDe3C
      * @param  mixed  $notifiable  The entity to be notified (l'entità da notificare)
+=======
+<<<<<<< .merge_file_3djKeq
+     * @param  mixed  $notifiable  The entity to be notified (l'entità da notificare)
+     *
+=======
+>>>>>>> .merge_file_vRDxp7
+>>>>>>> .merge_file_Eo1ZiP
      * @return array<int, string>
      */
     public function via(mixed $notifiable): array

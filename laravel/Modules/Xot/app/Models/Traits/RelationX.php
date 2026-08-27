@@ -17,7 +17,14 @@ use Webmozart\Assert\Assert;
 trait RelationX
 {
     /**
+<<<<<<< .merge_file_MIHQMy
+     * @template TRelatedModel of Model
+     *
+     * @param  class-string<TRelatedModel>  $related  Related model class
+     * @param  string|null  $_table  Pivot table name
+=======
      * @param  class-string<Model>|string|null  $_table  Pivot table name
+>>>>>>> .merge_file_hCDw9C
      * @param  string|null  $foreignPivotKey  Foreign pivot key
      * @param  string|null  $relatedPivotKey  Related pivot key
      * @param  string|null  $parentKey  Parent key
@@ -33,7 +40,10 @@ trait RelationX
         ?string $relatedKey = null,
         ?string $relation = null,
     ): BelongsToMany {
+<<<<<<< .merge_file_MIHQMy
+=======
 
+>>>>>>> .merge_file_hCDw9C
         Assert::isInstanceOf(
             $related_model = app($related),
             Model::class,
@@ -46,16 +56,14 @@ trait RelationX
         $pivotDbName = $pivot->getConnection()->getDatabaseName();
         $dbName = $this->getConnection()->getDatabaseName();
         $relatedDbName = $related_model->getConnection()->getDatabaseName();
-        // if ($pivotDbName !== $dbName) {
         if ($pivotDbName !== $dbName || $relatedDbName !== $dbName) {
             $pivotDriver = $pivot->getConnection()->getDriverName();
             // Only add database prefix for non-SQLite drivers
             // SQLite doesn't support database.table syntax
-            if ($pivotDriver !== 'sqlite') {
+            if ('sqlite' !== $pivotDriver) {
                 $table = $pivotDbName.'.'.$table;
             }
         }
-        // }
 
         /** @var BelongsToMany<TRelatedModel, $this, Pivot, 'pivot'> $relationInstance */
         $relationInstance = $this->belongsToMany(
@@ -77,10 +85,10 @@ trait RelationX
     /**
      * Define a polymorphic many-to-many relationship.
      *
-     * @template TRelatedModel of \Illuminate\Database\Eloquent\Model
+     * @template TRelatedModel of Model
      *
      * @param  class-string<TRelatedModel>  $related
-     * @return MorphToMany<TRelatedModel, $this>
+     * @return MorphToMany<TRelatedModel, $this, MorphPivot, 'pivot'>
      */
     public function morphToManyX(
         string $related,
@@ -93,16 +101,9 @@ trait RelationX
         ?string $relation = null,
         bool $inverse = false,
     ): MorphToMany {
-        /** @var class-string<TRelatedModel> $related */
-        Assert::subclassOf($related, Model::class);
         $pivot = $this->guessMorphPivot($related);
         $table = $pivot->getTable();
         $pivotFields = $pivot->getFillable();
-
-        // $relatedDbName = $related_model->getConnection()->getDatabaseName();
-        if ($table === null) {
-            $table = $pivot->getTable();
-        }
 
         /** @var MorphToMany<TRelatedModel, $this, MorphPivot, 'pivot'> $relationInstance */
         $relationInstance = $this->morphToMany(
@@ -120,5 +121,115 @@ trait RelationX
             ->withPivot($pivotFields)
             ->withTimestamps();
 
+<<<<<<< .merge_file_MIHQMy
+        return $relationInstance;
+    }
+
+    /**
+     * @param  class-string<Model>  $related
+     */
+    public function guessMorphPivot(string $related, ?string $_class = null): MorphPivot
+    {
+        $class = $this::class;
+        $pivot_name = class_basename($related).'Morph';
+
+        $pivot_class = $this->guessPivotFullClass($pivot_name, $related, $class);
+        $pivot = app($pivot_class);
+        Assert::isInstanceOf($pivot, MorphPivot::class);
+
+        return $pivot;
+    }
+
+    /**
+     * Guess the pivot class for a many-to-many relationship.
+     *
+     * @param  class-string<Model>  $related  The related model class name
+     * @param  class-string|null  $class  The class to use for parent class lookup (used internally)
+     */
+    public function guessPivot(string $related, ?string $class = null): Pivot
+    {
+        $class ??= $this::class;
+        $model_names = [
+            class_basename($class),
+            class_basename($related),
+        ];
+        sort($model_names);
+        $pivot_name = implode('', $model_names);
+
+        $pivot_class = $this->guessPivotFullClass($pivot_name, $related, $class);
+
+        $pivot = app($pivot_class);
+        Assert::isInstanceOf($pivot, Pivot::class);
+
+        return $pivot;
+    }
+
+    /**
+     * @param  class-string<Model>  $related
+     * @param  class-string|null  $class
+     * @return class-string
+     */
+    public function guessPivotFullClass(string $pivot_name, string $related, ?string $class = null): string
+    {
+        $class ??= $this::class;
+
+        // Try class-based pivot first
+        $pivot_class = $this->buildPivotClassName($class, $pivot_name);
+        if (class_exists($pivot_class)) {
+            return $pivot_class;
+        }
+
+        // Try related model-based pivot
+        $pivot_class = $this->buildPivotClassName($related, $pivot_name);
+        if (class_exists($pivot_class)) {
+            return $pivot_class;
+        }
+
+        // Try parent class if available
+        return $this->tryParentClassPivot($pivot_name, $related, $class);
+    }
+
+    /**
+     * @param  class-string  $context
+     * @return class-string
+     */
+    private function buildPivotClassName(string $context, string $pivotName): string
+    {
+        /** @var class-string */
+        return Str::of($context)
+            ->beforeLast('\\')
+            ->append('\\'.$pivotName)
+            ->toString();
+    }
+
+    /**
+     * @param  class-string<Model>  $related
+     * @param  class-string  $class
+     * @return class-string
+     */
+    private function tryParentClassPivot(string $pivot_name, string $related, string $class): string
+    {
+        $parent_class = get_parent_class($class);
+        if (false === $parent_class) {
+            return $this->buildPivotClassName($class, $pivot_name);
+        }
+
+        // If parent class ends with 'Morph', use it directly
+        if (Str::endsWith($parent_class, 'Morph')) {
+            return $this->buildPivotClassName($class, $pivot_name);
+        }
+
+        // Otherwise, use parent class to build new pivot name
+        $model_names = [
+            class_basename($parent_class),
+            class_basename($related),
+        ];
+        sort($model_names);
+        $new_pivot_name = implode('', $model_names);
+
+        /** @var class-string $parent_class */
+        return $this->guessPivotFullClass($new_pivot_name, $related, $parent_class);
+=======
+>>>>>>> .merge_file_hCDw9C
     }
 }

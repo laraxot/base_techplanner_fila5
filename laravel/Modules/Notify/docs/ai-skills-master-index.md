@@ -285,8 +285,15 @@ Skills activate automatically when the agent detects relevant tasks:
 ### Directory Structure
 
 ```
+<<<<<<< .merge_file_ZqikGW
 /var/www/_bases/base_fixcity_fila5/
+=======
+<<<<<<< .merge_file_kAsBGr
+/var/www/_bases/base_fixcity_fila5/
+=======
+>>>>>>> .merge_file_79cNdl
 /var/www/_bases/base_ptv_fila5/
+>>>>>>> .merge_file_cRBiCA
 ├── skills/
 │   ├── ui-ux-pro-max/
 │   │   └── SKILL.md
@@ -358,8 +365,15 @@ Context: "Make it beautiful"
 ### Install UI/UX Pro Max
 
 ```bash
+<<<<<<< .merge_file_ZqikGW
 cd /var/www/_bases/base_fixcity_fila5
+=======
+<<<<<<< .merge_file_kAsBGr
+cd /var/www/_bases/base_fixcity_fila5
+=======
+>>>>>>> .merge_file_79cNdl
 cd /var/www/_bases/base_ptv_fila5
+>>>>>>> .merge_file_cRBiCA
 mkdir -p skills/ui-ux-pro-max
 # SKILL.md already exists in skills/ui-ux-pro-max/
 ```
@@ -367,8 +381,15 @@ mkdir -p skills/ui-ux-pro-max
 ### Install Taste Skill
 
 ```bash
+<<<<<<< .merge_file_ZqikGW
 cd /var/www/_bases/base_fixcity_fila5
+=======
+<<<<<<< .merge_file_kAsBGr
+cd /var/www/_bases/base_fixcity_fila5
+=======
+>>>>>>> .merge_file_79cNdl
 cd /var/www/_bases/base_ptv_fila5
+>>>>>>> .merge_file_cRBiCA
 mkdir -p skills/taste
 # SKILL.md already exists in skills/taste/
 ```
@@ -376,8 +397,15 @@ mkdir -p skills/taste
 ### Install Anthropic Skills
 
 ```bash
+<<<<<<< .merge_file_ZqikGW
 cd /var/www/_bases/base_fixcity_fila5
+=======
+<<<<<<< .merge_file_kAsBGr
+cd /var/www/_bases/base_fixcity_fila5
+=======
+>>>>>>> .merge_file_79cNdl
 cd /var/www/_bases/base_ptv_fila5
+>>>>>>> .merge_file_cRBiCA
 mkdir -p skills/anthropic
 # SKILL.md already exists in skills/anthropic/
 ```
@@ -385,8 +413,15 @@ mkdir -p skills/anthropic
 ### Install Vercel Agent Skills (Optional)
 
 ```bash
+<<<<<<< .merge_file_ZqikGW
 cd /var/www/_bases/base_fixcity_fila5
+=======
+<<<<<<< .merge_file_kAsBGr
+cd /var/www/_bases/base_fixcity_fila5
+=======
+>>>>>>> .merge_file_79cNdl
 cd /var/www/_bases/base_ptv_fila5
+>>>>>>> .merge_file_cRBiCA
 npx skills add vercel-labs/agent-skills
 ```
 

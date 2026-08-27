@@ -183,6 +183,8 @@ Per contribuire alla documentazione, seguire le [Linee Guida](../../../../../doc
 
 ## Collegamenti Completi
 Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../../../docs/readme_links.md). 
+<<<<<<< .merge_file_cG2C5w
+=======
 
 ---
 
@@ -208,3 +210,4 @@ related:
   - "./netfun-sms-implementation.md"
 ---
 
+>>>>>>> .merge_file_QS9Vy6

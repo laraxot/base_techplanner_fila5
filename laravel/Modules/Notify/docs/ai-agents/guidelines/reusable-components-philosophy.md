@@ -40,26 +40,42 @@
 
 ```blade
 {{-- ✅ CORRETTO: Un componente = una responsabilità —}}
+<<<<<<< .merge_file_8t9TKz
+=======
+<<<<<<< .merge_file_3qxXUB
+>>>>>>> .merge_file_sAx7KO
 <x-predict-view.outcomes-grid :outcomes="$outcomes" />
 <x-predict-view.stats-bar :stats="$stats" />
 <x-predict-view.order-book :orderBook="$orderBook" />
 
 {{-- ❌ SBAGLIATO: Componente "god" che fa tutto —}}
 <x-predict-view.everything :data="$everything" />
+<<<<<<< .merge_file_8t9TKz
+=======
+=======
+>>>>>>> .merge_file_sAx7KO
 <x-forecast-view.outcomes-grid :outcomes="$outcomes" />
 <x-forecast-view.stats-bar :stats="$stats" />
 <x-forecast-view.order-book :orderBook="$orderBook" />
 
 {{-- ❌ SBAGLIATO: Componente "god" che fa tutto —}}
 <x-forecast-view.everything :data="$everything" />
+>>>>>>> .merge_file_DTjMnV
 ```
 
 ### Principle 2: Composability
 
 ```blade
 {{-- Componenti piccoli si combinano —}}
+<<<<<<< .merge_file_8t9TKz
 @livewire('view-predict-widget')
+=======
+<<<<<<< .merge_file_3qxXUB
+@livewire('view-predict-widget')
+=======
+>>>>>>> .merge_file_sAx7KO
 @livewire('view-forecast-widget')
+>>>>>>> .merge_file_DTjMnV
     ├── header.blade.php
     ├── stats-bar.blade.php
     ├── outcomes-grid.blade.php
@@ -99,9 +115,15 @@ if ($isBinary) {
 ```blade
 {{-- ✅ CORRETTO: Logica nelle Action classes —}}
 @php
+<<<<<<< .merge_file_3qxXUB
+    $orderBook = BuildOrderBookAction::make()->execute($predict);
+@endphp
+<x-predict-view.order-book :orderBook="$orderBook" />
+=======
     $orderBook = BuildOrderBookAction::make()->execute($forecast);
 @endphp
 <x-forecast-view.order-book :orderBook="$orderBook" />
+>>>>>>> .merge_file_DTjMnV
 
 {{-- ❌ SBAGLIATO: Logica complessa nel blade —}}
 @php
@@ -141,8 +163,15 @@ if ($isBinary) {
 
 | Component | File | Reusability |
 |-----------|------|-------------|
+<<<<<<< .merge_file_8t9TKz
 | Header | `header.blade.php` | All predict pages |
+=======
+<<<<<<< .merge_file_3qxXUB
+| Header | `header.blade.php` | All predict pages |
+=======
+>>>>>>> .merge_file_sAx7KO
 | Header | `header.blade.php` | All forecast pages |
+>>>>>>> .merge_file_DTjMnV
 | Sidebar | `sidebar-enhanced.blade.php` | All detail pages |
 | Tabs | `tabs.blade.php` | All content types |
 
@@ -156,14 +185,28 @@ if ($isBinary) {
      * Component Name - Description
      * 
      * @var array $data Input data
+<<<<<<< .merge_file_8t9TKz
      * @var \Modules\Predict\Models\Predict $predict Model
+=======
+<<<<<<< .merge_file_3qxXUB
+     * @var \Modules\Predict\Models\Predict $predict Model
+=======
+>>>>>>> .merge_file_sAx7KO
      * @var \Modules\Forecast\Models\Forecast $forecast Model
+>>>>>>> .merge_file_DTjMnV
      */
     
     // Initialize with defaults
     $data = $data ?? [];
+<<<<<<< .merge_file_8t9TKz
     $predict = $predict ?? null;
+=======
+<<<<<<< .merge_file_3qxXUB
+    $predict = $predict ?? null;
+=======
+>>>>>>> .merge_file_sAx7KO
     $forecast = $forecast ?? null;
+>>>>>>> .merge_file_DTjMnV
     
     // Helper function for translations
     $tx = static function (string $key, string $fallback): string {
@@ -175,8 +218,15 @@ if ($isBinary) {
 <div class="component-root">
     {{-- Header --}}
     <div class="header">
+<<<<<<< .merge_file_8t9TKz
         <h3>{{ $tx('predict::titles.component', 'Title') }}</h3>
+=======
+<<<<<<< .merge_file_3qxXUB
+        <h3>{{ $tx('predict::titles.component', 'Title') }}</h3>
+=======
+>>>>>>> .merge_file_sAx7KO
         <h3>{{ $tx('forecast::titles.component', 'Title') }}</h3>
+>>>>>>> .merge_file_DTjMnV
     </div>
     
     {{-- Content --}}
@@ -203,10 +253,18 @@ if ($isBinary) {
 
 ```blade
 {{-- Load heavy components last —}}
+<<<<<<< .merge_file_8t9TKz
 <x-predict-view.outcomes-grid :outcomes="$outcomes" />
 <x-predict-view.order-book :orderBook="$orderBook" />
+=======
+<<<<<<< .merge_file_3qxXUB
+<x-predict-view.outcomes-grid :outcomes="$outcomes" />
+<x-predict-view.order-book :orderBook="$orderBook" />
+=======
+>>>>>>> .merge_file_sAx7KO
 <x-forecast-view.outcomes-grid :outcomes="$outcomes" />
 <x-forecast-view.order-book :orderBook="$orderBook" />
+>>>>>>> .merge_file_DTjMnV
 @livewire('comments-widget') {{-- Lazy via Livewire —}}
 ```
 
@@ -214,16 +272,25 @@ if ($isBinary) {
 
 ```php
 // ✅ CORRETTO: Single query with eager loading
+<<<<<<< .merge_file_8t9TKz
+=======
+<<<<<<< .merge_file_3qxXUB
+>>>>>>> .merge_file_sAx7KO
 $predict = Predict::with(['ratings', 'transactions'])->find($id);
 
 // ❌ SBAGLIATO: N+1 queries
 $predict = Predict::find($id);
 foreach ($predict->ratings as $rating) {
+<<<<<<< .merge_file_8t9TKz
+=======
+=======
+>>>>>>> .merge_file_sAx7KO
 $forecast = Forecast::with(['ratings', 'transactions'])->find($id);
 
 // ❌ SBAGLIATO: N+1 queries
 $forecast = Forecast::find($id);
 foreach ($forecast->ratings as $rating) {
+>>>>>>> .merge_file_DTjMnV
     $rating->transactions; // Query per outcome!
 }
 ```
@@ -234,9 +301,15 @@ foreach ($forecast->ratings as $rating) {
 @php
     // Cache order book calculation
     $orderBook = Cache::remember(
+<<<<<<< .merge_file_3qxXUB
+        "order_book_{$predict->id}",
+        300, // 5 minutes
+        fn() => BuildOrderBookAction::make()->execute($predict)
+=======
         "order_book_{$forecast->id}",
         300, // 5 minutes
         fn() => BuildOrderBookAction::make()->execute($forecast)
+>>>>>>> .merge_file_DTjMnV
     );
 @endphp
 ```
@@ -254,8 +327,15 @@ it('renders outcomes grid with 6 outcomes', function () {
         // ... 5 more
     ];
     
+<<<<<<< .merge_file_8t9TKz
     $html = Blade::render('<x-predict-view.outcomes-grid :outcomes="$outcomes" />', [
+=======
+<<<<<<< .merge_file_3qxXUB
+    $html = Blade::render('<x-predict-view.outcomes-grid :outcomes="$outcomes" />', [
+=======
+>>>>>>> .merge_file_sAx7KO
     $html = Blade::render('<x-forecast-view.outcomes-grid :outcomes="$outcomes" />', [
+>>>>>>> .merge_file_DTjMnV
         'outcomes' => $outcomes
     ]);
     
@@ -267,14 +347,23 @@ it('renders outcomes grid with 6 outcomes', function () {
 ### Integration Tests
 
 ```php
+<<<<<<< .merge_file_8t9TKz
+=======
+<<<<<<< .merge_file_3qxXUB
+>>>>>>> .merge_file_sAx7KO
 it('displays F1 predict detail page', function () {
     $predict = Predict::factory()->create(['slug' => 'f1-world-champion-2026']);
     
     $response = $this->get('/it/predicts/f1-world-champion-2026');
+<<<<<<< .merge_file_8t9TKz
+=======
+=======
+>>>>>>> .merge_file_sAx7KO
 it('displays F1 forecast detail page', function () {
     $forecast = Forecast::factory()->create(['slug' => 'f1-world-champion-2026']);
     
     $response = $this->get('/it/forecasts/f1-world-champion-2026');
+>>>>>>> .merge_file_DTjMnV
     
     $response->assertStatus(200)
         ->assertSee('Verstappen')
@@ -287,6 +376,10 @@ it('displays F1 forecast detail page', function () {
 ## 🔗 Related Documentation
 
 ### Module Docs
+<<<<<<< .merge_file_8t9TKz
+=======
+<<<<<<< .merge_file_3qxXUB
+>>>>>>> .merge_file_sAx7KO
 - **[Components Index](laravel/Modules/Predict/resources/views/components/predict-view/00-INDEX.md)** - All components
 - **[Reusable Architecture](laravel/Modules/Predict/docs/components/reusable-architecture.md)** - Design principles
 - **[Multi-Outcome Fundamental](laravel/Modules/Predict/docs/MULTI-OUTCOME-FUNDAMENTAL.md)** - Core principle
@@ -299,6 +392,10 @@ it('displays F1 forecast detail page', function () {
 - **[Rules Index](.agents/docs/rules/00-INDEX.md)** - Filament Tables rule
 - **[Skills Index](.agents/docs/skills/00-INDEX.md)** - Component skills
 - **[Guidelines Index](.agents/docs/guidelines/00-INDEX.md)** - Best practices
+<<<<<<< .merge_file_8t9TKz
+=======
+=======
+>>>>>>> .merge_file_sAx7KO
 - **[Components Index](laravel/Modules/Forecast/resources/views/components/forecast-view/00-index.md)** - All components
 - **[Reusable Architecture](laravel/Modules/Forecast/docs/components/reusable-architecture.md)** - Design principles
 - **[Multi-Outcome Fundamental](laravel/Modules/Forecast/docs/MULTI-OUTCOME-FUNDAMENTAL.md)** - Core principle
@@ -311,6 +408,7 @@ it('displays F1 forecast detail page', function () {
 - **[Rules Index](.agents/docs/rules/00-index.md)** - Filament Tables rule
 - **[Skills Index](.agents/docs/skills/00-index.md)** - Component skills
 - **[Guidelines Index](.agents/docs/guidelines/00-index.md)** - Best practices
+>>>>>>> .merge_file_DTjMnV
 
 ---
 

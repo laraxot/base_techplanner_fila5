@@ -82,8 +82,15 @@ protected string $view = 'pub_theme::filament.widgets.auth.login';
 
 ```bash
 # Verificare configurazione tema
+<<<<<<< .merge_file_lR9uuv
 cd /var/www/_bases/base_fixcity_fila5_mono/laravel
+=======
+<<<<<<< .merge_file_A4npng
+cd /var/www/_bases/base_fixcity_fila5_mono/laravel
+=======
+>>>>>>> .merge_file_wcypsp
 cd /var/www/_bases/base_ptv_fila5_mono/laravel
+>>>>>>> .merge_file_zAzKnl
 php artisan config:cache
 php artisan view:cache
 ```
@@ -132,8 +139,15 @@ public function mount(): void
 ### Soluzione 5: Cache Viste
 
 ```bash
+<<<<<<< .merge_file_lR9uuv
 cd /var/www/_bases/base_fixcity_fila5_mono/laravel
+=======
+<<<<<<< .merge_file_A4npng
+cd /var/www/_bases/base_fixcity_fila5_mono/laravel
+=======
+>>>>>>> .merge_file_wcypsp
 cd /var/www/_bases/base_ptv_fila5_mono/laravel
+>>>>>>> .merge_file_zAzKnl
 
 # Clear tutti i cache
 php artisan cache:clear
@@ -155,8 +169,15 @@ php artisan view:cache
 
 ```bash
 # Verificare che esista
+<<<<<<< .merge_file_lR9uuv
 ls -la /var/www/_bases/base_fixcity_fila5_mono/laravel/Themes/Sixteen/resources/views/filament/widgets/auth/login.blade.php
+=======
+<<<<<<< .merge_file_A4npng
+ls -la /var/www/_bases/base_fixcity_fila5_mono/laravel/Themes/Sixteen/resources/views/filament/widgets/auth/login.blade.php
+=======
+>>>>>>> .merge_file_wcypsp
 ls -la /var/www/_bases/base_ptv_fila5_mono/laravel/Themes/Sixteen/resources/views/filament/widgets/auth/login.blade.php
+>>>>>>> .merge_file_zAzKnl
 ```
 
 ✅ **File esiste**: Abbiamo verificato che c'è
@@ -165,8 +186,15 @@ ls -la /var/www/_bases/base_ptv_fila5_mono/laravel/Themes/Sixteen/resources/view
 
 ```bash
 # Cercare dove è definito pub_theme
+<<<<<<< .merge_file_lR9uuv
 cd /var/www/_bases/base_fixcity_fila5_mono/laravel
+=======
+<<<<<<< .merge_file_A4npng
+cd /var/www/_bases/base_fixcity_fila5_mono/laravel
+=======
+>>>>>>> .merge_file_wcypsp
 cd /var/www/_bases/base_ptv_fila5_mono/laravel
+>>>>>>> .merge_file_zAzKnl
 grep -r "pub_theme" config/ app/Providers/
 ```
 

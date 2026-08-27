@@ -6,9 +6,15 @@ created: 2026-07-16
 updated: 2026-07-16
 qmd: "notify psr-4 test doubles phpstan probes composer autoload"
 issues:
+<<<<<<< .merge_file_wnrYIf
   - "https://github.com/laraxot/base_techplanner_fila5/issues/38"
 discussions:
   - "https://github.com/laraxot/base_techplanner_fila5/discussions/12"
+=======
+  - ""
+discussions:
+  - ""
+>>>>>>> .merge_file_rOl8Y4
 related:
   - "../../../../Xot/docs/wiki/concepts/psr4-one-class-one-file.md"
 ---

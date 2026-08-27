@@ -76,8 +76,15 @@ Verificare che:
 ## Collegamenti
 - [Notify Module Documentation](README.md)
 - [RecordNotification Implementation](notifications/record_notification.md)
+<<<<<<< .merge_file_f2OIHI
 - [SpatieEmail Integration](spatie_email_usage_guide.md)
+=======
+<<<<<<< .merge_file_gDLMr9
+- [SpatieEmail Integration](spatie_email_usage_guide.md)
+=======
+>>>>>>> .merge_file_OA51mc
 - [SpatieEmail Integration](spatie-email-usage-guide.md)
+>>>>>>> .merge_file_HDjH1c
 - [Root Conflict Resolution Guidelines](../../../../docs/conflict-resolution-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
@@ -159,8 +166,15 @@ Verificare che:
 ## Collegamenti
 - [Notify Module Documentation](README.md)
 - [RecordNotification Implementation](notifications/record_notification.md)
+<<<<<<< .merge_file_f2OIHI
 - [SpatieEmail Integration](spatie_email_usage_guide.md)
+=======
+<<<<<<< .merge_file_gDLMr9
+- [SpatieEmail Integration](spatie_email_usage_guide.md)
+=======
+>>>>>>> .merge_file_OA51mc
 - [SpatieEmail Integration](spatie-email-usage-guide.md)
+>>>>>>> .merge_file_HDjH1c
 - [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*

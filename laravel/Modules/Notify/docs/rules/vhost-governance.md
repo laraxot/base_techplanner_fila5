@@ -27,8 +27,15 @@ related:
 
 ## 📋 Overview
 
+<<<<<<< .merge_file_uJkIeU
 This document defines the **mandatory rules** for Apache VirtualHost configuration in the FixCity platform.
+=======
+<<<<<<< .merge_file_X2KTRv
+This document defines the **mandatory rules** for Apache VirtualHost configuration in the FixCity platform.
+=======
+>>>>>>> .merge_file_1GPqLY
 This document defines the **mandatory rules** for Apache VirtualHost configuration in the Notify platform.
+>>>>>>> .merge_file_Umghyy
 
 ---
 
@@ -40,10 +47,24 @@ This document defines the **mandatory rules** for Apache VirtualHost configurati
 
 ```apache
 # ✅ CORRECT
+<<<<<<< .merge_file_uJkIeU
 DocumentRoot /var/www/_bases/base_fixcity_fila5/public_html
 
 # ❌ WRONG - Never point to laravel/ directly
 DocumentRoot /var/www/_bases/base_fixcity_fila5/laravel
+=======
+<<<<<<< .merge_file_X2KTRv
+DocumentRoot /var/www/_bases/base_fixcity_fila5/public_html
+
+# ❌ WRONG - Never point to laravel/ directly
+DocumentRoot /var/www/_bases/base_fixcity_fila5/laravel
+=======
+DocumentRoot /var/www/_bases/base_ptvx_fila5/public_html
+
+# ❌ WRONG - Never point to laravel/ directly
+DocumentRoot /var/www/_bases/base_ptvx_fila5/laravel
+>>>>>>> .merge_file_Umghyy
+>>>>>>> .merge_file_1GPqLY
 ```
 
 **Rationale**: 
@@ -59,12 +80,29 @@ DocumentRoot /var/www/_bases/base_fixcity_fila5/laravel
 
 ```
 ✅ CORRECT:
+<<<<<<< .merge_file_uJkIeU
+laravel/config/vhost/fixcity.local.conf
+=======
+<<<<<<< .merge_file_X2KTRv
 laravel/config/vhost/fixcity.local.conf
 
 ❌ WRONG:
 - /etc/apache2/sites-available/fixcity.local.conf (not versioned)
 - docs/vhost.conf (wrong location)
 - config/fixcity.local.conf (wrong directory)
+=======
+laravel/config/vhost/laraxot.local.conf
+>>>>>>> .merge_file_1GPqLY
+
+❌ WRONG:
+- /etc/apache2/sites-available/fixcity.local.conf (not versioned)
+- docs/vhost.conf (wrong location)
+<<<<<<< .merge_file_uJkIeU
+- config/fixcity.local.conf (wrong directory)
+=======
+- config/laraxot.local.conf (wrong directory)
+>>>>>>> .merge_file_Umghyy
+>>>>>>> .merge_file_1GPqLY
 ```
 
 **Rationale**:
@@ -80,6 +118,10 @@ laravel/config/vhost/fixcity.local.conf
 
 ```apache
 # ✅ CORRECT
+<<<<<<< .merge_file_uJkIeU
+=======
+<<<<<<< .merge_file_X2KTRv
+>>>>>>> .merge_file_1GPqLY
 ServerName fixcity.local
 ServerAlias www.fixcity.local
 
@@ -87,6 +129,10 @@ ServerAlias www.fixcity.local
 ServerName fixcity.dev
 ServerName fixcity.test
 ServerName localhost/fixcity
+<<<<<<< .merge_file_uJkIeU
+=======
+=======
+>>>>>>> .merge_file_1GPqLY
 ServerName laraxot.local
 ServerAlias www.laraxot.local
 
@@ -94,6 +140,7 @@ ServerAlias www.laraxot.local
 ServerName laraxot.dev
 ServerName laraxot.test
 ServerName localhost/laraxot
+>>>>>>> .merge_file_Umghyy
 ```
 
 **Rationale**:
@@ -109,10 +156,18 @@ ServerName localhost/laraxot
 
 ```apache
 # ✅ CORRECT
+<<<<<<< .merge_file_uJkIeU
 ErrorLog ${APACHE_LOG_DIR}/fixcity_local_error.log
 CustomLog ${APACHE_LOG_DIR}/fixcity_local_access.log combined
+=======
+<<<<<<< .merge_file_X2KTRv
+ErrorLog ${APACHE_LOG_DIR}/fixcity_local_error.log
+CustomLog ${APACHE_LOG_DIR}/fixcity_local_access.log combined
+=======
+>>>>>>> .merge_file_1GPqLY
 ErrorLog ${APACHE_LOG_DIR}/app_local_error.log
 CustomLog ${APACHE_LOG_DIR}/app_local_access.log combined
+>>>>>>> .merge_file_Umghyy
 
 # ❌ WRONG - Don't use default Apache logs
 # (No logging configuration)
@@ -131,8 +186,15 @@ CustomLog ${APACHE_LOG_DIR}/app_local_access.log combined
 
 ```apache
 # ✅ CORRECT
+<<<<<<< .merge_file_uJkIeU
 <Directory /var/www/_bases/base_fixcity_fila5/public_html>
+=======
+<<<<<<< .merge_file_X2KTRv
+<Directory /var/www/_bases/base_fixcity_fila5/public_html>
+=======
+>>>>>>> .merge_file_1GPqLY
 <Directory /var/www/_bases/base_ptvx_fila5/public_html>
+>>>>>>> .merge_file_Umghyy
     Options -Indexes +FollowSymLinks +MultiViews
     AllowOverride All
     Require all granted
@@ -160,14 +222,28 @@ CustomLog ${APACHE_LOG_DIR}/app_local_access.log combined
 
 ```
 ✅ CORRECT:
+<<<<<<< .merge_file_uJkIeU
 - fixcity.local.conf
+=======
+<<<<<<< .merge_file_X2KTRv
+- fixcity.local.conf
+=======
+>>>>>>> .merge_file_1GPqLY
 - laraxot.local.conf
+>>>>>>> .merge_file_Umghyy
 - staging.local.conf
 
 ❌ WRONG:
 - vhost.conf (too generic)
+<<<<<<< .merge_file_uJkIeU
 - fixcity.conf (missing .local)
+=======
+<<<<<<< .merge_file_X2KTRv
+- fixcity.conf (missing .local)
+=======
+>>>>>>> .merge_file_1GPqLY
 - laraxot.conf (missing .local)
+>>>>>>> .merge_file_Umghyy
 - 000-default.conf (Apache default)
 ```
 
@@ -194,16 +270,25 @@ CustomLog ${APACHE_LOG_DIR}/app_local_access.log combined
 
 ```bash
 # ✅ CORRECT
+<<<<<<< .merge_file_uJkIeU
+=======
+<<<<<<< .merge_file_X2KTRv
+>>>>>>> .merge_file_1GPqLY
 127.0.0.1    fixcity.local
 127.0.0.1    www.fixcity.local
 
 # ❌ WRONG
 127.0.0.1    fixcity
+<<<<<<< .merge_file_uJkIeU
+=======
+=======
+>>>>>>> .merge_file_1GPqLY
 127.0.0.1    laraxot.local
 127.0.0.1    www.laraxot.local
 
 # ❌ WRONG
 127.0.0.1    laraxot
+>>>>>>> .merge_file_Umghyy
 # (missing .local TLD)
 ```
 
@@ -227,12 +312,21 @@ apache2ctl -M | grep rewrite
 
 ```bash
 # ✅ CORRECT WORKFLOW
+<<<<<<< .merge_file_uJkIeU
 1. Edit: laravel/config/vhost/fixcity.local.conf
 2. Copy: sudo cp laravel/config/vhost/fixcity.local.conf /etc/apache2/sites-available/
 3. Enable: sudo a2ensite fixcity.local.conf
+=======
+<<<<<<< .merge_file_X2KTRv
+1. Edit: laravel/config/vhost/fixcity.local.conf
+2. Copy: sudo cp laravel/config/vhost/fixcity.local.conf /etc/apache2/sites-available/
+3. Enable: sudo a2ensite fixcity.local.conf
+=======
+>>>>>>> .merge_file_1GPqLY
 1. Edit: laravel/config/vhost/laraxot.local.conf
 2. Copy: sudo cp laravel/config/vhost/laraxot.local.conf /etc/apache2/sites-available/
 3. Enable: sudo a2ensite laraxot.local.conf
+>>>>>>> .merge_file_Umghyy
 4. Reload: sudo systemctl reload apache2
 
 # ❌ WRONG
@@ -264,8 +358,15 @@ php artisan migrate:rollback
 
 ```apache
 # ❌ CRITICAL SECURITY ISSUE
+<<<<<<< .merge_file_uJkIeU
 DocumentRoot /var/www/_bases/base_fixcity_fila5/laravel
+=======
+<<<<<<< .merge_file_X2KTRv
+DocumentRoot /var/www/_bases/base_fixcity_fila5/laravel
+=======
+>>>>>>> .merge_file_1GPqLY
 DocumentRoot /var/www/_bases/base_ptvx_fila5/laravel
+>>>>>>> .merge_file_Umghyy
 
 # This exposes:
 # - .env file
@@ -326,8 +427,15 @@ AllowOverride None
 ```env
 # ✅ DEVELOPMENT
 DB_CONNECTION=sqlite
+<<<<<<< .merge_file_uJkIeU
 DB_DATABASE=/var/www/_bases/base_fixcity_fila5/laravel/database/fixcity_data.sqlite
+=======
+<<<<<<< .merge_file_X2KTRv
+DB_DATABASE=/var/www/_bases/base_fixcity_fila5/laravel/database/fixcity_data.sqlite
+=======
+>>>>>>> .merge_file_1GPqLY
 DB_DATABASE=/var/www/_bases/base_ptvx_fila5/laravel/database/notify_data.sqlite
+>>>>>>> .merge_file_Umghyy
 
 # ❌ WRONG
 DB_HOST=production-db.example.com
@@ -353,12 +461,21 @@ Before committing vhost changes:
 - [ ] `apache2ctl configtest` passes
 - [ ] Site enabled: `a2ensite`
 - [ ] Apache reloaded: `systemctl reload apache2`
+<<<<<<< .merge_file_uJkIeU
 - [ ] Domain resolves: `ping fixcity.local`
 - [ ] Application accessible: `curl -I http://fixcity.local`
 - [ ] Logs created: `ls -la /var/log/apache2/fixcity_*`
+=======
+<<<<<<< .merge_file_X2KTRv
+- [ ] Domain resolves: `ping fixcity.local`
+- [ ] Application accessible: `curl -I http://fixcity.local`
+- [ ] Logs created: `ls -la /var/log/apache2/fixcity_*`
+=======
+>>>>>>> .merge_file_1GPqLY
 - [ ] Domain resolves: `ping laraxot.local`
 - [ ] Application accessible: `curl -I http://laraxot.local`
 - [ ] Logs created: `ls -la /var/log/apache2/app_*`
+>>>>>>> .merge_file_Umghyy
 
 ---
 

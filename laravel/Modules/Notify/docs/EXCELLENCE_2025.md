@@ -187,14 +187,23 @@ FixCity è la piattaforma enterprise leader per la gestione delle segnalazioni u
 - 📋 **Webinar mensili** - Best practices
 
 ### Supporto
+<<<<<<< .merge_file_1Ix4oX
+=======
+<<<<<<< .merge_file_hqxhFx
+>>>>>>> .merge_file_zbcAEy
 - ✅ **Email**: support@fixcity.it
 - ✅ **Slack**: #fixcity-dev
 - ✅ **GitHub**: Issues & Discussions
 - ✅ **Documentation**: docs.fixcity.it
+<<<<<<< .merge_file_1Ix4oX
+=======
+=======
+>>>>>>> .merge_file_zbcAEy
 - ✅ **Email**: support@ptv.it
 - ✅ **Slack**: #ptv-dev
 - ✅ **GitHub**: Issues & Discussions
 - ✅ **Documentation**: docs.ptv.it
+>>>>>>> .merge_file_0DWGLb
 
 ---
 
@@ -354,16 +363,25 @@ public function createTicket(
 - **Doc Lead**: Documentation & Training
 
 ### Support Channels
+<<<<<<< .merge_file_1Ix4oX
+=======
+<<<<<<< .merge_file_hqxhFx
+>>>>>>> .merge_file_zbcAEy
 - **Email**: support@fixcity.it
 - **Slack**: #fixcity-community
 - **GitHub**: github.com/laraxot/fixcity
 - **Docs**: docs.fixcity.it
 - **Status**: status.fixcity.it
+<<<<<<< .merge_file_1Ix4oX
+=======
+=======
+>>>>>>> .merge_file_zbcAEy
 - **Email**: support@ptv.it
 - **Slack**: #ptv-community
 - **GitHub**: github.com/laraxot/ptv
 - **Docs**: docs.ptv.it
 - **Status**: status.ptv.it
+>>>>>>> .merge_file_0DWGLb
 
 ---
 
@@ -379,8 +397,15 @@ Grazie a tutti i contributor che hanno reso possibile questo progetto:
 ### Open Source
 FixCity è orgogliosamente open source:
 - **License**: MIT
+<<<<<<< .merge_file_1Ix4oX
 - **Repository**: github.com/laraxot/fixcity
+=======
+<<<<<<< .merge_file_hqxhFx
+- **Repository**: github.com/laraxot/fixcity
+=======
+>>>>>>> .merge_file_zbcAEy
 - **Repository**: github.com/laraxot/ptv
+>>>>>>> .merge_file_0DWGLb
 - **Contributions**: Welcome!
 - **Code of Conduct**: Contributor Covenant
 

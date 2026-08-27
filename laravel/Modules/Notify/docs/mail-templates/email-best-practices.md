@@ -15,8 +15,15 @@ Questo documento descrive le best practices per la creazione e gestione di email
 
 ### 2. Branding Coerente
 
+<<<<<<< .merge_file_gDVVry
 - **Elementi visuali**: Utilizzare logo, colori e font Quaeris
+=======
+<<<<<<< .merge_file_0vgLQC
+- **Elementi visuali**: Utilizzare logo, colori e font Quaeris
+=======
+>>>>>>> .merge_file_3GLo6L
 - **Elementi visuali**: Utilizzare logo, colori e font App
+>>>>>>> .merge_file_Eh3wp3
 - **Voce e tono**: Mantenere un tono professionale ma amichevole
 - **Firma coerente**: Includere sempre lo stesso formato di firma e disclaimer
 
@@ -62,8 +69,15 @@ I template di [mailpace/templates](https://github.com/mailpace/templates) integr
 
 ### Directory `mail-layouts`
 
+<<<<<<< .merge_file_gDVVry
 La directory `/var/www/html/Quaeris/laravel/Modules/Notify/resources/mail-layouts/` contiene:
+=======
+<<<<<<< .merge_file_0vgLQC
+La directory `/var/www/html/Quaeris/laravel/Modules/Notify/resources/mail-layouts/` contiene:
+=======
+>>>>>>> .merge_file_3GLo6L
 La directory `/var/www/_bases/base_ptvx_fila5/laravel/Modules/Notify/resources/mail-layouts/` contiene:
+>>>>>>> .merge_file_Eh3wp3
 
 - **default.html**: Template base per la maggior parte delle comunicazioni
 - **main.html**: Alternativa minimalista
@@ -72,8 +86,15 @@ La directory `/var/www/_bases/base_ptvx_fila5/laravel/Modules/Notify/resources/m
 
 ### Integrazione con Spatie Mail Templates
 
+<<<<<<< .merge_file_gDVVry
 Seguendo le regole di progetto Quaeris, ricordare di:
+=======
+<<<<<<< .merge_file_0vgLQC
+Seguendo le regole di progetto Quaeris, ricordare di:
+=======
+>>>>>>> .merge_file_3GLo6L
 Seguendo le regole di progetto App, ricordare di:
+>>>>>>> .merge_file_Eh3wp3
 
 - NON creare controller personalizzati per gestire l'invio di email
 - Utilizzare il package `spatie/laravel-mail-templates`
@@ -120,5 +141,12 @@ $mailTemplate->send($user->email, [
 - [Guida Layout Email](../mail_layouts_guide.md)
 - [Integrazione MailPace](./mailpace_templates_integration.md)
 - [HTML Email Compatibility](./html_email_compatibility.md)
+<<<<<<< .merge_file_gDVVry
 - [Spatie Email Usage Guide](../spatie_email_usage_guide.md)
+=======
+<<<<<<< .merge_file_0vgLQC
+- [Spatie Email Usage Guide](../spatie_email_usage_guide.md)
+=======
+>>>>>>> .merge_file_3GLo6L
 - [Spatie Email Usage Guide](../spatie-email-usage-guide.md)
+>>>>>>> .merge_file_Eh3wp3

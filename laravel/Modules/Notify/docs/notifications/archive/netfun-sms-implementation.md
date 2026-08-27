@@ -16,13 +16,27 @@ related:
   - "./telegram-notifications-guide.md"
 ---
 
+<<<<<<< .merge_file_rWPKqD
 <<<<<<< .merge_file_fgLyBo
+=======
+<<<<<<< .merge_file_mRLAvU
+=======
+<<<<<<< .merge_file_fgLyBo
+>>>>>>> .merge_file_XEGarJ
+>>>>>>> .merge_file_gcf4Rg
 # Implementazione Netfun SMS 
 
 ## Introduzione
 
 Netfun è un provider italiano di SMS che offre servizi per l'invio di messaggi SMS tramite API REST. 
+<<<<<<< .merge_file_rWPKqD
 =======
+=======
+<<<<<<< .merge_file_mRLAvU
+=======
+=======
+>>>>>>> .merge_file_XEGarJ
+>>>>>>> .merge_file_gcf4Rg
 # Implementazione Netfun SMS
 
 ## Introduzione
@@ -48,9 +62,19 @@ Netfun utilizza un API token configurato in `config/services.php`:
 // config/services.php
 return [
     // Altre configurazioni...
+<<<<<<< .merge_file_rWPKqD
 <<<<<<< .merge_file_fgLyBo
     
 =======
+=======
+<<<<<<< .merge_file_mRLAvU
+    
+=======
+<<<<<<< .merge_file_fgLyBo
+    
+=======
+>>>>>>> .merge_file_XEGarJ
+>>>>>>> .merge_file_gcf4Rg
 
 >>>>>>> .merge_file_kTleTX
     'netfun' => [
@@ -80,9 +104,19 @@ return [
     'drivers' => [
         // Vari provider...
     ],
+<<<<<<< .merge_file_rWPKqD
 <<<<<<< .merge_file_fgLyBo
     
 =======
+=======
+<<<<<<< .merge_file_mRLAvU
+    
+=======
+<<<<<<< .merge_file_fgLyBo
+    
+=======
+>>>>>>> .merge_file_XEGarJ
+>>>>>>> .merge_file_gcf4Rg
 
 >>>>>>> .merge_file_kTleTX
     // Configurazione generica per retry - usata per tutti i provider
@@ -90,9 +124,19 @@ return [
         'attempts' => env('SMS_RETRY_ATTEMPTS', 3),
         'delay' => env('SMS_RETRY_DELAY', 60), // secondi
     ],
+<<<<<<< .merge_file_rWPKqD
 <<<<<<< .merge_file_fgLyBo
     
 =======
+=======
+<<<<<<< .merge_file_mRLAvU
+    
+=======
+<<<<<<< .merge_file_fgLyBo
+    
+=======
+>>>>>>> .merge_file_XEGarJ
+>>>>>>> .merge_file_gcf4Rg
 
 >>>>>>> .merge_file_kTleTX
     // Configurazione generica per rate limiting - usata per tutti i provider
@@ -101,9 +145,19 @@ return [
         'max_attempts' => env('SMS_RATE_LIMIT_MAX_ATTEMPTS', 60),
         'decay_minutes' => env('SMS_RATE_LIMIT_DECAY_MINUTES', 1),
     ],
+<<<<<<< .merge_file_rWPKqD
 <<<<<<< .merge_file_fgLyBo
     
 =======
+=======
+<<<<<<< .merge_file_mRLAvU
+    
+=======
+<<<<<<< .merge_file_fgLyBo
+    
+=======
+>>>>>>> .merge_file_XEGarJ
+>>>>>>> .merge_file_gcf4Rg
 
 >>>>>>> .merge_file_kTleTX
     // Altre configurazioni generiche
@@ -152,13 +206,27 @@ use Modules\Notify\Datas\NetfunSmsData;
 class SendNetfunSmsAction
 {
     use QueueableAction;
+<<<<<<< .merge_file_rWPKqD
 <<<<<<< .merge_file_fgLyBo
+=======
+<<<<<<< .merge_file_mRLAvU
+=======
+<<<<<<< .merge_file_fgLyBo
+>>>>>>> .merge_file_XEGarJ
+>>>>>>> .merge_file_gcf4Rg
     
     public function execute(NetfunSmsData $smsData)
     {
         $config = config('sms.drivers.netfun');
         
+<<<<<<< .merge_file_rWPKqD
 =======
+=======
+<<<<<<< .merge_file_mRLAvU
+=======
+=======
+>>>>>>> .merge_file_XEGarJ
+>>>>>>> .merge_file_gcf4Rg
 
     public function execute(NetfunSmsData $smsData)
     {
@@ -201,25 +269,52 @@ use Modules\Notify\Datas\NetfunSmsData;
 class AppointmentReminder extends Notification
 {
     protected $appointment;
+<<<<<<< .merge_file_rWPKqD
 <<<<<<< .merge_file_fgLyBo
     
 =======
+=======
+<<<<<<< .merge_file_mRLAvU
+    
+=======
+<<<<<<< .merge_file_fgLyBo
+    
+=======
+>>>>>>> .merge_file_XEGarJ
+>>>>>>> .merge_file_gcf4Rg
 
 >>>>>>> .merge_file_kTleTX
     public function __construct($appointment)
     {
         $this->appointment = $appointment;
     }
+<<<<<<< .merge_file_rWPKqD
 <<<<<<< .merge_file_fgLyBo
     
 =======
+=======
+<<<<<<< .merge_file_mRLAvU
+    
+=======
+<<<<<<< .merge_file_fgLyBo
+    
+=======
+>>>>>>> .merge_file_XEGarJ
+>>>>>>> .merge_file_gcf4Rg
 
 >>>>>>> .merge_file_kTleTX
     public function via($notifiable)
     {
         return ['mail', 'database', 'netfun'];
     }
+<<<<<<< .merge_file_rWPKqD
 <<<<<<< .merge_file_fgLyBo
+=======
+<<<<<<< .merge_file_mRLAvU
+=======
+<<<<<<< .merge_file_fgLyBo
+>>>>>>> .merge_file_XEGarJ
+>>>>>>> .merge_file_gcf4Rg
     
     public function toNetfun($notifiable)
     {
@@ -241,7 +336,14 @@ class AppointmentReminder extends Notification
         // Esecuzione sincrona per notifiche
         return $action->execute($smsData);
         
+<<<<<<< .merge_file_rWPKqD
 =======
+=======
+<<<<<<< .merge_file_mRLAvU
+=======
+=======
+>>>>>>> .merge_file_XEGarJ
+>>>>>>> .merge_file_gcf4Rg
 
     public function toNetfun($notifiable)
     {

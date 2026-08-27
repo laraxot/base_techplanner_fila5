@@ -124,6 +124,7 @@ describe('Notify gap attack — highest miss providers', function (): void {
     });
 
     test('PushNotificationService SmsService e FCM channel', function (): void {
+        /** @var TestCase $this */
         Http::fake(['*' => Http::response(['success' => 1], 200)]);
 
         try {
@@ -179,6 +180,7 @@ describe('Notify gap attack — highest miss providers', function (): void {
     });
 
     test('SpatieEmail AppointmentMail RecordNotification ScheduledPush', function (): void {
+        /** @var TestCase $this */
         Mail::fake();
         Notification::fake();
 

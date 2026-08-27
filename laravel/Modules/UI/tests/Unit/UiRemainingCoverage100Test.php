@@ -28,6 +28,19 @@ use Modules\Xot\Actions\GetViewAction;
 use PHPUnit\Framework\Assert;
 use ReflectionClass;
 
+/**
+ * Narrows Mockery's shouldReceive() union return type for PHPStan.
+ *
+ * @param  \Mockery\LegacyMockInterface|\Mockery\MockInterface  $mock
+ */
+function expectMethod($mock, string $method): \Mockery\ExpectationInterface
+{
+    /** @var \Mockery\ExpectationInterface $expectation */
+    $expectation = $mock->shouldReceive($method);
+
+    return $expectation;
+}
+
 use function Safe\mkdir;
 
 uses(TestCase::class)->group('no-ui-db');

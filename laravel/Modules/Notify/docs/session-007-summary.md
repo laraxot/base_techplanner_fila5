@@ -194,8 +194,15 @@ Total Documents: 5 (created Session 006)
 Total Characters: ~63,000
 - PHASE-1-STRATEGY.md (22,938 chars)
 - GSD-PHASE-1-EXECUTION.md (19,499 chars)
+<<<<<<< .merge_file_C30kJW
 - bashscripts/docs/html/INDEX.md (8,531 chars)
+=======
+<<<<<<< .merge_file_Prsdd1
+- bashscripts/docs/html/INDEX.md (8,531 chars)
+=======
+>>>>>>> .merge_file_ZheOh4
 - bashscripts/docs/html/index.md (8,531 chars)
+>>>>>>> .merge_file_yIL36J
 - bashscripts/html/extract-body-html.py (4,156 chars)
 - 00-index-1.md (12,926 chars)
 
@@ -295,8 +302,15 @@ Must achieve ALL criteria:
 - [ ] Filter checkboxes with `.form-check-input`/`.form-check-label`
 - [ ] Card grid with `.card.card-report` pattern
 - [ ] Bootstrap semantic classes (`.bg-light`, `.btn-primary`, etc.)
+<<<<<<< .merge_file_C30kJW
 - [ ] All user-visible text using `trans('fixcity::...')`
+=======
+<<<<<<< .merge_file_Prsdd1
+- [ ] All user-visible text using `trans('fixcity::...')`
+=======
+>>>>>>> .merge_file_ZheOh4
 - [ ] All user-visible text using `trans('ptv::...')`
+>>>>>>> .merge_file_yIL36J
 - [ ] ARIA attributes present and correct
 - [ ] Comparison reports saved in docs/
 - [ ] Findings documented (PHASE-1-FINDINGS.md)
@@ -390,7 +404,13 @@ Must achieve ALL criteria:
 - EXECUTOR-2-SUBTASKS-3-4.md (for Executor #2)
 
 **Tools**:
+<<<<<<< .merge_file_C30kJW
 - bashscripts/docs/html/INDEX.md (comparison tools)
+=======
+<<<<<<< .merge_file_Prsdd1
+- bashscripts/docs/html/INDEX.md (comparison tools)
+=======
+>>>>>>> .merge_file_ZheOh4
 - bashscripts/docs/html/index.md (comparison tools)
 
 ---
@@ -843,6 +863,7 @@ Must achieve ALL criteria:
 
 **Tools**:
 - bashscripts/docs/html/index.md (comparison tools)
+>>>>>>> .merge_file_yIL36J
 
 ---
 

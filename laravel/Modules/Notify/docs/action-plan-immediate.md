@@ -4,8 +4,15 @@ type: concept
 tags: [action, plan, immediate]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< .merge_file_nrTj0j
 qmd: "action-plan-immediate 🎯 piano d'azione immediato - fixcity platform"
+=======
+<<<<<<< .merge_file_aFbWmH
+qmd: "action-plan-immediate 🎯 piano d'azione immediato - fixcity platform"
+=======
+>>>>>>> .merge_file_Nr6RZE
 qmd: "action-plan-immediate 🎯 piano d'azione immediato - ptv platform"
+>>>>>>> .merge_file_oa1G0Q
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:

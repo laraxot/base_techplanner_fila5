@@ -3,11 +3,20 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Models;
+<<<<<<< .merge_file_qf7dqz
+use Modules\Notify\Models\Notification;
+use Modules\Notify\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+=======
 
 use Modules\Notify\Models\Notification;
 use Modules\Notify\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
+<<<<<<< .merge_file_Qms7FT
 use PHPUnit\Framework\Assert;
+=======
+>>>>>>> .merge_file_5wAL4Z
+>>>>>>> .merge_file_AOsl4u
 
 uses(TestCase::class)->group('notify-db');
 
@@ -41,7 +50,11 @@ describe('Notification Business Logic', function () {
             'data' => ['title' => 'Test', 'message' => 'Hello World'],
         ]);
 
+<<<<<<< .merge_file_qf7dqz
+        $data = \assertNotifyArray($notification->data);
+=======
         $data = XotBasePest::assertArray($notification->data);
+>>>>>>> .merge_file_5wAL4Z
         Assert::assertSame('Test', $data['title']);
     });
 
@@ -78,7 +91,11 @@ describe('Notification Business Logic', function () {
             'channels' => ['mail', 'sms', 'database'],
         ]);
 
+<<<<<<< .merge_file_qf7dqz
+        $channels = \assertNotifyArray($notification->channels);
+=======
         $channels = XotBasePest::assertArray($notification->channels);
+>>>>>>> .merge_file_5wAL4Z
         Assert::assertContains('mail', $channels);
         Assert::assertContains('sms', $channels);
     });

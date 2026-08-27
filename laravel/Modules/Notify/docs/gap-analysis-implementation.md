@@ -4,8 +4,15 @@ type: concept
 tags: [gap, analysis, implementation]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< .merge_file_ATlMaW
 qmd: "gap-analysis-implementation 🔍 fixcity - gap analysis & implementation plan"
+=======
+<<<<<<< .merge_file_tHL9nw
+qmd: "gap-analysis-implementation 🔍 fixcity - gap analysis & implementation plan"
+=======
+>>>>>>> .merge_file_16q4Q2
 qmd: "gap-analysis-implementation 🔍 ptv - gap analysis & implementation plan"
+>>>>>>> .merge_file_LKHAIE
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -224,8 +231,15 @@ Modules/Fixcity/
 **Files da creare/modificare**:
 ```
 lang/en/
+<<<<<<< .merge_file_ATlMaW
 ├── fixcity.php                               [NEW]
+=======
+<<<<<<< .merge_file_tHL9nw
+├── fixcity.php                               [NEW]
+=======
+>>>>>>> .merge_file_16q4Q2
 ├── ptv.php                               [NEW]
+>>>>>>> .merge_file_LKHAIE
 ├── user.php                                  [NEW]
 └── validation.php                            [NEW]
 ```

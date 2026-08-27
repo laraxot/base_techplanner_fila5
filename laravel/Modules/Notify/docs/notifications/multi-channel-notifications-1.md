@@ -796,6 +796,16 @@ TELEGRAM_BOT_TOKEN=12345:ABC...
 - [SMS_PROVIDER_CONFIGURATION.md](./sms_provider_configuration.md)
 <<<<<<< .merge_file_IdkKAq
 - [TELEGRAM_NOTIFICATIONS_GUIDE.md](./telegram_notifications_guide.md)
+<<<<<<< .merge_file_g3dHX4
 =======
 - [TELEGRAM_NOTIFICATIONS_GUIDE.md](./telegram_notifications_guide.md)
 >>>>>>> .merge_file_vp8k7y
+=======
+<<<<<<< .merge_file_9inYVK
+- [TELEGRAM_NOTIFICATIONS_GUIDE.md](./telegram_notifications_guide.md)
+=======
+=======
+- [TELEGRAM_NOTIFICATIONS_GUIDE.md](./telegram_notifications_guide.md)
+>>>>>>> .merge_file_vp8k7y
+>>>>>>> .merge_file_lXwxHu
+>>>>>>> .merge_file_BKD5Au

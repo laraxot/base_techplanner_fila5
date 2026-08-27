@@ -3,7 +3,10 @@
 declare(strict_types=1);
 
 use Filament\Facades\Filament;
+<<<<<<< .merge_file_M5auIh
+=======
 use Illuminate\Support\Facades\Route;
+>>>>>>> .merge_file_Vr3FId
 use Modules\Notify\Tests\TestCase;
 use Modules\Notify\Tests\Unit\Traits\NotifyRateLimitDummy;
 use Modules\Notify\Tests\Unit\Traits\NotifyTenantDummyModel;
@@ -11,15 +14,35 @@ use Modules\Notify\Tests\Unit\Traits\NotifyTrackingDummy;
 use Modules\Tenant\Models\Tenant;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< .merge_file_M5auIh
+uses(TestCase::class);
+
+describe('Notify Traits Coverage', function (): void {
+    test('_notification_rate_limiting_helpers_work_with_limiter', function (): void {
+=======
 uses(TestCase::class)->group('no-notify-db');
 
 describe('Notify Traits Coverage', function (): void {
     test('_notification_rate_limiting_helpers_work_with_limiter', function (): void {
         config()->set('cache.default', 'array');
+>>>>>>> .merge_file_Vr3FId
         config()->set('notify.rate_limiting.enabled', true);
         config()->set('notify.rate_limiting.max_attempts', 1);
         config()->set('notify.rate_limiting.decay_minutes', 1);
 
+<<<<<<< .merge_file_M5auIh
+        $dummy = new NotifyRateLimitDummy;
+        $key = $dummy->key('mail', 'id-'.uniqid());
+        $dummy->reset($key);
+
+        Assert::assertTrue($dummy->shouldSend($key));
+        Assert::assertFalse($dummy->shouldSend($key));
+        Assert::assertLessThanOrEqual(0, $dummy->remaining($key));
+        Assert::assertGreaterThanOrEqual(0, $dummy->retryAfter($key));
+
+        $dummy->reset($key);
+        Assert::assertTrue($dummy->shouldSend($key));
+=======
         try {
             $dummy = new NotifyRateLimitDummy();
             $key = $dummy->key('mail', 'id-'.uniqid());
@@ -35,6 +58,7 @@ describe('Notify Traits Coverage', function (): void {
         } catch (Throwable $e) {
             Assert::markTestSkipped('Rate limiter/cache non disponibile offline: '.$e->getMessage());
         }
+>>>>>>> .merge_file_Vr3FId
     });
 
     test('_notification_tracking_returns_original_html_when_tracking_is_disabled', function (): void {
@@ -52,6 +76,20 @@ describe('Notify Traits Coverage', function (): void {
         Assert::assertFalse($dummy->trackingEnabled());
     });
 
+<<<<<<< .merge_file_M5auIh
+    test('_tenant_notification_helpers_check_tenant_ownership', function (): void {
+        $tenant = new Tenant;
+        $tenant->setAttribute('id', 'tenant-42');
+        Filament::setTenant($tenant, isQuiet: true);
+
+        $dummy = new NotifyTenantDummyModel;
+        $dummy->tenant_id = 'tenant-42';
+
+        Assert::assertTrue($dummy->belongsToTenant('tenant-42'));
+        Assert::assertTrue($dummy->belongsToCurrentTenant());
+        Assert::assertFalse($dummy->belongsToTenant('other-tenant'));
+        Filament::setTenant(null, isQuiet: true);
+=======
     test('_notification_tracking_rewrites_links_when_link_tracking_enabled', function (): void {
         Route::name('notify.track.pixel')->get('/track/pixel/{id}', fn () => 'ok');
         Route::name('notify.track.link')->get('/track/link/{id}', fn () => 'ok');
@@ -91,5 +129,6 @@ describe('Notify Traits Coverage', function (): void {
         } catch (Throwable $e) {
             Assert::markTestSkipped('Tenant/Filament non disponibile offline: '.$e->getMessage());
         }
+>>>>>>> .merge_file_Vr3FId
     });
 });

@@ -16,11 +16,24 @@ related:
   - "./sms-provider-configuration.md"
 ---
 
+<<<<<<< .merge_file_6V4XNo
+<<<<<<< .merge_file_q8ZI5v
+=======
+<<<<<<< .merge_file_7yHmwp
+>>>>>>> .merge_file_28n2ES
+# Notifiche Telegram 
+
+Questa documentazione descrive come implementare notifiche Telegram nel modulo Notify di SaluteOra.
+=======
+<<<<<<< .merge_file_6V4XNo
+=======
 <<<<<<< .merge_file_q8ZI5v
 # Notifiche Telegram 
 
 Questa documentazione descrive come implementare notifiche Telegram nel modulo Notify di SaluteOra.
 =======
+>>>>>>> .merge_file_qMH8OA
+>>>>>>> .merge_file_28n2ES
 # Notifiche Telegram
 
 Questa documentazione descrive come implementare notifiche Telegram nel modulo Notify di <nome progetto>.
@@ -39,9 +52,19 @@ Questa documentazione descrive come implementare notifiche Telegram nel modulo N
 
 ## Introduzione
 
+<<<<<<< .merge_file_6V4XNo
 <<<<<<< .merge_file_q8ZI5v
 Telegram offre un'ottima piattaforma per notifiche istantanee grazie alla sua API per bot. SaluteOra integra Telegram per inviare notifiche relative ad appuntamenti, promemoria e altre comunicazioni importanti.
 =======
+=======
+<<<<<<< .merge_file_7yHmwp
+Telegram offre un'ottima piattaforma per notifiche istantanee grazie alla sua API per bot. SaluteOra integra Telegram per inviare notifiche relative ad appuntamenti, promemoria e altre comunicazioni importanti.
+=======
+<<<<<<< .merge_file_q8ZI5v
+Telegram offre un'ottima piattaforma per notifiche istantanee grazie alla sua API per bot. SaluteOra integra Telegram per inviare notifiche relative ad appuntamenti, promemoria e altre comunicazioni importanti.
+=======
+>>>>>>> .merge_file_qMH8OA
+>>>>>>> .merge_file_28n2ES
 Telegram offre un'ottima piattaforma per notifiche istantanee grazie alla sua API per bot. <nome progetto> integra Telegram per inviare notifiche relative ad appuntamenti, promemoria e altre comunicazioni importanti.
 >>>>>>> .merge_file_oYc2r3
 
@@ -56,12 +79,26 @@ Telegram offre un'ottima piattaforma per notifiche istantanee grazie alla sua AP
 
 ### Funzionalità del Bot
 
+<<<<<<< .merge_file_6V4XNo
 <<<<<<< .merge_file_q8ZI5v
+=======
+<<<<<<< .merge_file_7yHmwp
+=======
+<<<<<<< .merge_file_q8ZI5v
+>>>>>>> .merge_file_qMH8OA
+>>>>>>> .merge_file_28n2ES
 Il bot di SaluteOra deve avere:
 - Privacy Mode disattivata (per leggere messaggi nei gruppi)
 - Comandi personalizzati configurati
 - Immagine del profilo con logo SaluteOra
+<<<<<<< .merge_file_6V4XNo
 =======
+=======
+<<<<<<< .merge_file_7yHmwp
+=======
+=======
+>>>>>>> .merge_file_qMH8OA
+>>>>>>> .merge_file_28n2ES
 Il bot di <nome progetto> deve avere:
 - Privacy Mode disattivata (per leggere messaggi nei gruppi)
 - Comandi personalizzati configurati
@@ -73,9 +110,19 @@ Il bot di <nome progetto> deve avere:
 Configura i seguenti comandi per il tuo bot:
 ```
 start - Inizia l'interazione con il bot
+<<<<<<< .merge_file_6V4XNo
 <<<<<<< .merge_file_q8ZI5v
 register - Collega il tuo account Telegram a SaluteOra
 =======
+=======
+<<<<<<< .merge_file_7yHmwp
+register - Collega il tuo account Telegram a SaluteOra
+=======
+<<<<<<< .merge_file_q8ZI5v
+register - Collega il tuo account Telegram a SaluteOra
+=======
+>>>>>>> .merge_file_qMH8OA
+>>>>>>> .merge_file_28n2ES
 register - Collega il tuo account Telegram a <nome progetto>
 >>>>>>> .merge_file_oYc2r3
 unregister - Scollega il tuo account Telegram
@@ -121,31 +168,65 @@ use NotificationChannels\Telegram\TelegramMessage;
 class AppointmentNotification extends Notification
 {
     protected $appointment;
+<<<<<<< .merge_file_6V4XNo
 <<<<<<< .merge_file_q8ZI5v
     
 =======
+=======
+<<<<<<< .merge_file_7yHmwp
+    
+=======
+<<<<<<< .merge_file_q8ZI5v
+    
+=======
+>>>>>>> .merge_file_qMH8OA
+>>>>>>> .merge_file_28n2ES
 
 >>>>>>> .merge_file_oYc2r3
     public function __construct($appointment)
     {
         $this->appointment = $appointment;
     }
+<<<<<<< .merge_file_6V4XNo
 <<<<<<< .merge_file_q8ZI5v
     
 =======
+=======
+<<<<<<< .merge_file_7yHmwp
+    
+=======
+<<<<<<< .merge_file_q8ZI5v
+    
+=======
+>>>>>>> .merge_file_qMH8OA
+>>>>>>> .merge_file_28n2ES
 
 >>>>>>> .merge_file_oYc2r3
     public function via($notifiable)
     {
         return [TelegramChannel::class];
     }
+<<<<<<< .merge_file_6V4XNo
 <<<<<<< .merge_file_q8ZI5v
+=======
+<<<<<<< .merge_file_7yHmwp
+=======
+<<<<<<< .merge_file_q8ZI5v
+>>>>>>> .merge_file_qMH8OA
+>>>>>>> .merge_file_28n2ES
     
     public function toTelegram($notifiable)
     {
         $url = url("/appointments/{$this->appointment->id}");
         
+<<<<<<< .merge_file_6V4XNo
 =======
+=======
+<<<<<<< .merge_file_7yHmwp
+=======
+=======
+>>>>>>> .merge_file_qMH8OA
+>>>>>>> .merge_file_28n2ES
 
     public function toTelegram($notifiable)
     {
@@ -190,9 +271,19 @@ public function toTelegram($notifiable)
 public function toTelegram($notifiable)
 {
     $appointmentId = $this->appointment->id;
+<<<<<<< .merge_file_6V4XNo
 <<<<<<< .merge_file_q8ZI5v
     
 =======
+=======
+<<<<<<< .merge_file_7yHmwp
+    
+=======
+<<<<<<< .merge_file_q8ZI5v
+    
+=======
+>>>>>>> .merge_file_qMH8OA
+>>>>>>> .merge_file_28n2ES
 
 >>>>>>> .merge_file_oYc2r3
     return TelegramMessage::create()
@@ -218,12 +309,26 @@ public function toTelegram($notifiable)
 
 ### Collegamento Account Telegram
 
+<<<<<<< .merge_file_6V4XNo
 <<<<<<< .merge_file_q8ZI5v
+=======
+<<<<<<< .merge_file_7yHmwp
+=======
+<<<<<<< .merge_file_q8ZI5v
+>>>>>>> .merge_file_qMH8OA
+>>>>>>> .merge_file_28n2ES
 Per collegare un account Telegram a un utente SaluteOra:
 
 1. Implementa un comando `/register` nel bot che generi un token univoco.
 2. L'utente inserisce questo token nel proprio profilo nell'app SaluteOra.
+<<<<<<< .merge_file_6V4XNo
 =======
+=======
+<<<<<<< .merge_file_7yHmwp
+=======
+=======
+>>>>>>> .merge_file_qMH8OA
+>>>>>>> .merge_file_28n2ES
 Per collegare un account Telegram a un utente <nome progetto>:
 
 1. Implementa un comando `/register` nel bot che generi un token univoco.
@@ -241,10 +346,22 @@ use Modules\Notify\Models\TelegramToken;
 class RegisterCommand extends Command
 {
     protected $name = 'register';
+<<<<<<< .merge_file_6V4XNo
 <<<<<<< .merge_file_q8ZI5v
     protected $description = 'Collega il tuo account Telegram a SaluteOra';
     
 =======
+=======
+<<<<<<< .merge_file_7yHmwp
+    protected $description = 'Collega il tuo account Telegram a SaluteOra';
+    
+=======
+<<<<<<< .merge_file_q8ZI5v
+    protected $description = 'Collega il tuo account Telegram a SaluteOra';
+    
+=======
+>>>>>>> .merge_file_qMH8OA
+>>>>>>> .merge_file_28n2ES
     protected $description = 'Collega il tuo account Telegram a <nome progetto>';
 
 >>>>>>> .merge_file_oYc2r3
@@ -252,9 +369,19 @@ class RegisterCommand extends Command
     {
         $chatId = $this->update->getMessage()->getChat()->getId();
         $token = Str::random(8);
+<<<<<<< .merge_file_6V4XNo
 <<<<<<< .merge_file_q8ZI5v
         
 =======
+=======
+<<<<<<< .merge_file_7yHmwp
+        
+=======
+<<<<<<< .merge_file_q8ZI5v
+        
+=======
+>>>>>>> .merge_file_qMH8OA
+>>>>>>> .merge_file_28n2ES
 
 >>>>>>> .merge_file_oYc2r3
         // Salva il token temporaneo
@@ -263,11 +390,23 @@ class RegisterCommand extends Command
             'chat_id' => $chatId,
             'expires_at' => now()->addHours(1),
         ]);
+<<<<<<< .merge_file_6V4XNo
+=======
+<<<<<<< .merge_file_7yHmwp
+        
+        $this->replyWithMessage([
+            'text' => "Il tuo codice di collegamento è: {$token}\n\nInseriscilo nel tuo profilo SaluteOra per completare il collegamento."
+=======
+>>>>>>> .merge_file_28n2ES
 <<<<<<< .merge_file_q8ZI5v
         
         $this->replyWithMessage([
             'text' => "Il tuo codice di collegamento è: {$token}\n\nInseriscilo nel tuo profilo SaluteOra per completare il collegamento."
 =======
+<<<<<<< .merge_file_6V4XNo
+=======
+>>>>>>> .merge_file_qMH8OA
+>>>>>>> .merge_file_28n2ES
 
         $this->replyWithMessage([
             'text' => "Il tuo codice di collegamento è: {$token}\n\nInseriscilo nel tuo profilo <nome progetto> per completare il collegamento."
@@ -291,16 +430,33 @@ class VerifyTelegramToken
     public function handle(Request $request, Closure $next)
     {
         $token = $request->input('token');
+<<<<<<< .merge_file_6V4XNo
 <<<<<<< .merge_file_q8ZI5v
         
 =======
+=======
+<<<<<<< .merge_file_7yHmwp
+        
+=======
+<<<<<<< .merge_file_q8ZI5v
+        
+=======
+>>>>>>> .merge_file_qMH8OA
+>>>>>>> .merge_file_28n2ES
 
 >>>>>>> .merge_file_oYc2r3
         $telegramToken = TelegramToken::where('token', $token)
             ->where('expires_at', '>', now())
             ->whereNull('user_id')
             ->first();
+<<<<<<< .merge_file_6V4XNo
 <<<<<<< .merge_file_q8ZI5v
+=======
+<<<<<<< .merge_file_7yHmwp
+=======
+<<<<<<< .merge_file_q8ZI5v
+>>>>>>> .merge_file_qMH8OA
+>>>>>>> .merge_file_28n2ES
         
         if (!$telegramToken) {
             return response()->json(['error' => 'Token non valido o scaduto'], 400);
@@ -308,7 +464,14 @@ class VerifyTelegramToken
         
         $request->merge(['telegram_token' => $telegramToken]);
         
+<<<<<<< .merge_file_6V4XNo
 =======
+=======
+<<<<<<< .merge_file_7yHmwp
+=======
+=======
+>>>>>>> .merge_file_qMH8OA
+>>>>>>> .merge_file_28n2ES
 
         if (!$telegramToken) {
             return response()->json(['error' => 'Token non valido o scaduto'], 400);
@@ -343,13 +506,27 @@ class TelegramNotificationTest extends TestCase
     {
         $user = User::factory()->create(['telegram_chat_id' => '123456789']);
         $appointment = Appointment::factory()->create();
+<<<<<<< .merge_file_6V4XNo
 <<<<<<< .merge_file_q8ZI5v
+=======
+<<<<<<< .merge_file_7yHmwp
+=======
+<<<<<<< .merge_file_q8ZI5v
+>>>>>>> .merge_file_qMH8OA
+>>>>>>> .merge_file_28n2ES
         
         $notification = new AppointmentNotification($appointment);
         
         $telegramMessage = $notification->toTelegram($user);
         
+<<<<<<< .merge_file_6V4XNo
 =======
+=======
+<<<<<<< .merge_file_7yHmwp
+=======
+=======
+>>>>>>> .merge_file_qMH8OA
+>>>>>>> .merge_file_28n2ES
 
         $notification = new AppointmentNotification($appointment);
 
@@ -360,9 +537,19 @@ class TelegramNotificationTest extends TestCase
             $appointment->formatted_date,
             $telegramMessage->content
         );
+<<<<<<< .merge_file_6V4XNo
 <<<<<<< .merge_file_q8ZI5v
         
 =======
+=======
+<<<<<<< .merge_file_7yHmwp
+        
+=======
+<<<<<<< .merge_file_q8ZI5v
+        
+=======
+>>>>>>> .merge_file_qMH8OA
+>>>>>>> .merge_file_28n2ES
 
 >>>>>>> .merge_file_oYc2r3
         $this->assertCount(2, $telegramMessage->buttons);

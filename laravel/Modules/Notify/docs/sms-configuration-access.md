@@ -56,5 +56,12 @@ Per ogni azione SMS, verificare che:
 
 - [Struttura della Configurazione SMS](./sms_config_structure.md)
 - [Requisiti di Configurazione Netfun](./netfun_config_requirements.md)
+<<<<<<< .merge_file_ZNZu7l
 - [Pattern Factory per SMS](./sms_action_factory_analysis.md)
+=======
+<<<<<<< .merge_file_ACs9ua
+- [Pattern Factory per SMS](./sms_action_factory_analysis.md)
+=======
+>>>>>>> .merge_file_gDmVAc
 - [Pattern Factory per SMS](./sms-action-factory-analysis.md)
+>>>>>>> .merge_file_PT30dJ

@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_XGfMLm
+=======
 ---
 title: "Notify - Product Launch Plan"
 module: notify
@@ -7,6 +9,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+>>>>>>> .merge_file_BsGmqH
 # Notify - Product Launch Plan
 
 > Piano di lancio. Modulo.

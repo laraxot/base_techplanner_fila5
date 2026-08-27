@@ -1,5 +1,12 @@
+<<<<<<< .merge_file_18W3i2
 # 🔄 SISTEMA AGGIORNAMENTO ROADMAP - FIXCITY PLATFORM
+=======
+<<<<<<< .merge_file_6ePArK
+# 🔄 SISTEMA AGGIORNAMENTO ROADMAP - FIXCITY PLATFORM
+=======
+>>>>>>> .merge_file_HiTu2z
 # 🔄 SISTEMA AGGIORNAMENTO ROADMAP - NOTIFY PLATFORM
+>>>>>>> .merge_file_G4Me6J
 
 **Versione**: 1.0  
 **Data Creazione**: Gennaio 2025  
@@ -21,8 +28,15 @@ project_docs/roadmaps/
 ├── roadmap-quality.md            # Roadmap qualità
 ├── roadmap-update-system.md      # Questo file
 └── modules/                      # Roadmap specifiche moduli
+<<<<<<< .merge_file_18W3i2
     ├── fixcity-roadmap.md
+=======
+<<<<<<< .merge_file_6ePArK
+    ├── fixcity-roadmap.md
+=======
+>>>>>>> .merge_file_HiTu2z
     ├── laraxot-roadmap.md
+>>>>>>> .merge_file_G4Me6J
     ├── user-roadmap.md
     ├── xot-roadmap.md
     ├── ui-roadmap.md
@@ -445,23 +459,44 @@ class ProgressReportGenerator
 
 ### Q2 2025
 - [ ] AI-powered insights
+<<<<<<< .merge_file_18W3i2
 - [ ] Predictive analytics
+=======
+<<<<<<< .merge_file_6ePArK
+- [ ] Predictive analytics
+=======
+>>>>>>> .merge_file_HiTu2z
 - [ ] Forecasting analytics
+>>>>>>> .merge_file_G4Me6J
 - [ ] Automated recommendations
 - [ ] Advanced reporting
 
 ### Q3 2025
 - [ ] Machine learning integration
 - [ ] Automated timeline optimization
+<<<<<<< .merge_file_18W3i2
 - [ ] Risk prediction
+=======
+<<<<<<< .merge_file_6ePArK
+- [ ] Risk prediction
+=======
+>>>>>>> .merge_file_HiTu2z
 - [ ] Risk forecast
+>>>>>>> .merge_file_G4Me6J
 - [ ] Resource optimization
 
 ### Q4 2025
 - [ ] Full automation
 - [ ] Zero-touch updates
+<<<<<<< .merge_file_18W3i2
 - [ ] Predictive planning
+=======
+<<<<<<< .merge_file_6ePArK
+- [ ] Predictive planning
+=======
+>>>>>>> .merge_file_HiTu2z
 - [ ] Forecasting planning
+>>>>>>> .merge_file_G4Me6J
 - [ ] Self-optimizing system
 
 ---
@@ -473,5 +508,12 @@ class ProgressReportGenerator
 
 ---
 
+<<<<<<< .merge_file_18W3i2
 *Questo sistema garantisce l'aggiornamento costante e coerente di tutte le roadmap del progetto FixCity.*
+=======
+<<<<<<< .merge_file_6ePArK
+*Questo sistema garantisce l'aggiornamento costante e coerente di tutte le roadmap del progetto FixCity.*
+=======
+>>>>>>> .merge_file_HiTu2z
 *Questo sistema garantisce l'aggiornamento costante e coerente di tutte le roadmap del progetto Notify.*
+>>>>>>> .merge_file_G4Me6J

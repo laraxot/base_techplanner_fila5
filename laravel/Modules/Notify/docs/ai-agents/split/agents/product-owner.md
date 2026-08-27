@@ -79,12 +79,21 @@ dependencies:
 
 ## Cross-References
 
+<<<<<<< .merge_file_j0yvcT
+=======
+<<<<<<< .merge_file_qvzeZK
+>>>>>>> .merge_file_Trw42U
 - ← [Agents Index](INDEX.md) — All 10 BMad agents
 - ← [Tasks Index](../../tasks/INDEX.md) — 22 reusable tasks
 - ← [Main AI Docs Index](../INDEX.md) — Master index
 - ← [../../../../AGENTS.md](../../../../../../../../AGENTS.md) — Original source
+<<<<<<< .merge_file_j0yvcT
+=======
+=======
+>>>>>>> .merge_file_Trw42U
 - ← [Agents Index](index.md) — All 10 BMad agents
 - ← [Tasks Index](../../tasks/index.md) — 22 reusable tasks
 - ← [Main AI Docs Index](../index.md) — Master index
 - ← [../../../../agents.md](../../../../../../../../agents.md) — Original source
+>>>>>>> .merge_file_YIrYo2
 

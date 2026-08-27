@@ -256,8 +256,15 @@ Trasformato FixCity da progetto con documentazione parziale a piattaforma enterp
 ## 📚 STRUTTURA FINALE COMPLETA
 
 ```
+<<<<<<< .merge_file_Q7dgi9
 base_fixcity_fila5_mono/
+=======
+<<<<<<< .merge_file_LUvsIY
+base_fixcity_fila5_mono/
+=======
+>>>>>>> .merge_file_aQSKWK
 base_ptv_fila5_mono/
+>>>>>>> .merge_file_5dflmt
 │
 ├── 📊 ROOT DOCS (15 files)
 │   ├── Strategic documentation

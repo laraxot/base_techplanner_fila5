@@ -121,6 +121,7 @@ When encountering "Cannot call constructor" in Filament widgets:
 ### Debugging Workflow
 ```bash
 # 1. Check widget structure
+<<<<<<< .merge_file_Z3TyWu
 grep -n "getOptions\|__construct" Modules/Quaeris/app/Filament/Widgets/Simple05ChartWidget.php
 
 # 2. Verify PHPStan compliance
@@ -128,6 +129,15 @@ cd laravel && vendor/bin/phpstan analyse Modules/Quaeris/app/Filament/Widgets/Si
 
 # 3. Check for syntax errors in related services
 cd laravel && php -l Modules/Quaeris/app/Services/ChartService.php
+=======
+grep -n "getOptions\|__construct" Modules/App/app/Filament/Widgets/Simple05ChartWidget.php
+
+# 2. Verify PHPStan compliance
+cd laravel && vendor/bin/phpstan analyse Modules/App/app/Filament/Widgets/Simple05ChartWidget.php
+
+# 3. Check for syntax errors in related services
+cd laravel && php -l Modules/App/app/Services/ChartService.php
+>>>>>>> .merge_file_tr2P2Y
 ```
 
 ## Chart Widget Pattern (CRITICAL)

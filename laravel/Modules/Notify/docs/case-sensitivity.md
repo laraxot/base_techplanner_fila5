@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_7AxwKx
+=======
 ---
 title: "Case Sensitivity Rules - Notify Module"
 module: notify
@@ -7,6 +9,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+>>>>>>> .merge_file_Y7cYNE
 # Case Sensitivity Rules - Notify Module
 
 ## Problema / Problem

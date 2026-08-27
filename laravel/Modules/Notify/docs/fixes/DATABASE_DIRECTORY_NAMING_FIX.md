@@ -119,8 +119,15 @@ php artisan test
 
 ## Related
 
+<<<<<<< .merge_file_sAoI2c
 - **GitHub Issue**: https://github.com/laraxot/base_fixcity_fila5/issues/4
+=======
+<<<<<<< .merge_file_KUY0QB
+- **GitHub Issue**: https://github.com/laraxot/base_fixcity_fila5/issues/4
+=======
+>>>>>>> .merge_file_JGIIHK
 - **GitHub Issue**: https://github.com/laraxot/platform/issues/4
+>>>>>>> .merge_file_sPI0lo
 - **Laravel Directory Structure**: https://laravel.com/docs/structure
 
 ## Checklist

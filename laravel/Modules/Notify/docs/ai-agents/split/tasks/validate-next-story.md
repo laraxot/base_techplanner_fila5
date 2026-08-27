@@ -146,12 +146,21 @@ Provide a structured validation report including:
 
 ## Cross-References
 
+<<<<<<< .merge_file_03jsdI
+=======
+<<<<<<< .merge_file_Z1Ff4D
+>>>>>>> .merge_file_hcQCTX
 - ← [Tasks Index](INDEX.md) — All 22 BMad tasks
 - ← [Agents Index](../../agents/INDEX.md) — 10 agent definitions
 - ← [Main AI Docs Index](../INDEX.md) — Master index
 - ← [../../../../AGENTS.md](../../../../../../../../AGENTS.md) — Original source
+<<<<<<< .merge_file_03jsdI
+=======
+=======
+>>>>>>> .merge_file_hcQCTX
 - ← [Tasks Index](index.md) — All 22 BMad tasks
 - ← [Agents Index](../../agents/index.md) — 10 agent definitions
 - ← [Main AI Docs Index](../index.md) — Master index
 - ← [../../../../agents.md](../../../../../../../../agents.md) — Original source
+>>>>>>> .merge_file_tQai4m
 

@@ -80,6 +80,13 @@ Prima di ogni commit:
 - [Indice AGENTS](./agents-split-index.md)
 - [testing.md](./testing.md) - Più dettagliato
 - [pest-testing.md](./pest-testing.md) - Guida Pest
+<<<<<<< .merge_file_Fy9VCL
 - [AGENTS.md originale](../../AGENTS.md)
+=======
+<<<<<<< .merge_file_nv9orc
+- [AGENTS.md originale](../../AGENTS.md)
+=======
+>>>>>>> .merge_file_RWM7fe
 - [agents.md originale](../../agents.md)
+>>>>>>> .merge_file_QRKE6n
 - [Index principale](./index.md)

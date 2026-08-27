@@ -18,7 +18,11 @@ class GetNewPasswordAction
         $user = $record;
 
         return once(function () use ($user) {
+<<<<<<< .merge_file_ZJrXlw
             $generator = new GetPronounceablePasswordAction();
+=======
+            $generator = new GetPronounceablePasswordAction;
+>>>>>>> .merge_file_Pjvl41
             $plainPassword = $generator->execute();
             $hasher = app(Hasher::class);
             $hashedPassword = $hasher->make($plainPassword);

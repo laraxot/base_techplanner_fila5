@@ -75,6 +75,10 @@ When encountering "Cannot call constructor" in Filament widgets:
 ### Debugging Workflow
 ```bash
 # 1. Check widget structure
+<<<<<<< .merge_file_fn0SsO
+grep -n "getOptions\|__construct" Modules/Quaeris/app/Filament/Widgets/Simple05ChartWidget.php
+=======
+<<<<<<< .merge_file_I9TWRC
 grep -n "getOptions\|__construct" Modules/Quaeris/app/Filament/Widgets/Simple05ChartWidget.php
 
 # 2. Verify PHPStan compliance
@@ -82,6 +86,20 @@ cd laravel && vendor/bin/phpstan analyse Modules/Quaeris/app/Filament/Widgets/Si
 
 # 3. Check for syntax errors in related services
 cd laravel && php -l Modules/Quaeris/app/Services/ChartService.php
+=======
+grep -n "getOptions\|__construct" Modules/App/app/Filament/Widgets/Simple05ChartWidget.php
+>>>>>>> .merge_file_4pwLoj
+
+# 2. Verify PHPStan compliance
+cd laravel && vendor/bin/phpstan analyse Modules/Quaeris/app/Filament/Widgets/Simple05ChartWidget.php
+
+# 3. Check for syntax errors in related services
+<<<<<<< .merge_file_fn0SsO
+cd laravel && php -l Modules/Quaeris/app/Services/ChartService.php
+=======
+cd laravel && php -l Modules/App/app/Services/ChartService.php
+>>>>>>> .merge_file_6FAjMf
+>>>>>>> .merge_file_4pwLoj
 ```
 
 ## Chart Widget Pattern (CRITICAL)
@@ -255,12 +273,21 @@ final class JpGraphServiceTest extends TestCase
 }
 ```
 
+<<<<<<< .merge_file_fn0SsO
 ## Quaeris ChartService + SimpleXXChartWidget (Memoria Critica)
 
 - **ChartService unico e centrale** (`Modules/Quaeris/app/Services/ChartService.php`):
+=======
+<<<<<<< .merge_file_I9TWRC
+## Quaeris ChartService + SimpleXXChartWidget (Memoria Critica)
+
+- **ChartService unico e centrale** (`Modules/Quaeris/app/Services/ChartService.php`):
+=======
+>>>>>>> .merge_file_4pwLoj
 ## App ChartService + SimpleXXChartWidget (Memoria Critica)
 
 - **ChartService unico e centrale** (`Modules/App/app/Services/ChartService.php`):
+>>>>>>> .merge_file_6FAjMf
   - Deve esistere **una sola** classe `ChartService` nel file.
   - Vietato lasciare blocchi duplicati (seconda classe incollata in fondo, costanti duplicate, numeri "sciolti" fuori da array) perché generano `ParseError` che bloccano tutti i widget (`Simple01`, `Simple02`, ecc.) e le pagine Filament (`ViewQuestionChart`).
   - Tutti i widget semplici devono usare **solo** metodi realmente esistenti nel servizio:
@@ -273,11 +300,27 @@ final class JpGraphServiceTest extends TestCase
     - Dentro `getData()` o metodi simili: `$this->chartService ??= new ChartService();`
   - Non definire costruttori complessi nei widget che chiamano `parent::__construct()`: Livewire/Filament gestiscono il ciclo di vita, i costruttori manuali creano facilmente problemi e violano PHPStan.
   - Quando si lavora con `$this->period` o simili, usare sempre default robusti (`$period = $this->period ?? 'monthly';`) per evitare stati nulli durante l'inizializzazione.
+<<<<<<< .merge_file_fn0SsO
 - **Regola per tutti gli agenti AI quando c'è un errore sui grafici Quaeris**:
   1. Controllare che `ChartService.php` sia sintatticamente corretto (nessun `];` fuori posto, nessun blocco duplicato in coda).
   2. Verificare che i widget `SimpleXXChartWidget` chiamino solo metodi esistenti del `ChartService`.
   3. Eseguire PHPStan livello 10 su servizio + widget coinvolti, per esempio:
      - `cd laravel && ./vendor/bin/phpstan analyse Modules/Quaeris/app/Services/ChartService.php Modules/Quaeris/app/Filament/Widgets/Simple01ChartWidget.php Modules/Quaeris/app/Filament/Widgets/Simple02ChartWidget.php --level=10 --no-progress`
+=======
+<<<<<<< .merge_file_I9TWRC
+- **Regola per tutti gli agenti AI quando c'è un errore sui grafici Quaeris**:
+  1. Controllare che `ChartService.php` sia sintatticamente corretto (nessun `];` fuori posto, nessun blocco duplicato in coda).
+  2. Verificare che i widget `SimpleXXChartWidget` chiamino solo metodi esistenti del `ChartService`.
+  3. Eseguire PHPStan livello 10 su servizio + widget coinvolti, per esempio:
+     - `cd laravel && ./vendor/bin/phpstan analyse Modules/Quaeris/app/Services/ChartService.php Modules/Quaeris/app/Filament/Widgets/Simple01ChartWidget.php Modules/Quaeris/app/Filament/Widgets/Simple02ChartWidget.php --level=10 --no-progress`
+=======
+- **Regola per tutti gli agenti AI quando c'è un errore sui grafici App**:
+  1. Controllare che `ChartService.php` sia sintatticamente corretto (nessun `];` fuori posto, nessun blocco duplicato in coda).
+  2. Verificare che i widget `SimpleXXChartWidget` chiamino solo metodi esistenti del `ChartService`.
+  3. Eseguire PHPStan livello 10 su servizio + widget coinvolti, per esempio:
+     - `cd laravel && ./vendor/bin/phpstan analyse Modules/App/app/Services/ChartService.php Modules/App/app/Filament/Widgets/Simple01ChartWidget.php Modules/App/app/Filament/Widgets/Simple02ChartWidget.php --level=10 --no-progress`
+>>>>>>> .merge_file_6FAjMf
+>>>>>>> .merge_file_4pwLoj
   4. Solo quando PHPStan è pulito e la pagina Filament si carica senza `ParseError` il bug è considerato chiuso.
 
 ## Riferimenti

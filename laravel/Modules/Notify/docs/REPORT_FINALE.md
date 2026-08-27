@@ -226,8 +226,15 @@ Themes/Sixteen/resources/views/pages/
 ## 📞 Contatti
 
 Per informazioni:
+<<<<<<< .merge_file_ck9o2a
 - **Repository**: `/var/www/_bases/base_fixcity_fila5`
+=======
+<<<<<<< .merge_file_MfgKCX
+- **Repository**: `/var/www/_bases/base_fixcity_fila5`
+=======
+>>>>>>> .merge_file_Ditn1t
 - **Repository**: `/var/www/_bases/base_ptv_fila5`
+>>>>>>> .merge_file_RlmsYB
 - **Tema**: `Themes/Sixteen`
 - **Documentazione**: `docs/PAGINE_CREATE.md`
 

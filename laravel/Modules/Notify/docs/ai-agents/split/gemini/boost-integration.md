@@ -142,9 +142,17 @@ Laravel Boost is currently in beta and receives frequent updates. Always leverag
 
 ## Cross-References
 
+<<<<<<< .merge_file_8ui4eq
 - ← [GEMINI Index](INDEX.md) — All Gemini guidelines
 - ← [Main AI Docs Index](../INDEX.md) — Master index
+=======
+<<<<<<< .merge_file_qaJ5Me
+- ← [GEMINI Index](INDEX.md) — All Gemini guidelines
+- ← [Main AI Docs Index](../INDEX.md) — Master index
+=======
+>>>>>>> .merge_file_n4wLuj
 - ← [GEMINI Index](index.md) — All Gemini guidelines
 - ← [Main AI Docs Index](../index.md) — Master index
+>>>>>>> .merge_file_gjYn5m
 - ← [../../../../laravel/GEMINI.md](../../../../laravel/../../../../laravel/GEMINI.md) — Original source
 

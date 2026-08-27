@@ -22,9 +22,19 @@ related:
 
 ## Informazioni Generali
 
+<<<<<<< .merge_file_UyvnJR
 <<<<<<< .merge_file_hrRrIX
 - **File**: `/var/www/html/Quaeris/laravel/Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php`
 =======
+=======
+<<<<<<< .merge_file_RViLIs
+- **File**: `/var/www/html/Quaeris/laravel/Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php`
+=======
+<<<<<<< .merge_file_hrRrIX
+- **File**: `/var/www/html/Quaeris/laravel/Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php`
+=======
+>>>>>>> .merge_file_uuicFu
+>>>>>>> .merge_file_ZMiFun
 - **File**: `/var/www/_bases/base_ptvx_fila5/laravel/Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php`
 >>>>>>> .merge_file_w7L8Nk
 - **Base**: `XotBaseMigration`

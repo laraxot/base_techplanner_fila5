@@ -27,8 +27,15 @@ related:
 
 ## 📋 Overview
 
+<<<<<<< .merge_file_UAE2pT
 This discussion tracks the AI agent's work on improving GitHub Actions, documentation, and development workflows for the FixCity platform.
+=======
+<<<<<<< .merge_file_wj6WlR
+This discussion tracks the AI agent's work on improving GitHub Actions, documentation, and development workflows for the FixCity platform.
+=======
+>>>>>>> .merge_file_v1Ims9
 This discussion tracks the AI agent's work on improving GitHub Actions, documentation, and development workflows for the Notify platform.
+>>>>>>> .merge_file_EZ8EJN
 
 ---
 
@@ -191,10 +198,18 @@ ssh-keygen -t ed25519 -C "actions@github.com"
 - [Sync Subtrees Docs](bashscripts/docs/github/actions/sync-subtrees.md)
 
 ### GitHub Links
+<<<<<<< .merge_file_UAE2pT
 - [Actions Tab](https://github.com/laraxot/base_fixcity_fila5/actions)
 - [Settings > Secrets](https://github.com/laraxot/base_fixcity_fila5/settings/secrets/actions)
+=======
+<<<<<<< .merge_file_wj6WlR
+- [Actions Tab](https://github.com/laraxot/base_fixcity_fila5/actions)
+- [Settings > Secrets](https://github.com/laraxot/base_fixcity_fila5/settings/secrets/actions)
+=======
+>>>>>>> .merge_file_v1Ims9
 - [Actions Tab](https://github.com/laraxot/platform/actions)
 - [Settings > Secrets](https://github.com/laraxot/platform/settings/secrets/actions)
+>>>>>>> .merge_file_EZ8EJN
 - [Settings > SSH Keys](https://github.com/settings/keys)
 
 ---

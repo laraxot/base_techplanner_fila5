@@ -1,12 +1,26 @@
 ---
+<<<<<<< .merge_file_D9103X
 title: "📸 Analisi Visiva Homepage FixCity vs Bootstrap Italia"
+=======
+<<<<<<< .merge_file_ZjKMB3
+title: "📸 Analisi Visiva Homepage FixCity vs Bootstrap Italia"
+=======
+>>>>>>> .merge_file_ZGCIBf
 title: "📸 Analisi Visiva Homepage Notify vs Bootstrap Italia"
+>>>>>>> .merge_file_b7zbuz
 type: concept
 tags: [analisi, visiva]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< .merge_file_D9103X
 qmd: "analisi-visiva 📸 analisi visiva homepage fixcity vs bootstrap italia"
+=======
+<<<<<<< .merge_file_ZjKMB3
+qmd: "analisi-visiva 📸 analisi visiva homepage fixcity vs bootstrap italia"
+=======
+>>>>>>> .merge_file_ZGCIBf
 qmd: "analisi-visiva 📸 analisi visiva homepage laraxot vs bootstrap italia"
+>>>>>>> .merge_file_b7zbuz
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -15,15 +29,29 @@ related:
   - "./screenshot-analysis.md"
 ---
 
+<<<<<<< .merge_file_D9103X
 # 📸 Analisi Visiva Homepage FixCity vs Bootstrap Italia
+=======
+<<<<<<< .merge_file_ZjKMB3
+# 📸 Analisi Visiva Homepage FixCity vs Bootstrap Italia
+=======
+>>>>>>> .merge_file_ZGCIBf
 # 📸 Analisi Visiva Homepage Notify vs Bootstrap Italia
+>>>>>>> .merge_file_b7zbuz
 
 ## Data: {{ date('Y-m-d H:i:s') }}
 
 ## Reference
 - **Bootstrap Italia**: https://italia.github.io/design-comuni-pagine-statiche/sito/homepage.html
+<<<<<<< .merge_file_D9103X
 - **FixCity**: http://fixcity.local/it/tests/homepage
+=======
+<<<<<<< .merge_file_ZjKMB3
+- **FixCity**: http://fixcity.local/it/tests/homepage
+=======
+>>>>>>> .merge_file_ZGCIBf
 - **Notify**: http://laraxot.local/it/tests/homepage
+>>>>>>> .merge_file_b7zbuz
 
 ---
 
@@ -45,8 +73,15 @@ related:
 - Background: `#FFFFFF`
 - Text: `#1A1A1A`
 
+<<<<<<< .merge_file_D9103X
 ### FixCity (Attuale)
+=======
+<<<<<<< .merge_file_ZjKMB3
+### FixCity (Attuale)
+=======
+>>>>>>> .merge_file_ZGCIBf
 ### Notify (Attuale)
+>>>>>>> .merge_file_b7zbuz
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │ [Header Component - XotBase]                                │
@@ -87,8 +122,15 @@ related:
 - Title H2: `text-center mb-5`
 - Card shadow: `shadow-sm`
 
+<<<<<<< .merge_file_D9103X
 ### FixCity (Attuale)
+=======
+<<<<<<< .merge_file_ZjKMB3
+### FixCity (Attuale)
+=======
+>>>>>>> .merge_file_ZGCIBf
 ### Notify (Attuale)
+>>>>>>> .merge_file_b7zbuz
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │ [Hero Component - Tailwind classes]                         │
@@ -136,8 +178,15 @@ related:
 - Card: `card card-teaser shadow-sm h-100`
 - Button: `btn btn-outline-primary btn-sm mt-3`
 
+<<<<<<< .merge_file_D9103X
 ### FixCity (Attuale)
+=======
+<<<<<<< .merge_file_ZjKMB3
+### FixCity (Attuale)
+=======
+>>>>>>> .merge_file_ZGCIBf
 ### Notify (Attuale)
+>>>>>>> .merge_file_b7zbuz
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │ [Governance Component - Tailwind Grid]                      │
@@ -189,8 +238,15 @@ related:
 - Date badge: `calendar-date text-primary h3`
 - Day abbr: `calendar-day text-muted small text-uppercase`
 
+<<<<<<< .merge_file_D9103X
 ### FixCity (Attuale)
+=======
+<<<<<<< .merge_file_ZjKMB3
+### FixCity (Attuale)
+=======
+>>>>>>> .merge_file_ZGCIBf
 ### Notify (Attuale)
+>>>>>>> .merge_file_b7zbuz
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │ [Events Component - Flexbox Tailwind]                       │
@@ -245,8 +301,15 @@ related:
 - Card: `card card-teaser shadow-sm h-100`
 - Title: `h6 text-uppercase text-muted mb-3`
 
+<<<<<<< .merge_file_D9103X
 ### FixCity (Attuale)
+=======
+<<<<<<< .merge_file_ZjKMB3
+### FixCity (Attuale)
+=======
+>>>>>>> .merge_file_ZGCIBf
 ### Notify (Attuale)
+>>>>>>> .merge_file_b7zbuz
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │ [Topics Component - Tailwind Cards]                         │
@@ -292,8 +355,15 @@ related:
 └─────────────────────────────────────────────────────────────┘
 ```
 
+<<<<<<< .merge_file_D9103X
 ### FixCity (Attuale)
+=======
+<<<<<<< .merge_file_ZjKMB3
+### FixCity (Attuale)
+=======
+>>>>>>> .merge_file_ZGCIBf
 ### Notify (Attuale)
+>>>>>>> .merge_file_b7zbuz
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │ [Footer Component - XotBase]                                │

@@ -24,7 +24,8 @@ class ChristmasGreetingMailable extends Mailable
     public function __construct(
         public string $recipientName = 'Cliente Valutato',
         public string $senderName = 'Il Team del nostro Studio',
-    ) {}
+    ) {
+    }
 
     /**
      * Get the message envelope.
@@ -35,7 +36,15 @@ class ChristmasGreetingMailable extends Mailable
         $fromAddress = is_string($fromAddress) ? $fromAddress : 'hello@example.com';
 
         return new Envelope(
+<<<<<<< .merge_file_OpludZ
             from: new Address((string) config('mail.from.address', 'hello@example.com'), $this->senderName),
+=======
+<<<<<<< .merge_file_Jz2sQk
+            from: new Address((string) config('mail.from.address', 'hello@example.com'), $this->senderName),
+=======
+            from: new Address($fromAddress, $this->senderName),
+>>>>>>> .merge_file_Wj1WRC
+>>>>>>> .merge_file_yXyltE
             subject: 'Auguri di Buone Feste e Informazioni Importanti!',
         );
     }

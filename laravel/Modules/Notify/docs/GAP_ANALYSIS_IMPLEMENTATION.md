@@ -203,8 +203,15 @@ Modules/Fixcity/
 **Files da creare/modificare**:
 ```
 lang/en/
+<<<<<<< .merge_file_T55zTG
 ├── fixcity.php                               [NEW]
+=======
+<<<<<<< .merge_file_HcqBIx
+├── fixcity.php                               [NEW]
+=======
+>>>>>>> .merge_file_gFp7vc
 ├── ptv.php                               [NEW]
+>>>>>>> .merge_file_tyH3ad
 ├── user.php                                  [NEW]
 └── validation.php                            [NEW]
 ```

@@ -83,16 +83,25 @@ new class extends Component {
 
 ```bash
 # Homepage
+<<<<<<< .merge_file_LKk0oI
+=======
+<<<<<<< .merge_file_eKHKDt
+>>>>>>> .merge_file_Dmtmq2
 curl http://fixcity.local/it/tests/homepage
 
 # Altre pagine (se esistono nel CMS)
 curl http://fixcity.local/it/tests/servizi
 curl http://fixcity.local/it/tests/amministrazione
+<<<<<<< .merge_file_LKk0oI
+=======
+=======
+>>>>>>> .merge_file_Dmtmq2
 curl http://ptv.local/it/tests/homepage
 
 # Altre pagine (se esistono nel CMS)
 curl http://ptv.local/it/tests/servizi
 curl http://ptv.local/it/tests/amministrazione
+>>>>>>> .merge_file_W8jPvr
 ```
 
 ## Files Modificati

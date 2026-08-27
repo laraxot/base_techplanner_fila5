@@ -188,8 +188,15 @@ Tutto il resto è **RUMORE**.
 ## 🔗 Related Documentation
 
 ### AI Agents Docs
+<<<<<<< .merge_file_xb2Eyc
 - **[Rules Index](00-INDEX.md)** - All rules
+=======
+<<<<<<< .merge_file_vXUmgb
+- **[Rules Index](00-INDEX.md)** - All rules
+=======
+>>>>>>> .merge_file_y3u6tL
 - **[Rules Index](00-index.md)** - All rules
+>>>>>>> .merge_file_dG4QIq
 - **[DRY Principle](../guidelines/dry-kiss.md)** - DRY + KISS
 - **[Translation Structure](translation-structure-5-levels.md)** - 5 levels rule
 

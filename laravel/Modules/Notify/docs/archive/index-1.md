@@ -46,9 +46,19 @@ This document serves as the central index for the Notify module, providing guida
 - Update this index if new features or significant changes are introduced to the Notify module.
 
 ## Links to Related Documentation
+<<<<<<< .merge_file_yt96k0
 <<<<<<< .merge_file_Z69eXM
 - [Architecture Overview](./ARCHITECTURE.md)
 =======
+=======
+<<<<<<< .merge_file_9nKA8A
+- [Architecture Overview](./ARCHITECTURE.md)
+=======
+<<<<<<< .merge_file_Z69eXM
+- [Architecture Overview](./ARCHITECTURE.md)
+=======
+>>>>>>> .merge_file_RS6W0G
+>>>>>>> .merge_file_X3UDvO
 - [Architecture Overview](./architecture.md)
 >>>>>>> .merge_file_uHkTw0
 - [Notification Channels Implementation](./NOTIFICATION_CHANNELS_IMPLEMENTATION.md)
@@ -81,9 +91,19 @@ Questo documento serve come indice centrale per il modulo Notify, fornendo una g
 
 ### Architettura e Struttura
 - [README](./README.md) - Panoramica generale del modulo
+<<<<<<< .merge_file_yt96k0
 <<<<<<< .merge_file_Z69eXM
 - [Architettura](./ARCHITECTURE.md) - Architettura generale del modulo
 =======
+=======
+<<<<<<< .merge_file_9nKA8A
+- [Architettura](./ARCHITECTURE.md) - Architettura generale del modulo
+=======
+<<<<<<< .merge_file_Z69eXM
+- [Architettura](./ARCHITECTURE.md) - Architettura generale del modulo
+=======
+>>>>>>> .merge_file_RS6W0G
+>>>>>>> .merge_file_X3UDvO
 - [Architettura](./architecture.md) - Architettura generale del modulo
 >>>>>>> .merge_file_uHkTw0
 - [Struttura](./structure.md) - Struttura delle directory e dei componenti
@@ -164,13 +184,27 @@ Implementare una gestione robusta degli errori per gestire i fallimenti nella co
 ## Sottocartelle
 
 ### Mail Templates
+<<<<<<< .merge_file_yt96k0
 <<<<<<< .merge_file_Z69eXM
+=======
+<<<<<<< .merge_file_9nKA8A
+=======
+<<<<<<< .merge_file_Z69eXM
+>>>>>>> .merge_file_RS6W0G
+>>>>>>> .merge_file_X3UDvO
 - [Index](./mail-templates/INDEX.md) - Indice della documentazione sui template email
 - [Implementazione Slug](./mail-templates/MAIL_TEMPLATE_SLUG_IMPLEMENTATION.md) - Implementazione del campo slug
 
 ### Notifications
 - [Index](./notifications/INDEX.md) - Indice della documentazione sulle notifiche
+<<<<<<< .merge_file_yt96k0
 =======
+=======
+<<<<<<< .merge_file_9nKA8A
+=======
+=======
+>>>>>>> .merge_file_RS6W0G
+>>>>>>> .merge_file_X3UDvO
 - [Index](./mail-templates/index.md) - Indice della documentazione sui template email
 - [Implementazione Slug](./mail-templates/MAIL_TEMPLATE_SLUG_IMPLEMENTATION.md) - Implementazione del campo slug
 

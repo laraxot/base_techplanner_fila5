@@ -32,7 +32,11 @@ class SendMailAction
     /**
      * @param  array<string, mixed>  $vars
      *
+<<<<<<< .merge_file_f8WxKm
      * @throws \RuntimeException
+=======
+     * @throws RuntimeException
+>>>>>>> .merge_file_VSt5Ub
      */
     public function execute(string $to, ?string $body = null, array $vars = [], ?string $from = null, string $driver = 'duocircle'): void
     {

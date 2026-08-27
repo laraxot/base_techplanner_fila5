@@ -132,6 +132,8 @@ Based on Berger+Team study (31 Italian sources):
 **Last Updated**: 2026-03-20  
 **Status**: ✅ Mandatory  
 **Enforcement**: Code Review + Pre-commit Hook
+<<<<<<< .merge_file_3D8Xit
+=======
 
 ---
 
@@ -251,3 +253,4 @@ Based on Berger+Team study (31 Italian sources):
 **Last Updated**: 2026-03-20  
 **Status**: ✅ Mandatory  
 **Enforcement**: Code Review + Pre-commit Hook
+>>>>>>> .merge_file_ekwgIj

@@ -34,8 +34,15 @@ Le Memories progettuali vivono qui, nel wiki del Module **Notify**, e vengono ca
 
 - La sorgente di verita' per le Memories e' sempre il wiki locale
 - Non embeddare Memories nei prompt di avvio
+<<<<<<< .merge_file_B2Lg0X
 - Per Memories globali, consulta il [wiki root](../../docs/wiki/memories/INDEX.md)
+=======
+<<<<<<< .merge_file_fFTFyU
+- Per Memories globali, consulta il [wiki root](../../docs/wiki/memories/INDEX.md)
+=======
+>>>>>>> .merge_file_wdYOck
 - Per Memories globali, consulta il [wiki root](../../docs/wiki/memories/index.md)
+>>>>>>> .merge_file_9DCNKr
 
 ## Aggiungere una Nuova MEMORIES
 

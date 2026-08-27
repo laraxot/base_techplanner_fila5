@@ -1,7 +1,14 @@
 # Filament Widget Tables Policy
 
+<<<<<<< .merge_file_mMxR02
 > Indice: [./00-INDEX.md](./00-INDEX.md)
+=======
+<<<<<<< .merge_file_XmRFoW
+> Indice: [./00-INDEX.md](./00-INDEX.md)
+=======
+>>>>>>> .merge_file_sFW0xd
 > Indice: [./00-index.md](./00-index.md)
+>>>>>>> .merge_file_DTeTzq
 > Regola correlata: [../../rules/filament-widget-tables-rule.md](../../rules/filament-widget-tables-rule.md)
 > Skill correlata: [../../skills/filament-widget-tables-governance/SKILL.md](../../skills/filament-widget-tables-governance/SKILL.md)
 
@@ -11,10 +18,18 @@ Per qualunque elemento che sia una lista, una collezione di outcome o una vista 
 
 ## Quando vale
 
+<<<<<<< .merge_file_mMxR02
 - outcomes di un mercato predict
 - liste di predicts, articles, events, profiles
+=======
+<<<<<<< .merge_file_XmRFoW
+- outcomes di un mercato predict
+- liste di predicts, articles, events, profiles
+=======
+>>>>>>> .merge_file_sFW0xd
 - outcomes di un mercato forecast
 - liste di forecasts, articles, events, profiles
+>>>>>>> .merge_file_DTeTzq
 - viste operative che richiedono ricerca, ordinamento o filtri
 - tabelle front office e back office che devono restare coerenti
 

@@ -365,12 +365,21 @@ Risk profile: qa.qaLocation/assessments/{epic}.{story}-risk-{YYYYMMDD}.md
 
 ## Cross-References
 
+<<<<<<< .merge_file_eAa7hy
+=======
+<<<<<<< .merge_file_GD8MIX
+>>>>>>> .merge_file_786SVg
 - ← [Tasks Index](INDEX.md) — All 22 BMad tasks
 - ← [Agents Index](../../agents/INDEX.md) — 10 agent definitions
 - ← [Main AI Docs Index](../INDEX.md) — Master index
 - ← [../../../../AGENTS.md](../../../../../../../../AGENTS.md) — Original source
+<<<<<<< .merge_file_eAa7hy
+=======
+=======
+>>>>>>> .merge_file_786SVg
 - ← [Tasks Index](index.md) — All 22 BMad tasks
 - ← [Agents Index](../../agents/index.md) — 10 agent definitions
 - ← [Main AI Docs Index](../index.md) — Master index
 - ← [../../../../agents.md](../../../../../../../../agents.md) — Original source
+>>>>>>> .merge_file_669LJV
 

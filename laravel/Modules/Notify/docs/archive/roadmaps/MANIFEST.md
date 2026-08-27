@@ -28,9 +28,19 @@ During **Phase 11: Documentation Consolidation**, all scattered roadmap, timelin
 |------|----------|------|------------------|
 | MASTER_ROADMAP.md | `/docs/` | 724 lines | `archive/roadmaps/legacy-master-roadmaps/` |
 | MASTER_ROADMAP_2025.md | `/docs/` | 604 lines | `archive/roadmaps/legacy-master-roadmaps/` |
+<<<<<<< .merge_file_863FpW
 <<<<<<< .merge_file_ETjRMx
 | PROJECT-ROADMAP.md | `/docs/` | 172 lines | `archive/roadmaps/legacy-master-roadmaps/` |
 =======
+=======
+<<<<<<< .merge_file_9cZDkK
+| PROJECT-ROADMAP.md | `/docs/` | 172 lines | `archive/roadmaps/legacy-master-roadmaps/` |
+=======
+<<<<<<< .merge_file_ETjRMx
+| PROJECT-ROADMAP.md | `/docs/` | 172 lines | `archive/roadmaps/legacy-master-roadmaps/` |
+=======
+>>>>>>> .merge_file_t5Nlg5
+>>>>>>> .merge_file_t7s8NI
 | project-roadmap.md | `/docs/` | 172 lines | `archive/roadmaps/legacy-master-roadmaps/` |
 >>>>>>> .merge_file_Bohd65
 | PROJECT_ROADMAP.md | `/docs/` | 691 lines | `archive/roadmaps/legacy-master-roadmaps/` |
@@ -217,9 +227,19 @@ docs/archive/roadmaps/
 ├── legacy-master-roadmaps/
 │   ├── MASTER_ROADMAP.md (original 724 lines)
 │   ├── MASTER_ROADMAP_2025.md (604 lines)
+<<<<<<< .merge_file_863FpW
 <<<<<<< .merge_file_ETjRMx
 │   ├── PROJECT-ROADMAP.md (172 lines)
 =======
+=======
+<<<<<<< .merge_file_9cZDkK
+│   ├── PROJECT-ROADMAP.md (172 lines)
+=======
+<<<<<<< .merge_file_ETjRMx
+│   ├── PROJECT-ROADMAP.md (172 lines)
+=======
+>>>>>>> .merge_file_t5Nlg5
+>>>>>>> .merge_file_t7s8NI
 │   ├── project-roadmap.md (172 lines)
 >>>>>>> .merge_file_Bohd65
 │   ├── PROJECT_ROADMAP.md (691 lines)
@@ -312,9 +332,19 @@ docs/archive/roadmaps/
 - ✅ Created MANIFEST.md (THIS FILE)
 
 ### Wave 3: Cross-Linking 🟡 (IN PROGRESS)
+<<<<<<< .merge_file_863FpW
 <<<<<<< .merge_file_ETjRMx
 - [ ] Update `/docs/INDEX.md` with roadmap link
 =======
+=======
+<<<<<<< .merge_file_9cZDkK
+- [ ] Update `/docs/INDEX.md` with roadmap link
+=======
+<<<<<<< .merge_file_ETjRMx
+- [ ] Update `/docs/INDEX.md` with roadmap link
+=======
+>>>>>>> .merge_file_t5Nlg5
+>>>>>>> .merge_file_t7s8NI
 - [ ] Update `/docs/index.md` with roadmap link
 >>>>>>> .merge_file_Bohd65
 - [ ] Verify all internal links (no 404s)

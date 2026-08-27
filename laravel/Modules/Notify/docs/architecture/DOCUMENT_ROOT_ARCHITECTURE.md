@@ -7,8 +7,15 @@ This project uses a **custom Laravel public path architecture** where the web-ac
 ## Architecture
 
 ```
+<<<<<<< .merge_file_dzOrmV
 /var/www/_bases/base_fixcity_fila5/
+=======
+<<<<<<< .merge_file_JFPcME
+/var/www/_bases/base_fixcity_fila5/
+=======
+>>>>>>> .merge_file_DHoQVq
 /var/www/_bases/base_ptvx_fila5/
+>>>>>>> .merge_file_xu1hFB
 ├── public_html/                    ← ACTUAL DocumentRoot (Apache serves from here)
 │   ├── index.php                   ← Entry point
 │   ├── .htaccess
@@ -84,10 +91,24 @@ The entry point defines `LARAVEL_DIR` constant pointing to the Laravel installat
 
 ### 4. Apache Configuration
 
+<<<<<<< .merge_file_dzOrmV
 **Active VHost**: `/etc/apache2/sites-enabled/fixcity.local.conf`
 
 ```apache
 DocumentRoot /var/www/_bases/base_fixcity_fila5/public_html
+=======
+<<<<<<< .merge_file_JFPcME
+**Active VHost**: `/etc/apache2/sites-enabled/fixcity.local.conf`
+
+```apache
+DocumentRoot /var/www/_bases/base_fixcity_fila5/public_html
+=======
+**Active VHost**: `/etc/apache2/sites-enabled/laraxot.local.conf`
+
+```apache
+DocumentRoot /var/www/_bases/base_ptvx_fila5/public_html
+>>>>>>> .merge_file_xu1hFB
+>>>>>>> .merge_file_DHoQVq
 ```
 
 ## Verification
@@ -95,11 +116,27 @@ DocumentRoot /var/www/_bases/base_fixcity_fila5/public_html
 Test that `public_path()` resolves correctly:
 
 ```bash
+<<<<<<< .merge_file_dzOrmV
 cd /var/www/_bases/base_fixcity_fila5/laravel
 php -r "require 'vendor/autoload.php'; \$app = require 'bootstrap/app.php'; echo public_path() . PHP_EOL;"
 ```
 
 **Expected output**: `/var/www/_bases/base_fixcity_fila5/public_html`
+=======
+<<<<<<< .merge_file_JFPcME
+cd /var/www/_bases/base_fixcity_fila5/laravel
+php -r "require 'vendor/autoload.php'; \$app = require 'bootstrap/app.php'; echo public_path() . PHP_EOL;"
+```
+
+**Expected output**: `/var/www/_bases/base_fixcity_fila5/public_html`
+=======
+cd /var/www/_bases/base_ptvx_fila5/laravel
+php -r "require 'vendor/autoload.php'; \$app = require 'bootstrap/app.php'; echo public_path() . PHP_EOL;"
+```
+
+**Expected output**: `/var/www/_bases/base_ptvx_fila5/public_html`
+>>>>>>> .merge_file_xu1hFB
+>>>>>>> .merge_file_DHoQVq
 
 ## Why Both Directories Exist
 

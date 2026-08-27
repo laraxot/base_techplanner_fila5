@@ -1,5 +1,12 @@
+<<<<<<< .merge_file_rjV8Jd
 # Base Fixcity Fila5 — PROJECT.md
+=======
+<<<<<<< .merge_file_x7Zstd
+# Base Fixcity Fila5 — PROJECT.md
+=======
+>>>>>>> .merge_file_Kjhv7N
 # Base App Fila5 — PROJECT.md
+>>>>>>> .merge_file_kQGXG3
 
 ## Context
 Laravel + Filament v5 modular monolith (Laraxot architecture).
@@ -7,8 +14,15 @@ Theme: Sixteen (Bootstrap Italia → Tailwind parity).
 Frontend wizard: Ticket creation wizard via `CreateTicketWizardWidget` (Filament v5 Schemas).
 
 ## Current Milestone
+<<<<<<< .merge_file_rjV8Jd
 **M0: Fixcity Ticket Wizard — Visual & HTML Parity** ✅ DONE
+=======
+<<<<<<< .merge_file_x7Zstd
+**M0: Fixcity Ticket Wizard — Visual & HTML Parity** ✅ DONE
+=======
+>>>>>>> .merge_file_Kjhv7N
 **M0: App Ticket Wizard — Visual & HTML Parity** ✅ DONE
+>>>>>>> .merge_file_kQGXG3
 
 Target: `segnalazione-crea` wizard page → 90%+ parity with Design Comuni `segnalazione-02-dati.html`
 
@@ -32,5 +46,12 @@ Target: `segnalazione-crea` wizard page → 90%+ parity with Design Comuni `segn
 - Filament Schemas = unified system (v5). Forms + Infolists coexist.
 - Widget → NO model binding (`getFormModel() → null`)
 - CSS scoped overrides → never mutate Filament markup
+<<<<<<< .merge_file_rjV8Jd
 - Multilingual: all strings via `__('fixcity::ticket.*')`
+=======
+<<<<<<< .merge_file_x7Zstd
+- Multilingual: all strings via `__('fixcity::ticket.*')`
+=======
+>>>>>>> .merge_file_Kjhv7N
 - Multilingual: all strings via `__('laraxot::ticket.*')`
+>>>>>>> .merge_file_kQGXG3

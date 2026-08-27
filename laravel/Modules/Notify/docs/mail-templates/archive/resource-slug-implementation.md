@@ -22,9 +22,19 @@ related:
 
 ## Panoramica
 
+<<<<<<< .merge_file_l8FokW
 <<<<<<< .merge_file_BWKsVQ
 Questo documento descrive l'implementazione del campo `slug` nella risorsa Filament `MailTemplateResource`, rispettando le convenzioni e gli standard del progetto SaluteOra.
 =======
+=======
+<<<<<<< .merge_file_SaUXu3
+Questo documento descrive l'implementazione del campo `slug` nella risorsa Filament `MailTemplateResource`, rispettando le convenzioni e gli standard del progetto SaluteOra.
+=======
+<<<<<<< .merge_file_BWKsVQ
+Questo documento descrive l'implementazione del campo `slug` nella risorsa Filament `MailTemplateResource`, rispettando le convenzioni e gli standard del progetto SaluteOra.
+=======
+>>>>>>> .merge_file_BuwGMa
+>>>>>>> .merge_file_Rz18dM
 Questo documento descrive l'implementazione del campo `slug` nella risorsa Filament `MailTemplateResource`, rispettando le convenzioni e gli standard del progetto <nome progetto>.
 >>>>>>> .merge_file_BWpgPW
 
@@ -42,16 +52,33 @@ public static function getFormSchema(): array
         'name' => Forms\Components\TextInput::make('name')
             ->required()
             ->maxLength(255),
+<<<<<<< .merge_file_l8FokW
 <<<<<<< .merge_file_BWKsVQ
             
 =======
+=======
+<<<<<<< .merge_file_SaUXu3
+            
+=======
+<<<<<<< .merge_file_BWKsVQ
+            
+=======
+>>>>>>> .merge_file_BuwGMa
+>>>>>>> .merge_file_Rz18dM
 
 >>>>>>> .merge_file_BWpgPW
         'slug' => Forms\Components\TextInput::make('slug')
             ->required()
             ->unique(ignoreRecord: true)
             ->maxLength(255)
+<<<<<<< .merge_file_l8FokW
 <<<<<<< .merge_file_BWKsVQ
+=======
+<<<<<<< .merge_file_SaUXu3
+=======
+<<<<<<< .merge_file_BWKsVQ
+>>>>>>> .merge_file_BuwGMa
+>>>>>>> .merge_file_Rz18dM
             ->afterStateUpdated(fn (string $context, $state, callable $set) => 
                 $context === 'create' ? $set('slug', Str::slug($state)) : null),
             
@@ -59,7 +86,14 @@ public static function getFormSchema(): array
             ->required()
             ->maxLength(255),
         
+<<<<<<< .merge_file_l8FokW
 =======
+=======
+<<<<<<< .merge_file_SaUXu3
+=======
+=======
+>>>>>>> .merge_file_BuwGMa
+>>>>>>> .merge_file_Rz18dM
             ->afterStateUpdated(fn (string $context, $state, callable $set) =>
                 $context === 'create' ? $set('slug', Str::slug($state)) : null),
 
@@ -80,9 +114,19 @@ public static function getFormSchema(): array
 3. **Validazione Unicità**: L'opzione `unique(ignoreRecord: true)` garantisce unicità, escludendo il record corrente durante l'aggiornamento.
 4. **Generazione Automatica**: La callback `afterStateUpdated()` genera automaticamente lo slug dal nome quando si crea un nuovo record.
 
+<<<<<<< .merge_file_l8FokW
 <<<<<<< .merge_file_BWKsVQ
 ## Conformità con gli Standard SaluteOra
 =======
+=======
+<<<<<<< .merge_file_SaUXu3
+## Conformità con gli Standard SaluteOra
+=======
+<<<<<<< .merge_file_BWKsVQ
+## Conformità con gli Standard SaluteOra
+=======
+>>>>>>> .merge_file_BuwGMa
+>>>>>>> .merge_file_Rz18dM
 ## Conformità con gli Standard <nome progetto>
 >>>>>>> .merge_file_BWpgPW
 
@@ -109,13 +153,27 @@ public static function getListTableColumns(): array
     return [
         'id' => Tables\Columns\TextColumn::make('id')
             ->sortable(),
+<<<<<<< .merge_file_l8FokW
 <<<<<<< .merge_file_BWKsVQ
+=======
+<<<<<<< .merge_file_SaUXu3
+=======
+<<<<<<< .merge_file_BWKsVQ
+>>>>>>> .merge_file_BuwGMa
+>>>>>>> .merge_file_Rz18dM
             
         'name' => Tables\Columns\TextColumn::make('name')
             ->searchable()
             ->sortable(),
             
+<<<<<<< .merge_file_l8FokW
 =======
+=======
+<<<<<<< .merge_file_SaUXu3
+=======
+=======
+>>>>>>> .merge_file_BuwGMa
+>>>>>>> .merge_file_Rz18dM
 
         'name' => Tables\Columns\TextColumn::make('name')
             ->searchable()
@@ -126,9 +184,19 @@ public static function getListTableColumns(): array
             ->searchable()
             ->sortable()
             ->copyable(),
+<<<<<<< .merge_file_l8FokW
 <<<<<<< .merge_file_BWKsVQ
             
 =======
+=======
+<<<<<<< .merge_file_SaUXu3
+            
+=======
+<<<<<<< .merge_file_BWKsVQ
+            
+=======
+>>>>>>> .merge_file_BuwGMa
+>>>>>>> .merge_file_Rz18dM
 
 >>>>>>> .merge_file_BWpgPW
         // Altri campi...
@@ -158,9 +226,19 @@ public static function getTableFilters(): array
 {
     return [
         // Altri filtri...
+<<<<<<< .merge_file_l8FokW
 <<<<<<< .merge_file_BWKsVQ
         
 =======
+=======
+<<<<<<< .merge_file_SaUXu3
+        
+=======
+<<<<<<< .merge_file_BWKsVQ
+        
+=======
+>>>>>>> .merge_file_BuwGMa
+>>>>>>> .merge_file_Rz18dM
 
 >>>>>>> .merge_file_BWpgPW
         'slug' => Tables\Filters\TextFilter::make('slug')
@@ -206,9 +284,19 @@ return [
    ```php
    // Ordinare i template per slug
    MailTemplate::query()->orderBy('slug')->get();
+<<<<<<< .merge_file_l8FokW
 <<<<<<< .merge_file_BWKsVQ
    
 =======
+=======
+<<<<<<< .merge_file_SaUXu3
+   
+=======
+<<<<<<< .merge_file_BWKsVQ
+   
+=======
+>>>>>>> .merge_file_BuwGMa
+>>>>>>> .merge_file_Rz18dM
 
 >>>>>>> .merge_file_BWpgPW
    // Cercare template per slug parziale

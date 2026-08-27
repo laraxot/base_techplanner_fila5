@@ -41,8 +41,11 @@ class TelegramNotification extends Notification implements ShouldQueue
     /**
      * Get the notification's delivery channels.
      *
+<<<<<<< .merge_file_QJ6gEP
      * @param  mixed  $_notifiable  The entity to be notified (l'entità da notificare)
      *
+=======
+>>>>>>> .merge_file_JzoZKr
      * @return array<int, class-string>
      */
     public function via(mixed $_notifiable): array

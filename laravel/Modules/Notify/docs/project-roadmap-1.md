@@ -704,9 +704,19 @@ tests/Browser/AdminManageTicketTest.php
 ### Best Practices
 <<<<<<< .merge_file_y4obY7
 - [Laravel Boost Guidelines](claude.md)
+<<<<<<< .merge_file_tTqKeM
 =======
 - [Laravel Boost Guidelines](CLAUDE.md)
 >>>>>>> .merge_file_bmpabr
+=======
+<<<<<<< .merge_file_mvv8Z8
+- [Laravel Boost Guidelines](CLAUDE.md)
+=======
+=======
+- [Laravel Boost Guidelines](CLAUDE.md)
+>>>>>>> .merge_file_bmpabr
+>>>>>>> .merge_file_6oI3zs
+>>>>>>> .merge_file_rnrAu7
 - [Architecture Patterns](docs/architecture/)
 
 ---

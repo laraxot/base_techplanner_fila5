@@ -6,7 +6,18 @@ return [
     'resource' => ['name' => 'Canale di Notifica'],
     'navigation' => ['group' => 'Sistema', 'label' => 'Canali di Notifica', 'icon' => 'notify-channel-animated', 'sort' => 47, 'description' => 'Gestione dei canali di comunicazione per le notifiche'],
     'fields' => [
+<<<<<<< .merge_file_0HX1fW
+        'name' => [
+            'label' => 'Nome',
+            'tooltip' => 'Nome identificativo del canale',
+            'placeholder' => 'es: Email Marketing',
+            'help' => 'Inserisci un nome univoco per identificare il canale',
+            'helper_text' => '',
+            'description' => '',
+        ],
+=======
         'name' => ['label' => 'Nome', 'tooltip' => 'Nome identificativo del canale', 'placeholder' => 'es: Email Marketing', 'help' => 'Inserisci un nome univoco per identificare il canale', 'helper_text' => '', 'description' => ''],
+>>>>>>> .merge_file_sDU3PG
         'driver' => [
             'label' => 'Driver',
             'tooltip' => 'Tipo di servizio utilizzato per l\'invio',
@@ -50,11 +61,28 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< .merge_file_0HX1fW
+        'is_default' => [
+            'label' => 'Predefinito',
+            'tooltip' => 'Imposta come canale predefinito',
+            'help' => 'Il canale predefinito verrà utilizzato quando non specificato diversamente',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'is_enabled' => [
+            'label' => 'Abilitato',
+            'tooltip' => 'Stato di attivazione del canale',
+            'help' => 'Disabilita temporaneamente il canale senza eliminarlo',
+            'helper_text' => '',
+            'description' => '',
+        ],
+=======
         'is_default' => ['label' => 'Predefinito', 'tooltip' => 'Imposta come canale predefinito', 'help' => 'Il canale predefinito verrà utilizzato quando non specificato diversamente', 'helper_text' => '', 'description' => ''],
         'is_enabled' => ['label' => 'Abilitato', 'tooltip' => 'Stato di attivazione del canale', 'help' => 'Disabilita temporaneamente il canale senza eliminarlo', 'helper_text' => '', 'description' => ''],
         'mail' => ['label' => 'mail', 'placeholder' => 'mail', 'helper_text' => 'mail', 'description' => 'mail'],
         'sms' => ['label' => 'sms', 'placeholder' => 'sms', 'helper_text' => 'sms', 'description' => 'sms'],
         'whatsapp' => ['label' => 'whatsapp', 'placeholder' => 'whatsapp', 'helper_text' => 'whatsapp', 'description' => 'whatsapp'],
+>>>>>>> .merge_file_sDU3PG
     ],
     'actions' => [
         'test_connection' => ['label' => 'Testa connessione', 'tooltip' => 'Verifica la configurazione del canale', 'icon' => 'heroicon-o-signal', 'color' => 'info'],

@@ -43,6 +43,13 @@ Best practices per l'ottimizzazione delle performance.
 
 - [Indice AGENTS](./agents-split-index.md)
 - [website-checklist.md](./website-checklist.md) - Checklist completa
+<<<<<<< .merge_file_dB5pd5
 - [AGENTS.md originale](../../AGENTS.md)
+=======
+<<<<<<< .merge_file_WnciwC
+- [AGENTS.md originale](../../AGENTS.md)
+=======
+>>>>>>> .merge_file_LVBQvW
 - [agents.md originale](../../agents.md)
+>>>>>>> .merge_file_akA8v8
 - [Index principale](./index.md)

@@ -447,8 +447,15 @@ new class extends Component {
 
 ```php
 use Livewire\Livewire;
+<<<<<<< .merge_file_ebRP0q
 use Modules\Quaeris\Filament\Widgets\SalesChartWidget;
+=======
+<<<<<<< .merge_file_J0XByW
+use Modules\Quaeris\Filament\Widgets\SalesChartWidget;
+=======
+>>>>>>> .merge_file_ExVos3
 use Modules\App\Filament\Widgets\SalesChartWidget;
+>>>>>>> .merge_file_w1HKSU
 
 it('renders chart widget', function (): void {
     Livewire::test(SalesChartWidget::class)

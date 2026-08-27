@@ -141,8 +141,15 @@ Installed plugins:
 Semplicemente aprire Claude Code in qualsiasi progetto. Le skills si attivano automaticamente:
 
 ```bash
+<<<<<<< .merge_file_u09DxY
 cd /var/www/_bases/base_fixcity_fila5
+=======
+<<<<<<< .merge_file_0yOqzo
+cd /var/www/_bases/base_fixcity_fila5
+=======
+>>>>>>> .merge_file_spYHft
 cd /var/www/_bases/base_ptvx_fila5
+>>>>>>> .merge_file_t8aL5s
 claude
 ```
 

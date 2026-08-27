@@ -4,8 +4,15 @@ type: concept
 tags: [module, docs, index]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< .merge_file_RzZqdw
 qmd: "module-docs-index master documentation index - fixcity fila5"
+=======
+<<<<<<< .merge_file_4gVLoY
+qmd: "module-docs-index master documentation index - fixcity fila5"
+=======
+>>>>>>> .merge_file_ZOoOP4
 qmd: "module-docs-index master documentation index - ptv fila5"
+>>>>>>> .merge_file_jmTAu2
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -241,8 +248,15 @@ FixCity Fila5 Documentation
 | **Codebase Analysis** | `codebase/` | 3,170 | Technical analysis |
 
 **Cross-References:**
+<<<<<<< .merge_file_RzZqdw
 - ← [Master Index](#master-documentation-index---fixcity-fila5) - This document
+=======
+<<<<<<< .merge_file_4gVLoY
+- ← [Master Index](#master-documentation-index---fixcity-fila5) - This document
+=======
+>>>>>>> .merge_file_ZOoOP4
 - ← [Master Index](#master-documentation-index---ptv-fila5) - This document
+>>>>>>> .merge_file_jmTAu2
 - ← [Module Docs](#module-documentation-indexes) - Module documentation
 - ← [Theme Docs](#theme-documentation-indexes) - Theme documentation
 
@@ -393,8 +407,15 @@ Themes/Sixteen/docs/
 
 ### Project Resources
 
+<<<<<<< .merge_file_RzZqdw
 - [GitHub Repository](https://github.com/fixcity/fila5)
+=======
+<<<<<<< .merge_file_4gVLoY
+- [GitHub Repository](https://github.com/fixcity/fila5)
+=======
+>>>>>>> .merge_file_ZOoOP4
 - [GitHub Repository](https://github.com/ptv/fila5)
+>>>>>>> .merge_file_jmTAu2
 - [Laravel Docs](https://laravel.com/docs)
 - [Filament Docs](https://filamentphp.com/docs)
 - [Vite Docs](https://vitejs.dev/)
@@ -444,8 +465,15 @@ Main content here.
 
 ### Finding Documentation
 
+<<<<<<< .merge_file_RzZqdw
 1. Start at [Master Index](#master-documentation-index---fixcity-fila5)
+=======
+<<<<<<< .merge_file_4gVLoY
+1. Start at [Master Index](#master-documentation-index---fixcity-fila5)
+=======
+>>>>>>> .merge_file_ZOoOP4
 1. Start at [Master Index](#master-documentation-index---ptv-fila5)
+>>>>>>> .merge_file_jmTAu2
 2. Navigate to module/theme category
 3. Use search (Ctrl+F) for keywords
 4. Check cross-references in related docs

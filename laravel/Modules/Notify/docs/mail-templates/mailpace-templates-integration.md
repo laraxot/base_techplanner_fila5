@@ -2,8 +2,15 @@
 
 ## Panoramica
 
+<<<<<<< .merge_file_hsw2SL
 Questo documento descrive l'integrazione dei template email [mailpace/templates](https://github.com/mailpace/templates) nel modulo Notify di Quaeris. Questi template offrono un design moderno basato su TailwindCSS con supporto nativo per la modalità scura.
+=======
+<<<<<<< .merge_file_5Mkhse
+Questo documento descrive l'integrazione dei template email [mailpace/templates](https://github.com/mailpace/templates) nel modulo Notify di Quaeris. Questi template offrono un design moderno basato su TailwindCSS con supporto nativo per la modalità scura.
+=======
+>>>>>>> .merge_file_jsrWu9
 Questo documento descrive l'integrazione dei template email [mailpace/templates](https://github.com/mailpace/templates) nel modulo Notify di App. Questi template offrono un design moderno basato su TailwindCSS con supporto nativo per la modalità scura.
+>>>>>>> .merge_file_RQckGK
 
 ## Template Disponibili
 
@@ -29,8 +36,15 @@ MailPace offre i seguenti template transazionali:
 ### Struttura della Directory
 
 ```
+<<<<<<< .merge_file_hsw2SL
 /var/www/html/Quaeris/laravel/Modules/Notify/resources/mail-layouts/
+=======
+<<<<<<< .merge_file_5Mkhse
+/var/www/html/Quaeris/laravel/Modules/Notify/resources/mail-layouts/
+=======
+>>>>>>> .merge_file_jsrWu9
 /var/www/_bases/base_ptvx_fila5/laravel/Modules/Notify/resources/mail-layouts/
+>>>>>>> .merge_file_RQckGK
 ├── default.html       # Layout base per la maggior parte delle email
 ├── main.html          # Alternativa semplificata
 ├── marketing.html     # Layout ottimizzato per email marketing
@@ -91,13 +105,27 @@ $mailTemplate->send($user->email, [
 1. **Mantieni la Struttura Base** - Non modificare la struttura HTML base per garantire compatibilità
 2. **Usa Variabili** - Utilizza variabili Blade per contenuti dinamici
 3. **Test Cross-Client** - Testa i template su diversi client email
+<<<<<<< .merge_file_hsw2SL
 4. **Segui le Convenzioni di Branding** - Usa i colori e font definiti per Quaeris
+=======
+<<<<<<< .merge_file_5Mkhse
+4. **Segui le Convenzioni di Branding** - Usa i colori e font definiti per Quaeris
+=======
+>>>>>>> .merge_file_jsrWu9
 4. **Segui le Convenzioni di Branding** - Usa i colori e font definiti per App
+>>>>>>> .merge_file_RQckGK
 
 ## Riferimenti
 
 - [Documentazione Maizzle](https://maizzle.com/docs/)
 - [Repository MailPace Templates](https://github.com/mailpace/templates)
+<<<<<<< .merge_file_hsw2SL
 - [Guida Spatie Email](../spatie_email_usage_guide.md)
+=======
+<<<<<<< .merge_file_5Mkhse
+- [Guida Spatie Email](../spatie_email_usage_guide.md)
+=======
+>>>>>>> .merge_file_jsrWu9
 - [Guida Spatie Email](../spatie-email-usage-guide.md)
+>>>>>>> .merge_file_RQckGK
 - [Implementazione Slug Field](./slug_field_implementation.md)

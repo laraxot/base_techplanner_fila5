@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_T3xNs7
+=======
 ---
 title: "Regole Namespace PSR-4 per il Modulo Notify"
 module: notify
@@ -7,6 +9,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+>>>>>>> .merge_file_5yiPMX
 # Regole Namespace PSR-4 per il Modulo Notify
 
 ## Regola Fondamentale

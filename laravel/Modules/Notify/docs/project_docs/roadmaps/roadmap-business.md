@@ -1,5 +1,12 @@
+<<<<<<< .merge_file_dO6QB0
 # 💼 ROADMAP BUSINESS - FIXCITY PLATFORM
+=======
+<<<<<<< .merge_file_vfy3ju
+# 💼 ROADMAP BUSINESS - FIXCITY PLATFORM
+=======
+>>>>>>> .merge_file_98dpY9
 # 💼 ROADMAP BUSINESS - NOTIFY PLATFORM
+>>>>>>> .merge_file_bDI2kS
 
 **Versione**: 1.0  
 **Data Creazione**: Gennaio 2025  
@@ -9,8 +16,15 @@
 ## 🎯 Vision & Mission
 
 ### Vision
+<<<<<<< .merge_file_dO6QB0
 **FixCity** diventa la piattaforma leader in Italia per il civic engagement urbano, connettendo 100+ città e 1M+ cittadini per rendere le città più vivibili, efficienti e responsive.
+=======
+<<<<<<< .merge_file_vfy3ju
+**FixCity** diventa la piattaforma leader in Italia per il civic engagement urbano, connettendo 100+ città e 1M+ cittadini per rendere le città più vivibili, efficienti e responsive.
+=======
+>>>>>>> .merge_file_98dpY9
 **Notify** diventa la piattaforma leader in Italia per il civic engagement urbano, connettendo 100+ città e 1M+ cittadini per rendere le città più vivibili, efficienti e responsive.
+>>>>>>> .merge_file_bDI2kS
 
 ### Mission
 Fornire una soluzione completa, scalabile e user-friendly per la gestione delle segnalazioni urbane, migliorando la qualità della vita cittadina attraverso tecnologia moderna e workflow ottimizzati.
@@ -206,8 +220,15 @@ class CustomerFeedback
 # Revenue optimization
 - A/B testing pricing
 - Upselling campaigns
+<<<<<<< .merge_file_dO6QB0
 - Churn prediction model
+=======
+<<<<<<< .merge_file_vfy3ju
+- Churn prediction model
+=======
+>>>>>>> .merge_file_98dpY9
 - Churn forecast model
+>>>>>>> .merge_file_bDI2kS
 - Customer success program
 - Retention campaigns
 ```
@@ -315,8 +336,15 @@ class ApiMarketplace
 # AI/ML features
 class AIFeatures:
     def auto_categorize_tickets(self): pass
+<<<<<<< .merge_file_dO6QB0
     def predict_resolution_time(self): pass
+=======
+<<<<<<< .merge_file_vfy3ju
+    def predict_resolution_time(self): pass
+=======
+>>>>>>> .merge_file_98dpY9
     def forecast_resolution_time(self): pass
+>>>>>>> .merge_file_bDI2kS
     def detect_duplicates(self): pass
     def sentiment_analysis(self): pass
     def optimize_routes(self): pass
@@ -497,10 +525,18 @@ EBITDA: €0 (Break-even Q4 2025)
 **📞 Contatti Business**
 - **CEO**: Business Development Team
 - **Email**: business@laraxot.com
+<<<<<<< .merge_file_dO6QB0
 - **LinkedIn**: [FixCity Business](https://linkedin.com/company/fixcity)
 - **Website**: [www.fixcity.it](https://www.fixcity.it)
+=======
+<<<<<<< .merge_file_vfy3ju
+- **LinkedIn**: [FixCity Business](https://linkedin.com/company/fixcity)
+- **Website**: [www.fixcity.it](https://www.fixcity.it)
+=======
+>>>>>>> .merge_file_98dpY9
 - **LinkedIn**: [Notify Business](https://linkedin.com/company/laraxot)
 - **Website**: [www.laraxot.it](https://www.laraxot.it)
+>>>>>>> .merge_file_bDI2kS
 
 **🔄 Ultimo Aggiornamento**: Gennaio 2025  
 **📊 Progresso**: 0% → 100% (Target Dicembre 2025)  

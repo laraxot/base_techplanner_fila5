@@ -220,8 +220,15 @@ FixCity Fila5 Documentation
 | **Codebase Analysis** | `codebase/` | 3,170 | Technical analysis |
 
 **Cross-References:**
+<<<<<<< .merge_file_qW2KGa
 - ← [Master Index](#master-documentation-index---fixcity-fila5) - This document
+=======
+<<<<<<< .merge_file_yfWc4X
+- ← [Master Index](#master-documentation-index---fixcity-fila5) - This document
+=======
+>>>>>>> .merge_file_eSX6Km
 - ← [Master Index](#master-documentation-index---ptv-fila5) - This document
+>>>>>>> .merge_file_F5I0Hc
 - ← [Module Docs](#module-documentation-indexes) - Module documentation
 - ← [Theme Docs](#theme-documentation-indexes) - Theme documentation
 
@@ -372,8 +379,15 @@ Themes/Sixteen/docs/
 
 ### Project Resources
 
+<<<<<<< .merge_file_qW2KGa
 - [GitHub Repository](https://github.com/fixcity/fila5)
+=======
+<<<<<<< .merge_file_yfWc4X
+- [GitHub Repository](https://github.com/fixcity/fila5)
+=======
+>>>>>>> .merge_file_eSX6Km
 - [GitHub Repository](https://github.com/ptv/fila5)
+>>>>>>> .merge_file_F5I0Hc
 - [Laravel Docs](https://laravel.com/docs)
 - [Filament Docs](https://filamentphp.com/docs)
 - [Vite Docs](https://vitejs.dev/)
@@ -423,8 +437,15 @@ Main content here.
 
 ### Finding Documentation
 
+<<<<<<< .merge_file_qW2KGa
 1. Start at [Master Index](#master-documentation-index---fixcity-fila5)
+=======
+<<<<<<< .merge_file_yfWc4X
+1. Start at [Master Index](#master-documentation-index---fixcity-fila5)
+=======
+>>>>>>> .merge_file_eSX6Km
 1. Start at [Master Index](#master-documentation-index---ptv-fila5)
+>>>>>>> .merge_file_F5I0Hc
 2. Navigate to module/theme category
 3. Use search (Ctrl+F) for keywords
 4. Check cross-references in related docs

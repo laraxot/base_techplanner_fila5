@@ -49,18 +49,38 @@ L'implementazione corretta degli allegati richiede una struttura specifica. Ecco
    ```php
    $attachments = [
        [
+<<<<<<< .merge_file_uvdMS0
 <<<<<<< .merge_file_Jh7ii4
 'path' => '/var/www/html/Quaeris/public_html/images/avatars/default-3.svg',
 =======
+=======
+<<<<<<< .merge_file_ksvk5Q
+'path' => '/var/www/html/Quaeris/public_html/images/avatars/default-3.svg',
+=======
+<<<<<<< .merge_file_Jh7ii4
+'path' => '/var/www/html/Quaeris/public_html/images/avatars/default-3.svg',
+=======
+>>>>>>> .merge_file_Fb8RfS
+>>>>>>> .merge_file_iCAAsX
 'path' => '/var/www/_bases/base_ptvx_fila5/public_html/images/avatars/default-3.svg',
 >>>>>>> .merge_file_lHqMrh
            'as' => 'logo.png',
            'mime' => 'image/png'
        ],
        [
+<<<<<<< .merge_file_uvdMS0
 <<<<<<< .merge_file_Jh7ii4
 'path' => '/var/www/html/Quaeris/public_html/images/avatars/default-3.svg',
 =======
+=======
+<<<<<<< .merge_file_ksvk5Q
+'path' => '/var/www/html/Quaeris/public_html/images/avatars/default-3.svg',
+=======
+<<<<<<< .merge_file_Jh7ii4
+'path' => '/var/www/html/Quaeris/public_html/images/avatars/default-3.svg',
+=======
+>>>>>>> .merge_file_Fb8RfS
+>>>>>>> .merge_file_iCAAsX
 'path' => '/var/www/_bases/base_ptvx_fila5/public_html/images/avatars/default-3.svg',
 >>>>>>> .merge_file_lHqMrh
            'as' => 'logo.png',

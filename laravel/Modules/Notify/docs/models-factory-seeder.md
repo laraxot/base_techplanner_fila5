@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_yaB6mG
+=======
 ---
 title: "Analisi Modelli, Factory e Seeder - Modulo Notify"
 module: notify
@@ -7,6 +9,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+>>>>>>> .merge_file_aj6piT
 # Analisi Modelli, Factory e Seeder - Modulo Notify
 
 ## Riepilogo Modelli

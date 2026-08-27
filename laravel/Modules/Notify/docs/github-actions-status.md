@@ -28,8 +28,15 @@ related:
 
 ## Summary
 
+<<<<<<< .merge_file_46CDhn
 Analisi e fix delle GitHub Actions del repository base_fixcity_fila5.
+=======
+<<<<<<< .merge_file_KeIM05
+Analisi e fix delle GitHub Actions del repository base_fixcity_fila5.
+=======
+>>>>>>> .merge_file_pve5FB
 Analisi e fix delle GitHub Actions del repository base_ptv_fila5.
+>>>>>>> .merge_file_fNdf9F
 
 ---
 

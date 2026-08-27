@@ -4,8 +4,15 @@ type: concept
 tags: [complete, success]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< .merge_file_2hQpof
 qmd: "complete-success 🏆 fixcity - complete success"
+=======
+<<<<<<< .merge_file_Bsv8VJ
+qmd: "complete-success 🏆 fixcity - complete success"
+=======
+>>>>>>> .merge_file_yxyh6V
 qmd: "complete-success 🏆 ptv - complete success"
+>>>>>>> .merge_file_3WwLwa
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:

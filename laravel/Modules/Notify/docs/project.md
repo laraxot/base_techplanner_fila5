@@ -4,8 +4,15 @@ type: concept
 tags: [project]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< .merge_file_iPYNyT
 qmd: "project base fixcity fila5 — project.md"
+=======
+<<<<<<< .merge_file_907W0y
+qmd: "project base fixcity fila5 — project.md"
+=======
+>>>>>>> .merge_file_JMuTte
 qmd: "project base ptv fila5 — project.md"
+>>>>>>> .merge_file_N3Z6Ko
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -51,7 +58,13 @@ Target: `segnalazione-crea` wizard page → 90%+ parity with Design Comuni `segn
 - Filament Schemas = unified system (v5). Forms + Infolists coexist.
 - Widget → NO model binding (`getFormModel() → null`)
 - CSS scoped overrides → never mutate Filament markup
+<<<<<<< .merge_file_iPYNyT
 - Multilingual: all strings via `__('fixcity::ticket.*')`
+=======
+<<<<<<< .merge_file_907W0y
+- Multilingual: all strings via `__('fixcity::ticket.*')`
+=======
+>>>>>>> .merge_file_JMuTte
 - Multilingual: all strings via `__('ptv::ticket.*')`
 
 ---
@@ -91,3 +104,4 @@ Target: `segnalazione-crea` wizard page → 90%+ parity with Design Comuni `segn
 - Widget → NO model binding (`getFormModel() → null`)
 - CSS scoped overrides → never mutate Filament markup
 - Multilingual: all strings via `__('ptv::ticket.*')`
+>>>>>>> .merge_file_N3Z6Ko

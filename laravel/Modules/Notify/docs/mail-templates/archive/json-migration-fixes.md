@@ -64,18 +64,38 @@ if(in_array($this->getColumnType('subject'), ['text', 'string'])) {
     DB::table('mail_templates')->whereNotNull('subject')->update([
         'subject' => DB::raw("JSON_OBJECT('it', subject)")
     ]);
+<<<<<<< .merge_file_lWK84L
 <<<<<<< .merge_file_N7ABqE
     
 =======
+=======
+<<<<<<< .merge_file_lxmCUU
+    
+=======
+<<<<<<< .merge_file_N7ABqE
+    
+=======
+>>>>>>> .merge_file_Xy4ZKb
+>>>>>>> .merge_file_Fpm267
 
 >>>>>>> .merge_file_OpYUPl
     // Passo 2: Gestire i valori NULL (opzionale)
     DB::table('mail_templates')->whereNull('subject')->update([
         'subject' => DB::raw("JSON_OBJECT('it', '')")
     ]);
+<<<<<<< .merge_file_lWK84L
 <<<<<<< .merge_file_N7ABqE
     
 =======
+=======
+<<<<<<< .merge_file_lxmCUU
+    
+=======
+<<<<<<< .merge_file_N7ABqE
+    
+=======
+>>>>>>> .merge_file_Xy4ZKb
+>>>>>>> .merge_file_Fpm267
 
 >>>>>>> .merge_file_OpYUPl
     // Passo 3: Ora è sicuro cambiare il tipo di colonna
@@ -101,9 +121,19 @@ MailTemplate::whereNotNull('subject')->each(function ($template) {
 
 Un'altra strategia sicura è:
 
+<<<<<<< .merge_file_lWK84L
 <<<<<<< .merge_file_N7ABqE
 1. **Creare una nuova colonna** JSON 
 =======
+=======
+<<<<<<< .merge_file_lxmCUU
+1. **Creare una nuova colonna** JSON 
+=======
+<<<<<<< .merge_file_N7ABqE
+1. **Creare una nuova colonna** JSON 
+=======
+>>>>>>> .merge_file_Xy4ZKb
+>>>>>>> .merge_file_Fpm267
 1. **Creare una nuova colonna** JSON
 >>>>>>> .merge_file_OpYUPl
 2. **Migrare i dati** dalla vecchia colonna a quella nuova, convertendoli
@@ -115,21 +145,45 @@ Un'altra strategia sicura è:
 if(in_array($this->getColumnType('subject'), ['text', 'string'])) {
     // Passo 1: Aggiungi colonna temporanea
     $table->json('subject_json')->nullable()->after('subject');
+<<<<<<< .merge_file_lWK84L
 <<<<<<< .merge_file_N7ABqE
     
 =======
+=======
+<<<<<<< .merge_file_lxmCUU
+    
+=======
+<<<<<<< .merge_file_N7ABqE
+    
+=======
+>>>>>>> .merge_file_Xy4ZKb
+>>>>>>> .merge_file_Fpm267
 
 >>>>>>> .merge_file_OpYUPl
     // Passo 2: Migra i dati (da eseguire dopo la modifica dello schema)
     Schema::table('mail_templates', function (Blueprint $table) {
         DB::statement("UPDATE mail_templates SET subject_json = JSON_OBJECT('it', subject) WHERE subject IS NOT NULL");
     });
+<<<<<<< .merge_file_lWK84L
 <<<<<<< .merge_file_N7ABqE
+=======
+<<<<<<< .merge_file_lxmCUU
+=======
+<<<<<<< .merge_file_N7ABqE
+>>>>>>> .merge_file_Xy4ZKb
+>>>>>>> .merge_file_Fpm267
     
     // Passo 3: Elimina vecchia colonna
     $table->dropColumn('subject');
     
+<<<<<<< .merge_file_lWK84L
 =======
+=======
+<<<<<<< .merge_file_lxmCUU
+=======
+=======
+>>>>>>> .merge_file_Xy4ZKb
+>>>>>>> .merge_file_Fpm267
 
     // Passo 3: Elimina vecchia colonna
     $table->dropColumn('subject');
@@ -162,11 +216,24 @@ if(!$this->hasColumn('subject')) {
 }
 ```
 
+<<<<<<< .merge_file_lWK84L
+<<<<<<< .merge_file_N7ABqE
+=======
+<<<<<<< .merge_file_lxmCUU
+>>>>>>> .merge_file_Fpm267
+## Applicazione a SaluteOra
+
+Nel contesto di SaluteOra, tutte le migrazioni che coinvolgono la conversione di campi esistenti a JSON devono seguire queste linee guida, in particolare:
+=======
+<<<<<<< .merge_file_lWK84L
+=======
 <<<<<<< .merge_file_N7ABqE
 ## Applicazione a SaluteOra
 
 Nel contesto di SaluteOra, tutte le migrazioni che coinvolgono la conversione di campi esistenti a JSON devono seguire queste linee guida, in particolare:
 =======
+>>>>>>> .merge_file_Xy4ZKb
+>>>>>>> .merge_file_Fpm267
 ## Applicazione a <nome progetto>
 
 Nel contesto di <nome progetto>, tutte le migrazioni che coinvolgono la conversione di campi esistenti a JSON devono seguire queste linee guida, in particolare:
@@ -181,9 +248,19 @@ Nel contesto di <nome progetto>, tutte le migrazioni che coinvolgono la conversi
 È necessario esaminare tutte le migrazioni esistenti per identificare pattern simili di conversione diretta a JSON:
 
 ```bash
+<<<<<<< .merge_file_lWK84L
 <<<<<<< .merge_file_N7ABqE
 grep -r "json.*change" /var/www/html/saluteora/laravel/Modules/*/database/migrations/
 =======
+=======
+<<<<<<< .merge_file_lxmCUU
+grep -r "json.*change" /var/www/html/saluteora/laravel/Modules/*/database/migrations/
+=======
+<<<<<<< .merge_file_N7ABqE
+grep -r "json.*change" /var/www/html/saluteora/laravel/Modules/*/database/migrations/
+=======
+>>>>>>> .merge_file_Xy4ZKb
+>>>>>>> .merge_file_Fpm267
 grep -r "json.*change" [project-root]/laravel/Modules/*/database/migrations/
 >>>>>>> .merge_file_OpYUPl
 ```

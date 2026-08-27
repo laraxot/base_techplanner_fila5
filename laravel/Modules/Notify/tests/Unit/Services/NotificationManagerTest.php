@@ -10,6 +10,11 @@ use Mockery;
 use Mockery\Expectation;
 use Mockery\MockInterface;
 use Modules\Notify\Actions\SendNotificationAction;
+<<<<<<< .merge_file_tUC6Ms
+use Modules\Notify\Models\Notification;
+use Modules\Notify\Models\NotificationTemplate;
+=======
+>>>>>>> .merge_file_HCHi3W
 use Modules\Notify\Services\NotificationManager;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -21,7 +26,15 @@ class NotificationManagerTest extends TestCase
     protected function setUp(): void
     {
         parent::setUp();
+<<<<<<< .merge_file_Q7vt9h
         $this->serviceNotificationManager = new NotificationManager();
+=======
+<<<<<<< .merge_file_tUC6Ms
+        $this->notificationManager = new NotificationManager;
+=======
+        $this->serviceNotificationManager = new NotificationManager;
+>>>>>>> .merge_file_HCHi3W
+>>>>>>> .merge_file_HY2CNO
     }
 
     protected function tearDown(): void
@@ -39,6 +52,20 @@ class NotificationManagerTest extends TestCase
         $channels = ['email'];
         $options = ['priority' => 'high'];
 
+<<<<<<< .merge_file_tUC6Ms
+        $template = typedMock(NotificationTemplate::class);
+        mockExpectation($template, 'getAttribute')->with('code')->andReturn($templateCode);
+
+        $action = typedMock(SendNotificationAction::class);
+        mockExpectation($action, 'handle')->with($recipient, $templateCode, $data, $channels, $options)->once();
+
+        app()->instance(SendNotificationAction::class, $action);
+
+        // Nessuna asserzione sul tipo di ritorno: e' sempre Notification|null per firma,
+        // il comportamento reale (chiamata all'action con i parametri attesi) e' verificato
+        // da Mockery in tearDown() tramite l'expectation ->once().
+        $this->notificationManager->send($recipient, $templateCode, $data, $channels, $options);
+=======
         $action = $this->mockSendNotificationAction();
         $this->mockExpectation($action, 'handle')
             ->once()
@@ -47,6 +74,7 @@ class NotificationManagerTest extends TestCase
         $this->instance(SendNotificationAction::class, $action);
 
         $this->serviceNotificationManager->send($recipient, $templateCode, $data, $channels, $options);
+>>>>>>> .merge_file_HCHi3W
     }
 
     /** @test */
@@ -61,8 +89,20 @@ class NotificationManagerTest extends TestCase
         $channels = ['email'];
         $options = ['priority' => 'high'];
 
+<<<<<<< .merge_file_tUC6Ms
+        $template = typedMock(NotificationTemplate::class);
+        mockExpectation($template, 'getAttribute')->with('code')->andReturn($templateCode);
+
+        $action = typedMock(SendNotificationAction::class);
+        mockExpectation($action, 'handle')->times(2);
+=======
         $action = $this->mockSendNotificationAction();
+<<<<<<< .merge_file_Q7vt9h
         $this->mockExpectation($action, 'handle')->times(2);
+=======
+        $action->shouldReceive('handle')->times(2);
+>>>>>>> .merge_file_HCHi3W
+>>>>>>> .merge_file_HY2CNO
 
         $this->instance(SendNotificationAction::class, $action);
 
@@ -76,7 +116,13 @@ class NotificationManagerTest extends TestCase
     {
         $code = 'test_template';
 
+<<<<<<< .merge_file_tUC6Ms
+        $template = typedMock(NotificationTemplate::class);
+        mockExpectation($template, 'getAttribute')->with('code')->andReturn($code);
+        mockExpectation($template, 'getAttribute')->with('is_active')->andReturn(true);
+=======
         $result = $this->serviceNotificationManager->getTemplate($code);
+>>>>>>> .merge_file_HCHi3W
 
         $this->assertNull($result);
     }
@@ -94,6 +140,15 @@ class NotificationManagerTest extends TestCase
     /** @test */
     public function it_throws_exception_when_template_not_found(): void
     {
+<<<<<<< .merge_file_tUC6Ms
+        $this->expectException(Exception::class);
+        $this->expectExceptionMessage('Template not found: invalid_template');
+
+        $recipient = $this->recipient();
+        $templateCode = 'invalid_template';
+
+        $this->notificationManager->send($recipient, $templateCode);
+=======
         $recipient = $this->recipient();
         $templateCode = 'invalid_template';
 
@@ -103,6 +158,7 @@ class NotificationManagerTest extends TestCase
         } catch (Exception $exception) {
             Assert::assertSame('Template not found: invalid_template', $exception->getMessage());
         }
+>>>>>>> .merge_file_HCHi3W
     }
 
     /** @test */
@@ -111,12 +167,26 @@ class NotificationManagerTest extends TestCase
         $recipient = $this->recipient();
         $templateCode = 'test_template';
 
+<<<<<<< .merge_file_tUC6Ms
+        $action = typedMock(SendNotificationAction::class);
+        mockExpectation($action, 'handle')->once();
+=======
         $action = $this->mockSendNotificationAction();
+<<<<<<< .merge_file_Q7vt9h
         $this->mockExpectation($action, 'handle')->once();
+=======
+        $action->shouldReceive('handle')->once();
+>>>>>>> .merge_file_HCHi3W
+>>>>>>> .merge_file_HY2CNO
 
         $this->instance(SendNotificationAction::class, $action);
 
+<<<<<<< .merge_file_tUC6Ms
+        // Comportamento verificato da Mockery in tearDown() tramite ->once().
+        $this->notificationManager->send($recipient, $templateCode);
+=======
         $this->serviceNotificationManager->send($recipient, $templateCode);
+>>>>>>> .merge_file_HCHi3W
     }
 
     /** @test */
@@ -125,10 +195,15 @@ class NotificationManagerTest extends TestCase
         $recipients = [$this->recipient()];
         $templateCode = 'test_template';
 
+<<<<<<< .merge_file_tUC6Ms
+        $action = typedMock(SendNotificationAction::class);
+        mockExpectation($action, 'handle')->once();
+=======
         $action = $this->mockSendNotificationAction();
         $this->mockExpectation($action, 'handle')->once();
 
         $this->instance(SendNotificationAction::class, $action);
+>>>>>>> .merge_file_HCHi3W
 
         $result = $this->serviceNotificationManager->sendMultiple($recipients, $templateCode);
 
@@ -153,7 +228,18 @@ class NotificationManagerTest extends TestCase
         /** @var MockInterface&SendNotificationAction $mock */
         $mock = Mockery::mock(SendNotificationAction::class);
 
+<<<<<<< .merge_file_tUC6Ms
+        $this->assertCount(1, $result);
+    }
+    private function recipient(): Model
+    {
+        return new class extends Model {
+            protected $guarded = [];
+            public $timestamps = false;
+        };
+=======
         return $mock;
+>>>>>>> .merge_file_HCHi3W
     }
 
     /**

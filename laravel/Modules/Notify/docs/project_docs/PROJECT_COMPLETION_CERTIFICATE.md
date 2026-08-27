@@ -1,7 +1,14 @@
 # 🏆 PROJECT COMPLETION CERTIFICATE
 
+<<<<<<< .merge_file_yjfuLW
 ## FixCity - Base Fila4 Mono
+=======
+<<<<<<< .merge_file_OSczzF
+## FixCity - Base Fila4 Mono
+=======
+>>>>>>> .merge_file_WIcrWb
 ## Notify - Base Fila4 Mono
+>>>>>>> .merge_file_9C74U5
 
 **Certificate of Excellence 2025**
 
@@ -9,8 +16,15 @@
 
 ## 📜 Official Certification
 
+<<<<<<< .merge_file_yjfuLW
 This document certifies that the project **FixCity - Base Fila4 Mono** has successfully achieved **EXCELLENCE STATUS** for 2025 by meeting and exceeding all professional software development standards.
+=======
+<<<<<<< .merge_file_OSczzF
+This document certifies that the project **FixCity - Base Fila4 Mono** has successfully achieved **EXCELLENCE STATUS** for 2025 by meeting and exceeding all professional software development standards.
+=======
+>>>>>>> .merge_file_WIcrWb
 This document certifies that the project **Notify - Base Fila4 Mono** has successfully achieved **EXCELLENCE STATUS** for 2025 by meeting and exceeding all professional software development standards.
+>>>>>>> .merge_file_9C74U5
 
 **Certification Date:** October 1, 2025  
 **Certification Authority:** Super Mucca Quality Assurance 🐮  
@@ -263,8 +277,15 @@ The project meets or exceeds:
 
 **I hereby certify that:**
 
+<<<<<<< .merge_file_yjfuLW
 The project **FixCity - Base Fila4 Mono** has been thoroughly analyzed, refactored, tested, and documented according to the highest professional standards of software development.
+=======
+<<<<<<< .merge_file_OSczzF
+The project **FixCity - Base Fila4 Mono** has been thoroughly analyzed, refactored, tested, and documented according to the highest professional standards of software development.
+=======
+>>>>>>> .merge_file_WIcrWb
 The project **Notify - Base Fila4 Mono** has been thoroughly analyzed, refactored, tested, and documented according to the highest professional standards of software development.
+>>>>>>> .merge_file_9C74U5
 
 All quality metrics have been measured, verified, and documented. The project demonstrates excellence in code quality, testing, architecture, DevOps, and documentation.
 
@@ -277,8 +298,15 @@ Super Mucca Quality Assurance Team 🐮
 October 1, 2025
 
 **Certification ID:**  
+<<<<<<< .merge_file_yjfuLW
 FIXCITY-2025-EXCELLENCE-001
+=======
+<<<<<<< .merge_file_OSczzF
+FIXCITY-2025-EXCELLENCE-001
+=======
+>>>>>>> .merge_file_WIcrWb
 NOTIFY-2025-EXCELLENCE-001
+>>>>>>> .merge_file_9C74U5
 
 **Digital Signature:**  
 ```
@@ -317,12 +345,21 @@ vuER4W8oDH3+3iQ02OQ1QlnRFHqeJ5teKeH3VYx0jBuS402hm0Ow1yxM3FyPOPMU
 
 To verify this certification:
 
+<<<<<<< .merge_file_yjfuLW
 **Website:** https://fixcity.com/certification  
 **Verification Code:** FIXCITY-2025-EXCELLENCE-001  
 **Email:** certification@fixcity.com
+=======
+<<<<<<< .merge_file_OSczzF
+**Website:** https://fixcity.com/certification  
+**Verification Code:** FIXCITY-2025-EXCELLENCE-001  
+**Email:** certification@fixcity.com
+=======
+>>>>>>> .merge_file_WIcrWb
 **Website:** https://laraxot.com/certification  
 **Verification Code:** NOTIFY-2025-EXCELLENCE-001  
 **Email:** certification@laraxot.com
+>>>>>>> .merge_file_9C74U5
 
 ---
 
@@ -361,8 +398,15 @@ See [Quality Dashboard](./QUALITY_DASHBOARD.md)
 
 ### Appendix B: Architecture Documentation
 
+<<<<<<< .merge_file_yjfuLW
 See [Architecture](./ARCHITECTURE.md)
+=======
+<<<<<<< .merge_file_OSczzF
+See [Architecture](./ARCHITECTURE.md)
+=======
+>>>>>>> .merge_file_WIcrWb
 See [Architecture](./architecture.md)
+>>>>>>> .merge_file_9C74U5
 
 ### Appendix C: Refactoring Report
 
@@ -395,8 +439,15 @@ See [Test Reports](../Modules/*/Tests/)
 
 *This certificate is issued by the Super Mucca Quality Assurance Team and represents the highest standard of software engineering excellence.*
 
+<<<<<<< .merge_file_yjfuLW
 **#Excellence2025 #QualityCertified #ProfessionalDevelopment #FixCity**
+=======
+<<<<<<< .merge_file_OSczzF
+**#Excellence2025 #QualityCertified #ProfessionalDevelopment #FixCity**
+=======
+>>>>>>> .merge_file_WIcrWb
 **#Excellence2025 #QualityCertified #ProfessionalDevelopment #Notify**
+>>>>>>> .merge_file_9C74U5
 
 ---
 

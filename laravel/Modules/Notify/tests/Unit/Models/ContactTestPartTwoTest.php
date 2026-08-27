@@ -27,7 +27,11 @@ use Modules\Notify\Models\Contact;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< .merge_file_dgKeHy
+uses(TestCase::class);
+=======
 uses(TestCase::class)->group('notify-db');
+>>>>>>> .merge_file_PXFwhW
 
 beforeEach(function (): void {
     /** @var TestCase $this */
@@ -53,6 +57,7 @@ describe('Contact PartTwo', function (): void {
     });
 
     test('_can_find_by_name_pattern', function (): void {
+        /** @var TestCase $this */
         ContactFactory::new()->createOne([
             'model_type' => 'App\Models\User',
             'model_id' => '123',
@@ -108,6 +113,7 @@ describe('Contact PartTwo', function (): void {
     });
 
     test('_can_find_by_verification_status', function (): void {
+        /** @var TestCase $this */
         ContactFactory::new()->createOne([
             'model_type' => 'App\Models\User',
             'model_id' => '123',
@@ -134,6 +140,7 @@ describe('Contact PartTwo', function (): void {
     });
 
     test('_can_find_by_sms_status', function (): void {
+        /** @var TestCase $this */
         ContactFactory::new()->createOne([
             'model_type' => 'App\Models\User',
             'model_id' => '123',
@@ -164,6 +171,7 @@ describe('Contact PartTwo', function (): void {
     });
 
     test('_can_find_by_counters', function (): void {
+        /** @var TestCase $this */
         ContactFactory::new()->createOne([
             'model_type' => 'App\Models\User',
             'model_id' => '123',
@@ -192,6 +200,7 @@ describe('Contact PartTwo', function (): void {
     });
 
     test('_can_find_by_attributes', function (): void {
+        /** @var TestCase $this */
         ContactFactory::new()->createOne([
             'model_type' => 'App\Models\User',
             'model_id' => '123',
@@ -225,6 +234,7 @@ describe('Contact PartTwo', function (): void {
     });
 
     test('_can_find_by_multiple_criteria', function (): void {
+        /** @var TestCase $this */
         ContactFactory::new()->createOne([
             'model_type' => 'App\Models\User',
             'model_id' => '123',
@@ -278,6 +288,7 @@ describe('Contact PartTwo', function (): void {
     });
 
     test('_can_order_by_order_column', function (): void {
+        /** @var TestCase $this */
         ContactFactory::new()->createOne([
             'model_type' => 'App\Models\User',
             'model_id' => '123',

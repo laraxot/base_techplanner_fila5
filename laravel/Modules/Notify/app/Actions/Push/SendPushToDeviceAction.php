@@ -21,11 +21,16 @@ class SendPushToDeviceAction
     private array $platforms = ['fcm', 'apns', 'webpush'];
 
     /**
+<<<<<<< .merge_file_MHjCns
+     * @param  array<string, mixed>  $data
+     * @return array<string, array<string, mixed>>
+=======
      * Chiave = piattaforma; valore = esito di `SendPushToPlatformAction` oppure la
      * shape di errore costruita qui sotto. `success` è l'unica chiave comune ai due rami.
      *
      * @param  array<string, mixed>  $data
      * @return array<string, array{success: bool, ...}>
+>>>>>>> .merge_file_2l93nL
      */
     public function execute(string $token, PushNotificationData $notification, array $data = []): array
     {

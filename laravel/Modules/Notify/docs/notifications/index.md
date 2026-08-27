@@ -21,10 +21,16 @@ related:
 
 ## Collegamenti Correlati
 - [Indice Documentazione Notify](../index.md)
+<<<<<<< .merge_file_RMILRd
 - [README Modulo Notify](../readme.md)
 - [Documentazione Generale Quaeris](../../../../../../docs/readme.md)
+<<<<<<< .merge_file_xc1QGP
+=======
+=======
+>>>>>>> .merge_file_G574I1
 - [README Modulo Notify](../README.md)
 - [Documentazione Generale App](../../../../../../docs/readme.md)
+>>>>>>> .merge_file_JLsBss
 - [Collegamenti Documentazione](../../../../../../docs/collegamenti-documentazione.md)
 
 ## Guida Implementazione
@@ -43,19 +49,41 @@ related:
 - [Guida Notifiche Telegram](./telegram_notifications_guide.md) - Implementazione delle notifiche Telegram
 
 ## Architettura e Pattern
+<<<<<<< .merge_file_xc1QGP
 - [Factory Pattern per Provider](../factory_pattern_analysis.md) - Analisi del pattern Factory per i provider
 - [Provider vs DTO](../channel_vs_dto_provider_selection.md) - Selezione tra provider e DTO
+=======
+<<<<<<< .merge_file_RMILRd
+- [Factory Pattern per Provider](../factory_pattern_analysis.md) - Analisi del pattern Factory per i provider
+- [Provider vs DTO](../channel_vs_dto_provider_selection.md) - Selezione tra provider e DTO
+=======
+>>>>>>> .merge_file_G574I1
 - [Factory Pattern per Provider](../factory-pattern-analysis.md) - Analisi del pattern Factory per i provider
 - [Provider vs DTO](../channel-vs-dto-provider-selection.md) - Selezione tra provider e DTO
+>>>>>>> .merge_file_JLsBss
 - [Architettura Provider](../provider_actions_architecture.md) - Architettura delle azioni provider
 
 ## Documentazione Correlata
 - [Implementazione SMS](../sms_implementation.md) - Panoramica dell'implementazione SMS
 - [Canale WhatsApp](../whatsapp_channel.md) - Documentazione del canale WhatsApp
+<<<<<<< .merge_file_xc1QGP
 - [Canale Telegram](../telegram_channel.md) - Documentazione del canale Telegram
 
 ## Note Importanti
 - Quaeris utilizza il pattern Factory per la creazione delle azioni di invio messaggi
+=======
+<<<<<<< .merge_file_RMILRd
+- [Canale Telegram](../telegram_channel.md) - Documentazione del canale Telegram
+
+## Note Importanti
+- Quaeris utilizza il pattern Factory per la creazione delle azioni di invio messaggi
+=======
+- [Canale Telegram](../telegram-channel.md) - Documentazione del canale Telegram
+
+## Note Importanti
+- App utilizza il pattern Factory per la creazione delle azioni di invio messaggi
+>>>>>>> .merge_file_JLsBss
+>>>>>>> .merge_file_G574I1
 - Il sistema si basa su Queueable Actions (spatie/laravel-queueable-action) e non su Service Pattern
 - Le azioni specifiche per provider devono implementare l'interfaccia comune corrispondente
 - I DTO standardizzati vengono utilizzati come ponte tra il sistema e i provider specifici

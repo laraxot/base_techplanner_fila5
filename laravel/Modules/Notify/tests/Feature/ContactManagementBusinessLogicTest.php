@@ -7,10 +7,19 @@ namespace Modules\Notify\Tests\Feature;
 use Modules\Notify\Database\Factories\ContactFactory;
 use Modules\Notify\Models\Contact;
 use Modules\Notify\Tests\TestCase;
+<<<<<<< .merge_file_SrgCug
+=======
+use PHPUnit\Framework\Assert;
+<<<<<<< .merge_file_t2kvKJ
+
+uses(\Modules\Notify\Tests\TestCase::class);
+=======
+>>>>>>> .merge_file_EFFYlL
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class)->group('notify-db');
+>>>>>>> .merge_file_udZpEV
 
 describe('Contact Management Business Logic', function () {
     it('can create contact with basic information', function () {
@@ -30,7 +39,11 @@ describe('Contact Management Business Logic', function () {
         Assert::assertSame('email', $contact->contact_type);
         Assert::assertSame('mario.rossi@example.com', $contact->value);
 
+<<<<<<< .merge_file_t2kvKJ
+        \assertNotifyTableHas('contacts', [
+=======
         XotBasePest::assertTableHas('notify', 'contacts', [
+>>>>>>> .merge_file_udZpEV
             'id' => $contact->id,
             'contact_type' => 'email',
             'value' => 'mario.rossi@example.com',
@@ -49,11 +62,19 @@ describe('Contact Management Business Logic', function () {
         $verifiedAt = now()->toDateTimeString();
         $contact->update(['verified_at' => $verifiedAt]);
 
+<<<<<<< .merge_file_t2kvKJ
+        $fresh = \assertFreshModel($contact, Contact::class);
+
+        Assert::assertSame($verifiedAt, $fresh->verified_at);
+
+        \assertNotifyTableHas('contacts', [
+=======
         $fresh = XotBasePest::assertFreshModel($contact, Contact::class);
 
         Assert::assertSame($verifiedAt, $fresh->verified_at);
 
         XotBasePest::assertTableHas('notify', 'contacts', [
+>>>>>>> .merge_file_udZpEV
             'id' => $contact->id,
             'verified_at' => $verifiedAt,
         ]);
@@ -74,7 +95,11 @@ describe('Contact Management Business Logic', function () {
             'sms_status_txt' => 'Delivered',
         ]);
 
+<<<<<<< .merge_file_t2kvKJ
+        $fresh = \assertFreshModel($contact, Contact::class);
+=======
         $fresh = XotBasePest::assertFreshModel($contact, Contact::class);
+>>>>>>> .merge_file_udZpEV
 
         Assert::assertSame(2, $fresh->sms_count);
         Assert::assertSame(1, $fresh->mail_count);
@@ -90,7 +115,11 @@ describe('Contact Management Business Logic', function () {
             'order_column' => 10,
         ]);
 
+<<<<<<< .merge_file_t2kvKJ
+        $fresh = \assertFreshModel($contact, Contact::class);
+=======
         $fresh = XotBasePest::assertFreshModel($contact, Contact::class);
+>>>>>>> .merge_file_udZpEV
 
         Assert::assertSame('Studio Dentistico Milano', $fresh->attribute_1);
         Assert::assertSame('Referente', $fresh->attribute_2);

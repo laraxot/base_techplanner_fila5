@@ -15,7 +15,11 @@ use Modules\Notify\Tests\Fixtures\NotifyNotificationTemplateProxy;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< .merge_file_3kVi8k
+uses(\Modules\Notify\Tests\TestCase::class);
+=======
 uses(TestCase::class)->group('notify-db');
+>>>>>>> .merge_file_WVYdHf
 
 function makeNotifyBaseMorphPivotProxy(): NotifyBaseMorphPivotProxy
 {

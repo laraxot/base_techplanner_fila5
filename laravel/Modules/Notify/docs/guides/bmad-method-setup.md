@@ -2,8 +2,15 @@
 
 **Versione:** 6.2.2  
 **Data Setup:** 2026-04-07  
+<<<<<<< .merge_file_XKk6J1
 **Progetto:** FixCity Fila5 (Laraxot)
+=======
+<<<<<<< .merge_file_QBvTb8
+**Progetto:** FixCity Fila5 (Laraxot)
+=======
+>>>>>>> .merge_file_otwme2
 **Progetto:** Notify Fila5 (Laraxot)
+>>>>>>> .merge_file_8d338m
 
 ---
 
@@ -48,8 +55,15 @@ Un framework open-source (MIT) per lo sviluppo software guidato da AI che fornis
 ### Installazione Interattiva (consigliata la prima volta)
 
 ```bash
+<<<<<<< .merge_file_XKk6J1
 cd /var/www/_bases/base_fixcity_fila5
+=======
+<<<<<<< .merge_file_QBvTb8
+cd /var/www/_bases/base_fixcity_fila5
+=======
+>>>>>>> .merge_file_otwme2
 cd /var/www/_bases/base_ptvx_fila5
+>>>>>>> .merge_file_8d338m
 npx bmad-method install
 ```
 
@@ -57,8 +71,15 @@ npx bmad-method install
 
 ```bash
 npx bmad-method install \
+<<<<<<< .merge_file_XKk6J1
   --directory /var/www/_bases/base_fixcity_fila5 \
+=======
+<<<<<<< .merge_file_QBvTb8
+  --directory /var/www/_bases/base_fixcity_fila5 \
+=======
+>>>>>>> .merge_file_otwme2
   --directory /var/www/_bases/base_ptvx_fila5 \
+>>>>>>> .merge_file_8d338m
   --modules bmm \
   --tools windsurf \
   --yes
@@ -68,8 +89,15 @@ npx bmad-method install \
 
 ```bash
 npx bmad-method install \
+<<<<<<< .merge_file_XKk6J1
   --directory /var/www/_bases/base_fixcity_fila5 \
+=======
+<<<<<<< .merge_file_QBvTb8
+  --directory /var/www/_bases/base_fixcity_fila5 \
+=======
+>>>>>>> .merge_file_otwme2
   --directory /var/www/_bases/base_ptvx_fila5 \
+>>>>>>> .merge_file_8d338m
   --modules bmm \
   --tools windsurf \
   --action update \
@@ -80,8 +108,15 @@ npx bmad-method install \
 
 ```bash
 npx bmad-method install \
+<<<<<<< .merge_file_XKk6J1
   --directory /var/www/_bases/base_fixcity_fila5 \
+=======
+<<<<<<< .merge_file_QBvTb8
+  --directory /var/www/_bases/base_fixcity_fila5 \
+=======
+>>>>>>> .merge_file_otwme2
   --directory /var/www/_bases/base_ptvx_fila5 \
+>>>>>>> .merge_file_8d338m
   --action quick-update \
   --yes
 ```

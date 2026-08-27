@@ -58,14 +58,23 @@ npm run quality:eslint       # JavaScript/TypeScript only
 
 ### Active Theme Configuration
 The theme detection algorithm reads `.env` to determine the active theme:
+<<<<<<< .merge_file_AgDZkg
+=======
+<<<<<<< .merge_file_De9Eel
+>>>>>>> .merge_file_0JQU7w
 1. `APP_URL` from `laravel/.env` → `http://fixcity.local`
 2. Extract domain → `fixcity.local`
 3. Build config path → `local/fixcity`
 4. Read config → `laravel/config/local/fixcity/xra.php`
+<<<<<<< .merge_file_AgDZkg
+=======
+=======
+>>>>>>> .merge_file_0JQU7w
 1. `APP_URL` from `laravel/.env` → `http://ptv.local`
 2. Extract domain → `ptv.local`
 3. Build config path → `local/ptv`
 4. Read config → `laravel/config/local/ptv/xra.php`
+>>>>>>> .merge_file_SLsHuH
 5. Get theme → `pub_theme` key → `'Sixteen'`
 
 **Current**: Theme "Sixteen" at `laravel/Themes/Sixteen/`
@@ -369,10 +378,18 @@ GSD directories:
 - **Issue Tracking**: `.github/README.md` (Design Comuni project tracking)
 
 ### Module & Theme Documentation
+<<<<<<< .merge_file_AgDZkg
 - **All Modules**: `laravel/Modules/{ModuleName}/docs/00-INDEX.md`
 - **All Themes**: `laravel/Themes/{ThemeName}/docs/00-INDEX.md`
+=======
+<<<<<<< .merge_file_De9Eel
+- **All Modules**: `laravel/Modules/{ModuleName}/docs/00-INDEX.md`
+- **All Themes**: `laravel/Themes/{ThemeName}/docs/00-INDEX.md`
+=======
+>>>>>>> .merge_file_0JQU7w
 - **All Modules**: `laravel/Modules/{ModuleName}/docs/00-index.md`
 - **All Themes**: `laravel/Themes/{ThemeName}/docs/00-index.md`
+>>>>>>> .merge_file_SLsHuH
 - **Component Catalog**: `laravel/Themes/Sixteen/docs/COMPONENT_CATALOG.md` (47 components, 38 pages)
 
 ---

@@ -4,8 +4,15 @@ Regole di architettura modulare per il progetto.
 
 ## Modulo Agnosticism - REGOLA FONDAMENTALE
 
+<<<<<<< .merge_file_Umhbmm
 **Il modulo Predict (e tutti i moduli) devono essere AGONISTICI!**
+=======
+<<<<<<< .merge_file_UcfsrN
+**Il modulo Predict (e tutti i moduli) devono essere AGONISTICI!**
+=======
+>>>>>>> .merge_file_WcvD1i
 **Il modulo Forecast (e tutti i moduli) devono essere AGONISTICI!**
+>>>>>>> .merge_file_jifcQ8
 
 Non usare MAI dipendenze hardcoded come `Modules\Blog\Models\User`. Usa sempre `XotData`:
 
@@ -134,6 +141,13 @@ git rm path/to/submodule
 - [Indice AGENTS](./agents-split-index.md)
 - [module-dependencies.md](./module-dependencies.md) - Più dettagliato
 - [git-submodules.md](./git-submodules.md) - Dettagli git
+<<<<<<< .merge_file_Umhbmm
 - [AGENTS.md originale](../../AGENTS.md)
+=======
+<<<<<<< .merge_file_UcfsrN
+- [AGENTS.md originale](../../AGENTS.md)
+=======
+>>>>>>> .merge_file_WcvD1i
 - [agents.md originale](../../agents.md)
+>>>>>>> .merge_file_jifcQ8
 - [Index principale](./index.md)

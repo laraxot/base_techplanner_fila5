@@ -34,7 +34,10 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $updater
+<<<<<<< .merge_file_L4Y00c
  *
+=======
+>>>>>>> .merge_file_dMF066
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
  *

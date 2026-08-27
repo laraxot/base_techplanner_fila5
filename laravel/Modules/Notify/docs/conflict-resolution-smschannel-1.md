@@ -77,9 +77,19 @@ return $action->execute($smsData);
 *Ultimo aggiornamento: giugno 2025*
 <<<<<<< .merge_file_ZvRKqE
 - [Notify Module Documentation](readme.md)
+<<<<<<< .merge_file_7dFINC
 =======
 - [Notify Module Documentation](README.md)
 >>>>>>> .merge_file_1QEpJN
+=======
+<<<<<<< .merge_file_BZIUk0
+- [Notify Module Documentation](README.md)
+=======
+=======
+- [Notify Module Documentation](README.md)
+>>>>>>> .merge_file_1QEpJN
+>>>>>>> .merge_file_Hw66hb
+>>>>>>> .merge_file_aW5Fzw
 - [SMS Channel Architecture](sms-channel-action-resolution-1.md)
 - [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)
 

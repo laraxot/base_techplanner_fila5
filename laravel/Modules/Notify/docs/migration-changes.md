@@ -89,7 +89,21 @@
 
 ## Collegamenti Correlati
 
+<<<<<<< .merge_file_0jd0qS
 - [Regole Migrazioni](./migration_rules.md)
 - [Documentazione Template](./email_templates.md)
 - [Best Practices Database](../../../../docs/best-practices/database.md)
 - [Proposta Slug Template](./email_template_slug_proposal.md) 
+=======
+<<<<<<< .merge_file_yhwLg0
+- [Regole Migrazioni](./migration_rules.md)
+- [Documentazione Template](./email_templates.md)
+- [Best Practices Database](../../../../docs/best-practices/database.md)
+- [Proposta Slug Template](./email_template_slug_proposal.md) 
+=======
+- [Regole Migrazioni](./migration-rules.md)
+- [Documentazione Template](./email_templates.md)
+- [Best Practices Database](../../../../docs/best-practices/database.md)
+- [Proposta Slug Template](./email-template-slug-proposal.md) 
+>>>>>>> .merge_file_SXryV7
+>>>>>>> .merge_file_gGYYDL

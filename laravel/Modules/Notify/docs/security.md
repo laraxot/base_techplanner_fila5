@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_7H3Whn
+=======
 ---
 title: "Analisi della Sicurezza"
 module: notify
@@ -7,6 +9,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+>>>>>>> .merge_file_t94574
 # Analisi della Sicurezza
 
 ## Vulnerabilità Comuni

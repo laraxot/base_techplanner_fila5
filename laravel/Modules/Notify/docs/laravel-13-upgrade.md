@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_Sw3Nim
+=======
 ---
 title: "Upgrade Laravel 13 - Notify 🐄✨"
 module: notify
@@ -7,6 +9,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+>>>>>>> .merge_file_Md9JyU
 # Upgrade Laravel 13 - Notify 🐄✨
 
 ## 🎯 Visione Architetturale

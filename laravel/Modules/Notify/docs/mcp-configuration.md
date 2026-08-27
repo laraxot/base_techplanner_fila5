@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_MPWrf7
+=======
 ---
 title: "MCP Server Configuration - Notify Module"
 module: notify
@@ -7,6 +9,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+>>>>>>> .merge_file_N70pJU
 # MCP Server Configuration - Notify Module
 
 

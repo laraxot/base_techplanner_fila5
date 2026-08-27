@@ -30,9 +30,19 @@ related:
 
 - **Design Comuni Replication Rules:** Use Tailwind @apply (NOT Bootstrap imports), single [slug].blade.php for ALL pages, JSON content blocks (NOT hardcoded HTML), universal reusable blocks (NOT page-specific), <x-layouts.app> (NOT custom layouts), <x-section slug="header" /> (NOT inline HTML), <x-pub_theme:: namespace (NOT <x-sixteen::). Block types: hero, topics-grid, card, etc. (NOT tests.argomenti). Implement 47 components in 5 phases based on usage frequency.
 
+<<<<<<< .merge_file_w4tOov
 <<<<<<< .merge_file_xwji2I
 - **Theme Detection:** APP_URL from .env → remove protocol → remove www → explode by "." → reverse array → join with "/" → config path. Example: http://fixcity.local → local/fixcity → laravel/config/local/fixcity/xra.php → pub_theme = "Sixteen" → Theme folder: laravel/Themes/Sixteen/
 =======
+=======
+<<<<<<< .merge_file_nTTjXm
+- **Theme Detection:** APP_URL from .env → remove protocol → remove www → explode by "." → reverse array → join with "/" → config path. Example: http://fixcity.local → local/fixcity → laravel/config/local/fixcity/xra.php → pub_theme = "Sixteen" → Theme folder: laravel/Themes/Sixteen/
+=======
+<<<<<<< .merge_file_xwji2I
+- **Theme Detection:** APP_URL from .env → remove protocol → remove www → explode by "." → reverse array → join with "/" → config path. Example: http://fixcity.local → local/fixcity → laravel/config/local/fixcity/xra.php → pub_theme = "Sixteen" → Theme folder: laravel/Themes/Sixteen/
+=======
+>>>>>>> .merge_file_v6K4RO
+>>>>>>> .merge_file_7G1XmG
 - **Theme Detection:** APP_URL from .env → remove protocol → remove www → explode by "." → reverse array → join with "/" → config path. Example: http://laraxot.local → local/laraxot → laravel/config/local/laraxot/xra.php → pub_theme = "Sixteen" → Theme folder: laravel/Themes/Sixteen/
 >>>>>>> .merge_file_h9woUh
 

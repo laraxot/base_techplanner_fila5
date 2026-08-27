@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_oHyQcR
+=======
 ---
 title: "Analisi del Pattern Factory per le Notifiche"
 module: notify
@@ -7,6 +9,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+>>>>>>> .merge_file_8V5xOv
 # Analisi del Pattern Factory per le Notifiche
 
 Questo documento analizza l'implementazione del pattern Factory per la gestione delle notifiche , confrontando l'approccio originale con quello basato su Factory.

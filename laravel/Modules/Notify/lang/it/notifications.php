@@ -25,6 +25,8 @@ return [
         'updated_at' => [
             'label' => 'updated_at',
         ],
+<<<<<<< .merge_file_lYSgWg
+=======
         'is_read' => [
             'label' => 'is_read',
         ],
@@ -48,5 +50,6 @@ return [
             'icon' => 'delete',
             'tooltip' => 'delete',
         ],
+>>>>>>> .merge_file_VqlhhK
     ],
 ];

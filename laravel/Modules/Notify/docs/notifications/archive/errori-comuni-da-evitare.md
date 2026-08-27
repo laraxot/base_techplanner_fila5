@@ -1,16 +1,36 @@
 ---
+<<<<<<< .merge_file_KriKB7
 <<<<<<< .merge_file_52hUMr
 title: "Errori Comuni da Evitare nelle Implementazioni di Moduli SaluteOra"
 =======
+=======
+<<<<<<< .merge_file_fYP1J6
+title: "Errori Comuni da Evitare nelle Implementazioni di Moduli SaluteOra"
+=======
+<<<<<<< .merge_file_52hUMr
+title: "Errori Comuni da Evitare nelle Implementazioni di Moduli SaluteOra"
+=======
+>>>>>>> .merge_file_W7r1Tc
+>>>>>>> .merge_file_203uSG
 title: "Errori Comuni da Evitare nelle Implementazioni di Moduli <nome progetto>"
 >>>>>>> .merge_file_iw0iyZ
 type: concept
 tags: [errori, comuni, evitare]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< .merge_file_KriKB7
 <<<<<<< .merge_file_52hUMr
 qmd: "errori-comuni-da-evitare errori comuni da evitare nelle implementazioni di moduli saluteora"
 =======
+=======
+<<<<<<< .merge_file_fYP1J6
+qmd: "errori-comuni-da-evitare errori comuni da evitare nelle implementazioni di moduli saluteora"
+=======
+<<<<<<< .merge_file_52hUMr
+qmd: "errori-comuni-da-evitare errori comuni da evitare nelle implementazioni di moduli saluteora"
+=======
+>>>>>>> .merge_file_W7r1Tc
+>>>>>>> .merge_file_203uSG
 qmd: "errori-comuni-da-evitare errori comuni da evitare nelle implementazioni di moduli <nome progetto>"
 >>>>>>> .merge_file_iw0iyZ
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
@@ -24,20 +44,43 @@ related:
   - "./telegram-notifications-guide.md"
 ---
 
+<<<<<<< .merge_file_KriKB7
 <<<<<<< .merge_file_52hUMr
 # Errori Comuni da Evitare nelle Implementazioni di Moduli SaluteOra
 =======
+=======
+<<<<<<< .merge_file_fYP1J6
+# Errori Comuni da Evitare nelle Implementazioni di Moduli SaluteOra
+=======
+<<<<<<< .merge_file_52hUMr
+# Errori Comuni da Evitare nelle Implementazioni di Moduli SaluteOra
+=======
+>>>>>>> .merge_file_W7r1Tc
+>>>>>>> .merge_file_203uSG
 # Errori Comuni da Evitare nelle Implementazioni di Moduli <nome progetto>
 >>>>>>> .merge_file_iw0iyZ
 
 ## Errori di Struttura Directory e Namespace
 
 1. **Errore di Case nelle Directory**
+<<<<<<< .merge_file_KriKB7
+<<<<<<< .merge_file_52hUMr
+=======
+<<<<<<< .merge_file_fYP1J6
+>>>>>>> .merge_file_203uSG
+   - ❌ ERRATO: `/var/www/html/saluteora/laravel/Modules/Notify/App/Actions/`
+   - ✅ CORRETTO: `/var/www/html/saluteora/laravel/Modules/Notify/app/Actions/`
+   
+=======
+<<<<<<< .merge_file_KriKB7
+=======
 <<<<<<< .merge_file_52hUMr
    - ❌ ERRATO: `/var/www/html/saluteora/laravel/Modules/Notify/App/Actions/`
    - ✅ CORRETTO: `/var/www/html/saluteora/laravel/Modules/Notify/app/Actions/`
    
 =======
+>>>>>>> .merge_file_W7r1Tc
+>>>>>>> .merge_file_203uSG
    - ❌ ERRATO: `[project-root]/laravel/Modules/Notify/App/Actions/`
    - ✅ CORRETTO: `[project-root]/laravel/Modules/Notify/app/Actions/`
 
@@ -47,9 +90,19 @@ related:
 2. **Errore di Namespace nei File**
    - ❌ ERRATO: `namespace Modules\Notify\App\Actions;`
    - ✅ CORRETTO: `namespace Modules\Notify\Actions;`
+<<<<<<< .merge_file_KriKB7
 <<<<<<< .merge_file_52hUMr
    
 =======
+=======
+<<<<<<< .merge_file_fYP1J6
+   
+=======
+<<<<<<< .merge_file_52hUMr
+   
+=======
+>>>>>>> .merge_file_W7r1Tc
+>>>>>>> .merge_file_203uSG
 
 >>>>>>> .merge_file_iw0iyZ
    > Il namespace dipende dalla configurazione PSR-4 nel composer.json del modulo
@@ -68,9 +121,19 @@ related:
            'retry_attempts' => 3,  // ERRORE: Duplicazione
        ],
    ],
+<<<<<<< .merge_file_KriKB7
 <<<<<<< .merge_file_52hUMr
    
 =======
+=======
+<<<<<<< .merge_file_fYP1J6
+   
+=======
+<<<<<<< .merge_file_52hUMr
+   
+=======
+>>>>>>> .merge_file_W7r1Tc
+>>>>>>> .merge_file_203uSG
 
 >>>>>>> .merge_file_iw0iyZ
    // CORRETTO
@@ -99,9 +162,19 @@ related:
    public function execute() {
        $timeout = 30; // Hardcoded
    }
+<<<<<<< .merge_file_KriKB7
 <<<<<<< .merge_file_52hUMr
    
 =======
+=======
+<<<<<<< .merge_file_fYP1J6
+   
+=======
+<<<<<<< .merge_file_52hUMr
+   
+=======
+>>>>>>> .merge_file_W7r1Tc
+>>>>>>> .merge_file_203uSG
 
 >>>>>>> .merge_file_iw0iyZ
    // CORRETTO

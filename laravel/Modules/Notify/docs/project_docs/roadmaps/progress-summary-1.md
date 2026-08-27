@@ -1,16 +1,36 @@
 ---
+<<<<<<< .merge_file_sROQ0k
 <<<<<<< .merge_file_o5vabd
 title: "📊 RIEPILOGO PROGRESSI - FIXCITY PLATFORM"
 =======
+=======
+<<<<<<< .merge_file_FRHEyo
+title: "📊 RIEPILOGO PROGRESSI - FIXCITY PLATFORM"
+=======
+<<<<<<< .merge_file_o5vabd
+title: "📊 RIEPILOGO PROGRESSI - FIXCITY PLATFORM"
+=======
+>>>>>>> .merge_file_L6hT4d
+>>>>>>> .merge_file_KA0H9s
 title: "📊 RIEPILOGO PROGRESSI - NOTIFY PLATFORM"
 >>>>>>> .merge_file_3jEuaw
 type: concept
 tags: [progress, summary, 2025, 27.deprecated]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< .merge_file_sROQ0k
 <<<<<<< .merge_file_o5vabd
 qmd: "progress-summary-2025-01-27.deprecated 📊 riepilogo progressi - fixcity platform"
 =======
+=======
+<<<<<<< .merge_file_FRHEyo
+qmd: "progress-summary-2025-01-27.deprecated 📊 riepilogo progressi - fixcity platform"
+=======
+<<<<<<< .merge_file_o5vabd
+qmd: "progress-summary-2025-01-27.deprecated 📊 riepilogo progressi - fixcity platform"
+=======
+>>>>>>> .merge_file_L6hT4d
+>>>>>>> .merge_file_KA0H9s
 qmd: "progress-summary-2025-01-27.deprecated 📊 riepilogo progressi - laraxot platform"
 >>>>>>> .merge_file_3jEuaw
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
@@ -26,9 +46,19 @@ related:
   - "./code-quality-improvements-1.md"
 ---
 
+<<<<<<< .merge_file_sROQ0k
 <<<<<<< .merge_file_o5vabd
 # 📊 RIEPILOGO PROGRESSI - FIXCITY PLATFORM
 =======
+=======
+<<<<<<< .merge_file_FRHEyo
+# 📊 RIEPILOGO PROGRESSI - FIXCITY PLATFORM
+=======
+<<<<<<< .merge_file_o5vabd
+# 📊 RIEPILOGO PROGRESSI - FIXCITY PLATFORM
+=======
+>>>>>>> .merge_file_L6hT4d
+>>>>>>> .merge_file_KA0H9s
 # 📊 RIEPILOGO PROGRESSI - NOTIFY PLATFORM
 >>>>>>> .merge_file_3jEuaw
 
@@ -63,9 +93,19 @@ related:
 ### ✅ Moduli Core (CRITICAL)
 - [x] **Xot Module**: 95% completato, PHPStan Level 9
 - [x] **User Module**: 90% completato, PHPStan Level 9
+<<<<<<< .merge_file_sROQ0k
 <<<<<<< .merge_file_o5vabd
 - [x] **Fixcity Module**: 80% completato, PHPStan Level 9
 =======
+=======
+<<<<<<< .merge_file_FRHEyo
+- [x] **Fixcity Module**: 80% completato, PHPStan Level 9
+=======
+<<<<<<< .merge_file_o5vabd
+- [x] **Fixcity Module**: 80% completato, PHPStan Level 9
+=======
+>>>>>>> .merge_file_L6hT4d
+>>>>>>> .merge_file_KA0H9s
 - [x] **App Module**: 80% completato, PHPStan Level 9
 >>>>>>> .merge_file_3jEuaw
 
@@ -80,10 +120,22 @@ related:
 ## 🚧 IN CORSO
 
 ### 🔧 Implementazione Roadmap
+<<<<<<< .merge_file_sROQ0k
 <<<<<<< .merge_file_o5vabd
 - [ ] **API Development**: Fixcity module (45% completato)
 - [ ] **Mobile Optimization**: Fixcity module (55% completato)
 =======
+=======
+<<<<<<< .merge_file_FRHEyo
+- [ ] **API Development**: Fixcity module (45% completato)
+- [ ] **Mobile Optimization**: Fixcity module (55% completato)
+=======
+<<<<<<< .merge_file_o5vabd
+- [ ] **API Development**: Fixcity module (45% completato)
+- [ ] **Mobile Optimization**: Fixcity module (55% completato)
+=======
+>>>>>>> .merge_file_L6hT4d
+>>>>>>> .merge_file_KA0H9s
 - [ ] **API Development**: App module (45% completato)
 - [ ] **Mobile Optimization**: App module (55% completato)
 >>>>>>> .merge_file_3jEuaw
@@ -101,9 +153,19 @@ related:
 ## 📅 PROSSIMI PASSI (Next 30 Days)
 
 ### Week 1: API Development
+<<<<<<< .merge_file_sROQ0k
 <<<<<<< .merge_file_o5vabd
 - [ ] Completare API endpoints per Fixcity
 =======
+=======
+<<<<<<< .merge_file_FRHEyo
+- [ ] Completare API endpoints per Fixcity
+=======
+<<<<<<< .merge_file_o5vabd
+- [ ] Completare API endpoints per Fixcity
+=======
+>>>>>>> .merge_file_L6hT4d
+>>>>>>> .merge_file_KA0H9s
 - [ ] Completare API endpoints per App
 >>>>>>> .merge_file_3jEuaw
 - [ ] Implementare autenticazione API
@@ -161,9 +223,19 @@ related:
 - [x] Aggiornare documentazione
 
 ### Febbraio 2025
+<<<<<<< .merge_file_sROQ0k
 <<<<<<< .merge_file_o5vabd
 - [ ] Completare API Fixcity
 =======
+=======
+<<<<<<< .merge_file_FRHEyo
+- [ ] Completare API Fixcity
+=======
+<<<<<<< .merge_file_o5vabd
+- [ ] Completare API Fixcity
+=======
+>>>>>>> .merge_file_L6hT4d
+>>>>>>> .merge_file_KA0H9s
 - [ ] Completare API App
 >>>>>>> .merge_file_3jEuaw
 - [ ] Ottimizzare mobile interface
@@ -217,7 +289,14 @@ related:
 
 ### Moduli Core
 - **Xot ↔ User**: Integrazione completa
+<<<<<<< .merge_file_sROQ0k
 <<<<<<< .merge_file_o5vabd
+=======
+<<<<<<< .merge_file_FRHEyo
+=======
+<<<<<<< .merge_file_o5vabd
+>>>>>>> .merge_file_L6hT4d
+>>>>>>> .merge_file_KA0H9s
 - **Xot ↔ Fixcity**: Integrazione completa
 - **User ↔ Fixcity**: Integrazione completa
 
@@ -225,7 +304,14 @@ related:
 - **UI ↔ Sixteen**: Integrazione tema
 - **Geo ↔ Fixcity**: Integrazione geolocalizzazione
 - **Media ↔ Fixcity**: Integrazione file upload
+<<<<<<< .merge_file_sROQ0k
 =======
+=======
+<<<<<<< .merge_file_FRHEyo
+=======
+=======
+>>>>>>> .merge_file_L6hT4d
+>>>>>>> .merge_file_KA0H9s
 - **Xot ↔ App**: Integrazione completa
 - **User ↔ App**: Integrazione completa
 
@@ -281,9 +367,19 @@ related:
 
 ---
 
+<<<<<<< .merge_file_sROQ0k
 <<<<<<< .merge_file_o5vabd
 *Questo documento riassume i progressi completati e le prossime azioni per il completamento del progetto FixCity Platform.*
 =======
+=======
+<<<<<<< .merge_file_FRHEyo
+*Questo documento riassume i progressi completati e le prossime azioni per il completamento del progetto FixCity Platform.*
+=======
+<<<<<<< .merge_file_o5vabd
+*Questo documento riassume i progressi completati e le prossime azioni per il completamento del progetto FixCity Platform.*
+=======
+>>>>>>> .merge_file_L6hT4d
+>>>>>>> .merge_file_KA0H9s
 *Questo documento riassume i progressi completati e le prossime azioni per il completamento del progetto Notify Platform.*
 >>>>>>> .merge_file_3jEuaw
 

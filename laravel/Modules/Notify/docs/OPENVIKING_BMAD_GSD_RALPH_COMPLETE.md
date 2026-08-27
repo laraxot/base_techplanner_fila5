@@ -59,8 +59,15 @@ All documentation, scripts, and configuration files have been created successful
 ## File Structure
 
 ```
+<<<<<<< .merge_file_RAERz1
 base_fixcity_fila5/
+=======
+<<<<<<< .merge_file_6B4F9J
+base_fixcity_fila5/
+=======
+>>>>>>> .merge_file_WIuKfx
 base_ptv_fila5/
+>>>>>>> .merge_file_TXYfwJ
 ├── docs/
 │   ├── openviking-integration.md          ✅ NEW
 │   ├── bmad-gsd-ralph-integration.md      ✅ NEW
@@ -95,8 +102,15 @@ sudo systemctl start openviking
 
 ```bash
 # Navigate to project
+<<<<<<< .merge_file_RAERz1
 cd /var/www/_bases/base_fixcity_fila5
+=======
+<<<<<<< .merge_file_6B4F9J
+cd /var/www/_bases/base_fixcity_fila5
+=======
+>>>>>>> .merge_file_WIuKfx
 cd /var/www/_bases/base_ptv_fila5
+>>>>>>> .merge_file_TXYfwJ
 
 # Run initialization
 bash bashscripts/ai/openviking-init.sh
@@ -347,10 +361,18 @@ cat .ralph/iteration-log.md
 ls -la _bmad/
 ls -la .planning/
 
+<<<<<<< .merge_file_RAERz1
 # Review AGENTS.md
 cat AGENTS.md
+=======
+<<<<<<< .merge_file_6B4F9J
+# Review AGENTS.md
+cat AGENTS.md
+=======
+>>>>>>> .merge_file_WIuKfx
 # Review agents.md
 cat agents.md
+>>>>>>> .merge_file_TXYfwJ
 ```
 
 ## Resources
@@ -360,8 +382,15 @@ cat agents.md
 - [BMAD-GSD-Ralph Integration](./bmad-gsd-ralph-integration.md)
 - [Unified Workflow](./unified-ai-workflow.md)
 - [BMAD Workflow](laravel/Modules/Xot/docs/bmad-workflow-guide.md)
+<<<<<<< .merge_file_RAERz1
 - [AGENTS.md](../AGENTS.md)
+=======
+<<<<<<< .merge_file_6B4F9J
+- [AGENTS.md](../AGENTS.md)
+=======
+>>>>>>> .merge_file_WIuKfx
 - [agents.md](../agents.md)
+>>>>>>> .merge_file_TXYfwJ
 
 ### Scripts
 - OpenViking Init: `bashscripts/ai/openviking-init.sh`

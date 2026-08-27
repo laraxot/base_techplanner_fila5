@@ -62,14 +62,23 @@ qmd search "<topic>"
 \`\`\`
 ./laravel/Modules/Notify/docs/
 └── wiki/                    # Knowledge base locale
+<<<<<<< .merge_file_YobBaU
+=======
+<<<<<<< .merge_file_SfVEwg
+>>>>>>> .merge_file_YAeQSz
     ├── rules/INDEX.md      # Indice rules modulo-specifiche
     ├── skills/INDEX.md     # Indice skills modulo-specifiche
     ├── commands/INDEX.md   # Indici commands
     └── memories/INDEX.md   # Indice memories
+<<<<<<< .merge_file_YobBaU
+=======
+=======
+>>>>>>> .merge_file_YAeQSz
     ├── rules/index.md      # Indice rules modulo-specifiche
     ├── skills/index.md     # Indice skills modulo-specifiche
     ├── commands/index.md   # Indici commands
     └── memories/index.md   # Indice memories
+>>>>>>> .merge_file_kiSk8U
 \`\`\`
 
 ## Quick Reference
@@ -83,7 +92,13 @@ qmd search "<topic>"
 
 ## Regole Critiche per Module
 
+<<<<<<< .merge_file_YobBaU
 1. **Nessun bootstrap pesante** — Non elencare rules in AGENTS.md o claude.md
+=======
+<<<<<<< .merge_file_SfVEwg
+1. **Nessun bootstrap pesante** — Non elencare rules in AGENTS.md o claude.md
+=======
+>>>>>>> .merge_file_YAeQSz
 1. **Nessun bootstrap pesante** — Non elencare rules in agents.md o claude.md
 2. **Carica only what you need** — Ogni task carica max 3-5 file
 3. **Mantieni la wiki aggiornata** — Dopo ogni task, aggiorna ./laravel/Modules/Notify/docs/wiki/log.md
@@ -179,6 +194,7 @@ qmd search "<topic>"
 ## Regole Critiche per Module
 
 1. **Nessun bootstrap pesante** — Non elencare rules in agents.md o CLAUDE.md
+>>>>>>> .merge_file_kiSk8U
 2. **Carica only what you need** — Ogni task carica max 3-5 file
 3. **Mantieni la wiki aggiornata** — Dopo ogni task, aggiorna ./laravel/Modules/Notify/docs/wiki/log.md
 4. **Rispetta la trigger map** — Se esiste, usala; altrimenti usa qmd search

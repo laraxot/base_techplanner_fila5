@@ -26,8 +26,15 @@ related:
 
 ## 📋 Overview
 
+<<<<<<< .merge_file_klVqPr
 This directory contains **mandatory rules** and governance documents for the FixCity platform.
+=======
+<<<<<<< .merge_file_HHVnT3
+This directory contains **mandatory rules** and governance documents for the FixCity platform.
+=======
+>>>>>>> .merge_file_3gevlb
 This directory contains **mandatory rules** and governance documents for the Notify platform.
+>>>>>>> .merge_file_fhVBA3
 
 ---
 
@@ -100,8 +107,15 @@ apache2ctl configtest
 ls -la /etc/apache2/sites-enabled/
 
 # Verify document root
+<<<<<<< .merge_file_klVqPr
 grep -r "DocumentRoot" /etc/apache2/sites-available/fixcity.local.conf
+=======
+<<<<<<< .merge_file_HHVnT3
+grep -r "DocumentRoot" /etc/apache2/sites-available/fixcity.local.conf
+=======
+>>>>>>> .merge_file_3gevlb
 grep -r "DocumentRoot" /etc/apache2/sites-available/laraxot.local.conf
+>>>>>>> .merge_file_fhVBA3
 ```
 
 ### Reporting Violations

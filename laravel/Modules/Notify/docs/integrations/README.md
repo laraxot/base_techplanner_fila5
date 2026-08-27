@@ -140,6 +140,8 @@ Per contribuire alla documentazione, seguire le [Linee Guida](../../../../../doc
 
 ## Collegamenti Completi
 Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../../../docs/readme_links.md). 
+<<<<<<< .merge_file_swFba7
+=======
 
 ---
 
@@ -157,3 +159,4 @@ discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 ---
 
+>>>>>>> .merge_file_9xYqNe

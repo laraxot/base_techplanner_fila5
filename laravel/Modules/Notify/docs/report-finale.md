@@ -4,8 +4,15 @@ type: concept
 tags: [report, finale]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< .merge_file_rxFI4R
 qmd: "report-finale 📊 report finale - fixcity sixteen theme"
+=======
+<<<<<<< .merge_file_UREksF
+qmd: "report-finale 📊 report finale - fixcity sixteen theme"
+=======
+>>>>>>> .merge_file_OyTAF0
 qmd: "report-finale 📊 report finale - ptv sixteen theme"
+>>>>>>> .merge_file_JoVNlU
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -247,8 +254,15 @@ Themes/Sixteen/resources/views/pages/
 ## 📞 Contatti
 
 Per informazioni:
+<<<<<<< .merge_file_rxFI4R
 - **Repository**: `/var/www/_bases/base_fixcity_fila5`
+=======
+<<<<<<< .merge_file_UREksF
+- **Repository**: `/var/www/_bases/base_fixcity_fila5`
+=======
+>>>>>>> .merge_file_OyTAF0
 - **Repository**: `/var/www/_bases/base_ptv_fila5`
+>>>>>>> .merge_file_JoVNlU
 - **Tema**: `Themes/Sixteen`
 - **Documentazione**: `docs/pagine-create.md`
 

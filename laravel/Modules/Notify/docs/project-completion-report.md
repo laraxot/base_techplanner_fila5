@@ -4,8 +4,15 @@ type: concept
 tags: [project, completion, report]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< .merge_file_edZah9
 qmd: "project-completion-report report di completamento progetto fixcity"
+=======
+<<<<<<< .merge_file_Ny27Tr
+qmd: "project-completion-report report di completamento progetto fixcity"
+=======
+>>>>>>> .merge_file_R86i71
 qmd: "project-completion-report report di completamento progetto ptv"
+>>>>>>> .merge_file_ocjIgv
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -154,12 +161,21 @@ FIXCITY_ANALYTICS_ENABLED=true
 /comune/eventi             # Eventi
 
 // API Fixcity
+<<<<<<< .merge_file_edZah9
 /api/fixcity/tickets       # Gestione ticket
 /api/fixcity/map/tickets   # Mappa ticket
 /api/fixcity/statistics    # Statistiche
+=======
+<<<<<<< .merge_file_Ny27Tr
+/api/fixcity/tickets       # Gestione ticket
+/api/fixcity/map/tickets   # Mappa ticket
+/api/fixcity/statistics    # Statistiche
+=======
+>>>>>>> .merge_file_R86i71
 /api/ptv/tickets       # Gestione ticket
 /api/ptv/map/tickets   # Mappa ticket
 /api/ptv/statistics    # Statistiche
+>>>>>>> .merge_file_ocjIgv
 ```
 
 ## Test Implementati

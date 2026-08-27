@@ -2,14 +2,28 @@
 
 ## Parametri Chiave per Ridurre i Token
 
+<<<<<<< .merge_file_blWVAR
 ### 1. `num_predict` - Limite Token Output
+=======
+<<<<<<< .merge_file_qYXKN1
+### 1. `num_predict` - Limite Token Output
+=======
+>>>>>>> .merge_file_Adl5Tj
 ### 1. `num_forecast` - Limite Token Output
+>>>>>>> .merge_file_kF4r8N
 Limita il numero massimo di token generati nella risposta.
 
 ```json
 {
+<<<<<<< .merge_file_blWVAR
   "num_predict": 256
+=======
+<<<<<<< .merge_file_qYXKN1
+  "num_predict": 256
+=======
+>>>>>>> .merge_file_Adl5Tj
   "num_forecast": 256
+>>>>>>> .merge_file_kF4r8N
 }
 ```
 **Impatto**: Direttamente proporzionale alla riduzione. Valori consigliati: 128-512 per risposte brevi.
@@ -87,8 +101,15 @@ curl http://localhost:11434/api/chat -d '{
     }
   ],
   "options": {
+<<<<<<< .merge_file_blWVAR
     "num_predict": 150,
+=======
+<<<<<<< .merge_file_qYXKN1
+    "num_predict": 150,
+=======
+>>>>>>> .merge_file_Adl5Tj
     "num_forecast": 150,
+>>>>>>> .merge_file_kF4r8N
     "temperature": 0.3,
     "top_k": 20,
     "top_p": 0.7,
@@ -101,7 +122,14 @@ curl http://localhost:11434/api/chat -d '{
 ## Utilizzo in Laravel con QueueableActions
 
 ### Azioni Disponibili
+<<<<<<< .merge_file_blWVAR
 Le azioni sono in `Modules\AI\Actions\Ollama\`:
+=======
+<<<<<<< .merge_file_qYXKN1
+Le azioni sono in `Modules\AI\Actions\Ollama\`:
+=======
+>>>>>>> .merge_file_kF4r8N
+>>>>>>> .merge_file_Adl5Tj
 - `ChatOllamaAction` - Chat conversazionale
 - `GenerateOllamaAction` - Generazione testo
 
@@ -121,7 +149,14 @@ OLLAMA_THINKING=low
 ### Utilizzo
 
 ```php
+<<<<<<< .merge_file_blWVAR
 use Modules\AI\Actions\Ollama\ChatOllamaAction;
+=======
+<<<<<<< .merge_file_qYXKN1
+use Modules\AI\Actions\Ollama\ChatOllamaAction;
+=======
+>>>>>>> .merge_file_kF4r8N
+>>>>>>> .merge_file_Adl5Tj
 
 // Usage standard ottimizzato
 $result = (new ChatOllamaAction())->executeOptimized('tua domanda');
@@ -132,8 +167,15 @@ $result = (new ChatOllamaAction())->executeMinimal('tua domanda');
 // Usage con opzioni custom
 $result = (new ChatOllamaAction())->execute('tua domanda', [
     'options' => [
+<<<<<<< .merge_file_blWVAR
         'num_predict' => 128,
+=======
+<<<<<<< .merge_file_qYXKN1
+        'num_predict' => 128,
+=======
+>>>>>>> .merge_file_Adl5Tj
         'num_forecast' => 128,
+>>>>>>> .merge_file_kF4r8N
         'temperature' => 0.1,
     ],
     'think' => 'low',
@@ -148,8 +190,15 @@ echo $result['tokens']['total']; // Token totali usati
 
 | Parametro | Impatto Stimato |
 |-----------|-----------------|
+<<<<<<< .merge_file_blWVAR
 | num_predict: 256 | 50-70% riduzione output |
+=======
+<<<<<<< .merge_file_qYXKN1
+| num_predict: 256 | 50-70% riduzione output |
+=======
+>>>>>>> .merge_file_Adl5Tj
 | num_forecast: 256 | 50-70% riduzione output |
+>>>>>>> .merge_file_kF4r8N
 | temperature: 0.3 | 10-20% riduzione |
 | think: "low" | 27-51% riduzione ragionamento |
 | top_k: 20 | 5-15% riduzione |

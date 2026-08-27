@@ -220,8 +220,15 @@
 
 **URL Reference**:
 - Bootstrap Italia: https://italia.github.io/design-comuni-pagine-statiche/sito/homepage.html
+<<<<<<< .merge_file_3L9Uqs
 - FixCity: http://fixcity.local/it/tests/homepage
+=======
+<<<<<<< .merge_file_wfQ91L
+- FixCity: http://fixcity.local/it/tests/homepage
+=======
+>>>>>>> .merge_file_62D42S
 - FixCity: http://ptv.local/it/tests/homepage
+>>>>>>> .merge_file_vAwzzJ
 
 ---
 

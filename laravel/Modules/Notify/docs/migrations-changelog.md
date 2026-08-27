@@ -29,6 +29,18 @@
 - Mantenuta compatibilità con codice esistente
 
 ### Collegamenti Correlati
+<<<<<<< .merge_file_GYrte4
 - [Proposta Slug](./spatie_email_slug_proposal.md)
 - [Sistema Template Email](./email_templates.md)
 - [Email Dottori](./doctor_emails.md) 
+=======
+<<<<<<< .merge_file_CzHKob
+- [Proposta Slug](./spatie_email_slug_proposal.md)
+- [Sistema Template Email](./email_templates.md)
+- [Email Dottori](./doctor_emails.md) 
+=======
+- [Proposta Slug](./spatie-email-slug-proposal.md)
+- [Sistema Template Email](./email_templates.md)
+- [Email Dottori](./doctor-emails.md) 
+>>>>>>> .merge_file_xDxuPE
+>>>>>>> .merge_file_m8PCbZ

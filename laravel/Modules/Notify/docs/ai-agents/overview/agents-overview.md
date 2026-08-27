@@ -72,8 +72,15 @@
 
 **✅ SEMPRE**:
 ```blade
+<<<<<<< .merge_file_jHyM4U
 @livewire(\Modules\Predict\Filament\Widgets\PredictTableWidget::class)
+=======
+<<<<<<< .merge_file_jaVmhu
+@livewire(\Modules\Predict\Filament\Widgets\PredictTableWidget::class)
+=======
+>>>>>>> .merge_file_3TNgQe
 @livewire(\Modules\Forecast\Filament\Widgets\ForecastTableWidget::class)
+>>>>>>> .merge_file_CiIHx8
 ```
 
 **Perché**:

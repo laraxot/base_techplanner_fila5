@@ -174,8 +174,15 @@
 ## 🔗 STRUTTURA DOCUMENTAZIONE
 
 ```
+<<<<<<< .merge_file_zd8Qzb
 base_fixcity_fila5_mono/
+=======
+<<<<<<< .merge_file_knJKgV
+base_fixcity_fila5_mono/
+=======
+>>>>>>> .merge_file_EAQB1D
 base_ptv_fila5_mono/
+>>>>>>> .merge_file_0KePwb
 ├── DOCUMENTATION_INDEX.md          # ✅ Indice generale
 ├── QUICK_START.md                  # ✅ Guida rapida
 ├── ROADMAP_STATUS_SUMMARY.md       # ✅ Status master
@@ -245,12 +252,21 @@ base_ptv_fila5_mono/
 - **Doc Lead**: Documentazione
 
 ### Supporto
+<<<<<<< .merge_file_zd8Qzb
 - **Email**: dev@fixcity.it
 - **Docs**: docs@fixcity.it
 - **Slack**: #fixcity-dev
+=======
+<<<<<<< .merge_file_knJKgV
+- **Email**: dev@fixcity.it
+- **Docs**: docs@fixcity.it
+- **Slack**: #fixcity-dev
+=======
+>>>>>>> .merge_file_EAQB1D
 - **Email**: dev@ptv.it
 - **Docs**: docs@ptv.it
 - **Slack**: #ptv-dev
+>>>>>>> .merge_file_0KePwb
 
 ---
 

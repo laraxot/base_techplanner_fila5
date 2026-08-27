@@ -119,3 +119,6 @@ reports
 laravel/Modules/Lang/packages/lara-zeus/
 public_html/assets/geo
 bashscripts/ai/.agents/skills/ui-ux-pro-max/scripts/__pycache__/core.cpython-312.pyc
+${HOME}/.cache/qmd-cache/qmd/index.sqlite-wal
+${HOME}/.cache/qmd-cache/qmd/index.sqlite-shm
+.serena/logs/indexing.txt

@@ -75,6 +75,8 @@ qmd search "form" -c notify  # Solo questo modulo
 
 ---
 *Cache: ~/.cache/qmd-cache/ | Index: ~/.cache/qmd-cache/index*
+<<<<<<< .merge_file_hiWYjA
+=======
 
 ---
 
@@ -150,3 +152,4 @@ qmd search "form" -c notify  # Solo questo modulo
 
 ---
 *Cache: ~/.cache/qmd-cache/ | Index: ~/.cache/qmd-cache/index*
+>>>>>>> .merge_file_wR84h4

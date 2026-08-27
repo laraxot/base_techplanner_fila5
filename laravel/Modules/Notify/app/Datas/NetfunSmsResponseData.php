@@ -10,7 +10,10 @@ class NetfunSmsResponseData extends Data
 {
     /**
      * @param  array<int, array<string, mixed>>|null  $messages
+<<<<<<< .merge_file_dbwhPS
      *
+=======
+>>>>>>> .merge_file_yvlfI5
      * @return void
      */
     public function __construct(

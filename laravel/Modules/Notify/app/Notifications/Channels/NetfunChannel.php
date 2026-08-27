@@ -19,7 +19,10 @@ class NetfunChannel
 
         $action = app(SendSmsFactorSMSAction::class);
 
+<<<<<<< .merge_file_Tx9mOY
         /** @var array<string, mixed> $data */
+=======
+>>>>>>> .merge_file_oDyYBI
         $data = $action->execute($smsData);
 
         $notifiable->increase('sms', $data);

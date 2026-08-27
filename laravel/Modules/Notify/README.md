@@ -8,8 +8,15 @@
 [![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue.svg)](https://www.php-fig.org/psr/psr-12/)
 [![Strict Types](https://img.shields.io/badge/PHP-strict__types-1-informational.svg)](#)
 [![Laraxot Modules](https://img.shields.io/badge/Architecture-Modular-purple.svg)](#)
+<<<<<<< .merge_file_7dpLay
 [![FixCity Platform](https://img.shields.io/badge/Platform-FixCity-008758.svg)](#)
+=======
+<<<<<<< .merge_file_SiQxZQ
+[![FixCity Platform](https://img.shields.io/badge/Platform-FixCity-008758.svg)](#)
+=======
+>>>>>>> .merge_file_AH5oSY
 [![Notify Platform](https://img.shields.io/badge/Platform-Notify-008758.svg)](#)
+>>>>>>> .merge_file_lxeUmD
 
 > **Il cittadino sa cosa succede al suo ticket.** Email, template, canali — orchestrazione notifiche enterprise.
 
@@ -54,5 +61,12 @@ Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 
 ---
 
+<<<<<<< .merge_file_7dpLay
 **Modulo** `notify` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+<<<<<<< .merge_file_SiQxZQ
+**Modulo** `notify` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+>>>>>>> .merge_file_AH5oSY
 **Modulo** `notify` · **Laraxot** · **Notify Platform** · PHPStan 10 · Filament 5
+>>>>>>> .merge_file_lxeUmD

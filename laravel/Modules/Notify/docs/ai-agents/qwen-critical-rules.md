@@ -1,7 +1,14 @@
 # QWEN Critical Rules
 
+<<<<<<< .merge_file_Q3UCUz
 Regole critiche del progetto Base Predict.
+=======
+<<<<<<< .merge_file_tUG2M5
+Regole critiche del progetto Base Predict.
+=======
+>>>>>>> .merge_file_oCzmwJ
 Regole critiche del progetto Base Forecast.
+>>>>>>> .merge_file_v0EAs0
 
 ---
 
@@ -23,25 +30,47 @@ Regole critiche del progetto Base Forecast.
 Themes/TwentyOne/Http/Livewire/*.php  ← FORBIDDEN!
 
 {{-- NO Controllers for lists --}}
+<<<<<<< .merge_file_Q3UCUz
 PredictController@index  ← FORBIDDEN!
+=======
+<<<<<<< .merge_file_tUG2M5
+PredictController@index  ← FORBIDDEN!
+=======
+>>>>>>> .merge_file_oCzmwJ
 ForecastController@index  ← FORBIDDEN!
+>>>>>>> .merge_file_v0EAs0
 ```
 
 ### ✅ SEMPRE Fare
 
 ```blade
 {{-- Filament Table Widget --}}
+<<<<<<< .merge_file_Q3UCUz
 @livewire(\Modules\Predict\Filament\Widgets\PredictTableWidget::class)
+=======
+<<<<<<< .merge_file_tUG2M5
+@livewire(\Modules\Predict\Filament\Widgets\PredictTableWidget::class)
+=======
+>>>>>>> .merge_file_oCzmwJ
 @livewire(\Modules\Forecast\Filament\Widgets\ForecastTableWidget::class)
+>>>>>>> .merge_file_v0EAs0
 
 {{-- Or via CMS JSON --}}
 {
     "type": "widget",
     "data": {
+<<<<<<< .merge_file_Q3UCUz
         "view": "pub_theme::filament.widgets.predict-table",
         "widget": "Modules\\Predict\\Filament\\Widgets\\PredictTableWidget"
+=======
+<<<<<<< .merge_file_tUG2M5
+        "view": "pub_theme::filament.widgets.predict-table",
+        "widget": "Modules\\Predict\\Filament\\Widgets\\PredictTableWidget"
+=======
+>>>>>>> .merge_file_oCzmwJ
         "view": "pub_theme::filament.widgets.forecast-table",
         "widget": "Modules\\Forecast\\Filament\\Widgets\\ForecastTableWidget"
+>>>>>>> .merge_file_v0EAs0
     }
 }
 ```
@@ -102,10 +131,17 @@ ForecastController@index  ← FORBIDDEN!
 
 ```blade
 {{-- ✅ CORRETTO --}}
+<<<<<<< .merge_file_tUG2M5
+<a href="{{ url(app()->getLocale().'/predicts') }}">Mercati</a>
+
+{{-- ❌ SBAGLIATO --}}
+<a href="/predicts">Mercati</a>
+=======
 <a href="{{ url(app()->getLocale().'/forecasts') }}">Mercati</a>
 
 {{-- ❌ SBAGLIATO --}}
 <a href="/forecasts">Mercati</a>
+>>>>>>> .merge_file_v0EAs0
 ```
 
 ---
@@ -126,12 +162,21 @@ public function buildOrderBook(): array { ... }
 ### ✅ CORRETTO
 
 La logica specifica va in:
+<<<<<<< .merge_file_Q3UCUz
 1. **Filament Widgets**: `Modules/Predict/Filament/Widgets/`
 2. **Actions**: `Modules/Predict/Actions/`
 3. **CMS Blocks**: `Modules/Predict/resources/views/components/blocks/`
+=======
+<<<<<<< .merge_file_tUG2M5
+1. **Filament Widgets**: `Modules/Predict/Filament/Widgets/`
+2. **Actions**: `Modules/Predict/Actions/`
+3. **CMS Blocks**: `Modules/Predict/resources/views/components/blocks/`
+=======
+>>>>>>> .merge_file_oCzmwJ
 1. **Filament Widgets**: `Modules/Forecast/Filament/Widgets/`
 2. **Actions**: `Modules/Forecast/Actions/`
 3. **CMS Blocks**: `Modules/Forecast/resources/views/components/blocks/`
+>>>>>>> .merge_file_v0EAs0
 
 ---
 
@@ -144,10 +189,18 @@ namespace::context.collection.element.type
 ```
 
 ```blade
+<<<<<<< .merge_file_Q3UCUz
 ✅ __('predict::user.fields.first_name.label')
 ❌ __('predict::fields.key')  // Missing type!
+=======
+<<<<<<< .merge_file_tUG2M5
+✅ __('predict::user.fields.first_name.label')
+❌ __('predict::fields.key')  // Missing type!
+=======
+>>>>>>> .merge_file_oCzmwJ
 ✅ __('forecast::user.fields.first_name.label')
 ❌ __('forecast::fields.key')  // Missing type!
+>>>>>>> .merge_file_v0EAs0
 ```
 
 ---

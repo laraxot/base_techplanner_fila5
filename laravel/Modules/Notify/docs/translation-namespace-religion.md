@@ -23,8 +23,15 @@
 
 ```php
 // ❌ SBAGLIATO: namespace basato su COMPONENTE UI
+<<<<<<< .merge_file_UwYfY8
 __('fixcity::create_ticket_wizard.summary.images.limit_message')
+=======
+<<<<<<< .merge_file_VT4ZYG
+__('fixcity::create_ticket_wizard.summary.images.limit_message')
+=======
+>>>>>>> .merge_file_fFCiil
 __('ptv::create_ticket_wizard.summary.images.limit_message')
+>>>>>>> .merge_file_TdQpdL
 ```
 
 **Perche e sbagliato**:
@@ -50,8 +57,15 @@ __('ptv::create_ticket_wizard.summary.images.limit_message')
 
 ```php
 // ✅ CORRETTO: namespace basato su DOMINIO BUSINESS
+<<<<<<< .merge_file_UwYfY8
 __('fixcity::ticket.rules.image.limit_message')
+=======
+<<<<<<< .merge_file_VT4ZYG
+__('fixcity::ticket.rules.image.limit_message')
+=======
+>>>>>>> .merge_file_fFCiil
 __('ptv::ticket.rules.image.limit_message')
+>>>>>>> .merge_file_TdQpdL
 ```
 
 **Perche e meglio**:
@@ -108,10 +122,24 @@ lang/it/
 
 ```php
 // ❌ SBAGLIATO: componente UI
+<<<<<<< .merge_file_UwYfY8
 __('fixcity::create_ticket_wizard.summary.label')
 
 // ✅ CORRETTO: dominio business
 __('fixcity::ticket.sections.summary.label')
+=======
+<<<<<<< .merge_file_VT4ZYG
+__('fixcity::create_ticket_wizard.summary.label')
+
+// ✅ CORRETTO: dominio business
+__('fixcity::ticket.sections.summary.label')
+=======
+__('ptv::create_ticket_wizard.summary.label')
+
+// ✅ CORRETTO: dominio business
+__('ptv::ticket.sections.summary.label')
+>>>>>>> .merge_file_TdQpdL
+>>>>>>> .merge_file_fFCiil
 ```
 
 ---
@@ -149,10 +177,24 @@ ticket.php
 
 ```php
 // ❌ SBAGLIATO
+<<<<<<< .merge_file_UwYfY8
 __('fixcity::create_ticket_wizard.summary.images.limit_message')
 
 // ✅ CORRETTO
 __('fixcity::ticket.rules.image.limit_message')
+=======
+<<<<<<< .merge_file_VT4ZYG
+__('fixcity::create_ticket_wizard.summary.images.limit_message')
+
+// ✅ CORRETTO
+__('fixcity::ticket.rules.image.limit_message')
+=======
+__('ptv::create_ticket_wizard.summary.images.limit_message')
+
+// ✅ CORRETTO
+__('ptv::ticket.rules.image.limit_message')
+>>>>>>> .merge_file_TdQpdL
+>>>>>>> .merge_file_fFCiil
 ```
 
 **Perche**: La regola delle immagini e una proprieta del DOMINIO ticket, non del widget.
@@ -197,10 +239,24 @@ grep "limit_message" Modules/Fixcity/lang/it/ticket.php
 
 ```php
 // ❌ SBAGLIATO
+<<<<<<< .merge_file_UwYfY8
 ->limitMessage(__('fixcity::create_ticket_wizard.summary.images.limit_message'))
 
 // ✅ CORRETTO
 ->limitMessage(__('fixcity::ticket.rules.image.limit_message'))
+=======
+<<<<<<< .merge_file_VT4ZYG
+->limitMessage(__('fixcity::create_ticket_wizard.summary.images.limit_message'))
+
+// ✅ CORRETTO
+->limitMessage(__('fixcity::ticket.rules.image.limit_message'))
+=======
+->limitMessage(__('ptv::create_ticket_wizard.summary.images.limit_message'))
+
+// ✅ CORRETTO
+->limitMessage(__('ptv::ticket.rules.image.limit_message'))
+>>>>>>> .merge_file_TdQpdL
+>>>>>>> .merge_file_fFCiil
 ```
 
 ---
@@ -210,10 +266,18 @@ grep "limit_message" Modules/Fixcity/lang/it/ticket.php
 ### Prima (Sbagliato)
 
 ```php
+<<<<<<< .merge_file_UwYfY8
 Section::make(__('fixcity::create_ticket_wizard.summary.images.label'))
     ->limitMessage(__('fixcity::create_ticket_wizard.summary.images.limit_message'))
+=======
+<<<<<<< .merge_file_VT4ZYG
+Section::make(__('fixcity::create_ticket_wizard.summary.images.label'))
+    ->limitMessage(__('fixcity::create_ticket_wizard.summary.images.limit_message'))
+=======
+>>>>>>> .merge_file_fFCiil
 Section::make(__('ptv::create_ticket_wizard.summary.images.label'))
     ->limitMessage(__('ptv::create_ticket_wizard.summary.images.limit_message'))
+>>>>>>> .merge_file_TdQpdL
 ```
 
 **Problemi**:
@@ -226,10 +290,18 @@ Section::make(__('ptv::create_ticket_wizard.summary.images.label'))
 ### Dopo (Corretto)
 
 ```php
+<<<<<<< .merge_file_UwYfY8
 Section::make(__('fixcity::ticket.sections.images.label'))
     ->limitMessage(__('fixcity::ticket.rules.image.limit_message'))
+=======
+<<<<<<< .merge_file_VT4ZYG
+Section::make(__('fixcity::ticket.sections.images.label'))
+    ->limitMessage(__('fixcity::ticket.rules.image.limit_message'))
+=======
+>>>>>>> .merge_file_fFCiil
 Section::make(__('ptv::ticket.sections.images.label'))
     ->limitMessage(__('ptv::ticket.rules.image.limit_message'))
+>>>>>>> .merge_file_TdQpdL
 ```
 
 **Vantaggi**:

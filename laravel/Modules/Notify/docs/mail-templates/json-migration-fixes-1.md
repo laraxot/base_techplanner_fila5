@@ -139,11 +139,24 @@ if(!$this->hasColumn('subject')) {
 }
 ```
 
+<<<<<<< .merge_file_rQ8t2A
+<<<<<<< .merge_file_2diYxN
+=======
+<<<<<<< .merge_file_42uA3l
+>>>>>>> .merge_file_2hGJfr
+## Applicazione a Quaeris
+
+Nel contesto di Quaeris, tutte le migrazioni che coinvolgono la conversione di campi esistenti a JSON devono seguire queste linee guida, in particolare:
+=======
+<<<<<<< .merge_file_rQ8t2A
+=======
 <<<<<<< .merge_file_2diYxN
 ## Applicazione a Quaeris
 
 Nel contesto di Quaeris, tutte le migrazioni che coinvolgono la conversione di campi esistenti a JSON devono seguire queste linee guida, in particolare:
 =======
+>>>>>>> .merge_file_mlgeNK
+>>>>>>> .merge_file_2hGJfr
 ## Applicazione a App
 
 Nel contesto di App, tutte le migrazioni che coinvolgono la conversione di campi esistenti a JSON devono seguire queste linee guida, in particolare:
@@ -158,9 +171,19 @@ Nel contesto di App, tutte le migrazioni che coinvolgono la conversione di campi
 È necessario esaminare tutte le migrazioni esistenti per identificare pattern simili di conversione diretta a JSON:
 
 ```bash
+<<<<<<< .merge_file_rQ8t2A
 <<<<<<< .merge_file_2diYxN
 grep -r "json.*change" /var/www/html/Quaeris/laravel/Modules/*/database/migrations/
 =======
+=======
+<<<<<<< .merge_file_42uA3l
+grep -r "json.*change" /var/www/html/Quaeris/laravel/Modules/*/database/migrations/
+=======
+<<<<<<< .merge_file_2diYxN
+grep -r "json.*change" /var/www/html/Quaeris/laravel/Modules/*/database/migrations/
+=======
+>>>>>>> .merge_file_mlgeNK
+>>>>>>> .merge_file_2hGJfr
 grep -r "json.*change" /var/www/_bases/base_ptvx_fila5/laravel/Modules/*/database/migrations/
 >>>>>>> .merge_file_5uRevd
 ```

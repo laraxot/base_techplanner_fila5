@@ -29,9 +29,19 @@ Il metodo `addAttachments()` supporta **due formati** per gli allegati:
 // Formato corretto - allegato da file su filesystem
 $attachments = [
     [
+<<<<<<< .merge_file_FCPS8L
 <<<<<<< .merge_file_bZIXnE
         'path' => '/var/www/html/saluteora/public_html/images/avatars/default-3.svg',
 =======
+=======
+<<<<<<< .merge_file_VSPOyk
+        'path' => '/var/www/html/saluteora/public_html/images/avatars/default-3.svg',
+=======
+<<<<<<< .merge_file_bZIXnE
+        'path' => '/var/www/html/saluteora/public_html/images/avatars/default-3.svg',
+=======
+>>>>>>> .merge_file_AjmFCn
+>>>>>>> .merge_file_KMYa3I
         'path' => '[project-root]/public_html/images/avatars/default-3.svg',
 >>>>>>> .merge_file_2UEtBP
         'as' => 'logo.svg',  // Opzionale: nome del file da mostrare nell'email
@@ -39,9 +49,19 @@ $attachments = [
     ],
     // Eventualmente altri allegati...
     [
+<<<<<<< .merge_file_FCPS8L
 <<<<<<< .merge_file_bZIXnE
         'path' => '/var/www/html/saluteora/public_html/documents/terms.pdf',
 =======
+=======
+<<<<<<< .merge_file_VSPOyk
+        'path' => '/var/www/html/saluteora/public_html/documents/terms.pdf',
+=======
+<<<<<<< .merge_file_bZIXnE
+        'path' => '/var/www/html/saluteora/public_html/documents/terms.pdf',
+=======
+>>>>>>> .merge_file_AjmFCn
+>>>>>>> .merge_file_KMYa3I
         'path' => '[project-root]/public_html/documents/terms.pdf',
 >>>>>>> .merge_file_2UEtBP
         'as' => 'termini.pdf',

@@ -232,9 +232,19 @@ public function toMail(object $notifiable): MailMessage
 - [README.md Modulo Notify](./README.md)
 <<<<<<< .merge_file_tr8I27
 - [README.md Modulo Notify](./readme.md)
+<<<<<<< .merge_file_v1JxwK
 =======
 - [README.md Modulo Notify](./README.md)
 >>>>>>> .merge_file_2o4XU2
+=======
+<<<<<<< .merge_file_PpWBcn
+- [README.md Modulo Notify](./README.md)
+=======
+=======
+- [README.md Modulo Notify](./README.md)
+>>>>>>> .merge_file_2o4XU2
+>>>>>>> .merge_file_xAjWRV
+>>>>>>> .merge_file_pq0mMc
 - [Template Management](./template-management.md)
 - [Best Practices](./best-practices.md)
 

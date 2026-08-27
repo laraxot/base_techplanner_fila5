@@ -381,6 +381,10 @@ protected static function newFactory(): Factory
 
 ## Changelog
 
+### v3.2.0 - 27 Agosto 2026
+- ✅ **Corretto** `Modules\Media\Models\Media`: rimossi `use HasFactory;` duplicato e `newFactory()` custom ridondante (gia' fornito da `HasXotFactory`)
+- ✅ **Confermato**: il trait nel file sorgente NON e' uno stub — implementa `newFactory()` via `GetFactoryAction`, come documentato qui
+
 ### v3.1.0 - Giugno 2025
 - ✅ **loadFactoryFromDisk** per factory su disco non ancora autoloadate (fix ide-helper su Sigma)
 - ✅ **createFactory** non rigenera se il file esiste già

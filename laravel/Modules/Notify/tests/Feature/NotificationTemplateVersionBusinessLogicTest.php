@@ -12,12 +12,21 @@ use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 use RuntimeException;
 
+<<<<<<< .merge_file_F3NXwH
+uses(\Modules\Notify\Tests\TestCase::class);
+
+describe('Notification Template Version Business Logic', function (): void {
+    test('_can_create_template_version_with_basic_information', function (): void {
+        /** @var \Modules\Notify\Tests\TestCase $this */
+$template = NotificationTemplateFactory::new()->createOne();
+=======
 uses(TestCase::class)->group('notify-db');
 
 describe('Notification Template Version Business Logic', function (): void {
     test('_can_create_template_version_with_basic_information', function (): void {
         /** @var TestCase $this */
         $template = NotificationTemplateFactory::new()->createOne();
+>>>>>>> .merge_file_PVKQsk
 
         $version = NotificationTemplateVersionFactory::new()->createOne([
             'template_id' => $template->id,
@@ -30,7 +39,11 @@ describe('Notification Template Version Business Logic', function (): void {
             'version' => 2,
             'change_notes' => 'Aggiornamento copy',
         ]);
+<<<<<<< .merge_file_F3NXwH
+        \assertNotifyTableHas('notification_template_versions', [
+=======
         XotBasePest::assertTableHas('notify', 'notification_template_versions', [
+>>>>>>> .merge_file_PVKQsk
             'id' => $version->id,
             'template_id' => $template->id,
             'subject' => 'Versione 2 - Conferma Appuntamento',
@@ -44,7 +57,11 @@ describe('Notification Template Version Business Logic', function (): void {
     });
 
     test('_can_manage_template_version_relationships', function (): void {
+<<<<<<< .merge_file_F3NXwH
+$template = NotificationTemplateFactory::new()->createOne();
+=======
         $template = NotificationTemplateFactory::new()->createOne();
+>>>>>>> .merge_file_PVKQsk
         $version = NotificationTemplateVersionFactory::new()->createOne([
             'template_id' => $template->id,
         ]);
@@ -54,7 +71,11 @@ describe('Notification Template Version Business Logic', function (): void {
     });
 
     test('_can_restore_template_from_version', function (): void {
+<<<<<<< .merge_file_F3NXwH
+$template = NotificationTemplateFactory::new()->createOne([
+=======
         $template = NotificationTemplateFactory::new()->createOne([
+>>>>>>> .merge_file_PVKQsk
             'subject' => 'Versione Originale',
             'body_html' => '<p>Contenuto originale</p>',
         ]);
@@ -86,8 +107,13 @@ describe('Notification Template Version Business Logic', function (): void {
     });
 
     test('_throws_exception_when_restoring_without_template', function (): void {
+<<<<<<< .merge_file_F3NXwH
+        /** @var \Modules\Notify\Tests\TestCase $this */
+$version = NotificationTemplateVersionFactory::new()->createOne([
+=======
         /** @var TestCase $this */
         $version = NotificationTemplateVersionFactory::new()->createOne([
+>>>>>>> .merge_file_PVKQsk
             'template_id' => 999999,
         ]);
         $this->expectApplicationException(RuntimeException::class);

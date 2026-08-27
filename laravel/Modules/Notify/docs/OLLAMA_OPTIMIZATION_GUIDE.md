@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_tiCkVa
+=======
 ---
 title: "Ollama Optimization Guide - Intel i5-8400 (32GB RAM)"
 module: notify
@@ -7,6 +9,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+>>>>>>> .merge_file_c1yVnA
 # Ollama Optimization Guide - Intel i5-8400 (32GB RAM)
 
 **Date**: 2026-03-13  

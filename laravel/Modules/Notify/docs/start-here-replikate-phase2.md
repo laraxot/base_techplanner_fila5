@@ -172,8 +172,15 @@ Blade Template:
   laravel/Themes/Sixteen/resources/views/pages/tests/[slug].blade.php
 
 JSON Content:
+<<<<<<< .merge_file_2fCkxS
   laravel/config/local/fixcity/database/content/pages/tests.homepage.json
+=======
+<<<<<<< .merge_file_8hemX9
+  laravel/config/local/fixcity/database/content/pages/tests.homepage.json
+=======
+>>>>>>> .merge_file_5JwDKF
   laravel/config/local/ptv/database/content/pages/tests.homepage.json
+>>>>>>> .merge_file_5uyd6Z
 
 CSS Files:
   laravel/Themes/Sixteen/resources/css/
@@ -192,8 +199,15 @@ Local URL:
 
 ```bash
 # Go to project
+<<<<<<< .merge_file_2fCkxS
 cd /var/www/_bases/base_fixcity_fila5
+=======
+<<<<<<< .merge_file_8hemX9
+cd /var/www/_bases/base_fixcity_fila5
+=======
+>>>>>>> .merge_file_5JwDKF
 cd /var/www/_bases/base_ptv_fila5
+>>>>>>> .merge_file_5uyd6Z
 
 # View analysis results
 cat /tmp/replikate_analysis_homepage/structure-analysis.txt

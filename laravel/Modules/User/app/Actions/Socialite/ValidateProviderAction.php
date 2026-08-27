@@ -15,7 +15,11 @@ class ValidateProviderAction
     {
         $hasConfig = config()->has('services.'.$provider);
         if (! $hasConfig) {
+<<<<<<< .merge_file_9wJubK
             $ex = new ProviderNotConfigured();
+=======
+            $ex = new ProviderNotConfigured;
+>>>>>>> .merge_file_zoJepw
             throw $ex->make($provider);
         }
     }

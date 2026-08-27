@@ -33,11 +33,19 @@ Vedi [index](index.md) per navigazione completa.
 - Documenti canonici:
   - `docs/schemas-unified-religion.md`
   - `laravel/Modules/Xot/docs/filament/widgets/infolists-for-summary.md`
+<<<<<<< .merge_file_U77K95
+  - `laravel/Modules/Fixcity/docs/form-vs-infolist-religion.md`
+
+### config/database.php identico a Laravel 13.x
+- `laravel/config/database.php` deve essere **identico** a https://github.com/laravel/laravel/blob/13.x/config/database.php
+- Connessioni custom (predict, blog, cms, activity, user, quaeris, limesurvey, orbit) vanno in `config/local/<tenant>/database.php`
+=======
   - `laravel/Modules/App/docs/form-vs-infolist-religion.md`
 
 ### config/database.php identico a Laravel 13.x
 - `laravel/config/database.php` deve essere **identico** a https://github.com/laravel/laravel/blob/13.x/config/database.php
 - Connessioni custom (forecast, blog, cms, activity, user, this-project, limesurvey, orbit) vanno in `config/local/<tenant>/database.php`
+>>>>>>> .merge_file_4VhB4w
 - Unica modifica ammessa: rimosso `use Pdo\Mysql` per compatibilita' PHP 8.3; uso `\Pdo\Mysql::ATTR_SSL_CA` nel ternary solo quando PHP >= 8.5
 - Regola: `.cursor/rules/database-config-laravel-standard.mdc`
 
@@ -51,8 +59,15 @@ Vedi [index](index.md) per navigazione completa.
 - Per chaining queued usare `new ActionJob(AnotherAction::class, $args)`.
 - Per test queued usare `Queue::fake()` + `Spatie\QueueableAction\Testing\QueueableActionFake`.
 
+<<<<<<< .merge_file_OI4M3E
 ### Quaeris question-chart pipeline — prima lint, poi app boot
+=======
+<<<<<<< .merge_file_U77K95
+### Quaeris question-chart pipeline — prima lint, poi app boot
+=======
+>>>>>>> .merge_file_ntPjM2
 ### App question-chart pipeline — prima lint, poi app boot
+>>>>>>> .merge_file_4VhB4w
 - Nei flussi `ViewQuestionChart` il primo blocker puo` essere sintattico e non applicativo.
 - Prima di inseguire Livewire/Filament o query runtime, lintare l'intera catena caricata subito:
   - `QuestionChartChartData`
@@ -62,8 +77,15 @@ Vedi [index](index.md) per navigazione completa.
 - Se lo stack trace dell'utente punta a una riga che sul disco non corrisponde piu`, trattarlo come possibile errore stale e verificare il file attuale con `php -l` + `nl -ba`.
 
 ### QuestionChart root ancestor — distinguere metodo assente da runtime stale
+<<<<<<< .merge_file_OI4M3E
 - `QuestionChart::getRootQuestionAncestorId()` e` parte del contratto del modulo Quaeris.
+=======
+<<<<<<< .merge_file_U77K95
+- `QuestionChart::getRootQuestionAncestorId()` e` parte del contratto del modulo Quaeris.
+=======
+>>>>>>> .merge_file_ntPjM2
 - `QuestionChart::getRootQuestionAncestorId()` e` parte del contratto del modulo App.
+>>>>>>> .merge_file_4VhB4w
 - Se l'errore utente dice "undefined method" ma:
   - il metodo esiste sul file corrente
   - `method_exists()` restituisce `true`
@@ -112,8 +134,15 @@ Vedi [index](index.md) per navigazione completa.
 - **PERCHE ManageQuestionCharts FUNZIONA**: ha `$this->record` = SurveyPdf (padre) → accede a `$this->record->survey_id` direttamente
 - **PERCHE EditQuestionChart NON FUNZIONA**: ha `$this->record` = QuestionChart (figlio) → deve navigare `$this->record->surveyPdf->survey_id` — metodo mai implementato
 - **REGOLA**: se lo schema dipende dal padre, la Edit page DEVE sovrascrivere `getFormSchema()` come metodo istanza
+<<<<<<< .merge_file_OI4M3E
 - **DOC**: `laravel/Modules/Quaeris/docs/nested-resource-form-trap.md` (analisi completa)
+=======
+<<<<<<< .merge_file_U77K95
+- **DOC**: `laravel/Modules/Quaeris/docs/nested-resource-form-trap.md` (analisi completa)
+=======
+>>>>>>> .merge_file_ntPjM2
 - **DOC**: `laravel/Modules/App/docs/nested-resource-form-trap.md` (analisi completa)
+>>>>>>> .merge_file_4VhB4w
 
 ### Filament Resources Overview — allineamento Laraxot
 - L’overview ufficiale Filament (`resources/overview`) definisce `Resource::form(Schema)` e `Resource::table(Table)` come entry point unici per form e tabelle.
@@ -161,8 +190,15 @@ Vedi [index](index.md) per navigazione completa.
 - Errore: `Cannot override final method ...::table()`
 - Classi che avevano `table()` e devono essere corrette:
   - `LocationMapTableWidget` (Geo)
+<<<<<<< .merge_file_OI4M3E
   - `OptOutWidget` (Quaeris)
+=======
+<<<<<<< .merge_file_U77K95
+  - `OptOutWidget` (Quaeris)
+=======
+>>>>>>> .merge_file_ntPjM2
   - `OptOutWidget` (App)
+>>>>>>> .merge_file_4VhB4w
   - `ManageRolePermissions` (User)
   - `GoogleDriveFileListPage` (CloudStorage)
 - Usare invece: `getTableColumns()`, `getTableHeaderActions()`, `getTableActions()`, `getTableBulkActions()`, `getTableFilters()`
@@ -232,8 +268,15 @@ Vedi [index](index.md) per navigazione completa.
 ### Form vuoto su Edit nested resource (QuestionCharts)
 - URL tipo `.../survey-pdfs/16/question-charts/230/edit` può mostrare la pagina Edit ma **form vuoto**.
 - **Causa**: la Edit usa `Resource::form()` → `Resource::getFormSchema()`. Se la nested resource (es. QuestionChartResource) ha `getFormSchema()` vuoto e i campi veri in un altro metodo (es. `getFormSchemaBySurveyId($survey_id)`), il form resta vuoto perché quel secondo metodo non viene mai chiamato nel flusso Edit/Create.
+<<<<<<< .merge_file_OI4M3E
 - **Regola**: per nested resource con form dipendente dal parent, lo schema effettivo deve essere restituito da `getFormSchema()` (o dalla pagina che override), eventualmente recuperando il parent dal contesto. Documentazione: `laravel/Modules/Quaeris/docs/edit-question-chart-form-empty-cause.md`, rule `filament-nested-resources.mdc` e `filament-form-schema.mdc`.
+=======
+<<<<<<< .merge_file_U77K95
+- **Regola**: per nested resource con form dipendente dal parent, lo schema effettivo deve essere restituito da `getFormSchema()` (o dalla pagina che override), eventualmente recuperando il parent dal contesto. Documentazione: `laravel/Modules/Quaeris/docs/edit-question-chart-form-empty-cause.md`, rule `filament-nested-resources.mdc` e `filament-form-schema.mdc`.
+=======
+>>>>>>> .merge_file_ntPjM2
 - **Regola**: per nested resource con form dipendente dal parent, lo schema effettivo deve essere restituito da `getFormSchema()` (o dalla pagina che override), eventualmente recuperando il parent dal contesto. Documentazione: `laravel/Modules/App/docs/edit-question-chart-form-empty-cause.md`, rule `filament-nested-resources.mdc` e `filament-form-schema.mdc`.
+>>>>>>> .merge_file_4VhB4w
 
 ### HasXotTable / XotBaseManageRelatedRecords pattern (ManageCharts)
 - Le pagine `XotBaseManageRelatedRecords` devono riusare la configurazione tabellare esistente invece di ricreare `table()`

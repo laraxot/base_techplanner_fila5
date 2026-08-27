@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_GnKGJI
+=======
 ---
 title: "Regole di Naming per File"
 module: notify
@@ -7,6 +9,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+>>>>>>> .merge_file_09b5qt
 # Regole di Naming per File
 
 ## 🎯 Regola Fondamentale: NO Duplicati Case-Insensitive
@@ -45,8 +48,15 @@ Su filesystem case-insensitive (Windows, macOS default), file con nomi che diffe
 ✅ CORRETTO:
 - README.md (maiuscolo - convenzione universale)
 - ROADMAP.md (maiuscolo - convenzione universale)
+<<<<<<< .merge_file_SKEQ23
 - CHANGELOG.md (maiuscolo - convenzione universale)
+=======
+<<<<<<< .merge_file_GnKGJI
+- CHANGELOG.md (maiuscolo - convenzione universale)
+=======
+>>>>>>> .merge_file_lL7304
 - changelog.md (maiuscolo - convenzione universale)
+>>>>>>> .merge_file_09b5qt
 - LICENSE.md (maiuscolo - convenzione universale)
 - CONTRIBUTING.md (maiuscolo - convenzione universale)
 - SECURITY.md (maiuscolo - convenzione universale)

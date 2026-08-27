@@ -5,8 +5,15 @@ module: Notify
 tags: [redundancy, email, config, casing]
 created: 2026-05-21
 related:
+<<<<<<< .merge_file_n0LfbZ
   - https://github.com/laraxot/base_fixcity_fila5/issues/89
+=======
+<<<<<<< .merge_file_QeKVVU
+  - https://github.com/laraxot/base_fixcity_fila5/issues/89
+=======
+>>>>>>> .merge_file_ma1PZo
   - https://github.com/laraxot/base_ptv_fila5/issues/89
+>>>>>>> .merge_file_uPbj5Q
 ---
 
 # Notify redundancy audit 2026-05-21

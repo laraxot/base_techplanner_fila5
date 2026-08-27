@@ -124,12 +124,21 @@ ALWAYS cite source documents: `[Source: architecture/{filename}.md#{section}]`
 
 ## Cross-References
 
+<<<<<<< .merge_file_bigpmx
+=======
+<<<<<<< .merge_file_5HyDvQ
+>>>>>>> .merge_file_x0Bedg
 - ← [Tasks Index](INDEX.md) — All 22 BMad tasks
 - ← [Agents Index](../../agents/INDEX.md) — 10 agent definitions
 - ← [Main AI Docs Index](../INDEX.md) — Master index
 - ← [../../../../AGENTS.md](../../../../../../../../AGENTS.md) — Original source
+<<<<<<< .merge_file_bigpmx
+=======
+=======
+>>>>>>> .merge_file_x0Bedg
 - ← [Tasks Index](index.md) — All 22 BMad tasks
 - ← [Agents Index](../../agents/index.md) — 10 agent definitions
 - ← [Main AI Docs Index](../index.md) — Master index
 - ← [../../../../agents.md](../../../../../../../../agents.md) — Original source
+>>>>>>> .merge_file_ze0bcW
 

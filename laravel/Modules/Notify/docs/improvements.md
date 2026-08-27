@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_Gyn756
+=======
 ---
 title: "Notify Module - Improvements Roadmap"
 module: notify
@@ -7,6 +9,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+>>>>>>> .merge_file_yruEaG
 # Notify Module - Improvements Roadmap
 
 **Modulo**: Notify  

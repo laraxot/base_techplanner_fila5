@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fc52fe0 (.)
+=======
+>>>>>>> c101b34 (.)
+=======
+>>>>>>> d0f51b6 (.)
 ---
 module: theme
 topic: mcp-server-consigliati
@@ -5,3 +19,59 @@ canonical: ../../../Themes/docs/shared-components/MCP_SERVER_CONSIGLIATI.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/MCP_SERVER_CONSIGLIATI.md
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> d20252d (.)
+=======
+>>>>>>> dbf8b8d (.)
+=======
+>>>>>>> 77e0353 (.)
+=======
+>>>>>>> a771e9c (.)
+# Server MCP consigliati per il modulo Seo
+
+## Scopo del modulo
+Analisi SEO, automazione di audit, recupero dati da web, generazione di report.
+
+## Server MCP consigliati
+- **fetch**: Per recuperare dati da web, API SEO, strumenti di analisi.
+- **memory**: Per mantenere stato tra analisi e report.
+- **puppeteer**: Per automazione browser, crawling, screenshot, analisi pagine.
+- **everything**: Per avere tutte le funzionalità MCP disponibili.
+
+## Esempio di configurazione MCP
+```json
+{
+  "mcpServers": {
+    "fetch": { "command": "npx", "args": ["-y", "@modelcontextprotocol/server-fetch"] },
+    "memory": { "command": "npx", "args": ["-y", "@modelcontextprotocol/server-memory"] },
+    "puppeteer": { "command": "npx", "args": ["-y", "@modelcontextprotocol/server-puppeteer"] },
+    "everything": { "command": "npx", "args": ["-y", "@modelcontextprotocol/server-everything"] }
+  }
+}
+```
+
+**Nota:**
+Aggiungi solo i server che realmente ti servono per il tuo workflow. 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 7ec200b (.)
+=======
+>>>>>>> d20252d (.)
+=======
+>>>>>>> dbf8b8d (.)
+=======
+>>>>>>> 77e0353 (.)
+=======
+>>>>>>> fc52fe0 (.)
+=======
+>>>>>>> c101b34 (.)
+=======
+>>>>>>> d0f51b6 (.)
+=======
+>>>>>>> a771e9c (.)

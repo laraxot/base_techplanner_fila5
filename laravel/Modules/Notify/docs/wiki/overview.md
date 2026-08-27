@@ -47,6 +47,10 @@ docs/
     └── overview.md      # This file
 ```
 
+<<<<<<< .merge_file_WYX44l
+## Progetto: FixCity (base_fixcity_fila5)
+=======
+<<<<<<< .merge_file_NGFAUs
 ## Progetto: FixCity (base_fixcity_fila5)
 
 **Stack**: Laravel 11 + Filament 5 + Laraxot pattern  
@@ -61,6 +65,27 @@ docs/
 | `raw/` | `./docs/` + ogni `Modules/*/docs/` | Documenti sorgente (immutabili) |
 | `wiki/` | `./docs/wiki/` + ogni `Modules/*/docs/wiki/` | Conoscenza compilata dall'LLM |
 | `AGENTS.md` | `./docs/wiki/AGENTS.md` | Schema multi-agent |
+=======
+## Progetto: Notify (base_ptvx_fila5)
+>>>>>>> .merge_file_1gSnGi
+
+**Stack**: Laravel 11 + Filament 5 + Laraxot pattern  
+**Moduli**: 18 (Xot, Cms, UI, Lang, User, Fixcity, Blog, Geo, Media, Notify, Activity, Comment, Rating, Seo, Tenant, Job, Gdpr, AI)  
+**Temi**: 2 (Sixteen — Design Comuni/Bootstrap Italia, TwentyOne — cinematic/prediction market)  
+**Raw docs totali**: ~14.000 file  
+
+### Mapping Karpathy → FixCity
+
+| Karpathy | FixCity | Note |
+|----------|---------|------|
+| `raw/` | `./docs/` + ogni `Modules/*/docs/` | Documenti sorgente (immutabili) |
+| `wiki/` | `./docs/wiki/` + ogni `Modules/*/docs/wiki/` | Conoscenza compilata dall'LLM |
+<<<<<<< .merge_file_WYX44l
+| `AGENTS.md` | `./docs/wiki/AGENTS.md` | Schema multi-agent |
+=======
+| `AGENTS.md` | `./docs/wiki/agents.md` | Schema multi-agent |
+>>>>>>> .merge_file_uZwIaD
+>>>>>>> .merge_file_1gSnGi
 | `index.md` | `./docs/wiki/index.md` | Catalogo globale |
 | `log.md` | `./docs/wiki/log.md` | Log append-only |
 
@@ -96,8 +121,15 @@ docs/
 ### Priorità 1: Moduli rimanenti
 
 1. **User** — autenticazione, profilo, GDPR compliance
+<<<<<<< .merge_file_WYX44l
 2. **Fixcity** — ticket system, segnalazioni civiche, workflow
+=======
+<<<<<<< .merge_file_NGFAUs
+2. **Fixcity** — ticket system, segnalazioni civiche, workflow
+=======
+>>>>>>> .merge_file_1gSnGi
 2. **App** — ticket system, segnalazioni civiche, workflow
+>>>>>>> .merge_file_uZwIaD
 3. **Geo** — geolocalizzazione, mappe, OpenStreetMap
 4. **Media** — gestione file, upload, storage S3
 5. **Seo** — meta tags, structured data, sitemap

@@ -33,9 +33,19 @@ Tutti i moduli `app/` sono **PERFETTI** al livello MAX di PHPStan!
 | Modulo | Files | Errori |
 |--------|-------|--------|
 | ✅ User | 362 | **0** |
+<<<<<<< .merge_file_44wLPE
 <<<<<<< .merge_file_aEzvg3
 | ✅ Fixcity | 86 | **0** |
 =======
+=======
+<<<<<<< .merge_file_Im6tdK
+| ✅ Fixcity | 86 | **0** |
+=======
+<<<<<<< .merge_file_aEzvg3
+| ✅ Fixcity | 86 | **0** |
+=======
+>>>>>>> .merge_file_OT08sW
+>>>>>>> .merge_file_6eIlSD
 | ✅ App | 86 | **0** |
 >>>>>>> .merge_file_20vOZo
 | ✅ Blog | 139 | **0** |

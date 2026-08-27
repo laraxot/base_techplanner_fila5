@@ -89,8 +89,15 @@ Verify that changes made in module repositories sync correctly to the main repos
 
 ```bash
 # 1. Go to project root
+<<<<<<< .merge_file_VLKjN0
 cd /var/www/_bases/base_fixcity_fila5
+=======
+<<<<<<< .merge_file_hG4XQZ
+cd /var/www/_bases/base_fixcity_fila5
+=======
+>>>>>>> .merge_file_eU1qEw
 cd /var/www/_bases/base_ptvx_fila5
+>>>>>>> .merge_file_WSJ7iL
 
 # 2. Run sync script
 ./bashscripts/git/subtrees/sync_remote_repo.sh laraxot
@@ -111,8 +118,15 @@ git commit -m "test: subtree sync test"
 git push origin dev
 
 # 2. Wait for GitHub Action
+<<<<<<< .merge_file_VLKjN0
 # 3. Check: https://github.com/laraxot/base_fixcity_fila5/actions
+=======
+<<<<<<< .merge_file_hG4XQZ
+# 3. Check: https://github.com/laraxot/base_fixcity_fila5/actions
+=======
+>>>>>>> .merge_file_eU1qEw
 # 3. Check: https://github.com/laraxot/platform/actions
+>>>>>>> .merge_file_WSJ7iL
 # 4. Verify sync completed
 ```
 

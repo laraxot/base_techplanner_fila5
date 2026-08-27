@@ -3,6 +3,17 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Actions\Telegram;
+<<<<<<< .merge_file_BTUGok
+use Modules\Notify\Tests\TestCase;
+use function Safe\file_get_contents;
+use Modules\Notify\Actions\Telegram\SendOfficialTelegramAction;
+use Modules\Notify\Datas\TelegramData;
+use PHPUnit\Framework\Assert;
+
+use function Safe\class_uses;
+
+uses(\Modules\Notify\Tests\TestCase::class);
+=======
 
 use Modules\Notify\Actions\Telegram\SendOfficialTelegramAction;
 use Modules\Notify\Datas\TelegramData;
@@ -13,6 +24,7 @@ use PHPUnit\Framework\Assert;
 use function Safe\class_uses;
 
 uses(TestCase::class)->group('no-notify-db');
+>>>>>>> .merge_file_f4BgsD
 
 describe('SendOfficialTelegramAction', function () {
     it('can be referenced via ReflectionClass without instantiation', function () {
@@ -33,7 +45,11 @@ describe('SendOfficialTelegramAction', function () {
         $method = $reflection->getMethod('execute');
         $params = $method->getParameters();
 
+<<<<<<< .merge_file_BTUGok
+        \assertReflectionTypeName($params[0]->getType(), TelegramData::class);
+=======
         XotBasePest::assertReflectionTypeName($params[0]->getType(), TelegramData::class);
+>>>>>>> .merge_file_f4BgsD
     });
 
     it('execute returns array', function () {
@@ -41,12 +57,20 @@ describe('SendOfficialTelegramAction', function () {
         $method = $reflection->getMethod('execute');
         $returnType = $method->getReturnType();
 
+<<<<<<< .merge_file_BTUGok
+        \assertReflectionTypeName($returnType, 'array');
+=======
         XotBasePest::assertReflectionTypeName($returnType, 'array');
+>>>>>>> .merge_file_f4BgsD
     });
 
     it('uses strict types', function () {
         $reflection = new \ReflectionClass(SendOfficialTelegramAction::class);
+<<<<<<< .merge_file_BTUGok
+        $content = \notifyReflectionSource($reflection);
+=======
         $content = TestCase::notifyReflectionSource($reflection);
+>>>>>>> .merge_file_f4BgsD
         Assert::assertStringContainsString('declare(strict_types=1)', (string) $content);
     });
 
@@ -59,7 +83,11 @@ describe('SendOfficialTelegramAction', function () {
     it('has required imports', function () {
         $reflection = new \ReflectionClass(SendOfficialTelegramAction::class);
         $filename = $reflection->getFileName();
+<<<<<<< .merge_file_BTUGok
+        $content = \notifyReflectionSource(new \ReflectionClass(SendOfficialTelegramAction::class));
+=======
         $content = TestCase::notifyReflectionSource(new \ReflectionClass(SendOfficialTelegramAction::class));
+>>>>>>> .merge_file_f4BgsD
 
         Assert::assertStringContainsString('declare(strict_types=1)', (string) $content);
     });

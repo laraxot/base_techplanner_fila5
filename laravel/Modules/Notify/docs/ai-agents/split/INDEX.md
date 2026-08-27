@@ -19,8 +19,15 @@ related:
 ---
 # AI Agents Documentation Index
 
+<<<<<<< .merge_file_rdn7i4
 **Project**: FixCity Platform  
+=======
+<<<<<<< .merge_file_R9MU6G
+**Project**: FixCity Platform  
+=======
+>>>>>>> .merge_file_7hB36T
 **Project**: Notify Platform  
+>>>>>>> .merge_file_sCJfJK
 **Purpose**: Centralized documentation for all AI assistant configurations  
 **Last Updated**: 2026-04-11  
 
@@ -28,10 +35,24 @@ related:
 
 ## Overview
 
+<<<<<<< .merge_file_rdn7i4
 This directory contains split documentation files for AI assistants used in the FixCity project. Each file is focused on a specific area to improve readability and maintainability.
 
 **Original Files** (kept for backward compatibility):
 - [`AGENTS.md`](../../../../AGENTS.md) — 5349 lines, comprehensive BMad agents + tasks
+=======
+<<<<<<< .merge_file_R9MU6G
+This directory contains split documentation files for AI assistants used in the FixCity project. Each file is focused on a specific area to improve readability and maintainability.
+
+**Original Files** (kept for backward compatibility):
+- [`AGENTS.md`](../../../../AGENTS.md) — 5349 lines, comprehensive BMad agents + tasks
+=======
+This directory contains split documentation files for AI assistants used in the Notify project. Each file is focused on a specific area to improve readability and maintainability.
+
+**Original Files** (kept for backward compatibility):
+- [`AGENTS.md`](../../../../agents.md) — 5349 lines, comprehensive BMad agents + tasks
+>>>>>>> .merge_file_sCJfJK
+>>>>>>> .merge_file_7hB36T
 - [`docs/CLAUDE.md`](../../../../docs/CLAUDE.md) — 833 lines, Laravel Boost guidelines
 - [`QWEN.md`](../../../../QWEN.md) — 47 lines, Qwen output language rules
 - [`laravel/GEMINI.md`](../../../../laravel/GEMINI.md) — 581 lines, Gemini-specific rules
@@ -145,8 +166,15 @@ Split from [`laravel/GEMINI.md`](../../../../laravel/GEMINI.md):
 ### Bidirectional Links
 - ← Back to [Project Root](../../)
 - ← Back to [Docs Index](../../docs/README.md)
+<<<<<<< .merge_file_rdn7i4
 - ← Back to [AGENTS.md](../../../../AGENTS.md) (original)
+=======
+<<<<<<< .merge_file_R9MU6G
+- ← Back to [AGENTS.md](../../../../AGENTS.md) (original)
+=======
+>>>>>>> .merge_file_7hB36T
 - ← Back to [agents.md](../../../../agents.md) (original)
+>>>>>>> .merge_file_sCJfJK
 - ← Back to [CLAUDE.md](../../../../docs/CLAUDE.md) (original)
 - ← Back to [GEMINI.md](../../../../laravel/GEMINI.md) (original)
 - ← Back to [QWEN.md](../../../../QWEN.md) (original)
@@ -157,20 +185,42 @@ Split from [`laravel/GEMINI.md`](../../../../laravel/GEMINI.md):
 
 ### Adding New Split Files
 1. Create file in appropriate subdirectory (`agents/`, `tasks/`, `claude/`, `gemini/`)
+<<<<<<< .merge_file_rdn7i4
 2. Add entry to this INDEX.md table
 3. Add bidirectional link back to this INDEX.md
+=======
+<<<<<<< .merge_file_R9MU6G
+2. Add entry to this INDEX.md table
+3. Add bidirectional link back to this INDEX.md
+=======
+>>>>>>> .merge_file_7hB36T
 2. Add entry to this index.md table
 3. Add bidirectional link back to this index.md
+>>>>>>> .merge_file_sCJfJK
 4. Update original file to reference split version
 
 ### Updating Split Files
 1. Update the split file
+<<<<<<< .merge_file_rdn7i4
 2. Update line count in this INDEX.md
+=======
+<<<<<<< .merge_file_R9MU6G
+2. Update line count in this INDEX.md
+=======
+>>>>>>> .merge_file_7hB36T
 2. Update line count in this index.md
+>>>>>>> .merge_file_sCJfJK
 3. Add changelog entry below
 
 ### Changelog
 | Date | Change | Author |
 |------|--------|--------|
+<<<<<<< .merge_file_rdn7i4
 | 2026-04-11 | Initial split of AGENTS.md, CLAUDE.md, GEMINI.md | Qwen |
+=======
+<<<<<<< .merge_file_R9MU6G
+| 2026-04-11 | Initial split of AGENTS.md, CLAUDE.md, GEMINI.md | Qwen |
+=======
+>>>>>>> .merge_file_7hB36T
 | 2026-04-11 | Initial split of agents.md, CLAUDE.md, GEMINI.md | Qwen |
+>>>>>>> .merge_file_sCJfJK

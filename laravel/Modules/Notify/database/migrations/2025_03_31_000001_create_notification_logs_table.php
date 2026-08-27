@@ -5,7 +5,12 @@ declare(strict_types=1);
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
+<<<<<<< .merge_file_5Lqc0E
 return new class extends XotBaseMigration {
+=======
+return new class extends XotBaseMigration
+{
+>>>>>>> .merge_file_so9pQp
     public function up(): void
     {
         $this->tableCreate(function (Blueprint $table): void {

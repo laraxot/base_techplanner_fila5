@@ -15,11 +15,16 @@ class SendPushToAllUsersAction
     use QueueableAction;
 
     /**
+<<<<<<< .merge_file_v60N8B
+     * @param  array<string, mixed>  $data
+     * @return array<string, mixed>
+=======
      * Due forme distinte: lo scarto senza token, e la mappa per piattaforma di
      * `SendPushToDevicesAction::execute()`.
      *
      * @param  array<string, mixed>  $data
      * @return array{success: bool, message: string}|array<string, array{success: bool, sent: int, failed: int, ...}>
+>>>>>>> .merge_file_wFyWln
      */
     public function execute(PushNotificationData $notification, array $data = []): array
     {

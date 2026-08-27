@@ -28,6 +28,9 @@ final class NotifyTrackingDummy
     {
         return $this->isTrackingEnabled();
     }
+<<<<<<< .merge_file_ulNO8W
+}
+=======
 
     public function pixelTrackingEnabled(): bool
     {
@@ -44,3 +47,4 @@ final class NotifyTrackingDummy
         return $this->generateTrackingId();
     }
 }
+>>>>>>> .merge_file_MjKtEa

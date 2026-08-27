@@ -19,8 +19,15 @@ related:
 ---
 # BMad Agents Index
 
+<<<<<<< .merge_file_Cgmc4O
 **Source**: [`../../../../AGENTS.md`](../../../../../../../../../../AGENTS.md) (lines 40-904)  
+=======
+<<<<<<< .merge_file_HvSwdA
+**Source**: [`../../../../AGENTS.md`](../../../../../../../../../../AGENTS.md) (lines 40-904)  
+=======
+>>>>>>> .merge_file_qaaEis
 **Source**: [`../../../../agents.md`](../../../../../../../../../../agents.md) (lines 40-904)  
+>>>>>>> .merge_file_GnEL7s
 **Total Agents**: 10  
 **Last Updated**: 2026-04-11  
 
@@ -41,14 +48,25 @@ related:
 | 9 | Architect | architect | [architect.md](architect.md) | 82 | System design, architecture docs |
 | 10 | Business Analyst | analyst | [business-analyst.md](business-analyst.md) | 85 | Market research, competitive analysis |
 
+<<<<<<< .merge_file_Cgmc4O
 **Total Lines**: ~865 (split from ../../../../AGENTS.md lines 40-904)
+=======
+<<<<<<< .merge_file_HvSwdA
+**Total Lines**: ~865 (split from ../../../../AGENTS.md lines 40-904)
+=======
+>>>>>>> .merge_file_qaaEis
 **Total Lines**: ~865 (split from ../../../../agents.md lines 40-904)
+>>>>>>> .merge_file_GnEL7s
 
 ---
 
 ## Cross-References
 
 ### Related Documentation
+<<<<<<< .merge_file_Cgmc4O
+=======
+<<<<<<< .merge_file_HvSwdA
+>>>>>>> .merge_file_qaaEis
 - ← [BMad Tasks Index](../../tasks/INDEX.md) — 22 reusable task definitions
 - ← [CLAUDE Index](../claude/INDEX.md) — Laravel Boost guidelines
 - ← [GEMINI Index](../gemini/INDEX.md) — Gemini-specific rules
@@ -57,6 +75,10 @@ related:
 ### Bidirectional Links
 - ← Back to [Main AI Docs Index](../INDEX.md)
 - ← Back to [../../../../AGENTS.md](../../../../../../../../../../AGENTS.md) (original source)
+<<<<<<< .merge_file_Cgmc4O
+=======
+=======
+>>>>>>> .merge_file_qaaEis
 - ← [BMad Tasks Index](../../tasks/index.md) — 22 reusable task definitions
 - ← [CLAUDE Index](../claude/index.md) — Laravel Boost guidelines
 - ← [GEMINI Index](../gemini/index.md) — Gemini-specific rules
@@ -65,6 +87,7 @@ related:
 ### Bidirectional Links
 - ← Back to [Main AI Docs Index](../index.md)
 - ← Back to [../../../../agents.md](../../../../../../../../../../agents.md) (original source)
+>>>>>>> .merge_file_GnEL7s
 - ← Back to [Project Docs](../../../docs/README.md)
 
 ---
@@ -76,8 +99,15 @@ To activate an agent, mention their ID or name in your request:
 - "Use Product Manager to create a PRD..."
 - "As dev, implement the story..."
 
+<<<<<<< .merge_file_Cgmc4O
 For full agent definitions, see the original [`../../../../AGENTS.md`](../../../../../../../../../../AGENTS.md).
+=======
+<<<<<<< .merge_file_HvSwdA
+For full agent definitions, see the original [`../../../../AGENTS.md`](../../../../../../../../../../AGENTS.md).
+=======
+>>>>>>> .merge_file_qaaEis
 For full agent definitions, see the original [`../../../../agents.md`](../../../../../../../../../../agents.md).
+>>>>>>> .merge_file_GnEL7s
 
 ---
 

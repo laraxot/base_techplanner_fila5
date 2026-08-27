@@ -289,9 +289,21 @@ Semantic HTML **REDUCES** need for ARIA:
 ## 🔗 Related Documentation
 
 ### AI Agents Docs
+<<<<<<< .merge_file_agutZ9
 - **[Guidelines Index](00-INDEX.md)** - All guidelines
 - **[Reusable Components](reusable-components-philosophy.md)** - DRY+KISS
 - **[Rules Index](../rules/00-INDEX.md)** - All rules
+=======
+<<<<<<< .merge_file_6pCzIs
+- **[Guidelines Index](00-INDEX.md)** - All guidelines
+- **[Reusable Components](reusable-components-philosophy.md)** - DRY+KISS
+- **[Rules Index](../rules/00-INDEX.md)** - All rules
+=======
+- **[Guidelines Index](00-index.md)** - All guidelines
+- **[Reusable Components](reusable-components-philosophy.md)** - DRY+KISS
+- **[Rules Index](../rules/00-index.md)** - All rules
+>>>>>>> .merge_file_byOdjE
+>>>>>>> .merge_file_8QHZsi
 
 ### External Resources
 - **[Maintainable CSS](https://maintainablecss.com/chapters/semantics/)** - Source material
@@ -320,8 +332,15 @@ Semantic HTML **REDUCES** need for ARIA:
 
 ## 📊 Examples from Our Project
 
+<<<<<<< .merge_file_agutZ9
 ### Predict Detail Page
+=======
+<<<<<<< .merge_file_6pCzIs
+### Predict Detail Page
+=======
+>>>>>>> .merge_file_8QHZsi
 ### Forecast Detail Page
+>>>>>>> .merge_file_byOdjE
 
 ```blade
 {{-- ❌ WRONG: Non-semantic --}}
@@ -337,18 +356,27 @@ Semantic HTML **REDUCES** need for ARIA:
 </div>
 
 {{-- ✅ CORRECT: Semantic --}}
+<<<<<<< .merge_file_agutZ9
+=======
+<<<<<<< .merge_file_6pCzIs
+>>>>>>> .merge_file_8QHZsi
 <main class="predict-detail-page">
   <article class="predict-card">
     <header class="predict-header">
       <h1 class="predict-title">F1 Champion 2026</h1>
     </header>
     <section class="predict-outcomes">
+<<<<<<< .merge_file_agutZ9
+=======
+=======
+>>>>>>> .merge_file_8QHZsi
 <main class="forecast-detail-page">
   <article class="forecast-card">
     <header class="forecast-header">
       <h1 class="forecast-title">F1 Champion 2026</h1>
     </header>
     <section class="forecast-outcomes">
+>>>>>>> .merge_file_byOdjE
       <ul class="outcomes-list">
         <li class="outcome-item">
           <span class="outcome-name">Verstappen</span>

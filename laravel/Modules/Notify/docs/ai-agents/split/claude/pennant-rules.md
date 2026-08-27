@@ -11,9 +11,17 @@
 
 ## Cross-References
 
+<<<<<<< .merge_file_O05sTl
 - ← [CLAUDE Index](INDEX.md) — All Laravel Boost guidelines
 - ← [Main AI Docs Index](../INDEX.md) — Master index
+=======
+<<<<<<< .merge_file_QhkIM2
+- ← [CLAUDE Index](INDEX.md) — All Laravel Boost guidelines
+- ← [Main AI Docs Index](../INDEX.md) — Master index
+=======
+>>>>>>> .merge_file_NVO9eb
 - ← [CLAUDE Index](index.md) — All Laravel Boost guidelines
 - ← [Main AI Docs Index](../index.md) — Master index
+>>>>>>> .merge_file_MKMo2W
 - ← [../../../../docs/CLAUDE.md](../../../../docs/../../../../docs/CLAUDE.md) — Original source
 

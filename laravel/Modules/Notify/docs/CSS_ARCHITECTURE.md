@@ -121,8 +121,15 @@ Usato SOLO per:
 
 ### Verifica Classi
 ```bash
+<<<<<<< .merge_file_UDQyWx
 curl http://fixcity.local/it/tests/homepage | grep -o 'class="[^"]*"' | sort | uniq
+=======
+<<<<<<< .merge_file_8wDAiI
+curl http://fixcity.local/it/tests/homepage | grep -o 'class="[^"]*"' | sort | uniq
+=======
+>>>>>>> .merge_file_PSWUz9
 curl http://ptv.local/it/tests/homepage | grep -o 'class="[^"]*"' | sort | uniq
+>>>>>>> .merge_file_kdBk4w
 ```
 
 ### Output Atteso

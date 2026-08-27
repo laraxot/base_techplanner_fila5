@@ -4,8 +4,15 @@ type: concept
 tags: [absolute, completion, 100]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< .merge_file_KSDMjv
 qmd: "absolute-completion-100 🏆 fixcity - completamento assoluto 100%"
+=======
+<<<<<<< .merge_file_DybXYQ
+qmd: "absolute-completion-100 🏆 fixcity - completamento assoluto 100%"
+=======
+>>>>>>> .merge_file_ycZSLC
 qmd: "absolute-completion-100 🏆 ptv - completamento assoluto 100%"
+>>>>>>> .merge_file_UxExi1
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:

@@ -54,9 +54,19 @@ Diventare la piattaforma civic tech leader in Italia con:
 - ✅ **Implemented** API Requests (StoreTicketRequest, UpdateTicketRequest)
 
 #### Configuration
+<<<<<<< .merge_file_XDqwDL
 <<<<<<< .merge_file_hLJoGt
 - ✅ **Fixed** parse error in `config/it/quaerisofficina/manager2/xra.php`
 =======
+=======
+<<<<<<< .merge_file_IErPV8
+- ✅ **Fixed** parse error in `config/it/quaerisofficina/manager2/xra.php`
+=======
+<<<<<<< .merge_file_hLJoGt
+- ✅ **Fixed** parse error in `config/it/quaerisofficina/manager2/xra.php`
+=======
+>>>>>>> .merge_file_crAOQT
+>>>>>>> .merge_file_S0J4i7
 - ✅ **Fixed** parse error in `config/it/<nome progetto>officina/manager2/xra.php`
 >>>>>>> .merge_file_nbbE2Y
 - ✅ **Unblocked** PHPStan analysis across all modules

@@ -37,8 +37,15 @@
 
 ```bash
 # After updating .github/workflows/
+<<<<<<< .merge_file_HaSP6b
 cd /var/www/_bases/base_fixcity_fila5
+=======
+<<<<<<< .merge_file_1vSH39
+cd /var/www/_bases/base_fixcity_fila5
+=======
+>>>>>>> .merge_file_OZ7mNb
 cd /var/www/_bases/base_ptv_fila5
+>>>>>>> .merge_file_rIo1qw
 
 # Create directory if needed
 mkdir -p bashscripts/ai/.github/workflows

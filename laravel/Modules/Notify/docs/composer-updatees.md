@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_pPUzFj
+=======
 ---
 title: "Composer Update Fixes - 24 Novembre 2025"
 module: notify
@@ -7,6 +9,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+>>>>>>> .merge_file_2RU3IR
 # Composer Update Fixes - 24 Novembre 2025
 
 ## Panoramica

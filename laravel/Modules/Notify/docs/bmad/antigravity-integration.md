@@ -1,8 +1,24 @@
+<<<<<<< .merge_file_7RL3cW
 # antigravity e bmad method: integrazione e contesto fixcity
 
 ## scopo
 
 Chiarire la relazione tra **Google Antigravity** (IDE/agent-first), il template community **[antigravity-bmad-config](https://github.com/salacoste/antigravity-bmad-config)** e il modo in cui **FixCity** usa già BMAD (`_bmad/`, skill Cursor, artefatti in `_bmad-output/`).
+=======
+<<<<<<< .merge_file_SmsH8Y
+# antigravity e bmad method: integrazione e contesto fixcity
+
+## scopo
+
+Chiarire la relazione tra **Google Antigravity** (IDE/agent-first), il template community **[antigravity-bmad-config](https://github.com/salacoste/antigravity-bmad-config)** e il modo in cui **FixCity** usa già BMAD (`_bmad/`, skill Cursor, artefatti in `_bmad-output/`).
+=======
+# antigravity e bmad method: integrazione e contesto laraxot
+
+## scopo
+
+Chiarire la relazione tra **Google Antigravity** (IDE/agent-first), il template community **[antigravity-bmad-config](https://github.com/salacoste/antigravity-bmad-config)** e il modo in cui **Notify** usa già BMAD (`_bmad/`, skill Cursor, artefatti in `_bmad-output/`).
+>>>>>>> .merge_file_yttiyH
+>>>>>>> .merge_file_K4FNHJ
 
 Evita confusione: **non sono due installazioni obbligatorie**; sono **due ambienti** (Antigravity vs Cursor/Windsurf) che possono condividere la stessa filosofia BMAD.
 
@@ -15,12 +31,21 @@ Evita confusione: **non sono due installazioni obbligatorie**; sono **due ambien
 
 **Fonte**: repository `salacoste/antigravity-bmad-config` (README ufficiale).
 
+<<<<<<< .merge_file_7RL3cW
 ## cosa usa questo repository (fixcity)
 
 | Aspetto | FixCity |
+=======
+<<<<<<< .merge_file_SmsH8Y
+## cosa usa questo repository (fixcity)
+
+| Aspetto | FixCity |
+=======
+>>>>>>> .merge_file_K4FNHJ
 ## cosa usa questo repository (laraxot)
 
 | Aspetto | Notify |
+>>>>>>> .merge_file_yttiyH
 |--------|---------|
 | installazione BMAD | `npx bmad-method install` (vedi [guida](../guides/bmad-method-setup.md)) |
 | cartella core | **`_bmad/`** (non `.bmad-core/` nel root) — convenzione BMAD-METHOD nel progetto |

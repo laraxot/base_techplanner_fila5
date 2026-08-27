@@ -40,9 +40,17 @@ protected function isAccessible(User $user, ?string $path = null): bool
 
 ## Cross-References
 
+<<<<<<< .merge_file_k9F09e
 - ← [GEMINI Index](INDEX.md) — All Gemini guidelines
 - ← [Main AI Docs Index](../INDEX.md) — Master index
+=======
+<<<<<<< .merge_file_HH0CcZ
+- ← [GEMINI Index](INDEX.md) — All Gemini guidelines
+- ← [Main AI Docs Index](../INDEX.md) — Master index
+=======
+>>>>>>> .merge_file_xJMU1o
 - ← [GEMINI Index](index.md) — All Gemini guidelines
 - ← [Main AI Docs Index](../index.md) — Master index
+>>>>>>> .merge_file_ZiTaxu
 - ← [../../../../laravel/GEMINI.md](../../../../laravel/../../../../laravel/GEMINI.md) — Original source
 

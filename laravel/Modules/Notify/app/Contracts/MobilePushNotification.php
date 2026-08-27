@@ -16,7 +16,10 @@ interface MobilePushNotification
      * Get the array representation of the notification.
      *
      * @param  object|null  $notifiable  The entity to be notified
+<<<<<<< .merge_file_ktFF09
      *
+=======
+>>>>>>> .merge_file_sV7QzD
      * @return array<string, mixed>
      */
     public function toArray(?object $notifiable): array;

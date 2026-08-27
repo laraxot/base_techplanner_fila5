@@ -38,8 +38,15 @@ docs/
 │   ├── papers/    # Paper tecnici
 │   └── notes/     # Note e appunti
 ├── .schema/       # Schema per l'LLM
+<<<<<<< .merge_file_2ChOvr
 │   └── WIKI_SCHEMA.md
+=======
+<<<<<<< .merge_file_3gXtEz
+│   └── WIKI_SCHEMA.md
+=======
+>>>>>>> .merge_file_RdWExA
 │   └── wiki-schema.md
+>>>>>>> .merge_file_dMFxQO
 ├── wiki/index.md  # Indice principale
 └── log.md         # Log cronologico
 ```
@@ -52,8 +59,15 @@ docs/
 
 ### Riferimenti
 
+<<<<<<< .merge_file_2ChOvr
 - [Schema Wiki](./docs/.schema/WIKI_SCHEMA.md) - Istruzioni per l'LLM
+=======
+<<<<<<< .merge_file_3gXtEz
+- [Schema Wiki](./docs/.schema/WIKI_SCHEMA.md) - Istruzioni per l'LLM
+=======
+>>>>>>> .merge_file_RdWExA
 - [Schema Wiki](./docs/.schema/wiki-schema.md) - Istruzioni per l'LLM
+>>>>>>> .merge_file_dMFxQO
 - [Index Globale](./docs/wiki/index.md) - Catalogo di tutte le wiki
 - [Log](./docs/log.md) - Cronologia delle operazioni
 
@@ -88,8 +102,15 @@ docs/
 <claude-mem-context>
 # Memory Context
 
+<<<<<<< .merge_file_2ChOvr
 # [base_fixcity_fila5] recent context, 2026-04-15 10:19pm GMT+2
+=======
+<<<<<<< .merge_file_3gXtEz
+# [base_fixcity_fila5] recent context, 2026-04-15 10:19pm GMT+2
+=======
+>>>>>>> .merge_file_RdWExA
 # [base_ptvx_fila5] recent context, 2026-04-15 10:19pm GMT+2
+>>>>>>> .merge_file_dMFxQO
 
 No previous sessions found.
 </claude-mem-context>

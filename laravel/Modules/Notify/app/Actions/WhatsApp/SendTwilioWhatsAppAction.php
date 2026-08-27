@@ -66,7 +66,10 @@ final class SendTwilioWhatsAppAction implements WhatsAppProviderActionInterface
      * Execute the action.
      *
      * @param  WhatsAppData  $whatsAppData  I dati del messaggio WhatsApp
+<<<<<<< .merge_file_JOxHm2
      *
+=======
+>>>>>>> .merge_file_KNSEuP
      * @return array<string, mixed> Risultato dell'operazione
      *
      * @throws Exception In caso di errore durante l'invio

@@ -1,8 +1,18 @@
 # Notify Module - Filament v4 Upgrade Notes
 
+<<<<<<< .merge_file_97Cy6z
 <<<<<<< .merge_file_NnZPIa
 This document outlines specific considerations and changes for the `Notify` module during the Filament v4 upgrade. For a comprehensive overview of the Filament v4 upgrade process, refer to the main project documentation: [`docs/filament_v4_upgrade.md`](../../../docs/filament_upgrade_v4.md).
 =======
+=======
+<<<<<<< .merge_file_gJwfOF
+This document outlines specific considerations and changes for the `Notify` module during the Filament v4 upgrade. For a comprehensive overview of the Filament v4 upgrade process, refer to the main project documentation: [`docs/filament_v4_upgrade.md`](../../../docs/filament_upgrade_v4.md).
+=======
+<<<<<<< .merge_file_NnZPIa
+This document outlines specific considerations and changes for the `Notify` module during the Filament v4 upgrade. For a comprehensive overview of the Filament v4 upgrade process, refer to the main project documentation: [`docs/filament_v4_upgrade.md`](../../../docs/filament_upgrade_v4.md).
+=======
+>>>>>>> .merge_file_lBYHlQ
+>>>>>>> .merge_file_pZ8E6t
 This document outlines specific considerations and changes for the `Notify` module during the Filament v4 upgrade. For a comprehensive overview of the Filament v4 upgrade process, refer to the main project documentation: [`docs/filament-v4-upgrade.md`](../../../docs/filament_upgrade_v4.md).
 >>>>>>> .merge_file_zIquNd
 

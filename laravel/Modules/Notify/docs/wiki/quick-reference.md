@@ -135,8 +135,15 @@ related:                               # Optional (array of paths)
 ### Initialize Module Wiki
 
 ```bash
+<<<<<<< .merge_file_t0SEHR
 bashscripts/ai/init-llm-wiki.sh module Fixcity
+=======
+<<<<<<< .merge_file_EbHQDm
+bashscripts/ai/init-llm-wiki.sh module Fixcity
+=======
+>>>>>>> .merge_file_dqCLih
 bashscripts/ai/init-llm-wiki.sh module App
+>>>>>>> .merge_file_lr7lgc
 bashscripts/ai/init-llm-wiki.sh theme Sixteen
 ```
 
@@ -150,8 +157,15 @@ qmd serve ./docs/wiki
 ### Configure Obsidian
 
 1. Open Obsidian → "Open folder as vault"
+<<<<<<< .merge_file_t0SEHR
 2. Select: `/var/www/_bases/base_fixcity_fila5/docs`
+=======
+<<<<<<< .merge_file_EbHQDm
+2. Select: `/var/www/_bases/base_fixcity_fila5/docs`
+=======
+>>>>>>> .merge_file_dqCLih
 2. Select: `/var/www/_bases/base_ptvx_fila5/docs`
+>>>>>>> .merge_file_lr7lgc
 3. Configuration already in `.obsidian/`
 
 ## Quality Checklist
@@ -189,8 +203,15 @@ Templates available:
 ## Related Documentation
 
 - [Complete Integration Guide](wiki/README.md)
+<<<<<<< .merge_file_t0SEHR
 - [Agent Instructions](wiki/AGENTS.md)
+=======
+<<<<<<< .merge_file_EbHQDm
+- [Agent Instructions](wiki/AGENTS.md)
+=======
+>>>>>>> .merge_file_dqCLih
 - [Agent Instructions](wiki/agents.md)
+>>>>>>> .merge_file_lr7lgc
 - [Wiki Overview](wiki/overview.md)
 - [Obsidian Setup](.obsidian/README.md)
 - [Module Wiki Guide](Modules/Xot/docs/llm-wiki-integration.md)

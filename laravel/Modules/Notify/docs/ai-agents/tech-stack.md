@@ -1,7 +1,14 @@
 # Technology Stack
 
+<<<<<<< .merge_file_KxEGjG
 Stack tecnologico completo di Quaeris Fila5 Mono - Laravel 12 + Filament 5 + PHP 8.3
+=======
+<<<<<<< .merge_file_mnrxI1
+Stack tecnologico completo di Quaeris Fila5 Mono - Laravel 12 + Filament 5 + PHP 8.3
+=======
+>>>>>>> .merge_file_nx7tEQ
 Stack tecnologico completo di App Fila5 Mono - Laravel 12 + Filament 5 + PHP 8.3
+>>>>>>> .merge_file_WxgGq1
 
 ## Core Technologies
 

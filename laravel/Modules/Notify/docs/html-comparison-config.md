@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_fsRJtn
+=======
 ---
 title: "HTML Structure Comparison Configuration"
 module: notify
@@ -7,6 +9,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+>>>>>>> .merge_file_UW4kKS
 # HTML Structure Comparison Configuration
 
 This file provides project-specific paths for the agnostic bashscripts/html/ tools.

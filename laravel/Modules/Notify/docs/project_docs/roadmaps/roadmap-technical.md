@@ -1,5 +1,12 @@
+<<<<<<< .merge_file_09nivD
 # 🛠️ ROADMAP TECNICA - FIXCITY PLATFORM
+=======
+<<<<<<< .merge_file_gpZlc0
+# 🛠️ ROADMAP TECNICA - FIXCITY PLATFORM
+=======
+>>>>>>> .merge_file_hyqjWo
 # 🛠️ ROADMAP TECNICA - NOTIFY PLATFORM
+>>>>>>> .merge_file_NU3MHY
 
 **Versione**: 1.0  
 **Data Creazione**: Gennaio 2025  
@@ -7,8 +14,15 @@
 **Priorità**: ALTA  
 
 ## 🎯 Obiettivo
+<<<<<<< .merge_file_09nivD
 Completare l'evoluzione tecnica del progetto FixCity per raggiungere la produzione con qualità enterprise e scalabilità.
+=======
+<<<<<<< .merge_file_gpZlc0
+Completare l'evoluzione tecnica del progetto FixCity per raggiungere la produzione con qualità enterprise e scalabilità.
+=======
+>>>>>>> .merge_file_hyqjWo
 Completare l'evoluzione tecnica del progetto Notify per raggiungere la produzione con qualità enterprise e scalabilità.
+>>>>>>> .merge_file_NU3MHY
 
 ## 📊 Stato Attuale
 - **PHPStan Level 9**: ✅ COMPLETATO (0 errori)
@@ -460,10 +474,18 @@ jobs:
 **📞 Contatti**
 - **Tech Lead**: Laraxot Development Team
 - **Email**: tech@laraxot.com
+<<<<<<< .merge_file_09nivD
 - **Slack**: #fixcity-tech
 - **GitHub**: [FixCity Repository](https://github.com/laraxot/fixcity)
+=======
+<<<<<<< .merge_file_gpZlc0
+- **Slack**: #fixcity-tech
+- **GitHub**: [FixCity Repository](https://github.com/laraxot/fixcity)
+=======
+>>>>>>> .merge_file_hyqjWo
 - **Slack**: #laraxot-tech
 - **GitHub**: [Notify Repository](https://github.com/laraxot/laraxot)
+>>>>>>> .merge_file_NU3MHY
 
 **🔄 Ultimo Aggiornamento**: Gennaio 2025  
 **📊 Progresso**: 40% → 100% (Target Dicembre 2025)  

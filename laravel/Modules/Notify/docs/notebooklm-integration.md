@@ -100,8 +100,15 @@ Once authenticated, you can ask Claude Code to:
 
 Recommended notebooks to create:
 
+<<<<<<< .merge_file_rP3KIN
 1. **FixCity Architecture** - AGENTS.md, docs/architecture/*
+=======
+<<<<<<< .merge_file_dFXQF9
+1. **FixCity Architecture** - AGENTS.md, docs/architecture/*
+=======
+>>>>>>> .merge_file_Qu5oG4
 1. **FixCity Architecture** - agents.md, docs/architecture/*
+>>>>>>> .merge_file_hHV3Kf
 2. **FixCity Modules** - laravel/Modules/*/docs/README.md
 3. **FixCity API** - API documentation, Swagger specs
 

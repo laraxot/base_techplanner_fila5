@@ -4,8 +4,15 @@ type: concept
 tags: [project, status]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< .merge_file_pqrgYo
 qmd: "project-status fixcity platform - project status report"
+=======
+<<<<<<< .merge_file_EMK979
+qmd: "project-status fixcity platform - project status report"
+=======
+>>>>>>> .merge_file_GRCjwU
 qmd: "project-status ptv platform - project status report"
+>>>>>>> .merge_file_di5RHp
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -196,6 +203,13 @@ related:
 
 **Report Generated**: 2025-01-01  
 **Next Update**: 2025-01-15  
+<<<<<<< .merge_file_pqrgYo
 **Contact**: development@fixcity.io
+=======
+<<<<<<< .merge_file_EMK979
+**Contact**: development@fixcity.io
+=======
+>>>>>>> .merge_file_GRCjwU
 **Contact**: development@ptv.io
+>>>>>>> .merge_file_di5RHp
 

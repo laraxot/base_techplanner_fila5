@@ -9,7 +9,11 @@ use Modules\Notify\Tests\Fixtures\HasContactDummyModel;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< .merge_file_ilTIfS
+uses(\Modules\Notify\Tests\TestCase::class);
+=======
 uses(TestCase::class)->group('no-notify-db');
+>>>>>>> .merge_file_JuHdeM
 
 function makeHasContactDummyModel(): HasContactDummyModel
 {

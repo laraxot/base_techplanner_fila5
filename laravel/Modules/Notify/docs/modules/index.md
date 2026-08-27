@@ -34,11 +34,27 @@ related:
 - `UpdaterTrait` - Tracking automatico created_by/updated_by
 - Pattern architetturali comuni
 
+<<<<<<< .merge_file_O0GCUC
 ### Fixcity - Business Logic
 **Path**: `Modules/Fixcity/`  
 **Responsabilità**: Core della piattaforma di segnalazioni  
 **Status**: ✅ Attivo - Modulo principale  
 **Docs**: [📖 Fixcity Docs](../../Modules/Fixcity/docs/links.md)
+=======
+<<<<<<< .merge_file_iipQNS
+### Fixcity - Business Logic
+**Path**: `Modules/Fixcity/`  
+**Responsabilità**: Core della piattaforma di segnalazioni  
+**Status**: ✅ Attivo - Modulo principale  
+**Docs**: [📖 Fixcity Docs](../../Modules/Fixcity/docs/links.md)
+=======
+### App - Business Logic
+**Path**: `Modules/App/`  
+**Responsabilità**: Core della piattaforma di segnalazioni  
+**Status**: ✅ Attivo - Modulo principale  
+**Docs**: [📖 App Docs](../../Modules/App/docs/links.md)
+>>>>>>> .merge_file_hzppQj
+>>>>>>> .merge_file_CPW7su
 
 - Gestione segnalazioni cittadini
 - Workflow amministrativo
@@ -242,8 +258,15 @@ related:
 | Modulo | Status | PHPStan | Tests | Docs |
 |--------|---------|---------|-------|------|
 | Xot | ✅ Active | Level 9 | ✅ 80% | ✅ Complete |  
+<<<<<<< .merge_file_O0GCUC
 | Fixcity | ✅ Active | Level 7 | ⚠️ 60% | 📝 Updating |
+=======
+<<<<<<< .merge_file_iipQNS
+| Fixcity | ✅ Active | Level 7 | ⚠️ 60% | 📝 Updating |
+=======
+>>>>>>> .merge_file_CPW7su
 | App | ✅ Active | Level 7 | ⚠️ 60% | 📝 Updating |
+>>>>>>> .merge_file_hzppQj
 | User | ✅ Active | Level 8 | ✅ 75% | ✅ Complete |
 | UI | ✅ Active | Level 8 | ✅ 70% | ✅ Complete |
 | Cms | ✅ Active | Level 7 | ⚠️ 65% | ✅ Complete |

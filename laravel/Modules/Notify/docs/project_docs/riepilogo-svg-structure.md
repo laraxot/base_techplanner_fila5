@@ -43,8 +43,15 @@ laravel/Modules/{ModuleName}/resources/svg/
 8. **Job** - Gestione lavori e processi
 9. **Geo** - Geolocalizzazione
 10. **Gdpr** - Conformità GDPR
+<<<<<<< .merge_file_LWmJLs
 11. **Fixcity** - Modulo specifico progetto
+=======
+<<<<<<< .merge_file_hioPks
+11. **Fixcity** - Modulo specifico progetto
+=======
+>>>>>>> .merge_file_wV2ps1
 11. **App** - Modulo specifico progetto
+>>>>>>> .merge_file_reVwou
 12. **Comment** - Sistema commenti
 13. **Chart** - Grafici e statistiche
 14. **Blog** - Sistema blog

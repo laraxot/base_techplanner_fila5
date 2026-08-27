@@ -1,5 +1,12 @@
+<<<<<<< .merge_file_yAZ3kl
 # 📚 ROADMAP DOCUMENTAZIONE - FIXCITY PLATFORM
+=======
+<<<<<<< .merge_file_KeRuB9
+# 📚 ROADMAP DOCUMENTAZIONE - FIXCITY PLATFORM
+=======
+>>>>>>> .merge_file_6jSv5p
 # 📚 ROADMAP DOCUMENTAZIONE - NOTIFY PLATFORM
+>>>>>>> .merge_file_vS1GyP
 
 **Versione**: 1.0  
 **Data Creazione**: Gennaio 2025  
@@ -7,8 +14,15 @@
 **Priorità**: ALTA  
 
 ## 🎯 Obiettivo
+<<<<<<< .merge_file_yAZ3kl
 Creare un ecosistema di documentazione completo, accessibile e mantenibile per tutti gli stakeholder del progetto FixCity.
+=======
+<<<<<<< .merge_file_KeRuB9
+Creare un ecosistema di documentazione completo, accessibile e mantenibile per tutti gli stakeholder del progetto FixCity.
+=======
+>>>>>>> .merge_file_6jSv5p
 Creare un ecosistema di documentazione completo, accessibile e mantenibile per tutti gli stakeholder del progetto Notify.
+>>>>>>> .merge_file_vS1GyP
 
 ## 📊 Stato Attuale
 - **Documentazione Moduli**: 60% completata
@@ -71,8 +85,15 @@ docs/
 #### Moduli da Documentare
 - [x] **Xot**: Framework base (completato)
 - [x] **User**: Gestione utenti (completato)
+<<<<<<< .merge_file_yAZ3kl
 - [x] **Fixcity**: Core business (completato)
+=======
+<<<<<<< .merge_file_KeRuB9
+- [x] **Fixcity**: Core business (completato)
+=======
+>>>>>>> .merge_file_6jSv5p
 - [x] **App**: Core business (completato)
+>>>>>>> .merge_file_vS1GyP
 - [ ] **UI**: Componenti interfaccia
 - [ ] **Geo**: Gestione geografica
 - [ ] **Media**: Gestione file
@@ -170,8 +191,15 @@ docs/
 # OpenAPI specification
 openapi: 3.0.0
 info:
+<<<<<<< .merge_file_yAZ3kl
   title: FixCity API
+=======
+<<<<<<< .merge_file_KeRuB9
+  title: FixCity API
+=======
+>>>>>>> .merge_file_6jSv5p
   title: Notify API
+>>>>>>> .merge_file_vS1GyP
   version: 1.0.0
   description: API per la gestione segnalazioni urbane
 paths:
@@ -375,8 +403,15 @@ paths:
 - [ ] **Profiles.md**: Gestione profili
 - [ ] **Roles.md**: Gestione ruoli e permessi
 
+<<<<<<< .merge_file_yAZ3kl
 ### Modulo Fixcity (Core Business)
+=======
+<<<<<<< .merge_file_KeRuB9
+### Modulo Fixcity (Core Business)
+=======
+>>>>>>> .merge_file_6jSv5p
 ### Modulo App (Core Business)
+>>>>>>> .merge_file_vS1GyP
 - [x] **README.md**: Panoramica sistema ticket
 - [x] **API.md**: API per gestione ticket
 - [x] **Workflow.md**: Flusso di lavoro ticket
@@ -620,10 +655,18 @@ paths:
 **📞 Contatti Documentazione**
 - **Tech Writer**: Documentation Team
 - **Email**: docs@laraxot.com
+<<<<<<< .merge_file_yAZ3kl
 - **Slack**: #fixcity-docs
 - **GitHub**: [FixCity Docs](https://github.com/laraxot/fixcity-docs)
+=======
+<<<<<<< .merge_file_KeRuB9
+- **Slack**: #fixcity-docs
+- **GitHub**: [FixCity Docs](https://github.com/laraxot/fixcity-docs)
+=======
+>>>>>>> .merge_file_6jSv5p
 - **Slack**: #laraxot-docs
 - **GitHub**: [Notify Docs](https://github.com/laraxot/laraxot-docs)
+>>>>>>> .merge_file_vS1GyP
 
 **🔄 Ultimo Aggiornamento**: Gennaio 2025  
 **📊 Progresso**: 40% → 100% (Target Dicembre 2025)  

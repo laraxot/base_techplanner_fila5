@@ -243,8 +243,15 @@ MODULE INDEX        THEME INDEX      ARCHITECTURE
               ▼                ▼
         Individual            Individual
         Module Docs           Theme Docs
+<<<<<<< .merge_file_diBGOG
         (00-INDEX.md)         (00-INDEX.md)
+=======
+<<<<<<< .merge_file_gU8HkZ
+        (00-INDEX.md)         (00-INDEX.md)
+=======
+>>>>>>> .merge_file_jGF6pZ
         (00-index.md)         (00-index.md)
+>>>>>>> .merge_file_kBLDws
         ├─ architecture/      ├─ architecture/
         ├─ guides/            ├─ guides/
         ├─ reference/         ├─ reference/
@@ -327,15 +334,29 @@ VISUAL COMPONENTS
 METRIC                          STATUS      SCORE
 ────────────────────────────────────────────────────
 Module Documentation Completeness    ✅      100%
+<<<<<<< .merge_file_diBGOG
 ├─ 00-INDEX.md                       ✅      19/19
+=======
+<<<<<<< .merge_file_gU8HkZ
+├─ 00-INDEX.md                       ✅      19/19
+=======
+>>>>>>> .merge_file_jGF6pZ
 ├─ 00-index.md                       ✅      19/19
+>>>>>>> .merge_file_kBLDws
 ├─ Architecture files                ✅      19/19
 ├─ Guide files                       ✅      19/19
 └─ Reference files                   ✅      19/19
 
 Theme Documentation Completeness     ✅      100%
+<<<<<<< .merge_file_diBGOG
 ├─ 00-INDEX.md                       ✅      2/2
+=======
+<<<<<<< .merge_file_gU8HkZ
+├─ 00-INDEX.md                       ✅      2/2
+=======
+>>>>>>> .merge_file_jGF6pZ
 ├─ 00-index.md                       ✅      2/2
+>>>>>>> .merge_file_kBLDws
 ├─ Architecture files                ✅      2/2
 ├─ Guide files                       ✅      2/2
 └─ Component files                   ✅      2/2
@@ -376,8 +397,15 @@ TASK: "Add a new content block"
     ▼
   docs/THEMES_DOCUMENTATION_INDEX.md
     ▼
+<<<<<<< .merge_file_diBGOG
   laravel/Themes/Sixteen/docs/00-INDEX.md
+=======
+<<<<<<< .merge_file_gU8HkZ
+  laravel/Themes/Sixteen/docs/00-INDEX.md
+=======
+>>>>>>> .merge_file_jGF6pZ
   laravel/Themes/Sixteen/docs/00-index.md
+>>>>>>> .merge_file_kBLDws
     ▼
   guides/adding-components.md
     ▼
@@ -436,8 +464,15 @@ TASK: "Understand system architecture"
 
 ```
 Filesystem Server
+<<<<<<< .merge_file_diBGOG
 └─ Reads: /var/www/_bases/base_fixcity_fila5/
+=======
+<<<<<<< .merge_file_gU8HkZ
+└─ Reads: /var/www/_bases/base_fixcity_fila5/
+=======
+>>>>>>> .merge_file_jGF6pZ
 └─ Reads: /var/www/_bases/base_ptv_fila5/
+>>>>>>> .merge_file_kBLDws
    └─ Indexes all docs
    └─ Enables fast file navigation
 

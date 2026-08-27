@@ -21,9 +21,19 @@ related:
 # Configurazione Provider SMS per le Notifiche 
 
 Questa documentazione descrive le opzioni disponibili per l'integrazione di servizi SMS nei sistemi di notifica di <nome progetto>, con focus sui diversi provider e sulla loro configurazione.
+<<<<<<< .merge_file_btUZ1W
 <<<<<<< .merge_file_D0P5aV
 Questa documentazione descrive le opzioni disponibili per l'integrazione di servizi SMS nei sistemi di notifica di Quaeris, con focus sui diversi provider e sulla loro configurazione.
 =======
+=======
+<<<<<<< .merge_file_tZhOJQ
+Questa documentazione descrive le opzioni disponibili per l'integrazione di servizi SMS nei sistemi di notifica di Quaeris, con focus sui diversi provider e sulla loro configurazione.
+=======
+<<<<<<< .merge_file_D0P5aV
+Questa documentazione descrive le opzioni disponibili per l'integrazione di servizi SMS nei sistemi di notifica di Quaeris, con focus sui diversi provider e sulla loro configurazione.
+=======
+>>>>>>> .merge_file_xVR2uF
+>>>>>>> .merge_file_EvxkYO
 Questa documentazione descrive le opzioni disponibili per l'integrazione di servizi SMS nei sistemi di notifica di App, con focus sui diversi provider e sulla loro configurazione.
 >>>>>>> .merge_file_Gea1Oz
 
@@ -132,9 +142,19 @@ composer require laravel-notification-channels/vonage
 VONAGE_KEY=abcd1234
 VONAGE_SECRET=xyz789...
 VONAGE_SMS_FROM=<nome progetto>
+<<<<<<< .merge_file_btUZ1W
 <<<<<<< .merge_file_D0P5aV
 VONAGE_SMS_FROM=Quaeris
 =======
+=======
+<<<<<<< .merge_file_tZhOJQ
+VONAGE_SMS_FROM=Quaeris
+=======
+<<<<<<< .merge_file_D0P5aV
+VONAGE_SMS_FROM=Quaeris
+=======
+>>>>>>> .merge_file_xVR2uF
+>>>>>>> .merge_file_EvxkYO
 VONAGE_SMS_FROM=App
 >>>>>>> .merge_file_Gea1Oz
 ```

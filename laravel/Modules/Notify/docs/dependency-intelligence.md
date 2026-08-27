@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_5jRIXv
+=======
 ---
 title: "Dependency Intelligence - Module Notify"
 module: notify
@@ -7,6 +9,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+>>>>>>> .merge_file_X7YgtB
 # Dependency Intelligence - Module Notify
 
 Aggiornato da `composer show` il 2026-03-02.

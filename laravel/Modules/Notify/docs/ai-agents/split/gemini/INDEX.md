@@ -73,6 +73,10 @@ related:
 ## Cross-References
 
 ### Related Documentation
+<<<<<<< .merge_file_mVzshf
+=======
+<<<<<<< .merge_file_59XiMm
+>>>>>>> .merge_file_U8R5jd
 - ← [BMad Agents Index](../../agents/INDEX.md) — 10 agent definitions
 - ← [BMad Tasks Index](../tasks/INDEX.md) — 22 reusable tasks
 - ← [CLAUDE Index](../claude/INDEX.md) — Laravel Boost guidelines
@@ -80,6 +84,10 @@ related:
 
 ### Bidirectional Links
 - ← Back to [Main AI Docs Index](../INDEX.md)
+<<<<<<< .merge_file_mVzshf
+=======
+=======
+>>>>>>> .merge_file_U8R5jd
 - ← [BMad Agents Index](../../agents/index.md) — 10 agent definitions
 - ← [BMad Tasks Index](../tasks/index.md) — 22 reusable tasks
 - ← [CLAUDE Index](../claude/index.md) — Laravel Boost guidelines
@@ -87,6 +95,7 @@ related:
 
 ### Bidirectional Links
 - ← Back to [Main AI Docs Index](../index.md)
+>>>>>>> .merge_file_5H9xz6
 - ← Back to [../../../../laravel/GEMINI.md](../../../../../../laravel/../../../../laravel/GEMINI.md) (original source)
 - ← Back to [Project Docs](../../../docs/README.md)
 

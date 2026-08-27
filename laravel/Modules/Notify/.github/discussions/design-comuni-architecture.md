@@ -55,8 +55,15 @@ Replicate **EXACTLY** 38 static pages with:
 
 **Decision**: Content stored in JSON files, structure in Blade.
 
+<<<<<<< .merge_file_vqhBfg
 **Files**: `laravel/config/local/fixcity/database/content/pages/tests.[slug].json`
+=======
+<<<<<<< .merge_file_t78evP
+**Files**: `laravel/config/local/fixcity/database/content/pages/tests.[slug].json`
+=======
+>>>>>>> .merge_file_TdNHVv
 **Files**: `laravel/config/local/ptv/database/content/pages/tests.[slug].json`
+>>>>>>> .merge_file_gMYlYm
 
 **Rationale**:
 - Separation of Concerns: Structure ≠ Content

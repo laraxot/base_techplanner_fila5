@@ -58,6 +58,9 @@ This document outlines the architectural design of the Notify module, focusing o
 - [Notification Channels Implementation](./NOTIFICATION_CHANNELS_IMPLEMENTATION.md)
 - [Email Templates](./EMAIL_TEMPLATES.md)
 - [SMS Implementation](./SMS_IMPLEMENTATION.md)
+<<<<<<< .merge_file_YmITQ6
+- [Troubleshooting](./TROUBLESHOOTING.md)
+=======
 - [Troubleshooting](./TROUBLESHOOTING.md)
 - [Troubleshooting](./TROUBLESHOOTING.md)
 
@@ -84,3 +87,4 @@ Notify module for Laraxot platform.
 ## Quality Gates
 - PHPStan L10 compliance
 - Test coverage requirements
+>>>>>>> .merge_file_n7TV2R

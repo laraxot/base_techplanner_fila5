@@ -42,6 +42,13 @@ Linee guida per la sicurezza.
 
 - [Indice AGENTS](./agents-split-index.md)
 - [laravel-security-audit skill available](../../.opencode/skills/laravel-security-audit/SKILL.md)
+<<<<<<< .merge_file_SqX2e5
 - [AGENTS.md originale](../../AGENTS.md)
+=======
+<<<<<<< .merge_file_u5AAbN
+- [AGENTS.md originale](../../AGENTS.md)
+=======
+>>>>>>> .merge_file_qNY7SN
 - [agents.md originale](../../agents.md)
+>>>>>>> .merge_file_ehw5kl
 - [Index principale](./index.md)

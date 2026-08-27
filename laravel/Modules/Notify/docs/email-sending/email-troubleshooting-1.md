@@ -206,8 +206,22 @@ public function test_can_send_email_with_attachments()
 
 - [ATTACHMENTS_USAGE.md](./attachments_usage.md)
 - [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/email_layouts_best_practices.md)
+<<<<<<< .merge_file_MTbpcQ
+<<<<<<< .merge_file_1lAH5E
+=======
+<<<<<<< .merge_file_8Jj0uH
+>>>>>>> .merge_file_FRjMjT
+- [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/spatie_mail_templates_structure.md)
+=======
+- [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/spatie-mail-templates-structure.md)
+<<<<<<< .merge_file_MTbpcQ
+>>>>>>> .merge_file_Iroyll
+=======
+=======
 <<<<<<< .merge_file_1lAH5E
 - [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/spatie_mail_templates_structure.md)
 =======
 - [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/spatie-mail-templates-structure.md)
 >>>>>>> .merge_file_Iroyll
+>>>>>>> .merge_file_qne6cR
+>>>>>>> .merge_file_FRjMjT

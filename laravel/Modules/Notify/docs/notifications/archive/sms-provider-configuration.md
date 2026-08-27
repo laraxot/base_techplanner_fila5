@@ -16,12 +16,26 @@ related:
   - "./telegram-notifications-guide.md"
 ---
 
+<<<<<<< .merge_file_amAtoz
 <<<<<<< .merge_file_DBMxgH
+=======
+<<<<<<< .merge_file_Uipnch
+=======
+<<<<<<< .merge_file_DBMxgH
+>>>>>>> .merge_file_6l4wCi
+>>>>>>> .merge_file_av8ozZ
 # Configurazione Provider SMS per le Notifiche 
 
 Questa documentazione descrive le opzioni disponibili per l'integrazione di servizi SMS nei sistemi di notifica di <nome progetto>, con focus sui diversi provider e sulla loro configurazione.
 Questa documentazione descrive le opzioni disponibili per l'integrazione di servizi SMS nei sistemi di notifica di SaluteOra, con focus sui diversi provider e sulla loro configurazione.
+<<<<<<< .merge_file_amAtoz
 =======
+=======
+<<<<<<< .merge_file_Uipnch
+=======
+=======
+>>>>>>> .merge_file_6l4wCi
+>>>>>>> .merge_file_av8ozZ
 # Configurazione Provider SMS per le Notifiche
 
 Questa documentazione descrive le opzioni disponibili per l'integrazione di servizi SMS nei sistemi di notifica di <nome progetto>, con focus sui diversi provider e sulla loro configurazione.
@@ -88,9 +102,19 @@ class AppointmentNotification extends Notification
     {
         return ['mail', TwilioChannel::class];
     }
+<<<<<<< .merge_file_amAtoz
 <<<<<<< .merge_file_DBMxgH
     
 =======
+=======
+<<<<<<< .merge_file_Uipnch
+    
+=======
+<<<<<<< .merge_file_DBMxgH
+    
+=======
+>>>>>>> .merge_file_6l4wCi
+>>>>>>> .merge_file_av8ozZ
 
 >>>>>>> .merge_file_URQZ1c
     public function toTwilio($notifiable)
@@ -137,9 +161,19 @@ composer require laravel-notification-channels/vonage
 VONAGE_KEY=abcd1234
 VONAGE_SECRET=xyz789...
 VONAGE_SMS_FROM=<nome progetto>
+<<<<<<< .merge_file_amAtoz
 <<<<<<< .merge_file_DBMxgH
 VONAGE_SMS_FROM=SaluteOra
 =======
+=======
+<<<<<<< .merge_file_Uipnch
+VONAGE_SMS_FROM=SaluteOra
+=======
+<<<<<<< .merge_file_DBMxgH
+VONAGE_SMS_FROM=SaluteOra
+=======
+>>>>>>> .merge_file_6l4wCi
+>>>>>>> .merge_file_av8ozZ
 VONAGE_SMS_FROM=<nome progetto>
 >>>>>>> .merge_file_URQZ1c
 ```
@@ -156,9 +190,19 @@ class AppointmentNotification extends Notification
     {
         return ['mail', VonageChannel::class];
     }
+<<<<<<< .merge_file_amAtoz
 <<<<<<< .merge_file_DBMxgH
     
 =======
+=======
+<<<<<<< .merge_file_Uipnch
+    
+=======
+<<<<<<< .merge_file_DBMxgH
+    
+=======
+>>>>>>> .merge_file_6l4wCi
+>>>>>>> .merge_file_av8ozZ
 
 >>>>>>> .merge_file_URQZ1c
     public function toVonage($notifiable)
@@ -456,9 +500,19 @@ $this->app->bind(CustomSMSChannel::class, function ($app) {
     if ($app->environment('testing')) {
         return new TestSMSChannel();
     }
+<<<<<<< .merge_file_amAtoz
 <<<<<<< .merge_file_DBMxgH
     
 =======
+=======
+<<<<<<< .merge_file_Uipnch
+    
+=======
+<<<<<<< .merge_file_DBMxgH
+    
+=======
+>>>>>>> .merge_file_6l4wCi
+>>>>>>> .merge_file_av8ozZ
 
 >>>>>>> .merge_file_URQZ1c
     return new CustomSMSChannel(

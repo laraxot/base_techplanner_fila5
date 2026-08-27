@@ -8,8 +8,15 @@
 
 ## [2026-04-15] maintenance | Initial wiki setup
 - Created: llm-wiki/ directory structure
+<<<<<<< .merge_file_znpkwe
 - Created: AGENTS.md (agent instructions)
+=======
+<<<<<<< .merge_file_o6HYYx
+- Created: AGENTS.md (agent instructions)
+=======
+>>>>>>> .merge_file_L3fbAf
 - Created: agents.md (agent instructions)
+>>>>>>> .merge_file_Qgw8dC
 - Created: index.md (content catalog)
 - Created: log.md (this file)
 - Directories initialized:

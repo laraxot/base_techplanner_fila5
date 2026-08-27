@@ -1,7 +1,14 @@
 # Spatie Packages Reference
 
+<<<<<<< .merge_file_IVkR4E
 Pacchetti Spatie installati in Quaeris Fila5 Mono.
+=======
+<<<<<<< .merge_file_0Rgco1
+Pacchetti Spatie installati in Quaeris Fila5 Mono.
+=======
+>>>>>>> .merge_file_LiG80v
 Pacchetti Spatie installati in App Fila5 Mono.
+>>>>>>> .merge_file_wKvNN8
 
 ## Versioni installate
 

@@ -123,8 +123,15 @@ All documents are cross-referenced:
 - Coordination Log → Guide
 - Issue Template → Guide + Coordination Log
 - Discussion Template → Coordination Log
+<<<<<<< .merge_file_kkqJoD
 - AGENTS.md → All docs
+=======
+<<<<<<< .merge_file_jNuZTA
+- AGENTS.md → All docs
+=======
+>>>>>>> .merge_file_glH4Xq
 - agents.md → All docs
+>>>>>>> .merge_file_47Axnc
 
 ### External Links
 
@@ -176,8 +183,15 @@ All documents are cross-referenced:
 - Created GITHUB_WIKI_SYNC.md (wiki sync guide)
 - Created README.md (docs index)
 - Created GitHub Issue/Discussion templates
+<<<<<<< .merge_file_kkqJoD
 - Updated AGENTS.md with coordination guidelines
+=======
+<<<<<<< .merge_file_jNuZTA
+- Updated AGENTS.md with coordination guidelines
+=======
+>>>>>>> .merge_file_glH4Xq
 - Updated agents.md with coordination guidelines
+>>>>>>> .merge_file_47Axnc
 
 **Testing**:
 - ✅ CLI mode verified

@@ -230,9 +230,19 @@ public function toMail(object $notifiable): MailMessage
 ### **Documentazione Correlata**
 <<<<<<< .merge_file_7kJEA2
 - [README.md Modulo Notify](./readme.md)
+<<<<<<< .merge_file_tFSeKb
 =======
 - [README.md Modulo Notify](./README.md)
 >>>>>>> .merge_file_aSaCJI
+=======
+<<<<<<< .merge_file_NdVcKQ
+- [README.md Modulo Notify](./README.md)
+=======
+=======
+- [README.md Modulo Notify](./README.md)
+>>>>>>> .merge_file_aSaCJI
+>>>>>>> .merge_file_FkrsLc
+>>>>>>> .merge_file_FSpVCM
 - [Template Management](./template-management.md)
 - [Best Practices](./best-practices.md)
 

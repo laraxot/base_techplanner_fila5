@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_k6syKG
+=======
 ---
 title: "Notify Module Rules Index"
 module: notify
@@ -7,6 +9,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+>>>>>>> .merge_file_Z7wjFB
 # Notify Module Rules Index
 
 ## Overview
@@ -45,7 +48,14 @@ as a Folio page + Action, not a controller.
 See: [no-http-controllers.md](./no-http-controllers.md)
 
 ## Related Documentation
+<<<<<<< .merge_file_k6syKG
 - [README](./readme.md)
+<<<<<<< .merge_file_6FDZAL
 - [README](./README.md)
+=======
+=======
+- [README](./README.md)
+>>>>>>> .merge_file_Z7wjFB
+>>>>>>> .merge_file_Mqmfo1
 - [phpstan](./phpstan.md)
 - [No HTTP controllers](./no-http-controllers.md)

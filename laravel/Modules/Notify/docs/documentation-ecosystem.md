@@ -4,8 +4,15 @@ type: concept
 tags: [documentation, ecosystem]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< .merge_file_ccQw0C
 qmd: "documentation-ecosystem fixcity documentation ecosystem - visual map"
+=======
+<<<<<<< .merge_file_koig8s
+qmd: "documentation-ecosystem fixcity documentation ecosystem - visual map"
+=======
+>>>>>>> .merge_file_YmUoDP
 qmd: "documentation-ecosystem ptv documentation ecosystem - visual map"
+>>>>>>> .merge_file_31YwBL
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -177,8 +184,15 @@ Theme: Sixteen
     │
     ├─→ Cms Module
     │   └─ Displays: Pages, blocks, content
+<<<<<<< .merge_file_ccQw0C
     │   └─ Via: config/local/fixcity/database/content/pages/
+=======
+<<<<<<< .merge_file_koig8s
+    │   └─ Via: config/local/fixcity/database/content/pages/
+=======
+>>>>>>> .merge_file_YmUoDP
     │   └─ Via: config/local/ptv/database/content/pages/
+>>>>>>> .merge_file_31YwBL
     │   └─ Renders: Block components
     │
     ├─→ Media Module
@@ -387,8 +401,15 @@ docs/
 
 laravel/
 ├── claude.md                       ← Framework rules (38.7 KB)
+<<<<<<< .merge_file_ccQw0C
 ├── AGENTS.md
+=======
+<<<<<<< .merge_file_koig8s
+├── AGENTS.md
+=======
+>>>>>>> .merge_file_YmUoDP
 ├── agents.md
+>>>>>>> .merge_file_31YwBL
 └── .windsurfrules                 ← Windsurf rules
 ```
 

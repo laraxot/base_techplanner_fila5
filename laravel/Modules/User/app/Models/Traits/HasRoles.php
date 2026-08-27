@@ -10,6 +10,10 @@ use Modules\User\Models\Role;
 use Spatie\Permission\Traits\HasRoles as SpatieHasRoles;
 use Webmozart\Assert\Assert;
 
+<<<<<<< .merge_file_wL78Uq
+=======
+
+>>>>>>> .merge_file_7xeGVY
 trait HasRoles
 {
     use SpatieHasRoles;

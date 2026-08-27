@@ -3,13 +3,20 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Models;
+<<<<<<< .merge_file_EPhzBh
+=======
 
+>>>>>>> .merge_file_USaHfM
 use Modules\Notify\Enums\NotificationTypeEnum;
 use Modules\Notify\Models\NotificationTemplate;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< .merge_file_EPhzBh
+uses(\Modules\Notify\Tests\TestCase::class);
+=======
 uses(TestCase::class)->group('no-notify-db');
+>>>>>>> .merge_file_USaHfM
 
 /**
  * Unit tests must not bootstrap the application container.

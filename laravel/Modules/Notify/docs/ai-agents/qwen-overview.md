@@ -1,7 +1,14 @@
 # QWEN Overview
 
+<<<<<<< .merge_file_4AMFLz
 Panoramica e stato attuale del progetto Base Predict Fila5.
+=======
+<<<<<<< .merge_file_GWBTIx
+Panoramica e stato attuale del progetto Base Predict Fila5.
+=======
+>>>>>>> .merge_file_3NaKJ9
 Panoramica e stato attuale del progetto Base Forecast Fila5.
+>>>>>>> .merge_file_cG75mQ
 
 ## Informazioni Progetto
 
@@ -23,16 +30,35 @@ Panoramica e stato attuale del progetto Base Forecast Fila5.
 
 ## 🎯 Obiettivo Principale
 
+<<<<<<< .merge_file_4AMFLz
 **Creare la MIGLIORE predict platform di TUTTI i competitors**
+=======
+<<<<<<< .merge_file_GWBTIx
+**Creare la MIGLIORE predict platform di TUTTI i competitors**
+=======
+>>>>>>> .merge_file_3NaKJ9
 **Creare la MIGLIORE forecast platform di TUTTI i competitors**
+>>>>>>> .merge_file_cG75mQ
 
 Senza alcun se o ma. Deve essere perfetta in ogni aspetto.
 
 ### Obiettivi Specifici
 
+<<<<<<< .merge_file_4AMFLz
 1. ✅ **Predict List Page** - BEST IN CLASS
 2. 🔄 **Homepage** - Must beat ALL competitors
 3. 🔄 **Multi-Option Predictions** - Support 2-30+ outcomes
+=======
+<<<<<<< .merge_file_GWBTIx
+1. ✅ **Predict List Page** - BEST IN CLASS
+2. 🔄 **Homepage** - Must beat ALL competitors
+3. 🔄 **Multi-Option Predictions** - Support 2-30+ outcomes
+=======
+1. ✅ **Forecast List Page** - BEST IN CLASS
+2. 🔄 **Homepage** - Must beat ALL competitors
+3. 🔄 **Multi-Option Forecasts** - Support 2-30+ outcomes
+>>>>>>> .merge_file_cG75mQ
+>>>>>>> .merge_file_3NaKJ9
 4. ⏳ **Dark Mode** - User preference support
 5. ⏳ **WebSocket Live Updates** - Real-time prices
 6. ⏳ **10 Languages** - Full i18n coverage

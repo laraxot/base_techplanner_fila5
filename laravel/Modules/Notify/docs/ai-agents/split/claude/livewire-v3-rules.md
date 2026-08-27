@@ -37,9 +37,17 @@ document.addEventListener('livewire:init', function () {
 
 ## Cross-References
 
+<<<<<<< .merge_file_TrF43y
 - ← [CLAUDE Index](INDEX.md) — All Laravel Boost guidelines
 - ← [Main AI Docs Index](../INDEX.md) — Master index
+=======
+<<<<<<< .merge_file_Q5lBSq
+- ← [CLAUDE Index](INDEX.md) — All Laravel Boost guidelines
+- ← [Main AI Docs Index](../INDEX.md) — Master index
+=======
+>>>>>>> .merge_file_tBJNKi
 - ← [CLAUDE Index](index.md) — All Laravel Boost guidelines
 - ← [Main AI Docs Index](../index.md) — Master index
+>>>>>>> .merge_file_ocZbgH
 - ← [../../../../docs/CLAUDE.md](../../../../docs/../../../../docs/CLAUDE.md) — Original source
 

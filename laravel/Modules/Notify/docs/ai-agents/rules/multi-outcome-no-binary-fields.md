@@ -9,8 +9,15 @@
 
 ## 🎯 The Rule
 
+<<<<<<< .merge_file_f5txbi
 > **NON ESISTONO** predict di tipo SÌ/NO!
+=======
+<<<<<<< .merge_file_5rbeuH
+> **NON ESISTONO** predict di tipo SÌ/NO!
+=======
+>>>>>>> .merge_file_U5JVw3
 > **NON ESISTONO** forecast di tipo SÌ/NO!
+>>>>>>> .merge_file_RAAJX6
 > **TUTTO** è multi-risposta (2-30+ outcomes)!
 > **MAI** usare `sum_credit_yes`, `sum_credit_no`, `count_credit_yes`, `count_credit_no`!
 
@@ -77,16 +84,25 @@ CREATE TABLE rating_morph (
 
 ```php
 // ❌ SBAGLIATO: Usare campi binary
+<<<<<<< .merge_file_f5txbi
+=======
+<<<<<<< .merge_file_5rbeuH
+>>>>>>> .merge_file_U5JVw3
 $predict->ratings->first()->pivot->sum_credit_yes;  // ❌ ERROR!
 $predict->ratings->first()->pivot->count_credit_no; // ❌ ERROR!
 
 // ✅ CORRETTO: Usare SOLO percentage
 $predict->ratings->first()->pivot->percentage;  // ✅ WORKS!
+<<<<<<< .merge_file_f5txbi
+=======
+=======
+>>>>>>> .merge_file_U5JVw3
 $forecast->ratings->first()->pivot->sum_credit_yes;  // ❌ ERROR!
 $forecast->ratings->first()->pivot->count_credit_no; // ❌ ERROR!
 
 // ✅ CORRETTO: Usare SOLO percentage
 $forecast->ratings->first()->pivot->percentage;  // ✅ WORKS!
+>>>>>>> .merge_file_RAAJX6
 ```
 
 **Impact**: Rimuovere riferimenti a campi binary da TUTTO il codice.
@@ -96,8 +112,15 @@ $forecast->ratings->first()->pivot->percentage;  // ✅ WORKS!
 ### Level 4: Multi-Outcome Architecture ✅✅
 
 ```
+<<<<<<< .merge_file_f5txbi
 TUTTI i predict sono MULTI-RISPOSTA:
+=======
+<<<<<<< .merge_file_5rbeuH
+TUTTI i predict sono MULTI-RISPOSTA:
+=======
+>>>>>>> .merge_file_U5JVw3
 TUTTI i forecast sono MULTI-RISPOSTA:
+>>>>>>> .merge_file_RAAJX6
 
 1. Binary (2 outcomes) - CASO PARTICOLARE
    - SÌ/NO è solo un caso con 2 outcomes
@@ -150,10 +173,18 @@ $participants = $pivot->count_credit_yes + $pivot->count_credit_no;
 $probability = $pivot->percentage;
 
 // Per volume/participants, usare query separate
+<<<<<<< .merge_file_f5txbi
 $volume = BetHistory::where('predict_id', $predict->id)->sum('value');
 $participants = RatingMorph::where('model_id', $predict->id)
+=======
+<<<<<<< .merge_file_5rbeuH
+$volume = BetHistory::where('predict_id', $predict->id)->sum('value');
+$participants = RatingMorph::where('model_id', $predict->id)
+=======
+>>>>>>> .merge_file_U5JVw3
 $volume = BetHistory::where('forecast_id', $forecast->id)->sum('value');
 $participants = RatingMorph::where('model_id', $forecast->id)
+>>>>>>> .merge_file_RAAJX6
     ->distinct('user_id')
     ->count('user_id');
 ```
@@ -198,16 +229,31 @@ $pivot->percentage  // ✅ Unico campo valido
 ## 🔗 Related Documentation
 
 ### AI Agents Docs
+<<<<<<< .merge_file_f5txbi
 - **[Rules Index](00-INDEX.md)** - All rules
+=======
+<<<<<<< .merge_file_5rbeuH
+- **[Rules Index](00-INDEX.md)** - All rules
+=======
+>>>>>>> .merge_file_U5JVw3
 - **[Rules Index](00-index.md)** - All rules
+>>>>>>> .merge_file_RAAJX6
 - **[Multi-Outcome Universal](multi-outcome-universal.md)** - Core principle
 - **[Use Models Not DB::Table](use-models-not-db-table.md)** - Model usage
 
 ### Module Docs
+<<<<<<< .merge_file_f5txbi
 - **[MULTI-OUTCOME-FUNDAMENTAL.md](../../laravel/Modules/Predict/docs/MULTI-OUTCOME-FUNDAMENTAL.md)** - Fundamental rule
 - **[ADR-003 Deprecate Binary Fields](../../laravel/Modules/Predict/docs/ADR-003_DEPRECATE_BINARY_CREDIT_FIELDS.md)** - Deprecation plan
+=======
+<<<<<<< .merge_file_5rbeuH
+- **[MULTI-OUTCOME-FUNDAMENTAL.md](../../laravel/Modules/Predict/docs/MULTI-OUTCOME-FUNDAMENTAL.md)** - Fundamental rule
+- **[ADR-003 Deprecate Binary Fields](../../laravel/Modules/Predict/docs/ADR-003_DEPRECATE_BINARY_CREDIT_FIELDS.md)** - Deprecation plan
+=======
+>>>>>>> .merge_file_U5JVw3
 - **[MULTI-OUTCOME-FUNDAMENTAL.md](../../laravel/Modules/Forecast/docs/MULTI-OUTCOME-FUNDAMENTAL.md)** - Fundamental rule
 - **[ADR-003 Deprecate Binary Fields](../../laravel/Modules/Forecast/docs/ADR-003_DEPRECATE_BINARY_CREDIT_FIELDS.md)** - Deprecation plan
+>>>>>>> .merge_file_RAAJX6
 
 ---
 

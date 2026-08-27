@@ -13,7 +13,11 @@ use Modules\Notify\Enums\WhatsAppDriverEnum;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< .merge_file_ph2ISB
+uses(TestCase::class);
+=======
 uses(TestCase::class)->group('no-notify-db');
+>>>>>>> .merge_file_KbWm1m
 
 test('contact type enum exposes expected cases and column definitions', function () {
     Assert::assertCount(6, ContactTypeEnum::cases());

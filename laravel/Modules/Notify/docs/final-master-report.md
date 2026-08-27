@@ -4,8 +4,15 @@ type: concept
 tags: [final, master, report]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< .merge_file_CIAbLp
 qmd: "final-master-report 🏆 fixcity - final master report"
+=======
+<<<<<<< .merge_file_4GjuO2
+qmd: "final-master-report 🏆 fixcity - final master report"
+=======
+>>>>>>> .merge_file_6KKjxk
 qmd: "final-master-report 🏆 ptv - final master report"
+>>>>>>> .merge_file_R5RePR
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -235,8 +242,15 @@ related:
 ## 📚 STRUTTURA FINALE PROGETTO
 
 ```
+<<<<<<< .merge_file_CIAbLp
 base_fixcity_fila5_mono/
+=======
+<<<<<<< .merge_file_4GjuO2
+base_fixcity_fila5_mono/
+=======
+>>>>>>> .merge_file_6KKjxk
 base_ptv_fila5_mono/
+>>>>>>> .merge_file_R5RePR
 │
 ├── 📊 ROOT DOCS (14 files)
 │   ├── documentation-index.md

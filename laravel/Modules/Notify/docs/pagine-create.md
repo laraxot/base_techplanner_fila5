@@ -4,8 +4,15 @@ type: concept
 tags: [pagine, create]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< .merge_file_FTUBHB
 qmd: "pagine-create pagine create - fixcity sixteen theme"
+=======
+<<<<<<< .merge_file_wR3wEL
+qmd: "pagine-create pagine create - fixcity sixteen theme"
+=======
+>>>>>>> .merge_file_LhTHjv
 qmd: "pagine-create pagine create - ptv sixteen theme"
+>>>>>>> .merge_file_sqVSWD
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:

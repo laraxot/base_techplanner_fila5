@@ -80,9 +80,19 @@ related:
 
 ---
 
+<<<<<<< .merge_file_k9E4VN
 <<<<<<< .merge_file_X0WE0Q
 ### Fixcity Module (35 errors)
 =======
+=======
+<<<<<<< .merge_file_PPfqUV
+### Fixcity Module (35 errors)
+=======
+<<<<<<< .merge_file_X0WE0Q
+### Fixcity Module (35 errors)
+=======
+>>>>>>> .merge_file_8raJIp
+>>>>>>> .merge_file_7H1eM1
 ### App Module (35 errors)
 >>>>>>> .merge_file_rpit0q
 
@@ -104,9 +114,19 @@ related:
 #### Factory Issues
 - **File:** `ReportFactory.php`
 - **Issue:** `Report` model not found
+<<<<<<< .merge_file_k9E4VN
 <<<<<<< .merge_file_X0WE0Q
 - **Solution:** Create `Modules/Fixcity/Models/Report.php` or update factory
 =======
+=======
+<<<<<<< .merge_file_PPfqUV
+- **Solution:** Create `Modules/Fixcity/Models/Report.php` or update factory
+=======
+<<<<<<< .merge_file_X0WE0Q
+- **Solution:** Create `Modules/Fixcity/Models/Report.php` or update factory
+=======
+>>>>>>> .merge_file_8raJIp
+>>>>>>> .merge_file_7H1eM1
 - **Solution:** Create `Modules/App/Models/Report.php` or update factory
 >>>>>>> .merge_file_rpit0q
 
@@ -260,9 +280,19 @@ $value = $data['key'] ?? null;
 
 ### Module Documentation
 - [ ] `Modules/Cms/docs/models.md` - Document BlockData structure
+<<<<<<< .merge_file_k9E4VN
 <<<<<<< .merge_file_X0WE0Q
 - [ ] `Modules/Fixcity/docs/models.md` - Document Ticket methods
 =======
+=======
+<<<<<<< .merge_file_PPfqUV
+- [ ] `Modules/Fixcity/docs/models.md` - Document Ticket methods
+=======
+<<<<<<< .merge_file_X0WE0Q
+- [ ] `Modules/Fixcity/docs/models.md` - Document Ticket methods
+=======
+>>>>>>> .merge_file_8raJIp
+>>>>>>> .merge_file_7H1eM1
 - [ ] `Modules/App/docs/models.md` - Document Ticket methods
 >>>>>>> .merge_file_rpit0q
 - [ ] `Modules/Geo/docs/actions.md` - Document FilterCoordinatesInRadiusAction

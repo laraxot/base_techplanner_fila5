@@ -6,6 +6,8 @@ namespace Modules\Notify\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
+<<<<<<< .merge_file_7OPFgc
+=======
 /**
  * @method static \Illuminate\Database\Eloquent\Builder<static>|EmailTemplate newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|EmailTemplate newQuery()
@@ -13,6 +15,7 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @mixin \Eloquent
  */
+>>>>>>> .merge_file_Qh80lV
 class EmailTemplate extends Model
 {
     /**

@@ -20,13 +20,24 @@ class SmsChannel
     /**
      * Crea una nuova istanza del canale.
      */
+<<<<<<< .merge_file_hKi5YS
+    public function __construct(private readonly SendSmsFactorSMSAction $action)
+    {
+    }
+=======
     public function __construct(private readonly SendSmsFactorSMSAction $action) {}
+>>>>>>> .merge_file_WLwAD9
 
     /**
      * Invia la notifica attraverso il canale SMS.
      *
      * @param  Notification  $notification  Notifica da inviare
+<<<<<<< .merge_file_hKi5YS
+     *
+     * @return array<string, mixed>|null Risultato dell'operazione o null in caso di errore
+=======
      * @return array{status_code: int, status_txt: string} Risultato dell'invio restituito da SendSmsFactorSMSAction
+>>>>>>> .merge_file_WLwAD9
      *
      * @throws Exception Se la notifica non ha il metodo toSms o il driver non è supportato
      */

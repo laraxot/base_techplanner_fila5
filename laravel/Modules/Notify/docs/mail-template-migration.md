@@ -129,8 +129,15 @@ Per una comprensione completa, consultare anche:
 
 - [Struttura della Migrazione](./mail-templates/migration_structure.md) - Dettagli sulla struttura di migrazione
 - [Implementazione del Campo Slug](./mail-templates/slug_field_implementation.md) - Guida completa all'implementazione e utilizzo del campo slug
+<<<<<<< .merge_file_1fnVmp
 - [Spatie Email Usage Guide](./spatie_email_usage_guide.md) - Come utilizzare SpatieEmail con i template
+=======
+<<<<<<< .merge_file_XCnqQ7
+- [Spatie Email Usage Guide](./spatie_email_usage_guide.md) - Come utilizzare SpatieEmail con i template
+=======
+>>>>>>> .merge_file_KxG714
 - [Spatie Email Usage Guide](./spatie-email-usage-guide.md) - Come utilizzare SpatieEmail con i template
+>>>>>>> .merge_file_TKz2rg
 
 ## Vantaggi del Pattern XotBaseMigration
 
@@ -271,8 +278,15 @@ Per una comprensione completa, consultare anche:
 
 - [Struttura della Migrazione](./mail-templates/migration_structure.md) - Dettagli sulla struttura di migrazione
 - [Implementazione del Campo Slug](./mail-templates/slug_field_implementation.md) - Guida completa all'implementazione e utilizzo del campo slug
+<<<<<<< .merge_file_1fnVmp
 - [Spatie Email Usage Guide](./spatie_email_usage_guide.md) - Come utilizzare SpatieEmail con i template
+=======
+<<<<<<< .merge_file_XCnqQ7
+- [Spatie Email Usage Guide](./spatie_email_usage_guide.md) - Come utilizzare SpatieEmail con i template
+=======
+>>>>>>> .merge_file_KxG714
 - [Spatie Email Usage Guide](./spatie-email-usage-guide.md) - Come utilizzare SpatieEmail con i template
+>>>>>>> .merge_file_TKz2rg
 
 ## Vantaggi del Pattern XotBaseMigration
 

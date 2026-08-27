@@ -19,12 +19,23 @@ namespace Modules\Notify\Tests\Unit\Models;
 
 use Modules\Notify\Models\NotifyTheme;
 use Modules\Notify\Tests\TestCase;
+<<<<<<< .merge_file_kZG1YQ
+=======
+use PHPUnit\Framework\Assert;
+<<<<<<< .merge_file_jPwq7g
+
+use function Safe\json_encode;
+
+uses(TestCase::class);
+=======
+>>>>>>> .merge_file_ynqUWO
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
 
 uses(TestCase::class)->group('notify-db');
+>>>>>>> .merge_file_mtA8xW
 
 beforeEach(function (): void {
     /** @var TestCase $this */
@@ -33,7 +44,14 @@ beforeEach(function (): void {
 
 describe('Notify Theme PartOne', function (): void {
     test('_can_create_notify_theme', function (): void {
+<<<<<<< .merge_file_kZG1YQ
         /** @var TestCase $this */
+=======
+<<<<<<< .merge_file_jPwq7g
+        /** @var TestCase $this */
+=======
+>>>>>>> .merge_file_mtA8xW
+>>>>>>> .merge_file_ynqUWO
         $theme = NotifyTheme::create([
             'lang' => 'it',
             'type' => 'email',
@@ -54,7 +72,11 @@ describe('Notify Theme PartOne', function (): void {
                 'secondary_color' => '#64748b',
             ],
         ]);
+<<<<<<< .merge_file_jPwq7g
+        \assertNotifyTableHas('notify_themes', [
+=======
         XotBasePest::assertTableHas('notify', 'notify_themes', [
+>>>>>>> .merge_file_mtA8xW
             'id' => $theme->id,
             'lang' => 'it',
             'type' => 'email',
@@ -80,7 +102,15 @@ describe('Notify Theme PartOne', function (): void {
     });
 
     test('_has_correct_fillable_fields', function (): void {
+<<<<<<< .merge_file_kZG1YQ
         $theme = new NotifyTheme();
+=======
+<<<<<<< .merge_file_jPwq7g
+        $theme = new NotifyTheme();
+=======
+        $theme = new NotifyTheme;
+>>>>>>> .merge_file_mtA8xW
+>>>>>>> .merge_file_ynqUWO
 
         $expectedFillable = [
             'id',
@@ -104,7 +134,15 @@ describe('Notify Theme PartOne', function (): void {
     });
 
     test('_has_correct_casts', function (): void {
+<<<<<<< .merge_file_kZG1YQ
         $theme = new NotifyTheme();
+=======
+<<<<<<< .merge_file_jPwq7g
+        $theme = new NotifyTheme();
+=======
+        $theme = new NotifyTheme;
+>>>>>>> .merge_file_mtA8xW
+>>>>>>> .merge_file_ynqUWO
 
         $expectedCasts = [
             'id' => 'string',
@@ -122,7 +160,15 @@ describe('Notify Theme PartOne', function (): void {
     });
 
     test('_has_logo_appended_attribute', function (): void {
+<<<<<<< .merge_file_kZG1YQ
         $theme = new NotifyTheme();
+=======
+<<<<<<< .merge_file_jPwq7g
+        $theme = new NotifyTheme();
+=======
+        $theme = new NotifyTheme;
+>>>>>>> .merge_file_mtA8xW
+>>>>>>> .merge_file_ynqUWO
 
         $expectedAppends = ['logo'];
 
@@ -151,14 +197,23 @@ describe('Notify Theme PartOne', function (): void {
             'subject' => 'Test Theme',
             'view_params' => $viewParams,
         ]);
+<<<<<<< .merge_file_jPwq7g
+        \assertNotifyTableHas('notify_themes', [
+=======
         XotBasePest::assertTableHas('notify', 'notify_themes', [
+>>>>>>> .merge_file_mtA8xW
             'id' => $theme->id,
             'view_params' => json_encode($viewParams),
         ]);
         Assert::assertEquals('Test Company', $theme->view_params['company_name']);
         Assert::assertEquals('#ef4444', $theme->view_params['primary_color']);
+<<<<<<< .merge_file_jPwq7g
+        Assert::assertEquals('Inter', \notifyArrayGet($theme->view_params, 'fonts', 'primary'));
+        Assert::assertEquals('1200px', \notifyArrayGet($theme->view_params, 'layout', 'max_width'));
+=======
         Assert::assertEquals('Inter', TestCase::notifyArrayGet($theme->view_params, 'fonts', 'primary'));
         Assert::assertEquals('1200px', TestCase::notifyArrayGet($theme->view_params, 'layout', 'max_width'));
+>>>>>>> .merge_file_mtA8xW
     });
 
     test('_can_generate_logo_attribute', function (): void {
@@ -206,7 +261,11 @@ describe('Notify Theme PartOne', function (): void {
             'theme' => 'updated',
             'view_params' => ['updated' => true, 'version' => '2.0'],
         ]);
+<<<<<<< .merge_file_jPwq7g
+        \assertNotifyTableHas('notify_themes', [
+=======
         XotBasePest::assertTableHas('notify', 'notify_themes', [
+>>>>>>> .merge_file_mtA8xW
             'id' => $theme->id,
             'subject' => 'Updated Subject',
             'body' => 'Updated body text',
@@ -214,10 +273,17 @@ describe('Notify Theme PartOne', function (): void {
             'view_params' => json_encode(['updated' => true, 'version' => '2.0']),
         ]);
 
+<<<<<<< .merge_file_jPwq7g
+        Assert::assertEquals('Updated Subject', \assertFreshModel($theme, NotifyTheme::class)->subject);
+        Assert::assertEquals('Updated body text', \assertFreshModel($theme, NotifyTheme::class)->body);
+        Assert::assertEquals('updated', \assertFreshModel($theme, NotifyTheme::class)->theme);
+        Assert::assertEquals(['updated' => true, 'version' => '2.0'], \assertFreshModel($theme, NotifyTheme::class)->view_params);
+=======
         Assert::assertEquals('Updated Subject', XotBasePest::assertFreshModel($theme, NotifyTheme::class)->subject);
         Assert::assertEquals('Updated body text', XotBasePest::assertFreshModel($theme, NotifyTheme::class)->body);
         Assert::assertEquals('updated', XotBasePest::assertFreshModel($theme, NotifyTheme::class)->theme);
         Assert::assertEquals(['updated' => true, 'version' => '2.0'], XotBasePest::assertFreshModel($theme, NotifyTheme::class)->view_params);
+>>>>>>> .merge_file_mtA8xW
     });
 
     test('_can_find_by_language', function (): void {
@@ -246,8 +312,16 @@ describe('Notify Theme PartOne', function (): void {
         Assert::assertCount(1, $italianThemes);
         Assert::assertCount(1, $englishThemes);
         Assert::assertCount(1, $germanThemes);
+<<<<<<< .merge_file_jPwq7g
+        Assert::assertEquals('it', \assertFirstModel($italianThemes, NotifyTheme::class)->lang);
+        Assert::assertEquals('en', \assertFirstModel($englishThemes, NotifyTheme::class)->lang);
+        Assert::assertEquals('de', \assertFirstModel($germanThemes, NotifyTheme::class)->lang);
+    });
+
+=======
         Assert::assertEquals('it', XotBasePest::assertFirstModel($italianThemes, NotifyTheme::class)->lang);
         Assert::assertEquals('en', XotBasePest::assertFirstModel($englishThemes, NotifyTheme::class)->lang);
         Assert::assertEquals('de', XotBasePest::assertFirstModel($germanThemes, NotifyTheme::class)->lang);
     });
+>>>>>>> .merge_file_mtA8xW
 });

@@ -28,8 +28,15 @@
 
 ### What Are Custom Question Types?
 
+<<<<<<< .merge_file_D5wfC7
 Custom question types are specialized data processing actions for Quaeris survey analytics that handle complex business logic not covered by standard LimeSurvey queries. They enable:
+=======
+<<<<<<< .merge_file_v3MCx0
+Custom question types are specialized data processing actions for Quaeris survey analytics that handle complex business logic not covered by standard LimeSurvey queries. They enable:
+=======
+>>>>>>> .merge_file_htupnC
 Custom question types are specialized data processing actions for App survey analytics that handle complex business logic not covered by standard LimeSurvey queries. They enable:
+>>>>>>> .merge_file_WNmCXE
 
 - **Response rate calculations** (email, SMS)
 - **Grouped analysis** (root grouped BF)
@@ -39,8 +46,15 @@ Custom question types are specialized data processing actions for App survey ana
 ### Why Custom Implementation?
 
 Standard LimeSurvey queries cannot handle:
+<<<<<<< .merge_file_D5wfC7
 - Cross-database operations (contacts in `quaeris_data`, surveys in `limesurvey`)
+=======
+<<<<<<< .merge_file_v3MCx0
+- Cross-database operations (contacts in `quaeris_data`, surveys in `limesurvey`)
+=======
+>>>>>>> .merge_file_htupnC
 - Cross-database operations (contacts in `app_data`, surveys in `limesurvey`)
+>>>>>>> .merge_file_WNmCXE
 - Complex business logic (response rate calculations)
 - Custom grouping and aggregation
 - Multi-source data merging
@@ -130,15 +144,29 @@ WHERE parent_qid != 0
 GROUP BY gid
 ```
 
+<<<<<<< .merge_file_D5wfC7
 **File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/RootGroupedBf.php`
+=======
+<<<<<<< .merge_file_v3MCx0
+**File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/RootGroupedBf.php`
+=======
+>>>>>>> .merge_file_htupnC
 **File**: `Modules/App/app/Actions/QuestionChart/Custom/RootGroupedBf.php`
+>>>>>>> .merge_file_WNmCXE
 
 **Lines**: 125
 
 **Complexity**: Medium
 
+<<<<<<< .merge_file_D5wfC7
 **Test URL**: `/quaeris/admin/ats/survey-pdfs/16/question-charts/234`
+=======
+<<<<<<< .merge_file_v3MCx0
+**Test URL**: `/quaeris/admin/ats/survey-pdfs/16/question-charts/234`
+=======
+>>>>>>> .merge_file_htupnC
 **Test URL**: `/this-project/admin/ats/survey-pdfs/16/question-charts/234`
+>>>>>>> .merge_file_WNmCXE
 
 ---
 
@@ -162,15 +190,29 @@ WHERE submitdate IS NOT NULL
 AND sent != 'N'
 ```
 
+<<<<<<< .merge_file_D5wfC7
 **File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/MailResponseRate.php`
+=======
+<<<<<<< .merge_file_v3MCx0
+**File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/MailResponseRate.php`
+=======
+>>>>>>> .merge_file_htupnC
 **File**: `Modules/App/app/Actions/QuestionChart/Custom/MailResponseRate.php`
+>>>>>>> .merge_file_WNmCXE
 
 **Lines**: 173
 
 **Complexity**: High
 
+<<<<<<< .merge_file_D5wfC7
 **Test URL**: `/quaeris/admin/ats/survey-pdfs/16/question-charts/192`
+=======
+<<<<<<< .merge_file_v3MCx0
+**Test URL**: `/quaeris/admin/ats/survey-pdfs/16/question-charts/192`
+=======
+>>>>>>> .merge_file_htupnC
 **Test URL**: `/this-project/admin/ats/survey-pdfs/16/question-charts/192`
+>>>>>>> .merge_file_WNmCXE
 
 **Footer Output**:
 ```
@@ -187,8 +229,15 @@ Totale Invitati: 100 - Rispondenti: 75 - Percentuale di risposta: 75.00%
 
 **Database Operations**:
 ```sql
+<<<<<<< .merge_file_D5wfC7
 -- Uses Contact model (quaeris_data database)
+=======
+<<<<<<< .merge_file_v3MCx0
+-- Uses Contact model (quaeris_data database)
+=======
+>>>>>>> .merge_file_htupnC
 -- Uses Contact model (app_data database)
+>>>>>>> .merge_file_WNmCXE
 SELECT 
     DATE_FORMAT(sms_sent_at, '%Y-%b') as label,
     DATE_FORMAT(sms_sent_at, '%Y-%m') as _sort,
@@ -202,15 +251,29 @@ GROUP BY
 ORDER BY DATE_FORMAT(sms_sent_at, '%Y-%m')
 ```
 
+<<<<<<< .merge_file_D5wfC7
 **File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/SmsResponseRate.php`
+=======
+<<<<<<< .merge_file_v3MCx0
+**File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/SmsResponseRate.php`
+=======
+>>>>>>> .merge_file_htupnC
 **File**: `Modules/App/app/Actions/QuestionChart/Custom/SmsResponseRate.php`
+>>>>>>> .merge_file_WNmCXE
 
 **Lines**: 150 (optimized from 473)
 
 **Complexity**: High
 
+<<<<<<< .merge_file_D5wfC7
 **Test URL**: `/quaeris/admin/ats/survey-pdfs/16/question-charts/191`
+=======
+<<<<<<< .merge_file_v3MCx0
+**Test URL**: `/quaeris/admin/ats/survey-pdfs/16/question-charts/191`
+=======
+>>>>>>> .merge_file_htupnC
 **Test URL**: `/this-project/admin/ats/survey-pdfs/16/question-charts/191`
+>>>>>>> .merge_file_WNmCXE
 
 **Key Optimization**: No cross-database joins, uses Contact model directly
 
@@ -224,15 +287,29 @@ ORDER BY DATE_FORMAT(sms_sent_at, '%Y-%m')
 
 **Implementation**: Combines MailResponseRate + SmsResponseRate
 
+<<<<<<< .merge_file_D5wfC7
 **File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/ContactsCompleted.php`
+=======
+<<<<<<< .merge_file_v3MCx0
+**File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/ContactsCompleted.php`
+=======
+>>>>>>> .merge_file_htupnC
 **File**: `Modules/App/app/Actions/QuestionChart/Custom/ContactsCompleted.php`
+>>>>>>> .merge_file_WNmCXE
 
 **Lines**: 122
 
 **Complexity**: Medium
 
+<<<<<<< .merge_file_D5wfC7
 **Test URL**: `/quaeris/admin/ats/survey-pdfs/16/question-charts/190`
+=======
+<<<<<<< .merge_file_v3MCx0
+**Test URL**: `/quaeris/admin/ats/survey-pdfs/16/question-charts/190`
+=======
+>>>>>>> .merge_file_htupnC
 **Test URL**: `/this-project/admin/ats/survey-pdfs/16/question-charts/190`
+>>>>>>> .merge_file_WNmCXE
 
 **Calculation**:
 ```php
@@ -251,8 +328,15 @@ $responsePercentage = $totalInvited !== 0
 
 **Pattern**: `custom:contacts_completed_2`
 
+<<<<<<< .merge_file_D5wfC7
 **File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/ContactsCompleted2.php`
+=======
+<<<<<<< .merge_file_v3MCx0
+**File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/ContactsCompleted2.php`
+=======
+>>>>>>> .merge_file_htupnC
 **File**: `Modules/App/app/Actions/QuestionChart/Custom/ContactsCompleted2.php`
+>>>>>>> .merge_file_WNmCXE
 
 **Lines**: 128
 
@@ -266,8 +350,15 @@ $responsePercentage = $totalInvited !== 0
 
 **Pattern**: `custom:avg_group_2`
 
+<<<<<<< .merge_file_D5wfC7
 **File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/AvgGroup2.php`
+=======
+<<<<<<< .merge_file_v3MCx0
+**File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/AvgGroup2.php`
+=======
+>>>>>>> .merge_file_htupnC
 **File**: `Modules/App/app/Actions/QuestionChart/Custom/AvgGroup2.php`
+>>>>>>> .merge_file_WNmCXE
 
 **Lines**: 107
 
@@ -363,8 +454,15 @@ Argument #1 ($dataClass) must be of type string, null given
 **Stack Trace**:
 ```
 #0 vendor/spatie/laravel-data/src/DataPipes/CastPropertiesDataPipe.php:113
+<<<<<<< .merge_file_D5wfC7
 #1 Modules/Quaeris/app/Actions/QuestionChart/Custom/MailResponseRate.php:50
+=======
+<<<<<<< .merge_file_v3MCx0
+#1 Modules/Quaeris/app/Actions/QuestionChart/Custom/MailResponseRate.php:50
+=======
+>>>>>>> .merge_file_htupnC
 #1 Modules/App/app/Actions/QuestionChart/Custom/MailResponseRate.php:50
+>>>>>>> .merge_file_WNmCXE
 ```
 
 **Fix**:
@@ -490,12 +588,30 @@ return new AnswersChartData(answers: $answersArray);
 **Error Message**:
 ```
 SQLSTATE[42S02]: Base table or view not found: 1146
+<<<<<<< .merge_file_D5wfC7
 Table 'quaeris_survey.contacts' doesn't exist
 ```
 
 **Root Cause**: 
 - `contacts` table exists in `quaeris_data` database
 - Query was using `limesurvey` connection (aka `quaeris_survey`)
+=======
+<<<<<<< .merge_file_v3MCx0
+Table 'quaeris_survey.contacts' doesn't exist
+```
+
+**Root Cause**: 
+- `contacts` table exists in `quaeris_data` database
+- Query was using `limesurvey` connection (aka `quaeris_survey`)
+=======
+Table 'app_survey.contacts' doesn't exist
+```
+
+**Root Cause**: 
+- `contacts` table exists in `app_data` database
+- Query was using `limesurvey` connection (aka `app_survey`)
+>>>>>>> .merge_file_WNmCXE
+>>>>>>> .merge_file_htupnC
 - Cross-database joins not supported without special config
 
 **Problematic Code**:
@@ -684,8 +800,15 @@ $footer = sprintf(
 
 ```
 ┌─────────────────────┐     ┌─────────────────────┐
+<<<<<<< .merge_file_D5wfC7
 │   quaeris_data      │     │     limesurvey      │
+=======
+<<<<<<< .merge_file_v3MCx0
+│   quaeris_data      │     │     limesurvey      │
+=======
+>>>>>>> .merge_file_htupnC
 │   app_data      │     │     limesurvey      │
+>>>>>>> .merge_file_WNmCXE
 │   (MySQL)           │     │     (MySQL)         │
 ├─────────────────────┤     ├─────────────────────┤
 │ contacts            │     │ lime_survey_{sid}   │
@@ -706,17 +829,30 @@ $footer = sprintf(
 ```php
 // config/database.php
 'connections' => [
+<<<<<<< .merge_file_v3MCx0
+    'quaeris' => [
+        'driver' => 'mysql',
+        'database' => 'quaeris_data',
+=======
     'this-project' => [
         'driver' => 'mysql',
         'database' => 'app_data',
+>>>>>>> .merge_file_WNmCXE
         'host' => '127.0.0.1',
         // ...
     ],
     
     'limesurvey' => [
         'driver' => 'mysql',
+<<<<<<< .merge_file_D5wfC7
         'database' => 'quaeris_survey', // aka limesurvey
+=======
+<<<<<<< .merge_file_v3MCx0
+        'database' => 'quaeris_survey', // aka limesurvey
+=======
+>>>>>>> .merge_file_htupnC
         'database' => 'app_survey', // aka limesurvey
+>>>>>>> .merge_file_WNmCXE
         'host' => '127.0.0.1',
         // ...
     ],
@@ -726,10 +862,17 @@ $footer = sprintf(
 ### Model Configuration
 
 ```php
+<<<<<<< .merge_file_v3MCx0
+// Modules/Quaeris/Models/Contact.php
+class Contact extends Model
+{
+    protected $connection = 'quaeris';
+=======
 // Modules/App/Models/Contact.php
 class Contact extends Model
 {
     protected $connection = 'this-project';
+>>>>>>> .merge_file_WNmCXE
     protected $table = 'contacts';
 }
 
@@ -903,8 +1046,15 @@ it('calculates mail response rate correctly', function (): void {
 - `.kilo/memories/session-2026-03-17-custom-charts.md`
 
 ### GitHub
+<<<<<<< .merge_file_D5wfC7
 - Issue #97: https://github.com/laraxot/base_quaeris_fila5_mono/issues/97
+=======
+<<<<<<< .merge_file_v3MCx0
+- Issue #97: https://github.com/laraxot/base_quaeris_fila5_mono/issues/97
+=======
+>>>>>>> .merge_file_htupnC
 - Issue #97: https://github.com/laraxot/base_ptvx_fila5_mono/issues/97
+>>>>>>> .merge_file_WNmCXE
 
 ### External Resources
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data)

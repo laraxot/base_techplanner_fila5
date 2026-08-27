@@ -26,10 +26,19 @@ namespace Modules\Notify\Tests\Unit\Models;
 use Modules\Notify\Database\Factories\ContactFactory;
 use Modules\Notify\Models\Contact;
 use Modules\Notify\Tests\TestCase;
+<<<<<<< .merge_file_Hh9e1F
+=======
+use PHPUnit\Framework\Assert;
+<<<<<<< .merge_file_eOKSdW
+
+uses(TestCase::class);
+=======
+>>>>>>> .merge_file_Gd0HRf
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class)->group('notify-db');
+>>>>>>> .merge_file_URJ0ms
 
 beforeEach(function (): void {
     /** @var TestCase $this */
@@ -67,7 +76,11 @@ describe('Contact PartOne', function (): void {
             'duplicate_count' => 0,
             'order_column' => 1,
         ]);
+<<<<<<< .merge_file_eOKSdW
+        \assertNotifyTableHas('contacts', [
+=======
         XotBasePest::assertTableHas('notify', 'contacts', [
+>>>>>>> .merge_file_URJ0ms
             'id' => $contact->id,
             'model_type' => 'App\Models\User',
             'model_id' => '123',
@@ -95,7 +108,15 @@ describe('Contact PartOne', function (): void {
     });
 
     test('_has_correct_fillable_fields', function (): void {
+<<<<<<< .merge_file_Hh9e1F
         $contact = new Contact();
+=======
+<<<<<<< .merge_file_eOKSdW
+        $contact = new Contact();
+=======
+        $contact = new Contact;
+>>>>>>> .merge_file_URJ0ms
+>>>>>>> .merge_file_Gd0HRf
 
         $expectedFillable = [
             'model_id',
@@ -115,7 +136,15 @@ describe('Contact PartOne', function (): void {
     });
 
     test('_has_correct_casts', function (): void {
+<<<<<<< .merge_file_Hh9e1F
         $contact = new Contact();
+=======
+<<<<<<< .merge_file_eOKSdW
+        $contact = new Contact();
+=======
+        $contact = new Contact;
+>>>>>>> .merge_file_URJ0ms
+>>>>>>> .merge_file_Gd0HRf
 
         $expectedCasts = [
             'id' => 'string',
@@ -140,7 +169,11 @@ describe('Contact PartOne', function (): void {
             'contact_type' => 'phone',
             'value' => '+393331234567',
         ]);
+<<<<<<< .merge_file_eOKSdW
+        \assertNotifyTableHas('contacts', [
+=======
         XotBasePest::assertTableHas('notify', 'contacts', [
+>>>>>>> .merge_file_URJ0ms
             'id' => $contact->id,
             'model_type' => 'App\Models\User',
             'model_id' => '123',
@@ -189,7 +222,11 @@ describe('Contact PartOne', function (): void {
             'duplicate_count' => 1,
             'order_column' => 2,
         ]);
+<<<<<<< .merge_file_eOKSdW
+        \assertNotifyTableHas('contacts', [
+=======
         XotBasePest::assertTableHas('notify', 'contacts', [
+>>>>>>> .merge_file_URJ0ms
             'id' => $contact->id,
             'model_type' => 'App\Models\Company',
             'model_id' => '789',
@@ -223,6 +260,7 @@ describe('Contact PartOne', function (): void {
     });
 
     test('_can_update_contact', function (): void {
+        /** @var TestCase $this */
         $contact = ContactFactory::new()->createOne([
             'model_type' => 'App\Models\User',
             'model_id' => '123',
@@ -243,7 +281,11 @@ describe('Contact PartOne', function (): void {
             'verified_at' => now(),
             'token' => 'new-token-123',
         ]);
+<<<<<<< .merge_file_eOKSdW
+        \assertNotifyTableHas('contacts', [
+=======
         XotBasePest::assertTableHas('notify', 'contacts', [
+>>>>>>> .merge_file_URJ0ms
             'id' => $contact->id,
             'value' => 'new@example.com',
             'first_name' => 'New Name',
@@ -273,6 +315,7 @@ describe('Contact PartOne', function (): void {
     });
 
     test('_can_find_by_contact_type', function (): void {
+        /** @var TestCase $this */
         ContactFactory::new()->createOne([
             'model_type' => 'App\Models\User',
             'model_id' => '123',
@@ -304,6 +347,7 @@ describe('Contact PartOne', function (): void {
     });
 
     test('_can_find_by_user_id', function (): void {
+        /** @var TestCase $this */
         ContactFactory::new()->createOne([
             'model_type' => 'App\Models\User',
             'model_id' => '123',
@@ -356,5 +400,12 @@ describe('Contact PartOne', function (): void {
         Assert::assertEquals($contact->id, $foundContact->id);
         Assert::assertEquals('test@example.com', $foundContact->value);
     });
+<<<<<<< .merge_file_Hh9e1F
 
+=======
+<<<<<<< .merge_file_eOKSdW
+
+=======
+>>>>>>> .merge_file_URJ0ms
+>>>>>>> .merge_file_Gd0HRf
 });

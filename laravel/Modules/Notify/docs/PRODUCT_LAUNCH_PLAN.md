@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_NIXKU2
+=======
 ---
 title: "Notify Module - Product Launch Plan"
 module: notify
@@ -7,6 +9,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+>>>>>>> .merge_file_LerDWi
 # Notify Module - Product Launch Plan
 
 **Module:** Notify  

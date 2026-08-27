@@ -4,8 +4,15 @@ type: concept
 tags: [roadmap, project]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< .merge_file_NxKAEd
 qmd: "roadmap-project 🚀 roadmap generale - fixcity platform"
+=======
+<<<<<<< .merge_file_IEKpWI
+qmd: "roadmap-project 🚀 roadmap generale - fixcity platform"
+=======
+>>>>>>> .merge_file_Ok929D
 qmd: "roadmap-project 🚀 roadmap generale - ptv platform"
+>>>>>>> .merge_file_cic7Tf
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:

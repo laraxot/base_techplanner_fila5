@@ -39,8 +39,11 @@ use Spatie\Translatable\HasTranslations;
  * @property Carbon $created_at
  * @property Carbon $updated_at
  * @property Carbon|null $deleted_at
+ *
  * @property-read string $channels_label
+ *
  * @property NotificationTypeEnum $type
+ *
  * @property-read ProfileContract|null $creator
  * @property-read int|null $logs_count
  * @property-read MediaCollection<int, Media> $media
@@ -56,8 +59,18 @@ use Spatie\Translatable\HasTranslations;
  * @method static Builder<static>|NotificationTemplate newModelQuery()
  * @method static Builder<static>|NotificationTemplate newQuery()
  * @method static Builder<static>|NotificationTemplate query()
+<<<<<<< .merge_file_pcYVHF
  * @method static Builder<static>|NotificationTemplate whereJsonContainsLocale(string $column, string $locale, ?mixed $value, string $operand = '=')
  * @method static Builder<static>|NotificationTemplate whereJsonContainsLocales(string $column, array<int, string> $locales, ?mixed $value, string $operand = '=')
+=======
+<<<<<<< .merge_file_awvSq8
+ * @method static Builder<static>|NotificationTemplate whereJsonContainsLocale(string $column, string $locale, ?mixed $value, string $operand = '=')
+ * @method static Builder<static>|NotificationTemplate whereJsonContainsLocales(string $column, array<int, string> $locales, ?mixed $value, string $operand = '=')
+=======
+ * @method static Builder<static>|NotificationTemplate whereJsonContainsLocale(string $column, string $locale, mixed $value, string $operand = '=')
+ * @method static Builder<static>|NotificationTemplate whereJsonContainsLocales(string $column, array<int, string> $locales, mixed $value, string $operand = '=')
+>>>>>>> .merge_file_pJOobG
+>>>>>>> .merge_file_uhrAos
  * @method static Builder<static>|NotificationTemplate whereLocale(string $column, string $locale)
  * @method static Builder<static>|NotificationTemplate whereLocales(string $column, array<int, string> $locales)
  *
@@ -199,6 +212,7 @@ class NotificationTemplate extends BaseModel implements HasMedia
      * Compile the template with the given data.
      *
      * @param  array<string, mixed>  $data  The data to compile the template with
+     *
      * @return array{subject: string, body_html: string|null, body_text: string|null}
      */
     public function compile(array $data = []): array
@@ -239,6 +253,7 @@ class NotificationTemplate extends BaseModel implements HasMedia
      * Preview the template with the given data.
      *
      * @param  array<string, mixed>  $data  Additional data to merge with preview data
+     *
      * @return array{subject: string, body_html: string|null, body_text: string|null}
      */
     public function preview(array $data = []): array
@@ -253,11 +268,20 @@ class NotificationTemplate extends BaseModel implements HasMedia
 
     /**
      * Scope a query to only include active templates.
+<<<<<<< .merge_file_awvSq8
+     */
+    /**
+     * @param  Builder<static>  $query
+     *
+     * @return Builder<static>
+     */
+=======
      */
     /**
      * @param  Builder<static>  $query
      * @return Builder<static>
      */
+>>>>>>> .merge_file_pJOobG
     public function scopeActive(Builder $query): Builder
     {
         return $query->where('is_active', true);
@@ -265,11 +289,20 @@ class NotificationTemplate extends BaseModel implements HasMedia
 
     /**
      * Scope a query to only include templates for a specific channel.
+<<<<<<< .merge_file_awvSq8
+     */
+    /**
+     * @param  Builder<static>  $query
+     *
+     * @return Builder<static>
+     */
+=======
      */
     /**
      * @param  Builder<static>  $query
      * @return Builder<static>
      */
+>>>>>>> .merge_file_pJOobG
     public function scopeForChannel(Builder $query, string $channel): Builder
     {
         return $query->whereJsonContains('channels', $channel);
@@ -277,11 +310,20 @@ class NotificationTemplate extends BaseModel implements HasMedia
 
     /**
      * Scope a query to only include templates for a specific category.
+<<<<<<< .merge_file_awvSq8
+     */
+    /**
+     * @param  Builder<static>  $query
+     *
+     * @return Builder<static>
+     */
+=======
      */
     /**
      * @param  Builder<static>  $query
      * @return Builder<static>
      */
+>>>>>>> .merge_file_pJOobG
     public function scopeForCategory(Builder $query, string $category): Builder
     {
         return $query->where('category', $category);

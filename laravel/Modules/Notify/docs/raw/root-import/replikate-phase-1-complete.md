@@ -133,8 +133,15 @@ laravel/Themes/Sixteen/
 │   ├── prompts/
 │   │   └── replikate.txt              ← PROTOCOL
 │   └── design-comuni/
+<<<<<<< .merge_file_loXf5G
 │       ├── 00-INDEX.md                ← HUB
+=======
+<<<<<<< .merge_file_DmWhSD
+│       ├── 00-INDEX.md                ← HUB
+=======
+>>>>>>> .merge_file_u4jlud
 │       ├── 00-index.md                ← HUB
+>>>>>>> .merge_file_r64LYW
 │       ├── pages/
 │       │   └── homepage-structure-diff.md
 │       └── screenshots/
@@ -147,8 +154,15 @@ laravel/Themes/Sixteen/
 │   └── js/
 │
 └── config/
+<<<<<<< .merge_file_loXf5G
     └── local/fixcity/database/content/
+=======
+<<<<<<< .merge_file_DmWhSD
+    └── local/fixcity/database/content/
+=======
+>>>>>>> .merge_file_u4jlud
     └── local/laraxot/database/content/
+>>>>>>> .merge_file_r64LYW
         └── pages/tests.homepage.json
 
 bashscripts/design-analysis/
@@ -247,8 +261,15 @@ Next AI agent can immediately:
 
 - **Protocol**: `laravel/Themes/Sixteen/docs/prompts/replikate.txt`
 - **Analysis**: `laravel/Themes/Sixteen/docs/design-comuni/pages/homepage-structure-diff.md`
+<<<<<<< .merge_file_loXf5G
 - **Navigation**: `laravel/Themes/Sixteen/docs/design-comuni/00-INDEX.md`
+=======
+<<<<<<< .merge_file_DmWhSD
+- **Navigation**: `laravel/Themes/Sixteen/docs/design-comuni/00-INDEX.md`
+=======
+>>>>>>> .merge_file_u4jlud
 - **Navigation**: `laravel/Themes/Sixteen/docs/design-comuni/00-index.md`
+>>>>>>> .merge_file_r64LYW
 - **Automation**: `bashscripts/design-analysis/replikate-workflow.sh`
 
 ---

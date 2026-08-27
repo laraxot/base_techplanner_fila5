@@ -63,8 +63,15 @@ Buongiorno! Ecco tutto quello che abbiamo fatto ieri e cosa fare oggi.
 
 **Comando verifica**:
 ```bash
+<<<<<<< .merge_file_2hROrL
 cd /var/www/_bases/base_fixcity_fila5_mono/laravel
+=======
+<<<<<<< .merge_file_cnQYt1
+cd /var/www/_bases/base_fixcity_fila5_mono/laravel
+=======
+>>>>>>> .merge_file_m8dRl3
 cd /var/www/_bases/base_ptv_fila5_mono/laravel
+>>>>>>> .merge_file_ZzjHRF
 ./vendor/bin/phpstan analyse Modules/Xot --memory-limit=-1
 ```
 
@@ -132,8 +139,15 @@ cd /var/www/_bases/base_ptv_fila5_mono/laravel
 
 **Verifica Completa**:
 ```bash
+<<<<<<< .merge_file_2hROrL
 cd /var/www/_bases/base_fixcity_fila5_mono/laravel
+=======
+<<<<<<< .merge_file_cnQYt1
+cd /var/www/_bases/base_fixcity_fila5_mono/laravel
+=======
+>>>>>>> .merge_file_m8dRl3
 cd /var/www/_bases/base_ptv_fila5_mono/laravel
+>>>>>>> .merge_file_ZzjHRF
 ./vendor/bin/phpstan analyse Modules --memory-limit=-1
 ```
 
@@ -207,7 +221,13 @@ php artisan test --filter=BaseUserTest
 - ❌ Non usare `->label()`, `->placeholder()`, `->tooltip()`
 
 ### ✅ Sempre Fare
+<<<<<<< .merge_file_2hROrL
 - ✅ Eseguire da `/var/www/_bases/base_fixcity_fila5_mono/laravel/`
+=======
+<<<<<<< .merge_file_cnQYt1
+- ✅ Eseguire da `/var/www/_bases/base_fixcity_fila5_mono/laravel/`
+=======
+>>>>>>> .merge_file_m8dRl3
 - ✅ Eseguire da `/var/www/_bases/base_ptv_fila5_mono/laravel/`
 - ✅ Verificare ogni fix con PHPStan
 - ✅ Usare sempre classi XotBase
@@ -464,6 +484,7 @@ php artisan test --filter=BaseUserTest
 
 ### ✅ Sempre Fare
 - ✅ Eseguire da `/var/www/_bases/base_ptv_fila5_mono/laravel/`
+>>>>>>> .merge_file_ZzjHRF
 - ✅ Verificare ogni fix con PHPStan
 - ✅ Usare sempre classi XotBase
 - ✅ Aggiornare docs dopo ogni correzione

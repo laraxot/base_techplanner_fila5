@@ -556,6 +556,8 @@ public function getTableFilters(): array
 4. Implementazione ColumnBuilder
 
 **Domande?** Chiedi alla Super Mucca! 🐄⚡
+<<<<<<< .merge_file_llkLUi
+=======
 
 ---
 
@@ -1733,3 +1735,4 @@ Dopo analisi approfondita con **dati REALI dal codebase**, la Super Mucca Divina
 *Data: 2025-10-15*  
 *Status: READY FOR PRODUCTION*
 
+>>>>>>> .merge_file_1hQzyc

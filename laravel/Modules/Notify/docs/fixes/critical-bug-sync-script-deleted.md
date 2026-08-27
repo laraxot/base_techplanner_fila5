@@ -85,8 +85,15 @@ export -f is_interactive_shell
 
 ```bash
 # Clona il repo separato
+<<<<<<< .merge_file_09dzJQ
 cd /var/www/_bases/base_fixcity_fila5
+=======
+<<<<<<< .merge_file_mm9jee
+cd /var/www/_bases/base_fixcity_fila5
+=======
+>>>>>>> .merge_file_TJz6GL
 cd /var/www/_bases/base_ptvx_fila5
+>>>>>>> .merge_file_NzpXXG
 rm -rf bashscripts
 git clone git@github.com:laraxot/bashscripts_fila5.git bashscripts
 

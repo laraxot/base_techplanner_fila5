@@ -25,9 +25,19 @@ related:
 **Dopo**: Carico solo what's needed (~2K startup)
 
 \`\`\`diff
+<<<<<<< .merge_file_Q8aLVD
 <<<<<<< .merge_file_TCTsMC
 - 150+ rules embeddate in AGENTS.md
 =======
+=======
+<<<<<<< .merge_file_wztn4y
+- 150+ rules embeddate in AGENTS.md
+=======
+<<<<<<< .merge_file_TCTsMC
+- 150+ rules embeddate in AGENTS.md
+=======
+>>>>>>> .merge_file_XGQE4A
+>>>>>>> .merge_file_QohZCA
 - 150+ rules embeddate in agents.md
 >>>>>>> .merge_file_rzQZtm
 + 0 rules embeddate — tutte on-demand
@@ -54,9 +64,19 @@ related:
 
 ### 4. Wiki Indici Locali
 
+<<<<<<< .merge_file_Q8aLVD
 <<<<<<< .merge_file_TCTsMC
 Ogni modulo ha i propri `rules/skills/commands/memories/INDEX.md`:
 =======
+=======
+<<<<<<< .merge_file_wztn4y
+Ogni modulo ha i propri `rules/skills/commands/memories/INDEX.md`:
+=======
+<<<<<<< .merge_file_TCTsMC
+Ogni modulo ha i propri `rules/skills/commands/memories/INDEX.md`:
+=======
+>>>>>>> .merge_file_XGQE4A
+>>>>>>> .merge_file_QohZCA
 Ogni modulo ha i propri `rules/skills/commands/memories/index.md`:
 >>>>>>> .merge_file_rzQZtm
 - Ricerca più rapida (scope limitato)

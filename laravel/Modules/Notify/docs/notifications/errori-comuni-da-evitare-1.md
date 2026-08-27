@@ -1,16 +1,36 @@
 ---
+<<<<<<< .merge_file_k2hWr2
 <<<<<<< .merge_file_4W2NSO
 title: "Errori Comuni da Evitare nelle Implementazioni di Moduli Quaeris"
 =======
+=======
+<<<<<<< .merge_file_62pAwP
+title: "Errori Comuni da Evitare nelle Implementazioni di Moduli Quaeris"
+=======
+<<<<<<< .merge_file_4W2NSO
+title: "Errori Comuni da Evitare nelle Implementazioni di Moduli Quaeris"
+=======
+>>>>>>> .merge_file_fHveq3
+>>>>>>> .merge_file_Zu3nua
 title: "Errori Comuni da Evitare nelle Implementazioni di Moduli App"
 >>>>>>> .merge_file_44sI9L
 type: concept
 tags: [errori, comuni, evitare]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< .merge_file_k2hWr2
 <<<<<<< .merge_file_4W2NSO
 qmd: "errori-comuni-da-evitare-1 errori comuni da evitare nelle implementazioni di moduli quaeris"
 =======
+=======
+<<<<<<< .merge_file_62pAwP
+qmd: "errori-comuni-da-evitare-1 errori comuni da evitare nelle implementazioni di moduli quaeris"
+=======
+<<<<<<< .merge_file_4W2NSO
+qmd: "errori-comuni-da-evitare-1 errori comuni da evitare nelle implementazioni di moduli quaeris"
+=======
+>>>>>>> .merge_file_fHveq3
+>>>>>>> .merge_file_Zu3nua
 qmd: "errori-comuni-da-evitare-1 errori comuni da evitare nelle implementazioni di moduli this-project"
 >>>>>>> .merge_file_44sI9L
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
@@ -26,19 +46,40 @@ related:
   - "./notifications-implementation-guide-1.md"
 ---
 
+<<<<<<< .merge_file_k2hWr2
 <<<<<<< .merge_file_4W2NSO
 # Errori Comuni da Evitare nelle Implementazioni di Moduli Quaeris
 =======
+=======
+<<<<<<< .merge_file_62pAwP
+# Errori Comuni da Evitare nelle Implementazioni di Moduli Quaeris
+=======
+<<<<<<< .merge_file_4W2NSO
+# Errori Comuni da Evitare nelle Implementazioni di Moduli Quaeris
+=======
+>>>>>>> .merge_file_fHveq3
+>>>>>>> .merge_file_Zu3nua
 # Errori Comuni da Evitare nelle Implementazioni di Moduli App
 >>>>>>> .merge_file_44sI9L
 
 ## Errori di Struttura Directory e Namespace
 
 1. **Errore di Case nelle Directory**
+<<<<<<< .merge_file_k2hWr2
+=======
+<<<<<<< .merge_file_62pAwP
+- ❌ ERRATO: `/var/www/html/Quaeris/laravel/Modules/Notify/App/Actions/`
+   - ✅ CORRETTO: `/var/www/html/Quaeris/laravel/Modules/Notify/app/Actions/`
+=======
+>>>>>>> .merge_file_Zu3nua
 <<<<<<< .merge_file_4W2NSO
 - ❌ ERRATO: `/var/www/html/Quaeris/laravel/Modules/Notify/App/Actions/`
    - ✅ CORRETTO: `/var/www/html/Quaeris/laravel/Modules/Notify/app/Actions/`
 =======
+<<<<<<< .merge_file_k2hWr2
+=======
+>>>>>>> .merge_file_fHveq3
+>>>>>>> .merge_file_Zu3nua
 - ❌ ERRATO: `/var/www/_bases/base_ptvx_fila5/laravel/Modules/Notify/App/Actions/`
    - ✅ CORRETTO: `/var/www/_bases/base_ptvx_fila5/laravel/Modules/Notify/app/Actions/`
 >>>>>>> .merge_file_44sI9L

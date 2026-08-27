@@ -11,10 +11,19 @@ use Modules\Notify\Contracts\WhatsAppProviderActionInterface;
 use Modules\Notify\Factories\TelegramActionFactory;
 use Modules\Notify\Factories\WhatsAppActionFactory;
 use Modules\Notify\Tests\TestCase;
+<<<<<<< .merge_file_leAf04
+=======
+use PHPUnit\Framework\Assert;
+<<<<<<< .merge_file_HjBZEd
+
+uses(TestCase::class);
+=======
+>>>>>>> .merge_file_HDWeKM
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class)->group('notify-db');
+>>>>>>> .merge_file_2NuGvP
 
 test('sms action resolves default smsfactor driver instance', function () {
     config()->set('sms.default', 'smsfactor');
@@ -35,8 +44,16 @@ test('telegram action factory creates official driver instance', function () {
 });
 
 test('telegram action factory throws for unsupported driver', function () {
+<<<<<<< .merge_file_HjBZEd
+    \assertNotifyThrows(
+=======
     XotBasePest::assertThrows(
+<<<<<<< .merge_file_leAf04
         fn () => (new TelegramActionFactory())->create('unsupported'),
+=======
+>>>>>>> .merge_file_2NuGvP
+        fn () => (new TelegramActionFactory)->create('unsupported'),
+>>>>>>> .merge_file_HDWeKM
         \Exception::class,
     );
 });
@@ -52,8 +69,16 @@ test('whatsapp action factory creates twilio driver instance', function () {
 });
 
 test('whatsapp action factory throws for unsupported driver', function () {
+<<<<<<< .merge_file_HjBZEd
+    \assertNotifyThrows(
+=======
     XotBasePest::assertThrows(
+<<<<<<< .merge_file_leAf04
         fn () => (new WhatsAppActionFactory())->create('unsupported'),
+=======
+>>>>>>> .merge_file_2NuGvP
+        fn () => (new WhatsAppActionFactory)->create('unsupported'),
+>>>>>>> .merge_file_HDWeKM
         \Exception::class,
     );
 });

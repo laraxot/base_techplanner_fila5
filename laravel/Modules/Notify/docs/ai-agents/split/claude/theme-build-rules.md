@@ -6,8 +6,15 @@
 
 ### Required Commands (ALWAYS):
 ```bash
+<<<<<<< .merge_file_9uIuZk
 cd /var/www/html/_bases/base_fixcity_fila5_mono/laravel/Themes/Sixteen
+=======
+<<<<<<< .merge_file_dcBhY4
+cd /var/www/html/_bases/base_fixcity_fila5_mono/laravel/Themes/Sixteen
+=======
+>>>>>>> .merge_file_vP9EqS
 cd /var/www/html/_bases/base_ptvx_fila5_mono/laravel/Themes/Sixteen
+>>>>>>> .merge_file_fVlkcL
 npm run build
 npm run copy
 ```
@@ -37,9 +44,17 @@ This is a fundamental rule that must NEVER be forgotten when working with themes
 
 ## Cross-References
 
+<<<<<<< .merge_file_9uIuZk
 - ← [CLAUDE Index](INDEX.md) — All Laravel Boost guidelines
 - ← [Main AI Docs Index](../INDEX.md) — Master index
+=======
+<<<<<<< .merge_file_dcBhY4
+- ← [CLAUDE Index](INDEX.md) — All Laravel Boost guidelines
+- ← [Main AI Docs Index](../INDEX.md) — Master index
+=======
+>>>>>>> .merge_file_vP9EqS
 - ← [CLAUDE Index](index.md) — All Laravel Boost guidelines
 - ← [Main AI Docs Index](../index.md) — Master index
+>>>>>>> .merge_file_fVlkcL
 - ← [../../../../docs/CLAUDE.md](../../../../docs/../../../../docs/CLAUDE.md) — Original source
 

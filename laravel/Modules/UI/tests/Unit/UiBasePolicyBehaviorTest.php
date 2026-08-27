@@ -16,11 +16,19 @@ use PHPUnit\Framework\Assert;
 /**
  * Narrows Mockery's shouldReceive() union return type for PHPStan.
  *
+<<<<<<< .merge_file_8Rbn8d
  * @param  LegacyMockInterface|MockInterface  $mock
  */
 function expectMethod($mock, string $method): CompositeExpectation
 {
     /** @var CompositeExpectation $expectation */
+=======
+ * @param  \Mockery\LegacyMockInterface|\Mockery\MockInterface  $mock
+ */
+function expectMethod($mock, string $method): \Mockery\ExpectationInterface
+{
+    /** @var \Mockery\ExpectationInterface $expectation */
+>>>>>>> .merge_file_pG4XrK
     $expectation = $mock->shouldReceive($method);
 
     return $expectation;

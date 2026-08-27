@@ -23,10 +23,18 @@ assignees: ''
 **View Source**: `view-source:https://italia.github.io/design-comuni-pagine-statiche/sito/[page].html`
 
 ### Target Page
+<<<<<<< .merge_file_1XWm1u
 **FixCity**: http://fixcity.local/it/tests/[slug]  
 **View Source**: `view-source:http://fixcity.local/it/tests/[slug]`
+=======
+<<<<<<< .merge_file_JUW6FR
+**FixCity**: http://fixcity.local/it/tests/[slug]  
+**View Source**: `view-source:http://fixcity.local/it/tests/[slug]`
+=======
+>>>>>>> .merge_file_CUzCA5
 **FixCity**: http://ptv.local/it/tests/[slug]  
 **View Source**: `view-source:http://ptv.local/it/tests/[slug]`
+>>>>>>> .merge_file_c9a2oo
 
 ### Screenshots
 <!-- Add side-by-side screenshots -->
@@ -39,8 +47,15 @@ assignees: ''
 ## Implementation Plan
 
 ### 1. Create JSON Content File
+<<<<<<< .merge_file_1XWm1u
 **File**: `laravel/config/local/fixcity/database/content/pages/tests.[slug].json`
+=======
+<<<<<<< .merge_file_JUW6FR
+**File**: `laravel/config/local/fixcity/database/content/pages/tests.[slug].json`
+=======
+>>>>>>> .merge_file_CUzCA5
 **File**: `laravel/config/local/ptv/database/content/pages/tests.[slug].json`
+>>>>>>> .merge_file_c9a2oo
 
 ```json
 {
@@ -70,8 +85,15 @@ assignees: ''
       "data": {
         "address": "Via Roma 1, FixCity",
         "phone": "+39 0123 456789",
+<<<<<<< .merge_file_1XWm1u
         "email": "info@comune.fixcity.it"
+=======
+<<<<<<< .merge_file_JUW6FR
+        "email": "info@comune.fixcity.it"
+=======
+>>>>>>> .merge_file_CUzCA5
         "email": "info@comune.ptv.it"
+>>>>>>> .merge_file_c9a2oo
       }
     }
   ]

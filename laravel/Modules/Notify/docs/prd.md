@@ -11,6 +11,8 @@ Specialized logic for Notify needs a dedicated, type-safe Module to ensure maint
 ## 🎯 Goals & Success Metrics
 - **Goal 1:** 100% PHPStan L10 compliance.
 - **Goal 2:** Seamless integration with XotBase.
+<<<<<<< .merge_file_tg1LoB
+=======
 
 ---
 
@@ -44,3 +46,4 @@ Notify module for Laraxot platform providing core functionality.
 - Pest test coverage >90%
 - Integration testing
 
+>>>>>>> .merge_file_MiyoVk

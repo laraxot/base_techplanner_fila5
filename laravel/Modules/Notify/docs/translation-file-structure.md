@@ -148,6 +148,13 @@ return [
 ```
 
 ## Riferimenti
+<<<<<<< .merge_file_VSRVe2
 - [Regole di Naming per i File di Traduzione](./translation_file_naming_rules.md)
+=======
+<<<<<<< .merge_file_jaldG4
+- [Regole di Naming per i File di Traduzione](./translation_file_naming_rules.md)
+=======
+>>>>>>> .merge_file_SpVvKV
 - [Regole di Naming per i File di Traduzione](./translation-file-naming-rules.md)
+>>>>>>> .merge_file_eGwgmM
 - [Regole Generali per le Traduzioni](../../lang/docs/translation_keys_rules.md)

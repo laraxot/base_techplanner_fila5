@@ -259,12 +259,21 @@ portandole allo stato attuale (Q4 2025) e allineandole con i progressi effettivi
 ## 📞 CONTATTI
 
 Per domande su questo aggiornamento:
+<<<<<<< .merge_file_zbwQ9j
 - **Email**: dev@fixcity.it
 - **Slack**: #fixcity-dev
 - **GitHub**: [laraxot/fixcity](https://github.com/laraxot/fixcity)
+=======
+<<<<<<< .merge_file_YGudP9
+- **Email**: dev@fixcity.it
+- **Slack**: #fixcity-dev
+- **GitHub**: [laraxot/fixcity](https://github.com/laraxot/fixcity)
+=======
+>>>>>>> .merge_file_5LewJk
 - **Email**: dev@ptv.it
 - **Slack**: #ptv-dev
 - **GitHub**: [laraxot/ptv](https://github.com/laraxot/ptv)
+>>>>>>> .merge_file_rkJBPi
 
 ---
 

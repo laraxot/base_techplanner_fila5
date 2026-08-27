@@ -36,8 +36,15 @@ related:
    - Assessment stato FixCity attuale
    - 6 gap critici identificati
    - Strategia esecuzione multi-agente
+<<<<<<< .merge_file_eHYoJW
    - Pattern traduzioni (corretto: `fixcity::segnalazione.fields.title.label`)
+=======
+<<<<<<< .merge_file_uVxMdC
+   - Pattern traduzioni (corretto: `fixcity::segnalazione.fields.title.label`)
+=======
+>>>>>>> .merge_file_Ovj5jE
    - Pattern traduzioni (corretto: `ptv::segnalazione.fields.title.label`)
+>>>>>>> .merge_file_rdFonF
    - Criteri successo e checklist
 
 2. **GSD-PHASE-1-EXECUTION.md** (19.499 caratteri)
@@ -48,8 +55,15 @@ related:
    - Timeline (15-60 min per subtask)
    - Success criteria
 
+<<<<<<< .merge_file_eHYoJW
 3. **bashscripts/docs/html/INDEX.md** (8.531 caratteri)
+=======
+<<<<<<< .merge_file_uVxMdC
+3. **bashscripts/docs/html/INDEX.md** (8.531 caratteri)
+=======
+>>>>>>> .merge_file_Ovj5jE
 3. **bashscripts/docs/html/index.md** (8.531 caratteri)
+>>>>>>> .merge_file_rdFonF
    - Documentazione strumenti HTML
    - Parity scoring (90%+ PASS, <90% WORK)
    - Troubleshooting guide
@@ -191,8 +205,15 @@ Crea: `PHASE-1-FINDINGS.md` con gap list dettagliato
 ### PASSO 3: Executor #2 applica fix (Subtask 3 & 4)
 Modifica:
 - `laravel/Themes/Sixteen/resources/views/pages/tests/[slug].blade.php`
+<<<<<<< .merge_file_eHYoJW
 - `laravel/config/local/fixcity/database/content/pages/tests.segnalazioni-elenco.json`
+=======
+<<<<<<< .merge_file_uVxMdC
+- `laravel/config/local/fixcity/database/content/pages/tests.segnalazioni-elenco.json`
+=======
+>>>>>>> .merge_file_Ovj5jE
 - `laravel/config/local/ptv/database/content/pages/tests.segnalazioni-elenco.json`
+>>>>>>> .merge_file_rdFonF
 ⏱️ ~40-60 min
 
 ### PASSO 4: Executor #1 re-verifica (Subtask 5)
@@ -215,12 +236,21 @@ Aggiorna: `00-index-1.md`
 
 ### ✅ CORRETTO
 ```blade
+<<<<<<< .merge_file_eHYoJW
 {{ trans('fixcity::segnalazione.fields.title.label') }}
 {{ trans('fixcity::segnalazione.filters.category.placeholder') }}
 {{ trans('fixcity::segnalazione.actions.submit.label') }}
+=======
+<<<<<<< .merge_file_uVxMdC
+{{ trans('fixcity::segnalazione.fields.title.label') }}
+{{ trans('fixcity::segnalazione.filters.category.placeholder') }}
+{{ trans('fixcity::segnalazione.actions.submit.label') }}
+=======
+>>>>>>> .merge_file_Ovj5jE
 {{ trans('ptv::segnalazione.fields.title.label') }}
 {{ trans('ptv::segnalazione.filters.category.placeholder') }}
 {{ trans('ptv::segnalazione.actions.submit.label') }}
+>>>>>>> .merge_file_rdFonF
 ```
 
 ### ❌ SBAGLIATO (DO NOT USE)
@@ -232,8 +262,15 @@ Aggiorna: `00-index-1.md`
 
 ### Struttura file traduzioni
 ```php
+<<<<<<< .merge_file_eHYoJW
 // laravel/lang/it/fixcity.php
+=======
+<<<<<<< .merge_file_uVxMdC
+// laravel/lang/it/fixcity.php
+=======
+>>>>>>> .merge_file_Ovj5jE
 // laravel/lang/it/ptv.php
+>>>>>>> .merge_file_rdFonF
 return [
     'segnalazione' => [
         'fields' => [
@@ -257,7 +294,13 @@ return [
 1. **[00-index-1.md](laravel/Themes/Sixteen/docs/00-index-1.md)** - Master index (sei qui, ma online)
 2. **[PHASE-1-STRATEGY.md](laravel/Themes/Sixteen/docs/PHASE-1-STRATEGY.md)** - Strategia completa (22k chars)
 3. **[GSD-PHASE-1-EXECUTION.md](laravel/Themes/Sixteen/docs/GSD-PHASE-1-EXECUTION.md)** - Piano esecuzione (19k chars)
+<<<<<<< .merge_file_eHYoJW
 4. **[bashscripts/docs/html/INDEX.md](bashscripts/docs/html/INDEX.md)** - Documentazione strumenti
+=======
+<<<<<<< .merge_file_uVxMdC
+4. **[bashscripts/docs/html/INDEX.md](bashscripts/docs/html/INDEX.md)** - Documentazione strumenti
+=======
+>>>>>>> .merge_file_Ovj5jE
 4. **[bashscripts/docs/html/index.md](bashscripts/docs/html/index.md)** - Documentazione strumenti
 
 ---
@@ -549,6 +592,7 @@ return [
 2. **[PHASE-1-STRATEGY.md](laravel/Themes/Sixteen/docs/PHASE-1-STRATEGY.md)** - Strategia completa (22k chars)
 3. **[GSD-PHASE-1-EXECUTION.md](laravel/Themes/Sixteen/docs/GSD-PHASE-1-EXECUTION.md)** - Piano esecuzione (19k chars)
 4. **[bashscripts/docs/html/index.md](bashscripts/docs/html/index.md)** - Documentazione strumenti
+>>>>>>> .merge_file_rdFonF
 
 ---
 

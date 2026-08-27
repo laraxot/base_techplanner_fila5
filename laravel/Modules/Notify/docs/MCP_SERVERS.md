@@ -42,8 +42,15 @@ MCP (Model Context Protocol) servers provide AI assistants with persistent memor
 ### filesystem
 - **Type**: File operations
 - **Package**: `@modelcontextprotocol/server-filesystem`
+<<<<<<< .merge_file_kPL4MM
 - **Scope**: `/var/www/_bases/base_fixcity_fila5`
+=======
+<<<<<<< .merge_file_GfQ9Ng
+- **Scope**: `/var/www/_bases/base_fixcity_fila5`
+=======
+>>>>>>> .merge_file_bTxfHj
 - **Scope**: `/var/www/_bases/base_ptv_fila5`
+>>>>>>> .merge_file_hOFcDa
 - **Use**: Read/write files, search directories, explore project structure
 
 ### sqlite
@@ -90,8 +97,15 @@ MCP (Model Context Protocol) servers provide AI assistants with persistent memor
 - **Type**: AI Memory Infrastructure
 - **CLI**: `supermemory` (npm global)
 - **API Key**: Configured in `.mcp.json`
+<<<<<<< .merge_file_kPL4MM
 - **Container Tag**: `fixcity`
+=======
+<<<<<<< .merge_file_GfQ9Ng
+- **Container Tag**: `fixcity`
+=======
+>>>>>>> .merge_file_bTxfHj
 - **Container Tag**: `ptv`
+>>>>>>> .merge_file_hOFcDa
 - **Use**: 
   - Persistent project context across conversations
   - Semantic search across project documentation
@@ -109,14 +123,23 @@ MCP (Model Context Protocol) servers provide AI assistants with persistent memor
 - **CLI**: `qmd` (npm global)
 - **Use**: Hybrid search over markdown files (BM25 + vector + reranking)
 - **Collections**:
+<<<<<<< .merge_file_kPL4MM
+=======
+<<<<<<< .merge_file_GfQ9Ng
+>>>>>>> .merge_file_bTxfHj
   - `fixcity-wiki` → `./docs/wiki`
   - `fixcity-docs` → `./docs`
   - `fixcity-modules` → `./Modules`
   - `fixcity-themes` → `./Themes`
+<<<<<<< .merge_file_kPL4MM
+=======
+=======
+>>>>>>> .merge_file_bTxfHj
   - `ptv-wiki` → `./docs/wiki`
   - `ptv-docs` → `./docs`
   - `ptv-modules` → `./Modules`
   - `ptv-themes` → `./Themes`
+>>>>>>> .merge_file_hOFcDa
 - **Commands**:
   - `qmd search "query"` - Full-text search
   - `qmd query "query"` - Hybrid search with reranking
@@ -159,20 +182,41 @@ supermemory whoami
 
 ### Add Project Context
 ```bash
+<<<<<<< .merge_file_kPL4MM
 supermemory add --tag fixcity --file .supermemory/fixcity-context.md
+=======
+<<<<<<< .merge_file_GfQ9Ng
+supermemory add --tag fixcity --file .supermemory/fixcity-context.md
+=======
+>>>>>>> .merge_file_bTxfHj
 supermemory add --tag ptv --file .supermemory/ptv-context.md
+>>>>>>> .merge_file_hOFcDa
 ```
 
 ### Search Memories
 ```bash
+<<<<<<< .merge_file_kPL4MM
 supermemory search "FixCity architecture" --tag fixcity
+=======
+<<<<<<< .merge_file_GfQ9Ng
+supermemory search "FixCity architecture" --tag fixcity
+=======
+>>>>>>> .merge_file_bTxfHj
 supermemory search "FixCity architecture" --tag ptv
+>>>>>>> .merge_file_hOFcDa
 ```
 
 ### Get Profile
 ```bash
+<<<<<<< .merge_file_kPL4MM
 supermemory profile --tag fixcity --query "project preferences"
+=======
+<<<<<<< .merge_file_GfQ9Ng
+supermemory profile --tag fixcity --query "project preferences"
+=======
+>>>>>>> .merge_file_bTxfHj
 supermemory profile --tag ptv --query "project preferences"
+>>>>>>> .merge_file_hOFcDa
 ```
 
 ## Module-Specific Usage

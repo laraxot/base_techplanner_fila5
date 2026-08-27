@@ -10,6 +10,13 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
 use Modules\Notify\Actions\NotificationManager;
+<<<<<<< .merge_file_0dhKmV
+use Modules\Notify\Providers\NotifyServiceProvider;
+use Modules\User\Models\User;
+use Modules\User\Providers\UserServiceProvider;
+use Modules\Xot\Tests\XotBaseTestCase;
+use PHPUnit\Framework\Assert;
+=======
 use Modules\Notify\Models\NotificationType;
 use Modules\Notify\Models\NotifyTheme;
 use Modules\Notify\Models\NotifyThemeable;
@@ -23,6 +30,7 @@ use ReflectionClass;
 use ReflectionProperty;
 
 use function Safe\file_get_contents;
+>>>>>>> .merge_file_QMft0L
 
 /**
  * Base test case for Notify module.
@@ -36,6 +44,19 @@ use function Safe\file_get_contents;
  */
 abstract class TestCase extends XotBaseTestCase
 {
+<<<<<<< .merge_file_0dhKmV
+=======
+    /**
+     * @return array<string, mixed>
+     */
+    public static function assertNotifyArray(mixed $value): array
+    {
+        Assert::assertIsArray($value);
+
+        /** @var array<string, mixed> $value */
+        return $value;
+    }
+
     /**
      * @template T of object
      *
@@ -115,6 +136,7 @@ abstract class TestCase extends XotBaseTestCase
         return $theme;
     }
 
+>>>>>>> .merge_file_QMft0L
     use DatabaseTransactions;
 
     public NotificationManager $notificationManager;
@@ -128,6 +150,25 @@ abstract class TestCase extends XotBaseTestCase
 
         parent::setUp();
 
+<<<<<<< .merge_file_0dhKmV
+        $database = database_path('fixcity_data.sqlite');
+
+        /** @var array<string, array<string, mixed>> $connections */
+        $connections = config('database.connections', []);
+
+        foreach (array_keys($connections) as $connection) {
+            if (config("database.connections.{$connection}.driver") !== 'sqlite') {
+                continue;
+            }
+
+            $this->app['config']->set("database.connections.{$connection}.database", $database);
+            DB::purge($connection);
+        }
+
+        config(['auth.providers.users.model' => User::class]);
+    }
+
+=======
         config(['auth.providers.users.model' => User::class]);
 
         if ($this->shouldSkipForMissingNotifyDb()) {
@@ -250,6 +291,7 @@ abstract class TestCase extends XotBaseTestCase
         return false;
     }
 
+>>>>>>> .merge_file_QMft0L
     protected function getPackageProviders(Application $app): array
     {
         return [

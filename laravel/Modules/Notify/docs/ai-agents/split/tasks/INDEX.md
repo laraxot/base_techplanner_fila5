@@ -19,8 +19,15 @@ related:
 ---
 # BMad Tasks Index
 
+<<<<<<< .merge_file_0G55af
 **Source**: [`../../../../AGENTS.md`](../../../../../../../../../../AGENTS.md) (lines 905-5349)  
+=======
+<<<<<<< .merge_file_LRpmlD
+**Source**: [`../../../../AGENTS.md`](../../../../../../../../../../AGENTS.md) (lines 905-5349)  
+=======
+>>>>>>> .merge_file_HfDwEA
 **Source**: [`../../../../agents.md`](../../../../../../../../../../agents.md) (lines 905-5349)  
+>>>>>>> .merge_file_mpqfvE
 **Total Tasks**: 22  
 **Total Lines**: ~4445  
 **Last Updated**: 2026-04-11  
@@ -83,6 +90,10 @@ related:
 ## Cross-References
 
 ### Related Documentation
+<<<<<<< .merge_file_0G55af
+=======
+<<<<<<< .merge_file_LRpmlD
+>>>>>>> .merge_file_HfDwEA
 - ← [BMad Agents Index](../../agents/INDEX.md) — 10 agent definitions
 - ← [CLAUDE Index](../claude/INDEX.md) — Laravel Boost guidelines
 - ← [GEMINI Index](../gemini/INDEX.md) — Gemini-specific rules
@@ -91,6 +102,10 @@ related:
 ### Bidirectional Links
 - ← Back to [Main AI Docs Index](../INDEX.md)
 - ← Back to [../../../../AGENTS.md](../../../../../../../../../../AGENTS.md) (original source)
+<<<<<<< .merge_file_0G55af
+=======
+=======
+>>>>>>> .merge_file_HfDwEA
 - ← [BMad Agents Index](../../agents/index.md) — 10 agent definitions
 - ← [CLAUDE Index](../claude/index.md) — Laravel Boost guidelines
 - ← [GEMINI Index](../gemini/index.md) — Gemini-specific rules
@@ -99,6 +114,7 @@ related:
 ### Bidirectional Links
 - ← Back to [Main AI Docs Index](../index.md)
 - ← Back to [../../../../agents.md](../../../../../../../../../../agents.md) (original source)
+>>>>>>> .merge_file_mpqfvE
 - ← Back to [Project Docs](../../../docs/README.md)
 
 ---
@@ -110,8 +126,15 @@ Tasks are referenced by name when executing workflows:
 - "Execute trace-requirements for epic 3"
 - "Apply qa-gate to story 2.1"
 
+<<<<<<< .merge_file_0G55af
 For full task definitions, see the original [`../../../../AGENTS.md`](../../../../../../../../../../AGENTS.md).
+=======
+<<<<<<< .merge_file_LRpmlD
+For full task definitions, see the original [`../../../../AGENTS.md`](../../../../../../../../../../AGENTS.md).
+=======
+>>>>>>> .merge_file_HfDwEA
 For full task definitions, see the original [`../../../../agents.md`](../../../../../../../../../../agents.md).
+>>>>>>> .merge_file_mpqfvE
 
 ---
 

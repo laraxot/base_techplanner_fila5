@@ -4,8 +4,15 @@ type: concept
 tags: [progetto, completato, 100, percento]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< .merge_file_a1ytQZ
 qmd: "progetto-completato-100-percento 🏆 progetto fixcity - 100% completato!"
+=======
+<<<<<<< .merge_file_bEzlOw
+qmd: "progetto-completato-100-percento 🏆 progetto fixcity - 100% completato!"
+=======
+>>>>>>> .merge_file_eZYfTy
 qmd: "progetto-completato-100-percento 🏆 progetto ptv - 100% completato!"
+>>>>>>> .merge_file_4w5kFC
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -52,8 +59,15 @@ related:
 ### ✅ 100% PHPSTAN COMPLIANCE - VERIFICATO!
 
 ```bash
+<<<<<<< .merge_file_a1ytQZ
 cd /var/www/_bases/base_fixcity_fila5_mono/laravel
+=======
+<<<<<<< .merge_file_bEzlOw
+cd /var/www/_bases/base_fixcity_fila5_mono/laravel
+=======
+>>>>>>> .merge_file_eZYfTy
 cd /var/www/_bases/base_ptv_fila5_mono/laravel
+>>>>>>> .merge_file_4w5kFC
 ./vendor/bin/phpstan analyse Modules --memory-limit=-1
 
 Result: {"totals":{"errors":0,"file_errors":0}}
@@ -564,6 +578,8 @@ php artisan queue:work --queue=high,notifications,default
 
 **GRAZIE PER L'OPPORTUNITÀ DI CONTRIBUIRE A QUESTO PROGETTO STRAORDINARIO!** 🙏
 
+<<<<<<< .merge_file_bEzlOw
+=======
 ---
 
 <!-- Merged from PROGETTO-COMPLETATO-100-PERCENTO.md, which collided with this file on case-insensitive filesystems. -->
@@ -1112,5 +1128,6 @@ php artisan queue:work --queue=high,notifications,default
 
 **GRAZIE PER L'OPPORTUNITÀ DI CONTRIBUIRE A QUESTO PROGETTO STRAORDINARIO!** 🙏
 
+>>>>>>> .merge_file_4w5kFC
 
 

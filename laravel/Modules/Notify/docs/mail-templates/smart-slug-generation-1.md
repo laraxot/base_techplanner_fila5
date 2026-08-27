@@ -22,9 +22,19 @@ related:
 
 ## Introduzione
 
+<<<<<<< .merge_file_JMZF54
 <<<<<<< .merge_file_w82Qwp
 Questo documento analizza un approccio avanzato per la generazione di slug da titoli nei form Filament, con particolare attenzione alla preservazione degli slug per i contenuti già pubblicati. Questa metodologia è particolarmente rilevante per il modulo Notify di Quaeris, in particolare per la gestione dei template email.
 =======
+=======
+<<<<<<< .merge_file_MaDMDI
+Questo documento analizza un approccio avanzato per la generazione di slug da titoli nei form Filament, con particolare attenzione alla preservazione degli slug per i contenuti già pubblicati. Questa metodologia è particolarmente rilevante per il modulo Notify di Quaeris, in particolare per la gestione dei template email.
+=======
+<<<<<<< .merge_file_w82Qwp
+Questo documento analizza un approccio avanzato per la generazione di slug da titoli nei form Filament, con particolare attenzione alla preservazione degli slug per i contenuti già pubblicati. Questa metodologia è particolarmente rilevante per il modulo Notify di Quaeris, in particolare per la gestione dei template email.
+=======
+>>>>>>> .merge_file_1S7KgU
+>>>>>>> .merge_file_CTM4QF
 Questo documento analizza un approccio avanzato per la generazione di slug da titoli nei form Filament, con particolare attenzione alla preservazione degli slug per i contenuti già pubblicati. Questa metodologia è particolarmente rilevante per il modulo Notify di App, in particolare per la gestione dei template email.
 >>>>>>> .merge_file_0UubXn
 
@@ -206,9 +216,19 @@ In alternativa o in aggiunta, è possibile implementare un sistema di reindirizz
 
 L'implementazione di una generazione intelligente di slug per i template email migliora significativamente la stabilità e l'usabilità del sistema. Preservando gli slug dei template pubblicati, si prevengono problemi di accessibilità e si garantisce un'esperienza utente coerente.
 
+<<<<<<< .merge_file_JMZF54
 <<<<<<< .merge_file_w82Qwp
 Per il modulo Notify di Quaeris, questa soluzione rappresenta un equilibrio ottimale tra automazione e controllo, con particolare attenzione alla preservazione dei link esistenti.
 =======
+=======
+<<<<<<< .merge_file_MaDMDI
+Per il modulo Notify di Quaeris, questa soluzione rappresenta un equilibrio ottimale tra automazione e controllo, con particolare attenzione alla preservazione dei link esistenti.
+=======
+<<<<<<< .merge_file_w82Qwp
+Per il modulo Notify di Quaeris, questa soluzione rappresenta un equilibrio ottimale tra automazione e controllo, con particolare attenzione alla preservazione dei link esistenti.
+=======
+>>>>>>> .merge_file_1S7KgU
+>>>>>>> .merge_file_CTM4QF
 Per il modulo Notify di App, questa soluzione rappresenta un equilibrio ottimale tra automazione e controllo, con particolare attenzione alla preservazione dei link esistenti.
 >>>>>>> .merge_file_0UubXn
 

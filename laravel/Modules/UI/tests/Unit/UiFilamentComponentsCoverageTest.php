@@ -20,6 +20,19 @@ use Modules\Xot\Tests\FilamentSchemaCoverage;
 use PHPUnit\Framework\Assert;
 use SplFileInfo;
 
+/**
+ * Narrows Mockery's shouldReceive() union return type for PHPStan.
+ *
+ * @param  \Mockery\LegacyMockInterface|\Mockery\MockInterface  $mock
+ */
+function expectMethod($mock, string $method): \Mockery\ExpectationInterface
+{
+    /** @var \Mockery\ExpectationInterface $expectation */
+    $expectation = $mock->shouldReceive($method);
+
+    return $expectation;
+}
+
 uses(TestCase::class);
 
 afterEach(function (): void {
@@ -89,7 +102,11 @@ describe('UI coverage boost — Rules and policies', function (): void {
         /** @var MockInterface&UserContract $superAdmin */
         $superAdmin = Mockery::mock(UserContract::class);
         expectMethod($superAdmin, 'hasRole')->with('super-admin')->andReturn(true);
+<<<<<<< .merge_file_5mK5hG
         /** @var MockInterface&UserContract $regular */
+=======
+        /** @var Mockery\MockInterface&UserContract $regular */
+>>>>>>> .merge_file_euWj8M
         $regular = Mockery::mock(UserContract::class);
         expectMethod($regular, 'hasRole')->with('super-admin')->andReturn(false);
 

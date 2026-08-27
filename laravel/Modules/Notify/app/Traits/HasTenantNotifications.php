@@ -9,13 +9,22 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Modules\Notify\Models\NotificationLog;
+<<<<<<< .merge_file_NjSKKT
+
+/** @phpstan-ignore trait.unused */
+=======
 use Webmozart\Assert\Assert;
 
 /**
  * Trait HasTenantNotifications.
  *
  * Fornisce funzionalità per la gestione delle notifiche per tenant.
+<<<<<<< .merge_file_NuWxF6
+=======
+ *
+>>>>>>> .merge_file_jFlhoC
  */
+>>>>>>> .merge_file_DPja1a
 trait HasTenantNotifications
 {
     /**
@@ -52,6 +61,10 @@ trait HasTenantNotifications
      * Scope per filtrare le notifiche per tenant.
      *
      * @param  Builder<static>  $query
+<<<<<<< .merge_file_NjSKKT
+     *
+=======
+>>>>>>> .merge_file_DPja1a
      * @return Builder<static>
      */
     public function scopeForTenant(Builder $query, ?string $tenantId = null): Builder
@@ -135,6 +148,10 @@ trait HasTenantNotifications
         }
 
         $key = $tenant->getKey();
+<<<<<<< .merge_file_NjSKKT
+
+        return $key === null ? null : (string) $key;
+=======
 
         if ($key === null) {
             return null;
@@ -143,5 +160,6 @@ trait HasTenantNotifications
         Assert::scalar($key);
 
         return (string) $key;
+>>>>>>> .merge_file_DPja1a
     }
 }

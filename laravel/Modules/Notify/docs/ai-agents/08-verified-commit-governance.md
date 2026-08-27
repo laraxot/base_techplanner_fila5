@@ -22,8 +22,15 @@ related:
 
 ## Regola
 
+<<<<<<< .merge_file_e4WEs2
 Nel progetto Base Predict Fila5 `git commit` e `git push` NON sono azioni automatiche di fine task.
+=======
+<<<<<<< .merge_file_klZepF
+Nel progetto Base Predict Fila5 `git commit` e `git push` NON sono azioni automatiche di fine task.
+=======
+>>>>>>> .merge_file_PEQ3BI
 Nel progetto Base Forecast Fila5 `git commit` e `git push` NON sono azioni automatiche di fine task.
+>>>>>>> .merge_file_LWgmju
 Si eseguono solo quando il lavoro e stato verificato in modo completo e tracciabile.
 
 ## Cosa significa verificato

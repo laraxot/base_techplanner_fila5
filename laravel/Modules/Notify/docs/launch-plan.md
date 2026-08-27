@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_fXTPVj
+=======
 ---
 title: "Product Launch Plan: Notify Module"
 module: notify
@@ -7,6 +9,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+>>>>>>> .merge_file_i3uo9h
 # Product Launch Plan: Notify Module
 
 ## 🚀 Launch Overview

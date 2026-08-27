@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_6GokuQ
+=======
 ---
 title: "Decision Log: Rimozione Azioni Seasonal Over-Engineered"
 module: notify
@@ -7,6 +9,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+>>>>>>> .merge_file_tX9fFy
 # Decision Log: Rimozione Azioni Seasonal Over-Engineered
 
 **Decisione**: Rimozione delle classi GetSeasonalEmailLayoutAction e DetermineSeasonalLayoutPathAction  

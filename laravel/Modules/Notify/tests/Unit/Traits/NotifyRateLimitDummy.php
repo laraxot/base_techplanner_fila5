@@ -10,7 +10,11 @@ final class NotifyRateLimitDummy
 {
     use HasNotificationRateLimiting;
 
+<<<<<<< .merge_file_GBNp5U
+    public function key(string $type, mixed $identifier): string
+=======
     public function key(string $type, int|string $identifier): string
+>>>>>>> .merge_file_1GYdjy
     {
         return $this->getNotificationRateLimitKey($type, $identifier);
     }
@@ -34,4 +38,8 @@ final class NotifyRateLimitDummy
     {
         return $this->getNotificationRateLimitRetryAfter($key);
     }
+<<<<<<< .merge_file_GBNp5U
 }
+=======
+}
+>>>>>>> .merge_file_1GYdjy

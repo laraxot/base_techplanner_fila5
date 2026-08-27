@@ -41,8 +41,15 @@ Created complete wiki structure in `./docs/wiki/`:
 ```
 docs/wiki/
 ├── README.md                 # Complete integration guide
+<<<<<<< .merge_file_BJKTJn
 ├── AGENTS.md                 # Schema file for LLM agents (16KB)
+=======
+<<<<<<< .merge_file_0RYG6v
+├── AGENTS.md                 # Schema file for LLM agents (16KB)
+=======
+>>>>>>> .merge_file_Yk5gqe
 ├── agents.md                 # Schema file for LLM agents (16KB)
+>>>>>>> .merge_file_6e3Feh
 ├── quick-reference.md        # Quick daily reference
 ├── overview.md               # High-level synthesis
 ├── index.md                  # Content catalog
@@ -70,8 +77,15 @@ docs/wiki/
     └── _archive/
 ```
 
+<<<<<<< .merge_file_BJKTJn
 ### 3. ✅ Agent Instructions (AGENTS.md)
+=======
+<<<<<<< .merge_file_0RYG6v
+### 3. ✅ Agent Instructions (AGENTS.md)
+=======
+>>>>>>> .merge_file_Yk5gqe
 ### 3. ✅ Agent Instructions (agents.md)
+>>>>>>> .merge_file_6e3Feh
 
 Created comprehensive 16KB schema file with:
 
@@ -127,9 +141,21 @@ Created `bashscripts/ai/init-llm-wiki.sh`:
 
 - Initialize wiki structure for any module or theme
 - Usage: `bashscripts/ai/init-llm-wiki.sh {module|theme} {Name}`
+<<<<<<< .merge_file_BJKTJn
 - Example: `bashscripts/ai/init-llm-wiki.sh module Fixcity`
 - Creates complete directory structure with templates
 - Generates module-specific AGENTS.md
+=======
+<<<<<<< .merge_file_0RYG6v
+- Example: `bashscripts/ai/init-llm-wiki.sh module Fixcity`
+- Creates complete directory structure with templates
+- Generates module-specific AGENTS.md
+=======
+- Example: `bashscripts/ai/init-llm-wiki.sh module App`
+- Creates complete directory structure with templates
+- Generates module-specific agents.md
+>>>>>>> .merge_file_6e3Feh
+>>>>>>> .merge_file_Yk5gqe
 
 ### 8. ✅ Documentation Updates
 
@@ -157,8 +183,15 @@ commit a21032a60: docs: integrate Karpathy LLM Wiki pattern
 |-------|----------|---------|----------|
 | **raw/** | `docs/raw/` | Immutable sources | ❌ NEVER |
 | **wiki/** | `docs/wiki/` | LLM-generated knowledge | ✅ YES |
+<<<<<<< .merge_file_BJKTJn
 | **schema** | `docs/wiki/AGENTS.md` | Agent instructions | ✅ YES |
+=======
+<<<<<<< .merge_file_0RYG6v
+| **schema** | `docs/wiki/AGENTS.md` | Agent instructions | ✅ YES |
+=======
+>>>>>>> .merge_file_Yk5gqe
 | **schema** | `docs/wiki/agents.md` | Agent instructions | ✅ YES |
+>>>>>>> .merge_file_6e3Feh
 
 ### Module Wiki
 
@@ -166,8 +199,15 @@ commit a21032a60: docs: integrate Karpathy LLM Wiki pattern
 |-------|----------|---------|
 | **raw/** | `Modules/{Name}/docs/llm-wiki/raw/` | Module sources | ❌ NEVER |
 | **wiki/** | `Modules/{Name}/docs/llm-wiki/` | Module knowledge | ✅ YES |
+<<<<<<< .merge_file_BJKTJn
 | **schema** | `Modules/{Name}/docs/llm-wiki/AGENTS.md` | Module agent rules | ✅ YES |
+=======
+<<<<<<< .merge_file_0RYG6v
+| **schema** | `Modules/{Name}/docs/llm-wiki/AGENTS.md` | Module agent rules | ✅ YES |
+=======
+>>>>>>> .merge_file_Yk5gqe
 | **schema** | `Modules/{Name}/docs/llm-wiki/agents.md` | Module agent rules | ✅ YES |
+>>>>>>> .merge_file_6e3Feh
 
 ## Workflows
 
@@ -225,10 +265,18 @@ commit a21032a60: docs: integrate Karpathy LLM Wiki pattern
 
 3. **Initialize Module Wikis** (if not already done):
    ```bash
+<<<<<<< .merge_file_BJKTJn
    bashscripts/ai/init-llm-wiki.sh module Fixcity
    bashscripts/ai/init-llm-wiki.sh module Predict
+=======
+<<<<<<< .merge_file_0RYG6v
+   bashscripts/ai/init-llm-wiki.sh module Fixcity
+   bashscripts/ai/init-llm-wiki.sh module Predict
+=======
+>>>>>>> .merge_file_Yk5gqe
    bashscripts/ai/init-llm-wiki.sh module App
    bashscripts/ai/init-llm-wiki.sh module Forecast
+>>>>>>> .merge_file_6e3Feh
    bashscripts/ai/init-llm-wiki.sh theme Sixteen
    ```
 
@@ -262,8 +310,15 @@ commit a21032a60: docs: integrate Karpathy LLM Wiki pattern
 ### Project Root (docs/)
 
 - ✅ `docs/wiki/README.md` - Integration guide
+<<<<<<< .merge_file_BJKTJn
 - ✅ `docs/wiki/AGENTS.md` - Agent instructions (16KB)
+=======
+<<<<<<< .merge_file_0RYG6v
+- ✅ `docs/wiki/AGENTS.md` - Agent instructions (16KB)
+=======
+>>>>>>> .merge_file_Yk5gqe
 - ✅ `docs/wiki/agents.md` - Agent instructions (16KB)
+>>>>>>> .merge_file_6e3Feh
 - ✅ `docs/wiki/quick-reference.md` - Quick reference
 - ✅ `docs/wiki/overview.md` - High-level synthesis
 - ✅ `docs/wiki/index.md` - Content catalog
@@ -304,8 +359,15 @@ commit a21032a60: docs: integrate Karpathy LLM Wiki pattern
 
 - [Karpathy's Original Gist](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)
 - [Complete Integration Guide](docs/wiki/README.md)
+<<<<<<< .merge_file_BJKTJn
 - [Agent Instructions](docs/wiki/AGENTS.md)
+=======
+<<<<<<< .merge_file_0RYG6v
+- [Agent Instructions](docs/wiki/AGENTS.md)
+=======
+>>>>>>> .merge_file_Yk5gqe
 - [Agent Instructions](docs/wiki/agents.md)
+>>>>>>> .merge_file_6e3Feh
 - [Quick Reference](docs/wiki/quick-reference.md)
 - [Module Wiki Guide](Modules/Xot/docs/llm-wiki-integration.md)
 - [Obsidian Setup](docs/.obsidian/README.md)
@@ -325,6 +387,8 @@ commit a21032a60: docs: integrate Karpathy LLM Wiki pattern
 ---
 
 **Session Complete** - Ready for first ingestion! 🚀
+<<<<<<< .merge_file_0RYG6v
+=======
 
 ---
 
@@ -629,3 +693,4 @@ commit a21032a60: docs: integrate Karpathy LLM Wiki pattern
 ---
 
 **Session Complete** - Ready for first ingestion! 🚀
+>>>>>>> .merge_file_6e3Feh

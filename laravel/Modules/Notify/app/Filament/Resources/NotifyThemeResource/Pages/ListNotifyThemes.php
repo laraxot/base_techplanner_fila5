@@ -45,10 +45,15 @@ class ListNotifyThemes extends XotBaseListRecords
         return self::getNotifyThemeTableColumns();
     }
 
+<<<<<<< .merge_file_CYQfUF
+    #[Override]
+    public function getTableFilters(): array
+=======
     /**
      * @return array<string, SelectFilter>
      */
     public static function getNotifyThemeTableFilters(): array
+>>>>>>> .merge_file_t2cNdZ
     {
         return [
             'lang' => SelectFilter::make('lang')->options(

@@ -13,6 +13,43 @@ return [
         'sort' => 51,
     ],
     'fields' => [
+<<<<<<< .merge_file_InuFqL
+        'device_token' => [
+            'label' => 'Token Dispositivo',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'type' => [
+            'label' => 'Tipo',
+            'options' => [
+                'notification' => 'Notifica',
+                'data' => 'Dati',
+                'both' => 'Entrambi',
+            ],
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'title' => [
+            'label' => 'Titolo',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'body' => [
+            'label' => 'Contenuto',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'data' => [
+            'label' => 'Dati Aggiuntivi',
+            'description' => 'Dati in formato JSON da inviare con la notifica',
+            'tooltip' => '',
+            'helper_text' => '',
+        ],
+=======
         'device_token' => ['label' => 'Token Dispositivo', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'type' => [
             'label' => 'Tipo',
@@ -28,6 +65,7 @@ return [
         'deviceToken' => ['label' => 'deviceToken', 'placeholder' => 'deviceToken', 'helper_text' => 'deviceToken', 'description' => 'deviceToken'],
         'name' => ['label' => 'name', 'placeholder' => 'name', 'helper_text' => 'name', 'description' => 'name'],
         'value' => ['label' => 'value', 'placeholder' => 'value', 'helper_text' => 'value', 'description' => 'value'],
+>>>>>>> .merge_file_egzqaA
     ],
     'actions' => [
         'send' => ['label' => 'Invia Notifica', 'success' => 'Notifica push inviata con successo', 'error' => 'Errore durante l\'invio della notifica push'],

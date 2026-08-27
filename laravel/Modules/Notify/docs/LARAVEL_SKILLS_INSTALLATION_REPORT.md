@@ -45,16 +45,30 @@ Laravel Boost v2.2.1 includes 14 built-in skills in the package:
 
 ### Built-in Skills Location
 ```
+<<<<<<< .merge_file_P4dVTy
 /var/www/_bases/base_fixcity_fila5/laravel/vendor/laravel/boost/.ai/
+=======
+<<<<<<< .merge_file_k9W8Yz
+/var/www/_bases/base_fixcity_fila5/laravel/vendor/laravel/boost/.ai/
+=======
+>>>>>>> .merge_file_UHCSK7
 /var/www/_bases/base_ptv_fila5/laravel/vendor/laravel/boost/.ai/
+>>>>>>> .merge_file_equrFH
 ```
 
 ## Successfully Installed Skills
 
 ### laravel-specialist
 - **Package**: jeffallan/claude-skills
+<<<<<<< .merge_file_P4dVTy
 - **Location**: `/var/www/_bases/base_fixcity_fila5/laravel/.ai/skills/laravel-specialist/`
+=======
+<<<<<<< .merge_file_k9W8Yz
+- **Location**: `/var/www/_bases/base_fixcity_fila5/laravel/.ai/skills/laravel-specialist/`
+=======
+>>>>>>> .merge_file_UHCSK7
 - **Location**: `/var/www/_bases/base_ptv_fila5/laravel/.ai/skills/laravel-specialist/`
+>>>>>>> .merge_file_equrFH
 - **Files**:
   - SKILL.md
   - references/routing.md
