@@ -150,7 +150,11 @@ trait HasCommonScopes
             return Carbon::instance(\DateTimeImmutable::createFromInterface($publishedAt))->isPast();
         }
 
-        return Carbon::parse((string) $publishedAt)->isPast();
+        if (is_string($publishedAt) || is_numeric($publishedAt)) {
+            return Carbon::parse((string) $publishedAt)->isPast();
+        }
+
+        return false;
     }
 
     /**

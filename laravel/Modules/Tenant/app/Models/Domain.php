@@ -7,6 +7,7 @@ namespace Modules\Tenant\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\TechPlanner\Models\Profile;
 use Modules\Tenant\Actions\Domains\GetDomainsArrayAction;
+use Modules\Xot\Models\Traits\HasXotFactory;
 use Sushi\Sushi;
 
 /**
@@ -15,6 +16,7 @@ use Sushi\Sushi;
  * @property-read Profile|null $creator
  * @property-read Profile|null $updater
  *
+ * @method static \Modules\Tenant\Database\Factories\DomainFactory factory($count = null, $state = [])
  * @method static Builder<static>|Domain newModelQuery()
  * @method static Builder<static>|Domain newQuery()
  * @method static Builder<static>|Domain query()
@@ -25,6 +27,7 @@ use Sushi\Sushi;
  */
 class Domain extends BaseModel
 {
+    use HasXotFactory;
     use Sushi;
 
     /**

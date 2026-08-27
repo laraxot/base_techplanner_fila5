@@ -15,6 +15,14 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 
 // BaseModel in same namespace provides common behaviors
 /**
+ * @property int|null $template_id
+ * @property string|null $subject
+ * @property string|null $body_html
+ * @property string|null $body_text
+ * @property array<int, string>|null $channels
+ * @property array<string, mixed>|null $variables
+ * @property array<string, mixed>|null $conditions
+ * @property int|string|null $version
  * @property-read Profile|null $creator
  * @property-read MediaCollection<int, Media> $media
  * @property-read int|null $media_count

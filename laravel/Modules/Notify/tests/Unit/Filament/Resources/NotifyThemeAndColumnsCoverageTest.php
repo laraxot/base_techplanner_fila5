@@ -27,8 +27,7 @@ function makeEditNotifyThemeTestProxy(): EditNotifyThemeTestProxy
 }
 
 test('list notification templates page returns empty table columns array', function (): void {
-    $page = new ListNotificationTemplates();
-    $columns = $page->getTableColumns();
+    $columns = ListNotificationTemplates::notificationTemplateTableColumns();
     Assert::assertSame([], $columns);
 });
 
@@ -62,8 +61,7 @@ test('edit notify theme page exposes delete header action', function (): void {
 
 test('list notify themes columns and filters are configured', function (): void {
     $columns = ListNotifyThemes::getNotifyThemeTableColumns();
-    $page = new ListNotifyThemes();
-    $filters = $page->getTableFilters();
+    $filters = ListNotifyThemes::getNotifyThemeTableFilters();
     Assert::assertArrayHasKey('id', $columns);
     Assert::assertInstanceOf(TextColumn::class, $columns['id']);
     Assert::assertArrayHasKey('lang', $columns);

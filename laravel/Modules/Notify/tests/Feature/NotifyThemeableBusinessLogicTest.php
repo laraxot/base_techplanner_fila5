@@ -33,8 +33,8 @@ describe('Notify Themeable Business Logic', function () {
             'model_type' => 'App\Models\NotificationTemplate',
             'model_id' => 123,
             'notify_theme_id' => $theme->id,
-            'created_by' => 'admin@'.(string) config('app.domain', 'example.com'),
-            'updated_by' => 'admin@'.(string) config('app.domain', 'example.com')];
+            'created_by' => 'admin@'.notifyThemeableTestDomain(),
+            'updated_by' => 'admin@'.notifyThemeableTestDomain()];
 
         $themeable = NotifyThemeable::create($themeableData);
 
@@ -78,7 +78,7 @@ describe('Notify Themeable Business Logic', function () {
     });
 
     it('can manage theme relationships', function () {
-        $appName = (string) config('app.name', 'Platform');
+        $appName = notifyThemeableTestAppName();
         $themeLabel = $appName.' Professional';
         $theme = NotifyThemeFactory::new()->createOne([
             'subject' => $themeLabel,
@@ -97,11 +97,11 @@ describe('Notify Themeable Business Logic', function () {
 
         $themeable = NotifyThemeableFactory::new()->createOne([
             'notify_theme_id' => $theme->id,
-            'created_by' => 'developer@'.(string) config('app.domain', 'example.com'),
-            'updated_by' => 'admin@'.(string) config('app.domain', 'example.com')]);
+            'created_by' => 'developer@'.notifyThemeableTestDomain(),
+            'updated_by' => 'admin@'.notifyThemeableTestDomain()]);
 
-        Assert::assertSame('developer@'.(string) config('app.domain', 'example.com'), $themeable->created_by);
-        Assert::assertSame('admin@'.(string) config('app.domain', 'example.com'), $themeable->updated_by);
+        Assert::assertSame('developer@'.notifyThemeableTestDomain(), $themeable->created_by);
+        Assert::assertSame('admin@'.notifyThemeableTestDomain(), $themeable->updated_by);
         Assert::assertNotNull($themeable->created_at);
         Assert::assertNotNull($themeable->updated_at);
     });
@@ -221,10 +221,10 @@ describe('Notify Themeable Business Logic', function () {
         Assert::assertSame($theme->id, $themeable->notify_theme_id);
         $themeable->update([
             'notify_theme_id' => null,
-            'updated_by' => 'admin@'.(string) config('app.domain', 'example.com')]);
+            'updated_by' => 'admin@'.notifyThemeableTestDomain()]);
 
         Assert::assertNull($themeable->notify_theme_id);
-        Assert::assertSame('admin@'.(string) config('app.domain', 'example.com'), $themeable->updated_by);
+        Assert::assertSame('admin@'.notifyThemeableTestDomain(), $themeable->updated_by);
     });
 
     it('can manage audit trail', function () {
@@ -232,14 +232,14 @@ describe('Notify Themeable Business Logic', function () {
 
         $themeable = NotifyThemeableFactory::new()->createOne([
             'notify_theme_id' => $theme->id,
-            'created_by' => 'developer@'.(string) config('app.domain', 'example.com')]);
+            'created_by' => 'developer@'.notifyThemeableTestDomain()]);
 
-        Assert::assertSame('developer@'.(string) config('app.domain', 'example.com'), $themeable->created_by);
+        Assert::assertSame('developer@'.notifyThemeableTestDomain(), $themeable->created_by);
         Assert::assertNotNull($themeable->created_at);
         $themeable->update([
-            'updated_by' => 'admin@'.(string) config('app.domain', 'example.com')]);
+            'updated_by' => 'admin@'.notifyThemeableTestDomain()]);
 
-        Assert::assertSame('admin@'.(string) config('app.domain', 'example.com'), $themeable->updated_by);
+        Assert::assertSame('admin@'.notifyThemeableTestDomain(), $themeable->updated_by);
         Assert::assertNotNull($themeable->updated_at);
         Assert::assertTrue($themeable->created_at->lte($themeable->updated_at));
     });
@@ -262,12 +262,12 @@ describe('Notify Themeable Business Logic', function () {
         Assert::assertCount(5, $theme1Assignments);
         NotifyThemeable::where('notify_theme_id', $theme1->id)->update([
             'notify_theme_id' => $theme2->id,
-            'updated_by' => 'admin@'.(string) config('app.domain', 'example.com')]);
+            'updated_by' => 'admin@'.notifyThemeableTestDomain()]);
 
         $theme2Assignments = NotifyThemeable::where('notify_theme_id', $theme2->id)->get();
         Assert::assertCount(5, $theme2Assignments);
         foreach ($theme2Assignments as $assignment) {
-            Assert::assertSame('admin@'.(string) config('app.domain', 'example.com'), $assignment->updated_by);
+            Assert::assertSame('admin@'.notifyThemeableTestDomain(), $assignment->updated_by);
         }
     });
 });

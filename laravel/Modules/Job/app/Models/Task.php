@@ -40,7 +40,7 @@ use function Safe\json_decode;
  * @method static Builder<static>|Task newModelQuery()
  * @method static Builder<static>|Task newQuery()
  * @method static Builder<static>|Task query()
- * @method static Builder<static>|Task sortableBy(array $sortableColumns, array $defaultSort = [])
+ * @method static Builder<static>|Task sortableBy(array<string> $sortableColumns, array<string, 'asc'|'desc'> $defaultSort = [])
  *
  * @property int $id
  * @property string $description

@@ -73,7 +73,7 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
  * @method static Builder<static>|Menu whereTitle($value)
  * @method static Builder<static>|Menu whereUpdatedAt($value)
  * @method static Builder<static>|Menu whereUpdatedBy($value)
- * @method static Builder<static>|Menu withGlobalScopes(array $scopes)
+ * @method static Builder<static>|Menu withGlobalScopes(array<string, mixed> $scopes)
  * @method static Builder<static>|Menu withRelationshipExpression($direction, callable $constraint, $initialDepth, $from = null, $maxDepth = null)
  *
  * @mixin \Eloquent

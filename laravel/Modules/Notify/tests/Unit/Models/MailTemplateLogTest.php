@@ -110,8 +110,8 @@ describe('Mail Template Log', function (): void {
         XotBasePest::assertTableHas('notify', 'mail_template_logs', [
             'id' => $log->id,
             'data' => json_encode($data)]);
-        Assert::assertEquals('user@example.com', $log->data['to']);
-        Assert::assertEquals(['cc1@example.com', 'cc2@example.com'], $log->data['cc']);
+        Assert::assertEquals('user@example.com', TestCase::notifyArrayGet($log->data, 'to'));
+        Assert::assertEquals(['cc1@example.com', 'cc2@example.com'], TestCase::notifyArrayGet($log->data, 'cc'));
         Assert::assertEquals('John Doe', TestCase::notifyArrayGet($log->data, 'variables', 'name'));
         Assert::assertEquals('Example Corp', TestCase::notifyArrayGet($log->data, 'variables', 'company'));
     });
@@ -141,9 +141,9 @@ describe('Mail Template Log', function (): void {
         XotBasePest::assertTableHas('notify', 'mail_template_logs', [
             'id' => $log->id,
             'metadata' => json_encode($metadata)]);
-        Assert::assertEquals('smtp', $log->metadata['provider']);
-        Assert::assertEquals('queue_123', $log->metadata['queue_id']);
-        Assert::assertEquals(3, $log->metadata['attempts']);
+        Assert::assertEquals('smtp', TestCase::notifyArrayGet($log->metadata, 'provider'));
+        Assert::assertEquals('queue_123', TestCase::notifyArrayGet($log->metadata, 'queue_id'));
+        Assert::assertEquals(3, TestCase::notifyArrayGet($log->metadata, 'attempts'));
         Assert::assertEquals('SMTP_ERROR', TestCase::notifyArrayGet($log->metadata, 'error_details', 'code'));
         Assert::assertEquals(4000, TestCase::notifyArrayGet($log->metadata, 'performance', 'total_time'));
     });
@@ -393,7 +393,7 @@ describe('Mail Template Log', function (): void {
 
         Assert::assertCount(1, $welcomeSubjectLogs);
         Assert::assertCount(1, $welcomeTemplateLogs);
-        Assert::assertEquals('Welcome to our platform', XotBasePest::assertFirstModel($welcomeSubjectLogs, MailTemplateLog::class)->data['subject']);
+        Assert::assertEquals('Welcome to our platform', TestCase::notifyArrayGet(XotBasePest::assertFirstModel($welcomeSubjectLogs, MailTemplateLog::class)->data, 'subject'));
         Assert::assertEquals('welcome_template', TestCase::notifyArrayGet(XotBasePest::assertFirstModel($welcomeTemplateLogs, MailTemplateLog::class)->data, 'template'));
     });
 
@@ -423,8 +423,8 @@ describe('Mail Template Log', function (): void {
 
         Assert::assertCount(1, $smtpLogs);
         Assert::assertCount(1, $sesLogs);
-        Assert::assertEquals('smtp', XotBasePest::assertFirstModel($smtpLogs, MailTemplateLog::class)->metadata['provider']);
-        Assert::assertEquals('ses', XotBasePest::assertFirstModel($sesLogs, MailTemplateLog::class)->metadata['provider']);
+        Assert::assertEquals('smtp', TestCase::notifyArrayGet(XotBasePest::assertFirstModel($smtpLogs, MailTemplateLog::class)->metadata, 'provider'));
+        Assert::assertEquals('ses', TestCase::notifyArrayGet(XotBasePest::assertFirstModel($sesLogs, MailTemplateLog::class)->metadata, 'provider'));
     });
 
     test('_can_find_by_multiple_criteria', function (): void {
@@ -459,8 +459,8 @@ describe('Mail Template Log', function (): void {
 
         Assert::assertCount(1, $smtpWelcomeLogs);
         Assert::assertEquals('sent', XotBasePest::assertFirstModel($smtpWelcomeLogs, MailTemplateLog::class)->status);
-        Assert::assertEquals('smtp', XotBasePest::assertFirstModel($smtpWelcomeLogs, MailTemplateLog::class)->metadata['provider']);
-        Assert::assertEquals('Welcome email', XotBasePest::assertFirstModel($smtpWelcomeLogs, MailTemplateLog::class)->data['subject']);
+        Assert::assertEquals('smtp', TestCase::notifyArrayGet(XotBasePest::assertFirstModel($smtpWelcomeLogs, MailTemplateLog::class)->metadata, 'provider'));
+        Assert::assertEquals('Welcome email', TestCase::notifyArrayGet(XotBasePest::assertFirstModel($smtpWelcomeLogs, MailTemplateLog::class)->data, 'subject'));
     });
 
     test('_can_handle_null_values', function (): void {

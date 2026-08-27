@@ -25,6 +25,7 @@ use Override;
  * @property-read string|null $full_address
  * @property-read string $full_name
  * @property-read float|null $latitude
+ * @property-read string|null $address
  * @property-write mixed $address
  * @property-write mixed $birth_day
  * @property-read Profile|null $updater

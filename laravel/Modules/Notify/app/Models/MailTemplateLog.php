@@ -14,6 +14,18 @@ use Override;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 
 /**
+ * @property int|null $template_id
+ * @property string|null $mailable_type
+ * @property int|string|null $mailable_id
+ * @property string|null $status
+ * @property string|null $status_message
+ * @property array<string, mixed>|null $data
+ * @property array<string, mixed>|null $metadata
+ * @property \Illuminate\Support\Carbon|null $sent_at
+ * @property \Illuminate\Support\Carbon|null $delivered_at
+ * @property \Illuminate\Support\Carbon|null $failed_at
+ * @property \Illuminate\Support\Carbon|null $opened_at
+ * @property \Illuminate\Support\Carbon|null $clicked_at
  * @property-read Profile|null $creator
  * @property-read Model $mailable
  * @property-read MediaCollection<int, Media> $media

@@ -125,8 +125,8 @@ describe('Mail Template Log PartOne', function (): void {
         XotBasePest::assertTableHas('notify', 'mail_template_logs', [
             'id' => $log->id,
             'data' => json_encode($data)]);
-        Assert::assertEquals('user@example.com', $log->data['to']);
-        Assert::assertEquals(['cc1@example.com', 'cc2@example.com'], $log->data['cc']);
+        Assert::assertEquals('user@example.com', TestCase::notifyArrayGet($log->data, 'to'));
+        Assert::assertEquals(['cc1@example.com', 'cc2@example.com'], TestCase::notifyArrayGet($log->data, 'cc'));
         Assert::assertEquals('John Doe', TestCase::notifyArrayGet($log->data, 'variables', 'name'));
         Assert::assertEquals('Example Corp', TestCase::notifyArrayGet($log->data, 'variables', 'company'));
     });
@@ -156,9 +156,9 @@ describe('Mail Template Log PartOne', function (): void {
         XotBasePest::assertTableHas('notify', 'mail_template_logs', [
             'id' => $log->id,
             'metadata' => json_encode($metadata)]);
-        Assert::assertEquals('smtp', $log->metadata['provider']);
-        Assert::assertEquals('queue_123', $log->metadata['queue_id']);
-        Assert::assertEquals(3, $log->metadata['attempts']);
+        Assert::assertEquals('smtp', TestCase::notifyArrayGet($log->metadata, 'provider'));
+        Assert::assertEquals('queue_123', TestCase::notifyArrayGet($log->metadata, 'queue_id'));
+        Assert::assertEquals(3, TestCase::notifyArrayGet($log->metadata, 'attempts'));
         Assert::assertEquals('SMTP_ERROR', TestCase::notifyArrayGet($log->metadata, 'error_details', 'code'));
         Assert::assertEquals(4000, TestCase::notifyArrayGet($log->metadata, 'performance', 'total_time'));
     });

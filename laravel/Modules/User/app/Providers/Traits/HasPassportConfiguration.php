@@ -50,6 +50,7 @@ trait HasPassportConfiguration
     {
         $config = Config::get('user.passport.tokens', []);
         Assert::isArray($config);
+        /** @var array<string, mixed> $config */
 
         Passport::tokensExpireIn(
             CarbonInterval::days(self::tokenLifetime($config, 'access_token', 15))

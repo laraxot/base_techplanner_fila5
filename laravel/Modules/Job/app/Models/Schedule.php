@@ -247,12 +247,14 @@ class Schedule extends BaseModel
                 $fallbackKey = (string) $normalizedKey;
                 $optionName = is_string($name) ? $name : $fallbackKey;
                 $optionValue = $value['value'] ?? null;
-                $result[$normalizedKey] = '--'.$optionName.'='.(string) $optionValue;
+                $optionValueString = is_scalar($optionValue) ? (string) $optionValue : '';
+                $result[$normalizedKey] = '--'.$optionName.'='.$optionValueString;
 
                 continue;
             }
 
-            $result[$normalizedKey] = '--'.(string) $value;
+            $valueString = is_scalar($value) ? (string) $value : '';
+            $result[$normalizedKey] = '--'.$valueString;
         }
 
         return $result;

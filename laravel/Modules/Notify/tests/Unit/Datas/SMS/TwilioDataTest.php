@@ -73,7 +73,6 @@ describe('TwilioData', function () {
 
         $headers = $data->getAuthHeaders();
 
-        expect($headers)->toBeArray();
         expect($headers)->toHaveKey('Authorization');
         expect($headers)->toHaveKey('Content-Type');
         expect($headers['Authorization'])->toStartWith('Basic ');

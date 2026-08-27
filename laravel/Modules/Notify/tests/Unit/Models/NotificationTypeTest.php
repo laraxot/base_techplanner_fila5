@@ -124,9 +124,9 @@ describe('Notification Type', function (): void {
         $firstUserType = XotBasePest::assertFirstModel($userTypes, NotificationType::class);
         $secondUserType = XotBasePest::assertFirstModel($userTypes->slice(1), NotificationType::class);
         $mobileType = XotBasePest::assertFirstModel($mobileTypes, NotificationType::class);
-        Assert::assertStringContainsString('for users', (string) $firstUserType->description);
-        Assert::assertStringContainsString('for users', (string) $secondUserType->description);
-        Assert::assertStringContainsString('mobile', (string) $mobileType->description);
+        Assert::assertStringContainsString('for users', is_string($firstUserType->description) ? $firstUserType->description : '');
+        Assert::assertStringContainsString('for users', is_string($secondUserType->description) ? $secondUserType->description : '');
+        Assert::assertStringContainsString('mobile', is_string($mobileType->description) ? $mobileType->description : '');
     });
 
     test('_can_handle_null_values', function (): void {

@@ -17,8 +17,11 @@ use Spatie\Translatable\HasTranslations;
 /**
  * Class NotificationTemplate.
  *
+ * @property string|null $name
  * @property string|null $code
  * @property string|null $subject
+ * @property bool $is_active
+ * @property array<string, mixed>|null $variables
  * @property string|null $body_html
  * @property string|null $body_text
  * @property array<int, string>|null $channels

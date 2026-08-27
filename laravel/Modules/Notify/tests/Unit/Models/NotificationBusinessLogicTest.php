@@ -43,7 +43,9 @@ describe('Notification Business Logic', function () {
         $notification = new Notification([
             'read_at' => '2023-01-01 12:00:00']);
 
-        Assert::assertSame('2023-01-01 12:00:00', (string) $notification->read_at);
+        Assert::assertSame('2023-01-01 12:00:00', $notification->read_at instanceof \DateTimeInterface
+            ? $notification->read_at->format('Y-m-d H:i:s')
+            : (is_string($notification->read_at) ? $notification->read_at : ''));
     });
 
     test('notification can track tenant and user', function () {
@@ -79,7 +81,9 @@ describe('Notification Business Logic', function () {
             'sent_at' => '2023-01-01 14:00:00']);
 
         Assert::assertSame('sent', $notification->status);
-        Assert::assertSame('2023-01-01 14:00:00', (string) $notification->sent_at);
+        Assert::assertSame('2023-01-01 14:00:00', $notification->sent_at instanceof \DateTimeInterface
+            ? $notification->sent_at->format('Y-m-d H:i:s')
+            : (is_string($notification->sent_at) ? $notification->sent_at : ''));
     });
 
     test('notification has factory for testing', function () {

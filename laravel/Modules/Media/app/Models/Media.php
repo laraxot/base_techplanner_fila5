@@ -24,7 +24,8 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media as SpatieMedia;
 /**
  * @property-read User|null $creator
  * @property-read mixed $extension
- * @property-read \Modules\Media\Models\array<int, array{name: $entry_conversions
+ * @property-read array<int, array{name: string, generated: bool, src: string}> $entry_conversions
+ * @property-read string $path
  * @property-read mixed $human_readable_size
  * @property-read EloquentCollection<int, MediaConvert> $mediaConverts
  * @property-read int|null $media_converts_count
@@ -65,7 +66,6 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media as SpatieMedia;
  * @property string|null $created_by
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
- * @property-read \Modules\Media\Models\array<int, array{name: $entry_conversions
  *
  * @method static Builder<static>|Media whereCollectionName($value)
  * @method static Builder<static>|Media whereConversionsDisk($value)
@@ -189,6 +189,14 @@ class Media extends SpatieMedia
         }
 
         return $conversions;
+    }
+
+    public function getPathAttribute(): string
+    {
+        $relativePath = $this->getPathRelativeToRoot();
+        $directory = dirname($relativePath);
+
+        return $directory === '.' ? '' : $directory;
     }
 
     /** @return array<string, string> */

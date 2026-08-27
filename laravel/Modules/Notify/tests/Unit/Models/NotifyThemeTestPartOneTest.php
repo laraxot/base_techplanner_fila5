@@ -142,8 +142,8 @@ describe('Notify Theme PartOne', function (): void {
         XotBasePest::assertTableHas('notify', 'notify_themes', [
             'id' => $theme->id,
             'view_params' => json_encode($viewParams)]);
-        Assert::assertEquals('Test Company', $theme->view_params['company_name']);
-        Assert::assertEquals('#ef4444', $theme->view_params['primary_color']);
+        Assert::assertEquals('Test Company', TestCase::notifyArrayGet($theme->view_params, 'company_name'));
+        Assert::assertEquals('#ef4444', TestCase::notifyArrayGet($theme->view_params, 'primary_color'));
         Assert::assertEquals('Inter', TestCase::notifyArrayGet($theme->view_params, 'fonts', 'primary'));
         Assert::assertEquals('1200px', TestCase::notifyArrayGet($theme->view_params, 'layout', 'max_width'));
     });

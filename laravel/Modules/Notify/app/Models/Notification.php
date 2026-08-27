@@ -22,11 +22,19 @@ use Override;
  * @method static Builder<static>|Notification query()
  *
  * @property string $id
+ * @property string|null $message
  * @property string $type
  * @property string $notifiable_type
  * @property int $notifiable_id
+ * @property string|int|null $tenant_id
+ * @property string|int|null $user_id
+ * @property string|null $subject_type
+ * @property string|int|null $subject_id
+ * @property array<int, string>|array<string, mixed>|null $channels
+ * @property string|null $status
  * @property array<array-key, mixed> $data
  * @property Carbon|null $read_at
+ * @property Carbon|null $sent_at
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by

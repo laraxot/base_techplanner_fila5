@@ -204,7 +204,7 @@ describe('Mail Template Log PartTwo', function (): void {
 
         Assert::assertCount(1, $welcomeSubjectLogs);
         Assert::assertCount(1, $welcomeTemplateLogs);
-        Assert::assertEquals('Welcome to our platform', XotBasePest::assertFirstModel($welcomeSubjectLogs, MailTemplateLog::class)->data['subject']);
+        Assert::assertEquals('Welcome to our platform', TestCase::notifyArrayGet(XotBasePest::assertFirstModel($welcomeSubjectLogs, MailTemplateLog::class)->data, 'subject'));
         Assert::assertEquals('welcome_template', TestCase::notifyArrayGet(XotBasePest::assertFirstModel($welcomeTemplateLogs, MailTemplateLog::class)->data, 'template'));
     });
 
@@ -234,8 +234,8 @@ describe('Mail Template Log PartTwo', function (): void {
 
         Assert::assertCount(1, $smtpLogs);
         Assert::assertCount(1, $sesLogs);
-        Assert::assertEquals('smtp', XotBasePest::assertFirstModel($smtpLogs, MailTemplateLog::class)->metadata['provider']);
-        Assert::assertEquals('ses', XotBasePest::assertFirstModel($sesLogs, MailTemplateLog::class)->metadata['provider']);
+        Assert::assertEquals('smtp', TestCase::notifyArrayGet(XotBasePest::assertFirstModel($smtpLogs, MailTemplateLog::class)->metadata, 'provider'));
+        Assert::assertEquals('ses', TestCase::notifyArrayGet(XotBasePest::assertFirstModel($sesLogs, MailTemplateLog::class)->metadata, 'provider'));
     });
 
     test('_can_find_by_multiple_criteria', function (): void {
@@ -270,8 +270,8 @@ describe('Mail Template Log PartTwo', function (): void {
 
         Assert::assertCount(1, $smtpWelcomeLogs);
         Assert::assertEquals('sent', XotBasePest::assertFirstModel($smtpWelcomeLogs, MailTemplateLog::class)->status);
-        Assert::assertEquals('smtp', XotBasePest::assertFirstModel($smtpWelcomeLogs, MailTemplateLog::class)->metadata['provider']);
-        Assert::assertEquals('Welcome email', XotBasePest::assertFirstModel($smtpWelcomeLogs, MailTemplateLog::class)->data['subject']);
+        Assert::assertEquals('smtp', TestCase::notifyArrayGet(XotBasePest::assertFirstModel($smtpWelcomeLogs, MailTemplateLog::class)->metadata, 'provider'));
+        Assert::assertEquals('Welcome email', TestCase::notifyArrayGet(XotBasePest::assertFirstModel($smtpWelcomeLogs, MailTemplateLog::class)->data, 'subject'));
     });
 
     test('_can_handle_null_values', function (): void {

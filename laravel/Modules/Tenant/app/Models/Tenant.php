@@ -12,6 +12,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Str;
 use Modules\TechPlanner\Models\Profile;
 use Modules\User\Models\User;
+use Modules\Xot\Models\Traits\HasXotFactory;
 
 /**
  * Modello Tenant per la gestione multi-tenant dell'applicazione.
@@ -23,6 +24,7 @@ use Modules\User\Models\User;
  * @property-read Collection<int, User> $users
  * @property-read int|null $users_count
  *
+ * @method static \Modules\Tenant\Database\Factories\TenantFactory factory($count = null, $state = [])
  * @method static Builder<static>|Tenant newModelQuery()
  * @method static Builder<static>|Tenant newQuery()
  * @method static Builder<static>|Tenant query()
@@ -31,6 +33,8 @@ use Modules\User\Models\User;
  */
 class Tenant extends BaseModel
 {
+    use HasXotFactory;
+
     /**
      * Gli attributi che sono mass assignable.
      */

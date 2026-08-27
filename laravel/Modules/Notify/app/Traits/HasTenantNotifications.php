@@ -21,7 +21,7 @@ use Webmozart\Assert\Assert;
 trait HasTenantNotifications
 {
     /**
-     * @return MorphMany<NotificationLog, Model>
+     * @return MorphMany<NotificationLog, $this>
      */
     public function notifications(): MorphMany
     {
@@ -29,7 +29,7 @@ trait HasTenantNotifications
     }
 
     /**
-     * @return MorphMany<NotificationLog, Model>
+     * @return MorphMany<NotificationLog, $this>
      */
     public function unreadNotifications(): MorphMany
     {
@@ -37,7 +37,7 @@ trait HasTenantNotifications
     }
 
     /**
-     * @return MorphMany<NotificationLog, Model>
+     * @return MorphMany<NotificationLog, $this>
      */
     public function readNotifications(): MorphMany
     {
@@ -45,8 +45,8 @@ trait HasTenantNotifications
     }
 
     /**
-     * @param  Builder<Model>  $query
-     * @return Builder<Model>
+     * @param  Builder<static>  $query
+     * @return Builder<static>
      */
     public function scopeForTenant(Builder $query, ?string $tenantId = null): Builder
     {
@@ -106,7 +106,7 @@ trait HasTenantNotifications
     /**
      * Relazione morph verso NotificationLog filtrata per tenant corrente.
      *
-     * @return MorphMany<NotificationLog, $this>
+     * @return MorphMany<NotificationLog, static>
      */
     protected function tenantNotificationLogs(): MorphMany
     {

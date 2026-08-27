@@ -28,9 +28,23 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property string $model_id
  * @property string|null $contact_type
  * @property string|null $value
+ * @property string|null $first_name
+ * @property string|null $last_name
  * @property string|null $user_id
  * @property string|null $verified_at
  * @property string|null $token
+ * @property int|null $sms_count
+ * @property string|null $sms_status_code
+ * @property string|null $sms_status_txt
+ * @property Carbon|null $sms_sent_at
+ * @property Carbon|null $mail_sent_at
+ * @property int|null $mail_count
+ * @property int|null $usesleft
+ * @property int|null $order_column
+ * @property int|null $duplicate_count
+ * @property string|null $attribute_1
+ * @property string|null $attribute_2
+ * @property string|null $attribute_3
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by

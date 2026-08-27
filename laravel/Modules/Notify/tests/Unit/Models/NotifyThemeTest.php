@@ -139,8 +139,8 @@ describe('Notify Theme', function (): void {
             'id' => $theme->id,
             'view_params' => json_encode($viewParams),
         ]);
-        Assert::assertEquals('Test Company', $theme->view_params['company_name']);
-        Assert::assertEquals('#ef4444', $theme->view_params['primary_color']);
+        Assert::assertEquals('Test Company', TestCase::notifyArrayGet($theme->view_params, 'company_name'));
+        Assert::assertEquals('#ef4444', TestCase::notifyArrayGet($theme->view_params, 'primary_color'));
         Assert::assertEquals('Inter', TestCase::notifyArrayGet($theme->view_params, 'fonts', 'primary'));
         Assert::assertEquals('1200px', TestCase::notifyArrayGet($theme->view_params, 'layout', 'max_width'));
     });
@@ -430,8 +430,8 @@ describe('Notify Theme', function (): void {
 
         Assert::assertCount(1, $highPriorityThemes);
         Assert::assertCount(1, $securityThemes);
-        Assert::assertEquals('high', XotBasePest::assertFirstModel($highPriorityThemes, NotifyTheme::class)->view_params['priority']);
-        Assert::assertEquals('security', XotBasePest::assertFirstModel($securityThemes, NotifyTheme::class)->view_params['category']);
+        Assert::assertEquals('high', TestCase::notifyArrayGet(XotBasePest::assertFirstModel($highPriorityThemes, NotifyTheme::class)->view_params, 'priority'));
+        Assert::assertEquals('security', TestCase::notifyArrayGet(XotBasePest::assertFirstModel($securityThemes, NotifyTheme::class)->view_params, 'category'));
     });
 
     test('_can_find_by_multiple_criteria', function (): void {

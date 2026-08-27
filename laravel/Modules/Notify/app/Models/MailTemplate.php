@@ -33,10 +33,10 @@ use Spatie\Translatable\HasTranslations;
  * @property string|null $name
  * @property string|null $mailable
  * @property string|null $slug
- * @property array<array-key, mixed>|null $subject
- * @property array<array-key, mixed>|null $html_template
- * @property array<array-key, mixed>|null $text_template
- * @property string $version
+ * @property string|array<array-key, mixed>|null $subject
+ * @property string|array<array-key, mixed>|null $html_template
+ * @property string|array<array-key, mixed>|null $text_template
+ * @property string|int $version
  * @property string|null $params
  * @property array<array-key, mixed>|null $sms_template
  * @property int $counter

@@ -9,6 +9,11 @@ use Modules\TechPlanner\Models\Profile;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 
 /**
+ * @property string|null $name
+ * @property string|null $driver
+ * @property array<string, mixed>|null $config
+ * @property bool $is_enabled
+ * @property int|null $priority
  * @property-read Profile|null $creator
  * @property-read MediaCollection<int, Media> $media
  * @property-read int|null $media_count

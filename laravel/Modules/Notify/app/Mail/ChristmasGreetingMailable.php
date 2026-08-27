@@ -35,7 +35,7 @@ class ChristmasGreetingMailable extends Mailable
         $fromAddress = is_string($fromAddress) ? $fromAddress : 'hello@example.com';
 
         return new Envelope(
-            from: new Address((string) config('mail.from.address', 'hello@example.com'), $this->senderName),
+            from: new Address($fromAddress, $this->senderName),
             subject: 'Auguri di Buone Feste e Informazioni Importanti!',
         );
     }

@@ -84,8 +84,7 @@ test('list contacts page exposes expected table columns and filters', function (
 });
 
 test('list mail templates page exposes expected table columns', function (): void {
-    $page = new ListMailTemplates();
-    $columns = \assertNotifyArray($page->getTableColumns());
+    $columns = \assertNotifyArray(ListMailTemplates::mailTemplateTableColumns());
 
     Assert::assertArrayHasKey('slug', $columns);
     Assert::assertInstanceOf(TextColumn::class, $columns['slug']);

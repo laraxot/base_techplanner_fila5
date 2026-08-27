@@ -11,6 +11,16 @@ use Modules\Notify\Database\Factories\NotificationTypeFactory;
 use Override;
 
 /**
+ * @property int $id
+ * @property string|null $name
+ * @property string|null $slug
+ * @property string|null $description
+ * @property string|null $category
+ * @property bool $is_active
+ * @property array<string, mixed>|null $channels
+ * @property array<string, mixed>|null $settings
+ * @property string|null $template
+ *
  * @method static Builder<static>|NotificationType newModelQuery()
  * @method static Builder<static>|NotificationType newQuery()
  * @method static Builder<static>|NotificationType query()
