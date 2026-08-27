@@ -47,6 +47,4 @@ return [
     'sections' => [
         'empty' => ['label' => 'empty', 'heading' => 'empty'],
     ],
-    'label' => 'Send Telegram',
-    'plural_label' => 'Send Telegram (Plurale)',
 ];
