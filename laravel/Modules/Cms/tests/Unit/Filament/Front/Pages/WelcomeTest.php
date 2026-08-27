@@ -6,7 +6,6 @@ use Modules\Cms\Filament\Front\Pages\Welcome;
 use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
 test('Welcome page can be instantiated', function () {
     $page = new Welcome();
 });

@@ -5,7 +5,7 @@
 
 /**
  * A helper file for Laravel, to provide autocomplete information to your IDE
- * Generated for Laravel 13.21.1.
+ * Generated for Laravel 13.29.0.
  *
  * This file should not be included in your code, only analyzed by your IDE!
  *
@@ -1846,6 +1846,7 @@ namespace Illuminate\Support\Facades {
          *
          * @param string $abstract
          * @return string
+         * @throws \LogicException
          * @static
          */
         public static function getAlias($abstract)
@@ -5466,43 +5467,6 @@ namespace Illuminate\Support\Facades {
         }
 
         /**
-         * Get all of the cached values and their expiration times.
-         *
-         * @param bool $unserialize
-         * @return \Illuminate\Cache\array<string, array{value: mixed, expiresAt: float}>
-         * @static
-         */
-        public static function all($unserialize = true)
-        {
-            /** @var \Illuminate\Cache\ArrayStore $instance */
-            return $instance->all($unserialize);
-        }
-
-        /**
-         * Remove all items from the cache.
-         *
-         * @return bool
-         * @static
-         */
-        public static function flush()
-        {
-            /** @var \Illuminate\Cache\ArrayStore $instance */
-            return $instance->flush();
-        }
-
-        /**
-         * Get the cache key prefix.
-         *
-         * @return string
-         * @static
-         */
-        public static function getPrefix()
-        {
-            /** @var \Illuminate\Cache\ArrayStore $instance */
-            return $instance->getPrefix();
-        }
-
-        /**
          * Get a lock instance.
          *
          * @param string $name
@@ -5513,7 +5477,7 @@ namespace Illuminate\Support\Facades {
          */
         public static function lock($name, $seconds = 0, $owner = null)
         {
-            /** @var \Illuminate\Cache\ArrayStore $instance */
+            /** @var \Illuminate\Cache\FileStore $instance */
             return $instance->lock($name, $seconds, $owner);
         }
 
@@ -5527,8 +5491,110 @@ namespace Illuminate\Support\Facades {
          */
         public static function restoreLock($name, $owner)
         {
-            /** @var \Illuminate\Cache\ArrayStore $instance */
+            /** @var \Illuminate\Cache\FileStore $instance */
             return $instance->restoreLock($name, $owner);
+        }
+
+        /**
+         * Atomically refresh the expiration of a cache key if it matches the expected owner.
+         *
+         * @param string $key
+         * @param mixed $expectedOwner
+         * @param int $seconds
+         * @return bool
+         * @static
+         */
+        public static function refreshIfOwned($key, $expectedOwner, $seconds)
+        {
+            /** @var \Illuminate\Cache\FileStore $instance */
+            return $instance->refreshIfOwned($key, $expectedOwner, $seconds);
+        }
+
+        /**
+         * Remove all items from the cache.
+         *
+         * @return bool
+         * @static
+         */
+        public static function flush()
+        {
+            /** @var \Illuminate\Cache\FileStore $instance */
+            return $instance->flush();
+        }
+
+        /**
+         * Get the full path for the given cache key.
+         *
+         * @param string $key
+         * @return string
+         * @static
+         */
+        public static function path($key)
+        {
+            /** @var \Illuminate\Cache\FileStore $instance */
+            return $instance->path($key);
+        }
+
+        /**
+         * Get the Filesystem instance.
+         *
+         * @return \Illuminate\Filesystem\Filesystem
+         * @static
+         */
+        public static function getFilesystem()
+        {
+            /** @var \Illuminate\Cache\FileStore $instance */
+            return $instance->getFilesystem();
+        }
+
+        /**
+         * Get the working directory of the cache.
+         *
+         * @return string
+         * @static
+         */
+        public static function getDirectory()
+        {
+            /** @var \Illuminate\Cache\FileStore $instance */
+            return $instance->getDirectory();
+        }
+
+        /**
+         * Set the working directory of the cache.
+         *
+         * @param string $directory
+         * @return \Illuminate\Cache\FileStore
+         * @static
+         */
+        public static function setDirectory($directory)
+        {
+            /** @var \Illuminate\Cache\FileStore $instance */
+            return $instance->setDirectory($directory);
+        }
+
+        /**
+         * Set the cache directory where locks should be stored.
+         *
+         * @param string|null $lockDirectory
+         * @return \Illuminate\Cache\FileStore
+         * @static
+         */
+        public static function setLockDirectory($lockDirectory)
+        {
+            /** @var \Illuminate\Cache\FileStore $instance */
+            return $instance->setLockDirectory($lockDirectory);
+        }
+
+        /**
+         * Get the cache key prefix.
+         *
+         * @return string
+         * @static
+         */
+        public static function getPrefix()
+        {
+            /** @var \Illuminate\Cache\FileStore $instance */
+            return $instance->getPrefix();
         }
 
         /**
@@ -5539,7 +5605,7 @@ namespace Illuminate\Support\Facades {
          */
         public static function hasSeparateLockStore()
         {
-            /** @var \Illuminate\Cache\ArrayStore $instance */
+            /** @var \Illuminate\Cache\FileStore $instance */
             return $instance->hasSeparateLockStore();
         }
 
@@ -6703,10 +6769,11 @@ namespace Illuminate\Support\Facades {
         /**
          * Get a queued cookie instance.
          *
+         * @template TQueuedDefault
          * @param string $key
-         * @param mixed $default
+         * @param TQueuedDefault|(\Closure(): TQueuedDefault) $default
          * @param string|null $path
-         * @return \Symfony\Component\HttpFoundation\Cookie|null
+         * @return \Symfony\Component\HttpFoundation\Cookie|TQueuedDefault
          * @static
          */
         public static function queued($key, $default = null, $path = null)
@@ -7177,7 +7244,7 @@ namespace Illuminate\Support\Facades {
          * Build a database connection instance from the given configuration.
          *
          * @param array $config
-         * @return \Staudenmeir\LaravelCte\Connections\SQLiteConnection
+         * @return \Staudenmeir\LaravelCte\Connections\MariaDbConnection
          * @static
          */
         public static function build($config)
@@ -7204,7 +7271,7 @@ namespace Illuminate\Support\Facades {
          * @param \UnitEnum|string $name
          * @param array $config
          * @param bool $force
-         * @return \Staudenmeir\LaravelCte\Connections\SQLiteConnection
+         * @return \Staudenmeir\LaravelCte\Connections\MariaDbConnection
          * @throws \RuntimeException
          * @static
          */
@@ -7456,21 +7523,47 @@ namespace Illuminate\Support\Facades {
          */
         public static function getDriverTitle()
         {
-            //Method inherited from \Illuminate\Database\SQLiteConnection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            //Method inherited from \Illuminate\Database\MariaDbConnection 
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->getDriverTitle();
+        }
+
+        /**
+         * Determine if the connected database is a MariaDB database.
+         *
+         * @return bool
+         * @static
+         */
+        public static function isMaria()
+        {
+            //Method inherited from \Illuminate\Database\MariaDbConnection 
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
+            return $instance->isMaria();
+        }
+
+        /**
+         * Get the server version for the connection.
+         *
+         * @return string
+         * @static
+         */
+        public static function getServerVersion()
+        {
+            //Method inherited from \Illuminate\Database\MariaDbConnection 
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
+            return $instance->getServerVersion();
         }
 
         /**
          * Get a schema builder instance for the connection.
          *
-         * @return \Illuminate\Database\Schema\SQLiteBuilder
+         * @return \Illuminate\Database\Schema\MariaDbBuilder
          * @static
          */
         public static function getSchemaBuilder()
         {
-            //Method inherited from \Illuminate\Database\SQLiteConnection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            //Method inherited from \Illuminate\Database\MariaDbConnection 
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->getSchemaBuilder();
         }
 
@@ -7479,14 +7572,43 @@ namespace Illuminate\Support\Facades {
          *
          * @param \Illuminate\Filesystem\Filesystem|null $files
          * @param callable|null $processFactory
-         * @throws \RuntimeException
+         * @return \Illuminate\Database\Schema\MariaDbSchemaState
          * @static
          */
         public static function getSchemaState($files = null, $processFactory = null)
         {
-            //Method inherited from \Illuminate\Database\SQLiteConnection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            //Method inherited from \Illuminate\Database\MariaDbConnection 
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->getSchemaState($files, $processFactory);
+        }
+
+        /**
+         * Run an insert statement against the database.
+         *
+         * @param string $query
+         * @param array $bindings
+         * @param string|null $sequence
+         * @return bool
+         * @static
+         */
+        public static function insert($query, $bindings = [], $sequence = null)
+        {
+            //Method inherited from \Illuminate\Database\MySqlConnection 
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
+            return $instance->insert($query, $bindings, $sequence);
+        }
+
+        /**
+         * Get the connection's last insert ID.
+         *
+         * @return string|int|null
+         * @static
+         */
+        public static function getLastInsertId()
+        {
+            //Method inherited from \Illuminate\Database\MySqlConnection 
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
+            return $instance->getLastInsertId();
         }
 
         /**
@@ -7498,7 +7620,7 @@ namespace Illuminate\Support\Facades {
         public static function useDefaultQueryGrammar()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             $instance->useDefaultQueryGrammar();
         }
 
@@ -7511,7 +7633,7 @@ namespace Illuminate\Support\Facades {
         public static function useDefaultSchemaGrammar()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             $instance->useDefaultSchemaGrammar();
         }
 
@@ -7524,7 +7646,7 @@ namespace Illuminate\Support\Facades {
         public static function useDefaultPostProcessor()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             $instance->useDefaultPostProcessor();
         }
 
@@ -7539,7 +7661,7 @@ namespace Illuminate\Support\Facades {
         public static function table($table, $as = null)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->table($table, $as);
         }
 
@@ -7549,7 +7671,7 @@ namespace Illuminate\Support\Facades {
          */
         public static function query()
         {
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->query();
         }
 
@@ -7565,7 +7687,7 @@ namespace Illuminate\Support\Facades {
         public static function selectOne($query, $bindings = [], $useReadPdo = true)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->selectOne($query, $bindings, $useReadPdo);
         }
 
@@ -7582,7 +7704,7 @@ namespace Illuminate\Support\Facades {
         public static function scalar($query, $bindings = [], $useReadPdo = true)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->scalar($query, $bindings, $useReadPdo);
         }
 
@@ -7597,7 +7719,7 @@ namespace Illuminate\Support\Facades {
         public static function selectFromWriteConnection($query, $bindings = [])
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->selectFromWriteConnection($query, $bindings);
         }
 
@@ -7614,7 +7736,7 @@ namespace Illuminate\Support\Facades {
         public static function select($query, $bindings = [], $useReadPdo = true, $fetchUsing = [])
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->select($query, $bindings, $useReadPdo, $fetchUsing);
         }
 
@@ -7631,7 +7753,7 @@ namespace Illuminate\Support\Facades {
         public static function selectResultSets($query, $bindings = [], $useReadPdo = true, $fetchUsing = [])
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->selectResultSets($query, $bindings, $useReadPdo, $fetchUsing);
         }
 
@@ -7648,23 +7770,8 @@ namespace Illuminate\Support\Facades {
         public static function cursor($query, $bindings = [], $useReadPdo = true, $fetchUsing = [])
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->cursor($query, $bindings, $useReadPdo, $fetchUsing);
-        }
-
-        /**
-         * Run an insert statement against the database.
-         *
-         * @param string $query
-         * @param array $bindings
-         * @return bool
-         * @static
-         */
-        public static function insert($query, $bindings = [])
-        {
-            //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
-            return $instance->insert($query, $bindings);
         }
 
         /**
@@ -7678,7 +7785,7 @@ namespace Illuminate\Support\Facades {
         public static function update($query, $bindings = [])
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->update($query, $bindings);
         }
 
@@ -7693,7 +7800,7 @@ namespace Illuminate\Support\Facades {
         public static function delete($query, $bindings = [])
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->delete($query, $bindings);
         }
 
@@ -7708,7 +7815,7 @@ namespace Illuminate\Support\Facades {
         public static function statement($query, $bindings = [])
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->statement($query, $bindings);
         }
 
@@ -7723,7 +7830,7 @@ namespace Illuminate\Support\Facades {
         public static function affectingStatement($query, $bindings = [])
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->affectingStatement($query, $bindings);
         }
 
@@ -7737,7 +7844,7 @@ namespace Illuminate\Support\Facades {
         public static function unprepared($query)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->unprepared($query);
         }
 
@@ -7750,7 +7857,7 @@ namespace Illuminate\Support\Facades {
         public static function threadCount()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->threadCount();
         }
 
@@ -7764,7 +7871,7 @@ namespace Illuminate\Support\Facades {
         public static function pretend($callback)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->pretend($callback);
         }
 
@@ -7779,7 +7886,7 @@ namespace Illuminate\Support\Facades {
         public static function withoutPretending($callback)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->withoutPretending($callback);
         }
 
@@ -7794,7 +7901,7 @@ namespace Illuminate\Support\Facades {
         public static function bindValues($statement, $bindings)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             $instance->bindValues($statement, $bindings);
         }
 
@@ -7808,7 +7915,7 @@ namespace Illuminate\Support\Facades {
         public static function prepareBindings($bindings)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->prepareBindings($bindings);
         }
 
@@ -7824,7 +7931,7 @@ namespace Illuminate\Support\Facades {
         public static function logQuery($query, $bindings, $time = null)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             $instance->logQuery($query, $bindings, $time);
         }
 
@@ -7839,7 +7946,7 @@ namespace Illuminate\Support\Facades {
         public static function whenQueryingForLongerThan($threshold, $handler)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             $instance->whenQueryingForLongerThan($threshold, $handler);
         }
 
@@ -7852,7 +7959,7 @@ namespace Illuminate\Support\Facades {
         public static function allowQueryDurationHandlersToRunAgain()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             $instance->allowQueryDurationHandlersToRunAgain();
         }
 
@@ -7865,7 +7972,7 @@ namespace Illuminate\Support\Facades {
         public static function totalQueryDuration()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->totalQueryDuration();
         }
 
@@ -7878,7 +7985,7 @@ namespace Illuminate\Support\Facades {
         public static function resetTotalQueryDuration()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             $instance->resetTotalQueryDuration();
         }
 
@@ -7891,7 +7998,7 @@ namespace Illuminate\Support\Facades {
         public static function reconnectIfMissingConnection()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             $instance->reconnectIfMissingConnection();
         }
 
@@ -7899,13 +8006,13 @@ namespace Illuminate\Support\Facades {
          * Register a hook to be run just before a database transaction is started.
          *
          * @param \Closure $callback
-         * @return \Staudenmeir\LaravelCte\Connections\SQLiteConnection
+         * @return \Staudenmeir\LaravelCte\Connections\MariaDbConnection
          * @static
          */
         public static function beforeStartingTransaction($callback)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->beforeStartingTransaction($callback);
         }
 
@@ -7913,13 +8020,13 @@ namespace Illuminate\Support\Facades {
          * Register a hook to be run just before a database query is executed.
          *
          * @param \Closure $callback
-         * @return \Staudenmeir\LaravelCte\Connections\SQLiteConnection
+         * @return \Staudenmeir\LaravelCte\Connections\MariaDbConnection
          * @static
          */
         public static function beforeExecuting($callback)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->beforeExecuting($callback);
         }
 
@@ -7933,7 +8040,7 @@ namespace Illuminate\Support\Facades {
         public static function listen($callback)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             $instance->listen($callback);
         }
 
@@ -7947,7 +8054,7 @@ namespace Illuminate\Support\Facades {
         public static function raw($value)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->raw($value);
         }
 
@@ -7963,7 +8070,7 @@ namespace Illuminate\Support\Facades {
         public static function escape($value, $binary = false)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->escape($value, $binary);
         }
 
@@ -7976,7 +8083,7 @@ namespace Illuminate\Support\Facades {
         public static function hasModifiedRecords()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->hasModifiedRecords();
         }
 
@@ -7990,7 +8097,7 @@ namespace Illuminate\Support\Facades {
         public static function recordsHaveBeenModified($value = true)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             $instance->recordsHaveBeenModified($value);
         }
 
@@ -7998,13 +8105,13 @@ namespace Illuminate\Support\Facades {
          * Set the record modification state.
          *
          * @param bool $value
-         * @return \Staudenmeir\LaravelCte\Connections\SQLiteConnection
+         * @return \Staudenmeir\LaravelCte\Connections\MariaDbConnection
          * @static
          */
         public static function setRecordModificationState($value)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->setRecordModificationState($value);
         }
 
@@ -8017,7 +8124,7 @@ namespace Illuminate\Support\Facades {
         public static function forgetRecordModificationState()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             $instance->forgetRecordModificationState();
         }
 
@@ -8025,13 +8132,13 @@ namespace Illuminate\Support\Facades {
          * Indicate that the connection should use the write PDO connection for reads.
          *
          * @param bool $value
-         * @return \Staudenmeir\LaravelCte\Connections\SQLiteConnection
+         * @return \Staudenmeir\LaravelCte\Connections\MariaDbConnection
          * @static
          */
         public static function useWriteConnectionWhenReading($value = true)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->useWriteConnectionWhenReading($value);
         }
 
@@ -8044,7 +8151,7 @@ namespace Illuminate\Support\Facades {
         public static function getPdo()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->getPdo();
         }
 
@@ -8057,7 +8164,7 @@ namespace Illuminate\Support\Facades {
         public static function getRawPdo()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->getRawPdo();
         }
 
@@ -8070,7 +8177,7 @@ namespace Illuminate\Support\Facades {
         public static function getReadPdo()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->getReadPdo();
         }
 
@@ -8083,7 +8190,7 @@ namespace Illuminate\Support\Facades {
         public static function getRawReadPdo()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->getRawReadPdo();
         }
 
@@ -8096,7 +8203,7 @@ namespace Illuminate\Support\Facades {
         public static function getDirectPdo()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->getDirectPdo();
         }
 
@@ -8109,7 +8216,7 @@ namespace Illuminate\Support\Facades {
         public static function getRawDirectPdo()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->getRawDirectPdo();
         }
 
@@ -8117,13 +8224,13 @@ namespace Illuminate\Support\Facades {
          * Set the PDO connection.
          *
          * @param \PDO|\Closure|null $pdo
-         * @return \Staudenmeir\LaravelCte\Connections\SQLiteConnection
+         * @return \Staudenmeir\LaravelCte\Connections\MariaDbConnection
          * @static
          */
         public static function setPdo($pdo)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->setPdo($pdo);
         }
 
@@ -8131,13 +8238,13 @@ namespace Illuminate\Support\Facades {
          * Set the PDO connection used for reading.
          *
          * @param \PDO|\Closure|null $pdo
-         * @return \Staudenmeir\LaravelCte\Connections\SQLiteConnection
+         * @return \Staudenmeir\LaravelCte\Connections\MariaDbConnection
          * @static
          */
         public static function setReadPdo($pdo)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->setReadPdo($pdo);
         }
 
@@ -8145,13 +8252,13 @@ namespace Illuminate\Support\Facades {
          * Set the read PDO connection configuration.
          *
          * @param array $config
-         * @return \Staudenmeir\LaravelCte\Connections\SQLiteConnection
+         * @return \Staudenmeir\LaravelCte\Connections\MariaDbConnection
          * @static
          */
         public static function setReadPdoConfig($config)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->setReadPdoConfig($config);
         }
 
@@ -8159,13 +8266,13 @@ namespace Illuminate\Support\Facades {
          * Set the PDO connection used for direct connections.
          *
          * @param \PDO|\Closure|null $pdo
-         * @return \Staudenmeir\LaravelCte\Connections\SQLiteConnection
+         * @return \Staudenmeir\LaravelCte\Connections\MariaDbConnection
          * @static
          */
         public static function setDirectPdo($pdo)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->setDirectPdo($pdo);
         }
 
@@ -8173,13 +8280,13 @@ namespace Illuminate\Support\Facades {
          * Set the direct PDO connection configuration.
          *
          * @param array $config
-         * @return \Staudenmeir\LaravelCte\Connections\SQLiteConnection
+         * @return \Staudenmeir\LaravelCte\Connections\MariaDbConnection
          * @static
          */
         public static function setDirectPdoConfig($config)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->setDirectPdoConfig($config);
         }
 
@@ -8192,7 +8299,7 @@ namespace Illuminate\Support\Facades {
         public static function getDirectPdoConfig()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->getDirectPdoConfig();
         }
 
@@ -8205,7 +8312,7 @@ namespace Illuminate\Support\Facades {
         public static function hasDirectConnection()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->hasDirectConnection();
         }
 
@@ -8218,7 +8325,7 @@ namespace Illuminate\Support\Facades {
         public static function getName()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->getName();
         }
 
@@ -8231,7 +8338,7 @@ namespace Illuminate\Support\Facades {
         public static function getNameWithReadWriteType()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->getNameWithReadWriteType();
         }
 
@@ -8245,7 +8352,7 @@ namespace Illuminate\Support\Facades {
         public static function getConfig($option = null)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->getConfig($option);
         }
 
@@ -8258,7 +8365,7 @@ namespace Illuminate\Support\Facades {
         public static function getDriverName()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->getDriverName();
         }
 
@@ -8271,7 +8378,7 @@ namespace Illuminate\Support\Facades {
         public static function getQueryGrammar()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->getQueryGrammar();
         }
 
@@ -8279,13 +8386,13 @@ namespace Illuminate\Support\Facades {
          * Set the query grammar used by the connection.
          *
          * @param \Illuminate\Database\Query\Grammars\Grammar $grammar
-         * @return \Staudenmeir\LaravelCte\Connections\SQLiteConnection
+         * @return \Staudenmeir\LaravelCte\Connections\MariaDbConnection
          * @static
          */
         public static function setQueryGrammar($grammar)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->setQueryGrammar($grammar);
         }
 
@@ -8298,7 +8405,7 @@ namespace Illuminate\Support\Facades {
         public static function getSchemaGrammar()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->getSchemaGrammar();
         }
 
@@ -8306,13 +8413,13 @@ namespace Illuminate\Support\Facades {
          * Set the schema grammar used by the connection.
          *
          * @param \Illuminate\Database\Schema\Grammars\Grammar $grammar
-         * @return \Staudenmeir\LaravelCte\Connections\SQLiteConnection
+         * @return \Staudenmeir\LaravelCte\Connections\MariaDbConnection
          * @static
          */
         public static function setSchemaGrammar($grammar)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->setSchemaGrammar($grammar);
         }
 
@@ -8325,7 +8432,7 @@ namespace Illuminate\Support\Facades {
         public static function getPostProcessor()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->getPostProcessor();
         }
 
@@ -8333,13 +8440,13 @@ namespace Illuminate\Support\Facades {
          * Set the query post processor used by the connection.
          *
          * @param \Illuminate\Database\Query\Processors\Processor $processor
-         * @return \Staudenmeir\LaravelCte\Connections\SQLiteConnection
+         * @return \Staudenmeir\LaravelCte\Connections\MariaDbConnection
          * @static
          */
         public static function setPostProcessor($processor)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->setPostProcessor($processor);
         }
 
@@ -8352,7 +8459,7 @@ namespace Illuminate\Support\Facades {
         public static function getEventDispatcher()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->getEventDispatcher();
         }
 
@@ -8360,13 +8467,13 @@ namespace Illuminate\Support\Facades {
          * Set the event dispatcher instance on the connection.
          *
          * @param \Illuminate\Contracts\Events\Dispatcher $events
-         * @return \Staudenmeir\LaravelCte\Connections\SQLiteConnection
+         * @return \Staudenmeir\LaravelCte\Connections\MariaDbConnection
          * @static
          */
         public static function setEventDispatcher($events)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->setEventDispatcher($events);
         }
 
@@ -8379,7 +8486,7 @@ namespace Illuminate\Support\Facades {
         public static function unsetEventDispatcher()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             $instance->unsetEventDispatcher();
         }
 
@@ -8387,13 +8494,13 @@ namespace Illuminate\Support\Facades {
          * Set the transaction manager instance on the connection.
          *
          * @param \Illuminate\Database\DatabaseTransactionsManager $manager
-         * @return \Staudenmeir\LaravelCte\Connections\SQLiteConnection
+         * @return \Staudenmeir\LaravelCte\Connections\MariaDbConnection
          * @static
          */
         public static function setTransactionManager($manager)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->setTransactionManager($manager);
         }
 
@@ -8406,7 +8513,7 @@ namespace Illuminate\Support\Facades {
         public static function unsetTransactionManager()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             $instance->unsetTransactionManager();
         }
 
@@ -8419,7 +8526,7 @@ namespace Illuminate\Support\Facades {
         public static function pretending()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->pretending();
         }
 
@@ -8432,7 +8539,7 @@ namespace Illuminate\Support\Facades {
         public static function getQueryLog()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->getQueryLog();
         }
 
@@ -8445,7 +8552,7 @@ namespace Illuminate\Support\Facades {
         public static function getRawQueryLog()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->getRawQueryLog();
         }
 
@@ -8458,7 +8565,7 @@ namespace Illuminate\Support\Facades {
         public static function flushQueryLog()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             $instance->flushQueryLog();
         }
 
@@ -8471,7 +8578,7 @@ namespace Illuminate\Support\Facades {
         public static function enableQueryLog()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             $instance->enableQueryLog();
         }
 
@@ -8484,7 +8591,7 @@ namespace Illuminate\Support\Facades {
         public static function disableQueryLog()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             $instance->disableQueryLog();
         }
 
@@ -8497,7 +8604,7 @@ namespace Illuminate\Support\Facades {
         public static function logging()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->logging();
         }
 
@@ -8510,7 +8617,7 @@ namespace Illuminate\Support\Facades {
         public static function getDatabaseName()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->getDatabaseName();
         }
 
@@ -8518,13 +8625,13 @@ namespace Illuminate\Support\Facades {
          * Set the name of the connected database.
          *
          * @param string $database
-         * @return \Staudenmeir\LaravelCte\Connections\SQLiteConnection
+         * @return \Staudenmeir\LaravelCte\Connections\MariaDbConnection
          * @static
          */
         public static function setDatabaseName($database)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->setDatabaseName($database);
         }
 
@@ -8532,13 +8639,13 @@ namespace Illuminate\Support\Facades {
          * Set the read / write type of the connection.
          *
          * @param string|null $readWriteType
-         * @return \Staudenmeir\LaravelCte\Connections\SQLiteConnection
+         * @return \Staudenmeir\LaravelCte\Connections\MariaDbConnection
          * @static
          */
         public static function setReadWriteType($readWriteType)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->setReadWriteType($readWriteType);
         }
 
@@ -8551,7 +8658,7 @@ namespace Illuminate\Support\Facades {
         public static function getTablePrefix()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->getTablePrefix();
         }
 
@@ -8559,13 +8666,13 @@ namespace Illuminate\Support\Facades {
          * Set the table prefix in use by the connection.
          *
          * @param string $prefix
-         * @return \Staudenmeir\LaravelCte\Connections\SQLiteConnection
+         * @return \Staudenmeir\LaravelCte\Connections\MariaDbConnection
          * @static
          */
         public static function setTablePrefix($prefix)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->setTablePrefix($prefix);
         }
 
@@ -8580,21 +8687,8 @@ namespace Illuminate\Support\Facades {
         public static function withoutTablePrefix($callback)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->withoutTablePrefix($callback);
-        }
-
-        /**
-         * Get the server version for the connection.
-         *
-         * @return string
-         * @static
-         */
-        public static function getServerVersion()
-        {
-            //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
-            return $instance->getServerVersion();
         }
 
         /**
@@ -8608,7 +8702,7 @@ namespace Illuminate\Support\Facades {
         public static function resolverFor($driver, $callback)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            \Staudenmeir\LaravelCte\Connections\SQLiteConnection::resolverFor($driver, $callback);
+            \Staudenmeir\LaravelCte\Connections\MariaDbConnection::resolverFor($driver, $callback);
         }
 
         /**
@@ -8621,7 +8715,7 @@ namespace Illuminate\Support\Facades {
         public static function getResolver($driver)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            return \Staudenmeir\LaravelCte\Connections\SQLiteConnection::getResolver($driver);
+            return \Staudenmeir\LaravelCte\Connections\MariaDbConnection::getResolver($driver);
         }
 
         /**
@@ -8637,7 +8731,7 @@ namespace Illuminate\Support\Facades {
         public static function transaction($callback, $attempts = 1)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->transaction($callback, $attempts);
         }
 
@@ -8651,7 +8745,7 @@ namespace Illuminate\Support\Facades {
         public static function beginTransaction()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             $instance->beginTransaction();
         }
 
@@ -8665,7 +8759,7 @@ namespace Illuminate\Support\Facades {
         public static function commit()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             $instance->commit();
         }
 
@@ -8680,7 +8774,7 @@ namespace Illuminate\Support\Facades {
         public static function rollBack($toLevel = null)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             $instance->rollBack($toLevel);
         }
 
@@ -8693,7 +8787,7 @@ namespace Illuminate\Support\Facades {
         public static function transactionLevel()
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             return $instance->transactionLevel();
         }
 
@@ -8708,7 +8802,7 @@ namespace Illuminate\Support\Facades {
         public static function afterCommit($callback)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             $instance->afterCommit($callback);
         }
 
@@ -8723,7 +8817,7 @@ namespace Illuminate\Support\Facades {
         public static function afterRollBack($callback)
         {
             //Method inherited from \Illuminate\Database\Connection 
-            /** @var \Staudenmeir\LaravelCte\Connections\SQLiteConnection $instance */
+            /** @var \Staudenmeir\LaravelCte\Connections\MariaDbConnection $instance */
             $instance->afterRollBack($callback);
         }
 
@@ -10629,9 +10723,23 @@ namespace Illuminate\Support\Facades {
         }
 
         /**
+         * Execute a callback while requests are created without global middleware or global options.
+         *
+         * @template TReturn
+         * @param (\Closure(): TReturn) $callback
+         * @return TReturn
+         * @static
+         */
+        public static function withoutGlobalConfiguration($callback)
+        {
+            /** @var \Illuminate\Http\Client\Factory $instance */
+            return $instance->withoutGlobalConfiguration($callback);
+        }
+
+        /**
          * Create a new response instance for use during stubbing.
          *
-         * @param array|string|null $body
+         * @param \Psr\Http\Message\StreamInterface|array|string|resource|null $body
          * @param int $status
          * @param array $headers
          * @return \GuzzleHttp\Promise\PromiseInterface
@@ -10645,9 +10753,9 @@ namespace Illuminate\Support\Facades {
         /**
          * Create a new PSR-7 response instance for use during stubbing.
          *
-         * @param array|string|null $body
+         * @param \Psr\Http\Message\StreamInterface|array|string|resource|null $body
          * @param int $status
-         * @param array<string, mixed> $headers
+         * @param array $headers
          * @return \GuzzleHttp\Psr7\Response
          * @throws \InvalidArgumentException
          * @static
@@ -10660,9 +10768,9 @@ namespace Illuminate\Support\Facades {
         /**
          * Create a new RequestException instance for use during stubbing.
          *
-         * @param array|string|null $body
+         * @param \Psr\Http\Message\StreamInterface|array|string|resource|null $body
          * @param int $status
-         * @param array<string, mixed> $headers
+         * @param array $headers
          * @return \Illuminate\Http\Client\RequestException
          * @static
          */
@@ -11006,6 +11114,18 @@ namespace Illuminate\Support\Facades {
         {
             /** @var \Illuminate\Image\ImageManager $instance */
             return $instance->fromBytes($contents);
+        }
+
+        /**
+         * Create an image instance from a stream.
+         *
+         * @param resource $stream
+         * @static
+         */
+        public static function fromStream($stream)
+        {
+            /** @var \Illuminate\Image\ImageManager $instance */
+            return $instance->fromStream($stream);
         }
 
         /**
@@ -11916,9 +12036,6 @@ namespace Illuminate\Support\Facades {
      * @method static \Illuminate\Mail\SentMessage|null html(string $html, mixed $callback)
      * @method static \Illuminate\Mail\SentMessage|null plain(string $view, array $data, mixed $callback)
      * @method static string render(string|array $view, array $data = [])
-     * @method static mixed onQueue(\BackedEnum|string|null $queue, \Illuminate\Contracts\Mail\Mailable $view)
-     * @method static mixed queueOn(string $queue, \Illuminate\Contracts\Mail\Mailable $view)
-     * @method static mixed laterOn(string $queue, \DateTimeInterface|\DateInterval|int $delay, \Illuminate\Contracts\Mail\Mailable $view)
      * @method static \Symfony\Component\Mailer\Transport\TransportInterface getSymfonyTransport()
      * @method static \Illuminate\Contracts\View\Factory getViewFactory()
      * @method static void setSymfonyTransport(\Symfony\Component\Mailer\Transport\TransportInterface $transport)
@@ -12387,7 +12504,7 @@ namespace Illuminate\Support\Facades {
          * Queue a new message for sending.
          *
          * @param \Illuminate\Contracts\Mail\Mailable|string|array $view
-         * @param string|null $queue
+         * @param \BackedEnum|string|null $queue
          * @return mixed
          * @static
          */
@@ -12395,6 +12512,34 @@ namespace Illuminate\Support\Facades {
         {
             /** @var \Illuminate\Support\Testing\Fakes\MailFake $instance */
             return $instance->queue($view, $queue);
+        }
+
+        /**
+         * Queue a new mail message for sending on the given queue.
+         *
+         * @param \BackedEnum|string|null $queue
+         * @param \Illuminate\Contracts\Mail\Mailable $view
+         * @return mixed
+         * @static
+         */
+        public static function onQueue($queue, $view)
+        {
+            /** @var \Illuminate\Support\Testing\Fakes\MailFake $instance */
+            return $instance->onQueue($queue, $view);
+        }
+
+        /**
+         * Queue a new mail message for sending on the given queue.
+         *
+         * @param \BackedEnum|string|null $queue
+         * @param \Illuminate\Contracts\Mail\Mailable $view
+         * @return mixed
+         * @static
+         */
+        public static function queueOn($queue, $view)
+        {
+            /** @var \Illuminate\Support\Testing\Fakes\MailFake $instance */
+            return $instance->queueOn($queue, $view);
         }
 
         /**
@@ -12410,6 +12555,21 @@ namespace Illuminate\Support\Facades {
         {
             /** @var \Illuminate\Support\Testing\Fakes\MailFake $instance */
             return $instance->later($delay, $view, $queue);
+        }
+
+        /**
+         * Queue a new e-mail message for sending after (n) seconds on the given queue.
+         *
+         * @param string|null $queue
+         * @param \DateTimeInterface|\DateInterval|int $delay
+         * @param \Illuminate\Contracts\Mail\Mailable $view
+         * @return mixed
+         * @static
+         */
+        public static function laterOn($queue, $delay, $view)
+        {
+            /** @var \Illuminate\Support\Testing\Fakes\MailFake $instance */
+            return $instance->laterOn($queue, $delay, $view);
         }
 
             }
@@ -13046,7 +13206,7 @@ namespace Illuminate\Support\Facades {
         /**
          * Assert that a process was recorded matching a given truth test.
          *
-         * @param \Closure|string $callback
+         * @param \Closure|array<array-key, string>|string $callback
          * @return \Illuminate\Process\Factory
          * @static
          */
@@ -13059,7 +13219,7 @@ namespace Illuminate\Support\Facades {
         /**
          * Assert that a process was recorded a given number of times matching a given truth test.
          *
-         * @param \Closure|string $callback
+         * @param \Closure|array<array-key, string>|string $callback
          * @param int $times
          * @return \Illuminate\Process\Factory
          * @static
@@ -13071,9 +13231,22 @@ namespace Illuminate\Support\Facades {
         }
 
         /**
+         * Assert that the given processes were run in the given order.
+         *
+         * @param list<\Closure|array<array-key, string>|string> $callbacks
+         * @return \Illuminate\Process\Factory
+         * @static
+         */
+        public static function assertRanInOrder($callbacks)
+        {
+            /** @var \Illuminate\Process\Factory $instance */
+            return $instance->assertRanInOrder($callbacks);
+        }
+
+        /**
          * Assert that a process was not recorded matching a given truth test.
          *
-         * @param \Closure|string $callback
+         * @param \Closure|array<array-key, string>|string $callback
          * @return \Illuminate\Process\Factory
          * @static
          */
@@ -13086,7 +13259,7 @@ namespace Illuminate\Support\Facades {
         /**
          * Assert that a process was not recorded matching a given truth test.
          *
-         * @param \Closure|string $callback
+         * @param \Closure|array<array-key, string>|string $callback
          * @return \Illuminate\Process\Factory
          * @static
          */
@@ -13340,6 +13513,21 @@ namespace Illuminate\Support\Facades {
         }
 
         /**
+         * Forward the given queue to another queue and/or connection.
+         *
+         * @param array<string, \UnitEnum|string>|\UnitEnum|string $queue
+         * @param \UnitEnum|string|null $to
+         * @param \UnitEnum|string|null $connection
+         * @return void
+         * @static
+         */
+        public static function forward($queue, $to = null, $connection = null)
+        {
+            /** @var \Illuminate\Queue\QueueManager $instance */
+            $instance->forward($queue, $to, $connection);
+        }
+
+        /**
          * Determine if the driver is connected.
          *
          * @param \UnitEnum|string|null $name
@@ -13395,6 +13583,18 @@ namespace Illuminate\Support\Facades {
         }
 
         /**
+         * Pause job processing for all queues on all connections.
+         *
+         * @return void
+         * @static
+         */
+        public static function pauseAll()
+        {
+            /** @var \Illuminate\Queue\QueueManager $instance */
+            $instance->pauseAll();
+        }
+
+        /**
          * Resume a paused queue by its connection and name.
          *
          * @param string $connection
@@ -13406,6 +13606,20 @@ namespace Illuminate\Support\Facades {
         {
             /** @var \Illuminate\Queue\QueueManager $instance */
             $instance->resume($connection, $queue);
+        }
+
+        /**
+         * Resume job processing for all queues on all connections.
+         *
+         * Queues paused individually are not affected.
+         *
+         * @return void
+         * @static
+         */
+        public static function resumeAll()
+        {
+            /** @var \Illuminate\Queue\QueueManager $instance */
+            $instance->resumeAll();
         }
 
         /**
@@ -13837,6 +14051,42 @@ namespace Illuminate\Support\Facades {
         }
 
         /**
+         * Get the number of pending jobs across every queue.
+         *
+         * @return int
+         * @static
+         */
+        public static function totalPendingSize()
+        {
+            /** @var \Illuminate\Support\Testing\Fakes\QueueFake $instance */
+            return $instance->totalPendingSize();
+        }
+
+        /**
+         * Get the number of delayed jobs across every queue.
+         *
+         * @return int
+         * @static
+         */
+        public static function totalDelayedSize()
+        {
+            /** @var \Illuminate\Support\Testing\Fakes\QueueFake $instance */
+            return $instance->totalDelayedSize();
+        }
+
+        /**
+         * Get the number of reserved jobs across every queue.
+         *
+         * @return int
+         * @static
+         */
+        public static function totalReservedSize()
+        {
+            /** @var \Illuminate\Support\Testing\Fakes\QueueFake $instance */
+            return $instance->totalReservedSize();
+        }
+
+        /**
          * Get the pending jobs for the given queue.
          *
          * @param \UnitEnum|string|null $queue
@@ -14169,6 +14419,89 @@ namespace Illuminate\Support\Facades {
         }
 
         /**
+         * Release a reserved job back onto the queue after (n) seconds.
+         *
+         * @param string $queue
+         * @param \Illuminate\Queue\Jobs\DatabaseJobRecord $job
+         * @param int $delay
+         * @return mixed
+         * @static
+         */
+        public static function release($queue, $job, $delay)
+        {
+            /** @var \Illuminate\Queue\DatabaseQueue $instance */
+            return $instance->release($queue, $job, $delay);
+        }
+
+        /**
+         * Delete a reserved job from the queue.
+         *
+         * @param string $queue
+         * @param string $id
+         * @return void
+         * @throws \Throwable
+         * @static
+         */
+        public static function deleteReserved($queue, $id)
+        {
+            /** @var \Illuminate\Queue\DatabaseQueue $instance */
+            $instance->deleteReserved($queue, $id);
+        }
+
+        /**
+         * Delete a reserved job from the reserved queue and release it.
+         *
+         * @param string $queue
+         * @param \Illuminate\Queue\Jobs\DatabaseJob $job
+         * @param int $delay
+         * @return void
+         * @static
+         */
+        public static function deleteAndRelease($queue, $job, $delay)
+        {
+            /** @var \Illuminate\Queue\DatabaseQueue $instance */
+            $instance->deleteAndRelease($queue, $job, $delay);
+        }
+
+        /**
+         * Delete all of the jobs from the queue.
+         *
+         * @param \UnitEnum|string|null $queue
+         * @return int
+         * @static
+         */
+        public static function clear($queue = null)
+        {
+            /** @var \Illuminate\Queue\DatabaseQueue $instance */
+            return $instance->clear($queue);
+        }
+
+        /**
+         * Get the queue or return the default.
+         *
+         * @param \UnitEnum|string|null $queue
+         * @return string
+         * @static
+         */
+        public static function getQueue($queue)
+        {
+            /** @var \Illuminate\Queue\DatabaseQueue $instance */
+            return $instance->getQueue($queue);
+        }
+
+        /**
+         * Get the underlying database instance.
+         *
+         * @return \Illuminate\Database\Connection
+         * @static
+         */
+        public static function getDatabase()
+        {
+            /** @var \Illuminate\Queue\DatabaseQueue $instance */
+            return $instance->getDatabase();
+        }
+
+        /**
          * Get the maximum number of attempts for an object-based queue handler.
          *
          * @param mixed $job
@@ -14178,7 +14511,7 @@ namespace Illuminate\Support\Facades {
         public static function getJobTries($job)
         {
             //Method inherited from \Illuminate\Queue\Queue 
-            /** @var \Illuminate\Queue\SyncQueue $instance */
+            /** @var \Illuminate\Queue\DatabaseQueue $instance */
             return $instance->getJobTries($job);
         }
 
@@ -14192,7 +14525,7 @@ namespace Illuminate\Support\Facades {
         public static function getJobBackoff($job)
         {
             //Method inherited from \Illuminate\Queue\Queue 
-            /** @var \Illuminate\Queue\SyncQueue $instance */
+            /** @var \Illuminate\Queue\DatabaseQueue $instance */
             return $instance->getJobBackoff($job);
         }
 
@@ -14206,7 +14539,7 @@ namespace Illuminate\Support\Facades {
         public static function getJobExpiration($job)
         {
             //Method inherited from \Illuminate\Queue\Queue 
-            /** @var \Illuminate\Queue\SyncQueue $instance */
+            /** @var \Illuminate\Queue\DatabaseQueue $instance */
             return $instance->getJobExpiration($job);
         }
 
@@ -14220,7 +14553,7 @@ namespace Illuminate\Support\Facades {
         public static function createPayloadUsing($callback)
         {
             //Method inherited from \Illuminate\Queue\Queue 
-            \Illuminate\Queue\SyncQueue::createPayloadUsing($callback);
+            \Illuminate\Queue\DatabaseQueue::createPayloadUsing($callback);
         }
 
         /**
@@ -14232,20 +14565,20 @@ namespace Illuminate\Support\Facades {
         public static function getConfig()
         {
             //Method inherited from \Illuminate\Queue\Queue 
-            /** @var \Illuminate\Queue\SyncQueue $instance */
+            /** @var \Illuminate\Queue\DatabaseQueue $instance */
             return $instance->getConfig();
         }
 
         /**
          * Set the queue configuration array.
          *
-         * @return \Illuminate\Queue\SyncQueue
+         * @return \Illuminate\Queue\DatabaseQueue
          * @static
          */
         public static function setConfig($config)
         {
             //Method inherited from \Illuminate\Queue\Queue 
-            /** @var \Illuminate\Queue\SyncQueue $instance */
+            /** @var \Illuminate\Queue\DatabaseQueue $instance */
             return $instance->setConfig($config);
         }
 
@@ -14258,7 +14591,7 @@ namespace Illuminate\Support\Facades {
         public static function getContainer()
         {
             //Method inherited from \Illuminate\Queue\Queue 
-            /** @var \Illuminate\Queue\SyncQueue $instance */
+            /** @var \Illuminate\Queue\DatabaseQueue $instance */
             return $instance->getContainer();
         }
 
@@ -14271,7 +14604,7 @@ namespace Illuminate\Support\Facades {
         public static function setContainer($container)
         {
             //Method inherited from \Illuminate\Queue\Queue 
-            /** @var \Illuminate\Queue\SyncQueue $instance */
+            /** @var \Illuminate\Queue\DatabaseQueue $instance */
             $instance->setContainer($container);
         }
 
@@ -14472,6 +14805,57 @@ namespace Illuminate\Support\Facades {
         {
             /** @var \Illuminate\Cache\RateLimiter $instance */
             return $instance->cleanRateLimiterKey($key);
+        }
+
+        /**
+         * Register a custom macro.
+         *
+         * @param string $name
+         * @param object|callable $macro
+         * @param-closure-this static  $macro
+         * @return void
+         * @static
+         */
+        public static function macro($name, $macro)
+        {
+            \Illuminate\Cache\RateLimiter::macro($name, $macro);
+        }
+
+        /**
+         * Mix another object into the class.
+         *
+         * @param object $mixin
+         * @param bool $replace
+         * @return void
+         * @throws \ReflectionException
+         * @static
+         */
+        public static function mixin($mixin, $replace = true)
+        {
+            \Illuminate\Cache\RateLimiter::mixin($mixin, $replace);
+        }
+
+        /**
+         * Checks if macro is registered.
+         *
+         * @param string $name
+         * @return bool
+         * @static
+         */
+        public static function hasMacro($name)
+        {
+            return \Illuminate\Cache\RateLimiter::hasMacro($name);
+        }
+
+        /**
+         * Flush the existing macros.
+         *
+         * @return void
+         * @static
+         */
+        public static function flushMacros()
+        {
+            \Illuminate\Cache\RateLimiter::flushMacros();
         }
 
             }
@@ -19182,62 +19566,6 @@ namespace Illuminate\Support\Facades {
      */
     class Schema {
         /**
-         * Create a database in the schema.
-         *
-         * @param string $name
-         * @return bool
-         * @static
-         */
-        public static function createDatabase($name)
-        {
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
-            return $instance->createDatabase($name);
-        }
-
-        /**
-         * Drop a database from the schema if the database exists.
-         *
-         * @param string $name
-         * @return bool
-         * @static
-         */
-        public static function dropDatabaseIfExists($name)
-        {
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
-            return $instance->dropDatabaseIfExists($name);
-        }
-
-        /**
-         * @inheritDoc
-         * @static
-         */
-        public static function getTables($schema = null)
-        {
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
-            return $instance->getTables($schema);
-        }
-
-        /**
-         * @inheritDoc
-         * @static
-         */
-        public static function getViews($schema = null)
-        {
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
-            return $instance->getViews($schema);
-        }
-
-        /**
-         * @inheritDoc
-         * @static
-         */
-        public static function getColumns($table)
-        {
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
-            return $instance->getColumns($table);
-        }
-
-        /**
          * Drop all tables from the database.
          *
          * @return void
@@ -19245,7 +19573,8 @@ namespace Illuminate\Support\Facades {
          */
         public static function dropAllTables()
         {
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            //Method inherited from \Illuminate\Database\Schema\MySqlBuilder 
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             $instance->dropAllTables();
         }
 
@@ -19257,35 +19586,9 @@ namespace Illuminate\Support\Facades {
          */
         public static function dropAllViews()
         {
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            //Method inherited from \Illuminate\Database\Schema\MySqlBuilder 
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             $instance->dropAllViews();
-        }
-
-        /**
-         * Get the value for the given pragma name or set the given value.
-         *
-         * @param string $key
-         * @param mixed $value
-         * @return mixed
-         * @static
-         */
-        public static function pragma($key, $value = null)
-        {
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
-            return $instance->pragma($key, $value);
-        }
-
-        /**
-         * Empty the database file.
-         *
-         * @param string|null $path
-         * @return void
-         * @static
-         */
-        public static function refreshDatabaseFile($path = null)
-        {
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
-            $instance->refreshDatabaseFile($path);
         }
 
         /**
@@ -19296,7 +19599,8 @@ namespace Illuminate\Support\Facades {
          */
         public static function getCurrentSchemaListing()
         {
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            //Method inherited from \Illuminate\Database\Schema\MySqlBuilder 
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             return $instance->getCurrentSchemaListing();
         }
 
@@ -19310,7 +19614,7 @@ namespace Illuminate\Support\Facades {
         public static function defaultStringLength($length)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            \Illuminate\Database\Schema\SQLiteBuilder::defaultStringLength($length);
+            \Illuminate\Database\Schema\MariaDbBuilder::defaultStringLength($length);
         }
 
         /**
@@ -19321,7 +19625,7 @@ namespace Illuminate\Support\Facades {
         public static function defaultTimePrecision($precision)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            return \Illuminate\Database\Schema\SQLiteBuilder::defaultTimePrecision($precision);
+            return \Illuminate\Database\Schema\MariaDbBuilder::defaultTimePrecision($precision);
         }
 
         /**
@@ -19335,7 +19639,7 @@ namespace Illuminate\Support\Facades {
         public static function defaultMorphKeyType($type)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            \Illuminate\Database\Schema\SQLiteBuilder::defaultMorphKeyType($type);
+            \Illuminate\Database\Schema\MariaDbBuilder::defaultMorphKeyType($type);
         }
 
         /**
@@ -19347,7 +19651,7 @@ namespace Illuminate\Support\Facades {
         public static function morphUsingUuids()
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            \Illuminate\Database\Schema\SQLiteBuilder::morphUsingUuids();
+            \Illuminate\Database\Schema\MariaDbBuilder::morphUsingUuids();
         }
 
         /**
@@ -19359,7 +19663,35 @@ namespace Illuminate\Support\Facades {
         public static function morphUsingUlids()
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            \Illuminate\Database\Schema\SQLiteBuilder::morphUsingUlids();
+            \Illuminate\Database\Schema\MariaDbBuilder::morphUsingUlids();
+        }
+
+        /**
+         * Create a database in the schema.
+         *
+         * @param string $name
+         * @return bool
+         * @static
+         */
+        public static function createDatabase($name)
+        {
+            //Method inherited from \Illuminate\Database\Schema\Builder 
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
+            return $instance->createDatabase($name);
+        }
+
+        /**
+         * Drop a database from the schema if the database exists.
+         *
+         * @param string $name
+         * @return bool
+         * @static
+         */
+        public static function dropDatabaseIfExists($name)
+        {
+            //Method inherited from \Illuminate\Database\Schema\Builder 
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
+            return $instance->dropDatabaseIfExists($name);
         }
 
         /**
@@ -19371,7 +19703,7 @@ namespace Illuminate\Support\Facades {
         public static function getSchemas()
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             return $instance->getSchemas();
         }
 
@@ -19385,7 +19717,7 @@ namespace Illuminate\Support\Facades {
         public static function hasTable($table)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             return $instance->hasTable($table);
         }
 
@@ -19399,8 +19731,22 @@ namespace Illuminate\Support\Facades {
         public static function hasView($view)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             return $instance->hasView($view);
+        }
+
+        /**
+         * Get the tables that belong to the connection.
+         *
+         * @param string|string[]|null $schema
+         * @return \Illuminate\Database\Schema\list<array{name: string, schema: string|null, schema_qualified_name: string, size: int|null, comment: string|null, collation: string|null, engine: string|null}>
+         * @static
+         */
+        public static function getTables($schema = null)
+        {
+            //Method inherited from \Illuminate\Database\Schema\Builder 
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
+            return $instance->getTables($schema);
         }
 
         /**
@@ -19414,8 +19760,22 @@ namespace Illuminate\Support\Facades {
         public static function getTableListing($schema = null, $schemaQualified = true)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             return $instance->getTableListing($schema, $schemaQualified);
+        }
+
+        /**
+         * Get the views that belong to the connection.
+         *
+         * @param string|string[]|null $schema
+         * @return \Illuminate\Database\Schema\list<array{name: string, schema: string|null, schema_qualified_name: string, definition: string}>
+         * @static
+         */
+        public static function getViews($schema = null)
+        {
+            //Method inherited from \Illuminate\Database\Schema\Builder 
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
+            return $instance->getViews($schema);
         }
 
         /**
@@ -19428,7 +19788,7 @@ namespace Illuminate\Support\Facades {
         public static function getTypes($schema = null)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             return $instance->getTypes($schema);
         }
 
@@ -19443,7 +19803,7 @@ namespace Illuminate\Support\Facades {
         public static function hasColumn($table, $column)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             return $instance->hasColumn($table, $column);
         }
 
@@ -19458,7 +19818,7 @@ namespace Illuminate\Support\Facades {
         public static function hasColumns($table, $columns)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             return $instance->hasColumns($table, $columns);
         }
 
@@ -19474,7 +19834,7 @@ namespace Illuminate\Support\Facades {
         public static function whenTableHasColumn($table, $column, $callback)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             $instance->whenTableHasColumn($table, $column, $callback);
         }
 
@@ -19490,7 +19850,7 @@ namespace Illuminate\Support\Facades {
         public static function whenTableDoesntHaveColumn($table, $column, $callback)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             $instance->whenTableDoesntHaveColumn($table, $column, $callback);
         }
 
@@ -19507,7 +19867,7 @@ namespace Illuminate\Support\Facades {
         public static function whenTableHasIndex($table, $index, $callback, $type = null)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             $instance->whenTableHasIndex($table, $index, $callback, $type);
         }
 
@@ -19524,7 +19884,7 @@ namespace Illuminate\Support\Facades {
         public static function whenTableDoesntHaveIndex($table, $index, $callback, $type = null)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             $instance->whenTableDoesntHaveIndex($table, $index, $callback, $type);
         }
 
@@ -19541,7 +19901,7 @@ namespace Illuminate\Support\Facades {
         public static function getColumnType($table, $column, $fullDefinition = false)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             return $instance->getColumnType($table, $column, $fullDefinition);
         }
 
@@ -19555,8 +19915,22 @@ namespace Illuminate\Support\Facades {
         public static function getColumnListing($table)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             return $instance->getColumnListing($table);
+        }
+
+        /**
+         * Get the columns for a given table.
+         *
+         * @param string $table
+         * @return \Illuminate\Database\Schema\list<array{name: string, type: string, type_name: string, collation: string|null, nullable: bool, default: mixed, auto_increment: bool, comment: string|null, generation: array{type: string, expression: string|null}|null}>
+         * @static
+         */
+        public static function getColumns($table)
+        {
+            //Method inherited from \Illuminate\Database\Schema\Builder 
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
+            return $instance->getColumns($table);
         }
 
         /**
@@ -19569,7 +19943,7 @@ namespace Illuminate\Support\Facades {
         public static function getIndexes($table)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             return $instance->getIndexes($table);
         }
 
@@ -19583,7 +19957,7 @@ namespace Illuminate\Support\Facades {
         public static function getIndexListing($table)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             return $instance->getIndexListing($table);
         }
 
@@ -19599,7 +19973,7 @@ namespace Illuminate\Support\Facades {
         public static function hasIndex($table, $index, $type = null)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             return $instance->hasIndex($table, $index, $type);
         }
 
@@ -19614,7 +19988,7 @@ namespace Illuminate\Support\Facades {
         public static function hasForeignKey($table, $foreignKey)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             return $instance->hasForeignKey($table, $foreignKey);
         }
 
@@ -19628,7 +20002,7 @@ namespace Illuminate\Support\Facades {
         public static function getForeignKeys($table)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             return $instance->getForeignKeys($table);
         }
 
@@ -19643,7 +20017,7 @@ namespace Illuminate\Support\Facades {
         public static function table($table, $callback)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             $instance->table($table, $callback);
         }
 
@@ -19658,7 +20032,7 @@ namespace Illuminate\Support\Facades {
         public static function create($table, $callback)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             $instance->create($table, $callback);
         }
 
@@ -19672,7 +20046,7 @@ namespace Illuminate\Support\Facades {
         public static function drop($table)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             $instance->drop($table);
         }
 
@@ -19686,7 +20060,7 @@ namespace Illuminate\Support\Facades {
         public static function dropIfExists($table)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             $instance->dropIfExists($table);
         }
 
@@ -19701,7 +20075,7 @@ namespace Illuminate\Support\Facades {
         public static function dropColumns($table, $columns)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             $instance->dropColumns($table, $columns);
         }
 
@@ -19715,7 +20089,7 @@ namespace Illuminate\Support\Facades {
         public static function dropAllTypes()
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             $instance->dropAllTypes();
         }
 
@@ -19730,7 +20104,7 @@ namespace Illuminate\Support\Facades {
         public static function rename($from, $to)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             $instance->rename($from, $to);
         }
 
@@ -19743,7 +20117,7 @@ namespace Illuminate\Support\Facades {
         public static function enableForeignKeyConstraints()
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             return $instance->enableForeignKeyConstraints();
         }
 
@@ -19756,7 +20130,7 @@ namespace Illuminate\Support\Facades {
         public static function disableForeignKeyConstraints()
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             return $instance->disableForeignKeyConstraints();
         }
 
@@ -19771,7 +20145,7 @@ namespace Illuminate\Support\Facades {
         public static function withoutForeignKeyConstraints($callback)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             return $instance->withoutForeignKeyConstraints($callback);
         }
 
@@ -19785,7 +20159,7 @@ namespace Illuminate\Support\Facades {
         public static function ensureVectorExtensionExists($schema = null)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             $instance->ensureVectorExtensionExists($schema);
         }
 
@@ -19801,7 +20175,7 @@ namespace Illuminate\Support\Facades {
         public static function ensureExtensionExists($name, $schema = null)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             $instance->ensureExtensionExists($name, $schema);
         }
 
@@ -19814,7 +20188,7 @@ namespace Illuminate\Support\Facades {
         public static function getCurrentSchemaName()
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             return $instance->getCurrentSchemaName();
         }
 
@@ -19830,7 +20204,7 @@ namespace Illuminate\Support\Facades {
         public static function parseSchemaAndTable($reference, $withDefaultSchema = null)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             return $instance->parseSchemaAndTable($reference, $withDefaultSchema);
         }
 
@@ -19843,7 +20217,7 @@ namespace Illuminate\Support\Facades {
         public static function getConnection()
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             return $instance->getConnection();
         }
 
@@ -19857,7 +20231,7 @@ namespace Illuminate\Support\Facades {
         public static function blueprintResolver($resolver)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+            /** @var \Illuminate\Database\Schema\MariaDbBuilder $instance */
             $instance->blueprintResolver($resolver);
         }
 
@@ -19873,7 +20247,7 @@ namespace Illuminate\Support\Facades {
         public static function macro($name, $macro)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            \Illuminate\Database\Schema\SQLiteBuilder::macro($name, $macro);
+            \Illuminate\Database\Schema\MariaDbBuilder::macro($name, $macro);
         }
 
         /**
@@ -19888,7 +20262,7 @@ namespace Illuminate\Support\Facades {
         public static function mixin($mixin, $replace = true)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            \Illuminate\Database\Schema\SQLiteBuilder::mixin($mixin, $replace);
+            \Illuminate\Database\Schema\MariaDbBuilder::mixin($mixin, $replace);
         }
 
         /**
@@ -19901,7 +20275,7 @@ namespace Illuminate\Support\Facades {
         public static function hasMacro($name)
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            return \Illuminate\Database\Schema\SQLiteBuilder::hasMacro($name);
+            return \Illuminate\Database\Schema\MariaDbBuilder::hasMacro($name);
         }
 
         /**
@@ -19913,7 +20287,7 @@ namespace Illuminate\Support\Facades {
         public static function flushMacros()
         {
             //Method inherited from \Illuminate\Database\Schema\Builder 
-            \Illuminate\Database\Schema\SQLiteBuilder::flushMacros();
+            \Illuminate\Database\Schema\MariaDbBuilder::flushMacros();
         }
 
             }
@@ -20936,6 +21310,20 @@ namespace Illuminate\Support\Facades {
         }
 
         /**
+         * Create a read-through filesystem driver.
+         *
+         * @param array $config
+         * @param string $name
+         * @return \Illuminate\Filesystem\LocalFilesystemAdapter
+         * @static
+         */
+        public static function createReadThroughDriver($config, $name = 'read-through')
+        {
+            /** @var \Illuminate\Filesystem\FilesystemManager $instance */
+            return $instance->createReadThroughDriver($config, $name);
+        }
+
+        /**
          * Create a scoped driver.
          *
          * @param array $config
@@ -21651,7 +22039,7 @@ namespace Illuminate\Support\Facades {
          *
          * @param string|null $directory
          * @param bool $recursive
-         * @return array
+         * @return array<string>
          * @static
          */
         public static function files($directory = null, $recursive = false)
@@ -21665,7 +22053,7 @@ namespace Illuminate\Support\Facades {
          * Get all of the files from the given directory (recursive).
          *
          * @param string|null $directory
-         * @return array
+         * @return array<string>
          * @static
          */
         public static function allFiles($directory = null)
@@ -21680,7 +22068,7 @@ namespace Illuminate\Support\Facades {
          *
          * @param string|null $directory
          * @param bool $recursive
-         * @return array
+         * @return array<string>
          * @static
          */
         public static function directories($directory = null, $recursive = false)
@@ -21694,7 +22082,7 @@ namespace Illuminate\Support\Facades {
          * Get all the directories within a given directory (recursive).
          *
          * @param string|null $directory
-         * @return array
+         * @return array<string>
          * @static
          */
         public static function allDirectories($directory = null)
@@ -22680,6 +23068,19 @@ namespace Illuminate\Support\Facades {
         {
             /** @var \Illuminate\Validation\Factory $instance */
             $instance->excludeUnvalidatedArrayKeys();
+        }
+
+        /**
+         * Fake the DNS lookups performed by validation rules so they always succeed.
+         *
+         * @param bool $value
+         * @return void
+         * @static
+         */
+        public static function fakeDnsLookups($value = true)
+        {
+            /** @var \Illuminate\Validation\Factory $instance */
+            $instance->fakeDnsLookups($value);
         }
 
         /**
@@ -26044,6 +26445,7 @@ namespace Laravel\Pennant {
      * @method static void flushMacros()
      * @method static mixed macroCall(string $method, array $parameters)
      * @method static \Laravel\Pennant\PendingScopedFeatureInteraction for(mixed $scope)
+     * @method static \Laravel\Pennant\PendingScopedFeatureInteraction globally()
      * @method static array load(\BackedEnum|\UnitEnum|string|array $features)
      * @method static array loadMissing(\BackedEnum|\UnitEnum|string|array $features)
      * @method static array loadAll()
@@ -26061,7 +26463,7 @@ namespace Laravel\Pennant {
      * @method static void activate(\BackedEnum|\UnitEnum|string|array $feature, mixed $value = true)
      * @method static void deactivate(\BackedEnum|\UnitEnum|string|array $feature)
      * @method static void forget(\BackedEnum|\UnitEnum|string|array $features)
-     * @see \Laravel\Pennant\FeatureManager
+     * @see FeatureManager
      */
     class Feature {
         /**
@@ -29030,83 +29432,6 @@ namespace Illuminate\Http {
             }
     }
 
-namespace Illuminate\Testing {
-    /**
-     */
-    class LoggedExceptionCollection extends \Illuminate\Support\Collection {
-            }
-    /**
-     * @template TResponse of \Symfony\Component\HttpFoundation\Response
-     * @mixin \Illuminate\Http\Response
-     */
-    class TestResponse {
-        /**
-         * @see \Livewire\Features\SupportTesting\SupportTesting::registerTestingMacros()
-         * @param mixed $component
-         * @static
-         */
-        public static function assertSeeLivewire($component)
-        {
-            return \Illuminate\Testing\TestResponse::assertSeeLivewire($component);
-        }
-
-        /**
-         * @see \Livewire\Features\SupportTesting\SupportTesting::registerTestingMacros()
-         * @param mixed $component
-         * @static
-         */
-        public static function assertDontSeeLivewire($component)
-        {
-            return \Illuminate\Testing\TestResponse::assertDontSeeLivewire($component);
-        }
-
-        /**
-         * @see \Livewire\Volt\VoltServiceProvider::registerTestingMacros()
-         * @param mixed $component
-         * @static
-         */
-        public static function assertSeeVolt($component)
-        {
-            return \Illuminate\Testing\TestResponse::assertSeeVolt($component);
-        }
-
-        /**
-         * @see \Livewire\Volt\VoltServiceProvider::registerTestingMacros()
-         * @param mixed $component
-         * @static
-         */
-        public static function assertDontSeeVolt($component)
-        {
-            return \Illuminate\Testing\TestResponse::assertDontSeeVolt($component);
-        }
-
-            }
-    /**
-     */
-    class TestView {
-        /**
-         * @see \Livewire\Features\SupportTesting\SupportTesting::registerTestingMacros()
-         * @param mixed $component
-         * @static
-         */
-        public static function assertSeeLivewire($component)
-        {
-            return \Illuminate\Testing\TestView::assertSeeLivewire($component);
-        }
-
-        /**
-         * @see \Livewire\Features\SupportTesting\SupportTesting::registerTestingMacros()
-         * @param mixed $component
-         * @static
-         */
-        public static function assertDontSeeLivewire($component)
-        {
-            return \Illuminate\Testing\TestView::assertDontSeeLivewire($component);
-        }
-
-            }
-    }
-
 namespace Illuminate\Routing {
     /**
      * @mixin \Illuminate\Routing\RouteRegistrar
@@ -29577,6 +29902,7 @@ namespace Illuminate\View {
         /**
          * @see \Livewire\Features\SupportPageComponents\SupportPageComponents::registerLayoutViewMacros()
          * @param mixed $data
+         * @return static
          * @static
          */
         public static function layoutData($data = [])
@@ -29587,6 +29913,7 @@ namespace Illuminate\View {
         /**
          * @see \Livewire\Features\SupportPageComponents\SupportPageComponents::registerLayoutViewMacros()
          * @param mixed $section
+         * @return static
          * @static
          */
         public static function section($section)
@@ -29597,6 +29924,7 @@ namespace Illuminate\View {
         /**
          * @see \Livewire\Features\SupportPageComponents\SupportPageComponents::registerLayoutViewMacros()
          * @param mixed $title
+         * @return static
          * @static
          */
         public static function title($title)
@@ -29607,6 +29935,7 @@ namespace Illuminate\View {
         /**
          * @see \Livewire\Features\SupportPageComponents\SupportPageComponents::registerLayoutViewMacros()
          * @param mixed $slot
+         * @return static
          * @static
          */
         public static function slot($slot)
@@ -29618,6 +29947,7 @@ namespace Illuminate\View {
          * @see \Livewire\Features\SupportPageComponents\SupportPageComponents::registerLayoutViewMacros()
          * @param mixed $view
          * @param mixed $params
+         * @return static
          * @static
          */
         public static function extends($view, $params = [])
@@ -29629,6 +29959,7 @@ namespace Illuminate\View {
          * @see \Livewire\Features\SupportPageComponents\SupportPageComponents::registerLayoutViewMacros()
          * @param mixed $view
          * @param mixed $params
+         * @return static
          * @static
          */
         public static function layout($view, $params = [])
@@ -29639,6 +29970,7 @@ namespace Illuminate\View {
         /**
          * @see \Livewire\Features\SupportPageComponents\SupportPageComponents::registerLayoutViewMacros()
          * @param callable $callback
+         * @return static
          * @static
          */
         public static function response($callback)
@@ -35710,6 +36042,35 @@ namespace Modules\Job\Filament\Widgets {
             }
     }
 
+namespace Illuminate\Testing {
+    /**
+     * @template TResponse of \Symfony\Component\HttpFoundation\Response
+     * @mixin \Illuminate\Http\Response
+     */
+    class TestResponse {
+        /**
+         * @see \Livewire\Volt\VoltServiceProvider::registerTestingMacros()
+         * @param mixed $component
+         * @static
+         */
+        public static function assertSeeVolt($component)
+        {
+            return \Illuminate\Testing\TestResponse::assertSeeVolt($component);
+        }
+
+        /**
+         * @see \Livewire\Volt\VoltServiceProvider::registerTestingMacros()
+         * @param mixed $component
+         * @static
+         */
+        public static function assertDontSeeVolt($component)
+        {
+            return \Illuminate\Testing\TestResponse::assertDontSeeVolt($component);
+        }
+
+            }
+    }
+
 namespace Spatie\EventSourcing\EventHandlers {
     /**
      */
@@ -35844,6 +36205,32 @@ namespace  {
         {
             /** @var \Illuminate\Database\Eloquent\Builder $instance */
             return $instance->whereKeyNot($id);
+        }
+
+        /**
+         * Add an "or where" clause on the primary key to the query.
+         *
+         * @param mixed $id
+         * @return \Illuminate\Database\Eloquent\Builder<static>
+         * @static
+         */
+        public static function orWhereKey($id)
+        {
+            /** @var \Illuminate\Database\Eloquent\Builder $instance */
+            return $instance->orWhereKey($id);
+        }
+
+        /**
+         * Add an "or where not" clause on the primary key to the query.
+         *
+         * @param mixed $id
+         * @return \Illuminate\Database\Eloquent\Builder<static>
+         * @static
+         */
+        public static function orWhereKeyNot($id)
+        {
+            /** @var \Illuminate\Database\Eloquent\Builder $instance */
+            return $instance->orWhereKeyNot($id);
         }
 
         /**
@@ -36370,6 +36757,18 @@ namespace  {
         {
             /** @var \Illuminate\Database\Eloquent\Builder $instance */
             return $instance->pluck($column, $key);
+        }
+
+        /**
+         * Get an array of primary keys from the query result.
+         *
+         * @return array<int, array-key>
+         * @static
+         */
+        public static function modelKeys()
+        {
+            /** @var \Illuminate\Database\Eloquent\Builder $instance */
+            return $instance->modelKeys();
         }
 
         /**
@@ -38809,6 +39208,65 @@ namespace  {
         }
 
         /**
+         * Add a "where binary" clause to the query.
+         *
+         * @param \Illuminate\Contracts\Database\Query\Expression|string $column
+         * @param string $value
+         * @param string $boolean
+         * @param bool $not
+         * @return \Illuminate\Database\Eloquent\Builder<static>
+         * @static
+         */
+        public static function whereBinary($column, $value, $boolean = 'and', $not = false)
+        {
+            /** @var \Illuminate\Database\Query\Builder $instance */
+            return $instance->whereBinary($column, $value, $boolean, $not);
+        }
+
+        /**
+         * Add an "or where binary" clause to the query.
+         *
+         * @param \Illuminate\Contracts\Database\Query\Expression|string $column
+         * @param string $value
+         * @return \Illuminate\Database\Eloquent\Builder<static>
+         * @static
+         */
+        public static function orWhereBinary($column, $value)
+        {
+            /** @var \Illuminate\Database\Query\Builder $instance */
+            return $instance->orWhereBinary($column, $value);
+        }
+
+        /**
+         * Add a "where not binary" clause to the query.
+         *
+         * @param \Illuminate\Contracts\Database\Query\Expression|string $column
+         * @param string $value
+         * @param string $boolean
+         * @return \Illuminate\Database\Eloquent\Builder<static>
+         * @static
+         */
+        public static function whereNotBinary($column, $value, $boolean = 'and')
+        {
+            /** @var \Illuminate\Database\Query\Builder $instance */
+            return $instance->whereNotBinary($column, $value, $boolean);
+        }
+
+        /**
+         * Add an "or where not binary" clause to the query.
+         *
+         * @param \Illuminate\Contracts\Database\Query\Expression|string $column
+         * @param string $value
+         * @return \Illuminate\Database\Eloquent\Builder<static>
+         * @static
+         */
+        public static function orWhereNotBinary($column, $value)
+        {
+            /** @var \Illuminate\Database\Query\Builder $instance */
+            return $instance->orWhereNotBinary($column, $value);
+        }
+
+        /**
          * Add a "where like" clause to the query.
          *
          * @param \Illuminate\Contracts\Database\Query\Expression|string $column
@@ -40163,7 +40621,7 @@ namespace  {
          * Add an "order by" clause to order results by a given sequence of values.
          *
          * @param \Illuminate\Contracts\Database\Query\Expression|string $column
-         * @param \Illuminate\Contracts\Support\Arrayable|array $values
+         * @param \Illuminate\Contracts\Support\Arrayable|array<\UnitEnum|string|int|float|bool> $values
          * @return \Illuminate\Database\Eloquent\Builder<static>
          * @static
          */

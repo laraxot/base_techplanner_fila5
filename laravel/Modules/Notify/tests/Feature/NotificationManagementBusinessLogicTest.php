@@ -18,16 +18,11 @@ use Modules\Notify\Models\MailTemplateVersion;
 use Modules\Notify\Models\Notification;
 use Modules\Notify\Models\NotificationTemplate;
 use Modules\Notify\Models\NotificationType;
-use Modules\Notify\Tests\TestCase;
+use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
 
-uses(TestCase::class);
-
-use Modules\Xot\Tests\XotBasePest;
-
-uses(TestCase::class)->group('notify-db');
 
 describe('Notification Management Business Logic', function () {
     it('can create notification with core fields', function () {

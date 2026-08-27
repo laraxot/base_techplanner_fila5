@@ -7,7 +7,6 @@ use Modules\Cms\Models\BaseModel;
 use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
 /**
  * @return BaseModel&Model
  */

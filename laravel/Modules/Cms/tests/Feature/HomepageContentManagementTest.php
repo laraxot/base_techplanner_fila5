@@ -10,7 +10,6 @@ use PHPUnit\Framework\Assert;
 
 use function Pest\Laravel\get;
 
-uses(TestCase::class);
 
 beforeEach(function (): void {
     /* @var \Modules\Cms\Tests\TestCase $this */

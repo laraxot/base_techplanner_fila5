@@ -5,11 +5,9 @@ declare(strict_types=1);
 namespace Modules\Notify\Tests\Feature;
 
 use Illuminate\Support\Facades\File;
-use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use function Pest\Laravel\get;
 
-uses(\Modules\Notify\Tests\TestCase::class);
 
 describe('Email Templates', function (): void {
     test('_html_template_contains_optional_function', function (): void {

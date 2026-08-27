@@ -11,14 +11,18 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Support\Carbon;
-use Modules\Xot\Contracts\ProfileContract;
-use Modules\Xot\Contracts\UserContract;
+use Modules\TechPlanner\Models\Profile;
 use Modules\Xot\Datas\XotData;
 
 /**
  * Modules\User\Models\SocialiteUser.
  *
+ * @property-read Profile|null $creator
+ * @property-read Profile|null $updater
+ * @property-read User|null $user
+ * @method static Builder<static>|SocialiteUser newModelQuery()
+ * @method static Builder<static>|SocialiteUser newQuery()
+ * @method static Builder<static>|SocialiteUser query()
  * @property int $id
  * @property string $user_id
  * @property string $provider
@@ -27,38 +31,22 @@ use Modules\Xot\Datas\XotData;
  * @property string|null $name
  * @property string|null $email
  * @property string|null $avatar
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- * @property UserContract|null $user
- *
- * @method static Builder|SocialiteUser newModelQuery()
- * @method static Builder|SocialiteUser newQuery()
- * @method static Builder|SocialiteUser query()
- * @method static Builder|SocialiteUser whereAvatar($value)
- * @method static Builder|SocialiteUser whereCreatedAt($value)
- * @method static Builder|SocialiteUser whereCreatedBy($value)
- * @method static Builder|SocialiteUser whereEmail($value)
- * @method static Builder|SocialiteUser whereId($value)
- * @method static Builder|SocialiteUser whereName($value)
- * @method static Builder|SocialiteUser whereProvider($value)
- * @method static Builder|SocialiteUser whereProviderId($value)
- * @method static Builder|SocialiteUser whereToken($value)
- * @method static Builder|SocialiteUser whereUpdatedAt($value)
- * @method static Builder|SocialiteUser whereUpdatedBy($value)
- * @method static Builder|SocialiteUser whereUserId($value)
- *
- * @property string $uuid (DC2Type:guid)
- *
- * @method static Builder|SocialiteUser whereUuid($value)
- *
- * @property ProfileContract|null $creator
- * @property ProfileContract|null $updater
- * @property ProfileContract|null $deleter
- *
- * @method static \Modules\User\Database\Factories\SocialiteUserFactory factory($count = null, $state = [])
- *
+ * @method static Builder<static>|SocialiteUser whereAvatar($value)
+ * @method static Builder<static>|SocialiteUser whereCreatedAt($value)
+ * @method static Builder<static>|SocialiteUser whereCreatedBy($value)
+ * @method static Builder<static>|SocialiteUser whereEmail($value)
+ * @method static Builder<static>|SocialiteUser whereId($value)
+ * @method static Builder<static>|SocialiteUser whereName($value)
+ * @method static Builder<static>|SocialiteUser whereProvider($value)
+ * @method static Builder<static>|SocialiteUser whereProviderId($value)
+ * @method static Builder<static>|SocialiteUser whereToken($value)
+ * @method static Builder<static>|SocialiteUser whereUpdatedAt($value)
+ * @method static Builder<static>|SocialiteUser whereUpdatedBy($value)
+ * @method static Builder<static>|SocialiteUser whereUserId($value)
  * @mixin \Eloquent
  */
 class SocialiteUser extends BaseModel

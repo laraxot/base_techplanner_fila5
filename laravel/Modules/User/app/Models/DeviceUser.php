@@ -7,52 +7,42 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Support\Carbon;
-use Modules\Xot\Contracts\ProfileContract;
-use Modules\Xot\Contracts\UserContract;
+use Modules\TechPlanner\Models\Profile;
 use Modules\Xot\Datas\XotData;
 
 /**
  * Modules\User\Models\DeviceUser.
  *
- * @property Device|null $device
- *
- * @method static Builder|DeviceUser newModelQuery()
- * @method static Builder|DeviceUser newQuery()
- * @method static Builder|DeviceUser query()
- *
+ * @property string|null $user_id
+ * @property string|null $device_id
+ * @property-read Profile|null $creator
+ * @property-read Device|null $device
+ * @property-read Profile|null $profile
+ * @property-read Profile|null $updater
+ * @property-read User|null $user
+ * @method static Builder<static>|DeviceUser newModelQuery()
+ * @method static Builder<static>|DeviceUser newQuery()
+ * @method static Builder<static>|DeviceUser query()
  * @property string $id
- * @property string $device_id
- * @property string $user_id
- * @property Carbon|null $login_at
- * @property Carbon|null $logout_at
+ * @property \Illuminate\Support\Carbon|null $login_at
+ * @property \Illuminate\Support\Carbon|null $logout_at
  * @property string|null $push_notifications_token
  * @property bool|null $push_notifications_enabled
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- *
- * @method static Builder|DeviceUser whereCreatedAt($value)
- * @method static Builder|DeviceUser whereCreatedBy($value)
- * @method static Builder|DeviceUser whereDeviceId($value)
- * @method static Builder|DeviceUser whereId($value)
- * @method static Builder|DeviceUser whereLoginAt($value)
- * @method static Builder|DeviceUser whereLogoutAt($value)
- * @method static Builder|DeviceUser wherePushNotificationsEnabled($value)
- * @method static Builder|DeviceUser wherePushNotificationsToken($value)
- * @method static Builder|DeviceUser whereUpdatedAt($value)
- * @method static Builder|DeviceUser whereUpdatedBy($value)
- * @method static Builder|DeviceUser whereUserId($value)
- *
- * @property ProfileContract|null $profile
- * @property UserContract|null $user
- * @property ProfileContract|null $creator
- * @property ProfileContract|null $updater
- * @property ProfileContract|null $deleter
- *
- * @method static \Modules\User\Database\Factories\DeviceUserFactory factory($count = null, $state = [])
- *
+ * @method static Builder<static>|DeviceUser whereCreatedAt($value)
+ * @method static Builder<static>|DeviceUser whereCreatedBy($value)
+ * @method static Builder<static>|DeviceUser whereDeviceId($value)
+ * @method static Builder<static>|DeviceUser whereId($value)
+ * @method static Builder<static>|DeviceUser whereLoginAt($value)
+ * @method static Builder<static>|DeviceUser whereLogoutAt($value)
+ * @method static Builder<static>|DeviceUser wherePushNotificationsEnabled($value)
+ * @method static Builder<static>|DeviceUser wherePushNotificationsToken($value)
+ * @method static Builder<static>|DeviceUser whereUpdatedAt($value)
+ * @method static Builder<static>|DeviceUser whereUpdatedBy($value)
+ * @method static Builder<static>|DeviceUser whereUserId($value)
  * @mixin \Eloquent
  */
 class DeviceUser extends BasePivot

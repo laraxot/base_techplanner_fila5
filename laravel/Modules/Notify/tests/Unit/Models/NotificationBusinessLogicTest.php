@@ -5,11 +5,8 @@ declare(strict_types=1);
 namespace Modules\Notify\Tests\Unit\Models;
 
 use Modules\Notify\Models\Notification;
-use Modules\Notify\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class)->group('notify-db');
 
 describe('Notification Business Logic', function () {
     test('notification extends xot base model', function () {

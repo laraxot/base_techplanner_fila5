@@ -10,7 +10,6 @@ use Modules\Tenant\Actions\Config\GetTenantFilePathAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
 
 /**
  * @return array<string, mixed>

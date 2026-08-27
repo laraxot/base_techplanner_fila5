@@ -6,8 +6,7 @@ namespace Modules\Xot\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\File;
-use Modules\Xot\Contracts\ProfileContract;
-use Modules\Xot\Database\Factories\LogFactory;
+use Modules\TechPlanner\Models\Profile;
 use Override;
 use Sushi\Sushi;
 
@@ -19,19 +18,17 @@ use Sushi\Sushi;
  * @property string|null $id
  * @property string|null $name
  * @property int|null $size
+ * @property-read Profile|null $creator
+ * @property-read string|null $file_content
+ * @property-read Profile|null $updater
  *
- * @method static LogFactory factory($count = null, $state = [])
+ * @method static \Modules\Xot\Database\Factories\LogFactory factory($count = null, $state = [])
  * @method static Builder<static>|Log newModelQuery()
  * @method static Builder<static>|Log newQuery()
  * @method static Builder<static>|Log query()
  * @method static Builder<static>|Log whereId($value)
  * @method static Builder<static>|Log whereName($value)
  * @method static Builder<static>|Log whereSize($value)
- *
- * @property ProfileContract|null $creator
- * @property ProfileContract|null $deleter
- * @property string|null $file_content
- * @property ProfileContract|null $updater
  *
  * @mixin \Eloquent
  */

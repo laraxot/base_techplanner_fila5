@@ -6,7 +6,6 @@ use Modules\Cms\Filament\Pages\Themes;
 use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
 test('Themes page can be instantiated', function () {
     $page = new Themes();
 });

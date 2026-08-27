@@ -3,8 +3,8 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Filament\Resources;
+
 use Filament\Actions\Action;
-use Filament\Actions\ActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\RichEditor;
@@ -32,11 +32,6 @@ use Modules\Notify\Tests\Fixtures\ViewNotificationTestProxy;
 use Modules\Notify\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
-
-use function Safe\file_put_contents;
-use function Safe\mkdir;
-
-uses(TestCase::class)->group('no-notify-db');
 
 function makeEditContactTestProxy(): EditContactTestProxy
 {
@@ -89,7 +84,7 @@ test('list contacts page exposes expected table columns and filters', function (
 });
 
 test('list mail templates page exposes expected table columns', function (): void {
-    $page = new ListMailTemplates;
+    $page = new ListMailTemplates();
     $columns = \assertNotifyArray($page->getTableColumns());
 
     Assert::assertArrayHasKey('slug', $columns);
@@ -188,4 +183,3 @@ test('preview notification template page exposes title and subheading', function
     Assert::assertNotSame('', $page->getTitle());
     Assert::assertNotSame('', $page->getSubheading());
 });
-

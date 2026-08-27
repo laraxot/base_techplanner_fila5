@@ -11,7 +11,6 @@ use Modules\Notify\Models\NotifyThemeable;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('notify-db');
 
 function notifyThemeableTestDomain(): string
 {

@@ -9,7 +9,6 @@ use PHPUnit\Framework\Assert;
 
 use function Pest\Laravel\get;
 
-uses(TestCase::class);
 beforeEach(function (): void {
     /* @var \Modules\Cms\Tests\TestCase $this */
     if (! \is_string(config('app.key')) || config('app.key') === '') {

@@ -16,13 +16,10 @@ use Filament\Tables\Filters\SelectFilter;
 use Modules\Notify\Filament\Resources\NotificationTemplateResource\Pages\ListNotificationTemplates;
 use Modules\Notify\Filament\Resources\NotifyThemeResource;
 use Modules\Notify\Filament\Resources\NotifyThemeResource\Pages\ListNotifyThemes;
-use Modules\Notify\Tests\Fixtures\EditNotifyThemeTestProxy;
 use Modules\Notify\Filament\Resources\NotifyThemeResource\RelationManagers\LinkableRelationManager;
 use Modules\Notify\Filament\Tables\Columns\ContactColumn;
-use Modules\Notify\Tests\TestCase;
+use Modules\Notify\Tests\Fixtures\EditNotifyThemeTestProxy;
 use PHPUnit\Framework\Assert;
-
-uses(\Modules\Notify\Tests\TestCase::class);
 
 function makeEditNotifyThemeTestProxy(): EditNotifyThemeTestProxy
 {
@@ -30,7 +27,7 @@ function makeEditNotifyThemeTestProxy(): EditNotifyThemeTestProxy
 }
 
 test('list notification templates page returns empty table columns array', function (): void {
-    $page = new ListNotificationTemplates;
+    $page = new ListNotificationTemplates();
     $columns = $page->getTableColumns();
     Assert::assertSame([], $columns);
 });

@@ -8,11 +8,9 @@ use Modules\Notify\Database\Factories\MailTemplateFactory;
 use Modules\Notify\Database\Factories\MailTemplateVersionFactory;
 use Modules\Notify\Models\MailTemplate;
 use Modules\Notify\Models\MailTemplateVersion;
-use Modules\Notify\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('notify-db');
 
 describe('Mail Template Version Business Logic', function (): void {
     test('_can_create_mail_template_version_with_basic_information', function (): void {

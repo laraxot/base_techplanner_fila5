@@ -12,13 +12,8 @@ use Modules\Notify\Filament\Actions\SendRecordsNotificationBulkAction;
 use Modules\Notify\Filament\Forms\Components\ChannelCheckboxList;
 use Modules\Notify\Filament\Forms\Components\MailTemplateSelect;
 use Modules\Notify\Tests\Fixtures\SendRecordsNotificationBulkActionSpy;
-use Modules\Notify\Tests\TestCase;
-use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
 use Modules\Xot\Tests\XotBasePest;
-
-uses(TestCase::class)->group('no-notify-db');
+use PHPUnit\Framework\Assert;
 
 /**
  * @param  array<string, mixed>  $attributes

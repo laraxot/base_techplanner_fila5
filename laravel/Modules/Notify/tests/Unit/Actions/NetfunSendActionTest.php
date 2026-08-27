@@ -7,13 +7,10 @@ namespace Modules\Notify\Tests\Unit\Actions;
 use Modules\Notify\Actions\NetfunSendAction;
 use Modules\Notify\Datas\SmsData;
 use PHPUnit\Framework\Assert;
-use PHPUnit\Framework\TestCase;
 use ReflectionClass;
 
 use function Safe\class_uses;
 use function Safe\file_get_contents;
-
-uses(TestCase::class)->group('no-notify-db');
 
 describe('NetfunSendAction', function () {
     it('has execute method returning array', function () {

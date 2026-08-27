@@ -9,7 +9,6 @@ use Modules\Notify\Tests\TestCase;
 
 use function Safe\json_decode;
 
-uses(TestCase::class);
 
 test('components json is valid and contains expected components', function (): void {
     // Percorso del file

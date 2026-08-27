@@ -7,28 +7,28 @@ namespace Modules\Job\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
-use Modules\Job\Database\Factories\ParameterFactory;
-use Modules\Xot\Contracts\ProfileContract;
+use Modules\TechPlanner\Models\Profile;
 
 /**
  * Modules\Job\Models\Parameter.
  *
- * @property string $id
- * @property int $frequency_id
- * @property string $name
- * @property string $value
- * @property string|null $created_by
- * @property string|null $updated_by
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property-read ProfileContract|null $creator
+ * @property-read Profile|null $creator
  * @property-read Frequency|null $task
- * @property-read ProfileContract|null $updater
+ * @property-read Profile|null $updater
  *
- * @method static ParameterFactory factory($count = null, $state = [])
  * @method static Builder<static>|Parameter newModelQuery()
  * @method static Builder<static>|Parameter newQuery()
  * @method static Builder<static>|Parameter query()
+ *
+ * @property int $id
+ * @property int $frequency_id
+ * @property string $name
+ * @property string $value
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ *
  * @method static Builder<static>|Parameter whereCreatedAt($value)
  * @method static Builder<static>|Parameter whereCreatedBy($value)
  * @method static Builder<static>|Parameter whereFrequencyId($value)
@@ -37,8 +37,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|Parameter whereUpdatedAt($value)
  * @method static Builder<static>|Parameter whereUpdatedBy($value)
  * @method static Builder<static>|Parameter whereValue($value)
- *
- * @property-read ProfileContract|null $deleter
  *
  * @mixin \Eloquent
  */

@@ -13,10 +13,6 @@ use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\class_uses;
 
-uses(TestCase::class);
-
-uses(TestCase::class)->group('notify-db');
-
 describe('NotifyTheme\Attachment\Pdf', function () {
     it('can be instantiated', function () {
         Assert::assertTrue(class_exists(Pdf::class));

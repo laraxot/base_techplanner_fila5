@@ -18,12 +18,14 @@ use PHPUnit\Framework\Assert;
  *
  * @param  LegacyMockInterface|MockInterface  $mock
  */
-function expectMethod($mock, string $method): CompositeExpectation
-{
-    /** @var CompositeExpectation $expectation */
-    $expectation = $mock->shouldReceive($method);
+if (! function_exists('expectMethod')) {
+    function expectMethod($mock, string $method): CompositeExpectation
+    {
+        /** @var CompositeExpectation $expectation */
+        $expectation = $mock->shouldReceive($method);
 
-    return $expectation;
+        return $expectation;
+    }
 }
 
 uses(TestCase::class)->group('no-ui-db');

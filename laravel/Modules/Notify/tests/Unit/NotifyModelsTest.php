@@ -14,12 +14,9 @@ use Modules\Notify\Models\Notification;
 use Modules\Notify\Models\NotificationChannel;
 use Modules\Notify\Models\NotificationLog;
 use Modules\Notify\Models\NotificationTemplate;
-use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
-
-uses(TestCase::class);
 
 it('can create a notification', function () {
     $notification = NotificationFactory::new()->createOne([

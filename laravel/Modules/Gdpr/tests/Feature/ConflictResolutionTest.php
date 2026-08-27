@@ -6,9 +6,6 @@ namespace Modules\Gdpr\Tests\Feature;
 
 use Modules\Gdpr\Models\Profile;
 use Modules\Gdpr\Models\Treatment;
-use Modules\Gdpr\Tests\TestCase;
-
-uses(TestCase::class);
 
 it('verifica che le classi corrette siano istanziabili', function (): void {
     // `new X()` restituisce per costruzione un X: il fatto verificabile e' che i due

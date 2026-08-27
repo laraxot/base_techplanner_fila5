@@ -9,8 +9,6 @@ use Modules\Notify\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('notify-db');
-
 beforeEach(function (): void {
     /** @var TestCase $this */
     $this->disableExceptionHandling();

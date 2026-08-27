@@ -11,7 +11,6 @@ use Modules\Tenant\Models\Traits\SushiToJsons;
 use PHPUnit\Framework\Assert;
 use Spatie\Translatable\HasTranslations;
 
-uses(TestCase::class);
 
 describe('Page Content Business Logic', function (): void {
     test('page content model can be instantiated', function (): void {

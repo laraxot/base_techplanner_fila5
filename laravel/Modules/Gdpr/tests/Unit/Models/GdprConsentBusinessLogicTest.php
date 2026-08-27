@@ -8,11 +8,8 @@ use Modules\Gdpr\Database\Factories\ConsentFactory;
 use Modules\Gdpr\Database\Factories\TreatmentFactory;
 use Modules\Gdpr\Models\Consent;
 use Modules\Gdpr\Models\Treatment;
-use Modules\Gdpr\Tests\TestCase;
 use Modules\User\Database\Factories\UserFactory;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
 
 describe('GDPR Consent Business Logic', function () {
     beforeEach(function (): void {

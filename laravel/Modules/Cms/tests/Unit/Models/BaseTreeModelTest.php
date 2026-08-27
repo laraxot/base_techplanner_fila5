@@ -8,7 +8,6 @@ use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
 
-uses(TestCase::class);
 test('BaseTreeModel is abstract and extends BaseModel', function () {
     $reflection = new ReflectionClass(BaseTreeModel::class);
 

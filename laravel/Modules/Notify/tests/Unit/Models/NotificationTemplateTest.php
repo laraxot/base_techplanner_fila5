@@ -6,10 +6,7 @@ namespace Modules\Notify\Tests\Unit\Models;
 
 use Modules\Notify\Enums\NotificationTypeEnum;
 use Modules\Notify\Models\NotificationTemplate;
-use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class)->group('no-notify-db');
 
 /**
  * Unit tests must not bootstrap the application container.

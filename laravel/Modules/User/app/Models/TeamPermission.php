@@ -6,37 +6,30 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Support\Carbon;
-use Modules\Xot\Contracts\ProfileContract;
+use Modules\TechPlanner\Models\Profile;
 
 /**
  * Team Permission Model.
  *
  * Represents a permission assigned to a user within a team context.
  *
- * @property string $id
- * @property string $team_id
- * @property string $user_id
- * @property string $permission
- * @property \DateTime|null $created_at
- * @property \DateTime|null $updated_at
- * @property Team $team
- * @property User $user
- *
+ * @property-read Profile|null $creator
+ * @property-read Team|null $team
+ * @property-read Profile|null $updater
+ * @property-read User|null $user
  * @method static Builder<static>|TeamPermission newModelQuery()
  * @method static Builder<static>|TeamPermission newQuery()
  * @method static Builder<static>|TeamPermission query()
- *
- * @property ProfileContract|null $creator
- * @property ProfileContract|null $deleter
- * @property ProfileContract|null $updater
+ * @property int $id
+ * @property int $team_id
+ * @property string $permission
  * @property string|null $name
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- * @property Carbon|null $deleted_at
+ * @property \Illuminate\Support\Carbon|null $deleted_at
  * @property string|null $deleted_by
- *
- * @method static \Modules\User\Database\Factories\TeamPermissionFactory factory($count = null, $state = [])
  * @method static Builder<static>|TeamPermission whereCreatedAt($value)
  * @method static Builder<static>|TeamPermission whereCreatedBy($value)
  * @method static Builder<static>|TeamPermission whereDeletedAt($value)
@@ -47,7 +40,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|TeamPermission whereTeamId($value)
  * @method static Builder<static>|TeamPermission whereUpdatedAt($value)
  * @method static Builder<static>|TeamPermission whereUpdatedBy($value)
- *
  * @mixin \Eloquent
  */
 class TeamPermission extends BaseModel

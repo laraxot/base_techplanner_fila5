@@ -6,7 +6,6 @@ use Modules\Cms\Actions\GetViewThemeByViewAction;
 use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
 test('GetViewThemeByViewAction can be executed', function () {
     $action = new GetViewThemeByViewAction();
 

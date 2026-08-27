@@ -12,8 +12,6 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\class_uses;
 
-uses(TestCase::class);
-
 describe('SendFacebookWhatsAppAction', function () {
     it('can be referenced via ReflectionClass without instantiation', function () {
         $reflection = new \ReflectionClass(SendFacebookWhatsAppAction::class);

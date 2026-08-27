@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace Modules\Notify\Tests\Feature;
 
 use Illuminate\Support\Facades\File;
-use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\json_decode;
 
-uses(TestCase::class)->group('no-notify-db');
 
 test('components json is valid and contains expected components', function (): void {
     $filePath = base_path('Modules/Notify/app/Console/Commands/_components.json');

@@ -10,7 +10,6 @@ use Modules\Cms\View\Components\PageContent;
 use Modules\Cms\View\Components\Section;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
 test('AppLayout can be instantiated', function () {
     $component = new AppLayout();
 

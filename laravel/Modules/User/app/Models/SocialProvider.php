@@ -9,51 +9,39 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+use Modules\TechPlanner\Models\Profile;
 use Modules\Tenant\Models\Traits\SushiToPhpArray;
-use Modules\Xot\Contracts\ProfileContract;
 
 /**
- * @property int|null $id
+ * @property int $id
  * @property string|null $name
- * @property array<int, string>|null $scopes
- * @property array<string, mixed>|null $parameters
+ * @property array<array-key, mixed>|null $scopes
+ * @property array<array-key, mixed>|null $parameters
  * @property bool|null $stateless
  * @property bool|null $active
  * @property bool|null $socialite
  * @property string|null $svg
- * @property string|null $client_id
- * @property string|null $client_secret
- * @property ProfileContract|null $creator
- * @property ProfileContract|null $updater
- *
- * @method static Builder|SocialProvider newModelQuery()
- * @method static Builder|SocialProvider newQuery()
- * @method static Builder|SocialProvider query()
- * @method static Builder|SocialProvider whereActive($value)
- * @method static Builder|SocialProvider whereClientId($value)
- * @method static Builder|SocialProvider whereClientSecret($value)
- * @method static Builder|SocialProvider whereId($value)
- * @method static Builder|SocialProvider whereName($value)
- * @method static Builder|SocialProvider whereParameters($value)
- * @method static Builder|SocialProvider whereScopes($value)
- * @method static Builder|SocialProvider whereSocialite($value)
- * @method static Builder|SocialProvider whereStateless($value)
- * @method static Builder|SocialProvider whereSvg($value)
- *
  * @property string|null $created_at
  * @property string|null $updated_at
  * @property string|null $created_by
  * @property string|null $updated_by
- *
- * @method static Builder|SocialProvider whereCreatedAt($value)
- * @method static Builder|SocialProvider whereCreatedBy($value)
- * @method static Builder|SocialProvider whereUpdatedAt($value)
- * @method static Builder|SocialProvider whereUpdatedBy($value)
- *
- * @property ProfileContract|null $deleter
- *
- * @method static \Modules\User\Database\Factories\SocialProviderFactory factory($count = null, $state = [])
- *
+ * @property-read Profile|null $creator
+ * @property-read Profile|null $updater
+ * @method static Builder<static>|SocialProvider newModelQuery()
+ * @method static Builder<static>|SocialProvider newQuery()
+ * @method static Builder<static>|SocialProvider query()
+ * @method static Builder<static>|SocialProvider whereActive($value)
+ * @method static Builder<static>|SocialProvider whereCreatedAt($value)
+ * @method static Builder<static>|SocialProvider whereCreatedBy($value)
+ * @method static Builder<static>|SocialProvider whereId($value)
+ * @method static Builder<static>|SocialProvider whereName($value)
+ * @method static Builder<static>|SocialProvider whereParameters($value)
+ * @method static Builder<static>|SocialProvider whereScopes($value)
+ * @method static Builder<static>|SocialProvider whereSocialite($value)
+ * @method static Builder<static>|SocialProvider whereStateless($value)
+ * @method static Builder<static>|SocialProvider whereSvg($value)
+ * @method static Builder<static>|SocialProvider whereUpdatedAt($value)
+ * @method static Builder<static>|SocialProvider whereUpdatedBy($value)
  * @mixin \Eloquent
  */
 class SocialProvider extends BaseModel

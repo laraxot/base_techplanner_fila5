@@ -7,7 +7,6 @@ use Modules\Cms\Models\PageContent;
 use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
 test('PageContent model can be instantiated', function () {
     $pageContent = new PageContent();
 

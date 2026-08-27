@@ -10,10 +10,7 @@ use Illuminate\Support\Facades\Notification;
 use Modules\Notify\Actions\SendRecordNotificationAction;
 use Modules\Notify\Enums\ChannelEnum;
 use Modules\Notify\Notifications\RecordNotification;
-use Modules\Notify\Tests\TestCase;
 use Modules\Xot\Actions\Cast\SafeEloquentCastAction;
-
-uses(TestCase::class)->group('no-notify-db');
 
 /**
  * @param  array<string, mixed>  $attributes

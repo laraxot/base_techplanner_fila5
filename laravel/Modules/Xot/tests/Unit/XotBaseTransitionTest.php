@@ -12,13 +12,13 @@ uses(TestCase::class)->group('xot-db');
 
 describe('XotBaseTransition', function (): void {
     it('can be instantiated', function (): void {
-        [, $transition] = TestCase::xotBaseTransitionFixture();
+        [, $transition] = xotBaseTransitionFixture();
 
         Assert::assertInstanceOf(XotBaseTransition::class, $transition);
     });
 
     it('can get record', function (): void {
-        [$record, $transition] = TestCase::xotBaseTransitionFixture();
+        [$record, $transition] = xotBaseTransitionFixture();
 
         Assert::assertSame($record, $transition->record);
     });
@@ -104,7 +104,7 @@ describe('XotBaseTransition', function (): void {
     });
 
     it('validates inheritance requirements', function () {
-        [, $transition] = TestCase::xotBaseTransitionFixture();
+        [, $transition] = xotBaseTransitionFixture();
 
         expect(method_exists($transition, 'getNotificationRecipients'))
             ->toBeTrue()

@@ -5,47 +5,31 @@ declare(strict_types=1);
 namespace Modules\Notify\Models;
 
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Support\Carbon;
-use Modules\Notify\Database\Factories\NotificationFactory;
-use Modules\Xot\Contracts\ProfileContract;
+use Modules\TechPlanner\Models\Profile;
 use Modules\Xot\Models\BaseModel;
 use Override;
 
 /**
  * Notification model for the Notify module.
  *
- * @property string $id
- * @property string $type
- * @property string|null $subject
- * @property string|null $content
- * @property string|null $priority
- * @property array<string, mixed>|null $custom_headers
- * @property array<int, mixed>|null $attachments
- * @property string|null $message
- * @property string $notifiable_type
- * @property int $notifiable_id
- * @property array<string, mixed> $data
- * @property Carbon|null $read_at
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
- * @property Carbon|null $deleted_at
- * @property string|null $deleted_by
- * @property int|null $tenant_id
- * @property int|null $user_id
- * @property string|null $subject_type
- * @property int|null $subject_id
- * @property list<string>|null $channels
- * @property string|null $status
- * @property Carbon|null $sent_at
- * @property-read ProfileContract|null $creator
- * @property-read ProfileContract|null $updater
- *
- * @method static NotificationFactory factory($count = null, $state = [])
+ * @property-read Profile|null $creator
+ * @property-read Profile|null $updater
+ * @method static \Modules\Notify\Database\Factories\NotificationFactory factory($count = null, $state = [])
  * @method static Builder<static>|Notification newModelQuery()
  * @method static Builder<static>|Notification newQuery()
  * @method static Builder<static>|Notification query()
+ * @property string $id
+ * @property string $type
+ * @property string $notifiable_type
+ * @property int $notifiable_id
+ * @property array<array-key, mixed> $data
+ * @property \Illuminate\Support\Carbon|null $read_at
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property string|null $deleted_by
  * @method static Builder<static>|Notification whereCreatedAt($value)
  * @method static Builder<static>|Notification whereCreatedBy($value)
  * @method static Builder<static>|Notification whereData($value)
@@ -58,9 +42,6 @@ use Override;
  * @method static Builder<static>|Notification whereType($value)
  * @method static Builder<static>|Notification whereUpdatedAt($value)
  * @method static Builder<static>|Notification whereUpdatedBy($value)
- *
- * @property-read ProfileContract|null $deleter
- *
  * @mixin \Eloquent
  */
 class Notification extends BaseModel

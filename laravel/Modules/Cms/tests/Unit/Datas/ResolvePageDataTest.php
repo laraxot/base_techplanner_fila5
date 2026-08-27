@@ -7,7 +7,6 @@ use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\LaravelData\Data;
 
-uses(TestCase::class);
 test('ResolvePageData can be instantiated with constructor', function (): void {
     $data = new ResolvePageData('folio', null, 'home');
 

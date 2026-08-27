@@ -6,10 +6,7 @@ namespace Modules\Notify\Tests\Unit\Models\Traits;
 
 use Modules\Notify\Enums\ContactTypeEnum;
 use Modules\Notify\Tests\Fixtures\HasContactDummyModel;
-use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class)->group('no-notify-db');
 
 function makeHasContactDummyModel(): HasContactDummyModel
 {

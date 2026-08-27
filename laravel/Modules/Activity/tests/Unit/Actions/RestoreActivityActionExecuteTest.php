@@ -7,10 +7,7 @@ namespace Modules\Activity\Tests\Unit\Actions;
 use Exception;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Activity\Actions\RestoreActivityAction;
-use Modules\Activity\Tests\TestCase;
 use Webmozart\Assert\InvalidArgumentException as AssertInvalidArgumentException;
-
-uses(TestCase::class);
 
 test('RestoreActivityAction aggiorna il record con le vecchie proprietà', function (): void {
     $model = new class() extends Model

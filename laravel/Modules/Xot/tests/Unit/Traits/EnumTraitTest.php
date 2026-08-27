@@ -9,10 +9,10 @@ use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Tests\Fixtures\Enums\EmptyDefinitionsEnum;
 use Modules\Xot\Tests\Fixtures\Enums\TestEnum;
-use Modules\Xot\Tests\TestCase;
+use Modules\Xot\Tests\XotBaseTestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(XotBaseTestCase::class);
 
 beforeEach(function (): void {
     $this->markTestSkipped('fragile offline mocks/fixtures');

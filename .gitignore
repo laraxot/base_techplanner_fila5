@@ -125,3 +125,5 @@ ${HOME}/.cache/qmd-cache/qmd/index.sqlite-shm
 .token-optimizer/
 graphify-out/
 graphify-out/
+.token-optimizer/
+build/

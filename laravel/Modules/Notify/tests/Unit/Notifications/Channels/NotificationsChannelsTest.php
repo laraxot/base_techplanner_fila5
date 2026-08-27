@@ -15,12 +15,9 @@ use Modules\Notify\Notifications\Channels\TelegramChannel;
 use Modules\Notify\Notifications\ThemeNotification;
 use Modules\Notify\Tests\Fixtures\NetfunChannelNotifiableDummy;
 use Modules\Notify\Tests\TestCase;
+use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
-use Modules\Xot\Tests\XotBasePest;
-
-uses(TestCase::class)->group('no-notify-db');
 
 function makeThemeNotificationDummy(): ThemeNotification
 {

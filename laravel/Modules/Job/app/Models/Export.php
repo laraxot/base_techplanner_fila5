@@ -15,6 +15,12 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 
 /**
+ * @property-read Model|Eloquent $user
+ *
+ * @method static Builder<static>|Export newModelQuery()
+ * @method static Builder<static>|Export newQuery()
+ * @method static Builder<static>|Export query()
+ *
  * @property string $id
  * @property Carbon|null $completed_at
  * @property string $file_disk
@@ -23,6 +29,7 @@ use Illuminate\Support\Carbon;
  * @property int $processed_rows
  * @property int $total_rows
  * @property int $successful_rows
+ * @property string|null $user_type
  * @property string|null $user_id
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
@@ -30,12 +37,7 @@ use Illuminate\Support\Carbon;
  * @property string|null $created_by
  * @property string|null $deleted_at
  * @property string|null $deleted_by
- * @property string|null $user_type
- * @property-read Model|Eloquent|null $user
  *
- * @method static Builder<static>|Export newModelQuery()
- * @method static Builder<static>|Export newQuery()
- * @method static Builder<static>|Export query()
  * @method static Builder<static>|Export whereCompletedAt($value)
  * @method static Builder<static>|Export whereCreatedAt($value)
  * @method static Builder<static>|Export whereCreatedBy($value)

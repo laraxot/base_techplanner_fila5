@@ -37,7 +37,6 @@ use Modules\Notify\Models\Notification as NotificationModel;
 use Modules\Notify\Tests\Fixtures\NotifyCoveragePivotStub;
 use Modules\Notify\Tests\Fixtures\NotifyNetfunNotifiableStub;
 use Modules\Notify\Tests\Fixtures\NotifyNetfunNotificationStub;
-use Modules\Notify\Tests\TestCase;
 use Modules\Xot\Tests\ModuleBusinessCoverage;
 use Modules\Xot\Tests\ModuleDeepCoverage;
 use Modules\Xot\Tests\ModuleExecuteCoverage;
@@ -45,7 +44,6 @@ use PHPUnit\Framework\Assert;
 use ReflectionClass;
 use Safe\DateTime;
 
-uses(TestCase::class)->group('no-notify-db');
 
 afterEach(function (): void {
     Mockery::close();

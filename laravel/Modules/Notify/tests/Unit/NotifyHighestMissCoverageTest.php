@@ -62,7 +62,6 @@ use Modules\Notify\Models\NotifyTheme;
 use Modules\Notify\Notifications\GenericNotification;
 use Modules\Notify\Services\PushNotificationService;
 use Modules\Notify\Services\SmsService;
-use Modules\Notify\Tests\TestCase;
 use Modules\Notify\Tests\Unit\Traits\NotifyTrackingDummy;
 use PHPUnit\Framework\Assert;
 use ReflectionClass;
@@ -72,7 +71,6 @@ use Safe\DateTime;
 use function Safe\file_put_contents;
 use function Safe\unlink;
 
-uses(TestCase::class)->group('no-notify-db');
 
 /**
  * @param  class-string  $class

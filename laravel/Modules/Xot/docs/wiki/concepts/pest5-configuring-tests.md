@@ -48,16 +48,22 @@ XotBasePest::assertThrows(fn () => $action->execute(), InvalidArgumentException:
 
 Mappa PSR-4 già in `Modules/Xot/composer.json`: `"Modules\\Xot\\Tests\\": "tests/"`.
 
-## Strato 3 — `pest()->extend()` vs `uses()`
+## Strato 3 — `pest()->extend()` (**consigliato**) vs `uses()` per file
 
-Con **`pestphp/pest-plugin-phpstan` v5** e `phpstan.neon` senza `includes:` duplicati, probe 2026-08-19:
+Con **`pestphp/pest-plugin-phpstan` v5** e `phpstan.neon` senza `includes:` duplicati:
 
-| forma | PHPStan su Pest.php |
-| --- | --- |
-| `uses(TestCase::class);` | OK |
-| `pest()->extend(TestCase::class)->in('.');` | OK |
+| forma | PHPStan su Pest.php | Runtime |
+| --- | --- | --- |
+| `pest()->extend(TestCase::class)->in(__DIR__.'/Unit', __DIR__.'/Feature')` | OK | **consigliato** — un binding per modulo |
+| `uses(TestCase::class);` in ogni file | OK | ammesso, ma ripetitivo |
 
-**Regola:** bindare sempre il `TestCase` **concreto** del modulo (estende `XotBaseTestCase`), mai
+**Regola XOR:** mai entrambi — `pest()->extend()->in(...)` in `Pest.php` **e** `uses(TestCase)` nei file
+→ `TestCaseAlreadyInUse`. Migrazione: aggiungi `extend()` in `Pest.php`, rimuovi `uses()` per-file.
+
+Il divieto storico «Vietato `pest()->extend()`» (method.internalClass senza plugin) è **decaduto**
+(XOT-5.41). Non reintrodurre divieti nei docblock.
+
+Bindare sempre il `TestCase` **concreto** del modulo (estende `XotBaseTestCase`), mai
 `XotBaseTestCase` abstract.
 
 Gate obbligatorio dopo ogni modifica a `Pest.php`:

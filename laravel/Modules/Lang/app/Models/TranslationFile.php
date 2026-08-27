@@ -13,33 +13,19 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
 use Modules\Lang\Actions\GetAllTranslationAction;
-use Modules\Lang\Database\Factories\TranslationFileFactory;
-use Modules\Xot\Contracts\ProfileContract;
+use Modules\TechPlanner\Models\Profile;
 use Sushi\Sushi;
 
 use function Safe\json_encode;
 
 /**
- * @property string|null $key
- * @property string|null $path
- * @property string|null $id
- * @property string|null $name
- * @property array<array-key, mixed>|null $content
- * @property ProfileContract|null $creator
- * @property ProfileContract|null $updater
- *
- * @method static TranslationFileFactory factory($count = null, $state = [])
+ * @property int $id
+ * @property-read Profile|null $creator
+ * @property-read Profile|null $updater
  * @method static Builder<static>|TranslationFile newModelQuery()
  * @method static Builder<static>|TranslationFile newQuery()
  * @method static Builder<static>|TranslationFile query()
- * @method static Builder<static>|TranslationFile whereContent($value)
  * @method static Builder<static>|TranslationFile whereId($value)
- * @method static Builder<static>|TranslationFile whereKey($value)
- * @method static Builder<static>|TranslationFile whereName($value)
- * @method static Builder<static>|TranslationFile wherePath($value)
- *
- * @property ProfileContract|null $deleter
- *
  * @mixin \Eloquent
  */
 class TranslationFile extends BaseModel

@@ -6,28 +6,20 @@ namespace Modules\Job\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Modules\Job\Database\Factories\TaskCommentFactory;
+use Modules\TechPlanner\Models\Profile;
 use Modules\User\Models\User;
-use Modules\Xot\Contracts\ProfileContract;
 
 /**
  * Class TaskComment.
  *
- * @property ProfileContract|null $creator
- * @property Task|null $task
- * @property ProfileContract|null $updater
- * @property User|null $user
+ * @property-read Profile|null $creator
+ * @property-read Task|null $task
+ * @property-read Profile|null $updater
+ * @property-read User|null $user
  *
  * @method static Builder<static>|TaskComment newModelQuery()
  * @method static Builder<static>|TaskComment newQuery()
- * @method static Builder<static>|TaskComment onlyTrashed()
  * @method static Builder<static>|TaskComment query()
- * @method static Builder<static>|TaskComment withTrashed(bool $withTrashed = true)
- * @method static Builder<static>|TaskComment withoutTrashed()
- *
- * @property-read ProfileContract|null $deleter
- *
- * @method static TaskCommentFactory factory($count = null, $state = [])
  *
  * @mixin \Eloquent
  */

@@ -26,14 +26,10 @@ namespace Modules\Notify\Tests\Unit\Models;
 
 use Modules\Notify\Models\MailTemplateLog;
 use Modules\Notify\Tests\TestCase;
+use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
-
-uses(TestCase::class);
-use Modules\Xot\Tests\XotBasePest;
-
-uses(TestCase::class)->group('notify-db');
 
 beforeEach(function (): void {
     /** @var TestCase $this */

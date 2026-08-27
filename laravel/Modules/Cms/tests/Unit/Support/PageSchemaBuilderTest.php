@@ -11,7 +11,6 @@ use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Datas\MetatagData;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
 
 /**
  * @param array<string, mixed> $schema

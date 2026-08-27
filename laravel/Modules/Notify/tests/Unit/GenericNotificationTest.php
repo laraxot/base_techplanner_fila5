@@ -6,10 +6,7 @@ namespace Modules\Notify\Tests\Unit;
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\Notify\Notifications\GenericNotification;
-use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class)->group('no-notify-db');
 
 // Basic unit tests focusing on business logic of recipient name resolution
 

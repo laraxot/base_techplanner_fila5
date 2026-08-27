@@ -6,13 +6,9 @@ namespace Modules\Notify\Tests\Feature;
 
 use Modules\Notify\Database\Factories\MailTemplateFactory;
 use Modules\Notify\Models\MailTemplate;
-use Modules\Notify\Tests\TestCase;
+use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
-use Modules\Xot\Tests\XotBasePest;
-
-uses(TestCase::class)->group('notify-db');
 
 describe('MailTemplate Model Tests', function () {
     it('can create a mail template', function () {

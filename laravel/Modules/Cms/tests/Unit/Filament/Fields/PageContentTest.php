@@ -7,7 +7,6 @@ use Modules\Cms\Filament\Fields\PageContent;
 use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
 
 // I tre test avevano closure vuote e commenti che spiegavano perche': `make()` chiama
 // `GetAllBlocksAction` e senza i blocchi configurati l'esecuzione fallisce. Cio' che si

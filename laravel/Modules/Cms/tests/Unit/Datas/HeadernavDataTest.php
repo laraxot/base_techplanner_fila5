@@ -9,7 +9,6 @@ use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use PHPUnit\Framework\Assert;
 use Spatie\LaravelData\Data;
 
-uses(TestCase::class);
 test('HeadernavData can be instantiated', function (): void {
     $headernavData = new HeadernavData();
 

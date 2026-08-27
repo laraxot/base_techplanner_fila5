@@ -10,9 +10,6 @@ use Mockery;
 use Modules\Notify\Actions\NotificationManager;
 use Modules\Notify\Actions\SendNotificationAction;
 use Modules\Notify\Models\NotificationTemplate;
-use Modules\Notify\Tests\TestCase;
-
-uses(TestCase::class);
 
 function actionsNotificationManagerRecipient(): Model
 {

@@ -2,6 +2,13 @@
 
 declare(strict_types=1);
 
+use Illuminate\Database\Eloquent\Model;
+use Modules\Xot\Models\XotBaseModel;
+use Modules\Xot\Traits\Updater;
+use ReflectionNamedType;
+
+use function Safe\file_get_contents;
+
 test('xot base model extends eloquent model', function (): void {
     $reflection = new ReflectionClass(XotBaseModel::class);
 
@@ -68,13 +75,13 @@ test('xot base model has correct property types', function (): void {
     $perPageType = $perPageProperty->getType();
 
     // Some properties may not have explicit type declarations; in that case just ensure defaults are as expected
-    if ($snakeType !== null) {
+    if ($snakeType instanceof ReflectionNamedType) {
         expect($snakeType->getName())->toBe('bool');
     } else {
         expect(XotBaseModel::$snakeAttributes)->toBeTrue();
     }
 
-    if ($perPageType !== null) {
+    if ($perPageType instanceof ReflectionNamedType) {
         expect($perPageType->getName())->toBe('int');
     } else {
         expect($perPageProperty->getDefaultValue())->toBe(30);

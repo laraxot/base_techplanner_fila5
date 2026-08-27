@@ -6,7 +6,6 @@ use Modules\Cms\Actions\SaveHeadernavConfigAction;
 use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
 test('SaveHeadernavConfigAction can be instantiated', function () {
     $action = new SaveHeadernavConfigAction();
 

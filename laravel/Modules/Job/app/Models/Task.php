@@ -12,10 +12,9 @@ use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Carbon;
-use Modules\Job\Database\Factories\TaskFactory;
 use Modules\Job\Models\Traits\FrontendSortable;
+use Modules\TechPlanner\Models\Profile;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Webmozart\Assert\Assert;
 
@@ -24,7 +23,26 @@ use function Safe\json_decode;
 /**
  * Modules\Job\Models\Task.
  *
- * @property string $id
+ * @property-read Profile|null $creator
+ * @property-read Collection<int, Frequency> $frequencies
+ * @property-read int|null $frequencies_count
+ * @property-read bool $activated
+ * @property-read float $average_runtime
+ * @property-read Result|null $last_result
+ * @property-read string $upcoming
+ * @property-read DatabaseNotificationCollection<int, DatabaseNotification> $notifications
+ * @property-read int|null $notifications_count
+ * @property-read Collection<int, Result> $results
+ * @property-read int|null $results_count
+ * @property-read Profile|null $updater
+ *
+ * @method static \Modules\Job\Database\Factories\TaskFactory factory($count = null, $state = [])
+ * @method static Builder<static>|Task newModelQuery()
+ * @method static Builder<static>|Task newQuery()
+ * @method static Builder<static>|Task query()
+ * @method static Builder<static>|Task sortableBy(array $sortableColumns, array $defaultSort = [])
+ *
+ * @property int $id
  * @property string $description
  * @property string $command
  * @property string|null $parameters
@@ -40,32 +58,20 @@ use function Safe\json_decode;
  * @property string|null $auto_cleanup_type
  * @property int $run_on_one_server
  * @property int $run_in_background
- * @property string|null $created_by
- * @property string|null $updated_by
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- * @property-read ProfileContract|null $creator
- * @property-read Collection<int, Frequency> $frequencies
- * @property-read int|null $frequencies_count
- * @property-read bool $activated
- * @property-read float $average_runtime
- * @property-read Result|null $last_result
- * @property-read string $upcoming
- * @property-read DatabaseNotificationCollection<int, DatabaseNotification> $notifications
- * @property-read int|null $notifications_count
- * @property-read Collection<int, Result> $results
- * @property-read int|null $results_count
- * @property-read ProfileContract|null $updater
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property string|null $deleted_at
+ * @property string|null $deleted_by
  *
- * @method static Builder<static>|Task newModelQuery()
- * @method static Builder<static>|Task newQuery()
- * @method static Builder<static>|Task query()
- * @method static Builder<static>|Task sortableBy(array<string> $sortableColumns, array<string, 'asc'|'desc'> $defaultSort = [])
  * @method static Builder<static>|Task whereAutoCleanupNum($value)
  * @method static Builder<static>|Task whereAutoCleanupType($value)
  * @method static Builder<static>|Task whereCommand($value)
  * @method static Builder<static>|Task whereCreatedAt($value)
  * @method static Builder<static>|Task whereCreatedBy($value)
+ * @method static Builder<static>|Task whereDeletedAt($value)
+ * @method static Builder<static>|Task whereDeletedBy($value)
  * @method static Builder<static>|Task whereDescription($value)
  * @method static Builder<static>|Task whereDontOverlap($value)
  * @method static Builder<static>|Task whereExpression($value)
@@ -81,14 +87,6 @@ use function Safe\json_decode;
  * @method static Builder<static>|Task whereTimezone($value)
  * @method static Builder<static>|Task whereUpdatedAt($value)
  * @method static Builder<static>|Task whereUpdatedBy($value)
- *
- * @property Carbon|null $deleted_at
- * @property string|null $deleted_by
- * @property-read ProfileContract|null $deleter
- *
- * @method static TaskFactory factory($count = null, $state = [])
- * @method static Builder<static>|Task whereDeletedAt($value)
- * @method static Builder<static>|Task whereDeletedBy($value)
  *
  * @mixin \Eloquent
  */

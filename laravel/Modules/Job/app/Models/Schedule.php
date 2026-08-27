@@ -11,22 +11,33 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
 use InvalidArgumentException;
-use Modules\Job\Database\Factories\ScheduleFactory;
 use Modules\Job\Enums\Status;
-use Modules\Xot\Contracts\ProfileContract;
+use Modules\TechPlanner\Models\Profile;
 use Override;
 
 /**
  * Modules\Job\Models\Schedule.
  *
+ * @property Status $status
+ * @property-read Profile|null $creator
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, ScheduleHistory> $histories
+ * @property-read int|null $histories_count
+ * @property-read Profile|null $updater
+ *
+ * @method static Builder<static>|Schedule active()
+ * @method static Builder<static>|Schedule inactive()
+ * @method static Builder<static>|Schedule newModelQuery()
+ * @method static Builder<static>|Schedule newQuery()
+ * @method static Builder<static>|Schedule query()
+ *
  * @property string $id
  * @property string $command
  * @property string|null $command_custom
- * @property array<array-key, array{name?: string, value?: bool|float|int|string|null, required?: bool, type?: string}>|null $params
+ * @property array<array-key, mixed>|null $params
  * @property string $expression
- * @property array<array-key, bool|float|int|string|null>|null $environments
- * @property array<array-key, array{name?: string, value?: bool|float|int|string|null}|bool|float|int|string|null>|null $options
- * @property array<array-key, array{name?: string, value?: bool|float|int|string|null, required?: bool, type?: string}>|null $options_with_value
+ * @property array<array-key, mixed>|null $environments
+ * @property array<array-key, mixed>|null $options
+ * @property array<array-key, mixed>|null $options_with_value
  * @property string|null $log_filename
  * @property int $even_in_maintenance_mode
  * @property int $without_overlapping
@@ -37,27 +48,15 @@ use Override;
  * @property int $sendmail_error
  * @property int $log_success
  * @property int $log_error
- * @property Status $status
  * @property int $run_in_background
  * @property int $sendmail_success
+ * @property Carbon|null $deleted_at
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- * @property Carbon|null $deleted_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_by
- * @property ProfileContract|null $creator
- * @property \Illuminate\Database\Eloquent\Collection<int, ScheduleHistory> $histories
- * @property int|null $histories_count
- * @property ProfileContract|null $updater
  *
- * @method static Builder<static>|Schedule active()
- * @method static ScheduleFactory factory($count = null, $state = [])
- * @method static Builder<static>|Schedule inactive()
- * @method static Builder<static>|Schedule newModelQuery()
- * @method static Builder<static>|Schedule newQuery()
- * @method static Builder<static>|Schedule onlyTrashed()
- * @method static Builder<static>|Schedule query()
  * @method static Builder<static>|Schedule whereCommand($value)
  * @method static Builder<static>|Schedule whereCommandCustom($value)
  * @method static Builder<static>|Schedule whereCreatedAt($value)
@@ -85,10 +84,6 @@ use Override;
  * @method static Builder<static>|Schedule whereWebhookAfter($value)
  * @method static Builder<static>|Schedule whereWebhookBefore($value)
  * @method static Builder<static>|Schedule whereWithoutOverlapping($value)
- * @method static Builder<static>|Schedule withTrashed(bool $withTrashed = true)
- * @method static Builder<static>|Schedule withoutTrashed()
- *
- * @property-read ProfileContract|null $deleter
  *
  * @mixin \Eloquent
  */

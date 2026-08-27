@@ -1,34 +1,27 @@
-# PHPStan Config Immutability (Global Project Rule)
+---
+title: "PHPStan config immutability — Xot"
+type: guideline
+module: Xot
+updated: 2026-08-28
+related:
+  - ../../../../docs/wiki/guidelines/phpstan-config-immutability.md
+  - ../../../../docs/wiki/rules/phpstan-neon-immutable.md
+  - ../../../../docs/wiki/memories/phpstan-neon-immutable.md
+---
 
-- File target: `phpstan.neon`
-- File target: `phpstan.neon`
-- File target: `phpstan.neon`
-- Status: IMMUTABLE — never modify this file via automation or PRs. Only the user may edit it manually.
+# PHPStan Config Immutability (Xot)
 
-## Rationale
-- Single source of truth for static analysis settings.
-- Prevents wide-impact accidental changes.
+- File: `laravel/phpstan.neon`
+- Status: **IMMUTABLE per agenti** — solo l’**utente umano** lo modifica.
 
-## How to adjust analysis without editing phpstan.neon
-- Scope via CLI paths and flags, e.g.:
+## Come analizzare senza toccare il neon
 
 ```bash
-# Per-module
-./vendor/bin/phpstan analyze Modules/User Modules/Geo --level=9 --no-progress --memory-limit=2G
-
-# Full Modules with debug
-./vendor/bin/phpstan analyze Modules --level=9 --no-progress --debug -vvv
-
-# Exclude heavy module via shell (do not touch config)
-find Modules -maxdepth 2 -type d -name app ! -path 'Modules/Activity/*' -print0 \
-  | xargs -0 ./vendor/bin/phpstan analyze --level=9 --no-progress --memory-limit=2G
+cd laravel
+./vendor/bin/phpstan analyse Modules --memory-limit=-1 --no-progress
+./vendor/bin/phpstan analyse Modules/User --memory-limit=-1 --no-progress
 ```
 
-## Enforcement
-- Assistants, scripts, and CI MUST NOT patch `phpstan.neon`.
-- Prefer per-run options and per-module execution.
+Vietato: `--level`, `-c`, nuovi `.neon`, restore/edit del config.
 
-## Cross-References
-- `.ai/guidelines/phpstan-config-immutability.md`
-- `.cursor/rules/phpstan-config-immutability.mdc`
-- `.windsurf/rules/phpstan-config-immutability.mdc`
+Errori → tipizza e correggi il **codice**. Neon sbagliato → chiedi all’utente.

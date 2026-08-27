@@ -14,11 +14,8 @@ use Modules\Notify\Tests\Fixtures\SendRecordNotificationThrowStub;
 use Modules\Notify\Tests\Fixtures\SendRecordsNotificationRecordDummy;
 use Modules\Notify\Tests\Fixtures\SendRecordsSafeEloquentCastEmptyStub;
 use Modules\Notify\Tests\Fixtures\SendRecordsSafeEloquentCastStub;
-use Modules\Notify\Tests\TestCase;
 use Modules\Xot\Actions\Cast\SafeEloquentCastAction;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class)->group('no-notify-db');
 
 /**
  * @param  array<string, mixed>  $attributes

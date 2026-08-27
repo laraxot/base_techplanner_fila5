@@ -12,8 +12,6 @@ use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\class_uses;
 
-uses(TestCase::class)->group('no-notify-db');
-
 describe('GetMailLayoutAction', function () {
     it('can be instantiated', function () {
         $action = new GetMailLayoutAction();

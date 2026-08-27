@@ -6,13 +6,8 @@ namespace Modules\Notify\Tests\Unit\Console\Commands;
 
 use Illuminate\Console\Command;
 use Modules\Notify\Console\Commands\AnalyzeTranslationFiles;
-use Modules\Notify\Tests\TestCase;
-use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
 use Modules\Xot\Tests\XotBasePest;
-
-uses(TestCase::class)->group('no-notify-db');
+use PHPUnit\Framework\Assert;
 
 describe('AnalyzeTranslationFiles', function () {
     it('has correct signature', function () {

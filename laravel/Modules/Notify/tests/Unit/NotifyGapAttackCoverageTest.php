@@ -32,7 +32,6 @@ use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use ReflectionClass;
 
-uses(TestCase::class)->group('no-notify-db');
 
 afterEach(function (): void {
     Mockery::close();

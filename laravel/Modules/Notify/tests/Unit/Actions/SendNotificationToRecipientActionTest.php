@@ -9,11 +9,8 @@ use Illuminate\Notifications\Notification as IlluminateNotification;
 use Illuminate\Support\Facades\Notification;
 use InvalidArgumentException;
 use Modules\Notify\Actions\SendNotificationToRecipientAction;
-use Modules\Notify\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class)->group('no-notify-db');
 
 function makeDummyNotificationForRecipient(): IlluminateNotification
 {
@@ -51,6 +48,6 @@ test('send notification to recipient throws for invalid email', function () {
             'invalid-email',
             makeDummyNotificationForRecipient(),
         ),
-        \InvalidArgumentException::class,
+        InvalidArgumentException::class,
     );
 });

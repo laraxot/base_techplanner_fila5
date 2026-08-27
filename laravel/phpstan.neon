@@ -1,49 +1,31 @@
 includes:
-    - ./phpstan-baseline.neon
-    - ./vendor/larastan/larastan/extension.neon
-    - ./vendor/nesbot/carbon/extension.neon
+    # - ./phpstan-baseline.neon
+    # - vendor/larastan/larastan/extension.neon
+    # - vendor/nesbot/carbon/extension.neon
     - ./vendor/phpstan/phpstan/conf/bleedingEdge.neon
-    - ./vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
-    - ./vendor/pestphp/pest/extension.neon
-    - ./Modules/Xot/phpstan/pest-internal-ignore.neon
+    
 
 parameters:
     level: max
-
     paths:
         - ./Modules/
-
     ignoreErrors:
-        - '#Cannot cast mixed to (string|float|double|int|bool|boolean).#'
-        # Pest internals
-        - '#Call to an undefined method Pest\\PendingCalls\\.*#'
-        - '#Call to an undefined method Mockery\\CompositeExpectation::.*#'
-        - '#Anonymous function with return type void returns null but should not return anything.#'
-        # Larastan / Carbon internal
-        - '#Cannot call method .* on mixed.#'
-        - identifier: method.notFound
-
+        
     excludePaths:
         - ./*/vendor/*
         - ./*/build/*
         - ./*/docs/*
         - ./*/packages/*
-        # - ./*/tests/*  #da togliere 
         - ./*/tests/AuditCoverage/*
-        - ./*/phpinsights.php
-        - ./*/rector.php
         - ./*/*.blade.php
         - ./_ide_helper.php
         - ./_ide_helper_models.php
-
     bootstrapFiles:
         - ./phpstan_bootstrap.php
         - ./phpstan_constants.php
-
     scanFiles:
         - ./Modules/Xot/helpers/Helper.php
-
     editorUrl: 'vscode://file/%%file%%:%%line%%'
     tmpDir: /tmp/phpstan
     treatPhpDocTypesAsCertain: false
-    # reportUnmatchedIgnoredErrors: false
+    reportUnmatchedIgnoredErrors: false

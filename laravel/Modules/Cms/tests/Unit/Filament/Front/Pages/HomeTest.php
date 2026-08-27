@@ -6,7 +6,6 @@ use Modules\Cms\Filament\Front\Pages\Home;
 use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
 test('Home page can be instantiated', function () {
     $page = new Home();
 });

@@ -6,10 +6,9 @@ namespace Modules\Seo\Tests\Unit\Services;
 
 use Modules\Seo\Services\MetatagService;
 use PHPUnit\Framework\Assert;
-uses(\Modules\Seo\Tests\TestCase::class);
 
 it('sets all optional seo fields through service', function (): void {
-    $service = new MetatagService;
+    $service = new MetatagService();
     $published = now()->subDay();
     $modified = now();
 
@@ -41,4 +40,3 @@ it('sets all optional seo fields through service', function (): void {
         ->and($meta->getPublishedTime()?->format('c'))->toBe($published->format('c'))
         ->and($meta->getModifiedTime()?->format('c'))->toBe($modified->format('c'));
 });
-

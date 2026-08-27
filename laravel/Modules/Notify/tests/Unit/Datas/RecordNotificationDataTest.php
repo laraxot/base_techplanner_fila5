@@ -6,14 +6,9 @@ namespace Modules\Notify\Tests\Unit\Datas;
 
 use Modules\Notify\Actions\SMS\NormalizePhoneNumberAction;
 use Modules\Notify\Datas\RecordNotificationData;
-use Modules\Notify\Tests\TestCase;
 use Modules\User\Models\User;
-use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
 use Modules\Xot\Tests\XotBasePest;
-
-uses(TestCase::class)->group('no-notify-db');
+use PHPUnit\Framework\Assert;
 
 test('record notification data returns mail route', function (): void {
     $user = new User();

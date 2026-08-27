@@ -8,7 +8,6 @@ use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\File;
 use Modules\Tenant\Actions\Config\GetTenantFilePathAction;
 use Modules\Tenant\Models\Traits\SushiToJson;
-use Modules\User\Models\Profile;
 use Modules\Xot\Models\Traits\HasXotFactory;
 
 /**
@@ -21,10 +20,8 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property Carbon|null $updated_at
  * @property int|null $created_by
  * @property int|null $updated_by
- * @property-read Profile|null $creator
- * @property-read Profile|null $deleter
- * @property-read Profile|null $updater
- *
+ * @property-read \Modules\TechPlanner\Models\Profile|null $creator
+ * @property-read \Modules\TechPlanner\Models\Profile|null $updater
  * @method static \Modules\Tenant\Database\Factories\TestSushiModelFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TestSushiModel newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TestSushiModel newQuery()
@@ -38,7 +35,6 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TestSushiModel whereStatus($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TestSushiModel whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TestSushiModel whereUpdatedBy($value)
- *
  * @mixin \Eloquent
  */
 class TestSushiModel extends BaseModel

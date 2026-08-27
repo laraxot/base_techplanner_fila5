@@ -7,7 +7,6 @@ use Modules\Cms\Tests\TestCase;
 use Modules\Xot\Filament\Forms\Components\XotBaseTextEntry;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
 test('DownloadAttachmentPlaceHolder extends XotBaseTextEntry', function () {
     // `class_exists()` su una classe importata e' deciso staticamente: cio' che il test
     // verifica e' la classe base, cambiata quando `Placeholder` e' stata deprecata.

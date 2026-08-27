@@ -8,10 +8,8 @@ use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasLabel;
 use Modules\Notify\Enums\SmsDriverEnum;
-use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('no-notify-db');
 
 it('has correct cases', function (): void {
     Assert::assertCount(1, SmsDriverEnum::cases());

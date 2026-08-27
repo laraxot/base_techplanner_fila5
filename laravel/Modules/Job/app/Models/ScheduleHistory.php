@@ -11,32 +11,32 @@ namespace Modules\Job\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
-use Modules\Job\Database\Factories\ScheduleHistoryFactory;
-use Modules\Xot\Contracts\ProfileContract;
+use Modules\TechPlanner\Models\Profile;
 use Override;
 
 /**
  * Modules\Job\Models\ScheduleHistory.
  *
+ * @property-read Schedule|null $command
+ * @property-read Profile|null $creator
+ * @property-read Profile|null $updater
+ *
+ * @method static Builder<static>|ScheduleHistory newModelQuery()
+ * @method static Builder<static>|ScheduleHistory newQuery()
+ * @method static Builder<static>|ScheduleHistory query()
+ *
  * @property string $id
- * @property Schedule|null $command
  * @property array<array-key, mixed>|null $params
  * @property string $output
  * @property array<array-key, mixed>|null $options
+ * @property int|null $schedule_id
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- * @property int|null $schedule_id
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
- * @property-read ProfileContract|null $creator
- * @property-read ProfileContract|null $updater
  *
- * @method static ScheduleHistoryFactory factory($count = null, $state = [])
- * @method static Builder<static>|ScheduleHistory newModelQuery()
- * @method static Builder<static>|ScheduleHistory newQuery()
- * @method static Builder<static>|ScheduleHistory query()
  * @method static Builder<static>|ScheduleHistory whereCommand($value)
  * @method static Builder<static>|ScheduleHistory whereCreatedAt($value)
  * @method static Builder<static>|ScheduleHistory whereCreatedBy($value)
@@ -49,8 +49,6 @@ use Override;
  * @method static Builder<static>|ScheduleHistory whereScheduleId($value)
  * @method static Builder<static>|ScheduleHistory whereUpdatedAt($value)
  * @method static Builder<static>|ScheduleHistory whereUpdatedBy($value)
- *
- * @property-read ProfileContract|null $deleter
  *
  * @mixin \Eloquent
  */

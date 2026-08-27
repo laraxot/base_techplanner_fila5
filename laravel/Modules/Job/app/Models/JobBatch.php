@@ -14,12 +14,18 @@ namespace Modules\Job\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
-use Modules\Job\Database\Factories\JobBatchFactory;
-use Modules\Xot\Contracts\ProfileContract;
+use Modules\TechPlanner\Models\Profile;
 use Override;
 
 /**
  * Modules\Job\Models\JobBatch.
+ *
+ * @property-read Profile|null $creator
+ * @property-read Profile|null $updater
+ *
+ * @method static Builder<static>|JobBatch newModelQuery()
+ * @method static Builder<static>|JobBatch newQuery()
+ * @method static Builder<static>|JobBatch query()
  *
  * @property string $id
  * @property string $name
@@ -31,13 +37,7 @@ use Override;
  * @property Carbon|null $cancelled_at
  * @property Carbon $created_at
  * @property Carbon|null $finished_at
- * @property-read ProfileContract|null $creator
- * @property-read ProfileContract|null $updater
  *
- * @method static JobBatchFactory factory($count = null, $state = [])
- * @method static Builder<static>|JobBatch newModelQuery()
- * @method static Builder<static>|JobBatch newQuery()
- * @method static Builder<static>|JobBatch query()
  * @method static Builder<static>|JobBatch whereCancelledAt($value)
  * @method static Builder<static>|JobBatch whereCreatedAt($value)
  * @method static Builder<static>|JobBatch whereFailedJobIds($value)
@@ -48,8 +48,6 @@ use Override;
  * @method static Builder<static>|JobBatch whereOptions($value)
  * @method static Builder<static>|JobBatch wherePendingJobs($value)
  * @method static Builder<static>|JobBatch whereTotalJobs($value)
- *
- * @property-read ProfileContract|null $deleter
  *
  * @mixin \Eloquent
  */

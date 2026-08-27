@@ -10,7 +10,6 @@ use Sushi\Sushi;
 
 use function Safe\class_uses;
 
-uses(TestCase::class);
 describe('Conf Business Logic', function (): void {
     test('conf extends eloquent model', function (): void {
         Assert::assertTrue(

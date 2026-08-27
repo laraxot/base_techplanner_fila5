@@ -7,6 +7,16 @@ namespace Modules\Xot\Tests\Feature;
 use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
+use function Safe\chdir;
+use function Safe\chmod;
+use function Safe\exec;
+use function Safe\file_get_contents;
+use function Safe\file_put_contents;
+use function Safe\mkdir;
+use function Safe\rmdir;
+use function Safe\scandir;
+use function Safe\unlink;
+
 /**
  * Test per verificare il corretto funzionamento dello script fix_structure.sh.
  */
@@ -37,7 +47,7 @@ class FixStructureTest extends TestCase
     /**
      * Funzione ricorsiva per eliminare una directory con tutti i suoi contenuti.
      */
-    private function rrmdir($dir)
+    private function rrmdir(string $dir)
     {
         if (is_dir($dir)) {
             $objects = scandir($dir);

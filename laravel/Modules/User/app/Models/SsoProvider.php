@@ -7,61 +7,20 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Support\Carbon;
-use Modules\Xot\Contracts\ProfileContract;
+use Modules\TechPlanner\Models\Profile;
 
 /**
  * Modules\User\Models\SsoProvider.
  *
- * @property int $id
- * @property string $name
- * @property string $display_name
- * @property string $type
- * @property string|null $entity_id
- * @property string|null $client_id
- * @property string|null $client_secret
- * @property string|null $redirect_url
- * @property string|null $metadata_url
- * @property string|null $scopes
- * @property array<string, mixed>|null $settings
  * @property array<int, string>|null $domain_whitelist
  * @property array<string, string>|null $role_mapping
- * @property bool $is_active
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property string|null $created_by
- * @property string|null $updated_by
- * @property Collection<int, User> $users
- * @property int|null $users_count
- *
+ * @property-read Profile|null $creator
+ * @property-read Profile|null $updater
+ * @property-read Collection<int, User> $users
+ * @property-read int|null $users_count
  * @method static Builder<static>|SsoProvider newModelQuery()
  * @method static Builder<static>|SsoProvider newQuery()
  * @method static Builder<static>|SsoProvider query()
- * @method static Builder<static>|SsoProvider whereClientId($value)
- * @method static Builder<static>|SsoProvider whereClientSecret($value)
- * @method static Builder<static>|SsoProvider whereCreatedAt($value)
- * @method static Builder<static>|SsoProvider whereCreatedBy($value)
- * @method static Builder<static>|SsoProvider whereDisplayName($value)
- * @method static Builder<static>|SsoProvider whereDomainWhitelist($value)
- * @method static Builder<static>|SsoProvider whereEntityId($value)
- * @method static Builder<static>|SsoProvider whereId($value)
- * @method static Builder<static>|SsoProvider whereIsActive($value)
- * @method static Builder<static>|SsoProvider whereMetadataUrl($value)
- * @method static Builder<static>|SsoProvider whereName($value)
- * @method static Builder<static>|SsoProvider whereRedirectUrl($value)
- * @method static Builder<static>|SsoProvider whereRoleMapping($value)
- * @method static Builder<static>|SsoProvider whereScopes($value)
- * @method static Builder<static>|SsoProvider whereSettings($value)
- * @method static Builder<static>|SsoProvider whereType($value)
- * @method static Builder<static>|SsoProvider whereUpdatedAt($value)
- * @method static Builder<static>|SsoProvider whereUpdatedBy($value)
- *
- * @property ProfileContract|null $creator
- * @property ProfileContract|null $deleter
- * @property ProfileContract|null $updater
- *
- * @method static \Modules\User\Database\Factories\SsoProviderFactory factory($count = null, $state = [])
- *
  * @mixin \Eloquent
  */
 class SsoProvider extends BaseModel

@@ -6,28 +6,34 @@ namespace Modules\Notify\Models;
 
 use Eloquent;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
-use Illuminate\Support\Carbon;
 use Modules\Media\Models\Media;
 use Modules\Notify\Database\Factories\NotifyThemeFactory;
-use Modules\Xot\Contracts\ProfileContract;
+use Modules\TechPlanner\Models\Profile;
 use Override;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 
 /**
  * Modules\Notify\Models\NotifyTheme.
  *
- * @property int $id
+ * @method static NotifyThemeFactory factory($count = null, $state = [])
+ * @property-read Profile|null $creator
+ * @property-read array{path: string, width: int, height: int} $logo
+ * @property-read Model $linkable
+ * @property-read MediaCollection<int, Media> $media
+ * @property-read int|null $media_count
+ * @property-read Profile|null $updater
+ * @method static Builder<static>|NotifyTheme newModelQuery()
+ * @method static Builder<static>|NotifyTheme newQuery()
+ * @method static Builder<static>|NotifyTheme query()
+ * @property string $id
  * @property string|null $lang
  * @property string|null $type
  * @property string|null $subject
  * @property string|null $body
  * @property string|null $from
- * @property Carbon|null $created_at
- * @property string|null $created_by
- * @property Carbon|null $updated_at
- * @property string|null $updated_by
  * @property string|null $post_type
  * @property int|null $post_id
  * @property string|null $body_html
@@ -36,48 +42,41 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property string|null $logo_src
  * @property int|null $logo_width
  * @property int|null $logo_height
- * @property array<string, mixed> $view_params
- * @property array<string, mixed> $logo
- * @property Model|Eloquent $linkable
- * @property MediaCollection<int, Media> $media
- * @property int|null $media_count
- *
- * @method static NotifyThemeFactory factory($count = null, $state = [])
- * @method static Builder|NotifyTheme newModelQuery()
- * @method static Builder|NotifyTheme newQuery()
- * @method static Builder|NotifyTheme query()
- * @method static Builder|NotifyTheme whereBody($value)
- * @method static Builder|NotifyTheme whereBodyHtml($value)
- * @method static Builder|NotifyTheme whereCreatedAt($value)
- * @method static Builder|NotifyTheme whereCreatedBy($value)
- * @method static Builder|NotifyTheme whereFrom($value)
- * @method static Builder|NotifyTheme whereFromEmail($value)
- * @method static Builder|NotifyTheme whereId($value)
- * @method static Builder|NotifyTheme whereLang($value)
- * @method static Builder|NotifyTheme whereLogoHeight($value)
- * @method static Builder|NotifyTheme whereLogoSrc($value)
- * @method static Builder|NotifyTheme whereLogoWidth($value)
- * @method static Builder|NotifyTheme wherePostId($value)
- * @method static Builder|NotifyTheme wherePostType($value)
- * @method static Builder|NotifyTheme whereSubject($value)
- * @method static Builder|NotifyTheme whereTheme($value)
- * @method static Builder|NotifyTheme whereType($value)
- * @method static Builder|NotifyTheme whereUpdatedAt($value)
- * @method static Builder|NotifyTheme whereUpdatedBy($value)
- * @method static Builder|NotifyTheme whereViewParams($value)
- *
- * @property-read ProfileContract|null $creator
- * @property-read ProfileContract|null $updater
- * @property Carbon|null $deleted_at
+ * @property array<array-key, mixed>|null $view_params
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property \Illuminate\Support\Carbon|null $deleted_at
  * @property string|null $deleted_by
- *
+ * @method static Builder<static>|NotifyTheme whereBody($value)
+ * @method static Builder<static>|NotifyTheme whereBodyHtml($value)
+ * @method static Builder<static>|NotifyTheme whereCreatedAt($value)
+ * @method static Builder<static>|NotifyTheme whereCreatedBy($value)
  * @method static Builder<static>|NotifyTheme whereDeletedAt($value)
  * @method static Builder<static>|NotifyTheme whereDeletedBy($value)
- *
- * @property-read ProfileContract|null $deleter
+ * @method static Builder<static>|NotifyTheme whereFrom($value)
+ * @method static Builder<static>|NotifyTheme whereFromEmail($value)
+ * @method static Builder<static>|NotifyTheme whereId($value)
+ * @method static Builder<static>|NotifyTheme whereLang($value)
+ * @method static Builder<static>|NotifyTheme whereLogoHeight($value)
+ * @method static Builder<static>|NotifyTheme whereLogoSrc($value)
+ * @method static Builder<static>|NotifyTheme whereLogoWidth($value)
+ * @method static Builder<static>|NotifyTheme wherePostId($value)
+ * @method static Builder<static>|NotifyTheme wherePostType($value)
+ * @method static Builder<static>|NotifyTheme whereSubject($value)
+ * @method static Builder<static>|NotifyTheme whereTheme($value)
+ * @method static Builder<static>|NotifyTheme whereType($value)
+ * @method static Builder<static>|NotifyTheme whereUpdatedAt($value)
+ * @method static Builder<static>|NotifyTheme whereUpdatedBy($value)
+ * @method static Builder<static>|NotifyTheme whereViewParams($value)
+ * @mixin Eloquent
  */
 class NotifyTheme extends BaseModel
 {
+    /** @use HasFactory<NotifyThemeFactory> */
+    use HasFactory;
+
     /** @var list<string> */
     protected $fillable = [
         'id',

@@ -10,11 +10,9 @@ use Modules\Notify\Models\Policies\MailTemplatePolicy;
 use Modules\Notify\Models\Policies\NotificationPolicy;
 use Modules\Notify\Models\Policies\NotificationTemplatePolicy;
 use Modules\Notify\Tests\Fixtures\NotifyPolicyBehaviorConcretePolicy;
-use Modules\Notify\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('no-notify-db');
 
 /**
  * @param  list<string>  $roles

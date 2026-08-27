@@ -6,7 +6,6 @@ namespace Modules\Xot\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Schema;
 use InvalidArgumentException;
 use Modules\Tenant\Models\Traits\SushiToJson;
@@ -17,64 +16,23 @@ use Sushi\Sushi;
  *
  * Provides metadata and statistics about database tables.
  *
- * @property string|null $TABLE_CATALOG
- * @property string|null $TABLE_SCHEMA
- * @property string|null $TABLE_NAME
- * @property string|null $TABLE_TYPE
- * @property string|null $ENGINE
- * @property int|null $VERSION
- * @property string|null $ROW_FORMAT
- * @property int|null $table_rows
- * @property int|null $AVG_ROW_LENGTH
- * @property int|null $DATA_LENGTH
- * @property int|null $MAX_DATA_LENGTH
- * @property int|null $INDEX_LENGTH
- * @property int|null $DATA_FREE
- * @property int|null $AUTO_INCREMENT
- * @property Carbon|null $CREATE_TIME
- * @property Carbon|null $UPDATE_TIME
- * @property Carbon|null $CHECK_TIME
- * @property string|null $TABLE_COLLATION
- * @property int|null $CHECKSUM
- * @property string|null $CREATE_OPTIONS
- * @property string|null $TABLE_COMMENT
+ * @property string|null $created_at
+ * @property string|null $created_by
  * @property int $id
+ * @property string|null $model_class
+ * @property string|null $table_name
+ * @property int|null $table_rows
+ * @property string|null $table_schema
+ * @property string|null $updated_at
+ * @property string|null $updated_by
  *
  * @method static Builder<static>|InformationSchemaTable newModelQuery()
  * @method static Builder<static>|InformationSchemaTable newQuery()
  * @method static Builder<static>|InformationSchemaTable query()
- * @method static Builder<static>|InformationSchemaTable whereAUTOINCREMENT($value)
- * @method static Builder<static>|InformationSchemaTable whereAVGROWLENGTH($value)
- * @method static Builder<static>|InformationSchemaTable whereCHECKSUM($value)
- * @method static Builder<static>|InformationSchemaTable whereCHECKTIME($value)
- * @method static Builder<static>|InformationSchemaTable whereCREATEOPTIONS($value)
- * @method static Builder<static>|InformationSchemaTable whereCREATETIME($value)
- * @method static Builder<static>|InformationSchemaTable whereDATAFREE($value)
- * @method static Builder<static>|InformationSchemaTable whereDATALENGTH($value)
- * @method static Builder<static>|InformationSchemaTable whereENGINE($value)
- * @method static Builder<static>|InformationSchemaTable whereINDEXLENGTH($value)
- * @method static Builder<static>|InformationSchemaTable whereId($value)
- * @method static Builder<static>|InformationSchemaTable whereMAXDATALENGTH($value)
- * @method static Builder<static>|InformationSchemaTable whereROWFORMAT($value)
- * @method static Builder<static>|InformationSchemaTable whereTABLECATALOG($value)
- * @method static Builder<static>|InformationSchemaTable whereTABLECOLLATION($value)
- * @method static Builder<static>|InformationSchemaTable whereTABLECOMMENT($value)
- * @method static Builder<static>|InformationSchemaTable whereTABLENAME($value)
- * @method static Builder<static>|InformationSchemaTable whereTABLEROWS($value)
- * @method static Builder<static>|InformationSchemaTable whereTABLESCHEMA($value)
- * @method static Builder<static>|InformationSchemaTable whereTABLETYPE($value)
- * @method static Builder<static>|InformationSchemaTable whereUPDATETIME($value)
- * @method static Builder<static>|InformationSchemaTable whereVERSION($value)
- *
- * @property string|null $table_schema
- * @property string|null $table_name
- * @property string|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_at
- * @property string|null $created_by
- *
  * @method static Builder<static>|InformationSchemaTable whereCreatedAt($value)
  * @method static Builder<static>|InformationSchemaTable whereCreatedBy($value)
+ * @method static Builder<static>|InformationSchemaTable whereId($value)
+ * @method static Builder<static>|InformationSchemaTable whereModelClass($value)
  * @method static Builder<static>|InformationSchemaTable whereTableName($value)
  * @method static Builder<static>|InformationSchemaTable whereTableRows($value)
  * @method static Builder<static>|InformationSchemaTable whereTableSchema($value)

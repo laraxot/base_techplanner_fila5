@@ -10,10 +10,8 @@ use Modules\Notify\Enums\NotificationTypeEnum;
 use Modules\Notify\Enums\SmsDriverEnum;
 use Modules\Notify\Enums\TelegramDriverEnum;
 use Modules\Notify\Enums\WhatsAppDriverEnum;
-use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('no-notify-db');
 
 test('contact type enum exposes expected cases and column definitions', function () {
     Assert::assertCount(6, ContactTypeEnum::cases());

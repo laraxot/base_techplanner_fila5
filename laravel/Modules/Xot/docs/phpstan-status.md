@@ -2,33 +2,32 @@
 title: "PHPStan status — Xot / Modules"
 type: status
 module: Xot
-updated: 2026-08-27
+updated: 2026-08-28
 related:
   - ./stories/5.43.phpstan-modules-bootstrap-and-ide-helper.story.md
-  - ../phpstan/pest-internal-ignore.neon
-  - ../../../../docs/wiki/how-to/git-merge-marker-sweep.md
+  - ./stories/5.44.quality-gates-prompt-exec.story.md
+  - ./phpstan-config-immutability.md
+  - ../../../../docs/wiki/memories/phpstan-neon-immutable.md
+  - ../../../../bashscripts/docs/prompts/03-quality-gates.md
 ---
 
-# PHPStan status — campagna XOT-5.43
+# PHPStan status
 
 ## Gate
 
 ```bash
 cd laravel && ./vendor/bin/phpstan analyse Modules --memory-limit=-1 --no-progress
-# [OK] No errors
 ```
 
-Misura 2026-08-27: bootstrap-fail → 2625 → 820 → **0** (re-check sera: ancora 0 + ide-helper refresh).
+Usa **sempre** `laravel/phpstan.neon`. **Solo l’utente** lo modifica. Agenti: zero touch su qualsiasi `*.neon`.
 
-## Decisioni (perché)
+## Hard rule (2026-08-28)
 
-1. Marker merge: resolve tipizzato; file irrecuperabili da blob clean history (forward-only).
-2. Pest 4 `method.internalClass`: `Modules/Xot/app/PHPStan/PestInternalClassAccessIgnoreExtension` (Pest 5 richiede PHPUnit 13).
-3. `HasDynamicFillable`: niente property nel trait — override `getDynamicFillableEnums()` nel modello (evita fatal PHP composition).
-4. ide-helper: `generate` + `meta` + `models --nowrite`; DB `techplanner_*` creati; symlink merge `sottana~HEAD` rimossi.
+Qualsiasi “fix” al neon da parte di un agente è **fuori policy**, anche se il WIP parallelo
+lo ha svuotato. In quel caso: stop + chiedere all’utente. Non ripristinare, non creare include.
 
-## Artefatti
+Canon: [phpstan-neon-immutable.md](../../../../docs/wiki/memories/phpstan-neon-immutable.md)
 
-- Story: `stories/5.43.phpstan-modules-bootstrap-and-ide-helper.story.md`
-- Extension: `app/PHPStan/PestInternalClassAccessIgnoreExtension.php`
-- Neon: `phpstan/pest-internal-ignore.neon` incluso da `laravel/phpstan.neon`
+## Pest binding
+
+`pest()->extend(TestCase::class)->in(...)` **consigliato** (XOT-5.41). XOR con `uses(TestCase)` per-file.

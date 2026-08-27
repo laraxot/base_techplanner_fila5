@@ -15,12 +15,8 @@ use Modules\Notify\Database\Factories\NotificationTemplateFactory;
 use Modules\Notify\Models\NotificationTemplate;
 use Modules\Notify\Notifications\GenericNotification;
 use Modules\Notify\Tests\TestCase;
-use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
 use Modules\Xot\Tests\XotBasePest;
-
-uses(TestCase::class)->group('notify-db');
+use PHPUnit\Framework\Assert;
 
 /**
  * @param  array<string, mixed>  $attributes

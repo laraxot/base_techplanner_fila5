@@ -6,11 +6,9 @@ namespace Modules\Notify\Tests\Feature;
 
 use Modules\Notify\Database\Factories\ContactFactory;
 use Modules\Notify\Models\Contact;
-use Modules\Notify\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('notify-db');
 
 describe('Contact Management Business Logic', function () {
     it('can create contact with basic information', function () {

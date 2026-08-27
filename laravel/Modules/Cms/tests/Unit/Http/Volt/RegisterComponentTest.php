@@ -9,7 +9,6 @@ use Modules\Cms\Http\Volt\RegisterComponent;
 use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
 
 describe('Register Component', function (): void {
     test('register component extends volt component', function (): void {

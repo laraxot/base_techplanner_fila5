@@ -11,15 +11,9 @@ declare(strict_types=1);
 | Pest\Bootstrappers\BootFiles carica da solo prima di questo file: nessun
 | require_once, nessuna cartella tests/Support.
 |
-| Qui NON si lega il TestCase con pest()->extend(...)->in('.'). I file di test
-| del modulo dichiarano già `uses(TestCase::class);` singolarmente, e le due
-| forme non convivono — Pest solleva TestCaseAlreadyInUse:
-|
-|   The test case [Modules\User\Tests\TestCase] may not be used here.
-|   The folder [...] is already bound to the test case [...].
-|
-| Il binding globale torna utile solo quando si tolgono i `uses()` dai file,
-| che è una migrazione a sé. Vedi
-| Modules/Xot/docs/wiki/concepts/pest5-configuring-tests.md, strato 3.
+| `pest()->extend(TestCase::class)->in(__DIR__.'/Unit', __DIR__.'/Feature')` è la forma
+| **fortemente consigliata** (XOT-5.41). I file hanno ancora `uses(TestCase::class)` — XOR:
+| aggiungere `extend()` qui **solo** dopo aver rimosso gli `uses()` per-file (migrazione
+| directory per directory). Vedi pest5-configuring-tests.md, strato 3.
 |
 */

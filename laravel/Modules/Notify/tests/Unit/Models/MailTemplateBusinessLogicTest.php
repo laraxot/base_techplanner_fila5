@@ -7,14 +7,11 @@ namespace Modules\Notify\Tests\Unit\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Mail\Mailable;
 use Modules\Notify\Models\MailTemplate;
-use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\Sluggable\HasSlug;
 use Spatie\Translatable\HasTranslations;
 
 use function Safe\class_uses;
-
-uses(TestCase::class)->group('notify-db');
 
 describe('MailTemplate Business Logic', function () {
     test('mail template extends spatie mail template', function () {

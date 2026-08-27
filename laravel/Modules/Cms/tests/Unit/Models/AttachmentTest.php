@@ -7,7 +7,6 @@ use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\MediaLibrary\HasMedia;
 
-uses(TestCase::class);
 test('Attachment model can be instantiated', function () {
     $attachment = new Attachment();
 

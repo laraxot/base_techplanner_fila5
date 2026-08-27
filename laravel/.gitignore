@@ -26,3 +26,6 @@ config/net/sottana/database/content/information_schema_tables.json
 config/local/techplanner/database/content/information_schema_tables.json
 config/local/techplanner/database/content/information_schema_tables.json
 ruvector.db
+/_ide_helper.php
+/_ide_helper_models.php
+/.phpstorm.meta.php
