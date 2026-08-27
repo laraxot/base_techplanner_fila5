@@ -32,6 +32,7 @@ use Modules\Tenant\Models\Traits\SushiToJsons;
  * @property-read array<int|string, mixed> $translatable_columns_from
  * @property-read mixed $translations
  * @property-read Profile|null $updater
+ *
  * @method static Builder<static>|Page newModelQuery()
  * @method static Builder<static>|Page newQuery()
  * @method static Builder<static>|Page query()
@@ -53,6 +54,7 @@ use Modules\Tenant\Models\Traits\SushiToJsons;
  * @method static Builder<static>|Page whereTitle($value)
  * @method static Builder<static>|Page whereUpdatedAt($value)
  * @method static Builder<static>|Page whereUpdatedBy($value)
+ *
  * @mixin \Eloquent
  */
 class Page extends BaseModelLang

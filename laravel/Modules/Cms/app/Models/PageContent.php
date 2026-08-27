@@ -25,6 +25,7 @@ use Spatie\Translatable\HasTranslations;
  * @property-read array<int|string, mixed> $translatable_columns_from
  * @property-read mixed $translations
  * @property-read Profile|null $updater
+ *
  * @method static Builder<static>|PageContent newModelQuery()
  * @method static Builder<static>|PageContent newQuery()
  * @method static Builder<static>|PageContent query()
@@ -40,6 +41,7 @@ use Spatie\Translatable\HasTranslations;
  * @method static Builder<static>|PageContent whereSlug($value)
  * @method static Builder<static>|PageContent whereUpdatedAt($value)
  * @method static Builder<static>|PageContent whereUpdatedBy($value)
+ *
  * @mixin \Eloquent
  */
 class PageContent extends BaseModel

@@ -16,11 +16,13 @@ use Sushi\Sushi;
  * @property string|null $name
  * @property-read Profile|null $creator
  * @property-read Profile|null $updater
+ *
  * @method static Builder<static>|Module newModelQuery()
  * @method static Builder<static>|Module newQuery()
  * @method static Builder<static>|Module query()
  * @method static Builder<static>|Module whereId($value)
  * @method static Builder<static>|Module whereName($value)
+ *
  * @mixin \Eloquent
  */
 class Module extends BaseModel

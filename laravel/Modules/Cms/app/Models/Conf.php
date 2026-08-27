@@ -16,11 +16,13 @@ use Sushi\Sushi;
  * @property string|null $name
  * @property-read Profile|null $creator
  * @property-read Profile|null $updater
+ *
  * @method static Builder<static>|Conf newModelQuery()
  * @method static Builder<static>|Conf newQuery()
  * @method static Builder<static>|Conf query()
  * @method static Builder<static>|Conf whereId($value)
  * @method static Builder<static>|Conf whereName($value)
+ *
  * @mixin \Eloquent
  */
 class Conf extends BaseModel

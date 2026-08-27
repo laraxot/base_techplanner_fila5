@@ -7,6 +7,7 @@ namespace Modules\Cms\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Storage;
+use Modules\Media\Models\Media;
 use Modules\TechPlanner\Models\Profile;
 use Modules\Tenant\Models\Traits\SushiToJsons;
 use Spatie\MediaLibrary\HasMedia;
@@ -28,10 +29,11 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property string|null $updated_by
  * @property-read Profile|null $creator
  * @property-read array<int|string, mixed> $translatable_columns_from
- * @property-read MediaCollection<int, \Modules\Media\Models\Media> $media
+ * @property-read MediaCollection<int, Media> $media
  * @property-read int|null $media_count
  * @property-read mixed $translations
  * @property-read Profile|null $updater
+ *
  * @method static Builder<static>|Attachment newModelQuery()
  * @method static Builder<static>|Attachment newQuery()
  * @method static Builder<static>|Attachment query()
@@ -49,6 +51,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder<static>|Attachment whereTitle($value)
  * @method static Builder<static>|Attachment whereUpdatedAt($value)
  * @method static Builder<static>|Attachment whereUpdatedBy($value)
+ *
  * @mixin \Eloquent
  */
 class Attachment extends BaseModelLang implements HasMedia

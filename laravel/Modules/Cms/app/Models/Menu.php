@@ -49,6 +49,7 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
  * @property-read int|null $siblings_count
  * @property-read Collection<int, Menu> $siblingsAndSelf All the parent's children.
  * @property-read int|null $siblings_and_self_count
+ *
  * @method static Collection<int, static> all($columns = ['*'])
  * @method static Builder<static>|Menu breadthFirst()
  * @method static Builder<static>|Menu depthFirst()
@@ -74,6 +75,7 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
  * @method static Builder<static>|Menu whereUpdatedBy($value)
  * @method static Builder<static>|Menu withGlobalScopes(array $scopes)
  * @method static Builder<static>|Menu withRelationshipExpression($direction, callable $constraint, $initialDepth, $from = null, $maxDepth = null)
+ *
  * @mixin \Eloquent
  */
 class Menu extends BaseModel implements HasRecursiveRelationshipsContract

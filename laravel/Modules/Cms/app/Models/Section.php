@@ -25,6 +25,7 @@ use Modules\Tenant\Models\Traits\SushiToJsons;
  * @property-read array<int|string, mixed> $translatable_columns_from
  * @property-read mixed $translations
  * @property-read Profile|null $updater
+ *
  * @method static Builder<static>|Section newModelQuery()
  * @method static Builder<static>|Section newQuery()
  * @method static Builder<static>|Section query()
@@ -40,6 +41,7 @@ use Modules\Tenant\Models\Traits\SushiToJsons;
  * @method static Builder<static>|Section whereSlug($value)
  * @method static Builder<static>|Section whereUpdatedAt($value)
  * @method static Builder<static>|Section whereUpdatedBy($value)
+ *
  * @mixin \Eloquent
  */
 class Section extends BaseModelLang
