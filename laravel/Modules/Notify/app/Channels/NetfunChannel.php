@@ -13,20 +13,12 @@ class NetfunChannel
 {
     public function __construct(
         private readonly SendSmsFactorSMSAction $action,
-<<<<<<< .merge_file_vpXT9N
-    ) {
-    }
-
-    /**
-     * @return array<string, mixed>|null
-=======
     ) {}
 
     /**
      * Il ritorno è quello di SendSmsFactorSMSAction::execute(), già tipizzato alla fonte.
      *
      * @return array{status_code: int, status_txt: string}|null
->>>>>>> .merge_file_yWIp1u
      */
     public function send(mixed $notifiable, Notification $notification): ?array
     {

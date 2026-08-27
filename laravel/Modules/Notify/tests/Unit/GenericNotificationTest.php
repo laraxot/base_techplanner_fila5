@@ -3,20 +3,12 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit;
-<<<<<<< .merge_file_qaj1Xh
-=======
-
->>>>>>> .merge_file_rdiBzF
 use Illuminate\Database\Eloquent\Model;
 use Modules\Notify\Notifications\GenericNotification;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< .merge_file_qaj1Xh
-uses(\Modules\Notify\Tests\TestCase::class);
-=======
 uses(TestCase::class)->group('no-notify-db');
->>>>>>> .merge_file_rdiBzF
 
 // Basic unit tests focusing on business logic of recipient name resolution
 

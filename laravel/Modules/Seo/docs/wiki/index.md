@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 77e0353 (.)
-=======
->>>>>>> fc52fe0 (.)
-=======
->>>>>>> c101b34 (.)
-=======
->>>>>>> d0f51b6 (.)
 ---
 title: "Seo Module Wiki Index"
 type: index
@@ -39,36 +26,9 @@ related:
 - [frontmatter + GitHub](../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md)
 - [ai-harness-module-discipline](../../docs/wiki/concepts/ai-harness-module-discipline.md)
 - [second-brain-local-discipline](./concepts/second-brain-local-discipline.md) → canon Xot
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [services-to-queueable-actions](./concepts/no-app-support-queueable-actions.md) — Metatag state in Adapter, use case in Actions
-=======
->>>>>>> cf01f0b (.)
 
 
-=======
-# Seo Module LLM Wiki
-
->>>>>>> 7ec200b (.)
-=======
-
-
->>>>>>> 77e0353 (.)
-=======
-
-
->>>>>>> fc52fe0 (.)
-=======
-
-
->>>>>>> c101b34 (.)
-=======
-
-
->>>>>>> d0f51b6 (.)
 Indice operativo del wiki Seo.
 
 ## Struttura canonica (sacred)

@@ -43,10 +43,7 @@ class SendNotificationJob implements ShouldQueue
      * @param  array<string, mixed>  $data  I dati per compilare il template
      * @param  array<int, string>  $channels  I canali da utilizzare
      * @param  array<string, mixed>  $options  Opzioni aggiuntive per l'invio
-<<<<<<< .merge_file_fhRwnU
      *
-=======
->>>>>>> .merge_file_yehPWx
      * @return void
      */
     public function __construct(

@@ -641,8 +641,4 @@ class MaintainTemplatesCommand extends Command
         return 0;
     }
 } 
-<<<<<<< .merge_file_lARTA5
-=======
-
 ```
->>>>>>> .merge_file_gH320a

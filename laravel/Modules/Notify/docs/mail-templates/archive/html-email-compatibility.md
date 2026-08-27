@@ -22,21 +22,8 @@ related:
 
 ## Introduzione
 
-<<<<<<< .merge_file_1QyNTG
-<<<<<<< .merge_file_jS6aMY
 Questo documento fornisce linee guida dettagliate per garantire la massima compatibilità dei template email utilizzati nel modulo Notify di SaluteOra con i diversi client email.
-=======
-=======
-<<<<<<< .merge_file_rf4QZ8
-Questo documento fornisce linee guida dettagliate per garantire la massima compatibilità dei template email utilizzati nel modulo Notify di SaluteOra con i diversi client email.
-=======
-<<<<<<< .merge_file_jS6aMY
-Questo documento fornisce linee guida dettagliate per garantire la massima compatibilità dei template email utilizzati nel modulo Notify di SaluteOra con i diversi client email.
-=======
->>>>>>> .merge_file_kCwadg
->>>>>>> .merge_file_DJ5pPe
 Questo documento fornisce linee guida dettagliate per garantire la massima compatibilità dei template email utilizzati nel modulo Notify di <nome progetto> con i diversi client email.
->>>>>>> .merge_file_ZZk5Sy
 
 ## Compatibilità Client Email
 

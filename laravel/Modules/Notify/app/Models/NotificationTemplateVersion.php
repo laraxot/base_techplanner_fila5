@@ -29,14 +29,9 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property int $version
  * @property string|null $created_by
  * @property string|null $change_notes
-<<<<<<< .merge_file_q8nHQK
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  *
-=======
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
->>>>>>> .merge_file_quhtRo
  * @property-read Profile|null $creator
  * @property-read MediaCollection<int, Media> $media
  * @property-read int|null $media_count

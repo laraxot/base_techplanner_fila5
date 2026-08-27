@@ -90,15 +90,8 @@ Trasformato FixCity da MVP documentato a piattaforma enterprise-ready con implem
 ## 🗂️ STRUTTURA FINALE PROGETTO
 
 ```
-<<<<<<< .merge_file_vyHGru
 base_fixcity_fila5_mono/
-=======
-<<<<<<< .merge_file_qjVuWp
-base_fixcity_fila5_mono/
-=======
->>>>>>> .merge_file_c2b7uL
 base_ptv_fila5_mono/
->>>>>>> .merge_file_tzWuY9
 │
 ├── 📊 ROOT DOCS (13 files)
 │   ├── DOCUMENTATION_INDEX.md          ✅ Indice completo

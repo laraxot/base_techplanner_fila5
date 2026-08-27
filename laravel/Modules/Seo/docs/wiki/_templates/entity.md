@@ -1,28 +1,10 @@
 ---
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 77e0353 (.)
-=======
->>>>>>> fc52fe0 (.)
-=======
->>>>>>> c101b34 (.)
-=======
->>>>>>> d0f51b6 (.)
 module: theme
 topic: entity
 canonical: ../../../../../Themes/docs/shared-components/entity-Modules.md
 ---
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/entity-Modules.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 title: "Entity Name"
 type: entity
 sources: ["raw/articles/source-filename.md"]
@@ -60,12 +42,3 @@ _How this entity relates to the project, what role it plays._
 
 - [[concept-related-1]]
 - [[decision-related-2]]
->>>>>>> 7ec200b (.)
-=======
->>>>>>> 77e0353 (.)
-=======
->>>>>>> fc52fe0 (.)
-=======
->>>>>>> c101b34 (.)
-=======
->>>>>>> d0f51b6 (.)

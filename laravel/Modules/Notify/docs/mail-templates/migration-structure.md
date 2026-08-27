@@ -2,15 +2,8 @@
 
 ## Informazioni Generali
 
-<<<<<<< .merge_file_pAe76w
 - **File**: `/var/www/html/Quaeris/laravel/Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php`
-=======
-<<<<<<< .merge_file_gUzt4h
-- **File**: `/var/www/html/Quaeris/laravel/Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php`
-=======
->>>>>>> .merge_file_yAOW80
 - **File**: `/var/www/_bases/base_ptvx_fila5/laravel/Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php`
->>>>>>> .merge_file_nT7jW1
 - **Base**: `XotBaseMigration`
 - **Tabella**: `mail_templates`
 

@@ -1,27 +1,13 @@
 ---
-<<<<<<< .merge_file_FiKDtW
 title: "MCP Server Index - FixCity Project"
-=======
-<<<<<<< .merge_file_61V0uQ
-title: "MCP Server Index - FixCity Project"
-=======
->>>>>>> .merge_file_08l8Pk
 title: "MCP Server Index - Notify Project"
->>>>>>> .merge_file_cPXK4e
 type: index
 tags: [notify, docs, mcp]
 module: Notify
 created: 2026-07-20
 updated: 2026-07-20
-<<<<<<< .merge_file_FiKDtW
 qmd: "notify documentazione mcp index mcp server index - fixcity project index readme frontmatter qmd search"
-=======
-<<<<<<< .merge_file_61V0uQ
-qmd: "notify documentazione mcp index mcp server index - fixcity project index readme frontmatter qmd search"
-=======
->>>>>>> .merge_file_08l8Pk
 qmd: "notify documentazione mcp index mcp server index - laraxot project index readme frontmatter qmd search"
->>>>>>> .merge_file_cPXK4e
 issues:
   - "https://github.com/laraxot/module_notify_fila5/issues/56"
 discussions:
@@ -33,15 +19,8 @@ related:
   - ../integrations/readme.md
   - ../templates/readme.md
 ---
-<<<<<<< .merge_file_FiKDtW
 # MCP Server Index - FixCity Project
-=======
-<<<<<<< .merge_file_61V0uQ
-# MCP Server Index - FixCity Project
-=======
->>>>>>> .merge_file_08l8Pk
 # MCP Server Index - Notify Project
->>>>>>> .merge_file_cPXK4e
 
 **Purpose**: Central index for all MCP server documentation  
 **Last Updated**: 2026-04-09

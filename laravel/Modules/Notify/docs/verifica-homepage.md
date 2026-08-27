@@ -4,15 +4,8 @@ type: concept
 tags: [verifica, homepage]
 created: 2026-07-14
 updated: 2026-07-14
-<<<<<<< .merge_file_MVWoew
 qmd: "verifica-homepage 📸 verifica visiva homepage fixcity"
-=======
-<<<<<<< .merge_file_wXOg1Q
-qmd: "verifica-homepage 📸 verifica visiva homepage fixcity"
-=======
->>>>>>> .merge_file_1ZQEOu
 qmd: "verifica-homepage 📸 verifica visiva homepage ptv"
->>>>>>> .merge_file_3Fwxow
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -233,12 +226,5 @@ FixCity:          [4 Cards + "Altri Argomenti"]
 
 La homepage FixCity **È CONFORME** al design Bootstrap Italia.
 
-<<<<<<< .merge_file_MVWoew
 URL di test: http://fixcity.local/it/tests/homepage
-=======
-<<<<<<< .merge_file_wXOg1Q
-URL di test: http://fixcity.local/it/tests/homepage
-=======
->>>>>>> .merge_file_1ZQEOu
 URL di test: http://ptv.local/it/tests/homepage
->>>>>>> .merge_file_3Fwxow

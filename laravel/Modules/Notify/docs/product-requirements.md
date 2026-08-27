@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_W7qllS
-=======
 ---
 title: "Product Requirements Document (PRD)"
 module: notify
@@ -9,7 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
->>>>>>> .merge_file_nGZiMv
 # Product Requirements Document (PRD)
 
 ## Metadata

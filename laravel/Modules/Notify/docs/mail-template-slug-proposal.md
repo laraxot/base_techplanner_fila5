@@ -2,16 +2,8 @@
 
 ## Collegamenti correlati
 
-<<<<<<< .merge_file_XrtrIz
 - [README del modulo Notify](./readme.md)
 - [Guida all'utilizzo di SpatieEmail](./spatie_email_usage_guide.md)
-<<<<<<< .merge_file_ABXvEF
-=======
-=======
->>>>>>> .merge_file_FL9MzF
-- [README del modulo Notify](./README.md)
-- [Guida all'utilizzo di SpatieEmail](./spatie-email-usage-guide.md)
->>>>>>> .merge_file_8MKntO
 - [Documentazione Template Email](./email_templates.md)
 - [Documentazione Root](../../../../../docs/collegamenti-documentazione.md)
 

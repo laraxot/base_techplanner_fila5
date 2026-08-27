@@ -15,18 +15,6 @@ Questa documentazione è stata divisa in moduli per una gestione più efficiente
 ---
 **See also:**
 - [CLAUDE.md](./CLAUDE.md)
-<<<<<<< .merge_file_OzRooA
-=======
-<<<<<<< .merge_file_AWPwxR
->>>>>>> .merge_file_TF3j39
-- [AGENTS.md](./AGENTS.md)
-- [QWEN.md](./QWEN.md)
-
-*Ultimo aggiornamento: Aprile 2026*
-<<<<<<< .merge_file_OzRooA
-=======
-=======
->>>>>>> .merge_file_TF3j39
 - [agents.md](./AGENTS.md)
 - [QWEN.md](./QWEN.md)
 
@@ -77,4 +65,3 @@ Questa documentazione è stata divisa in moduli per una gestione più efficiente
 - [qwen.md](./QWEN.md)
 
 *Ultimo aggiornamento: Aprile 2026*
->>>>>>> .merge_file_wWZbgL

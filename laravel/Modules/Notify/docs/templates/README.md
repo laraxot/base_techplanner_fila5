@@ -160,9 +160,6 @@ Per contribuire alla documentazione, seguire le [Linee Guida](../../../../../doc
 
 ## Collegamenti Completi
 Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../../../docs/readme_links.md). 
-<<<<<<< .merge_file_ochMFY
-=======
-
 ---
 
 <!-- Merged from readme.md, which collided with this file on case-insensitive filesystems. -->
@@ -180,4 +177,3 @@ related:
   - "./module-readme-template.md"
 ---
 
->>>>>>> .merge_file_1DySJx

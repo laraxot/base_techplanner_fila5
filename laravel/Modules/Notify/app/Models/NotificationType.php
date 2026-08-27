@@ -8,10 +8,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
-<<<<<<< .merge_file_dmVX0R
-=======
 use Modules\Notify\Database\Factories\NotificationTypeFactory;
->>>>>>> .merge_file_lVhXkp
 use Override;
 
 /**
@@ -54,11 +51,7 @@ use Override;
  */
 class NotificationType extends Model
 {
-<<<<<<< .merge_file_dmVX0R
     /** @use HasFactory<\Modules\Notify\Database\Factories\NotificationTypeFactory> */
-=======
-    /** @use HasFactory<NotificationTypeFactory> */
->>>>>>> .merge_file_lVhXkp
     use HasFactory;
 
     /** @var list<string> */

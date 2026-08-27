@@ -169,12 +169,5 @@ GET /it/tests/amministrazione → tests.view (slug=amministrazione)
 
 **Status**: ✅ COMPLETATO  
 **Data**: 2026-03-31  
-<<<<<<< .merge_file_xkbboh
 **URL Test**: http://fixcity.local/it/tests/homepage
-=======
-<<<<<<< .merge_file_zCatgK
-**URL Test**: http://fixcity.local/it/tests/homepage
-=======
->>>>>>> .merge_file_2kKkuK
 **URL Test**: http://ptv.local/it/tests/homepage
->>>>>>> .merge_file_bcUbf2

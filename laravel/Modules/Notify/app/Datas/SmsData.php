@@ -18,10 +18,7 @@ final class SmsData
      * Create a new SmsData instance.
      *
      * @param  array<string, mixed>  $data
-<<<<<<< .merge_file_FBE6XK
      *
-=======
->>>>>>> .merge_file_IgGkdY
      * @return void
      */
     public function __construct(array $data = [])

@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_zE01xa
-=======
 ---
 title: "Notify Module - Product Strategy"
 module: notify
@@ -9,7 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
->>>>>>> .merge_file_wxDktp
 # Notify Module - Product Strategy
 
 **Module:** Notify  

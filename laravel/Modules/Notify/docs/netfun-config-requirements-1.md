@@ -41,11 +41,8 @@ La configurazione di Netfun segue la struttura standardizzata con parametri glob
 
 ### Parametri Globali (a livello di root)
 
-<<<<<<< .merge_file_85kFs8
-=======
 ```
 
->>>>>>> .merge_file_XmHhP8
 ```php
 // Configurazioni globali applicabili a tutti i provider
 'from' => env('SMS_FROM'),
@@ -175,18 +172,5 @@ NETFUN_ENDPOINT=https://v2.smsviainternet.it/api/rest/v1/sms-batch.json
 ---
 
 *Ultimo aggiornamento: 2025-05-12*
-<<<<<<< .merge_file_85kFs8
 *Ultimo aggiornamento: 2025-05-12*
-<<<<<<< .merge_file_1ibfGF
-=======
 *Ultimo aggiornamento: 2025-05-12*
->>>>>>> .merge_file_XmHhP8
-=======
-<<<<<<< .merge_file_8yoH1a
-*Ultimo aggiornamento: 2025-05-12*
-=======
-=======
-*Ultimo aggiornamento: 2025-05-12*
->>>>>>> .merge_file_XmHhP8
->>>>>>> .merge_file_z1aiFo
->>>>>>> .merge_file_Axnetc

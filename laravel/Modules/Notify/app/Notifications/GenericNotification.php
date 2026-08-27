@@ -58,15 +58,8 @@ class GenericNotification extends Notification implements ShouldQueue
     /**
      * Ottiene i canali di consegna della notifica.
      *
-<<<<<<< .merge_file_z5gUav
-     * @param  object  $_notifiable  L'entità da notificare (oggetto che riceverà la notifica)
-=======
-<<<<<<< .merge_file_HGWK3J
      * @param  mixed  $_notifiable  L'entità da notificare (oggetto che riceverà la notifica)
      *
-=======
->>>>>>> .merge_file_1qGXf2
->>>>>>> .merge_file_J37nad
      * @return array<int, string>
      */
     public function via(object $_notifiable): array
@@ -77,11 +70,7 @@ class GenericNotification extends Notification implements ShouldQueue
     /**
      * Ottiene la rappresentazione mail della notifica.
      */
-<<<<<<< .merge_file_HGWK3J
-    public function toMail(mixed $notifiable): MailMessage
-=======
     public function toMail(object $notifiable): MailMessage
->>>>>>> .merge_file_1qGXf2
     {
         $mail = (new MailMessage())
             ->subject($this->title)
@@ -90,16 +79,12 @@ class GenericNotification extends Notification implements ShouldQueue
 
         // Aggiungi eventuali azioni se specificate nei dati
         if (isset($this->data['action_text'], $this->data['action_url'])) {
-<<<<<<< .merge_file_HGWK3J
-            $mail->action((string) $this->data['action_text'], (string) $this->data['action_url']);
-=======
             $actionText = $this->data['action_text'];
             $actionUrl = $this->data['action_url'];
             $mail->action(
                 is_scalar($actionText) ? (string) $actionText : '',
                 is_scalar($actionUrl) ? (string) $actionUrl : ''
             );
->>>>>>> .merge_file_1qGXf2
         }
 
         // Aggiungi eventuali linee aggiuntive
@@ -115,15 +100,9 @@ class GenericNotification extends Notification implements ShouldQueue
     /**
      * Ottiene la rappresentazione SMS della notifica.
      *
-<<<<<<< .merge_file_HGWK3J
-     * @return array<string, mixed>
-     */
-    public function toTwilio(mixed $notifiable): array
-=======
      * @return array{content: string, to: string}
      */
     public function toTwilio(object $notifiable): array
->>>>>>> .merge_file_1qGXf2
     {
         $content = "il progetto: {$this->title}\n{$this->message}";
 
@@ -148,15 +127,9 @@ class GenericNotification extends Notification implements ShouldQueue
     /**
      * Ottiene la rappresentazione database della notifica.
      *
-<<<<<<< .merge_file_HGWK3J
-     * @return array<string, mixed>
-     */
-    public function toDatabase(mixed $notifiable): array
-=======
      * @return array{title: string, message: string, data: array<string, mixed>, created_at: string}
      */
     public function toDatabase(object $notifiable): array
->>>>>>> .merge_file_1qGXf2
     {
         return [
             'title' => $this->title,
@@ -169,11 +142,7 @@ class GenericNotification extends Notification implements ShouldQueue
     /**
      * Ottiene il nome del destinatario per il saluto personalizzato.
      */
-<<<<<<< .merge_file_HGWK3J
-    protected function getRecipientName(mixed $notifiable): string
-=======
     protected function getRecipientName(object $notifiable): string
->>>>>>> .merge_file_1qGXf2
     {
         // Tenta di ottenere il nome dal destinatario in vari modi
         if (method_exists($notifiable, 'getFullName')) {

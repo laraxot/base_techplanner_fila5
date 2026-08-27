@@ -21,21 +21,8 @@ related:
 # Implementazione di Notifiche Multi-Canale 
 
 Questa documentazione descrive come implementare correttamente notifiche multi-canale (email, SMS, Telegram) nel modulo Notify di <nome progetto>.
-<<<<<<< .merge_file_I6OSxA
-<<<<<<< .merge_file_GPdKnm
 Questa documentazione descrive come implementare correttamente notifiche multi-canale (email, SMS, Telegram) nel modulo Notify di Quaeris.
-=======
-=======
-<<<<<<< .merge_file_eWO9XP
-Questa documentazione descrive come implementare correttamente notifiche multi-canale (email, SMS, Telegram) nel modulo Notify di Quaeris.
-=======
-<<<<<<< .merge_file_GPdKnm
-Questa documentazione descrive come implementare correttamente notifiche multi-canale (email, SMS, Telegram) nel modulo Notify di Quaeris.
-=======
->>>>>>> .merge_file_ekCN0B
->>>>>>> .merge_file_CLAbuS
 Questa documentazione descrive come implementare correttamente notifiche multi-canale (email, SMS, Telegram) nel modulo Notify di App.
->>>>>>> .merge_file_lAV1Iv
 
 ## Indice
 
@@ -51,21 +38,8 @@ Questa documentazione descrive come implementare correttamente notifiche multi-c
 ## Introduzione
 
 <nome progetto> utilizza il sistema di notifiche di Laravel per inviare comunicazioni attraverso diversi canali. Ogni canale richiede un'implementazione specifica per garantire la corretta consegna dei messaggi.
-<<<<<<< .merge_file_I6OSxA
-<<<<<<< .merge_file_GPdKnm
 Quaeris utilizza il sistema di notifiche di Laravel per inviare comunicazioni attraverso diversi canali. Ogni canale richiede un'implementazione specifica per garantire la corretta consegna dei messaggi.
-=======
-=======
-<<<<<<< .merge_file_eWO9XP
-Quaeris utilizza il sistema di notifiche di Laravel per inviare comunicazioni attraverso diversi canali. Ogni canale richiede un'implementazione specifica per garantire la corretta consegna dei messaggi.
-=======
-<<<<<<< .merge_file_GPdKnm
-Quaeris utilizza il sistema di notifiche di Laravel per inviare comunicazioni attraverso diversi canali. Ogni canale richiede un'implementazione specifica per garantire la corretta consegna dei messaggi.
-=======
->>>>>>> .merge_file_ekCN0B
->>>>>>> .merge_file_CLAbuS
 App utilizza il sistema di notifiche di Laravel per inviare comunicazioni attraverso diversi canali. Ogni canale richiede un'implementazione specifica per garantire la corretta consegna dei messaggi.
->>>>>>> .merge_file_lAV1Iv
 
 ## Architettura delle Notifiche
 
@@ -135,21 +109,8 @@ public function toMail($notifiable): SpatieEmail
 ### Configurazione Provider SMS
 
 <nome progetto> supporta diversi provider SMS. La configurazione di base prevede:
-<<<<<<< .merge_file_I6OSxA
-<<<<<<< .merge_file_GPdKnm
 Quaeris supporta diversi provider SMS. La configurazione di base prevede:
-=======
-=======
-<<<<<<< .merge_file_eWO9XP
-Quaeris supporta diversi provider SMS. La configurazione di base prevede:
-=======
-<<<<<<< .merge_file_GPdKnm
-Quaeris supporta diversi provider SMS. La configurazione di base prevede:
-=======
->>>>>>> .merge_file_ekCN0B
->>>>>>> .merge_file_CLAbuS
 App supporta diversi provider SMS. La configurazione di base prevede:
->>>>>>> .merge_file_lAV1Iv
 
 1. Installazione del provider scelto:
    ```bash
@@ -306,21 +267,8 @@ class AppointmentNotification extends Notification
 ## Implementazione Netfun SMS
 
 Netfun è un provider di SMS italiano che offre API per l'invio di messaggi SMS. Seguendo l'architettura di <nome progetto>, implementeremo l'integrazione con Netfun utilizzando Spatie Queueable Actions.
-<<<<<<< .merge_file_I6OSxA
-<<<<<<< .merge_file_GPdKnm
 Netfun è un provider di SMS italiano che offre API per l'invio di messaggi SMS. Seguendo l'architettura di Quaeris, implementeremo l'integrazione con Netfun utilizzando Spatie Queueable Actions.
-=======
-=======
-<<<<<<< .merge_file_eWO9XP
-Netfun è un provider di SMS italiano che offre API per l'invio di messaggi SMS. Seguendo l'architettura di Quaeris, implementeremo l'integrazione con Netfun utilizzando Spatie Queueable Actions.
-=======
-<<<<<<< .merge_file_GPdKnm
-Netfun è un provider di SMS italiano che offre API per l'invio di messaggi SMS. Seguendo l'architettura di Quaeris, implementeremo l'integrazione con Netfun utilizzando Spatie Queueable Actions.
-=======
->>>>>>> .merge_file_ekCN0B
->>>>>>> .merge_file_CLAbuS
 Netfun è un provider di SMS italiano che offre API per l'invio di messaggi SMS. Seguendo l'architettura di App, implementeremo l'integrazione con Netfun utilizzando Spatie Queueable Actions.
->>>>>>> .merge_file_lAV1Iv
 
 ### 1. Configurazione
 
@@ -335,21 +283,8 @@ return [
         'username' => env('NETFUN_USERNAME'),
         'password' => env('NETFUN_PASSWORD'),
         'sender' => env('NETFUN_SENDER', '<nome progetto>'),
-<<<<<<< .merge_file_I6OSxA
-<<<<<<< .merge_file_GPdKnm
 'sender' => env('NETFUN_SENDER', 'Quaeris'),
-=======
-=======
-<<<<<<< .merge_file_eWO9XP
-'sender' => env('NETFUN_SENDER', 'Quaeris'),
-=======
-<<<<<<< .merge_file_GPdKnm
-'sender' => env('NETFUN_SENDER', 'Quaeris'),
-=======
->>>>>>> .merge_file_ekCN0B
->>>>>>> .merge_file_CLAbuS
 'sender' => env('NETFUN_SENDER', 'App'),
->>>>>>> .merge_file_lAV1Iv
         'api_url' => env('NETFUN_API_URL', 'https://api.netfun.it/sms/v1/'),
     ],
 ];
@@ -361,21 +296,8 @@ Assicurati di aggiungere le corrispondenti variabili al tuo file `.env`:
 NETFUN_USERNAME=your_username
 NETFUN_PASSWORD=your_password
 NETFUN_SENDER=<nome progetto>
-<<<<<<< .merge_file_I6OSxA
-<<<<<<< .merge_file_GPdKnm
 NETFUN_SENDER=Quaeris
-=======
-=======
-<<<<<<< .merge_file_eWO9XP
-NETFUN_SENDER=Quaeris
-=======
-<<<<<<< .merge_file_GPdKnm
-NETFUN_SENDER=Quaeris
-=======
->>>>>>> .merge_file_ekCN0B
->>>>>>> .merge_file_CLAbuS
 NETFUN_SENDER=App
->>>>>>> .merge_file_lAV1Iv
 ```
 
 ### 2. Creazione della Queueable Action
@@ -707,21 +629,8 @@ class AppointmentReminder extends Notification
         
         return (new NetfunSMSMessage())
             ->content("Gentile {$notifiable->first_name}, le ricordiamo il suo appuntamento del {$date}. <nome progetto>.")
-<<<<<<< .merge_file_I6OSxA
-<<<<<<< .merge_file_GPdKnm
 ->content("Gentile {$notifiable->first_name}, le ricordiamo il suo appuntamento del {$date}. Quaeris.")
-=======
-=======
-<<<<<<< .merge_file_eWO9XP
-->content("Gentile {$notifiable->first_name}, le ricordiamo il suo appuntamento del {$date}. Quaeris.")
-=======
-<<<<<<< .merge_file_GPdKnm
-->content("Gentile {$notifiable->first_name}, le ricordiamo il suo appuntamento del {$date}. Quaeris.")
-=======
->>>>>>> .merge_file_ekCN0B
->>>>>>> .merge_file_CLAbuS
 ->content("Gentile {$notifiable->first_name}, le ricordiamo il suo appuntamento del {$date}. App.")
->>>>>>> .merge_file_lAV1Iv
             ->reference('app_' . $this->appointment->id);
     }
     
@@ -767,21 +676,8 @@ class NetfunSMSTest extends TestCase
         
         $message = (new NetfunSMSMessage())
             ->content('Test SMS da <nome progetto>')
-<<<<<<< .merge_file_I6OSxA
-<<<<<<< .merge_file_GPdKnm
 ->content('Test SMS da Quaeris')
-=======
-=======
-<<<<<<< .merge_file_eWO9XP
-->content('Test SMS da Quaeris')
-=======
-<<<<<<< .merge_file_GPdKnm
-->content('Test SMS da Quaeris')
-=======
->>>>>>> .merge_file_ekCN0B
->>>>>>> .merge_file_CLAbuS
 ->content('Test SMS da App')
->>>>>>> .merge_file_lAV1Iv
             ->reference('test_123');
         
         $result = $action->execute(
@@ -818,21 +714,8 @@ class AppointmentReminderController extends Controller
         
         $message = (new NetfunSMSMessage())
             ->content("Gentile {$appointment->patient->first_name}, le ricordiamo il suo appuntamento del {$appointment->date->format('d/m/Y H:i')}. <nome progetto>.")
-<<<<<<< .merge_file_I6OSxA
-<<<<<<< .merge_file_GPdKnm
 ->content("Gentile {$appointment->patient->first_name}, le ricordiamo il suo appuntamento del {$appointment->date->format('d/m/Y H:i')}. Quaeris.")
-=======
-=======
-<<<<<<< .merge_file_eWO9XP
-->content("Gentile {$appointment->patient->first_name}, le ricordiamo il suo appuntamento del {$appointment->date->format('d/m/Y H:i')}. Quaeris.")
-=======
-<<<<<<< .merge_file_GPdKnm
-->content("Gentile {$appointment->patient->first_name}, le ricordiamo il suo appuntamento del {$appointment->date->format('d/m/Y H:i')}. Quaeris.")
-=======
->>>>>>> .merge_file_ekCN0B
->>>>>>> .merge_file_CLAbuS
 ->content("Gentile {$appointment->patient->first_name}, le ricordiamo il suo appuntamento del {$appointment->date->format('d/m/Y H:i')}. App.")
->>>>>>> .merge_file_lAV1Iv
             ->reference('app_' . $appointment->id);
         
         // Esecuzione asincrona
@@ -865,11 +748,8 @@ Utilizzando questa architettura basata su Queueable Actions, otteniamo diversi v
 
 Per inviare notifiche a destinatari che non sono models Notifiable:
 
-<<<<<<< .merge_file_GPdKnm
-=======
 ```
 
->>>>>>> .merge_file_lAV1Iv
 ```php
 Notification::route('mail', 'esempio@example.com')
     ->route('twilio', '+39XXXXXXXXXX')  // Numero in formato E.164
@@ -946,19 +826,5 @@ TELEGRAM_BOT_TOKEN=12345:ABC...
 - [TELEGRAM_NOTIFICATIONS_GUIDE.md](./telegram-notifications-guide.md)
 - [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./notifications-implementation-guide.md)
 - [SMS_PROVIDER_CONFIGURATION.md](./sms-provider-configuration.md)
-<<<<<<< .merge_file_GPdKnm
-<<<<<<< .merge_file_I6OSxA
 - [TELEGRAM_NOTIFICATIONS_GUIDE.md](./telegram-notifications-guide.md)
-=======
 - [TELEGRAM_NOTIFICATIONS_GUIDE.md](./telegram-notifications-guide.md)
->>>>>>> .merge_file_lAV1Iv
-=======
-- [TELEGRAM_NOTIFICATIONS_GUIDE.md](./telegram-notifications-guide.md)
-<<<<<<< .merge_file_eWO9XP
-- [TELEGRAM_NOTIFICATIONS_GUIDE.md](./telegram-notifications-guide.md)
-=======
-=======
-- [TELEGRAM_NOTIFICATIONS_GUIDE.md](./telegram-notifications-guide.md)
->>>>>>> .merge_file_lAV1Iv
->>>>>>> .merge_file_ekCN0B
->>>>>>> .merge_file_CLAbuS

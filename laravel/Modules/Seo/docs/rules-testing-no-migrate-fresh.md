@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> fc52fe0 (.)
-=======
->>>>>>> c101b34 (.)
-=======
->>>>>>> d0f51b6 (.)
 ---
 module: theme
 topic: rules-testing-no-migrate-fresh
@@ -17,14 +5,6 @@ canonical: ../../../Themes/docs/shared-components/rules-testing-no-migrate-fresh
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/rules-testing-no-migrate-fresh.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> d20252d (.)
-=======
->>>>>>> 77e0353 (.)
 # CRITICAL ARCHITECTURE RULE: NO MIGRATE:FRESH
 
 ## Rule
@@ -38,16 +18,3 @@ See canonical documentation: ../../../Themes/docs/shared-components/rules-testin
 ## Correct Approach
 - Only use `DatabaseTransactions` to rollback state after tests.
 - Maintain strict database boundaries.
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 7ec200b (.)
-=======
->>>>>>> d20252d (.)
-=======
->>>>>>> 77e0353 (.)
-=======
->>>>>>> fc52fe0 (.)
-=======
->>>>>>> c101b34 (.)
-=======
->>>>>>> d0f51b6 (.)

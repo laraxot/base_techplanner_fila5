@@ -376,8 +376,6 @@ Post-mortem meeting per lessons learned.
 
 **TL;DR:** Implementare XotBasePivot elimina 2.340+ righe duplicate, migliora manutenibilità 26x, richiede solo 3-4 ore, ROI 58.500% in 1 anno. Pattern già validato (XotBaseModel). Risk basso. **APPROVATO ⭐⭐⭐⭐⭐**
 
-<<<<<<< .merge_file_LfNylr
-=======
 ---
 
 <!-- Merged from XotBasePivot-Executive-Summary.md, which collided with this file on case-insensitive filesystems. -->
@@ -740,4 +738,3 @@ Post-mortem meeting per lessons learned.
 
 **TL;DR:** Implementare XotBasePivot elimina 2.340+ righe duplicate, migliora manutenibilità 26x, richiede solo 3-4 ore, ROI 58.500% in 1 anno. Pattern già validato (XotBaseModel). Risk basso. **APPROVATO ⭐⭐⭐⭐⭐**
 
->>>>>>> .merge_file_yuSynF

@@ -33,18 +33,10 @@ This project adheres to a Code of Conduct that all contributors are expected to 
 
 ```bash
 # Clone the repository
-<<<<<<< .merge_file_fjHlv9
 git clone https://github.com/your-org/fixcity.git
 cd fixcity/laravel
-=======
-<<<<<<< .merge_file_oGWWNF
-git clone https://github.com/your-org/fixcity.git
-cd fixcity/laravel
-=======
->>>>>>> .merge_file_qf93Gy
 git clone https://github.com/your-org/ptv.git
 cd ptv/laravel
->>>>>>> .merge_file_PEWhMk
 
 # Install PHP dependencies
 composer install

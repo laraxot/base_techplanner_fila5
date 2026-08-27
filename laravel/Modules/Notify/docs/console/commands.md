@@ -1,12 +1,5 @@
-<<<<<<< .merge_file_tRYUmU
 # 🔧 Console Commands FixCity
-=======
-<<<<<<< .merge_file_DS8uzw
-# 🔧 Console Commands FixCity
-=======
->>>>>>> .merge_file_lIgWx0
 # 🔧 Console Commands Notify
->>>>>>> .merge_file_ax0CH9
 
 > **Laravel 11**: Comandi auto-registrati da `app/Console/Commands/`
 
@@ -188,73 +181,31 @@ php artisan migrate --force
 php artisan queue:restart
 ```
 
-<<<<<<< .merge_file_tRYUmU
 ## 🔧 Comandi Personalizzati FixCity
-=======
-<<<<<<< .merge_file_DS8uzw
-## 🔧 Comandi Personalizzati FixCity
-=======
->>>>>>> .merge_file_lIgWx0
 ## 🔧 Comandi Personalizzati Notify
->>>>>>> .merge_file_ax0CH9
 
 ### Template Base
 ```php
 <?php
-<<<<<<< .merge_file_tRYUmU
 // app/Console/Commands/FixCityCommand.php
-=======
-<<<<<<< .merge_file_DS8uzw
-// app/Console/Commands/FixCityCommand.php
-=======
->>>>>>> .merge_file_lIgWx0
 // app/Console/Commands/NotifyCommand.php
->>>>>>> .merge_file_ax0CH9
 
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 
-<<<<<<< .merge_file_tRYUmU
 class FixCityCommand extends Command
 {
     protected $signature = 'fixcity:example 
-=======
-<<<<<<< .merge_file_DS8uzw
-class FixCityCommand extends Command
-{
-    protected $signature = 'fixcity:example 
-=======
-class NotifyCommand extends Command
-{
-    protected $signature = 'laraxot:example 
->>>>>>> .merge_file_ax0CH9
->>>>>>> .merge_file_lIgWx0
                            {argument : Argomento richiesto}
                            {--option=default : Opzione con default}
                            {--flag : Boolean flag}';
 
-<<<<<<< .merge_file_tRYUmU
     protected $description = 'Comando esempio per FixCity';
 
     public function handle(): int
     {
         $this->info('🚀 Esecuzione comando FixCity...');
-=======
-<<<<<<< .merge_file_DS8uzw
-    protected $description = 'Comando esempio per FixCity';
-
-    public function handle(): int
-    {
-        $this->info('🚀 Esecuzione comando FixCity...');
-=======
-    protected $description = 'Comando esempio per Notify';
-
-    public function handle(): int
-    {
-        $this->info('🚀 Esecuzione comando Notify...');
->>>>>>> .merge_file_ax0CH9
->>>>>>> .merge_file_lIgWx0
         
         if ($this->confirm('Continuare con l\'operazione?')) {
             // Business logic
@@ -302,15 +253,8 @@ php artisan health:check
 ### Struttura Comandi (Laravel 11)
 ```
 app/Console/Commands/
-<<<<<<< .merge_file_tRYUmU
 ├── FixCity/           # Comandi business logic
-=======
-<<<<<<< .merge_file_DS8uzw
-├── FixCity/           # Comandi business logic
-=======
->>>>>>> .merge_file_lIgWx0
 ├── Notify/           # Comandi business logic
->>>>>>> .merge_file_ax0CH9
 │   ├── ProcessTickets.php
 │   └── GenerateReports.php
 ├── Maintenance/       # Comandi manutenzione  
@@ -324,18 +268,10 @@ app/Console/Commands/
 ### Convenzioni Naming
 ```bash
 # Gruppo comando con namespace
-<<<<<<< .merge_file_tRYUmU
 fixcity:process-tickets
 fixcity:generate-reports
-=======
-<<<<<<< .merge_file_DS8uzw
-fixcity:process-tickets
-fixcity:generate-reports
-=======
->>>>>>> .merge_file_lIgWx0
 laraxot:process-tickets
 laraxot:generate-reports
->>>>>>> .merge_file_ax0CH9
 
 # Manutenzione sistema
 maintenance:cleanup-files

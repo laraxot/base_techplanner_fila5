@@ -9,23 +9,17 @@ use Modules\Notify\Database\Factories\MailTemplateLogFactory;
 use Modules\Notify\Models\MailTemplate;
 use Modules\Notify\Models\MailTemplateLog;
 use Modules\Notify\Tests\TestCase;
-<<<<<<< .merge_file_1ri5ct
-=======
 use PHPUnit\Framework\Assert;
-<<<<<<< .merge_file_Q5ury0
 
 use function Safe\json_encode;
 
 uses(\Modules\Notify\Tests\TestCase::class);
-=======
->>>>>>> .merge_file_f24D47
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
 
 uses(TestCase::class)->group('notify-db');
->>>>>>> .merge_file_XiUqpK
 
 describe('Mail Template Log Business Logic', function () {
     it('can create mail template log with basic information', function () {
@@ -51,11 +45,7 @@ describe('Mail Template Log Business Logic', function () {
 
         $log = MailTemplateLog::query()->create($logData);
 
-<<<<<<< .merge_file_Q5ury0
-        \assertNotifyTableHas('mail_template_logs', [
-=======
         XotBasePest::assertTableHas('notify', 'mail_template_logs', [
->>>>>>> .merge_file_XiUqpK
             'id' => $log->id,
             'template_id' => $template->id,
             'status' => 'sent',
@@ -63,19 +53,11 @@ describe('Mail Template Log Business Logic', function () {
         ]);
 
         Assert::assertSame('sent', $log->status);
-<<<<<<< .merge_file_Q5ury0
-        $data = \assertNotifyArray($log->data);
-        $variables = \assertNotifyArray($data['variables'] ?? null);
-        Assert::assertSame('patient@example.com', $data['recipient']);
-        Assert::assertSame('Mario Rossi', $variables['patient_name']);
-        Assert::assertSame('appointment_confirmation_001', \assertNotifyArray($log->metadata)['campaign_id']);
-=======
         $data = XotBasePest::assertArray($log->data);
         $variables = XotBasePest::assertArray($data['variables'] ?? null);
         Assert::assertSame('patient@example.com', $data['recipient']);
         Assert::assertSame('Mario Rossi', $variables['patient_name']);
         Assert::assertSame('appointment_confirmation_001', XotBasePest::assertArray($log->metadata)['campaign_id']);
->>>>>>> .merge_file_XiUqpK
     });
 
     it('can manage mail template log template relationship', function () {
@@ -105,11 +87,7 @@ describe('Mail Template Log Business Logic', function () {
             'delivered_at' => now(),
         ]);
 
-<<<<<<< .merge_file_Q5ury0
-        $fresh = \assertFreshModel($log, MailTemplateLog::class);
-=======
         $fresh = XotBasePest::assertFreshModel($log, MailTemplateLog::class);
->>>>>>> .merge_file_XiUqpK
         Assert::assertSame('delivered', $fresh->status);
         Assert::assertNotNull($fresh->sent_at);
         Assert::assertNotNull($fresh->delivered_at);
@@ -127,31 +105,6 @@ describe('Mail Template Log Business Logic', function () {
             'status_message' => 'SMTP timeout',
             'failed_at' => now(),
             'metadata' => ['error_code' => 'TIMEOUT'],
-<<<<<<< .merge_file_Q5ury0
-        ]);
-
-        $fresh = \assertFreshModel($log, MailTemplateLog::class);
-        Assert::assertSame('failed', $fresh->status);
-        Assert::assertSame('SMTP timeout', $fresh->status_message);
-        Assert::assertSame('TIMEOUT', \assertNotifyArray($fresh->metadata)['error_code']);
-    });
-
-    it('can persist structured data and metadata as json', function () {
-        $template = MailTemplateFactory::new()->createOne();
-        $payload = [
-            'recipient' => 'user@example.com',
-            'tags' => ['welcome', 'transactional'],
-        ];
-        $meta = ['provider' => 'sendgrid', 'attempt' => 1];
-
-        $log = MailTemplateLogFactory::new()->createOne([
-            'template_id' => $template->id,
-            'data' => $payload,
-            'metadata' => $meta,
-        ]);
-
-        \assertNotifyTableHas('mail_template_logs', [
-=======
         ]);
 
         $fresh = XotBasePest::assertFreshModel($log, MailTemplateLog::class);
@@ -175,7 +128,6 @@ describe('Mail Template Log Business Logic', function () {
         ]);
 
         XotBasePest::assertTableHas('notify', 'mail_template_logs', [
->>>>>>> .merge_file_XiUqpK
             'id' => $log->id,
             'data' => json_encode($payload),
             'metadata' => json_encode($meta),

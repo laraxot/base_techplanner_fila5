@@ -50,12 +50,7 @@ final class SendSmsFactorSMSAction implements SmsActionContract
      * Execute the action.
      *
      * @param  SmsData  $smsData  I dati del messaggio SMS
-<<<<<<< .merge_file_tU1VL4
-     *
-     * @return array<string, mixed> Risultato dell'operazione
-=======
      * @return array{status_code: int, status_txt: string} Risultato dell'operazione
->>>>>>> .merge_file_i8Rdou
      *
      * @throws Exception In caso di errore durante l'invio
      */

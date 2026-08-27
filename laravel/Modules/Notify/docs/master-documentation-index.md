@@ -123,23 +123,10 @@ find docs -name "*.md" | xargs grep -l "keyword"
 
 ### Indici per Categoria
 
-<<<<<<< .merge_file_rqqBJi
-=======
-<<<<<<< .merge_file_roE8UR
->>>>>>> .merge_file_0G96qI
-- [Architecture Index](./architecture/INDEX.md)
-- [Guides Index](./guides/INDEX.md)
-- [Reports Index](./reports/INDEX.md)
-- [Conventions Index](./conventions/INDEX.md)
-<<<<<<< .merge_file_rqqBJi
-=======
-=======
->>>>>>> .merge_file_0G96qI
 - [Architecture Index](./architecture/index.md)
 - [Guides Index](./guides/index.md)
 - [Reports Index](./reports/index.md)
 - [Conventions Index](./conventions/index.md)
->>>>>>> .merge_file_mwGv5w
 
 ---
 

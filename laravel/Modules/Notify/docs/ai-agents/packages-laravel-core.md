@@ -140,15 +140,8 @@ XDEBUG_MODE=off ./vendor/bin/pest --coverage         # con coverage
 XDEBUG_MODE=off ./vendor/bin/pest --coverage --min=80
 
 # Modulo specifico
-<<<<<<< .merge_file_hp754f
 XDEBUG_MODE=off ./vendor/bin/pest Modules/Quaeris/tests
-=======
-<<<<<<< .merge_file_U5nq5h
-XDEBUG_MODE=off ./vendor/bin/pest Modules/Quaeris/tests
-=======
->>>>>>> .merge_file_QDaoBc
 XDEBUG_MODE=off ./vendor/bin/pest Modules/App/tests
->>>>>>> .merge_file_UuHDvy
 
 # Via composer
 composer coverage
@@ -295,15 +288,8 @@ Espone l'applicazione all'AI (Claude, ecc.) tramite MCP protocol.
 ```php
 use Laravel\Mcp\Server;
 
-<<<<<<< .merge_file_hp754f
 $server = new Server('quaeris-surveys');
-=======
-<<<<<<< .merge_file_U5nq5h
-$server = new Server('quaeris-surveys');
-=======
->>>>>>> .merge_file_QDaoBc
 $server = new Server('this-project-surveys');
->>>>>>> .merge_file_UuHDvy
 
 // Resources (dati che l'AI puo leggere)
 $server->resource('surveys', new Resource(

@@ -211,11 +211,7 @@ class SendPushNotificationPage extends XotBasePage
         ];
     }
 
-<<<<<<< .merge_file_UCblGc
     /** @return array<string, \Filament\Actions\Action> */
-=======
-    /** @return array<string, Action> */
->>>>>>> .merge_file_ZzWn74
     protected function getNotificationFormActions(): array
     {
         return [

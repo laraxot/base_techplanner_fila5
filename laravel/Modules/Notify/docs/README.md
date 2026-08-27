@@ -3,59 +3,6 @@ title: "Notify Module Documentation"
 type: documentation
 tags: [module, documentation]
 created: 2026-06-05
-<<<<<<< .merge_file_qXTmcb
-=======
-<<<<<<< .merge_file_zkt1hL
->>>>>>> .merge_file_eL4CiJ
-updated: 2026-06-05
----
-
-# Modulo Notify
-
-## Overview
-
-Il modulo **Notify** gestisce il sistema di notifiche dell'applicazione.
-
-## Funzionalità
-
-- Mail notifications
-- Database notifications
-- Template management
-- Queue integration
-
-## Modelli Principali
-
-```php
-// Mail Template
-Notify\Models\MailTemplate
-
-// Mail Template Version
-Notify\Models\MailTemplateVersion
-
-// Notification
-Notify\Models\Notification
-```
-
-## Trait
-
-```php
-use Modules\Notify\Models\Traits\HasNotify;
-```
-
-## Collegamenti
-
-- [Documentazione Root](../../../docs/NOTIFY_MODULE.md)
-- [Xot Base](../Xot/docs/)
-- [User Module](../User/docs/)
-
-## Backlinks
-
-- [Filament Resources](./filament/)
-- [PHPStan Config](./phpstan/)
-<<<<<<< .merge_file_qXTmcb
-=======
-=======
->>>>>>> .merge_file_eL4CiJ
 updated: 2026-08-02
 ---
 
@@ -544,24 +491,10 @@ Log::channel('email')->info('Email sent', [
 
 - **Team Laraxot** - Core implementation
 - **Xot Module** - PDF generation support
->>>>>>> .merge_file_L4gQQG
 
 ## Documentation
 
-<<<<<<< .merge_file_qXTmcb
-=======
-<<<<<<< .merge_file_zkt1hL
->>>>>>> .merge_file_eL4CiJ
-- [On-Demand Pattern](./ON-DEMAND-PATTERN.md) — Pattern per caricamento efficiente
-- [QMD Setup](./QMD-SETUP.md) — Configurazione ricerca locale
-- [Performance](./PERFORMANCE-OPTIMIZATION.md) — Metriche e best practice
-- [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout
-<<<<<<< .merge_file_qXTmcb
-=======
-=======
->>>>>>> .merge_file_eL4CiJ
 **Ultimo aggiornamento:** 2025-01-22  
 **Versione:** 2.1.0  
 **Stato:** ✅ Production Ready  
 **PHPStan Level:** 10
->>>>>>> .merge_file_L4gQQG

@@ -8,19 +8,13 @@ use Modules\Notify\Actions\SMS\NormalizePhoneNumberAction;
 use Modules\Notify\Datas\RecordNotificationData;
 use Modules\Notify\Tests\TestCase;
 use Modules\User\Models\User;
-<<<<<<< .merge_file_cF3m8k
-=======
 use PHPUnit\Framework\Assert;
-<<<<<<< .merge_file_8bxUXs
 
 uses(\Modules\Notify\Tests\TestCase::class);
-=======
->>>>>>> .merge_file_gcJvPt
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class)->group('no-notify-db');
->>>>>>> .merge_file_F0DnZG
 
 test('record notification data returns mail route', function (): void {
     $user = new User();
@@ -64,11 +58,7 @@ test('record notification data throws for unsupported channel', function (): voi
         'channel' => 'telegram',
     ]);
 
-<<<<<<< .merge_file_8bxUXs
-    \assertNotifyThrows(
-=======
     XotBasePest::assertThrows(
->>>>>>> .merge_file_F0DnZG
         fn () => $data->getRoute(),
         \Exception::class,
     );

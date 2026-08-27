@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_BnGUxV
-=======
 ---
 title: "AI Methodologies Handbook"
 module: notify
@@ -9,7 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
->>>>>>> .merge_file_ibyW8x
 # AI Methodologies Handbook
 
 This file is a DRY local index for AI workflows in this module or theme.

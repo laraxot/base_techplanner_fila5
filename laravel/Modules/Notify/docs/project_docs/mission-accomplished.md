@@ -20,15 +20,8 @@ related:
 
 # 🎉 MISSION ACCOMPLISHED! 🏆
 
-<<<<<<< .merge_file_joUmlE
 ## FixCity - Base Fila4 Mono
-=======
-<<<<<<< .merge_file_MUnENe
-## FixCity - Base Fila4 Mono
-=======
->>>>>>> .merge_file_anDd1T
 ## Notify - Base Fila4 Mono
->>>>>>> .merge_file_1nunp4
 ### **PROGETTO COMPLETATO AL 100% CON ECCELLENZA 2025**
 
 **Data Completamento:** 2025-10-01 21:42  
@@ -182,15 +175,8 @@ related:
 ### 🥇 Excellence 2025
 
 **Certificato da:** Super Mucca Quality Assurance 🐮  
-<<<<<<< .merge_file_joUmlE
 **ID Certificato:** FIXCITY-2025-EXCELLENCE-001  
-=======
-<<<<<<< .merge_file_MUnENe
-**ID Certificato:** FIXCITY-2025-EXCELLENCE-001  
-=======
->>>>>>> .merge_file_anDd1T
 **ID Certificato:** NOTIFY-2025-EXCELLENCE-001  
->>>>>>> .merge_file_1nunp4
 **Validità:** Ottobre 2025 - Gennaio 2026
 
 ### 🏅 Badges Guadagnati
@@ -421,36 +407,20 @@ related:
 
 ### Progetto
 
-<<<<<<< .merge_file_joUmlE
 **Nome:** FixCity - Base Fila4 Mono  
-=======
-<<<<<<< .merge_file_MUnENe
-**Nome:** FixCity - Base Fila4 Mono  
-=======
->>>>>>> .merge_file_anDd1T
 **Nome:** Notify - Base Fila4 Mono  
->>>>>>> .merge_file_1nunp4
 **Versione:** 4.0  
 **Status:** ✅ Production Ready  
 **Qualità:** 🏆 Excellence 2025
 
 ### Team
 
-<<<<<<< .merge_file_joUmlE
 **Email:** team@fixcity.com  
 **Support:** support@fixcity.com  
 **Certification:** certification@fixcity.com
-=======
-<<<<<<< .merge_file_MUnENe
-**Email:** team@fixcity.com  
-**Support:** support@fixcity.com  
-**Certification:** certification@fixcity.com
-=======
->>>>>>> .merge_file_anDd1T
 **Email:** team@laraxot.com  
 **Support:** support@laraxot.com  
 **Certification:** certification@laraxot.com
->>>>>>> .merge_file_1nunp4
 
 ### Links
 
@@ -464,15 +434,8 @@ related:
 
 **Dichiaro ufficialmente che:**
 
-<<<<<<< .merge_file_joUmlE
 Il progetto **FixCity - Base Fila4 Mono** è stato completato con **SUCCESSO STRAORDINARIO**, raggiungendo e superando tutti gli obiettivi prefissati.
-=======
-<<<<<<< .merge_file_MUnENe
-Il progetto **FixCity - Base Fila4 Mono** è stato completato con **SUCCESSO STRAORDINARIO**, raggiungendo e superando tutti gli obiettivi prefissati.
-=======
->>>>>>> .merge_file_anDd1T
 Il progetto **Notify - Base Fila4 Mono** è stato completato con **SUCCESSO STRAORDINARIO**, raggiungendo e superando tutti gli obiettivi prefissati.
->>>>>>> .merge_file_1nunp4
 
 **Tutti i deliverables sono stati:**
 - ✅ Completati al 100%
@@ -555,15 +518,8 @@ Continuate così! La qualità è un viaggio, non una destinazione!
 
 ### MISSION ACCOMPLISHED! ✅
 
-<<<<<<< .merge_file_joUmlE
 **Il progetto FixCity - Base Fila4 Mono è ufficialmente:**
-=======
-<<<<<<< .merge_file_MUnENe
-**Il progetto FixCity - Base Fila4 Mono è ufficialmente:**
-=======
->>>>>>> .merge_file_anDd1T
 **Il progetto Notify - Base Fila4 Mono è ufficialmente:**
->>>>>>> .merge_file_1nunp4
 
 ✅ **COMPLETATO AL 100%**  
 ✅ **CERTIFICATO PER ECCELLENZA**  
@@ -579,15 +535,8 @@ Continuate così! La qualità è un viaggio, non una destinazione!
 
 ---
 
-<<<<<<< .merge_file_joUmlE
 **#MissionAccomplished #Excellence2025 #QualityFirst #FixCity #SuperMucca #ProfessionalDevelopment #CodeQuality #BestPractices #TeamWork #Success**
-=======
-<<<<<<< .merge_file_MUnENe
-**#MissionAccomplished #Excellence2025 #QualityFirst #FixCity #SuperMucca #ProfessionalDevelopment #CodeQuality #BestPractices #TeamWork #Success**
-=======
->>>>>>> .merge_file_anDd1T
 **#MissionAccomplished #Excellence2025 #QualityFirst #Notify #SuperMucca #ProfessionalDevelopment #CodeQuality #BestPractices #TeamWork #Success**
->>>>>>> .merge_file_1nunp4
 
 ---
 

@@ -101,21 +101,8 @@ Verificare che:
 - [Root Conflict Resolution Guidelines](../../../project_docs/conflict-resolution-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
-<<<<<<< .merge_file_oTewOV
 - [Notify Module Documentation](readme.md)
-<<<<<<< .merge_file_MxoOKM
-=======
 - [Notify Module Documentation](README.md)
->>>>>>> .merge_file_docmx5
-=======
-<<<<<<< .merge_file_V0hX9u
-- [Notify Module Documentation](README.md)
-=======
-=======
-- [Notify Module Documentation](README.md)
->>>>>>> .merge_file_docmx5
->>>>>>> .merge_file_HRgYJq
->>>>>>> .merge_file_dQSq0A
 - [RecordNotification Implementation](notifications/record_notification.md)
 - [SpatieEmail Integration](spatie-email-usage-guide-1.md)
 - [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)

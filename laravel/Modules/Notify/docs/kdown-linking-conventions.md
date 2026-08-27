@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_skfbbr
-=======
 ---
 title: "Convenzioni per i Collegamenti nei File Markdown"
 module: notify
@@ -9,7 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
->>>>>>> .merge_file_PHZQV7
 # Convenzioni per i Collegamenti nei File Markdown
 
 ## Regola Fondamentale
@@ -44,15 +41,8 @@ Per collegamenti a documenti in altre directory:
 
 ```markdown
 [Regole Generali per le Chiavi di Traduzione](../../lang/docs/translation_keys_rules.md)
-<<<<<<< .merge_file_yQHkXz
 [Best Practices per le Chiavi di Traduzione](../../lang/docs/translation_keys_best_practices.md)
-=======
-<<<<<<< .merge_file_skfbbr
-[Best Practices per le Chiavi di Traduzione](../../lang/docs/translation_keys_best_practices.md)
-=======
->>>>>>> .merge_file_0bv1km
 [Best Practices per le Chiavi di Traduzione](../../lang/docs/translation-keys-best-practices.md)
->>>>>>> .merge_file_PHZQV7
 ```
 
 ## Motivazione
@@ -110,15 +100,8 @@ Per collegamenti a documenti in altre directory:
 
 ```markdown
 [Regole Generali per le Chiavi di Traduzione](../../lang/docs/translation_keys_rules.md)
-<<<<<<< .merge_file_yQHkXz
 [Best Practices per le Chiavi di Traduzione](../../lang/docs/translation_keys_best_practices.md)
-=======
-<<<<<<< .merge_file_skfbbr
-[Best Practices per le Chiavi di Traduzione](../../lang/docs/translation_keys_best_practices.md)
-=======
->>>>>>> .merge_file_0bv1km
 [Best Practices per le Chiavi di Traduzione](../../lang/docs/translation-keys-best-practices.md)
->>>>>>> .merge_file_PHZQV7
 ```
 
 ## Motivazione

@@ -83,15 +83,8 @@ Tailwind @apply è usato SOLO per:
 
 ```bash
 # Verifica che le classi siano presenti
-<<<<<<< .merge_file_NwoT69
 curl http://fixcity.local/it/tests/homepage | grep -o 'class="[^"]*"' | sort | uniq
-=======
-<<<<<<< .merge_file_lsvjt2
-curl http://fixcity.local/it/tests/homepage | grep -o 'class="[^"]*"' | sort | uniq
-=======
->>>>>>> .merge_file_4y7w5U
 curl http://ptv.local/it/tests/homepage | grep -o 'class="[^"]*"' | sort | uniq
->>>>>>> .merge_file_L7WHYW
 
 # Output atteso:
 class="card card-teaser"

@@ -18,27 +18,11 @@ Unificare le 4 pagine di creazione ticket in un singolo Filament Wizard Widget:
 
 ### File da modificare/creare
 
-<<<<<<< .merge_file_HnZGJd
 1. **`laravel/Modules/Fixcity/app/Filament/Widgets/CreateTicketWidget.php`**
    - Aggiungere Step 3 (Riepilogo) e Step 4 (Conferma)
    - Aggiornare `getFormSchema()` con 4 step
 
 2. **`laravel/config/local/fixcity/database/content/pages/tests.ticket-create.json`**
-=======
-<<<<<<< .merge_file_FM36lC
-1. **`laravel/Modules/Fixcity/app/Filament/Widgets/CreateTicketWidget.php`**
-   - Aggiungere Step 3 (Riepilogo) e Step 4 (Conferma)
-   - Aggiornare `getFormSchema()` con 4 step
-
-2. **`laravel/config/local/fixcity/database/content/pages/tests.ticket-create.json`**
-=======
-1. **`laravel/Modules/App/app/Filament/Widgets/CreateTicketWidget.php`**
-   - Aggiungere Step 3 (Riepilogo) e Step 4 (Conferma)
-   - Aggiornare `getFormSchema()` con 4 step
-
-2. **`laravel/config/local/laraxot/database/content/pages/tests.ticket-create.json`**
->>>>>>> .merge_file_bBIzjl
->>>>>>> .merge_file_KCDbdn
    - Nuovo file JSON per la pagina
    - Definisce i blocchi della pagina
 
@@ -47,15 +31,8 @@ Unificare le 4 pagine di creazione ticket in un singolo Filament Wizard Widget:
 
 ### Traduzioni
 
-<<<<<<< .merge_file_HnZGJd
 Pattern: `fixcity::ticket.steps.<item>.<tipo>`
-=======
-<<<<<<< .merge_file_FM36lC
-Pattern: `fixcity::ticket.steps.<item>.<tipo>`
-=======
->>>>>>> .merge_file_KCDbdn
 Pattern: `laraxot::ticket.steps.<item>.<tipo>`
->>>>>>> .merge_file_bBIzjl
 
 ```json
 {
@@ -95,15 +72,8 @@ Pattern: `laraxot::ticket.steps.<item>.<tipo>`
 
 Il widget viene esposto come blocco CMS:
 - **Tipo**: `filament-widget`
-<<<<<<< .merge_file_HnZGJd
 - **Widget**: `Modules\Fixcity\Filament\Widgets\CreateTicketWidget`
-=======
-<<<<<<< .merge_file_FM36lC
-- **Widget**: `Modules\Fixcity\Filament\Widgets\CreateTicketWidget`
-=======
->>>>>>> .merge_file_KCDbdn
 - **Widget**: `Modules\App\Filament\Widgets\CreateTicketWidget`
->>>>>>> .merge_file_bBIzjl
 - **Posizionamento**: Main content area
 
 ## Note

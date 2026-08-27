@@ -48,15 +48,8 @@ related:
 | Gdpr | ✅ | ✅ | 0 | 🟢 Bassa |
 | Lang | ❌ | ✅ | 0 | 🟢 Bassa |
 | Job | ❌ | ✅ | 0 | 🟢 Bassa |
-<<<<<<< .merge_file_J91qkw
 | Fixcity | ✅ | ❌ | 0 | 🟢 Bassa |
-=======
-<<<<<<< .merge_file_IrdNKx
-| Fixcity | ✅ | ❌ | 0 | 🟢 Bassa |
-=======
->>>>>>> .merge_file_OTTvUX
 | App | ✅ | ❌ | 0 | 🟢 Bassa |
->>>>>>> .merge_file_bnsxPu
 | **Xot** | ❌ | ✅ | 0 | ⚡ **CORE** |
 
 **Totale:**
@@ -166,15 +159,8 @@ abstract class BasePivot extends XotBasePivot
 - Gdpr
 - Lang
 - Job
-<<<<<<< .merge_file_J91qkw
 - Fixcity
-=======
-<<<<<<< .merge_file_IrdNKx
-- Fixcity
-=======
->>>>>>> .merge_file_OTTvUX
 - App
->>>>>>> .merge_file_bnsxPu
 
 **Script automatico:**
 
@@ -190,15 +176,8 @@ MODULES=(
     "Gdpr"
     "Lang"
     "Job"
-<<<<<<< .merge_file_J91qkw
     "Fixcity"
-=======
-<<<<<<< .merge_file_IrdNKx
-    "Fixcity"
-=======
->>>>>>> .merge_file_OTTvUX
     "App"
->>>>>>> .merge_file_bnsxPu
 )
 
 for module in "${MODULES[@]}"; do
@@ -291,15 +270,8 @@ php artisan benchmark:pivot-queries
 
 ```bash
 # Test ogni modulo singolarmente
-<<<<<<< .merge_file_J91qkw
 for module in User Blog Rating Notify Geo Comment Cms Gdpr Lang Job Fixcity; do
-=======
-<<<<<<< .merge_file_IrdNKx
-for module in User Blog Rating Notify Geo Comment Cms Gdpr Lang Job Fixcity; do
-=======
->>>>>>> .merge_file_OTTvUX
 for module in User Blog Rating Notify Geo Comment Cms Gdpr Lang Job App; do
->>>>>>> .merge_file_bnsxPu
     echo "Testing $module..."
     php artisan test --testsuite=$module || echo "❌ $module FAILED"
 done
@@ -316,15 +288,8 @@ done
 1. ✅ `Modules/Xot/docs/architecture/xotbasepivot-analysis.md` (già fatto)
 2. ✅ `docs/architecture/xotbasepivot-strategy.md` (questo file)
 3. `Modules/Xot/README.md` → aggiungere sezione XotBasePivot
-<<<<<<< .merge_file_J91qkw
 4. `docs/CHANGELOG.md` → entry per breaking change
-=======
-<<<<<<< .merge_file_IrdNKx
-4. `docs/CHANGELOG.md` → entry per breaking change
-=======
->>>>>>> .merge_file_OTTvUX
 4. `docs/changelog.md` → entry per breaking change
->>>>>>> .merge_file_bnsxPu
 5. Per ogni modulo: `Modules/{Module}/docs/models/pivot-migration.md`
 
 #### Esempio doc modulo:

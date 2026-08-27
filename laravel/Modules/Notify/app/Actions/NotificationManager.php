@@ -21,10 +21,7 @@ class NotificationManager
      * @param  array<string, mixed>  $data
      * @param  list<string>  $channels
      * @param  array<string, mixed>  $options
-<<<<<<< .merge_file_Jo6SNV
      * @return Notification|null
-=======
->>>>>>> .merge_file_Xk00yZ
      */
     public function send(
         Model $recipient,

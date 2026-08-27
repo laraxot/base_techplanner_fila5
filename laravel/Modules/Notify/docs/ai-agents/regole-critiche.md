@@ -32,15 +32,8 @@ Quando un errore arriva da una pagina Filament/Livewire:
 - lintare anche i file della catena immediatamente caricata dalla pagina;
 - solo dopo passare a test applicativi, query, container o permessi.
 
-<<<<<<< .merge_file_lwLjfC
 Per i chart Quaeris la catena minima da controllare e`:
-=======
-<<<<<<< .merge_file_gawCzm
-Per i chart Quaeris la catena minima da controllare e`:
-=======
->>>>>>> .merge_file_KHYDn4
 Per i chart App la catena minima da controllare e`:
->>>>>>> .merge_file_gqvry6
 - `QuestionChartChartData`
 - `BuildQuestionChartDatasetAction`
 - `BuildQuestionChartOptionsAction`

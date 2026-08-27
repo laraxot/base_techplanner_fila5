@@ -16,14 +16,7 @@ interface SmsActionContract
      * Invia un SMS utilizzando il provider specifico.
      *
      * @param  SmsData  $smsData  I dati del messaggio SMS
-<<<<<<< .merge_file_ZkHGSY
      *
-=======
-<<<<<<< .merge_file_Swsh9o
-     *
-=======
->>>>>>> .merge_file_YPGRXU
->>>>>>> .merge_file_fYPWxc
      * @return array<string, mixed> Risultato dell'operazione
      */
     public function execute(SmsData $smsData): array;

@@ -13,10 +13,6 @@ use Modules\User\Models\OauthClient;
 use Modules\User\Models\OauthRefreshToken;
 use Webmozart\Assert\Assert;
 
-<<<<<<< .merge_file_m8pKHy
-=======
-
->>>>>>> .merge_file_HC1Fou
 trait HasPassportConfiguration
 {
     /**

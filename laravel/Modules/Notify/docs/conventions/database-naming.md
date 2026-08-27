@@ -305,15 +305,8 @@ find laravel/Modules -type d -name "Seeders"
 - [Laravel Migrations](https://laravel.com/docs/migrations)
 - [Laravel Seeders](https://laravel.com/docs/seeding)
 - [PSR-4 Autoloading](https://www.php-fig.org/psr/psr-4/)
-<<<<<<< .merge_file_UyjSFy
 - [AGENTS.md - Database Naming](../../AGENTS.md)
-=======
-<<<<<<< .merge_file_ge4zqa
-- [AGENTS.md - Database Naming](../../AGENTS.md)
-=======
->>>>>>> .merge_file_Jqc8np
 - [agents.md - Database Naming](../../agents.md)
->>>>>>> .merge_file_YKMttf
 
 ---
 
@@ -330,15 +323,7 @@ If you find incorrect directory names:
 
 ---
 
-<<<<<<< .merge_file_UyjSFy
 **Maintainer**: FixCity Dev Team  
 **Contact**: dev @fixcity.example.com
-=======
-<<<<<<< .merge_file_ge4zqa
-**Maintainer**: FixCity Dev Team  
-**Contact**: dev @fixcity.example.com
-=======
->>>>>>> .merge_file_Jqc8np
 **Maintainer**: Notify Dev Team  
 **Contact**: dev @laraxot.example.com
->>>>>>> .merge_file_YKMttf

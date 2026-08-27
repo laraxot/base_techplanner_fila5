@@ -14,10 +14,7 @@ class SendNotificationBulkResultData extends Data
 {
     /**
      * @param  Collection<int, array{record: string, channel: string, error: string}>  $errors
-<<<<<<< .merge_file_V8VKUf
      *
-=======
->>>>>>> .merge_file_lqcOtl
      * @return void
      */
     public function __construct(

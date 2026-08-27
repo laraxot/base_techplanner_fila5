@@ -22,21 +22,8 @@ related:
 
 ## Panoramica
 
-<<<<<<< .merge_file_U6TPTg
-<<<<<<< .merge_file_wWtIo1
 Questo documento descrive l'implementazione del campo `slug` nella risorsa Filament `MailTemplateResource`, rispettando le convenzioni e gli standard del progetto Quaeris.
-=======
-=======
-<<<<<<< .merge_file_OBjJqS
-Questo documento descrive l'implementazione del campo `slug` nella risorsa Filament `MailTemplateResource`, rispettando le convenzioni e gli standard del progetto Quaeris.
-=======
-<<<<<<< .merge_file_wWtIo1
-Questo documento descrive l'implementazione del campo `slug` nella risorsa Filament `MailTemplateResource`, rispettando le convenzioni e gli standard del progetto Quaeris.
-=======
->>>>>>> .merge_file_rI7AGC
->>>>>>> .merge_file_G9sSHz
 Questo documento descrive l'implementazione del campo `slug` nella risorsa Filament `MailTemplateResource`, rispettando le convenzioni e gli standard del progetto App.
->>>>>>> .merge_file_8xAGln
 
 ## Implementazione nel Form Schema
 
@@ -76,21 +63,8 @@ public static function getFormSchema(): array
 3. **Validazione Unicità**: L'opzione `unique(ignoreRecord: true)` garantisce unicità, escludendo il record corrente durante l'aggiornamento.
 4. **Generazione Automatica**: La callback `afterStateUpdated()` genera automaticamente lo slug dal nome quando si crea un nuovo record.
 
-<<<<<<< .merge_file_U6TPTg
-<<<<<<< .merge_file_wWtIo1
 ## Conformità con gli Standard Quaeris
-=======
-=======
-<<<<<<< .merge_file_OBjJqS
-## Conformità con gli Standard Quaeris
-=======
-<<<<<<< .merge_file_wWtIo1
-## Conformità con gli Standard Quaeris
-=======
->>>>>>> .merge_file_rI7AGC
->>>>>>> .merge_file_G9sSHz
 ## Conformità con gli Standard App
->>>>>>> .merge_file_8xAGln
 
 Questa implementazione aderisce a diversi standard chiave del progetto:
 

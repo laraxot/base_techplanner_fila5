@@ -68,10 +68,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  *
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $updater
-<<<<<<< .merge_file_mv0EIo
  *
-=======
->>>>>>> .merge_file_xu9OIP
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
  *
@@ -108,12 +105,7 @@ class NotifyTheme extends BaseModel
 
     /**
      * @param  array<string, mixed>|null  $value
-<<<<<<< .merge_file_mv0EIo
-     *
-     * @return array<string, mixed>
-=======
      * @return array{path: string, width: int, height: int}
->>>>>>> .merge_file_xu9OIP
      */
     public function getLogoAttribute(?array $value): array
     {

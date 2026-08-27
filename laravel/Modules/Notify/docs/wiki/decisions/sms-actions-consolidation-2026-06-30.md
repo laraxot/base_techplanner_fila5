@@ -6,31 +6,10 @@ created: 2026-06-30
 updated: 2026-07-01
 qmd: "Notify SMS Actions consolidation SmsActionFactory SmsActionContract ponytail audit smsfactor"
 issues:
-<<<<<<< .merge_file_L5TAXG
-<<<<<<< .merge_file_PRgYxD
-=======
-<<<<<<< .merge_file_tYjpKO
-=======
-<<<<<<< .merge_file_PRgYxD
->>>>>>> .merge_file_n9SIvi
->>>>>>> .merge_file_3P3eYq
-  - "https://github.com/laraxot/base_predict_fila5/issues/221"
-discussions:
-  - "https://github.com/laraxot/base_predict_fila5/discussions/222"
-  - "https://github.com/laraxot/base_predict_fila5/discussions/228"
-<<<<<<< .merge_file_L5TAXG
-=======
-=======
-<<<<<<< .merge_file_tYjpKO
-=======
-=======
->>>>>>> .merge_file_n9SIvi
->>>>>>> .merge_file_3P3eYq
   - "https://github.com/laraxot/base_ptvx_fila5/issues/221"
 discussions:
   - "https://github.com/laraxot/base_ptvx_fila5/discussions/222"
   - "https://github.com/laraxot/base_ptvx_fila5/discussions/228"
->>>>>>> .merge_file_l4I1IG
 related:
   - ../../ponytail-audit-over-engineering.md
   - ../../sms-provider-architecture.md

@@ -132,9 +132,6 @@ Based on Berger+Team study (31 Italian sources):
 **Last Updated**: 2026-03-20  
 **Status**: ✅ Mandatory  
 **Enforcement**: Code Review + Pre-commit Hook
-<<<<<<< .merge_file_3D8Xit
-=======
-
 ---
 
 <!-- Merged from 06-CINEMATIC-EFFECTS.md, which collided with this file on case-insensitive filesystems. -->
@@ -253,4 +250,3 @@ Based on Berger+Team study (31 Italian sources):
 **Last Updated**: 2026-03-20  
 **Status**: ✅ Mandatory  
 **Enforcement**: Code Review + Pre-commit Hook
->>>>>>> .merge_file_ekwgIj

@@ -101,14 +101,7 @@ See [laraxot-model-rules.md](laraxot-model-rules.md) for implementation details.
 
 1. **Autoloader clarity**: PHP autoloader cannot resolve duplicate files
 2. **Maintenance simplicity**: one authoritative location per file type
-<<<<<<< .merge_file_3srwE5
 3. **Predictable behavior**: consistent loading across environments
-=======
-<<<<<<< .merge_file_JUSRsZ
-3. **Predictable behavior**: consistent loading across environments
-=======
->>>>>>> .merge_file_WA1Dzl
 3. **Forecastable behavior**: consistent loading across environments
->>>>>>> .merge_file_tDLYxQ
 4. **DRY compliance**: eliminates redundant file locations
 5. **Test discovery**: Pest/PHPUnit rely on consistent directory structures

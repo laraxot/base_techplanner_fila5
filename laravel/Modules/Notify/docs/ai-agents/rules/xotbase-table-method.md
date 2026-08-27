@@ -267,29 +267,15 @@ class MyWidget extends XotBaseTableWidget
 ## 🔗 Related Documentation
 
 ### AI Agents Docs
-<<<<<<< .merge_file_AnzQUW
 - **[Rules Index](00-INDEX.md)** - All rules
-=======
-<<<<<<< .merge_file_5MzLOP
-- **[Rules Index](00-INDEX.md)** - All rules
-=======
->>>>>>> .merge_file_zH3lm3
 - **[Rules Index](00-index.md)** - All rules
->>>>>>> .merge_file_C1gRlt
 - **[XotBase Extension Rule](xotbase-extension-rule.md)** - Why extend XotBase
 - **[Bash Commands Auto-Allow](bash-commands-auto-allow.md)** - Bash permissions
 
 ### Module Docs
 - **[XotBaseTableWidget](../../laravel/Modules/Xot/app/Filament/Widgets/XotBaseTableWidget.php)** - Base class source
-<<<<<<< .merge_file_AnzQUW
 - **[OutcomesTableWidget](../../laravel/Modules/Predict/Filament/Widgets/OutcomesTableWidget.php)** - Example implementation
-=======
-<<<<<<< .merge_file_5MzLOP
-- **[OutcomesTableWidget](../../laravel/Modules/Predict/Filament/Widgets/OutcomesTableWidget.php)** - Example implementation
-=======
->>>>>>> .merge_file_zH3lm3
 - **[OutcomesTableWidget](../../laravel/Modules/Forecast/Filament/Widgets/OutcomesTableWidget.php)** - Example implementation
->>>>>>> .merge_file_C1gRlt
 
 ---
 

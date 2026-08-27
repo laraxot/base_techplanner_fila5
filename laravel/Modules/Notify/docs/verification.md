@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_eaXE6q
-=======
 ---
 title: "Verification Report - Compliance and XotBase Refactoring"
 module: notify
@@ -9,7 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
->>>>>>> .merge_file_l8wCoA
 # Verification Report - Compliance and XotBase Refactoring
 
 **Date**: [DATE]

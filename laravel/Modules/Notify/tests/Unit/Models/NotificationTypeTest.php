@@ -7,10 +7,7 @@ namespace Modules\Notify\Tests\Unit\Models;
 use Modules\Notify\Database\Factories\NotificationTypeFactory;
 use Modules\Notify\Models\NotificationType;
 use Modules\Notify\Tests\TestCase;
-<<<<<<< .merge_file_DYLJON
-=======
 use PHPUnit\Framework\Assert;
-<<<<<<< .merge_file_HEtoTn
 use function Pest\Laravel\get;
 
 uses(\Modules\Notify\Tests\TestCase::class);
@@ -18,8 +15,6 @@ uses(\Modules\Notify\Tests\TestCase::class);
 beforeEach(function (): void {
     /** @var \Modules\Notify\Tests\TestCase $this */
 $this->disableExceptionHandling();
-=======
->>>>>>> .merge_file_yW8lcP
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
@@ -28,27 +23,17 @@ uses(TestCase::class)->group('notify-db');
 beforeEach(function (): void {
     /** @var TestCase $this */
     $this->disableExceptionHandling();
->>>>>>> .merge_file_EDyJfR
 });
 
 describe('Notification Type', function (): void {
     test('_can_create_notification_type', function (): void {
-<<<<<<< .merge_file_HEtoTn
         /** @var \Modules\Notify\Tests\TestCase $this */
 $notificationType = NotificationTypeFactory::new()->createOne([
-=======
-        /** @var TestCase $this */
-        $notificationType = NotificationTypeFactory::new()->createOne([
->>>>>>> .merge_file_EDyJfR
             'name' => 'Email Notification',
             'description' => 'Email notification type for sending emails',
             'template' => 'email_template_1',
         ]);
-<<<<<<< .merge_file_HEtoTn
-        \assertNotifyTableHas('notification_types', [
-=======
         XotBasePest::assertTableHas('notify', 'notification_types', [
->>>>>>> .merge_file_EDyJfR
             'id' => $notificationType->id,
             'name' => 'Email Notification',
             'description' => 'Email notification type for sending emails',
@@ -59,15 +44,7 @@ $notificationType = NotificationTypeFactory::new()->createOne([
     });
 
     test('_has_correct_fillable_fields', function (): void {
-<<<<<<< .merge_file_DYLJON
         $notificationType = new NotificationType();
-=======
-<<<<<<< .merge_file_HEtoTn
-$notificationType = new NotificationType;
-=======
-        $notificationType = new NotificationType;
->>>>>>> .merge_file_EDyJfR
->>>>>>> .merge_file_yW8lcP
 
         $expectedFillable = [
             'name',
@@ -79,13 +56,8 @@ $notificationType = new NotificationType;
     });
 
     test('_can_update_notification_type', function (): void {
-<<<<<<< .merge_file_HEtoTn
         /** @var \Modules\Notify\Tests\TestCase $this */
 $notificationType = NotificationTypeFactory::new()->createOne([
-=======
-        /** @var TestCase $this */
-        $notificationType = NotificationTypeFactory::new()->createOne([
->>>>>>> .merge_file_EDyJfR
             'name' => 'Original Name',
             'description' => 'Original description',
             'template' => 'original_template',
@@ -96,11 +68,7 @@ $notificationType = NotificationTypeFactory::new()->createOne([
             'description' => 'Updated description',
             'template' => 'updated_template',
         ]);
-<<<<<<< .merge_file_HEtoTn
-        \assertNotifyTableHas('notification_types', [
-=======
         XotBasePest::assertTableHas('notify', 'notification_types', [
->>>>>>> .merge_file_EDyJfR
             'id' => $notificationType->id,
             'name' => 'Updated Name',
             'description' => 'Updated description',
@@ -114,11 +82,7 @@ $notificationType = NotificationTypeFactory::new()->createOne([
     });
 
     test('_can_find_by_name', function (): void {
-<<<<<<< .merge_file_HEtoTn
-$notificationType = NotificationTypeFactory::new()->createOne([
-=======
         $notificationType = NotificationTypeFactory::new()->createOne([
->>>>>>> .merge_file_EDyJfR
             'name' => 'SMS Notification',
             'description' => 'SMS notification type',
             'template' => 'sms_template',
@@ -134,11 +98,7 @@ $notificationType = NotificationTypeFactory::new()->createOne([
     });
 
     test('_can_find_by_template', function (): void {
-<<<<<<< .merge_file_HEtoTn
-NotificationTypeFactory::new()->createOne([
-=======
         NotificationTypeFactory::new()->createOne([
->>>>>>> .merge_file_EDyJfR
             'name' => 'Email Type 1',
             'description' => 'First email template',
             'template' => 'email_template_1',
@@ -155,21 +115,12 @@ NotificationTypeFactory::new()->createOne([
 
         Assert::assertCount(1, $template1Types);
         Assert::assertCount(1, $template2Types);
-<<<<<<< .merge_file_HEtoTn
         Assert::assertEquals('email_template_1', \assertFirstModel($template1Types, \Modules\Notify\Models\NotificationType::class)->template);
         Assert::assertEquals('email_template_2', \assertFirstModel($template2Types, \Modules\Notify\Models\NotificationType::class)->template);
     });
 
     test('_can_find_by_description_pattern', function (): void {
 NotificationTypeFactory::new()->createOne([
-=======
-        Assert::assertEquals('email_template_1', XotBasePest::assertFirstModel($template1Types, NotificationType::class)->template);
-        Assert::assertEquals('email_template_2', XotBasePest::assertFirstModel($template2Types, NotificationType::class)->template);
-    });
-
-    test('_can_find_by_description_pattern', function (): void {
-        NotificationTypeFactory::new()->createOne([
->>>>>>> .merge_file_EDyJfR
             'name' => 'Email Type',
             'description' => 'Email notification type for users',
             'template' => 'email_template',
@@ -192,26 +143,16 @@ NotificationTypeFactory::new()->createOne([
 
         Assert::assertCount(2, $userTypes);
         Assert::assertCount(1, $mobileTypes);
-<<<<<<< .merge_file_HEtoTn
-        $firstUserType = \assertFirstModel($userTypes, NotificationType::class);
-        $secondUserType = \assertFirstModel($userTypes->slice(1), NotificationType::class);
-        $mobileType = \assertFirstModel($mobileTypes, NotificationType::class);
-=======
         $firstUserType = XotBasePest::assertFirstModel($userTypes, NotificationType::class);
         $secondUserType = XotBasePest::assertFirstModel($userTypes->slice(1), NotificationType::class);
         $mobileType = XotBasePest::assertFirstModel($mobileTypes, NotificationType::class);
->>>>>>> .merge_file_EDyJfR
         Assert::assertStringContainsString('for users', (string) $firstUserType->description);
         Assert::assertStringContainsString('for users', (string) $secondUserType->description);
         Assert::assertStringContainsString('mobile', (string) $mobileType->description);
     });
 
     test('_can_handle_null_values', function (): void {
-<<<<<<< .merge_file_HEtoTn
-$notificationType = NotificationTypeFactory::new()->createOne([
-=======
         $notificationType = NotificationTypeFactory::new()->createOne([
->>>>>>> .merge_file_EDyJfR
             'name' => 'No Description Type',
             'description' => null,
             'template' => null,
@@ -219,11 +160,7 @@ $notificationType = NotificationTypeFactory::new()->createOne([
 
         Assert::assertNull($notificationType->description);
         Assert::assertNull($notificationType->template);
-<<<<<<< .merge_file_HEtoTn
-        \assertNotifyTableHas('notification_types', [
-=======
         XotBasePest::assertTableHas('notify', 'notification_types', [
->>>>>>> .merge_file_EDyJfR
             'id' => $notificationType->id,
             'description' => null,
             'template' => null,
@@ -231,11 +168,7 @@ $notificationType = NotificationTypeFactory::new()->createOne([
     });
 
     test('_can_create_multiple_types', function (): void {
-<<<<<<< .merge_file_HEtoTn
-$types = [
-=======
         $types = [
->>>>>>> .merge_file_EDyJfR
             ['name' => 'Email', 'description' => 'Email notifications', 'template' => 'email'],
             ['name' => 'SMS', 'description' => 'SMS notifications', 'template' => 'sms'],
             ['name' => 'Push', 'description' => 'Push notifications', 'template' => 'push'],
@@ -265,11 +198,7 @@ $types = [
     });
 
     test('_can_find_by_multiple_criteria', function (): void {
-<<<<<<< .merge_file_HEtoTn
-NotificationTypeFactory::new()->createOne([
-=======
         NotificationTypeFactory::new()->createOne([
->>>>>>> .merge_file_EDyJfR
             'name' => 'High Priority Email',
             'description' => 'High priority email notifications',
             'template' => 'high_priority_email',
@@ -292,14 +221,8 @@ NotificationTypeFactory::new()->createOne([
             ->get();
 
         Assert::assertCount(1, $highPriorityEmailTypes);
-<<<<<<< .merge_file_HEtoTn
         Assert::assertEquals('High Priority Email', \assertFirstModel($highPriorityEmailTypes, \Modules\Notify\Models\NotificationType::class)->name);
         Assert::assertEquals('High priority email notifications', \assertFirstModel($highPriorityEmailTypes, \Modules\Notify\Models\NotificationType::class)->description);
         Assert::assertEquals('high_priority_email', \assertFirstModel($highPriorityEmailTypes, \Modules\Notify\Models\NotificationType::class)->template);
-=======
-        Assert::assertEquals('High Priority Email', XotBasePest::assertFirstModel($highPriorityEmailTypes, NotificationType::class)->name);
-        Assert::assertEquals('High priority email notifications', XotBasePest::assertFirstModel($highPriorityEmailTypes, NotificationType::class)->description);
-        Assert::assertEquals('high_priority_email', XotBasePest::assertFirstModel($highPriorityEmailTypes, NotificationType::class)->template);
->>>>>>> .merge_file_EDyJfR
     });
 });

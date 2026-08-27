@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_rVMXrk
-=======
 ---
 title: "Modulo Notify - Documentazione"
 module: notify
@@ -9,7 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
->>>>>>> .merge_file_mUwBYE
 # Modulo Notify - Documentazione
 
 ## 📚 Overview
@@ -248,16 +245,8 @@ Notification::route('mail', 'to@example.com')->notify($notify);
 **Versione**: 1.1  
 **Stato**: PSR-4 compliant, test business logic completati (95% copertura)  
 **Prossimi passi**: Completamento test modelli base  
-<<<<<<< .merge_file_f1ZT0n
 **Changelog**: [CHANGELOG.md](./CHANGELOG.md)
 **Changelog**: [changelog.md](./CHANGELOG.md)
-=======
-<<<<<<< .merge_file_rVMXrk
-**Changelog**: [CHANGELOG.md](./CHANGELOG.md)
-=======
-**Changelog**: [changelog.md](./CHANGELOG.md)
->>>>>>> .merge_file_mUwBYE
->>>>>>> .merge_file_LqA9Gm
 
 ## 🔗 Collegamenti
 

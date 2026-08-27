@@ -28,10 +28,7 @@ class EmailData extends Data
 
     /**
      * @param  list<string>  $attachments
-<<<<<<< .merge_file_WPdlOj
      *
-=======
->>>>>>> .merge_file_8qYezn
      * @return void
      */
     public function __construct(

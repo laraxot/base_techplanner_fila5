@@ -1,12 +1,5 @@
-<<<<<<< .merge_file_OklVcu
 # 📸 Screenshot Analysis - Homepage FixCity
-=======
-<<<<<<< .merge_file_Ax2wKa
-# 📸 Screenshot Analysis - Homepage FixCity
-=======
->>>>>>> .merge_file_mfxYt1
 # 📸 Screenshot Analysis - Homepage Notify
->>>>>>> .merge_file_8iYrkI
 
 ## Reference: Bootstrap Italia
 
@@ -131,25 +124,6 @@ Screenshot: footer_bootstrap_italia.png
 
 ---
 
-<<<<<<< .merge_file_OklVcu
-=======
-<<<<<<< .merge_file_Ax2wKa
->>>>>>> .merge_file_mfxYt1
-## FixCity Current State
-
-### Screenshots
-```
-Screenshot: fixcity_header_current.png
-Screenshot: fixcity_hero_current.png
-Screenshot: fixcity_governance_current.png
-Screenshot: fixcity_events_current.png
-Screenshot: fixcity_topics_current.png
-Screenshot: fixcity_footer_current.png
-URL: http://fixcity.local/it/tests/homepage
-<<<<<<< .merge_file_OklVcu
-=======
-=======
->>>>>>> .merge_file_mfxYt1
 ## Notify Current State
 
 ### Screenshots
@@ -161,20 +135,12 @@ Screenshot: app_events_current.png
 Screenshot: app_topics_current.png
 Screenshot: app_footer_current.png
 URL: http://laraxot.local/it/tests/homepage
->>>>>>> .merge_file_8iYrkI
 ```
 
 ### Differenze Principali
 
-<<<<<<< .merge_file_OklVcu
 | Elemento | Bootstrap Italia | FixCity | Status |
-=======
-<<<<<<< .merge_file_Ax2wKa
-| Elemento | Bootstrap Italia | FixCity | Status |
-=======
->>>>>>> .merge_file_mfxYt1
 | Elemento | Bootstrap Italia | Notify | Status |
->>>>>>> .merge_file_8iYrkI
 |----------|-----------------|---------|--------|
 | Header slim | ✅ Presente | ❌ Assente | 🔴 |
 | Hero card-teaser | ✅ Sì | ❌ No | 🔴 |

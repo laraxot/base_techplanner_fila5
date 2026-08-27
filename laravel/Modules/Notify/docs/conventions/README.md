@@ -377,13 +377,6 @@ find . -name "*[A-Z]*" -type d | grep -v node_modules | grep -v vendor
 ---
 
 **Maintainer**: @marco76tv  
-<<<<<<< .merge_file_xNUrcJ
 **Contact**: dev @fixcity.example.com  
-=======
-<<<<<<< .merge_file_CGtxjE
-**Contact**: dev @fixcity.example.com  
-=======
->>>>>>> .merge_file_LOGKyg
 **Contact**: dev @laraxot.example.com  
->>>>>>> .merge_file_I5Kh1E
 **Last Review**: 2026-03-13

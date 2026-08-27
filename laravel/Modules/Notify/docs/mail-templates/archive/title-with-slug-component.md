@@ -22,21 +22,8 @@ related:
 
 ## Introduzione
 
-<<<<<<< .merge_file_Q8QbXh
-<<<<<<< .merge_file_1a2v6Z
 Il pacchetto `filament-title-with-slug` di Camya fornisce un componente specializzato per la gestione combinata di titoli e slug nei form Filament. Questo documento analizza le funzionalità del componente e la sua potenziale integrazione nel modulo Notify di SaluteOra, in particolare per la gestione dei template email.
-=======
-=======
-<<<<<<< .merge_file_i4J8dN
-Il pacchetto `filament-title-with-slug` di Camya fornisce un componente specializzato per la gestione combinata di titoli e slug nei form Filament. Questo documento analizza le funzionalità del componente e la sua potenziale integrazione nel modulo Notify di SaluteOra, in particolare per la gestione dei template email.
-=======
-<<<<<<< .merge_file_1a2v6Z
-Il pacchetto `filament-title-with-slug` di Camya fornisce un componente specializzato per la gestione combinata di titoli e slug nei form Filament. Questo documento analizza le funzionalità del componente e la sua potenziale integrazione nel modulo Notify di SaluteOra, in particolare per la gestione dei template email.
-=======
->>>>>>> .merge_file_bGPBkN
->>>>>>> .merge_file_wSCfZW
 Il pacchetto `filament-title-with-slug` di Camya fornisce un componente specializzato per la gestione combinata di titoli e slug nei form Filament. Questo documento analizza le funzionalità del componente e la sua potenziale integrazione nel modulo Notify di <nome progetto>, in particolare per la gestione dei template email.
->>>>>>> .merge_file_BSmJNw
 
 ## Panoramica del Pacchetto
 
@@ -50,46 +37,21 @@ Il pacchetto `filament-title-with-slug` di Camya fornisce un componente speciali
 - **Supporto Dark Mode**: Compatibilità con il tema scuro di Filament
 - **Validazione Avanzata**: Regole di validazione personalizzabili
 
-<<<<<<< .merge_file_Q8QbXh
-=======
-<<<<<<< .merge_file_i4J8dN
 ### Compatibilità con SaluteOra
 
 Il componente è compatibile con l'architettura di SaluteOra e può essere integrato seguendo le convenzioni del progetto:
-=======
->>>>>>> .merge_file_wSCfZW
-<<<<<<< .merge_file_1a2v6Z
 ### Compatibilità con SaluteOra
 
 Il componente è compatibile con l'architettura di SaluteOra e può essere integrato seguendo le convenzioni del progetto:
-=======
-<<<<<<< .merge_file_Q8QbXh
-=======
->>>>>>> .merge_file_bGPBkN
->>>>>>> .merge_file_wSCfZW
 ### Compatibilità con <nome progetto>
 
 Il componente è compatibile con l'architettura di <nome progetto> e può essere integrato seguendo le convenzioni del progetto:
->>>>>>> .merge_file_BSmJNw
 
 - Non utilizza componenti UI personalizzati
 - Può essere configurato per restituire array associativi con chiavi stringhe
 - Supporta la localizzazione attraverso file di traduzione
-<<<<<<< .merge_file_Q8QbXh
-<<<<<<< .merge_file_1a2v6Z
 - Si integra con il pattern di form di Filament utilizzato 
-=======
-=======
-<<<<<<< .merge_file_i4J8dN
-- Si integra con il pattern di form di Filament utilizzato 
-=======
-<<<<<<< .merge_file_1a2v6Z
-- Si integra con il pattern di form di Filament utilizzato 
-=======
->>>>>>> .merge_file_bGPBkN
->>>>>>> .merge_file_wSCfZW
 - Si integra con il pattern di form di Filament utilizzato
->>>>>>> .merge_file_BSmJNw
 
 ## Installazione
 
@@ -109,21 +71,8 @@ php artisan vendor:publish --tag="filament-title-with-slug-config"
 
 ### Configurazione Base
 
-<<<<<<< .merge_file_Q8QbXh
-<<<<<<< .merge_file_1a2v6Z
 Ecco come il componente potrebbe essere implementato in `MailTemplateResource` seguendo le convenzioni di SaluteOra:
-=======
-=======
-<<<<<<< .merge_file_i4J8dN
-Ecco come il componente potrebbe essere implementato in `MailTemplateResource` seguendo le convenzioni di SaluteOra:
-=======
-<<<<<<< .merge_file_1a2v6Z
-Ecco come il componente potrebbe essere implementato in `MailTemplateResource` seguendo le convenzioni di SaluteOra:
-=======
->>>>>>> .merge_file_bGPBkN
->>>>>>> .merge_file_wSCfZW
 Ecco come il componente potrebbe essere implementato in `MailTemplateResource` seguendo le convenzioni di <nome progetto>:
->>>>>>> .merge_file_BSmJNw
 
 ```php
 use Camya\Filament\Forms\Components\TitleWithSlugInput;
@@ -136,52 +85,14 @@ public static function getFormSchema(): array
             fieldSlug: 'slug',
         )
         ->columnSpanFull(),
-<<<<<<< .merge_file_Q8QbXh
-<<<<<<< .merge_file_1a2v6Z
-        
-=======
-=======
-<<<<<<< .merge_file_i4J8dN
-        
-=======
-<<<<<<< .merge_file_1a2v6Z
-        
-=======
->>>>>>> .merge_file_bGPBkN
->>>>>>> .merge_file_wSCfZW
-
->>>>>>> .merge_file_BSmJNw
         // Altri campi del form
         'subject' => Forms\Components\TextInput::make('subject')
             ->required()
             ->maxLength(255),
-<<<<<<< .merge_file_Q8QbXh
-<<<<<<< .merge_file_1a2v6Z
-=======
-<<<<<<< .merge_file_i4J8dN
-=======
-<<<<<<< .merge_file_1a2v6Z
->>>>>>> .merge_file_bGPBkN
->>>>>>> .merge_file_wSCfZW
-            
-        'html_template' => Forms\Components\RichEditor::make('html_template')
-            ->required()
-            ->columnSpanFull(),
-            
-<<<<<<< .merge_file_Q8QbXh
-=======
-=======
-<<<<<<< .merge_file_i4J8dN
-=======
-=======
->>>>>>> .merge_file_bGPBkN
->>>>>>> .merge_file_wSCfZW
-
         'html_template' => Forms\Components\RichEditor::make('html_template')
             ->required()
             ->columnSpanFull(),
 
->>>>>>> .merge_file_BSmJNw
         'text_template' => Forms\Components\Textarea::make('text_template')
             ->maxLength(65535)
             ->columnSpanFull(),
@@ -191,21 +102,8 @@ public static function getFormSchema(): array
 
 ### Personalizzazione Avanzata
 
-<<<<<<< .merge_file_Q8QbXh
-<<<<<<< .merge_file_1a2v6Z
 Per adattare il componente alle esigenze specifiche di SaluteOra:
-=======
-=======
-<<<<<<< .merge_file_i4J8dN
-Per adattare il componente alle esigenze specifiche di SaluteOra:
-=======
-<<<<<<< .merge_file_1a2v6Z
-Per adattare il componente alle esigenze specifiche di SaluteOra:
-=======
->>>>>>> .merge_file_bGPBkN
->>>>>>> .merge_file_wSCfZW
 Per adattare il componente alle esigenze specifiche di <nome progetto>:
->>>>>>> .merge_file_BSmJNw
 
 ```php
 'titleSlug' => TitleWithSlugInput::make(
@@ -242,21 +140,8 @@ Il componente mostra un'anteprima dell'URL completo, personalizzabile attraverso
 
 ```php
 ->urlPath('/mail-templates/')
-<<<<<<< .merge_file_Q8QbXh
-<<<<<<< .merge_file_1a2v6Z
 ->urlHost('https://saluteora.example.com')
-=======
-=======
-<<<<<<< .merge_file_i4J8dN
-->urlHost('https://saluteora.example.com')
-=======
-<<<<<<< .merge_file_1a2v6Z
-->urlHost('https://saluteora.example.com')
-=======
->>>>>>> .merge_file_bGPBkN
->>>>>>> .merge_file_wSCfZW
 ->urlHost('https://<nome progetto>.example.com')
->>>>>>> .merge_file_BSmJNw
 ->urlHostVisible(true)
 ```
 
@@ -286,40 +171,14 @@ Per la validazione dell'unicità, il componente offre parametri specifici:
 Il componente può generare un link per visualizzare direttamente la risorsa:
 
 ```php
-<<<<<<< .merge_file_Q8QbXh
-<<<<<<< .merge_file_1a2v6Z
 ->urlVisitLinkRoute(fn(?Model $record) => $record?->slug 
-=======
-=======
-<<<<<<< .merge_file_i4J8dN
-->urlVisitLinkRoute(fn(?Model $record) => $record?->slug 
-=======
-<<<<<<< .merge_file_1a2v6Z
-->urlVisitLinkRoute(fn(?Model $record) => $record?->slug 
-=======
->>>>>>> .merge_file_bGPBkN
->>>>>>> .merge_file_wSCfZW
 ->urlVisitLinkRoute(fn(?Model $record) => $record?->slug
->>>>>>> .merge_file_BSmJNw
     ? route('notify.mail-templates.view', ['slug' => $record->slug])
     : null)
 ```
 
-<<<<<<< .merge_file_Q8QbXh
-<<<<<<< .merge_file_1a2v6Z
 ## Vantaggi per SaluteOra
-=======
-=======
-<<<<<<< .merge_file_i4J8dN
-## Vantaggi per SaluteOra
-=======
-<<<<<<< .merge_file_1a2v6Z
-## Vantaggi per SaluteOra
-=======
->>>>>>> .merge_file_bGPBkN
->>>>>>> .merge_file_wSCfZW
 ## Vantaggi per <nome progetto>
->>>>>>> .merge_file_BSmJNw
 
 L'integrazione di questo componente nel modulo Notify offrirebbe:
 
@@ -331,33 +190,11 @@ L'integrazione di questo componente nel modulo Notify offrirebbe:
 
 ## Considerazioni per l'Implementazione
 
-<<<<<<< .merge_file_Q8QbXh
-<<<<<<< .merge_file_1a2v6Z
-=======
-<<<<<<< .merge_file_i4J8dN
-=======
-<<<<<<< .merge_file_1a2v6Z
->>>>>>> .merge_file_bGPBkN
->>>>>>> .merge_file_wSCfZW
-### Conformità con le Convenzioni di SaluteOra
-
-Per rispettare le convenzioni del progetto, è necessario:
-
-1. **Traduzione**: Configurare le etichette per utilizzare il sistema di traduzione di SaluteOra anziché testi hardcoded
-<<<<<<< .merge_file_Q8QbXh
-=======
-=======
-<<<<<<< .merge_file_i4J8dN
-=======
-=======
->>>>>>> .merge_file_bGPBkN
->>>>>>> .merge_file_wSCfZW
 ### Conformità con le Convenzioni di <nome progetto>
 
 Per rispettare le convenzioni del progetto, è necessario:
 
 1. **Traduzione**: Configurare le etichette per utilizzare il sistema di traduzione di <nome progetto> anziché testi hardcoded
->>>>>>> .merge_file_BSmJNw
 2. **Array Associativo**: Utilizzare chiavi stringhe nell'array di schema del form
 3. **Nomenclatura**: Seguire le convenzioni di nomenclatura del progetto
 
@@ -378,21 +215,6 @@ public static function getFormSchema(): array
             if (!$record?->slug) return null;
             return route('notify.mail-templates.view', ['slug' => $record->slug]);
         }),
-<<<<<<< .merge_file_Q8QbXh
-<<<<<<< .merge_file_1a2v6Z
-        
-=======
-=======
-<<<<<<< .merge_file_i4J8dN
-        
-=======
-<<<<<<< .merge_file_1a2v6Z
-        
-=======
->>>>>>> .merge_file_bGPBkN
->>>>>>> .merge_file_wSCfZW
-
->>>>>>> .merge_file_BSmJNw
         // Altri campi...
     ];
 }
@@ -403,60 +225,21 @@ public static function getFormSchema(): array
 ### Potenziali Limitazioni
 
 1. **Dipendenza Esterna**: Introduce una dipendenza aggiuntiva nel progetto
-<<<<<<< .merge_file_Q8QbXh
-<<<<<<< .merge_file_1a2v6Z
 2. **Personalizzazione Visiva**: Potrebbe richiedere adattamenti per integrarsi perfettamente con il tema di SaluteOra
-=======
-=======
-<<<<<<< .merge_file_i4J8dN
-2. **Personalizzazione Visiva**: Potrebbe richiedere adattamenti per integrarsi perfettamente con il tema di SaluteOra
-=======
-<<<<<<< .merge_file_1a2v6Z
-2. **Personalizzazione Visiva**: Potrebbe richiedere adattamenti per integrarsi perfettamente con il tema di SaluteOra
-=======
->>>>>>> .merge_file_bGPBkN
->>>>>>> .merge_file_wSCfZW
 2. **Personalizzazione Visiva**: Potrebbe richiedere adattamenti per integrarsi perfettamente con il tema di <nome progetto>
->>>>>>> .merge_file_BSmJNw
 3. **Modifiche Future**: Come ogni dipendenza, è soggetto a cambiamenti nelle versioni future
 
 ### Alternative
 
-<<<<<<< .merge_file_Q8QbXh
-<<<<<<< .merge_file_1a2v6Z
 1. **Soluzione Custom**: Sviluppare un componente su misura basato sulle esigenze specifiche di SaluteOra
-=======
-=======
-<<<<<<< .merge_file_i4J8dN
-1. **Soluzione Custom**: Sviluppare un componente su misura basato sulle esigenze specifiche di SaluteOra
-=======
-<<<<<<< .merge_file_1a2v6Z
-1. **Soluzione Custom**: Sviluppare un componente su misura basato sulle esigenze specifiche di SaluteOra
-=======
->>>>>>> .merge_file_bGPBkN
->>>>>>> .merge_file_wSCfZW
 1. **Soluzione Custom**: Sviluppare un componente su misura basato sulle esigenze specifiche di <nome progetto>
->>>>>>> .merge_file_BSmJNw
 2. **Approccio Modulare**: Utilizzare i componenti nativi di Filament con logica personalizzata
 3. **Altri Pacchetti**: Valutare pacchetti alternativi con funzionalità simili
 
 ## Conclusioni
 
-<<<<<<< .merge_file_Q8QbXh
-<<<<<<< .merge_file_1a2v6Z
 Il componente `TitleWithSlugInput` offre una soluzione elegante e completa per la gestione combinata di titoli e slug nei form Filament. La sua integrazione nel modulo Notify di SaluteOra potrebbe migliorare significativamente l'esperienza utente nella gestione dei template email, semplificando il processo di creazione e modifica.
-=======
-=======
-<<<<<<< .merge_file_i4J8dN
-Il componente `TitleWithSlugInput` offre una soluzione elegante e completa per la gestione combinata di titoli e slug nei form Filament. La sua integrazione nel modulo Notify di SaluteOra potrebbe migliorare significativamente l'esperienza utente nella gestione dei template email, semplificando il processo di creazione e modifica.
-=======
-<<<<<<< .merge_file_1a2v6Z
-Il componente `TitleWithSlugInput` offre una soluzione elegante e completa per la gestione combinata di titoli e slug nei form Filament. La sua integrazione nel modulo Notify di SaluteOra potrebbe migliorare significativamente l'esperienza utente nella gestione dei template email, semplificando il processo di creazione e modifica.
-=======
->>>>>>> .merge_file_bGPBkN
->>>>>>> .merge_file_wSCfZW
 Il componente `TitleWithSlugInput` offre una soluzione elegante e completa per la gestione combinata di titoli e slug nei form Filament. La sua integrazione nel modulo Notify di <nome progetto> potrebbe migliorare significativamente l'esperienza utente nella gestione dei template email, semplificando il processo di creazione e modifica.
->>>>>>> .merge_file_BSmJNw
 
 L'implementazione dovrebbe seguire le convenzioni del progetto, con particolare attenzione alla localizzazione e alla struttura del form schema.
 

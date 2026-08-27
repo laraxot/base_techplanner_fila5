@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> fc52fe0 (.)
-=======
->>>>>>> c101b34 (.)
-=======
->>>>>>> d0f51b6 (.)
 ---
 module: theme
 topic: mcp_server_consigliati
@@ -19,18 +5,6 @@ canonical: ../../../Themes/docs/shared-components/MCP_SERVER_CONSIGLIATI.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/MCP_SERVER_CONSIGLIATI.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> d20252d (.)
-=======
->>>>>>> dbf8b8d (.)
-=======
->>>>>>> 77e0353 (.)
-=======
->>>>>>> a771e9c (.)
 # Server MCP consigliati per il modulo Seo
 
 ## Scopo del modulo
@@ -56,22 +30,3 @@ Analisi SEO, automazione di audit, recupero dati da web, generazione di report.
 
 **Nota:**
 Aggiungi solo i server che realmente ti servono per il tuo workflow. 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 7ec200b (.)
-=======
->>>>>>> d20252d (.)
-=======
->>>>>>> dbf8b8d (.)
-=======
->>>>>>> 77e0353 (.)
-=======
->>>>>>> fc52fe0 (.)
-=======
->>>>>>> c101b34 (.)
-=======
->>>>>>> d0f51b6 (.)
-=======
->>>>>>> a771e9c (.)

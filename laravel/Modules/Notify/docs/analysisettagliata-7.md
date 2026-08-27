@@ -641,8 +641,4 @@ class MaintainTemplatesCommand extends Command
         return 0;
     }
 } 
-<<<<<<< .merge_file_BOpkGZ
-=======
-
 ```
->>>>>>> .merge_file_YrSqi7

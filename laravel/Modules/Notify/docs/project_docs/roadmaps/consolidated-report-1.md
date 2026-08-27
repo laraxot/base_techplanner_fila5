@@ -21,42 +21,16 @@ related:
 # 📊 REPORT CONSOLIDATO ROADMAP - 2025-10-01
 
 ## 🎯 OVERVIEW
-<<<<<<< .merge_file_OSi79A
-<<<<<<< .merge_file_75kHLM
 Report consolidato delle roadmap di tutti i moduli e temi del progetto FixCity.
-=======
-=======
-<<<<<<< .merge_file_2NO8Uo
-Report consolidato delle roadmap di tutti i moduli e temi del progetto FixCity.
-=======
-<<<<<<< .merge_file_75kHLM
-Report consolidato delle roadmap di tutti i moduli e temi del progetto FixCity.
-=======
->>>>>>> .merge_file_XIYzd3
->>>>>>> .merge_file_qH0ph0
 Report consolidato delle roadmap di tutti i moduli e temi del progetto Notify.
->>>>>>> .merge_file_m0ZOXf
 
 ## 📋 MODULI
 
 ### Moduli Core (CRITICAL)
 - **Xot**: Core framework - Status: 95% COMPLETATO
 - **User**: Authentication & Authorization - Status: 90% COMPLETATO  
-<<<<<<< .merge_file_OSi79A
-<<<<<<< .merge_file_75kHLM
 - **Fixcity**: Core business logic - Status: 80% COMPLETATO
-=======
-=======
-<<<<<<< .merge_file_2NO8Uo
-- **Fixcity**: Core business logic - Status: 80% COMPLETATO
-=======
-<<<<<<< .merge_file_75kHLM
-- **Fixcity**: Core business logic - Status: 80% COMPLETATO
-=======
->>>>>>> .merge_file_XIYzd3
->>>>>>> .merge_file_qH0ph0
 - **App**: Core business logic - Status: 80% COMPLETATO
->>>>>>> .merge_file_m0ZOXf
 
 ### Moduli Support (HIGH)
 - **UI**: Component library - Status: 60% COMPLETATO
@@ -101,24 +75,12 @@ Report consolidato delle roadmap di tutti i moduli e temi del progetto Notify.
 ## 🎯 PROSSIMI PASSI
 
 ### Q1 2025 (Gennaio-Marzo)
-<<<<<<< .merge_file_OSi79A
-=======
-<<<<<<< .merge_file_2NO8Uo
 1. Completare moduli core (Xot, User, Fixcity)
 2. Implementare API v1 per Fixcity
-=======
->>>>>>> .merge_file_qH0ph0
-<<<<<<< .merge_file_75kHLM
 1. Completare moduli core (Xot, User, Fixcity)
 2. Implementare API v1 per Fixcity
-=======
-<<<<<<< .merge_file_OSi79A
-=======
->>>>>>> .merge_file_XIYzd3
->>>>>>> .merge_file_qH0ph0
 1. Completare moduli core (Xot, User, App)
 2. Implementare API v1 per App
->>>>>>> .merge_file_m0ZOXf
 3. Ottimizzare mobile interface
 4. Raggiungere 100% AGID compliance per Sixteen
 

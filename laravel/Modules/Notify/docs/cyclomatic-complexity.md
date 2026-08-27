@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_Fd07t8
-=======
 ---
 title: "Cyclomatic Complexity Report - Module: Notify"
 module: notify
@@ -9,7 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
->>>>>>> .merge_file_493XDg
 # Cyclomatic Complexity Report - Module: Notify
 
 **Analyzer:** Super Mucca 🐮

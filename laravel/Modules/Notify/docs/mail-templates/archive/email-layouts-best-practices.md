@@ -18,28 +18,12 @@ related:
   - "./implementation-notes.md"
 ---
 
-<<<<<<< .merge_file_Y9zoux
-<<<<<<< .merge_file_mCZ9Mh
-=======
-<<<<<<< .merge_file_thaHKI
->>>>>>> .merge_file_FVePAY
 # Email Layouts Best Practices 
 
 Questa documentazione descrive le best practices da seguire per i layout email quando si utilizza `spatie/laravel-database-mail-templates` nel modulo Notify di SaluteOra.
-=======
-<<<<<<< .merge_file_Y9zoux
-=======
-<<<<<<< .merge_file_mCZ9Mh
-# Email Layouts Best Practices 
-
-Questa documentazione descrive le best practices da seguire per i layout email quando si utilizza `spatie/laravel-database-mail-templates` nel modulo Notify di SaluteOra.
-=======
->>>>>>> .merge_file_iraBIg
->>>>>>> .merge_file_FVePAY
 # Email Layouts Best Practices
 
 Questa documentazione descrive le best practices da seguire per i layout email quando si utilizza `spatie/laravel-database-mail-templates` nel modulo Notify di <nome progetto>.
->>>>>>> .merge_file_5441oC
 
 ## Indice
 
@@ -54,21 +38,8 @@ Questa documentazione descrive le best practices da seguire per i layout email q
 
 ## Introduzione
 
-<<<<<<< .merge_file_Y9zoux
-<<<<<<< .merge_file_mCZ9Mh
 SaluteOra utilizza `spatie/laravel-database-mail-templates` per memorizzare e gestire i template email nel database. Questo approccio separa nettamente:
-=======
-=======
-<<<<<<< .merge_file_thaHKI
-SaluteOra utilizza `spatie/laravel-database-mail-templates` per memorizzare e gestire i template email nel database. Questo approccio separa nettamente:
-=======
-<<<<<<< .merge_file_mCZ9Mh
-SaluteOra utilizza `spatie/laravel-database-mail-templates` per memorizzare e gestire i template email nel database. Questo approccio separa nettamente:
-=======
->>>>>>> .merge_file_iraBIg
->>>>>>> .merge_file_FVePAY
 <nome progetto> utilizza `spatie/laravel-database-mail-templates` per memorizzare e gestire i template email nel database. Questo approccio separa nettamente:
->>>>>>> .merge_file_5441oC
 
 1. **Layout HTML base**: Struttura generale dell'email (`resources/mail-layouts/*.html`)
 2. **Contenuto dei template**: Contenuto specifico memorizzato nel database (tabella `mail_templates`)

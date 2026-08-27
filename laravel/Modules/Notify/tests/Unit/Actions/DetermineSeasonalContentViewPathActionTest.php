@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Actions;
-<<<<<<< .merge_file_uRjp40
 use Modules\Notify\Tests\TestCase;
 use function Safe\file_get_contents;
 use Modules\Notify\Actions\DetermineSeasonalContentViewPathAction;
@@ -16,21 +15,6 @@ uses(\Modules\Notify\Tests\TestCase::class);
 
 describe('DetermineSeasonalContentViewPathAction', function () {
         it('can be instantiated', function () {
-=======
-
-use Modules\Notify\Actions\DetermineSeasonalContentViewPathAction;
-use Modules\Notify\Tests\TestCase;
-use Modules\Xot\Tests\XotBasePest;
-use PHPUnit\Framework\Assert;
-use Spatie\QueueableAction\QueueableAction;
-
-use function Safe\class_uses;
-
-uses(TestCase::class)->group('no-notify-db');
-
-describe('DetermineSeasonalContentViewPathAction', function () {
-    it('can be instantiated', function () {
->>>>>>> .merge_file_6oQpXE
         Assert::assertTrue(class_exists(DetermineSeasonalContentViewPathAction::class));
     });
 
@@ -52,11 +36,7 @@ describe('DetermineSeasonalContentViewPathAction', function () {
         $method = $reflection->getMethod('execute');
         $returnType = $method->getReturnType();
 
-<<<<<<< .merge_file_uRjp40
-        \assertReflectionTypeName($returnType, 'string');
-=======
         XotBasePest::assertReflectionTypeName($returnType, 'string');
->>>>>>> .merge_file_6oQpXE
     });
 
     it('has private determineViewFileName method', function () {
@@ -82,11 +62,7 @@ describe('DetermineSeasonalContentViewPathAction', function () {
 
     it('uses strict types', function () {
         $reflection = new \ReflectionClass(DetermineSeasonalContentViewPathAction::class);
-<<<<<<< .merge_file_uRjp40
-        $content = \notifyReflectionSource($reflection);
-=======
         $content = TestCase::notifyReflectionSource($reflection);
->>>>>>> .merge_file_6oQpXE
         Assert::assertStringContainsString('declare(strict_types=1)', $content);
     });
 
@@ -97,11 +73,7 @@ describe('DetermineSeasonalContentViewPathAction', function () {
     });
 
     it('has required imports', function () {
-<<<<<<< .merge_file_uRjp40
-        $content = \notifyReflectionSource(new \ReflectionClass(DetermineSeasonalContentViewPathAction::class));
-=======
         $content = TestCase::notifyReflectionSource(new \ReflectionClass(DetermineSeasonalContentViewPathAction::class));
->>>>>>> .merge_file_6oQpXE
 
         Assert::assertStringContainsString('use Carbon\Carbon', $content);
         Assert::assertStringContainsString('use Spatie\QueueableAction\QueueableAction', $content);

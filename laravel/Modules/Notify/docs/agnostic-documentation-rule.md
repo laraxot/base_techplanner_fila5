@@ -57,35 +57,19 @@ Replace specific names with placeholders:
 | Instead Of | Use |
 |------------|-----|
 | `FixCity` | `[PROJECT_NAME]` or `[Platform Name]` |
-<<<<<<< .merge_file_kqePFq
 | `fixcity.local` | `[DOMAIN]` or `your-project.local` |
 | `fixcity::` | `module_name::` or `your_module::` |
-=======
-<<<<<<< .merge_file_czUFvS
-| `fixcity.local` | `[DOMAIN]` or `your-project.local` |
-| `fixcity::` | `module_name::` or `your_module::` |
-=======
->>>>>>> .merge_file_gLihTl
 | `ptv.local` | `[DOMAIN]` or `your-project.local` |
 | `ptv::` | `module_name::` or `your_module::` |
->>>>>>> .merge_file_KsjwHB
 | `laravel/Modules/Fixcity` | `laravel/Modules/[ModuleName]` |
 
 ### 3. File Naming
 
 **❌ WRONG**:
-<<<<<<< .merge_file_kqePFq
 - `fixcity-pages-content-blocks.md`
 - `fixcity-integration.md`
-=======
-<<<<<<< .merge_file_czUFvS
-- `fixcity-pages-content-blocks.md`
-- `fixcity-integration.md`
-=======
->>>>>>> .merge_file_gLihTl
 - `ptv-pages-content-blocks.md`
 - `ptv-integration.md`
->>>>>>> .merge_file_KsjwHB
 - `project-name-setup.md`
 
 **✅ CORRECT**:
@@ -98,18 +82,10 @@ Replace specific names with placeholders:
 **❌ WRONG**:
 ```php
 namespace Modules\Fixcity\Models;
-<<<<<<< .merge_file_kqePFq
 route('fixcity.tickets.index')
 config('fixcity.settings')
-=======
-<<<<<<< .merge_file_czUFvS
-route('fixcity.tickets.index')
-config('fixcity.settings')
-=======
->>>>>>> .merge_file_gLihTl
 route('ptv.tickets.index')
 config('ptv.settings')
->>>>>>> .merge_file_KsjwHB
 ```
 
 **✅ CORRECT**:
@@ -125,15 +101,8 @@ When linking to other docs, use **relative paths** without project names:
 
 **❌ WRONG**:
 ```markdown
-<<<<<<< .merge_file_kqePFq
 - [FixCity Integration](../../fixcity/docs/roadmap.md)
-=======
-<<<<<<< .merge_file_czUFvS
-- [FixCity Integration](../../fixcity/docs/roadmap.md)
-=======
->>>>>>> .merge_file_gLihTl
 - [FixCity Integration](../../ptv/docs/roadmap.md)
->>>>>>> .merge_file_KsjwHB
 - [See Fixcity Module](../../../Modules/Fixcity/docs/)
 ```
 

@@ -1,14 +1,7 @@
 # Reusable Components And Indexes
 
-<<<<<<< .merge_file_Ajg6M2
 > Indice: [./00-INDEX.md](./00-INDEX.md)
-=======
-<<<<<<< .merge_file_ZruegN
-> Indice: [./00-INDEX.md](./00-INDEX.md)
-=======
->>>>>>> .merge_file_aG4XBY
 > Indice: [./00-index.md](./00-index.md)
->>>>>>> .merge_file_fdWh6G
 > Policy correlata: [../policies/filament-widget-tables-policy.md](../policies/filament-widget-tables-policy.md)
 
 ## Visione
@@ -20,15 +13,8 @@ Ogni fix o nuova feature deve preferire componenti riusabili, documentazione can
 - prima estrarre il pattern riusabile, poi applicarlo alla pagina specifica
 - ogni cartella documentale significativa deve avere `00-INDEX.md`
 - ogni documento deve linkare il proprio `00-INDEX.md` con percorso relativo
-<<<<<<< .merge_file_Ajg6M2
 - modulo e tema aggiornano i rispettivi `docs/00-INDEX.md` quando si tocca il loro perimetro
-=======
-<<<<<<< .merge_file_ZruegN
-- modulo e tema aggiornano i rispettivi `docs/00-INDEX.md` quando si tocca il loro perimetro
-=======
->>>>>>> .merge_file_aG4XBY
 - modulo e tema aggiornano i rispettivi `docs/00-index.md` quando si tocca il loro perimetro
->>>>>>> .merge_file_fdWh6G
 - `AGENTS.md`, `CLAUDE.md`, `QWEN.md` devono puntare a documenti canonici, non duplicarne il contenuto
 
 ## Anti pattern

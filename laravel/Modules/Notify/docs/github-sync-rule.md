@@ -57,15 +57,8 @@ related:
 
 ```bash
 # After updating .github/workflows/
-<<<<<<< .merge_file_vnRSTW
 cd /var/www/_bases/base_fixcity_fila5
-=======
-<<<<<<< .merge_file_Gbpbw7
-cd /var/www/_bases/base_fixcity_fila5
-=======
->>>>>>> .merge_file_deHQXw
 cd /var/www/_bases/base_ptv_fila5
->>>>>>> .merge_file_3CB2hd
 
 # Create directory if needed
 mkdir -p bashscripts/ai/.github/workflows

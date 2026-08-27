@@ -30,15 +30,8 @@ related:
 ### 1. Routing Multilingual
 - [ ] ✅ URLs with language prefix (`/it/`, `/en/`)
 - [ ] ✅ Links use `url(app()->getLocale().'/path')`
-<<<<<<< .merge_file_jO4hBs
 - [ ] ✅ NO hardcoded links (`/predicts`, `/register`)
-=======
-<<<<<<< .merge_file_VhzH8m
-- [ ] ✅ NO hardcoded links (`/predicts`, `/register`)
-=======
->>>>>>> .merge_file_V5WAYy
 - [ ] ✅ NO hardcoded links (`/forecasts`, `/register`)
->>>>>>> .merge_file_pkRMEP
 
 ### 2. Filament Forms & Tables
 - [ ] ✅ Forms use Filament Form Widget (NOT custom blade)
@@ -84,28 +77,14 @@ related:
 | **Feature Pages** | 10 | ⚠️ Audit |
 | **Legacy/Test** | 8 | ❌ Remove |
 
-<<<<<<< .merge_file_jO4hBs
 ### Predict Components (50+)
-=======
-<<<<<<< .merge_file_VhzH8m
-### Predict Components (50+)
-=======
->>>>>>> .merge_file_V5WAYy
 ### Forecast Components (50+)
->>>>>>> .merge_file_pkRMEP
 
 | Category | Count | Status |
 |----------|-------|--------|
 | **Home Blocks** | 10 | ⚠️ Audit |
-<<<<<<< .merge_file_jO4hBs
 | **Predict Components** | 15 | ⚠️ Audit |
-=======
-<<<<<<< .merge_file_VhzH8m
-| **Predict Components** | 15 | ⚠️ Audit |
-=======
->>>>>>> .merge_file_V5WAYy
 | **Forecast Components** | 15 | ⚠️ Audit |
->>>>>>> .merge_file_pkRMEP
 | **Article List** | 20+ | ⚠️ Audit |
 | **Shared Components** | 10+ | ⚠️ Audit |
 
@@ -141,9 +120,6 @@ related:
 **Last Updated**: 2026-03-20  
 **Status**: ✅ Mandatory  
 **Enforcement**: Code Review + Pre-commit Hook
-<<<<<<< .merge_file_VhzH8m
-=======
-
 ---
 
 <!-- Merged from 05-FRONT-OFFICE-AUDIT.md, which collided with this file on case-insensitive filesystems. -->
@@ -247,4 +223,3 @@ related:
 **Last Updated**: 2026-03-20  
 **Status**: ✅ Mandatory  
 **Enforcement**: Code Review + Pre-commit Hook
->>>>>>> .merge_file_pkRMEP

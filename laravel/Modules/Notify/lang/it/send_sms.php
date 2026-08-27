@@ -13,7 +13,6 @@ return [
         'sort' => 15,
     ],
     'fields' => [
-<<<<<<< .merge_file_4uXTl8
         'driver' => [
             'description' => 'Driver SMS',
             'helper_text' => 'Seleziona il provider per l\'invio SMS',
@@ -56,25 +55,13 @@ return [
             'label' => 'template_slug',
             'tooltip' => '',
         ],
-=======
-        'driver' => ['description' => 'Driver SMS', 'helper_text' => 'Seleziona il provider per l\'invio SMS', 'placeholder' => 'Seleziona un driver', 'label' => 'Driver', 'tooltip' => ''],
-        'message' => ['description' => 'Contenuto del messaggio', 'helper_text' => 'Testo del messaggio da inviare', 'placeholder' => 'Scrivi il messaggio', 'label' => 'Messaggio', 'tooltip' => ''],
-        'phone' => ['description' => 'Numero di telefono', 'helper_text' => 'Numero del destinatario', 'placeholder' => 'Inserisci il numero', 'label' => 'Numero telefono', 'tooltip' => ''],
-        'gateway' => ['description' => 'Gateway SMS', 'helper_text' => 'Gateway utilizzato per l\'invio', 'placeholder' => 'Gateway SMS', 'label' => 'Gateway', 'tooltip' => ''],
-        'to' => ['description' => 'to', 'helper_text' => 'to', 'placeholder' => 'to', 'label' => 'to', 'tooltip' => ''],
-        'template_slug' => ['description' => 'template_slug', 'helper_text' => 'template_slug', 'placeholder' => 'template_slug', 'label' => 'template_slug', 'tooltip' => ''],
-        'recipient' => ['label' => 'recipient', 'placeholder' => 'recipient', 'helper_text' => 'recipient', 'description' => 'recipient'],
->>>>>>> .merge_file_wCHOTk
     ],
     'actions' => [
         'send' => ['label' => 'Invia SMS', 'tooltip' => 'Invia un messaggio SMS al destinatario', 'success_message' => 'SMS inviato con successo', 'error_message' => 'Errore nell\'invio dell\'SMS', 'icon' => 'send'],
         'test' => ['label' => 'Test connessione', 'tooltip' => 'Verifica la connessione con il provider', 'success_message' => 'Connessione verificata con successo', 'error_message' => 'Errore nella verifica della connessione'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
     ],
-<<<<<<< .merge_file_4uXTl8
-=======
     'messages' => ['success' => 'SMS inviato con successo', 'error' => 'Si è verificato un errore durante l\'invio dell\'SMS', 'confirmation' => 'Sei sicuro di voler inviare questo SMS?'],
->>>>>>> .merge_file_wCHOTk
     'label' => 'Send Sms',
     'plural_label' => 'Send Sms (Plurale)',
 ];

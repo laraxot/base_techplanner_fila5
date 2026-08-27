@@ -5,15 +5,8 @@ description: Ensure every module and theme includes a `docs/wiki/` directory and
 
 # LLM‑Wiki Rule
 
-<<<<<<< .merge_file_yP6GGb
 **Rule:** All modules and themes must contain a `docs/wiki/` directory (with compiled wiki pages) and the corresponding `llm‑wiki` scaffolding (templates, AGENTS.md, etc.).
-=======
-<<<<<<< .merge_file_pKwSXk
-**Rule:** All modules and themes must contain a `docs/wiki/` directory (with compiled wiki pages) and the corresponding `llm‑wiki` scaffolding (templates, AGENTS.md, etc.).
-=======
->>>>>>> .merge_file_cHoLFg
 **Rule:** All modules and themes must contain a `docs/wiki/` directory (with compiled wiki pages) and the corresponding `llm‑wiki` scaffolding (templates, agents.md, etc.).
->>>>>>> .merge_file_wHjF19
 
 **Why:** The LLM‑wiki is the unified documentation source; missing folders break the wiki build and QMD indexing.
 

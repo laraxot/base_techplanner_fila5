@@ -15,15 +15,8 @@ Questa documentazione è stata divisa in moduli per una gestione più efficiente
 ---
 **See also:**
 - [CLAUDE.md](./CLAUDE.md)
-<<<<<<< .merge_file_niWRz0
 - [AGENTS.md](./AGENTS.md)
-=======
-<<<<<<< .merge_file_O5ELr5
-- [AGENTS.md](./AGENTS.md)
-=======
->>>>>>> .merge_file_zy3ZGW
 - [agents.md](./agents.md)
->>>>>>> .merge_file_ctDZJZ
 - [QWEN.md](./QWEN.md)
 
 *Ultimo aggiornamento: Aprile 2026*

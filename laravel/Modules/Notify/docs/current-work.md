@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_G7SSXH
-=======
 ---
 title: "Stato Attuale del Lavoro - 12 Maggio 2025"
 module: notify
@@ -9,7 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
->>>>>>> .merge_file_mRjWrW
 # Stato Attuale del Lavoro - 12 Maggio 2025
 
 ## Problematiche Identificate

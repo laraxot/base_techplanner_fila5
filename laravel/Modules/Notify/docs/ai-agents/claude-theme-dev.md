@@ -66,15 +66,8 @@ Folio (routing)
 
 ```
 Themes/*/Http/Livewire/  ← FORBIDDEN!
-<<<<<<< .merge_file_JMbJ6X
 PredictController@index   ← FORBIDDEN!
-=======
-<<<<<<< .merge_file_HWSEuF
-PredictController@index   ← FORBIDDEN!
-=======
->>>>>>> .merge_file_gjoPA4
 ForecastController@index   ← FORBIDDEN!
->>>>>>> .merge_file_Acwnnv
 ```
 
 ---

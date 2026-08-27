@@ -1,28 +1,10 @@
 ---
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 77e0353 (.)
-=======
->>>>>>> fc52fe0 (.)
-=======
->>>>>>> c101b34 (.)
-=======
->>>>>>> d0f51b6 (.)
 module: theme
 topic: source
 canonical: ../../../../../Themes/docs/shared-components/source.md
 ---
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/source.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 title: "Source Title"
 type: source
 sources: ["raw/articles/source-filename.md"]
@@ -70,12 +52,3 @@ _Any additional notes, context, or observations._
 - [ ] Create concept page for: _concept name_
 - [ ] Cross-reference with: _existing page_
 - [ ] Verify claim: _specific claim that needs verification_
->>>>>>> 7ec200b (.)
-=======
->>>>>>> 77e0353 (.)
-=======
->>>>>>> fc52fe0 (.)
-=======
->>>>>>> c101b34 (.)
-=======
->>>>>>> d0f51b6 (.)

@@ -20,9 +20,6 @@ Tutte le modifiche significative al modulo Notify saranno documentate in questo 
 
 - Namespace modulo: `Modules\Notify\{Subdirectory}`
 - NO: `Modules\Notify\App\{Subdirectory}`
-<<<<<<< .merge_file_MfFK6n
-- Cartella `app/` è organizzativa, non parte del namespace
-=======
 - Cartella `app/` è organizzativa, non parte del namespace
 - Cartella `app/` è organizzativa, non parte del namespace
 
@@ -53,4 +50,3 @@ Tutte le modifiche significative al modulo Notify saranno documentate in questo 
 - Namespace modulo: `Modules\Notify\{Subdirectory}`
 - NO: `Modules\Notify\App\{Subdirectory}`
 - Cartella `app/` è organizzativa, non parte del namespace
->>>>>>> .merge_file_E6FN3I

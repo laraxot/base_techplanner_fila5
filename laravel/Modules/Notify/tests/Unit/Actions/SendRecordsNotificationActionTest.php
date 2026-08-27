@@ -18,11 +18,7 @@ use Modules\Notify\Tests\TestCase;
 use Modules\Xot\Actions\Cast\SafeEloquentCastAction;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< .merge_file_2mdbTW
-uses(\Modules\Notify\Tests\TestCase::class);
-=======
 uses(TestCase::class)->group('no-notify-db');
->>>>>>> .merge_file_bvKRBI
 
 /**
  * @param  array<string, mixed>  $attributes

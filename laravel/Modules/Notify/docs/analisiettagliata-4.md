@@ -683,8 +683,4 @@ class TemplateTestPage extends Page
         $this->notify('success', 'Email inviata con successo');
     }
 } 
-<<<<<<< .merge_file_bvqQ3C
-=======
-
 ```
->>>>>>> .merge_file_3auqIf

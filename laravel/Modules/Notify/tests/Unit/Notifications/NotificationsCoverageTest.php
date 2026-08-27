@@ -23,16 +23,11 @@ use Modules\Notify\Notifications\TicketStatusChangedNotification;
 use Modules\Notify\Notifications\WhatsAppNotification;
 use Modules\Notify\Tests\TestCase;
 use Modules\User\Models\User;
-<<<<<<< .merge_file_WtwhqA
-=======
 use PHPUnit\Framework\Assert;
-<<<<<<< .merge_file_a31L3F
 
 use function Safe\class_uses;
 
 uses(\Modules\Notify\Tests\TestCase::class);
-=======
->>>>>>> .merge_file_XF3lyY
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
@@ -52,7 +47,6 @@ function notificationsCoverageTicketModel(int $id = 10): Model
 
     return $ticket;
 }
->>>>>>> .merge_file_jsH3yC
 
 function makeThemeNotifiableDummy(): CanThemeNotificationContract
 {
@@ -112,14 +106,7 @@ function makeGenericNotifiableDummy(): Model
 }
 
 test('email data notification exposes mail channel and array payload', function () {
-<<<<<<< .merge_file_WtwhqA
-    /** @var TestCase $this */
-=======
-<<<<<<< .merge_file_a31L3F
         /** @var \Modules\Notify\Tests\TestCase $this */
-=======
->>>>>>> .merge_file_jsH3yC
->>>>>>> .merge_file_XF3lyY
     $emailData = EmailData::from([
         'recipient' => 'recipient@example.test',
         'from' => 'Sender Name',
@@ -138,15 +125,7 @@ test('email data notification exposes mail channel and array payload', function 
         'from' => 'Sender Name',
         'from_email' => 'from@example.test',
         'body' => 'Body',
-<<<<<<< .merge_file_WtwhqA
     ], XotBasePest::assertArray($notification->toArray(new \stdClass())));
-=======
-<<<<<<< .merge_file_a31L3F
-    ], \assertNotifyArray($notification->toArray(new \stdClass)));
-=======
-    ], XotBasePest::assertArray($notification->toArray(new \stdClass)));
->>>>>>> .merge_file_jsH3yC
->>>>>>> .merge_file_XF3lyY
 });
 
 test('sms notification builds sms payload and provider config', function () {
@@ -168,15 +147,7 @@ test('sms notification builds sms payload and provider config', function () {
 test('telegram notification uses telegram channel class and returns message', function () {
     $notification = new TelegramNotification('Hello telegram');
 
-<<<<<<< .merge_file_WtwhqA
     $channels = XotBasePest::assertArray($notification->via(new \stdClass()));
-=======
-<<<<<<< .merge_file_a31L3F
-    $channels = \assertNotifyArray($notification->via(new \stdClass));
-=======
-    $channels = XotBasePest::assertArray($notification->via(new \stdClass));
->>>>>>> .merge_file_jsH3yC
->>>>>>> .merge_file_XF3lyY
     Assert::assertCount(1, $channels);
     Assert::assertNotEmpty($channels[0] ?? null);
     Assert::assertNotEmpty($notification->toTelegram(new \stdClass()));
@@ -271,11 +242,7 @@ test('ticket notifications expose channels and array payload', function () {
     $user->name = 'Assigner User';
 
     $assigned = new TicketAssignedNotification((object) ['id' => 10], $user);
-<<<<<<< .merge_file_a31L3F
-    $changed = new TicketStatusChangedNotification((object) ['id' => 10], 'open', 'closed');
-=======
     $changed = new TicketStatusChangedNotification(notificationsCoverageTicketModel(), 'open', 'closed');
->>>>>>> .merge_file_jsH3yC
 
     Assert::assertSame(['mail', 'database'], $assigned->via(new \stdClass()));
     Assert::assertArrayHasKey('assigned_by', $assigned->toArray(new \stdClass()));

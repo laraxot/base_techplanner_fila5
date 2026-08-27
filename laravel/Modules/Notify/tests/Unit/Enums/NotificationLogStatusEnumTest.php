@@ -8,11 +8,7 @@ use Modules\Notify\Enums\NotificationLogStatusEnum;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< .merge_file_9VGat4
-uses(\Modules\Notify\Tests\TestCase::class);
-=======
 uses(TestCase::class)->group('no-notify-db');
->>>>>>> .merge_file_mHhSjD
 
 test('it exposes all expected statuses', function () {
     $values = array_map(static fn (NotificationLogStatusEnum $case): string => $case->value, NotificationLogStatusEnum::cases());
@@ -29,9 +25,6 @@ test('it exposes all expected statuses', function () {
 
 test('it returns expected label color and icon', function () {
     foreach (NotificationLogStatusEnum::cases() as $case) {
-<<<<<<< .merge_file_9VGat4
-                            }
-=======
         Assert::assertIsString($case->value);
         // EnumTrait: label/color/icon possono essere null se lang manca in test.
         $case->getLabel();
@@ -39,7 +32,6 @@ test('it returns expected label color and icon', function () {
         $case->getIcon();
     }
     Assert::assertCount(6, NotificationLogStatusEnum::cases());
->>>>>>> .merge_file_mHhSjD
 });
 
 test('it reports completed pending and failed states correctly', function () {

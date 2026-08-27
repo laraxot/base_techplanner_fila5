@@ -15,18 +15,10 @@ La classe `SpatieEmail` ora utilizza l'API moderna di Laravel per gli allegati t
 $attachments = [
     [
         'path' => '/var/www/html/<nome progetto>/public_html/images/avatars/default.svg',
-<<<<<<< .merge_file_4sEYpl
 'path' => '/var/www/html/Quaeris/public_html/images/avatars/default.svg',
         'path' => '/var/www/html/_bases/base_techplanner_fila5_mono/public_html/images/avatars/default.svg',
-=======
-<<<<<<< .merge_file_NqaEdL
-'path' => '/var/www/html/Quaeris/public_html/images/avatars/default.svg',
-        'path' => '/var/www/html/_bases/base_techplanner_fila5_mono/public_html/images/avatars/default.svg',
-=======
->>>>>>> .merge_file_6LLCW0
 'path' => '/var/www/_bases/base_ptvx_fila5/public_html/images/avatars/default.svg',
         'path' => '/var/www/html/_bases/base_ptvx_fila5/public_html/images/avatars/default.svg',
->>>>>>> .merge_file_DnRoQo
         'as' => 'logo.svg',
         'mime' => 'image/svg+xml',
     ],
@@ -216,12 +208,5 @@ public function test_can_send_email_with_attachments()
 
 - [ATTACHMENTS_USAGE.md](./attachments_usage.md)
 - [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/email_layouts_best_practices.md)
-<<<<<<< .merge_file_4sEYpl
 - [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/spatie_mail_templates_structure.md)
-=======
-<<<<<<< .merge_file_NqaEdL
-- [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/spatie_mail_templates_structure.md)
-=======
->>>>>>> .merge_file_6LLCW0
 - [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/spatie-mail-templates-structure.md)
->>>>>>> .merge_file_DnRoQo

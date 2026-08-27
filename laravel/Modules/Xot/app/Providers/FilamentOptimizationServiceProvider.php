@@ -4,18 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Providers;
 
-<<<<<<< .merge_file_4MQ6xJ
 use Illuminate\Database\Events\QueryExecuted;
-=======
->>>>>>> .merge_file_6fCzy2
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\ServiceProvider;
 use Modules\Xot\Http\Middleware\FilamentMemoryMonitorMiddleware;
-<<<<<<< .merge_file_4MQ6xJ
 use Nwidart\Modules\Facades\Module;
-=======
->>>>>>> .merge_file_6fCzy2
 use PDO;
 
 use function Safe\preg_match;
@@ -197,12 +191,9 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
                 $modules = Module::all();
 
                 foreach ($modules as $module) {
-<<<<<<< .merge_file_4MQ6xJ
                     if (! $module instanceof \Nwidart\Modules\Module) {
                         continue;
                     }
-=======
->>>>>>> .merge_file_6fCzy2
                     $configPath = $module->getPath().'/Config/config.php';
                     if (file_exists($configPath)) {
                         $configs[$module->getName()] = require $configPath;

@@ -4,15 +4,8 @@ type: concept
 tags: [quick, start]
 created: 2026-07-14
 updated: 2026-07-14
-<<<<<<< .merge_file_FSHOma
 qmd: "quick-start 🚀 fixcity - guida rapida sviluppatori"
-=======
-<<<<<<< .merge_file_Uw0413
-qmd: "quick-start 🚀 fixcity - guida rapida sviluppatori"
-=======
->>>>>>> .merge_file_Hx04dm
 qmd: "quick-start 🚀 ptv - guida rapida sviluppatori"
->>>>>>> .merge_file_MOXhGx
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -57,18 +50,10 @@ related:
 
 ### 1. Clone Repository
 ```bash
-<<<<<<< .merge_file_FSHOma
 git clone https://github.com/laraxot/fixcity.git
 cd fixcity/laravel
-=======
-<<<<<<< .merge_file_Uw0413
-git clone https://github.com/laraxot/fixcity.git
-cd fixcity/laravel
-=======
->>>>>>> .merge_file_Hx04dm
 git clone https://github.com/laraxot/ptv.git
 cd ptv/laravel
->>>>>>> .merge_file_MOXhGx
 ```
 
 ### 2. Installazione Dipendenze
@@ -93,15 +78,8 @@ php artisan key:generate
 DB_CONNECTION=pgsql
 DB_HOST=127.0.0.1
 DB_PORT=5432
-<<<<<<< .merge_file_FSHOma
 DB_DATABASE=fixcity
-=======
-<<<<<<< .merge_file_Uw0413
-DB_DATABASE=fixcity
-=======
->>>>>>> .merge_file_Hx04dm
 DB_DATABASE=ptv
->>>>>>> .merge_file_MOXhGx
 DB_USERNAME=your_user
 DB_PASSWORD=your_password
 ```
@@ -272,15 +250,8 @@ return [
 ## 📁 STRUTTURA PROGETTO
 
 ```
-<<<<<<< .merge_file_FSHOma
 base_fixcity_fila5_mono/
-=======
-<<<<<<< .merge_file_Uw0413
-base_fixcity_fila5_mono/
-=======
->>>>>>> .merge_file_Hx04dm
 base_ptv_fila5_mono/
->>>>>>> .merge_file_MOXhGx
 ├── laravel/                    # Applicazione Laravel
 │   ├── Modules/               # Moduli Nwidart
 │   │   ├── Fixcity/          # Core business logic
@@ -568,27 +539,12 @@ php artisan optimize:clear
 ## 📞 SUPPORTO
 
 ### Team
-<<<<<<< .merge_file_FSHOma
-=======
-<<<<<<< .merge_file_Uw0413
->>>>>>> .merge_file_Hx04dm
-- **Slack**: #fixcity-dev
-- **Email**: dev@fixcity.it
-
-### Documentazione
-- **Issues**: [GitHub Issues](https://github.com/laraxot/fixcity/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/laraxot/fixcity/discussions)
-<<<<<<< .merge_file_FSHOma
-=======
-=======
->>>>>>> .merge_file_Hx04dm
 - **Slack**: #ptv-dev
 - **Email**: dev@ptv.it
 
 ### Documentazione
 - **Issues**: [GitHub Issues](https://github.com/laraxot/ptv/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/laraxot/ptv/discussions)
->>>>>>> .merge_file_MOXhGx
 
 ---
 
@@ -597,9 +553,6 @@ php artisan optimize:clear
 
 *Per contribuire al progetto, leggi attentamente questa guida e le regole Laraxot. In caso di dubbi, consulta la
 documentazione del modulo specifico o chiedi supporto al team.*
-<<<<<<< .merge_file_Uw0413
-=======
-
 ---
 
 <!-- Merged from QUICK-START.md, which collided with this file on case-insensitive filesystems. -->
@@ -634,4 +587,3 @@ class CustomNotification extends Notification {
     public function toMail() { return (new Mailable())->view(...); }
 }
 ```
->>>>>>> .merge_file_MOXhGx

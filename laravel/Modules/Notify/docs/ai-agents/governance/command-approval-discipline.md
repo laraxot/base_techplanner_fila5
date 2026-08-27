@@ -1,14 +1,7 @@
 # Command Approval Discipline
 
-<<<<<<< .merge_file_tnyVkK
 > Indice: [./00-INDEX.md](./00-INDEX.md)
-=======
-<<<<<<< .merge_file_9u6o9g
-> Indice: [./00-INDEX.md](./00-INDEX.md)
-=======
->>>>>>> .merge_file_Kz6HFI
 > Indice: [./00-index.md](./00-index.md)
->>>>>>> .merge_file_bwQwPD
 > Governance correlata: [./reusable-components-and-indexes.md](./reusable-components-and-indexes.md)
 
 ## Regola operativa

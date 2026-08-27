@@ -135,11 +135,7 @@ class SendSpatieEmailPage extends XotBasePage
             ->send();
     }
 
-<<<<<<< .merge_file_P6rJQs
     /** @return array<string, \Filament\Actions\Action> */
-=======
-    /** @return array<string, Action> */
->>>>>>> .merge_file_Cc8lOn
     protected function getEmailFormActions(): array
     {
         return [

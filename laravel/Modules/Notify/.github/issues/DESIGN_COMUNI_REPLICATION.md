@@ -11,15 +11,8 @@ projects: ["Design Comuni Replication"]
 
 **Riferimenti:**
 - Source: https://italia.github.io/design-comuni-pagine-statiche/
-<<<<<<< .merge_file_UJE0tf
 - Target: http://fixcity.local/it/tests/*
-=======
-<<<<<<< .merge_file_DGRsgS
-- Target: http://fixcity.local/it/tests/*
-=======
->>>>>>> .merge_file_J7UzaI
 - Target: http://ptv.local/it/tests/*
->>>>>>> .merge_file_eDRNQm
 - Master Plan: `.planning/DESIGN_COMUNI_MASTER_PLAN.md`
 
 ---
@@ -82,15 +75,8 @@ projects: ["Design Comuni Replication"]
 
 ## ✅ Definition of Done (Per Pagina)
 
-<<<<<<< .merge_file_UJE0tf
 - [ ] JSON content block creato in `laravel/config/local/fixcity/database/content/pages/`
-=======
-<<<<<<< .merge_file_DGRsgS
-- [ ] JSON content block creato in `laravel/config/local/fixcity/database/content/pages/`
-=======
->>>>>>> .merge_file_J7UzaI
 - [ ] JSON content block creato in `laravel/config/local/ptv/database/content/pages/`
->>>>>>> .merge_file_eDRNQm
 - [ ] HTML dentro `<body>` (esclusi scripts) IDENTICO al source
 - [ ] Screenshot comparison salvato in docs
 - [ ] Analisi differenze documentata

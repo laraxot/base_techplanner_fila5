@@ -129,18 +129,10 @@ Section::make('Riepilogo Segnalazione')
 
 ```php
 // ✅ CORRETTO: usa chiavi traduzione
-<<<<<<< .merge_file_bNHJym
 Section::make(__('fixcity::create_ticket_wizard.sections.summary.label'))
     ->description(__('fixcity::create_ticket_wizard.sections.summary.description'))
-=======
-<<<<<<< .merge_file_8xfJSo
-Section::make(__('fixcity::create_ticket_wizard.sections.summary.label'))
-    ->description(__('fixcity::create_ticket_wizard.sections.summary.description'))
-=======
->>>>>>> .merge_file_oa2bQE
 Section::make(__('ptv::create_ticket_wizard.sections.summary.label'))
     ->description(__('ptv::create_ticket_wizard.sections.summary.description'))
->>>>>>> .merge_file_U9d7mc
 ```
 
 **File traduzione**: `Modules/Fixcity/resources/lang/en/create_ticket_wizard.php`
@@ -186,15 +178,8 @@ return [
 // ✅ CORRETTO: translation key con pluralizzazione
 ->description(fn (Get $get): string =>
     trans_choice(
-<<<<<<< .merge_file_bNHJym
         'fixcity::create_ticket_wizard.sections.images.description',
-=======
-<<<<<<< .merge_file_8xfJSo
-        'fixcity::create_ticket_wizard.sections.images.description',
-=======
->>>>>>> .merge_file_oa2bQE
         'ptv::create_ticket_wizard.sections.images.description',
->>>>>>> .merge_file_U9d7mc
         count($get('images') ?? [])
     )
 )
@@ -220,15 +205,8 @@ return [
 ->limitMessage('E altre :count immagini')
 
 // ✅ CORRETTO
-<<<<<<< .merge_file_bNHJym
 ->limitMessage(__('fixcity::create_ticket_wizard.sections.images.limit_message'))
-=======
-<<<<<<< .merge_file_8xfJSo
-->limitMessage(__('fixcity::create_ticket_wizard.sections.images.limit_message'))
-=======
->>>>>>> .merge_file_oa2bQE
 ->limitMessage(__('ptv::create_ticket_wizard.sections.images.limit_message'))
->>>>>>> .merge_file_U9d7mc
 ```
 
 ---
@@ -242,15 +220,8 @@ return [
 Section::make('Riepilogo Segnalazione')
 
 // ✅ CORRETTO
-<<<<<<< .merge_file_bNHJym
 Section::make(__('fixcity::create_ticket_wizard.sections.summary.label'))
-=======
-<<<<<<< .merge_file_8xfJSo
-Section::make(__('fixcity::create_ticket_wizard.sections.summary.label'))
-=======
->>>>>>> .merge_file_oa2bQE
 Section::make(__('ptv::create_ticket_wizard.sections.summary.label'))
->>>>>>> .merge_file_U9d7mc
 ```
 
 ---
@@ -262,15 +233,8 @@ Section::make(__('ptv::create_ticket_wizard.sections.summary.label'))
 ->description('Verifica i dati prima dell\'invio')
 
 // ✅ CORRETTO
-<<<<<<< .merge_file_bNHJym
 ->description(__('fixcity::create_ticket_wizard.sections.summary.description'))
-=======
-<<<<<<< .merge_file_8xfJSo
-->description(__('fixcity::create_ticket_wizard.sections.summary.description'))
-=======
->>>>>>> .merge_file_oa2bQE
 ->description(__('ptv::create_ticket_wizard.sections.summary.description'))
->>>>>>> .merge_file_U9d7mc
 ```
 
 ---
@@ -294,15 +258,8 @@ Section::make(__('ptv::create_ticket_wizard.sections.summary.label'))
 $this->addError('data.submit', 'Si è verificato un errore')
 
 // ✅ CORRETTO
-<<<<<<< .merge_file_bNHJym
 $this->addError('data.submit', __('fixcity::create_ticket_wizard.notifications.submit_failed.body'))
-=======
-<<<<<<< .merge_file_8xfJSo
-$this->addError('data.submit', __('fixcity::create_ticket_wizard.notifications.submit_failed.body'))
-=======
->>>>>>> .merge_file_oa2bQE
 $this->addError('data.submit', __('ptv::create_ticket_wizard.notifications.submit_failed.body'))
->>>>>>> .merge_file_U9d7mc
 ```
 
 ---
@@ -317,18 +274,10 @@ Notification::make()
 
 // ✅ CORRETTO
 Notification::make()
-<<<<<<< .merge_file_bNHJym
     ->title(__('fixcity::create_ticket_wizard.notifications.success.title'))
     ->body(__('fixcity::create_ticket_wizard.notifications.success.body'))
-=======
-<<<<<<< .merge_file_8xfJSo
-    ->title(__('fixcity::create_ticket_wizard.notifications.success.title'))
-    ->body(__('fixcity::create_ticket_wizard.notifications.success.body'))
-=======
->>>>>>> .merge_file_oa2bQE
     ->title(__('ptv::create_ticket_wizard.notifications.success.title'))
     ->body(__('ptv::create_ticket_wizard.notifications.success.body'))
->>>>>>> .merge_file_U9d7mc
 ```
 
 ---
@@ -340,15 +289,8 @@ Notification::make()
 echo count($items) . ' elementi trovati'
 
 // ✅ CORRETTO
-<<<<<<< .merge_file_bNHJym
 echo trans_choice('fixcity::messages.items_found', count($items))
-=======
-<<<<<<< .merge_file_8xfJSo
-echo trans_choice('fixcity::messages.items_found', count($items))
-=======
->>>>>>> .merge_file_oa2bQE
 echo trans_choice('ptv::messages.items_found', count($items))
->>>>>>> .merge_file_U9d7mc
 ```
 
 ---
@@ -361,18 +303,10 @@ Section::make('Riepilogo Segnalazione')
     ->description('Verify your data')  // MISTO!
 
 // ✅ CORRETTO: tutto via translation keys
-<<<<<<< .merge_file_bNHJym
 Section::make(__('fixcity::sections.summary.label'))
     ->description(__('fixcity::sections.summary.description'))
-=======
-<<<<<<< .merge_file_8xfJSo
-Section::make(__('fixcity::sections.summary.label'))
-    ->description(__('fixcity::sections.summary.description'))
-=======
->>>>>>> .merge_file_oa2bQE
 Section::make(__('ptv::sections.summary.label'))
     ->description(__('ptv::sections.summary.description'))
->>>>>>> .merge_file_U9d7mc
 ```
 
 ---
@@ -399,15 +333,8 @@ Modules/Fixcity/resources/lang/
 
 ```php
 // Aggiungi nuova UI
-<<<<<<< .merge_file_bNHJym
 Section::make(__('fixcity::new_section.label'))
-=======
-<<<<<<< .merge_file_8xfJSo
-Section::make(__('fixcity::new_section.label'))
-=======
->>>>>>> .merge_file_oa2bQE
 Section::make(__('ptv::new_section.label'))
->>>>>>> .merge_file_U9d7mc
 
 // IMMEDIATAMENTE aggiungi a TUTTI i file lang:
 // en/create_ticket_wizard.php → 'new_section' => ['label' => 'New Section']
@@ -465,15 +392,8 @@ grep -rE "description\(['\"][A-ZÀ]" Modules/Fixcity/app/Filament/ --include="*.
 
 Per ogni violazione:
 - Identifica la stringa italiana
-<<<<<<< .merge_file_bNHJym
 - Crea chiave: `fixcity::create_ticket_wizard.sections.xxx.label`
-=======
-<<<<<<< .merge_file_8xfJSo
-- Crea chiave: `fixcity::create_ticket_wizard.sections.xxx.label`
-=======
->>>>>>> .merge_file_oa2bQE
 - Crea chiave: `ptv::create_ticket_wizard.sections.xxx.label`
->>>>>>> .merge_file_U9d7mc
 - Aggiungi a TUTTI i file lang (en, it, fr, de, es)
 
 ---
@@ -486,18 +406,10 @@ Section::make('Riepilogo Segnalazione')
     ->description('Verifica i dati prima dell\'invio')
 
 // DOPO
-<<<<<<< .merge_file_bNHJym
 Section::make(__('fixcity::create_ticket_wizard.sections.summary.label'))
     ->description(__('fixcity::create_ticket_wizard.sections.summary.description'))
-=======
-<<<<<<< .merge_file_8xfJSo
-Section::make(__('fixcity::create_ticket_wizard.sections.summary.label'))
-    ->description(__('fixcity::create_ticket_wizard.sections.summary.description'))
-=======
->>>>>>> .merge_file_oa2bQE
 Section::make(__('ptv::create_ticket_wizard.sections.summary.label'))
     ->description(__('ptv::create_ticket_wizard.sections.summary.description'))
->>>>>>> .merge_file_U9d7mc
 ```
 
 ---

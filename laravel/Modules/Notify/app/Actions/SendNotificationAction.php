@@ -24,10 +24,7 @@ class SendNotificationAction
      * @param  array<string, mixed>  $data
      * @param  array<int, string>  $channels
      * @param  array<string, mixed>  $options
-<<<<<<< .merge_file_myro42
      * @return NotificationModel|null
-=======
->>>>>>> .merge_file_TY2NPp
      *
      * @throws Exception
      */
@@ -145,15 +142,7 @@ class SendNotificationAction
     ): NotificationModel {
         $bodyHtml = $compiled['body_html'];
         $message = $compiled['body_text'] ?? ($bodyHtml !== null ? strip_tags($bodyHtml) : '');
-<<<<<<< .merge_file_wHSOlO
         $notification = new NotificationModel();
-=======
-<<<<<<< .merge_file_myro42
-        $notification = new NotificationModel();
-=======
-        $notification = new NotificationModel;
->>>>>>> .merge_file_TY2NPp
->>>>>>> .merge_file_ookLlb
         $notification->forceFill([
             'type' => is_string($template->type) && $template->type !== '' ? $template->type : 'generic',
             'message' => $message,

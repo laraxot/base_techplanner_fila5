@@ -1,14 +1,7 @@
 # Architecture Principles
 
-<<<<<<< .merge_file_dnfI16
 Key architectural rules for Quaeris Fila5 Mono (Laraxot / Laravel 12 / Filament 5).
-=======
-<<<<<<< .merge_file_02zRqL
-Key architectural rules for Quaeris Fila5 Mono (Laraxot / Laravel 12 / Filament 5).
-=======
->>>>>>> .merge_file_tLnrYj
 Key architectural rules for App Fila5 Mono (Laraxot / Laravel 12 / Filament 5).
->>>>>>> .merge_file_UamBeD
 
 ## 0. Database Configuration (CRITICAL)
 
@@ -82,15 +75,9 @@ FilamentAsset::register([
     Js::make('chart-js-plugins', Vite::asset('resources/js/filament-chart-js-plugins.js', 'assets/chart'))->module(),
 ]);
 
-<<<<<<< .merge_file_02zRqL
-// WRONG: In other modules like Quaeris, User, etc.
-FilamentAsset::register([
-    Js::make('chart-js-plugins', Vite::asset('Resources/assets/js/filament-chart-js-plugins.js', 'assets/quaeris'))->module(),
-=======
 // WRONG: In other modules like App, User, etc.
 FilamentAsset::register([
     Js::make('chart-js-plugins', Vite::asset('Resources/assets/js/filament-chart-js-plugins.js', 'assets/this-project'))->module(),
->>>>>>> .merge_file_UamBeD
 ]);
 ```
 
@@ -144,30 +131,16 @@ Ref: `.claude/docs/spatie-queueable-action.md`
 
 ```php
 // WRONG - Service class FORBIDDEN
-<<<<<<< .merge_file_dnfI16
 namespace Modules\Quaeris\Services;
-=======
-<<<<<<< .merge_file_02zRqL
-namespace Modules\Quaeris\Services;
-=======
->>>>>>> .merge_file_tLnrYj
 namespace Modules\App\Services;
->>>>>>> .merge_file_UamBeD
 class ReportService
 {
     public function generate(SurveyPdf $pdf): void { ... }
 }
 
 // CORRECT - QueueableAction obbligatorio
-<<<<<<< .merge_file_dnfI16
 namespace Modules\Quaeris\Actions;
-=======
-<<<<<<< .merge_file_02zRqL
-namespace Modules\Quaeris\Actions;
-=======
->>>>>>> .merge_file_tLnrYj
 namespace Modules\App\Actions;
->>>>>>> .merge_file_UamBeD
 use Spatie\QueueableAction\QueueableAction;
 
 class GenerateReportAction

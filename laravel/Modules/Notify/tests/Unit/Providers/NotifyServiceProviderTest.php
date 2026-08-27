@@ -9,11 +9,7 @@ use Modules\Notify\Providers\NotifyServiceProvider;
 use Modules\Notify\Tests\TestCase;
 use Modules\Tenant\Actions\Config\ResolveTenantConfigValueAction;
 
-<<<<<<< .merge_file_abiDCK
-uses(\Modules\Notify\Tests\TestCase::class);
-=======
 uses(TestCase::class)->group('no-notify-db');
->>>>>>> .merge_file_qV1WGq
 
 test('notify service provider boot sets fallback recipient when configured', function () {
     app()->instance(ResolveTenantConfigValueAction::class, new class()

@@ -8,11 +8,7 @@ use Modules\Notify\Enums\NotificationTypeEnum;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< .merge_file_JgyM2a
-uses(\Modules\Notify\Tests\TestCase::class);
-=======
 uses(TestCase::class)->group('no-notify-db');
->>>>>>> .merge_file_hnCzK5
 
 it('has correct cases', function (): void {
     Assert::assertCount(3, NotificationTypeEnum::cases());
@@ -41,11 +37,7 @@ it('color returns non empty string', function (): void {
 });
 
 it('each case has unique value', function (): void {
-<<<<<<< .merge_file_JgyM2a
-    $values = array_map(static fn ($case) => $case->value, NotificationTypeEnum::cases());
-=======
     $values = array_map(static fn (NotificationTypeEnum $case): string => $case->value, NotificationTypeEnum::cases());
->>>>>>> .merge_file_hnCzK5
     $uniqueValues = array_unique($values);
 
     Assert::assertCount(count($values), $uniqueValues, 'All enum cases should have unique values');

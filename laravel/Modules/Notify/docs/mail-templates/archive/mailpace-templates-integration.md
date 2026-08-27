@@ -22,21 +22,8 @@ related:
 
 ## Panoramica
 
-<<<<<<< .merge_file_rgYIGl
-<<<<<<< .merge_file_KulNNE
 Questo documento descrive l'integrazione dei template email [mailpace/templates](https://github.com/mailpace/templates) nel modulo Notify di SaluteOra. Questi template offrono un design moderno basato su TailwindCSS con supporto nativo per la modalità scura.
-=======
-=======
-<<<<<<< .merge_file_BUPoh0
-Questo documento descrive l'integrazione dei template email [mailpace/templates](https://github.com/mailpace/templates) nel modulo Notify di SaluteOra. Questi template offrono un design moderno basato su TailwindCSS con supporto nativo per la modalità scura.
-=======
-<<<<<<< .merge_file_KulNNE
-Questo documento descrive l'integrazione dei template email [mailpace/templates](https://github.com/mailpace/templates) nel modulo Notify di SaluteOra. Questi template offrono un design moderno basato su TailwindCSS con supporto nativo per la modalità scura.
-=======
->>>>>>> .merge_file_Ec1XNN
->>>>>>> .merge_file_YhbX3q
 Questo documento descrive l'integrazione dei template email [mailpace/templates](https://github.com/mailpace/templates) nel modulo Notify di <nome progetto>. Questi template offrono un design moderno basato su TailwindCSS con supporto nativo per la modalità scura.
->>>>>>> .merge_file_djgM2h
 
 ## Template Disponibili
 
@@ -57,40 +44,14 @@ MailPace offre i seguenti template transazionali:
 - **Performance** - Ottimizzati per caricamento veloce
 - **Personalizzazione** - Facilmente personalizzabili con Maizzle
 
-<<<<<<< .merge_file_rgYIGl
-<<<<<<< .merge_file_KulNNE
 ## Integrazione 
-=======
-=======
-<<<<<<< .merge_file_BUPoh0
-## Integrazione 
-=======
-<<<<<<< .merge_file_KulNNE
-## Integrazione 
-=======
->>>>>>> .merge_file_Ec1XNN
->>>>>>> .merge_file_YhbX3q
 ## Integrazione
->>>>>>> .merge_file_djgM2h
 
 ### Struttura della Directory
 
 ```
-<<<<<<< .merge_file_rgYIGl
-<<<<<<< .merge_file_KulNNE
 /var/www/html/saluteora/laravel/Modules/Notify/resources/mail-layouts/
-=======
-=======
-<<<<<<< .merge_file_BUPoh0
-/var/www/html/saluteora/laravel/Modules/Notify/resources/mail-layouts/
-=======
-<<<<<<< .merge_file_KulNNE
-/var/www/html/saluteora/laravel/Modules/Notify/resources/mail-layouts/
-=======
->>>>>>> .merge_file_Ec1XNN
->>>>>>> .merge_file_YhbX3q
 [project-root]/laravel/Modules/Notify/resources/mail-layouts/
->>>>>>> .merge_file_djgM2h
 ├── default.html       # Layout base per la maggior parte delle email
 ├── main.html          # Alternativa semplificata
 ├── marketing.html     # Layout ottimizzato per email marketing
@@ -141,21 +102,8 @@ use Modules\Notify\Models\MailTemplate;
 
 $mailTemplate = MailTemplate::findBySlug('welcome-email');
 $mailTemplate->send($user->email, [
-<<<<<<< .merge_file_rgYIGl
-<<<<<<< .merge_file_KulNNE
     'name' => $user->name, 
-=======
-=======
-<<<<<<< .merge_file_BUPoh0
-    'name' => $user->name, 
-=======
-<<<<<<< .merge_file_KulNNE
-    'name' => $user->name, 
-=======
->>>>>>> .merge_file_Ec1XNN
->>>>>>> .merge_file_YhbX3q
     'name' => $user->name,
->>>>>>> .merge_file_djgM2h
     'action_url' => $actionUrl
 ]);
 ```
@@ -165,21 +113,8 @@ $mailTemplate->send($user->email, [
 1. **Mantieni la Struttura Base** - Non modificare la struttura HTML base per garantire compatibilità
 2. **Usa Variabili** - Utilizza variabili Blade per contenuti dinamici
 3. **Test Cross-Client** - Testa i template su diversi client email
-<<<<<<< .merge_file_rgYIGl
-<<<<<<< .merge_file_KulNNE
 4. **Segui le Convenzioni di Branding** - Usa i colori e font definiti per SaluteOra
-=======
-=======
-<<<<<<< .merge_file_BUPoh0
-4. **Segui le Convenzioni di Branding** - Usa i colori e font definiti per SaluteOra
-=======
-<<<<<<< .merge_file_KulNNE
-4. **Segui le Convenzioni di Branding** - Usa i colori e font definiti per SaluteOra
-=======
->>>>>>> .merge_file_Ec1XNN
->>>>>>> .merge_file_YhbX3q
 4. **Segui le Convenzioni di Branding** - Usa i colori e font definiti per <nome progetto>
->>>>>>> .merge_file_djgM2h
 
 ## Riferimenti
 

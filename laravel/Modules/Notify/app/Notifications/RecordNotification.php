@@ -146,10 +146,7 @@ class RecordNotification extends Notification implements ShouldQueue
      * Add attachments to the notification.
      *
      * @param  array<int, array{path?: string, data?: mixed, as?: string|null, mime?: string|null}>  $attachments
-<<<<<<< .merge_file_2RTFPU
      *
-=======
->>>>>>> .merge_file_lUFQKd
      * @return $this
      */
     public function addAttachments(array $attachments): self

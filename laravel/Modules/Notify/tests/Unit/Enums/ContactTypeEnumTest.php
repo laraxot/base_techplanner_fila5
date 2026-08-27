@@ -3,10 +3,6 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Enums;
-<<<<<<< .merge_file_EmDyde
-=======
-
->>>>>>> .merge_file_U9h1mP
 use Filament\Forms\Components\TextInput;
 use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasIcon;
@@ -15,11 +11,7 @@ use Modules\Notify\Enums\ContactTypeEnum;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< .merge_file_EmDyde
-uses(\Modules\Notify\Tests\TestCase::class);
-=======
 uses(TestCase::class)->group('no-notify-db');
->>>>>>> .merge_file_U9h1mP
 
 it('has correct cases', function (): void {
     Assert::assertCount(6, ContactTypeEnum::cases());

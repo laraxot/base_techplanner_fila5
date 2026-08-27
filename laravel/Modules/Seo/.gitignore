@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Auto-generated forbidden paths — do not edit manually
 # Reason: root cleanup policy (see docs/wiki/rules/root-cleanup-policy.md)
 
@@ -27,85 +19,24 @@ test-results
 tests/.claude-audit
 docs/cache/
 cache/
-<<<<<<< HEAD
-=======
 -e 
->>>>>>> cf01f0b (.)
 # PHPStan documentation
 docs/phpstan/
-=======
-=======
->>>>>>> d20252d (.)
-=======
->>>>>>> dbf8b8d (.)
-=======
->>>>>>> 77e0353 (.)
-=======
->>>>>>> fc52fe0 (.)
-=======
->>>>>>> c101b34 (.)
-=======
->>>>>>> d0f51b6 (.)
-=======
->>>>>>> a771e9c (.)
 docs/cache/
 cache/
 -e 
 # PHPStan documentation
 docs/phpstan/
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 7ec200b (.)
-=======
->>>>>>> d20252d (.)
-=======
->>>>>>> dbf8b8d (.)
-=======
->>>>>>> 77e0353 (.)
-=======
->>>>>>> fc52fe0 (.)
-=======
->>>>>>> c101b34 (.)
-=======
->>>>>>> d0f51b6 (.)
-=======
->>>>>>> a771e9c (.)
 # Backup files
 *.old
 *.old1
 *.backup
 *.backup.*
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-lang/lang/
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> c101b34 (.)
-=======
->>>>>>> d0f51b6 (.)
 lang/lang/
 _docs/
 _docs/
 
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> fc52fe0 (.)
-=======
->>>>>>> c101b34 (.)
-=======
->>>>>>> d0f51b6 (.)
 # Second brain: no-docs-archive (wiki) — non tracciare albero legacy docs/archive/
 **/docs/archive/
 # Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
@@ -116,45 +47,10 @@ _docs/
 *.orig
 *.rej
 *~head
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 agentdb.rvf
 tests/AuditCoverage
 # AI/TOOL SCAFFOLD — must never exist in module tree (see docs/wiki/rules/module-theme-root-cleanup.md)
-<<<<<<< HEAD
 .cursor/
 .vscode/
 .windsurf/
 .devcontainer/
-=======
->>>>>>> cf01f0b (.)
-=======
-_docs/
-_docs/
->>>>>>> 7ec200b (.)
-=======
-_docs/
-_docs/
->>>>>>> d20252d (.)
-=======
->>>>>>> dbf8b8d (.)
-=======
-lang/lang/
-_docs/
-_docs/
->>>>>>> 77e0353 (.)
-=======
-
-agentdb.rvf
->>>>>>> fc52fe0 (.)
-=======
-
-agentdb.rvf
->>>>>>> c101b34 (.)
-=======
-
-agentdb.rvf
->>>>>>> d0f51b6 (.)
-=======
->>>>>>> a771e9c (.)

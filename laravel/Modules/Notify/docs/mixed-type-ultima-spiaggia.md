@@ -1,29 +1,5 @@
 # Mixed (tipo di dato) - Solo come Ultima Spiaggia
 
-<<<<<<< .merge_file_ZmFr8g
-=======
-<<<<<<< .merge_file_210q51
->>>>>>> .merge_file_H7uMW8
-**Regola critica**: Il tipo `mixed` in PHP deve essere usato **SOLO come ultima spiaggia**.
-
-## Preferenze (in ordine)
-
-1. **Union types** - `string|int|null`
-2. **Generics** - `Collection<int, User>`, `array<string, Component>`
-3. **Interfacce** - `ArrayAccess`, `Iterator`
-4. **Classi base** - `object`, `array`
-5. **mixed** - solo quando non esiste alternativa (es. API esterne senza tipo garantito)
-
-## Collegamenti
-
-- [array-keys-mixed-property-exists.mdc](../.cursor/rules/array-keys-mixed-property-exists.mdc)
-- [filament-array-typing.mdc](../.cursor/rules/filament-array-typing.mdc)
-- [critical-rules-and-memories](../laravel/Modules/Xot/docs/critical-rules-and-memories.md)
-- [AGENTS.md](../AGENTS.md)
-<<<<<<< .merge_file_ZmFr8g
-=======
-=======
->>>>>>> .merge_file_H7uMW8
 **Regola**: `mixed` solo quando non esiste un tipo più stretto. Non è un shortcut per PHPStan.
 
 ## Perché
@@ -61,4 +37,3 @@ Dettaglio export: [Xot export lazy](../../Xot/docs/export-xls-by-lazy-collection
 - [Job: proprietà tipizzate](../../Job/docs/typed-model-properties-over-raw-attributes.md)
 - [Campagna 5.10](../../Xot/docs/stories/5.10.mixed-narrowing-campaign.story.md)
 - [Export XLS lazy / generic invarianti](../../Xot/docs/export-xls-by-lazy-collection.md)
->>>>>>> .merge_file_cT3KnN

@@ -9,15 +9,8 @@ laravel/Themes/Sixteen/docs/
 ├── prompts/
 │   └── replikate.txt                   ✅ UPDATED - Full protocol
 └── design-comuni/
-<<<<<<< .merge_file_yKvw9c
     ├── 00-INDEX.md                     ✅ NEW - Navigation hub
-=======
-<<<<<<< .merge_file_CAdZaA
-    ├── 00-INDEX.md                     ✅ NEW - Navigation hub
-=======
->>>>>>> .merge_file_Zej4qc
     ├── 00-index.md                     ✅ NEW - Navigation hub
->>>>>>> .merge_file_H99EWq
     └── pages/
         └── homepage-structure-diff.md  ✅ NEW - Detailed analysis + fixes
 ```
@@ -63,15 +56,8 @@ Project Root:
 | REPLIKATE-MASTER-INDEX.md | Navigation | 7.2K | Master hub for all docs | [View](./laravel/Themes/Sixteen/docs/REPLIKATE-MASTER-INDEX.md) |
 | replikate.txt | Protocol | 3.8K | Execution framework | [View](./laravel/Themes/Sixteen/docs/prompts/replikate.txt) |
 | homepage-structure-diff.md | Analysis | 7.3K | Detailed structural analysis | [View](./laravel/Themes/Sixteen/docs/design-comuni/pages/homepage-structure-diff.md) |
-<<<<<<< .merge_file_yKvw9c
 | design-comuni/00-INDEX.md | Hub | 4.1K | Design Comuni navigation | [View](./laravel/Themes/Sixteen/docs/design-comuni/00-INDEX.md) |
-=======
-<<<<<<< .merge_file_CAdZaA
-| design-comuni/00-INDEX.md | Hub | 4.1K | Design Comuni navigation | [View](./laravel/Themes/Sixteen/docs/design-comuni/00-INDEX.md) |
-=======
->>>>>>> .merge_file_Zej4qc
 | design-comuni/00-index.md | Hub | 4.1K | Design Comuni navigation | [View](./laravel/Themes/Sixteen/docs/design-comuni/00-index.md) |
->>>>>>> .merge_file_H99EWq
 | replikate-workflow.sh | Script | 2.4K | Automated analysis | [View](./bashscripts/design-analysis/replikate-workflow.sh) |
 | replikate-workflow.md | Doc | 2.1K | Script documentation | [View](./bashscripts/design-analysis/docs/replikate-workflow.md) |
 | bashscripts README.md | Module | 1.3K | Module overview | [View](./bashscripts/design-analysis/README.md) |

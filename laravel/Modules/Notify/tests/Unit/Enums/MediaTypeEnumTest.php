@@ -8,11 +8,7 @@ use Modules\Notify\Enums\MediaTypeEnum;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< .merge_file_ZoAi9o
-uses(\Modules\Notify\Tests\TestCase::class);
-=======
 uses(TestCase::class)->group('no-notify-db');
->>>>>>> .merge_file_tYXRRB
 
 it('has correct cases', function (): void {
     Assert::assertCount(4, MediaTypeEnum::cases());
@@ -64,11 +60,7 @@ it('get default returns image', function (): void {
 });
 
 it('each case has unique value', function (): void {
-<<<<<<< .merge_file_ZoAi9o
-    $values = array_map(static fn ($case) => $case->value, MediaTypeEnum::cases());
-=======
     $values = array_map(static fn (MediaTypeEnum $case): string => $case->value, MediaTypeEnum::cases());
->>>>>>> .merge_file_tYXRRB
     $uniqueValues = array_unique($values);
 
     Assert::assertCount(count($values), $uniqueValues, 'All enum cases should have unique values');

@@ -208,15 +208,8 @@ Themes/Sixteen/resources/views/
 ### Link Esterni
 - [Bootstrap Italia Reference](https://italia.github.io/design-comuni-pagine-statiche/sito/homepage.html)
 - [Bootstrap Italia Docs](https://italia.github.io/design-web-toolkit/)
-<<<<<<< .merge_file_MFC9Zu
 - [FixCity Homepage](http://fixcity.local/it/tests/homepage)
-=======
-<<<<<<< .merge_file_YNUM4O
-- [FixCity Homepage](http://fixcity.local/it/tests/homepage)
-=======
->>>>>>> .merge_file_BhBQhC
 - [FixCity Homepage](http://ptv.local/it/tests/homepage)
->>>>>>> .merge_file_wRw4oi
 
 ---
 

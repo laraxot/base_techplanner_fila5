@@ -83,15 +83,8 @@ Ridurre rumore, duplicazione e ambiguita' nel codice di questo module, senza per
 ## Second Brain 2026 — note operative
 
 - Markdown locale + Git restano la base piu' portabile: gli agenti leggono/scrivono file senza database esterni.
-<<<<<<< .merge_file_c9xe8k
 - AGENTS.md/SKILL.md devono restare manifest leggeri, con YAML/front matter e routing on-demand.
-=======
-<<<<<<< .merge_file_8XvHPK
-- AGENTS.md/SKILL.md devono restare manifest leggeri, con YAML/front matter e routing on-demand.
-=======
->>>>>>> .merge_file_datDnd
 - agents.md/SKILL.md devono restare manifest leggeri, con YAML/front matter e routing on-demand.
->>>>>>> .merge_file_mEKbxa
 - I descrittori architetturali navigabili riducono i passi di localizzazione: ogni owner dovrebbe avere mappa scopo -> file chiave.
 - AI utile = recupero mirato, non pre-caricamento: report atomici, QMD, issue e log.
 

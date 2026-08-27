@@ -4,15 +4,8 @@ type: concept
 tags: [master, implementation, plan]
 created: 2026-07-14
 updated: 2026-07-14
-<<<<<<< .merge_file_zNTK1V
 qmd: "master-implementation-plan 🎯 fixcity - master implementation plan"
-=======
-<<<<<<< .merge_file_71mAEt
-qmd: "master-implementation-plan 🎯 fixcity - master implementation plan"
-=======
->>>>>>> .merge_file_s5x2iC
 qmd: "master-implementation-plan 🎯 ptv - master implementation plan"
->>>>>>> .merge_file_aglNlk
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -54,8 +47,4 @@ Modules:
 PHPStan Level 9: 0 errori ✅
 Test Coverage: 27 tests esistenti
 Code Quality: ✅ Eccellente
-<<<<<<< .merge_file_71mAEt
-=======
-
 ```
->>>>>>> .merge_file_aglNlk

@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\MorphPivot;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
 use Illuminate\Database\Eloquent\Relations\Pivot;
+use Illuminate\Support\Str;
 use Webmozart\Assert\Assert;
 
 /**
@@ -17,19 +18,16 @@ use Webmozart\Assert\Assert;
 trait RelationX
 {
     /**
-<<<<<<< .merge_file_MIHQMy
      * @template TRelatedModel of Model
      *
      * @param  class-string<TRelatedModel>  $related  Related model class
      * @param  string|null  $_table  Pivot table name
-=======
-     * @param  class-string<Model>|string|null  $_table  Pivot table name
->>>>>>> .merge_file_hCDw9C
      * @param  string|null  $foreignPivotKey  Foreign pivot key
      * @param  string|null  $relatedPivotKey  Related pivot key
      * @param  string|null  $parentKey  Parent key
      * @param  string|null  $relatedKey  Related key
      * @param  string|null  $relation  Relation name
+     * @return BelongsToMany<TRelatedModel, $this, Pivot, 'pivot'>
      */
     public function belongsToManyX(
         string $related,
@@ -40,10 +38,6 @@ trait RelationX
         ?string $relatedKey = null,
         ?string $relation = null,
     ): BelongsToMany {
-<<<<<<< .merge_file_MIHQMy
-=======
-
->>>>>>> .merge_file_hCDw9C
         Assert::isInstanceOf(
             $related_model = app($related),
             Model::class,
@@ -121,7 +115,6 @@ trait RelationX
             ->withPivot($pivotFields)
             ->withTimestamps();
 
-<<<<<<< .merge_file_MIHQMy
         return $relationInstance;
     }
 
@@ -229,7 +222,5 @@ trait RelationX
 
         /** @var class-string $parent_class */
         return $this->guessPivotFullClass($new_pivot_name, $related, $parent_class);
-=======
->>>>>>> .merge_file_hCDw9C
     }
 }

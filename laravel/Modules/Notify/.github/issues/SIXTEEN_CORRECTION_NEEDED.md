@@ -108,18 +108,10 @@ public function boot(): void
 
 After fixes:
 
-<<<<<<< .merge_file_gChnE6
 - [ ] `http://fixcity.local/it/tests/argomenti` loads correctly
 - [ ] `http://fixcity.local/it/tests/appuntamento-06-conferma` loads correctly
-=======
-<<<<<<< .merge_file_bOiqlq
-- [ ] `http://fixcity.local/it/tests/argomenti` loads correctly
-- [ ] `http://fixcity.local/it/tests/appuntamento-06-conferma` loads correctly
-=======
->>>>>>> .merge_file_4SXpMu
 - [ ] `http://ptv.local/it/tests/argomenti` loads correctly
 - [ ] `http://ptv.local/it/tests/appuntamento-06-conferma` loads correctly
->>>>>>> .merge_file_E5Xa2c
 - [ ] All Tailwind classes render correctly
 - [ ] No Bootstrap Italia errors in console
 - [ ] Components render with correct styling

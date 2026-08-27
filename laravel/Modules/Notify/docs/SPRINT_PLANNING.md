@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_HlTrsE
-=======
 ---
 title: "Notify Module - Sprint Planning"
 module: notify
@@ -9,7 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
->>>>>>> .merge_file_v9BOAZ
 # Notify Module - Sprint Planning
 
 **Module:** Notify  

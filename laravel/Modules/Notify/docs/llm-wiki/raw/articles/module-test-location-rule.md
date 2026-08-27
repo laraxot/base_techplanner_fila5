@@ -45,15 +45,8 @@ Laraxot modulare. Un agente AI ha usato la skill senza contestualizzarla per il 
 In Laraxot, il progetto è strutturato come monorepo/conductor:
 
 ```
-<<<<<<< .merge_file_HiTPV0
 /var/www/_bases/base_fixcity_fila5/           ← ROOT PROJECT (conductor)
-=======
-<<<<<<< .merge_file_qlx2e7
-/var/www/_bases/base_fixcity_fila5/           ← ROOT PROJECT (conductor)
-=======
->>>>>>> .merge_file_xSYnAJ
 /var/www/_bases/base_ptvx_fila5/           ← ROOT PROJECT (conductor)
->>>>>>> .merge_file_TnxSjr
   tests/                                       ← SOLO test del conductor (rarissimi)
   laravel/
     tests/                                     ← SOLO test della Laravel app host

@@ -13,11 +13,7 @@ use Modules\Notify\Notifications\RecordNotification;
 use Modules\Notify\Tests\TestCase;
 use Modules\Xot\Actions\Cast\SafeEloquentCastAction;
 
-<<<<<<< .merge_file_BovJGs
-uses(\Modules\Notify\Tests\TestCase::class);
-=======
 uses(TestCase::class)->group('no-notify-db');
->>>>>>> .merge_file_K2GN52
 
 /**
  * @param  array<string, mixed>  $attributes

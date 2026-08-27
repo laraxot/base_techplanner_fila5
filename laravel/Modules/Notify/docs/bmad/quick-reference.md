@@ -1,12 +1,5 @@
-<<<<<<< .merge_file_MALPwd
 # bmad method: quick reference (fixcity)
-=======
-<<<<<<< .merge_file_rAAJWk
-# bmad method: quick reference (fixcity)
-=======
->>>>>>> .merge_file_O6VEwS
 # bmad method: quick reference (laraxot)
->>>>>>> .merge_file_CQMWzG
 
 ## comandi rapidi
 

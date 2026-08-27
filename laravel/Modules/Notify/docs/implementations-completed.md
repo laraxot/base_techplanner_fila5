@@ -4,15 +4,8 @@ type: concept
 tags: [implementations, completed]
 created: 2026-07-14
 updated: 2026-07-14
-<<<<<<< .merge_file_SRi0cD
 qmd: "implementations-completed ✅ fixcity - implementazioni completate"
-=======
-<<<<<<< .merge_file_owFMUv
-qmd: "implementations-completed ✅ fixcity - implementazioni completate"
-=======
->>>>>>> .merge_file_yIJbyJ
 qmd: "implementations-completed ✅ ptv - implementazioni completate"
->>>>>>> .merge_file_OCoJQP
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:

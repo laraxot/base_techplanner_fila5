@@ -271,8 +271,6 @@ Che questo indice ti guidi verso la saggezza del refactoring perfetto!
 **Manutenuto da:** Super Mucca AI  
 **Prossimo Update:** Dopo implementazione Fase 1
 
-<<<<<<< .merge_file_SYGDtS
-=======
 ---
 
 <!-- Merged from analisi-metodi-duplicati-INDEX.md, which collided with this file on case-insensitive filesystems. -->
@@ -530,4 +528,3 @@ Che questo indice ti guidi verso la saggezza del refactoring perfetto!
 **Manutenuto da:** Super Mucca AI  
 **Prossimo Update:** Dopo implementazione Fase 1
 
->>>>>>> .merge_file_yxglVZ

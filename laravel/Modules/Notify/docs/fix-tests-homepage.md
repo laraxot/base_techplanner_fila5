@@ -103,25 +103,11 @@ new class extends Component {
 
 ```bash
 # Homepage
-<<<<<<< .merge_file_LxExcC
-=======
-<<<<<<< .merge_file_um2UpP
->>>>>>> .merge_file_RB3eNu
-curl http://fixcity.local/it/tests/homepage
-
-# Altre pagine (se esistono nel CMS)
-curl http://fixcity.local/it/tests/servizi
-curl http://fixcity.local/it/tests/amministrazione
-<<<<<<< .merge_file_LxExcC
-=======
-=======
->>>>>>> .merge_file_RB3eNu
 curl http://ptv.local/it/tests/homepage
 
 # Altre pagine (se esistono nel CMS)
 curl http://ptv.local/it/tests/servizi
 curl http://ptv.local/it/tests/amministrazione
->>>>>>> .merge_file_IJvygx
 ```
 
 ## Files Modificati

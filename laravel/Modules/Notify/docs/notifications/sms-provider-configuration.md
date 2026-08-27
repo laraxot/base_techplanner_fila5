@@ -1,15 +1,8 @@
 # Configurazione Provider SMS per le Notifiche 
 
 Questa documentazione descrive le opzioni disponibili per l'integrazione di servizi SMS nei sistemi di notifica di <nome progetto>, con focus sui diversi provider e sulla loro configurazione.
-<<<<<<< .merge_file_Wt8ZOp
 Questa documentazione descrive le opzioni disponibili per l'integrazione di servizi SMS nei sistemi di notifica di Quaeris, con focus sui diversi provider e sulla loro configurazione.
-=======
-<<<<<<< .merge_file_tn4rnj
-Questa documentazione descrive le opzioni disponibili per l'integrazione di servizi SMS nei sistemi di notifica di Quaeris, con focus sui diversi provider e sulla loro configurazione.
-=======
->>>>>>> .merge_file_dw9ggl
 Questa documentazione descrive le opzioni disponibili per l'integrazione di servizi SMS nei sistemi di notifica di App, con focus sui diversi provider e sulla loro configurazione.
->>>>>>> .merge_file_SyKe2p
 
 ## Indice
 
@@ -116,15 +109,8 @@ composer require laravel-notification-channels/vonage
 VONAGE_KEY=abcd1234
 VONAGE_SECRET=xyz789...
 VONAGE_SMS_FROM=<nome progetto>
-<<<<<<< .merge_file_Wt8ZOp
 VONAGE_SMS_FROM=Quaeris
-=======
-<<<<<<< .merge_file_tn4rnj
-VONAGE_SMS_FROM=Quaeris
-=======
->>>>>>> .merge_file_dw9ggl
 VONAGE_SMS_FROM=App
->>>>>>> .merge_file_SyKe2p
 ```
 
 ### Implementazione Notifica

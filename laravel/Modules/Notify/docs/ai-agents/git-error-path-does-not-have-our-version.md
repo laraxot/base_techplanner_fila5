@@ -322,15 +322,8 @@ git merge --abort   # No merge in progress
 # 2. Check current status
 git status --short
 # M docs/custom-charts-session-summary.md
-<<<<<<< .merge_file_ahYn4f
 # M laravel/Modules/Quaeris/app/Actions/QuestionChart/Custom/SmsResponseRate.php
-=======
-<<<<<<< .merge_file_ew99jI
-# M laravel/Modules/Quaeris/app/Actions/QuestionChart/Custom/SmsResponseRate.php
-=======
->>>>>>> .merge_file_gZlAcR
 # M laravel/Modules/App/app/Actions/QuestionChart/Custom/SmsResponseRate.php
->>>>>>> .merge_file_PrUMGy
 # ...
 
 # 3. Continue normal work

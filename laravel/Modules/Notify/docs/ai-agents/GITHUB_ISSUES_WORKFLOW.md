@@ -6,18 +6,10 @@
 
 ## Repository
 
-<<<<<<< .merge_file_ohOdkf
 - **URL**: https://github.com/laraxot/base_predict_fila5
 - **Remote**: `origin` (git@github.com:laraxot/base_predict_fila5.git)
-=======
-<<<<<<< .merge_file_I8dvFU
-- **URL**: https://github.com/laraxot/base_predict_fila5
-- **Remote**: `origin` (git@github.com:laraxot/base_predict_fila5.git)
-=======
->>>>>>> .merge_file_xl16De
 - **URL**: https://github.com/laraxot/base_ptvx_fila5
 - **Remote**: `origin` (git@github.com:laraxot/base_ptvx_fila5.git)
->>>>>>> .merge_file_Cd6cFJ
 
 ---
 
@@ -26,15 +18,8 @@
 ### Method 1: GitHub Web Interface
 
 ```
-<<<<<<< .merge_file_ohOdkf
 1. Vai su: https://github.com/laraxot/base_predict_fila5/issues
-=======
-<<<<<<< .merge_file_I8dvFU
-1. Vai su: https://github.com/laraxot/base_predict_fila5/issues
-=======
->>>>>>> .merge_file_xl16De
 1. Vai su: https://github.com/laraxot/base_ptvx_fila5/issues
->>>>>>> .merge_file_Cd6cFJ
 2. Clicca "New issue"
 3. Scegli template
 4. Compili e invii
@@ -119,15 +104,8 @@ gh pr create --title "Fix: ..." --body "Fixes #123"
 3. 💬 **Comments Section** - HIGH priority
 4. 📤 **Share Buttons** - MEDIUM priority
 
-<<<<<<< .merge_file_ohOdkf
 **Create issues on GitHub**: https://github.com/laraxot/base_predict_fila5/issues
-=======
-<<<<<<< .merge_file_I8dvFU
-**Create issues on GitHub**: https://github.com/laraxot/base_predict_fila5/issues
-=======
->>>>>>> .merge_file_xl16De
 **Create issues on GitHub**: https://github.com/laraxot/base_ptvx_fila5/issues
->>>>>>> .merge_file_Cd6cFJ
 
 ---
 

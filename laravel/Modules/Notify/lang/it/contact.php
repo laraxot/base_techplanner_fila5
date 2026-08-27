@@ -6,12 +6,6 @@ return [
     'resource' => ['name' => 'Contact'],
     'navigation' => ['name' => 'contatto', 'plural' => 'contatti', 'group' => 'Sistema', 'label' => 'Contatto', 'sort' => 49, 'icon' => 'notify-contact-animated', 'description' => 'Gestione del singolo contatto per le notifiche'],
     'fields' => [
-<<<<<<< .merge_file_LASFqt
-        'name' => ['label' => 'Nome', 'tooltip' => 'Nome del contatto', 'placeholder' => 'es: Mario Rossi', 'help' => 'Inserisci il nome completo del contatto', 'helper_text' => '', 'description' => ''],
-        'email' => ['label' => 'Email', 'tooltip' => 'Indirizzo email del contatto', 'placeholder' => 'es: mario.rossi@example.com', 'help' => 'Inserisci un indirizzo email valido', 'helper_text' => '', 'description' => ''],
-        'phone' => ['label' => 'Telefono', 'tooltip' => 'Numero di telefono del contatto', 'placeholder' => 'es: +39 123 456 7890', 'help' => 'Inserisci il numero con prefisso internazionale', 'helper_text' => '', 'description' => ''],
-        'telegram_chat_id' => ['label' => 'Chat ID Telegram', 'tooltip' => 'ID della chat Telegram del contatto', 'placeholder' => 'es: 123456789', 'help' => 'ID numerico fornito dal bot Telegram', 'helper_text' => '', 'description' => ''],
-=======
         'name' => [
             'label' => 'Nome',
             'tooltip' => 'Nome del contatto',
@@ -44,7 +38,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
->>>>>>> .merge_file_WRITFf
         'group' => [
             'label' => 'Gruppo',
             'tooltip' => 'Gruppo di appartenenza del contatto',
@@ -90,17 +83,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-<<<<<<< .merge_file_LASFqt
-        'is_active' => ['label' => 'Attivo', 'tooltip' => 'Stato di attivazione del contatto', 'help' => 'Disattiva temporaneamente le notifiche', 'helper_text' => '', 'description' => ''],
-        'last_notified_at' => ['label' => 'Ultima notifica', 'tooltip' => 'Data e ora dell\'ultima notifica inviata', 'helper_text' => '', 'description' => ''],
-        'id' => ['label' => 'id'],
-        'message' => ['label' => 'message'],
-        'is_read' => ['label' => 'is_read'],
-        'created_at' => ['label' => 'created_at'],
-        'updated_at' => ['label' => 'updated_at'],
-        'active' => ['label' => 'active'],
-        'inactive' => ['label' => 'inactive'],
-=======
         'is_active' => [
             'label' => 'Attivo',
             'tooltip' => 'Stato di attivazione del contatto',
@@ -141,7 +123,6 @@ return [
             'helper_text' => 'isActive',
             'description' => 'isActive',
         ],
->>>>>>> .merge_file_WRITFf
     ],
     'actions' => [
         'import' => [
@@ -160,9 +141,6 @@ return [
             'color' => 'primary',
             'confirmation' => ['title' => 'Conferma invio test', 'message' => 'Vuoi inviare una notifica di test?', 'confirm' => 'Sì, invia', 'cancel' => 'No, annulla'],
         ],
-<<<<<<< .merge_file_LASFqt
-        'verify' => ['label' => 'Verifica contatto', 'tooltip' => 'Verifica la validità del contatto', 'icon' => 'heroicon-o-check-circle', 'color' => 'warning'],
-=======
         'create' => [
             'label' => 'create',
             'icon' => 'create',
@@ -243,7 +221,6 @@ return [
             'icon' => 'logout',
             'tooltip' => 'logout',
         ],
->>>>>>> .merge_file_WRITFf
     ],
     'messages' => [
         'created' => ['title' => 'Contatto Creato', 'message' => 'Il contatto è stato creato con successo'],

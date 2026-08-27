@@ -34,15 +34,8 @@ Le Rules progettuali vivono qui, nel wiki del Module **Notify**, e vengono caric
 
 - La sorgente di verita' per le Rules e' sempre il wiki locale
 - Non embeddare Rules nei prompt di avvio
-<<<<<<< .merge_file_gnYry7
 - Per Rules globali, consulta il [wiki root](../../docs/wiki/rules/INDEX.md)
-=======
-<<<<<<< .merge_file_MiE0B8
-- Per Rules globali, consulta il [wiki root](../../docs/wiki/rules/INDEX.md)
-=======
->>>>>>> .merge_file_1xzDhX
 - Per Rules globali, consulta il [wiki root](../../docs/wiki/rules/index.md)
->>>>>>> .merge_file_SGek5N
 
 ## Aggiungere una Nuova RULES
 

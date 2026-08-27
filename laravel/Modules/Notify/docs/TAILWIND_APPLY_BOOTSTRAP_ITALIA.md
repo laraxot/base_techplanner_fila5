@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_AzZDYC
-=======
 ---
 title: "Tailwind @apply per Bootstrap Italia - Completato"
 module: notify
@@ -9,7 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
->>>>>>> .merge_file_Kx8NZF
 # ✅ Tailwind @apply per Bootstrap Italia - Completato
 
 ## Data: 2026-03-31

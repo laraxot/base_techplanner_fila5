@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_TWg8WP
-=======
 ---
 title: "Refactoring Summary: SendRecordsNotificationBulkAction Implementation"
 module: notify
@@ -9,7 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
->>>>>>> .merge_file_EgobvS
 # Refactoring Summary: SendRecordsNotificationBulkAction Implementation
 
 **Date**: 18 Dicembre 2025  

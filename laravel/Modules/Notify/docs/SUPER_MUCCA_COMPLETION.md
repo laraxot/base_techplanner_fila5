@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_wJuDtD
-=======
 ---
 title: "SUPER MUCCA MODE - COMPLETAMENTO TOTALE"
 module: notify
@@ -9,7 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
->>>>>>> .merge_file_AoJ5ep
 # 🐄⚡ SUPER MUCCA MODE - COMPLETAMENTO TOTALE
 
 **Data**: 2025-10-01  

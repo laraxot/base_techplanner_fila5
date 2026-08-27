@@ -39,15 +39,8 @@ CRITICAL ❗
 ```
 #0 vendor/spatie/laravel-data/src/DataPipes/CastPropertiesDataPipe.php:113
 #1 vendor/spatie/laravel-data/src/Resolvers/DataFromArrayResolver.php:97
-<<<<<<< .merge_file_638xBD
 #2 Modules/Quaeris/app/Actions/QuestionChart/Custom/MailResponseRate.php:50
-=======
-<<<<<<< .merge_file_bsDBBy
-#2 Modules/Quaeris/app/Actions/QuestionChart/Custom/MailResponseRate.php:50
-=======
->>>>>>> .merge_file_N9a57A
 #2 Modules/App/app/Actions/QuestionChart/Custom/MailResponseRate.php:50
->>>>>>> .merge_file_4SnF3t
 ```
 
 ### Root Cause
@@ -73,15 +66,8 @@ return new AnswersChartData(
 ### Verification
 ```bash
 # Check for ChartData objects
-<<<<<<< .merge_file_638xBD
 grep -r "new ChartData" Modules/Quaeris/app/Actions/QuestionChart/Custom/
-=======
-<<<<<<< .merge_file_bsDBBy
-grep -r "new ChartData" Modules/Quaeris/app/Actions/QuestionChart/Custom/
-=======
->>>>>>> .merge_file_N9a57A
 grep -r "new ChartData" Modules/App/app/Actions/QuestionChart/Custom/
->>>>>>> .merge_file_4SnF3t
 
 # Should return: (empty)
 ```
@@ -97,15 +83,8 @@ grep -r "new ChartData" Modules/App/app/Actions/QuestionChart/Custom/
 ### Error Message
 ```
 SQLSTATE[42S02]: Base table or view not found: 1146
-<<<<<<< .merge_file_638xBD
 Table 'quaeris_survey.contacts' doesn't exist
-=======
-<<<<<<< .merge_file_bsDBBy
-Table 'quaeris_survey.contacts' doesn't exist
-=======
->>>>>>> .merge_file_N9a57A
 Table 'app_survey.contacts' doesn't exist
->>>>>>> .merge_file_4SnF3t
 ```
 
 ### Severity
@@ -117,15 +96,8 @@ CRITICAL ❗
 
 ### Database Map
 ```
-<<<<<<< .merge_file_638xBD
 quaeris_data (Connection: 'quaeris')
-=======
-<<<<<<< .merge_file_bsDBBy
-quaeris_data (Connection: 'quaeris')
-=======
->>>>>>> .merge_file_N9a57A
 app_data (Connection: 'this-project')
->>>>>>> .merge_file_4SnF3t
 ├── contacts          ← This table
 ├── survey_pdfs
 └── customers
@@ -137,15 +109,8 @@ limesurvey (Connection: 'limesurvey')
 ```
 
 ### Root Cause
-<<<<<<< .merge_file_638xBD
 Query uses `limesurvey` connection, but `contacts` table is in `quaeris_data`
-=======
-<<<<<<< .merge_file_bsDBBy
-Query uses `limesurvey` connection, but `contacts` table is in `quaeris_data`
-=======
->>>>>>> .merge_file_N9a57A
 Query uses `limesurvey` connection, but `contacts` table is in `app_data`
->>>>>>> .merge_file_4SnF3t
 
 ### Solution
 ```php
@@ -169,15 +134,8 @@ public function getSmsAnswers(...) {
 ### Verification
 ```bash
 # Check for cross-database joins
-<<<<<<< .merge_file_638xBD
 grep -r "getConnection()->getDatabaseName()" Modules/Quaeris/app/Actions/QuestionChart/Custom/
-=======
-<<<<<<< .merge_file_bsDBBy
-grep -r "getConnection()->getDatabaseName()" Modules/Quaeris/app/Actions/QuestionChart/Custom/
-=======
->>>>>>> .merge_file_N9a57A
 grep -r "getConnection()->getDatabaseName()" Modules/App/app/Actions/QuestionChart/Custom/
->>>>>>> .merge_file_4SnF3t
 
 # Should return: (empty)
 ```
@@ -195,15 +153,8 @@ grep -r "getConnection()->getDatabaseName()" Modules/App/app/Actions/QuestionCha
 ```
 SQLSTATE[42000]: Syntax error or access violation: 1055
 Expression #2 of SELECT list is not in GROUP BY clause
-<<<<<<< .merge_file_638xBD
 and contains nonaggregated column 'quaeris_data.contacts.sms_sent_at'
-=======
-<<<<<<< .merge_file_bsDBBy
-and contains nonaggregated column 'quaeris_data.contacts.sms_sent_at'
-=======
->>>>>>> .merge_file_N9a57A
 and contains nonaggregated column 'app_data.contacts.sms_sent_at'
->>>>>>> .merge_file_4SnF3t
 which is not functionally dependent on columns in GROUP BY clause;
 this is incompatible with sql_mode=only_full_group_by
 ```
@@ -251,15 +202,8 @@ GROUP BY
 ### Verification
 ```bash
 # Check groupByRaw usage
-<<<<<<< .merge_file_638xBD
 grep -n "groupByRaw" Modules/Quaeris/app/Actions/QuestionChart/Custom/SmsResponseRate.php
-=======
-<<<<<<< .merge_file_bsDBBy
-grep -n "groupByRaw" Modules/Quaeris/app/Actions/QuestionChart/Custom/SmsResponseRate.php
-=======
->>>>>>> .merge_file_N9a57A
 grep -n "groupByRaw" Modules/App/app/Actions/QuestionChart/Custom/SmsResponseRate.php
->>>>>>> .merge_file_4SnF3t
 
 # Should show both expressions included
 ```
@@ -306,15 +250,8 @@ return new AnswersChartData(answers: $answersArray);
 ### Verification
 ```bash
 # Check for DataCollection usage
-<<<<<<< .merge_file_638xBD
 grep -n "AnswersChartData::from" Modules/Quaeris/app/Actions/QuestionChart/Custom/*.php
-=======
-<<<<<<< .merge_file_bsDBBy
-grep -n "AnswersChartData::from" Modules/Quaeris/app/Actions/QuestionChart/Custom/*.php
-=======
->>>>>>> .merge_file_N9a57A
 grep -n "AnswersChartData::from" Modules/App/app/Actions/QuestionChart/Custom/*.php
->>>>>>> .merge_file_4SnF3t
 
 # All should use ->toArray()
 ```
@@ -532,15 +469,8 @@ Contact::query()->chunk(100, function ($contacts) {
 ### Run All Tests
 ```bash
 cd laravel
-<<<<<<< .merge_file_638xBD
 ./vendor/bin/pest Modules/Quaeris/tests/Unit/Actions/QuestionChart/CustomQuestionTypesTest.php
-=======
-<<<<<<< .merge_file_bsDBBy
-./vendor/bin/pest Modules/Quaeris/tests/Unit/Actions/QuestionChart/CustomQuestionTypesTest.php
-=======
->>>>>>> .merge_file_N9a57A
 ./vendor/bin/pest Modules/App/tests/Unit/Actions/QuestionChart/CustomQuestionTypesTest.php
->>>>>>> .merge_file_4SnF3t
 ```
 
 ### Run Single Test
@@ -551,10 +481,6 @@ cd laravel
 ### Check Code Quality
 ```bash
 # PHPStan
-<<<<<<< .merge_file_638xBD
-./vendor/bin/phpstan analyse Modules/Quaeris/app/Actions/QuestionChart/Custom/
-=======
-<<<<<<< .merge_file_bsDBBy
 ./vendor/bin/phpstan analyse Modules/Quaeris/app/Actions/QuestionChart/Custom/
 
 # Pint (formatting)
@@ -562,20 +488,12 @@ cd laravel
 
 # Tests with coverage
 XDEBUG_MODE=off ./vendor/bin/pest --coverage Modules/Quaeris/tests/
-=======
-./vendor/bin/phpstan analyse Modules/App/app/Actions/QuestionChart/Custom/
->>>>>>> .merge_file_N9a57A
 
 # Pint (formatting)
 ./vendor/bin/pint Modules/Quaeris/app/Actions/QuestionChart/Custom/
 
 # Tests with coverage
-<<<<<<< .merge_file_638xBD
 XDEBUG_MODE=off ./vendor/bin/pest --coverage Modules/Quaeris/tests/
-=======
-XDEBUG_MODE=off ./vendor/bin/pest --coverage Modules/App/tests/
->>>>>>> .merge_file_4SnF3t
->>>>>>> .merge_file_N9a57A
 ```
 
 ### Manual Testing URLs
@@ -604,15 +522,8 @@ echo "✅ All caches cleared"
 ### Check File Sizes
 ```bash
 #!/bin/bash
-<<<<<<< .merge_file_638xBD
 for file in Modules/Quaeris/app/Actions/QuestionChart/Custom/*.php; do
-=======
-<<<<<<< .merge_file_bsDBBy
-for file in Modules/Quaeris/app/Actions/QuestionChart/Custom/*.php; do
-=======
->>>>>>> .merge_file_N9a57A
 for file in Modules/App/app/Actions/QuestionChart/Custom/*.php; do
->>>>>>> .merge_file_4SnF3t
     lines=$(wc -l < "$file")
     if [ $lines -gt 200 ]; then
         echo "⚠️  $file has $lines lines (max 200)"
@@ -625,15 +536,8 @@ done
 ### Find ChartData Objects
 ```bash
 #!/bin/bash
-<<<<<<< .merge_file_638xBD
 grep -r "new ChartData" Modules/Quaeris/app/Actions/QuestionChart/Custom/
-=======
-<<<<<<< .merge_file_bsDBBy
-grep -r "new ChartData" Modules/Quaeris/app/Actions/QuestionChart/Custom/
-=======
->>>>>>> .merge_file_N9a57A
 grep -r "new ChartData" Modules/App/app/Actions/QuestionChart/Custom/
->>>>>>> .merge_file_4SnF3t
 if [ $? -eq 0 ]; then
     echo "❌ Found ChartData objects - replace with arrays!"
 else
@@ -651,15 +555,8 @@ fi
 - Session Memory: `.kilo/memories/session-2026-03-17-custom-charts-deep.md`
 
 ### GitHub
-<<<<<<< .merge_file_638xBD
 - Issue #97: https://github.com/laraxot/base_quaeris_fila5_mono/issues/97
-=======
-<<<<<<< .merge_file_bsDBBy
-- Issue #97: https://github.com/laraxot/base_quaeris_fila5_mono/issues/97
-=======
->>>>>>> .merge_file_N9a57A
 - Issue #97: https://github.com/laraxot/base_ptvx_fila5_mono/issues/97
->>>>>>> .merge_file_4SnF3t
 - All 8 comments with fixes
 
 ### Team Contacts

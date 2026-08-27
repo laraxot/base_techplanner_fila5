@@ -290,21 +290,8 @@ CRITICAL: collaborate with the user to develop specific, actionable research que
 
 ## Cross-References
 
-<<<<<<< .merge_file_TxL04Q
-=======
-<<<<<<< .merge_file_bi6OZe
->>>>>>> .merge_file_OIiStP
-- ← [Tasks Index](INDEX.md) — All 22 BMad tasks
-- ← [Agents Index](../../agents/INDEX.md) — 10 agent definitions
-- ← [Main AI Docs Index](../INDEX.md) — Master index
-- ← [../../../../AGENTS.md](../../../../../../../../AGENTS.md) — Original source
-<<<<<<< .merge_file_TxL04Q
-=======
-=======
->>>>>>> .merge_file_OIiStP
 - ← [Tasks Index](index.md) — All 22 BMad tasks
 - ← [Agents Index](../../agents/index.md) — 10 agent definitions
 - ← [Main AI Docs Index](../index.md) — Master index
 - ← [../../../../agents.md](../../../../../../../../agents.md) — Original source
->>>>>>> .merge_file_UKPsQh
 

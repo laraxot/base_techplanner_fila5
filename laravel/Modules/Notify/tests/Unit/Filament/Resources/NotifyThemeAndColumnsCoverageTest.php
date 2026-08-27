@@ -16,7 +16,6 @@ use Filament\Tables\Filters\SelectFilter;
 use Modules\Notify\Filament\Resources\NotificationTemplateResource\Pages\ListNotificationTemplates;
 use Modules\Notify\Filament\Resources\NotifyThemeResource;
 use Modules\Notify\Filament\Resources\NotifyThemeResource\Pages\ListNotifyThemes;
-<<<<<<< .merge_file_w1qMjj
 use Modules\Notify\Tests\Fixtures\EditNotifyThemeTestProxy;
 use Modules\Notify\Filament\Resources\NotifyThemeResource\RelationManagers\LinkableRelationManager;
 use Modules\Notify\Filament\Tables\Columns\ContactColumn;
@@ -33,23 +32,6 @@ function makeEditNotifyThemeTestProxy(): EditNotifyThemeTestProxy
 test('list notification templates page returns empty table columns array', function (): void {
     $page = new ListNotificationTemplates;
     $columns = $page->getTableColumns();
-=======
-use Modules\Notify\Filament\Resources\NotifyThemeResource\RelationManagers\LinkableRelationManager;
-use Modules\Notify\Filament\Tables\Columns\ContactColumn;
-use Modules\Notify\Tests\Fixtures\EditNotifyThemeTestProxy;
-use Modules\Notify\Tests\TestCase;
-use PHPUnit\Framework\Assert;
-
-uses(TestCase::class)->group('no-notify-db');
-
-function makeEditNotifyThemeTestProxy(): EditNotifyThemeTestProxy
-{
-    return new EditNotifyThemeTestProxy();
-}
-
-test('list notification templates page returns empty table columns array', function (): void {
-    $columns = ListNotificationTemplates::notificationTemplateTableColumns();
->>>>>>> .merge_file_OVCevs
     Assert::assertSame([], $columns);
 });
 
@@ -60,15 +42,7 @@ test('notify theme resource field options are configured', function (): void {
 });
 
 test('notify theme resource form schema exposes expected components', function (): void {
-<<<<<<< .merge_file_u7mIYC
-    $schema = NotifyThemeResource::getFormSchema();
-=======
-<<<<<<< .merge_file_w1qMjj
-    $schema = NotifyThemeResource::getFormSchema();
-=======
     $schema = NotifyThemeResource::getFormSchemaOld();
->>>>>>> .merge_file_OVCevs
->>>>>>> .merge_file_3d9Yfp
     Assert::assertArrayHasKey('post_id', $schema);
     Assert::assertInstanceOf(TextInput::class, $schema['post_id']);
     Assert::assertArrayHasKey('logo', $schema);
@@ -91,17 +65,8 @@ test('edit notify theme page exposes delete header action', function (): void {
 
 test('list notify themes columns and filters are configured', function (): void {
     $columns = ListNotifyThemes::getNotifyThemeTableColumns();
-<<<<<<< .merge_file_u7mIYC
     $page = new ListNotifyThemes();
     $filters = $page->getTableFilters();
-=======
-<<<<<<< .merge_file_w1qMjj
-    $page = new ListNotifyThemes;
-    $filters = $page->getTableFilters();
-=======
-    $filters = ListNotifyThemes::getNotifyThemeTableFilters();
->>>>>>> .merge_file_OVCevs
->>>>>>> .merge_file_3d9Yfp
     Assert::assertArrayHasKey('id', $columns);
     Assert::assertInstanceOf(TextColumn::class, $columns['id']);
     Assert::assertArrayHasKey('lang', $columns);

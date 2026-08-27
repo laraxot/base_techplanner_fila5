@@ -27,15 +27,8 @@ Segui questi passaggi per risolvere:
 
 1. Vai nella cartella del tema:
    ```bash
-<<<<<<< .merge_file_mJjt0u
    cd /var/www/html/_bases/base_fixcity_fila5_mono/laravel/Themes/Sixteen
-=======
-<<<<<<< .merge_file_xOSv6G
-   cd /var/www/html/_bases/base_fixcity_fila5_mono/laravel/Themes/Sixteen
-=======
->>>>>>> .merge_file_reyKgi
    cd /var/www/html/_bases/base_ptvx_fila5_mono/laravel/Themes/Sixteen
->>>>>>> .merge_file_wRF0MN
    ```
 2. Esegui il comando:
    ```bash

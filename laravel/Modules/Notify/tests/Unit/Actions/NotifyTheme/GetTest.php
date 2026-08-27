@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Actions\NotifyTheme;
-<<<<<<< .merge_file_m7KCCn
 use Modules\Notify\Tests\TestCase;
 use function Safe\file_get_contents;
 use Modules\Notify\Actions\NotifyTheme\Get;
@@ -17,22 +16,6 @@ uses(\Modules\Notify\Tests\TestCase::class);
 
 describe('NotifyTheme\Get', function () {
         it('can be instantiated', function () {
-=======
-
-use Modules\Notify\Actions\NotifyTheme\Get;
-use Modules\Notify\Datas\NotifyThemeData;
-use Modules\Notify\Tests\TestCase;
-use Modules\Xot\Tests\XotBasePest;
-use PHPUnit\Framework\Assert;
-use Spatie\QueueableAction\QueueableAction;
-
-use function Safe\class_uses;
-
-uses(TestCase::class)->group('notify-db');
-
-describe('NotifyTheme\Get', function () {
-    it('can be instantiated', function () {
->>>>>>> .merge_file_h0DFlZ
         Assert::assertTrue(class_exists(Get::class));
     });
 
@@ -54,15 +37,9 @@ describe('NotifyTheme\Get', function () {
         $method = $reflection->getMethod('execute');
         $params = $method->getParameters();
 
-<<<<<<< .merge_file_m7KCCn
-        \assertReflectionTypeName($params[0]->getType(), 'string');
-        \assertReflectionTypeName($params[1]->getType(), 'string');
-        \assertReflectionTypeName($params[2]->getType(), 'array');
-=======
         XotBasePest::assertReflectionTypeName($params[0]->getType(), 'string');
         XotBasePest::assertReflectionTypeName($params[1]->getType(), 'string');
         XotBasePest::assertReflectionTypeName($params[2]->getType(), 'array');
->>>>>>> .merge_file_h0DFlZ
     });
 
     it('execute returns NotifyThemeData', function () {
@@ -70,20 +47,12 @@ describe('NotifyTheme\Get', function () {
         $method = $reflection->getMethod('execute');
         $returnType = $method->getReturnType();
 
-<<<<<<< .merge_file_m7KCCn
-        \assertReflectionTypeName($returnType, NotifyThemeData::class);
-=======
         XotBasePest::assertReflectionTypeName($returnType, NotifyThemeData::class);
->>>>>>> .merge_file_h0DFlZ
     });
 
     it('uses strict types', function () {
         $reflection = new \ReflectionClass(Get::class);
-<<<<<<< .merge_file_m7KCCn
-        $content = \notifyReflectionSource($reflection);
-=======
         $content = TestCase::notifyReflectionSource($reflection);
->>>>>>> .merge_file_h0DFlZ
         Assert::assertStringContainsString('declare(strict_types=1)', $content);
     });
 
@@ -94,11 +63,7 @@ describe('NotifyTheme\Get', function () {
     });
 
     it('has required imports', function () {
-<<<<<<< .merge_file_m7KCCn
-        $content = \notifyReflectionSource(new \ReflectionClass(Get::class));
-=======
         $content = TestCase::notifyReflectionSource(new \ReflectionClass(Get::class));
->>>>>>> .merge_file_h0DFlZ
 
         Assert::assertStringContainsString('use Modules\Notify\Datas\NotifyThemeData', $content);
         Assert::assertStringContainsString('use Modules\Notify\Models\NotifyTheme', $content);

@@ -128,15 +128,8 @@ Filament is designed to **work with Eloquent**.
 ```blade
 {{-- Manual query in blade --}}
 @php
-<<<<<<< .merge_file_fHQ9ke
     $items = DB::table('predicts')
-=======
-<<<<<<< .merge_file_EbhWxB
-    $items = DB::table('predicts')
-=======
->>>>>>> .merge_file_NhUMbZ
     $items = DB::table('forecasts')
->>>>>>> .merge_file_MsiOiz
         ->where('status', 'active')
         ->orderBy('created_at', 'desc')
         ->paginate(10);
@@ -153,15 +146,8 @@ Filament is designed to **work with Eloquent**.
 public function table(Table $table): Table
 {
     return $table
-<<<<<<< .merge_file_fHQ9ke
         ->query(Predict::query()->where('status', 'active'))
-=======
-<<<<<<< .merge_file_EbhWxB
-        ->query(Predict::query()->where('status', 'active'))
-=======
->>>>>>> .merge_file_NhUMbZ
         ->query(Forecast::query()->where('status', 'active'))
->>>>>>> .merge_file_MsiOiz
         ->columns([
             TextColumn::make('title')->sortable()->searchable(),
         ])
@@ -381,9 +367,6 @@ Before approving a PR:
 **Last Updated**: 2026-03-20  
 **Status**: ✅ Mandatory  
 **Enforcement**: PHPStan + Code Review
-<<<<<<< .merge_file_EbhWxB
-=======
-
 ---
 
 <!-- Merged from 04-FILAMENT-PHILOSOPHY.md, which collided with this file on case-insensitive filesystems. -->
@@ -735,4 +718,3 @@ Before approving a PR:
 **Last Updated**: 2026-03-20  
 **Status**: ✅ Mandatory  
 **Enforcement**: PHPStan + Code Review
->>>>>>> .merge_file_MsiOiz

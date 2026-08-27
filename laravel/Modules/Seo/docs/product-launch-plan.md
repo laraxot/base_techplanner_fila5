@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 77e0353 (.)
-=======
->>>>>>> fc52fe0 (.)
-=======
->>>>>>> c101b34 (.)
-=======
->>>>>>> d0f51b6 (.)
 ---
 module: theme
 topic: product-launch-plan
@@ -19,13 +5,6 @@ canonical: ../../../Themes/docs/shared-components/PRODUCT_LAUNCH_PLAN-Modules.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/PRODUCT_LAUNCH_PLAN-Modules.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> d20252d (.)
 # Seo Module - Product Launch Plan
 
 **Module:** Seo  
@@ -107,15 +86,3 @@ See canonical documentation: ../../../Themes/docs/shared-components/PRODUCT_LAUN
 
 ---
 
-<<<<<<< HEAD
->>>>>>> 7ec200b (.)
-=======
->>>>>>> d20252d (.)
-=======
->>>>>>> 77e0353 (.)
-=======
->>>>>>> fc52fe0 (.)
-=======
->>>>>>> c101b34 (.)
-=======
->>>>>>> d0f51b6 (.)

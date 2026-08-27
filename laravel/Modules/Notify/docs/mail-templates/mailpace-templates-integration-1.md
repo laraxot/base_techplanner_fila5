@@ -22,21 +22,8 @@ related:
 
 ## Panoramica
 
-<<<<<<< .merge_file_SBqqQL
-<<<<<<< .merge_file_UfKVhk
 Questo documento descrive l'integrazione dei template email [mailpace/templates](https://github.com/mailpace/templates) nel modulo Notify di Quaeris. Questi template offrono un design moderno basato su TailwindCSS con supporto nativo per la modalità scura.
-=======
-=======
-<<<<<<< .merge_file_w1XUQF
-Questo documento descrive l'integrazione dei template email [mailpace/templates](https://github.com/mailpace/templates) nel modulo Notify di Quaeris. Questi template offrono un design moderno basato su TailwindCSS con supporto nativo per la modalità scura.
-=======
-<<<<<<< .merge_file_UfKVhk
-Questo documento descrive l'integrazione dei template email [mailpace/templates](https://github.com/mailpace/templates) nel modulo Notify di Quaeris. Questi template offrono un design moderno basato su TailwindCSS con supporto nativo per la modalità scura.
-=======
->>>>>>> .merge_file_zzKQ2g
->>>>>>> .merge_file_3uFrRB
 Questo documento descrive l'integrazione dei template email [mailpace/templates](https://github.com/mailpace/templates) nel modulo Notify di App. Questi template offrono un design moderno basato su TailwindCSS con supporto nativo per la modalità scura.
->>>>>>> .merge_file_P0liHL
 
 ## Template Disponibili
 
@@ -62,21 +49,8 @@ MailPace offre i seguenti template transazionali:
 ### Struttura della Directory
 
 ```
-<<<<<<< .merge_file_SBqqQL
-<<<<<<< .merge_file_UfKVhk
 /var/www/html/Quaeris/laravel/Modules/Notify/resources/mail-layouts/
-=======
-=======
-<<<<<<< .merge_file_w1XUQF
-/var/www/html/Quaeris/laravel/Modules/Notify/resources/mail-layouts/
-=======
-<<<<<<< .merge_file_UfKVhk
-/var/www/html/Quaeris/laravel/Modules/Notify/resources/mail-layouts/
-=======
->>>>>>> .merge_file_zzKQ2g
->>>>>>> .merge_file_3uFrRB
 /var/www/_bases/base_ptvx_fila5/laravel/Modules/Notify/resources/mail-layouts/
->>>>>>> .merge_file_P0liHL
 ├── default.html       # Layout base per la maggior parte delle email
 ├── main.html          # Alternativa semplificata
 ├── marketing.html     # Layout ottimizzato per email marketing
@@ -137,21 +111,8 @@ $mailTemplate->send($user->email, [
 1. **Mantieni la Struttura Base** - Non modificare la struttura HTML base per garantire compatibilità
 2. **Usa Variabili** - Utilizza variabili Blade per contenuti dinamici
 3. **Test Cross-Client** - Testa i template su diversi client email
-<<<<<<< .merge_file_SBqqQL
-<<<<<<< .merge_file_UfKVhk
 4. **Segui le Convenzioni di Branding** - Usa i colori e font definiti per Quaeris
-=======
-=======
-<<<<<<< .merge_file_w1XUQF
-4. **Segui le Convenzioni di Branding** - Usa i colori e font definiti per Quaeris
-=======
-<<<<<<< .merge_file_UfKVhk
-4. **Segui le Convenzioni di Branding** - Usa i colori e font definiti per Quaeris
-=======
->>>>>>> .merge_file_zzKQ2g
->>>>>>> .merge_file_3uFrRB
 4. **Segui le Convenzioni di Branding** - Usa i colori e font definiti per App
->>>>>>> .merge_file_P0liHL
 
 ## Riferimenti
 

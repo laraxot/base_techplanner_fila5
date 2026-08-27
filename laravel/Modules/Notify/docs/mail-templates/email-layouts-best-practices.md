@@ -1,14 +1,7 @@
 # Email Layouts Best Practices 
 
-<<<<<<< .merge_file_26WVMa
 Questa documentazione descrive le best practices da seguire per i layout email quando si utilizza `spatie/laravel-database-mail-templates` nel modulo Notify di Quaeris.
-=======
-<<<<<<< .merge_file_sbhnfk
-Questa documentazione descrive le best practices da seguire per i layout email quando si utilizza `spatie/laravel-database-mail-templates` nel modulo Notify di Quaeris.
-=======
->>>>>>> .merge_file_Em4IjF
 Questa documentazione descrive le best practices da seguire per i layout email quando si utilizza `spatie/laravel-database-mail-templates` nel modulo Notify di App.
->>>>>>> .merge_file_1N2pzS
 
 ## Indice
 
@@ -23,15 +16,8 @@ Questa documentazione descrive le best practices da seguire per i layout email q
 
 ## Introduzione
 
-<<<<<<< .merge_file_26WVMa
 Quaeris utilizza `spatie/laravel-database-mail-templates` per memorizzare e gestire i template email nel database. Questo approccio separa nettamente:
-=======
-<<<<<<< .merge_file_sbhnfk
-Quaeris utilizza `spatie/laravel-database-mail-templates` per memorizzare e gestire i template email nel database. Questo approccio separa nettamente:
-=======
->>>>>>> .merge_file_Em4IjF
 App utilizza `spatie/laravel-database-mail-templates` per memorizzare e gestire i template email nel database. Questo approccio separa nettamente:
->>>>>>> .merge_file_1N2pzS
 
 1. **Layout HTML base**: Struttura generale dell'email (`resources/mail-layouts/*.html`)
 2. **Contenuto dei template**: Contenuto specifico memorizzato nel database (tabella `mail_templates`)
@@ -220,15 +206,7 @@ Il supporto per la Dark Mode migliora l'esperienza utente e riduce l'affaticamen
 
 - [Documentazione Spatie Laravel Database Mail Templates](https://github.com/spatie/laravel-database-mail-templates)
 - [Email Templates Guide](./email_templates_guide.md)
-<<<<<<< .merge_file_26WVMa
 - [Spatie Mail Templates Structure](./spatie_mail_templates_structure.md)
 - [Template Content Examples](./template_content_examples.md)
-=======
-<<<<<<< .merge_file_sbhnfk
-- [Spatie Mail Templates Structure](./spatie_mail_templates_structure.md)
-- [Template Content Examples](./template_content_examples.md)
-=======
->>>>>>> .merge_file_Em4IjF
 - [Spatie Mail Templates Structure](./spatie-mail-templates-structure.md)
 - [Template Content Examples](./template-content-examples.md)
->>>>>>> .merge_file_1N2pzS

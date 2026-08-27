@@ -107,15 +107,8 @@ bmad-verify-work [N]         # Verifica
 
 - [Indice AGENTS](./agents-split-index.md)
 - [gsd-bmad-comprehensive-guide.md](./gsd-bmad-comprehensive-guide.md)
-<<<<<<< .merge_file_QBV29P
 - [AGENTS.md originale](../../AGENTS.md)
-=======
-<<<<<<< .merge_file_lA8iei
-- [AGENTS.md originale](../../AGENTS.md)
-=======
->>>>>>> .merge_file_iincb1
 - [agents.md originale](../../agents.md)
->>>>>>> .merge_file_BrrVbA
 - [Index principale](./index.md)
 
 ## Differenze vs Originale

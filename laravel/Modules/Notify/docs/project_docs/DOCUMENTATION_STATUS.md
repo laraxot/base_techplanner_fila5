@@ -8,15 +8,8 @@
 
 ## 🎯 EXECUTIVE SUMMARY
 
-<<<<<<< .merge_file_XLs4ZH
 Stato della documentazione del progetto FixCity aggiornato a Ottobre 2025. La documentazione è in fase di
-=======
-<<<<<<< .merge_file_xzrUTR
-Stato della documentazione del progetto FixCity aggiornato a Ottobre 2025. La documentazione è in fase di
-=======
->>>>>>> .merge_file_rvcOJt
 Stato della documentazione del progetto Notify aggiornato a Ottobre 2025. La documentazione è in fase di
->>>>>>> .merge_file_ED0JJU
 consolidamento seguendo le roadmap definite. Focus attuale: completamento documentazione moduli e temi.
 
 ---
@@ -40,15 +33,8 @@ consolidamento seguendo le roadmap definite. Focus attuale: completamento docume
 
 ---
 
-<<<<<<< .merge_file_XLs4ZH
 #### ✅ Fixcity (Core Business) - 85% COMPLETATO
-=======
-<<<<<<< .merge_file_xzrUTR
-#### ✅ Fixcity (Core Business) - 85% COMPLETATO
-=======
->>>>>>> .merge_file_rvcOJt
 #### ✅ App (Core Business) - 85% COMPLETATO
->>>>>>> .merge_file_ED0JJU
 **Documentazione Presente**:
 - [x] README.md completo
 - [x] ROADMAP.md
@@ -355,15 +341,8 @@ consolidamento seguendo le roadmap definite. Focus attuale: completamento docume
 ## 🎯 PRIORITÀ IMMEDIATE (Next 30 Days)
 
 ### Week 1-2: Moduli Core
-<<<<<<< .merge_file_XLs4ZH
 - [ ] Completare API documentation Fixcity
-=======
-<<<<<<< .merge_file_xzrUTR
-- [ ] Completare API documentation Fixcity
-=======
->>>>>>> .merge_file_rvcOJt
 - [ ] Completare API documentation App
->>>>>>> .merge_file_ED0JJU
 - [ ] Completare User guide 2FA/SSO
 - [ ] Aggiornare Xot migration guide
 
@@ -419,15 +398,8 @@ consolidamento seguendo le roadmap definite. Focus attuale: completamento docume
 - [Roadmap Documentation](./roadmaps/roadmap-documentation.md)
 
 ### Documentazione Moduli
-<<<<<<< .merge_file_XLs4ZH
 - [Fixcity Module](../laravel/Modules/Fixcity/docs/)
-=======
-<<<<<<< .merge_file_xzrUTR
-- [Fixcity Module](../laravel/Modules/Fixcity/docs/)
-=======
->>>>>>> .merge_file_rvcOJt
 - [App Module](../laravel/Modules/App/docs/)
->>>>>>> .merge_file_ED0JJU
 - [User Module](../laravel/Modules/User/docs/)
 - [Xot Module](../laravel/Modules/Xot/docs/)
 - [UI Module](../laravel/Modules/UI/docs/)

@@ -1,27 +1,13 @@
 ---
-<<<<<<< .merge_file_ITzP4Z
 title: "GitHub Issues & Discussions - FixCity Platform"
-=======
-<<<<<<< .merge_file_AD0f8m
-title: "GitHub Issues & Discussions - FixCity Platform"
-=======
->>>>>>> .merge_file_QvhqMx
 title: "GitHub Issues & Discussions - Notify Platform"
->>>>>>> .merge_file_zKnglc
 type: index
 tags: [notify, docs, github]
 module: Notify
 created: 2026-07-20
 updated: 2026-07-20
-<<<<<<< .merge_file_ITzP4Z
 qmd: "notify documentazione github readme github issues & discussions - fixcity platform index readme frontmatter qmd search"
-=======
-<<<<<<< .merge_file_AD0f8m
-qmd: "notify documentazione github readme github issues & discussions - fixcity platform index readme frontmatter qmd search"
-=======
->>>>>>> .merge_file_QvhqMx
 qmd: "notify documentazione github readme github issues & discussions - laraxot platform index readme frontmatter qmd search"
->>>>>>> .merge_file_zKnglc
 issues:
   - "https://github.com/laraxot/module_notify_fila5/issues/56"
 discussions:
@@ -33,38 +19,17 @@ related:
   - ../integrations/readme.md
   - ../templates/readme.md
 ---
-<<<<<<< .merge_file_ITzP4Z
 # GitHub Issues & Discussions - FixCity Platform
 
 > **Last Updated**: 2026-03-13  
 > **Repository**: https://github.com/laraxot/base_fixcity_fila5
-=======
-<<<<<<< .merge_file_AD0f8m
-# GitHub Issues & Discussions - FixCity Platform
-
-> **Last Updated**: 2026-03-13  
-> **Repository**: https://github.com/laraxot/base_fixcity_fila5
-=======
-# GitHub Issues & Discussions - Notify Platform
-
-> **Last Updated**: 2026-03-13  
-> **Repository**: https://github.com/laraxot/platform
->>>>>>> .merge_file_zKnglc
->>>>>>> .merge_file_QvhqMx
 
 ---
 
 ## 📋 Overview
 
-<<<<<<< .merge_file_ITzP4Z
 Questo documento traccia tutte le GitHub Issues e Discussions create per il progetto FixCity.
-=======
-<<<<<<< .merge_file_AD0f8m
-Questo documento traccia tutte le GitHub Issues e Discussions create per il progetto FixCity.
-=======
->>>>>>> .merge_file_QvhqMx
 Questo documento traccia tutte le GitHub Issues e Discussions create per il progetto Notify.
->>>>>>> .merge_file_zKnglc
 
 ---
 
@@ -72,15 +37,8 @@ Questo documento traccia tutte le GitHub Issues e Discussions create per il prog
 
 ### Issue #5: 📁 Fix Database Directory Naming Convention
 
-<<<<<<< .merge_file_ITzP4Z
 **URL**: https://github.com/laraxot/base_fixcity_fila5/issues/5  
-=======
-<<<<<<< .merge_file_AD0f8m
-**URL**: https://github.com/laraxot/base_fixcity_fila5/issues/5  
-=======
->>>>>>> .merge_file_QvhqMx
 **URL**: https://github.com/laraxot/platform/issues/5  
->>>>>>> .merge_file_zKnglc
 **Created**: 2026-03-13  
 **Author**: @marco76tv  
 **Labels**: `documentation`, `good first issue`  
@@ -103,15 +61,8 @@ Alcuni file di documentazione facevano riferimento a directory del database con 
 - [ ] Blog (✅ Completato)
 - [ ] Cms
 - [ ] Comment
-<<<<<<< .merge_file_ITzP4Z
 - [ ] Fixcity
-=======
-<<<<<<< .merge_file_AD0f8m
-- [ ] Fixcity
-=======
->>>>>>> .merge_file_QvhqMx
 - [ ] App
->>>>>>> .merge_file_zKnglc
 - [ ] Gdpr
 - [ ] Geo
 - [ ] Job
@@ -127,15 +78,8 @@ Alcuni file di documentazione facevano riferimento a directory del database con 
 
 #### References
 - [Database Naming Convention](conventions/database-naming.md)
-<<<<<<< .merge_file_ITzP4Z
 - [AGENTS.md](../../AGENTS.md)
-=======
-<<<<<<< .merge_file_AD0f8m
-- [AGENTS.md](../../AGENTS.md)
-=======
->>>>>>> .merge_file_QvhqMx
 - [agents.md](../../agents.md)
->>>>>>> .merge_file_zKnglc
 
 ---
 
@@ -143,15 +87,8 @@ Alcuni file di documentazione facevano riferimento a directory del database con 
 
 ### Discussion #1: 📁 Database Directory Naming Best Practices
 
-<<<<<<< .merge_file_ITzP4Z
 **URL**: https://github.com/laraxot/base_fixcity_fila5/discussions/1  
-=======
-<<<<<<< .merge_file_AD0f8m
-**URL**: https://github.com/laraxot/base_fixcity_fila5/discussions/1  
-=======
->>>>>>> .merge_file_QvhqMx
 **URL**: https://github.com/laraxot/platform/discussions/1  
->>>>>>> .merge_file_zKnglc
 **Created**: 2026-03-13  
 **Author**: @marco76tv  
 **Category**: General  
@@ -254,15 +191,8 @@ Discussion per standardizzare la convention delle directory del database in tutt
 ### Module Labels
 - `module:blog` - Blog module
 - `module:cms` - Cms module
-<<<<<<< .merge_file_ITzP4Z
 - `module:fixcity` - Fixcity module
-=======
-<<<<<<< .merge_file_AD0f8m
-- `module:fixcity` - Fixcity module
-=======
->>>>>>> .merge_file_QvhqMx
 - `module:laraxot` - App module
->>>>>>> .merge_file_zKnglc
 - `module:user` - User module
 - `module:xot` - Xot module
 - [Add more as needed]
@@ -345,12 +275,5 @@ For questions about GitHub usage:
 ---
 
 **Maintainer**: @marco76tv  
-<<<<<<< .merge_file_ITzP4Z
 **Contact**: dev @fixcity.example.com
-=======
-<<<<<<< .merge_file_AD0f8m
-**Contact**: dev @fixcity.example.com
-=======
->>>>>>> .merge_file_QvhqMx
 **Contact**: dev @laraxot.example.com
->>>>>>> .merge_file_zKnglc

@@ -1,27 +1,13 @@
 ---
-<<<<<<< .merge_file_ARXq9m
 title: "📚 Documentation Index - FixCity Project"
-=======
-<<<<<<< .merge_file_1WctIf
-title: "📚 Documentation Index - FixCity Project"
-=======
->>>>>>> .merge_file_7rvLxH
 title: "📚 Documentation Index - Notify Project"
->>>>>>> .merge_file_l97LKu
 type: index
 tags: [notify, docs, project_docs]
 module: Notify
 created: 2026-07-20
 updated: 2026-07-20
-<<<<<<< .merge_file_ARXq9m
 qmd: "notify documentazione project_docs index 📚 documentation index - fixcity project index readme frontmatter qmd search"
-=======
-<<<<<<< .merge_file_1WctIf
-qmd: "notify documentazione project_docs index 📚 documentation index - fixcity project index readme frontmatter qmd search"
-=======
->>>>>>> .merge_file_7rvLxH
 qmd: "notify documentazione project_docs index 📚 documentation index - laraxot project index readme frontmatter qmd search"
->>>>>>> .merge_file_l97LKu
 issues:
   - "https://github.com/laraxot/module_notify_fila5/issues/56"
 discussions:
@@ -33,15 +19,8 @@ related:
   - ../integrations/readme.md
   - ../templates/readme.md
 ---
-<<<<<<< .merge_file_ARXq9m
 # 📚 Documentation Index - FixCity Project
-=======
-<<<<<<< .merge_file_1WctIf
-# 📚 Documentation Index - FixCity Project
-=======
->>>>>>> .merge_file_7rvLxH
 # 📚 Documentation Index - Notify Project
->>>>>>> .merge_file_l97LKu
 
 **Last Updated:** 2025-10-01 21:47  
 **Status:** ✅ Complete
@@ -54,15 +33,8 @@ related:
 
 1. [**README.md**](../README.md) - Project overview and quick start
 2. [**CONTRIBUTING.md**](../CONTRIBUTING.md) - How to contribute
-<<<<<<< .merge_file_ARXq9m
 3. [**ARCHITECTURE.md**](./ARCHITECTURE.md) - System architecture
-=======
-<<<<<<< .merge_file_1WctIf
-3. [**ARCHITECTURE.md**](./ARCHITECTURE.md) - System architecture
-=======
->>>>>>> .merge_file_7rvLxH
 3. [**ARCHITECTURE.md**](./architecture.md) - System architecture
->>>>>>> .merge_file_l97LKu
 4. [**QUALITY_DASHBOARD.md**](./QUALITY_DASHBOARD.md) - Real-time metrics
 
 ### 📊 Reports & Analysis
@@ -99,15 +71,8 @@ related:
 - Commit guidelines
 - PR process
 
-<<<<<<< .merge_file_ARXq9m
 ### 3. ARCHITECTURE.md
-=======
-<<<<<<< .merge_file_1WctIf
-### 3. ARCHITECTURE.md
-=======
->>>>>>> .merge_file_7rvLxH
 ### 3. architecture.md
->>>>>>> .merge_file_l97LKu
 **Purpose:** System architecture documentation  
 **Audience:** Developers, architects  
 **Content:**
@@ -205,15 +170,8 @@ Each module has a `docs/` directory containing:
 - [Extensive documentation](../Modules/User/docs/)
 
 #### Other Modules
-<<<<<<< .merge_file_ARXq9m
 - AI, Activity, Blog, Cms, Comment, Fixcity, Gdpr, Geo, Job, Lang, Media, Notify, Rating, Seo, UI
-=======
-<<<<<<< .merge_file_1WctIf
-- AI, Activity, Blog, Cms, Comment, Fixcity, Gdpr, Geo, Job, Lang, Media, Notify, Rating, Seo, UI
-=======
->>>>>>> .merge_file_7rvLxH
 - AI, Activity, Blog, Cms, Comment, App, Gdpr, Geo, Job, Lang, Media, Notify, Rating, Seo, UI
->>>>>>> .merge_file_l97LKu
 - Each with cyclomatic complexity report
 
 ---
@@ -273,15 +231,8 @@ Each module has a `docs/` directory containing:
 ### For Developers
 - README.md
 - CONTRIBUTING.md
-<<<<<<< .merge_file_ARXq9m
 - ARCHITECTURE.md
-=======
-<<<<<<< .merge_file_1WctIf
-- ARCHITECTURE.md
-=======
->>>>>>> .merge_file_7rvLxH
 - architecture.md
->>>>>>> .merge_file_l97LKu
 - Module documentation
 - Refactoring reports
 
@@ -329,15 +280,8 @@ Each module has a `docs/` directory containing:
 ### By Topic
 
 **Architecture & Design:**
-<<<<<<< .merge_file_ARXq9m
 - ARCHITECTURE.md
-=======
-<<<<<<< .merge_file_1WctIf
-- ARCHITECTURE.md
-=======
->>>>>>> .merge_file_7rvLxH
 - architecture.md
->>>>>>> .merge_file_l97LKu
 - Design patterns section
 - Module structure
 
@@ -470,30 +414,16 @@ All documents include:
 ## 📅 Recent Updates
 
 ### 2025-10-01
-<<<<<<< .merge_file_ARXq9m
 - ✅ Created INDEX.md
-=======
-<<<<<<< .merge_file_1WctIf
-- ✅ Created INDEX.md
-=======
->>>>>>> .merge_file_7rvLxH
 - ✅ Created index.md
->>>>>>> .merge_file_l97LKu
 - ✅ Completed MISSION_ACCOMPLISHED.md
 - ✅ Finalized PROJECT_COMPLETION_CERTIFICATE.md
 - ✅ Updated all module reports
 - ✅ Enhanced README.md
 
 ### 2025-09-30
-<<<<<<< .merge_file_ARXq9m
 - ✅ Created ARCHITECTURE.md
-=======
-<<<<<<< .merge_file_1WctIf
-- ✅ Created ARCHITECTURE.md
-=======
->>>>>>> .merge_file_7rvLxH
 - ✅ Created architecture.md
->>>>>>> .merge_file_l97LKu
 - ✅ Created QUALITY_DASHBOARD.md
 - ✅ Created 2025_EXCELLENCE_ACHIEVEMENT.md
 
@@ -520,15 +450,8 @@ All documents include:
 ## 📞 Contact
 
 ### Documentation Team
-<<<<<<< .merge_file_ARXq9m
 - **Email:** docs@fixcity.com
-=======
-<<<<<<< .merge_file_1WctIf
-- **Email:** docs@fixcity.com
-=======
->>>>>>> .merge_file_7rvLxH
 - **Email:** docs@laraxot.com
->>>>>>> .merge_file_l97LKu
 - **GitHub:** Open an issue
 - **Slack:** #documentation
 

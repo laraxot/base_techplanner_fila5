@@ -24,11 +24,7 @@ class SendPushToPlatformAction
 
     /**
      * @param  array<string, mixed>  $data
-<<<<<<< .merge_file_6i5Flk
-     * @return array<string, mixed>
-=======
      * @return array{success: bool, message_id: mixed, response: mixed}|array{success: bool, message: string, platform: string}
->>>>>>> .merge_file_OLoekj
      */
     public function execute(string $platform, string $token, PushNotificationData $notification, array $data = []): array
     {
@@ -41,16 +37,11 @@ class SendPushToPlatformAction
     }
 
     /**
-<<<<<<< .merge_file_6i5Flk
-     * @param  array<string, mixed>  $data
-     * @return array<string, mixed>
-=======
      * `message_id` e `response` restano `mixed`: vengono da `Response::json()`, che
      * decodifica il corpo HTTP di FCM senza contratto.
      *
      * @param  array<string, mixed>  $data
      * @return array{success: bool, message_id: mixed, response: mixed}
->>>>>>> .merge_file_OLoekj
      */
     private function sendFCMNotification(string $token, PushNotificationData $notification, array $data): array
     {
@@ -98,11 +89,7 @@ class SendPushToPlatformAction
     }
 
     /**
-<<<<<<< .merge_file_6i5Flk
-     * @return array<string, mixed>
-=======
      * @return array{success: bool, message: string, platform: string}
->>>>>>> .merge_file_OLoekj
      */
     private function sendAPNSNotification(): array
     {
@@ -115,11 +102,7 @@ class SendPushToPlatformAction
 
     /**
      * @param  array<string, mixed>  $data
-<<<<<<< .merge_file_6i5Flk
-     * @return array<string, mixed>
-=======
      * @return array{success: bool, message: string, platform: string}
->>>>>>> .merge_file_OLoekj
      */
     private function sendWebPushNotification(PushNotificationData $notification, array $data): array
     {

@@ -24,21 +24,8 @@ related:
 **Module Version**: 2.1.0
 
 ## 🎯 **Lettura Essenziale**
-<<<<<<< .merge_file_3olnin
 1. [README.md](./readme.md) - Panoramica completa e Quick Start.
-<<<<<<< .merge_file_1y1Ydw
-=======
 1. [README.md](./README.md) - Panoramica completa e Quick Start.
->>>>>>> .merge_file_FGNvRy
-=======
-<<<<<<< .merge_file_Ij721X
-1. [README.md](./README.md) - Panoramica completa e Quick Start.
-=======
-=======
-1. [README.md](./README.md) - Panoramica completa e Quick Start.
->>>>>>> .merge_file_FGNvRy
->>>>>>> .merge_file_gkdnwO
->>>>>>> .merge_file_cSfO44
 2. [roadmap.md](./roadmap.md) - Evoluzione 2026: Multi-channel API e AI Templates.
 3. [philosophy.md](./philosophy.md) - "Essere Connessi": filosofia delle notifiche in tempo reale.
 

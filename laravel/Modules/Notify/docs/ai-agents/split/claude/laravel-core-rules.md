@@ -49,17 +49,9 @@
 
 ## Cross-References
 
-<<<<<<< .merge_file_nS7Bg0
 - ← [CLAUDE Index](INDEX.md) — All Laravel Boost guidelines
 - ← [Main AI Docs Index](../INDEX.md) — Master index
-=======
-<<<<<<< .merge_file_OX5PNg
-- ← [CLAUDE Index](INDEX.md) — All Laravel Boost guidelines
-- ← [Main AI Docs Index](../INDEX.md) — Master index
-=======
->>>>>>> .merge_file_CMGpNS
 - ← [CLAUDE Index](index.md) — All Laravel Boost guidelines
 - ← [Main AI Docs Index](../index.md) — Master index
->>>>>>> .merge_file_ouyIs7
 - ← [../../../../docs/CLAUDE.md](../../../../docs/../../../../docs/CLAUDE.md) — Original source
 

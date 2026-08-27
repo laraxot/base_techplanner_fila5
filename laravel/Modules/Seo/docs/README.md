@@ -1,106 +1,14 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> fc52fe0 (.)
-=======
->>>>>>> c101b34 (.)
-=======
->>>>>>> d0f51b6 (.)
----
-title: "Seo Module Documentation"
-type: documentation
-tags: [module, documentation]
-created: 2026-06-05
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-updated: 2026-07-24
-related:
-  - ./conflict-resolution.md
-  - ./wiki/concepts/metatag-data-contract.md
-=======
-updated: 2026-06-05
->>>>>>> cf01f0b (.)
----
-
-=======
->>>>>>> 7ec200b (.)
-=======
->>>>>>> d20252d (.)
-# Seo Module
-=======
 # 🎯 SEO Module - Search Engine Optimization
->>>>>>> dbf8b8d (.)
-=======
-# Seo Module
->>>>>>> 77e0353 (.)
-=======
-=======
->>>>>>> c101b34 (.)
-=======
->>>>>>> d0f51b6 (.)
-updated: 2026-06-05
----
-
-# Seo Module
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> fc52fe0 (.)
-=======
->>>>>>> c101b34 (.)
-=======
->>>>>>> d0f51b6 (.)
-=======
-# 🎯 SEO Module - Search Engine Optimization
->>>>>>> a771e9c (.)
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
 [![Filament 4.x](https://img.shields.io/badge/Filament-4.x-blue.svg)](https://filamentphp.com/)
 [![PHPStan Level 9](https://img.shields.io/badge/PHPStan-Level%209-brightgreen.svg)](https://phpstan.org/)
 [![Translation Ready](https://img.shields.io/badge/Translation-IT%20%7C%20EN-green.svg)](https://laravel.com/docs/localization)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 The **Seo Module** provides a comprehensive search engine optimization toolkit for Laravel applications, integrating advanced metadata management, sitemaps, structured data, and AI-powered content analysis.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Metatag facade (canone):** `MetatagFacadeAdapter` + `MetatagState` + Actions — vedi [conflict-resolution.md](./conflict-resolution.md) e [metatag-data-contract.md](./wiki/concepts/metatag-data-contract.md).
 
-=======
->>>>>>> cf01f0b (.)
-=======
->>>>>>> 7ec200b (.)
-=======
->>>>>>> d20252d (.)
-=======
-The **Seo Module** provides a comprehensive search engine optimization toolkit for Laravel applications, integrating advanced metadata management, sitemaps, structured data, and AI-powered content analysis.
-
->>>>>>> 77e0353 (.)
-=======
-The **Seo Module** provides a comprehensive search engine optimization toolkit for Laravel applications, integrating advanced metadata management, sitemaps, structured data, and AI-powered content analysis.
-
->>>>>>> fc52fe0 (.)
-=======
-The **Seo Module** provides a comprehensive search engine optimization toolkit for Laravel applications, integrating advanced metadata management, sitemaps, structured data, and AI-powered content analysis.
-
->>>>>>> c101b34 (.)
-=======
-The **Seo Module** provides a comprehensive search engine optimization toolkit for Laravel applications, integrating advanced metadata management, sitemaps, structured data, and AI-powered content analysis.
-
->>>>>>> d0f51b6 (.)
 ## 🚀 Features
 
 ### ✅ Completed
@@ -125,18 +33,6 @@ php artisan module:enable Seo
 php artisan migrate
 ```
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> d20252d (.)
-=======
-=======
->>>>>>> a771e9c (.)
 > **🚀 Modulo SEO**: Sistema completo per ottimizzazione motori di ricerca, gestione meta tags, sitemap e structured data.
 
 ## 📋 **Panoramica**
@@ -152,19 +48,6 @@ Il modulo **SEO** fornisce strumenti avanzati per l'ottimizzazione SEO:
 
 ## ⚡ **Funzionalità Core**
 
-<<<<<<< HEAD
->>>>>>> dbf8b8d (.)
-=======
-<<<<<<< HEAD
->>>>>>> 77e0353 (.)
-=======
->>>>>>> fc52fe0 (.)
-=======
->>>>>>> c101b34 (.)
-=======
->>>>>>> d0f51b6 (.)
-=======
->>>>>>> a771e9c (.)
 ### 🎯 **Meta Tags Management**
 ```php
 // Impostazione meta tags
@@ -412,34 +295,7 @@ php artisan seo:validate-schema
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 7ec200b (.)
-=======
-=======
->>>>>>> 77e0353 (.)
-=======
 Developers are encouraged to contribute to this documentation to keep it accurate and up-to-date.
->>>>>>> 013c0d2 (.)
-=======
-<<<<<<< HEAD
->>>>>>> d20252d (.)
-=======
->>>>>>> 77e0353 (.)
-=======
->>>>>>> fc52fe0 (.)
-=======
->>>>>>> c101b34 (.)
-=======
->>>>>>> d0f51b6 (.)
 ## ⚙️ Configuration
 
 Publish the configuration file to set up API keys (e.g., OpenAI) and defaults:
@@ -472,73 +328,4 @@ For Filament resources, use the provided SEO trait to add configuration fields t
 Please verify all changes with:
 - `phpstan analyse Modules/Seo` (Level 10)
 - `pest` (Test Suite)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> b33919b (.)
->>>>>>> 7ec200b (.)
-=======
->>>>>>> fc52fe0 (.)
-=======
->>>>>>> c101b34 (.)
-=======
->>>>>>> d0f51b6 (.)
-
-
-## Standard Rules & Workflow
-
-- [[BMAD Method](../../../../docs/wiki/concepts/bmad-method.md)]
-- [[Context Engineering](../../../../docs/wiki/concepts/context-engineering.md)]
-- [[LLM Wiki Governance](../../../../docs/wiki/concepts/llm-wiki-governance.md)]
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 7ec200b (.)
-=======
->>>>>>> fc52fe0 (.)
-=======
->>>>>>> c101b34 (.)
-=======
->>>>>>> d0f51b6 (.)
-
-## Documentation
-
-- [On-Demand Pattern](./ON-DEMAND-PATTERN.md) — Pattern per caricamento efficiente
-- [QMD Setup](./QMD-SETUP.md) — Configurazione ricerca locale
-- [Performance](./PERFORMANCE-OPTIMIZATION.md) — Metriche e best practice
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout
-=======
-- [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout
-=======
->>>>>>> 01dce8d29 (initial commit)
->>>>>>> 7ec200b (.)
-=======
->>>>>>> b33919b (.)
->>>>>>> d20252d (.)
-=======
->>>>>>> dbf8b8d (.)
-=======
->>>>>>> b33919b (.)
->>>>>>> 77e0353 (.)
-=======
-- [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout
->>>>>>> fc52fe0 (.)
-=======
-- [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout
->>>>>>> c101b34 (.)
-=======
-- [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout
->>>>>>> d0f51b6 (.)
-=======
->>>>>>> a771e9c (.)

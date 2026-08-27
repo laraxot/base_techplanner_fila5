@@ -1,39 +1,13 @@
 ---
-<<<<<<< .merge_file_1yQcVQ
-<<<<<<< .merge_file_8sXdSC
 title: "PHPStan Configuration - Progetto Base FixCity Fila3 Mono"
-=======
-=======
-<<<<<<< .merge_file_luBqbk
-title: "PHPStan Configuration - Progetto Base FixCity Fila3 Mono"
-=======
-<<<<<<< .merge_file_8sXdSC
-title: "PHPStan Configuration - Progetto Base FixCity Fila3 Mono"
-=======
->>>>>>> .merge_file_dMDUMo
->>>>>>> .merge_file_CSQiM7
 title: "PHPStan Configuration - Progetto Base Notify Fila3 Mono"
->>>>>>> .merge_file_hXDe6d
 type: index
 tags: [notify, docs, project_docs, development, phpstan]
 module: Notify
 created: 2026-07-20
 updated: 2026-07-20
-<<<<<<< .merge_file_1yQcVQ
-<<<<<<< .merge_file_8sXdSC
 qmd: "notify documentazione project_docs development phpstan readme phpstan configuration - progetto base fixcity fila3 mono index readme frontmatter qmd search"
-=======
-=======
-<<<<<<< .merge_file_luBqbk
-qmd: "notify documentazione project_docs development phpstan readme phpstan configuration - progetto base fixcity fila3 mono index readme frontmatter qmd search"
-=======
-<<<<<<< .merge_file_8sXdSC
-qmd: "notify documentazione project_docs development phpstan readme phpstan configuration - progetto base fixcity fila3 mono index readme frontmatter qmd search"
-=======
->>>>>>> .merge_file_dMDUMo
->>>>>>> .merge_file_CSQiM7
 qmd: "notify documentazione project_docs development phpstan readme phpstan configuration - progetto base laraxot fila3 mono index readme frontmatter qmd search"
->>>>>>> .merge_file_hXDe6d
 issues:
   - "https://github.com/laraxot/module_notify_fila5/issues/56"
 discussions:
@@ -45,21 +19,8 @@ related:
   - ../../../integrations/readme.md
   - ../../../templates/readme.md
 ---
-<<<<<<< .merge_file_1yQcVQ
-<<<<<<< .merge_file_8sXdSC
 # PHPStan Configuration - Progetto Base FixCity Fila3 Mono
-=======
-=======
-<<<<<<< .merge_file_luBqbk
-# PHPStan Configuration - Progetto Base FixCity Fila3 Mono
-=======
-<<<<<<< .merge_file_8sXdSC
-# PHPStan Configuration - Progetto Base FixCity Fila3 Mono
-=======
->>>>>>> .merge_file_dMDUMo
->>>>>>> .merge_file_CSQiM7
 # PHPStan Configuration - Progetto Base Notify Fila3 Mono
->>>>>>> .merge_file_hXDe6d
 
 ## Panoramica
 Questa sezione contiene la documentazione per la configurazione e l'utilizzo di PHPStan nel progetto Laraxot.

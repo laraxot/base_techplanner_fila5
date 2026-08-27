@@ -159,18 +159,10 @@ return [
 
 ## Riferimenti
 
-<<<<<<< .merge_file_havv5H
 - [Regole di Naming per i File di Traduzione](./translation_file_naming_rules.md)
 - [Guida alla Struttura dei File di Traduzione](./translation_file_structure_guide.md)
-=======
-<<<<<<< .merge_file_8ermbl
-- [Regole di Naming per i File di Traduzione](./translation_file_naming_rules.md)
-- [Guida alla Struttura dei File di Traduzione](./translation_file_structure_guide.md)
-=======
->>>>>>> .merge_file_zywNda
 - [Regole di Naming per i File di Traduzione](./translation-file-naming-rules.md)
 - [Guida alla Struttura dei File di Traduzione](./translation-file-structure-guide.md)
->>>>>>> .merge_file_VuX3ye
 - [Progresso della Standardizzazione](./translation_standards_progress.md)
 # Guida alla Correzione dei File di Traduzione
 
@@ -321,16 +313,8 @@ declare(strict_types=1);
 
 ## Riferimenti
 
-<<<<<<< .merge_file_havv5H
 - [Regole di Naming per i File di Traduzione](./translation_file_naming_rules.md)
 - [Guida alla Struttura dei File di Traduzione](./translation_file_structure_guide.md)
-=======
-<<<<<<< .merge_file_8ermbl
-- [Regole di Naming per i File di Traduzione](./translation_file_naming_rules.md)
-- [Guida alla Struttura dei File di Traduzione](./translation_file_structure_guide.md)
-=======
->>>>>>> .merge_file_zywNda
 - [Regole di Naming per i File di Traduzione](./translation-file-naming-rules.md)
 - [Guida alla Struttura dei File di Traduzione](./translation-file-structure-guide.md)
->>>>>>> .merge_file_VuX3ye
 - [Progresso della Standardizzazione](./translation_standards_progress.md)

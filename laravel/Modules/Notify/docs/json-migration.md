@@ -144,15 +144,8 @@ if ($validRecords !== $totalRecords) {
 
 ## Collegamenti Correlati
 
-<<<<<<< .merge_file_5prBTY
 - [Documentazione Migrazioni](./migration_rules.md)
-=======
-<<<<<<< .merge_file_LzvYNC
-- [Documentazione Migrazioni](./migration_rules.md)
-=======
->>>>>>> .merge_file_KeKjtZ
 - [Documentazione Migrazioni](./migration-rules.md)
->>>>>>> .merge_file_CTQu9r
 - [Best Practices JSON](./json_best_practices.md)
 - [Gestione Errori](./error_handling.md)
 

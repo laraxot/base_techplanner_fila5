@@ -10,21 +10,8 @@
 
 ## 🎯 MODULE OVERVIEW
 
-<<<<<<< .merge_file_bVUU8e
-<<<<<<< .merge_file_B1hSk9
 Il modulo **Notify** gestisce tutto il sistema di notifiche della piattaforma FixCity, inclusa la gestione delle notifiche in-app, email, SMS, push notifications e l'integrazione con servizi di terze parti.
-=======
-=======
-<<<<<<< .merge_file_Hjv4Ei
-Il modulo **Notify** gestisce tutto il sistema di notifiche della piattaforma FixCity, inclusa la gestione delle notifiche in-app, email, SMS, push notifications e l'integrazione con servizi di terze parti.
-=======
-<<<<<<< .merge_file_B1hSk9
-Il modulo **Notify** gestisce tutto il sistema di notifiche della piattaforma FixCity, inclusa la gestione delle notifiche in-app, email, SMS, push notifications e l'integrazione con servizi di terze parti.
-=======
->>>>>>> .merge_file_RrHeRH
->>>>>>> .merge_file_cbIg4o
 Il modulo **Notify** gestisce tutto il sistema di notifiche della piattaforma Notify, inclusa la gestione delle notifiche in-app, email, SMS, push notifications e l'integrazione con servizi di terze parti.
->>>>>>> .merge_file_FlR8nN
 
 ### 🏗️ Architettura Modulo
 ```

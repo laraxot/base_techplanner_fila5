@@ -1,18 +1,9 @@
-<<<<<<< .merge_file_4cYpAB
 # LLM Wiki Schema — FixCity
 
 Questo file è il "AGENTS.md" della wiki: istruzioni per l'LLM su come mantenere la wiki.
-=======
-<<<<<<< .merge_file_yAtZbP
-# LLM Wiki Schema — FixCity
-
-Questo file è il "AGENTS.md" della wiki: istruzioni per l'LLM su come mantenere la wiki.
-=======
->>>>>>> .merge_file_nVwiGd
 # LLM Wiki Schema — Notify
 
 Questo file è il "agents.md" della wiki: istruzioni per l'LLM su come mantenere la wiki.
->>>>>>> .merge_file_T8ssIy
 
 ---
 
@@ -150,15 +141,8 @@ Per wiki di **modulo** (`Modules/<Name>/docs/wiki/`):
 
 ---
 
-<<<<<<< .merge_file_4cYpAB
 ## Stack FixCity — Vocabolario Wiki
-=======
-<<<<<<< .merge_file_yAtZbP
-## Stack FixCity — Vocabolario Wiki
-=======
->>>>>>> .merge_file_nVwiGd
 ## Stack Notify — Vocabolario Wiki
->>>>>>> .merge_file_T8ssIy
 
 Termini specifici del progetto da usare consistentemente:
 
@@ -177,15 +161,8 @@ Termini specifici del progetto da usare consistentemente:
 
 ---
 
-<<<<<<< .merge_file_4cYpAB
 ## Note sul Contesto FixCity
-=======
-<<<<<<< .merge_file_yAtZbP
-## Note sul Contesto FixCity
-=======
->>>>>>> .merge_file_nVwiGd
 ## Note sul Contesto Notify
->>>>>>> .merge_file_T8ssIy
 
 - **13.174+ file raw** nei moduli — non si leggono tutti in una sessione
 - **Molti archivi obsoleti** (Xot/archive/, Cms/archive/, etc.) — ignorarli nel lint

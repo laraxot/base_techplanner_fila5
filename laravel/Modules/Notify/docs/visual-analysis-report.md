@@ -452,15 +452,8 @@ TASK: "Understand system architecture"
 
 ```
 Filesystem Server
-<<<<<<< .merge_file_zsDubw
 └─ Reads: /var/www/_bases/base_fixcity_fila5/
-=======
-<<<<<<< .merge_file_NoVG9q
-└─ Reads: /var/www/_bases/base_fixcity_fila5/
-=======
->>>>>>> .merge_file_MjzHLX
 └─ Reads: /var/www/_bases/base_ptv_fila5/
->>>>>>> .merge_file_rwLI3Q
    └─ Indexes all docs
    └─ Enables fast file navigation
 

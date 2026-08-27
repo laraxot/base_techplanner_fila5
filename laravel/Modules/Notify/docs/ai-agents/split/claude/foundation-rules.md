@@ -1,15 +1,8 @@
 # claudeMd
 Codebase and user instructions are shown below. Be sure to adhere to these instructions. IMPORTANT: These instructions OVERRIDE any default behavior and you MUST follow them exactly as written.
 
-<<<<<<< .merge_file_oqFjDX
 Contents of /var/www/html/_bases/base_fixcity_fila5_mono/laravel/../../../../docs/CLAUDE.md (project instructions, checked into the codebase):
-=======
-<<<<<<< .merge_file_VYMBgC
-Contents of /var/www/html/_bases/base_fixcity_fila5_mono/laravel/../../../../docs/CLAUDE.md (project instructions, checked into the codebase):
-=======
->>>>>>> .merge_file_e3ALel
 Contents of /var/www/html/_bases/base_ptvx_fila5_mono/laravel/../../../../docs/CLAUDE.md (project instructions, checked into the codebase):
->>>>>>> .merge_file_AHwQU7
 
 <laravel-boost-guidelines>
 === foundation rules ===
@@ -63,17 +56,9 @@ This application is a Laravel application and its main Laravel ecosystems packag
 
 ## Cross-References
 
-<<<<<<< .merge_file_oqFjDX
 - ← [CLAUDE Index](INDEX.md) — All Laravel Boost guidelines
 - ← [Main AI Docs Index](../INDEX.md) — Master index
-=======
-<<<<<<< .merge_file_VYMBgC
-- ← [CLAUDE Index](INDEX.md) — All Laravel Boost guidelines
-- ← [Main AI Docs Index](../INDEX.md) — Master index
-=======
->>>>>>> .merge_file_e3ALel
 - ← [CLAUDE Index](index.md) — All Laravel Boost guidelines
 - ← [Main AI Docs Index](../index.md) — Master index
->>>>>>> .merge_file_AHwQU7
 - ← [../../../../docs/CLAUDE.md](../../../../docs/../../../../docs/CLAUDE.md) — Original source
 

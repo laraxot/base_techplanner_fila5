@@ -7,17 +7,11 @@ namespace Modules\Notify\Tests\Feature;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Modules\Notify\Database\Factories\NotifyThemeableFactory;
 use Modules\Notify\Database\Factories\NotifyThemeFactory;
-<<<<<<< .merge_file_sMjKoI
 use Modules\Notify\Models\NotifyTheme;
-=======
->>>>>>> .merge_file_zVnVX4
 use Modules\Notify\Models\NotifyThemeable;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< .merge_file_sMjKoI
-uses(\Modules\Notify\Tests\TestCase::class);
-=======
 uses(TestCase::class)->group('notify-db');
 
 function notifyThemeableTestDomain(): string
@@ -33,7 +27,6 @@ function notifyThemeableTestAppName(): string
 
     return is_string($name) ? $name : 'Platform';
 }
->>>>>>> .merge_file_zVnVX4
 
 describe('Notify Themeable Business Logic', function () {
     it('can create notify themeable with basic information', function () {
@@ -43,18 +36,8 @@ describe('Notify Themeable Business Logic', function () {
             'model_type' => 'App\Models\NotificationTemplate',
             'model_id' => 123,
             'notify_theme_id' => $theme->id,
-<<<<<<< .merge_file_oXNbs3
             'created_by' => 'admin@'.(string) config('app.domain', 'example.com'),
             'updated_by' => 'admin@'.(string) config('app.domain', 'example.com'),
-=======
-<<<<<<< .merge_file_sMjKoI
-            'created_by' => 'admin@'.(string) config('app.domain', 'example.com'),
-            'updated_by' => 'admin@'.(string) config('app.domain', 'example.com'),
-=======
-            'created_by' => 'admin@'.notifyThemeableTestDomain(),
-            'updated_by' => 'admin@'.notifyThemeableTestDomain(),
->>>>>>> .merge_file_zVnVX4
->>>>>>> .merge_file_nKPnM4
         ];
 
         $themeable = NotifyThemeable::create($themeableData);
@@ -102,15 +85,7 @@ describe('Notify Themeable Business Logic', function () {
     });
 
     it('can manage theme relationships', function () {
-<<<<<<< .merge_file_oXNbs3
         $appName = (string) config('app.name', 'Platform');
-=======
-<<<<<<< .merge_file_sMjKoI
-        $appName = (string) config('app.name', 'Platform');
-=======
-        $appName = notifyThemeableTestAppName();
->>>>>>> .merge_file_zVnVX4
->>>>>>> .merge_file_nKPnM4
         $themeLabel = $appName.' Professional';
         $theme = NotifyThemeFactory::new()->createOne([
             'subject' => $themeLabel,
@@ -121,11 +96,7 @@ describe('Notify Themeable Business Logic', function () {
             'notify_theme_id' => $theme->id,
         ]);
 
-<<<<<<< .merge_file_sMjKoI
-        $linkedTheme = \notifyThemeForThemeable($themeable);
-=======
         $linkedTheme = TestCase::notifyThemeForThemeable($themeable);
->>>>>>> .merge_file_zVnVX4
         Assert::assertSame($theme->id, $linkedTheme->id);
         Assert::assertSame($themeLabel, $linkedTheme->subject);
     });
@@ -135,30 +106,12 @@ describe('Notify Themeable Business Logic', function () {
 
         $themeable = NotifyThemeableFactory::new()->createOne([
             'notify_theme_id' => $theme->id,
-<<<<<<< .merge_file_oXNbs3
             'created_by' => 'developer@'.(string) config('app.domain', 'example.com'),
             'updated_by' => 'admin@'.(string) config('app.domain', 'example.com'),
         ]);
 
         Assert::assertSame('developer@'.(string) config('app.domain', 'example.com'), $themeable->created_by);
         Assert::assertSame('admin@'.(string) config('app.domain', 'example.com'), $themeable->updated_by);
-=======
-<<<<<<< .merge_file_sMjKoI
-            'created_by' => 'developer@'.(string) config('app.domain', 'example.com'),
-            'updated_by' => 'admin@'.(string) config('app.domain', 'example.com'),
-        ]);
-
-        Assert::assertSame('developer@'.(string) config('app.domain', 'example.com'), $themeable->created_by);
-        Assert::assertSame('admin@'.(string) config('app.domain', 'example.com'), $themeable->updated_by);
-=======
-            'created_by' => 'developer@'.notifyThemeableTestDomain(),
-            'updated_by' => 'admin@'.notifyThemeableTestDomain(),
-        ]);
-
-        Assert::assertSame('developer@'.notifyThemeableTestDomain(), $themeable->created_by);
-        Assert::assertSame('admin@'.notifyThemeableTestDomain(), $themeable->updated_by);
->>>>>>> .merge_file_zVnVX4
->>>>>>> .merge_file_nKPnM4
         Assert::assertNotNull($themeable->created_at);
         Assert::assertNotNull($themeable->updated_at);
     });
@@ -168,43 +121,19 @@ describe('Notify Themeable Business Logic', function () {
         $theme2 = NotifyThemeFactory::new()->createOne(['subject' => 'Tema 2']);
         $theme3 = NotifyThemeFactory::new()->createOne(['subject' => 'Tema 3']);
 
-<<<<<<< .merge_file_oXNbs3
         $themeable1 = NotifyThemeableFactory::new()->createOne([
-=======
-<<<<<<< .merge_file_sMjKoI
-        $themeable1 = NotifyThemeableFactory::new()->createOne([
-=======
-        NotifyThemeableFactory::new()->createOne([
->>>>>>> .merge_file_zVnVX4
->>>>>>> .merge_file_nKPnM4
             'model_type' => 'App\Models\NotificationTemplate',
             'model_id' => 123,
             'notify_theme_id' => $theme1->id,
         ]);
 
-<<<<<<< .merge_file_oXNbs3
         $themeable2 = NotifyThemeableFactory::new()->createOne([
-=======
-<<<<<<< .merge_file_sMjKoI
-        $themeable2 = NotifyThemeableFactory::new()->createOne([
-=======
-        NotifyThemeableFactory::new()->createOne([
->>>>>>> .merge_file_zVnVX4
->>>>>>> .merge_file_nKPnM4
             'model_type' => 'App\Models\NotificationTemplate',
             'model_id' => 123,
             'notify_theme_id' => $theme2->id,
         ]);
 
-<<<<<<< .merge_file_oXNbs3
         $themeable3 = NotifyThemeableFactory::new()->createOne([
-=======
-<<<<<<< .merge_file_sMjKoI
-        $themeable3 = NotifyThemeableFactory::new()->createOne([
-=======
-        NotifyThemeableFactory::new()->createOne([
->>>>>>> .merge_file_zVnVX4
->>>>>>> .merge_file_nKPnM4
             'model_type' => 'App\Models\NotificationTemplate',
             'model_id' => 123,
             'notify_theme_id' => $theme3->id,
@@ -222,7 +151,6 @@ describe('Notify Themeable Business Logic', function () {
         ]);
 
         Assert::assertSame($oldTheme->id, $themeable->notify_theme_id);
-<<<<<<< .merge_file_sMjKoI
         Assert::assertSame('Tema Vecchio', \notifyThemeForThemeable($themeable)->subject);
         $themeable->update([
             'notify_theme_id' => $newTheme->id,
@@ -232,17 +160,6 @@ describe('Notify Themeable Business Logic', function () {
         Assert::assertSame($newTheme->id, $themeable->notify_theme_id);
         Assert::assertSame('Tema Nuovo', \notifyThemeForThemeable($themeable)->subject);
         Assert::assertSame('admin@'.(string) config('app.domain', 'example.com'), $themeable->updated_by);
-=======
-        Assert::assertSame('Tema Vecchio', TestCase::notifyThemeForThemeable($themeable)->subject);
-        $themeable->update([
-            'notify_theme_id' => $newTheme->id,
-            'updated_by' => 'admin@'.notifyThemeableTestDomain(),
-        ]);
-
-        Assert::assertSame($newTheme->id, $themeable->notify_theme_id);
-        Assert::assertSame('Tema Nuovo', TestCase::notifyThemeForThemeable($themeable)->subject);
-        Assert::assertSame('admin@'.notifyThemeableTestDomain(), $themeable->updated_by);
->>>>>>> .merge_file_zVnVX4
     });
 
     it('can handle empty or null values gracefully', function () {
@@ -310,13 +227,8 @@ describe('Notify Themeable Business Logic', function () {
             'notify_theme_id' => $childTheme->id,
         ]);
 
-<<<<<<< .merge_file_sMjKoI
-        Assert::assertSame('Tema Base', \notifyThemeForThemeable($baseThemeable)->subject);
-        Assert::assertSame('Tema Specializzato', \notifyThemeForThemeable($specializedThemeable)->subject);
-=======
         Assert::assertSame('Tema Base', TestCase::notifyThemeForThemeable($baseThemeable)->subject);
         Assert::assertSame('Tema Specializzato', TestCase::notifyThemeForThemeable($specializedThemeable)->subject);
->>>>>>> .merge_file_zVnVX4
         Assert::assertSame($specializedThemeable->model_type, $baseThemeable->model_type);
         Assert::assertSame($specializedThemeable->model_id, $baseThemeable->model_id);
     });
@@ -332,27 +244,11 @@ describe('Notify Themeable Business Logic', function () {
         Assert::assertSame($theme->id, $themeable->notify_theme_id);
         $themeable->update([
             'notify_theme_id' => null,
-<<<<<<< .merge_file_oXNbs3
             'updated_by' => 'admin@'.(string) config('app.domain', 'example.com'),
         ]);
 
         Assert::assertNull($themeable->notify_theme_id);
         Assert::assertSame('admin@'.(string) config('app.domain', 'example.com'), $themeable->updated_by);
-=======
-<<<<<<< .merge_file_sMjKoI
-            'updated_by' => 'admin@'.(string) config('app.domain', 'example.com'),
-        ]);
-
-        Assert::assertNull($themeable->notify_theme_id);
-        Assert::assertSame('admin@'.(string) config('app.domain', 'example.com'), $themeable->updated_by);
-=======
-            'updated_by' => 'admin@'.notifyThemeableTestDomain(),
-        ]);
-
-        Assert::assertNull($themeable->notify_theme_id);
-        Assert::assertSame('admin@'.notifyThemeableTestDomain(), $themeable->updated_by);
->>>>>>> .merge_file_zVnVX4
->>>>>>> .merge_file_nKPnM4
     });
 
     it('can manage audit trail', function () {
@@ -360,10 +256,6 @@ describe('Notify Themeable Business Logic', function () {
 
         $themeable = NotifyThemeableFactory::new()->createOne([
             'notify_theme_id' => $theme->id,
-<<<<<<< .merge_file_oXNbs3
-            'created_by' => 'developer@'.(string) config('app.domain', 'example.com'),
-=======
-<<<<<<< .merge_file_sMjKoI
             'created_by' => 'developer@'.(string) config('app.domain', 'example.com'),
         ]);
 
@@ -374,9 +266,6 @@ describe('Notify Themeable Business Logic', function () {
         ]);
 
         Assert::assertSame('admin@'.(string) config('app.domain', 'example.com'), $themeable->updated_by);
-=======
-            'created_by' => 'developer@'.notifyThemeableTestDomain(),
->>>>>>> .merge_file_nKPnM4
         ]);
 
         Assert::assertSame('developer@'.(string) config('app.domain', 'example.com'), $themeable->created_by);
@@ -385,12 +274,7 @@ describe('Notify Themeable Business Logic', function () {
             'updated_by' => 'admin@'.(string) config('app.domain', 'example.com'),
         ]);
 
-<<<<<<< .merge_file_oXNbs3
         Assert::assertSame('admin@'.(string) config('app.domain', 'example.com'), $themeable->updated_by);
-=======
-        Assert::assertSame('admin@'.notifyThemeableTestDomain(), $themeable->updated_by);
->>>>>>> .merge_file_zVnVX4
->>>>>>> .merge_file_nKPnM4
         Assert::assertNotNull($themeable->updated_at);
         Assert::assertTrue($themeable->created_at->lte($themeable->updated_at));
     });
@@ -398,15 +282,7 @@ describe('Notify Themeable Business Logic', function () {
     it('can handle bulk theme operations', function () {
         $theme1 = NotifyThemeFactory::new()->createOne(['subject' => 'Tema 1']);
         $theme2 = NotifyThemeFactory::new()->createOne(['subject' => 'Tema 2']);
-<<<<<<< .merge_file_oXNbs3
         $theme3 = NotifyThemeFactory::new()->createOne(['subject' => 'Tema 3']);
-=======
-<<<<<<< .merge_file_sMjKoI
-        $theme3 = NotifyThemeFactory::new()->createOne(['subject' => 'Tema 3']);
-=======
-        NotifyThemeFactory::new()->createOne(['subject' => 'Tema 3']);
->>>>>>> .merge_file_zVnVX4
->>>>>>> .merge_file_nKPnM4
 
         $modelIds = [101, 102, 103, 104, 105];
 
@@ -422,29 +298,13 @@ describe('Notify Themeable Business Logic', function () {
         Assert::assertCount(5, $theme1Assignments);
         NotifyThemeable::where('notify_theme_id', $theme1->id)->update([
             'notify_theme_id' => $theme2->id,
-<<<<<<< .merge_file_oXNbs3
             'updated_by' => 'admin@'.(string) config('app.domain', 'example.com'),
-=======
-<<<<<<< .merge_file_sMjKoI
-            'updated_by' => 'admin@'.(string) config('app.domain', 'example.com'),
-=======
-            'updated_by' => 'admin@'.notifyThemeableTestDomain(),
->>>>>>> .merge_file_zVnVX4
->>>>>>> .merge_file_nKPnM4
         ]);
 
         $theme2Assignments = NotifyThemeable::where('notify_theme_id', $theme2->id)->get();
         Assert::assertCount(5, $theme2Assignments);
         foreach ($theme2Assignments as $assignment) {
-<<<<<<< .merge_file_oXNbs3
             Assert::assertSame('admin@'.(string) config('app.domain', 'example.com'), $assignment->updated_by);
-=======
-<<<<<<< .merge_file_sMjKoI
-            Assert::assertSame('admin@'.(string) config('app.domain', 'example.com'), $assignment->updated_by);
-=======
-            Assert::assertSame('admin@'.notifyThemeableTestDomain(), $assignment->updated_by);
->>>>>>> .merge_file_zVnVX4
->>>>>>> .merge_file_nKPnM4
         }
     });
 });

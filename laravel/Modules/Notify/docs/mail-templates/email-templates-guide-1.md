@@ -34,21 +34,8 @@ Questa guida descrive i template email responsive disponibili nel modulo Notify,
 
 ## Introduzione
 
-<<<<<<< .merge_file_wLcVmu
-<<<<<<< .merge_file_GY9Pap
 I template email responsive di Quaeris sono progettati per offrire una comunicazione professionale e coinvolgente con gli utenti. Tutti i template sono:
-=======
-=======
-<<<<<<< .merge_file_0NPxo4
-I template email responsive di Quaeris sono progettati per offrire una comunicazione professionale e coinvolgente con gli utenti. Tutti i template sono:
-=======
-<<<<<<< .merge_file_GY9Pap
-I template email responsive di Quaeris sono progettati per offrire una comunicazione professionale e coinvolgente con gli utenti. Tutti i template sono:
-=======
->>>>>>> .merge_file_zmxoZk
->>>>>>> .merge_file_SyhTSX
 I template email responsive di App sono progettati per offrire una comunicazione professionale e coinvolgente con gli utenti. Tutti i template sono:
->>>>>>> .merge_file_DHvHog
 
 - **Responsive**: ottimizzati per qualsiasi dispositivo (desktop, tablet, mobile)
 - **Accessibili**: strutturati per garantire accessibilità secondo gli standard WCAG
@@ -155,21 +142,8 @@ Tutti i template utilizzano il motore di templating Blade di Laravel. Le variabi
 | `$name` | Nome destinatario | "Utente" |
 | `$intro_text` | Testo introduttivo | Varia per template |
 | `$outro_text` | Testo conclusivo | Varia per template |
-<<<<<<< .merge_file_wLcVmu
-<<<<<<< .merge_file_GY9Pap
 | `$contact_email` | Email di contatto | "supporto@Quaeris.it" |
-=======
-=======
-<<<<<<< .merge_file_0NPxo4
-| `$contact_email` | Email di contatto | "supporto@Quaeris.it" |
-=======
-<<<<<<< .merge_file_GY9Pap
-| `$contact_email` | Email di contatto | "supporto@Quaeris.it" |
-=======
->>>>>>> .merge_file_zmxoZk
->>>>>>> .merge_file_SyhTSX
 | `$contact_email` | Email di contatto | "support@example.test" |
->>>>>>> .merge_file_DHvHog
 | `$contact_phone` | Telefono di contatto | "+39 06 1234567" |
 | `$office_hours` | Orari ufficio | "Lun-Ven: 9:00-19:00, Sab: 9:00-13:00" |
 

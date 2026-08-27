@@ -19,15 +19,8 @@ Ogni modulo/tema deve essere pubblicabile, comprensibile e desiderabile: workflo
 - `../README.md`
 - `../.github/workflows/semantic-release.yml`
 - `../.releaserc.json`
-<<<<<<< .merge_file_RU5Drn
 - `../CHANGELOG.md`
-=======
-<<<<<<< .merge_file_pFeuIq
-- `../CHANGELOG.md`
-=======
->>>>>>> .merge_file_g2DQ0B
 - `../changelog.md`
->>>>>>> .merge_file_5hmTDA
 
 ## Confidenza
 

@@ -8,45 +8,9 @@ Il modulo SEO fornisce funzionalità di ottimizzazione per i motori di ricerca, 
 ### 1. Composer.json
 ```json
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     "name": "laraxot/module_seo_fila5",
     "description": "Modulo SEO per l'ottimizzazione dei contenuti",
     "homepage": "https://github.com/laraxot/module_seo_fila5",
-=======
-    "name": "laraxot/module_seo_fila3",
-    "description": "Modulo SEO per l'ottimizzazione dei contenuti",
-    "homepage": "https://github.com/laraxot/module_seo_fila3",
->>>>>>> dbf8b8d (.)
-=======
-    "name": "laraxot/module_seo_fila5",
-    "description": "Modulo SEO per l'ottimizzazione dei contenuti",
-    "homepage": "https://github.com/laraxot/module_seo_fila5",
->>>>>>> 77e0353 (.)
-=======
-    "name": "laraxot/module_seo_fila5",
-    "description": "Modulo SEO per l'ottimizzazione dei contenuti",
-    "homepage": "https://github.com/laraxot/module_seo_fila5",
->>>>>>> fc52fe0 (.)
-=======
-    "name": "laraxot/module_seo_fila5",
-    "description": "Modulo SEO per l'ottimizzazione dei contenuti",
-    "homepage": "https://github.com/laraxot/module_seo_fila5",
->>>>>>> c101b34 (.)
-=======
-    "name": "laraxot/module_seo_fila5",
-    "description": "Modulo SEO per l'ottimizzazione dei contenuti",
-    "homepage": "https://github.com/laraxot/module_seo_fila5",
->>>>>>> d0f51b6 (.)
-=======
-    "name": "laraxot/module_seo_fila3",
-    "description": "Modulo SEO per l'ottimizzazione dei contenuti",
-    "homepage": "https://github.com/laraxot/module_seo_fila3",
->>>>>>> a771e9c (.)
     "license": "MIT"
 }
 ```
@@ -99,45 +63,9 @@ Seo/
 
 ## Collegamenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Configurazione Moduli](../../../../docs/project/module-configuration.md)
 - [Relazioni tra Moduli](../../../../docs/project/module-relationships.md)
 - [Regole dei Namespace](../../../../docs/project/module-namespace-rules.md)
-=======
-- [Configurazione Moduli](../../../project_docs/module-configuration.md)
-- [Relazioni tra Moduli](../../../project_docs/module-relationships.md)
-- [Regole dei Namespace](../../../project_docs/module-namespace-rules.md)
->>>>>>> dbf8b8d (.)
-=======
-- [Configurazione Moduli](../../../../docs/project/module-configuration.md)
-- [Relazioni tra Moduli](../../../../docs/project/module-relationships.md)
-- [Regole dei Namespace](../../../../docs/project/module-namespace-rules.md)
->>>>>>> 77e0353 (.)
-=======
-- [Configurazione Moduli](../../../../docs/project/module-configuration.md)
-- [Relazioni tra Moduli](../../../../docs/project/module-relationships.md)
-- [Regole dei Namespace](../../../../docs/project/module-namespace-rules.md)
->>>>>>> fc52fe0 (.)
-=======
-- [Configurazione Moduli](../../../../docs/project/module-configuration.md)
-- [Relazioni tra Moduli](../../../../docs/project/module-relationships.md)
-- [Regole dei Namespace](../../../../docs/project/module-namespace-rules.md)
->>>>>>> c101b34 (.)
-=======
-- [Configurazione Moduli](../../../../docs/project/module-configuration.md)
-- [Relazioni tra Moduli](../../../../docs/project/module-relationships.md)
-- [Regole dei Namespace](../../../../docs/project/module-namespace-rules.md)
->>>>>>> d0f51b6 (.)
-=======
-- [Configurazione Moduli](../../../project_docs/module-configuration.md)
-- [Relazioni tra Moduli](../../../project_docs/module-relationships.md)
-- [Regole dei Namespace](../../../project_docs/module-namespace-rules.md)
->>>>>>> a771e9c (.)
 
 ## Checklist Implementazione
 

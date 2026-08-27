@@ -63,15 +63,8 @@ Ho corretto tutti i riferimenti errati alle directory del database nel modulo **
 
 **Created**:
 - ✅ **Issue #5**: "📁 Fix Database Directory Naming Convention"
-<<<<<<< .merge_file_p3jWfv
   - URL: https://github.com/laraxot/base_fixcity_fila5/issues/5
-=======
-<<<<<<< .merge_file_6Os9aN
-  - URL: https://github.com/laraxot/base_fixcity_fila5/issues/5
-=======
->>>>>>> .merge_file_kCHIpS
   - URL: https://github.com/laraxot/platform/issues/5
->>>>>>> .merge_file_7rOP27
   - Labels: documentation, good first issue
   - Checklist per tutti i 18 moduli
 
@@ -146,15 +139,8 @@ grep -A 5 "autoload" laravel/Modules/*/composer.json | grep -i "database"
 | Blog | ✅ | ✅ | ✅ | ✅ Complete |
 | Cms | ✅ | ⏳ | ⏳ | 📋 To Verify |
 | Comment | ✅ | ⏳ | ⏳ | 📋 To Verify |
-<<<<<<< .merge_file_p3jWfv
 | Fixcity | ✅ | ⏳ | ⏳ | 📋 To Verify |
-=======
-<<<<<<< .merge_file_6Os9aN
-| Fixcity | ✅ | ⏳ | ⏳ | 📋 To Verify |
-=======
->>>>>>> .merge_file_kCHIpS
 | App | ✅ | ⏳ | ⏳ | 📋 To Verify |
->>>>>>> .merge_file_7rOP27
 | Gdpr | ✅ | ⏳ | ⏳ | 📋 To Verify |
 | Geo | ✅ | ⏳ | ⏳ | 📋 To Verify |
 | Job | ✅ | ⏳ | ⏳ | 📋 To Verify |
@@ -176,15 +162,8 @@ grep -A 5 "autoload" laravel/Modules/*/composer.json | grep -i "database"
 
 ### Immediate (Done)
 - ✅ Fix Blog module docs
-<<<<<<< .merge_file_p3jWfv
 - ✅ Update AGENTS.md
-=======
-<<<<<<< .merge_file_6Os9aN
-- ✅ Update AGENTS.md
-=======
->>>>>>> .merge_file_kCHIpS
 - ✅ Update agents.md
->>>>>>> .merge_file_7rOP27
 - ✅ Create convention doc
 - ✅ Create GitHub Issue #5
 - ✅ Setup MCP for GitHub
@@ -206,15 +185,8 @@ grep -A 5 "autoload" laravel/Modules/*/composer.json | grep -i "database"
 ## 📚 Related Documentation
 
 - [Database Naming Convention](conventions/database-naming.md)
-<<<<<<< .merge_file_p3jWfv
 - [AGENTS.md](../../AGENTS.md)
-=======
-<<<<<<< .merge_file_6Os9aN
-- [AGENTS.md](../../AGENTS.md)
-=======
->>>>>>> .merge_file_kCHIpS
 - [agents.md](../../agents.md)
->>>>>>> .merge_file_7rOP27
 - [GitHub Issues & Discussions](github/README.md)
 - [MCP Configuration](mcp/README.md)
 - [Laravel Directory Structure](https://laravel.com/docs/structure)
@@ -263,21 +235,9 @@ echo "Fixed documentation references"
 
 ## 📞 Questions?
 
-<<<<<<< .merge_file_p3jWfv
 - **GitHub Issue**: https://github.com/laraxot/base_fixcity_fila5/issues/5
 - **Documentation**: docs/conventions/database-naming.md
 - **Contact**: dev @fixcity.example.com
-=======
-<<<<<<< .merge_file_6Os9aN
-- **GitHub Issue**: https://github.com/laraxot/base_fixcity_fila5/issues/5
-- **Documentation**: docs/conventions/database-naming.md
-- **Contact**: dev @fixcity.example.com
-=======
-- **GitHub Issue**: https://github.com/laraxot/platform/issues/5
-- **Documentation**: docs/conventions/database-naming.md
-- **Contact**: dev @laraxot.example.com
->>>>>>> .merge_file_7rOP27
->>>>>>> .merge_file_kCHIpS
 
 ---
 

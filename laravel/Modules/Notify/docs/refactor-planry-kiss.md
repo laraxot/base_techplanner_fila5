@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_3oPvDU
-=======
 ---
 title: "Piano di Refactor DRY/KISS - Documentazione Modulo Notify"
 module: notify
@@ -9,7 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
->>>>>>> .merge_file_Ax1hv8
 # Piano di Refactor DRY/KISS - Documentazione Modulo Notify
 
 ## Problema Identificato

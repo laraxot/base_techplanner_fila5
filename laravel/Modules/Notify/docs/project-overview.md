@@ -4,15 +4,8 @@ type: concept
 tags: [project, overview]
 created: 2026-07-14
 updated: 2026-07-14
-<<<<<<< .merge_file_16QjWP
 qmd: "project-overview 🏛️ fixcity - civic engagement platform"
-=======
-<<<<<<< .merge_file_XBTDy4
-qmd: "project-overview 🏛️ fixcity - civic engagement platform"
-=======
->>>>>>> .merge_file_8oeM0o
 qmd: "project-overview 🏛️ ptv - civic engagement platform"
->>>>>>> .merge_file_lb7wF7
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -486,29 +479,15 @@ Team
 - Cache: File
 
 **Staging**:
-<<<<<<< .merge_file_16QjWP
 - URL: https://staging.fixcity.it
-=======
-<<<<<<< .merge_file_XBTDy4
-- URL: https://staging.fixcity.it
-=======
->>>>>>> .merge_file_8oeM0o
 - URL: https://staging.ptv.it
->>>>>>> .merge_file_lb7wF7
 - DB: PostgreSQL
 - Queue: Redis
 - Cache: Redis
 
 **Production**:
-<<<<<<< .merge_file_16QjWP
 - URL: https://fixcity.it
-=======
-<<<<<<< .merge_file_XBTDy4
-- URL: https://fixcity.it
-=======
->>>>>>> .merge_file_8oeM0o
 - URL: https://ptv.it
->>>>>>> .merge_file_lb7wF7
 - DB: PostgreSQL (replicated)
 - Queue: Redis Cluster
 - Cache: Redis Cluster

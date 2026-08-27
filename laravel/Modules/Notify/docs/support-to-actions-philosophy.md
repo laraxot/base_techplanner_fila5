@@ -61,12 +61,5 @@ Tutte le classi in `app/Actions/` DEVONO:
 
 - [no-app-support-queueable-actions](wiki/concepts/no-app-support-queueable-actions.md)
 - [claude-audit-static](wiki/concepts/claude-audit-static.md)
-<<<<<<< .merge_file_PPLsjs
 - Issue [#372](https://github.com/laraxot/base_fixcity_fila5/issues/372) · Discussion [#273](https://github.com/laraxot/base_fixcity_fila5/discussions/273)
-=======
-<<<<<<< .merge_file_9nD8vE
-- Issue [#372](https://github.com/laraxot/base_fixcity_fila5/issues/372) · Discussion [#273](https://github.com/laraxot/base_fixcity_fila5/discussions/273)
-=======
->>>>>>> .merge_file_Prbayt
 - Issue [#372](https://github.com/laraxot/base_ptv_fila5/issues/372) · Discussion [#273](https://github.com/laraxot/base_ptv_fila5/discussions/273)
->>>>>>> .merge_file_Ri5eTV

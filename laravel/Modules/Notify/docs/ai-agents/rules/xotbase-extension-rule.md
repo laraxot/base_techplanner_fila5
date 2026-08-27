@@ -111,15 +111,8 @@ class OutcomesTableWidget extends XotBaseTableWidget
 ```
 
 **Zen Philosophy**:
-<<<<<<< .merge_file_yXIRvR
 > "XotBaseTableWidget non sa di Predict, non sa di Blog, non sa di Events.
-=======
-<<<<<<< .merge_file_6VWFTS
-> "XotBaseTableWidget non sa di Predict, non sa di Blog, non sa di Events.
-=======
->>>>>>> .merge_file_64bTJb
 > "XotBaseTableWidget non sa di Forecast, non sa di Blog, non sa di Events.
->>>>>>> .merge_file_oUHAjd
 > È AGNOSTICO, come il container blade.
 > La sua forza è la sua VUOTEZZA.
 > Può contenere QUALSIASI cosa."
@@ -135,15 +128,8 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
 ```
 
 **Why This is Powerful**:
-<<<<<<< .merge_file_yXIRvR
 - ✅ **Agnostico**: Funziona per Predict, Blog, Events, Profiles
-=======
-<<<<<<< .merge_file_6VWFTS
-- ✅ **Agnostico**: Funziona per Predict, Blog, Events, Profiles
-=======
->>>>>>> .merge_file_64bTJb
 - ✅ **Agnostico**: Funziona per Forecast, Blog, Events, Profiles
->>>>>>> .merge_file_oUHAjd
 - ✅ **Estensibile**: Puoi aggiungere features a TUTTI i widget cambiando 1 file
 - ✅ **Coerente**: Tutti i widget hanno lo stesso comportamento base
 - ✅ **Manutenibile**: Fix in 1 posto, fix everywhere
@@ -283,19 +269,11 @@ class OutcomesTableWidget extends XotBaseTableWidget
 ## 🔗 Related Documentation
 
 ### Module Docs
-<<<<<<< .merge_file_6VWFTS
-- **[OutcomesTableWidget](../../laravel/Modules/Predict/Filament/Widgets/OutcomesTableWidget.php)** - Actual implementation
-- **[XotBaseTableWidget](../../laravel/Modules/Xot/app/Filament/Widgets/XotBaseTableWidget.php)** - Base class
-
-### AI Agents Docs
-- **[Rules Index](00-INDEX.md)** - All rules
-=======
 - **[OutcomesTableWidget](../../laravel/Modules/Forecast/Filament/Widgets/OutcomesTableWidget.php)** - Actual implementation
 - **[XotBaseTableWidget](../../laravel/Modules/Xot/app/Filament/Widgets/XotBaseTableWidget.php)** - Base class
 
 ### AI Agents Docs
 - **[Rules Index](00-index.md)** - All rules
->>>>>>> .merge_file_oUHAjd
 - **[Reusable Components](../guidelines/reusable-components-philosophy.md)** - DRY+KISS philosophy
 
 ---

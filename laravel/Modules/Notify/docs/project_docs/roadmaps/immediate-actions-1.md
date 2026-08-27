@@ -1,38 +1,12 @@
 ---
-<<<<<<< .merge_file_GCHIp3
-<<<<<<< .merge_file_5X82Mp
 title: "🎯 AZIONI IMMEDIATE - FIXCITY PLATFORM"
-=======
-=======
-<<<<<<< .merge_file_in33Ox
-title: "🎯 AZIONI IMMEDIATE - FIXCITY PLATFORM"
-=======
-<<<<<<< .merge_file_5X82Mp
-title: "🎯 AZIONI IMMEDIATE - FIXCITY PLATFORM"
-=======
->>>>>>> .merge_file_ddsL8e
->>>>>>> .merge_file_DS6gEJ
 title: "🎯 AZIONI IMMEDIATE - NOTIFY PLATFORM"
->>>>>>> .merge_file_RbHUne
 type: concept
 tags: [immediate, actions, 2025, 27.deprecated]
 created: 2026-07-14
 updated: 2026-07-14
-<<<<<<< .merge_file_GCHIp3
-<<<<<<< .merge_file_5X82Mp
 qmd: "immediate-actions-2025-01-27.deprecated 🎯 azioni immediate - fixcity platform"
-=======
-=======
-<<<<<<< .merge_file_in33Ox
-qmd: "immediate-actions-2025-01-27.deprecated 🎯 azioni immediate - fixcity platform"
-=======
-<<<<<<< .merge_file_5X82Mp
-qmd: "immediate-actions-2025-01-27.deprecated 🎯 azioni immediate - fixcity platform"
-=======
->>>>>>> .merge_file_ddsL8e
->>>>>>> .merge_file_DS6gEJ
 qmd: "immediate-actions-2025-01-27.deprecated 🎯 azioni immediate - laraxot platform"
->>>>>>> .merge_file_RbHUne
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -46,21 +20,8 @@ related:
   - "./code-quality-improvements-1.md"
 ---
 
-<<<<<<< .merge_file_GCHIp3
-<<<<<<< .merge_file_5X82Mp
 # 🎯 AZIONI IMMEDIATE - FIXCITY PLATFORM
-=======
-=======
-<<<<<<< .merge_file_in33Ox
-# 🎯 AZIONI IMMEDIATE - FIXCITY PLATFORM
-=======
-<<<<<<< .merge_file_5X82Mp
-# 🎯 AZIONI IMMEDIATE - FIXCITY PLATFORM
-=======
->>>>>>> .merge_file_ddsL8e
->>>>>>> .merge_file_DS6gEJ
 # 🎯 AZIONI IMMEDIATE - NOTIFY PLATFORM
->>>>>>> .merge_file_RbHUne
 
 **Data**: 27 Gennaio 2025  
 **Priorità**: CRITICAL  
@@ -74,21 +35,8 @@ related:
 **Status**: 0% - **BLOCCANTE PER PRODUZIONE**
 
 #### Azioni Immediate
-<<<<<<< .merge_file_GCHIp3
-<<<<<<< .merge_file_5X82Mp
 - [ ] **Week 1**: Implementare test per moduli core (Xot, User, Fixcity)
-=======
-=======
-<<<<<<< .merge_file_in33Ox
-- [ ] **Week 1**: Implementare test per moduli core (Xot, User, Fixcity)
-=======
-<<<<<<< .merge_file_5X82Mp
-- [ ] **Week 1**: Implementare test per moduli core (Xot, User, Fixcity)
-=======
->>>>>>> .merge_file_ddsL8e
->>>>>>> .merge_file_DS6gEJ
 - [ ] **Week 1**: Implementare test per moduli core (Xot, User, App)
->>>>>>> .merge_file_RbHUne
 - [ ] **Week 2**: Implementare test per moduli support (UI, Geo, Media, Notify)
 - [ ] **Week 3**: Implementare test per moduli features (Comment, Rating, Activity)
 - [ ] **Week 4**: Implementare test per moduli enterprise (Tenant, Seo, Job, AI)
@@ -99,21 +47,8 @@ related:
 - **Q3 2025**: Test coverage > 90%
 
 ### 2. API Development Completion (HIGH)
-<<<<<<< .merge_file_GCHIp3
-<<<<<<< .merge_file_5X82Mp
 **Status**: 45% - **FIXCITY MODULE**
-=======
-=======
-<<<<<<< .merge_file_in33Ox
-**Status**: 45% - **FIXCITY MODULE**
-=======
-<<<<<<< .merge_file_5X82Mp
-**Status**: 45% - **FIXCITY MODULE**
-=======
->>>>>>> .merge_file_ddsL8e
->>>>>>> .merge_file_DS6gEJ
 **Status**: 45% - **NOTIFY MODULE**
->>>>>>> .merge_file_RbHUne
 
 #### Azioni Immediate
 - [ ] **Week 1**: Completare RESTful endpoints
@@ -126,21 +61,8 @@ related:
 - **Q2 2025**: API v2 with advanced features
 
 ### 3. Mobile Optimization (HIGH)
-<<<<<<< .merge_file_GCHIp3
-<<<<<<< .merge_file_5X82Mp
 **Status**: 55% - **FIXCITY MODULE**
-=======
-=======
-<<<<<<< .merge_file_in33Ox
-**Status**: 55% - **FIXCITY MODULE**
-=======
-<<<<<<< .merge_file_5X82Mp
-**Status**: 55% - **FIXCITY MODULE**
-=======
->>>>>>> .merge_file_ddsL8e
->>>>>>> .merge_file_DS6gEJ
 **Status**: 55% - **NOTIFY MODULE**
->>>>>>> .merge_file_RbHUne
 
 #### Azioni Immediate
 - [ ] **Week 1**: Audit mobile interface
@@ -173,33 +95,11 @@ related:
 - [ ] **Lunedì**: Setup test environment per moduli core
 - [ ] **Martedì**: Implementare test unitari per Xot module
 - [ ] **Mercoledì**: Implementare test unitari per User module
-<<<<<<< .merge_file_GCHIp3
-<<<<<<< .merge_file_5X82Mp
-=======
-<<<<<<< .merge_file_in33Ox
-=======
-<<<<<<< .merge_file_5X82Mp
->>>>>>> .merge_file_ddsL8e
->>>>>>> .merge_file_DS6gEJ
-- [ ] **Giovedì**: Implementare test unitari per Fixcity module
-- [ ] **Venerdì**: Implementare test feature per moduli core
-
-### Week 2: API & Mobile (3-9 Feb)
-- [ ] **Lunedì**: Completare API endpoints Fixcity
-<<<<<<< .merge_file_GCHIp3
-=======
-=======
-<<<<<<< .merge_file_in33Ox
-=======
-=======
->>>>>>> .merge_file_ddsL8e
->>>>>>> .merge_file_DS6gEJ
 - [ ] **Giovedì**: Implementare test unitari per App module
 - [ ] **Venerdì**: Implementare test feature per moduli core
 
 ### Week 2: API & Mobile (3-9 Feb)
 - [ ] **Lunedì**: Completare API endpoints App
->>>>>>> .merge_file_RbHUne
 - [ ] **Martedì**: Implementare autenticazione API
 - [ ] **Mercoledì**: Audit mobile interface
 - [ ] **Giovedì**: Implementare responsive improvements
@@ -352,21 +252,8 @@ related:
 
 ---
 
-<<<<<<< .merge_file_GCHIp3
-<<<<<<< .merge_file_5X82Mp
 *Questo documento definisce le azioni immediate per completare il progetto FixCity Platform nei prossimi 30 giorni.*
-=======
-=======
-<<<<<<< .merge_file_in33Ox
-*Questo documento definisce le azioni immediate per completare il progetto FixCity Platform nei prossimi 30 giorni.*
-=======
-<<<<<<< .merge_file_5X82Mp
-*Questo documento definisce le azioni immediate per completare il progetto FixCity Platform nei prossimi 30 giorni.*
-=======
->>>>>>> .merge_file_ddsL8e
->>>>>>> .merge_file_DS6gEJ
 *Questo documento definisce le azioni immediate per completare il progetto Notify Platform nei prossimi 30 giorni.*
->>>>>>> .merge_file_RbHUne
 
 
 

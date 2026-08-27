@@ -177,15 +177,8 @@ Ogni task: Contesto fresco (200k token) → Qualità costante ✅
 ├── research/
 │   ├── STACK.md         # Stack tecnologico
 │   ├── FEATURES.md      # Feature research
-<<<<<<< .merge_file_yyxS3W
 │   ├── ARCHITECTURE.md  # Architettura
-=======
-<<<<<<< .merge_file_uM6Xi1
-│   ├── ARCHITECTURE.md  # Architettura
-=======
->>>>>>> .merge_file_45AtaE
 │   ├── architecture.md  # Architettura
->>>>>>> .merge_file_nlzG6M
 │   └── PITFALLS.md      # Pitfalls da evitare
 ├── phase-1-PLAN.md      # Task atomici XML
 ├── phase-1-SUMMARY.md   # Cosa è successo
@@ -452,18 +445,10 @@ Agent N (Verifier):
 
 ```
 Commit Messages:
-<<<<<<< .merge_file_yyxS3W
 - "docs: predict detail research"
 - "docs: predict detail architecture"
-=======
-<<<<<<< .merge_file_uM6Xi1
-- "docs: predict detail research"
-- "docs: predict detail architecture"
-=======
->>>>>>> .merge_file_45AtaE
 - "docs: forecast detail research"
 - "docs: forecast detail architecture"
->>>>>>> .merge_file_nlzG6M
 - "feat: add price chart component"
 - "test: verify phase 1 complete"
 

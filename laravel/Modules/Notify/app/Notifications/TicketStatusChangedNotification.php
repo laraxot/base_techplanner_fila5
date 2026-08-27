@@ -26,11 +26,7 @@ class TicketStatusChangedNotification extends Notification
     /**
      * @return list<string>
      */
-<<<<<<< .merge_file_xP93Dn
-    public function via(mixed $notifiable): array
-=======
     public function via(object $notifiable): array
->>>>>>> .merge_file_fI6aM7
     {
         return ['mail', 'database'];
     }

@@ -23,15 +23,8 @@ return view($viewName, $viewParams);
 
 ```php
 /** @phpstan-var view-string $viewName */
-<<<<<<< .merge_file_nHWuSG
 $viewName = 'fixcity::components.blocks.ticket-list';
-=======
-<<<<<<< .merge_file_BCcO6k
-$viewName = 'fixcity::components.blocks.ticket-list';
-=======
->>>>>>> .merge_file_GMQHAv
 $viewName = 'ptv::components.blocks.ticket-list';
->>>>>>> .merge_file_GQsRKT
 $viewParams = [
     'tickets' => $this->tickets,
     'status' => $this->status,
@@ -53,12 +46,5 @@ return view((string) $view);
 ## Collegamenti
 
 - [phpstan_critical_rules](../.cursor/rules/phpstan_critical_rules.md)
-<<<<<<< .merge_file_nHWuSG
 - [AGENTS.md](../AGENTS.md)
-=======
-<<<<<<< .merge_file_BCcO6k
-- [AGENTS.md](../AGENTS.md)
-=======
->>>>>>> .merge_file_GMQHAv
 - [agents.md](../agents.md)
->>>>>>> .merge_file_GQsRKT

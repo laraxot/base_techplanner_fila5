@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_3WkDYT
-=======
 ---
 title: "Composer & Laravel-Modules Architecture"
 module: notify
@@ -9,7 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
->>>>>>> .merge_file_jTTVRy
 # Composer & Laravel-Modules Architecture
 
 **Data**: 2026-03-30  

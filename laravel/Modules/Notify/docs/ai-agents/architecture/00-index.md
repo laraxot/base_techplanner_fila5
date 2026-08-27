@@ -43,13 +43,7 @@ related:
 ## Navigation
 
 - [../00-index-1.md](../00-index-1.md)
-<<<<<<< .merge_file_tIexMX
 - [../../../../AGENTS.md](../../../../AGENTS.md)
-=======
-<<<<<<< .merge_file_cZ8Jof
-- [../../../../AGENTS.md](../../../../AGENTS.md)
-=======
->>>>>>> .merge_file_z0Ghbq
 - [../../../../agents.md](../../../../agents.md)
 
 ---
@@ -87,4 +81,3 @@ related:
 
 - [../00-index.md](../00-index.md)
 - [../../../../agents.md](../../../../agents.md)
->>>>>>> .merge_file_5v5Ngn

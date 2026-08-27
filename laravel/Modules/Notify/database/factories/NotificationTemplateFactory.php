@@ -9,11 +9,8 @@ use Illuminate\Support\Str;
 use Modules\Notify\Models\NotificationTemplate;
 use function Safe\json_encode;
 
-<<<<<<< .merge_file_apjSr8
-=======
 use function Safe\json_encode;
 
->>>>>>> .merge_file_Lt4QSX
 /**
  * @extends Factory<NotificationTemplate>
  */
@@ -33,11 +30,7 @@ class NotificationTemplateFactory extends Factory
     public function definition(): array
     {
         return [
-<<<<<<< .merge_file_apjSr8
             'id' => (string) \Illuminate\Support\Str::uuid(),
-=======
-            'id' => (string) Str::uuid(),
->>>>>>> .merge_file_Lt4QSX
             'name' => $this->faker->words(3, true),
             'code' => $this->faker->unique()->slug(2),
             'description' => $this->faker->sentence(),

@@ -9,11 +9,8 @@ use Illuminate\Notifications\Messages\MailMessage;
 use Modules\Notify\Actions\NotifyTheme\Get;
 use Modules\Notify\Datas\AttachmentData;
 use Modules\Notify\Datas\NotifyThemeData;
-<<<<<<< .merge_file_94MIA5
 use function Safe\mb_convert_encoding;
 use Spatie\LaravelData\DataCollection;
-=======
->>>>>>> .merge_file_ofzZBX
 use Spatie\QueueableAction\QueueableAction;
 
 class BuildMailMessageAction
@@ -22,11 +19,7 @@ class BuildMailMessageAction
 
     /**
      * @param  array<string, mixed>  $view_params
-<<<<<<< .merge_file_94MIA5
      * @param  DataCollection<int, AttachmentData>|null  $dataCollection
-=======
-     * @param  array<int, AttachmentData>|null  $attachments
->>>>>>> .merge_file_ofzZBX
      */
     public function execute(
         string $name,

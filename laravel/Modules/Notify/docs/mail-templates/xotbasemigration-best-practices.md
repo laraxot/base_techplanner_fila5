@@ -113,15 +113,7 @@ Quando si utilizza `Schema::hasColumn()` direttamente, si bypassa tutta questa l
 
 ## Riferimenti
 
-<<<<<<< .merge_file_Aonhnr
 - [Xot Module Documentation](/var/www/html/Quaeris/laravel/modules/xot/docs/migrations.md)
 - [JSON Migration Best Practices](/var/www/html/Quaeris/laravel/modules/notify/docs/mail-templates/json_migration_fixes.md)
-=======
-<<<<<<< .merge_file_Ae2eDi
-- [Xot Module Documentation](/var/www/html/Quaeris/laravel/modules/xot/docs/migrations.md)
-- [JSON Migration Best Practices](/var/www/html/Quaeris/laravel/modules/notify/docs/mail-templates/json_migration_fixes.md)
-=======
->>>>>>> .merge_file_Z3VkeY
 - [Xot Module Documentation](/var/www/_bases/base_ptvx_fila5/laravel/modules/xot/docs/migrations.md)
 - [JSON Migration Best Practices](/var/www/_bases/base_ptvx_fila5/laravel/modules/notify/docs/mail-templates/json_migration_fixes.md)
->>>>>>> .merge_file_BhqL83

@@ -6,15 +6,8 @@
 
 ## Purpose
 
-<<<<<<< .merge_file_RL9Bcr
 This page defines how the Karpathy-style LLM wiki maps onto the FixCity repository.
-=======
-<<<<<<< .merge_file_3m5TFa
-This page defines how the Karpathy-style LLM wiki maps onto the FixCity repository.
-=======
->>>>>>> .merge_file_MuTR4o
 This page defines how the Karpathy-style LLM wiki maps onto the Notify repository.
->>>>>>> .merge_file_qOlGUs
 
 ## Mapping
 

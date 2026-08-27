@@ -4,15 +4,8 @@ type: concept
 tags: [master, roadmap]
 created: 2026-07-14
 updated: 2026-07-14
-<<<<<<< .merge_file_3T2WWh
 qmd: "master-roadmap 🗺️ fixcity - master roadmap 2025-2026"
-=======
-<<<<<<< .merge_file_lYBAiM
-qmd: "master-roadmap 🗺️ fixcity - master roadmap 2025-2026"
-=======
->>>>>>> .merge_file_XlLFKx
 qmd: "master-roadmap 🗺️ ptv - master roadmap 2025-2026"
->>>>>>> .merge_file_4hEBKm
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:

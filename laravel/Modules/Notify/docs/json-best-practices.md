@@ -215,15 +215,8 @@ protected function rollback(): void
 
 ## Collegamenti Correlati
 
-<<<<<<< .merge_file_oeRV17
 - [Documentazione Migrazioni](./migration_rules.md)
-=======
-<<<<<<< .merge_file_FUBmzZ
-- [Documentazione Migrazioni](./migration_rules.md)
-=======
->>>>>>> .merge_file_dBAkmc
 - [Documentazione Migrazioni](./migration-rules.md)
->>>>>>> .merge_file_qi3jHK
 - [Gestione Errori](./error_handling.md)
 - [Best Practices Database](./database_best_practices.md)
 

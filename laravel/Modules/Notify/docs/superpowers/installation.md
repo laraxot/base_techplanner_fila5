@@ -31,15 +31,8 @@
 Launch Cursor IDE and open your project:
 
 ```bash
-<<<<<<< .merge_file_DAAVt4
 cursor /var/www/_bases/base_fixcity_fila5
-=======
-<<<<<<< .merge_file_JO0oun
-cursor /var/www/_bases/base_fixcity_fila5
-=======
->>>>>>> .merge_file_AscruK
 cursor /var/www/_bases/base_ptvx_fila5
->>>>>>> .merge_file_FGAmRw
 ```
 
 Or use the GUI:
@@ -191,15 +184,8 @@ Create `.cursor/superpowers-config.json`:
 ### 1. Verify PHP Testing
 
 ```bash
-<<<<<<< .merge_file_DAAVt4
 cd /var/www/_bases/base_fixcity_fila5/laravel
-=======
-<<<<<<< .merge_file_JO0oun
-cd /var/www/_bases/base_fixcity_fila5/laravel
-=======
->>>>>>> .merge_file_AscruK
 cd /var/www/_bases/base_ptvx_fila5/laravel
->>>>>>> .merge_file_FGAmRw
 php artisan test --version
 ```
 

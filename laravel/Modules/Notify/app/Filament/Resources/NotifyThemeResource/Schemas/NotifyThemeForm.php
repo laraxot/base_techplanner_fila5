@@ -28,13 +28,8 @@ class NotifyThemeForm extends XotBaseResourceForm
             'from' => TextInput::make('from'),
             'from_email' => TextInput::make('from_email'),
             'logo' => SpatieMediaLibraryFileUpload::make('logo_src')
-<<<<<<< .merge_file_vhZpj0
                 ->enableOpen()
                 ->enableDownload()
-=======
-                ->openable()
-                ->downloadable()
->>>>>>> .merge_file_dKqZSn
                 ->columnSpanFull()
                 ->disk('uploads')
                 ->directory('photos')

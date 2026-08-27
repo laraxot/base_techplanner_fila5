@@ -69,15 +69,8 @@ Moduli Supporto:
 ### Architettura Modulare
 
 ```
-<<<<<<< .merge_file_Gk1qKz
 /var/www/_bases/base_fixcity_fila5_mono/
-=======
-<<<<<<< .merge_file_oJuXHT
-/var/www/_bases/base_fixcity_fila5_mono/
-=======
->>>>>>> .merge_file_1xvtYR
 /var/www/_bases/base_ptv_fila5_mono/
->>>>>>> .merge_file_Ib3al8
 ├── laravel/                    # Root Laravel
 │   ├── Modules/               # Moduli business
 │   │   ├── Fixcity/          # Core segnalazioni

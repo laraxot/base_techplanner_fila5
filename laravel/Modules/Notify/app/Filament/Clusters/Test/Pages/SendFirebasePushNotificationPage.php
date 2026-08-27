@@ -151,11 +151,7 @@ class SendFirebasePushNotificationPage extends XotBasePage
         }
     }
 
-<<<<<<< .merge_file_j17qPq
     /** @return array<string, \Filament\Actions\Action> */
-=======
-    /** @return array<string, Action> */
->>>>>>> .merge_file_prCeIV
     protected function getPushFormActions(): array
     {
         return [

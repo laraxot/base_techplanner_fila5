@@ -29,21 +29,8 @@ This report documents code quality improvements made across the FixCity platform
    - **Validation**: PHPStan Level 9 passes with 0 errors
    - **Impact**: Improved type safety for media collection access
 
-<<<<<<< .merge_file_Qu5qVO
-<<<<<<< .merge_file_XUKNZU
 2. **Configuration Fix** (`config/it/quaerisofficina/manager2/xra.php`)
-=======
-=======
-<<<<<<< .merge_file_GoabAl
-2. **Configuration Fix** (`config/it/quaerisofficina/manager2/xra.php`)
-=======
-<<<<<<< .merge_file_XUKNZU
-2. **Configuration Fix** (`config/it/quaerisofficina/manager2/xra.php`)
-=======
->>>>>>> .merge_file_hfC1cF
->>>>>>> .merge_file_IKmDBQ
 2. **Configuration Fix** (`config/it/<nome progetto>officina/manager2/xra.php`)
->>>>>>> .merge_file_o4QIx3
    - **Issue**: Parse error from placeholder `\Modules\<nome progetto>\Models\Customer::class`
    - **Fix**: Replaced with null and TODO comment
    - **Impact**: Resolved blocking parse error for PHPStan analysis
@@ -99,21 +86,8 @@ Added 2 new test cases for media attribute functionality:
    - Added 2 new test cases for media attribute
    - Enhanced test coverage for Spatie MediaLibrary integration
 
-<<<<<<< .merge_file_Qu5qVO
-<<<<<<< .merge_file_XUKNZU
 3. `/laravel/config/it/quaerisofficina/manager2/xra.php`
-=======
-=======
-<<<<<<< .merge_file_GoabAl
-3. `/laravel/config/it/quaerisofficina/manager2/xra.php`
-=======
-<<<<<<< .merge_file_XUKNZU
-3. `/laravel/config/it/quaerisofficina/manager2/xra.php`
-=======
->>>>>>> .merge_file_hfC1cF
->>>>>>> .merge_file_IKmDBQ
 3. `/laravel/config/it/<nome progetto>officina/manager2/xra.php`
->>>>>>> .merge_file_o4QIx3
    - Fixed parse error by replacing invalid placeholder
    - Added TODO comment for proper configuration
 
@@ -222,24 +196,12 @@ The codebase maintains **PHPStan Level 9 with 0 errors**, demonstrating excellen
 ---
 
 **Report Generated**: 2025-10-01
-<<<<<<< .merge_file_Qu5qVO
-=======
-<<<<<<< .merge_file_GoabAl
 **Status**: 🚧 ACTIVE IMPROVEMENT  
 **Confidence Level**: 95%  
-=======
->>>>>>> .merge_file_IKmDBQ
-<<<<<<< .merge_file_XUKNZU
 **Status**: 🚧 ACTIVE IMPROVEMENT  
 **Confidence Level**: 95%  
-=======
-<<<<<<< .merge_file_Qu5qVO
-=======
->>>>>>> .merge_file_hfC1cF
->>>>>>> .merge_file_IKmDBQ
 **Status**: 🚧 ACTIVE IMPROVEMENT
 **Confidence Level**: 95%
->>>>>>> .merge_file_o4QIx3
 
 ---
 

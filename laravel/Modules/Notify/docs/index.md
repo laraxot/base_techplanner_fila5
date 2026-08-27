@@ -104,15 +104,7 @@ Questo documento serve come indice centrale per il modulo Notify, fornendo una g
 ## Categorie Principali
 
 ### Architettura e Struttura
-<<<<<<< .merge_file_KGVvkV
 - [README](./readme.md) - Panoramica generale del modulo
-<<<<<<< .merge_file_xAVzMH
-- [README](./README.md) - Panoramica generale del modulo
-=======
-=======
-- [README](./README.md) - Panoramica generale del modulo
->>>>>>> .merge_file_cGWohi
->>>>>>> .merge_file_opXQ4C
 - [Architettura](./architecture.md) - Architettura generale del modulo
 - [Struttura](./structure.md) - Struttura delle directory e dei componenti
 - [Modelli](./models.md) - Documentazione dei modelli Eloquent
@@ -122,30 +114,16 @@ Questo documento serve come indice centrale per il modulo Notify, fornendo una g
 - [Sistema Email Database](./database-mail-system.md) - Sistema di gestione delle email basato su database
 - [Code Email](./database_mail_queue.md) - Sistema di code per l'invio di email
 - [Template Email](./email_templates.md) - Struttura e utilizzo dei template email
-<<<<<<< .merge_file_xAVzMH
 - [Best Practices Email](./email_best_practices.md) - Linee guida per le email
-=======
-<<<<<<< .merge_file_KGVvkV
-- [Best Practices Email](./email_best_practices.md) - Linee guida per le email
-=======
->>>>>>> .merge_file_opXQ4C
 - [Best Practices Email](./email-best-practices.md) - Linee guida per le email
->>>>>>> .merge_file_cGWohi
 - [Template Responsivi](./responsive_email_templates.md) - Implementazione di template email responsivi
 
 ### Canali di Notifica
 - [Implementazione Canali](./notification_channels_implementation.md) - Implementazione dei canali di notifica
 - [SMS](./sms_implementation.md) - Implementazione del canale SMS
 - [WhatsApp](./whatsapp_channel.md) - Implementazione del canale WhatsApp
-<<<<<<< .merge_file_xAVzMH
 - [Telegram](./telegram_channel.md) - Implementazione del canale Telegram
-=======
-<<<<<<< .merge_file_KGVvkV
-- [Telegram](./telegram_channel.md) - Implementazione del canale Telegram
-=======
->>>>>>> .merge_file_opXQ4C
 - [Telegram](./telegram-channel.md) - Implementazione del canale Telegram
->>>>>>> .merge_file_cGWohi
 
 ### Filament UI
 - [Risorse Filament](./filament-resources.md) - Componenti Filament Resources
@@ -155,24 +133,10 @@ Questo documento serve come indice centrale per il modulo Notify, fornendo una g
 ### Configurazione
 - [Struttura Config](./config_structure.md) - Struttura dei file di configurazione
 - [Configurazione SMS](./sms_config_structure.md) - Struttura della configurazione SMS
-<<<<<<< .merge_file_xAVzMH
 - [Principi di Configurazione](./configurations_usage_principles.md) - Principi per l'utilizzo delle configurazioni
 
 ### Pattern e Architettura
 - [Pattern Factory](./factory_pattern_analysis.md) - Analisi del pattern Factory
-=======
-<<<<<<< .merge_file_KGVvkV
-- [Principi di Configurazione](./configurations_usage_principles.md) - Principi per l'utilizzo delle configurazioni
-
-### Pattern e Architettura
-- [Pattern Factory](./factory_pattern_analysis.md) - Analisi del pattern Factory
-=======
-- [Principi di Configurazione](./configurations-usage-principles.md) - Principi per l'utilizzo delle configurazioni
-
-### Pattern e Architettura
-- [Pattern Factory](./factory-pattern-analysis.md) - Analisi del pattern Factory
->>>>>>> .merge_file_cGWohi
->>>>>>> .merge_file_opXQ4C
 - [Risoluzione Dinamica delle Classi](./dynamic_class_resolution.md) - Pattern di risoluzione dinamica delle classi
 - [Queueable Actions](./queueable-action.md) - Utilizzo di Spatie Queueable Actions
 
@@ -312,9 +276,6 @@ Ultimo aggiornamento: 14 Maggio 2025
 *Ultimo aggiornamento: Gennaio 2025*
 - Per dettagli sulle scelte architetturali e funzionali, consultare la doc globale e la sezione "Standard e Traduzioni".
 *Ultimo aggiornamento: Gennaio 2025*
-<<<<<<< .merge_file_KGVvkV
-=======
-
 ---
 
 <!-- Merged from INDEX.md, which collided with this file on case-insensitive filesystems. -->
@@ -595,4 +556,3 @@ Ultimo aggiornamento: 14 Maggio 2025
 *Ultimo aggiornamento: Gennaio 2025*
 - Per dettagli sulle scelte architetturali e funzionali, consultare la doc globale e la sezione "Standard e Traduzioni".
 *Ultimo aggiornamento: Gennaio 2025*
->>>>>>> .merge_file_cGWohi

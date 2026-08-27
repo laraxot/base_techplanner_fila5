@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_EAorUL
-=======
 ---
 title: " todo"
 module: notify
@@ -9,6 +7,5 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
->>>>>>> .merge_file_jgzdeN
 http://laradevsbd.com/story/laravel-notifications-with-database
 

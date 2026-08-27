@@ -111,11 +111,7 @@ class TestSmtpPage extends XotBasePage
         return ['emailForm'];
     }
 
-<<<<<<< .merge_file_Bxf08a
     /** @return array<string, \Filament\Actions\Action> */
-=======
-    /** @return array<string, Action> */
->>>>>>> .merge_file_vzf0XC
     protected function getEmailFormActions(): array
     {
         return [

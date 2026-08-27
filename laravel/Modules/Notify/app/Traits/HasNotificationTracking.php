@@ -5,25 +5,9 @@ declare(strict_types=1);
 namespace Modules\Notify\Traits;
 
 use Illuminate\Support\Str;
-<<<<<<< .merge_file_Mdpf7j
 use function Safe\preg_replace_callback;
 
 /** @phpstan-ignore trait.unused */
-=======
-use Webmozart\Assert\Assert;
-
-use function Safe\preg_replace_callback;
-
-/**
- * Trait HasNotificationTracking.
- *
- * Fornisce funzionalità per la gestione del tracking delle notifiche.
-<<<<<<< .merge_file_itjOkc
-=======
- *
->>>>>>> .merge_file_2WWcv9
- */
->>>>>>> .merge_file_rg36JB
 trait HasNotificationTracking
 {
     /**
@@ -38,13 +22,9 @@ trait HasNotificationTracking
             return $html;
         }
 
-<<<<<<< .merge_file_Mdpf7j
-        $route = route((string) config('notify.tracking.pixel.route'), ['id' => $trackingId]);
-=======
         $routeName = config('notify.tracking.pixel.route');
         Assert::string($routeName);
         $route = route($routeName, ['id' => $trackingId]);
->>>>>>> .merge_file_rg36JB
         $pixel = '<img src="'.$route.'" alt="" width="1" height="1" style="display:none">';
 
         return $html.$pixel;
@@ -65,25 +45,15 @@ trait HasNotificationTracking
         $result = preg_replace_callback(
             '/<a\s+(?:[^>]*?\s+)?href=(["\'])(.*?)\1/i',
             function (array $matches) use ($trackingId): string {
-<<<<<<< .merge_file_Mdpf7j
-                $url = (string) $matches[2];
-=======
                 Assert::keyExists($matches, 2);
                 Assert::string($matches[2]);
                 $url = $matches[2];
->>>>>>> .merge_file_rg36JB
 
                 // Ignora link di unsubscribe, anchor e link relativi
                 if (
                     Str::contains($url, ['unsubscribe', 'mailto:', 'tel:', '#']) ||
                         ! Str::startsWith($url, ['http://', 'https://'])
                 ) {
-<<<<<<< .merge_file_Mdpf7j
-                    return (string) $matches[0];
-                }
-
-                $trackingUrl = route((string) config('notify.tracking.links.route'), [
-=======
                     Assert::keyExists($matches, 0);
                     Assert::string($matches[0]);
 
@@ -93,32 +63,19 @@ trait HasNotificationTracking
                 $routeName = config('notify.tracking.links.route');
                 Assert::string($routeName);
                 $trackingUrl = route($routeName, [
->>>>>>> .merge_file_rg36JB
                     'id' => $trackingId,
                     'url' => $url,
                 ]);
 
-<<<<<<< .merge_file_Mdpf7j
-                return str_replace($url, $trackingUrl, (string) $matches[0]);
-=======
                 Assert::keyExists($matches, 0);
                 Assert::string($matches[0]);
 
                 return str_replace($url, $trackingUrl, $matches[0]);
->>>>>>> .merge_file_rg36JB
             },
             $html,
         );
 
-<<<<<<< .merge_file_itjOkc
         return $result ?? $html;
-=======
-<<<<<<< .merge_file_Mdpf7j
-        return $result ?? $html;
-=======
-        return $result;
->>>>>>> .merge_file_rg36JB
->>>>>>> .merge_file_2WWcv9
     }
 
     /**

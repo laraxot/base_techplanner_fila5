@@ -34,10 +34,7 @@ class TelegramChannel
      * Invia la notifica attraverso il canale Telegram.
      *
      * @param  Notification  $notification  Notifica da inviare
-<<<<<<< .merge_file_rI65Eo
      *
-=======
->>>>>>> .merge_file_LHRW5K
      * @return array<string, mixed>|null Risultato dell'operazione o null in caso di errore
      *
      * @throws Exception Se la notifica non ha il metodo toTelegram o il driver non è supportato

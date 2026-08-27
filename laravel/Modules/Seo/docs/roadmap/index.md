@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 77e0353 (.)
-=======
->>>>>>> fc52fe0 (.)
-=======
->>>>>>> c101b34 (.)
-=======
->>>>>>> d0f51b6 (.)
 ---
 module: theme
 topic: index
@@ -19,13 +5,6 @@ canonical: ../../../../Themes/docs/shared-components/00-index.md
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/00-index.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> d20252d (.)
 # Seo Module - Roadmap
 
 > Gestione SEO automatizzata: meta tags, sitemap, social sharing.
@@ -52,15 +31,3 @@ See canonical documentation: ../../../../Themes/docs/shared-components/00-index.
 ## Collegamenti
 
 - [00-index modulo](../00-index.md)
-<<<<<<< HEAD
->>>>>>> 7ec200b (.)
-=======
->>>>>>> d20252d (.)
-=======
->>>>>>> 77e0353 (.)
-=======
->>>>>>> fc52fe0 (.)
-=======
->>>>>>> c101b34 (.)
-=======
->>>>>>> d0f51b6 (.)

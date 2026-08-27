@@ -16,28 +16,14 @@
 ```php
 // ❌ SBAGLIATO - DB::table() quando esiste il modello
 $betHistories = DB::table('bet_histories')
-<<<<<<< .merge_file_5AHoUH
     ->where('predict_id', $predict->id)
-=======
-<<<<<<< .merge_file_cKd5rQ
-    ->where('predict_id', $predict->id)
-=======
->>>>>>> .merge_file_bhL22m
     ->where('forecast_id', $forecast->id)
->>>>>>> .merge_file_UUHJMo
     ->get();
 
 // ✅ CORRETTO - Usa il MODELLO
 $betHistories = BetHistory::query()
-<<<<<<< .merge_file_5AHoUH
     ->where('predict_id', $predict->id)
-=======
-<<<<<<< .merge_file_cKd5rQ
-    ->where('predict_id', $predict->id)
-=======
->>>>>>> .merge_file_bhL22m
     ->where('forecast_id', $forecast->id)
->>>>>>> .merge_file_UUHJMo
     ->get();
 ```
 
@@ -194,31 +180,16 @@ Rating::query()->...
 ## 🔗 Related Documentation
 
 ### AI Agents Docs
-<<<<<<< .merge_file_5AHoUH
 - **[Rules Index](00-INDEX.md)** - All rules
-=======
-<<<<<<< .merge_file_cKd5rQ
-- **[Rules Index](00-INDEX.md)** - All rules
-=======
->>>>>>> .merge_file_bhL22m
 - **[Rules Index](00-index.md)** - All rules
->>>>>>> .merge_file_UUHJMo
 - **[XotBase Extension Rule](xotbase-extension-rule.md)** - XotBase philosophy
 - **[Reusable Components](../guidelines/reusable-components-philosophy.md)** - DRY+KISS
 
 ### Module Docs
-<<<<<<< .merge_file_5AHoUH
 - **[BetHistory Model](../../laravel/Modules/Predict/app/Models/BetHistory.php)** - Source
 - **[Transaction Model](../../laravel/Modules/Predict/app/Models/Transaction.php)** - Source
-=======
-<<<<<<< .merge_file_cKd5rQ
-- **[BetHistory Model](../../laravel/Modules/Predict/app/Models/BetHistory.php)** - Source
-- **[Transaction Model](../../laravel/Modules/Predict/app/Models/Transaction.php)** - Source
-=======
->>>>>>> .merge_file_bhL22m
 - **[BetHistory Model](../../laravel/Modules/Forecast/app/Models/BetHistory.php)** - Source
 - **[Transaction Model](../../laravel/Modules/Forecast/app/Models/Transaction.php)** - Source
->>>>>>> .merge_file_UUHJMo
 
 ---
 

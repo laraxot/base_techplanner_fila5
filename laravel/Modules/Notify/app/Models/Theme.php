@@ -6,8 +6,6 @@ namespace Modules\Notify\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-<<<<<<< .merge_file_gBSKC2
-=======
 /**
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Theme newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Theme newQuery()
@@ -15,7 +13,6 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @mixin \Eloquent
  */
->>>>>>> .merge_file_1WHikI
 class Theme extends Model
 {
     /**

@@ -16,29 +16,15 @@ Il metodo `addAttachments()` supporta **due formati** per gli allegati:
 // Formato corretto - allegato da file su filesystem
 $attachments = [
     [
-<<<<<<< .merge_file_xX4Upy
 'path' => '/var/www/html/Quaeris/public_html/images/avatars/default-3.svg',
-=======
-<<<<<<< .merge_file_zcsiZh
-'path' => '/var/www/html/Quaeris/public_html/images/avatars/default-3.svg',
-=======
->>>>>>> .merge_file_M8L8Tf
 'path' => '/var/www/_bases/base_ptvx_fila5/public_html/images/avatars/default-3.svg',
->>>>>>> .merge_file_TFa1kP
         'as' => 'logo.svg',  // Opzionale: nome del file da mostrare nell'email
         'mime' => 'image/svg+xml',  // Opzionale: MIME type del file
     ],
     // Eventualmente altri allegati...
     [
-<<<<<<< .merge_file_xX4Upy
 'path' => '/var/www/html/Quaeris/public_html/documents/terms.pdf',
-=======
-<<<<<<< .merge_file_zcsiZh
-'path' => '/var/www/html/Quaeris/public_html/documents/terms.pdf',
-=======
->>>>>>> .merge_file_M8L8Tf
 'path' => '/var/www/_bases/base_ptvx_fila5/public_html/documents/terms.pdf',
->>>>>>> .merge_file_TFa1kP
         'as' => 'termini.pdf',
         'mime' => 'application/pdf',
     ],
@@ -305,15 +291,8 @@ foreach ($records as $record) {
 - [Ptv - Complete PDF Email Guide](../../../ptv/docs/pdf-email-attachments-complete-guide.md)
 - [Xot - PDF Generation Technical](../../../xot/docs/actions/pdf-content-generation-technical.md)
 - [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/email_layouts_best_practices.md)
-<<<<<<< .merge_file_xX4Upy
 - [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/spatie_mail_templates_structure.md)
-=======
-<<<<<<< .merge_file_zcsiZh
-- [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/spatie_mail_templates_structure.md)
-=======
->>>>>>> .merge_file_M8L8Tf
 - [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/spatie-mail-templates-structure.md)
->>>>>>> .merge_file_TFa1kP
 - [EMAIL_TROUBLESHOOTING.md](./email_troubleshooting.md)
 
 ### File Correlati

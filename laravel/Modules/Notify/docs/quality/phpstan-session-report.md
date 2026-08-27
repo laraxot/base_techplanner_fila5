@@ -119,21 +119,8 @@ return [
 ```
 
 **File corretti:**
-<<<<<<< .merge_file_osn6J0
-<<<<<<< .merge_file_EK2LT0
 - `Modules/Fixcity/app/Filament/Widgets/CreateTicketWidget.php`
-=======
-=======
-<<<<<<< .merge_file_9mXgZI
-- `Modules/Fixcity/app/Filament/Widgets/CreateTicketWidget.php`
-=======
-<<<<<<< .merge_file_EK2LT0
-- `Modules/Fixcity/app/Filament/Widgets/CreateTicketWidget.php`
-=======
->>>>>>> .merge_file_UtSxIy
->>>>>>> .merge_file_afg8WU
 - `Modules/App/app/Filament/Widgets/CreateTicketWidget.php`
->>>>>>> .merge_file_3KUioY
 - `Modules/UI/app/Filament/Blocks/Navigation.php`
 - `Modules/UI/app/Filament/Widgets/UserCalendarWidget.php`
 - `Modules/Notify/app/Filament/Clusters/Test/Pages/*.php` (5 file)
@@ -227,21 +214,8 @@ return /** @phpstan-ignore-line property.notFound */ $this->media->path . '/' . 
 - Altri: ~986 errori (25%)
 
 **Moduli con più errori nei test:**
-<<<<<<< .merge_file_osn6J0
-<<<<<<< .merge_file_EK2LT0
 1. Fixcity: 1171 errori
-=======
-=======
-<<<<<<< .merge_file_9mXgZI
-1. Fixcity: 1171 errori
-=======
-<<<<<<< .merge_file_EK2LT0
-1. Fixcity: 1171 errori
-=======
->>>>>>> .merge_file_UtSxIy
->>>>>>> .merge_file_afg8WU
 1. App: 1171 errori
->>>>>>> .merge_file_3KUioY
 2. Notify: 776 errori
 3. User: 647 errori
 4. Cms: 457 errori
@@ -277,21 +251,8 @@ return /** @phpstan-ignore-line property.notFound */ $this->media->path . '/' . 
    - Migliorare type hints per Pest Expectations
 
 ### Priorità Media
-<<<<<<< .merge_file_osn6J0
-<<<<<<< .merge_file_EK2LT0
 4. **Pulire modulo Fixcity tests (1171 errori)**
-=======
-=======
-<<<<<<< .merge_file_9mXgZI
-4. **Pulire modulo Fixcity tests (1171 errori)**
-=======
-<<<<<<< .merge_file_EK2LT0
-4. **Pulire modulo Fixcity tests (1171 errori)**
-=======
->>>>>>> .merge_file_UtSxIy
->>>>>>> .merge_file_afg8WU
 4. **Pulire modulo App tests (1171 errori)**
->>>>>>> .merge_file_3KUioY
    - Seguire il pattern del modulo Xot
    - Obiettivo: sotto 500 errori
 

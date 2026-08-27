@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_bwnVmU
-=======
 ---
 title: "Wiki Log"
 module: notify
@@ -9,7 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
->>>>>>> .merge_file_fvVrUd
 # Wiki Log
 
 Registro cronologico delle operazioni sulla wiki.
@@ -34,15 +31,8 @@ Quando esegui un'operazione:
 
 ## [2026-04-15] bootstrap | Initial Wiki Setup
 
-<<<<<<< .merge_file_16gQgr
 - Creato schema [[.schema/WIKI_SCHEMA.md]]
-=======
-<<<<<<< .merge_file_bwnVmU
-- Creato schema [[.schema/WIKI_SCHEMA.md]]
-=======
->>>>>>> .merge_file_rDAwzU
 - Creato schema [[.schema/wiki-schema.md]]
->>>>>>> .merge_file_fvVrUd
 - Creato [[wiki/index.md]] con struttura
 - Create cartelle `wiki/` e `raw/` per:
   - Root `docs/`

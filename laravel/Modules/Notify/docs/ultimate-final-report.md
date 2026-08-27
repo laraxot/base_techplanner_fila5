@@ -4,15 +4,8 @@ type: concept
 tags: [ultimate, final, report]
 created: 2026-07-14
 updated: 2026-07-14
-<<<<<<< .merge_file_ZcSnym
 qmd: "ultimate-final-report 🏆 fixcity - ultimate final report"
-=======
-<<<<<<< .merge_file_yo76ss
-qmd: "ultimate-final-report 🏆 fixcity - ultimate final report"
-=======
->>>>>>> .merge_file_PFCSLE
 qmd: "ultimate-final-report 🏆 ptv - ultimate final report"
->>>>>>> .merge_file_AhMFiV
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -284,15 +277,8 @@ Trasformato FixCity da progetto con documentazione parziale a piattaforma enterp
 ## 📚 STRUTTURA FINALE COMPLETA
 
 ```
-<<<<<<< .merge_file_ZcSnym
 base_fixcity_fila5_mono/
-=======
-<<<<<<< .merge_file_yo76ss
-base_fixcity_fila5_mono/
-=======
->>>>>>> .merge_file_PFCSLE
 base_ptv_fila5_mono/
->>>>>>> .merge_file_AhMFiV
 │
 ├── 📊 ROOT DOCS (15 files)
 │   ├── Strategic documentation

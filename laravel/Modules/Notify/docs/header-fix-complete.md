@@ -4,15 +4,8 @@ type: concept
 tags: [header, fix, complete]
 created: 2026-07-14
 updated: 2026-07-14
-<<<<<<< .merge_file_ApzBwf
 qmd: "header-fix-complete ✅ header fixcity fixato - 100% conforme bootstrap italia"
-=======
-<<<<<<< .merge_file_vQdBYL
-qmd: "header-fix-complete ✅ header fixcity fixato - 100% conforme bootstrap italia"
-=======
->>>>>>> .merge_file_HUQygi
 qmd: "header-fix-complete ✅ header ptv fixato - 100% conforme bootstrap italia"
->>>>>>> .merge_file_QWuR9c
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:

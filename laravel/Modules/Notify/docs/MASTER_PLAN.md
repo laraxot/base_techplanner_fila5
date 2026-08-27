@@ -423,27 +423,11 @@ docs/
 ├── README.md (✅ Project Overview)
 ├── MASTER_PLAN.md (✅ This document)
 ├── PROJECT_STATUS.md (✅ Status Report)
-<<<<<<< .merge_file_6Mzrve
 ├── ARCHITECTURE.md (📋 Technical Architecture)
 ├── API_REFERENCE.md (📋 API Documentation)
 ├── DEPLOYMENT.md (📋 Deployment Guide)
 └── modules/
     ├── fixcity/ (✅ Business Logic + Roadmap)
-=======
-<<<<<<< .merge_file_XQwDv2
-├── ARCHITECTURE.md (📋 Technical Architecture)
-├── API_REFERENCE.md (📋 API Documentation)
-├── DEPLOYMENT.md (📋 Deployment Guide)
-└── modules/
-    ├── fixcity/ (✅ Business Logic + Roadmap)
-=======
-├── architecture.md (📋 Technical Architecture)
-├── API_REFERENCE.md (📋 API Documentation)
-├── DEPLOYMENT.md (📋 Deployment Guide)
-└── modules/
-    ├── ptv/ (✅ Business Logic + Roadmap)
->>>>>>> .merge_file_vZlyd4
->>>>>>> .merge_file_4qHzwM
     ├── user/ (✅ IAM + Roadmap)
     ├── notify/ (✅ Notifications + Roadmap)
     ├── geo/ (✅ Geolocation + Roadmap)
@@ -498,13 +482,6 @@ FixCity è posizionata per diventare la **piattaforma leader europea** per il ci
 - *Technical capabilities e constraints*
 - *Team composition e roadmap feasibility*
 
-<<<<<<< .merge_file_6Mzrve
 **Per domande o approfondimenti**: development@fixcity.io
-=======
-<<<<<<< .merge_file_XQwDv2
-**Per domande o approfondimenti**: development@fixcity.io
-=======
->>>>>>> .merge_file_4qHzwM
 **Per domande o approfondimenti**: development@ptv.io
->>>>>>> .merge_file_vZlyd4
 

@@ -11,17 +11,9 @@
 
 ## Cross-References
 
-<<<<<<< .merge_file_yCmrF0
 - ← [GEMINI Index](INDEX.md) — All Gemini guidelines
 - ← [Main AI Docs Index](../INDEX.md) — Master index
-=======
-<<<<<<< .merge_file_tBhGeC
-- ← [GEMINI Index](INDEX.md) — All Gemini guidelines
-- ← [Main AI Docs Index](../INDEX.md) — Master index
-=======
->>>>>>> .merge_file_wDJv2k
 - ← [GEMINI Index](index.md) — All Gemini guidelines
 - ← [Main AI Docs Index](../index.md) — Master index
->>>>>>> .merge_file_c3jEPu
 - ← [../../../../laravel/GEMINI.md](../../../../laravel/../../../../laravel/GEMINI.md) — Original source
 

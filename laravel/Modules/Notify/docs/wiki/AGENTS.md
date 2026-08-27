@@ -138,15 +138,8 @@ related:
 - One query synthesis = one commit (if creating new pages)
 - **Message format**: `docs: {action} {description}`
   - ✅ `docs: ingest karpathy-llm-wiki article`
-<<<<<<< .merge_file_SHrXqk
   - ✅ `docs: lint wiki - resolve contradictions in prediction market concepts`
-=======
-<<<<<<< .merge_file_fltN1T
-  - ✅ `docs: lint wiki - resolve contradictions in prediction market concepts`
-=======
->>>>>>> .merge_file_899ELb
   - ✅ `docs: lint wiki - resolve contradictions in forecast market concepts`
->>>>>>> .merge_file_fdArDv
   - ✅ `docs: query synthesis - LLM wiki integration with Laraxot`
   - ❌ `updated wiki`
 
@@ -262,10 +255,6 @@ LLM Agent Actions:
 ### Example:
 
 ```
-<<<<<<< .merge_file_SHrXqk
-User: "How does LMSR work with prediction markets?"
-=======
-<<<<<<< .merge_file_fltN1T
 User: "How does LMSR work with prediction markets?"
 
 LLM Agent Actions:
@@ -278,9 +267,6 @@ LLM Agent Actions:
    "According to [lmsr-mechanics.md](concepts/lmsr-mechanics.md), LMSR uses
    logarithmic market scoring. The [Predict module](entities/predict-module.md)
    implements this with normalisation (see [predict-lmsr-boundary skill])."
-=======
-User: "How does LMSR work with forecast markets?"
->>>>>>> .merge_file_899ELb
 
 LLM Agent Actions:
 1. Search wiki/index.md for "LMSR", "prediction markets"
@@ -290,14 +276,8 @@ LLM Agent Actions:
    - wiki/entities/predict-module.md
 3. Synthesize answer with citations:
    "According to [lmsr-mechanics.md](concepts/lmsr-mechanics.md), LMSR uses
-<<<<<<< .merge_file_SHrXqk
-   logarithmic market scoring. The [Predict module](entities/predict-module.md)
-   implements this with normalisation (see [predict-lmsr-boundary skill])."
-=======
    logarithmic market scoring. The [Forecast module](entities/forecast-module.md)
    implements this with normalisation (see [forecast-lmsr-boundary skill])."
->>>>>>> .merge_file_fdArDv
->>>>>>> .merge_file_899ELb
 4. If synthesis reveals new insight:
    Create wiki/comparisons/lmsr-vs-order-book-mechanics.md
 5. Update cross-references between pages
@@ -358,15 +338,8 @@ LLM Agent Actions:
 
    ### Contradictions (1)
    ⚠️ concepts/lmsr-mechanics.md says "LMSR is linear"
-<<<<<<< .merge_file_SHrXqk
      vs concepts/prediction-markets.md says "LMSR is logarithmic"
-=======
-<<<<<<< .merge_file_fltN1T
-     vs concepts/prediction-markets.md says "LMSR is logarithmic"
-=======
->>>>>>> .merge_file_899ELb
      vs concepts/forecast-markets.md says "LMSR is logarithmic"
->>>>>>> .merge_file_fdArDv
      → Action: Merge pages, resolve contradiction
 
    ### Orphan Pages (2)
@@ -421,15 +394,8 @@ When working with **module-specific** wikis (`Modules/{Name}/docs/llm-wiki/`):
 When module wiki references project wiki:
 
 ```markdown
-<<<<<<< .merge_file_SHrXqk
 # In Modules/Fixcity/docs/llm-wiki/concepts/ticket-lifecycle.md
-=======
-<<<<<<< .merge_file_fltN1T
-# In Modules/Fixcity/docs/llm-wiki/concepts/ticket-lifecycle.md
-=======
->>>>>>> .merge_file_899ELb
 # In Modules/App/docs/llm-wiki/concepts/ticket-lifecycle.md
->>>>>>> .merge_file_fdArDv
 
 Related:
 - Project-wide: [[docs/wiki/concepts/laraxot-architecture]]
@@ -441,7 +407,6 @@ Related:
 Same workflow as project ingestion, but scoped to module:
 
 ```
-<<<<<<< .merge_file_SHrXqk
 User: "ingest docs/raw/articles/fixcity-ticket-patterns.md into Fixcity wiki"
 
 LLM Agent Actions:
@@ -449,25 +414,6 @@ LLM Agent Actions:
 2. Create/update pages in Modules/Fixcity/docs/llm-wiki/
 3. Update Modules/Fixcity/docs/llm-wiki/index.md
 4. Update Modules/Fixcity/docs/llm-wiki/log.md
-=======
-<<<<<<< .merge_file_fltN1T
-User: "ingest docs/raw/articles/fixcity-ticket-patterns.md into Fixcity wiki"
-
-LLM Agent Actions:
-1. Read source
-2. Create/update pages in Modules/Fixcity/docs/llm-wiki/
-3. Update Modules/Fixcity/docs/llm-wiki/index.md
-4. Update Modules/Fixcity/docs/llm-wiki/log.md
-=======
-User: "ingest docs/raw/articles/laraxot-ticket-patterns.md into App wiki"
-
-LLM Agent Actions:
-1. Read source
-2. Create/update pages in Modules/App/docs/llm-wiki/
-3. Update Modules/App/docs/llm-wiki/index.md
-4. Update Modules/App/docs/llm-wiki/log.md
->>>>>>> .merge_file_fdArDv
->>>>>>> .merge_file_899ELb
 5. Commit changes
 ```
 
@@ -555,23 +501,10 @@ sources: ["raw/articles/karpathy-llm-wiki.md", "raw/papers/lmsr-original.pdf"]
 confidence: high
 created: 2026-04-15
 updated: 2026-04-15
-<<<<<<< .merge_file_SHrXqk
-=======
-<<<<<<< .merge_file_fltN1T
->>>>>>> .merge_file_899ELb
-tags: [prediction-market, lmsr, market-mechanics, algorithmic-trading]
-related:
-  - concepts/prediction-market-design.md
-  - entities/predict-module.md
-<<<<<<< .merge_file_SHrXqk
-=======
-=======
->>>>>>> .merge_file_899ELb
 tags: [forecast-market, lmsr, market-mechanics, algorithmic-trading]
 related:
   - concepts/forecast-market-design.md
   - entities/forecast-module.md
->>>>>>> .merge_file_fdArDv
   - sources/karpathy-llm-wiki.md
 ---
 
@@ -583,22 +516,6 @@ Logarithmic Market Scoring Rule (LMSR) is the core pricing mechanism...
 
 [Content...]
 
-<<<<<<< .merge_file_SHrXqk
-=======
-<<<<<<< .merge_file_fltN1T
->>>>>>> .merge_file_899ELb
-## Implementation in Predict Module
-
-[Content with links to entities/predict-module.md]
-
-## Related Concepts
-
-- [[concepts/prediction-market-design]]
-- [[entities/predict-module]]
-<<<<<<< .merge_file_SHrXqk
-=======
-=======
->>>>>>> .merge_file_899ELb
 ## Implementation in Forecast Module
 
 [Content with links to entities/forecast-module.md]
@@ -607,7 +524,6 @@ Logarithmic Market Scoring Rule (LMSR) is the core pricing mechanism...
 
 - [[concepts/forecast-market-design]]
 - [[entities/forecast-module]]
->>>>>>> .merge_file_fdArDv
 - [[concepts/normalisation-patterns]]
 ```
 
@@ -620,28 +536,14 @@ Logarithmic Market Scoring Rule (LMSR) is the core pricing mechanism...
 
 - [[llm-wiki-architecture]] - Three-layer model for persistent knowledge (raw/wiki/schema)
 - [[lmsr-mechanics]] - Logarithmic Market Scoring Rule pricing algorithm
-<<<<<<< .merge_file_SHrXqk
 - [[prediction-market-design]] - Market clarity, resolution trust, calibration principles
-=======
-<<<<<<< .merge_file_fltN1T
-- [[prediction-market-design]] - Market clarity, resolution trust, calibration principles
-=======
->>>>>>> .merge_file_899ELb
 - [[forecast-market-design]] - Market clarity, resolution trust, calibration principles
->>>>>>> .merge_file_fdArDv
 
 ## Entities
 
 - [[andrej-karpathy]] - Creator of LLM Wiki pattern
-<<<<<<< .merge_file_SHrXqk
 - [[predict-module]] - Laraxot module for prediction markets
-=======
-<<<<<<< .merge_file_fltN1T
-- [[predict-module]] - Laraxot module for prediction markets
-=======
->>>>>>> .merge_file_899ELb
 - [[forecast-module]] - Laraxot module for forecast markets
->>>>>>> .merge_file_fdArDv
 
 ## Sources
 
@@ -669,28 +571,14 @@ Logarithmic Market Scoring Rule (LMSR) is the core pricing mechanism...
 - Commit: docs: ingest karpathy-llm-wiki article
 
 ## [2026-04-15] query | LMSR mechanics explanation
-<<<<<<< .merge_file_SHrXqk
 - Read: concepts/lmsr-mechanics.md, entities/predict-module.md
-=======
-<<<<<<< .merge_file_fltN1T
-- Read: concepts/lmsr-mechanics.md, entities/predict-module.md
-=======
->>>>>>> .merge_file_899ELb
 - Read: concepts/lmsr-mechanics.md, entities/forecast-module.md
->>>>>>> .merge_file_fdArDv
 - Created: comparisons/lmsr-vs-order-book-mechanics.md
 - Commit: docs: query synthesis - LMSR vs order book mechanics
 
 ## [2026-04-15] lint | Weekly health check
-<<<<<<< .merge_file_SHrXqk
 - Resolved: 1 contradiction in prediction market concepts
-=======
-<<<<<<< .merge_file_fltN1T
-- Resolved: 1 contradiction in prediction market concepts
-=======
->>>>>>> .merge_file_899ELb
 - Resolved: 1 contradiction in forecast market concepts
->>>>>>> .merge_file_fdArDv
 - Added: 3 cross-references to orphan pages
 - Archived: 1 stale source (old-filament-guide.md)
 - Commit: docs: lint wiki - resolve contradictions and archive stale sources

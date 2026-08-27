@@ -58,11 +58,8 @@ class WhatsAppNotification extends Notification implements ShouldQueue
     /**
      * Get the notification's delivery channels.
      *
-<<<<<<< .merge_file_MaZvlr
      * @param  mixed  $_notifiable  L'entità da notificare
      *
-=======
->>>>>>> .merge_file_KNHGC1
      * @return array<int, string>
      */
     public function via(mixed $_notifiable): array

@@ -109,10 +109,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media;
  *
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $updater
-<<<<<<< .merge_file_A2GWWi
  *
-=======
->>>>>>> .merge_file_7gqNc1
  * @property MediaCollection<int, Media> $media
  * @property int|null $media_count
  * @property Carbon|null $deleted_at

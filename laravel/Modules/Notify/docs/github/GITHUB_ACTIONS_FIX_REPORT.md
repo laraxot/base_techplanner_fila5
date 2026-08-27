@@ -115,15 +115,8 @@ comply with psr-4 autoloading standard
 
 ```
 5a34cd9c (HEAD -> dev) Fix GitHub Actions issues
-<<<<<<< .merge_file_iKN67X
 236c2218 Update AGENTS.md and add git commit/push rules
-=======
-<<<<<<< .merge_file_sfuHzi
-236c2218 Update AGENTS.md and add git commit/push rules
-=======
->>>>>>> .merge_file_HRyVEc
 236c2218 Update agents.md and add git commit/push rules
->>>>>>> .merge_file_Esuitd
 55d23201 Add task complete report - all files pushed
 99974315 Add CRITICAL AI rules for git commit/push
 ae920e7c Add AI lessons learned and GitHub Action setup guide
@@ -160,15 +153,8 @@ ae920e7c Add AI lessons learned and GitHub Action setup guide
 
 ```bash
 # Option 1: Via GitHub UI
-<<<<<<< .merge_file_iKN67X
 1. Go to: https://github.com/laraxot/base_fixcity_fila5/discussions
-=======
-<<<<<<< .merge_file_sfuHzi
-1. Go to: https://github.com/laraxot/base_fixcity_fila5/discussions
-=======
->>>>>>> .merge_file_HRyVEc
 1. Go to: https://github.com/laraxot/platform/discussions
->>>>>>> .merge_file_Esuitd
 2. Click "New discussion"
 3. Copy content from docs/github/DISCUSSION_AI_WORK_SUMMARY.md
 4. Choose category: "General"
@@ -247,15 +233,8 @@ nothing to commit, working tree clean
 ```bash
 $ git log -n 5 --oneline
 5a34cd9c (HEAD -> dev, origin/dev) Fix GitHub Actions issues
-<<<<<<< .merge_file_iKN67X
 236c2218 Update AGENTS.md and add git commit/push rules
-=======
-<<<<<<< .merge_file_sfuHzi
-236c2218 Update AGENTS.md and add git commit/push rules
-=======
->>>>>>> .merge_file_HRyVEc
 236c2218 Update agents.md and add git commit/push rules
->>>>>>> .merge_file_Esuitd
 55d23201 Add task complete report - all files pushed
 99974315 Add CRITICAL AI rules for git commit/push
 ae920e7c Add AI lessons learned and GitHub Action setup guide
@@ -264,15 +243,8 @@ ae920e7c Add AI lessons learned and GitHub Action setup guide
 ### Files on GitHub
 
 All files are pushed and accessible on:
-<<<<<<< .merge_file_iKN67X
 https://github.com/laraxot/base_fixcity_fila5/commits/dev
-=======
-<<<<<<< .merge_file_sfuHzi
-https://github.com/laraxot/base_fixcity_fila5/commits/dev
-=======
->>>>>>> .merge_file_HRyVEc
 https://github.com/laraxot/platform/commits/dev
->>>>>>> .merge_file_Esuitd
 
 ---
 

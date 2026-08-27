@@ -41,15 +41,8 @@ Modules/ModuleName/
 ├── docs/
 │   ├── README.md                    # Module overview and quick reference
 │   ├── 00-index.md                  # Alternative index (if needed)
-<<<<<<< .merge_file_86oz2A
 │   ├── CHANGELOG.md                 # Module changelog
-=======
-<<<<<<< .merge_file_AD1DAE
-│   ├── CHANGELOG.md                 # Module changelog
-=======
->>>>>>> .merge_file_4MQ5nd
 │   ├── changelog.md                 # Module changelog
->>>>>>> .merge_file_9WsnSn
 │   ├── architecture/                # Architecture decisions and patterns
 │   │   ├── overview.md
 │   │   └── decisions/               # ADRs (Architectural Decision Records)
@@ -451,15 +444,8 @@ jobs:
 
 ## 📚 Related Documents
 
-<<<<<<< .merge_file_86oz2A
 - [AGENTS.md](../../../AGENTS.md) - Agent guidelines
-=======
-<<<<<<< .merge_file_AD1DAE
-- [AGENTS.md](../../../AGENTS.md) - Agent guidelines
-=======
->>>>>>> .merge_file_4MQ5nd
 - [agents.md](../../../agents.md) - Agent guidelines
->>>>>>> .merge_file_9WsnSn
 - [.windsurfrules](../../../.windsurfrules) - IDE rules
 - [documentation-index.md](../../../docs/documentation-index.md) - Master index
 

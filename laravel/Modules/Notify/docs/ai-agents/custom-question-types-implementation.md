@@ -10,29 +10,15 @@ Implementazione completa delle custom question types da Fila4 a Fila5, con integ
 
 ### 1. RootGroupedBf ✅
 
-<<<<<<< .merge_file_rhtKNw
 **File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/RootGroupedBf.php`
-=======
-<<<<<<< .merge_file_7ocO14
-**File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/RootGroupedBf.php`
-=======
->>>>>>> .merge_file_pbMY7H
 **File**: `Modules/App/app/Actions/QuestionChart/Custom/RootGroupedBf.php`
->>>>>>> .merge_file_GgrUQ3
 
 **Scopo**: Raggruppa domande per `gid` e calcola valutazioni 1-5 vs 6-10
 
 **Pattern**: `custom:root_grouped_bf`
 
-<<<<<<< .merge_file_rhtKNw
 **Esempio URL**: http://127.0.0.1:8000/quaeris/admin/ats/survey-pdfs/16/question-charts/234
-=======
-<<<<<<< .merge_file_7ocO14
-**Esempio URL**: http://127.0.0.1:8000/quaeris/admin/ats/survey-pdfs/16/question-charts/234
-=======
->>>>>>> .merge_file_pbMY7H
 **Esempio URL**: http://127.0.0.1:8000/this-project/admin/ats/survey-pdfs/16/question-charts/234
->>>>>>> .merge_file_GgrUQ3
 
 **Logica**:
 - Recupera domande LimeSurvey con `parent_qid != 0`
@@ -56,29 +42,15 @@ AnswersChartData {
 
 ### 2. MailResponseRate ✅
 
-<<<<<<< .merge_file_rhtKNw
 **File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/MailResponseRate.php`
-=======
-<<<<<<< .merge_file_7ocO14
-**File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/MailResponseRate.php`
-=======
->>>>>>> .merge_file_pbMY7H
 **File**: `Modules/App/app/Actions/QuestionChart/Custom/MailResponseRate.php`
->>>>>>> .merge_file_GgrUQ3
 
 **Scopo**: Calcola tasso di risposta email
 
 **Pattern**: `custom:mail_response_rate`
 
-<<<<<<< .merge_file_rhtKNw
 **Esempio URL**: http://127.0.0.1:8000/quaeris/admin/ats/survey-pdfs/16/question-charts/192
-=======
-<<<<<<< .merge_file_7ocO14
-**Esempio URL**: http://127.0.0.1:8000/quaeris/admin/ats/survey-pdfs/16/question-charts/192
-=======
->>>>>>> .merge_file_pbMY7H
 **Esempio URL**: http://127.0.0.1:8000/this-project/admin/ats/survey-pdfs/16/question-charts/192
->>>>>>> .merge_file_GgrUQ3
 
 **Logica**:
 - Query su `lime_tokens_{survey_id}` per invitati email
@@ -100,29 +72,15 @@ AnswersChartData {
 
 ### 3. SmsResponseRate ✅
 
-<<<<<<< .merge_file_rhtKNw
 **File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/SmsResponseRate.php`
-=======
-<<<<<<< .merge_file_7ocO14
-**File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/SmsResponseRate.php`
-=======
->>>>>>> .merge_file_pbMY7H
 **File**: `Modules/App/app/Actions/QuestionChart/Custom/SmsResponseRate.php`
->>>>>>> .merge_file_GgrUQ3
 
 **Scopo**: Calcola tasso di risposta SMS
 
 **Pattern**: `custom:sms_response_rate`
 
-<<<<<<< .merge_file_rhtKNw
 **Esempio URL**: http://127.0.0.1:8000/quaeris/admin/ats/survey-pdfs/16/question-charts/191
-=======
-<<<<<<< .merge_file_7ocO14
-**Esempio URL**: http://127.0.0.1:8000/quaeris/admin/ats/survey-pdfs/16/question-charts/191
-=======
->>>>>>> .merge_file_pbMY7H
 **Esempio URL**: http://127.0.0.1:8000/this-project/admin/ats/survey-pdfs/16/question-charts/191
->>>>>>> .merge_file_GgrUQ3
 
 **Logica**:
 - Simile a MailResponseRate ma per SMS
@@ -132,29 +90,15 @@ AnswersChartData {
 
 ### 4. ContactsCompleted ✅
 
-<<<<<<< .merge_file_rhtKNw
 **File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/ContactsCompleted.php`
-=======
-<<<<<<< .merge_file_7ocO14
-**File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/ContactsCompleted.php`
-=======
->>>>>>> .merge_file_pbMY7H
 **File**: `Modules/App/app/Actions/QuestionChart/Custom/ContactsCompleted.php`
->>>>>>> .merge_file_GgrUQ3
 
 **Scopo**: Conta contatti completati
 
 **Pattern**: `custom:contacts_completed`
 
-<<<<<<< .merge_file_rhtKNw
 **Esempio URL**: http://127.0.0.1:8000/quaeris/admin/ats/survey-pdfs/16/question-charts/190
-=======
-<<<<<<< .merge_file_7ocO14
-**Esempio URL**: http://127.0.0.1:8000/quaeris/admin/ats/survey-pdfs/16/question-charts/190
-=======
->>>>>>> .merge_file_pbMY7H
 **Esempio URL**: http://127.0.0.1:8000/this-project/admin/ats/survey-pdfs/16/question-charts/190
->>>>>>> .merge_file_GgrUQ3
 
 **Logica**:
 - Query su partecipanti
@@ -165,15 +109,8 @@ AnswersChartData {
 
 ### 5. ContactsCompleted2 ✅
 
-<<<<<<< .merge_file_rhtKNw
 **File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/ContactsCompleted2.php`
-=======
-<<<<<<< .merge_file_7ocO14
-**File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/ContactsCompleted2.php`
-=======
->>>>>>> .merge_file_pbMY7H
 **File**: `Modules/App/app/Actions/QuestionChart/Custom/ContactsCompleted2.php`
->>>>>>> .merge_file_GgrUQ3
 
 **Scopo**: Variante di ContactsCompleted
 
@@ -183,15 +120,8 @@ AnswersChartData {
 
 ### 6. AvgGroup2 ✅
 
-<<<<<<< .merge_file_rhtKNw
 **File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/AvgGroup2.php`
-=======
-<<<<<<< .merge_file_7ocO14
-**File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/AvgGroup2.php`
-=======
->>>>>>> .merge_file_pbMY7H
 **File**: `Modules/App/app/Actions/QuestionChart/Custom/AvgGroup2.php`
->>>>>>> .merge_file_GgrUQ3
 
 **Scopo**: Calcola medie per gruppo
 
@@ -203,15 +133,8 @@ AnswersChartData {
 
 ### GetAnswersByQuestionChart
 
-<<<<<<< .merge_file_rhtKNw
 **File**: `Modules/Quaeris/app/Actions/QuestionChart/GetAnswersByQuestionChart.php`
-=======
-<<<<<<< .merge_file_7ocO14
-**File**: `Modules/Quaeris/app/Actions/QuestionChart/GetAnswersByQuestionChart.php`
-=======
->>>>>>> .merge_file_pbMY7H
 **File**: `Modules/App/app/Actions/QuestionChart/GetAnswersByQuestionChart.php`
->>>>>>> .merge_file_GgrUQ3
 
 **Custom Action Map**:
 ```php
@@ -245,15 +168,8 @@ private function handleCustomQuestionType(...): AnswersChartData
 
 ### Pest Test Suite
 
-<<<<<<< .merge_file_rhtKNw
 **File**: `Modules/Quaeris/tests/Unit/Actions/QuestionChart/CustomQuestionTypesTest.php`
-=======
-<<<<<<< .merge_file_7ocO14
-**File**: `Modules/Quaeris/tests/Unit/Actions/QuestionChart/CustomQuestionTypesTest.php`
-=======
->>>>>>> .merge_file_pbMY7H
 **File**: `Modules/App/tests/Unit/Actions/QuestionChart/CustomQuestionTypesTest.php`
->>>>>>> .merge_file_GgrUQ3
 
 **Test Cases**: 10+
 
@@ -280,24 +196,10 @@ it('can handle RootGroupedBf custom question', function (): void {
 cd ./laravel
 
 # Esegui test custom questions
-<<<<<<< .merge_file_rhtKNw
 ./vendor/bin/pest Modules/Quaeris/tests/Unit/Actions/QuestionChart/CustomQuestionTypesTest.php
 
 # Con coverage
 XDEBUG_MODE=off ./vendor/bin/pest Modules/Quaeris/tests/Unit/Actions/QuestionChart/CustomQuestionTypesTest.php --coverage
-=======
-<<<<<<< .merge_file_7ocO14
-./vendor/bin/pest Modules/Quaeris/tests/Unit/Actions/QuestionChart/CustomQuestionTypesTest.php
-
-# Con coverage
-XDEBUG_MODE=off ./vendor/bin/pest Modules/Quaeris/tests/Unit/Actions/QuestionChart/CustomQuestionTypesTest.php --coverage
-=======
-./vendor/bin/pest Modules/App/tests/Unit/Actions/QuestionChart/CustomQuestionTypesTest.php
-
-# Con coverage
-XDEBUG_MODE=off ./vendor/bin/pest Modules/App/tests/Unit/Actions/QuestionChart/CustomQuestionTypesTest.php --coverage
->>>>>>> .merge_file_GgrUQ3
->>>>>>> .merge_file_pbMY7H
 ```
 
 ---
@@ -307,26 +209,6 @@ XDEBUG_MODE=off ./vendor/bin/pest Modules/App/tests/Unit/Actions/QuestionChart/C
 ### Created (11 files)
 
 **Custom Actions** (6):
-<<<<<<< .merge_file_rhtKNw
-=======
-<<<<<<< .merge_file_7ocO14
->>>>>>> .merge_file_pbMY7H
-1. `Modules/Quaeris/app/Actions/QuestionChart/Custom/RootGroupedBf.php`
-2. `Modules/Quaeris/app/Actions/QuestionChart/Custom/MailResponseRate.php`
-3. `Modules/Quaeris/app/Actions/QuestionChart/Custom/SmsResponseRate.php`
-4. `Modules/Quaeris/app/Actions/QuestionChart/Custom/ContactsCompleted.php`
-5. `Modules/Quaeris/app/Actions/QuestionChart/Custom/ContactsCompleted2.php`
-6. `Modules/Quaeris/app/Actions/QuestionChart/Custom/AvgGroup2.php`
-
-**Integration** (1):
-7. `Modules/Quaeris/app/Actions/QuestionChart/GetAnswersByQuestionChart.php` (updated)
-
-**Tests** (1):
-8. `Modules/Quaeris/tests/Unit/Actions/QuestionChart/CustomQuestionTypesTest.php`
-<<<<<<< .merge_file_rhtKNw
-=======
-=======
->>>>>>> .merge_file_pbMY7H
 1. `Modules/App/app/Actions/QuestionChart/Custom/RootGroupedBf.php`
 2. `Modules/App/app/Actions/QuestionChart/Custom/MailResponseRate.php`
 3. `Modules/App/app/Actions/QuestionChart/Custom/SmsResponseRate.php`
@@ -339,7 +221,6 @@ XDEBUG_MODE=off ./vendor/bin/pest Modules/App/tests/Unit/Actions/QuestionChart/C
 
 **Tests** (1):
 8. `Modules/App/tests/Unit/Actions/QuestionChart/CustomQuestionTypesTest.php`
->>>>>>> .merge_file_GgrUQ3
 
 **Documentation** (3):
 9. `.github/ISSUE_TEMPLATE/custom-chart-progress-update.md`
@@ -353,18 +234,10 @@ XDEBUG_MODE=off ./vendor/bin/pest Modules/App/tests/Unit/Actions/QuestionChart/C
 ### Example: RootGroupedBf
 
 ```php
-<<<<<<< .merge_file_rhtKNw
 use Modules\Quaeris\Actions\QuestionChart\Custom\RootGroupedBf;
 use Modules\Quaeris\Models\QuestionChart;
-=======
-<<<<<<< .merge_file_7ocO14
-use Modules\Quaeris\Actions\QuestionChart\Custom\RootGroupedBf;
-use Modules\Quaeris\Models\QuestionChart;
-=======
->>>>>>> .merge_file_pbMY7H
 use Modules\App\Actions\QuestionChart\Custom\RootGroupedBf;
 use Modules\App\Models\QuestionChart;
->>>>>>> .merge_file_GgrUQ3
 
 // Trova QuestionChart
 $questionChart = QuestionChart::find(234);
@@ -382,18 +255,10 @@ foreach ($result->answers as $answer) {
 ### Example: MailResponseRate
 
 ```php
-<<<<<<< .merge_file_rhtKNw
 use Modules\Quaeris\Actions\QuestionChart\Custom\MailResponseRate;
 use Modules\Quaeris\Datas\AnswersFilterData;
-=======
-<<<<<<< .merge_file_7ocO14
-use Modules\Quaeris\Actions\QuestionChart\Custom\MailResponseRate;
-use Modules\Quaeris\Datas\AnswersFilterData;
-=======
->>>>>>> .merge_file_pbMY7H
 use Modules\App\Actions\QuestionChart\Custom\MailResponseRate;
 use Modules\App\Datas\AnswersFilterData;
->>>>>>> .merge_file_GgrUQ3
 
 $questionChart = QuestionChart::find(192);
 
@@ -505,10 +370,6 @@ return AnswersChartData::from([
 ## References
 
 ### Fila4 Source
-<<<<<<< .merge_file_rhtKNw
-- `./laravel/Modules/Quaeris/app/Actions/QuestionChart/Custom/`
-=======
-<<<<<<< .merge_file_7ocO14
 - `./laravel/Modules/Quaeris/app/Actions/QuestionChart/Custom/`
 
 ### Fila5 Implementation
@@ -517,21 +378,13 @@ return AnswersChartData::from([
 
 ### Tests
 - `Modules/Quaeris/tests/Unit/Actions/QuestionChart/CustomQuestionTypesTest.php`
-=======
-- `./laravel/Modules/App/app/Actions/QuestionChart/Custom/`
->>>>>>> .merge_file_pbMY7H
 
 ### Fila5 Implementation
 - `Modules/Quaeris/app/Actions/QuestionChart/Custom/`
 - `Modules/Quaeris/app/Actions/QuestionChart/GetAnswersByQuestionChart.php`
 
 ### Tests
-<<<<<<< .merge_file_rhtKNw
 - `Modules/Quaeris/tests/Unit/Actions/QuestionChart/CustomQuestionTypesTest.php`
-=======
-- `Modules/App/tests/Unit/Actions/QuestionChart/CustomQuestionTypesTest.php`
->>>>>>> .merge_file_GgrUQ3
->>>>>>> .merge_file_pbMY7H
 
 ### GitHub
 - [Custom Chart Implementation Issue](.github/ISSUE_TEMPLATE/custom-chart-implementation.md)

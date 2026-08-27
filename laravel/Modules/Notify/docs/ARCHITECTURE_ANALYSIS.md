@@ -1096,15 +1096,8 @@ The frontend follows Italian Public Administration design guidelines:
 <x-ui.marketing.breadcrumbs :crumbs="[...]" />
 
 // Ticket List (AGID-compliant)
-<<<<<<< .merge_file_JcD8nr
 <x-fixcity::blocks.ticket_list.agid />
-=======
-<<<<<<< .merge_file_ARLRg0
-<x-fixcity::blocks.ticket_list.agid />
-=======
->>>>>>> .merge_file_Ru7OQb
 <x-ptv::blocks.ticket_list.agid />
->>>>>>> .merge_file_UfT8sd
 
 // Forms (Filament + Custom CSS)
 - Titillium Web font family
@@ -1628,15 +1621,8 @@ Tasks:
 
 ### Recommended New Documentation
 ```
-<<<<<<< .merge_file_JcD8nr
 1. ARCHITECTURE.md
-=======
-<<<<<<< .merge_file_ARLRg0
-1. ARCHITECTURE.md
-=======
->>>>>>> .merge_file_Ru7OQb
 1. architecture.md
->>>>>>> .merge_file_UfT8sd
    - System architecture diagrams
    - Module dependency graph
    - Database schema diagrams

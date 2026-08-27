@@ -214,15 +214,8 @@
 ## 📚 STRUTTURA FINALE PROGETTO
 
 ```
-<<<<<<< .merge_file_F0HlpX
 base_fixcity_fila5_mono/
-=======
-<<<<<<< .merge_file_8m6Yil
-base_fixcity_fila5_mono/
-=======
->>>>>>> .merge_file_3hyLKq
 base_ptv_fila5_mono/
->>>>>>> .merge_file_y5ZIMR
 │
 ├── 📊 ROOT DOCS (14 files)
 │   ├── DOCUMENTATION_INDEX.md

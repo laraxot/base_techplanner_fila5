@@ -1,26 +1,12 @@
 ---
-<<<<<<< .merge_file_s1o59r
 title: "🔒 FixCity Security Checklist"
-=======
-<<<<<<< .merge_file_lkcvTU
-title: "🔒 FixCity Security Checklist"
-=======
->>>>>>> .merge_file_kSaQbA
 title: "🔒 Notify Security Checklist"
->>>>>>> .merge_file_nRON8D
 type: concept
 tags: [security, checklist]
 created: 2026-07-14
 updated: 2026-07-14
-<<<<<<< .merge_file_s1o59r
 qmd: "security-checklist 🔒 fixcity security checklist"
-=======
-<<<<<<< .merge_file_lkcvTU
-qmd: "security-checklist 🔒 fixcity security checklist"
-=======
->>>>>>> .merge_file_kSaQbA
 qmd: "security-checklist 🔒 laraxot security checklist"
->>>>>>> .merge_file_nRON8D
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -34,15 +20,8 @@ related:
   - "./final-implementation-report.md"
 ---
 
-<<<<<<< .merge_file_s1o59r
 # 🔒 FixCity Security Checklist
-=======
-<<<<<<< .merge_file_lkcvTU
-# 🔒 FixCity Security Checklist
-=======
->>>>>>> .merge_file_kSaQbA
 # 🔒 Notify Security Checklist
->>>>>>> .merge_file_nRON8D
 
 **Status**: Production Ready
 
@@ -440,21 +419,9 @@ Overall Security Score: 92/100
 
 ## 📞 Security Contacts
 
-<<<<<<< .merge_file_s1o59r
 **Security Team Lead**: security@fixcity.it  
 **Emergency Contact**: +39 06 1234 5678  
 **Incident Reporting**: incidents@fixcity.it
-=======
-<<<<<<< .merge_file_lkcvTU
-**Security Team Lead**: security@fixcity.it  
-**Emergency Contact**: +39 06 1234 5678  
-**Incident Reporting**: incidents@fixcity.it
-=======
-**Security Team Lead**: security@laraxot.it  
-**Emergency Contact**: +39 06 1234 5678  
-**Incident Reporting**: incidents@laraxot.it
->>>>>>> .merge_file_nRON8D
->>>>>>> .merge_file_kSaQbA
 
 ---
 

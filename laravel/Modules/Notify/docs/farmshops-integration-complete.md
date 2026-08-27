@@ -200,29 +200,15 @@ Map Render → User Feedback
 #### 1. Visualizzazione Segnalazioni
 ```php
 // Homepage con mappa
-<<<<<<< .merge_file_xJ7MDD
 <livewire:fixcity::ticket-map />
-=======
-<<<<<<< .merge_file_e5z3lG
-<livewire:fixcity::ticket-map />
-=======
->>>>>>> .merge_file_XIqu4e
 <livewire:ptv::ticket-map />
->>>>>>> .merge_file_xYc3BS
 ```
 
 #### 2. Ricerca Geografica
 ```php
 // Trova segnalazioni vicine
-<<<<<<< .merge_file_xJ7MDD
 <livewire:fixcity::ticket-map 
-=======
-<<<<<<< .merge_file_e5z3lG
-<livewire:fixcity::ticket-map 
-=======
->>>>>>> .merge_file_XIqu4e
 <livewire:ptv::ticket-map 
->>>>>>> .merge_file_xYc3BS
     :center="[$userLat, $userLng]" 
     :zoom="15" 
 />
@@ -231,15 +217,8 @@ Map Render → User Feedback
 #### 3. Dashboard Operatori
 ```php
 // Mappa con filtri per operatori
-<<<<<<< .merge_file_xJ7MDD
 <livewire:fixcity::ticket-map 
-=======
-<<<<<<< .merge_file_e5z3lG
-<livewire:fixcity::ticket-map 
-=======
->>>>>>> .merge_file_XIqu4e
 <livewire:ptv::ticket-map 
->>>>>>> .merge_file_xYc3BS
     :filters="['status' => 'open']" 
 />
 ```
@@ -247,15 +226,8 @@ Map Render → User Feedback
 #### 4. Reporting
 ```php
 // Mappa per report geografici
-<<<<<<< .merge_file_xJ7MDD
 <livewire:fixcity::ticket-map 
-=======
-<<<<<<< .merge_file_e5z3lG
-<livewire:fixcity::ticket-map 
-=======
->>>>>>> .merge_file_XIqu4e
 <livewire:ptv::ticket-map 
->>>>>>> .merge_file_xYc3BS
     :filters="['priority' => 'urgent']" 
 />
 ```

@@ -16,31 +16,10 @@ related:
   - "./telegram-notifications-guide.md"
 ---
 
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-<<<<<<< .merge_file_HDa1qV
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-# Implementazione di Notifiche Multi-Canale 
-
-Questa documentazione descrive come implementare correttamente notifiche multi-canale (email, SMS, Telegram) nel modulo Notify di <nome progetto>.
-Questa documentazione descrive come implementare correttamente notifiche multi-canale (email, SMS, Telegram) nel modulo Notify di SaluteOra.
-<<<<<<< .merge_file_i6ic1t
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
 # Implementazione di Notifiche Multi-Canale
 
 Questa documentazione descrive come implementare correttamente notifiche multi-canale (email, SMS, Telegram) nel modulo Notify di <nome progetto>.
 Questa documentazione descrive come implementare correttamente notifiche multi-canale (email, SMS, Telegram) nel modulo Notify di <nome progetto>.
->>>>>>> .merge_file_e76mxL
 
 ## Indice
 
@@ -56,21 +35,8 @@ Questa documentazione descrive come implementare correttamente notifiche multi-c
 ## Introduzione
 
 <nome progetto> utilizza il sistema di notifiche di Laravel per inviare comunicazioni attraverso diversi canali. Ogni canale richiede un'implementazione specifica per garantire la corretta consegna dei messaggi.
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
 SaluteOra utilizza il sistema di notifiche di Laravel per inviare comunicazioni attraverso diversi canali. Ogni canale richiede un'implementazione specifica per garantire la corretta consegna dei messaggi.
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-SaluteOra utilizza il sistema di notifiche di Laravel per inviare comunicazioni attraverso diversi canali. Ogni canale richiede un'implementazione specifica per garantire la corretta consegna dei messaggi.
-=======
-<<<<<<< .merge_file_HDa1qV
-SaluteOra utilizza il sistema di notifiche di Laravel per inviare comunicazioni attraverso diversi canali. Ogni canale richiede un'implementazione specifica per garantire la corretta consegna dei messaggi.
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
 <nome progetto> utilizza il sistema di notifiche di Laravel per inviare comunicazioni attraverso diversi canali. Ogni canale richiede un'implementazione specifica per garantire la corretta consegna dei messaggi.
->>>>>>> .merge_file_e76mxL
 
 ## Architettura delle Notifiche
 
@@ -114,40 +80,10 @@ Quando si utilizza `SpatieEmail` con le notifiche, è **fondamentale** impostare
 public function toMail($notifiable): SpatieEmail
 {
     $email = new SpatieEmail($this->record, $this->slug);
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-    
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-    
-=======
-<<<<<<< .merge_file_HDa1qV
-    
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
->>>>>>> .merge_file_e76mxL
     // IMPORTANTE: garantisci che ci sia sempre un destinatario
     if (method_exists($notifiable, 'routeNotificationFor')) {
         $email->to($notifiable->routeNotificationFor('mail'));
     }
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-    
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-    
-=======
-<<<<<<< .merge_file_HDa1qV
-    
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
->>>>>>> .merge_file_e76mxL
     return $email;
 }
 ```
@@ -168,21 +104,8 @@ public function toMail($notifiable): SpatieEmail
 ### Configurazione Provider SMS
 
 <nome progetto> supporta diversi provider SMS. La configurazione di base prevede:
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
 SaluteOra supporta diversi provider SMS. La configurazione di base prevede:
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-SaluteOra supporta diversi provider SMS. La configurazione di base prevede:
-=======
-<<<<<<< .merge_file_HDa1qV
-SaluteOra supporta diversi provider SMS. La configurazione di base prevede:
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
 <nome progetto> supporta diversi provider SMS. La configurazione di base prevede:
->>>>>>> .merge_file_e76mxL
 
 1. Installazione del provider scelto:
    ```bash
@@ -287,78 +210,15 @@ class AppointmentNotification extends Notification
 {
     protected $record;
     protected $slug;
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-    
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-    
-=======
-<<<<<<< .merge_file_HDa1qV
-    
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
->>>>>>> .merge_file_e76mxL
     public function __construct($record, $slug)
     {
         $this->record = $record;
         $this->slug = $slug;
     }
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-    
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-    
-=======
-<<<<<<< .merge_file_HDa1qV
-    
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
->>>>>>> .merge_file_e76mxL
     public function via($notifiable)
     {
         // Determina dinamicamente i canali basandosi sulle preferenze dell'utente
         $channels = ['mail'];
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-<<<<<<< .merge_file_HDa1qV
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-        
-        if ($notifiable->sms_notifications_enabled) {
-            $channels[] = TwilioChannel::class;
-        }
-        
-        if ($notifiable->telegram_notifications_enabled) {
-            $channels[] = TelegramChannel::class;
-        }
-        
-        return $channels;
-    }
-    
-    public function toMail($notifiable)
-    {
-        $email = new SpatieEmail($this->record, $this->slug);
-        
-<<<<<<< .merge_file_i6ic1t
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
         if ($notifiable->sms_notifications_enabled) {
             $channels[] = TwilioChannel::class;
         }
@@ -374,56 +234,18 @@ class AppointmentNotification extends Notification
     {
         $email = new SpatieEmail($this->record, $this->slug);
 
->>>>>>> .merge_file_e76mxL
         // IMPORTANTE: imposta esplicitamente il destinatario
         if (method_exists($notifiable, 'routeNotificationFor')) {
             $email->to($notifiable->routeNotificationFor('mail'));
         }
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-<<<<<<< .merge_file_HDa1qV
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-        
-        return $email;
-    }
-    
-<<<<<<< .merge_file_i6ic1t
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
         return $email;
     }
 
->>>>>>> .merge_file_e76mxL
     public function toTwilio($notifiable)
     {
         return (new TwilioSmsMessage())
             ->content("Notifica: {$this->record->title}");
     }
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-    
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-    
-=======
-<<<<<<< .merge_file_HDa1qV
-    
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
->>>>>>> .merge_file_e76mxL
     public function toTelegram($notifiable)
     {
         return TelegramMessage::create()
@@ -435,21 +257,8 @@ class AppointmentNotification extends Notification
 ## Implementazione Netfun SMS
 
 Netfun è un provider di SMS italiano che offre API per l'invio di messaggi SMS. Seguendo l'architettura di <nome progetto>, implementeremo l'integrazione con Netfun utilizzando Spatie Queueable Actions.
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
 Netfun è un provider di SMS italiano che offre API per l'invio di messaggi SMS. Seguendo l'architettura di SaluteOra, implementeremo l'integrazione con Netfun utilizzando Spatie Queueable Actions.
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-Netfun è un provider di SMS italiano che offre API per l'invio di messaggi SMS. Seguendo l'architettura di SaluteOra, implementeremo l'integrazione con Netfun utilizzando Spatie Queueable Actions.
-=======
-<<<<<<< .merge_file_HDa1qV
-Netfun è un provider di SMS italiano che offre API per l'invio di messaggi SMS. Seguendo l'architettura di SaluteOra, implementeremo l'integrazione con Netfun utilizzando Spatie Queueable Actions.
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
 Netfun è un provider di SMS italiano che offre API per l'invio di messaggi SMS. Seguendo l'architettura di <nome progetto>, implementeremo l'integrazione con Netfun utilizzando Spatie Queueable Actions.
->>>>>>> .merge_file_e76mxL
 
 ### 1. Configurazione
 
@@ -459,40 +268,12 @@ Per prima cosa, aggiungiamo la configurazione nel file `config/sms.php`:
 // config/sms.php
 return [
     // Altre configurazioni...
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-    
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-    
-=======
-<<<<<<< .merge_file_HDa1qV
-    
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
->>>>>>> .merge_file_e76mxL
     'netfun' => [
         'username' => env('NETFUN_USERNAME'),
         'password' => env('NETFUN_PASSWORD'),
         'sender' => env('NETFUN_SENDER', '<nome progetto>'),
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
         'sender' => env('NETFUN_SENDER', 'SaluteOra'),
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-        'sender' => env('NETFUN_SENDER', 'SaluteOra'),
-=======
-<<<<<<< .merge_file_HDa1qV
-        'sender' => env('NETFUN_SENDER', 'SaluteOra'),
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
         'sender' => env('NETFUN_SENDER', '<nome progetto>'),
->>>>>>> .merge_file_e76mxL
         'api_url' => env('NETFUN_API_URL', 'https://api.netfun.it/sms/v1/'),
     ],
 ];
@@ -504,21 +285,8 @@ Assicurati di aggiungere le corrispondenti variabili al tuo file `.env`:
 NETFUN_USERNAME=your_username
 NETFUN_PASSWORD=your_password
 NETFUN_SENDER=<nome progetto>
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
 NETFUN_SENDER=SaluteOra
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-NETFUN_SENDER=SaluteOra
-=======
-<<<<<<< .merge_file_HDa1qV
-NETFUN_SENDER=SaluteOra
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
 NETFUN_SENDER=<nome progetto>
->>>>>>> .merge_file_e76mxL
 ```
 
 ### 2. Creazione della Queueable Action
@@ -538,40 +306,10 @@ use Illuminate\Support\Str;
 class SendNetfunSMSAction
 {
     use QueueableAction;
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-    
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-    
-=======
-<<<<<<< .merge_file_HDa1qV
-    
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
->>>>>>> .merge_file_e76mxL
     protected string $username;
     protected string $password;
     protected string $sender;
     protected string $apiUrl;
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-    
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-    
-=======
-<<<<<<< .merge_file_HDa1qV
-    
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
->>>>>>> .merge_file_e76mxL
     public function __construct()
     {
         $this->username = config('sms.netfun.username');
@@ -579,50 +317,13 @@ class SendNetfunSMSAction
         $this->sender = config('sms.netfun.sender');
         $this->apiUrl = config('sms.netfun.api_url');
     }
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-    
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-    
-=======
-<<<<<<< .merge_file_HDa1qV
-    
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
->>>>>>> .merge_file_e76mxL
     public function execute(string $to, string $message, array $options = [])
     {
         // Normalizza il numero di telefono (formato E.164)
         $to = $this->normalizePhoneNumber($to);
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-<<<<<<< .merge_file_HDa1qV
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-        
-        // Genera un ID di riferimento univoco per il messaggio
-        $reference = $options['reference'] ?? (string) Str::uuid();
-        
-<<<<<<< .merge_file_i6ic1t
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
         // Genera un ID di riferimento univoco per il messaggio
         $reference = $options['reference'] ?? (string) Str::uuid();
 
->>>>>>> .merge_file_e76mxL
         try {
             $response = Http::post($this->apiUrl, [
                 'username' => $this->username,
@@ -634,51 +335,14 @@ class SendNetfunSMSAction
                 // Altri parametri opzionali
                 'date' => $options['scheduled_date'] ?? null, // Data pianificata di invio
             ]);
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-<<<<<<< .merge_file_HDa1qV
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-            
-            if ($response->successful()) {
-                $responseData = $response->json();
-                
-<<<<<<< .merge_file_i6ic1t
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
             if ($response->successful()) {
                 $responseData = $response->json();
 
->>>>>>> .merge_file_e76mxL
                 Log::info('SMS Netfun inviato con successo', [
                     'to' => $to,
                     'reference' => $reference,
                     'message_id' => $responseData['message_id'] ?? null,
                 ]);
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-                
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-                
-=======
-<<<<<<< .merge_file_HDa1qV
-                
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
->>>>>>> .merge_file_e76mxL
                 return [
                     'success' => true,
                     'message_id' => $responseData['message_id'] ?? null,
@@ -691,21 +355,6 @@ class SendNetfunSMSAction
                     'status' => $response->status(),
                     'response' => $response->json(),
                 ]);
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-                
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-                
-=======
-<<<<<<< .merge_file_HDa1qV
-                
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
->>>>>>> .merge_file_e76mxL
                 return [
                     'success' => false,
                     'error' => $response->json()['message'] ?? 'Errore sconosciuto',
@@ -718,31 +367,6 @@ class SendNetfunSMSAction
                 'reference' => $reference,
                 'error' => $e->getMessage(),
             ]);
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-<<<<<<< .merge_file_HDa1qV
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-            
-            throw $e;
-        }
-    }
-    
-    /**
-     * Normalizza il numero di telefono nel formato E.164
-     * 
-<<<<<<< .merge_file_i6ic1t
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
             throw $e;
         }
     }
@@ -750,7 +374,6 @@ class SendNetfunSMSAction
     /**
      * Normalizza il numero di telefono nel formato E.164
      *
->>>>>>> .merge_file_e76mxL
      * @param string $phoneNumber
      * @return string
      */
@@ -758,62 +381,19 @@ class SendNetfunSMSAction
     {
         // Rimuovi tutti i caratteri non numerici
         $digits = preg_replace('/[^0-9]/', '', $phoneNumber);
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-        
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-        
-=======
-<<<<<<< .merge_file_HDa1qV
-        
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
->>>>>>> .merge_file_e76mxL
         // Se il numero non inizia con '+' e non ha un prefisso internazionale,
         // aggiungi il prefisso italiano per default
         if (!Str::startsWith($phoneNumber, '+')) {
             // Se il numero inizia con '00', sostituisci con '+'
             if (Str::startsWith($digits, '00')) {
                 $digits = '+' . substr($digits, 2);
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
             } 
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-            } 
-=======
-<<<<<<< .merge_file_HDa1qV
-            } 
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
             }
->>>>>>> .merge_file_e76mxL
             // Se il numero inizia con '3' (cellulare italiano), aggiungi prefisso italiano
             elseif (Str::startsWith($digits, '3')) {
                 $digits = '+39' . $digits;
             }
         }
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-        
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-        
-=======
-<<<<<<< .merge_file_HDa1qV
-        
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
->>>>>>> .merge_file_e76mxL
         return $digits;
     }
 }
@@ -834,31 +414,9 @@ class NetfunSMSMessage
     public ?string $sender = null;
     public ?string $reference = null;
     public ?string $scheduledDate = null;
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-<<<<<<< .merge_file_HDa1qV
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-    
-    /**
-     * Imposta il contenuto del messaggio
-     * 
-<<<<<<< .merge_file_i6ic1t
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
     /**
      * Imposta il contenuto del messaggio
      *
->>>>>>> .merge_file_e76mxL
      * @param string $content
      * @return $this
      */
@@ -867,31 +425,9 @@ class NetfunSMSMessage
         $this->content = $content;
         return $this;
     }
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-<<<<<<< .merge_file_HDa1qV
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-    
-    /**
-     * Imposta il mittente del messaggio
-     * 
-<<<<<<< .merge_file_i6ic1t
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
     /**
      * Imposta il mittente del messaggio
      *
->>>>>>> .merge_file_e76mxL
      * @param string $sender
      * @return $this
      */
@@ -900,31 +436,9 @@ class NetfunSMSMessage
         $this->sender = $sender;
         return $this;
     }
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-<<<<<<< .merge_file_HDa1qV
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-    
-    /**
-     * Imposta un riferimento personalizzato
-     * 
-<<<<<<< .merge_file_i6ic1t
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
     /**
      * Imposta un riferimento personalizzato
      *
->>>>>>> .merge_file_e76mxL
      * @param string $reference
      * @return $this
      */
@@ -933,31 +447,9 @@ class NetfunSMSMessage
         $this->reference = $reference;
         return $this;
     }
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-<<<<<<< .merge_file_HDa1qV
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-    
-    /**
-     * Pianifica l'invio del messaggio
-     * 
-<<<<<<< .merge_file_i6ic1t
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
     /**
      * Pianifica l'invio del messaggio
      *
->>>>>>> .merge_file_e76mxL
      * @param string $date Formato: 'Y-m-d H:i:s'
      * @return $this
      */
@@ -966,31 +458,9 @@ class NetfunSMSMessage
         $this->scheduledDate = $date;
         return $this;
     }
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-<<<<<<< .merge_file_HDa1qV
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-    
-    /**
-     * Converte l'oggetto in array di opzioni
-     * 
-<<<<<<< .merge_file_i6ic1t
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
     /**
      * Converte l'oggetto in array di opzioni
      *
->>>>>>> .merge_file_e76mxL
      * @return array
      */
     public function toArray(): array
@@ -1020,50 +490,13 @@ use Modules\Notify\Datas\NetfunSMSMessage;
 class NetfunChannel
 {
     protected SendNetfunSMSAction $sendSMSAction;
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-    
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-    
-=======
-<<<<<<< .merge_file_HDa1qV
-    
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
->>>>>>> .merge_file_e76mxL
     public function __construct(SendNetfunSMSAction $sendSMSAction)
     {
         $this->sendSMSAction = $sendSMSAction;
     }
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-<<<<<<< .merge_file_HDa1qV
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-    
-    /**
-     * Invia la notifica tramite Netfun SMS
-     * 
-<<<<<<< .merge_file_i6ic1t
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
     /**
      * Invia la notifica tramite Netfun SMS
      *
->>>>>>> .merge_file_e76mxL
      * @param mixed $notifiable
      * @param \Illuminate\Notifications\Notification $notification
      * @return array|null
@@ -1074,31 +507,6 @@ class NetfunChannel
         if (!$to = $notifiable->routeNotificationForNetfun($notification)) {
             return null;
         }
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-<<<<<<< .merge_file_HDa1qV
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-        
-        // Ottieni il messaggio dalla notifica
-        $message = $notification->toNetfun($notifiable);
-        
-        if (!$message instanceof NetfunSMSMessage) {
-            throw new \Exception('Il metodo toNetfun() deve restituire un\'istanza di NetfunSMSMessage');
-        }
-        
-<<<<<<< .merge_file_i6ic1t
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
         // Ottieni il messaggio dalla notifica
         $message = $notification->toNetfun($notifiable);
 
@@ -1106,7 +514,6 @@ class NetfunChannel
             throw new \Exception('Il metodo toNetfun() deve restituire un\'istanza di NetfunSMSMessage');
         }
 
->>>>>>> .merge_file_e76mxL
         // Esegui l'invio tramite la Queueable Action
         // L'esecuzione avverrà in modo asincrono (in background)
         return $this->sendSMSAction
@@ -1133,35 +540,11 @@ use Illuminate\Notifications\Notifiable;
 class User extends Authenticatable
 {
     use Notifiable;
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-<<<<<<< .merge_file_HDa1qV
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-    
-    // ... altri metodi e proprietà
-    
-    /**
-     * Restituisce il numero di telefono per invio notifiche Netfun
-     * 
-<<<<<<< .merge_file_i6ic1t
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
     // ... altri metodi e proprietà
 
     /**
      * Restituisce il numero di telefono per invio notifiche Netfun
      *
->>>>>>> .merge_file_e76mxL
      * @param \Illuminate\Notifications\Notification $notification
      * @return string|null
      */
@@ -1188,50 +571,13 @@ use Modules\Notify\Datas\NetfunSMSMessage;
 class AppointmentReminder extends Notification
 {
     protected $appointment;
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-    
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-    
-=======
-<<<<<<< .merge_file_HDa1qV
-    
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
->>>>>>> .merge_file_e76mxL
     public function __construct($appointment)
     {
         $this->appointment = $appointment;
     }
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-<<<<<<< .merge_file_HDa1qV
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-    
-    /**
-     * Definisci i canali su cui inviare la notifica
-     * 
-<<<<<<< .merge_file_i6ic1t
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
     /**
      * Definisci i canali su cui inviare la notifica
      *
->>>>>>> .merge_file_e76mxL
      * @param mixed $notifiable
      * @return array
      */
@@ -1239,68 +585,21 @@ class AppointmentReminder extends Notification
     {
         return ['mail', NetfunChannel::class];
     }
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-<<<<<<< .merge_file_HDa1qV
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-    
-    /**
-     * Formatta il messaggio per il canale Netfun
-     * 
-<<<<<<< .merge_file_i6ic1t
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
     /**
      * Formatta il messaggio per il canale Netfun
      *
->>>>>>> .merge_file_e76mxL
      * @param mixed $notifiable
      * @return \Modules\Notify\Datas\NetfunSMSMessage
      */
     public function toNetfun($notifiable)
     {
         $date = $this->appointment->date->format('d/m/Y H:i');
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-<<<<<<< .merge_file_HDa1qV
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-        
-        return (new NetfunSMSMessage())
-            ->content("Gentile {$notifiable->first_name}, le ricordiamo il suo appuntamento del {$date}. <nome progetto>.")
-            ->content("Gentile {$notifiable->first_name}, le ricordiamo il suo appuntamento del {$date}. SaluteOra.")
-            ->reference('app_' . $this->appointment->id);
-    }
-    
-<<<<<<< .merge_file_i6ic1t
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
         return (new NetfunSMSMessage())
             ->content("Gentile {$notifiable->first_name}, le ricordiamo il suo appuntamento del {$date}. <nome progetto>.")
             ->content("Gentile {$notifiable->first_name}, le ricordiamo il suo appuntamento del {$date}. <nome progetto>.")
             ->reference('app_' . $this->appointment->id);
     }
 
->>>>>>> .merge_file_e76mxL
     // Altri metodi per altri canali (mail, ecc.)
 }
 ```
@@ -1324,21 +623,6 @@ use Illuminate\Support\Facades\Http;
 class NetfunSMSTest extends TestCase
 {
     use DatabaseTransactions;
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-    
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-    
-=======
-<<<<<<< .merge_file_HDa1qV
-    
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
->>>>>>> .merge_file_e76mxL
     public function testSendSMS()
     {
         // Mock della risposta HTTP
@@ -1348,35 +632,6 @@ class NetfunSMSTest extends TestCase
                 'message_id' => '123456789',
             ], 200),
         ]);
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-<<<<<<< .merge_file_HDa1qV
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-        
-        $user = User::factory()->create([
-            'phone_number' => '+393401234567',
-        ]);
-        
-        $action = app(SendNetfunSMSAction::class);
-        
-        $message = (new NetfunSMSMessage())
-            ->content('Test SMS da <nome progetto>')
-            ->content('Test SMS da SaluteOra')
-            ->reference('test_123');
-        
-<<<<<<< .merge_file_i6ic1t
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
         $user = User::factory()->create([
             'phone_number' => '+393401234567',
         ]);
@@ -1388,27 +643,11 @@ class NetfunSMSTest extends TestCase
             ->content('Test SMS da <nome progetto>')
             ->reference('test_123');
 
->>>>>>> .merge_file_e76mxL
         $result = $action->execute(
             $user->phone_number,
             $message->content,
             $message->toArray()
         );
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-        
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-        
-=======
-<<<<<<< .merge_file_HDa1qV
-        
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
->>>>>>> .merge_file_e76mxL
         $this->assertTrue($result['success']);
         $this->assertEquals('123456789', $result['message_id']);
     }
@@ -1434,35 +673,11 @@ class AppointmentReminderController extends Controller
     public function sendReminder(Request $request, Appointment $appointment)
     {
         $sendSMSAction = app(SendNetfunSMSAction::class);
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-<<<<<<< .merge_file_HDa1qV
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-        
-        $message = (new NetfunSMSMessage())
-            ->content("Gentile {$appointment->patient->first_name}, le ricordiamo il suo appuntamento del {$appointment->date->format('d/m/Y H:i')}. <nome progetto>.")
-            ->content("Gentile {$appointment->patient->first_name}, le ricordiamo il suo appuntamento del {$appointment->date->format('d/m/Y H:i')}. SaluteOra.")
-            ->reference('app_' . $appointment->id);
-        
-<<<<<<< .merge_file_i6ic1t
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-=======
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
         $message = (new NetfunSMSMessage())
             ->content("Gentile {$appointment->patient->first_name}, le ricordiamo il suo appuntamento del {$appointment->date->format('d/m/Y H:i')}. <nome progetto>.")
             ->content("Gentile {$appointment->patient->first_name}, le ricordiamo il suo appuntamento del {$appointment->date->format('d/m/Y H:i')}. <nome progetto>.")
             ->reference('app_' . $appointment->id);
 
->>>>>>> .merge_file_e76mxL
         // Esecuzione asincrona
         $sendSMSAction->onQueue('sms')
             ->execute(
@@ -1470,21 +685,6 @@ class AppointmentReminderController extends Controller
                 $message->content,
                 $message->toArray()
             );
-<<<<<<< .merge_file_i6ic1t
-<<<<<<< .merge_file_HDa1qV
-        
-=======
-=======
-<<<<<<< .merge_file_DKjPrN
-        
-=======
-<<<<<<< .merge_file_HDa1qV
-        
-=======
->>>>>>> .merge_file_s4wmo1
->>>>>>> .merge_file_7BW29g
-
->>>>>>> .merge_file_e76mxL
         return response()->json([
             'message' => 'Promemoria inviato con successo',
         ]);
@@ -1507,11 +707,8 @@ Utilizzando questa architettura basata su Queueable Actions, otteniamo diversi v
 
 Per inviare notifiche a destinatari che non sono models Notifiable:
 
-<<<<<<< .merge_file_HDa1qV
-=======
 ```
 
->>>>>>> .merge_file_e76mxL
 ```php
 Notification::route('mail', 'esempio@example.com')
     ->route('twilio', '+39XXXXXXXXXX')  // Numero in formato E.164

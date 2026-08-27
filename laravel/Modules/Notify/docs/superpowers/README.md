@@ -305,15 +305,8 @@ class User extends Model {
 ### File Structure
 
 ```
-<<<<<<< .merge_file_6ob7VG
 base_fixcity_fila5/
-=======
-<<<<<<< .merge_file_dbBBCm
-base_fixcity_fila5/
-=======
->>>>>>> .merge_file_WBQeyK
 base_ptvx_fila5/
->>>>>>> .merge_file_mzdAsu
 ├── .cursor/
 │   ├── superpowers-config.json    ← Optional configuration
 │   └── skills/                     ← Custom skills (if any)

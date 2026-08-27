@@ -126,79 +126,19 @@ use NotificationChannels\Twilio\TwilioSmsMessage;
 class AppointmentReminder extends Notification
 {
     protected $appointment;
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-    
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-    
-=======
-<<<<<<< .merge_file_epxaAG
-    
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
     public function __construct($appointment)
     {
         $this->appointment = $appointment;
     }
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-    
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-    
-=======
-<<<<<<< .merge_file_epxaAG
-    
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
     public function via($notifiable)
     {
         return [TwilioChannel::class];
     }
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-    
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-    
-=======
-<<<<<<< .merge_file_epxaAG
-    
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
     public function toTwilio($notifiable)
     {
         $formattedDate = $this->appointment->formatted_date;
         $formattedTime = $this->appointment->formatted_time;
         $doctor = $this->appointment->doctor->name;
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-        
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-        
-=======
-<<<<<<< .merge_file_epxaAG
-        
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
         return (new TwilioSmsMessage())
             ->content("Promemoria: hai un appuntamento il {$formattedDate} alle {$formattedTime} con il Dr. {$doctor}. Conferma rispondendo SI o annulla con NO.");
     }
@@ -216,94 +156,29 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 class User extends Authenticatable
 {
     use Notifiable;
-<<<<<<< .merge_file_6NIQc6
-=======
-<<<<<<< .merge_file_VlT1mb
+    // ...
+    
     
     // ...
     
-=======
->>>>>>> .merge_file_EuCUpb
-<<<<<<< .merge_file_epxaAG
-    
-    // ...
-    
-=======
-<<<<<<< .merge_file_6NIQc6
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
 
     // ...
 
->>>>>>> .merge_file_NgEVXu
     public function routeNotificationForTwilio()
     {
         // Garantisci che il numero sia in formato E.164 (es. +393331234567)
         $phoneNumber = $this->phone_number;
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-=======
-<<<<<<< .merge_file_VlT1mb
-=======
-<<<<<<< .merge_file_epxaAG
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-        
-        // Rimuovi eventuali spazi o caratteri non numerici
-        $phoneNumber = preg_replace('/[^0-9]/', '', $phoneNumber);
-        
-<<<<<<< .merge_file_6NIQc6
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-=======
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
         // Rimuovi eventuali spazi o caratteri non numerici
         $phoneNumber = preg_replace('/[^0-9]/', '', $phoneNumber);
 
->>>>>>> .merge_file_NgEVXu
         // Se inizia con 0, sostituisci con +39
         if (strpos($phoneNumber, '0') === 0) {
             $phoneNumber = '+39' . substr($phoneNumber, 1);
         }
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-        
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-        
-=======
-<<<<<<< .merge_file_epxaAG
-        
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
         // Se non ha prefisso, aggiungi +39
         if (strpos($phoneNumber, '+') !== 0) {
             $phoneNumber = '+39' . $phoneNumber;
         }
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-        
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-        
-=======
-<<<<<<< .merge_file_epxaAG
-        
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
         return $phoneNumber;
     }
 }
@@ -340,27 +215,14 @@ use Illuminate\Support\Facades\Log;
 class SendSMSHostingAction
 {
     use QueueableAction;
-<<<<<<< .merge_file_6NIQc6
-=======
-<<<<<<< .merge_file_VlT1mb
+    protected $client;
+    
     
     protected $client;
     
-=======
->>>>>>> .merge_file_EuCUpb
-<<<<<<< .merge_file_epxaAG
-    
-    protected $client;
-    
-=======
-<<<<<<< .merge_file_6NIQc6
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
 
     protected $client;
 
->>>>>>> .merge_file_NgEVXu
     public function __construct()
     {
         $this->client = new Client(
@@ -368,21 +230,6 @@ class SendSMSHostingAction
             config('sms.smshosting.password')
         );
     }
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-    
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-    
-=======
-<<<<<<< .merge_file_epxaAG
-    
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
     public function execute(string $to, string $content, array $options = [])
     {
         try {
@@ -392,41 +239,11 @@ class SendSMSHostingAction
                 'from' => config('sms.smshosting.sender'),
                 'options' => $options,
             ]);
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-            
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-            
-=======
-<<<<<<< .merge_file_epxaAG
-            
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
             Log::info('SMS inviato con successo', [
                 'to' => $to,
                 'provider' => 'SMSHosting',
                 'message_id' => $response->getId() ?? null,
             ]);
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-            
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-            
-=======
-<<<<<<< .merge_file_epxaAG
-            
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
             return $response;
         } catch (\Exception $e) {
             Log::error('Errore invio SMS', [
@@ -434,21 +251,6 @@ class SendSMSHostingAction
                 'provider' => 'SMSHosting',
                 'error' => $e->getMessage(),
             ]);
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-            
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-            
-=======
-<<<<<<< .merge_file_epxaAG
-            
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
             throw $e;
         }
     }
@@ -466,66 +268,23 @@ use Modules\Notify\Actions\SMS\SendSMSHostingAction;
 class SMSHostingChannel
 {
     protected $sendSMSAction;
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-    
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-    
-=======
-<<<<<<< .merge_file_epxaAG
-    
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
     public function __construct(SendSMSHostingAction $sendSMSAction)
     {
         $this->sendSMSAction = $sendSMSAction;
     }
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-    
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-    
-=======
-<<<<<<< .merge_file_epxaAG
-    
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
     public function send($notifiable, Notification $notification)
     {
         if (! $to = $notifiable->routeNotificationForSMSHosting()) {
             return;
         }
-<<<<<<< .merge_file_6NIQc6
-=======
-<<<<<<< .merge_file_VlT1mb
+        $message = $notification->toSMSHosting($notifiable);
+        
         
         $message = $notification->toSMSHosting($notifiable);
         
-=======
->>>>>>> .merge_file_EuCUpb
-<<<<<<< .merge_file_epxaAG
-        
-        $message = $notification->toSMSHosting($notifiable);
-        
-=======
-<<<<<<< .merge_file_6NIQc6
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
 
         $message = $notification->toSMSHosting($notifiable);
 
->>>>>>> .merge_file_NgEVXu
         // Esecuzione asincrona dell'azione
         return $this->sendSMSAction->onQueue('sms')
             ->execute($to, $message->content, $message->options);
@@ -542,21 +301,8 @@ return [
         'username' => env('SMSHOSTING_USERNAME'),
         'password' => env('SMSHOSTING_PASSWORD'),
         'sender' => env('SMSHOSTING_SENDER', '<nome progetto>'),
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
         'sender' => env('SMSHOSTING_SENDER', 'SaluteOra'),
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-        'sender' => env('SMSHOSTING_SENDER', 'SaluteOra'),
-=======
-<<<<<<< .merge_file_epxaAG
-        'sender' => env('SMSHOSTING_SENDER', 'SaluteOra'),
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
         'sender' => env('SMSHOSTING_SENDER', '<nome progetto>'),
->>>>>>> .merge_file_NgEVXu
     ],
 ];
 ```
@@ -570,61 +316,10 @@ class SMSHostingMessage
 {
     public $content;
     public $options = [];
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-    
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-    
-=======
-<<<<<<< .merge_file_epxaAG
-    
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
     public function __construct($content = '')
     {
         $this->content = $content;
     }
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-=======
-<<<<<<< .merge_file_VlT1mb
-=======
-<<<<<<< .merge_file_epxaAG
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-    
-    public function content($content)
-    {
-        $this->content = $content;
-        
-        return $this;
-    }
-    
-    public function unicode()
-    {
-        $this->options['unicode'] = true;
-        
-        return $this;
-    }
-    
-    public function flash()
-    {
-        $this->options['flash'] = true;
-        
-<<<<<<< .merge_file_6NIQc6
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-=======
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
     public function content($content)
     {
         $this->content = $content;
@@ -643,7 +338,6 @@ class SMSHostingMessage
     {
         $this->options['flash'] = true;
 
->>>>>>> .merge_file_NgEVXu
         return $this;
     }
 }
@@ -665,53 +359,15 @@ use Illuminate\Support\Facades\Log;
 class SendTelcobSMSAction
 {
     use QueueableAction;
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-=======
-<<<<<<< .merge_file_VlT1mb
-=======
-<<<<<<< .merge_file_epxaAG
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-    
-    protected $apiKey;
-    protected $sender;
-    protected $baseUrl = 'https://api.telcob.com/sms/v1';
-    
-<<<<<<< .merge_file_6NIQc6
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-=======
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
     protected $apiKey;
     protected $sender;
     protected $baseUrl = 'https://api.telcob.com/sms/v1';
 
->>>>>>> .merge_file_NgEVXu
     public function __construct()
     {
         $this->apiKey = config('sms.telcob.api_key');
         $this->sender = config('sms.telcob.sender');
     }
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-    
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-    
-=======
-<<<<<<< .merge_file_epxaAG
-    
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
     public function execute(string $to, string $message, array $options = [])
     {
         try {
@@ -724,21 +380,6 @@ class SendTelcobSMSAction
                 'from' => $this->sender,
                 'options' => $options,
             ]);
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-            
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-            
-=======
-<<<<<<< .merge_file_epxaAG
-            
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
             if ($response->successful()) {
                 Log::info('SMS Telcob inviato con successo', [
                     'to' => $to,
@@ -751,42 +392,12 @@ class SendTelcobSMSAction
                     'body' => $response->json(),
                 ]);
             }
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-            
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-            
-=======
-<<<<<<< .merge_file_epxaAG
-            
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
             return $response;
         } catch (\Exception $e) {
             Log::error('Errore invio SMS Telcob', [
                 'to' => $to,
                 'error' => $e->getMessage(),
             ]);
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-            
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-            
-=======
-<<<<<<< .merge_file_epxaAG
-            
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
             throw $e;
         }
     }
@@ -804,66 +415,23 @@ use Modules\Notify\Actions\SMS\SendTelcobSMSAction;
 class TelcobChannel
 {
     protected $sendSMSAction;
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-    
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-    
-=======
-<<<<<<< .merge_file_epxaAG
-    
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
     public function __construct(SendTelcobSMSAction $sendSMSAction)
     {
         $this->sendSMSAction = $sendSMSAction;
     }
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-    
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-    
-=======
-<<<<<<< .merge_file_epxaAG
-    
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
     public function send($notifiable, Notification $notification)
     {
         if (! $to = $notifiable->routeNotificationForTelcob()) {
             return;
         }
-<<<<<<< .merge_file_6NIQc6
-=======
-<<<<<<< .merge_file_VlT1mb
+        $message = $notification->toTelcob($notifiable);
+        
         
         $message = $notification->toTelcob($notifiable);
         
-=======
->>>>>>> .merge_file_EuCUpb
-<<<<<<< .merge_file_epxaAG
-        
-        $message = $notification->toTelcob($notifiable);
-        
-=======
-<<<<<<< .merge_file_6NIQc6
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
 
         $message = $notification->toTelcob($notifiable);
 
->>>>>>> .merge_file_NgEVXu
         // Esecuzione asincrona dell'azione
         return $this->sendSMSAction->onQueue('sms')
             ->execute($to, $message->content, $message->options ?? []);
@@ -900,89 +468,18 @@ class PhoneNumberFormatter
     {
         // Rimuovi tutti i caratteri non numerici
         $phoneNumber = preg_replace('/[^0-9+]/', '', $phoneNumber);
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-        
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-        
-=======
-<<<<<<< .merge_file_epxaAG
-        
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
         // Se il numero inizia con + è già in formato internazionale
         if (strpos($phoneNumber, '+') === 0) {
             return $phoneNumber;
         }
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-        
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-        
-=======
-<<<<<<< .merge_file_epxaAG
-        
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
         // Se inizia con 00, sostituisci con +
         if (strpos($phoneNumber, '00') === 0) {
             return '+' . substr($phoneNumber, 2);
         }
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-        
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-        
-=======
-<<<<<<< .merge_file_epxaAG
-        
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
         // Se inizia con 0, assumi che sia un numero italiano e rimuovi lo 0
         if (strpos($phoneNumber, '0') === 0) {
             return '+' . $defaultCountryCode . substr($phoneNumber, 1);
         }
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-=======
-<<<<<<< .merge_file_VlT1mb
-=======
-<<<<<<< .merge_file_epxaAG
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-        
-        // Altrimenti aggiungi solo il prefisso
-        return '+' . $defaultCountryCode . $phoneNumber;
-    }
-    
-    public static function isValidItalianMobile($phoneNumber)
-    {
-        $e164 = self::formatToE164($phoneNumber);
-        
-<<<<<<< .merge_file_6NIQc6
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-=======
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
         // Altrimenti aggiungi solo il prefisso
         return '+' . $defaultCountryCode . $phoneNumber;
     }
@@ -991,7 +488,6 @@ class PhoneNumberFormatter
     {
         $e164 = self::formatToE164($phoneNumber);
 
->>>>>>> .merge_file_NgEVXu
         // I numeri di cellulare italiani iniziano con +393
         return preg_match('/^\+393\d{8,9}$/', $e164) === 1;
     }
@@ -1011,59 +507,14 @@ use Modules\Notify\Channels\SMSHostingChannel;
 class MockSMSChannel extends SMSHostingChannel
 {
     public $messages = [];
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-    
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-    
-=======
-<<<<<<< .merge_file_epxaAG
-    
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
     public function send($notifiable, Notification $notification)
     {
         $to = $notifiable->routeNotificationForSMSHosting();
         $message = $notification->toSMSHosting($notifiable);
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-        
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-        
-=======
-<<<<<<< .merge_file_epxaAG
-        
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
         $this->messages[] = [
             'to' => $to,
             'content' => $message->content,
         ];
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-        
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-        
-=======
-<<<<<<< .merge_file_epxaAG
-        
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
         return true;
     }
 }
@@ -1088,88 +539,26 @@ class SMSNotificationTest extends TestCase
         // Arrange
         $user = User::factory()->create(['phone_number' => '+393331234567']);
         $appointment = Appointment::factory()->create(['user_id' => $user->id]);
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-=======
-<<<<<<< .merge_file_VlT1mb
-=======
-<<<<<<< .merge_file_epxaAG
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-        
-        $mockChannel = new MockSMSChannel();
-        $this->app->instance(SMSHostingChannel::class, $mockChannel);
-        
-        // Act
-        $user->notify(new AppointmentReminder($appointment));
-        
-<<<<<<< .merge_file_6NIQc6
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-=======
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
         $mockChannel = new MockSMSChannel();
         $this->app->instance(SMSHostingChannel::class, $mockChannel);
 
         // Act
         $user->notify(new AppointmentReminder($appointment));
 
->>>>>>> .merge_file_NgEVXu
         // Assert
         $this->assertCount(1, $mockChannel->messages);
         $this->assertEquals('+393331234567', $mockChannel->messages[0]['to']);
         $this->assertStringContainsString($appointment->formatted_date, $mockChannel->messages[0]['content']);
     }
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-    
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-    
-=======
-<<<<<<< .merge_file_epxaAG
-    
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
     public function testSMSNotSentWhenPhoneInvalid()
     {
         // Arrange
         Notification::fake();
         $user = User::factory()->create(['phone_number' => 'invalid-number']);
         $appointment = Appointment::factory()->create(['user_id' => $user->id]);
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-=======
-<<<<<<< .merge_file_VlT1mb
-=======
-<<<<<<< .merge_file_epxaAG
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-        
-        // Act
-        $user->notify(new AppointmentReminder($appointment));
-        
-<<<<<<< .merge_file_6NIQc6
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-=======
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
         // Act
         $user->notify(new AppointmentReminder($appointment));
 
->>>>>>> .merge_file_NgEVXu
         // Assert
         Notification::assertNothingSent();
     }
@@ -1192,82 +581,19 @@ class ImportantNotification extends Notification
 {
     protected $record;
     protected $slug;
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-    
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-    
-=======
-<<<<<<< .merge_file_epxaAG
-    
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
     public function __construct($record, $slug)
     {
         $this->record = $record;
         $this->slug = $slug;
     }
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-=======
-<<<<<<< .merge_file_VlT1mb
-=======
-<<<<<<< .merge_file_epxaAG
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-    
-    public function via($notifiable)
-    {
-        $channels = ['mail'];
-        
-<<<<<<< .merge_file_6NIQc6
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-=======
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
     public function via($notifiable)
     {
         $channels = ['mail'];
 
->>>>>>> .merge_file_NgEVXu
         // Aggiungi SMS solo se l'utente ha un numero di telefono valido
         if ($notifiable->phone_number && $notifiable->sms_notifications_enabled) {
             $channels[] = TwilioChannel::class;
         }
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-=======
-<<<<<<< .merge_file_VlT1mb
-=======
-<<<<<<< .merge_file_epxaAG
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-        
-        return $channels;
-    }
-    
-    public function toMail($notifiable)
-    {
-        $email = new SpatieEmail($this->record, $this->slug);
-        
-<<<<<<< .merge_file_6NIQc6
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-=======
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
         return $channels;
     }
 
@@ -1275,36 +601,13 @@ class ImportantNotification extends Notification
     {
         $email = new SpatieEmail($this->record, $this->slug);
 
->>>>>>> .merge_file_NgEVXu
         // IMPORTANTE: garantisci che ci sia sempre un destinatario
         if (method_exists($notifiable, 'routeNotificationFor')) {
             $email->to($notifiable->routeNotificationFor('mail'));
         }
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-=======
-<<<<<<< .merge_file_VlT1mb
-=======
-<<<<<<< .merge_file_epxaAG
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-        
-        return $email;
-    }
-    
-<<<<<<< .merge_file_6NIQc6
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-=======
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
         return $email;
     }
 
->>>>>>> .merge_file_NgEVXu
     public function toTwilio($notifiable)
     {
         return (new TwilioSmsMessage())
@@ -1328,81 +631,21 @@ use Modules\Notify\Notifications\SMSFailureNotification;
 class SendNotificationWithRetryAction
 {
     use QueueableAction;
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-    
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-    
-=======
-<<<<<<< .merge_file_epxaAG
-    
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
     // Configurazione della coda
     public $tries = 3;
     public $backoff = 60; // 1 minuto tra i tentativi
     public $queue = 'notifications';
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-    
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-    
-=======
-<<<<<<< .merge_file_epxaAG
-    
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
     public function execute($notifiable, $notification, array $options = [])
     {
         try {
             // Invio della notifica
             $notifiable->notify($notification);
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-            
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-            
-=======
-<<<<<<< .merge_file_epxaAG
-            
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
             // Registrazione del successo
             Log::info('Notifica inviata con successo', [
                 'notifiable_type' => get_class($notifiable),
                 'notifiable_id' => $notifiable->id,
                 'notification_class' => get_class($notification),
             ]);
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-            
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-            
-=======
-<<<<<<< .merge_file_epxaAG
-            
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
             return true;
         } catch (\Exception $e) {
             // Registrazione dell'errore
@@ -1412,31 +655,9 @@ class SendNotificationWithRetryAction
                 'notification_class' => get_class($notification),
                 'attempt' => $options['attempt'] ?? 1,
             ]);
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-=======
-<<<<<<< .merge_file_VlT1mb
-=======
-<<<<<<< .merge_file_epxaAG
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-            
-            // Incrementa il contatore di tentativi
-            $attempt = ($options['attempt'] ?? 1) + 1;
-            
-<<<<<<< .merge_file_6NIQc6
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-=======
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
             // Incrementa il contatore di tentativi
             $attempt = ($options['attempt'] ?? 1) + 1;
 
->>>>>>> .merge_file_NgEVXu
             // Se non abbiamo superato il numero massimo di tentativi, ritenta
             if ($attempt <= $this->tries) {
                 // Pianifica un nuovo tentativo dopo il backoff
@@ -1446,40 +667,10 @@ class SendNotificationWithRetryAction
                 // Invia notifica di fallimento via email se abbiamo esaurito i tentativi
                 $this->sendFailureNotification($notifiable, $notification);
             }
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-            
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-            
-=======
-<<<<<<< .merge_file_epxaAG
-            
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
             // Propaga l'eccezione per gestione esterna
             throw $e;
         }
     }
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-    
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-    
-=======
-<<<<<<< .merge_file_epxaAG
-    
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
     protected function sendFailureNotification($notifiable, $notification)
     {
         // Controlla se il notifiable ha un indirizzo email
@@ -1505,29 +696,6 @@ use Modules\Notify\Notifications\AppointmentReminder;
 class AppointmentService
 {
     public function sendReminders($appointments)
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-=======
-<<<<<<< .merge_file_VlT1mb
-=======
-<<<<<<< .merge_file_epxaAG
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-    {   
-        $sendNotificationAction = app(SendNotificationWithRetryAction::class);
-        
-        foreach ($appointments as $appointment) {
-            // Crea la notifica
-            $notification = new AppointmentReminder($appointment);
-            
-<<<<<<< .merge_file_6NIQc6
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-=======
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
     {
         $sendNotificationAction = app(SendNotificationWithRetryAction::class);
 
@@ -1535,7 +703,6 @@ class AppointmentService
             // Crea la notifica
             $notification = new AppointmentReminder($appointment);
 
->>>>>>> .merge_file_NgEVXu
             // Invia la notifica con gestione tentativi via Queueable Action
             // L'esecuzione sarà asincrona sulla coda 'notifications'
             $sendNotificationAction->onQueue('notifications')
@@ -1560,40 +727,16 @@ Quando si inviano SMS, è necessario rispettare le normative GDPR:
 
 ### Template SMS GDPR-Compliant
 
-<<<<<<< .merge_file_epxaAG
-=======
 ```
 
->>>>>>> .merge_file_NgEVXu
 ```php
 public function toTwilio($notifiable)
 {
     return (new TwilioSmsMessage())
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-=======
-<<<<<<< .merge_file_VlT1mb
-=======
-<<<<<<< .merge_file_epxaAG
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-        ->content("<nome progetto>: Promemoria appuntamento {$this->appointment->formatted_date}. 
-        Per annullare rispondere NO. Per info: <nome progetto>.it/privacy");
-        ->content("SaluteOra: Promemoria appuntamento {$this->appointment->formatted_date}. 
-        Per annullare rispondere NO. Per info: saluteora.it/privacy");
-<<<<<<< .merge_file_6NIQc6
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-=======
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
         ->content("<nome progetto>: Promemoria appuntamento {$this->appointment->formatted_date}.
         Per annullare rispondere NO. Per info: <nome progetto>.it/privacy");
         ->content("<nome progetto>: Promemoria appuntamento {$this->appointment->formatted_date}.
         Per annullare rispondere NO. Per info: <nome progetto>.it/privacy");
->>>>>>> .merge_file_NgEVXu
 }
 ```
 
@@ -1617,79 +760,19 @@ class ConsentLog extends Model
         'consent_text',
         'revoked_at',
     ];
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-    
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-    
-=======
-<<<<<<< .merge_file_epxaAG
-    
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
     protected $casts = [
         'consented_at' => 'datetime',
         'revoked_at' => 'datetime',
     ];
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-    
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-    
-=======
-<<<<<<< .merge_file_epxaAG
-    
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
     public function user()
     {
         return $this->belongsTo(User::class);
     }
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-    
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-    
-=======
-<<<<<<< .merge_file_epxaAG
-    
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
     public function scopeActive($query)
     {
         return $query->whereNotNull('consented_at')
             ->whereNull('revoked_at');
     }
-<<<<<<< .merge_file_6NIQc6
-<<<<<<< .merge_file_epxaAG
-    
-=======
-=======
-<<<<<<< .merge_file_VlT1mb
-    
-=======
-<<<<<<< .merge_file_epxaAG
-    
-=======
->>>>>>> .merge_file_xvU0FS
->>>>>>> .merge_file_EuCUpb
-
->>>>>>> .merge_file_NgEVXu
     public function scopeForChannel($query, $channel)
     {
         return $query->where('channel', $channel);

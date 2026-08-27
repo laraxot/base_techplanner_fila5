@@ -1,8 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Modules\Xot\Models\Traits;
 
-<<<<<<< .merge_file_FysJ98
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory as EloquentHasFactory;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
@@ -12,8 +13,7 @@ use Modules\Xot\Actions\Factory\GetFactoryAction;
  * Model che usano HasXotFactory NON devono aggiungere `use HasFactory;`
  * ne' ridefinire newFactory(): la factory viene risolta/generata da
  * GetFactoryAction seguendo le convenzioni Laraxot.
- */
-/**
+ *
  * @use EloquentHasFactory<Factory<static>>
  */
 trait HasXotFactory
@@ -31,10 +31,4 @@ trait HasXotFactory
         /** @var Factory<static> */
         return app(GetFactoryAction::class)->execute(static::class);
     }
-=======
-trait HasXotFactory
-{
-    // Trait temporaneo per permettere a phpstan di funzionare
-    // Da implementare correttamente in seguito
->>>>>>> .merge_file_IZjw4E
 }

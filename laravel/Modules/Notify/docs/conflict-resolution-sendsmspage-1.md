@@ -88,21 +88,8 @@ Verificare che:
 - [Root Conflict Resolution Guidelines](../../../project_docs/conflict-resolution-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
-<<<<<<< .merge_file_XEa7gz
 - [Notify Module Documentation](readme.md)
-<<<<<<< .merge_file_ifRPsd
-=======
 - [Notify Module Documentation](README.md)
->>>>>>> .merge_file_OWuvck
-=======
-<<<<<<< .merge_file_t8IL4K
-- [Notify Module Documentation](README.md)
-=======
-=======
-- [Notify Module Documentation](README.md)
->>>>>>> .merge_file_OWuvck
->>>>>>> .merge_file_XsUpRl
->>>>>>> .merge_file_AsRmjJ
 - [SMS Testing Guide](sms/testing.md)
 - [MailTemplate Integration](mail-templates-structure-1.md)
 - [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)

@@ -102,11 +102,7 @@ describe('UI coverage boost — Rules and policies', function (): void {
         /** @var MockInterface&UserContract $superAdmin */
         $superAdmin = Mockery::mock(UserContract::class);
         expectMethod($superAdmin, 'hasRole')->with('super-admin')->andReturn(true);
-<<<<<<< .merge_file_5mK5hG
-        /** @var MockInterface&UserContract $regular */
-=======
         /** @var Mockery\MockInterface&UserContract $regular */
->>>>>>> .merge_file_euWj8M
         $regular = Mockery::mock(UserContract::class);
         expectMethod($regular, 'hasRole')->with('super-admin')->andReturn(false);
 

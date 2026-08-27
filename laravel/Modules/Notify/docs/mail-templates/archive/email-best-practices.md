@@ -35,21 +35,8 @@ Questo documento descrive le best practices per la creazione e gestione di email
 
 ### 2. Branding Coerente
 
-<<<<<<< .merge_file_VYIH7l
-<<<<<<< .merge_file_yKIgNo
 - **Elementi visuali**: Utilizzare logo, colori e font SaluteOra
-=======
-=======
-<<<<<<< .merge_file_9ryf96
-- **Elementi visuali**: Utilizzare logo, colori e font SaluteOra
-=======
-<<<<<<< .merge_file_yKIgNo
-- **Elementi visuali**: Utilizzare logo, colori e font SaluteOra
-=======
->>>>>>> .merge_file_EhzwUP
->>>>>>> .merge_file_OEi1r8
 - **Elementi visuali**: Utilizzare logo, colori e font <nome progetto>
->>>>>>> .merge_file_oCHuhS
 - **Voce e tono**: Mantenere un tono professionale ma amichevole
 - **Firma coerente**: Includere sempre lo stesso formato di firma e disclaimer
 
@@ -82,21 +69,8 @@ Questo documento descrive le best practices per la creazione e gestione di email
 - Separare il contenuto dalla presentazione per facilitare le traduzioni
 - Supportare lingue RTL quando necessario
 
-<<<<<<< .merge_file_VYIH7l
-<<<<<<< .merge_file_yKIgNo
 ## Template e Layout 
-=======
-=======
-<<<<<<< .merge_file_9ryf96
-## Template e Layout 
-=======
-<<<<<<< .merge_file_yKIgNo
-## Template e Layout 
-=======
->>>>>>> .merge_file_EhzwUP
->>>>>>> .merge_file_OEi1r8
 ## Template e Layout
->>>>>>> .merge_file_oCHuhS
 
 ### Utilizzo di MailPace Templates
 
@@ -109,21 +83,8 @@ I template di [mailpace/templates](https://github.com/mailpace/templates) integr
 
 ### Directory `mail-layouts`
 
-<<<<<<< .merge_file_VYIH7l
-<<<<<<< .merge_file_yKIgNo
 La directory `/var/www/html/saluteora/laravel/Modules/Notify/resources/mail-layouts/` contiene:
-=======
-=======
-<<<<<<< .merge_file_9ryf96
-La directory `/var/www/html/saluteora/laravel/Modules/Notify/resources/mail-layouts/` contiene:
-=======
-<<<<<<< .merge_file_yKIgNo
-La directory `/var/www/html/saluteora/laravel/Modules/Notify/resources/mail-layouts/` contiene:
-=======
->>>>>>> .merge_file_EhzwUP
->>>>>>> .merge_file_OEi1r8
 La directory `[project-root]/laravel/Modules/Notify/resources/mail-layouts/` contiene:
->>>>>>> .merge_file_oCHuhS
 
 - **default.html**: Template base per la maggior parte delle comunicazioni
 - **main.html**: Alternativa minimalista
@@ -132,21 +93,8 @@ La directory `[project-root]/laravel/Modules/Notify/resources/mail-layouts/` con
 
 ### Integrazione con Spatie Mail Templates
 
-<<<<<<< .merge_file_VYIH7l
-<<<<<<< .merge_file_yKIgNo
 Seguendo le regole di progetto SaluteOra, ricordare di:
-=======
-=======
-<<<<<<< .merge_file_9ryf96
-Seguendo le regole di progetto SaluteOra, ricordare di:
-=======
-<<<<<<< .merge_file_yKIgNo
-Seguendo le regole di progetto SaluteOra, ricordare di:
-=======
->>>>>>> .merge_file_EhzwUP
->>>>>>> .merge_file_OEi1r8
 Seguendo le regole di progetto <nome progetto>, ricordare di:
->>>>>>> .merge_file_oCHuhS
 
 - NON creare controller personalizzati per gestire l'invio di email
 - Utilizzare il package `spatie/laravel-mail-templates`

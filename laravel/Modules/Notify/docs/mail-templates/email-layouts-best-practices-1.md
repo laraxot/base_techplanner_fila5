@@ -20,21 +20,8 @@ related:
 
 # Email Layouts Best Practices 
 
-<<<<<<< .merge_file_py2Qy3
-<<<<<<< .merge_file_vIfRPF
 Questa documentazione descrive le best practices da seguire per i layout email quando si utilizza `spatie/laravel-database-mail-templates` nel modulo Notify di Quaeris.
-=======
-=======
-<<<<<<< .merge_file_KSgwAy
-Questa documentazione descrive le best practices da seguire per i layout email quando si utilizza `spatie/laravel-database-mail-templates` nel modulo Notify di Quaeris.
-=======
-<<<<<<< .merge_file_vIfRPF
-Questa documentazione descrive le best practices da seguire per i layout email quando si utilizza `spatie/laravel-database-mail-templates` nel modulo Notify di Quaeris.
-=======
->>>>>>> .merge_file_PXuZOc
->>>>>>> .merge_file_lnUgem
 Questa documentazione descrive le best practices da seguire per i layout email quando si utilizza `spatie/laravel-database-mail-templates` nel modulo Notify di App.
->>>>>>> .merge_file_l1wtFu
 
 ## Indice
 
@@ -49,21 +36,8 @@ Questa documentazione descrive le best practices da seguire per i layout email q
 
 ## Introduzione
 
-<<<<<<< .merge_file_py2Qy3
-<<<<<<< .merge_file_vIfRPF
 Quaeris utilizza `spatie/laravel-database-mail-templates` per memorizzare e gestire i template email nel database. Questo approccio separa nettamente:
-=======
-=======
-<<<<<<< .merge_file_KSgwAy
-Quaeris utilizza `spatie/laravel-database-mail-templates` per memorizzare e gestire i template email nel database. Questo approccio separa nettamente:
-=======
-<<<<<<< .merge_file_vIfRPF
-Quaeris utilizza `spatie/laravel-database-mail-templates` per memorizzare e gestire i template email nel database. Questo approccio separa nettamente:
-=======
->>>>>>> .merge_file_PXuZOc
->>>>>>> .merge_file_lnUgem
 App utilizza `spatie/laravel-database-mail-templates` per memorizzare e gestire i template email nel database. Questo approccio separa nettamente:
->>>>>>> .merge_file_l1wtFu
 
 1. **Layout HTML base**: Struttura generale dell'email (`resources/mail-layouts/*.html`)
 2. **Contenuto dei template**: Contenuto specifico memorizzato nel database (tabella `mail_templates`)

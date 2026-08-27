@@ -11,15 +11,8 @@ Implementazione completa delle funzionalità di grafici custom da Fila4 a Fila5,
 ### Fila4 Features Studiate
 
 **Directory Analizzate**:
-<<<<<<< .merge_file_UJzIkT
 - `./laravel/Modules/Quaeris/app/Actions/QuestionChart/`
-=======
-<<<<<<< .merge_file_26S8hp
-- `./laravel/Modules/Quaeris/app/Actions/QuestionChart/`
-=======
->>>>>>> .merge_file_g9aVZs
 - `./laravel/Modules/App/app/Actions/QuestionChart/`
->>>>>>> .merge_file_W3VtBv
 - `./laravel/Modules/Chart/app/Actions/`
 
 **File Chiave Esaminati**:
@@ -74,15 +67,8 @@ foreach ($charts as $chart) {
 ### 2.2 Actions Implementate ✅
 
 #### GetAnswersByQuestionChart
-<<<<<<< .merge_file_UJzIkT
 **File**: `Modules/Quaeris/app/Actions/QuestionChart/GetAnswersByQuestionChart.php`
-=======
-<<<<<<< .merge_file_26S8hp
-**File**: `Modules/Quaeris/app/Actions/QuestionChart/GetAnswersByQuestionChart.php`
-=======
->>>>>>> .merge_file_g9aVZs
 **File**: `Modules/App/app/Actions/QuestionChart/GetAnswersByQuestionChart.php`
->>>>>>> .merge_file_W3VtBv
 
 **Features**:
 - ✅ Custom question type handling (`custom:*`)
@@ -101,15 +87,8 @@ foreach ($charts as $chart) {
 - `processResults()` - Result processing
 
 #### GetChartsDataByQuestionChart
-<<<<<<< .merge_file_UJzIkT
 **File**: `Modules/Quaeris/app/Actions/QuestionChart/GetChartsDataByQuestionChart.php`
-=======
-<<<<<<< .merge_file_26S8hp
-**File**: `Modules/Quaeris/app/Actions/QuestionChart/GetChartsDataByQuestionChart.php`
-=======
->>>>>>> .merge_file_g9aVZs
 **File**: `Modules/App/app/Actions/QuestionChart/GetChartsDataByQuestionChart.php`
->>>>>>> .merge_file_W3VtBv
 
 **Features**:
 - ✅ Multiple charts per question
@@ -175,31 +154,16 @@ foreach ($charts as $chart) {
 3. `Modules/Chart/app/Datas/AnswersChartData.php`
 
 #### Actions (4)
-<<<<<<< .merge_file_UJzIkT
 4. `Modules/Quaeris/app/Actions/QuestionChart/GetAnswersByQuestionChart.php`
 5. `Modules/Quaeris/app/Actions/QuestionChart/GetChartsDataByQuestionChart.php`
-=======
-<<<<<<< .merge_file_26S8hp
-4. `Modules/Quaeris/app/Actions/QuestionChart/GetAnswersByQuestionChart.php`
-5. `Modules/Quaeris/app/Actions/QuestionChart/GetChartsDataByQuestionChart.php`
-=======
->>>>>>> .merge_file_g9aVZs
 4. `Modules/App/app/Actions/QuestionChart/GetAnswersByQuestionChart.php`
 5. `Modules/App/app/Actions/QuestionChart/GetChartsDataByQuestionChart.php`
->>>>>>> .merge_file_W3VtBv
 6. `Modules/Chart/app/Actions/ExportChartToSvgAction.php`
 7. `Modules/Chart/app/Actions/ExportChartToPngAction.php`
 
 #### Documentation (3)
-<<<<<<< .merge_file_UJzIkT
 8. `Modules/Quaeris/docs/custom-chart-implementation.md`
-=======
-<<<<<<< .merge_file_26S8hp
-8. `Modules/Quaeris/docs/custom-chart-implementation.md`
-=======
->>>>>>> .merge_file_g9aVZs
 8. `Modules/App/docs/custom-chart-implementation.md`
->>>>>>> .merge_file_W3VtBv
 9. `.kilo/docs/custom-chart-implementation-report.md` (this file)
 10. `.github/ISSUE_TEMPLATE/custom-chart-implementation.md`
 
@@ -215,15 +179,8 @@ foreach ($charts as $chart) {
 ### Basic Usage
 
 ```php
-<<<<<<< .merge_file_UJzIkT
 use Modules\Quaeris\Actions\QuestionChart\GetChartsDataByQuestionChart;
-=======
-<<<<<<< .merge_file_26S8hp
-use Modules\Quaeris\Actions\QuestionChart\GetChartsDataByQuestionChart;
-=======
->>>>>>> .merge_file_g9aVZs
 use Modules\App\Actions\QuestionChart\GetChartsDataByQuestionChart;
->>>>>>> .merge_file_W3VtBv
 use Modules\Chart\Actions\ExportChartToSvgAction;
 use Modules\Chart\Actions\ExportChartToPngAction;
 
@@ -262,15 +219,8 @@ class QuestionChartAnswersCompositeWidget extends Widget
             $this->filters
         );
         
-<<<<<<< .merge_file_UJzIkT
         return view('quaeris::filament.widgets.question-chart-answers-composite-widget', [
-=======
-<<<<<<< .merge_file_26S8hp
-        return view('quaeris::filament.widgets.question-chart-answers-composite-widget', [
-=======
->>>>>>> .merge_file_g9aVZs
         return view('this-project::filament.widgets.question-chart-answers-composite-widget', [
->>>>>>> .merge_file_W3VtBv
             'chartsData' => $chartsData,
         ]);
     }
@@ -399,27 +349,12 @@ $sort_by_expr = 'DATE_FORMAT(sms_sent_at, "%Y-%m")';
 
 ### File Corretto
 
-<<<<<<< .merge_file_UJzIkT
-=======
-<<<<<<< .merge_file_26S8hp
->>>>>>> .merge_file_g9aVZs
-- `laravel/Modules/Quaeris/app/Actions/QuestionChart/Custom/SmsResponseRate.php`
-
-### Test URL
-
-- `/quaeris/admin/ats/survey-pdfs/16/question-charts/191`
-- `/quaeris/admin/ats/survey-pdfs/16/question-charts/234`
-<<<<<<< .merge_file_UJzIkT
-=======
-=======
->>>>>>> .merge_file_g9aVZs
 - `laravel/Modules/App/app/Actions/QuestionChart/Custom/SmsResponseRate.php`
 
 ### Test URL
 
 - `/this-project/admin/ats/survey-pdfs/16/question-charts/191`
 - `/this-project/admin/ats/survey-pdfs/16/question-charts/234`
->>>>>>> .merge_file_W3VtBv
 
 ---
 
@@ -476,21 +411,9 @@ $sort_by_expr = 'DATE_FORMAT(sms_sent_at, "%Y-%m")';
 ## 12. References
 
 ### Internal Documentation
-<<<<<<< .merge_file_UJzIkT
 - [Custom Chart Implementation Guide](Modules/Quaeris/docs/custom-chart-implementation.md)
 - [GitHub Issue Template](.github/ISSUE_TEMPLATE/custom-chart-implementation.md)
 - [Fila4 Source Code](file://./laravel/Modules/Quaeris/app/Actions/QuestionChart/)
-=======
-<<<<<<< .merge_file_26S8hp
-- [Custom Chart Implementation Guide](Modules/Quaeris/docs/custom-chart-implementation.md)
-- [GitHub Issue Template](.github/ISSUE_TEMPLATE/custom-chart-implementation.md)
-- [Fila4 Source Code](file://./laravel/Modules/Quaeris/app/Actions/QuestionChart/)
-=======
-- [Custom Chart Implementation Guide](Modules/App/docs/custom-chart-implementation.md)
-- [GitHub Issue Template](.github/ISSUE_TEMPLATE/custom-chart-implementation.md)
-- [Fila4 Source Code](file://./laravel/Modules/App/app/Actions/QuestionChart/)
->>>>>>> .merge_file_W3VtBv
->>>>>>> .merge_file_g9aVZs
 
 ### External Resources
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data)

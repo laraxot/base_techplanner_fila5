@@ -10,11 +10,7 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< .merge_file_y04MwU
 uses(\Modules\Notify\Tests\TestCase::class);
-=======
-uses(TestCase::class)->group('notify-db');
->>>>>>> .merge_file_bxwD8m
 
 test('mail template policy denies view any', function () {
     $policy = new MailTemplatePolicy();

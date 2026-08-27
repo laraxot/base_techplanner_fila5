@@ -254,15 +254,8 @@ FAIL → $this->addError() + rimane su form
 ### 1. Avviare il Server
 
 ```bash
-<<<<<<< .merge_file_HY3649
 cd /var/www/_bases/base_fixcity_fila5_mono/laravel
-=======
-<<<<<<< .merge_file_N1jJ3b
-cd /var/www/_bases/base_fixcity_fila5_mono/laravel
-=======
->>>>>>> .merge_file_isQtlN
 cd /var/www/_bases/base_ptv_fila5_mono/laravel
->>>>>>> .merge_file_6stw46
 php artisan serve --host=127.0.0.1 --port=8000
 ```
 

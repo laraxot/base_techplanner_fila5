@@ -24,15 +24,8 @@
 ### Local Implementation
 - Base URL: http://127.0.0.1:8000/it/tests/
 - Blade template: `laravel/Themes/Sixteen/resources/views/pages/tests/[slug].blade.php`
-<<<<<<< .merge_file_dN3zkx
 - Config system: JSON-driven content in `laravel/config/local/fixcity/database/content/pages/`
-=======
-<<<<<<< .merge_file_iuoAN1
-- Config system: JSON-driven content in `laravel/config/local/fixcity/database/content/pages/`
-=======
->>>>>>> .merge_file_gW7Hxv
 - Config system: JSON-driven content in `laravel/config/local/ptv/database/content/pages/`
->>>>>>> .merge_file_WP6Sbn
 
 ---
 

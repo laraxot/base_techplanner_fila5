@@ -51,15 +51,8 @@ Per collegamenti a documenti in altre directory:
 
 ```markdown
 [Regole Generali per le Chiavi di Traduzione](../../lang/docs/translation_keys_rules.md)
-<<<<<<< .merge_file_j3CBVH
 [Best Practices per le Chiavi di Traduzione](../../lang/docs/translation_keys_best_practices.md)
-=======
-<<<<<<< .merge_file_IcKrOd
-[Best Practices per le Chiavi di Traduzione](../../lang/docs/translation_keys_best_practices.md)
-=======
->>>>>>> .merge_file_JVUk0b
 [Best Practices per le Chiavi di Traduzione](../../lang/docs/translation-keys-best-practices.md)
->>>>>>> .merge_file_sUMmxl
 ```
 
 ## Motivazione

@@ -10,11 +10,7 @@ use Modules\Notify\Emails\EmailDataEmail;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< .merge_file_Yqv4hW
-uses(\Modules\Notify\Tests\TestCase::class);
-=======
 uses(TestCase::class)->group('no-notify-db');
->>>>>>> .merge_file_DjcBt6
 
 test('email data email envelope uses explicit sender and subject', function (): void {
     $emailData = new EmailData(

@@ -2,14 +2,7 @@
 
 declare(strict_types=1);
 
-<<<<<<< .merge_file_QUUk41
-use Mockery\Expectation;
-=======
-<<<<<<< .merge_file_GRsPMH
-=======
 use Mockery\CompositeExpectation;
->>>>>>> .merge_file_le7htm
->>>>>>> .merge_file_oNVSsa
 use Mockery\MockInterface;
 
 if (! function_exists('typedMock')) {
@@ -36,17 +29,6 @@ if (! function_exists('typedMock')) {
 
 if (! function_exists('mockExpectation')) {
     /**
-<<<<<<< .merge_file_GRsPMH
-     * Mockery::shouldReceive($singleMethod) restituisce a runtime una
-     * {@see \Mockery\Expectation} concreta. La firma nativa dichiara l'unione
-     * `ExpectationInterface|Expectation|HigherOrderMessage`, quindi PHPStan
-     * non vede `with()`/`once()`/`times()`. Questo helper restringe il tipo.
-     */
-    function mockExpectation(MockInterface $mock, string $method): \Mockery\Expectation
-    {
-        $expectation = $mock->shouldReceive($method);
-        assert($expectation instanceof \Mockery\Expectation);
-=======
      * Mockery::shouldReceive() dichiara nativamente il tipo di ritorno
      * `Expectation|ExpectationInterface|HigherOrderMessage` (vedi
      * vendor/mockery/mockery/library/Mockery/LegacyMockInterface.php). Quando
@@ -70,7 +52,6 @@ if (! function_exists('mockExpectation')) {
     {
         /** @var Expectation $expectation */
         $expectation = $mock->shouldReceive($method);
->>>>>>> .merge_file_le7htm
 
         return $expectation;
     }

@@ -173,13 +173,6 @@ composer test -- Modules/[ModuleName]
 
 ---
 
-<<<<<<< .merge_file_05AkqY
 Navigation: [Project Home](../../docs/INDEX.md) | [Modules](../../docs/modules/README.md)
-=======
-<<<<<<< .merge_file_4DsMAQ
-Navigation: [Project Home](../../docs/INDEX.md) | [Modules](../../docs/modules/README.md)
-=======
->>>>>>> .merge_file_aYGu9O
 Navigation: [Project Home](../../docs/index.md) | [Modules](../../docs/modules/README.md)
->>>>>>> .merge_file_GrqGI4
 

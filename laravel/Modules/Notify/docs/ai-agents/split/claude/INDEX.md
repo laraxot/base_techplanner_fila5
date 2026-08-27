@@ -83,36 +83,14 @@ related:
 |---------|----|----|----|
 | Pennant Rules | [pennant-rules.md](pennant-rules.md) | 8 | Laravel Pennant feature flags |
 | Theme Build | [theme-build-rules.md](theme-build-rules.md) | 33 | Theme build process (CRITICAL) |
-<<<<<<< .merge_file_wB54ov
 | Project Architecture | [project-architecture.md](project-architecture.md) | 130 | FixCity project architecture |
-=======
-<<<<<<< .merge_file_zYeWbQ
-| Project Architecture | [project-architecture.md](project-architecture.md) | 130 | FixCity project architecture |
-=======
->>>>>>> .merge_file_GASsIX
 | Project Architecture | [project-architecture.md](project-architecture.md) | 130 | Notify project architecture |
->>>>>>> .merge_file_4sU30l
 
 ---
 
 ## Cross-References
 
 ### Related Documentation
-<<<<<<< .merge_file_wB54ov
-=======
-<<<<<<< .merge_file_zYeWbQ
->>>>>>> .merge_file_GASsIX
-- ← [BMad Agents Index](../../agents/INDEX.md) — 10 agent definitions
-- ← [BMad Tasks Index](../tasks/INDEX.md) — 22 reusable tasks
-- ← [GEMINI Index](../gemini/INDEX.md) — Gemini-specific rules
-- ← [Main AI Docs Index](../INDEX.md) — Master index
-
-### Bidirectional Links
-- ← Back to [Main AI Docs Index](../INDEX.md)
-<<<<<<< .merge_file_wB54ov
-=======
-=======
->>>>>>> .merge_file_GASsIX
 - ← [BMad Agents Index](../../agents/index.md) — 10 agent definitions
 - ← [BMad Tasks Index](../tasks/index.md) — 22 reusable tasks
 - ← [GEMINI Index](../gemini/index.md) — Gemini-specific rules
@@ -120,7 +98,6 @@ related:
 
 ### Bidirectional Links
 - ← Back to [Main AI Docs Index](../index.md)
->>>>>>> .merge_file_4sU30l
 - ← Back to [../../../../docs/CLAUDE.md](../../../../../../docs/../../../../docs/CLAUDE.md) (original source)
 - ← Back to [Project Docs](../../../docs/README.md)
 

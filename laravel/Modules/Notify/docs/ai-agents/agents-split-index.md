@@ -1,22 +1,8 @@
-<<<<<<< .merge_file_bMroYU
-=======
-<<<<<<< .merge_file_qPVtdV
->>>>>>> .merge_file_MusEIC
-# AGENTS.md Split Index
-
-> Documentazione AGENTS.md originale spezzata in file più piccoli e organizzati.
-
-## 📚 File Creati da AGENTS.md
-<<<<<<< .merge_file_bMroYU
-=======
-=======
->>>>>>> .merge_file_MusEIC
 # agents.md Split Index
 
 > Documentazione agents.md originale spezzata in file più piccoli e organizzati.
 
 ## 📚 File Creati da agents.md
->>>>>>> .merge_file_41xdFz
 
 | File | Contenuto | Righe Originali |
 |------|-----------|----------------|
@@ -33,15 +19,8 @@
 
 ## 🔗 Collegamento all'Originale
 
-<<<<<<< .merge_file_bMroYU
 - [AGENTS.md originale](../../AGENTS.md) - File completo (deprecato)
-=======
-<<<<<<< .merge_file_qPVtdV
-- [AGENTS.md originale](../../AGENTS.md) - File completo (deprecato)
-=======
->>>>>>> .merge_file_MusEIC
 - [agents.md originale](../../agents.md) - File completo (deprecato)
->>>>>>> .merge_file_41xdFz
 - [Index principale](./index.md) - Torna all'indice
 
 ## 📝 Note

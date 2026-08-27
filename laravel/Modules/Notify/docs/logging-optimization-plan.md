@@ -238,15 +238,8 @@ After:
 // Remove all Log::info() examples
 // Add error handling examples only
 
-<<<<<<< .merge_file_x6ZpOH
 // docs/sms_best_practices.md
-=======
-<<<<<<< .merge_file_1sEIwO
-// docs/sms_best_practices.md
-=======
->>>>>>> .merge_file_IDtRcQ
 // docs/sms-best-practices.md
->>>>>>> .merge_file_gm4zbs
 // Update to reflect new logging practices
 ```
 

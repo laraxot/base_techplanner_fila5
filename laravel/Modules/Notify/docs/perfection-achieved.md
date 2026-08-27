@@ -4,15 +4,8 @@ type: concept
 tags: [perfection, achieved]
 created: 2026-07-14
 updated: 2026-07-14
-<<<<<<< .merge_file_eeyBhl
 qmd: "perfection-achieved 🏆 fixcity - perfezione raggiunta"
-=======
-<<<<<<< .merge_file_gi8zBq
-qmd: "perfection-achieved 🏆 fixcity - perfezione raggiunta"
-=======
->>>>>>> .merge_file_vg0x7X
 qmd: "perfection-achieved 🏆 ptv - perfezione raggiunta"
->>>>>>> .merge_file_Y7Zzsu
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:

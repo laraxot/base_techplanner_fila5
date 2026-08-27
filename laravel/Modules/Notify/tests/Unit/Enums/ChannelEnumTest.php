@@ -15,11 +15,7 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\preg_replace;
 
-<<<<<<< .merge_file_nzk7bS
-uses(\Modules\Notify\Tests\TestCase::class);
-=======
 uses(TestCase::class)->group('no-notify-db');
->>>>>>> .merge_file_hjR6AM
 
 test('notification channel mapping is correct', function () {
     Assert::assertSame('mail', ChannelEnum::Mail->getNotificationChannel());

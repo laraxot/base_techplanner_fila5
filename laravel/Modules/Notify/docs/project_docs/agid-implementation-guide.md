@@ -51,29 +51,15 @@ Transform the single-page ticket creation form into a 4-step AGID-compliant wiza
 
 #### Step 1: Update Ticket Creation Form
 
-<<<<<<< .merge_file_vRC7K5
 **File**: `Modules/Fixcity/resources/views/tickets/create.blade.php`
-=======
-<<<<<<< .merge_file_LkL6Br
-**File**: `Modules/Fixcity/resources/views/tickets/create.blade.php`
-=======
->>>>>>> .merge_file_NaOem1
 **File**: `Modules/App/resources/views/tickets/create.blade.php`
->>>>>>> .merge_file_Blg6YT
 
 ```blade
 <x-app-layout>
     <div class="container mx-auto px-4 py-8">
         <h1 class="text-3xl font-bold mb-6">
-<<<<<<< .merge_file_vRC7K5
             {{ __('fixcity::ticket.create.title') }}
-=======
-<<<<<<< .merge_file_LkL6Br
-            {{ __('fixcity::ticket.create.title') }}
-=======
->>>>>>> .merge_file_NaOem1
             {{ __('laraxot::ticket.create.title') }}
->>>>>>> .merge_file_Blg6YT
         </h1>
         
         <form 
@@ -88,103 +74,42 @@ Transform the single-page ticket creation form into a 4-step AGID-compliant wiza
             <x-ui::stepper
                 :total-steps="4"
                 :steps="[
-<<<<<<< .merge_file_vRC7K5
-=======
-<<<<<<< .merge_file_LkL6Br
->>>>>>> .merge_file_NaOem1
-                    1 => __('fixcity::ticket.create.step_privacy'),
-                    2 => __('fixcity::ticket.create.step_data'),
-                    3 => __('fixcity::ticket.create.step_summary'),
-                    4 => __('fixcity::ticket.create.step_confirmation'),
-<<<<<<< .merge_file_vRC7K5
-=======
-=======
->>>>>>> .merge_file_NaOem1
                     1 => __('laraxot::ticket.create.step_privacy'),
                     2 => __('laraxot::ticket.create.step_data'),
                     3 => __('laraxot::ticket.create.step_summary'),
                     4 => __('laraxot::ticket.create.step_confirmation'),
->>>>>>> .merge_file_Blg6YT
                 ]"
             >
                 {{-- Step 1: Privacy Consent --}}
                 <x-ui::stepper-step 
                     :number="1" 
-<<<<<<< .merge_file_vRC7K5
                     :title="__('fixcity::ticket.create.privacy_title')"
                 >
                     @include('fixcity::tickets.steps.privacy')
-=======
-<<<<<<< .merge_file_LkL6Br
-                    :title="__('fixcity::ticket.create.privacy_title')"
-                >
-                    @include('fixcity::tickets.steps.privacy')
-=======
-                    :title="__('laraxot::ticket.create.privacy_title')"
-                >
-                    @include('laraxot::tickets.steps.privacy')
->>>>>>> .merge_file_Blg6YT
->>>>>>> .merge_file_NaOem1
                 </x-ui::stepper-step>
                 
                 {{-- Step 2: Data Entry --}}
                 <x-ui::stepper-step 
                     :number="2" 
-<<<<<<< .merge_file_vRC7K5
                     :title="__('fixcity::ticket.create.data_title')"
                 >
                     @include('fixcity::tickets.steps.data')
-=======
-<<<<<<< .merge_file_LkL6Br
-                    :title="__('fixcity::ticket.create.data_title')"
-                >
-                    @include('fixcity::tickets.steps.data')
-=======
-                    :title="__('laraxot::ticket.create.data_title')"
-                >
-                    @include('laraxot::tickets.steps.data')
->>>>>>> .merge_file_Blg6YT
->>>>>>> .merge_file_NaOem1
                 </x-ui::stepper-step>
                 
                 {{-- Step 3: Summary --}}
                 <x-ui::stepper-step 
                     :number="3" 
-<<<<<<< .merge_file_vRC7K5
                     :title="__('fixcity::ticket.create.summary_title')"
                 >
                     @include('fixcity::tickets.steps.summary')
-=======
-<<<<<<< .merge_file_LkL6Br
-                    :title="__('fixcity::ticket.create.summary_title')"
-                >
-                    @include('fixcity::tickets.steps.summary')
-=======
-                    :title="__('laraxot::ticket.create.summary_title')"
-                >
-                    @include('laraxot::tickets.steps.summary')
->>>>>>> .merge_file_Blg6YT
->>>>>>> .merge_file_NaOem1
                 </x-ui::stepper-step>
                 
                 {{-- Step 4: Confirmation --}}
                 <x-ui::stepper-step 
                     :number="4" 
-<<<<<<< .merge_file_vRC7K5
                     :title="__('fixcity::ticket.create.confirmation_title')"
                 >
                     @include('fixcity::tickets.steps.confirmation')
-=======
-<<<<<<< .merge_file_LkL6Br
-                    :title="__('fixcity::ticket.create.confirmation_title')"
-                >
-                    @include('fixcity::tickets.steps.confirmation')
-=======
-                    :title="__('laraxot::ticket.create.confirmation_title')"
-                >
-                    @include('laraxot::tickets.steps.confirmation')
->>>>>>> .merge_file_Blg6YT
->>>>>>> .merge_file_NaOem1
                 </x-ui::stepper-step>
             </x-ui::stepper>
         </form>
@@ -211,15 +136,8 @@ Transform the single-page ticket creation form into a 4-step AGID-compliant wiza
                 submitForm() {
                     // Validate all steps
                     if (!this.validateAllSteps()) {
-<<<<<<< .merge_file_vRC7K5
                         alert('{{ __("fixcity::ticket.create.validation_error") }}');
-=======
-<<<<<<< .merge_file_LkL6Br
-                        alert('{{ __("fixcity::ticket.create.validation_error") }}');
-=======
->>>>>>> .merge_file_NaOem1
                         alert('{{ __("laraxot::ticket.create.validation_error") }}');
->>>>>>> .merge_file_Blg6YT
                         return;
                     }
                     
@@ -242,61 +160,26 @@ Transform the single-page ticket creation form into a 4-step AGID-compliant wiza
 
 #### Step 2: Create Step Partials
 
-<<<<<<< .merge_file_vRC7K5
 **File**: `Modules/Fixcity/resources/views/tickets/steps/privacy.blade.php`
-=======
-<<<<<<< .merge_file_LkL6Br
-**File**: `Modules/Fixcity/resources/views/tickets/steps/privacy.blade.php`
-=======
->>>>>>> .merge_file_NaOem1
 **File**: `Modules/App/resources/views/tickets/steps/privacy.blade.php`
->>>>>>> .merge_file_Blg6YT
 
 ```blade
 <div class="privacy-step">
     <div class="alert alert-info mb-4">
         <h3 class="alert-heading">
-<<<<<<< .merge_file_vRC7K5
             {{ __('fixcity::ticket.privacy.heading') }}
         </h3>
         <p>{{ __('fixcity::ticket.privacy.intro') }}</p>
-=======
-<<<<<<< .merge_file_LkL6Br
-            {{ __('fixcity::ticket.privacy.heading') }}
-        </h3>
-        <p>{{ __('fixcity::ticket.privacy.intro') }}</p>
-=======
-            {{ __('laraxot::ticket.privacy.heading') }}
-        </h3>
-        <p>{{ __('laraxot::ticket.privacy.intro') }}</p>
->>>>>>> .merge_file_Blg6YT
->>>>>>> .merge_file_NaOem1
     </div>
     
     <div class="card mb-4">
         <div class="card-body">
             <h4 class="card-title">
-<<<<<<< .merge_file_vRC7K5
                 {{ __('fixcity::ticket.privacy.policy_title') }}
             </h4>
             
             <div class="privacy-policy-text" style="max-height: 300px; overflow-y: auto;">
                 {!! __('fixcity::ticket.privacy.policy_content') !!}
-=======
-<<<<<<< .merge_file_LkL6Br
-                {{ __('fixcity::ticket.privacy.policy_title') }}
-            </h4>
-            
-            <div class="privacy-policy-text" style="max-height: 300px; overflow-y: auto;">
-                {!! __('fixcity::ticket.privacy.policy_content') !!}
-=======
-                {{ __('laraxot::ticket.privacy.policy_title') }}
-            </h4>
-            
-            <div class="privacy-policy-text" style="max-height: 300px; overflow-y: auto;">
-                {!! __('laraxot::ticket.privacy.policy_content') !!}
->>>>>>> .merge_file_Blg6YT
->>>>>>> .merge_file_NaOem1
             </div>
         </div>
     </div>
@@ -310,57 +193,29 @@ Transform the single-page ticket creation form into a 4-step AGID-compliant wiza
             required
         >
         <label class="form-check-label" for="privacy_consent">
-<<<<<<< .merge_file_vRC7K5
             {{ __('fixcity::ticket.privacy.consent_label') }}
-=======
-<<<<<<< .merge_file_LkL6Br
-            {{ __('fixcity::ticket.privacy.consent_label') }}
-=======
->>>>>>> .merge_file_NaOem1
             {{ __('laraxot::ticket.privacy.consent_label') }}
->>>>>>> .merge_file_Blg6YT
             <span class="text-danger">*</span>
         </label>
     </div>
     
     <p class="text-muted small mt-2">
-<<<<<<< .merge_file_vRC7K5
         {{ __('fixcity::ticket.privacy.required_info') }}
-=======
-<<<<<<< .merge_file_LkL6Br
-        {{ __('fixcity::ticket.privacy.required_info') }}
-=======
->>>>>>> .merge_file_NaOem1
         {{ __('laraxot::ticket.privacy.required_info') }}
->>>>>>> .merge_file_Blg6YT
     </p>
 </div>
 ```
 
-<<<<<<< .merge_file_vRC7K5
 **File**: `Modules/Fixcity/resources/views/tickets/steps/data.blade.php`
-=======
-<<<<<<< .merge_file_LkL6Br
-**File**: `Modules/Fixcity/resources/views/tickets/steps/data.blade.php`
-=======
->>>>>>> .merge_file_NaOem1
 **File**: `Modules/App/resources/views/tickets/steps/data.blade.php`
->>>>>>> .merge_file_Blg6YT
 
 ```blade
 <div class="data-step">
     {{-- Category Selection --}}
     <fieldset class="mb-4">
         <legend class="h5">
-<<<<<<< .merge_file_vRC7K5
             {{ __('fixcity::ticket.fields.category.label') }}
-=======
-<<<<<<< .merge_file_LkL6Br
-            {{ __('fixcity::ticket.fields.category.label') }}
-=======
->>>>>>> .merge_file_NaOem1
             {{ __('laraxot::ticket.fields.category.label') }}
->>>>>>> .merge_file_Blg6YT
             <span class="text-danger">*</span>
         </legend>
         
@@ -371,18 +226,10 @@ Transform the single-page ticket creation form into a 4-step AGID-compliant wiza
             x-model="formData.category_id"
             required
         >
-<<<<<<< .merge_file_vRC7K5
             <option value="">{{ __('fixcity::ticket.fields.category.placeholder') }}</option>
             @foreach(\Modules\Fixcity\Enums\TicketTypeEnum::cases() as $type)
-=======
-<<<<<<< .merge_file_LkL6Br
-            <option value="">{{ __('fixcity::ticket.fields.category.placeholder') }}</option>
-            @foreach(\Modules\Fixcity\Enums\TicketTypeEnum::cases() as $type)
-=======
->>>>>>> .merge_file_NaOem1
             <option value="">{{ __('laraxot::ticket.fields.category.placeholder') }}</option>
             @foreach(\Modules\App\Enums\TicketTypeEnum::cases() as $type)
->>>>>>> .merge_file_Blg6YT
                 <option value="{{ $type->value }}">{{ $type->label() }}</option>
             @endforeach
         </select>
@@ -391,10 +238,6 @@ Transform the single-page ticket creation form into a 4-step AGID-compliant wiza
     {{-- Location --}}
     <fieldset class="mb-4">
         <legend class="h5">
-<<<<<<< .merge_file_vRC7K5
-            {{ __('fixcity::ticket.fields.location.label') }}
-=======
-<<<<<<< .merge_file_LkL6Br
             {{ __('fixcity::ticket.fields.location.label') }}
             <span class="text-danger">*</span>
         </legend>
@@ -403,21 +246,13 @@ Transform the single-page ticket creation form into a 4-step AGID-compliant wiza
         </p>
         
         <x-fixcity::map-picker
-=======
-            {{ __('laraxot::ticket.fields.location.label') }}
->>>>>>> .merge_file_NaOem1
             <span class="text-danger">*</span>
         </legend>
         <p class="text-muted small">
             {{ __('fixcity::ticket.fields.location.help') }}
         </p>
         
-<<<<<<< .merge_file_vRC7K5
         <x-fixcity::map-picker
-=======
-        <x-laraxot::map-picker
->>>>>>> .merge_file_Blg6YT
->>>>>>> .merge_file_NaOem1
             name="location"
             :center="[41.9028, 12.4964]"
             :zoom="13"
@@ -434,28 +269,14 @@ Transform the single-page ticket creation form into a 4-step AGID-compliant wiza
     {{-- Issue Details --}}
     <fieldset class="mb-4">
         <legend class="h5">
-<<<<<<< .merge_file_vRC7K5
             {{ __('fixcity::ticket.fields.details.label') }}
-=======
-<<<<<<< .merge_file_LkL6Br
-            {{ __('fixcity::ticket.fields.details.label') }}
-=======
->>>>>>> .merge_file_NaOem1
             {{ __('laraxot::ticket.fields.details.label') }}
->>>>>>> .merge_file_Blg6YT
         </legend>
         
         <div class="mb-3">
             <label for="title" class="form-label">
-<<<<<<< .merge_file_vRC7K5
                 {{ __('fixcity::ticket.fields.title.label') }}
-=======
-<<<<<<< .merge_file_LkL6Br
-                {{ __('fixcity::ticket.fields.title.label') }}
-=======
->>>>>>> .merge_file_NaOem1
                 {{ __('laraxot::ticket.fields.title.label') }}
->>>>>>> .merge_file_Blg6YT
                 <span class="text-danger">*</span>
             </label>
             <input 
@@ -464,15 +285,8 @@ Transform the single-page ticket creation form into a 4-step AGID-compliant wiza
                 id="title"
                 name="title"
                 x-model="formData.title"
-<<<<<<< .merge_file_vRC7K5
                 :placeholder="__('fixcity::ticket.fields.title.placeholder')"
-=======
-<<<<<<< .merge_file_LkL6Br
-                :placeholder="__('fixcity::ticket.fields.title.placeholder')"
-=======
->>>>>>> .merge_file_NaOem1
                 :placeholder="__('laraxot::ticket.fields.title.placeholder')"
->>>>>>> .merge_file_Blg6YT
                 required
                 maxlength="255"
             >
@@ -480,15 +294,8 @@ Transform the single-page ticket creation form into a 4-step AGID-compliant wiza
         
         <div class="mb-3">
             <label for="description" class="form-label">
-<<<<<<< .merge_file_vRC7K5
                 {{ __('fixcity::ticket.fields.description.label') }}
-=======
-<<<<<<< .merge_file_LkL6Br
-                {{ __('fixcity::ticket.fields.description.label') }}
-=======
->>>>>>> .merge_file_NaOem1
                 {{ __('laraxot::ticket.fields.description.label') }}
->>>>>>> .merge_file_Blg6YT
                 <span class="text-danger">*</span>
             </label>
             <textarea 
@@ -497,41 +304,18 @@ Transform the single-page ticket creation form into a 4-step AGID-compliant wiza
                 name="description"
                 rows="5"
                 x-model="formData.description"
-<<<<<<< .merge_file_vRC7K5
                 :placeholder="__('fixcity::ticket.fields.description.placeholder')"
                 required
             ></textarea>
             <div class="form-text">
                 {{ __('fixcity::ticket.fields.description.help') }}
-=======
-<<<<<<< .merge_file_LkL6Br
-                :placeholder="__('fixcity::ticket.fields.description.placeholder')"
-                required
-            ></textarea>
-            <div class="form-text">
-                {{ __('fixcity::ticket.fields.description.help') }}
-=======
-                :placeholder="__('laraxot::ticket.fields.description.placeholder')"
-                required
-            ></textarea>
-            <div class="form-text">
-                {{ __('laraxot::ticket.fields.description.help') }}
->>>>>>> .merge_file_Blg6YT
->>>>>>> .merge_file_NaOem1
             </div>
         </div>
         
         <div class="mb-3">
             <label for="photos" class="form-label">
-<<<<<<< .merge_file_vRC7K5
                 {{ __('fixcity::ticket.fields.photos.label') }}
-=======
-<<<<<<< .merge_file_LkL6Br
-                {{ __('fixcity::ticket.fields.photos.label') }}
-=======
->>>>>>> .merge_file_NaOem1
                 {{ __('laraxot::ticket.fields.photos.label') }}
->>>>>>> .merge_file_Blg6YT
             </label>
             <input 
                 type="file" 
@@ -543,15 +327,8 @@ Transform the single-page ticket creation form into a 4-step AGID-compliant wiza
                 @change="formData.photos = Array.from($event.target.files)"
             >
             <div class="form-text">
-<<<<<<< .merge_file_vRC7K5
                 {{ __('fixcity::ticket.fields.photos.help') }}
-=======
-<<<<<<< .merge_file_LkL6Br
-                {{ __('fixcity::ticket.fields.photos.help') }}
-=======
->>>>>>> .merge_file_NaOem1
                 {{ __('laraxot::ticket.fields.photos.help') }}
->>>>>>> .merge_file_Blg6YT
             </div>
         </div>
     </fieldset>
@@ -559,29 +336,15 @@ Transform the single-page ticket creation form into a 4-step AGID-compliant wiza
     {{-- Reporter Information --}}
     <fieldset class="mb-4">
         <legend class="h5">
-<<<<<<< .merge_file_vRC7K5
             {{ __('fixcity::ticket.fields.reporter.label') }}
-=======
-<<<<<<< .merge_file_LkL6Br
-            {{ __('fixcity::ticket.fields.reporter.label') }}
-=======
->>>>>>> .merge_file_NaOem1
             {{ __('laraxot::ticket.fields.reporter.label') }}
->>>>>>> .merge_file_Blg6YT
         </legend>
         
         <div class="row">
             <div class="col-md-6 mb-3">
                 <label for="name" class="form-label">
-<<<<<<< .merge_file_vRC7K5
                     {{ __('fixcity::ticket.fields.name.label') }}
-=======
-<<<<<<< .merge_file_LkL6Br
-                    {{ __('fixcity::ticket.fields.name.label') }}
-=======
->>>>>>> .merge_file_NaOem1
                     {{ __('laraxot::ticket.fields.name.label') }}
->>>>>>> .merge_file_Blg6YT
                     <span class="text-danger">*</span>
                 </label>
                 <input 
@@ -596,15 +359,8 @@ Transform the single-page ticket creation form into a 4-step AGID-compliant wiza
             
             <div class="col-md-6 mb-3">
                 <label for="email" class="form-label">
-<<<<<<< .merge_file_vRC7K5
                     {{ __('fixcity::ticket.fields.email.label') }}
-=======
-<<<<<<< .merge_file_LkL6Br
-                    {{ __('fixcity::ticket.fields.email.label') }}
-=======
->>>>>>> .merge_file_NaOem1
                     {{ __('laraxot::ticket.fields.email.label') }}
->>>>>>> .merge_file_Blg6YT
                     <span class="text-danger">*</span>
                 </label>
                 <input 
@@ -620,15 +376,8 @@ Transform the single-page ticket creation form into a 4-step AGID-compliant wiza
         
         <div class="mb-3">
             <label for="phone" class="form-label">
-<<<<<<< .merge_file_vRC7K5
                 {{ __('fixcity::ticket.fields.phone.label') }}
-=======
-<<<<<<< .merge_file_LkL6Br
-                {{ __('fixcity::ticket.fields.phone.label') }}
-=======
->>>>>>> .merge_file_NaOem1
                 {{ __('laraxot::ticket.fields.phone.label') }}
->>>>>>> .merge_file_Blg6YT
             </label>
             <input 
                 type="tel" 
@@ -638,39 +387,20 @@ Transform the single-page ticket creation form into a 4-step AGID-compliant wiza
                 x-model="formData.phone"
             >
             <div class="form-text">
-<<<<<<< .merge_file_vRC7K5
                 {{ __('fixcity::ticket.fields.phone.help') }}
-=======
-<<<<<<< .merge_file_LkL6Br
-                {{ __('fixcity::ticket.fields.phone.help') }}
-=======
->>>>>>> .merge_file_NaOem1
                 {{ __('laraxot::ticket.fields.phone.help') }}
->>>>>>> .merge_file_Blg6YT
             </div>
         </div>
     </fieldset>
 </div>
 ```
 
-<<<<<<< .merge_file_vRC7K5
 **File**: `Modules/Fixcity/resources/views/tickets/steps/summary.blade.php`
-=======
-<<<<<<< .merge_file_LkL6Br
-**File**: `Modules/Fixcity/resources/views/tickets/steps/summary.blade.php`
-=======
->>>>>>> .merge_file_NaOem1
 **File**: `Modules/App/resources/views/tickets/steps/summary.blade.php`
->>>>>>> .merge_file_Blg6YT
 
 ```blade
 <div class="summary-step">
     <div class="alert alert-warning">
-<<<<<<< .merge_file_vRC7K5
-        <strong>{{ __('fixcity::ticket.summary.review_heading') }}</strong>
-        <p>{{ __('fixcity::ticket.summary.review_text') }}</p>
-=======
-<<<<<<< .merge_file_LkL6Br
         <strong>{{ __('fixcity::ticket.summary.review_heading') }}</strong>
         <p>{{ __('fixcity::ticket.summary.review_text') }}</p>
     </div>
@@ -698,10 +428,6 @@ Transform the single-page ticket creation form into a 4-step AGID-compliant wiza
         <dd class="col-sm-9" x-text="formData.email"></dd>
         
         <dt class="col-sm-3">{{ __('fixcity::ticket.fields.phone.label') }}</dt>
-=======
-        <strong>{{ __('laraxot::ticket.summary.review_heading') }}</strong>
-        <p>{{ __('laraxot::ticket.summary.review_text') }}</p>
->>>>>>> .merge_file_NaOem1
     </div>
     
     <dl class="row">
@@ -726,12 +452,7 @@ Transform the single-page ticket creation form into a 4-step AGID-compliant wiza
         <dt class="col-sm-3">{{ __('fixcity::ticket.fields.email.label') }}</dt>
         <dd class="col-sm-9" x-text="formData.email"></dd>
         
-<<<<<<< .merge_file_vRC7K5
         <dt class="col-sm-3">{{ __('fixcity::ticket.fields.phone.label') }}</dt>
-=======
-        <dt class="col-sm-3">{{ __('laraxot::ticket.fields.phone.label') }}</dt>
->>>>>>> .merge_file_Blg6YT
->>>>>>> .merge_file_NaOem1
         <dd class="col-sm-9" x-text="formData.phone || 'N/A'"></dd>
     </dl>
     
@@ -739,31 +460,16 @@ Transform the single-page ticket creation form into a 4-step AGID-compliant wiza
         <svg class="icon icon-info" aria-hidden="true">
             <use href="#it-info-circle"></use>
         </svg>
-<<<<<<< .merge_file_vRC7K5
         <strong>{{ __('fixcity::ticket.summary.notification_heading') }}</strong>
         <p>{{ __('fixcity::ticket.summary.notification_text', ['email' => '']) }}</p>
-=======
-<<<<<<< .merge_file_LkL6Br
-        <strong>{{ __('fixcity::ticket.summary.notification_heading') }}</strong>
-        <p>{{ __('fixcity::ticket.summary.notification_text', ['email' => '']) }}</p>
-=======
->>>>>>> .merge_file_NaOem1
         <strong>{{ __('laraxot::ticket.summary.notification_heading') }}</strong>
         <p>{{ __('laraxot::ticket.summary.notification_text', ['email' => '']) }}</p>
->>>>>>> .merge_file_Blg6YT
     </div>
 </div>
 ```
 
-<<<<<<< .merge_file_vRC7K5
 **File**: `Modules/Fixcity/resources/views/tickets/steps/confirmation.blade.php`
-=======
-<<<<<<< .merge_file_LkL6Br
-**File**: `Modules/Fixcity/resources/views/tickets/steps/confirmation.blade.php`
-=======
->>>>>>> .merge_file_NaOem1
 **File**: `Modules/App/resources/views/tickets/steps/confirmation.blade.php`
->>>>>>> .merge_file_Blg6YT
 
 ```blade
 <div class="confirmation-step text-center">
@@ -773,52 +479,20 @@ Transform the single-page ticket creation form into a 4-step AGID-compliant wiza
         </svg>
     </div>
     
-<<<<<<< .merge_file_vRC7K5
     <h2 class="mb-3">{{ __('fixcity::ticket.confirmation.success_heading') }}</h2>
     
     <p class="lead text-muted">
         {{ __('fixcity::ticket.confirmation.success_text') }}
-=======
-<<<<<<< .merge_file_LkL6Br
-    <h2 class="mb-3">{{ __('fixcity::ticket.confirmation.success_heading') }}</h2>
-    
-    <p class="lead text-muted">
-        {{ __('fixcity::ticket.confirmation.success_text') }}
-=======
-    <h2 class="mb-3">{{ __('laraxot::ticket.confirmation.success_heading') }}</h2>
-    
-    <p class="lead text-muted">
-        {{ __('laraxot::ticket.confirmation.success_text') }}
->>>>>>> .merge_file_Blg6YT
->>>>>>> .merge_file_NaOem1
     </p>
     
     <div class="alert alert-success my-4">
         <p class="mb-0">
-<<<<<<< .merge_file_vRC7K5
             <strong>{{ __('fixcity::ticket.confirmation.next_steps_heading') }}</strong>
         </p>
         <ol class="text-start mt-3">
             <li>{{ __('fixcity::ticket.confirmation.step_1') }}</li>
             <li>{{ __('fixcity::ticket.confirmation.step_2') }}</li>
             <li>{{ __('fixcity::ticket.confirmation.step_3') }}</li>
-=======
-<<<<<<< .merge_file_LkL6Br
-            <strong>{{ __('fixcity::ticket.confirmation.next_steps_heading') }}</strong>
-        </p>
-        <ol class="text-start mt-3">
-            <li>{{ __('fixcity::ticket.confirmation.step_1') }}</li>
-            <li>{{ __('fixcity::ticket.confirmation.step_2') }}</li>
-            <li>{{ __('fixcity::ticket.confirmation.step_3') }}</li>
-=======
-            <strong>{{ __('laraxot::ticket.confirmation.next_steps_heading') }}</strong>
-        </p>
-        <ol class="text-start mt-3">
-            <li>{{ __('laraxot::ticket.confirmation.step_1') }}</li>
-            <li>{{ __('laraxot::ticket.confirmation.step_2') }}</li>
-            <li>{{ __('laraxot::ticket.confirmation.step_3') }}</li>
->>>>>>> .merge_file_Blg6YT
->>>>>>> .merge_file_NaOem1
         </ol>
     </div>
 </div>
@@ -846,38 +520,17 @@ Create FAQ pages with AGID-compliant accordion UI.
 
 ### 💻 Implementation
 
-<<<<<<< .merge_file_vRC7K5
 **File**: `Modules/Fixcity/resources/views/faq/index.blade.php`
-=======
-<<<<<<< .merge_file_LkL6Br
-**File**: `Modules/Fixcity/resources/views/faq/index.blade.php`
-=======
->>>>>>> .merge_file_NaOem1
 **File**: `Modules/App/resources/views/faq/index.blade.php`
->>>>>>> .merge_file_Blg6YT
 
 ```blade
 <x-app-layout>
     <div class="container mx-auto px-4 py-8">
         <h1 class="text-3xl font-bold mb-2">
-<<<<<<< .merge_file_vRC7K5
             {{ __('fixcity::faq.title') }}
         </h1>
         <p class="text-lg text-gray-600 mb-8">
             {{ __('fixcity::faq.subtitle') }}
-=======
-<<<<<<< .merge_file_LkL6Br
-            {{ __('fixcity::faq.title') }}
-        </h1>
-        <p class="text-lg text-gray-600 mb-8">
-            {{ __('fixcity::faq.subtitle') }}
-=======
-            {{ __('laraxot::faq.title') }}
-        </h1>
-        <p class="text-lg text-gray-600 mb-8">
-            {{ __('laraxot::faq.subtitle') }}
->>>>>>> .merge_file_Blg6YT
->>>>>>> .merge_file_NaOem1
         </p>
         
         {{-- Search FAQ --}}
@@ -886,15 +539,8 @@ Create FAQ pages with AGID-compliant accordion UI.
                 <input 
                     type="search" 
                     class="form-control"
-<<<<<<< .merge_file_vRC7K5
                     placeholder="{{ __('fixcity::faq.search_placeholder') }}"
-=======
-<<<<<<< .merge_file_LkL6Br
-                    placeholder="{{ __('fixcity::faq.search_placeholder') }}"
-=======
->>>>>>> .merge_file_NaOem1
                     placeholder="{{ __('laraxot::faq.search_placeholder') }}"
->>>>>>> .merge_file_Blg6YT
                     x-data
                     x-on:input.debounce.300ms="searchFaq($event.target.value)"
                 >
@@ -922,15 +568,8 @@ Create FAQ pages with AGID-compliant accordion UI.
                             
                             @if($faq->related_links)
                                 <div class="related-links mt-3">
-<<<<<<< .merge_file_vRC7K5
                                     <strong>{{ __('fixcity::faq.related_links') }}:</strong>
-=======
-<<<<<<< .merge_file_LkL6Br
-                                    <strong>{{ __('fixcity::faq.related_links') }}:</strong>
-=======
->>>>>>> .merge_file_NaOem1
                                     <strong>{{ __('laraxot::faq.related_links') }}:</strong>
->>>>>>> .merge_file_Blg6YT
                                     <ul>
                                         @foreach($faq->related_links as $link)
                                             <li>
@@ -952,10 +591,6 @@ Create FAQ pages with AGID-compliant accordion UI.
         <div class="card bg-light mt-8">
             <div class="card-body text-center">
                 <h3 class="card-title">
-<<<<<<< .merge_file_vRC7K5
-                    {{ __('fixcity::faq.need_help_title') }}
-=======
-<<<<<<< .merge_file_LkL6Br
                     {{ __('fixcity::faq.need_help_title') }}
                 </h3>
                 <p class="card-text">
@@ -963,20 +598,12 @@ Create FAQ pages with AGID-compliant accordion UI.
                 </p>
                 <a href="{{ route('contact') }}" class="btn btn-primary">
                     {{ __('fixcity::faq.contact_button') }}
-=======
-                    {{ __('laraxot::faq.need_help_title') }}
->>>>>>> .merge_file_NaOem1
                 </h3>
                 <p class="card-text">
                     {{ __('fixcity::faq.need_help_text') }}
                 </p>
                 <a href="{{ route('contact') }}" class="btn btn-primary">
-<<<<<<< .merge_file_vRC7K5
                     {{ __('fixcity::faq.contact_button') }}
-=======
-                    {{ __('laraxot::faq.contact_button') }}
->>>>>>> .merge_file_Blg6YT
->>>>>>> .merge_file_NaOem1
                 </a>
             </div>
         </div>
@@ -984,30 +611,16 @@ Create FAQ pages with AGID-compliant accordion UI.
 </x-app-layout>
 ```
 
-<<<<<<< .merge_file_vRC7K5
 **Model**: `Modules/Fixcity/app/Models/Faq.php`
-=======
-<<<<<<< .merge_file_LkL6Br
-**Model**: `Modules/Fixcity/app/Models/Faq.php`
-=======
->>>>>>> .merge_file_NaOem1
 **Model**: `Modules/App/app/Models/Faq.php`
->>>>>>> .merge_file_Blg6YT
 
 ```php
 <?php
 
 declare(strict_types=1);
 
-<<<<<<< .merge_file_vRC7K5
 namespace Modules\Fixcity\Models;
-=======
-<<<<<<< .merge_file_LkL6Br
-namespace Modules\Fixcity\Models;
-=======
->>>>>>> .merge_file_NaOem1
 namespace Modules\App\Models;
->>>>>>> .merge_file_Blg6YT
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -1042,15 +655,8 @@ class Faq extends Model
 
 **Migration**:
 ```bash
-<<<<<<< .merge_file_vRC7K5
 php artisan make:migration create_faqs_table --path=Modules/Fixcity/database/Migrations
-=======
-<<<<<<< .merge_file_LkL6Br
-php artisan make:migration create_faqs_table --path=Modules/Fixcity/database/Migrations
-=======
->>>>>>> .merge_file_NaOem1
 php artisan make:migration create_faqs_table --path=Modules/App/database/Migrations
->>>>>>> .merge_file_Blg6YT
 ```
 
 ```php
@@ -1094,15 +700,8 @@ MEILISEARCH_KEY=your-master-key
 
 ### 💻 Implementation
 
-<<<<<<< .merge_file_vRC7K5
 **Model**: `Modules/Fixcity/app/Models/Ticket.php`
-=======
-<<<<<<< .merge_file_LkL6Br
-**Model**: `Modules/Fixcity/app/Models/Ticket.php`
-=======
->>>>>>> .merge_file_NaOem1
 **Model**: `Modules/App/app/Models/Ticket.php`
->>>>>>> .merge_file_Blg6YT
 
 ```php
 use Laravel\Scout\Searchable;
@@ -1138,39 +737,18 @@ class Ticket extends Model
 }
 ```
 
-<<<<<<< .merge_file_vRC7K5
 **Controller**: `Modules/Fixcity/app/Http/Controllers/SearchController.php`
-=======
-<<<<<<< .merge_file_LkL6Br
-**Controller**: `Modules/Fixcity/app/Http/Controllers/SearchController.php`
-=======
->>>>>>> .merge_file_NaOem1
 **Controller**: `Modules/App/app/Http/Controllers/SearchController.php`
->>>>>>> .merge_file_Blg6YT
 
 ```php
 <?php
 
 declare(strict_types=1);
 
-<<<<<<< .merge_file_vRC7K5
 namespace Modules\Fixcity\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Modules\Fixcity\Models\Ticket;
-=======
-<<<<<<< .merge_file_LkL6Br
-namespace Modules\Fixcity\Http\Controllers;
-
-use Illuminate\Http\Request;
-use Modules\Fixcity\Models\Ticket;
-=======
-namespace Modules\App\Http\Controllers;
-
-use Illuminate\Http\Request;
-use Modules\App\Models\Ticket;
->>>>>>> .merge_file_Blg6YT
->>>>>>> .merge_file_NaOem1
 
 class SearchController
 {
@@ -1179,15 +757,8 @@ class SearchController
         $query = $request->input('q');
         
         if (empty($query)) {
-<<<<<<< .merge_file_vRC7K5
             return view('fixcity::search.index', [
-=======
-<<<<<<< .merge_file_LkL6Br
-            return view('fixcity::search.index', [
-=======
->>>>>>> .merge_file_NaOem1
             return view('laraxot::search.index', [
->>>>>>> .merge_file_Blg6YT
                 'query' => '',
                 'results' => collect(),
                 'total' => 0,
@@ -1198,15 +769,8 @@ class SearchController
             ->query(fn ($builder) => $builder->with(['owner', 'responsible']))
             ->paginate(20);
         
-<<<<<<< .merge_file_vRC7K5
         return view('fixcity::search.index', [
-=======
-<<<<<<< .merge_file_LkL6Br
-        return view('fixcity::search.index', [
-=======
->>>>>>> .merge_file_NaOem1
         return view('laraxot::search.index', [
->>>>>>> .merge_file_Blg6YT
             'query' => $query,
             'results' => $results,
             'total' => $results->total(),
@@ -1220,29 +784,15 @@ class SearchController
 Route::get('/search', [SearchController::class, 'index'])->name('search');
 ```
 
-<<<<<<< .merge_file_vRC7K5
 **View**: `Modules/Fixcity/resources/views/search/index.blade.php`
-=======
-<<<<<<< .merge_file_LkL6Br
-**View**: `Modules/Fixcity/resources/views/search/index.blade.php`
-=======
->>>>>>> .merge_file_NaOem1
 **View**: `Modules/App/resources/views/search/index.blade.php`
->>>>>>> .merge_file_Blg6YT
 
 ```blade
 <x-app-layout>
     <div class="container mx-auto px-4 py-8">
         <h1 class="text-3xl font-bold mb-6">
-<<<<<<< .merge_file_vRC7K5
             {{ __('fixcity::search.title') }}
-=======
-<<<<<<< .merge_file_LkL6Br
-            {{ __('fixcity::search.title') }}
-=======
->>>>>>> .merge_file_NaOem1
             {{ __('laraxot::search.title') }}
->>>>>>> .merge_file_Blg6YT
         </h1>
         
         {{-- Search Form --}}
@@ -1253,30 +803,16 @@ Route::get('/search', [SearchController::class, 'index'])->name('search');
                     name="q" 
                     class="form-control form-control-lg"
                     value="{{ $query }}"
-<<<<<<< .merge_file_vRC7K5
                     placeholder="{{ __('fixcity::search.placeholder') }}"
-=======
-<<<<<<< .merge_file_LkL6Br
-                    placeholder="{{ __('fixcity::search.placeholder') }}"
-=======
->>>>>>> .merge_file_NaOem1
                     placeholder="{{ __('laraxot::search.placeholder') }}"
->>>>>>> .merge_file_Blg6YT
                     autofocus
                 >
                 <button type="submit" class="btn btn-primary">
                     <svg class="icon icon-white" aria-hidden="true">
                         <use href="#it-search"></use>
                     </svg>
-<<<<<<< .merge_file_vRC7K5
                     {{ __('fixcity::search.button') }}
-=======
-<<<<<<< .merge_file_LkL6Br
-                    {{ __('fixcity::search.button') }}
-=======
->>>>>>> .merge_file_NaOem1
                     {{ __('laraxot::search.button') }}
->>>>>>> .merge_file_Blg6YT
                 </button>
             </div>
         </form>
@@ -1284,24 +820,13 @@ Route::get('/search', [SearchController::class, 'index'])->name('search');
         @if($query)
             <div class="search-results">
                 <p class="text-muted mb-4">
-<<<<<<< .merge_file_vRC7K5
                     {{ trans_choice('fixcity::search.results_count', $total, ['count' => $total, 'query' => $query]) }}
-=======
-<<<<<<< .merge_file_LkL6Br
-                    {{ trans_choice('fixcity::search.results_count', $total, ['count' => $total, 'query' => $query]) }}
-=======
->>>>>>> .merge_file_NaOem1
                     {{ trans_choice('laraxot::search.results_count', $total, ['count' => $total, 'query' => $query]) }}
->>>>>>> .merge_file_Blg6YT
                 </p>
                 
                 @if($results->isEmpty())
                     <div class="alert alert-info">
                         <h3 class="alert-heading">
-<<<<<<< .merge_file_vRC7K5
-                            {{ __('fixcity::search.no_results_heading') }}
-=======
-<<<<<<< .merge_file_LkL6Br
                             {{ __('fixcity::search.no_results_heading') }}
                         </h3>
                         <p>{{ __('fixcity::search.no_results_text') }}</p>
@@ -1309,22 +834,12 @@ Route::get('/search', [SearchController::class, 'index'])->name('search');
                             <li>{{ __('fixcity::search.tip_1') }}</li>
                             <li>{{ __('fixcity::search.tip_2') }}</li>
                             <li>{{ __('fixcity::search.tip_3') }}</li>
-=======
-                            {{ __('laraxot::search.no_results_heading') }}
->>>>>>> .merge_file_NaOem1
                         </h3>
                         <p>{{ __('fixcity::search.no_results_text') }}</p>
                         <ul>
-<<<<<<< .merge_file_vRC7K5
                             <li>{{ __('fixcity::search.tip_1') }}</li>
                             <li>{{ __('fixcity::search.tip_2') }}</li>
                             <li>{{ __('fixcity::search.tip_3') }}</li>
-=======
-                            <li>{{ __('laraxot::search.tip_1') }}</li>
-                            <li>{{ __('laraxot::search.tip_2') }}</li>
-                            <li>{{ __('laraxot::search.tip_3') }}</li>
->>>>>>> .merge_file_Blg6YT
->>>>>>> .merge_file_NaOem1
                         </ul>
                     </div>
                 @else
@@ -1366,15 +881,8 @@ Route::get('/search', [SearchController::class, 'index'])->name('search');
 
 **Index tickets**:
 ```bash
-<<<<<<< .merge_file_vRC7K5
 php artisan scout:import "Modules\\Fixcity\\Models\\Ticket"
-=======
-<<<<<<< .merge_file_LkL6Br
-php artisan scout:import "Modules\\Fixcity\\Models\\Ticket"
-=======
->>>>>>> .merge_file_NaOem1
 php artisan scout:import "Modules\\App\\Models\\Ticket"
->>>>>>> .merge_file_Blg6YT
 ```
 
 ---

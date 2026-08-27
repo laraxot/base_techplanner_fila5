@@ -22,21 +22,8 @@ related:
 
 ## Panoramica delle Modifiche
 
-<<<<<<< .merge_file_ZUaY59
-<<<<<<< .merge_file_dWNYFl
 Il modello `MailTemplate` (`/var/www/html/Quaeris/laravel/Modules/Notify/app/Models/MailTemplate.php`) è stato aggiornato per supportare l'identificazione dei template tramite slug. Questa implementazione segue le migliori pratiche di Laravel e migliora l'usabilità del sistema di template email.
-=======
-=======
-<<<<<<< .merge_file_z5c5xo
-Il modello `MailTemplate` (`/var/www/html/Quaeris/laravel/Modules/Notify/app/Models/MailTemplate.php`) è stato aggiornato per supportare l'identificazione dei template tramite slug. Questa implementazione segue le migliori pratiche di Laravel e migliora l'usabilità del sistema di template email.
-=======
-<<<<<<< .merge_file_dWNYFl
-Il modello `MailTemplate` (`/var/www/html/Quaeris/laravel/Modules/Notify/app/Models/MailTemplate.php`) è stato aggiornato per supportare l'identificazione dei template tramite slug. Questa implementazione segue le migliori pratiche di Laravel e migliora l'usabilità del sistema di template email.
-=======
->>>>>>> .merge_file_yWdj0x
->>>>>>> .merge_file_NcaDun
 Il modello `MailTemplate` (`/var/www/_bases/base_ptvx_fila5/laravel/Modules/Notify/app/Models/MailTemplate.php`) è stato aggiornato per supportare l'identificazione dei template tramite slug. Questa implementazione segue le migliori pratiche di Laravel e migliora l'usabilità del sistema di template email.
->>>>>>> .merge_file_AKtJ2O
 
 ## Modifiche Effettuate
 

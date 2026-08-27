@@ -15,11 +15,7 @@ use Modules\Notify\Tests\TestCase;
 use Modules\User\Database\Factories\UserFactory;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< .merge_file_e7cpTQ
-uses(TestCase::class);
-=======
 uses(TestCase::class)->group('notify-db');
->>>>>>> .merge_file_6BHFNB
 
 describe('Send notification flow', function (): void {
     test('template lookup returns null when code missing', function (): void {
@@ -56,11 +52,7 @@ describe('Send notification flow', function (): void {
     });
 
     test('send action can be invoked with mocked handle', function (): void {
-<<<<<<< .merge_file_e7cpTQ
         /** @var \Modules\Notify\Tests\TestCase $this */
-=======
-        /** @var TestCase $this */
->>>>>>> .merge_file_6BHFNB
         NotificationTemplateFactory::new()->createOne([
             'code' => 'action-send-template',
             'is_active' => true,
@@ -72,11 +64,7 @@ describe('Send notification flow', function (): void {
         $calls = 0;
         $action = $this->createUnitMock(SendNotificationAction::class);
         $action->method('handle')->willReturnCallback(function () use (&$calls, $notification): Notification {
-<<<<<<< .merge_file_e7cpTQ
             ++$calls;
-=======
-            $calls++;
->>>>>>> .merge_file_6BHFNB
 
             return $notification;
         });
@@ -96,11 +84,7 @@ describe('Send notification flow', function (): void {
     });
 
     test('send action throws when template missing', function (): void {
-<<<<<<< .merge_file_e7cpTQ
         /** @var \Modules\Notify\Tests\TestCase $this */
-=======
-        /** @var TestCase $this */
->>>>>>> .merge_file_6BHFNB
         $this->expectApplicationException(Exception::class);
 
         $recipient = UserFactory::new()->createOne();

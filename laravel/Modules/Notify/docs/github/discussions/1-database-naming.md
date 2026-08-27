@@ -34,18 +34,10 @@ database/Seeders/
 Ho creato questi documenti:
 
 1. **[Database Naming Convention](docs/conventions/database-naming.md)** - Guida completa
-<<<<<<< .merge_file_TMICJ1
 2. **[AGENTS.md Update](AGENTS.md)** - Rule aggiunta alle regole architetturali
 3. **[GitHub Issue #5](https://github.com/laraxot/base_fixcity_fila5/issues/5)** - Tracking delle correzioni
-=======
-<<<<<<< .merge_file_2Wug03
-2. **[AGENTS.md Update](AGENTS.md)** - Rule aggiunta alle regole architetturali
-3. **[GitHub Issue #5](https://github.com/laraxot/base_fixcity_fila5/issues/5)** - Tracking delle correzioni
-=======
->>>>>>> .merge_file_b3vHV2
 2. **[agents.md Update](agents.md)** - Rule aggiunta alle regole architetturali
 3. **[GitHub Issue #5](https://github.com/laraxot/platform/issues/5)** - Tracking delle correzioni
->>>>>>> .merge_file_RwXLY9
 
 ## 🔍 Perché è Importante
 
@@ -64,15 +56,8 @@ Ho creato questi documenti:
 - [ ] AI
 - [ ] Cms
 - [ ] Comment
-<<<<<<< .merge_file_TMICJ1
 - [ ] Fixcity
-=======
-<<<<<<< .merge_file_2Wug03
-- [ ] Fixcity
-=======
->>>>>>> .merge_file_b3vHV2
 - [ ] App
->>>>>>> .merge_file_RwXLY9
 - [ ] Gdpr
 - [ ] Geo
 - [ ] Job

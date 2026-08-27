@@ -1,12 +1,5 @@
-<<<<<<< .merge_file_uDNVnm
 # 📊 Quality Dashboard - FixCity Project
-=======
-<<<<<<< .merge_file_VS7Kkl
-# 📊 Quality Dashboard - FixCity Project
-=======
->>>>>>> .merge_file_NCOFfw
 # 📊 Quality Dashboard - Notify Project
->>>>>>> .merge_file_Cg6LRF
 
 **Last Updated:** 2025-10-01 21:35  
 **Status:** 🟢 Excellent
@@ -54,15 +47,8 @@ Coverage by Module:
 Xot      ████████████████████████████████████████ 90%
 Tenant   ████████████████████████████████████████ 88%
 User     ████████████████████████████████████████ 85%
-<<<<<<< .merge_file_uDNVnm
 Fixcity  ████████████████████████████████████████ 82%
-=======
-<<<<<<< .merge_file_VS7Kkl
-Fixcity  ████████████████████████████████████████ 82%
-=======
->>>>>>> .merge_file_NCOFfw
 App  ████████████████████████████████████████ 82%
->>>>>>> .merge_file_Cg6LRF
 Blog     ████████████████████████████████████████ 80%
 Others   ████████████████████████████████████████ 85%
 ```
@@ -103,15 +89,8 @@ Others   ███████████████████████�
 | Module | Score | Complexity | Tests | PHPStan |
 |--------|-------|------------|-------|---------|
 | Tenant | 94% | 🟢 0 | 🟢 88% | 🟢 Pass |
-<<<<<<< .merge_file_uDNVnm
 | Fixcity | 92% | 🟢 0 | 🟢 82% | 🟢 Pass |
-=======
-<<<<<<< .merge_file_VS7Kkl
-| Fixcity | 92% | 🟢 0 | 🟢 82% | 🟢 Pass |
-=======
->>>>>>> .merge_file_NCOFfw
 | App | 92% | 🟢 0 | 🟢 82% | 🟢 Pass |
->>>>>>> .merge_file_Cg6LRF
 | UI | 91% | 🟢 0 | 🟢 85% | 🟢 Pass |
 | Cms | 90% | 🟢 0 | 🟢 80% | 🟢 Pass |
 
@@ -288,35 +267,19 @@ Overall Progress: ████████████████████�
 
 ## 📞 Quality Team Contacts
 
-<<<<<<< .merge_file_uDNVnm
 - **Quality Lead**: quality@fixcity.com
 - **Architecture**: architecture@fixcity.com
 - **Testing**: testing@fixcity.com
-=======
-<<<<<<< .merge_file_VS7Kkl
-- **Quality Lead**: quality@fixcity.com
-- **Architecture**: architecture@fixcity.com
-- **Testing**: testing@fixcity.com
-=======
->>>>>>> .merge_file_NCOFfw
 - **Quality Lead**: quality@laraxot.com
 - **Architecture**: architecture@laraxot.com
 - **Testing**: testing@laraxot.com
->>>>>>> .merge_file_Cg6LRF
 
 ---
 
 ## 🔗 Related Resources
 
-<<<<<<< .merge_file_uDNVnm
 - [Architecture Documentation](./ARCHITECTURE.md)
-=======
-<<<<<<< .merge_file_VS7Kkl
-- [Architecture Documentation](./ARCHITECTURE.md)
-=======
->>>>>>> .merge_file_NCOFfw
 - [Architecture Documentation](./architecture.md)
->>>>>>> .merge_file_Cg6LRF
 - [Contributing Guidelines](../CONTRIBUTING.md)
 - [Testing Strategy](../Modules/Xot/docs/testing/testing-strategy.md)
 - [Refactoring Reports](./FINAL_REFACTORING_REPORT.md)

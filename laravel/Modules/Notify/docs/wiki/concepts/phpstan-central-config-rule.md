@@ -2,21 +2,8 @@
 title: PHPStan Central Config Rule
 type: concept
 tags: [phpstan, quality, workflow, governance]
-<<<<<<< .merge_file_vuTRzW
-<<<<<<< .merge_file_zN4Y4d
 sources: [AGENTS.md]
-=======
-=======
-<<<<<<< .merge_file_TvZHYC
-sources: [AGENTS.md]
-=======
-<<<<<<< .merge_file_zN4Y4d
-sources: [AGENTS.md]
-=======
->>>>>>> .merge_file_OAMmvc
->>>>>>> .merge_file_fuiIfg
 sources: [agents.md]
->>>>>>> .merge_file_7TFOxZ
 created: 2026-04-16
 updated: 2026-04-16
 related: [llm-wiki-governance.md, ../project/qmd-local-docs-search.md]

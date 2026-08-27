@@ -52,15 +52,8 @@ Confronta con `https://laravelpizza.com` e trova le differenze da colmare.
 ### Regole Fondamentali
 
 - **MAI** creare file .md in posizioni sbagliate
-<<<<<<< .merge_file_3VVa5r
 - **MAI** usare maiuscole nei nomi .md (eccetto README.md e CHANGELOG.md)
-=======
-<<<<<<< .merge_file_ZUM6yY
-- **MAI** usare maiuscole nei nomi .md (eccetto README.md e CHANGELOG.md)
-=======
->>>>>>> .merge_file_CIARQP
 - **MAI** usare maiuscole nei nomi .md (eccetto README.md e changelog.md)
->>>>>>> .merge_file_ljW6UJ
 - **SEMPRE** usare PHPStan Level 10 dopo aver modificato un file
 - **SEMPRE** eseguire PHPMD e PHPInsights
 - **MAI** usare `property_exists()` su modelli Eloquent

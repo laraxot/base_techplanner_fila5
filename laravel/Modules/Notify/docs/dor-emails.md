@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_CARu1I
-=======
 ---
 title: "Email per i Dottori"
 module: notify
@@ -9,7 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
->>>>>>> .merge_file_eUcbA3
 # Email per i Dottori
 
 ## Introduzione
@@ -181,16 +178,7 @@ try {
 ## Collegamenti Correlati
 
 - [Documentazione Root](../../../../../docs/readme.md)
-<<<<<<< .merge_file_CARu1I
 - [Documentazione Modulo Notify](./readme.md)
 - [Documentazione Template Email](./email_templates.md)
 - [Guida all'utilizzo di SpatieEmail](./spatie_email_usage_guide.md)
-<<<<<<< .merge_file_B9NXag
-=======
-=======
-- [Documentazione Modulo Notify](./README.md)
-- [Documentazione Template Email](./email_templates.md)
-- [Guida all'utilizzo di SpatieEmail](./spatie-email-usage-guide.md)
->>>>>>> .merge_file_eUcbA3
->>>>>>> .merge_file_Bjbgio
 - [Documentazione Filament Resources](./filament-resources.md)

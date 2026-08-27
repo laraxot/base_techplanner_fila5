@@ -43,15 +43,8 @@ Ogni modulo gestisce le proprie dipendenze:
 
 ```json
 {
-<<<<<<< .merge_file_rsVmj0
     "name": "fixcity/module-name",
-=======
-<<<<<<< .merge_file_nRsp89
-    "name": "fixcity/module-name",
-=======
->>>>>>> .merge_file_KPgqKe
     "name": "ptv/module-name",
->>>>>>> .merge_file_dzuOgI
     "require": {
         "php": "^8.2",
         "filament/filament": "^5.0",
@@ -219,15 +212,8 @@ composer update
 
 ```json
 {
-<<<<<<< .merge_file_rsVmj0
     "name": "fixcity/cms-module",
-=======
-<<<<<<< .merge_file_nRsp89
-    "name": "fixcity/cms-module",
-=======
->>>>>>> .merge_file_KPgqKe
     "name": "ptv/cms-module",
->>>>>>> .merge_file_dzuOgI
     "require": {
         "php": "^8.2",
         "filament/filament": "^5.0",

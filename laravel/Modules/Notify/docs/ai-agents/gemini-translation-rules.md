@@ -58,31 +58,16 @@ namespace::context.collection.element.type
 ### Esempio
 
 ```blade
-<<<<<<< .merge_file_3ujDtR
 ✅ __('predict::home.hero.cta_learn.label')
 ❌ __('predict::fields.key')  // Missing type!
-=======
-<<<<<<< .merge_file_9ixblO
-✅ __('predict::home.hero.cta_learn.label')
-❌ __('predict::fields.key')  // Missing type!
-=======
->>>>>>> .merge_file_dunnap
 ✅ __('forecast::home.hero.cta_learn.label')
 ❌ __('forecast::fields.key')  // Missing type!
->>>>>>> .merge_file_gUkf9i
 ```
 
 ### Eccezione
 
-<<<<<<< .merge_file_3ujDtR
 `predict::messages.*` - valore diretto, NO `.label`
-=======
-<<<<<<< .merge_file_9ixblO
-`predict::messages.*` - valore diretto, NO `.label`
-=======
->>>>>>> .merge_file_dunnap
 `forecast::messages.*` - valore diretto, NO `.label`
->>>>>>> .merge_file_gUkf9i
 
 ---
 

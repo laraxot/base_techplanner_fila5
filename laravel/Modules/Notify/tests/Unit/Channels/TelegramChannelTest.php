@@ -3,18 +3,10 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Channels;
-<<<<<<< .merge_file_0nULCX
 use function Safe\file_get_contents;
 use Modules\Notify\Channels\TelegramChannel;
 
 use PHPUnit\Framework\Assert;
-=======
-
-use Modules\Notify\Channels\TelegramChannel;
-use Modules\Notify\Tests\TestCase;
-use PHPUnit\Framework\Assert;
-
->>>>>>> .merge_file_HYpfsP
 describe('TelegramChannel', function () {
     it('can be instantiated', function () {
         // TelegramChannel requires TelegramActionFactory in constructor
@@ -38,11 +30,7 @@ describe('TelegramChannel', function () {
 
     it('uses strict types', function () {
         $reflection = new \ReflectionClass(TelegramChannel::class);
-<<<<<<< .merge_file_0nULCX
-        $content = \notifyReflectionSource($reflection);
-=======
         $content = TestCase::notifyReflectionSource($reflection);
->>>>>>> .merge_file_HYpfsP
         Assert::assertStringContainsString('declare(strict_types=1)', $content);
     });
 

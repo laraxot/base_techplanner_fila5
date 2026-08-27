@@ -4,15 +4,8 @@ type: concept
 tags: [documentation, index]
 created: 2026-07-14
 updated: 2026-07-14
-<<<<<<< .merge_file_qO21ST
 qmd: "documentation-index 📚 indice generale documentazione - fixcity"
-=======
-<<<<<<< .merge_file_SMRDzd
-qmd: "documentation-index 📚 indice generale documentazione - fixcity"
-=======
->>>>>>> .merge_file_AedW9y
 qmd: "documentation-index 📚 indice generale documentazione - ptv"
->>>>>>> .merge_file_rhK0F8
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -51,15 +44,7 @@ related:
 
 ### Guide Rapide
 - [Quick Start](./quick-start.md) - Guida avvio rapido
-<<<<<<< .merge_file_SMRDzd
 - [Contributing](./contributing.md) - Come contribuire
-<<<<<<< .merge_file_qO21ST
-- [Contributing](./CONTRIBUTING.md) - Come contribuire
-=======
-=======
-- [Contributing](./CONTRIBUTING.md) - Come contribuire
->>>>>>> .merge_file_rhK0F8
->>>>>>> .merge_file_AedW9y
 - [Troubleshooting](./troubleshooting/README.md) - Risoluzione problemi
 
 ---
@@ -303,15 +288,7 @@ related:
 ## 🤝 Contributing
 
 ### Contribution Guidelines
-<<<<<<< .merge_file_SMRDzd
 - [How to Contribute](./contributing.md) - Come contribuire
-<<<<<<< .merge_file_qO21ST
-- [How to Contribute](./CONTRIBUTING.md) - Come contribuire
-=======
-=======
-- [How to Contribute](./CONTRIBUTING.md) - Come contribuire
->>>>>>> .merge_file_rhK0F8
->>>>>>> .merge_file_AedW9y
 - [Code of Conduct](./CODE_OF_CONDUCT.md) - Codice condotta
 - [Pull Request Template](./.github/pull_request_template.md) - Template PR
 
@@ -320,18 +297,10 @@ related:
 ## 📞 Support & Community
 
 ### Support Channels
-<<<<<<< .merge_file_qO21ST
 - **📧 Email**: support@fixcity.com
 - **🐛 Issues**: [GitHub Issues](https://github.com/laraxot/fixcity/issues)
-=======
-<<<<<<< .merge_file_SMRDzd
-- **📧 Email**: support@fixcity.com
-- **🐛 Issues**: [GitHub Issues](https://github.com/laraxot/fixcity/issues)
-=======
->>>>>>> .merge_file_AedW9y
 - **📧 Email**: support@ptv.com
 - **🐛 Issues**: [GitHub Issues](https://github.com/laraxot/ptv/issues)
->>>>>>> .merge_file_rhK0F8
 - **💬 Discord**: [Laraxot Community](https://discord.gg/laraxot)
 - **📚 Docs**: [Documentation Portal](https://docs.laraxot.com)
 

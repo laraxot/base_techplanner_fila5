@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Actions\SMS;
-<<<<<<< .merge_file_tfyqa4
 use Modules\Notify\Tests\TestCase;
 use function Safe\file_get_contents;
 use Modules\Notify\Actions\SMS\SendSmsFactorSMSAction;
@@ -14,19 +13,6 @@ use PHPUnit\Framework\Assert;
 use function Safe\class_uses;
 
 uses(\Modules\Notify\Tests\TestCase::class);
-=======
-
-use Modules\Notify\Actions\SMS\SendSmsFactorSMSAction;
-use Modules\Notify\Contracts\SMS\SmsActionContract;
-use Modules\Notify\Datas\SmsData;
-use Modules\Notify\Tests\TestCase;
-use Modules\Xot\Tests\XotBasePest;
-use PHPUnit\Framework\Assert;
-
-use function Safe\class_uses;
-
-uses(TestCase::class)->group('no-notify-db');
->>>>>>> .merge_file_QtWOm2
 
 describe('SendSmsFactorSMSAction', function () {
     it('can be referenced via ReflectionClass without instantiation', function () {
@@ -54,11 +40,7 @@ describe('SendSmsFactorSMSAction', function () {
         $method = $reflection->getMethod('execute');
         $params = $method->getParameters();
 
-<<<<<<< .merge_file_tfyqa4
-        \assertReflectionTypeName($params[0]->getType(), SmsData::class);
-=======
         XotBasePest::assertReflectionTypeName($params[0]->getType(), SmsData::class);
->>>>>>> .merge_file_QtWOm2
     });
 
     it('execute returns array', function () {
@@ -66,20 +48,12 @@ describe('SendSmsFactorSMSAction', function () {
         $method = $reflection->getMethod('execute');
         $returnType = $method->getReturnType();
 
-<<<<<<< .merge_file_tfyqa4
-        \assertReflectionTypeName($returnType, 'array');
-=======
         XotBasePest::assertReflectionTypeName($returnType, 'array');
->>>>>>> .merge_file_QtWOm2
     });
 
     it('uses strict types', function () {
         $reflection = new \ReflectionClass(SendSmsFactorSMSAction::class);
-<<<<<<< .merge_file_tfyqa4
-        $content = \notifyReflectionSource($reflection);
-=======
         $content = TestCase::notifyReflectionSource($reflection);
->>>>>>> .merge_file_QtWOm2
         Assert::assertStringContainsString('declare(strict_types=1)', (string) $content);
     });
 
@@ -93,11 +67,7 @@ describe('SendSmsFactorSMSAction', function () {
         $reflection = new \ReflectionClass(SendSmsFactorSMSAction::class);
         $filename = $reflection->getFileName();
         Assert::assertNotFalse($filename);
-<<<<<<< .merge_file_tfyqa4
-        $content = \notifyReflectionSource(new \ReflectionClass(SendSmsFactorSMSAction::class));
-=======
         $content = TestCase::notifyReflectionSource(new \ReflectionClass(SendSmsFactorSMSAction::class));
->>>>>>> .merge_file_QtWOm2
         Assert::assertStringContainsString('declare(strict_types=1)', (string) $content);
     });
 

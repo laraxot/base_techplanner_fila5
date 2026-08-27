@@ -7,18 +7,10 @@ updated: 2026-07-14
 qmd: "2026-04-15-llm-wiki-layout-design deprecated"
 status: deprecated
 related:
-<<<<<<< .merge_file_ca7AgE
   - "./fixcity-hero-marketing-1.md"
   - "./fixcity-hero-marketing.md"
-=======
-<<<<<<< .merge_file_qtvHFl
-  - "./fixcity-hero-marketing-1.md"
-  - "./fixcity-hero-marketing.md"
-=======
->>>>>>> .merge_file_bt0jIv
   - "./ptv-hero-marketing-1.md"
   - "./ptv-hero-marketing.md"
->>>>>>> .merge_file_6rOnR9
   - "./llm-wiki-layout-design-1.md"
   - "./segnalazione-wizard-design.md"
 ---

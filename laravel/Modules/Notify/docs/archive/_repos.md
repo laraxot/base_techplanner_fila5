@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_I5hvj7
-=======
 ---
 title: "repos"
 module: notify
@@ -9,7 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
->>>>>>> .merge_file_B0funn
 -------------------------------------------------------------
 Add Simple Facet Filtering in Your Laravel Applications
 https://codebrisk.com/blog/add-simple-facet-filtering-in-your-laravel-applications

@@ -69,48 +69,25 @@ public function getDataSchema(): array
 {
     return [
         // Sezione LUOGO
-<<<<<<< .merge_file_OTaqg7
         Section::make(__('fixcity::segnalazione.sections.place.label'))
             ->description(__('fixcity::segnalazione.sections.place.description'))
-=======
-<<<<<<< .merge_file_t68rua
-        Section::make(__('fixcity::segnalazione.sections.place.label'))
-            ->description(__('fixcity::segnalazione.sections.place.description'))
-=======
->>>>>>> .merge_file_Xuqu5b
         Section::make(__('ptv::segnalazione.sections.place.label'))
             ->description(__('ptv::segnalazione.sections.place.description'))
->>>>>>> .merge_file_Zl0QBR
             ->aside()       // Sidebar heading style
             ->compact()     // Compact card style
             ->schema([...]),
 
         // Sezione DISSERVIZIO
-<<<<<<< .merge_file_OTaqg7
         Section::make(__('fixcity::segnalazione.sections.inefficiency.label'))
-=======
-<<<<<<< .merge_file_t68rua
-        Section::make(__('fixcity::segnalazione.sections.inefficiency.label'))
-=======
->>>>>>> .merge_file_Xuqu5b
         Section::make(__('ptv::segnalazione.sections.inefficiency.label'))
->>>>>>> .merge_file_Zl0QBR
             ->compact()
             ->schema([...]),
 
         // Sezione AUTORE
-<<<<<<< .merge_file_OTaqg7
         Section::make(__('fixcity::segnalazione.sections.author.label'))
             ->description(__('fixcity::segnalazione.sections.author.description'))
-=======
-<<<<<<< .merge_file_t68rua
-        Section::make(__('fixcity::segnalazione.sections.author.label'))
-            ->description(__('fixcity::segnalazione.sections.author.description'))
-=======
->>>>>>> .merge_file_Xuqu5b
         Section::make(__('ptv::segnalazione.sections.author.label'))
             ->description(__('ptv::segnalazione.sections.author.description'))
->>>>>>> .merge_file_Zl0QBR
             ->aside()
             ->compact()
             ->schema([...]),

@@ -125,15 +125,8 @@ laravel/Themes/Sixteen/docs/pages/<page-name>/
 ### Theme-Level
 ```
 laravel/Themes/Sixteen/docs/
-<<<<<<< .merge_file_BKC23S
 ├── INDEX.md                                    # Main index
-=======
-<<<<<<< .merge_file_0vQEjt
-├── INDEX.md                                    # Main index
-=======
->>>>>>> .merge_file_R7xbUr
 ├── index.md                                    # Main index
->>>>>>> .merge_file_Z5EknB
 ├── COMPLETE-VISUAL-PARITY-REPORT.md          # All 54 pages
 ├── PRIORITY-MATRIX.json                       # Workload planning
 ├── visual-parity-data.json                    # Machine-readable data
@@ -145,15 +138,8 @@ laravel/Themes/Sixteen/docs/
 ### Bash Scripts
 ```
 bashscripts/docs/
-<<<<<<< .merge_file_BKC23S
 ├── INDEX.md                    # Tools overview
-=======
-<<<<<<< .merge_file_0vQEjt
-├── INDEX.md                    # Tools overview
-=======
->>>>>>> .merge_file_R7xbUr
 ├── index.md                    # Tools overview
->>>>>>> .merge_file_Z5EknB
 └── github-issues-batch.md      # GitHub CLI guide
 ```
 
@@ -196,24 +182,10 @@ cat laravel/Themes/Sixteen/docs/visual-parity-data.json
 node bashscripts/github/create-design-issues.mjs
 
 # View issues
-<<<<<<< .merge_file_BKC23S
 gh issue list --repo laraxot/base_fixcity_fila5 --label "design-comuni"
 
 # Filter by priority
 gh issue list --repo laraxot/base_fixcity_fila5 --label "priority:critical"
-=======
-<<<<<<< .merge_file_0vQEjt
-gh issue list --repo laraxot/base_fixcity_fila5 --label "design-comuni"
-
-# Filter by priority
-gh issue list --repo laraxot/base_fixcity_fila5 --label "priority:critical"
-=======
-gh issue list --repo laraxot/base_ptvx_fila5 --label "design-comuni"
-
-# Filter by priority
-gh issue list --repo laraxot/base_ptvx_fila5 --label "priority:critical"
->>>>>>> .merge_file_Z5EknB
->>>>>>> .merge_file_R7xbUr
 ```
 
 ---
@@ -274,15 +246,8 @@ npm run copy     # ~1 second
 ### Today (Start Phase 1)
 ```bash
 # 1. Review the analysis
-<<<<<<< .merge_file_BKC23S
 cd /var/www/_bases/base_fixcity_fila5
-=======
-<<<<<<< .merge_file_0vQEjt
-cd /var/www/_bases/base_fixcity_fila5
-=======
->>>>>>> .merge_file_R7xbUr
 cd /var/www/_bases/base_ptvx_fila5
->>>>>>> .merge_file_Z5EknB
 cat laravel/Themes/Sixteen/docs/COMPLETE-VISUAL-PARITY-REPORT.md
 
 # 2. Create GitHub issues
@@ -364,32 +329,17 @@ cat laravel/Themes/Sixteen/docs/visual-parity-data.json
 - **Design Comuni**: https://italia.github.io/design-comuni-pagine-statiche/
 - **Tailwind CSS**: https://tailwindcss.com/
 - **Alpine.js**: https://alpinejs.dev/
-<<<<<<< .merge_file_BKC23S
 - **Internal Docs**: `laravel/Themes/Sixteen/docs/INDEX.md`
 - **Tools Guide**: `bashscripts/docs/INDEX.md`
-=======
-<<<<<<< .merge_file_0vQEjt
-- **Internal Docs**: `laravel/Themes/Sixteen/docs/INDEX.md`
-- **Tools Guide**: `bashscripts/docs/INDEX.md`
-=======
->>>>>>> .merge_file_R7xbUr
 - **Internal Docs**: `laravel/Themes/Sixteen/docs/index.md`
 - **Tools Guide**: `bashscripts/docs/index.md`
->>>>>>> .merge_file_Z5EknB
 
 ---
 
 **Ready to start? Run this now:**
 ```bash
-<<<<<<< .merge_file_BKC23S
 cd /var/www/_bases/base_fixcity_fila5
-=======
-<<<<<<< .merge_file_0vQEjt
-cd /var/www/_bases/base_fixcity_fila5
-=======
->>>>>>> .merge_file_R7xbUr
 cd /var/www/_bases/base_ptvx_fila5
->>>>>>> .merge_file_Z5EknB
 node bashscripts/github/create-design-issues.mjs
 ```
 

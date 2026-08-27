@@ -22,21 +22,8 @@ related:
 
 ## Panoramica delle Modifiche
 
-<<<<<<< .merge_file_29yXQL
-<<<<<<< .merge_file_pawPKF
 Il modello `MailTemplate` (`/var/www/html/saluteora/laravel/Modules/Notify/app/Models/MailTemplate.php`) è stato aggiornato per supportare l'identificazione dei template tramite slug. Questa implementazione segue le migliori pratiche di Laravel e migliora l'usabilità del sistema di template email.
-=======
-=======
-<<<<<<< .merge_file_TEfpF6
-Il modello `MailTemplate` (`/var/www/html/saluteora/laravel/Modules/Notify/app/Models/MailTemplate.php`) è stato aggiornato per supportare l'identificazione dei template tramite slug. Questa implementazione segue le migliori pratiche di Laravel e migliora l'usabilità del sistema di template email.
-=======
-<<<<<<< .merge_file_pawPKF
-Il modello `MailTemplate` (`/var/www/html/saluteora/laravel/Modules/Notify/app/Models/MailTemplate.php`) è stato aggiornato per supportare l'identificazione dei template tramite slug. Questa implementazione segue le migliori pratiche di Laravel e migliora l'usabilità del sistema di template email.
-=======
->>>>>>> .merge_file_2CdRaD
->>>>>>> .merge_file_TdIqBk
 Il modello `MailTemplate` (`[project-root]/laravel/Modules/Notify/app/Models/MailTemplate.php`) è stato aggiornato per supportare l'identificazione dei template tramite slug. Questa implementazione segue le migliori pratiche di Laravel e migliora l'usabilità del sistema di template email.
->>>>>>> .merge_file_kIr9yZ
 
 ## Modifiche Effettuate
 

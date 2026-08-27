@@ -37,15 +37,8 @@ Themes/TwentyOne/Http/Livewire/
 Themes/Sixteen/Http/Livewire/
 
 ✅ CORRECT
-<<<<<<< .merge_file_Om8m95
 Modules/Predict/app/Filament/Widgets/
-=======
-<<<<<<< .merge_file_GwcBF1
-Modules/Predict/app/Filament/Widgets/
-=======
->>>>>>> .merge_file_JX9Ijy
 Modules/Forecast/app/Filament/Widgets/
->>>>>>> .merge_file_iUcyM6
 Modules/UI/app/Filament/Widgets/
 ```
 
@@ -72,15 +65,8 @@ docs/                          # Only CROSS-MODULE documents
   ├── ARCHITECTURE_ZEN.md
   └── MULTI_AGENT_COORDINATION.md
 
-<<<<<<< .merge_file_Om8m95
 Modules/Predict/docs/          # Predict-specific docs
-=======
-<<<<<<< .merge_file_GwcBF1
-Modules/Predict/docs/          # Predict-specific docs
-=======
->>>>>>> .merge_file_JX9Ijy
 Modules/Forecast/docs/          # Forecast-specific docs
->>>>>>> .merge_file_iUcyM6
   ├── PHILOSOPHY.md
   ├── WIDGETS.md
   └── SEEDERS.md
@@ -104,21 +90,6 @@ Themes/TwentyOne/docs/         # Theme-specific docs
 
 ```blade
 ❌ WRONG
-<<<<<<< .merge_file_GwcBF1
-@foreach($predicts as $predict)
-    <div class="card">{{ $predict->title }}</div>
-@endforeach
-
-✅ CORRECT
-<x-page side="content" slug="predicts.index" />
-
-// JSON: predicts.index.json
-{
-  "type": "widget",
-  "data": {
-    "view": "pub_theme::filament.widgets.predict-table",
-    "widget": "Modules\\Predict\\Filament\\Widgets\\PredictTableWidget"
-=======
 @foreach($forecasts as $forecast)
     <div class="card">{{ $forecast->title }}</div>
 @endforeach
@@ -132,7 +103,6 @@ Themes/TwentyOne/docs/         # Theme-specific docs
   "data": {
     "view": "pub_theme::filament.widgets.forecast-table",
     "widget": "Modules\\Forecast\\Filament\\Widgets\\ForecastTableWidget"
->>>>>>> .merge_file_iUcyM6
   }
 }
 ```
@@ -151,41 +121,19 @@ Themes/TwentyOne/docs/         # Theme-specific docs
 ```blade
 ❌ WRONG
 @php
-<<<<<<< .merge_file_Om8m95
     $probability = $predict->transactions()->sum('amount');
     $participants = $predict->transactions()->distinct('user_id')->count();
-=======
-<<<<<<< .merge_file_GwcBF1
-    $probability = $predict->transactions()->sum('amount');
-    $participants = $predict->transactions()->distinct('user_id')->count();
-=======
->>>>>>> .merge_file_JX9Ijy
     $probability = $forecast->transactions()->sum('amount');
     $participants = $forecast->transactions()->distinct('user_id')->count();
->>>>>>> .merge_file_iUcyM6
 @endphp
 
 ✅ CORRECT
 // Action class
-<<<<<<< .merge_file_Om8m95
-=======
-<<<<<<< .merge_file_GwcBF1
->>>>>>> .merge_file_JX9Ijy
-class CalculatePredictStatsAction {
-    public function execute(Predict $predict): array {
-        return [
-            'probability' => $predict->transactions()->sum('amount'),
-            'participants' => $predict->transactions()->distinct('user_id')->count(),
-<<<<<<< .merge_file_Om8m95
-=======
-=======
->>>>>>> .merge_file_JX9Ijy
 class CalculateForecastStatsAction {
     public function execute(Forecast $forecast): array {
         return [
             'probability' => $forecast->transactions()->sum('amount'),
             'participants' => $forecast->transactions()->distinct('user_id')->count(),
->>>>>>> .merge_file_iUcyM6
         ];
     }
 }
@@ -230,25 +178,11 @@ class CalculateForecastStatsAction {
 > **"One widget for all themes"**
 
 ```
-<<<<<<< .merge_file_Om8m95
-=======
-<<<<<<< .merge_file_GwcBF1
->>>>>>> .merge_file_JX9Ijy
-Modules/Predict/app/Filament/Widgets/PredictTableWidget.php
-    ↓
-pub_theme::filament.widgets.predict-table (view namespace)
-    ↓
-Themes/TwentyOne/resources/views/filament/widgets/predict-table.blade.php
-<<<<<<< .merge_file_Om8m95
-=======
-=======
->>>>>>> .merge_file_JX9Ijy
 Modules/Forecast/app/Filament/Widgets/ForecastTableWidget.php
     ↓
 pub_theme::filament.widgets.forecast-table (view namespace)
     ↓
 Themes/TwentyOne/resources/views/filament/widgets/forecast-table.blade.php
->>>>>>> .merge_file_iUcyM6
 ```
 
 **Benefits**:
@@ -264,28 +198,14 @@ Themes/TwentyOne/resources/views/filament/widgets/forecast-table.blade.php
 > **"Documentation close to code = Treasure found"**
 
 ```
-<<<<<<< .merge_file_Om8m95
 Modules/Predict/
-=======
-<<<<<<< .merge_file_GwcBF1
-Modules/Predict/
-=======
->>>>>>> .merge_file_JX9Ijy
 Modules/Forecast/
->>>>>>> .merge_file_iUcyM6
 ├── app/
 │   ├── Models/
 │   ├── Filament/
 │   └── Actions/
-<<<<<<< .merge_file_Om8m95
 ├── docs/              ← Treasure map of Predict
-=======
-<<<<<<< .merge_file_GwcBF1
-├── docs/              ← Treasure map of Predict
-=======
->>>>>>> .merge_file_JX9Ijy
 ├── docs/              ← Treasure map of Forecast
->>>>>>> .merge_file_iUcyM6
 │   ├── PHILOSOPHY.md
 │   ├── WIDGETS.md
 │   └── SEEDERS.md
@@ -310,15 +230,8 @@ Themes/TwentyOne/Http/Livewire/
 
 **✅ CORRECT**:
 ```
-<<<<<<< .merge_file_Om8m95
 Modules/Predict/app/Filament/Widgets/
-=======
-<<<<<<< .merge_file_GwcBF1
-Modules/Predict/app/Filament/Widgets/
-=======
->>>>>>> .merge_file_JX9Ijy
 Modules/Forecast/app/Filament/Widgets/
->>>>>>> .merge_file_iUcyM6
 ```
 
 ---
@@ -335,15 +248,8 @@ laravel/docs/
 docs/
   └── ARCHITECTURE_ZEN.md
 
-<<<<<<< .merge_file_Om8m95
 Modules/Predict/docs/
-=======
-<<<<<<< .merge_file_GwcBF1
-Modules/Predict/docs/
-=======
->>>>>>> .merge_file_JX9Ijy
 Modules/Forecast/docs/
->>>>>>> .merge_file_iUcyM6
   └── WIDGETS.md
 ```
 
@@ -352,45 +258,23 @@ Modules/Forecast/docs/
 ### 3. ❌ Foreach in blade
 
 ```blade
-<<<<<<< .merge_file_Om8m95
 @foreach($predicts as $predict)
     <x-predict.card :predict="$predict"/>
-=======
-<<<<<<< .merge_file_GwcBF1
-@foreach($predicts as $predict)
-    <x-predict.card :predict="$predict"/>
-=======
->>>>>>> .merge_file_JX9Ijy
 @foreach($forecasts as $forecast)
     <x-forecast.card :forecast="$forecast"/>
->>>>>>> .merge_file_iUcyM6
 @endforeach
 ```
 
 **✅ CORRECT**:
 ```blade
-<<<<<<< .merge_file_Om8m95
 <x-page side="content" slug="predicts.index" />
-=======
-<<<<<<< .merge_file_GwcBF1
-<x-page side="content" slug="predicts.index" />
-=======
->>>>>>> .merge_file_JX9Ijy
 <x-page side="content" slug="forecasts.index" />
->>>>>>> .merge_file_iUcyM6
 
 // JSON
 {
   "type": "widget",
-<<<<<<< .merge_file_Om8m95
   "widget": "Modules\\Predict\\Filament\\Widgets\\PredictTableWidget"
-=======
-<<<<<<< .merge_file_GwcBF1
-  "widget": "Modules\\Predict\\Filament\\Widgets\\PredictTableWidget"
-=======
->>>>>>> .merge_file_JX9Ijy
   "widget": "Modules\\Forecast\\Filament\\Widgets\\ForecastTableWidget"
->>>>>>> .merge_file_iUcyM6
 }
 ```
 
@@ -400,15 +284,8 @@ Modules/Forecast/docs/
 
 ```blade
 @php
-<<<<<<< .merge_file_Om8m95
     $volume = $predict->transactions()->sum('amount');
-=======
-<<<<<<< .merge_file_GwcBF1
-    $volume = $predict->transactions()->sum('amount');
-=======
->>>>>>> .merge_file_JX9Ijy
     $volume = $forecast->transactions()->sum('amount');
->>>>>>> .merge_file_iUcyM6
 @endphp
 ```
 
@@ -416,18 +293,10 @@ Modules/Forecast/docs/
 ```php
 // Action
 class CalculateVolumeAction {
-<<<<<<< .merge_file_Om8m95
     public function execute(Predict $predict) {
         return $predict->transactions()->sum('amount');
-=======
-<<<<<<< .merge_file_GwcBF1
-    public function execute(Predict $predict) {
-        return $predict->transactions()->sum('amount');
-=======
->>>>>>> .merge_file_JX9Ijy
     public function execute(Forecast $forecast) {
         return $forecast->transactions()->sum('amount');
->>>>>>> .merge_file_iUcyM6
     }
 }
 
@@ -473,9 +342,6 @@ Before committing:
 **Last Updated**: 2026-03-20  
 **Status**: ✅ Mandatory  
 **Enforcement**: PHPStan + Code Review + Pre-commit Hook
-<<<<<<< .merge_file_GwcBF1
-=======
-
 ---
 
 <!-- Merged from 03-ARCHITECTURE-ZEN.md, which collided with this file on case-insensitive filesystems. -->
@@ -789,4 +655,3 @@ Before committing:
 **Last Updated**: 2026-03-20  
 **Status**: ✅ Mandatory  
 **Enforcement**: PHPStan + Code Review + Pre-commit Hook
->>>>>>> .merge_file_iUcyM6

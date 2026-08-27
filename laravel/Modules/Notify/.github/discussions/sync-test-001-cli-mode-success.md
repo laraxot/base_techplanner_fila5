@@ -28,15 +28,8 @@ body:
         ℹ️ [2026-03-13 13:58:45] Configurazione avanzata git...
         ✅ [2026-03-13 13:58:45] Configurazione git completata con successo
         ℹ️ [2026-03-13 13:58:45] CI environment detected, skipping backup
-<<<<<<< .merge_file_3sTKX9
         ✅ Found gitmodules.ini at: /var/www/_bases/base_fixcity_fila5/gitmodules.ini
-=======
-<<<<<<< .merge_file_VvkVzH
-        ✅ Found gitmodules.ini at: /var/www/_bases/base_fixcity_fila5/gitmodules.ini
-=======
->>>>>>> .merge_file_zviUcJ
         ✅ Found gitmodules.ini at: /var/www/_bases/base_ptv_fila5/gitmodules.ini
->>>>>>> .merge_file_BG8Jnx
         🔄 Inizio sincronizzazione di 1 submodules...
         ---------------------------------------------------
         📦 Submodule 0: laravel/Modules/Seo

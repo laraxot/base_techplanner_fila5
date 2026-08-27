@@ -7,23 +7,17 @@ namespace Modules\Notify\Tests\Feature;
 use Modules\Notify\Database\Factories\NotificationTypeFactory;
 use Modules\Notify\Models\NotificationType;
 use Modules\Notify\Tests\TestCase;
-<<<<<<< .merge_file_2LCnQT
-=======
 use PHPUnit\Framework\Assert;
-<<<<<<< .merge_file_uGsX8K
 
 use function Safe\json_encode;
 
 uses(\Modules\Notify\Tests\TestCase::class);
-=======
->>>>>>> .merge_file_WDesef
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
 
 uses(TestCase::class)->group('notify-db');
->>>>>>> .merge_file_Rbs8my
 
 describe('Notification Type Business Logic', function () {
     it('can create notification type with basic information', function () {
@@ -43,11 +37,7 @@ describe('Notification Type Business Logic', function () {
         Assert::assertSame('healthcare', $type->category);
         Assert::assertTrue($type->is_active);
 
-<<<<<<< .merge_file_uGsX8K
-        \assertNotifyTableHas('notification_types', [
-=======
         XotBasePest::assertTableHas('notify', 'notification_types', [
->>>>>>> .merge_file_Rbs8my
             'id' => $type->id,
             'name' => 'Appointment Reminder',
             'slug' => 'appointment-reminder',
@@ -76,28 +66,16 @@ describe('Notification Type Business Logic', function () {
 
         $type->update(['channels' => $channels]);
 
-<<<<<<< .merge_file_uGsX8K
-        \assertNotifyTableHas('notification_types', [
-=======
         XotBasePest::assertTableHas('notify', 'notification_types', [
->>>>>>> .merge_file_Rbs8my
             'id' => $type->id,
             'channels' => json_encode($channels),
         ]);
 
-<<<<<<< .merge_file_uGsX8K
-        $fresh = \assertFreshModel($type, NotificationType::class);
-        $storedChannels = \assertNotifyArray($fresh->channels);
-        $emailChannel = \assertNotifyArray($storedChannels['email'] ?? null);
-        $smsChannel = \assertNotifyArray($storedChannels['sms'] ?? null);
-        $pushChannel = \assertNotifyArray($storedChannels['push'] ?? null);
-=======
         $fresh = XotBasePest::assertFreshModel($type, NotificationType::class);
         $storedChannels = XotBasePest::assertArray($fresh->channels);
         $emailChannel = XotBasePest::assertArray($storedChannels['email'] ?? null);
         $smsChannel = XotBasePest::assertArray($storedChannels['sms'] ?? null);
         $pushChannel = XotBasePest::assertArray($storedChannels['push'] ?? null);
->>>>>>> .merge_file_Rbs8my
 
         Assert::assertTrue($emailChannel['enabled']);
         Assert::assertSame('high', $emailChannel['priority']);
@@ -118,20 +96,12 @@ describe('Notification Type Business Logic', function () {
 
         $type->update(['settings' => $settings]);
 
-<<<<<<< .merge_file_uGsX8K
-        \assertNotifyTableHas('notification_types', [
-=======
         XotBasePest::assertTableHas('notify', 'notification_types', [
->>>>>>> .merge_file_Rbs8my
             'id' => $type->id,
             'settings' => json_encode($settings),
         ]);
 
-<<<<<<< .merge_file_uGsX8K
-        $storedSettings = \assertNotifyArray(\notifyFreshTypeSettings($type));
-=======
         $storedSettings = XotBasePest::assertArray(TestCase::notifyFreshTypeSettings($type));
->>>>>>> .merge_file_Rbs8my
 
         Assert::assertSame(3, $storedSettings['retry_attempts']);
         Assert::assertSame(300, $storedSettings['retry_delay']);
@@ -146,20 +116,12 @@ describe('Notification Type Business Logic', function () {
 
         $type->update(['template' => $template]);
 
-<<<<<<< .merge_file_uGsX8K
-        \assertNotifyTableHas('notification_types', [
-=======
         XotBasePest::assertTableHas('notify', 'notification_types', [
->>>>>>> .merge_file_Rbs8my
             'id' => $type->id,
             'template' => $template,
         ]);
 
-<<<<<<< .merge_file_uGsX8K
-        Assert::assertSame($template, \assertFreshModel($type, NotificationType::class)->template);
-=======
         Assert::assertSame($template, XotBasePest::assertFreshModel($type, NotificationType::class)->template);
->>>>>>> .merge_file_Rbs8my
     });
 
     it('can search notification types by category and status', function () {
@@ -186,11 +148,7 @@ describe('Notification Type Business Logic', function () {
         $duplicateType->slug = 'duplicate-type';
         $duplicateType->save();
 
-<<<<<<< .merge_file_uGsX8K
-        \assertNotifyTableHas('notification_types', [
-=======
         XotBasePest::assertTableHas('notify', 'notification_types', [
->>>>>>> .merge_file_Rbs8my
             'id' => $duplicateType->id,
             'name' => 'Duplicate Type',
             'slug' => 'duplicate-type',

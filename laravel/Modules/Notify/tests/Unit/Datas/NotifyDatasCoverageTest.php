@@ -16,16 +16,8 @@ use Modules\Notify\Datas\SmsMessageData;
 use Modules\Notify\Datas\TelegramData;
 use Modules\Notify\Datas\WhatsAppData;
 use Modules\Notify\Tests\TestCase;
-<<<<<<< .merge_file_WKcPHB
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
-=======
-use PHPUnit\Framework\Assert;
-<<<<<<< .merge_file_YXeKVY
-=======
-use Modules\Xot\Tests\XotBasePest;
->>>>>>> .merge_file_FgVaON
->>>>>>> .merge_file_bxldtN
 
 uses(TestCase::class);
 
@@ -46,17 +38,10 @@ test('netfun sms request and response data can be created from arrays', function
     ]);
 
     Assert::assertSame('abc-token', $request->token);
-<<<<<<< .merge_file_YXeKVY
-    Assert::assertCount(1, \assertNotifyArray($request->messages));
-    Assert::assertSame('ok', $response->status);
-    Assert::assertSame('batch-1', $response->batchId);
-    Assert::assertCount(1, \assertNotifyArray($response->messages));
-=======
     Assert::assertCount(1, XotBasePest::assertArray($request->messages));
     Assert::assertSame('ok', $response->status);
     Assert::assertSame('batch-1', $response->batchId);
     Assert::assertCount(1, XotBasePest::assertArray($response->messages));
->>>>>>> .merge_file_FgVaON
 });
 
 test('netfun sms message-style data objects keep values', function () {
@@ -129,13 +114,5 @@ test('firebase notification data fromType fills type and translations structure'
     Assert::assertSame('ticket_created', $data->type);
     Assert::assertNotSame('', $data->title);
     Assert::assertNotSame('', $data->body);
-<<<<<<< .merge_file_WKcPHB
     Assert::assertNotEmpty($data->data);
-=======
-<<<<<<< .merge_file_YXeKVY
-    Assert::assertNotEmpty($data->data);
-=======
-    Assert::assertSame([], $data->data);
->>>>>>> .merge_file_FgVaON
->>>>>>> .merge_file_bxldtN
 });

@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< .merge_file_fupsz6
     'navigation' => [
         'label' => 'Invio Email (AWS]',
         'group' => 'Notifiche',
@@ -57,17 +56,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-=======
-    'navigation' => ['label' => 'Invio Email (AWS]', 'group' => 'Notifiche', 'icon' => 'heroicon-o-envelope', 'color' => 'primary', 'sort' => 10],
-    'model' => ['label' => 'Email AWS', 'plural' => 'Email AWS', 'description' => 'Gestione invio email tramite servizio Amazon SES'],
-    'fields' => [
-        'to' => ['label' => 'Destinatario Email', 'placeholder' => 'Inserisci indirizzo email destinatario', 'help' => 'Indirizzo email del destinatario principale del messaggio', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
-        'subject' => ['label' => 'Oggetto Email', 'placeholder' => 'Inserisci l\'oggetto del messaggio', 'help' => 'Testo che apparirà come oggetto dell\'email ricevuta', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
-        'body_html' => ['label' => 'Corpo HTML', 'placeholder' => 'Inserisci il contenuto HTML dell\'email', 'help' => 'Contenuto formattato in HTML per email con layout avanzato', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
-        'template' => ['label' => 'Template Email', 'placeholder' => 'Seleziona un template predefinito', 'help' => 'Template predefinito da utilizzare per la formattazione dell\'email', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
-        'add_attachments' => ['label' => 'Allegati Email', 'placeholder' => 'Carica file da allegare al messaggio', 'help' => 'File allegati che verranno inviati insieme all\'email', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
-        'recipient' => ['label' => 'recipient', 'placeholder' => 'recipient', 'helper_text' => 'recipient', 'description' => 'recipient'],
->>>>>>> .merge_file_T8wtEW
     ],
     'actions' => [
         'send_email' => ['label' => 'Invia Email', 'icon' => 'heroicon-o-paper-airplane', 'color' => 'success', 'modal_heading' => 'Conferma invio email', 'modal_description' => 'Sei sicuro di voler inviare questa email?', 'success' => 'Email inviata con successo tramite AWS SES', 'error' => 'Errore durante l\'invio dell\'email', 'confirmation' => 'L\'email verrà inviata immediatamente'],
@@ -75,10 +63,7 @@ return [
         'sendEmail' => ['label' => 'sendEmail', 'icon' => 'sendEmail', 'tooltip' => 'sendEmail'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
     ],
-<<<<<<< .merge_file_fupsz6
-=======
     'messages' => ['loading' => 'Preparazione email in corso...', 'sent' => 'Email inviata correttamente', 'queue' => 'Email aggiunta alla coda di invio', 'failed' => 'Invio email fallito'],
->>>>>>> .merge_file_T8wtEW
     'label' => 'Send Aws Email',
     'plural_label' => 'Send Aws Email (Plurale)',
 ];

@@ -23,18 +23,10 @@ related:
 
 1. **Open Obsidian**
 2. Click **"Open folder as vault"**
-<<<<<<< .merge_file_h8XYkJ
 3. Select: `/var/www/_bases/base_fixcity_fila5/docs`
 4. Vault name: `base_fixcity_fila5-docs`
-=======
-<<<<<<< .merge_file_5PO2YW
-3. Select: `/var/www/_bases/base_fixcity_fila5/docs`
-4. Vault name: `base_fixcity_fila5-docs`
-=======
->>>>>>> .merge_file_aYv5js
 3. Select: `/var/www/_bases/base_ptvx_fila5/docs`
 4. Vault name: `base_ptvx_fila5-docs`
->>>>>>> .merge_file_jxML9h
 5. Click **"Open"**
 
 ## Configuration
@@ -88,15 +80,8 @@ Install browser extension to capture web articles:
 2. **Firefox**: [Obsidian Web Clipper](https://addons.mozilla.org/en-US/firefox/addon/obsidian-web-clipper/)
 
 **Configuration**:
-<<<<<<< .merge_file_h8XYkJ
 - Clip destination: `/var/www/_bases/base_fixcity_fila5/docs/raw/articles/`
-=======
-<<<<<<< .merge_file_5PO2YW
-- Clip destination: `/var/www/_bases/base_fixcity_fila5/docs/raw/articles/`
-=======
->>>>>>> .merge_file_aYv5js
 - Clip destination: `/var/www/_bases/base_ptvx_fila5/docs/raw/articles/`
->>>>>>> .merge_file_jxML9h
 - Format: Markdown with YAML frontmatter
 - Tags: Auto-extract from article metadata
 
@@ -145,15 +130,8 @@ LLM scans for issues and reports findings.
 ## Graph View Tips
 
 - **Filter by type**: `type:concept` to see only concept pages
-<<<<<<< .merge_file_h8XYkJ
 - **Filter by tags**: `tags:prediction-market` to see related pages
-=======
-<<<<<<< .merge_file_5PO2YW
-- **Filter by tags**: `tags:prediction-market` to see related pages
-=======
->>>>>>> .merge_file_aYv5js
 - **Filter by tags**: `tags:forecast-market` to see related pages
->>>>>>> .merge_file_jxML9h
 - **Local graph**: Open on a page to see only its connections
 - **Groups**: Color-code by page type (concepts, entities, sources)
 

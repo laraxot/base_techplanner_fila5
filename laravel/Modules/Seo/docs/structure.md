@@ -7,31 +7,7 @@ Data: 2025-04-23 19:09:56
 - **Namespace principale**: Modules\\Seo
 Modules\\Seo\\Database\\Factories
 Modules\\Seo\\Database\\Seeders
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 - **Pacchetto Composer**: laraxot/module_seo_fila5
-=======
-- **Pacchetto Composer**: laraxot/module_seo_fila3
->>>>>>> dbf8b8d (.)
-=======
-- **Pacchetto Composer**: laraxot/module_seo_fila5
->>>>>>> 77e0353 (.)
-=======
-- **Pacchetto Composer**: laraxot/module_seo_fila5
->>>>>>> fc52fe0 (.)
-=======
-- **Pacchetto Composer**: laraxot/module_seo_fila5
->>>>>>> c101b34 (.)
-=======
-- **Pacchetto Composer**: laraxot/module_seo_fila5
->>>>>>> d0f51b6 (.)
-=======
-- **Pacchetto Composer**: laraxot/module_seo_fila3
->>>>>>> a771e9c (.)
 marco sottana
 - **Dipendenze**: 
 - **Totale file PHP**: 9
@@ -196,9 +172,6 @@ tests/Unit
     },
     "require_comment": {
         "openai-php/laravel": "*"
->>>>>>> 1c344a1 (.)
-=======
->>>>>>> origin/develop
     },
 ```
 

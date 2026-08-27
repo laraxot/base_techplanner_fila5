@@ -24,15 +24,8 @@ Il sistema wiki si articola in tre layer:
 - **Regola**: L'LLM SCrive e mantiene; l'umano legge e naviga
 
 ### Layer 3: Schema (questo file)
-<<<<<<< .merge_file_BwyUAg
 - **Posizione**: `docs/.schema/WIKI_SCHEMA.md`
-=======
-<<<<<<< .merge_file_TmogJD
-- **Posizione**: `docs/.schema/WIKI_SCHEMA.md`
-=======
->>>>>>> .merge_file_Fbk7Tz
 - **Posizione**: `docs/.schema/wiki-schema.md`
->>>>>>> .merge_file_NofU4k
 - **Scopo**: Istruisce l'LLM su convenzioni, workflow e struttura
 
 ## Operazioni
@@ -45,28 +38,14 @@ Quando aggiungi un nuovo sorgente:
    - Sommario del documento
    - Entity pages rilevanti
    - Concept pages se necessario
-<<<<<<< .merge_file_BwyUAg
 4. Aggiorna l'INDEX.md
-=======
-<<<<<<< .merge_file_TmogJD
-4. Aggiorna l'INDEX.md
-=======
->>>>>>> .merge_file_Fbk7Tz
 4. Aggiorna l'index.md
->>>>>>> .merge_file_NofU4k
 5. Appendi a LOG.md
 
 ### Query
 Quando rispondi a domande:
-<<<<<<< .merge_file_BwyUAg
 1. Consulta INDEX.md per trovare pagine rilevanti
-=======
-<<<<<<< .merge_file_TmogJD
-1. Consulta INDEX.md per trovare pagine rilevanti
-=======
->>>>>>> .merge_file_Fbk7Tz
 1. Consulta index.md per trovare pagine rilevanti
->>>>>>> .merge_file_NofU4k
 2. Leggi le pagine identificate
 3. Sintetizza una risposta con citazioni
 4. **Opzionale**: Salva la risposta come nuova pagina wiki
@@ -117,15 +96,8 @@ docs/
 ├── index.md              # Indice principale della wiki
 ├── log.md                # Log cronologico
 ├── .schema/
-<<<<<<< .merge_file_BwyUAg
 │   └── WIKI_SCHEMA.md   # Questo file
-=======
-<<<<<<< .merge_file_TmogJD
-│   └── WIKI_SCHEMA.md   # Questo file
-=======
->>>>>>> .merge_file_Fbk7Tz
 │   └── wiki-schema.md   # Questo file
->>>>>>> .merge_file_NofU4k
 ├── raw/                  # Sorgenti globali
 │   ├── articles/
 │   ├── papers/
@@ -139,15 +111,8 @@ docs/
     └── overviews/
 ```
 
-<<<<<<< .merge_file_BwyUAg
 ## Formato INDEX.md
-=======
-<<<<<<< .merge_file_TmogJD
-## Formato INDEX.md
-=======
->>>>>>> .merge_file_Fbk7Tz
 ## Formato index.md
->>>>>>> .merge_file_NofU4k
 
 ```markdown
 # Wiki Index

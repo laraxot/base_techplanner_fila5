@@ -1,12 +1,5 @@
-<<<<<<< .merge_file_owFItz
 # 🔧 STRUMENTI QUALITÀ CODICE PHP - FIXCITY PLATFORM
-=======
-<<<<<<< .merge_file_sFLmOB
-# 🔧 STRUMENTI QUALITÀ CODICE PHP - FIXCITY PLATFORM
-=======
->>>>>>> .merge_file_cmUkRT
 # 🔧 STRUMENTI QUALITÀ CODICE PHP - NOTIFY PLATFORM
->>>>>>> .merge_file_l5eC4L
 
 **Versione**: 1.0  
 **Data Creazione**: Gennaio 2025  
@@ -14,15 +7,8 @@
 **Priorità**: CRITICAL  
 
 ## 🎯 OBIETTIVO
-<<<<<<< .merge_file_owFItz
 Implementare un ecosistema completo di strumenti per la qualità del codice PHP nel progetto FixCity, garantendo standard enterprise e manutenibilità del codice.
-=======
-<<<<<<< .merge_file_sFLmOB
-Implementare un ecosistema completo di strumenti per la qualità del codice PHP nel progetto FixCity, garantendo standard enterprise e manutenibilità del codice.
-=======
->>>>>>> .merge_file_cmUkRT
 Implementare un ecosistema completo di strumenti per la qualità del codice PHP nel progetto Notify, garantendo standard enterprise e manutenibilità del codice.
->>>>>>> .merge_file_l5eC4L
 
 ## 🛠️ STRUMENTI QUALITÀ CODICE
 
@@ -243,28 +229,14 @@ jobs:
 ### PHPMD Ruleset Personalizzato
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< .merge_file_owFItz
 <ruleset name="FixCity PHP Mess Detector Rules"
-=======
-<<<<<<< .merge_file_sFLmOB
-<ruleset name="FixCity PHP Mess Detector Rules"
-=======
->>>>>>> .merge_file_cmUkRT
 <ruleset name="Notify PHP Mess Detector Rules"
->>>>>>> .merge_file_l5eC4L
          xmlns="http://pmd.sf.net/ruleset/1.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://pmd.sf.net/ruleset/1.0.0 http://pmd.sf.net/ruleset_xml_schema.xsd">
 
-<<<<<<< .merge_file_owFItz
     <description>Regole personalizzate per FixCity Platform</description>
-=======
-<<<<<<< .merge_file_sFLmOB
-    <description>Regole personalizzate per FixCity Platform</description>
-=======
->>>>>>> .merge_file_cmUkRT
     <description>Regole personalizzate per Notify Platform</description>
->>>>>>> .merge_file_l5eC4L
 
     <!-- Clean Code Rules -->
     <rule ref="rulesets/cleancode.xml">
@@ -494,15 +466,8 @@ return (new PhpCsFixer\Config())
 
 ---
 
-<<<<<<< .merge_file_owFItz
 *Questo sistema garantisce la massima qualità del codice nel progetto FixCity Platform.*
-=======
-<<<<<<< .merge_file_sFLmOB
-*Questo sistema garantisce la massima qualità del codice nel progetto FixCity Platform.*
-=======
->>>>>>> .merge_file_cmUkRT
 *Questo sistema garantisce la massima qualità del codice nel progetto Notify Platform.*
->>>>>>> .merge_file_l5eC4L
 
 
 

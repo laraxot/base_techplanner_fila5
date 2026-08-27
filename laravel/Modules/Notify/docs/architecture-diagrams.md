@@ -215,15 +215,8 @@ HTTP Request: /it/tests/homepage
 ┌──────────────────────────────────────┐
 │  PageSlugMiddleware                  │
 │  Load from JSON config               │
-<<<<<<< .merge_file_jkiHTA
 │  laravel/config/local/fixcity/       │
-=======
-<<<<<<< .merge_file_MQ0Bs7
-│  laravel/config/local/fixcity/       │
-=======
->>>>>>> .merge_file_2I084h
 │  laravel/config/local/ptv/       │
->>>>>>> .merge_file_XUE5yo
 │  database/content/pages/[slug].json  │
 └───────┬──────────────────────────────┘
         │
@@ -299,15 +292,8 @@ Admin Panel
 
 ```
 1. HTTP Request
-<<<<<<< .merge_file_jkiHTA
    ├─ URL: http://fixcity.local/it/tests/homepage
-=======
-<<<<<<< .merge_file_MQ0Bs7
-   ├─ URL: http://fixcity.local/it/tests/homepage
-=======
->>>>>>> .merge_file_2I084h
    ├─ URL: http://ptv.local/it/tests/homepage
->>>>>>> .merge_file_XUE5yo
    └─ Method: GET
 
 2. Routing (Folio)
@@ -320,23 +306,10 @@ Admin Panel
 
 4. Middleware Chain
    ├─ PageSlugMiddleware
-<<<<<<< .merge_file_jkiHTA
-=======
-<<<<<<< .merge_file_MQ0Bs7
->>>>>>> .merge_file_2I084h
-   │  ├─ Read APP_URL → fixcity.local
-   │  ├─ Extract domain → fixcity.local
-   │  ├─ Reverse parts → [local, fixcity]
-   │  ├─ Build config path → local/fixcity
-<<<<<<< .merge_file_jkiHTA
-=======
-=======
->>>>>>> .merge_file_2I084h
    │  ├─ Read APP_URL → ptv.local
    │  ├─ Extract domain → ptv.local
    │  ├─ Reverse parts → [local, ptv]
    │  ├─ Build config path → local/ptv
->>>>>>> .merge_file_XUE5yo
    │  ├─ Load theme: Sixteen
    │  └─ Load JSON: pages/homepage.json
    │
@@ -484,9 +457,6 @@ Modules/ModuleName/
 **Diagram Type:** ASCII Architecture Diagrams  
 **Related Docs:** 15+ connected documentation files  
 **Cross-Module:** Xot, Cms, Tenant, Media, Filament, Themes
-<<<<<<< .merge_file_MQ0Bs7
-=======
-
 ---
 
 <!-- Merged from ARCHITECTURE-DIAGRAMS.md, which collided with this file on case-insensitive filesystems. -->
@@ -928,4 +898,3 @@ Modules/ModuleName/
 **Diagram Type:** ASCII Architecture Diagrams  
 **Related Docs:** 15+ connected documentation files  
 **Cross-Module:** Xot, Cms, Tenant, Media, Filament, Themes
->>>>>>> .merge_file_XUE5yo

@@ -4,15 +4,8 @@ type: concept
 tags: [project, completion, status]
 created: 2026-07-14
 updated: 2026-07-14
-<<<<<<< .merge_file_xiCOao
 qmd: "project-completion-status 🎯 fixcity - stato completamento progetto"
-=======
-<<<<<<< .merge_file_nQOlQc
-qmd: "project-completion-status 🎯 fixcity - stato completamento progetto"
-=======
->>>>>>> .merge_file_coFWpW
 qmd: "project-completion-status 🎯 ptv - stato completamento progetto"
->>>>>>> .merge_file_xHLkh4
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -202,15 +195,8 @@ related:
 ## 🔗 STRUTTURA DOCUMENTAZIONE
 
 ```
-<<<<<<< .merge_file_xiCOao
 base_fixcity_fila5_mono/
-=======
-<<<<<<< .merge_file_nQOlQc
-base_fixcity_fila5_mono/
-=======
->>>>>>> .merge_file_coFWpW
 base_ptv_fila5_mono/
->>>>>>> .merge_file_xHLkh4
 ├── documentation-index.md          # ✅ Indice generale
 ├── quick-start.md                  # ✅ Guida rapida
 ├── roadmap-status-summary.md       # ✅ Status master
@@ -280,21 +266,12 @@ base_ptv_fila5_mono/
 - **Doc Lead**: Documentazione
 
 ### Supporto
-<<<<<<< .merge_file_xiCOao
 - **Email**: dev@fixcity.it
 - **Docs**: docs@fixcity.it
 - **Slack**: #fixcity-dev
-=======
-<<<<<<< .merge_file_nQOlQc
-- **Email**: dev@fixcity.it
-- **Docs**: docs@fixcity.it
-- **Slack**: #fixcity-dev
-=======
->>>>>>> .merge_file_coFWpW
 - **Email**: dev@ptv.it
 - **Docs**: docs@ptv.it
 - **Slack**: #ptv-dev
->>>>>>> .merge_file_xHLkh4
 
 ---
 

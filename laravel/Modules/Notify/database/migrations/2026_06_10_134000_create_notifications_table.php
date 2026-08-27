@@ -8,11 +8,7 @@ use Modules\User\Models\Notification as UserDatabaseNotification;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 /*
-<<<<<<< .merge_file_2Cxmem
  * Owner Notify — UNICA migrazione per `notifications` (connessione user / fixcity_user).
-=======
- * Owner Notify — UNICA migrazione per `notifications` (connessione user).
->>>>>>> .merge_file_9Rv76O
  * Runtime Eloquent: Modules\User\Models\Notification (DatabaseNotification).
  * Schema: uuid PK + uuidMorphs — users.id è UUID/ULID string.
  * Evoluzione: edit QUESTO file + bump timestamp — vietato secondo create_* in User/.
@@ -33,11 +29,7 @@ return new class extends XotBaseMigration
         ) {
             $connection = $this->model->getConnectionName() ?? 'user';
 
-<<<<<<< .merge_file_2Cxmem
             if (0 === DB::connection($connection)->table($this->getTable())->count()) {
-=======
-            if (DB::connection($connection)->table($this->getTable())->count() === 0) {
->>>>>>> .merge_file_9Rv76O
                 $this->dropTableIfExists($this->getTable());
             }
         }

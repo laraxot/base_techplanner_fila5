@@ -8,15 +8,8 @@
 
 ## 📋 Overview
 
-<<<<<<< .merge_file_HLkcEj
 This discussion tracks the AI agent's work on improving GitHub Actions, documentation, and development workflows for the FixCity platform.
-=======
-<<<<<<< .merge_file_juWWAD
-This discussion tracks the AI agent's work on improving GitHub Actions, documentation, and development workflows for the FixCity platform.
-=======
->>>>>>> .merge_file_lOpvti
 This discussion tracks the AI agent's work on improving GitHub Actions, documentation, and development workflows for the Notify platform.
->>>>>>> .merge_file_XqiigM
 
 ---
 
@@ -179,18 +172,10 @@ ssh-keygen -t ed25519 -C "actions@github.com"
 - [Sync Subtrees Docs](bashscripts/docs/github/actions/sync-subtrees.md)
 
 ### GitHub Links
-<<<<<<< .merge_file_HLkcEj
 - [Actions Tab](https://github.com/laraxot/base_fixcity_fila5/actions)
 - [Settings > Secrets](https://github.com/laraxot/base_fixcity_fila5/settings/secrets/actions)
-=======
-<<<<<<< .merge_file_juWWAD
-- [Actions Tab](https://github.com/laraxot/base_fixcity_fila5/actions)
-- [Settings > Secrets](https://github.com/laraxot/base_fixcity_fila5/settings/secrets/actions)
-=======
->>>>>>> .merge_file_lOpvti
 - [Actions Tab](https://github.com/laraxot/platform/actions)
 - [Settings > Secrets](https://github.com/laraxot/platform/settings/secrets/actions)
->>>>>>> .merge_file_XqiigM
 - [Settings > SSH Keys](https://github.com/settings/keys)
 
 ---

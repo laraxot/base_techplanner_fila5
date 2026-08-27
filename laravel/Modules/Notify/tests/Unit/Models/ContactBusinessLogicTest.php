@@ -8,12 +8,6 @@ use Modules\Notify\Models\Contact;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< .merge_file_UX1f3c
-uses(\Modules\Notify\Tests\TestCase::class);
-
-describe('Contact Business Logic', function () {
-    test('contact extends base model', function () {});
-=======
 uses(TestCase::class)->group('no-notify-db');
 
 describe('Contact Business Logic', function () {
@@ -24,7 +18,6 @@ describe('Contact Business Logic', function () {
         Assert::assertInstanceOf(\ReflectionClass::class, $parent);
         Assert::assertSame(BaseModel::class, $parent->getName());
     });
->>>>>>> .merge_file_Tr4NPW
 
     test('contact can store polymorphic model relationships', function () {
         $contact = new Contact();

@@ -20,15 +20,8 @@ Modules/
   Limesurvey/ — integrazione LimeSurvey
   Media/      — file e media
   Notify/     — notifiche (email, SMS, Telegram, WhatsApp)
-<<<<<<< .merge_file_YlKUgN
   Quaeris/    — survey management
-=======
-<<<<<<< .merge_file_kKKjz9
-  Quaeris/    — survey management
-=======
->>>>>>> .merge_file_QcrEcG
   App/    — survey management
->>>>>>> .merge_file_sj4iXD
   Tenant/     — multi-tenancy
   UI/         — componenti UI
   User/       — autenticazione, Passport, Socialite

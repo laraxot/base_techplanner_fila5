@@ -7,10 +7,6 @@ namespace Modules\User\Models\Traits;
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Datas\PasswordData;
 
-<<<<<<< .merge_file_uGHcYK
-=======
-
->>>>>>> .merge_file_fuXJDi
 trait HasPasswordExpiry
 {
     public static function bootHasPasswordExpiry(): void

@@ -13,24 +13,10 @@
 1. **PHASE-1-STRATEGY.md** (22.938 caratteri)
    - Analisi architettura Design Comuni
    - Breakdown pagina segnalazioni-elenco
-<<<<<<< .merge_file_togMQV
    - Assessment stato FixCity attuale
    - 6 gap critici identificati
    - Strategia esecuzione multi-agente
    - Pattern traduzioni (corretto: `fixcity::segnalazione.fields.title.label`)
-=======
-<<<<<<< .merge_file_qRh7z6
-   - Assessment stato FixCity attuale
-   - 6 gap critici identificati
-   - Strategia esecuzione multi-agente
-   - Pattern traduzioni (corretto: `fixcity::segnalazione.fields.title.label`)
-=======
-   - Assessment stato Notify attuale
-   - 6 gap critici identificati
-   - Strategia esecuzione multi-agente
-   - Pattern traduzioni (corretto: `laraxot::segnalazione.fields.title.label`)
->>>>>>> .merge_file_GSjwVs
->>>>>>> .merge_file_Xk0SsW
    - Criteri successo e checklist
 
 2. **GSD-PHASE-1-EXECUTION.md** (19.499 caratteri)
@@ -41,15 +27,8 @@
    - Timeline (15-60 min per subtask)
    - Success criteria
 
-<<<<<<< .merge_file_togMQV
 3. **bashscripts/docs/html/INDEX.md** (8.531 caratteri)
-=======
-<<<<<<< .merge_file_qRh7z6
-3. **bashscripts/docs/html/INDEX.md** (8.531 caratteri)
-=======
->>>>>>> .merge_file_Xk0SsW
 3. **bashscripts/docs/html/index.md** (8.531 caratteri)
->>>>>>> .merge_file_GSjwVs
    - Documentazione strumenti HTML
    - Parity scoring (90%+ PASS, <90% WORK)
    - Troubleshooting guide
@@ -60,15 +39,8 @@
    - Rimuove scripts, styles, noscript
    - Preserva hierarchy, classes, attributes
 
-<<<<<<< .merge_file_togMQV
 5. **laravel/Themes/Sixteen/docs/00-INDEX.md** (12.926 caratteri)
-=======
-<<<<<<< .merge_file_qRh7z6
-5. **laravel/Themes/Sixteen/docs/00-INDEX.md** (12.926 caratteri)
-=======
->>>>>>> .merge_file_Xk0SsW
 5. **laravel/Themes/Sixteen/docs/00-index.md** (12.926 caratteri)
->>>>>>> .merge_file_GSjwVs
    - Master index documentazione
    - Navigazione per topic
    - Fase progression timeline
@@ -111,15 +83,8 @@ Data Flow: JSON → Handlebars → Static HTML
 5. <section id="info-contacts">       <!-- CONTACTS -->
 ```
 
-<<<<<<< .merge_file_togMQV
 ### FixCity Sixteen - Stato Attuale (Assessment)
-=======
-<<<<<<< .merge_file_qRh7z6
-### FixCity Sixteen - Stato Attuale (Assessment)
-=======
->>>>>>> .merge_file_Xk0SsW
 ### Notify Sixteen - Stato Attuale (Assessment)
->>>>>>> .merge_file_GSjwVs
 
 ```
 ✅ Punti Forti:
@@ -207,15 +172,8 @@ Crea: `PHASE-1-FINDINGS.md` con gap list dettagliato
 ### PASSO 3: Executor #2 applica fix (Subtask 3 & 4)
 Modifica:
 - `laravel/Themes/Sixteen/resources/views/pages/tests/[slug].blade.php`
-<<<<<<< .merge_file_togMQV
 - `laravel/config/local/fixcity/database/content/pages/tests.segnalazioni-elenco.json`
-=======
-<<<<<<< .merge_file_qRh7z6
-- `laravel/config/local/fixcity/database/content/pages/tests.segnalazioni-elenco.json`
-=======
->>>>>>> .merge_file_Xk0SsW
 - `laravel/config/local/laraxot/database/content/pages/tests.segnalazioni-elenco.json`
->>>>>>> .merge_file_GSjwVs
 ⏱️ ~40-60 min
 
 ### PASSO 4: Executor #1 re-verifica (Subtask 5)
@@ -238,21 +196,12 @@ Aggiorna: `00-INDEX.md`
 
 ### ✅ CORRETTO
 ```blade
-<<<<<<< .merge_file_togMQV
 {{ trans('fixcity::segnalazione.fields.title.label') }}
 {{ trans('fixcity::segnalazione.filters.category.placeholder') }}
 {{ trans('fixcity::segnalazione.actions.submit.label') }}
-=======
-<<<<<<< .merge_file_qRh7z6
-{{ trans('fixcity::segnalazione.fields.title.label') }}
-{{ trans('fixcity::segnalazione.filters.category.placeholder') }}
-{{ trans('fixcity::segnalazione.actions.submit.label') }}
-=======
->>>>>>> .merge_file_Xk0SsW
 {{ trans('laraxot::segnalazione.fields.title.label') }}
 {{ trans('laraxot::segnalazione.filters.category.placeholder') }}
 {{ trans('laraxot::segnalazione.actions.submit.label') }}
->>>>>>> .merge_file_GSjwVs
 ```
 
 ### ❌ SBAGLIATO (DO NOT USE)
@@ -264,15 +213,8 @@ Aggiorna: `00-INDEX.md`
 
 ### Struttura file traduzioni
 ```php
-<<<<<<< .merge_file_togMQV
 // laravel/lang/it/fixcity.php
-=======
-<<<<<<< .merge_file_qRh7z6
-// laravel/lang/it/fixcity.php
-=======
->>>>>>> .merge_file_Xk0SsW
 // laravel/lang/it/laraxot.php
->>>>>>> .merge_file_GSjwVs
 return [
     'segnalazione' => [
         'fields' => [
@@ -293,24 +235,10 @@ return [
 
 **Leggi in questo ordine**:
 
-<<<<<<< .merge_file_togMQV
 1. **[00-INDEX.md](laravel/Themes/Sixteen/docs/00-INDEX.md)** - Master index (sei qui, ma online)
 2. **[PHASE-1-STRATEGY.md](laravel/Themes/Sixteen/docs/PHASE-1-STRATEGY.md)** - Strategia completa (22k chars)
 3. **[GSD-PHASE-1-EXECUTION.md](laravel/Themes/Sixteen/docs/GSD-PHASE-1-EXECUTION.md)** - Piano esecuzione (19k chars)
 4. **[bashscripts/docs/html/INDEX.md](bashscripts/docs/html/INDEX.md)** - Documentazione strumenti
-=======
-<<<<<<< .merge_file_qRh7z6
-1. **[00-INDEX.md](laravel/Themes/Sixteen/docs/00-INDEX.md)** - Master index (sei qui, ma online)
-2. **[PHASE-1-STRATEGY.md](laravel/Themes/Sixteen/docs/PHASE-1-STRATEGY.md)** - Strategia completa (22k chars)
-3. **[GSD-PHASE-1-EXECUTION.md](laravel/Themes/Sixteen/docs/GSD-PHASE-1-EXECUTION.md)** - Piano esecuzione (19k chars)
-4. **[bashscripts/docs/html/INDEX.md](bashscripts/docs/html/INDEX.md)** - Documentazione strumenti
-=======
-1. **[00-index.md](laravel/Themes/Sixteen/docs/00-index.md)** - Master index (sei qui, ma online)
-2. **[PHASE-1-STRATEGY.md](laravel/Themes/Sixteen/docs/PHASE-1-STRATEGY.md)** - Strategia completa (22k chars)
-3. **[GSD-PHASE-1-EXECUTION.md](laravel/Themes/Sixteen/docs/GSD-PHASE-1-EXECUTION.md)** - Piano esecuzione (19k chars)
-4. **[bashscripts/docs/html/index.md](bashscripts/docs/html/index.md)** - Documentazione strumenti
->>>>>>> .merge_file_GSjwVs
->>>>>>> .merge_file_Xk0SsW
 
 ---
 
@@ -362,12 +290,5 @@ Buona fortuna! 🚀
 
 *Created: 2026-04-08*  
 *Researcher Agent - BMAD Mode C (Opzione C)*  
-<<<<<<< .merge_file_togMQV
 *FixCity Sixteen Theme - Phase 1*
-=======
-<<<<<<< .merge_file_qRh7z6
-*FixCity Sixteen Theme - Phase 1*
-=======
->>>>>>> .merge_file_Xk0SsW
 *Notify Sixteen Theme - Phase 1*
->>>>>>> .merge_file_GSjwVs

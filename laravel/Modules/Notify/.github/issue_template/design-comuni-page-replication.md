@@ -11,15 +11,8 @@ assignees: ''
 Replicare la pagina **[pagina-name].html** da Design Comuni Italia.
 
 **Source**: https://italia.github.io/design-comuni-pagine-statiche/sito/[pagina-name].html  
-<<<<<<< .merge_file_0cRX7u
 **Target**: http://fixcity.local/it/tests/[pagina-name]  
-=======
-<<<<<<< .merge_file_080Y1y
-**Target**: http://fixcity.local/it/tests/[pagina-name]  
-=======
->>>>>>> .merge_file_dIxwy0
 **Target**: http://ptv.local/it/tests/[pagina-name]  
->>>>>>> .merge_file_vJH6mm
 **HTML Parity**: 100% match dentro `<body>` (esclusi scripts)
 
 ---
@@ -27,15 +20,8 @@ Replicare la pagina **[pagina-name].html** da Design Comuni Italia.
 ## ✅ Checklist
 
 ### 1. JSON Content
-<<<<<<< .merge_file_0cRX7u
 - [ ] Creare `laravel/config/local/fixcity/database/content/pages/tests.[pagina-name].json`
-=======
-<<<<<<< .merge_file_080Y1y
-- [ ] Creare `laravel/config/local/fixcity/database/content/pages/tests.[pagina-name].json`
-=======
->>>>>>> .merge_file_dIxwy0
 - [ ] Creare `laravel/config/local/ptv/database/content/pages/tests.[pagina-name].json`
->>>>>>> .merge_file_vJH6mm
 - [ ] Definire blocchi con type generici (hero, card, navigation, etc.)
 - [ ] Set weight per ordinamento
 - [ ] Verificare nodo `"slug": "tests.[pagina-name]"`
@@ -46,15 +32,8 @@ Replicare la pagina **[pagina-name].html** da Design Comuni Italia.
 - [ ] Assicurarsi che blocchi siano universali (NOT page-specific)
 
 ### 3. Test Pagina
-<<<<<<< .merge_file_0cRX7u
 - [ ] Visitare `http://fixcity.local/it/tests/[pagina-name]`
-=======
-<<<<<<< .merge_file_080Y1y
-- [ ] Visitare `http://fixcity.local/it/tests/[pagina-name]`
-=======
->>>>>>> .merge_file_dIxwy0
 - [ ] Visitare `http://ptv.local/it/tests/[pagina-name]`
->>>>>>> .merge_file_vJH6mm
 - [ ] Verificare rendering corretto
 - [ ] Controllare header e footer
 

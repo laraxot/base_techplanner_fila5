@@ -132,25 +132,10 @@ protected function getProjectNamespace(): string
 ```bash
 # Test PHPStan
 cd /var/www/html/_bases/base_<nome progetto>/laravel
-<<<<<<< .merge_file_eDSkcb
-<<<<<<< .merge_file_9Qh9gN
 cd /var/www/html/_bases/base_Quaeris/laravel
 cd /var/www/html/_bases/base_techplanner_fila5_mono/laravel
-=======
-=======
-<<<<<<< .merge_file_1fMiug
-cd /var/www/html/_bases/base_Quaeris/laravel
-cd /var/www/html/_bases/base_techplanner_fila5_mono/laravel
-=======
-<<<<<<< .merge_file_9Qh9gN
-cd /var/www/html/_bases/base_Quaeris/laravel
-cd /var/www/html/_bases/base_techplanner_fila5_mono/laravel
-=======
->>>>>>> .merge_file_MAc6Mh
->>>>>>> .merge_file_72VVZT
 cd /var/www/_bases/base_ptvx_fila5/laravel
 cd /var/www/html/_bases/base_ptvx_fila5/laravel
->>>>>>> .merge_file_uHcJtQ
 ./vendor/bin/phpstan analyze Modules/Notify --level=9
 
 # Test funzionalità

@@ -154,15 +154,8 @@ The FixCity platform has extensive documentation across modules and themes, but 
 
 3. **Update Governance**
    - Finalize documentation governance
-<<<<<<< .merge_file_K1x5Cp
    - Add to AGENTS.md
-=======
-<<<<<<< .merge_file_8I8oXn
-   - Add to AGENTS.md
-=======
->>>>>>> .merge_file_h10CsM
    - Add to agents.md
->>>>>>> .merge_file_Zw9PPS
    - Add to .windsurfrules
 
 ### Priority 3: Medium (Week 4)
@@ -250,15 +243,8 @@ done
 
 #### Day 15-16: Update Rules
 
-<<<<<<< .merge_file_K1x5Cp
 1. Update AGENTS.md
-=======
-<<<<<<< .merge_file_8I8oXn
-1. Update AGENTS.md
-=======
->>>>>>> .merge_file_h10CsM
 1. Update agents.md
->>>>>>> .merge_file_Zw9PPS
 2. Update .windsurfrules
 3. Create skills
 
@@ -408,15 +394,8 @@ echo "  snake_case: $(find laravel/Modules/*/docs/ -name '*_*.md' | wc -l)"
 ## 📚 Related Documents
 
 - [DOCUMENTATION_GOVERNANCE.md](DOCUMENTATION_GOVERNANCE.md) - Governance framework
-<<<<<<< .merge_file_K1x5Cp
 - [AGENTS.md](../../../AGENTS.md) - Agent guidelines
-=======
-<<<<<<< .merge_file_8I8oXn
-- [AGENTS.md](../../../AGENTS.md) - Agent guidelines
-=======
->>>>>>> .merge_file_h10CsM
 - [agents.md](../../../agents.md) - Agent guidelines
->>>>>>> .merge_file_Zw9PPS
 - [.windsurfrules](../../../.windsurfrules) - IDE rules
 
 ---

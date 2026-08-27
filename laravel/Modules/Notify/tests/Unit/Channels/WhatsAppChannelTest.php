@@ -3,18 +3,10 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Channels;
-<<<<<<< .merge_file_EfewlF
 use function Safe\file_get_contents;
 use Modules\Notify\Channels\WhatsAppChannel;
 
 use PHPUnit\Framework\Assert;
-=======
-
-use Modules\Notify\Channels\WhatsAppChannel;
-use Modules\Notify\Tests\TestCase;
-use PHPUnit\Framework\Assert;
-
->>>>>>> .merge_file_DESchE
 describe('WhatsAppChannel', function () {
     it('can be instantiated', function () {
         // WhatsAppChannel requires WhatsAppActionFactory in constructor
@@ -38,11 +30,7 @@ describe('WhatsAppChannel', function () {
 
     it('uses strict types', function () {
         $reflection = new \ReflectionClass(WhatsAppChannel::class);
-<<<<<<< .merge_file_EfewlF
-        $content = \notifyReflectionSource($reflection);
-=======
         $content = TestCase::notifyReflectionSource($reflection);
->>>>>>> .merge_file_DESchE
         Assert::assertStringContainsString('declare(strict_types=1)', $content);
     });
 

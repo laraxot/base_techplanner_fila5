@@ -17,21 +17,12 @@
 
 ### Blade Custom con foreach
 ```blade
-<<<<<<< .merge_file_eNNsdE
-{{-- ❌ VIETATO - Themes/TwentyOne/resources/views/pages/predicts/index.blade.php --}}
-<div class="grid grid-cols-3">
-    @foreach($predicts as $predict)
-        <div class="card">
-            <h3>{{ $predict->title }}</h3>
-            <p>{{ $predict->volume }} CR</p>
-=======
 {{-- ❌ VIETATO - Themes/TwentyOne/resources/views/pages/forecasts/index.blade.php --}}
 <div class="grid grid-cols-3">
     @foreach($forecasts as $forecast)
         <div class="card">
             <h3>{{ $forecast->title }}</h3>
             <p>{{ $forecast->volume }} CR</p>
->>>>>>> .merge_file_As3mQv
         </div>
     @endforeach
 </div>
@@ -49,15 +40,8 @@
 ### Livewire in Themes
 ```
 ❌ VIETATO:
-<<<<<<< .merge_file_q4i0MX
 Themes/TwentyOne/Http/Livewire/PredictComponent.php
-=======
-<<<<<<< .merge_file_eNNsdE
-Themes/TwentyOne/Http/Livewire/PredictComponent.php
-=======
->>>>>>> .merge_file_qPmxBx
 Themes/TwentyOne/Http/Livewire/ForecastComponent.php
->>>>>>> .merge_file_As3mQv
 ```
 
 ---
@@ -66,45 +50,23 @@ Themes/TwentyOne/Http/Livewire/ForecastComponent.php
 
 ### Filament Table Widget
 ```php
-<<<<<<< .merge_file_q4i0MX
 // ✅ CORRETTO - Modules/Predict/Filament/Widgets/PredictTableWidget.php
 namespace Modules\Predict\Filament\Widgets;
-=======
-<<<<<<< .merge_file_eNNsdE
-// ✅ CORRETTO - Modules/Predict/Filament/Widgets/PredictTableWidget.php
-namespace Modules\Predict\Filament\Widgets;
-=======
->>>>>>> .merge_file_qPmxBx
 // ✅ CORRETTO - Modules/Forecast/Filament/Widgets/ForecastTableWidget.php
 namespace Modules\Forecast\Filament\Widgets;
->>>>>>> .merge_file_As3mQv
 
 use Filament\Tables;
 use Filament\Tables\Table;
 use Filament\Widgets\TableWidget as BaseWidget;
 
-<<<<<<< .merge_file_q4i0MX
 class PredictTableWidget extends BaseWidget
-=======
-<<<<<<< .merge_file_eNNsdE
-class PredictTableWidget extends BaseWidget
-=======
->>>>>>> .merge_file_qPmxBx
 class ForecastTableWidget extends BaseWidget
->>>>>>> .merge_file_As3mQv
 {
     public function table(Table $table): Table
     {
         return $table
-<<<<<<< .merge_file_q4i0MX
             ->query(Predict::query()->where('status', 'active'))
-=======
-<<<<<<< .merge_file_eNNsdE
-            ->query(Predict::query()->where('status', 'active'))
-=======
->>>>>>> .merge_file_qPmxBx
             ->query(Forecast::query()->where('status', 'active'))
->>>>>>> .merge_file_As3mQv
             ->searchable()              // ✅ Search automatica
             ->filters([                 // ✅ Filters automatici
                 Tables\Filters\SelectFilter::make('category')
@@ -130,49 +92,26 @@ class ForecastTableWidget extends BaseWidget
 
 ### View Blade (Solo @livewire)
 ```blade
-<<<<<<< .merge_file_q4i0MX
 {{-- ✅ CORRETTO - Themes/TwentyOne/resources/views/filament/widgets/predict-table.blade.php --}}
 @livewire(\Modules\Predict\Filament\Widgets\PredictTableWidget::class)
-=======
-<<<<<<< .merge_file_eNNsdE
-{{-- ✅ CORRETTO - Themes/TwentyOne/resources/views/filament/widgets/predict-table.blade.php --}}
-@livewire(\Modules\Predict\Filament\Widgets\PredictTableWidget::class)
-=======
->>>>>>> .merge_file_qPmxBx
 {{-- ✅ CORRETTO - Themes/TwentyOne/resources/views/filament/widgets/forecast-table.blade.php --}}
 @livewire(\Modules\Forecast\Filament\Widgets\ForecastTableWidget::class)
->>>>>>> .merge_file_As3mQv
 ```
 
 ### JSON CMS
 ```json
 {
-<<<<<<< .merge_file_q4i0MX
     "slug": "predicts.index",
-=======
-<<<<<<< .merge_file_eNNsdE
-    "slug": "predicts.index",
-=======
->>>>>>> .merge_file_qPmxBx
     "slug": "forecasts.index",
->>>>>>> .merge_file_As3mQv
     "content_blocks": {
         "it": [
             {
                 "type": "widget",
                 "data": {
-<<<<<<< .merge_file_q4i0MX
                     "view": "pub_theme::filament.widgets.predict-table",
                     "widget": "Modules\\Predict\\Filament\\Widgets\\PredictTableWidget"
-=======
-<<<<<<< .merge_file_eNNsdE
-                    "view": "pub_theme::filament.widgets.predict-table",
-                    "widget": "Modules\\Predict\\Filament\\Widgets\\PredictTableWidget"
-=======
->>>>>>> .merge_file_qPmxBx
                     "view": "pub_theme::filament.widgets.forecast-table",
                     "widget": "Modules\\Forecast\\Filament\\Widgets\\ForecastTableWidget"
->>>>>>> .merge_file_As3mQv
                 }
             }
         ]
@@ -204,74 +143,37 @@ class ForecastTableWidget extends BaseWidget
 ```
 laravel/
 ├── Modules/
-<<<<<<< .merge_file_eNNsdE
-│   └── Predict/
-│       ├── Filament/
-│       │   └── Widgets/
-│       │       └── PredictTableWidget.php  ✅ LOGICA
-│       └── Models/
-│           └── Predict.php                  ✅ DATI
-=======
 │   └── Forecast/
 │       ├── Filament/
 │       │   └── Widgets/
 │       │       └── ForecastTableWidget.php  ✅ LOGICA
 │       └── Models/
 │           └── Forecast.php                  ✅ DATI
->>>>>>> .merge_file_As3mQv
 │
 └── Themes/
     └── TwentyOne/
         └── resources/views/
             └── filament/
                 └── widgets/
-<<<<<<< .merge_file_q4i0MX
                     └── predict-table.blade.php  ✅ VISTA
-=======
-<<<<<<< .merge_file_eNNsdE
-                    └── predict-table.blade.php  ✅ VISTA
-=======
->>>>>>> .merge_file_qPmxBx
                     └── forecast-table.blade.php  ✅ VISTA
->>>>>>> .merge_file_As3mQv
 ```
 
 ### Flusso Dati
 
 ```
-<<<<<<< .merge_file_q4i0MX
 1. HTTP Request → predicts.index
-=======
-<<<<<<< .merge_file_eNNsdE
-1. HTTP Request → predicts.index
-=======
->>>>>>> .merge_file_qPmxBx
 1. HTTP Request → forecasts.index
->>>>>>> .merge_file_As3mQv
    ↓
 2. Folio Route → [container0]/index.blade.php
    ↓
 3. CMS Action → ResolvePageAction
    ↓
-<<<<<<< .merge_file_q4i0MX
-=======
-<<<<<<< .merge_file_eNNsdE
->>>>>>> .merge_file_qPmxBx
-4. JSON Config → predicts.index.json
-   ↓
-5. Widget Render → Modules/Predict/Filament/Widgets/PredictTableWidget.php
-   ↓
-6. View Render → Themes/TwentyOne/resources/views/filament/widgets/predict-table.blade.php
-<<<<<<< .merge_file_q4i0MX
-=======
-=======
->>>>>>> .merge_file_qPmxBx
 4. JSON Config → forecasts.index.json
    ↓
 5. Widget Render → Modules/Forecast/Filament/Widgets/ForecastTableWidget.php
    ↓
 6. View Render → Themes/TwentyOne/resources/views/filament/widgets/forecast-table.blade.php
->>>>>>> .merge_file_As3mQv
    ↓
 7. HTML Response → Browser
 ```
@@ -324,21 +226,12 @@ Prima di commitare una pagina list/grid:
 - [Tables Overview](https://filamentphp.com/docs/5.x/tables/overview)
 
 ### Esempi Reali
-<<<<<<< .merge_file_q4i0MX
 - `Modules/Predict/Filament/Widgets/PredictTableWidget.php`
 - `Themes/TwentyOne/resources/views/filament/widgets/predict-table.blade.php`
 - `config/local/predict/database/content/pages/predicts.index.json`
-=======
-<<<<<<< .merge_file_eNNsdE
-- `Modules/Predict/Filament/Widgets/PredictTableWidget.php`
-- `Themes/TwentyOne/resources/views/filament/widgets/predict-table.blade.php`
-- `config/local/predict/database/content/pages/predicts.index.json`
-=======
->>>>>>> .merge_file_qPmxBx
 - `Modules/Forecast/Filament/Widgets/ForecastTableWidget.php`
 - `Themes/TwentyOne/resources/views/filament/widgets/forecast-table.blade.php`
 - `config/local/forecast/database/content/pages/forecasts.index.json`
->>>>>>> .merge_file_As3mQv
 
 ---
 

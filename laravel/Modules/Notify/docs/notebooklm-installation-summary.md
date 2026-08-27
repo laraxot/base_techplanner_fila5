@@ -46,15 +46,8 @@ ls -la ~/.claude/skills/notebooklm/
 # - scripts/ (automation scripts)
 # - data/ (authentication + library)
 # - requirements.txt
-<<<<<<< .merge_file_Imjtqv
 # - README.md, CHANGELOG.md, LICENSE
-=======
-<<<<<<< .merge_file_8nna0U
-# - README.md, CHANGELOG.md, LICENSE
-=======
->>>>>>> .merge_file_kP4vgd
 # - README.md, changelog.md, LICENSE
->>>>>>> .merge_file_ckQtbu
 ```
 
 ## What is NotebookLM Skill?
@@ -249,15 +242,8 @@ Every NotebookLM answer ends with: **"Is that ALL you need to know?"**
 Create these NotebookLM notebooks:
 
 ### 1. Laraxot Framework Docs
-<<<<<<< .merge_file_Imjtqv
 - **Upload**: Laraxot documentation, AGENTS.md, .windsurfrules
-=======
-<<<<<<< .merge_file_8nna0U
-- **Upload**: Laraxot documentation, AGENTS.md, .windsurfrules
-=======
->>>>>>> .merge_file_kP4vgd
 - **Upload**: Laraxot documentation, agents.md, .windsurfrules
->>>>>>> .merge_file_ckQtbu
 - **Topics**: laravel, architecture, modules, filament, xot
 - **Use**: Technical research, implementation verification
 
@@ -273,15 +259,8 @@ Create these NotebookLM notebooks:
 
 ### 4. Project Documentation
 - **Upload**: FixCity docs, module docs, theme docs
-<<<<<<< .merge_file_Imjtqv
 - **Topics**: fixcity, project, conventions, documentation
-=======
-<<<<<<< .merge_file_8nna0U
-- **Topics**: fixcity, project, conventions, documentation
-=======
->>>>>>> .merge_file_kP4vgd
 - **Topics**: ptv, project, conventions, documentation
->>>>>>> .merge_file_ckQtbu
 - **Use**: Project-specific queries
 
 ## Files Created/Updated
@@ -342,15 +321,8 @@ TYPING_WPM_MIN=160
 TYPING_WPM_MAX=240
 
 # Default notebook (FixCity docs)
-<<<<<<< .merge_file_Imjtqv
 DEFAULT_NOTEBOOK_ID=fixcity-project-docs
-=======
-<<<<<<< .merge_file_8nna0U
-DEFAULT_NOTEBOOK_ID=fixcity-project-docs
-=======
->>>>>>> .merge_file_kP4vgd
 DEFAULT_NOTEBOOK_ID=ptv-project-docs
->>>>>>> .merge_file_ckQtbu
 ```
 
 ### Data Storage

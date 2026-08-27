@@ -46,8 +46,6 @@ This document serves as the central index for the Notify module, providing guida
 - Update this index if new features or significant changes are introduced to the Notify module.
 
 ## Links to Related Documentation
-<<<<<<< .merge_file_2mZHKT
-=======
 - [Architecture Overview](./architecture.md)
 - [Notification Channels Implementation](./NOTIFICATION_CHANNELS_IMPLEMENTATION.md)
 - [Email Templates](./EMAIL_TEMPLATES.md)
@@ -311,14 +309,6 @@ This document serves as the central index for the Notify module, providing guida
 - Update this index if new features or significant changes are introduced to the Notify module.
 
 ## Links to Related Documentation
-<<<<<<< .merge_file_gZU76g
->>>>>>> .merge_file_HlzDft
-=======
-<<<<<<< .merge_file_jllLAD
-=======
->>>>>>> .merge_file_HlzDft
->>>>>>> .merge_file_s14Kzy
->>>>>>> .merge_file_ezSV9l
 - [Architecture Overview](./ARCHITECTURE.md)
 - [Notification Channels Implementation](./NOTIFICATION_CHANNELS_IMPLEMENTATION.md)
 - [Email Templates](./EMAIL_TEMPLATES.md)

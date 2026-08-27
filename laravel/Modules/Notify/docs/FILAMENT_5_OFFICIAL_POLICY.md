@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_E0htMw
-=======
 ---
 title: "FILAMENT 5 - OFFICIAL POLICY"
 module: notify
@@ -9,7 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
->>>>>>> .merge_file_Y6rO2i
 # 🚨 FILAMENT 5 - OFFICIAL POLICY
 
 **Data**: 2026-03-30  

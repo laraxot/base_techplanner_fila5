@@ -166,15 +166,8 @@ laravel/Themes/Sixteen/
 │   └── js/
 │
 └── config/
-<<<<<<< .merge_file_dswNaa
     └── local/fixcity/database/content/
-=======
-<<<<<<< .merge_file_l0CIOW
-    └── local/fixcity/database/content/
-=======
->>>>>>> .merge_file_gSZMjJ
     └── local/ptv/database/content/
->>>>>>> .merge_file_qB5dWe
         └── pages/tests.homepage.json
 
 bashscripts/design-analysis/
@@ -300,9 +293,6 @@ All the information needed to fix the homepage is documented, prioritized, and e
 **Autonomy Level**: 🟢 Fully Autonomous
 **Documentation Quality**: 🟢 Excellent
 **Ready for Multi-AI Collaboration**: 🟢 Yes
-<<<<<<< .merge_file_l0CIOW
-=======
-
 ---
 
 <!-- Merged from REPLIKATE-PHASE-1-COMPLETE.md, which collided with this file on case-insensitive filesystems. -->
@@ -581,4 +571,3 @@ All the information needed to fix the homepage is documented, prioritized, and e
 **Autonomy Level**: 🟢 Fully Autonomous
 **Documentation Quality**: 🟢 Excellent
 **Ready for Multi-AI Collaboration**: 🟢 Yes
->>>>>>> .merge_file_qB5dWe

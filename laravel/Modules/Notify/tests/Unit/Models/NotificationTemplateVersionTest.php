@@ -3,27 +3,17 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Models;
-<<<<<<< .merge_file_hTncBD
-=======
-
->>>>>>> .merge_file_L3rlzb
 use Modules\Notify\Models\BaseModel;
 use Modules\Notify\Models\NotificationTemplate;
 use Modules\Notify\Models\NotificationTemplateVersion;
 use Modules\Notify\Tests\TestCase;
-<<<<<<< .merge_file_DcNuFl
-=======
 use PHPUnit\Framework\Assert;
-<<<<<<< .merge_file_hTncBD
 
 uses(\Modules\Notify\Tests\TestCase::class);
-=======
->>>>>>> .merge_file_x0r0MP
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class)->group('notify-db');
->>>>>>> .merge_file_L3rlzb
 
 it('extends base model', function (): void {
     $reflection = new \ReflectionClass(NotificationTemplateVersion::class);
@@ -67,11 +57,7 @@ it('has correct casts', function (): void {
     $instance = $reflection->newInstanceWithoutConstructor();
     $castsMethod = $reflection->getMethod('casts');
     $castsMethod->setAccessible(true);
-<<<<<<< .merge_file_hTncBD
-    $casts = \assertNotifyArray($castsMethod->invoke($instance));
-=======
     $casts = XotBasePest::assertArray($castsMethod->invoke($instance));
->>>>>>> .merge_file_L3rlzb
     Assert::assertSame('array', $casts['channels'] ?? null);
     Assert::assertSame('array', $casts['variables'] ?? null);
     Assert::assertSame('array', $casts['conditions'] ?? null);
@@ -80,48 +66,24 @@ it('has correct casts', function (): void {
 it('has template relationship method', function (): void {
     $reflection = new \ReflectionClass(NotificationTemplateVersion::class);
     $version = $reflection->newInstanceWithoutConstructor();
-<<<<<<< .merge_file_DcNuFl
-
-=======
-<<<<<<< .merge_file_hTncBD
-
     });
-=======
->>>>>>> .merge_file_x0r0MP
 });
->>>>>>> .merge_file_L3rlzb
 
 it('has restore method', function (): void {
     $reflection = new \ReflectionClass(NotificationTemplateVersion::class);
     $version = $reflection->newInstanceWithoutConstructor();
-<<<<<<< .merge_file_DcNuFl
-
-=======
-<<<<<<< .merge_file_hTncBD
-
     });
-=======
->>>>>>> .merge_file_x0r0MP
 });
->>>>>>> .merge_file_L3rlzb
 
 it('restore method returns NotificationTemplate', function (): void {
     $reflection = new \ReflectionClass(NotificationTemplateVersion::class);
     $version = $reflection->newInstanceWithoutConstructor();
 
-<<<<<<< .merge_file_hTncBD
-        $method = new \ReflectionMethod($version, 'restore');
-    $returnType = $method->getReturnType();
-
-    Assert::assertNotNull($returnType);
-    \assertReflectionTypeName($returnType, NotificationTemplate::class);
-=======
     $method = new \ReflectionMethod($version, 'restore');
     $returnType = $method->getReturnType();
 
     Assert::assertNotNull($returnType);
     XotBasePest::assertReflectionTypeName($returnType, NotificationTemplate::class);
->>>>>>> .merge_file_L3rlzb
 });
 
 it('has expected table name', function (): void {
@@ -167,12 +129,7 @@ it('has media trait', function (): void {
 });
 
 it('has creator and updater relationships', function (): void {
-<<<<<<< .merge_file_DcNuFl
-    $version = new NotificationTemplateVersion();
-
-=======
     $version = new NotificationTemplateVersion;
-<<<<<<< .merge_file_hTncBD
 
         });
 
@@ -180,12 +137,9 @@ it('has media relationship', function (): void {
     $version = new NotificationTemplateVersion;
 
     });
-=======
->>>>>>> .merge_file_x0r0MP
 });
 
 it('has media relationship', function (): void {
     $version = new NotificationTemplateVersion();
 
 });
->>>>>>> .merge_file_L3rlzb

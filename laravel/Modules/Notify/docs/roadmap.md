@@ -3,15 +3,6 @@ title: "roadmap — puntatore"
 type: reference
 updated: 2026-05-21
 ---
-<<<<<<< .merge_file_KVC3tN
-
-# Policy globale (puntatore)
-
-Contenuto in wiki di progetto — non duplicare nei moduli ([#124](https://github.com/provtv/base_ptv_fila5_mono/issues/124)).
-
-→ [docs/wiki/rules/00-TRIGGER_MAP.md](../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
-=======
-
 # Policy globale (puntatore)
 
 Contenuto in wiki di progetto — non duplicare nei moduli ([#124](https://github.com/provtv/base_ptv_fila5_mono/issues/124)).
@@ -492,4 +483,3 @@ Sep 2024          Q4 2025          Q1 2026          Q2 2026          2027+
 **Last Consolidated**: April 3, 2026  
 **Consolidation Agent**: GitHub Copilot CLI  
 **Next Review**: May 1, 2026
->>>>>>> .merge_file_geWl8f

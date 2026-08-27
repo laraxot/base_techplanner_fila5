@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_MOTOpd
-=======
 ---
 title: "Multi-Agent Collaboration Rules & Guidelines"
 module: notify
@@ -9,7 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
->>>>>>> .merge_file_IH4pFR
 # Multi-Agent Collaboration Rules & Guidelines
 
 > **Purpose**: Establish rules, memories, and skills for effective multi-agent AI collaboration  

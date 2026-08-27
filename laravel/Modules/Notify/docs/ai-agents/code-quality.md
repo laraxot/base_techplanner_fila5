@@ -39,13 +39,6 @@ bash laravel/tools/phpmd.sh laravel text phpmd.xml --exclude vendor,node_modules
 
 **Di ritorno:**
 - → [CLAUDE.md - Code Quality](../../CLAUDE.md)
-<<<<<<< .merge_file_fhBtxS
 - → [AGENTS.md - Quality Checks](../../AGENTS.md#quality-checks-obbligatori-dopo-ogni-modifica)
-=======
-<<<<<<< .merge_file_aohYEo
-- → [AGENTS.md - Quality Checks](../../AGENTS.md#quality-checks-obbligatori-dopo-ogni-modifica)
-=======
->>>>>>> .merge_file_zGf0bH
 - → [agents.md - Quality Checks](../../agents.md#quality-checks-obbligatori-dopo-ogni-modifica)
->>>>>>> .merge_file_MHhCWB
 - → [INDEX](index.md)

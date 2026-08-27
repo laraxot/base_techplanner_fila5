@@ -52,9 +52,6 @@ related:
 **Generated**: 2026-03-26 12:39
 **Auto-Generated**: true
 **Maintained by**: AI Agents Team
-<<<<<<< .merge_file_mQ9Ysv
-=======
-
 ---
 
 <!-- Merged from 00-INDEX.md, which collided with this file on case-insensitive filesystems. -->
@@ -100,4 +97,3 @@ related:
 **Generated**: 2026-03-26 12:39
 **Auto-Generated**: true
 **Maintained by**: AI Agents Team
->>>>>>> .merge_file_vLvTjZ

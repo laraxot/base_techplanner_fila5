@@ -1,12 +1,5 @@
-<<<<<<< .merge_file_m3tmDF
 # 🔒 FixCity Security Checklist
-=======
-<<<<<<< .merge_file_C3yHmx
-# 🔒 FixCity Security Checklist
-=======
->>>>>>> .merge_file_I5YfpY
 # 🔒 Notify Security Checklist
->>>>>>> .merge_file_hKdDLd
 
 **Status**: Production Ready
 
@@ -404,21 +397,9 @@ Overall Security Score: 92/100
 
 ## 📞 Security Contacts
 
-<<<<<<< .merge_file_m3tmDF
 **Security Team Lead**: security@fixcity.it  
 **Emergency Contact**: +39 06 1234 5678  
 **Incident Reporting**: incidents@fixcity.it
-=======
-<<<<<<< .merge_file_C3yHmx
-**Security Team Lead**: security@fixcity.it  
-**Emergency Contact**: +39 06 1234 5678  
-**Incident Reporting**: incidents@fixcity.it
-=======
-**Security Team Lead**: security@laraxot.it  
-**Emergency Contact**: +39 06 1234 5678  
-**Incident Reporting**: incidents@laraxot.it
->>>>>>> .merge_file_hKdDLd
->>>>>>> .merge_file_I5YfpY
 
 ---
 

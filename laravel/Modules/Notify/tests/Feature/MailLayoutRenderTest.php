@@ -10,11 +10,7 @@ use Modules\Notify\Tests\TestCase;
 use Modules\Xot\Actions\Theme\GetThemeContextAction;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< .merge_file_GVOAfH
 uses(\Modules\Notify\Tests\TestCase::class);
-=======
-uses(TestCase::class)->group('notify-db');
->>>>>>> .merge_file_D4slW6
 
 it('resolves christmas professional layout when context is christmas', function (): void {
     Config::set('xra.pub_theme', 'TwentyOne');

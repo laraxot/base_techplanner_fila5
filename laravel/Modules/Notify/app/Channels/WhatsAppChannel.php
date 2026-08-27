@@ -34,10 +34,7 @@ class WhatsAppChannel
      * Invia la notifica attraverso il canale WhatsApp.
      *
      * @param  Notification  $notification  Notifica da inviare
-<<<<<<< .merge_file_F5bc7H
      *
-=======
->>>>>>> .merge_file_uf5k4s
      * @return array<string, mixed>|null Risultato dell'operazione o null in caso di errore
      *
      * @throws Exception Se la notifica non ha il metodo toWhatsApp o il driver non è supportato

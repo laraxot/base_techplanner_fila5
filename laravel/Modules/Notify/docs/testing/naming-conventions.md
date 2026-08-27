@@ -50,15 +50,8 @@ find Modules/*/tests Themes/*/tests -type f \
 
 1. **Identificare i duplicati:**
    ```bash
-<<<<<<< .merge_file_GrS9Ya
    cd /var/www/_bases/base_fixcity_fila5_mono/laravel
-=======
-<<<<<<< .merge_file_pFotNI
-   cd /var/www/_bases/base_fixcity_fila5_mono/laravel
-=======
->>>>>>> .merge_file_iheOpe
    cd /var/www/_bases/base_ptvx_fila5_mono/laravel
->>>>>>> .merge_file_7iZHQI
    find Modules/*/tests Themes/*/tests -type f \
      \( -name "*test.php" -o -name "*test.pest.php" -o -name "pest.php" \) \
      ! -name "*Test.php" ! -name "*Test.pest.php" ! -name "Pest.php" \

@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_OZY0q1
-=======
 ---
 title: "Documentation Improvement Plan - Multi-Agent Edition"
 module: notify
@@ -9,7 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
->>>>>>> .merge_file_g2c8AL
 # Documentation Improvement Plan - Multi-Agent Edition
 
 > **Status**: 🟡 IN PROGRESS  

@@ -240,15 +240,8 @@ related:
 
 **URL Reference**:
 - Bootstrap Italia: https://italia.github.io/design-comuni-pagine-statiche/sito/homepage.html
-<<<<<<< .merge_file_XN6hc2
 - FixCity: http://fixcity.local/it/tests/homepage
-=======
-<<<<<<< .merge_file_AUTY0x
-- FixCity: http://fixcity.local/it/tests/homepage
-=======
->>>>>>> .merge_file_OnK70F
 - FixCity: http://ptv.local/it/tests/homepage
->>>>>>> .merge_file_VgM9qf
 
 ---
 

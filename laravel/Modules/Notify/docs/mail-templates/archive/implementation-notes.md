@@ -49,40 +49,14 @@ L'implementazione corretta degli allegati richiede una struttura specifica. Ecco
    ```php
    $attachments = [
        [
-<<<<<<< .merge_file_Ri5Ic7
-<<<<<<< .merge_file_qA0iOU
            'path' => '/var/www/html/saluteora/public_html/images/avatars/default-3.svg',
-=======
-=======
-<<<<<<< .merge_file_F4hBOp
-           'path' => '/var/www/html/saluteora/public_html/images/avatars/default-3.svg',
-=======
-<<<<<<< .merge_file_qA0iOU
-           'path' => '/var/www/html/saluteora/public_html/images/avatars/default-3.svg',
-=======
->>>>>>> .merge_file_vDdjDb
->>>>>>> .merge_file_x16FlB
            'path' => '[project-root]/public_html/images/avatars/default-3.svg',
->>>>>>> .merge_file_je7g1v
            'as' => 'logo.png',
            'mime' => 'image/png'
        ],
        [
-<<<<<<< .merge_file_Ri5Ic7
-<<<<<<< .merge_file_qA0iOU
            'path' => '/var/www/html/saluteora/public_html/images/avatars/default-3.svg',
-=======
-=======
-<<<<<<< .merge_file_F4hBOp
-           'path' => '/var/www/html/saluteora/public_html/images/avatars/default-3.svg',
-=======
-<<<<<<< .merge_file_qA0iOU
-           'path' => '/var/www/html/saluteora/public_html/images/avatars/default-3.svg',
-=======
->>>>>>> .merge_file_vDdjDb
->>>>>>> .merge_file_x16FlB
            'path' => '[project-root]/public_html/images/avatars/default-3.svg',
->>>>>>> .merge_file_je7g1v
            'as' => 'logo.png',
            'mime' => 'image/png'
        ]

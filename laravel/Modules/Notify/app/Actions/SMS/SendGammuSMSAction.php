@@ -57,11 +57,7 @@ final class SendGammuSMSAction implements SmsActionContract
      * Execute the action.
      *
      * @param  SmsData  $smsData  I dati del messaggio SMS
-<<<<<<< .merge_file_VbLyFL
-     * @return array<string, mixed> Risultato dell'operazione
-=======
      * @return array{status_code: int|null, status_txt: string} Risultato dell'operazione
->>>>>>> .merge_file_vyaLnc
      *
      * @throws Exception In caso di errore durante l'invio
      */

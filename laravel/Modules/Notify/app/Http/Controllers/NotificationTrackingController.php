@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_efPQB0
-=======
 <?php
 
 declare(strict_types=1);
@@ -67,4 +65,3 @@ class NotificationTrackingController extends Controller
         return redirect()->away((string) $url);
     }
 }
->>>>>>> .merge_file_WJOOdT

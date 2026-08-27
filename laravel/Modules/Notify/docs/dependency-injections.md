@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_VbJHYK
-=======
 ---
 title: "Dependency Injection Pattern in QueueableActions"
 module: notify
@@ -9,7 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
->>>>>>> .merge_file_Gvs16F
 # Dependency Injection Pattern in QueueableActions
 
 **Date**: 18 Dicembre 2025  

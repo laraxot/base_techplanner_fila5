@@ -458,29 +458,15 @@ Team
 - Cache: File
 
 **Staging**:
-<<<<<<< .merge_file_I0vz0W
 - URL: https://staging.fixcity.it
-=======
-<<<<<<< .merge_file_e7pmIZ
-- URL: https://staging.fixcity.it
-=======
->>>>>>> .merge_file_EqZgtS
 - URL: https://staging.ptv.it
->>>>>>> .merge_file_lmozZ0
 - DB: PostgreSQL
 - Queue: Redis
 - Cache: Redis
 
 **Production**:
-<<<<<<< .merge_file_I0vz0W
 - URL: https://fixcity.it
-=======
-<<<<<<< .merge_file_e7pmIZ
-- URL: https://fixcity.it
-=======
->>>>>>> .merge_file_EqZgtS
 - URL: https://ptv.it
->>>>>>> .merge_file_lmozZ0
 - DB: PostgreSQL (replicated)
 - Queue: Redis Cluster
 - Cache: Redis Cluster

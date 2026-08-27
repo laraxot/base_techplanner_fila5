@@ -281,15 +281,8 @@ return [
         'username' => env('SMSHOSTING_USERNAME'),
         'password' => env('SMSHOSTING_PASSWORD'),
         'sender' => env('SMSHOSTING_SENDER', '<nome progetto>'),
-<<<<<<< .merge_file_62l0BZ
 'sender' => env('SMSHOSTING_SENDER', 'Quaeris'),
-=======
-<<<<<<< .merge_file_R2lBzJ
-'sender' => env('SMSHOSTING_SENDER', 'Quaeris'),
-=======
->>>>>>> .merge_file_YVvRaR
 'sender' => env('SMSHOSTING_SENDER', 'App'),
->>>>>>> .merge_file_qn57fN
     ],
 ];
 ```
@@ -747,18 +740,10 @@ public function toTwilio($notifiable)
     return (new TwilioSmsMessage())
         ->content("<nome progetto>: Promemoria appuntamento {$this->appointment->formatted_date}. 
         Per annullare rispondere NO. Per info: <nome progetto>.it/privacy");
-<<<<<<< .merge_file_62l0BZ
 ->content("Quaeris: Promemoria appuntamento {$this->appointment->formatted_date}. 
         Per annullare rispondere NO. Per info: Quaeris.it/privacy");
-=======
-<<<<<<< .merge_file_R2lBzJ
-->content("Quaeris: Promemoria appuntamento {$this->appointment->formatted_date}. 
-        Per annullare rispondere NO. Per info: Quaeris.it/privacy");
-=======
->>>>>>> .merge_file_YVvRaR
 ->content("App: Promemoria appuntamento {$this->appointment->formatted_date}. 
         Per annullare rispondere NO. Per info: App.it/privacy");
->>>>>>> .merge_file_qn57fN
 }
 ```
 

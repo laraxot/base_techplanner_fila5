@@ -4,15 +4,8 @@ type: concept
 tags: [progress, report]
 created: 2026-07-14
 updated: 2026-07-14
-<<<<<<< .merge_file_mNnwrn
 qmd: "progress-report 📊 fixcity project - progress report"
-=======
-<<<<<<< .merge_file_7QJwtj
-qmd: "progress-report 📊 fixcity project - progress report"
-=======
->>>>>>> .merge_file_ZzopaO
 qmd: "progress-report 📊 ptv project - progress report"
->>>>>>> .merge_file_bEtxs7
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:

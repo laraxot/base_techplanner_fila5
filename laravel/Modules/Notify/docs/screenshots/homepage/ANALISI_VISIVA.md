@@ -1,26 +1,12 @@
-<<<<<<< .merge_file_zaHoHk
 # 📸 Analisi Visiva Homepage FixCity vs Bootstrap Italia
-=======
-<<<<<<< .merge_file_vciqQb
-# 📸 Analisi Visiva Homepage FixCity vs Bootstrap Italia
-=======
->>>>>>> .merge_file_odlAjt
 # 📸 Analisi Visiva Homepage Notify vs Bootstrap Italia
->>>>>>> .merge_file_TkvbEU
 
 ## Data: {{ date('Y-m-d H:i:s') }}
 
 ## Reference
 - **Bootstrap Italia**: https://italia.github.io/design-comuni-pagine-statiche/sito/homepage.html
-<<<<<<< .merge_file_zaHoHk
 - **FixCity**: http://fixcity.local/it/tests/homepage
-=======
-<<<<<<< .merge_file_vciqQb
-- **FixCity**: http://fixcity.local/it/tests/homepage
-=======
->>>>>>> .merge_file_odlAjt
 - **Notify**: http://laraxot.local/it/tests/homepage
->>>>>>> .merge_file_TkvbEU
 
 ---
 
@@ -42,15 +28,8 @@
 - Background: `#FFFFFF`
 - Text: `#1A1A1A`
 
-<<<<<<< .merge_file_zaHoHk
 ### FixCity (Attuale)
-=======
-<<<<<<< .merge_file_vciqQb
-### FixCity (Attuale)
-=======
->>>>>>> .merge_file_odlAjt
 ### Notify (Attuale)
->>>>>>> .merge_file_TkvbEU
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │ [Header Component - XotBase]                                │
@@ -91,15 +70,8 @@
 - Title H2: `text-center mb-5`
 - Card shadow: `shadow-sm`
 
-<<<<<<< .merge_file_zaHoHk
 ### FixCity (Attuale)
-=======
-<<<<<<< .merge_file_vciqQb
-### FixCity (Attuale)
-=======
->>>>>>> .merge_file_odlAjt
 ### Notify (Attuale)
->>>>>>> .merge_file_TkvbEU
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │ [Hero Component - Tailwind classes]                         │
@@ -147,15 +119,8 @@
 - Card: `card card-teaser shadow-sm h-100`
 - Button: `btn btn-outline-primary btn-sm mt-3`
 
-<<<<<<< .merge_file_zaHoHk
 ### FixCity (Attuale)
-=======
-<<<<<<< .merge_file_vciqQb
-### FixCity (Attuale)
-=======
->>>>>>> .merge_file_odlAjt
 ### Notify (Attuale)
->>>>>>> .merge_file_TkvbEU
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │ [Governance Component - Tailwind Grid]                      │
@@ -207,15 +172,8 @@
 - Date badge: `calendar-date text-primary h3`
 - Day abbr: `calendar-day text-muted small text-uppercase`
 
-<<<<<<< .merge_file_zaHoHk
 ### FixCity (Attuale)
-=======
-<<<<<<< .merge_file_vciqQb
-### FixCity (Attuale)
-=======
->>>>>>> .merge_file_odlAjt
 ### Notify (Attuale)
->>>>>>> .merge_file_TkvbEU
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │ [Events Component - Flexbox Tailwind]                       │
@@ -270,15 +228,8 @@
 - Card: `card card-teaser shadow-sm h-100`
 - Title: `h6 text-uppercase text-muted mb-3`
 
-<<<<<<< .merge_file_zaHoHk
 ### FixCity (Attuale)
-=======
-<<<<<<< .merge_file_vciqQb
-### FixCity (Attuale)
-=======
->>>>>>> .merge_file_odlAjt
 ### Notify (Attuale)
->>>>>>> .merge_file_TkvbEU
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │ [Topics Component - Tailwind Cards]                         │
@@ -324,15 +275,8 @@
 └─────────────────────────────────────────────────────────────┘
 ```
 
-<<<<<<< .merge_file_zaHoHk
 ### FixCity (Attuale)
-=======
-<<<<<<< .merge_file_vciqQb
-### FixCity (Attuale)
-=======
->>>>>>> .merge_file_odlAjt
 ### Notify (Attuale)
->>>>>>> .merge_file_TkvbEU
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │ [Footer Component - XotBase]                                │

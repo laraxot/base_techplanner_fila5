@@ -4,85 +4,28 @@ declare(strict_types=1);
 
 namespace Modules\Seo\Data;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 use DateTimeInterface;
 use Illuminate\Support\Arr;
 use Livewire\Wireable;
-<<<<<<< HEAD
-=======
 use DateTimeInterface;
 use Illuminate\Support\Arr;
 use Livewire\Wireable;
->>>>>>> c101b34 (.)
-=======
-use DateTimeInterface;
-use Illuminate\Support\Arr;
-use Livewire\Wireable;
->>>>>>> d0f51b6 (.)
 use Spatie\LaravelData\Concerns\WireableData;
 use Spatie\LaravelData\Data;
 
 class MetatagData extends Data implements Wireable
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> dbf8b8d (.)
-=======
->>>>>>> 77e0353 (.)
-=======
->>>>>>> a771e9c (.)
 use BadMethodCallException;
 use DateTimeInterface;
 use Illuminate\Support\Arr;
 use Livewire\Wireable;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> d20252d (.)
-=======
->>>>>>> dbf8b8d (.)
-=======
->>>>>>> 77e0353 (.)
-=======
 use DateTimeInterface;
 use Illuminate\Support\Arr;
 use Livewire\Wireable;
->>>>>>> fc52fe0 (.)
-=======
->>>>>>> a771e9c (.)
 use Modules\Seo\Interfaces\MetatagDataInterface;
 use Spatie\LaravelData\Concerns\WireableData;
 use Spatie\LaravelData\Data;
 
 class MetatagData extends Data implements MetatagDataInterface, Wireable
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 7ec200b (.)
-=======
->>>>>>> d20252d (.)
-=======
->>>>>>> dbf8b8d (.)
-=======
->>>>>>> 77e0353 (.)
-=======
->>>>>>> fc52fe0 (.)
-=======
->>>>>>> c101b34 (.)
-=======
->>>>>>> d0f51b6 (.)
-=======
->>>>>>> a771e9c (.)
 {
     use WireableData;
 
@@ -162,35 +105,7 @@ class MetatagData extends Data implements MetatagDataInterface, Wireable
             $result[$strKey] = $strValue;
         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         return $result ? $result : $default;
-=======
-        return $result ?: $default;
->>>>>>> d20252d (.)
-=======
-        return $result ?: $default;
->>>>>>> dbf8b8d (.)
-=======
-        return $result ?: $default;
->>>>>>> 77e0353 (.)
-=======
-        return $result ? $result : $default;
->>>>>>> fc52fe0 (.)
-=======
-        return $result ? $result : $default;
->>>>>>> c101b34 (.)
-=======
-        return $result ? $result : $default;
->>>>>>> d0f51b6 (.)
-=======
-        return $result ?: $default;
->>>>>>> a771e9c (.)
     }
 
     /**
@@ -308,49 +223,15 @@ class MetatagData extends Data implements MetatagDataInterface, Wireable
 
     /**
      * Get extra metadata.
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
      */
     public function get(string $key, mixed $default = null): mixed
-=======
-=======
->>>>>>> dbf8b8d (.)
-=======
->>>>>>> 77e0353 (.)
-=======
->>>>>>> a771e9c (.)
      *
      * @param  mixed  $default
      * @return mixed
      */
     public function get(string $key, $default = null)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> d20252d (.)
-=======
->>>>>>> dbf8b8d (.)
-=======
->>>>>>> 77e0353 (.)
-=======
      */
     public function get(string $key, mixed $default = null): mixed
->>>>>>> fc52fe0 (.)
-=======
-     */
-    public function get(string $key, mixed $default = null): mixed
->>>>>>> c101b34 (.)
-=======
-     */
-    public function get(string $key, mixed $default = null): mixed
->>>>>>> d0f51b6 (.)
-=======
->>>>>>> a771e9c (.)
     {
         return Arr::get($this->data, $key, $default);
     }
@@ -364,15 +245,6 @@ class MetatagData extends Data implements MetatagDataInterface, Wireable
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> a771e9c (.)
      * Handle dynamic method calls.
      *
      * @param  array<int, mixed>  $parameters
@@ -392,18 +264,6 @@ class MetatagData extends Data implements MetatagDataInterface, Wireable
     }
 
     /**
-<<<<<<< HEAD
->>>>>>> dbf8b8d (.)
-=======
->>>>>>> 77e0353 (.)
-=======
->>>>>>> fc52fe0 (.)
-=======
->>>>>>> c101b34 (.)
-=======
->>>>>>> d0f51b6 (.)
-=======
->>>>>>> a771e9c (.)
      * Convert the object to its array representation.
      *
      * @return array<string, mixed>
@@ -425,48 +285,14 @@ class MetatagData extends Data implements MetatagDataInterface, Wireable
 
     /**
      * Create a new instance from Livewire data.
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
      */
     public static function fromLivewire(mixed $value): self
-=======
-=======
->>>>>>> dbf8b8d (.)
-=======
->>>>>>> 77e0353 (.)
-=======
->>>>>>> a771e9c (.)
      *
      * @param  mixed  $value
      */
     public static function fromLivewire($value): self
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> d20252d (.)
-=======
->>>>>>> dbf8b8d (.)
-=======
->>>>>>> 77e0353 (.)
-=======
      */
     public static function fromLivewire(mixed $value): self
->>>>>>> fc52fe0 (.)
-=======
-     */
-    public static function fromLivewire(mixed $value): self
->>>>>>> c101b34 (.)
-=======
-     */
-    public static function fromLivewire(mixed $value): self
->>>>>>> d0f51b6 (.)
-=======
->>>>>>> a771e9c (.)
     {
         if (is_array($value)) {
             /** @var array<string, mixed> $typedValue */

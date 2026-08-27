@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_WPYPjd
-=======
 ---
 title: "Dependencies (Module Notify)"
 module: notify
@@ -9,7 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
->>>>>>> .merge_file_YzzjdN
 # Dependencies (Module Notify)
 
 Canonical dependency map:

@@ -119,15 +119,8 @@ laravel/Themes/Sixteen/docs/body-structure-comparison/segnalazioni-elenco/
 
 **Subtask 4 - Verify JSON Content** (parallel with Subtask 3):
 - Input: PHASE-1-FINDINGS.md
-<<<<<<< .merge_file_072ljy
 - File: `laravel/config/local/fixcity/database/content/pages/tests.segnalazioni-elenco.json`
-=======
-<<<<<<< .merge_file_qXzReO
-- File: `laravel/config/local/fixcity/database/content/pages/tests.segnalazioni-elenco.json`
-=======
->>>>>>> .merge_file_PXR95W
 - File: `laravel/config/local/ptv/database/content/pages/tests.segnalazioni-elenco.json`
->>>>>>> .merge_file_CyJtIR
 - Tasks:
   - Verify all required sections present
   - Check translation keys are correct
@@ -140,15 +133,8 @@ laravel/Themes/Sixteen/docs/body-structure-comparison/segnalazioni-elenco/
 - [ ] Read PHASE-1-STRATEGY.md
 - [ ] Read GSD-PHASE-1-EXECUTION.md
 - [ ] Read EXECUTOR-2-SUBTASKS-3-4.md
-<<<<<<< .merge_file_072ljy
 - [ ] Understand translation pattern: `fixcity::segnalazione.fields.title.label`
-=======
-<<<<<<< .merge_file_qXzReO
-- [ ] Understand translation pattern: `fixcity::segnalazione.fields.title.label`
-=======
->>>>>>> .merge_file_PXR95W
 - [ ] Understand translation pattern: `ptv::segnalazione.fields.title.label`
->>>>>>> .merge_file_CyJtIR
 - [ ] Know NOT to create separate segnalazioni-elenco.blade.php
 - [ ] Have reference page ready: https://italia.github.io/design-comuni-pagine-statiche/sito/segnalazioni-elenco.html
 
@@ -352,15 +338,8 @@ Phase 2 planning can begin
 - `laravel/Themes/Sixteen/resources/views/pages/tests/[slug].blade.php`
 
 **WILL VERIFY (Subtask 4):**
-<<<<<<< .merge_file_072ljy
 - `laravel/config/local/fixcity/database/content/pages/tests.segnalazioni-elenco.json`
-=======
-<<<<<<< .merge_file_qXzReO
-- `laravel/config/local/fixcity/database/content/pages/tests.segnalazioni-elenco.json`
-=======
->>>>>>> .merge_file_PXR95W
 - `laravel/config/local/ptv/database/content/pages/tests.segnalazioni-elenco.json`
->>>>>>> .merge_file_CyJtIR
 
 **WILL CREATE:**
 - `laravel/Themes/Sixteen/docs/prompts/segnalazione_disservizio/PHASE-1-FINDINGS.md`
@@ -383,13 +362,7 @@ Phase 2 planning can begin
 - EXECUTOR-2-SUBTASKS-3-4.md (for Executor #2)
 
 **Tools** (5-10 min read):
-<<<<<<< .merge_file_072ljy
 - bashscripts/docs/html/INDEX.md (comparison tools)
-=======
-<<<<<<< .merge_file_qXzReO
-- bashscripts/docs/html/INDEX.md (comparison tools)
-=======
->>>>>>> .merge_file_PXR95W
 - bashscripts/docs/html/index.md (comparison tools)
 
 ---
@@ -806,7 +779,6 @@ Phase 2 planning can begin
 
 **Tools** (5-10 min read):
 - bashscripts/docs/html/index.md (comparison tools)
->>>>>>> .merge_file_CyJtIR
 
 ---
 

@@ -22,33 +22,11 @@ related:
 
 ## Introduzione
 
-<<<<<<< .merge_file_rW1NoW
-<<<<<<< .merge_file_umofzX
-=======
-<<<<<<< .merge_file_8Dafbi
-=======
-<<<<<<< .merge_file_umofzX
->>>>>>> .merge_file_EmkMbI
->>>>>>> .merge_file_ekMrFq
-Questo documento analizza un approccio avanzato per la generazione di slug da titoli nei form Filament, con particolare attenzione alla preservazione degli slug per i contenuti già pubblicati. Questa metodologia è particolarmente rilevante per il modulo Notify di SaluteOra, in particolare per la gestione dei template email.
-
-## Concetto Base
-
-La generazione automatica di slug a partire da un campo titolo è una pratica comune che migliora l'usabilità dei form. Tuttavia, una volta che un contenuto viene pubblicato, modificare lo slug può causare problemi di accessibilità (errori 404) per gli URL esistenti. 
-<<<<<<< .merge_file_rW1NoW
-=======
-=======
-<<<<<<< .merge_file_8Dafbi
-=======
-=======
->>>>>>> .merge_file_EmkMbI
->>>>>>> .merge_file_ekMrFq
 Questo documento analizza un approccio avanzato per la generazione di slug da titoli nei form Filament, con particolare attenzione alla preservazione degli slug per i contenuti già pubblicati. Questa metodologia è particolarmente rilevante per il modulo Notify di <nome progetto>, in particolare per la gestione dei template email.
 
 ## Concetto Base
 
 La generazione automatica di slug a partire da un campo titolo è una pratica comune che migliora l'usabilità dei form. Tuttavia, una volta che un contenuto viene pubblicato, modificare lo slug può causare problemi di accessibilità (errori 404) per gli URL esistenti.
->>>>>>> .merge_file_oyCi7b
 
 L'approccio qui documentato implementa una logica più sofisticata che:
 
@@ -93,40 +71,10 @@ TextInput::make('name')
         if ($operation === 'edit' && $record->isPublished()) {
             return;
         }
-<<<<<<< .merge_file_rW1NoW
-<<<<<<< .merge_file_umofzX
-        
-=======
-=======
-<<<<<<< .merge_file_8Dafbi
-        
-=======
-<<<<<<< .merge_file_umofzX
-        
-=======
->>>>>>> .merge_file_EmkMbI
->>>>>>> .merge_file_ekMrFq
-
->>>>>>> .merge_file_oyCi7b
         // Non aggiornare lo slug se è stato modificato manualmente
         if (($get('slug') ?? '') !== Str::slug($old)) {
             return;
         }
-<<<<<<< .merge_file_rW1NoW
-<<<<<<< .merge_file_umofzX
-        
-=======
-=======
-<<<<<<< .merge_file_8Dafbi
-        
-=======
-<<<<<<< .merge_file_umofzX
-        
-=======
->>>>>>> .merge_file_EmkMbI
->>>>>>> .merge_file_ekMrFq
-
->>>>>>> .merge_file_oyCi7b
         // Aggiorna lo slug solo se le condizioni sopra non sono verificate
         $set('slug', Str::slug($state));
     })
@@ -139,21 +87,8 @@ TextInput::make('slug')
     ->required()
     ->maxLength(255)
     ->unique(MailTemplate::class, 'slug', fn ($record) => $record)
-<<<<<<< .merge_file_rW1NoW
-<<<<<<< .merge_file_umofzX
     ->disabled(fn (?string $operation, ?Model $record) => 
-=======
-=======
-<<<<<<< .merge_file_8Dafbi
-    ->disabled(fn (?string $operation, ?Model $record) => 
-=======
-<<<<<<< .merge_file_umofzX
-    ->disabled(fn (?string $operation, ?Model $record) => 
-=======
->>>>>>> .merge_file_EmkMbI
->>>>>>> .merge_file_ekMrFq
     ->disabled(fn (?string $operation, ?Model $record) =>
->>>>>>> .merge_file_oyCi7b
         $operation === 'edit' && $record->isPublished())
 ```
 
@@ -182,21 +117,6 @@ public function isPublished(): bool
     if ($this->logs()->count() > 0) {
         return true;
     }
-<<<<<<< .merge_file_rW1NoW
-<<<<<<< .merge_file_umofzX
-    
-=======
-=======
-<<<<<<< .merge_file_8Dafbi
-    
-=======
-<<<<<<< .merge_file_umofzX
-    
-=======
->>>>>>> .merge_file_EmkMbI
->>>>>>> .merge_file_ekMrFq
-
->>>>>>> .merge_file_oyCi7b
     // O basata su un flag specifico
     return (bool) $this->is_published;
 }
@@ -217,78 +137,24 @@ public static function getFormSchema(): array
                 if ($operation === 'edit' && $record && $record->isPublished()) {
                     return;
                 }
-<<<<<<< .merge_file_rW1NoW
-<<<<<<< .merge_file_umofzX
-                
-=======
-=======
-<<<<<<< .merge_file_8Dafbi
-                
-=======
-<<<<<<< .merge_file_umofzX
-                
-=======
->>>>>>> .merge_file_EmkMbI
->>>>>>> .merge_file_ekMrFq
-
->>>>>>> .merge_file_oyCi7b
                 // Non aggiornare lo slug se è stato modificato manualmente
                 if (($get('slug') ?? '') !== Str::slug($old)) {
                     return;
                 }
-<<<<<<< .merge_file_rW1NoW
-<<<<<<< .merge_file_umofzX
-=======
-<<<<<<< .merge_file_8Dafbi
-=======
-<<<<<<< .merge_file_umofzX
->>>>>>> .merge_file_EmkMbI
->>>>>>> .merge_file_ekMrFq
-                
-                // Aggiorna lo slug solo se le condizioni sopra non sono verificate
-                $set('slug', Str::slug($state));
-            }),
-            
-<<<<<<< .merge_file_rW1NoW
-=======
-=======
-<<<<<<< .merge_file_8Dafbi
-=======
-=======
->>>>>>> .merge_file_EmkMbI
->>>>>>> .merge_file_ekMrFq
-
                 // Aggiorna lo slug solo se le condizioni sopra non sono verificate
                 $set('slug', Str::slug($state));
             }),
 
->>>>>>> .merge_file_oyCi7b
         'slug' => TextInput::make('slug')
             ->required()
             ->unique(MailTemplate::class, 'slug', fn ($record) => $record)
             ->maxLength(255)
-<<<<<<< .merge_file_rW1NoW
-<<<<<<< .merge_file_umofzX
-=======
-<<<<<<< .merge_file_8Dafbi
->>>>>>> .merge_file_ekMrFq
             ->disabled(fn (?string $operation, ?Model $record) => 
                 $operation === 'edit' && $record && $record->isPublished()),
             
-=======
-<<<<<<< .merge_file_rW1NoW
-=======
-<<<<<<< .merge_file_umofzX
-            ->disabled(fn (?string $operation, ?Model $record) => 
-                $operation === 'edit' && $record && $record->isPublished()),
-            
-=======
->>>>>>> .merge_file_EmkMbI
->>>>>>> .merge_file_ekMrFq
             ->disabled(fn (?string $operation, ?Model $record) =>
                 $operation === 'edit' && $record && $record->isPublished()),
 
->>>>>>> .merge_file_oyCi7b
         // Altri campi...
     ];
 }
@@ -334,21 +200,8 @@ In alternativa o in aggiunta, è possibile implementare un sistema di reindirizz
 
 L'implementazione di una generazione intelligente di slug per i template email migliora significativamente la stabilità e l'usabilità del sistema. Preservando gli slug dei template pubblicati, si prevengono problemi di accessibilità e si garantisce un'esperienza utente coerente.
 
-<<<<<<< .merge_file_rW1NoW
-<<<<<<< .merge_file_umofzX
 Per il modulo Notify di SaluteOra, questa soluzione rappresenta un equilibrio ottimale tra automazione e controllo, con particolare attenzione alla preservazione dei link esistenti.
-=======
-=======
-<<<<<<< .merge_file_8Dafbi
-Per il modulo Notify di SaluteOra, questa soluzione rappresenta un equilibrio ottimale tra automazione e controllo, con particolare attenzione alla preservazione dei link esistenti.
-=======
-<<<<<<< .merge_file_umofzX
-Per il modulo Notify di SaluteOra, questa soluzione rappresenta un equilibrio ottimale tra automazione e controllo, con particolare attenzione alla preservazione dei link esistenti.
-=======
->>>>>>> .merge_file_EmkMbI
->>>>>>> .merge_file_ekMrFq
 Per il modulo Notify di <nome progetto>, questa soluzione rappresenta un equilibrio ottimale tra automazione e controllo, con particolare attenzione alla preservazione dei link esistenti.
->>>>>>> .merge_file_oyCi7b
 
 ## Riferimenti
 

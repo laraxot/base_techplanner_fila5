@@ -54,11 +54,7 @@ final class SendPlivoSMSAction implements SmsActionContract
      * Execute the action.
      *
      * @param  SmsData  $smsData  I dati del messaggio SMS
-<<<<<<< .merge_file_YZUIEG
-     * @return array<string, mixed> Risultato dell'operazione
-=======
      * @return array{status_code: int, status_txt: string} Risultato dell'operazione
->>>>>>> .merge_file_S3AGSG
      *
      * @throws Exception In caso di errore durante l'invio
      */

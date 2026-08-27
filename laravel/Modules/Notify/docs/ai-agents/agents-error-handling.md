@@ -81,13 +81,6 @@ try {
 
 - [Indice AGENTS](./agents-split-index.md)
 - [phpstan.md](./phpstan.md) - Analisi statica
-<<<<<<< .merge_file_0gON8G
 - [AGENTS.md originale](../../AGENTS.md)
-=======
-<<<<<<< .merge_file_byyQNh
-- [AGENTS.md originale](../../AGENTS.md)
-=======
->>>>>>> .merge_file_u8udxC
 - [agents.md originale](../../agents.md)
->>>>>>> .merge_file_l8QWgM
 - [Index principale](./index.md)

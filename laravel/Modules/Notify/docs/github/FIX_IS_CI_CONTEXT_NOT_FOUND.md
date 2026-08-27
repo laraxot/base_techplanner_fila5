@@ -153,15 +153,8 @@ bash -n bashscripts/git/subtrees/sync_remote_repo.sh && echo "✅ OK"
 ### CLI Mode (Sviluppo Locale)
 
 ```bash
-<<<<<<< .merge_file_dN6F1k
 cd /var/www/_bases/base_fixcity_fila5
-=======
-<<<<<<< .merge_file_ov14Z5
-cd /var/www/_bases/base_fixcity_fila5
-=======
->>>>>>> .merge_file_a2KTbe
 cd /var/www/_bases/base_ptvx_fila5
->>>>>>> .merge_file_vNgyLM
 bashscripts/git/subtrees/sync_remote_repo.sh laraxot
 ```
 

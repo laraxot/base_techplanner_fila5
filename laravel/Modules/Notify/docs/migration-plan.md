@@ -41,23 +41,10 @@ related:
 |---------|-------------|----------|
 | `Fixcity` (in content) | 1,050 | 🔴 HIGH |
 | `FixCity` (in content) | 259 | 🔴 HIGH |
-<<<<<<< .merge_file_W9Hoze
-=======
-<<<<<<< .merge_file_71gFye
->>>>>>> .merge_file_rnWKWJ
-| `fixcity` (in content) | 220 | 🔴 HIGH |
-| `fixcity-` (in filenames) | TBD | 🟡 MEDIUM |
-| `fixcity.local` | 3 | 🟢 LOW |
-| `base_fixcity_fila5` | 11 | 🟢 LOW |
-<<<<<<< .merge_file_W9Hoze
-=======
-=======
->>>>>>> .merge_file_rnWKWJ
 | `ptv` (in content) | 220 | 🔴 HIGH |
 | `ptv-` (in filenames) | TBD | 🟡 MEDIUM |
 | `ptv.local` | 3 | 🟢 LOW |
 | `base_ptv_fila5` | 11 | 🟢 LOW |
->>>>>>> .merge_file_Pi5a4y
 
 ---
 
@@ -76,28 +63,14 @@ Defines:
 ### ✅ 2. Example Conversions
 
 #### File Renamed
-<<<<<<< .merge_file_W9Hoze
 - **Before**: `laravel/Modules/Cms/docs/fixcity-pages-content-blocks.md`
-=======
-<<<<<<< .merge_file_71gFye
-- **Before**: `laravel/Modules/Cms/docs/fixcity-pages-content-blocks.md`
-=======
->>>>>>> .merge_file_rnWKWJ
 - **Before**: `laravel/Modules/Cms/docs/ptv-pages-content-blocks.md`
->>>>>>> .merge_file_Pi5a4y
 - **After**: `laravel/Modules/Cms/docs/pages-content-blocks.md`
 
 #### Content Updated
 - Replaced `FixCity` → `[PROJECT_NAME]`
-<<<<<<< .merge_file_W9Hoze
 - Replaced `fixcity` → `[project_name]`
-=======
-<<<<<<< .merge_file_71gFye
-- Replaced `fixcity` → `[project_name]`
-=======
->>>>>>> .merge_file_rnWKWJ
 - Replaced `ptv` → `[project_name]`
->>>>>>> .merge_file_Pi5a4y
 - Added contextual notes for users
 - Made examples generic with placeholders
 
@@ -106,18 +79,10 @@ Defines:
 
 Changes:
 - Removed "FixCity PTVX ecosystem" → "PTVX ecosystem"
-<<<<<<< .merge_file_W9Hoze
 - Replaced `base_fixcity_fila5/` → `<project_root>/`
 - Replaced `fixcity.local` → `[YOUR_DOMAIN]`
-=======
-<<<<<<< .merge_file_71gFye
-- Replaced `base_fixcity_fila5/` → `<project_root>/`
-- Replaced `fixcity.local` → `[YOUR_DOMAIN]`
-=======
->>>>>>> .merge_file_rnWKWJ
 - Replaced `base_ptv_fila5/` → `<project_root>/`
 - Replaced `ptv.local` → `[YOUR_DOMAIN]`
->>>>>>> .merge_file_Pi5a4y
 - Replaced GitHub repo reference → `your-org/your-repo`
 - Added placeholder guidance notes
 
@@ -223,15 +188,8 @@ git commit -m "docs(Cms): make documentation agnostic"
 ### Pre-Commit Checklist
 
 For each module/theme:
-<<<<<<< .merge_file_W9Hoze
 - [ ] No `FixCity`, `Fixcity`, `fixcity` in content
-=======
-<<<<<<< .merge_file_71gFye
-- [ ] No `FixCity`, `Fixcity`, `fixcity` in content
-=======
->>>>>>> .merge_file_rnWKWJ
 - [ ] No `FixCity`, `Fixcity`, `ptv` in content
->>>>>>> .merge_file_Pi5a4y
 - [ ] No project-specific filenames
 - [ ] Placeholders used consistently:
   - `[PROJECT_NAME]` for platform name
@@ -280,15 +238,8 @@ fi
 # FixCity Blog Module
 
 This module provides blog functionality for FixCity platform.
-<<<<<<< .merge_file_W9Hoze
 Access at: fixcity.local/blog
-=======
-<<<<<<< .merge_file_71gFye
-Access at: fixcity.local/blog
-=======
->>>>>>> .merge_file_rnWKWJ
 Access at: ptv.local/blog
->>>>>>> .merge_file_Pi5a4y
 ```
 
 **After**:
@@ -309,24 +260,10 @@ Access at: `[YOUR_DOMAIN]/blog`
 
 1. Add to Fixcity config:
    ```php
-<<<<<<< .merge_file_W9Hoze
    config('fixcity.blog.settings')
    ```
 
 2. Routes available at fixcity.local/admin/blog
-=======
-<<<<<<< .merge_file_71gFye
-   config('fixcity.blog.settings')
-   ```
-
-2. Routes available at fixcity.local/admin/blog
-=======
-   config('ptv.blog.settings')
-   ```
-
-2. Routes available at ptv.local/admin/blog
->>>>>>> .merge_file_Pi5a4y
->>>>>>> .merge_file_rnWKWJ
 ```
 
 **After**:
@@ -382,15 +319,8 @@ git revert <commit-hash>
 
 ### Quantitative
 - ✅ 0 occurrences of "FixCity" in module/theme docs
-<<<<<<< .merge_file_W9Hoze
 - ✅ 0 occurrences of "fixcity" in module/theme docs
-=======
-<<<<<<< .merge_file_71gFye
-- ✅ 0 occurrences of "fixcity" in module/theme docs
-=======
->>>>>>> .merge_file_rnWKWJ
 - ✅ 0 occurrences of "ptv" in module/theme docs
->>>>>>> .merge_file_Pi5a4y
 - ✅ 100% of filenames are project-agnostic
 - ✅ 100% of cross-references use relative paths
 
@@ -465,15 +395,8 @@ A: Consider keeping it in the project root, not in the reusable Modules director
 A: Use generic names: "Blog Module" instead of "FixCity Blog Module".
 
 **Q: Can I still mention FixCity in examples?**  
-<<<<<<< .merge_file_W9Hoze
 A: Yes, but clearly mark them as examples: "e.g., 'fixcity' for a civic platform".
-=======
-<<<<<<< .merge_file_71gFye
-A: Yes, but clearly mark them as examples: "e.g., 'fixcity' for a civic platform".
-=======
->>>>>>> .merge_file_rnWKWJ
 A: Yes, but clearly mark them as examples: "e.g., 'ptv' for a civic platform".
->>>>>>> .merge_file_Pi5a4y
 
 ---
 

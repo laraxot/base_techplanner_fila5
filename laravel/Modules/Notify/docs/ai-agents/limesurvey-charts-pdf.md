@@ -61,15 +61,8 @@ Usare `MakePdf2Action` con `AnswersFilterData`.
 - [LimeSurvey Deep Dive](../../laravel/Modules/Limesurvey/docs/limesurvey-deep-dive-architecture.md)
 - [Professional Charts Guide](../../laravel/Modules/Chart/docs/filament-charts-professional-guide.md)
 - [JpGraph 4.4.3 Reference](../../laravel/Modules/Chart/docs/jpgraph-4-4-3-reference.md)
-<<<<<<< .merge_file_nYH26u
 - [PDF Generation Guide](../../laravel/Modules/Quaeris/docs/pdf-generation-with-charts.md)
-=======
-<<<<<<< .merge_file_E221AG
-- [PDF Generation Guide](../../laravel/Modules/Quaeris/docs/pdf-generation-with-charts.md)
-=======
->>>>>>> .merge_file_uKSQ2Z
 - [PDF Generation Guide](../../laravel/Modules/App/docs/pdf-generation-with-charts.md)
->>>>>>> .merge_file_bW0trM
 
 ## Collegamenti
 

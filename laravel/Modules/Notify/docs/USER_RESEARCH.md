@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_bccJ6Q
-=======
 ---
 title: "Notify Module - User Research"
 module: notify
@@ -9,7 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
->>>>>>> .merge_file_XtuDe1
 # Notify Module - User Research
 
 **Module:** Notify  

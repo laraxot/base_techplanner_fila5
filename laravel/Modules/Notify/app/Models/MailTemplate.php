@@ -32,11 +32,7 @@ use Spatie\Translatable\HasTranslations;
  * @property string $name
  * @property string $slug
  * @property array<string, mixed> $variables
-<<<<<<< .merge_file_oGykEp
- * @property mixed $translations
-=======
  * @property array<string, array<string, mixed>> $translations
->>>>>>> .merge_file_8oq0rL
  *
  * @method static Builder<static>|MailTemplate forMailable(Mailable $mailable)
  * @method static Builder<static>|MailTemplate newModelQuery()
@@ -48,18 +44,8 @@ use Spatie\Translatable\HasTranslations;
  * @method static Builder<static>|MailTemplate whereDeletedBy($value)
  * @method static Builder<static>|MailTemplate whereHtmlTemplate($value)
  * @method static Builder<static>|MailTemplate whereId($value)
-<<<<<<< .merge_file_HdP573
  * @method static Builder<static>|MailTemplate whereJsonContainsLocale(string $column, string $locale, ?mixed $value, string $operand = '=')
  * @method static Builder<static>|MailTemplate whereJsonContainsLocales(string $column, array<int, string> $locales, ?mixed $value, string $operand = '=')
-=======
-<<<<<<< .merge_file_oGykEp
- * @method static Builder<static>|MailTemplate whereJsonContainsLocale(string $column, string $locale, ?mixed $value, string $operand = '=')
- * @method static Builder<static>|MailTemplate whereJsonContainsLocales(string $column, array<int, string> $locales, ?mixed $value, string $operand = '=')
-=======
- * @method static Builder<static>|MailTemplate whereJsonContainsLocale(string $column, string $locale, mixed $value, string $operand = '=')
- * @method static Builder<static>|MailTemplate whereJsonContainsLocales(string $column, array<int, string> $locales, mixed $value, string $operand = '=')
->>>>>>> .merge_file_8oq0rL
->>>>>>> .merge_file_EiiaRQ
  * @method static Builder<static>|MailTemplate whereLocale(string $column, string $locale)
  * @method static Builder<static>|MailTemplate whereLocales(string $column, array<int, string> $locales)
  * @method static Builder<static>|MailTemplate whereMailable($value)
@@ -86,12 +72,9 @@ use Spatie\Translatable\HasTranslations;
  * @method static Builder<static>|MailTemplate whereHtmlLayoutPath($value)
  * @method static Builder<static>|MailTemplate whereVersion($value)
  *
-<<<<<<< .merge_file_oGykEp
  * @method static Builder<static>|MailTemplate whereHtmlLayoutPath($value)
  * @method static Builder<static>|MailTemplate whereVersion($value)
  *
-=======
->>>>>>> .merge_file_8oq0rL
  * @mixin \Eloquent
  */
 class MailTemplate extends SpatieMailTemplate implements MailTemplateInterface
@@ -134,10 +117,7 @@ class MailTemplate extends SpatieMailTemplate implements MailTemplateInterface
 
     /**
      * @param  Builder<static>  $query
-<<<<<<< .merge_file_oGykEp
      *
-=======
->>>>>>> .merge_file_8oq0rL
      * @return Builder<static>
      */
     public function scopeForMailable(Builder $query, Mailable $mailable): Builder

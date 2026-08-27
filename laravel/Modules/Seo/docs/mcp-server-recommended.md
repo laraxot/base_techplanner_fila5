@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> fc52fe0 (.)
-=======
->>>>>>> c101b34 (.)
-=======
->>>>>>> d0f51b6 (.)
 ---
 module: theme
 topic: mcp-server-recommended
@@ -19,18 +5,6 @@ canonical: ../../../Themes/docs/shared-components/MCP_SERVER_RECOMMENDED.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/MCP_SERVER_RECOMMENDED.md
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> d20252d (.)
-=======
->>>>>>> dbf8b8d (.)
-=======
->>>>>>> 77e0353 (.)
-=======
->>>>>>> a771e9c (.)
 # Server MCP consigliati per Seo
 
 Per il modulo Seo, si consiglia di utilizzare i seguenti server MCP:
@@ -47,22 +21,3 @@ Per il modulo Seo, si consiglia di utilizzare i seguenti server MCP:
 - Non usare fetch, mysql o redis se non attivo.
 
 Per dettagli e best practice consulta la guida generale MCP nel workspace.
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 7ec200b (.)
-=======
->>>>>>> d20252d (.)
-=======
->>>>>>> dbf8b8d (.)
-=======
->>>>>>> 77e0353 (.)
-=======
->>>>>>> fc52fe0 (.)
-=======
->>>>>>> c101b34 (.)
-=======
->>>>>>> d0f51b6 (.)
-=======
->>>>>>> a771e9c (.)

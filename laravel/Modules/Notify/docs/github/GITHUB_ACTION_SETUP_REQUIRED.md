@@ -45,15 +45,8 @@ ssh-keygen -t ed25519 -C "actions@github.com" -f ~/.ssh/subtree_sync
 
 ### Step 3: Add Private Key to Repo Secrets
 
-<<<<<<< .merge_file_ZYoeQZ
 1. Go to: **https://github.com/laraxot/base_fixcity_fila5/settings/secrets/actions**
-=======
-<<<<<<< .merge_file_PR6ouM
-1. Go to: **https://github.com/laraxot/base_fixcity_fila5/settings/secrets/actions**
-=======
->>>>>>> .merge_file_Eoh7NJ
 1. Go to: **https://github.com/laraxot/platform/settings/secrets/actions**
->>>>>>> .merge_file_2ggfsm
 2. Click **"New repository secret"**
 3. Fill in:
    - **Name**: `SUBTREE_SSH_KEY`
@@ -69,15 +62,8 @@ ssh-keygen -t ed25519 -C "actions@github.com" -f ~/.ssh/subtree_sync
 
 ```bash
 # Go to project root
-<<<<<<< .merge_file_ZYoeQZ
 cd /var/www/_bases/base_fixcity_fila5
-=======
-<<<<<<< .merge_file_PR6ouM
-cd /var/www/_bases/base_fixcity_fila5
-=======
->>>>>>> .merge_file_Eoh7NJ
 cd /var/www/_bases/base_ptvx_fila5
->>>>>>> .merge_file_2ggfsm
 
 # Create empty commit to trigger workflow
 git commit --allow-empty -m "Test subtree sync workflow"
@@ -86,15 +72,8 @@ git commit --allow-empty -m "Test subtree sync workflow"
 git push origin dev
 
 # Wait 1-2 minutes, then check:
-<<<<<<< .merge_file_ZYoeQZ
 # https://github.com/laraxot/base_fixcity_fila5/actions
-=======
-<<<<<<< .merge_file_PR6ouM
-# https://github.com/laraxot/base_fixcity_fila5/actions
-=======
->>>>>>> .merge_file_Eoh7NJ
 # https://github.com/laraxot/platform/actions
->>>>>>> .merge_file_2ggfsm
 ```
 
 ---
@@ -140,27 +119,11 @@ Full documentation is available at:
 
 ```bash
 # Using GitHub CLI
-<<<<<<< .merge_file_ZYoeQZ
 gh run list --repo laraxot/base_fixcity_fila5
 gh run view <run-id> --log
 ```
 
 Or visit: **https://github.com/laraxot/base_fixcity_fila5/actions**
-=======
-<<<<<<< .merge_file_PR6ouM
-gh run list --repo laraxot/base_fixcity_fila5
-gh run view <run-id> --log
-```
-
-Or visit: **https://github.com/laraxot/base_fixcity_fila5/actions**
-=======
-gh run list --repo laraxot/base_ptvx_fila5
-gh run view <run-id> --log
-```
-
-Or visit: **https://github.com/laraxot/platform/actions**
->>>>>>> .merge_file_2ggfsm
->>>>>>> .merge_file_Eoh7NJ
 
 ---
 
@@ -170,15 +133,8 @@ If you have questions about the setup:
 
 1. Check documentation in `bashscripts/docs/github/actions/`
 2. Review error logs on GitHub Actions
-<<<<<<< .merge_file_ZYoeQZ
 3. Contact: dev @fixcity.example.com
-=======
-<<<<<<< .merge_file_PR6ouM
-3. Contact: dev @fixcity.example.com
-=======
->>>>>>> .merge_file_Eoh7NJ
 3. Contact: dev @laraxot.example.com
->>>>>>> .merge_file_2ggfsm
 
 ---
 

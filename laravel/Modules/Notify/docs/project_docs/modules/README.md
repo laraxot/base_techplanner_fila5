@@ -204,18 +204,10 @@ Modulo per l'intelligenza artificiale.
 - Chatbots
 - Automation
 
-<<<<<<< .merge_file_IXH0tr
 ### fixcity/
 Modulo specifico per FixCity.
-=======
-<<<<<<< .merge_file_VuzODK
-### fixcity/
-Modulo specifico per FixCity.
-=======
->>>>>>> .merge_file_dIYpVR
 ### laraxot/
 Modulo specifico per Notify.
->>>>>>> .merge_file_N9Pzia
 
 **Contenuti:**
 - Business logic

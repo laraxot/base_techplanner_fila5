@@ -8,15 +8,8 @@
 
 ## Summary
 
-<<<<<<< .merge_file_qbFUXu
 Analisi e fix delle GitHub Actions del repository base_fixcity_fila5.
-=======
-<<<<<<< .merge_file_6PgQBW
-Analisi e fix delle GitHub Actions del repository base_fixcity_fila5.
-=======
->>>>>>> .merge_file_hC5Vgl
 Analisi e fix delle GitHub Actions del repository base_ptv_fila5.
->>>>>>> .merge_file_E1CS7f
 
 ---
 

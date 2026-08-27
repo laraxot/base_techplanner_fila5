@@ -276,18 +276,10 @@
 ## 📞 Support & Community
 
 ### Support Channels
-<<<<<<< .merge_file_QaXPZa
 - **📧 Email**: support@fixcity.com
 - **🐛 Issues**: [GitHub Issues](https://github.com/laraxot/fixcity/issues)
-=======
-<<<<<<< .merge_file_p9NNG4
-- **📧 Email**: support@fixcity.com
-- **🐛 Issues**: [GitHub Issues](https://github.com/laraxot/fixcity/issues)
-=======
->>>>>>> .merge_file_gtvVmx
 - **📧 Email**: support@ptv.com
 - **🐛 Issues**: [GitHub Issues](https://github.com/laraxot/ptv/issues)
->>>>>>> .merge_file_9F8DXz
 - **💬 Discord**: [Laraxot Community](https://discord.gg/laraxot)
 - **📚 Docs**: [Documentation Portal](https://docs.laraxot.com)
 

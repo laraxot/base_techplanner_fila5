@@ -13,7 +13,6 @@ return [
         'sort' => 50,
     ],
     'fields' => [
-<<<<<<< .merge_file_ykvSxH
         'chat_id' => [
             'label' => 'ID Chat',
             'placeholder' => 'Inserisci l\'ID della chat',
@@ -28,24 +27,16 @@ return [
             'description' => 'Testo del messaggio da inviare tramite Telegram',
             'tooltip' => '',
         ],
-=======
-        'chat_id' => ['label' => 'ID Chat', 'placeholder' => 'Inserisci l\'ID della chat', 'helper_text' => 'ID della chat Telegram di destinazione', 'description' => 'Identificativo univoco della chat Telegram', 'tooltip' => ''],
-        'message' => ['label' => 'Messaggio', 'placeholder' => 'Inserisci il messaggio da inviare', 'helper_text' => 'Contenuto del messaggio Telegram', 'description' => 'Testo del messaggio da inviare tramite Telegram', 'tooltip' => ''],
->>>>>>> .merge_file_uY8deO
         'parse_mode' => [
             'label' => 'Formato',
             'placeholder' => 'Seleziona il formato',
             'helper_text' => 'Formato di interpretazione del messaggio',
             'description' => 'Modalità di formattazione del messaggio',
-<<<<<<< .merge_file_ykvSxH
             'options' => [
                 'text' => 'Testo semplice',
                 'html' => 'HTML',
                 'markdown' => 'Markdown',
             ],
-=======
-            'options' => ['text' => 'Testo semplice', 'html' => 'HTML', 'markdown' => 'Markdown'],
->>>>>>> .merge_file_uY8deO
             'tooltip' => '',
         ],
         'text' => ['label' => 'text', 'placeholder' => 'text', 'helper_text' => 'text', 'description' => 'text'],

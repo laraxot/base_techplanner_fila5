@@ -27,11 +27,7 @@ use Modules\Notify\Models\Contact;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< .merge_file_dgKeHy
-uses(TestCase::class);
-=======
 uses(TestCase::class)->group('notify-db');
->>>>>>> .merge_file_PXFwhW
 
 beforeEach(function (): void {
     /** @var TestCase $this */

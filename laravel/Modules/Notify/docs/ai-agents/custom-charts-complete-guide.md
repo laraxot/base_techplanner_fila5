@@ -8,15 +8,8 @@
 
 ## Overview
 
-<<<<<<< .merge_file_Rx24qH
 Implementazione completa delle custom question types per Quaeris Fila5, basata sul pattern di Fila4 ma con ottimizzazioni moderne.
-=======
-<<<<<<< .merge_file_dLBcDK
-Implementazione completa delle custom question types per Quaeris Fila5, basata sul pattern di Fila4 ma con ottimizzazioni moderne.
-=======
->>>>>>> .merge_file_sKeBtg
 Implementazione completa delle custom question types per App Fila5, basata sul pattern di Fila4 ma con ottimizzazioni moderne.
->>>>>>> .merge_file_CJxocj
 
 ---
 
@@ -24,10 +17,6 @@ Implementazione completa delle custom question types per App Fila5, basata sul p
 
 ### 1. RootGroupedBf
 - **Pattern**: `custom:root_grouped_bf`
-<<<<<<< .merge_file_Rx24qH
-- **File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/RootGroupedBf.php`
-=======
-<<<<<<< .merge_file_dLBcDK
 - **File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/RootGroupedBf.php`
 - **Scopo**: Raggruppa domande per gid, calcola valutazioni 1-5 vs 6-10
 - **Test URL**: `/quaeris/admin/ats/survey-pdfs/16/question-charts/234`
@@ -57,9 +46,6 @@ Implementazione completa delle custom question types per App Fila5, basata sul p
 ### 6. AvgGroup2
 - **Pattern**: `custom:avg_group_2`
 - **File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/AvgGroup2.php`
-=======
-- **File**: `Modules/App/app/Actions/QuestionChart/Custom/RootGroupedBf.php`
->>>>>>> .merge_file_sKeBtg
 - **Scopo**: Raggruppa domande per gid, calcola valutazioni 1-5 vs 6-10
 - **Test URL**: `/quaeris/admin/ats/survey-pdfs/16/question-charts/234`
 
@@ -87,12 +73,7 @@ Implementazione completa delle custom question types per App Fila5, basata sul p
 
 ### 6. AvgGroup2
 - **Pattern**: `custom:avg_group_2`
-<<<<<<< .merge_file_Rx24qH
 - **File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/AvgGroup2.php`
-=======
-- **File**: `Modules/App/app/Actions/QuestionChart/Custom/AvgGroup2.php`
->>>>>>> .merge_file_CJxocj
->>>>>>> .merge_file_sKeBtg
 
 ---
 
@@ -231,65 +212,22 @@ return new AnswersChartData(
 
 ```bash
 cd laravel
-<<<<<<< .merge_file_Rx24qH
 ./vendor/bin/pest Modules/Quaeris/tests/Unit/Actions/QuestionChart/CustomQuestionTypesTest.php
-=======
-<<<<<<< .merge_file_dLBcDK
-./vendor/bin/pest Modules/Quaeris/tests/Unit/Actions/QuestionChart/CustomQuestionTypesTest.php
-=======
->>>>>>> .merge_file_sKeBtg
 ./vendor/bin/pest Modules/App/tests/Unit/Actions/QuestionChart/CustomQuestionTypesTest.php
->>>>>>> .merge_file_CJxocj
 ```
 
 ### Manual Testing URLs
 
-<<<<<<< .merge_file_Rx24qH
-=======
-<<<<<<< .merge_file_dLBcDK
->>>>>>> .merge_file_sKeBtg
-1. **MailResponseRate**: `/quaeris/admin/ats/survey-pdfs/16/question-charts/192`
-2. **SmsResponseRate**: `/quaeris/admin/ats/survey-pdfs/16/question-charts/191`
-3. **ContactsCompleted**: `/quaeris/admin/ats/survey-pdfs/16/question-charts/190`
-4. **RootGroupedBf**: `/quaeris/admin/ats/survey-pdfs/16/question-charts/234`
-<<<<<<< .merge_file_Rx24qH
-=======
-=======
->>>>>>> .merge_file_sKeBtg
 1. **MailResponseRate**: `/this-project/admin/ats/survey-pdfs/16/question-charts/192`
 2. **SmsResponseRate**: `/this-project/admin/ats/survey-pdfs/16/question-charts/191`
 3. **ContactsCompleted**: `/this-project/admin/ats/survey-pdfs/16/question-charts/190`
 4. **RootGroupedBf**: `/this-project/admin/ats/survey-pdfs/16/question-charts/234`
->>>>>>> .merge_file_CJxocj
 
 ---
 
 ## Files Reference
 
 ### Custom Actions (6 files)
-<<<<<<< .merge_file_Rx24qH
-=======
-<<<<<<< .merge_file_dLBcDK
->>>>>>> .merge_file_sKeBtg
-- `Modules/Quaeris/app/Actions/QuestionChart/Custom/RootGroupedBf.php`
-- `Modules/Quaeris/app/Actions/QuestionChart/Custom/MailResponseRate.php`
-- `Modules/Quaeris/app/Actions/QuestionChart/Custom/SmsResponseRate.php`
-- `Modules/Quaeris/app/Actions/QuestionChart/Custom/ContactsCompleted.php`
-- `Modules/Quaeris/app/Actions/QuestionChart/Custom/ContactsCompleted2.php`
-- `Modules/Quaeris/app/Actions/QuestionChart/Custom/AvgGroup2.php`
-
-### Integration
-- `Modules/Quaeris/app/Actions/QuestionChart/GetAnswersByQuestionChart.php`
-
-### Tests
-- `Modules/Quaeris/tests/Unit/Actions/QuestionChart/CustomQuestionTypesTest.php`
-
-### Helper
-- `Modules/Quaeris/app/Actions/QuestionChart/Custom/Custom/MergeInvitedAnswers.php`
-<<<<<<< .merge_file_Rx24qH
-=======
-=======
->>>>>>> .merge_file_sKeBtg
 - `Modules/App/app/Actions/QuestionChart/Custom/RootGroupedBf.php`
 - `Modules/App/app/Actions/QuestionChart/Custom/MailResponseRate.php`
 - `Modules/App/app/Actions/QuestionChart/Custom/SmsResponseRate.php`
@@ -305,7 +243,6 @@ cd laravel
 
 ### Helper
 - `Modules/App/app/Actions/QuestionChart/Custom/Custom/MergeInvitedAnswers.php`
->>>>>>> .merge_file_CJxocj
 
 ---
 
@@ -324,15 +261,8 @@ cd laravel
 
 ## GitHub Resources
 
-<<<<<<< .merge_file_Rx24qH
 - **Issue #97**: https://github.com/laraxot/base_quaeris_fila5_mono/issues/97
-=======
-<<<<<<< .merge_file_dLBcDK
-- **Issue #97**: https://github.com/laraxot/base_quaeris_fila5_mono/issues/97
-=======
->>>>>>> .merge_file_sKeBtg
 - **Issue #97**: https://github.com/laraxot/base_ptvx_fila5_mono/issues/97
->>>>>>> .merge_file_CJxocj
 - **Comments**: 7 (all fixes documented)
 - **Status**: ✅ Complete & Ready for Production
 

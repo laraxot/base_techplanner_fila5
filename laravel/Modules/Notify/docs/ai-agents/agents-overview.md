@@ -25,16 +25,8 @@ Panoramica delle preferenze utente e del canone operativo del repository.
 
 ## Riferimenti
 
-<<<<<<< .merge_file_pSDXAP
 - [Main docs index](./00-INDEX.md)
 - [Architecture index](./architecture/00-INDEX.md)
-=======
-<<<<<<< .merge_file_WUWh4s
-- [Main docs index](./00-INDEX.md)
-- [Architecture index](./architecture/00-INDEX.md)
-=======
->>>>>>> .merge_file_ZwOBee
 - [Main docs index](./00-index.md)
 - [Architecture index](./architecture/00-index.md)
->>>>>>> .merge_file_eIrZ2n
 - [Filament table vs blade component](./architecture/filament-table-vs-blade-component.md)

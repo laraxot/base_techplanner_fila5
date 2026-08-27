@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_K87u4S
-=======
 ---
 title: "Multi-Agent Collaboration Guide"
 module: notify
@@ -9,7 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
->>>>>>> .merge_file_v9T2in
 # 🤖 Multi-Agent Collaboration Guide
 
 **Version**: 1.0  

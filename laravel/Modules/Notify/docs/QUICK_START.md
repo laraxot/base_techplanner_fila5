@@ -29,18 +29,10 @@
 
 ### 1. Clone Repository
 ```bash
-<<<<<<< .merge_file_V6g7NT
 git clone https://github.com/laraxot/fixcity.git
 cd fixcity/laravel
-=======
-<<<<<<< .merge_file_12Lqq7
-git clone https://github.com/laraxot/fixcity.git
-cd fixcity/laravel
-=======
->>>>>>> .merge_file_wzCG9i
 git clone https://github.com/laraxot/ptv.git
 cd ptv/laravel
->>>>>>> .merge_file_1KRoQe
 ```
 
 ### 2. Installazione Dipendenze
@@ -65,15 +57,8 @@ php artisan key:generate
 DB_CONNECTION=pgsql
 DB_HOST=127.0.0.1
 DB_PORT=5432
-<<<<<<< .merge_file_V6g7NT
 DB_DATABASE=fixcity
-=======
-<<<<<<< .merge_file_12Lqq7
-DB_DATABASE=fixcity
-=======
->>>>>>> .merge_file_wzCG9i
 DB_DATABASE=ptv
->>>>>>> .merge_file_1KRoQe
 DB_USERNAME=your_user
 DB_PASSWORD=your_password
 ```
@@ -244,15 +229,8 @@ return [
 ## 📁 STRUTTURA PROGETTO
 
 ```
-<<<<<<< .merge_file_V6g7NT
 base_fixcity_fila5_mono/
-=======
-<<<<<<< .merge_file_12Lqq7
-base_fixcity_fila5_mono/
-=======
->>>>>>> .merge_file_wzCG9i
 base_ptv_fila5_mono/
->>>>>>> .merge_file_1KRoQe
 ├── laravel/                    # Applicazione Laravel
 │   ├── Modules/               # Moduli Nwidart
 │   │   ├── Fixcity/          # Core business logic
@@ -540,27 +518,12 @@ php artisan optimize:clear
 ## 📞 SUPPORTO
 
 ### Team
-<<<<<<< .merge_file_V6g7NT
-=======
-<<<<<<< .merge_file_12Lqq7
->>>>>>> .merge_file_wzCG9i
-- **Slack**: #fixcity-dev
-- **Email**: dev@fixcity.it
-
-### Documentazione
-- **Issues**: [GitHub Issues](https://github.com/laraxot/fixcity/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/laraxot/fixcity/discussions)
-<<<<<<< .merge_file_V6g7NT
-=======
-=======
->>>>>>> .merge_file_wzCG9i
 - **Slack**: #ptv-dev
 - **Email**: dev@ptv.it
 
 ### Documentazione
 - **Issues**: [GitHub Issues](https://github.com/laraxot/ptv/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/laraxot/ptv/discussions)
->>>>>>> .merge_file_1KRoQe
 
 ---
 

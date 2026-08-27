@@ -15,10 +15,7 @@ related:
 | Lato conflitto | Contenuto | Scelta |
 |----------------|-----------|--------|
 | HEAD | XML SVG | **Tenere** |
-<<<<<<< .merge_file_IbhAqp
 | Incoming | Riga `git-lfs.github.com/spec/v1` | Scartare nel working tree mono (asset inline) |
-=======
->>>>>>> .merge_file_A8HCUk
 
 ## Filament `*Table.php`
 

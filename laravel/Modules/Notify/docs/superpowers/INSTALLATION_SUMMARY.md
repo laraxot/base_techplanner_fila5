@@ -9,15 +9,8 @@
 
 ## 📋 Overview
 
-<<<<<<< .merge_file_yjxaLu
 Successfully installed and configured the **Superpowers** agentic skills framework for the FixCity platform.
-=======
-<<<<<<< .merge_file_JEUde2
-Successfully installed and configured the **Superpowers** agentic skills framework for the FixCity platform.
-=======
->>>>>>> .merge_file_DEX2pn
 Successfully installed and configured the **Superpowers** agentic skills framework for the Notify platform.
->>>>>>> .merge_file_uSDlun
 
 ---
 
@@ -47,15 +40,8 @@ Successfully installed and configured the **Superpowers** agentic skills framewo
 | `docs/superpowers/installation.md` | 300+ | Installation guide |
 | `docs/superpowers/workflow.md` | 500+ | Workflow details |
 | `docs/superpowers/skills-reference.md` | 400+ | All skills reference |
-<<<<<<< .merge_file_yjxaLu
 | `docs/superpowers/INDEX.md` | 300+ | Quick reference index |
-=======
-<<<<<<< .merge_file_JEUde2
-| `docs/superpowers/INDEX.md` | 300+ | Quick reference index |
-=======
->>>>>>> .merge_file_DEX2pn
 | `docs/superpowers/index.md` | 300+ | Quick reference index |
->>>>>>> .merge_file_uSDlun
 
 #### Module Documentation
 
@@ -79,15 +65,8 @@ Successfully installed and configured the **Superpowers** agentic skills framewo
 | File | Updates |
 |------|---------|
 | `docs/index.md` | Added superpowers section, updated recent updates |
-<<<<<<< .merge_file_yjxaLu
 | `docs/superpowers/INDEX.md` | Created new index |
-=======
-<<<<<<< .merge_file_JEUde2
-| `docs/superpowers/INDEX.md` | Created new index |
-=======
->>>>>>> .merge_file_DEX2pn
 | `docs/superpowers/index.md` | Created new index |
->>>>>>> .merge_file_uSDlun
 
 ---
 
@@ -307,15 +286,8 @@ Agent: [Systematic debugging]
 - [Installation Guide](docs/superpowers/installation.md)
 - [Workflow Guide](docs/superpowers/workflow.md)
 - [Skills Reference](docs/superpowers/skills-reference.md)
-<<<<<<< .merge_file_yjxaLu
 - [Quick Index](docs/superpowers/INDEX.md)
-=======
-<<<<<<< .merge_file_JEUde2
-- [Quick Index](docs/superpowers/INDEX.md)
-=======
->>>>>>> .merge_file_DEX2pn
 - [Quick Index](docs/superpowers/index.md)
->>>>>>> .merge_file_uSDlun
 - [Laravel Integration](laravel/Modules/docs/superpowers.md)
 
 ### External

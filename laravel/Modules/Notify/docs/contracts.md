@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_mwB3i5
-=======
 ---
 title: "Contracts"
 module: notify
@@ -9,7 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
->>>>>>> .merge_file_cz9Qwl
 # Contracts
 
 Questo documento contiene i collegamenti a tutte le interfacce principali del sistema.

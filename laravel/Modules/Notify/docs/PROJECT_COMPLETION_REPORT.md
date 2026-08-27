@@ -133,21 +133,12 @@ FIXCITY_ANALYTICS_ENABLED=true
 /comune/eventi             # Eventi
 
 // API Fixcity
-<<<<<<< .merge_file_VzUSnm
 /api/fixcity/tickets       # Gestione ticket
 /api/fixcity/map/tickets   # Mappa ticket
 /api/fixcity/statistics    # Statistiche
-=======
-<<<<<<< .merge_file_mIHCh4
-/api/fixcity/tickets       # Gestione ticket
-/api/fixcity/map/tickets   # Mappa ticket
-/api/fixcity/statistics    # Statistiche
-=======
->>>>>>> .merge_file_NHkDSW
 /api/ptv/tickets       # Gestione ticket
 /api/ptv/map/tickets   # Mappa ticket
 /api/ptv/statistics    # Statistiche
->>>>>>> .merge_file_Na3CD3
 ```
 
 ## Test Implementati

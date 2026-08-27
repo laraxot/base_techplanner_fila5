@@ -4,15 +4,8 @@ type: concept
 tags: [excellence, 2025]
 created: 2026-07-14
 updated: 2026-07-14
-<<<<<<< .merge_file_YVYgMe
 qmd: "excellence-2025 🏆 fixcity - eccellenza 2025"
-=======
-<<<<<<< .merge_file_iLpZJg
-qmd: "excellence-2025 🏆 fixcity - eccellenza 2025"
-=======
->>>>>>> .merge_file_IgVDqm
 qmd: "excellence-2025 🏆 ptv - eccellenza 2025"
->>>>>>> .merge_file_P2NyGh
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -215,23 +208,10 @@ FixCity è la piattaforma enterprise leader per la gestione delle segnalazioni u
 - 📋 **Webinar mensili** - Best practices
 
 ### Supporto
-<<<<<<< .merge_file_YVYgMe
-=======
-<<<<<<< .merge_file_iLpZJg
->>>>>>> .merge_file_IgVDqm
-- ✅ **Email**: support@fixcity.it
-- ✅ **Slack**: #fixcity-dev
-- ✅ **GitHub**: Issues & Discussions
-- ✅ **Documentation**: docs.fixcity.it
-<<<<<<< .merge_file_YVYgMe
-=======
-=======
->>>>>>> .merge_file_IgVDqm
 - ✅ **Email**: support@ptv.it
 - ✅ **Slack**: #ptv-dev
 - ✅ **GitHub**: Issues & Discussions
 - ✅ **Documentation**: docs.ptv.it
->>>>>>> .merge_file_P2NyGh
 
 ---
 
@@ -391,25 +371,11 @@ public function createTicket(
 - **Doc Lead**: Documentation & Training
 
 ### Support Channels
-<<<<<<< .merge_file_YVYgMe
-=======
-<<<<<<< .merge_file_iLpZJg
->>>>>>> .merge_file_IgVDqm
-- **Email**: support@fixcity.it
-- **Slack**: #fixcity-community
-- **GitHub**: github.com/laraxot/fixcity
-- **Docs**: docs.fixcity.it
-- **Status**: status.fixcity.it
-<<<<<<< .merge_file_YVYgMe
-=======
-=======
->>>>>>> .merge_file_IgVDqm
 - **Email**: support@ptv.it
 - **Slack**: #ptv-community
 - **GitHub**: github.com/laraxot/ptv
 - **Docs**: docs.ptv.it
 - **Status**: status.ptv.it
->>>>>>> .merge_file_P2NyGh
 
 ---
 
@@ -425,15 +391,8 @@ Grazie a tutti i contributor che hanno reso possibile questo progetto:
 ### Open Source
 FixCity è orgogliosamente open source:
 - **License**: MIT
-<<<<<<< .merge_file_YVYgMe
 - **Repository**: github.com/laraxot/fixcity
-=======
-<<<<<<< .merge_file_iLpZJg
-- **Repository**: github.com/laraxot/fixcity
-=======
->>>>>>> .merge_file_IgVDqm
 - **Repository**: github.com/laraxot/ptv
->>>>>>> .merge_file_P2NyGh
 - **Contributions**: Welcome!
 - **Code of Conduct**: Contributor Covenant
 

@@ -106,15 +106,8 @@ Creare componenti compatibili Bootstrap Italia.
 ### Fase 3: Testing
 
 ```bash
-<<<<<<< .merge_file_d8yVC8
 curl http://fixcity.local/it/tests/homepage | grep -o '<section[^>]*>' | head -10
-=======
-<<<<<<< .merge_file_mDQLqb
-curl http://fixcity.local/it/tests/homepage | grep -o '<section[^>]*>' | head -10
-=======
->>>>>>> .merge_file_NCvfCw
 curl http://ptv.local/it/tests/homepage | grep -o '<section[^>]*>' | head -10
->>>>>>> .merge_file_SpkrcJ
 ```
 
 ---

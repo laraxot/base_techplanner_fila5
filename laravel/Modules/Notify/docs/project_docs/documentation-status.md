@@ -28,15 +28,8 @@ related:
 
 ## 🎯 EXECUTIVE SUMMARY
 
-<<<<<<< .merge_file_xQ84vr
 Stato della documentazione del progetto FixCity aggiornato a Ottobre 2025. La documentazione è in fase di
-=======
-<<<<<<< .merge_file_tWMi0e
-Stato della documentazione del progetto FixCity aggiornato a Ottobre 2025. La documentazione è in fase di
-=======
->>>>>>> .merge_file_t4JDX6
 Stato della documentazione del progetto Notify aggiornato a Ottobre 2025. La documentazione è in fase di
->>>>>>> .merge_file_oifCr8
 consolidamento seguendo le roadmap definite. Focus attuale: completamento documentazione moduli e temi.
 
 ---
@@ -60,15 +53,8 @@ consolidamento seguendo le roadmap definite. Focus attuale: completamento docume
 
 ---
 
-<<<<<<< .merge_file_xQ84vr
 #### ✅ Fixcity (Core Business) - 85% COMPLETATO
-=======
-<<<<<<< .merge_file_tWMi0e
-#### ✅ Fixcity (Core Business) - 85% COMPLETATO
-=======
->>>>>>> .merge_file_t4JDX6
 #### ✅ App (Core Business) - 85% COMPLETATO
->>>>>>> .merge_file_oifCr8
 **Documentazione Presente**:
 - [x] README.md completo
 - [x] roadmap.md
@@ -375,15 +361,8 @@ consolidamento seguendo le roadmap definite. Focus attuale: completamento docume
 ## 🎯 PRIORITÀ IMMEDIATE (Next 30 Days)
 
 ### Week 1-2: Moduli Core
-<<<<<<< .merge_file_xQ84vr
 - [ ] Completare API documentation Fixcity
-=======
-<<<<<<< .merge_file_tWMi0e
-- [ ] Completare API documentation Fixcity
-=======
->>>>>>> .merge_file_t4JDX6
 - [ ] Completare API documentation App
->>>>>>> .merge_file_oifCr8
 - [ ] Completare User guide 2FA/SSO
 - [ ] Aggiornare Xot migration guide
 
@@ -439,15 +418,8 @@ consolidamento seguendo le roadmap definite. Focus attuale: completamento docume
 - [Roadmap Documentation](./roadmaps/roadmap-documentation.md)
 
 ### Documentazione Moduli
-<<<<<<< .merge_file_xQ84vr
 - [Fixcity Module](../laravel/Modules/Fixcity/docs/)
-=======
-<<<<<<< .merge_file_tWMi0e
-- [Fixcity Module](../laravel/Modules/Fixcity/docs/)
-=======
->>>>>>> .merge_file_t4JDX6
 - [App Module](../laravel/Modules/App/docs/)
->>>>>>> .merge_file_oifCr8
 - [User Module](../laravel/Modules/User/docs/)
 - [Xot Module](../laravel/Modules/Xot/docs/)
 - [UI Module](../laravel/Modules/UI/docs/)

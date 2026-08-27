@@ -61,22 +61,6 @@ related:
 
 - [Architecture index](./architecture/00-index-1.md)
 - [Agents overview](./agents-overview.md)
-<<<<<<< .merge_file_pcFlxG
-=======
-<<<<<<< .merge_file_GUew9T
->>>>>>> .merge_file_TLUcoM
-- [AGENTS.md](../../../AGENTS.md)
-- [claude.md](../../../claude.md)
-- [gemini.md](../../../gemini.md)
-- [qwen.md](../../../qwen.md)
-- [Predict docs index](../../../laravel/Modules/Predict/docs/00-index-1.md)
-- [TwentyOne docs index](../../../laravel/Themes/TwentyOne/docs/00-index-1.md)
-- [Frontend rules index](../rules/frontend/00-index-1.md)
-- [Semantic CSS Rule](../rules/frontend/semantic-css-rule.md)
-<<<<<<< .merge_file_pcFlxG
-=======
-=======
->>>>>>> .merge_file_TLUcoM
 - [agents.md](../../../agents.md)
 - [claude.md](../../../claude.md)
 - [gemini.md](../../../gemini.md)
@@ -141,4 +125,3 @@ related:
 - [TwentyOne docs index](../../../laravel/Themes/TwentyOne/docs/00-index.md)
 - [Frontend rules index](../rules/frontend/00-index.md)
 - [Semantic CSS Rule](../rules/frontend/semantic-css-rule.md)
->>>>>>> .merge_file_Zo8g8H

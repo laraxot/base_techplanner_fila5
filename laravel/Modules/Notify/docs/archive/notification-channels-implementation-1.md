@@ -147,25 +147,10 @@ L'architettura implementata facilita la manutenibilità:
 L'implementazione dei canali di notifica  segue un'architettura coerente e ben strutturata, basata sul pattern Factory. Questo approccio garantisce separazione delle responsabilità, riutilizzabilità, testabilità e manutenibilità, facilitando l'estensione del sistema con nuovi provider e tipi di comunicazione.
 
 ## Collegamenti a Documentazione Correlata
-<<<<<<< .merge_file_ZwXBCJ
-<<<<<<< .merge_file_gkD98S
 - [Modulo di Notifica](./INDEX.md)
 - [Panoramica dell'Architettura](./ARCHITECTURE.md)
-=======
-=======
-<<<<<<< .merge_file_CCDL5c
-- [Modulo di Notifica](./INDEX.md)
-- [Panoramica dell'Architettura](./ARCHITECTURE.md)
-=======
-<<<<<<< .merge_file_gkD98S
-- [Modulo di Notifica](./INDEX.md)
-- [Panoramica dell'Architettura](./ARCHITECTURE.md)
-=======
->>>>>>> .merge_file_NqoJJN
->>>>>>> .merge_file_fghqx7
 - [Modulo di Notifica](./index.md)
 - [Panoramica dell'Architettura](./architecture.md)
->>>>>>> .merge_file_kJIBwk
 - [Modelli di Email](./EMAIL_TEMPLATES.md)
 - [Implementazione SMS](./SMS_IMPLEMENTATION.md)
 - [Risoluzione dei Problemi](./TROUBLESHOOTING.md)

@@ -31,10 +31,6 @@ related:
 │   │   ├── 00-TRIGGER_MAP.md    # Trigger map (link a globale)
 │   │   └── *.md                 # Regole specifiche modulo
 │   ├── skills/                   # Skill progettuali
-<<<<<<< .merge_file_GgwXMo
-│   │   ├── INDEX.md
-=======
-<<<<<<< .merge_file_Afus9d
 │   │   ├── INDEX.md
 │   │   └── *.md
 │   ├── commands/                 # Comandi progettuali
@@ -42,20 +38,12 @@ related:
 │   │   └── *.md
 │   ├── memories/                 # Memorie progettuali
 │   │   ├── INDEX.md
-=======
-│   │   ├── index.md
->>>>>>> .merge_file_TkuJNX
 │   │   └── *.md
 │   ├── commands/                 # Comandi progettuali
 │   │   ├── INDEX.md
 │   │   └── *.md
 │   ├── memories/                 # Memorie progettuali
-<<<<<<< .merge_file_GgwXMo
 │   │   ├── INDEX.md
-=======
-│   │   ├── index.md
->>>>>>> .merge_file_1tMCtd
->>>>>>> .merge_file_TkuJNX
 │   │   └── *.md
 │   ├── decisions/                # Architecture decision records
 │   └── troubleshooting/          # Bug fixes, error resolutions
@@ -134,13 +122,7 @@ graph TD
 mkdir -p docs/wiki/{rules,skills,commands,memories,concepts,entities,decisions,troubleshooting}
 
 # 2. Crea INDEX files (già creati)
-<<<<<<< .merge_file_GgwXMo
 cp docs/wiki/rules/INDEX.md docs/wiki/rules/
-=======
-<<<<<<< .merge_file_Afus9d
-cp docs/wiki/rules/INDEX.md docs/wiki/rules/
-=======
->>>>>>> .merge_file_TkuJNX
 cp docs/wiki/rules/index.md docs/wiki/rules/
 # ... etc
 
@@ -269,7 +251,6 @@ mkdir -p docs/wiki/{rules,skills,commands,memories,concepts,entities,decisions,t
 
 # 2. Crea INDEX files (già creati)
 cp docs/wiki/rules/index.md docs/wiki/rules/
->>>>>>> .merge_file_1tMCtd
 # ... etc
 
 # 3. Aggiungi a QMD collection (opzionale, già incluso global)

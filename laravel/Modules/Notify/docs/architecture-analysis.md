@@ -4,15 +4,8 @@ type: concept
 tags: [architecture, analysis]
 created: 2026-07-14
 updated: 2026-07-14
-<<<<<<< .merge_file_4IOH0f
 qmd: "architecture-analysis fixcity architecture deep dive analysis"
-=======
-<<<<<<< .merge_file_jtIog6
-qmd: "architecture-analysis fixcity architecture deep dive analysis"
-=======
->>>>>>> .merge_file_we8g2m
 qmd: "architecture-analysis ptv architecture deep dive analysis"
->>>>>>> .merge_file_yer5Bu
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -1124,15 +1117,8 @@ The frontend follows Italian Public Administration design guidelines:
 <x-ui.marketing.breadcrumbs :crumbs="[...]" />
 
 // Ticket List (AGID-compliant)
-<<<<<<< .merge_file_4IOH0f
 <x-fixcity::blocks.ticket_list.agid />
-=======
-<<<<<<< .merge_file_jtIog6
-<x-fixcity::blocks.ticket_list.agid />
-=======
->>>>>>> .merge_file_we8g2m
 <x-ptv::blocks.ticket_list.agid />
->>>>>>> .merge_file_yer5Bu
 
 // Forms (Filament + Custom CSS)
 - Titillium Web font family

@@ -1,12 +1,5 @@
-<<<<<<< .merge_file_tdyhRU
 # 📸 Analisi Visiva Header & Footer - FixCity vs Bootstrap Italia
-=======
-<<<<<<< .merge_file_bmp2Xf
-# 📸 Analisi Visiva Header & Footer - FixCity vs Bootstrap Italia
-=======
->>>>>>> .merge_file_mWy6Qd
 # 📸 Analisi Visiva Header & Footer - Notify vs Bootstrap Italia
->>>>>>> .merge_file_5ao6Vk
 
 ## Data: {{ date('Y-m-d H:i:s') }}
 
@@ -15,15 +8,8 @@
 ## 🎯 Problema Identificato
 
 **URL Reference**: https://italia.github.io/design-comuni-pagine-statiche/sito/homepage.html  
-<<<<<<< .merge_file_tdyhRU
 **FixCity**: http://fixcity.local/it/tests/homepage
-=======
-<<<<<<< .merge_file_bmp2Xf
-**FixCity**: http://fixcity.local/it/tests/homepage
-=======
->>>>>>> .merge_file_mWy6Qd
 **Notify**: http://laraxot.local/it/tests/homepage
->>>>>>> .merge_file_5ao6Vk
 
 **Differenze Principali**:
 1. ❌ Header: Colori non corretti
@@ -174,21 +160,12 @@
 
 ---
 
-<<<<<<< .merge_file_tdyhRU
 ## 3. FixCity - Differenze Attuali
 
 ### Header FixCity (Errato)
-=======
-<<<<<<< .merge_file_bmp2Xf
-## 3. FixCity - Differenze Attuali
-
-### Header FixCity (Errato)
-=======
->>>>>>> .merge_file_mWy6Qd
 ## 3. Notify - Differenze Attuali
 
 ### Header Notify (Errato)
->>>>>>> .merge_file_5ao6Vk
 
 ```
 ❌ Barra regione: Colore sbagliato
@@ -198,15 +175,8 @@
 ❌ Login: Stile non Bootstrap Italia
 ```
 
-<<<<<<< .merge_file_tdyhRU
 ### Footer FixCity (Errato)
-=======
-<<<<<<< .merge_file_bmp2Xf
-### Footer FixCity (Errato)
-=======
->>>>>>> .merge_file_mWy6Qd
 ### Footer Notify (Errato)
->>>>>>> .merge_file_5ao6Vk
 
 ```
 ❌ Feedback module: Assente o errato
