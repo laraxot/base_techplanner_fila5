@@ -86,7 +86,7 @@ describe('User Business Logic', function (): void {
     });
 
     test('enforces age restrictions for certain operations', function (): void {
-        /* @var TestCase $this */
+        /** @var TestCase $this */
         if (! Schema::connection('<nome progetto>')->hasColumn('profiles', 'uuid')) {
             Assert::markTestSkipped('profiles.uuid column missing — Profile model requires uuid.');
         }
@@ -216,7 +216,7 @@ describe('User Business Logic', function (): void {
     });
 
     test('enforces referential integrity for user relationships', function (): void {
-        /* @var TestCase $this */
+        /** @var TestCase $this */
         if (! Schema::connection('<nome progetto>')->hasColumn('profiles', 'uuid')) {
             Assert::markTestSkipped('profiles.uuid column missing — Profile model requires uuid.');
         }

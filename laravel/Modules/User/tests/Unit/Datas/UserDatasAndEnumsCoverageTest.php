@@ -31,7 +31,7 @@ describe('User Datas And Enums Coverage', function (): void {
     });
 
     test('builds permission data from permission config', function (): void {
-        /* @var TestCase $this */
+        /** @var TestCase $this */
         config([
             'permission' => [
                 'models' => [
@@ -73,7 +73,7 @@ describe('User Datas And Enums Coverage', function (): void {
     });
 
     test('builds filament shield data from filament shield config', function (): void {
-        /* @var TestCase $this */
+        /** @var TestCase $this */
         config([
             'filament-shield' => [
                 'shield_resource' => [
@@ -104,8 +104,8 @@ describe('User Datas And Enums Coverage', function (): void {
     });
 
     test('returns labels for both language enums', function (): void {
-        /* @var TestCase $this */
-        /* @var TestCase $this */
+        /** @var TestCase $this */
+        /** @var TestCase $this */
         app()->setLocale('it');
 
         $italianLabel = LanguageEnum::ITALIAN->getLabel();

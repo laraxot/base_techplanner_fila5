@@ -25,8 +25,6 @@ return [
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
         'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
     ],
-    'columns' => ['name' => 'Nome', 'subject' => 'Oggetto', 'type' => 'Tipo', 'created_at' => 'Creato il', 'updated_at' => 'Aggiornato il'],
-    'actions' => ['preview' => 'Anteprima'],
     'enums' => [
         'notification_type' => ['email' => 'Email', 'sms' => 'SMS', 'push' => 'Notifica Push'],
     ],

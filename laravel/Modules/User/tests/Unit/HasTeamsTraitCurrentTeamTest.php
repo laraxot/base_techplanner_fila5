@@ -13,7 +13,7 @@ uses(TestCase::class)->group('user-db');
 
 beforeEach(function (): void {
     /* @var \Modules\User\Tests\TestCase $this */
-    /* @var TestCase $this */
+    /** @var TestCase $this */
     $this->skipUnlessUsersTableReady();
 });
 

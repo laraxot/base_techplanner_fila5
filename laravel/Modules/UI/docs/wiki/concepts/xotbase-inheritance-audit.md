@@ -10,9 +10,6 @@ issues:
 discussions:
   - "https://github.com/laraxot/<nome repository>/discussions/12"
   - "https://github.com/laraxot/base_techplanner_fila5/discussions/12"
-- "https://github.com/laraxot/<nome repository>/discussions/12"
-=======
->>>>>>> .merge_file_wnrcfW
 related:
   - "../../../../Xot/docs/wiki/concepts/xotbase-filament-widget-hierarchy.md"
 ---
