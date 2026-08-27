@@ -1,6 +1,7 @@
 # QMD — ricerca locale su documentazione e note
 
 **Riferimento upstream**: [github.com/tobi/qmd](https://github.com/tobi/qmd) (MIT). Documentazione dettagliata: [README](https://github.com/tobi/qmd/blob/main/README.md), [CHANGELOG](https://github.com/tobi/qmd/blob/main/CHANGELOG.md), sintassi query: [docs/SYNTAX.md](https://github.com/tobi/qmd/blob/main/docs/SYNTAX.md) (se presente nel tag che usi).
+**Riferimento upstream**: [github.com/tobi/qmd](https://github.com/tobi/qmd) (MIT). Documentazione dettagliata: [README](https://github.com/tobi/qmd/blob/main/README.md), [CHANGELOG](https://github.com/tobi/qmd/blob/main/changelog.md), sintassi query: [docs/SYNTAX.md](https://github.com/tobi/qmd/blob/main/docs/SYNTAX.md) (se presente nel tag che usi).
 
 ## Scopo (business logic)
 
@@ -18,6 +19,7 @@ Output pensati per **flussi agentici** (CLI con `--json` / `--files`, **SDK** `@
 ## Relazione con il pattern LLM Wiki (Karpathy)
 
 | Layer | Ruolo | Dove sta in FixCity |
+| Layer | Ruolo | Dove sta in Notify |
 |-------|--------|---------------------|
 | **Wiki compilato** | Sintesi persistente, link, contraddizioni segnalate | [`karpathy-llm-wiki-adoption.md`](./karpathy-llm-wiki-adoption.md), [`../wiki/index.md`](../wiki/index.md), topic pages in `docs/wiki/` |
 | **Ricerca (QMD)** | Trovare *rapidamente* file e passaggi rilevanti nel corpus `.md` | Questo documento + indice locale |
@@ -26,6 +28,7 @@ Output pensati per **flussi agentici** (CLI con `--json` / `--files`, **SDK** `@
 QMD risolve il problema “**in quale file era scritto X?**” a scala grande. Il wiki risolve “**cosa abbiamo deciso e come si collega?**”. L’agente può: query QMD → leggere i file → aggiornare `docs/wiki/` e il log.
 
 ## Perché nel progetto FixCity
+## Perché nel progetto Notify
 
 - Indicizzare `docs/`, `laravel/Modules/*/docs/`, `laravel/Themes/*/docs/` senza inviare il corpus a servizi esterni.
 - Dare agli agenti **query** e **retrieve** allineati alla policy “docs come memoria”.
@@ -60,6 +63,9 @@ In ambienti con `~/.config` in sola lettura, usa percorsi locali scrivibili:
 export XDG_CONFIG_HOME=/var/www/_bases/base_fixcity_fila5/.cache/qmd-config
 export XDG_CACHE_HOME=/var/www/_bases/base_fixcity_fila5/.cache/qmd-cache
 export HOME=/var/www/_bases/base_fixcity_fila5/.cache/qmd-home
+export XDG_CONFIG_HOME=/var/www/_bases/base_ptvx_fila5/.cache/qmd-config
+export XDG_CACHE_HOME=/var/www/_bases/base_ptvx_fila5/.cache/qmd-cache
+export HOME=/var/www/_bases/base_ptvx_fila5/.cache/qmd-home
 ```
 
 Con questa configurazione, l'indice attivo vive sotto `.cache/qmd-cache/qmd/index.sqlite` invece che nella home utente.
@@ -76,6 +82,12 @@ qmd collection add ./laravel/Modules --name fixcity-modules --mask "**/docs/**/*
 # Contesto testuale (migliora rilevanza nelle spiegazioni lato tool)
 qmd context add qmd://fixcity-root-docs "Documentazione progetto FixCity (root docs/)"
 qmd context add qmd://fixcity-modules "Documentazione moduli Laravel (path Modules/*/docs/)"
+qmd collection add ./docs --name laraxot-root-docs
+qmd collection add ./laravel/Modules --name laraxot-modules --mask "**/docs/**/*.md"
+
+# Contesto testuale (migliora rilevanza nelle spiegazioni lato tool)
+qmd context add qmd://laraxot-root-docs "Documentazione progetto Notify (root docs/)"
+qmd context add qmd://laraxot-modules "Documentazione moduli Laravel (path Modules/*/docs/)"
 
 # Indicizzazione e embedding (embedding = modelli locali, vedi upstream)
 qmd update

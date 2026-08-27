@@ -422,7 +422,11 @@ class SecurityManagerAction {
 
 ## 🎯 MODULE OVERVIEW
 
+<<<<<<< .merge_file_oDNckf
 Il modulo **Notify** gestisce tutto il sistema di notifiche della piattaforma FixCity, inclusa la gestione delle notifiche in-app, email, SMS, push notifications e l'integrazione con servizi di terze parti.
+=======
+Il modulo **Notify** gestisce tutto il sistema di notifiche della piattaforma Notify, inclusa la gestione delle notifiche in-app, email, SMS, push notifications e l'integrazione con servizi di terze parti.
+>>>>>>> .merge_file_Fos6A5
 
 ### 🏗️ Architettura Modulo
 ```

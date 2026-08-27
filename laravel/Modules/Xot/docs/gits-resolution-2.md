@@ -191,8 +191,12 @@ php artisan lang:check
 
 ### Documentazione Generale
 - [Translation Standards](../../../docs/translation-standards.md)
-- [PHPStan Guidelines](../../../docs/phpstan_usage.md)
+- [PHPStan Guidelines](../../../docs/phpstan-usage.md)
 - [Git Best Practices](../../../docs/git-best-practices.md)
+- [Translation Standards](../../docs/translation-standards.md)
+- [PHPStan Guidelines](../../docs/phpstan_usage.md)
+- [Git Best Practices](../../docs/git-best-practices.md)
+>>>>>>> .merge_file_dFPabq
 
 ---
 

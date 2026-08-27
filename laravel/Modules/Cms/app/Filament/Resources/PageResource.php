@@ -22,9 +22,10 @@ class PageResource extends LangBaseResource
     protected static ?string $model = Page::class;
 
     /**
+     * Schema legacy del form: la sorgente di verità è PageForm::getFormSchema().
+     *
      * @return array<int|string, Component>
      */
-    #[\Override]
     public static function getFormSchema(): array
     {
         return [

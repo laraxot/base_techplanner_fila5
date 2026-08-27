@@ -419,6 +419,13 @@ return [
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
 - [Performance Optimization](./PERFORMANCE_GUIDE.md)
 
+- [Architettura Moduli](./architecture.md)
+- [Best Practices Laravel 12](./laravel_12_guide.md)
+- [Pattern Filament](./filament_patterns.md)
+- [Performance Optimization](./performance_guide.md)
+
+>>>>>>> .merge_file_M3d4RV
+
 ## 📊 Metriche di Qualità
 
 ### Attuale
@@ -436,6 +443,8 @@ return [
 ---
 
 **Data Analisi**: 2025-01-06
+**Data Analisi**: [DATE]
+>>>>>>> .merge_file_M3d4RV
 **Analista**: AI Code Review System
 **Priorità**: CRITICA - Richiede intervento immediato
 **Stima Effort**: 40-60 ore di refactoring

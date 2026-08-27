@@ -25,5 +25,28 @@ return [
         'updated_at' => [
             'label' => 'updated_at',
         ],
+        'is_read' => [
+            'label' => 'is_read',
+        ],
+        'is_unread' => [
+            'label' => 'is_unread',
+        ],
+    ],
+    'actions' => [
+        'create' => [
+            'label' => 'create',
+            'icon' => 'create',
+            'tooltip' => 'create',
+        ],
+        'layout' => [
+            'label' => 'layout',
+            'icon' => 'layout',
+            'tooltip' => 'layout',
+        ],
+        'delete' => [
+            'label' => 'delete',
+            'icon' => 'delete',
+            'tooltip' => 'delete',
+        ],
     ],
 ];

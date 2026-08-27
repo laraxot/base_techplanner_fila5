@@ -6,7 +6,7 @@ use Modules\Xot\Tests\TestCase;
 use Modules\Xot\ValueObjects\EmailValueObject;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('no-xot-db');
 
 it('accepts valid email', function (): void {
     $email = 'test@example.com';
@@ -15,4 +15,6 @@ it('accepts valid email', function (): void {
 });
 
 it('throws on invalid email', function (): void {
+    expect(fn (): EmailValueObject => new EmailValueObject('not-an-email'))
+        ->toThrow(InvalidArgumentException::class);
 });

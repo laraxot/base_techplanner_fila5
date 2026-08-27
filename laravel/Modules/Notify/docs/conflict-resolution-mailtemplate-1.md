@@ -92,7 +92,11 @@ Verificare che:
 - [Root Conflict Resolution Guidelines](../../../project_docs/conflict-resolution-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
+<<<<<<< .merge_file_c6AI4v
 - [Notify Module Documentation](readme.md)
+=======
+- [Notify Module Documentation](README.md)
+>>>>>>> .merge_file_jMnFyT
 - [SMS Implementation Guide](sms-implementation-1.md)
 - [Mail Templates Structure](mail-templates-structure-1.md)
 - [Translation Standards](translation-standards-2.md)

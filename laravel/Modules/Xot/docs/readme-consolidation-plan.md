@@ -64,3 +64,5 @@
 **Status**: 🧘 **IN PIANIFICAZIONE**
 
 **Ultimo aggiornamento**: 2026-01-09
+**Ultimo aggiornamento**: [DATE]
+>>>>>>> .merge_file_BmCpl7

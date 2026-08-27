@@ -50,6 +50,11 @@ related:
 ## 3. Invio SMS Massivo
 
 ### 3.1 Action
+<<<<<<< .merge_file_umObvj
+=======
+```
+
+>>>>>>> .merge_file_IJWurY
 ```php
 <?php
 
@@ -704,4 +709,8 @@ class NetfunNotificationIntegrationTest extends TestCase
 - [Prometheus PHP Client](https://github.com/promphp/prometheus_client_php) 
 # Netfun Examples
 
+<<<<<<< .merge_file_umObvj
 This document provides examples for Netfun integration.
+=======
+This document provides examples for Netfun integration.
+>>>>>>> .merge_file_IJWurY

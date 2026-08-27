@@ -1,23 +1,3 @@
----
-title: "PHPMD e PHP Insights Corrections - 2025-01-22"
-type: concept
-tags: [phpmd, phpinsights, corrections]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpmd-phpinsights-corrections-1 phpmd e php insights corrections - 2025-01-22"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-related:
-  - "./00-index-1.md"
-  - "./00-index.md"
-  - "./2fa-guide.md"
-  - "./2fa.md"
-  - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-  - "./actions-path-convention.md"
----
-
 # PHPMD e PHP Insights Corrections - 2025-01-22
 
 ## Obiettivo
@@ -118,6 +98,6 @@ I seguenti warning sono accettabili e non richiedono correzione immediata:
 
 ## Collegamenti
 
-- [Resources Corrections Summary](./resources-corrections-summary.md)
+- [Resources Corrections Summary](./resources-corrections-summary-2025-01-22.md)
 - [Quality Tools Report](./quality-tools-report.md)
 - [PHPStan Complete Success](./phpstan-complete-success.md)

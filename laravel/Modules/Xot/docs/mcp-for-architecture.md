@@ -105,6 +105,8 @@ SELECT
 FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE
 WHERE TABLE_SCHEMA = 'healthcare_app_data'
 WHERE TABLE_SCHEMA = 'app_data'
+WHERE TABLE_SCHEMA = 'quaeris_data'
+>>>>>>> .merge_file_ux2ldc
   AND REFERENCED_TABLE_NAME IS NOT NULL;
 
 -- Analizza tenant isolation
@@ -114,6 +116,8 @@ SELECT
 FROM INFORMATION_SCHEMA.COLUMNS
 WHERE TABLE_SCHEMA LIKE 'healthcare_app_%'
 WHERE TABLE_SCHEMA LIKE 'app_%'
+WHERE TABLE_SCHEMA LIKE 'quaeris_%'
+>>>>>>> .merge_file_ux2ldc
   AND COLUMN_NAME LIKE '%tenant%'
 GROUP BY TABLE_NAME;
 
@@ -124,6 +128,8 @@ SELECT
 FROM INFORMATION_SCHEMA.STATISTICS
 WHERE TABLE_SCHEMA = 'healthcare_app_data'
 WHERE TABLE_SCHEMA = 'app_data'
+WHERE TABLE_SCHEMA = 'quaeris_data'
+>>>>>>> .merge_file_ux2ldc
   AND SEQ_IN_INDEX = 1
 GROUP BY TABLE_NAME, COLUMN_NAME
 HAVING COUNT(*) < 3;
@@ -178,6 +184,8 @@ https://www.php-fig.org/psr/psr-12/
     "Modules/User/app/Models/BaseModel.php",
     "Modules/healthcare_app/app/Models/BaseModel.php",
     "Modules/ExternalProject/app/Models/BaseModel.php",
+    "Modules/Quaeris/app/Models/BaseModel.php",
+>>>>>>> .merge_file_ux2ldc
     "Modules/Xot/Tests/Architecture/BaseModelTest.php"
   ]
 }
@@ -274,6 +282,10 @@ File: `Modules/Xot/.mcp.json`
       "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_app_fila5_mono/laravel/Modules/Xot"],
       "env": {
         "ALLOWED_DIRECTORIES": "/var/www/_bases/base_app_fila5_mono/laravel/Modules/Xot"
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_quaeris_fila5_mono/laravel/Modules/Xot"],
+      "env": {
+        "ALLOWED_DIRECTORIES": "/var/www/_bases/base_quaeris_fila5_mono/laravel/Modules/Xot"
+>>>>>>> .merge_file_ux2ldc
       },
       "trust": false,
       "includeTools": [
@@ -289,6 +301,9 @@ File: `Modules/Xot/.mcp.json`
       "cwd": "/var/www/_bases/base_healthcare_app_fila5_mono/laravel/Modules/Xot",
       "args": ["-y", "@modelcontextprotocol/server-git", "--repository", "/var/www/_bases/base_app_fila5_mono"],
       "cwd": "/var/www/_bases/base_app_fila5_mono/laravel/Modules/Xot",
+      "args": ["-y", "@modelcontextprotocol/server-git", "--repository", "/var/www/_bases/base_quaeris_fila5_mono"],
+      "cwd": "/var/www/_bases/base_quaeris_fila5_mono/laravel/Modules/Xot",
+>>>>>>> .merge_file_ux2ldc
       "trust": false
     },
     "sequential-thinking-xot": {
@@ -345,6 +360,8 @@ File: `Modules/Xot/.mcp.json`
     "Modules/User/app/Models/BaseModel.php",
     "Modules/healthcare_app/app/Models/BaseModel.php",
     "Modules/ExternalProject/app/Models/BaseModel.php",
+    "Modules/Quaeris/app/Models/BaseModel.php",
+>>>>>>> .merge_file_ux2ldc
     "Modules/Xot/Models/XotBaseModel.php"
   ],
   "rationale": "Module sovereignty and Laraxot philosophy",
@@ -476,3 +493,6 @@ WHERE active = true;
 **Ultimo aggiornamento**: [DATE]  
 **Module**: Xot  
 **Versione**: 1.0.0
+=======
+**Versione**: 1.0.0
+>>>>>>> .merge_file_fYGipl

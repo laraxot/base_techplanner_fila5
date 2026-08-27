@@ -1,4 +1,6 @@
 # DRY/KISS Model Refactoring Analysis - 2025-10-15
+# DRY/KISS Model Refactoring Analysis - [DATE]
+>>>>>>> .merge_file_1igUPO
 
 ## Executive Summary
 
@@ -485,6 +487,10 @@ grep -h "class Base.*Model extends" Modules/*/app/Models/Base*.php | sort | uniq
 - [User Module Model Inheritance Rules](../../User/docs/model-inheritance-rules.md)
 - [CLAUDE.md - Eloquent Models Section](../../../CLAUDE.md#eloquent-models)
 - [Geo Model Inheritance Pattern](../../Geo/docs/model-inheritance-pattern.md)
+- [User Module Model Inheritance Rules](../../user/docs/model-inheritance-rules.md)
+- [CLAUDE.md - Eloquent Models Section](../../../CLAUDE.md#eloquent-models)
+- [Geo Model Inheritance Pattern](../../geo/docs/model-inheritance-pattern.md)
+>>>>>>> .merge_file_1igUPO
 
 ---
 

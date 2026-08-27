@@ -1,0 +1,3 @@
+# Profile
+
+https://learn.userfrosting.com/recipes/extending-the-user-model

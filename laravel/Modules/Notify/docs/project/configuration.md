@@ -10,6 +10,9 @@
 | **APP_URL** | `http://fixcity.local` | `.env` |
 | **Domain** | `fixcity.local` | Derived |
 | **Config Path** | `config/local/fixcity/xra.php` | Derived |
+| **APP_URL** | `http://laraxot.local` | `.env` |
+| **Domain** | `laraxot.local` | Derived |
+| **Config Path** | `config/local/laraxot/xra.php` | Derived |
 | **Active Theme** | `Sixteen` | Config |
 | **Document Root** | `public_html/` | Structure |
 | **Primary Lang** | `it` | Config |
@@ -29,6 +32,8 @@ function detectTheme(): string
     // 1. Read APP_URL
     $appUrl = env('APP_URL', 'http://fixcity.local');
     // Result: "http://fixcity.local"
+    $appUrl = env('APP_URL', 'http://laraxot.local');
+    // Result: "http://laraxot.local"
     
     // 2. Remove protocol and www
     $domain = str_replace(
@@ -58,6 +63,7 @@ function detectTheme(): string
 ## Configuration File
 
 **Path**: `laravel/config/local/fixcity/xra.php`
+**Path**: `laravel/config/local/laraxot/xra.php`
 
 ```php
 <?php
@@ -68,6 +74,7 @@ return [
     'adm_home' => '01',
     'enable_ads' => '1',
     'main_module' => 'Fixcity',
+    'main_module' => 'App',
     'primary_lang' => 'it',
     'pub_theme' => 'Sixteen',              // ← ACTIVE THEME
     'search_action' => 'it/videos',
@@ -83,6 +90,7 @@ return [
 
 ```
 base_fixcity_fila5/
+base_ptvx_fila5/
 ├── public_html/                    # 📁 DOCUMENT ROOT
 │   ├── assets/                    # Theme assets (CSS, JS, images)
 │   ├── index.php                  # Entry point
@@ -92,6 +100,7 @@ base_fixcity_fila5/
 │   ├── .env                       # Environment config (APP_URL)
 │   ├── config/
 │   │   └── local/fixcity/xra.php # Theme config
+│   │   └── local/laraxot/xra.php # Theme config
 │   ├── Modules/                   # Feature modules
 │   │   ├── AI/
 │   │   ├── Activity/
@@ -124,6 +133,7 @@ base_fixcity_fila5/
 | Path | Description | Example |
 |------|-------------|---------|
 | `base_path()` | Project root | `/var/www/_bases/base_fixcity_fila5/` |
+| `base_path()` | Project root | `/var/www/_bases/base_ptvx_fila5/` |
 | `base_path('public_html')` | Document root | `.../public_html/` |
 | `base_path('laravel')` | Laravel app | `.../laravel/` |
 | `base_path('laravel/Themes/Sixteen')` | Active theme | `.../laravel/Themes/Sixteen/` |

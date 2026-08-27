@@ -388,6 +388,8 @@ test('all models extend base model', function () {
 ## 🔗 **Collegamenti e Riferimenti**
 
 - [**README.md**](README.md) - Documentazione principale del modulo
+- [**README.md**](readme.md) - Documentazione principale del modulo
+>>>>>>> .merge_file_rAyBsd
 - [**Best Practices**](../project_docs/best-practices.md) - Best practices globali
 - [**Troubleshooting**](../project_docs/troubleshooting.md) - Risoluzione problemi
 

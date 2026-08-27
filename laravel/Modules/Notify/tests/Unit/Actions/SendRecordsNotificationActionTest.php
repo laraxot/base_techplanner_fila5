@@ -18,7 +18,7 @@ use Modules\Notify\Tests\TestCase;
 use Modules\Xot\Actions\Cast\SafeEloquentCastAction;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Notify\Tests\TestCase::class);
+uses(TestCase::class)->group('no-notify-db');
 
 /**
  * @param  array<string, mixed>  $attributes
@@ -29,8 +29,8 @@ function makeDummyBulkNotifyRecord(array $attributes = []): Model
 }
 
 test('send records notification action counts successful sends', function (): void {
-    app()->instance(SafeEloquentCastAction::class, new SendRecordsSafeEloquentCastStub);
-    app()->instance(SendRecordNotificationAction::class, new SendRecordNotificationNoopStub);
+    app()->instance(SafeEloquentCastAction::class, new SendRecordsSafeEloquentCastStub());
+    app()->instance(SendRecordNotificationAction::class, new SendRecordNotificationNoopStub());
 
     $records = new EloquentCollection([
         makeDummyBulkNotifyRecord(['id' => 1, 'name' => 'Alpha']),
@@ -50,8 +50,8 @@ test('send records notification action counts successful sends', function (): vo
 });
 
 test('send records notification action accumulates errors per channel', function (): void {
-    app()->instance(SafeEloquentCastAction::class, new SendRecordsSafeEloquentCastStub);
-    app()->instance(SendRecordNotificationAction::class, new SendRecordNotificationFailStub);
+    app()->instance(SafeEloquentCastAction::class, new SendRecordsSafeEloquentCastStub());
+    app()->instance(SendRecordNotificationAction::class, new SendRecordNotificationFailStub());
 
     $records = new EloquentCollection([
         makeDummyBulkNotifyRecord(['id' => 1, 'name' => 'Ok Record', 'should_fail' => false]),
@@ -72,8 +72,8 @@ test('send records notification action accumulates errors per channel', function
 });
 
 test('send records notification action falls back to record key when name is missing', function (): void {
-    app()->instance(SafeEloquentCastAction::class, new SendRecordsSafeEloquentCastEmptyStub);
-    app()->instance(SendRecordNotificationAction::class, new SendRecordNotificationThrowStub);
+    app()->instance(SafeEloquentCastAction::class, new SendRecordsSafeEloquentCastEmptyStub());
+    app()->instance(SendRecordNotificationAction::class, new SendRecordNotificationThrowStub());
 
     $record = makeDummyBulkNotifyRecord(['id' => 99, 'should_fail' => true]);
     $records = new EloquentCollection([$record]);

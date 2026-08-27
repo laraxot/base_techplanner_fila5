@@ -40,7 +40,11 @@ related:
 | Modulo | Errori | % Totale | Priorità |
 |--------|--------|----------|----------|
 | User | 4,539 | 23.5% | 🔴 CRITICA |
+<<<<<<< .merge_file_KvVaNM
 | Fixcity | 3,540 | 18.3% | 🔴 CRITICA |
+=======
+| App | 3,540 | 18.3% | 🔴 CRITICA |
+>>>>>>> .merge_file_sRf9Mp
 | Notify | 2,727 | 14.1% | 🔴 CRITICA |
 | Cms | 1,696 | 8.8% | 🟠 ALTA |
 | Xot | 1,274 | 6.6% | 🟠 ALTA |
@@ -188,7 +192,11 @@ public function create(string $class): Model
 2. **Correggere method.notFound (612 errori)**
    - Errori critici
    - Correzione manuale necessaria
+<<<<<<< .merge_file_KvVaNM
    - Priorità: User, Fixcity, Notify
+=======
+   - Priorità: User, App, Notify
+>>>>>>> .merge_file_sRf9Mp
 
 3. **Aggiungere null-safe operators**
    - Target: 1,000 errori method.nonObject più semplici
@@ -245,13 +253,21 @@ public function create(string $class): Model
   - Actions
 - **Documentazione**: `/Modules/User/docs/`
 
+<<<<<<< .merge_file_KvVaNM
 #### 2. Fixcity Module (3,540 errori)
+=======
+#### 2. App Module (3,540 errori)
+>>>>>>> .merge_file_sRf9Mp
 - **Focus**: method.nonObject, property.nonObject
 - **File critici**:
   - Filament Resources
   - Services
   - Models
+<<<<<<< .merge_file_KvVaNM
 - **Documentazione**: `/Modules/Fixcity/docs/`
+=======
+- **Documentazione**: `/Modules/App/docs/`
+>>>>>>> .merge_file_sRf9Mp
 
 #### 3. Notify Module (2,727 errori)
 - **Focus**: argument.type, method.nonObject

@@ -22,7 +22,11 @@ related:
 
 ## Introduzione
 
+<<<<<<< .merge_file_43VmrF
 Il pacchetto `filament-title-with-slug` di Camya fornisce un componente specializzato per la gestione combinata di titoli e slug nei form Filament. Questo documento analizza le funzionalità del componente e la sua potenziale integrazione nel modulo Notify di Quaeris, in particolare per la gestione dei template email.
+=======
+Il pacchetto `filament-title-with-slug` di Camya fornisce un componente specializzato per la gestione combinata di titoli e slug nei form Filament. Questo documento analizza le funzionalità del componente e la sua potenziale integrazione nel modulo Notify di App, in particolare per la gestione dei template email.
+>>>>>>> .merge_file_nxstd9
 
 ## Panoramica del Pacchetto
 
@@ -36,9 +40,15 @@ Il pacchetto `filament-title-with-slug` di Camya fornisce un componente speciali
 - **Supporto Dark Mode**: Compatibilità con il tema scuro di Filament
 - **Validazione Avanzata**: Regole di validazione personalizzabili
 
+<<<<<<< .merge_file_43VmrF
 ### Compatibilità con Quaeris
 
 Il componente è compatibile con l'architettura di Quaeris e può essere integrato seguendo le convenzioni del progetto:
+=======
+### Compatibilità con App
+
+Il componente è compatibile con l'architettura di App e può essere integrato seguendo le convenzioni del progetto:
+>>>>>>> .merge_file_nxstd9
 
 - Non utilizza componenti UI personalizzati
 - Può essere configurato per restituire array associativi con chiavi stringhe
@@ -63,7 +73,11 @@ php artisan vendor:publish --tag="filament-title-with-slug-config"
 
 ### Configurazione Base
 
+<<<<<<< .merge_file_43VmrF
 Ecco come il componente potrebbe essere implementato in `MailTemplateResource` seguendo le convenzioni di Quaeris:
+=======
+Ecco come il componente potrebbe essere implementato in `MailTemplateResource` seguendo le convenzioni di App:
+>>>>>>> .merge_file_nxstd9
 
 ```php
 use Camya\Filament\Forms\Components\TitleWithSlugInput;
@@ -95,7 +109,11 @@ public static function getFormSchema(): array
 
 ### Personalizzazione Avanzata
 
+<<<<<<< .merge_file_43VmrF
 Per adattare il componente alle esigenze specifiche di Quaeris:
+=======
+Per adattare il componente alle esigenze specifiche di App:
+>>>>>>> .merge_file_nxstd9
 
 ```php
 'titleSlug' => TitleWithSlugInput::make(
@@ -132,7 +150,11 @@ Il componente mostra un'anteprima dell'URL completo, personalizzabile attraverso
 
 ```php
 ->urlPath('/mail-templates/')
+<<<<<<< .merge_file_43VmrF
 ->urlHost('https://Quaeris.example.com')
+=======
+->urlHost('https://app.example.test')
+>>>>>>> .merge_file_nxstd9
 ->urlHostVisible(true)
 ```
 
@@ -167,7 +189,11 @@ Il componente può generare un link per visualizzare direttamente la risorsa:
     : null)
 ```
 
+<<<<<<< .merge_file_43VmrF
 ## Vantaggi per Quaeris
+=======
+## Vantaggi per App
+>>>>>>> .merge_file_nxstd9
 
 L'integrazione di questo componente nel modulo Notify offrirebbe:
 
@@ -179,11 +205,19 @@ L'integrazione di questo componente nel modulo Notify offrirebbe:
 
 ## Considerazioni per l'Implementazione
 
+<<<<<<< .merge_file_43VmrF
 ### Conformità con le Convenzioni di Quaeris
 
 Per rispettare le convenzioni del progetto, è necessario:
 
 1. **Traduzione**: Configurare le etichette per utilizzare il sistema di traduzione di Quaeris anziché testi hardcoded
+=======
+### Conformità con le Convenzioni di App
+
+Per rispettare le convenzioni del progetto, è necessario:
+
+1. **Traduzione**: Configurare le etichette per utilizzare il sistema di traduzione di App anziché testi hardcoded
+>>>>>>> .merge_file_nxstd9
 2. **Array Associativo**: Utilizzare chiavi stringhe nell'array di schema del form
 3. **Nomenclatura**: Seguire le convenzioni di nomenclatura del progetto
 
@@ -215,18 +249,30 @@ public static function getFormSchema(): array
 ### Potenziali Limitazioni
 
 1. **Dipendenza Esterna**: Introduce una dipendenza aggiuntiva nel progetto
+<<<<<<< .merge_file_43VmrF
 2. **Personalizzazione Visiva**: Potrebbe richiedere adattamenti per integrarsi perfettamente con il tema di Quaeris
+=======
+2. **Personalizzazione Visiva**: Potrebbe richiedere adattamenti per integrarsi perfettamente con il tema di App
+>>>>>>> .merge_file_nxstd9
 3. **Modifiche Future**: Come ogni dipendenza, è soggetto a cambiamenti nelle versioni future
 
 ### Alternative
 
+<<<<<<< .merge_file_43VmrF
 1. **Soluzione Custom**: Sviluppare un componente su misura basato sulle esigenze specifiche di Quaeris
+=======
+1. **Soluzione Custom**: Sviluppare un componente su misura basato sulle esigenze specifiche di App
+>>>>>>> .merge_file_nxstd9
 2. **Approccio Modulare**: Utilizzare i componenti nativi di Filament con logica personalizzata
 3. **Altri Pacchetti**: Valutare pacchetti alternativi con funzionalità simili
 
 ## Conclusioni
 
+<<<<<<< .merge_file_43VmrF
 Il componente `TitleWithSlugInput` offre una soluzione elegante e completa per la gestione combinata di titoli e slug nei form Filament. La sua integrazione nel modulo Notify di Quaeris potrebbe migliorare significativamente l'esperienza utente nella gestione dei template email, semplificando il processo di creazione e modifica.
+=======
+Il componente `TitleWithSlugInput` offre una soluzione elegante e completa per la gestione combinata di titoli e slug nei form Filament. La sua integrazione nel modulo Notify di App potrebbe migliorare significativamente l'esperienza utente nella gestione dei template email, semplificando il processo di creazione e modifica.
+>>>>>>> .merge_file_nxstd9
 
 L'implementazione dovrebbe seguire le convenzioni del progetto, con particolare attenzione alla localizzazione e alla struttura del form schema.
 

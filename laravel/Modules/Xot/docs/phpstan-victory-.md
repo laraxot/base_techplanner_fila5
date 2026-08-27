@@ -103,6 +103,8 @@ Violavano regola "TUTTI i test vanno in Pest":
 5. `Xot/tests/Unit/Support/TestTransitionForTest.php`
 6. `Xot/docs/phpstan-fixes-report.md`
 7. `Xot/docs/phpstan-victory.md` (questo file)
+7. `Xot/docs/phpstan-victory-2025.md` (questo file)
+>>>>>>> .merge_file_fthOAR
 8. `phpstan_stubs.php`
 
 ### Eliminati (14)

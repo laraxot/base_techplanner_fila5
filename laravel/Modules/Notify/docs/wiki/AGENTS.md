@@ -139,6 +139,7 @@ related:
 - **Message format**: `docs: {action} {description}`
   - ✅ `docs: ingest karpathy-llm-wiki article`
   - ✅ `docs: lint wiki - resolve contradictions in prediction market concepts`
+  - ✅ `docs: lint wiki - resolve contradictions in forecast market concepts`
   - ✅ `docs: query synthesis - LLM wiki integration with Laraxot`
   - ❌ `updated wiki`
 
@@ -327,6 +328,7 @@ LLM Agent Actions:
    ### Contradictions (1)
    ⚠️ concepts/lmsr-mechanics.md says "LMSR is linear"
      vs concepts/prediction-markets.md says "LMSR is logarithmic"
+     vs concepts/forecast-markets.md says "LMSR is logarithmic"
      → Action: Merge pages, resolve contradiction
 
    ### Orphan Pages (2)
@@ -382,6 +384,7 @@ When module wiki references project wiki:
 
 ```markdown
 # In Modules/Fixcity/docs/llm-wiki/concepts/ticket-lifecycle.md
+# In Modules/App/docs/llm-wiki/concepts/ticket-lifecycle.md
 
 Related:
 - Project-wide: [[docs/wiki/concepts/laraxot-architecture]]
@@ -491,6 +494,10 @@ tags: [prediction-market, lmsr, market-mechanics, algorithmic-trading]
 related:
   - concepts/prediction-market-design.md
   - entities/predict-module.md
+tags: [forecast-market, lmsr, market-mechanics, algorithmic-trading]
+related:
+  - concepts/forecast-market-design.md
+  - entities/forecast-module.md
   - sources/karpathy-llm-wiki.md
 ---
 
@@ -510,6 +517,14 @@ Logarithmic Market Scoring Rule (LMSR) is the core pricing mechanism...
 
 - [[concepts/prediction-market-design]]
 - [[entities/predict-module]]
+## Implementation in Forecast Module
+
+[Content with links to entities/forecast-module.md]
+
+## Related Concepts
+
+- [[concepts/forecast-market-design]]
+- [[entities/forecast-module]]
 - [[concepts/normalisation-patterns]]
 ```
 
@@ -523,11 +538,13 @@ Logarithmic Market Scoring Rule (LMSR) is the core pricing mechanism...
 - [[llm-wiki-architecture]] - Three-layer model for persistent knowledge (raw/wiki/schema)
 - [[lmsr-mechanics]] - Logarithmic Market Scoring Rule pricing algorithm
 - [[prediction-market-design]] - Market clarity, resolution trust, calibration principles
+- [[forecast-market-design]] - Market clarity, resolution trust, calibration principles
 
 ## Entities
 
 - [[andrej-karpathy]] - Creator of LLM Wiki pattern
 - [[predict-module]] - Laraxot module for prediction markets
+- [[forecast-module]] - Laraxot module for forecast markets
 
 ## Sources
 
@@ -556,11 +573,13 @@ Logarithmic Market Scoring Rule (LMSR) is the core pricing mechanism...
 
 ## [2026-04-15] query | LMSR mechanics explanation
 - Read: concepts/lmsr-mechanics.md, entities/predict-module.md
+- Read: concepts/lmsr-mechanics.md, entities/forecast-module.md
 - Created: comparisons/lmsr-vs-order-book-mechanics.md
 - Commit: docs: query synthesis - LMSR vs order book mechanics
 
 ## [2026-04-15] lint | Weekly health check
 - Resolved: 1 contradiction in prediction market concepts
+- Resolved: 1 contradiction in forecast market concepts
 - Added: 3 cross-references to orphan pages
 - Archived: 1 stale source (old-filament-guide.md)
 - Commit: docs: lint wiki - resolve contradictions and archive stale sources

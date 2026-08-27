@@ -12,6 +12,9 @@ related:
 
 # 🏎️ F1 World Champion 2026 - Theme Zero Integration
 
+**URL**: `http://forecast.local/it/forecasts/f1-world-champion-2026`  
+# 🏎️ F1 World Champion 2026 - Theme Zero Integration
+
 **URL**: `http://predict.local/it/predicts/f1-world-champion-2026`  
 **Tema**: Zero  
 **Data**: 2026-03-25
@@ -20,6 +23,7 @@ related:
 
 ## 📸 Screenshots Repository
 
+Gli screenshot della forecast detail page sono disponibili in:
 Gli screenshot della predict detail page sono disponibili in:
 
 ```
@@ -50,7 +54,20 @@ Il mercato **F1 World Champion 2026** ha **6 opzioni di risposta**:
 
 ### Componenti Utilizzati
 
+Il tema Zero utilizza i componenti del modulo forecast:
+
+```blade
+<x-forecast-view.header />
+<x-forecast-view.market-stats />
+<x-forecast-view.trading-form />
+<x-forecast-view.order-book />
+<x-forecast-view.price-chart />
+<x-forecast-view.recent-trades />
+<x-forecast-view.share-buttons />
+<x-forecast-view.sidebar-enhanced />
 Il tema Zero utilizza i componenti del modulo Predict:
+
+```
 
 ```blade
 <x-predict-view.header />
@@ -67,6 +84,7 @@ Il tema Zero utilizza i componenti del modulo Predict:
 
 | File | Scopo |
 |------|-------|
+| `resources/views/filament/widgets/view-forecast/detail.blade.php` | Widget integration |
 | `resources/views/filament/widgets/view-predict/detail.blade.php` | Widget integration |
 | `resources/css/app.css` | Theme styling |
 | `resources/js/gsap-config.js` | Animations |
@@ -116,6 +134,7 @@ small: text-sm (14px)
 
 ## ✅ Theme Compliance
 
+- [x] Componenti modulari forecast
 - [x] Componenti modulari Predict
 - [x] Styling coerente con design system
 - [x] Responsive design
@@ -127,6 +146,7 @@ small: text-sm (14px)
 
 ## 🔗 Riferimenti
 
+- [forecast Module Docs](../../Modules/Domain/docs/screenshots/f1-world-champion-2026-analysis.md)
 - [Predict Module Docs](../../Modules/Predict/docs/screenshots/f1-world-champion-2026-analysis.md)
 - [Theme Zero Docs](./README.md)
 - [Architecture](./architecture.md)

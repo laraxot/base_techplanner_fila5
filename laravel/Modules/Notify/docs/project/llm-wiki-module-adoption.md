@@ -6,6 +6,9 @@
 > Schema globale: [../../docs/.schema/WIKI_SCHEMA.md](../../docs/.schema/WIKI_SCHEMA.md)
 
 ## Mapping FixCity
+> Schema globale: [../../docs/.schema/wiki-schema.md](../../docs/.schema/wiki-schema.md)
+
+## Mapping Notify
 
 Il pattern originale di Karpathy usa tre cartelle distinte alla root del progetto:
 
@@ -14,6 +17,7 @@ project/
 ├── raw/     # fonti immutabili
 ├── wiki/    # conoscenza compilata dall'LLM
 └── schema/  # CLAUDE.md / AGENTS.md
+└── schema/  # CLAUDE.md / agents.md
 ```
 
 Nel nostro caso, ogni modulo e tema ha già una cartella `docs/`. Il mapping naturale è:
@@ -35,6 +39,7 @@ laravel/Modules/<Name>/docs/       ← l'intera docs/ = layer "raw"
 ```
 
 Lo **schema globale** è centralizzato: `docs/.schema/WIKI_SCHEMA.md`.
+Lo **schema globale** è centralizzato: `docs/.schema/wiki-schema.md`.
 Non serve uno schema locale per ogni modulo.
 
 ## Regola fondamentale
@@ -44,6 +49,7 @@ Non serve uno schema locale per ogni modulo.
 | Raw | `docs/` (root + sottocartelle eccetto `wiki/`) | Umano + agente | Agente |
 | Wiki | `docs/wiki/` | Agente (LLM) | Umano + agente |
 | Schema | `docs/.schema/WIKI_SCHEMA.md` | Umano | Agente |
+| Schema | `docs/.schema/wiki-schema.md` | Umano | Agente |
 
 **I file in `docs/` (layer raw) non vengono riscritti per "migliorarli".**
 Se serve una sintesi, va in `docs/wiki/`, non nella fonte.
@@ -103,6 +109,7 @@ docs/
 ├── raw/
 │   └── index.md    # lista fonti raw esplicite
 └── README.md       # o INDEX.md — entrypoint umano
+└── README.md       # o index.md — entrypoint umano
 ```
 
 ## Priorità wiki per modulo
@@ -112,6 +119,7 @@ Non ogni modulo ha lo stesso volume documentale. Linea guida:
 | Modulo | Priorità wiki | Motivazione |
 |--------|--------------|-------------|
 | Fixcity | Alta | Dominio principale, wizard complesso, ticket flow |
+| App | Alta | Dominio principale, wizard complesso, ticket flow |
 | Geo | Alta | Molti pattern, integrazioni mappe, enums |
 | Xot | Alta | Base framework, pattern Laraxot fondamentali |
 | Cms | Media | Folio routing, componenti condivisi |

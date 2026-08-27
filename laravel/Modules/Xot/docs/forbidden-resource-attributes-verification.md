@@ -82,3 +82,5 @@ Le uniche proprietà vietate trovate sono commentate, quindi non attive. Il sist
 **Status**: ✅ **VERIFICA COMPLETATA**
 
 **Ultimo aggiornamento**: 2026-01-09
+**Ultimo aggiornamento**: [DATE]
+>>>>>>> .merge_file_ktW8W8

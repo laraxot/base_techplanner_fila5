@@ -15,9 +15,10 @@ use Modules\Notify\Database\Factories\NotificationTemplateFactory;
 use Modules\Notify\Models\NotificationTemplate;
 use Modules\Notify\Notifications\GenericNotification;
 use Modules\Notify\Tests\TestCase;
+use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('notify-db');
 
 /**
  * @param  array<string, mixed>  $attributes
@@ -40,12 +41,16 @@ function makeDummySendNotificationRecipient(array $attributes = []): Model
 
         public function routeNotificationForMail(): string
         {
-            return (string) $this->getAttribute('email');
+            $email = $this->getAttribute('email');
+
+            return is_string($email) ? $email : '';
         }
 
         public function routeNotificationForSms(): string
         {
-            return (string) $this->getAttribute('phone');
+            $phone = $this->getAttribute('phone');
+
+            return is_string($phone) ? $phone : '';
         }
     };
 }
@@ -83,7 +88,7 @@ test('send notification action throws when template is missing', function (): vo
     /** @var TestCase $this */
     $recipient = makeDummySendNotificationRecipient(['email' => 'user@example.test']);
 
-    \assertNotifyThrows(
+    XotBasePest::assertThrows(
         fn () => app(SendNotificationAction::class)->handle($recipient, 'missing-template'),
         \Exception::class,
     );

@@ -548,3 +548,13 @@ Modules/{ModuleName}/docs/
 
 **Versione Package:** 12.0+  
 **Compatibilità:** Laravel 12.x, PHP 8.2+
+
+- [Composer Merge Plugin Documentation](../../../docs/composer-merge-plugin.md)
+
+---
+
+**Ultimo aggiornamento:** Gennaio 2026  
+**Versione Package:** 12.0+  
+**Compatibilità:** Laravel 12.x, PHP 8.2+
+
+>>>>>>> .merge_file_kguyNv

@@ -1,7 +1,24 @@
+
+---
+title: "Analisi e Miglioramenti del Prompt docs.txt"
+module: xot
+type: integration
+tags: [integrations, modules, xot]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Analisi e Miglioramenti del Prompt docs.txt
 
 > **Collegamenti correlati**
 > - [README.md documentazione generale](../../../../../docs/project/readme.md)
+
+# Analisi e Miglioramenti del Prompt docs.txt
+
+> **Collegamenti correlati**
+> - [README.md documentazione generale](../../../../project_docs/readme.md)
+
+>>>>>>> .merge_file_PM3DDP
 > - [Struttura dei Prompt](./prompts.md)
 > - [Regole per i Prompt](./prompt_rules.md)
 > - [Regole per i Percorsi Relativi](./relative_paths_rules.md)
@@ -82,6 +99,8 @@ Il prompt `docs.txt` è un componente critico per garantire la coerenza e la qua
 
 > **Collegamenti correlati**
 > - [README.md documentazione generale](../../../../../docs/readme.md)
+> - [README.md documentazione generale](../../../../docs/readme.md)
+>>>>>>> .merge_file_PM3DDP
 > - [Struttura dei Prompt](./prompts.md)
 > - [Regole per i Prompt](./prompt_rules.md)
 > - [Regole per i Percorsi Relativi](./relative_paths_rules.md)

@@ -1,3 +1,12 @@
+---
+title: "Regola Critica: Mai Hardcodare Nomi di Progetto nei Moduli Riutilizzabili"
+module: notify
+type: integration
+tags: [integrations, modules, notify]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Regola Critica: Mai Hardcodare Nomi di Progetto nei Moduli Riutilizzabili
 
 ## Problema Identificato

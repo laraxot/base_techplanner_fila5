@@ -7,8 +7,8 @@ namespace Modules\User\Tests\Feature\Filament\Resources;
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Forms\Components\Field;
-use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\TextInput;
+use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Illuminate\Support\Facades\Hash;
@@ -24,7 +24,7 @@ uses(TestCase::class);
 
 beforeEach(function (): void {
     UserFactory::new()
-        ->createOne([
+        ->create([
             'type' => UserType::MasterAdmin,
             'email' => 'admin-'.uniqid().'@example.com',
             'password' => Hash::make('password123'),
@@ -45,7 +45,7 @@ describe('User Resource', function (): void {
 
     test('user resource has correct form schema', function (): void {
         /** @var TestCase $this */
-        $form = UserResource::getFormSchema();
+        $form = UserResource::getFormSchemaOld();
 
         Assert::assertArrayHasKey('section01', $form);
         Assert::assertArrayHasKey('section02', $form);
@@ -66,7 +66,7 @@ describe('User Resource', function (): void {
 
         $createdAtField = userResourceFindComponentByName($section02Schema, 'created_at');
         Assert::assertNotNull($createdAtField);
-        Assert::assertInstanceOf(Placeholder::class, $createdAtField);
+        Assert::assertInstanceOf(TextEntry::class, $createdAtField);
     });
 
     test('user resource has combined relation manager tabs', function (): void {
@@ -82,7 +82,7 @@ describe('User Resource', function (): void {
     });
 
     test('user resource form schema has correct column spans', function (): void {
-        $form = UserResource::getFormSchema();
+        $form = UserResource::getFormSchemaOld();
 
         $section01 = $form['section01'];
         $section02 = $form['section02'];
@@ -93,13 +93,13 @@ describe('User Resource', function (): void {
 
     test('user resource name field is required', function (): void {
         /** @var TestCase $this */
-        $form = UserResource::getFormSchema();
+        $form = UserResource::getFormSchemaOld();
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
         $nameField = userResourceFindComponentByName($section01Schema, 'name');
 
-        if (null === $nameField) {
+        if ($nameField === null) {
             $this->skipTest('name field not found in section01 schema');
         }
 
@@ -108,13 +108,13 @@ describe('User Resource', function (): void {
 
     test('user resource email field is required', function (): void {
         /** @var TestCase $this */
-        $form = UserResource::getFormSchema();
+        $form = UserResource::getFormSchemaOld();
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
         $emailField = userResourceFindComponentByName($section01Schema, 'email');
 
-        if (null === $emailField) {
+        if ($emailField === null) {
             $this->skipTest('email field not found in section01 schema');
         }
 
@@ -123,13 +123,13 @@ describe('User Resource', function (): void {
 
     test('user resource password field is required only on create', function (): void {
         /** @var TestCase $this */
-        $form = UserResource::getFormSchema();
+        $form = UserResource::getFormSchemaOld();
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
         $passwordField = userResourceFindComponentByName($section01Schema, 'password');
 
-        if (null === $passwordField) {
+        if ($passwordField === null) {
             $this->skipTest('password field not found in section01 schema');
         }
 
@@ -138,7 +138,7 @@ describe('User Resource', function (): void {
 
     test('user resource password field has correct type', function (): void {
         /** @var TestCase $this */
-        $form = UserResource::getFormSchema();
+        $form = UserResource::getFormSchemaOld();
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
@@ -151,13 +151,13 @@ describe('User Resource', function (): void {
 
     test('user resource email field has unique validation', function (): void {
         /** @var TestCase $this */
-        $form = UserResource::getFormSchema();
+        $form = UserResource::getFormSchemaOld();
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
         $emailField = userResourceFindComponentByName($section01Schema, 'email');
 
-        if (null === $emailField) {
+        if ($emailField === null) {
             $this->skipTest('email field not found in section01 schema');
         }
 
@@ -166,17 +166,17 @@ describe('User Resource', function (): void {
 
     test('user resource created at field shows diff for humans', function (): void {
         /** @var TestCase $this */
-        $form = UserResource::getFormSchema();
+        $form = UserResource::getFormSchemaOld();
         $section02 = $form['section02'];
         $section02Schema = userResourceSectionComponents($this, $section02);
 
         $createdAtField = userResourceFindComponentByName($section02Schema, 'created_at');
 
-        if (null === $createdAtField) {
+        if ($createdAtField === null) {
             $this->skipTest('created_at field not found in section02 schema');
         }
 
-        Assert::assertInstanceOf(Placeholder::class, $createdAtField);
+        Assert::assertInstanceOf(TextEntry::class, $createdAtField);
     });
 
     test('user resource can be instantiated', function (): void {

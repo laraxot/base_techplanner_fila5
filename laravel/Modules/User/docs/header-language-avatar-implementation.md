@@ -5,8 +5,8 @@ tags: [header, language, avatar, implementation]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "header-language-avatar-implementation implementazione del selettore di lingua e avatar utente nell'header"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+issues: ["https://github.com/provtv/<nome repository>/issues/124"]
+discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -21,7 +21,7 @@ related:
 # Implementazione del Selettore di Lingua e Avatar Utente nell'Header
 
 ## Collegamenti correlati
-- [README modulo User](./readme.md)
+- [README modulo User](./README.md)
 - [Convenzioni Path](./path-conventions-2.md)
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Implementazione Logout](./logout-blade-implementation-2.md)
@@ -399,7 +399,7 @@ Ecco come dovrebbe apparire il file JSON completo dell'header dopo le modifiche:
 # Implementazione del Selettore di Lingua e Avatar Utente nell'Header
 
 ## Collegamenti correlati
-- [README modulo User](./readme.md)
+- [README modulo User](./README.md)
 - [Convenzioni Path](./path-conventions-2.md)
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Implementazione Logout](./logout-blade-implementation-2.md)

@@ -12,3 +12,7 @@
   - [Errori comuni nelle transizioni custom (<nome progetto>)](../../<nome progetto>/docs/model-states-errors.md)
   - [README.md centrale](../../../docs/README.md) 
   - [README.md centrale](../../../../docs/readme.md) 
+  - [README.md centrale](../../../docs/readme.md) 
+  - [README.md centrale](../../../../docs/readme.md) 
+>>>>>>> .merge_file_ru2hu1
+>>>>>>> .merge_file_5BrGkj

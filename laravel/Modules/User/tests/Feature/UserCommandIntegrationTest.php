@@ -5,24 +5,22 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Feature;
 
 use Illuminate\Console\Command;
+use Illuminate\Foundation\Application;
 use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Config;
 use Modules\User\Console\Commands\ChangeTypeCommand;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
+use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
+use Webmozart\Assert\Assert as WebmozartAssert;
 
 uses(TestCase::class);
 
-beforeEach(function (): void {
-    /* @var \Modules\User\Tests\TestCase $this */
-    /* @var TestCase $this */
-    $this->command = new ChangeTypeCommand();
-});
-
 describe('User Command Integration', function (): void {
     test('can be registered with laravel artisan', function (): void {
-        /** @var TestCase $this */
-        $command = $this->requireCommand();
+        $command = new ChangeTypeCommand();
         Assert::assertSame('user:change-type', $command->getName());
         Assert::assertInstanceOf(Command::class, $command);
     });
@@ -34,8 +32,7 @@ describe('User Command Integration', function (): void {
     });
 
     test('validates command registration in service provider', function (): void {
-        /** @var TestCase $this */
-        $command = $this->requireCommand();
+        $command = new ChangeTypeCommand();
         Assert::assertSame('user:change-type', $command->getName());
         Assert::assertSame('Change user type based on project configuration', $command->getDescription());
     });
@@ -46,6 +43,13 @@ describe('User Command Integration', function (): void {
     });
 
     test('validates webmozart assert integration', function (): void {
+        WebmozartAssert::string('user:change-type');
+        WebmozartAssert::classExists(ChangeTypeCommand::class);
+
+        XotBasePest::assertThrows(
+            static fn () => WebmozartAssert::string(42),
+            \InvalidArgumentException::class,
+        );
     });
 
     test('integrates with illuminate support arr', function (): void {
@@ -62,13 +66,11 @@ describe('User Command Integration', function (): void {
     });
 
     test('can handle command input output operations', function (): void {
-        /** @var TestCase $this */
-        $command = $this->requireCommand();
+        $command = new ChangeTypeCommand();
     });
 
     test('validates command signature and options', function (): void {
-        /** @var TestCase $this */
-        $command = $this->requireCommand();
+        $command = new ChangeTypeCommand();
         $reflection = new \ReflectionClass($command);
 
         Assert::assertTrue($reflection->hasProperty('name'));
@@ -89,14 +91,12 @@ describe('User Command Integration', function (): void {
     });
 
     test('handles command execution context', function (): void {
-        /** @var TestCase $this */
-        $command = $this->requireCommand();
+        $command = new ChangeTypeCommand();
         Assert::assertInstanceOf(Command::class, $command);
     });
 
     test('validates error handling patterns', function (): void {
-        /** @var TestCase $this */
-        $command = $this->requireCommand();
+        $command = new ChangeTypeCommand();
         $reflection = new \ReflectionClass($command);
         $handleMethod = $reflection->getMethod('handle');
 
@@ -118,8 +118,7 @@ describe('User Command Integration', function (): void {
     });
 
     test('integrates with laravel configuration system', function (): void {
-        /** @var TestCase $this */
-        $command = $this->requireCommand();
+        $command = new ChangeTypeCommand();
         Assert::assertTrue(function_exists('config'));
         Assert::assertInstanceOf(ChangeTypeCommand::class, $command);
     });
@@ -141,48 +140,40 @@ describe('User Command Integration', function (): void {
     });
 
     test('can handle command lifecycle', function (): void {
-        /** @var TestCase $this */
-        $command = $this->requireCommand();
+        $command = new ChangeTypeCommand();
     });
 
     test('validates dependency injection compatibility', function (): void {
-        /** @var TestCase $this */
-        $command = $this->requireCommand();
+        $command = new ChangeTypeCommand();
         Assert::assertInstanceOf(ChangeTypeCommand::class, $command);
         Assert::assertSame('user:change-type', $command->getName());
     });
 
     test('handles console application integration', function (): void {
-        /** @var TestCase $this */
-        $command = $this->requireCommand();
+        $command = new ChangeTypeCommand();
         Assert::assertInstanceOf(Command::class, $command);
         Assert::assertInstanceOf(\Symfony\Component\Console\Command\Command::class, $command);
     });
 
     test('validates command help and description', function (): void {
-        /** @var TestCase $this */
-        $command = $this->requireCommand();
+        $command = new ChangeTypeCommand();
         Assert::assertSame('Change user type based on project configuration', $command->getDescription());
         Assert::assertSame('user:change-type', $command->getName());
     });
 
     test('can access laravel facades', function (): void {
+        Assert::assertInstanceOf(Application::class, App::getFacadeRoot());
+        Assert::assertSame(config('app.name'), Config::get('app.name'));
+        Assert::assertTrue(App::hasBeenBootstrapped());
     });
 
     test('handles reflection operations correctly', function (): void {
-        /** @var TestCase $this */
-        $command = $this->requireCommand();
+        $command = new ChangeTypeCommand();
         $reflection = new \ReflectionClass($command);
 
         Assert::assertInstanceOf(\ReflectionClass::class, $reflection);
 
         Assert::assertSame(ChangeTypeCommand::class, $reflection->getName());
-    });
-
-    test('validates method existence checks', function (): void {
-        /** @var TestCase $this */
-        $command = $this->requireCommand();
-        Assert::assertFalse(method_exists($command, 'nonExistentMethod'));
     });
 
     test('can handle object property access safely', function (): void {

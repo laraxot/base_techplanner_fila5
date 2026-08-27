@@ -1,3 +1,12 @@
+---
+title: "Convenzioni dei Path in Laravel e"
+module: notify
+type: integration
+tags: [integrations, modules, notify]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Convenzioni dei Path in Laravel e
 
 ## Regole Fondamentali per i Path di Cartelle

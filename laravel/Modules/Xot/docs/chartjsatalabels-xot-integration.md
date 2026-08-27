@@ -1,3 +1,16 @@
+
+---
+title: "Chart.js Datalabels Plugin Implementation in Xot Module"
+module: xot
+type: integration
+tags: [integrations, modules, xot]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
+
+=======
+>>>>>>> .merge_file_qVU4dI
 # Chart.js Datalabels Plugin Implementation in Xot Module
 
 ## Overview
@@ -922,6 +935,8 @@ class ExampleChartWidget extends XotBaseChartWidget
 For a minimal, production-ready example showing 2 labels per bar using `RawJs::make()`, see:
 
 **`Modules/healthcare_app/Filament/Widgets/SimpleChartWidget.php`**
+**`Modules/Quaeris/Filament/Widgets/SimpleChartWidget.php`**
+>>>>>>> .merge_file_3rtjrJ
 
 Key pattern:
 ```php

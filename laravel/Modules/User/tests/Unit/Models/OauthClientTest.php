@@ -9,11 +9,12 @@ use Laravel\Passport\Client;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\OauthClient;
 use Modules\User\Tests\TestCase;
+use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('user-db');
 
 beforeEach(function (): void {
     /* @var \Modules\User\Tests\TestCase $this */
@@ -43,7 +44,7 @@ describe('Oauth Client', function (): void {
     test('oauth client user relation uses xot data', function (): void {
         /** @var TestCase $this */
         $user = UserFactory::new()->createOne();
-        $client = $this->oauthClientTestPersistedClient(['user_id' => (string) $user->getKey()]);
+        $client = $this->oauthClientTestPersistedClient(['user_id' => (string) XotBasePest::assertModelKey($user->getKey())]);
 
         Assert::assertNotNull($client->user);
         Assert::assertSame($user->getKey(), $client->user->getKey());

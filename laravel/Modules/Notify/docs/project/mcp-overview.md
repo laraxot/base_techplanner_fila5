@@ -1,6 +1,7 @@
 # MCP Servers - Project Overview
 
 **Project**: FixCity Platform  
+**Project**: Notify Platform  
 **Last Updated**: 2026-04-09  
 **Status**: Active - Memory and Development Workflow MCP Servers Configured
 
@@ -22,6 +23,7 @@ MCP (Model Context Protocol) servers enhance AI agent capabilities for:
 - **Location**: `laravel/Themes/Sixteen/.supermemory/`
 - **Purpose**: Long-term project memory for AI agents
 - **Container Tag**: `fixcity-sixteen`
+- **Container Tag**: `laraxot-sixteen`
 - **API Key**: Configured in `.env`
 - **Documentation**: [Sixteen Theme SuperMemory Docs](../../laravel/Themes/Sixteen/docs/supermemory.md)
 
@@ -85,11 +87,13 @@ docs/
 const context = await client.search.memories({
   q: 'css parity workflow',
   containerTag: 'fixcity-sixteen'
+  containerTag: 'laraxot-sixteen'
 });
 
 // 2. Get project profile
 const profile = await client.profile({
   containerTag: 'fixcity-sixteen',
+  containerTag: 'laraxot-sixteen',
   q: 'tech stack laravel'
 });
 ```
@@ -100,6 +104,7 @@ const profile = await client.profile({
 await client.add({
   content: 'Fixed CSS parity for segnalazione pages',
   containerTag: 'fixcity-sixteen',
+  containerTag: 'laraxot-sixteen',
   metadata: { type: 'css-fix', date: '2026-04-09' }
 });
 ```
@@ -117,6 +122,7 @@ npm run build && npm run copy
 ## 📊 Memory Statistics
 
 **SuperMemory Container**: `fixcity-sixteen`
+**SuperMemory Container**: `laraxot-sixteen`
 
 | Memory Type | Count | Description |
 |-------------|-------|-------------|

@@ -1,10 +1,12 @@
 ---
 title: "🚀 FixCity Improvement + Vite Fix - EXECUTION PLAN"
+title: "🚀 Notify Improvement + Vite Fix - EXECUTION PLAN"
 type: concept
 tags: [vite, fix, execution, plan]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "vite-fix-and-execution-plan 🚀 fixcity improvement + vite fix - execution plan"
+qmd: "vite-fix-and-execution-plan 🚀 laraxot improvement + vite fix - execution plan"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -19,6 +21,7 @@ related:
 ---
 
 # 🚀 FixCity Improvement + Vite Fix - EXECUTION PLAN
+# 🚀 Notify Improvement + Vite Fix - EXECUTION PLAN
 
 **Date**: 2026-03-30  
 **Status**: ✅ **READY TO EXECUTE**  
@@ -37,6 +40,7 @@ related:
 **Next Steps**:
 1. Authenticate: "Log me in to NotebookLM"
 2. Create notebook with FixCity docs
+2. Create notebook with Notify docs
 3. Share → Copy link
 4. Add to library: "Add [LINK] to my NotebookLM library"
 
@@ -47,6 +51,7 @@ related:
 **Error**:
 ```
 Vite manifest not found at: /var/www/_bases/base_fixcity_fila5/public_html/themes/<nome tema>/manifest.json
+Vite manifest not found at: /var/www/_bases/base_ptvx_fila5/public_html/themes/<nome tema>/manifest.json
 ```
 
 **Root Cause Analysis**:
@@ -121,6 +126,9 @@ EOF
 ### P0.2: FixCity Italian Site Improvement 🟡 ONGOING
 
 See: `.planning/improvements/FIXCITY_IT_IMPROVEMENT_PLAN.md`
+### P0.2: Notify Italian Site Improvement 🟡 ONGOING
+
+See: `.planning/improvements/NOTIFY_IT_IMPROVEMENT_PLAN.md`
 
 **Current Phase**: Phase 0 Foundation (Weeks 1-2)
 
@@ -142,6 +150,7 @@ See: `.planning/improvements/FIXCITY_IT_IMPROVEMENT_PLAN.md`
 ```bash
 # Navigate to project
 cd /var/www/_bases/base_fixcity_fila5
+cd /var/www/_bases/base_ptvx_fila5
 
 # Fix Sixteen theme
 cd laravel/Themes/Sixteen
@@ -166,6 +175,7 @@ ls -la public_html/themes/TwentyOne/manifest.json
 
 # Test site
 firefox http://fixcity.local/it
+firefox http://laraxot.local/it
 # Should load without Vite errors
 ```
 
@@ -219,6 +229,8 @@ EOF
 # Go to notebooklm.google.com
 # Create: "FixCity Documentation"
 # Upload: AGENTS.md, docs/**/*.md, .planning/**/*.md
+# Create: "Notify Documentation"
+# Upload: agents.md, docs/**/*.md, .planning/**/*.md
 # Share → Copy link
 
 # 3. Add to library
@@ -227,6 +239,7 @@ EOF
 # 4. Research
 "Research Laravel Vite build best practices"
 "Query FixCity docs about theme configuration"
+"Query Notify docs about theme configuration"
 ```
 
 ---
@@ -326,6 +339,7 @@ openviking ls /memories/
 
 # Query
 "Research [topic] in my FixCity docs"
+"Research [topic] in my Notify docs"
 ```
 
 ---
@@ -393,6 +407,7 @@ bash .ralph/ralph-loop.sh
 - [x] NotebookLM MCP installed
 - [ ] Vite manifest fixed (Sixteen + TwentyOne)
 - [ ] Site tested (http://fixcity.local/it)
+- [ ] Site tested (http://laraxot.local/it)
 - [ ] GSD Phase 0 initialized
 - [ ] Ralph Loop started for test fixes
 
@@ -412,3 +427,4 @@ bash .ralph/ralph-loop.sh
 **ETA Phase 0 Complete**: 2026-04-13
 
 **Let's fix and improve FixCity! 🚀**
+**Let's fix and improve Notify! 🚀**

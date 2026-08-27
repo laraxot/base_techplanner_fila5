@@ -28,7 +28,9 @@ class ScheduleClearCacheCommand extends Command
      */
     public function handle(): int
     {
-        app(ClearScheduleCacheAction::class)->execute();
+        /** @var ClearScheduleCacheAction $action */
+        $action = app(ClearScheduleCacheAction::class);
+        $action->execute();
         $this->info('Scheduling cache cleared.');
 
         return 0;

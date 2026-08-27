@@ -16,8 +16,10 @@ class ListNotifications extends XotBaseListRecords
 {
     protected static string $resource = NotificationResource::class;
 
-    #[Override]
-    public function getTableColumns(): array
+    /**
+     * @return array<string, TextColumn>
+     */
+    public static function notificationTableColumns(): array
     {
         return [
             'id' => TextColumn::make('id')->numeric()->sortable(),
@@ -30,8 +32,10 @@ class ListNotifications extends XotBaseListRecords
         ];
     }
 
-    #[Override]
-    public function getTableFilters(): array
+    /**
+     * @return array<string, Filter|SelectFilter>
+     */
+    public static function notificationTableFilters(): array
     {
         return [
             'read' => Filter::make('is_read')
@@ -49,5 +53,17 @@ class ListNotifications extends XotBaseListRecords
                 ])
                 ->multiple(),
         ];
+    }
+
+    #[Override]
+    public function getTableColumns(): array
+    {
+        return self::notificationTableColumns();
+    }
+
+    #[Override]
+    public function getTableFilters(): array
+    {
+        return self::notificationTableFilters();
     }
 }

@@ -1,3 +1,12 @@
+---
+title: "Struttura di Configurazione nei Moduli"
+module: notify
+type: integration
+tags: [integrations, modules, notify]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Struttura di Configurazione nei Moduli
 # Struttura di Configurazione nei Moduli <nome progetto>
 

@@ -89,6 +89,8 @@ protected $fillable;
 public function passes(string $_attribute, mixed $value): bool { }
 /** @var array<int, string> */
 protected $fillable;
+protected array $fillable;
+>>>>>>> .merge_file_uZ0j2b
 ```
 
 ### 🟢 Medium Priority

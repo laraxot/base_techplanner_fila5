@@ -9,8 +9,13 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Modules\Notify\Models\NotificationLog;
+use Webmozart\Assert\Assert;
 
-/** @phpstan-ignore trait.unused */
+/**
+ * Trait HasTenantNotifications.
+ *
+ * Fornisce funzionalità per la gestione delle notifiche per tenant.
+ */
 trait HasTenantNotifications
 {
     /**
@@ -47,7 +52,6 @@ trait HasTenantNotifications
      * Scope per filtrare le notifiche per tenant.
      *
      * @param  Builder<static>  $query
-     *
      * @return Builder<static>
      */
     public function scopeForTenant(Builder $query, ?string $tenantId = null): Builder
@@ -132,6 +136,12 @@ trait HasTenantNotifications
 
         $key = $tenant->getKey();
 
-        return $key === null ? null : (string) $key;
+        if ($key === null) {
+            return null;
+        }
+
+        Assert::scalar($key);
+
+        return (string) $key;
     }
 }

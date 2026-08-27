@@ -11,6 +11,13 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [Struttura dei Moduli](./MODULE_STRUCTURE.md) - Convenzioni di struttura dei moduli
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
 
+- [README](../readme.md) - Panoramica del modulo Xot
+- [Convenzioni di Naming](./naming_conventions.md) - Regole di naming per campi, classi e directory
+- [Struttura dei Moduli](./module_structure.md) - Convenzioni di struttura dei moduli
+- [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
+
+>>>>>>> .merge_file_woRjSO
+
 ## Validazione dei Collegamenti
 
 ### Regole Fondamentali
@@ -19,16 +26,30 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI usare percorsi che iniziano con `documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
 [Documento in Modulo Altro](../../AltroModulo/project_docs/documento.md)
+[Documento in Modulo Altro](../../altromodulo/project_docs/documento.md)
+>>>>>>> .merge_file_woRjSO
 [Documento in Root](../../../project_docs/documento.md)
 ```
 
 ### Formato Non Corretto
+
+```
+
 ```markdown
 
 # Collegamenti Non Corretti
 [Documento Correlato](Modules/Xot/project_docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/project_docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
+
+```markdown
+
+# Collegamenti Non Corretti
+[Documento Correlato](modules/xot/project_docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/project_docs/documento.md)
+[Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
+
+>>>>>>> .merge_file_woRjSO
 ```
 
 ### Checklist di Validazione
@@ -39,6 +60,8 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [ ] I percorsi sono compatibili con diversi sistemi operativi
 
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
+- [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
+>>>>>>> .merge_file_woRjSO
 
 ## Validazione dei Collegamenti
 
@@ -48,16 +71,30 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI usare percorsi che iniziano con `documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
 [Documento in Modulo Altro](../../AltroModulo/project_docs/documento.md)
+[Documento in Modulo Altro](../../altromodulo/project_docs/documento.md)
+>>>>>>> .merge_file_woRjSO
 [Documento in Root](../../../project_docs/documento.md)
 ```
 
 ### Formato Non Corretto
+
+```
+
 ```markdown
 
 # Collegamenti Non Corretti
 [Documento Correlato](Modules/Xot/project_docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/project_docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
+
+```markdown
+
+# Collegamenti Non Corretti
+[Documento Correlato](modules/xot/project_docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/project_docs/documento.md)
+[Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
+
+>>>>>>> .merge_file_woRjSO
 ```
 
 ### Checklist di Validazione
@@ -68,6 +105,8 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [ ] I percorsi sono compatibili con diversi sistemi operativib6f667c (.)
 
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
+- [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
+>>>>>>> .merge_file_woRjSO
 
 ## Validazione dei Collegamenti
 
@@ -77,16 +116,30 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI usare percorsi che iniziano con `documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
 [Documento in Modulo Altro](../../AltroModulo/project_docs/documento.md)
+[Documento in Modulo Altro](../../altromodulo/project_docs/documento.md)
+>>>>>>> .merge_file_woRjSO
 [Documento in Root](../../../project_docs/documento.md)
 ```
 
 ### Formato Non Corretto
+
+```
+
 ```markdown
 
 # Collegamenti Non Corretti
 [Documento Correlato](Modules/Xot/project_docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/project_docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
+
+```markdown
+
+# Collegamenti Non Corretti
+[Documento Correlato](modules/xot/project_docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/project_docs/documento.md)
+[Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
+
+>>>>>>> .merge_file_woRjSO
 ```
 
 ### Checklist di Validazione

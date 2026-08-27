@@ -42,6 +42,10 @@
 1. **[Meetup Module - Provider Errors Lessons Learned](../../Meetup/docs/provider-errors-lessons-learned.md)**
    - **Status**: ✅ Real-World Case Study
    - **Purpose**: Actual errors made and corrected in Meetup module (2025-12-16)
+1. **[Meetup Module - Provider Errors Lessons Learned](../../meetup/docs/provider-errors-lessons-learned.md)**
+   - **Status**: ✅ Real-World Case Study
+   - **Purpose**: Actual errors made and corrected in Meetup module ([DATE])
+>>>>>>> .merge_file_A23XnT
    - **When to read**: To see real before/after examples
    - **Key Topics**:
      - 5 specific errors committed
@@ -196,6 +200,8 @@ class AdminPanelProvider extends XotBasePanelProvider
 2. **Day 2**: Study [User Module Providers](../../User/app/Providers/)
 3. **Day 3**: Read [Provider Common Mistakes](./provider-common-mistakes.md)
 4. **Day 4**: Study [Meetup Module - Lessons Learned](../../Meetup/docs/provider-errors-lessons-learned.md)
+4. **Day 4**: Study [Meetup Module - Lessons Learned](../../meetup/docs/provider-errors-lessons-learned.md)
+>>>>>>> .merge_file_A23XnT
 5. **Day 5**: Create your first provider using templates
 
 ### For Code Review
@@ -243,6 +249,13 @@ When reviewing provider code:
 | provider-common-mistakes.md | 2025-12-16 | ✅ Current | Critical |
 | xotbase-extension-rules.md | 2025-08-27 | ✅ Current | High |
 | Meetup/provider-errors-lessons-learned.md | 2025-12-16 | ✅ Current | High |
+
+| serviceprovider-minimal-structure.md | [DATE] | ✅ Current | Critical |
+| provider-common-mistakes.md | [DATE] | ✅ Current | Critical |
+| xotbase-extension-rules.md | [DATE] | ✅ Current | High |
+| Meetup/provider-errors-lessons-learned.md | [DATE] | ✅ Current | High |
+
+>>>>>>> .merge_file_A23XnT
 
 ## 🔗 External References
 

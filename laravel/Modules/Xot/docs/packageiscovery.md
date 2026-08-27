@@ -340,6 +340,8 @@ The command discovered these categories:
 - Xot → XotServiceProvider + AdminPanelProvider
 - User → UserServiceProvider + AdminPanelProvider + PassportServiceProvider
 - Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, healthcare_app
+- Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, Quaeris
+>>>>>>> .merge_file_vwE0o0
 
 **Supporting Libraries**:
 - Blade icons, Carbon, Excel, Debugbar, IDE Helper, PHPInsights
@@ -351,6 +353,10 @@ Each module uses this pattern:
 ```json
 {
     "name": "laraxot/module_user_fila5",
+    "name": "laraxot/module_user_fila5",
+    "name": "laraxot/module_user_fila3",
+>>>>>>> .merge_file_vwE0o0
+>>>>>>> .merge_file_sYVEBJ
     "extra": {
         "laravel": {
             "providers": [

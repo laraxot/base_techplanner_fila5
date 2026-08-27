@@ -19,7 +19,11 @@ class StoredEventResource extends XotBaseResource
 {
     protected static ?string $model = StoredEvent::class;
 
-    #[Override]
+    /**
+     * @return array<string, mixed>
+     */
+
+    // #[Override]
     public static function getFormSchema(): array
     {
         return [

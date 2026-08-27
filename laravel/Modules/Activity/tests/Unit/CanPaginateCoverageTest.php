@@ -13,11 +13,11 @@ use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\Fixtures\CanPaginateHarness;
 use Modules\Activity\Tests\TestCase;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('activity-db');
 
 function makeCanPaginateHarness(): CanPaginateHarness
 {
-    return new CanPaginateHarness;
+    return new CanPaginateHarness();
 }
 
 test('can paginate trait manages session, defaults and page helpers', function (): void {

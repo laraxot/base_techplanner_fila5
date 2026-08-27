@@ -55,7 +55,7 @@ use Override;
  */
 class JobBatch extends BaseModel
 {
-    public const UPDATED_AT = null;
+    public const ?string UPDATED_AT = null;
 
     public $incrementing = false;
 
@@ -76,15 +76,10 @@ class JobBatch extends BaseModel
 
     /**
      * Get the total number of jobs that have been processed by the batch thus far.
-     *
-     * @return int
      */
-    public function processedJobs(): int|float
+    public function processedJobs(): int
     {
-        $totalJobs = (int) ($this->attributes['total_jobs'] ?? 0);
-        $pendingJobs = (int) ($this->attributes['pending_jobs'] ?? 0);
-
-        return $totalJobs - $pendingJobs;
+        return (int) $this->total_jobs - (int) $this->pending_jobs;
     }
 
     /**
@@ -92,10 +87,12 @@ class JobBatch extends BaseModel
      */
     public function progress(): int
     {
-        $totalJobs = (int) ($this->attributes['total_jobs'] ?? 0);
-        $progress = $totalJobs > 0 ? round($this->processedJobs() / $totalJobs * 100) : 0;
+        $total = (int) $this->total_jobs;
+        if ($total <= 0) {
+            return 0;
+        }
 
-        return (int) $progress;
+        return (int) round(($this->processedJobs() / $total) * 100);
     }
 
     /**
@@ -103,9 +100,7 @@ class JobBatch extends BaseModel
      */
     public function hasPendingJobs(): bool
     {
-        $pendingJobs = (int) ($this->attributes['pending_jobs'] ?? 0);
-
-        return $pendingJobs > 0;
+        return ((int) $this->pending_jobs) > 0;
     }
 
     /**
@@ -121,9 +116,7 @@ class JobBatch extends BaseModel
      */
     public function hasFailures(): bool
     {
-        $failedJobs = (int) ($this->attributes['failed_jobs'] ?? 0);
-
-        return $failedJobs > 0;
+        return ((int) $this->failed_jobs) > 0;
     }
 
     /**
@@ -131,10 +124,7 @@ class JobBatch extends BaseModel
      */
     public function failed(): bool
     {
-        $failedJobs = (int) ($this->attributes['failed_jobs'] ?? 0);
-        $totalJobs = (int) ($this->attributes['total_jobs'] ?? 0);
-
-        return $failedJobs === $totalJobs;
+        return ((int) $this->failed_jobs) === ((int) $this->total_jobs);
     }
 
     /**

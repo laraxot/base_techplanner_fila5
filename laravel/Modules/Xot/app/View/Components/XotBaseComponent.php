@@ -7,6 +7,7 @@ namespace Modules\Xot\View\Components;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Str;
 use Illuminate\View\Component as IlluminateComponent;
+use InvalidArgumentException;
 
 /**
  * Class XotBaseComponent.
@@ -30,7 +31,7 @@ abstract class XotBaseComponent extends IlluminateComponent
     /**
      * Cache for resolved views.
      *
-     * @var array<string, string>
+     * @var array<string, view-string>
      */
     protected static array $viewCache = [];
 
@@ -45,7 +46,9 @@ abstract class XotBaseComponent extends IlluminateComponent
     }
 
     /**
-     * Get the view name for this component.
+     * Summary of getView.
+     *
+     * @return view-string
      */
     public function getView(): string
     {
@@ -55,11 +58,7 @@ abstract class XotBaseComponent extends IlluminateComponent
             return self::$viewCache[$class];
         }
 
-        $module_name = Str::between($class, 'Modules\\', '\\Views\\');
-        if ('' === $module_name) {
-            throw new \InvalidArgumentException("Unable to determine module name from class [{$class}].");
-        }
-
+        $module_name = Str::between($class, 'Modules\\', '\Views\\');
         $module_name_low = Str::lower($module_name);
 
         $comp_name = Str::after($class, '\View\Components\\');
@@ -70,9 +69,8 @@ abstract class XotBaseComponent extends IlluminateComponent
         $view = str_replace('._', '.', $view);
 
         if (! view()->exists($view)) {
-            throw new \InvalidArgumentException("View [{$view}] does not exist.");
+            throw new InvalidArgumentException("View [{$view}] does not exist.");
         }
-
         self::$viewCache[$class] = $view;
 
         return $view;
@@ -83,7 +81,7 @@ abstract class XotBaseComponent extends IlluminateComponent
     public function render(): Renderable
     {
         $view = $this->getView();
-        /** @var view-string $view */
+
         $view_params = [
             'view' => $view,
         ];

@@ -75,6 +75,8 @@ echo $tenants->count(); // ✅ Output: 1
 
 - [Customer User Fix Summary](../../<nome progetto>/docs/customer_user_fix_summary.md)
 - [Cross Database Relations](../../User/docs/cross_database_relations_issue.md)
+- [Cross Database Relations](../../user/docs/cross_database_relations_issue.md)
+>>>>>>> .merge_file_RnWIjC
 - [Multi-Tenant Architecture](../architecture/multi_tenant_design.md)
 
 ## Note per Manutenzione Futura

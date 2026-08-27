@@ -1,5 +1,7 @@
 # Database Analysis Commands and Tools for healthcare_app_survey
 # Database Analysis Commands and Tools for app_survey
+# Database Analysis Commands and Tools for quaeris_survey
+>>>>>>> .merge_file_TPJ2Hm
 
 ## Essential Database Queries
 
@@ -79,6 +81,13 @@ mcp mysql --database=txaesfry_app_survey
 # Execute complex queries
 mcp mysql --query="SELECT table_name FROM information_schema.tables WHERE table_schema = 'txaesfry_app_survey' AND table_name LIKE 'lime_survey_%'"
 
+mcp mysql --database=txaesfry_quaeris_survey
+
+# Execute complex queries
+mcp mysql --query="SELECT table_name FROM information_schema.tables WHERE table_schema = 'txaesfry_quaeris_survey' AND table_name LIKE 'lime_survey_%'"
+
+>>>>>>> .merge_file_TPJ2Hm
+
 # Export survey data
 mcp mysql --export --table=lime_survey_139982 --format=csv
 ```
@@ -115,6 +124,8 @@ php artisan tinker --execute="
 [
     'limesurvey' => DB::connection('limesurvey')->getPdo() ? 'OK' : 'ERROR',
     'healthcare_app' => DB::connection('healthcare_app')->getPdo() ? 'OK' : 'ERROR',
+    'quaeris' => DB::connection('quaeris')->getPdo() ? 'OK' : 'ERROR',
+>>>>>>> .merge_file_TPJ2Hm
     'mysql' => DB::connection('mysql')->getPdo() ? 'OK' : 'ERROR'
 ]
 "
@@ -182,6 +193,13 @@ mysqldump -u[user] -p[pass] txaesfry_app_survey lime_survey_[SURVEY_ID] > survey
 
 # Backup question structure
 mysqldump -u[user] -p[pass] txaesfry_app_survey lime_questions lime_question_l10ns --where="sid=[SURVEY_ID]" > survey_[SURVEY_ID]_structure.sql
+
+mysqldump -u[user] -p[pass] txaesfry_quaeris_survey lime_survey_[SURVEY_ID] > survey_[SURVEY_ID].sql
+
+# Backup question structure
+mysqldump -u[user] -p[pass] txaesfry_quaeris_survey lime_questions lime_question_l10ns --where="sid=[SURVEY_ID]" > survey_[SURVEY_ID]_structure.sql
+
+>>>>>>> .merge_file_TPJ2Hm
 ```
 
 ### 2. Data Validation Script
@@ -227,6 +245,8 @@ LEFT JOIN (
     WHERE table_name LIKE 'lime_survey_%'
     AND table_schema = 'txaesfry_healthcare_app_survey'
     AND table_schema = 'txaesfry_app_survey'
+    AND table_schema = 'txaesfry_quaeris_survey'
+>>>>>>> .merge_file_TPJ2Hm
 ) r ON s.sid = r.sid
 LEFT JOIN (
     SELECT 
@@ -236,9 +256,15 @@ LEFT JOIN (
     WHERE table_name LIKE 'lime_tokens_%'
     AND table_schema = 'txaesfry_healthcare_app_survey'
     AND table_schema = 'txaesfry_app_survey'
+    AND table_schema = 'txaesfry_quaeris_survey'
+>>>>>>> .merge_file_TPJ2Hm
 ) t ON s.sid = t.sid
 WHERE s.active = 'Y';
 ```
 
 These commands and tools provide comprehensive access to analyze, maintain, and optimize the healthcare_app_survey database used by the Limesurvey integration.
 These commands and tools provide comprehensive access to analyze, maintain, and optimize the app_survey database used by the Limesurvey integration.
+These commands and tools provide comprehensive access to analyze, maintain, and optimize the quaeris_survey database used by the Limesurvey integration.
+These commands and tools provide comprehensive access to analyze, maintain, and optimize the app_survey database used by the Limesurvey integration.
+>>>>>>> .merge_file_TPJ2Hm
+>>>>>>> .merge_file_CKKyvw

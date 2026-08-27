@@ -2,6 +2,8 @@
 
 ## Collegamenti
 - [Documentazione generale progetto](/project_docs/README.md)
+- [Documentazione generale progetto](/project_docs/readme.md)
+>>>>>>> .merge_file_zCWIQm
 - [Regole Filament](filament-best-practices.md)
 - [Convenzioni Namespace](namespace-conventions.md)
 - [Standard di Codice](code-standards.md)

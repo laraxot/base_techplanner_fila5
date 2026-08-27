@@ -1,3 +1,12 @@
+---
+title: "MCP Server Consigliati per il Modulo Notify"
+module: notify
+type: integration
+tags: [integrations, modules, notify]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # MCP Server Consigliati per il Modulo Notify
 
 ## Scopo del Modulo

@@ -7,6 +7,8 @@ The system utilizes three main database connections:
 ### 1. Limesurvey Database (`limesurvey` connection)
 - **Schema**: `txaesfry_healthcare_app_survey` 
 - **Schema**: `txaesfry_app_survey` 
+- **Schema**: `txaesfry_quaeris_survey` 
+>>>>>>> .merge_file_Q5YgaK
 - **Purpose**: Main Limesurvey installation with surveys, questions, and responses
 - **Key tables**: 
   - `lime_questions` - Question structure and metadata
@@ -24,6 +26,13 @@ The system utilizes three main database connections:
 - **Purpose**: Application-specific data including survey mappings
 - **Key tables**:
   - `survey_pdfs` - Links Limesurvey surveys to ExternalProject functionality
+
+### 2. Quaeris Database (`quaeris` connection) 
+- **Purpose**: Application-specific data including survey mappings
+- **Key tables**:
+  - `survey_pdfs` - Links Limesurvey surveys to Quaeris functionality
+
+>>>>>>> .merge_file_Q5YgaK
   - `question_charts` - Custom chart configurations for survey data
   - `charts` - Chart visualization settings
   - `contacts` - Participant contact and communication tracking
@@ -101,6 +110,8 @@ The system utilizes three main database connections:
 
 ### healthcare_app-Specific Features
 ### ExternalProject-Specific Features
+### Quaeris-Specific Features
+>>>>>>> .merge_file_Q5YgaK
 - Links Limesurvey data to `survey_pdfs` table via survey_id mapping
 - Custom chart configurations in `question_charts` table
 - Participant tracking through `contacts` table
@@ -116,3 +127,6 @@ The system utilizes three main database connections:
 - Survey-specific table access verified before queries
 - Participant data handling follows privacy guidelines
 - Token-based access control for survey participation
+=======
+- Token-based access control for survey participation
+>>>>>>> .merge_file_ERDjEW

@@ -5,20 +5,19 @@ declare(strict_types=1);
 namespace Modules\Xot\Models;
 
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\FeedFactory;
 
 /**
  * Modules\Xot\Models\Feed.
  *
- * @property string      $id
+ * @property string $id
  * @property string|null $created_by
  * @property string|null $updated_by
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  *
- * @method static FeedFactory          factory($count = null, $state = [])
+ * @method static FeedFactory factory($count = null, $state = [])
  * @method static Builder<static>|Feed newModelQuery()
  * @method static Builder<static>|Feed newQuery()
  * @method static Builder<static>|Feed query()

@@ -5,8 +5,8 @@ tags: [team, bindings]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "team-bindings fix binding team models nel modulo user"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+issues: ["https://github.com/provtv/<nome repository>/issues/124"]
+discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -40,6 +40,8 @@ Il trait `HasTeams` utilizzava binding dinamici del container Laravel per i mode
 - **Utilizzo**: Nel metodo `teamInvitations()` del trait `HasTeams`
 ## Implementazione
 ### UserServiceProvider.php
+```
+
 ```php
 /**
  * Register the team model bindings.
@@ -64,6 +66,8 @@ public function register(): void
 3. **TeamInvitation**: Gestione inviti ai team
 4. **User**: Utilizzatori con trait `HasTeams`
 ### Relazioni
+```
+
 ```mermaid
 erDiagram
     User ||--o{ TeamUser : has_many
@@ -172,6 +176,8 @@ Il trait `HasTeams` utilizzava binding dinamici del container Laravel per i mode
 ## Implementazione
 
 ### UserServiceProvider.php
+
+```
 
 ```php
 /**

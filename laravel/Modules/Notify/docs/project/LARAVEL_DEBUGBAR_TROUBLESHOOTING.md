@@ -179,6 +179,7 @@ php artisan debugbar:clear
 ### 4. Test in Browser
 
 1. Navigate to `http://fixcity.local` (or your local URL)
+1. Navigate to `http://laraxot.local` (or your local URL)
 2. Debugbar should appear at the bottom of the page
 3. Check browser console for any CSP errors
 

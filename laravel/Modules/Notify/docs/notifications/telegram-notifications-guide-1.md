@@ -20,7 +20,11 @@ related:
 
 # Notifiche Telegram 
 
+<<<<<<< .merge_file_BfrQet
 Questa documentazione descrive come implementare notifiche Telegram nel modulo Notify di Quaeris.
+=======
+Questa documentazione descrive come implementare notifiche Telegram nel modulo Notify di App.
+>>>>>>> .merge_file_Xshqh2
 
 ## Indice
 
@@ -35,7 +39,11 @@ Questa documentazione descrive come implementare notifiche Telegram nel modulo N
 
 ## Introduzione
 
+<<<<<<< .merge_file_BfrQet
 Telegram offre un'ottima piattaforma per notifiche istantanee grazie alla sua API per bot. Quaeris integra Telegram per inviare notifiche relative ad appuntamenti, promemoria e altre comunicazioni importanti.
+=======
+Telegram offre un'ottima piattaforma per notifiche istantanee grazie alla sua API per bot. App integra Telegram per inviare notifiche relative ad appuntamenti, promemoria e altre comunicazioni importanti.
+>>>>>>> .merge_file_Xshqh2
 
 ## Setup del Bot Telegram
 
@@ -48,17 +56,28 @@ Telegram offre un'ottima piattaforma per notifiche istantanee grazie alla sua AP
 
 ### Funzionalità del Bot
 
+<<<<<<< .merge_file_BfrQet
 Il bot di Quaeris deve avere:
 - Privacy Mode disattivata (per leggere messaggi nei gruppi)
 - Comandi personalizzati configurati
 - Immagine del profilo con logo Quaeris
+=======
+Il bot di App deve avere:
+- Privacy Mode disattivata (per leggere messaggi nei gruppi)
+- Comandi personalizzati configurati
+- Immagine del profilo con logo App
+>>>>>>> .merge_file_Xshqh2
 
 ### Comandi Consigliati
 
 Configura i seguenti comandi per il tuo bot:
 ```
 start - Inizia l'interazione con il bot
+<<<<<<< .merge_file_BfrQet
 register - Collega il tuo account Telegram a Quaeris
+=======
+register - Collega il tuo account Telegram a App
+>>>>>>> .merge_file_Xshqh2
 unregister - Scollega il tuo account Telegram
 settings - Gestisci le tue preferenze di notifica
 help - Ottieni assistenza
@@ -179,10 +198,17 @@ public function toTelegram($notifiable)
 
 ### Collegamento Account Telegram
 
+<<<<<<< .merge_file_BfrQet
 Per collegare un account Telegram a un utente Quaeris:
 
 1. Implementa un comando `/register` nel bot che generi un token univoco.
 2. L'utente inserisce questo token nel proprio profilo nell'app Quaeris.
+=======
+Per collegare un account Telegram a un utente App:
+
+1. Implementa un comando `/register` nel bot che generi un token univoco.
+2. L'utente inserisce questo token nel proprio profilo nell'app App.
+>>>>>>> .merge_file_Xshqh2
 3. Salva il `chat_id` Telegram dell'utente nel database.
 
 ```php
@@ -195,7 +221,11 @@ use Modules\Notify\Models\TelegramToken;
 class RegisterCommand extends Command
 {
     protected $name = 'register';
+<<<<<<< .merge_file_BfrQet
 protected $description = 'Collega il tuo account Telegram a Quaeris';
+=======
+protected $description = 'Collega il tuo account Telegram a App';
+>>>>>>> .merge_file_Xshqh2
     
     public function handle()
     {
@@ -210,7 +240,11 @@ protected $description = 'Collega il tuo account Telegram a Quaeris';
         ]);
         
         $this->replyWithMessage([
+<<<<<<< .merge_file_BfrQet
 'text' => "Il tuo codice di collegamento è: {$token}\n\nInseriscilo nel tuo profilo Quaeris per completare il collegamento."
+=======
+'text' => "Il tuo codice di collegamento è: {$token}\n\nInseriscilo nel tuo profilo App per completare il collegamento."
+>>>>>>> .merge_file_Xshqh2
         ]);
     }
 }

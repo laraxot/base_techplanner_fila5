@@ -6,7 +6,7 @@ use Modules\Xot\Tests\TestCase;
 use Modules\Xot\ValueObjects\PhoneValueObject;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('no-xot-db');
 
 it('accepts valid phone', function (): void {
     $phone = '+11234567890';
@@ -15,4 +15,6 @@ it('accepts valid phone', function (): void {
 });
 
 it('throws on invalid phone', function (): void {
+    expect(fn (): PhoneValueObject => PhoneValueObject::fromString('invalid'))
+        ->toThrow(InvalidArgumentException::class);
 });

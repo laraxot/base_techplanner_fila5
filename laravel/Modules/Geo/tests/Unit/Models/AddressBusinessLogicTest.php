@@ -7,12 +7,16 @@ namespace Modules\Geo\Tests\Unit\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\Geo\Enums\AddressTypeEnum;
 use Modules\Geo\Models\Address;
+use Modules\Geo\Models\BaseModel;
 use Modules\Geo\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 describe('Address Business Logic', function () {
     test('address extends base model', function () {
+        Assert::assertTrue(
+            (new \ReflectionClass(Address::class))->isSubclassOf(BaseModel::class),
+        );
     });
 
     test('address has expected fillable fields for postal address', function () {

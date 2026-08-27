@@ -17,7 +17,7 @@ class SessionResource extends XotBaseResource
      * @return array<int, Component>
      */
     #[\Override]
-    public static function getFormSchema(): array
+    public static function getFormSchemaOld(): array
     {
         return [
             TextInput::make('id')->required()->maxLength(255),

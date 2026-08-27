@@ -195,5 +195,7 @@ class ResourceName extends XotBaseResource
 ---
 
 **Ultimo aggiornamento**: 2025-01-22
+**Ultimo aggiornamento**: [DATE]
+>>>>>>> .merge_file_wD5Jg5
 **Versione**: 1.0.0
 **Status**: ⚠️ In Lavorazione

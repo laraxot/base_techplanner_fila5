@@ -3,7 +3,7 @@ title: "Handoff multi-org sync (STORY-003)"
 type: handoff
 tags: [git, multi-org, bmad, story-003]
 created: 2026-07-21
-updated: 2026-07-23
+updated: 2026-07-29
 module: "Zero"
 issues:
   - "https://github.com/provtv/theme_zero_fila5/issues/12"
@@ -44,9 +44,6 @@ Tema: sync multi-org + handoff docs.
 
 ### Playbook push dual-remote (2026-07-22)
 
-Se unpack fallisce → `git push --no-thin`. Se GH008 / LFS missing e un remote sibling ha già il tip → `git lfs fetch <sibling> --all` + `git lfs push <target> --all` + push.
-Canon (caso UI `b874935`): [../../../Modules/UI/docs/wiki/troubleshooting/git-push-lfs-missing-objects.md](../../../Modules/UI/docs/wiki/troubleshooting/git-push-lfs-missing-objects.md).
-Forward-only: niente reset/squash/force per aggirare LFS.
 
 ### Caso User 2026-07-23 (unrelated)
 
@@ -59,3 +56,11 @@ Forward-only: niente reset/squash/force per aggirare LFS.
 - Working tree dirty (2 doc file già modificati da altra sessione) → committato (`d30876e`).
 - Entrambi i remote erano 0 behind / 1 ahead dopo il commit → push riuscito su entrambi, ora allineati a `d30876e`.
 - Nessun conflitto, nessuna rottura di codice trovata.
+
+### Sync 2026-07-29 (Zero)
+
+- Remote verificati da `laravel/Themes/Zero`: `laraxot` e `provtv`, entrambi su `theme_zero_fila5`.
+- Branch attivo: `dev`; `fetch --all --prune` riuscito.
+- Confronto pre-documentazione: `HEAD...laraxot/dev` = `4 0`, `HEAD...provtv/dev` = `3 0`; nessun remote aveva commit mancanti localmente.
+- Risoluzione: documentazione/prompt consolidati, poi push forward-only su entrambi i remote.
+- Regola riusabile: prima di sincronizzare org multiple, confrontare sempre `HEAD...<remote>/dev` e spingere solo se il secondo valore e' `0`.

@@ -607,6 +607,9 @@ public function getTableBulkActions(): array
 ## Collegamenti tra versioni di resource.md
 * [resource.md](../../../Xot/docs/filament/resource.md)
 * [resource.md](../../../Xot/docs/resource.md)
+* [resource.md](../../../xot/docs/filament/resource.md)
+* [resource.md](../../../xot/docs/resource.md)
+>>>>>>> .merge_file_PGPIDw
 
 ### Versione Incoming
 

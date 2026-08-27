@@ -4,21 +4,17 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Models;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Database\Eloquent\Model as EloquentModel;
-use Modules\Xot\Models\Traits\HasXotFactory;
-use Modules\Xot\Models\Traits\RelationX;
+use Illuminate\Database\Eloquent\Model;
+// use Laravel\Scout\Searchable;
+// ---- Traits ----
 use Modules\Xot\Traits\Updater;
 
 /**
  * Class XotBaseModel.
  */
-abstract class XotBaseModel extends EloquentModel
+abstract class XotBaseModel extends Model
 {
-    /** @use HasXotFactory<Factory<static>> */
-    use HasXotFactory;
-
-    use RelationX;
+    // use Searchable;
     use Updater;
 
     /**
@@ -32,32 +28,4 @@ abstract class XotBaseModel extends EloquentModel
 
     /** @var int */
     protected $perPage = 30;
-
-    /** @var string */
-    protected $connection = 'xot';
-
-    /** @var list<string> */
-    protected $appends = [];
-
-    /** @var list<string> */
-    protected $hidden = [
-        // 'password'
-    ];
-
-    /** @return array<string, string> */
-    protected function casts(): array
-    {
-        return [
-            'id' => 'string',
-            'uuid' => 'string',
-            'published_at' => 'datetime',
-            'verified_at' => 'datetime',
-            'created_at' => 'datetime',
-            'updated_at' => 'datetime',
-            'deleted_at' => 'datetime',
-            'updated_by' => 'string',
-            'created_by' => 'string',
-            'deleted_by' => 'string',
-        ];
-    }
 }

@@ -61,6 +61,7 @@ class GetAllModelsByModuleNameAction
                         $data[$tmp->name] = $tmp->class;
                     }
                 } catch (\Exception) {
+                    // Skip files whose class name does not resolve to an existing/valid class.
                 }
             }
         }

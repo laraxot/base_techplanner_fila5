@@ -1,3 +1,12 @@
+---
+title: "XotBaseServiceProvider: Analisi, Regole e Best Practice"
+module: notify
+type: integration
+tags: [integrations, modules, notify]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # XotBaseServiceProvider: Analisi, Regole e Best Practice
 
 ## 1. Cos'è XotBaseServiceProvider

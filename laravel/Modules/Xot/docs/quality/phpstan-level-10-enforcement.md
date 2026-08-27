@@ -9,6 +9,8 @@
 | Module | Errors | Priority |
 |--------|--------|----------|
 | healthcare_app | 527 | HIGH (86% of total) |
+| Quaeris | 527 | HIGH (86% of total) |
+>>>>>>> .merge_file_jcu4aR
 | User | 30 | MEDIUM |
 | Xot | 24 | MEDIUM |
 | Media | 20 | LOW |
@@ -45,6 +47,8 @@
 
 ### Phase 2: Large Module
 5. **healthcare_app** (527 errors) - Survey management core - requires systematic approach
+5. **Quaeris** (527 errors) - Survey management core - requires systematic approach
+>>>>>>> .merge_file_jcu4aR
 
 ## Common Patterns & Solutions
 
@@ -199,6 +203,8 @@ Check if Notification API changed in Filament v4:
   - Fix namespace imports
 
 ### healthcare_app Module
+### Quaeris Module
+>>>>>>> .merge_file_jcu4aR
 - **Largest Error Source**: 527 errors require systematic approach
   - Many errors in Actions classes
   - Query builder type issues
@@ -221,6 +227,8 @@ Check if Notification API changed in Filament v4:
 - [x] Phase 1.3: Xot module (12 → 0 errors - COMPLETED!)
 - [🔄] Phase 1.4: User module (21 errors remaining)
 - [ ] Phase 2: healthcare_app module (~444 errors remaining)
+- [ ] Phase 2: Quaeris module (~444 errors remaining)
+>>>>>>> .merge_file_jcu4aR
 - [ ] Phase 3: Media recheck (7 new errors detected)
 - [ ] Final: Run Pint formatting
 - [ ] Final: Verify zero errors

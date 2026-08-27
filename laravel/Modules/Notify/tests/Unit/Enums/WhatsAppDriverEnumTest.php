@@ -8,7 +8,7 @@ use Modules\Notify\Enums\WhatsAppDriverEnum;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Notify\Tests\TestCase::class);
+uses(TestCase::class)->group('no-notify-db');
 
 it('has correct cases', function (): void {
     Assert::assertCount(4, WhatsAppDriverEnum::cases());
@@ -59,7 +59,7 @@ it('get default returns default driver', function (): void {
 });
 
 it('each case has unique value', function (): void {
-    $values = array_map(static fn ($case) => $case->value, WhatsAppDriverEnum::cases());
+    $values = array_map(static fn (WhatsAppDriverEnum $case): string => $case->value, WhatsAppDriverEnum::cases());
     $uniqueValues = array_unique($values);
 
     Assert::assertCount(count($values), $uniqueValues, 'All enum cases should have unique values');

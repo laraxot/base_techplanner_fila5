@@ -22,7 +22,11 @@ related:
 
 ## Introduzione
 
+<<<<<<< .merge_file_Z8Khby
 Questo documento esplora i componenti Filament che possono migliorare l'esperienza utente per i campi `name` e `slug` nel form di gestione dei template email. I miglioramenti proposti seguono le convenzioni del progetto Quaeris, mantenendo la coerenza visiva e migliorando l'usabilità.
+=======
+Questo documento esplora i componenti Filament che possono migliorare l'esperienza utente per i campi `name` e `slug` nel form di gestione dei template email. I miglioramenti proposti seguono le convenzioni del progetto App, mantenendo la coerenza visiva e migliorando l'usabilità.
+>>>>>>> .merge_file_jD25E6
 
 ## Componenti per il Campo `name`
 
@@ -233,7 +237,11 @@ return [
 ];
 ```
 
+<<<<<<< .merge_file_Z8Khby
 ## Conformità con gli Standard Quaeris
+=======
+## Conformità con gli Standard App
+>>>>>>> .merge_file_jD25E6
 
 Tutti i componenti proposti:
 1. Non utilizzano il metodo `->label()` sui componenti Filament
@@ -249,7 +257,11 @@ I miglioramenti UI/UX proposti per i campi `name` e `slug` si concentrano su:
 3. **Azioni contestuali** che facilitano operazioni comuni
 4. **Relazioni intuitive** tra campi correlati
 
+<<<<<<< .merge_file_Z8Khby
 L'implementazione di questi miglioramenti rispetta le convenzioni del progetto Quaeris mentre offre un'esperienza utente significativamente migliorata nella gestione dei template email.
+=======
+L'implementazione di questi miglioramenti rispetta le convenzioni del progetto App mentre offre un'esperienza utente significativamente migliorata nella gestione dei template email.
+>>>>>>> .merge_file_jD25E6
 
 ## Riferimenti
 

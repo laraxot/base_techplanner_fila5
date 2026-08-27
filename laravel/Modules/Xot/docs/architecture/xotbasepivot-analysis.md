@@ -84,7 +84,12 @@ use Updater;  // Presente in TUTTI
 
 ```php
 // ❌ VARIA PER MODULO
+protected $connection = 'user';    // o 'blog', 'ptv', 'geo', ...
 protected $connection = 'user';    // o 'blog', 'fixcity', 'geo', ...
+=======
+protected $connection = 'user';    // o 'blog', 'ptv', 'geo', ...
+>>>>>>> .merge_file_6OViPj
+>>>>>>> .merge_file_SxAiIK
 ```
 
 ---

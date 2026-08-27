@@ -65,6 +65,8 @@ if (property_exists($stateObject, 'name')) {
 - **User**: Authentication with advanced features
 - **Cms**: Content management system
 - **healthcare_app**: Main application module
+- **Quaeris**: Main application module
+>>>>>>> .merge_file_z1R0eH
 - **UI**: Shared UI components
 - **Activity**: Activity tracking and logging
 - **Tenant**: Multi-tenancy support

@@ -1,6 +1,9 @@
 # FixCity Platform - AGENTS.md
 
 This file contains comprehensive guidelines and commands for AI agents working on the FixCity Laravel application.
+# Notify Platform - agents.md
+
+This file contains comprehensive guidelines and commands for AI agents working on the Notify Laravel application.
 
 ## 🚨 CRITICAL ARCHITECTURAL RULES
 
@@ -129,6 +132,7 @@ The script `bashscripts/git/subtrees/sync_remote_repo.sh` MUST work in **TWO mod
 **1. CLI Mode (Local Development)**:
 ```bash
 cd /var/www/_bases/base_fixcity_fila5
+cd /var/www/_bases/base_ptvx_fila5
 bashscripts/git/subtrees/sync_remote_repo.sh laraxot
 ```
 
@@ -785,6 +789,7 @@ php artisan test --coverage
 - **MAI duplicare metodi nei modelli quando possono essere definiti nei trait**
 - Se un trait (es. `SushiToJsons`) può fornire un metodo (es. `getJsonFile()`), aggiungerlo **SOLO nel trait**
 - I trait devono essere **self-contained** secondo base_techplanner pattern
+- I trait devono essere **self-contained** secondo base_app pattern
 - Quando PHPStan non trova un metodo chiamato da un modello usando un trait, PRIMA verifica se può essere aggiunto al trait
 - Non aggiungere lo stesso metodo a modelli diversi - viola DRY e crea manutenzione difficoltosa
 
@@ -826,6 +831,7 @@ This project uses `wikimedia/composer-merge-plugin` for modular dependency manag
 ```json
 {
     "name": "fixcity/module-name",
+    "name": "laraxot/module-name",
     "type": "laravel-module",
     "require": {
         "php": "^8.2",
@@ -1468,6 +1474,7 @@ When creating or modifying features:
 2. **Create/update roadmap**: Track progress and future work
 3. **Document error fixes**: Record how PHPStan errors were resolved
 4. **Update AGENTS.md**: Add new patterns and best practices
+4. **Update agents.md**: Add new patterns and best practices
 5. **Create examples**: Show correct usage patterns
 
 ---
@@ -1681,6 +1688,7 @@ gh run list --limit 10
 
 - **[docs/MULTI_AGENT_COLLABORATION.md](docs/MULTI_AGENT_COLLABORATION.md)** - Complete guide
 - **[Issue #12](https://github.com/laraxot/base_fixcity_fila5/issues/12)** - AI Agent Collaboration
+- **[Issue #12](https://github.com/laraxot/platform/issues/12)** - AI Agent Collaboration
 - **[docs/AI_AGENT_TEAMS.md](docs/AI_AGENT_TEAMS.md)** - Team organization
 
 ### Success Story: 2026-03-13 Sync Fix

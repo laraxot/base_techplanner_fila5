@@ -118,6 +118,8 @@ public function createUser(array $data): User
 
 ### healthcare_app Module
 ### ExternalProject Module
+### Quaeris Module
+>>>>>>> .merge_file_W4iEeS
 
 - Document survey management workflows
 - Document reporting and analytics features

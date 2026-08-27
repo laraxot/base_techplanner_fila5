@@ -1,6 +1,9 @@
 # Theme Detection System - FixCity Fila5
 
 **Project:** FixCity Fila5
+# Theme Detection System - Notify Fila5
+
+**Project:** Notify Fila5
 **Date:** 2026-04-01
 **Status:** ✅ **Documented**
 **Priority:** 🔴 **Critical Architecture**
@@ -33,6 +36,15 @@ Questo documento spiega il sistema di rilevamento del tema basato su `APP_URL` e
 6. Join con "/" → "local/fixcity"
   ↓
 7. Config path → base_path('config/local/fixcity/xra.php')
+3. Estrai dominio (es: laraxot.local)
+  ↓
+4. Explode da "." → ['laraxot', 'local']
+  ↓
+5. Inverti array → ['local', 'laraxot']
+  ↓
+6. Join con "/" → "local/laraxot"
+  ↓
+7. Config path → base_path('config/local/laraxot/xra.php')
   ↓
 8. Leggi pub_theme → 'Sixteen'
   ↓
@@ -59,6 +71,7 @@ $host = $parsed['host'] ?? 'localhost';
 ```php
 $host = str_replace('www.', '', $host);
 // Result: 'fixcity.local' (unchanged if no www)
+// Result: 'laraxot.local' (unchanged if no www)
 ```
 
 **Step 3: Explode e Inverti**
@@ -74,12 +87,14 @@ $reversed = array_reverse($parts);
 ```php
 $configPath = implode('/', $reversed);
 // Result: 'local/fixcity'
+// Result: 'local/laraxot'
 ```
 
 **Step 5: Leggi Config**
 ```php
 $configFile = base_path("config/{$configPath}/xra.php");
 // Result: base_path('config/local/fixcity/xra.php')
+// Result: base_path('config/local/laraxot/xra.php')
 
 if (file_exists($configFile)) {
     $config = include $configFile;
@@ -97,6 +112,7 @@ laravel/
 ├── config/
 │   └── local/
 │       └── fixcity/
+│       └── laraxot/
 │           └── xra.php              ← Theme configuration
 │               pub_theme => 'Sixteen'
 ├── Themes/
@@ -107,6 +123,7 @@ laravel/
 │       └── package.json
 └── .env
     APP_URL=http://fixcity.local
+    APP_URL=http://laraxot.local
 ```
 
 ---
@@ -114,6 +131,7 @@ laravel/
 ## 🔍 xra.php Configuration
 
 **File:** `laravel/config/local/fixcity/xra.php`
+**File:** `laravel/config/local/laraxot/xra.php`
 
 ```php
 <?php
@@ -124,6 +142,7 @@ return [
     'adm_home' => '01',
     'enable_ads' => '1',
     'main_module' => 'Fixcity',
+    'main_module' => 'App',
     'primary_lang' => 'it',
     'pub_theme' => 'Sixteen',        // ← Theme name
     'search_action' => 'it/videos',

@@ -23,12 +23,14 @@ related:
 > **Date**: 2026-03-31  
 > **Status**: ✅ Complete  
 > **Domain**: fixcity.local
+> **Domain**: laraxot.local
 
 ---
 
 ## 📋 Overview
 
 This document summarizes the complete VHost configuration implementation for the FixCity platform.
+This document summarizes the complete VHost configuration implementation for the Notify platform.
 
 ---
 
@@ -173,6 +175,8 @@ sudo systemctl reload apache2
 # 4. Update hosts file
 echo "127.0.0.1 fixcity.local" | sudo tee -a /etc/hosts
 echo "127.0.0.1 www.fixcity.local" | sudo tee -a /etc/hosts
+echo "127.0.0.1 laraxot.local" | sudo tee -a /etc/hosts
+echo "127.0.0.1 www.laraxot.local" | sudo tee -a /etc/hosts
 ```
 
 ### Verification
@@ -198,6 +202,7 @@ curl -I http://fixcity.local
 | Layer | File | Status | Links |
 |-------|------|--------|-------|
 | **Configuration** | `laravel/config/vhost/fixcity.local.conf` | ✅ | - |
+| **Configuration** | `laravel/config/vhost/laraxot.local.conf` | ✅ | - |
 | **Project Docs** | `docs/project/vhost-configuration.md` | ✅ | [Link](docs/project/vhost-configuration.md) |
 | **Modules Docs** | `laravel/Modules/docs/vhost-configuration.md` | ✅ | [Link](laravel/Modules/docs/vhost-configuration.md) |
 | **Themes Docs** | `laravel/Themes/docs/vhost-configuration.md` | ✅ | [Link](laravel/Themes/docs/vhost-configuration.md) |
@@ -263,6 +268,7 @@ curl -I http://fixcity.local
 | Document root = `public_html/` | ✅ | Config file line 7 |
 | Config in `laravel/config/vhost/` | ✅ | File location |
 | Domain uses `.local` TLD | ✅ | `fixcity.local` |
+| Domain uses `.local` TLD | ✅ | `laraxot.local` |
 | Dedicated logging | ✅ | ErrorLog + CustomLog |
 | Least privilege permissions | ✅ | Directory directives |
 | Documentation in 3 layers | ✅ | Project, Modules, Themes |
@@ -286,6 +292,7 @@ curl -I http://fixcity.local
 - [Governance Rules](docs/rules/vhost-governance.md)
 - [Management Skill](.github/skills/vhost-management/SKILL.md)
 - [Configuration File](laravel/config/vhost/fixcity.local.conf)
+- [Configuration File](laravel/config/vhost/laraxot.local.conf)
 
 ### For AI Agents
 
@@ -306,6 +313,7 @@ curl -I http://fixcity.local
 ## 🎉 Conclusion
 
 The VHost configuration for `fixcity.local` is now:
+The VHost configuration for `laraxot.local` is now:
 
 - ✅ **Complete**: All files created
 - ✅ **Documented**: Three-layer documentation

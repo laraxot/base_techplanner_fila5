@@ -5,6 +5,7 @@ tags: [excellence, 2025]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "excellence-2025 🏆 fixcity - eccellenza 2025"
+qmd: "excellence-2025 🏆 ptv - eccellenza 2025"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -211,6 +212,10 @@ FixCity è la piattaforma enterprise leader per la gestione delle segnalazioni u
 - ✅ **Slack**: #fixcity-dev
 - ✅ **GitHub**: Issues & Discussions
 - ✅ **Documentation**: docs.fixcity.it
+- ✅ **Email**: support@ptv.it
+- ✅ **Slack**: #ptv-dev
+- ✅ **GitHub**: Issues & Discussions
+- ✅ **Documentation**: docs.ptv.it
 
 ---
 
@@ -375,6 +380,11 @@ public function createTicket(
 - **GitHub**: github.com/laraxot/fixcity
 - **Docs**: docs.fixcity.it
 - **Status**: status.fixcity.it
+- **Email**: support@ptv.it
+- **Slack**: #ptv-community
+- **GitHub**: github.com/laraxot/ptv
+- **Docs**: docs.ptv.it
+- **Status**: status.ptv.it
 
 ---
 
@@ -391,6 +401,7 @@ Grazie a tutti i contributor che hanno reso possibile questo progetto:
 FixCity è orgogliosamente open source:
 - **License**: MIT
 - **Repository**: github.com/laraxot/fixcity
+- **Repository**: github.com/laraxot/ptv
 - **Contributions**: Welcome!
 - **Code of Conduct**: Contributor Covenant
 

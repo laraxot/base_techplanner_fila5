@@ -1,3 +1,12 @@
+---
+title: "Risoluzione Dinamica delle Classi nei Factory Pattern"
+module: notify
+type: integration
+tags: [integrations, modules, notify]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Risoluzione Dinamica delle Classi nei Factory Pattern
 
 Questo documento analizza l'approccio di risoluzione dinamica delle classi nei factory pattern, confrontandolo con l'approccio basato su match esplicito.

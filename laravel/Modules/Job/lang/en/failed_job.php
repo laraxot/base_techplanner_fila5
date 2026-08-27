@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 return [
     'pages' => 'Pagine',
     'widgets' => 'Widgets',
@@ -158,6 +156,30 @@ return [
             'messages' => [
                 'success' => 'Jobs falliti eliminati con successo',
             ],
+        ],
+        'logout' => [
+            'tooltip' => 'logout',
+            'icon' => 'logout',
+            'label' => 'logout',
+        ],
+        'reorderRecords' => [
+            'tooltip' => 'reorderRecords',
+            'icon' => 'reorderRecords',
+            'label' => 'reorderRecords',
+        ],
+        'cancel' => [
+            'tooltip' => 'cancel',
+            'icon' => 'cancel',
+            'label' => 'cancel',
+        ],
+        'openColumnManager' => [
+            'tooltip' => 'openColumnManager',
+            'icon' => 'openColumnManager',
+            'label' => 'openColumnManager',
+        ],
+        'submit' => [
+            'tooltip' => 'submit',
+            'icon' => 'submit',
         ],
     ],
     'messages' => [

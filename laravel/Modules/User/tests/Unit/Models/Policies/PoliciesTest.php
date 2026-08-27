@@ -18,9 +18,10 @@ use Modules\User\Models\Policies\SocialiteUserPolicy;
 use Modules\User\Models\Policies\SocialProviderPolicy;
 use Modules\User\Models\Policies\TeamInvitationPolicy;
 use Modules\User\Models\Policies\TeamPermissionPolicy;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(Modules\User\Tests\TestCase::class);
+uses(TestCase::class)->group('no-user-db');
 
 test('OauthClientPolicy can be instantiated', function () {
     $policy = new OauthClientPolicy();

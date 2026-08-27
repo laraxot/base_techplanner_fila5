@@ -5,9 +5,17 @@ declare(strict_types=1);
 use Modules\Job\Models\Job;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
 uses(TestCase::class);
 
 describe('Job Business Logic', function () {
+    beforeEach(function (): void {
+        /** @var TestCase $this */
+        if (TestCase::jobDbUnavailable()) {
+            $this->markTestSkipped('DB `job` non raggiungibile: blocco di ambiente.');
+        }
+    });
+
     it('can create job with basic information', function () {
         $jobData = [
             'queue' => 'default',

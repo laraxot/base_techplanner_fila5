@@ -1,6 +1,6 @@
 ---
 module: theme
-topic: storage-server
+topic: storage_server
 canonical: ../../../../Themes/docs/shared-components/.gitkeep-Modules
 ---
 

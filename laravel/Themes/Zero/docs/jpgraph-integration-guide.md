@@ -6,7 +6,6 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "jpgraph integration guide - zero theme"
 related:
-  - "./00-INDEX.md"
   - "./00-index.md"
 ---
 
@@ -440,6 +439,14 @@ class MakePdf2Action
 
 ### Module Documentation
 
+- [JpGraph Class Reference Complete](../../../laravel/Modules/Chart/docs/jpgraph-class-reference-complete.md) - ⭐ **NUOVO** - Guida completa Class Reference basata su documentazione ufficiale
+- [JpGraph Complete Guide](../../../laravel/Modules/Chart/docs/jpgraph-complete-guide.md) - Guida completa JpGraph con esempi pratici
+- [LimeSurvey Charts PDF Integration](./limesurvey-charts-pdf-integration.md) - Integrazione completa LimeSurvey charts nei PDF
+- [PDF Generation with Charts](../../../laravel/Modules/healthcare_app/docs/pdf-generation-with-charts.md) - Workflow completo generazione PDF
+- [JpGraph Class Reference Complete](../../Modules/Chart/docs/jpgraph-class-reference-complete.md) - ⭐ **NUOVO** - Guida completa Class Reference basata su documentazione ufficiale
+- [JpGraph Complete Guide](../../Modules/Chart/docs/jpgraph-complete-guide.md) - Guida completa JpGraph con esempi pratici
+- [LimeSurvey Charts PDF Integration](./limesurvey-charts-pdf-integration.md) - Integrazione completa LimeSurvey charts nei PDF
+- [PDF Generation with Charts](../../Modules/healthcare_app/docs/pdf-generation-with-charts.md) - Workflow completo generazione PDF
 - [JpGraph Class Reference Complete](../../../laravel/Modules/Chart/docs/jpgraph-class-reference-complete.md) - ⭐ **NUOVO** - Guida completa Class Reference basata su documentazione ufficiale
 - [JpGraph Complete Guide](../../../laravel/Modules/Chart/docs/jpgraph-complete-guide.md) - Guida completa JpGraph con esempi pratici
 - [LimeSurvey Charts PDF Integration](./limesurvey-charts-pdf-integration.md) - Integrazione completa LimeSurvey charts nei PDF

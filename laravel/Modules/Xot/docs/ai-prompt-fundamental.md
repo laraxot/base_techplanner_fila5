@@ -1,5 +1,7 @@
 # Regole Fondamentali per Prompt AI - healthcare_app Fila5 Mono
 # Regole Fondamentali per Prompt AI - ExternalProject Fila5 Mono
+# Regole Fondamentali per Prompt AI - Quaeris Fila5 Mono
+>>>>>>> .merge_file_IOO72y
 
 ## 🚨 REGOLA ASSOLUTA: Database Testing
 
@@ -12,6 +14,8 @@ Tutti i prompt per generazione di codice, test, o modifiche devono includere que
 ```
 Create/Update code for healthcare_app Fila5 Mono with these CRITICAL rules:
 Create/Update code for ExternalProject Fila5 Mono with these CRITICAL rules:
+Create/Update code for Quaeris Fila5 Mono with these CRITICAL rules:
+>>>>>>> .merge_file_IOO72y
 1. NEVER use SQLite for testing - ALWAYS MySQL with "_test" suffixed databases
 2. NEVER use RefreshDatabase trait - ALWAYS use DatabaseTransactions
 3. ALWAYS copy .env.testing to .env before running tests: cp .env.testing .env
@@ -27,6 +31,8 @@ Create/Update code for ExternalProject Fila5 Mono with these CRITICAL rules:
 ```
 Create test for ProfileService in healthcare_app Fila5 Mono with these rules:
 Create test for ProfileService in ExternalProject Fila5 Mono with these rules:
+Create test for ProfileService in Quaeris Fila5 Mono with these rules:
+>>>>>>> .merge_file_IOO72y
 - Use DatabaseTransactions trait, NEVER RefreshDatabase
 - Test concurrent profile creation with first() + try/catch pattern
 - Use MySQL testing configuration (.env.testing with "_test" databases)
@@ -38,6 +44,8 @@ Create test for ProfileService in ExternalProject Fila5 Mono with these rules:
 ```
 Create ProfileService for healthcare_app Fila5 Mono following these patterns:
 Create ProfileService for ExternalProject Fila5 Mono following these patterns:
+Create ProfileService for Quaeris Fila5 Mono following these patterns:
+>>>>>>> .merge_file_IOO72y
 - Use Spatie QueueableAction pattern, not static service classes
 - Implement getOrCreateProfile with race condition handling:
   try/catch on firstOrFail() then create()
@@ -50,6 +58,8 @@ Create ProfileService for ExternalProject Fila5 Mono following these patterns:
 ```
 Create Filament resource extending XotBaseResource for healthcare_app Fila5 Mono:
 Create Filament resource extending XotBaseResource for ExternalProject Fila5 Mono:
+Create Filament resource extending XotBaseResource for Quaeris Fila5 Mono:
+>>>>>>> .merge_file_IOO72y
 - Extend XotBaseResource, never Filament Resource directly
 - Implement getFormSchema() returning array
 - NEVER implement getTableColumns() method
@@ -85,6 +95,10 @@ healthcare_app module specific requirements:
 ### Modulo ExternalProject
 ```
 ExternalProject module specific requirements:
+### Modulo Quaeris
+```
+Quaeris module specific requirements:
+>>>>>>> .merge_file_IOO72y
 - LimeSurvey integration with proper MySQL connections
 - Use SurveyResponse scopes, never direct table access
 - Multi-database configuration with "_test" suffixes
@@ -150,6 +164,7 @@ Model structure requirements:
 ## 📚 Riferimenti Aggiuntivi
 
 ### Documentazione Principale
+
 - [AGENTS.md](AGENTS.md) - Guida completa sviluppatori AI
 - [Database Testing Rules](../../../../../docs/database-testing-rules.md) - Regole MySQL testing
 - [AI Coding Memory](../../../../ai_coding_memory.md) - Memoria completa regole
@@ -158,6 +173,17 @@ Model structure requirements:
 ### Regole Specifiche
 - [Profile Duplicate Resolution](../../../../../docs/profile-duplicate-issue-resolution.md) - Soluzione completa
 - [MySQL Testing Configuration](../../../../../docs/mysql-testing-configuration.md) - Configurazione MySQL
+
+- [AGENTS.md](../../../../agents.md) - Guida completa sviluppatori AI
+- [Database Testing Rules](../../../../docs/database-testing-rules.md) - Regole MySQL testing
+- [AI Coding Memory](../../../../ai_coding_memory.md) - Memoria completa regole
+- [Critical Rules Index](../../../../docs/critical-rules-index.md) - Indice regole critiche
+
+### Regole Specifiche
+- [Profile Duplicate Resolution](../../../../docs/profile-duplicate-issue-resolution.md) - Soluzione completa
+- [MySQL Testing Configuration](../../../../docs/mysql-testing-configuration.md) - Configurazione MySQL
+
+>>>>>>> .merge_file_IOO72y
 - [PHPStan Critical Rules](../xot/docs/phpstan-critical-rules.md) - Regole PHPStan
 
 ## 🔧 Integration Guidelines
@@ -187,3 +213,10 @@ LimeSurvey specific rules:
 **Race Conditions**: ✅ Pattern first() + try/catch  
 **PHPStan Level**: ✅ 10 obbligatorio  
 **Status**: Production Ready
+
+```
+=======
+**Status**: Production Ready
+
+```
+>>>>>>> .merge_file_7mc93F

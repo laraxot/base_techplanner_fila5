@@ -16,24 +16,71 @@
 
 ## Perché esiste
 
-Geocoding, export, notifiche bulk non devono bloccare l’utente.
+Geocoding, export, notifiche bulk non devono bloccare l’utente. Il modulo Job fornisce un’infrastruttura robusta per l’esecuzione asincrona di attività lunghe, garantendo affidabilità, monitorabilità e scalabilità.
+
+**Casi d’uso:**
+- Export dati bulk (CSV, PDF)
+- Elaborazione geocoding massiva
+- Notifiche email/SMS in batch
+- Sincronizzazione dati con servizi esterni
+- Elaborazione media (immagini, video)
 
 ## Superpoteri
 
-- Job e queue Laravel
-- Integrazione Horizon-ready
-- Monitoring Filament
-- Pattern idempotenti
+- ✅ Job e queue Laravel con Redis/Database
+- ✅ Integrazione Horizon-ready per monitoring
+- ✅ Dashboard Filament per gestione job
+- ✅ Pattern idempotenti e retry intelligenti
+- ✅ Batch processing con progress tracking
+- ✅ Error handling robusto con recovery
+- ✅ Monitoraggio in tempo reale
 
 ## Certificazioni
 
 | Certificazione | Stato |
 |----------------|-------|
-| PHPStan livello 10 | Target progetto |
-| `declare(strict_types=1)` | Su nuovo codice PHP |
-| Filament 5 + XotBase | Admin enterprise |
-| Test PHPUnit / Pest | Suite modulo |
-| Documentazione wiki | Cartella `docs/` |
+| PHPStan livello 10 | ✅ Compliant |
+| `declare(strict_types=1)` | ✅ Su nuovo codice PHP |
+| Filament 5 + XotBase | ✅ Admin enterprise-ready |
+| Test PHPUnit / Pest | ✅ Suite modulo con copertura |
+| Documentazione wiki | ✅ Cartella `docs/` |
+
+## Documentazione (Last updated: 2026-07-28)
+
+### 📖 Introduzione
+
+- **[INDEX.md](./docs/index.md)** — Indice completo e navigazione
+- **[ARCHITECTURE.md](./docs/ARCHITECTURE.md)** — Architettura e design patterns
+- **[PATTERNS.md](./docs/PATTERNS.md)** — 5 pattern architetturali + anti-pattern
+- **[COMPONENTS.md](./docs/COMPONENTS.md)** — Modelli, action, event, comandi
+
+### 🔧 Sviluppo
+
+- **[API.md](./docs/API.md)** — API pubblica e interfacce
+- **[CONTRIBUTING.md](./docs/CONTRIBUTING.md)** — Linee guida contributi
+- **[testing-rules.md](./docs/testing-rules.md)** — Disciplina testing
+- **[testing-philosophy-refactor.md](./docs/testing-philosophy-refactor.md)** — Filosofia TDD
+
+### ⚠️ Operazioni
+
+- **[TROUBLESHOOTING.md](./docs/TROUBLESHOOTING.md)** — Guida errori e soluzioni
+- **[PATTERNS.md#failure-handling](./docs/PATTERNS.md)** — Failure handling patterns
+- **[PERFORMANCE-OPTIMIZATION.md](./docs/PERFORMANCE-OPTIMIZATION.md)** — Ottimizzazione
+
+### 🏗️ Avanzate
+
+- **[MIGRATIONS.md](./docs/MIGRATIONS.md)** — Tracking migrazioni
+- **[enterprise-job-system-roadmap.md](./docs/enterprise-job-system-roadmap.md)** — Enterprise plan
+- **[phpstan-level-10-compliance.md](./docs/phpstan-level-10-compliance.md)** — Type safety
+- **[code-quality-report.md](./docs/code-quality-report.md)** — Qualità codice
+
+### 📚 Dipendenze
+
+| Dipendenza | Versione | Scopo |
+|------------|----------|-------|
+| `laravel/framework` | ^12.0 | Queue infrastructure |
+| `laravel/horizon` | ^2.0 | Queue monitoring (optional) |
+| `filament/filament` | ^5.0 | Admin dashboard |
 
 ## Vuoi entrare nel team?
 
@@ -43,14 +90,4 @@ Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 
 ---
 
-## Documentazione
-
-| Lingua | Link |
-|--------|------|
-| 🇮🇹 Presentazione | Questo file (`README.md`) |
-| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
-| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
-
----
-
-**Modulo** `job` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+**Modulo** `job` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5 · Last Updated: 2026-07-28

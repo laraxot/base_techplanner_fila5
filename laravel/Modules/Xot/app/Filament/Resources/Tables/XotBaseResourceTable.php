@@ -10,6 +10,12 @@ use Modules\Xot\Filament\Traits\HasXotTable;
 use Modules\Xot\Filament\Traits\TransTrait;
 use Webmozart\Assert\Assert;
 
+/**
+ * @property string|null $tableSearch Fornita a runtime da chi consuma HasXotTable
+ *                                    in un contesto Livewire (mai dichiarata qui
+ *                                    per non ricreare il conflitto di composizione
+ *                                    risolto in HasXotTable).
+ */
 abstract class XotBaseResourceTable
 {
     use HasXotTable;
@@ -17,7 +23,7 @@ abstract class XotBaseResourceTable
 
     public static function configure(Table $table): Table
     {
-        if (self::class === static::class) {
+        if (static::class === self::class) {
             throw new \LogicException('XotBaseResourceTable::configure() must be called on a concrete table class.');
         }
 

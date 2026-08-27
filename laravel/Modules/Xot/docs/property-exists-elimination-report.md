@@ -591,6 +591,10 @@ Implementare:
 - [User/docs/phpstan-level10-fixes.md](../../User/docs/phpstan-level10-fixes.md)
 - [Tenant/docs/phpstan-level10-fixes.md](../../Tenant/docs/phpstan-level10-fixes.md)
 - [Notify/docs/eloquent-properties-best-practices.md](../../Notify/docs/eloquent-properties-best-practices.md)
+- [User/docs/phpstan-level10-fixes.md](../../user/docs/phpstan-level10-fixes.md)
+- [Tenant/docs/phpstan-level10-fixes.md](../../tenant/docs/phpstan-level10-fixes.md)
+- [Notify/docs/eloquent-properties-best-practices.md](../../notify/docs/eloquent-properties-best-practices.md)
+>>>>>>> .merge_file_IjcTjR
 
 **References Esterne**:
 - [Laravel Eloquent Properties](https://laravel.com/docs/11.x/eloquent#accessing-attributes)

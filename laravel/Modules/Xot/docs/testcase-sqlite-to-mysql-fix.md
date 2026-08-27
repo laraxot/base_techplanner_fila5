@@ -201,6 +201,8 @@ Questo è INUTILE perché:
 ---
 
 **Data:** 2026-01-09
+**Data:** [DATE]
+>>>>>>> .merge_file_i4sXtX
 **Stato:** Pronto per implementazione
 **Righe:** 126 → ~25 (-80%)
 **Complessità:** ESTREMA → MINIMALE

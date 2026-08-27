@@ -9,7 +9,7 @@ use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\QueueableAction\QueueableAction;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('no-job-db');
 
 describe('ClearScheduleCacheAction', function () {
     it('can be instantiated', function () {

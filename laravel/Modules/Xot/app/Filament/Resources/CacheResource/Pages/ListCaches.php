@@ -6,7 +6,6 @@ namespace Modules\Xot\Filament\Resources\CacheResource\Pages;
 
 use Filament\Actions\Action;
 use Filament\Actions\CreateAction;
-use Filament\Tables\Columns\Layout\Stack;
 use Filament\Tables\Columns\TextColumn;
 use Modules\UI\Enums\TableLayoutEnum;
 use Modules\Xot\Filament\Actions\Header\ArtisanHeaderAction;
@@ -46,14 +45,6 @@ class ListCaches extends XotBaseListRecords
                 ->dateTime()
                 ->sortable()
                 ->label('Expiration'),
-        ];
-    }
-
-    #[\Override]
-    public function getGridTableColumns(): array
-    {
-        return [
-            Stack::make($this->getTableColumns()),
         ];
     }
 

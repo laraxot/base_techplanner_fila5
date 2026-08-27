@@ -4,13 +4,31 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Tests;
 
+use Illuminate\Contracts\Support\Htmlable;
+use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema;
+use Modules\Lang\Actions\SaveTransAction;
 use Modules\Lang\Providers\LangServiceProvider;
 use Modules\User\Models\User;
 use Modules\User\Providers\UserServiceProvider;
 use Modules\Xot\Tests\XotBaseTestCase;
+
+use function Safe\file_put_contents;
+use function Safe\getmypid;
+use function Safe\putenv;
+use function Safe\touch;
+use function Safe\unlink;
+
+/**
+ * No-op SaveTransAction per evitare scritture su lang/*.php durante i test Filament.
+ */
+final class SaveTransActionNoOpStub extends SaveTransAction
+{
+    public function execute(string $key, int|string|array|Htmlable|null $data): void {}
+}
 
 /**
  * Base test case for Lang module.
@@ -29,6 +47,9 @@ abstract class TestCase extends XotBaseTestCase
 
     protected function setUp(): void
     {
+        // App riusata tra test: reset PRIMA del boot (AutoLabel gira durante parent::setUp).
+        self::disablePersistTransInTests();
+
         parent::setUp();
 
         $database = database_path('fixcity_data.sqlite');
@@ -37,7 +58,7 @@ abstract class TestCase extends XotBaseTestCase
         $connections = config('database.connections', []);
 
         foreach (array_keys($connections) as $connection) {
-            if ('sqlite' !== config("database.connections.{$connection}.driver")) {
+            if (config("database.connections.{$connection}.driver") !== 'sqlite') {
                 continue;
             }
 
@@ -46,6 +67,90 @@ abstract class TestCase extends XotBaseTestCase
         }
 
         config(['auth.providers.users.model' => User::class]);
+
+        self::restoreSaveTransActionNoOp();
+    }
+
+    protected function tearDown(): void
+    {
+        self::restoreSaveTransActionNoOp();
+        parent::tearDown();
+    }
+
+    public static function bindRealSaveTransAction(): void
+    {
+        self::enablePersistTransInTests();
+        app()->instance(SaveTransAction::class, new SaveTransAction());
+    }
+
+    public static function restoreSaveTransActionNoOp(): void
+    {
+        self::disablePersistTransInTests();
+        if (app()->bound('config')) {
+            app()->instance(SaveTransAction::class, new SaveTransActionNoOpStub());
+        }
+    }
+
+    public static function enablePersistTransInTests(): void
+    {
+        putenv('LANG_PERSIST_TRANS_IN_TESTS=1');
+        $_ENV['LANG_PERSIST_TRANS_IN_TESTS'] = '1';
+        if (app()->bound('config')) {
+            config(['lang.persist_trans_in_tests' => true]);
+        }
+    }
+
+    public static function disablePersistTransInTests(): void
+    {
+        putenv('LANG_PERSIST_TRANS_IN_TESTS=0');
+        $_ENV['LANG_PERSIST_TRANS_IN_TESTS'] = '0';
+        if (app()->bound('config')) {
+            config(['lang.persist_trans_in_tests' => false]);
+        }
+    }
+
+    /**
+     * Story 5.26 parallel campaign: lo sqlite condiviso va in SQLITE_BUSY con N pest.
+     * Feature/Integration DB-write → skip; coverage da Unit puri.
+     * Riaprire write-test quando [5.25] schema isolato per processo.
+     */
+    public static function langDbUnavailable(): bool
+    {
+        return true;
+    }
+
+    /**
+     * SQLite isolato per Translation::firstOrCreate nei test Unit (niente masscity_data).
+     */
+    public static function forceSqliteTranslations(): void
+    {
+        $database = sys_get_temp_dir().'/lang_cov_'.getmypid().'_'.uniqid('', true).'.sqlite';
+        if (is_file($database)) {
+            unlink($database);
+        }
+        touch($database);
+
+        config([
+            'database.connections.lang' => [
+                'driver' => 'sqlite',
+                'database' => $database,
+                'prefix' => '',
+                'foreign_key_constraints' => false,
+            ],
+        ]);
+        DB::purge('lang');
+        DB::reconnect('lang');
+
+        Schema::connection('lang')->dropIfExists('translations');
+        Schema::connection('lang')->create('translations', static function (Blueprint $table): void {
+            $table->id();
+            $table->string('lang')->nullable();
+            $table->string('namespace')->nullable();
+            $table->string('group')->nullable();
+            $table->string('item')->nullable();
+            $table->text('value')->nullable();
+            $table->timestamps();
+        });
     }
 
     /**
@@ -61,7 +166,17 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
-     * @param array<string, mixed> $data
+     * Scrive un file di traduzione PHP nel percorso indicato.
+     *
+     * @param  array<string, mixed>  $translations
+     */
+    public static function createTranslationFile(string $filePath, array $translations): void
+    {
+        file_put_contents($filePath, "<?php\n\nreturn ".var_export($translations, true).";\n");
+    }
+
+    /**
+     * @param  array<string, mixed>  $data
      */
     public function assertDatabaseHasRow(string $table, array $data, ?string $connection = null): void
     {
@@ -69,12 +184,12 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
-     * @param class-string<\Throwable> $exceptionClass
+     * @param  class-string<\Throwable>  $exceptionClass
      */
     public function expectApplicationException(string $exceptionClass, ?string $message = null): void
     {
         $this->expectException($exceptionClass);
-        if (null !== $message) {
+        if ($message !== null) {
             $this->expectThrowableMessage($message);
         }
     }

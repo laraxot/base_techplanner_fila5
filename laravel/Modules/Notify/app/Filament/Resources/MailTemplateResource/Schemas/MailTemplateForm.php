@@ -20,6 +20,9 @@ class MailTemplateForm extends XotBaseResourceForm
      */
     public static function getFormSchema(): array
     {
+        /** @var view-string $paramsBadgesView */
+        $paramsBadgesView = 'notify::filament.components.params-badges';
+
         return [
             'mailable_slug_group' => Group::make()
                 ->schema([

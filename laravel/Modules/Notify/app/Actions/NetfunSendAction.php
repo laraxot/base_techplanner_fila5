@@ -17,7 +17,7 @@ class NetfunSendAction
 
     public string $token;
 
-    /** @var array<string, mixed> */
+    /** @var array{status_code?: int, status_txt?: string} */
     public array $vars = [];
 
     /**
@@ -38,7 +38,7 @@ class NetfunSendAction
     /**
      * Execute the action.
      *
-     * @return array<string, mixed>
+     * @return array{status_code: int, status_txt: string}
      */
     public function execute(SmsData $smsData): array
     {

@@ -26,9 +26,10 @@ namespace Modules\Notify\Tests\Unit\Models;
 use Modules\Notify\Database\Factories\ContactFactory;
 use Modules\Notify\Models\Contact;
 use Modules\Notify\Tests\TestCase;
+use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('notify-db');
 
 beforeEach(function (): void {
     /** @var TestCase $this */
@@ -66,7 +67,7 @@ describe('Contact PartOne', function (): void {
             'duplicate_count' => 0,
             'order_column' => 1,
         ]);
-        \assertNotifyTableHas('contacts', [
+        XotBasePest::assertTableHas('notify', 'contacts', [
             'id' => $contact->id,
             'model_type' => 'App\Models\User',
             'model_id' => '123',
@@ -139,7 +140,7 @@ describe('Contact PartOne', function (): void {
             'contact_type' => 'phone',
             'value' => '+393331234567',
         ]);
-        \assertNotifyTableHas('contacts', [
+        XotBasePest::assertTableHas('notify', 'contacts', [
             'id' => $contact->id,
             'model_type' => 'App\Models\User',
             'model_id' => '123',
@@ -188,7 +189,7 @@ describe('Contact PartOne', function (): void {
             'duplicate_count' => 1,
             'order_column' => 2,
         ]);
-        \assertNotifyTableHas('contacts', [
+        XotBasePest::assertTableHas('notify', 'contacts', [
             'id' => $contact->id,
             'model_type' => 'App\Models\Company',
             'model_id' => '789',
@@ -242,7 +243,7 @@ describe('Contact PartOne', function (): void {
             'verified_at' => now(),
             'token' => 'new-token-123',
         ]);
-        \assertNotifyTableHas('contacts', [
+        XotBasePest::assertTableHas('notify', 'contacts', [
             'id' => $contact->id,
             'value' => 'new@example.com',
             'first_name' => 'New Name',

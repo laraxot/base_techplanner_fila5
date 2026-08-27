@@ -1,3 +1,16 @@
+
+---
+title: "Theme System: The 'Vestito' (Clothing) Philosophy"
+module: xot
+type: integration
+tags: [integrations, modules, xot]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
+
+=======
+>>>>>>> .merge_file_QmOyNz
 # Theme System: The "Vestito" (Clothing) Philosophy
 
 ## Core Concept: Theme as "Vestito"
@@ -54,6 +67,8 @@ Themes/[ThemeName]/
 │   │   └── pages/
 ├── _healthcare_app_fila5_mono.code-workspace
 ├── _app_fila5_mono.code-workspace
+├── _quaeris_fila4_mono.code-workspace
+>>>>>>> .merge_file_fnpFhm
 ├── package.json
 ├── postcss.config.js
 ├── tailwind.config.js
@@ -295,6 +310,8 @@ Themes implement accessibility features while maintaining module functionality:
 ### KISS (Keep It Simple, Stupid)
 - Simple theme switching
 - <nome progetto>able view resolution
+- Predictable view resolution
+>>>>>>> .merge_file_fnpFhm
 - Clear separation of concerns
 - Minimal configuration needed
 

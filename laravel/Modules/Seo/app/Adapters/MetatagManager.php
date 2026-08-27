@@ -6,13 +6,12 @@ namespace Modules\Seo\Adapters;
 
 use DateTimeInterface;
 use Modules\Seo\Datas\MetatagData;
-use Modules\Seo\Facades\Metatag;
 
 /**
  * Metatag facade coordinator.
  *
  * Stateful accumulator for the current request's SEO metadata, exposed through
- * the {@see Metatag} facade. It is intentionally an Adapter
+ * the Metatag facade. It is intentionally an Adapter
  * (facade coordinator) and not a QueueableAction: it holds mutable, per-request
  * state built up by successive setter calls, whereas Actions expose a single
  * stateless `execute()` entrypoint. See Xot canonical doc
@@ -162,6 +161,9 @@ class MetatagManager
      */
     public function setModifiedTime(DateTimeInterface $time): void
     {
-        $this->set(array_merge($this->metatagData->toArray(), ['modified_time' => $time]));
+        $this->set(array_merge(
+            $this->metatagData->toArray(),
+            ['modified_time' => $time],
+        ));
     }
 }

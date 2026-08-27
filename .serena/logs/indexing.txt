@@ -1,0 +1,18 @@
+public_html/themes/Two/resources
+No language servers available in the manager
+laravel/config/com/sottana~dev
+No language servers available in the manager
+laravel/config/com/sottana~HEAD
+No language servers available in the manager
+.opencode/command/ponytail-audit.md
+No language servers available in the manager
+.opencode/command/ponytail-gain.md
+No language servers available in the manager
+.opencode/command/ponytail-help.md
+No language servers available in the manager
+.opencode/command/ponytail-debt.md
+No language servers available in the manager
+.opencode/command/ponytail-review.md
+No language servers available in the manager
+.opencode/command/ponytail.md
+No language servers available in the manager

@@ -9,7 +9,7 @@ use Modules\Notify\Providers\Filament\AdminPanelProvider;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Notify\Tests\TestCase::class);
+uses(TestCase::class)->group('no-notify-db');
 
 test('admin panel provider returns a panel instance', function () {
     $provider = new AdminPanelProvider(app());

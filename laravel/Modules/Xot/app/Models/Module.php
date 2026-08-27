@@ -5,86 +5,55 @@ declare(strict_types=1);
 namespace Modules\Xot\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
-use Modules\Xot\Contracts\ProfileContract;
-use Modules\Xot\Database\Factories\ModuleFactory;
 use Nwidart\Modules\Facades\Module as ModuleFacade;
 use Nwidart\Modules\Module as NModule;
+use Sushi\Sushi;
 
 use function Safe\json_encode;
 
-use Sushi\Sushi;
-
 /**
- * @property int                             $id
- * @property string|null                     $name
- * @property string|null                     $slug
- * @property string|null                     $version
- * @property string|null                     $description
- * @property bool|null                       $status
- * @property bool|null                       $enabled
- * @property bool|null                       $is_active
- * @property int|null                        $priority
- * @property string|null                     $path
- * @property string|null                     $icon
- * @property array<array-key, mixed>|null    $colors
- * @property array<array-key, mixed>|null    $dependencies
- * @property array<array-key, mixed>|null    $config
- * @property array<array-key, mixed>|null    $metadata
- * @property \Illuminate\Support\Carbon|null $activation_date
- * @property \Illuminate\Support\Carbon|null $deactivation_date
- * @property \Illuminate\Support\Carbon|null $installation_date
- * @property array<array-key, mixed>|null    $update_history
+ * @property int $id
+ * @property string|null $name
+ * @property string|null $description
+ * @property bool|null $status
+ * @property int|null $priority
+ * @property string|null $path
  *
- * @method static Builder<static>|Module newModelQuery()
- * @method static Builder<static>|Module newQuery()
- * @method static Builder<static>|Module query()
- * @method static Builder<static>|Module whereColors($value)
- * @method static Builder<static>|Module whereDescription($value)
- * @method static Builder<static>|Module whereIcon($value)
- * @method static Builder<static>|Module whereId($value)
- * @method static Builder<static>|Module whereName($value)
- * @method static Builder<static>|Module wherePath($value)
- * @method static Builder<static>|Module wherePriority($value)
- * @method static Builder<static>|Module whereStatus($value)
+ * @method static Builder|Module newModelQuery()
+ * @method static Builder|Module newQuery()
+ * @method static Builder|Module query()
+ * @method static Builder|Module whereDescription($value)
+ * @method static Builder|Module whereId($value)
+ * @method static Builder|Module whereName($value)
+ * @method static Builder|Module wherePath($value)
+ * @method static Builder|Module wherePriority($value)
+ * @method static Builder|Module whereStatus($value)
  *
- * @property ProfileContract|null $creator
- * @property ProfileContract|null $deleter
- * @property ProfileContract|null $updater
+ * @property string|null $icon
+ * @property array<string, string>|null $colors
  *
- * @method static ModuleFactory factory($count = null, $state = [])
+ * @method static Builder|Module whereColors($value)
+ * @method static Builder|Module whereIcon($value)
  *
+ * @mixin IdeHelperModule
  * @mixin \Eloquent
  */
-final class Module extends BaseModel
+class Module extends Model
 {
     use Sushi;
 
     protected $fillable = [
         'name',
-        'slug',
-        'version',
-        'description',
+        // 'alias',
+        // 'description',
         'status',
-        'enabled',
-        'is_active',
         'priority',
         'path',
         'icon',
         'colors',
-        'dependencies',
-        'config',
-        'metadata',
-        'activation_date',
-        'deactivation_date',
-        'installation_date',
-        'update_history',
     ];
-
-    /**
-     * @var string
-     */
-    protected $connection = 'xot';
 
     /**
      * @return array<int, array<string, mixed>>
@@ -111,10 +80,8 @@ final class Module extends BaseModel
             ];
         });
 
-        /** @var array<int, array<string, mixed>> $rows */
-        $rows = array_values($modules);
-
-        return $rows;
+        /** @var array<int, array<string, mixed>> */
+        return array_values($modules);
     }
 
     protected function casts(): array
@@ -123,29 +90,11 @@ final class Module extends BaseModel
             'name' => 'string',
             'description' => 'string',
             'status' => 'boolean',
-            'enabled' => 'boolean',
+
             'priority' => 'integer',
             'path' => 'string',
             'icon' => 'string',
             'colors' => 'array',
         ];
-    }
-
-    public function isEnabled(): bool
-    {
-        if (null !== $this->enabled) {
-            return (bool) $this->enabled;
-        }
-
-        if (null !== $this->status) {
-            return (bool) $this->status;
-        }
-
-        return (bool) ($this->is_active ?? false);
-    }
-
-    public function isDisabled(): bool
-    {
-        return ! $this->isEnabled();
     }
 }

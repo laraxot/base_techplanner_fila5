@@ -17,8 +17,11 @@ abstract class BaseProfileResource extends XotBaseResource
 
     protected static ?string $model = BaseProfile::class;
 
-    #[\Override]
-    public static function getFormSchema(): array
+    // #[\Override]
+    /**
+     * @return array<string, mixed>
+     */
+    public static function getFormSchemaOld(): array
     {
         return [
             // Forms\Components\TextInput::make('user_id'),

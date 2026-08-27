@@ -612,13 +612,22 @@ class AlertWidget extends BaseTableWidget
 
 ## 🔗 Collegamenti Correlati
 
-- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
+- [Analisi Completa Codice](./comprehensive_code_analysis.md)
+>>>>>>> .merge_file_rmndHX
 - [Architettura Moduli](architecture.md)
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
 
 ---
 
 **Data Creazione**: 2025-01-06
+
+- [Architettura Moduli](./architecture.md)
+- [Performance Guide](./performance_guide.md)
+
+---
+
+**Data Creazione**: [DATE]
+
 **Priorità**: CRITICA
 **Effort Stimato**: 20-30 ore
 **Benefici**: ALTI

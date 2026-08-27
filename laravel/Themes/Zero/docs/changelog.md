@@ -19,7 +19,7 @@ Version history for Zero theme. Follows Semantic Versioning (MAJOR.MINOR.PATCH).
 - **Semantic Versioning**: MAJOR.MINOR.PATCH (e.g., 1.2.3)
 - **Source**: Git tags + conventional commits
 - **Auto-generation**: Potential via `.releaserc.json` (commitizen)
-- **Documentation**: Maintained in this file + root CHANGELOG.md
+- **Documentation**: Maintained in this file + root changelog.md
 - **Breaking changes**: Always marked with ⚠️ emoji
 
 ## Current Version
@@ -197,7 +197,7 @@ When preparing a release:
 A: Zero theme is versioned independently. Major PTVX updates may require Zero updates, but Zero can release features on its own schedule.
 
 **Q: Will Zero follow the same version as other themes?**
-A: No. Zero, One, and Three have independent version tracks. Check each theme's CHANGELOG.md.
+A: No. Zero, One, and Three have independent version tracks. Check each theme's changelog.md.
 
 **Q: How do I report a bug or request a feature?**
 A: Create a GitHub issue in the Laraxot PTVX repo with:

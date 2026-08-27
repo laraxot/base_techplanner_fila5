@@ -146,7 +146,7 @@ foreach ($sortedFiles as $fileName => $stats) {
     }
 
     $percent = round(($stats['elements']['covered'] / $stats['elements']['total']) * 100, 1);
-    $shortName = str_replace('/var/www/html/base_ptv_fila5_mono/laravel/', '', $fileName);
+    $shortName = str_replace('/var/www/html/<nome repository>/laravel/', '', $fileName);
 
     printf("%3d. %6.1f%% (%3d elems) - %s\n", ++$counter, $percent, $stats['elements']['total'], $shortName);
 }
@@ -174,15 +174,15 @@ foreach ($sortedFiles as $fileName => $stats) {
         break;
     }
 
-    $shortName = str_replace('/var/www/html/base_ptv_fila5_mono/laravel/', '', $fileName);
+    $shortName = str_replace('/var/www/html/<nome repository>/laravel/', '', $fileName);
     printf("  %6.1f%% - %s\n", $percent, $shortName);
-    ++$counter;
+    $counter++;
 }
 
 echo "\n";
 
 // Files with no coverage
-$uncoveredFiles = array_filter($allFiles, fn ($stats) => 0 === $stats['elements']['covered'] && $stats['elements']['total'] > 0);
+$uncoveredFiles = array_filter($allFiles, fn ($stats) => $stats['elements']['covered'] === 0 && $stats['elements']['total'] > 0);
 
 if (count($uncoveredFiles) > 0) {
     echo 'Files with NO coverage ('.count($uncoveredFiles)." files):\n";
@@ -193,9 +193,9 @@ if (count($uncoveredFiles) > 0) {
             echo '  ... and '.(count($uncoveredFiles) - 15)." more\n";
             break;
         }
-        $shortName = str_replace('/var/www/html/base_ptv_fila5_mono/laravel/', '', $fileName);
+        $shortName = str_replace('/var/www/html/<nome repository>/laravel/', '', $fileName);
         echo '  - '.$shortName."\n";
-        ++$counter;
+        $counter++;
     }
     echo "\n";
 }

@@ -1,6 +1,8 @@
 # Log delle Correzioni Filament
 
 ## Data: 2024-12-19
+## Data: [DATE]
+>>>>>>> .merge_file_EccW5B
 
 ### **REGOLA CRITICA IDENTIFICATA: Trait Translatable**
 

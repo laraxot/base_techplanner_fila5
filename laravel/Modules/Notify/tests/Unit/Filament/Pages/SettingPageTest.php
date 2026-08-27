@@ -6,12 +6,14 @@ namespace Modules\Notify\Tests\Unit\Filament\Pages;
 
 use Modules\Notify\Filament\Pages\SettingPage;
 use Modules\Notify\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
-uses(\Modules\Notify\Tests\TestCase::class);
+uses(TestCase::class)->group('no-notify-db');
 
 test('setting page returns env widget in header', function () {
-    $page = new SettingPage;
+    $page = new SettingPage();
 
     $widgets = $page->getHeaderWidgets();
 
+    Assert::assertNotEmpty($widgets);
 });

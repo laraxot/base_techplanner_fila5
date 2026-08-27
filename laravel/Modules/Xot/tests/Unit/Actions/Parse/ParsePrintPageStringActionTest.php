@@ -6,7 +6,7 @@ use Modules\Xot\Actions\ParsePrintPageStringAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('no-xot-db');
 
 it('parses single pages and ranges', function (): void {
     $str = '1-4,6,7,8,11-14';
@@ -18,6 +18,8 @@ it('parses single pages and ranges', function (): void {
 });
 
 it('throws when no valid page number exists', function (): void {
+    expect(fn (): array => ParsePrintPageStringAction::execute('abc'))
+        ->toThrow(InvalidArgumentException::class);
 });
 
 it('builds inclusive ranges from fromTo helper', function (): void {
@@ -26,4 +28,6 @@ it('builds inclusive ranges from fromTo helper', function (): void {
 });
 
 it('throws when fromTo end is lower than start', function (): void {
+    expect(fn (): array => ParsePrintPageStringAction::fromTo(5, 3))
+        ->toThrow(InvalidArgumentException::class);
 });

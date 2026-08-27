@@ -39,6 +39,8 @@ Tutti i metodi `getTable*()` in `HasXotTable` sono dichiarati come `public` perc
 declare(strict_types=1);
 
 namespace Modules\healthcare_app\Filament\Widgets;
+namespace Modules\Quaeris\Filament\Widgets;
+>>>>>>> .merge_file_JfkIXW
 
 use Modules\Xot\Filament\Widgets\XotBaseTableWidget;
 
@@ -98,3 +100,10 @@ must be public (as in class HasXotTable)
 
 *Ultimo aggiornamento: 2025-01-27*
 - [Widget Table Configuration](../../../modules/xot/docs/filament/widget-table-configuration.md)
+
+*Ultimo aggiornamento: 2026-01-27*
+*Ultimo aggiornamento: 2025-01-27*
+- [Widget Table Configuration](../../../modules/xot/docs/filament/widget-table-configuration.md)
+=======
+- [Widget Table Configuration](../../../modules/xot/docs/filament/widget-table-configuration.md)
+>>>>>>> .merge_file_Z30DEY

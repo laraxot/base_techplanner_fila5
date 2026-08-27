@@ -62,6 +62,10 @@ The theme detection algorithm reads `.env` to determine the active theme:
 2. Extract domain → `fixcity.local`
 3. Build config path → `local/fixcity`
 4. Read config → `laravel/config/local/fixcity/xra.php`
+1. `APP_URL` from `laravel/.env` → `http://ptv.local`
+2. Extract domain → `ptv.local`
+3. Build config path → `local/ptv`
+4. Read config → `laravel/config/local/ptv/xra.php`
 5. Get theme → `pub_theme` key → `'Sixteen'`
 
 **Current**: Theme "Sixteen" at `laravel/Themes/Sixteen/`
@@ -367,6 +371,8 @@ GSD directories:
 ### Module & Theme Documentation
 - **All Modules**: `laravel/Modules/{ModuleName}/docs/00-INDEX.md`
 - **All Themes**: `laravel/Themes/{ThemeName}/docs/00-INDEX.md`
+- **All Modules**: `laravel/Modules/{ModuleName}/docs/00-index.md`
+- **All Themes**: `laravel/Themes/{ThemeName}/docs/00-index.md`
 - **Component Catalog**: `laravel/Themes/Sixteen/docs/COMPONENT_CATALOG.md` (47 components, 38 pages)
 
 ---

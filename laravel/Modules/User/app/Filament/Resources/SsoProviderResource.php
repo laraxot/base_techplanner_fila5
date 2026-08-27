@@ -11,7 +11,6 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Resources\Pages\PageRegistration;
 use Filament\Resources\RelationManagers\RelationManager;
-use Filament\Support\Components\Component;
 use Modules\User\Filament\Resources\SsoProviderResource\Pages;
 use Modules\User\Filament\Resources\SsoProviderResource\RelationManagers\UsersRelationManager;
 use Modules\User\Models\SsoProvider;
@@ -22,10 +21,10 @@ class SsoProviderResource extends XotBaseResource
     protected static ?string $model = SsoProvider::class;
 
     /**
-     * @return array<string, Component>
+     * @return array<string, mixed>
      */
-    #[\Override]
-    public static function getFormSchema(): array
+    // #[\Override]
+    public static function getFormSchemaOld(): array
     {
         return [
             'name' => TextInput::make('name')

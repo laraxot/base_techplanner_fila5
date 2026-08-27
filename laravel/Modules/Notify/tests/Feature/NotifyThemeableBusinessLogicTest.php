@@ -7,12 +7,25 @@ namespace Modules\Notify\Tests\Feature;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Modules\Notify\Database\Factories\NotifyThemeableFactory;
 use Modules\Notify\Database\Factories\NotifyThemeFactory;
-use Modules\Notify\Models\NotifyTheme;
 use Modules\Notify\Models\NotifyThemeable;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Notify\Tests\TestCase::class);
+uses(TestCase::class)->group('notify-db');
+
+function notifyThemeableTestDomain(): string
+{
+    $domain = config('app.domain', 'example.com');
+
+    return is_string($domain) ? $domain : 'example.com';
+}
+
+function notifyThemeableTestAppName(): string
+{
+    $name = config('app.name', 'Platform');
+
+    return is_string($name) ? $name : 'Platform';
+}
 
 describe('Notify Themeable Business Logic', function () {
     it('can create notify themeable with basic information', function () {
@@ -82,7 +95,7 @@ describe('Notify Themeable Business Logic', function () {
             'notify_theme_id' => $theme->id,
         ]);
 
-        $linkedTheme = \notifyThemeForThemeable($themeable);
+        $linkedTheme = TestCase::notifyThemeForThemeable($themeable);
         Assert::assertSame($theme->id, $linkedTheme->id);
         Assert::assertSame($themeLabel, $linkedTheme->subject);
     });
@@ -137,15 +150,15 @@ describe('Notify Themeable Business Logic', function () {
         ]);
 
         Assert::assertSame($oldTheme->id, $themeable->notify_theme_id);
-        Assert::assertSame('Tema Vecchio', \notifyThemeForThemeable($themeable)->subject);
+        Assert::assertSame('Tema Vecchio', TestCase::notifyThemeForThemeable($themeable)->subject);
         $themeable->update([
             'notify_theme_id' => $newTheme->id,
-            'updated_by' => 'admin@'.(string) config('app.domain', 'example.com'),
+            'updated_by' => 'admin@'.notifyThemeableTestDomain(),
         ]);
 
         Assert::assertSame($newTheme->id, $themeable->notify_theme_id);
-        Assert::assertSame('Tema Nuovo', \notifyThemeForThemeable($themeable)->subject);
-        Assert::assertSame('admin@'.(string) config('app.domain', 'example.com'), $themeable->updated_by);
+        Assert::assertSame('Tema Nuovo', TestCase::notifyThemeForThemeable($themeable)->subject);
+        Assert::assertSame('admin@'.notifyThemeableTestDomain(), $themeable->updated_by);
     });
 
     it('can handle empty or null values gracefully', function () {
@@ -213,8 +226,8 @@ describe('Notify Themeable Business Logic', function () {
             'notify_theme_id' => $childTheme->id,
         ]);
 
-        Assert::assertSame('Tema Base', \notifyThemeForThemeable($baseThemeable)->subject);
-        Assert::assertSame('Tema Specializzato', \notifyThemeForThemeable($specializedThemeable)->subject);
+        Assert::assertSame('Tema Base', TestCase::notifyThemeForThemeable($baseThemeable)->subject);
+        Assert::assertSame('Tema Specializzato', TestCase::notifyThemeForThemeable($specializedThemeable)->subject);
         Assert::assertSame($specializedThemeable->model_type, $baseThemeable->model_type);
         Assert::assertSame($specializedThemeable->model_id, $baseThemeable->model_id);
     });

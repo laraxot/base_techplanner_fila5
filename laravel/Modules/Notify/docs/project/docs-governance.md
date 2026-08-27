@@ -63,6 +63,7 @@ When the same subject appears in multiple places:
 ## Index Strategy
 
 Indexes should be shallow and predictable.
+Indexes should be shallow and forecastable.
 
 - Project indexes point to module, theme, and script indexes.
 - Module and theme indexes point to current core docs plus clearly marked archives.

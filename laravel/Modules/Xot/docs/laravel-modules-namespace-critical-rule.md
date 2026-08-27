@@ -146,5 +146,7 @@ Prima di ogni commit, verificare:
 ---
 
 **Ultimo aggiornamento**: 2025-01-22
+**Ultimo aggiornamento**: [DATE]
+>>>>>>> .merge_file_V2aIe3
 **Versione**: 1.0.0
 **Status**: ✅ Regola Critica OBBLIGATORIA

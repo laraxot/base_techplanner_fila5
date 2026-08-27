@@ -1,4 +1,5 @@
 # 📸 Screenshot Analysis - Homepage FixCity
+# 📸 Screenshot Analysis - Homepage Notify
 
 ## Reference: Bootstrap Italia
 
@@ -134,11 +135,23 @@ Screenshot: fixcity_events_current.png
 Screenshot: fixcity_topics_current.png
 Screenshot: fixcity_footer_current.png
 URL: http://fixcity.local/it/tests/homepage
+## Notify Current State
+
+### Screenshots
+```
+Screenshot: app_header_current.png
+Screenshot: app_hero_current.png
+Screenshot: app_governance_current.png
+Screenshot: app_events_current.png
+Screenshot: app_topics_current.png
+Screenshot: app_footer_current.png
+URL: http://laraxot.local/it/tests/homepage
 ```
 
 ### Differenze Principali
 
 | Elemento | Bootstrap Italia | FixCity | Status |
+| Elemento | Bootstrap Italia | Notify | Status |
 |----------|-----------------|---------|--------|
 | Header slim | ✅ Presente | ❌ Assente | 🔴 |
 | Hero card-teaser | ✅ Sì | ❌ No | 🔴 |

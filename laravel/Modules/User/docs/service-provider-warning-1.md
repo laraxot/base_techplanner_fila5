@@ -1,16 +1,14 @@
----
-module: theme
-topic: service-provider-warning-1
-canonical: ../../../Themes/docs/shared-components/service-provider-warning-2.md
-related:
-  - "./00-index-1.md"
-  - "./00-index.md"
-  - "./2fa-guide.md"
-  - "./2fa.md"
-  - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-  - "./actions-path-convention.md"
----
+# service_provider_warning - User
 
-See canonical documentation: ../../../Themes/docs/shared-components/service-provider-warning-2.md
+## Overview
+
+Documentazione per service_provider_warning nel modulo User.
+
+## Dettagli
+
+[Da completare]
+
+## Collegamenti
+
+- [Modulo Principale](../README.md)
+

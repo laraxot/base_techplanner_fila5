@@ -5,6 +5,7 @@ tags: [documentation, index]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "documentation-index 📚 indice generale documentazione - fixcity"
+qmd: "documentation-index 📚 indice generale documentazione - ptv"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -44,6 +45,7 @@ related:
 ### Guide Rapide
 - [Quick Start](./quick-start.md) - Guida avvio rapido
 - [Contributing](./contributing.md) - Come contribuire
+- [Contributing](./CONTRIBUTING.md) - Come contribuire
 - [Troubleshooting](./troubleshooting/README.md) - Risoluzione problemi
 
 ---
@@ -288,6 +290,7 @@ related:
 
 ### Contribution Guidelines
 - [How to Contribute](./contributing.md) - Come contribuire
+- [How to Contribute](./CONTRIBUTING.md) - Come contribuire
 - [Code of Conduct](./CODE_OF_CONDUCT.md) - Codice condotta
 - [Pull Request Template](./.github/pull_request_template.md) - Template PR
 
@@ -298,6 +301,8 @@ related:
 ### Support Channels
 - **📧 Email**: support@fixcity.com
 - **🐛 Issues**: [GitHub Issues](https://github.com/laraxot/fixcity/issues)
+- **📧 Email**: support@ptv.com
+- **🐛 Issues**: [GitHub Issues](https://github.com/laraxot/ptv/issues)
 - **💬 Discord**: [Laraxot Community](https://discord.gg/laraxot)
 - **📚 Docs**: [Documentation Portal](https://docs.laraxot.com)
 

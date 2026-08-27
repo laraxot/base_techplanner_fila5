@@ -20,6 +20,10 @@ DB_CONNECTION=mysql
 DB_DATABASE=<nome progetto>_data_test
 USER_DB_CONNECTION=mysql
 USER_DB_DATABASE=<nome progetto>_user_test
+DB_DATABASE=laravelpizza_data_test
+USER_DB_CONNECTION=mysql
+USER_DB_DATABASE=laravelpizza_user_test
+>>>>>>> .merge_file_yQHgDg
 ```
 
 **What TestCase.php actually does:**
@@ -49,6 +53,8 @@ $this->app['config']->set('database.connections.testing', [
 ### Position C (WINNER): "Fix the contradiction!"
 - **Argument**: The problem isn't MySQL vs SQLite - it's that `.env.testing` is IGNORED
 - **Pro**: Respects configuration, DRY, KISS, <nome progetto>able
+- **Pro**: Respects configuration, DRY, KISS, predictable
+>>>>>>> .merge_file_yQHgDg
 - **Con**: Requires refactoring all TestCase files
 
 ## The Zen Solution
@@ -60,6 +66,8 @@ $this->app['config']->set('database.connections.testing', [
 ### Why This Wins
 
 1. **<nome progetto>ability**: Developers expect `.env.testing` to work
+1. **Predictability**: Developers expect `.env.testing` to work
+>>>>>>> .merge_file_yQHgDg
 2. **DRY**: Single source of truth for test configuration
 3. **KISS**: Simple - just use the config that's already there
 4. **Flexibility**: Want SQLite? Change `.env.testing`. Want MySQL? Change `.env.testing`
@@ -169,6 +177,8 @@ abstract class TestCase extends BaseTestCase
 # Production parity - same dialect as production
 DB_CONNECTION=mysql
 DB_DATABASE=<nome progetto>_test
+DB_DATABASE=laravelpizza_test
+>>>>>>> .merge_file_yQHgDg
 DB_USERNAME=marco
 DB_PASSWORD=marco
 
@@ -177,6 +187,13 @@ USER_DB_DATABASE=<nome progetto>_user_test
 
 JOB_DB_CONNECTION=mysql
 JOB_DB_DATABASE=<nome progetto>_job_test
+
+USER_DB_DATABASE=laravelpizza_user_test
+
+JOB_DB_CONNECTION=mysql
+JOB_DB_DATABASE=laravelpizza_job_test
+
+>>>>>>> .merge_file_yQHgDg
 ```
 
 **Pros**: Real MySQL behavior, catches dialect-specific bugs
@@ -249,3 +266,7 @@ JOB_DB_DATABASE=:memory:
 **Date**: 2026-01-09
 **Date**: [DATE]
 **Status**: CANONICAL - This is the new standard
+**Date**: [DATE]
+**Status**: CANONICAL - This is the new standard
+>>>>>>> .merge_file_yQHgDg
+>>>>>>> .merge_file_49aP2h

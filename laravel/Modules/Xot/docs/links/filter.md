@@ -1,6 +1,6 @@
 ---
 title: Filter
-description:
+description: 
 extends: _layouts.documentation
 section: content
 ---
@@ -18,3 +18,17 @@ https://medium.com/@dkthelearner/mastering-laravel-pipeline-and-query-builder-fo
 ### Versione Incoming
 
 ---
+
+
+## Collegamenti tra versioni di filter.md
+* [filter.md](../../../Xot/docs/actions/filter.md)
+* [filter.md](../../../Xot/docs/links/filter.md)
+
+
+### Versione Incoming
+
+
+---
+
+
+>>>>>>> .merge_file_Sprqxo

@@ -16,13 +16,13 @@ use Filament\Tables\Filters\SelectFilter;
 use Modules\Notify\Filament\Resources\NotificationTemplateResource\Pages\ListNotificationTemplates;
 use Modules\Notify\Filament\Resources\NotifyThemeResource;
 use Modules\Notify\Filament\Resources\NotifyThemeResource\Pages\ListNotifyThemes;
-use Modules\Notify\Tests\Fixtures\EditNotifyThemeTestProxy;
 use Modules\Notify\Filament\Resources\NotifyThemeResource\RelationManagers\LinkableRelationManager;
 use Modules\Notify\Filament\Tables\Columns\ContactColumn;
+use Modules\Notify\Tests\Fixtures\EditNotifyThemeTestProxy;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Notify\Tests\TestCase::class);
+uses(TestCase::class)->group('no-notify-db');
 
 function makeEditNotifyThemeTestProxy(): EditNotifyThemeTestProxy
 {
@@ -30,8 +30,7 @@ function makeEditNotifyThemeTestProxy(): EditNotifyThemeTestProxy
 }
 
 test('list notification templates page returns empty table columns array', function (): void {
-    $page = new ListNotificationTemplates;
-    $columns = $page->getTableColumns();
+    $columns = ListNotificationTemplates::notificationTemplateTableColumns();
     Assert::assertSame([], $columns);
 });
 
@@ -65,7 +64,7 @@ test('edit notify theme page exposes delete header action', function (): void {
 
 test('list notify themes columns and filters are configured', function (): void {
     $columns = ListNotifyThemes::getNotifyThemeTableColumns();
-    $page = new ListNotifyThemes;
+    $page = new ListNotifyThemes();
     $filters = $page->getTableFilters();
     Assert::assertArrayHasKey('id', $columns);
     Assert::assertInstanceOf(TextColumn::class, $columns['id']);
@@ -81,7 +80,7 @@ test('list notify themes columns and filters are configured', function (): void 
 });
 
 test('linkable relation manager exposes text input form schema', function (): void {
-    $manager = new LinkableRelationManager;
+    $manager = new LinkableRelationManager();
     $schema = $manager->getFormSchema();
     Assert::assertNotEmpty($schema);
     Assert::assertInstanceOf(TextInput::class, $schema[0]);

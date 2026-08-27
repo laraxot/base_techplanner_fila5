@@ -1,3 +1,12 @@
+---
+title: "Utilizzo di Enum e Config"
+module: notify
+type: integration
+tags: [integrations, modules, notify]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Utilizzo di Enum e Config
 
 Questo documento definisce le best practices per l'utilizzo di Enum e file di configurazione nel sistema , con particolare attenzione alla gestione delle opzioni nei componenti Filament.

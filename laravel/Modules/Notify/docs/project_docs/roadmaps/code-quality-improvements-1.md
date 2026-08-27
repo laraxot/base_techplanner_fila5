@@ -22,7 +22,11 @@ related:
 
 ## Executive Summary
 
+<<<<<<< .merge_file_i3NXTc
 This report documents code quality improvements made across the FixCity platform following the roadmap analysis and PHPStan validation workflow.
+=======
+This report documents code quality improvements made across the Notify platform following the roadmap analysis and PHPStan validation workflow.
+>>>>>>> .merge_file_VNXNe2
 
 ## Objectives
 
@@ -34,13 +38,21 @@ This report documents code quality improvements made across the FixCity platform
 
 ## Modules Analyzed
 
+<<<<<<< .merge_file_i3NXTc
 ### ✅ Fixcity Module (CRITICAL)
+=======
+### ✅ App Module (CRITICAL)
+>>>>>>> .merge_file_VNXNe2
 **Status**: 80% Complete → Code Quality Verified
 **PHPStan**: Level 9 - **0 Errors** ✅
 
 #### Issues Found and Fixed
 
+<<<<<<< .merge_file_i3NXTc
 1. **Ticket Model** (`Modules/Fixcity/app/Models/Ticket.php`)
+=======
+1. **Ticket Model** (`Modules/App/app/Models/Ticket.php`)
+>>>>>>> .merge_file_VNXNe2
    - **Issue**: Missing return type on `getMediaAttribute()` method (line 557)
    - **Fix**: Added full return type annotation
      ```php
@@ -49,7 +61,11 @@ This report documents code quality improvements made across the FixCity platform
    - **Validation**: PHPStan Level 9 passes with 0 errors
    - **Impact**: Improved type safety for media collection access
 
+<<<<<<< .merge_file_i3NXTc
 2. **Configuration Fix** (`config/it/quaerisofficina/manager2/xra.php`)
+=======
+2. **Configuration Fix** (`config/it/appofficina/manager2/xra.php`)
+>>>>>>> .merge_file_VNXNe2
    - **Issue**: Parse error from placeholder `\Modules\<nome progetto>\Models\Customer::class`
    - **Fix**: Replaced with null and TODO comment
    - **Impact**: Resolved blocking parse error for PHPStan analysis
@@ -86,7 +102,11 @@ Added 2 new test cases for media attribute functionality:
 
 | Module | Files Analyzed | Errors Found | Errors Fixed | Status |
 |--------|----------------|--------------|--------------|---------|
+<<<<<<< .merge_file_i3NXTc
 | Fixcity | Models, Services | 1 | 1 | ✅ PASS |
+=======
+| App | Models, Services | 1 | 1 | ✅ PASS |
+>>>>>>> .merge_file_VNXNe2
 | User | Models | 0 | 0 | ✅ PASS |
 | Blog | All app/ | 0 | 0 | ✅ PASS |
 | Seo | All app/ | 0 | 0 | ✅ PASS |
@@ -97,6 +117,7 @@ Added 2 new test cases for media attribute functionality:
 
 ### Files Modified
 
+<<<<<<< .merge_file_i3NXTc
 1. `/laravel/Modules/Fixcity/app/Models/Ticket.php`
    - Added return type to `getMediaAttribute()` method
    - Improved PHPDoc annotation
@@ -106,6 +127,17 @@ Added 2 new test cases for media attribute functionality:
    - Enhanced test coverage for Spatie MediaLibrary integration
 
 3. `/laravel/config/it/quaerisofficina/manager2/xra.php`
+=======
+1. `/laravel/Modules/App/app/Models/Ticket.php`
+   - Added return type to `getMediaAttribute()` method
+   - Improved PHPDoc annotation
+
+2. `/laravel/Modules/App/tests/Unit/Models/TicketBusinessLogicTest.php`
+   - Added 2 new test cases for media attribute
+   - Enhanced test coverage for Spatie MediaLibrary integration
+
+3. `/laravel/config/it/appofficina/manager2/xra.php`
+>>>>>>> .merge_file_VNXNe2
    - Fixed parse error by replacing invalid placeholder
    - Added TODO comment for proper configuration
 
@@ -116,7 +148,11 @@ Added 2 new test cases for media attribute functionality:
 **Note**: Unit tests require database setup. Tests are syntactically correct and ready to run with proper environment configuration.
 
 **Test Files Enhanced**:
+<<<<<<< .merge_file_i3NXTc
 - `Modules/Fixcity/tests/Unit/Models/TicketBusinessLogicTest.php`
+=======
+- `Modules/App/tests/Unit/Models/TicketBusinessLogicTest.php`
+>>>>>>> .merge_file_VNXNe2
 
 **New Test Coverage**:
 - Media collection attribute accessor
@@ -179,7 +215,11 @@ Added 2 new test cases for media attribute functionality:
 ### Medium-Term Actions (Next 30 Days)
 
 1. **Test Coverage**
+<<<<<<< .merge_file_i3NXTc
    - Achieve >80% coverage target for Fixcity module
+=======
+   - Achieve >80% coverage target for App module
+>>>>>>> .merge_file_VNXNe2
    - Create tests for remaining models and services
    - Add integration tests for API endpoints
 
@@ -202,7 +242,11 @@ Added 2 new test cases for media attribute functionality:
 
 This code quality improvement pass has successfully:
 
+<<<<<<< .merge_file_i3NXTc
 - ✅ Identified and fixed PHPStan errors in the Fixcity module
+=======
+- ✅ Identified and fixed PHPStan errors in the App module
+>>>>>>> .merge_file_VNXNe2
 - ✅ Enhanced test coverage for the Ticket model
 - ✅ Fixed blocking parse errors in configuration files
 - ✅ Verified PHPStan Level 9 compliance across multiple modules
@@ -219,4 +263,8 @@ The codebase maintains **PHPStan Level 9 with 0 errors**, demonstrating excellen
 
 ---
 
+<<<<<<< .merge_file_i3NXTc
 *This report is part of the ongoing code quality and documentation improvement initiative for the FixCity platform.*
+=======
+*This report is part of the ongoing code quality and documentation improvement initiative for the Notify platform.*
+>>>>>>> .merge_file_VNXNe2

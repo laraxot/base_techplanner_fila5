@@ -87,8 +87,7 @@ class QueueListenWidget extends XotBaseWidget
         // $output = new StreamOutput(fopen('/path/to/output.log', 'a', false));
 
         Artisan::call('route:list', [], $output);
-        dddx($output);
-
+        throw new \RuntimeException('Removed debug dddx');
         // dddx($output);
         // dddx($output->fetch());
         /*

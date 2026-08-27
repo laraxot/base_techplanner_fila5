@@ -1,90 +1,52 @@
 [
     {
-        "table_schema": "techplanner_data",
-        "model_class": "Modules\\TechPlanner\\Models\\Appointment",
-        "table_name": "appointments",
+        "table_schema": ":memory:",
+        "model_class": "Modules\\Xot\\Models\\CacheLock",
+        "table_name": "cache_locks",
         "id": 1,
-        "updated_at": "2026-07-16T14:24:00.000000Z",
-        "created_at": "2026-07-16T14:24:00.000000Z",
-        "updated_by": "019f6b39-c145-73f9-b361-a667d4ee06bd",
-        "created_by": "019f6b39-c145-73f9-b361-a667d4ee06bd",
-        "table_rows": 0
+        "updated_at": "2026-08-27T16:32:02.663862Z",
+        "created_at": "2026-08-27T16:32:02.663889Z"
     },
     {
-        "table_schema": "techplanner_data",
-        "model_class": "Modules\\TechPlanner\\Models\\Client",
-        "table_name": "clients",
+        "table_schema": ":memory:",
+        "model_class": "Modules\\Xot\\Models\\Cache",
+        "table_name": "cache",
         "id": 2,
-        "updated_at": "2026-07-16T14:28:00.000000Z",
-        "created_at": "2026-07-16T14:28:00.000000Z",
-        "updated_by": "019f6b39-c145-73f9-b361-a667d4ee06bd",
-        "created_by": "019f6b39-c145-73f9-b361-a667d4ee06bd",
-        "table_rows": 0
+        "updated_at": "2026-08-27T16:32:02.671292Z",
+        "created_at": "2026-08-27T16:32:02.671314Z"
     },
     {
-        "table_schema": "techplanner_data",
-        "model_class": "Modules\\TechPlanner\\Models\\Device",
-        "table_name": "machines",
+        "table_schema": ":memory:",
+        "model_class": "Modules\\Xot\\Models\\Extra",
+        "table_name": "extras",
         "id": 3,
-        "updated_at": "2026-07-16T14:28:00.000000Z",
-        "created_at": "2026-07-16T14:28:00.000000Z",
-        "updated_by": "019f6b39-c145-73f9-b361-a667d4ee06bd",
-        "created_by": "019f6b39-c145-73f9-b361-a667d4ee06bd",
-        "table_rows": 0
+        "updated_at": "2026-08-27T16:32:02.679313Z",
+        "created_at": "2026-08-27T16:32:02.679335Z"
     },
     {
-        "table_schema": "techplanner_data",
-        "model_class": "Modules\\TechPlanner\\Models\\LegalOffice",
-        "table_name": "legal_offices",
+        "table_schema": ":memory:",
+        "model_class": "Modules\\Xot\\Models\\Log",
+        "table_name": "logs",
         "id": 4,
-        "updated_at": "2026-07-16T14:28:00.000000Z",
-        "created_at": "2026-07-16T14:28:00.000000Z",
-        "updated_by": "019f6b39-c145-73f9-b361-a667d4ee06bd",
-        "created_by": "019f6b39-c145-73f9-b361-a667d4ee06bd",
-        "table_rows": 0
+        "updated_at": "2026-08-27T16:32:02.688406Z",
+        "created_at": "2026-08-27T16:32:02.687567Z",
+        "table_rows": 2
     },
     {
-        "table_schema": "techplanner_data",
-        "model_class": "Modules\\TechPlanner\\Models\\LegalRepresentative",
-        "table_name": "legal_representatives",
+        "table_schema": ":memory:",
+        "model_class": "Modules\\Xot\\Models\\Module",
+        "table_name": "modules",
         "id": 5,
-        "updated_at": "2026-07-16T14:28:00.000000Z",
-        "created_at": "2026-07-16T14:28:00.000000Z",
-        "updated_by": "019f6b39-c145-73f9-b361-a667d4ee06bd",
-        "created_by": "019f6b39-c145-73f9-b361-a667d4ee06bd",
-        "table_rows": 0
+        "updated_at": "2026-08-27T16:32:02.710998Z",
+        "created_at": "2026-08-27T16:32:02.708026Z",
+        "table_rows": 16
     },
     {
-        "table_schema": "techplanner_data",
-        "model_class": "Modules\\Notify\\Models\\MailTemplate",
-        "table_name": "mail_templates",
+        "table_schema": ":memory:",
+        "model_class": "Modules\\Xot\\Models\\Session",
+        "table_name": "sessions",
         "id": 6,
-        "updated_at": "2026-07-16T14:28:00.000000Z",
-        "created_at": "2026-07-16T14:28:00.000000Z",
-        "updated_by": "019f6b39-c145-73f9-b361-a667d4ee06bd",
-        "created_by": "019f6b39-c145-73f9-b361-a667d4ee06bd",
-        "table_rows": 0
-    },
-    {
-        "table_schema": "techplanner_data",
-        "model_class": "Modules\\TechPlanner\\Models\\MedicalDirector",
-        "table_name": "medical_directors",
-        "id": 7,
-        "updated_at": "2026-07-16T14:28:00.000000Z",
-        "created_at": "2026-07-16T14:28:00.000000Z",
-        "updated_by": "019f6b39-c145-73f9-b361-a667d4ee06bd",
-        "created_by": "019f6b39-c145-73f9-b361-a667d4ee06bd",
-        "table_rows": 0
-    },
-    {
-        "table_schema": "techplanner_data",
-        "model_class": "Modules\\TechPlanner\\Models\\PhoneCall",
-        "table_name": "phone_calls",
-        "id": 8,
-        "updated_at": "2026-07-16T14:28:00.000000Z",
-        "created_at": "2026-07-16T14:28:00.000000Z",
-        "updated_by": "019f6b39-c145-73f9-b361-a667d4ee06bd",
-        "created_by": "019f6b39-c145-73f9-b361-a667d4ee06bd",
-        "table_rows": 0
+        "updated_at": "2026-08-27T16:32:02.719797Z",
+        "created_at": "2026-08-27T16:32:02.719818Z"
     }
 ]

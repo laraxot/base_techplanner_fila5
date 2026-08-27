@@ -12,7 +12,6 @@ use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Forms\Components\Select;
 use Filament\Resources\Pages\PageRegistration;
-use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Filament\Tables;
 use Filament\Tables\Table;
@@ -35,10 +34,10 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     protected static ?string $model = OauthPersonalAccessClient::class;
 
     /**
-     * @return array<string, Component>
+     * @return array<string, mixed>
      */
-    #[\Override]
-    public static function getFormSchema(): array
+    // #[\Override]
+    public static function getFormSchemaOld(): array
     {
         return [
             'oauth_personal_access_client' => Section::make('OAuth Personal Access Client Information')
@@ -62,8 +61,8 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
         return $table
             ->columns(self::getTableColumns())
             ->filters(self::getTableFilters())
-            ->actions(self::getTableActions())
-            ->bulkActions(self::getTableBulkActions())
+            ->recordActions(self::getTableActions())
+            ->toolbarActions(self::getTableBulkActions())
             ->defaultSort('created_at', 'desc');
     }
 

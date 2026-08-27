@@ -11,3 +11,5 @@
 - **Collegamenti**:
   - [Errori comuni nelle transizioni custom (<nome progetto>)](../../<nome progetto>/docs/model-states-errors.md)
   - [README.md centrale](../../../docs/README.md)
+  - [README.md centrale](../../../docs/readme.md)
+>>>>>>> .merge_file_HS4aGX

@@ -50,10 +50,7 @@ trait TransFuncTrait
             $trans = trans($key);
         } catch (\TypeError $e) {
             /*
-            dddx([
-                'e' => $e,
-                'key' => $key,
-            ]);
+            throw new \RuntimeException('Removed debug dddx');
             */
             return 'fix:'.$key;
 
@@ -85,7 +82,7 @@ trait TransFuncTrait
     }
 
     /**
-     * @param string|array<int|string, mixed>|Translator|null $trans
+     * @param  string|array<int|string, mixed>|Translator|null  $trans
      */
     protected static function formatTransFuncResult(string $key, string|array|Translator|null $trans): string
     {
@@ -108,7 +105,7 @@ trait TransFuncTrait
             return $trans;
         }
 
-        if (null === $trans) {
+        if ($trans === null) {
             return static::persistGeneratedTransFuncLabel($key);
         }
 

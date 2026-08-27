@@ -68,6 +68,10 @@ class ScheduleHistory extends BaseModel
         'params',
         'output',
         'options',
+        // Senza questa riga `ScheduleHistory::create(['schedule_id' => …])` scartava la
+        // chiave in silenzio: la riga nasceva con `schedule_id` null e la relazione
+        // `Schedule::histories()` non trovava mai niente.
+        'schedule_id',
     ];
 
     /*

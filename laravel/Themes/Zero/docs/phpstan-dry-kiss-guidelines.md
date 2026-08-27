@@ -6,7 +6,6 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "phpstan level 10 drykiss guidelines for themes"
 related:
-  - "./00-INDEX.md"
   - "./00-index.md"
 ---
 
@@ -501,6 +500,12 @@ render(function (StatsService $statsService): array {
 
 - [Model Usage in Themes](./model-usage-in-themes.md)
 - [Theme Architecture](./architecture.md)
+- [PHPStan Level 10 Full Analysis (Xot)](../../Modules/Xot/docs/phpstan-level-10-dry-kiss-analysis-2025-10-17.md)
+- [DRY/KISS Best Practices](./dry-kiss-best-practices-2025-10-15.md)
+- [PHPStan Level 10 Full Analysis (Xot)](../../Modules/Xot/docs/phpstan-level-10-dry-kiss-analysis.md)
+- [DRY/KISS Best Practices](./dry-kiss-best-practices.md)
+- [PHPStan Level 10 Full Analysis (Xot)](../../Modules/Xot/docs/phpstan-level-10-dry-kiss-analysis-2025-10-17.md)
+- [DRY/KISS Best Practices](./dry-kiss-best-practices-2025-10-15.md)
 - [PHPStan Level 10 Full Analysis (Xot)](../../Modules/Xot/docs/phpstan-level-10-dry-kiss-analysis-2025-10-17.md)
 - [DRY/KISS Best Practices](./dry-kiss-best-practices-2025-10-15.md)
 

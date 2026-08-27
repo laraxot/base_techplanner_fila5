@@ -24,7 +24,6 @@ class SendNotificationAction
      * @param  array<string, mixed>  $data
      * @param  array<int, string>  $channels
      * @param  array<string, mixed>  $options
-     * @return NotificationModel|null
      *
      * @throws Exception
      */

@@ -1,6 +1,8 @@
 # Indice Filosofico Completo - Tutti i Moduli
 
 **Data Creazione**: 2025-12-23
+**Data Creazione**: [DATE]
+>>>>>>> .merge_file_azBcCv
 **Status**: Indice Master Completo
 
 ## 📋 Panoramica
@@ -28,6 +30,8 @@ Questo documento fornisce un indice completo di tutta la documentazione filosofi
 
 ### TechPlanner - Business Principale
 **File**: [../../TechPlanner/docs/philosophy-complete.md](../../TechPlanner/docs/philosophy-complete.md)
+**File**: [../../TechPlanner/docs/philosophy-complete.md](../../techplanner/docs/philosophy-complete.md)
+>>>>>>> .merge_file_azBcCv
 
 **Filosofia**: Client-Centric, Compliance-First, Integration Over Duplication
 
@@ -45,6 +49,8 @@ Questo documento fornisce un indice completo di tutta la documentazione filosofi
 
 ### User - Foundation Identity
 **File**: [../../User/docs/philosophy-complete.md](../../User/docs/philosophy-complete.md)
+**File**: [../../User/docs/philosophy-complete.md](../../user/docs/philosophy-complete.md)
+>>>>>>> .merge_file_azBcCv
 
 **Filosofia**: STI Unity, RBAC Standard, Multi-Tenant Isolation
 
@@ -60,6 +66,8 @@ Questo documento fornisce un indice completo di tutta la documentazione filosofi
 
 ### UI - Componenti Interfaccia
 **File**: [../../UI/docs/philosophy.md](../../UI/docs/philosophy.md)
+**File**: [../../UI/docs/philosophy.md](../../ui/docs/philosophy.md)
+>>>>>>> .merge_file_azBcCv
 
 **Filosofia**: Riusabilità, Consistenza Visiva, Type Safety
 
@@ -75,6 +83,8 @@ Questo documento fornisce un indice completo di tutta la documentazione filosofi
 
 ### Geo - Geolocalizzazione
 **File**: [../../Geo/docs/philosophy.md](../../Geo/docs/philosophy.md)
+**File**: [../../Geo/docs/philosophy.md](../../geo/docs/philosophy.md)
+>>>>>>> .merge_file_azBcCv
 
 **Filosofia**: Schema.org Compliance, Polymorphic Flexibility, Geographic Type Safety
 
@@ -90,6 +100,8 @@ Questo documento fornisce un indice completo di tutta la documentazione filosofi
 
 ### Tenant - Multi-Tenancy
 **File**: [../../Tenant/docs/philosophy.md](../../Tenant/docs/philosophy.md)
+**File**: [../../Tenant/docs/philosophy.md](../../tenant/docs/philosophy.md)
+>>>>>>> .merge_file_azBcCv
 
 **Filosofia**: Sovranità Digitale Distribuita, Isolamento Assoluto
 
@@ -105,6 +117,8 @@ Questo documento fornisce un indice completo di tutta la documentazione filosofi
 
 ### Notify - Comunicazione
 **File**: [../../Notify/docs/philosophy.md](../../Notify/docs/philosophy.md)
+**File**: [../../Notify/docs/philosophy.md](../../notify/docs/philosophy.md)
+>>>>>>> .merge_file_azBcCv
 
 **Filosofia**: Comunicazione Responsabile, Minimalismo Funzionale
 
@@ -120,6 +134,8 @@ Questo documento fornisce un indice completo di tutta la documentazione filosofi
 
 ### Activity - Audit Trail
 **File**: [../../Activity/docs/philosophy-complete.md](../../Activity/docs/philosophy-complete.md)
+**File**: [../../Activity/docs/philosophy-complete.md](../../activity/docs/philosophy-complete.md)
+>>>>>>> .merge_file_azBcCv
 
 **Filosofia**: Track Everything, Reconstruct Anything, Privacy First
 
@@ -135,6 +151,8 @@ Questo documento fornisce un indice completo di tutta la documentazione filosofi
 
 ### Media - File Management
 **File**: [../../Media/docs/philosophy-complete.md](../../Media/docs/philosophy-complete.md)
+**File**: [../../Media/docs/philosophy-complete.md](../../media/docs/philosophy-complete.md)
+>>>>>>> .merge_file_azBcCv
 
 **Filosofia**: Secure Upload, Smart Storage, Automatic Processing
 
@@ -150,6 +168,8 @@ Questo documento fornisce un indice completo di tutta la documentazione filosofi
 
 ### Cms - Content Management
 **File**: [../../Cms/docs/philosophy.md](../../Cms/docs/philosophy.md)
+**File**: [../../Cms/docs/philosophy.md](../../cms/docs/philosophy.md)
+>>>>>>> .merge_file_azBcCv
 
 **Filosofia**: Contenuto Strutturato e Modulare, Gerarchia Sacra
 
@@ -165,6 +185,8 @@ Questo documento fornisce un indice completo di tutta la documentazione filosofi
 
 ### Employee - HR Management
 **File**: [../../Employee/docs/philosophy-complete.md](../../Employee/docs/philosophy-complete.md)
+**File**: [../../Employee/docs/philosophy-complete.md](../../employee/docs/philosophy-complete.md)
+>>>>>>> .merge_file_azBcCv
 
 **Filosofia**: Actions-Only, Compliance-First, Italian Labor Law
 

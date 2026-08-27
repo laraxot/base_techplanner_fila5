@@ -9,6 +9,7 @@
 ## Overview
 
 Implementazione completa delle custom question types per Quaeris Fila5, basata sul pattern di Fila4 ma con ottimizzazioni moderne.
+Implementazione completa delle custom question types per App Fila5, basata sul pattern di Fila4 ma con ottimizzazioni moderne.
 
 ---
 
@@ -184,6 +185,7 @@ return new AnswersChartData(
 ```bash
 cd laravel
 ./vendor/bin/pest Modules/Quaeris/tests/Unit/Actions/QuestionChart/CustomQuestionTypesTest.php
+./vendor/bin/pest Modules/App/tests/Unit/Actions/QuestionChart/CustomQuestionTypesTest.php
 ```
 
 ### Manual Testing URLs
@@ -192,6 +194,10 @@ cd laravel
 2. **SmsResponseRate**: `/quaeris/admin/ats/survey-pdfs/16/question-charts/191`
 3. **ContactsCompleted**: `/quaeris/admin/ats/survey-pdfs/16/question-charts/190`
 4. **RootGroupedBf**: `/quaeris/admin/ats/survey-pdfs/16/question-charts/234`
+1. **MailResponseRate**: `/this-project/admin/ats/survey-pdfs/16/question-charts/192`
+2. **SmsResponseRate**: `/this-project/admin/ats/survey-pdfs/16/question-charts/191`
+3. **ContactsCompleted**: `/this-project/admin/ats/survey-pdfs/16/question-charts/190`
+4. **RootGroupedBf**: `/this-project/admin/ats/survey-pdfs/16/question-charts/234`
 
 ---
 
@@ -213,6 +219,21 @@ cd laravel
 
 ### Helper
 - `Modules/Quaeris/app/Actions/QuestionChart/Custom/Custom/MergeInvitedAnswers.php`
+- `Modules/App/app/Actions/QuestionChart/Custom/RootGroupedBf.php`
+- `Modules/App/app/Actions/QuestionChart/Custom/MailResponseRate.php`
+- `Modules/App/app/Actions/QuestionChart/Custom/SmsResponseRate.php`
+- `Modules/App/app/Actions/QuestionChart/Custom/ContactsCompleted.php`
+- `Modules/App/app/Actions/QuestionChart/Custom/ContactsCompleted2.php`
+- `Modules/App/app/Actions/QuestionChart/Custom/AvgGroup2.php`
+
+### Integration
+- `Modules/App/app/Actions/QuestionChart/GetAnswersByQuestionChart.php`
+
+### Tests
+- `Modules/App/tests/Unit/Actions/QuestionChart/CustomQuestionTypesTest.php`
+
+### Helper
+- `Modules/App/app/Actions/QuestionChart/Custom/Custom/MergeInvitedAnswers.php`
 
 ---
 
@@ -232,6 +253,7 @@ cd laravel
 ## GitHub Resources
 
 - **Issue #97**: https://github.com/laraxot/base_quaeris_fila5_mono/issues/97
+- **Issue #97**: https://github.com/laraxot/base_ptvx_fila5_mono/issues/97
 - **Comments**: 7 (all fixes documented)
 - **Status**: ✅ Complete & Ready for Production
 

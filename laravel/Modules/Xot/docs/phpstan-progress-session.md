@@ -125,3 +125,5 @@ return $result;
 ---
 
 **Ultimo aggiornamento**: 2026-01-09 - Sessione in corso
+**Ultimo aggiornamento**: [DATE] - Sessione in corso
+>>>>>>> .merge_file_QI0PGm

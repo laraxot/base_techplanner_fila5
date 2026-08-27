@@ -46,7 +46,11 @@ related:
 Tutti i moduli `app/` sono **PERFETTI** al livello MAX di PHPStan:
 
 - ✅ User (362 file) - 0 errori
+<<<<<<< .merge_file_mzwkEG
 - ✅ Fixcity (86 file) - 0 errori  
+=======
+- ✅ App (86 file) - 0 errori  
+>>>>>>> .merge_file_XFOHpm
 - ✅ Notify (0 file analizzati) - 0 errori
 - ✅ Cms (0 file analizzati) - 0 errori
 - ✅ Xot (0 file analizzati) - 0 errori

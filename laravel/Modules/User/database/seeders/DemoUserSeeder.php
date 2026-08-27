@@ -13,7 +13,7 @@ use Modules\User\Models\User;
 use Modules\Xot\Datas\XotData;
 
 /**
- * Utenti demo deterministici per FO Fixcity (login + owner ticket).
+ * Utenti demo deterministici per FO <nome progetto> (login + owner ticket).
  *
  * Idempotente: updateOrCreate su email.
  */
@@ -43,7 +43,7 @@ class DemoUserSeeder extends Seeder
                 'role' => 'super-admin',
             ],
             [
-                'email' => 'cittadino@fixcity.demo',
+                'email' => 'cittadino@<nome progetto>.demo',
                 'name' => 'Cittadino Demo',
                 'password' => 'password123',
                 'type' => 'customer_user',
@@ -70,12 +70,12 @@ class DemoUserSeeder extends Seeder
             );
 
             $role = Role::query()->where('name', $roleName)->where('guard_name', 'web')->first();
-            if (null !== $role && ! $user->hasRole($roleName)) {
+            if ($role !== null && ! $user->hasRole($roleName)) {
                 $user->assignRole($role);
             }
         }
 
-        if (null !== $this->command) {
+        if ($this->command !== null) {
             $this->command->info('DemoUserSeeder: '.count($demoUsers).' utenti demo pronti.');
         }
     }

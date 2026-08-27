@@ -1,6 +1,9 @@
 # Creazione Classi Base Forms Components - 2025-12-23
 
 **Data**: 2025-12-23
+# Creazione Classi Base Forms Components - [DATE]
+
+>>>>>>> .merge_file_rAMHD1
 **Obiettivo**: Creare classi base XotBase per Forms Components core seguendo la regola fondamentale
 
 ## ⚠️ Problema Identificato
@@ -164,4 +167,6 @@ grep -r "extends.*Filament\\Forms\\Components\\" Modules/*/app/Filament/Forms/Co
 
 **Stato**: ✅ Classi base create e componenti refactorizzati
 **Data Creazione**: 2025-12-23
+**Data Creazione**: [DATE]
+>>>>>>> .merge_file_rAMHD1
 **Conformità**: ✅ Regola fondamentale rispettata

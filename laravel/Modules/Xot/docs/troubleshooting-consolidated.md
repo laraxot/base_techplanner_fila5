@@ -1,3 +1,16 @@
+
+---
+title: "Troubleshooting - Documentazione Consolidata DRY + KISS"
+module: xot
+type: integration
+tags: [integrations, modules, xot]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
+
+=======
+>>>>>>> .merge_file_Ej1SqQ
 # Troubleshooting - Documentazione Consolidata DRY + KISS
 
 > **🎯 Single Source of Truth**: Questo documento centralizza TUTTI i problemi comuni e le soluzioni del progetto
@@ -460,6 +473,12 @@ Class not found: Modules\ModuleName\NewClass
 ```
 
 **Soluzione**
+```
+
+=======
+```
+
+>>>>>>> .merge_file_Ej1SqQ
 ```bash
 composer dump-autoload
 ```
@@ -592,5 +611,6 @@ php artisan view:clear
 
 ---
 
+*Ultimo aggiornamento: [DATE]*
 *Modulo: Xot*
 *Categoria: Troubleshooting*

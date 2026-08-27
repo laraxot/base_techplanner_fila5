@@ -11,6 +11,7 @@ use Modules\User\Actions\Passport\CreateGenericClientAction;
 use Modules\User\Actions\Passport\CreatePasswordClientAction;
 use Modules\User\Actions\Passport\CreatePersonalAccessClientAction;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 class ListOauthClients extends XotBaseListRecords
@@ -26,16 +27,16 @@ class ListOauthClients extends XotBaseListRecords
             'create_personal_access_client' => Action::make('create_personal_access_client')
                 ->label(static::trans('actions.create_personal.label'))
                 ->icon('heroicon-o-key')
-                ->form([
+                ->schema([
                     TextInput::make('name')
-                        ->default((string) config('app.name').' '.static::trans('actions.create_personal.label'))
+                        ->default(SafeStringCastAction::cast(config('app.name')).' '.static::trans('actions.create_personal.label'))
                         ->required()
                         ->maxLength(255),
                 ])
                 ->action(function (array $data): void {
                     app(CreatePersonalAccessClientAction::class)->execute(
-                        name: (string) $data['name'],
-                        redirect: (string) config('app.url'),
+                        name: SafeStringCastAction::cast($data['name'] ?? null),
+                        redirect: SafeStringCastAction::cast(config('app.url')),
                         user: null,
                         provider: null,
                     );
@@ -48,9 +49,9 @@ class ListOauthClients extends XotBaseListRecords
             'create_password_grant_client' => Action::make('create_password_grant_client')
                 ->label(static::trans('actions.create_password.label'))
                 ->icon('heroicon-o-lock-closed')
-                ->form([
+                ->schema([
                     TextInput::make('name')
-                        ->default((string) config('app.name').' '.static::trans('actions.create_password.label'))
+                        ->default(SafeStringCastAction::cast(config('app.name')).' '.static::trans('actions.create_password.label'))
                         ->required()
                         ->maxLength(255),
                     TextInput::make('provider')
@@ -60,10 +61,10 @@ class ListOauthClients extends XotBaseListRecords
                 ])
                 ->action(function (array $data): void {
                     app(CreatePasswordClientAction::class)->execute(
-                        name: (string) $data['name'],
-                        redirect: (string) config('app.url'),
+                        name: SafeStringCastAction::cast($data['name'] ?? null),
+                        redirect: SafeStringCastAction::cast(config('app.url')),
                         user: null,
-                        provider: (string) $data['provider'],
+                        provider: SafeStringCastAction::cast($data['provider'] ?? null),
                     );
                     Notification::make()
                         ->title(static::trans('actions.create_password.success'))
@@ -74,16 +75,16 @@ class ListOauthClients extends XotBaseListRecords
             'create_client_credentials_client' => Action::make('create_client_credentials_client')
                 ->label(static::trans('actions.create_client_credentials.label'))
                 ->icon('heroicon-o-server')
-                ->form([
+                ->schema([
                     TextInput::make('name')
-                        ->default((string) config('app.name').' '.static::trans('actions.create_client_credentials.label'))
+                        ->default(SafeStringCastAction::cast(config('app.name')).' '.static::trans('actions.create_client_credentials.label'))
                         ->required()
                         ->maxLength(255),
                 ])
                 ->action(function (array $data): void {
                     app(CreateGenericClientAction::class)->execute(
-                        name: (string) $data['name'],
-                        redirect: (string) config('app.url'),
+                        name: SafeStringCastAction::cast($data['name'] ?? null),
+                        redirect: SafeStringCastAction::cast(config('app.url')),
                         personalAccess: false,
                         password: false,
                         user: null,

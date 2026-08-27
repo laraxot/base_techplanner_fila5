@@ -165,6 +165,9 @@ Il file attuale contiene principalmente etichette generali per l'interfaccia amm
 ### Documentazione Moduli Correlati
 - [Geo Module Translations](/Modules/Geo/project_docs/translation-structure-expanded.md)
 - [User Module Translations](/Modules/User/project_docs/translation-guidelines.md)
+- [Geo Module Translations](/modules/geo/project_docs/translation-structure-expanded.md)
+- [User Module Translations](/modules/user/project_docs/translation-guidelines.md)
+>>>>>>> .merge_file_vjLfY2
 
 ### File di Implementazione
 - `lang/es/labels.php` - Etichette generali spagnole

@@ -76,6 +76,9 @@ L'upgrade da Filament 4 a 5 **DEVE** seguire l'ordine seguente (per l'intero pro
    ```bash
    cp -r /var/www/_bases/base_<nome progetto>/laravel \
          /var/www/_bases/base_<nome progetto>_backup_$(date +%Y%m%d)
+   cp -r /var/www/_bases/base_laravelpizza/laravel \
+         /var/www/_bases/base_laravelpizza_backup_$(date +%Y%m%d)
+>>>>>>> .merge_file_EIDWUp
    ```
 
 2. **Risolvere conflitti git**

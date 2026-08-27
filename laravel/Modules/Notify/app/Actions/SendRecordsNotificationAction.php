@@ -39,7 +39,6 @@ class SendRecordsNotificationAction
      *
      * @param  Collection<int, Model>  $records  Selected records (e.g., Clients).
      * @param  array<int, string>  $channels  I canali selezionati: 'mail', 'sms', 'whatsapp'
-     *
      * @return SendNotificationBulkResultData Risultato con successCount, errorCount, errors, totalProcessed
      */
     public function execute(
@@ -107,6 +106,8 @@ class SendRecordsNotificationAction
             }
         }
 
-        return (string) $record->getKey();
+        $key = $record->getKey();
+
+        return is_scalar($key) ? (string) $key : '';
     }
 }

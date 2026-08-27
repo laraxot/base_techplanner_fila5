@@ -227,3 +227,11 @@ $this->commands([
 
 ### Zen finale
 > "Il miglior comando è quello che non devi mai registrare a mano."
+
+---
+description:
+globs:
+alwaysApply: false
+---
+
+>>>>>>> .merge_file_cJwMd0

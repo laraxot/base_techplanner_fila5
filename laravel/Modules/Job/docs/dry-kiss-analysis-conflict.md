@@ -1,14 +1,3 @@
----
-title: "DRY & KISS Analysis - Modulo Job"
-module: "Job"
-type: concept
-tags: [dry, kiss, analysis, conflict]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "dry kiss analysis conflict"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
 # DRY & KISS Analysis - Modulo Job
 
 **Data:** 15 Ottobre 2025

@@ -80,6 +80,13 @@ related:
 
 ### Bidirectional Links
 - ← Back to [Main AI Docs Index](../INDEX.md)
+- ← [BMad Agents Index](../../agents/index.md) — 10 agent definitions
+- ← [BMad Tasks Index](../tasks/index.md) — 22 reusable tasks
+- ← [CLAUDE Index](../claude/index.md) — Laravel Boost guidelines
+- ← [Main AI Docs Index](../index.md) — Master index
+
+### Bidirectional Links
+- ← Back to [Main AI Docs Index](../index.md)
 - ← Back to [../../../../laravel/GEMINI.md](../../../../../../laravel/../../../../laravel/GEMINI.md) (original source)
 - ← Back to [Project Docs](../../../docs/README.md)
 

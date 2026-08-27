@@ -16,9 +16,15 @@ related:
   - "./sms-provider-configuration.md"
 ---
 
+<<<<<<< .merge_file_q8ZI5v
 # Notifiche Telegram 
 
 Questa documentazione descrive come implementare notifiche Telegram nel modulo Notify di SaluteOra.
+=======
+# Notifiche Telegram
+
+Questa documentazione descrive come implementare notifiche Telegram nel modulo Notify di <nome progetto>.
+>>>>>>> .merge_file_oYc2r3
 
 ## Indice
 
@@ -33,7 +39,11 @@ Questa documentazione descrive come implementare notifiche Telegram nel modulo N
 
 ## Introduzione
 
+<<<<<<< .merge_file_q8ZI5v
 Telegram offre un'ottima piattaforma per notifiche istantanee grazie alla sua API per bot. SaluteOra integra Telegram per inviare notifiche relative ad appuntamenti, promemoria e altre comunicazioni importanti.
+=======
+Telegram offre un'ottima piattaforma per notifiche istantanee grazie alla sua API per bot. <nome progetto> integra Telegram per inviare notifiche relative ad appuntamenti, promemoria e altre comunicazioni importanti.
+>>>>>>> .merge_file_oYc2r3
 
 ## Setup del Bot Telegram
 
@@ -46,17 +56,28 @@ Telegram offre un'ottima piattaforma per notifiche istantanee grazie alla sua AP
 
 ### Funzionalità del Bot
 
+<<<<<<< .merge_file_q8ZI5v
 Il bot di SaluteOra deve avere:
 - Privacy Mode disattivata (per leggere messaggi nei gruppi)
 - Comandi personalizzati configurati
 - Immagine del profilo con logo SaluteOra
+=======
+Il bot di <nome progetto> deve avere:
+- Privacy Mode disattivata (per leggere messaggi nei gruppi)
+- Comandi personalizzati configurati
+- Immagine del profilo con logo <nome progetto>
+>>>>>>> .merge_file_oYc2r3
 
 ### Comandi Consigliati
 
 Configura i seguenti comandi per il tuo bot:
 ```
 start - Inizia l'interazione con il bot
+<<<<<<< .merge_file_q8ZI5v
 register - Collega il tuo account Telegram a SaluteOra
+=======
+register - Collega il tuo account Telegram a <nome progetto>
+>>>>>>> .merge_file_oYc2r3
 unregister - Scollega il tuo account Telegram
 settings - Gestisci le tue preferenze di notifica
 help - Ottieni assistenza
@@ -100,21 +121,37 @@ use NotificationChannels\Telegram\TelegramMessage;
 class AppointmentNotification extends Notification
 {
     protected $appointment;
+<<<<<<< .merge_file_q8ZI5v
     
+=======
+
+>>>>>>> .merge_file_oYc2r3
     public function __construct($appointment)
     {
         $this->appointment = $appointment;
     }
+<<<<<<< .merge_file_q8ZI5v
     
+=======
+
+>>>>>>> .merge_file_oYc2r3
     public function via($notifiable)
     {
         return [TelegramChannel::class];
     }
+<<<<<<< .merge_file_q8ZI5v
     
     public function toTelegram($notifiable)
     {
         $url = url("/appointments/{$this->appointment->id}");
         
+=======
+
+    public function toTelegram($notifiable)
+    {
+        $url = url("/appointments/{$this->appointment->id}");
+
+>>>>>>> .merge_file_oYc2r3
         return TelegramMessage::create()
             ->content("**Promemoria Appuntamento**\n\nHai un appuntamento il {$this->appointment->formatted_date} alle {$this->appointment->formatted_time} con il Dr. {$this->appointment->doctor->name}.")
             ->button('Visualizza Dettagli', $url)
@@ -153,7 +190,11 @@ public function toTelegram($notifiable)
 public function toTelegram($notifiable)
 {
     $appointmentId = $this->appointment->id;
+<<<<<<< .merge_file_q8ZI5v
     
+=======
+
+>>>>>>> .merge_file_oYc2r3
     return TelegramMessage::create()
         ->content("Confermi l'appuntamento del {$this->appointment->formatted_date}?")
         ->buttonWithCallback('Conferma', "confirm_appointment_{$appointmentId}")
@@ -177,10 +218,17 @@ public function toTelegram($notifiable)
 
 ### Collegamento Account Telegram
 
+<<<<<<< .merge_file_q8ZI5v
 Per collegare un account Telegram a un utente SaluteOra:
 
 1. Implementa un comando `/register` nel bot che generi un token univoco.
 2. L'utente inserisce questo token nel proprio profilo nell'app SaluteOra.
+=======
+Per collegare un account Telegram a un utente <nome progetto>:
+
+1. Implementa un comando `/register` nel bot che generi un token univoco.
+2. L'utente inserisce questo token nel proprio profilo nell'app <nome progetto>.
+>>>>>>> .merge_file_oYc2r3
 3. Salva il `chat_id` Telegram dell'utente nel database.
 
 ```php
@@ -193,22 +241,37 @@ use Modules\Notify\Models\TelegramToken;
 class RegisterCommand extends Command
 {
     protected $name = 'register';
+<<<<<<< .merge_file_q8ZI5v
     protected $description = 'Collega il tuo account Telegram a SaluteOra';
     
+=======
+    protected $description = 'Collega il tuo account Telegram a <nome progetto>';
+
+>>>>>>> .merge_file_oYc2r3
     public function handle()
     {
         $chatId = $this->update->getMessage()->getChat()->getId();
         $token = Str::random(8);
+<<<<<<< .merge_file_q8ZI5v
         
+=======
+
+>>>>>>> .merge_file_oYc2r3
         // Salva il token temporaneo
         TelegramToken::create([
             'token' => $token,
             'chat_id' => $chatId,
             'expires_at' => now()->addHours(1),
         ]);
+<<<<<<< .merge_file_q8ZI5v
         
         $this->replyWithMessage([
             'text' => "Il tuo codice di collegamento è: {$token}\n\nInseriscilo nel tuo profilo SaluteOra per completare il collegamento."
+=======
+
+        $this->replyWithMessage([
+            'text' => "Il tuo codice di collegamento è: {$token}\n\nInseriscilo nel tuo profilo <nome progetto> per completare il collegamento."
+>>>>>>> .merge_file_oYc2r3
         ]);
     }
 }
@@ -228,11 +291,16 @@ class VerifyTelegramToken
     public function handle(Request $request, Closure $next)
     {
         $token = $request->input('token');
+<<<<<<< .merge_file_q8ZI5v
         
+=======
+
+>>>>>>> .merge_file_oYc2r3
         $telegramToken = TelegramToken::where('token', $token)
             ->where('expires_at', '>', now())
             ->whereNull('user_id')
             ->first();
+<<<<<<< .merge_file_q8ZI5v
         
         if (!$telegramToken) {
             return response()->json(['error' => 'Token non valido o scaduto'], 400);
@@ -240,6 +308,15 @@ class VerifyTelegramToken
         
         $request->merge(['telegram_token' => $telegramToken]);
         
+=======
+
+        if (!$telegramToken) {
+            return response()->json(['error' => 'Token non valido o scaduto'], 400);
+        }
+
+        $request->merge(['telegram_token' => $telegramToken]);
+
+>>>>>>> .merge_file_oYc2r3
         return $next($request);
     }
 }
@@ -266,16 +343,28 @@ class TelegramNotificationTest extends TestCase
     {
         $user = User::factory()->create(['telegram_chat_id' => '123456789']);
         $appointment = Appointment::factory()->create();
+<<<<<<< .merge_file_q8ZI5v
         
         $notification = new AppointmentNotification($appointment);
         
         $telegramMessage = $notification->toTelegram($user);
         
+=======
+
+        $notification = new AppointmentNotification($appointment);
+
+        $telegramMessage = $notification->toTelegram($user);
+
+>>>>>>> .merge_file_oYc2r3
         $this->assertStringContainsString(
             $appointment->formatted_date,
             $telegramMessage->content
         );
+<<<<<<< .merge_file_q8ZI5v
         
+=======
+
+>>>>>>> .merge_file_oYc2r3
         $this->assertCount(2, $telegramMessage->buttons);
     }
 }

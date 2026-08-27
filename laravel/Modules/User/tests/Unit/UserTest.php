@@ -12,7 +12,7 @@ use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('user-db');
 
 describe('User', function (): void {
     test('user can be created', function (): void {
@@ -170,8 +170,8 @@ describe('User', function (): void {
             $factory = UserFactory::new();
             \assert($factory instanceof Factory);
 
-            $boUser = $factory->createOne(['type' => UserType::BoUser]);
-            $customerUser = $factory->createOne(['type' => UserType::CustomerUser]);
+            $boUser = $factory->create(['type' => UserType::BoUser]);
+            $customerUser = $factory->create(['type' => UserType::CustomerUser]);
             \assert($boUser instanceof User);
             \assert($customerUser instanceof User);
 

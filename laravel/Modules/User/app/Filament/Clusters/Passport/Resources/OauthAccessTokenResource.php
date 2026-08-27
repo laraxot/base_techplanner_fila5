@@ -12,7 +12,6 @@ use Filament\Actions\DeleteBulkAction;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
-use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
 use Filament\Tables\Columns\Column;
@@ -22,7 +21,6 @@ use Filament\Tables\Filters\BaseFilter;
 use Filament\Tables\Filters\Filter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
 use Modules\User\Actions\Passport\RevokeAllUserTokensAction;
@@ -30,6 +28,7 @@ use Modules\User\Actions\Passport\RevokeTokenAction;
 use Modules\User\Filament\Clusters\Passport;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Models\OauthAccessToken;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 use function Safe\json_encode;
@@ -52,12 +51,9 @@ class OauthAccessTokenResource extends XotBaseResource
                 TextColumn::make('user.name')
                     ->searchable()
                     ->sortable()
-                    ->url(function (mixed $record): ?string {
-                        if (! $record instanceof OauthAccessToken) {
-                            return null;
-                        }
+                    ->url(function (OauthAccessToken $record): ?string {
                         $user = $record->user;
-                        if (null !== $user && method_exists($user, 'exists') && $user->exists) {
+                        if ($user !== null && method_exists($user, 'exists') && $user->exists) {
                             return UserResource::getUrl('view', ['record' => $user]);
                         }
 
@@ -76,7 +72,7 @@ class OauthAccessTokenResource extends XotBaseResource
                 TextColumn::make('scopes')
                     ->limit(30)
                     ->tooltip(function (mixed $state): ?string {
-                        if (null === $state) {
+                        if ($state === null) {
                             return null;
                         }
                         if (is_array($state)) {
@@ -126,30 +122,29 @@ class OauthAccessTokenResource extends XotBaseResource
                     ->icon('heroicon-o-x-circle')
                     ->color('danger')
                     ->requiresConfirmation()
-                    ->action(function (mixed $record): void {
-                        if ($record instanceof Model) {
-                            if (app(RevokeTokenAction::class)->execute((string) $record->getKey())) {
-                                Notification::make()
-                                    ->title(static::trans('actions.revoke.success'))
-                                    ->success()
-                                    ->send();
-                            }
+                    ->action(function (OauthAccessToken $record): void {
+                        $key = $record->getKey();
+                        $keyString = is_string($key) ? $key : SafeStringCastAction::cast($key);
+                        if (app(RevokeTokenAction::class)->execute($keyString)) {
+                            Notification::make()
+                                ->title(static::trans('actions.revoke.success'))
+                                ->success()
+                                ->send();
                         }
                     })
-                    ->visible(fn (mixed $record) => $record instanceof OauthAccessToken && ! $record->revoked),
+                    ->visible(fn (OauthAccessToken $record): bool => ! $record->revoked),
                 DeleteAction::make(),
             ])
-            ->bulkActions([
+            ->toolbarActions([
                 BulkAction::make('revoke_all_for_user')
                     ->icon('heroicon-o-x-circle')
                     ->color('danger')
                     ->requiresConfirmation()
                     ->action(function (Collection $records): void {
                         $users = $records->pluck('user_id')->unique();
-                        $count = 0;
                         foreach ($users as $userId) {
                             if (is_string($userId) || is_int($userId)) {
-                                $count += app(RevokeAllUserTokensAction::class)->execute((string) $userId);
+                                app(RevokeAllUserTokensAction::class)->execute(SafeStringCastAction::cast($userId));
                             }
                         }
                         Notification::make()
@@ -176,12 +171,9 @@ class OauthAccessTokenResource extends XotBaseResource
             'user.name' => TextColumn::make('user.name')
                 ->searchable()
                 ->sortable()
-                ->url(function (mixed $record): ?string {
-                    if (! $record instanceof OauthAccessToken) {
-                        return null;
-                    }
+                ->url(function (OauthAccessToken $record): ?string {
                     $user = $record->user;
-                    if (null !== $user && method_exists($user, 'exists') && $user->exists) {
+                    if ($user !== null && method_exists($user, 'exists') && $user->exists) {
                         return UserResource::getUrl('view', ['record' => $user]);
                     }
 
@@ -200,7 +192,7 @@ class OauthAccessTokenResource extends XotBaseResource
             'scopes' => TextColumn::make('scopes')
                 ->limit(30)
                 ->tooltip(function (mixed $state): ?string {
-                    if (null === $state) {
+                    if ($state === null) {
                         return null;
                     }
                     if (is_array($state)) {
@@ -264,17 +256,15 @@ class OauthAccessTokenResource extends XotBaseResource
                 ->icon('heroicon-o-x-circle')
                 ->color('danger')
                 ->requiresConfirmation()
-                ->action(function (mixed $record): void {
-                    if ($record instanceof Model) {
-                        if (app(RevokeTokenAction::class)->execute((string) $record->getKey())) {
-                            Notification::make()
-                                ->title(static::trans('actions.revoke.success'))
-                                ->success()
-                                ->send();
-                        }
+                ->action(function (OauthAccessToken $record): void {
+                    if (app(RevokeTokenAction::class)->execute(SafeStringCastAction::cast($record->getKey()))) {
+                        Notification::make()
+                            ->title(static::trans('actions.revoke.success'))
+                            ->success()
+                            ->send();
                     }
                 })
-                ->visible(fn (mixed $record): bool => $record instanceof OauthAccessToken && ! $record->revoked),
+                ->visible(fn (OauthAccessToken $record): bool => ! $record->revoked),
             'delete' => DeleteAction::make(),
         ];
     }
@@ -291,10 +281,9 @@ class OauthAccessTokenResource extends XotBaseResource
                 ->requiresConfirmation()
                 ->action(function (Collection $records): void {
                     $users = $records->pluck('user_id')->unique();
-                    $count = 0;
                     foreach ($users as $userId) {
                         if (is_string($userId) || is_int($userId)) {
-                            $count += app(RevokeAllUserTokensAction::class)->execute((string) $userId);
+                            app(RevokeAllUserTokensAction::class)->execute(SafeStringCastAction::cast($userId));
                         }
                     }
                     Notification::make()
@@ -307,10 +296,10 @@ class OauthAccessTokenResource extends XotBaseResource
     }
 
     /**
-     * @return array<string, Component>
+     * @return array<string, mixed>
      */
-    #[\Override]
-    public static function getFormSchema(): array
+    // #[\Override]
+    public static function getFormSchemaOld(): array
     {
         return [
             'oauth_access_token_info' => Section::make('OAuth Access Token Information')

@@ -1,4 +1,5 @@
 # Karpathy LLM Wiki per FixCity
+# Karpathy LLM Wiki per Notify
 
 > Stato: proposta applicata al repository
 > Aggiornato: 2026-04-14
@@ -7,6 +8,7 @@
 ## Wiki vs QMD (ruoli distinti)
 
 Il gist collega il wiki persistente a uno strumento di ricerca locale (**[qmd](https://github.com/tobi/qmd)**) quando il numero di pagine cresce. In FixCity teniamo separati i due concetti:
+Il gist collega il wiki persistente a uno strumento di ricerca locale (**[qmd](https://github.com/tobi/qmd)**) quando il numero di pagine cresce. In Notify teniamo separati i due concetti:
 
 | Artefatto | Domanda che risponde | Aggiornato da |
 |-----------|----------------------|---------------|
@@ -63,6 +65,7 @@ Il valore del modello Karpathy qui non e fare "un altro sistema docs". Il valore
 Per questa adozione la cartella raw non e una directory separata: il corpus raw e `docs/`, con l'unica esclusione di `docs/wiki/**` che e il layer compilato.
 
 Per FixCity, le fonti grezze canoniche dovrebbero essere queste:
+Per Notify, le fonti grezze canoniche dovrebbero essere queste:
 
 - `.planning/research/` per ricerche esterne e raccolta materiale
 - `.planning/external/` per acquisizioni esterne e dump temporanei
@@ -97,6 +100,7 @@ Esempi di future topic pages ad alto ROI:
 - `ticket-wizard-knowledge.md`
 - `design-comuni-parity-knowledge.md`
 - `filament-v5-fixcity-patterns.md`
+- `filament-v5-laraxot-patterns.md`
 - `agent-memory-architecture.md`
 - `docs-governance-knowledge.md`
 
@@ -185,6 +189,8 @@ Uso consigliato (collezioni indicative):
 
 - `fixcity-root-docs` → `./docs`
 - `fixcity-modules` → `./laravel/Modules` con mask `**/docs/**/*.md`
+- `laraxot-root-docs` → `./docs`
+- `laraxot-modules` → `./laravel/Modules` con mask `**/docs/**/*.md`
 - opzionale: `bashscripts-docs`, `design-artifacts` come collezioni dedicate
 
 Dettagli installazione, MCP, limiti e rapporto con questo documento: **[qmd-local-docs-search.md](./qmd-local-docs-search.md)**.
@@ -192,6 +198,7 @@ Dettagli installazione, MCP, limiti e rapporto con questo documento: **[qmd-loca
 Se adottato, QMD **non** sostituisce `docs/wiki/index.md` né le topic pages: **accelera** la scoperta; il wiki resta il layer di sintesi e governance.
 
 ## Decisione pratica per FixCity
+## Decisione pratica per Notify
 
 L'adozione corretta non e costruire subito un mega knowledge base. E introdurre una disciplina leggera:
 

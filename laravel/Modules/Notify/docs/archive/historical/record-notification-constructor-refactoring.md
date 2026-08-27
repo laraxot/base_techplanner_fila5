@@ -1,3 +1,12 @@
+---
+title: "RecordNotification Constructor Refactoring"
+module: notify
+type: integration
+tags: [integrations, modules, notify]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # RecordNotification Constructor Refactoring
 
 **Date**: December 19, 2025  

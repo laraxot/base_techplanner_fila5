@@ -898,5 +898,7 @@ php artisan view:clear
 ---
 
 *Ultimo aggiornamento: 2025-08-04*
+*Ultimo aggiornamento: [DATE]*
+>>>>>>> .merge_file_MdOhho
 *Modulo: Xot*
 *Categoria: Best Practices*

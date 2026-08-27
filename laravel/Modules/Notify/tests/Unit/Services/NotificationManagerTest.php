@@ -7,20 +7,20 @@ namespace Modules\Notify\Tests\Unit\Services;
 use Exception;
 use Illuminate\Database\Eloquent\Model;
 use Mockery;
+use Mockery\MockInterface;
 use Modules\Notify\Actions\SendNotificationAction;
-use Modules\Notify\Models\Notification;
-use Modules\Notify\Models\NotificationTemplate;
 use Modules\Notify\Services\NotificationManager;
-use PHPUnit\Framework\TestCase;
+use Modules\Notify\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
 class NotificationManagerTest extends TestCase
 {
-    private NotificationManager $notificationManager;
+    private NotificationManager $serviceNotificationManager;
 
     protected function setUp(): void
     {
         parent::setUp();
-        $this->notificationManager = new NotificationManager;
+        $this->serviceNotificationManager = new NotificationManager();
     }
 
     protected function tearDown(): void
@@ -38,18 +38,14 @@ class NotificationManagerTest extends TestCase
         $channels = ['email'];
         $options = ['priority' => 'high'];
 
-        $template = typedMock(NotificationTemplate::class);
-        mockExpectation($template, 'getAttribute')->with('code')->andReturn($templateCode);
+        $action = $this->mockSendNotificationAction();
+        $action->shouldReceive('handle')
+            ->once()
+            ->with($recipient, $templateCode, $data, $channels, $options);
 
-        $action = typedMock(SendNotificationAction::class);
-        mockExpectation($action, 'handle')->with($recipient, $templateCode, $data, $channels, $options)->once();
+        $this->instance(SendNotificationAction::class, $action);
 
-        app()->instance(SendNotificationAction::class, $action);
-
-        // Nessuna asserzione sul tipo di ritorno: e' sempre Notification|null per firma,
-        // il comportamento reale (chiamata all'action con i parametri attesi) e' verificato
-        // da Mockery in tearDown() tramite l'expectation ->once().
-        $this->notificationManager->send($recipient, $templateCode, $data, $channels, $options);
+        $this->serviceNotificationManager->send($recipient, $templateCode, $data, $channels, $options);
     }
 
     /** @test */
@@ -64,15 +60,12 @@ class NotificationManagerTest extends TestCase
         $channels = ['email'];
         $options = ['priority' => 'high'];
 
-        $template = typedMock(NotificationTemplate::class);
-        mockExpectation($template, 'getAttribute')->with('code')->andReturn($templateCode);
+        $action = $this->mockSendNotificationAction();
+        $action->shouldReceive('handle')->times(2);
 
-        $action = typedMock(SendNotificationAction::class);
-        mockExpectation($action, 'handle')->times(2);
+        $this->instance(SendNotificationAction::class, $action);
 
-        app()->instance(SendNotificationAction::class, $action);
-
-        $result = $this->notificationManager->sendMultiple($recipients, $templateCode, $data, $channels, $options);
+        $result = $this->serviceNotificationManager->sendMultiple($recipients, $templateCode, $data, $channels, $options);
 
         $this->assertCount(2, $result);
     }
@@ -82,13 +75,9 @@ class NotificationManagerTest extends TestCase
     {
         $code = 'test_template';
 
-        $template = typedMock(NotificationTemplate::class);
-        mockExpectation($template, 'getAttribute')->with('code')->andReturn($code);
-        mockExpectation($template, 'getAttribute')->with('is_active')->andReturn(true);
+        $result = $this->serviceNotificationManager->getTemplate($code);
 
-        $result = $this->notificationManager->getTemplate($code);
-
-        $this->assertNull($result); // Mock non restituisce risultati reali
+        $this->assertNull($result);
     }
 
     /** @test */
@@ -96,7 +85,7 @@ class NotificationManagerTest extends TestCase
     {
         $category = 'test_category';
 
-        $result = $this->notificationManager->getTemplatesByCategory($category);
+        $result = $this->serviceNotificationManager->getTemplatesByCategory($category);
 
         $this->assertCount(0, $result);
     }
@@ -104,13 +93,15 @@ class NotificationManagerTest extends TestCase
     /** @test */
     public function it_throws_exception_when_template_not_found(): void
     {
-        $this->expectException(Exception::class);
-        $this->expectExceptionMessage('Template not found: invalid_template');
-
         $recipient = $this->recipient();
         $templateCode = 'invalid_template';
 
-        $this->notificationManager->send($recipient, $templateCode);
+        try {
+            $this->serviceNotificationManager->send($recipient, $templateCode);
+            Assert::fail('Expected Exception was not thrown');
+        } catch (Exception $exception) {
+            Assert::assertSame('Template not found: invalid_template', $exception->getMessage());
+        }
     }
 
     /** @test */
@@ -119,13 +110,12 @@ class NotificationManagerTest extends TestCase
         $recipient = $this->recipient();
         $templateCode = 'test_template';
 
-        $action = typedMock(SendNotificationAction::class);
-        mockExpectation($action, 'handle')->once();
+        $action = $this->mockSendNotificationAction();
+        $action->shouldReceive('handle')->once();
 
-        app()->instance(SendNotificationAction::class, $action);
+        $this->instance(SendNotificationAction::class, $action);
 
-        // Comportamento verificato da Mockery in tearDown() tramite ->once().
-        $this->notificationManager->send($recipient, $templateCode);
+        $this->serviceNotificationManager->send($recipient, $templateCode);
     }
 
     /** @test */
@@ -134,20 +124,34 @@ class NotificationManagerTest extends TestCase
         $recipients = [$this->recipient()];
         $templateCode = 'test_template';
 
-        $action = typedMock(SendNotificationAction::class);
-        mockExpectation($action, 'handle')->once();
+        $action = $this->mockSendNotificationAction();
+        $action->shouldReceive('handle')->once();
 
-        app()->instance(SendNotificationAction::class, $action);
+        $this->instance(SendNotificationAction::class, $action);
 
-        $result = $this->notificationManager->sendMultiple($recipients, $templateCode);
+        $result = $this->serviceNotificationManager->sendMultiple($recipients, $templateCode);
 
         $this->assertCount(1, $result);
     }
+
     private function recipient(): Model
     {
-        return new class extends Model {
+        return new class() extends Model
+        {
             protected $guarded = [];
+
             public $timestamps = false;
         };
+    }
+
+    /**
+     * @return MockInterface&SendNotificationAction
+     */
+    private function mockSendNotificationAction(): MockInterface
+    {
+        /** @var MockInterface&SendNotificationAction $mock */
+        $mock = Mockery::mock(SendNotificationAction::class);
+
+        return $mock;
     }
 }

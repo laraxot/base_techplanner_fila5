@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Notify\Filament\Resources;
 
+use Filament\Forms\Components\Field;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
@@ -17,8 +18,12 @@ class NotifyThemeResource extends XotBaseResource
 {
     protected static ?string $model = NotifyTheme::class;
 
-    #[Override]
-    public static function getFormSchema(): array
+    /**
+     * @return array<string, Field>
+     */
+
+    // #[Override]
+    public static function getFormSchemaOld(): array
     {
         return [
             'lang' => Select::make('lang')->options(fn (): array => self::fieldOptions('lang')),
@@ -29,8 +34,8 @@ class NotifyThemeResource extends XotBaseResource
             'from' => TextInput::make('from'),
             'from_email' => TextInput::make('from_email'),
             'logo' => SpatieMediaLibraryFileUpload::make('logo_src')
-                ->enableOpen()
-                ->enableDownload()
+                ->openable()
+                ->downloadable()
                 ->columnSpanFull()
                 ->disk('uploads')
                 ->directory('photos')

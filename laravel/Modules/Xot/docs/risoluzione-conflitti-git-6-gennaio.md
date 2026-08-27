@@ -120,6 +120,8 @@ Sono stati identificati e risolti conflitti Git in diversi file del progetto <no
 - Risolto conflitto nella gestione del campo postal_code
 
 **Modifiche Applicate**:
+```
+
 ```php
 // VERSIONE CORRETTA
 $res=Locality::query()
@@ -300,7 +302,7 @@ php artisan lang:check
 
 ### Documentazione Generale
 - [Translation Standards](../../docs/translation-standards.md)
-- [PHPStan Guidelines](../../docs/phpstan_usage.md)
+- [PHPStan Guidelines](../../docs/phpstan-usage.md)
 - [Git Best Practices](../../docs/git-best-practices.md)
 
 ---
@@ -311,7 +313,7 @@ php artisan lang:check
 
 ### Documentazione Generale
 - [Translation Standards](../../../docs/translation-standards.md)
-- [PHPStan Guidelines](../../../docs/phpstan_usage.md)
+- [PHPStan Guidelines](../../../docs/phpstan-usage.md)
 - [Git Best Practices](../../../docs/git-best-practices.md)
 
 ---

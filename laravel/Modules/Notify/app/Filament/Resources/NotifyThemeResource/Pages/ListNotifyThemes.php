@@ -45,8 +45,10 @@ class ListNotifyThemes extends XotBaseListRecords
         return self::getNotifyThemeTableColumns();
     }
 
-    #[Override]
-    public function getTableFilters(): array
+    /**
+     * @return array<string, SelectFilter>
+     */
+    public static function getNotifyThemeTableFilters(): array
     {
         return [
             'lang' => SelectFilter::make('lang')->options(
@@ -59,5 +61,11 @@ class ListNotifyThemes extends XotBaseListRecords
                 fn (): array => NotifyThemeResource::fieldOptions('type'),
             ),
         ];
+    }
+
+    #[Override]
+    public function getTableFilters(): array
+    {
+        return self::getNotifyThemeTableFilters();
     }
 }

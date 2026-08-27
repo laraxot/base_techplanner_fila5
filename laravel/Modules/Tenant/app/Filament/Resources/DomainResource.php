@@ -17,8 +17,12 @@ class DomainResource extends XotBaseResource
 {
     protected static ?string $model = Domain::class;
 
-    #[Override]
-    public static function getFormSchema(): array
+    /**
+     * @return array<string, mixed>
+     */
+
+    // #[Override]
+    public static function getFormSchemaOld(): array
     {
         return [
             'title' => TextInput::make('title')

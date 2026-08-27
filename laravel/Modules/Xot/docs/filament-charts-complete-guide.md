@@ -922,6 +922,8 @@ class BlogPostsChartTest extends TestCase
 
 ### Documentazione PTVX
 - [Widget Implementation Rules](WIDGET_IMPLEMENTATION_RULES.md)
+- [Widget Implementation Rules](./widget_implementation_rules.md)
+>>>>>>> .merge_file_0baQRH
 - [Export Chart to PNG/SVG](./chart-export-guide.md)
 - [Filament Best Practices](./filament-best-practices.md)
 
@@ -941,6 +943,8 @@ Per garantire un look "Premium" e la possibilità di esportare PDF perfetti in a
 
 ### 1. Configurazione Professionale
 Consultare la guida **[LimeSurvey Professional Charts Guide](../../../Limesurvey/docs/professional-charts-and-pdfs.md)**.
+Consultare la guida **[LimeSurvey Professional Charts Guide](../../../limesurvey/docs/professional-charts-and-pdfs.md)**.
+>>>>>>> .merge_file_0baQRH
 - Font unificati (Inter/Roboto).
 - Legende posizionate correttamente.
 - Gridline minimali.
@@ -953,4 +957,6 @@ Pattern:
 3.  Impostare `animation: false` nelle opzioni Chart.js per la stampa.
 
 Vedi: **[Dashboard Best Practices](../../../Limesurvey/docs/dashboard-best-practices.md)**.
+Vedi: **[Dashboard Best Practices](../../../limesurvey/docs/dashboard-best-practices.md)**.
+>>>>>>> .merge_file_0baQRH
 

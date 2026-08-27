@@ -23,3 +23,11 @@ usefull links:
 ## Collegamenti tra versioni di zsh.md
 * [zsh.md](../../../xot/project_docs/install/zsh.md)
 * [zsh.md](../../../xot/project_docs/ubuntu/zsh.md)
+
+
+## Collegamenti tra versioni di zsh.md
+* [zsh.md](../../../Xot/docs/install/zsh.md)
+* [zsh.md](../../../Xot/docs/ubuntu/zsh.md)
+
+
+>>>>>>> .merge_file_gzpK5r

@@ -7,14 +7,14 @@ namespace Modules\Notify\Tests\Feature;
 use Illuminate\Support\Facades\File;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use function Safe\json_decode;
-use function Pest\Laravel\get;
 
-uses(\Modules\Notify\Tests\TestCase::class);
+use function Safe\json_decode;
+
+uses(TestCase::class)->group('no-notify-db');
 
 describe('Json Component', function (): void {
     test('_components_json_is_valid_and_contains_expected_components', function (): void {
-$filePath = base_path('Modules/Notify/app/Console/Commands/_components.json');
+        $filePath = base_path('Modules/Notify/app/Console/Commands/_components.json');
 
         Assert::assertTrue(File::exists($filePath), 'Il file _components.json non esiste');
 

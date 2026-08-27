@@ -6,7 +6,6 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "ai methodologies handbook"
 related:
-  - "./00-INDEX.md"
   - "./00-index.md"
 ---
 
@@ -18,6 +17,16 @@ This file is a DRY local index for AI workflows in this module or theme.
 
 - [OpenViking Integration Guide](../../../docs/openviking-integration.md)
 - [AI Methodologies Integration](../../../docs/project/ai-methodologies-integration.md)
+- [OpenViking Integration Guide](../../../docs/openviking-integration.md)
+- [AI Methodologies Integration](../../../docs/project/ai-methodologies-integration.md)
+- [OpenViking Integration Guide](../../../../docs/openviking-integration.md)
+- [AI Methodologies Integration](../../../../docs/project/ai-methodologies-integration.md)
+- [OpenViking Integration Guide](../../../docs/openviking-integration.md)
+- [AI Methodologies Integration](../../../docs/project/ai-methodologies-integration.md)
+- [OpenViking Integration Guide](../../../docs/openviking-integration.md)
+- [AI Methodologies Integration](../../../docs/project/ai-methodologies-integration.md)
+- [OpenViking Integration Guide](../../../../docs/openviking-integration.md)
+- [AI Methodologies Integration](../../../../docs/project/ai-methodologies-integration.md)
 - [Root Docs Index](../../../../docs/index.md)
 
 ## Local Workflow

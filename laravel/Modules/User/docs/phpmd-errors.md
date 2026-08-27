@@ -518,3 +518,14 @@ Modules/User/app/Rules/CheckOtpExpiredRule.php:27                               
 Modules/User/app/Rules/CheckOtpExpiredRule.php:35                                                                   CamelCaseVariableName   The variable $pwd_data is not named in camelCase.
 Modules/User/app/Rules/CheckOtpExpiredRule.php:37                                                                   CamelCaseVariableName   The variable $otp_expires_at is not named in camelCase.
 Modules/User/app/View/Components/Mail/Message.php:30                                                                CamelCaseVariableName   The variable $view_params is not named in camelCase.
+
+
+## Appendice — contenuto migrato
+
+---
+module: theme
+topic: phpmd-errors
+canonical: ../../../Themes/docs/shared-components/phpmd-errors.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpmd-errors.md

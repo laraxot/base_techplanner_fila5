@@ -19,6 +19,9 @@
 | `fixcity_fila5_project` | 6 | 15 | 2026-04-09 |
 | `fixcity-sixteen` | 11 | 22 | 2026-04-09 |
 | `fixcity-project` | 9 | 22 | 2026-04-09 |
+| `app_fila5_project` | 6 | 15 | 2026-04-09 |
+| `laraxot-sixteen` | 11 | 22 | 2026-04-09 |
+| `laraxot-project` | 9 | 22 | 2026-04-09 |
 
 ### How It Works
 1. **Context Injection**: On first message, agent receives user profile + project memories + semantic search results (invisible to user)
@@ -60,6 +63,7 @@ supermemory tags
   "maxProfileItems": 10,
   "injectProfile": true,
   "containerTagPrefix": "fixcity_fila5",
+  "containerTagPrefix": "app_fila5",
   "keywordPatterns": ["ricorda", "memorizza", "salva questa", "non dimenticare"],
   "compactionThreshold": 0.8
 }

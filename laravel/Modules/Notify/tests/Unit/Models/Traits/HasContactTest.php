@@ -9,11 +9,11 @@ use Modules\Notify\Tests\Fixtures\HasContactDummyModel;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Notify\Tests\TestCase::class);
+uses(TestCase::class)->group('no-notify-db');
 
 function makeHasContactDummyModel(): HasContactDummyModel
 {
-    return new HasContactDummyModel;
+    return new HasContactDummyModel();
 }
 
 test('has contact trait appends contact type fields to fillable', function (): void {

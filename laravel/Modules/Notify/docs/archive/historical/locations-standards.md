@@ -1,3 +1,12 @@
+---
+title: "Standard di Posizionamento dei File in Notify"
+module: notify
+type: integration
+tags: [integrations, modules, notify]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Standard di Posizionamento dei File in Notify
 
 ## Organizzazione Directory Principali

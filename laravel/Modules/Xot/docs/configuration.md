@@ -70,3 +70,13 @@ return [
 * [configuration.md](docs/configuration.md)
 * [configuration.md](../../../Xot/docs/configuration.md)
 * [configuration.md](../../../Cms/docs/configuration.md)
+
+- [Gestione Domini](domain_configuration.md)
+- [Struttura del Progetto](project_structure.md)
+- [Documentazione Principale](../readme.md)
+## Collegamenti tra versioni di configuration.md
+* [configuration.md](docs/configuration.md)
+* [configuration.md](../../../xot/docs/configuration.md)
+* [configuration.md](../../../cms/docs/configuration.md)
+
+>>>>>>> .merge_file_y4k37d

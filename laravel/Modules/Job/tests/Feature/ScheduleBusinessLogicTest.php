@@ -13,6 +13,13 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 describe('Schedule Business Logic', function (): void {
+    beforeEach(function (): void {
+        /** @var TestCase $this */
+        if (TestCase::jobDbUnavailable()) {
+            $this->markTestSkipped('DB `job` non raggiungibile: blocco di ambiente.');
+        }
+    });
+
     test('_can_create_schedule_with_basic_information', function (): void {
         /** @var TestCase $this */
         $schedule = Schedule::create([
@@ -120,7 +127,10 @@ describe('Schedule Business Logic', function (): void {
 
         $options = $schedule->getOptions();
 
-        Assert::assertArrayHasKey('verbose', $options);
+        // `getOptions()` restituisce una lista di flag CLI con chiavi posizionali, non
+        // una mappa nome => valore: chiedere la chiave 'verbose' contraddiceva il metodo,
+        // che per quell'opzione produce la stringa '--verbose'.
+        Assert::assertContains('--verbose', $options);
         Assert::assertStringContainsString('--queue=default', $options[1]);
     });
 

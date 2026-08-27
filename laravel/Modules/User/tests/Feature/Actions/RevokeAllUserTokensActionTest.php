@@ -6,16 +6,17 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use Modules\User\Actions\Passport\RevokeAllUserTokensAction;
 use Modules\User\Database\Factories\UserFactory;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('RevokeAllUserTokensAction', function (): void {
     test('revokes all user tokens', function (): void {
         $user = UserFactory::new()->createOne();
 
         $clientId = (string) Str::uuid();
-        DB::connection('user')->table('oauth_clients')->insert([
+        DB::connection('user')->table('oauth_clients')->insert(TestCase::oauthClientColumnsOnly([
             'id' => $clientId,
             'user_id' => (string) $user->id,
             'name' => 'Test Client',
@@ -29,7 +30,7 @@ describe('RevokeAllUserTokensAction', function (): void {
             'revoked' => 0,
             'created_at' => now(),
             'updated_at' => now(),
-        ]);
+        ]));
 
         DB::connection('user')->table('oauth_access_tokens')->insert([
             [

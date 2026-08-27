@@ -1,6 +1,8 @@
 # GitHub Workflows Standard - base_laravelpizza
 
 **Ultimo aggiornamento**: 2025-01-10
+**Ultimo aggiornamento**: [DATE]
+>>>>>>> .merge_file_WJZhbE
 **Principi**: DRY + KISS + SOLID + Robust
 **Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot
 

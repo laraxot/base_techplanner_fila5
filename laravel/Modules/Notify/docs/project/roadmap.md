@@ -1,10 +1,12 @@
 ---
 title: "ROADMAP: FixCity Platform"
+title: "ROADMAP: Notify Platform"
 type: concept
 tags: [roadmap]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "roadmap roadmap: fixcity platform"
+qmd: "roadmap roadmap: laraxot platform"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -19,6 +21,7 @@ related:
 ---
 
 # ROADMAP: FixCity Platform
+# ROADMAP: Notify Platform
 
 ## Milestone 1: Performance & Stability (COMPLETED ✅)
 - Phase 0: Foundation

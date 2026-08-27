@@ -1,23 +1,3 @@
----
-title: "user module code and documentation optimization analysis"
-type: concept
-tags: [code, optimization, analysis]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "code-optimization-analysis-1 user module code and documentation optimization analysis"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-related:
-  - "./00-index-1.md"
-  - "./00-index.md"
-  - "./2fa-guide.md"
-  - "./2fa.md"
-  - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-  - "./actions-path-convention.md"
----
-
 # user module code and documentation optimization analysis
 
 ## comprehensive analysis
@@ -48,7 +28,7 @@ docs/
 │   └── troubleshooting.md
 ├── user_management/
 │   ├── crud_operations.md
-│   ├── profile-management-2.md
+│   ├── profile_management.md
 │   ├── role_permissions.md
 │   └── team_management.md
 ├── filament_integration/
@@ -59,8 +39,8 @@ docs/
 ├── integrations/
 │   ├── socialite.md
 │   ├── passport.md
-│   ├── spatie-permissions-2.md
-│   └── two-factor-2.md
+│   ├── spatie_permissions.md
+│   └── two_factor.md
 ├── api/
 │   ├── rest_api.md
 │   ├── graphql_api.md

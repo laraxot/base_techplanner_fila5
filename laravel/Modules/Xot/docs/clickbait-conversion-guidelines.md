@@ -3,6 +3,8 @@
 ## Overview
 
 This document outlines conversion optimization and clickbait strategies for <nome progetto> Meetups.
+This document outlines conversion optimization and clickbait strategies for LaravelPizza Meetups.
+>>>>>>> .merge_file_OeJNm6
 
 ## Conversion Principles
 

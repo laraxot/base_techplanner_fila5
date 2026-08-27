@@ -346,6 +346,8 @@ public function panel(Panel $panel): Panel
 - **Coerenza**: Tutti i moduli ereditano automaticamente gli asset chart
 
 Per dettagli completi, vedere [chart-assets-centralization-rule.md](../../Chart/docs/chart-assets-centralization-rule.md).
+Per dettagli completi, vedere [chart-assets-centralization-rule.md](../../chart/docs/chart-assets-centralization-rule.md).
+>>>>>>> .merge_file_U0abOe
 
 ## Configuration Files
 
@@ -445,5 +447,7 @@ The project uses a modular architecture where:
 
 Per guide dettagliate, consultare:
 - [Chart Module Installation Guide](../../Chart/docs/filament-5-installation-guide.md)
+- [Chart Module Installation Guide](../../chart/docs/filament-5-installation-guide.md)
+>>>>>>> .merge_file_U0abOe
 - [Filament 5.x Requirements](./filament-5-requirements.md)
 - [Filament 5.x Official Docs](https://filamentphp.com/docs/5.x/introduction/installation)

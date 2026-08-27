@@ -1,6 +1,8 @@
 # Log Risoluzione Conflitti Git (Merge Conflict Resolution Log)
 
 Questo documento traccia la cronologia delle risoluzioni dei conflitti massivi incontrati durante lo sviluppo del progetto healthcare_app.
+Questo documento traccia la cronologia delle risoluzioni dei conflitti massivi incontrati durante lo sviluppo del progetto Quaeris.
+>>>>>>> .merge_file_UCVFXH
 
 ## 📅 27 Gennaio 2026 - Risoluzione Corrente (Antigravity)
 
@@ -10,6 +12,8 @@ Questo documento traccia la cronologia delle risoluzioni dei conflitti massivi i
 ### File Corretti
 - `Modules/Notify/tests/Feature/JsonComponentsTest.php`: Risolti conflitti di asserzioni e setup.
 - `Modules/Lang/docs/translatable/json-content-translation.md`: Corretti placeholder `<nome progetto>` in `healthcare_app`.
+- `Modules/Lang/docs/translatable/json-content-translation.md`: Corretti placeholder `<nome progetto>` in `quaeris`.
+>>>>>>> .merge_file_UCVFXH
 - `Modules/User/app/Models/OauthPersonalAccessClient.php`: Pulizia PHPDoc e risoluzione conflitti UUID.
 - `Modules/User/app/Models/Role.php`: Risoluzione massiva di PHPDoc duplicati e contrastanti (id `int` vs `string`).
 - `Modules/User/app/Models/OauthClient.php`: Rimozione import duplicati e pulizia PHPDoc.
@@ -59,6 +63,8 @@ Il comando `php artisan serve` falliva per errori di sintassi causati da conflit
 3. **Defensive Programming**: Verificare sempre la chiusura di ogni blocco `{}`.
 4. **Import Hygiene**: Rimuovere `use` statements duplicati.
 5. **Placeholder Correction**: Sostituire stringhe come `<nome progetto>` con il valore reale (`healthcare_app`).
+5. **Placeholder Correction**: Sostituire stringhe come `<nome progetto>` con il valore reale (`quaeris`).
+>>>>>>> .merge_file_UCVFXH
 
 ## 🔐 Regola d'Oro: File Locking (Prevenzione)
 

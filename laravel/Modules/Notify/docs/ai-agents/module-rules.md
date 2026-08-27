@@ -258,6 +258,9 @@ final class JpGraphServiceTest extends TestCase
 ## Quaeris ChartService + SimpleXXChartWidget (Memoria Critica)
 
 - **ChartService unico e centrale** (`Modules/Quaeris/app/Services/ChartService.php`):
+## App ChartService + SimpleXXChartWidget (Memoria Critica)
+
+- **ChartService unico e centrale** (`Modules/App/app/Services/ChartService.php`):
   - Deve esistere **una sola** classe `ChartService` nel file.
   - Vietato lasciare blocchi duplicati (seconda classe incollata in fondo, costanti duplicate, numeri "sciolti" fuori da array) perché generano `ParseError` che bloccano tutti i widget (`Simple01`, `Simple02`, ecc.) e le pagine Filament (`ViewQuestionChart`).
   - Tutti i widget semplici devono usare **solo** metodi realmente esistenti nel servizio:

@@ -6,7 +6,6 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "theme documentation standard"
 related:
-  - "./00-INDEX.md"
   - "./00-index.md"
 ---
 
@@ -125,7 +124,6 @@ Breve descrizione del componente e del suo scopo.
     </x-slot>
 </x-theme::component-name>
 ```
-```
 
 ### Documentazione Architettura
 
@@ -164,7 +162,6 @@ La documentazione architetturale deve includere:
 <button class="bg-blue-500 text-white px-4 py-2 rounded">
     Clicca qui
 </button>
-```
 ```
 
 ### 3. Screenshot e Demo

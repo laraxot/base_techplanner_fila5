@@ -6,12 +6,13 @@ namespace Modules\Xot\Http\Middleware;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use Modules\Xot\Actions\Cast\SafeIntCastAction;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Symfony\Component\HttpFoundation\Response;
+use Webmozart\Assert\Assert;
 
 use function Safe\json_encode;
 use function Safe\preg_match;
-
-use Symfony\Component\HttpFoundation\Response;
-use Webmozart\Assert\Assert;
 
 /**
  * Middleware di sicurezza avanzato.
@@ -73,7 +74,8 @@ class SecurityMiddleware
         $key = "rate_limit:ip:{$ip}";
         $limit = $this->getRateLimitForEndpoint($endpoint);
 
-        $current = (int) cache()->get($key, 0);
+        /** @var int $current */
+        $current = SafeIntCastAction::cast(cache()->get($key, 0));
 
         if ($current >= $limit) {
             Log::warning('Rate limit exceeded for IP', [
@@ -97,7 +99,8 @@ class SecurityMiddleware
         $key = 'rate_limit:ua:'.md5($userAgent);
         $limit = $this->getRateLimitForEndpoint($endpoint);
 
-        $current = (int) cache()->get($key, 0);
+        /** @var int $current */
+        $current = SafeIntCastAction::cast(cache()->get($key, 0));
 
         if ($current >= $limit) {
             Log::warning('Rate limit exceeded for User Agent', [
@@ -121,7 +124,8 @@ class SecurityMiddleware
         $key = "rate_limit:endpoint:{$endpoint}";
         $limit = $this->getRateLimitForEndpoint($endpoint);
 
-        $current = (int) cache()->get($key, 0);
+        /** @var int $current */
+        $current = SafeIntCastAction::cast(cache()->get($key, 0));
 
         if ($current >= $limit) {
             Log::warning('Rate limit exceeded for endpoint', [
@@ -278,7 +282,7 @@ class SecurityMiddleware
         }
 
         // Log tentativi di accesso falliti
-        if (401 === $response->getStatusCode() || 403 === $response->getStatusCode()) {
+        if ($response->getStatusCode() === 401 || $response->getStatusCode() === 403) {
             Log::warning('Failed access attempt', $securityData);
         }
 
@@ -331,7 +335,7 @@ class SecurityMiddleware
         ];
 
         foreach ($suspiciousUserAgents as $suspicious) {
-            if (null !== $userAgent && false !== stripos($userAgent, $suspicious)) {
+            if ($userAgent !== null && stripos($userAgent, $suspicious) !== false) {
                 return true;
             }
         }
@@ -347,7 +351,7 @@ class SecurityMiddleware
         $inputs = $request->all();
 
         foreach ($inputs as $key => $value) {
-            if (null !== $value && is_string($value)) {
+            if ($value !== null && is_string($value)) {
                 $this->validateStringInput($key, $value);
             } elseif (is_array($value)) {
                 $this->validateArrayInput($key, $value);
@@ -388,7 +392,7 @@ class SecurityMiddleware
     /**
      * Valida input array.
      *
-     * @param array<array-key, mixed> $value
+     * @param  array<array-key, mixed>  $value
      */
     private function validateArrayInput(string $key, array $value): void
     {
@@ -414,7 +418,7 @@ class SecurityMiddleware
     /**
      * Ottieni profondità array.
      *
-     * @param array<array-key, mixed> $array
+     * @param  array<array-key, mixed>  $array
      */
     private function getArrayDepth(array $array): int
     {
@@ -441,7 +445,9 @@ class SecurityMiddleware
         if (in_array($request->method(), ['POST', 'PUT', 'DELETE', 'PATCH'])) {
             $token = $request->header('X-CSRF-TOKEN') ?: $request->input('_token');
 
-            if (! $token || ! hash_equals(session()->token(), (string) $token)) {
+            /** @var string $tokenStr */
+            $tokenStr = SafeStringCastAction::cast($token);
+            if (! $token || ! hash_equals(session()->token(), $tokenStr)) {
                 Log::warning('CSRF token mismatch', [
                     'ip' => $request->ip(),
                     'method' => $request->method(),

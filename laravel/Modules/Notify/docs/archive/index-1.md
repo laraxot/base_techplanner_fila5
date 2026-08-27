@@ -46,7 +46,11 @@ This document serves as the central index for the Notify module, providing guida
 - Update this index if new features or significant changes are introduced to the Notify module.
 
 ## Links to Related Documentation
+<<<<<<< .merge_file_Z69eXM
 - [Architecture Overview](./ARCHITECTURE.md)
+=======
+- [Architecture Overview](./architecture.md)
+>>>>>>> .merge_file_uHkTw0
 - [Notification Channels Implementation](./NOTIFICATION_CHANNELS_IMPLEMENTATION.md)
 - [Email Templates](./EMAIL_TEMPLATES.md)
 - [SMS Implementation](./SMS_IMPLEMENTATION.md)
@@ -77,7 +81,11 @@ Questo documento serve come indice centrale per il modulo Notify, fornendo una g
 
 ### Architettura e Struttura
 - [README](./README.md) - Panoramica generale del modulo
+<<<<<<< .merge_file_Z69eXM
 - [Architettura](./ARCHITECTURE.md) - Architettura generale del modulo
+=======
+- [Architettura](./architecture.md) - Architettura generale del modulo
+>>>>>>> .merge_file_uHkTw0
 - [Struttura](./structure.md) - Struttura delle directory e dei componenti
 - [Modelli](./models.md) - Documentazione dei modelli Eloquent
 - [Eventi](./events.md) - Eventi e listeners
@@ -156,11 +164,19 @@ Implementare una gestione robusta degli errori per gestire i fallimenti nella co
 ## Sottocartelle
 
 ### Mail Templates
+<<<<<<< .merge_file_Z69eXM
 - [Index](./mail-templates/INDEX.md) - Indice della documentazione sui template email
 - [Implementazione Slug](./mail-templates/MAIL_TEMPLATE_SLUG_IMPLEMENTATION.md) - Implementazione del campo slug
 
 ### Notifications
 - [Index](./notifications/INDEX.md) - Indice della documentazione sulle notifiche
+=======
+- [Index](./mail-templates/index.md) - Indice della documentazione sui template email
+- [Implementazione Slug](./mail-templates/MAIL_TEMPLATE_SLUG_IMPLEMENTATION.md) - Implementazione del campo slug
+
+### Notifications
+- [Index](./notifications/index.md) - Indice della documentazione sulle notifiche
+>>>>>>> .merge_file_uHkTw0
 
 ## Note sulla Manutenzione
 Questa documentazione viene aggiornata regolarmente. Prima di apportare modifiche al codice, consultare la documentazione pertinente e aggiornare i documenti correlati.

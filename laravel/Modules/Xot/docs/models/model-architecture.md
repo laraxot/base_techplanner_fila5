@@ -68,6 +68,8 @@ Tutti i modelli devono estendere una delle classi base appropriate:
 │ - Modules/User/Models/TeamUser                              │
 │ - Modules/healthcare_app/Models/Contact                            │
 │ - Modules/ModuloEsempio/Models/Contact                            │
+│ - Modules/Quaeris/Models/Contact                            │
+>>>>>>> .merge_file_h1thHm
 │                                                             │
 │ Implementano: Business logic, Relationships, Scopes         │
 └─────────────────────────────────────────────────────────────┘
@@ -194,6 +196,8 @@ abstract class BaseMorphPivot extends XotBaseMorphPivot
 - Definire la connection specifica del modulo
 - Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in healthcare_app)
 - Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in ModuloEsempio)
+- Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in Quaeris)
+>>>>>>> .merge_file_h1thHm
 - Configurare casts specifici del modulo
 - Configurare eager loading predefinito (`$with`)
 
@@ -236,6 +240,8 @@ class Tenant extends BaseModel
 - `Modules/User/Models/Tenant.php`
 - `Modules/healthcare_app/Models/Contact.php`
 - `Modules/ModuloEsempio/Models/Contact.php`
+- `Modules/Quaeris/Models/Contact.php`
+>>>>>>> .merge_file_h1thHm
 - `Modules/Cms/Models/Page.php`
 - `Modules/Geo/Models/GeoNamesCap.php`
 
@@ -351,9 +357,10 @@ public function getConnectionName(): ?string
 ### Convenzione
 
 - Namespace: `Modules\User\Models\*` → Connection: `user`
-**Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) per proposta di implementazione).
+**Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) per proposta di implementazione).
 - Namespace: `Modules\healthcare_app\Models\*` → Connection: `healthcare_app`
 - Namespace: `Modules\ModuloEsempio\Models\*` → Connection: `modulo_esempio`
+- Namespace: `Modules\Quaeris\Models\*` → Connection: `quaeris`
 - Namespace: `Modules\Cms\Models\*` → Connection: `cms`
 
 **Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) per proposta di implementazione).
@@ -562,6 +569,13 @@ namespace Modules\healthcare_app\Models;
 ```php
 namespace Modules\ModuloEsempio\Models;
 
+### Esempio 4: BaseModel con Traits Specifici (Quaeris Module)
+
+```php
+namespace Modules\Quaeris\Models;
+
+>>>>>>> .merge_file_h1thHm
+
 use Modules\Xot\Models\XotBaseModel;
 use Modules\Xot\Contracts\ModelContract;
 use Modules\Xot\Models\Traits\HasExtraTrait;
@@ -572,6 +586,8 @@ use GeneaLabs\LaravelModelCaching\Traits\Cachable;
 /**
  * Base Model per healthcare_app module.
  * Base Model per ModuloEsempio module.
+ * Base Model per Quaeris module.
+>>>>>>> .merge_file_h1thHm
  *
  * Aggiunge supporto per:
  * - Media Library (Spatie)
@@ -585,6 +601,8 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
     use InteractsWithMedia;
 
     protected $connection = 'healthcare_app';
+    protected $connection = 'quaeris';
+>>>>>>> .merge_file_h1thHm
 
     // Eager load sempre la relazione extra
     protected $with = ['extra'];
@@ -596,6 +614,8 @@ Poi i modelli concreti ereditano tutto:
 ```php
 namespace Modules\healthcare_app\Models;
 namespace Modules\ModuloEsempio\Models;
+namespace Modules\Quaeris\Models;
+>>>>>>> .merge_file_h1thHm
 
 class Contact extends BaseModel
 {
@@ -657,6 +677,8 @@ protected $connection = 'user';  // ← Già ereditato da BaseModel
 // ✅ CORRETTO - Aggiungere traits specifici in BaseModel
 // Modules/healthcare_app/Models/BaseModel.php
 // Modules/ModuloEsempio/Models/BaseModel.php
+// Modules/Quaeris/Models/BaseModel.php
+>>>>>>> .merge_file_h1thHm
 use InteractsWithMedia;
 use HasExtraTrait;
 
@@ -787,9 +809,11 @@ it('tracks who created the record', function () {
 - [XotBaseModel.php](../../app/Models/XotBaseModel.php) - Base class per modelli standard
 - [XotBasePivot.php](../../app/Models/XotBasePivot.php) - Base class per pivot tables
 - [XotBaseMorphPivot.php](../../app/Models/XotBaseMorphPivot.php) - Base class per morph pivots
-- [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) - Analisi duplicazioni e proposte miglioramento
+- [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) - Analisi duplicazioni e proposte miglioramento
+>>>>>>> .merge_file_h1thHm
 - [CLAUDE.md](../../../CLAUDE.md) - Convenzioni generali del progetto
 - [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) - Analisi duplicazioni e proposte miglioramento
+=======
 - [CLAUDE.md](../../../claude.md) - Convenzioni generali del progetto
 
 ---
@@ -885,6 +909,8 @@ Tutti i modelli devono estendere una delle classi base appropriate:
 │ - Modules/User/Models/TeamUser                              │
 │ - Modules/healthcare_app/Models/Contact                            │
 │ - Modules/ModuloEsempio/Models/Contact                            │
+│ - Modules/Quaeris/Models/Contact                            │
+>>>>>>> .merge_file_h1thHm
 │                                                             │
 │ Implementano: Business logic, Relationships, Scopes         │
 └─────────────────────────────────────────────────────────────┘
@@ -1011,6 +1037,8 @@ abstract class BaseMorphPivot extends XotBaseMorphPivot
 - Definire la connection specifica del modulo
 - Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in healthcare_app)
 - Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in ModuloEsempio)
+- Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in Quaeris)
+>>>>>>> .merge_file_h1thHm
 - Configurare casts specifici del modulo
 - Configurare eager loading predefinito (`$with`)
 
@@ -1053,6 +1081,8 @@ class Tenant extends BaseModel
 - `Modules/User/Models/Tenant.php`
 - `Modules/healthcare_app/Models/Contact.php`
 - `Modules/ModuloEsempio/Models/Contact.php`
+- `Modules/Quaeris/Models/Contact.php`
+>>>>>>> .merge_file_h1thHm
 - `Modules/Cms/Models/Page.php`
 - `Modules/Geo/Models/GeoNamesCap.php`
 
@@ -1168,9 +1198,10 @@ public function getConnectionName(): ?string
 ### Convenzione
 
 - Namespace: `Modules\User\Models\*` → Connection: `user`
-**Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) per proposta di implementazione).
+**Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) per proposta di implementazione).
 - Namespace: `Modules\healthcare_app\Models\*` → Connection: `healthcare_app`
 - Namespace: `Modules\ModuloEsempio\Models\*` → Connection: `modulo_esempio`
+- Namespace: `Modules\Quaeris\Models\*` → Connection: `quaeris`
 - Namespace: `Modules\Cms\Models\*` → Connection: `cms`
 
 **Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) per proposta di implementazione).
@@ -1379,6 +1410,13 @@ namespace Modules\healthcare_app\Models;
 ```php
 namespace Modules\ModuloEsempio\Models;
 
+### Esempio 4: BaseModel con Traits Specifici (Quaeris Module)
+
+```php
+namespace Modules\Quaeris\Models;
+
+>>>>>>> .merge_file_h1thHm
+
 use Modules\Xot\Models\XotBaseModel;
 use Modules\Xot\Contracts\ModelContract;
 use Modules\Xot\Models\Traits\HasExtraTrait;
@@ -1389,6 +1427,8 @@ use GeneaLabs\LaravelModelCaching\Traits\Cachable;
 /**
  * Base Model per healthcare_app module.
  * Base Model per ModuloEsempio module.
+ * Base Model per Quaeris module.
+>>>>>>> .merge_file_h1thHm
  *
  * Aggiunge supporto per:
  * - Media Library (Spatie)
@@ -1402,6 +1442,8 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
     use InteractsWithMedia;
 
     protected $connection = 'healthcare_app';
+    protected $connection = 'quaeris';
+>>>>>>> .merge_file_h1thHm
 
     // Eager load sempre la relazione extra
     protected $with = ['extra'];
@@ -1413,6 +1455,8 @@ Poi i modelli concreti ereditano tutto:
 ```php
 namespace Modules\healthcare_app\Models;
 namespace Modules\ModuloEsempio\Models;
+namespace Modules\Quaeris\Models;
+>>>>>>> .merge_file_h1thHm
 
 class Contact extends BaseModel
 {
@@ -1474,6 +1518,8 @@ protected $connection = 'user';  // ← Già ereditato da BaseModel
 // ✅ CORRETTO - Aggiungere traits specifici in BaseModel
 // Modules/healthcare_app/Models/BaseModel.php
 // Modules/ModuloEsempio/Models/BaseModel.php
+// Modules/Quaeris/Models/BaseModel.php
+>>>>>>> .merge_file_h1thHm
 use InteractsWithMedia;
 use HasExtraTrait;
 
@@ -1604,9 +1650,11 @@ it('tracks who created the record', function () {
 - [XotBaseModel.php](../../app/Models/XotBaseModel.php) - Base class per modelli standard
 - [XotBasePivot.php](../../app/Models/XotBasePivot.php) - Base class per pivot tables
 - [XotBaseMorphPivot.php](../../app/Models/XotBaseMorphPivot.php) - Base class per morph pivots
-- [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) - Analisi duplicazioni e proposte miglioramento
+- [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) - Analisi duplicazioni e proposte miglioramento
+>>>>>>> .merge_file_h1thHm
 - [CLAUDE.md](../../../CLAUDE.md) - Convenzioni generali del progetto
 - [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) - Analisi duplicazioni e proposte miglioramento
+=======
 - [CLAUDE.md](../../../claude.md) - Convenzioni generali del progetto
 
 ---

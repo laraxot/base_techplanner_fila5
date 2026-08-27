@@ -1,16 +1,2 @@
----
-module: theme
-topic: user-invitation-1
-canonical: ../../../Themes/docs/shared-components/user-invitation-2.md
-related:
-  - "./00-index-1.md"
-  - "./00-index.md"
-  - "./2fa-guide.md"
-  - "./2fa.md"
-  - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-  - "./actions-path-convention.md"
----
+https://filamentapps.dev/blog/filament-invite-only-registration-via-email-invitations
 
-See canonical documentation: ../../../Themes/docs/shared-components/user-invitation-2.md

@@ -13,7 +13,6 @@ use Modules\Notify\Enums\NotificationTypeEnum;
 use Modules\Xot\Contracts\ProfileContract;
 use Override;
 use Spatie\MediaLibrary\HasMedia;
-use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 use Spatie\Translatable\HasTranslations;
 
@@ -40,16 +39,13 @@ use Spatie\Translatable\HasTranslations;
  * @property Carbon $created_at
  * @property Carbon $updated_at
  * @property Carbon|null $deleted_at
- *
  * @property-read string $channels_label
- *
  * @property NotificationTypeEnum $type
- *
  * @property-read ProfileContract|null $creator
  * @property-read int|null $logs_count
  * @property-read MediaCollection<int, Media> $media
  * @property-read int|null $media_count
- * @property-read mixed $translations
+ * @property-read array<string, array<string, mixed>> $translations
  * @property-read ProfileContract|null $updater
  * @property-read int|null $versions_count
  *
@@ -66,6 +62,34 @@ use Spatie\Translatable\HasTranslations;
  * @method static Builder<static>|NotificationTemplate whereLocales(string $column, array<int, string> $locales)
  *
  * @property-read ProfileContract|null $deleter
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property string|null $deleted_by
+ *
+ * @method static Builder<static>|NotificationTemplate whereBodyHtml($value)
+ * @method static Builder<static>|NotificationTemplate whereBodyText($value)
+ * @method static Builder<static>|NotificationTemplate whereCategory($value)
+ * @method static Builder<static>|NotificationTemplate whereChannels($value)
+ * @method static Builder<static>|NotificationTemplate whereCode($value)
+ * @method static Builder<static>|NotificationTemplate whereConditions($value)
+ * @method static Builder<static>|NotificationTemplate whereCreatedAt($value)
+ * @method static Builder<static>|NotificationTemplate whereCreatedBy($value)
+ * @method static Builder<static>|NotificationTemplate whereDeletedAt($value)
+ * @method static Builder<static>|NotificationTemplate whereDeletedBy($value)
+ * @method static Builder<static>|NotificationTemplate whereDescription($value)
+ * @method static Builder<static>|NotificationTemplate whereGrapesjsData($value)
+ * @method static Builder<static>|NotificationTemplate whereId($value)
+ * @method static Builder<static>|NotificationTemplate whereIsActive($value)
+ * @method static Builder<static>|NotificationTemplate whereMetadata($value)
+ * @method static Builder<static>|NotificationTemplate whereName($value)
+ * @method static Builder<static>|NotificationTemplate wherePreviewData($value)
+ * @method static Builder<static>|NotificationTemplate whereSubject($value)
+ * @method static Builder<static>|NotificationTemplate whereTenantId($value)
+ * @method static Builder<static>|NotificationTemplate whereType($value)
+ * @method static Builder<static>|NotificationTemplate whereUpdatedAt($value)
+ * @method static Builder<static>|NotificationTemplate whereUpdatedBy($value)
+ * @method static Builder<static>|NotificationTemplate whereVariables($value)
+ * @method static Builder<static>|NotificationTemplate whereVersion($value)
  *
  * @property string|null $updated_by
  * @property string|null $created_by
@@ -101,7 +125,6 @@ use Spatie\Translatable\HasTranslations;
 class NotificationTemplate extends BaseModel implements HasMedia
 {
     use HasTranslations;
-    use InteractsWithMedia;
 
     /** @var list<string> */
     public array $translatable = [
@@ -176,7 +199,6 @@ class NotificationTemplate extends BaseModel implements HasMedia
      * Compile the template with the given data.
      *
      * @param  array<string, mixed>  $data  The data to compile the template with
-     *
      * @return array{subject: string, body_html: string|null, body_text: string|null}
      */
     public function compile(array $data = []): array
@@ -217,7 +239,6 @@ class NotificationTemplate extends BaseModel implements HasMedia
      * Preview the template with the given data.
      *
      * @param  array<string, mixed>  $data  Additional data to merge with preview data
-     *
      * @return array{subject: string, body_html: string|null, body_text: string|null}
      */
     public function preview(array $data = []): array
@@ -235,7 +256,6 @@ class NotificationTemplate extends BaseModel implements HasMedia
      */
     /**
      * @param  Builder<static>  $query
-     *
      * @return Builder<static>
      */
     public function scopeActive(Builder $query): Builder
@@ -248,7 +268,6 @@ class NotificationTemplate extends BaseModel implements HasMedia
      */
     /**
      * @param  Builder<static>  $query
-     *
      * @return Builder<static>
      */
     public function scopeForChannel(Builder $query, string $channel): Builder
@@ -261,7 +280,6 @@ class NotificationTemplate extends BaseModel implements HasMedia
      */
     /**
      * @param  Builder<static>  $query
-     *
      * @return Builder<static>
      */
     public function scopeForCategory(Builder $query, string $category): Builder

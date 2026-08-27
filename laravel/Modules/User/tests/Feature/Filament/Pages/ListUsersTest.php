@@ -17,12 +17,32 @@ use Modules\User\Filament\Resources\UserResource\Pages\ListUsers;
 use Modules\User\Models\User;
 use Modules\User\Providers\Filament\AdminPanelProvider;
 use Modules\User\Tests\TestCase;
+use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-beforeEach(function (): void {
-    /* @var TestCase $this */
+/**
+ * Filament v4 deprecata `ListRecords::getTableColumns()` e le sue sorelle: l'override del
+ * modulo eredita la deprecazione, quindi la chiamata diretta è un `method.deprecated`.
+ * Si raggiunge per reflection, esattamente come fa
+ * `Modules\Xot\Filament\Traits\HasXotTable::resolveTableColumnsForXotTable()`.
+ *
+ * @return array<string, object>
+ */
+function listUsersPageTableMember(ListUsers $page, string $method): array
+{
+    /** @var array<string, object> $members */
+    $members = array_filter(
+        XotBasePest::assertArray((new \ReflectionMethod($page, $method))->invoke($page)),
+        'is_object'
+    );
+
+    return $members;
+}
+
+function makeListUsersPage(): ListUsers
+{
     try {
         $panel = Filament::getPanel('user::admin');
     } catch (\Exception $e) {
@@ -32,16 +52,20 @@ beforeEach(function (): void {
     }
     Filament::setCurrentPanel($panel);
 
-    $this->listUsersPage = new ListUsers();
+    return new ListUsers();
+}
 
+/** @return Collection<int, User> */
+function createMasterAdminUsers(): Collection
+{
     $users = UserFactory::new()
         ->count(3)
-        ->createOne([
+        ->create([
             'type' => UserType::MasterAdmin,
         ]);
 
-    $this->users = new Collection($users->all());
-});
+    return new Collection($users->all());
+}
 
 describe('List Users', function (): void {
     test('list users page has correct resource', function (): void {
@@ -49,21 +73,18 @@ describe('List Users', function (): void {
     });
 
     test('list users page extends correct base class', function (): void {
-        /** @var TestCase $this */
-        $listUsersPage = $this->requireListUsersPage();
+        $listUsersPage = makeListUsersPage();
         Assert::assertInstanceOf(BaseListUsers::class, $listUsersPage);
     });
 
     test('list users page can be instantiated', function (): void {
-        /** @var TestCase $this */
-        $listUsersPage = $this->requireListUsersPage();
+        $listUsersPage = makeListUsersPage();
         Assert::assertInstanceOf(ListUsers::class, $listUsersPage);
     });
 
     test('list users page has correct table columns', function (): void {
-        /** @var TestCase $this */
-        $listUsersPage = $this->requireListUsersPage();
-        $columns = $listUsersPage->getTableColumns();
+        $listUsersPage = makeListUsersPage();
+        $columns = listUsersPageTableMember($listUsersPage, 'getTableColumns');
 
         Assert::assertArrayHasKey('name', $columns);
         Assert::assertArrayHasKey('email', $columns);
@@ -78,17 +99,15 @@ describe('List Users', function (): void {
     });
 
     test('list users page has correct table filters', function (): void {
-        /** @var TestCase $this */
-        $listUsersPage = $this->requireListUsersPage();
-        $filters = $listUsersPage->getTableFilters();
+        $listUsersPage = makeListUsersPage();
+        $filters = listUsersPageTableMember($listUsersPage, 'getTableFilters');
 
         Assert::assertCount(0, $filters);
     });
 
     test('list users page has correct table actions', function (): void {
-        /** @var TestCase $this */
-        $listUsersPage = $this->requireListUsersPage();
-        $actions = $listUsersPage->getTableActions();
+        $listUsersPage = makeListUsersPage();
+        $actions = listUsersPageTableMember($listUsersPage, 'getTableActions');
 
         Assert::assertArrayHasKey('change_password', $actions);
 
@@ -97,8 +116,7 @@ describe('List Users', function (): void {
     });
 
     test('list users page can display users', function (): void {
-        /** @var TestCase $this */
-        $users = $this->requireUsers();
+        $users = createMasterAdminUsers();
         $createdUserIds = $users->pluck('id');
         $testUsers = User::whereIn('id', $createdUserIds)->get();
 
@@ -114,22 +132,19 @@ describe('List Users', function (): void {
     });
 
     test('list users page has correct navigation label', function (): void {
-        /** @var TestCase $this */
-        $listUsersPage = $this->requireListUsersPage();
+        $listUsersPage = makeListUsersPage();
         $label = $listUsersPage->getNavigationLabel();
         Assert::assertNotEmpty($label);
     });
 
     test('list users page has correct title', function (): void {
-        /** @var TestCase $this */
-        $listUsersPage = $this->requireListUsersPage();
+        $listUsersPage = makeListUsersPage();
         $title = $listUsersPage->getTitle();
         Assert::assertNotEmpty($title);
     });
 
     test('list users page has correct breadcrumbs', function (): void {
-        /** @var TestCase $this */
-        $listUsersPage = $this->requireListUsersPage();
+        $listUsersPage = makeListUsersPage();
         try {
             $breadcrumbs = $listUsersPage->getBreadcrumbs();
             Assert::assertNotEmpty($breadcrumbs);
@@ -138,11 +153,12 @@ describe('List Users', function (): void {
     });
 
     test('list users page can handle search', function (): void {
-        /** @var TestCase $this */
-        $listUsersPage = $this->requireListUsersPage();
-        $columns = $listUsersPage->getTableColumns();
+        $listUsersPage = makeListUsersPage();
+        $columns = listUsersPageTableMember($listUsersPage, 'getTableColumns');
         $nameColumn = $columns['name'];
         $emailColumn = $columns['email'];
+        Assert::assertInstanceOf(TextColumn::class, $nameColumn);
+        Assert::assertInstanceOf(TextColumn::class, $emailColumn);
 
         Assert::assertTrue($nameColumn->isSearchable());
         Assert::assertTrue($emailColumn->isSearchable());

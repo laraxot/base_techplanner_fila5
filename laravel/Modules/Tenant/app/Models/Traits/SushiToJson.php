@@ -5,9 +5,8 @@ declare(strict_types=1);
 namespace Modules\Tenant\Models\Traits;
 
 use Exception;
-use Illuminate\Support\Facades\Auth;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\File;
-use InvalidArgumentException;
 use Modules\Tenant\Actions\Config\FilterConfigStringKeysAction;
 use Modules\Tenant\Actions\Config\GetTenantFilePathAction;
 use Sushi\Sushi;
@@ -40,9 +39,6 @@ trait SushiToJson
     public function getJsonFile(): string
     {
         $tbl = $this->getTable();
-        if (! is_string($tbl)) {
-            throw new InvalidArgumentException(__FILE__.':'.__LINE__.' - '.class_basename(self::class).': Table name must be string');
-        }
 
         return app(GetTenantFilePathAction::class)->execute('database/content/'.$tbl.'.json');
     }
@@ -173,10 +169,6 @@ trait SushiToJson
         $maxId = 0;
 
         foreach ($existingData as $row) {
-            if (! \is_array($row)) {
-                continue;
-            }
-
             $rawId = $row['id'] ?? 0;
             $id = \is_numeric($rawId) ? (int) $rawId : 0;
             $maxId = max($maxId, $id);
@@ -192,17 +184,17 @@ trait SushiToJson
      */
     protected static function bootSushiToJson(): void
     {
-        static::creating(static function ($model): void {
+        static::creating(static function (Model $model): void {
             Assert::isInstanceOf($model, static::class);
             self::handleSingleJsonCreating($model);
         });
 
-        static::updating(static function ($model): void {
+        static::updating(static function (Model $model): void {
             Assert::isInstanceOf($model, static::class);
             self::handleSingleJsonUpdating($model);
         });
 
-        static::deleting(static function ($model): void {
+        static::deleting(static function (Model $model): void {
             Assert::isInstanceOf($model, static::class);
             self::handleSingleJsonDeleting($model);
         });
@@ -217,8 +209,8 @@ trait SushiToJson
     protected function findRowIndexById(array $rows, int $id): ?int
     {
         foreach ($rows as $index => $row) {
-            if (is_array($row) && ((int) ($row['id'] ?? 0)) === $id) {
-                return (int) $index;
+            if (is_array($row) && self::intValue($row['id'] ?? null) === $id) {
+                return is_int($index) ? $index : null;
             }
         }
 
@@ -230,15 +222,7 @@ trait SushiToJson
      */
     protected function authId(): int|string|null
     {
-        if (\function_exists('authId')) {
-            return authId();
-        }
-
-        if (class_exists('\Illuminate\Support\Facades\Auth')) {
-            return Auth::id();
-        }
-
-        return null;
+        return authId();
     }
 
     /**
@@ -251,143 +235,6 @@ trait SushiToJson
         if (! File::exists($directory)) {
             File::makeDirectory($directory, 0o755, true, true);
         }
-    }
-
-    /**
-     * @param  array<int, array<string, mixed>>  $data
-     * @return array<int, array<string, mixed>>
-     */
-    private function normalizeJsonRecords(array $data): array
-    {
-        $validatedData = [];
-
-        foreach ($data as $item) {
-            if (! is_array($item)) {
-                continue;
-            }
-
-            $validatedItem = [];
-            foreach ($item as $key => $value) {
-                $validatedItem[is_string($key) ? $key : (string) $key] = $value;
-            }
-            $validatedData[] = $validatedItem;
-        }
-
-        return $validatedData;
-    }
-
-    private static function handleSingleJsonCreating(self $model): void
-    {
-        $file = $model->getJsonFile();
-        $existingData = $model->loadExistingData();
-        $nextId = self::resolveNextRecordId($existingData);
-
-        $model->setAttribute('id', $nextId);
-        $model->setAttribute('updated_at', now());
-        $model->setAttribute('created_at', now());
-        self::applyAuditFields($model);
-
-        $existingData[] = $model->getAttributes();
-        $model->ensureDirectoryExists($file);
-        $model->saveToJson($existingData);
-    }
-
-    /**
-     * @param  array<int, array<string, mixed>>  $existingData
-     */
-    private static function resolveNextRecordId(array $existingData): int
-    {
-        return max(self::maxIdFromRows($existingData), self::maxIdFromDatabase()) + 1;
-    }
-
-    /**
-     * @param  array<int, array<string, mixed>>  $rows
-     */
-    private static function maxIdFromRows(array $rows): int
-    {
-        $maxId = 0;
-
-        foreach ($rows as $row) {
-            if (! \is_array($row)) {
-                continue;
-            }
-
-            $rawId = $row['id'] ?? 0;
-            $id = \is_numeric($rawId) ? (int) $rawId : 0;
-            $maxId = max($maxId, $id);
-        }
-
-        return $maxId;
-    }
-
-    private static function maxIdFromDatabase(): int
-    {
-        try {
-            /** @var int|null $dbMax */
-            $dbMax = static::query()->max('id');
-
-            return \is_int($dbMax) ? $dbMax : 0;
-        } catch (Throwable) {
-            return 0;
-        }
-    }
-
-    private static function applyAuditFields(self $model): void
-    {
-        $authId = $model->authId();
-        if ($authId === null) {
-            return;
-        }
-
-        $model->setAttribute('updated_by', $authId);
-        $model->setAttribute('created_by', $authId);
-    }
-
-    private static function handleSingleJsonUpdating(self $model): void
-    {
-        $model->setAttribute('updated_at', now());
-        self::applyUpdatingAuditField($model);
-
-        $existingData = $model->loadExistingData();
-        $id = (int) ($model->getAttribute('id') ?? 0);
-        if ($id <= 0) {
-            return;
-        }
-
-        $index = $model->findRowIndexById($existingData, $id);
-        if ($index === null) {
-            return;
-        }
-
-        /** @var array<string, mixed> $modelArray */
-        $modelArray = $model->toArray();
-        $existingData[$index] = $modelArray;
-        $model->saveToJson($existingData);
-    }
-
-    private static function applyUpdatingAuditField(self $model): void
-    {
-        $authId = $model->authId();
-        if ($authId !== null) {
-            $model->setAttribute('updated_by', $authId);
-        }
-    }
-
-    private static function handleSingleJsonDeleting(self $model): void
-    {
-        $id = (int) ($model->getAttribute('id') ?? 0);
-        if ($id <= 0) {
-            return;
-        }
-
-        $existingData = $model->loadExistingData();
-        $index = $model->findRowIndexById($existingData, $id);
-        if ($index === null) {
-            return;
-        }
-
-        unset($existingData[$index]);
-        $model->saveToJson(array_values($existingData));
     }
 
     /**
@@ -453,5 +300,153 @@ trait SushiToJson
         }
 
         return $completedData;
+    }
+
+    /**
+     * @param  array<int, array<string, mixed>>  $data
+     * @return array<int, array<string, mixed>>
+     */
+    private function normalizeJsonRecords(array $data): array
+    {
+        $validatedData = [];
+
+        foreach ($data as $item) {
+            if (! is_array($item)) {
+                continue;
+            }
+
+            $validatedItem = [];
+            foreach ($item as $key => $value) {
+                $validatedItem[is_string($key) ? $key : (string) $key] = $value;
+            }
+            $validatedData[] = $validatedItem;
+        }
+
+        return $validatedData;
+    }
+
+    private static function handleSingleJsonCreating(self $model): void
+    {
+        $file = $model->getJsonFile();
+        $existingData = $model->loadExistingData();
+        $nextId = self::resolveNextRecordId($existingData);
+
+        $model->setAttribute('id', $nextId);
+        $model->setAttribute('updated_at', now());
+        $model->setAttribute('created_at', now());
+        self::applyAuditFields($model);
+
+        $existingData[] = $model->getAttributes();
+        $model->ensureDirectoryExists($file);
+        $model->saveToJson($existingData);
+    }
+
+    /**
+     * @param  array<int, array<string, mixed>>  $existingData
+     */
+    private static function resolveNextRecordId(array $existingData): int
+    {
+        return max(self::maxIdFromRows($existingData), self::maxIdFromDatabase()) + 1;
+    }
+
+    /**
+     * @param  array<int, array<string, mixed>>  $rows
+     */
+    private static function maxIdFromRows(array $rows): int
+    {
+        $maxId = 0;
+
+        foreach ($rows as $row) {
+            if (! \is_array($row)) {
+                continue;
+            }
+
+            $maxId = max($maxId, self::intValue($row['id'] ?? null));
+        }
+
+        return $maxId;
+    }
+
+    private static function maxIdFromDatabase(): int
+    {
+        try {
+            /** @var int|null $dbMax */
+            $dbMax = static::query()->max('id');
+
+            return \is_int($dbMax) ? $dbMax : 0;
+        } catch (Throwable) {
+            return 0;
+        }
+    }
+
+    private static function applyAuditFields(self $model): void
+    {
+        $authId = $model->authId();
+        if ($authId === null) {
+            return;
+        }
+
+        $model->setAttribute('updated_by', $authId);
+        $model->setAttribute('created_by', $authId);
+    }
+
+    private static function handleSingleJsonUpdating(self $model): void
+    {
+        $model->setAttribute('updated_at', now());
+        self::applyUpdatingAuditField($model);
+
+        $existingData = $model->loadExistingData();
+        $id = self::intValue($model->getAttribute('id'));
+        if ($id <= 0) {
+            return;
+        }
+
+        $index = $model->findRowIndexById($existingData, $id);
+        if ($index === null) {
+            return;
+        }
+
+        /** @var array<string, mixed> $modelArray */
+        $modelArray = $model->toArray();
+        $existingData[$index] = $modelArray;
+        $model->saveToJson($existingData);
+    }
+
+    private static function applyUpdatingAuditField(self $model): void
+    {
+        $authId = $model->authId();
+        if ($authId !== null) {
+            $model->setAttribute('updated_by', $authId);
+        }
+    }
+
+    private static function handleSingleJsonDeleting(self $model): void
+    {
+        $id = self::intValue($model->getAttribute('id'));
+        if ($id <= 0) {
+            return;
+        }
+
+        $existingData = $model->loadExistingData();
+        $index = $model->findRowIndexById($existingData, $id);
+        if ($index === null) {
+            return;
+        }
+
+        unset($existingData[$index]);
+        $model->saveToJson(array_values($existingData));
+    }
+
+    private static function intValue(mixed $value): int
+    {
+        if (is_int($value)) {
+            return $value;
+        }
+
+        if ((is_string($value) || is_float($value)) && is_numeric($value)) {
+            return (int) $value;
+        }
+
+        return 0;
     }
 }

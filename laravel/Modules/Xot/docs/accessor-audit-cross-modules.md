@@ -149,6 +149,8 @@ Ogni modulo deve avere:
 ## Collegamenti
 
 - [Regola Globale](../../Xot/docs/accessor-save-guard-global-rule.md)
+- [Regola Globale](../../xot/docs/accessor-save-guard-global-rule.md)
+>>>>>>> .merge_file_nZmC3V
 ```
 
 ## Metriche Target
@@ -179,6 +181,15 @@ Ogni modulo deve avere:
 ---
 
 **Creato**: 2025-01-29
+
+- [Sigma Implementation](../../sigma/docs/fix-duplicate-entry-error-summary.md)
+- [Pattern Template](../../sigma/docs/accessor-refactoring-philosophy.md)
+
+---
+
+**Creato**: [DATE]
+
+>>>>>>> .merge_file_nZmC3V
 **Status**: 📊 Audit Framework Pronto
 **Prossimo**: Audit IndennitaCondizioniLavoro
 **Timeline**: 3 settimane per audit completo

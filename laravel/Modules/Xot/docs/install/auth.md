@@ -3,6 +3,7 @@
 
 declare(strict_types=1);
 
+
 return [
     /*
     |--------------------------------------------------------------------------
@@ -118,3 +119,22 @@ return [
 ### Versione Incoming
 
 ---
+
+
+~~~
+### Versione HEAD
+
+
+## Collegamenti tra versioni di auth.md
+* [auth.md](../../../Xot/docs/install/auth.md)
+* [auth.md](../../../User/docs/lang/en/auth.md)
+* [auth.md](../../../Tenant/docs/it/config/auth.md)
+
+
+### Versione Incoming
+
+
+---
+
+
+>>>>>>> .merge_file_aNnHPR

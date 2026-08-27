@@ -1,0 +1,3 @@
+# Tips
+
+https://dudi.dev/optimize-laravel-database-queries/

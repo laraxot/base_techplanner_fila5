@@ -14,3 +14,14 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/socialite.md
+
+
+## Appendice — contenuto migrato
+
+---
+module: theme
+topic: socialite
+canonical: ../../../Themes/docs/shared-components/socialite.txt
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/socialite.txt

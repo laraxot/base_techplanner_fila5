@@ -15,6 +15,8 @@ I file `config/*/database.php` NON devono contenere connessioni hardcoded per i 
     'notify' => [
         'driver' => 'mysql',
         'database' => env('NOTIFY_DB_DATABASE', '<nome progetto>_notify_test'),
+        'database' => env('NOTIFY_DB_DATABASE', 'laravelpizza_notify_test'),
+>>>>>>> .merge_file_Kf2KJf
         'username' => env('NOTIFY_DB_USERNAME', 'root'),
         'password' => env('NOTIFY_DB_PASSWORD', ''),
         ...
@@ -22,6 +24,8 @@ I file `config/*/database.php` NON devono contenere connessioni hardcoded per i 
     'geo' => [
         'driver' => 'mysql',
         'database' => env('GEO_DB_DATABASE', '<nome progetto>_geo_test'),
+        'database' => env('GEO_DB_DATABASE', 'laravelpizza_geo_test'),
+>>>>>>> .merge_file_Kf2KJf
         ...
     ],
     // ... ecc per tutti i moduli
@@ -144,6 +148,9 @@ Aggiungi questo commento nel file `config/database.php` per ricordare agli svilu
 ```bash
 NOTIFY_DB_DATABASE=<nome progetto>_data_test
 GEO_DB_DATABASE=<nome progetto>_data_test
+NOTIFY_DB_DATABASE=laravelpizza_data_test
+GEO_DB_DATABASE=laravelpizza_data_test
+>>>>>>> .merge_file_Kf2KJf
 ```
 
 **✅ CORRETTO:**
@@ -153,6 +160,13 @@ DB_DATABASE=<nome progetto>_data
 
 # .env.testing ha:
 DB_DATABASE=<nome progetto>_data_test  # Solo aggiungi "_test"!
+
+DB_DATABASE=laravelpizza_data
+
+# .env.testing ha:
+DB_DATABASE=laravelpizza_data_test  # Solo aggiungi "_test"!
+
+>>>>>>> .merge_file_Kf2KJf
 ```
 
 ### 2. TestCase setUp() Rule

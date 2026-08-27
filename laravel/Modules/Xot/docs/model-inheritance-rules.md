@@ -71,7 +71,7 @@ class Wstr01lx extends Model
     protected $connection = 'generale';
     public $timestamps = false;
     protected $table = 'wstr01f'; // Tabella diversa
-
+    
     // Configurazioni specifiche che non possono essere nel BaseModel
 }
 ```
@@ -141,7 +141,7 @@ class Integparam extends BaseModel
         'ente', 'matr', 'conome', 'nome', 'anv2kd', 'anv2ka',
         'anvist', 'anvpar', 'anvimp', 'anvqta', 'anvvoc', 'anvdes'
     ];
-
+    
     // Cast specifici se necessari (altrimenti ereditati dal BaseModel)
     protected function casts(): array
     {
@@ -167,7 +167,7 @@ class Wstr01lx extends Model
     protected $connection = 'generale';
     public $timestamps = false;
     protected $table = 'wstr01f'; // Tabella specifica
-
+    
     // Configurazioni specifiche che non possono essere nel BaseModel
 }
 ```
@@ -178,6 +178,8 @@ Tutti i modelli devono passare la validazione PHPStan livello 9+:
 
 ```bash
 cd laravel
+cd /var/www/html/ptvx/laravel
+>>>>>>> .merge_file_zJmtrr
 ./vendor/bin/phpstan analyse --level=9 --memory-limit=2G Modules/Sigma/app/Models/Integparam.php
 ```
 
@@ -193,4 +195,4 @@ Ogni nuovo modello deve essere documentato in:
 - [Best Practices Laravel](laraxot-conventions.md)
 - [Regole Migrazioni](migrations.md)
 
-*Ultimo aggiornamento: giugno 2025*
+*Ultimo aggiornamento: giugno 2025* 

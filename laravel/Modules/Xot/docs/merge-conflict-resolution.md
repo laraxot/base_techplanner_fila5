@@ -1,4 +1,6 @@
 # Risoluzione Merge Conflicts Massivi - 2025-11-04
+# Risoluzione Merge Conflicts Massivi - [DATE]
+>>>>>>> .merge_file_BNWeTl
 
 ## 🔥 Problema Iniziale
 

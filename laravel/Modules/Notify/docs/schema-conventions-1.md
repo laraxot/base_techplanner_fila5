@@ -84,4 +84,9 @@ Here's a complete example of a properly formatted schema:
 
 ```
 
+<<<<<<< .merge_file_pta6A2
 ---
+=======
+---
+```
+>>>>>>> .merge_file_oStJPS

@@ -1,3 +1,12 @@
+---
+title: "Guida Migrazione Step-by-Step: Modulo Notify - Filament 4"
+module: notify
+type: integration
+tags: [integrations, modules, notify]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Guida Migrazione Step-by-Step: Modulo Notify - Filament 4
 
 ## Panoramica Migrazione

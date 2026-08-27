@@ -334,4 +334,17 @@ NotificationService::broadcast(new SystemMaintenance(
 
 **Ultimo Aggiornamento**: 2026-01-23  
 **Versione**: v2.3.0-beta  
+<<<<<<< .merge_file_7WZ59P
 **Stato**: Production Ready with AI Enhancement Roadmap
+=======
+**Stato**: Production Ready with AI Enhancement Roadmap
+
+
+---
+
+## Contenuto assorbito da `MODULE_ANALYSIS.md`
+
+# Documento unificato
+
+Questo file era un duplicato esatto che differiva solo per maiuscole/minuscole, in violazione della regola no-case-only-variations. Il contenuto canonico si trova in [module_analysis.md](./module_analysis.md).
+>>>>>>> .merge_file_AIw9Ao

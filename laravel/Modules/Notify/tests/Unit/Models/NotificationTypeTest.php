@@ -7,25 +7,25 @@ namespace Modules\Notify\Tests\Unit\Models;
 use Modules\Notify\Database\Factories\NotificationTypeFactory;
 use Modules\Notify\Models\NotificationType;
 use Modules\Notify\Tests\TestCase;
+use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
-use function Pest\Laravel\get;
 
-uses(\Modules\Notify\Tests\TestCase::class);
+uses(TestCase::class)->group('notify-db');
 
 beforeEach(function (): void {
-    /** @var \Modules\Notify\Tests\TestCase $this */
-$this->disableExceptionHandling();
+    /** @var TestCase $this */
+    $this->disableExceptionHandling();
 });
 
 describe('Notification Type', function (): void {
     test('_can_create_notification_type', function (): void {
-        /** @var \Modules\Notify\Tests\TestCase $this */
-$notificationType = NotificationTypeFactory::new()->createOne([
+        /** @var TestCase $this */
+        $notificationType = NotificationTypeFactory::new()->createOne([
             'name' => 'Email Notification',
             'description' => 'Email notification type for sending emails',
             'template' => 'email_template_1',
         ]);
-        \assertNotifyTableHas('notification_types', [
+        XotBasePest::assertTableHas('notify', 'notification_types', [
             'id' => $notificationType->id,
             'name' => 'Email Notification',
             'description' => 'Email notification type for sending emails',
@@ -36,7 +36,7 @@ $notificationType = NotificationTypeFactory::new()->createOne([
     });
 
     test('_has_correct_fillable_fields', function (): void {
-$notificationType = new NotificationType;
+        $notificationType = new NotificationType();
 
         $expectedFillable = [
             'name',
@@ -48,8 +48,8 @@ $notificationType = new NotificationType;
     });
 
     test('_can_update_notification_type', function (): void {
-        /** @var \Modules\Notify\Tests\TestCase $this */
-$notificationType = NotificationTypeFactory::new()->createOne([
+        /** @var TestCase $this */
+        $notificationType = NotificationTypeFactory::new()->createOne([
             'name' => 'Original Name',
             'description' => 'Original description',
             'template' => 'original_template',
@@ -60,7 +60,7 @@ $notificationType = NotificationTypeFactory::new()->createOne([
             'description' => 'Updated description',
             'template' => 'updated_template',
         ]);
-        \assertNotifyTableHas('notification_types', [
+        XotBasePest::assertTableHas('notify', 'notification_types', [
             'id' => $notificationType->id,
             'name' => 'Updated Name',
             'description' => 'Updated description',
@@ -74,7 +74,7 @@ $notificationType = NotificationTypeFactory::new()->createOne([
     });
 
     test('_can_find_by_name', function (): void {
-$notificationType = NotificationTypeFactory::new()->createOne([
+        $notificationType = NotificationTypeFactory::new()->createOne([
             'name' => 'SMS Notification',
             'description' => 'SMS notification type',
             'template' => 'sms_template',
@@ -90,7 +90,7 @@ $notificationType = NotificationTypeFactory::new()->createOne([
     });
 
     test('_can_find_by_template', function (): void {
-NotificationTypeFactory::new()->createOne([
+        NotificationTypeFactory::new()->createOne([
             'name' => 'Email Type 1',
             'description' => 'First email template',
             'template' => 'email_template_1',
@@ -107,12 +107,12 @@ NotificationTypeFactory::new()->createOne([
 
         Assert::assertCount(1, $template1Types);
         Assert::assertCount(1, $template2Types);
-        Assert::assertEquals('email_template_1', \assertFirstModel($template1Types, \Modules\Notify\Models\NotificationType::class)->template);
-        Assert::assertEquals('email_template_2', \assertFirstModel($template2Types, \Modules\Notify\Models\NotificationType::class)->template);
+        Assert::assertEquals('email_template_1', XotBasePest::assertFirstModel($template1Types, NotificationType::class)->template);
+        Assert::assertEquals('email_template_2', XotBasePest::assertFirstModel($template2Types, NotificationType::class)->template);
     });
 
     test('_can_find_by_description_pattern', function (): void {
-NotificationTypeFactory::new()->createOne([
+        NotificationTypeFactory::new()->createOne([
             'name' => 'Email Type',
             'description' => 'Email notification type for users',
             'template' => 'email_template',
@@ -135,16 +135,16 @@ NotificationTypeFactory::new()->createOne([
 
         Assert::assertCount(2, $userTypes);
         Assert::assertCount(1, $mobileTypes);
-        $firstUserType = \assertFirstModel($userTypes, NotificationType::class);
-        $secondUserType = \assertFirstModel($userTypes->slice(1), NotificationType::class);
-        $mobileType = \assertFirstModel($mobileTypes, NotificationType::class);
+        $firstUserType = XotBasePest::assertFirstModel($userTypes, NotificationType::class);
+        $secondUserType = XotBasePest::assertFirstModel($userTypes->slice(1), NotificationType::class);
+        $mobileType = XotBasePest::assertFirstModel($mobileTypes, NotificationType::class);
         Assert::assertStringContainsString('for users', (string) $firstUserType->description);
         Assert::assertStringContainsString('for users', (string) $secondUserType->description);
         Assert::assertStringContainsString('mobile', (string) $mobileType->description);
     });
 
     test('_can_handle_null_values', function (): void {
-$notificationType = NotificationTypeFactory::new()->createOne([
+        $notificationType = NotificationTypeFactory::new()->createOne([
             'name' => 'No Description Type',
             'description' => null,
             'template' => null,
@@ -152,7 +152,7 @@ $notificationType = NotificationTypeFactory::new()->createOne([
 
         Assert::assertNull($notificationType->description);
         Assert::assertNull($notificationType->template);
-        \assertNotifyTableHas('notification_types', [
+        XotBasePest::assertTableHas('notify', 'notification_types', [
             'id' => $notificationType->id,
             'description' => null,
             'template' => null,
@@ -160,7 +160,7 @@ $notificationType = NotificationTypeFactory::new()->createOne([
     });
 
     test('_can_create_multiple_types', function (): void {
-$types = [
+        $types = [
             ['name' => 'Email', 'description' => 'Email notifications', 'template' => 'email'],
             ['name' => 'SMS', 'description' => 'SMS notifications', 'template' => 'sms'],
             ['name' => 'Push', 'description' => 'Push notifications', 'template' => 'push'],
@@ -190,7 +190,7 @@ $types = [
     });
 
     test('_can_find_by_multiple_criteria', function (): void {
-NotificationTypeFactory::new()->createOne([
+        NotificationTypeFactory::new()->createOne([
             'name' => 'High Priority Email',
             'description' => 'High priority email notifications',
             'template' => 'high_priority_email',
@@ -213,8 +213,8 @@ NotificationTypeFactory::new()->createOne([
             ->get();
 
         Assert::assertCount(1, $highPriorityEmailTypes);
-        Assert::assertEquals('High Priority Email', \assertFirstModel($highPriorityEmailTypes, \Modules\Notify\Models\NotificationType::class)->name);
-        Assert::assertEquals('High priority email notifications', \assertFirstModel($highPriorityEmailTypes, \Modules\Notify\Models\NotificationType::class)->description);
-        Assert::assertEquals('high_priority_email', \assertFirstModel($highPriorityEmailTypes, \Modules\Notify\Models\NotificationType::class)->template);
+        Assert::assertEquals('High Priority Email', XotBasePest::assertFirstModel($highPriorityEmailTypes, NotificationType::class)->name);
+        Assert::assertEquals('High priority email notifications', XotBasePest::assertFirstModel($highPriorityEmailTypes, NotificationType::class)->description);
+        Assert::assertEquals('high_priority_email', XotBasePest::assertFirstModel($highPriorityEmailTypes, NotificationType::class)->template);
     });
 });

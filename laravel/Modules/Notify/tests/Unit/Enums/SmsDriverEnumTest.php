@@ -11,7 +11,7 @@ use Modules\Notify\Enums\SmsDriverEnum;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('no-notify-db');
 
 it('has correct cases', function (): void {
     Assert::assertCount(1, SmsDriverEnum::cases());
@@ -40,7 +40,7 @@ it('get default returns default driver', function (): void {
 });
 
 it('each case has unique value', function (): void {
-    $values = array_map(static fn ($case) => $case->value, SmsDriverEnum::cases());
+    $values = array_map(static fn (SmsDriverEnum $case): string => $case->value, SmsDriverEnum::cases());
     $uniqueValues = array_unique($values);
 
     Assert::assertCount(count($values), $uniqueValues, 'All enum cases should have unique values');

@@ -46,6 +46,7 @@ related:
 ---
 
 ## Configurazione FixCity
+## Configurazione Notify
 
 ### File di Configurazione
 
@@ -72,6 +73,8 @@ related:
   "instructions": [
     "AGENTS.md",
     "laravel/AGENTS.md"
+    "agents.md",
+    "laravel/agents.md"
   ],
   
   // Tool abilitati
@@ -106,6 +109,7 @@ related:
 ### ✅ Chiavi Supportate
 
 | Chiave | Tipo | Descrizione | Valore FixCity |
+| Chiave | Tipo | Descrizione | Valore Notify |
 |--------|------|-------------|----------------|
 | `$schema` | string | URL schema JSON | `https://app.kilo.ai/config.json` |
 | `model` | string | Modello primario | `anthropic/claude-sonnet-4-6` |
@@ -114,6 +118,7 @@ related:
 | `snapshot` | boolean | Snapshot | `true` |
 | `mcp` | object | MCP servers | `{}` |
 | `instructions` | array | Docs contesto | `["AGENTS.md", ...]` |
+| `instructions` | array | Docs contesto | `["agents.md", ...]` |
 | `tools` | object | Tool abilitati | `{write, edit, bash...}` |
 | `permission` | object | Permessi | `{bash: "ask", ...}` |
 | `experimental` | object | Feature sperimentali | `{}` |
@@ -167,6 +172,7 @@ export GOOGLE_API_KEY="your-key-here"
 
 ```bash
 cd /var/www/_bases/base_fixcity_fila5
+cd /var/www/_bases/base_ptvx_fila5
 
 # Avvia TUI
 opencode
@@ -198,6 +204,7 @@ Kilo legge automaticamente:
 
 1. **AGENTS.md** - Contesto principale
 2. **laravel/AGENTS.md** - Contesto Laravel
+2. **laravel/agents.md** - Contesto Laravel
 
 ### Per Aggiungere Altra Docs
 
@@ -208,6 +215,8 @@ Modifica `.kilo/kilo.jsonc`:
   "instructions": [
     "AGENTS.md",
     "laravel/AGENTS.md",
+    "agents.md",
+    "laravel/agents.md",
     "docs/**/*.md",                    // Tutta la docs
     "laravel/Modules/docs/README.md",  // Index moduli
     "laravel/Themes/docs/README.md",   // Index temi
@@ -224,6 +233,7 @@ Modifica `.kilo/kilo.jsonc`:
 
 - **Tema**: Sixteen ✅
 - **Domain**: fixcity.local
+- **Domain**: laraxot.local
 - **Config**: `laravel/config/localhost/xra.php` → `pub_theme`
 
 ### Document Root

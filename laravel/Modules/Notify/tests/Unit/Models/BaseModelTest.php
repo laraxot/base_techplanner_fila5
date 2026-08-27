@@ -9,10 +9,10 @@ use Modules\Notify\Models\BaseModel;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Notify\Tests\TestCase::class);
+uses(TestCase::class)->group('no-notify-db');
 
 test('base model extends eloquent model', function () {
-        $baseModel = new class extends BaseModel
+    $baseModel = new class() extends BaseModel
     {
         protected $table = 'test_notify_table';
     };
@@ -21,7 +21,7 @@ test('base model extends eloquent model', function () {
 });
 
 test('base model has correct table name', function () {
-        $baseModel = new class extends BaseModel
+    $baseModel = new class() extends BaseModel
     {
         protected $table = 'test_notify_table';
     };
@@ -30,7 +30,7 @@ test('base model has correct table name', function () {
 });
 
 test('base model can be instantiated', function () {
-        $baseModel = new class extends BaseModel
+    $baseModel = new class() extends BaseModel
     {
         protected $table = 'test_notify_table';
     };
@@ -39,7 +39,7 @@ test('base model can be instantiated', function () {
 });
 
 test('base model has proper inheritance chain', function () {
-        $baseModel = new class extends BaseModel
+    $baseModel = new class() extends BaseModel
     {
         protected $table = 'test_notify_table';
     };
@@ -49,7 +49,7 @@ test('base model has proper inheritance chain', function () {
 });
 
 test('base model has timestamps enabled', function () {
-        $baseModel = new class extends BaseModel
+    $baseModel = new class() extends BaseModel
     {
         protected $table = 'test_notify_table';
     };

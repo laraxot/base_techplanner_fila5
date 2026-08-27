@@ -18,9 +18,12 @@ class SendPushToDevicesAction
     use QueueableAction;
 
     /**
+     * Chiave = piattaforma rilevata dal token; valore = esito del batch, sia sul ramo
+     * riuscito sia su quello di eccezione.
+     *
      * @param  list<string>  $tokens
      * @param  array<string, mixed>  $data
-     * @return array<string, array<string, mixed>>
+     * @return array<string, array{success: bool, sent: int, failed: int, ...}>
      */
     public function execute(array $tokens, PushNotificationData $notification, array $data = []): array
     {
@@ -54,7 +57,7 @@ class SendPushToDevicesAction
     /**
      * @param  list<string>  $tokens
      * @param  array<string, mixed>  $data
-     * @return array<string, mixed>
+     * @return array{success: bool, sent: int, failed: int, total: int, results: list<array{success: bool, ...}>}
      */
     private function sendBatchToPlatform(string $platform, array $tokens, PushNotificationData $notification, array $data): array
     {

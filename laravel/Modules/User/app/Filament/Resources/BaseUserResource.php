@@ -10,8 +10,8 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources;
 
 use Carbon\CarbonInterface;
-use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\TextInput;
+use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Section;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Hash;
@@ -39,8 +39,11 @@ abstract class BaseUserResource extends XotBaseResource
     //    static::$extendFormCallback = $callback;
     // }
 
-    #[\Override]
-    public static function getFormSchema(): array
+    // #[\Override]
+    /**
+     * @return array<string, mixed>
+     */
+    public static function getFormSchemaOld(): array
     {
         return [
             'section01' => Section::make([
@@ -58,8 +61,8 @@ abstract class BaseUserResource extends XotBaseResource
                     ->required(fn ($livewire) => $livewire instanceof CreateUser),
             ])->columnSpan(8),
             'section02' => Section::make([
-                'created_at' => Placeholder::make('created_at')->content(static function ($record) {
-                    if (null === $record || ! $record instanceof Model) {
+                'created_at' => TextEntry::make('created_at')->html()->state(static function ($record) {
+                    if ($record === null || ! $record instanceof Model) {
                         return new HtmlString('&mdash;');
                     }
 

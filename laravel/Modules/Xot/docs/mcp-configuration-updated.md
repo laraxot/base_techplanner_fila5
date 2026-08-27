@@ -37,6 +37,8 @@ The Xot module's MCP configuration enables AI assistants to interact with:
     "filesystem": {
       "command": "npx",
       "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_<nome progetto>/laravel"],
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_laravelpizza/laravel"],
+>>>>>>> .merge_file_wkOhJN
       "description": "Access to Xot module files"
     },
     "database": {
@@ -44,6 +46,8 @@ The Xot module's MCP configuration enables AI assistants to interact with:
       "args": ["-y", "@bytebase/dbhub"],
       "env": {
         "DATABASE_URL": "sqlite:///var/www/_bases/base_<nome progetto>/laravel/database/database.sqlite"
+        "DATABASE_URL": "sqlite:///var/www/_bases/base_laravelpizza/laravel/database/database.sqlite"
+>>>>>>> .merge_file_wkOhJN
       },
       "description": "SQLite database queries"
     }
@@ -60,6 +64,8 @@ The Xot module's MCP configuration enables AI assistants to interact with:
 ```bash
 # Create task for Xot improvements
 "Create task in '<nome progetto> - Xot Module' project: 'Implement Filament v5 migration'"
+"Create task in 'LaravelPizza - Xot Module' project: 'Implement Filament v5 migration'"
+>>>>>>> .merge_file_wkOhJN
 
 # Track PHPStan compliance
 "Create task: 'Verify PHPStan Level 10 compliance for all base classes'"
@@ -118,6 +124,18 @@ The Xot module's MCP configuration enables AI assistants to interact with:
 
 ### Antigravity
 - **Config File**: `/var/www/_bases/base_<nome progetto>/laravel/.antigravity-mcp.json`
+
+- **Config File**: `/var/www/_bases/base_laravelpizza/laravel/.cursor-mcp.json`
+- **Servers**: Asana, ClickUp, Filesystem, Database
+
+### Windsurf
+- **Config File**: `/var/www/_bases/base_laravelpizza/laravel/.windsurf-mcp.json`
+- **Servers**: Asana, ClickUp, Filesystem, Database
+
+### Antigravity
+- **Config File**: `/var/www/_bases/base_laravelpizza/laravel/.antigravity-mcp.json`
+
+>>>>>>> .merge_file_wkOhJN
 - **Servers**: Asana, ClickUp, Filesystem, Database
 
 ---
@@ -137,6 +155,10 @@ The Xot module's MCP configuration enables AI assistants to interact with:
 - [Asana MCP Configuration](../../../../docs/mcp-asana-configuration.md)
 - [ClickUp MCP Configuration](../../../../docs/mcp-clickup-configuration.md)
 - [Redmine MCP Configuration](../../../../docs/mcp-redmine-configuration.md)
+- [Asana MCP Configuration](../../../docs/mcp-asana-configuration.md)
+- [ClickUp MCP Configuration](../../../docs/mcp-clickup-configuration.md)
+- [Redmine MCP Configuration](../../../docs/mcp-redmine-configuration.md)
+>>>>>>> .merge_file_wkOhJN
 - [Xot Module Roadmap](./roadmap-[date].md)
 
 ---
@@ -152,3 +174,6 @@ The Xot module's MCP configuration enables AI assistants to interact with:
 **Module**: Xot (Foundation)
 **MCP Version**: 2.0.0
 **Last Review**: 31 Gennaio 2026
+=======
+**Last Review**: 31 Gennaio 2026
+>>>>>>> .merge_file_D4FsyK

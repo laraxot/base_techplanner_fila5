@@ -101,7 +101,11 @@ Verificare che:
 - [Root Conflict Resolution Guidelines](../../../project_docs/conflict-resolution-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
+<<<<<<< .merge_file_oTewOV
 - [Notify Module Documentation](readme.md)
+=======
+- [Notify Module Documentation](README.md)
+>>>>>>> .merge_file_docmx5
 - [RecordNotification Implementation](notifications/record_notification.md)
 - [SpatieEmail Integration](spatie-email-usage-guide-1.md)
 - [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)

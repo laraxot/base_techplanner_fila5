@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Enums;
+
 use Filament\Forms\Components\TextInput;
 use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasIcon;
@@ -11,7 +12,7 @@ use Modules\Notify\Enums\ContactTypeEnum;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Notify\Tests\TestCase::class);
+uses(TestCase::class)->group('no-notify-db');
 
 it('has correct cases', function (): void {
     Assert::assertCount(6, ContactTypeEnum::cases());

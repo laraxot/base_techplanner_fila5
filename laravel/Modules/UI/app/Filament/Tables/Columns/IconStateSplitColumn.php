@@ -33,8 +33,8 @@ final class IconStateSplitColumn extends XotBaseColumn
     /**
      * Configure the state class and model class for this column.
      *
-     * @param string $stateClass The state machine class (e.g., AppointmentState::class)
-     * @param string $modelClass The model class (e.g., Appointment::class)
+     * @param  string  $stateClass  The state machine class (e.g., AppointmentState::class)
+     * @param  string  $modelClass  The model class (e.g., Appointment::class)
      */
     public function stateClass(string $stateClass, string $modelClass): static
     {
@@ -129,7 +129,7 @@ final class IconStateSplitColumn extends XotBaseColumn
     #[On('table-action')]
     public function handleTableAction(string $action, int|string $recordId): void
     {
-        if ('prova' === $action) {
+        if ($action === 'prova') {
             $this->prova($recordId);
         }
     }
@@ -174,10 +174,13 @@ final class IconStateSplitColumn extends XotBaseColumn
         return [];
     }
 
-    private function getStateInstance(mixed $stateClassItem, mixed $record): ?StateContract
+    /**
+     * @param  array<array-key, mixed>|Model|null  $record
+     */
+    private function getStateInstance(string $stateClassItem, Model|array|null $record): ?StateContract
     {
         try {
-            if (! \is_string($stateClassItem) || ! class_exists($stateClassItem)) {
+            if (! class_exists($stateClassItem)) {
                 return null;
             }
 
@@ -221,14 +224,14 @@ final class IconStateSplitColumn extends XotBaseColumn
     }
 
     /**
-     * @param array{class: StateContract, icon: string, label: string, color: string, tooltip: string} $stateData
+     * @param  array{class: StateContract, icon: string, label: string, color: string, tooltip: string}  $stateData
      */
     private function getTransitionAction(string $stateKey, array $stateData): ?Action
     {
         $record = $this->getRecord();
         $recordIdRaw = \is_object($record) && isset($record->id) ? $record->id : null;
 
-        if (null === $recordIdRaw || (! \is_int($recordIdRaw) && ! \is_string($recordIdRaw))) {
+        if ($recordIdRaw === null || (! \is_int($recordIdRaw) && ! \is_string($recordIdRaw))) {
             return null;
         }
 

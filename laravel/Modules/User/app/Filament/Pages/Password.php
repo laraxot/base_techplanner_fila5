@@ -45,8 +45,7 @@ class Password extends XotBasePage
     /**
      * Definisce la struttura dello schema.
      *
-     * @param Schema $schema Lo schema da configurare
-     *
+     * @param  Schema  $schema  Lo schema da configurare
      * @return Schema Lo schema configurato
      */
     public function schema(Schema $schema): Schema
@@ -90,8 +89,6 @@ class Password extends XotBasePage
 
             // $this->handleRecordUpdate($this->getUser(), $data);
         } catch (Halt $exception) {
-            dddx($exception->getMessage());
-
             return;
         }
         Notification::make()
@@ -126,9 +123,8 @@ class Password extends XotBasePage
     /**
      * Gestisce l'aggiornamento del record.
      *
-     * @param Model                $record Il record da aggiornare
-     * @param array<string, mixed> $data   I dati per l'aggiornamento
-     *
+     * @param  Model  $record  Il record da aggiornare
+     * @param  array<string, mixed>  $data  I dati per l'aggiornamento
      * @return Model Il record aggiornato
      */
     protected function handleRecordUpdate(Model $record, array $data): Model

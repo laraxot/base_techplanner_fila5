@@ -1,3 +1,12 @@
+---
+title: "Analisi collezione Tailwind CSS (Webcrunch)"
+module: notify
+type: integration
+tags: [integrations, modules, notify]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Analisi collezione Tailwind CSS (Webcrunch)
 
 Documento di sintesi e approfondimento per le risorse Tailwind CSS elencate in:

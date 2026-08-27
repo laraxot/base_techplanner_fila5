@@ -51,6 +51,8 @@ userfactory.php              → ELIMINA
 - `CHANGELOG.md`, `LICENSE`, `CONTRIBUTING.md` - Uppercase per visibilità
 
 ## 🗑️ Cleanup Effettuato (2025-11-04)
+## 🗑️ Cleanup Effettuato ([DATE])
+>>>>>>> .merge_file_nnC9WM
 
 ### Modulo Xot (6 file)
 ```bash
@@ -254,6 +256,16 @@ Ogni modulo interessato ha documentazione dettagliata:
 - [Tenant Module](../../Tenant/docs/case-sensitivity-rules.md)
 - [User Module](../../User/docs/case-sensitivity-rules.md)
 
+- [Gdpr Module](../../gdpr/docs/case-sensitivity-rules.md)
+- [Lang Module](../../lang/docs/case-sensitivity-rules.md)
+- [Media Module](../../media/docs/case-sensitivity-rules.md)
+- [Notify Module](../../notify/docs/case-sensitivity-rules.md)
+- [Rating Module](../../rating/docs/case-sensitivity-rules.md)
+- [Tenant Module](../../tenant/docs/case-sensitivity-rules.md)
+- [User Module](../../user/docs/case-sensitivity-rules.md)
+
+>>>>>>> .merge_file_nnC9WM
+
 ## 🔧 Prevenzione
 
 ### Checklist per Nuovi File
@@ -311,6 +323,8 @@ python3 /path/to/check_duplicates.py
 - [Modulo Xot Architecture](./architecture.md)
 - [Bashscripts Location Policy](./bashscripts-location-policy.md)
 - [CLAUDE.md - Project Guidelines](CLAUDE.md)
+- [CLAUDE.md - Project Guidelines](claude.md)
+>>>>>>> .merge_file_nnC9WM
 
 ## 🎯 Conclusioni
 
@@ -337,5 +351,7 @@ Questa non è solo una regola tecnica, è una **filosofia di sviluppo**:
 ---
 
 **Ultimo aggiornamento**: 2025-11-04
+**Ultimo aggiornamento**: [DATE]
+>>>>>>> .merge_file_nnC9WM
 **Status**: ✅ Cleanup completato, enforcement attivo
 **Revisione**: Trimestrale (ogni 3 mesi)

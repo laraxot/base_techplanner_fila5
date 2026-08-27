@@ -15,8 +15,11 @@ class SendPushToAllUsersAction
     use QueueableAction;
 
     /**
+     * Due forme distinte: lo scarto senza token, e la mappa per piattaforma di
+     * `SendPushToDevicesAction::execute()`.
+     *
      * @param  array<string, mixed>  $data
-     * @return array<string, mixed>
+     * @return array{success: bool, message: string}|array<string, array{success: bool, sent: int, failed: int, ...}>
      */
     public function execute(PushNotificationData $notification, array $data = []): array
     {

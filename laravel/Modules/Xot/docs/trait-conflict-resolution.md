@@ -89,4 +89,6 @@ Dopo la modifica, verifica con:
 ---
 
 *Risolto: 2025-01-10*
+*Risolto: [DATE]*
+>>>>>>> .merge_file_Mqf6wQ
 *Architecture Version: XotBase 2.1*

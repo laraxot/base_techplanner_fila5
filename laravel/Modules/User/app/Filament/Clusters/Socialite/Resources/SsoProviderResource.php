@@ -8,7 +8,6 @@ use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
-use Filament\Forms\Components\Field;
 use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
@@ -31,10 +30,13 @@ class SsoProviderResource extends XotBaseResource
     protected static ?string $model = SsoProvider::class;
 
     /**
-     * @return array<string, Field>
+     * @return array<string, mixed>
      */
-    #[\Override]
-    public static function getFormSchema(): array
+    // #[\Override]
+    /**
+     * @return array<string, mixed>
+     */
+    public static function getFormSchemaOld(): array
     {
         return [
             'name' => TextInput::make('name')

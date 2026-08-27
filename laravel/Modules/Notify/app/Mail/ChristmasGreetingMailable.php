@@ -24,14 +24,16 @@ class ChristmasGreetingMailable extends Mailable
     public function __construct(
         public string $recipientName = 'Cliente Valutato',
         public string $senderName = 'Il Team del nostro Studio',
-    ) {
-    }
+    ) {}
 
     /**
      * Get the message envelope.
      */
     public function envelope(): Envelope
     {
+        $fromAddress = config('mail.from.address', 'hello@example.com');
+        $fromAddress = is_string($fromAddress) ? $fromAddress : 'hello@example.com';
+
         return new Envelope(
             from: new Address((string) config('mail.from.address', 'hello@example.com'), $this->senderName),
             subject: 'Auguri di Buone Feste e Informazioni Importanti!',

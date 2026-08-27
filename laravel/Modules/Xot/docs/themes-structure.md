@@ -229,3 +229,5 @@ resources/views/
 ## Collegamenti tra versioni di themes-structure.md
 * [themes-structure.md](docs/tecnico/themes-structure.md)
 * [themes-structure.md](../../../Xot/docs/themes-structure.md)
+* [themes-structure.md](../../../xot/docs/themes-structure.md)
+>>>>>>> .merge_file_fhJPRi

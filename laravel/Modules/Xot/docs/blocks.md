@@ -107,3 +107,12 @@ Ogni blocco deve seguire questa struttura:
 * [blocks.md](../../../Cms/docs/blocks.md)
 * [blocks.md](../../../../Themes/One/docs/blocks.md)
 * [blocks.md](../../../../Themes/One/docs/components/blocks.md)
+
+* [blocks.md](../../../xot/docs/blocks.md)
+* [blocks.md](../../../user/docs/blocks.md)
+* [blocks.md](../../../ui/docs/blocks.md)
+* [blocks.md](../../../cms/docs/blocks.md)
+* [blocks.md](../../../../themes/one/docs/blocks.md)
+* [blocks.md](../../../../themes/one/docs/components/blocks.md)
+
+>>>>>>> .merge_file_D1E2RY

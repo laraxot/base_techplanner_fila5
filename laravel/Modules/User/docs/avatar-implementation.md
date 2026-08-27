@@ -5,8 +5,8 @@ tags: [avatar, implementation]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "avatar-implementation implementazione degli avatar"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+issues: ["https://github.com/provtv/<nome repository>/issues/124"]
+discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -21,7 +21,7 @@ related:
 # Implementazione degli Avatar
 
 ## Collegamenti correlati
-- [README modulo User](./readme.md)
+- [README modulo User](./README.md)
 - [Implementazione Header con Selettore Lingua](/laravel/modules/user/docs/header-language-selector-with-flags.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
@@ -141,7 +141,7 @@ Il sistema di avatar può essere esteso in futuro per includere:
 # Implementazione degli Avatar
 
 ## Collegamenti correlati
-- [README modulo User](./readme.md)
+- [README modulo User](./README.md)
 - [Implementazione Header con Selettore Lingua](/laravel/modules/user/docs/header-language-selector-with-flags.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 

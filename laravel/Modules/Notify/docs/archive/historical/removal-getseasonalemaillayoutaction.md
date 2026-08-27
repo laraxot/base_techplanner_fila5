@@ -1,3 +1,12 @@
+---
+title: "Rimozione GetSeasonalEmailLayoutAction - Report Completo"
+module: notify
+type: integration
+tags: [integrations, modules, notify]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Rimozione GetSeasonalEmailLayoutAction - Report Completo
 
 **Data**: 19 Dicembre 2025  

@@ -22,7 +22,7 @@ class ExtraResource extends XotBaseResource
      * @return array<string, Component>
      */
     #[\Override]
-    public static function getFormSchema(): array
+    public static function getFormSchemaOld(): array
     {
         return [
             'id' => TextInput::make('id')->required()->maxLength(36),

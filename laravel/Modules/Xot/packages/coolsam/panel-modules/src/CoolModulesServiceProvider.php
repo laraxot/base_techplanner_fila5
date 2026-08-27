@@ -31,11 +31,11 @@ class CoolModulesServiceProvider extends PackageServiceProvider
         $package->name('cool-modules');
     }
 
-    public function register(): void
+    public function register()
     {
         $this->app->register(LaravelModulesServiceProvider::class);
 
-        $this->app->afterResolving('filament', function (): void {
+        $this->app->afterResolving('filament', function () {
             $panels = Filament::getPanels();
 
             foreach ($panels as $panel) {

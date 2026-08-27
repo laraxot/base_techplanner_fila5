@@ -82,3 +82,16 @@ Non è necessario applicare questa regola a:
 
 ## Collegamenti tra versioni di prompt_rules.md
 * [prompt_rules.md](../prompt_rules.md)
+
+- Documentazione dei prompt 
+
+## Collegamenti tra versioni di PROMPT_RULES.md
+* [PROMPT_RULES.md](../../../Xot/docs/PROMPT_RULES.md)
+* [PROMPT_RULES.md](../../../Xot/docs/rules/PROMPT_RULES.md)
+
+
+## Collegamenti tra versioni di prompt_rules.md
+* [prompt_rules.md](../prompt_rules.md)
+
+
+>>>>>>> .merge_file_09DuTw

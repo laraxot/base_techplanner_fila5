@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Tenant\Tests\Unit;
 
+use Mockery\MockInterface;
 use Modules\Tenant\Actions\Domains\GetDomainsArrayAction;
 use Modules\Tenant\Models\Domain;
 use Modules\Tenant\Tests\TestCase;
@@ -20,7 +21,7 @@ describe('Domain Model', function (): void {
     });
 
     test('_get_rows_method_works_correctly', function (): void {
-        $this->mockService(GetDomainsArrayAction::class, function ($mock): void {
+        $this->mockService(GetDomainsArrayAction::class, static function (MockInterface $mock): void {
             $mock->allows([
                 'execute' => [
                     ['id' => 1, 'name' => 'test-domain.com'],

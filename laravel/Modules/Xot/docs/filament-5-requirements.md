@@ -1,6 +1,8 @@
 # Filament 5.x Requirements & Configuration
 
 **Data Analisi**: 2026-01-30
+**Data Analisi**: [DATE]
+>>>>>>> .merge_file_DMGkfE
 **Versione Filament**: 5.1.1
 **Documentazione Upstream**: https://filamentphp.com/docs/5.x/introduction/installation
 
@@ -70,3 +72,10 @@ Chart.register(ChartDataLabels);  // ❌ NON funziona
 ---
 
 **Ultimo Aggiornamento**: 2026-01-30
+
+- [Chart Installation Guide](../../chart/docs/filament-5-installation-guide.md)
+
+---
+
+
+>>>>>>> .merge_file_DMGkfE

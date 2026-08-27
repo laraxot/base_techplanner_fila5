@@ -11,12 +11,11 @@ namespace Modules\Xot\Actions\Filament;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-
-use function Safe\file;
-
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\Finder\SplFileInfo as File;
 use Webmozart\Assert\Assert;
+
+use function Safe\file;
 
 class GenerateFormByFileAction
 {
@@ -25,8 +24,7 @@ class GenerateFormByFileAction
     /**
      * Genera un form Filament basato su un file di risorsa.
      *
-     * @param File $file Il file della risorsa Filament
-     *
+     * @param  File  $file  Il file della risorsa Filament
      * @return int Numero di input aggiunti
      */
     public function execute(File $file): int
@@ -87,7 +85,6 @@ class GenerateFormByFileAction
         Assert::string($file_name = $form_method->getFileName(), '['.__LINE__.']['.class_basename($this).']');
         // $contents= $file->getContents();
         $source = file($file_name);
-        Assert::isArray($source);
         $body = '';
         foreach (\array_slice($source, $start_line, $length) as $line) {
             $body .= SafeStringCastAction::cast($line);
@@ -100,7 +97,7 @@ class GenerateFormByFileAction
         $inputCount = 0;
         foreach ($fillable as $field) {
             if (in_array($field, $resourceMethods)) {
-                ++$inputCount;
+                $inputCount++;
             }
         }
 
@@ -110,28 +107,20 @@ class GenerateFormByFileAction
     /**
      * Mostra informazioni di debug su un file.
      *
-     * @param File $file Il file da analizzare
+     * @param  File  $file  Il file da analizzare
      */
     public function ddFile(File $file): void
     {
-        // Debug information - commented out for production
-        /*
-        dd([
-            'getRelativePath' => $file->getRelativePath(), // =  ""
-            'getRelativePathname' => $file->getRelativePathname(), //  AssenzeResource.php
-            'getFilenameWithoutExtension' => $file->getFilenameWithoutExtension(), // AssenzeResource
-            // 'getContents' => $file->getContents(),
-            'getPath' => $file->getPath(),
-            'getFilename' => $file->getFilename(), // = AssenzeResource.php
-            'getExtension' => $file->getExtension(), // php
-            'getBasename' => $file->getBasename(), // AssenzeResource.php
-            'getPathname' => $file->getPathname(),
-            'isFile' => $file->isFile(), // true
-            'getRealPath' => $file->getRealPath(),
-            // 'getFileInfo' => $file->getFileInfo(),
-            // 'getPathInfo' => $file->getPathInfo(),
-            'methods' => get_class_methods($file),
-        ]);
-        */
+        // Debug probe: touch file metadata without dumping (story 5.26 — no dd()).
+        $file->getRelativePath();
+        $file->getRelativePathname();
+        $file->getFilenameWithoutExtension();
+        $file->getPath();
+        $file->getFilename();
+        $file->getExtension();
+        $file->getBasename();
+        $file->getPathname();
+        $file->isFile();
+        $file->getRealPath();
     }
 }

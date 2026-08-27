@@ -3,6 +3,13 @@
 ## 📊 Current Status
 
 **Analysis Date**: 2026-01-13  
+
+# Xot Module - PHPStan Level 10 Analysis
+
+## 📊 Current Status
+
+
+>>>>>>> .merge_file_uRJwNt
 **PHPStan Level**: 10  
 **Total Errors**: **0** ✅  
 **Command**: `./vendor/bin/phpstan analyse Modules/Xot --level=10`
@@ -36,6 +43,8 @@ bootstrapFiles:
 
 **Files Modified**:
 - [phpstan.neon](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/phpstan.neon)
+- [phpstan.neon](../../../phpstan.neon)
+>>>>>>> .merge_file_uRJwNt
 
 ---
 
@@ -57,6 +66,8 @@ public function withAccessToken(?\Laravel\Passport\Contracts\ScopeAuthorizable $
 
 **Files Modified**:
 - [PassportHasApiTokensContract.php](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/Xot/app/Contracts/PassportHasApiTokensContract.php)
+- [PassportHasApiTokensContract.php](../../../app/Contracts/PassportHasApiTokensContract.php)
+>>>>>>> .merge_file_uRJwNt
 
 **Rationale**: Both `Token` and `TransientToken` implement `ScopeAuthorizable`, so using the interface provides better compatibility and follows Liskov Substitution Principle.
 
@@ -78,6 +89,8 @@ public function withAccessToken(?\Laravel\Passport\Contracts\ScopeAuthorizable $
 
 **Files Modified**:
 - [BaseUser.php](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/User/app/Models/BaseUser.php)
+- [BaseUser.php](../../../User/app/Models/BaseUser.php)
+>>>>>>> .merge_file_uRJwNt
 
 ---
 
@@ -89,6 +102,8 @@ public function withAccessToken(?\Laravel\Passport\Contracts\ScopeAuthorizable $
 
 **Files Modified**:
 - [phpstan.neon](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/phpstan.neon)
+- [phpstan.neon](../../../phpstan.neon)
+>>>>>>> .merge_file_uRJwNt
 
 ---
 
@@ -130,11 +145,17 @@ These fixes impact **ALL modules** that depend on Xot:
 - [Passport Integration Guide](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/User/docs/passport.md)
 - [Passport Configuration](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/Tenant/docs/it/config/passport.md)
 - [Previous PHPStan Roadmap](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/Xot/docs/phpstan-errors-resolution-roadmap.md)
+- [Passport Integration Guide](../../../user/docs/passport.md)
+- [Passport Configuration](../../../tenant/docs/it/config/passport.md)
+- [Previous PHPStan Roadmap](./phpstan-errors-resolution-roadmap.md)
+>>>>>>> .merge_file_uRJwNt
 
 ## ✅ Verification
 
 ```bash
 cd /var/www/_bases/base_ptvx_fila4_mono/laravel
+cd ../../..
+>>>>>>> .merge_file_uRJwNt
 ./vendor/bin/phpstan analyse Modules/Xot --level=10
 
 # Output:

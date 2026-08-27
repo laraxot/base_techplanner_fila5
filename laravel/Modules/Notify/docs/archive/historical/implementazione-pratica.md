@@ -1,3 +1,12 @@
+---
+title: "Implementazione Pratica del Modulo Notify"
+module: notify
+type: integration
+tags: [integrations, modules, notify]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Implementazione Pratica del Modulo Notify
 
 ## 1. Setup Iniziale

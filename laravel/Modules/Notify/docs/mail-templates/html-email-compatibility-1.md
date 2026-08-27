@@ -22,7 +22,11 @@ related:
 
 ## Introduzione
 
+<<<<<<< .merge_file_NF4LSq
 Questo documento fornisce linee guida dettagliate per garantire la massima compatibilità dei template email utilizzati nel modulo Notify di Quaeris con i diversi client email.
+=======
+Questo documento fornisce linee guida dettagliate per garantire la massima compatibilità dei template email utilizzati nel modulo Notify di App con i diversi client email.
+>>>>>>> .merge_file_4wUKJx
 
 ## Compatibilità Client Email
 

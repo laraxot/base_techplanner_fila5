@@ -286,3 +286,6 @@ return [
 ## Collegamenti tra versioni di config.md
 * [config.md](../../../Xot/docs/config.md)
 * [config.md](../../../../Themes/One/docs/config.md)
+* [config.md](../../../xot/docs/config.md)
+* [config.md](../../../../themes/one/docs/config.md)
+>>>>>>> .merge_file_0UcZId

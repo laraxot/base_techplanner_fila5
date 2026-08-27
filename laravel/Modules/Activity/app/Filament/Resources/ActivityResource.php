@@ -13,7 +13,6 @@ namespace Modules\Activity\Filament\Resources;
 
 use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\TextInput;
-use Filament\Schemas\Components\Component;
 use Modules\Activity\Models\Activity;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Override;
@@ -31,9 +30,9 @@ class ActivityResource extends XotBaseResource
     /**
      * Define the form schema for the Activity resource.
      *
-     * @return array<string, Component>
+     * @return array<string, mixed>
      */
-    #[Override]
+    // #[Override]
     public static function getFormSchema(): array
     {
         return [

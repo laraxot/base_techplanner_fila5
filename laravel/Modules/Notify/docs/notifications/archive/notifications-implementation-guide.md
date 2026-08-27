@@ -16,7 +16,11 @@ related:
   - "./telegram-notifications-guide.md"
 ---
 
+<<<<<<< .merge_file_DbFltU
 # Guida all'Implementazione delle Notifiche 
+=======
+# Guida all'Implementazione delle Notifiche
+>>>>>>> .merge_file_bWCLy6
 
 Questa documentazione descrive come implementare correttamente le notifiche utilizzando Laravel Notifications nel modulo Notify.
 
@@ -36,10 +40,17 @@ use Illuminate\Database\Eloquent\Model;
 class RecordNotification extends Notification implements ShouldQueue
 {
     use Queueable;
+<<<<<<< .merge_file_DbFltU
     
     protected Model $record;
     protected string $templateSlug;
     
+=======
+
+    protected Model $record;
+    protected string $templateSlug;
+
+>>>>>>> .merge_file_bWCLy6
     /**
      * Create a new notification instance.
      */
@@ -48,7 +59,11 @@ class RecordNotification extends Notification implements ShouldQueue
         $this->record = $record;
         $this->templateSlug = $templateSlug;
     }
+<<<<<<< .merge_file_DbFltU
     
+=======
+
+>>>>>>> .merge_file_bWCLy6
     /**
      * Get the notification's delivery channels.
      */
@@ -56,14 +71,22 @@ class RecordNotification extends Notification implements ShouldQueue
     {
         return ['mail'];
     }
+<<<<<<< .merge_file_DbFltU
     
+=======
+
+>>>>>>> .merge_file_bWCLy6
     /**
      * Get the mail representation of the notification.
      */
     public function toMail(object $notifiable): MailMessage
     {
         return (new MailMessage)
+<<<<<<< .merge_file_DbFltU
             ->subject('Notifica da SaluteOra')
+=======
+            ->subject('Notifica da <nome progetto>')
+>>>>>>> .merge_file_bWCLy6
             ->greeting('Ciao ' . $this->record->name)
             ->line('Contenuto della notifica...')
             ->action('Visualizza', url('/'))
@@ -83,12 +106,20 @@ Per utilizzare la classe SpatieEmail all'interno di una notifica, implementa il 
 public function toMail(object $notifiable): \Illuminate\Mail\Mailable
 {
     $email = new SpatieEmail($this->record, $this->templateSlug);
+<<<<<<< .merge_file_DbFltU
     
+=======
+
+>>>>>>> .merge_file_bWCLy6
     // Aggiungi eventuali allegati
     if ($this->attachments) {
         $email->addAttachments($this->attachments);
     }
+<<<<<<< .merge_file_DbFltU
     
+=======
+
+>>>>>>> .merge_file_bWCLy6
     return $email;
 }
 ```
@@ -148,12 +179,20 @@ $user->notify($notification);
 public function toMail(object $notifiable): \Illuminate\Mail\Mailable
 {
     $email = new SpatieEmail($this->record, $this->templateSlug);
+<<<<<<< .merge_file_DbFltU
     
+=======
+
+>>>>>>> .merge_file_bWCLy6
     // Imposta esplicitamente il destinatario
     // Questo non è necessario se si usa $notifiable->routeNotificationFor('mail')
     // ma è una buona pratica per la chiarezza
     $email->to($notifiable->email);
+<<<<<<< .merge_file_DbFltU
     
+=======
+
+>>>>>>> .merge_file_bWCLy6
     return $email;
 }
 ```

@@ -2,10 +2,13 @@
 
 declare(strict_types=1);
 
+use Illuminate\Database\Eloquent\Model;
 use Modules\User\Filament\Widgets\EditUserWidget;
+use Modules\User\Tests\TestCase;
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 use PHPUnit\Framework\Assert;
 
-uses(Modules\User\Tests\TestCase::class);
+uses(TestCase::class)->group('no-user-db');
 
 describe('EditUserWidget', function (): void {
     test('edit user widget can be instantiated', function (): void {
@@ -17,18 +20,17 @@ describe('EditUserWidget', function (): void {
     test('edit user widget extends xot base widget', function (): void {
         $widget = new EditUserWidget();
 
-        Assert::assertInstanceOf(Modules\Xot\Filament\Widgets\XotBaseSchemaWidget::class, $widget);
+        Assert::assertInstanceOf(XotBaseSchemaWidget::class, $widget);
     });
 
-    test('edit user widget has type property', function (): void {
+    test('edit user widget defaults type resource and model properties', function (): void {
         $widget = new EditUserWidget();
-    });
+        $ref = new ReflectionClass($widget);
 
-    test('edit user widget has resource property', function (): void {
-        $widget = new EditUserWidget();
-    });
-
-    test('edit user widget has model property', function (): void {
-        $widget = new EditUserWidget();
+        Assert::assertTrue($ref->hasProperty('type'));
+        Assert::assertTrue($ref->hasProperty('resource'));
+        Assert::assertTrue($ref->hasProperty('model'));
+        Assert::assertSame('', $widget->type);
+        Assert::assertSame(Model::class, $widget->model);
     });
 });

@@ -13,7 +13,7 @@ use Modules\Notify\Notifications\RecordNotification;
 use Modules\Notify\Tests\TestCase;
 use Modules\Xot\Actions\Cast\SafeEloquentCastAction;
 
-uses(\Modules\Notify\Tests\TestCase::class);
+uses(TestCase::class)->group('no-notify-db');
 
 /**
  * @param  array<string, mixed>  $attributes
@@ -35,7 +35,7 @@ function makeDummyRecordForNotify(array $attributes = []): Model
 }
 
 test('send record notification routes valid mail channel', function () {
-    app()->instance(SafeEloquentCastAction::class, new class
+    app()->instance(SafeEloquentCastAction::class, new class()
     {
         public function getStringAttribute(Model $record, string $attribute, string $default = ''): string
         {

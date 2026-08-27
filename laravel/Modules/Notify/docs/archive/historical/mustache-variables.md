@@ -1,3 +1,12 @@
+---
+title: "Mustache Variables - SpatieEmail Template System"
+module: notify
+type: integration
+tags: [integrations, modules, notify]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Mustache Variables - SpatieEmail Template System
 
 **Date**: 2025-12-19  

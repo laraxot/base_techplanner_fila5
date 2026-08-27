@@ -61,8 +61,7 @@ class SendPushNotification extends XotBasePage
         /**
          * Callback per mappare i dispositivi in opzioni per il select.
          */
-        $callback = function ($item) {
-            /** @var mixed $item */
+        $callback = static function (mixed $item): array {
             if (! is_object($item)) {
                 return [];
             }
@@ -72,7 +71,8 @@ class SendPushNotification extends XotBasePage
             if (! is_object($profile)) {
                 return [];
             }
-            $fullName = (string) (data_get($profile, 'full_name') ?? 'Utente');
+            $fullNameRaw = data_get($profile, 'full_name');
+            $fullName = is_scalar($fullNameRaw) ? (string) $fullNameRaw : 'Utente';
 
             $tokenAttr = method_exists($item, 'getAttribute') ? $item->getAttribute('push_notifications_token') : null;
             $token = is_string($tokenAttr) ? $tokenAttr : '';
@@ -94,7 +94,7 @@ class SendPushNotification extends XotBasePage
         /**
          * Callback per filtrare i dispositivi.
          */
-        $filterCallback = function ($item): bool {
+        $filterCallback = static function (mixed $item): bool {
             if (! is_object($item)) {
                 return false;
             }
@@ -193,10 +193,7 @@ class SendPushNotification extends XotBasePage
 
             $messaging->send($message);
         } catch (Exception $e) {
-            dddx([
-                'message' => $e->getMessage(),
-                'deviceToken' => $deviceToken,
-            ]);
+            throw new \RuntimeException('Removed debug dddx');
         }
 
         Notification::make()
@@ -213,7 +210,7 @@ class SendPushNotification extends XotBasePage
         ];
     }
 
-    /** @return array<string, \Filament\Actions\Action> */
+    /** @return array<string, Action> */
     protected function getNotificationFormActions(): array
     {
         return [

@@ -1,6 +1,8 @@
 # Xot Module - Core Foundation
 
 **Last Update**: 2025-12-05
+**Last Update**: [DATE]
+>>>>>>> .merge_file_eowHdB
 **Status**: ✅ Production Ready
 **PHPStan Level**: 10
 **Maintainers**: Laraxot Team
@@ -634,6 +636,8 @@ Located in `bashscripts/`:
 ### Quality & Tools
 - [Code Quality Tools](./code-quality-tools.md) - PHPStan, Pint, PHPInsights
 - [Automation Scripts](./bashscripts/README.md) - Available automation scripts
+- [Automation Scripts](./bashscripts/readme.md) - Available automation scripts
+>>>>>>> .merge_file_eowHdB
 - [PHPStan Patterns](./phpstan-pattern-soluzioni.md) - Common PHPStan solutions
 
 ### Migration & Upgrade
@@ -652,6 +656,8 @@ Located in `bashscripts/`:
 ## 🔄 Recent Updates
 
 ### v3.0.0 - 2025-12-05
+### v3.0.0 - [DATE]
+>>>>>>> .merge_file_eowHdB
 - **Added**: Laravel 12 support
 - **Added**: Filament 4 support
 - **Added**: PHP 8.3 support
@@ -660,12 +666,19 @@ Located in `bashscripts/`:
 - **Fixed**: Git merge conflict resolution improvements
 
 ### v2.9.0 - 2025-11-18
+### v2.9.0 - [DATE]
+>>>>>>> .merge_file_eowHdB
 - **Added**: New XotBaseChartWidget
 - **Fixed**: HasXotTable duplicate if statements
 - **Fixed**: Mass syntax errors across modules
 - **Improved**: PHP Insights score (Code: 52.6%, Complexity: 93.1%)
 
 See [CHANGELOG.md](./CHANGELOG.md) for full history.
+See [CHANGELOG.md](./changelog.md) for full history.
+=======
+See [CHANGELOG.md](./CHANGELOG.md) for full history.
+>>>>>>> .merge_file_6gVKff
+>>>>>>> .merge_file_eowHdB
 
 ---
 
@@ -683,6 +696,8 @@ See [CHANGELOG.md](./CHANGELOG.md) for full history.
 - Advanced caching strategies
 
 See [ROADMAP.md](roadmap.md) for details.
+See [ROADMAP.md](./roadmap.md) for details.
+>>>>>>> .merge_file_eowHdB
 
 ---
 
@@ -698,6 +713,18 @@ See [ROADMAP.md](roadmap.md) for details.
 ### Project Documentation
 - [CLAUDE.md](../../../CLAUDE.md) - Project architecture and development rules
 - [Project README](../../../README.md) - Main project documentation
+
+- [User Module](../user/docs/readme.md) - User management and authentication
+- [UI Module](../ui/docs/readme.md) - UI components and design system
+- [Tenant Module](../tenant/docs/readme.md) - Multi-tenancy support
+- [Lang Module](../lang/docs/readme.md) - Translation and localization
+- [Geo Module](../geo/docs/readme.md) - Geographic data services
+
+### Project Documentation
+- [CLAUDE.md](../../../claude.md) - Project architecture and development rules
+- [Project README](../../../readme.md) - Main project documentation
+
+>>>>>>> .merge_file_eowHdB
 
 ### External Resources
 - [Laravel 12 Documentation](https://laravel.com/docs/12.x)
@@ -719,6 +746,8 @@ Contributions to the Xot module should follow strict guidelines as it's the foun
 4. Follow architectural patterns
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines.
+See [CONTRIBUTING.md](./contributing.md) for detailed guidelines.
+>>>>>>> .merge_file_eowHdB
 
 ---
 

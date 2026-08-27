@@ -6,6 +6,7 @@ use Modules\Geo\Database\Factories\ComuneFactory;
 use Modules\Geo\Database\Factories\RegionFactory;
 use Modules\Geo\Models\Comune;
 use Modules\Geo\Models\Region;
+use Modules\Geo\Tests\TestCase;
 
 /*
  * Bootstrap Pest — modulo Geo.
@@ -17,10 +18,10 @@ use Modules\Geo\Models\Region;
  * |--------------------------------------------------------------------------
  * | Functions
  * |--------------------------------------------------------------------------
- */
+*/
 
 /**
- * @param array<string, mixed> $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function createRegion(array $attributes = []): Region
 {
@@ -28,9 +29,11 @@ function createRegion(array $attributes = []): Region
 }
 
 /**
- * @param array<string, mixed> $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function createComune(array $attributes = []): Comune
 {
     return ComuneFactory::new()->createOne($attributes);
 }
+
+pest()->extend(TestCase::class)->in(__DIR__.'/Unit', __DIR__.'/Feature');

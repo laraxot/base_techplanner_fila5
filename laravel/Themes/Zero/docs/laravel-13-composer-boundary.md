@@ -6,7 +6,6 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "laravel 13 composer boundary for theme zero"
 related:
-  - "./00-INDEX.md"
   - "./00-index.md"
 ---
 
@@ -37,3 +36,6 @@ After Laravel 13 Composer resolution:
 
 - Theme architecture: [architecture.md](architecture.md)
 - Xot Composer strategy: [../../../laravel/Modules/Xot/docs/laravel-13-modular-composer-upgrade.md](../../../laravel/Modules/Xot/docs/laravel-13-modular-composer-upgrade.md)
+- Xot Composer strategy: [../../Modules/Xot/docs/laravel-13-modular-composer-upgrade.md](../../Modules/Xot/docs/laravel-13-modular-composer-upgrade.md)
+- Xot Composer strategy: [../../../laravel/Modules/Xot/docs/laravel-13-modular-composer-upgrade.md](../../../laravel/Modules/Xot/docs/laravel-13-modular-composer-upgrade.md)
+- Xot Composer strategy: [../../Modules/Xot/docs/laravel-13-modular-composer-upgrade.md](../../Modules/Xot/docs/laravel-13-modular-composer-upgrade.md)

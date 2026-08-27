@@ -466,6 +466,235 @@ class ModuleResource extends XotBaseResource
             Tables\Columns\IconColumn::make('is_active')
                 ->boolean()
                 ->sortable(),
+
+# Laraxot Philosophy - Complete Analysis
+
+## 🏛️ Architectural Religion
+
+### Core Tenets
+
+#### 1. **Single Source of Truth**
+- **Every entity has exactly one authoritative definition**
+- No duplicates, no ambiguity, no parallel realities
+- **Violation Example**: Having migrations in both `database/` and `app/Database/`
+- **Zen Principle**: One truth, many manifestations
+
+#### 2. **Consistency Over Flexibility**
+- **Predictable behavior > Unlimited options**
+- Same patterns across all modules, same file structures
+- **Violation Example**: Different test structures across modules
+- **Zen Principle**: Harmony through uniformity
+
+#### 3. **DRY/KISS Compliance**
+- **Eliminate redundancy, keep it simple**
+- No useless method overrides, no duplicate functionality
+- **Violation Example**: Replicating parent methods without added value
+- **Zen Principle**: Simplicity is the ultimate sophistication
+
+## 🏗️ Architectural Structure
+
+### Module Hierarchy
+```
+Xot (Core Engine)
+├── User (Authentication & Authorization)
+├── Quaeris (Core Business Logic - Surveys)
+├── Cms (Content Management)
+├── Media (File Management)
+├── Geo (Location Services)
+├── Activity (Event Sourcing)
+├── Notify (Notifications)
+├── Gdpr (Compliance)
+├── Job (Queue Management)
+├── Chart (Data Visualization)
+├── Lang (Translations)
+├── UI (Frontend Components)
+├── Tenant (Multi-tenancy)
+├── Limesurvey (External Integration)
+├── CloudStorage (Cloud Services)
+└── DbForge (Database Tools)
+```
+
+### Technology Stack
+- **PHP 8.3.27** - Modern PHP with strict typing
+- **Laravel 12.38.1** - Latest Laravel framework
+- **Filament 4.2.2** - Admin panel framework
+- **Livewire 3.6.4** - Reactive UI components
+- **MySQL** - Primary database
+- **TailwindCSS 3.4.17** - Utility-first CSS
+
+## 🧘‍♂️ Zen Principles
+
+### Model Inheritance Zen
+```php
+// ❌ WRONG - Direct Model extension (breaks harmony)
+class Team extends Model implements TeamContract { }
+
+// ✅ CORRECT - Extend module BaseModel (maintains harmony)
+class Team extends BaseTeam { }
+```
+
+### File Structure Zen
+```
+// ❌ WRONG - Mixed file structure (creates chaos)
+Modules/Cms/
+├── database/                    # Has files
+└── app/Database/               # Empty directories (confusion)
+
+// ✅ CORRECT - Single source of truth (creates harmony)
+Modules/Cms/
+├── database/                    # SINGLE SOURCE OF TRUTH
+│   ├── factories/
+│   ├── migrations/
+│   └── seeders/
+└── app/
+    ├── Models/
+    └── Filament/
+```
+
+### Translation Zen
+```php
+// ❌ WRONG - Hardcoded text (breaks translation harmony)
+TextInput::make('name')
+    ->label('Full Name')
+    ->placeholder('Enter your name');
+
+// ✅ CORRECT - Translation-first approach (maintains harmony)
+TextInput::make('name');
+// Auto-resolved from: resources/lang/{locale}/{module}::{field}.label
+```
+
+## 📚 Political Structure
+
+### Power Distribution
+
+#### 1. **Xot Module (The Government)**
+- **Role**: Central authority, provides base classes and utilities
+- **Power**: All other modules depend on Xot
+- **Responsibility**: Maintain architectural consistency
+
+#### 2. **User Module (The Security Forces)**
+- **Role**: Authentication, authorization, user management
+- **Power**: Controls access to all resources
+- **Responsibility**: Security and permissions
+
+#### 3. **Quaeris Module (The Economy)**
+- **Role**: Core business logic, surveys, reporting
+- **Power**: Main revenue-generating functionality
+- **Responsibility**: Business operations
+
+#### 4. **Other Modules (The Ministries)**
+- **Role**: Specialized functionality
+- **Power**: Domain-specific operations
+- **Responsibility**: Maintain module-specific standards
+
+### Governance Rules
+
+#### 1. **No Direct Filament Extension**
+- **Rule**: Never extend Filament classes directly
+- **Reason**: Maintains backward compatibility and auto-discovery
+- **Correct**: Always extend `XotBaseResource`, `XotBasePage`, etc.
+
+#### 2. **Model Inheritance Hierarchy**
+```
+Illuminate\Database\Eloquent\Model
+    ↓
+Modules\Xot\Models\XotBaseModel
+    ↓
+Modules\{Module}\Models\BaseModel
+    ↓
+YourModel
+```
+
+#### 3. **Third-Party Package Integration**
+- **Rule**: Extend package models directly, not our BaseModel
+- **Reason**: Respect package architecture and functionality
+- **Example**: `Permission extends SpatiePermission`, not `BaseModel`
+
+## 🔄 Lifecycle Philosophy
+
+### Development Flow
+
+#### 1. **Analysis Phase**
+- Study existing patterns in well-structured modules
+- Understand the Laraxot philosophy deeply
+- Identify consistency violations
+
+#### 2. **Implementation Phase**
+- Follow established patterns religiously
+- Use auto-discovery features
+- Maintain single source of truth
+
+#### 3. **Quality Assurance Phase**
+- Run PHPStan Level 10 analysis
+- Use Laravel Pint for code formatting
+- Verify architectural compliance
+
+### Error Prevention
+
+#### 1. **Magic Properties Awareness**
+```php
+// ❌ WRONG - property_exists() doesn't work with magic properties
+if (property_exists($model, 'email')) { ... }
+
+// ✅ CORRECT - Use isset() for magic properties
+if (isset($model->email)) { ... }
+```
+
+#### 2. **Migration Consistency**
+- **Rule**: One create_table migration per table
+- **Reason**: Prevents migration order issues
+- **Tool**: Use `XotBaseMigration` for auto-discovery
+
+#### 3. **Test Structure Consistency**
+- **Rule**: Tests in traditional Laravel structure only
+- **Reason**: Predictable autoloader behavior
+- **Location**: `Modules/{Module}/tests/`
+
+## 🎯 Implementation Guidelines
+
+### Creating New Models
+```php
+namespace Modules\YourModule\Models;
+
+class YourModel extends BaseModel
+{
+    // Connection auto-discovered as 'yourmodule'
+    // No need to set $connection unless different
+
+    protected $fillable = ['field1', 'field2'];
+
+    // Only add casts NOT in parent
+    protected function casts(): array
+    {
+        return array_merge(parent::casts(), [
+            'your_custom_field' => 'datetime',
+        ]);
+    }
+}
+```
+
+### Creating Filament Resources
+```php
+namespace Modules\YourModule\Filament\Resources;
+
+class YourResource extends XotBaseResource
+{
+    // Model auto-resolved as Modules\YourModule\Models\YourResource
+    // Pages auto-discovered following pattern
+
+    public static function getFormSchema(): array
+    {
+        return [
+            // Form components - NO hardcoded labels
+        ];
+    }
+
+    public static function getInfolistSchema(): array
+    {
+        return [
+            // Infolist components
+
+>>>>>>> .merge_file_gqsTwA
         ];
     }
 }
@@ -2284,8 +2513,8 @@ laravel/Themes/Sixteen/dist/
 
 #### ❌ Percorsi Errati da Rimuovere
 ```
-F:\var\www\fixcity\Modules\              # ❌ ERRATO: manca laravel\
-F:\var\www\fixcity\Modules\Fixcity\     # ❌ ERRATO: manca laravel\
+F:\var\www\ptv\Modules\              # ❌ ERRATO: manca laravel\
+F:\var\www\ptv\Modules\Fixcity\     # ❌ ERRATO: manca laravel\
 ```
 
 ### Note Importanti
@@ -2438,7 +2667,7 @@ laravel/Modules/[ModuleName]/
 ### Uso dei Componenti
 ```blade
 {{-- Il componente sarà disponibile automaticamente --}}
-<x-fixcity::blocks.ticket_list.agid />
+<x-ptv::blocks.ticket_list.agid />
 ```
 
 ### ❌ Da Evitare
@@ -2448,7 +2677,7 @@ class FixcityServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
-        Blade::component('fixcity-ticket-list-agid', SomeComponent::class); // Non necessario
+        Blade::component('ptv-ticket-list-agid', SomeComponent::class); // Non necessario
     }
 }
 ```
@@ -2523,35 +2752,35 @@ class XotBaseServiceProvider extends ServiceProvider
 
 ### Percorso Base del Progetto
 ```
-F:\var\www\fixcity\              # Root del progetto
+F:\var\www\ptv\              # Root del progetto
 └── laravel\                     # ⚠️ Tutti i moduli vanno qui dentro
     └── Modules\                 # Directory corretta per i moduli
 ```
 
 ### ✅ Percorsi Corretti
 ```
-F:\var\www\fixcity\laravel\Modules\Fixcity\app\Datas\ReportData.php
-F:\var\www\fixcity\laravel\Modules\Fixcity\app\Models\Report.php
-F:\var\www\fixcity\laravel\Themes\Sixteen\dist\
+F:\var\www\ptv\laravel\Modules\Fixcity\app\Datas\ReportData.php
+F:\var\www\ptv\laravel\Modules\Fixcity\app\Models\Report.php
+F:\var\www\ptv\laravel\Themes\Sixteen\dist\
 ```
 
 ### ❌ Percorsi Errati da Rimuovere
 ```
-F:\var\www\fixcity\Modules\              # ❌ ERRATO: manca laravel\
-F:\var\www\fixcity\Modules\Fixcity\     # ❌ ERRATO: manca laravel\
+F:\var\www\ptv\Modules\              # ❌ ERRATO: manca laravel\
+F:\var\www\ptv\Modules\Fixcity\     # ❌ ERRATO: manca laravel\
 ```
 
 ### Verifica Prima di Creare Nuovi File
-1. Assicurarsi di essere in `F:\var\www\fixcity\laravel\Modules\`
+1. Assicurarsi di essere in `F:\var\www\ptv\laravel\Modules\`
 2. Controllare il composer.json del modulo
 3. Verificare il namespace corretto
-4. Mai creare file direttamente in `F:\var\www\fixcity\Modules\`
+4. Mai creare file direttamente in `F:\var\www\ptv\Modules\`
 
 # Comandi Artisan
 
 ## Posizione Corretta
 ```
-F:\var\www\fixcity\
+F:\var\www\ptv\
 └── laravel\              # ⚠️ Directory dove si trova artisan
     ├── artisan           # Eseguibile artisan
     ├── Modules\
@@ -2564,7 +2793,7 @@ F:\var\www\fixcity\
 ```bash
 
 # Posizionarsi nella directory laravel
-cd F:\var\www\fixcity\laravel
+cd F:\var\www\ptv\laravel
 
 # Eseguire i comandi da qui
 php artisan module:seed Fixcity
@@ -2576,18 +2805,18 @@ php artisan config:clear
 ```bash
 
 # ❌ ERRATO: dalla root del progetto
-cd F:\var\www\fixcity
+cd F:\var\www\ptv
 php artisan module:seed Fixcity  # Non funzionerà
 
 # ❌ ERRATO: dalla directory Modules
-cd F:\var\www\fixcity\laravel\Modules
+cd F:\var\www\ptv\laravel\Modules
 php artisan module:seed Fixcity  # Non funzionerà
 ```
 
 ## Comandi Comuni
 ```bash
 
-# Dalla directory F:\var\www\fixcity\laravel
+# Dalla directory F:\var\www\ptv\laravel
 php artisan module:seed Fixcity          # Seeding modulo
 php artisan module:make-model Report     # Creare model
 php artisan module:make-factory Report   # Creare factory
@@ -2596,12 +2825,12 @@ php artisan module:make-seeder Report    # Creare seeder
 
 ## Note Importanti
 1. **Directory di Lavoro**:
-   - Tutti i comandi artisan devono essere eseguiti da `F:\var\www\fixcity\laravel`
+   - Tutti i comandi artisan devono essere eseguiti da `F:\var\www\ptv\laravel`
    - Il file `artisan` si trova in questa directory
    - L'autoload e le configurazioni sono relative a questa directory
 
 2. **Percorsi nei Comandi**:
-   - I percorsi nei comandi sono relativi a `F:\var\www\fixcity\laravel`
+   - I percorsi nei comandi sono relativi a `F:\var\www\ptv\laravel`
    - Usare percorsi relativi quando possibile
    - Per percorsi assoluti, usare `base_path()` che punta a `laravel/`
 
@@ -3681,6 +3910,8 @@ yarn run build && yarn run copy
 ## Setup Corretto
 
 ### 1. vite.config.js
+```
+
 ```javascript
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
@@ -3820,6 +4051,8 @@ ls public_html/themes/Sixteen/dist
 ## Setup Colori
 
 ### 1. tailwind.config.js
+```
+
 ```javascript
 import colors from 'tailwindcss/colors';
 
@@ -3953,12 +4186,14 @@ laravel/Modules/[ModuleName]/
 
 ### 2. Convenzioni di Denominazione
 - Il file SVG deve avere lo stesso nome del modulo (lowercase)
-- Esempio: `Modules/Fixcity/resources/svg/fixcity.svg`
+- Esempio: `Modules/Fixcity/resources/svg/ptv.svg`
 
 ## Registrazione Automatica
 
 ### 1. XotBaseServiceProvider
 Il `XotBaseServiceProvider` si occupa di registrare automaticamente le icone:
+
+```
 
 ```php
 namespace Modules\Xot\Providers;
@@ -3994,10 +4229,10 @@ Una volta registrata, l'icona può essere utilizzata nei template Blade:
 
 ```blade
 {{-- Uso come componente --}}
-<x-fixcity-icon class="w-6 h-6" />
+<x-ptv-icon class="w-6 h-6" />
 
 {{-- Uso come vista --}}
-@include('svg::fixcity')
+@include('svg::ptv')
 ```
 
 ## Best Practices
@@ -4036,10 +4271,10 @@ Se l'icona non viene visualizzata:
 ### 2. Problemi di Stile
 ```blade
 {{-- ❌ ERRATO: Dimensioni fisse --}}
-<x-fixcity-icon width="24" height="24" />
+<x-ptv-icon width="24" height="24" />
 
 {{-- ✅ CORRETTO: Classi Tailwind --}}
-<x-fixcity-icon class="w-6 h-6 text-gray-500" />
+<x-ptv-icon class="w-6 h-6 text-gray-500" />
 ```
 
 ### 3. Debug
@@ -4560,6 +4795,8 @@ Quando si estende una classe base, i metodi sovrascritti devono mantenere lo ste
 ## Esempi
 
 ### 1. Metodi della Tabella
+```
+
 ```php
 // ❌ ERRATO: Livello di accesso più restrittivo
 public function getListTableColumns(): array
@@ -4673,6 +4910,8 @@ public function getListTableColumns(): array
 ## Struttura dei Namespace
 
 ### 1. Resources e Pages
+```
+
 ```php
 // Resources
 use Modules\Xot\Filament\Resources\XotBaseResource;
@@ -4785,6 +5024,8 @@ class CommentsRelationManager extends XotBaseRelationManager
 ## Importante Nota sui Namespace
 
 ### ❌ Namespace Errati da Non Usare
+```
+
 ```php
 // ❌ ERRATO: Questi namespace non esistono
 use Modules\Xot\Filament\RelationManagers\XotBaseRelationManager;
@@ -5200,6 +5441,8 @@ Modules/YourModule/
 ## Namespace Corretto
 
 ### ✅ CORRETTO: Include il Resource nel namespace
+```
+
 ```php
 namespace Modules\Fixcity\Filament\Resources\TicketResource\RelationManagers;
 ```
@@ -5660,6 +5903,8 @@ Notification::make()
 ## Navigazione e Configurazione
 
 ### ❌ Modo Errato (Filament Standard)
+```
+
 ```php
 class TicketResource extends XotBaseResource
 {
@@ -5778,6 +6023,8 @@ Modules/YourModule/
 ## Best Practices
 
 1. **Namespace**:
+```
+
 ```php
 // ❌ ERRATO
 namespace Modules\YourModule\Filament\Resources\YourResource\Actions;
@@ -5849,6 +6096,8 @@ Questo errore si verifica quando:
 #### Soluzione
 
 1. **Definizione Corretta della Relazione**:
+```
+
 ```php
 // Nel modello
 public function category(): BelongsTo
@@ -5938,6 +6187,8 @@ Forms\Components\Select::make('category_id')
 
 ### 1. Problema Comune
 Quando due trait definiscono lo stesso metodo, si verifica un conflitto:
+
+```
 
 ```php
 // ❌ ERRATO: Conflitto tra metodi notifications()
@@ -6385,6 +6636,8 @@ yarn run build && yarn run copy
 ## Setup Corretto
 
 ### 1. vite.config.js
+```
+
 ```javascript
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
@@ -6524,6 +6777,8 @@ ls public_html/themes/Sixteen/dist
 ## Setup Colori
 
 ### 1. tailwind.config.js
+```
+
 ```javascript
 import colors from 'tailwindcss/colors';
 
@@ -6657,12 +6912,14 @@ laravel/Modules/[ModuleName]/
 
 ### 2. Convenzioni di Denominazione
 - Il file SVG deve avere lo stesso nome del modulo (lowercase)
-- Esempio: `Modules/Fixcity/resources/svg/fixcity.svg`
+- Esempio: `Modules/Fixcity/resources/svg/ptv.svg`
 
 ## Registrazione Automatica
 
 ### 1. XotBaseServiceProvider
 Il `XotBaseServiceProvider` si occupa di registrare automaticamente le icone:
+
+```
 
 ```php
 namespace Modules\Xot\Providers;
@@ -6698,10 +6955,10 @@ Una volta registrata, l'icona può essere utilizzata nei template Blade:
 
 ```blade
 {{-- Uso come componente --}}
-<x-fixcity-icon class="w-6 h-6" />
+<x-ptv-icon class="w-6 h-6" />
 
 {{-- Uso come vista --}}
-@include('svg::fixcity')
+@include('svg::ptv')
 ```
 
 ## Best Practices
@@ -6740,10 +6997,10 @@ Se l'icona non viene visualizzata:
 ### 2. Problemi di Stile
 ```blade
 {{-- ❌ ERRATO: Dimensioni fisse --}}
-<x-fixcity-icon width="24" height="24" />
+<x-ptv-icon width="24" height="24" />
 
 {{-- ✅ CORRETTO: Classi Tailwind --}}
-<x-fixcity-icon class="w-6 h-6 text-gray-500" />
+<x-ptv-icon class="w-6 h-6 text-gray-500" />
 ```
 
 ### 3. Debug
@@ -7264,6 +7521,8 @@ Quando si estende una classe base, i metodi sovrascritti devono mantenere lo ste
 ## Esempi
 
 ### 1. Metodi della Tabella
+```
+
 ```php
 // ❌ ERRATO: Livello di accesso più restrittivo
 public function getListTableColumns(): array
@@ -7377,6 +7636,8 @@ public function getListTableColumns(): array
 ## Struttura dei Namespace
 
 ### 1. Resources e Pages
+```
+
 ```php
 // Resources
 use Modules\Xot\Filament\Resources\XotBaseResource;
@@ -7489,6 +7750,8 @@ class CommentsRelationManager extends XotBaseRelationManager
 ## Importante Nota sui Namespace
 
 ### ❌ Namespace Errati da Non Usare
+```
+
 ```php
 // ❌ ERRATO: Questi namespace non esistono
 use Modules\Xot\Filament\RelationManagers\XotBaseRelationManager;
@@ -7803,6 +8066,8 @@ class Ticket extends BaseTicket
 In Laraxot, i componenti Livewire vengono autoregistrati grazie a XotBaseServiceProvider, eliminando la necessità di registrarli manualmente.
 
 ### ❌ ERRATO: Registrazione Manuale
+```
+
 ```php
 // ❌ Non necessario in Laraxot
 class TicketServiceProvider extends ServiceProvider
@@ -8167,6 +8432,8 @@ Prima di utilizzare un'icona Heroicon, verificare sempre la sua esistenza:
 
 ### 2. Fallback e Gestione Errori
 
+```
+
 ```php
 class ModuleServiceProvider extends ServiceProvider
 {
@@ -8440,6 +8707,8 @@ public static function form(Form $form): Form
 ## Namespace e Classi Base
 
 ### Resources e RelationManager
+```
+
 ```php
 // Resources
 use Modules\Xot\Filament\Resources\XotBaseResource;
@@ -8492,6 +8761,8 @@ Framework based on Laravel for building modular applications.
 ## Implementazione Corretta dei Widget
 
 ### 1. Registrazione del Widget nella Pagina
+```
+
 ```php
 protected function getHeaderWidgets(): array
 {
@@ -8592,6 +8863,8 @@ class ClientMapWidget extends Widget
 ## Implementazione Widget
 
 ### 1. Registrazione Widget
+```
+
 ```php
 // In ListClients.php o qualsiasi altra pagina Filament
 protected function getHeaderWidgets(): array
@@ -8716,6 +8989,8 @@ class ClientMapWidget extends Widget
 ## Implementazione Widget
 
 ### 1. Widget Reattivo
+```
+
 ```php
 use Livewire\Attributes\Reactive;
 use Filament\Widgets\Widget;
@@ -8829,3 +9104,82 @@ class ClientMapWidget extends Widget
 4. Gestire i casi di errore in modo graceful
 5. La reattività funziona automaticamente con Livewire 3
   - Contact section
+
+### Translation Standards
+```php
+// Modules/YourModule/lang/it/your_resource.php
+return [
+    'navigation' => [
+        'name' => 'Proper Italian Name',
+        'plural' => 'Proper Italian Plural Name',
+        'group' => [
+            'name' => 'Module Group Name',
+            'description' => 'Group description',
+        ],
+        'label' => 'Navigation Label',
+        'sort' => 85,
+        'icon' => 'heroicon-o-chart-bar', // Actual icon, not placeholder
+    ],
+    // NO .navigation placeholders allowed
+];
+```
+
+## 🚨 Critical Violations
+
+### Architecture Violations
+1. **Extending Model directly** - Breaks inheritance chain
+2. **Mixed file structures** - Creates autoloader confusion
+3. **Duplicate migrations** - Multiple create_table for same table
+4. **Hardcoded translations** - Breaks multi-language support
+5. **Direct Filament extension** - Loses auto-discovery features
+
+### Quality Violations
+1. **PHPStan errors** - Target Level 10 compliance
+2. **Pint formatting issues** - Code style consistency
+3. **Missing type hints** - PHP 8.3 strict typing
+4. **Magic property misuse** - property_exists() on Eloquent models
+
+## 🛠️ Verification Commands
+
+### Architecture Compliance
+```bash
+# Check for consistency violations
+find Modules -name "*create_*_table.php" | sort
+find Modules -name "*.php" | grep -E "(factories|seeders|tests)" | sort
+grep -r "extends Model" Modules/*/app/Models/
+```
+
+### Quality Assurance
+```bash
+# Static analysis
+./vendor/bin/phpstan analyse --level=10
+
+# Code formatting
+vendor/bin/pint --dirty
+
+# Translation checks
+grep -r "\.navigation" Modules/*/lang/**/*.php
+```
+
+## 🌟 Success Metrics
+
+### Architecture Health
+- **100%** XotBase class usage
+- **0** direct Model extensions
+- **Consistent** file structures across modules
+- **No** .navigation placeholder translations
+
+### Code Quality
+- **PHPStan Level 10** compliance
+- **Pint formatting** adherence
+- **Type safety** with PHP 8.3 features
+- **DRY compliance** - no useless method overrides
+
+---
+
+**Maintained by**: Xot Module (The Laraxot Government)
+**Philosophy**: Consistency, Predictability, Simplicity
+**Goal**: Create a harmonious, maintainable, and scalable application architecture
+
+
+>>>>>>> .merge_file_gqsTwA

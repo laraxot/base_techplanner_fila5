@@ -34,10 +34,12 @@ Provide a centralized area for citizens to manage their reports (tickets), see s
 
 ## Technical Details
 - **Model**: `Modules\Fixcity\Models\Ticket` (need to verify this).
+- **Model**: `Modules\App\Models\Ticket` (need to verify this).
 - **Filtering**: Eager loading to optimize queries.
 - **Auth**: Required `auth` middleware.
 
 ## Questions to Resolve
 - [ ] Is there already a `Ticket` model in the `Fixcity` module?
+- [ ] Is there already a `Ticket` model in the `App` module?
 - [ ] What are the ticket statuses available?
 - [ ] How is the relation between User and Ticket defined?

@@ -15,32 +15,22 @@ trait EnumTrait
 
     public function getLabel(): string
     {
-        return $this->transClass(static::class, 'values.'.$this->value.'.label');
+        return $this->transClass(static::class, $this->value.'.label');
     }
 
     public function getColor(): string
     {
-        return $this->transClass(static::class, 'values.'.$this->value.'.color');
+        return $this->transClass(static::class, $this->value.'.color');
     }
 
     public function getIcon(): string
     {
-        return $this->transClass(static::class, 'values.'.$this->value.'.icon');
+        return $this->transClass(static::class, $this->value.'.icon');
     }
 
     public function getDescription(): string
     {
-        return $this->transClass(static::class, 'values.'.$this->value.'.description');
-    }
-
-    public function getTooltip(): string
-    {
-        return $this->transClass(self::class, 'values.'.$this->value.'.tooltip');
-    }
-
-    public function getHelperText(): string
-    {
-        return $this->transClass(self::class, 'values.'.$this->value.'.helper_text');
+        return $this->transClass(static::class, $this->value.'.description');
     }
 
     /**
@@ -48,7 +38,7 @@ trait EnumTrait
      */
     public static function getSearchable(): array
     {
-        return array_map(fn ($item) => (string) $item->value, static::cases());
+        return array_map(static fn (self $item): string => (string) $item->value, static::cases());
     }
 
     /**
@@ -85,7 +75,7 @@ trait EnumTrait
      * - **Religion**: Strong typing through enum values
      * - **Zen**: Form without form - one method adapts to both contexts
      *
-     * Inspired by Modules/<nome progetto>/database/migrations/2019_12_12_000004_create_workers_table.php:
+     * Inspired by Modules/TechPlanner/database/migrations/2019_12_12_000004_create_workers_table.php:
      * ```php
      * $address_components = Place::$address_components;
      * foreach ($address_components as $el) {
@@ -110,8 +100,8 @@ trait EnumTrait
      * ```
      */
     /**
-     * @param Blueprint             $table     The table blueprint
-     * @param XotBaseMigration|null $migration XotBaseMigration instance for UPDATE context (provides hasColumn())
+     * @param  Blueprint  $table  The table blueprint
+     * @param  XotBaseMigration|null  $migration  XotBaseMigration instance for UPDATE context (provides hasColumn())
      */
     public static function columns(Blueprint $table, ?XotBaseMigration $migration = null): void
     {
@@ -120,7 +110,7 @@ trait EnumTrait
         // }
 
         foreach (static::getColumnDefinitions() as $name => $definition) {
-            if (null === $migration || ! $migration->hasColumn($name)) {
+            if ($migration === null || ! $migration->hasColumn($name)) {
                 $definition($table); // @phpstan-ignore callable.nonCallable
             }
         }
@@ -149,7 +139,7 @@ trait EnumTrait
      */
     public static function getColumnNames(): array
     {
-        return array_values(array_map(fn ($case): string => (string) $case->value, static::cases()));
+        return array_values(array_map(static fn (self $case): string => (string) $case->value, static::cases()));
     }
 
     /**
@@ -161,17 +151,5 @@ trait EnumTrait
     public static function getColumnDefinitions(): array
     {
         return [];
-    }
-
-    /** @return array<int|string, string> */
-    public static function toArray(): array
-    {
-        $cases = static::cases();
-        $result = [];
-        foreach ($cases as $item) {
-            $result[(string) $item->value] = (string) $item->getLabel();
-        }
-
-        return $result;
     }
 }

@@ -1,23 +1,3 @@
----
-title: "user module documentation optimization analysis"
-type: concept
-tags: [optimization, analysis]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "optimization-analysis-1 user module documentation optimization analysis"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-related:
-  - "./00-index-1.md"
-  - "./00-index.md"
-  - "./2fa-guide.md"
-  - "./2fa.md"
-  - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-  - "./actions-path-convention.md"
----
-
 # user module documentation optimization analysis
 
 ## current state analysis
@@ -30,7 +10,7 @@ related:
 ## major problems identified
 
 ### 1. massive duplication
-- authentication: `auth-login-implementation.md` + `auth-login-implementation.md`
+- authentication: `auth-login-implementation.md` + `auth_login_implementation.md`
 - logout: 18+ files covering same logout functionality
 - filament: multiple duplicate filament documentation files
 
@@ -81,10 +61,10 @@ docs/
 │   └── livewire_components.md
 ├── troubleshooting/
 │   ├── common_errors.md
-│   ├── filament-errors.md
+│   ├── filament_errors.md
 │   └── phpstan_errors.md
 └── integrations/
-    ├── spatie-permissions-2.md
+    ├── spatie_permissions.md
     ├── socialite_integration.md
     └── passport_integration.md
 ```

@@ -61,8 +61,13 @@ related:
 
 ### 2. Code Quality Improvements ✅
 
+<<<<<<< .merge_file_EX8UbV
 #### Fixcity Module - Ticket Model
 **File**: `laravel/Modules/Fixcity/app/Models/Ticket.php`
+=======
+#### App Module - Ticket Model
+**File**: `laravel/Modules/App/app/Models/Ticket.php`
+>>>>>>> .merge_file_v90sKq
 
 **Issue Found**:
 ```
@@ -80,13 +85,21 @@ public function getMediaAttribute(): \Spatie\MediaLibrary\MediaCollections\Model
 **Validation**: ✅ PHPStan Level 9 - 0 errors
 
 #### Configuration Fix
+<<<<<<< .merge_file_EX8UbV
 **File**: `laravel/config/it/quaerisofficina/manager2/xra.php`
+=======
+**File**: `laravel/config/it/appofficina/manager2/xra.php`
+>>>>>>> .merge_file_v90sKq
 
 **Issue**: Parse error from invalid placeholder `\Modules\<nome progetto>\Models\Customer::class`
 
 **Fix**:
 ```php
+<<<<<<< .merge_file_EX8UbV
 // 'team_class' => \Modules\Fixcity\Models\Customer::class,  // TODO: Configure team class
+=======
+// 'team_class' => \Modules\App\Models\Customer::class,  // TODO: Configure team class
+>>>>>>> .merge_file_v90sKq
 'team_class' => null,
 ```
 
@@ -95,9 +108,15 @@ public function getMediaAttribute(): \Spatie\MediaLibrary\MediaCollections\Model
 ### 3. API Implementation ✅
 
 #### API Controller
+<<<<<<< .merge_file_EX8UbV
 **File**: `laravel/Modules/Fixcity/app/Http/Controllers/Api/TicketController.php`
 
 **Namespace Fix**: `Modules\Fixcity\App\Http\` → `Modules\Fixcity\Http\`
+=======
+**File**: `laravel/Modules/App/app/Http/Controllers/Api/TicketController.php`
+
+**Namespace Fix**: `Modules\App\App\Http\` → `Modules\App\Http\`
+>>>>>>> .merge_file_v90sKq
 
 **Endpoints Implemented**:
 - `GET /api/tickets` - List tickets with filters and pagination
@@ -119,9 +138,15 @@ public function getMediaAttribute(): \Spatie\MediaLibrary\MediaCollections\Model
 - Error handling
 
 #### API Resource
+<<<<<<< .merge_file_EX8UbV
 **File**: `laravel/Modules/Fixcity/app/Http/Resources/Api/TicketResource.php`
 
 **Namespace Fix**: `Modules\Fixcity\App\Http\` → `Modules\Fixcity\Http\`
+=======
+**File**: `laravel/Modules/App/app/Http/Resources/Api/TicketResource.php`
+
+**Namespace Fix**: `Modules\App\App\Http\` → `Modules\App\Http\`
+>>>>>>> .merge_file_v90sKq
 
 **Features**:
 - JSON serialization strutturata
@@ -133,10 +158,17 @@ public function getMediaAttribute(): \Spatie\MediaLibrary\MediaCollections\Model
 
 #### API Requests
 **Files**:
+<<<<<<< .merge_file_EX8UbV
 - `laravel/Modules/Fixcity/app/Http/Requests/Api/StoreTicketRequest.php`
 - `laravel/Modules/Fixcity/app/Http/Requests/Api/UpdateTicketRequest.php`
 
 **Namespace Fix**: `Modules\Fixcity\App\` → `Modules\Fixcity\`
+=======
+- `laravel/Modules/App/app/Http/Requests/Api/StoreTicketRequest.php`
+- `laravel/Modules/App/app/Http/Requests/Api/UpdateTicketRequest.php`
+
+**Namespace Fix**: `Modules\App\App\` → `Modules\App\`
+>>>>>>> .merge_file_v90sKq
 
 **Features**:
 - Comprehensive validation rules
@@ -147,7 +179,11 @@ public function getMediaAttribute(): \Spatie\MediaLibrary\MediaCollections\Model
 - Auto-fill profile_id from authenticated user
 
 #### API Routes
+<<<<<<< .merge_file_EX8UbV
 **File**: `laravel/Modules/Fixcity/routes/api.php`
+=======
+**File**: `laravel/Modules/App/routes/api.php`
+>>>>>>> .merge_file_v90sKq
 
 **Namespace Fix**: Applied
 
@@ -160,7 +196,11 @@ public function getMediaAttribute(): \Spatie\MediaLibrary\MediaCollections\Model
 ### 4. Test Coverage Enhancement ✅
 
 #### Ticket Model Tests
+<<<<<<< .merge_file_EX8UbV
 **File**: `laravel/Modules/Fixcity/tests/Unit/Models/TicketBusinessLogicTest.php`
+=======
+**File**: `laravel/Modules/App/tests/Unit/Models/TicketBusinessLogicTest.php`
+>>>>>>> .merge_file_v90sKq
 
 **Tests Added**:
 ```php
@@ -230,7 +270,11 @@ it('media attribute returns empty collection when no media attached', function (
 ### Modules Validated
 | Module | Status | Errors |
 |--------|--------|--------|
+<<<<<<< .merge_file_EX8UbV
 | Fixcity | ✅ PASS | 0 |
+=======
+| App | ✅ PASS | 0 |
+>>>>>>> .merge_file_v90sKq
 | User | ✅ PASS | 0 |
 | Blog | ✅ PASS | 0 |
 | Seo | ✅ PASS | 0 |
@@ -240,6 +284,7 @@ it('media attribute returns empty collection when no media attached', function (
 ## 📁 Files Modified
 
 ### Code Files (8)
+<<<<<<< .merge_file_EX8UbV
 1. `/laravel/Modules/Fixcity/app/Models/Ticket.php`
 2. `/laravel/Modules/Fixcity/app/Http/Controllers/Api/TicketController.php`
 3. `/laravel/Modules/Fixcity/app/Http/Resources/Api/TicketResource.php`
@@ -248,6 +293,16 @@ it('media attribute returns empty collection when no media attached', function (
 6. `/laravel/Modules/Fixcity/routes/api.php`
 7. `/laravel/Modules/Fixcity/tests/Unit/Models/TicketBusinessLogicTest.php`
 8. `/laravel/config/it/quaerisofficina/manager2/xra.php`
+=======
+1. `/laravel/Modules/App/app/Models/Ticket.php`
+2. `/laravel/Modules/App/app/Http/Controllers/Api/TicketController.php`
+3. `/laravel/Modules/App/app/Http/Resources/Api/TicketResource.php`
+4. `/laravel/Modules/App/app/Http/Requests/Api/StoreTicketRequest.php`
+5. `/laravel/Modules/App/app/Http/Requests/Api/UpdateTicketRequest.php`
+6. `/laravel/Modules/App/routes/api.php`
+7. `/laravel/Modules/App/tests/Unit/Models/TicketBusinessLogicTest.php`
+8. `/laravel/config/it/appofficina/manager2/xra.php`
+>>>>>>> .merge_file_v90sKq
 
 ### Documentation Files (7)
 1. `/laravel/Modules/Cms/docs/development/roadmap.md`
@@ -388,7 +443,11 @@ it('media attribute returns empty collection when no media attached', function (
 
 ## 🎉 Conclusion
 
+<<<<<<< .merge_file_EX8UbV
 This session has significantly advanced the FixCity project toward its goal of becoming the best civic tech platform in Italy for 2025. Key achievements include:
+=======
+This session has significantly advanced the Notify project toward its goal of becoming the best civic tech platform in Italy for 2025. Key achievements include:
+>>>>>>> .merge_file_v90sKq
 
 - **API layer** fully implemented and validated
 - **Code quality** maintained at the highest level (PHPStan Level 9)

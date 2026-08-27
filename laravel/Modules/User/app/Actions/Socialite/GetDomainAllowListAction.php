@@ -9,6 +9,7 @@ declare(strict_types=1);
 namespace Modules\User\Actions\Socialite;
 
 use Illuminate\Support\Arr;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Spatie\QueueableAction\QueueableAction;
 
 class GetDomainAllowListAction
@@ -17,8 +18,7 @@ class GetDomainAllowListAction
 
     public function __construct(
         private readonly Arr $arrHelper,
-    ) {
-    }
+    ) {}
 
     /**
      * Execute the action.
@@ -33,7 +33,10 @@ class GetDomainAllowListAction
         }
 
         if (\is_array($res)) {
-            return array_values(array_map(static fn (mixed $item): string => (string) $item, $res));
+            return array_values(array_map(
+                static fn (mixed $item): string => SafeStringCastAction::cast($item),
+                $res
+            ));
         }
 
         return [];

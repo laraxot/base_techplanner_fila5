@@ -13,7 +13,7 @@ use Modules\Xot\Tests\Fixtures\FakeQueryableModel;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('no-xot-db');
 
 it('gets model class by model type from morph map', function (): void {
     config()->set('morph_map', ['demo' => DemoModel::class]);
@@ -79,11 +79,10 @@ it('throws when model id is provided but record is missing', function (): void {
 });
 
 it('returns snake model type from model contract instance', function (): void {
-    $model = new class extends Model implements ModelContract {
-    };
+    $model = new class() extends Model implements ModelContract {};
 
     $result = app(GetModelTypeByModelAction::class)->execute($model);
 
     Assert::assertStringContainsString('model', $result);
-    Assert::assertIsString($result);
+    Assert::assertNotEmpty($result);
 });

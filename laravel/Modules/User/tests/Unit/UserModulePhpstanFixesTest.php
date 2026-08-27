@@ -14,9 +14,10 @@ use Modules\User\Events\SocialiteUserConnected;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
+use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('user-db');
 
 it('password data can be instantiated', function (): void {
     $passwordData = new PasswordData();
@@ -108,13 +109,13 @@ it('password data get form components returns array', function (): void {
 it('events can be instantiated', function (): void {
     $userFactory = UserFactory::new();
     \assert($userFactory instanceof Factory);
-    $owner = $userFactory->createOne();
+    $owner = $userFactory->create();
     \assert($owner instanceof User);
 
     $socialiteFactory = SocialiteUserFactory::new();
     \assert($socialiteFactory instanceof Factory);
-    $socialiteUser = $socialiteFactory->createOne([
-        'user_id' => (string) $owner->getKey(),
+    $socialiteUser = $socialiteFactory->create([
+        'user_id' => (string) XotBasePest::assertModelKey($owner->getKey()),
         'provider' => 'github',
         'provider_id' => 'provider-'.uniqid(),
     ]);
@@ -134,13 +135,13 @@ it('events can be instantiated', function (): void {
 it('events have dispatchable trait', function (): void {
     $userFactory = UserFactory::new();
     \assert($userFactory instanceof Factory);
-    $owner = $userFactory->createOne();
+    $owner = $userFactory->create();
     \assert($owner instanceof User);
 
     $socialiteFactory = SocialiteUserFactory::new();
     \assert($socialiteFactory instanceof Factory);
-    $socialiteUser = $socialiteFactory->createOne([
-        'user_id' => (string) $owner->getKey(),
+    $socialiteUser = $socialiteFactory->create([
+        'user_id' => (string) XotBasePest::assertModelKey($owner->getKey()),
         'provider' => 'github',
         'provider_id' => 'provider-'.uniqid(),
     ]);

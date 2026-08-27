@@ -63,6 +63,7 @@ ls -la ~/.claude/skills/notebooklm/
 
 # 2. Crea notebook su notebooklm.google.com
 #    - Upload: AGENTS.md, docs/**/*.md, .planning/**/*.md
+#    - Upload: agents.md, docs/**/*.md, .planning/**/*.md
 #    - Share → Copy link
 
 # 3. Aggiungi a library
@@ -70,6 +71,7 @@ ls -la ~/.claude/skills/notebooklm/
 
 # 4. Query
 "Ask my FixCity docs about theme configuration"
+"Ask my Notify docs about theme configuration"
 ```
 
 ### Documentazione
@@ -359,6 +361,7 @@ claude
 # 3. Create notebook
 #    - Go to notebooklm.google.com
 #    - Upload: AGENTS.md, docs/, .planning/
+#    - Upload: agents.md, docs/, .planning/
 #    - Share → Copy link
 
 # 4. Add to library
@@ -366,6 +369,7 @@ claude
 
 # 5. Query
 "What does FixCity documentation say?"
+"What does Notify documentation say?"
 ```
 
 ### Kilo
@@ -431,6 +435,7 @@ openviking search "theme"
 2. **.planning/config.json** - 16-week roadmap
 3. **.planning/THEME_CONTEXT.md** - Theme configuration
 4. **fixcity-improvement-plan.md** - Improvement plan
+4. **laraxot-improvement-plan.md** - Improvement plan
 
 ### Module & Theme Docs
 
@@ -504,6 +509,7 @@ openviking search "theme"
 ### This Week
 
 1. [ ] Index all FixCity docs in NotebookLM
+1. [ ] Index all Notify docs in NotebookLM
 2. [ ] Test BMAD + GSD + Ralph workflow
 3. [ ] Create custom Kilo plugins
 4. [ ] Document best practices from usage

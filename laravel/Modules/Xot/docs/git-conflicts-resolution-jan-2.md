@@ -200,7 +200,9 @@ php artisan lang:check
 
 ### Documentazione Generale
 - [Translation Standards](../../project_docs/translation-standards.md)
+- [PHPStan Guidelines](../../project_docs/phpstan-usage.md)
 - [PHPStan Guidelines](../../project_docs/phpstan_usage.md)
+>>>>>>> .merge_file_eXjVvv
 - [Git Best Practices](../../project_docs/git-best-practices.md)
 
 ---

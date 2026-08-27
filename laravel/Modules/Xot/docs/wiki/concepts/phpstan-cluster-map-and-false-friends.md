@@ -1,3 +1,11 @@
+---
+title: "Phpstan Cluster Map And False Friends"
+type: reference
+tags: [wiki, no-frontmatter-fix]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # PHPStan Cluster Map And False Friends
 
 ## Contesto
@@ -30,7 +38,7 @@ Cluster piu' ricorrenti osservati:
 
 - Un wrapper base “generico” non e' automaticamente piu' riusabile: spesso aumenta `mixed` e rumore statico.
 - Un PHPDoc con `Builder` non rende vero quel tipo se il namespace e' sbagliato.
-- Un helper comodo che concatena/implode array eterogenei sembra innocuo ma produce rumore sistemico.
+- Un import “morto” in `XotBaseResource` non autorizza a cancellare il fallback: spesso manca l'Action, non il call site. Vedi [get-resource-class-name-by-model-class-action.md](../../get-resource-class-name-by-model-class-action.md).
 
 ## Priorita'
 

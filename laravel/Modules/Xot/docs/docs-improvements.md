@@ -45,6 +45,10 @@ README.md
 phpstan-fixes-2025-01-06.md
 lessons-learned-2025-08-25.md
 git-conflicts-resolution-2025-01-06.md
+phpstan-fixes-[DATE].md
+lessons-learned-[DATE].md
+git-conflicts-resolution-[DATE].md
+>>>>>>> .merge_file_UICYIz
 ```
 
 **Dopo**:
@@ -156,6 +160,8 @@ docs/
 ### Tra moduli (Xot → User)
 ```markdown
 [user docs](../../User/docs/user-guide.md)
+[user docs](../../user/docs/user-guide.md)
+>>>>>>> .merge_file_UICYIz
 ```
 
 ### All'interno dello stesso modulo

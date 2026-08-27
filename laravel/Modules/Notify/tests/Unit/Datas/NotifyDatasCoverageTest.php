@@ -16,6 +16,7 @@ use Modules\Notify\Datas\SmsMessageData;
 use Modules\Notify\Datas\TelegramData;
 use Modules\Notify\Datas\WhatsAppData;
 use Modules\Notify\Tests\TestCase;
+use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -37,10 +38,10 @@ test('netfun sms request and response data can be created from arrays', function
     ]);
 
     Assert::assertSame('abc-token', $request->token);
-    Assert::assertCount(1, \assertNotifyArray($request->messages));
+    Assert::assertCount(1, XotBasePest::assertArray($request->messages));
     Assert::assertSame('ok', $response->status);
     Assert::assertSame('batch-1', $response->batchId);
-    Assert::assertCount(1, \assertNotifyArray($response->messages));
+    Assert::assertCount(1, XotBasePest::assertArray($response->messages));
 });
 
 test('netfun sms message-style data objects keep values', function () {

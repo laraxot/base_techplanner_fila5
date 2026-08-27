@@ -35,7 +35,11 @@ Successfully implemented a comprehensive documentation governance framework and 
 ✅ **784 temporal strings removed** from 3,646 markdown files  
 ✅ **Documentation governance framework** created  
 ✅ **Master documentation index** established  
+<<<<<<< .merge_file_uvYi8o
 ✅ **Rules and standards** updated (AGENTS.md, .windsurfrules)  
+=======
+✅ **Rules and standards** updated (agents.md, .windsurfrules)  
+>>>>>>> .merge_file_zjLJ9a
 ✅ **Documentation management skill** created  
 ✅ **4 global memories** saved  
 ✅ **3 GitHub issues** created for tracking  
@@ -87,7 +91,11 @@ Successfully implemented a comprehensive documentation governance framework and 
 
 ### Rules Updates
 
+<<<<<<< .merge_file_uvYi8o
 5. **[AGENTS.md](AGENTS.md)** - Updated
+=======
+5. **[agents.md](AGENTS.md)** - Updated
+>>>>>>> .merge_file_zjLJ9a
    - Added documentation governance section
    - No temporal strings rule
    - File naming conventions
@@ -311,7 +319,11 @@ grep -r "Last Updated" laravel/Modules/*/docs/ --include="*.md" | wc -l
 - [Improvement Plan](docs/documentation-analysis-and-improvement-plan.md)
 
 ### Rules
+<<<<<<< .merge_file_uvYi8o
 - [AGENTS.md](AGENTS.md) - Full standards
+=======
+- [agents.md](AGENTS.md) - Full standards
+>>>>>>> .merge_file_zjLJ9a
 - [.windsurfrules](.windsurfrules) - IDE rules
 
 ### Skills

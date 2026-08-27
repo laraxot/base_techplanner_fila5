@@ -6,6 +6,13 @@ namespace Modules\Notify\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|EmailTemplate newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|EmailTemplate newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|EmailTemplate query()
+ *
+ * @mixin \Eloquent
+ */
 class EmailTemplate extends Model
 {
     /**

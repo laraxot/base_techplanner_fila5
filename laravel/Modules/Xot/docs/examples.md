@@ -1111,6 +1111,8 @@ class ExampleRelationshipsTest extends XotBaseTestCase
 ## 🔗 **Collegamenti e Riferimenti**
 
 - [**README.md**](README.md) - Documentazione principale del modulo
+- [**README.md**](readme.md) - Documentazione principale del modulo
+>>>>>>> .merge_file_3cwKmd
 - [**Best Practices**](best-practices.md) - Best practices per lo sviluppo
 - [**Architettura**](architecture.md) - Architettura del modulo Xot
 - [**Troubleshooting**](troubleshooting.md) - Risoluzione problemi

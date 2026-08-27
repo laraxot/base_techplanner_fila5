@@ -6,6 +6,7 @@ namespace Modules\Xot\Helpers;
 
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Webmozart\Assert\Assert;
 
 use function Safe\error_log;
 use function Safe\file_get_contents;
@@ -14,12 +15,10 @@ use function Safe\glob;
 use function Safe\preg_match;
 use function Safe\preg_replace;
 
-use Webmozart\Assert\Assert;
-
 class ResourceFormSchemaGenerator
 {
     /**
-     * @param class-string $resourceClass
+     * @param  class-string  $resourceClass
      */
     public static function generateFormSchema(string $resourceClass): bool
     {
@@ -31,15 +30,15 @@ class ResourceFormSchemaGenerator
             $reflection = new \ReflectionClass($resourceClass);
             $filename = $reflection->getFileName();
 
-            if (false === $filename) {
+            if ($filename === false) {
                 throw new \RuntimeException("Failed to get filename for class: {$resourceClass}");
             }
 
             // Read the file contents
             $fileContents = file_get_contents($filename);
 
-            // Check if getFormSchema method already exists
-            if (str_contains($fileContents, 'public function getFormSchema')) {
+            // Check if getFormSchemaOld method already exists
+            if (str_contains($fileContents, 'public static function getFormSchemaOld')) {
                 return false;
             }
 
@@ -47,7 +46,7 @@ class ResourceFormSchemaGenerator
             $modelName = str_replace('Resource', '', $reflection->getShortName());
             $modelVariable = Str::camel($modelName);
 
-            $formSchemaMethod = "\n    public function getFormSchema(): array\n    {\n        return [\n";
+            $formSchemaMethod = "\n    public static function getFormSchemaOld(): array\n    {\n        return [\n";
             $formSchemaMethod .= "            Forms\\Components\\TextInput::make('{$modelVariable}_name')\n";
             $formSchemaMethod .= "                ->required(),\n";
             $formSchemaMethod .= "        ];\n    }\n";

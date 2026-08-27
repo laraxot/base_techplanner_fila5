@@ -77,5 +77,7 @@
 ## Collegamenti
 
 - [Modelli Patient](../Patient/docs/models.md)
+- [Modelli Patient](../patient/docs/models.md)
+>>>>>>> .merge_file_XfZ6zg
 - [Best Practices Modelli](./models.md)
 - [Convenzioni di Codice](./coding-standards.md)

@@ -1,3 +1,16 @@
+
+---
+title: "Risoluzione Conflitti"
+module: xot
+type: integration
+tags: [integrations, modules, xot]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
+
+=======
+>>>>>>> .merge_file_agbR29
 # Risoluzione Conflitti
 
 ## Best Practices
@@ -107,6 +120,9 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
 
 - [Documentazione generale sulla risoluzione dei conflitti git](../../../../docs/project/risoluzione_conflitti_git.md)
 - [Report completo di intervento](../../../../docs/project/logs/conflict_resolution_report.md)
+- [Documentazione generale sulla risoluzione dei conflitti git](../../../project_docs/risoluzione_conflitti_git.md)
+- [Report completo di intervento](../../../project_docs/logs/conflict_resolution_report.md)
+>>>>>>> .merge_file_3ECokC
 - [Dettagli risoluzione ModelWithPosContract](./conflicts/model_with_pos_contract_resolution.md)
 
 ## XotBaseMainPanelProvider.php
@@ -233,3 +249,6 @@ b6f667c (.)
 * [Risoluzione Conflitti Tenant](../../../tenant/project_docs/risoluzione_conflitti.md)
 * [Linee Guida Principali Risoluzione Conflitti](../../../../../docs/project/conflict_resolution.md)
 fc83074 (.)
+* [Linee Guida Principali Risoluzione Conflitti](../../../../project_docs/conflict_resolution.md)
+fc83074 (.)
+>>>>>>> .merge_file_3ECokC

@@ -16,11 +16,19 @@ related:
   - "./telegram-notifications-guide.md"
 ---
 
+<<<<<<< .merge_file_fgLyBo
 # Implementazione Netfun SMS 
 
 ## Introduzione
 
 Netfun è un provider italiano di SMS che offre servizi per l'invio di messaggi SMS tramite API REST. 
+=======
+# Implementazione Netfun SMS
+
+## Introduzione
+
+Netfun è un provider italiano di SMS che offre servizi per l'invio di messaggi SMS tramite API REST.
+>>>>>>> .merge_file_kTleTX
 Questo documento descrive l'implementazione corretta dell'integrazione Netfun usando Spatie Queueable Actions.
 
 ## Endpoint API
@@ -40,7 +48,11 @@ Netfun utilizza un API token configurato in `config/services.php`:
 // config/services.php
 return [
     // Altre configurazioni...
+<<<<<<< .merge_file_fgLyBo
     
+=======
+
+>>>>>>> .merge_file_kTleTX
     'netfun' => [
         'token' => env('NETFUN_TOKEN'),
         'sender' => env('NETFUN_SENDER'), // Senza valore predefinito
@@ -68,20 +80,32 @@ return [
     'drivers' => [
         // Vari provider...
     ],
+<<<<<<< .merge_file_fgLyBo
     
+=======
+
+>>>>>>> .merge_file_kTleTX
     // Configurazione generica per retry - usata per tutti i provider
     'retry' => [
         'attempts' => env('SMS_RETRY_ATTEMPTS', 3),
         'delay' => env('SMS_RETRY_DELAY', 60), // secondi
     ],
+<<<<<<< .merge_file_fgLyBo
     
+=======
+
+>>>>>>> .merge_file_kTleTX
     // Configurazione generica per rate limiting - usata per tutti i provider
     'rate_limit' => [
         'enabled' => env('SMS_RATE_LIMIT_ENABLED', true),
         'max_attempts' => env('SMS_RATE_LIMIT_MAX_ATTEMPTS', 60),
         'decay_minutes' => env('SMS_RATE_LIMIT_DECAY_MINUTES', 1),
     ],
+<<<<<<< .merge_file_fgLyBo
     
+=======
+
+>>>>>>> .merge_file_kTleTX
     // Altre configurazioni generiche
 ];
 ```
@@ -128,11 +152,19 @@ use Modules\Notify\Datas\NetfunSmsData;
 class SendNetfunSmsAction
 {
     use QueueableAction;
+<<<<<<< .merge_file_fgLyBo
     
     public function execute(NetfunSmsData $smsData)
     {
         $config = config('sms.drivers.netfun');
         
+=======
+
+    public function execute(NetfunSmsData $smsData)
+    {
+        $config = config('sms.drivers.netfun');
+
+>>>>>>> .merge_file_kTleTX
         try {
             $response = Http::post($config['endpoint'], [
                 'apiKey' => $config['api_key'],
@@ -169,16 +201,25 @@ use Modules\Notify\Datas\NetfunSmsData;
 class AppointmentReminder extends Notification
 {
     protected $appointment;
+<<<<<<< .merge_file_fgLyBo
     
+=======
+
+>>>>>>> .merge_file_kTleTX
     public function __construct($appointment)
     {
         $this->appointment = $appointment;
     }
+<<<<<<< .merge_file_fgLyBo
     
+=======
+
+>>>>>>> .merge_file_kTleTX
     public function via($notifiable)
     {
         return ['mail', 'database', 'netfun'];
     }
+<<<<<<< .merge_file_fgLyBo
     
     public function toNetfun($notifiable)
     {
@@ -200,6 +241,29 @@ class AppointmentReminder extends Notification
         // Esecuzione sincrona per notifiche
         return $action->execute($smsData);
         
+=======
+
+    public function toNetfun($notifiable)
+    {
+        $phoneNumber = $notifiable->routeNotificationForSms($this);
+
+        if (!$phoneNumber) {
+            return null;
+        }
+
+        $action = app(SendNetfunSmsAction::class);
+
+        $smsData = new NetfunSmsData(
+            recipient: $phoneNumber,
+            message: "Promemoria: appuntamento il {$this->appointment->date}",
+            sender: '<nome progetto>',
+            reference: 'app_' . $this->appointment->id
+        );
+
+        // Esecuzione sincrona per notifiche
+        return $action->execute($smsData);
+
+>>>>>>> .merge_file_kTleTX
         // Per esecuzione asincrona
         // return $action->onQueue('sms')->execute($smsData);
     }

@@ -42,3 +42,17 @@ return [
 ### Versione Incoming
 
 ---
+
+
+## Collegamenti tra versioni di metatag.md
+* [metatag.md](../../../Xot/docs/install/metatag.md)
+* [metatag.md](../../../Tenant/docs/it/config/metatag.md)
+
+
+### Versione Incoming
+
+
+---
+
+
+>>>>>>> .merge_file_Ta7Sla

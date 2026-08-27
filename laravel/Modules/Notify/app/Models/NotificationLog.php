@@ -34,7 +34,6 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property string|null $error
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- *
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $deleter
  * @property-read MediaCollection<int, Media> $media
@@ -67,19 +66,19 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  */
 class NotificationLog extends BaseModel
 {
-    public const STATUS_PENDING = 'pending';
+    public const string STATUS_PENDING = 'pending';
 
-    public const STATUS_PROCESSING = 'processing';
+    public const string STATUS_PROCESSING = 'processing';
 
-    public const STATUS_SENT = 'sent';
+    public const string STATUS_SENT = 'sent';
 
-    public const STATUS_DELIVERED = 'delivered';
+    public const string STATUS_DELIVERED = 'delivered';
 
-    public const STATUS_FAILED = 'failed';
+    public const string STATUS_FAILED = 'failed';
 
-    public const STATUS_OPENED = 'opened';
+    public const string STATUS_OPENED = 'opened';
 
-    public const STATUS_CLICKED = 'clicked';
+    public const string STATUS_CLICKED = 'clicked';
 
     protected $table = 'notification_logs';
 
@@ -114,7 +113,6 @@ class NotificationLog extends BaseModel
 
     /**
      * @param  Builder<static>  $query
-     *
      * @return Builder<static>
      */
     public function scopeWithStatus(Builder $query, string $status): Builder
@@ -124,7 +122,6 @@ class NotificationLog extends BaseModel
 
     /**
      * @param  Builder<static>  $query
-     *
      * @return Builder<static>
      */
     public function scopeForChannel(Builder $query, string $channel): Builder
@@ -134,7 +131,6 @@ class NotificationLog extends BaseModel
 
     /**
      * @param  Builder<static>  $query
-     *
      * @return Builder<static>
      */
     public function scopeForNotifiable(Builder $query, Model $notifiable): Builder

@@ -462,3 +462,7 @@ class RouteServiceProvider extends ServiceProvider
 - [XotBaseServiceProvider](base_orisbroker_fila5/laravel/Modules/Xot/Providers/XotBaseServiceProvider.php)
 - [XotBaseRouteServiceProvider](base_orisbroker_fila5/laravel/Modules/Xot/Providers/XotBaseRouteServiceProvider.php)
 - [BaseEventServiceProvider](base_orisbroker_fila5/laravel/Modules/Xot/Providers/BaseEventServiceProvider.php)
+- [XotBaseServiceProvider](base_orisbroker_fila3/laravel/Modules/Xot/Providers/XotBaseServiceProvider.php)
+- [XotBaseRouteServiceProvider](base_orisbroker_fila3/laravel/Modules/Xot/Providers/XotBaseRouteServiceProvider.php)
+- [BaseEventServiceProvider](base_orisbroker_fila3/laravel/Modules/Xot/Providers/BaseEventServiceProvider.php)
+>>>>>>> .merge_file_mJhPJX

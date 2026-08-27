@@ -10,7 +10,6 @@ use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\PageRegistration;
-use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
 use Filament\Tables\Columns\IconColumn;
@@ -35,10 +34,10 @@ class OauthAuthCodeResource extends XotBaseResource
     /**
      * Get the form schema for the resource.
      *
-     * @return array<string, Component>
+     * @return array<string, mixed>
      */
-    #[\Override]
-    public static function getFormSchema(): array
+    // #[\Override]
+    public static function getFormSchemaOld(): array
     {
         return [
             'oauth_auth_code_info' => Section::make(static::trans('label'))
@@ -100,17 +99,15 @@ class OauthAuthCodeResource extends XotBaseResource
                     ->color('danger')
                     ->requiresConfirmation()
                     ->modalHeading(static::trans('actions.revoke.label'))
-                    ->action(function (mixed $record): void {
-                        if ($record instanceof OauthAuthCode) {
-                            $record->revoked = true;
-                            $record->save();
-                            Notification::make()
-                                ->title(static::trans('actions.revoke.success'))
-                                ->success()
-                                ->send();
-                        }
+                    ->action(function (OauthAuthCode $record): void {
+                        $record->revoked = true;
+                        $record->save();
+                        Notification::make()
+                            ->title(static::trans('actions.revoke.success'))
+                            ->success()
+                            ->send();
                     })
-                    ->visible(fn (mixed $record) => $record instanceof OauthAuthCode && ! $record->revoked),
+                    ->visible(fn (OauthAuthCode $record): bool => ! $record->revoked),
                 DeleteAction::make(),
             ]);
     }

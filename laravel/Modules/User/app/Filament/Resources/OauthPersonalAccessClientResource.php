@@ -11,10 +11,8 @@ use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Forms\Components\Select;
-use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Filament\Tables;
-use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Models\OauthPersonalAccessClient;
 use Modules\Xot\Filament\Resources\XotBaseResource;
@@ -37,10 +35,10 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     protected static \BackedEnum|string|null $navigationIcon = 'heroicon-o-key';
 
     /**
-     * @return array<string, Component>
+     * @return array<string, mixed>
      */
-    #[\Override]
-    public static function getFormSchema(): array
+    // #[\Override]
+    public static function getFormSchemaOld(): array
     {
         return [
             'oauth_personal_access_client' => Section::make('OAuth Personal Access Client Information')

@@ -3,6 +3,8 @@
 ## 🎯 Overview
 
 Documentazione completa delle best practice PHPStan per le factory Laravel, basata sulle correzioni implementate nel modulo <nome progetto> e conformi ai principi del framework Laraxot.
+Documentazione completa delle best practice PHPStan per le factory Laravel, basata sulle correzioni implementate nel modulo SaluteOra e conformi ai principi del framework Laraxot.
+>>>>>>> .merge_file_aVE8gn
 
 ## 📚 Principi Fondamentali
 
@@ -12,7 +14,7 @@ Le factory base che devono essere estese dovrebbero usare template generics:
 ```php
 /**
  * UserFactory for module.
- *
+ * 
  * @template TModel of \Modules\ModuleName\Models\User
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<TModel>
  */
@@ -31,7 +33,7 @@ Le factory che estendono altre factory NON devono usare generics in `@extends`:
 ```php
 /**
  * AdminFactory extends UserFactory.
- *
+ * 
  * @extends \Modules\ModuleName\Database\Factories\UserFactory
  */
 class AdminFactory extends UserFactory
@@ -211,6 +213,8 @@ class AdminFactory extends UserFactory
 ### Comando PHPStan
 ```bash
 cd laravel
+cd /var/www/html/_bases/base_projectname/laravel
+>>>>>>> .merge_file_aVE8gn
 ./vendor/bin/phpstan analyze Modules/ModuleName/database/factories --level=9
 ```
 
@@ -275,6 +279,19 @@ Vedere:
 ### Documentazione Implementazione
 Vedere: `Modules/<nome progetto>/docs/factories/phpstan-factory-compliance.md`
 
+Vedere: `Modules/SaluteOra/database/factories/UserFactory.php`
+
+### Factory Specializzate Corrette
+Vedere:
+- `Modules/SaluteOra/database/factories/AdminFactory.php`
+- `Modules/SaluteOra/database/factories/DoctorFactory.php`
+- `Modules/SaluteOra/database/factories/PatientFactory.php`
+
+### Documentazione Implementazione
+Vedere: `Modules/SaluteOra/docs/factories/phpstan-factory-compliance.md`
+
+>>>>>>> .merge_file_aVE8gn
+
 ## 📊 Metriche di Successo
 
 - **0 errori PHPStan** livello 9+
@@ -284,4 +301,4 @@ Vedere: `Modules/<nome progetto>/docs/factories/phpstan-factory-compliance.md`
 
 *Ultimo aggiornamento: Dicembre 2024*
 *Versione: 1.0*
-*Compatibilità: PHPStan 1.10+, Larastan 3.x, Laravel 11+*
+*Compatibilità: PHPStan 1.10+, Larastan 3.x, Laravel 11+* 

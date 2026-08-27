@@ -133,6 +133,8 @@ All locales work correctly:
 
 ### Key Benefits
 - **Simplicity**: Custom middleware is simple and <nome progetto>able
+- **Simplicity**: Custom middleware is simple and predictable
+>>>>>>> .merge_file_FKqKpU
 - **Performance**: No complex middleware chain overhead
 - **Maintainability**: Easy to understand and debug
 - **Flexibility**: Works with Folio's file-based routing

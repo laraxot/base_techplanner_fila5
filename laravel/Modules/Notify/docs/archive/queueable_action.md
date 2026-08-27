@@ -1,3 +1,12 @@
+---
+title: "Spatie Laravel Queueable Action"
+module: notify
+type: integration
+tags: [integrations, modules, notify]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Spatie Laravel Queueable Action
 
 In <nome progetto>, **NON si utilizza il pattern Service**. Per la business logic asincrona e la gestione di azioni riutilizzabili si adotta SEMPRE il package [spatie/laravel-queueable-action](https://github.com/spatie/laravel-queueable-action).

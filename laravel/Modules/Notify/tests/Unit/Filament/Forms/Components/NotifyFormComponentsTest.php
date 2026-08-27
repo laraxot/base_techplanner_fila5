@@ -7,12 +7,12 @@ namespace Modules\Notify\Tests\Unit\Filament\Forms\Components;
 use Filament\Forms\Components\TextInput;
 use Modules\Notify\Filament\Forms\Components\ChannelCheckboxList;
 use Modules\Notify\Filament\Forms\Components\HtmlLayoutPathSelect;
-use Modules\Notify\Tests\Fixtures\ContactSectionTestProxy;
 use Modules\Notify\Filament\Forms\Components\MailTemplateSelect;
+use Modules\Notify\Tests\Fixtures\ContactSectionTestProxy;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Notify\Tests\TestCase::class);
+uses(TestCase::class)->group('no-notify-db');
 
 test('channel checkbox list and selects have expected default names', function () {
     $channels = ChannelCheckboxList::make();
@@ -30,7 +30,7 @@ test('html layout path select exposes expected default name via method signature
 });
 
 test('contact section returns text inputs schema from enum', function () {
-    $proxy = new ContactSectionTestProxy;
+    $proxy = new ContactSectionTestProxy();
     $schema = $proxy->exposedFormSchema();
     foreach ($schema as $component) {
         Assert::assertInstanceOf(TextInput::class, $component);

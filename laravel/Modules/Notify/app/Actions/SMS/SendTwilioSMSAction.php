@@ -24,7 +24,7 @@ final class SendTwilioSMSAction implements SmsActionContract
 
     private TwilioData $twilioData;
 
-    /** @var array<string, mixed> */
+    /** @var array{status_code?: int, status_txt?: string} */
     private array $vars = [];
 
     /**
@@ -54,7 +54,7 @@ final class SendTwilioSMSAction implements SmsActionContract
      * Execute the action.
      *
      * @param  SmsData  $smsData  I dati del messaggio SMS
-     * @return array<string, mixed> Risultato dell'operazione
+     * @return array{status_code: int, status_txt: string} Risultato dell'operazione
      *
      * @throws Exception In caso di errore durante l'invio
      */

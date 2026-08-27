@@ -32,7 +32,7 @@ related:
 - [roadmap/theme-customization](./roadmap/theme-customization.md)
 
 ## Root
-- [CHANGELOG](./CHANGELOG.md)
+- [CHANGELOG](./changelog.md)
 - [CONFLICT-RESOLUTION-SUMMARY](./CONFLICT-RESOLUTION-SUMMARY.md)
 - [CONFLICT-RESOLUTION-SUMMARY](./CONFLICT_RESOLUTION_SUMMARY.md)
 - [METODI-DUPLICATI-ANALISI](./METODI-DUPLICATI-ANALISI.md)
@@ -154,10 +154,10 @@ related:
 - [skills/README](./skills/README.md)
 
 ## Wiki
-- [wiki/SCHEMA](./wiki/SCHEMA.md)
+- [wiki/SCHEMA](./wiki/schema.md)
 - [wiki/bmad-method](./wiki/bmad-method.md)
-- [wiki/commands/INDEX](./wiki/commands/INDEX.md)
-- [wiki/concepts/INDEX](./wiki/concepts/INDEX.md)
+- [wiki/commands/INDEX](./wiki/commands/index.md)
+- [wiki/concepts/INDEX](./wiki/concepts/index.md)
 - [wiki/concepts/code-redundancy-theme](./wiki/concepts/code-redundancy-theme.md)
 - [wiki/concepts/context-overflow-prevention](./wiki/concepts/context-overflow-prevention.md)
 - [wiki/concepts/method-name-homonyms](./wiki/concepts/method-name-homonyms.md)
@@ -170,10 +170,10 @@ related:
 - [wiki/concepts/theme-zero-operating-focus](./wiki/concepts/theme-zero-operating-focus.md)
 - [wiki/index](./wiki/index.md)
 - [wiki/log](./wiki/log.md)
-- [wiki/memories/INDEX](./wiki/memories/INDEX.md)
+- [wiki/memories/INDEX](./wiki/memories/index.md)
 - [wiki/overview](./wiki/overview.md)
-- [wiki/rules/INDEX](./wiki/rules/INDEX.md)
-- [wiki/skills/INDEX](./wiki/skills/INDEX.md)
+- [wiki/rules/INDEX](./wiki/rules/index.md)
+- [wiki/skills/INDEX](./wiki/skills/index.md)
 - [wiki/sources/context-compression-and-retrieval](./wiki/sources/context-compression-and-retrieval.md)
 - [wiki/sources/laravel13-theme-zero-composer-audit](./wiki/sources/laravel13-theme-zero-composer-audit.md)
 - [wiki/sources/theme-zero-product-and-roadmap-docs](./wiki/sources/theme-zero-product-and-roadmap-docs.md)

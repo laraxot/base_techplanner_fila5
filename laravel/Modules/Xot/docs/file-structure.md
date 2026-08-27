@@ -22,6 +22,7 @@ Warning: Ambiguous class resolution, "Modules\Cms\Database\Seeders\CmsDatabaseSe
 - **Factories**: `PageFactory.php`, `ConfFactory.php`, `ModuleFactory.php`, etc.
 
 ## Correct File Structure Patterns
+
 ### ✅ Option 1: Traditional Laravel Structure (Recommended)
 
 ```
@@ -35,6 +36,18 @@ Modules/{ModuleName}/
     ├── Application/
     ├── Events/
     ├── Listeners/
+
+│   │   ├── PageFactory.php
+│   │   ├── ConfFactory.php
+│   │   └── ...
+│   ├── migrations/
+│   │   ├── 2024_01_01_000000_create_pages_table.php
+│   │   └── ...
+│   └── seeders/
+│       └── CmsDatabaseSeeder.php
+└── app/
+
+>>>>>>> .merge_file_JDcSnf
     ├── Models/
     ├── Filament/
     └── ...
@@ -98,6 +111,8 @@ Modules/{ModuleName}/
 ### 1. **Autoloader Confusion**
 - PHP autoloader cannot determine which file to use
 - "First found" approach leads to un<nome progetto>able behavior
+- "First found" approach leads to unpredictable behavior
+>>>>>>> .merge_file_JDcSnf
 - Different environments may load different files
 
 ### 2. **Maintenance Nightmare**
@@ -179,6 +194,8 @@ Modules/
 │   └── app/
 └── healthcare_app/
 └── ExternalProject/
+└── Quaeris/
+>>>>>>> .merge_file_JDcSnf
     ├── database/
     │   ├── factories/
     │   ├── migrations/
@@ -215,3 +232,4 @@ find Modules -name "*.php" | grep -E "(factories|seeders)" | sort
 ---
 
 **Philosophy Summary**: In Laraxot, consistency and <nome progetto>ability are more valuable than flexibility. Choose one file structure pattern and apply it consistently across all modules. Eliminate ambiguity to ensure reliable, <nome progetto>able behavior.
+**Philosophy Summary**: In Laraxot, consistency and predictability are more valuable than flexibility. Choose one file structure pattern and apply it consistently across all modules. Eliminate ambiguity to ensure reliable, predictable behavior.

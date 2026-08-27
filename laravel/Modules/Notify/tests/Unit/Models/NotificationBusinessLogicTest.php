@@ -3,15 +3,17 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Models;
+
 use Modules\Notify\Models\Notification;
 use Modules\Notify\Tests\TestCase;
+use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Notify\Tests\TestCase::class);
+uses(TestCase::class)->group('notify-db');
 
 describe('Notification Business Logic', function () {
     test('notification extends xot base model', function () {
-        $notification = new Notification;
+        $notification = new Notification();
 
         Assert::assertInstanceOf(Notification::class, $notification);
     });
@@ -39,7 +41,7 @@ describe('Notification Business Logic', function () {
             'data' => ['title' => 'Test', 'message' => 'Hello World'],
         ]);
 
-        $data = \assertNotifyArray($notification->data);
+        $data = XotBasePest::assertArray($notification->data);
         Assert::assertSame('Test', $data['title']);
     });
 
@@ -76,7 +78,7 @@ describe('Notification Business Logic', function () {
             'channels' => ['mail', 'sms', 'database'],
         ]);
 
-        $channels = \assertNotifyArray($notification->channels);
+        $channels = XotBasePest::assertArray($notification->channels);
         Assert::assertContains('mail', $channels);
         Assert::assertContains('sms', $channels);
     });

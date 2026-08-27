@@ -1,3 +1,13 @@
+
+---
+title: "Regole per i Percorsi Relativi nella Documentazione"
+module: xot
+type: integration
+tags: [integrations, modules, xot]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Regole per i Percorsi Relativi nella Documentazione
 
 > **Collegamenti correlati**
@@ -5,6 +15,16 @@
 > - [Struttura dei Prompt](./prompts.md)
 > - [Regole per i Prompt](./prompt_rules.md)
 > - [README.md toolkit bashscripts](README.md)
+
+# Regole per i Percorsi Relativi nella Documentazione
+
+> **Collegamenti correlati**
+> - [README.md documentazione generale](../../../../docs/readme.md)
+> - [Struttura dei Prompt](./prompts.md)
+> - [Regole per i Prompt](./prompt_rules.md)
+> - [README.md toolkit bashscripts](../../../../bashscripts/docs/readme.md)
+
+>>>>>>> .merge_file_02nOud
 
 ## Regola Fondamentale
 
@@ -30,6 +50,8 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 
 ```markdown
 [Documentazione Root](../../../../../docs/readme.md)
+[Documentazione Root](../../../../docs/readme.md)
+>>>>>>> .merge_file_02nOud
 ```
 
 ## Errori Comuni da Evitare
@@ -65,6 +87,8 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 |-------------------------|------------------------------|----------------------------|
 | `/docs/README.md` | `/laravel/Modules/Xot/docs/README.md` | `./laravel/Modules/Xot/docs/README.md` |
 | `/laravel/Modules/Xot/docs/README.md` | `/docs/README.md` | `../../../../../docs/README.md` |
+| `/laravel/Modules/Xot/docs/README.md` | `/docs/README.md` | `../../../../docs/README.md` |
+>>>>>>> .merge_file_02nOud
 | `/laravel/Modules/Xot/docs/README.md` | `/laravel/Modules/User/docs/README.md` | `../../../User/docs/README.md` |
 | `/laravel/Modules/Xot/docs/structure.md` | `/laravel/Modules/Xot/docs/README.md` | `./README.md` |
 

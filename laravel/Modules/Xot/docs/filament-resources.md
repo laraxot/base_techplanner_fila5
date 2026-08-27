@@ -96,6 +96,10 @@ return [
 * [filament-resources.md](../../../Gdpr/docs/filament-resources.md)
 * [filament-resources.md](../../../Xot/docs/filament-resources.md)
 * [filament-resources.md](../../../Cms/docs/filament-resources.md)
+* [filament-resources.md](../../../gdpr/docs/filament-resources.md)
+* [filament-resources.md](../../../xot/docs/filament-resources.md)
+* [filament-resources.md](../../../cms/docs/filament-resources.md)
+>>>>>>> .merge_file_IpAaeN
 
 ### Versione Incoming
 

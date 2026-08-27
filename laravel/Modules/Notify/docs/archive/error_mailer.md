@@ -1,3 +1,12 @@
+---
+title: "Error Mailer System"
+module: notify
+type: integration
+tags: [integrations, modules, notify]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Error Mailer System
 
 ## Panoramica

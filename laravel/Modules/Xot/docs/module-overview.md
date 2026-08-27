@@ -83,6 +83,8 @@ Esempi chiave (non esaustivi):
 
 - `README.md` (indice ad alto livello)
 - `FILOSOFIA_MODULO_XOT.md` (filosofia/politica/dogmi, generato 2025-12-24)
+- `FILOSOFIA_MODULO_XOT.md` (filosofia/politica/dogmi, generato [DATE])
+>>>>>>> .merge_file_vOfVEv
 - `filament/` e `consolidated/` (guide dettagliate)
 
 ## Da migliorare (DRY + KISS)

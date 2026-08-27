@@ -13,8 +13,10 @@ class ListMailTemplates extends LangBaseListRecords
 {
     protected static string $resource = MailTemplateResource::class;
 
-    #[Override]
-    public function getTableColumns(): array
+    /**
+     * @return array<string, TextColumn>
+     */
+    public static function mailTemplateTableColumns(): array
     {
         return [
             'slug' => TextColumn::make('slug')->searchable()->sortable(),
@@ -22,5 +24,11 @@ class ListMailTemplates extends LangBaseListRecords
             'subject' => TextColumn::make('subject')->searchable()->sortable(),
             'counter' => TextColumn::make('counter')->searchable()->sortable(),
         ];
+    }
+
+    #[Override]
+    public function getTableColumns(): array
+    {
+        return self::mailTemplateTableColumns();
     }
 }

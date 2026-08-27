@@ -1,6 +1,8 @@
 # Risoluzione Conflitti Git - 6 Gennaio 2025
 
 ## Data: 2025-01-06
+## Data: [DATE]
+>>>>>>> .merge_file_XgeRYz
 
 ## Contesto
 Sono stati identificati e risolti conflitti Git in diversi file del progetto <nome progetto>, coinvolgendo moduli Geo, User e tema Two.
@@ -194,6 +196,16 @@ php artisan lang:check
 ### Modulo Xot
 - [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution-2025-01-06.md)
 
+- [Conflict Resolution](laravel/modules/geo/project_docs/conflict-resolution.md)
+
+### Modulo User
+- [Theme Translation Conflicts](laravel/modules/user/project_docs/theme-translation-conflicts-resolution.md)
+
+### Modulo Xot
+- [Git Conflicts Resolution](laravel/modules/xot/project_docs/git-conflicts-resolution-[date].md)
+
+>>>>>>> .merge_file_XgeRYz
+
 ## Best Practices Applicate
 
 ### 1. Gestione Conflitti
@@ -252,12 +264,23 @@ php artisan lang:check
 
 ### Documentazione Generale
 - [Translation Standards](../../project_docs/translation-standards.md)
+- [PHPStan Guidelines](../../project_docs/phpstan-usage.md)
+
+- [Geo Conflict Resolution](laravel/modules/geo/project_docs/conflict-resolution.md)
+- [User Theme Conflicts](laravel/modules/user/project_docs/theme-translation-conflicts-resolution.md)
+
+### Documentazione Generale
+- [Translation Standards](../../project_docs/translation-standards.md)
 - [PHPStan Guidelines](../../project_docs/phpstan_usage.md)
+
+>>>>>>> .merge_file_XgeRYz
 - [Git Best Practices](../../project_docs/git-best-practices.md)
 
 ---
 
 **Ultimo aggiornamento**: 2025-01-06
+**Ultimo aggiornamento**: [DATE]
+>>>>>>> .merge_file_XgeRYz
 **Autore**: Sistema di correzione automatica
 **Stato**: ✅ Completato
 **Stato**: ✅ Completato

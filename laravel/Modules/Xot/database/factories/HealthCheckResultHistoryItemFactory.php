@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\Xot\Models\HealthCheckResultHistoryItem;
 
 /**
- * HealthCheckResultHistoryItem Factory.
+ * HealthCheckResultHistoryItem Factory
  *
  * @extends Factory<HealthCheckResultHistoryItem>
  */
@@ -16,9 +16,6 @@ class HealthCheckResultHistoryItemFactory extends Factory
 {
     protected $model = HealthCheckResultHistoryItem::class;
 
-    /**
-     * @return array<string, mixed>
-     */
     public function definition(): array
     {
         return [

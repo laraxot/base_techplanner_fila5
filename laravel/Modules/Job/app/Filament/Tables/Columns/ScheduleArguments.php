@@ -9,7 +9,7 @@ use Webmozart\Assert\Assert;
 
 class ScheduleArguments extends XotBaseTextColumn
 {
-    protected string $view = 'job::filament.columns.schedule-arguments';
+    protected string $view = 'job::filament.tables.columns.schedule-arguments';
 
     protected bool $withValue = true;
 

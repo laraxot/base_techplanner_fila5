@@ -39,7 +39,7 @@
         "nwidart/laravel-modules": "^13.0",
         "predis/predis": "*",
         "spatie/cpu-load-health-check": "^1.0",
-        "spatie/laravel-data": "^4.7",
+        "spatie/laravel-data": "*",
         "spatie/laravel-health": "^1.29",
         "spatie/laravel-model-states": "*",
         "spatie/laravel-model-status": "*",
@@ -69,15 +69,21 @@
         "laravel/pint": "^1.18",
         "laravel/sail": "^1.41",
         "mockery/mockery": "^1.6",
-        "nunomaduro/collision": "^8.6",
-        "nunomaduro/phpinsights": "*",
+        "nunomaduro/collision": "^8.9.5",
         "orchestra/testbench": "*",
-        "pestphp/pest": "*",
-        "pestphp/pest-plugin-type-coverage": "*",
+        "pestphp/pest": "^5.1",
+        "pestphp/pest-plugin-faker": "^5.0",
+        "pestphp/pest-plugin-laravel": "^5.0",
+        "pestphp/pest-plugin-livewire": "^5.0",
+        "pestphp/pest-plugin-phpstan": "^5.0",
+        "pestphp/pest-plugin-profanity": "^5.0",
+        "pestphp/pest-plugin-rector": "^5.0",
+        "pestphp/pest-plugin-type-coverage": "^5.0",
+        "phpstan/extension-installer": "^1.4",
+        "rector/rector": "^2.6",
         "thecodingmachine/phpstan-safe-rule": "*"
     },
     "require-dev_comment": {
-        "pestphp/pest-plugin-laravel": "*",
         "spatie/laravel-error-solutions": "*"
     },
     "repositories_comment": "Local path packages (coolsam/panel-modules) moved to root composer.json for proper priority. DO NOT add Packagist here - it must remain non-canonical in root.",
@@ -104,14 +110,17 @@
             "Modules\\Xot\\Tests\\": "tests/",
             "Coolsam\\FilamentModules\\": "packages/coolsam/panel-modules/src/"
         },
+        "psr-4_comment": {
+            "Modules\\Xot\\Database\\Migrations\\": "database/migrations/"
+        },
         "files": [
             "helpers/Helper.php"
         ]
     },
     "autoload-dev": {
-        "files": [
-            "tests/Support/helpers.php"
-        ]
+        "psr-4": {
+            "Modules\\Xot\\Tests\\": "tests/"
+        }
     },
     "scripts": {
         "analyse": "vendor/bin/phpstan analyse",

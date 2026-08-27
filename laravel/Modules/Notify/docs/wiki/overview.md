@@ -97,6 +97,7 @@ docs/
 
 1. **User** — autenticazione, profilo, GDPR compliance
 2. **Fixcity** — ticket system, segnalazioni civiche, workflow
+2. **App** — ticket system, segnalazioni civiche, workflow
 3. **Geo** — geolocalizzazione, mappe, OpenStreetMap
 4. **Media** — gestione file, upload, storage S3
 5. **Seo** — meta tags, structured data, sitemap

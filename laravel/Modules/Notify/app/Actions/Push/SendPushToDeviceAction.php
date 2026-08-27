@@ -21,8 +21,11 @@ class SendPushToDeviceAction
     private array $platforms = ['fcm', 'apns', 'webpush'];
 
     /**
+     * Chiave = piattaforma; valore = esito di `SendPushToPlatformAction` oppure la
+     * shape di errore costruita qui sotto. `success` è l'unica chiave comune ai due rami.
+     *
      * @param  array<string, mixed>  $data
-     * @return array<string, array<string, mixed>>
+     * @return array<string, array{success: bool, ...}>
      */
     public function execute(string $token, PushNotificationData $notification, array $data = []): array
     {

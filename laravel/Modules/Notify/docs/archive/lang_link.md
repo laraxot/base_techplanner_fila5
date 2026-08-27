@@ -1,3 +1,12 @@
+---
+title: "Collegamento alle Traduzioni del Modulo Notify"
+module: notify
+type: integration
+tags: [integrations, modules, notify]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Collegamento alle Traduzioni del Modulo Notify
 
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/project_docs/).

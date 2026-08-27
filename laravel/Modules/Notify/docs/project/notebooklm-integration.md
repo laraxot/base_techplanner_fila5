@@ -113,6 +113,7 @@ python scripts/run.py ask_question.py \
 ```
 
 ## Usage Patterns for FixCity Project
+## Usage Patterns for Notify Project
 
 ### Pattern 1: Technical Research (BMAD Phase)
 
@@ -253,6 +254,8 @@ Create these NotebookLM notebooks for FixCity:
 4. **Project Documentation**
    - Upload: FixCity docs, AGENTS.md, .windsurfrules
    - Topics: fixcity, project, conventions
+   - Upload: Notify docs, agents.md, .windsurfrules
+   - Topics: laraxot, project, conventions
    - Use: Project-specific queries
 
 ### Environment Configuration
@@ -271,6 +274,8 @@ TYPING_WPM_MAX=240
 
 # Default notebook (FixCity docs)
 DEFAULT_NOTEBOOK_ID=fixcity-project-docs
+# Default notebook (Notify docs)
+DEFAULT_NOTEBOOK_ID=laraxot-project-docs
 ```
 
 ## Troubleshooting
@@ -355,6 +360,7 @@ python scripts/run.py ask_question.py \
 # Step 2: Verify with project docs
 python scripts/run.py ask_question.py \
   --question "Check FixCity project docs: what are the rules for Filament resources?"
+  --question "Check Notify project docs: what are the rules for Filament resources?"
 
 # Step 3: Plan phase
 /gsd-plan-phase 1
@@ -389,6 +395,7 @@ python scripts/run.py ask_question.py \
 1. ✅ Skill installed and verified
 2. ⏳ Authenticate with Google account
 3. ⏳ Create FixCity NotebookLM notebooks
+3. ⏳ Create Notify NotebookLM notebooks
 4. ⏳ Upload project documentation
 5. ⏳ Integrate with BMAD workflow
 6. ⏳ Store insights in OpenViking

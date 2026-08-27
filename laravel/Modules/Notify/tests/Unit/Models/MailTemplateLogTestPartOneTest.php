@@ -20,11 +20,12 @@ namespace Modules\Notify\Tests\Unit\Models;
 
 use Modules\Notify\Models\MailTemplateLog;
 use Modules\Notify\Tests\TestCase;
+use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('notify-db');
 
 beforeEach(function (): void {
     /** @var TestCase $this */
@@ -53,7 +54,7 @@ describe('Mail Template Log PartOne', function (): void {
             'sent_at' => now(),
             'delivered_at' => now()->addMinutes(1),
         ]);
-        \assertNotifyTableHas('mail_template_logs', [
+        XotBasePest::assertTableHas('notify', 'mail_template_logs', [
             'id' => $log->id,
             'template_id' => 123,
             'mailable_type' => 'App\Mail\WelcomeMail',
@@ -132,14 +133,14 @@ describe('Mail Template Log PartOne', function (): void {
             'status' => 'sent',
             'data' => $data,
         ]);
-        \assertNotifyTableHas('mail_template_logs', [
+        XotBasePest::assertTableHas('notify', 'mail_template_logs', [
             'id' => $log->id,
             'data' => json_encode($data),
         ]);
         Assert::assertEquals('user@example.com', $log->data['to']);
         Assert::assertEquals(['cc1@example.com', 'cc2@example.com'], $log->data['cc']);
-        Assert::assertEquals('John Doe', \notifyArrayGet($log->data, 'variables', 'name'));
-        Assert::assertEquals('Example Corp', \notifyArrayGet($log->data, 'variables', 'company'));
+        Assert::assertEquals('John Doe', TestCase::notifyArrayGet($log->data, 'variables', 'name'));
+        Assert::assertEquals('Example Corp', TestCase::notifyArrayGet($log->data, 'variables', 'company'));
     });
 
     test('_can_store_json_metadata', function (): void {
@@ -168,15 +169,15 @@ describe('Mail Template Log PartOne', function (): void {
             'status' => 'failed',
             'metadata' => $metadata,
         ]);
-        \assertNotifyTableHas('mail_template_logs', [
+        XotBasePest::assertTableHas('notify', 'mail_template_logs', [
             'id' => $log->id,
             'metadata' => json_encode($metadata),
         ]);
         Assert::assertEquals('smtp', $log->metadata['provider']);
         Assert::assertEquals('queue_123', $log->metadata['queue_id']);
         Assert::assertEquals(3, $log->metadata['attempts']);
-        Assert::assertEquals('SMTP_ERROR', \notifyArrayGet($log->metadata, 'error_details', 'code'));
-        Assert::assertEquals(4000, \notifyArrayGet($log->metadata, 'performance', 'total_time'));
+        Assert::assertEquals('SMTP_ERROR', TestCase::notifyArrayGet($log->metadata, 'error_details', 'code'));
+        Assert::assertEquals(4000, TestCase::notifyArrayGet($log->metadata, 'performance', 'total_time'));
     });
 
     test('_can_update_status_and_timestamps', function (): void {
@@ -192,15 +193,15 @@ describe('Mail Template Log PartOne', function (): void {
             'sent_at' => now(),
             'status_message' => 'Email sent successfully',
         ]);
-        \assertNotifyTableHas('mail_template_logs', [
+        XotBasePest::assertTableHas('notify', 'mail_template_logs', [
             'id' => $log->id,
             'status' => 'sent',
             'status_message' => 'Email sent successfully',
         ]);
 
-        Assert::assertEquals('sent', \assertFreshModel($log, MailTemplateLog::class)->status);
-        Assert::assertNotNull(\assertFreshModel($log, MailTemplateLog::class)->sent_at);
-        Assert::assertEquals('Email sent successfully', \assertFreshModel($log, MailTemplateLog::class)->status_message);
+        Assert::assertEquals('sent', XotBasePest::assertFreshModel($log, MailTemplateLog::class)->status);
+        Assert::assertNotNull(XotBasePest::assertFreshModel($log, MailTemplateLog::class)->sent_at);
+        Assert::assertEquals('Email sent successfully', XotBasePest::assertFreshModel($log, MailTemplateLog::class)->status_message);
     });
 
     test('_can_mark_as_delivered', function (): void {
@@ -216,13 +217,13 @@ describe('Mail Template Log PartOne', function (): void {
             'status' => 'delivered',
             'delivered_at' => now()->addMinutes(1),
         ]);
-        \assertNotifyTableHas('mail_template_logs', [
+        XotBasePest::assertTableHas('notify', 'mail_template_logs', [
             'id' => $log->id,
             'status' => 'delivered',
         ]);
 
-        Assert::assertEquals('delivered', \assertFreshModel($log, MailTemplateLog::class)->status);
-        Assert::assertNotNull(\assertFreshModel($log, MailTemplateLog::class)->delivered_at);
+        Assert::assertEquals('delivered', XotBasePest::assertFreshModel($log, MailTemplateLog::class)->status);
+        Assert::assertNotNull(XotBasePest::assertFreshModel($log, MailTemplateLog::class)->delivered_at);
     });
 
     test('_can_mark_as_failed', function (): void {
@@ -238,15 +239,15 @@ describe('Mail Template Log PartOne', function (): void {
             'failed_at' => now(),
             'status_message' => 'SMTP connection failed',
         ]);
-        \assertNotifyTableHas('mail_template_logs', [
+        XotBasePest::assertTableHas('notify', 'mail_template_logs', [
             'id' => $log->id,
             'status' => 'failed',
             'status_message' => 'SMTP connection failed',
         ]);
 
-        Assert::assertEquals('failed', \assertFreshModel($log, MailTemplateLog::class)->status);
-        Assert::assertNotNull(\assertFreshModel($log, MailTemplateLog::class)->failed_at);
-        Assert::assertEquals('SMTP connection failed', \assertFreshModel($log, MailTemplateLog::class)->status_message);
+        Assert::assertEquals('failed', XotBasePest::assertFreshModel($log, MailTemplateLog::class)->status);
+        Assert::assertNotNull(XotBasePest::assertFreshModel($log, MailTemplateLog::class)->failed_at);
+        Assert::assertEquals('SMTP connection failed', XotBasePest::assertFreshModel($log, MailTemplateLog::class)->status_message);
     });
 
     test('_can_mark_as_opened', function (): void {
@@ -261,12 +262,11 @@ describe('Mail Template Log PartOne', function (): void {
         $log->update([
             'opened_at' => now()->addMinutes(5),
         ]);
-        \assertNotifyTableHas('mail_template_logs', [
+        XotBasePest::assertTableHas('notify', 'mail_template_logs', [
             'id' => $log->id,
-            'opened_at' => \assertFreshModel($log, MailTemplateLog::class)->opened_at,
+            'opened_at' => XotBasePest::assertFreshModel($log, MailTemplateLog::class)->opened_at,
         ]);
 
-        Assert::assertNotNull(\assertFreshModel($log, MailTemplateLog::class)->opened_at);
+        Assert::assertNotNull(XotBasePest::assertFreshModel($log, MailTemplateLog::class)->opened_at);
     });
-
 });

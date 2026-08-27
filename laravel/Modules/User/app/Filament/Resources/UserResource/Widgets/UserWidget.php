@@ -18,11 +18,6 @@ class UserWidget extends XotBaseWidget
 
     protected string $view = 'user::filament.resources.user.widgets.user-widget';
 
-    public function getFormSchema(): array
-    {
-        return [];
-    }
-
     /**
      * @return array<string, mixed>
      */

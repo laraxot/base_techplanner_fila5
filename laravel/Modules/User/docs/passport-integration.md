@@ -5,8 +5,8 @@ tags: [passport, integration]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "passport-integration laravel passport integration - architettura completa"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+issues: ["https://github.com/provtv/<nome repository>/issues/124"]
+discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -520,7 +520,7 @@ $ ./vendor/bin/phpstan analyse Modules --memory-limit=-1
 
 ### Documentazione Correlata
 - [FILOSOFIA_MODULO_USER.md](./filosofia-modulo-user.md) - Filosofia generale
-- [README.md](./readme.md) - Overview modulo
+- [README.md](./README.md) - Overview modulo
 - [business-logic-deep-dive-4.md](./business-logic-deep-dive.md) - Business logic completa
 
 ### Documentazione Esterna

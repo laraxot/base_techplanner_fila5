@@ -111,3 +111,8 @@ class SendSMSPage extends XotBasePage implements HasForms  // Estensione corrett
 - Mantieni aggiornata la documentazione delle dipendenze
 - Segui le convenzioni di naming e struttura
 ``` 
+<<<<<<< .merge_file_BDhsu6
+=======
+
+```
+>>>>>>> .merge_file_j0z1zB

@@ -702,7 +702,11 @@ tests/Browser/AdminManageTicketTest.php
 - [Sixteen Theme Docs](Themes/Sixteen/docs/)
 
 ### Best Practices
+<<<<<<< .merge_file_y4obY7
 - [Laravel Boost Guidelines](claude.md)
+=======
+- [Laravel Boost Guidelines](CLAUDE.md)
+>>>>>>> .merge_file_bmpabr
 - [Architecture Patterns](docs/architecture/)
 
 ---

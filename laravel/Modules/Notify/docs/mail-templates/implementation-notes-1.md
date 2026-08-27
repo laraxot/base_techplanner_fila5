@@ -49,12 +49,20 @@ L'implementazione corretta degli allegati richiede una struttura specifica. Ecco
    ```php
    $attachments = [
        [
+<<<<<<< .merge_file_Jh7ii4
 'path' => '/var/www/html/Quaeris/public_html/images/avatars/default-3.svg',
+=======
+'path' => '/var/www/_bases/base_ptvx_fila5/public_html/images/avatars/default-3.svg',
+>>>>>>> .merge_file_lHqMrh
            'as' => 'logo.png',
            'mime' => 'image/png'
        ],
        [
+<<<<<<< .merge_file_Jh7ii4
 'path' => '/var/www/html/Quaeris/public_html/images/avatars/default-3.svg',
+=======
+'path' => '/var/www/_bases/base_ptvx_fila5/public_html/images/avatars/default-3.svg',
+>>>>>>> .merge_file_lHqMrh
            'as' => 'logo.png',
            'mime' => 'image/png'
        ]

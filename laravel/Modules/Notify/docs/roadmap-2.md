@@ -229,7 +229,11 @@ Level 3: Themes
 
 #### Wave 2: Core Structure 🟡 IN PROGRESS
 - 🟡 Create central roadmap.md (THIS FILE)
+<<<<<<< .merge_file_DBz1Qd
 - [ ] Create unified INDEX.md
+=======
+- [ ] Create unified index.md
+>>>>>>> .merge_file_ljMUxj
 - [ ] Create MODULE_ROADMAPS.md
 - [ ] Create TIMELINE.md
 - [ ] Archive old roadmap variants
@@ -358,11 +362,19 @@ Each of the 18 modules has its own documentation:
 ```
 docs/
 ├── roadmap.md (THIS FILE) - Central hub, all phases
+<<<<<<< .merge_file_DBz1Qd
 ├── INDEX.md - Master navigation, updated with links
 ├── PROJECT/ - Project metadata
 │   ├── README.md
 │   ├── architecture.md
 │   └── CHANGELOG.md
+=======
+├── index.md - Master navigation, updated with links
+├── PROJECT/ - Project metadata
+│   ├── README.md
+│   ├── architecture.md
+│   └── changelog.md
+>>>>>>> .merge_file_ljMUxj
 └── archive/
     └── roadmaps/
         ├── analysis.md - Consolidation analysis
@@ -438,7 +450,11 @@ Sep 2024          Q4 2025          Q1 2026          Q2 2026          2027+
 
 1. **Phase 11 Wave 2**: Complete core documentation structure
    - ✅ Create central roadmap.md (THIS FILE)
+<<<<<<< .merge_file_DBz1Qd
    - 🟡 Update INDEX.md with navigation
+=======
+   - 🟡 Update index.md with navigation
+>>>>>>> .merge_file_ljMUxj
    - 🟡 Create MODULE_ROADMAPS.md
    - 🟡 Create TIMELINE.md
 
@@ -464,7 +480,11 @@ Sep 2024          Q4 2025          Q1 2026          Q2 2026          2027+
 - 🟡 Phase 12+ outlined with objectives and timelines
 - 📅 Old roadmap files archived (not deleted)
 - 📅 Migration guide created for old locations
+<<<<<<< .merge_file_DBz1Qd
 - 📅 INDEX.md updated with roadmap link
+=======
+- 📅 index.md updated with roadmap link
+>>>>>>> .merge_file_ljMUxj
 - 📅 All internal links verified (no 404s)
 - 📅 Module-specific roadmaps linked from central hub
 

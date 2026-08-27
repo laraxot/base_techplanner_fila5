@@ -24,7 +24,7 @@ class SendPushToPlatformAction
 
     /**
      * @param  array<string, mixed>  $data
-     * @return array<string, mixed>
+     * @return array{success: bool, message_id: mixed, response: mixed}|array{success: bool, message: string, platform: string}
      */
     public function execute(string $platform, string $token, PushNotificationData $notification, array $data = []): array
     {
@@ -37,8 +37,11 @@ class SendPushToPlatformAction
     }
 
     /**
+     * `message_id` e `response` restano `mixed`: vengono da `Response::json()`, che
+     * decodifica il corpo HTTP di FCM senza contratto.
+     *
      * @param  array<string, mixed>  $data
-     * @return array<string, mixed>
+     * @return array{success: bool, message_id: mixed, response: mixed}
      */
     private function sendFCMNotification(string $token, PushNotificationData $notification, array $data): array
     {
@@ -86,7 +89,7 @@ class SendPushToPlatformAction
     }
 
     /**
-     * @return array<string, mixed>
+     * @return array{success: bool, message: string, platform: string}
      */
     private function sendAPNSNotification(): array
     {
@@ -99,7 +102,7 @@ class SendPushToPlatformAction
 
     /**
      * @param  array<string, mixed>  $data
-     * @return array<string, mixed>
+     * @return array{success: bool, message: string, platform: string}
      */
     private function sendWebPushNotification(PushNotificationData $notification, array $data): array
     {

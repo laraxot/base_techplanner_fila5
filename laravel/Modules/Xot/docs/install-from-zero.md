@@ -182,6 +182,20 @@ create Folders :
  git submodule add https://github.com/laraxot/module_user_fila5.git User
  git submodule add https://github.com/laraxot/module_notify_fila5.git Notify
  git submodule add https://github.com/laraxot/module_ui_fila5.git UI
+ git submodule add https://github.com/laraxot/module_xot_fila5.git Xot
+ git submodule add https://github.com/laraxot/module_tenant_fila5.git Tenant
+ git submodule add https://github.com/laraxot/module_user_fila5.git User
+ git submodule add https://github.com/laraxot/module_notify_fila5.git Notify
+ git submodule add https://github.com/laraxot/module_ui_fila5.git UI
+
+ git submodule add https://github.com/laraxot/module_xot_fila3.git Xot
+ git submodule add https://github.com/laraxot/module_tenant_fila3.git Tenant
+ git submodule add https://github.com/laraxot/module_user_fila3.git User
+ git submodule add https://github.com/laraxot/module_notify_fila3.git Notify
+ git submodule add https://github.com/laraxot/module_ui_fila3.git UI
+
+>>>>>>> .merge_file_OLvESu
+>>>>>>> .merge_file_0jO20R
 ~~~
 
 from folder laravel

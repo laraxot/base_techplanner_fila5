@@ -42,6 +42,11 @@ DELETE: /var/www/_bases/base_fixcity_fila5/laravel/Modules/User/docs/volt_errors
 DELETE: /var/www/_bases/base_fixcity_fila5/laravel/Modules/User/docs/volts.md
 DELETE: /var/www/_bases/base_fixcity_fila5/laravel/Modules/User/docs/archive/historical/volt-errors.md
 DELETE: /var/www/_bases/base_fixcity_fila5/laravel/Modules/User/docs/archive/volt_errors.md
+KEEP: /var/www/_bases/base_ptv_fila5/laravel/Modules/User/docs/volt-errors.md
+DELETE: /var/www/_bases/base_ptv_fila5/laravel/Modules/User/docs/volt_errors.md
+DELETE: /var/www/_bases/base_ptv_fila5/laravel/Modules/User/docs/volts.md
+DELETE: /var/www/_bases/base_ptv_fila5/laravel/Modules/User/docs/archive/historical/volt-errors.md
+DELETE: /var/www/_bases/base_ptv_fila5/laravel/Modules/User/docs/archive/volt_errors.md
 ```
 **Hash:** `00a518f226eb2ad83aeb1528ac1202db`
 
@@ -50,6 +55,9 @@ DELETE: /var/www/_bases/base_fixcity_fila5/laravel/Modules/User/docs/archive/vol
 KEEP: /var/www/_bases/base_fixcity_fila5/laravel/Modules/Xot/docs/archive/historical/general-rules.md
 DELETE: /var/www/_bases/base_fixcity_fila5/laravel/Modules/Xot/docs/archive/historical/general-rules-1.md
 DELETE: /var/www/_bases/base_fixcity_fila5/laravel/Modules/Xot/docs/archive/general-rules-1.md
+KEEP: /var/www/_bases/base_ptv_fila5/laravel/Modules/Xot/docs/archive/historical/general-rules.md
+DELETE: /var/www/_bases/base_ptv_fila5/laravel/Modules/Xot/docs/archive/historical/general-rules-1.md
+DELETE: /var/www/_bases/base_ptv_fila5/laravel/Modules/Xot/docs/archive/general-rules-1.md
 ```
 **Hash:** `00730f253d3c86417e551745a1b50ad0`
 
@@ -61,6 +69,12 @@ DELETE: /var/www/_bases/base_fixcity_fila5/laravel/Modules/Cms/docs/migrations/0
 DELETE: /var/www/_bases/base_fixcity_fila5/laravel/Modules/Cms/docs/migrations/archive/theme-content-to-page-component.md
 DELETE: /var/www/_bases/base_fixcity_fila5/laravel/Modules/Cms/docs/migrations/archive/02-theme-content-to-page-component.md
 DELETE: /var/www/_bases/base_fixcity_fila5/laravel/Modules/Cms/docs/migrations/archive/02_theme_content_to_page_component.md
+KEEP: /var/www/_bases/base_ptv_fila5/laravel/Modules/Cms/docs/migrations/theme-content-to-page-component.md
+DELETE: /var/www/_bases/base_ptv_fila5/laravel/Modules/Cms/docs/migrations/02-theme-content-to-page-component.md
+DELETE: /var/www/_bases/base_ptv_fila5/laravel/Modules/Cms/docs/migrations/02_theme_content_to_page_component.md
+DELETE: /var/www/_bases/base_ptv_fila5/laravel/Modules/Cms/docs/migrations/archive/theme-content-to-page-component.md
+DELETE: /var/www/_bases/base_ptv_fila5/laravel/Modules/Cms/docs/migrations/archive/02-theme-content-to-page-component.md
+DELETE: /var/www/_bases/base_ptv_fila5/laravel/Modules/Cms/docs/migrations/archive/02_theme_content_to_page_component.md
 ```
 **Hash:** `010ec58cafd3ef4bf79c91566188ca13`
 
@@ -87,6 +101,10 @@ DELETE: /var/www/_bases/base_fixcity_fila5/laravel/Modules/Cms/docs/migrations/a
 /var/www/_bases/base_fixcity_fila5/laravel/Modules/Xot/docs/00-index.md
 /var/www/_bases/base_fixcity_fila5/laravel/Modules/Xot/docs/README.md
 /var/www/_bases/base_fixcity_fila5/laravel/Modules/Xot/docs/readme.md
+/var/www/_bases/base_ptv_fila5/laravel/Modules/Xot/docs/00-index.md
+/var/www/_bases/base_ptv_fila5/laravel/Modules/Xot/docs/00-index.md
+/var/www/_bases/base_ptv_fila5/laravel/Modules/Xot/docs/README.md
+/var/www/_bases/base_ptv_fila5/laravel/Modules/Xot/docs/readme.md
 ```
 
 **Recommendation:** Enforce lowercase filenames with hyphens as word separators.
@@ -209,6 +227,7 @@ Xot/docs/
 **Multiple index files serving same purpose:**
 ```
 Xot/docs/00-INDEX.md
+Xot/docs/00-index.md
 Xot/docs/00-index.md
 Xot/docs/index.md
 Xot/docs/README.md

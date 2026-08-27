@@ -263,9 +263,18 @@ return [
 - [Best Practices Sistema](../../../../docs/core/best-practices.md)
 - [Convenzioni Sistema](../../../../docs/core/conventions.md)
 - [Template Modulo](../../../../docs/templates/module-template.md)
+- [Best Practices Sistema](../../../docs/core/best-practices.md)
+- [Convenzioni Sistema](../../../docs/core/conventions.md)
+- [Template Modulo](../../../docs/templates/module-template.md)
+>>>>>>> .merge_file_WZHtvf
 - [PHPStan Guide](../development/phpstan-guide.md)
 
 ---
 
 **Ultimo aggiornamento:** Gennaio 2025
+**Ultimo aggiornamento:** Gennaio 2025  
 **Versione:** 2.0 - Consolidata DRY + KISS
+=======
+**Versione:** 2.0 - Consolidata DRY + KISS
+>>>>>>> .merge_file_WZHtvf
+>>>>>>> .merge_file_Y21mbg

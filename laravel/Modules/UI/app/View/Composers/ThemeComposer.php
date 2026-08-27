@@ -18,12 +18,14 @@ final class ThemeComposer
         return view($view);
     }
 
-    public function metatag(string $index): mixed
+    public function metatag(string $index): string|bool|null
     {
         // $ris = self::__getStatic($index);
         // echo '<br/>['.$index.']['.$ris.']';
         // if ('' === $ris || null === $ris) {
-        return config('metatag.'.$index);
+        $value = config('metatag.'.$index);
+
+        return is_string($value) || is_bool($value) ? $value : null;
     }
 
     public function showScripts(): string

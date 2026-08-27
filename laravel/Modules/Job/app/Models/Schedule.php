@@ -96,11 +96,24 @@ class Schedule extends BaseModel
 {
     use ManagesFrequencies;
 
-    public const STATUS_INACTIVE = 0;
+    /**
+     * Valori storici, precedenti all'enum `Status`.
+     *
+     * La colonna `status` è castata a `Status`, che è **string-backed**
+     * (`'active'`, `'inactive'`, `'trashed'`): confrontarla con questi interi non
+     * restituisce mai una riga, ed è quello che facevano `scopeActive()` e
+     * `scopeInactive()`. Restano solo per chi legge dati vecchi; per filtrare si usa
+     * l'enum.
+     *
+     * @deprecated usare Status::Inactive
+     */
+    public const int STATUS_INACTIVE = 0;
 
-    public const STATUS_ACTIVE = 1;
+    /** @deprecated usare Status::Active */
+    public const int STATUS_ACTIVE = 1;
 
-    public const STATUS_TRASHED = 2;
+    /** @deprecated usare Status::Trashed */
+    public const int STATUS_TRASHED = 2;
 
     protected $fillable = [
         'command',
@@ -160,7 +173,7 @@ class Schedule extends BaseModel
      */
     public function scopeInactive(Builder $query): Builder
     {
-        return $query->where('status', self::STATUS_INACTIVE);
+        return $query->where('status', Status::Inactive);
     }
 
     /**
@@ -171,7 +184,7 @@ class Schedule extends BaseModel
      */
     public function scopeActive(Builder $query): Builder
     {
-        return $query->where('status', self::STATUS_ACTIVE);
+        return $query->where('status', Status::Active);
     }
 
     /**

@@ -36,8 +36,7 @@ class AnalyzeTranslationFiles extends Command
 
         // Collect all files and their keys
         foreach ($languages as $langDir) {
-            /** @var string $langDirPath */
-            $langDirPath = is_string($langDir) ? $langDir : (string) $langDir;
+            $langDirPath = is_scalar($langDir) ? (string) $langDir : '';
             $lang = basename($langDirPath);
             $files = File::files($langDirPath);
 
@@ -86,7 +85,6 @@ class AnalyzeTranslationFiles extends Command
 
     /**
      * @param  array<string, mixed>  $array
-     *
      * @return array<string, mixed>
      */
     private function flattenArray(array $array, string $prefix = ''): array

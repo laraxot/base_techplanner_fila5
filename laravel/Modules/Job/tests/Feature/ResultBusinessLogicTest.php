@@ -9,6 +9,13 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
+beforeEach(function (): void {
+    /** @var TestCase $this */
+    if (TestCase::jobDbUnavailable()) {
+        $this->markTestSkipped('DB `job` non raggiungibile: blocco di ambiente.');
+    }
+});
+
 it('can create result with basic information', function (): void {
     $task = Task::create([
         'description' => 'Test Task',

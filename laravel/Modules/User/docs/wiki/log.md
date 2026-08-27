@@ -4,7 +4,7 @@ type: log
 module: User
 tags: [user, wiki, log, phpstan, boundary]
 created: 2026-04-15
-updated: 2026-07-08
+updated: 2026-07-27
 qmd: "user module wiki log phpstan no comment dependency"
 issues:
 discussions:
@@ -19,25 +19,28 @@ related:
   - "./socialite-architecture.md"
 ---
 
+---
+
+- 2026-07-27: runtime config — `permission.php` `table_names` immutabili (`model_has_role` singolare); eliminata migrazione errata `create_model_has_roles_table`; canon `create_model_has_role_table` + `ModelHasRole::getTable()`; profiles unica migrazione con `convertIdFromUuidToBigintIfNeeded()`. Doc: [bugfix-permission-table-names-singular](../bugfix-permission-table-names-singular.md), [profile-id-bigint-uuid-fix](./concepts/profile-id-bigint-uuid-fix.md), hub temi [runtime-config-religion-hub](../../../../Themes/docs/shared-components/runtime-config-religion-hub.md).
 - 2026-07-08: push `laraxot/dev` — squash 365 commit (LFS missing 41 oggetti); abort rebase 328 commit; PHPStan User 0 errori (`password_resets` `updateTimestamps`, `permission` config types). Doc: [git-push-lfs-missing-objects](./troubleshooting/git-push-lfs-missing-objects.md).
 - 2026-06-18: PHPStan User 14→0 — ripristinato `Tenant\Models\Traits\SushiToPhpArray` (dipendenza `SocialProvider`), rimosso `hasRoleTest()` morto in `HasRoles`, `HasPasswordExpiry` via `getAttribute`/`setAttribute`, fixture `PasswordValidationRules*` usa il trait reale.
 - 2026-06-18: rimosso coupling residuo User -> Comment: `BaseUser` non usa piu' `HasCommentatorRelations`, `UserContract` non espone metodi Comment, trait disattivata eliminata. Verifica: `bashscripts/tools/check-user-no-comment-dependency.sh`, `pest Modules/User/tests/Unit/NoCommentModuleDependencyTest.php`, PHPStan User/Progressioni.
 - 2026-06-10: notifications-folio-page + notifications-folio-route — `route('notifications')`, vietato `area-personale.notifiche`
 ## [2026-06-05] docs | HackerNoon harness — tips 001-022 in wiki locale
 
-- Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt)
-- GitHub: [#272](https://github.com/laraxot/base_fixcity_fila5/issues/272) / [D#273](https://github.com/laraxot/base_fixcity_fila5/discussions/273)
+- Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-<nome progetto>-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt)
+- GitHub: [#272](https://github.com/laraxot/<nome repitory>/issues/272) / [D#273](https://github.com/laraxot/<nome repitory>/discussions/273)
 
 # User Wiki Log
 
-## [2026-06-05] arch | profiles schema — owner Fixcity, non User
+## [2026-06-05] arch | profiles schema — owner <nome progetto>, non User
 - migrazioni `create_profiles_table` User archiviate in `database/migrations/_bak/*.merged`
-- concept aggiornato: `concepts/profile-migration-uuid-contract.md` punta a migrazione Fixcity
+- concept aggiornato: `concepts/profile-migration-uuid-contract.md` punta a migrazione <nome progetto>
 - riferimento: `docs/wiki/bmad/architecture-one-migration-per-model.md`
 
-## [2026-06-04] bugfix | profiles.uuid su connection fixcity (sqlite locale)
+## [2026-06-04] bugfix | profiles.uuid su connection <nome progetto> (sqlite locale)
 - errore: `table profiles has no column named uuid` in `XotData::getProfileModelByUserId()` dopo login/registrazione
-- causa: tabella `profiles` legacy su `fixcity_data.sqlite` senza colonna `uuid`, mentre `BaseProfile::booted()` la valorizza in insert
+- causa: tabella `profiles` legacy su `<nome progetto>_data.sqlite` senza colonna `uuid`, mentre `BaseProfile::booted()` la valorizza in insert
 - ~~fix operativo con `--path`~~ **storico — vietato oggi**; canonico: `php artisan migrate` ([dati sacri](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md))
 - verifica: `getProfileModelByUserId()` crea profilo con `uuid`; schema sqlite include indice `profiles_uuid_index`
 - riferimento: `concepts/profile-migration-uuid-contract.md`
@@ -65,7 +68,7 @@ related:
 - formalizzata regola DRY+KISS: `after()` vietato in `tableCreate()`, ammesso solo in `tableUpdate()`.
 - aggiunte sezioni operative: best practices, bad practices, false friends, checklist e link ufficiali verificati.
 - aggiornato `index.md` con il nuovo concetto.
-- ingest eseguito in QMD index `fixcity` (collection `wiki` aggiornata).
+- ingest eseguito in QMD index `<nome progetto>` (collection `wiki` aggiornata).
 
 ## [2026-04-28] bugfix | profiles create migration MariaDB `after()` syntax error
 - errore osservato in migration `2026_04_28_120000_create_profiles_table`:
@@ -74,7 +77,7 @@ related:
 - fix applicato: rimosso `after()` dal create; `after()` resta nel `tableUpdate()`
   idempotente (ALTER path).
 - verifica:
-  ~~`migrate ... --force`~~ — **vietato**; owner `profiles` ora Fixcity; usare `php artisan migrate` senza `--force` ([dati sacri](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md))
+  ~~`migrate ... --force`~~ — **vietato**; owner `profiles` ora <nome progetto>; usare `php artisan migrate` senza `--force` ([dati sacri](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md))
   eseguito con esito `DONE`.
 - docs aggiornati: `concepts/profile-migration-uuid-contract.md`.
 
@@ -91,7 +94,7 @@ related:
 ## [2026-04-27] governance | remove invalid additive migration on profiles
 - rimosso `database/migrations/2026_04_27_000000_add_credits_to_profiles_table.php`
   per violazione regola "1 modello = 1 migrazione owner".
-- chiarito boundary: il contratto `profiles` e' owner Fixcity; User non deve patchare schema `profiles`.
+- chiarito boundary: il contratto `profiles` e' owner <nome progetto>; User non deve patchare schema `profiles`.
 - nuova pagina: `concepts/profiles-ownership-boundary-rule.md`.
 
 ## [2026-04-20] bugfix | socialite provider page property type compatibility
@@ -128,7 +131,7 @@ related:
 - Struttura wiki/log.md inizializzata.
 - Layer raw: tutti i file in `docs/` (eccetto `wiki/`).
 - Layer wiki: `docs/wiki/` — LLM-maintained, sintesi ad alto riuso.
-- Schema: `docs/.schema/WIKI_SCHEMA.md`
+- Schema: `docs/.schema/wiki-schema.md`
 - Adozione moduli: `docs/project/llm-wiki-module-adoption.md`
 
 ## [2026-04-20] bugfix | profiles.uuid nella migrazione canonica unica
@@ -153,7 +156,7 @@ related:
 - Notifiche: runtime User, schema Notify; `NotificationSchema::isReadable()` per guard FO
 - Folio: `name('notifications')`; vietato `area-personale.notifiche`
 - `user:super-admin`: `--email` + ask + fallback WSL (no Laravel Prompts)
-- Profiles: owner Fixcity `2026_06_10_123000_create_profiles_table` — vedi profile-migration-uuid-contract
+- Profiles: owner <nome progetto> `2026_06_10_123000_create_profiles_table` — vedi profile-migration-uuid-contract
 
 ## 2026-06-10 — Folio owner pattern docs
 

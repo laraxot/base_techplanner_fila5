@@ -6,7 +6,6 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "jpgraph class reference - analisi completta 2024"
 related:
-  - "./00-INDEX.md"
   - "./00-index.md"
 ---
 
@@ -426,6 +425,8 @@ $graph->Stroke();
 - **API Reference**: https://jpgraph.net/doc/
 - **FAQ**: https://jpgraph.net/doc/faq.html
 
+## 🔄 **Integrazione con healthcare_app**
+## 🔄 **Integrazione con ModuloEsempio**
 ## 🔄 **Integrazione con healthcare_app**
 
 ### **Pattern di Integrazione**

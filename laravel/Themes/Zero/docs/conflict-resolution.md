@@ -6,7 +6,6 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "conflict resolution theme zero"
 related:
-  - "./00-INDEX.md"
   - "./00-index.md"
 ---
 
@@ -19,3 +18,6 @@ related:
 
 ## Backlinks
 - [Root conflict resolution report](../../../docs/conflict-resolution-report.md)
+- [Root conflict resolution report](../../../../docs/conflict-resolution-report.md)
+- [Root conflict resolution report](../../../docs/conflict-resolution-report.md)
+- [Root conflict resolution report](../../../../docs/conflict-resolution-report.md)

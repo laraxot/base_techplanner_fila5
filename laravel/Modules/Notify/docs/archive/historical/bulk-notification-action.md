@@ -1,3 +1,12 @@
+---
+title: "Bulk Notification Action"
+module: notify
+type: integration
+tags: [integrations, modules, notify]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Bulk Notification Action
 
 **Date**: 18 Dicembre 2025  

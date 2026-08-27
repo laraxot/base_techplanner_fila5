@@ -669,6 +669,8 @@ dd(DB::getQueryLog());
 ## 🔗 **Collegamenti e Riferimenti**
 
 - [**README.md**](README.md) - Documentazione principale del modulo
+- [**README.md**](readme.md) - Documentazione principale del modulo
+>>>>>>> .merge_file_ay4dev
 - [**Best Practices**](best-practices.md) - Best practices per evitare problemi
 - [**Architettura**](architecture.md) - Architettura del modulo Xot
 - [**Documentazione Laravel**](https://laravel.com/docs) - Troubleshooting generale

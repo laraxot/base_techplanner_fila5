@@ -39,16 +39,15 @@ class ExecuteArtisanCommandAction
     /**
      * Esegue un comando Artisan e restituisce i risultati.
      *
-     * @param string $command Il comando Artisan da eseguire (senza "php artisan")
-     *
-     * @throws \RuntimeException Se il comando non è consentito o si verifica un errore
-     *
+     * @param  string  $command  Il comando Artisan da eseguire (senza "php artisan")
      * @return array{
      *     command: string,
      *     output: array<int, string>,
      *     status: 'completed'|'failed',
      *     exitCode: int
      * } Array con informazioni sull'esecuzione del comando
+     *
+     * @throws \RuntimeException Se il comando non è consentito o si verifica un errore
      */
     public function execute(string $command): array
     {
@@ -65,9 +64,12 @@ class ExecuteArtisanCommandAction
         Event::dispatch('artisan-command.started', [$command]);
 
         try {
+            // In testing evita hang lunghi (es. passport:purge su DB bloccato); in prod resta 300s.
+            $timeout = app()->environment('testing') ? 10 : 300;
+
             $process = Process::path(base_path())
                 ->command("php artisan {$command}")
-                ->timeout(300)
+                ->timeout($timeout)
                 ->start();
 
             // Cattura l'output in tempo reale
@@ -131,8 +133,7 @@ class ExecuteArtisanCommandAction
     /**
      * Verifica se un comando è presente nella lista dei comandi consentiti.
      *
-     * @param string $command Il comando da verificare
-     *
+     * @param  string  $command  Il comando da verificare
      * @return bool True se il comando è consentito, false altrimenti
      */
     private function isCommandAllowed(string $command): bool

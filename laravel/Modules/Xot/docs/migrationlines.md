@@ -40,3 +40,6 @@ return new class extends XotBaseMigration
 - [Code Quality](../code_quality.md)
 - [Root Documentation](../../../../../docs/collegamenti-documentazione.md)
 - [Database Guidelines](../database_guidelines.md)
+- [Root Documentation](../../../../docs/collegamenti-documentazione.md)
+- [Database Guidelines](../database_guidelines.md)
+>>>>>>> .merge_file_S4xfLV

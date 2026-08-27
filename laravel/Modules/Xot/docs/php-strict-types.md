@@ -1,3 +1,16 @@
+
+---
+title: "PHP Strict Types in Laravel Modules"
+module: xot
+type: integration
+tags: [integrations, modules, xot]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
+
+=======
+>>>>>>> .merge_file_cl5X07
 # PHP Strict Types in Laravel Modules
 
 ## Overview
@@ -52,3 +65,11 @@ This document provides guidelines for using strict typing in PHP within a Larave
 - [Naming Conventions](naming-conventions.md)
 - [Service Provider Best Practices](service-provider-best-practices.md)
 - [Filament Best Practices](filament-best-practices.md)
+
+- [Code Quality](./code_quality.md)
+- [PHPStan Implementation Guide](./phpstan-implementation-guide.md)
+- [Naming Conventions](./naming-conventions.md)
+- [Service Provider Best Practices](./service-provider-best-practices.md)
+- [Filament Best Practices](./filament-best-practices.md)
+
+>>>>>>> .merge_file_icUHSw

@@ -37,6 +37,8 @@ The Xot module's MCP configuration enables AI assistants to interact with:
     "filesystem": {
       "command": "npx",
       "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_<nome progetto>/laravel"],
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_laravelpizza/laravel"],
+>>>>>>> .merge_file_mzpCvh
       "description": "Access to Xot module files"
     },
     "database": {
@@ -44,6 +46,8 @@ The Xot module's MCP configuration enables AI assistants to interact with:
       "args": ["-y", "@bytebase/dbhub"],
       "env": {
         "DATABASE_URL": "sqlite:///var/www/_bases/base_<nome progetto>/laravel/database/database.sqlite"
+        "DATABASE_URL": "sqlite:///var/www/_bases/base_laravelpizza/laravel/database/database.sqlite"
+>>>>>>> .merge_file_mzpCvh
       },
       "description": "SQLite database queries"
     }
@@ -59,6 +63,8 @@ The Xot module's MCP configuration enables AI assistants to interact with:
 ```bash
 # Create task
 "Create task in '<nome progetto> - Xot Module' project: 'Implement Filament v5 migration'"
+"Create task in 'LaravelPizza - Xot Module' project: 'Implement Filament v5 migration'"
+>>>>>>> .merge_file_mzpCvh
 
 # Track PHPStan compliance
 "Create task: 'Verify PHPStan Level 10 compliance for all base classes'"
@@ -138,6 +144,13 @@ Map Xot module roadmap tasks to Asana:
 | Test coverage improvement | <nome progetto> - Xot Module | High |
 | Performance optimization | <nome progetto> - Xot Module | Medium |
 
+| Filament v5 migration | LaravelPizza - Xot Module | High |
+| Documentation consolidation | LaravelPizza - Xot Module | Medium |
+| Test coverage improvement | LaravelPizza - Xot Module | High |
+| Performance optimization | LaravelPizza - Xot Module | Medium |
+
+>>>>>>> .merge_file_mzpCvh
+
 ---
 
 ## 🔌 Editor-Specific Configurations
@@ -152,6 +165,14 @@ Map Xot module roadmap tasks to Asana:
 
 ### Windsurf
 - **Config File**: `/var/www/_bases/base_<nome progetto>/laravel/.windsurf-mcp.json`
+
+- **Config File**: `/var/www/_bases/base_laravelpizza/laravel/.cursor-mcp.json`
+- **Command**: `npx mcp-remote https://mcp.asana.com/sse`
+
+### Windsurf
+- **Config File**: `/var/www/_bases/base_laravelpizza/laravel/.windsurf-mcp.json`
+
+>>>>>>> .merge_file_mzpCvh
 - **Command**: `npx mcp-remote https://mcp.asana.com/sse`
 
 ---
@@ -167,6 +188,8 @@ Map Xot module roadmap tasks to Asana:
 
 2. **Project Organization**:
    - Create dedicated Asana project: "<nome progetto> - Xot Module"
+   - Create dedicated Asana project: "LaravelPizza - Xot Module"
+>>>>>>> .merge_file_mzpCvh
    - Use sections: "Features", "Fixes", "Refactoring", "Testing", "Documentation"
 
 3. **Tagging System**:
@@ -213,6 +236,10 @@ Map Xot module roadmap tasks to Asana:
 - [Asana MCP Configuration](../../../../docs/mcp-asana-configuration.md)
 - [ClickUp MCP Configuration](../../../../docs/mcp-clickup-configuration.md)
 - [Redmine MCP Configuration](../../../../docs/mcp-redmine-configuration.md)
+- [Asana MCP Configuration](../../../docs/mcp-asana-configuration.md)
+- [ClickUp MCP Configuration](../../../docs/mcp-clickup-configuration.md)
+- [Redmine MCP Configuration](../../../docs/mcp-redmine-configuration.md)
+>>>>>>> .merge_file_mzpCvh
 - [Xot Module Roadmap](./roadmap-[date].md)
 
 ---
@@ -228,3 +255,6 @@ Map Xot module roadmap tasks to Asana:
 **Module**: Xot (Foundation)
 **MCP Version**: 2.0.0
 **Last Review**: 31 Gennaio 2026
+=======
+**Last Review**: 31 Gennaio 2026
+>>>>>>> .merge_file_2TOadt

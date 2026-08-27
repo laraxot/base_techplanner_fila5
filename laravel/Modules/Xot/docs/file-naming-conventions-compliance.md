@@ -1,6 +1,9 @@
 # File Naming Conventions Compliance - 2026-01-09
 
 **Data**: 2026-01-09  
+# File Naming Conventions Compliance - [DATE]
+
+>>>>>>> .merge_file_9ngJhC
 **Status**: ✅ **COMPLETATO**
 
 ---
@@ -34,6 +37,8 @@
 ### Pattern di Rinomina
 ```
 ❌ PRIMA: nome-file-2026-01-09.md
+❌ PRIMA: nome-file-[DATE].md
+>>>>>>> .merge_file_9ngJhC
 ✅ DOPO: nome-file.md
 ```
 
@@ -80,3 +85,5 @@
 **Status**: ✅ **COMPLETATO**
 
 **Ultimo aggiornamento**: 2026-01-09
+**Ultimo aggiornamento**: [DATE]
+>>>>>>> .merge_file_9ngJhC

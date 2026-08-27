@@ -21,6 +21,7 @@ related:
 # Design Comuni Italia - BMad Master Plan
 
 **Project:** FixCity Fila5
+**Project:** Notify Fila5
 **Date:** 2026-04-01
 **Status:** 🔄 **In Progress**
 **Priority:** 🔴 **CRITICAL**
@@ -230,6 +231,7 @@ pages/tests/[slug].blade.php  ← UNICO file per TUTTE
 ```
 Design Comuni: https://italia.github.io/design-comuni-pagine-statiche/sito/homepage.html
 FixCity:       http://fixcity.local/it/tests/homepage
+Notify:       http://laraxot.local/it/tests/homepage
 ```
 
 **Checklist:**
@@ -391,6 +393,7 @@ _bmad-output/
 
 **URL Design Comuni:** https://italia.github.io/design-comuni-pagine-statiche/sito/{page}.html
 **URL FixCity:** http://fixcity.local/it/tests/{page}
+**URL Notify:** http://laraxot.local/it/tests/{page}
 
 ### Checklist
 
@@ -405,6 +408,7 @@ _bmad-output/
 
 - [ ] Design Comuni screenshot
 - [ ] FixCity screenshot
+- [ ] Notify screenshot
 - [ ] Comparison analysis
 
 ### Analysis

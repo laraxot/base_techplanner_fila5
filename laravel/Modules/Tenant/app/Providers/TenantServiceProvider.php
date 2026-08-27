@@ -173,6 +173,8 @@ class TenantServiceProvider extends XotBaseServiceProvider
     /**
      * @param  array<string, mixed>  $map
      * @return array<string, class-string<Model>>
+     *
+     * @SuppressWarnings("PHPMD.ErrorControlOperator")
      */
     private function buildMorphMap(array $map): array
     {

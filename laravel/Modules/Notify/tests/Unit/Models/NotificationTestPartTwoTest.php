@@ -27,11 +27,12 @@ namespace Modules\Notify\Tests\Unit\Models;
 use Modules\Notify\Database\Factories\NotificationFactory;
 use Modules\Notify\Models\Notification;
 use Modules\Notify\Tests\TestCase;
+use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('notify-db');
 
 beforeEach(function (): void {
     /** @var TestCase $this */
@@ -63,9 +64,9 @@ describe('Notification PartTwo', function (): void {
 
         Assert::assertCount(2, $user123Notifications);
         Assert::assertCount(1, $user456Notifications);
-        Assert::assertEquals(123, \assertFirstModel($user123Notifications, Notification::class)->user_id);
-        Assert::assertEquals(123, \assertFirstModel($user123Notifications->slice(1), Notification::class)->user_id);
-        Assert::assertEquals(456, \assertFirstModel($user456Notifications, Notification::class)->user_id);
+        Assert::assertEquals(123, XotBasePest::assertFirstModel($user123Notifications, Notification::class)->user_id);
+        Assert::assertEquals(123, XotBasePest::assertFirstModel($user123Notifications->slice(1), Notification::class)->user_id);
+        Assert::assertEquals(456, XotBasePest::assertFirstModel($user456Notifications, Notification::class)->user_id);
     });
 
     test('_can_find_by_subject', function (): void {
@@ -95,9 +96,9 @@ describe('Notification PartTwo', function (): void {
 
         Assert::assertCount(2, $userSubjectNotifications);
         Assert::assertCount(1, $companySubjectNotifications);
-        Assert::assertEquals('App\Models\User', \assertFirstModel($userSubjectNotifications, Notification::class)->subject_type);
-        Assert::assertEquals('App\Models\User', \assertFirstModel($userSubjectNotifications->slice(1), Notification::class)->subject_type);
-        Assert::assertEquals('App\Models\Company', \assertFirstModel($companySubjectNotifications, Notification::class)->subject_type);
+        Assert::assertEquals('App\Models\User', XotBasePest::assertFirstModel($userSubjectNotifications, Notification::class)->subject_type);
+        Assert::assertEquals('App\Models\User', XotBasePest::assertFirstModel($userSubjectNotifications->slice(1), Notification::class)->subject_type);
+        Assert::assertEquals('App\Models\Company', XotBasePest::assertFirstModel($companySubjectNotifications, Notification::class)->subject_type);
     });
 
     test('_can_find_by_channel', function (): void {
@@ -161,8 +162,8 @@ describe('Notification PartTwo', function (): void {
 
         Assert::assertCount(1, $highPriorityNotifications);
         Assert::assertCount(1, $securityNotifications);
-        Assert::assertEquals('high', \assertFirstModel($highPriorityNotifications, Notification::class)->data['priority']);
-        Assert::assertEquals('security', \assertFirstModel($securityNotifications, Notification::class)->data['category']);
+        Assert::assertEquals('high', XotBasePest::assertFirstModel($highPriorityNotifications, Notification::class)->data['priority']);
+        Assert::assertEquals('security', XotBasePest::assertFirstModel($securityNotifications, Notification::class)->data['category']);
     });
 
     test('_can_find_by_read_status', function (): void {
@@ -189,9 +190,9 @@ describe('Notification PartTwo', function (): void {
 
         Assert::assertCount(2, $unreadNotifications);
         Assert::assertCount(1, $readNotifications);
-        Assert::assertNull(\assertFirstModel($unreadNotifications, Notification::class)->read_at);
-        Assert::assertNull(\assertFirstModel($unreadNotifications, Notification::class)->read_at);
-        Assert::assertNotNull(\assertFirstModel($readNotifications, Notification::class)->read_at);
+        Assert::assertNull(XotBasePest::assertFirstModel($unreadNotifications, Notification::class)->read_at);
+        Assert::assertNull(XotBasePest::assertFirstModel($unreadNotifications, Notification::class)->read_at);
+        Assert::assertNotNull(XotBasePest::assertFirstModel($readNotifications, Notification::class)->read_at);
     });
 
     test('_can_find_by_sent_status', function (): void {
@@ -218,9 +219,9 @@ describe('Notification PartTwo', function (): void {
 
         Assert::assertCount(2, $unsentNotifications);
         Assert::assertCount(1, $sentNotifications);
-        Assert::assertNull(\assertFirstModel($unsentNotifications, Notification::class)->sent_at);
-        Assert::assertNull(\assertFirstModel($unsentNotifications, Notification::class)->sent_at);
-        Assert::assertNotNull(\assertFirstModel($sentNotifications, Notification::class)->sent_at);
+        Assert::assertNull(XotBasePest::assertFirstModel($unsentNotifications, Notification::class)->sent_at);
+        Assert::assertNull(XotBasePest::assertFirstModel($unsentNotifications, Notification::class)->sent_at);
+        Assert::assertNotNull(XotBasePest::assertFirstModel($sentNotifications, Notification::class)->sent_at);
     });
 
     test('_can_find_by_date_range', function (): void {
@@ -251,7 +252,7 @@ describe('Notification PartTwo', function (): void {
 
         Assert::assertCount(1, $todayNotifications);
         Assert::assertCount(2, $recentNotifications); // yesterday and today
-        Assert::assertEquals('Today notification', \assertFirstModel($todayNotifications, Notification::class)->message);
+        Assert::assertEquals('Today notification', XotBasePest::assertFirstModel($todayNotifications, Notification::class)->message);
     });
 
     test('_can_find_by_multiple_criteria', function (): void {
@@ -294,10 +295,10 @@ describe('Notification PartTwo', function (): void {
             ->get();
 
         Assert::assertCount(1, $pendingHighPriorityTenant1);
-        Assert::assertEquals('High priority security alert', \assertFirstModel($pendingHighPriorityTenant1, Notification::class)->message);
-        Assert::assertEquals('pending', \assertFirstModel($pendingHighPriorityTenant1, Notification::class)->status);
-        Assert::assertEquals(1, \assertFirstModel($pendingHighPriorityTenant1, Notification::class)->tenant_id);
-        Assert::assertEquals('high', \notifyArrayGet(\assertFirstModel($pendingHighPriorityTenant1, Notification::class)->data, 'priority'));
+        Assert::assertEquals('High priority security alert', XotBasePest::assertFirstModel($pendingHighPriorityTenant1, Notification::class)->message);
+        Assert::assertEquals('pending', XotBasePest::assertFirstModel($pendingHighPriorityTenant1, Notification::class)->status);
+        Assert::assertEquals(1, XotBasePest::assertFirstModel($pendingHighPriorityTenant1, Notification::class)->tenant_id);
+        Assert::assertEquals('high', TestCase::notifyArrayGet(XotBasePest::assertFirstModel($pendingHighPriorityTenant1, Notification::class)->data, 'priority'));
     });
 
     test('_can_handle_empty_data', function (): void {
@@ -306,7 +307,7 @@ describe('Notification PartTwo', function (): void {
             'type' => 'info',
             'data' => [],
         ]);
-        \assertNotifyTableHas('notifications', [
+        XotBasePest::assertTableHas('notify', 'notifications', [
             'id' => $notification->id,
             'data' => json_encode([]),
         ]);
@@ -319,7 +320,7 @@ describe('Notification PartTwo', function (): void {
             'type' => 'info',
             'channels' => [],
         ]);
-        \assertNotifyTableHas('notifications', [
+        XotBasePest::assertTableHas('notify', 'notifications', [
             'id' => $notification->id,
             'channels' => json_encode([]),
         ]);

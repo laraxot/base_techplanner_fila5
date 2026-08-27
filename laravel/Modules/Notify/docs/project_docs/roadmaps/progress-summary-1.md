@@ -1,10 +1,18 @@
 ---
+<<<<<<< .merge_file_o5vabd
 title: "📊 RIEPILOGO PROGRESSI - FIXCITY PLATFORM"
+=======
+title: "📊 RIEPILOGO PROGRESSI - NOTIFY PLATFORM"
+>>>>>>> .merge_file_3jEuaw
 type: concept
 tags: [progress, summary, 2025, 27.deprecated]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< .merge_file_o5vabd
 qmd: "progress-summary-2025-01-27.deprecated 📊 riepilogo progressi - fixcity platform"
+=======
+qmd: "progress-summary-2025-01-27.deprecated 📊 riepilogo progressi - laraxot platform"
+>>>>>>> .merge_file_3jEuaw
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -18,7 +26,11 @@ related:
   - "./code-quality-improvements-1.md"
 ---
 
+<<<<<<< .merge_file_o5vabd
 # 📊 RIEPILOGO PROGRESSI - FIXCITY PLATFORM
+=======
+# 📊 RIEPILOGO PROGRESSI - NOTIFY PLATFORM
+>>>>>>> .merge_file_3jEuaw
 
 **Data**: 27 Gennaio 2025  
 **Status**: 🚧 ACTIVE DEVELOPMENT  
@@ -51,7 +63,11 @@ related:
 ### ✅ Moduli Core (CRITICAL)
 - [x] **Xot Module**: 95% completato, PHPStan Level 9
 - [x] **User Module**: 90% completato, PHPStan Level 9
+<<<<<<< .merge_file_o5vabd
 - [x] **Fixcity Module**: 80% completato, PHPStan Level 9
+=======
+- [x] **App Module**: 80% completato, PHPStan Level 9
+>>>>>>> .merge_file_3jEuaw
 
 ### ✅ Moduli Support (HIGH)
 - [x] **UI Module**: 85% completato, PHPStan Level 9
@@ -64,8 +80,13 @@ related:
 ## 🚧 IN CORSO
 
 ### 🔧 Implementazione Roadmap
+<<<<<<< .merge_file_o5vabd
 - [ ] **API Development**: Fixcity module (45% completato)
 - [ ] **Mobile Optimization**: Fixcity module (55% completato)
+=======
+- [ ] **API Development**: App module (45% completato)
+- [ ] **Mobile Optimization**: App module (55% completato)
+>>>>>>> .merge_file_3jEuaw
 - [ ] **AGID Compliance**: Sixteen theme (85% completato)
 - [ ] **Test Coverage**: Implementazione test per tutti i moduli
 
@@ -80,7 +101,11 @@ related:
 ## 📅 PROSSIMI PASSI (Next 30 Days)
 
 ### Week 1: API Development
+<<<<<<< .merge_file_o5vabd
 - [ ] Completare API endpoints per Fixcity
+=======
+- [ ] Completare API endpoints per App
+>>>>>>> .merge_file_3jEuaw
 - [ ] Implementare autenticazione API
 - [ ] Documentare API con OpenAPI/Swagger
 - [ ] Test API endpoints
@@ -136,7 +161,11 @@ related:
 - [x] Aggiornare documentazione
 
 ### Febbraio 2025
+<<<<<<< .merge_file_o5vabd
 - [ ] Completare API Fixcity
+=======
+- [ ] Completare API App
+>>>>>>> .merge_file_3jEuaw
 - [ ] Ottimizzare mobile interface
 - [ ] Raggiungere 100% AGID compliance
 - [ ] Implementare test coverage 60%+
@@ -188,6 +217,7 @@ related:
 
 ### Moduli Core
 - **Xot ↔ User**: Integrazione completa
+<<<<<<< .merge_file_o5vabd
 - **Xot ↔ Fixcity**: Integrazione completa
 - **User ↔ Fixcity**: Integrazione completa
 
@@ -195,6 +225,15 @@ related:
 - **UI ↔ Sixteen**: Integrazione tema
 - **Geo ↔ Fixcity**: Integrazione geolocalizzazione
 - **Media ↔ Fixcity**: Integrazione file upload
+=======
+- **Xot ↔ App**: Integrazione completa
+- **User ↔ App**: Integrazione completa
+
+### Moduli Support
+- **UI ↔ Sixteen**: Integrazione tema
+- **Geo ↔ App**: Integrazione geolocalizzazione
+- **Media ↔ App**: Integrazione file upload
+>>>>>>> .merge_file_3jEuaw
 - **Notify ↔ User**: Integrazione notifiche
 
 ### Quality Tools
@@ -242,7 +281,11 @@ related:
 
 ---
 
+<<<<<<< .merge_file_o5vabd
 *Questo documento riassume i progressi completati e le prossime azioni per il completamento del progetto FixCity Platform.*
+=======
+*Questo documento riassume i progressi completati e le prossime azioni per il completamento del progetto Notify Platform.*
+>>>>>>> .merge_file_3jEuaw
 
 
 

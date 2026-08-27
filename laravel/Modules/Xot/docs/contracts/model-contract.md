@@ -47,3 +47,10 @@ interface ModelContract
 - [Database Guidelines](../DATABASE-GUIDELINES.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
 - [Contracts Overview](./README.md)
+
+- [Model Guidelines](../models/readme.md)
+- [Database Guidelines](../database-guidelines.md)
+- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+- [Contracts Overview](./readme.md)
+
+>>>>>>> .merge_file_onB2Bv

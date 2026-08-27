@@ -25,17 +25,16 @@ class Otp extends Notification implements ShouldQueue
     public function __construct(
         public UserContract $user,
         public string $code,
-    ) {
-    }
+    ) {}
 
     /**
      * Get the notification's delivery channels.
      *
-     * @param mixed $_notifiable L'entità da notificare
-     *
+     * @param  AnonymousNotifiable  $_notifiable  L'entità da notificare: la notifica è inviata
+     *                                            on-demand da SendOtpByUserAction
      * @return array<int, string>
      */
-    public function via(mixed $_notifiable): array
+    public function via(AnonymousNotifiable $_notifiable): array
     {
         return ['mail']; // Puoi aggiungere anche 'database', 'slack', ecc. se vuoi supportare altri canali.
     }

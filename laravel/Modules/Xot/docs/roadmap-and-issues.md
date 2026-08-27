@@ -323,6 +323,8 @@ function xot_config(string $key): mixed
 ## 🔗 Collegamenti
 
 - [← Xot Module README](./README.md)
+- [← Xot Module README](./readme.md)
+>>>>>>> .merge_file_IO5gey
 - [← Best Practices](./best-practices.md)
 - [← Troubleshooting](./troubleshooting.md)
 - [← Project Roadmap](../../../docs/project-analysis-and-roadmap.md)

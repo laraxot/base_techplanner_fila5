@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Notify\Tests\Unit;
 
 use Carbon\Carbon;
+use Illuminate\Support\Str;
 use Modules\Notify\Database\Factories\NotificationChannelFactory;
 use Modules\Notify\Database\Factories\NotificationFactory;
 use Modules\Notify\Database\Factories\NotificationLogFactory;
@@ -18,7 +19,7 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
 
-uses(\Modules\Notify\Tests\TestCase::class);
+uses(TestCase::class)->group('notify-db');
 
 it('can create a notification', function () {
     $notification = NotificationFactory::new()->createOne([
@@ -90,7 +91,7 @@ it('can create a notification with custom data', function () {
     $notification = NotificationFactory::new()->createOne([
         'type' => 'App\Notifications\Custom',
         'notifiable_type' => 'Modules\User\Models\User',
-        'notifiable_id' => (string) \Illuminate\Support\Str::uuid(),
+        'notifiable_id' => (string) Str::uuid(),
         'data' => $payload,
     ]);
 

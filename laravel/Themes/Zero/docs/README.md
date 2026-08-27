@@ -1,3 +1,18 @@
+# Theme Documentation
+
+This directory contains documentation for the theme.
+
+## Structure
+
+- **customization.md** - Theme customization
+- **README.md** - This file
+
+## Guidelines
+
+Documentation should be:
+- Clear and concise
+- Updated with theme changes
+- Use Markdown format (.md)
 # Tema Zero - Documentazione
 
 ## Overview
@@ -33,10 +48,6 @@ Zero/
 1. **PHPStan**: Configurazione centralizzata in `laravel/phpstan.neon`
 2. **Output files**: `phpstan*.json` ignorati (NON committare)
 3. **Namespace**: `Themes\Zero\`
-
-## Repo indipendente
-
-Path in `gitmodules.ini`: `laravel/Themes/Zero` → remote `laraxot/theme_zero_fila5`. Entrare con `cd`, non trattarlo come submodule della root. Protocollo: [17-gitmodules-path-iteration.md](../../../../bashscripts/tools/prompts/17-gitmodules-path-iteration.md).
 
 ## Collegamenti
 

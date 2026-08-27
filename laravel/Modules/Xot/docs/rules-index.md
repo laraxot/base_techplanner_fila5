@@ -1,3 +1,16 @@
+
+---
+title: "Xot Module Rules Index"
+module: xot
+type: integration
+tags: [integrations, modules, xot]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
+
+=======
+>>>>>>> .merge_file_u2NiKA
 # Xot Module Rules Index
 
 ## Overview
@@ -59,3 +72,11 @@ See: [Action Usage Patterns](./actions/action-usage-patterns.md)
 - [Chaos Monkey Operability Rules](./chaos-monkey-operability-rules.md)
 - [Composer Packages Deep Study (2026-03-02)](./composer-packages-deep-study-2026-03-02.md)
 - [Composer Packages Full Catalog (2026-03-02)](./composer-packages-full-catalog-2026-03-02.md)
+
+See: [Action Execution and DI Rules](./actions/action-execution-and-di-rules.md)
+
+## Related Documentation
+- [README](./readme.md)
+- [phpstan](./phpstan.md)
+
+>>>>>>> .merge_file_ls8GQx

@@ -20,7 +20,7 @@ class Block extends Component
     public ?string $view = null;
 
     /**
-     * @param array<string, mixed> $block
+     * @param  array<string, mixed>  $block
      */
     public function __construct(
         public array $block,
@@ -28,7 +28,7 @@ class Block extends Component
         public string $tpl = '',
     ) {
         $view = Arr::get($this->block, 'data.view', null);
-        if (null === $view) {
+        if ($view === null) {
             $view = 'ui::empty';
         }
         Assert::string($view, __FILE__.':'.__LINE__.' - '.class_basename(self::class));
@@ -55,10 +55,8 @@ class Block extends Component
         $viewParams = app(ResolveLocalizedBlockDataAction::class)->execute($viewParams);
         $viewParams = $this->normalizeViewData($viewParams);
         Assert::string($view, __FILE__.':'.__LINE__.' - '.class_basename(self::class));
-        if (! view()->exists($view)) {
-            throw new \Exception('view not found ['.$view.']');
-        }
 
+        /** @var view-string $view */
         return view($view, $viewParams);
     }
 

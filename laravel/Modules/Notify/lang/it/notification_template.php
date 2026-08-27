@@ -16,6 +16,16 @@ return [
         'attachments' => ['label' => 'attachments', 'placeholder' => 'attachments', 'helper_text' => 'attachments', 'description' => 'attachments'],
     ],
     'columns' => ['name' => 'Nome', 'subject' => 'Oggetto', 'type' => 'Tipo', 'created_at' => 'Creato il', 'updated_at' => 'Aggiornato il'],
+    'actions' => [
+        'preview' => 'Anteprima',
+        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
+        'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
+        'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+        'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
+    ],
+    'columns' => ['name' => 'Nome', 'subject' => 'Oggetto', 'type' => 'Tipo', 'created_at' => 'Creato il', 'updated_at' => 'Aggiornato il'],
     'actions' => ['preview' => 'Anteprima'],
     'enums' => [
         'notification_type' => ['email' => 'Email', 'sms' => 'SMS', 'push' => 'Notifica Push'],

@@ -142,6 +142,19 @@ class GetFactoryAction
         Assert::classExists($factory_class, '... run composer dump-autoload ...');
 
         return $this->instantiateFactory($factory_class);
+
+        // Se esiste, la usa
+        if (class_exists($factory_class)) {
+            return $factory_class::new();
+        }
+
+        // Altrimenti la crea
+        $this->createFactory($model_class);
+
+        // Richiede refresh per caricarla
+        throw new Exception('Factory created, press F5 to refresh');
+
+>>>>>>> .merge_file_sFkj0z
     }
 }
 ```
@@ -264,6 +277,22 @@ Da Laraxot 2026, `GetFactoryAction::loadFactoryFromDisk()` carica il file con `r
 ```bash
 composer dump-autoload
 php artisan module:make-factory NomeModello NomeModulo
+
+### Errore: "Press F5 to refresh"
+
+**Problema**: Factory appena creata, non ancora autoloaded
+
+**Causa**: Composer autoload non aggiornato
+
+**Soluzione**:
+```bash
+# Refresh autoload
+composer dump-autoload
+
+# Riprova
+php artisan test
+
+>>>>>>> .merge_file_sFkj0z
 ```
 
 ### Conflitto con HasFactory standard
@@ -390,3 +419,7 @@ protected static function newFactory(): Factory
 **Ultima modifica**: Giugno 2025
 **Stato**: ✅ Produzione
 **PHPStan**: Level 9 compliant
+**Ultima modifica**: 22 Ottobre 2025
+**Stato**: ✅ Produzione
+**PHPStan**: Level 9 compliant
+>>>>>>> .merge_file_sFkj0z

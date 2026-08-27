@@ -7,14 +7,6 @@ namespace Modules\Xot\Tests;
 use Illuminate\Contracts\Console\Kernel;
 use Illuminate\Foundation\Application;
 
-use function Safe\realpath;
-
-/**
- * Trait CreatesApplication.
- *
- * Provides the createApplication method for test cases.
- * This trait is used by all module test cases to bootstrap the Laravel application.
- */
 trait CreatesApplication
 {
     /**
@@ -30,13 +22,13 @@ trait CreatesApplication
         $_ENV['APP_BASE_PATH'] = $basePath;
 
         $appEnv = $_ENV['APP_ENV'] ?? getenv('APP_ENV') ?: 'local';
-        if ('testing' === $appEnv && ! is_readable($testingEnvPath)) {
+        if ($appEnv === 'testing' && ! is_readable($testingEnvPath)) {
             throw new \RuntimeException('laravel/.env.testing mancante. Rigenerare da .env: ./bashscripts/tools/sync-env-testing.sh');
         }
 
         $app = $this->loadLaravelApplication($basePath.'/bootstrap/app.php');
 
-        if ('testing' === $appEnv && is_readable($testingEnvPath)) {
+        if ($appEnv === 'testing' && is_readable($testingEnvPath)) {
             $app->loadEnvironmentFrom('.env.testing');
         }
 

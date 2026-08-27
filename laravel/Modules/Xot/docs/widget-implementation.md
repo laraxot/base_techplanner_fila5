@@ -490,6 +490,8 @@ class MyTableWidget extends XotBaseTableWidget
 declare(strict_types=1);
 
 namespace Modules\healthcare_app\Filament\Widgets;
+namespace Modules\Quaeris\Filament\Widgets;
+>>>>>>> .merge_file_Rriaox
 
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Select;
@@ -546,6 +548,8 @@ class QuestionChartFilterWidget extends XotBaseWidget
 declare(strict_types=1);
 
 namespace Modules\healthcare_app\Filament\Widgets;
+namespace Modules\Quaeris\Filament\Widgets;
+>>>>>>> .merge_file_Rriaox
 
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
@@ -623,6 +627,8 @@ class QuestionChartDataWidget extends XotBaseTableWidget
 declare(strict_types=1);
 
 namespace Modules\healthcare_app\Filament\Widgets;
+namespace Modules\Quaeris\Filament\Widgets;
+>>>>>>> .merge_file_Rriaox
 
 use Filament\Widgets\ChartWidget;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;

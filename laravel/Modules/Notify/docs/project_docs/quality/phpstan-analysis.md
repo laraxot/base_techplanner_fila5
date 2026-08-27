@@ -129,7 +129,11 @@ I seguenti moduli sono stati analizzati senza errori di sintassi bloccanti:
 - ✅ **Job**: Import conflicts risolti
 - ✅ **Cms**: Nessun syntax error
 - ✅ **Geo**: Nessun syntax error
+<<<<<<< .merge_file_aFr1AQ
 - ✅ **Fixcity**: Nessun syntax error
+=======
+- ✅ **App**: Nessun syntax error
+>>>>>>> .merge_file_4Cp1bT
 - ✅ **Blog**: Nessun syntax error
 - ✅ **Rating**: Nessun syntax error
 - ✅ **AI**: Nessun syntax error

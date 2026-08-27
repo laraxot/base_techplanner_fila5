@@ -2,14 +2,15 @@
 
 declare(strict_types=1);
 
-// This file references SaluteOra models that do not exist in this project
+// This file references <nome progetto> models that do not exist in this project
 
 namespace Modules\Notify\Actions;
 
 use Exception;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Log;
-// use Modules\SaluteOra\Models\Appointment;
-// use Modules\SaluteOra\Models\Patient;
+// use Modules\<nome progetto>\Models\Appointment;
+// use Modules\<nome progetto>\Models\Patient;
 use Spatie\QueueableAction\QueueableAction;
 
 class SendAppointmentNotificationAction
@@ -24,12 +25,12 @@ class SendAppointmentNotificationAction
     /**
      * Invia una notifica relativa a un appuntamento.
      *
-     * @param  mixed  $appointment  L'appuntamento a cui si riferisce la notifica
+     * @param  Model  $appointment  L'appuntamento a cui si riferisce la notifica
      * @param  string  $type  Il tipo di notifica (confermato, annullato, promemoria, ecc.)
      * @param  array<string, mixed>  $additionalData  Dati aggiuntivi per la notifica
      */
     public function execute(
-        mixed $appointment,
+        Model $appointment,
         string $type,
         array $additionalData = []
     ): bool {

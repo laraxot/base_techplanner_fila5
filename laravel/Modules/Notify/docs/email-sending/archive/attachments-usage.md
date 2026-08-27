@@ -29,13 +29,21 @@ Il metodo `addAttachments()` supporta **due formati** per gli allegati:
 // Formato corretto - allegato da file su filesystem
 $attachments = [
     [
+<<<<<<< .merge_file_bZIXnE
         'path' => '/var/www/html/saluteora/public_html/images/avatars/default-3.svg',
+=======
+        'path' => '[project-root]/public_html/images/avatars/default-3.svg',
+>>>>>>> .merge_file_2UEtBP
         'as' => 'logo.svg',  // Opzionale: nome del file da mostrare nell'email
         'mime' => 'image/svg+xml',  // Opzionale: MIME type del file
     ],
     // Eventualmente altri allegati...
     [
+<<<<<<< .merge_file_bZIXnE
         'path' => '/var/www/html/saluteora/public_html/documents/terms.pdf',
+=======
+        'path' => '[project-root]/public_html/documents/terms.pdf',
+>>>>>>> .merge_file_2UEtBP
         'as' => 'termini.pdf',
         'mime' => 'application/pdf',
     ],

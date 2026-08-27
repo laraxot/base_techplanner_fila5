@@ -188,3 +188,6 @@ NomeModulo/
 - [XotBaseServiceProvider.md](xotbaseserviceprovider.md)
 - [XotBaseRouteServiceProvider.md](XotBaseRouteServiceProvider.md)
 - [XotBaseEventServiceProvider.md](XotBaseEventServiceProvider.md)
+- [XotBaseRouteServiceProvider.md](xotbaserouteserviceprovider.md)
+- [XotBaseEventServiceProvider.md](xotbaseeventserviceprovider.md)
+>>>>>>> .merge_file_A8ANJw

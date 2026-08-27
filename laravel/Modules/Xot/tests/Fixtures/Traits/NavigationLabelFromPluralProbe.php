@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Fixtures\Traits;
 
-final class NavigationLabelFromPluralProbe extends HasCustomModelLabelProbeBase
+use Modules\Xot\Tests\Fixtures\Stubs\HasCustomModelLabelProbeBase;
+
+class NavigationLabelFromPluralProbe extends HasCustomModelLabelProbeBase
 {
     public static function getPluralModelLabel(): string
     {

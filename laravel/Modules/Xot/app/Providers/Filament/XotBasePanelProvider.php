@@ -18,7 +18,7 @@ use Illuminate\Session\Middleware\StartSession;
 use Illuminate\Support\Str;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Modules\Xot\Actions\Panel\ApplyMetatagToPanelAction;
-// Remove if not used elsewhere implicitly
+use Modules\Xot\Datas\MetatagData;
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
 
@@ -36,21 +36,24 @@ abstract class XotBasePanelProvider extends PanelProvider
     {
         $moduleNamespace = $this->getModuleNamespace();
         $moduleLow = Str::lower($this->module);
-        $mainModuleLow = Str::lower(XotData::make()->main_module); // Renamed to camelCase
-        $default = $mainModuleLow === $moduleLow;
+        $metatag = MetatagData::make();
+
+        $main_module = Str::lower(XotData::make()->main_module);
+        $default = $main_module === $moduleLow;
 
         $panel = $panel
             ->default($default)
-            ->login() // UNCOMMENTED
+            // ->login()
             // ->registration()
             ->passwordReset()
             // ->emailVerification()
             // ->profile()
             ->sidebarFullyCollapsibleOnDesktop();
 
-        $panel = app(ApplyMetatagToPanelAction::class)->execute(panel: $panel);
+        app(ApplyMetatagToPanelAction::class)->execute(panel: $panel);
         // ---------------------
-        $panel->maxContentWidth('full')
+        $panel
+            ->maxContentWidth('full')
             ->topNavigation($this->topNavigation)
             ->globalSearch($this->globalSearch)
             ->readOnlyRelationManagersOnResourceViewPagesByDefault(false)
@@ -62,20 +65,20 @@ abstract class XotBasePanelProvider extends PanelProvider
             ->path($moduleLow.'/admin')
             // Configure Filament discovery for module components (unconditional; dirs are expected to exist)
             ->discoverResources(
-                base_path('Modules/'.$this->module.'/app/Filament/Resources'),
-                sprintf('%s\\Filament\\Resources', $moduleNamespace),
+                in: base_path('Modules/'.$this->module.'/app/Filament/Resources'),
+                for: sprintf('%s\\Filament\\Resources', $moduleNamespace),
             )
             ->discoverPages(
-                base_path('Modules/'.$this->module.'/app/Filament/Pages'),
-                sprintf('%s\\Filament\\Pages', $moduleNamespace),
+                in: base_path('Modules/'.$this->module.'/app/Filament/Pages'),
+                for: sprintf('%s\\Filament\\Pages', $moduleNamespace),
             )
             ->discoverWidgets(
-                base_path('Modules/'.$this->module.'/app/Filament/Widgets'),
-                sprintf('%s\\Filament\\Widgets', $moduleNamespace),
+                in: base_path('Modules/'.$this->module.'/app/Filament/Widgets'),
+                for: sprintf('%s\\Filament\\Widgets', $moduleNamespace),
             )
             ->discoverClusters(
-                base_path('Modules/'.$this->module.'/app/Filament/Clusters'),
-                sprintf('%s\\Filament\\Clusters', $moduleNamespace),
+                in: base_path('Modules/'.$this->module.'/app/Filament/Clusters'),
+                for: sprintf('%s\\Filament\\Clusters', $moduleNamespace),
             )
             ->middleware([
                 EncryptCookies::class,

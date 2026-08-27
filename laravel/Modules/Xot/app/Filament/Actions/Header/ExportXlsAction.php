@@ -34,7 +34,7 @@ class ExportXlsAction extends XotBaseAction
                 $transKey = app(GetTransKeyAction::class)->execute($livewire::class);
                 $transKey .= '.fields';
                 $query = $livewire->getFilteredTableQuery();
-                if (null === $query) {
+                if ($query === null) {
                     throw new \Exception('Query is null');
                 }
                 $rows = $query->get();
@@ -68,7 +68,7 @@ class ExportXlsAction extends XotBaseAction
                     }
                     Assert::isArray($fields);
                 } else {
-                    dddx('method xotFields does not exist in '.$resource);
+                    throw new \RuntimeException('Removed debug dddx');
                 }
 
                 return app(ExportXlsByCollection::class)->execute($rows, $filename, $transKey, array_values($fields));

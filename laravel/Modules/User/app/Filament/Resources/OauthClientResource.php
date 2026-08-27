@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
-use Filament\Forms\Components\Field;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Builder;
@@ -15,7 +14,7 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
  * OAuth Client Resource.
  *
  * ⚠️ IMPORTANTE: Estende XotBaseResource, MAI Filament\Resources\Resource
- * direttamente! Segue il pattern DRY: solo getFormSchema() necessario,
+ * direttamente! Segue il pattern DRY: solo getFormSchemaOld() necessario,
  * table() e metodi table* gestiti automaticamente.
  */
 class OauthClientResource extends XotBaseResource
@@ -25,9 +24,9 @@ class OauthClientResource extends XotBaseResource
     /**
      * Schema del form per la risorsa.
      *
-     * @return array<string, Field>
+     * @return array<string, mixed>
      */
-    public static function getFormSchema(): array
+    public static function getFormSchemaOld(): array
     {
         return [
             'name' => TextInput::make('name')

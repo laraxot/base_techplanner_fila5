@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\View\Composers;
 
-use Illuminate\Contracts\Auth\Authenticatable;
+use Exception;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
@@ -26,7 +26,7 @@ class XotComposer
     /**
      * Undocumented function.
      *
-     * @param array<mixed|void> $arguments
+     * @param  array<mixed|void>  $arguments
      */
     public function __call(string $name, array $arguments): mixed
     {
@@ -34,7 +34,7 @@ class XotComposer
 
         $module = Arr::first($modules, static function ($module) use ($name): bool {
             // Ensure the module is an instance of LaravelModule
-            if (! $module instanceof LaravelModule) {
+            if (! ($module instanceof LaravelModule)) {
                 return false;
             }
 
@@ -45,7 +45,9 @@ class XotComposer
         });
 
         if (! \is_object($module)) {
-            throw new \Exception('Create a View\Composers\ThemeComposer.php inside a module with ['.$name.'] method');
+            throw new Exception('Create a View\Composers\ThemeComposer.php inside a module with ['.
+                $name.
+                '] method');
         }
 
         Assert::isInstanceOf($module, LaravelModule::class, '['.__LINE__.']['.class_basename($this).']');
@@ -77,9 +79,7 @@ class XotComposer
         if (Auth::check()) {
             $profile = XotData::make()->getProfileModel();
             $view->with('profile', $profile);
-            /** @var Authenticatable|null $user */
-            $user = Auth::user();
-            $view->with('user', $user);
+            $view->with('user', auth()->user());
         }
     }
 
@@ -98,13 +98,11 @@ class XotComposer
         $metatag = MetatagData::make();
         $fun = 'get'.Str::studly($str);
         if (method_exists($metatag, $fun)) {
-            $value = $metatag->{$fun}();
-
-            return is_string($value) || is_bool($value) ? $value : null;
+            // @phpstan-ignore return.type
+            return $metatag->{$fun}();
         }
 
-        $value = $metatag->{$str} ?? null;
-
-        return is_string($value) || is_bool($value) ? $value : null;
+        // @phpstan-ignore return.type
+        return $metatag->{$str};
     }
 }

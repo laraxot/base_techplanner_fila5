@@ -19,3 +19,17 @@ return [
 ### Versione Incoming
 
 ---
+
+
+## Collegamenti tra versioni di app.md
+* [app.md](../../../Xot/docs/install/app.md)
+* [app.md](../../../Tenant/docs/it/config/app.md)
+
+
+### Versione Incoming
+
+
+---
+
+
+>>>>>>> .merge_file_9M5tHv

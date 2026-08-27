@@ -97,6 +97,19 @@ class Foo extends bar
 * [customizing-your-site.md](../../../Tenant/docs/it/customizing-your-site.md)
 * [customizing-your-site.md](../../../Cms/docs/customizing-your-site.md)
 
+* [customizing-your-site.md](../../../gdpr/project_docs/customizing-your-site.md)
+* [customizing-your-site.md](../../../xot/project_docs/customizing-your-site.md)
+* [customizing-your-site.md](../../../ui/project_docs/customizing-your-site.md)
+* [customizing-your-site.md](../../../tenant/project_docs/it/customizing-your-site.md)
+* [customizing-your-site.md](../../../cms/project_docs/customizing-your-site.md)
+* [customizing-your-site.md](../../../gdpr/docs/customizing-your-site.md)
+* [customizing-your-site.md](../../../xot/docs/customizing-your-site.md)
+* [customizing-your-site.md](../../../ui/docs/customizing-your-site.md)
+* [customizing-your-site.md](../../../tenant/docs/it/customizing-your-site.md)
+* [customizing-your-site.md](../../../cms/docs/customizing-your-site.md)
+
+>>>>>>> .merge_file_EWIUL6
+
 ### Versione Incoming
 
 ---
@@ -183,6 +196,14 @@ class Foo extends bar
 * [customizing-your-site.md](../../../UI/project_docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../Tenant/project_docs/it/customizing-your-site.md)
 * [customizing-your-site.md](../../../Cms/project_docs/customizing-your-site.md)
+
+* [customizing-your-site.md](../../../gdpr/project_docs/customizing-your-site.md)
+* [customizing-your-site.md](../../../xot/project_docs/customizing-your-site.md)
+* [customizing-your-site.md](../../../ui/project_docs/customizing-your-site.md)
+* [customizing-your-site.md](../../../tenant/project_docs/it/customizing-your-site.md)
+* [customizing-your-site.md](../../../cms/project_docs/customizing-your-site.md)
+
+>>>>>>> .merge_file_EWIUL6
 
 ### Versione Incoming
 

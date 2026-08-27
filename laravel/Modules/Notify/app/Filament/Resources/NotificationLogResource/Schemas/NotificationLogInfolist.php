@@ -5,12 +5,13 @@ declare(strict_types=1);
 namespace Modules\Notify\Filament\Resources\NotificationLogResource\Schemas;
 
 use Filament\Infolists\Components\TextEntry;
+use Filament\Schemas\Components\Component;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
 
 class NotificationLogInfolist extends XotBaseResourceInfolist
 {
     /**
-     * @return array<string, \Filament\Schemas\Components\Component>
+     * @return array<string, Component>
      */
     public static function getInfolistSchema(): array
     {
