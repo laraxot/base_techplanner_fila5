@@ -22,10 +22,12 @@ use function Safe\json_encode;
  * @property int $id
  * @property-read Profile|null $creator
  * @property-read Profile|null $updater
+ *
  * @method static Builder<static>|TranslationFile newModelQuery()
  * @method static Builder<static>|TranslationFile newQuery()
  * @method static Builder<static>|TranslationFile query()
  * @method static Builder<static>|TranslationFile whereId($value)
+ *
  * @mixin \Eloquent
  */
 class TranslationFile extends BaseModel

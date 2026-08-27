@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Carbon;
 use Modules\TechPlanner\Models\Profile;
 use Webmozart\Assert\Assert;
 
@@ -13,16 +14,19 @@ use Webmozart\Assert\Assert;
  *
  * @property-read Profile|null $creator
  * @property-read Profile|null $updater
+ *
  * @method static Builder<static>|RoleHasPermission newModelQuery()
  * @method static Builder<static>|RoleHasPermission newQuery()
  * @method static Builder<static>|RoleHasPermission query()
+ *
  * @property string $id
  * @property int $permission_id
  * @property int $role_id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
+ *
  * @method static Builder<static>|RoleHasPermission whereCreatedAt($value)
  * @method static Builder<static>|RoleHasPermission whereCreatedBy($value)
  * @method static Builder<static>|RoleHasPermission whereId($value)
@@ -30,6 +34,7 @@ use Webmozart\Assert\Assert;
  * @method static Builder<static>|RoleHasPermission whereRoleId($value)
  * @method static Builder<static>|RoleHasPermission whereUpdatedAt($value)
  * @method static Builder<static>|RoleHasPermission whereUpdatedBy($value)
+ *
  * @mixin \Eloquent
  */
 class RoleHasPermission extends BasePivot

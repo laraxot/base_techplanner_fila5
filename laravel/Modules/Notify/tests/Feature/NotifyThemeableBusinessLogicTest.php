@@ -11,7 +11,6 @@ use Modules\Notify\Models\NotifyThemeable;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-
 function notifyThemeableTestDomain(): string
 {
     $domain = config('app.domain', 'example.com');

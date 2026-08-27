@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
+use Illuminate\Support\Carbon;
 use Modules\Media\Models\Media;
 use Modules\Notify\Database\Factories\NotifyThemeFactory;
 use Modules\TechPlanner\Models\Profile;
@@ -19,15 +20,18 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * Modules\Notify\Models\NotifyTheme.
  *
  * @method static NotifyThemeFactory factory($count = null, $state = [])
+ *
  * @property-read Profile|null $creator
  * @property-read array{path: string, width: int, height: int} $logo
  * @property-read Model $linkable
  * @property-read MediaCollection<int, Media> $media
  * @property-read int|null $media_count
  * @property-read Profile|null $updater
+ *
  * @method static Builder<static>|NotifyTheme newModelQuery()
  * @method static Builder<static>|NotifyTheme newQuery()
  * @method static Builder<static>|NotifyTheme query()
+ *
  * @property string $id
  * @property string|null $lang
  * @property string|null $type
@@ -43,12 +47,13 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property int|null $logo_width
  * @property int|null $logo_height
  * @property array<array-key, mixed>|null $view_params
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
+ *
  * @method static Builder<static>|NotifyTheme whereBody($value)
  * @method static Builder<static>|NotifyTheme whereBodyHtml($value)
  * @method static Builder<static>|NotifyTheme whereCreatedAt($value)
@@ -70,6 +75,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder<static>|NotifyTheme whereUpdatedAt($value)
  * @method static Builder<static>|NotifyTheme whereUpdatedBy($value)
  * @method static Builder<static>|NotifyTheme whereViewParams($value)
+ *
  * @mixin Eloquent
  */
 class NotifyTheme extends BaseModel

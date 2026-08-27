@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\MassPrunable;
 use Illuminate\Http\UploadedFile;
+use Illuminate\Support\Carbon;
 use Modules\Media\Exceptions\CouldNotAddUpload;
 use Modules\Media\Exceptions\TemporaryUploadDoesNotBelongToCurrentSession;
 use Modules\TechPlanner\Models\Profile;
@@ -29,10 +30,12 @@ use Webmozart\Assert\Assert;
  * @property-read MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property-read int|null $media_count
  * @property-read Profile|null $updater
+ *
  * @method static \Modules\Media\Database\Factories\TemporaryUploadFactory factory($count = null, $state = [])
  * @method static Builder<static>|TemporaryUpload newModelQuery()
  * @method static Builder<static>|TemporaryUpload newQuery()
  * @method static Builder<static>|TemporaryUpload query()
+ *
  * @property string $id
  * @property string $session_id
  * @property string|null $user_id
@@ -40,12 +43,13 @@ use Webmozart\Assert\Assert;
  * @property int|null $file_size
  * @property string|null $mime_type
  * @property string $status
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
+ *
  * @method static Builder<static>|TemporaryUpload whereCreatedAt($value)
  * @method static Builder<static>|TemporaryUpload whereCreatedBy($value)
  * @method static Builder<static>|TemporaryUpload whereDeletedAt($value)
@@ -59,6 +63,7 @@ use Webmozart\Assert\Assert;
  * @method static Builder<static>|TemporaryUpload whereUpdatedAt($value)
  * @method static Builder<static>|TemporaryUpload whereUpdatedBy($value)
  * @method static Builder<static>|TemporaryUpload whereUserId($value)
+ *
  * @mixin \Eloquent
  */
 class TemporaryUpload extends BaseModel implements HasMedia

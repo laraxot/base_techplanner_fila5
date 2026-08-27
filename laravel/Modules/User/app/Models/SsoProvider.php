@@ -18,9 +18,11 @@ use Modules\TechPlanner\Models\Profile;
  * @property-read Profile|null $updater
  * @property-read Collection<int, User> $users
  * @property-read int|null $users_count
+ *
  * @method static Builder<static>|SsoProvider newModelQuery()
  * @method static Builder<static>|SsoProvider newQuery()
  * @method static Builder<static>|SsoProvider query()
+ *
  * @mixin \Eloquent
  */
 class SsoProvider extends BaseModel

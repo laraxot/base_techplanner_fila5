@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 use Modules\Cms\Filament\Resources\PageResource;
 use Modules\Cms\Models\Page;
-use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 describe('PageResource', function (): void {

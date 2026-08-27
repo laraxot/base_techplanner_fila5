@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 use Modules\Cms\Filament\Pages\Themes;
-use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 test('Themes page can be instantiated', function () {
@@ -19,8 +18,6 @@ test('Themes page has themes property', function () {
     Assert::assertIsArray($property->getValue($page));
 });
 
-test('Themes page has changePubTheme method', function () {
-})->todo('Serve una asserzione di comportamento: method_exists() su una classe nota e\' decidibile staticamente, quindi non prova niente.');
+test('Themes page has changePubTheme method', function () {})->todo('Serve una asserzione di comportamento: method_exists() su una classe nota e\' decidibile staticamente, quindi non prova niente.');
 
-test('Themes page has getViewData method', function () {
-})->todo('Serve una asserzione di comportamento: method_exists() su una classe nota e\' decidibile staticamente, quindi non prova niente.');
+test('Themes page has getViewData method', function () {})->todo('Serve una asserzione di comportamento: method_exists() su una classe nota e\' decidibile staticamente, quindi non prova niente.');

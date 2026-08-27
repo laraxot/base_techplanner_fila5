@@ -33,7 +33,6 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
 
-
 beforeEach(function (): void {
     /** @var TestCase $this */
     $this->disableExceptionHandling();

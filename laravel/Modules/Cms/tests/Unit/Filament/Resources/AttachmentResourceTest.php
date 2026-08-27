@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 use Modules\Cms\Filament\Resources\AttachmentResource;
 use Modules\Cms\Models\Attachment;
-use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 describe('AttachmentResource', function (): void {

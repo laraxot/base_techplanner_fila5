@@ -7,6 +7,7 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
+use Illuminate\Support\Carbon;
 use Modules\TechPlanner\Models\Profile;
 
 /**
@@ -17,18 +18,21 @@ use Modules\TechPlanner\Models\Profile;
  * @property-read Model $authenticatable
  * @property-read Profile|null $creator
  * @property-read Profile|null $updater
+ *
  * @method static Builder<static>|Authentication newModelQuery()
  * @method static Builder<static>|Authentication newQuery()
  * @method static Builder<static>|Authentication query()
+ *
  * @property int $id
  * @property string $type
  * @property string|null $ip_address
  * @property string|null $user_agent
  * @property string|null $location
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
+ *
  * @method static Builder<static>|Authentication whereCreatedAt($value)
  * @method static Builder<static>|Authentication whereCreatedBy($value)
  * @method static Builder<static>|Authentication whereId($value)
@@ -38,6 +42,7 @@ use Modules\TechPlanner\Models\Profile;
  * @method static Builder<static>|Authentication whereUpdatedAt($value)
  * @method static Builder<static>|Authentication whereUpdatedBy($value)
  * @method static Builder<static>|Authentication whereUserAgent($value)
+ *
  * @mixin \Eloquent
  */
 class Authentication extends BaseModel

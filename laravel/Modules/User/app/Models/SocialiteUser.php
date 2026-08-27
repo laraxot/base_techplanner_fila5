@@ -11,6 +11,7 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Carbon;
 use Modules\TechPlanner\Models\Profile;
 use Modules\Xot\Datas\XotData;
 
@@ -20,9 +21,11 @@ use Modules\Xot\Datas\XotData;
  * @property-read Profile|null $creator
  * @property-read Profile|null $updater
  * @property-read User|null $user
+ *
  * @method static Builder<static>|SocialiteUser newModelQuery()
  * @method static Builder<static>|SocialiteUser newQuery()
  * @method static Builder<static>|SocialiteUser query()
+ *
  * @property int $id
  * @property string $user_id
  * @property string $provider
@@ -31,10 +34,11 @@ use Modules\Xot\Datas\XotData;
  * @property string|null $name
  * @property string|null $email
  * @property string|null $avatar
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
+ *
  * @method static Builder<static>|SocialiteUser whereAvatar($value)
  * @method static Builder<static>|SocialiteUser whereCreatedAt($value)
  * @method static Builder<static>|SocialiteUser whereCreatedBy($value)
@@ -47,6 +51,7 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder<static>|SocialiteUser whereUpdatedAt($value)
  * @method static Builder<static>|SocialiteUser whereUpdatedBy($value)
  * @method static Builder<static>|SocialiteUser whereUserId($value)
+ *
  * @mixin \Eloquent
  */
 class SocialiteUser extends BaseModel

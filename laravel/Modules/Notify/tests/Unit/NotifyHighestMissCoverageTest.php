@@ -71,7 +71,6 @@ use Safe\DateTime;
 use function Safe\file_put_contents;
 use function Safe\unlink;
 
-
 /**
  * @param  class-string  $class
  */

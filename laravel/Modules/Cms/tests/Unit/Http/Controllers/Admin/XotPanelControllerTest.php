@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 use Modules\Cms\Http\Controllers\Admin\XotPanelController;
 use Modules\Cms\Http\Controllers\BaseController;
-use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 describe('XotPanelController', function (): void {
@@ -14,8 +13,7 @@ describe('XotPanelController', function (): void {
         Assert::assertInstanceOf(BaseController::class, $controller);
     });
 
-    test('xot panel controller has __call method', function (): void {
-    })->todo('Serve una asserzione di comportamento: l\'esistenza di un metodo su una classe nota e\' decidibile staticamente, quindi non prova niente.');
+    test('xot panel controller has __call method', function (): void {})->todo('Serve una asserzione di comportamento: l\'esistenza di un metodo su una classe nota e\' decidibile staticamente, quindi non prova niente.');
 
     test('xot panel controller uses correct namespace', function (): void {
         $reflector = new ReflectionClass(XotPanelController::class);

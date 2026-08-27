@@ -6,12 +6,10 @@ namespace Modules\Cms\Tests\Unit\Models;
 
 use Modules\Cms\Models\Section;
 use Modules\Cms\Models\Traits\HasBlocks;
-use Modules\Cms\Tests\TestCase;
 use Modules\Tenant\Models\Traits\SushiToJsons;
 use PHPUnit\Framework\Assert;
 
 use function Safe\class_uses;
-
 
 describe('Section Business Logic', function (): void {
     test('section has expected fillable fields', function (): void {

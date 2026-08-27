@@ -11,6 +11,7 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
+use Illuminate\Support\Carbon;
 use Modules\TechPlanner\Models\Profile;
 
 /**
@@ -19,21 +20,24 @@ use Modules\TechPlanner\Models\Profile;
  * @property int|string|null $authenticatable_id
  * @property string|null $ip_address
  * @property string|null $user_agent
- * @property \Illuminate\Support\Carbon|null $login_at
+ * @property Carbon|null $login_at
  * @property bool|null $login_successful
- * @property \Illuminate\Support\Carbon|null $logout_at
+ * @property Carbon|null $logout_at
  * @property bool|null $cleared_by_user
  * @property array<string, mixed>|null $location
  * @property-read Profile|null $creator
  * @property-read Profile|null $updater
+ *
  * @method static Builder<static>|AuthenticationLog newModelQuery()
  * @method static Builder<static>|AuthenticationLog newQuery()
  * @method static Builder<static>|AuthenticationLog query()
+ *
  * @property int $id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
+ *
  * @method static Builder<static>|AuthenticationLog whereAuthenticatableId($value)
  * @method static Builder<static>|AuthenticationLog whereAuthenticatableType($value)
  * @method static Builder<static>|AuthenticationLog whereClearedByUser($value)
@@ -48,6 +52,7 @@ use Modules\TechPlanner\Models\Profile;
  * @method static Builder<static>|AuthenticationLog whereUpdatedAt($value)
  * @method static Builder<static>|AuthenticationLog whereUpdatedBy($value)
  * @method static Builder<static>|AuthenticationLog whereUserAgent($value)
+ *
  * @mixin \Eloquent
  */
 class AuthenticationLog extends BaseModel

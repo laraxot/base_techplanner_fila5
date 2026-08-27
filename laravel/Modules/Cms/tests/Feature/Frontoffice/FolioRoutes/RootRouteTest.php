@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-use Modules\Cms\Tests\TestCase;
-
 it('GET / redirects to /{locale}', function (): void {
     $locale = app()->getLocale();
     cmsGet('/')->assertRedirect('/'.$locale);

@@ -6,6 +6,7 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Carbon;
 use Modules\Xot\Models\Traits\HasXotFactory;
 
 /**
@@ -15,14 +16,16 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken query()
+ *
  * @property int $id
  * @property string $tokenable_type
  * @property int $tokenable_id
  * @property string $name
  * @property string $token
  * @property array<array-key, mixed>|null $abilities
- * @property \Illuminate\Support\Carbon|null $last_used_at
- * @property \Illuminate\Support\Carbon|null $expires_at
+ * @property Carbon|null $last_used_at
+ * @property Carbon|null $expires_at
+ *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken whereAbilities($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken whereExpiresAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken whereId($value)
@@ -31,6 +34,7 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken whereToken($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken whereTokenableId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken whereTokenableType($value)
+ *
  * @mixin \Eloquent
  */
 class PersonalAccessToken extends Model

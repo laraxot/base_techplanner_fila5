@@ -6,6 +6,7 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
+use Illuminate\Support\Carbon;
 use Modules\Media\Models\Media;
 use Modules\TechPlanner\Models\Profile;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
@@ -22,9 +23,11 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property-read Profile|null $updater
  * @property-read EloquentCollection<int, User> $users
  * @property-read int|null $users_count
+ *
  * @method static Builder<static>|Tenant newModelQuery()
  * @method static Builder<static>|Tenant newQuery()
  * @method static Builder<static>|Tenant query()
+ *
  * @property string $id
  * @property string $name
  * @property string|null $slug
@@ -37,12 +40,13 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property string|null $address
  * @property string|null $primary_color
  * @property string|null $secondary_color
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
+ *
  * @method static Builder<static>|Tenant whereAddress($value)
  * @method static Builder<static>|Tenant whereCreatedAt($value)
  * @method static Builder<static>|Tenant whereCreatedBy($value)
@@ -61,6 +65,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder<static>|Tenant whereSlug($value)
  * @method static Builder<static>|Tenant whereUpdatedAt($value)
  * @method static Builder<static>|Tenant whereUpdatedBy($value)
+ *
  * @mixin \Eloquent
  */
 class Tenant extends BaseTenant {}

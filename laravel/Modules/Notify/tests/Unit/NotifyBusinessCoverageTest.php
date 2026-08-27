@@ -7,7 +7,6 @@ namespace Modules\Notify\Tests\Unit;
 use Mockery;
 use Modules\Xot\Tests\ModuleBusinessCoverage;
 
-
 afterEach(function (): void {
     Mockery::close();
 });

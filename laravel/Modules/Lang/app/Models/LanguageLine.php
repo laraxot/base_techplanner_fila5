@@ -5,24 +5,29 @@ declare(strict_types=1);
 namespace Modules\Lang\Models;
 
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
+use Illuminate\Support\Carbon;
+use Modules\TechPlanner\Models\Profile;
 
 /**
  * Modules\Lang\Models\LanguageLine.
  *
- * @property-read \Modules\TechPlanner\Models\Profile|null $creator
- * @property-read \Modules\TechPlanner\Models\Profile|null $updater
+ * @property-read Profile|null $creator
+ * @property-read Profile|null $updater
+ *
  * @method static EloquentBuilder<static>|LanguageLine newModelQuery()
  * @method static EloquentBuilder<static>|LanguageLine newQuery()
  * @method static EloquentBuilder<static>|LanguageLine query()
+ *
  * @property int $id
  * @property string $group
  * @property string $key
  * @property array<array-key, mixed> $text
  * @property string $locale
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
+ *
  * @method static EloquentBuilder<static>|LanguageLine whereCreatedAt($value)
  * @method static EloquentBuilder<static>|LanguageLine whereCreatedBy($value)
  * @method static EloquentBuilder<static>|LanguageLine whereGroup($value)
@@ -32,6 +37,7 @@ use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
  * @method static EloquentBuilder<static>|LanguageLine whereText($value)
  * @method static EloquentBuilder<static>|LanguageLine whereUpdatedAt($value)
  * @method static EloquentBuilder<static>|LanguageLine whereUpdatedBy($value)
+ *
  * @mixin \Eloquent
  */
 class LanguageLine extends BaseModel

@@ -5,7 +5,6 @@ declare(strict_types=1);
 use Filament\Forms\Components\Field;
 use Modules\Cms\Filament\Resources\MenuResource;
 use Modules\Cms\Models\Menu;
-use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 describe('MenuResource', function (): void {

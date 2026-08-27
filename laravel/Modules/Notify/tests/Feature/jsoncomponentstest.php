@@ -5,10 +5,8 @@ declare(strict_types=1);
 namespace Modules\Notify\Tests\Feature;
 
 use Illuminate\Support\Facades\File;
-use Modules\Notify\Tests\TestCase;
 
 use function Safe\json_decode;
-
 
 test('components json is valid and contains expected components', function (): void {
     // Percorso del file

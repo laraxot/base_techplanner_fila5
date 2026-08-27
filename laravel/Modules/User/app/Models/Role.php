@@ -15,6 +15,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\Pivot;
+use Illuminate\Support\Carbon;
 use Modules\TechPlanner\Models\Profile;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Traits\HasXotFactory;
@@ -34,22 +35,25 @@ use Webmozart\Assert\Assert;
  * @property-read Profile|null $updater
  * @property-read Collection<int, User> $users
  * @property-read int|null $users_count
+ *
  * @method static \Modules\User\Database\Factories\RoleFactory factory($count = null, $state = [])
  * @method static Builder<static>|Role newModelQuery()
  * @method static Builder<static>|Role newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Role permission($permissions, bool $without = false)
  * @method static Builder<static>|Role query()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Role withoutPermission($permissions)
+ *
  * @property int $id
  * @property int|null $team_id
  * @property string $name
  * @property string $guard_name
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $display_name
  * @property string|null $description
+ *
  * @method static Builder<static>|Role whereCreatedAt($value)
  * @method static Builder<static>|Role whereCreatedBy($value)
  * @method static Builder<static>|Role whereDescription($value)
@@ -60,6 +64,7 @@ use Webmozart\Assert\Assert;
  * @method static Builder<static>|Role whereTeamId($value)
  * @method static Builder<static>|Role whereUpdatedAt($value)
  * @method static Builder<static>|Role whereUpdatedBy($value)
+ *
  * @mixin \Eloquent
  */
 class Role extends SpatieRole

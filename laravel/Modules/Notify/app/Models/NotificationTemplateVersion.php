@@ -7,6 +7,7 @@ namespace Modules\Notify\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\Media\Models\Media;
+use Modules\TechPlanner\Models\Profile;
 use Modules\Xot\Traits\Updater;
 use Override;
 use RuntimeException;
@@ -14,14 +15,16 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 
 // BaseModel in same namespace provides common behaviors
 /**
- * @property-read \Modules\TechPlanner\Models\Profile|null $creator
+ * @property-read Profile|null $creator
  * @property-read MediaCollection<int, Media> $media
  * @property-read int|null $media_count
  * @property-read NotificationTemplate|null $template
- * @property-read \Modules\TechPlanner\Models\Profile|null $updater
+ * @property-read Profile|null $updater
+ *
  * @method static Builder<static>|NotificationTemplateVersion newModelQuery()
  * @method static Builder<static>|NotificationTemplateVersion newQuery()
  * @method static Builder<static>|NotificationTemplateVersion query()
+ *
  * @mixin \Eloquent
  */
 class NotificationTemplateVersion extends BaseModel

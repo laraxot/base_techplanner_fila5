@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 use Modules\Cms\Filament\Resources\SectionResource;
 use Modules\Cms\Models\Section;
-use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 describe('SectionResource', function (): void {

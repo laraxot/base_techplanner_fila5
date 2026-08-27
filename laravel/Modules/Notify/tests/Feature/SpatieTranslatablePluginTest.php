@@ -17,7 +17,6 @@ use PHPUnit\Framework\Assert;
 
 use function Pest\Laravel\actingAs;
 
-
 beforeEach(function (): void {
     /** @var TestCase $this */
     $user = UserFactory::new()->createOne();

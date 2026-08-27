@@ -7,11 +7,9 @@ namespace Modules\Cms\Tests\Feature\Auth;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Livewire\Volt\Volt as LivewireVolt;
-use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Pest\Laravel\actingAs;
-
 
 describe('Login Http', function (): void {
     test('login page can be rendered', function (): void {

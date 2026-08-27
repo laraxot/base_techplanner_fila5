@@ -6,7 +6,6 @@ namespace Modules\Notify\Tests\Unit;
 
 use Modules\Xot\Tests\ModuleDeepCoverage;
 
-
 /**
  * @return array{string, string} radice `app/` del modulo e namespace corrispondente
  */

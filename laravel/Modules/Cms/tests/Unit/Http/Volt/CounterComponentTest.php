@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 use Livewire\Volt\Component;
 use Modules\Cms\Http\Volt\CounterComponent;
-use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 describe('CounterComponent', function (): void {
@@ -20,11 +19,9 @@ describe('CounterComponent', function (): void {
         Assert::assertTrue((new ReflectionClass($component))->hasProperty('count'));
     });
 
-    test('counter component has increment method', function (): void {
-    })->todo('Serve una asserzione di comportamento: l\'esistenza di un metodo su una classe nota e\' decidibile staticamente, quindi non prova niente.');
+    test('counter component has increment method', function (): void {})->todo('Serve una asserzione di comportamento: l\'esistenza di un metodo su una classe nota e\' decidibile staticamente, quindi non prova niente.');
 
-    test('counter component has decrement method', function (): void {
-    })->todo('Serve una asserzione di comportamento: l\'esistenza di un metodo su una classe nota e\' decidibile staticamente, quindi non prova niente.');
+    test('counter component has decrement method', function (): void {})->todo('Serve una asserzione di comportamento: l\'esistenza di un metodo su una classe nota e\' decidibile staticamente, quindi non prova niente.');
 
     test('counter component uses correct namespace', function (): void {
         $reflector = new ReflectionClass(CounterComponent::class);

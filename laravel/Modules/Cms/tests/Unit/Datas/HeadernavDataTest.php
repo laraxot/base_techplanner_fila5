@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 use Livewire\Wireable;
 use Modules\Cms\Datas\HeadernavData;
-use Modules\Cms\Tests\TestCase;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use PHPUnit\Framework\Assert;
 use Spatie\LaravelData\Data;

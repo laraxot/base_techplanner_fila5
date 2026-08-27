@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\Pivot;
 use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
+use Illuminate\Support\Carbon;
 use Modules\Media\Models\Media;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
@@ -52,6 +53,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @property-read \Modules\TechPlanner\Models\Profile|null $updater
  * @property-read User|null $user
  * @property-read string|null $user_name
+ *
  * @method static Builder<static>|Profile byUuid(string $uuid)
  * @method static Builder<static>|Profile childrenWith(array<string> $relations)
  * @method static Builder<static>|Profile childrenWithCount(array<string> $relations)
@@ -65,6 +67,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @method static Builder<static>|Profile withoutPermission($permissions)
  * @method static Builder<static>|Profile withoutRole($roles, ?string $guard = null)
  * @method static Builder<static>|Profile withoutTeam($teams)
+ *
  * @property int $id
  * @property string|null $user_id
  * @property string|null $type
@@ -78,12 +81,13 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @property array<array-key, mixed>|null $preferences
  * @property string|null $status
  * @property bool $is_active
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property Carbon|null $deleted_at
  * @property string|null $created_by
  * @property string|null $updated_by
  * @property string|null $deleted_by
+ *
  * @method static Builder<static>|Profile whereAddress($value)
  * @method static Builder<static>|Profile whereAvatar($value)
  * @method static Builder<static>|Profile whereBio($value)
@@ -109,6 +113,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @method static Builder<static>|Profile whereUpdatedBy($value)
  * @method static Builder<static>|Profile whereUserId($value)
  * @method static Builder<static>|Profile whereUserName($value)
+ *
  * @mixin \Eloquent
  */
 class Profile extends BaseProfile implements HasMedia

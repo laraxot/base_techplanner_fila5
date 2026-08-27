@@ -13,7 +13,6 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
 
-
 describe('Mail Template Log Business Logic', function () {
     it('can create mail template log with basic information', function () {
         $template = MailTemplateFactory::new()->createOne();

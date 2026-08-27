@@ -9,7 +9,6 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\json_decode;
 
-
 test('components json is valid and contains expected components', function (): void {
     $filePath = base_path('Modules/Notify/app/Console/Commands/_components.json');
 

@@ -13,9 +13,11 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property-read MediaCollection<int, Media> $media
  * @property-read int|null $media_count
  * @property-read Profile|null $updater
+ *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|NotificationChannel newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|NotificationChannel newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|NotificationChannel query()
+ *
  * @mixin \Eloquent
  */
 class NotificationChannel extends BaseModel

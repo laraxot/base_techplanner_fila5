@@ -32,7 +32,6 @@ use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use ReflectionClass;
 
-
 afterEach(function (): void {
     Mockery::close();
 });

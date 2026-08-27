@@ -22,9 +22,11 @@ use Modules\User\Models\User;
  * @property-read Profile|null $updater
  * @property-read Collection<int, User> $users
  * @property-read int|null $users_count
+ *
  * @method static Builder<static>|Tenant newModelQuery()
  * @method static Builder<static>|Tenant newQuery()
  * @method static Builder<static>|Tenant query()
+ *
  * @mixin \Eloquent
  */
 class Tenant extends BaseModel

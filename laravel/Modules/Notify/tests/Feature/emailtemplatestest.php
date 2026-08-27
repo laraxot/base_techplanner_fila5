@@ -5,8 +5,6 @@ declare(strict_types=1);
 namespace Modules\Notify\Tests\Feature;
 
 use Illuminate\Support\Facades\File;
-use Modules\Notify\Tests\TestCase;
-
 
 test('html template contains optional function', function (): void {
     // Percorso del file

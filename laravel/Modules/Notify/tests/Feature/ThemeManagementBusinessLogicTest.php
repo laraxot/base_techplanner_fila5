@@ -4,9 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Feature;
 
-use PHPUnit\Framework\Assert;
-
-
 /**
  * Theme Management Business Logic Tests.
  *

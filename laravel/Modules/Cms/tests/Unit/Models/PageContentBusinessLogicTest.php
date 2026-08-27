@@ -6,11 +6,9 @@ namespace Modules\Cms\Tests\Unit\Models;
 
 use Modules\Cms\Models\BaseModel;
 use Modules\Cms\Models\PageContent;
-use Modules\Cms\Tests\TestCase;
 use Modules\Tenant\Models\Traits\SushiToJsons;
 use PHPUnit\Framework\Assert;
 use Spatie\Translatable\HasTranslations;
-
 
 describe('Page Content Business Logic', function (): void {
     test('page content model can be instantiated', function (): void {

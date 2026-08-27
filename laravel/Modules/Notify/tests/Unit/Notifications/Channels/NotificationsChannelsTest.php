@@ -18,7 +18,6 @@ use Modules\Notify\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
-
 function makeThemeNotificationDummy(): ThemeNotification
 {
     return new class('name', []) extends ThemeNotification

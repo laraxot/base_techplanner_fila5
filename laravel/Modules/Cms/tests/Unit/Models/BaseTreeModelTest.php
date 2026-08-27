@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 use Modules\Cms\Models\BaseModel;
 use Modules\Cms\Models\BaseTreeModel;
-use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
 

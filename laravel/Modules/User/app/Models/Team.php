@@ -7,6 +7,7 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Support\Carbon;
 use Modules\TechPlanner\Models\Profile;
 use Modules\Xot\Models\Traits\HasXotFactory;
 
@@ -27,9 +28,11 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property-read Profile|null $updater
  * @property-read Collection<int, User> $users
  * @property-read int|null $users_count
+ *
  * @method static Builder<static>|Team newModelQuery()
  * @method static Builder<static>|Team newQuery()
  * @method static Builder<static>|Team query()
+ *
  * @property int $id
  * @property string|null $owner_id
  * @property string|null $uuid
@@ -37,8 +40,8 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property string $name
  * @property bool $personal_team
  * @property string|null $code
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_at
@@ -47,6 +50,7 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property string|null $description
  * @property string|null $avatar_path
  * @property array<array-key, mixed>|null $settings
+ *
  * @method static \Modules\User\Database\Factories\TeamFactory factory($count = null, $state = [])
  * @method static Builder<static>|Team whereAvatarPath($value)
  * @method static Builder<static>|Team whereCode($value)
@@ -65,6 +69,7 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @method static Builder<static>|Team whereUpdatedBy($value)
  * @method static Builder<static>|Team whereUserId($value)
  * @method static Builder<static>|Team whereUuid($value)
+ *
  * @mixin \Eloquent
  */
 class Team extends BaseTeam

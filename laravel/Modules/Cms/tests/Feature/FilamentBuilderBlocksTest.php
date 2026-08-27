@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-use Modules\Cms\Tests\TestCase;
 use Modules\UI\Actions\Block\GetAllBlocksAction;
 use Modules\UI\View\Components\Render\Blocks;
 use PHPUnit\Framework\Assert;

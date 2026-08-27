@@ -7,6 +7,7 @@ namespace Modules\Notify\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Carbon;
 use Modules\Media\Models\Media;
 use Modules\TechPlanner\Models\Profile;
 use Modules\Xot\Traits\Updater;
@@ -20,12 +21,14 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property-read int|null $media_count
  * @property-read MailTemplate|null $template
  * @property-read Profile|null $updater
+ *
  * @method static Builder<static>|MailTemplateVersion newModelQuery()
  * @method static Builder<static>|MailTemplateVersion newQuery()
  * @method static Builder<static>|MailTemplateVersion onlyTrashed()
  * @method static Builder<static>|MailTemplateVersion query()
  * @method static Builder<static>|MailTemplateVersion withTrashed(bool $withTrashed = true)
  * @method static Builder<static>|MailTemplateVersion withoutTrashed()
+ *
  * @property string $id
  * @property int $mail_template_id
  * @property int $version
@@ -35,11 +38,12 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property array<array-key, mixed>|null $metadata
  * @property string|null $created_by
  * @property string|null $change_notes
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
+ *
  * @method static Builder<static>|MailTemplateVersion whereChangeNotes($value)
  * @method static Builder<static>|MailTemplateVersion whereCreatedAt($value)
  * @method static Builder<static>|MailTemplateVersion whereCreatedBy($value)
@@ -54,6 +58,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder<static>|MailTemplateVersion whereUpdatedAt($value)
  * @method static Builder<static>|MailTemplateVersion whereUpdatedBy($value)
  * @method static Builder<static>|MailTemplateVersion whereVersion($value)
+ *
  * @mixin \Eloquent
  */
 class MailTemplateVersion extends BaseModel

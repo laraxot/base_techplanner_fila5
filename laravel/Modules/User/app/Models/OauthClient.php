@@ -6,6 +6,7 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Foundation\Auth\User;
+use Illuminate\Support\Carbon;
 use Laravel\Passport\Client as PassportClient;
 
 /**
@@ -27,17 +28,20 @@ use Laravel\Passport\Client as PassportClient;
  * @property-read Collection<int, OauthToken> $tokens
  * @property-read int|null $tokens_count
  * @property-read \Modules\User\Models\User|null $user
+ *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthClient existsIn(array<int, mixed> $haystack)
  * @method static \Laravel\Passport\Database\Factories\ClientFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthClient newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthClient newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthClient query()
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ *
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $owner_type
  * @property int|null $owner_id
+ *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthClient whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthClient whereCreatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthClient whereGrantTypes($value)
@@ -55,6 +59,7 @@ use Laravel\Passport\Client as PassportClient;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthClient whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthClient whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthClient whereUserId($value)
+ *
  * @mixin \Eloquent
  */
 class OauthClient extends PassportClient

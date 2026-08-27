@@ -10,6 +10,7 @@ namespace Modules\Media\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Carbon;
 use Modules\TechPlanner\Models\Profile;
 
 /**
@@ -19,9 +20,11 @@ use Modules\TechPlanner\Models\Profile;
  * @property-read string|null $file
  * @property-read Media|null $media
  * @property-read Profile|null $updater
+ *
  * @method static Builder<static>|MediaConvert newModelQuery()
  * @method static Builder<static>|MediaConvert newQuery()
  * @method static Builder<static>|MediaConvert query()
+ *
  * @property string $id
  * @property int $media_id
  * @property string|null $format
@@ -37,12 +40,13 @@ use Modules\TechPlanner\Models\Profile;
  * @property numeric|null $remaining
  * @property numeric|null $rate
  * @property numeric|null $execution_time
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
+ *
  * @method static Builder<static>|MediaConvert whereBitrate($value)
  * @method static Builder<static>|MediaConvert whereCodecAudio($value)
  * @method static Builder<static>|MediaConvert whereCodecVideo($value)
@@ -64,6 +68,7 @@ use Modules\TechPlanner\Models\Profile;
  * @method static Builder<static>|MediaConvert whereUpdatedAt($value)
  * @method static Builder<static>|MediaConvert whereUpdatedBy($value)
  * @method static Builder<static>|MediaConvert whereWidth($value)
+ *
  * @mixin \Eloquent
  */
 class MediaConvert extends BaseModel

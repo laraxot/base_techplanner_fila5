@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 use Modules\Cms\Models\Menu;
-use Modules\Cms\Tests\TestCase;
 use Modules\Tenant\Models\Traits\SushiToJsons;
 use PHPUnit\Framework\Assert;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;

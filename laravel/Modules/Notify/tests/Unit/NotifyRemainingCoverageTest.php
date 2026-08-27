@@ -44,7 +44,6 @@ use PHPUnit\Framework\Assert;
 use ReflectionClass;
 use Safe\DateTime;
 
-
 afterEach(function (): void {
     Mockery::close();
 });

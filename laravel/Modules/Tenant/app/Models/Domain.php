@@ -14,11 +14,13 @@ use Sushi\Sushi;
  * @property string|null $name
  * @property-read Profile|null $creator
  * @property-read Profile|null $updater
+ *
  * @method static Builder<static>|Domain newModelQuery()
  * @method static Builder<static>|Domain newQuery()
  * @method static Builder<static>|Domain query()
  * @method static Builder<static>|Domain whereId($value)
  * @method static Builder<static>|Domain whereName($value)
+ *
  * @mixin \Eloquent
  */
 class Domain extends BaseModel

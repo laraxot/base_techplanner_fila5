@@ -12,6 +12,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Support\Carbon;
 use Modules\TechPlanner\Models\Profile;
 use Modules\User\Models\User;
 use Modules\Xot\Datas\XotData;
@@ -33,6 +34,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media as SpatieMedia;
  * @property-read TemporaryUpload|null $temporaryUpload
  * @property-read mixed $type
  * @property-read Profile|null $updater
+ *
  * @method static MediaCollection<int, static> all($columns = ['*'])
  * @method static \Modules\Media\Database\Factories\MediaFactory factory($count = null, $state = [])
  * @method static MediaCollection<int, static> get($columns = ['*'])
@@ -40,6 +42,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media as SpatieMedia;
  * @method static Builder<static>|Media newQuery()
  * @method static Builder<static>|Media ordered()
  * @method static Builder<static>|Media query()
+ *
  * @property string $id
  * @property string $model_type
  * @property string|null $model_id
@@ -56,13 +59,14 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media as SpatieMedia;
  * @property array<array-key, mixed> $generated_conversions
  * @property array<array-key, mixed> $responsive_images
  * @property int|null $order_column
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
  * @property-read \Modules\Media\Models\array<int, array{name: $entry_conversions
+ *
  * @method static Builder<static>|Media whereCollectionName($value)
  * @method static Builder<static>|Media whereConversionsDisk($value)
  * @method static Builder<static>|Media whereCreatedAt($value)
@@ -85,6 +89,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media as SpatieMedia;
  * @method static Builder<static>|Media whereUpdatedAt($value)
  * @method static Builder<static>|Media whereUpdatedBy($value)
  * @method static Builder<static>|Media whereUuid($value)
+ *
  * @mixin Eloquent
  */
 class Media extends SpatieMedia

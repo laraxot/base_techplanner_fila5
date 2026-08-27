@@ -14,6 +14,7 @@ use Override;
  * @method static Builder<static>|NotificationType newModelQuery()
  * @method static Builder<static>|NotificationType newQuery()
  * @method static Builder<static>|NotificationType query()
+ *
  * @mixin \Eloquent
  */
 class NotificationType extends Model

@@ -7,7 +7,6 @@ use Modules\Cms\Providers\CmsServiceProvider;
 use Modules\Cms\Providers\EventServiceProvider;
 use Modules\Cms\Providers\FolioVoltServiceProvider;
 use Modules\Cms\Providers\RouteServiceProvider;
-use Modules\Cms\Tests\TestCase;
 use Modules\Xot\Providers\XotBaseServiceProvider;
 use PHPUnit\Framework\Assert;
 

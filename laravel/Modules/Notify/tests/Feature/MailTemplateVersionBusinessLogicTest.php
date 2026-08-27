@@ -11,7 +11,6 @@ use Modules\Notify\Models\MailTemplateVersion;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
-
 describe('Mail Template Version Business Logic', function (): void {
     test('_can_create_mail_template_version_with_basic_information', function (): void {
         $template = MailTemplateFactory::new()->createOne();

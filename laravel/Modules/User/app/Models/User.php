@@ -7,6 +7,7 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Notifications\DatabaseNotificationCollection;
+use Illuminate\Support\Carbon;
 use Modules\Media\Models\Media;
 use Modules\TechPlanner\Models\Profile;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
@@ -50,6 +51,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property-read int|null $tenants_count
  * @property-read Collection<int, OauthToken> $tokens
  * @property-read int|null $tokens_count
+ *
  * @method static Builder<static>|User childrenWith(array<string> $relations)
  * @method static Builder<static>|User childrenWithCount(array<string> $relations)
  * @method static \Modules\User\Database\Factories\UserFactory factory($count = null, $state = [])
@@ -62,29 +64,31 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder<static>|User withoutPermission($permissions)
  * @method static Builder<static>|User withoutRole($roles, ?string $guard = null)
  * @method static Builder<static>|User withoutTeam($teams)
+ *
  * @property string $id
  * @property string|null $first_name
  * @property string|null $last_name
  * @property string $email
- * @property \Illuminate\Support\Carbon|null $email_verified_at
+ * @property Carbon|null $email_verified_at
  * @property string|null $two_factor_secret
  * @property string|null $two_factor_recovery_codes
  * @property string|null $two_factor_confirmed_at
  * @property string|null $remember_token
  * @property int|null $current_team_id
  * @property string|null $profile_photo_path
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $lang
  * @property bool $is_active
  * @property bool $is_otp
- * @property \Illuminate\Support\Carbon|null $password_expires_at
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $password_expires_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_by
  * @property string|null $type
  * @property string|null $state
+ *
  * @method static Builder<static>|User whereCreatedAt($value)
  * @method static Builder<static>|User whereCreatedBy($value)
  * @method static Builder<static>|User whereCurrentTeamId($value)
@@ -110,6 +114,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder<static>|User whereType($value)
  * @method static Builder<static>|User whereUpdatedAt($value)
  * @method static Builder<static>|User whereUpdatedBy($value)
+ *
  * @mixin \Eloquent
  */
 class User extends BaseUser

@@ -18,9 +18,11 @@ use Modules\TechPlanner\Models\Profile;
  * @property-read Profile|null $profile
  * @property-read Profile|null $updater
  * @property-read User|null $user
+ *
  * @method static Builder<static>|DeviceProfile newModelQuery()
  * @method static Builder<static>|DeviceProfile newQuery()
  * @method static Builder<static>|DeviceProfile query()
+ *
  * @mixin \Eloquent
  */
 class DeviceProfile extends DeviceUser {}

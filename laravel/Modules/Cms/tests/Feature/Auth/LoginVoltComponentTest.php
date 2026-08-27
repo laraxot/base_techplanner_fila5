@@ -10,9 +10,7 @@ use Illuminate\Support\Facades\Session;
 use Livewire\Component;
 use Livewire\Features\SupportTesting\Testable;
 use Livewire\Volt\Volt as LivewireVolt;
-use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-
 
 // ---- Volt Component Rendering ----
 

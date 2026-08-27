@@ -6,6 +6,7 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Carbon;
 use Modules\TechPlanner\Models\Profile;
 
 /**
@@ -17,19 +18,22 @@ use Modules\TechPlanner\Models\Profile;
  * @property-read Team|null $team
  * @property-read Profile|null $updater
  * @property-read User|null $user
+ *
  * @method static Builder<static>|TeamPermission newModelQuery()
  * @method static Builder<static>|TeamPermission newQuery()
  * @method static Builder<static>|TeamPermission query()
+ *
  * @property int $id
  * @property int $team_id
  * @property string $permission
  * @property string|null $name
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
+ *
  * @method static Builder<static>|TeamPermission whereCreatedAt($value)
  * @method static Builder<static>|TeamPermission whereCreatedBy($value)
  * @method static Builder<static>|TeamPermission whereDeletedAt($value)
@@ -40,6 +44,7 @@ use Modules\TechPlanner\Models\Profile;
  * @method static Builder<static>|TeamPermission whereTeamId($value)
  * @method static Builder<static>|TeamPermission whereUpdatedAt($value)
  * @method static Builder<static>|TeamPermission whereUpdatedBy($value)
+ *
  * @mixin \Eloquent
  */
 class TeamPermission extends BaseModel

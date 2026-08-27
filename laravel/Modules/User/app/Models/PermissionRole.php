@@ -5,22 +5,26 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Carbon;
 use Modules\TechPlanner\Models\Profile;
 use Webmozart\Assert\Assert;
 
 /**
  * @property-read Profile|null $creator
  * @property-read Profile|null $updater
+ *
  * @method static Builder<static>|PermissionRole newModelQuery()
  * @method static Builder<static>|PermissionRole newQuery()
  * @method static Builder<static>|PermissionRole query()
+ *
  * @property string $id
  * @property string $permission_id
  * @property string $role_id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
+ *
  * @method static Builder<static>|PermissionRole whereCreatedAt($value)
  * @method static Builder<static>|PermissionRole whereCreatedBy($value)
  * @method static Builder<static>|PermissionRole whereId($value)
@@ -28,6 +32,7 @@ use Webmozart\Assert\Assert;
  * @method static Builder<static>|PermissionRole whereRoleId($value)
  * @method static Builder<static>|PermissionRole whereUpdatedAt($value)
  * @method static Builder<static>|PermissionRole whereUpdatedBy($value)
+ *
  * @mixin \Eloquent
  */
 class PermissionRole extends BasePivot

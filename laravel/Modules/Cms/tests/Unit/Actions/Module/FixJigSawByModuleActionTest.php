@@ -5,7 +5,6 @@ declare(strict_types=1);
 use Illuminate\Support\Facades\File;
 use Mockery\MockInterface;
 use Modules\Cms\Actions\Module\FixJigSawByModuleAction;
-use Modules\Cms\Tests\TestCase;
 use Nwidart\Modules\Laravel\Module;
 use PHPUnit\Framework\Assert;
 use Symfony\Component\Finder\SplFileInfo;

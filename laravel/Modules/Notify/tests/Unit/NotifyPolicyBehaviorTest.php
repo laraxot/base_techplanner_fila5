@@ -13,7 +13,6 @@ use Modules\Notify\Tests\Fixtures\NotifyPolicyBehaviorConcretePolicy;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 
-
 /**
  * @param  list<string>  $roles
  * @return Mockery\MockInterface&UserContract

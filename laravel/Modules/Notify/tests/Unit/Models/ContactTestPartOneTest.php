@@ -29,7 +29,6 @@ use Modules\Notify\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
-
 beforeEach(function (): void {
     /** @var TestCase $this */
     $this->disableExceptionHandling();

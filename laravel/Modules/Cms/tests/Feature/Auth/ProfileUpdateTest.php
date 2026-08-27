@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 use Illuminate\Support\Str;
-use Modules\Cms\Tests\TestCase;
 
 function cmsProfileGenerateUniqueEmail(): string
 {

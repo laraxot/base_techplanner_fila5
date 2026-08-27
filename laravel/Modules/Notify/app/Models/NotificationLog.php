@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
+use Illuminate\Support\Carbon;
 use Modules\Media\Models\Media;
 use Modules\TechPlanner\Models\Profile;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
@@ -19,12 +20,14 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property-read Model $notifiable
  * @property-read NotificationTemplate|null $template
  * @property-read Profile|null $updater
+ *
  * @method static Builder<static>|NotificationLog forChannel(string $channel)
  * @method static Builder<static>|NotificationLog forNotifiable(\Illuminate\Database\Eloquent\Model $notifiable)
  * @method static Builder<static>|NotificationLog newModelQuery()
  * @method static Builder<static>|NotificationLog newQuery()
  * @method static Builder<static>|NotificationLog query()
  * @method static Builder<static>|NotificationLog withStatus(string $status)
+ *
  * @property string $id
  * @property string|null $template_id
  * @property string $notifiable_type
@@ -35,15 +38,16 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property array<array-key, mixed>|null $data
  * @property array<array-key, mixed>|null $metadata
  * @property string|null $tenant_id
- * @property \Illuminate\Support\Carbon|null $sent_at
- * @property \Illuminate\Support\Carbon|null $delivered_at
- * @property \Illuminate\Support\Carbon|null $failed_at
- * @property \Illuminate\Support\Carbon|null $opened_at
- * @property \Illuminate\Support\Carbon|null $clicked_at
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $sent_at
+ * @property Carbon|null $delivered_at
+ * @property Carbon|null $failed_at
+ * @property Carbon|null $opened_at
+ * @property Carbon|null $clicked_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
+ *
  * @method static Builder<static>|NotificationLog whereChannel($value)
  * @method static Builder<static>|NotificationLog whereClickedAt($value)
  * @method static Builder<static>|NotificationLog whereCreatedAt($value)
@@ -63,6 +67,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder<static>|NotificationLog whereTenantId($value)
  * @method static Builder<static>|NotificationLog whereUpdatedAt($value)
  * @method static Builder<static>|NotificationLog whereUpdatedBy($value)
+ *
  * @mixin \Eloquent
  */
 class NotificationLog extends BaseModel

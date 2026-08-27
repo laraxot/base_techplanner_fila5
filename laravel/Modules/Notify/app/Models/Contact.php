@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace Modules\Notify\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Carbon;
+use Modules\Media\Models\Media;
 use Modules\TechPlanner\Models\Profile;
 use Override;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
@@ -13,12 +15,14 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * Modules\Notify\Models\Contact.
  *
  * @property-read Profile|null $creator
- * @property-read MediaCollection<int, \Modules\Media\Models\Media> $media
+ * @property-read MediaCollection<int, Media> $media
  * @property-read int|null $media_count
  * @property-read Profile|null $updater
+ *
  * @method static Builder<static>|Contact newModelQuery()
  * @method static Builder<static>|Contact newQuery()
  * @method static Builder<static>|Contact query()
+ *
  * @property string $id
  * @property string $model_type
  * @property string $model_id
@@ -27,12 +31,13 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property string|null $user_id
  * @property string|null $verified_at
  * @property string|null $token
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
+ *
  * @method static Builder<static>|Contact whereContactType($value)
  * @method static Builder<static>|Contact whereCreatedAt($value)
  * @method static Builder<static>|Contact whereCreatedBy($value)
@@ -47,6 +52,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder<static>|Contact whereUserId($value)
  * @method static Builder<static>|Contact whereValue($value)
  * @method static Builder<static>|Contact whereVerifiedAt($value)
+ *
  * @mixin \Eloquent
  */
 class Contact extends BaseModel

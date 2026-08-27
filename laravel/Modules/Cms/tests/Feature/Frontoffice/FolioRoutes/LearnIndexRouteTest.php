@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 it('GET /it/learn acceptable', function (): void {

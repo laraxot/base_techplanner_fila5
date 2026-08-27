@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-use Modules\Cms\Tests\TestCase;
 use Modules\Cms\View\Composers\ThemeComposer;
 use PHPUnit\Framework\Assert;
 

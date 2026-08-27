@@ -7,6 +7,7 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Carbon;
 use Modules\TechPlanner\Models\Profile;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Models\Traits\RelationX;
@@ -23,6 +24,7 @@ use Webmozart\Assert\Assert;
  * @property-read Profile|null $updater
  * @property-read Collection<int, User> $users
  * @property-read int|null $users_count
+ *
  * @method static \Modules\User\Database\Factories\PermissionFactory factory($count = null, $state = [])
  * @method static Builder<static>|Permission newModelQuery()
  * @method static Builder<static>|Permission newQuery()
@@ -33,13 +35,15 @@ use Webmozart\Assert\Assert;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Permission withoutPermission($permissions)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Permission withoutRole($roles, ?string $guard = null)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Permission withoutTeam($teams)
+ *
  * @property int $id
  * @property string $name
  * @property string $guard_name
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
+ *
  * @method static Builder<static>|Permission whereCreatedAt($value)
  * @method static Builder<static>|Permission whereCreatedBy($value)
  * @method static Builder<static>|Permission whereGuardName($value)
@@ -47,6 +51,7 @@ use Webmozart\Assert\Assert;
  * @method static Builder<static>|Permission whereName($value)
  * @method static Builder<static>|Permission whereUpdatedAt($value)
  * @method static Builder<static>|Permission whereUpdatedBy($value)
+ *
  * @mixin \Eloquent
  */
 class Permission extends SpatiePermission

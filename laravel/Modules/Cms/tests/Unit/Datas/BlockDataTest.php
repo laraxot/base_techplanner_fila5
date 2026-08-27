@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 use Livewire\Wireable;
 use Modules\Cms\Datas\BlockData;
-use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\LaravelData\Concerns\WireableData;
 use Spatie\LaravelData\Data;

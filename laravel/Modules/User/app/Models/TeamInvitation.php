@@ -7,6 +7,7 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Carbon;
 use Modules\TechPlanner\Models\Profile;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
@@ -20,20 +21,23 @@ use Modules\Xot\Datas\XotData;
  * @property-read Profile|null $creator
  * @property-read Team|null $team
  * @property-read Profile|null $updater
+ *
  * @method static Builder<static>|TeamInvitation newModelQuery()
  * @method static Builder<static>|TeamInvitation newQuery()
  * @method static Builder<static>|TeamInvitation query()
+ *
  * @property int $id
  * @property string $uuid
  * @property string|null $team_id
- * @property \Illuminate\Support\Carbon|null $accepted_at
- * @property \Illuminate\Support\Carbon|null $declined_at
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $accepted_at
+ * @property Carbon|null $declined_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_at
  * @property string|null $deleted_by
+ *
  * @method static Builder<static>|TeamInvitation whereAcceptedAt($value)
  * @method static Builder<static>|TeamInvitation whereCreatedAt($value)
  * @method static Builder<static>|TeamInvitation whereCreatedBy($value)
@@ -48,6 +52,7 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder<static>|TeamInvitation whereUpdatedBy($value)
  * @method static Builder<static>|TeamInvitation whereUserId($value)
  * @method static Builder<static>|TeamInvitation whereUuid($value)
+ *
  * @mixin \Eloquent
  */
 class TeamInvitation extends BaseModel

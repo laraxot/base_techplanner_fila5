@@ -5,7 +5,6 @@ declare(strict_types=1);
 use Modules\Cms\Models\BaseModelLang;
 use Modules\Cms\Models\Section;
 use Modules\Cms\Models\Traits\HasBlocks;
-use Modules\Cms\Tests\TestCase;
 use Modules\Tenant\Models\Traits\SushiToJsons;
 use PHPUnit\Framework\Assert;
 

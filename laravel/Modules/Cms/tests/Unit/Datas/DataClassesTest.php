@@ -8,7 +8,6 @@ use Modules\Cms\Datas\HeadernavData;
 use Modules\Cms\Datas\LinkData;
 use Modules\Cms\Datas\NavbarMenuData;
 use Modules\Cms\Datas\ThemeData;
-use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 test('BlockData can be instantiated', function () {

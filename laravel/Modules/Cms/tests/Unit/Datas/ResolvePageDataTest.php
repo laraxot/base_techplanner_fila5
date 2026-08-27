@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 use Modules\Cms\Datas\ResolvePageData;
-use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\LaravelData\Data;
 

@@ -26,10 +26,12 @@ use Spatie\Sluggable\SlugOptions;
  * @property-read string|null $txt
  * @property-read Model $linkable
  * @property-read Profile|null $updater
+ *
  * @method static \Modules\Lang\Database\Factories\PostFactory factory($count = null, $state = [])
  * @method static Builder<static>|Post newModelQuery()
  * @method static Builder<static>|Post newQuery()
  * @method static Builder<static>|Post query()
+ *
  * @mixin \Eloquent
  */
 class Post extends BaseModel

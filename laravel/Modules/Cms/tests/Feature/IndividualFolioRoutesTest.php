@@ -6,9 +6,7 @@ namespace Modules\Cms\Tests\Feature;
 
 use Illuminate\Http\Response;
 use Illuminate\Testing\TestResponse;
-use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-
 
 describe('Individual Folio Routes', function (): void {
     test('cms route get locale homepage', function (): void {
@@ -199,7 +197,7 @@ describe('Individual Folio Routes', function (): void {
         $response = cmsGet('/'.$locale.'/test-slug');
 
         /** @var TestResponse<Response> $response */
-        if (200 === $response->status()) {
+        if ($response->status() === 200) {
             $response->assertSee('<!DOCTYPE html>');
             $response->assertSee('<html');
             $response->assertSee('x-page');

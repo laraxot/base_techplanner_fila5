@@ -12,7 +12,6 @@ use Modules\Notify\Enums\TelegramDriverEnum;
 use Modules\Notify\Enums\WhatsAppDriverEnum;
 use PHPUnit\Framework\Assert;
 
-
 test('contact type enum exposes expected cases and column definitions', function () {
     Assert::assertCount(6, ContactTypeEnum::cases());
     $defs = ContactTypeEnum::getColumnDefinitions();

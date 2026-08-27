@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 use Modules\Cms\Actions\SaveHeadernavConfigAction;
-use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 test('SaveHeadernavConfigAction can be instantiated', function () {

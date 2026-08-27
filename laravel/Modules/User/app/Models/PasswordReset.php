@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Carbon;
 use Modules\TechPlanner\Models\Profile;
 
 /**
@@ -12,17 +13,20 @@ use Modules\TechPlanner\Models\Profile;
  *
  * @property-read Profile|null $creator
  * @property-read Profile|null $updater
+ *
  * @method static Builder<static>|PasswordReset newModelQuery()
  * @method static Builder<static>|PasswordReset newQuery()
  * @method static Builder<static>|PasswordReset query()
+ *
  * @property int $id
  * @property string|null $uuid
  * @property string $email
  * @property string $token
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
+ *
  * @method static Builder<static>|PasswordReset whereCreatedAt($value)
  * @method static Builder<static>|PasswordReset whereCreatedBy($value)
  * @method static Builder<static>|PasswordReset whereEmail($value)
@@ -31,6 +35,7 @@ use Modules\TechPlanner\Models\Profile;
  * @method static Builder<static>|PasswordReset whereUpdatedAt($value)
  * @method static Builder<static>|PasswordReset whereUpdatedBy($value)
  * @method static Builder<static>|PasswordReset whereUuid($value)
+ *
  * @mixin \Eloquent
  */
 class PasswordReset extends BaseModel

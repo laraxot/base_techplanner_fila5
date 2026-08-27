@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 use Livewire\Volt\Component;
 use Modules\Cms\Http\Volt\LoginComponent;
-use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 describe('LoginComponent', function (): void {

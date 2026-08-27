@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 use Modules\Cms\Filament\Fields\LeftSidebarContent;
-use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 test('LeftSidebarContent creates builder with empty blocks', function () {

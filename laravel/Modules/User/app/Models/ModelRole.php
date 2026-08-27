@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Carbon;
 use Modules\TechPlanner\Models\Profile;
 use Webmozart\Assert\Assert;
 
@@ -13,19 +14,22 @@ use Webmozart\Assert\Assert;
  *
  * @property-read Profile|null $creator
  * @property-read Profile|null $updater
+ *
  * @method static \Modules\User\Database\Factories\ModelRoleFactory factory($count = null, $state = [])
  * @method static Builder<static>|ModelRole newModelQuery()
  * @method static Builder<static>|ModelRole newQuery()
  * @method static Builder<static>|ModelRole query()
+ *
  * @property string $id
  * @property int|null $role_id
  * @property string $model_type
  * @property string $model_id
  * @property int|null $team_id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
+ *
  * @method static Builder<static>|ModelRole whereCreatedAt($value)
  * @method static Builder<static>|ModelRole whereCreatedBy($value)
  * @method static Builder<static>|ModelRole whereId($value)
@@ -35,6 +39,7 @@ use Webmozart\Assert\Assert;
  * @method static Builder<static>|ModelRole whereTeamId($value)
  * @method static Builder<static>|ModelRole whereUpdatedAt($value)
  * @method static Builder<static>|ModelRole whereUpdatedBy($value)
+ *
  * @mixin \Eloquent
  */
 class ModelRole extends BaseMorphPivot

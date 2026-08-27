@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-use Modules\Cms\Tests\TestCase;
 
 // Placeholder — full feature tests require Volt components
 describe('Login Volt Component', function () {

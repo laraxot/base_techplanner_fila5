@@ -8,7 +8,6 @@ use Livewire\Volt\Volt as LivewireVolt;
 use Modules\Cms\Tests\TestCase;
 use Modules\User\Models\User;
 
-
 it('renders the login page', function (): void {
     $locale = app()->getLocale();
     $response = cmsGetOrSkipOnServerError('/'.$locale.'/auth/login');

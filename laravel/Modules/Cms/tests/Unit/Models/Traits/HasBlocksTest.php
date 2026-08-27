@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 use Modules\Cms\Models\BaseModel;
 use Modules\Cms\Models\Traits\HasBlocks;
-use Modules\Cms\Tests\TestCase;
 
 test('HasBlocks trait can be used', function () {
     // Create an anonymous class that uses the trait

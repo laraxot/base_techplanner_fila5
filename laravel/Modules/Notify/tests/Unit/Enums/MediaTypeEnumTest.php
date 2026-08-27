@@ -7,7 +7,6 @@ namespace Modules\Notify\Tests\Unit\Enums;
 use Modules\Notify\Enums\MediaTypeEnum;
 use PHPUnit\Framework\Assert;
 
-
 it('has correct cases', function (): void {
     Assert::assertCount(4, MediaTypeEnum::cases());
 

@@ -28,7 +28,6 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\class_uses;
 
-
 function notificationsCoverageTicketModel(int $id = 10): Model
 {
     $ticket = new class() extends Model

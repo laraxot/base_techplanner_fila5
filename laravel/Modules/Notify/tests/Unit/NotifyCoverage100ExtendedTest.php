@@ -20,7 +20,6 @@ use Modules\Notify\Notifications\Channels\FirebaseCloudMessagingChannel;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-
 afterEach(function (): void {
     Mockery::close();
 });

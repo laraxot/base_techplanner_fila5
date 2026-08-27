@@ -27,6 +27,7 @@ use Modules\Tenant\Models\Traits\SushiToPhpArray;
  * @property string|null $updated_by
  * @property-read Profile|null $creator
  * @property-read Profile|null $updater
+ *
  * @method static Builder<static>|SocialProvider newModelQuery()
  * @method static Builder<static>|SocialProvider newQuery()
  * @method static Builder<static>|SocialProvider query()
@@ -42,6 +43,7 @@ use Modules\Tenant\Models\Traits\SushiToPhpArray;
  * @method static Builder<static>|SocialProvider whereSvg($value)
  * @method static Builder<static>|SocialProvider whereUpdatedAt($value)
  * @method static Builder<static>|SocialProvider whereUpdatedBy($value)
+ *
  * @mixin \Eloquent
  */
 class SocialProvider extends BaseModel

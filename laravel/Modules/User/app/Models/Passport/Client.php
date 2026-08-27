@@ -23,11 +23,13 @@ use Modules\User\Models\OauthToken;
  * @property-read Collection<int, OauthToken> $tokens
  * @property-read int|null $tokens_count
  * @property-read \Modules\User\Models\User|null $user
+ *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Client existsIn(array<int, mixed> $haystack)
  * @method static \Laravel\Passport\Database\Factories\ClientFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Client newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Client newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Client query()
+ *
  * @mixin \Eloquent
  */
 class Client extends PassportClient

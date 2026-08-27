@@ -5,9 +5,7 @@ declare(strict_types=1);
 namespace Modules\Cms\Tests\Feature\Frontoffice\FolioRoutes;
 
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
-use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-
 
 /**
  * @return list<string>
@@ -29,7 +27,7 @@ function supportedTestLocales(): array
     /** @var list<string> $locales */
     $locales = array_values(array_map(strval(...), array_keys($supported)));
 
-    return [] !== $locales ? $locales : ['de', 'en', 'it'];
+    return $locales !== [] ? $locales : ['de', 'en', 'it'];
 }
 
 describe('Locale Routing', function (): void {
@@ -59,7 +57,7 @@ describe('Locale Routing', function (): void {
                 continue;
             }
 
-            if (200 !== $status) {
+            if ($status !== 200) {
                 cmsSkipTest("Route /{$locale} returned {$status} (redirect). Cannot check HTML lang attribute.");
 
                 continue;
@@ -80,7 +78,7 @@ describe('Locale Routing', function (): void {
             return;
         }
 
-        if (200 !== $status) {
+        if ($status !== 200) {
             cmsSkipTest("Route /de returned {$status} (redirect). Cannot verify locale.");
 
             return;
@@ -102,7 +100,7 @@ describe('Locale Routing', function (): void {
             return;
         }
 
-        if (200 !== $status) {
+        if ($status !== 200) {
             cmsSkipTest("Route /it returned {$status} (redirect).");
 
             return;
@@ -124,7 +122,7 @@ describe('Locale Routing', function (): void {
             return;
         }
 
-        if (200 !== $status) {
+        if ($status !== 200) {
             cmsSkipTest("Route /en returned {$status} (redirect).");
 
             return;

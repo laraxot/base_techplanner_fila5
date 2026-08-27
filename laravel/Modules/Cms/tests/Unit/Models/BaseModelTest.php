@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\Cms\Models\BaseModel;
-use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 /**

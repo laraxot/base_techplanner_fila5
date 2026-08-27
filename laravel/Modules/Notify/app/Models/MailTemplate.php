@@ -8,6 +8,7 @@ namespace Modules\Notify\Models;
 use Exception;
 use Illuminate\Contracts\Mail\Mailable;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Carbon;
 use Spatie\MailTemplates\Interfaces\MailTemplateInterface;
 use Spatie\MailTemplates\Models\MailTemplate as SpatieMailTemplate;
 use Spatie\Sluggable\HasSlug;
@@ -18,6 +19,7 @@ use Spatie\Translatable\HasTranslations;
  * @property-read list<string> $translatable_columns_from
  * @property-read array<string, mixed> $variables
  * @property-read mixed $translations
+ *
  * @method static Builder<static>|MailTemplate forMailable(\Illuminate\Contracts\Mail\Mailable $mailable)
  * @method static Builder<static>|MailTemplate newModelQuery()
  * @method static Builder<static>|MailTemplate newQuery()
@@ -26,6 +28,7 @@ use Spatie\Translatable\HasTranslations;
  * @method static Builder<static>|MailTemplate whereJsonContainsLocales(string $column, array<int, string> $locales, ?mixed $value, string $operand = '=')
  * @method static Builder<static>|MailTemplate whereLocale(string $column, string $locale)
  * @method static Builder<static>|MailTemplate whereLocales(string $column, array<int, string> $locales)
+ *
  * @property int $id
  * @property string|null $name
  * @property string|null $mailable
@@ -38,12 +41,13 @@ use Spatie\Translatable\HasTranslations;
  * @property array<array-key, mixed>|null $sms_template
  * @property int $counter
  * @property string|null $html_layout_path
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
+ *
  * @method static Builder<static>|MailTemplate whereCounter($value)
  * @method static Builder<static>|MailTemplate whereCreatedAt($value)
  * @method static Builder<static>|MailTemplate whereCreatedBy($value)
@@ -62,6 +66,7 @@ use Spatie\Translatable\HasTranslations;
  * @method static Builder<static>|MailTemplate whereUpdatedAt($value)
  * @method static Builder<static>|MailTemplate whereUpdatedBy($value)
  * @method static Builder<static>|MailTemplate whereVersion($value)
+ *
  * @mixin \Eloquent
  */
 class MailTemplate extends SpatieMailTemplate implements MailTemplateInterface

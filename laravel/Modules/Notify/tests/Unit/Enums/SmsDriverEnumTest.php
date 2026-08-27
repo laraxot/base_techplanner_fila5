@@ -10,7 +10,6 @@ use Filament\Support\Contracts\HasLabel;
 use Modules\Notify\Enums\SmsDriverEnum;
 use PHPUnit\Framework\Assert;
 
-
 it('has correct cases', function (): void {
     Assert::assertCount(1, SmsDriverEnum::cases());
 

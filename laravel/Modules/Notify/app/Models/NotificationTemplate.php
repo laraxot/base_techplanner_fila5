@@ -33,6 +33,7 @@ use Spatie\Translatable\HasTranslations;
  * @property-read int|null $media_count
  * @property-read mixed $translations
  * @property-read Profile|null $updater
+ *
  * @method static Builder<static>|NotificationTemplate active()
  * @method static Builder<static>|NotificationTemplate forCategory(string $category)
  * @method static Builder<static>|NotificationTemplate forChannel(string $channel)
@@ -43,6 +44,7 @@ use Spatie\Translatable\HasTranslations;
  * @method static Builder<static>|NotificationTemplate whereJsonContainsLocales(string $column, array<int, string> $locales, ?mixed $value, string $operand = '=')
  * @method static Builder<static>|NotificationTemplate whereLocale(string $column, string $locale)
  * @method static Builder<static>|NotificationTemplate whereLocales(string $column, array<int, string> $locales)
+ *
  * @mixin \Eloquent
  */
 class NotificationTemplate extends BaseModel implements HasMedia

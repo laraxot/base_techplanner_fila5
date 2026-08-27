@@ -7,6 +7,7 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Carbon;
 use Modules\TechPlanner\Models\Profile;
 use Modules\Xot\Datas\XotData;
 
@@ -20,18 +21,21 @@ use Modules\Xot\Datas\XotData;
  * @property-read Profile|null $profile
  * @property-read Profile|null $updater
  * @property-read User|null $user
+ *
  * @method static Builder<static>|DeviceUser newModelQuery()
  * @method static Builder<static>|DeviceUser newQuery()
  * @method static Builder<static>|DeviceUser query()
+ *
  * @property string $id
- * @property \Illuminate\Support\Carbon|null $login_at
- * @property \Illuminate\Support\Carbon|null $logout_at
+ * @property Carbon|null $login_at
+ * @property Carbon|null $logout_at
  * @property string|null $push_notifications_token
  * @property bool|null $push_notifications_enabled
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
+ *
  * @method static Builder<static>|DeviceUser whereCreatedAt($value)
  * @method static Builder<static>|DeviceUser whereCreatedBy($value)
  * @method static Builder<static>|DeviceUser whereDeviceId($value)
@@ -43,6 +47,7 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder<static>|DeviceUser whereUpdatedAt($value)
  * @method static Builder<static>|DeviceUser whereUpdatedBy($value)
  * @method static Builder<static>|DeviceUser whereUserId($value)
+ *
  * @mixin \Eloquent
  */
 class DeviceUser extends BasePivot

@@ -6,12 +6,10 @@ namespace Modules\Notify\Tests\Feature;
 
 use Illuminate\Support\Facades\File;
 use PHPUnit\Framework\Assert;
-use function Pest\Laravel\get;
-
 
 describe('Email Templates', function (): void {
     test('_html_template_contains_optional_function', function (): void {
-$filePath = base_path('Modules/Notify/resources/views/emails/html.blade.php');
+        $filePath = base_path('Modules/Notify/resources/views/emails/html.blade.php');
 
         Assert::assertTrue(File::exists($filePath), 'Il file html.blade.php non esiste');
 

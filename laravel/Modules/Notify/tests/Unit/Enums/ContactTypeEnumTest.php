@@ -3,13 +3,13 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Enums;
+
 use Filament\Forms\Components\TextInput;
 use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasLabel;
 use Modules\Notify\Enums\ContactTypeEnum;
 use PHPUnit\Framework\Assert;
-
 
 it('has correct cases', function (): void {
     Assert::assertCount(6, ContactTypeEnum::cases());
