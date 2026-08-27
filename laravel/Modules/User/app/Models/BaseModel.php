@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
+use Modules\Xot\Models\Traits\RelationX;
 use Modules\Xot\Models\XotBaseModel;
 
 /**
@@ -11,6 +12,8 @@ use Modules\Xot\Models\XotBaseModel;
  */
 abstract class BaseModel extends XotBaseModel
 {
+    use RelationX;
+
     /** @var string */
     protected $connection = 'user';
 

@@ -40,7 +40,6 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  */
 class PersonalAccessToken extends Model
 {
-    /** @phpstan-use HasXotFactory<Factory<static>> */
     use HasXotFactory;
 
     protected $connection = 'user';

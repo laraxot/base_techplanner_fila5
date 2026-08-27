@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
 use Laravel\Passport\ClientRepository;
 use Laravel\Passport\Passport;
+use Mockery\Expectation;
 use Mockery\MockInterface;
 use Modules\User\Actions\Socialite\IsUserAllowedAction;
 use Modules\User\Database\Factories\TeamFactory;
@@ -109,6 +110,17 @@ function userTableHasColumn(string $table, string $column): bool
 function pestSkip(string $message): never
 {
     Assert::markTestSkipped($message);
+}
+
+/**
+ * Narrows the wide return type of Mockery's shouldReceive()/allows() to the
+ * concrete Expectation class so chained calls like andReturn()/with() resolve.
+ */
+function mockeryExpect(mixed $expectation): Expectation
+{
+    \assert($expectation instanceof Expectation);
+
+    return $expectation;
 }
 
 function skipUnlessUserColumn(string $table, string $column, string $reason = ''): void

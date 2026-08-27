@@ -6,6 +6,7 @@ namespace Modules\UI\Tests\Unit;
 
 use Illuminate\Translation\PotentiallyTranslatedString;
 use Mockery;
+use Mockery\MockInterface;
 use Modules\UI\Enums\FieldTypeEnum;
 use Modules\UI\Enums\TableLayout;
 use Modules\UI\Filament\Widgets\StatsOverviewWidget;
@@ -85,12 +86,12 @@ describe('UI coverage boost — Rules and policies', function (): void {
     });
 
     test('UiBasePolicy before grants super-admin', function (): void {
-        /** @var Mockery\MockInterface&UserContract $superAdmin */
+        /** @var MockInterface&UserContract $superAdmin */
         $superAdmin = Mockery::mock(UserContract::class);
-        $superAdmin->shouldReceive('hasRole')->with('super-admin')->andReturn(true);
-        /** @var Mockery\MockInterface&UserContract $regular */
+        expectMethod($superAdmin, 'hasRole')->with('super-admin')->andReturn(true);
+        /** @var MockInterface&UserContract $regular */
         $regular = Mockery::mock(UserContract::class);
-        $regular->shouldReceive('hasRole')->with('super-admin')->andReturn(false);
+        expectMethod($regular, 'hasRole')->with('super-admin')->andReturn(false);
 
         $policy = new class() extends UiBasePolicy {};
         Assert::assertTrue($policy->before($superAdmin, 'viewAny'));

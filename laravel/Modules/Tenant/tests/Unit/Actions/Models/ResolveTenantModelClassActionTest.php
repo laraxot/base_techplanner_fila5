@@ -19,6 +19,16 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
+function expectMockery(MockInterface $mock, string $method): Mockery\Expectation
+{
+    $expectation = $mock->allows($method);
+    if (! $expectation instanceof Mockery\Expectation) {
+        throw new \RuntimeException('Unexpected mockery expectation type.');
+    }
+
+    return $expectation;
+}
+
 it('resolves tenant model class from config', function (): void {
     /** @var TestCase $this */
     $this->mockService(ResolveTenantConfigValueAction::class, static function (MockInterface $mock): void {
@@ -37,7 +47,7 @@ it('resolves tenant model class by scanning modules if not in config', function 
     });
 
     $module = Mockery::mock(LaravelModule::class);
-    $module->shouldReceive('getName')->andReturn('Meetup');
+    expectMockery($module, 'getName')->andReturn('Meetup');
 
     Module::shouldReceive('allEnabled')->andReturn([$module]);
 

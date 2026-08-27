@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Mockery\CompositeExpectation;
+use Mockery\Expectation;
 use Mockery\MockInterface;
 
 if (! function_exists('typedMock')) {
@@ -48,9 +48,9 @@ if (! function_exists('mockExpectation')) {
      * quei metodi restano disponibili senza `method.notFound`/`method.nonObject`
      * sparsi in ogni test.
      */
-    function mockExpectation(MockInterface $mock, string $method): CompositeExpectation
+    function mockExpectation(MockInterface $mock, string $method): Expectation
     {
-        /** @var CompositeExpectation $expectation */
+        /** @var Expectation $expectation */
         $expectation = $mock->shouldReceive($method);
 
         return $expectation;

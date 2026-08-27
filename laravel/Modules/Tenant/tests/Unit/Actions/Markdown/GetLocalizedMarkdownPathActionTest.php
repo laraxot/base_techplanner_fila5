@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Tenant\Tests\Unit\Actions\Markdown;
 
 use Illuminate\Support\Facades\App;
+use Mockery\Expectation;
 use Mockery\MockInterface;
 use Modules\Tenant\Actions\Config\GetTenantFilePathAction;
 use Modules\Tenant\Actions\Markdown\GetLocalizedMarkdownPathAction;
@@ -16,6 +17,16 @@ use function Safe\unlink;
 
 uses(TestCase::class);
 
+function expectMockery(MockInterface $mock, string $method): Expectation
+{
+    $expectation = $mock->allows($method);
+    if (! $expectation instanceof Expectation) {
+        throw new \RuntimeException('Unexpected mockery expectation type.');
+    }
+
+    return $expectation;
+}
+
 it('gets localized markdown path if it exists', function (): void {
     App::setLocale('it');
 
@@ -25,7 +36,7 @@ it('gets localized markdown path if it exists', function (): void {
 
     /** @var TestCase $this */
     $this->mockService(GetTenantFilePathAction::class, static function (MockInterface $mock) use ($tempFile): void {
-        $mock->shouldReceive('execute')
+        expectMockery($mock, 'execute')
             ->andReturnUsing(static function (string $path) use ($tempFile): string {
                 return $path === 'lang/it/test.md' ? $tempFile : '/non/existent/path.md';
             });
@@ -47,7 +58,7 @@ it('gets fallback markdown path if localized does not exist', function (): void 
 
     /** @var TestCase $this */
     $this->mockService(GetTenantFilePathAction::class, static function (MockInterface $mock) use ($tempFile): void {
-        $mock->shouldReceive('execute')
+        expectMockery($mock, 'execute')
             ->andReturnUsing(static function (string $path) use ($tempFile): string {
                 return $path === 'fallback.md' ? $tempFile : '/non/existent/path.md';
             });

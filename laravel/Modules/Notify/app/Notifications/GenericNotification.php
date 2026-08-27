@@ -58,7 +58,7 @@ class GenericNotification extends Notification implements ShouldQueue
     /**
      * Ottiene i canali di consegna della notifica.
      *
-     * @param  mixed  $_notifiable  L'entità da notificare (oggetto che riceverà la notifica)
+     * @param  object  $_notifiable  L'entità da notificare (oggetto che riceverà la notifica)
      * @return array<int, string>
      */
     public function via(object $_notifiable): array

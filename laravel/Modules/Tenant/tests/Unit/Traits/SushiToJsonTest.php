@@ -8,6 +8,7 @@ use Exception;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\File;
 use Mockery;
+use Mockery\Expectation;
 use Modules\Tenant\Actions\Config\GetTenantFilePathAction;
 use Modules\Tenant\Models\TestSushiModel;
 use Modules\Tenant\Tests\TestCase;
@@ -29,6 +30,7 @@ function writeSushiJsonFile(string $path, array $data): void
 }
 
 beforeEach(function (): void {
+    /** @var TestCase $this */
     $this->model = new TestSushiModel();
     $this->testDirectory = storage_path('tests/sushi-json');
     $this->testJsonPath = $this->testDirectory.'/test_sushi.json';
@@ -48,6 +50,7 @@ beforeEach(function (): void {
 });
 
 afterEach(function (): void {
+    /** @var TestCase $this */
     if (File::exists($this->testJsonPath)) {
         File::delete($this->testJsonPath);
     }
@@ -165,7 +168,7 @@ it('creates directory if not exists when saving', function (): void {
 it('returns false when saving fails', function (): void {
     /** @var TestCase $this */
     $expectation = File::partialMock()->shouldReceive('put');
-    if ($expectation instanceof \Mockery\Expectation) {
+    if ($expectation instanceof Expectation) {
         $expectation->andThrow(new \RuntimeException('write failed'));
     }
 

@@ -10,6 +10,7 @@ use Illuminate\Support\Arr;
 use Illuminate\View\Component;
 use Illuminate\View\View;
 use Modules\UI\Actions\Block\ResolveLocalizedBlockDataAction;
+use UnexpectedValueException;
 use Webmozart\Assert\Assert;
 
 /**
@@ -73,7 +74,7 @@ class Block extends Component
 
         foreach ($data as $key => $value) {
             if (! is_string($key)) {
-                throw new \UnexpectedValueException('Block view data must have string keys.');
+                throw new UnexpectedValueException('Block view data must have string keys.');
             }
 
             $viewData[$key] = $value;

@@ -13,6 +13,9 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Testing\PendingCommand;
 use Illuminate\Translation\PotentiallyTranslatedString;
 use Mockery;
+use Mockery\CompositeExpectation;
+use Mockery\LegacyMockInterface;
+use Mockery\MockInterface;
 use Modules\Job\Actions\Command\GetCommandsAction;
 use Modules\Job\Actions\DummyAction;
 use Modules\Job\Enums\Status;
@@ -56,6 +59,19 @@ use Modules\User\Models\Team;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 
+/**
+ * Narrows Mockery's shouldReceive() union return type for PHPStan.
+ *
+ * @param  LegacyMockInterface|MockInterface  $mock
+ */
+function expectMethod($mock, string $method): CompositeExpectation
+{
+    /** @var CompositeExpectation $expectation */
+    $expectation = $mock->shouldReceive($method);
+
+    return $expectation;
+}
+
 use function Safe\ob_get_clean;
 use function Safe\ob_start;
 
@@ -74,18 +90,18 @@ function jobBindArtisan(): void
 }
 
 /**
- * @return Mockery\MockInterface&UserContract
+ * @return MockInterface&UserContract
  */
 function jobUser(bool $superAdmin = false): UserContract
 {
-    /** @var Mockery\MockInterface&UserContract $user */
+    /** @var MockInterface&UserContract $user */
     $user = Mockery::mock(UserContract::class);
     $user->shouldIgnoreMissing();
-    $user->shouldReceive('hasRole')->with('super-admin')->andReturn($superAdmin);
-    $user->shouldReceive('can')->andReturn(true);
-    $user->shouldReceive('belongsToTeam')->andReturn(true);
-    $user->shouldReceive('ownsTeam')->andReturn(true);
-    $user->shouldReceive('hasPermissionTo')->andReturn(true);
+    expectMethod($user, 'hasRole')->with('super-admin')->andReturn($superAdmin);
+    expectMethod($user, 'can')->andReturn(true);
+    expectMethod($user, 'belongsToTeam')->andReturn(true);
+    expectMethod($user, 'ownsTeam')->andReturn(true);
+    expectMethod($user, 'hasPermissionTo')->andReturn(true);
     $user->id = '1';
 
     return $user;

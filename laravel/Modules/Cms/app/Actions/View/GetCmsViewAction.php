@@ -19,6 +19,7 @@ class GetCmsViewAction
      *
      * @param  string  $viewName  The name of the view to resolve (e.g., 'pub_theme::components.sections.home' or 'cms::components.section')
      * @return string The resolved and existing view name
+     * @return string The resolved and existing view name
      *
      * @throws \Exception If the view does not exist
      */

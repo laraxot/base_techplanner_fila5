@@ -9,6 +9,7 @@ use GuzzleHttp\Exception\GuzzleException;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Log;
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
+use RuntimeException;
 use Safe\Exceptions\JsonException;
 use Spatie\QueueableAction\QueueableAction;
 
@@ -103,7 +104,7 @@ class ChatDs4Action
             ];
         } catch (GuzzleException|JsonException $e) {
             Log::error('ds4 Chat API error', ['error' => $e->getMessage()]);
-            throw new \RuntimeException('ds4 API error: '.$e->getMessage(), 0, $e);
+            throw new RuntimeException('ds4 API error: '.$e->getMessage(), 0, $e);
         }
     }
 

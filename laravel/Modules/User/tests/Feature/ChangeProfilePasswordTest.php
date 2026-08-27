@@ -19,6 +19,7 @@ use function Pest\Laravel\actingAs;
 uses(TestCase::class);
 
 beforeEach(function (): void {
+    /** @var TestCase $this */
     $this->skipUnlessUsersTableReady();
     $this->skipUnlessUserColumn('profiles', 'uuid', 'profiles.uuid column is not available in the test database.');
 

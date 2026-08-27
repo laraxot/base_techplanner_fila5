@@ -11,7 +11,7 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\ServiceProvider;
-use Mockery\ExpectationInterface;
+use Mockery\Expectation;
 use Mockery\MockInterface;
 use Modules\Tenant\Actions\Config\GetTenantFilePathAction;
 use Modules\Tenant\Database\Factories\TenantFactory;
@@ -200,9 +200,14 @@ abstract class TestCase extends XotBaseTestCase
         return ($this->createTestData)();
     }
 
-    public function tenantMockExpectation(MockInterface $mock, string $method): ExpectationInterface
+    public static function expectMockery(MockInterface $mock, string $method): Expectation
     {
-        return $mock->shouldReceive($method);
+        $expectation = $mock->allows($method);
+        if (! $expectation instanceof Expectation) {
+            throw new \RuntimeException('Unexpected mockery expectation type.');
+        }
+
+        return $expectation;
     }
 
     /**

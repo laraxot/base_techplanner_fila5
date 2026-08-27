@@ -6,6 +6,7 @@ namespace Modules\User\Tests\Unit\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Mockery;
+use Mockery\Expectation;
 use Mockery\MockInterface;
 use Modules\User\Models\BaseTeam;
 use Modules\User\Tests\TestCase;
@@ -74,7 +75,9 @@ describe('BaseTeam in-memory behavior', function (): void {
 
         /** @var UserContract&MockInterface $user */
         $user = Mockery::mock(UserContract::class);
-        $user->shouldReceive('hasTeamPermission')->with($team, 'edit-team')->andReturnTrue();
+        $userExpectation = $user->shouldReceive('hasTeamPermission');
+        \assert($userExpectation instanceof Expectation);
+        $userExpectation->with($team, 'edit-team')->andReturnTrue();
 
         Assert::assertTrue($team->userHasPermission($user, 'edit-team'));
     });

@@ -31,7 +31,6 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  */
 class Notification extends BaseNotification
 {
-    /** @phpstan-use HasXotFactory<Factory<static>> */
     use HasXotFactory;
 
     protected $connection = 'user';

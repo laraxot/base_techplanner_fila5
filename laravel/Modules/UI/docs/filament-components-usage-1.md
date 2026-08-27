@@ -131,9 +131,6 @@ Filament fornisce un componente `x-filament::dropdown` che può essere utilizzat
             Apri Menu
         </x-filament::button>
     </x-slot>
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_jAfaXA
     <x-filament::dropdown.item wire:click="action">
         Azione 1
     </x-filament::dropdown.item>

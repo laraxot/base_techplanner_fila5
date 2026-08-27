@@ -30,13 +30,7 @@ class ChangePasswordCommand extends Command
             return;
         }
 
-        $user = XotData::make()->findUserByEmail($email);
-
-        if ($user === null) {
-            $this->error("Utente non trovato per email: {$email}");
-
-            return;
-        }
+        $user = XotData::make()->getUserByEmail($email);
 
         Assert::string($password = $this->secret('Enter the new password:'));
         $confirmPassword = $this->secret('Confirm the new password:');
@@ -50,7 +44,7 @@ class ChangePasswordCommand extends Command
         $pwdData = PasswordData::make();
         $passwordExpiryDateTime = now()->addDays($pwdData->expires_in);
 
-        $user = tap($user)->update([
+        $user->update([
             'password_expires_at' => $passwordExpiryDateTime,
             'is_otp' => false,
             'password' => Hash::make($password),

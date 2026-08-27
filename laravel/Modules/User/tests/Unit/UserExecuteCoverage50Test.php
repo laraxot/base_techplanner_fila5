@@ -259,13 +259,13 @@ function userProfileMock(string $password = 'Secret123!'): User
         'name' => 'Mario Rossi',
         'created_at' => now(),
     ]);
-    $user->shouldReceive('save')->andReturn(true);
-    $user->shouldReceive('getChanges')->andReturn(['email' => 'nuovo@example.com']);
-    $user->shouldReceive('hasVerifiedEmail')->andReturn(true);
-    $user->shouldReceive('sendEmailVerificationNotification')->andReturnNull();
-    $user->shouldReceive('fill')->andReturnSelf();
-    $user->shouldReceive('update')->andReturn(true);
-    $user->shouldReceive('delete')->andReturn(true);
+    mockeryExpect($user->shouldReceive('save'))->andReturn(true);
+    mockeryExpect($user->shouldReceive('getChanges'))->andReturn(['email' => 'nuovo@example.com']);
+    mockeryExpect($user->shouldReceive('hasVerifiedEmail'))->andReturn(true);
+    mockeryExpect($user->shouldReceive('sendEmailVerificationNotification'))->andReturnNull();
+    mockeryExpect($user->shouldReceive('fill'))->andReturnSelf();
+    mockeryExpect($user->shouldReceive('update'))->andReturn(true);
+    mockeryExpect($user->shouldReceive('delete'))->andReturn(true);
     $user->exists = true;
 
     return $user;
@@ -532,15 +532,15 @@ describe('User execute coverage — HasTeams trait mock', function (): void {
         $memberUser = userMockWithTeams('member-4');
 
         $members = Mockery::mock(BelongsToMany::class);
-        $members->shouldReceive('attach')->once()->andReturn(true);
-        $members->shouldReceive('detach')->once()->andReturn(true);
-        $members->shouldReceive('updateExistingPivot')->twice()->andReturn(true);
-        $members->shouldReceive('wherePivot')->with('role', 'admin')->andReturnSelf();
-        $members->shouldReceive('wherePivot')->with('role', 'member')->andReturnSelf();
-        $members->shouldReceive('get')->andReturn(collect([$memberUser]));
+        mockeryExpect($members->shouldReceive('attach'))->once()->andReturn(true);
+        mockeryExpect($members->shouldReceive('detach'))->once()->andReturn(true);
+        mockeryExpect($members->shouldReceive('updateExistingPivot'))->twice()->andReturn(true);
+        mockeryExpect($members->shouldReceive('wherePivot'))->with('role', 'admin')->andReturnSelf();
+        mockeryExpect($members->shouldReceive('wherePivot'))->with('role', 'member')->andReturnSelf();
+        mockeryExpect($members->shouldReceive('get'))->andReturn(collect([$memberUser]));
 
         $teamMock = Mockery::mock($team)->makePartial();
-        $teamMock->shouldReceive('members')->andReturn($members);
+        mockeryExpect($teamMock->shouldReceive('members'))->andReturn($members);
         // Il partial mock di un Team resta un TeamContract: la guardia lo dichiara
         // a PHPStan e verifica davvero che Mockery non abbia perso il contratto.
         Assert::assertInstanceOf(TeamContract::class, $teamMock);
@@ -837,15 +837,15 @@ describe('User execute coverage — notifications rules observer helpers', funct
         config(['user.create_personal_team' => false]);
         $observer = new UserObserver();
         $user = userProfileMock();
-        $user->shouldReceive('personalTeam')->andReturn(null);
+        mockeryExpect($user->shouldReceive('personalTeam'))->andReturn(null);
         $observer->created($user);
         $observer->deleting($user);
 
         config(['user.create_personal_team' => true]);
         $owner = userProfileMock();
         $personalTeam = userTeamFixture((string) $owner->id, 501, true);
-        $owner->shouldReceive('personalTeam')->andReturn($personalTeam);
-        $owner->shouldReceive('saveQuietly')->andReturn(true);
+        mockeryExpect($owner->shouldReceive('personalTeam'))->andReturn($personalTeam);
+        mockeryExpect($owner->shouldReceive('saveQuietly'))->andReturn(true);
         Assert::assertNull(userCaptureFatal(static function () use ($observer, $owner): void {
             $observer->created($owner);
         }));

@@ -33,13 +33,7 @@ class SuperAdminCommand extends Command
             return self::FAILURE;
         }
 
-        $user = XotData::make()->findUserByEmail($email);
-
-        if ($user === null) {
-            $this->error("Utente non trovato per email: {$email}");
-
-            return self::FAILURE;
-        }
+        $user = XotData::make()->getUserByEmail($email);
 
         $role = Role::firstOrCreate(['name' => 'super-admin']);
         $user->assignRole($role);

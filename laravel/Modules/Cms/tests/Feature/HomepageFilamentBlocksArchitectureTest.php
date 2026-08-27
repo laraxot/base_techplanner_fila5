@@ -41,6 +41,7 @@ it('discovers and validates cms and ui blocks', function () {
 });
 
 test('homepage content management through cms works correctly', function () {
+    /** @var TestCase $this */
     $homepageData = TestCase::homepageJsonForBlocksArchitecture();
 
     /** @var array<string, mixed> $contentBlocks */
@@ -71,6 +72,7 @@ test('homepage content management through cms works correctly', function () {
 });
 
 test('cms theme integration renders blocks correctly', function () {
+    /** @var TestCase $this */
     $homepageData = TestCase::homepageJsonForBlocksArchitecture();
 
     /** @var array<string, mixed> $contentBlocks */
@@ -103,6 +105,7 @@ test('cms theme integration renders blocks correctly', function () {
 });
 
 test('cms handles multilingual content correctly', function () {
+    /** @var TestCase $this */
     $homepageData = TestCase::homepageJsonForBlocksArchitecture();
 
     expect($homepageData['content_blocks'])->toBeArray();
@@ -125,6 +128,7 @@ test('cms handles multilingual content correctly', function () {
 });
 
 test('cms page component passes correct data to blocks', function () {
+    /** @var TestCase $this */
     $response = get('/'.$this->lang);
     $response->assertOk();
 
@@ -168,6 +172,7 @@ test('cms json storage pattern is consistent', function () {
 });
 
 test('cms blade syntax processing works in json', function () {
+    /** @var TestCase $this */
     $homepageData = TestCase::homepageJsonForBlocksArchitecture();
 
     /** @var array<string, mixed> $contentBlocks */
@@ -200,6 +205,7 @@ test('cms blade syntax processing works in json', function () {
 });
 
 test('cms renders valid html structure', function () {
+    /** @var TestCase $this */
     $response = get('/'.$this->lang);
     $response->assertOk();
 
@@ -216,6 +222,7 @@ test('cms renders valid html structure', function () {
 });
 
 test('cms performance for block rendering is acceptable', function () {
+    /** @var TestCase $this */
     $startTime = microtime(true);
 
     $response = get('/'.$this->lang);

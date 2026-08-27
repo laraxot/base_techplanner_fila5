@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Models;
 
+use Modules\Notify\Models\BaseModel;
 use Modules\Notify\Models\Contact;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;

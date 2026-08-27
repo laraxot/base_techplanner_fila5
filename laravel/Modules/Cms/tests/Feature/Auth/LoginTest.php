@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Livewire\Volt\Volt as LivewireVolt;
 use Modules\Cms\Tests\TestCase;
-use Modules\Quaeris\Models\User;
+use Modules\User\Models\User;
 
 uses(TestCase::class);
 
@@ -44,6 +44,7 @@ it('login page contains localized content', function (): void {
 });
 
 it('allows the user to authenticate via frontend login page', function (): void {
+    /** @var TestCase $this */
     $email = cmsGenerateUniqueEmail();
     $user = cmsCreateTestUser([
         'email' => $email,
@@ -68,6 +69,7 @@ it('allows the user to authenticate via frontend login page', function (): void 
 });
 
 it('redirects authenticated users from login page', function (): void {
+    /** @var TestCase $this */
     $user = cmsCreateTestUser();
 
     $this->actingAs($user);

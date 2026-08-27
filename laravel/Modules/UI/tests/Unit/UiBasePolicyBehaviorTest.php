@@ -5,22 +5,38 @@ declare(strict_types=1);
 namespace Modules\UI\Tests\Unit;
 
 use Mockery;
+use Mockery\CompositeExpectation;
+use Mockery\LegacyMockInterface;
+use Mockery\MockInterface;
 use Modules\UI\Tests\Fixtures\UiBasePolicyBehaviorConcretePolicy;
 use Modules\UI\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 
+/**
+ * Narrows Mockery's shouldReceive() union return type for PHPStan.
+ *
+ * @param  LegacyMockInterface|MockInterface  $mock
+ */
+function expectMethod($mock, string $method): CompositeExpectation
+{
+    /** @var CompositeExpectation $expectation */
+    $expectation = $mock->shouldReceive($method);
+
+    return $expectation;
+}
+
 uses(TestCase::class)->group('no-ui-db');
 
 /**
  * @param  list<string>  $roles
- * @return Mockery\MockInterface&UserContract
+ * @return MockInterface&UserContract
  */
 function uiBehaviorUser(array $roles = []): UserContract
 {
-    /** @var Mockery\MockInterface&UserContract $user */
+    /** @var MockInterface&UserContract $user */
     $user = Mockery::mock(UserContract::class);
-    $user->shouldReceive('hasRole')
+    expectMethod($user, 'hasRole')
         ->andReturnUsing(static function (array|string $richiesti) use ($roles): bool {
             /** @var list<string> $normalizzati */
             $normalizzati = is_array($richiesti) ? $richiesti : [$richiesti];

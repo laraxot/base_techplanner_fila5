@@ -98,8 +98,8 @@ function langHundredFakeUser(array $permissions = [], bool $superAdmin = false):
 {
     /** @var MockInterface&UserContract $user */
     $user = Mockery::mock(UserContract::class);
-    $user->shouldReceive('hasRole')->with('super-admin')->andReturn($superAdmin);
-    $user->shouldReceive('hasPermissionTo')
+    expectMethod($user, 'hasRole')->with('super-admin')->andReturn($superAdmin);
+    expectMethod($user, 'hasPermissionTo')
         ->andReturnUsing(static fn (string $permission): bool => in_array($permission, $permissions, true));
 
     return $user;
@@ -221,7 +221,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         ]);
 
         $this->mockService(SaveArrayAction::class, static function (MockInterface $mock): void {
-            $mock->shouldReceive('execute')->never();
+            expectMethod($mock, 'execute')->never();
         });
 
         app(PublishTranslationAction::class)->execute($data);
@@ -349,7 +349,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         $action = app(WriteTranslationFileAction::class);
 
         $read = Mockery::mock(ReadTranslationFileAction::class);
-        $read->shouldReceive('toPhp')->andReturn('<?php return [;');
+        expectMethod($read, 'toPhp')->andReturn('<?php return [;');
         app()->instance(ReadTranslationFileAction::class, $read);
 
         expect(fn () => $action->execute($path, ['x' => 'y']))->toThrow(\Exception::class);
@@ -440,7 +440,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
             $mock->allows('execute');
         });
         $this->mockService(SvgExistsAction::class, static function (MockInterface $mock): void {
-            $mock->allows('execute')->andReturnUsing(static fn (string $label): bool => $label === 'heroicon-o-check');
+            expectMethodAllows($mock, 'execute')->andReturnUsing(static fn (string $label): bool => $label === 'heroicon-o-check');
         });
 
         app('translator')->addLines([
@@ -676,7 +676,7 @@ describe('Lang 100% — Filament / Livewire / Casts', function (): void {
         $post = Mockery::mock(Post::class)->makePartial();
         $initialTitle = ['it' => 'Hello'];
         $post->setAttribute('custom_field', $initialTitle);
-        $post->shouldReceive('save')->once()->andReturnTrue();
+        expectMethod($post, 'save')->once()->andReturnTrue();
         $host->setRelation('post', $post);
 
         Assert::assertSame($initialTitle, $cast->get($host, 'custom_field', null, []));
@@ -802,14 +802,14 @@ describe('Lang 100% — Models policies providers views', function (): void {
         $_SERVER['argv'] = $previousArgv;
 
         $this->mockService(GetAllTranslationAction::class, static function (MockInterface $mock): void {
-            $mock->shouldReceive('execute')->andThrow(new \RuntimeException('boom'));
+            expectMethod($mock, 'execute')->andThrow(new \RuntimeException('boom'));
         });
         Assert::assertSame([], (new TranslationFile())->getRows());
 
         $bad = sys_get_temp_dir().'/tf_bad_'.uniqid().'.php';
         file_put_contents($bad, '<?php throw new Exception("x");');
         $this->mockService(GetAllTranslationAction::class, static function (MockInterface $mock) use ($bad): void {
-            $mock->shouldReceive('execute')->andReturn([
+            expectMethod($mock, 'execute')->andReturn([
                 ['key' => 'lang::bad', 'path' => $bad],
                 ['key' => 'lang::missing', 'path' => '/no/file.php'],
                 123,

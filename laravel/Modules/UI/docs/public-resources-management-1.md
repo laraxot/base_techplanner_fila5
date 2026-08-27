@@ -32,9 +32,6 @@ La struttura corretta per le risorse pubbliche  è la seguente:
 
 ### Immagini
 
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_rKwHvB
 Le immagini devono essere posizionate in `/var/www/html/saluteora/public_html/images/` e organizzate in sottocartelle per tipologia:
 - `/images/avatars/` - Avatar utenti
 - `/images/logos/` - Loghi

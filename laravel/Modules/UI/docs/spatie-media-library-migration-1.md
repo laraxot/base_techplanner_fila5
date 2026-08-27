@@ -108,9 +108,6 @@ Ogni tipo di documento dovrà avere la sua collection specifica:
 ```php
 // Patient Documents Collections
 'health_card' => 'tessere_sanitarie'
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_j2EhCR
 'identity_document' => 'documenti_identita'  
 'isee_certificate' => 'certificazioni_isee'
 'pregnancy_certificate' => 'certificati_gravidanza'
@@ -227,9 +224,6 @@ class SpatieImageUpload
     ->acceptedFileTypes(['image/jpeg', 'image/png', 'application/pdf'])
     ->maxSize(5120),
 
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_j2EhCR
 // DOPO (SpatieMediaLibraryFileUpload)  
 'health_card' => \Modules\UI\Filament\Components\SpatieDocumentUpload::forHealthCard()
     ->label(trans('saluteora::patients.fields.health_card.label'))

@@ -62,13 +62,13 @@ describe('Job ScheduleForm full schema coverage', function (): void {
 
         // Invoke nested closures via ModuleRemainingCoverage-style property walk
         $set = Mockery::mock(Set::class);
-        $set->shouldReceive('__invoke')->andReturnNull();
+        expectMethod($set, '__invoke')->andReturnNull();
         $set->shouldIgnoreMissing();
 
         $get = Mockery::mock(Get::class);
-        $get->shouldReceive('__invoke')->with('name')->andReturn('arg1');
-        $get->shouldReceive('__invoke')->with('required')->andReturn(true);
-        $get->shouldReceive('__invoke')->andReturn('arg1', true, null);
+        expectMethod($get, '__invoke')->with('name')->andReturn('arg1');
+        expectMethod($get, '__invoke')->with('required')->andReturn(true);
+        expectMethod($get, '__invoke')->andReturn('arg1', true, null);
         $get->shouldIgnoreMissing();
 
         $ref = new \ReflectionObject($schema['main_section']);

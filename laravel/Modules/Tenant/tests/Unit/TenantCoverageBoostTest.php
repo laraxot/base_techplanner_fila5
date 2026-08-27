@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Tenant\Tests\Unit;
 
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\File;
 use Mockery;
 use Mockery\MockInterface;
-use Modules\Sigma\Models\WebService;
 use Modules\Tenant\Actions\Config\FilterConfigStringKeysAction;
 use Modules\Tenant\Actions\Config\GetTenantConfigArrayAction;
 use Modules\Tenant\Actions\Config\GetTenantConfigNamesAction;
@@ -31,6 +31,7 @@ use Modules\Tenant\Models\Domain;
 use Modules\Tenant\Models\Policies\DomainPolicy;
 use Modules\Tenant\Models\Policies\TenantBasePolicy;
 use Modules\Tenant\Models\Tenant;
+use Modules\Tenant\Models\Traits\SushiToCsv;
 use Modules\Tenant\Services\Config\ConfigResolverRegistry;
 use Modules\Tenant\Services\Config\ConfigStringKeyFilter;
 use Modules\Tenant\Services\Config\Contracts\ConfigResolverInterface;
@@ -46,6 +47,16 @@ use PHPUnit\Framework\Assert;
 use function Safe\json_encode;
 
 uses(TestCase::class);
+
+function expectMockery(MockInterface $mock, string $method): Mockery\Expectation
+{
+    $expectation = $mock->allows($method);
+    if (! $expectation instanceof Mockery\Expectation) {
+        throw new \RuntimeException('Unexpected mockery expectation type.');
+    }
+
+    return $expectation;
+}
 
 afterEach(function (): void {
     Mockery::close();
@@ -178,13 +189,13 @@ describe('Tenant coverage boost — Filament and policy surface', function (): v
     test('tenant policies and config helpers enforce business rules', function (): void {
         /** @var MockInterface&UserContract $superAdmin */
         $superAdmin = Mockery::mock(UserContract::class);
-        $superAdmin->shouldReceive('hasRole')->with('super-admin')->andReturn(true);
-        $superAdmin->shouldReceive('hasPermissionTo')->andReturn(false);
+        expectMockery($superAdmin, 'hasRole')->with('super-admin')->andReturn(true);
+        expectMockery($superAdmin, 'hasPermissionTo')->andReturn(false);
 
         /** @var MockInterface&UserContract $editor */
         $editor = Mockery::mock(UserContract::class);
-        $editor->shouldReceive('hasRole')->with('super-admin')->andReturn(false);
-        $editor->shouldReceive('hasPermissionTo')->andReturnUsing(
+        expectMockery($editor, 'hasRole')->with('super-admin')->andReturn(false);
+        expectMockery($editor, 'hasPermissionTo')->andReturnUsing(
             static fn (string $permission): bool => in_array($permission, ['domain.view', 'domain.update'], true),
         );
 
@@ -250,7 +261,7 @@ describe('Tenant coverage boost — Sushi file traits', function (): void {
 
         /** @var TestCase $this */
         $this->mockService(GetTenantFilePathAction::class, static function (MockInterface $mock) use ($baseDir): void {
-            $mock->allows('execute')->andReturnUsing(
+            expectMockery($mock, 'execute')->andReturnUsing(
                 static fn (string $path): string => $baseDir.'/'.ltrim($path, '/'),
             );
         });
@@ -278,14 +289,22 @@ describe('Tenant coverage boost — Sushi file traits', function (): void {
 
         /** @var TestCase $this */
         $this->mockService(GetTenantFilePathAction::class, static function (MockInterface $mock) use ($baseDir): void {
-            $mock->allows('execute')->andReturnUsing(
+            expectMockery($mock, 'execute')->andReturnUsing(
                 static fn (string $path): string => $baseDir.'/'.basename($path),
             );
         });
 
-        $model = new class() extends WebService
+        $model = new class() extends Model
         {
+            use SushiToCsv;
+
             protected $table = 'catalog';
+
+            /** @var array<string, string> */
+            protected array $schema = [
+                'id' => 'integer',
+                'name' => 'string',
+            ];
 
             /** @return array<int, array<string, mixed>> */
             public function getRows(): array

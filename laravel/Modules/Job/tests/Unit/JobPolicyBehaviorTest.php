@@ -7,6 +7,7 @@ namespace Modules\Job\Tests\Unit;
 use Illuminate\Contracts\Translation\Translator;
 use Illuminate\Translation\PotentiallyTranslatedString;
 use Mockery;
+use Mockery\MockInterface;
 use Modules\Job\Models\Policies\ExportPolicy;
 use Modules\Job\Models\Policies\FailedImportRowPolicy;
 use Modules\Job\Models\Policies\FailedJobPolicy;
@@ -34,23 +35,23 @@ uses(TestCase::class)->group('no-job-db');
 /**
  * @param  list<string>  $permissions
  * @param  list<string>  $roles
- * @return Mockery\MockInterface&UserContract
+ * @return MockInterface&UserContract
  */
 function jobBehaviorUser(array $permissions = [], array $roles = [], bool $ownsTeam = false, bool $belongsToTeam = false): UserContract
 {
-    /** @var Mockery\MockInterface&UserContract $user */
+    /** @var MockInterface&UserContract $user */
     $user = Mockery::mock(UserContract::class);
-    $user->shouldReceive('hasPermissionTo')
+    expectMethod($user, 'hasPermissionTo')
         ->andReturnUsing(static fn (string $permission): bool => in_array($permission, $permissions, true));
-    $user->shouldReceive('hasRole')
+    expectMethod($user, 'hasRole')
         ->andReturnUsing(static function (array|string $richiesti) use ($roles): bool {
             /** @var list<string> $normalizzati */
             $normalizzati = is_array($richiesti) ? $richiesti : [$richiesti];
 
             return array_intersect($normalizzati, $roles) !== [];
         });
-    $user->shouldReceive('ownsTeam')->andReturn($ownsTeam);
-    $user->shouldReceive('belongsToTeam')->andReturn($belongsToTeam);
+    expectMethod($user, 'ownsTeam')->andReturn($ownsTeam);
+    expectMethod($user, 'belongsToTeam')->andReturn($belongsToTeam);
 
     return $user;
 }

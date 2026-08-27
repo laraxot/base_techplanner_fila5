@@ -17,6 +17,7 @@ use Modules\Xot\Datas\XotData;
  * @phpstan-require-extends Model
  *
  * @method mixed getTranslation(string $key, string $locale, bool $useFallbackLocale = true)
+ * @method mixed getTranslation(string $key, string $locale, bool $useFallbackLocale = true)
  * @method static \Illuminate\Database\Eloquent\Builder<static> query()
  */
 trait HasBlocks

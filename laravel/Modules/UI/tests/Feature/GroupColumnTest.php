@@ -253,10 +253,6 @@ describe('GroupColumn view rendering', function (): void {
     });
 
     it('renders IconColumn boolean via toEmbeddedHtml instead of raw 1', function (): void {
-        if (! app()->bound('view')) {
-            $this->markTestSkipped('view service not bound');
-        }
-
         $record = ['ha_diritto' => 1];
         $fields = [
             IconColumn::make('ha_diritto')->boolean()->inline(),
@@ -282,10 +278,6 @@ describe('GroupColumn view rendering', function (): void {
     });
 
     it('applies TextColumn formatState and html for comma-separated motivo', function (): void {
-        if (! app()->bound('view')) {
-            $this->markTestSkipped('view service not bound');
-        }
-
         $record = ['motivo' => 'a,b,c'];
         $fields = [
             TextColumn::make('motivo')
@@ -317,10 +309,6 @@ describe('GroupColumn view rendering', function (): void {
     });
 
     it('renders SelectColumn via toEmbeddedHtml even when state is null', function (): void {
-        if (! app()->bound('view')) {
-            $this->markTestSkipped('view service not bound');
-        }
-
         $record = ['valutatore_id' => null];
         $fields = [
             SelectColumn::make('valutatore_id')

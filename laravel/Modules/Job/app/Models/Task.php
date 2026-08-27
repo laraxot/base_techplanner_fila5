@@ -96,10 +96,7 @@ class Task extends BaseModel
 {
     // use HasFrequencies;
     use FrontendSortable;
-
-    /** @phpstan-use HasXotFactory<Factory<static>> */
     use HasXotFactory;
-
     use Notifiable;
 
     protected $fillable = [

@@ -7,6 +7,8 @@ namespace Modules\Lang\Tests\Unit;
 use Illuminate\Translation\ArrayLoader;
 use Illuminate\View\View;
 use Mockery;
+use Mockery\CompositeExpectation;
+use Mockery\LegacyMockInterface;
 use Mockery\MockInterface;
 use Modules\Lang\Actions\MergeTranslationsAction;
 use Modules\Lang\Actions\SyncTranslationsAction;
@@ -37,6 +39,41 @@ use Modules\Xot\Actions\GetViewAction;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 
+/**
+ * Narrows Mockery's shouldReceive() union return type for PHPStan.
+ *
+ * @param  LegacyMockInterface|MockInterface  $mock
+ */
+function expectMethod($mock, string $method): CompositeExpectation
+{
+    /** @var CompositeExpectation $expectation */
+    $expectation = $mock->shouldReceive($method);
+
+    return $expectation;
+}
+
+/**
+ * @param  MockInterface  $mock
+ */
+function expectMethodExpects($mock, string $method): CompositeExpectation
+{
+    /** @var CompositeExpectation $expectation */
+    $expectation = $mock->expects($method);
+
+    return $expectation;
+}
+
+/**
+ * @param  MockInterface  $mock
+ */
+function expectMethodAllows($mock, string $method): CompositeExpectation
+{
+    /** @var CompositeExpectation $expectation */
+    $expectation = $mock->allows($method);
+
+    return $expectation;
+}
+
 use function Safe\mkdir;
 use function Safe\rmdir;
 use function Safe\unlink;
@@ -51,10 +88,10 @@ function langFakeUser(array $permissions = [], bool $superAdmin = false): UserCo
 {
     /** @var MockInterface&UserContract $user */
     $user = Mockery::mock(UserContract::class);
-    $user->shouldReceive('hasRole')
+    expectMethod($user, 'hasRole')
         ->with('super-admin')
         ->andReturn($superAdmin);
-    $user->shouldReceive('hasPermissionTo')
+    expectMethod($user, 'hasPermissionTo')
         ->andReturnUsing(static function (string $permission) use ($permissions): bool {
             return in_array($permission, $permissions, true);
         });
@@ -274,7 +311,7 @@ describe('Lang coverage boost — UI and data', function (): void {
         $adapter = new TranslatorAdapter($loader, 'it');
 
         $this->mockService(RecordMissingTranslationAction::class, static function (MockInterface $mock): void {
-            $mock->expects('execute')->once()->with('messages.missing', 'it');
+            expectMethodExpects($mock, 'execute')->once()->with('messages.missing', 'it');
         });
 
         Assert::assertSame('messages.missing', $adapter->get('messages.missing'));

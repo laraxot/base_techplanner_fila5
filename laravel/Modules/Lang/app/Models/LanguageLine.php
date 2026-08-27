@@ -6,7 +6,7 @@ namespace Modules\Lang\Models;
 
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 use Illuminate\Support\Carbon;
-use Modules\Ptv\Models\Profile;
+use Modules\User\Models\Profile;
 
 /**
  * Modules\Lang\Models\LanguageLine.

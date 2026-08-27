@@ -4,10 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Providers;
 
+use Illuminate\Database\Events\QueryExecuted;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\ServiceProvider;
 use Modules\Xot\Http\Middleware\FilamentMemoryMonitorMiddleware;
+use Nwidart\Modules\Facades\Module;
 use PDO;
 
 use function Safe\preg_match;
@@ -62,7 +64,7 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
     private function applyMemoryOptimizations(): void
     {
         // Ottimizza le query di default
-        DB::listen(function ($query) {
+        DB::listen(function (QueryExecuted $query): void {
             // Log query che superano la soglia di tempo
             $threshold = config('filament_optimization.monitoring.slow_query_threshold', 1000);
 
@@ -186,9 +188,12 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
             return cache()->remember('xot:module:configs', now()->addHours(1), function () {
                 // Carica tutte le configurazioni dei moduli
                 $configs = [];
-                $modules = app('modules')->all();
+                $modules = Module::all();
 
                 foreach ($modules as $module) {
+                    if (! $module instanceof \Nwidart\Modules\Module) {
+                        continue;
+                    }
                     $configPath = $module->getPath().'/Config/config.php';
                     if (file_exists($configPath)) {
                         $configs[$module->getName()] = require $configPath;

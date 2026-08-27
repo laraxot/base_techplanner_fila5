@@ -13,6 +13,7 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
 use Mockery;
+use Mockery\ExpectationInterface;
 use Modules\User\Http\Livewire\Auth\Login;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
@@ -57,10 +58,14 @@ function loginRedirectForRoles(array $roleNames): string
     ));
 
     $relation = Mockery::mock(BelongsToMany::class);
-    $relation->shouldReceive('get')->andReturn($roles);
+    $relationGetExpectation = $relation->shouldReceive('get');
+    \assert($relationGetExpectation instanceof ExpectationInterface);
+    $relationGetExpectation->andReturn($roles);
 
     $userMock = Mockery::mock($user)->makePartial();
-    $userMock->shouldReceive('roles')->andReturn($relation);
+    $userRolesExpectation = $userMock->shouldReceive('roles');
+    \assert($userRolesExpectation instanceof ExpectationInterface);
+    $userRolesExpectation->andReturn($relation);
 
     Auth::shouldReceive('user')->andReturn($userMock);
 

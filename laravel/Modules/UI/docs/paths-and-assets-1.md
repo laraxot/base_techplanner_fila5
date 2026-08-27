@@ -8,9 +8,6 @@
 >
 > **Soluzione:** Seguire SEMPRE la regola documentata qui sotto e aggiornata anche in README.md e nella root docs/links.md.
 
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_0RFZYX
 # Gestione dei Percorsi e degli Asset 
 ## Collegamenti correlati
 - [README modulo UI](/laravel/Modules/UI/docs/README.md)
@@ -68,9 +65,6 @@ Per garantire una buona esperienza utente, implementare sempre un fallback per l
 Gli SVG utilizzati come icone o componenti UI dovrebbero essere implementati come componenti Blade in:
 
 ```
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_0RFZYX
 /var/www/html/saluteora/laravel/Themes/One/resources/views/components/ui/
 ```
 ### SVG come Asset Pubblici
@@ -85,9 +79,6 @@ Gli SVG utilizzati come immagini (avatar, loghi, ecc.) dovrebbero essere posizio
 Il componente avatar è implementato in:
 
 ```
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_0RFZYX
 /var/www/html/saluteora/laravel/Themes/One/resources/views/components/ui/avatar.blade.php
 ```
 E utilizza gli avatar SVG dalla directory pubblica:
@@ -99,9 +90,6 @@ E utilizza gli avatar SVG dalla directory pubblica:
 Il componente icon è implementato in:
 
 ```
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_0RFZYX
 /var/www/html/saluteora/laravel/Themes/One/resources/views/components/ui/icon.blade.php
 ```
 E include le definizioni SVG direttamente nel componente.
@@ -122,9 +110,6 @@ E include le definizioni SVG direttamente nel componente.
 
 **❌ Errato:**
 ```
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_0RFZYX
 /var/www/html/ptvx/laravel/resources/views/components/ui/logo.blade.php
 ```
 **✅ Corretto:**

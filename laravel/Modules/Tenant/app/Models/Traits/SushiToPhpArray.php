@@ -14,6 +14,7 @@ use Modules\Tenant\Actions\Config\FilterConfigStringKeysAction;
 use Modules\Tenant\Actions\Config\GetTenantConfigArrayAction;
 use Sushi\Sushi;
 
+/** @phpstan-ignore trait.unused */
 trait SushiToPhpArray
 {
     use Sushi;

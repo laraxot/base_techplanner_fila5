@@ -24,14 +24,14 @@ function notifyBehaviorUser(array $roles = []): UserContract
 {
     /** @var Mockery\MockInterface&UserContract $user */
     $user = Mockery::mock(UserContract::class);
-    $user->shouldReceive('hasRole')
+    mockExpectation($user, 'hasRole')
         ->andReturnUsing(static function (array|string $richiesti) use ($roles): bool {
             /** @var list<string> $normalizzati */
             $normalizzati = is_array($richiesti) ? $richiesti : [$richiesti];
 
             return array_intersect($normalizzati, $roles) !== [];
         });
-    $user->shouldReceive('hasPermissionTo')->andReturn(false);
+    mockExpectation($user, 'hasPermissionTo')->andReturn(false);
 
     return $user;
 }

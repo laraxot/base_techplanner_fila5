@@ -53,6 +53,7 @@ beforeEach(function (): void {
 });
 
 afterEach(function (): void {
+    /** @var TestCase $this */
     if (File::exists($this->sushiJsonPath())) {
         File::delete($this->sushiJsonPath());
     }

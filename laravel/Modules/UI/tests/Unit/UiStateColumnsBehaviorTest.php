@@ -30,7 +30,7 @@ use ReflectionClass;
 
 use function Safe\mkdir;
 
-uses(TestCase::class)->group('no-ui-db');
+uses(TestCase::class);
 
 afterEach(function (): void {
     UiCoverageRecord::$findMap = [];

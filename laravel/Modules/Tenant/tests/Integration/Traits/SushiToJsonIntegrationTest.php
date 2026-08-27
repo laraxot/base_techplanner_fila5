@@ -51,6 +51,7 @@ beforeEach(function (): void {
 });
 
 afterEach(function (): void {
+    /** @var TestCase $this */
     if (File::exists($this->testJsonPath)) {
         File::delete($this->testJsonPath);
     }

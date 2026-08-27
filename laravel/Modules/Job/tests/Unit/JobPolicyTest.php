@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Job\Tests\Unit;
 
 use Mockery;
+use Mockery\MockInterface;
 use Modules\Job\Models\Policies\FailedImportRowPolicy;
 use Modules\Job\Models\Policies\FailedJobPolicy;
 use Modules\Job\Models\Policies\ImportPolicy;
@@ -28,23 +29,23 @@ uses(TestCase::class)->group('no-job-db');
 /**
  * @param  list<string>  $permissions
  * @param  list<string>  $roles
- * @return Mockery\MockInterface&UserContract
+ * @return MockInterface&UserContract
  */
 function jobFakeUser(array $permissions = [], bool $ownsTeam = false, bool $belongsToTeam = false, array $roles = []): UserContract
 {
-    /** @var Mockery\MockInterface&UserContract $user */
+    /** @var MockInterface&UserContract $user */
     $user = Mockery::mock(UserContract::class);
-    $user->shouldReceive('hasPermissionTo')
+    expectMethod($user, 'hasPermissionTo')
         ->andReturnUsing(static fn (string $permission): bool => in_array($permission, $permissions, true));
-    $user->shouldReceive('hasRole')
+    expectMethod($user, 'hasRole')
         ->andReturnUsing(static function (array|string $richiesti) use ($roles): bool {
             /** @var list<string> $normalizzati */
             $normalizzati = is_array($richiesti) ? $richiesti : [$richiesti];
 
             return array_intersect($normalizzati, $roles) !== [];
         });
-    $user->shouldReceive('ownsTeam')->andReturn($ownsTeam);
-    $user->shouldReceive('belongsToTeam')->andReturn($belongsToTeam);
+    expectMethod($user, 'ownsTeam')->andReturn($ownsTeam);
+    expectMethod($user, 'belongsToTeam')->andReturn($belongsToTeam);
 
     return $user;
 }

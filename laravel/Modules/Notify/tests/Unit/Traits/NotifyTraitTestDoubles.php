@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Traits;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Modules\Notify\Models\NotificationLog;
@@ -15,7 +16,7 @@ final class NotifyRateLimitDummy
 {
     use HasNotificationRateLimiting;
 
-    public function key(string $type, mixed $identifier): string
+    public function key(string $type, int|string $identifier): string
     {
         return $this->getNotificationRateLimitKey($type, $identifier);
     }
@@ -63,6 +64,21 @@ final class NotifyTrackingDummy
     {
         return $this->isTrackingEnabled();
     }
+
+    public function pixelTrackingEnabled(): bool
+    {
+        return $this->isPixelTrackingEnabled();
+    }
+
+    public function linkTrackingEnabled(): bool
+    {
+        return $this->isLinkTrackingEnabled();
+    }
+
+    public function generatedTrackingId(): string
+    {
+        return $this->generateTrackingId();
+    }
 }
 
 final class NotifyTenantDummyModel extends Model
@@ -79,5 +95,14 @@ final class NotifyTenantDummyModel extends Model
     protected function tenantNotificationLogs(): MorphMany
     {
         return $this->morphMany(NotificationLog::class, 'notifiable');
+    }
+
+    /**
+     * @param  Builder<static>  $query
+     * @return Builder<static>
+     */
+    public function applyForTenantScope(Builder $query): Builder
+    {
+        return $this->scopeForTenant($query, $this->tenant_id);
     }
 }

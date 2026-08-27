@@ -142,7 +142,7 @@ describe('User gap attack — highest miss files', function (): void {
     test('Listeners Logout e Socialite Retrieve', function (): void {
         /** @var UserContract&MockInterface $user */
         $user = Mockery::mock(UserContract::class);
-        $user->shouldReceive('getAuthIdentifier')->andReturn(1);
+        mockeryExpect($user->shouldReceive('getAuthIdentifier'))->andReturn(1);
 
         foreach ([LogoutListener::class, OtherDeviceLogoutListener::class] as $class) {
             if (! class_exists($class)) {
@@ -163,7 +163,7 @@ describe('User gap attack — highest miss files', function (): void {
                 : Logout::class;
             /** @var Authenticatable&MockInterface $authUser */
             $authUser = Mockery::mock(Authenticatable::class);
-            $authUser->shouldReceive('getAuthIdentifier')->andReturn(1);
+            mockeryExpect($authUser->shouldReceive('getAuthIdentifier'))->andReturn(1);
             $event = new $eventClass('web', $authUser);
 
             try {

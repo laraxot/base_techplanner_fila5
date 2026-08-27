@@ -7,6 +7,7 @@ namespace Modules\Notify\Tests\Unit\Services;
 use Exception;
 use Illuminate\Database\Eloquent\Model;
 use Mockery;
+use Mockery\Expectation;
 use Mockery\MockInterface;
 use Modules\Notify\Actions\SendNotificationAction;
 use Modules\Notify\Services\NotificationManager;
@@ -39,7 +40,7 @@ class NotificationManagerTest extends TestCase
         $options = ['priority' => 'high'];
 
         $action = $this->mockSendNotificationAction();
-        $action->shouldReceive('handle')
+        $this->mockExpectation($action, 'handle')
             ->once()
             ->with($recipient, $templateCode, $data, $channels, $options);
 
@@ -61,7 +62,7 @@ class NotificationManagerTest extends TestCase
         $options = ['priority' => 'high'];
 
         $action = $this->mockSendNotificationAction();
-        $action->shouldReceive('handle')->times(2);
+        $this->mockExpectation($action, 'handle')->times(2);
 
         $this->instance(SendNotificationAction::class, $action);
 
@@ -111,7 +112,7 @@ class NotificationManagerTest extends TestCase
         $templateCode = 'test_template';
 
         $action = $this->mockSendNotificationAction();
-        $action->shouldReceive('handle')->once();
+        $this->mockExpectation($action, 'handle')->once();
 
         $this->instance(SendNotificationAction::class, $action);
 
@@ -125,7 +126,7 @@ class NotificationManagerTest extends TestCase
         $templateCode = 'test_template';
 
         $action = $this->mockSendNotificationAction();
-        $action->shouldReceive('handle')->once();
+        $this->mockExpectation($action, 'handle')->once();
 
         $this->instance(SendNotificationAction::class, $action);
 
@@ -153,5 +154,19 @@ class NotificationManagerTest extends TestCase
         $mock = Mockery::mock(SendNotificationAction::class);
 
         return $mock;
+    }
+
+    /**
+     * Mockery::shouldReceive() con un singolo nome di metodo restituisce a runtime
+     * una Mockery\Expectation concreta, ma la firma nativa dichiara l'unione
+     * ExpectationInterface|Expectation|HigherOrderMessage: questo helper restringe
+     * il tipo in un punto solo cosi' with()/once()/times() restano disponibili.
+     */
+    private function mockExpectation(MockInterface $mock, string $method): Expectation
+    {
+        /** @var Expectation $expectation */
+        $expectation = $mock->shouldReceive($method);
+
+        return $expectation;
     }
 }
