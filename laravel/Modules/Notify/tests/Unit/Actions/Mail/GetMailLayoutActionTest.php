@@ -3,14 +3,12 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Actions\Mail;
-use function Safe\file_get_contents;
-use function Safe\class_uses;
+
 use Modules\Notify\Actions\Mail\GetMailLayoutAction;
 use Modules\Notify\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 use Spatie\QueueableAction\QueueableAction;
-uses(\Modules\Notify\Tests\TestCase::class);
 
 use function Safe\class_uses;
 

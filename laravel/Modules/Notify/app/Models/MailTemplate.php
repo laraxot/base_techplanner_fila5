@@ -71,7 +71,6 @@ use Spatie\Translatable\HasTranslations;
  * @method static Builder<static>|MailTemplate whereVersion($value)
  * @method static Builder<static>|MailTemplate whereHtmlLayoutPath($value)
  * @method static Builder<static>|MailTemplate whereVersion($value)
- *
  * @method static Builder<static>|MailTemplate whereHtmlLayoutPath($value)
  * @method static Builder<static>|MailTemplate whereVersion($value)
  *
@@ -102,8 +101,7 @@ class MailTemplate extends SpatieMailTemplate implements MailTemplateInterface
         'whatsapp_template',
         // 'version',  //under development
         'params',
-        'counter',
-    ];
+        'counter'];
 
     /**
      * Get the options for generating the slug.
@@ -117,7 +115,6 @@ class MailTemplate extends SpatieMailTemplate implements MailTemplateInterface
 
     /**
      * @param  Builder<static>  $query
-     *
      * @return Builder<static>
      */
     public function scopeForMailable(Builder $query, Mailable $mailable): Builder
@@ -140,7 +137,6 @@ class MailTemplate extends SpatieMailTemplate implements MailTemplateInterface
         return [
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
-            'deleted_at' => 'datetime',
-        ];
+            'deleted_at' => 'datetime'];
     }
 }

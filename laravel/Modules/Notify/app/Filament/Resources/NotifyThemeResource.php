@@ -48,12 +48,10 @@ class NotifyThemeResource extends XotBaseResource
                     'ark' => 'ark',
                     'minty' => 'minty',
                     'sunny' => 'sunny',
-                    'widgets' => 'widgets',
-                ])
+                    'widgets' => 'widgets'])
                 ->default('empty'),
             'body' => Textarea::make('body')->columnSpanFull(),
-            'body_html' => RichEditor::make('body_html')->columnSpanFull(),
-        ];
+            'body_html' => RichEditor::make('body_html')->columnSpanFull()];
     }
 
     /**
@@ -64,18 +62,15 @@ class NotifyThemeResource extends XotBaseResource
         return match ($field) {
             'lang' => [
                 'it' => 'Italiano',
-                'en' => 'English',
-            ],
+                'en' => 'English'],
             'type' => [
                 'email' => 'Email',
                 'sms' => 'SMS',
-                'push' => 'Push Notification',
-            ],
+                'push' => 'Push Notification'],
             'post_type' => [
                 'page' => 'Page',
                 'post' => 'Post',
-                'product' => 'Product',
-            ],
+                'product' => 'Product'],
             default => [],
         };
     }

@@ -266,8 +266,7 @@ abstract class TestCase extends XotBaseTestCase
         return [
             ...parent::getPackageProviders($app),
             UserServiceProvider::class,
-            NotifyServiceProvider::class,
-        ];
+            NotifyServiceProvider::class];
     }
 
     /**

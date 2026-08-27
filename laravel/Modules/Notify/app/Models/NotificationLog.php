@@ -34,7 +34,6 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property string|null $error
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- *
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $deleter
  * @property-read MediaCollection<int, Media> $media
@@ -97,8 +96,7 @@ class NotificationLog extends BaseModel
         'failed_at',
         'opened_at',
         'clicked_at',
-        'tenant_id',
-    ];
+        'tenant_id'];
 
     /** @return MorphTo<Model, $this> */
     public function notifiable(): MorphTo
@@ -114,7 +112,6 @@ class NotificationLog extends BaseModel
 
     /**
      * @param  Builder<static>  $query
-     *
      * @return Builder<static>
      */
     public function scopeWithStatus(Builder $query, string $status): Builder
@@ -124,7 +121,6 @@ class NotificationLog extends BaseModel
 
     /**
      * @param  Builder<static>  $query
-     *
      * @return Builder<static>
      */
     public function scopeForChannel(Builder $query, string $channel): Builder
@@ -134,7 +130,6 @@ class NotificationLog extends BaseModel
 
     /**
      * @param  Builder<static>  $query
-     *
      * @return Builder<static>
      */
     public function scopeForNotifiable(Builder $query, Model $notifiable): Builder
@@ -148,8 +143,7 @@ class NotificationLog extends BaseModel
     {
         $this->update([
             'status' => self::STATUS_OPENED,
-            'opened_at' => now(),
-        ]);
+            'opened_at' => now()]);
 
         return $this;
     }
@@ -158,8 +152,7 @@ class NotificationLog extends BaseModel
     {
         $this->update([
             'status' => self::STATUS_CLICKED,
-            'clicked_at' => now(),
-        ]);
+            'clicked_at' => now()]);
 
         return $this;
     }
@@ -173,7 +166,6 @@ class NotificationLog extends BaseModel
             'delivered_at' => 'datetime',
             'failed_at' => 'datetime',
             'opened_at' => 'datetime',
-            'clicked_at' => 'datetime',
-        ]);
+            'clicked_at' => 'datetime']);
     }
 }

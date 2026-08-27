@@ -1,10 +1,11 @@
 includes:
-    # - ./phpstan-baseline.neon
+    - ./phpstan-baseline.neon
     - ./vendor/larastan/larastan/extension.neon
     - ./vendor/nesbot/carbon/extension.neon
     - ./vendor/phpstan/phpstan/conf/bleedingEdge.neon
     - ./vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
     - ./vendor/pestphp/pest/extension.neon
+    - ./Modules/Xot/phpstan/pest-internal-ignore.neon
 
 parameters:
     level: max
@@ -13,17 +14,14 @@ parameters:
         - ./Modules/
 
     ignoreErrors:
-        # - '#Static call to instance method Nwidart#'
-        # - "#^Unsafe usage of new static#"
         - '#Cannot cast mixed to (string|float|double|int|bool|boolean).#'
-        # - identifier: missingType.generics
-        # - identifier: missingType.iterableValue
-        # - identifier: larastan.noEnvCallsOutsideOfConfig
-        # - '#is used zero times and is not analysed#'
-        # - identifier: method.unused
-        # - identifier: method.internalClass
-        # - identifier: method.internal
-        # - identifier: function.alreadyNarrowedType
+        # Pest internals
+        - '#Call to an undefined method Pest\\PendingCalls\\.*#'
+        - '#Call to an undefined method Mockery\\CompositeExpectation::.*#'
+        - '#Anonymous function with return type void returns null but should not return anything.#'
+        # Larastan / Carbon internal
+        - '#Cannot call method .* on mixed.#'
+        - identifier: method.notFound
 
     excludePaths:
         - ./*/vendor/*

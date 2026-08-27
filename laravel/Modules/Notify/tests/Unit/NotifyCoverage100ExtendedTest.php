@@ -35,8 +35,7 @@ describe('Notify coverage 100 — extended provider paths', function (): void {
             'services.twilio.sid' => 'sid',
             'services.twilio.token' => 'token',
             'whatsapp.debug' => true,
-            'whatsapp.from' => '+390000000000',
-        ]);
+            'whatsapp.from' => '+390000000000']);
         Http::fake(['*' => Http::response(['messages' => [['id' => '1']]], 200)]);
 
         $data = WhatsAppData::from(['recipient' => '+393331112233', 'body' => 'Test']);
@@ -72,7 +71,7 @@ describe('Notify coverage 100 — extended provider paths', function (): void {
         config(['notify.fcm.server_key' => 'fcm-key']);
         Http::fake(['*' => Http::response(['message_id' => 'x'], 200)]);
 
-        $messaging = $this->createStub(Messaging::class);
+        $messaging = $this->createUnitMock(Messaging::class);
         $channel = new FirebaseCloudMessagingChannel($messaging);
         Assert::assertInstanceOf(FirebaseCloudMessagingChannel::class, $channel);
 

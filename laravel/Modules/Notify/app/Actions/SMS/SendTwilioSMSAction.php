@@ -76,8 +76,7 @@ final class SendTwilioSMSAction implements SmsActionContract
         // Twilio richiede l'autenticazione Basic
         $client = new Client([
             'timeout' => $this->twilioData->getTimeout(),
-            'auth' => [$this->twilioData->account_sid, $this->twilioData->auth_token],
-        ]);
+            'auth' => [$this->twilioData->account_sid, $this->twilioData->auth_token]]);
 
         $endpoint =
             $this->twilioData->getBaseUrl().
@@ -90,9 +89,7 @@ final class SendTwilioSMSAction implements SmsActionContract
                 'form_params' => [
                     'To' => $to,
                     'From' => $from,
-                    'Body' => $smsData->body,
-                ],
-            ]);
+                    'Body' => $smsData->body]]);
 
             $this->vars['status_code'] = $response->getStatusCode();
             $this->vars['status_txt'] = $response->getBody()->getContents();

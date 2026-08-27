@@ -42,8 +42,7 @@ class NetfunChannel
             'body' => is_string($message)
                 ? $message
                 : (is_object($message) && method_exists($message, 'getContent') ? $message->getContent() : ''),
-            'from' => '',
-        ]);
+            'from' => '']);
 
         return $this->action->execute($smsData);
     }

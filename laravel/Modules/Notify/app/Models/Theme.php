@@ -20,8 +20,7 @@ class Theme extends Model
      */
     protected $fillable = [
         'name', 'description', 'colors', 'fonts',
-        'version', 'is_active',
-    ];
+        'version', 'is_active'];
 
     /**
      * Get the attributes that should be cast.
@@ -32,7 +31,6 @@ class Theme extends Model
     {
         return [
             'colors' => 'array',
-            'fonts' => 'array',
-        ];
+            'fonts' => 'array'];
     }
 }

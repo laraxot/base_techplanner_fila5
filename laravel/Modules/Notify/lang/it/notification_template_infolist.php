@@ -20,6 +20,4 @@ return [
         'version' => ['label' => 'version'],
         'tenant_id' => ['label' => 'tenant_id'],
         'grapesjs_data' => ['label' => 'grapesjs_data'],
-        'type' => ['label' => 'type'],
-    ],
-];
+        'type' => ['label' => 'type']]];

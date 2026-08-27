@@ -52,20 +52,17 @@ class SendPushToPlatformAction
                 'body' => $notification->body,
                 'icon' => $notification->icon ?? '/icons/icon-192x192.png',
                 'sound' => $notification->sound ?? 'default',
-                'badge' => $notification->badge ?? 1,
-            ],
+                'badge' => $notification->badge ?? 1],
             'data' => $data,
             'priority' => $notification->priority ?? 'high',
-            'ttl' => $notification->ttl ?? 3600,
-        ];
+            'ttl' => $notification->ttl ?? 3600];
 
         $serverKey = SafeStringCastAction::cast(config('notify.fcm.server_key'));
         $url = SafeStringCastAction::cast(config('notify.fcm.url', 'https://fcm.googleapis.com/fcm/send'));
 
         $response = Http::withHeaders([
             'Authorization' => 'key='.$serverKey,
-            'Content-Type' => 'application/json',
-        ])->post($url, $payload);
+            'Content-Type' => 'application/json'])->post($url, $payload);
 
         if ($response instanceof PromiseInterface) {
             $response = $response->wait();
@@ -81,8 +78,7 @@ class SendPushToPlatformAction
             return [
                 'success' => true,
                 'message_id' => is_array($responseData) && isset($responseData['message_id']) ? $responseData['message_id'] : null,
-                'response' => $responseData,
-            ];
+                'response' => $responseData];
         }
 
         throw new Exception('FCM request failed: '.$response->body());
@@ -96,8 +92,7 @@ class SendPushToPlatformAction
         return [
             'success' => true,
             'message' => 'APNS notification sent (simulated)',
-            'platform' => 'apns',
-        ];
+            'platform' => 'apns'];
     }
 
     /**
@@ -114,13 +109,11 @@ class SendPushToPlatformAction
             'data' => $data,
             'actions' => $notification->actions ?? [],
             'requireInteraction' => $notification->requireInteraction ?? false,
-            'silent' => $notification->silent ?? false,
-        ]);
+            'silent' => $notification->silent ?? false]);
 
         return [
             'success' => true,
             'message' => 'Web Push notification sent (simulated)',
-            'platform' => 'webpush',
-        ];
+            'platform' => 'webpush'];
     }
 }

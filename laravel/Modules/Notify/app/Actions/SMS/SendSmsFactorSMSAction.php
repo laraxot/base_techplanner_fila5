@@ -74,16 +74,12 @@ final class SendSmsFactorSMSAction implements SmsActionContract
             'sender' => $smsData->from ?? $this->defaultSender,
             'recipients' => [
                 [
-                    'phone' => $to,
-                ],
-            ],
-            'type' => 'sms',
-        ];
+                    'phone' => $to]],
+            'type' => 'sms'];
 
         $client = new Client([
             'timeout' => $this->smsFactorData->getTimeout(),
-            'headers' => $headers,
-        ]);
+            'headers' => $headers]);
 
         try {
             $response = $client->post($this->smsFactorData->getBaseUrl().'/messages', ['json' => $body]);

@@ -4,23 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Models;
 
-use function Safe\json_encode;
-use PHPUnit\Framework\Assert;
 use Modules\Notify\Models\NotifyTheme;
 use Modules\Notify\Tests\TestCase;
-use function Pest\Laravel\get;
-
-uses(\Modules\Notify\Tests\TestCase::class);
-
-beforeEach(function (): void {
-    /** @var \Modules\Notify\Tests\TestCase $this */
-$this->disableExceptionHandling();
-});
-
-describe('Notify Theme', function (): void {
-    test('_can_create_notify_theme', function (): void {
-        /** @var \Modules\Notify\Tests\TestCase $this */
-$theme = NotifyTheme::create([
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
@@ -215,14 +200,14 @@ describe('Notify Theme', function (): void {
             'view_params' => json_encode(['updated' => true, 'version' => '2.0']),
         ]);
 
-        Assert::assertEquals('Updated Subject', \assertFreshModel($theme, \Modules\Notify\Models\NotifyTheme::class)->subject);
-        Assert::assertEquals('Updated body text', \assertFreshModel($theme, \Modules\Notify\Models\NotifyTheme::class)->body);
-        Assert::assertEquals('updated', \assertFreshModel($theme, \Modules\Notify\Models\NotifyTheme::class)->theme);
-        Assert::assertEquals(['updated' => true, 'version' => '2.0'], \assertFreshModel($theme, \Modules\Notify\Models\NotifyTheme::class)->view_params);
+        Assert::assertEquals('Updated Subject', XotBasePest::assertFreshModel($theme, NotifyTheme::class)->subject);
+        Assert::assertEquals('Updated body text', XotBasePest::assertFreshModel($theme, NotifyTheme::class)->body);
+        Assert::assertEquals('updated', XotBasePest::assertFreshModel($theme, NotifyTheme::class)->theme);
+        Assert::assertEquals(['updated' => true, 'version' => '2.0'], XotBasePest::assertFreshModel($theme, NotifyTheme::class)->view_params);
     });
 
     test('_can_find_by_language', function (): void {
-NotifyTheme::create([
+        NotifyTheme::create([
             'type' => 'email',
             'subject' => 'Italian Welcome',
             'lang' => 'it',
@@ -247,13 +232,13 @@ NotifyTheme::create([
         Assert::assertCount(1, $italianThemes);
         Assert::assertCount(1, $englishThemes);
         Assert::assertCount(1, $germanThemes);
-        Assert::assertEquals('it', \assertFirstModel($italianThemes, \Modules\Notify\Models\NotifyTheme::class)->lang);
-        Assert::assertEquals('en', \assertFirstModel($englishThemes, \Modules\Notify\Models\NotifyTheme::class)->lang);
-        Assert::assertEquals('de', \assertFirstModel($germanThemes, \Modules\Notify\Models\NotifyTheme::class)->lang);
+        Assert::assertEquals('it', XotBasePest::assertFirstModel($italianThemes, NotifyTheme::class)->lang);
+        Assert::assertEquals('en', XotBasePest::assertFirstModel($englishThemes, NotifyTheme::class)->lang);
+        Assert::assertEquals('de', XotBasePest::assertFirstModel($germanThemes, NotifyTheme::class)->lang);
     });
 
     test('_can_find_by_type', function (): void {
-NotifyTheme::create([
+        NotifyTheme::create([
             'type' => 'email',
             'subject' => 'Email Theme',
             'lang' => 'it',
@@ -278,13 +263,13 @@ NotifyTheme::create([
         Assert::assertCount(1, $emailThemes);
         Assert::assertCount(1, $smsThemes);
         Assert::assertCount(1, $pushThemes);
-        Assert::assertEquals('email', \assertFirstModel($emailThemes, \Modules\Notify\Models\NotifyTheme::class)->type);
-        Assert::assertEquals('sms', \assertFirstModel($smsThemes, \Modules\Notify\Models\NotifyTheme::class)->type);
-        Assert::assertEquals('push', \assertFirstModel($pushThemes, \Modules\Notify\Models\NotifyTheme::class)->type);
+        Assert::assertEquals('email', XotBasePest::assertFirstModel($emailThemes, NotifyTheme::class)->type);
+        Assert::assertEquals('sms', XotBasePest::assertFirstModel($smsThemes, NotifyTheme::class)->type);
+        Assert::assertEquals('push', XotBasePest::assertFirstModel($pushThemes, NotifyTheme::class)->type);
     });
 
     test('_can_find_by_theme_name', function (): void {
-NotifyTheme::create([
+        NotifyTheme::create([
             'type' => 'email',
             'subject' => 'Default Theme',
             'theme' => 'default',
@@ -309,13 +294,13 @@ NotifyTheme::create([
         Assert::assertCount(1, $defaultThemes);
         Assert::assertCount(1, $darkThemes);
         Assert::assertCount(1, $customThemes);
-        Assert::assertEquals('default', \assertFirstModel($defaultThemes, \Modules\Notify\Models\NotifyTheme::class)->theme);
-        Assert::assertEquals('dark', \assertFirstModel($darkThemes, \Modules\Notify\Models\NotifyTheme::class)->theme);
-        Assert::assertEquals('custom', \assertFirstModel($customThemes, \Modules\Notify\Models\NotifyTheme::class)->theme);
+        Assert::assertEquals('default', XotBasePest::assertFirstModel($defaultThemes, NotifyTheme::class)->theme);
+        Assert::assertEquals('dark', XotBasePest::assertFirstModel($darkThemes, NotifyTheme::class)->theme);
+        Assert::assertEquals('custom', XotBasePest::assertFirstModel($customThemes, NotifyTheme::class)->theme);
     });
 
     test('_can_find_by_post_type', function (): void {
-NotifyTheme::create([
+        NotifyTheme::create([
             'type' => 'email',
             'subject' => 'User Welcome',
             'post_type' => 'App\Models\User',
@@ -343,13 +328,13 @@ NotifyTheme::create([
         Assert::assertCount(1, $userThemes);
         Assert::assertCount(1, $companyThemes);
         Assert::assertCount(1, $orderThemes);
-        Assert::assertEquals('App\Models\User', \assertFirstModel($userThemes, \Modules\Notify\Models\NotifyTheme::class)->post_type);
-        Assert::assertEquals('App\Models\Company', \assertFirstModel($companyThemes, \Modules\Notify\Models\NotifyTheme::class)->post_type);
-        Assert::assertEquals('App\Models\Order', \assertFirstModel($orderThemes, \Modules\Notify\Models\NotifyTheme::class)->post_type);
+        Assert::assertEquals('App\Models\User', XotBasePest::assertFirstModel($userThemes, NotifyTheme::class)->post_type);
+        Assert::assertEquals('App\Models\Company', XotBasePest::assertFirstModel($companyThemes, NotifyTheme::class)->post_type);
+        Assert::assertEquals('App\Models\Order', XotBasePest::assertFirstModel($orderThemes, NotifyTheme::class)->post_type);
     });
 
     test('_can_find_by_subject_pattern', function (): void {
-NotifyTheme::create([
+        NotifyTheme::create([
             'type' => 'email',
             'subject' => 'Welcome to our platform',
             'lang' => 'it',
@@ -372,8 +357,8 @@ NotifyTheme::create([
 
         Assert::assertCount(2, $welcomeThemes);
         Assert::assertCount(1, $orderThemes);
-        $welcomeSubject = \assertFirstModel($welcomeThemes, \Modules\Notify\Models\NotifyTheme::class)->subject;
-        $orderSubject = \assertFirstModel($orderThemes, \Modules\Notify\Models\NotifyTheme::class)->subject;
+        $welcomeSubject = XotBasePest::assertFirstModel($welcomeThemes, NotifyTheme::class)->subject;
+        $orderSubject = XotBasePest::assertFirstModel($orderThemes, NotifyTheme::class)->subject;
         Assert::assertNotNull($welcomeSubject);
         Assert::assertNotNull($orderSubject);
         Assert::assertStringContainsString('Welcome', $welcomeSubject);
@@ -409,13 +394,13 @@ NotifyTheme::create([
         Assert::assertCount(1, $systemThemes);
         Assert::assertCount(1, $marketingThemes);
         Assert::assertCount(1, $supportThemes);
-        Assert::assertEquals('system@example.com', \assertFirstModel($systemThemes, \Modules\Notify\Models\NotifyTheme::class)->from_email);
-        Assert::assertEquals('marketing@example.com', \assertFirstModel($marketingThemes, \Modules\Notify\Models\NotifyTheme::class)->from_email);
-        Assert::assertEquals('support@example.com', \assertFirstModel($supportThemes, \Modules\Notify\Models\NotifyTheme::class)->from_email);
+        Assert::assertEquals('system@example.com', XotBasePest::assertFirstModel($systemThemes, NotifyTheme::class)->from_email);
+        Assert::assertEquals('marketing@example.com', XotBasePest::assertFirstModel($marketingThemes, NotifyTheme::class)->from_email);
+        Assert::assertEquals('support@example.com', XotBasePest::assertFirstModel($supportThemes, NotifyTheme::class)->from_email);
     });
 
     test('_can_find_by_view_params_value', function (): void {
-NotifyTheme::create([
+        NotifyTheme::create([
             'type' => 'email',
             'subject' => 'High Priority Theme',
             'view_params' => [
@@ -447,12 +432,12 @@ NotifyTheme::create([
 
         Assert::assertCount(1, $highPriorityThemes);
         Assert::assertCount(1, $securityThemes);
-        Assert::assertEquals('high', \assertFirstModel($highPriorityThemes, \Modules\Notify\Models\NotifyTheme::class)->view_params['priority']);
-        Assert::assertEquals('security', \assertFirstModel($securityThemes, \Modules\Notify\Models\NotifyTheme::class)->view_params['category']);
+        Assert::assertEquals('high', XotBasePest::assertFirstModel($highPriorityThemes, NotifyTheme::class)->view_params['priority']);
+        Assert::assertEquals('security', XotBasePest::assertFirstModel($securityThemes, NotifyTheme::class)->view_params['category']);
     });
 
     test('_can_find_by_multiple_criteria', function (): void {
-NotifyTheme::create([
+        NotifyTheme::create([
             'type' => 'email',
             'subject' => 'Italian High Priority Security',
             'lang' => 'it',
@@ -491,14 +476,14 @@ NotifyTheme::create([
             ->get();
 
         Assert::assertCount(1, $italianEmailHighPriority);
-        Assert::assertEquals('it', \assertFirstModel($italianEmailHighPriority, \Modules\Notify\Models\NotifyTheme::class)->lang);
-        Assert::assertEquals('email', \assertFirstModel($italianEmailHighPriority, \Modules\Notify\Models\NotifyTheme::class)->type);
-        Assert::assertEquals('high', \notifyArrayGet(\assertFirstModel($italianEmailHighPriority, \Modules\Notify\Models\NotifyTheme::class)->view_params, 'priority'));
-        Assert::assertEquals('Italian High Priority Security', \assertFirstModel($italianEmailHighPriority, \Modules\Notify\Models\NotifyTheme::class)->subject);
+        Assert::assertEquals('it', XotBasePest::assertFirstModel($italianEmailHighPriority, NotifyTheme::class)->lang);
+        Assert::assertEquals('email', XotBasePest::assertFirstModel($italianEmailHighPriority, NotifyTheme::class)->type);
+        Assert::assertEquals('high', TestCase::notifyArrayGet(XotBasePest::assertFirstModel($italianEmailHighPriority, NotifyTheme::class)->view_params, 'priority'));
+        Assert::assertEquals('Italian High Priority Security', XotBasePest::assertFirstModel($italianEmailHighPriority, NotifyTheme::class)->subject);
     });
 
     test('_can_handle_null_values', function (): void {
-$theme = NotifyTheme::create([
+        $theme = NotifyTheme::create([
             'type' => 'email',
             'subject' => 'Null Values Theme',
             'lang' => null,

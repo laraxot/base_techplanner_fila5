@@ -115,9 +115,7 @@ class SendPushNotification extends XotBasePage
                 TextInput::make('body')->required(),
                 Repeater::make('data')->schema([
                     TextInput::make('name')->required(),
-                    TextInput::make('value')->required(),
-                ]),
-            ])
+                    TextInput::make('value')->required()])])
             // ->model($this->getUser())
             ->statePath('notificationData');
     }
@@ -206,18 +204,16 @@ class SendPushNotification extends XotBasePage
     protected function getForms(): array
     {
         return [
-            'notificationForm',
-        ];
+            'notificationForm'];
     }
 
-    /** @return array<string, \Filament\Actions\Action> */
+    /** @return array<string, Action> */
     protected function getNotificationFormActions(): array
     {
         return [
             'submit' => Action::make('notificationFormActions')
 
-                ->submit('notificationFormActions'),
-        ];
+                ->submit('notificationFormActions')];
     }
 
     protected function getUser(): Authenticatable&Model

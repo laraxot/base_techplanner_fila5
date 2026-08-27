@@ -7,6 +7,7 @@ namespace Modules\Xot\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Contracts\ProfileContract;
+use Modules\Xot\Database\Factories\LogFactory;
 use Override;
 use Sushi\Sushi;
 

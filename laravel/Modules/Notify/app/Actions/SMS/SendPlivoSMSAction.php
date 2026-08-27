@@ -78,9 +78,7 @@ final class SendPlivoSMSAction implements SmsActionContract
             'timeout' => $this->plivoData->getTimeout(),
             'auth' => [$this->plivoData->auth_id, $this->plivoData->auth_token],
             'headers' => [
-                'Content-Type' => 'application/json',
-            ],
-        ]);
+                'Content-Type' => 'application/json']]);
 
         $endpoint = $this->plivoData->getBaseUrl().'/v1/Account/'.$this->plivoData->auth_id.'/Message/';
 
@@ -89,9 +87,7 @@ final class SendPlivoSMSAction implements SmsActionContract
                 'json' => [
                     'src' => $from,
                     'dst' => $to,
-                    'text' => $smsData->body,
-                ],
-            ]);
+                    'text' => $smsData->body]]);
 
             $this->vars['status_code'] = $response->getStatusCode();
             $this->vars['status_txt'] = $response->getBody()->getContents();

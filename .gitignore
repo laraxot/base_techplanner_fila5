@@ -123,3 +123,5 @@ ${HOME}/.cache/qmd-cache/qmd/index.sqlite-wal
 ${HOME}/.cache/qmd-cache/qmd/index.sqlite-shm
 .serena/logs/indexing.txt
 .token-optimizer/
+graphify-out/
+graphify-out/

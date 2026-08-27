@@ -47,8 +47,7 @@ class MailTemplateResource extends LangBaseResource
                         ->maxLength(255),
                     'slug' => TextInput::make('slug')
                         ->required()
-                        ->unique(ignoreRecord: true),
-                ])
+                        ->unique(ignoreRecord: true)])
                 ->columns(2),
             /*
             'name_slug_group' => Group::make()
@@ -62,8 +61,7 @@ class MailTemplateResource extends LangBaseResource
                     TextInput::make('slug')
                         ->label('Slug')
                         ->required()
-                        ->unique(ignoreRecord: true),
-                ])
+                        ->unique(ignoreRecord: true)])
                 ->columns(2),
             */
 
@@ -77,15 +75,13 @@ class MailTemplateResource extends LangBaseResource
                 ->columnSpanFull(),
             'params_display' => View::make($paramsBadgesView)
                 ->viewData(static fn (mixed $record): array => [
-                    'params' => is_object($record) && isset($record->params) ? $record->params : [],
-                ])
+                    'params' => is_object($record) && isset($record->params) ? $record->params : []])
                 ->columnSpanFull()
                 ->visible(static fn (mixed $record): bool => is_object($record) && isset($record->params) && ! empty($record->params)),
             'text_template' => Textarea::make('text_template')
                 ->maxLength(65535)
                 ->columnSpanFull(),
             'sms_template' => Textarea::make('sms_template')
-                ->columnSpanFull(),
-        ];
+                ->columnSpanFull()];
     }
 }

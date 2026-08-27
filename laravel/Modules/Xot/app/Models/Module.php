@@ -37,7 +37,6 @@ use function Safe\json_encode;
  * @method static Builder|Module whereColors($value)
  * @method static Builder|Module whereIcon($value)
  *
- * @mixin IdeHelperModule
  * @mixin \Eloquent
  */
 class Module extends Model

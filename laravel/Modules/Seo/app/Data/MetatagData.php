@@ -7,25 +7,10 @@ namespace Modules\Seo\Data;
 use DateTimeInterface;
 use Illuminate\Support\Arr;
 use Livewire\Wireable;
-use DateTimeInterface;
-use Illuminate\Support\Arr;
-use Livewire\Wireable;
 use Spatie\LaravelData\Concerns\WireableData;
 use Spatie\LaravelData\Data;
 
 class MetatagData extends Data implements Wireable
-use BadMethodCallException;
-use DateTimeInterface;
-use Illuminate\Support\Arr;
-use Livewire\Wireable;
-use DateTimeInterface;
-use Illuminate\Support\Arr;
-use Livewire\Wireable;
-use Modules\Seo\Interfaces\MetatagDataInterface;
-use Spatie\LaravelData\Concerns\WireableData;
-use Spatie\LaravelData\Data;
-
-class MetatagData extends Data implements MetatagDataInterface, Wireable
 {
     use WireableData;
 
@@ -225,13 +210,6 @@ class MetatagData extends Data implements MetatagDataInterface, Wireable
      * Get extra metadata.
      */
     public function get(string $key, mixed $default = null): mixed
-     *
-     * @param  mixed  $default
-     * @return mixed
-     */
-    public function get(string $key, $default = null)
-     */
-    public function get(string $key, mixed $default = null): mixed
     {
         return Arr::get($this->data, $key, $default);
     }
@@ -242,25 +220,6 @@ class MetatagData extends Data implements MetatagDataInterface, Wireable
     public function has(string $key): bool
     {
         return Arr::has($this->data, $key);
-    }
-
-    /**
-     * Handle dynamic method calls.
-     *
-     * @param  array<int, mixed>  $parameters
-     * @return mixed
-     */
-    public function __call(string $method, array $parameters)
-    {
-        if (strpos($method, 'get') === 0) {
-            $key = lcfirst(substr($method, 3));
-
-            return $this->get($key, $parameters[0] ?? null);
-        }
-
-        throw new BadMethodCallException(sprintf(
-            'Method %s::%s does not exist.', static::class, $method
-        ));
     }
 
     /**
@@ -285,12 +244,6 @@ class MetatagData extends Data implements MetatagDataInterface, Wireable
 
     /**
      * Create a new instance from Livewire data.
-     */
-    public static function fromLivewire(mixed $value): self
-     *
-     * @param  mixed  $value
-     */
-    public static function fromLivewire($value): self
      */
     public static function fromLivewire(mixed $value): self
     {

@@ -265,9 +265,9 @@ class XotData extends Data implements Wireable
     public function getProfileByEmail(string $email): ProfileContract
     {
         $user = $this->getUserByEmail($email);
-        $profile = $this->getProfileModelByUserId($user->id);
+        Assert::string($user->id, '['.__LINE__.']['.class_basename($this).'] user id must be string');
 
-        return $profile;
+        return $this->getProfileModelByUserId($user->id);
     }
 
     /**
@@ -324,7 +324,7 @@ class XotData extends Data implements Wireable
 
     public function save(): void
     {
-        throw new \RuntimeException('Removed debug dddx');
+        throw new RuntimeException('Removed debug dddx');
     }
 
     public function getPubThemeViewPath(string $key = ''): string
@@ -334,7 +334,7 @@ class XotData extends Data implements Wireable
 
     public function getMailHtmlLayoutPath(string $key = ''): string
     {
-        return base_path('Themes/' . $this->pub_theme . '/resources/mail-layouts/' . $key);
+        return base_path('Themes/'.$this->pub_theme.'/resources/mail-layouts/'.$key);
     }
 
     public function getPubThemePublicPath(string $key = ''): string
@@ -416,10 +416,15 @@ class XotData extends Data implements Wireable
         $enum_class = $this->getUserChildTypeClass();
         Assert::classExists($enum_class);
         Assert::methodExists($enum_class, 'cases');
-        /** @var array<int, mixed> */
         $cases = $enum_class::cases();
+        Assert::isArray($cases);
 
-        return $enum_class::cases();
+        $result = [];
+        foreach ($cases as $case) {
+            $result[] = $case;
+        }
+
+        return $result;
 
         // $userInstance = app($user_class);
         // return $userInstance->getChildTypes();

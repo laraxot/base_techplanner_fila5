@@ -10,8 +10,7 @@ return [
         'group' => ['name' => 'Sistema', 'description' => 'Funzionalità per l\'invio di notifiche push tramite Firebase'],
         'label' => 'Invio Notifiche Push',
         'icon' => 'notify-push-animated',
-        'sort' => 51,
-    ],
+        'sort' => 51],
     'fields' => [
         'device_token' => ['label' => 'Token Dispositivo', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'type' => [
@@ -20,21 +19,17 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-            'placeholder' => 'type',
-        ],
+            'placeholder' => 'type'],
         'title' => ['label' => 'Titolo', 'tooltip' => '', 'helper_text' => '', 'description' => '', 'placeholder' => 'title'],
         'body' => ['label' => 'Contenuto', 'tooltip' => '', 'helper_text' => '', 'description' => '', 'placeholder' => 'body'],
         'data' => ['label' => 'Dati Aggiuntivi', 'description' => 'Dati in formato JSON da inviare con la notifica', 'tooltip' => '', 'helper_text' => '', 'placeholder' => 'data'],
         'deviceToken' => ['label' => 'deviceToken', 'placeholder' => 'deviceToken', 'helper_text' => 'deviceToken', 'description' => 'deviceToken'],
         'name' => ['label' => 'name', 'placeholder' => 'name', 'helper_text' => 'name', 'description' => 'name'],
-        'value' => ['label' => 'value', 'placeholder' => 'value', 'helper_text' => 'value', 'description' => 'value'],
-    ],
+        'value' => ['label' => 'value', 'placeholder' => 'value', 'helper_text' => 'value', 'description' => 'value']],
     'actions' => [
         'send' => ['label' => 'Invia Notifica', 'success' => 'Notifica push inviata con successo', 'error' => 'Errore durante l\'invio della notifica push'],
         'preview' => ['label' => 'Anteprima'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
-        'notificationFormActions' => ['label' => 'notificationFormActions', 'icon' => 'notificationFormActions', 'tooltip' => 'notificationFormActions'],
-    ],
+        'notificationFormActions' => ['label' => 'notificationFormActions', 'icon' => 'notificationFormActions', 'tooltip' => 'notificationFormActions']],
     'label' => 'Send Push Notification',
-    'plural_label' => 'Send Push Notification (Plurale)',
-];
+    'plural_label' => 'Send Push Notification (Plurale)'];

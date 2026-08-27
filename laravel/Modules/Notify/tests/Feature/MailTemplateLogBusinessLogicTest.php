@@ -9,11 +9,6 @@ use Modules\Notify\Database\Factories\MailTemplateLogFactory;
 use Modules\Notify\Models\MailTemplate;
 use Modules\Notify\Models\MailTemplateLog;
 use Modules\Notify\Tests\TestCase;
-use PHPUnit\Framework\Assert;
-
-use function Safe\json_encode;
-
-uses(\Modules\Notify\Tests\TestCase::class);
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 

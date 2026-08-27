@@ -87,8 +87,7 @@ final class SendGammuSMSAction implements SmsActionContract
             'TEXT',
             $to,
             '-text',
-            $tempFile,
-        ]);
+            $tempFile]);
 
         $process->setTimeout($this->gammuData->getTimeout());
 

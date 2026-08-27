@@ -3,19 +3,20 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Actions;
-use Modules\Notify\Tests\TestCase;
-use function Safe\file_get_contents;
+
 use Modules\Notify\Actions\EsendexSendAction;
 use Modules\Notify\Datas\SmsData;
+use Modules\Notify\Tests\TestCase;
+use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\class_uses;
 
-uses(\Modules\Notify\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('EsendexSendAction', function () {
-        it('can be instantiated', function () {
+    it('can be instantiated', function () {
         Assert::assertTrue(class_exists(EsendexSendAction::class));
     });
 

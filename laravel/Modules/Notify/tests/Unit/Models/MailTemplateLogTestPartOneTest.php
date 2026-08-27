@@ -26,9 +26,6 @@ use function Safe\json_encode;
 
 uses(TestCase::class);
 use Modules\Xot\Tests\XotBasePest;
-use PHPUnit\Framework\Assert;
-
-use function Safe\json_encode;
 
 uses(TestCase::class)->group('notify-db');
 
@@ -49,24 +46,20 @@ describe('Mail Template Log PartOne', function (): void {
             'data' => [
                 'to' => 'user@example.com',
                 'subject' => 'Welcome to our platform',
-                'template' => 'welcome_email',
-            ],
+                'template' => 'welcome_email'],
             'metadata' => [
                 'provider' => 'smtp',
                 'queue_id' => 'queue_789',
-                'attempts' => 1,
-            ],
+                'attempts' => 1],
             'sent_at' => now(),
-            'delivered_at' => now()->addMinutes(1),
-        ]);
+            'delivered_at' => now()->addMinutes(1)]);
         XotBasePest::assertTableHas('notify', 'mail_template_logs', [
             'id' => $log->id,
             'template_id' => 123,
             'mailable_type' => 'App\Mail\WelcomeMail',
             'mailable_id' => 456,
             'status' => 'sent',
-            'status_message' => 'Email sent successfully',
-        ]);
+            'status_message' => 'Email sent successfully']);
 
         Assert::assertInstanceOf(MailTemplateLog::class, $log);
     });
@@ -86,8 +79,7 @@ describe('Mail Template Log PartOne', function (): void {
             'delivered_at',
             'failed_at',
             'opened_at',
-            'clicked_at',
-        ];
+            'clicked_at'];
 
         Assert::assertEquals($expectedFillable, $log->getFillable());
     });
@@ -110,8 +102,7 @@ describe('Mail Template Log PartOne', function (): void {
             'delivered_at' => 'datetime',
             'failed_at' => 'datetime',
             'opened_at' => 'datetime',
-            'clicked_at' => 'datetime',
-        ];
+            'clicked_at' => 'datetime'];
 
         Assert::assertEquals($expectedCasts, $log->getCasts());
     });
@@ -127,21 +118,17 @@ describe('Mail Template Log PartOne', function (): void {
             'variables' => [
                 'name' => 'John Doe',
                 'company' => 'Example Corp',
-                'activation_link' => 'https://example.com/activate',
-            ],
-        ];
+                'activation_link' => 'https://example.com/activate']];
 
         $log = MailTemplateLog::create([
             'template_id' => 123,
             'mailable_type' => 'App\Mail\TestMail',
             'mailable_id' => 456,
             'status' => 'sent',
-            'data' => $data,
-        ]);
+            'data' => $data]);
         XotBasePest::assertTableHas('notify', 'mail_template_logs', [
             'id' => $log->id,
-            'data' => json_encode($data),
-        ]);
+            'data' => json_encode($data)]);
         Assert::assertEquals('user@example.com', $log->data['to']);
         Assert::assertEquals(['cc1@example.com', 'cc2@example.com'], $log->data['cc']);
         Assert::assertEquals('John Doe', TestCase::notifyArrayGet($log->data, 'variables', 'name'));
@@ -158,26 +145,21 @@ describe('Mail Template Log PartOne', function (): void {
             'error_details' => [
                 'code' => 'SMTP_ERROR',
                 'message' => 'Connection timeout',
-                'retry_count' => 2,
-            ],
+                'retry_count' => 2],
             'performance' => [
                 'queue_time' => 1500,
                 'processing_time' => 2500,
-                'total_time' => 4000,
-            ],
-        ];
+                'total_time' => 4000]];
 
         $log = MailTemplateLog::create([
             'template_id' => 123,
             'mailable_type' => 'App\Mail\TestMail',
             'mailable_id' => 456,
             'status' => 'failed',
-            'metadata' => $metadata,
-        ]);
+            'metadata' => $metadata]);
         XotBasePest::assertTableHas('notify', 'mail_template_logs', [
             'id' => $log->id,
-            'metadata' => json_encode($metadata),
-        ]);
+            'metadata' => json_encode($metadata)]);
         Assert::assertEquals('smtp', $log->metadata['provider']);
         Assert::assertEquals('queue_123', $log->metadata['queue_id']);
         Assert::assertEquals(3, $log->metadata['attempts']);
@@ -190,19 +172,16 @@ describe('Mail Template Log PartOne', function (): void {
             'template_id' => 123,
             'mailable_type' => 'App\Mail\TestMail',
             'mailable_id' => 456,
-            'status' => 'pending',
-        ]);
+            'status' => 'pending']);
 
         $log->update([
             'status' => 'sent',
             'sent_at' => now(),
-            'status_message' => 'Email sent successfully',
-        ]);
+            'status_message' => 'Email sent successfully']);
         XotBasePest::assertTableHas('notify', 'mail_template_logs', [
             'id' => $log->id,
             'status' => 'sent',
-            'status_message' => 'Email sent successfully',
-        ]);
+            'status_message' => 'Email sent successfully']);
 
         Assert::assertEquals('sent', XotBasePest::assertFreshModel($log, MailTemplateLog::class)->status);
         Assert::assertNotNull(XotBasePest::assertFreshModel($log, MailTemplateLog::class)->sent_at);
@@ -215,17 +194,14 @@ describe('Mail Template Log PartOne', function (): void {
             'mailable_type' => 'App\Mail\TestMail',
             'mailable_id' => 456,
             'status' => 'sent',
-            'sent_at' => now(),
-        ]);
+            'sent_at' => now()]);
 
         $log->update([
             'status' => 'delivered',
-            'delivered_at' => now()->addMinutes(1),
-        ]);
+            'delivered_at' => now()->addMinutes(1)]);
         XotBasePest::assertTableHas('notify', 'mail_template_logs', [
             'id' => $log->id,
-            'status' => 'delivered',
-        ]);
+            'status' => 'delivered']);
 
         Assert::assertEquals('delivered', XotBasePest::assertFreshModel($log, MailTemplateLog::class)->status);
         Assert::assertNotNull(XotBasePest::assertFreshModel($log, MailTemplateLog::class)->delivered_at);
@@ -236,19 +212,16 @@ describe('Mail Template Log PartOne', function (): void {
             'template_id' => 123,
             'mailable_type' => 'App\Mail\TestMail',
             'mailable_id' => 456,
-            'status' => 'pending',
-        ]);
+            'status' => 'pending']);
 
         $log->update([
             'status' => 'failed',
             'failed_at' => now(),
-            'status_message' => 'SMTP connection failed',
-        ]);
+            'status_message' => 'SMTP connection failed']);
         XotBasePest::assertTableHas('notify', 'mail_template_logs', [
             'id' => $log->id,
             'status' => 'failed',
-            'status_message' => 'SMTP connection failed',
-        ]);
+            'status_message' => 'SMTP connection failed']);
 
         Assert::assertEquals('failed', XotBasePest::assertFreshModel($log, MailTemplateLog::class)->status);
         Assert::assertNotNull(XotBasePest::assertFreshModel($log, MailTemplateLog::class)->failed_at);
@@ -261,16 +234,13 @@ describe('Mail Template Log PartOne', function (): void {
             'mailable_type' => 'App\Mail\TestMail',
             'mailable_id' => 456,
             'status' => 'delivered',
-            'delivered_at' => now(),
-        ]);
+            'delivered_at' => now()]);
 
         $log->update([
-            'opened_at' => now()->addMinutes(5),
-        ]);
+            'opened_at' => now()->addMinutes(5)]);
         XotBasePest::assertTableHas('notify', 'mail_template_logs', [
             'id' => $log->id,
-            'opened_at' => XotBasePest::assertFreshModel($log, MailTemplateLog::class)->opened_at,
-        ]);
+            'opened_at' => XotBasePest::assertFreshModel($log, MailTemplateLog::class)->opened_at]);
 
         Assert::assertNotNull(XotBasePest::assertFreshModel($log, MailTemplateLog::class)->opened_at);
     });

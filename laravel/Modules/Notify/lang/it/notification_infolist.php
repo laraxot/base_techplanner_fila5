@@ -27,6 +27,4 @@ return [
         'recipient' => ['label' => 'recipient'],
         'subject' => ['label' => 'subject'],
         'error_message' => ['label' => 'error_message'],
-        'metadata' => ['label' => 'metadata'],
-    ],
-];
+        'metadata' => ['label' => 'metadata']]];

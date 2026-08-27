@@ -7,6 +7,9 @@ namespace Modules\Xot\Traits;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Session;
 
+/**
+ * @phpstan-ignore trait.unused
+ */
 trait HasCsrfToken
 {
     /**

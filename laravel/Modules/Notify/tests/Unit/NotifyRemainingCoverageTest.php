@@ -77,8 +77,7 @@ describe('Notify remaining coverage sweep', function (): void {
     test('push device schedule and targeting actions execute offline', function (): void {
         config([
             'notify.fcm.server_key' => 'test-key',
-            'cache.default' => 'array',
-        ]);
+            'cache.default' => 'array']);
         Http::fake(['https://fcm.googleapis.com/*' => Http::response(['message_id' => 'x'], 200)]);
         Queue::fake();
 
@@ -112,8 +111,7 @@ describe('Notify remaining coverage sweep', function (): void {
             'from' => 'APP',
             'recipient' => 'user@example.test',
             'body' => 'Hello',
-            'channels' => ['mail'],
-        ]);
+            'channels' => ['mail']]);
         Assert::assertSame('user@example.test', $data->routeNotificationFor('mail', new NotifyNetfunNotificationStub()));
         Assert::assertInstanceOf(NotificationModel::class, $data->routeNotificationFor('database', new NotifyNetfunNotificationStub()));
         Assert::assertInstanceOf(SmsData::class, $data->getSmsData());
@@ -122,8 +120,7 @@ describe('Notify remaining coverage sweep', function (): void {
             'successCount' => 1,
             'errorCount' => 0,
             'errors' => collect([]),
-            'totalProcessed' => 1,
-        ]);
+            'totalProcessed' => 1]);
         $smsMessage = new SmsMessageData(recipient: '+390000000000', message: 'Hi');
         Assert::assertSame('+390000000000', $smsMessage->recipient);
         $smtp = SmtpData::from(['host' => 'smtp.test', 'port' => 25, 'username' => 'u', 'password' => 'p']);
@@ -135,8 +132,7 @@ describe('Notify remaining coverage sweep', function (): void {
     test('factories resolve or throw with clear errors', function (): void {
         config([
             'sms.default' => 'smsfactor',
-            'sms.drivers.smsfactor' => ['token' => 'test-token', 'api_url' => 'https://example.test/sms'],
-        ]);
+            'sms.drivers.smsfactor' => ['token' => 'test-token', 'api_url' => 'https://example.test/sms']]);
 
         try {
             $sms = (new SmsActionFactory())->create();
@@ -171,8 +167,7 @@ describe('Notify remaining coverage sweep', function (): void {
 
     test('notification channels handle missing routes gracefully', function (): void {
         config([
-            'sms.drivers.smsfactor' => ['token' => 'test-token', 'api_url' => 'https://example.test/sms'],
-        ]);
+            'sms.drivers.smsfactor' => ['token' => 'test-token', 'api_url' => 'https://example.test/sms']]);
 
         $notification = new NotifyNetfunNotificationStub();
         $notifiable = new NotifyNetfunNotifiableStub();
@@ -209,8 +204,7 @@ describe('Notify remaining coverage sweep', function (): void {
         foreach ([
             SendAgiletelecomSMSAction::class,
             SendAgiletelecomSMSv1Action::class,
-            SendAgiletelecomSMSv2Action::class,
-        ] as $class) {
+            SendAgiletelecomSMSv2Action::class] as $class) {
             Assert::assertTrue(class_exists($class));
             $ref = new ReflectionClass($class);
             Assert::assertTrue($ref->hasMethod('execute') || $ref->hasMethod('handle'));

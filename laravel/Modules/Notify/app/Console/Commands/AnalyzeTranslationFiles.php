@@ -85,7 +85,6 @@ class AnalyzeTranslationFiles extends Command
 
     /**
      * @param  array<string, mixed>  $array
-     *
      * @return array<string, mixed>
      */
     private function flattenArray(array $array, string $prefix = ''): array
@@ -139,8 +138,7 @@ class AnalyzeTranslationFiles extends Command
         foreach ($patterns as $pattern => $files) {
             $table->addRow([
                 $pattern,
-                implode(PHP_EOL, $files),
-            ]);
+                implode(PHP_EOL, $files)]);
         }
 
         $table->render();
@@ -256,8 +254,7 @@ class AnalyzeTranslationFiles extends Command
         foreach ($navigationStructures as $structure => $files) {
             $table->addRow([
                 $structure,
-                implode(PHP_EOL, $files),
-            ]);
+                implode(PHP_EOL, $files)]);
         }
 
         $table->render();

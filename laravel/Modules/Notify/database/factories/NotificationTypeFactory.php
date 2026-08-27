@@ -28,7 +28,6 @@ class NotificationTypeFactory extends Factory
             'description' => $this->faker->sentence(),
             'is_active' => $this->faker->boolean(90),
             'created_at' => $this->faker->dateTimeBetween('-1 year'),
-            'updated_at' => $this->faker->dateTimeBetween('-1 year'),
-        ];
+            'updated_at' => $this->faker->dateTimeBetween('-1 year')];
     }
 }

@@ -29,9 +29,8 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property int $version
  * @property string|null $created_by
  * @property string|null $change_notes
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
- *
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property-read Profile|null $creator
  * @property-read MediaCollection<int, Media> $media
  * @property-read int|null $media_count
@@ -61,8 +60,7 @@ class NotificationTemplateVersion extends BaseModel
         'conditions',
         'version',
         'created_by',
-        'change_notes',
-    ];
+        'change_notes'];
 
     /** @return BelongsTo<NotificationTemplate, $this> */
     public function template(): BelongsTo
@@ -84,8 +82,7 @@ class NotificationTemplateVersion extends BaseModel
             'body_text' => $this->body_text ?? null,
             'channels' => $this->channels ?? null,
             'variables' => $this->variables ?? null,
-            'conditions' => $this->conditions ?? null,
-        ]);
+            'conditions' => $this->conditions ?? null]);
 
         return $template;
     }
@@ -101,7 +98,6 @@ class NotificationTemplateVersion extends BaseModel
         return [
             'channels' => 'array',
             'variables' => 'array',
-            'conditions' => 'array',
-        ];
+            'conditions' => 'array'];
     }
 }

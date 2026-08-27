@@ -58,8 +58,7 @@ class GenericNotification extends Notification implements ShouldQueue
     /**
      * Ottiene i canali di consegna della notifica.
      *
-     * @param  mixed  $_notifiable  L'entità da notificare (oggetto che riceverà la notifica)
-     *
+     * @param  object  $_notifiable  L'entità da notificare (oggetto che riceverà la notifica)
      * @return array<int, string>
      */
     public function via(object $_notifiable): array
@@ -120,8 +119,7 @@ class GenericNotification extends Notification implements ShouldQueue
 
         return [
             'content' => $content,
-            'to' => $to,
-        ];
+            'to' => $to];
     }
 
     /**
@@ -135,8 +133,7 @@ class GenericNotification extends Notification implements ShouldQueue
             'title' => $this->title,
             'message' => $this->message,
             'data' => $this->data,
-            'created_at' => now()->toIso8601String(),
-        ];
+            'created_at' => now()->toIso8601String()];
     }
 
     /**

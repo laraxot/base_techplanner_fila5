@@ -9,10 +9,9 @@ use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Symfony\Component\Process\Process;
 
 use function Safe\preg_match;
-
-use Symfony\Component\Process\Process;
 
 /**
  * Comando per ottimizzare la memory usage di Filament.
@@ -28,7 +27,7 @@ class OptimizeFilamentMemoryCommand extends Command
     protected $signature = 'filament:optimize-memory 
                             {--clear-cache : Clear all caches before optimization}
                             {--analyze : Only analyze without applying changes}
-                            {--verbose : Show detailed output}';
+                            {--detailed : Show detailed output}';
 
     /**
      * The console command description.
@@ -47,14 +46,14 @@ class OptimizeFilamentMemoryCommand extends Command
 
         $analyzeOnly = (bool) $this->option('analyze');
         $clearCache = (bool) $this->option('clear-cache');
-        $verbose = (bool) $this->option('verbose');
+        $detailed = (bool) $this->option('detailed');
 
         if ($clearCache) {
             $this->clearAllCaches();
         }
 
         // Analizza i problemi di memoria
-        $issues = $this->analyzeMemoryIssues($verbose);
+        $issues = $this->analyzeMemoryIssues($detailed);
 
         if ($analyzeOnly) {
             $this->displayAnalysisResults($issues);
@@ -63,7 +62,7 @@ class OptimizeFilamentMemoryCommand extends Command
         }
 
         // Applica le ottimizzazioni
-        $this->applyOptimizations($issues, $verbose);
+        $this->applyOptimizations($issues, $detailed);
 
         $this->info('✅ Ottimizzazione completata!');
         $this->newLine();
@@ -104,7 +103,7 @@ class OptimizeFilamentMemoryCommand extends Command
      *
      * @return array<string, array<int, string>>
      */
-    private function analyzeMemoryIssues(bool $verbose = false): array
+    private function analyzeMemoryIssues(bool $detailed = false): array
     {
         $this->info('🔍 Analisi problemi di memoria...');
 
@@ -116,7 +115,7 @@ class OptimizeFilamentMemoryCommand extends Command
             'missing_pagination' => $this->findMissingPagination(),
         ];
 
-        if ($verbose) {
+        if ($detailed) {
             $this->displayDetailedIssues($issues);
         }
 
@@ -134,10 +133,10 @@ class OptimizeFilamentMemoryCommand extends Command
         $files = File::allFiles(base_path('Modules'));
 
         foreach ($files as $file) {
-            if ('php' === $file->getExtension() && str_contains($file->getPathname(), '/Models/')) {
+            if ($file->getExtension() === 'php' && str_contains($file->getPathname(), '/Models/')) {
                 $content = File::get($file->getPathname());
 
-                if (1 === preg_match('/protected\s+\$with\s*=\s*\[([^\]]+)\]/', $content, $matches)) {
+                if (preg_match('/protected\s+\$with\s*=\s*\[([^\]]+)\]/', $content, $matches) === 1) {
                     $withContent = $matches[1] ?? '';
                     // Controlla se ha relazioni pesanti
                     if (str_contains($withContent, 'roles')
@@ -164,7 +163,7 @@ class OptimizeFilamentMemoryCommand extends Command
         $files = File::allFiles(base_path('Modules'));
 
         foreach ($files as $file) {
-            if ('php' === $file->getExtension() && str_contains($file->getPathname(), '/Widgets/')) {
+            if ($file->getExtension() === 'php' && str_contains($file->getPathname(), '/Widgets/')) {
                 $content = File::get($file->getPathname());
 
                 // Cerca query senza limitazioni
@@ -190,7 +189,7 @@ class OptimizeFilamentMemoryCommand extends Command
         $files = File::allFiles(base_path('Modules'));
 
         foreach ($files as $file) {
-            if ('php' === $file->getExtension() && str_contains($file->getPathname(), '/Resources/') && str_ends_with($file->getFilename(), 'Resource.php')) {
+            if ($file->getExtension() === 'php' && str_contains($file->getPathname(), '/Resources/') && str_ends_with($file->getFilename(), 'Resource.php')) {
                 $content = File::get($file->getPathname());
 
                 // Cerca eager loading eccessivo
@@ -214,7 +213,7 @@ class OptimizeFilamentMemoryCommand extends Command
         $files = File::allFiles(base_path('Modules'));
 
         foreach ($files as $file) {
-            if ('php' === $file->getExtension() && (str_contains($file->getPathname(), '/Resources/') || str_contains($file->getPathname(), '/Forms/'))) {
+            if ($file->getExtension() === 'php' && (str_contains($file->getPathname(), '/Resources/') || str_contains($file->getPathname(), '/Forms/'))) {
                 $content = File::get($file->getPathname());
 
                 // Cerca query di migrazione nei form
@@ -240,7 +239,7 @@ class OptimizeFilamentMemoryCommand extends Command
         $files = File::allFiles(base_path('Modules'));
 
         foreach ($files as $file) {
-            if ('php' === $file->getExtension() && str_contains($file->getPathname(), '/Pages/List')) {
+            if ($file->getExtension() === 'php' && str_contains($file->getPathname(), '/Pages/List')) {
                 $content = File::get($file->getPathname());
 
                 // Cerca liste senza paginazione
@@ -256,7 +255,7 @@ class OptimizeFilamentMemoryCommand extends Command
     /**
      * Mostra i risultati dell'analisi.
      *
-     * @param array<string, array<int, string>> $issues
+     * @param  array<string, array<int, string>>  $issues
      */
     private function displayAnalysisResults(array $issues): void
     {
@@ -298,7 +297,7 @@ class OptimizeFilamentMemoryCommand extends Command
     /**
      * Mostra dettagli sui problemi trovati.
      *
-     * @param array<string, array<int, string>> $issues
+     * @param  array<string, array<int, string>>  $issues
      */
     private function displayDetailedIssues(array $issues): void
     {
@@ -317,9 +316,9 @@ class OptimizeFilamentMemoryCommand extends Command
     /**
      * Applica le ottimizzazioni.
      *
-     * @param array<string, array<int, string>> $issues
+     * @param  array<string, array<int, string>>  $issues
      */
-    private function applyOptimizations(array $issues, bool $verbose = false): void
+    private function applyOptimizations(array $issues, bool $detailed = false): void
     {
         $this->info('🔧 Applicazione ottimizzazioni...');
 
@@ -356,7 +355,7 @@ class OptimizeFilamentMemoryCommand extends Command
 
         // Ottimizza le tabelle MySQL se possibile
         try {
-            if ('mysql' === config('database.default')) {
+            if (config('database.default') === 'mysql') {
                 DB::statement('OPTIMIZE TABLE users');
                 // Aggiungi altre tabelle critiche se necessario
             }

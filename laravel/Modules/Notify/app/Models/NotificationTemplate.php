@@ -39,11 +39,8 @@ use Spatie\Translatable\HasTranslations;
  * @property Carbon $created_at
  * @property Carbon $updated_at
  * @property Carbon|null $deleted_at
- *
  * @property-read string $channels_label
- *
  * @property NotificationTypeEnum $type
- *
  * @property-read ProfileContract|null $creator
  * @property-read int|null $logs_count
  * @property-read MediaCollection<int, Media> $media
@@ -133,8 +130,7 @@ class NotificationTemplate extends BaseModel implements HasMedia
     public array $translatable = [
         'subject',
         'body_text',
-        'body_html',
-    ];
+        'body_html'];
 
     protected $fillable = [
         'name',
@@ -153,8 +149,7 @@ class NotificationTemplate extends BaseModel implements HasMedia
         'version',
         'tenant_id',
         'grapesjs_data',
-        'type',
-    ];
+        'type'];
 
     public function registerMediaCollections(): void
     {
@@ -202,7 +197,6 @@ class NotificationTemplate extends BaseModel implements HasMedia
      * Compile the template with the given data.
      *
      * @param  array<string, mixed>  $data  The data to compile the template with
-     *
      * @return array{subject: string, body_html: string|null, body_text: string|null}
      */
     public function compile(array $data = []): array
@@ -214,8 +208,7 @@ class NotificationTemplate extends BaseModel implements HasMedia
         return [
             'subject' => $subject ?? '',
             'body_html' => $bodyHtml,
-            'body_text' => $bodyText,
-        ];
+            'body_text' => $bodyText];
     }
 
     /**
@@ -243,7 +236,6 @@ class NotificationTemplate extends BaseModel implements HasMedia
      * Preview the template with the given data.
      *
      * @param  array<string, mixed>  $data  Additional data to merge with preview data
-     *
      * @return array{subject: string, body_html: string|null, body_text: string|null}
      */
     public function preview(array $data = []): array
@@ -261,7 +253,6 @@ class NotificationTemplate extends BaseModel implements HasMedia
      */
     /**
      * @param  Builder<static>  $query
-     *
      * @return Builder<static>
      */
     public function scopeActive(Builder $query): Builder
@@ -274,7 +265,6 @@ class NotificationTemplate extends BaseModel implements HasMedia
      */
     /**
      * @param  Builder<static>  $query
-     *
      * @return Builder<static>
      */
     public function scopeForChannel(Builder $query, string $channel): Builder
@@ -287,7 +277,6 @@ class NotificationTemplate extends BaseModel implements HasMedia
      */
     /**
      * @param  Builder<static>  $query
-     *
      * @return Builder<static>
      */
     public function scopeForCategory(Builder $query, string $category): Builder
@@ -388,8 +377,7 @@ class NotificationTemplate extends BaseModel implements HasMedia
             'conditions' => 'array',
             'metadata' => 'array',
             'is_active' => 'boolean',
-            'grapesjs_data' => 'array',
-        ];
+            'grapesjs_data' => 'array'];
     }
 
     /**

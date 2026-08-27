@@ -6,7 +6,7 @@ namespace Modules\Seo\Tests;
 
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\DB;
-use Modules\Fixcity\Models\User;
+use Modules\User\Models\User;
 use Modules\Xot\Tests\XotBaseTestCase;
 
 /**
@@ -20,14 +20,6 @@ abstract class TestCase extends XotBaseTestCase
     protected $connectionsToTransact = [
         'sqlite',
         'user',
-abstract class TestCase extends BaseTestCase
-{
-    use CreatesApplication;
-    use DatabaseTransactions;
-
-    protected $connectionsToTransact = [
-        'mysql',
-        'seo',
     ];
 
     protected function setUp(): void
@@ -60,10 +52,5 @@ abstract class TestCase extends BaseTestCase
         config(['auth.providers.users.model' => User::class]);
         config(['xra.pub_theme' => 'Meetup']);
         config(['xra.main_module' => 'Seo']);
-        config(['xra.pub_theme' => 'Meetup']);
-        config(['xra.main_module' => 'Seo']);
-
-        // Ensure Seo config is loaded/set if needed for tests
-        // config(['seo.default_title' => 'Test Site']);
     }
 }

@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit;
+
 use Illuminate\Database\Eloquent\Model;
 use Modules\Notify\Notifications\GenericNotification;
 use Modules\Notify\Tests\TestCase;
@@ -37,8 +38,7 @@ describe('GenericNotification getRecipientName', function (): void {
         $model = new class() extends Model
         {
             protected $attributes = [
-                'full_name' => 'Jane Roe',
-            ];
+                'full_name' => 'Jane Roe'];
         };
 
         $ref = new \ReflectionClass(GenericNotification::class);

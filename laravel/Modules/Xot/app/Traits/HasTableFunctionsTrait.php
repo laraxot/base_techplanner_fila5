@@ -10,6 +10,9 @@ use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * @phpstan-ignore trait.unused
+ */
 trait HasTableFunctionsTrait
 {
     /**
@@ -42,7 +45,9 @@ trait HasTableFunctionsTrait
                 ])),
             'delete' => Action::make('delete')
                 ->label('Elimina')
-                ->action(fn ($record) => $record->delete())
+                ->action(function (Model $record): void {
+                    $record->delete();
+                })
                 ->requiresConfirmation(),
         ];
     }
@@ -57,7 +62,13 @@ trait HasTableFunctionsTrait
         return [
             'delete' => BulkAction::make('delete')
                 ->label('Elimina selezionati')
-                ->action(fn ($records) => $records->each->delete())
+                ->action(function (iterable $records): void {
+                    foreach ($records as $record) {
+                        if ($record instanceof Model) {
+                            $record->delete();
+                        }
+                    }
+                })
                 ->requiresConfirmation(),
         ];
     }

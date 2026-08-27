@@ -11,6 +11,8 @@ use Illuminate\Support\Str;
  *
  * Adds a separate 'uuid' column that is automatically generated on creation.
  * This is NOT for using UUID as the primary key.
+ *
+ * @phpstan-ignore trait.unused
  */
 trait HasUuid
 {

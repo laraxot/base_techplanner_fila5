@@ -256,18 +256,6 @@ class XotServiceProvider extends XotBaseServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([
                 GenerateFilamentResources::class,
-                // \Modules\Xot\Console\Commands\OptimizeFilamentMemoryCommand::class,
-            ]);
-        }
-    }
-
-    /**
-     * Register optimization console commands.
-     */
-    private function registerOptimizationCommands(): void
-    {
-        if ($this->app->runningInConsole()) {
-            $this->commands([
                 OptimizeFilamentMemoryCommand::class,
             ]);
         }

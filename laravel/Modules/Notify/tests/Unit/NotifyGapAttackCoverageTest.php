@@ -41,8 +41,7 @@ afterEach(function (): void {
 describe('Notify gap attack — highest miss providers', function (): void {
     test('HTTP SMS WhatsApp Telegram actions con Http::fake', function (): void {
         Http::fake([
-            '*' => Http::response(['ok' => true, 'sid' => 'SM123', 'message_id' => '1'], 200),
-        ]);
+            '*' => Http::response(['ok' => true, 'sid' => 'SM123', 'message_id' => '1'], 200)]);
 
         config([
             'notify.sms.twilio.sid' => 'AC123',
@@ -56,8 +55,7 @@ describe('Notify gap attack — highest miss providers', function (): void {
             'services.nexmo.key' => 'key',
             'services.nexmo.secret' => 'secret',
             'services.plivo.auth_id' => 'id',
-            'services.plivo.auth_token' => 'token',
-        ]);
+            'services.plivo.auth_token' => 'token']);
 
         $payload = [
             'to' => '+393331112233',
@@ -66,8 +64,7 @@ describe('Notify gap attack — highest miss providers', function (): void {
             'message' => 'test message',
             'phone' => '+393331112233',
             'chat_id' => '123',
-            'text' => 'hello',
-        ];
+            'text' => 'hello'];
 
         foreach ([
             SendTwilioSMSAction::class,
@@ -80,8 +77,7 @@ describe('Notify gap attack — highest miss providers', function (): void {
             SendOfficialTelegramAction::class,
             SendNutgramTelegramAction::class,
             SendBotmanTelegramAction::class,
-            EsendexSendAction::class,
-        ] as $class) {
+            EsendexSendAction::class] as $class) {
             if (! class_exists($class)) {
                 continue;
             }
@@ -174,7 +170,7 @@ describe('Notify gap attack — highest miss providers', function (): void {
             Assert::assertTrue(class_exists(SmsService::class));
         }
 
-        $messaging = $this->createStub(Messaging::class);
+        $messaging = $this->createUnitMock(Messaging::class);
         $channel = new FirebaseCloudMessagingChannel($messaging);
         Assert::assertInstanceOf(FirebaseCloudMessagingChannel::class, $channel);
     });

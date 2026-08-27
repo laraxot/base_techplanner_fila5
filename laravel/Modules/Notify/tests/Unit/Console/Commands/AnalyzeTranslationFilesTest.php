@@ -3,14 +3,14 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Console\Commands;
+
 use Illuminate\Console\Command;
 use Modules\Notify\Console\Commands\AnalyzeTranslationFiles;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Notify\Tests\TestCase::class);
+uses(TestCase::class);
 use Modules\Xot\Tests\XotBasePest;
-use PHPUnit\Framework\Assert;
 
 uses(TestCase::class)->group('no-notify-db');
 
@@ -79,9 +79,7 @@ describe('AnalyzeTranslationFiles', function () {
         $input = [
             'parent' => [
                 'child1' => 'value1',
-                'child2' => 'value2',
-            ],
-        ];
+                'child2' => 'value2']];
 
         $result = XotBasePest::assertArray($method->invoke($command, $input));
 
@@ -112,10 +110,7 @@ describe('AnalyzeTranslationFiles', function () {
         $input = [
             'level1' => [
                 'level2' => [
-                    'level3' => 'deep value',
-                ],
-            ],
-        ];
+                    'level3' => 'deep value']]];
 
         $result = XotBasePest::assertArray($method->invoke($command, $input));
 

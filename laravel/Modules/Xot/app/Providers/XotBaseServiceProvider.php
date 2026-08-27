@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Providers;
 
-use BladeUI\Icons\Exceptions\CannotRegisterIconSet;
 use BladeUI\Icons\Factory as BladeIconsFactory;
 use Exception;
 use Illuminate\Support\Facades\Blade;
@@ -171,7 +170,12 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
             $files = File::glob($configPath.'/*.php');
 
+            if ($files === false) {
+                return;
+            }
+
             foreach ($files as $file) {
+                Assert::string($file);
                 $content = File::getRequire($file);
                 $info = pathinfo($file);
                 $key = $this->nameLower.'::'.$info['filename'];
@@ -188,7 +192,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         $componentViewPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, 'component-view');
         try {
             Blade::anonymousComponentPath($componentViewPath);
-        } catch (Exception|CannotRegisterIconSet $e) {
+        } catch (Exception $e) {
             // Ignore missing component view path
             dddx([
                 'name' => $this->name,

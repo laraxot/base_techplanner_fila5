@@ -62,8 +62,7 @@ final class SendNexmoSMSAction implements SmsActionContract
     public function execute(SmsData $smsData): array
     {
         $headers = [
-            'Content-Type' => 'application/x-www-form-urlencoded',
-        ];
+            'Content-Type' => 'application/x-www-form-urlencoded'];
 
         // Normalizza il numero di telefono
         $to = (string) $smsData->recipient;
@@ -79,8 +78,7 @@ final class SendNexmoSMSAction implements SmsActionContract
 
         $client = new Client([
             'timeout' => $this->nexmoData->getTimeout(),
-            'headers' => $headers,
-        ]);
+            'headers' => $headers]);
 
         try {
             $response = $client->post($this->nexmoData->getBaseUrl().'/sms/json', [
@@ -90,9 +88,7 @@ final class SendNexmoSMSAction implements SmsActionContract
                     'to' => $to,
                     'from' => $from,
                     'text' => $smsData->body,
-                    'type' => 'unicode',
-                ],
-            ]);
+                    'type' => 'unicode']]);
 
             $this->vars['status_code'] = $response->getStatusCode();
             $this->vars['status_txt'] = $response->getBody()->getContents();

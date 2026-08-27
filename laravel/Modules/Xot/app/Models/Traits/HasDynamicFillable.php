@@ -7,41 +7,27 @@ namespace Modules\Xot\Models\Traits;
 use BackedEnum;
 use UnitEnum;
 
+/**
+ * Aggiunge al fillable i value/name di enum dichiarati dal modello consumatore.
+ *
+ * Override `getDynamicFillableEnums()` nel modello (vedi Client).
+ *
+ * @phpstan-ignore trait.unused
+ */
 trait HasDynamicFillable
 {
     /**
-     * Overrides the default getFillable method to include fields from specified Enums.
-     *
-     * Models using this trait should define a protected array property `$dynamicFillableEnums`
-     * containing the fully qualified class names of Enums whose cases should be added to fillable.
-     *
-     * Example: protected array $dynamicFillableEnums = [AddressItemEnum::class, ContactTypeEnum::class];
-     *
      * @return list<string>
      */
     public function getFillable(): array
     {
         $fillable = array_values(parent::getFillable());
 
-        $dynamicFillableEnums = $this->dynamicFillableEnums ?? null;
-
-        // Ensure the property is an array
-        if (! is_array($dynamicFillableEnums)) {
-            return $fillable;
-        }
-
-        foreach ($dynamicFillableEnums as $enumClass) {
-            if (! is_string($enumClass) || $enumClass === '') {
+        foreach ($this->getDynamicFillableEnums() as $enumClass) {
+            if ($enumClass === '' || ! enum_exists($enumClass)) {
                 continue;
             }
 
-            // Basic validation for enum class
-            if (! enum_exists($enumClass)) {
-                continue; // Skip invalid enum classes
-            }
-
-            // Get enum cases' values and merge
-            $enumCases = $enumClass::cases();
             $enumFields = array_map(
                 static function (UnitEnum $item): string {
                     if ($item instanceof BackedEnum) {
@@ -50,13 +36,20 @@ trait HasDynamicFillable
 
                     return $item->name;
                 },
-                $enumCases,
+                $enumClass::cases(),
             );
 
             $fillable = array_merge($fillable, array_values($enumFields));
         }
 
-        // Ensure unique values and reset keys for cleanliness
         return array_values(array_unique($fillable));
+    }
+
+    /**
+     * @return array<int, class-string<UnitEnum>>
+     */
+    protected function getDynamicFillableEnums(): array
+    {
+        return [];
     }
 }

@@ -69,8 +69,7 @@ final class SendNetfunSMSAction implements SmsActionContract
     {
         $headers = [
             'Cache-Control' => 'no-cache',
-            'Content-Type' => 'application/json',
-        ];
+            'Content-Type' => 'application/json'];
 
         // Normalizza il numero di telefono usando l'azione dedicata
         $recipient = app(NormalizePhoneNumberAction::class)->execute($smsData->recipient);
@@ -86,10 +85,7 @@ final class SendNetfunSMSAction implements SmsActionContract
             'utf8_enabled' => true,
             'destinations' => [
                 [
-                    'number' => $recipient,
-                ],
-            ],
-        ];
+                    'number' => $recipient]]];
 
         $client = new Client($headers);
         try {
@@ -108,8 +104,7 @@ final class SendNetfunSMSAction implements SmsActionContract
         Log::channel('daily')->error('Netfun SMS response', [
             'request' => $body,
             'status_code' => $this->vars['status_code'],
-            'status_txt' => $this->vars['status_txt'],
-        ]);
+            'status_txt' => $this->vars['status_txt']]);
 
         return $this->vars;
     }

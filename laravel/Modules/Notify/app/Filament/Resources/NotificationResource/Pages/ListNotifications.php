@@ -28,8 +28,7 @@ class ListNotifications extends XotBaseListRecords
             'data' => TextColumn::make('data')->searchable(),
             'read_at' => TextColumn::make('read_at')->dateTime()->sortable(),
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
-            'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable(),
-        ];
+            'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable()];
     }
 
     /**
@@ -49,10 +48,8 @@ class ListNotifications extends XotBaseListRecords
                     'info' => 'Info',
                     'success' => 'Success',
                     'warning' => 'Warning',
-                    'error' => 'Error',
-                ])
-                ->multiple(),
-        ];
+                    'error' => 'Error'])
+                ->multiple()];
     }
 
     #[Override]

@@ -20,8 +20,7 @@ class EmailTemplate extends Model
      */
     protected $fillable = [
         'name', 'subject', 'content', 'variables',
-        'categories', 'version', 'is_active',
-    ];
+        'categories', 'version', 'is_active'];
 
     /**
      * Get the attributes that should be cast.
@@ -32,7 +31,6 @@ class EmailTemplate extends Model
     {
         return [
             'variables' => 'array',
-            'categories' => 'array',
-        ];
+            'categories' => 'array'];
     }
 }

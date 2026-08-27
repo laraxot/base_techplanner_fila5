@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 
 /**
@@ -17,6 +18,8 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  *
  * @see https://github.com/spatie/laravel-schemaless-attributes
  * @see https://github.com/spatie/laravel-schemaless-attributes
+ *
+ * @phpstan-ignore trait.unused
  */
 trait HasSchemalessAttributes
 {
@@ -37,15 +40,24 @@ trait HasSchemalessAttributes
      *
      * @return array<string, string>
      */
+    /**
+     * @return array<string, string>
+     */
     protected function schemalessCasts(): array
     {
-        return array_merge($this->casts ?? [], [
+        /** @var array<string, string> $casts */
+        $casts = is_array($this->casts) ? $this->casts : [];
+
+        return array_merge($casts, [
             'extra_attributes' => SchemalessAttributes::class,
         ]);
     }
 
     /**
      * Scope per filtrare per attributi schemaless.
+     *
+     * @param  Builder<Model>  $query
+     * @return Builder<Model>
      */
     public function scopeWithExtraAttributes(Builder $query): Builder
     {
@@ -58,6 +70,9 @@ trait HasSchemalessAttributes
 
     /**
      * Scope per query specifiche su extra_attributes.
+     *
+     * @param  Builder<Model>  $query
+     * @return Builder<Model>
      */
     public function scopeWhereExtraAttribute(Builder $query, string $key, mixed $value): Builder
     {
@@ -77,8 +92,11 @@ trait HasSchemalessAttributes
      */
     public function setExtraAttribute(string $key, mixed $value): void
     {
-        if (! $this->extra_attributes) {
-            $this->extra_attributes = new SchemalessAttributes();
+        if ($this->extra_attributes === null) {
+            // Spatie expects model+attribute; prefer attribute mutation when cast is configured.
+            $this->setAttribute('extra_attributes', [$key => $value]);
+
+            return;
         }
 
         $this->extra_attributes->set($key, $value);
@@ -91,7 +109,10 @@ trait HasSchemalessAttributes
      */
     public function getExtraAttributes(): array
     {
-        return $this->extra_attributes?->all() ?? [];
+        /** @var array<string, mixed> $all */
+        $all = $this->extra_attributes?->all() ?? [];
+
+        return $all;
     }
 
     /**
@@ -107,7 +128,7 @@ trait HasSchemalessAttributes
      */
     public function removeExtraAttribute(string $key): void
     {
-        $this->extra_attributes->forget($key);
+        $this->extra_attributes?->forget($key);
     }
 
     /**

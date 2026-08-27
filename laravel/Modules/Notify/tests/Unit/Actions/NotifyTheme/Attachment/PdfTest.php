@@ -10,11 +10,10 @@ use Modules\Notify\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 use Spatie\QueueableAction\QueueableAction;
+
 use function Safe\class_uses;
 
 uses(TestCase::class);
-
-use function Safe\class_uses;
 
 uses(TestCase::class)->group('notify-db');
 

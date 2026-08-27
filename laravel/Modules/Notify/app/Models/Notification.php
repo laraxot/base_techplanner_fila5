@@ -39,7 +39,6 @@ use Override;
  * @property list<string>|null $channels
  * @property string|null $status
  * @property Carbon|null $sent_at
- *
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $updater
  *
@@ -78,8 +77,7 @@ class Notification extends BaseModel
         'channels',
         'status',
         'sent_at',
-        'data',
-    ];
+        'data'];
 
     /**
      * Get the attributes that should be cast.
@@ -96,7 +94,6 @@ class Notification extends BaseModel
             'channels' => 'array',
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
-            'deleted_at' => 'datetime',
-        ];
+            'deleted_at' => 'datetime'];
     }
 }

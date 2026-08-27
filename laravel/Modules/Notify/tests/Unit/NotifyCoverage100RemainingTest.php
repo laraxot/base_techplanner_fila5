@@ -84,8 +84,7 @@ describe('Notify coverage 100 — final sweep', function (): void {
             SendPushNotificationPage::class,
             SendTelegram::class,
             SendEmail::class,
-            TestSmtpPage::class,
-        ] as $class) {
+            TestSmtpPage::class] as $class) {
             $page = notifyPageWithoutConstructor($class);
             $ref = new ReflectionClass($class);
             foreach (['getForms', 'getNotificationFormActions', 'fillForms'] as $method) {
@@ -107,8 +106,7 @@ describe('Notify coverage 100 — final sweep', function (): void {
         Http::fake(['*' => Http::response(['ok' => true], 200)]);
         config([
             'notify.default_channel' => 'mail',
-            'notify.channels.mail.driver' => 'log',
-        ]);
+            'notify.channels.mail.driver' => 'log']);
 
         $manager = new NotificationManager();
         $recipient = new class() extends Model

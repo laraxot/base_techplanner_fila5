@@ -3,13 +3,12 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Datas;
+
 use Modules\Notify\Datas\EmailData;
 use Modules\Notify\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 use Spatie\LaravelData\Data;
-use Modules\Xot\Tests\XotBasePest;
-use Modules\Notify\Tests\TestCase;
 
 describe('EmailData', function () {
     it('can be instantiated via reflection without constructor', function () {

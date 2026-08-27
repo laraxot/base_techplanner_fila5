@@ -45,8 +45,7 @@ class NetfunSendAction
         $endpoint = 'https://v2.smsviainternet.it/api/rest/v1/sms-batch.json';
         $headers = [
             'Cache-Control' => 'no-cache',
-            'Content-Type' => 'application/json',
-        ];
+            'Content-Type' => 'application/json'];
 
         // dddx([ord($this->body[0]), $this->body]);
 
@@ -83,9 +82,7 @@ class NetfunSendAction
                      * 'code' => '1234',
                      * ],
                      */
-                ],
-            ],
-        ];
+                ]]];
 
         // dddx($body);
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Mockery\CompositeExpectation;
+use Mockery\Expectation;
 use Mockery\MockInterface;
 
 if (! function_exists('typedMock')) {

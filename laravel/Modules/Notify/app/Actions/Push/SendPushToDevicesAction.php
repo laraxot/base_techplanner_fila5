@@ -39,15 +39,13 @@ class SendPushToDevicesAction
             } catch (Exception $e) {
                 Log::error("Batch push notification failed for platform {$platform}", [
                     'error' => $e->getMessage(),
-                    'token_count' => count($platformTokens),
-                ]);
+                    'token_count' => count($platformTokens)]);
 
                 $results[$platform] = [
                     'success' => false,
                     'error' => $e->getMessage(),
                     'sent' => 0,
-                    'failed' => count($platformTokens),
-                ];
+                    'failed' => count($platformTokens)];
             }
         }
 
@@ -80,8 +78,7 @@ class SendPushToDevicesAction
                 $results[] = [
                     'success' => false,
                     'error' => $e->getMessage(),
-                    'token' => $token,
-                ];
+                    'token' => $token];
             }
         }
 
@@ -90,8 +87,7 @@ class SendPushToDevicesAction
             'sent' => $successCount,
             'failed' => $failureCount,
             'total' => count($tokens),
-            'results' => $results,
-        ];
+            'results' => $results];
     }
 
     /**

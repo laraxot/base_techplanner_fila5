@@ -8,7 +8,6 @@ use Filament\Forms\Components\Textarea;
 use Filament\Schemas\Components\Component;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
-use Illuminate\Support\Str;
 use Modules\Xot\Contracts\StateContract;
 use Modules\Xot\Filament\Traits\TransTrait;
 use Override;
@@ -19,6 +18,8 @@ use Spatie\ModelStates\State;
  *
  * Defines the state machine configuration and required methods
  * that must be implemented by each concrete state class.
+ *
+ * @extends State<Model>
  *
  * @property string $name Il nome dello stato
  * @property string $value Il valore dello stato nel database
@@ -31,8 +32,7 @@ abstract class XotBaseState extends State implements StateContract
 
     public static function getName(): string
     {
-        /* @phpstan-ignore-next-line */
-        return static::$name ?? Str::of(class_basename(static::class))->snake()->toString();
+        return static::$name;
     }
 
     #[Override]
@@ -186,15 +186,21 @@ abstract class XotBaseState extends State implements StateContract
         return false;
     }
 
+    /**
+     * @return array<string, string>
+     */
     public static function getOptions(): array
     {
         $states = static::getStateMapping()->toArray();
+        $options = [];
 
-        $states = Arr::map($states, fn ($_stateClass, $state) => static::transClass(
-            static::class,
-            'states.'.$state.'.label',
-        ));
+        foreach ($states as $state => $_stateClass) {
+            $options[(string) $state] = static::transClass(
+                static::class,
+                'states.'.$state.'.label',
+            );
+        }
 
-        return $states;
+        return $options;
     }
 }

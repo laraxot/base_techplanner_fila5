@@ -8,10 +8,6 @@ use Filament\Schemas\Components\Component;
 use Modules\Seo\Actions\GenerateSocialShareLinksAction;
 use Modules\Seo\Datas\SocialShareData;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
-use Filament\Schemas\Components\Component;
-use Modules\Seo\Actions\GenerateSocialShareLinksAction;
-use Modules\Seo\Data\SocialShareData;
-use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
  * Filament widget for social sharing.
@@ -35,7 +31,7 @@ class SocialShareWidget extends XotBaseSchemaWidget
     /**
      * Get the form schema.
      *
-     * @return array<int|string, \Filament\Schemas\Components\Component>
+     * @return array<int|string, Component>
      */
     public function getFormSchema(): array
     {

@@ -15,6 +15,9 @@ use Override;
 
 use function Safe\json_encode;
 
+/**
+ * @implements Arrayable<string, string>
+ */
 readonly class ApplicationError implements Arrayable, Jsonable, JsonSerializable
 {
     public function __construct(
@@ -22,6 +25,9 @@ readonly class ApplicationError implements Arrayable, Jsonable, JsonSerializable
         private string $error = '',
     ) {}
 
+    /**
+     * @return array<string, string>
+     */
     public function toArray(): array
     {
         return [
@@ -30,6 +36,9 @@ readonly class ApplicationError implements Arrayable, Jsonable, JsonSerializable
         ];
     }
 
+    /**
+     * @return array<string, string>
+     */
     #[Override]
     public function jsonSerialize(): array
     {

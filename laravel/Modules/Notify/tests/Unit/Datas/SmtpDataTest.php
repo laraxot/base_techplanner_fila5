@@ -3,11 +3,11 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Datas;
+
 use Modules\Notify\Datas\SmtpData;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 use Spatie\LaravelData\Data;
-use Modules\Xot\Tests\XotBasePest;
 
 describe('SmtpData', function () {
     it('can be referenced via reflection without instantiation', function () {

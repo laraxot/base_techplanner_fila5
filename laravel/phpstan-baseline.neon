@@ -1,0 +1,1008 @@
+parameters:
+	ignoreErrors:
+
+
+
+
+		-
+			rawMessage: 'Method Modules\Notify\Tests\Unit\Traits\NotifyTenantDummyModel::applyForTenantScope() should return Illuminate\Database\Eloquent\Builder<Modules\Notify\Tests\Unit\Traits\NotifyTenantDummyModel> but returns Illuminate\Database\Eloquent\Builder<Illuminate\Database\Eloquent\Model>.'
+			identifier: return.type
+			count: 1
+			path: Modules/Notify/tests/Unit/Traits/NotifyTenantDummyModel.php
+
+		-
+			rawMessage: 'Method Modules\Notify\Tests\Unit\Traits\NotifyTenantDummyModel::notifications() should return Illuminate\Database\Eloquent\Relations\MorphMany<Modules\Notify\Models\NotificationLog, Illuminate\Database\Eloquent\Model> but returns Illuminate\Database\Eloquent\Relations\MorphMany<Modules\Notify\Models\NotificationLog, $this(Modules\Notify\Tests\Unit\Traits\NotifyTenantDummyModel)>.'
+			identifier: return.type
+			count: 1
+			path: Modules/Notify/tests/Unit/Traits/NotifyTenantDummyModel.php
+
+		-
+			rawMessage: 'Method Modules\Notify\Tests\Unit\Traits\NotifyTenantDummyModel::readNotifications() should return Illuminate\Database\Eloquent\Relations\MorphMany<Modules\Notify\Models\NotificationLog, Illuminate\Database\Eloquent\Model> but returns Illuminate\Database\Eloquent\Relations\MorphMany<Modules\Notify\Models\NotificationLog, $this(Modules\Notify\Tests\Unit\Traits\NotifyTenantDummyModel)>.'
+			identifier: return.type
+			count: 1
+			path: Modules/Notify/tests/Unit/Traits/NotifyTenantDummyModel.php
+
+		-
+			rawMessage: 'Method Modules\Notify\Tests\Unit\Traits\NotifyTenantDummyModel::unreadNotifications() should return Illuminate\Database\Eloquent\Relations\MorphMany<Modules\Notify\Models\NotificationLog, Illuminate\Database\Eloquent\Model> but returns Illuminate\Database\Eloquent\Relations\MorphMany<Modules\Notify\Models\NotificationLog, $this(Modules\Notify\Tests\Unit\Traits\NotifyTenantDummyModel)>.'
+			identifier: return.type
+			count: 1
+			path: Modules/Notify/tests/Unit/Traits/NotifyTenantDummyModel.php
+
+		-
+			rawMessage: 'Parameter #1 $query of method Modules\Notify\Tests\Unit\Traits\NotifyTenantDummyModel::scopeForTenant() expects Illuminate\Database\Eloquent\Builder<Illuminate\Database\Eloquent\Model>, Illuminate\Database\Eloquent\Builder<Modules\Notify\Tests\Unit\Traits\NotifyTenantDummyModel> given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/Notify/tests/Unit/Traits/NotifyTenantDummyModel.php
+
+		-
+			rawMessage: 'Method Modules\Notify\Tests\Unit\Traits\NotifyTenantDummyModel::notifications() return type with generic class Illuminate\Database\Eloquent\Relations\MorphMany does not specify its types: TRelatedModel, TDeclaringModel'
+			identifier: missingType.generics
+			count: 1
+			path: Modules/Notify/tests/Unit/Traits/NotifyTraitTestDoubles.php
+
+		-
+			rawMessage: 'Method Modules\Notify\Tests\Unit\Traits\NotifyTenantDummyModel::readNotifications() return type with generic class Illuminate\Database\Eloquent\Relations\MorphMany does not specify its types: TRelatedModel, TDeclaringModel'
+			identifier: missingType.generics
+			count: 1
+			path: Modules/Notify/tests/Unit/Traits/NotifyTraitTestDoubles.php
+
+		-
+			rawMessage: 'Method Modules\Notify\Tests\Unit\Traits\NotifyTenantDummyModel::scopeForTenant() has parameter $query with generic class Illuminate\Database\Eloquent\Builder but does not specify its types: TModel'
+			identifier: missingType.generics
+			count: 1
+			path: Modules/Notify/tests/Unit/Traits/NotifyTraitTestDoubles.php
+
+		-
+			rawMessage: 'Method Modules\Notify\Tests\Unit\Traits\NotifyTenantDummyModel::scopeForTenant() return type with generic class Illuminate\Database\Eloquent\Builder does not specify its types: TModel'
+			identifier: missingType.generics
+			count: 1
+			path: Modules/Notify/tests/Unit/Traits/NotifyTraitTestDoubles.php
+
+		-
+			rawMessage: 'Method Modules\Notify\Tests\Unit\Traits\NotifyTenantDummyModel::unreadNotifications() return type with generic class Illuminate\Database\Eloquent\Relations\MorphMany does not specify its types: TRelatedModel, TDeclaringModel'
+			identifier: missingType.generics
+			count: 1
+			path: Modules/Notify/tests/Unit/Traits/NotifyTraitTestDoubles.php
+
+		-
+			rawMessage: 'Call to static method assertArrayHasKey() on an unknown class Modules\Seo\Tests\Unit\Actions\Assert.'
+			identifier: class.notFound
+			count: 1
+			path: Modules/Seo/tests/Unit/Actions/GenerateSocialShareLinksActionTest.php
+
+		-
+			rawMessage: 'Call to static method assertSame() on an unknown class Modules\Seo\Tests\Unit\Actions\Assert.'
+			identifier: class.notFound
+			count: 1
+			path: Modules/Seo/tests/Unit/Actions/GenerateSocialShareLinksActionTest.php
+
+		-
+			rawMessage: 'Call to static method assertStringContainsString() on an unknown class Modules\Seo\Tests\Unit\Actions\Assert.'
+			identifier: class.notFound
+			count: 3
+			path: Modules/Seo/tests/Unit/Actions/GenerateSocialShareLinksActionTest.php
+
+		-
+			rawMessage: 'Call to static method from() on an unknown class Modules\Seo\Tests\Unit\Actions\SocialShareData.'
+			identifier: class.notFound
+			count: 2
+			path: Modules/Seo/tests/Unit/Actions/GenerateSocialShareLinksActionTest.php
+
+		-
+			rawMessage: 'Parameter #1 $data of method Modules\Seo\Actions\GenerateSocialShareLinksAction::execute() expects Modules\Seo\Datas\SocialShareData, mixed given.'
+			identifier: argument.type
+			count: 3
+			path: Modules/Seo/tests/Unit/Actions/GenerateSocialShareLinksActionTest.php
+
+		-
+			rawMessage: 'Undefined variable: $data'
+			identifier: variable.undefined
+			count: 1
+			path: Modules/Seo/tests/Unit/Actions/GenerateSocialShareLinksActionTest.php
+
+		-
+			rawMessage: 'Offset ''10'' does not exist on non-empty-array<string, string>.'
+			identifier: offsetAccess.notFound
+			count: 1
+			path: Modules/Seo/tests/Unit/Data/MetatagDataTest.php
+
+		-
+			rawMessage: 'Unable to resolve the template type TAndValue in call to method Pest\Expectation<string>::and()'
+			identifier: argument.templateType
+			count: 1
+			path: Modules/Seo/tests/Unit/Data/MetatagDataTest.php
+
+		-
+			rawMessage: 'Undefined variable: $restored'
+			identifier: variable.undefined
+			count: 1
+			path: Modules/Seo/tests/Unit/Data/MetatagDataTest.php
+
+		-
+			rawMessage: 'Call to method getProperty() on an unknown class Modules\Seo\Tests\Unit\Providers\ReflectionClass.'
+			identifier: class.notFound
+			count: 1
+			path: Modules/Seo/tests/Unit/Providers/SeoProvidersTest.php
+
+		-
+			rawMessage: Instantiated class Modules\Seo\Tests\Unit\Providers\ReflectionClass not found.
+			identifier: class.notFound
+			count: 1
+			path: Modules/Seo/tests/Unit/Providers/SeoProvidersTest.php
+
+		-
+			rawMessage: 'Undefined variable: $provider'
+			identifier: variable.undefined
+			count: 1
+			path: Modules/Seo/tests/Unit/Providers/SeoProvidersTest.php
+
+		-
+			rawMessage: Using nullsafe method call on non-nullable type DateTimeInterface. Use -> instead.
+			identifier: nullsafe.neverNull
+			count: 2
+			path: Modules/Seo/tests/Unit/Services/MetatagServiceExtendedTest.php
+
+		-
+			rawMessage: 'Method Modules\User\Tests\Unit\Traits\Fixtures\HasPassportConfigurationFixture::tokenLifetime() has parameter $config with no value type specified in iterable type array.'
+			identifier: missingType.iterableValue
+			count: 1
+			path: Modules/User/tests/Unit/Traits/Fixtures/HasPassportConfigurationFixture.php
+
+		-
+			rawMessage: 'Parameter #1 $config of static method Illuminate\Support\ServiceProvider@anonymous/User/tests/Unit/UserExecuteCoverage50Test.php:961::tokenLifetime() expects array<string, mixed>, array given.'
+			identifier: argument.type
+			count: 3
+			path: Modules/User/tests/Unit/UserExecuteCoverage50Test.php
+
+		-
+			rawMessage: 'Offset 1 on array{non-falsy-string, ''container''|''item'', numeric-string} in isset() always exists and is not nullable.'
+			identifier: isset.offset
+			count: 1
+			path: Modules/Xot/Helpers/Helper.php
+
+		-
+			rawMessage: 'Offset 2 on array{non-falsy-string, ''container''|''item'', numeric-string} in isset() always exists and is not nullable.'
+			identifier: isset.offset
+			count: 1
+			path: Modules/Xot/Helpers/Helper.php
+
+		-
+			rawMessage: 'Method Modules\Xot\Services\ArrayService::diff_assoc_recursive() has parameter $array1 with no value type specified in iterable type array.'
+			identifier: missingType.iterableValue
+			count: 1
+			path: Modules/Xot/Services/ArrayService.php
+
+		-
+			rawMessage: 'Method Modules\Xot\Services\ArrayService::diff_assoc_recursive() has parameter $array2 with no value type specified in iterable type array.'
+			identifier: missingType.iterableValue
+			count: 1
+			path: Modules/Xot/Services/ArrayService.php
+
+		-
+			rawMessage: 'Method Modules\Xot\Services\ArrayService::diff_assoc_recursive() return type has no value type specified in iterable type array.'
+			identifier: missingType.iterableValue
+			count: 1
+			path: Modules/Xot/Services/ArrayService.php
+
+		-
+			rawMessage: 'Class Modules\Xot\Database\Factories\CacheFactory extends generic class Illuminate\Database\Eloquent\Factories\Factory but does not specify its types: TModel'
+			identifier: missingType.generics
+			count: 1
+			path: Modules/Xot/database/factories/CacheFactory.php
+
+		-
+			rawMessage: 'Class Modules\Xot\Database\Factories\CacheLockFactory extends generic class Illuminate\Database\Eloquent\Factories\Factory but does not specify its types: TModel'
+			identifier: missingType.generics
+			count: 1
+			path: Modules/Xot/database/factories/CacheLockFactory.php
+
+		-
+			rawMessage: 'Class Modules\Xot\Database\Factories\FeedFactory extends generic class Illuminate\Database\Eloquent\Factories\Factory but does not specify its types: TModel'
+			identifier: missingType.generics
+			count: 1
+			path: Modules/Xot/database/factories/FeedFactory.php
+
+		-
+			rawMessage: 'Class Modules\Xot\Database\Factories\LogFactory extends generic class Illuminate\Database\Eloquent\Factories\Factory but does not specify its types: TModel'
+			identifier: missingType.generics
+			count: 1
+			path: Modules/Xot/database/factories/LogFactory.php
+
+		-
+			rawMessage: 'Class Modules\Xot\Database\Factories\SessionFactory extends generic class Illuminate\Database\Eloquent\Factories\Factory but does not specify its types: TModel'
+			identifier: missingType.generics
+			count: 1
+			path: Modules/Xot/database/factories/SessionFactory.php
+
+		-
+			rawMessage: Access to an undefined property Illuminate\Database\Eloquent\Model@anonymous/Xot/tests/Feature/Actions/Pdf/GetPdfContentByRecordActionTest.php:86::$cognome.
+			identifier: property.notFound
+			count: 1
+			path: Modules/Xot/tests/Feature/Actions/Pdf/GetPdfContentByRecordActionTest.php
+
+		-
+			rawMessage: Access to an undefined property Illuminate\Database\Eloquent\Model@anonymous/Xot/tests/Feature/Actions/Pdf/GetPdfContentByRecordActionTest.php:86::$matr.
+			identifier: property.notFound
+			count: 1
+			path: Modules/Xot/tests/Feature/Actions/Pdf/GetPdfContentByRecordActionTest.php
+
+		-
+			rawMessage: Access to an undefined property Illuminate\Database\Eloquent\Model@anonymous/Xot/tests/Feature/Actions/Pdf/GetPdfContentByRecordActionTest.php:86::$nome.
+			identifier: property.notFound
+			count: 1
+			path: Modules/Xot/tests/Feature/Actions/Pdf/GetPdfContentByRecordActionTest.php
+
+		-
+			rawMessage: 'Parameter #1 $record of method Modules\Xot\Actions\Pdf\GetPdfContentByRecordAction::execute() expects Illuminate\Database\Eloquent\Model, mixed given.'
+			identifier: argument.type
+			count: 3
+			path: Modules/Xot/tests/Feature/Actions/Pdf/GetPdfContentByRecordActionTest.php
+
+		-
+			rawMessage: 'Parameter #1 $record of method Modules\Xot\Actions\Pdf\GetPdfContentByRecordAction::fromRecord() expects Illuminate\Database\Eloquent\Model, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/Xot/tests/Feature/Actions/Pdf/GetPdfContentByRecordActionTest.php
+
+		-
+			rawMessage: Binary operation "." between mixed and '/' results in an error.
+			identifier: binaryOp.invalid
+			count: 1
+			path: Modules/Xot/tests/Feature/FixStructureTest.php
+
+		-
+			rawMessage: Binary operation "." between mixed and '/'|'\\' results in an error.
+			identifier: binaryOp.invalid
+			count: 3
+			path: Modules/Xot/tests/Feature/FixStructureTest.php
+
+		-
+			rawMessage: Function chdir is unsafe to use. It can return FALSE instead of throwing an exception. Please add 'use function Safe\chdir;' at the beginning of the file to use the variant provided by the 'thecodingmachine/safe' library.
+			identifier: theCodingMachineSafe.function
+			count: 1
+			path: Modules/Xot/tests/Feature/FixStructureTest.php
+
+		-
+			rawMessage: Function chmod is unsafe to use. It can return FALSE instead of throwing an exception. Please add 'use function Safe\chmod;' at the beginning of the file to use the variant provided by the 'thecodingmachine/safe' library.
+			identifier: theCodingMachineSafe.function
+			count: 3
+			path: Modules/Xot/tests/Feature/FixStructureTest.php
+
+		-
+			rawMessage: Function exec is unsafe to use. It can return FALSE instead of throwing an exception. Please add 'use function Safe\exec;' at the beginning of the file to use the variant provided by the 'thecodingmachine/safe' library.
+			identifier: theCodingMachineSafe.function
+			count: 3
+			path: Modules/Xot/tests/Feature/FixStructureTest.php
+
+		-
+			rawMessage: Function file_get_contents is unsafe to use. It can return FALSE instead of throwing an exception. Please add 'use function Safe\file_get_contents;' at the beginning of the file to use the variant provided by the 'thecodingmachine/safe' library.
+			identifier: theCodingMachineSafe.function
+			count: 3
+			path: Modules/Xot/tests/Feature/FixStructureTest.php
+
+		-
+			rawMessage: Function file_put_contents is unsafe to use. It can return FALSE instead of throwing an exception. Please add 'use function Safe\file_put_contents;' at the beginning of the file to use the variant provided by the 'thecodingmachine/safe' library.
+			identifier: theCodingMachineSafe.function
+			count: 7
+			path: Modules/Xot/tests/Feature/FixStructureTest.php
+
+		-
+			rawMessage: Function mkdir is unsafe to use. It can return FALSE instead of throwing an exception. Please add 'use function Safe\mkdir;' at the beginning of the file to use the variant provided by the 'thecodingmachine/safe' library.
+			identifier: theCodingMachineSafe.function
+			count: 5
+			path: Modules/Xot/tests/Feature/FixStructureTest.php
+
+		-
+			rawMessage: Function rmdir is unsafe to use. It can return FALSE instead of throwing an exception. Please add 'use function Safe\rmdir;' at the beginning of the file to use the variant provided by the 'thecodingmachine/safe' library.
+			identifier: theCodingMachineSafe.function
+			count: 1
+			path: Modules/Xot/tests/Feature/FixStructureTest.php
+
+		-
+			rawMessage: Function scandir is unsafe to use. It can return FALSE instead of throwing an exception. Please add 'use function Safe\scandir;' at the beginning of the file to use the variant provided by the 'thecodingmachine/safe' library.
+			identifier: theCodingMachineSafe.function
+			count: 1
+			path: Modules/Xot/tests/Feature/FixStructureTest.php
+
+		-
+			rawMessage: Function unlink is unsafe to use. It can return FALSE instead of throwing an exception. Please add 'use function Safe\unlink;' at the beginning of the file to use the variant provided by the 'thecodingmachine/safe' library.
+			identifier: theCodingMachineSafe.function
+			count: 1
+			path: Modules/Xot/tests/Feature/FixStructureTest.php
+
+		-
+			rawMessage: 'Method Modules\Xot\Tests\Feature\FixStructureTest::rrmdir() has no return type specified.'
+			identifier: missingType.return
+			count: 1
+			path: Modules/Xot/tests/Feature/FixStructureTest.php
+
+		-
+			rawMessage: 'Method Modules\Xot\Tests\Feature\FixStructureTest::rrmdir() has parameter $dir with no type specified.'
+			identifier: missingType.parameter
+			count: 1
+			path: Modules/Xot/tests/Feature/FixStructureTest.php
+
+		-
+			rawMessage: 'Parameter #1 $directory of function rmdir expects string, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/Xot/tests/Feature/FixStructureTest.php
+
+		-
+			rawMessage: 'Parameter #1 $directory of function scandir expects string, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/Xot/tests/Feature/FixStructureTest.php
+
+		-
+			rawMessage: 'Parameter #1 $filename of function is_dir expects string, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/Xot/tests/Feature/FixStructureTest.php
+
+		-
+			rawMessage: Access to an undefined property Pest\PendingCalls\TestCall::$testDir.
+			identifier: property.notFound
+			count: 6
+			path: Modules/Xot/tests/Feature/fixstructuretest.pest.php
+
+		-
+			rawMessage: Binary operation "." between mixed and '/' results in an error.
+			identifier: binaryOp.invalid
+			count: 3
+			path: Modules/Xot/tests/Feature/fixstructuretest.pest.php
+
+		-
+			rawMessage: Binary operation "." between mixed and '/'|'\\' results in an error.
+			identifier: binaryOp.invalid
+			count: 3
+			path: Modules/Xot/tests/Feature/fixstructuretest.pest.php
+
+		-
+			rawMessage: Binary operation "." between mixed and '/app' results in an error.
+			identifier: binaryOp.invalid
+			count: 1
+			path: Modules/Xot/tests/Feature/fixstructuretest.pest.php
+
+		-
+			rawMessage: Binary operation "." between mixed and '/routes/web.php' results in an error.
+			identifier: binaryOp.invalid
+			count: 1
+			path: Modules/Xot/tests/Feature/fixstructuretest.pest.php
+
+		-
+			rawMessage: Function chdir is unsafe to use. It can return FALSE instead of throwing an exception. Please add 'use function Safe\chdir;' at the beginning of the file to use the variant provided by the 'thecodingmachine/safe' library.
+			identifier: theCodingMachineSafe.function
+			count: 1
+			path: Modules/Xot/tests/Feature/fixstructuretest.pest.php
+
+		-
+			rawMessage: Function chmod is unsafe to use. It can return FALSE instead of throwing an exception. Please add 'use function Safe\chmod;' at the beginning of the file to use the variant provided by the 'thecodingmachine/safe' library.
+			identifier: theCodingMachineSafe.function
+			count: 2
+			path: Modules/Xot/tests/Feature/fixstructuretest.pest.php
+
+		-
+			rawMessage: Function file_put_contents is unsafe to use. It can return FALSE instead of throwing an exception. Please add 'use function Safe\file_put_contents;' at the beginning of the file to use the variant provided by the 'thecodingmachine/safe' library.
+			identifier: theCodingMachineSafe.function
+			count: 1
+			path: Modules/Xot/tests/Feature/fixstructuretest.pest.php
+
+		-
+			rawMessage: Function mkdir is unsafe to use. It can return FALSE instead of throwing an exception. Please add 'use function Safe\mkdir;' at the beginning of the file to use the variant provided by the 'thecodingmachine/safe' library.
+			identifier: theCodingMachineSafe.function
+			count: 1
+			path: Modules/Xot/tests/Feature/fixstructuretest.pest.php
+
+		-
+			rawMessage: Function rmdir is unsafe to use. It can return FALSE instead of throwing an exception. Please add 'use function Safe\rmdir;' at the beginning of the file to use the variant provided by the 'thecodingmachine/safe' library.
+			identifier: theCodingMachineSafe.function
+			count: 1
+			path: Modules/Xot/tests/Feature/fixstructuretest.pest.php
+
+		-
+			rawMessage: 'Function rrmdir() has no return type specified.'
+			identifier: missingType.return
+			count: 1
+			path: Modules/Xot/tests/Feature/fixstructuretest.pest.php
+
+		-
+			rawMessage: 'Function rrmdir() has parameter $dir with no type specified.'
+			identifier: missingType.parameter
+			count: 1
+			path: Modules/Xot/tests/Feature/fixstructuretest.pest.php
+
+		-
+			rawMessage: Function scandir is unsafe to use. It can return FALSE instead of throwing an exception. Please add 'use function Safe\scandir;' at the beginning of the file to use the variant provided by the 'thecodingmachine/safe' library.
+			identifier: theCodingMachineSafe.function
+			count: 1
+			path: Modules/Xot/tests/Feature/fixstructuretest.pest.php
+
+		-
+			rawMessage: Function unlink is unsafe to use. It can return FALSE instead of throwing an exception. Please add 'use function Safe\unlink;' at the beginning of the file to use the variant provided by the 'thecodingmachine/safe' library.
+			identifier: theCodingMachineSafe.function
+			count: 1
+			path: Modules/Xot/tests/Feature/fixstructuretest.pest.php
+
+		-
+			rawMessage: 'Parameter #1 $directory of function rmdir expects string, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/Xot/tests/Feature/fixstructuretest.pest.php
+
+		-
+			rawMessage: 'Parameter #1 $directory of function scandir expects string, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/Xot/tests/Feature/fixstructuretest.pest.php
+
+		-
+			rawMessage: 'Parameter #1 $filename of function is_dir expects string, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/Xot/tests/Feature/fixstructuretest.pest.php
+
+		-
+			rawMessage: Used function Pest\Laravel\artisan not found.
+			identifier: function.notFound
+			count: 1
+			path: Modules/Xot/tests/Feature/fixstructuretest.pest.php
+
+		-
+			rawMessage: Used function Pest\Laravel\assertDatabaseHas not found.
+			identifier: function.notFound
+			count: 1
+			path: Modules/Xot/tests/Feature/fixstructuretest.pest.php
+
+		-
+			rawMessage: Class Modules\SaluteOra\Models\User not found.
+			identifier: class.notFound
+			count: 1
+			path: Modules/Xot/tests/TestCase.php
+
+		-
+			rawMessage: Access to an undefined property Pest\PendingCalls\TestCall::$action.
+			identifier: property.notFound
+			count: 1
+			path: Modules/Xot/tests/Unit/Actions/Arr/SaveJsonArrayActionTest.php
+
+		-
+			rawMessage: Access to an undefined property Pest\PendingCalls\TestCall::$tempDir.
+			identifier: property.notFound
+			count: 3
+			path: Modules/Xot/tests/Unit/Actions/Arr/SaveJsonArrayActionTest.php
+
+		-
+			rawMessage: Binary operation "." between mixed and '/*' results in an error.
+			identifier: binaryOp.invalid
+			count: 1
+			path: Modules/Xot/tests/Unit/Actions/Arr/SaveJsonArrayActionTest.php
+
+		-
+			rawMessage: Binary operation "." between mixed and '/data.json' results in an error.
+			identifier: binaryOp.invalid
+			count: 1
+			path: Modules/Xot/tests/Unit/Actions/Arr/SaveJsonArrayActionTest.php
+
+		-
+			rawMessage: Binary operation "." between mixed and '/empty.json' results in an error.
+			identifier: binaryOp.invalid
+			count: 1
+			path: Modules/Xot/tests/Unit/Actions/Arr/SaveJsonArrayActionTest.php
+
+		-
+			rawMessage: 'Parameter #1 $directory of function Safe\rmdir expects string, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/Xot/tests/Unit/Actions/Arr/SaveJsonArrayActionTest.php
+
+		-
+			rawMessage: 'Parameter #1 $filename of function Safe\unlink expects string, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/Xot/tests/Unit/Actions/Arr/SaveJsonArrayActionTest.php
+
+		-
+			rawMessage: 'Parameter #1 $filename of function is_dir expects string, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/Xot/tests/Unit/Actions/Arr/SaveJsonArrayActionTest.php
+
+		-
+			rawMessage: Access to an undefined property Pest\PendingCalls\TestCall::$action.
+			identifier: property.notFound
+			count: 1
+			path: Modules/Xot/tests/Unit/Actions/Arr/SavePhpArrayActionTest.php
+
+		-
+			rawMessage: Access to an undefined property Pest\PendingCalls\TestCall::$tempDir.
+			identifier: property.notFound
+			count: 3
+			path: Modules/Xot/tests/Unit/Actions/Arr/SavePhpArrayActionTest.php
+
+		-
+			rawMessage: Binary operation "." between mixed and '/*' results in an error.
+			identifier: binaryOp.invalid
+			count: 1
+			path: Modules/Xot/tests/Unit/Actions/Arr/SavePhpArrayActionTest.php
+
+		-
+			rawMessage: Binary operation "." between mixed and '/data.php' results in an error.
+			identifier: binaryOp.invalid
+			count: 1
+			path: Modules/Xot/tests/Unit/Actions/Arr/SavePhpArrayActionTest.php
+
+		-
+			rawMessage: Binary operation "." between mixed and '/strict.php' results in an error.
+			identifier: binaryOp.invalid
+			count: 1
+			path: Modules/Xot/tests/Unit/Actions/Arr/SavePhpArrayActionTest.php
+
+		-
+			rawMessage: 'Parameter #1 $directory of function Safe\rmdir expects string, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/Xot/tests/Unit/Actions/Arr/SavePhpArrayActionTest.php
+
+		-
+			rawMessage: 'Parameter #1 $filename of function Safe\unlink expects string, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/Xot/tests/Unit/Actions/Arr/SavePhpArrayActionTest.php
+
+		-
+			rawMessage: 'Parameter #1 $filename of function file_exists expects string, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/Xot/tests/Unit/Actions/Arr/SavePhpArrayActionTest.php
+
+		-
+			rawMessage: 'Call to an undefined static method Modules\Xot\Tests\TestCase::safeEloquentCastFixture().'
+			identifier: staticMethod.notFound
+			count: 6
+			path: Modules/Xot/tests/Unit/Actions/Cast/SafeEloquentCastActionTest.php
+
+		-
+			rawMessage: Cannot use array destructuring on mixed.
+			identifier: offsetAccess.nonArray
+			count: 6
+			path: Modules/Xot/tests/Unit/Actions/Cast/SafeEloquentCastActionTest.php
+
+		-
+			rawMessage: 'Parameter #1 $model of static method Modules\Xot\Actions\Cast\SafeEloquentCastAction::get() expects Illuminate\Database\Eloquent\Model, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/Xot/tests/Unit/Actions/Cast/SafeEloquentCastActionTest.php
+
+		-
+			rawMessage: 'Parameter #1 $model of static method Modules\Xot\Actions\Cast\SafeEloquentCastAction::has() expects Illuminate\Database\Eloquent\Model, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/Xot/tests/Unit/Actions/Cast/SafeEloquentCastActionTest.php
+
+		-
+			rawMessage: 'Unable to resolve the template type TInstance in call to method Illuminate\Container\Container::instance()'
+			identifier: argument.templateType
+			count: 2
+			path: Modules/Xot/tests/Unit/Actions/Config/GetTenantConfigActionsTest.php
+
+		-
+			rawMessage: 'Unable to resolve the template type TInstance in call to method Illuminate\Container\Container::instance()'
+			identifier: argument.templateType
+			count: 1
+			path: Modules/Xot/tests/Unit/Actions/Config/GetTenantConfigPathActionTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\Xot\Tests\TestCase::$workDir.
+			identifier: property.notFound
+			count: 6
+			path: Modules/Xot/tests/Unit/Actions/File/AddStrictTypesDeclarationActionTest.php
+
+		-
+			rawMessage: Access to an undefined property Pest\PendingCalls\TestCall::$action.
+			identifier: property.notFound
+			count: 1
+			path: Modules/Xot/tests/Unit/Actions/File/AddStrictTypesDeclarationActionTest.php
+
+		-
+			rawMessage: Access to an undefined property Pest\PendingCalls\TestCall::$workDir.
+			identifier: property.notFound
+			count: 2
+			path: Modules/Xot/tests/Unit/Actions/File/AddStrictTypesDeclarationActionTest.php
+
+		-
+			rawMessage: Binary operation "." between mixed and '/test.php' results in an error.
+			identifier: binaryOp.invalid
+			count: 3
+			path: Modules/Xot/tests/Unit/Actions/File/AddStrictTypesDeclarationActionTest.php
+
+		-
+			rawMessage: Access to an undefined property Pest\PendingCalls\TestCall::$action.
+			identifier: property.notFound
+			count: 1
+			path: Modules/Xot/tests/Unit/Actions/File/CreateDirectoryForFilenameActionTest.php
+
+		-
+			rawMessage: Access to an undefined property Pest\PendingCalls\TestCall::$workDir.
+			identifier: property.notFound
+			count: 10
+			path: Modules/Xot/tests/Unit/Actions/File/CreateDirectoryForFilenameActionTest.php
+
+		-
+			rawMessage: Binary operation "." between mixed and '/existing' results in an error.
+			identifier: binaryOp.invalid
+			count: 2
+			path: Modules/Xot/tests/Unit/Actions/File/CreateDirectoryForFilenameActionTest.php
+
+		-
+			rawMessage: Binary operation "." between mixed and '/existing/file.txt' results in an error.
+			identifier: binaryOp.invalid
+			count: 1
+			path: Modules/Xot/tests/Unit/Actions/File/CreateDirectoryForFilenameActionTest.php
+
+		-
+			rawMessage: Binary operation "." between mixed and '/nested/deep' results in an error.
+			identifier: binaryOp.invalid
+			count: 1
+			path: Modules/Xot/tests/Unit/Actions/File/CreateDirectoryForFilenameActionTest.php
+
+		-
+			rawMessage: Binary operation "." between mixed and '/nested/deep/file…' results in an error.
+			identifier: binaryOp.invalid
+			count: 1
+			path: Modules/Xot/tests/Unit/Actions/File/CreateDirectoryForFilenameActionTest.php
+
+		-
+			rawMessage: 'Unable to resolve the template type TInstance in call to method Illuminate\Container\Container::instance()'
+			identifier: argument.templateType
+			count: 2
+			path: Modules/Xot/tests/Unit/Actions/File/ViewPathActionTest.php
+
+		-
+			rawMessage: Access to an undefined property Pest\PendingCalls\TestCall::$testOutputDir.
+			identifier: property.notFound
+			count: 12
+			path: Modules/Xot/tests/Unit/Console/Commands/generatedbdocumentationcommandtest.pest.php
+
+		-
+			rawMessage: Access to an undefined property Pest\PendingCalls\TestCall::$testSchemaPath.
+			identifier: property.notFound
+			count: 9
+			path: Modules/Xot/tests/Unit/Console/Commands/generatedbdocumentationcommandtest.pest.php
+
+		-
+			rawMessage: Binary operation "." between mixed and '/database…' results in an error.
+			identifier: binaryOp.invalid
+			count: 1
+			path: Modules/Xot/tests/Unit/Console/Commands/generatedbdocumentationcommandtest.pest.php
+
+		-
+			rawMessage: Binary operation "." between mixed and '/tables/users.md' results in an error.
+			identifier: binaryOp.invalid
+			count: 1
+			path: Modules/Xot/tests/Unit/Console/Commands/generatedbdocumentationcommandtest.pest.php
+
+		-
+			rawMessage: Function file_put_contents is unsafe to use. It can return FALSE instead of throwing an exception. Please add 'use function Safe\file_put_contents;' at the beginning of the file to use the variant provided by the 'thecodingmachine/safe' library.
+			identifier: theCodingMachineSafe.function
+			count: 2
+			path: Modules/Xot/tests/Unit/Console/Commands/generatedbdocumentationcommandtest.pest.php
+
+		-
+			rawMessage: Function json_encode is unsafe to use. It can return FALSE instead of throwing an exception. Please add 'use function Safe\json_encode;' at the beginning of the file to use the variant provided by the 'thecodingmachine/safe' library.
+			identifier: theCodingMachineSafe.function
+			count: 1
+			path: Modules/Xot/tests/Unit/Console/Commands/generatedbdocumentationcommandtest.pest.php
+
+		-
+			rawMessage: 'Parameter #1 $directory of static method Illuminate\Support\Facades\File::deleteDirectory() expects string, mixed given.'
+			identifier: argument.type
+			count: 2
+			path: Modules/Xot/tests/Unit/Console/Commands/generatedbdocumentationcommandtest.pest.php
+
+		-
+			rawMessage: 'Parameter #1 $directory of static method Illuminate\Support\Facades\File::isDirectory() expects string, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/Xot/tests/Unit/Console/Commands/generatedbdocumentationcommandtest.pest.php
+
+		-
+			rawMessage: 'Parameter #1 $filename of function file_put_contents expects string, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/Xot/tests/Unit/Console/Commands/generatedbdocumentationcommandtest.pest.php
+
+		-
+			rawMessage: 'Parameter #1 $path of static method Illuminate\Support\Facades\File::exists() expects string, mixed given.'
+			identifier: argument.type
+			count: 3
+			path: Modules/Xot/tests/Unit/Console/Commands/generatedbdocumentationcommandtest.pest.php
+
+		-
+			rawMessage: 'Parameter #1 $paths of static method Illuminate\Support\Facades\File::delete() expects array|string, mixed given.'
+			identifier: argument.type
+			count: 2
+			path: Modules/Xot/tests/Unit/Console/Commands/generatedbdocumentationcommandtest.pest.php
+
+		-
+			rawMessage: 'Method Modules\Xot\Tests\Unit\HasTableWithXotTestClass::getAllSelectableTableRecordKeys() return type has no value type specified in iterable type array.'
+			identifier: missingType.iterableValue
+			count: 1
+			path: Modules/Xot/tests/Unit/HasTableWithXotTestClass.php
+
+		-
+			rawMessage: 'Method Modules\Xot\Tests\Unit\HasTableWithXotTestClass::getSelectedTableRecords() return type with generic class Illuminate\Support\Collection does not specify its types: TKey, TValue'
+			identifier: missingType.generics
+			count: 1
+			path: Modules/Xot/tests/Unit/HasTableWithXotTestClass.php
+
+		-
+			rawMessage: 'Method Modules\Xot\Tests\Unit\HasTableWithXotTestClass::getTable() should return Filament\Tables\Table but returns Mockery\MockInterface.'
+			identifier: return.type
+			count: 1
+			path: Modules/Xot/tests/Unit/HasTableWithXotTestClass.php
+
+		-
+			rawMessage: 'Method Modules\Xot\Tests\Unit\HasTableWithXotTestClass::getTableColumnSearchIndicators() return type has no value type specified in iterable type array.'
+			identifier: missingType.iterableValue
+			count: 1
+			path: Modules/Xot/tests/Unit/HasTableWithXotTestClass.php
+
+		-
+			rawMessage: 'Method Modules\Xot\Tests\Unit\HasTableWithXotTestClass::getTableColumns() return type has no value type specified in iterable type array.'
+			identifier: missingType.iterableValue
+			count: 1
+			path: Modules/Xot/tests/Unit/HasTableWithXotTestClass.php
+
+		-
+			rawMessage: 'Method Modules\Xot\Tests\Unit\HasTableWithXotTestClass::getTableFilterState() return type has no value type specified in iterable type array.'
+			identifier: missingType.iterableValue
+			count: 1
+			path: Modules/Xot/tests/Unit/HasTableWithXotTestClass.php
+
+		-
+			rawMessage: 'Method Modules\Xot\Tests\Unit\HasTableWithXotTestClass::getTableFilters() return type has no value type specified in iterable type array.'
+			identifier: missingType.iterableValue
+			count: 1
+			path: Modules/Xot/tests/Unit/HasTableWithXotTestClass.php
+
+		-
+			rawMessage: 'Method Modules\Xot\Tests\Unit\HasTableWithXotTestClass::getTableRecords() return type has no value type specified in iterable type array.'
+			identifier: missingType.iterableValue
+			count: 1
+			path: Modules/Xot/tests/Unit/HasTableWithXotTestClass.php
+
+		-
+			rawMessage: 'Method Modules\Xot\Tests\Unit\HasTableWithoutOptionalMethodsTestClass::getAllSelectableTableRecordKeys() return type has no value type specified in iterable type array.'
+			identifier: missingType.iterableValue
+			count: 1
+			path: Modules/Xot/tests/Unit/HasTableWithoutOptionalMethodsTestClass.php
+
+		-
+			rawMessage: 'Method Modules\Xot\Tests\Unit\HasTableWithoutOptionalMethodsTestClass::getSelectedTableRecords() return type has no value type specified in iterable type array.'
+			identifier: missingType.iterableValue
+			count: 1
+			path: Modules/Xot/tests/Unit/HasTableWithoutOptionalMethodsTestClass.php
+
+		-
+			rawMessage: 'Method Modules\Xot\Tests\Unit\HasTableWithoutOptionalMethodsTestClass::getTable() should return Filament\Tables\Table but returns Mockery\MockInterface.'
+			identifier: return.type
+			count: 1
+			path: Modules/Xot/tests/Unit/HasTableWithoutOptionalMethodsTestClass.php
+
+		-
+			rawMessage: 'Method Modules\Xot\Tests\Unit\HasTableWithoutOptionalMethodsTestClass::getTableColumnSearchIndicators() return type has no value type specified in iterable type array.'
+			identifier: missingType.iterableValue
+			count: 1
+			path: Modules/Xot/tests/Unit/HasTableWithoutOptionalMethodsTestClass.php
+
+		-
+			rawMessage: 'Method Modules\Xot\Tests\Unit\HasTableWithoutOptionalMethodsTestClass::getTableColumns() return type has no value type specified in iterable type array.'
+			identifier: missingType.iterableValue
+			count: 1
+			path: Modules/Xot/tests/Unit/HasTableWithoutOptionalMethodsTestClass.php
+
+		-
+			rawMessage: 'Method Modules\Xot\Tests\Unit\HasTableWithoutOptionalMethodsTestClass::getTableFilterState() return type has no value type specified in iterable type array.'
+			identifier: missingType.iterableValue
+			count: 1
+			path: Modules/Xot/tests/Unit/HasTableWithoutOptionalMethodsTestClass.php
+
+		-
+			rawMessage: 'Method Modules\Xot\Tests\Unit\HasTableWithoutOptionalMethodsTestClass::getTableFilters() return type has no value type specified in iterable type array.'
+			identifier: missingType.iterableValue
+			count: 1
+			path: Modules/Xot/tests/Unit/HasTableWithoutOptionalMethodsTestClass.php
+
+		-
+			rawMessage: 'Method Modules\Xot\Tests\Unit\HasTableWithoutOptionalMethodsTestClass::getTableRecords() return type has no value type specified in iterable type array.'
+			identifier: missingType.iterableValue
+			count: 1
+			path: Modules/Xot/tests/Unit/HasTableWithoutOptionalMethodsTestClass.php
+
+		-
+			rawMessage: Access to an undefined property Pest\PendingCalls\TestCall::$baseModel.
+			identifier: property.notFound
+			count: 6
+			path: Modules/Xot/tests/Unit/Models/BaseModelTest.php
+
+		-
+			rawMessage: Unable to resolve the template type TValue in call to function expect
+			identifier: argument.templateType
+			count: 2
+			path: Modules/Xot/tests/Unit/Models/BaseModelTest.php
+
+		-
+			rawMessage: Access to static property $snakeAttributes on an unknown class XotBaseModel.
+			identifier: class.notFound
+			count: 2
+			path: Modules/Xot/tests/Unit/Models/XotBaseModelTest.php
+
+		-
+			rawMessage: Class Model not found.
+			identifier: class.notFound
+			count: 1
+			path: Modules/Xot/tests/Unit/Models/XotBaseModelTest.php
+
+		-
+			rawMessage: Class Updater not found.
+			identifier: class.notFound
+			count: 1
+			path: Modules/Xot/tests/Unit/Models/XotBaseModelTest.php
+
+		-
+			rawMessage: Class XotBaseModel not found.
+			identifier: class.notFound
+			count: 9
+			path: Modules/Xot/tests/Unit/Models/XotBaseModelTest.php
+
+		-
+			rawMessage: Function file_get_contents is unsafe to use. It can return FALSE instead of throwing an exception. Please add 'use function Safe\file_get_contents;' at the beginning of the file to use the variant provided by the 'thecodingmachine/safe' library.
+			identifier: theCodingMachineSafe.function
+			count: 2
+			path: Modules/Xot/tests/Unit/Models/XotBaseModelTest.php
+
+		-
+			rawMessage: Unable to resolve the template type TValue in call to function expect
+			identifier: argument.templateType
+			count: 4
+			path: Modules/Xot/tests/Unit/Models/XotBaseModelTest.php
+
+		-
+			rawMessage: Access to an undefined property Pest\PendingCalls\TestCall::$service.
+			identifier: property.notFound
+			count: 18
+			path: Modules/Xot/tests/Unit/ModuleServiceTest.php
+
+		-
+			rawMessage: 'Argument of an invalid type mixed supplied for foreach, only iterables are supported.'
+			identifier: foreach.nonIterable
+			count: 1
+			path: Modules/Xot/tests/Unit/ModuleServiceTest.php
+
+		-
+			rawMessage: 'Parameter #1 $object of method ReflectionProperty::getValue() expects object|null, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/Xot/tests/Unit/ModuleServiceTest.php
+
+		-
+			rawMessage: 'Parameter #1 $objectOrClass of class ReflectionClass constructor expects class-string<T of object>|T of object, mixed given.'
+			identifier: argument.type
+			count: 8
+			path: Modules/Xot/tests/Unit/ModuleServiceTest.php
+
+		-
+			rawMessage: 'Parameter #1 $object_or_class of function method_exists expects object|string, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/Xot/tests/Unit/ModuleServiceTest.php
+
+		-
+			rawMessage: Unable to resolve the template type TValue in call to function expect
+			identifier: argument.templateType
+			count: 1
+			path: Modules/Xot/tests/Unit/ModuleServiceTest.php
+
+		-
+			rawMessage: 'Method Illuminate\Database\Eloquent\Model@anonymous/Xot/tests/Unit/SendMailByRecordActionTest.php:10::myLogs() has no return type specified.'
+			identifier: missingType.return
+			count: 1
+			path: Modules/Xot/tests/Unit/SendMailByRecordActionTest.php
+
+		-
+			rawMessage: 'Method Illuminate\Database\Eloquent\Model@anonymous/Xot/tests/Unit/SendMailByRecordActionTest.php:10::option() never returns string so it can be removed from the return type.'
+			identifier: return.unusedType
+			count: 1
+			path: Modules/Xot/tests/Unit/SendMailByRecordActionTest.php
+
+		-
+			rawMessage: 'Method class@anonymous/Xot/tests/Unit/SendMailByRecordActionTest.php:20::create() has parameter $data with no value type specified in iterable type array.'
+			identifier: missingType.iterableValue
+			count: 1
+			path: Modules/Xot/tests/Unit/SendMailByRecordActionTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\Xot\Models\Module::$enabled.
+			identifier: property.notFound
+			count: 1
+			path: Modules/Xot/tests/Unit/SimpleModelsTest.php
+
+		-
+			rawMessage: Anonymous function should return Illuminate\Database\Schema\Blueprint but returns mixed.
+			identifier: return.type
+			count: 2
+			path: Modules/Xot/tests/Unit/Traits/EnumTraitTest.php
+
+		-
+			rawMessage: 'Parameter #1 $table of static method Modules\Xot\Tests\Fixtures\Enums\TestEnum::columns() expects Illuminate\Database\Schema\Blueprint, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/Xot/tests/Unit/Traits/EnumTraitTest.php
+
+		-
+			rawMessage: 'Parameter #1 $table of static method Modules\Xot\Tests\Fixtures\Enums\TestEnum::dropColumns() expects Illuminate\Database\Schema\Blueprint, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/Xot/tests/Unit/Traits/EnumTraitTest.php
+
+		-
+			rawMessage: 'Parameter #2 $migration of static method Modules\Xot\Tests\Fixtures\Enums\TestEnum::columns() expects Modules\Xot\Database\Migrations\XotBaseMigration|null, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/Xot/tests/Unit/Traits/EnumTraitTest.php
+
+		-
+			rawMessage: 'Parameter #1 $query of method Modules\Xot\Tests\Fixtures\Models\SchemalessTestModel::scopeWhereExtraAttribute() expects Illuminate\Database\Eloquent\Builder<Illuminate\Database\Eloquent\Model>, Illuminate\Database\Eloquent\Builder<Modules\Xot\Tests\Fixtures\Models\SchemalessTestModel>&Mockery\MockInterface given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/Xot/tests/Unit/Traits/HasSchemalessAttributesTest.php
+
+		-
+			rawMessage: 'Parameter #1 $query of method Modules\Xot\Tests\Fixtures\Models\SchemalessTestModel::scopeWithExtraAttributes() expects Illuminate\Database\Eloquent\Builder<Illuminate\Database\Eloquent\Model>, Illuminate\Database\Eloquent\Builder<Modules\Xot\Tests\Fixtures\Models\SchemalessTestModel>&Mockery\MockInterface given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/Xot/tests/Unit/Traits/HasSchemalessAttributesTest.php
+
+		-
+			rawMessage: 'Call to an undefined static method Modules\Xot\Tests\TestCase::xotBaseTransitionFixture().'
+			identifier: staticMethod.notFound
+			count: 3
+			path: Modules/Xot/tests/Unit/XotBaseTransitionTest.php
+
+		-
+			rawMessage: Cannot access property $record on mixed.
+			identifier: property.nonObject
+			count: 1
+			path: Modules/Xot/tests/Unit/XotBaseTransitionTest.php
+
+		-
+			rawMessage: Cannot use array destructuring on mixed.
+			identifier: offsetAccess.nonArray
+			count: 3
+			path: Modules/Xot/tests/Unit/XotBaseTransitionTest.php
+
+		-
+			rawMessage: 'Parameter #1 $object_or_class of function method_exists expects object|string, mixed given.'
+			identifier: argument.type
+			count: 2
+			path: Modules/Xot/tests/Unit/XotBaseTransitionTest.php
+
+		-
+			rawMessage: 'Unable to resolve the template type TAndValue in call to method Pest\Expectation<bool|null>::and()'
+			identifier: argument.templateType
+			count: 1
+			path: Modules/Xot/tests/Unit/XotBaseTransitionTest.php
+
+		-
+			rawMessage: 'Class Modules\Xot\Exceptions\Handlers\HandlerDecorator constructor invoked with 1 parameter, 2 required.'
+			identifier: arguments.count
+			count: 1
+			path: Modules/Xot/tests/Unit/XotExecuteCoverage50Test.php
+
+		-
+			rawMessage: 'Class Modules\Xot\States\XotBaseState@anonymous/Xot/tests/Unit/XotExecuteCoverage50Test.php:1060 constructor invoked with 0 parameters, 1 required.'
+			identifier: arguments.count
+			count: 1
+			path: Modules/Xot/tests/Unit/XotExecuteCoverage50Test.php
+

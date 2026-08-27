@@ -28,8 +28,7 @@ class SendPushToAllUsersAction
         if ($tokens === []) {
             return [
                 'success' => false,
-                'message' => 'No active tokens found',
-            ];
+                'message' => 'No active tokens found'];
         }
 
         return app(SendPushToDevicesAction::class)->execute($tokens, $notification, $data);

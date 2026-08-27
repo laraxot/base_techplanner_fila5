@@ -11,9 +11,6 @@ use Modules\Notify\Contracts\WhatsAppProviderActionInterface;
 use Modules\Notify\Factories\TelegramActionFactory;
 use Modules\Notify\Factories\WhatsAppActionFactory;
 use Modules\Notify\Tests\TestCase;
-use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
@@ -40,7 +37,6 @@ test('telegram action factory creates official driver instance', function () {
 test('telegram action factory throws for unsupported driver', function () {
     XotBasePest::assertThrows(
         fn () => (new TelegramActionFactory())->create('unsupported'),
-        fn () => (new TelegramActionFactory)->create('unsupported'),
         \Exception::class,
     );
 });
@@ -58,7 +54,6 @@ test('whatsapp action factory creates twilio driver instance', function () {
 test('whatsapp action factory throws for unsupported driver', function () {
     XotBasePest::assertThrows(
         fn () => (new WhatsAppActionFactory())->create('unsupported'),
-        fn () => (new WhatsAppActionFactory)->create('unsupported'),
         \Exception::class,
     );
 });

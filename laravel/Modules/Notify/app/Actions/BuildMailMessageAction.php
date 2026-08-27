@@ -9,9 +9,9 @@ use Illuminate\Notifications\Messages\MailMessage;
 use Modules\Notify\Actions\NotifyTheme\Get;
 use Modules\Notify\Datas\AttachmentData;
 use Modules\Notify\Datas\NotifyThemeData;
-use function Safe\mb_convert_encoding;
-use Spatie\LaravelData\DataCollection;
 use Spatie\QueueableAction\QueueableAction;
+
+use function Safe\mb_convert_encoding;
 
 class BuildMailMessageAction
 {
@@ -19,7 +19,7 @@ class BuildMailMessageAction
 
     /**
      * @param  array<string, mixed>  $view_params
-     * @param  DataCollection<int, AttachmentData>|null  $dataCollection
+     * @param  array<int, AttachmentData>|null  $attachments
      */
     public function execute(
         string $name,

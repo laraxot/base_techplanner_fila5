@@ -14,6 +14,8 @@ use Webmozart\Assert\Assert;
 
 /**
  * Trait Modules\Xot\Models\Traits\RelationX.
+ *
+ * @phpstan-ignore trait.unused
  */
 trait RelationX
 {
@@ -54,7 +56,7 @@ trait RelationX
             $pivotDriver = $pivot->getConnection()->getDriverName();
             // Only add database prefix for non-SQLite drivers
             // SQLite doesn't support database.table syntax
-            if ('sqlite' !== $pivotDriver) {
+            if ($pivotDriver !== 'sqlite') {
                 $table = $pivotDbName.'.'.$table;
             }
         }
@@ -203,7 +205,7 @@ trait RelationX
     private function tryParentClassPivot(string $pivot_name, string $related, string $class): string
     {
         $parent_class = get_parent_class($class);
-        if (false === $parent_class) {
+        if ($parent_class === false) {
             return $this->buildPivotClassName($class, $pivot_name);
         }
 

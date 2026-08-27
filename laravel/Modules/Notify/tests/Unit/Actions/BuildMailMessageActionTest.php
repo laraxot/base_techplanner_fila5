@@ -3,15 +3,17 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Actions;
-use Modules\Notify\Tests\TestCase;
-use function Safe\file_get_contents;
-use function Safe\class_uses;
+
 use Illuminate\Notifications\Messages\MailMessage;
 use Modules\Notify\Actions\BuildMailMessageAction;
+use Modules\Notify\Tests\TestCase;
+use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 use Spatie\QueueableAction\QueueableAction;
 
-uses(\Modules\Notify\Tests\TestCase::class);
+use function Safe\class_uses;
+
+uses(TestCase::class);
 
 describe('BuildMailMessageAction', function () {
     // Test strutturali - non richiede container per la classe

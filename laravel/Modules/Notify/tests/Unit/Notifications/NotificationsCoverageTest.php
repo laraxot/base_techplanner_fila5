@@ -27,11 +27,8 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\class_uses;
 
-uses(\Modules\Notify\Tests\TestCase::class);
+uses(TestCase::class);
 use Modules\Xot\Tests\XotBasePest;
-use PHPUnit\Framework\Assert;
-
-use function Safe\class_uses;
 
 uses(TestCase::class)->group('no-notify-db');
 
@@ -64,8 +61,7 @@ function makeThemeNotifiableDummy(): CanThemeNotificationContract
                 'from' => 'System',
                 'recipient' => 'user@example.test',
                 'body' => 'Body',
-                'channels' => ['mail', 'sms'],
-            ]);
+                'channels' => ['mail', 'sms']]);
         }
 
         public function getModel(): Model
@@ -106,15 +102,14 @@ function makeGenericNotifiableDummy(): Model
 }
 
 test('email data notification exposes mail channel and array payload', function () {
-        /** @var \Modules\Notify\Tests\TestCase $this */
+    /** @var TestCase $this */
     $emailData = EmailData::from([
         'recipient' => 'recipient@example.test',
         'from' => 'Sender Name',
         'from_email' => 'from@example.test',
         'subject' => 'Subject',
         'body_html' => '<p>Body</p>',
-        'body' => 'Body',
-    ]);
+        'body' => 'Body']);
 
     $notification = new EmailDataNotification($emailData);
 
@@ -124,16 +119,14 @@ test('email data notification exposes mail channel and array payload', function 
         'subject' => 'Subject',
         'from' => 'Sender Name',
         'from_email' => 'from@example.test',
-        'body' => 'Body',
-    ], XotBasePest::assertArray($notification->toArray(new \stdClass())));
+        'body' => 'Body'], XotBasePest::assertArray($notification->toArray(new \stdClass())));
 });
 
 test('sms notification builds sms payload and provider config', function () {
     $notification = new SmsNotification('Test SMS', [
         'recipient' => '+39123',
         'from' => 'Xot',
-        'provider' => 'netfun',
-    ]);
+        'provider' => 'netfun']);
 
     $sms = $notification->toSms(new \stdClass());
 
@@ -156,8 +149,7 @@ test('telegram notification uses telegram channel class and returns message', fu
 test('whatsapp notification exposes whatsapp channel and provider', function () {
     $notification = new WhatsAppNotification('Hello WA', [
         'recipient' => '+39999',
-        'provider' => 'twilio',
-    ]);
+        'provider' => 'twilio']);
 
     $wa = $notification->toWhatsApp(new \stdClass());
 
@@ -174,8 +166,7 @@ test('theme notification returns channels and array payload', function () {
     Assert::assertSame(['mail', 'sms'], $notification->via($notifiable));
     Assert::assertSame([
         'foo' => 'bar',
-        '_name' => 'welcome-email',
-    ], $notification->toArray($notifiable));
+        '_name' => 'welcome-email'], $notification->toArray($notifiable));
     Assert::assertTrue(in_array(Queueable::class, class_uses($notification), true));
 });
 

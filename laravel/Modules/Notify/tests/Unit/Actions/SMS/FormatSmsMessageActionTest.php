@@ -3,19 +3,12 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Actions\SMS;
-use function Safe\file_get_contents;
+
 use Modules\Notify\Actions\SMS\FormatSmsMessageAction;
 use Modules\Notify\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 use Spatie\QueueableAction\QueueableAction;
-use function Safe\class_uses;
-
-uses(\Modules\Notify\Tests\TestCase::class);
-
-describe('FormatSmsMessageAction', function () {
-        it('can be instantiated', function () {
-                $action = new FormatSmsMessageAction;
 
 use function Safe\class_uses;
 
@@ -29,7 +22,7 @@ describe('FormatSmsMessageAction', function () {
     });
 
     it('has execute method with correct signature', function () {
-                $action = new FormatSmsMessageAction;
+        $action = new FormatSmsMessageAction();
 
         $reflection = new \ReflectionClass($action);
         $method = $reflection->getMethod('execute');
@@ -39,7 +32,7 @@ describe('FormatSmsMessageAction', function () {
     });
 
     it('execute accepts string parameter', function () {
-                $action = new FormatSmsMessageAction;
+        $action = new FormatSmsMessageAction();
 
         $reflection = new \ReflectionClass($action);
         $method = $reflection->getMethod('execute');
@@ -67,7 +60,7 @@ describe('FormatSmsMessageAction', function () {
     });
 
     it('has correct namespace', function () {
-                $action = new FormatSmsMessageAction;
+        $action = new FormatSmsMessageAction();
 
         $reflection = new \ReflectionClass($action);
 
@@ -75,10 +68,7 @@ describe('FormatSmsMessageAction', function () {
     });
 
     it('has required imports', function () {
-                $action = new FormatSmsMessageAction;
-
-        $reflection = new \ReflectionClass($action);
-        $content = \notifyReflectionSource($reflection);
+        $action = new FormatSmsMessageAction();
 
         $reflection = new \ReflectionClass($action);
         $content = TestCase::notifyReflectionSource($reflection);
@@ -86,11 +76,7 @@ describe('FormatSmsMessageAction', function () {
     });
 
     it('is not using QueueableAction trait', function () {
-                $action = new FormatSmsMessageAction;
-
-        $traits = class_uses(FormatSmsMessageAction::class);
-
-        Assert::assertArrayNotHasKey(QueueableAction::class, $traits);
+        $action = new FormatSmsMessageAction();
 
         $traits = class_uses(FormatSmsMessageAction::class);
 

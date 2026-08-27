@@ -13,6 +13,4 @@ return [
         'created_at' => ['label' => 'created_at'],
         'updated_by' => ['label' => 'updated_by'],
         'created_by' => ['label' => 'created_by'],
-        'user_id' => ['label' => 'user_id'],
-    ],
-];
+        'user_id' => ['label' => 'user_id']]];

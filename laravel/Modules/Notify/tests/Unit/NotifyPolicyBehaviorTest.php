@@ -55,8 +55,7 @@ test('policy Notify vuote ereditano before super-admin da XotBasePolicy', functi
         new ContactPolicy(),
         new NotificationPolicy(),
         new MailTemplatePolicy(),
-        new NotificationTemplatePolicy(),
-    ] as $policy) {
+        new NotificationTemplatePolicy()] as $policy) {
         Assert::assertTrue($policy->before(notifyBehaviorUser(['super-admin']), 'viewAny'));
         Assert::assertNull($policy->before(notifyBehaviorUser(), 'viewAny'));
     }

@@ -11,14 +11,13 @@ use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
 class NotificationLogInfolist extends XotBaseResourceInfolist
 {
     /**
-     * @return array<string, \Filament\Schemas\Components\Component>
+     * @return array<string, Component>
      */
     public static function getInfolistSchema(): array
     {
         return [
             'id' => TextEntry::make('id'),
             'name' => TextEntry::make('name'),
-            'created_at' => TextEntry::make('created_at')->dateTime(),
-        ];
+            'created_at' => TextEntry::make('created_at')->dateTime()];
     }
 }

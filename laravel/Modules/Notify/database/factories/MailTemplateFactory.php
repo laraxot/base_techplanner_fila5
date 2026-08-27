@@ -31,7 +31,6 @@ class MailTemplateFactory extends Factory
             'type' => $this->faker->randomElement(['email', 'notification', 'sms']),
             'is_active' => $this->faker->boolean(80),
             'created_at' => $this->faker->dateTimeBetween('-1 year'),
-            'updated_at' => $this->faker->dateTimeBetween('-1 year'),
-        ];
+            'updated_at' => $this->faker->dateTimeBetween('-1 year')];
     }
 }

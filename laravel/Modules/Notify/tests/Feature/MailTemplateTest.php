@@ -9,12 +9,8 @@ use Modules\Notify\Models\MailTemplate;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-
-
-
-uses(\Modules\Notify\Tests\TestCase::class);
+uses(TestCase::class);
 use Modules\Xot\Tests\XotBasePest;
-use PHPUnit\Framework\Assert;
 
 uses(TestCase::class)->group('notify-db');
 
@@ -26,8 +22,7 @@ describe('MailTemplate Model Tests', function () {
             'slug' => 'test-template',
             'subject' => ['en' => 'Test Subject'],
             'html_template' => ['en' => '<h1>Test HTML</h1>'],
-            'text_template' => ['en' => 'Test Text'],
-        ]);
+            'text_template' => ['en' => 'Test Text']]);
 
         Assert::assertInstanceOf(MailTemplate::class, $template);
 
@@ -36,8 +31,7 @@ describe('MailTemplate Model Tests', function () {
         XotBasePest::assertTableHas('notify', 'mail_templates', [
             'id' => $template->id,
             'name' => 'Test Template',
-            'slug' => $template->slug,
-        ]);
+            'slug' => $template->slug]);
     });
 
     it('can update a mail template', function () {
@@ -46,8 +40,7 @@ describe('MailTemplate Model Tests', function () {
             'mailable' => 'App\Mail\TestMail2',
             'slug' => 'test-template-2',
             'subject' => ['en' => 'Test Subject 2'],
-            'html_template' => ['en' => '<h1>Test HTML 2</h1>'],
-        ]);
+            'html_template' => ['en' => '<h1>Test HTML 2</h1>']]);
 
         $template->update(['name' => 'Updated Template']);
 
@@ -60,14 +53,12 @@ describe('MailTemplate Model Tests', function () {
             'mailable' => 'App\Mail\DeleteMail',
             'slug' => 'delete-me',
             'subject' => ['en' => 'Delete Subject'],
-            'html_template' => ['en' => '<h1>Delete HTML</h1>'],
-        ]);
+            'html_template' => ['en' => '<h1>Delete HTML</h1>']]);
 
         $templateId = $template->id;
         $template->delete();
 
         XotBasePest::assertTableMissing('notify', 'mail_templates', [
-            'id' => $templateId,
-        ]);
+            'id' => $templateId]);
     });
 });

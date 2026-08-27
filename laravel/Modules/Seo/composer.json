@@ -35,9 +35,6 @@
     },
     "require": {
         "spatie/laravel-sitemap": "^7.0"
-    "require_comment": {
-        "openai-php/laravel": "*",
-        "thecodingmachine/safe": "^2.5"
     },
     "require-dev_comment": {
         "laravel/pint": "^1.13",

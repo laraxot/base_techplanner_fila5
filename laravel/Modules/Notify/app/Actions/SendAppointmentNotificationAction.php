@@ -41,16 +41,14 @@ class SendAppointmentNotificationAction
             // we return early with logging
             Log::debug('Notification service not fully implemented - missing Patient models', [
                 'type' => $type,
-                'additional_data' => $additionalData,
-            ]);
+                'additional_data' => $additionalData]);
 
             return false;
         } catch (Exception $e) {
             Log::error('Errore nell\'invio della notifica di appuntamento', [
                 'type' => $type,
                 'error' => $e->getMessage(),
-                'trace' => $e->getTraceAsString(),
-            ]);
+                'trace' => $e->getTraceAsString()]);
 
             return false;
         }

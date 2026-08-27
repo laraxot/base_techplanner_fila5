@@ -109,7 +109,6 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media;
  *
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $updater
- *
  * @property MediaCollection<int, Media> $media
  * @property int|null $media_count
  * @property Carbon|null $deleted_at
@@ -161,8 +160,7 @@ class Contact extends BaseModel
         'attribute_11',
         'attribute_12',
         'attribute_13',
-        'attribute_14',
-    ];
+        'attribute_14'];
 
     /** @return array<string, string> */
     #[Override]
@@ -180,7 +178,6 @@ class Contact extends BaseModel
             // 'date_start' => 'datetime:Y-m-d\TH:i',
             // 'date_end' => 'datetime:Y-m-d\TH:i',
             'model_id' => 'string',
-            'user_id' => 'string',
-        ];
+            'user_id' => 'string'];
     }
 }

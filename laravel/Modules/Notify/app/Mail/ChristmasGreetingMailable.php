@@ -24,8 +24,7 @@ class ChristmasGreetingMailable extends Mailable
     public function __construct(
         public string $recipientName = 'Cliente Valutato',
         public string $senderName = 'Il Team del nostro Studio',
-    ) {
-    }
+    ) {}
 
     /**
      * Get the message envelope.
@@ -53,8 +52,7 @@ class ChristmasGreetingMailable extends Mailable
             view: $seasonalContentViewPath, // Use the determined content view
             with: [
                 'recipientName' => $this->recipientName,
-                'senderName' => $this->senderName,
-            ],
+                'senderName' => $this->senderName],
         );
     }
 

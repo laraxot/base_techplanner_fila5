@@ -12,9 +12,20 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
+/**
+ * @param  array<string, mixed>  $attributes
+ */
+function mediaTestCreate(array $attributes = []): Media
+{
+    $media = Media::factory()->create($attributes);
+    Assert::assertInstanceOf(Media::class, $media);
+
+    return $media;
+}
+
 describe('Media model (database)', function (): void {
     it('can create media with minimal data', function (): void {
-        $media = Media::factory()->create([
+        $media = mediaTestCreate([
             'model_type' => 'Modules\User\Models\User',
             'model_id' => '1',
             'collection_name' => 'avatars',
@@ -60,7 +71,7 @@ describe('Media model (database)', function (): void {
             'order_column' => 1,
         ];
 
-        $media = Media::factory()->create($mediaData);
+        $media = mediaTestCreate($mediaData);
 
         XotBasePest::assertTableHas('media', 'media', [
             'id' => SafeIntCastAction::cast($media->getKey()),
@@ -89,7 +100,7 @@ describe('Media model (database)', function (): void {
     });
 
     it('media delete removes the record', function (): void {
-        $media = Media::factory()->create();
+        $media = mediaTestCreate();
         $mediaId = SafeIntCastAction::cast($media->getKey());
 
         $media->delete();
@@ -98,7 +109,7 @@ describe('Media model (database)', function (): void {
     });
 
     it('can find media by model type', function (): void {
-        $media = Media::factory()->create(['model_type' => 'App\Models\UniqueModel']);
+        $media = mediaTestCreate(['model_type' => 'App\Models\UniqueModel']);
 
         $foundMedia = Media::where('model_type', 'App\Models\UniqueModel')->first();
 
@@ -107,7 +118,7 @@ describe('Media model (database)', function (): void {
     });
 
     it('can find media by model id', function (): void {
-        $media = Media::factory()->create(['model_id' => '999']);
+        $media = mediaTestCreate(['model_id' => '999']);
 
         $foundMedia = Media::where('model_id', '999')->first();
 
@@ -129,7 +140,7 @@ describe('Media model (database)', function (): void {
     });
 
     it('can find media by name', function (): void {
-        $media = Media::factory()->create(['name' => 'unique-media-name']);
+        $media = mediaTestCreate(['name' => 'unique-media-name']);
 
         $foundMedia = Media::where('name', 'unique-media-name')->first();
 
@@ -138,7 +149,7 @@ describe('Media model (database)', function (): void {
     });
 
     it('can find media by file name', function (): void {
-        $media = Media::factory()->create(['file_name' => 'unique-file.jpg']);
+        $media = mediaTestCreate(['file_name' => 'unique-file.jpg']);
 
         $foundMedia = Media::where('file_name', 'unique-file.jpg')->first();
 
@@ -232,7 +243,7 @@ describe('Media model (database)', function (): void {
     });
 
     it('can update media', function (): void {
-        $media = Media::factory()->create(['name' => 'Old Name']);
+        $media = mediaTestCreate(['name' => 'Old Name']);
 
         $media->update(['name' => 'New Name']);
 
@@ -243,7 +254,7 @@ describe('Media model (database)', function (): void {
     });
 
     it('can handle null values', function (): void {
-        $media = Media::factory()->create([
+        $media = mediaTestCreate([
             'model_type' => 'App\Models\Test',
             'model_id' => '1',
             'collection_name' => 'test',
@@ -279,25 +290,28 @@ describe('Media model (database)', function (): void {
     });
 
     it('media has media converts relationship', function (): void {
-        $media = Media::factory()->create();
+        $media = mediaTestCreate();
+        $reflection = new \ReflectionClass($media);
 
-        expect(method_exists($media, 'mediaConverts'))->toBeTrue();
+        expect($reflection->hasMethod('mediaConverts'))->toBeTrue();
     });
 
     it('media has temporary upload relationship', function (): void {
-        $media = Media::factory()->create();
+        $media = mediaTestCreate();
+        $reflection = new \ReflectionClass($media);
 
-        expect(method_exists($media, 'temporaryUpload'))->toBeTrue();
+        expect($reflection->hasMethod('temporaryUpload'))->toBeTrue();
     });
 
     it('media has creator relationship', function (): void {
-        $media = Media::factory()->create();
+        $media = mediaTestCreate();
+        $reflection = new \ReflectionClass($media);
 
-        expect(method_exists($media, 'creator'))->toBeTrue();
+        expect($reflection->hasMethod('creator'))->toBeTrue();
     });
 
     it('media can get url conversion', function (): void {
-        $media = Media::factory()->create([
+        $media = mediaTestCreate([
             'file_name' => 'test-image.jpg',
         ]);
 
@@ -312,7 +326,7 @@ describe('Media model (database)', function (): void {
     });
 
     it('media has entry conversions attribute', function (): void {
-        $media = Media::factory()->create([
+        $media = mediaTestCreate([
             'generated_conversions' => ['thumb' => true, 'medium' => false],
         ]);
 
@@ -325,11 +339,11 @@ describe('Media model (database)', function (): void {
     });
 
     it('media has factory', function (): void {
-        $media = Media::factory()->create();
+        $media = mediaTestCreate();
 
         expect($media->id)->toBeGreaterThan(0);
     });
-// @phpstan-ignore-next-line method.notFound, method.nonObject (Pest closure $this binds to a generic stub; project TestCase members not visible to PHPStan statically)
+    // @phpstan-ignore-next-line method.notFound, method.nonObject (Pest closure $this binds to a generic stub; project TestCase members not visible to PHPStan statically)
 })->group('media-db');
 
 it('media has casts', function (): void {

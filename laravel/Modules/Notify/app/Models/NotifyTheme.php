@@ -68,7 +68,6 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  *
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $updater
- *
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
  *
@@ -95,13 +94,11 @@ class NotifyTheme extends BaseModel
         'logo_src',
         'logo_width',
         'logo_height',
-        'view_params',
-    ];
+        'view_params'];
 
     /** @var list<string> */
     protected $appends = [
-        'logo',
-    ];
+        'logo'];
 
     /**
      * @param  array<string, mixed>|null  $value
@@ -113,8 +110,7 @@ class NotifyTheme extends BaseModel
             // 'path' => asset(strval($this->logo_src)),
             'path' => url($this->getFirstMediaUrl()),
             'width' => $this->logo_width ?? 50,
-            'height' => $this->logo_height ?? 50,
-        ];
+            'height' => $this->logo_height ?? 50];
     }
 
     /**
@@ -140,7 +136,6 @@ class NotifyTheme extends BaseModel
             'created_by' => 'string',
             'deleted_by' => 'string',
             // 'published_at' => 'datetime:Y-m-d', // da verificare
-            'view_params' => 'array',
-        ];
+            'view_params' => 'array'];
     }
 }

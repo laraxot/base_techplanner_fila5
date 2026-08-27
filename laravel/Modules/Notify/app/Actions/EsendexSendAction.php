@@ -6,14 +6,15 @@ namespace Modules\Notify\Actions;
 
 use Exception;
 use Modules\Notify\Datas\SmsData;
+use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
+
 use function Safe\curl_exec;
 use function Safe\curl_getinfo;
 use function Safe\curl_init;
 use function Safe\curl_setopt;
 use function Safe\json_decode;
 use function Safe\json_encode;
-use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
 
 /**
  * @property string $base_endpoint
@@ -40,8 +41,7 @@ class EsendexSendAction
             'message_type' => 'N',
             'returnCredits' => false,
             'recipient' => [$smsData->recipient],
-            'sender' => config('esendex.sender'),
-        ];
+            'sender' => config('esendex.sender')];
 
         $curlHandle = curl_init();
         curl_setopt($curlHandle, CURLOPT_SSL_VERIFYPEER, false);
@@ -50,8 +50,7 @@ class EsendexSendAction
         curl_setopt($curlHandle, CURLOPT_HTTPHEADER, [
             'Content-type: application/json',
             'user_key: '.$auth[0],
-            'Session_key: '.$auth[1],
-        ]);
+            'Session_key: '.$auth[1]]);
 
         curl_setopt($curlHandle, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($curlHandle, CURLOPT_POST, true);

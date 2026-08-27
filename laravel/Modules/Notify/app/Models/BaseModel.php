@@ -36,7 +36,6 @@ abstract class BaseModel extends XotBaseModel implements HasMedia
     protected function casts(): array
     {
         return array_merge(parent::casts(), [
-            'published_at' => 'datetime',
-        ]);
+            'published_at' => 'datetime']);
     }
 }

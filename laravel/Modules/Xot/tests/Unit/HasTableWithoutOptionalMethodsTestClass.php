@@ -7,7 +7,6 @@ namespace Modules\Xot\Tests\Unit;
 use Filament\Tables\Table;
 use Mockery;
 use Modules\Xot\Filament\Traits\HasXotTable;
-use Override;
 
 /**
  * Dummy class without the optional methods.
@@ -25,7 +24,6 @@ class HasTableWithoutOptionalMethodsTestClass
         return $mock;
     }
 
-    #[Override]
     public function getTableColumns(): array
     {
         return [];

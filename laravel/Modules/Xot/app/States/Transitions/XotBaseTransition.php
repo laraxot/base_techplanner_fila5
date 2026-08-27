@@ -63,7 +63,7 @@ abstract class XotBaseTransition extends Transition
     }
 
     /**
-     * @return array<int, mixed>
+     * @return array<int, array{path?: string, data?: mixed, as?: string|null, mime?: string|null}>
      */
     public function getNotificationAttachments(): array
     {
@@ -72,7 +72,7 @@ abstract class XotBaseTransition extends Transition
 
     public function getNotificationSlug(UserContract $recipient): string
     {
-        $type = $recipient->type->value;
+        $type = $recipient->type ?? 'unknown';
         $slug =
             class_basename($this->record).
             '-'.
@@ -84,6 +84,9 @@ abstract class XotBaseTransition extends Transition
         return $slug;
     }
 
+    /**
+     * @param  array<string, mixed>  $data
+     */
     public function sendRecipientNotification(RecordNotificationData $recipient, array $data): void
     {
         $slug = $this->getNotificationSlug($recipient->record);

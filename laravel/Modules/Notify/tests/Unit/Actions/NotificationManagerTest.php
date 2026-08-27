@@ -24,24 +24,6 @@ function actionsNotificationManagerRecipient(): Model
     };
 }
 
-/**
- * @template T of object
- *
- * @param  class-string<T>  $class
- * @return MockInterface&T
- */
-function actionsNotificationManagerMock(string $class): MockInterface
-{
-    /** @var MockInterface&T $mock */
-    $mock = Mockery::mock($class);
-
-    return $mock;
-}
-
-beforeEach(function (): void {
-    $this->notificationManager = new NotificationManager;
-});
-
 afterEach(function (): void {
     Mockery::close();
 });
@@ -71,8 +53,7 @@ it('can send notification to multiple recipients', function (): void {
     $notificationManager = new NotificationManager();
     $recipients = [
         actionsNotificationManagerRecipient(),
-        actionsNotificationManagerRecipient(),
-    ];
+        actionsNotificationManagerRecipient()];
     $templateCode = 'test_template';
     $data = ['key' => 'value'];
     $channels = ['email'];
@@ -83,8 +64,6 @@ it('can send notification to multiple recipients', function (): void {
 
     $action = typedMock(SendNotificationAction::class);
     mockExpectation($action, 'handle')->times(2);
-
-    app()->instance(SendNotificationAction::class, $action);
 
     app()->instance(SendNotificationAction::class, $action);
 
@@ -102,7 +81,6 @@ it('can get template by code', function (): void {
     mockExpectation($template, 'getAttribute')->with('is_active')->andReturn(true);
 
     $result = $notificationManager->getTemplate($code);
-    $result = $this->notificationManager->getTemplate($code);
 
     expect($result)->toBeNull();
 });
@@ -121,34 +99,32 @@ it('throws exception when template not found', function (): void {
     $recipient = actionsNotificationManagerRecipient();
     $templateCode = 'invalid_template';
 
-    expect(fn () => $this->notificationManager->send($recipient, $templateCode))
+    expect(fn () => $notificationManager->send($recipient, $templateCode))
         ->toThrow(Exception::class, 'Template not found: invalid_template');
 });
 
 it('returns array from send method', function (): void {
-    /** @var TestCase $this */
     $notificationManager = new NotificationManager();
     $recipient = actionsNotificationManagerRecipient();
     $templateCode = 'test_template';
 
-    $action = actionsNotificationManagerMock(SendNotificationAction::class);
+    $action = typedMock(SendNotificationAction::class);
     mockExpectation($action, 'handle')->once();
 
-    $this->instance(SendNotificationAction::class, $action);
+    app()->instance(SendNotificationAction::class, $action);
 
     $notificationManager->send($recipient, $templateCode);
 });
 
 it('returns array from send multiple method', function (): void {
-    /** @var TestCase $this */
     $notificationManager = new NotificationManager();
     $recipients = [actionsNotificationManagerRecipient()];
     $templateCode = 'test_template';
 
-    $action = actionsNotificationManagerMock(SendNotificationAction::class);
+    $action = typedMock(SendNotificationAction::class);
     mockExpectation($action, 'handle')->once();
 
-    $this->instance(SendNotificationAction::class, $action);
+    app()->instance(SendNotificationAction::class, $action);
 
     $result = $notificationManager->sendMultiple($recipients, $templateCode);
 

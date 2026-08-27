@@ -5,9 +5,17 @@ declare(strict_types=1);
 namespace Modules\Notify\Traits;
 
 use Illuminate\Support\Str;
+use Webmozart\Assert\Assert;
+
 use function Safe\preg_replace_callback;
 
-/** @phpstan-ignore trait.unused */
+/**
+ * Trait HasNotificationTracking.
+ *
+ * Fornisce funzionalità per la gestione del tracking delle notifiche.
+ *
+ * @phpstan-ignore trait.unused (Trait composable: consumer in app/ futuri; coverage via test doubles in tests/Unit/Traits/)
+ */
 trait HasNotificationTracking
 {
     /**

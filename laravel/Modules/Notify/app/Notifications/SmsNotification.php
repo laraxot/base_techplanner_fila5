@@ -47,8 +47,7 @@ class SmsNotification extends Notification implements ShouldQueue
             $this->smsData = SmsData::from([
                 'body' => $content,
                 'recipient' => is_scalar($recipient) ? (string) $recipient : '',
-                'from' => is_scalar($from) ? (string) $from : '',
-            ]);
+                'from' => is_scalar($from) ? (string) $from : '']);
         }
 
         $this->config = $config;
@@ -58,7 +57,6 @@ class SmsNotification extends Notification implements ShouldQueue
      * Get the notification's delivery channels.
      *
      * @param  mixed  $notifiable  The entity to be notified (l'entità da notificare)
-     *
      * @return array<int, string>
      */
     public function via(mixed $notifiable): array

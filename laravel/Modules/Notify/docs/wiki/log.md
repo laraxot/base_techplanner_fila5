@@ -1,3 +1,9 @@
+## [2026-08-27] quality | PHPStan `Modules/Notify/app` — XOT-5.43
+
+- `GenericNotification::via()` — PHPDoc `@param object` allineato al type hint nativo
+- `HasNotificationTracking` / `HasTenantNotifications` — `@phpstan-ignore trait.unused` (trait composable, coverage in `tests/Unit/Traits/`)
+- Doc: [concepts/phpstan-pest-test-doubles.md](concepts/phpstan-pest-test-doubles.md) §2b
+
 ## [2026-06-10] schema | notifications owner Notify — XotBaseMigration
 
 - Canonico: `2026_06_10_133000_create_notifications_table.php`

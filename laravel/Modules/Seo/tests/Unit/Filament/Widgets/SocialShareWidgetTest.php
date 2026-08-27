@@ -11,15 +11,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 it('builds social links and exposes platforms in widget view data', function (): void {
-    /** @var TestCase $this */
     $widget = new class() extends SocialShareWidget
-    {
-        /** @return array<string, mixed> */
-use PHPUnit\Framework\Assert;
-uses(\Modules\Seo\Tests\TestCase::class);
-
-it('builds social links and exposes platforms in widget view data', function (): void {
-    $widget = new class extends SocialShareWidget
     {
         /** @return array<string, mixed> */
         public function exposeViewData(): array
@@ -52,7 +44,7 @@ it('builds social links and exposes platforms in widget view data', function ():
 });
 
 it('returns empty form schema', function (): void {
-    $widget = new SocialShareWidget;
+    $widget = new SocialShareWidget();
 
     Assert::assertSame([], $widget->getFormSchema());
 });

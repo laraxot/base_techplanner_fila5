@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Models\Traits;
 
+use Carbon\Carbon;
+use DateTimeInterface;
 use Illuminate\Database\Eloquent\Builder;
 
 /**
@@ -135,12 +137,20 @@ trait HasCommonScopes
      */
     public function isPublished(): bool
     {
-        if (! isset($this->published_at)) {
+        $publishedAt = $this->getAttribute('published_at');
+        if ($publishedAt === null) {
             return false;
         }
 
-        return $this->published_at !== null &&
-               $this->published_at->isPast();
+        if ($publishedAt instanceof Carbon) {
+            return $publishedAt->isPast();
+        }
+
+        if ($publishedAt instanceof DateTimeInterface) {
+            return Carbon::instance(\DateTimeImmutable::createFromInterface($publishedAt))->isPast();
+        }
+
+        return Carbon::parse((string) $publishedAt)->isPast();
     }
 
     /**

@@ -8,7 +8,6 @@ use Filament\Tables\Table;
 use Illuminate\Support\Collection;
 use Mockery;
 use Modules\Xot\Filament\Traits\HasXotTable;
-use Override;
 
 /**
  * Dummy class that uses HasTable and HasXotTable traits for testing.
@@ -26,7 +25,6 @@ class HasTableWithXotTestClass
         return $mock;
     }
 
-    #[Override]
     public function getTableColumns(): array
     {
         return [];

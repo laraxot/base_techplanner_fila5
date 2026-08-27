@@ -59,8 +59,7 @@ class AppointmentNotificationMail extends Mailable implements ShouldQueue
             tags: ['appointment', $type],
             metadata: [
                 'appointment_id' => is_object($appointment) && isset($appointment->id) ? $appointment->id : null,
-                'type' => $type,
-            ],
+                'type' => $type],
         );
     }
 
@@ -86,8 +85,7 @@ class AppointmentNotificationMail extends Mailable implements ShouldQueue
                 'appointment' => $this->notificationData['appointment'],
                 'patient' => $this->notificationData['patient'],
                 'type' => $type,
-                'additionalData' => $this->notificationData['additionalData'] ?? [],
-            ],
+                'additionalData' => $this->notificationData['additionalData'] ?? []],
         );
     }
 

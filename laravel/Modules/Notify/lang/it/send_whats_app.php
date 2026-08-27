@@ -12,13 +12,10 @@ return [
         'driver' => ['label' => 'driver', 'placeholder' => 'driver', 'helper_text' => 'driver', 'description' => 'driver'],
         'parameters' => ['label' => 'parameters', 'placeholder' => 'parameters', 'helper_text' => 'parameters', 'description' => 'parameters'],
         'media_url' => ['label' => 'media_url', 'placeholder' => 'media_url', 'helper_text' => 'media_url', 'description' => 'media_url'],
-        'media_type' => ['label' => 'media_type', 'placeholder' => 'media_type', 'helper_text' => 'media_type', 'description' => 'media_type'],
-    ],
+        'media_type' => ['label' => 'media_type', 'placeholder' => 'media_type', 'helper_text' => 'media_type', 'description' => 'media_type']],
     'actions' => [
         'send' => ['label' => 'Invia WhatsApp', 'tooltip' => 'Invia messaggio WhatsApp', 'success' => 'Messaggio WhatsApp inviato con successo', 'error' => 'Errore nell\'invio del messaggio WhatsApp'],
         'whatsappFormActions' => ['label' => 'whatsappFormActions', 'icon' => 'whatsappFormActions', 'tooltip' => 'whatsappFormActions'],
-        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
-    ],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save']],
     'label' => 'Send Whats App',
-    'plural_label' => 'Send Whats App (Plurale)',
-];
+    'plural_label' => 'Send Whats App (Plurale)'];

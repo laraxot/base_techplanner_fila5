@@ -37,8 +37,7 @@ class SendRecordsNotificationBulkAction extends XotBaseBulkAction
             })
             ->schema([
                 'mail_template_slug' => MailTemplateSelect::make('mail_template_slug'),
-                'channels' => ChannelCheckboxList::make('channels'),
-            ])
+                'channels' => ChannelCheckboxList::make('channels')])
             ->deselectRecordsAfterCompletion();
     }
 }

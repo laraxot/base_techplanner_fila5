@@ -3,7 +3,7 @@ title: "Notify — test doubles e helper PHPStan"
 type: concept
 tags: [notify, phpstan, pest, testing, doubles]
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-08-27
 qmd: "Notify NotificationManager test doubles trait PHPStan Pest mockService"
 issues:
   - "https://github.com/laraxot/module_fixcity_fila5/issues/52"
@@ -50,6 +50,16 @@ File owner: `tests/Unit/Traits/NotifyTraitTestDoubles.php`
 | `NotifyTenantDummyModel` | `HasTenantNotifications` |
 
 Espongono metodi `public` che delegano ai `protected` del trait — pattern KISS per test unitari senza istanziare modelli Eloquent completi.
+
+### 2b. `trait.unused` su scope `app/` (XOT-5.43)
+
+PHPStan analizza solo `Modules/Notify/app/` nel gate modulo: i trait composable senza consumer in produzione segnalano `trait.unused`. **Non** creare modelli probe in `app/` — annotare il docblock del trait con `@phpstan-ignore trait.unused` e motivazione (stesso pattern di `HasNotificationRateLimiting`, Geo `HasAddress`, Xot `EnumIntegerTrait`).
+
+Verifica:
+
+```bash
+cd laravel && ./vendor/bin/phpstan analyse Modules/Notify/app --memory-limit=-1 --no-progress
+```
 
 ### 3. Mock `SendNotificationAction`
 

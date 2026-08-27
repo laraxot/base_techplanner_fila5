@@ -25,9 +25,6 @@ use function Safe\json_encode;
 
 uses(TestCase::class);
 use Modules\Xot\Tests\XotBasePest;
-use PHPUnit\Framework\Assert;
-
-use function Safe\json_encode;
 
 uses(TestCase::class)->group('notify-db');
 
@@ -56,9 +53,7 @@ describe('Notify Theme PartOne', function (): void {
             'view_params' => [
                 'company_name' => 'Example Corp',
                 'primary_color' => '#3b82f6',
-                'secondary_color' => '#64748b',
-            ],
-        ]);
+                'secondary_color' => '#64748b']]);
         XotBasePest::assertTableHas('notify', 'notify_themes', [
             'id' => $theme->id,
             'lang' => 'it',
@@ -77,9 +72,7 @@ describe('Notify Theme PartOne', function (): void {
             'view_params' => json_encode([
                 'company_name' => 'Example Corp',
                 'primary_color' => '#3b82f6',
-                'secondary_color' => '#64748b',
-            ]),
-        ]);
+                'secondary_color' => '#64748b'])]);
 
         Assert::assertInstanceOf(NotifyTheme::class, $theme);
     });
@@ -102,8 +95,7 @@ describe('Notify Theme PartOne', function (): void {
             'logo_src',
             'logo_width',
             'logo_height',
-            'view_params',
-        ];
+            'view_params'];
 
         Assert::assertEquals($expectedFillable, $theme->getFillable());
     });
@@ -120,8 +112,7 @@ describe('Notify Theme PartOne', function (): void {
             'updated_by' => 'string',
             'created_by' => 'string',
             'deleted_by' => 'string',
-            'view_params' => 'array',
-        ];
+            'view_params' => 'array'];
 
         Assert::assertEquals($expectedCasts, $theme->getCasts());
     });
@@ -142,24 +133,19 @@ describe('Notify Theme PartOne', function (): void {
             'accent_color' => '#10b981',
             'fonts' => [
                 'primary' => 'Inter',
-                'secondary' => 'Roboto',
-            ],
+                'secondary' => 'Roboto'],
             'layout' => [
                 'max_width' => '1200px',
                 'padding' => '20px',
-                'border_radius' => '8px',
-            ],
-        ];
+                'border_radius' => '8px']];
 
         $theme = NotifyTheme::create([
             'type' => 'email',
             'subject' => 'Test Theme',
-            'view_params' => $viewParams,
-        ]);
+            'view_params' => $viewParams]);
         XotBasePest::assertTableHas('notify', 'notify_themes', [
             'id' => $theme->id,
-            'view_params' => json_encode($viewParams),
-        ]);
+            'view_params' => json_encode($viewParams)]);
         Assert::assertEquals('Test Company', $theme->view_params['company_name']);
         Assert::assertEquals('#ef4444', $theme->view_params['primary_color']);
         Assert::assertEquals('Inter', TestCase::notifyArrayGet($theme->view_params, 'fonts', 'primary'));
@@ -172,8 +158,7 @@ describe('Notify Theme PartOne', function (): void {
             'subject' => 'Logo Test Theme',
             'logo_src' => '/images/custom-logo.png',
             'logo_width' => 300,
-            'logo_height' => 120,
-        ]);
+            'logo_height' => 120]);
 
         $logo = $theme->logo;
         Assert::assertArrayHasKey('path', $logo);
@@ -187,8 +172,7 @@ describe('Notify Theme PartOne', function (): void {
         $theme = NotifyTheme::create([
             'type' => 'email',
             'subject' => 'Default Logo Theme',
-            'logo_src' => '/images/default-logo.png',
-        ]);
+            'logo_src' => '/images/default-logo.png']);
 
         $logo = $theme->logo;
 
@@ -202,22 +186,19 @@ describe('Notify Theme PartOne', function (): void {
             'subject' => 'Original Subject',
             'body' => 'Original body text',
             'theme' => 'original',
-            'view_params' => ['original' => true],
-        ]);
+            'view_params' => ['original' => true]]);
 
         $theme->update([
             'subject' => 'Updated Subject',
             'body' => 'Updated body text',
             'theme' => 'updated',
-            'view_params' => ['updated' => true, 'version' => '2.0'],
-        ]);
+            'view_params' => ['updated' => true, 'version' => '2.0']]);
         XotBasePest::assertTableHas('notify', 'notify_themes', [
             'id' => $theme->id,
             'subject' => 'Updated Subject',
             'body' => 'Updated body text',
             'theme' => 'updated',
-            'view_params' => json_encode(['updated' => true, 'version' => '2.0']),
-        ]);
+            'view_params' => json_encode(['updated' => true, 'version' => '2.0'])]);
 
         Assert::assertEquals('Updated Subject', XotBasePest::assertFreshModel($theme, NotifyTheme::class)->subject);
         Assert::assertEquals('Updated body text', XotBasePest::assertFreshModel($theme, NotifyTheme::class)->body);
@@ -229,20 +210,17 @@ describe('Notify Theme PartOne', function (): void {
         NotifyTheme::create([
             'type' => 'email',
             'subject' => 'Italian Welcome',
-            'lang' => 'it',
-        ]);
+            'lang' => 'it']);
 
         NotifyTheme::create([
             'type' => 'email',
             'subject' => 'English Welcome',
-            'lang' => 'en',
-        ]);
+            'lang' => 'en']);
 
         NotifyTheme::create([
             'type' => 'email',
             'subject' => 'German Welcome',
-            'lang' => 'de',
-        ]);
+            'lang' => 'de']);
 
         $italianThemes = NotifyTheme::where('lang', 'it')->get();
         $englishThemes = NotifyTheme::where('lang', 'en')->get();

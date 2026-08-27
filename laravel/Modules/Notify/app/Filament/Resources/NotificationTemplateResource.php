@@ -72,8 +72,7 @@ class NotificationTemplateResource extends XotBaseResource
                 ->maxSize(5120)
                 ->acceptedFileTypes(['application/pdf', 'image/*'])
                 ->columnSpan(['lg' => 3])
-                ->helperText(__('notify::template.form.attachments.helper')),
-        ];
+                ->helperText(__('notify::template.form.attachments.helper'))];
     }
 
     #[Override]
@@ -81,8 +80,7 @@ class NotificationTemplateResource extends XotBaseResource
     {
         return [
             ...parent::getPages(),
-            'preview' => PreviewNotificationTemplate::route('/{record}/preview'),
-        ];
+            'preview' => PreviewNotificationTemplate::route('/{record}/preview')];
     }
 
     /*

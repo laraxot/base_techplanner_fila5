@@ -15,12 +15,10 @@ use Modules\Notify\Notifications\Channels\TelegramChannel;
 use Modules\Notify\Notifications\ThemeNotification;
 use Modules\Notify\Tests\Fixtures\NetfunChannelNotifiableDummy;
 use Modules\Notify\Tests\TestCase;
-use Mockery;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 use Modules\Xot\Tests\XotBasePest;
-use PHPUnit\Framework\Assert;
 
 uses(TestCase::class)->group('no-notify-db');
 
@@ -33,8 +31,7 @@ function makeThemeNotificationDummy(): ThemeNotification
             return SmsData::from([
                 'from' => 'Xot',
                 'recipient' => '+391234567890',
-                'body' => 'Body',
-            ]);
+                'body' => 'Body']);
         }
     };
 }
@@ -100,7 +97,6 @@ test('telegram notifications channel throws when notification has no toTelegram 
 
     XotBasePest::assertThrows(
         fn () => $channel->send(makeTelegramNotifiableDummy(), new class() extends Notification {}),
-        fn () => $channel->send(makeTelegramNotifiableDummy(), new class extends Notification {}),
         \Exception::class,
     );
 });

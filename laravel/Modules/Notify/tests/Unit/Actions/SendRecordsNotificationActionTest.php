@@ -34,8 +34,7 @@ test('send records notification action counts successful sends', function (): vo
 
     $records = new EloquentCollection([
         makeDummyBulkNotifyRecord(['id' => 1, 'name' => 'Alpha']),
-        makeDummyBulkNotifyRecord(['id' => 2, 'name' => 'Beta']),
-    ]);
+        makeDummyBulkNotifyRecord(['id' => 2, 'name' => 'Beta'])]);
 
     $result = app(SendRecordsNotificationAction::class)->execute(
         records: $records,
@@ -55,8 +54,7 @@ test('send records notification action accumulates errors per channel', function
 
     $records = new EloquentCollection([
         makeDummyBulkNotifyRecord(['id' => 1, 'name' => 'Ok Record', 'should_fail' => false]),
-        makeDummyBulkNotifyRecord(['id' => 2, 'name' => 'Fail Record', 'should_fail' => true]),
-    ]);
+        makeDummyBulkNotifyRecord(['id' => 2, 'name' => 'Fail Record', 'should_fail' => true])]);
 
     $result = app(SendRecordsNotificationAction::class)->execute(
         records: $records,

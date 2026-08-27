@@ -3,10 +3,11 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Channels;
-use function Safe\file_get_contents;
-use Modules\Notify\Channels\SmsChannel;
 
+use Modules\Notify\Channels\SmsChannel;
+use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
 describe('SmsChannel', function () {
     it('can be instantiated', function () {
         // SmsChannel requires SendSmsFactorSMSAction in constructor

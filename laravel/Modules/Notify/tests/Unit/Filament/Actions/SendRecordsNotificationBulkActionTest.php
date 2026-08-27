@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Filament\Actions;
+
 use Closure;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Model;
@@ -14,9 +15,8 @@ use Modules\Notify\Tests\Fixtures\SendRecordsNotificationBulkActionSpy;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Notify\Tests\TestCase::class);
+uses(TestCase::class);
 use Modules\Xot\Tests\XotBasePest;
-use PHPUnit\Framework\Assert;
 
 uses(TestCase::class)->group('no-notify-db');
 
@@ -76,13 +76,11 @@ test('send records notification bulk action delegates to send records action', f
 
     $records = new EloquentCollection([
         makeDummyNotifyBulkModel(['id' => 1]),
-        makeDummyNotifyBulkModel(['id' => 2]),
-    ]);
+        makeDummyNotifyBulkModel(['id' => 2])]);
 
     $callback($records, [
         'mail_template_slug' => 'template-a',
-        'channels' => ['mail', 'sms'],
-    ]);
+        'channels' => ['mail', 'sms']]);
 
     Assert::assertNotNull($spy->received);
     Assert::assertSame(2, $spy->received['count']);

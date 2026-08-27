@@ -162,8 +162,7 @@ describe('Notify highest-miss coverage', function (): void {
             SendFirebasePushNotificationPage::class => ['getPushFormSchema'],
             SendAwsEmailPage::class => ['getEmailFormSchema'],
             SendSpatieEmailPage::class => ['getEmailFormSchema'],
-            SendSmsPage::class => ['getSmsFormSchema'],
-        ];
+            SendSmsPage::class => ['getSmsFormSchema']];
 
         foreach ($pages as $class => $methods) {
             $page = notifyPageWithoutLivewire($class);
@@ -204,11 +203,9 @@ describe('Notify highest-miss coverage', function (): void {
             'notify.apns.url' => 'https://api.push.apple.com',
             'notify.webpush.vapid_public' => 'pub',
             'notify.webpush.vapid_private' => 'priv',
-            'notify.webpush.vapid_subject' => 'mailto:test@example.com',
-        ]);
+            'notify.webpush.vapid_subject' => 'mailto:test@example.com']);
         Http::fake([
-            'https://fcm.googleapis.com/*' => Http::response(['message_id' => 'mid-1'], 200),
-        ]);
+            'https://fcm.googleapis.com/*' => Http::response(['message_id' => 'mid-1'], 200)]);
         Queue::fake();
         config(['cache.default' => 'array']);
 
@@ -248,8 +245,7 @@ describe('Notify highest-miss coverage', function (): void {
             'notify.template_variables' => ['year' => '2026'],
             'notify.test_data' => ['hello' => 'Hi {{name}}'],
             'notify.webhooks' => ['url' => 'https://example.test'],
-            'notify.email' => ['from' => 'noreply@example.test'],
-        ]);
+            'notify.email' => ['from' => 'noreply@example.test']]);
 
         $replaced = ConfigHelper::replaceTemplateVariables(['msg' => 'Anno {{year}}']);
         Assert::assertSame('Anno 2026', $replaced['msg']);
@@ -275,16 +271,13 @@ describe('Notify highest-miss coverage', function (): void {
     test('push actions send across fcm apns and webpush with fakes', function (): void {
         config([
             'notify.fcm.server_key' => 'test-key',
-            'notify.fcm.url' => 'https://fcm.googleapis.com/fcm/send',
-        ]);
+            'notify.fcm.url' => 'https://fcm.googleapis.com/fcm/send']);
         Http::fake([
-            'https://fcm.googleapis.com/*' => Http::response(['message_id' => 'mid-2'], 200),
-        ]);
+            'https://fcm.googleapis.com/*' => Http::response(['message_id' => 'mid-2'], 200)]);
 
         $notification = PushNotificationData::from([
             'title' => 'Titolo',
-            'body' => 'Corpo',
-        ]);
+            'body' => 'Corpo']);
         $fcmToken = str_repeat('a', 80).':'.str_repeat('b', 40);
         $apnsToken = str_repeat('ab', 32);
 
@@ -308,17 +301,14 @@ describe('Notify highest-miss coverage', function (): void {
             'services.telegram.token' => 'telegram-token',
             'whatsapp.debug' => false,
             'whatsapp.timeout' => 5,
-            'whatsapp.from' => '+390000000000',
-        ]);
+            'whatsapp.from' => '+390000000000']);
 
         $whatsappData = WhatsAppData::from([
             'recipient' => '+393331112233',
-            'body' => 'Ciao',
-        ]);
+            'body' => 'Ciao']);
         $telegramData = TelegramData::from([
             'chatId' => '12345',
-            'text' => 'Ciao',
-        ]);
+            'text' => 'Ciao']);
 
         foreach ([
             Send360dialogWhatsAppAction::class,
@@ -327,8 +317,7 @@ describe('Notify highest-miss coverage', function (): void {
             SendTwilioWhatsAppAction::class,
             SendBotmanTelegramAction::class,
             SendNutgramTelegramAction::class,
-            SendOfficialTelegramAction::class,
-        ] as $class) {
+            SendOfficialTelegramAction::class] as $class) {
             try {
                 $action = new $class();
                 $data = str_contains($class, 'Telegram') ? $telegramData : $whatsappData;
@@ -358,14 +347,12 @@ describe('Notify highest-miss coverage', function (): void {
             'sms.drivers.netfun.api_url' => 'https://example.test/sms',
             'sms.drivers.twilio.sid' => 'sid',
             'sms.drivers.twilio.token' => 'token',
-            'sms.drivers.twilio.from' => '+390000000000',
-        ]);
+            'sms.drivers.twilio.from' => '+390000000000']);
 
         $sms = SmsData::from([
             'recipient' => '0039333123456',
             'body' => 'Test',
-            'from' => 'APP',
-        ]);
+            'from' => 'APP']);
 
         foreach ([
             NetfunSendAction::class,
@@ -373,8 +360,7 @@ describe('Notify highest-miss coverage', function (): void {
             SendTwilioSMSAction::class,
             SendNexmoSMSAction::class,
             SendPlivoSMSAction::class,
-            SendGammuSMSAction::class,
-        ] as $class) {
+            SendGammuSMSAction::class] as $class) {
             try {
                 $action = new $class();
                 $action->execute($sms);
@@ -409,8 +395,7 @@ describe('Notify highest-miss coverage', function (): void {
             'variables' => [],
             'is_active' => true,
             'conditions' => null,
-            'type' => 'email',
-        ]);
+            'type' => 'email']);
 
         $recipient = notifyDummyRecipient(['email' => 'user@example.test']);
         Notification::fake();
@@ -443,8 +428,7 @@ describe('Notify highest-miss coverage', function (): void {
             'variables' => [],
             'is_active' => true,
             'conditions' => null,
-            'type' => 'sms',
-        ]);
+            'type' => 'sms']);
 
         $recipient = notifyDummyRecipient(['phone' => '+393331112233']);
         Notification::fake();
@@ -466,8 +450,7 @@ describe('Notify highest-miss coverage', function (): void {
             'channels' => ['mail', 'database'],
             'conditions' => ['send' => true],
             'preview_data' => ['name' => 'Marco'],
-            'grapesjs_data' => ['blocks' => []],
-        ]);
+            'grapesjs_data' => ['blocks' => []]]);
 
         $compiled = $template->compile(['name' => 'Marco']);
         Assert::assertSame('Ciao Marco', $compiled['subject']);
@@ -504,14 +487,12 @@ describe('Notify highest-miss coverage', function (): void {
         $fromData = $email->getAttachmentFromData([
             'data' => 'inline-data',
             'as' => 'inline.txt',
-            'mime' => 'text/plain',
-        ]);
+            'mime' => 'text/plain']);
         Assert::assertSame('inline.txt', $fromData->as);
 
         $email->addAttachments([
             ['path' => $path],
-            ['data' => 'payload', 'as' => 'payload.bin'],
-        ]);
+            ['data' => 'payload', 'as' => 'payload.bin']]);
         Assert::assertCount(2, $email->attachments());
         unlink($path);
     });
@@ -521,8 +502,7 @@ describe('Notify highest-miss coverage', function (): void {
             'notify.tracking.enabled' => true,
             'notify.tracking.pixel.enabled' => true,
             'notify.tracking.links.enabled' => false,
-            'notify.tracking.pixel.route' => 'login',
-        ]);
+            'notify.tracking.pixel.route' => 'login']);
 
         $dummy = new NotifyTrackingDummy();
         $html = '<p>Newsletter</p>';
@@ -537,14 +517,12 @@ describe('Notify highest-miss coverage', function (): void {
             'services.facebook.access_token' => 'fb-token',
             'services.facebook.phone_number_id' => '123456',
             'whatsapp.debug' => false,
-            'whatsapp.timeout' => 1,
-        ]);
+            'whatsapp.timeout' => 1]);
 
         $cases = [
             ['recipient' => '+393331112233', 'body' => 'Ciao', 'type' => 'text'],
             ['recipient' => '+393331112233', 'body' => '', 'type' => 'template', 'template' => ['name' => 'hello']],
-            ['recipient' => '+393331112233', 'body' => '', 'type' => 'media', 'media' => ['https://example.test/a.jpg']],
-        ];
+            ['recipient' => '+393331112233', 'body' => '', 'type' => 'media', 'media' => ['https://example.test/a.jpg']]];
 
         foreach ($cases as $payload) {
             try {
@@ -562,14 +540,12 @@ describe('Notify highest-miss coverage', function (): void {
         config([
             'esendex.username' => 'user',
             'esendex.password' => 'pass',
-            'esendex.sender' => 'APP',
-        ]);
+            'esendex.sender' => 'APP']);
 
         $sms = SmsData::from([
             'recipient' => '+393331112233',
             'body' => 'Test',
-            'from' => 'APP',
-        ]);
+            'from' => 'APP']);
 
         try {
             (new EsendexSendAction())->execute($sms);
@@ -578,7 +554,6 @@ describe('Notify highest-miss coverage', function (): void {
         }
 
         expect(fn (): array => (new TryDuocircleMailAction())->execute([
-            'to' => 'user@example.test',
-        ]))->toThrow(\Exception::class);
+            'to' => 'user@example.test']))->toThrow(\Exception::class);
     });
 });

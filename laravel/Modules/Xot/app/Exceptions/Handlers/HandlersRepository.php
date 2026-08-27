@@ -100,8 +100,12 @@ class HandlersRepository
     /**
      * Determine whether the given handler can handle the provided exception.
      */
-    protected function handlesException(Closure $handler, Throwable $e): bool
+    protected function handlesException(callable $handler, Throwable $e): bool
     {
+        if (! $handler instanceof Closure) {
+            $handler = Closure::fromCallable($handler);
+        }
+
         $reflection = new ReflectionFunction($handler);
 
         if ($reflection->getNumberOfParameters() === 0) {

@@ -39,13 +39,11 @@ class SendPushToDeviceAction
                 Log::error("Push notification failed for platform {$platform}", [
                     'error' => $e->getMessage(),
                     'token' => $token,
-                    'notification' => $notification->toArray(),
-                ]);
+                    'notification' => $notification->toArray()]);
 
                 $results[$platform] = [
                     'success' => false,
-                    'error' => $e->getMessage(),
-                ];
+                    'error' => $e->getMessage()];
             }
         }
 

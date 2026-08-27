@@ -3,13 +3,11 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Models;
+
 use Modules\Notify\Models\BaseModel;
 use Modules\Notify\Models\NotificationTemplate;
 use Modules\Notify\Models\NotificationTemplateVersion;
 use Modules\Notify\Tests\TestCase;
-use PHPUnit\Framework\Assert;
-
-uses(\Modules\Notify\Tests\TestCase::class);
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
@@ -40,8 +38,7 @@ it('has correct fillable attributes', function (): void {
         'conditions',
         'version',
         'created_by',
-        'change_notes',
-    ];
+        'change_notes'];
 
     $reflection = new \ReflectionClass(NotificationTemplateVersion::class);
     $instance = $reflection->newInstanceWithoutConstructor();
@@ -66,13 +63,13 @@ it('has correct casts', function (): void {
 it('has template relationship method', function (): void {
     $reflection = new \ReflectionClass(NotificationTemplateVersion::class);
     $version = $reflection->newInstanceWithoutConstructor();
-    });
+
 });
 
 it('has restore method', function (): void {
     $reflection = new \ReflectionClass(NotificationTemplateVersion::class);
     $version = $reflection->newInstanceWithoutConstructor();
-    });
+
 });
 
 it('restore method returns NotificationTemplate', function (): void {
@@ -129,14 +126,8 @@ it('has media trait', function (): void {
 });
 
 it('has creator and updater relationships', function (): void {
-    $version = new NotificationTemplateVersion;
+    $version = new NotificationTemplateVersion();
 
-        });
-
-it('has media relationship', function (): void {
-    $version = new NotificationTemplateVersion;
-
-    });
 });
 
 it('has media relationship', function (): void {

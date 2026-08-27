@@ -51,7 +51,7 @@ use Override;
  */
 class NotificationType extends Model
 {
-    /** @use HasFactory<\Modules\Notify\Database\Factories\NotificationTypeFactory> */
+    /** @use HasFactory<NotificationTypeFactory> */
     use HasFactory;
 
     /** @var list<string> */
@@ -63,8 +63,7 @@ class NotificationType extends Model
         'is_active',
         'channels',
         'settings',
-        'template',
-    ];
+        'template'];
 
     /** @return array<string, string> */
     #[Override]
@@ -73,7 +72,6 @@ class NotificationType extends Model
         return [
             'is_active' => 'boolean',
             'channels' => 'array',
-            'settings' => 'array',
-        ];
+            'settings' => 'array'];
     }
 }

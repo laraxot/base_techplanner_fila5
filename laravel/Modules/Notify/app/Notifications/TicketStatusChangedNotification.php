@@ -20,8 +20,7 @@ class TicketStatusChangedNotification extends Notification
         public Model $ticket,
         public string $oldStatus,
         public string $newStatus
-    ) {
-    }
+    ) {}
 
     /**
      * @return list<string>
@@ -46,7 +45,6 @@ class TicketStatusChangedNotification extends Notification
     {
         return [
             'old_status' => $this->oldStatus,
-            'new_status' => $this->newStatus,
-        ];
+            'new_status' => $this->newStatus];
     }
 }

@@ -7,7 +7,6 @@ namespace Modules\Notify\Tests\Feature;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Modules\Notify\Database\Factories\NotifyThemeableFactory;
 use Modules\Notify\Database\Factories\NotifyThemeFactory;
-use Modules\Notify\Models\NotifyTheme;
 use Modules\Notify\Models\NotifyThemeable;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -37,8 +36,7 @@ describe('Notify Themeable Business Logic', function () {
             'model_id' => 123,
             'notify_theme_id' => $theme->id,
             'created_by' => 'admin@'.(string) config('app.domain', 'example.com'),
-            'updated_by' => 'admin@'.(string) config('app.domain', 'example.com'),
-        ];
+            'updated_by' => 'admin@'.(string) config('app.domain', 'example.com')];
 
         $themeable = NotifyThemeable::create($themeableData);
 
@@ -53,8 +51,7 @@ describe('Notify Themeable Business Logic', function () {
         $themeable = NotifyThemeableFactory::new()->createOne([
             'model_type' => 'App\Models\EmailTemplate',
             'model_id' => 456,
-            'notify_theme_id' => $theme->id,
-        ]);
+            'notify_theme_id' => $theme->id]);
 
         Assert::assertSame('App\Models\EmailTemplate', $themeable->model_type);
         Assert::assertSame(456, $themeable->model_id);
@@ -69,15 +66,13 @@ describe('Notify Themeable Business Logic', function () {
             'App\Models\EmailTemplate',
             'App\Models\SmsTemplate',
             'App\Models\PushTemplate',
-            'App\Models\WhatsappTemplate',
-        ];
+            'App\Models\WhatsappTemplate'];
 
         foreach ($modelTypes as $index => $modelType) {
             $themeable = NotifyThemeableFactory::new()->createOne([
                 'model_type' => $modelType,
                 'model_id' => $index + 1,
-                'notify_theme_id' => $theme->id,
-            ]);
+                'notify_theme_id' => $theme->id]);
 
             Assert::assertSame($modelType, $themeable->model_type);
             Assert::assertSame($index + 1, $themeable->model_id);
@@ -89,12 +84,10 @@ describe('Notify Themeable Business Logic', function () {
         $themeLabel = $appName.' Professional';
         $theme = NotifyThemeFactory::new()->createOne([
             'subject' => $themeLabel,
-            'body' => 'Tema professionale per '.$appName,
-        ]);
+            'body' => 'Tema professionale per '.$appName]);
 
         $themeable = NotifyThemeableFactory::new()->createOne([
-            'notify_theme_id' => $theme->id,
-        ]);
+            'notify_theme_id' => $theme->id]);
 
         $linkedTheme = TestCase::notifyThemeForThemeable($themeable);
         Assert::assertSame($theme->id, $linkedTheme->id);
@@ -107,8 +100,7 @@ describe('Notify Themeable Business Logic', function () {
         $themeable = NotifyThemeableFactory::new()->createOne([
             'notify_theme_id' => $theme->id,
             'created_by' => 'developer@'.(string) config('app.domain', 'example.com'),
-            'updated_by' => 'admin@'.(string) config('app.domain', 'example.com'),
-        ]);
+            'updated_by' => 'admin@'.(string) config('app.domain', 'example.com')]);
 
         Assert::assertSame('developer@'.(string) config('app.domain', 'example.com'), $themeable->created_by);
         Assert::assertSame('admin@'.(string) config('app.domain', 'example.com'), $themeable->updated_by);
@@ -124,20 +116,17 @@ describe('Notify Themeable Business Logic', function () {
         $themeable1 = NotifyThemeableFactory::new()->createOne([
             'model_type' => 'App\Models\NotificationTemplate',
             'model_id' => 123,
-            'notify_theme_id' => $theme1->id,
-        ]);
+            'notify_theme_id' => $theme1->id]);
 
         $themeable2 = NotifyThemeableFactory::new()->createOne([
             'model_type' => 'App\Models\NotificationTemplate',
             'model_id' => 123,
-            'notify_theme_id' => $theme2->id,
-        ]);
+            'notify_theme_id' => $theme2->id]);
 
         $themeable3 = NotifyThemeableFactory::new()->createOne([
             'model_type' => 'App\Models\NotificationTemplate',
             'model_id' => 123,
-            'notify_theme_id' => $theme3->id,
-        ]);
+            'notify_theme_id' => $theme3->id]);
 
         Assert::assertCount(3, NotifyThemeable::where('model_type', 'App\Models\NotificationTemplate')->where('model_id', 123)->get());
     });
@@ -147,19 +136,17 @@ describe('Notify Themeable Business Logic', function () {
         $newTheme = NotifyThemeFactory::new()->createOne(['subject' => 'Tema Nuovo']);
 
         $themeable = NotifyThemeableFactory::new()->createOne([
-            'notify_theme_id' => $oldTheme->id,
-        ]);
+            'notify_theme_id' => $oldTheme->id]);
 
         Assert::assertSame($oldTheme->id, $themeable->notify_theme_id);
-        Assert::assertSame('Tema Vecchio', \notifyThemeForThemeable($themeable)->subject);
+        Assert::assertSame('Tema Vecchio', TestCase::notifyThemeForThemeable($themeable)->subject);
         $themeable->update([
             'notify_theme_id' => $newTheme->id,
-            'updated_by' => 'admin@'.(string) config('app.domain', 'example.com'),
-        ]);
+            'updated_by' => 'admin@'.notifyThemeableTestDomain()]);
 
         Assert::assertSame($newTheme->id, $themeable->notify_theme_id);
-        Assert::assertSame('Tema Nuovo', \notifyThemeForThemeable($themeable)->subject);
-        Assert::assertSame('admin@'.(string) config('app.domain', 'example.com'), $themeable->updated_by);
+        Assert::assertSame('Tema Nuovo', TestCase::notifyThemeForThemeable($themeable)->subject);
+        Assert::assertSame('admin@'.notifyThemeableTestDomain(), $themeable->updated_by);
     });
 
     it('can handle empty or null values gracefully', function () {
@@ -170,8 +157,7 @@ describe('Notify Themeable Business Logic', function () {
             'model_type' => null,
             'model_id' => null,
             'created_by' => null,
-            'updated_by' => null,
-        ]);
+            'updated_by' => null]);
 
         Assert::assertNull($themeable->model_type);
         Assert::assertNull($themeable->model_id);
@@ -189,15 +175,13 @@ describe('Notify Themeable Business Logic', function () {
             'App\Models\SmsTemplate',
             'App\Models\PushNotification',
             'App\Models\WhatsappMessage',
-            'App\Models\InAppNotification',
-        ];
+            'App\Models\InAppNotification'];
 
         foreach ($validModelTypes as $modelType) {
             $themeable = NotifyThemeableFactory::new()->createOne([
                 'model_type' => $modelType,
                 'model_id' => rand(1, 1000),
-                'notify_theme_id' => $theme->id,
-            ]);
+                'notify_theme_id' => $theme->id]);
 
             Assert::assertSame($modelType, $themeable->model_type);
             Assert::assertContains($modelType, $validModelTypes);
@@ -207,25 +191,21 @@ describe('Notify Themeable Business Logic', function () {
     it('can manage theme inheritance', function () {
         $parentTheme = NotifyThemeFactory::new()->createOne([
             'subject' => 'Tema Base',
-            'body' => 'Tema base per tutte le notifiche',
-        ]);
+            'body' => 'Tema base per tutte le notifiche']);
 
         $childTheme = NotifyThemeFactory::new()->createOne([
             'subject' => 'Tema Specializzato',
-            'body' => 'Tema specializzato per appuntamenti',
-        ]);
+            'body' => 'Tema specializzato per appuntamenti']);
 
         $baseThemeable = NotifyThemeableFactory::new()->createOne([
             'model_type' => 'App\Models\NotificationTemplate',
             'model_id' => 123,
-            'notify_theme_id' => $parentTheme->id,
-        ]);
+            'notify_theme_id' => $parentTheme->id]);
 
         $specializedThemeable = NotifyThemeableFactory::new()->createOne([
             'model_type' => 'App\Models\NotificationTemplate',
             'model_id' => 123,
-            'notify_theme_id' => $childTheme->id,
-        ]);
+            'notify_theme_id' => $childTheme->id]);
 
         Assert::assertSame('Tema Base', TestCase::notifyThemeForThemeable($baseThemeable)->subject);
         Assert::assertSame('Tema Specializzato', TestCase::notifyThemeForThemeable($specializedThemeable)->subject);
@@ -237,15 +217,13 @@ describe('Notify Themeable Business Logic', function () {
         $theme = NotifyThemeFactory::new()->createOne();
 
         $themeable = NotifyThemeableFactory::new()->createOne([
-            'notify_theme_id' => $theme->id,
-        ]);
+            'notify_theme_id' => $theme->id]);
 
         Assert::assertNotNull($themeable->notify_theme_id);
         Assert::assertSame($theme->id, $themeable->notify_theme_id);
         $themeable->update([
             'notify_theme_id' => null,
-            'updated_by' => 'admin@'.(string) config('app.domain', 'example.com'),
-        ]);
+            'updated_by' => 'admin@'.(string) config('app.domain', 'example.com')]);
 
         Assert::assertNull($themeable->notify_theme_id);
         Assert::assertSame('admin@'.(string) config('app.domain', 'example.com'), $themeable->updated_by);
@@ -256,23 +234,12 @@ describe('Notify Themeable Business Logic', function () {
 
         $themeable = NotifyThemeableFactory::new()->createOne([
             'notify_theme_id' => $theme->id,
-            'created_by' => 'developer@'.(string) config('app.domain', 'example.com'),
-        ]);
+            'created_by' => 'developer@'.(string) config('app.domain', 'example.com')]);
 
         Assert::assertSame('developer@'.(string) config('app.domain', 'example.com'), $themeable->created_by);
         Assert::assertNotNull($themeable->created_at);
         $themeable->update([
-            'updated_by' => 'admin@'.(string) config('app.domain', 'example.com'),
-        ]);
-
-        Assert::assertSame('admin@'.(string) config('app.domain', 'example.com'), $themeable->updated_by);
-        ]);
-
-        Assert::assertSame('developer@'.(string) config('app.domain', 'example.com'), $themeable->created_by);
-        Assert::assertNotNull($themeable->created_at);
-        $themeable->update([
-            'updated_by' => 'admin@'.(string) config('app.domain', 'example.com'),
-        ]);
+            'updated_by' => 'admin@'.(string) config('app.domain', 'example.com')]);
 
         Assert::assertSame('admin@'.(string) config('app.domain', 'example.com'), $themeable->updated_by);
         Assert::assertNotNull($themeable->updated_at);
@@ -290,16 +257,14 @@ describe('Notify Themeable Business Logic', function () {
             NotifyThemeableFactory::new()->createOne([
                 'model_type' => 'App\Models\NotificationTemplate',
                 'model_id' => $modelId,
-                'notify_theme_id' => $theme1->id,
-            ]);
+                'notify_theme_id' => $theme1->id]);
         }
 
         $theme1Assignments = NotifyThemeable::where('notify_theme_id', $theme1->id)->get();
         Assert::assertCount(5, $theme1Assignments);
         NotifyThemeable::where('notify_theme_id', $theme1->id)->update([
             'notify_theme_id' => $theme2->id,
-            'updated_by' => 'admin@'.(string) config('app.domain', 'example.com'),
-        ]);
+            'updated_by' => 'admin@'.(string) config('app.domain', 'example.com')]);
 
         $theme2Assignments = NotifyThemeable::where('notify_theme_id', $theme2->id)->get();
         Assert::assertCount(5, $theme2Assignments);

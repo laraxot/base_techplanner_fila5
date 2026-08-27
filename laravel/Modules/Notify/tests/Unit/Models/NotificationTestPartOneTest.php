@@ -29,9 +29,6 @@ use function Safe\json_encode;
 
 uses(TestCase::class);
 use Modules\Xot\Tests\XotBasePest;
-use PHPUnit\Framework\Assert;
-
-use function Safe\json_encode;
 
 uses(TestCase::class)->group('notify-db');
 
@@ -57,9 +54,7 @@ describe('Notification PartOne', function (): void {
                 'title' => 'Test Title',
                 'body' => 'Test Body',
                 'action_url' => 'https://example.com',
-                'priority' => 'high',
-            ],
-        ]);
+                'priority' => 'high']]);
         XotBasePest::assertTableHas('notify', 'notifications', [
             'id' => $notification->id,
             'message' => 'Test notification message',
@@ -68,8 +63,7 @@ describe('Notification PartOne', function (): void {
             'user_id' => 123,
             'subject_type' => 'App\Models\User',
             'subject_id' => 456,
-            'status' => 'pending',
-        ]);
+            'status' => 'pending']);
 
         Assert::assertInstanceOf(Notification::class, $notification);
     });
@@ -88,8 +82,7 @@ describe('Notification PartOne', function (): void {
             'channels',
             'status',
             'sent_at',
-            'data',
-        ];
+            'data'];
 
         Assert::assertEquals($expectedFillable, $notification->getFillable());
     });
@@ -104,8 +97,7 @@ describe('Notification PartOne', function (): void {
             'channels' => 'array',
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
-            'deleted_at' => 'datetime',
-        ];
+            'deleted_at' => 'datetime'];
 
         Assert::assertEquals($expectedCasts, $notification->getCasts());
     });
@@ -120,19 +112,15 @@ describe('Notification PartOne', function (): void {
             'metadata' => [
                 'source' => 'registration',
                 'campaign' => 'new_users_2024',
-                'tags' => ['welcome', 'onboarding'],
-            ],
-        ];
+                'tags' => ['welcome', 'onboarding']]];
 
         $notification = NotificationFactory::new()->createOne([
             'message' => 'Welcome notification',
             'type' => 'welcome',
-            'data' => $data,
-        ]);
+            'data' => $data]);
         XotBasePest::assertTableHas('notify', 'notifications', [
             'id' => $notification->id,
-            'data' => json_encode($data),
-        ]);
+            'data' => json_encode($data)]);
         Assert::assertEquals('Welcome to our platform', $notification->data['title']);
         Assert::assertEquals('Thank you for joining us!', $notification->data['body']);
         Assert::assertEquals('high', $notification->data['priority']);
@@ -146,12 +134,10 @@ describe('Notification PartOne', function (): void {
         $notification = NotificationFactory::new()->createOne([
             'message' => 'Multi-channel notification',
             'type' => 'alert',
-            'channels' => $channels,
-        ]);
+            'channels' => $channels]);
         XotBasePest::assertTableHas('notify', 'notifications', [
             'id' => $notification->id,
-            'channels' => json_encode($channels),
-        ]);
+            'channels' => json_encode($channels)]);
         $storedChannels = XotBasePest::assertArray($notification->channels);
         Assert::assertCount(4, $storedChannels);
         Assert::assertContains('mail', $storedChannels);
@@ -163,8 +149,7 @@ describe('Notification PartOne', function (): void {
     test('_can_mark_as_read', function (): void {
         $notification = NotificationFactory::new()->createOne([
             'message' => 'Unread notification',
-            'type' => 'info',
-        ]);
+            'type' => 'info']);
 
         Assert::assertNull($notification->read_at);
 
@@ -173,52 +158,45 @@ describe('Notification PartOne', function (): void {
         Assert::assertNotNull(XotBasePest::assertFreshModel($notification, Notification::class)->read_at);
         XotBasePest::assertTableHas('notify', 'notifications', [
             'id' => $notification->id,
-            'read_at' => XotBasePest::assertFreshModel($notification, Notification::class)->read_at,
-        ]);
+            'read_at' => XotBasePest::assertFreshModel($notification, Notification::class)->read_at]);
     });
 
     test('_can_mark_as_sent', function (): void {
         $notification = NotificationFactory::new()->createOne([
             'message' => 'Pending notification',
             'type' => 'info',
-            'status' => 'pending',
-        ]);
+            'status' => 'pending']);
 
         Assert::assertNull($notification->sent_at);
 
         $notification->update([
             'sent_at' => now(),
-            'status' => 'sent',
-        ]);
+            'status' => 'sent']);
 
         Assert::assertNotNull(XotBasePest::assertFreshModel($notification, Notification::class)->sent_at);
         Assert::assertEquals('sent', XotBasePest::assertFreshModel($notification, Notification::class)->status);
         XotBasePest::assertTableHas('notify', 'notifications', [
             'id' => $notification->id,
             'sent_at' => XotBasePest::assertFreshModel($notification, Notification::class)->sent_at,
-            'status' => 'sent',
-        ]);
+            'status' => 'sent']);
     });
 
     test('_can_update_notification', function (): void {
         $notification = NotificationFactory::new()->createOne([
             'message' => 'Original message',
             'type' => 'info',
-            'status' => 'pending',
-        ]);
+            'status' => 'pending']);
 
         $notification->update([
             'message' => 'Updated message',
             'type' => 'warning',
             'status' => 'sent',
-            'data' => ['updated' => true],
-        ]);
+            'data' => ['updated' => true]]);
         XotBasePest::assertTableHas('notify', 'notifications', [
             'id' => $notification->id,
             'message' => 'Updated message',
             'type' => 'warning',
-            'status' => 'sent',
-        ]);
+            'status' => 'sent']);
 
         Assert::assertEquals('Updated message', XotBasePest::assertFreshModel($notification, Notification::class)->message);
         Assert::assertEquals('warning', XotBasePest::assertFreshModel($notification, Notification::class)->type);
@@ -229,18 +207,15 @@ describe('Notification PartOne', function (): void {
     test('_can_find_by_type', function (): void {
         NotificationFactory::new()->createOne([
             'message' => 'Info notification',
-            'type' => 'info',
-        ]);
+            'type' => 'info']);
 
         NotificationFactory::new()->createOne([
             'message' => 'Warning notification',
-            'type' => 'warning',
-        ]);
+            'type' => 'warning']);
 
         NotificationFactory::new()->createOne([
             'message' => 'Error notification',
-            'type' => 'error',
-        ]);
+            'type' => 'error']);
 
         $infoNotifications = Notification::where('type', 'info')->get();
         $warningNotifications = Notification::where('type', 'warning')->get();
@@ -258,20 +233,17 @@ describe('Notification PartOne', function (): void {
         NotificationFactory::new()->createOne([
             'message' => 'Pending notification',
             'type' => 'info',
-            'status' => 'pending',
-        ]);
+            'status' => 'pending']);
 
         NotificationFactory::new()->createOne([
             'message' => 'Sent notification',
             'type' => 'info',
-            'status' => 'sent',
-        ]);
+            'status' => 'sent']);
 
         NotificationFactory::new()->createOne([
             'message' => 'Failed notification',
             'type' => 'info',
-            'status' => 'failed',
-        ]);
+            'status' => 'failed']);
 
         $pendingNotifications = Notification::where('status', 'pending')->get();
         $sentNotifications = Notification::where('status', 'sent')->get();
@@ -289,20 +261,17 @@ describe('Notification PartOne', function (): void {
         NotificationFactory::new()->createOne([
             'message' => 'Tenant 1 notification',
             'type' => 'info',
-            'tenant_id' => 1,
-        ]);
+            'tenant_id' => 1]);
 
         NotificationFactory::new()->createOne([
             'message' => 'Tenant 2 notification',
             'type' => 'info',
-            'tenant_id' => 2,
-        ]);
+            'tenant_id' => 2]);
 
         NotificationFactory::new()->createOne([
             'message' => 'Tenant 1 another notification',
             'type' => 'warning',
-            'tenant_id' => 1,
-        ]);
+            'tenant_id' => 1]);
 
         $tenant1Notifications = Notification::where('tenant_id', 1)->get();
         $tenant2Notifications = Notification::where('tenant_id', 2)->get();

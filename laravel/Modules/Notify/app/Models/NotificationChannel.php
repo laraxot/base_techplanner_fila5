@@ -14,7 +14,6 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property array<string, mixed>|null $config
  * @property bool|null $is_enabled
  * @property int|null $priority
- *
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $deleter
  * @property-read MediaCollection<int, Media> $media
@@ -37,15 +36,13 @@ class NotificationChannel extends BaseModel
         'driver',
         'config',
         'is_enabled',
-        'priority',
-    ];
+        'priority'];
 
     protected function casts(): array
     {
         return array_merge(parent::casts(), [
             'config' => 'array',
             'is_enabled' => 'boolean',
-            'priority' => 'integer',
-        ]);
+            'priority' => 'integer']);
     }
 }

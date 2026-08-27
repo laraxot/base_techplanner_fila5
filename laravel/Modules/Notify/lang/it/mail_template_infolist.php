@@ -14,6 +14,4 @@ return [
         'sms_template' => ['label' => 'sms_template'],
         'whatsapp_template' => ['label' => 'whatsapp_template'],
         'params' => ['label' => 'params'],
-        'counter' => ['label' => 'counter'],
-    ],
-];
+        'counter' => ['label' => 'counter']]];

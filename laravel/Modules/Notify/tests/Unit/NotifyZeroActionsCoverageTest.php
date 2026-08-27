@@ -32,20 +32,17 @@ describe('Notify zero-coverage actions boost', function (): void {
             'notify.sms.agiletelecom.sender' => 'TEST',
             'notify.sms.agiletelecom.user' => 'user',
             'notify.sms.agiletelecom.password' => 'pass',
-            'notify.sms.agiletelecom.timeout' => 5,
-        ]);
+            'notify.sms.agiletelecom.timeout' => 5]);
 
         $sms = SmsData::from([
             'from' => 'Test',
             'recipient' => '+393331112233',
-            'body' => 'hello agile',
-        ]);
+            'body' => 'hello agile']);
 
         foreach ([
             SendAgiletelecomSMSAction::class,
             SendAgiletelecomSMSv1Action::class,
-            SendAgiletelecomSMSv2Action::class,
-        ] as $class) {
+            SendAgiletelecomSMSv2Action::class] as $class) {
             try {
                 $result = app($class)->execute($sms);
                 Assert::assertIsArray($result);
@@ -76,8 +73,7 @@ describe('Notify zero-coverage actions boost', function (): void {
             'type' => 'test',
             'title' => 'Hello',
             'body' => 'World',
-            'data' => ['k' => 'v'],
-        ]);
+            'data' => ['k' => 'v']]);
         $notification = new FirebaseAndroidNotification($data);
         $notifiable = new class()
         {

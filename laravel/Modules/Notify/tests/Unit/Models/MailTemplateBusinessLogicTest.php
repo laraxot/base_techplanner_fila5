@@ -3,9 +3,7 @@
 declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Models;
-use Mockery;
-use function Safe\class_uses;
-use Illuminate\Contracts\Mail\Mailable;
+
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Mail\Mailable;
 use Modules\Notify\Models\MailTemplate;

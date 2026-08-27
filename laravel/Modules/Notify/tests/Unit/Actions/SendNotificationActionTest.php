@@ -19,7 +19,6 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 use Modules\Xot\Tests\XotBasePest;
-use PHPUnit\Framework\Assert;
 
 uses(TestCase::class)->group('notify-db');
 
@@ -109,8 +108,7 @@ test('send notification action returns false when template should not send', fun
         'variables' => [],
         'is_active' => true,
         'conditions' => ['send' => true],
-        'type' => 'email',
-    ]);
+        'type' => 'email']);
 
     $recipient = makeDummySendNotificationRecipient(['email' => 'user@example.test']);
 
@@ -131,8 +129,7 @@ test('send notification action dispatches database notification from template ch
         'variables' => [],
         'is_active' => true,
         'conditions' => null,
-        'type' => 'email',
-    ]);
+        'type' => 'email']);
 
     $recipient = makeDummySendNotificationRecipient(['email' => 'user@example.test']);
 

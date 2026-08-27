@@ -19,8 +19,7 @@ test('it exposes all expected statuses', function () {
         'delivered',
         'failed',
         'opened',
-        'clicked',
-    ], $values);
+        'clicked'], $values);
 });
 
 test('it returns expected label color and icon', function () {

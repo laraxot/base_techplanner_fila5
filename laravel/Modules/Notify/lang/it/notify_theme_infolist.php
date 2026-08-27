@@ -18,6 +18,4 @@ return [
         'logo_src' => ['label' => 'logo_src'],
         'logo_width' => ['label' => 'logo_width'],
         'logo_height' => ['label' => 'logo_height'],
-        'view_params' => ['label' => 'view_params'],
-    ],
-];
+        'view_params' => ['label' => 'view_params']]];
