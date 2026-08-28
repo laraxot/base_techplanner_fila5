@@ -23,6 +23,8 @@ abstract class TestCase extends XotBaseTestCase
 {
     use DatabaseTransactions;
 
+    public static ?self $currentTest = null;
+
     /** @var list<string> */
     protected $connectionsToTransact = ['sqlite'];
 
@@ -32,7 +34,16 @@ abstract class TestCase extends XotBaseTestCase
 
         parent::setUp();
 
+        self::$currentTest = $this;
+
         config(['auth.providers.users.model' => User::class]);
+    }
+
+    protected function tearDown(): void
+    {
+        self::$currentTest = null;
+
+        parent::tearDown();
     }
 
     /**

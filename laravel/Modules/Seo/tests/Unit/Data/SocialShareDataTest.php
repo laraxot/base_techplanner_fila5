@@ -16,12 +16,6 @@ it('creates instance with required url', function (): void {
     Assert::assertNull($data->image);
     Assert::assertNull($data->hashtags);
     Assert::assertNull($data->via);
-    expect($data->url)->toBe('https://laravelpizza.com')
-        ->and($data->title)->toBeNull()
-        ->and($data->text)->toBeNull()
-        ->and($data->image)->toBeNull()
-        ->and($data->hashtags)->toBeNull()
-        ->and($data->via)->toBeNull();
 });
 
 it('has default platforms list', function (): void {
@@ -31,7 +25,6 @@ it('has default platforms list', function (): void {
         ['facebook', 'twitter', 'linkedin', 'whatsapp', 'telegram', 'copy'],
         $data->platforms,
     );
-    expect($data->platforms)->toBe(['facebook', 'twitter', 'linkedin', 'whatsapp', 'telegram', 'copy']);
 });
 
 it('accepts all optional fields', function (): void {

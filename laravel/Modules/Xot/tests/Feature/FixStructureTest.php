@@ -47,16 +47,18 @@ class FixStructureTest extends TestCase
     /**
      * Funzione ricorsiva per eliminare una directory con tutti i suoi contenuti.
      */
-    private function rrmdir(string $dir)
+    private function rrmdir(string $dir): void
     {
         if (is_dir($dir)) {
+            /** @var list<string> $objects */
             $objects = scandir($dir);
             foreach ($objects as $object) {
                 if ($object !== '.' && $object !== '..') {
-                    if (is_dir($dir.DIRECTORY_SEPARATOR.$object) && ! is_link($dir.'/'.$object)) {
-                        $this->rrmdir($dir.DIRECTORY_SEPARATOR.$object);
+                    $childPath = $dir.DIRECTORY_SEPARATOR.$object;
+                    if (is_dir($childPath) && ! is_link($childPath)) {
+                        $this->rrmdir($childPath);
                     } else {
-                        unlink($dir.DIRECTORY_SEPARATOR.$object);
+                        unlink($childPath);
                     }
                 }
             }

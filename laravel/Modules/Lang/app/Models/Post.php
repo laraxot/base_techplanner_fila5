@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
 // --- traits ---
 // use Laravel\Scout\Searchable;
@@ -26,6 +27,31 @@ use Spatie\Sluggable\SlugOptions;
  * @property-read string|null $txt
  * @property-read Model $linkable
  * @property-read Profile|null $updater
+ * @property string|null $id
+ * @property int|string|null $user_id
+ * @property int|string|null $post_id
+ * @property string|null $lang
+ * @property string|null $subtitle
+ * @property string|null $post_type
+ * @property string|null $content
+ * @property string|null $excerpt
+ * @property string|null $slug
+ * @property string|null $status
+ * @property Carbon|null $published_at
+ * @property string|null $locale
+ * @property string|null $category
+ * @property string|null $image_src
+ * @property string|null $image_alt
+ * @property string|null $image_title
+ * @property string|null $meta_title
+ * @property string|null $meta_description
+ * @property string|null $meta_keywords
+ * @property int|string|null $author_id
+ * @property string|null $url
+ * @property array<array-key, mixed>|null $url_lang
+ * @property array<array-key, mixed>|null $image_resize_src
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  *
  * @method static \Modules\Lang\Database\Factories\PostFactory factory($count = null, $state = [])
  * @method static Builder<static>|Post newModelQuery()
@@ -92,6 +118,7 @@ class Post extends BaseModel
         'image_alt',
         'image_title',
         // ------ SEO FIELDS -----
+        'meta_title',
         'meta_description',
         'meta_keywords', // seo
         'author_id',
@@ -260,6 +287,9 @@ class Post extends BaseModel
         return [
             'id' => 'string',
             'uuid' => 'string',
+            'user_id' => 'integer',
+            'post_id' => 'integer',
+            'author_id' => 'integer',
             'image_resize_src' => 'array',
             'url_lang' => 'array',
             'created_at' => 'datetime',

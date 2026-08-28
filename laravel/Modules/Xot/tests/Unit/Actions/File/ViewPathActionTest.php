@@ -9,6 +9,7 @@ use Modules\Xot\Actions\File\GetViewNameSpacePathAction;
 use Modules\Xot\Actions\File\ViewPathAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+use PHPUnit\Framework\MockObject\MockObject;
 
 uses(TestCase::class);
 
@@ -17,6 +18,7 @@ beforeEach(function (): void {
 });
 
 it('calculates view path correctly', function (): void {
+    /** @var GetViewNameSpacePathAction&MockObject $nsMock */
     $nsMock = $this->createUnitMock(GetViewNameSpacePathAction::class);
     $nsMock->method('execute')
         ->willReturnCallback(static function (string $namespace): string {
@@ -25,13 +27,14 @@ it('calculates view path correctly', function (): void {
             return '/path/to/views';
         });
 
-    app()->instance(GetViewNameSpacePathAction::class, $nsMock);
+    $this->bindInstance(GetViewNameSpacePathAction::class, $nsMock);
 
+    /** @var FixPathAction&MockObject $fixMock */
     $fixMock = $this->createUnitMock(FixPathAction::class);
     $fixMock->method('execute')
         ->willReturnArgument(0);
 
-    app()->instance(FixPathAction::class, $fixMock);
+    $this->bindInstance(FixPathAction::class, $fixMock);
     $action = app(ViewPathAction::class);
 
     $result = $action->execute('Xot::dashboard.index');

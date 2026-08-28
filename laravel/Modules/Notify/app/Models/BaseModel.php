@@ -32,7 +32,6 @@ abstract class BaseModel extends XotBaseModel implements HasMedia
     /** @var list<string> */
     protected $hidden = [];
 
-    /** @return array<string, string> */
     protected function casts(): array
     {
         return array_merge(parent::casts(), [

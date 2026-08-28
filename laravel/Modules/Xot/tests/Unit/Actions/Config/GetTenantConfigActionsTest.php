@@ -9,6 +9,7 @@ use Modules\Xot\Actions\Config\GetTenantConfigArrayAction;
 use Modules\Xot\Actions\Config\GetTenantConfigPathAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+use PHPUnit\Framework\MockObject\MockObject;
 
 use function Safe\tempnam;
 
@@ -22,13 +23,14 @@ describe('Get Tenant Config Actions', function (): void {
 
         File::put($tempPath, '<?php return '.var_export($configData, true).';');
 
+        /** @var GetTenantConfigPathAction&MockObject $pathMock */
         $pathMock = $this->createUnitMock(GetTenantConfigPathAction::class);
         $pathMock->expects($this->once())
             ->method('execute')
             ->with($configName)
             ->willReturn($tempPath);
 
-        app()->instance(GetTenantConfigPathAction::class, $pathMock);
+        $this->bindInstance(GetTenantConfigPathAction::class, $pathMock);
 
         $result = (new GetTenantConfigArrayAction())->execute($configName);
 
@@ -37,9 +39,10 @@ describe('Get Tenant Config Actions', function (): void {
     });
 
     test('returns empty array if tenant config file does not exist', function (): void {
+        /** @var GetTenantConfigPathAction&MockObject $pathMock */
         $pathMock = $this->createUnitMock(GetTenantConfigPathAction::class);
         $pathMock->method('execute')->willReturn('/path/to/nothing.php');
-        app()->instance(GetTenantConfigPathAction::class, $pathMock);
+        $this->bindInstance(GetTenantConfigPathAction::class, $pathMock);
 
         $result = (new GetTenantConfigArrayAction())->execute('non_existent');
 

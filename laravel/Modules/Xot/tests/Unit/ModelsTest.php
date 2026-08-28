@@ -33,8 +33,8 @@ it('can create a test tenant', function () {
     ]);
 
     Assert::assertInstanceOf(Tenant::class, $tenant);
-    Assert::assertSame('Test Tenant', $tenant->name);
-    Assert::assertSame('test.example.com', $tenant->domain);
+    Assert::assertSame('Test Tenant', $tenant->getAttribute('name'));
+    Assert::assertSame('test.example.com', $tenant->getAttribute('domain'));
 });
 
 it('can resolve a sushi module row', function () {

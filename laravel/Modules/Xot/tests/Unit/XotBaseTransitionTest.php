@@ -87,13 +87,14 @@ describe('XotBaseTransition', function (): void {
     it('has proper method signatures', function () {
         $reflection = new ReflectionClass(XotBaseTransition::class);
 
-        // Check sendNotifications method
         $sendMethod = $reflection->getMethod('sendNotifications');
-        expect($sendMethod->isPublic())->toBeTrue()->and($sendMethod->getReturnType()?->getName())->toBe('void');
+        $returnType = $sendMethod->getReturnType();
+        Assert::assertInstanceOf(ReflectionNamedType::class, $returnType);
+        Assert::assertSame('void', $returnType->getName());
+        Assert::assertTrue($sendMethod->isPublic());
 
-        // Check getRecord method
         $getRecordMethod = $reflection->getMethod('getRecord');
-        expect($getRecordMethod->isPublic())->toBeTrue();
+        Assert::assertTrue($getRecordMethod->isPublic());
     });
 
     it('has proper documentation', function () {
@@ -106,9 +107,8 @@ describe('XotBaseTransition', function (): void {
     it('validates inheritance requirements', function () {
         [, $transition] = xotBaseTransitionFixture();
 
-        expect(method_exists($transition, 'getNotificationRecipients'))
-            ->toBeTrue()
-            ->and(method_exists($transition, 'sendRecipientNotification'))
-            ->toBeTrue();
+        Assert::assertInstanceOf(XotBaseTransition::class, $transition);
+        Assert::assertTrue(is_callable([$transition, 'getNotificationRecipients']));
+        Assert::assertTrue(is_callable([$transition, 'sendRecipientNotification']));
     });
 });

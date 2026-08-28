@@ -47,8 +47,9 @@ test('RestoreActivityAction incapsula eccezioni di update', function (): void {
         }
     };
 
-    expect(fn (): mixed => (new RestoreActivityAction())->execute($model, ['name' => 'x']))
-        ->toThrow(Exception::class);
+    expect(function () use ($model): void {
+        (new RestoreActivityAction())->execute($model, ['name' => 'x']);
+    })->toThrow(Exception::class);
 });
 
 test('RestoreActivityAction rifiuta oldProperties vuote', function (): void {
@@ -57,6 +58,7 @@ test('RestoreActivityAction rifiuta oldProperties vuote', function (): void {
         protected $table = 'stub_models';
     };
 
-    expect(fn (): mixed => (new RestoreActivityAction())->execute($model, []))
-        ->toThrow(AssertInvalidArgumentException::class);
+    expect(function () use ($model): void {
+        (new RestoreActivityAction())->execute($model, []);
+    })->toThrow(AssertInvalidArgumentException::class);
 });

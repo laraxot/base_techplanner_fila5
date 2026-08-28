@@ -13,6 +13,13 @@ use Modules\Xot\Models\BaseModel;
  *
  * FormBuilder module not available - extending from XotBaseModel instead.
  *
+ * @property int $id
+ * @property string $name
+ * @property string|null $description
+ * @property string $type
+ * @property int|null $theme_id
+ * @property bool $is_active
+ * @property int|null $order
  * @property-read Profile|null $creator
  * @property-read Profile|null $updater
  *

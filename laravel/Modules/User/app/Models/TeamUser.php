@@ -26,6 +26,7 @@ use Modules\TechPlanner\Models\Profile;
  * @property int $team_id
  * @property string|null $user_id
  * @property string|null $role
+ * @property array<array-key, mixed>|null $permissions
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by

@@ -6,7 +6,7 @@ namespace Modules\UI\Tests\Unit;
 
 use Illuminate\Translation\PotentiallyTranslatedString;
 use Mockery;
-use Mockery\ExpectationInterface;
+use Mockery\Expectation;
 use Mockery\LegacyMockInterface;
 use Mockery\MockInterface;
 use Modules\UI\Enums\FieldTypeEnum;
@@ -28,9 +28,9 @@ use SplFileInfo;
  * @param  LegacyMockInterface|MockInterface  $mock
  */
 if (! function_exists('expectMethod')) {
-    function expectMethod($mock, string $method): ExpectationInterface
+    function expectMethod(LegacyMockInterface|MockInterface $mock, string $method): Expectation
     {
-        /** @var ExpectationInterface $expectation */
+        /** @var Expectation $expectation */
         $expectation = $mock->shouldReceive($method);
 
         return $expectation;

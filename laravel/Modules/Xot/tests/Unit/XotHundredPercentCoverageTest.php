@@ -304,10 +304,6 @@ PHP);
         Assert::assertStringContainsString('Themes/One/', $xot->getMailHtmlLayoutPath('layout.blade.php'));
 
         try {
-            $xot->findUserByEmail('nobody-'.uniqid().'@example.test');
-        } catch (\Throwable) {
-        }
-        try {
             Assert::assertFalse($xot->iAmSuperAdmin());
         } catch (\Throwable) {
         }

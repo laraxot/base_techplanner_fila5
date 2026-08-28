@@ -9,6 +9,15 @@ use Modules\TechPlanner\Models\Profile;
 use Modules\Xot\Models\BaseModel;
 
 /**
+ * @property int $id
+ * @property string|null $name
+ * @property string $title
+ * @property string $slug
+ * @property int|null $parent_id
+ * @property string|null $description
+ * @property string|null $icon
+ * @property bool $is_active
+ * @property int $sort_order
  * @property-read Profile|null $creator
  * @property-read Profile|null $updater
  *

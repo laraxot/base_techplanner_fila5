@@ -25,15 +25,15 @@ describe('Base morph pivot business logic (PHPUnit legacy coverage)', function (
         $pivot->setAttribute('created_at', '2026-01-01 12:00:00');
         $pivot->setAttribute('updated_at', '2026-01-01 12:00:00');
 
-        Assert::assertSame('2026-01-01 12:00:00', (string) $pivot->getAttribute('created_at'));
-        Assert::assertSame('2026-01-01 12:00:00', (string) $pivot->getAttribute('updated_at'));
+        Assert::assertSame('2026-01-01 12:00:00', $pivot->getAttribute('created_at'));
+        Assert::assertSame('2026-01-01 12:00:00', $pivot->getAttribute('updated_at'));
     });
 
     it('manages soft delete timestamp', function (): void {
         $pivot = new TestConcreteMorphPivot();
         $pivot->setAttribute('deleted_at', '2026-01-02 08:30:00');
 
-        Assert::assertSame('2026-01-02 08:30:00', (string) $pivot->getAttribute('deleted_at'));
+        Assert::assertSame('2026-01-02 08:30:00', $pivot->getAttribute('deleted_at'));
     });
 
     it('manages tenant and user identifiers', function (): void {
@@ -94,9 +94,9 @@ describe('Base morph pivot business logic (PHPUnit legacy coverage)', function (
         $pivot->setAttribute('is_public', false);
         $pivot->setAttribute('is_featured', false);
 
-        Assert::assertSame('2026-03-01 00:00:00', (string) $pivot->getAttribute('expires_at'));
-        Assert::assertSame('2026-02-01 10:00:00', (string) $pivot->getAttribute('starts_at'));
-        Assert::assertSame('2026-04-01 18:00:00', (string) $pivot->getAttribute('ends_at'));
+        Assert::assertSame('2026-03-01 00:00:00', $pivot->getAttribute('expires_at'));
+        Assert::assertSame('2026-02-01 10:00:00', $pivot->getAttribute('starts_at'));
+        Assert::assertSame('2026-04-01 18:00:00', $pivot->getAttribute('ends_at'));
         Assert::assertTrue($pivot->getAttribute('is_active'));
 
         $pivot->setAttribute('is_active', false);

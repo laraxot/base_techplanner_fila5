@@ -13,7 +13,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Testing\PendingCommand;
 use Illuminate\Translation\PotentiallyTranslatedString;
 use Mockery;
-use Mockery\CompositeExpectation;
+use Mockery\Expectation;
 use Mockery\LegacyMockInterface;
 use Mockery\MockInterface;
 use Modules\Job\Actions\Command\GetCommandsAction;
@@ -61,12 +61,10 @@ use PHPUnit\Framework\Assert;
 
 /**
  * Narrows Mockery's shouldReceive() union return type for PHPStan.
- *
- * @param  LegacyMockInterface|MockInterface  $mock
  */
-function expectMethod($mock, string $method): CompositeExpectation
+function expectMethod(LegacyMockInterface|MockInterface $mock, string $method): Expectation
 {
-    /** @var CompositeExpectation $expectation */
+    /** @var Expectation $expectation */
     $expectation = $mock->shouldReceive($method);
 
     return $expectation;

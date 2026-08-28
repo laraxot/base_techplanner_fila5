@@ -29,14 +29,11 @@ it('sets all optional seo fields through service', function (): void {
     Assert::assertSame('LaravelPizza', $meta->getSiteName());
     Assert::assertSame('https://example.test/post', $meta->getUrl());
     Assert::assertSame('Mario', $meta->getAuthor());
-    Assert::assertSame($published->format('c'), $meta->getPublishedTime()?->format('c'));
-    Assert::assertSame($modified->format('c'), $meta->getModifiedTime()?->format('c'));
-    expect($meta->getImage())->toBe('https://example.test/image.png')
-        ->and($meta->getLocale())->toBe('it')
-        ->and($meta->getType())->toBe('article')
-        ->and($meta->getSiteName())->toBe('LaravelPizza')
-        ->and($meta->getUrl())->toBe('https://example.test/post')
-        ->and($meta->getAuthor())->toBe('Mario')
-        ->and($meta->getPublishedTime()?->format('c'))->toBe($published->format('c'))
-        ->and($meta->getModifiedTime()?->format('c'))->toBe($modified->format('c'));
+
+    $publishedTime = $meta->getPublishedTime();
+    $modifiedTime = $meta->getModifiedTime();
+    Assert::assertNotNull($publishedTime);
+    Assert::assertNotNull($modifiedTime);
+    Assert::assertSame($published->format('c'), $publishedTime->format('c'));
+    Assert::assertSame($modified->format('c'), $modifiedTime->format('c'));
 });

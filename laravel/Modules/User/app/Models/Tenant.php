@@ -34,6 +34,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property string|null $domain
  * @property string|null $database
  * @property int $is_active
+ * @property array<array-key, mixed>|null $settings
  * @property string|null $email_address
  * @property string|null $phone
  * @property string|null $mobile

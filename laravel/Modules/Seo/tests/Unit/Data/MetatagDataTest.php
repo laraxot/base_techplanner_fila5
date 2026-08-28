@@ -17,13 +17,6 @@ it('returns sane defaults for empty data', function (): void {
     Assert::assertNull($data->getCanonical());
     Assert::assertNull($data->getImage());
     Assert::assertSame('website', $data->getType());
-    expect($data->getTitle())->toBe('')
-        ->and($data->getDescription())->toBe('')
-        ->and($data->getKeywords())->toBe('')
-        ->and($data->getRobots())->toBe('index, follow')
-        ->and($data->getCanonical())->toBeNull()
-        ->and($data->getImage())->toBeNull()
-        ->and($data->getType())->toBe('website');
 });
 
 it('returns typed colors and falls back for invalid colors', function (): void {
@@ -40,23 +33,17 @@ it('returns typed colors and falls back for invalid colors', function (): void {
     Assert::assertSame('#111111', $colors['primary']);
     Assert::assertSame('#222222', $colors['secondary']);
 
-    $numericKeyValue = null;
+    $numericColor = null;
     foreach ($colors as $key => $value) {
-        if ($key === '10') {
-            $numericKeyValue = $value;
+        if ((string) $key === '10') {
+            $numericColor = $value;
             break;
         }
     }
-    Assert::assertTrue($numericKeyValue === '' || $numericKeyValue === null);
+    Assert::assertSame('', $numericColor);
 
     $fallback = new MetatagData(['colors' => 'invalid']);
     Assert::assertArrayHasKey('primary', $fallback->getColors());
-    expect($colors['primary'])->toBe('#111111')
-        ->and($colors['secondary'])->toBe('#222222')
-        ->and($colors['10'])->toBe('');
-
-    $fallback = new MetatagData(['colors' => 'invalid']);
-    expect($fallback->getColors())->toHaveKey('primary');
 });
 
 it('reads nested keys and has method works', function (): void {
@@ -97,7 +84,6 @@ it('returns explicit locale from data payload', function (): void {
     $data = new MetatagData(['locale' => 'it']);
 
     Assert::assertSame('it', $data->getLocale());
-    expect($restored->toArray())->toBe([]);
 
     $data = new MetatagData(['url' => 123]);
     $url = $data->getUrl();

@@ -22,8 +22,8 @@ use function Safe\json_encode;
  *
  * @property-read Consent|null $consent
  * @property-read Profile|null $creator
- * @property-write mixed $ip
- * @property-write mixed $payload
+ * @property string|null $ip
+ * @property string|null $payload
  * @property-read Profile|null $updater
  *
  * @method static Builder<static>|Event newModelQuery()
@@ -101,5 +101,23 @@ class Event extends BaseModel
     public function setIpAttribute(?string $value): void
     {
         $this->attributes['ip'] = Crypt::encrypt($value);
+    }
+
+    public function getIpAttribute(?string $value): ?string
+    {
+        if ($value === null || $value === '') {
+            return $value;
+        }
+
+        return Crypt::decryptString($value);
+    }
+
+    public function getPayloadAttribute(?string $value): ?string
+    {
+        if ($value === null || $value === '') {
+            return $value;
+        }
+
+        return Crypt::decryptString($value);
     }
 }

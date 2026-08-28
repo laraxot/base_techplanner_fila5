@@ -142,7 +142,30 @@ class Comune extends BaseModel
      */
     public function getRows(): array
     {
-        return $this->getSushiRows();
+        $rows = $this->getSushiRows();
+
+        if ($rows === []) {
+            return [];
+        }
+
+        /** @var list<string> $columns */
+        $columns = array_keys($rows[0]);
+
+        /** @var array<int, array<string, mixed>> $uniform */
+        $uniform = [];
+
+        foreach ($rows as $row) {
+            /** @var array<string, mixed> $normalized */
+            $normalized = [];
+            foreach ($columns as $column) {
+                $normalized[$column] = $row[$column] ?? null;
+            }
+
+            ksort($normalized);
+            $uniform[] = $normalized;
+        }
+
+        return $uniform;
     }
 
     /**

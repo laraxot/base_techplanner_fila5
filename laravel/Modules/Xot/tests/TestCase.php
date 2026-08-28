@@ -4,14 +4,22 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests;
 
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
 use Illuminate\Support\Facades\Hash;
 use Mockery;
+use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
+use PHPUnit\Framework\Assert;
+use PHPUnit\Framework\MockObject\MockObject;
+
+use function Safe\rmdir;
+use function Safe\scandir;
+use function Safe\unlink;
 
 abstract class TestCase extends BaseTestCase
 {
@@ -38,10 +46,59 @@ abstract class TestCase extends BaseTestCase
 
     /**
      * Get the configured User class via XotData (correct architecture pattern).
+     *
+     * @return class-string<Model&UserContract>
      */
     protected static function getUserClass(): string
     {
         return XotData::make()->getUserClass();
+    }
+
+    /**
+     * @template T of object
+     *
+     * @param  class-string<T>  $class
+     * @return MockObject&T
+     */
+    protected function createUnitMock(string $class): MockObject
+    {
+        return $this->createMock($class);
+    }
+
+    public function expectThrowableMessage(string $message): void
+    {
+        $this->expectExceptionMessageMatches('/'.preg_quote($message, '/').'/');
+    }
+
+    protected function bindInstance(string $abstract, object $instance): void
+    {
+        app()->instance($abstract, $instance);
+    }
+
+    protected function rrmdir(string $dir): void
+    {
+        if (! is_dir($dir)) {
+            return;
+        }
+
+        /** @var list<string> $objects */
+        $objects = scandir($dir);
+
+        foreach ($objects as $object) {
+            if ($object === '.' || $object === '..') {
+                continue;
+            }
+
+            $path = $dir.DIRECTORY_SEPARATOR.$object;
+
+            if (is_dir($path) && ! is_link($path)) {
+                $this->rrmdir($path);
+            } else {
+                unlink($path);
+            }
+        }
+
+        rmdir($dir);
     }
 
     /**
@@ -51,7 +108,6 @@ abstract class TestCase extends BaseTestCase
      */
     protected static function createTestUser(array $attributes = []): UserContract
     {
-        $userClass = static::getUserClass();
         $defaultData = [
             'email' => static::generateUniqueEmail(),
             'password' => Hash::make('password123'),
@@ -60,8 +116,10 @@ abstract class TestCase extends BaseTestCase
 
         $userData = array_merge($defaultData, $attributes);
 
+        /** @var Factory<Model&UserContract> $factory */
+        $factory = UserFactory::new();
         /** @var UserContract&Model $user */
-        $user = $userClass::factory()->create($userData);
+        $user = $factory->create($userData);
 
         return $user;
     }

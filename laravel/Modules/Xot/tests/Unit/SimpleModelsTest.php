@@ -13,12 +13,12 @@ uses(TestCase::class)->group('xot-db');
 it('can create a test module', function () {
     $module = ModuleFactory::new()->makeOne([
         'name' => 'TestModule',
-        'enabled' => true,
+        'status' => true,
     ]);
 
     Assert::assertInstanceOf(Module::class, $module);
     Assert::assertSame('TestModule', $module->name);
-    Assert::assertTrue((bool) $module->enabled);
+    Assert::assertTrue((bool) $module->status);
 });
 
 it('registers the migration command', function (): void {

@@ -4,30 +4,55 @@ type: status
 module: Xot
 updated: 2026-08-28
 related:
-  - ./stories/5.43.phpstan-modules-bootstrap-and-ide-helper.story.md
-  - ./stories/5.44.quality-gates-prompt-exec.story.md
+  - ./stories/5.49.phpstan-modules-gate-ide-helper-neon-user.story.md
+  - ./stories/5.48.phpstan-no-stale-ignore-casts-fix.story.md
   - ./phpstan-config-immutability.md
-  - ../../../../docs/wiki/memories/phpstan-neon-immutable.md
-  - ../../../../bashscripts/docs/prompts/03-quality-gates.md
+  - ../../../../docs/wiki/memories/phpstan-neon-user-contract.md
 ---
 
 # PHPStan status
 
-## Gate
+## Gate (neon utente — solo IO)
 
 ```bash
 cd laravel && ./vendor/bin/phpstan analyse Modules --memory-limit=-1 --no-progress
+# [OK] No errors — 2026-08-28 (XOT-5.49)
+# 7592 file analizzati (app + tests Pest, no exclude Modules/*/tests)
 ```
 
-Usa **sempre** `laravel/phpstan.neon`. **Solo l’utente** lo modifica. Agenti: zero touch su qualsiasi `*.neon`.
+Config: **`laravel/phpstan.neon`** — agenti **non** lo modificano.
 
-## Hard rule (2026-08-28)
+### Contratto neon (utente)
 
-Qualsiasi “fix” al neon da parte di un agente è **fuori policy**, anche se il WIP parallelo
-lo ha svuotato. In quel caso: stop + chiedere all’utente. Non ripristinare, non creare include.
+| Sezione | Regola |
+|---------|--------|
+| `ignoreErrors:` | vuoto |
+| `excludePaths` | no `Modules/*/tests/**` · no `Modules/*/tests/*` |
+| `includes` | no `pest-internal-ignore.neon` |
 
-Canon: [phpstan-neon-immutable.md](../../../../docs/wiki/memories/phpstan-neon-immutable.md)
+## Per modulo (2026-08-28)
 
-## Pest binding
+Tutti verdi: Activity, AI, Cms, Employee, Gdpr, Geo, Job, Lang, Media, Notify, Seo, TechPlanner, Tenant, UI, User, Xot.
 
-`pest()->extend(TestCase::class)->in(...)` **consigliato** (XOT-5.41). XOR con `uses(TestCase)` per-file.
+## ide-helper
+
+```bash
+cd laravel
+php artisan ide-helper:generate   # _ide_helper.php
+php artisan ide-helper:meta       # .phpstorm.meta.php
+php artisan ide-helper:models --nowrite   # _ide_helper_models.php
+```
+
+Post refresh: PHPStan Modules **0 errori**.
+
+## Debito residuo (codice, non neon)
+
+~200 `@phpstan-ignore` inline (Geo ComuneTest, UI model tests, trait.unused, …) — bonifica
+modulo per modulo con fix tipi / `@method` / helper Pest (`TestCase::$currentTest`), mai
+ignore nel neon.
+
+## Storia campagne
+
+- **XOT-5.45**: 848 → 0 (solo codice)
+- **XOT-5.48**: ignore stale Media + casts() + Gdpr PestHelpers
+- **XOT-5.49**: verifica gate + ide-helper con contratto neon utente

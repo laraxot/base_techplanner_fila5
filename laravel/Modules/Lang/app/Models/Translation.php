@@ -10,6 +10,7 @@ namespace Modules\Lang\Models;
 
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 use Illuminate\Database\Query\Builder as QueryBuilder;
+use Illuminate\Support\Carbon;
 use Modules\TechPlanner\Models\Profile;
 
 /**
@@ -17,6 +18,17 @@ use Modules\TechPlanner\Models\Profile;
  *
  * @property-read Profile|null $creator
  * @property-read Profile|null $updater
+ * @property string|null $id
+ * @property int|string|null $user_id
+ * @property string|null $key
+ * @property string|null $value
+ * @property string|null $locale
+ * @property string|null $lang
+ * @property string|null $namespace
+ * @property string|null $group
+ * @property string|null $item
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  *
  * @method static EloquentBuilder<static>|Translation newModelQuery()
  * @method static EloquentBuilder<static>|Translation newQuery()
@@ -35,8 +47,11 @@ class Translation extends BaseModel
 
     protected $fillable = [
         'id',
-        'lang',
+        'user_id',
+        'key',
         'value',
+        'locale',
+        'lang',
         'namespace',
         'group',
         'item',
@@ -80,6 +95,17 @@ class Translation extends BaseModel
         };
 
         return $query->select(\DB::raw($select));
+    }
+
+    /**
+     * @return array<string, string>
+     */
+    protected function casts(): array
+    {
+        return [
+            ...parent::casts(),
+            'user_id' => 'integer',
+        ];
     }
 
     /*

@@ -109,8 +109,8 @@ describe('User Business Logic', function (): void {
         Assert::assertInstanceOf(Profile::class, $underageProfile);
         Assert::assertInstanceOf(Profile::class, $adultProfile);
 
-        $underageAge = now()->diffInYears($underageProfile->birth_date);
-        $adultAge = now()->diffInYears($adultProfile->birth_date);
+        $underageAge = now()->diffInYears($underageBirthDate);
+        $adultAge = now()->diffInYears($adultBirthDate);
 
         Assert::assertLessThan(18, $underageAge);
         Assert::assertGreaterThan(17, $adultAge);

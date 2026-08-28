@@ -25,3 +25,13 @@ cd laravel
 Vietato: `--level`, `-c`, nuovi `.neon`, restore/edit del config.
 
 Errori → tipizza e correggi il **codice**. Neon sbagliato → chiedi all’utente.
+
+## Contratto utente nel neon
+
+| Sezione | Regola |
+|---------|--------|
+| `ignoreErrors:` | **vuoto** |
+| `excludePaths` | **no** `Modules/*/tests/**` · **no** `Modules/*/tests/*` |
+| `includes` | **no** `pest-internal-ignore.neon` |
+
+Vedi [phpstan-neon-user-contract.md](../../../../docs/wiki/memories/phpstan-neon-user-contract.md).

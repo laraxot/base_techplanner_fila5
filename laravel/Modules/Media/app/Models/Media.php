@@ -44,7 +44,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media as SpatieMedia;
  * @method static Builder<static>|Media ordered()
  * @method static Builder<static>|Media query()
  *
- * @property string $id
+ * @property int $id
  * @property string $model_type
  * @property string|null $model_id
  * @property string|null $uuid
@@ -66,6 +66,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media as SpatieMedia;
  * @property string|null $created_by
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
+ * @property int|string|null $user_id
  *
  * @method static Builder<static>|Media whereCollectionName($value)
  * @method static Builder<static>|Media whereConversionsDisk($value)
@@ -203,8 +204,9 @@ class Media extends SpatieMedia
     protected function casts(): array
     {
         return [
-            'id' => 'string',
+            'id' => 'integer',
             'uuid' => 'string',
+            'user_id' => 'integer',
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
             'deleted_at' => 'datetime',

@@ -54,6 +54,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @property-read User|null $user
  * @property-read string|null $user_name
  *
+ * @method static \Modules\User\Database\Factories\ProfileFactory factory($count = null, $state = [])
  * @method static Builder<static>|Profile byUuid(string $uuid)
  * @method static Builder<static>|Profile childrenWith(array<string> $relations)
  * @method static Builder<static>|Profile childrenWithCount(array<string> $relations)

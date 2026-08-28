@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Models;
 
+use Illuminate\Support\Carbon;
 use Modules\Notify\Models\BaseModel;
 use Modules\Notify\Models\Contact;
 use PHPUnit\Framework\Assert;
@@ -49,10 +50,10 @@ describe('Contact Business Logic', function () {
     test('contact can track email communication', function () {
         $contact = new Contact();
         $contact->mail_count = 3;
-        $contact->mail_sent_at = '2023-01-01 10:00:00';
+        $contact->mail_sent_at = Carbon::parse('2023-01-01 10:00:00');
 
         Assert::assertSame(3, $contact->mail_count);
-        Assert::assertSame('2023-01-01 10:00:00', $contact->mail_sent_at);
+        Assert::assertSame('2023-01-01 10:00:00', $contact->mail_sent_at->format('Y-m-d H:i:s'));
     });
 
     test('contact can store personal information', function () {

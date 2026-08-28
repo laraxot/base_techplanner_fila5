@@ -21,6 +21,21 @@ namespace Modules\AI\Models{
  *        \-> cancelled
  *        \-> failed
  *
+ * @property int $id
+ * @property string $public_id
+ * @property int $ai_thread_id
+ * @property int $proposed_by_user_id
+ * @property string $type
+ * @property array<string, mixed> $payload
+ * @property string|null $preview
+ * @property string $status
+ * @property int|null $confirmed_by_user_id
+ * @property Carbon|null $confirmed_at
+ * @property Carbon|null $executed_at
+ * @property array<string, mixed>|null $result
+ * @property string|null $error
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property-read Profile|null $creator
  * @property-read AiThread|null $thread
  * @property-read Profile|null $updater
@@ -104,7 +119,7 @@ namespace Modules\Activity\Models{
  * @method static Builder<static>|Activity forEvent(\Spatie\Activitylog\Enums\ActivityEvent|string $event)
  * @method static Builder<static>|Activity forSubject(\Illuminate\Database\Eloquent\Model $subject)
  * @method static Builder<static>|Activity hasBatch()
- * @method static Builder<static>|Activity inLog(\BackedEnum|array|string ...$logNames)
+ * @method static Builder<static>|Activity inLog(\BackedEnum|array<int|string, mixed>|string ...$logNames)
  * @method static Builder<static>|Activity newModelQuery()
  * @method static Builder<static>|Activity newQuery()
  * @method static Builder<static>|Activity query()
@@ -117,8 +132,8 @@ namespace Modules\Activity\Models{
  * @property string|null $causer_id
  * @property string|null $batch_uuid
  * @property string|null $event
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_at
@@ -157,8 +172,8 @@ namespace Modules\Activity\Models{
  * @property string $aggregate_uuid
  * @property int $aggregate_version
  * @property array<array-key, mixed> $state
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @method static Builder<static>|Snapshot whereAggregateUuid($value)
@@ -183,9 +198,9 @@ namespace Modules\Activity\Models{
  * @property \Spatie\SchemalessAttributes\SchemalessAttributes $meta_data
  * @property-read ShouldBeStored|null $event
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent afterVersion(int $version)
- * @method static EloquentStoredEventCollection<int, static> all($columns = ['*'])
+ * @method static EloquentStoredEventCollection<static> all($columns = ['*'])
  * @method static \Modules\Activity\Database\Factories\StoredEventFactory factory($count = null, $state = [])
- * @method static EloquentStoredEventCollection<int, static> get($columns = ['*'])
+ * @method static EloquentStoredEventCollection<static> get($columns = ['*'])
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent lastEvent(string ...$eventClasses)
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent newModelQuery()
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent newQuery()
@@ -249,8 +264,8 @@ namespace Modules\Cms\Models{
  * @property string|null $created_by
  * @property string|null $updated_by
  * @property-read Profile|null $creator
- * @property-read array $translatable_columns_from
- * @property-read MediaCollection<int, \Modules\Media\Models\Media> $media
+ * @property-read array<int|string, mixed> $translatable_columns_from
+ * @property-read MediaCollection<int, Media> $media
  * @property-read int|null $media_count
  * @property-read mixed $translations
  * @property-read Profile|null $updater
@@ -264,9 +279,9 @@ namespace Modules\Cms\Models{
  * @method static Builder<static>|Attachment whereDisk($value)
  * @method static Builder<static>|Attachment whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Attachment whereJsonContainsLocale(string $column, string $locale, ?mixed $value, string $operand = '=')
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Attachment whereJsonContainsLocales(string $column, array $locales, ?mixed $value, string $operand = '=')
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Attachment whereJsonContainsLocales(string $column, array<int|string, mixed> $locales, ?mixed $value, string $operand = '=')
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Attachment whereLocale(string $column, string $locale)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Attachment whereLocales(string $column, array $locales)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Attachment whereLocales(string $column, array<int|string, mixed> $locales)
  * @method static Builder<static>|Attachment whereSlug($value)
  * @method static Builder<static>|Attachment whereTitle($value)
  * @method static Builder<static>|Attachment whereUpdatedAt($value)
@@ -354,7 +369,7 @@ namespace Modules\Cms\Models{
  * @method static Builder<static>|Menu whereTitle($value)
  * @method static Builder<static>|Menu whereUpdatedAt($value)
  * @method static Builder<static>|Menu whereUpdatedBy($value)
- * @method static Builder<static>|Menu withGlobalScopes(array $scopes)
+ * @method static Builder<static>|Menu withGlobalScopes(array<string, mixed> $scopes)
  * @method static Builder<static>|Menu withRelationshipExpression($direction, callable $constraint, $initialDepth, $from = null, $maxDepth = null)
  * @mixin \Eloquent
  */
@@ -398,7 +413,7 @@ namespace Modules\Cms\Models{
  * @property string|null $created_by
  * @property string|null $updated_by
  * @property-read Profile|null $creator
- * @property-read array $translatable_columns_from
+ * @property-read array<int|string, mixed> $translatable_columns_from
  * @property-read mixed $translations
  * @property-read Profile|null $updater
  * @method static Builder<static>|Page newModelQuery()
@@ -413,9 +428,9 @@ namespace Modules\Cms\Models{
  * @method static Builder<static>|Page whereFooterBlocks($value)
  * @method static Builder<static>|Page whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Page whereJsonContainsLocale(string $column, string $locale, ?mixed $value, string $operand = '=')
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Page whereJsonContainsLocales(string $column, array $locales, ?mixed $value, string $operand = '=')
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Page whereJsonContainsLocales(string $column, array<int|string, mixed> $locales, ?mixed $value, string $operand = '=')
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Page whereLocale(string $column, string $locale)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Page whereLocales(string $column, array $locales)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Page whereLocales(string $column, array<int|string, mixed> $locales)
  * @method static Builder<static>|Page whereMiddleware($value)
  * @method static Builder<static>|Page whereSidebarBlocks($value)
  * @method static Builder<static>|Page whereSlug($value)
@@ -440,7 +455,7 @@ namespace Modules\Cms\Models{
  * @property string|null $created_by
  * @property string|null $updated_by
  * @property-read Profile|null $creator
- * @property-read array $translatable_columns_from
+ * @property-read array<int|string, mixed> $translatable_columns_from
  * @property-read mixed $translations
  * @property-read Profile|null $updater
  * @method static Builder<static>|PageContent newModelQuery()
@@ -451,9 +466,9 @@ namespace Modules\Cms\Models{
  * @method static Builder<static>|PageContent whereCreatedBy($value)
  * @method static Builder<static>|PageContent whereId($value)
  * @method static Builder<static>|PageContent whereJsonContainsLocale(string $column, string $locale, ?mixed $value, string $operand = '=')
- * @method static Builder<static>|PageContent whereJsonContainsLocales(string $column, array $locales, ?mixed $value, string $operand = '=')
+ * @method static Builder<static>|PageContent whereJsonContainsLocales(string $column, array<int|string, mixed> $locales, ?mixed $value, string $operand = '=')
  * @method static Builder<static>|PageContent whereLocale(string $column, string $locale)
- * @method static Builder<static>|PageContent whereLocales(string $column, array $locales)
+ * @method static Builder<static>|PageContent whereLocales(string $column, array<int|string, mixed> $locales)
  * @method static Builder<static>|PageContent whereName($value)
  * @method static Builder<static>|PageContent whereSlug($value)
  * @method static Builder<static>|PageContent whereUpdatedAt($value)
@@ -476,7 +491,7 @@ namespace Modules\Cms\Models{
  * @property string|null $created_by
  * @property string|null $updated_by
  * @property-read Profile|null $creator
- * @property-read array $translatable_columns_from
+ * @property-read array<int|string, mixed> $translatable_columns_from
  * @property-read mixed $translations
  * @property-read Profile|null $updater
  * @method static Builder<static>|Section newModelQuery()
@@ -487,9 +502,9 @@ namespace Modules\Cms\Models{
  * @method static Builder<static>|Section whereCreatedBy($value)
  * @method static Builder<static>|Section whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Section whereJsonContainsLocale(string $column, string $locale, ?mixed $value, string $operand = '=')
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Section whereJsonContainsLocales(string $column, array $locales, ?mixed $value, string $operand = '=')
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Section whereJsonContainsLocales(string $column, array<int|string, mixed> $locales, ?mixed $value, string $operand = '=')
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Section whereLocale(string $column, string $locale)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Section whereLocales(string $column, array $locales)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Section whereLocales(string $column, array<int|string, mixed> $locales)
  * @method static Builder<static>|Section whereName($value)
  * @method static Builder<static>|Section whereSlug($value)
  * @method static Builder<static>|Section whereUpdatedAt($value)
@@ -509,15 +524,15 @@ namespace Modules\Employee\Models{
  * @property int $id
  * @property int $user_id
  * @property string $type
- * @property \Illuminate\Support\Carbon|null $starts_at
- * @property \Illuminate\Support\Carbon|null $ends_at
+ * @property Carbon|null $starts_at
+ * @property Carbon|null $ends_at
  * @property string|null $notes
  * @property string $status
  * @property int|null $decided_by_user_id
- * @property \Illuminate\Support\Carbon|null $decided_at
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $decided_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property Carbon|null $deleted_at
  * @property-read Profile|null $creator
  * @property-read Employee|null $decidedBy
  * @property-read Profile|null $updater
@@ -605,20 +620,20 @@ namespace Modules\Employee\Models{
  * @property string|null $first_name
  * @property string|null $last_name
  * @property string $email
- * @property \Illuminate\Support\Carbon|null $email_verified_at
+ * @property Carbon|null $email_verified_at
  * @property string|null $two_factor_secret
  * @property string|null $two_factor_recovery_codes
  * @property string|null $two_factor_confirmed_at
  * @property string|null $remember_token
  * @property int|null $current_team_id
  * @property string|null $profile_photo_path
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $lang
  * @property bool $is_active
  * @property bool $is_otp
- * @property \Illuminate\Support\Carbon|null $password_expires_at
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $password_expires_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_by
@@ -766,8 +781,8 @@ namespace Modules\Employee\Models{
  * @property int $is_active
  * @property int $is_otp
  * @property string|null $password_expires_at
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_by
@@ -965,20 +980,20 @@ namespace Modules\Employee\Models{
  * @property string|null $first_name
  * @property string|null $last_name
  * @property string $email
- * @property \Illuminate\Support\Carbon|null $email_verified_at
+ * @property Carbon|null $email_verified_at
  * @property string|null $two_factor_secret
  * @property string|null $two_factor_recovery_codes
  * @property string|null $two_factor_confirmed_at
  * @property string|null $remember_token
  * @property int|null $current_team_id
  * @property string|null $profile_photo_path
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $lang
  * @property bool $is_active
  * @property bool $is_otp
- * @property \Illuminate\Support\Carbon|null $password_expires_at
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $password_expires_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_by
@@ -1084,17 +1099,17 @@ namespace Modules\Gdpr\Models{
  * @property string $user_type
  * @property int $user_id
  * @property string|null $type
- * @property \Illuminate\Support\Carbon|null $accepted_at
+ * @property Carbon|null $accepted_at
  * @property string|null $ip_address
  * @property string|null $user_agent
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_at
  * @property string|null $deleted_by
  * @property array<array-key, mixed>|null $metadata
- * @property \Illuminate\Support\Carbon|null $revoked_at
+ * @property Carbon|null $revoked_at
  * @property string|null $revoked_ip_address
  * @method static Builder<static>|Consent whereAcceptedAt($value)
  * @method static Builder<static>|Consent whereCreatedAt($value)
@@ -1125,8 +1140,8 @@ namespace Modules\Gdpr\Models{
  *
  * @property-read Consent|null $consent
  * @property-read Profile|null $creator
- * @property-write mixed $ip
- * @property-write mixed $payload
+ * @property string|null $ip
+ * @property string|null $payload
  * @property-read Profile|null $updater
  * @method static Builder<static>|Event newModelQuery()
  * @method static Builder<static>|Event newQuery()
@@ -1136,8 +1151,8 @@ namespace Modules\Gdpr\Models{
  * @property string|null $consent_id
  * @property string $subject_id
  * @property string $action
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_at
@@ -1175,7 +1190,7 @@ namespace Modules\Gdpr\Models{
  * @property-read string|null $first_name
  * @property-read string|null $full_name
  * @property-read string|null $last_name
- * @property-read MediaCollection<int, \Modules\Media\Models\Media> $media
+ * @property-read MediaCollection<int, Media> $media
  * @property-read int|null $media_count
  * @property-read Collection<int, DeviceUser> $mobileDeviceUsers
  * @property-read int|null $mobile_device_users_count
@@ -1191,8 +1206,8 @@ namespace Modules\Gdpr\Models{
  * @property-read User|null $user
  * @property-read string|null $user_name
  * @method static Builder<static>|Profile byUuid(string $uuid)
- * @method static Builder<static>|Profile childrenWith(array $relations)
- * @method static Builder<static>|Profile childrenWithCount(array $relations)
+ * @method static Builder<static>|Profile childrenWith(array<int|string, mixed> $relations)
+ * @method static Builder<static>|Profile childrenWithCount(array<int|string, mixed> $relations)
  * @method static Builder<static>|Profile newModelQuery()
  * @method static Builder<static>|Profile newQuery()
  * @method static Builder<static>|Profile permission($permissions, bool $without = false)
@@ -1226,8 +1241,8 @@ namespace Modules\Gdpr\Models{
  * @property string|null $documentVersion
  * @property string|null $documentUrl
  * @property int $weight
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_at
@@ -1339,25 +1354,25 @@ namespace Modules\Geo\Models{
  * regioni, province, città, CAP, codici ISTAT, ecc.
  * Tutti i dati sono estratti da file JSON e gestiti tramite Sushi.
  *
- * @property string|null                  $nome
- * @property float|null                   $codice
+ * @property string|null $nome
+ * @property float|null $codice
  * @property array<array-key, mixed>|null $zona
  * @property array<array-key, mixed>|null $regione
  * @property array<array-key, mixed>|null $provincia
- * @property string|null                  $sigla
- * @property string|null                  $codiceCatastale
+ * @property string|null $sigla
+ * @property string|null $codiceCatastale
  * @property array<array-key, mixed>|null $cap
- * @property int|null                     $popolazione
- * @property int|null                     $id
- * @property string|null                  $title
- * @property string|null                  $slug
- * @property string|null                  $content
- * @property string|null                  $created_at
- * @property string|null                  $updated_at
- * @property string|null                  $created_by
- * @property string|null                  $updated_by
- * @property ProfileContract|null         $creator
- * @property ProfileContract|null         $updater
+ * @property int|null $popolazione
+ * @property int|null $id
+ * @property string|null $title
+ * @property string|null $slug
+ * @property string|null $content
+ * @property string|null $created_at
+ * @property string|null $updated_at
+ * @property string|null $created_by
+ * @property string|null $updated_by
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
  * @method static Builder<static>|Comune newModelQuery()
  * @method static Builder<static>|Comune newQuery()
  * @method static Builder<static>|Comune query()
@@ -1380,12 +1395,12 @@ namespace Modules\Geo\Models{
  * @method static Builder<static>|Comune whereZona($value)
  * @property ProfileContract|null $deleter
  * @method static ComuneFactory factory($count = null, $state = [])
- * @property int|null    $altitudine
+ * @property int|null $altitudine
  * @property string|null $codice_catastale
- * @property float|null  $lat
- * @property float|null  $lng
+ * @property float|null $lat
+ * @property float|null $lng
  * @property string|null $sigla_provincia
- * @property float|null  $superficie
+ * @property float|null $superficie
  * @property string|null $zona_altimetrica
  * @method static Builder<static>|Comune whereAltitudine($value)
  * @method static Builder<static>|Comune whereLat($value)
@@ -1412,8 +1427,8 @@ namespace Modules\Geo\Models{
  * @property string $county Nome della suddivisione (county/provincia)
  * @property string|null $county_code Codice della suddivisione
  * @property int|null $state_index Indice progressivo entro lo stato
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_at
@@ -1456,8 +1471,8 @@ namespace Modules\Geo\Models{
  * @property numeric|null $latitude
  * @property numeric|null $longitude
  * @property int|null $accuracy Accuratezza coordinate GeoNames
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_at
@@ -1532,8 +1547,8 @@ namespace Modules\Geo\Models{
  * @method static Builder<static>|Location withinDistance(float $latitude, float $longitude, float $distanceInKm)
  * @property string|null $model_type
  * @property string|null $model_id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_at
@@ -1584,8 +1599,8 @@ namespace Modules\Geo\Models{
  * @property string|null $created_by
  * @property string|null $updated_by
  * @property string|null $deleted_by
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $post_type
  * @method static Builder<static>|Place whereAddress($value)
  * @method static Builder<static>|Place whereCreatedAt($value)
@@ -1617,8 +1632,8 @@ namespace Modules\Geo\Models{
  * @property int $id
  * @property string $name
  * @property string|null $description
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @method static Builder<static>|PlaceType whereCreatedAt($value)
  * @method static Builder<static>|PlaceType whereDescription($value)
  * @method static Builder<static>|PlaceType whereId($value)
@@ -1680,8 +1695,8 @@ namespace Modules\Geo\Models{
  * @property int $id
  * @property string $state Nome dello stato/regione
  * @property string|null $state_code Codice dello stato/regione
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_at
@@ -1707,7 +1722,7 @@ namespace Modules\Job\Models{
  * @method static Builder<static>|Export newQuery()
  * @method static Builder<static>|Export query()
  * @property string $id
- * @property \Illuminate\Support\Carbon|null $completed_at
+ * @property Carbon|null $completed_at
  * @property string $file_disk
  * @property string|null $file_name
  * @property string $exporter
@@ -1716,8 +1731,8 @@ namespace Modules\Job\Models{
  * @property int $successful_rows
  * @property string|null $user_type
  * @property string|null $user_id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_at
@@ -1754,8 +1769,8 @@ namespace Modules\Job\Models{
  * @property array<array-key, mixed> $data
  * @property int $import_id
  * @property string|null $validation_error
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @method static Builder<static>|FailedImportRow whereCreatedAt($value)
@@ -1815,8 +1830,8 @@ namespace Modules\Job\Models{
  * @property int $task_id
  * @property string $label
  * @property string $interval
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @method static Builder<static>|Frequency whereCreatedAt($value)
@@ -1840,7 +1855,7 @@ namespace Modules\Job\Models{
  * @method static Builder<static>|Import newQuery()
  * @method static Builder<static>|Import query()
  * @property string $id
- * @property \Illuminate\Support\Carbon|null $completed_at
+ * @property Carbon|null $completed_at
  * @property string $file_name
  * @property string $file_path
  * @property string $importer
@@ -1849,11 +1864,11 @@ namespace Modules\Job\Models{
  * @property int $successful_rows
  * @property string|null $user_type
  * @property string|null $user_id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
  * @method static Builder<static>|Import whereCompletedAt($value)
  * @method static Builder<static>|Import whereCreatedAt($value)
@@ -1893,8 +1908,8 @@ namespace Modules\Job\Models{
  * @property int $attempts
  * @property int|null $reserved_at
  * @property int $available_at
- * @property \Illuminate\Support\Carbon $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @method static Builder<static>|Job whereAttempts($value)
@@ -1927,10 +1942,10 @@ namespace Modules\Job\Models{
  * @property int $pending_jobs
  * @property int $failed_jobs
  * @property string $failed_job_ids
- * @property \Illuminate\Support\Collection<array-key, mixed>|null $options
- * @property \Illuminate\Support\Carbon|null $cancelled_at
- * @property \Illuminate\Support\Carbon $created_at
- * @property \Illuminate\Support\Carbon|null $finished_at
+ * @property Collection<array-key, mixed>|null $options
+ * @property Carbon|null $cancelled_at
+ * @property Carbon $created_at
+ * @property Carbon|null $finished_at
  * @method static Builder<static>|JobBatch whereCancelledAt($value)
  * @method static Builder<static>|JobBatch whereCreatedAt($value)
  * @method static Builder<static>|JobBatch whereFailedJobIds($value)
@@ -1996,8 +2011,8 @@ namespace Modules\Job\Models{
  * @property int $attempts
  * @property int|null $reserved_at
  * @property int $available_at
- * @property \Illuminate\Support\Carbon $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @method static Builder<static>|JobsWaiting whereAttempts($value)
@@ -2029,8 +2044,8 @@ namespace Modules\Job\Models{
  * @property int $frequency_id
  * @property string $name
  * @property string $value
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @method static Builder<static>|Parameter whereCreatedAt($value)
@@ -2058,11 +2073,11 @@ namespace Modules\Job\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Result query()
  * @property string $id
  * @property int $task_id
- * @property \Illuminate\Support\Carbon $ran_at
+ * @property Carbon $ran_at
  * @property numeric $duration
  * @property string $result
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Result whereCreatedAt($value)
@@ -2113,9 +2128,9 @@ namespace Modules\Job\Models{
  * @property int $log_error
  * @property int $run_in_background
  * @property int $sendmail_success
- * @property \Illuminate\Support\Carbon|null $deleted_at
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $deleted_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_by
@@ -2166,11 +2181,11 @@ namespace Modules\Job\Models{
  * @property string $output
  * @property array<array-key, mixed>|null $options
  * @property int|null $schedule_id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
  * @method static Builder<static>|ScheduleHistory whereCommand($value)
  * @method static Builder<static>|ScheduleHistory whereCreatedAt($value)
@@ -2209,7 +2224,7 @@ namespace Modules\Job\Models{
  * @method static Builder<static>|Task newModelQuery()
  * @method static Builder<static>|Task newQuery()
  * @method static Builder<static>|Task query()
- * @method static Builder<static>|Task sortableBy(array $sortableColumns, array $defaultSort = [])
+ * @method static Builder<static>|Task sortableBy(array<string> $sortableColumns, array<string, 'asc'|'desc'> $defaultSort = [])
  * @property int $id
  * @property string $description
  * @property string $command
@@ -2279,8 +2294,8 @@ namespace Modules\Lang\Models{
 /**
  * Modules\Lang\Models\LanguageLine.
  *
- * @property-read \Modules\TechPlanner\Models\Profile|null $creator
- * @property-read \Modules\TechPlanner\Models\Profile|null $updater
+ * @property-read Profile|null $creator
+ * @property-read Profile|null $updater
  * @method static EloquentBuilder<static>|LanguageLine newModelQuery()
  * @method static EloquentBuilder<static>|LanguageLine newQuery()
  * @method static EloquentBuilder<static>|LanguageLine query()
@@ -2289,8 +2304,8 @@ namespace Modules\Lang\Models{
  * @property string $key
  * @property array<array-key, mixed> $text
  * @property string $locale
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @method static EloquentBuilder<static>|LanguageLine whereCreatedAt($value)
@@ -2317,6 +2332,31 @@ namespace Modules\Lang\Models{
  * @property-read string|null $txt
  * @property-read Model $linkable
  * @property-read Profile|null $updater
+ * @property string|null $id
+ * @property int|string|null $user_id
+ * @property int|string|null $post_id
+ * @property string|null $lang
+ * @property string|null $subtitle
+ * @property string|null $post_type
+ * @property string|null $content
+ * @property string|null $excerpt
+ * @property string|null $slug
+ * @property string|null $status
+ * @property Carbon|null $published_at
+ * @property string|null $locale
+ * @property string|null $category
+ * @property string|null $image_src
+ * @property string|null $image_alt
+ * @property string|null $image_title
+ * @property string|null $meta_title
+ * @property string|null $meta_description
+ * @property string|null $meta_keywords
+ * @property int|string|null $author_id
+ * @property string|null $url
+ * @property array<array-key, mixed>|null $url_lang
+ * @property array<array-key, mixed>|null $image_resize_src
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @method static \Modules\Lang\Database\Factories\PostFactory factory($count = null, $state = [])
  * @method static Builder<static>|Post newModelQuery()
  * @method static Builder<static>|Post newQuery()
@@ -2332,6 +2372,17 @@ namespace Modules\Lang\Models{
  *
  * @property-read Profile|null $creator
  * @property-read Profile|null $updater
+ * @property string|null $id
+ * @property int|string|null $user_id
+ * @property string|null $key
+ * @property string|null $value
+ * @property string|null $locale
+ * @property string|null $lang
+ * @property string|null $namespace
+ * @property string|null $group
+ * @property string|null $item
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @method static EloquentBuilder<static>|Translation newModelQuery()
  * @method static EloquentBuilder<static>|Translation newQuery()
  * @method static EloquentBuilder<static>|Translation ofTranslatedGroup(string $group)
@@ -2346,6 +2397,9 @@ namespace Modules\Lang\Models{
 namespace Modules\Lang\Models{
 /**
  * @property int $id
+ * @property string|null $name
+ * @property string|null $path
+ * @property array<array-key, mixed>|string|null $content
  * @property-read Profile|null $creator
  * @property-read Profile|null $updater
  * @method static Builder<static>|TranslationFile newModelQuery()
@@ -2361,7 +2415,8 @@ namespace Modules\Media\Models{
 /**
  * @property-read User|null $creator
  * @property-read mixed $extension
- * @property-read \Modules\Media\Models\array<int, array{name: $entry_conversions
+ * @property-read array<int, array{name: string, generated: bool, src: string}> $entry_conversions
+ * @property-read string $path
  * @property-read mixed $human_readable_size
  * @property-read EloquentCollection<int, MediaConvert> $mediaConverts
  * @property-read int|null $media_converts_count
@@ -2378,7 +2433,7 @@ namespace Modules\Media\Models{
  * @method static Builder<static>|Media newQuery()
  * @method static Builder<static>|Media ordered()
  * @method static Builder<static>|Media query()
- * @property string $id
+ * @property int $id
  * @property string $model_type
  * @property string|null $model_id
  * @property string|null $uuid
@@ -2394,13 +2449,13 @@ namespace Modules\Media\Models{
  * @property array<array-key, mixed> $generated_conversions
  * @property array<array-key, mixed> $responsive_images
  * @property int|null $order_column
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
- * @property-read \Modules\Media\Models\array<int, array{name: $entry_conversions
+ * @property int|string|null $user_id
  * @method static Builder<static>|Media whereCollectionName($value)
  * @method static Builder<static>|Media whereConversionsDisk($value)
  * @method static Builder<static>|Media whereCreatedAt($value)
@@ -2424,7 +2479,6 @@ namespace Modules\Media\Models{
  * @method static Builder<static>|Media whereUpdatedBy($value)
  * @method static Builder<static>|Media whereUuid($value)
  * @mixin Eloquent
- * @property-read \Modules\Media\Models\array<int, array{name: $entry_conversions
  */
 	class Media extends \Eloquent {}
 }
@@ -2455,11 +2509,11 @@ namespace Modules\Media\Models{
  * @property numeric|null $remaining
  * @property numeric|null $rate
  * @property numeric|null $execution_time
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
  * @method static Builder<static>|MediaConvert whereBitrate($value)
  * @method static Builder<static>|MediaConvert whereCodecAudio($value)
@@ -2506,11 +2560,11 @@ namespace Modules\Media\Models{
  * @property int|null $file_size
  * @property string|null $mime_type
  * @property string $status
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
  * @method static Builder<static>|TemporaryUpload whereCreatedAt($value)
  * @method static Builder<static>|TemporaryUpload whereCreatedBy($value)
@@ -2535,7 +2589,7 @@ namespace Modules\Notify\Models{
  * Modules\Notify\Models\Contact.
  *
  * @property-read Profile|null $creator
- * @property-read MediaCollection<int, \Modules\Media\Models\Media> $media
+ * @property-read MediaCollection<int, Media> $media
  * @property-read int|null $media_count
  * @property-read Profile|null $updater
  * @method static Builder<static>|Contact newModelQuery()
@@ -2546,14 +2600,28 @@ namespace Modules\Notify\Models{
  * @property string $model_id
  * @property string|null $contact_type
  * @property string|null $value
+ * @property string|null $first_name
+ * @property string|null $last_name
  * @property string|null $user_id
  * @property string|null $verified_at
  * @property string|null $token
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property int|null $sms_count
+ * @property string|null $sms_status_code
+ * @property string|null $sms_status_txt
+ * @property Carbon|null $sms_sent_at
+ * @property Carbon|null $mail_sent_at
+ * @property int|null $mail_count
+ * @property int|null $usesleft
+ * @property int|null $order_column
+ * @property int|null $duplicate_count
+ * @property string|null $attribute_1
+ * @property string|null $attribute_2
+ * @property string|null $attribute_3
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
  * @method static Builder<static>|Contact whereContactType($value)
  * @method static Builder<static>|Contact whereCreatedAt($value)
@@ -2586,34 +2654,34 @@ namespace Modules\Notify\Models{
 
 namespace Modules\Notify\Models{
 /**
- * @property-read array $translatable_columns_from
- * @property-read array $variables
+ * @property-read list<string> $translatable_columns_from
+ * @property-read array<string, mixed> $variables
  * @property-read mixed $translations
  * @method static Builder<static>|MailTemplate forMailable(\Illuminate\Contracts\Mail\Mailable $mailable)
  * @method static Builder<static>|MailTemplate newModelQuery()
  * @method static Builder<static>|MailTemplate newQuery()
  * @method static Builder<static>|MailTemplate query()
  * @method static Builder<static>|MailTemplate whereJsonContainsLocale(string $column, string $locale, ?mixed $value, string $operand = '=')
- * @method static Builder<static>|MailTemplate whereJsonContainsLocales(string $column, array $locales, ?mixed $value, string $operand = '=')
+ * @method static Builder<static>|MailTemplate whereJsonContainsLocales(string $column, array<int, string> $locales, ?mixed $value, string $operand = '=')
  * @method static Builder<static>|MailTemplate whereLocale(string $column, string $locale)
- * @method static Builder<static>|MailTemplate whereLocales(string $column, array $locales)
+ * @method static Builder<static>|MailTemplate whereLocales(string $column, array<int, string> $locales)
  * @property int $id
  * @property string|null $name
  * @property string|null $mailable
  * @property string|null $slug
- * @property array<array-key, mixed>|null $subject
- * @property array<array-key, mixed>|null $html_template
- * @property array<array-key, mixed>|null $text_template
- * @property string $version
+ * @property string|array<array-key, mixed>|null $subject
+ * @property string|array<array-key, mixed>|null $html_template
+ * @property string|array<array-key, mixed>|null $text_template
+ * @property string|int $version
  * @property string|null $params
  * @property array<array-key, mixed>|null $sms_template
  * @property int $counter
  * @property string|null $html_layout_path
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
  * @method static Builder<static>|MailTemplate whereCounter($value)
  * @method static Builder<static>|MailTemplate whereCreatedAt($value)
@@ -2640,6 +2708,18 @@ namespace Modules\Notify\Models{
 
 namespace Modules\Notify\Models{
 /**
+ * @property int|null $template_id
+ * @property string|null $mailable_type
+ * @property int|string|null $mailable_id
+ * @property string|null $status
+ * @property string|null $status_message
+ * @property array<string, mixed>|null $data
+ * @property array<string, mixed>|null $metadata
+ * @property \Illuminate\Support\Carbon|null $sent_at
+ * @property \Illuminate\Support\Carbon|null $delivered_at
+ * @property \Illuminate\Support\Carbon|null $failed_at
+ * @property \Illuminate\Support\Carbon|null $opened_at
+ * @property \Illuminate\Support\Carbon|null $clicked_at
  * @property-read Profile|null $creator
  * @property-read Model $mailable
  * @property-read MediaCollection<int, Media> $media
@@ -2676,10 +2756,10 @@ namespace Modules\Notify\Models{
  * @property array<array-key, mixed>|null $metadata
  * @property string|null $created_by
  * @property string|null $change_notes
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
  * @method static Builder<static>|MailTemplateVersion whereChangeNotes($value)
  * @method static Builder<static>|MailTemplateVersion whereCreatedAt($value)
@@ -2711,16 +2791,24 @@ namespace Modules\Notify\Models{
  * @method static Builder<static>|Notification newQuery()
  * @method static Builder<static>|Notification query()
  * @property string $id
+ * @property string|null $message
  * @property string $type
  * @property string $notifiable_type
  * @property int $notifiable_id
+ * @property string|int|null $tenant_id
+ * @property string|int|null $user_id
+ * @property string|null $subject_type
+ * @property string|int|null $subject_id
+ * @property array<int, string>|array<string, mixed>|null $channels
+ * @property string|null $status
  * @property array<array-key, mixed> $data
- * @property \Illuminate\Support\Carbon|null $read_at
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $read_at
+ * @property Carbon|null $sent_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
  * @method static Builder<static>|Notification whereCreatedAt($value)
  * @method static Builder<static>|Notification whereCreatedBy($value)
@@ -2741,6 +2829,11 @@ namespace Modules\Notify\Models{
 
 namespace Modules\Notify\Models{
 /**
+ * @property string|null $name
+ * @property string|null $driver
+ * @property array<string, mixed>|null $config
+ * @property bool $is_enabled
+ * @property int|null $priority
  * @property-read Profile|null $creator
  * @property-read MediaCollection<int, Media> $media
  * @property-read int|null $media_count
@@ -2777,13 +2870,13 @@ namespace Modules\Notify\Models{
  * @property array<array-key, mixed>|null $data
  * @property array<array-key, mixed>|null $metadata
  * @property string|null $tenant_id
- * @property \Illuminate\Support\Carbon|null $sent_at
- * @property \Illuminate\Support\Carbon|null $delivered_at
- * @property \Illuminate\Support\Carbon|null $failed_at
- * @property \Illuminate\Support\Carbon|null $opened_at
- * @property \Illuminate\Support\Carbon|null $clicked_at
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $sent_at
+ * @property Carbon|null $delivered_at
+ * @property Carbon|null $failed_at
+ * @property Carbon|null $opened_at
+ * @property Carbon|null $clicked_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @method static Builder<static>|NotificationLog whereChannel($value)
@@ -2814,10 +2907,21 @@ namespace Modules\Notify\Models{
 /**
  * Class NotificationTemplate.
  *
+ * @property string|null $name
+ * @property string|null $code
+ * @property string|null $subject
+ * @property bool $is_active
+ * @property array<string, mixed>|null $variables
+ * @property string|null $body_html
+ * @property string|null $body_text
+ * @property array<int, string>|null $channels
+ * @property array<string, mixed>|null $conditions
+ * @property array<string, mixed>|null $preview_data
+ * @property array<string, mixed>|null $grapesjs_data
  * @property NotificationTypeEnum $type
  * @property-read Profile|null $creator
  * @property-read string $channels_label
- * @property-read array $translatable_columns_from
+ * @property-read list<string> $translatable_columns_from
  * @property-read MediaCollection<int, Media> $media
  * @property-read int|null $media_count
  * @property-read mixed $translations
@@ -2829,9 +2933,9 @@ namespace Modules\Notify\Models{
  * @method static Builder<static>|NotificationTemplate newQuery()
  * @method static Builder<static>|NotificationTemplate query()
  * @method static Builder<static>|NotificationTemplate whereJsonContainsLocale(string $column, string $locale, ?mixed $value, string $operand = '=')
- * @method static Builder<static>|NotificationTemplate whereJsonContainsLocales(string $column, array $locales, ?mixed $value, string $operand = '=')
+ * @method static Builder<static>|NotificationTemplate whereJsonContainsLocales(string $column, array<int, string> $locales, ?mixed $value, string $operand = '=')
  * @method static Builder<static>|NotificationTemplate whereLocale(string $column, string $locale)
- * @method static Builder<static>|NotificationTemplate whereLocales(string $column, array $locales)
+ * @method static Builder<static>|NotificationTemplate whereLocales(string $column, array<int, string> $locales)
  * @mixin \Eloquent
  */
 	class NotificationTemplate extends \Eloquent {}
@@ -2839,11 +2943,19 @@ namespace Modules\Notify\Models{
 
 namespace Modules\Notify\Models{
 /**
- * @property-read \Modules\TechPlanner\Models\Profile|null $creator
+ * @property int|null $template_id
+ * @property string|null $subject
+ * @property string|null $body_html
+ * @property string|null $body_text
+ * @property array<int, string>|null $channels
+ * @property array<string, mixed>|null $variables
+ * @property array<string, mixed>|null $conditions
+ * @property int|string|null $version
+ * @property-read Profile|null $creator
  * @property-read MediaCollection<int, Media> $media
  * @property-read int|null $media_count
  * @property-read NotificationTemplate|null $template
- * @property-read \Modules\TechPlanner\Models\Profile|null $updater
+ * @property-read Profile|null $updater
  * @method static Builder<static>|NotificationTemplateVersion newModelQuery()
  * @method static Builder<static>|NotificationTemplateVersion newQuery()
  * @method static Builder<static>|NotificationTemplateVersion query()
@@ -2854,6 +2966,15 @@ namespace Modules\Notify\Models{
 
 namespace Modules\Notify\Models{
 /**
+ * @property int $id
+ * @property string|null $name
+ * @property string|null $slug
+ * @property string|null $description
+ * @property string|null $category
+ * @property bool $is_active
+ * @property array<string, mixed>|null $channels
+ * @property array<string, mixed>|null $settings
+ * @property string|null $template
  * @method static Builder<static>|NotificationType newModelQuery()
  * @method static Builder<static>|NotificationType newQuery()
  * @method static Builder<static>|NotificationType query()
@@ -2866,6 +2987,7 @@ namespace Modules\Notify\Models{
 /**
  * Modules\Notify\Models\NotifyTheme.
  *
+ * @method static NotifyThemeFactory factory($count = null, $state = [])
  * @property-read Profile|null $creator
  * @property-read array{path: string, width: int, height: int} $logo
  * @property-read Model $linkable
@@ -2890,11 +3012,11 @@ namespace Modules\Notify\Models{
  * @property int|null $logo_width
  * @property int|null $logo_height
  * @property array<array-key, mixed>|null $view_params
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
  * @method static Builder<static>|NotifyTheme whereBody($value)
  * @method static Builder<static>|NotifyTheme whereBodyHtml($value)
@@ -2935,11 +3057,11 @@ namespace Modules\Notify\Models{
  * @property string|null $model_type
  * @property int|null $model_id
  * @property int|null $notify_theme_id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
  * @method static Builder<static>|NotifyThemeable whereCreatedAt($value)
  * @method static Builder<static>|NotifyThemeable whereCreatedBy($value)
@@ -2978,8 +3100,8 @@ namespace Modules\TechPlanner\Models{
  * @property int|null $client_id
  * @property string $date
  * @property string|null $notes
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_at
@@ -3047,6 +3169,11 @@ namespace Modules\TechPlanner\Models{
  * @property float|null $latitude Latitude coordinate
  * @property float|null $longitude Longitude coordinate
  * @property string|null $notes General notes
+ * @property string|null $phone
+ * @property string|null $mobile
+ * @property string|null $email
+ * @property string|null $pec
+ * @property string|null $whatsapp
  * @property string|null $city Legacy city field
  * @property string|null $province Legacy province field
  * @property string|null $region Legacy region field
@@ -3057,8 +3184,8 @@ namespace Modules\TechPlanner\Models{
  * @property string|null $company_name Ragione sociale
  * @property string|null $company_office Sede ditta
  * @property string|null $activity Attività
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_at
@@ -3120,11 +3247,11 @@ namespace Modules\TechPlanner\Models{
  * @property string|null $status
  * @property string|null $notes
  * @property int|null $client_id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
  * @property string|null $type
  * @property string|null $brand
@@ -3136,7 +3263,7 @@ namespace Modules\TechPlanner\Models{
  * @property string|null $serial_number
  * @property string|null $inventory_number
  * @property string|null $purchase_date
- * @property \Illuminate\Support\Carbon|null $first_verification_date
+ * @property Carbon|null $first_verification_date
  * @property string|null $warranty_expiration
  * @method static Builder<static>|Device whereAppointmentId($value)
  * @method static Builder<static>|Device whereBrand($value)
@@ -3184,8 +3311,8 @@ namespace Modules\TechPlanner\Models{
  * @property string $exposure_parameters
  * @property string $verification_type
  * @property string|null $notes
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_at
@@ -3251,8 +3378,8 @@ namespace Modules\TechPlanner\Models{
  * @property string|null $phone
  * @property string|null $email
  * @property string|null $notes
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_at
@@ -3295,8 +3422,8 @@ namespace Modules\TechPlanner\Models{
  * @property string|null $phone
  * @property string|null $email
  * @property string|null $notes
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_at
@@ -3338,8 +3465,8 @@ namespace Modules\TechPlanner\Models{
  * @property string|null $formatted_address
  * @property string|null $description
  * @property int|null $processed
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_at
@@ -3387,11 +3514,11 @@ namespace Modules\TechPlanner\Models{
  * @property string|null $status
  * @property string|null $notes
  * @property int|null $client_id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
  * @property string|null $type
  * @property string|null $brand
@@ -3403,7 +3530,7 @@ namespace Modules\TechPlanner\Models{
  * @property string|null $serial_number
  * @property string|null $inventory_number
  * @property string|null $purchase_date
- * @property \Illuminate\Support\Carbon|null $first_verification_date
+ * @property Carbon|null $first_verification_date
  * @property string|null $warranty_expiration
  * @method static Builder<static>|Machine whereAppointmentId($value)
  * @method static Builder<static>|Machine whereBrand($value)
@@ -3450,8 +3577,8 @@ namespace Modules\TechPlanner\Models{
  * @property string|null $phone
  * @property string|null $email
  * @property string|null $notes
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_at
@@ -3494,12 +3621,12 @@ namespace Modules\TechPlanner\Models{
  * @method static Builder<static>|PhoneCall query()
  * @property int $id
  * @property int|null $client_id
- * @property \Illuminate\Support\Carbon $date
+ * @property Carbon $date
  * @property int|null $duration
  * @property string|null $notes
  * @property string $call_type
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_at
@@ -3550,8 +3677,8 @@ namespace Modules\TechPlanner\Models{
  * @property-read User|null $user
  * @property-read string|null $user_name
  * @method static Builder<static>|Profile byUuid(string $uuid)
- * @method static Builder<static>|Profile childrenWith(array $relations)
- * @method static Builder<static>|Profile childrenWithCount(array $relations)
+ * @method static Builder<static>|Profile childrenWith(array<string> $relations)
+ * @method static Builder<static>|Profile childrenWithCount(array<string> $relations)
  * @method static Builder<static>|Profile newModelQuery()
  * @method static Builder<static>|Profile newQuery()
  * @method static Builder<static>|Profile permission($permissions, bool $without = false)
@@ -3575,9 +3702,9 @@ namespace Modules\TechPlanner\Models{
  * @property array<array-key, mixed>|null $preferences
  * @property string|null $status
  * @property bool $is_active
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property Carbon|null $deleted_at
  * @property string|null $created_by
  * @property string|null $updated_by
  * @property string|null $deleted_by
@@ -3624,6 +3751,7 @@ namespace Modules\TechPlanner\Models{
  * @property-read string|null $full_address
  * @property-read string $full_name
  * @property-read float|null $latitude
+ * @property-read string|null $address
  * @property-write mixed $address
  * @property-write mixed $birth_day
  * @property-read Profile|null $updater
@@ -3753,6 +3881,7 @@ namespace Modules\Tenant\Models{
  * @property string|null $name
  * @property-read Profile|null $creator
  * @property-read Profile|null $updater
+ * @method static \Modules\Tenant\Database\Factories\DomainFactory factory($count = null, $state = [])
  * @method static Builder<static>|Domain newModelQuery()
  * @method static Builder<static>|Domain newQuery()
  * @method static Builder<static>|Domain query()
@@ -3768,11 +3897,28 @@ namespace Modules\Tenant\Models{
  * Modello Tenant per la gestione multi-tenant dell'applicazione.
  *
  * @property-read Profile|null $creator
+ * @property string|null $name
+ * @property string|null $domain
+ * @property string|null $database
+ * @property string|null $slug
+ * @property array<array-key, mixed>|null $settings
+ * @property bool $is_active
+ * @property Carbon|null $last_activity_at
+ * @property string|null $logo
+ * @property string|null $email
+ * @property string|null $phone
+ * @property string|null $address
+ * @property string|null $city
+ * @property string|null $postal_code
+ * @property string|null $province
+ * @property string|null $country
+ * @property string|null $tax_code
+ * @property string|null $vat_number
  * @property-read string $url
- * @property-write mixed $name
  * @property-read Profile|null $updater
  * @property-read Collection<int, User> $users
  * @property-read int|null $users_count
+ * @method static \Modules\Tenant\Database\Factories\TenantFactory factory($count = null, $state = [])
  * @method static Builder<static>|Tenant newModelQuery()
  * @method static Builder<static>|Tenant newQuery()
  * @method static Builder<static>|Tenant query()
@@ -3784,7 +3930,13 @@ namespace Modules\Tenant\Models{
 namespace Modules\Tenant\Models{
 /**
  * @property string|null $id
+ * @property string|null $tenant_id
  * @property string|null $name
+ * @property string|null $domain
+ * @property bool $is_primary
+ * @property string|null $status
+ * @property string|null $verification_token
+ * @property Carbon|null $verified_at
  * @property-read Profile|null $creator
  * @property-read Profile|null $updater
  * @method static Builder<static>|TenantDomain newModelQuery()
@@ -3799,6 +3951,10 @@ namespace Modules\Tenant\Models{
 
 namespace Modules\Tenant\Models{
 /**
+ * @property string|null $tenant_id
+ * @property string|null $key
+ * @property mixed $value
+ * @property string|null $type
  * @property-read Profile|null $creator
  * @property-read Tenant|null $tenant
  * @property-read Profile|null $updater
@@ -3812,6 +3968,17 @@ namespace Modules\Tenant\Models{
 
 namespace Modules\Tenant\Models{
 /**
+ * @property string|null $tenant_id
+ * @property string|null $plan_name
+ * @property string|null $status
+ * @property int|null $max_users
+ * @property int|null $current_users
+ * @property int|null $max_storage_gb
+ * @property int|null $current_storage_gb
+ * @property string|null $billing_cycle
+ * @property float|null $billing_amount
+ * @property Carbon|null $next_billing_date
+ * @property Carbon|null $expires_at
  * @property-read Profile|null $creator
  * @property-read Tenant|null $tenant
  * @property-read Profile|null $updater
@@ -3834,8 +4001,8 @@ namespace Modules\Tenant\Models{
  * @property Carbon|null $updated_at
  * @property int|null $created_by
  * @property int|null $updated_by
- * @property-read \Modules\TechPlanner\Models\Profile|null $creator
- * @property-read \Modules\TechPlanner\Models\Profile|null $updater
+ * @property-read Profile|null $creator
+ * @property-read Profile|null $updater
  * @method static \Modules\Tenant\Database\Factories\TestSushiModelFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TestSushiModel newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TestSushiModel newQuery()
@@ -3856,6 +4023,15 @@ namespace Modules\Tenant\Models{
 
 namespace Modules\UI\Models{
 /**
+ * @property int $id
+ * @property string|null $name
+ * @property string $title
+ * @property string $slug
+ * @property int|null $parent_id
+ * @property string|null $description
+ * @property string|null $icon
+ * @property bool $is_active
+ * @property int $sort_order
  * @property-read Profile|null $creator
  * @property-read Profile|null $updater
  * @method static \Modules\UI\Database\Factories\CategoryFactory factory($count = null, $state = [])
@@ -3873,6 +4049,13 @@ namespace Modules\UI\Models{
  *
  * FormBuilder module not available - extending from XotBaseModel instead.
  *
+ * @property int $id
+ * @property string $name
+ * @property string|null $description
+ * @property string $type
+ * @property int|null $theme_id
+ * @property bool $is_active
+ * @property int|null $order
  * @property-read Profile|null $creator
  * @property-read Profile|null $updater
  * @method static \Modules\UI\Database\Factories\CollectionFactory factory($count = null, $state = [])
@@ -3918,8 +4101,8 @@ namespace Modules\User\Models{
  * @property string|null $ip_address
  * @property string|null $user_agent
  * @property string|null $location
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @method static Builder<static>|Authentication whereCreatedAt($value)
@@ -3943,9 +4126,9 @@ namespace Modules\User\Models{
  * @property int|string|null $authenticatable_id
  * @property string|null $ip_address
  * @property string|null $user_agent
- * @property \Illuminate\Support\Carbon|null $login_at
+ * @property Carbon|null $login_at
  * @property bool|null $login_successful
- * @property \Illuminate\Support\Carbon|null $logout_at
+ * @property Carbon|null $logout_at
  * @property bool|null $cleared_by_user
  * @property array<string, mixed>|null $location
  * @property-read Profile|null $creator
@@ -3954,8 +4137,8 @@ namespace Modules\User\Models{
  * @method static Builder<static>|AuthenticationLog newQuery()
  * @method static Builder<static>|AuthenticationLog query()
  * @property int $id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @method static Builder<static>|AuthenticationLog whereAuthenticatableId($value)
@@ -3986,6 +4169,7 @@ namespace Modules\User\Models{
  * @property-read DeviceUser|null $pivot
  * @property-read EloquentCollection<int, User> $users
  * @property-read int|null $users_count
+ * @method static \Modules\User\Database\Factories\DeviceFactory factory($count = null, $state = [])
  * @method static Builder<static>|Device newModelQuery()
  * @method static Builder<static>|Device newQuery()
  * @method static Builder<static>|Device query()
@@ -4003,8 +4187,8 @@ namespace Modules\User\Models{
  * @property bool|null $is_mobile
  * @property bool|null $is_tablet
  * @property bool|null $is_phone
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @method static Builder<static>|Device whereBrowser($value)
@@ -4065,12 +4249,12 @@ namespace Modules\User\Models{
  * @method static Builder<static>|DeviceUser newQuery()
  * @method static Builder<static>|DeviceUser query()
  * @property string $id
- * @property \Illuminate\Support\Carbon|null $login_at
- * @property \Illuminate\Support\Carbon|null $logout_at
+ * @property Carbon|null $login_at
+ * @property Carbon|null $logout_at
  * @property string|null $push_notifications_token
  * @property bool|null $push_notifications_enabled
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @method static Builder<static>|DeviceUser whereCreatedAt($value)
@@ -4101,11 +4285,11 @@ namespace Modules\User\Models{
  * @property string $id
  * @property string $model_type
  * @property string $model_id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
  * @method static Builder<static>|Extra whereCreatedAt($value)
  * @method static Builder<static>|Extra whereCreatedBy($value)
@@ -4133,9 +4317,9 @@ namespace Modules\User\Models{
  * @property string $name
  * @property string $scope
  * @property string $value
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property Carbon|null $deleted_at
  * @method static Builder<static>|Feature whereCreatedAt($value)
  * @method static Builder<static>|Feature whereDeletedAt($value)
  * @method static Builder<static>|Feature whereId($value)
@@ -4161,8 +4345,8 @@ namespace Modules\User\Models{
  * @property int $id
  * @property int $team_id
  * @property string|null $role
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_at
@@ -4197,8 +4381,8 @@ namespace Modules\User\Models{
  * @property string $model_type
  * @property string $model_id
  * @property int|null $team_id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @method static Builder<static>|ModelHasPermission whereCreatedAt($value)
@@ -4230,8 +4414,8 @@ namespace Modules\User\Models{
  * @property string $model_type
  * @property string $model_id
  * @property string|null $team_id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @method static Builder<static>|ModelHasRole whereCreatedAt($value)
@@ -4263,8 +4447,8 @@ namespace Modules\User\Models{
  * @property string $model_type
  * @property string $model_id
  * @property int|null $team_id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @method static Builder<static>|ModelRole whereCreatedAt($value)
@@ -4314,9 +4498,9 @@ namespace Modules\User\Models{
  * @property string $client_id
  * @property string|null $name
  * @property array<array-key, mixed>|null $scopes
- * @property \Illuminate\Support\Carbon|null $expires_at
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $expires_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_at
@@ -4350,7 +4534,7 @@ namespace Modules\User\Models{
  * @property string|null $user_id
  * @property string|null $client_id
  * @property string|null $scopes
- * @property \Illuminate\Support\Carbon|null $expires_at
+ * @property Carbon|null $expires_at
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthAuthCode whereClientId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthAuthCode whereExpiresAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthAuthCode whereId($value)
@@ -4387,8 +4571,8 @@ namespace Modules\User\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthClient newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthClient newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthClient query()
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $owner_type
@@ -4440,8 +4624,8 @@ namespace Modules\User\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthPersonalAccessClient query()
  * @property int $id
  * @property string $client_id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthPersonalAccessClient whereClientId($value)
@@ -4464,7 +4648,7 @@ namespace Modules\User\Models{
  * @property string $id
  * @property string $access_token_id
  * @property bool $revoked
- * @property \Illuminate\Support\Carbon|null $expires_at
+ * @property Carbon|null $expires_at
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthRefreshToken whereAccessTokenId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthRefreshToken whereExpiresAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthRefreshToken whereId($value)
@@ -4489,9 +4673,9 @@ namespace Modules\User\Models{
  * @property string $client_id
  * @property string|null $name
  * @property array<array-key, mixed>|null $scopes
- * @property \Illuminate\Support\Carbon|null $expires_at
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $expires_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_at
@@ -4551,8 +4735,8 @@ namespace Modules\User\Models{
  * @property string|null $uuid
  * @property string $email
  * @property string $token
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @method static Builder<static>|PasswordReset whereCreatedAt($value)
@@ -4591,8 +4775,8 @@ namespace Modules\User\Models{
  * @property int $id
  * @property string $name
  * @property string $guard_name
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @method static Builder<static>|Permission whereCreatedAt($value)
@@ -4619,8 +4803,8 @@ namespace Modules\User\Models{
  * @property string $id
  * @property string $permission_id
  * @property string $role_id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @method static Builder<static>|PermissionRole whereCreatedAt($value)
@@ -4648,8 +4832,8 @@ namespace Modules\User\Models{
  * @property string $model_type
  * @property string $model_id
  * @property int|null $team_id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @method static Builder<static>|PermissionUser whereCreatedAt($value)
@@ -4680,8 +4864,8 @@ namespace Modules\User\Models{
  * @property string $name
  * @property string $token
  * @property array<array-key, mixed>|null $abilities
- * @property \Illuminate\Support\Carbon|null $last_used_at
- * @property \Illuminate\Support\Carbon|null $expires_at
+ * @property Carbon|null $last_used_at
+ * @property Carbon|null $expires_at
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken whereAbilities($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken whereExpiresAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken whereId($value)
@@ -4730,6 +4914,7 @@ namespace Modules\User\Models{
  * @property-read \Modules\TechPlanner\Models\Profile|null $updater
  * @property-read User|null $user
  * @property-read string|null $user_name
+ * @method static \Modules\User\Database\Factories\ProfileFactory factory($count = null, $state = [])
  * @method static Builder<static>|Profile byUuid(string $uuid)
  * @method static Builder<static>|Profile childrenWith(array<string> $relations)
  * @method static Builder<static>|Profile childrenWithCount(array<string> $relations)
@@ -4756,9 +4941,9 @@ namespace Modules\User\Models{
  * @property array<array-key, mixed>|null $preferences
  * @property string|null $status
  * @property bool $is_active
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property Carbon|null $deleted_at
  * @property string|null $created_by
  * @property string|null $updated_by
  * @property string|null $deleted_by
@@ -4812,8 +4997,8 @@ namespace Modules\User\Models{
  * @property int $team_id
  * @property string|null $role
  * @property array<array-key, mixed>|null $permissions
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_at
@@ -4856,8 +5041,8 @@ namespace Modules\User\Models{
  * @property int|null $team_id
  * @property string $name
  * @property string $guard_name
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $display_name
@@ -4889,8 +5074,8 @@ namespace Modules\User\Models{
  * @property string $id
  * @property int $permission_id
  * @property int $role_id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @method static Builder<static>|RoleHasPermission whereCreatedAt($value)
@@ -4959,8 +5144,8 @@ namespace Modules\User\Models{
  * @property string|null $name
  * @property string|null $email
  * @property string|null $avatar
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @method static Builder<static>|SocialiteUser whereAvatar($value)
@@ -5026,8 +5211,8 @@ namespace Modules\User\Models{
  * @property string $name
  * @property bool $personal_team
  * @property string|null $code
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_at
@@ -5075,10 +5260,10 @@ namespace Modules\User\Models{
  * @property int $id
  * @property string $uuid
  * @property string|null $team_id
- * @property \Illuminate\Support\Carbon|null $accepted_at
- * @property \Illuminate\Support\Carbon|null $declined_at
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $accepted_at
+ * @property Carbon|null $declined_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_at
@@ -5119,11 +5304,11 @@ namespace Modules\User\Models{
  * @property int $team_id
  * @property string $permission
  * @property string|null $name
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
  * @method static Builder<static>|TeamPermission whereCreatedAt($value)
  * @method static Builder<static>|TeamPermission whereCreatedBy($value)
@@ -5157,8 +5342,9 @@ namespace Modules\User\Models{
  * @property int $team_id
  * @property string|null $user_id
  * @property string|null $role
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property array<array-key, mixed>|null $permissions
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_at
@@ -5200,17 +5386,18 @@ namespace Modules\User\Models{
  * @property string|null $domain
  * @property string|null $database
  * @property int $is_active
+ * @property array<array-key, mixed>|null $settings
  * @property string|null $email_address
  * @property string|null $phone
  * @property string|null $mobile
  * @property string|null $address
  * @property string|null $primary_color
  * @property string|null $secondary_color
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
  * @method static Builder<static>|Tenant whereAddress($value)
  * @method static Builder<static>|Tenant whereCreatedAt($value)
@@ -5247,11 +5434,11 @@ namespace Modules\User\Models{
  * @property string $id
  * @property int $tenant_id
  * @property string|null $user_id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
  * @method static Builder<static>|TenantUser whereCreatedAt($value)
  * @method static Builder<static>|TenantUser whereCreatedBy($value)
@@ -5323,20 +5510,20 @@ namespace Modules\User\Models{
  * @property string|null $first_name
  * @property string|null $last_name
  * @property string $email
- * @property \Illuminate\Support\Carbon|null $email_verified_at
+ * @property Carbon|null $email_verified_at
  * @property string|null $two_factor_secret
  * @property string|null $two_factor_recovery_codes
  * @property string|null $two_factor_confirmed_at
  * @property string|null $remember_token
  * @property int|null $current_team_id
  * @property string|null $profile_photo_path
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $lang
  * @property bool $is_active
  * @property bool $is_otp
- * @property \Illuminate\Support\Carbon|null $password_expires_at
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $password_expires_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_by
@@ -5430,11 +5617,11 @@ namespace Modules\Xot\Models{
  * @property string $id
  * @property string $model_type
  * @property string $model_id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
  * @method static Builder<static>|Extra whereCreatedAt($value)
  * @method static Builder<static>|Extra whereCreatedBy($value)
@@ -5480,8 +5667,8 @@ namespace Modules\Xot\Models{
  * @property array<array-key, mixed> $meta
  * @property string $ended_at
  * @property string $batch
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @method static Builder<static>|HealthCheckResultHistoryItem whereBatch($value)
@@ -5679,11 +5866,11 @@ namespace Modules\Xot\Models{
  * @property string|null $user_agent
  * @property string $payload
  * @property int $last_activity
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
  * @method static Builder<static>|Session whereCreatedAt($value)
  * @method static Builder<static>|Session whereCreatedBy($value)

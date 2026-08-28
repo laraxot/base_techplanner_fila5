@@ -3,8 +3,9 @@
 declare(strict_types=1);
 
 use Modules\Xot\Datas\MetatagData;
+use PHPUnit\Framework\Assert;
 
-test('getColors restituisce i colori configurati', function () {
+test('getThemeColors restituisce i colori configurati', function () {
     $metatagData = new MetatagData();
     $metatagData->colors = [
         'custom_color' => [
@@ -18,39 +19,25 @@ test('getColors restituisce i colori configurati', function () {
         ],
     ];
 
-    $colors = $metatagData->getColors();
+    $colors = $metatagData->getThemeColors();
 
-    expect($colors)->toBeArray()->and($colors)->toHaveKey('custom_color')->and($colors)->toHaveKey('primary');
+    Assert::assertArrayHasKey('custom_color', $colors);
+    Assert::assertArrayHasKey('primary', $colors);
 });
 
-/**
- * Test che il metodo getLogoHeight() restituisca il valore corretto.
- * Questo test verifica che il metodo getLogoHeight() restituisca il valore
- * della proprietà logo_height.
- */
-test('getLogoHeight restituisce il valore corretto', function () {
+test('getBrandLogoHeight restituisce il valore corretto', function () {
     $metatagData = new MetatagData();
     $metatagData->logo_height = '3em';
 
-    expect($metatagData->getLogoHeight())->toBe('3em');
+    Assert::assertSame('3em', $metatagData->getBrandLogoHeight());
 });
 
-/**
- * Test che le proprietà della classe abbiano i valori di default corretti.
- * Questo test verifica che le proprietà della classe abbiano i valori di default
- * corretti quando viene istanziata la classe.
- */
 test('Le proprietà hanno i valori di default corretti', function () {
     $metatagData = new MetatagData();
 
-    expect($metatagData->generator)
-        ->toBe('xot')
-        ->and($metatagData->charset)
-        ->toBe('UTF-8')
-        ->and($metatagData->author)
-        ->toBe('xot')
-        ->and($metatagData->logo_height)
-        ->toBe('2em')
-        ->and($metatagData->favicon)
-        ->toBe('/favicon.ico');
+    Assert::assertSame('xot', $metatagData->generator);
+    Assert::assertSame('UTF-8', $metatagData->charset);
+    Assert::assertSame('xot', $metatagData->author);
+    Assert::assertSame('2em', $metatagData->logo_height);
+    Assert::assertSame('/favicon.ico', $metatagData->favicon);
 });

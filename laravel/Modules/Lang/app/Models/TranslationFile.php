@@ -20,6 +20,9 @@ use function Safe\json_encode;
 
 /**
  * @property int $id
+ * @property string|null $name
+ * @property string|null $path
+ * @property array<array-key, mixed>|string|null $content
  * @property-read Profile|null $creator
  * @property-read Profile|null $updater
  *

@@ -56,8 +56,10 @@ trait HasSchemalessAttributes
     /**
      * Scope per filtrare per attributi schemaless.
      *
-     * @param  Builder<Model>  $query
-     * @return Builder<Model>
+     * @template TModel of Model
+     *
+     * @param  Builder<TModel>  $query
+     * @return Builder<TModel>
      */
     public function scopeWithExtraAttributes(Builder $query): Builder
     {
@@ -71,8 +73,10 @@ trait HasSchemalessAttributes
     /**
      * Scope per query specifiche su extra_attributes.
      *
-     * @param  Builder<Model>  $query
-     * @return Builder<Model>
+     * @template TModel of Model
+     *
+     * @param  Builder<TModel>  $query
+     * @return Builder<TModel>
      */
     public function scopeWhereExtraAttribute(Builder $query, string $key, mixed $value): Builder
     {

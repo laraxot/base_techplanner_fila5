@@ -5,8 +5,10 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Modules\Xot\Models\BaseModel;
 use Modules\Xot\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
@@ -18,21 +20,21 @@ beforeEach(function () {
 });
 
 test('base model extends eloquent model', function () {
-    expect($this->baseModel)->toBeInstanceOf(Model::class);
+    Assert::assertInstanceOf(Model::class, $this->baseModel);
 });
 
 test('base model has correct table name', function () {
-    expect($this->baseModel->getTable())->toBe('test_table');
+    Assert::assertSame('test_table', $this->baseModel->getTable());
 });
 
 test('base model has timestamps enabled', function () {
-    expect($this->baseModel->usesTimestamps())->toBeTrue();
+    Assert::assertTrue($this->baseModel->usesTimestamps());
 });
 
 test('base model has soft deletes disabled by default', function () {
-    expect($this->baseModel->usesSoftDeletes())->toBeFalse();
+    Assert::assertFalse(in_array(SoftDeletes::class, class_uses_recursive($this->baseModel), true));
 });
 
 test('base model can be instantiated', function () {
-    expect($this->baseModel)->toBeInstanceOf(BaseModel::class);
+    Assert::assertInstanceOf(BaseModel::class, $this->baseModel);
 });

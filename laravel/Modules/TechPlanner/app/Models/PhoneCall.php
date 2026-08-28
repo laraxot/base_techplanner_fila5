@@ -56,8 +56,6 @@ class PhoneCall extends BaseModel
 
     /**
      * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
      */
     #[Override]
     protected function casts(): array

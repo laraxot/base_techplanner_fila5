@@ -7,6 +7,7 @@ namespace Modules\Xot\Tests\Unit;
 use Filament\Tables\Table;
 use Illuminate\Support\Collection;
 use Mockery;
+use Mockery\MockInterface;
 use Modules\Xot\Filament\Traits\HasXotTable;
 
 /**
@@ -25,6 +26,9 @@ class HasTableWithXotTestClass
         return $mock;
     }
 
+    /**
+     * @return array<int, mixed>
+     */
     public function getTableColumns(): array
     {
         return [];
@@ -32,7 +36,10 @@ class HasTableWithXotTestClass
 
     public function getTable(): Table
     {
-        return Mockery::mock(Table::class);
+        /** @var Table&MockInterface $table */
+        $table = Mockery::mock(Table::class);
+
+        return $table;
     }
 
     public function getTablePage(): ?int
@@ -55,6 +62,9 @@ class HasTableWithXotTestClass
         return null;
     }
 
+    /**
+     * @return array<int, mixed>
+     */
     public function getTableFilters(): array
     {
         return [];
@@ -65,6 +75,9 @@ class HasTableWithXotTestClass
         return null;
     }
 
+    /**
+     * @return array<string, mixed>|null
+     */
     public function getTableFilterState(string $_name): ?array
     {
         return [];
@@ -80,6 +93,9 @@ class HasTableWithXotTestClass
         return null;
     }
 
+    /**
+     * @return array<int, mixed>
+     */
     public function getTableColumnSearchIndicators(): array
     {
         return [];
@@ -90,6 +106,9 @@ class HasTableWithXotTestClass
         return null;
     }
 
+    /**
+     * @return array<int, mixed>
+     */
     public function getTableRecords(): array
     {
         return [];
@@ -105,6 +124,9 @@ class HasTableWithXotTestClass
         return null;
     }
 
+    /**
+     * @return Collection<int, mixed>
+     */
     public function getSelectedTableRecords(bool $_shouldFetchSelectedRecords = true): Collection
     {
         return new Collection();
@@ -120,6 +142,9 @@ class HasTableWithXotTestClass
         return 0;
     }
 
+    /**
+     * @return array<int, mixed>
+     */
     public function getAllSelectableTableRecordKeys(): array
     {
         return [];

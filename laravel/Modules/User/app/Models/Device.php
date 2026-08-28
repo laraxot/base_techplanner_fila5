@@ -24,6 +24,7 @@ use Modules\Xot\Datas\XotData;
  * @property-read EloquentCollection<int, User> $users
  * @property-read int|null $users_count
  *
+ * @method static \Modules\User\Database\Factories\DeviceFactory factory($count = null, $state = [])
  * @method static Builder<static>|Device newModelQuery()
  * @method static Builder<static>|Device newQuery()
  * @method static Builder<static>|Device query()

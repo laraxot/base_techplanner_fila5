@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Request;
 use Modules\Xot\Services\ArtisanService;
+use PHPUnit\Framework\Assert;
 use Tests\TestCase;
 
 use function Safe\ob_end_clean;
@@ -27,7 +28,7 @@ test('artisan service act method returns empty string for unknown commands', fun
 
     $result = ArtisanService::act('unknown-command');
 
-    expect($result)->toBe('');
+    Assert::assertSame('', $result);
 });
 
 test('artisan service act method handles migrate command', function (): void {
@@ -39,9 +40,7 @@ test('artisan service act method handles migrate command', function (): void {
 
     $result = ArtisanService::act('migrate');
 
-    expect($result)->toBeString();
-    /** @var string $result */
-    expect(str_contains($result, 'Migration completed'))->toBeTrue();
+    Assert::assertStringContainsString('Migration completed', $result);
 });
 
 test('artisan service act method handles module parameter', function (): void {
@@ -54,9 +53,7 @@ test('artisan service act method handles module parameter', function (): void {
     $result = ArtisanService::act('migrate');
     ob_end_clean();
 
-    expect($result)->toBeString();
-    /** @var string $result */
-    expect(str_contains($result, 'Module migration'))->toBeTrue();
+    Assert::assertStringContainsString('Module migration', $result);
 });
 
 test('artisan service handles non-string module parameter', function (): void {
@@ -67,7 +64,5 @@ test('artisan service handles non-string module parameter', function (): void {
 
     $result = ArtisanService::act('migrate');
 
-    expect($result)->toBeString();
-    /** @var string $result */
-    expect(str_contains($result, 'Migration'))->toBeTrue();
+    Assert::assertStringContainsString('Migration', $result);
 });

@@ -4,22 +4,24 @@ declare(strict_types=1);
 
 namespace Modules\Seo\Tests\Unit\Providers;
 
+use Modules\Seo\Adapters\MetatagFacadeAdapter;
+use Modules\Seo\Adapters\MetatagState;
 use Modules\Seo\Providers\EventServiceProvider;
 use Modules\Seo\Providers\SeoServiceProvider;
-use Modules\Seo\Services\MetatagService;
 use PHPUnit\Framework\Assert;
 use ReflectionClass;
 
-it('registers metatag service singleton and provides list', function (): void {
+it('registers metatag adapter and state singletons', function (): void {
     $provider = new SeoServiceProvider(app());
     $provider->register();
 
-    $instanceA = app(MetatagService::class);
-    $instanceB = app(MetatagService::class);
+    $adapter = app(MetatagFacadeAdapter::class);
+    $state = app(MetatagState::class);
 
-    Assert::assertInstanceOf(MetatagService::class, $instanceA);
-    Assert::assertSame($instanceA, $instanceB);
-    Assert::assertContains(MetatagService::class, $provider->provides());
+    Assert::assertSame($adapter, app(MetatagFacadeAdapter::class));
+    Assert::assertSame($state, app(MetatagState::class));
+    Assert::assertContains(MetatagFacadeAdapter::class, $provider->provides());
+    Assert::assertContains(MetatagState::class, $provider->provides());
 });
 
 it('event service provider enables event discovery', function (): void {
@@ -28,18 +30,4 @@ it('event service provider enables event discovery', function (): void {
     $property->setAccessible(true);
 
     Assert::assertTrue($property->getValue());
-    $instanceA = app(MetatagService::class);
-    $instanceB = app(MetatagService::class);
-
-    expect($instanceA)->toBeInstanceOf(MetatagService::class)
-        ->and($instanceA)->toBe($instanceB)
-        ->and($provider->provides())->toContain(MetatagService::class);
-});
-
-it('event service provider enables event discovery', function (): void {
-    $reflection = new ReflectionClass(EventServiceProvider::class);
-    $property = $reflection->getProperty('shouldDiscoverEvents');
-    $property->setAccessible(true);
-
-    expect($property->getValue())->toBeTrue();
 });

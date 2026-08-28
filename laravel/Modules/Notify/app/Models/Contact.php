@@ -126,6 +126,8 @@ class Contact extends BaseModel
             // 'date_start' => 'datetime:Y-m-d\TH:i',
             // 'date_end' => 'datetime:Y-m-d\TH:i',
             'model_id' => 'string',
-            'user_id' => 'string'];
+            'user_id' => 'string',
+            'mail_sent_at' => 'datetime',
+            'sms_sent_at' => 'datetime'];
     }
 }

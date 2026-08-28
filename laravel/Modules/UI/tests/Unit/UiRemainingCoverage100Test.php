@@ -10,6 +10,9 @@ use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 use Illuminate\View\View;
+use Mockery\Expectation;
+use Mockery\LegacyMockInterface;
+use Mockery\MockInterface;
 use Modules\UI\Actions\GetUserDataAction;
 use Modules\UI\Actions\Icon\GetAllIconsAction;
 use Modules\UI\Filament\Forms\Components\AddressField;
@@ -30,12 +33,10 @@ use ReflectionClass;
 
 /**
  * Narrows Mockery's shouldReceive() union return type for PHPStan.
- *
- * @param  \Mockery\LegacyMockInterface|\Mockery\MockInterface  $mock
  */
-function expectMethod($mock, string $method): \Mockery\ExpectationInterface
+function expectMethod(LegacyMockInterface|MockInterface $mock, string $method): Expectation
 {
-    /** @var \Mockery\ExpectationInterface $expectation */
+    /** @var Expectation $expectation */
     $expectation = $mock->shouldReceive($method);
 
     return $expectation;
