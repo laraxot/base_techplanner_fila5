@@ -152,5 +152,3 @@ Illuminate\Database\Eloquent\Model|stdClass given.
 - Seguire convenzioni Filament
 - Garantire type safety
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-errors-xotbaserelationmanager.md
->>>>>>> .merge_file_hVkIWJ
->>>>>>> .merge_file_F1U8cp

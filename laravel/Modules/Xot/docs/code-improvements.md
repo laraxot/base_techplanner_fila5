@@ -236,5 +236,3 @@ public function processData(array $data): string
 
 **Ultimo aggiornamento**: [DATE]
 See canonical documentation: ../../../Themes/docs/shared-components/code-improvements-analysis.md
->>>>>>> .merge_file_2tjFN1
->>>>>>> .merge_file_fqjbQi

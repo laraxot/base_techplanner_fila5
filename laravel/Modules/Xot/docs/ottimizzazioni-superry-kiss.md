@@ -310,5 +310,3 @@ class ExampleService implements ServiceInterface
 **Stato:** In Analisi
 **Priorità:** ALTA
 See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-super-dry-kiss-Modules.md
->>>>>>> .merge_file_J1pT0h
->>>>>>> .merge_file_VlqpsU

@@ -65,14 +65,12 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 
 // ✅ Fast, isolated, <nome progetto>able
 // ✅ Fast, isolated, predictable
->>>>>>> .merge_file_C85GXC
 test('user registration with mock data', function () {
     // Database reset every test
     $user = User::factory()->create();
 
     expect($user->id)->toBe(1); // Always <nome progetto>able
     expect($user->id)->toBe(1); // Always predictable
->>>>>>> .merge_file_C85GXC
 
     // Data destroyed after test
 });
@@ -84,7 +82,6 @@ test('user registration with mock data', function () {
 - 🛠️ **Simplicity**: Easy setup and maintenance
 - 🐛 **Debugging**: Clear, <nome progetto>able outcomes
 - 🐛 **Debugging**: Clear, predictable outcomes
->>>>>>> .merge_file_C85GXC
 
 **Disadvantages (Mock)**:
 - 🎭 **Unrealistic**: Doesn't reflect production

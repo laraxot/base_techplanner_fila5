@@ -155,5 +155,3 @@ $userClass = XotData::make()->getUserClass();
 
 *Ultimo aggiornamento: [DATE]*
 See canonical documentation: ../../../Themes/docs/shared-components/user-reference-corrections-sumy.md
->>>>>>> .merge_file_wbTDqG
->>>>>>> .merge_file_sBp8Zw

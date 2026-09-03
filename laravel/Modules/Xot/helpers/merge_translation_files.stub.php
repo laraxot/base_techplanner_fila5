@@ -13,6 +13,8 @@ if (! function_exists('merge_translation_files')) {
      *
      * @param  string  $first  First translation file path
      * @param  string  ...$rest  Additional translation file paths
+     * @param  string  $first  First translation file path
+     * @param  string  ...$rest  Additional translation file paths
      * @return array<string, mixed>
      */
     function merge_translation_files(string $first, string ...$rest): array

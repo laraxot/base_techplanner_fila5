@@ -118,5 +118,3 @@ See canonical documentation: ../../../Themes/docs/shared-components/normalizatio
 **Stato**: In corso
 **Prossima Revisione**: Dopo normalizzazione batch successivo
 See canonical documentation: ../../../Themes/docs/shared-components/normalization-report-conflict.md
->>>>>>> .merge_file_SjKvJn
->>>>>>> .merge_file_mNcVYu

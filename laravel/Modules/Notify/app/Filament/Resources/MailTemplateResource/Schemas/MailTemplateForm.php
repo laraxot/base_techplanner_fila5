@@ -10,6 +10,7 @@ use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component as SchemaComponent;
 use Filament\Schemas\Components\Group;
 use Filament\Schemas\Components\View;
+use Illuminate\Database\Eloquent\Model;
 use Modules\Notify\Filament\Forms\Components\HtmlLayoutPathSelect;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
@@ -59,11 +60,12 @@ class MailTemplateForm extends XotBaseResourceForm
             'html_template' => RichEditor::make('html_template')
                 ->required()
                 ->columnSpanFull(),
-            'params_display' => View::make('notify::filament.components.params-badges')
-                ->viewData(fn (mixed $record): array => [
-                    'params' => is_object($record) && isset($record->params) ? $record->params : []])
+            'params_display' => View::make($paramsBadgesView)
+                ->viewData(static fn (?Model $record): array => [
+                    'params' => $record !== null && isset($record->params) ? $record->params : [],
+                ])
                 ->columnSpanFull()
-                ->visible(fn (mixed $record): bool => is_object($record) && isset($record->params) && ! empty($record->params)),
+                ->visible(static fn (?Model $record): bool => $record !== null && isset($record->params) && ! empty($record->params)),
             'text_template' => Textarea::make('text_template')
                 ->maxLength(65535)
                 ->columnSpanFull(),

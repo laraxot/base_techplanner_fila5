@@ -89,7 +89,6 @@ declare(strict_types=1);
 
 namespace Modules\healthcare_app\Filament\Widgets;
 namespace Modules\Quaeris\Filament\Widgets;
->>>>>>> .merge_file_JMP4Sz
 
 use Modules\Xot\Filament\Widgets\XotBaseTableWidget;
 
@@ -231,7 +230,6 @@ MyTableWidget::make([
 Per documentazione completa, vedere:
 - [Widget Property Initialization Pattern](../../../modules/healthcare_app/docs/widget-property-initialization-pattern.md)
 - [Widget Property Initialization Pattern](../../../modules/quaeris/docs/widget-property-initialization-pattern.md)
->>>>>>> .merge_file_JMP4Sz
 
 ## Riferimenti
 
@@ -254,5 +252,3 @@ Per documentazione completa, vedere:
 
 *Ultimo aggiornamento: 2025-01-27*
 - [Widget Property Initialization Pattern](../../../modules/healthcare_app/docs/widget-property-initialization-pattern.md)
->>>>>>> .merge_file_JMP4Sz
->>>>>>> .merge_file_9syNYx

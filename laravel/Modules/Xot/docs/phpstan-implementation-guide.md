@@ -293,7 +293,6 @@ Ogni modulo dovrebbe documentare le soluzioni ai problemi PHPStan specifici in `
 - [Modules/Xot/docs/NAMESPACE-CONVENTIONS.md](../Xot/docs/NAMESPACE-CONVENTIONS.md) - Convenzioni per i namespace
 - [Modules/Xot/docs/PHPSTAN-GENERIC-TYPES.md](../xot/docs/phpstan-generic-types.md) - Guida specifica per tipi generici
 - [Modules/Xot/docs/NAMESPACE-CONVENTIONS.md](../xot/docs/namespace-conventions.md) - Convenzioni per i namespace
->>>>>>> .merge_file_79SUCx
 
 ---
 

@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\Activity\Tests\Unit\Models;
 
 use Modules\Activity\Models\BaseModel;
+use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 describe('Base Model Coverage', function (): void {
     test('casts returns array with required keys', function (): void {

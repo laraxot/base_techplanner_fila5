@@ -85,7 +85,6 @@ describe('Notification PartOne', function (): void {
 
     test('_has_correct_casts', function (): void {
         $notification = new Notification();
-
         $expectedCasts = [
             'read_at' => 'datetime',
             'sent_at' => 'datetime',

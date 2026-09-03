@@ -16,7 +16,9 @@ return new class() extends XotBaseMigration
         $this->tableCreate(static function (Blueprint $table): void {
             $table->increments('id');
             $table->unsignedInteger('task_id');
-            $table->unsignedBigInteger('user_id')->nullable();
+            // L'id utente e' un UUID di 36 caratteri: una colonna intera lo troncherebbe
+            // a 0, legando la riga all'utente sbagliato o a nessuno.
+            $table->string('user_id', 36)->nullable();
             $table->text('comment');
 
             $table->index('task_id', 'task_comments_task_id_idx');

@@ -18,8 +18,8 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
 /**
  * Modules\Cms\Models\BaseTreeModel.
  *
-* @property int                    $id
- * @property string                 $name
+ * @property int $id
+ * @property string $name
  * @property array<int, mixed>|null $items
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
@@ -44,8 +44,8 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
  * @method static Builder|Menu withTrashed()
  * @method static Builder|Menu withoutTrashed()
  *
-* @property string                                     $title
- * @property int|null                                   $parent_id
+ * @property string $title
+ * @property int|null $parent_id
  * @property Collection<int, static>|array<int, static> $children
  * @property int|null $children_count
  * @property MediaCollection<int, Media> $media
@@ -88,10 +88,50 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
  * @method static \Staudenmeir\LaravelAdjacencyList\Eloquent\Builder|Menu whereTitle($value)
  * @method static \Staudenmeir\LaravelAdjacencyList\Eloquent\Builder|Menu withGlobalScopes(array<string, mixed> $scopes)
  * @method static \Staudenmeir\LaravelAdjacencyList\Eloquent\Builder|Menu withRelationshipExpression($direction, callable $constraint, $initialDepth, $from = null, $maxDepth = null)
+ * @method static Collection<int, static> all($columns = ['*'])
+ * @method static Collection<int, static> get($columns = ['*'])
+ * @method static Collection<int, static> all($columns = ['*'])
+ * @method static Collection<int, static> get($columns = ['*'])
+ * @method static Collection<int, static> all($columns = ['*'])
+ * @method static Collection<int, static> get($columns = ['*'])
+ * @method static Collection<int, static> all($columns = ['*'])
+ * @method static Collection<int, static> get($columns = ['*'])
+ * @method static Collection<int, static> all($columns = ['*'])
+ * @method static Collection<int, static> get($columns = ['*'])
+ * @method static Collection<int, static> all($columns = ['*'])
+ * @method static Collection<int, static> get($columns = ['*'])
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
+ * @method static Collection<int, static> all($columns = ['*'])
+ * @method static Collection<int, static> get($columns = ['*'])
+ * @method static Collection<int, static> all($columns = ['*'])
+ * @method static Collection<int, static> get($columns = ['*'])
+ * @method static Collection<int, static> all($columns = ['*'])
+ * @method static Collection<int, static> get($columns = ['*'])
+ * @method static Collection<int, static> all($columns = ['*'])
+ * @method static Collection<int, static> get($columns = ['*'])
+ * @method static Collection<int, static> all($columns = ['*'])
+ * @method static Collection<int, static> get($columns = ['*'])
+ * @method static Collection<int, static> all($columns = ['*'])
+ * @method static Collection<int, static> get($columns = ['*'])
+ * @method static Collection<int, static> all($columns = ['*'])
+ * @method static Collection<int, static> get($columns = ['*'])
+ * @method static Collection<int, static> all($columns = ['*'])
+ * @method static Collection<int, static> get($columns = ['*'])
+ * @method static Collection<int, static> all($columns = ['*'])
+ * @method static Collection<int, static> get($columns = ['*'])
+ * @method static Collection<int, static> all($columns = ['*'])
+ * @method static Collection<int, static> get($columns = ['*'])
+ * @method static Collection<int, static> all($columns = ['*'])
+ * @method static Collection<int, static> get($columns = ['*'])
+ * @method static Collection<int, static> all($columns = ['*'])
+ * @method static Collection<int, static> get($columns = ['*'])
+ * @method static Collection<int, static> all($columns = ['*'])
+ * @method static Collection<int, static> get($columns = ['*'])
+ * @method static Collection<int, static> all($columns = ['*'])
+ * @method static Collection<int, static> get($columns = ['*'])
  * @method static MenuFactory factory($count = null, $state = [])
  *
  * @mixin \Eloquent
@@ -108,7 +148,7 @@ abstract class BaseTreeModel extends BaseModel implements HasRecursiveRelationsh
     ];
 
     /** @var array<string, string> */
-    protected array $schema = [
+    protected $schema = [
         'id' => 'integer',
         'title' => 'string',
         'parent_id' => 'integer',

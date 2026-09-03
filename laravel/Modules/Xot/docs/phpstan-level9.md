@@ -179,5 +179,3 @@ Per categorie specifiche:
 $value = $data['key'];
 ```
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-level9-guide.md
->>>>>>> .merge_file_grAqkh
->>>>>>> .merge_file_e8lVYF

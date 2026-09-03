@@ -216,5 +216,3 @@ $rows = $query->get();
 
 *Ultimo aggiornamento: [DATE]*
 See canonical documentation: ../../../Themes/docs/shared-components/filament-4x-compatibility-conflict.md
->>>>>>> .merge_file_BtswCI
->>>>>>> .merge_file_zuzZ0g

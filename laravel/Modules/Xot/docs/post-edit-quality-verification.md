@@ -282,7 +282,6 @@ quality-check:
 
 **Creato**: 2025-01-29
 **Creato**: [DATE]
->>>>>>> .merge_file_SjMQJz
 **Tipo**: Regola Quality Gate Obbligatoria
 **Applicazione**: Ogni modifica file
 **Severità**: 🔴 CRITICA

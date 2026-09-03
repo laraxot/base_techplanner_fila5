@@ -210,5 +210,3 @@ Prima di creare un ServiceProvider:
 
 **Principio KISS**: Mantenere semplice, aggiungere complessità solo quando necessario.
 See canonical documentation: ../../../Themes/docs/shared-components/serviceprovider-common-errors.md
->>>>>>> .merge_file_wLEu4e
->>>>>>> .merge_file_fC2XpP

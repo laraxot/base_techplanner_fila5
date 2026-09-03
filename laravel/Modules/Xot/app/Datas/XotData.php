@@ -10,7 +10,7 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use Livewire\Wireable;
-use Modules\Tenant\Services\TenantService;
+use Modules\Tenant\Actions\Config\GetTenantConfigArrayAction;
 use Modules\User\Contracts\TeamContract;
 use Modules\User\Contracts\TenantContract;
 use Modules\Xot\Contracts\ProfileContract;
@@ -19,6 +19,8 @@ use RuntimeException;
 use Spatie\LaravelData\Concerns\WireableData;
 use Spatie\LaravelData\Data;
 use Webmozart\Assert\Assert;
+
+use function Safe\realpath;
 
 /**
  * Class Modules\Xot\Datas\XotData.
@@ -85,7 +87,7 @@ class XotData extends Data implements Wireable
     public static function make(): self
     {
         if (! self::$instance) {
-            $data = TenantService::getConfig('xra');
+            $data = app(GetTenantConfigArrayAction::class)->execute('xra');
 
             self::$instance = self::from($data);
         }
@@ -118,6 +120,7 @@ class XotData extends Data implements Wireable
         );
         Assert::isAOf($class, Model::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
 
+        /* @var class-string<Model&UserContract> $class */
         return $class;
     }
 
@@ -128,13 +131,25 @@ class XotData extends Data implements Wireable
         if (! in_array('email', $userInstance->getFillable(), true)) {
             throw new Exception("Attribute 'email' not found in model ".get_class($userInstance));
         }
-        $user = $user_class::firstOrCreate(['email' => $email]);
-        /*
-         * if (! $user) {
-         * throw new \Exception('user not found for email '.$email);
-         * }
-         */
+
+        /** @var (Model&UserContract)|null $user */
+        $user = $user_class::query()->where('email', $email)->first();
+
+        if ($user === null) {
+            throw new Exception('user not found for email '.$email);
+        }
+
         Assert::implementsInterface($user, UserContract::class, '['.__LINE__.']['.class_basename($this).']');
+
+        return $user;
+    }
+
+    public function findUserByEmail(string $email): ?UserContract
+    {
+        $userClass = $this->getUserClass();
+
+        /** @var (Model&UserContract)|null $user */
+        $user = $userClass::query()->where('email', $email)->first();
 
         return $user;
     }
@@ -157,7 +172,10 @@ class XotData extends Data implements Wireable
             '['.$this->team_class.']['.__LINE__.']['.class_basename($this).']',
         );
 
-        return $this->team_class;
+        /** @var class-string<Model&TeamContract> $teamClass */
+        $teamClass = $this->team_class;
+
+        return $teamClass;
     }
 
     /**
@@ -184,7 +202,10 @@ class XotData extends Data implements Wireable
             '['.$this->tenant_class.']['.__LINE__.']['.class_basename($this).']',
         );
 
-        return $this->tenant_class;
+        /** @var class-string<Model&TenantContract> $tenantClass */
+        $tenantClass = $this->tenant_class;
+
+        return $tenantClass;
     }
 
     /**
@@ -233,7 +254,7 @@ class XotData extends Data implements Wireable
             '['.__LINE__.']['.class_basename($this).']['.$class.']',
         );
 
-        /** @var class-string<Model&ProfileContract> */
+        /* @var class-string<Model&ProfileContract> $class */
         return $class;
     }
 
@@ -329,26 +350,28 @@ class XotData extends Data implements Wireable
 
     public function getPubThemeViewPath(string $key = ''): string
     {
-        return resource_path('themes/'.$this->pub_theme.'/'.$key);
+        $path0 = base_path('Themes/'.$this->pub_theme.'/resources/views/'.$key);
+
+        try {
+            return realpath($path0);
+        } catch (\Exception $e) {
+            throw new \Exception('realpath not find dir['.$path0.']'.PHP_EOL.'['.$e->getMessage().']');
+        }
+    }
+
+    public function getPubThemePublicPath(string $key = ''): string
+    {
+        return public_path('themes/'.$this->pub_theme.'/'.$key);
+    }
+
+    public function getPubThemePublicAsset(string $key = ''): string
+    {
+        return asset('themes/'.$this->pub_theme.'/'.$key);
     }
 
     public function getMailHtmlLayoutPath(string $key = ''): string
     {
         return base_path('Themes/'.$this->pub_theme.'/resources/mail-layouts/'.$key);
-    }
-
-    public function getPubThemePublicPath(string $key = ''): string
-    {
-        $path = base_path('themes/'.$this->pub_theme.'/'.$key);
-
-        return $path;
-    }
-
-    public function getPubThemePublicAsset(string $key = ''): string
-    {
-        $path = asset('themes/'.$this->pub_theme.'/'.$key);
-
-        return $path;
     }
 
     /**
@@ -377,6 +400,7 @@ class XotData extends Data implements Wireable
             '['.__LINE__.']['.class_basename($this).']['.$class.']',
         );
 
+        /* @var class-string<Model&UserContract> $class */
         return $class;
     }
 
@@ -393,10 +417,10 @@ class XotData extends Data implements Wireable
             ->append('Resource')
             ->toString();
 
-        // If the class doesn't exist, try the alternative path (app/Filament/Resources)
+        // If missing, fallback (still PSR-4: NEVER put literal "app\" in the PHP namespace segment)
         if (! class_exists($resourceClass)) {
             $resourceClass =
-                'Modules\\'.$moduleName.'\\app\\Filament\\Resources\\'.class_basename($class).'Resource';
+                'Modules\\'.$moduleName.'\\Filament\\Resources\\'.class_basename($class).'Resource';
         }
 
         if (! class_exists($resourceClass)) {

@@ -16,7 +16,6 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 * [README.md](bashscripts/project_docs/it/readme.md)
 * [README.md](bashscripts/docs/readme.md)
 * [README.md](bashscripts/docs/it/readme.md)
->>>>>>> .merge_file_9z29ts
 * [README.md](docs/laravel-app/phpstan/readme.md)
 * [README.md](docs/laravel-app/readme.md)
 * [README.md](docs/moduli/struttura/readme.md)
@@ -233,6 +232,3 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 * [README.md](../../../../themes/two/docs/readme.md)
 * [README.md](../../../../themes/one/docs/readme.md)
 
-=======
->>>>>>> .merge_file_b0wt8g
->>>>>>> .merge_file_9z29ts

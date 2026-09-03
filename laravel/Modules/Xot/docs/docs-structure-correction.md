@@ -219,5 +219,3 @@ find laravel/Themes -name "docs" -type d
 **Responsabile**: Team di sviluppo Laraxot
 **Verificato**: ✅ Conformità completa raggiunta
 See canonical documentation: ../../../Themes/docs/shared-components/docs-structure-correction-sumy.md
->>>>>>> .merge_file_NuXsgN
->>>>>>> .merge_file_4nw85h

@@ -142,4 +142,3 @@ Tutti i test corretti seguono questo principio:
 **Status**: In Progress
 **Prossimi Passi**: Continuare sistematicamente con pattern rimanenti (QueryException, TypeError, BadMethodCallException, BindingResolutionException)
 
->>>>>>> .merge_file_GwafHJ

@@ -10,6 +10,7 @@ use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Group;
 use Filament\Schemas\Components\View;
+use Illuminate\Database\Eloquent\Model;
 use Modules\Lang\Filament\Resources\LangBaseResource;
 use Modules\Notify\Filament\Forms\Components\HtmlLayoutPathSelect;
 use Modules\Notify\Models\MailTemplate;
@@ -30,8 +31,7 @@ class MailTemplateResource extends LangBaseResource
     /**
      * @return array<string, Component>
      */
-
-    // #[Override]
+    #[Override]
     public static function getFormSchema(): array
     {
         /** @var view-string $paramsBadgesView */
@@ -74,10 +74,11 @@ class MailTemplateResource extends LangBaseResource
                 ->required()
                 ->columnSpanFull(),
             'params_display' => View::make($paramsBadgesView)
-                ->viewData(static fn (mixed $record): array => [
-                    'params' => is_object($record) && isset($record->params) ? $record->params : []])
+                ->viewData(static fn (?Model $record): array => [
+                    'params' => $record !== null && isset($record->params) ? $record->params : [],
+                ])
                 ->columnSpanFull()
-                ->visible(static fn (mixed $record): bool => is_object($record) && isset($record->params) && ! empty($record->params)),
+                ->visible(static fn (?Model $record): bool => $record !== null && isset($record->params) && ! empty($record->params)),
             'text_template' => Textarea::make('text_template')
                 ->maxLength(65535)
                 ->columnSpanFull(),

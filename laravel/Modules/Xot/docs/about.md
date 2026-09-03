@@ -20,7 +20,6 @@ E' la libreria di estensione di tutte le altre librerie.
 * [about.md](../../../xot/docs/about.md)
 * [about.md](../../../tenant/docs/en/about.md)
 * [about.md](../../../tenant/docs/it/about.md)
->>>>>>> .merge_file_Tdj33k
 
 ### Versione Incoming
 

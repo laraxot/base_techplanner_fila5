@@ -38,7 +38,6 @@ Questo documento è collegato bidirezionalmente con [xot-link.md](../../Cms/docs
 
 Questo documento è collegato bidirezionalmente con [xot-link.md](../../cms/docs/xot-link.md) nel modulo Cms.
 
->>>>>>> .merge_file_zKgpcX
 
 > Aggiorna entrambi i riferimenti se modifichi la struttura della documentazione o aggiungi nuove sezioni.
 
@@ -53,4 +52,3 @@ Questo documento è collegato bidirezionalmente con [xot-link.md](../../cms/docs
 * [cms-link.md](../../../ui/docs/cms-link.md)
 * [cms-link.md](../../../lang/docs/cms-link.md)
 
->>>>>>> .merge_file_zKgpcX

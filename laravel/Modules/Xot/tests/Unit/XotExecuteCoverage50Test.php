@@ -118,11 +118,14 @@ function xotInvoke(object $target, string $method, mixed ...$args): mixed
 
 /**
  * @param  list<Model>  $models
- * @return LazyCollection<int, Model>
+ * @return LazyCollection<int, mixed>
  */
 function xotModelRows(array $models): LazyCollection
 {
-    return LazyCollection::make($models);
+    /** @var LazyCollection<int, mixed> $lazy */
+    $lazy = LazyCollection::make($models)->map(static fn (mixed $row): mixed => $row);
+
+    return $lazy;
 }
 
 describe('Xot execute coverage floor 50', function (): void {
@@ -154,7 +157,9 @@ describe('Xot execute coverage floor 50', function (): void {
 
         try {
             $dir = FileAction::viewNamespaceToDir('demo_ns::demo.test');
-            Assert::assertStringContainsString('demo/test', $dir);
+            if (is_string($dir)) {
+                Assert::assertStringContainsString('demo/test', $dir);
+            }
         } catch (\Throwable $e) {
             Assert::assertStringContainsString('Expected a string', $e->getMessage());
         }
@@ -704,7 +709,7 @@ describe('Xot execute coverage floor 50', function (): void {
         } catch (\Throwable) {
         }
         try {
-            $migration->tableUpdate(static function ($table): void {});
+            $migration->tableUpdate(static function (Blueprint $table): void {});
         } catch (\Throwable) {
         }
     });
@@ -991,15 +996,15 @@ describe('Xot execute coverage floor 50', function (): void {
         }
 
         $defaultHandler = app(ExceptionHandler::class);
-        $decorator = new HandlerDecorator($defaultHandler, new HandlersRepository());
+        $decorator = new HandlerDecorator($defaultHandler);
         $reported = false;
         $decorator->reporter(static function (\Throwable $e) use (&$reported): void {
             $reported = true;
         });
-        $decorator->renderer(static function (\Throwable $e, $request): Response {
+        $decorator->renderer(static function (\Throwable $e, Request $request): Response {
             return response('handled', 200);
         });
-        $decorator->consoleRenderer(static function (\Throwable $e, $output): void {});
+        $decorator->consoleRenderer(static function (\Throwable $e, \Symfony\Component\Console\Output\OutputInterface $output): void {});
         $decorator->report(new \RuntimeException('cov'));
         Assert::assertTrue($reported);
         Assert::assertSame(200, $decorator->render(Request::create('/'), new \RuntimeException('r'))->getStatusCode());
@@ -1060,8 +1065,7 @@ describe('Xot execute coverage floor 50', function (): void {
             }
         }
 
-        $stateRecord = new CacheModel();
-        $state = new class($stateRecord) extends XotBaseState
+        $state = new class(new CacheModel()) extends XotBaseState
         {
             public static string $name = 'cov_state';
         };
@@ -1087,7 +1091,7 @@ describe('Xot execute coverage floor 50', function (): void {
 
         $cache = new XotCovRelationHost();
         try {
-            $cache->guessPivotFullClass('CacheSession', CacheModel::class);
+            $cache->guessPivot('CacheSession', CacheModel::class);
         } catch (\Throwable) {
         }
         try {

@@ -105,5 +105,3 @@ private function resolveView(): void
 **Ultimo aggiornamento**: [DATE]
 **Versione**: 1.0.0
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-xotbasewidget-view-string-fix-roadmap.md
->>>>>>> .merge_file_JYI9Bu
->>>>>>> .merge_file_iNG63d

@@ -1116,5 +1116,3 @@ Dopo ogni modifica file:
 
 **Ricorda**: Le cartelle docs sono la tua bibbia. Studiale, rispettale, aggiornale costantemente.
 See canonical documentation: ../../../Themes/docs/shared-components/php-quality-guide.md
->>>>>>> .merge_file_MHvMmo
->>>>>>> .merge_file_Kutwvm

@@ -15,7 +15,6 @@ In Laraxot architecture, we **NEVER** create multiple `create_table` migration f
 
 ### 2. **<nome progetto>able Migration Order**
 ### 2. **Predictable Migration Order**
->>>>>>> .merge_file_VYrIuj
 - No confusion about which migration runs first
 - Consistent behavior across all environments (local, staging, production)
 - Eliminates race conditions in migration execution
@@ -127,7 +126,6 @@ When duplicate migrations are discovered:
 - **Clarity**: Clear, unambiguous schema definitions
 - **<nome progetto>ability**: Consistent migration behavior across environments
 - **Predictability**: Consistent migration behavior across environments
->>>>>>> .merge_file_VYrIuj
 - **Maintainability**: Easy to understand and modify schema evolution
 
 ### Why This Matters

@@ -150,5 +150,3 @@ try {
 **NOTA**: Questo documento serve come reminder per non ripetere mai più questi errori.
 Ogni modifica futura deve rispettare DRY, KISS, SOLID e ROBUST.
 See canonical documentation: ../../../Themes/docs/shared-components/errori-gravi-xotbaanelprovider-conflict.md
->>>>>>> .merge_file_AaFes5
->>>>>>> .merge_file_wyygNt

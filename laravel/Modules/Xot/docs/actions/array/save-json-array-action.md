@@ -62,5 +62,3 @@ $result = $action->execute($data, $filename);
 - Implementa QueueableAction per supporto code
 - Supporta la validazione tramite Assert
 
-=======
->>>>>>> .merge_file_FdvijQ

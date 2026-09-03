@@ -420,5 +420,3 @@ public function mount(): void
 **
 **Maintainer:** Laraxot Team + Claude Opus 4.5
 See canonical documentation: ../../../Themes/docs/shared-components/filament-5-method-visibility-rules.md
->>>>>>> .merge_file_ea7SLB
->>>>>>> .merge_file_XOnjId

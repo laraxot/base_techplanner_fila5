@@ -9,7 +9,6 @@ Consulta la documentazione delle traduzioni:
 - [Introduzione alle Traduzioni](../../lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../lang/docs/module_lang.md)
->>>>>>> .merge_file_4Cpadu
 
 ## Collegamento Bidirezionale
 
@@ -48,4 +47,3 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](../../../patient/docs/lang-link.md)
 * [lang-link.md](../../../cms/docs/lang-link.md)
 
->>>>>>> .merge_file_4Cpadu

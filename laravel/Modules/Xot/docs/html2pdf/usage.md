@@ -127,5 +127,3 @@ Il contenuto all'interno di questo tag non verrà spezzato tra due pagine.
 </nobreak>
 ```
 See canonical documentation: ../../../../Themes/docs/shared-components/usage-Modules.md
->>>>>>> .merge_file_U13kxs
->>>>>>> .merge_file_Zqxg0F

@@ -69,7 +69,6 @@ Tutti i modelli devono estendere una delle classi base appropriate:
 │ - Modules/healthcare_app/Models/Contact                            │
 │ - Modules/ModuloEsempio/Models/Contact                            │
 │ - Modules/Quaeris/Models/Contact                            │
->>>>>>> .merge_file_h1thHm
 │                                                             │
 │ Implementano: Business logic, Relationships, Scopes         │
 └─────────────────────────────────────────────────────────────┘
@@ -197,7 +196,6 @@ abstract class BaseMorphPivot extends XotBaseMorphPivot
 - Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in healthcare_app)
 - Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in ModuloEsempio)
 - Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in Quaeris)
->>>>>>> .merge_file_h1thHm
 - Configurare casts specifici del modulo
 - Configurare eager loading predefinito (`$with`)
 
@@ -241,7 +239,6 @@ class Tenant extends BaseModel
 - `Modules/healthcare_app/Models/Contact.php`
 - `Modules/ModuloEsempio/Models/Contact.php`
 - `Modules/Quaeris/Models/Contact.php`
->>>>>>> .merge_file_h1thHm
 - `Modules/Cms/Models/Page.php`
 - `Modules/Geo/Models/GeoNamesCap.php`
 
@@ -574,7 +571,6 @@ namespace Modules\ModuloEsempio\Models;
 ```php
 namespace Modules\Quaeris\Models;
 
->>>>>>> .merge_file_h1thHm
 
 use Modules\Xot\Models\XotBaseModel;
 use Modules\Xot\Contracts\ModelContract;
@@ -587,7 +583,6 @@ use GeneaLabs\LaravelModelCaching\Traits\Cachable;
  * Base Model per healthcare_app module.
  * Base Model per ModuloEsempio module.
  * Base Model per Quaeris module.
->>>>>>> .merge_file_h1thHm
  *
  * Aggiunge supporto per:
  * - Media Library (Spatie)
@@ -602,7 +597,6 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
 
     protected $connection = 'healthcare_app';
     protected $connection = 'quaeris';
->>>>>>> .merge_file_h1thHm
 
     // Eager load sempre la relazione extra
     protected $with = ['extra'];
@@ -615,7 +609,6 @@ Poi i modelli concreti ereditano tutto:
 namespace Modules\healthcare_app\Models;
 namespace Modules\ModuloEsempio\Models;
 namespace Modules\Quaeris\Models;
->>>>>>> .merge_file_h1thHm
 
 class Contact extends BaseModel
 {
@@ -678,7 +671,6 @@ protected $connection = 'user';  // ← Già ereditato da BaseModel
 // Modules/healthcare_app/Models/BaseModel.php
 // Modules/ModuloEsempio/Models/BaseModel.php
 // Modules/Quaeris/Models/BaseModel.php
->>>>>>> .merge_file_h1thHm
 use InteractsWithMedia;
 use HasExtraTrait;
 
@@ -810,10 +802,8 @@ it('tracks who created the record', function () {
 - [XotBasePivot.php](../../app/Models/XotBasePivot.php) - Base class per pivot tables
 - [XotBaseMorphPivot.php](../../app/Models/XotBaseMorphPivot.php) - Base class per morph pivots
 - [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) - Analisi duplicazioni e proposte miglioramento
->>>>>>> .merge_file_h1thHm
 - [CLAUDE.md](../../../CLAUDE.md) - Convenzioni generali del progetto
 - [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) - Analisi duplicazioni e proposte miglioramento
-=======
 - [CLAUDE.md](../../../claude.md) - Convenzioni generali del progetto
 
 ---
@@ -910,7 +900,6 @@ Tutti i modelli devono estendere una delle classi base appropriate:
 │ - Modules/healthcare_app/Models/Contact                            │
 │ - Modules/ModuloEsempio/Models/Contact                            │
 │ - Modules/Quaeris/Models/Contact                            │
->>>>>>> .merge_file_h1thHm
 │                                                             │
 │ Implementano: Business logic, Relationships, Scopes         │
 └─────────────────────────────────────────────────────────────┘
@@ -1038,7 +1027,6 @@ abstract class BaseMorphPivot extends XotBaseMorphPivot
 - Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in healthcare_app)
 - Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in ModuloEsempio)
 - Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in Quaeris)
->>>>>>> .merge_file_h1thHm
 - Configurare casts specifici del modulo
 - Configurare eager loading predefinito (`$with`)
 
@@ -1082,7 +1070,6 @@ class Tenant extends BaseModel
 - `Modules/healthcare_app/Models/Contact.php`
 - `Modules/ModuloEsempio/Models/Contact.php`
 - `Modules/Quaeris/Models/Contact.php`
->>>>>>> .merge_file_h1thHm
 - `Modules/Cms/Models/Page.php`
 - `Modules/Geo/Models/GeoNamesCap.php`
 
@@ -1415,7 +1402,6 @@ namespace Modules\ModuloEsempio\Models;
 ```php
 namespace Modules\Quaeris\Models;
 
->>>>>>> .merge_file_h1thHm
 
 use Modules\Xot\Models\XotBaseModel;
 use Modules\Xot\Contracts\ModelContract;
@@ -1428,7 +1414,6 @@ use GeneaLabs\LaravelModelCaching\Traits\Cachable;
  * Base Model per healthcare_app module.
  * Base Model per ModuloEsempio module.
  * Base Model per Quaeris module.
->>>>>>> .merge_file_h1thHm
  *
  * Aggiunge supporto per:
  * - Media Library (Spatie)
@@ -1443,7 +1428,6 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
 
     protected $connection = 'healthcare_app';
     protected $connection = 'quaeris';
->>>>>>> .merge_file_h1thHm
 
     // Eager load sempre la relazione extra
     protected $with = ['extra'];
@@ -1456,7 +1440,6 @@ Poi i modelli concreti ereditano tutto:
 namespace Modules\healthcare_app\Models;
 namespace Modules\ModuloEsempio\Models;
 namespace Modules\Quaeris\Models;
->>>>>>> .merge_file_h1thHm
 
 class Contact extends BaseModel
 {
@@ -1519,7 +1502,6 @@ protected $connection = 'user';  // ← Già ereditato da BaseModel
 // Modules/healthcare_app/Models/BaseModel.php
 // Modules/ModuloEsempio/Models/BaseModel.php
 // Modules/Quaeris/Models/BaseModel.php
->>>>>>> .merge_file_h1thHm
 use InteractsWithMedia;
 use HasExtraTrait;
 
@@ -1651,10 +1633,8 @@ it('tracks who created the record', function () {
 - [XotBasePivot.php](../../app/Models/XotBasePivot.php) - Base class per pivot tables
 - [XotBaseMorphPivot.php](../../app/Models/XotBaseMorphPivot.php) - Base class per morph pivots
 - [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) - Analisi duplicazioni e proposte miglioramento
->>>>>>> .merge_file_h1thHm
 - [CLAUDE.md](../../../CLAUDE.md) - Convenzioni generali del progetto
 - [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) - Analisi duplicazioni e proposte miglioramento
-=======
 - [CLAUDE.md](../../../claude.md) - Convenzioni generali del progetto
 
 ---

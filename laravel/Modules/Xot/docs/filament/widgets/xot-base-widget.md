@@ -71,7 +71,6 @@ public function getFormSchema(): array
 ## Form Schema
 
 Ogni widget deve implementare il proprio schema di form:
->>>>>>> .merge_file_gnjDZY
 
 `#[Override]` su un metodo assente nel parent è fatal PHP 8.3 all'autoload e interrompe `phpstan analyse Modules`.
 
@@ -86,11 +85,20 @@ public function getFormSchema(): array
 }
 ```
 
->>>>>>> laraxot/master
-=======
-`form()` sulla base chiama `getFormSchema()` e imposta `statePath('data')`. Non è `abstract` nel codice attuale.
+Ogni widget deve implementare il proprio schema di form:
 
->>>>>>> .merge_file_8Q1pzH
+```php
+abstract public function getFormSchema(): array;
+
+final public function form(Form $form): Form
+{
+    return $form
+        ->schema($this->getFormSchema())
+        ->columns(2)
+        ->statePath('data');
+}
+```
+
 ## Best Practices
 
 1. **Estensione della Classe**
@@ -208,7 +216,4 @@ Questo trait permette al widget di aggiornarsi automaticamente a intervalli rego
 - [FOLIO_VOLT_FILAMENT_INTEGRATION.md](../../FOLIO_VOLT_FILAMENT_INTEGRATION.md) - Integrazione Folio, Volt e Filament
 - [MODULE_STRUCTURE.md](../../MODULE_STRUCTURE.md) - Struttura standard dei moduli
 - [Documentazione Filament](https://filamentphp.com/docs/3.x/widgets/installation)
-=======
 - [Documentazione Filament](https://filamentphp.com/docs/3.x/widgets/installation)
-- [Documentazione Filament](https://filamentphp.com/docs/3.x/widgets/installation)
->>>>>>> .merge_file_8Q1pzH

@@ -318,5 +318,3 @@ La classe è ora uno strumento potente e flessibile per creare dashboard statist
 **Stato**: ✅ Completato e Testato
 **Miglioramenti**: ✅ 15 nuovi metodi implementati
 See canonical documentation: ../../../../Themes/docs/shared-components/xotbase-stats-overview-widget-improvements.md
->>>>>>> .merge_file_tCmsFS
->>>>>>> .merge_file_UFhFhK

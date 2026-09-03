@@ -10,7 +10,6 @@ Questo documento descrive l'integrazione tra il sistema di documentazione di Xot
 - [Linee Guida Generali per la Documentazione](documentation-guidelines.md)
 - [Documentazione Completa del Sistema di Prompt](../../../../bashscripts/docs/PROMPTS_DOCUMENTATION_SYSTEM.md)
 - [Linee Guida Generali per la Documentazione](./DOCUMENTATION-GUIDELINES.md)
->>>>>>> .merge_file_4o3jv7
 
 ## Cos'è il Sistema di Prompt
 
@@ -18,7 +17,6 @@ Il modulo bashscripts include un sistema di prompt che fornisce istruzioni stand
 
 Il file principale è `bashscripts/prompts/docs.txt`, che contiene linee guida dettagliate su:
 Il file principale è `/var/www/html/saluteora/bashscripts/prompts/docs.txt`, che contiene linee guida dettagliate su:
->>>>>>> .merge_file_4o3jv7
 
 1. Struttura gerarchica della documentazione
 2. Sistema di collegamenti bidirezionali
@@ -38,7 +36,6 @@ Il sistema di documentazione di Xot e il sistema di prompt di bashscripts si com
 2. Utilizzare il [Sistema di Prompt](prompts_documentation_system.md) per istruzioni dettagliate
 1. Consultare le [Linee Guida per la Documentazione](./DOCUMENTATION-GUIDELINES.md) di Xot per comprendere la struttura generale
 2. Utilizzare il [Sistema di Prompt](../../../../bashscripts/docs/PROMPTS_DOCUMENTATION_SYSTEM.md) per istruzioni dettagliate
->>>>>>> .merge_file_4o3jv7
 
 ## Miglioramenti Recenti
 
@@ -65,4 +62,3 @@ Qualsiasi aggiornamento al sistema di prompt deve essere:
 - [Linee Guida per la Documentazione in Xot](./DOCUMENTATION-GUIDELINES.md)
 - [Percorsi Relativi nella Documentazione](../../../../bashscripts/docs/PERCORSI_RELATIVI_DOCUMENTAZIONE.md)
 - [Documentazione del Sistema di Prompt](../../../../bashscripts/docs/PROMPTS_DOCUMENTATION_SYSTEM.md)
->>>>>>> .merge_file_4o3jv7

@@ -228,5 +228,3 @@ Prima di committare modifiche alla documentazione di un modulo, verificare:
 - [Convenzioni Generali](conventions.md)
 - [Best Practices Documentazione](documentation-guidelines.md)
 See canonical documentation: ../../../Themes/docs/shared-components/naming-conventions-docs.md
->>>>>>> .merge_file_Mynl5T
->>>>>>> .merge_file_bJ0Pi1

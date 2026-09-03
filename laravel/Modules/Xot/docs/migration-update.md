@@ -30,4 +30,3 @@ See canonical documentation: ../../../Themes/docs/shared-components/migration-up
 ## Note
 - Per casi specifici e casistiche di errore consultare la documentazione dei singoli moduli (es. Performance).
 
->>>>>>> .merge_file_CFbn5J

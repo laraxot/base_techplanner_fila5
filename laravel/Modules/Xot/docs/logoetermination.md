@@ -32,7 +32,6 @@ Questo documento descrive il processo per determinare il logo di un'applicazione
 - Linee guida generali per i loghi: [Linee Guida per i Loghi](../../../../docs/project/standards/logo_guidelines.md).
 - Per ulteriori dettagli sul progetto specifico, consultare la documentazione nella root del progetto: [INDEX.md](../../../project_docs/index.md).
 - Linee guida generali per i loghi: [Linee Guida per i Loghi](../../../project_docs/standards/logo_guidelines.md).
->>>>>>> .merge_file_UFVGAX
 - Convenzioni sui namespace e Filament: [Convenzioni Namespace Filament](../cms/project_docs/convenzioni-namespace-filament.md).
 # Determinazione del Logo Basata sul Dominio
 
@@ -70,4 +69,3 @@ Questo documento descrive il processo per determinare il logo di un'applicazione
 - Per ulteriori dettagli sul progetto specifico, consultare la documentazione nella root del progetto: [INDEX.md](../../../docs/index.md).
 - Linee guida generali per i loghi: [Linee Guida per i Loghi](../../../docs/standards/logo_guidelines.md).
 - Convenzioni sui namespace e Filament: [Convenzioni Namespace Filament](../cms/docs/convenzioni-namespace-filament.md).
->>>>>>> .merge_file_UFVGAX

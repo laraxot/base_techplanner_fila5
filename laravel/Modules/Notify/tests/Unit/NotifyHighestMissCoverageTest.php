@@ -173,22 +173,22 @@ describe('Notify highest-miss coverage', function (): void {
 
     test('resources expose model pages and legacy form schema', function (): void {
         Assert::assertSame(NotificationTemplate::class, NotificationTemplateResource::getModel());
-        Assert::assertArrayHasKey('name', NotificationTemplateResource::getFormSchemaOld());
+        Assert::assertArrayHasKey('name', NotificationTemplateResource::getFormSchema());
         Assert::assertNotEmpty(NotificationTemplateResource::getPages());
 
         Assert::assertSame(NotifyTheme::class, NotifyThemeResource::getModel());
-        Assert::assertArrayHasKey('subject', NotifyThemeResource::getFormSchemaOld());
+        Assert::assertArrayHasKey('subject', NotifyThemeResource::getFormSchema());
         Assert::assertNotEmpty(NotifyThemeResource::getPages());
 
         Assert::assertSame(MailTemplate::class, MailTemplateResource::getModel());
-        Assert::assertNotEmpty(MailTemplateResource::getFormSchemaOld());
+        Assert::assertNotEmpty(MailTemplateResource::getFormSchema());
         Assert::assertNotEmpty(MailTemplateResource::getPages());
 
         Assert::assertSame(\Modules\Notify\Models\Notification::class, NotificationResource::getModel());
-        Assert::assertNotEmpty(NotificationResource::getFormSchemaOld());
+        Assert::assertNotEmpty(NotificationResource::getFormSchema());
 
         Assert::assertSame(Contact::class, ContactResource::getModel());
-        Assert::assertNotEmpty(ContactResource::getFormSchemaOld());
+        Assert::assertNotEmpty(ContactResource::getFormSchema());
         Assert::assertNotEmpty(ContactResource::getPages());
     });
 
@@ -397,16 +397,14 @@ describe('Notify highest-miss coverage', function (): void {
         $recipient = notifyDummyRecipient(['email' => 'user@example.test']);
         Notification::fake();
 
-        $result = (new SendNotificationAction())->handle(
-            $recipient,
+        $result = (new SendNotificationAction())->handle($recipient,
             'welcome-template',
         );
 
         Assert::assertNull($result);
         Notification::assertSentTo($recipient, GenericNotification::class);
 
-        expect(fn (): mixed => (new SendNotificationAction())->handle(
-            $recipient,
+        expect(fn (): mixed => (new SendNotificationAction())->handle($recipient,
             'missing-template',
         ))->toThrow(\Exception::class);
     });
@@ -430,8 +428,7 @@ describe('Notify highest-miss coverage', function (): void {
         $recipient = notifyDummyRecipient(['phone' => '+393331112233']);
         Notification::fake();
 
-        (new SendNotificationAction())->handle(
-            $recipient,
+        (new SendNotificationAction())->handle($recipient,
             'sms-template',
         );
 
@@ -523,8 +520,7 @@ describe('Notify highest-miss coverage', function (): void {
 
         foreach ($cases as $payload) {
             try {
-                $result = (new SendFacebookWhatsAppAction())->execute(
-                    WhatsAppData::from($payload),
+                $result = (new SendFacebookWhatsAppAction())->execute(WhatsAppData::from($payload),
                 );
                 Assert::assertNotEmpty($result);
             } catch (\Throwable $e) {
@@ -550,7 +546,6 @@ describe('Notify highest-miss coverage', function (): void {
             Assert::assertNotSame('', $e->getMessage());
         }
 
-        expect(fn (): array => (new TryDuocircleMailAction())->execute([
-            'to' => 'user@example.test']))->toThrow(\Exception::class);
+        expect(fn (): array => (new TryDuocircleMailAction())->execute(['to' => 'user@example.test']))->toThrow(\Exception::class);
     });
 });

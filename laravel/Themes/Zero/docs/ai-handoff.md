@@ -6,6 +6,7 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "ai handoff"
 related:
+  - "./00-INDEX.md"
   - "./00-index.md"
 ---
 
@@ -14,7 +15,8 @@ related:
 ## regole non negoziabili
 
 - tests solo pest
-- nei tests MAI RefreshDatabase
+- nei tests **MAI** `RefreshDatabase` / `DatabaseMigrations`
+- **MAI** `migrate:fresh`, `migrate --force`, `db:wipe` — i dati sono sacri
 - i tests devono leggere `.env.testing`
 
 ## stato lavori (ultimo)
@@ -45,6 +47,7 @@ Se questi punti mancano, il rischio e' che agenti diversi facciano implementazio
 - se il task tema tocca file PHP, il quality gate include `phpstan`, `PHPMD` e `phpinsights`
 - `PHPMD` va eseguito come `.phar` standalone, non come package Composer del repo
 - per cambiamenti di governance o workflow, aggiornare anche issue/discussion GitHub gia' esistenti dopo `git remote -v`
+- anche nei task tema, se servono cast o normalizzazioni di supporto non creare helper ad hoc senza prima verificare le action condivise in `Modules/Xot/app/Actions/Cast/`
 - anche nei task tema, se servono cast o normalizzazioni di supporto non creare helper ad hoc senza prima verificare le action condivise in `Modules/Xot/app/Actions/Cast/`
 - se un bug e' visibile su una URL reale del progetto, non considerare sufficiente un test che legge solo il source; serve una verifica runtime o una riproduzione fedele della stessa pipeline
 - nei componenti Filament/Livewire coinvolti dal tema, preferire proprieta' pubbliche serializzabili; array di oggetti custom non serializzabili tendono a rompere l'hydration

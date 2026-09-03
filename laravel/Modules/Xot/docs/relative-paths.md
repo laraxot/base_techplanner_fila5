@@ -24,7 +24,6 @@ updated: 2026-08-24
 > - [Regole per i Prompt](./prompt_rules.md)
 > - [README.md toolkit bashscripts](../../../../bashscripts/docs/readme.md)
 
->>>>>>> .merge_file_02nOud
 
 ## Regola Fondamentale
 
@@ -51,7 +50,6 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 ```markdown
 [Documentazione Root](../../../../../docs/readme.md)
 [Documentazione Root](../../../../docs/readme.md)
->>>>>>> .merge_file_02nOud
 ```
 
 ## Errori Comuni da Evitare
@@ -88,7 +86,6 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 | `/docs/README.md` | `/laravel/Modules/Xot/docs/README.md` | `./laravel/Modules/Xot/docs/README.md` |
 | `/laravel/Modules/Xot/docs/README.md` | `/docs/README.md` | `../../../../../docs/README.md` |
 | `/laravel/Modules/Xot/docs/README.md` | `/docs/README.md` | `../../../../docs/README.md` |
->>>>>>> .merge_file_02nOud
 | `/laravel/Modules/Xot/docs/README.md` | `/laravel/Modules/User/docs/README.md` | `../../../User/docs/README.md` |
 | `/laravel/Modules/Xot/docs/structure.md` | `/laravel/Modules/Xot/docs/README.md` | `./README.md` |
 

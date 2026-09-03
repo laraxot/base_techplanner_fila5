@@ -144,4 +144,3 @@ php artisan serve
 * [installation.md](../../../cms/docs/installation.md)
 * [installation.md](../../../../themes/one/docs/installation.md)
 
->>>>>>> .merge_file_KwxjK6

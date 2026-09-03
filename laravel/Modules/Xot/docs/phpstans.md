@@ -109,5 +109,3 @@ Applicando questi pattern, abbiamo raggiunto:
 - **Type safety al livello massimo**
 - **Codice manutenibile e robusto**
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-patterns-dec.md
->>>>>>> .merge_file_vR80kZ
->>>>>>> .merge_file_b78uAv

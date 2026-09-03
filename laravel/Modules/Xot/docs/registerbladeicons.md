@@ -131,4 +131,3 @@ La stessa filosofia di gestione centralizzata dei path tramite action (es. GetMo
 ## Conclusione
 Il metodo `registerBladeIcons` rappresenta un esempio di come la filosofia zen e i principi di design software possano convergere in una soluzione elegante ed efficace. La sua implementazione bilancia perfettamente la necessità di flessibilità con la robustezza del sistema, creando un ponte tra la modularità del codice e l'espressività dell'interfaccia utente. 
 
->>>>>>> .merge_file_oiyp6o

@@ -116,5 +116,3 @@ Moduli che richiedono questa configurazione:
 
 *Ultimo aggiornamento: gennaio 2026*
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-level10-complete-status.md
->>>>>>> .merge_file_ZWpJF2
->>>>>>> .merge_file_3MEJyk

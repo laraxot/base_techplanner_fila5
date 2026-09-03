@@ -4,31 +4,20 @@ type: report
 tags: [code-quality, phpstan, pest, maintainability]
 module: "Job"
 created: 2026-07-17
-updated: 2026-07-27
-qmd: "code quality baseline PHPStan Pest strict types Laraxot Job git remote"
+updated: 2026-07-17
+qmd: "code quality baseline PHPStan Pest strict types Laraxot Job"
 story: STORY-001
-# GRAVE: issue/discussion del modulo — mai base_techplanner / base_workorder / mono.
-# Resolve: cd laravel/Modules/Job && git remote -v → laraxot/module_job_fila5
-issues: []
-discussions: []
+issues:
+  - "https://github.com/laraxot/base_techplanner_fila5/issues/46"
+discussions:
+  - "https://github.com/laraxot/base_techplanner_fila5/discussions/47"
 related:
   - "../../../../docs/stories/STORY-001-code-quality-moduli-temi.md"
-  - "../../../../docs/wiki/memories/module-github-remote-discipline.md"
 ---
 
 # Code Quality Improvement Report — Job
 
 > Baseline statica riproducibile per orientare il miglioramento. I conteggi sono segnali, non sostituiscono PHPStan, Pest o la review del flusso reale.
-
-
-## GitHub (repo del componente)
-
-```bash
-cd laravel/Modules/Job && git remote -v
-# atteso: laraxot/module_job_fila5
-```
-
-**Lezione grave:** in un conflitto Git, *entrambe* le parti possono essere sbagliate (`base_techplanner_*` vs `base_workorder_*`). Non scegliere a caso: `git remote -v` nella cartella del modulo/tema.
 
 ## Baseline
 
@@ -85,7 +74,7 @@ Rilevazione del 17 luglio 2026 sul working tree locale; esclusi vendor e dipende
 6. **app/Actions/ExecuteTaskAction.php:15.** Implementare davvero l’esecuzione del task o impedire che l’Action sia risolta; aggiungere test su successo, eccezione e stato finale. Uno stub callable è più rischioso dell’assenza della feature.
 
 
-- [x] PHPStan L10 scoped senza errori non giustificati. (Modules 2026-07-27)
+- [ ] PHPStan L10 scoped senza errori non giustificati.
 - [ ] Pest scoped verde sui flussi critici.
 - [ ] Nessuna nuova estensione Filament diretta o controller FO.
 - [ ] Nessuna nuova business logic in Services/Support.
@@ -93,11 +82,6 @@ Rilevazione del 17 luglio 2026 sul working tree locale; esclusi vendor e dipende
 - [ ] Debito residuo con owner e criterio di rimozione.
 
 ## Criteri di uscita
-
-## Gate PHPStan (2026-07-27)
-
-- `cd laravel && ./vendor/bin/phpstan analyse Modules --memory-limit=-1` → **0 errori**.
-- Themes: solo insieme a Modules — [phpstan-stale-ignore-pattern](../../../../docs/wiki/troubleshooting/phpstan-stale-ignore-pattern.md).
 
 ## Verifica
 

@@ -33,4 +33,3 @@
 ## Collegamento alla doc root
 Vedi `/docs/xot_conflict_links.md` per la mappatura dei file documentati localmente e i riferimenti incrociati.
 
->>>>>>> .merge_file_iaPWYo

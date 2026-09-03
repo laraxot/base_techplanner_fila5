@@ -416,7 +416,6 @@ $graph->Stroke();
 
 ## 🔄 **Integrazione con healthcare_app**
 ## 🔄 **Integrazione con Quaeris**
->>>>>>> .merge_file_N0b84d
 
 ### **Pattern di Integrazione**
 ```php

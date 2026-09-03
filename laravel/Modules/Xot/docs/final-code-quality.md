@@ -168,5 +168,3 @@ if (property_exists($stateObject, 'name')) {
 *
 *Status: ✅ COMPLETE - All quality improvements implemented*
 See canonical documentation: ../../../Themes/docs/shared-components/final-code-quality-sumy.md
->>>>>>> .merge_file_gkDVbg
->>>>>>> .merge_file_mxBLV0

@@ -10,10 +10,10 @@ use Modules\Xot\Tests\Fixtures\Traits\HasTableFunctionsTraitProbe;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('no-xot-db');
+uses(TestCase::class);
 
 it('gets table columns', function (): void {
-    $probe = new HasTableFunctionsTraitProbe();
+    $probe = new HasTableFunctionsTraitProbe;
 
     $columns = $probe->getTableColumns();
     Assert::assertInstanceOf(TextColumn::class, $columns['name']);

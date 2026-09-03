@@ -46,7 +46,6 @@ Per tutti i dati geografici statici (regioni, province, comuni, cap) di dimensio
 Per dettagli implementativi e best practice vedi:
 - [Geo/docs/geo-json-model.md](../../Geo/docs/geo-json-model.md)
 - [Geo/docs/geo-json-model.md](../../geo/docs/geo-json-model.md)
->>>>>>> .merge_file_cFzfNG
 - [<nome progetto>/docs/geo-integration.md](../../<nome progetto>/docs/geo-integration.md)
 - [Questa stessa doc (Xot/module-structure.md)](module-structure.md)
 
@@ -60,10 +59,6 @@ Ogni modulo deve avere un ServiceProvider che estende `XotBaseServiceProvider`. 
 
 ```
 
-=======
-```
-
->>>>>>> .merge_file_cE1Cfe
 ```php
 <?php
 
@@ -103,7 +98,6 @@ class NomeModuloServiceProvider extends XotBaseServiceProvider {
 - [Lang](../lang/project_docs/readme.md) - Traduzioni
 - [User](../user/project_docs/readme.md) - Gestione utenti
 
->>>>>>> .merge_file_cFzfNG
 
 ## Struttura Dettagliata
 
@@ -393,7 +387,6 @@ User/
 - [Dashboard](../chart/project_docs/dashboard.md)
 - [Visualizzazione](../chart/project_docs/visualization.md)
 
->>>>>>> .merge_file_cFzfNG
 
 # Struttura dei Moduli Laravel
 

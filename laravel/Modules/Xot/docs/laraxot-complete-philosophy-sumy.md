@@ -212,5 +212,3 @@ class Permission extends BaseModel  // ❌ Should extend SpatiePermission
 
 **Philosophy Summary**: Laraxot values simplicity, consistency, and predictability above all else. Follow these principles to build maintainable, scalable applications with minimal technical debt.
 See canonical documentation: ../../../Themes/docs/shared-components/laraxot-complete-philosophy-summary.md
->>>>>>> .merge_file_vdK2rY
->>>>>>> .merge_file_VUOnNm

@@ -77,7 +77,6 @@ Esempi:
 
 - [Regola Critica Progetto](../../../../../docs/regole-critiche/test-naming-pascalcase.md)
 - [Regola Critica Progetto](../../../../docs/regole-critiche/test-naming-pascalcase.md)
->>>>>>> .merge_file_e7obwv
 - [Testing Best Practices](./testing-best-practices.md)
 - [PHPStan Compliance](../phpstan-compliance.md)
 

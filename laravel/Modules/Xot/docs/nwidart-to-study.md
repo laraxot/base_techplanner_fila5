@@ -14,7 +14,6 @@ https://github.com/HichemTab-tech/LaravelFS
 
 ## Contenuto originale (txt)
 
->>>>>>> .merge_file_6i2jk2
 ---
 module: theme
 topic: nwidart-to-study

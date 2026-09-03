@@ -1,18 +1,3 @@
----
-title: "Gdpr — indice della documentazione"
-description: "Documentazione del modulo Gdpr: funzionalita del modulo."
-module: Gdpr
-tags: [gdpr, documentazione, modulo, laraxot]
-status: active
-repository: https://github.com/laraxot/module_gdpr_fila5
-related:
-  - ./00-index.md
-  - ./index.md
-  - ../../../../docs/wiki/audits/docs-redundancy-audit.md
-issues: https://github.com/laraxot/module_gdpr_fila5/issues
-discussions: https://github.com/laraxot/module_gdpr_fila5/discussions
----
-
 # 📚 **Indice Documentazione Modulo Gdpr**
 
 **Status**: ✅ PHPStan Level 10 Compliant
@@ -59,10 +44,9 @@ discussions: https://github.com/laraxot/module_gdpr_fila5/discussions
 | [USER_RESEARCH.md](./USER_RESEARCH.md) | User Research |
 
 ## 🔗 **Moduli Correlati**
-- [User](../../User/docs/README.md) - Soggetti dei consensi.
-- [Activity](../../Activity/docs/README.md) - Log di sistema integrato.
-- [Xot](../../Xot/docs/README.md) - Base framework e trait UUID.
-# Documentation Index
+- [User](../../user/docs/readme.md) - Soggetti dei consensi.
+- [Activity](../../activity/docs/readme.md) - Log di sistema integrato.
+- [Xot](../../xot/docs/readme.md) - Base framework e trait UUID.
 - [AGENTS.md](../../../../AGENTS.md) - Project guidelines
 
 ---

@@ -1,6 +1,6 @@
 ---
 module: theme
-topic: mcp_server_recommended
+topic: mcp-server-recommended
 canonical: ../../../Themes/docs/shared-components/mcp_server_recommended.md
 ---
 

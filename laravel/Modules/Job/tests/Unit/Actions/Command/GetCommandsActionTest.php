@@ -11,7 +11,7 @@ use Spatie\LaravelData\DataCollection;
 
 use function Safe\file_get_contents;
 
-uses(TestCase::class)->group('no-job-db');
+uses(TestCase::class);
 
 describe('GetCommandsAction', function (): void {
     test('can be instantiated', function (): void {

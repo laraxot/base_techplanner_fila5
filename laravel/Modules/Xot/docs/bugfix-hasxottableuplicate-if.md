@@ -172,5 +172,3 @@ done
 **Review**: Pending
 **Data**: Vedi [CHANGELOG.md](./changelog.md)
 See canonical documentation: ../../../Themes/docs/shared-components/bugfix-hasxottable-duplicate-if.md
->>>>>>> .merge_file_5NCTZ5
->>>>>>> .merge_file_0DNciu

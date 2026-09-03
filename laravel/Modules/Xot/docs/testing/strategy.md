@@ -354,5 +354,3 @@ test:
 - Cache disabilitata
 - Logging minimo 
 → [docs/wiki/rules/00-TRIGGER_MAP.md](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
->>>>>>> .merge_file_Mgsxsc
->>>>>>> .merge_file_YmhH6x

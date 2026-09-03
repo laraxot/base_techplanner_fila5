@@ -213,5 +213,3 @@ foreach ($data as $item) { }
 **Status**: 🔄 In Progress (65.3% completato)
 **Prossimo target**: ModuleServiceIntegrationTest.php → 0 errori
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-progress.md
->>>>>>> .merge_file_BIz8G8
->>>>>>> .merge_file_jaqhrR

@@ -108,7 +108,6 @@ class Foo extends bar
 * [customizing-your-site.md](../../../tenant/docs/it/customizing-your-site.md)
 * [customizing-your-site.md](../../../cms/docs/customizing-your-site.md)
 
->>>>>>> .merge_file_EWIUL6
 
 ### Versione Incoming
 
@@ -203,7 +202,6 @@ class Foo extends bar
 * [customizing-your-site.md](../../../tenant/project_docs/it/customizing-your-site.md)
 * [customizing-your-site.md](../../../cms/project_docs/customizing-your-site.md)
 
->>>>>>> .merge_file_EWIUL6
 
 ### Versione Incoming
 

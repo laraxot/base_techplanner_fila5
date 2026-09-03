@@ -407,5 +407,3 @@ PHPStan + PHPMD + Pint + Tests = Qualità garantita
 **Data:** [DATE]
 **Status:** COMPLETATO CON SUCCESSO ✅
 See canonical documentation: ../../../Themes/docs/shared-components/property-exists-final-report.md
->>>>>>> .merge_file_01ojFz
->>>>>>> .merge_file_XMg7TI

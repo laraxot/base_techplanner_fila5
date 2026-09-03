@@ -302,5 +302,3 @@ public function execute(QuestionChart $q, ?string $group_by = null, ?string $sor
 
 These patterns were identified during comprehensive code analysis and represent the most common issues that cause PHPStan errors in the Laraxot codebase. Following these correction strategies will significantly improve code quality and reduce type-related errors.
 See canonical documentation: ../../../Themes/docs/shared-components/common-error-patterns-and-corrections.md
->>>>>>> .merge_file_lNzavC
->>>>>>> .merge_file_qET865

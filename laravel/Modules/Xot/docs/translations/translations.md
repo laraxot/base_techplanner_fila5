@@ -209,7 +209,6 @@ return [
         resource_path('lang'),
         resource_path('lang/vendor'),
 
->>>>>>> .merge_file_eAJkej
     ],
 ];
 ```
@@ -275,7 +274,6 @@ trans('auth.throttle', ['seconds' => 60]);
 // Traduzione con pluralizzazione
 trans_choice('messages.apples', 10, ['count' => 10]);
 
->>>>>>> .merge_file_eAJkej
 ```
 
 ## Best Practices
@@ -868,4 +866,3 @@ I permessi principali includono:
 - Impersonificazione utenti
 - Gestione ruoli
 
->>>>>>> .merge_file_eAJkej

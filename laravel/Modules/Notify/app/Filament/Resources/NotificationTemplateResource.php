@@ -22,9 +22,8 @@ class NotificationTemplateResource extends XotBaseResource
     /**
      * @return array<string, Field>
      */
-
-    // #[Override]
-    public static function getFormSchemaOld(): array
+    #[Override]
+    public static function getFormSchema(): array
     {
         return [
             'name' => TextInput::make('name')

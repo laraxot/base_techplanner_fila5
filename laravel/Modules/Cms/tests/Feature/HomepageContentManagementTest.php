@@ -4,10 +4,13 @@ declare(strict_types=1);
 
 use Illuminate\Http\Response;
 use Illuminate\Testing\TestResponse;
+use Modules\Cms\Tests\TestCase;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use PHPUnit\Framework\Assert;
 
 use function Pest\Laravel\get;
+
+uses(TestCase::class);
 
 beforeEach(function (): void {
     /* @var \Modules\Cms\Tests\TestCase $this */
@@ -147,7 +150,7 @@ describe('Homepage Content Management', function () {
 
         Assert::assertSame(200, $response->status());
         // Avoid brittle copy-order assertions; just ensure HTML is present.
-        $content = (string) $response->getContent();
+        $content = SafeStringCastAction::cast($response->getContent());
         Assert::assertNotSame('', trim($content));
     });
 
@@ -164,7 +167,7 @@ describe('Homepage Content Management', function () {
         }
 
         Assert::assertSame(200, $response->status());
-        $content = (string) $response->getContent();
+        $content = SafeStringCastAction::cast($response->getContent());
         Assert::assertStringContainsString('class="', $content);
     });
 });

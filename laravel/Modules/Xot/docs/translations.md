@@ -73,7 +73,6 @@ Modules/<NomeModulo>/
 - [Regole Generali](../../Xot/docs/translations.md) - Regole base
 - [Modulo Lang](../../lang/docs/module_lang.md) - Documentazione principale
 - [Regole Generali](../../xot/docs/translations.md) - Regole base
->>>>>>> .merge_file_Fp0vrg
 
 ## Struttura
 
@@ -406,7 +405,6 @@ Action::make('delete')
 * [translations.md](../../../patient/docs/translations.md)
 * [translations.md](../../../cms/docs/translations.md)
 
->>>>>>> .merge_file_Fp0vrg
 
 ### Versione Incoming
 

@@ -132,6 +132,7 @@ class Profile extends BaseProfile implements HasMedia
      * Get the teams that the profile belongs to.
      *
      * @return BelongsToMany<Team, $this, Pivot, 'pivot'>
+     * @phpstan-return BelongsToMany<Team, $this, Pivot, 'pivot'>
      */
     public function teams(): BelongsToMany
     {

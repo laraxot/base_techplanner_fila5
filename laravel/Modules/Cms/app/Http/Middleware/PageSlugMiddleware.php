@@ -49,7 +49,7 @@ class PageSlugMiddleware
     }
 
     /**
-    * Resolve CMS page slug from Folio route (name, container+segment, or single slug).
+     * Resolve CMS page slug from Folio route (name, container+segment, or single slug).
      */
     protected function resolveCmsPageSlug(Request $request): ?string
     {
@@ -122,7 +122,7 @@ class PageSlugMiddleware
      * Execute middleware chain manually.
      */
     /**
-     * @param array<int, string> $middlewares
+     * @param  array<int, string>  $middlewares
      */
     protected function executeMiddlewareChain(Request $request, array $middlewares, \Closure $finalNext): Response
     {
@@ -190,7 +190,6 @@ class PageSlugMiddleware
         // Try to get from route middleware (custom middleware)
         // method_exists will always be true for Http\Kernel, so we can remove the check
         /** @var array<string, class-string> $routeMiddleware */
-        // `getRouteMiddleware()` e' deprecato e delega a `getMiddlewareAliases()`.
         $routeMiddleware = $this->kernel->getMiddlewareAliases();
         if (isset($routeMiddleware[$middleware])) {
             /* @var class-string */

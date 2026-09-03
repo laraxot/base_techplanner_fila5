@@ -956,5 +956,3 @@ Con il refactoring di Contact e creazione scope traits: **→ 92% - Eccellente!*
 *Analyzed by: Claude Code*
 *Validation: ✅ PHPStan Level 10, Manual Review*
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-level-10-dry-kiss-analysis.md
->>>>>>> .merge_file_Iau63Q
->>>>>>> .merge_file_AsVLab

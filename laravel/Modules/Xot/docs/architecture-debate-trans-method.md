@@ -12,7 +12,6 @@ related docs:
 - [trait conflict resolution](./trait-conflict-resolution.md)
 - [filosofia modulo xot](./FILOSOFIA_MODULO_XOT.md)
 - [filosofia modulo xot](./filosofia_modulo_xot.md)
->>>>>>> .merge_file_wLTRVK
 - [quality tools zen](./quality-tools-zen.md)
 
 ## the furious internal debate

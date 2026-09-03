@@ -820,5 +820,3 @@ jobs:
 
 *Questa guida fornisce tutti gli strumenti necessari per mantenere alta la qualità del codice nel progetto FixCity.*
 See canonical documentation: ../../../Themes/docs/shared-components/code-quality-tools-guide.md
->>>>>>> .merge_file_qheSFR
->>>>>>> .merge_file_r4QO83

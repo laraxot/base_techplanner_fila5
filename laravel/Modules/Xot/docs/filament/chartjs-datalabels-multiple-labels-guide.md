@@ -112,7 +112,6 @@ protected function getOptions(): array
 
 - [Simple08ChartWidget Doughnut (Quaeris)](../../quaeris/docs/simple08chartwidget-doughnut-distribution.md)
 - [XotBaseChartWidget Documentation](../readme.md)
->>>>>>> laraxot/master
 
 ---
 

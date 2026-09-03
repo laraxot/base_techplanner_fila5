@@ -98,5 +98,3 @@ $assetsPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, '
 
 **Filosofia**: Il sistema si adatta ai moduli, non viceversa.
 See canonical documentation: ../../../Themes/docs/shared-components/module-path-generation-philosophy.md
->>>>>>> .merge_file_f33L6m
->>>>>>> .merge_file_WqIgTT

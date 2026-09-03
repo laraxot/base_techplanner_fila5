@@ -9,10 +9,10 @@ use Modules\Xot\Tests\TestCase;
 use Modules\Xot\Traits\HasCustomRelations;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('no-xot-db');
+uses(TestCase::class);
 
 it('creates custom relation', function (): void {
-    $relatedModel = new class() extends Model
+    $relatedModel = new class extends Model
     {
         protected $table = 'related';
     };
@@ -24,9 +24,9 @@ it('creates custom relation', function (): void {
         protected $table = 'parent';
     };
 
-    $baseConstraints = static fn (CustomRelation $relation): null => null;
-    $eagerConstraints = static fn (CustomRelation $relation, array $models): null => null;
-    $eagerMatcher = static fn (array $models, Collection $results, mixed $relation): array => [];
+    $baseConstraints = fn (mixed $relation) => null;
+    $eagerConstraints = fn (mixed $relation, mixed $models) => null;
+    $eagerMatcher = fn (mixed $models, mixed $results, mixed $relation) => [];
 
     $relation = $parentModel->customRelation(
         get_class($relatedModel),

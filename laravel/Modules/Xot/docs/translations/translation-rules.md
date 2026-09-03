@@ -63,5 +63,3 @@ Un altro errore frequente è l'utilizzo della sintassi vecchia degli array (`arr
 
 *Ultimo aggiornamento: 3 Giugno 2025*
 See canonical documentation: ../../../../Themes/docs/shared-components/translation-rules.md
->>>>>>> .merge_file_3iNu9C
->>>>>>> .merge_file_NCquzM

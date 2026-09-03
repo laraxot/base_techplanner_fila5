@@ -2,7 +2,6 @@
 
 **Ultimo aggiornamento**: 2025-01-10
 **Ultimo aggiornamento**: [DATE]
->>>>>>> .merge_file_BeFCnz
 **Principio**: DRY + KISS - Struttura minima necessaria, niente di più
 
 ## 🚨 Regola Fondamentale

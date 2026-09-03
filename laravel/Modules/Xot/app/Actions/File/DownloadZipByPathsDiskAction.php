@@ -41,7 +41,7 @@ class DownloadZipByPathsDiskAction
                         $zip->addFromString($attachment.'.pdf', $fileContent);
                     }
                 } else {
-                    throw new \RuntimeException('Removed debug dddx');
+                    dddx(['filePath' => $filePath]);
                 }
             }
             $zip->close();

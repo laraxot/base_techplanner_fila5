@@ -20,9 +20,9 @@ class NetfunChannel
      *
      * @return array{status_code: int, status_txt: string}|null
      */
-    public function send(mixed $notifiable, Notification $notification): ?array
+    public function send(object $notifiable, Notification $notification): ?array
     {
-        if (! is_object($notifiable) || ! method_exists($notifiable, 'routeNotificationForNetfun')) {
+        if (! method_exists($notifiable, 'routeNotificationForNetfun')) {
             return null;
         }
 

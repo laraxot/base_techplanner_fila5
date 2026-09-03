@@ -213,5 +213,3 @@ Questo è INUTILE perché:
 **Complessità:** ESTREMA → MINIMALE
 **Filosofia:** MySQL Production = MySQL Tests ✅
 See canonical documentation: ../../../Themes/docs/shared-components/testcase-sqlite-to-mysql-fix-Modules.md
->>>>>>> .merge_file_8jbPcP
->>>>>>> .merge_file_03tlRk

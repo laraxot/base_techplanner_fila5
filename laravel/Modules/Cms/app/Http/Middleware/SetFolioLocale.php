@@ -6,8 +6,6 @@ namespace Modules\Cms\Http\Middleware;
 
 use Illuminate\Http\Request;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
-use Symfony\Component\HttpFoundation\Response;
-use Webmozart\Assert\Assert;
 
 /**
  * Middleware to set locale from URL for Folio pages.
@@ -19,7 +17,7 @@ use Webmozart\Assert\Assert;
  */
 class SetFolioLocale
 {
-    public function handle(Request $request, \Closure $next): Response
+    public function handle(Request $request, \Closure $next): mixed
     {
         // Get the first segment from the URL
         $segments = $request->segments();
@@ -39,7 +37,7 @@ class SetFolioLocale
         // Priority 1: Check if first segment is a supported locale (URL Overrides User Preference)
         if (in_array($firstSegment, $supportedLocales, true)) {
             $locale = $firstSegment;
-        // Priority 2: If user is logged in and has a saved language, use that
+            // Priority 2: If user is logged in and has a saved language, use that
         } else {
             $user = $request->user();
             $locale = match (true) {
@@ -57,9 +55,6 @@ class SetFolioLocale
             LaravelLocalization::setLocale($locale);
         }
 
-        $response = $next($request);
-        Assert::isInstanceOf($response, Response::class);
-
-        return $response;
+        return $next($request);
     }
 }

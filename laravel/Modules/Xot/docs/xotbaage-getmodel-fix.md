@@ -104,7 +104,6 @@ public static function getModel(): null|string
 - [Filament Page Documentation](https://filamentphp.com/docs/3.x/resources/pages)
 - [Laraxot Extension Rules](../../../../docs/laraxot-conventions.md)
 - [Laraxot Extension Rules](../../../docs/laraxot-conventions.md)
->>>>>>> .merge_file_6qlVd8
 
 ## Note di Manutenzione
 - **Data correzione**: Gennaio 2025
@@ -113,6 +112,4 @@ public static function getModel(): null|string
 - **Livello PHPStan**: 9+
 
 *Ultimo aggiornamento: gennaio 2025*
-=======
 - **Livello PHPStan**: 9+
->>>>>>> .merge_file_JJmXPF

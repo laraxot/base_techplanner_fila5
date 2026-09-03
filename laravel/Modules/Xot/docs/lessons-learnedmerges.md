@@ -333,5 +333,3 @@ Al processo sistematico di **comprensione → studio → dibattito → implement
 **Autore:** AI Claude + Metodologia Filosofica 10-Step
 **Status:** ✅ COMPLETATO CON SUCCESSO
 See canonical documentation: ../../../Themes/docs/shared-components/lessons-learnedmerge-conflicts.md
->>>>>>> .merge_file_Ge4zgh
->>>>>>> .merge_file_ijFNlD

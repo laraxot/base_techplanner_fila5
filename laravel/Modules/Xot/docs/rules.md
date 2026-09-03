@@ -12,7 +12,6 @@
 ### Collegamenti
 - [Azioni Organizzativa (Performance)](../../performance/docs/azioni_organizzativa.md)
 
->>>>>>> .merge_file_mO3Nft
 
 ## Regole sui Model
 - Nei moduli, i model devono **sempre** estendere `BaseModel` e **mai** direttamente `Model`.
@@ -57,7 +56,6 @@
 ### Collegamenti
 - [Performance: pattern e anti-pattern Action Filament](../../performance/docs/organizzativa-migration-errors.md)
 
->>>>>>> .merge_file_mO3Nft
 - [Indice e collegamenti root](../../../docs/links.md)
 
 ## Regole sulle colonne delle tabelle Filament
@@ -70,4 +68,3 @@
 - Vedi [Performance/docs/organizzativa_cat_coeffs.md](../../performance/docs/organizzativa_cat_coeffs.md) per esempio pratico, motivazione, correzione e checklist.
 - Vedi [Performance/docs/organizzativa_cat_coeffs.md](../../performance/docs/organizzativa_cat_coeffs.md) per esempio pratico, motivazione, correzione e checklist.
 - Vedi [Performance/docs/organizzativa_cat_coeffs.md](../../performance/docs/organizzativa_cat_coeffs.md) per esempio pratico, motivazione, correzione e checklist.
->>>>>>> .merge_file_mO3Nft

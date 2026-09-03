@@ -33,8 +33,7 @@ test('telegram action factory creates official driver instance', function () {
 
 test('telegram action factory throws for unsupported driver', function () {
     XotBasePest::assertThrows(
-        fn () => (new TelegramActionFactory())->create('unsupported'),
-        \Exception::class,
+        fn () => (new TelegramActionFactory())->create('unsupported'), \Exception::class,
     );
 });
 
@@ -50,7 +49,6 @@ test('whatsapp action factory creates twilio driver instance', function () {
 
 test('whatsapp action factory throws for unsupported driver', function () {
     XotBasePest::assertThrows(
-        fn () => (new WhatsAppActionFactory())->create('unsupported'),
-        \Exception::class,
+        fn () => (new WhatsAppActionFactory())->create('unsupported'), \Exception::class,
     );
 });

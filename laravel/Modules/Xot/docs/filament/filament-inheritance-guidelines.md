@@ -19,7 +19,6 @@ Cannot make non static method Filament\Pages\BasePage::getView() static in class
    ```bash
    grep -r "function methodName" vendor/filament
    grep -r "function methodName" /var/www/html/base_saluteora/laravel/vendor/filament
->>>>>>> .merge_file_Vh9Csi
    ```
 
 3. **Principio di Sostituzione di Liskov**: Le sottoclassi devono essere sostituibili alle loro classi base senza alterare il comportamento corretto del programma.
@@ -101,4 +100,3 @@ public function getNavigationLabel(): string // Non static!
 - [XotBasePage](../xot/docs/filament/pages/xotbasepage.md)
 - [Principi di Ereditarietà](/var/www/html/base_saluteora/laravel/Modules/Xot/docs/class_inheritance_principles.md)
 - [XotBasePage](/var/www/html/base_saluteora/laravel/Modules/Xot/docs/filament/pages/xotbasepage.md)
->>>>>>> .merge_file_Vh9Csi

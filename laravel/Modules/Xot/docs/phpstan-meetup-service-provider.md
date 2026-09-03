@@ -168,5 +168,3 @@ $mappedPaths = array_map(function ($path): string {
 
 **Target Raggiunto**: PHPStan Level 10 + piena compliance Laraxot 🎯
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fix-meetup-service-provider.md
->>>>>>> .merge_file_iKcaNW
->>>>>>> .merge_file_mRJYY8

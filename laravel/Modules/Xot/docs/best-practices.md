@@ -759,7 +759,6 @@ public function createModel(array $data): MioModello
 
 - [**README.md**](README.md) - Documentazione principale del modulo
 - [**README.md**](readme.md) - Documentazione principale del modulo
->>>>>>> .merge_file_FeEpw2
 - [**Architettura**](architecture.md) - Architettura del modulo Xot
 - [**Best Practices Globali**](../docs/best-practices.md) - Best practices globali
 

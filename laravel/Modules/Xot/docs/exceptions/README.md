@@ -39,7 +39,6 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/readme.md)
 * [README.md](bashscripts/docs/it/readme.md)
->>>>>>> .merge_file_FO4otm
 * [README.md](docs/laravel-app/phpstan/readme.md)
 * [README.md](docs/laravel-app/readme.md)
 * [README.md](docs/moduli/struttura/readme.md)
@@ -394,5 +393,3 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 * [README.md](../../../Cms/docs/components/README.md)
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
->>>>>>> .merge_file_FO4otm
->>>>>>> .merge_file_g0dpoz

@@ -169,7 +169,6 @@ Il file attuale contiene principalmente etichette generali per l'interfaccia amm
 - [Geo Module Translations](/modules/geo/project_docs/translation-structure-expanded.md)
 - [User Module Translations](/modules/user/project_docs/translation-guidelines.md)
 
->>>>>>> .merge_file_GdfG77
 
 ### File di Implementazione
 - `lang/es/labels.php` - Etichette generali spagnole
@@ -206,7 +205,4 @@ canonical: ../../../../Themes/docs/shared-components/translation-structure-expan
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/translation-structure-expanded-Modules.md
-=======
 See canonical documentation: ../../../../Themes/docs/shared-components/translation-structure-expanded-Modules.md
->>>>>>> .merge_file_GdfG77
->>>>>>> .merge_file_o20uDv

@@ -19,8 +19,7 @@ class NotificationResource extends XotBaseResource
     /**
      * @return array<string, Field>
      */
-
-    // #[Override]
+    #[Override]
     public static function getFormSchema(): array
     {
         return [

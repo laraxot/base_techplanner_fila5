@@ -452,7 +452,6 @@ Analisi sistematica di tutti i moduli del progetto per identificare violazioni d
 **File**: `Modules/healthcare_app/app/Services/LimeJsonService.php`, `Modules/healthcare_app/app/Services/healthcare_appService.php`
 **File**: `Modules/ModuloEsempio/app/Services/LimeJsonService.php`, `Modules/ModuloEsempio/app/Services/ModuloEsempioService.php`
 **File**: `Modules/Quaeris/app/Services/LimeJsonService.php`, `Modules/Quaeris/app/Services/QuaerisService.php`
->>>>>>> .merge_file_sJAs8D
 
 ```php
 // DUPLICATO in LimeJsonService.php
@@ -462,7 +461,6 @@ public static function getInstance(): self
     if (! self::$instance instanceof \Modules\healthcare_app\Services\LimeJsonService) {
     if (! self::$instance instanceof \Modules\ModuloEsempio\Services\LimeJsonService) {
     if (! self::$instance instanceof \Modules\Quaeris\Services\LimeJsonService) {
->>>>>>> .merge_file_sJAs8D
         self::$instance = new self();
     }
     return self::$instance;
@@ -485,7 +483,6 @@ public static function getInstance(): self
 {
     if (! self::$instance instanceof \Modules\Quaeris\Services\QuaerisService) {
 
->>>>>>> .merge_file_sJAs8D
         self::$instance = new self();
     }
     return self::$instance;
@@ -498,7 +495,6 @@ public static function getInstance(): self
 **Problema**: `protected $connection = 'healthcare_app';` ripetuto in tutti i modelli healthcare_app
 **Problema**: `protected $connection = 'modulo_esempio';` ripetuto in tutti i modelli ModuloEsempio
 **Problema**: `protected $connection = 'quaeris';` ripetuto in tutti i modelli Quaeris
->>>>>>> .merge_file_sJAs8D
 **Soluzione**: Centralizzare in BaseModel o configurazione
 
 ### 2. Violazioni SOLID
@@ -507,7 +503,6 @@ public static function getInstance(): self
 **File**: `Modules/healthcare_app/app/Models/BaseModel.php`
 **File**: `Modules/ModuloEsempio/app/Models/BaseModel.php`
 **File**: `Modules/Quaeris/app/Models/BaseModel.php`
->>>>>>> .merge_file_sJAs8D
 
 ```php
 abstract class BaseModel extends Model implements ModelContract, HasMedia
@@ -558,7 +553,6 @@ abstract class BaseUser extends Authenticatable implements
 **File**: `Modules/healthcare_app/app/Models/Customer.php`
 **File**: `Modules/ModuloEsempio/app/Models/Customer.php`
 **File**: `Modules/Quaeris/app/Models/Customer.php`
->>>>>>> .merge_file_sJAs8D
 
 ```php
 public function surveyPdfsActive()
@@ -574,7 +568,6 @@ public function surveyPdfsActive()
 **File**: `Modules/healthcare_app/app/Filament/Widgets/AlertWidget.php`
 **File**: `Modules/ModuloEsempio/app/Filament/Widgets/AlertWidget.php`
 **File**: `Modules/Quaeris/app/Filament/Widgets/AlertWidget.php`
->>>>>>> .merge_file_sJAs8D
 
 ```php
 return SurveyFlipResponse::where('survey_id', $this->getSurveyId())
@@ -600,7 +593,6 @@ return SurveyFlipResponse::where('survey_id', $this->getSurveyId())
 **File**: `Modules/healthcare_app/app/Models/QuestionChart.php`
 **File**: `Modules/ModuloEsempio/app/Models/QuestionChart.php`
 **File**: `Modules/Quaeris/app/Models/QuestionChart.php`
->>>>>>> .merge_file_sJAs8D
 
 ```php
 public function participants(): CustomRelation
@@ -630,7 +622,6 @@ public function participants(): CustomRelation
 **File**: `Modules/healthcare_app/app/Actions/SendInviteAction.php`
 **File**: `Modules/ModuloEsempio/app/Actions/SendInviteAction.php`
 **File**: `Modules/Quaeris/app/Actions/SendInviteAction.php`
->>>>>>> .merge_file_sJAs8D
 
 ```php
 try {
@@ -653,7 +644,6 @@ try {
 **File**: `Modules/healthcare_app/app/Filament/Resources/ContactResource.php`, `CustomerResource.php`
 **File**: `Modules/ModuloEsempio/app/Filament/Resources/ContactResource.php`, `CustomerResource.php`
 **File**: `Modules/Quaeris/app/Filament/Resources/ContactResource.php`, `CustomerResource.php`
->>>>>>> .merge_file_sJAs8D
 
 ```php
 // ContactResource.php
@@ -711,7 +701,6 @@ class ModuloEsempioServiceProvider extends XotBaseServiceProvider
 class QuaerisServiceProvider extends XotBaseServiceProvider
 {
     public string $name = 'Quaeris';
->>>>>>> .merge_file_sJAs8D
 
     protected string $module_dir = __DIR__;
     protected string $module_ns = __NAMESPACE__;
@@ -814,7 +803,6 @@ trait SingletonTrait
 **File**: `Modules/healthcare_app/app/Models/BaseModel.php`
 **File**: `Modules/ModuloEsempio/app/Models/BaseModel.php`
 **File**: `Modules/Quaeris/app/Models/BaseModel.php`
->>>>>>> .merge_file_sJAs8D
 ```php
 abstract class BaseModel extends Model implements ModelContract
 {
@@ -830,7 +818,6 @@ abstract class BaseModel extends Model implements ModelContract
 **File**: `Modules/healthcare_app/app/Repositories/SurveyFlipResponseRepository.php`
 **File**: `Modules/ModuloEsempio/app/Repositories/SurveyFlipResponseRepository.php`
 **File**: `Modules/Quaeris/app/Repositories/SurveyFlipResponseRepository.php`
->>>>>>> .merge_file_sJAs8D
 ```php
 class SurveyFlipResponseRepository
 {
@@ -901,7 +888,6 @@ return [
     'database' => [
         'connection' => env('QUAERIS_DB_CONNECTION', 'quaeris'),
 
->>>>>>> .merge_file_sJAs8D
     ],
     'limesurvey' => [
         'api' => [

@@ -146,5 +146,3 @@ protected function shouldDiscoverClusters(): bool
 *Principi applicati: DRY, KISS, SOLID, ROBUST*
 *Risultato: Codice pulito, manutenibile e robusto*
 See canonical documentation: ../../../Themes/docs/shared-components/refactoring-xotbaanelprovider-completato-conflict.md
->>>>>>> .merge_file_jP8CLK
->>>>>>> .merge_file_XdDYjY

@@ -198,4 +198,3 @@ Per una comprensione più completa delle correzioni necessarie, consultare:
 1. [NAMESPACE-RULES.md](./namespace-rules.md) - Per le regole sui namespace
 2. [PHPSTAN-LEVEL9-GUIDE.md](./phpstan-level9-guide.md) - Per dettagli su come gestire errori livello 9
 3. [FILAMENT-TABLES.md](./filament-tables.md) - Per problemi specifici di Filament
->>>>>>> .merge_file_6zAFlI

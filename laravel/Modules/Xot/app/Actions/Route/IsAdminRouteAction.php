@@ -11,10 +11,11 @@ class IsAdminRouteAction
 {
     use QueueableAction;
 
-    public function execute(RouteParamsData $params = new RouteParamsData()): bool
+    /** @param array<string, mixed> $params */
+    public function execute(array $params = []): bool
     {
-        if ($params->in_admin !== null) {
-            return $params->in_admin;
+        if (isset($params['in_admin'])) {
+            return (bool) $params['in_admin'];
         }
 
         if (request()->segment(1) === 'admin') {

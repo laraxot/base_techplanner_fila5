@@ -6,8 +6,11 @@ namespace Modules\Gdpr\Tests\Unit\Filament\Resources;
 
 use Modules\Gdpr\Filament\Resources\ConsentResource;
 use Modules\Gdpr\Models\Consent;
+use Modules\Gdpr\Tests\TestCase;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 test('consent_resource_extends_xot_base_resource', function (): void {
     Assert::assertInstanceOf(XotBaseResource::class, new ConsentResource());

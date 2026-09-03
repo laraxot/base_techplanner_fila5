@@ -22,6 +22,23 @@ use function Safe\json_encode;
  * @property string|null $path
  * @property string|null $icon
  * @property array<array-key, mixed>|null $colors
+ * @property string|null $slug
+ * @property string|null $version
+ * @property bool|null $enabled
+ * @property array<array-key, mixed>|null $dependencies
+ * @property \Carbon\Carbon|null $installation_date
+ * @property \Carbon\Carbon|null $activation_date
+ * @property \Carbon\Carbon|null $deactivation_date
+ * @property array<array-key, mixed>|null $metadata
+ * @property string|null $laravel_version
+ * @property string|null $php_version
+ * @property array<array-key, mixed>|null $permissions
+ * @property array<array-key, mixed>|null $routes
+ * @property array<array-key, mixed>|null $assets
+ * @property array<array-key, mixed>|null $settings
+ * @property array<array-key, mixed>|null $usage_statistics
+ * @property array<array-key, mixed>|null $error_log
+ * @property array<array-key, mixed>|null $update_history
  *
  * @method static Builder<static>|Module newModelQuery()
  * @method static Builder<static>|Module newQuery()
@@ -50,6 +67,23 @@ class Module extends Model
         'path',
         'icon',
         'colors',
+        'slug',
+        'version',
+        'enabled',
+        'dependencies',
+        'installation_date',
+        'activation_date',
+        'deactivation_date',
+        'metadata',
+        'laravel_version',
+        'php_version',
+        'permissions',
+        'routes',
+        'assets',
+        'settings',
+        'usage_statistics',
+        'error_log',
+        'update_history',
     ];
 
     /**

@@ -5,7 +5,6 @@ declare(strict_types=1);
 use Modules\Job\Actions\GetTaskFrequenciesAction;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use stdClass;
 
 uses(TestCase::class);
 

@@ -195,7 +195,6 @@ if (Redis::set("lock:$filepath", $metadata, 'EX', 3600, 'NX')) {
 
 - [Merge Conflict Resolution 2025-11-04](./merge-conflict-resolution-2025-11-04.md)
 - [Merge Conflict Resolution [DATE]](./merge-conflict-resolution-[DATE].md)
->>>>>>> .merge_file_bbxvOI
 - [Service Provider Architecture](./service-provider-architecture.md)
 - [Code Quality Standards](./code-quality-standards.md)
 - [DRY KISS Principles](./dry-kiss-analysis.md)
@@ -204,6 +203,5 @@ if (Redis::set("lock:$filepath", $metadata, 'EX', 3600, 'NX')) {
 
 - **2025-11-04**: Documento creato dopo risoluzione massiva di merge conflicts in 16 file
 - **[DATE]**: Documento creato dopo risoluzione massiva di merge conflicts in 16 file
->>>>>>> .merge_file_bbxvOI
 - Pattern identificati e documentati
 - Script di esempio forniti

@@ -158,5 +158,3 @@ public function canDetachBulk(\Illuminate\Database\Eloquent\Model|\stdClass $rec
 2. ⏳ Commit con messaggio descrittivo
 3. ⏳ Push
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fix-xotbaserelationmanager-completato.md
->>>>>>> .merge_file_3uz2Hb
->>>>>>> .merge_file_jR8koY

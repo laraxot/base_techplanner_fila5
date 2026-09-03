@@ -38,7 +38,6 @@
 
 #### 3. **healthcare_app Module - Business Core**
 #### 3. **Quaeris Module - Business Core**
->>>>>>> .merge_file_9cGVoM
 **Role**: Survey management, reporting, analytics
 **Priority**: 0 (Standard priority)
 **Dependencies**: Xot, User, Geo, Media
@@ -232,7 +231,6 @@
 **Priority**: 0 (Standard priority)
 **Dependencies**: Xot, healthcare_app
 **Dependencies**: Xot, Quaeris
->>>>>>> .merge_file_9cGVoM
 
 **Key Components**:
 - `LimeSurvey`, `LimeQuestion` models
@@ -282,7 +280,6 @@ Xot (Foundation)
 │   └── Tenant (Multi-tenancy)
 ├── healthcare_app (Business Core)
 ├── Quaeris (Business Core)
->>>>>>> .merge_file_9cGVoM
 │   ├── Geo (Locations)
 │   ├── Media (Files)
 │   └── Limesurvey (External Integration)
@@ -393,7 +390,6 @@ public function register(): void
 - **UI**: Mixed test structure issues
 - **healthcare_app**: Missing module.json description
 - **Quaeris**: Missing module.json description
->>>>>>> .merge_file_9cGVoM
 
 #### 🔧 Technical Debt
 - **Translation consistency**: Some .navigation placeholders
@@ -406,7 +402,6 @@ public function register(): void
 - **User**: Authentication checks on every request
 - **healthcare_app**: Survey processing and reporting
 - **Quaeris**: Survey processing and reporting
->>>>>>> .merge_file_9cGVoM
 - **Media**: File uploads and conversions
 - **Job**: Background processing
 

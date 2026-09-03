@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 return [
     'navigation' => [
         'name' => 'Esportazione',
@@ -100,27 +102,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-        ],
-        'id' => [
-            'label' => 'id',
-        ],
-        'updated_at' => [
-            'label' => 'updated_at',
-            'placeholder' => 'updated_at',
-            'helper_text' => 'updated_at',
-            'description' => 'updated_at',
-        ],
-        'type' => [
-            'label' => 'type',
-            'placeholder' => 'type',
-            'helper_text' => 'type',
-            'description' => 'type',
-        ],
-        'error_message' => [
-            'label' => 'error_message',
-            'placeholder' => 'error_message',
-            'helper_text' => 'error_message',
-            'description' => 'error_message',
         ],
     ],
     'formats' => [

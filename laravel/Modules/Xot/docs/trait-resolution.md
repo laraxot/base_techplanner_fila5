@@ -98,5 +98,3 @@ Dopo la modifica, verifica con:
 *Risolto: [DATE]*
 *Architecture Version: XotBase 2.1*
 See canonical documentation: ../../../Themes/docs/shared-components/trait-conflict-resolution.md
->>>>>>> .merge_file_YOBpVF
->>>>>>> .merge_file_uLYVil

@@ -11,7 +11,8 @@ namespace Modules\Job\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Support\Carbon;
-use Modules\TechPlanner\Models\Profile;
+use Modules\Job\Database\Factories\JobFactory;
+use Modules\Xot\Contracts\ProfileContract;
 use Override;
 use Webmozart\Assert\Assert;
 
@@ -20,15 +21,6 @@ use function Safe\json_decode;
 /**
  * Modules\Job\Models\Job.
  *
- * @property-read Profile|null $creator
- * @property-read string|null $display_name
- * @property-read string $status
- * @property-read Profile|null $updater
- *
- * @method static Builder<static>|Job newModelQuery()
- * @method static Builder<static>|Job newQuery()
- * @method static Builder<static>|Job query()
- *
  * @property int $id
  * @property string $queue
  * @property array<array-key, mixed> $payload
@@ -36,10 +28,18 @@ use function Safe\json_decode;
  * @property int|null $reserved_at
  * @property int $available_at
  * @property Carbon $created_at
- * @property Carbon|null $updated_at
- * @property string|null $updated_by
  * @property string|null $created_by
+ * @property string|null $updated_by
+ * @property Carbon|null $updated_at
+ * @property-read ProfileContract|null $creator
+ * @property-read string|null $display_name
+ * @property-read string $status
+ * @property-read ProfileContract|null $updater
  *
+ * @method static JobFactory factory($count = null, $state = [])
+ * @method static Builder<static>|Job newModelQuery()
+ * @method static Builder<static>|Job newQuery()
+ * @method static Builder<static>|Job query()
  * @method static Builder<static>|Job whereAttempts($value)
  * @method static Builder<static>|Job whereAvailableAt($value)
  * @method static Builder<static>|Job whereCreatedAt($value)
@@ -50,6 +50,8 @@ use function Safe\json_decode;
  * @method static Builder<static>|Job whereReservedAt($value)
  * @method static Builder<static>|Job whereUpdatedAt($value)
  * @method static Builder<static>|Job whereUpdatedBy($value)
+ *
+ * @property-read ProfileContract|null $deleter
  *
  * @mixin \Eloquent
  */

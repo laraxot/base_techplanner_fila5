@@ -62,4 +62,3 @@ Questo documento descrive le convenzioni di denominazione da seguire all'interno
 - [Best practice per i provider di servizi](./service-provider-best-practices.md)
 - [Best practice per Filament](./filament-best-practices.md)
 
->>>>>>> .merge_file_Bb3f1E

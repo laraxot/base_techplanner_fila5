@@ -38,7 +38,7 @@ test('notify theme resource field options are configured', function (): void {
 });
 
 test('notify theme resource form schema exposes expected components', function (): void {
-    $schema = NotifyThemeResource::getFormSchemaOld();
+    $schema = NotifyThemeResource::getFormSchema();
     Assert::assertArrayHasKey('post_id', $schema);
     Assert::assertInstanceOf(TextInput::class, $schema['post_id']);
     Assert::assertArrayHasKey('logo', $schema);

@@ -111,5 +111,3 @@ Prima di ogni commit, verificare:
 - [Best Practices](best-practices.md)
 - [PHPStan Configuration](phpstan/configuration.md)
 See canonical documentation: ../../../Themes/docs/shared-components/directory-structure-rules.md
->>>>>>> .merge_file_ngeAYh
->>>>>>> .merge_file_74gMhA

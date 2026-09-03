@@ -150,5 +150,3 @@ Documentazione della risoluzione dei conflitti Git nel modulo Xot che bloccavano
 
 *Ultimo aggiornamento: Dicembre 2024*
 See canonical documentation: ../../../Themes/docs/shared-components/conflict-resolution-fixes.md
->>>>>>> .merge_file_ZLzOYJ
->>>>>>> .merge_file_I09bul

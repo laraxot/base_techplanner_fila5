@@ -47,4 +47,3 @@ class HandlerDecorator implements ExceptionHandlerContract
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 - [Error Formatters](./formatters/readme.md)
 
->>>>>>> .merge_file_J3uB8v

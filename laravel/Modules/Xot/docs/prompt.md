@@ -54,5 +54,3 @@ La documentazione dei componenti UI deve essere sempre inserita nella cartella `
 ## Collegamenti tra versioni di prompt_rules.md
 * [prompt_rules.md](rules/prompt_rules.md)
 See canonical documentation: ../../../Themes/docs/shared-components/prompt-rules.md
->>>>>>> .merge_file_YPr4l0
->>>>>>> .merge_file_bOBW4a

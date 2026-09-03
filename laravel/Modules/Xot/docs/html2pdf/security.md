@@ -38,7 +38,7 @@ class LaraxotSecurityService implements SecurityInterface
         // Definisci qui gli host considerati sicuri per il progetto
         $this->allowedHosts = [
             'cdn.laraxot.com',
-            'images.ptvx.local',
+            'images.laraxot.local',
             'fonts.googleapis.com',
         ];
     }
@@ -161,5 +161,3 @@ public function isUriValid(string $uri): bool
 }
 ```
 See canonical documentation: ../../../../Themes/docs/shared-components/security-Modules.md
->>>>>>> .merge_file_oPonDt
->>>>>>> .merge_file_druJrM

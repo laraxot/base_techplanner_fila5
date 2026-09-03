@@ -169,5 +169,3 @@ Il macro `generateSlug` è stato disabilitato temporaneamente. Per riabilitarlo:
 
 *Ultimo aggiornamento: giugno 2025*
 See canonical documentation: ../../../Themes/docs/shared-components/filament-resource-creation-fix.md
->>>>>>> .merge_file_RJ1Ndv
->>>>>>> .merge_file_sxZkwc

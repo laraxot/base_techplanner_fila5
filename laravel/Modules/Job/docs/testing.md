@@ -413,27 +413,3 @@ Remember: Good tests are the foundation of reliable software development.
 ---
 
 *
-## Story 5.26 — progress verso 100% (2026-08-20)
-
-Gate: `XDEBUG_MODE=coverage ./vendor/bin/pest -c Modules/Job/phpunit.xml --coverage --min=100`.
-
-| Voce | Valore |
-|------|--------|
-| Baseline clover batch mattina | vedi tabella sotto |
-| Skip offline | pattern Activity: Feature/`job-db` skip se schema assente; Unit eseguiti |
-| Nuovi test | `*MassExecuteCoverageTest`, `*GapCloserCoverageTest` |
-| Esclusioni `<source>` | nessuna (AC-3: perimetro = tutto `app/`) |
-
-### Misura intermedia (pre–gap closer massivo)
-
-| Coverage | Suite | Gate `--min=100` |
-|---:|---|---|
-| 69.7% | 254 pass / 83 skip / 0 fail | FAIL gate --min=100 (suite verde) |
-
-Interventi 2026-08-20:
-- `tests/TestCase.php`: skip offline allineato ad Activity (`$__filename` Pest).
-- Unit puri / gap closer su file a 0% (Support, Rules, Columns, Widgets instantiate).
-- Vietato `RefreshDatabase`; helper statici su `TestCase` (no funzioni in `tests/Support`).
-
-Prossimo step: coprire Filament Pages/Widgets/Livewire e Actions S3/Video rimanenti con mock; rieseguire gate in **sequenza** (sqlite condiviso si locka in parallelo).
-

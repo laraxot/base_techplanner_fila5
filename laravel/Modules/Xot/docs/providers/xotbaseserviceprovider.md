@@ -187,6 +187,3 @@ globs:
 alwaysApply: false
 ---
 
-=======
->>>>>>> .merge_file_vmYbce
->>>>>>> .merge_file_kSRJBO

@@ -181,5 +181,3 @@ public function canDetachBulk(Model|\stdClass|null $record): bool
 
 Il file passa PHPStan livello max senza errori, mantenendo backward compatibility e funzionalità esistente.
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fix-xotbaserelationmanager-finale.md
->>>>>>> .merge_file_Qrwxc9
->>>>>>> .merge_file_tcRcjr

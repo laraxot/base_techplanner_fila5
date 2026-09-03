@@ -67,9 +67,6 @@ Questo documento descrive le regole e le best practices per i prompt di document
 
 ### Formato Non Corretto
 
-=======
->>>>>>> .merge_file_9oI5I2
->>>>>>> .merge_file_7ZkVtF
 ```markdown
 
 # Collegamenti Non Corretti

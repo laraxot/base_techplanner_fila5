@@ -83,5 +83,3 @@ Ultimo aggiornamento: [DATE]
 
 ---
 See canonical documentation: ../../../Themes/docs/shared-components/migration-base-rules.md
->>>>>>> .merge_file_bkWtF3
->>>>>>> .merge_file_HYcL3k

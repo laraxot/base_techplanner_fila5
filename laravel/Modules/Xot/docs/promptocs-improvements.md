@@ -74,5 +74,3 @@ Il prompt rimane conforme alla [Regola Universale](./prompt_rules.md) per i prom
 
 Il prompt aggiornato può essere utilizzato in qualsiasi progetto modulare Laravel senza modifiche, rendendo il modulo `bashscripts` completamente riutilizzabile.
 See canonical documentation: ../../../Themes/docs/shared-components/prompt-docs-improvements.md
->>>>>>> .merge_file_NZ5gNn
->>>>>>> .merge_file_6qeX0G

@@ -141,7 +141,6 @@ php artisan config:cache
 
 *Ultimo aggiornamento: 2025-01-06*
 *Ultimo aggiornamento: [DATE]*
->>>>>>> .merge_file_fqvxWj
 # Problemi di Configurazione Variabili d'Ambiente - Modulo Xot
 
 ## Problema: env() non funziona durante il bootstrap
@@ -285,4 +284,3 @@ php artisan config:cache
 
 *Ultimo aggiornamento: 2025-01-06*
 *Ultimo aggiornamento: [DATE]*
->>>>>>> .merge_file_fqvxWj

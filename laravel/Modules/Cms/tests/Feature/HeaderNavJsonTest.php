@@ -5,9 +5,12 @@ declare(strict_types=1);
 namespace Modules\Cms\Tests\Feature;
 
 use Illuminate\Support\Facades\File;
+use Modules\Cms\Tests\TestCase;
 use Modules\Tenant\Actions\Config\GetTenantFilePathAction;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use PHPUnit\Framework\Assert;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
+
+uses(TestCase::class);
 
 /**
  * @return array<string, mixed>
@@ -52,7 +55,7 @@ function primaryNavItems(array $config): array
     }
 
     /** @var list<array<string, mixed>> $normalized */
-    $normalized = array_values(array_filter($items, static fn (mixed $item): bool => is_array($item)));
+    $normalized = array_values(array_filter($items, static fn ($item): bool => is_array($item)));
 
     return $normalized;
 }

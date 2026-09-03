@@ -359,4 +359,3 @@ This document outlines the best practices for maintaining high code quality with
 - [Service Provider Best Practices](./service-provider-best-practices.md)
 - [Filament Best Practices](./filament-best-practices.md)
 
->>>>>>> .merge_file_vdDxB9

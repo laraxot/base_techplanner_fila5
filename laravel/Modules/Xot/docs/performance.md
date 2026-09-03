@@ -43,5 +43,3 @@ Il modulo implementa diverse risorse Filament per la gestione delle performance:
 - [Guide PHPStan Livello 9](laravel/modules/xot/project_docs/phpstan-level9-guide.md)
 - [QueueableActions](laravel/modules/xot/project_docs/queueable-actions.md)
 //-------------------------------------------------------------
->>>>>>> .merge_file_wPmXuX
->>>>>>> .merge_file_uQvYje

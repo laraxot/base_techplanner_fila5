@@ -339,7 +339,6 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 - [User Module Traits](../../User/docs/traits_complete_guide.md)
 - [Cms Architecture](../../cms/docs/architecture-xotdata-pattern.md)
 - [User Module Traits](../../user/docs/traits_complete_guide.md)
->>>>>>> .merge_file_zzu6N9
 - [Testing Strategy](../../<nome progetto>/docs/testing/real-data-testing-strategy.md)
 
 ---

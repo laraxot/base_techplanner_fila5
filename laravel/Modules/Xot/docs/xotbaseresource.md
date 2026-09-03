@@ -24,8 +24,6 @@ SSoT verificata sul PHP: [filament/xotbaseresource.md](./filament/xotbaseresourc
 
 SSoT verificata sul PHP: [filament/xotbaseresource.md](./filament/xotbaseresource.md).
 
->>>>>>> .merge_file_zZrRAO
->>>>>>> .merge_file_to5yZZ
 ```php
 final public static function form(Form $form): Form
 {
@@ -46,22 +44,17 @@ abstract public static function getFormSchema(): array;
 
 Questo metodo DEVE essere implementato nelle classi figlie e deve restituire un array di componenti del form.
 
-=======
 - `form()` è `final` e carica `{Resource}\Schemas\{Model}Form` (non `getFormSchema()` inline).
 - `getFormSchema()` **non** è abstract né final: delega a `getFormSchemaOld()` (default `[]`).
 - Se manca `{Model}Form` → `LogicException`. Nessun fallback Action cablato.
->>>>>>> .merge_file_lvcCEQ
->>>>>>> .merge_file_zZrRAO
 
 ## Best Practices
 
 1. **Non Sovrascrivere Metodi Final**
    - Non tentare di sovrascrivere `form()`
    - Schema in `{Model}Form` (ponte: `getFormSchemaOld()`). Widget: `getFormSchema()`
-=======
-   - Schema in `{Model}Form` (ponte: `getFormSchemaOld()`). Widget: `getFormSchema()`
    - Implementare invece `getFormSchema()`
->>>>>>> .merge_file_zZrRAO
+   - Implementare invece `getFormSchema()`
    - Rispettare la struttura definita nella classe base
 
 2. **Gestione delle Table Actions**
@@ -88,11 +81,8 @@ class NotificationResource extends XotBaseResource
 
     // Preferire Schemas\{Model}Form; getFormSchema() qui è solo ponte verso Old
     public static function getFormSchemaOld(): array
-=======
-    // Preferire Schemas\{Model}Form; getFormSchema() qui è solo ponte verso Old
-    public static function getFormSchemaOld(): array
     public static function getFormSchema(): array
->>>>>>> .merge_file_zZrRAO
+    public static function getFormSchema(): array
     {
         return [
             Forms\Components\TextInput::make('title')
@@ -118,7 +108,6 @@ class NotificationResource extends XotBaseResource
 - [User Resource](../../User/docs/filament-resources.md)
 - [Notify Resource](../../notify/docs/filament-resources.md)
 - [User Resource](../../user/docs/filament-resources.md)
->>>>>>> .merge_file_zZrRAO
 
 ## Note Importanti
 
@@ -137,5 +126,3 @@ class NotificationResource extends XotBaseResource
 
 `getFormSchemaOld()` resta solo come ponte di migrazione sulle Resource, **non** sui Widget (`XotBaseWidget::getFormSchema()`).
 
-=======
->>>>>>> .merge_file_lvcCEQ

@@ -82,7 +82,6 @@ describe('Mail Template Log PartOne', function (): void {
 
     test('_has_correct_casts', function (): void {
         $log = new MailTemplateLog();
-
         $expectedCasts = [
             'id' => 'string',
             'uuid' => 'string',

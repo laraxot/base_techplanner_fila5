@@ -167,7 +167,6 @@ Il file attuale contiene principalmente etichette generali per l'interfaccia amm
 - [User Module Translations](/Modules/User/docs/translation-guidelines.md)
 - [Geo Module Translations](/modules/geo/docs/translation-structure-expanded.md)
 - [User Module Translations](/modules/user/docs/translation-guidelines.md)
->>>>>>> .merge_file_U0z4Qn
 - [Struttura Traduzioni Espansa](/project_docs/translation-structure-expanded.md)
 - [Principi DRY/KISS](/project_docs/dry-kiss-principles.md)
 
@@ -176,7 +175,6 @@ Il file attuale contiene principalmente etichette generali per l'interfaccia amm
 - [User Module Translations](/Modules/User/project_docs/translation-guidelines.md)
 - [Geo Module Translations](/modules/geo/project_docs/translation-structure-expanded.md)
 - [User Module Translations](/modules/user/project_docs/translation-guidelines.md)
->>>>>>> .merge_file_U0z4Qn
 
 ### File di Implementazione
 - `lang/es/labels.php` - Etichette generali spagnole

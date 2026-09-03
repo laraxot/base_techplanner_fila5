@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Carbon;
-use Modules\TechPlanner\Models\Profile;
+use Modules\Employee\Database\Factories\AbsenceRequestFactory;
 
 /**
  * Class AbsenceRequest.
@@ -19,28 +19,22 @@ use Modules\TechPlanner\Models\Profile;
  * @property int $id
  * @property int $user_id
  * @property string $type
- * @property Carbon|null $starts_at
- * @property Carbon|null $ends_at
+ * @property Carbon $starts_at
+ * @property Carbon $ends_at
  * @property string|null $notes
  * @property string $status
- * @property int|null $decided_by_user_id
+ * @property string|null $decided_by_user_id
  * @property Carbon|null $decided_at
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property Carbon|null $deleted_at
- * @property-read Profile|null $creator
- * @property-read Employee|null $decidedBy
- * @property-read Profile|null $updater
  * @property-read Employee|null $user
+ * @property-read Employee|null $decidedBy
  *
- * @method static Builder<static>|AbsenceRequest forUser(int $userId)
+ * @method static AbsenceRequestFactory factory($count = null, $state = [])
  * @method static Builder<static>|AbsenceRequest newModelQuery()
  * @method static Builder<static>|AbsenceRequest newQuery()
- * @method static Builder<static>|AbsenceRequest onlyTrashed()
- * @method static Builder<static>|AbsenceRequest pending()
  * @method static Builder<static>|AbsenceRequest query()
- * @method static Builder<static>|AbsenceRequest withTrashed(bool $withTrashed = true)
- * @method static Builder<static>|AbsenceRequest withoutTrashed()
  *
  * @mixin \Eloquent
  */
@@ -132,7 +126,7 @@ class AbsenceRequest extends BaseModel
      * @param  Builder<AbsenceRequest>  $query
      * @return Builder<AbsenceRequest>
      */
-    public function scopeForUser(Builder $query, int $userId): Builder
+    public function scopeForUser(Builder $query, int|string $userId): Builder
     {
         return $query->where('user_id', $userId);
     }

@@ -2,7 +2,6 @@
 
 ## Date: 2026-01-09
 ## Date: [DATE]
->>>>>>> .merge_file_etsYYA
 
 ## Overview
 
@@ -62,7 +61,6 @@ Remove all forbidden attributes from XotBaseResource classes and ensure proper t
 
 **Last Verification**: 2026-01-09  
 **Last Verification**: [DATE]  
->>>>>>> .merge_file_etsYYA
 **Status**: ✅ **ALL RESOURCES COMPLIANT - PROPERTIES REMOVED**
 
 All Resources extending `XotBaseResource` have been verified and cleaned. All forbidden properties (including commented ones) have been removed from:
@@ -73,7 +71,6 @@ All Resources extending `XotBaseResource` have been verified and cleaned. All fo
 **Removal Report**: See `forbidden-properties-removal-complete-2026-01-09.md`
 **Verification Report**: See `forbidden-resource-attributes-verification-[DATE].md`  
 **Removal Report**: See `forbidden-properties-removal-complete-[DATE].md`
->>>>>>> .merge_file_etsYYA
 
 ### Key Findings
 

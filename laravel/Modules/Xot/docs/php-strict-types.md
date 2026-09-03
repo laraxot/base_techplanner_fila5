@@ -9,8 +9,6 @@ updated: 2026-08-24
 ---
 
 
-=======
->>>>>>> .merge_file_cl5X07
 # PHP Strict Types in Laravel Modules
 
 ## Overview
@@ -72,4 +70,3 @@ This document provides guidelines for using strict typing in PHP within a Larave
 - [Service Provider Best Practices](./service-provider-best-practices.md)
 - [Filament Best Practices](./filament-best-practices.md)
 
->>>>>>> .merge_file_icUHSw

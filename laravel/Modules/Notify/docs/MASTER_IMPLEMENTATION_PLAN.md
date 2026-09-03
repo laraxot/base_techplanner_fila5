@@ -26,4 +26,5 @@ Modules:
 PHPStan Level 9: 0 errori ✅
 Test Coverage: 27 tests esistenti
 Code Quality: ✅ Eccellente
+
 ```

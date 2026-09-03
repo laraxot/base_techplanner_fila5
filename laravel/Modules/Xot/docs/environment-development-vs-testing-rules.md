@@ -128,7 +128,6 @@ Questa differenziazione rispetta i principi fondamentali:
 - **DRY**: Configurazioni separate per scopi diversi
 - **KISS**: Semplicità per sviluppo, completezza per test
 - **Robustezza**: Isolamento adeguato nei test
->>>>>>> .merge_file_FGzJ3h
 - **Multi-tenancy**: Supporto completo per architettura multi-database
 
 ## REGOLA CRITICA: TestCase setUp()

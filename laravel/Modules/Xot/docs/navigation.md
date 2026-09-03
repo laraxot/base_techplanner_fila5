@@ -49,7 +49,6 @@ $page->navigation
 * [navigation.md](../../../cms/docs/navigation.md)
 * [navigation.md](../../../cms/docs/components/navigation.md)
 
->>>>>>> .merge_file_2YcIJs
 
 ### Versione Incoming
 

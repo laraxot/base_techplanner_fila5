@@ -134,7 +134,6 @@ Questa funzionalità è compatibile con:
 
 ## Collegamenti Bidirezionali
 
->>>>>>> .merge_file_bcC5mV
 - [README.md](../../README.md) - Indice principale della documentazione
 - [xot-base-widget.md](./xot-base-widget.md) - Documentazione su XotBaseWidget
 - [FOLIO_VOLT_FILAMENT_INTEGRATION.md](../../folio_volt_filament_integration.md) - Integrazione Folio, Volt e Filament

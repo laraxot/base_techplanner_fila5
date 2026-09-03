@@ -92,7 +92,6 @@ test('telegram notifications channel throws when notification has no toTelegram 
     $channel = new TelegramChannel();
 
     XotBasePest::assertThrows(
-        fn () => $channel->send(makeTelegramNotifiableDummy(), new class() extends Notification {}),
-        \Exception::class,
+        fn () => $channel->send(makeTelegramNotifiableDummy(), new class() extends Notification {}), \Exception::class,
     );
 });

@@ -281,5 +281,3 @@ La rimozione di `property_exists()` dal modulo Xot rappresenta un importante pas
 
 *Report generato automaticamente - Cascade AI - [DATE]*
 See canonical documentation: ../../../Themes/docs/shared-components/property-exists-removal-report.md
->>>>>>> .merge_file_bVJMIA
->>>>>>> .merge_file_b3VlVN

@@ -7,7 +7,7 @@ use Modules\Job\Models\BaseModel;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('no-job-db');
+uses(TestCase::class);
 
 test('base model extends eloquent model', function () {
     $baseModel = new class() extends BaseModel

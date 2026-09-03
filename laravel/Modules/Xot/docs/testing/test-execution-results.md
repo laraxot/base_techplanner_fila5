@@ -22,7 +22,6 @@ Many tests are failing due to missing database tables:
 - `Table '<nome progetto>_user_test.permissions' doesn't exist`
 - `Table 'laravelpizza_user_test.roles' doesn't exist`
 - `Table 'laravelpizza_user_test.permissions' doesn't exist`
->>>>>>> .merge_file_GBJDol
 - Tests expect tables to exist but migrations haven't been run
 
 **Root Cause**: Tests are trying to use the database without running migrations first.

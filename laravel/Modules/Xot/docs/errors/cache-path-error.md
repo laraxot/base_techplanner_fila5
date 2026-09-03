@@ -48,4 +48,3 @@ Per prevenire questo errore in futuro:
 - [Documentazione Xot Component System](../structure.md)
 - [Documentazione Laravel Cache](https://laravel.com/docs/cache)
 - [Documentazione Xot Component System](../structure.md) 
->>>>>>> .merge_file_N68M0B

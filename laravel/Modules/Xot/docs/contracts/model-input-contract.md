@@ -58,4 +58,3 @@ interface ModelInputContract extends ModelContract
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 - [Contracts Overview](./readme.md)
 
->>>>>>> .merge_file_5y3us6

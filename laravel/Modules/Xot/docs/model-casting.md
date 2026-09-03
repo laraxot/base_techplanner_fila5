@@ -252,5 +252,3 @@ class User extends BaseModel
 
 agosto 2025
 See canonical documentation: ../../../Themes/docs/shared-components/model-casting-rules.md
->>>>>>> .merge_file_k3tP1L
->>>>>>> .merge_file_vltY6S

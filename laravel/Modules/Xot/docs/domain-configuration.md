@@ -78,7 +78,6 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 ## Collegamenti
 - [Configurazione Generale](configuration.md)
 - [Configurazione Generale](CONFIGURATION.md)
->>>>>>> .merge_file_08CPF8
 - [Risoluzione dei Loghi](LOGO_RESOLUTION.md) - **IMPORTANTE**: Processo dettagliato di risoluzione dei loghi
 - [Gestione Asset](assets.md)
 - [Struttura Temi](themes.md)
@@ -97,7 +96,6 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 - [Gestione Risorse](ASSETS.md)
 - [Linee Guida Sviluppo](DEVELOPMENT_GUIDELINES.md)
 - [Troubleshooting](TROUBLESHOOTING.md)
->>>>>>> .merge_file_08CPF8
 
 ## Vedi Anche
 - [Documentazione UI](../../UI/docs/configuration.md)
@@ -181,4 +179,3 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 - [Configurazione Generale](CONFIGURATION.md)
 - [Gestione Asset](assets.md)
 - [Struttura Temi](themes.md) 
->>>>>>> .merge_file_08CPF8

@@ -118,5 +118,3 @@ composer dump-autoload
 
 **Remember**: In Laraxot, consistency enables maintainability. Follow these patterns for reliable, scalable applications.
 See canonical documentation: ../../../Themes/docs/shared-components/laraxot-philosophy-quick-reference.md
->>>>>>> .merge_file_R3pJ0d
->>>>>>> .merge_file_zUlYAp

@@ -4,7 +4,6 @@ topic: access-level-parameter
 canonical: ../../../Themes/docs/shared-components/access-level-parameter-fix.md
 ---
 # Fixing Access Level and Parameter Initialization Issues
->>>>>>> .merge_file_z9HPM7
 
 ## Issue 1: Access Level Mismatch in getTableHeaderActions()
 

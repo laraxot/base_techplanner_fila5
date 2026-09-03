@@ -43,5 +43,3 @@ Correggiamo solo variabili che:
 - **Warning da ignorare**: (da categorizzare)
 - **PHPStan**: 0 errori (mantenuto)
 See canonical documentation: ../../../Themes/docs/shared-components/phpmd-critical-fixes.md
->>>>>>> .merge_file_q8tduM
->>>>>>> .merge_file_3dboPq

@@ -86,5 +86,3 @@ See canonical documentation: ../../../Themes/docs/shared-components/quality-anal
 - **PHPInsights**: Score eccellenti, issue minori accettabili
 - **Qualità**: Codicebase in ottimo stato, qualità eccellente
 See canonical documentation: ../../../Themes/docs/shared-components/quality-analysis-sumy.md
->>>>>>> .merge_file_2qKqYe
->>>>>>> .merge_file_bsAm9S

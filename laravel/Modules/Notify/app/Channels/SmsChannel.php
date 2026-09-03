@@ -20,9 +20,7 @@ class SmsChannel
     /**
      * Crea una nuova istanza del canale.
      */
-    public function __construct(private readonly SendSmsFactorSMSAction $action)
-    {
-    }
+    public function __construct(private readonly SendSmsFactorSMSAction $action) {}
 
     /**
      * Invia la notifica attraverso il canale SMS.
@@ -32,7 +30,7 @@ class SmsChannel
      *
      * @throws Exception Se la notifica non ha il metodo toSms o il driver non è supportato
      */
-    public function send(mixed $notifiable, Notification $notification): ?array
+    public function send(object $notifiable, Notification $notification): ?array
     {
         if (! method_exists($notification, 'toSms')) {
             throw new Exception('Notification does not have toSms method');

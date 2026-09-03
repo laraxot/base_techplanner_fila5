@@ -183,10 +183,6 @@ Best practice generiche per l'utilizzo di Filament in moduli Laravel riutilizzab
 ## Esempi
 ```
 
-=======
-```
-
->>>>>>> .merge_file_AM7qPR
 ```php
 // ❌ Anti-pattern
 class MyResource extends \Filament\Resources\Resource {}
@@ -947,7 +943,6 @@ Consulta l'esempio completo all'inizio di questo documento per una implementazio
 - [Best Practices Laraxot](base_orisbroker_fila3/laravel/Modules/Xot/docs/best-practices.md)
 - [Documentazione XotBaseResource](base_orisbroker_fila3/laravel/modules/xot/project_docs/resource.md)
 - [Best Practices Laraxot](base_orisbroker_fila3/laravel/modules/xot/project_docs/best-practices.md)
->>>>>>> .merge_file_fY0SM0
 
 ## Regole per Widget Filament: Path View e Localizzazione
 

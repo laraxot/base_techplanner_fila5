@@ -11,11 +11,12 @@ class BuildNestedRouteNameAction
 {
     use QueueableAction;
 
-    public function execute(RouteParamsData $params): string
+    /** @param array<string, mixed> $params */
+    public function execute(array $params): string
     {
-        $depth = $params->n ?? 0;
-        $action = $params->act ?? 'show';
-        $parts = inAdmin(['in_admin' => $params->in_admin]) ? ['admin'] : [];
+        $depth = is_numeric($params['n'] ?? null) ? (int) $params['n'] : 0;
+        $action = is_string($params['act'] ?? null) ? $params['act'] : 'show';
+        $parts = inAdmin($params) ? ['admin'] : [];
 
         for ($i = 0; $i <= $depth; $i++) {
             $parts[] = 'container'.$i;

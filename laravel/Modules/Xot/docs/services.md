@@ -238,7 +238,6 @@ return [
 * [services.md](../../../Tenant/docs/it/config/services.md)
 * [services.md](../../../xot/docs/services.md)
 * [services.md](../../../tenant/docs/it/config/services.md)
->>>>>>> .merge_file_cy52Ah
 
 ### Versione Incoming
 

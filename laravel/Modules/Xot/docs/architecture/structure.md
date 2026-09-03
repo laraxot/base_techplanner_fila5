@@ -1062,7 +1062,6 @@ tests_old
 * [structure.md](../../../cms/project_docs/themes/structure.md)
 * [structure.md](../../../cms/project_docs/components/structure.md)
 
->>>>>>> .merge_file_m8OvDC
 
 ---
 

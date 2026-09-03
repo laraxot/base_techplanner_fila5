@@ -83,11 +83,9 @@ define ROOT "C:/var/www/nome_giunzione/public_html"
 * [url-not-found.md](../../../Xot/docs/base/url-not-found.md)
 * [url-not-found.md](../../../Xot/docs/errors/url-not-found.md)
 
->>>>>>> .merge_file_YnDeh1
 
 ### Versione Incoming
 
 **NB**: dopo aver fatto questa modifica, riavviare laragon
 
 ---
-

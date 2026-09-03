@@ -165,4 +165,3 @@ Tutti i moduli sono ora conformi a PHPStan Level 10.
 
 **Ultimo aggiornamento**: 2026-01-09 - Completamento totale ✅
 **Ultimo aggiornamento**: [DATE] - Completamento totale ✅
->>>>>>> .merge_file_sudaoo

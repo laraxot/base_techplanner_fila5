@@ -18,7 +18,7 @@ use Modules\Xot\Traits\Updater;
  */
 abstract class BaseModel extends Model
 {
-    /** @use HasFactory<Factory<static>> */
+    /** @use HasFactory<Factory> */
     use HasFactory;
 
     // use Searchable;

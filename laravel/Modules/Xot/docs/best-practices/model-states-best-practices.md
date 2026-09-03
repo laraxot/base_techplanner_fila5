@@ -14,5 +14,3 @@
   - [README.md centrale](../../../../docs/readme.md) 
   - [README.md centrale](../../../docs/readme.md) 
   - [README.md centrale](../../../../docs/readme.md) 
->>>>>>> .merge_file_ru2hu1
->>>>>>> .merge_file_5BrGkj

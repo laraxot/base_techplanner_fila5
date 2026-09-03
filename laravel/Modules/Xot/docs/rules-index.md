@@ -9,8 +9,6 @@ updated: 2026-08-24
 ---
 
 
-=======
->>>>>>> .merge_file_u2NiKA
 # Xot Module Rules Index
 
 ## Overview
@@ -79,4 +77,3 @@ See: [Action Execution and DI Rules](./actions/action-execution-and-di-rules.md)
 - [README](./readme.md)
 - [phpstan](./phpstan.md)
 
->>>>>>> .merge_file_ls8GQx

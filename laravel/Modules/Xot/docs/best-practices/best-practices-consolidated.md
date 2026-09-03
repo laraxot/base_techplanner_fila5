@@ -911,5 +911,3 @@ php artisan view:clear
 *Modulo: Xot*
 *Categoria: Best Practices*
 See canonical documentation: ../../../../Themes/docs/shared-components/best-practices-consolidated.md
->>>>>>> .merge_file_OvLVS5
->>>>>>> .merge_file_AaoRDD

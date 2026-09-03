@@ -73,7 +73,6 @@ Each module has its own BaseModel that extends XotBaseModel:
 // Example from healthcare_app module
 // Example from ExternalProject module
 // Example from Quaeris module
->>>>>>> .merge_file_7suAq0
 abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
 {
     use Cachable;
@@ -82,7 +81,6 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
 
     protected $connection = 'healthcare_app'; // Module-specific connection
     protected $connection = 'quaeris'; // Module-specific connection
->>>>>>> .merge_file_7suAq0
 
     protected $with = [
         'extra', // Always load extra fields
@@ -113,7 +111,6 @@ class SurveyPdf extends XotBaseModel // Never do this!
 // In healthcare_app module
 // In ExternalProject module
 // In Quaeris module
->>>>>>> .merge_file_7suAq0
 class SurveyPdf extends BaseModel // Extends module's BaseModel
 ```
 
@@ -203,7 +200,6 @@ class SurveyPdf extends BaseModel
 - Clear inheritance chain
 - <nome progetto>able patterns
 - Predictable patterns
->>>>>>> .merge_file_7suAq0
 - Minimal configuration needed
 
 ## Type Safety and Contracts

@@ -1,51 +1,89 @@
-# Documentation
-
-This directory contains documentation for the module.
-
-## Structure
-
-- **architecture.md** - Module architecture and design patterns
-- **README.md** - This file
-
-## Guidelines
-
-Documentation should be:
-- Clear and concise
-- Example-driven
-- Updated with code changes
-- Use Markdown format (.md)
-
+---
+title: "Xot Module - Updated Documentation (Clean)"
+type: documentation
+tags: [module, documentation, framework, template]
+created: 2026-07-14
+updated: 2026-07-27
 ---
 
-<!-- Merged from readme.md, which collided with this file on case-insensitive filesystems. -->
-
-# 🏗️ **Xot Module** - Il Cuore del Framework Laraxot
+# 🏗️ Xot Module - Il Cuore del Framework Laraxot
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
-[![Filament 4.x](https://img.shields.io/badge/Filament-4.x-blue.svg)](https://filamentphp.com/)
-[![PHP 8.3](https://img.shields.io/badge/PHP-8.3-blueviolet.svg)](https://www.php.net/)
+[![Filament 5.x](https://img.shields.io/badge/Filament-5.x-blue.svg)](https://filamentphp.com/)
+[![PHP 8.4](https://img.shields.io/badge/PHP-8.4-blueviolet.svg)](https://www.php.net/)
 [![PHPStan Level 10](https://img.shields.io/badge/PHPStan-Level%2010-brightgreen.svg)](https://phpstan.org/)
 [![Modular Architecture](https://img.shields.io/badge/Architecture-Modular%20Monolith-yellow.svg)](https://martinfowler.com/articles/modular-monolith.html)
 
-> **🚀 Modulo Xot**: Framework base e cuore architetturale di Laraxot - fornisce classi base, traits, convenzioni e infrastruttura core per tutti i moduli dell'ecosistema.
+> **🚀 Xot Module**: Framework base e cuore architetturale di Laraxot.
 
-## 📋 **Panoramica**
+**Wiki operativo (2026-07-27):** [wiki/index.md](./wiki/index.md) — trinità panel (`config.php` + `AdminPanelProvider` + `Dashboard.php`), tenant `modules_statuses`.
 
-Il modulo **Xot** è il **framework base** di Laraxot PTVX, un ecosistema modulare basato su **Laravel 12** e **Filament 4**, progettato per applicazioni enterprise. Fornisce gli strumenti fondamentali e i pattern architetturali per garantire coerenza, estensibilità e manutenibilità in tutto il progetto.
+## 📋 Overview
+
+Il modulo **Xot** è il **framework base** di Laraxot, un ecosistema modulare basato su **Laravel 12** e **Filament 5**, progettato per applicazioni enterprise. Fornisce gli strumenti fondamentali e i pattern architetturali per garantire coerenza, estensibilità e manutenibilità in tutto il progetto.
 
 ### Principi Fondamentali
-- **Modularità**: Ogni funzionalità è organizzata in moduli indipendenti e autoconsistenti.
-- **Coerenza**: Adozione di una struttura uniforme, convenzioni di naming e best practice standardizzate.
-- **Estensibilità**: Progettato per facilitare l'aggiunta di nuovi moduli e l'espansione delle funzionalità esistenti.
-- **Manutenibilità**: Codice pulito, ben documentato e supportato da strumenti di analisi statica.
 
-## ⚡ **Architettura Core**
+- **Modularità**: Ogni funzionalità è organizzata in moduli indipendenti e autoconsistenti
+- **Coerenza**: Adozione di una struttura uniforme, convenzioni di naming e best practice standardizzate
+- **Estensibilità**: Progettato per facilitare l'aggiunta di nuovi moduli e l'espansione delle funzionalità esistenti
+- **Manutenibilità**: Codice pulito, ben documentato e supportato da strumenti di analisi statica
 
-### 🏗️ **Base Classes Pattern**
+## 🏗️ Module Directory Structure Standard
+
+To ensure consistent autoloading and architectural integrity, all modules must follow this structure:
+
+```
+Modules/ModuleName/
+├── app/                              # All PHP code (PSR-4 mapped)
+│   ├── Actions/                      # Reusable action classes
+│   ├── Models/                       # Eloquent models
+│   ├── Services/                     # Business logic services
+│   ├── Filament/
+│   │   ├── Resources/
+│   │   ├── Pages/
+│   │   └── Widgets/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   └── Requests/
+│   ├── Traits/                       # Reusable traits
+│   ├── Enums/
+│   └── Events/
+├── database/                         # Lowercase only (CRITICAL)
+│   ├── migrations/
+│   ├── factories/
+│   └── seeders/
+├── resources/
+│   ├── views/
+│   └── lang/
+├── tests/
+│   ├── Unit/
+│   └── Feature/
+├── docs/                             # Documentation
+│   └── README.md
+├── module.json                       # Module metadata
+└── composer.json                     # Module dependencies
+```
+
+**FORBIDDEN**: Capitalized directories at root (e.g., `Actions/`, `Database/`). All code must be in `app/`.
+
+## ⚡ Core Architecture
+
+### Base Classes Pattern
+
 Tutti i componenti principali dei moduli devono estendere le classi base fornite da Xot per ereditare funzionalità comuni e garantire coerenza.
 
 ```php
-// Esempio di una Resource Filament
+// Xot Base Classes (sempre usare)
+use Modules\Xot\Models\XotBaseModel;
+use Modules\Xot\Filament\Resources\XotBaseResource;
+use Modules\Xot\Services\XotBaseService;
+use Modules\Xot\Actions\XotBaseAction;
+use Modules\Xot\Providers\XotBaseServiceProvider;
+```
+
+**Example**: Resource Filament
+```php
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class UserResource extends XotBaseResource

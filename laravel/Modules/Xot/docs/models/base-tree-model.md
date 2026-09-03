@@ -62,7 +62,6 @@ BaseModel
 - Uses `TypedHasRecursiveRelationships` trait
 - Wraps vendor package with type safety
 - Provides method aliasing for consistency
->>>>>>> .merge_file_aLlEBB
 
 ### 3. BaseModel Inheritance
 - Inherits all base model functionality
@@ -218,7 +217,6 @@ In pratica:
 - **BaseTreeModel (adjacency list tipizzata)**: usa `parent_id`/`depth`/`path` con trait
   vendor `HasRecursiveRelationships`, privilegiando:
   `TypedHasRecursiveRelationships`, privilegiando:
->>>>>>> .merge_file_aLlEBB
   - type safety (PHPStan livello 10),
   - semplicità nelle migrazioni (nessun `_lft`/`_rgt` da mantenere a mano),
   - integrazione diretta con il pacchetto `staudenmeir/laravel-adjacency-list`.
@@ -409,5 +407,4 @@ $model->children;  // Should return collection
 - [HasRecursiveRelationshipsContract](contracts/has-recursive-relationships-contract.md)
 - [Recursive relationships vendor direct](../recursive-relationships-vendor-direct.md)
 - [TypedHasRecursiveRelationships Trait](traits/typed-has-recursive-relationships.md)
->>>>>>> .merge_file_aLlEBB
 - [Laravel Adjacency List Package](https://github.com/staudenmeir/laravel-adjacency-list)

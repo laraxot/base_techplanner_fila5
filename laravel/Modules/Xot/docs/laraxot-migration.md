@@ -140,5 +140,3 @@ In Laraxot, migrations are the definitive history of your database schema. Keep 
 
 **Remember**: In Laraxot philosophy, simplicity and clarity trump flexibility. One table, one migration, no exceptions.
 See canonical documentation: ../../../Themes/docs/shared-components/laraxot-migration-philosophy-sumy.md
->>>>>>> .merge_file_LWODpc
->>>>>>> .merge_file_SX1u3J

@@ -7,6 +7,8 @@ updated: 2026-07-14
 qmd: "theme zero wiki schema e convenzioni"
 related:
   - "./schema.md"
+
+  - "./SCHEMA.md"
   - "./bmad-method.md"
   - "./log.md"
 ---

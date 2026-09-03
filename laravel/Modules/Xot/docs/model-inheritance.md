@@ -202,5 +202,3 @@ Ogni nuovo modello deve essere documentato in:
 
 *Ultimo aggiornamento: giugno 2025*
 See canonical documentation: ../../../Themes/docs/shared-components/model-inheritance-rules.md
->>>>>>> .merge_file_Rb4amY
->>>>>>> .merge_file_M1UbfO

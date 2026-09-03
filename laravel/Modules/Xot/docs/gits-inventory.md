@@ -65,5 +65,3 @@ See canonical documentation: ../../../Themes/docs/shared-components/git-conflict
 - 📅 Data rilevamento: [DATE]
 - 🔄 Priorità: ALTA - File critici del core framework
 See canonical documentation: ../../../Themes/docs/shared-components/git-conflicts-inventory.md
->>>>>>> .merge_file_cVgsYi
->>>>>>> .merge_file_iXmOpL

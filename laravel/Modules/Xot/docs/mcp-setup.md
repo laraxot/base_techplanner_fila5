@@ -4,7 +4,6 @@ topic: mcp-setup
 canonical: ../../../Themes/docs/shared-components/mcp-setup-guide.md
 ---
 # Model Context Protocol (MCP) Setup Guide
->>>>>>> .merge_file_Uj2qYg
 
 ## Overview
 
@@ -24,10 +23,6 @@ The MCP system is configured in the `mcp.json` file located in the Laravel root 
         "@modelcontextprotocol/server-mysql",
 "marco:marco@localhost:3306/Quaeris_survey"
         "marco:marco@localhost:3306/quaeris_survey"
-=======
-"marco:marco@localhost:3306/Quaeris_survey"
->>>>>>> .merge_file_PTRxqc
->>>>>>> .merge_file_Uj2qYg
       ]
     },
     "fetch": {
@@ -50,10 +45,8 @@ The MCP system is configured in the `mcp.json` file located in the Laravel root 
         "-y",
         "@modelcontextprotocol/server-filesystem",
 "/var/www/_bases/base_Quaeris_fila5_mono/laravel"
-=======
 "/var/www/_bases/base_Quaeris_fila5_mono/laravel"
         "/var/www/_bases/base_quaeris_fila4_mono/laravel"
->>>>>>> .merge_file_Uj2qYg
       ]
     },
     "git": {
@@ -262,3 +255,5 @@ MCP configuration can be adjusted per environment:
 - [MCP Protocol Specification](https://github.com/modelcontextprotocol)
 - [Laraxot Development Guidelines](laravel-boost-guidelines.md)
 - [Module Development Best Practices](module-development-best-practices.md)
+
+See canonical documentation: ../../../Themes/docs/shared-components/mcp-setup-guide.md

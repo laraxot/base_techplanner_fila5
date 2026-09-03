@@ -247,5 +247,3 @@ Questo errore si verifica quando si accede a una proprietà che non è dichiarat
 
 Mantenere il codice conforme a PHPStan livello 7 garantisce una maggiore qualità e robustezza del software. Seguendo le best practices e risolvendo gli errori in modo sistematico, è possibile migliorare significativamente la manutenibilità e l'affidabilità del codice.
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-level7-guide.md
->>>>>>> .merge_file_ABeKQ5
->>>>>>> .merge_file_Gm4W26

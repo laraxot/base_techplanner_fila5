@@ -44,5 +44,3 @@ This confirms the documented pattern from `/Modules/Xot/docs/trait-conflict-reso
 - Keep trait method signatures compatible
 - Use trait precedence rules when necessary
 See canonical documentation: ../../../Themes/docs/shared-components/trait-collision-resolution-fix.md
->>>>>>> .merge_file_f2Yxst
->>>>>>> .merge_file_49jlA4

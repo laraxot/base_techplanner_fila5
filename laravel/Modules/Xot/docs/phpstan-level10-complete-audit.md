@@ -3,7 +3,6 @@
 ## Data Audit
 2025-01-27
 [DATE]
->>>>>>> .merge_file_TivsXa
 
 ## Risultati Generali
 
@@ -63,7 +62,6 @@
 - **Causa**: Classe `Modules\Geo\Models\Comune` non esiste
 - **Status**: Documentato in [phpstan-errors-locationselector.md](../UI/docs/phpstan-errors-locationselector.md)
 - **Status**: Documentato in [phpstan-errors-locationselector.md](../ui/docs/phpstan-errors-locationselector.md)
->>>>>>> .merge_file_TivsXa
 - **Soluzione Proposta**: Creare modulo Geo con modello Comune (refactoring architetturale)
 
 ## Correzioni Implementate Durante Audit
@@ -77,7 +75,6 @@
   - Aggiunta annotazione PHPDoc `@var array<string, int>`
 - **Documentazione**: [phpstan-errors-activitylogger.md](../Activity/docs/phpstan-errors-activitylogger.md)
 - **Documentazione**: [phpstan-errors-activitylogger.md](../activity/docs/phpstan-errors-activitylogger.md)
->>>>>>> .merge_file_TivsXa
 
 ### 2. Ptv Module
 - **File**: `ValutatoreField.php`
@@ -88,7 +85,6 @@
   - Rimosso codice debug e commentato
 - **Documentazione**: [phpstan-errors-valutatorefield.md](../Ptv/docs/phpstan-errors-valutatorefield.md)
 - **Documentazione**: [phpstan-errors-valutatorefield.md](../ptv/docs/phpstan-errors-valutatorefield.md)
->>>>>>> .merge_file_TivsXa
 
 ### 3. IndennitaResponsabilita Module
 - **File**: `CompilaIndennitaResponsabilita.php`
@@ -98,7 +94,6 @@
   - Aggiunta annotazione `@phpstan-ignore-next-line` per `withExtraAttributes()` (Spatie Schemaless)
 - **Documentazione**: [phpstan-errors-compilaindennita.md](../IndennitaResponsabilita/docs/phpstan-errors-compilaindennita.md)
 - **Documentazione**: [phpstan-errors-compilaindennita.md](../indennitaresponsabilita/docs/phpstan-errors-compilaindennita.md)
->>>>>>> .merge_file_TivsXa
 
 ### 4. Notify Module
 - **File**: `NotifyBasePolicy.php`
@@ -162,5 +157,4 @@
 
 *Ultimo aggiornamento: 2025-01-27*
 *Ultimo aggiornamento: [DATE]*
->>>>>>> .merge_file_TivsXa
 

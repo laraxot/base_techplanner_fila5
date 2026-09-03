@@ -183,4 +183,3 @@ updated: 2026-08-24
 * [ui.md](../../../xot/docs/roadmap/bottlenecks/ui.md)
 * [ui.md](../../../ui/docs/ui.md)
 
->>>>>>> .merge_file_gqa36C

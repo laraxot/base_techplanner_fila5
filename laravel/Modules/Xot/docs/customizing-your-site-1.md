@@ -88,7 +88,6 @@ class Foo extends bar
 * [customizing-your-site.md](../../../tenant/docs/it/customizing-your-site.md)
 * [customizing-your-site.md](../../../cms/docs/customizing-your-site.md)
 
->>>>>>> .merge_file_ATuhW2
 
 ### Versione Incoming
 

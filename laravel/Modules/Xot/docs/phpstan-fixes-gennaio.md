@@ -188,7 +188,6 @@ public function getModels(): array
 ### **Documentazione Correlata**
 - [README.md Modulo Xot](./README.md)
 - [README.md Modulo Xot](./readme.md)
->>>>>>> .merge_file_KfM2OF
 - [Service Architecture](./service-architecture.md)
 - [Best Practices](./best-practices.md)
 

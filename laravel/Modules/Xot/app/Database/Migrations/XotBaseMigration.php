@@ -112,7 +112,13 @@ abstract class XotBaseMigration extends LaravelMigration
             return is_string($default) ? $default : 'mariadb';
         }
 
-        return $connectionName ?? 'mariadb';
+        if ($connectionName === null) {
+            $default = config('database.default');
+
+            return is_string($default) ? $default : 'mariadb';
+        }
+
+        return $connectionName;
     }
 
     /**
@@ -230,6 +236,7 @@ abstract class XotBaseMigration extends LaravelMigration
               AND constraint_type = 'PRIMARY KEY'";
 
         $result = $connection->selectOne($query, [$database, $table]);
+
         $row = $this->constraintCountRow($result);
         if ($row === null) {
             return false;
@@ -238,26 +245,17 @@ abstract class XotBaseMigration extends LaravelMigration
         return $this->extractPrimaryKeyCount($row) > 0;
     }
 
-    /**
-     * Verifica l'esistenza di un vincolo di foreign key sulla tabella.
-     *
-     * Serve alle migrazioni idempotenti sui database storici, dove la CREATE puo'
-     * essere andata a buon fine senza che la FK sia stata creata: senza questo
-     * controllo il secondo passaggio fallirebbe con "Duplicate foreign key constraint".
-     */
     public function hasForeignKey(string $constraint): bool
     {
         $connection = $this->getConn()->getConnection();
         $table = $this->getTable();
         $database = $connection->getDatabaseName();
-
         $query = "SELECT COUNT(*) as count
               FROM information_schema.table_constraints
               WHERE table_schema = ?
               AND table_name = ?
               AND constraint_name = ?
               AND constraint_type = 'FOREIGN KEY'";
-
         $result = $connection->selectOne($query, [$database, $table, $constraint]);
         $row = $this->constraintCountRow($result);
         if ($row === null) {
@@ -547,9 +545,9 @@ abstract class XotBaseMigration extends LaravelMigration
         }
 
         $table = $this->getTable();
-        $conn = DB::connection($this->model->getConnectionName());
+        $conn = DB::connection($this->getConnection());
 
-        $conn->table($table)->orderBy('id')->chunk(100, function (Collection $rows) use ($table, $conn): void {
+        $conn->table($table)->orderBy('id')->chunk(100, function (\Illuminate\Support\Collection $rows) use ($table, $conn): void {
             foreach ($rows as $row) {
                 $row = (object) $row;
                 if (! empty($row->uuid)) {
@@ -574,7 +572,7 @@ abstract class XotBaseMigration extends LaravelMigration
         array $dataColumns,
         array $options,
     ): void {
-        $conn = DB::connection($this->model->getConnectionName());
+        $conn = DB::connection($this->getConnection());
 
         if (! $this->hasColumn('uuid')) {
             $this->tableUpdate(function (Blueprint $blueprint): void {
@@ -609,7 +607,7 @@ abstract class XotBaseMigration extends LaravelMigration
      */
     protected function copyDataWithUuidToBigintMapping(string $oldTable, string $newTable, array $dataColumns): void
     {
-        $conn = DB::connection($this->model->getConnectionName());
+        $conn = DB::connection($this->getConnection());
         $rows = $conn->table($oldTable)->orderBy('id')->get();
         $newId = 1;
         $this->uuidToBigintIdMapping = [];
@@ -630,7 +628,7 @@ abstract class XotBaseMigration extends LaravelMigration
 
     protected function updatePivotTableFkFromUuidToBigint(string $sourceTable, string $pivotTable, string $fkColumn): void
     {
-        $conn = DB::connection($this->model->getConnectionName());
+        $conn = DB::connection($this->getConnection());
         $rows = $conn->table($sourceTable)->get(['id', 'uuid']);
 
         foreach ($rows as $p) {

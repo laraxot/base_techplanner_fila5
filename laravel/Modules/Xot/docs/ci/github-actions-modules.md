@@ -21,7 +21,6 @@ Modules/<Modulo>/
       update-changelog.yml     # CHANGELOG su release
       roadmap-check.yml       # Verifica docs/roadmap.md
 
->>>>>>> .merge_file_jOeaWp
 ```
 
 Per i temi: `Themes/<Tema>/.github/workflows/` con gli stessi file.
@@ -49,7 +48,6 @@ Vedi [semantic-release-template.md](./semantic-release-template.md). Scaffold: `
 - **Step**: checkout, setup Node 20, npm install semantic-release + plugin, npx semantic-release.
 - **Secrets**: `GH_TOKEN` (o `GITHUB_TOKEN`) per push tag.
 
->>>>>>> .merge_file_jOeaWp
 
 ## update-changelog.yml
 
@@ -88,7 +86,6 @@ Workflow pianificato a livello root: `contributor-lines-report.yml` + `bashscrip
 ## Collegamenti
 
 - [docs root – GitHub Actions moduli](../../../../../docs/github-actions-modules.md)
->>>>>>> .merge_file_jOeaWp
 - [Semantic versioning](../../../../../.cursor/skills/semantic-versioning/skill.md)
 - [PHPStan CI](phpstan.md)
 - [Links CI](links.md)

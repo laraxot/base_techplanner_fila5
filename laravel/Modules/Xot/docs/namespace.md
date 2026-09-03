@@ -37,5 +37,3 @@ See canonical documentation: ../../../Themes/docs/shared-components/namespace-ru
 
 **Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
 See canonical documentation: ../../../Themes/docs/shared-components/namespace-rules.md
->>>>>>> .merge_file_qxp73a
->>>>>>> .merge_file_T1v1o6

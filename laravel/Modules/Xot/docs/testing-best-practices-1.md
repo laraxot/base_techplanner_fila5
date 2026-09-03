@@ -210,7 +210,6 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 - [Widget Test Patterns](../cms/docs/tests/widget-test-patterns.md)
 - [Architecture Separation Rules](../cms/docs/tests/architecture-separation-rules.md)
 - [XotData Testing Strategy](xotdata_testing.md)
->>>>>>> .merge_file_sRhgMF
 
 ---
 

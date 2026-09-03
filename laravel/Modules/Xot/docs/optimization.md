@@ -837,5 +837,3 @@ class XotPerformanceMonitor
 *Principi: DRY + KISS + SOLID + ROBUST + Laraxot*
 *Stato: 🟠 Framework Solido ma Necessita Refactoring Architetturale*
 See canonical documentation: ../../../Themes/docs/shared-components/optimization-analysis-Modules.md
->>>>>>> .merge_file_ntsSdH
->>>>>>> .merge_file_pL7Ptc

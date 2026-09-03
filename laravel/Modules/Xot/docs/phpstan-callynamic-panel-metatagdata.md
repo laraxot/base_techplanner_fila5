@@ -70,5 +70,3 @@ Questo pattern consente:
 7. I valori null sono esplicitamente dichiarati
 8. Le strutture dati complesse sono tipizzate con array shapes
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-call-dynamic-panel-metatagdata.md
->>>>>>> .merge_file_Dve6lb
->>>>>>> .merge_file_W7Hp7S

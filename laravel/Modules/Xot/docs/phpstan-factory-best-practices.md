@@ -4,7 +4,6 @@
 
 Documentazione completa delle best practice PHPStan per le factory Laravel, basata sulle correzioni implementate nel modulo <nome progetto> e conformi ai principi del framework Laraxot.
 Documentazione completa delle best practice PHPStan per le factory Laravel, basata sulle correzioni implementate nel modulo SaluteOra e conformi ai principi del framework Laraxot.
->>>>>>> .merge_file_aVE8gn
 
 ## 📚 Principi Fondamentali
 
@@ -214,7 +213,6 @@ class AdminFactory extends UserFactory
 ```bash
 cd laravel
 cd /var/www/html/_bases/base_projectname/laravel
->>>>>>> .merge_file_aVE8gn
 ./vendor/bin/phpstan analyze Modules/ModuleName/database/factories --level=9
 ```
 
@@ -290,7 +288,6 @@ Vedere:
 ### Documentazione Implementazione
 Vedere: `Modules/SaluteOra/docs/factories/phpstan-factory-compliance.md`
 
->>>>>>> .merge_file_aVE8gn
 
 ## 📊 Metriche di Successo
 

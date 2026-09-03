@@ -25,7 +25,6 @@ Il file presenta diversi conflitti nei blocchi di annotazioni PHPDoc e nella def
   }
   ```
 
-
 ## Approccio alla Risoluzione
 
 La risoluzione seguirà questi principi:
@@ -118,4 +117,3 @@ Questa risoluzione garantisce:
 
 Per una panoramica di tutti i conflitti risolti, vedere il documento principale sulla [risoluzione dei conflitti nel progetto](../../../../../docs/logs/conflict_resolution_progress.md).
 Per una panoramica di tutti i conflitti risolti, vedere il documento principale sulla [risoluzione dei conflitti nel progetto](../../../../docs/logs/conflict_resolution_progress.md). 
->>>>>>> .merge_file_6FNXfg

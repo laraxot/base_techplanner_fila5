@@ -9,7 +9,6 @@ Questa convenzione migliora la leggibilità e la chiarezza del codice, rendendo 
 **Collegamento bidirezionale:**
 - [Motivazione e applicazione nel modulo Performance](../../Performance/docs/azioni_organizzativa.md)
 - [Motivazione e applicazione nel modulo Performance](../../performance/docs/azioni_organizzativa.md)
->>>>>>> .merge_file_w0ueDP
 
 ## Memo e regole operative permanenti (per tutti i moduli che seguono Xot)
 

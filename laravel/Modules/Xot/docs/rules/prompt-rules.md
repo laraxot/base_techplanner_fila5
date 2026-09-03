@@ -94,4 +94,3 @@ Non è necessario applicare questa regola a:
 * [prompt_rules.md](../prompt_rules.md)
 
 
->>>>>>> .merge_file_09DuTw

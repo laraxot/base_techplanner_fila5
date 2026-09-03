@@ -1,11 +1,11 @@
 ---
-title: "XotBaseModel::getClassName — sibling nel namespace leaf"
+title: "XotBaseModel::getClassName — basename da static, namespace dal chiamante"
 type: concept
 module: Xot
-tags: [xotbasemodel, getclassname, phpstan, dry, leaf, models]
+tags: [xotbasemodel, getclassname, phpstan, dry, leaf, models, backtrace]
 created: 2026-07-27
-updated: 2026-07-27
-qmd: "XotBaseModel getClassName static sibling Models namespace CriteriOption BaseScheda"
+updated: 2026-09-02
+qmd: "XotBaseModel getClassName static backtrace caller namespace CriteriOption BaseScheda StabiDirigente"
 related:
   - ./basemodel-connection-religion.md
   - ../../../Ptv/docs/wiki/concepts/criteri-model-class-resolution.md

@@ -36,7 +36,6 @@ return [
             'host' => env('DB_HOST', '127.0.0.1'),
             'database' => env('DB_DATABASE', '<nome progetto>_data'),
             'database' => env('DB_DATABASE', 'laravelpizza_data'),
->>>>>>> .merge_file_SlV95B
             'username' => env('DB_USERNAME', 'marco'),
             'password' => env('DB_PASSWORD', 'marco'),
             // ... configurazione base
@@ -167,7 +166,6 @@ DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_DATABASE=<nome progetto>_data
 DB_DATABASE=laravelpizza_data
->>>>>>> .merge_file_SlV95B
 DB_USERNAME=marco
 DB_PASSWORD=marco
 ```
@@ -215,7 +213,6 @@ IL FILE `/var/www/_bases/base_laravelpizza/laravel/config/database.php` DEVE SEG
 ### REGOLA DATABASE AGGIORNATA:
 CRITICAL DATABASE ERROR IDENTIFIED: Il file `/var/www/_bases/base_laravelpizza/laravel/config/database.php` conteneva una definizione manuale della connessione 'gdpr' che è un errore GRAVE. Il TenantServiceProvider gestisce automaticamente tutte le connessioni database tramite il metodo registerDB() che crea copie della connessione mysql per ogni modulo. Aggiungere definizioni manuali in database.php viola l'architettura Laraxot e causa duplicazioni pericolose. Questo errore non deve mai più accadere.
 
->>>>>>> .merge_file_SlV95B
 
 ---
 

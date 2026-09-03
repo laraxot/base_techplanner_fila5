@@ -3,7 +3,6 @@
 **Data**: 2026-01-09  
 **Status**: ✅ **VERIFICA COMPLETATA** (Vedi `forbidden-resource-attributes-verification-2026-01-09.md`)
 **Status**: ✅ **VERIFICA COMPLETATA** (Vedi `forbidden-resource-attributes-verification-[DATE].md`)
->>>>>>> .merge_file_tYaarO
 
 ---
 
@@ -180,4 +179,3 @@ return [
 **Ultimo aggiornamento**: [DATE]
 
 **Report Completo**: Vedi `forbidden-resource-attributes-verification-[DATE].md`
->>>>>>> .merge_file_tYaarO

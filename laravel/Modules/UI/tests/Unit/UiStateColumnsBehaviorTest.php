@@ -110,8 +110,8 @@ describe('UI state columns — comportamento IconStateColumn', function (): void
         $record = new UiCoverageRecord(['id' => 1]);
         $record->setAttribute('state', new UiCoverageStateContract($record));
 
-        $this->expectException(\Exception::class);
-        $action->call(['record' => $record, 'data' => ['state' => 123]]);
+        expect(static fn () => $action->call(['record' => $record, 'data' => ['state' => 123]]))
+            ->toThrow(\Exception::class);
     });
 });
 

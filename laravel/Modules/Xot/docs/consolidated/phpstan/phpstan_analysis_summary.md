@@ -21,7 +21,6 @@ Based on the latest analysis:
 #### 1. Class Not Found Errors (15%)
 - Missing classes from Modules\ModuloEsempio\Models namespace
 - Missing classes from Modules\SaluteOra\Models namespace
->>>>>>> .merge_file_XxRrDZ
 - Missing traits (EnumTrait from Modules\Core\Traits)
 - Undefined classes in factories
 
@@ -80,7 +79,6 @@ Based on the latest analysis:
 
 ### Predict Module
 
->>>>>>> .merge_file_XxRrDZ
 **Key Issues**:
 - Mixed type operations in price calculations
 - Property access on nullable objects
@@ -101,7 +99,6 @@ Based on the latest analysis:
 // Use class_exists checks before referencing
 if (!class_exists('Modules\\ModuloEsempio\\Models\\Appointment')) {
 if (!class_exists('Modules\\SaluteOra\\Models\\Appointment')) {
->>>>>>> .merge_file_XxRrDZ
     // Handle missing class gracefully
     throw new \Exception('Required class not available');
 }
@@ -199,7 +196,6 @@ vendor/bin/phpstan analyse --generate-baseline
 ### High Priority
 1. **Missing ModuloEsempio Models**: Classes referenced but not available
 1. **Missing SaluteOra Models**: Classes referenced but not available
->>>>>>> .merge_file_XxRrDZ
 2. **Cross-Module Dependencies**: Tight coupling between modules
 3. **Factory Configuration**: Incorrect model references in factories
 

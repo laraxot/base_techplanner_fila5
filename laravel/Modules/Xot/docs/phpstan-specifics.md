@@ -165,5 +165,3 @@ private function applyFilters(\Illuminate\Database\Eloquent\Builder $query): voi
 $query = User::query()->where('active', true);
 ```
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-specific-patterns.md
->>>>>>> .merge_file_XoNocR
->>>>>>> .merge_file_s3TOdE

@@ -215,7 +215,6 @@ Quando si fa riferimento a concetti o classi in altri moduli, utilizzare collega
 ```markdown
 Per ulteriori informazioni, consultare la [documentazione del modulo UI](../UI/docs/README.md).
 Per ulteriori informazioni, consultare la [documentazione del modulo UI](../ui/docs/readme.md).
->>>>>>> .merge_file_40U9YF
 ```
 
 ### 2. Documentazione Centralizzata
@@ -225,7 +224,6 @@ Alcuni argomenti comuni a più moduli dovrebbero essere documentati nel modulo X
 ```markdown
 Per le best practices generali sul framework, consultare la [guida principale](../Xot/docs/best-practices.md).
 Per le best practices generali sul framework, consultare la [guida principale](../xot/docs/best-practices.md).
->>>>>>> .merge_file_40U9YF
 ```
 
 ## Esempi di Eccellenza

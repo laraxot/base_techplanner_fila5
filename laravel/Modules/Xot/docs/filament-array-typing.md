@@ -94,5 +94,3 @@ if (property_exists($model, 'name')) { }
 if (isset($model->name)) { }
 ```
 See canonical documentation: ../../../Themes/docs/shared-components/filament-array-typing-rules.md
->>>>>>> .merge_file_SN9sWK
->>>>>>> .merge_file_7a1xUd

@@ -2,7 +2,6 @@
 
 **Data Creazione**: 2025-01-27
 **Data Creazione**: [DATE]
->>>>>>> .merge_file_bogtnN
 **Status**: 🚀 ATTIVO
 **Scope**: Tutti i moduli e temi
 **Priority**: CRITICAL

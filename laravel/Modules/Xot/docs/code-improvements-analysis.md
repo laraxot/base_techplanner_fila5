@@ -230,4 +230,3 @@ public function processData(array $data): string
 
 **Ultimo aggiornamento**: 2026-01-09
 **Ultimo aggiornamento**: [DATE]
->>>>>>> .merge_file_v3ObIk

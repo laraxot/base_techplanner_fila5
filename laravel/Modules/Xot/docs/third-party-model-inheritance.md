@@ -283,5 +283,3 @@ Each third-party model should document:
 
 **Philosophy Summary**: In Laraxot, we respect and leverage third-party package architecture. We extend package models directly and enhance them with Laraxot-specific functionality, rather than fighting package design or creating unnecessary complexity.
 See canonical documentation: ../../../Themes/docs/shared-components/third-party-model-inheritance-philosophy.md
->>>>>>> .merge_file_3wBH7s
->>>>>>> .merge_file_QYNfM0

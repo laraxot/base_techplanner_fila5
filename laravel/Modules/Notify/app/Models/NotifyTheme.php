@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Carbon;
 use Modules\Media\Models\Media;
 use Modules\Notify\Database\Factories\NotifyThemeFactory;
-use Modules\TechPlanner\Models\Profile;
+use Modules\Xot\Contracts\ProfileContract;
 use Override;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 
@@ -21,12 +21,12 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  *
  * @method static NotifyThemeFactory factory($count = null, $state = [])
  *
- * @property-read Profile|null $creator
+ * @property-read ProfileContract|null $creator
  * @property-read array{path: string, width: int, height: int} $logo
  * @property-read Model $linkable
  * @property-read MediaCollection<int, Media> $media
  * @property-read int|null $media_count
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $updater
  *
  * @method static Builder<static>|NotifyTheme newModelQuery()
  * @method static Builder<static>|NotifyTheme newQuery()

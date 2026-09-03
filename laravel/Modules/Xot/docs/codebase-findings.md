@@ -76,5 +76,3 @@ Il codicebase è già ben allineato con le regole fondamentali:
 
 Non è stato necessario apportare correzioni al codice perché il progetto è già conforme alle regole fondamentali.
 See canonical documentation: ../../../Themes/docs/shared-components/codebase-analysis-findings.md
->>>>>>> .merge_file_4yS8RU
->>>>>>> .merge_file_6eEKx0

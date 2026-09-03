@@ -114,10 +114,6 @@ MY_DOCUMENT.md              # UPPERCASE
 my_document.md              # underscore
 analysis.md      # date in name (use CHANGELOG.md)
 analysis-2025-11-04.md      # date in name (use CHANGELOG.md)
-=======
-analysis.md      # date in name (use CHANGELOG.md)
->>>>>>> .merge_file_ziOP8f
->>>>>>> .merge_file_tvV1tG
 ```
 
 ### 8. DRY Principle

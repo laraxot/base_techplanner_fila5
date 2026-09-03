@@ -31,7 +31,6 @@
    - Fixed BaseModelTest
    - **Status**: Documented in `Modules/Tenant/docs/phpstan-fixes.md`
    - **Status**: Documented in `Modules/Tenant/docs/phpstan-fixes-2025-10-13.md`
->>>>>>> .merge_file_T90uTM
 
 2. **Gdpr** - 57 → 18 errors (68% reduction, 39 fixed) 📊
    - Enhanced Consent model with missing properties
@@ -39,7 +38,6 @@
    - Fixed Pest.php expect extension
    - **Status**: Documented in `Modules/Gdpr/docs/phpstan-fixes.md`
    - **Status**: Documented in `Modules/Gdpr/docs/phpstan-fixes-2025-10-13.md`
->>>>>>> .merge_file_T90uTM
 
 ### ⏳ Pending Modules (by priority)
 1. Media - 140 errors
@@ -298,7 +296,6 @@ Based on current pace:
 4. `Modules/Tenant/tests/Feature/README.md` - Skipped test explanation
 5. `Modules/Gdpr/docs/phpstan-fixes-2025-10-13.md` - Gdpr-specific fixes
 
->>>>>>> .merge_file_T90uTM
 
 ### Challenges Encountered
 1. **Linter Interference**: Auto-application of `@phpstan-ignore-line` conflicts with project policy

@@ -163,5 +163,3 @@ When creating a new module:
 **Maintained by**: Xot Module (Core Laraxot Engine)
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-philosophy.md
->>>>>>> .merge_file_EtCydN
->>>>>>> .merge_file_Kr2a61

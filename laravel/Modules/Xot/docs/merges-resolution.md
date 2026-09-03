@@ -204,5 +204,3 @@ class ResourceName extends XotBaseResource
 **Versione**: 1.0.0
 **Status**: ⚠️ In Lavorazione
 See canonical documentation: ../../../Themes/docs/shared-components/merge-conflicts-resolution-roadmap.md
->>>>>>> .merge_file_IOb3oi
->>>>>>> .merge_file_iUImEU

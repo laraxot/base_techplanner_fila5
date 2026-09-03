@@ -6,8 +6,11 @@ namespace Modules\Gdpr\Tests\Unit\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\Gdpr\Models\Profile;
+use Modules\Gdpr\Tests\TestCase;
 use Modules\User\Models\BaseProfile;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 test('profile_extends_base_profile', function (): void {
     $profile = new Profile();

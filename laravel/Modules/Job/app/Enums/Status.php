@@ -17,4 +17,5 @@ enum Status: string implements HasColor, HasIcon, HasLabel
     case Inactive = 'inactive';
     case Trashed = 'trashed';
     case One = '1';
+
 }

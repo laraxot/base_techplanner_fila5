@@ -20,7 +20,6 @@ Sempre estendere classi astratte con prefisso `XotBase` che rispettano il vecchi
 |-------------|------------|
 | `Filament\Resources\Pages\CreateRecord` | `Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord` ([perché e pipeline](./pages/create-record-page.md)) |
 | `Filament\Resources\Pages\CreateRecord` | `Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord` |
->>>>>>> .merge_file_NWbDte
 | `Filament\Resources\Pages\EditRecord` | `Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord` |
 | `Filament\Resources\Pages\ListRecords` | `Modules\Xot\Filament\Resources\Pages\XotBaseListRecords` |
 | `Filament\Resources\Pages\Page` | `Modules\Xot\Filament\Resources\Pages\XotBasePage` |

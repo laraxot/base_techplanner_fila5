@@ -5,8 +5,11 @@ declare(strict_types=1);
 use Modules\Activity\Filament\Resources\ActivityResource;
 use Modules\Activity\Filament\Resources\SnapshotResource;
 use Modules\Activity\Filament\Resources\StoredEventResource;
+use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 test('activity resources extend xot base resource', function () {
     $activityResource = new ReflectionClass(ActivityResource::class);
@@ -87,7 +90,7 @@ test('activity resource has correct model configuration', function () {
 });
 
 test('activity resource form schema returns array', function () {
-    $form = ActivityResource::getFormSchemaOld();
+    $form = ActivityResource::getFormSchema();
 
     Assert::assertNotEmpty($form);
 
@@ -105,7 +108,7 @@ test('activity resource form schema returns array', function () {
 });
 
 test('snapshot resource form schema returns array', function () {
-    $form = SnapshotResource::getFormSchemaOld();
+    $form = SnapshotResource::getFormSchema();
 
     Assert::assertNotEmpty($form);
 
@@ -121,7 +124,7 @@ test('snapshot resource form schema returns array', function () {
 });
 
 test('stored event resource form schema returns array', function () {
-    $form = StoredEventResource::getFormSchemaOld();
+    $form = StoredEventResource::getFormSchema();
 
     Assert::assertNotEmpty($form);
 

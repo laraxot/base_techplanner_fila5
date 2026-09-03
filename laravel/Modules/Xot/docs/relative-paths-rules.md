@@ -38,7 +38,6 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
    ```markdown
    [ERRATO](../Xot/docs/README.md)
    [ERRATO](/var/www/html/saluteora/laravel/Modules/Xot/docs/README.md)
->>>>>>> .merge_file_0MmOO0
    ```
 
 2. **MAI utilizzare percorsi che iniziano con /**:

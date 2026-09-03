@@ -135,7 +135,6 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](../../../../themes/two/docs/readme.md)
 * [README.md](../../../../themes/one/docs/readme.md)
 
->>>>>>> .merge_file_iHqzzC
 
 # Standard Xot: Ereditarietà dei Modelli
 
@@ -292,9 +291,6 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 - [Struttura progetto e STI (Patient)](../../../patient/docs/architecture/struttura-progetto.md)
 - [Migrazioni e database (Patient)](../../../patient/docs/database/migrations.md)
 
-=======
->>>>>>> .merge_file_qJwyTv
->>>>>>> .merge_file_iHqzzC
 
 ## Regola generale
 

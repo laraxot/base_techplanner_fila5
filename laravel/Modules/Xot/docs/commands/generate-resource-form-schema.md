@@ -58,4 +58,3 @@ return [
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
 - [Form Components](../componenti_personalizzati.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
->>>>>>> .merge_file_oZwD2K

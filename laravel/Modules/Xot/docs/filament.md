@@ -472,6 +472,5 @@ class ExampleResource extends XotBaseResource
 
 *Ultimo aggiornamento: 2025-08-04*
 *Ultimo aggiornamento: [DATE]*
->>>>>>> .merge_file_krRZwP
 *Modulo: Xot*
 *Categoria: Filament*

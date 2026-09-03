@@ -450,6 +450,8 @@ class MioModelloTest extends XotBaseTestCase
 }
 ```
 
+Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md) · [testing-setup.md](./testing/testing-setup.md).
+
 **Verificare Migrazioni**
 ```bash
 # Eseguire migrazioni per i test
@@ -670,7 +672,6 @@ dd(DB::getQueryLog());
 
 - [**README.md**](README.md) - Documentazione principale del modulo
 - [**README.md**](readme.md) - Documentazione principale del modulo
->>>>>>> .merge_file_ay4dev
 - [**Best Practices**](best-practices.md) - Best practices per evitare problemi
 - [**Architettura**](architecture.md) - Architettura del modulo Xot
 - [**Documentazione Laravel**](https://laravel.com/docs) - Troubleshooting generale

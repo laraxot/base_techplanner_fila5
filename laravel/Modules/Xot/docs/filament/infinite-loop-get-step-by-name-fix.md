@@ -123,7 +123,6 @@ $prop = property_exists($class, 'property') ? $class::$property : [];
 ### **Documentazione Correlata**
 - [Wizard Step Implementation](../../../Modules/SaluteOra/docs/wizard-step-implementation.md)
 
->>>>>>> .merge_file_ByBfc7
 - [Infinite Loop Prevention](../critical-fixes/infinite-loop-prevention.md)
 
 ---
@@ -140,7 +139,6 @@ $prop = property_exists($class, 'property') ? $class::$property : [];
 **Impatto**: Blocco completo sistema registrazione dottori  
 **Tempo risoluzione**: < 10 minuti dalla diagnosi  
 
->>>>>>> .merge_file_ByBfc7
 
 ## 💡 **Lesson Learned**
 

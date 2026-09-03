@@ -6,7 +6,10 @@ use Modules\Activity\Filament\Actions\ListLogActivitiesAction;
 use Modules\Activity\Tests\Fixtures\ListLogActivitiesActionTestPage;
 use Modules\Activity\Tests\Fixtures\ListLogActivitiesActionTestRecord;
 use Modules\Activity\Tests\Fixtures\ListLogActivitiesActionTestResourceSimple;
+use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 test('action can be instantiated', function (): void {
     $action = ListLogActivitiesAction::make();

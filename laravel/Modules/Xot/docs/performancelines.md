@@ -888,5 +888,3 @@ public function processData(): void
 
 This document provides comprehensive performance guidelines for maintaining optimal performance across the Xot module and modules that extend it.
 See canonical documentation: ../../../Themes/docs/shared-components/performance-guidelines.md
->>>>>>> .merge_file_bWjGWV
->>>>>>> .merge_file_BbGJoo

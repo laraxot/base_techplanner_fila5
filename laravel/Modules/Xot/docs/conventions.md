@@ -151,7 +151,6 @@ Modules/User/resources/views/pages/Auth/Logout.blade.php  # NO: maiuscole
 * [CONVENTIONS.md](../../../xot/docs/conventions.md)
 * [CONVENTIONS.md](../../../dental/docs/conventions.md)
 * [CONVENTIONS.md](../../../patient/docs/conventions.md)
->>>>>>> .merge_file_IemOBP
 
 ## Collegamenti tra versioni di conventions.md
 * [conventions.md](../../../../docs/tecnico/filament/conventions.md)
@@ -160,4 +159,3 @@ Modules/User/resources/views/pages/Auth/Logout.blade.php  # NO: maiuscole
 * [conventions.md](../../Patient/docs/conventions.md)
 * [conventions.md](../../dental/docs/conventions.md)
 * [conventions.md](../../patient/docs/conventions.md)
->>>>>>> .merge_file_IemOBP

@@ -152,4 +152,3 @@ Vedi il file canonico: [phpstan-corrections.md](./phpstan-corrections.md)
 
 *Ultimo aggiornamento: 2026-01-22*
 
->>>>>>> .merge_file_ADz5KD

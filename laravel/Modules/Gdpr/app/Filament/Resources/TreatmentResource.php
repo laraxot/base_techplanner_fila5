@@ -7,7 +7,6 @@ namespace Modules\Gdpr\Filament\Resources;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
-use Filament\Schemas\Components\Component;
 use Modules\Gdpr\Filament\Resources\TreatmentResource\Pages\CreateTreatment;
 use Modules\Gdpr\Filament\Resources\TreatmentResource\Pages\EditTreatment;
 use Modules\Gdpr\Filament\Resources\TreatmentResource\Pages\ListTreatments;
@@ -18,11 +17,7 @@ class TreatmentResource extends XotBaseResource
 {
     protected static ?string $model = Treatment::class;
 
-    /**
-     * Schema legacy del form: la sorgente di verità è TreatmentForm::getFormSchema().
-     *
-     * @return array<string, Component>
-     */
+    #[\Override]
     public static function getFormSchema(): array
     {
         return [

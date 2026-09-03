@@ -5,7 +5,6 @@ The Xot module serves as the core infrastructure module for the Laraxot framewor
 
 ## Current Status (as of 2026-01-21)
 ## Current Status (as of [DATE])
->>>>>>> .merge_file_EH4e5R
 - **PHPStan Errors**: Multiple errors across core files
 - **Error Categories**:
   - Unsafe function usage: define, preg_match, glob, file_get_contents, file_put_contents, error_log
@@ -19,7 +18,6 @@ The Xot module serves as the core infrastructure module for the Laraxot framewor
 
 ### 1. Modules/Xot/helpers/Helper.php
 ### 1. Modules/Xot/Helpers/Helper.php
->>>>>>> .merge_file_EH4e5R
 - **Issues**:
   - Line 179: `define` function unsafe usage
   - Line 407: `preg_match` function unsafe usage

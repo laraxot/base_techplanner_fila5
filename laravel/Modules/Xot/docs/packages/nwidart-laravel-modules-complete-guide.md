@@ -557,4 +557,3 @@ Modules/{ModuleName}/docs/
 **Versione Package:** 12.0+  
 **Compatibilità:** Laravel 12.x, PHP 8.2+
 
->>>>>>> .merge_file_kguyNv

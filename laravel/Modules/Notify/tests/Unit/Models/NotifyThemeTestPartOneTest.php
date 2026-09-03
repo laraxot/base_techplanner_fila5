@@ -98,7 +98,6 @@ describe('Notify Theme PartOne', function (): void {
 
     test('_has_correct_casts', function (): void {
         $theme = new NotifyTheme();
-
         $expectedCasts = [
             'id' => 'string',
             'uuid' => 'string',
@@ -115,7 +114,6 @@ describe('Notify Theme PartOne', function (): void {
 
     test('_has_logo_appended_attribute', function (): void {
         $theme = new NotifyTheme();
-
         $expectedAppends = ['logo'];
 
         Assert::assertEquals($expectedAppends, $theme->getAppends());

@@ -190,5 +190,3 @@ Ogni modulo deve avere:
 **Prossimo**: Audit IndennitaCondizioniLavoro
 **Timeline**: 3 settimane per audit completo
 See canonical documentation: ../../../Themes/docs/shared-components/accessor-audit-cross-modules.md
->>>>>>> .merge_file_fhVB9n
->>>>>>> .merge_file_ffeiFU

@@ -243,6 +243,4 @@ Before committing a config file, verify:
 
 *Last Updated: 2025-08-27*  
 *
-=======
->>>>>>> .merge_file_c0Qm04
 *Configuration Standards Version: 2.0*

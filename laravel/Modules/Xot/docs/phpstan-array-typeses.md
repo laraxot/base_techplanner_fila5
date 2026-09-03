@@ -133,5 +133,3 @@ public function processData(array $data): void
 **🏆 STATUS**: PERFETTO - PHPStan Level 9 CLEAN
 **📊 QUALITÀ CODICE**: Maximum Type Safety Achieved
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-array-types-fixes.md
->>>>>>> .merge_file_Wv5Gr7
->>>>>>> .merge_file_tlv91w

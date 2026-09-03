@@ -250,5 +250,3 @@ class MyModel extends BaseModel
 3. **PHPStan dovrebbe rilevare molte di queste violazioni**
 4. **Aggiornare sempre questo documento quando vengono aggiunte nuove regole**
 See canonical documentation: ../../../Themes/docs/shared-components/critical-architecture-rules.md
->>>>>>> .merge_file_hCRXq6
->>>>>>> .merge_file_jvkp3w

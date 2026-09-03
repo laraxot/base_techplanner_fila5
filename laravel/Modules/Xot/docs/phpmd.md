@@ -40,5 +40,3 @@ I warning PHPMD sono spesso informativi e non bloccanti. Focus su:
 - Code smells che impattano manutenibilità
 - Pattern che violano principi SOLID
 See canonical documentation: ../../../Themes/docs/shared-components/phpmd-analysis-Modules.md
->>>>>>> .merge_file_XkSC5s
->>>>>>> .merge_file_VgNUIq

@@ -5,8 +5,3 @@ canonical: ../../../../Themes/docs/shared-components/02-next-Modules.md
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/02-next-Modules.md
-# Next (Module Seo)
-
-## Features
-
-## Refactors

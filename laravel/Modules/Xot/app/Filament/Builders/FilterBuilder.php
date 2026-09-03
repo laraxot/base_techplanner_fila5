@@ -115,9 +115,7 @@ class FilterBuilder
                 }
 
                 if ($from && $until) {
-                    /** @var string $fromStr */
                     $fromStr = SafeStringCastAction::cast($from);
-                    /** @var string $untilStr */
                     $untilStr = SafeStringCastAction::cast($until);
 
                     return $label.': '.date('d/m/Y', strtotime($fromStr)).' - '.date('d/m/Y', strtotime($untilStr));

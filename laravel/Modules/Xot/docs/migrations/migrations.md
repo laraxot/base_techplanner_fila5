@@ -307,5 +307,3 @@ return new class extends Migration
 };
 ``` 
 See canonical documentation: ../../../../Themes/docs/shared-components/migrations.md
->>>>>>> .merge_file_cdHVm9
->>>>>>> .merge_file_6a4DzP

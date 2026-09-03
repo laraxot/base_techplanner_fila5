@@ -4,8 +4,8 @@ type: concept
 module: Xot
 tags: [xot, phpstan, pest, testing, bridge]
 created: 2026-06-10
-updated: 2026-08-19
-qmd: "Xot phpstan pest bridge discipline public assertions tests stay pest helper"
+updated: 2026-08-31
+qmd: "Xot phpstan pest bridge discipline plugin-phpstan no PestFunctionBridge"
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/28"
 discussions:

@@ -319,7 +319,6 @@ Dovrebbe estendere `BaseModel` del modulo Lang.
 - [User Module Fixes](../../user/docs/model_inheritance_fixes.md)
 - [User Module Analysis](../../user/docs/model_inheritance_analysis.md)
 
->>>>>>> .merge_file_I1qC7C
 - [Code Quality Rules](../../../.windsurf/rules/code-quality.md)
 - [XotBaseModel](../app/Models/XotBaseModel.php)
 - [XotBasePivot](../app/Models/XotBasePivot.php)
@@ -645,7 +644,6 @@ Dovrebbe estendere `BaseModel` del modulo Lang.
 - [User Module Fixes](../../user/docs/model_inheritance_fixes.md)
 - [User Module Analysis](../../user/docs/model_inheritance_analysis.md)
 
->>>>>>> .merge_file_I1qC7C
 - [Code Quality Rules](../../../.windsurf/rules/code-quality.md)
 - [XotBaseModel](../app/Models/XotBaseModel.php)
 - [XotBasePivot](../app/Models/XotBasePivot.php)

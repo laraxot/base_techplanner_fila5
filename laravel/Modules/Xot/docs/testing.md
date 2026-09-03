@@ -820,6 +820,3 @@ it('can create a new model', function() {
 });
 ```
 
-=======
->>>>>>> .merge_file_OkUvjr
->>>>>>> .merge_file_36mmy7

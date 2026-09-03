@@ -3,7 +3,6 @@
 **Data**: 2025-12-16
 # PHPStan Fix - MeetupServiceProvider - [DATE]
 
->>>>>>> .merge_file_AzGHB2
 **Analista**: Super Mucca AI
 **Status**: ✅ COMPLETATO
 

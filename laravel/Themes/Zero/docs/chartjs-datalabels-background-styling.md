@@ -6,6 +6,7 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "chart uiux enhancements with background styling and positioning"
 related:
+  - "./00-INDEX.md"
   - "./00-index.md"
 ---
 

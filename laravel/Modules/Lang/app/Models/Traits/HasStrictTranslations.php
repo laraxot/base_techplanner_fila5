@@ -9,6 +9,7 @@ use Spatie\Translatable\HasTranslations;
 /**
  * Trait che estende HasTranslations con tipi di ritorno più stretti.
  *
+ * @phpstan-ignore trait.unused
  */
 trait HasStrictTranslations
 {

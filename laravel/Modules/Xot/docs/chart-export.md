@@ -1047,5 +1047,3 @@ $schedule->call(function () {
 **Chart.js:** 4.x
 **PHPStan Level:** 10
 See canonical documentation: ../../../Themes/docs/shared-components/chart-export-guide.md
->>>>>>> .merge_file_SV2McL
->>>>>>> .merge_file_WuZy0Z

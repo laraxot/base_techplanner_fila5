@@ -317,7 +317,6 @@ Moduli con logica inline complessa:
 - [Accessor Refactoring Roadmap](../../sigma/docs/accessor-refactoring-roadmap.md)
 - [Progress Tracker](../../sigma/docs/refactoring-progress-tracker.md)
 
->>>>>>> .merge_file_pzsH61
 - [File Locking Pattern](./file-locking-pattern.md)
 
 ### Guide Tecniche
@@ -339,7 +338,6 @@ Moduli con logica inline complessa:
 
 **Creato**: [DATE]
 
->>>>>>> .merge_file_pzsH61
 **Tipo**: Guida Completa Master
 **Scope**: Tutti i moduli progetto
 **Status**: 📚 Documentazione completa, 🔄 Implementazione 13% globale

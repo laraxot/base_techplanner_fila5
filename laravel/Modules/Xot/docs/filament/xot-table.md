@@ -109,7 +109,7 @@ public function __construct()
 protected function setUp(): void
 {
     parent::setUp();
-    
+
     // Imposta il layout a griglia
     $this->layoutView = TableLayoutEnum::GRID;
 }
@@ -147,7 +147,6 @@ return [
 2. **Visibilità Metodi getTable*()**:
    Tutti i metodi `getTableHeading()`, `getTableHeaderActions()`, `getTableActions()`, `getTableBulkActions()`, `getTableFilters()`, `getTableSearch()` **DEVONO** essere `public`, non `protected`.
    Il metodo `table()` nel trait `HasXotTable` contiene logica importante. Utilizzare invece `getTableColumns()`, `getTableActions()`, ecc.
->>>>>>> .merge_file_ZdemfU
 
 2. **Utilizzare Traduzioni per Tutte le Label**:
    ```php
@@ -223,7 +222,7 @@ class DatiRelationManager extends XotBaseRelationManager
                 ->dateTime(),
         ];
     }
-    
+
     /**
      * Definisce lo schema del form.
      *

@@ -80,5 +80,3 @@ return $response; // Scarica il file Excel
 - [Actions Overview](./readme.md)
 - [PHPStan Fixes Summary](../../../../docs/phpstan-fixes-summary.md)
 
-=======
->>>>>>> .merge_file_WWEuXV

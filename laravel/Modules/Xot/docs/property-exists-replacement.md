@@ -170,5 +170,3 @@ if ($model->isFillable('tenant_id')) {
 - Eloquent Model? → NO `property_exists()`, usa `isset()` o `hasAttribute()`
 - Altro object? → `property_exists()` va bene!
 See canonical documentation: ../../../Themes/docs/shared-components/property-exists-replacement-guide.md
->>>>>>> .merge_file_vPPNPb
->>>>>>> .merge_file_8yi6Y9

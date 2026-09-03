@@ -143,5 +143,3 @@ try {
 
 **Filosofia Applicata**: Graceful degradation, non-intrusive, robusto.
 See canonical documentation: ../../../Themes/docs/shared-components/module-path-error-resolution.md
->>>>>>> .merge_file_VWFTI1
->>>>>>> .merge_file_tjQKqu

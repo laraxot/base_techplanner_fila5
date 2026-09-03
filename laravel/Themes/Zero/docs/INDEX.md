@@ -11,6 +11,10 @@ related:
 
 # Documentation Index — Theme Zero
 
+> **Note 2026-07-24**: this index is redundant with [00-index.md](./00-index.md) (canonical, updated
+> 2026-03-28, aligned with current stack: Filament 5, Livewire 4, Volt, Tailwind v4). Kept only for the
+> `archive/duplicates` links below which are not referenced elsewhere.
+
 ## Archive
 - [archive/duplicates/conflict-resolution-summary](./archive/duplicates/conflict_resolution_summary.md)
 
@@ -33,6 +37,8 @@ related:
 
 ## Root
 - [CHANGELOG](./changelog.md)
+
+- [CHANGELOG](./CHANGELOG.md)
 - [CONFLICT-RESOLUTION-SUMMARY](./CONFLICT-RESOLUTION-SUMMARY.md)
 - [CONFLICT-RESOLUTION-SUMMARY](./CONFLICT_RESOLUTION_SUMMARY.md)
 - [METODI-DUPLICATI-ANALISI](./METODI-DUPLICATI-ANALISI.md)
@@ -158,6 +164,11 @@ related:
 - [wiki/bmad-method](./wiki/bmad-method.md)
 - [wiki/commands/INDEX](./wiki/commands/index.md)
 - [wiki/concepts/INDEX](./wiki/concepts/index.md)
+
+- [wiki/SCHEMA](./wiki/SCHEMA.md)
+- [wiki/bmad-method](./wiki/bmad-method.md)
+- [wiki/commands/INDEX](./wiki/commands/INDEX.md)
+- [wiki/concepts/INDEX](./wiki/concepts/INDEX.md)
 - [wiki/concepts/code-redundancy-theme](./wiki/concepts/code-redundancy-theme.md)
 - [wiki/concepts/context-overflow-prevention](./wiki/concepts/context-overflow-prevention.md)
 - [wiki/concepts/method-name-homonyms](./wiki/concepts/method-name-homonyms.md)
@@ -174,6 +185,11 @@ related:
 - [wiki/overview](./wiki/overview.md)
 - [wiki/rules/INDEX](./wiki/rules/index.md)
 - [wiki/skills/INDEX](./wiki/skills/index.md)
+
+- [wiki/memories/INDEX](./wiki/memories/INDEX.md)
+- [wiki/overview](./wiki/overview.md)
+- [wiki/rules/INDEX](./wiki/rules/INDEX.md)
+- [wiki/skills/INDEX](./wiki/skills/INDEX.md)
 - [wiki/sources/context-compression-and-retrieval](./wiki/sources/context-compression-and-retrieval.md)
 - [wiki/sources/laravel13-theme-zero-composer-audit](./wiki/sources/laravel13-theme-zero-composer-audit.md)
 - [wiki/sources/theme-zero-product-and-roadmap-docs](./wiki/sources/theme-zero-product-and-roadmap-docs.md)

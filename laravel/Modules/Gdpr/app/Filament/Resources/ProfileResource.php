@@ -6,7 +6,6 @@ namespace Modules\Gdpr\Filament\Resources;
 
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
-use Filament\Schemas\Components\Component;
 use Modules\Gdpr\Filament\Resources\ProfileResource\Pages\CreateProfile;
 use Modules\Gdpr\Filament\Resources\ProfileResource\Pages\EditProfile;
 use Modules\Gdpr\Filament\Resources\ProfileResource\Pages\ListProfiles;
@@ -17,11 +16,7 @@ class ProfileResource extends XotBaseResource
 {
     protected static ?string $model = Profile::class;
 
-    /**
-     * Schema legacy del form: la sorgente di verità è ProfileForm::getFormSchema().
-     *
-     * @return array<string, Component>
-     */
+    #[\Override]
     public static function getFormSchema(): array
     {
         return [

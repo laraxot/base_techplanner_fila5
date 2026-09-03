@@ -28,5 +28,3 @@ Guida completa consolidata per le traduzioni in Laraxot.
 ## Links
 - [Original Files Backup](../../../docs-consolidation-backup-*/Xot-docs-original/)
 See canonical documentation: ../../../../Themes/docs/shared-components/translation-complete-guide.md
->>>>>>> .merge_file_pkVYWE
->>>>>>> .merge_file_dvkdlp

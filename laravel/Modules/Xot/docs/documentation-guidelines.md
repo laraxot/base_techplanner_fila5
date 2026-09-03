@@ -1,4 +1,3 @@
-
 # Linee Guida per la Documentazione in Laraxot
 
 Questo documento definisce le best practices per la creazione e la manutenzione della documentazione all'interno del framework Laraxot.
@@ -216,7 +215,6 @@ Quando si fa riferimento a concetti o classi in altri moduli, utilizzare collega
 ```markdown
 Per ulteriori informazioni, consultare la [documentazione del modulo UI](../UI/project_docs/README.md).
 Per ulteriori informazioni, consultare la [documentazione del modulo UI](../ui/project_docs/readme.md).
->>>>>>> .merge_file_SR9REg
 ```
 
 ### 2. Documentazione Centralizzata
@@ -226,7 +224,6 @@ Alcuni argomenti comuni a più moduli dovrebbero essere documentati nel modulo X
 ```markdown
 Per le best practices generali sul framework, consultare la [guida principale](../Xot/project_docs/best-practices.md).
 Per le best practices generali sul framework, consultare la [guida principale](../xot/project_docs/best-practices.md).
->>>>>>> .merge_file_SR9REg
 ```
 
 ## Esempi di Eccellenza

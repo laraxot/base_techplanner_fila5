@@ -31,5 +31,3 @@ See canonical documentation: ../../../Themes/docs/shared-components/module-names
 
 Ultimo aggiornamento: maggio 2025.
 See canonical documentation: ../../../Themes/docs/shared-components/module-namespace-rules.md
->>>>>>> .merge_file_CZaxmO
->>>>>>> .merge_file_KpRiCZ

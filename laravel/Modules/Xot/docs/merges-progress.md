@@ -69,5 +69,3 @@ See canonical documentation: ../../../Themes/docs/shared-components/merge-confli
 **Ultimo aggiornamento**: [DATE]
 **Versione**: 1.0.0
 See canonical documentation: ../../../Themes/docs/shared-components/merge-conflicts-progress-sumy.md
->>>>>>> .merge_file_ub8GNd
->>>>>>> .merge_file_GIXs8V

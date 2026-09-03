@@ -387,7 +387,6 @@ npm run dev
 * [getting-started.md](../../../tenant/docs/it/getting-started.md)
 * [getting-started.md](../../../cms/docs/getting-started.md)
 
->>>>>>> .merge_file_qXEsd4
 
 ### Versione Incoming
 
@@ -409,10 +408,6 @@ As with all Jigsaw sites, configuration settings can be found in `config.php`; y
 
 ```
 
-=======
-```
-
->>>>>>> .merge_file_cre4Lq
 ```php
 // config.php
 return [
@@ -490,7 +485,6 @@ npm run dev
 * [getting-started.md](../../../tenant/project_docs/it/getting-started.md)
 * [getting-started.md](../../../cms/project_docs/getting-started.md)
 
->>>>>>> .merge_file_qXEsd4
 
 ### Versione Incoming
 

@@ -593,5 +593,3 @@ Indica quanto è probabile che il refactoring sia vantaggioso:
 - **50-69%**: Valutare caso per caso
 - **< 50%**: Richiede analisi dettagliata
 See canonical documentation: ../../../Themes/docs/shared-components/duplicate-methods-analysis.md
->>>>>>> .merge_file_L1q54w
->>>>>>> .merge_file_WCUwnR

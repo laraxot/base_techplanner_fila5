@@ -122,7 +122,6 @@ $currentTeam = $user->currentTeam;
 - [Testing Priority Rule](../geo/docs/testing-priority-rule.md)
 - [No RefreshDatabase Policy](../activity/docs/testing/no-refresh-database-policy.md)
 - [Test Fix Philosophy](../ui/docs/test-fix-philosophy.md)
->>>>>>> .merge_file_Cr2x3m
 
 ## 🔄 Workflow per Ogni Test
 
@@ -138,5 +137,4 @@ $currentTeam = $user->currentTeam;
 
 **Ultimo aggiornamento**: 2025-01-22
 **Ultimo aggiornamento**: [DATE]
->>>>>>> .merge_file_Cr2x3m
 **Prossimo step**: Correggere ArtisanServiceTest.php

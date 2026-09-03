@@ -8,7 +8,7 @@ use Modules\Job\Tests\TestCase;
 use Modules\Job\Traits\FormatSeconds;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('no-job-db');
+uses(TestCase::class);
 
 test('format_seconds_formats_minutes_and_seconds', function (): void {
     $probe = new class()

@@ -5,8 +5,11 @@ declare(strict_types=1);
 namespace Modules\Activity\Tests\Unit;
 
 use Modules\Activity\Filament\Actions\ListLogActivitiesAction;
+use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Filament\Actions\XotBaseAction;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 describe('List Log Activities Action', function (): void {
     test('_extends_xot_base_action', function (): void {

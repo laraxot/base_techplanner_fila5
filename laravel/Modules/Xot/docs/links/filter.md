@@ -31,4 +31,3 @@ https://medium.com/@dkthelearner/mastering-laravel-pipeline-and-query-builder-fo
 ---
 
 
->>>>>>> .merge_file_Sprqxo

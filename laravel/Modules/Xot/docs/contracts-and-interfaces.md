@@ -47,7 +47,6 @@ interface UserContract extends
     public function tokens(): MorphMany;
     public function createToken($name, array $scopes = []): PersonalAccessTokenResult;
     public function createToken(string $name, array $scopes = []): Token;
->>>>>>> .merge_file_T7MmRD
     public function token(): ?Token;
 
     // Device Management

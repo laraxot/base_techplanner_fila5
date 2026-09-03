@@ -82,5 +82,3 @@ See canonical documentation: ../../../Themes/docs/shared-components/filament-ext
 **Metodologia**: "Super Mucca" - Livello Confidenza MASSIMO 🐄
 **Qualità**: PHPStan Level 10 Certified
 See canonical documentation: ../../../Themes/docs/shared-components/filament-extension-violations-fix-plan.md
->>>>>>> .merge_file_XyAdmw
->>>>>>> .merge_file_D9dIu5

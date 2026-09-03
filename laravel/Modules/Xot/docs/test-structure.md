@@ -271,5 +271,3 @@ Modules/UI/tests/Unit/Widgets/
 
 **Philosophy Summary**: In Laraxot, consistent test structure ensures reliable test execution and predictable development workflow. Choose one pattern and apply it consistently across all modules.
 See canonical documentation: ../../../Themes/docs/shared-components/test-structure-philosophy.md
->>>>>>> .merge_file_dquXcf
->>>>>>> .merge_file_IlTOah

@@ -97,7 +97,6 @@ public function processValue(?string $value): string
 - [Best Practices](./best-practices.md)
 - [Code Standards](./code-standards.md)
 - [Risoluzione Conflitti](./conflitti_merge_risolti.md)
->>>>>>> .merge_file_VK15NQ
 
 # Linee Guida per PHPStan Livello 10 - Regole Comuni
 
@@ -647,7 +646,3 @@ namespace Modules\Xot\Console\Commands;
 Errori PHPStan come `Class Modules\Xot\Console\Commands\DatabaseSchemaExportCommand not found` indicano che è necessario rimuovere il segmento `app` dal namespace.
 
 ```
-=======
-
-```
->>>>>>> .merge_file_Z0gu9A

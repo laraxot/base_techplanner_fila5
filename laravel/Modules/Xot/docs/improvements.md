@@ -147,5 +147,3 @@ public function getUpcomingEvents(): Collection
 
 **Ultimo aggiornamento**: [DATE]
 See canonical documentation: ../../../Themes/docs/shared-components/improvements-sumy.md
->>>>>>> .merge_file_rki8Dv
->>>>>>> .merge_file_ujKO0r

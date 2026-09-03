@@ -56,6 +56,9 @@ Lo script deve essere corretto per invertire la logica:
 - Source: `bashscripts/ai/.gemini`
 - Target symlink: `.gemini`
 
-=======
->>>>>>> .merge_file_IUR853
->>>>>>> .merge_file_reZSCX
+module: theme
+topic: ai-init
+canonical: ../../../Themes/docs/shared-components/ai-init-issue-analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/ai-init-issue-analysis.md

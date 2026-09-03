@@ -19,7 +19,6 @@ Per una guida completa e dettagliata su tutti i breaking changes e le procedure 
 - Livewire v4.0+ ⚠️ (Attualmente 3.7.6)
 - Tailwind CSS v4.0+ ⚠️ (Da verificare)
 
->>>>>>> .merge_file_xNSQsQ
 
 ## 🔑 Punto Fondamentale
 
@@ -67,7 +66,6 @@ nessun'altra occorrenza nel resto del progetto.
 - **Schemas**: Form, Table, Infolist continuano a funzionare
 - **Resources**: Tutti i pattern esistenti rimangono validi
 
->>>>>>> .merge_file_xNSQsQ
 ### Cosa Cambia (Livewire 4)
 
 Tutti i cambiamenti sono legati alla migrazione a Livewire 4:
@@ -131,10 +129,8 @@ Nel progetto: verificare `filament/spatie-laravel-media-library-plugin` e altri 
 - **Configurazioni globali**: se in XotServiceProvider o AdminPanelProvider ci sono `configureUsing()` per Section/Grid/Fieldset/Table (es. v4), confrontare con il comportamento v5 e adattare se necessario.
 
 ## Stato upgrade (<nome repository>)
-=======
-## Stato upgrade (<nome repository>)
 ## Stato upgrade (base_laravelpizza)
->>>>>>> .merge_file_xNSQsQ
+## Stato upgrade (base_workorder_fila5)
 
 - [x] Documentazione creata (filament-5-upgrade-guide.md)
 - [x] Script `vendor/bin/filament-v5` eseguito con directory `app,Modules` – modifiche applicate
@@ -148,7 +144,6 @@ Nel progetto: verificare `filament/spatie-laravel-media-library-plugin` e altri 
 - [ ] **Composer update**: completare `composer update -W` (può fallire per errore filesystem su vendor, es. "Could not delete .../sebastianbergmann-phpunit-..."). **Soluzione**: chiudere IDE e processi che usano `vendor/`; dalla root laravel: `rm -rf vendor composer.lock` poi `composer install -W`. In alternativa riprovare `composer update -W` dopo aver chiuso tutto.
 - [ ] Dopo update: `composer remove filament/upgrade --dev`
 - [ ] Config Livewire 4: verificare `config/livewire.php` (layout → component_layout, lazy_placeholder → component_placeholder) se pubblicato
->>>>>>> .merge_file_xNSQsQ
 - [ ] PHPStan livello 10 su moduli Filament
 - [ ] Verificare pannello admin Filament (login, risorse, widget)
 

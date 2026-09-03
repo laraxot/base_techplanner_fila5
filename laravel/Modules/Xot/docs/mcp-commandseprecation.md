@@ -148,5 +148,3 @@ Aggiornare la documentazione del progetto per riflettere i nuovi percorsi dei co
 
 *Ultimo aggiornamento: Giugno 2025*
 See canonical documentation: ../../../Themes/docs/shared-components/mcp-commands-deprecation.md
->>>>>>> .merge_file_zMEWvL
->>>>>>> .merge_file_SPKwpL

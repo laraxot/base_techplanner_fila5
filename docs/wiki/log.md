@@ -16,6 +16,10 @@ discussions:
 
 # TechPlanner LLM Wiki Log
 
+## 2026-09-03
+
+- **Marker di conflitto COMMITTATI in Xot/Notify (story XOT-5.52)** — variante nuova dell'incidente: non conflitti unmerged nel working tree, ma merge commit (`Xot 25b12f2f`, `Notify 52abdac1`) creati con i marker DENTRO i blob; working tree "pulito", `git status` muto, PHPStan morto al primo parse error. Genitori dei merge sani → fusione ricostruibile con `git show <parent>:<path>`. Upstream `laraxot/dev` ugualmente contaminato (673 file identici). Censimento fence-aware per enumerazione (non grep): **2.209 file, 792 con marker orfani**, seconda famiglia `.merge_file_*` pre-merge con blocchi malformati. Tooling nuovo: `bashscripts/git/conflict-marker-census.py` (fence-aware, surrogateescape, orfani) + `bashscripts/git/conflict-autoresolve.py` (auto-fix conservativo dei soli blocchi identici: 33 file). `.gitattributes` Xot rotto da conflitto (riga `>>>>>>> laraxot/dev` letta come attributo) inquinava ogni comando git del submodulo: risolto per primo. Story validata da 2 revisori AI (architect+QA) prima del dev. Regola nuova: story BMAD nel modulo di lavoro (`rules/bmad-story-location.md`). Pagina sweep `how-to/git-merge-marker-sweep.md` de-corrotta (aveva essa stessa marker orfani + doppia policy LFS).
+
 ## 2026-07-24
 
 - **Second brain al massimo** — healthcheck PASS; skill `cursor-second-brain-max-workflow` allineata a TechPlanner (`wiki`+`modules-wiki`); memory `second-brain-max-power-discipline`; write-back **AI** (`ollama-actions-ownership`), **Xot** (`no-domain-actions-in-xot`), **Sixteen** (link second-brain). Handoff: `docs/chat/handoff-second-brain-max.md`.

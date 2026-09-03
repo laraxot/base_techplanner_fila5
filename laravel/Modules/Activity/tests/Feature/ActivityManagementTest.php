@@ -5,9 +5,12 @@ declare(strict_types=1);
 namespace Modules\Activity\Tests\Feature;
 
 use Modules\Activity\Models\Activity;
+use Modules\Activity\Tests\TestCase;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 test('user can create activity', function () {
     $user = UserFactory::new()->createOne();

@@ -395,5 +395,3 @@ test('legacy feature with mocks', function () {
 **Decision Authority**: Technical Architecture Committee
 **Implementation Timeline**: 4-week migration
 See canonical documentation: ../../../../Themes/docs/shared-components/realata-vs-mock-testing-strategy.md
->>>>>>> .merge_file_gpR4Fc
->>>>>>> .merge_file_2k33gp

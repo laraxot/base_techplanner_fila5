@@ -2,7 +2,6 @@
 
 **Data:** 2025-01-10
 **Data:** [DATE]
->>>>>>> .merge_file_gzTTm4
 **PHPStan Level:** max
 **Initial Errors:** 19,337
 **Final Errors:** 92

@@ -9,8 +9,6 @@ updated: 2026-08-24
 ---
 
 
-=======
->>>>>>> .merge_file_qsxqCT
 # Convenzioni di Nomenclatura in <nome progetto>
 
 Questo documento definisce le convenzioni ufficiali di nomenclatura da utilizzare in tutto il progetto <nome progetto>.
@@ -219,7 +217,6 @@ Questo documento descrive le convenzioni di denominazione da seguire all'interno
 - [Best practice per i provider di servizi](./service-provider-best-practices.md)
 - [Best practice per Filament](./filament-best-practices.md)
 
->>>>>>> .merge_file_9pyxOG
 # Convenzioni di Nomenclatura in <nome progetto>
 
 Questo documento definisce le convenzioni ufficiali di nomenclatura da utilizzare in tutto il progetto <nome progetto>.

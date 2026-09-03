@@ -391,5 +391,3 @@ cd laravel
 **Versione Pest**: 3.8.4  
 **Status**: ✅ Documentazione Completa
 See canonical documentation: ../../../Themes/docs/shared-components/pest-execution-guide.md
->>>>>>> .merge_file_fPhsOv
->>>>>>> .merge_file_C6kz4D

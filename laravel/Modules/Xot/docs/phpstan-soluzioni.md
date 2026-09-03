@@ -287,5 +287,3 @@ Questi pattern rappresentano le soluzioni standard da adottare in tutto il modul
 2. Estendere questi pattern ad altri moduli del progetto
 3. Aggiornare regolarmente questo documento con nuovi pattern identificati
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-pattern-soluzioni.md
->>>>>>> .merge_file_Uii9U7
->>>>>>> .merge_file_lvZ3gD

@@ -173,5 +173,3 @@ vendor/bin/pint Modules/Xot/app
 **Session Status:** ✅ Complete
 **Ready for:** Next module iteration
 See canonical documentation: ../../../../Themes/docs/shared-components/progress-summary.md
->>>>>>> .merge_file_DJc5TZ
->>>>>>> .merge_file_zPVVU4

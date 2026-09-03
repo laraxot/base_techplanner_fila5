@@ -22,7 +22,6 @@ Warning: Ambiguous class resolution, "Modules\Cms\Database\Seeders\CmsDatabaseSe
 - **Factories**: `PageFactory.php`, `ConfFactory.php`, `ModuleFactory.php`, etc.
 
 ## Correct File Structure Patterns
-
 ### ✅ Option 1: Traditional Laravel Structure (Recommended)
 
 ```
@@ -47,7 +46,6 @@ Modules/{ModuleName}/
 │       └── CmsDatabaseSeeder.php
 └── app/
 
->>>>>>> .merge_file_JDcSnf
     ├── Models/
     ├── Filament/
     └── ...
@@ -112,7 +110,6 @@ Modules/{ModuleName}/
 - PHP autoloader cannot determine which file to use
 - "First found" approach leads to un<nome progetto>able behavior
 - "First found" approach leads to unpredictable behavior
->>>>>>> .merge_file_JDcSnf
 - Different environments may load different files
 
 ### 2. **Maintenance Nightmare**
@@ -195,7 +192,6 @@ Modules/
 └── healthcare_app/
 └── ExternalProject/
 └── Quaeris/
->>>>>>> .merge_file_JDcSnf
     ├── database/
     │   ├── factories/
     │   ├── migrations/

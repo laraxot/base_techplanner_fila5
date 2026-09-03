@@ -9,7 +9,6 @@ declare(strict_types=1);
 namespace Modules\Job\Console\Commands;
 
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\Log;
 
 class TestJobCommand extends Command
 {
@@ -29,7 +28,6 @@ class TestJobCommand extends Command
     public function handle(): int
     {
         $this->info('Hello the test worked.');
-        Log::debug('Hello the test worked.');
 
         return 0;
     }

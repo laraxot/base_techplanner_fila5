@@ -3,7 +3,6 @@
 **Data**: 2025-01-22
 # Testing Fixes Progress - Sessione [DATE]
 
->>>>>>> .merge_file_KYhcRD
 **Status**: In Progress
 **Principio Fondamentale**: Il sito funziona, quindi se un test fallisce è il test che sbaglia
 
@@ -129,7 +128,6 @@ Tutti i test corretti seguono questo principio:
 - [Notify TestCase Fix](../../notify/docs/testing-testcase-database-connection-fix.md)
 - [User Command Integration Fix](../../user/docs/testing-user-command-integration-fix.md)
 
->>>>>>> .merge_file_KYhcRD
 
 ---
 

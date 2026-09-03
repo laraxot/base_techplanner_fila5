@@ -610,5 +610,3 @@ grep -r "auth()->user()" Modules/*/View/Composers/
 **Tempo di risoluzione**: 15 minuti
 **Pattern**: View Composer Loop Prevention
 See canonical documentation: ../../../Themes/docs/shared-components/view-composer-loop-infinite-fix.md
->>>>>>> .merge_file_7YLTN7
->>>>>>> .merge_file_jbpQpB

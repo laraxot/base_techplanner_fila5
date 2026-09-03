@@ -87,5 +87,3 @@ Aggiornare questa sezione (o il changelog del modulo) man mano che i file vengon
 - Documentare eventuali decisioni o esclusioni (es. backup da archiviare)
 - Mantenere copia “prima/dopo” se i contenuti hanno valore storico
 See canonical documentation: ../../../Themes/docs/shared-components/merge-conflicts-census.md
->>>>>>> .merge_file_qobMmY
->>>>>>> .merge_file_EXAUar

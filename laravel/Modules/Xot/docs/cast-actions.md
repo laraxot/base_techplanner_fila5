@@ -93,10 +93,6 @@ $stringValue = app(SafeStringCastAction::class)->execute($mixedValue, '');
 
 `ArrayToRawJsAction::jsValue` non è bordo opaco: i caller passano solo scalari, quindi la firma è `string|int|float|bool|null`. `SafeStringCastAction` resta solo per un oggetto inatteso dopo il filtro di array e `RawJs`.
 
-=======
-`ArrayToRawJsAction::jsValue` non è bordo opaco: i caller passano solo scalari, quindi la firma è `string|int|float|bool|null`. `SafeStringCastAction` resta solo per un oggetto inatteso dopo il filtro di array e `RawJs`.
-
->>>>>>> .merge_file_MnNaAW
 ## Pattern di Utilizzo
 
 ### Pattern 1: Verifica e Accesso
@@ -223,14 +219,10 @@ Le azioni di cast sono completamente testate e supportano PHPStan livello 9+:
 
 ```bash
 ./vendor/bin/phpstan analyse Modules/Xot/app/Actions/Cast --level=9
-
-=======
 Le azioni di cast sono testate; PHPStan usa `laravel/phpstan.neon` (mai `--level`):
 
 ```bash
 ./vendor/bin/phpstan analyse Modules/Xot/app/Actions/Cast --no-progress --memory-limit=-1
->>>>>>> .merge_file_MnNaAW
->>>>>>> .merge_file_q4sm2r
 ```
 
 ## Collegamenti
@@ -245,8 +237,3 @@ Le azioni di cast sono testate; PHPStan usa `laravel/phpstan.neon` (mai `--level
 - [ArrayToRawJsAction](../app/Actions/Array/ArrayToRawJsAction.php) — `jsValue` scalare; SafeString solo per oggetti inattesi
 - [PHPStan rules](./quality/phpstan-rules.md)
 - [Mixed ultima spiaggia](../../Notify/docs/mixed-type-ultima-spiaggia.md)
-=======
-- [ArrayToRawJsAction](../app/Actions/Array/ArrayToRawJsAction.php) — `jsValue` scalare; SafeString solo per oggetti inattesi
-- [PHPStan rules](./quality/phpstan-rules.md)
-- [Mixed ultima spiaggia](../../Notify/docs/mixed-type-ultima-spiaggia.md)
->>>>>>> .merge_file_MnNaAW

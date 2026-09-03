@@ -246,5 +246,3 @@ Questa implementazione stabilisce un precedente per:
 **Ultimo aggiornamento**: agosto 2025
 **Autore**: Cascade AI Assistant
 See canonical documentation: ../../../Themes/docs/shared-components/filament-composite-contacts-column-analysis.md
->>>>>>> .merge_file_vKbnX6
->>>>>>> .merge_file_PGwfNs

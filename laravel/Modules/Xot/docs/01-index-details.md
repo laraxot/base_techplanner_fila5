@@ -33,7 +33,6 @@
 ## Quality & Improvement
 - [Quality Improvements Summary [DATE]](./quality-improvements-summary-[DATE].md)
 
->>>>>>> .merge_file_hCz3XR
 - [Laraxot Meetup Service Provider Refactor](./laraxot-meetup-service-provider-refactor.md)
 - [PHPStan Fix Meetup Service Provider](./phpstan-fix-meetup-service-provider.md)
 

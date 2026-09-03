@@ -90,7 +90,6 @@ npm run dev
 * [getting-started.md](../../../tenant/docs/it/getting-started.md)
 * [getting-started.md](../../../cms/docs/getting-started.md)
 
->>>>>>> .merge_file_8IvCtu
 
 ### Versione Incoming
 

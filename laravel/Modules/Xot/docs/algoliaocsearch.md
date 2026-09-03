@@ -88,5 +88,3 @@ For more details, visit the [official Algolia DocSearch documentation.](https://
 
 ---
 See canonical documentation: ../../../Themes/docs/shared-components/algolia-docsearch.md
->>>>>>> .merge_file_p0Xvv1
->>>>>>> .merge_file_2WUvuh

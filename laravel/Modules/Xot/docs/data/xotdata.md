@@ -1,4 +1,3 @@
->>>>>>> .merge_file_gAIKau
 ---
 title: XotData
 description: XotData

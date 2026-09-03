@@ -32,7 +32,6 @@ Il progetto Laravel Pizza è una conversione e miglioramento di https://laravelp
 - **Zero compromessi**: Approccio "fix, don't ignore" - tutti gli errori vanno corretti, nessuno ignorato.
 - **Strict Typing**: Ogni file deve avere `declare(strict_types=1);` e tipi espliciti ovunque.
 
->>>>>>> .merge_file_6lWVJy
 
 ## 🕌 Religione (Religion)
 

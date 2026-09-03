@@ -378,5 +378,3 @@ composer dump-autoload
 
 *"Helper functions sono il vocabolario comune del framework: semplici da usare, potenti nell'implementazione."*
 See canonical documentation: ../../../Themes/docs/shared-components/helper-functions-complete-list.md
->>>>>>> .merge_file_I5kWAN
->>>>>>> .merge_file_yiwFHJ

@@ -299,7 +299,6 @@ Ogni modulo può avere best practices specifiche per le migrazioni. Consultare l
 - [Best Practices per le Migrazioni nel Modulo User](/laravel/modules/user/docs/migration_best_practices.md)
 - [Best Practices per le Migrazioni nel Modulo User](/laravel/modules/user/docs/migration_best_practices.md)
 
->>>>>>> .merge_file_T8o4Oq
 
 ## Errori Comuni e Come Evitarli
 

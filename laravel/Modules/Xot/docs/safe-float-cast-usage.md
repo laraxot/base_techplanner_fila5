@@ -453,5 +453,3 @@ class Product extends BaseModel
 
 *Ultimo aggiornamento: [DATE]*
 See canonical documentation: ../../../Themes/docs/shared-components/safe-float-cast-usage.md
->>>>>>> .merge_file_hRbR2x
->>>>>>> .merge_file_C2Ad9B

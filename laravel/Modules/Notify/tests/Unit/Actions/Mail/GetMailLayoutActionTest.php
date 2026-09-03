@@ -15,7 +15,6 @@ use function Safe\class_uses;
 describe('GetMailLayoutAction', function () {
     it('can be instantiated', function () {
         $action = new GetMailLayoutAction();
-
         Assert::assertInstanceOf(GetMailLayoutAction::class, $action);
     });
 

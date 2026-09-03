@@ -5,7 +5,6 @@
 # Fix Race Condition firstOrCreate con UUID - [DATE]
 
 **Status**: ✅ Completato  
->>>>>>> .merge_file_wxGTiC
 
 ## Problema
 
@@ -181,5 +180,4 @@ expect($profileA->id)->toBe($profileB->id);
 **Versione**: 1.0  
 **Ultimo aggiornamento**: [DATE]  
 
->>>>>>> .merge_file_wxGTiC
 **Status**: ✅ Completato

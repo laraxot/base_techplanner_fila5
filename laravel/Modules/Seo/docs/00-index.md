@@ -3,8 +3,15 @@
 **Status**: 🟡 In Progress
 **Module Version**: 1.0.0
 
+## Audit over-engineering
+
+| Documento | Scopo |
+|-----------|--------|
+| [ponytail-audit-over-engineering.md](./ponytail-audit-over-engineering.md) | Findings Ponytail Seo (`node_modules`, interface) |
+| [Hub repo](../../../../docs/audit/ponytail-audit.md) | Audit repo-wide |
+
 ## 🎯 Lettura Essenziale
-1. [README.md](./readme.md) - Panoramica del modulo SEO.
+1. [README.md](./README.md) - Panoramica del modulo SEO.
 2. [roadmap.md](./roadmap.md) - Evoluzione 2026: AI Content Optimization & Schema.org.
 
 ## 🏗️ Core Features
@@ -24,7 +31,7 @@
 - ⚠️ PHPStan Level 10 da completare
 
 ## 📦 Pacchetti Composer
-- [Riferimento](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md) - Nessuna dipendenza diretta; usa Xot
+- [Riferimento composer packages](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md) - Nessuna dipendenza diretta; usa Xot
 
 ## 🔗 Moduli Correlati
 - [Xot](../../xot/docs/readme.md) - Core framework e base classes.

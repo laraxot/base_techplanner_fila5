@@ -209,5 +209,3 @@ test('user can be saved to database', function () {
 **Ultimo aggiornamento**: 9 Gennaio 2026  
 **Status**: 🔄 **IN CORREZIONE**
 See canonical documentation: ../../../Themes/docs/shared-components/pest-testing-status.md
->>>>>>> .merge_file_VGwXu8
->>>>>>> .merge_file_asV3yJ

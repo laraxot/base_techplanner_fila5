@@ -163,4 +163,3 @@ class YourResource extends XotBaseResource
 
 Per la guida completa: `filament-class-extension-rules.md`
 
->>>>>>> .merge_file_uZkfOL

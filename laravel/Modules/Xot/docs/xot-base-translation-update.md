@@ -3,7 +3,6 @@
 ## Data Aggiornamento
 2025-01-27
 [DATE]
->>>>>>> .merge_file_c5aeLq
 
 ## File Modificato
 `Modules/Xot/lang/it/xot_base.php`

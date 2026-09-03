@@ -76,4 +76,3 @@ Definire un flusso ripetibile per ridurre gli errori PHPStan fino a **0** nel mo
 - [sessione phpstan](./phpstan-session-january-2026-summary.md)
 - [best practices](./best-practices-1.md)
 
->>>>>>> .merge_file_xEc7SP

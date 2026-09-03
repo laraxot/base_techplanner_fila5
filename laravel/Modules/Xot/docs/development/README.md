@@ -17,7 +17,6 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 * [README.md](bashscripts/project_docs/it/readme.md)
 * [README.md](bashscripts/docs/readme.md)
 * [README.md](bashscripts/docs/it/readme.md)
->>>>>>> .merge_file_FGVKal
 * [README.md](docs/laravel-app/phpstan/readme.md)
 * [README.md](docs/laravel-app/readme.md)
 * [README.md](docs/moduli/struttura/readme.md)
@@ -235,6 +234,3 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 * [README.md](../../../../themes/two/docs/readme.md)
 * [README.md](../../../../themes/one/docs/readme.md)
 
-=======
->>>>>>> .merge_file_z0JlLm
->>>>>>> .merge_file_FGVKal

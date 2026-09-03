@@ -199,5 +199,3 @@ composer dump-autoload
 
 **Philosophy Summary**: In Laraxot, consistency is not just a preference - it's a fundamental architectural principle that enables maintainable, scalable applications. Follow these patterns to build software that stands the test of time.
 See canonical documentation: ../../../Themes/docs/shared-components/laraxot-consistency-philosophy.md
->>>>>>> .merge_file_qaJRdX
->>>>>>> .merge_file_2rMHsW

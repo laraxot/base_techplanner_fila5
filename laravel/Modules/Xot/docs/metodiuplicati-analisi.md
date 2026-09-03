@@ -1080,5 +1080,3 @@ public function getTableFilters(): array
 
 **Domande?** Chiedi alla Super Mucca! 🐄⚡
 See canonical documentation: ../../../Themes/docs/shared-components/metodi-duplicati-analisi-Modules.md
->>>>>>> .merge_file_cbWLaC
->>>>>>> .merge_file_byDbc0

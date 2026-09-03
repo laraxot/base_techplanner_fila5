@@ -63,5 +63,3 @@ Questo documento fornisce linee guida generali per lo sviluppo e la qualità del
 3. **Mixed Types**: Gestire sempre i tipi `mixed` con type casting appropriato
 4. **Documentation**: Aggiornare sempre la documentazione dopo correzioni significative
 See canonical documentation: ../../../Themes/docs/shared-components/development-guidelines.md
->>>>>>> .merge_file_OZ56i4
->>>>>>> .merge_file_zqZJvI

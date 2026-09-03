@@ -10,7 +10,7 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\file_get_contents;
 
-uses(TestCase::class)->group('no-job-db');
+uses(TestCase::class);
 
 describe('Status', function () {
     it('is an enum', function () {
@@ -40,17 +40,17 @@ describe('Status', function () {
     });
 
     it('getColor returns translation keys via EnumTrait', function () {
-        Assert::assertSame('fix:job::status.values.active.color', Status::Active->getColor());
-        Assert::assertSame('fix:job::status.values.inactive.color', Status::Inactive->getColor());
-        Assert::assertSame('fix:job::status.values.trashed.color', Status::Trashed->getColor());
-        Assert::assertSame('fix:job::status.values.1.color', Status::One->getColor());
+        Assert::assertSame('job::status.values.active.color', Status::Active->getColor());
+        Assert::assertSame('job::status.values.inactive.color', Status::Inactive->getColor());
+        Assert::assertSame('job::status.values.trashed.color', Status::Trashed->getColor());
+        Assert::assertSame('job::status.values.1.color', Status::One->getColor());
     });
 
     it('getIcon returns translation keys via EnumTrait', function () {
-        Assert::assertSame('fix:job::status.values.active.icon', Status::Active->getIcon());
-        Assert::assertSame('fix:job::status.values.inactive.icon', Status::Inactive->getIcon());
-        Assert::assertSame('fix:job::status.values.trashed.icon', Status::Trashed->getIcon());
-        Assert::assertSame('fix:job::status.values.1.icon', Status::One->getIcon());
+        Assert::assertSame('job::status.values.active.icon', Status::Active->getIcon());
+        Assert::assertSame('job::status.values.inactive.icon', Status::Inactive->getIcon());
+        Assert::assertSame('job::status.values.trashed.icon', Status::Trashed->getIcon());
+        Assert::assertSame('job::status.values.1.icon', Status::One->getIcon());
     });
 
     it('getLabel returns a non-empty string', function () {

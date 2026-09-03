@@ -98,4 +98,3 @@ public function panel(Panel $panel): Panel
 
 *Ultimo aggiornamento: [DATE]*
 
->>>>>>> .merge_file_IBkMDN

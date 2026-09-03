@@ -184,5 +184,3 @@ All module tests use **Pest** framework. PHPStan has challenges with Pest's magi
 *Generated during PHPStan compliance implementation*
 *Task: "Analyze and fix all PHPStan errors in Modules/"*
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-remaining-errors-analysis.md
->>>>>>> .merge_file_CimKmv
->>>>>>> .merge_file_DrwIRZ

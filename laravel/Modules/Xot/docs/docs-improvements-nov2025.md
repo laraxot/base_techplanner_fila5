@@ -279,4 +279,3 @@ find . -name "readme.md" -o -name "Readme.md"
 4. **Index centrali**: Creare README.md con indici per navigazione rapida
 
 
->>>>>>> .merge_file_yDVCc8

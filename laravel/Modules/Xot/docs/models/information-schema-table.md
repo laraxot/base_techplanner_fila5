@@ -51,5 +51,3 @@ class InformationSchemaTable extends Model
 - [Model Best Practices](../models/README.md)
 - [Model Best Practices](../models/readme.md)
 - [Model Best Practices](../models/README.md)
->>>>>>> .merge_file_SxgZ3S
->>>>>>> .merge_file_idI7TX

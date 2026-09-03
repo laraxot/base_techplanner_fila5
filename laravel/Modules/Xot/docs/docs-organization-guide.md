@@ -222,7 +222,6 @@ find Modules/*/docs -type f | sort -f | uniq -di
 # Sposta file vecchi in _archive con data
 mv old-file.md _archive/2024-01-15-old-file.md
 mv old-file.md _archive/[DATE]-old-file.md
->>>>>>> .merge_file_jpDTrJ
 ```
 
 **Quando archiviare**:
@@ -243,7 +242,6 @@ mv old-file.md _archive/[DATE]-old-file.md
 [Link](../parent-folder/file.md)
 [Link](../../Modules/Other/docs/file.md)
 [Link](../../modules/other/docs/file.md)
->>>>>>> .merge_file_jpDTrJ
 
 ❌ SBAGLIATO:
 [Link](/absolute/path/file.md)
@@ -571,7 +569,6 @@ Per migliorare questa guida:
 
 **Ultimo aggiornamento**: 2025-01-06
 **Ultimo aggiornamento**: [DATE]
->>>>>>> .merge_file_jpDTrJ
 **Versione**: 1.0
 **Status**: ✅ Active
 **Maintainer**: Team Laraxot

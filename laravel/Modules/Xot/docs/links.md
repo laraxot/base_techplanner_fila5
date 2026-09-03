@@ -23,7 +23,6 @@
 - [Modulo Performance](../performance/docs/readme.md) - Sistema di valutazione e performance
 - [Modulo Lang](../lang/docs/readme.md) - Gestione multilingua e traduzioni
 
->>>>>>> .merge_file_wCsZxq
 
 ## Documentazione Tecnica
 
@@ -181,7 +180,6 @@
 ## Documentazione Generica
 - [README](../docs/README.md) - Documentazione principale del progetto
 - [README](../docs/readme.md) - Documentazione principale del progetto
->>>>>>> .merge_file_wCsZxq
 - [Roadmap](../docs/roadmap.md) - Piano di sviluppo
 - [Filosofia](../docs/filosofia.md) - Principi e filosofia del progetto
 
@@ -192,7 +190,6 @@
 - [Regole di Progetto](./rules/prompt_rules.md)
 - [Standard di Codice](./standards/code-standards.md)
 - [Convenzioni di Nomenclatura](./conventions/naming-conventions.md)
->>>>>>> .merge_file_wCsZxq
 - [Installazione](./installation.md)
 - [Configurazione](./configuration.md)
 - [Risoluzione Problemi](./troubleshooting.md)
@@ -268,4 +265,3 @@
 * [links.md](../../cms/docs/links.md)
 * [links.md](../../../themes/one/docs/links.md)
 
->>>>>>> .merge_file_wCsZxq

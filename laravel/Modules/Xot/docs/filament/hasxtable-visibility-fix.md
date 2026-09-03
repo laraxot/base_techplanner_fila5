@@ -66,7 +66,6 @@ protected function getTableEmptyStateActions(): array
 
 3. **`Modules/healthcare_app/docs/question-chart-implementation-guide.md`**
 3. **`Modules/Quaeris/docs/question-chart-implementation-guide.md`**
->>>>>>> .merge_file_oK58bS
    - Aggiunta nota critica sulla visibilità dei metodi `getTable*()`
 
 ## Pattern Corretto
@@ -123,7 +122,6 @@ Dopo la correzione, l'errore non dovrebbe più verificarsi:
 # Test accesso pagina
 curl http://healthcare_app.local/healthcare_app/admin/ats/survey-pdfs/16/question-charts/226
 curl http://quaeris.local/quaeris/admin/ats/survey-pdfs/16/question-charts/226
->>>>>>> .merge_file_oK58bS
 # ✅ Dovrebbe funzionare senza errori
 ```
 
@@ -140,6 +138,4 @@ curl http://quaeris.local/quaeris/admin/ats/survey-pdfs/16/question-charts/226
 3. **Documentazione**: La documentazione esistente (`widget-method-visibility-rules.md`) era corretta ma non era stata applicata al trait base
 
 *Ultimo aggiornamento: 2026-01-27*
-=======
 3. **Documentazione**: La documentazione esistente (`widget-method-visibility-rules.md`) era corretta ma non era stata applicata al trait base
->>>>>>> .merge_file_Nz6AbP

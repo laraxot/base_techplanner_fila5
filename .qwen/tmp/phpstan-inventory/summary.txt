@@ -1,0 +1,12 @@
+errors=165
+files=85
+modules=9
+82	User
+23	Employee
+16	Lang
+15	Cms
+12	Xot
+9	Job
+3	Geo
+3	Tenant
+2	Media

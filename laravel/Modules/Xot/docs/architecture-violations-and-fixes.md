@@ -18,10 +18,6 @@ use Modules\<nome modulo>\Models\User;
 
 ```
 
-=======
-```
-
->>>>>>> .merge_file_H8oFT0
 ```php
 // ❌ VIOLAZIONE CRITICA
 use Modules\<nome modulo>\Models\User;
@@ -839,7 +835,6 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 - [User Module Traits](../../user/project_docs/traits_complete_guide.md)
 - [User Module Traits](../../user/project_docs/traits_complete_guide.md)
 
->>>>>>> .merge_file_yzgY0k
 - [Testing Strategy](../../<nome progetto>/project_docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../<nome progetto>/project_docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../<nome modulo>/docs/testing/real-data-testing-strategy.md)
@@ -865,7 +860,6 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 - [User Module Traits](../../user/docs/traits_complete_guide.md)
 - [User Module Traits](../../user/docs/traits_complete_guide.md)
 
->>>>>>> .merge_file_yzgY0k
 - [Testing Strategy](../../<nome modulo>/docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../<nome progetto>/docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../../docs/testing/real-data-testing-strategy.md)
@@ -880,7 +874,6 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 - [User Module Traits](../../user/docs/traits_complete_guide.md)
 - [User Module Traits](../../user/docs/traits_complete_guide.md)
 
->>>>>>> .merge_file_yzgY0k
 - [Testing Strategy](../../<nome modulo>/docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../<nome progetto>/docs/testing/real-data-testing-strategy.md)
 - [Testing Strategy](../../../docs/testing/real-data-testing-strategy.md)
@@ -1281,7 +1274,6 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 - [User Module Traits](../../User/project_docs/traits_complete_guide.md)
 - [Cms Architecture](../../cms/project_docs/architecture-xotdata-pattern.md)
 - [User Module Traits](../../user/project_docs/traits_complete_guide.md)
->>>>>>> .merge_file_yzgY0k
 - [Testing Strategy](../../<nome progetto>/project_docs/testing/real-data-testing-strategy.md)
 
 ---

@@ -23,7 +23,6 @@ interface HasTranslationsContract
      */
     /**
      * @param  array<string, mixed>|int|string|null  $value
-     * @param  array<string, mixed>|int|string|null  $value
      */
     public function setTranslation(string $key, string $locale, int|array|string|null $value): self;
 }

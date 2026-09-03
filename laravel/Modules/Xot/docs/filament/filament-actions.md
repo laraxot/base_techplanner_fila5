@@ -113,5 +113,3 @@ Le traduzioni per le azioni devono essere definite nel file di traduzione del mo
 6. Utilizzare azioni in coda per operazioni pesanti
 7. Fornire feedback appropriati all'utente 
 See canonical documentation: ../../../../Themes/docs/shared-components/filament-actions.md
->>>>>>> .merge_file_a28Nla
->>>>>>> .merge_file_AffyPY

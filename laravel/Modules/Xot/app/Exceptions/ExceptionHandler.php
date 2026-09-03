@@ -33,9 +33,7 @@ class ExceptionHandler
 
             $view = 'pub_theme::errors.'.$status_code;
             if (! view()->exists($view)) {
-                throw new Exception(
-                    'view not found: ['.$view.'] view path:'.app(GetViewPathAction::class)->execute($view),
-                );
+                throw new \Exception('view not found: ['.$view.'] view path:'.app(GetViewPathAction::class)->execute($view));
             }
             $view_params = ['exception' => $e];
 

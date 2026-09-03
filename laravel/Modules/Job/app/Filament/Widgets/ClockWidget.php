@@ -87,7 +87,8 @@ class ClockWidget extends XotBaseWidget
         // $output = new StreamOutput(fopen('/path/to/output.log', 'a', false));
 
         Artisan::call('route:list', [], $output);
-        throw new \RuntimeException('Removed debug dddx');
+        dddx($output);
+
         // dddx($output);
         // dddx($output->fetch());
         /*

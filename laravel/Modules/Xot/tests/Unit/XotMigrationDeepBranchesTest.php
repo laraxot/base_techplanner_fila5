@@ -118,7 +118,7 @@ describe('Xot migration deep branches', function (): void {
         $builder->shouldReceive('hasColumn')->andReturn(true);
         $builder->shouldReceive('hasIndex')->andReturn(false);
 
-        // Invoke hasPrimaryKey/hasForeignKey with mocked getConn if possible
+        // Invoke hasPrimaryKey with mocked getConn if possible
         try {
             $migration->hasPrimaryKey();
         } catch (\Throwable) {

@@ -121,5 +121,3 @@ Prima di considerare completo un Panel Provider, verificare:
 
 *Ultimo aggiornamento: Dicembre 2024*
 See canonical documentation: ../../../Themes/docs/shared-components/panel-provider-patterns.md
->>>>>>> .merge_file_0IwF51
->>>>>>> .merge_file_qduYyO

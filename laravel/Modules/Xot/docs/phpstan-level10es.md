@@ -263,5 +263,3 @@ public function handle(Failed $event): void
 3. Mantieni aggiornata la documentazione quando vengono modificati metodi o proprietà.
 4. Utilizza strumenti di analisi automatica come PHPStan regolarmente per verificare che il codice rimanga conforme.
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-level10-fixes-Modules.md
->>>>>>> .merge_file_NQQA6X
->>>>>>> .merge_file_xFgadm

@@ -149,7 +149,6 @@ done
 
 - [Modules/Progressioni/project_docs/plan.md](../../progressioni/project_docs/plan.md) - Piano di verifica sistematica
 
->>>>>>> .merge_file_nhc1IU
 - [Modules/Xot/project_docs/filament/resources/architecture/forbidden-methods.md](resources/architecture/forbidden-methods.md) - Metodi vietati in XotBaseResource
 - [Modules/Xot/project_docs/filament_best_practices.md](../filament_best_practices.md) - Best practices Filament
 - [/.windsurf/rules/filament-resource-model-alignment.mdc](../../../../.windsurf/rules/filament-resource-model-alignment.mdc) - Regole Windsurf
@@ -163,7 +162,4 @@ canonical: ../../../../Themes/docs/shared-components/critical-resource-model-ali
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/critical-resource-model-alignment.md
-=======
 See canonical documentation: ../../../../Themes/docs/shared-components/critical-resource-model-alignment.md
->>>>>>> .merge_file_nhc1IU
->>>>>>> .merge_file_SA1G24

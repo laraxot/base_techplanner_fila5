@@ -67,4 +67,3 @@ The Xot base classes provide a centralized way to customize and extend functiona
 - [Patient Module - Filament Customization](../../patient/docs/filament_customization.md)
 - [Patient Module - Namespace Conventions](../../patient/docs/namespace_conventions.md)
 
->>>>>>> .merge_file_TSoZJs

@@ -84,8 +84,7 @@ describe('Notify remaining coverage sweep', function (): void {
         $device = (new SendPushToDeviceAction())->execute($token, $notification);
         Assert::assertArrayHasKey('fcm', $device);
 
-        $jobId = (new SchedulePushNotificationAction())->execute(
-            [$token],
+        $jobId = (new SchedulePushNotificationAction())->execute([$token],
             $notification,
             [],
             new DateTime('+1 hour'),
@@ -148,8 +147,7 @@ describe('Notify remaining coverage sweep', function (): void {
         try {
             Assert::assertInstanceOf(
                 TelegramProviderActionInterface::class,
-                (new TelegramActionFactory())->create(),
-            );
+                (new TelegramActionFactory())->create(), );
         } catch (\Throwable $e) {
             Assert::assertNotSame('', $e->getMessage());
         }
@@ -168,7 +166,6 @@ describe('Notify remaining coverage sweep', function (): void {
 
         $notification = new NotifyNetfunNotificationStub();
         $notifiable = new NotifyNetfunNotifiableStub();
-
         try {
             $netfun = app(NetfunChannel::class);
             $result = $netfun->send($notifiable, $notification);

@@ -37,8 +37,6 @@
 
 ## 🔗 **Moduli Dipendenti**
 
-=======
->>>>>>> .merge_file_XeMn8U
 ## 🏛️ Architettura Core
 - 📐 [Architecture Complete Guide](./architecture-complete.md) - Deep dive nel sistema modulare.
 - 🧬 [Base Classes (XotBase)](./xot-base-classes.md) - Regole per estendere Resource, Page e Widget.
@@ -317,5 +315,4 @@
 - [Dependency intelligence](dependency-intelligence.md)
 - [Dependency intelligence](dependency-intelligence.md)
 
-=======
->>>>>>> .merge_file_XeMn8U
+- [Dependency intelligence](dependency-intelligence.md)

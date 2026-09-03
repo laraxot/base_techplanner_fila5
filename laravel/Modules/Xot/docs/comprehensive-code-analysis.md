@@ -424,7 +424,6 @@ return [
 - [Pattern Filament](./filament_patterns.md)
 - [Performance Optimization](./performance_guide.md)
 
->>>>>>> .merge_file_qD7Y3I
 
 ## 📊 Metriche di Qualità
 
@@ -444,7 +443,6 @@ return [
 
 **Data Analisi**: 2025-01-06
 **Data Analisi**: [DATE]
->>>>>>> .merge_file_qD7Y3I
 **Analista**: AI Code Review System
 **Priorità**: CRITICA - Richiede intervento immediato
 **Stima Effort**: 40-60 ore di refactoring
@@ -874,7 +872,6 @@ return [
 - [Pattern Filament](./filament_patterns.md)
 - [Performance Optimization](./performance_guide.md)
 
->>>>>>> .merge_file_qD7Y3I
 
 ## 📊 Metriche di Qualità
 
@@ -894,7 +891,6 @@ return [
 
 **Data Analisi**: 2025-01-06
 **Data Analisi**: [DATE]
->>>>>>> .merge_file_qD7Y3I
 **Analista**: AI Code Review System
 **Priorità**: CRITICA - Richiede intervento immediato
 **Stima Effort**: 40-60 ore di refactoring

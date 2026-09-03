@@ -56,7 +56,6 @@ ModuleName/
 - [Lang](../lang/docs/readme.md) - Traduzioni
 - [User](../user/docs/readme.md) - Gestione utenti
 
->>>>>>> .merge_file_X9ACsf
 
 ## Struttura Dettagliata
 
@@ -346,7 +345,6 @@ User/
 - [Dashboard](../chart/docs/dashboard.md)
 - [Visualizzazione](../chart/docs/visualization.md)
 
->>>>>>> .merge_file_X9ACsf
 
 # Struttura dei Moduli Laravel
 

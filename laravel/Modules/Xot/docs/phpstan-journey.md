@@ -35,7 +35,6 @@
 | 8 | **Job** | 2 | 0 | 10 | ✨ Illuminato |
 | 9 | **healthcare_app** | 13 | 0 | 10 | ✨ Illuminato |
 | 9 | **Quaeris** | 13 | 0 | 10 | ✨ Illuminato |
->>>>>>> .merge_file_izRK8m
 
 ### 📈 Metriche dell'Illuminazione
 
@@ -88,7 +87,6 @@ Codice perfetto
 ### 1️⃣ Semantic Keys (Il Nome delle Cose)
 **Moduli**: Cms, healthcare_app
 **Moduli**: Cms, Quaeris
->>>>>>> .merge_file_izRK8m
 
 **Insegnamento**:
 > "Un array con int keys è come un tempio senza insegne.
@@ -123,7 +121,6 @@ if (is_array($value)) { /* ... */ }  // Dopo filter che garantisce array
 ### 3️⃣ Cascading Purity (L'Effetto Farfalla)
 **Modulo**: healthcare_app
 **Modulo**: Quaeris
->>>>>>> .merge_file_izRK8m
 
 **Insegnamento**:
 > "Una goccia crea cerchi in tutto il lago.
@@ -238,7 +235,6 @@ Level 10 → 🏔️ Nirvana
             │ Perfezione assoluta
             └─ Job, healthcare_app
             └─ Job, Quaeris
->>>>>>> .merge_file_izRK8m
 
 Level 9  → ⛰️  Illuminazione
             │ Quasi perfezione
@@ -265,7 +261,6 @@ Level 0  → 🏕️  Campo Base
 
 2. **`Modules/healthcare_app/docs/phpstan-enlightenment.md`**
 2. **`Modules/Quaeris/docs/phpstan-enlightenment.md`**
->>>>>>> .merge_file_izRK8m
    - Filosofia del modulo
    - I 4 Pilastri
    - Le 4 Nobili Verità del Type Safety
@@ -357,8 +352,6 @@ La story 4.13 ha cancellato quelle tautologie, ristretto `FileAction::viewNamesp
 Misura `analyse Modules/Xot`, tmpDir isolata: **30 → 0**. Dettaglio ricette: [phpstan-rules.md](./quality/phpstan-rules.md).
 
 
-=======
->>>>>>> .merge_file_jHjBnr
 ## 🌟 Conclusione: Il Cerchio Infinito
 
 ```

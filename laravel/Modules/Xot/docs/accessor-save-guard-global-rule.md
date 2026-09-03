@@ -305,7 +305,6 @@ test('accessor salva se model ha PK', function () {
 - [Accessor Pattern](../../sigma/docs/scheda-trait-accessor-pattern.md)
 - [Refactoring Philosophy](../../sigma/docs/accessor-refactoring-philosophy.md)
 
->>>>>>> .merge_file_Syca8X
 
 ### Regole Globali
 - [.cursor/rules/accessor-save-guard.mdc](../../../.cursor/rules/accessor-save-guard.mdc) (da creare)
@@ -315,7 +314,6 @@ test('accessor salva se model ha PK', function () {
 
 **Creato**: 2025-01-29
 **Creato**: [DATE]
->>>>>>> .merge_file_Syca8X
 **Tipo**: Regola Architettutale Globale
 **Applicazione**: Tutti i moduli
 **Severità**: 🔴 CRITICA

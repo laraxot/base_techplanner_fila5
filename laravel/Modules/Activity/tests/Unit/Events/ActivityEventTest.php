@@ -3,7 +3,10 @@
 declare(strict_types=1);
 
 use Modules\Activity\Events\ActivityEvent;
+use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 test('ActivityEvent uses expected Laravel event traits', function () {
     $event = new ActivityEvent();

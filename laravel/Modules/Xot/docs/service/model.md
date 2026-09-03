@@ -112,7 +112,7 @@ function ($item, $key) use ($methods) {
         if (! \is_string($k)) {
             dddx([$k, $v, $data]);
         }
-        
+
         $rows = $model->$k();
         $related = null;
         if (\is_object($rows) && method_exists($rows, 'getRelated')) {
@@ -263,7 +263,6 @@ public function getRelationships(): array {
 
 Example
 
-
 ```php
 $profile=PressPost::get()->first();
 ModelService::make()->setModel($profile)->getRelationships();
@@ -271,7 +270,6 @@ ModelService::make()->setModel($profile)->getRelationships();
 
 * Gets the reflection class from $model
 * Gets the public methods from reflection class, and iterates on themù
-
 
 * If the current function name (getRelationships) is equal to the method name
 * OR If the method has more then 0 parameters
@@ -297,7 +295,5 @@ foreach ((new ReflectionClass($model))->getMethods(ReflectionMethod::IS_PUBLIC) 
 ```
 * [model.md](../../../Xot/docs/model.md)
 * [model.md](../../../Xot/docs/service/model.md)
-=======
->>>>>>> .merge_file_UDxMnI
 
 ```

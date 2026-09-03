@@ -27,7 +27,6 @@ Questo documento fornisce linee guida generali per lo sviluppo e la qualità del
 - [Lang Console Commands](../Lang/docs/phpstan-corrections.md)
 - [FormBuilder FieldOption Model](../formbuilder/docs/phpstan-corrections.md)
 - [Lang Console Commands](../lang/docs/phpstan-corrections.md)
->>>>>>> .merge_file_bm2DgS
 
 ## Principi di Correzione
 
@@ -52,7 +51,6 @@ Questo documento fornisce linee guida generali per lo sviluppo e la qualità del
 - [Lang PHPStan Corrections](../Lang/docs/phpstan-corrections.md)
 - [FormBuilder PHPStan Corrections](../formbuilder/docs/phpstan-corrections.md)
 - [Lang PHPStan Corrections](../lang/docs/phpstan-corrections.md)
->>>>>>> .merge_file_bm2DgS
 - [Xot Architecture](./architecture.md)
 
 ## Note per Sviluppo Futuro

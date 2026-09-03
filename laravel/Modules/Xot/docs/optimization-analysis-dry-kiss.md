@@ -18,7 +18,7 @@ Identificazione sistematica di codice replicato e opportunità di ottimizzazione
 class ModuleServiceProvider extends XotBaseServiceProvider
 {
     public string $name = 'ModuleName';
-    
+
     public function boot(): void
     {
         parent::boot();
@@ -44,7 +44,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         $reflection = new \ReflectionClass($this);
         $modulePath = dirname($reflection->getFileName(), 3);
         $moduleNamespace = $this->extractModuleNamespace($reflection);
-        
+
         // Auto-load resources basato su convenzioni
         $this->autoLoadViews($modulePath, $moduleNamespace);
         $this->autoLoadTranslations($modulePath, $moduleNamespace);
@@ -96,14 +96,14 @@ trait HasWidgetConfigurationTrait
 {
     use HasTranslationPatternsTrait;
     use HasCachingPatternsTrait;
-    
+
     protected function configureWidget(): void
     {
         $this->heading = $this->getTranslatedHeading();
         $this->description = $this->getTranslatedDescription();
         $this->configureCaching();
     }
-    
+
     protected function getWidgetTranslationPrefix(): string
     {
         return 'widgets.' . Str::snake(class_basename($this));
@@ -129,13 +129,13 @@ abstract class XotBaseFormComponent extends Field
     use HasFieldConfigurationTrait;
     use HasValidationPatternsTrait;
     use HasTranslationPatternsTrait;
-    
+
     protected function setUp(): void
     {
         parent::setUp();
         $this->autoConfigureField();
     }
-    
+
     protected function autoConfigureField(): void
     {
         $this->label($this->getAutoLabel())
@@ -164,12 +164,12 @@ class QueryAnalysisService
     {
         // Logica centralizzata per analisi query duplicate
     }
-    
+
     public function identifySlowQueries(array $queries, int $threshold = 100): array
     {
         // Logica per identificazione query lente
     }
-    
+
     public function generateOptimizationSuggestions(array $analysis): array
     {
         // Generazione automatica suggerimenti ottimizzazione
@@ -196,7 +196,7 @@ abstract class XotBaseMigration extends Migration
         if ($this->hasTable($tableName)) {
             return;
         }
-        
+
         Schema::create($tableName, function (Blueprint $table) use ($schemaCallback) {
             $table->id();
             $schemaCallback($table);
@@ -273,7 +273,6 @@ abstract class XotBaseMigration extends Migration
 - [XotBaseFormComponent.php](/var/www/html/_bases/base_quaeris_fila3_mono/laravel/Modules/Xot/app/Filament/Forms/Components/XotBaseFormComponent.php)
 - [AnalyzePerformanceCommand.php](/var/www/html/_bases/base_quaeris_fila3_mono/laravel/Modules/Xot/app/Console/Commands/AnalyzePerformanceCommand.php)
 
->>>>>>> .merge_file_vIy7Cl
 
 ---
 *Analisi completata con principi DRY + KISS | Data: $(date)*

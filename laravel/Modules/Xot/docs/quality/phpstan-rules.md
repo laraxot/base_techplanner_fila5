@@ -27,7 +27,6 @@
   - `HasCommonScopes::scopeCreatedAfter/Before/UpdatedAfter` è `Carbon|string|\DateTimeInterface`: è ciò che Eloquent `where()` accetta sulle timestamp, e i test passano una stringa ISO.
   - `XotBaseServiceProvider::registerCommands` itera `ComponentFileData` (stesso idioma di `RegisterBladeComponentsAction`), non `array_map(mixed $item)`. Il class-string del comando è `$comp->ns`.
 - **Mixed types**: Usali solo come ultima spiaggia
->>>>>>> .merge_file_DNeDZS
 
 ---
 
@@ -66,10 +65,7 @@ public function getTableActions(): array
 
 // ✅ CORRETTO - chiavi stringa, valore tipizzato (non mixed)
 // ✅ CORRETTO - array<string, mixed>
-=======
-// ✅ CORRETTO - chiavi stringa, valore tipizzato (non mixed)
->>>>>>> .merge_file_brl3SY
->>>>>>> .merge_file_DNeDZS
+// ✅ CORRETTO - array<string, mixed>
 public function getTableActions(): array
 {
     return [
@@ -138,14 +134,12 @@ public function via($notifiable): array
 // ✅ CORRETTO - array<string, string>, non mixed
 /**
  * @return array<string, string>
-=======
-// ✅ CORRETTO - array<string, string>, non mixed
-/**
- * @return array<string, string>
 // ✅ CORRETTO - array<string, mixed>
 /**
  * @return array<string, mixed>
->>>>>>> .merge_file_DNeDZS
+// ✅ CORRETTO - array<string, mixed>
+/**
+ * @return array<string, mixed>
  */
 public function via($notifiable): array
 {
@@ -268,5 +262,3 @@ Story 4.13: 706 (contesto) → 30 (baseline sessione) → **0**. Helper `ModuleE
 - [XotBaseServiceProvider](../providers/xotbaseserviceprovider.md)
 - [HasCommonScopes](../wiki/architecture/architecture-complete.md)
 
-=======
->>>>>>> .merge_file_brl3SY

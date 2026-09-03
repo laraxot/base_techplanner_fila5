@@ -243,5 +243,3 @@ Le prossime fasi si concentreranno sul completamento del consolidamento e sul mi
 **Stato**: Consolidamento in corso
 **Prossimo Update**: Completamento consolidamento root docs
 See canonical documentation: ../../../Themes/docs/shared-components/docs-consolidation-report-conflict.md
->>>>>>> .merge_file_IicprA
->>>>>>> .merge_file_DOeyRo

@@ -25,5 +25,3 @@ See canonical documentation: ../../../../Themes/docs/shared-components/filament-
 - [Filament Actions](https://filamentphp.com/docs/3.x/actions/installation)
 - [Filament Resources](https://filamentphp.com/docs/3.x/resources/installation) 
 See canonical documentation: ../../../../Themes/docs/shared-components/filament-guide.md
->>>>>>> .merge_file_dzsSHY
->>>>>>> .merge_file_0OiJCE

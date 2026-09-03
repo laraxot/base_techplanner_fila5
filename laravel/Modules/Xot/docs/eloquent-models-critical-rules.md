@@ -32,14 +32,12 @@ if (isset($model->field_name)) {
 #### 1. Verificare Attributi del Modello
 ```php
 // ✅ Verificare se un attributo esiste nel modello
->>>>>>> .merge_file_BRNyFa
 if ($model->hasAttribute('field_name')) {
     // logica corretta
 }
 
 // ✅ CORRETTO - Verificare se un campo è fillable
 // ✅ Verificare se un campo è fillable
->>>>>>> .merge_file_BRNyFa
 if ($model->isFillable('field_name')) {
     // logica corretta per campi modificabili
 }
@@ -63,7 +61,6 @@ if (isset($model->field_name)) {
 if (!is_null($model->field_name)) {
     // verifica valore non null
 
->>>>>>> .merge_file_BRNyFa
 }
 ```
 

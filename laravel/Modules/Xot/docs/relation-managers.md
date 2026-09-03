@@ -9,8 +9,6 @@ updated: 2026-08-24
 ---
 
 
-=======
->>>>>>> .merge_file_687Yby
 # XotBaseRelationManager per Laraxot PTVX
 
 ## Panoramica

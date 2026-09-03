@@ -265,5 +265,3 @@ When reviewing provider code:
 
 **Note**: Always consult this index before creating or modifying providers. Keep it updated when adding new provider documentation.
 See canonical documentation: ../../../Themes/docs/shared-components/provider-documentation-index.md
->>>>>>> .merge_file_HeE13G
->>>>>>> .merge_file_zUl8Ws

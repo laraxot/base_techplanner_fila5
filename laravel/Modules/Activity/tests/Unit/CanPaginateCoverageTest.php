@@ -11,6 +11,9 @@ use Illuminate\Pagination\LengthAwarePaginator;
 use Modules\Activity\Database\Factories\ActivityFactory;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\Fixtures\CanPaginateHarness;
+use Modules\Activity\Tests\TestCase;
+
+uses(TestCase::class);
 
 function makeCanPaginateHarness(): CanPaginateHarness
 {

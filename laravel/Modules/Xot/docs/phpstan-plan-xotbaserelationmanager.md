@@ -160,5 +160,3 @@ public function canDeleteBulk(Model|\stdClass $record): bool
 - Seguire convenzioni Filament
 - Documentare cambiamenti
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fix-plan-xotbaserelationmanager.md
->>>>>>> .merge_file_rHvlvt
->>>>>>> .merge_file_BNTk13

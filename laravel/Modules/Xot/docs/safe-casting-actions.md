@@ -8,8 +8,6 @@ Chi lo usa: admin job (conteggi, argomenti schedule). Un cast sbagliato altera i
 Dettaglio del caso Job: [typed-model-properties-over-raw-attributes.md](../../Job/docs/typed-model-properties-over-raw-attributes.md).
 
 
-=======
->>>>>>> .merge_file_QOaa6W
 ## Overview
 
 The Safe Casting Actions provide a centralized, robust solution for handling PHPStan "Cannot cast mixed to X" errors throughout the codebase. These actions follow DRY (Don't Repeat Yourself) and KISS (Keep It Simple, Stupid) principles.

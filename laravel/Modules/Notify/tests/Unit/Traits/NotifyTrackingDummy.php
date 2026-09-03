@@ -28,6 +28,7 @@ final class NotifyTrackingDummy
     {
         return $this->isTrackingEnabled();
     }
+
     public function pixelTrackingEnabled(): bool
     {
         return $this->isPixelTrackingEnabled();

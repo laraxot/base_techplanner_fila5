@@ -26,7 +26,6 @@ Integrazione documentazione completata:
 
 ## Contenuto originale (txt)
 
->>>>>>> .merge_file_QhYtKu
 ---
 module: theme
 topic: completato

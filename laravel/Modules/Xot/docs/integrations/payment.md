@@ -25,5 +25,3 @@ ${cat /mnt/f/var/www/quaeris/laravel/Modules/Xot/_docs/payment_gateway.txt}
 ```txt
 ${cat /mnt/f/var/www/quaeris/laravel/Modules/Xot/_docs/cart_session.txt}
 ```
-
->>>>>>> .merge_file_i5pu05

@@ -25,21 +25,28 @@ class TransCollectionAction
      */
     public function execute(Collection $collection, ?string $transKey): Collection
     {
-        $asStrings = $collection->map(SafeStringCastAction::cast(...));
         if ($transKey === null) {
-            return $asStrings;
+            return $collection->map(SafeStringCastAction::cast(...));
         }
 
         $this->transKey = $transKey;
 
-        return $asStrings->map($this->trans(...));
+        return $collection->map($this->trans(...));
     }
 
     /**
-     * Traduce una chiave già resa stringa (dopo SafeStringCast).
+     * Traduce un singolo elemento.
+     *
+     * @param  mixed  $item  L'elemento da tradurre
+     * @return string L'elemento tradotto o l'elemento originale se la traduzione non esiste
      */
-    public function trans(string $item): string
+    public function trans(mixed $item): string
     {
+        // Converte l'item in stringa se non lo è già
+        if (! \is_string($item)) {
+            $item = SafeStringCastAction::cast($item);
+        }
+
         if ($item === '' || $item === '0' || $this->transKey === null) {
             return $item;
         }

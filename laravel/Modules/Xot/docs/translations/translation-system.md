@@ -459,5 +459,3 @@ php artisan view:clear
 - [Best Practices Filament](../project_docs/filament-best-practices.md)
 - [Schema Conventions](../project_docs/schema-conventions.md)
 See canonical documentation: ../../../../Themes/docs/shared-components/translation-system.md
->>>>>>> .merge_file_qWoI3Z
->>>>>>> .merge_file_18wKOA

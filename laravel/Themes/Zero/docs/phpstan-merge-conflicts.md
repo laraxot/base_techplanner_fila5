@@ -9,3 +9,8 @@ related:
   - "./00-index.md"
   - "./00-index.md"
 ---
+
+  - "./00-INDEX.md"
+  - "./00-index.md"
+---
+

@@ -237,5 +237,3 @@ return [
 
 **Ultimo aggiornamento**: [DATE]
 See canonical documentation: ../../../Themes/docs/shared-components/forbidden-properties-removal-complete.md
->>>>>>> .merge_file_aoiEBo
->>>>>>> .merge_file_sAGkOO

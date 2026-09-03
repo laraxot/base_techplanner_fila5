@@ -54,4 +54,3 @@ class WebhookErrorFormatter implements ErrorFormatterContract
 - [PHPStan Level 9 Guide](../../phpstan-level9-guide.md)
 - [Error Formatters Overview](../readme.md)
 
->>>>>>> .merge_file_Crso3i

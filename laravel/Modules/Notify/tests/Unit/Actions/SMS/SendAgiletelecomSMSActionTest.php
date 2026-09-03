@@ -15,7 +15,7 @@ it('SendAgiletelecomSMSAction can be instantiated', function () {
 });
 
 it('SendAgiletelecomSMSAction has execute method with correct signature', function () {
-    $action = new SendAgiletelecomSMSAction;
+    $action = new SendAgiletelecomSMSAction();
     $reflection = new ReflectionClass($action);
     $method = $reflection->getMethod('execute');
 

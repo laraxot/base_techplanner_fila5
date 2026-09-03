@@ -329,7 +329,6 @@ Before committing ANY ServiceProvider:
 - [ServiceProvider Minimal Structure](./serviceprovider-minimal-structure.md) - Official guide
 - [Provider Errors - Lessons Learned](../../Meetup/docs/provider-errors-lessons-learned.md) - Real-world examples
 - [Provider Errors - Lessons Learned](../../meetup/docs/provider-errors-lessons-learned.md) - Real-world examples
->>>>>>> .merge_file_3t3HMX
 - [XotBaseServiceProvider Source](../../Xot/app/Providers/XotBaseServiceProvider.php) - See what parent does
 - [XotBase Extension Rules](./xotbase-extension-rules.md) - General XotBase patterns
 

@@ -16,7 +16,6 @@ Il sistema di widget è organizzato attorno a classi base che forniscono funzion
 
 - [XotBaseWidget](/var/www/html/base_generic/laravel/Modules/Xot/docs/filament/widgets/xotbasewidget.md) - Classe base per tutti i widget
 
->>>>>>> .merge_file_awPQQd
 
 ## Best Practices
 
@@ -33,7 +32,7 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
 class DashboardStatsWidget extends XotBaseWidget
 {
     protected static string $view = 'dashboard::widgets.stats';
-    
+
     protected function getData(): array
     {
         return [
@@ -252,7 +251,4 @@ Prima di committare un wizard widget, verifica TUTTI i punti:
 ---
 
 *Ultimo aggiornamento: 2026-04-14*
-=======
 *Ultimo aggiornamento: 2026-04-14*
->>>>>>> .merge_file_awPQQd
->>>>>>> .merge_file_qbyTyK

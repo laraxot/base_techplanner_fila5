@@ -64,7 +64,7 @@ class UserResource extends XotBaseResource
             // Schema del form
         ];
     }
-    
+
     public static function getTableColumns(): array
     {
         return [
@@ -188,7 +188,6 @@ public static function getTableColumns(): array
             ->color('primary'),
             
 
->>>>>>> .merge_file_7OsT6c
         Tables\Columns\TextColumn::make('created_at')
             ->dateTime()
             ->sortable(),
@@ -224,7 +223,7 @@ public static function getTableBulkActions(): array
 public function boot(): void
 {
     parent::boot();
-    
+
     // Registrazione risorse Filament
     Filament::registerResources([
         UserResource::class,
@@ -277,7 +276,6 @@ return [
 - [Convenzioni di Naming](../core/naming-conventions.md)
 - [Best Practices Sistema](../../../../docs/core/best-practices.md)
 - [Best Practices Sistema](../../../docs/core/best-practices.md)
->>>>>>> .merge_file_7OsT6c
 - [Template Filament](../templates/filament.md)
 
 ---
@@ -285,7 +283,4 @@ return [
 **Ultimo aggiornamento:** Gennaio 2025
 **Ultimo aggiornamento:** Gennaio 2025  
 **Versione:** 2.0 - Consolidata DRY + KISS
-=======
 **Versione:** 2.0 - Consolidata DRY + KISS
->>>>>>> .merge_file_7OsT6c
->>>>>>> .merge_file_XeyP5l

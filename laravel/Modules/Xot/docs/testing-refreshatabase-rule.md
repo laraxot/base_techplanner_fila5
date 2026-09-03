@@ -236,7 +236,6 @@ grep -r "RefreshDatabase" Modules/ --include="*.php"
 This should return no results (except this documentation file).
 
 
->>>>>>> .merge_file_mBn7E1
 ---
 
 **Remember**: This rule is fundamental to the performance and reliability of the test suite in the Laraxot framework. Always use DatabaseTransactions or other alternatives instead of RefreshDatabase.

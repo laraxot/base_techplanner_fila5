@@ -9,7 +9,6 @@ Questa documentazione elenca i conflitti comuni che possono verificarsi quando s
 **Versione Laravel**: 12.x
 **Data Creazione**: 2025-09-29
 **Data Creazione**: [DATE]
->>>>>>> .merge_file_o8HsTB
 
 ## 🎯 Obiettivo
 
@@ -530,7 +529,6 @@ Questa documentazione elenca i conflitti comuni che possono verificarsi quando s
 **Versione Laravel**: 12.x
 **Data Creazione**: 2025-09-29
 **Data Creazione**: [DATE]
->>>>>>> .merge_file_o8HsTB
 
 ## 🎯 Obiettivo
 

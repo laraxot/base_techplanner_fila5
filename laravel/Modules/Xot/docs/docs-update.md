@@ -236,7 +236,6 @@ Aggiornamento massivo documentazione progetto con:
 
 - [bashscripts README](../../../bashscripts/readme.md)
 
->>>>>>> .merge_file_XTpnSh
 - [Script Documentation](../../../bashscripts/docs/)
 
 ### External

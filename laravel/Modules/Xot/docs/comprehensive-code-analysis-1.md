@@ -401,7 +401,6 @@ try {
 - [Pattern Filament](./filament_patterns.md)
 - [Performance Optimization](./performance_guide.md)
 
->>>>>>> .merge_file_Mtlksu
 
 ## 📊 Metriche di Qualità
 

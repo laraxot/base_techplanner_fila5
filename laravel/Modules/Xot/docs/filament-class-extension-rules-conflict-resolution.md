@@ -3,7 +3,6 @@
 ## Data Risoluzione
 2026-01-02
 [DATE]
->>>>>>> .merge_file_r2EDYO
 
 ## Problema Identificato
 

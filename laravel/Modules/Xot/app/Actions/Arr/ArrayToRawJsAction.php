@@ -48,7 +48,7 @@ class ArrayToRawJsAction
     /** Chiave JS sicura per attributo HTML: identificatore o 'key'. */
     private function jsKey(string $key): string
     {
-        return preg_match('/^[a-zA-Z_][a-zA-Z0-9_]*$/', $key) ? $key : "'".str_replace("'", "\\'", $key)."'";
+        return preg_match('/^[a-zA-Z_][a-zA-Z0-9_]*$/', $key) === 1 ? $key : "'".str_replace("'", "\\'", $key)."'";
     }
 
     /** Valore JS sicuro per attributo HTML: niente virgolette doppie. */

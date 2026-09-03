@@ -11,7 +11,6 @@ use PHPUnit\Framework\Assert;
 describe('Notification Business Logic', function () {
     test('notification extends xot base model', function () {
         $notification = new Notification();
-
         Assert::assertInstanceOf(Notification::class, $notification);
     });
 

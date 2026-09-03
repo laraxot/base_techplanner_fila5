@@ -28,5 +28,3 @@ Guida completa consolidata per le migrazioni in Laraxot.
 ## Links
 - [Original Files Backup](../../../docs-consolidation-backup-*/Xot-docs-original/)
 See canonical documentation: ../../../../Themes/docs/shared-components/migration-complete-guide.md
->>>>>>> .merge_file_KIdg2E
->>>>>>> .merge_file_fDeTk8

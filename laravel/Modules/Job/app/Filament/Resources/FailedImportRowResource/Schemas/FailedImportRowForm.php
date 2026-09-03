@@ -22,5 +22,6 @@ class FailedImportRowForm extends XotBaseResourceForm
             'row_data' => Textarea::make('row_data')->required()->columnSpanFull(),
             'error_message' => Textarea::make('error_message')->required()->columnSpanFull(),
         ];
+
     }
 }

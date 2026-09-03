@@ -173,4 +173,3 @@ if (null !== $value) {
 - [Quaeris Corrections](../quaeris/docs/phpstan-corrections-january-2026.md)
 - [Geo Corrections](../geo/docs/phpstan-corrections-january-2026.md)
 
->>>>>>> .merge_file_RINwwu

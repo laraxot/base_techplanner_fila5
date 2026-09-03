@@ -42,5 +42,3 @@ Vedi la documentazione dettagliata in:
 - @Relazione utenti-tearelati
 - @Migrazioni del databarientadutea
 See canonical documentation: ../../../Themes/docs/shared-components/relationships.md
->>>>>>> .merge_file_ZLXWO2
->>>>>>> .merge_file_T2hlS3

@@ -163,7 +163,7 @@ public function getScore(): float
     if (isset($this->calculated_score) && $this->calculated_score) {
         return $this->calculated_score;
     }
-    
+
     return 0.0;
 }
 ```
@@ -176,7 +176,7 @@ public function getStatus(): string
     if (isset($this->current_status) && $this->current_status) {
         return $this->current_status;
     }
-    
+
     return 'pending';
 }
 ```
@@ -188,7 +188,6 @@ Tutti i file devono passare la validazione PHPStan livello 9+:
 ```bash
 cd laravel
 cd /var/www/html/ptvx/laravel
->>>>>>> .merge_file_eQvrOS
 ./vendor/bin/phpstan analyze Modules --level=9
 ```
 

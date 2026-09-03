@@ -284,5 +284,3 @@ canonical: ../../../../Themes/docs/shared-components/translation-standards-Modul
 See canonical documentation: ../../../../Themes/docs/shared-components/translation-standards-Modules.md
 *Ultimo aggiornamento: Giugno 2025* 
 See canonical documentation: ../../../../Themes/docs/shared-components/translation-standards-Modules.md
->>>>>>> .merge_file_6NKoze
->>>>>>> .merge_file_YQA0qt

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Activity\Tests\Feature;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Carbon;
 use Modules\Activity\Models\BaseModel;
 
@@ -27,7 +28,7 @@ use Modules\Activity\Models\BaseModel;
  */
 class TestActivityModel extends BaseModel
 {
-    /** @use HasFactory<\Illuminate\Database\Eloquent\Factories\Factory<self>> */
+    /** @use HasFactory<Factory<static>> */
     use HasFactory;
 
     /** @var string */

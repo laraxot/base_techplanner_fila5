@@ -96,4 +96,3 @@ Per personalizzare un tema:
 * [README.md Tema One](laravel/themes/one/docs/readme.md)
 * [Convenzioni Namespace Tema One](laravel/themes/one/docs/namespace-conventions.md)b6f667c (.)
 
->>>>>>> .merge_file_Mmz5Aq

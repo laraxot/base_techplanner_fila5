@@ -28,7 +28,7 @@ class ListFilamentPanels extends Command
             }
 
             $providers = collect(scandir($providersPath))
-                ->filter(static function (mixed $file): bool {
+                ->filter(function (mixed $file): bool {
                     return is_string($file) && str_ends_with($file, 'ServiceProvider.php');
                 });
 

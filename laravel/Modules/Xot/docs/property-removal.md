@@ -43,5 +43,3 @@ Questi valori vengono risolti dinamicamente da `XotBaseResource` tramite i file 
 ---
 *Documentazione redatta seguendo i principi Super Mucca: DRY, KISS, Robustness.*
 See canonical documentation: ../../../Themes/docs/shared-components/property-removal-philosophy.md
->>>>>>> .merge_file_vEyJXg
->>>>>>> .merge_file_g8zj5o

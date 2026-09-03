@@ -32,8 +32,7 @@ class TicketStatusChangedNotification extends Notification
 
     public function toMail(object $notifiable): MailMessage
     {
-        return (new MailMessage())
-            ->subject('Ticket Status Changed')
+        return (new MailMessage())->subject('Ticket Status Changed')
             ->line("Ticket status has changed from {$this->oldStatus} to {$this->newStatus}")
             ->action('View Ticket', url('/'));
     }

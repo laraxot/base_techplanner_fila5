@@ -16,7 +16,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [Struttura dei Moduli](./module_structure.md) - Convenzioni di struttura dei moduli
 - [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
 
->>>>>>> .merge_file_Vs0TTn
 
 ## Validazione dei Collegamenti
 
@@ -27,7 +26,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Sottodirectory](./sottodirectory/documento.md)
 [Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
 [Documento in Modulo Altro](../../altromodulo/docs/documento.md)
->>>>>>> .merge_file_Vs0TTn
 [Documento in Root](../../../docs/documento.md)
 ```
 
@@ -73,7 +71,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
 
->>>>>>> .merge_file_Vs0TTn
 ```
 
 ### Checklist di Validazione
@@ -85,7 +82,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
 - [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
->>>>>>> .merge_file_Vs0TTn
 
 ## Validazione dei Collegamenti
 
@@ -96,7 +92,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Sottodirectory](./sottodirectory/documento.md)
 [Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
 [Documento in Modulo Altro](../../altromodulo/docs/documento.md)
->>>>>>> .merge_file_Vs0TTn
 [Documento in Root](../../../docs/documento.md)
 ```
 
@@ -142,7 +137,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
 
->>>>>>> .merge_file_Vs0TTn
 ```
 
 ### Checklist di Validazione
@@ -154,7 +148,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
 - [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
->>>>>>> .merge_file_Vs0TTn
 
 ## Validazione dei Collegamenti
 
@@ -165,7 +158,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Sottodirectory](./sottodirectory/documento.md)
 [Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
 [Documento in Modulo Altro](../../altromodulo/docs/documento.md)
->>>>>>> .merge_file_Vs0TTn
 [Documento in Root](../../../docs/documento.md)
 ```
 
@@ -211,7 +203,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
 
->>>>>>> .merge_file_Vs0TTn
 ```
 
 ### Checklist di Validazione

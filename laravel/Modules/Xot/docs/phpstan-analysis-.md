@@ -23,7 +23,6 @@
 #### healthcare_app Module (Complex Issues)
 #### ModuloEsempio Module (Complex Issues)
 #### Quaeris Module (Complex Issues)
->>>>>>> .merge_file_dCdrup
 - **Errors:** ~500+ across chart export and quantum actions
 - **Main Issues:**
   - Missing class definitions (quantum-related classes)
@@ -67,7 +66,6 @@ Class Modules\ModuloEsempio\Actions\Charts\Quantum\GenerateConsciousChartAction
 Class Modules\Quaeris\Actions\Charts\Quantum\GenerateConsciousChartAction
 implements unknown interface Spatie\Queable\Contracts\Queable.
 Class Modules\Quaeris\Actions\Charts\Quantum\GenerateConsciousChartAction
->>>>>>> .merge_file_dCdrup
 uses unknown trait Spatie\Queable\QueableAction.
 ```
 
@@ -102,7 +100,6 @@ uses unknown trait Spatie\Queable\QueableAction.
 - `Quaeris/app/Actions/Charts/Export/ExportFilamentWidgetToSvgAction.php` (150+ errors)
 - `Quaeris/app/Actions/Charts/Quantum/GenerateConsciousChartAction.php` (200+ errors)
 
->>>>>>> .merge_file_dCdrup
 
 **Key Problems:**
 1. **Missing Classes**: Quantum architecture classes not implemented
@@ -784,7 +781,6 @@ test('it can create and manage tenants', function (): void {
 ### Path Corretti
 - ✅ **mysql-db-connector.js** - Path corretto a `base_techplanner_fila5_mono`
 - ✅ **mysql-db-connector.js** - Path corretto a `base_techplanner_fila4_mono`
->>>>>>> .merge_file_dCdrup
 
 ---
 

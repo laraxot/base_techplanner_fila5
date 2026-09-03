@@ -115,4 +115,3 @@ Ogni blocco deve seguire questa struttura:
 * [blocks.md](../../../../themes/one/docs/blocks.md)
 * [blocks.md](../../../../themes/one/docs/components/blocks.md)
 
->>>>>>> .merge_file_D1E2RY

@@ -304,5 +304,3 @@ php artisan lang:check
 
 **Stato**: ✅ Completato
 See canonical documentation: ../../../Themes/docs/shared-components/git-conflicts-resolution-conflict-5ba246.md
->>>>>>> .merge_file_esRIUw
->>>>>>> .merge_file_52KoRF

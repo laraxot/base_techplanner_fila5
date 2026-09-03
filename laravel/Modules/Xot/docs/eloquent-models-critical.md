@@ -189,5 +189,3 @@ $this->assertTrue(property_exists($model, 'field_name')); // Sempre false
 
 *Ultimo aggiornamento: agosto 2025 - Regola critica per architettura Laraxot PTVX*
 See canonical documentation: ../../../Themes/docs/shared-components/eloquent-models-critical-rules.md
->>>>>>> .merge_file_ZFIZTz
->>>>>>> .merge_file_bfugbb

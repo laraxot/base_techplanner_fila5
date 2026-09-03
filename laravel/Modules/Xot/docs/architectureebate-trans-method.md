@@ -64,5 +64,3 @@ related docs:
 - translation conventions remain centralized.
 - future filament upgrades are handled by adjusting xot once, not in every module.
 See canonical documentation: ../../../Themes/docs/shared-components/architecture-debate-trans-method.md
->>>>>>> .merge_file_uuJr6B
->>>>>>> .merge_file_SqYjri

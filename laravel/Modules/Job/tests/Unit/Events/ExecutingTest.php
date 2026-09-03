@@ -11,7 +11,7 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\file_get_contents;
 
-uses(TestCase::class)->group('no-job-db');
+uses(TestCase::class);
 
 describe('Executing', function () {
     it('extends BroadcastingEvent', function () {

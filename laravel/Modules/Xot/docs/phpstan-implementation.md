@@ -303,5 +303,3 @@ Ogni modulo dovrebbe documentare le soluzioni ai problemi PHPStan specifici in `
 
 Seguendo questa guida pratica, potrai affrontare e risolvere in modo metodico i problemi rilevati da PHPStan nel tuo codebase Laraxot <nome progetto>, migliorando la qualità complessiva del codice e riducendo gli errori a runtime.
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-implementation-guide.md
->>>>>>> .merge_file_6oU8gL
->>>>>>> .merge_file_dtd1UT

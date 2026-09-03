@@ -611,5 +611,3 @@ find Actions/ -name "*.php" -exec wc -l {} + | awk '$1 > 200'
 
 🐄 **MU-UU-UU!** 🐄
 See canonical documentation: ../../../Themes/docs/shared-components/dry-kiss-analysis-Modules.md
->>>>>>> .merge_file_VfM5AG
->>>>>>> .merge_file_TxNFvb

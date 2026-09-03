@@ -31,7 +31,6 @@ class NotificationTemplateResource extends XotBaseResource
     protected static ?int $navigationSort = 48;
     
 
->>>>>>> .merge_file_gC9rEM
     // ❌ VIOLAZIONE: Override metodi gestiti da NavigationLabelTrait
     public static function getNavigationLabel(): string
     public static function getNavigationGroup(): string
@@ -64,7 +63,6 @@ class NotificationLogResource extends XotBaseResource
     protected static ?int $navigationSort = 100;
     
 
->>>>>>> .merge_file_gC9rEM
     // ❌ VIOLAZIONE: Override metodi gestiti da NavigationLabelTrait
     public static function getNavigationLabel(): string
     public static function getModelLabel(): string
@@ -147,7 +145,6 @@ class NotificationLogResource extends XotBaseResource
 - [User Module README](../../../user/docs/readme.md)
 - [<nome progetto> Module README](../../../<nome progetto>/docs/readme.md)
 - [SaluteOra Module README](../../../SaluteOra/docs/README.md)
->>>>>>> .merge_file_gC9rEM
 
 ### Standard di Riferimento
 - [NavigationLabelTrait](../traits/navigation-label-trait.md)

@@ -357,5 +357,3 @@ find Modules/ -name "*.md" -exec markdownlint {} \;
 **Maintenance**: Xot Module Documentation Team
 **Goal**: Create the most comprehensive and useful documentation for Laraxot architecture
 See canonical documentation: ../../../Themes/docs/shared-components/comprehensive-documentation-structure.md
->>>>>>> .merge_file_rflmu9
->>>>>>> .merge_file_TBKF7o

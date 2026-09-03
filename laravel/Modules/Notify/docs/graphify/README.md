@@ -2,6 +2,10 @@
 
 ## Overview
 
+> `graphify-out/` è output generato (`graphify extract`), ignorato da `.gitignore`
+> del modulo e non versionato dal 2 settembre 2026 (story 5.82): 730 file di
+> cache erano finiti in git. Si rigenera, non si committa.
+
 This directory contains the knowledge graph for the **Notify** module, generated using [Graphify](https://graphify.dev/). The graph provides a comprehensive visualization of code dependencies, architecture, and relationships within the module.
 
 ## Quick Start

@@ -25,7 +25,6 @@ per esempio:
 - `/var/www/html/base_saluteora/laravel/Modules/SaluteOra/app/Models/...`
 - `/var/www/html/base_saluteora/laravel/Modules/SaluteOra/app/Http/Controllers/...`
 
->>>>>>> .merge_file_V5tzXT
 
 ### namespace corretto
 
@@ -42,7 +41,6 @@ per esempio:
 - `namespace Modules\SaluteOra\Filament\Resources;`
 - `namespace Modules\SaluteOra\Models;`
 - `namespace Modules\SaluteOra\Http\Controllers;`
->>>>>>> .merge_file_V5tzXT
 
 ## errore comune
 
@@ -67,7 +65,6 @@ questo è **errato** perché omette la directory `app/` nel percorso fisico.
 | `Modules\User\Models\User` | `Modules/User/app/Models/User.php` |
 | `Modules\SaluteOra\Filament\Resources\DoctorResource` | `/var/www/html/base_saluteora/laravel/Modules/SaluteOra/app/Filament/Resources/DoctorResource.php` |
 | `Modules\User\Models\User` | `/var/www/html/base_saluteora/laravel/Modules/User/app/Models/User.php` |
->>>>>>> .merge_file_V5tzXT
 
 ## come evitare l'errore
 
@@ -81,4 +78,3 @@ questo è **errato** perché omette la directory `app/` nel percorso fisico.
 - [struttura progetto](docs/project-structure.md)
 - [convenzioni di codice](/var/www/html/base_saluteora/laravel/docs/conventions.md)
 - [struttura progetto](/var/www/html/base_saluteora/laravel/docs/project-structure.md)
->>>>>>> .merge_file_V5tzXT

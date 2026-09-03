@@ -300,5 +300,3 @@ trait HasXotOptimizations
 
 ---
 See canonical documentation: ../../../Themes/docs/shared-components/bottlenecks-detailed.md
->>>>>>> .merge_file_PBOJjQ
->>>>>>> .merge_file_WlA4lI

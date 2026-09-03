@@ -75,5 +75,3 @@ Per estendere le funzionalità base:
 - Supporta la configurazione dei metatag attraverso `MetatagData`
 - Integra con il sistema di moduli Laravel attraverso la configurazione `modules.namespace`
 See canonical documentation: ../../../../Themes/docs/shared-components/xotbaanelprovider.md
->>>>>>> .merge_file_LGAQn2
->>>>>>> .merge_file_o9hQCk

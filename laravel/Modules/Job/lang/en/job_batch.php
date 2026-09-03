@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 return [
     'navigation' => [
         'name' => 'Job Batch',
@@ -129,9 +131,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-        ],
-        'progress' => [
-            'label' => 'progress',
         ],
     ],
     'actions' => [

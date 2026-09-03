@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 use Illuminate\Http\Response;
 use Illuminate\Testing\TestResponse;
+use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-use function Pest\Laravel\get;
-
+uses(TestCase::class);
 beforeEach(function (): void {
     /* @var \Modules\Cms\Tests\TestCase $this */
     if (! \is_string(config('app.key')) || config('app.key') === '') {
@@ -15,6 +15,7 @@ beforeEach(function (): void {
         config()->set('app.key', $key);
         $_ENV['APP_KEY'] = $key;
     }
+
     cmsSkipTest('Filament blocks homepage integration requires full theme + block wiring in this install.');
 });
 

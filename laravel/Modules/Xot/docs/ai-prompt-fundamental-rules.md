@@ -149,7 +149,6 @@ Model structure requirements:
 - [AGENTS.md](../../../../agents.md) - Guida completa sviluppatori AI
 - [Database Testing Rules](../../../../docs/database-testing-rules.md) - Regole MySQL testing
 - [AI Coding Memory](../../../../ai_coding_memory.md) - Memoria completa regole
->>>>>>> .merge_file_JEh2tl
 - [Critical Rules Index](../../../../docs/critical-rules-index.md) - Indice regole critiche
 
 ### Regole Specifiche
@@ -157,7 +156,6 @@ Model structure requirements:
 - [MySQL Testing Configuration](../../../../docs/mysql-testing-configuration.md) - Configurazione MySQL
 - [PHPStan Critical Rules](../Xot/docs/phpstan-critical-rules.md) - Regole PHPStan
 - [PHPStan Critical Rules](../xot/docs/phpstan-critical-rules.md) - Regole PHPStan
->>>>>>> .merge_file_JEh2tl
 
 ## 🔧 Integration Guidelines
 
@@ -183,7 +181,6 @@ LimeSurvey specific rules:
 
 **Ultimo aggiornamento**: 2026-01-22  
 **Ultimo aggiornamento**: [DATE]  
->>>>>>> .merge_file_JEh2tl
 **MySQL Testing**: ✅ OBBLIGATORIO  
 **Race Conditions**: ✅ Pattern first() + try/catch  
 **PHPStan Level**: ✅ 10 obbligatorio  

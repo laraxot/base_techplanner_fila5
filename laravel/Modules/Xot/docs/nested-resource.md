@@ -185,5 +185,3 @@ Assicurati semplicemente di impostare uno slug personalizzato per le risorse in 
 
 https://filamentphp.com/project_docs/2.x/admin/resources/getting-started#customizing-the-url-slug
 See canonical documentation: ../../../Themes/docs/shared-components/nested-resource.md
->>>>>>> .merge_file_o5ONp7
->>>>>>> .merge_file_xqCzAL

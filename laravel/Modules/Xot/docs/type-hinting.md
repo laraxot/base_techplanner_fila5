@@ -21,6 +21,7 @@ https://wiki.php.net/rfc/return_types
 
 https://packagist.org/packages/maksi/laravel-idea-type-hinting
 
+
 /** @var $post Post */
 
 /** @var $posts Post[] */
@@ -70,6 +71,7 @@ function iterable_map(iterable $list, callable $operation) : iterable
   }
 }
 
+
 public static function byArray(iterable $data)
     {
         $results = [];
@@ -89,6 +91,9 @@ public static function byArray(iterable $data)
         return $slug;
     }
 
+
+
+
 https://sodocumentation.net/it/php/topic/504/classi-e-oggetti
 
  private static $instance = null;
@@ -101,6 +106,9 @@ https://sodocumentation.net/it/php/topic/504/classi-e-oggetti
         return self::$instance;
     }
 
+
+
+
 class ClassName
 {
     public function foo(): self
@@ -112,6 +120,7 @@ class ClassName
 $instance = new ClassName();
 $instance->foo();
 
+
 ublic function foo(): ?stdClass
     {
         return new stdClass();
@@ -122,10 +131,13 @@ ublic function foo(): ?stdClass
         return null;
     }
 
+
 function foo(): object
 {
     return new stdClass();
 }
+
+
 
 Relazioni
 https://github.com/larastan/larastan/issues/689
@@ -138,5 +150,8 @@ esempio:
 public function articles(): HasMany {
     return $this->hasMany(Article::class);
 }
+
+
+
 
 https://github.com/oucil/Code-Hint-Aggregator

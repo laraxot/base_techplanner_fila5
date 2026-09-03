@@ -120,7 +120,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
                     /** @var array<string, mixed> $defaults */
                     $defaults = $model->getDataDefaults();
                     $merge1 = array_merge($defaults, $res);
-                    $merge1 = Arr::map($merge1, static function (mixed $value, string|int $key) use ($defaults): mixed {
+                    $merge1 = Arr::map($merge1, static function (mixed $value, string|int $key) use ($defaults) {
                         if ($value === null) {
                             $value = Arr::get($defaults, $key, null);
                         }

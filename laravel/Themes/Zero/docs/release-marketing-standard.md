@@ -21,6 +21,8 @@ Ogni modulo/tema deve essere pubblicabile, comprensibile e desiderabile: workflo
 - `../.releaserc.json`
 - `../changelog.md`
 
+- `../CHANGELOG.md`
+
 ## Confidenza
 
 La configurazione usa semantic-release con Conventional Commits, changelog, GitHub release e commit automatico del changelog.

@@ -184,5 +184,3 @@ done
 **Mantenuto da**: Claude Sonnet 4.5
 **Ultimo aggiornamento**: [DATE]
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-error-resolution-strategy.md
->>>>>>> .merge_file_FwhloI
->>>>>>> .merge_file_bJmom0

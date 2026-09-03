@@ -38,5 +38,3 @@ See canonical documentation: ../../../../Themes/docs/shared-components/q4-roadma
 ## Acceptance Criteria
 - All modules compile against Xot contracts without overrides
 See canonical documentation: ../../../../Themes/docs/shared-components/q4-roadmap-Modules.md
->>>>>>> .merge_file_Zebl6f
->>>>>>> .merge_file_4ENl4p

@@ -4,7 +4,6 @@
 
 📚 **DOCUMENTO MASTER (LEGGERE PRIMA!):** [../../../docs/analisi-metodi-duplicati-MASTER.md](../../../docs/analisi-metodi-duplicati-MASTER.md)
 📚 **DOCUMENTO MASTER (LEGGERE PRIMA!):** [../../../docs/analisi-metodi-duplicati-MASTER.md](../../../docs/analisi-metodi-duplicati-master.md)
->>>>>>> .merge_file_17uMDe
 📖 **Documento Originale:** [../../../docs/analisi-metodi-duplicati.md](../../../docs/analisi-metodi-duplicati.md)
 
 > ⚠️ **IMPORTANTE:** Questo documento è specifico per il modulo Xot. Per l'analisi completa con dati reali, ROI, implementazioni concrete e migration guide, consultare il DOCUMENTO MASTER.
@@ -330,7 +329,6 @@ Se l'unificazione viene implementata correttamente:
 |------|----------|-----------|
 | 2025-10-15 | 1.0 | Creazione documento iniziale |
 | [DATE] | 1.0 | Creazione documento iniziale |
->>>>>>> .merge_file_17uMDe
 
 ---
 

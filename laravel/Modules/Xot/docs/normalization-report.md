@@ -18,7 +18,6 @@
 
 2. ✅ **`Modules/UI/docs/bugfix-table-layout-action-[DATE].md`**
 
->>>>>>> .merge_file_sRTyxe
    - **Motivo**: Duplicato identico di `bugfix-table-layout-action.md`
    - **Stato**: Eliminato con successo
 
@@ -26,7 +25,6 @@
 
 1. ✅ **`translation-refactor-complete-summary-2025-08-08.md` → `translation-refactor-complete-summary.md`**
 1. ✅ **`translation-refactor-complete-summary-[DATE].md` → `translation-refactor-complete-summary.md`**
->>>>>>> .merge_file_sRTyxe
    - **Modulo**: Lang
    - **Motivo**: File attivo con data nel nome
    - **Stato**: Rinominato con successo
@@ -118,7 +116,6 @@
 - [Regole Naming File](../Xot/docs/file-naming-rules.md)
 - [Processo Normalizzazione](../xot/docs/docs-normalization-process.md)
 - [Regole Naming File](../xot/docs/file-naming-rules.md)
->>>>>>> .merge_file_sRTyxe
 - [Filosofia DRY + KISS](../../docs/philosophy-guide.md)
 
 ---

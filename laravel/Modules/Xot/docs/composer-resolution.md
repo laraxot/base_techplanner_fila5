@@ -18,5 +18,3 @@ See canonical documentation: ../../../Themes/docs/shared-components/composer-con
 ## Collegamenti
 - [Gestione dipendenze Composer](../../../../docs/composer.md)
 See canonical documentation: ../../../Themes/docs/shared-components/composer-conflict-resolution.md
->>>>>>> .merge_file_Gilea4
->>>>>>> .merge_file_vHLEeF

@@ -39,5 +39,3 @@ La cartella `bashscripts/ai/.gemini` ora è accessibile direttamente dalla root 
 
 La documentazione del progetto è stata aggiornata per riflettere questo cambiamento.
 See canonical documentation: ../../../Themes/docs/shared-components/ai-init-issue-resolution.md
->>>>>>> .merge_file_SJKtCk
->>>>>>> .merge_file_LC3uDD

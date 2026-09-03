@@ -8,13 +8,14 @@ use Eloquent;
 use Exception;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
-use Modules\TechPlanner\Models\Profile;
+use Modules\Media\Database\Factories\MediaFactory;
 use Modules\User\Models\User;
+use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Traits\Updater;
@@ -34,7 +35,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media as SpatieMedia;
  * @property-read mixed $preview_url
  * @property-read TemporaryUpload|null $temporaryUpload
  * @property-read mixed $type
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $updater
  *
  * @method static MediaCollection<int, static> all($columns = ['*'])
  * @method static \Modules\Media\Database\Factories\MediaFactory factory($count = null, $state = [])
@@ -95,7 +96,9 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media as SpatieMedia;
  */
 class Media extends SpatieMedia
 {
+    /** @use HasXotFactory<Media> */
     use HasXotFactory;
+
     use Updater;
 
     /** @var string */

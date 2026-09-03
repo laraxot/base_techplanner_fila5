@@ -60,7 +60,7 @@ Il sistema utilizza il metodo `module_path()` per risolvere questi percorsi:
 function resolveModulePath($path) {
     // Esempio: 'module::images/logo.svg'
     list($module, $resourcePath) = explode('::', $path);
-    
+
     // Converte in: '/path/to/project/laravel/Modules/Module/resources/images/logo.svg'
     return module_path(ucfirst($module)) . '/resources/' . $resourcePath;
 }
@@ -81,7 +81,6 @@ Per la versione dark:
      alt="{{ $metatag['logo_alt'] ?? 'Logo' }}"
 <img src="{{ Theme::asset($metatag['logo_header_dark']) }}" 
      alt="{{ $metatag['logo_alt'] ?? 'Logo' }}" 
->>>>>>> .merge_file_3JdDgH
      class="hidden dark:block">
 ```
 
@@ -118,7 +117,6 @@ Per la versione dark:
 - [Regole per la Case Sensitivity](DIRECTORY-CASE-SENSITIVITY.md)
 - [Regole per i Namespace](NAMESPACE-RULES.md)
 
->>>>>>> .merge_file_3JdDgH
 - [Convenzioni di Naming](naming-conventions.md)
 
 ### Collegamenti alla Root del Progetto

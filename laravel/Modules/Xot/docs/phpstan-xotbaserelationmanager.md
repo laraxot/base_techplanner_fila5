@@ -124,5 +124,3 @@ Stessa soluzione per `canDetachBulk()`.
 2. **Schema::components()**: Accetta union type complesso, Component è compatibile
 3. **stdClass nei bulk actions**: Filament usa stdClass per performance, gestirlo appropriatamente
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-error-analysis-xotbaserelationmanager.md
->>>>>>> .merge_file_9hYctb
->>>>>>> .merge_file_SSWMuN

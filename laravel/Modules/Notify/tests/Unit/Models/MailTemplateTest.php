@@ -63,7 +63,6 @@ describe('Mail Template', function (): void {
 
     test('_has_correct_casts', function (): void {
         $template = new MailTemplate();
-
         $expectedCasts = [
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
@@ -74,7 +73,6 @@ describe('Mail Template', function (): void {
 
     test('_has_translatable_fields', function (): void {
         $template = new MailTemplate();
-
         $expectedTranslatable = [
             'subject',
             'html_template',
@@ -86,7 +84,6 @@ describe('Mail Template', function (): void {
 
     test('_uses_notify_connection', function (): void {
         $template = new MailTemplate();
-
         Assert::assertEquals('notify', $template->getConnectionName());
     });
 

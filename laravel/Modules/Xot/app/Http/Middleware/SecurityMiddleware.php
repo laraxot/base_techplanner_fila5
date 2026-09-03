@@ -445,9 +445,7 @@ class SecurityMiddleware
         if (in_array($request->method(), ['POST', 'PUT', 'DELETE', 'PATCH'])) {
             $token = $request->header('X-CSRF-TOKEN') ?: $request->input('_token');
 
-            /** @var string $tokenStr */
-            $tokenStr = SafeStringCastAction::cast($token);
-            if (! $token || ! hash_equals(session()->token(), $tokenStr)) {
+            if (! $token || ! hash_equals(session()->token(), SafeStringCastAction::cast($token))) {
                 Log::warning('CSRF token mismatch', [
                     'ip' => $request->ip(),
                     'method' => $request->method(),

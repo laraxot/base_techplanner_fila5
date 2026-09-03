@@ -145,5 +145,3 @@ This document summarizes the successful implementation of:
 **Reviewed**: Automated checks passed
 **Compliance**: 100% architecture compliance achieved
 See canonical documentation: ../../../Themes/docs/shared-components/implementation-filament-phpstanes.md
->>>>>>> .merge_file_1iaPT1
->>>>>>> .merge_file_bhPIqa

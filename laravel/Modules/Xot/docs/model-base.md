@@ -100,5 +100,3 @@ abstract class BaseModel extends XotBaseModel
 
 *Ultimo aggiornamento: maggio 2025*
 See canonical documentation: ../../../Themes/docs/shared-components/model-base-rules.md
->>>>>>> .merge_file_hEZLnf
->>>>>>> .merge_file_DeFCcd

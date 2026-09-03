@@ -6,7 +6,6 @@
 
 Non e un componente da promuovere nei nuovi sviluppi.
 Il componente `XotBasePlaceholder` è stato introdotto per aderire rigorosamente al principio architetturale "NON estendere MAI classi Filament direttamente". Questo componente funge da classe base astratta per tutti i placeholder personalizzati all'interno del progetto, garantendo che le estensioni di Filament avvengano tramite la gerarchia `XotBase`.
->>>>>>> .merge_file_IQ1QGR
 
 ## Gerarchia di Ereditarietà
 
@@ -31,7 +30,6 @@ Va letto nel contesto Filament 5.x:
 
 Quindi `XotBasePlaceholder` oggi e principalmente un artefatto di compatibilita.
 Il componente `XotBasePlaceholder` estende direttamente `Filament\Forms\Components\Placeholder`. Al momento, non introduce logica aggiuntiva ma serve come punto di estensione standardizzato e centralizzato.
->>>>>>> .merge_file_IQ1QGR
 
 ```php
 <?php
@@ -86,7 +84,6 @@ Da considerare legacy:
 ## Uso
 
 
->>>>>>> .merge_file_IQ1QGR
 I placeholder personalizzati, come `DownloadAttachmentPlaceHolder`, devono ora estendere `XotBasePlaceholder`:
 
 ```php
@@ -111,6 +108,4 @@ class DownloadAttachmentPlaceHolder extends XotBasePlaceholder
 -   [Filament Class Extension Rules](../../../docs/filament-class-extension-rules.md)
 -   [DownloadAttachmentPlaceHolder Documentation](../../cms/docs/filament/forms/components/download-attachment-placeholder.md) (da creare)
 - [Infolists for Summary](../../widgets/infolists-for-summary.md)
-=======
 - [Infolists for Summary](../../widgets/infolists-for-summary.md)
->>>>>>> .merge_file_Tmw6Pq

@@ -164,5 +164,3 @@ public function registerTimezone(): void
 *Ultimo aggiornamento: giugno 2025*
 *Risolto da: Windsurf AI Assistant*
 See canonical documentation: ../../../Themes/docs/shared-components/bugfix-carbon-timezone-error.md
->>>>>>> .merge_file_WGWWmq
->>>>>>> .merge_file_WWa3XV

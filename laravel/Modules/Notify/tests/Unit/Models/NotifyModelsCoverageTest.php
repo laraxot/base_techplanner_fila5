@@ -41,7 +41,6 @@ test('base morph pivot and base pivot use notify connection and default casts', 
 
 test('contact model has expected fillable and casts', function () {
     $contact = new Contact();
-
     Assert::assertSame('notify', $contact->getConnectionName());
     Assert::assertContains('model_id', $contact->getFillable());
     Assert::assertContains('contact_type', $contact->getFillable());
@@ -51,7 +50,6 @@ test('contact model has expected fillable and casts', function () {
 
 test('mail template has slug options and expected casts', function () {
     $mailTemplate = new MailTemplate();
-
     Assert::assertSame('notify', $mailTemplate->getConnectionName());
     Assert::assertContains('slug', $mailTemplate->getFillable());
     Assert::assertContains('html_layout_path', $mailTemplate->getFillable());
@@ -61,7 +59,6 @@ test('mail template has slug options and expected casts', function () {
 
 test('notification model has array and datetime casts', function () {
     $notification = new Notification();
-
     Assert::assertContains('message', $notification->getFillable());
     Assert::assertContains('channels', $notification->getFillable());
     Assert::assertArrayHasKey('data', $notification->getCasts());

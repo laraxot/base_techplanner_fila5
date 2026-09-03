@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Columns;
 
-use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Modules\Xot\Filament\Tables\Columns\XotBaseTextColumn;
 use Webmozart\Assert\Assert;
 
-class ScheduleArguments extends TextColumn
+class ScheduleArguments extends XotBaseTextColumn
 {
     protected string $view = 'job::filament.columns.schedule-arguments';
 
@@ -84,7 +84,7 @@ class ScheduleArguments extends TextColumn
                         return $name.'='.$val;
                     }
 
-                    return (string) $key.'='.SafeStringCastAction::cast($value);
+                    return SafeStringCastAction::cast($key).'='.SafeStringCastAction::cast($value);
                 },
             )
             ->values()
@@ -94,8 +94,8 @@ class ScheduleArguments extends TextColumn
     /**
      * Filter out empty tags from the array.
      *
-     * @param  array<int, string>  $tags
-     * @return array<int, string>
+     * @param  list<string>  $tags
+     * @return list<string>
      */
     protected function filterEmptyTags(array $tags): array
     {

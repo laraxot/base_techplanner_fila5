@@ -46,6 +46,8 @@ use Spatie\Permission\PermissionRegistrar;
  * @property Model|null $baseModel
  * @property string|null $testDir
  * @property string|null $workDir
+ * @property mixed $saved
+ * @property mixed $extra_attributes
  */
 abstract class XotBaseTestCase extends BaseTestCase
 {
@@ -138,113 +140,10 @@ abstract class XotBaseTestCase extends BaseTestCase
      */
     public function expectApplicationException(string $exceptionClass, ?string $message = null): void
     {
-        if ($message !== null) {
-            $this->expectExceptionObject(new $exceptionClass($message));
-
-            return;
-        }
-
         $this->expectException($exceptionClass);
-    }
-
-    /**
-     * Percorso del file SQLite condiviso dai test.
-     *
-     * Sovrascrivibile con `XOT_TEST_SQLITE` perché SQLite ammette un solo writer: per
-     * far girare più moduli in parallelo serve un file per processo, altrimenti i run
-     * si bloccano a vicenda. Senza la variabile resta il file storico, quindi il
-     * comportamento di default non cambia.
-     */
-    public static function sharedSqlitePath(): string
-    {
-        $override = getenv('XOT_TEST_SQLITE');
-
-        if (is_string($override) && $override !== '') {
-            return $override;
+        if ($message !== null) {
+            $this->expectExceptionMessageIsOrContains($message);
         }
-
-        return database_path('fixcity_data.sqlite');
-    }
-
-    /**
-     * Punta l'intero ambiente di test sul file sqlite condiviso.
-     *
-     * Gira dentro `refreshApplication()`, cioe' dopo la creazione dell'app ma prima
-     * che `setUpTraits()` faccia partire `DatabaseTransactions`: e' l'unico punto in
-     * cui la connessione di default e' ancora modificabile. Senza questo la default
-     * resta quella di `.env` (MySQL su un host non raggiungibile) e ogni test muore
-     * dopo 120 s di timeout PDO. Le connessioni nominate dei moduli (`ptv`, `sigma`,
-     * `activity`, ...) vengono rimappate qui, cosi' `DB::connection('activity')`
-     * risolve invece di sollevare "Database connection [activity] not configured".
-     */
-    protected function refreshApplication(): void
-    {
-        parent::refreshApplication();
-
-        $database = self::sharedSqlitePath();
-
-        /** @var array<string, mixed> $connections */
-        $connections = (array) config('database.connections', []);
-
-        foreach (array_keys($connections) as $name) {
-            config()->set('database.connections.'.$name, [
-                'driver' => 'sqlite',
-                'database' => $database,
-                'prefix' => '',
-                'foreign_key_constraints' => false,
-                'busy_timeout' => 10000,
-            ]);
-            DB::purge((string) $name);
-        }
-
-        config()->set('database.default', 'sqlite');
-        DB::purge('sqlite');
-
-        // Il cache store `database` vuole una tabella `cache` che nessuna migration del
-        // repo crea: `spatie/laravel-permission` passa dal suo registrar cacheato, e
-        // duecento test di Incentivi morivano su `no such table: cache`. In un test la
-        // cache non deve nemmeno essere condivisa fra un caso e l'altro.
-        config()->set('cache.default', 'array');
-
-        $this->shareSingleSqlitePdoAcrossConnections();
-    }
-
-    /**
-     * Fa condividere a tutte le connessioni lo stesso oggetto Connection, e quindi lo
-     * stesso PDO.
-     *
-     * Puntarle tutte allo stesso file non basta: ogni nome risolto apre un handle
-     * distinto, e `DatabaseTransactions` ne apre una transazione per ciascuno di quelli
-     * elencati in `$connectionsToTransact`. SQLite ammette un solo writer, quindi dal
-     * secondo `BEGIN` in poi si prende `SQLSTATE[HY000]: General error: 5 database is
-     * locked` — otto test di Media morivano così, e nessuno per colpa dello schema.
-     *
-     * Deve girare **qui**, in coda a `refreshApplication()`: farlo prima di
-     * `parent::setUp()` non serve, perché Testbench ricostruisce l'app e l'aliasing
-     * viene buttato via insieme alle connessioni risolte.
-     */
-    private function shareSingleSqlitePdoAcrossConnections(): void
-    {
-        /** @var DatabaseManager $manager */
-        $manager = $this->app->make('db');
-
-        $shared = $manager->connection('sqlite');
-
-        $managerReflection = new \ReflectionClass($manager);
-        $connectionsProperty = $managerReflection->getProperty('connections');
-        $connectionsProperty->setAccessible(true);
-
-        /** @var array<string, mixed> $resolved */
-        $resolved = $connectionsProperty->getValue($manager);
-
-        /** @var array<string, mixed> $connections */
-        $connections = (array) config('database.connections', []);
-
-        foreach (array_keys($connections) as $name) {
-            $resolved[(string) $name] = $shared;
-        }
-
-        $connectionsProperty->setValue($manager, $resolved);
     }
 
     /**
@@ -280,6 +179,10 @@ abstract class XotBaseTestCase extends BaseTestCase
         parent::setUp();
 
         $this->setPermissionsTeamContext();
+
+        // Nei test non esiste una build Vite (public_html/build/manifest.json):
+        // i blade con @vite renderizzano senza asset invece di lanciare ViewException.
+        $this->withoutVite();
 
         if (! $this->app->bound('translator')) {
             $this->app->singleton('translator', static function (Application $app): Translator {
@@ -409,6 +312,17 @@ abstract class XotBaseTestCase extends BaseTestCase
     }
 
     /**
+     * Path of the shared SQLite database used by module tests.
+     *
+     * Single source of truth for `prepareSharedFixcitySqliteForTesting()` and for
+     * `xot:build-test-sqlite`, which needs the same path to build the file offline.
+     */
+    public static function sharedSqlitePath(): string
+    {
+        return database_path('fixcity_data.sqlite');
+    }
+
+    /**
      * Point every sqlite connection at fixcity_data.sqlite and share one PDO.
      *
      * Multiple named connections (activity, user, gdpr, …) on the same SQLite file
@@ -424,6 +338,20 @@ abstract class XotBaseTestCase extends BaseTestCase
         }
 
         $database = self::sharedSqlitePath();
+
+        // La connessione opzionale 'user' (driver mysql) senza database configurato
+        // (DB_DATABASE_USER vuoto) ripiega su sqlite condiviso: stesso fallback di
+        // XotBaseMigration::resolveConnectionName(), altrimenti ogni insert su users
+        // fallisce con "No database selected" sulle macchine senza il DB dedicato.
+        $userDatabase = config('database.connections.user.database');
+        if (! is_string($userDatabase) || $userDatabase === '') {
+            $this->app['config']->set('database.connections.user', [
+                'driver' => 'sqlite',
+                'database' => $database,
+                'prefix' => '',
+                'foreign_key_constraints' => true,
+            ]);
+        }
 
         /** @var array<string, array<string, mixed>> $connections */
         $connections = config('database.connections', []);
@@ -496,7 +424,7 @@ abstract class XotBaseTestCase extends BaseTestCase
 
     public function expectThrowableMessage(string $message): void
     {
-        $this->expectExceptionMessageMatches('/'.preg_quote($message, '/').'/');
+        $this->expectExceptionMessageIsOrContains($message);
     }
 
     public function expectThrowableMessageMatches(string $pattern): void

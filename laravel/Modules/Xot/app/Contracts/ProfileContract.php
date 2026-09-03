@@ -26,6 +26,8 @@ use Spatie\Permission\Exceptions\PermissionDoesNotExist;
  * @property int|null              $roles_count
  * @property UserContract          $user
  *
+ * @method BelongsTo<Model&UserContract, Model> user()
+ *
  * @phpstan-require-extends Model
  *
  * @mixin \Eloquent
@@ -77,11 +79,6 @@ interface ProfileContract extends HasMedia
     public function hasPermissionTo(string|int|Permission $permission, ?string $guardName = null): bool;
 
     public function toggleSuperAdmin(): void;
-
-    /**
-     * @return BelongsTo<Model&UserContract, Model>
-     */
-    public function user(): BelongsTo;
 
     public function isSuperAdmin(): bool;
 

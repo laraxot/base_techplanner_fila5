@@ -56,7 +56,6 @@
 ### Fase Documentazione
 1. Aggiornare changelog.md con modifiche eseguite
 1. Aggiornare CHANGELOG.md con modifiche eseguite
->>>>>>> .merge_file_iRozLV
 2. Verificare README.md di ogni modulo per collegamenti
 3. Creare indice documentazione consolidata
 
@@ -108,7 +107,6 @@
 - [Regole Naming File](../Xot/docs/file-naming-rules.md)
 - [Processo Normalizzazione](../xot/docs/docs-normalization-process.md)
 - [Regole Naming File](../xot/docs/file-naming-rules.md)
->>>>>>> .merge_file_iRozLV
 - [Filosofia DRY + KISS](../../docs/philosophy-guide.md)
 
 ---

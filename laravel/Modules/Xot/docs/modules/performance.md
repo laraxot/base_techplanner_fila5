@@ -37,8 +37,6 @@ Il modulo Performance mantiene documentazione dettagliata nelle seguenti aree:
 - [Redistribuzione Resti per Valutatore](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Performance/docs/redistribuire-resti-per-valutatore.md)
 - [Convenzioni del Modulo](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Performance/docs/convenzioni-modulo.md)
 
->>>>>>> .merge_file_eoDW3X
->>>>>>> .merge_file_XhmMjL
 
 ## Risorse Filament
 
@@ -70,5 +68,3 @@ Il modulo implementa diverse risorse Filament per la gestione delle performance:
 - [Guide PHPStan Livello 9](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/PHPSTAN-LEVEL9-GUIDE.md)
 - [QueueableActions](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/queueable-actions.md)
 
->>>>>>> .merge_file_eoDW3X
->>>>>>> .merge_file_XhmMjL

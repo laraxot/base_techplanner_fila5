@@ -28,8 +28,12 @@ class GetFactoryAction
 
     /**
      * @template TModel of Model
+     * Execute the function with the given model class.
      *
-     * @param  class-string<TModel>  $model_class
+     * @param class-string<TModel> $model_class the class name of the model
+     *
+     * @throws \Exception when the factory file cannot be loaded or generated
+     *
      * @return Factory<TModel>
      */
     public function execute(string $model_class): Factory
@@ -44,7 +48,10 @@ class GetFactoryAction
         }
 
         if (class_exists($factory_class)) {
-            return $this->instantiateFactory($factory_class, $model_class);
+            /** @var Factory<TModel> $factory */
+            $factory = $this->instantiateFactory($factory_class);
+
+            return $factory;
         }
 
         $this->createFactory($model_class);
@@ -60,13 +67,17 @@ class GetFactoryAction
             ),
         );
 
-        return $this->instantiateFactory($factory_class, $model_class);
+        /** @var Factory<TModel> $factory */
+        $factory = $this->instantiateFactory($factory_class);
+
+        return $factory;
     }
 
     /**
      * Get the factory class name for a model class.
      *
-     * @param  string  $model_class  The model class name
+     * @param string $model_class The model class name
+     *
      * @return string The fully qualified factory class name
      */
     public function getFactoryClass(string $model_class): string
@@ -115,7 +126,7 @@ class GetFactoryAction
         // Estraiamo il nome del modulo dal namespace della classe
         $module_parts = Str::of($model_class)->between('Modules\\', '\Models\\');
 
-        if ($module_parts === '') {
+        if ('' === $module_parts) {
             throw new \InvalidArgumentException("Impossibile determinare il nome del modulo dal namespace {$model_class}");
         }
 
@@ -137,7 +148,7 @@ class GetFactoryAction
     {
         $module_parts = Str::of($model_class)->between('Modules\\', '\Models\\');
 
-        if ($module_parts === '') {
+        if ('' === $module_parts) {
             throw new \InvalidArgumentException("Impossibile determinare il nome del modulo dal namespace {$model_class}");
         }
 
@@ -168,13 +179,11 @@ class GetFactoryAction
     }
 
     /**
-     * @template TModel of Model
+     * @param class-string $factory_class
      *
-     * @param  class-string  $factory_class
-     * @param  class-string<TModel>  $model_class
-     * @return Factory<TModel>
+     * @return Factory<covariant Model>
      */
-    private function instantiateFactory(string $factory_class, string $model_class): Factory
+    private function instantiateFactory(string $factory_class): Factory
     {
         $factory = $factory_class::new();
 

@@ -234,5 +234,3 @@ Modules/
 **Date**: [DATE]
 **Status**: ✅ Documentation Complete - Ready for Development Team
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-documentation-complete.md
->>>>>>> .merge_file_JtQWax
->>>>>>> .merge_file_pmAGB2

@@ -33,7 +33,6 @@ DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=healthcare_app_data_test
 DB_DATABASE=quaeris_data_test
->>>>>>> .merge_file_fozPfn
 DB_USERNAME=your_username
 DB_PASSWORD=your_password
 

@@ -4,7 +4,6 @@
 
 **Ultimo aggiornamento**: 2025-12-22
 **Ultimo aggiornamento**: [DATE]
->>>>>>> .merge_file_SnQcfk
 
 ---
 

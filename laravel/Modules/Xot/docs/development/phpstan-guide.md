@@ -47,8 +47,6 @@ parameters:
 cd laravel
 cd /var/www/html/_bases/base_ptvx_fila5/laravel
 cd /var/www/html/_bases/base_ptvx_fila3_mono/laravel
->>>>>>> .merge_file_DWnWBW
->>>>>>> .merge_file_trMZcN
 
 # Analisi modulo specifico
 ./vendor/bin/phpstan analyze Modules/Xot --level=9
@@ -162,5 +160,5 @@ use Modules\User\Models\User; // Namespace corretto
 
 ---
 
-**Ultimo aggiornamento:** Gennaio 2025  
+**Ultimo aggiornamento:** Gennaio 2025
 **Versione:** 2.0 - Consolidata DRY + KISS

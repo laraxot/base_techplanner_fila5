@@ -9,8 +9,6 @@ updated: 2026-08-24
 ---
 
 
-=======
->>>>>>> .merge_file_agbR29
 # Risoluzione Conflitti
 
 ## Best Practices
@@ -122,7 +120,6 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
 - [Report completo di intervento](../../../../docs/project/logs/conflict_resolution_report.md)
 - [Documentazione generale sulla risoluzione dei conflitti git](../../../project_docs/risoluzione_conflitti_git.md)
 - [Report completo di intervento](../../../project_docs/logs/conflict_resolution_report.md)
->>>>>>> .merge_file_3ECokC
 - [Dettagli risoluzione ModelWithPosContract](./conflicts/model_with_pos_contract_resolution.md)
 
 ## XotBaseMainPanelProvider.php
@@ -251,4 +248,3 @@ b6f667c (.)
 fc83074 (.)
 * [Linee Guida Principali Risoluzione Conflitti](../../../../project_docs/conflict_resolution.md)
 fc83074 (.)
->>>>>>> .merge_file_3ECokC

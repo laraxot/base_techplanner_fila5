@@ -59,5 +59,3 @@ All modules now follow the correct autoload configuration standard. The main dev
 - Continue to validate that all new modules follow the standard configuration
 - Implement automated checks to prevent this type of configuration issue
 See canonical documentation: ../../../Themes/docs/shared-components/autoload-audit-report.md
->>>>>>> .merge_file_7VLYAv
->>>>>>> .merge_file_Qh45lX

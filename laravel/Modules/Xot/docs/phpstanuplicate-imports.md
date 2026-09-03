@@ -152,5 +152,3 @@ Durante l'analisi si sono verificati errori nei parallel workers:
 **Errori rimanenti**: 3-4 (da verificare ModuleResource.php)
 **Priorità**: MASSIMA (errore fatale blocca l'analisi completa)
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-duplicate-imports-fix.md
->>>>>>> .merge_file_swQprv
->>>>>>> .merge_file_ERIzGd

@@ -166,4 +166,3 @@ Tutte le modifiche sono state verificate con successo utilizzando:
 **Conforme a**: DRY, KISS, Filosofia Laraxot  
 **PHPStan Level**: 10 ✅
 
->>>>>>> .merge_file_j3dE8Y

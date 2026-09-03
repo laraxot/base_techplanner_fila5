@@ -3,7 +3,6 @@
 **Data**: 2026-01-09  
 # File Naming Conventions Compliance - [DATE]
 
->>>>>>> .merge_file_9ngJhC
 **Status**: ✅ **COMPLETATO**
 
 ---
@@ -38,7 +37,6 @@
 ```
 ❌ PRIMA: nome-file-2026-01-09.md
 ❌ PRIMA: nome-file-[DATE].md
->>>>>>> .merge_file_9ngJhC
 ✅ DOPO: nome-file.md
 ```
 
@@ -86,4 +84,3 @@
 
 **Ultimo aggiornamento**: 2026-01-09
 **Ultimo aggiornamento**: [DATE]
->>>>>>> .merge_file_9ngJhC

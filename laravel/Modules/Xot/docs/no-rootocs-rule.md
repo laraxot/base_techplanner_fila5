@@ -51,5 +51,3 @@ find var/www/html/_bases/base_<nome progetto>/docs$|^docs$)"
 ## RESPONSABILITÀ:
 Tutti gli sviluppatori e AI devono rispettare questa regola senza eccezioni.
 See canonical documentation: ../../../Themes/docs/shared-components/no-root-docs-rule.md
->>>>>>> .merge_file_j8Liel
->>>>>>> .merge_file_ESE1BW

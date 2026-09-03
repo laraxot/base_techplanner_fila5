@@ -279,5 +279,3 @@ abstract class XotBaseMigration extends Migration
 *Analisi completata con principi DRY + KISS | Data: $(date)*
 *Modulo: Xot (Core Framework) | Priorità: CRITICA per Service Providers*
 See canonical documentation: ../../../Themes/docs/shared-components/optimization-analysis-dry-kiss-Modules.md
->>>>>>> .merge_file_2H7Hn1
->>>>>>> .merge_file_fiqEOc

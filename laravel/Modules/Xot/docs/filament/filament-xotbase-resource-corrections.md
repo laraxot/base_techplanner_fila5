@@ -206,7 +206,4 @@ canonical: ../../../../Themes/docs/shared-components/filament-xotbase-resource-c
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/filament-xotbase-resource-corrections.md
-=======
 See canonical documentation: ../../../../Themes/docs/shared-components/filament-xotbase-resource-corrections.md
->>>>>>> .merge_file_xChoef
->>>>>>> .merge_file_bDcJv6

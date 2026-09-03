@@ -9,8 +9,6 @@ updated: 2026-08-24
 ---
 
 
-=======
->>>>>>> .merge_file_Ej1SqQ
 # Troubleshooting - Documentazione Consolidata DRY + KISS
 
 > **🎯 Single Source of Truth**: Questo documento centralizza TUTTI i problemi comuni e le soluzioni del progetto
@@ -401,6 +399,8 @@ class ExampleTest extends TestCase
 }
 ```
 
+Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md).
+
 ### Errore: Test Lenti
 
 **Causa**
@@ -475,10 +475,6 @@ Class not found: Modules\ModuleName\NewClass
 **Soluzione**
 ```
 
-=======
-```
-
->>>>>>> .merge_file_Ej1SqQ
 ```bash
 composer dump-autoload
 ```

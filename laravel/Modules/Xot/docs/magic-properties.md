@@ -70,5 +70,3 @@ Files generally have good scores with minor style issues:
 
 **Next Steps**: Continue monitoring code quality tools and update documentation as needed.
 See canonical documentation: ../../../Themes/docs/shared-components/magic-properties-sumy.md
->>>>>>> .merge_file_ZHP0ZK
->>>>>>> .merge_file_yMNSDR

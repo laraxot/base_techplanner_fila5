@@ -98,5 +98,4 @@ public function mount(): void
 - [Livewire Forms](https://laravel-livewire.com/project_docs/2.x/input)
 - [Laravel CSRF Protection](https://laravel.com/docs/csrf)
 - [Livewire Forms](https://laravel-livewire.com/docs/2.x/input)
->>>>>>> .merge_file_BhuuZc
 - [Xot Widget Development](xot-widgets.md)

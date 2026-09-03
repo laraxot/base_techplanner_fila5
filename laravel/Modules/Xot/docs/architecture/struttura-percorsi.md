@@ -179,4 +179,3 @@ find laravel -type f -name "*.php" -exec sed -i 's|Themes|Themes|g' {} \;
 - [Regole di namespace](../xot/docs/standards/namespace-conventions.md)
 - [Autoloading](../xot/docs/standards/psr4-compliance.md)
 
->>>>>>> .merge_file_d9L1uG

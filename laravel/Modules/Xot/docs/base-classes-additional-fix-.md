@@ -140,4 +140,3 @@ XotBaseModel (Xot) - Base standard
 
 **Conclusione:** Anche le classi base specializzate ora seguono l'architettura Laraxot standard.
 
->>>>>>> .merge_file_GiZWWs

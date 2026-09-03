@@ -2,7 +2,6 @@
 
 ## Data: 2025-11-05
 ## Data: [DATE]
->>>>>>> .merge_file_vk8uoi
 ## Durata: ~3 ore
 ## Status: ✅ COMPLETATO
 
@@ -401,5 +400,4 @@ PHPStan + PHPMD + Pint + Tests = Qualità garantita
 **Firma:** Claude Code
 **Data:** 2025-11-05
 **Data:** [DATE]
->>>>>>> .merge_file_vk8uoi
 **Status:** COMPLETATO CON SUCCESSO ✅

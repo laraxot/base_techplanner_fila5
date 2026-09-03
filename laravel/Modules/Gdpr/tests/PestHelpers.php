@@ -10,6 +10,7 @@ use Illuminate\Testing\TestResponse;
 use Modules\Gdpr\Database\Factories\ConsentFactory;
 use Modules\Gdpr\Models\Consent;
 use Modules\Gdpr\Tests\TestCase;
+use Pest\Support\HigherOrderTapProxy;
 use PHPUnit\Framework\Assert;
 
 /**
@@ -19,11 +20,13 @@ use PHPUnit\Framework\Assert;
  */
 function gdprTest(): TestCase
 {
-    if (TestCase::$currentTest !== null) {
-        return TestCase::$currentTest;
+    // @phpstan-ignore-next-line Pest's test() returns mixed in static analysis
+    $test = test();
+    // @phpstan-ignore-next-line HigherOrderTapProxy is a Pest internal class
+    if ($test instanceof HigherOrderTapProxy) {
+        $test = $test->target;
     }
 
-    $test = test();
     Assert::assertInstanceOf(TestCase::class, $test);
 
     return $test;

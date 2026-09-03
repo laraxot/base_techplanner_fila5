@@ -280,5 +280,3 @@ if (inAdmin()) {
 **Status**: Analisi completa - Ready per implementation
 **Priority**: CRITICA - Blocca composer autoload
 See canonical documentation: ../../../Themes/docs/shared-components/helpers-architecture-analysis.md
->>>>>>> .merge_file_MwzLSk
->>>>>>> .merge_file_zOd5kj

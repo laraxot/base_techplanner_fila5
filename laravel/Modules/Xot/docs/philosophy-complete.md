@@ -14,7 +14,6 @@ updated: 2026-08-24
 # Xot - Filosofia Completa: Logica, Religione, Politica, Zen
 
 **Data Creazione**: [DATE]
->>>>>>> .merge_file_T5zyII
 **Status**: Documentazione Filosofica Completa
 **Versione**: 1.0.0
 
@@ -341,7 +340,6 @@ TextInput::make('name')
 
 **Violazione**: Creare Services è eresia.
 
->>>>>>> .merge_file_T5zyII
 
 **Manifestazione**:
 ```php
@@ -529,7 +527,6 @@ Modules/MyModule/database/MyModel.php // SBAGLIATO!
 #### 6. Actions Over Services
 
 **Decisione**: QueueableActions invece di Services.
->>>>>>> .merge_file_T5zyII
 
 **Motivazione**:
 - Actions sono single-purpose
@@ -547,7 +544,6 @@ Modules/MyModule/database/MyModel.php // SBAGLIATO!
 - `app(ClasseAction::class)->execute()` è l'unico modo per chiamare logica di dominio
 - Services sono deprecati
 - Migrazione da Services a Actions
->>>>>>> .merge_file_T5zyII
 
 ### Governance
 

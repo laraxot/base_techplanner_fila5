@@ -79,5 +79,3 @@ $actions['edit'] = EditAction::make()
 - `$me` è necessaria per accesso a `$this` in closure (pattern standard)
 - Complexity warning accettabili per metodi con controlli runtime robusti
 See canonical documentation: ../../../Themes/docs/shared-components/phpmd-fixes-plan.md
->>>>>>> .merge_file_pkPq2D
->>>>>>> .merge_file_I7J94O

@@ -206,7 +206,6 @@ php -l path/to/modified/file.php
 
 ## Aggiornamento Tooling 2025-11-08
 ## Aggiornamento Tooling [DATE]
->>>>>>> .merge_file_2u7ygL
 
 - PHPMD eseguito sui file aggiornati (`GetAllIconsAction`, `InlineDatePicker`, `Extra`, `XotBasePivot`, `XotBaseUuidModel`): nessuna nuova violazione rilevata.
 - PHPInsights eseguito sugli stessi file: esito positivo (complessità segnalata da soglie legacy, documentata nelle relative sezioni di modulo).

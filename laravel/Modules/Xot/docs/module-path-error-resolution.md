@@ -2,7 +2,6 @@
 
 **Data Creazione**: 2026-01-02
 **Data Creazione**: [DATE]
->>>>>>> .merge_file_f3pbq1
 **Status**: 🔧 RESOLVED
 **Versione**: 1.0.0
 
@@ -134,7 +133,6 @@ try {
 - [Xot Philosophy](./philosophy.md)
 - [Activity Philosophy](../Activity/docs/philosophy.md)
 - [Activity Philosophy](../activity/docs/philosophy.md)
->>>>>>> .merge_file_f3pbq1
 
 ---
 

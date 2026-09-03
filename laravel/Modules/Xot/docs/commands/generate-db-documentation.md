@@ -42,4 +42,3 @@ php artisan xot:generate-db-documentation {schema_file} {output_dir?}
 - [Database Guidelines](../database-guidelines.md)
 - [Documentation Guidelines](../documentation-guidelines.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
->>>>>>> .merge_file_MuEajA

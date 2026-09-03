@@ -7,7 +7,6 @@
    - Le regole generali sono in `/Modules/Xot/project_docs/`
    - Ogni modulo ha la sua documentazione in `/Modules/{ModuleName}/docs/`
    - Le regole generali sono in `/Modules/Xot/docs/`
->>>>>>> .merge_file_xXUjkb
    - La root `/docs` contiene solo indici e collegamenti
 
 2. **Collegamenti Bidirezionali**
@@ -19,7 +18,6 @@
    ```
    Modules/Xot/project_docs/
    Modules/Xot/docs/
->>>>>>> .merge_file_xXUjkb
    ├── guidelines/           # Linee guida generali
    ├── conventions/          # Convenzioni di codice
    ├── architecture/         # Architettura del framework
@@ -87,7 +85,6 @@ public function example(): void
 ```
 Modules/{ModuleName}/project_docs/
 Modules/{ModuleName}/docs/
->>>>>>> .merge_file_xXUjkb
 ├── README.md              # Panoramica del modulo
 ├── installation.md        # Istruzioni di installazione
 ├── configuration.md       # Configurazione
@@ -173,7 +170,6 @@ php artisan api:generate
 - [Convenzioni di Codice](../conventions/readme.md)
 - [Architettura](../architecture/readme.md)
 - [Best Practices](../best-practices/readme.md)
->>>>>>> laraxot/master
 - [Markdown Guide](https://www.markdownguide.org)
 
 ## Collegamenti tra versioni di documentation.md
@@ -184,4 +180,3 @@ php artisan api:generate
 * [documentation.md](../../../xot/docs/documentation.md)
 * [documentation.md](../../../xot/docs/guidelines/documentation.md)
 * [documentation.md](../../../cms/docs/roadmap/features/documentation.md)
->>>>>>> .merge_file_xXUjkb

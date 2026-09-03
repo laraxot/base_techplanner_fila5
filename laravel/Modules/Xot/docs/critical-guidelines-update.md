@@ -5,7 +5,6 @@
 ### Problema Identificato
 La cartella `docs` ESISTE e viola la regola fondamentale:
 La cartella `/var/www/html/ptvx/docs` ESISTE e viola la regola fondamentale:
->>>>>>> .merge_file_lXaFtq
 - ❌ **VIOLAZIONE CRITICA**: Cartella docs root esistente
 - ❌ **RIFERIMENTI ASSOLUTI**: Link hardcoded in vari moduli
 - ❌ **DUPLICAZIONE**: Documentazione fuori dai moduli
@@ -44,7 +43,6 @@ Sostituire tutti i riferimenti assoluti con riferimenti relativi:
 - [Traduzioni Root](/var/www/html/ptvx/docs/translations.md)
 - [Standard Traduzioni](/var/www/html/ptvx/docs/translation-standards.md)
 
->>>>>>> .merge_file_lXaFtq
 ```
 
 **DOPO (CORRETTO):**
@@ -118,7 +116,6 @@ $attachments = property_exists($model, 'attachments')
     ? $model::$attachments
 $attachments = property_exists($model, 'attachments') 
     ? $model::$attachments 
->>>>>>> .merge_file_lXaFtq
     : [];
 ```
 
@@ -149,7 +146,6 @@ if (!method_exists($record, 'getEmailAttribute')) {
 - [ ] Spostare documentazione utile in `Modules/Xot/docs/`
 - [ ] Eliminare cartella `docs`
 - [ ] Eliminare cartella `/var/www/html/ptvx/docs`
->>>>>>> .merge_file_lXaFtq
 - [ ] Aggiornare tutti i riferimenti assoluti
 
 ### Fase 2: Correzione property_exists (48 ore)
@@ -188,7 +184,6 @@ find /var/www/html/ptvx -maxdepth 2 -name "docs" -type d | grep -E "(^/var/www/h
 # Verifica usi errati di property_exists
 grep -r "property_exists" /var/www/html/ptvx/laravel/Modules/ --include="*.php" | grep -v "static" | grep -v "::"
 
->>>>>>> .merge_file_lXaFtq
 ```
 
 ---

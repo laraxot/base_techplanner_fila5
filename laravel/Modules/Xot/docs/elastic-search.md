@@ -20,6 +20,7 @@ https://www.algolia.com/blog/engineering/scout-extended-the-full-power-of-algoli
 
 https://github.com/babenkoivan/scout-elasticsearch-driver
 
+
 https://github.com/Jeroen-G/Explorer
 Explorer is a next-gen Elasticsearch driver for Laravel Scout with
 the power of Elasticsearch’s queries.
@@ -39,6 +40,8 @@ https://gist.github.com/thomasjsn/48185612dc7abe857b9a0ae5716b86c3
 https://github.com/babenkoivan/scout-elasticsearch-driver
 
 https://bestofphp.com/repo/babenkoivan-elastic-scout-driver
+
+
 
 
 meilisearch

@@ -2,7 +2,6 @@
 
 **Data Analisi**: 2026-01-30
 **Data Analisi**: [DATE]
->>>>>>> .merge_file_DMGkfE
 **Versione Filament**: 5.1.1
 **Documentazione Upstream**: https://filamentphp.com/docs/5.x/introduction/installation
 
@@ -78,4 +77,3 @@ Chart.register(ChartDataLabels);  // ❌ NON funziona
 ---
 
 
->>>>>>> .merge_file_DMGkfE

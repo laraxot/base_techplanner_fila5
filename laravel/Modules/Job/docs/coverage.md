@@ -1,66 +1,93 @@
 ---
-title: "Quality and coverage contract: Job"
+title: "Code Coverage: Job"
 module: "Job"
 type: concept
-tags: [coverage, phpstan, pest, quality]
+tags: [coverage]
 created: 2026-07-14
-updated: 2026-08-24
-qmd: "job phpstan pest coverage semantic tests no coverage farming"
+updated: 2026-07-14
+qmd: "coverage"
 related:
-  - "./stories/4.26.phpstan-regression-remediation.story.md"
-  - "./testing.md"
+  - "./phpstan-fixes-archive-2.md"
 ---
+# Code Coverage: Job
 
-# Quality and coverage contract: Job
+**Lines Coverage:** N/A (Failed to parse)
+**Test Exit Code:** 2
 
-Coverage is evidence produced by behavioural tests, not a target that justifies executing
-arbitrary methods. A Job test must assert a public, observable contract: command exit and
-output, policy authorization, schedule schema shape, model behaviour, or provider/resource
-discovery. Tests that swallow every exception or finish with `assertTrue(true)` do not count
-as regression protection.
+## Output
 
-## PHPStan remediation, story 4.26
+```text
+▕             }
+    1119▕         }
+    1120▕ 
+    1121▕         try {
+  ➜ 1122▕             $reflector = new ReflectionClass($concrete);
+    1123▕         } catch (ReflectionException $e) {
+    1124▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1125▕         }
+    1126▕
 
-The cold module measurement on 2026-08-24 found **76 test findings and no remaining
-production finding**. The previously reported `TestJobCommand` production finding had
-already been corrected concurrently by importing the concrete `Log` facade.
+      [2m+7 vendor frames [22m
+  8   Modules/Job/tests/Feature/TaskFrequenciesIntegrationTest.php:204
 
-| Disposition | Files | Reason |
-|---|---:|---|
-| Retained and corrected | 8 | command, policy, schedule/schema and shared discovery contracts have observable assertions |
-| Deleted | 4 | reflection sweeps swallowed failures, called protected APIs, referenced imaginary classes, or asserted tautologies |
+  ──────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Modules\Job\tests\Feature\TaskFrequenciesIntegr…  BindingResolutionException   
+  Target class [config] does not exist.
 
-Deleted files:
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1122
+    1118▕             }
+    1119▕         }
+    1120▕ 
+    1121▕         try {
+  ➜ 1122▕             $reflector = new ReflectionClass($concrete);
+    1123▕         } catch (ReflectionException $e) {
+    1124▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1125▕         }
+    1126▕
 
-- `JobCoverage100RemainingTest.php`
-- `JobGapAttackCoverageTest.php`
-- `JobGapCloserCoverageTest.php`
-- `ModuleCoverageBoostTest.php`
+      [2m+7 vendor frames [22m
+  8   Modules/Job/tests/Feature/TaskFrequenciesIntegrationTest.php:211
 
-The retained suite uses exact policy results, command exit codes, concrete table names,
-typed validation callbacks, Safe output/filesystem functions, and explicit generic tuple or
-collection shapes. Protected Filament APIs remain protected.
+  ──────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Modules\Job\tests\Feature\TaskFrequenciesIntegr…  BindingResolutionException   
+  Target class [config] does not exist.
 
-## Reproducible gates
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1122
+    1118▕             }
+    1119▕         }
+    1120▕ 
+    1121▕         try {
+  ➜ 1122▕             $reflector = new ReflectionClass($concrete);
+    1123▕         } catch (ReflectionException $e) {
+    1124▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1125▕         }
+    1126▕
 
-```bash
-cd laravel
-php -d memory_limit=-1 ./vendor/bin/phpstan analyse Modules/Job --no-progress
-./vendor/bin/pest \
-  Modules/Job/tests/Unit/JobBusinessCoverageTest.php \
-  Modules/Job/tests/Unit/JobDeepCoverageTest.php \
-  Modules/Job/tests/Unit/JobExecuteCoverage50Test.php \
-  Modules/Job/tests/Unit/JobFilamentSchemaCoverageTest.php \
-  Modules/Job/tests/Unit/JobPolicyBehaviorTest.php \
-  Modules/Job/tests/Unit/JobPolicyTest.php \
-  Modules/Job/tests/Unit/JobScheduleFormCoverageTest.php \
-  --no-coverage
+      [2m+7 vendor frames [22m
+  8   Modules/Job/tests/Feature/TaskFrequenciesIntegrationTest.php:229
+
+  ──────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Modules\Job\tests\Unit\Models\BaseModelTest > b…  BindingResolutionException   
+  Unresolvable dependency resolving [Parameter #0 [ <required> string $storedEventRepository ]] in class Spatie\EventSourcing\StoredEvents\EventSubscriber
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1429
+    1425▕     protected function unresolvablePrimitive(ReflectionParameter $parameter)
+    1426▕     {
+    1427▕         $message = "Unresolvable dependency resolving [$parameter] in class {$parameter->getDeclaringClass()->getName()}";
+    1428▕ 
+  ➜ 1429▕         throw new BindingResolutionException($message);
+    1430▕     }
+    1431▕ 
+    1432▕     /**
+    1433▕      * Register a new before resolving callback for all types.
+
+      [2m+15 vendor frames [22m
+  16  Modules/Job/app/Models/BaseModel.php:72
+  17  Modules/Job/tests/Unit/Models/BaseModelTest.php:11
+
+
+  Tests:    26 failed, 11 warnings, 38 skipped, 20 passed (47 assertions)
+  Duration: 9.72s
+
+
 ```
-
-Campagna 4.26: `analyse Modules/Job` → **[OK] No errors**. B = tautologie cancellate
-(asserzioni `assertIsString` su `getTable()`/`getLabel()` sostituite da valori concreti,
-o file interi di coverage-farming). G = callback di validazione e `id` stringa sul
-contratto utente, senza allargare le firme.
-
-The canonical certification remains `phpstan analyse Modules`, because analysing only a
-module can omit cross-file and type-coverage diagnostics.

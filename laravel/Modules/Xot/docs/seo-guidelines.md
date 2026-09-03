@@ -4,7 +4,6 @@
 
 This document outlines SEO best practices for <nome progetto> Meetups.
 This document outlines SEO best practices for LaravelPizza Meetups.
->>>>>>> .merge_file_8TLq2d
 
 ## Meta Tags
 
@@ -13,7 +12,6 @@ This document outlines SEO best practices for LaravelPizza Meetups.
 <x-slot name="title">
     {{ __('Page Title') }} - <nome progetto> Community
     {{ __('Page Title') }} - LaravelPizza Community
->>>>>>> .merge_file_8TLq2d
 </x-slot>
 
 <x-slot name="description">
@@ -64,7 +62,6 @@ This document outlines SEO best practices for LaravelPizza Meetups.
         "https://twitter.com/laravelpizza",
         "https://github.com/laraxot/laravelpizza"
 
->>>>>>> .merge_file_8TLq2d
     ]
 }
 </script>
@@ -159,7 +156,6 @@ All translatable SEO content should use translation files:
 'seo' => [
     'title' => 'Registrati - <nome progetto>',
     'title' => 'Registrati - LaravelPizza',
->>>>>>> .merge_file_8TLq2d
     'description' => 'Iscriviti alla community...',
 ]
 ```

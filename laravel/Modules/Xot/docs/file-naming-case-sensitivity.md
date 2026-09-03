@@ -52,7 +52,6 @@ userfactory.php              → ELIMINA
 
 ## 🗑️ Cleanup Effettuato (2025-11-04)
 ## 🗑️ Cleanup Effettuato ([DATE])
->>>>>>> .merge_file_nnC9WM
 
 ### Modulo Xot (6 file)
 ```bash
@@ -264,7 +263,6 @@ Ogni modulo interessato ha documentazione dettagliata:
 - [Tenant Module](../../tenant/docs/case-sensitivity-rules.md)
 - [User Module](../../user/docs/case-sensitivity-rules.md)
 
->>>>>>> .merge_file_nnC9WM
 
 ## 🔧 Prevenzione
 
@@ -324,7 +322,6 @@ python3 /path/to/check_duplicates.py
 - [Bashscripts Location Policy](./bashscripts-location-policy.md)
 - [CLAUDE.md - Project Guidelines](CLAUDE.md)
 - [CLAUDE.md - Project Guidelines](claude.md)
->>>>>>> .merge_file_nnC9WM
 
 ## 🎯 Conclusioni
 
@@ -352,6 +349,5 @@ Questa non è solo una regola tecnica, è una **filosofia di sviluppo**:
 
 **Ultimo aggiornamento**: 2025-11-04
 **Ultimo aggiornamento**: [DATE]
->>>>>>> .merge_file_nnC9WM
 **Status**: ✅ Cleanup completato, enforcement attivo
 **Revisione**: Trimestrale (ogni 3 mesi)

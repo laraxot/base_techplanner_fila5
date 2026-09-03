@@ -96,5 +96,3 @@ File di traduzione incompleti spesso derivano da:
 
 **Ultimo aggiornamento**: [DATE]
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-syntax-errors-fix.md
->>>>>>> .merge_file_QyLkjk
->>>>>>> .merge_file_fswo0Z

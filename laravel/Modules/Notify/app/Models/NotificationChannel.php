@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Modules\Notify\Models;
 
 use Modules\Media\Models\Media;
-use Modules\TechPlanner\Models\Profile;
+use Modules\Xot\Contracts\ProfileContract;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 
 /**
@@ -14,10 +14,10 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property array<string, mixed>|null $config
  * @property bool $is_enabled
  * @property int|null $priority
- * @property-read Profile|null $creator
+ * @property-read ProfileContract|null $creator
  * @property-read MediaCollection<int, Media> $media
  * @property-read int|null $media_count
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $updater
  *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|NotificationChannel newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|NotificationChannel newQuery()

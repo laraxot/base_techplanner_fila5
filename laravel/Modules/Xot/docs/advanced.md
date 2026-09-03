@@ -122,5 +122,3 @@ Imposta il titolo visibile nelle proprietà del file PDF.
 $html2pdf->pdf->SetTitle('Il Mio Bel Documento');
 ```
 See canonical documentation: ../../../Themes/docs/shared-components/advanced-Modules.md
->>>>>>> .merge_file_B9iREk
->>>>>>> .merge_file_j46WCE

@@ -167,5 +167,3 @@ composer dump-autoload
 
 **Philosophy Summary**: Laraxot values simplicity, consistency, and predictability above all else. Follow these principles to build maintainable, scalable applications with minimal technical debt.
 See canonical documentation: ../../../Themes/docs/shared-components/laraxot-philosophy-summary.md
->>>>>>> .merge_file_qOQyno
->>>>>>> .merge_file_9dmg0w

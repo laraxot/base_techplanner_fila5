@@ -89,7 +89,6 @@ Modules/Xot/
 * [analysis.md](../../../media/docs/phpstan/analysis.md)
 * [analysis.md](../../../../themes/one/docs/analysis.md)
 
->>>>>>> .merge_file_FTkChm
 
 ### Versione Incoming
 

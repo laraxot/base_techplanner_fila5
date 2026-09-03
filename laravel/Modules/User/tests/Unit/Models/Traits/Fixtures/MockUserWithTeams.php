@@ -31,8 +31,8 @@ use Spatie\Permission\Contracts\Role;
  */
 class MockUserWithTeams extends Model
 {
-    use HasTeams;
     use RelationX;
+    use HasTeams;
 
     public $incrementing = false;
 

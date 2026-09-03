@@ -17,7 +17,6 @@ Laraxot is built on the **DRY (Don't Repeat Yourself)** and **KISS (Keep It Simp
 - **Modularity**: Everything is organized into independent modules
 - **Inheritance Chain**: Clear, <nome progetto>able inheritance patterns
 - **Inheritance Chain**: Clear, predictable inheritance patterns
->>>>>>> .merge_file_aFueUA
 - **Convention over Configuration**: Predefined patterns that reduce decision-making
 - **Separation of Concerns**: Clear boundaries between different system components
 

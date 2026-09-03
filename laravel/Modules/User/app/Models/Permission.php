@@ -7,6 +7,7 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 use Modules\TechPlanner\Models\Profile;
 use Modules\Xot\Models\Traits\HasXotFactory;
@@ -31,7 +32,7 @@ use Webmozart\Assert\Assert;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Permission permission($permissions, bool $without = false)
  * @method static Builder<static>|Permission query()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Permission role($roles, ?string $guard = null, bool $without = false)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Permission team($teams, bool $without = false)
+ * @method static Builder<static>|Permission team($teams, bool $without = false)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Permission withoutPermission($permissions)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Permission withoutRole($roles, ?string $guard = null)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Permission withoutTeam($teams)
@@ -56,6 +57,7 @@ use Webmozart\Assert\Assert;
  */
 class Permission extends SpatiePermission
 {
+    /** @use HasXotFactory<Permission> */
     use HasXotFactory;
     use RelationX;
     use Updater;

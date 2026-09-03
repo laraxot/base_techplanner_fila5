@@ -163,5 +163,3 @@ class EnvWidget extends XotBaseWidget
 
 **NOTA**: Questo pattern è valido solo se il widget NON estende `XotBaseWidget` o se ha esigenze speciali. Per la maggior parte dei widget, l'inizializzazione automatica in `form()` è sufficiente.
 See canonical documentation: ../../../Themes/docs/shared-components/widgets-initialization.md
->>>>>>> .merge_file_Amhllp
->>>>>>> .merge_file_V7keZg

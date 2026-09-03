@@ -270,4 +270,3 @@ $variabile = $oggetto->proprietaNonStandard;
 
 *Guida consolidata che elimina duplicazioni e semplifica la manutenzione della documentazione PHPStan.*
 
->>>>>>> .merge_file_G9aCHT

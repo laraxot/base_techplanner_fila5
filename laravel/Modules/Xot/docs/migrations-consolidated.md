@@ -500,6 +500,5 @@ rm Modules/<nome progetto>/project_docs/database/migrations.md
 
 **Aggiornato**: 2025-08-07
 **Aggiornato**: [DATE]
->>>>>>> .merge_file_CoMkrB
 **Categoria**: database
 **Priorità**: CRITICA

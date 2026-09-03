@@ -38,6 +38,8 @@ https://beyondco.de/project_docs/laravel-websockets/debugging/dashboard   !!
 https://arslantariq.com/build-ui-dashboards-for-your-laravel-application/
 
 
-=======
+
+https://beyondco.de/docs/laravel-websockets/debugging/dashboard   !!
+
+
 https://arslantariq.com/build-ui-dashboards-for-your-laravel-application/
->>>>>>> .merge_file_6GDwYn

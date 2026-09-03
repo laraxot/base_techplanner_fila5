@@ -39,8 +39,6 @@ Configurare le preferenze di laragon come in foto
 <img class="block m-auto" src="https://laraxot.github.io/module_xot_fila3/assets/img/laragon-config.png" alt="laragon config" />  
 
 
->>>>>>> .merge_file_22fgMJ
->>>>>>> .merge_file_qyu6P7
 
 Creare una cartella _bases dentro la cartella www, in questa cartella si andrà a clonare il progetto.
 
@@ -129,7 +127,6 @@ Per creare la giunzione, andare nella cartella www ed eseguire tramite il prompt
 mklink /j nome_cartella_giuzione path_della_cartella_progetto
 ```  
 
->>>>>>> .merge_file_22fgMJ
 
 dopo riavviare il server di laragon.
 
@@ -143,7 +140,6 @@ nel singolo modulo
 Sia il progetto che ogni singolo modulo hanno un branch dev, generalmente utilizzato per lo sviluppo del progetto.  
 
 nel singolo modulo  
->>>>>>> .merge_file_22fgMJ
 
 ```bash
 git branch dev
@@ -206,4 +202,3 @@ se il branch di un modulo vuole essere pubblicato, eseguire nel modulo
 ---
 
 
->>>>>>> .merge_file_22fgMJ

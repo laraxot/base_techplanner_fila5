@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\Activity\Tests\Unit\Actions;
 
 use Modules\Activity\Actions\RestoreActivityAction;
+use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 test('RestoreActivityAction can be instantiated', function () {
     $action = new RestoreActivityAction();

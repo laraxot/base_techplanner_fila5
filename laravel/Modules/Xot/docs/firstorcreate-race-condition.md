@@ -177,5 +177,3 @@ expect($profileA->id)->toBe($profileB->id);
 **Ultimo aggiornamento**: [DATE]  
 **Status**: ✅ Completato
 See canonical documentation: ../../../Themes/docs/shared-components/firstorcreate-race-condition-fix.md
->>>>>>> .merge_file_p9UAVs
->>>>>>> .merge_file_IQfXWH

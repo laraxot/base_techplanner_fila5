@@ -9,26 +9,25 @@ use Illuminate\Database\Eloquent\Factories\HasFactory as EloquentHasFactory;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
 
 /**
- * Include gia' HasFactory (via newFactory override con GetFactoryAction).
- * Model che usano HasXotFactory NON devono aggiungere `use HasFactory;`
- * ne' ridefinire newFactory(): la factory viene risolta/generata da
- * GetFactoryAction seguendo le convenzioni Laraxot.
- *
- * @use EloquentHasFactory<Factory<static>>
+ * @template TModel of \Illuminate\Database\Eloquent\Model
  */
 trait HasXotFactory
 {
-    /** @use EloquentHasFactory<Factory<static>> */
+    /** @use EloquentHasFactory<Factory<TModel>> */
     use EloquentHasFactory {
         newFactory as parentNewFactory;
     }
 
     /**
-     * @return Factory<static>
+     * Create a new factory instance for the model.
+     *
+     * @return Factory<TModel>
      */
     protected static function newFactory(): Factory
     {
-        /** @var Factory<static> */
-        return app(GetFactoryAction::class)->execute(static::class);
+        /** @var Factory<TModel> $factory */
+        $factory = app(GetFactoryAction::class)->execute(static::class);
+
+        return $factory;
     }
 }

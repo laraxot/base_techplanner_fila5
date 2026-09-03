@@ -459,5 +459,3 @@ Xot provides the foundational architecture that enables LimeSurvey integration t
 - Advanced testing patterns
 - More comprehensive API documentation
 **Stato**: Production Framework - Foundation of All Modules
->>>>>>> .merge_file_jaSOXW
->>>>>>> .merge_file_6ZH0p6

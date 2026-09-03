@@ -17,10 +17,7 @@ class SnapshotResource extends XotBaseResource
 {
     protected static ?string $model = Snapshot::class;
 
-    // #[Override]
-    /**
-     * @return array<string, mixed>
-     */
+    #[Override]
     public static function getFormSchema(): array
     {
         return [

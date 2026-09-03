@@ -74,4 +74,3 @@ class Article extends Model implements ModelWithUserContract
 - [User Management](../features/user-management.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 - [Contracts Overview](./readme.md)
->>>>>>> .merge_file_4W6Tom

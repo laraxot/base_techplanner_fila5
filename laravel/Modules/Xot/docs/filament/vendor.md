@@ -8,7 +8,6 @@ description: Ripristinare cartella vendor
 extends: _layouts.documentation
 section: content
 
->>>>>>> .merge_file_qH6x4w
 ---
 
 # Ripristinare la cartella vendor

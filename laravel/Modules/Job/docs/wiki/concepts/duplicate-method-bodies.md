@@ -58,8 +58,8 @@ related:
 
 #### `withValue` — 2 classi · 5 righe · ~5 righe duplicate
 
-- `Job` · `ScheduleArguments::withValue` · `Modules/Job/app/Filament/Tables/Columns/ScheduleArguments.php:19`
-- `Job` · `ScheduleOptions::withValue` · `Modules/Job/app/Filament/Tables/Columns/ScheduleOptions.php:13`
+- `Job` · `ScheduleArguments::withValue` · `Modules/Job/app/Filament/Columns/ScheduleArguments.php:19`
+- `Job` · `ScheduleOptions::withValue` · `Modules/Job/app/Filament/Columns/ScheduleOptions.php:13`
 - `Job` · `ScheduleArguments::withValue` · `Modules/Job/app/Filament/Tables/Columns/ScheduleArguments.php:19`
 - `Job` · `ScheduleOptions::withValue` · `Modules/Job/app/Filament/Tables/Columns/ScheduleOptions.php:14`
 

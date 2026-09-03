@@ -6,7 +6,6 @@
 - NON implementare il metodo `down()` (XotBaseMigration lo gestisce automaticamente)
 - Il nome del file DEVE terminare con `_table.php`
 - Non implementare mai il metodo `down` se estendi XotBaseMigration
->>>>>>> .merge_file_gnmkGa
 - Per aggiungere colonne a tabelle esistenti:
   - Copia la migrazione originale, aggiorna il timestamp
   - Aggiungi la colonna in `tableUpdate` solo se non esiste (`if (! $this->hasColumn(...))`)
@@ -71,7 +70,6 @@ return new class extends XotBaseMigration
 - Compliance PHPStan livello 10
 - Facilitare troubleshooting e ripresa lavoro
 
->>>>>>> .merge_file_gnmkGa
 
 ## Checklist rapida
 - [ ] Anonymous class
@@ -101,7 +99,6 @@ Ultimo aggiornamento: 2025-05-13
 
 Ultimo aggiornamento: 2025-05-13
 
->>>>>>> .merge_file_gnmkGa
 
 ---
 

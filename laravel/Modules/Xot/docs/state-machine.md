@@ -11,6 +11,5 @@
 ## Collegamenti
 - [../../<nome progetto>/docs/state-machine.md](../../<nome progetto>/docs/state-machine.md)
 - [../../saluteora/docs/state-machine.md](../../saluteora/docs/state-machine.md)
->>>>>>> .merge_file_MsXZc4
 - [../../.windsurf/rules/filament-state-transitions.mdc](../../.windsurf/rules/filament-state-transitions.mdc)
 - [../../.cursor/rules/filament-state-transitions.mdc](../../.cursor/rules/filament-state-transitions.mdc)

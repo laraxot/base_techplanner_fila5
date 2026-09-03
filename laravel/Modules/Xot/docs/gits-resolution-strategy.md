@@ -265,5 +265,3 @@ I conflitti sono stati causati da:
 
 **Nota:** Questa documentazione è VIVA. Aggiungo pattern, lezioni, esempi man mano che risolvo conflitti.
 See canonical documentation: ../../../Themes/docs/shared-components/git-conflicts-resolution-strategy.md
->>>>>>> .merge_file_rQF4GW
->>>>>>> .merge_file_95TNPT

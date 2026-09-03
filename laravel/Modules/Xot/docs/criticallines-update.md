@@ -175,5 +175,3 @@ find  --include="*.php" | grep -v "static" | grep -v "::"
 
 *Questo documento sostituisce tutte le linee guida precedenti in conflitto.*
 See canonical documentation: ../../../Themes/docs/shared-components/critical-guidelines-update.md
->>>>>>> .merge_file_WeLvCs
->>>>>>> .merge_file_bJKeHB

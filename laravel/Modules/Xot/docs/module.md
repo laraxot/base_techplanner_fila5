@@ -4,7 +4,6 @@ topic: module
 canonical: ../../../Themes/docs/shared-components/module-analysis-Modules.md
 ---
 # Xot Module - Comprehensive Analysis
->>>>>>> .merge_file_nBABIi
 
 ## Module Overview
 **Module Name**: Xot  

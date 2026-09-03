@@ -370,4 +370,3 @@ Per mantenere questa organizzazione:
 *Responsabile: Sistema di Automazione Laraxot*
 *Ultimo aggiornamento: [DATE]*
 *Responsabile: Sistema di Automazione Laraxot*
->>>>>>> .merge_file_IXRz5O

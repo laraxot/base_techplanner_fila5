@@ -7,12 +7,12 @@ namespace Modules\User\Models;
 // // use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Str;
 use Modules\Media\Models\Media;
-use Modules\User\Models\Traits\IsProfileTrait;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Parental\HasChildren;
@@ -31,8 +31,10 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
  * @property int|null $device_users_count
  * @property Collection<int, Device> $devices
  * @property int|null $devices_count
+ * @property string|null $email
  * @property string|null $first_name
  * @property string|null $full_name
+ * @property bool $is_active
  * @property string|null $last_name
  * @property string|null $lang
  * @property MediaCollection<int, Media> $media
@@ -70,7 +72,6 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
 
     // use HasUuids;
     use InteractsWithMedia;
-    use IsProfileTrait;
     use Notifiable;
     use SchemalessAttributesTrait;
 
@@ -131,6 +132,35 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
     // ✅ CORRETTO: NON implementare scopeWithExtraAttributes() manualmente
     // Il trait SchemalessAttributesTrait lo fornisce automaticamente!
     // NOTA: BaseProfile ha attributo 'extra' diretto, non relazione 'extra'
+
+    public function getFullNameAttribute(?string $value): string
+    {
+        if ($value !== null) {
+            return $value;
+        }
+
+        $fullName = trim(($this->first_name ?? '').' '.($this->last_name ?? ''));
+
+        return $fullName !== '' ? $fullName : ($this->email ?? 'User');
+    }
+
+    public function toggleSuperAdmin(): void
+    {
+        $this->is_active = !($this->is_active ?? false);
+    }
+
+    /**
+     * @return BelongsTo<User, $this>
+     */
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function isSuperAdmin(): bool
+    {
+        return $this->is_active === true || $this->hasRole('super-admin');
+    }
 
     /**
      * Ottiene l'URL dell'avatar dell'utente.

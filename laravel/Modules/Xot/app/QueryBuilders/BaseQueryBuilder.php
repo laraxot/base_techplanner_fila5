@@ -156,7 +156,7 @@ abstract class BaseQueryBuilder
      */
     public function orderBy(string $column, string $direction = 'asc'): static
     {
-        if ($direction !== 'asc' && $direction !== 'desc') {
+        if ('asc' !== $direction && 'desc' !== $direction) {
             $direction = 'asc';
         }
 

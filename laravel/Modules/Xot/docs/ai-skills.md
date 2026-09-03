@@ -108,4 +108,3 @@ Quando si interviene su un modulo (es. `User`, `Xot`, `Performance`, ecc.), è u
 - Regole Filament/XotBase: [`filament/filament-resource-rules.md`](filament/filament-resource-rules.md)
 - Regole di estensione classi Filament: [`filament-class-extension-rules.md`](filament-class-extension-rules.md)
 
->>>>>>> .merge_file_sMCitW

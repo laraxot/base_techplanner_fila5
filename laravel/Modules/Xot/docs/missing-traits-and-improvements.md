@@ -613,7 +613,6 @@ class AlertWidget extends BaseTableWidget
 ## 🔗 Collegamenti Correlati
 
 - [Analisi Completa Codice](./comprehensive_code_analysis.md)
->>>>>>> .merge_file_KxuPJA
 - [Architettura Moduli](architecture.md)
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
 
@@ -1246,7 +1245,6 @@ class AlertWidget extends BaseTableWidget
 ## 🔗 Collegamenti Correlati
 
 - [Analisi Completa Codice](./comprehensive_code_analysis.md)
->>>>>>> .merge_file_KxuPJA
 - [Architettura Moduli](architecture.md)
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
 

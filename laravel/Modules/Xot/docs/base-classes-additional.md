@@ -138,5 +138,3 @@ XotBaseModel (Xot) - Base standard
 
 **Conclusione:** Anche le classi base specializzate ora seguono l'architettura Laraxot standard.
 See canonical documentation: ../../../Themes/docs/shared-components/base-classes-additional-fix.md
->>>>>>> .merge_file_YALiiJ
->>>>>>> .merge_file_iKCqgK

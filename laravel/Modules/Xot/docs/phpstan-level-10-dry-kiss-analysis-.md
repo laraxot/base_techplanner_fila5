@@ -71,7 +71,6 @@ find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Pro
 **File**: `Modules/healthcare_app/app/Models/Contact.php` (809 righe!)
 **File**: `Modules/ModuloEsempio/app/Models/Contact.php` (809 righe!)
 **File**: `Modules/Quaeris/app/Models/Contact.php` (809 righe!)
->>>>>>> .merge_file_2dAyTu
 
 **Errori PHPStan Level 10**:
 ```
@@ -112,7 +111,6 @@ if ($body_html === null) { ... }
 | healthcare_app | 21+ | 21 | ⚠️ Necessita refactoring Contact |
 | ModuloEsempio | 21+ | 21 | ⚠️ Necessita refactoring Contact |
 | Quaeris | 21+ | 21 | ⚠️ Necessita refactoring Contact |
->>>>>>> .merge_file_2dAyTu
 | Gdpr | 6 | 0 | ✅ |
 | Notify | 8 | 0 | ✅ |
 
@@ -158,7 +156,6 @@ class Notification extends BaseModel // Eredita $connection = 'user'
 - healthcare_app module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
 - ModuloEsempio module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
 - Quaeris module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
->>>>>>> .merge_file_2dAyTu
 - Altri moduli: ~51 file
 
 **Comando usato**:
@@ -301,7 +298,6 @@ protected function casts(): array
 **File**: `Modules/healthcare_app/app/Models/Contact.php`
 **File**: `Modules/ModuloEsempio/app/Models/Contact.php`
 **File**: `Modules/Quaeris/app/Models/Contact.php`
->>>>>>> .merge_file_2dAyTu
 **Righe**: 809 (!!!)
 **Metodi**: 40+
 
@@ -365,7 +361,6 @@ Contact.php (809 lines) →
 **File**: `Modules/healthcare_app/app/Models/QuestionChart.php`
 **File**: `Modules/ModuloEsempio/app/Models/QuestionChart.php`
 **File**: `Modules/Quaeris/app/Models/QuestionChart.php`
->>>>>>> .merge_file_2dAyTu
 **Righe**: 882 (!)
 
 **Stesso problema di Contact.php**
@@ -450,7 +445,6 @@ find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Pro
 - **healthcare_app**: 5 modelli
 - **ModuloEsempio**: 5 modelli
 - **Quaeris**: 5 modelli
->>>>>>> .merge_file_2dAyTu
 - **Notify**: ~8 modelli
 - **Altri**: ~43 modelli
 
@@ -459,7 +453,6 @@ find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Pro
 cd Modules/healthcare_app/app/Models
 cd Modules/ModuloEsempio/app/Models
 cd Modules/Quaeris/app/Models
->>>>>>> .merge_file_2dAyTu
 for f in *.php; do
   if grep -q "extends BaseModel" "$f"; then
     sed -i '/^[[:space:]]*protected \$connection = /d' "$f"
@@ -481,7 +474,6 @@ done
 vendor/bin/pint Modules/User/app/Models Modules/healthcare_app/app/Models --quiet
 vendor/bin/pint Modules/User/app/Models Modules/ModuloEsempio/app/Models --quiet
 vendor/bin/pint Modules/User/app/Models Modules/Quaeris/app/Models --quiet
->>>>>>> .merge_file_2dAyTu
 ```
 
 **Risultato**:
@@ -896,7 +888,6 @@ $activeUsers = User::active()->get(); // ✅ Works!
 ./vendor/bin/phpstan analyse Modules/healthcare_app/app/Models --level=10
 ./vendor/bin/phpstan analyse Modules/ModuloEsempio/app/Models --level=10
 ./vendor/bin/phpstan analyse Modules/Quaeris/app/Models --level=10
->>>>>>> .merge_file_2dAyTu
 ```
 
 **Results**:
@@ -905,7 +896,6 @@ $activeUsers = User::active()->get(); // ✅ Works!
 - healthcare_app: ⚠️ 21 errors (Contact.php - needs refactoring)
 - ModuloEsempio: ⚠️ 21 errors (Contact.php - needs refactoring)
 - Quaeris: ⚠️ 21 errors (Contact.php - needs refactoring)
->>>>>>> .merge_file_2dAyTu
 
 ### Manual Code Review
 

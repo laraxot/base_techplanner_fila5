@@ -257,4 +257,3 @@ Per problemi o domande:
 
 **Ultimo aggiornamento**: 2025-01-06
 **Ultimo aggiornamento**: [DATE]
->>>>>>> .merge_file_Kn81zq

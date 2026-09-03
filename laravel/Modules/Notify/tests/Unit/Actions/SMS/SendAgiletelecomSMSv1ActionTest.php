@@ -18,7 +18,6 @@ describe('SendAgiletelecomSMSv1Action', function () {
 
     it('implements SmsActionContract', function () {
         $action = new SendAgiletelecomSMSv1Action();
-
         Assert::assertInstanceOf(SmsActionContract::class, $action);
     });
 
@@ -61,7 +60,6 @@ describe('SendAgiletelecomSMSv1Action', function () {
 
     it('has correct namespace', function () {
         $reflection = new ReflectionClass(new SendAgiletelecomSMSv1Action());
-
         expect($reflection->getNamespaceName())->toBe('Modules\\Notify\\Actions\\SMS');
     });
 
@@ -77,7 +75,6 @@ describe('SendAgiletelecomSMSv1Action', function () {
 
     it('does not use QueueableAction trait', function () {
         $traits = \Safe\class_uses(new SendAgiletelecomSMSv1Action());
-
         expect($traits)->not->toContain('Spatie\\QueueableAction\\QueueableAction');
 
         expect($traits)->toContain('Spatie\\QueueableAction\\QueueableAction');

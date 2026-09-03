@@ -1,6 +1,5 @@
 # PHPStan Level 10 + DRY/KISS Complete Analysis - 2025-10-17
 # PHPStan Level 10 + DRY/KISS Complete Analysis - [DATE]
->>>>>>> .merge_file_OAGJGa
 
 ## Executive Summary
 
@@ -943,7 +942,6 @@ Con il refactoring di Contact e creazione scope traits: **→ 92% - Eccellente!*
 - [DRY/KISS Model Refactoring ([DATE])](./dry-kiss-model-refactoring-[DATE].md)
 - [Model Inheritance Rules (User Module)](../../user/docs/model-inheritance-rules.md)
 - [Model Usage in Themes](../../../themes/zero/docs/model-usage-in-themes.md)
->>>>>>> .merge_file_OAGJGa
 - [Duplicate Methods Analysis](./duplicate-methods-analysis.md)
 
 ---

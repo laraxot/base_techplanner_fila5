@@ -193,7 +193,6 @@ public function getModels(): array
 ### **Documentazione Correlata**
 - [README.md Modulo Xot](./README.md)
 - [README.md Modulo Xot](./readme.md)
->>>>>>> .merge_file_8uah58
 - [Service Architecture](./service-architecture.md)
 - [Best Practices](./best-practices.md)
 
@@ -591,7 +590,6 @@ public function getModels(): array
 ### **Documentazione Correlata**
 - [README.md Modulo Xot](./README.md)
 - [README.md Modulo Xot](./readme.md)
->>>>>>> .merge_file_8uah58
 - [Service Architecture](./service-architecture.md)
 - [Best Practices](./best-practices.md)
 
@@ -983,7 +981,6 @@ public function getModels(): array
 ### **Documentazione Correlata**
 - [README.md Modulo Xot](./README.md)
 - [README.md Modulo Xot](./readme.md)
->>>>>>> .merge_file_8uah58
 - [Service Architecture](./service-architecture.md)
 - [Best Practices](./best-practices.md)
 

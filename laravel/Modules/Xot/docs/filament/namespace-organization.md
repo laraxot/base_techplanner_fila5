@@ -77,5 +77,3 @@ Questo errore indica che un metodo è stato erroneamente definito come statico q
 - [XotBasePage](/var/www/html/base_saluteora/laravel/Modules/Xot/docs/filament/pages/xotbasepage.md)
 - [Linee Guida per l'Ereditarietà](/var/www/html/base_saluteora/laravel/Modules/Xot/docs/filament/filament_inheritance_guidelines.md)
 See canonical documentation: ../../../../Themes/docs/shared-components/namespace-organization-1.md
->>>>>>> .merge_file_UqYfE3
->>>>>>> .merge_file_ICPET0

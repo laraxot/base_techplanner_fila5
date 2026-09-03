@@ -145,5 +145,3 @@ If you encounter this error:
 *Trait Standards Version: 2.0*
 
 See canonical documentation: ../../../Themes/docs/shared-components/trait-method-signature-rules.md
->>>>>>> .merge_file_q6BsVG
->>>>>>> .merge_file_Kjhjzk

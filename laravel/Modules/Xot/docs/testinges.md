@@ -141,5 +141,3 @@ $currentTeam = $user->currentTeam;
 **Ultimo aggiornamento**: [DATE]
 **Prossimo step**: Correggere ArtisanServiceTest.php
 See canonical documentation: ../../../Themes/docs/shared-components/testing-fixes-roadmap.md
->>>>>>> .merge_file_qjnjxS
->>>>>>> .merge_file_HyZQdH

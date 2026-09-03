@@ -9,8 +9,6 @@ updated: 2026-08-24
 ---
 
 
-=======
->>>>>>> .merge_file_qVU4dI
 # Chart.js Datalabels Plugin Implementation in Xot Module
 
 ## Overview
@@ -936,7 +934,6 @@ For a minimal, production-ready example showing 2 labels per bar using `RawJs::m
 
 **`Modules/healthcare_app/Filament/Widgets/SimpleChartWidget.php`**
 **`Modules/Quaeris/Filament/Widgets/SimpleChartWidget.php`**
->>>>>>> .merge_file_3rtjrJ
 
 Key pattern:
 ```php

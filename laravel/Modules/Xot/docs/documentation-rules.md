@@ -16,7 +16,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [Struttura dei Moduli](./module_structure.md) - Convenzioni di struttura dei moduli
 - [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
 
->>>>>>> .merge_file_woRjSO
 
 ## Validazione dei Collegamenti
 
@@ -27,7 +26,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Sottodirectory](./sottodirectory/documento.md)
 [Documento in Modulo Altro](../../AltroModulo/project_docs/documento.md)
 [Documento in Modulo Altro](../../altromodulo/project_docs/documento.md)
->>>>>>> .merge_file_woRjSO
 [Documento in Root](../../../project_docs/documento.md)
 ```
 
@@ -49,7 +47,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/project_docs/documento.md)
 [Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
 
->>>>>>> .merge_file_woRjSO
 ```
 
 ### Checklist di Validazione
@@ -61,7 +58,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
 - [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
->>>>>>> .merge_file_woRjSO
 
 ## Validazione dei Collegamenti
 
@@ -72,7 +68,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Sottodirectory](./sottodirectory/documento.md)
 [Documento in Modulo Altro](../../AltroModulo/project_docs/documento.md)
 [Documento in Modulo Altro](../../altromodulo/project_docs/documento.md)
->>>>>>> .merge_file_woRjSO
 [Documento in Root](../../../project_docs/documento.md)
 ```
 
@@ -94,7 +89,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/project_docs/documento.md)
 [Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
 
->>>>>>> .merge_file_woRjSO
 ```
 
 ### Checklist di Validazione
@@ -106,7 +100,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
 - [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
->>>>>>> .merge_file_woRjSO
 
 ## Validazione dei Collegamenti
 
@@ -117,7 +110,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Sottodirectory](./sottodirectory/documento.md)
 [Documento in Modulo Altro](../../AltroModulo/project_docs/documento.md)
 [Documento in Modulo Altro](../../altromodulo/project_docs/documento.md)
->>>>>>> .merge_file_woRjSO
 [Documento in Root](../../../project_docs/documento.md)
 ```
 
@@ -139,7 +131,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/project_docs/documento.md)
 [Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
 
->>>>>>> .merge_file_woRjSO
 ```
 
 ### Checklist di Validazione

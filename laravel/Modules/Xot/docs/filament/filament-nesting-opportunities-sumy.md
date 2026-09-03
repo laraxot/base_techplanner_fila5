@@ -44,7 +44,6 @@ Il nesting in Filament 5.x permette di creare risorse figlie con pagine complete
 ### Modulo Quaeris
 
 **Documentazione**: [Modules/Quaeris/docs/filament-nesting-opportunities.md](../../quaeris/docs/filament-nesting-opportunities.md)
->>>>>>> .merge_file_B2kwWI
 
 **Opportunità Identificate**:
 
@@ -138,7 +137,6 @@ Il nesting in Filament 5.x permette di creare risorse figlie con pagine complete
 2. **SurveyPdf Nested Resource** (healthcare_app)
 1. **Contact Nested Resource** (Quaeris)
 2. **SurveyPdf Nested Resource** (Quaeris)
->>>>>>> .merge_file_B2kwWI
 3. **LimeGroup Nested Resource** (Limesurvey)
 4. **LimeAnswer Nested Resource** (Limesurvey)
 5. **Block Nested Resource** (Cms - Page e Section)
@@ -188,7 +186,6 @@ class ChildResource extends XotBaseResource
 ```bash
 php artisan make:filament-resource Contact --nested --module=healthcare_app
 php artisan make:filament-resource Contact --nested --module=Quaeris
->>>>>>> .merge_file_B2kwWI
 ```
 
 ### Creare Relation Manager
@@ -218,7 +215,6 @@ php artisan make:filament-relation-manager SurveyPdfResource contacts email
 - [Filament 5.x Nesting Migration Guide](./filament-5-nesting-migration.md)
 - [healthcare_app Nesting Opportunities](../../healthcare_app/docs/filament-nesting-opportunities.md)
 - [Quaeris Nesting Opportunities](../../quaeris/docs/filament-nesting-opportunities.md)
->>>>>>> .merge_file_B2kwWI
 - [Limesurvey Nesting Opportunities](../../limesurvey/docs/filament-nesting-opportunities.md)
 - [Cms Nesting Opportunities](../../cms/docs/filament-nesting-opportunities.md)
 - [User Nesting Opportunities](../../user/docs/filament-nesting-opportunities.md)

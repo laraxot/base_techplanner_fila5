@@ -10,6 +10,7 @@ use Filament\Support\Contracts\HasDescription;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasLabel;
 use Illuminate\Support\Collection;
+use Modules\Xot\Traits\EnumTrait;
 
 /**
  * Enum per la gestione dei giorni della settimana.
@@ -23,6 +24,8 @@ use Illuminate\Support\Collection;
  */
 enum DayOfWeek: int implements HasColor, HasDescription, HasIcon, HasLabel
 {
+    use EnumTrait;
+
     case MONDAY = 1;
     case TUESDAY = 2;
     case WEDNESDAY = 3;
@@ -127,10 +130,10 @@ enum DayOfWeek: int implements HasColor, HasDescription, HasIcon, HasLabel
      */
     public static function workingDays(): Collection
     {
-        /** @var Collection<int, self> $filtered */
-        $filtered = collect(self::cases())->filter(fn (self $day): bool => $day->value <= 5);
+        /** @var Collection<int, self> $result */
+        $result = collect(self::cases())->filter(static fn (self $day): bool => $day->value <= 5);
 
-        return $filtered;
+        return $result;
     }
 
     /**
@@ -140,10 +143,10 @@ enum DayOfWeek: int implements HasColor, HasDescription, HasIcon, HasLabel
      */
     public static function weekendDays(): Collection
     {
-        /** @var Collection<int, self> $filtered */
-        $filtered = collect(self::cases())->filter(fn (self $day): bool => $day->value > 5);
+        /** @var Collection<int, self> $result */
+        $result = collect(self::cases())->filter(static fn (self $day): bool => $day->value > 5);
 
-        return $filtered;
+        return $result;
     }
 
     /**

@@ -11,16 +11,19 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 describe('Base Morph Pivot Business Logic', function (): void {
-    it('persists attribute arrays on pivot', function (): void {
+    test('it can manage tags attributes', function (): void {
+        // Arrange
         $tags = ['tag1', 'tag2', 'important'];
 
-        $pivot = new TestConcreteMorphPivot();
+        $pivot = new TestConcreteMorphPivot;
         $pivot->setAttribute('tags', $tags);
 
+        // Act
         /** @var array<int, string> $pivotTags */
         $pivotTags = $pivot->getAttribute('tags');
 
-        Assert::assertNotEmpty($pivotTags);
+        // Assert
+        Assert::assertIsArray($pivotTags);
         Assert::assertContains('tag1', $pivotTags);
         Assert::assertContains('tag2', $pivotTags);
         Assert::assertContains('important', $pivotTags);
@@ -39,7 +42,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
         $pivotCategories = $pivot->getAttribute('categories');
 
         // Assert
-        Assert::assertNotEmpty($pivotCategories);
+        Assert::assertIsArray($pivotCategories);
         Assert::assertContains('category1', $pivotCategories);
         Assert::assertContains('category2', $pivotCategories);
         Assert::assertCount(2, $pivotCategories);
@@ -61,7 +64,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
         $pivotPermissions = $pivot->getAttribute('permissions');
 
         // Assert
-        Assert::assertNotEmpty($pivotPermissions);
+        Assert::assertIsArray($pivotPermissions);
         Assert::assertTrue($pivotPermissions['read']);
         Assert::assertFalse($pivotPermissions['write']);
         Assert::assertFalse($pivotPermissions['delete']);
@@ -83,7 +86,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
         $pivotSettings = $pivot->getAttribute('settings');
 
         // Assert
-        Assert::assertNotEmpty($pivotSettings);
+        Assert::assertIsArray($pivotSettings);
         Assert::assertTrue($pivotSettings['notifications']);
         Assert::assertFalse($pivotSettings['auto_save']);
         Assert::assertEquals(30, $pivotSettings['timeout']);

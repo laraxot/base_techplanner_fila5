@@ -1,0 +1,15 @@
+/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/app/Providers/RouteServiceProvider.php:103:Out of 10571 possible param types, only 10460 - 98.9 % actually have it. Add more param types to get over 99 %
+/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/tests/Feature/CmsContentManagementTest.php:110:Out of 10571 possible param types, only 10460 - 98.9 % actually have it. Add more param types to get over 99 %
+/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/tests/Feature/CmsContentManagementTest.php:128:Out of 10571 possible param types, only 10460 - 98.9 % actually have it. Add more param types to get over 99 %
+/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/tests/Feature/CmsContentManagementTest.php:401:Out of 10571 possible param types, only 10460 - 98.9 % actually have it. Add more param types to get over 99 %
+/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/tests/Feature/HeaderNavJsonTest.php:58:Out of 10571 possible param types, only 10460 - 98.9 % actually have it. Add more param types to get over 99 %
+/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/tests/Feature/HomepageContentManagementTest.php:129:Cannot cast mixed to string.
+/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/tests/Feature/HomepageContentManagementTest.php:140:Cannot cast mixed to string.
+/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/tests/Feature/HomepageContentManagementTest.php:158:Cannot cast mixed to string.
+/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/tests/Feature/HomepageFilamentBlocksArchitectureTest.php:95:Out of 10571 possible param types, only 10460 - 98.9 % actually have it. Add more param types to get over 99 %
+/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/tests/Feature/HomepageFilamentBlocksArchitectureTest.php:97:Out of 10571 possible param types, only 10460 - 98.9 % actually have it. Add more param types to get over 99 %
+/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/tests/TestHelper.php:53:Out of 10571 possible param types, only 10460 - 98.9 % actually have it. Add more param types to get over 99 %
+/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/tests/Unit/Http/Volt/RegisterComponentTest.php:53:Casting class ReflectionType to string is deprecated.
+/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/tests/Unit/View/Components/PageComponentTest.php:27:Out of 10571 possible param types, only 10460 - 98.9 % actually have it. Add more param types to get over 99 %
+/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/tests/Unit/View/Components/PageComponentTest.php:35:Out of 10571 possible param types, only 10460 - 98.9 % actually have it. Add more param types to get over 99 %
+/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/tests/Unit/View/Components/PageComponentTest.php:42:Out of 10571 possible param types, only 10460 - 98.9 % actually have it. Add more param types to get over 99 %

@@ -154,7 +154,6 @@ class GetFactoryAction
         // Richiede refresh per caricarla
         throw new Exception('Factory created, press F5 to refresh');
 
->>>>>>> .merge_file_sFkj0z
     }
 }
 ```
@@ -292,7 +291,6 @@ composer dump-autoload
 # Riprova
 php artisan test
 
->>>>>>> .merge_file_sFkj0z
 ```
 
 ### Conflitto con HasFactory standard
@@ -422,4 +420,3 @@ protected static function newFactory(): Factory
 **Ultima modifica**: 22 Ottobre 2025
 **Stato**: ✅ Produzione
 **PHPStan**: Level 9 compliant
->>>>>>> .merge_file_sFkj0z

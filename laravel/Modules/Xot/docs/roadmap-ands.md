@@ -342,5 +342,3 @@ function xot_config(string $key): mixed
 **Timeline**: 2 Ottobre 2025 (domani)
 **Effort**: ~2 ore → 100% CLEAN
 See canonical documentation: ../../../Themes/docs/shared-components/roadmap-and-issues.md
->>>>>>> .merge_file_gKiaPb
->>>>>>> .merge_file_ClcqNH

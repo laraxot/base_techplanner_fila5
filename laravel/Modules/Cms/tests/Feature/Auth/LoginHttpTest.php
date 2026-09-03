@@ -7,9 +7,12 @@ namespace Modules\Cms\Tests\Feature\Auth;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Livewire\Volt\Volt as LivewireVolt;
+use Modules\Cms\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Pest\Laravel\actingAs;
+
+uses(TestCase::class);
 
 describe('Login Http', function (): void {
     test('login page can be rendered', function (): void {
@@ -89,7 +92,7 @@ describe('Login Http', function (): void {
 
         cmsAssertGuest();
 
-        $response = LivewireVolt::test('auth.login #2')
+        $response = LivewireVolt::test('auth.login')
             ->set('email', $email)
             ->set('password', 'password123')
             ->set('remember', true)
@@ -108,7 +111,7 @@ describe('Login Http', function (): void {
 
         $originalSessionId = session()->getId();
 
-        LivewireVolt::test('auth.login #3')
+        LivewireVolt::test('auth.login')
             ->set('email', $email)
             ->set('password', 'password123')
             ->call('authenticate');
@@ -125,13 +128,13 @@ describe('Login Http', function (): void {
         ]);
 
         for ($i = 0; $i < 5; $i++) {
-            LivewireVolt::test('auth.login #4')
+            LivewireVolt::test('auth.login')
                 ->set('email', $email)
                 ->set('password', 'wrong_password')
                 ->call('authenticate');
         }
 
-        $response = LivewireVolt::test('auth.login #5')
+        $response = LivewireVolt::test('auth.login')
             ->set('email', $email)
             ->set('password', 'password123')
             ->call('authenticate');
@@ -147,7 +150,7 @@ describe('Login Http', function (): void {
         ]);
         cmsAssertGuest();
 
-        $response = LivewireVolt::test('auth.login #6')
+        $response = LivewireVolt::test('auth.login')
             ->set('email', $email)
             ->set('password', 'password123')
             ->call('authenticate');

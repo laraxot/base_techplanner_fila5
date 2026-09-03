@@ -212,5 +212,3 @@ DOPO:
 ---
 *Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS*
 See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-dry-kiss.md
->>>>>>> .merge_file_5esjPD
->>>>>>> .merge_file_1h3Qye

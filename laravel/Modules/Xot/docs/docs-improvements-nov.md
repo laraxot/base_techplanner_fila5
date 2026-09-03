@@ -157,7 +157,6 @@ docs/
 ```markdown
 [user docs](../../User/docs/user-guide.md)
 [user docs](../../user/docs/user-guide.md)
->>>>>>> .merge_file_U3EKd6
 ```
 
 ### All'interno dello stesso modulo
@@ -421,7 +420,6 @@ docs/
 ```markdown
 [user docs](../../User/docs/user-guide.md)
 [user docs](../../user/docs/user-guide.md)
->>>>>>> .merge_file_U3EKd6
 ```
 
 ### All'interno dello stesso modulo

@@ -30,4 +30,3 @@ usefull links:
 * [zsh.md](../../../Xot/docs/ubuntu/zsh.md)
 
 
->>>>>>> .merge_file_gzpK5r

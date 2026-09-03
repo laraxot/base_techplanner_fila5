@@ -29,7 +29,6 @@ Indipendentemente dal tipo di operazione (CREATE, ADD, CHANGE, FIX), il nome del
 ## Introduzione
 
 Questo documento definisce gli standard e le best practices da seguire per tutte le migrazioni nei moduli di <nome progetto>. Questi standard sono fondamentali per garantire la coerenza e la correttezza delle migrazioni in tutto il progetto.
->>>>>>> .merge_file_qiIwob
 
 ## Principi Fondamentali
 
@@ -45,7 +44,6 @@ Questo documento definisce gli standard e le best practices da seguire per tutte
 4. **Verifica delle tabelle correlate**: Prima di creare foreign keys, verificare sempre l'esistenza della tabella correlata
 5. **Gestione dei timestamp**: Utilizzare sempre `$this->updateTimestamps()` per gestire i timestamp
 
->>>>>>> .merge_file_qiIwob
 
 ## Struttura Standard delle Migrazioni
 
@@ -57,7 +55,6 @@ declare(strict_types=1);
 use Illuminate\Database\Schema\Blueprint;
 use Modules\NomeModello\Models\NomeModello;
 use Illuminate\Support\Facades\Schema;
->>>>>>> .merge_file_qiIwob
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 /**
@@ -87,7 +84,6 @@ return new class extends XotBaseMigration
      */
     protected ?string $connection = 'mysql'; // o altra connessione appropriata
 
->>>>>>> .merge_file_qiIwob
 
     /**
      * Run the migrations.
@@ -126,7 +122,6 @@ return new class extends XotBaseMigration
             // Indici
             $table->index('campo_id');
 
->>>>>>> .merge_file_qiIwob
         });
     }
 };

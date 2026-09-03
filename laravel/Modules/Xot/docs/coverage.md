@@ -233,4 +233,3 @@ misura onesta del perimetro Unit.
 MySQL locale su `127.0.0.1:3306` esiste; credenziali `.env.testing` vanno verificate per la via C
 (MySQL `*_test`, AD-3).
 
->>>>>>> .merge_file_hgTqZt

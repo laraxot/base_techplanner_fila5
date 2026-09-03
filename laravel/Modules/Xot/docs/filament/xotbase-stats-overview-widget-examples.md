@@ -626,5 +626,3 @@ La classe `XotBaseStatsOverviewWidget` migliorata fornisce un set completo di st
 **Versione**: 2.0
 **Stato**: ✅ Completato e Documentato
 See canonical documentation: ../../../../Themes/docs/shared-components/xotbase-stats-overview-widget-examples.md
->>>>>>> .merge_file_Nk4cFG
->>>>>>> .merge_file_l7qVtZ

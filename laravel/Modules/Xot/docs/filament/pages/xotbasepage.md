@@ -4,7 +4,6 @@
 
 La classe `XotBasePage` rappresenta un componente fondamentale nell'architettura di <nome progetto>, fungendo da intermediario tra le pagine Filament e le implementazioni specifiche dell'applicazione. Questa classe astratta segue il pattern architetturale di non estendere mai direttamente le classi di Filament, ma utilizzare sempre classi wrapper con prefisso `XotBase`.
 La classe `XotBasePage` rappresenta un componente fondamentale nell'architettura di SaluteOra, fungendo da intermediario tra le pagine Filament e le implementazioni specifiche dell'applicazione. Questa classe astratta segue il pattern architetturale di non estendere mai direttamente le classi di Filament, ma utilizzare sempre classi wrapper con prefisso `XotBase`.
->>>>>>> .merge_file_0pvVIk
 
 ## Percorso del File
 
@@ -50,7 +49,6 @@ public function getTitle(): string
 ```php
 public function form(Form $form): Form
 public function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
->>>>>>> .merge_file_0pvVIk
 {
     return $form
         ->schema($this->getFormSchema())
@@ -73,14 +71,13 @@ public function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
 ```php
 namespace Modules\<nome progetto>\Filament\Pages;
 namespace Modules\SaluteOra\Filament\Pages;
->>>>>>> .merge_file_0pvVIk
 
 use Modules\Xot\Filament\Resources\Pages\XotBasePage;
 
 class MyCustomPage extends XotBasePage
 {
     protected static ?string $navigationIcon = 'heroicon-o-document';
-    
+
     protected function getFormSchema(): array
     {
         return [
@@ -96,7 +93,6 @@ class MyCustomPage extends XotBasePage
 // ❌ ERRORE: Non estendere mai direttamente Page
 namespace Modules\<nome progetto>\Filament\Pages;
 namespace Modules\SaluteOra\Filament\Pages;
->>>>>>> .merge_file_0pvVIk
 
 use Filament\Pages\Page;
 
@@ -131,7 +127,7 @@ class MyCustomPage extends Page // ⚠️ ERRATO!
 class MyPage extends XotBasePage implements HasForms  // ⚠️ ERRATO!
 {
     use InteractsWithForms;  // ⚠️ ERRATO!
-    
+
     // ...
 }
 ```
@@ -143,7 +139,7 @@ class MyPage extends XotBasePage implements HasForms  // ⚠️ ERRATO!
 class MyPage extends XotBasePage
 {
     // Nessuna ridichiarazione di trait/interfacce già presenti
-    
+
     protected function getFormSchema(): array
     {
         return [
@@ -187,4 +183,3 @@ La classe è progettata per essere compatibile con Filament v3+ e garantisce il 
 - [Principi di Ereditarietà](/var/www/html/base_saluteora/laravel/Modules/Xot/docs/class_inheritance_principles.md)
 - [Architettura Filament-Xot](/var/www/html/base_saluteora/laravel/Modules/Xot/docs/filament_xot_architecture.md)
 
->>>>>>> .merge_file_0pvVIk

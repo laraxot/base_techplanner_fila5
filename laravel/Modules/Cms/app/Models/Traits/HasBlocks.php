@@ -15,8 +15,8 @@ use Modules\Xot\Datas\XotData;
  * Trait for Models that have blocks.
  *
  * @phpstan-require-extends Model
-*
- * @method        mixed                                         getTranslation(string $key, string $locale, bool $useFallbackLocale = true)
+ *
+ * @method mixed getTranslation(string $key, string $locale, bool $useFallbackLocale = true)
  * @method static \Illuminate\Database\Eloquent\Builder<static> query()
  */
 trait HasBlocks
@@ -81,8 +81,7 @@ trait HasBlocks
     }
 
     /**
-    * @param array<int|string, mixed> $blocks
-     *
+     * @param  array<int|string, mixed>  $blocks
      * @return array<string, mixed>
      */
     public function compile(array $blocks): array

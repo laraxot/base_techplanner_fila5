@@ -56,26 +56,22 @@ class SmsNotification extends Notification implements ShouldQueue
     /**
      * Get the notification's delivery channels.
      *
-     * @param  mixed  $notifiable  The entity to be notified (l'entità da notificare)
+     * @param  object  $notifiable  The entity to be notified (l'entità da notificare)
      * @return array<int, string>
      */
-    public function via(mixed $notifiable): array
+    public function via(object $notifiable): array
     {
-        if (is_object($notifiable) && method_exists($notifiable, 'routeNotificationFor')) {
-            return ['sms'];
-        }
-
         return ['sms'];
     }
 
     /**
      * Get the SMS representation of the notification.
      */
-    public function toSms(mixed $notifiable): SmsData
+    public function toSms(object $notifiable): SmsData
     {
         // If the notifiable entity has a routeNotificationForSms method,
         // we'll use that to get the destination phone number
-        if (is_object($notifiable) && method_exists($notifiable, 'routeNotificationForSms')) {
+        if (method_exists($notifiable, 'routeNotificationForSms')) {
             $routeResult = $notifiable->routeNotificationForSms($this);
             $this->smsData->recipient = is_scalar($routeResult) ? (string) $routeResult : '';
         }

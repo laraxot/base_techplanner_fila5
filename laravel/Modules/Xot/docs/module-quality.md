@@ -103,5 +103,3 @@ php phpmd.phar Modules/[ModuleName] text cleancode,codesize,controversial,design
 3. Refactor style issues in TechPlanner module
 4. Maintain high standards in User, Tenant, Activity, and Media modules
 See canonical documentation: ../../../Themes/docs/shared-components/module-quality-analysis-sumy.md
->>>>>>> .merge_file_w4wnFn
->>>>>>> .merge_file_4tSniU

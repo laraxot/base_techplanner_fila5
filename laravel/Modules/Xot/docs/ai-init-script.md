@@ -41,5 +41,3 @@ file .ai .cursor .claude .windsurf .gemini
 
 Tutti dovrebbero mostrare "symbolic link to bashscripts/ai/..."
 See canonical documentation: ../../../Themes/docs/shared-components/ai-init-script-fix.md
->>>>>>> .merge_file_UnCcKs
->>>>>>> .merge_file_GXhxOi

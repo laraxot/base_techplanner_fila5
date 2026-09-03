@@ -527,5 +527,3 @@ echo "5. Run quality checks"
 
 **Maintained by**: Xot Module Development Team
 See canonical documentation: ../../../Themes/docs/shared-components/development-workflow-detailed.md
->>>>>>> .merge_file_R73uBk
->>>>>>> .merge_file_paSCDM

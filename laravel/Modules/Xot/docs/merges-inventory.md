@@ -202,5 +202,3 @@ This document catalogs all files containing merge conflict markers found through
 ---
 *This inventory will be updated as conflicts are resolved.*
 See canonical documentation: ../../../Themes/docs/shared-components/merge-conflicts-inventory.md
->>>>>>> .merge_file_QFC9ld
->>>>>>> .merge_file_QWiKwZ

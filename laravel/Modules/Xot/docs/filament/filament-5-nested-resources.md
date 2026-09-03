@@ -19,8 +19,6 @@ topic: filament-5-nested-resources
 canonical: ../../../../Themes/docs/shared-components/filament-5-nested-resources.txt
 ---
 # Filament 5.x Nested Resources Guide
-=======
->>>>>>> .merge_file_69DOvX
 
 ## Overview
 Filament 5.x Nested Resources allow hierarchical relationships between resources with automatic routing and breadcrumb generation.
@@ -322,8 +320,5 @@ canonical: ../../../../Themes/docs/shared-components/filament-5-nested-resources
 
 See canonical documentation: ../../../../Themes/docs/shared-components/filament-5-nested-resources.txt
 5. **Implement proper error handling** without information leakage
-=======
 5. **Implement proper error handling** without information leakage
->>>>>>> .merge_file_ITJzSs
->>>>>>> .merge_file_69DOvX
->>>>>>> .merge_file_EBnL0P
+See canonical documentation: ../../../../Themes/docs/shared-components/filament-5-nested-resources.md

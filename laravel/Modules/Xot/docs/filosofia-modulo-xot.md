@@ -2,7 +2,6 @@
 
 > **Generato**: 2025-12-24
 > **Generato**: [DATE]
->>>>>>> .merge_file_8vv8J6
 > **Scopo**: Documentare la filosofia, logica, business logic e architettura del modulo Xot
 
 ---

@@ -163,4 +163,3 @@ public function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
 - [Guida Migrazione Filament](https://filamentphp.com/docs/4.x/upgrade-guide)
 - [XotBaseWidget](../filament/widgets/xotbasewidget.md)
 
->>>>>>> .merge_file_bFE6bU

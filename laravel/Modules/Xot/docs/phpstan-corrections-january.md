@@ -144,7 +144,6 @@ return BlockData::collection([]);
 - [Activity Module Docs](../../activity/docs/readme.md)
 - [Cms Module Docs](../../cms/docs/readme.md)
 - [Geo Module Docs](../../geo/docs/readme.md)
->>>>>>> .merge_file_MdcSvZ
 
 ---
 

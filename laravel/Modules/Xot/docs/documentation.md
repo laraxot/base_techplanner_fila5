@@ -273,6 +273,3 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - I collegamenti bidirezionali sono essenziali per la navigabilità
 
 
-=======
->>>>>>> .merge_file_69fHJl
->>>>>>> .merge_file_3Z4XEy

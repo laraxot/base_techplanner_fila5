@@ -27,7 +27,6 @@ if (env('APP_DEBUG')) {
     Debugbar::enable();
 }
 
->>>>>>> .merge_file_SO7oTj
 ```
 
 - **Features**:

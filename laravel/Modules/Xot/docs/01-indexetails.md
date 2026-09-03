@@ -48,5 +48,3 @@ See canonical documentation: ../../../Themes/docs/shared-components/01-index-det
 ---
 *
 See canonical documentation: ../../../Themes/docs/shared-components/01-index-details.md
->>>>>>> .merge_file_DzUmcb
->>>>>>> .merge_file_5uQalA

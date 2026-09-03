@@ -4,7 +4,6 @@
 
 This document outlines the UI/UX standards for <nome progetto> Meetups frontend development.
 This document outlines the UI/UX standards for LaravelPizza Meetups frontend development.
->>>>>>> .merge_file_1m0jQO
 
 ## Mobile-First Design
 

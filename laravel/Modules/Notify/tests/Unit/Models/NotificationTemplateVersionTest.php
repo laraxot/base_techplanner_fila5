@@ -61,19 +61,21 @@ it('has template relationship method', function (): void {
     $reflection = new \ReflectionClass(NotificationTemplateVersion::class);
     $version = $reflection->newInstanceWithoutConstructor();
 
+    Assert::assertTrue(method_exists($version, 'template'));
 });
 
 it('has restore method', function (): void {
     $reflection = new \ReflectionClass(NotificationTemplateVersion::class);
     $version = $reflection->newInstanceWithoutConstructor();
 
+    Assert::assertTrue(method_exists($version, 'restoreTemplate'));
 });
 
 it('restore method returns NotificationTemplate', function (): void {
     $reflection = new \ReflectionClass(NotificationTemplateVersion::class);
     $version = $reflection->newInstanceWithoutConstructor();
 
-    $method = new \ReflectionMethod($version, 'restore');
+    $method = new \ReflectionMethod($version, 'restoreTemplate');
     $returnType = $method->getReturnType();
 
     Assert::assertNotNull($returnType);
@@ -129,5 +131,4 @@ it('has creator and updater relationships', function (): void {
 
 it('has media relationship', function (): void {
     $version = new NotificationTemplateVersion();
-
 });

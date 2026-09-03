@@ -12,7 +12,7 @@ use Symfony\Component\Console\Command\Command;
 use function Safe\class_uses;
 use function Safe\file_get_contents;
 
-uses(TestCase::class)->group('no-job-db');
+uses(TestCase::class);
 
 describe('GetCommandOptionsActions', function (): void {
     test('can be instantiated', function (): void {

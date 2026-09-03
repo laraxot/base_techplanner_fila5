@@ -276,5 +276,3 @@ Assert::notNull($value);
 **Ultimo aggiornamento**: 11 Novembre 2025
 **Progresso**: 9/406 errori risolti (2.2%)
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-errors-strategy.md
->>>>>>> .merge_file_CJqD5N
->>>>>>> .merge_file_kZ6RlE

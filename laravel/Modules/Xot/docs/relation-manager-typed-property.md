@@ -71,5 +71,3 @@ class MyRelationManager extends XotBaseRelationManager
 
 ✅ **RISOLTO** - La proprietà tipizzata è ora correttamente inizializzata nelle classi figlie.
 See canonical documentation: ../../../Themes/docs/shared-components/relation-manager-typed-property-fix.md
->>>>>>> .merge_file_0mrWMF
->>>>>>> .merge_file_WWpkaz

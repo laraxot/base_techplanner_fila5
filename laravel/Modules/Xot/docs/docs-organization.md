@@ -577,5 +577,3 @@ Per migliorare questa guida:
 **Status**: ✅ Active
 **Maintainer**: Team Laraxot
 See canonical documentation: ../../../Themes/docs/shared-components/docs-organization-guide.md
->>>>>>> .merge_file_CWlQZ1
->>>>>>> .merge_file_anEd3R

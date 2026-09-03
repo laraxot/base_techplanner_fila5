@@ -79,4 +79,3 @@ return [
 * [configuration.md](../../../xot/docs/configuration.md)
 * [configuration.md](../../../cms/docs/configuration.md)
 
->>>>>>> .merge_file_y4k37d

@@ -10,7 +10,6 @@ Per installazione Composer e utilizzo dei namespace:
 - [Chart: JpGraph Installation](../Chart/docs/jpgraph-installation.md)
 - [Chart: JpGraph Composer e namespace](../chart/docs/jpgraph-composer-and-namespaces.md)
 - [Chart: JpGraph Installation](../chart/docs/jpgraph-installation.md)
->>>>>>> .merge_file_Ks3IKw
 
 ## Sintesi
 

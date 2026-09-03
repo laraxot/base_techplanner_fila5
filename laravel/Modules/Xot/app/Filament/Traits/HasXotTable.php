@@ -17,6 +17,7 @@ use Filament\Actions\EditAction;
 use Filament\Actions\ReplicateAction;
 use Filament\Actions\ViewAction;
 use Filament\Notifications\Notification;
+use ReflectionMethod;
 use Filament\Resources\Pages\ListRecords;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\ColumnGroup;
@@ -41,9 +42,9 @@ use Modules\UI\Filament\Traits\HasTableLayoutPage;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Filament\PlainTextFromFilamentValueAction;
 use Modules\Xot\Actions\GetTransKeyAction;
+use Modules\Xot\Filament\Resources\Pages\XotBaseManageRelatedRecords;
+use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
-use Modules\Xot\Filament\Resources\XotBaseResource\Pages\XotBaseManageRelatedRecords;
-use Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager;
 use Webmozart\Assert\Assert;
 
 /**
@@ -157,6 +158,20 @@ trait HasXotTable
         return [
             Stack::make($columns)->space(1),
         ];
+    }
+
+    /**
+     * Se i filtri vanno applicati solo dopo il bottone "Applica filtri" (default Filament)
+     * oppure a ogni modifica del campo.
+     *
+     * Filament rende il bottone nel piede del form dei filtri, quindi occupa sempre una riga
+     * propria: una tabella che vuole i filtri su una riga sola deve rinunciare al bottone e
+     * applicare al volo. Il default `true` conserva il comportamento di tutte le tabelle
+     * esistenti; si sovrascrive solo dove serve.
+     */
+    public function shouldDeferTableFilters(): bool
+    {
+        return true;
     }
 
     /**
@@ -361,8 +376,10 @@ trait HasXotTable
      */
     public function getModelClass(): string
     {
+        /* @phpstan-ignore-next-line function.alreadyNarrowedType */
         if (method_exists($this, 'getModel')) {
             $model = $this->getModel();
+            Assert::string($model);
             Assert::classExists($model);
             Assert::subclassOf($model, Model::class);
 
@@ -457,6 +474,95 @@ trait HasXotTable
     protected function getXotTableEmptyStateActions(): array
     {
         return [];
+    }
+
+    /**
+     * Invoke legacy Filament hooks only when implemented by the concrete component.
+     *
+     * @return array<string|int, Column|ColumnGroup|LayoutComponent>
+     */
+    private function resolveTableColumns(): array
+    {
+        return $this->invokeTableHook('getTableColumns', []);
+    }
+
+    /**
+     * @return array<string|int, Filter|TernaryFilter|BaseFilter>
+     */
+    private function resolveTableFilters(): array
+    {
+        return $this->invokeTableHook('getTableFilters', []);
+    }
+
+    /**
+     * @return array<int|string, Action|ActionGroup>
+     */
+    private function resolveTableHeaderActions(): array
+    {
+        return $this->invokeTableHook('getTableHeaderActions', []);
+    }
+
+    /**
+     * @return array<int|string, Action|ActionGroup>
+     */
+    private function resolveTableActions(): array
+    {
+        return $this->invokeTableHook('getTableActions', []);
+    }
+
+    /**
+     * @return array<int|string, BulkAction>
+     */
+    private function resolveTableBulkActions(): array
+    {
+        return $this->invokeTableHook('getTableBulkActions', []);
+    }
+
+    /**
+     * @return array<int|string, Action>
+     */
+    private function resolveTableEmptyStateActions(): array
+    {
+        return $this->invokeTableHook('getTableEmptyStateActions', []);
+    }
+
+    private function resolveTableHeading(): ?string
+    {
+        $heading = $this->invokeTableHook('getTableHeading', null);
+
+        return is_string($heading) ? $heading : null;
+    }
+
+    private function resolveDefaultTableSortColumn(): ?string
+    {
+        $column = $this->invokeTableHook('getDefaultTableSortColumn', null);
+
+        return is_string($column) ? $column : null;
+    }
+
+    private function resolveDefaultTableSortDirection(): ?string
+    {
+        $direction = $this->invokeTableHook('getDefaultTableSortDirection', null);
+
+        return is_string($direction) ? $direction : null;
+    }
+
+    /**
+     * @template TResult
+     *
+     * @param  TResult  $default
+     * @return TResult
+     */
+    private function invokeTableHook(string $method, mixed $default): mixed
+    {
+        $reflection = new ReflectionMethod($this, $method);
+        $declaringClass = $reflection->getDeclaringClass()->getName();
+
+        if ($declaringClass === self::class || str_starts_with($declaringClass, 'Filament\\')) {
+            return $default;
+        }
+
+        return $reflection->invoke($this);
     }
 
     protected function shouldShowAssociateAction(): bool

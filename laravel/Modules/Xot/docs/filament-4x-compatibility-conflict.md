@@ -59,7 +59,6 @@ $rows = $query->get();
 **Data Risoluzione**: 2025-01-27
 **Data Rilevamento**: [DATE]
 **Data Risoluzione**: [DATE]
->>>>>>> .merge_file_phmKTE
 
 **Sintomi**:
 - Collegamenti ai moduli scomparsi dal dashboard principale
@@ -92,7 +91,6 @@ $rows = $query->get();
 **Status**: ✅ RISOLTO
 **Data Risoluzione**: 2025-01-27
 **Data Risoluzione**: [DATE]
->>>>>>> .merge_file_phmKTE
 
 **Sintomi**:
 - SVG del link "Main Panel" conteneva caratteri non validi
@@ -110,7 +108,6 @@ $rows = $query->get();
 **Status**: ✅ RISOLTO
 **Data Risoluzione**: 2025-01-27
 **Data Risoluzione**: [DATE]
->>>>>>> .merge_file_phmKTE
 
 **Soluzioni Implementate**:
 - ✅ Corretto problema di inizializzazione nel `XotBasePanelProvider`
@@ -123,7 +120,6 @@ $rows = $query->get();
 **Status**: ✅ RISOLTO
 **Data Risoluzione**: 2025-01-27
 **Data Risoluzione**: [DATE]
->>>>>>> .merge_file_phmKTE
 
 **Sintomi**:
 - Errore "Cannot redeclare non static Widget::$view as static"
@@ -143,7 +139,6 @@ $rows = $query->get();
 **Status**: ✅ RISOLTO
 **Data Risoluzione**: 2025-01-27
 **Data Risoluzione**: [DATE]
->>>>>>> .merge_file_phmKTE
 
 **Sintomi**:
 - Errore "Target [Illuminate\Database\Eloquent\Model] is not instantiable"
@@ -169,7 +164,6 @@ $rows = $query->get();
 **Data Risoluzione**: 2025-01-27
 **Data Rilevamento**: [DATE]
 **Data Risoluzione**: [DATE]
->>>>>>> .merge_file_phmKTE
 
 **Problemi Critici**:
 - ❌ **DUPLICAZIONE**: Discovery duplicato sia sopra che dentro il `when()`
@@ -194,7 +188,6 @@ $rows = $query->get();
 **Status**: ✅ **MIGRAZIONE COMPLETATA CON SUCCESSO**
 **Data Completamento**: 2025-01-27
 **Data Completamento**: [DATE]
->>>>>>> .merge_file_phmKTE
 **Errori PHPStan**: 0/3520 (livello 9)
 **Compatibilità**: Filament 4.x ✅
 **Problemi Dashboard**: ✅ RISOLTI
@@ -226,4 +219,3 @@ $rows = $query->get();
 
 *Ultimo aggiornamento: 2025-01-27*
 *Ultimo aggiornamento: [DATE]*
->>>>>>> .merge_file_phmKTE

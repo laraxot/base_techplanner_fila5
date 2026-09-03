@@ -211,5 +211,3 @@ if (Redis::set("lock:$filepath", $metadata, 'EX', 3600, 'NX')) {
 - Pattern identificati e documentati
 - Script di esempio forniti
 See canonical documentation: ../../../Themes/docs/shared-components/file-locking-pattern.md
->>>>>>> .merge_file_jaelNI
->>>>>>> .merge_file_GBchPh

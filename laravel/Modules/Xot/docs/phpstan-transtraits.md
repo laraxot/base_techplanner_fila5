@@ -405,5 +405,3 @@ This fix may also resolve related errors in:
 **Assigned To**: Module Owner
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-transtrait-errors.md
->>>>>>> .merge_file_FlYx12
->>>>>>> .merge_file_S8nn4n

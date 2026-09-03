@@ -1,0 +1,32 @@
+name: Collision Scan
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  collision-scan:
+    name: Scan for collision markers
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Scan for collision markers
+        run: |
+          echo "=== Running collision marker scan ==="
+          python3 bashscripts/git/conflict-marker-census.py laravel/Modules laravel/Themes
+          if [ $? -ne 0 ]; then
+            echo "::error ::Collision markers found — aborting push"
+            exit 1
+          fi
+          echo "[OK] No collision markers found"

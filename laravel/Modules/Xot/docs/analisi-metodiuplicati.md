@@ -340,5 +340,3 @@ Se l'unificazione viene implementata correttamente:
 **Stato:** 📋 Draft per Review
 **Responsabile:** Team Xot Core
 See canonical documentation: ../../../Themes/docs/shared-components/analisi-metodi-duplicati.md
->>>>>>> .merge_file_PbZ8JK
->>>>>>> .merge_file_JrXZbD

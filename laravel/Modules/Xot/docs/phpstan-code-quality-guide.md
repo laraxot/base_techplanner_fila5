@@ -510,7 +510,6 @@ protected function getStats(): array
                 ->description(__('healthcare_app::question_chart_stats_overview.messages.no_data_available'))
             Stat::make(__('quaeris::question_chart_stats_overview.stats.total_responses.label'), '0')
                 ->description(__('quaeris::question_chart_stats_overview.messages.no_data_available'))
->>>>>>> .merge_file_z6BD4H
                 ->color('gray'),
         ];
     }
@@ -897,7 +896,6 @@ private function createTotalResponsesStat(int $count): Stat
     )
         ->description(__('quaeris::question_chart_stats_overview.stats.total_responses.description'))
 
->>>>>>> .merge_file_z6BD4H
         ->color($count > 0 ? 'success' : 'gray')
         ->icon('heroicon-o-document-text');
 }
@@ -915,7 +913,6 @@ private function createCompletionRateStat(float $rate): Stat
     )
         ->description(__('quaeris::question_chart_stats_overview.stats.completion_rate.description'))
 
->>>>>>> .merge_file_z6BD4H
         ->color($rate >= 75 ? 'success' : ($rate >= 50 ? 'warning' : 'danger'))
         ->icon('heroicon-o-chart-bar');
 }
@@ -1707,7 +1704,6 @@ declare(strict_types=1);
 
 namespace Modules\healthcare_app\Filament\Widgets;
 namespace Modules\Quaeris\Filament\Widgets;
->>>>>>> .merge_file_z6BD4H
 
 use Modules\Xot\Filament\Widgets\XotBaseTableWidget;
 use Filament\Widgets\Concerns\InteractsWithPageFilters;

@@ -8,7 +8,9 @@ use Modules\User\Models\Traits\HasRoles;
 use Modules\Xot\Models\BaseModel;
 use Modules\Xot\Models\Traits\RelationX;
 
-/** PHPStan fixture: keeps custom HasRoles trait in analysed graph. */
+/**
+ * PHPStan fixture: keeps custom HasRoles trait in analysed graph.
+ */
 final class HasRolesTraitFixture extends BaseModel
 {
     use HasRoles;

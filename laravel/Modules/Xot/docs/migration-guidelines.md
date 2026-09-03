@@ -47,4 +47,3 @@ return new class extends XotBaseMigration
 - [Root Documentation](../../../../docs/collegamenti-documentazione.md)
 - [Database Guidelines](../database_guidelines.md)
 
->>>>>>> .merge_file_lTQwoI

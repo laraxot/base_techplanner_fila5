@@ -55,7 +55,6 @@ $user->hasAttribute('name');  // true
 | **healthcare_app** | 1 | 1 | ~2 min |
 | **ModuloEsempio** | 1 | 1 | ~2 min |
 | **Quaeris** | 1 | 1 | ~2 min |
->>>>>>> .merge_file_YjtTf7
 | **Xot** | 0 | 0 (solo in commenti) | ~1 min |
 | **TOTALE** | **28** | **72** | **~36 min** |
 
@@ -73,7 +72,6 @@ $user->hasAttribute('name');  // true
 ✅ healthcare_app: 0 errori su file modificato
 ✅ ModuloEsempio: 0 errori su file modificato
 ✅ Quaeris: 0 errori su file modificato
->>>>>>> .merge_file_YjtTf7
 ⚠️  Xot:     4 errori pre-esistenti (non property_exists)
 ```
 
@@ -243,7 +241,6 @@ if (isset($graph->yaxis) && is_object($graph->yaxis)) {
 ### healthcare_app (1 file)
 ### ModuloEsempio (1 file)
 ### Quaeris (1 file)
->>>>>>> .merge_file_YjtTf7
 1. `Filament/Resources/.../ViewQuestionChartVisualizationWidget.php` - livewire property ✅
 
 ---
@@ -314,7 +311,6 @@ if (isset($media->file_name)) {
 | **healthcare_app** | ⚠️ 64 errori* | - | - |
 | **ModuloEsempio** | ⚠️ 64 errori* | - | - |
 | **Quaeris** | ⚠️ 64 errori* | - | - |
->>>>>>> .merge_file_YjtTf7
 | **Xot** | ⚠️ 4 errori* | - | - |
 
 \* Errori pre-esistenti non correlati a property_exists
@@ -569,7 +565,6 @@ Ogni modulo ha ora:
 **healthcare_app** (64 errori):
 **ModuloEsempio** (64 errori):
 **Quaeris** (64 errori):
->>>>>>> .merge_file_YjtTf7
 - Errori pre-esistenti non correlati a property_exists
 - Richiedono intervento separato per type hints
 - Priorità media
@@ -603,7 +598,6 @@ Implementare:
 - [../../../../docs/phpstan/level-10-guide.md](../../../../docs/phpstan/level-10-guide.md)
 - [../../../docs/code-quality/eloquent-magic-properties.md](../../../docs/code-quality/eloquent-magic-properties.md)
 - [../../../docs/phpstan/level-10-guide.md](../../../docs/phpstan/level-10-guide.md)
->>>>>>> .merge_file_YjtTf7
 
 **Documentazione Moduli**:
 - [User/docs/phpstan-level10-fixes.md](../../user/docs/phpstan-level10-fixes.md)

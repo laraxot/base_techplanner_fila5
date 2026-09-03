@@ -44,7 +44,6 @@ La correzione è stata verificata assicurandosi che:
 - [Documentazione sulla Risoluzione dei Conflitti](../risoluzione_conflitti_merge.md)
 - [Best Practices per la Gestione dei Conflitti Git](../../../../../docs/project/risoluzione_conflitti_git.md)
 - [Best Practices per la Gestione dei Conflitti Git](../../../../project_docs/risoluzione_conflitti_git.md)
->>>>>>> .merge_file_TZVIIK
 # Risoluzione del Conflitto in ModelWithPosContract.php
 
 ## Problema

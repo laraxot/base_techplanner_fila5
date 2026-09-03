@@ -26,7 +26,6 @@ Tutti i moduli sono stati analizzati e risultano conformi a PHPStan livello 10.
 ### ✅ Completati
 - **Rating**: [code-quality-analysis.md](../Rating/docs/code-quality-analysis.md)
 - **Rating**: [code-quality-analysis.md](../rating/docs/code-quality-analysis.md)
->>>>>>> .merge_file_yf93bd
   - PHPStan: 0 errori
   - PHPDoc: Completo
   - Type Coverage: 100%

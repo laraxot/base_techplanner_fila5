@@ -13,7 +13,6 @@ Definisce l'interfaccia per tutti i modelli User nel sistema, includendo autenti
 
 ### Problema Critico Identificato (2025-01-06)
 ### Problema Critico Identificato ([DATE])
->>>>>>> .merge_file_35mmpJ
 
 **ERRORE PHPSTAN**: Il metodo `hasPermissionTo()` è utilizzato in tutte le policy ma non è definito nel contratto `UserContract`.
 
@@ -125,6 +124,3 @@ public function whereHas($relation, Closure $callback = null, $operator = '>=', 
 
 *Ultimo aggiornamento: [DATE]*
 
-=======
->>>>>>> .merge_file_wA26Nr
->>>>>>> .merge_file_35mmpJ

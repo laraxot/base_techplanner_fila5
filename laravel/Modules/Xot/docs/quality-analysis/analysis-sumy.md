@@ -133,5 +133,3 @@ $user->authentications()
 3. **DRY violations**: Duplicazioni interfacce/trait facilmente identificabili
 4. **Architecture score**: Richiede refactoring strutturale (interfacce, final classes)
 See canonical documentation: ../../../../Themes/docs/shared-components/analysis-summary.md
->>>>>>> .merge_file_eIEoJy
->>>>>>> .merge_file_ZmN2Yg

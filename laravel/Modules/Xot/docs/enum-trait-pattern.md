@@ -38,7 +38,6 @@ Sono esclusi codice `vendor`, package terzi vendorizzati e fixture di test non a
 ```php
 <?php
 
->>>>>>> .merge_file_CGv5fE
 declare(strict_types=1);
 
 namespace Modules\NomeModulo\Enums;
@@ -119,7 +118,6 @@ return [
         'label' => 'Etichetta Caso Due',
         'color' => 'success',
 
->>>>>>> .merge_file_CGv5fE
     ],
 ];
 ```
@@ -216,5 +214,3 @@ enum MioEnum: string implements HasLabel
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
 - Regola storica: `docs/wiki/rules/enum-trait-standard.md`
->>>>>>> .merge_file_CGv5fE
->>>>>>> .merge_file_WbWTYz

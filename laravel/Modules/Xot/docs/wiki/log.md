@@ -32,29 +32,6 @@ discussions:
 - Seeder parity: User 37/37, Job 15/15, Predict 16/16, Lang OK
 - Backlog: consolidamento migrazioni duplicate (GAP migration)
 
-title: "Activity Log"
-type: log
-module: Xot
-tags: [xot, phpstan, pest, qmd, ponytail-audit]
-created: 2026-04-20
-updated: 2026-06-30
-qmd: "Xot log phpstan pest bridge discipline ponytail audit"
-issues:
-  - "https://github.com/laraxot/module_xot_fila5/issues/28"
-  - "https://github.com/laraxot/base_predict_fila5/issues/237"
-title: "Activity Log"
-type: log
-module: Xot
-tags: [xot, phpstan, pest, qmd, ponytail-audit]
-created: 2026-04-20
-updated: 2026-06-30
-qmd: "Xot log phpstan pest bridge discipline ponytail audit"
-issues:
-  - "https://github.com/laraxot/module_xot_fila5/issues/28"
-discussions:
-  - "https://github.com/laraxot/module_xot_fila5/discussions/29"
----
-
 ## [2026-06-30] ponytail audit remediation — repo-wide
 
 - Delete dead: `RouteDynService`, `ContextCompressor`, UI NullMap stack, Geo probe test dupes.
@@ -161,14 +138,15 @@ discussions:
 
 - `start.txt` v6: hub [llm-wiki.md](../../../../../../docs/wiki/index/llm-wiki.md), [sacred-artifacts-never-delete.md](../../../../../../docs/wiki/concepts/sacred-artifacts-never-delete.md), [quality-gate-canonical-commands.md](../../../../../../docs/wiki/concepts/quality-gate-canonical-commands.md).
 - Gate §1.5 `guard-model-policy-delete.sh`; §1.4 `laravel-model-policies-sacred.mdc`; fallback `grep` se `rg` assente.
-- Prompt fratelli con `- PHPStan: exit 124 timeout documentato; `find` cartelle root PHP mirato (esclude legacy `Config/`).
+- Prompt fratelli: PHPStan exit 124 timeout documentato; `find` cartelle root PHP mirato (esclude legacy `Config/`).
 - `prompts/README.md`: `start.txt` come primo step Quick Start.
 
 ## [2026-06-30] prompts | start.txt v5 — gate infrastruttura e igiene
 
 - `start.txt` v5: sezioni `.claude` junction, ponytail, ponytail-audit hub, policy/actions protetti, fallback PHPStan modulo/file, anti-append ricorsivo.
 - `rules.txt`: conflitti Git risolti forward-only; allineato a policy stub + Queueable Actions + migrations.
-- Gate sessione: git pulito; conflitti PHP ok; 16 prompt fratelli ancora con `
+- Gate sessione: git pulito; conflitti PHP ok; 16 prompt fratelli ancora con marker di conflitto.
+
 ## [2026-06-30] prompts | start.txt v4 — gate one-shot e igiene prompt
 
 - `start.txt` v4: blocco **gate rapido one-shot**, regola igiene (no append query utente), `find -mindepth 1` per audit cartelle, link a `module-root-php-folders-forbidden.md`, `start.txt` canonico se `rules.txt` in conflitto.
@@ -287,7 +265,7 @@ discussions:
 ## [2026-05-25] docs | audit profondo ridondanze — second brain ripulito da merge-marker
 
 - **Obiettivo**: consolidare osservabilità delle ripetizioni (codice + documentazione) senza toccare applicativo.
-- **Deliverable**: [`redundancy/audit-profondo-ridondanze-holistic.md`](redundancy/audit-profondo-ridondanze-holistic.md); aggiornato [`byte-identical-files-static-scan.md`](redundancy/byte-identical-files-static-scan.md) (riesame numeri SHA256 rigorosi `.php` vs `.blade.php`); sistemati hub [`concepts/ridondanze-cross-cutting-codebase.md`](concepts/ridondanze-cross-cutting-codebase.md) e [`concepts/redundancy-catalog.md`](concepts/redundancy-catalog.md) (prima gravemente corrotti da `- **Nota modulo Fixcity tema**: superfici duplicate cross-modulo in [`ptv-cross-module-duplicate-surfaces.md`](../../../Fixcity/docs/wiki/redundancy/ptv-cross-module-duplicate-surfaces.md).
+- **Deliverable**: [`redundancy/audit-profondo-ridondanze-holistic.md`](redundancy/audit-profondo-ridondanze-holistic.md); aggiornato [`byte-identical-files-static-scan.md`](redundancy/byte-identical-files-static-scan.md) (riesame numeri SHA256 rigorosi `.php` vs `.blade.php`); sistemati hub [`concepts/ridondanze-cross-cutting-codebase.md`](concepts/ridondanze-cross-cutting-codebase.md) e [`concepts/redundancy-catalog.md`](concepts/redundancy-catalog.md) (prima gravemente corrotti da merge-marker).
 
 ## [2026-05-24] refactor | wizard — normalizzazione stato **rimossa dalla base**
 

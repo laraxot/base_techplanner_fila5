@@ -32,7 +32,7 @@ class SendMailAction
     /**
      * @param  array<string, mixed>  $vars
      *
-     * @throws \RuntimeException
+     * @throws RuntimeException
      */
     public function execute(string $to, ?string $body = null, array $vars = [], ?string $from = null, string $driver = 'duocircle'): void
     {

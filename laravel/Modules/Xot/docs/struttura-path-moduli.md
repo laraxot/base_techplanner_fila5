@@ -186,5 +186,3 @@ namespace Modules\<nome progetto>\App\Actions\Patient\Calendar;
 
 Vedi anche: <nome progetto>/docs/directory-structure.md
 See canonical documentation: ../../../Themes/docs/shared-components/modules-path-structure.mdc
->>>>>>> .merge_file_6PY2bc
->>>>>>> .merge_file_H8rYZK

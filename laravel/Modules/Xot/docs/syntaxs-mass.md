@@ -277,5 +277,3 @@ done < /tmp/broken_files.txt
 **Filosofia**: "Ogni bug è un maestro. Ogni fix è una lezione."
 **Cronologia**: Vedi [CHANGELOG.md](./changelog.md)
 See canonical documentation: ../../../Themes/docs/shared-components/syntax-errors-mass-fix.md
->>>>>>> .merge_file_s95XJM
->>>>>>> .merge_file_rKJwYb

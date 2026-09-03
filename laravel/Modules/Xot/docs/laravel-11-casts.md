@@ -171,5 +171,3 @@ Before committing any model:
 **Laravel Version**: 11+  
 **Status**: MANDATORY for all new code
 See canonical documentation: ../../../Themes/docs/shared-components/laravel-11-casts-pattern.md
->>>>>>> .merge_file_JiKwq7
->>>>>>> .merge_file_sWk1mQ

@@ -145,5 +145,3 @@ $src = 'data:image/png;base64,' . $imageData;
 return view('pdf.template', compact('src'));
 ```
 See canonical documentation: ../../../../Themes/docs/shared-components/styling.md
->>>>>>> .merge_file_6yvKGQ
->>>>>>> .merge_file_ks7Hta

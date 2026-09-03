@@ -82,7 +82,6 @@ class ListContacts extends XotBaseListRecords
 ```bash
 php artisan make:filament-resource Contact --nested --module=healthcare_app
 php artisan make:filament-resource Contact --nested --module=Quaeris
->>>>>>> .merge_file_mVOzR2
 ```
 
 Questo comando crea automaticamente:
@@ -261,7 +260,6 @@ Vedi: [Modules/healthcare_app/docs/filament-nesting-opportunities.md](../../heal
 ### Modulo Quaeris
 
 Vedi: [Modules/Quaeris/docs/filament-nesting-opportunities.md](../../quaeris/docs/filament-nesting-opportunities.md)
->>>>>>> .merge_file_mVOzR2
 
 **Opportunità**:
 - Contact → Nested di SurveyPdf
@@ -371,7 +369,6 @@ Filament 5.x gestisce automaticamente i breadcrumbs per nested resources. Non se
 - [Filament 5.x Nesting Documentation](https://filamentphp.com/docs/5.x/resources/nesting)
 - [healthcare_app Nesting Opportunities](../../healthcare_app/docs/filament-nesting-opportunities.md)
 - [Quaeris Nesting Opportunities](../../quaeris/docs/filament-nesting-opportunities.md)
->>>>>>> .merge_file_mVOzR2
 - [Limesurvey Nesting Opportunities](../../limesurvey/docs/filament-nesting-opportunities.md)
 - [Cms Nesting Opportunities](../../cms/docs/filament-nesting-opportunities.md)
 - [User Nesting Opportunities](../../user/docs/filament-nesting-opportunities.md)

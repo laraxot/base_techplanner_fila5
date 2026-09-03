@@ -6,6 +6,7 @@ namespace Modules\Xot\Models;
 
 use Illuminate\Database\Eloquent\Relations\Pivot as EloquentPivot;
 use Illuminate\Support\Carbon;
+use Modules\Xot\Database\Factories\XotBasePivotFactory;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Traits\Updater;
 
@@ -27,6 +28,7 @@ use function Safe\preg_match;
  */
 abstract class XotBasePivot extends EloquentPivot
 {
+    /** @use HasXotFactory<XotBasePivot> */
     use HasXotFactory;
     use Updater;
 

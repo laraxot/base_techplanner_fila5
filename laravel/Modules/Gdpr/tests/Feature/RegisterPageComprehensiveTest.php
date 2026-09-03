@@ -6,8 +6,11 @@ namespace Modules\Gdpr\Tests\Feature;
 
 use Modules\Gdpr\Filament\Widgets\Auth\RegisterWidget;
 use Modules\Gdpr\Models\Consent;
+use Modules\Gdpr\Tests\TestCase;
 use Modules\User\Database\Factories\UserFactory;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 /*
  * Comprehensive Registration Page Tests.

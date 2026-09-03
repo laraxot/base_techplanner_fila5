@@ -22,12 +22,14 @@ class FeedFactory extends Factory
 
     /**
      * Define the model's default state.
+     *
+     * @return array<string, mixed>
      */
     public function definition(): array
     {
         return [
-            // 'created_at' => $this->faker->dateTime,
-            // 'updated_at' => $this->faker->dateTime,
+            'created_at' => $this->faker->dateTime,
+            'updated_at' => $this->faker->dateTime,
         ];
     }
 }

@@ -6,6 +6,7 @@ namespace Modules\Lang\Providers;
 
 use Filament\Actions\Action;
 use Filament\Forms\Components\Field;
+use Filament\Infolists\Components\TextEntry;
 use Filament\Forms\Components\Select;
 use Filament\Infolists\Components\Entry;
 use Filament\Schemas\Components\Section;
@@ -114,7 +115,10 @@ class LangServiceProvider extends XotBaseServiceProvider
             //    // $component->iconButton();
             // }
             /*
-            throw new \RuntimeException('Removed debug dddx');
+            dddx([
+            'methods' => get_class_methods($component),
+            'getRecord' => $component->getRecord(),
+            ]);
             */
             if (method_exists($component, 'getRecord') && $component->getRecord() === null) {
                 if (method_exists($component, 'button')) {
@@ -167,7 +171,7 @@ class LangServiceProvider extends XotBaseServiceProvider
 
     protected function translatableComponents(): void
     {
-        $components = [Field::class, BaseFilter::class, Column::class, Entry::class];
+        $components = [Field::class, BaseFilter::class, TextEntry::class, Column::class, Entry::class];
         foreach ($components as $component) {
             $component::configureUsing(function (Component $translatable): void {
                 if (method_exists($translatable, 'translateLabel')) {

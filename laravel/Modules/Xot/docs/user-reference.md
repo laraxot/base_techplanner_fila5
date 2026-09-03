@@ -231,5 +231,3 @@ if ($user instanceof UserContract) {
 
 *Ultimo aggiornamento: [DATE]*
 See canonical documentation: ../../../Themes/docs/shared-components/user-reference-pattern.md
->>>>>>> .merge_file_Bt0wpx
->>>>>>> .merge_file_7FOBmN

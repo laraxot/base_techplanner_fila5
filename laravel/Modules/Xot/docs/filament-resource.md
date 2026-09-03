@@ -205,5 +205,3 @@ class DoctorResource extends XotBaseResource
 - [Gestione delle Traduzioni](/docs/translation-management.md)
 - [Estensione delle Classi Filament](/docs/filament-extension-pattern.md)
 See canonical documentation: ../../../Themes/docs/shared-components/filament-resource-rules.md
->>>>>>> .merge_file_2V1YsY
->>>>>>> .merge_file_35AWu4

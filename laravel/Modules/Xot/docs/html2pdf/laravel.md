@@ -155,5 +155,3 @@ Mail::to('user@example.com')->send(new ReportMail($pdfContent));
 **Causa:** Contenuto troppo grande per rimanere in una singola pagina.
 **Soluzione:** Usa il tag `<nobreak>` per forzare un blocco di contenuto a rimanere unito, oppure rivedi la struttura per renderla più flessibile.
 See canonical documentation: ../../../../Themes/docs/shared-components/laravel-Modules.md
->>>>>>> .merge_file_gDS3YG
->>>>>>> .merge_file_rFOkC8

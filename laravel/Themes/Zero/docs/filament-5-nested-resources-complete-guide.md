@@ -6,6 +6,7 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "filament 5x nested resources - guida completa 2024"
 related:
+  - "./00-INDEX.md"
   - "./00-index.md"
 ---
 

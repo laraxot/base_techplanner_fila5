@@ -38,7 +38,6 @@ SELECT
 FROM lime_survey_[SURVEY_ID]
 WHERE submitdate BETWEEN '2023-01-01' AND '2023-12-31'
 WHERE submitdate BETWEEN '[DATE]' AND '[DATE]'
->>>>>>> .merge_file_yvYkHN
 GROUP BY DATE(submitdate)
 ORDER BY response_date;
 
@@ -93,7 +92,6 @@ $responses = DB::connection('limesurvey')
     ->whereNotNull('submitdate')
     ->whereBetween('submitdate', ['2023-01-01', '2023-12-31'])
     ->whereBetween('submitdate', ['[DATE]', '[DATE]'])
->>>>>>> .merge_file_yvYkHN
     ->count();
 
 // Get unique participants
@@ -137,7 +135,6 @@ SHOW INDEX FROM lime_survey_[SURVEY_ID];
 -- Use EXPLAIN to analyze slow queries
 EXPLAIN SELECT COUNT(*) FROM lime_survey_[SURVEY_ID] WHERE submitdate > '2023-01-01';
 EXPLAIN SELECT COUNT(*) FROM lime_survey_[SURVEY_ID] WHERE submitdate > '[DATE]';
->>>>>>> .merge_file_yvYkHN
 
 -- Optimize large table queries
 SELECT SQL_CALC_FOUND_ROWS * FROM lime_survey_[SURVEY_ID] LIMIT 0, 1000;

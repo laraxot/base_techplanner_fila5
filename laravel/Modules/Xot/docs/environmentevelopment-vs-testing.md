@@ -25,7 +25,6 @@ In Laraxot è fondamentale comprendere la differenza tra le configurazioni di am
 - `DB_CONNECTION=mysql`: Usa MySQL per i test
 - Database con suffisso "_test" (es. `healthcare_app_data_test`, `healthcare_app_user_test`)
 - Database con suffisso "_test" (es. `quaeris_data_test`, `quaeris_user_test`)
->>>>>>> .merge_file_ft8QZ0
 - **MAI** usare SQLite per i test, nemmeno per convenienza
 
 ### Motivazione
@@ -56,6 +55,4 @@ Questa differenziazione rispetta i principi fondamentali:
 - **KISS**: Semplicità per sviluppo, completezza per test
 - **Robustezza**: Isolamento adeguato nei test
 - **Multi-tenancy**: Supporto completo per architettura multi-database
-=======
 - **Multi-tenancy**: Supporto completo per architettura multi-database
->>>>>>> .merge_file_fg8WE6

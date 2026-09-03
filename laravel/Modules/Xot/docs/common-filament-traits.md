@@ -1042,5 +1042,3 @@ class MyPage extends XotBaseViewRecord
 - `/Modules/Xot/docs/FILAMENT_4_LARAXOT_RULES.md`
 - `/Modules/Quaeris/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
 See canonical documentation: ../../../Themes/docs/shared-components/common-filament-trait-conflicts.md
->>>>>>> .merge_file_baqWn7
->>>>>>> .merge_file_CnoIUJ

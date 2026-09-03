@@ -694,7 +694,6 @@ class YourResource extends XotBaseResource
         return [
             // Infolist components
 
->>>>>>> .merge_file_gqsTwA
         ];
     }
 }
@@ -9182,4 +9181,3 @@ grep -r "\.navigation" Modules/*/lang/**/*.php
 **Goal**: Create a harmonious, maintainable, and scalable application architecture
 
 
->>>>>>> .merge_file_gqsTwA

@@ -471,5 +471,3 @@ chmod +x scripts/*.sh
 
 *Questa guida fornisce tutti gli strumenti necessari per mantenere la massima qualità del codice nel progetto FixCity.*
 See canonical documentation: ../../../Themes/docs/shared-components/comprehensive-code-analysis-tools.md
->>>>>>> .merge_file_shfDtm
->>>>>>> .merge_file_cISrP6

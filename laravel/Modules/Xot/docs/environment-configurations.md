@@ -290,5 +290,3 @@ php artisan config:cache
 
 *Ultimo aggiornamento: [DATE]*
 See canonical documentation: ../../../Themes/docs/shared-components/environment-configuration-issues.md
->>>>>>> .merge_file_uz2aOG
->>>>>>> .merge_file_jSWC01

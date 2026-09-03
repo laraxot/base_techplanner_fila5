@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Gdpr\Filament\Clusters\Profile\Resources;
 
-use Filament\Schemas\Components\Component;
 use Modules\Gdpr\Filament\Clusters\Profile as ProfileCluster;
 use Modules\Gdpr\Filament\Clusters\Profile\Resources\ProfileResource\Pages\CreateProfile;
 use Modules\Gdpr\Filament\Clusters\Profile\Resources\ProfileResource\Pages\EditProfile;
@@ -18,11 +17,7 @@ class ProfileResource extends XotBaseResource
 
     protected static ?string $cluster = ProfileCluster::class;
 
-    /**
-     * Schema legacy del form: la sorgente di verità è ProfileForm::getFormSchema().
-     *
-     * @return array<string, Component>
-     */
+    #[\Override]
     public static function getFormSchema(): array
     {
         return [];

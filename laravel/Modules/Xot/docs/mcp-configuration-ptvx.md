@@ -3,7 +3,6 @@
 **Data Creazione**: 2026-01-12  
 **Ultimo Aggiornamento**: 2026-01-12  
 **Data Creazione**: [DATE]  
->>>>>>> .merge_file_JxDnvX
 **Status**: ✅ Configurazione Completa e Ottimizzata
 
 ---

@@ -322,5 +322,3 @@ Il pattern lock file ha:
 **Server status**: ✅ **RUNNING**
 **Pattern lock**: ✅ **APPLICATO E FUNZIONANTE**
 See canonical documentation: ../../../Themes/docs/shared-components/git-conflicts-mal-risolti.md
->>>>>>> .merge_file_W4oSCH
->>>>>>> .merge_file_qFv1D3

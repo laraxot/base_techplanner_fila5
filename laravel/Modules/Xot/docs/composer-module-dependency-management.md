@@ -4,8 +4,6 @@ This document outlines the best practices and mandatory rules for managing Compo
 
 **Riferimento completo pacchetti**: [composer-packages-reference.md](../../../../docs/composer-packages-reference.md) Adherence to these guidelines is crucial for maintaining project stability, respecting the modular architecture, and leveraging the `wikimedia/composer-merge-plugin` effectively.
 This document outlines the best practices and mandatory rules for managing Composer dependencies within the modular Laraxot framework. Adherence to these guidelines is crucial for maintaining project stability, respecting the modular architecture, and leveraging the `wikimedia/composer-merge-plugin` effectively.
-=======
->>>>>>> .merge_file_DiHE6f
 
 ---
 
@@ -120,5 +118,3 @@ This document outlines the best practices and mandatory rules for managing Compo
 *   [wikimedia/composer-merge-plugin GitHub Repository](https://github.com/wikimedia/composer-merge-plugin)
 *   [Xot Module Philosophy](./filosofia-modulo-xot.md)
 
->>>>>>> .merge_file_DiHE6f
->>>>>>> .merge_file_I96SS4

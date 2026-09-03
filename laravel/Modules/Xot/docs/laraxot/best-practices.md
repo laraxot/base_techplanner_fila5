@@ -21,7 +21,7 @@ public static function getFormSchema(): array
         // Campi modificabili dall'utente
         TextInput::make('name')->required(),
         Select::make('type')->options([...]),
-        
+
         // NO: Non includere campi automatici
         // TextInput::make('created_at')
         // TextInput::make('updated_at')
@@ -47,7 +47,7 @@ return [
                 // Campi del form
                 'name' => 'Nome',
                 'type' => 'Tipo',
-                
+
                 // Campi automatici (da mantenere)
                 'created_at' => 'Data Creazione',
                 'updated_at' => 'Ultima Modifica'
@@ -128,4 +128,3 @@ class MyResource extends XotBaseResource
 ---
 
 
->>>>>>> .merge_file_LDDAch

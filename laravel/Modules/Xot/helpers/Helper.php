@@ -3,11 +3,14 @@
 declare(strict_types=1);
 
 use Filament\Facades\Filament;
+use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Response;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
+use Illuminate\Testing\TestResponse;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
 use Modules\Xot\Actions\File\FixPathAction;
@@ -184,6 +187,108 @@ if (! function_exists('getRouteParameters')) {
     }
 }
 
+/*
+|--------------------------------------------------------------------------
+| Pest Laravel Helper Stubs
+|--------------------------------------------------------------------------
+|
+| Stubs for Pest global testing functions.
+| These eliminate 'function not found' errors from PHPStan.
+|
+*/
+
+if (! function_exists('actingAs')) {
+    /**
+     * @return TestResponse<Response>
+     */
+    function actingAs(Authenticatable|int|string|null $user = null, ?string $driver = null): TestResponse
+    {
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+    }
+}
+
+if (! function_exists('get')) {
+    /**
+     * @param  array<string, mixed>  $options
+     * @return TestResponse<Response>
+     */
+    function get(string $uri = '', array $options = []): TestResponse
+    {
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+    }
+}
+
+if (! function_exists('post')) {
+    /**
+     * @param  array<string, mixed>  $options
+     * @return TestResponse<Response>
+     */
+    function post(string $uri, mixed $data = [], array $options = []): TestResponse
+    {
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+    }
+}
+
+if (! function_exists('put')) {
+    /**
+     * @return TestResponse<Response>
+     */
+    function put(string $uri, mixed $data = []): TestResponse
+    {
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+    }
+}
+
+if (! function_exists('patch')) {
+    /**
+     * @return TestResponse<Response>
+     */
+    function patch(string $uri, mixed $data = []): TestResponse
+    {
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+    }
+}
+
+if (! function_exists('delete')) {
+    /**
+     * @return TestResponse<Response>
+     */
+    function delete(string $uri): TestResponse
+    {
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+    }
+}
+
+if (! function_exists('head')) {
+    /**
+     * @return TestResponse<Response>
+     */
+    function head(string $uri): TestResponse
+    {
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+    }
+}
+
+if (! function_exists('options')) {
+    /**
+     * @return TestResponse<Response>
+     */
+    function options(string $uri): TestResponse
+    {
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+    }
+}
+
+if (! function_exists('followingRedirects')) {
+    /**
+     * @return TestResponse<Response>
+     */
+    function followingRedirects(int $number = 5): TestResponse
+    {
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+    }
+}
+
 if (! function_exists('xotSeedModelOnce')) {
     require_once dirname(__DIR__).'/app/Helpers/xot.seed.helper.php';
 }
@@ -191,6 +296,7 @@ if (! function_exists('xotSeedModelOnce')) {
 if (! function_exists('xotSeedModelOnce')) {
     /**
      * Fallback se il file app/Helpers non ha registrato la function.
+     * Idempotent entity seeder — PHPStan-safe factory chain via GetFactoryAction.
      *
      * @param  class-string<Model>  $modelClass
      */

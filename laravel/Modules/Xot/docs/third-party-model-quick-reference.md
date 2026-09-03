@@ -102,7 +102,6 @@ class {Model} extends {Package}{Model}
 ### Related Documentation
 - **[Model Architecture](models/model_architecture.md)** - Laraxot model patterns
 
->>>>>>> .merge_file_tYO8pm
 - **[Migration Philosophy](migration-philosophy.md)** - Database migration patterns
 
 ## 🔍 Verification Commands

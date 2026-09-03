@@ -491,5 +491,3 @@ php artisan db:analyze-usage --connection=nome_connessione
 - Controllare che i tipi di dati siano ottimali per l'uso previsto
 - Utilizzare query builder o raw queries per query complesse
 See canonical documentation: ../../../Themes/docs/shared-components/database-guidelines.md
->>>>>>> .merge_file_h1WdpD
->>>>>>> .merge_file_lHW7L1

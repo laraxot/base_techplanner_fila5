@@ -132,5 +132,3 @@ See canonical documentation: ../../../Themes/docs/shared-components/phpinsights-
 - ✅ **PHPInsights**: Score complessivi eccellenti (97.9% Code, 93.5% Complexity, 82.4% Architecture, 98.8% Style)
 - ✅ **Pint**: Stile corretto
 See canonical documentation: ../../../Themes/docs/shared-components/phpinsights-analysis.md
->>>>>>> .merge_file_5CkWUS
->>>>>>> .merge_file_r8MmnQ

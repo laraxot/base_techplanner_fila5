@@ -142,6 +142,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
         HasTeams::teams as membershipTeams;
     }
     use HasUuids;
+    /** @use HasXotFactory<BaseUser> */
     use HasXotFactory;
     use InteractsWithMedia;
     use Notifiable;

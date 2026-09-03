@@ -22,7 +22,6 @@ class WhatsAppData extends Data
      * @param  array<string, mixed>|null  $buttons
      * @param  array<string, mixed>|null  $template
      * @param  string  $type  Tipo di messaggio: 'text', 'media', 'template', ecc.
-     *
      * @return void
      */
     public function __construct(
@@ -33,6 +32,5 @@ class WhatsAppData extends Data
         public ?array $buttons = null,
         public ?array $template = null,
         public string $type = 'text',
-    ) {
-    }
+    ) {}
 }

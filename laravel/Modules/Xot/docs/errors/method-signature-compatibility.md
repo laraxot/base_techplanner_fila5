@@ -18,7 +18,6 @@ Cannot make non static method Filament\Pages\BasePage::getView() static in class
 ```
 Access level to Modules\<nome progetto>\Filament\Resources\AppointmentWorkflowResource\Pages\WorkflowAppointment::getFormActionsAlignment() must be public (as in class Filament\Pages\BasePage)
 Access level to Modules\SaluteOra\Filament\Resources\AppointmentWorkflowResource\Pages\WorkflowAppointment::getFormActionsAlignment() must be public (as in class Filament\Pages\BasePage)
->>>>>>> .merge_file_Z6Y2nB
 ```
 
 esempio di errore:
@@ -99,7 +98,7 @@ class XotBasePage extends BasePage
     {
         return $this->resolveView();
     }
-    
+
     // Nuovo metodo statico con nome diverso
     public static function resolveViewPath(): string
     {
@@ -129,4 +128,3 @@ $returnType = $parentMethod->getReturnType();
 - [estensione pattern filament](../xot/docs/filament_extension_pattern.md)
 - [regole di ereditarietà in php](/var/www/html/base_saluteora/laravel/docs/standards/php-inheritance-rules.md)
 - [estensione pattern filament](/var/www/html/base_saluteora/laravel/Modules/Xot/docs/filament_extension_pattern.md)
->>>>>>> .merge_file_Z6Y2nB

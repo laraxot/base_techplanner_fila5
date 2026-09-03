@@ -93,4 +93,3 @@ $repository->addConsoleRenderer(function (\Throwable $e, $output) {
 - [PHPStan Level 9 Guide](../../phpstan-level9-guide.md)
 - [Handlers Overview](./readme.md)
 
->>>>>>> .merge_file_iJjZpW

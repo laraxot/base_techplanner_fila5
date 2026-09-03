@@ -63,7 +63,6 @@ MEDIA_DB_DATABASE=laravelpizza_data_test
 GDPR_DB_DATABASE=laravelpizza_data_test
 MEETUP_DB_DATABASE=laravelpizza_meetup_test
 
->>>>>>> .merge_file_SXsrh4
 # ... ecc
 ```
 
@@ -91,7 +90,6 @@ DB_DATABASE_USER=laravelpizza_user
 DB_DATABASE=laravelpizza_data_test
 DB_DATABASE_USER=laravelpizza_user_test
 
->>>>>>> .merge_file_SXsrh4
 
 # Tutto il resto IDENTICO!
 ```
@@ -107,14 +105,12 @@ DB_DATABASE_USER=laravelpizza_user_test
         'driver' => 'mysql',
         'database' => env('NOTIFY_DB_DATABASE', '<nome progetto>_notify_test'),
         'database' => env('NOTIFY_DB_DATABASE', 'laravelpizza_notify_test'),
->>>>>>> .merge_file_SXsrh4
         // ...
     ],
     'geo' => [
         'driver' => 'mysql',
         'database' => env('GEO_DB_DATABASE', '<nome progetto>_geo_test'),
         'database' => env('GEO_DB_DATABASE', 'laravelpizza_geo_test'),
->>>>>>> .merge_file_SXsrh4
         // ...
     ],
     // ... ecc per tutti i moduli
@@ -160,7 +156,6 @@ Il `TenantServiceProvider` gestisce le connessioni database in modo dinamico:
     ↓
 DB_DATABASE=<nome progetto>_data_test
 DB_DATABASE=laravelpizza_data_test
->>>>>>> .merge_file_SXsrh4
     ↓
 TenantServiceProvider::registerDB()
     ↓
@@ -171,7 +166,6 @@ Crea automaticamente:
   - database.connections.user → laravelpizza_data_test
   - database.connections.notify → laravelpizza_data_test
   - database.connections.geo → laravelpizza_data_test
->>>>>>> .merge_file_SXsrh4
   - ... ecc per tutti i moduli
 ```
 

@@ -12,13 +12,6 @@ use function Safe\json_encode;
 
 uses(TestCase::class);
 
-beforeEach(function (): void {
-    /** @var TestCase $this */
-    if (TestCase::jobDbUnavailable()) {
-        $this->markTestSkipped('DB `job` non raggiungibile: blocco di ambiente.');
-    }
-});
-
 function uniqueJobBatchId(string $prefix = 'batch'): string
 {
     return $prefix.'-'.str_replace('.', '', uniqid('', true));

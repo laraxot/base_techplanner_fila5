@@ -70,7 +70,6 @@ I prompt definiscono regole operative riutilizzabili tra progetti. Devono essere
 4. Verificare che i prompt restino project-agnostic.
 
 ## Collegamenti
->>>>>>> .merge_file_12bBkD
 - [regole prompt consolidate](./consolidated/prompt-rules.md)
 - [organizzazione bashscripts](./bashscripts-organization-1.md)
 - [regole documentazione](./consolidated/documentation-rules.md)
@@ -89,7 +88,6 @@ I prompt definiscono regole operative riutilizzabili tra progetti. Devono essere
 * [prompts.md](docs/prompts.md)
 * [prompts.md](../../../Xot/docs/prompts.md)
 * [prompts.md](../../../xot/project_docs/prompts.md)
->>>>>>> .merge_file_12bBkD
 
 ## Modifiche al Prompt docs.txt
 
@@ -110,7 +108,6 @@ I prompt definiscono regole operative riutilizzabili tra progetti. Devono essere
 - [Gestione Documentazione](./DOCUMENTATION_MANAGEMENT.md)
 - [Regole Universali](./prompt_rules.md)
 - [Gestione Documentazione](./documentation_management.md)
->>>>>>> .merge_file_12bBkD
 - [Struttura Moduli](./module-structure.md)
 
 ## Errori Comuni da Evitare
@@ -119,7 +116,6 @@ I prompt definiscono regole operative riutilizzabili tra progetti. Devono essere
 ⚠️ **Problema Identificato**: Uso di percorsi assoluti nei collegamenti
 ❌ Esempio errato: `../Xot/docs/file.md`
 ❌ Esempio errato: `Modules/Xot/project_docs/file.md`
->>>>>>> .merge_file_12bBkD
 ✅ Esempio corretto: `./file.md` o `../altro-modulo/file.md`
 
 ### Impatto dell'Errore
@@ -208,4 +204,3 @@ Il prompt `docs.txt` serve come:
    [Documento](./path/relativo) #tag-correlati
    ```
 
->>>>>>> laraxot/master

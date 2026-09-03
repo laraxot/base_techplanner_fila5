@@ -25,7 +25,6 @@
 - 🧬 **[Trait Patterns](./traits-complete-guide.md)** - HasTeams, HasXotTable e altri trait core.
 - 🔧 **[HasXotTable Fixes](./phpstan-hasxottable-trait-fixes-february.md)** - Correzioni type safety per trait multi-contesto.
 - 🔧 **[HasXotTable Fixes](./phpstan-hasxottable-trait-fixes-february-2026.md)** - Correzioni type safety per trait multi-contesto.
->>>>>>> .merge_file_lEHJfY
 - 🐚 **[Bashscripts Organization](./bashscripts-organization.md)** - Strumenti CLI per la manutenzione.
 - 🚀 **[Safe Casting Actions](./safe-casting-actions.md)** - Gestione type-safe dei dati.
 
@@ -41,6 +40,4 @@
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
-=======
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
->>>>>>> .merge_file_4a5wkT

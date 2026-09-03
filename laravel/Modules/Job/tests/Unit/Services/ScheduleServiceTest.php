@@ -10,7 +10,7 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\file_get_contents;
 
-uses(TestCase::class)->group('no-job-db');
+uses(TestCase::class);
 
 describe('ScheduleService', function () {
     it('can be instantiated', function () {

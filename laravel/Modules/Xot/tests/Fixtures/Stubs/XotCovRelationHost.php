@@ -9,6 +9,9 @@ use Illuminate\Database\Eloquent\Relations\Pivot;
 use Modules\Xot\Models\Cache as CacheModel;
 use Modules\Xot\Models\Traits\RelationX;
 
+/**
+ * PHPStan fixture: keeps custom HasRoles trait in analysed graph.
+ */
 final class XotCovRelationHost extends CacheModel
 {
     use RelationX;

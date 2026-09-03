@@ -13,23 +13,33 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
 use Modules\Lang\Actions\GetAllTranslationAction;
-use Modules\TechPlanner\Models\Profile;
+use Modules\Lang\Database\Factories\TranslationFileFactory;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Modules\Xot\Contracts\ProfileContract;
 use Sushi\Sushi;
 
 use function Safe\json_encode;
 
 /**
- * @property int $id
- * @property string|null $name
+ * @property string|null $key
  * @property string|null $path
- * @property array<array-key, mixed>|string|null $content
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
+ * @property string|null $id
+ * @property string|null $name
+ * @property array<array-key, mixed>|null $content
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
  *
+ * @method static TranslationFileFactory factory($count = null, $state = [])
  * @method static Builder<static>|TranslationFile newModelQuery()
  * @method static Builder<static>|TranslationFile newQuery()
  * @method static Builder<static>|TranslationFile query()
+ * @method static Builder<static>|TranslationFile whereContent($value)
  * @method static Builder<static>|TranslationFile whereId($value)
+ * @method static Builder<static>|TranslationFile whereKey($value)
+ * @method static Builder<static>|TranslationFile whereName($value)
+ * @method static Builder<static>|TranslationFile wherePath($value)
+ *
+ * @property ProfileContract|null $deleter
  *
  * @mixin \Eloquent
  */
@@ -88,21 +98,17 @@ class TranslationFile extends BaseModel
         $files = app(GetAllTranslationAction::class)->execute();
 
         /** @var array<int, array<string, mixed>> $result */
-        $result = Arr::map($files, function (mixed $item): array {
+        $result = Arr::map($files, function ($item) {
             if (! is_array($item)) {
                 return [];
             }
 
             $key = $item['key'] ?? null;
-            /** @var string|int|float|bool|null $keyNarrowed */
-            $keyNarrowed = $key;
-            $keyStr = is_string($keyNarrowed) ? $keyNarrowed : (string) $keyNarrowed;
+            $keyStr = SafeStringCastAction::cast($key);
             $item['id'] = isset($item['key']) ? $keyStr : '';
 
             $pathValue = $item['path'] ?? null;
-            /** @var string|int|float|bool|null $pathValueNarrowed */
-            $pathValueNarrowed = $pathValue;
-            $pathStr = is_string($pathValueNarrowed) ? $pathValueNarrowed : (string) $pathValueNarrowed;
+            $pathStr = SafeStringCastAction::cast($pathValue);
             $item['name'] = isset($item['path']) ? basename($pathStr, '.php') : '';
 
             if (isset($item['path'])) {
@@ -143,8 +149,13 @@ class TranslationFile extends BaseModel
 
     private function isRunningIdeHelper(): bool
     {
-        return filter_var(config('app.phpstan_running', false), FILTER_VALIDATE_BOOLEAN)
-            || (is_array($_SERVER['argv'] ?? null) && in_array('ide-helper:models', $_SERVER['argv'], true));
+        if (defined('PHPSTAN_RUNNING')) {
+            return true;
+        }
+
+        $argv = $_SERVER['argv'] ?? [];
+
+        return is_array($argv) && in_array('ide-helper:models', $argv, true);
     }
 
     /**

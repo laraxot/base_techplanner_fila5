@@ -29,7 +29,6 @@ This pattern ensures PHPStan successfully validates the chain at Level 10.
 
 I test in Laraxot seguono le best practices di Laravel e Pest PHP. Ogni modulo dovrebbe avere una propria struttura di test organizzata in unit e feature test.
 
->>>>>>> .merge_file_W16Oh1
 
 ## Configurazione dell'Ambiente di Test
 
@@ -316,4 +315,3 @@ it('uses external service', function () {
 - Usa `DatabaseMigrations` invece di `RefreshDatabase` per test più veloci
 - Evita chiamate di rete nei test (mocka i servizi esterni)
 
->>>>>>> .merge_file_W16Oh1

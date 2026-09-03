@@ -198,5 +198,4 @@ La **SUPER MUCCA** 🐄 ha processato tutti i file e risolto ogni conflitto pren
 
 *Script creati il: 2025-09-18*
 *Script creati il: [DATE]*
->>>>>>> .merge_file_6Ikl4r
 *Poteri della Super Mucca: ATTIVATI* 🐄✨

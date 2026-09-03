@@ -37,7 +37,6 @@ avere un controllo su un eventuale corruzione dei dati (bug, malicius, errore um
 * [event-sourcing.md](../../../tenant/project_docs/it/config/event-sourcing.md)
 * [event-sourcing.md](../../../xot/docs/activity/event-sourcing.md)
 * [event-sourcing.md](../../../tenant/docs/it/config/event-sourcing.md)
->>>>>>> .merge_file_bdfnra
 
 ### Versione Incoming
 

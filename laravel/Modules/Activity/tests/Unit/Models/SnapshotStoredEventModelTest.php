@@ -6,8 +6,11 @@ namespace Modules\Activity\Tests\Unit\Models;
 
 use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Models\StoredEvent;
+use Modules\Activity\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
+
+uses(TestCase::class);
 
 test('snapshot getConnectionName resolves activity connection', function (): void {
     $snapshot = new Snapshot();

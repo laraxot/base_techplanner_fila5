@@ -50,8 +50,10 @@ class HtmlAction
             $html2pdf->clean();
 
             $formatter = new ExceptionFormatter($html2PdfException);
-            throw new \RuntimeException('Removed debug dddx');
+            dddx($formatter->getHtmlMessage());
+            echo $formatter->getHtmlMessage();
         }
 
+        return $filename;
     }
 }

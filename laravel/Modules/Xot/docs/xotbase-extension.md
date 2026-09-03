@@ -205,5 +205,3 @@ Always run `php artisan optimize:clear && ./vendor/bin/phpstan analyse` after ma
 *
 *Architecture Version: XotBase 2.0*
 See canonical documentation: ../../../Themes/docs/shared-components/xotbase-extension-rules-conflict.md
->>>>>>> .merge_file_ReteZ6
->>>>>>> .merge_file_tjIABO

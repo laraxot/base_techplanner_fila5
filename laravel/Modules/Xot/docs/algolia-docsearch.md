@@ -84,7 +84,6 @@ For more details, visit the [official Algolia DocSearch documentation.](https://
 * [algolia-docsearch.md](../../../ui/docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../cms/docs/algolia-docsearch.md)
 
->>>>>>> .merge_file_uarMba
 
 ### Versione Incoming
 

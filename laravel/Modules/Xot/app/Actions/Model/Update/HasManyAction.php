@@ -21,20 +21,15 @@ class HasManyAction
     /**
      * Execute the HasMany relation update.
      *
-     * @throws InvalidArgumentException
+     * @throws \InvalidArgumentException
      */
     public function execute(Model $model, RelationData $relationDTO): void
     {
         Assert::isInstanceOf($relation = $relationDTO->rows, HasMany::class);
 
-        $parentKey = $model->getAttribute($relation->getLocalKeyName());
-        if (! is_int($parentKey) && ! is_string($parentKey)) {
-            throw new InvalidArgumentException('La chiave locale della relazione non e\' una chiave valida.');
-        }
-
         $updateData = new HasManyUpdateData(
             foreignKey: $relation->getForeignKeyName(),
-            parentKey: $parentKey,
+            parentKey: $model->getAttribute($relation->getLocalKeyName()),
         );
 
         match (true) {

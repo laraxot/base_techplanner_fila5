@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\UI\Models;
 
 use Illuminate\Database\Eloquent\Builder;
-use Modules\TechPlanner\Models\Profile;
 use Modules\Xot\Models\BaseModel;
 
 /**
@@ -18,8 +17,6 @@ use Modules\Xot\Models\BaseModel;
  * @property string|null $icon
  * @property bool $is_active
  * @property int $sort_order
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
  *
  * @method static \Modules\UI\Database\Factories\CategoryFactory factory($count = null, $state = [])
  * @method static Builder<static>|Category newModelQuery()

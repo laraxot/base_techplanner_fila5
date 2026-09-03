@@ -60,7 +60,6 @@ public function registerTranslations(): void
 
 **Backlink:** Vedi anche [CONFLITTI_MERGE_RISOLTI.md](conflitti_merge_risolti.md)
 **Backlink:** Vedi anche [CONFLITTI_MERGE_RISOLTI.md](./CONFLITTI_MERGE_RISOLTI.md)
->>>>>>> .merge_file_rOeX1z
 
 ## Esempio di Override Sicuro
 ```php
@@ -84,7 +83,6 @@ class CustomModuleServiceProvider extends XotBaseServiceProvider
 - [COMPONENTI_PERSONALIZZATI.md](./COMPONENTI_PERSONALIZZATI.md) — Regole e path per Blade components modulari
 - [CONFLITTI_MERGE_RISOLTI.md](conflitti_merge_risolti.md) — Tracciamento conflitti risolti su ServiceProvider
 - [CONFLITTI_MERGE_RISOLTI.md](./CONFLITTI_MERGE_RISOLTI.md) — Tracciamento conflitti risolti su ServiceProvider
->>>>>>> .merge_file_rOeX1z
 - [FILAMENT_TABLE_COLUMNS.md](./FILAMENT_TABLE_COLUMNS.md) — Standardizzazione metodi colonne Filament
 
 ---

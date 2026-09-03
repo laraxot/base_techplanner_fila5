@@ -512,5 +512,3 @@ Xot rappresenta l'evoluzione naturale di Laravel:
 *Creato: [DATE]*
 *Autore: AI Assistant con analisi approfondita*
 See canonical documentation: ../../../Themes/docs/shared-components/xot-engine-complete-guide.md
->>>>>>> .merge_file_WjlGDt
->>>>>>> .merge_file_19bmMh

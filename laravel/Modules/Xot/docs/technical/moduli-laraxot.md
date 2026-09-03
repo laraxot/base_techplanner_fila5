@@ -41,7 +41,6 @@ I moduli Laraxot sono componenti fondamentali del progetto il progetto, fornendo
 11. **module_cms_fila3** - Gestione contenuti
 12. **module_job_fila3** - Gestione job in background
 
->>>>>>> .merge_file_P7Rvc1
 
 ## Struttura dei Namespace
 
@@ -97,7 +96,6 @@ git subtree add --prefix laravel/Modules/[NomeModulo] git@github.com:laraxot/[no
 11. module_job_fila3 (dipende da Xot)
 12. theme_one_fila3 (dipende da UI) - Da installare in `/laravel/Themes/One/`
 
->>>>>>> .merge_file_P7Rvc1
 
 ## Separazione tra Moduli e Temi
 
@@ -115,7 +113,6 @@ git subtree add --prefix laravel/Modules/[NomeModulo] git@github.com:laraxot/[no
 ```bash
 git subtree add --prefix laravel/Themes/One git@github.com:laraxot/theme_one_fila5.git dev --squash
 git subtree add --prefix laravel/Themes/One git@github.com:laraxot/theme_one_fila3.git dev --squash
->>>>>>> .merge_file_P7Rvc1
 ```
 
 ## Compatibilità con Laravel 12

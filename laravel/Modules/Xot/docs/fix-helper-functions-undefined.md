@@ -359,7 +359,6 @@ echo 'User models count: ' . count(getModuleModels('User')) . PHP_EOL;
 - [Xot Helpers Documentation](./helpers.md)
 - [Tenant Helper Dependency](../../Tenant/docs/helper-functions-dependency.md)
 - [Tenant Helper Dependency](../../tenant/docs/helper-functions-dependency.md)
->>>>>>> .merge_file_o5opVP
 - [RouteService Implementation](../app/Services/RouteService.php)
 - [GetAllModelsByModuleNameAction](../app/Actions/Model/GetAllModelsByModuleNameAction.php)
 

@@ -150,7 +150,6 @@ Ogni modulo deve avere:
 
 - [Regola Globale](../../Xot/docs/accessor-save-guard-global-rule.md)
 - [Regola Globale](../../xot/docs/accessor-save-guard-global-rule.md)
->>>>>>> .merge_file_nZmC3V
 ```
 
 ## Metriche Target
@@ -189,7 +188,6 @@ Ogni modulo deve avere:
 
 **Creato**: [DATE]
 
->>>>>>> .merge_file_nZmC3V
 **Status**: 📊 Audit Framework Pronto
 **Prossimo**: Audit IndennitaCondizioniLavoro
 **Timeline**: 3 settimane per audit completo

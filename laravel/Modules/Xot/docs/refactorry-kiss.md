@@ -222,5 +222,3 @@ See canonical documentation: ../../../Themes/docs/shared-components/refactor-dry
 **Durata refactor**: 15 minuti
 **Impatto**: TRASFORMATIVO
 See canonical documentation: ../../../Themes/docs/shared-components/refactor-dry-kiss-sumy.md
->>>>>>> .merge_file_BKGJkd
->>>>>>> .merge_file_d3O83q

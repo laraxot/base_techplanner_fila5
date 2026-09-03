@@ -20,11 +20,9 @@ bisogna modificare il file /laravel/config/modules.php ed indicare la cartella g
 * [modules.md](../../../Xot/docs/filament/modules.md)
 * [modules.md](../../../Xot/docs/config/modules.md)
 
->>>>>>> .merge_file_4opqhI
 
 ### Versione Incoming
 
 bisogna modificare il file /laravel/config/modules.php ed indicare la cartella giusta che è Models.
 
 ---
-

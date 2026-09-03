@@ -204,5 +204,3 @@ EOF
   - Removed: `metatagdatatest.php`, `pest.php`, `xotbasecontroller.php`, `pt_br/`
   - Established rules and conventions
 See canonical documentation: ../../../Themes/docs/shared-components/case-sensitivity-rules-Modules.md
->>>>>>> .merge_file_2oiOEJ
->>>>>>> .merge_file_uqSXcW

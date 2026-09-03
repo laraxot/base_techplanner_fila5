@@ -153,4 +153,3 @@ Questa correzione garantisce che quando il metodo viene ereditato da classi figl
 - **Accesso a proprietà inesistenti**: Verificare l'esistenza delle proprietà prima dell'accesso.
 - **Tipo di ritorno `class-string`**: Usare asserzioni o casting appropriati quando si restituiscono stringhe che rappresentano classi.
 
->>>>>>> .merge_file_SRZquv
