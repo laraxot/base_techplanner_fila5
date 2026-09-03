@@ -130,7 +130,7 @@ trait HasXotTable
     {
         $columns = [];
 
-        foreach (array_values($this->invokeTableHook('getTableColumns', [])) as $column) {
+        foreach (array_values($this->resolveTableColumns()) as $column) {
             if ($column instanceof ColumnGroup) {
                 // Stack::make() non accetta ColumnGroup: nella vista a griglia le colonne
                 // raggruppate non hanno un layout sensato, quindi vengono saltate.
@@ -187,7 +187,7 @@ trait HasXotTable
      */
     public function getTableFiltersFormColumns(): int
     {
-        $count = count($this->invokeTableHook('getTableFilters', [])) + 1;
+        $count = count($this->resolveTableFilters()) + 1;
 
         return min($count, 6);
     }
