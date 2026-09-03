@@ -216,7 +216,6 @@ trait HasXotTable
      * mantenendo la retrocompatibilità e prevenendo errori.
      *
      * Ultimo aggiornamento: 10/2023
-     * @phpstan-ignore method.deprecated
      */
     public function table(Table $table): Table
     {
