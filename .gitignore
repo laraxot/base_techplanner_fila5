@@ -128,3 +128,4 @@ graphify-out/
 .token-optimizer/
 build/
 bmad/upstream/claude-code-bmad-skills/
+bmad/upstream/claude-code-bmad-skills
