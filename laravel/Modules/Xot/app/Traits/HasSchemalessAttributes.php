@@ -23,12 +23,6 @@ use function Safe\json_encode;
  */
 trait HasSchemalessAttributes
 {
-    protected function extraAttributesWrapper(): SchemalessAttributes
-    {
-        return SchemalessAttributes::createForModel($this, 'extra_attributes');
-    }
-
-
     /**
      * Aggiunge extra_attributes al fillable.
      *
@@ -80,6 +74,27 @@ trait HasSchemalessAttributes
     public function scopeWhereExtraAttribute(Builder $query, string $key, mixed $value): Builder
     {
         return $query->where("extra_attributes->{$key}", $value);
+    }
+
+    /**
+     * Spatie persiste extra_attributes come array sul modello dopo set/forget.
+     * Re-idratare sempre il wrapper prima di leggere o scrivere.
+     */
+    protected function extraAttributesWrapper(): SchemalessAttributes
+    {
+        if ($this->extra_attributes instanceof SchemalessAttributes) {
+            return $this->extra_attributes;
+        }
+
+        $raw = $this->attributes['extra_attributes'] ?? null;
+        if (is_array($raw)) {
+            $this->attributes['extra_attributes'] = json_encode($raw);
+        }
+
+        $wrapper = SchemalessAttributes::createForModel($this, 'extra_attributes');
+        $this->extra_attributes = $wrapper;
+
+        return $wrapper;
     }
 
     /**

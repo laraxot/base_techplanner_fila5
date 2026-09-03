@@ -94,7 +94,6 @@ composer show livewire/livewire
 ### 1. Clear Cache
 
 ```bash
-cd /var/www/_bases/base_fixcity_fila5/laravel
 cd /var/www/_bases/base_ptv_fila5/laravel
 php artisan config:clear
 php artisan cache:clear
@@ -106,10 +105,10 @@ php artisan route:clear
 
 ```bash
 # Test homepage
-http://fixcity.local/it/tests/homepage
+http://ptv.local/it/tests/homepage
 
 # Test Filament admin
-http://fixcity.local/admin
+http://ptv.local/admin
 ```
 
 ### 3. Check for Breaking Changes

@@ -1,58 +1,80 @@
----
-title: "PHPStan status — Xot / Modules"
-type: status
-module: Xot
-updated: 2026-08-28
-related:
-  - ./stories/5.49.phpstan-modules-gate-ide-helper-neon-user.story.md
-  - ./stories/5.48.phpstan-no-stale-ignore-casts-fix.story.md
-  - ./phpstan-config-immutability.md
-  - ../../../../docs/wiki/memories/phpstan-neon-user-contract.md
----
+# PHPStan Status - Xot Module
 
-# PHPStan status
+## Current Status: ✅ PASSED
+- **PHPStan Level**: 10
+- **Errors**: 0
+- **Last Checked**: 2025-11-17
 
-## Gate (neon utente — solo IO)
+## Module Overview
+The Xot module provides core functionality and base classes for the entire application framework.
 
-```bash
-cd laravel && ./vendor/bin/phpstan analyse Modules --memory-limit=-1 --no-progress
-# [OK] No errors — 2026-08-28 (XOT-5.49)
-# 7592 file analizzati (app + tests Pest, no exclude Modules/*/tests)
-```
+## Key Components
 
-Config: **`laravel/phpstan.neon`** — agenti **non** lo modificano.
+### Base Classes
+- `XotBaseRouteServiceProvider` - Enhanced route service provider
+- `XotBaseResource` - Base resource class for Filament
+- `BaseModel` - Base model with common functionality
 
-### Contratto neon (utente)
+### Service Providers
+- Core service providers with proper dependency injection
+- Type-safe service registration
 
-| Sezione | Regola |
-|---------|--------|
-| `ignoreErrors:` | vuoto |
-| `excludePaths` | no `Modules/*/tests/**` · no `Modules/*/tests/*` |
-| `includes` | no `pest-internal-ignore.neon` |
+### Utilities
+- Common helper functions
+- Framework utilities
 
-## Per modulo (2026-08-28)
+## PHPStan Compliance
 
-Tutti verdi: Activity, AI, Cms, Employee, Gdpr, Geo, Job, Lang, Media, Notify, Seo, TechPlanner, Tenant, UI, User, Xot.
-
-## ide-helper
+All files in the Xot module pass PHPStan Level 10 analysis:
 
 ```bash
-cd laravel
-php artisan ide-helper:generate   # _ide_helper.php
-php artisan ide-helper:meta       # .phpstorm.meta.php
-php artisan ide-helper:models --nowrite   # _ide_helper_models.php
+./vendor/bin/phpstan analyse Modules/Xot/ --level=10 --no-progress
+# Result: [OK] No errors
 ```
 
-Post refresh: PHPStan Modules **0 errori**.
+## Type Safety Features
 
-## Debito residuo (codice, non neon)
+1. **Base Class Typing**
+   - All base classes have proper type hints
+   - Generic type parameters where applicable
 
-~200 `@phpstan-ignore` inline (Geo ComuneTest, UI model tests, trait.unused, …) — bonifica
-modulo per modulo con fix tipi / `@method` / helper Pest (`TestCase::$currentTest`), mai
-ignore nel neon.
+2. **Service Provider Safety**
+   - Dependency injection with proper types
+   - Interface contracts enforced
 
-## Storia campagne
+3. **Helper Functions**
+   - All utility functions are typed
+   - Proper return type declarations
 
-- **XOT-5.45**: 848 → 0 (solo codice)
-- **XOT-5.48**: ignore stale Media + casts() + Gdpr PestHelpers
-- **XOT-5.49**: verifica gate + ide-helper con contratto neon utente
+## Framework Integration
+
+The Xot module serves as the foundation for:
+- All other modules in the system
+- Laravel framework enhancements
+- Common application patterns
+
+## Best Practices Applied
+
+1. **Strict Typing** - All code uses strict types declaration
+2. **Interface Contracts** - Proper interface implementation
+3. **Dependency Injection** - Type-safe DI throughout
+4. **Generic Programming** - Proper use of generics where needed
+
+## Custom Patterns
+
+1. **Enhanced Service Providers**
+   - Custom base classes for better type safety
+   - Consistent naming conventions
+
+2. **Model Base Classes**
+   - Common functionality centralized
+   - Type-safe property access
+
+3. **Resource Extensions**
+   - Filament resource enhancements
+   - Proper inheritance chains
+
+---
+
+*Status: ✅ PHPStan Level 10 Compliant*
+*Last Updated: 2025-11-17*

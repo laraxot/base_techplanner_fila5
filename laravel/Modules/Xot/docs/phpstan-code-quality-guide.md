@@ -508,8 +508,6 @@ protected function getStats(): array
         return [
             Stat::make(__('healthcare_app::question_chart_stats_overview.stats.total_responses.label'), '0')
                 ->description(__('healthcare_app::question_chart_stats_overview.messages.no_data_available'))
-            Stat::make(__('quaeris::question_chart_stats_overview.stats.total_responses.label'), '0')
-                ->description(__('quaeris::question_chart_stats_overview.messages.no_data_available'))
                 ->color('gray'),
         ];
     }
@@ -890,12 +888,6 @@ private function createTotalResponsesStat(int $count): Stat
         number_format((float) $count)
     )
         ->description(__('healthcare_app::question_chart_stats_overview.stats.total_responses.description'))
-
-        __('quaeris::question_chart_stats_overview.stats.total_responses.label'),
-        number_format((float) $count)
-    )
-        ->description(__('quaeris::question_chart_stats_overview.stats.total_responses.description'))
-
         ->color($count > 0 ? 'success' : 'gray')
         ->icon('heroicon-o-document-text');
 }
@@ -907,12 +899,6 @@ private function createCompletionRateStat(float $rate): Stat
         $rate.'%'
     )
         ->description(__('healthcare_app::question_chart_stats_overview.stats.completion_rate.description'))
-
-        __('quaeris::question_chart_stats_overview.stats.completion_rate.label'),
-        $rate.'%'
-    )
-        ->description(__('quaeris::question_chart_stats_overview.stats.completion_rate.description'))
-
         ->color($rate >= 75 ? 'success' : ($rate >= 50 ? 'warning' : 'danger'))
         ->icon('heroicon-o-chart-bar');
 }
@@ -1703,7 +1689,6 @@ class DashboardPage extends XotBasePage
 declare(strict_types=1);
 
 namespace Modules\healthcare_app\Filament\Widgets;
-namespace Modules\Quaeris\Filament\Widgets;
 
 use Modules\Xot\Filament\Widgets\XotBaseTableWidget;
 use Filament\Widgets\Concerns\InteractsWithPageFilters;

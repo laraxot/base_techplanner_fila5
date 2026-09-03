@@ -24,12 +24,12 @@ namespace Modules\Notify\Tests\Unit\Models;
 
 use Modules\Notify\Database\Factories\ContactFactory;
 use Modules\Notify\Models\Contact;
-use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+use function Pest\Laravel\withoutExceptionHandling;
+
 beforeEach(function (): void {
-    /** @var TestCase $this */
-    $this->disableExceptionHandling();
+    withoutExceptionHandling();
 });
 
 describe('Contact PartTwo', function (): void {
@@ -50,7 +50,6 @@ describe('Contact PartTwo', function (): void {
     });
 
     test('_can_find_by_name_pattern', function (): void {
-        /** @var TestCase $this */
         ContactFactory::new()->createOne([
             'model_type' => 'App\Models\User',
             'model_id' => '123',
@@ -102,7 +101,6 @@ describe('Contact PartTwo', function (): void {
     });
 
     test('_can_find_by_verification_status', function (): void {
-        /** @var TestCase $this */
         ContactFactory::new()->createOne([
             'model_type' => 'App\Models\User',
             'model_id' => '123',
@@ -212,7 +210,6 @@ describe('Contact PartTwo', function (): void {
     });
 
     test('_can_find_by_multiple_criteria', function (): void {
-        /** @var TestCase $this */
         ContactFactory::new()->createOne([
             'model_type' => 'App\Models\User',
             'model_id' => '123',
@@ -263,7 +260,6 @@ describe('Contact PartTwo', function (): void {
     });
 
     test('_can_order_by_order_column', function (): void {
-        /** @var TestCase $this */
         ContactFactory::new()->createOne([
             'model_type' => 'App\Models\User',
             'model_id' => '123',

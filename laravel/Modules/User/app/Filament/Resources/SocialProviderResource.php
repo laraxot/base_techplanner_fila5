@@ -9,6 +9,7 @@ use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Infolists\Components\TextEntry;
+use Filament\Schemas\Components\Component;
 use Modules\User\Filament\Resources\SocialProviderResource\Pages\CreateSocialProvider;
 use Modules\User\Filament\Resources\SocialProviderResource\Pages\EditSocialProvider;
 use Modules\User\Filament\Resources\SocialProviderResource\Pages\ListSocialProviders;
@@ -25,10 +26,10 @@ class SocialProviderResource extends XotBaseResource
     protected static ?string $model = SocialProvider::class;
 
     /**
-     * @return array<string, mixed>
+     * @return array<string, Component>
      */
-    // #[\Override]
-    public static function getFormSchemaOld(): array
+    #[\Override]
+    public static function getFormSchema(): array
     {
         return [
             'env_guide' => TextEntry::make('env_guide')

@@ -19,7 +19,6 @@ related:
 ---
 # BMad Tasks Index
 
-**Source**: [`../../../../AGENTS.md`](../../../../../../../../../../AGENTS.md) (lines 905-5349)  
 **Source**: [`../../../../agents.md`](../../../../../../../../../../agents.md) (lines 905-5349)  
 **Total Tasks**: 22  
 **Total Lines**: ~4445  
@@ -102,7 +101,6 @@ Tasks are referenced by name when executing workflows:
 - "Execute trace-requirements for epic 3"
 - "Apply qa-gate to story 2.1"
 
-For full task definitions, see the original [`../../../../AGENTS.md`](../../../../../../../../../../AGENTS.md).
 For full task definitions, see the original [`../../../../agents.md`](../../../../../../../../../../agents.md).
 
 ---

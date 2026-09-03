@@ -39,7 +39,7 @@ describe('Can Paginate', function (): void {
 
     test('default pagination options return array', function (): void {
         // Test the default pagination options via reflection
-        $trait = new class()
+        $trait = new class
         {
             use CanPaginate;
 

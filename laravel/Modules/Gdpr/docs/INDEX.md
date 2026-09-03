@@ -1,7 +1,6 @@
-# Documentation Index
+# Docs Index — Gdpr
 
-Modulo: Gdpr
+Canoni: README.md, architecture.md, rules-index.md
 
-## File disponibili
-
-<!-- auto-generato: elencare i file .md presenti -->
+Duplicati: *.variant.md, *.sumy.md, *-variant-*.md, *.archive-*.md (ignorati da index)
+Deprecated: ignorati per questa sessione.

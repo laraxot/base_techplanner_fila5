@@ -23,6 +23,7 @@ use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\View;
 use Modules\Xot\Actions\Composer\RegisterRuntimePsr4NamespacesAction;
 use Modules\Xot\Actions\PaDesignColorsAction;
+use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\View\Composers\XotComposer;
 use Webmozart\Assert\Assert;
@@ -86,7 +87,7 @@ class XotServiceProvider extends XotBaseServiceProvider
             return;
         }
 
-        (new RegisterRuntimePsr4NamespacesAction())->execute($loader);
+        (new RegisterRuntimePsr4NamespacesAction)->execute($loader);
     }
 
     public function registerTimezone(): void
@@ -123,8 +124,8 @@ class XotServiceProvider extends XotBaseServiceProvider
 
     public function registerFilamentMacros(): void
     {
-        // Macro temporaneamente disabilitato per compatibilità problemi con Filament versione
-        // TODO: Re-implementare quando compatibile con current Filament version
+        // Macro temporarily disabled due to compatibility issues with Filament version
+        // TODO: Re-implement when compatible with current Filament version
         /*
         TextInput::macro('generateSlug', function () {
             $this->live(onBlur: true)->afterStateUpdated(function (string $operation, string $state, Set $set): void {
@@ -184,6 +185,19 @@ class XotServiceProvider extends XotBaseServiceProvider
             }
 
             include_once $realPath;
+        }
+    }
+
+    /**
+     * Register console commands.
+     */
+    public function registerCommands(): void
+    {
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                GenerateFilamentResources::class,
+                // \Modules\Xot\Console\Commands\OptimizeFilamentMemoryCommand::class,
+            ]);
         }
     }
 

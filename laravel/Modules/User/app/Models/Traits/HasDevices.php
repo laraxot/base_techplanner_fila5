@@ -8,13 +8,10 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\Pivot;
 use Modules\User\Models\Device;
 
-/**
- * Trait for managing device relationships.
- */
 trait HasDevices
 {
     /**
-     * @return BelongsToMany<Device, $this, Pivot, 'pivot'>
+     * @return BelongsToMany<Device, $this, Pivot>
      */
     public function devices(): BelongsToMany
     {

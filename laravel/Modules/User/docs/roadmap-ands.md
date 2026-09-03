@@ -5,8 +5,8 @@ tags: [roadmap, ands]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "roadmap-ands user module - roadmap, issues & optimization"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -22,7 +22,7 @@ related:
 
 **Modulo**: User (Authentication, Authorization, Profiles)  
 **Data Analisi**: 1 Ottobre 2025  
-**Maintainer**: Team <nome progetto>  
+**Maintainer**: Team FixCity  
 **Status PHPStan**: ⚠️ 95 errori (Level 10)
 
 ---
@@ -389,7 +389,7 @@ php artisan queue:prune-failed --hours=48
 
 ## 🔗 Collegamenti
 
-- [← User Module README](./README.md)
+- [← User Module README](./readme.md)
 - [← PHPStan Fixes [DATE]](./phpstan-fixes-[DATE].md)
 - [← Project Roadmap](../../../docs/project-analysis-and-roadmap.md)
 - [← Root Documentation](../../../docs/index.md)

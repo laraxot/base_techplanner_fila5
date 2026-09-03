@@ -53,7 +53,7 @@ describe('DetermineSeasonalContentViewPathAction', function () {
     });
 
     it('returns view path with sixteen namespace', function () {
-        $action = new DetermineSeasonalContentViewPathAction();
+        $action = new DetermineSeasonalContentViewPathAction;
         $result = $action->execute('base-content');
 
         Assert::assertStringStartsWith('sixteen::emails.', (string) $result);

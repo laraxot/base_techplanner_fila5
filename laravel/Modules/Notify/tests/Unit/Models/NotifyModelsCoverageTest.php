@@ -16,17 +16,17 @@ use PHPUnit\Framework\Assert;
 
 function makeNotifyBaseMorphPivotProxy(): NotifyBaseMorphPivotProxy
 {
-    return new NotifyBaseMorphPivotProxy();
+    return new NotifyBaseMorphPivotProxy;
 }
 
 function makeNotifyBasePivotProxy(): NotifyBasePivotProxy
 {
-    return new NotifyBasePivotProxy();
+    return new NotifyBasePivotProxy;
 }
 
 function makeNotifyNotificationTemplateProxy(): NotifyNotificationTemplateProxy
 {
-    return new NotifyNotificationTemplateProxy();
+    return new NotifyNotificationTemplateProxy;
 }
 
 test('base morph pivot and base pivot use notify connection and default casts', function () {
@@ -40,7 +40,8 @@ test('base morph pivot and base pivot use notify connection and default casts', 
 });
 
 test('contact model has expected fillable and casts', function () {
-    $contact = new Contact();
+    $contact = new Contact;
+
     Assert::assertSame('notify', $contact->getConnectionName());
     Assert::assertContains('model_id', $contact->getFillable());
     Assert::assertContains('contact_type', $contact->getFillable());
@@ -49,7 +50,8 @@ test('contact model has expected fillable and casts', function () {
 });
 
 test('mail template has slug options and expected casts', function () {
-    $mailTemplate = new MailTemplate();
+    $mailTemplate = new MailTemplate;
+
     Assert::assertSame('notify', $mailTemplate->getConnectionName());
     Assert::assertContains('slug', $mailTemplate->getFillable());
     Assert::assertContains('html_layout_path', $mailTemplate->getFillable());
@@ -58,7 +60,8 @@ test('mail template has slug options and expected casts', function () {
 });
 
 test('notification model has array and datetime casts', function () {
-    $notification = new Notification();
+    $notification = new Notification;
+
     Assert::assertContains('message', $notification->getFillable());
     Assert::assertContains('channels', $notification->getFillable());
     Assert::assertArrayHasKey('data', $notification->getCasts());
@@ -93,7 +96,7 @@ test('notification template compile and helper methods return expected structure
 });
 
 test('notify theme exposes logo accessor and morph relation', function () {
-    $theme = new NotifyTheme();
+    $theme = new NotifyTheme;
     $theme->logo_width = 300;
     $theme->logo_height = 120;
 

@@ -45,8 +45,6 @@ parameters:
 ```bash
 # Esecuzione dalla root del progetto Laravel
 cd laravel
-cd /var/www/html/_bases/base_ptvx_fila5/laravel
-cd /var/www/html/_bases/base_ptvx_fila3_mono/laravel
 
 # Analisi modulo specifico
 ./vendor/bin/phpstan analyze Modules/Xot --level=9

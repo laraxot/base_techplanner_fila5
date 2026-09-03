@@ -3,14 +3,11 @@
 declare(strict_types=1);
 
 namespace Modules\Seo\Tests\Unit\Providers;
-
-use Modules\Seo\Adapters\MetatagManager;
 use Modules\Seo\Providers\EventServiceProvider;
 use Modules\Seo\Providers\SeoServiceProvider;
-use Modules\Seo\Tests\TestCase;
+use Modules\Seo\Adapters\MetatagManager;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
+uses(\Modules\Seo\Tests\TestCase::class);
 
 it('registers metatag service singleton and provides list', function (): void {
     $provider = new SeoServiceProvider(app());

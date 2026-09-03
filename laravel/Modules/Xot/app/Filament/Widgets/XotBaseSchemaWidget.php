@@ -9,8 +9,6 @@ use Filament\Schemas\Concerns\InteractsWithSchemas;
 use Filament\Schemas\Contracts\HasSchemas;
 use Filament\Schemas\Schema;
 use Illuminate\Database\Eloquent\Model;
-use InvalidArgumentException;
-use LogicException;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Webmozart\Assert\Assert;
 
@@ -33,7 +31,7 @@ use Webmozart\Assert\Assert;
  * validazione campi solo nello schema — submit usa `$this->form->getState()` (mai `validateForm()`).
  * La *Form class è lo spartito (campi + regole + dehydrate). MAI duplicare TextInput nel widget.
  *
- * @property Schema $form
+ * @property Schema                    $form
  * @property array<string, mixed>|null $data
  */
 abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
@@ -159,7 +157,9 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
         $this->form->fill([]);
     }
 
-    public function save(): void {}
+    public function save(): void
+    {
+    }
 
     protected function getFormModel(): Model|string|null
     {

@@ -1,23 +1,10 @@
----
-title: 'pdf_to_txt'
-module: Xot
-type: reference
-slug: pdf-to-txt
-description: '<!-- Contenuto migrato da _docs/pdf_to_txt.txt -->'
-tags: [migrato-da-txt, xot]
-converted_from: pdf_to_txt.txt
-created: 2026-08-24
-updated: 2026-08-24
----
-
-# pdf_to_txt
-
-<!-- Contenuto migrato da _docs/pdf_to_txt.txt -->
-
 https://dev.to/snehalk/how-to-read-content-from-pdf-document-in-laravel-8-4f6d
 
+
 https://github.com/smalot/pdfparser                  5 days ago
-use Smalot\PdfParser\Parser;
+use Smalot\PdfParser\Parser;      
+
+
 
 $pdfParser = new Parser();
 $pdf = $pdfParser->parseFile($file->path());
@@ -31,7 +18,9 @@ https://www.pdfparser.org/demo
 https://www.phpclasses.org/blog/package/9732/post/1-How-to-Extract-Text-and-Images-from-PDF-File-Using-PHP.html
 http://www.phpclasses.org/package/9732-PHP-Extract-text-contents-from-PDF-files.html
 
+
 https://github.com/christian-vigh-phpclasses/PdfToText     on 31 May 2017
+
 
 http://www.pdftotext.eu
 

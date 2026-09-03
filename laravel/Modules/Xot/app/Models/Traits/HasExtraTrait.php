@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Models\Traits;
 
-use Exception;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Support\Str;

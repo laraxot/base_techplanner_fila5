@@ -7,7 +7,6 @@ namespace Modules\Xot\View\Components;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Str;
 use Illuminate\View\Component as IlluminateComponent;
-use InvalidArgumentException;
 
 /**
  * Class XotBaseComponent.

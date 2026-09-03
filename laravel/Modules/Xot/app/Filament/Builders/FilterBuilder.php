@@ -15,7 +15,6 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Modules\User\Models\User;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
-use function Safe\date;
 use function Safe\strtotime;
 
 /**
@@ -122,14 +121,12 @@ class FilterBuilder
                 }
 
                 if ($from) {
-                    /** @var string $fromStr */
                     $fromStr = SafeStringCastAction::cast($from);
 
                     return $label.' from: '.date('d/m/Y', strtotime($fromStr));
                 }
 
                 if ($until) {
-                    /** @var string $untilStr */
                     $untilStr = SafeStringCastAction::cast($until);
 
                     return $label.' until: '.date('d/m/Y', strtotime($untilStr));

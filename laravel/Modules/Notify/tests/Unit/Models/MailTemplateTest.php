@@ -10,16 +10,15 @@ use Modules\Notify\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
+use function Pest\Laravel\withoutExceptionHandling;
 use function Safe\json_encode;
 
 beforeEach(function (): void {
-    /** @var TestCase $this */
-    $this->disableExceptionHandling();
+    withoutExceptionHandling();
 });
 
 describe('Mail Template', function (): void {
     test('_can_create_mail_template', function (): void {
-        /** @var TestCase $this */
         $template = MailTemplateFactory::new()->createOne([
             'mailable' => 'App\Mail\WelcomeMail',
             'name' => 'Welcome Email Template',
@@ -45,7 +44,7 @@ describe('Mail Template', function (): void {
     });
 
     test('_has_correct_fillable_fields', function (): void {
-        $template = new MailTemplate();
+        $template = new MailTemplate;
 
         $expectedFillable = [
             'mailable',
@@ -62,7 +61,8 @@ describe('Mail Template', function (): void {
     });
 
     test('_has_correct_casts', function (): void {
-        $template = new MailTemplate();
+        $template = new MailTemplate;
+
         $expectedCasts = [
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
@@ -72,7 +72,8 @@ describe('Mail Template', function (): void {
     });
 
     test('_has_translatable_fields', function (): void {
-        $template = new MailTemplate();
+        $template = new MailTemplate;
+
         $expectedTranslatable = [
             'subject',
             'html_template',
@@ -83,7 +84,8 @@ describe('Mail Template', function (): void {
     });
 
     test('_uses_notify_connection', function (): void {
-        $template = new MailTemplate();
+        $template = new MailTemplate;
+
         Assert::assertEquals('notify', $template->getConnectionName());
     });
 

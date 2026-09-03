@@ -81,10 +81,11 @@ describe('Notify remaining coverage sweep', function (): void {
         $notification = PushNotificationData::from(['title' => 'T', 'body' => 'B']);
         $token = str_repeat('a', 80).':'.str_repeat('b', 40);
 
-        $device = (new SendPushToDeviceAction())->execute($token, $notification);
+        $device = (new SendPushToDeviceAction)->execute($token, $notification);
         Assert::assertArrayHasKey('fcm', $device);
 
-        $jobId = (new SchedulePushNotificationAction())->execute([$token],
+        $jobId = (new SchedulePushNotificationAction)->execute(
+            [$token],
             $notification,
             [],
             new DateTime('+1 hour'),
@@ -92,12 +93,12 @@ describe('Notify remaining coverage sweep', function (): void {
         Assert::assertStringStartsWith('push_', $jobId);
         Assert::assertNotNull(Cache::get("scheduled_push:{$jobId}"));
 
-        $all = (new SendPushToAllUsersAction())->execute($notification);
+        $all = (new SendPushToAllUsersAction)->execute($notification);
         Assert::assertArrayHasKey('success', $all);
         Assert::assertFalse($all['success']);
 
         $criteria = PushCriteriaData::from(['platform' => 'fcm']);
-        $target = (new SendPushWithTargetingAction())->execute($criteria, $notification);
+        $target = (new SendPushWithTargetingAction)->execute($criteria, $notification);
         Assert::assertArrayHasKey('success', $target);
         Assert::assertFalse($target['success']);
     });
@@ -108,8 +109,8 @@ describe('Notify remaining coverage sweep', function (): void {
             'recipient' => 'user@example.test',
             'body' => 'Hello',
             'channels' => ['mail']]);
-        Assert::assertSame('user@example.test', $data->routeNotificationFor('mail', new NotifyNetfunNotificationStub()));
-        Assert::assertInstanceOf(NotificationModel::class, $data->routeNotificationFor('database', new NotifyNetfunNotificationStub()));
+        Assert::assertSame('user@example.test', $data->routeNotificationFor('mail', new NotifyNetfunNotificationStub));
+        Assert::assertInstanceOf(NotificationModel::class, $data->routeNotificationFor('database', new NotifyNetfunNotificationStub));
         Assert::assertInstanceOf(SmsData::class, $data->getSmsData());
 
         SendNotificationBulkResultData::from([
@@ -131,14 +132,14 @@ describe('Notify remaining coverage sweep', function (): void {
             'sms.drivers.smsfactor' => ['token' => 'test-token', 'api_url' => 'https://example.test/sms']]);
 
         try {
-            $sms = (new SmsActionFactory())->create();
+            $sms = (new SmsActionFactory)->create();
             Assert::assertInstanceOf(SmsActionContract::class, $sms);
         } catch (\Throwable $e) {
             Assert::assertNotSame('', $e->getMessage());
         }
 
         try {
-            (new SmsActionFactory())->create('unknown-driver-xyz');
+            (new SmsActionFactory)->create('unknown-driver-xyz');
         } catch (\Throwable $e) {
             Assert::assertNotSame('', $e->getMessage());
         }
@@ -147,14 +148,15 @@ describe('Notify remaining coverage sweep', function (): void {
         try {
             Assert::assertInstanceOf(
                 TelegramProviderActionInterface::class,
-                (new TelegramActionFactory())->create(), );
+                (new TelegramActionFactory)->create(),
+            );
         } catch (\Throwable $e) {
             Assert::assertNotSame('', $e->getMessage());
         }
 
         config(['whatsapp.default' => '360dialog']);
         try {
-            (new WhatsAppActionFactory())->create();
+            (new WhatsAppActionFactory)->create();
         } catch (\Throwable $e) {
             Assert::assertNotSame('', $e->getMessage());
         }
@@ -164,8 +166,9 @@ describe('Notify remaining coverage sweep', function (): void {
         config([
             'sms.drivers.smsfactor' => ['token' => 'test-token', 'api_url' => 'https://example.test/sms']]);
 
-        $notification = new NotifyNetfunNotificationStub();
-        $notifiable = new NotifyNetfunNotifiableStub();
+        $notification = new NotifyNetfunNotificationStub;
+        $notifiable = new NotifyNetfunNotifiableStub;
+
         try {
             $netfun = app(NetfunChannel::class);
             $result = $netfun->send($notifiable, $notification);
@@ -187,7 +190,7 @@ describe('Notify remaining coverage sweep', function (): void {
     });
 
     test('base pivot stub exposes casts and connection', function (): void {
-        $pivot = new NotifyCoveragePivotStub();
+        $pivot = new NotifyCoveragePivotStub;
         $pivot->setRawAttributes(['id' => 'pivot-1']);
         Assert::assertSame('notify', $pivot->getConnectionName());
         Assert::assertArrayHasKey('id', $pivot->getCasts());

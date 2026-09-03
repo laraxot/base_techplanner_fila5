@@ -3,9 +3,8 @@
 declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Feature;
-use Closure;
-use Illuminate\Database\Eloquent\Builder;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Str;
 use Modules\Activity\Database\Factories\ActivityFactory;
@@ -198,7 +197,7 @@ test('activity module handles concurrent operations correctly', function () {
         };
     }
 
-    $results = array_map(fn (Closure $promise): mixed => $promise(), $promises);
+    $results = array_map(fn (\Closure $promise) => $promise(), $promises);
     Assert::assertCount(10, $results);
     foreach ($results as $result) {
         Assert::assertTrue($result);

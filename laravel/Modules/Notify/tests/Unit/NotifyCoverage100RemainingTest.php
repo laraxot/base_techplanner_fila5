@@ -52,11 +52,11 @@ describe('Notify coverage 100 — final sweep', function (): void {
     });
 
     test('HasTenantNotifications espone relazioni scope e boot senza DB', function (): void {
-        $tenant = new Tenant();
+        $tenant = new Tenant;
         $tenant->setAttribute('id', 'tenant-cov');
         Filament::setTenant($tenant, isQuiet: true);
 
-        $dummy = new NotifyTenantDummyModel();
+        $dummy = new NotifyTenantDummyModel;
         $dummy->tenant_id = 'tenant-cov';
 
         Assert::assertTrue($dummy->belongsToTenant('tenant-cov'));
@@ -105,8 +105,8 @@ describe('Notify coverage 100 — final sweep', function (): void {
             'notify.default_channel' => 'mail',
             'notify.channels.mail.driver' => 'log']);
 
-        $manager = new NotificationManager();
-        $recipient = new class() extends Model
+        $manager = new NotificationManager;
+        $recipient = new class extends Model
         {
             protected $guarded = [];
         };

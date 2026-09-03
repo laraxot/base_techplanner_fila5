@@ -12,8 +12,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\ValueObjects;
 
-use InvalidArgumentException;
-
 class EmailValueObject
 {
     public function __construct(

@@ -17,15 +17,12 @@ use Mockery\MockInterface;
 use Modules\User\Database\Factories\TenantFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Tenant;
-use Modules\Xot\Actions\Cast\SafeEloquentCastAction;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Database\Factories\ModuleFactory;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Module;
 use Modules\Xot\Providers\XotServiceProvider;
-use Modules\Xot\States\Transitions\XotBaseTransition;
 use PHPUnit\Framework\MockObject\MockObject;
-use Spatie\Permission\PermissionRegistrar;
 
 /**
  * Class XotBaseTestCase.
@@ -156,38 +153,18 @@ abstract class XotBaseTestCase extends BaseTestCase
         ];
     }
 
-    /**
-     * Fissa il team corrente per `spatie/laravel-permission`.
-     *
-     * `permission.teams` è `true` in questo progetto, quindi la pivot `model_has_role`
-     * ha `team_id` NOT NULL e Spatie lo prende dal registrar, non dal chiamante: senza
-     * un team corrente `assignRole()` scrive null e il database rifiuta la riga.
-     * In un test non c'è tenant risolto da richiesta HTTP, quindi lo si fissa qui.
-     */
-    private function setPermissionsTeamContext(): void
-    {
-        if (config('permission.teams') !== true) {
-            return;
-        }
-
-        $registrar = $this->app->make(PermissionRegistrar::class);
-        $registrar->setPermissionsTeamId(1);
-    }
-
     protected function setUp(): void
     {
         parent::setUp();
-
-        $this->setPermissionsTeamContext();
 
         // Nei test non esiste una build Vite (public_html/build/manifest.json):
         // i blade con @vite renderizzano senza asset invece di lanciare ViewException.
         $this->withoutVite();
 
         if (! $this->app->bound('translator')) {
-            $this->app->singleton('translator', static function (Application $app): Translator {
+            $this->app->singleton('translator', function (Application $app) {
                 return new Translator(
-                    new ArrayLoader(),
+                    new ArrayLoader,
                     'en'
                 );
             });
@@ -228,55 +205,6 @@ abstract class XotBaseTestCase extends BaseTestCase
     protected static function getUserClass(): string
     {
         return XotData::make()->getUserClass();
-    }
-
-    /**
-     * Creates a fixture for SafeEloquentCastAction tests.
-     *
-     * @return array{0: SafeEloquentCastAction, 1: Model}
-     */
-    public static function safeEloquentCastFixture(): array
-    {
-        $action = app(SafeEloquentCastAction::class);
-        $model = new class() extends Model
-        {
-            protected $table = 'safe_eloquent_cast_test';
-
-            protected $fillable = ['name', 'age', 'score', 'active', 'meta', 'empty', 'nickname'];
-
-            protected function casts(): array
-            {
-                return ['meta' => 'array'];
-            }
-        };
-        $model->setAttribute('name', 'Mario');
-        $model->setAttribute('age', 42);
-        $model->setAttribute('score', 12.5);
-        $model->setAttribute('active', true);
-        $model->setAttribute('meta', ['k' => 'v']);
-        $model->setAttribute('empty', '');
-
-        return [$action, $model];
-    }
-
-    /**
-     * Creates a fixture for XotBaseTransition tests.
-     *
-     * @return array{0: Model, 1: XotBaseTransition}
-     */
-    public static function xotBaseTransitionFixture(): array
-    {
-        $record = new class() extends Model
-        {
-            protected $table = 'xot_transition_test';
-        };
-
-        $transition = new class($record) extends XotBaseTransition
-        {
-            public static string $name = 'test_transition';
-        };
-
-        return [$record, $transition];
     }
 
     /**

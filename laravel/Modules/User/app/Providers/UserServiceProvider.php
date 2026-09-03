@@ -27,7 +27,6 @@ use Modules\User\Filament\Widgets\Auth\ResetPasswordWidget;
 use Modules\User\Filament\Widgets\Auth\SocialLoginWidget;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Providers\XotBaseServiceProvider;
-use Spatie\Permission\PermissionRegistrar;
 use Webmozart\Assert\Assert;
 
 class UserServiceProvider extends XotBaseServiceProvider
@@ -42,7 +41,6 @@ class UserServiceProvider extends XotBaseServiceProvider
     public function boot(): void
     {
         parent::boot();
-        $this->syncPermissionRegistrarTeamModel();
         $this->registerLivewireAuthWidgets();
         // $this->registerEventListener();
         $this->registerPasswordRules();
@@ -88,12 +86,12 @@ class UserServiceProvider extends XotBaseServiceProvider
             $serviceConfig = config("services.{$provider}", []);
 
             $clientId = $serviceConfig['client_id'] ?? null;
-            if (is_string($clientId) && $clientId !== '') {
+            if (is_string($clientId) && '' !== $clientId) {
                 Config::set("user.social-providers.{$provider}.client_id", $clientId);
             }
 
             $clientSecret = $serviceConfig['client_secret'] ?? null;
-            if (is_string($clientSecret) && $clientSecret !== '') {
+            if (is_string($clientSecret) && '' !== $clientSecret) {
                 Config::set("user.social-providers.{$provider}.client_secret", $clientSecret);
             }
         }
@@ -234,18 +232,5 @@ class UserServiceProvider extends XotBaseServiceProvider
     {
         // OAuth policies are handled by PassportServiceProvider
         // Register other policies here if needed
-    }
-
-    /**
-     * Allinea PermissionRegistrar al config merge tenant (ide-helper risolve teams() prima del merge completo).
-     */
-    protected function syncPermissionRegistrarTeamModel(): void
-    {
-        $teamClass = config('permission.models.team');
-        if (! is_string($teamClass) || $teamClass === '') {
-            return;
-        }
-
-        app(PermissionRegistrar::class)->setTeamClass($teamClass);
     }
 }

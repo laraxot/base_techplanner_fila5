@@ -19,7 +19,7 @@ cd /percorso/al/progetto/laravel
 php artisan phpstan:analyse
 
 # NON chiamare direttamente phpstan senza entrare nella cartella laravel
-phpstan analyse 
+phpstan analyse
 
 # NON chiamare phpstan dalla directory root del progetto
 ./laravel/vendor/bin/phpstan analyse
@@ -29,7 +29,6 @@ phpstan analyse
 ```bash
 # Entrare nella directory laravel
 cd laravel
-cd /var/www/html/_bases/base_<nome progetto>_fila3/laravel
 
 # Chiamare phpstan con il percorso vendor/bin/
 ./vendor/bin/phpstan analyse Modules/NomeModulo --level=9
@@ -41,7 +40,7 @@ cd /var/www/html/_bases/base_<nome progetto>_fila3/laravel
 - **Livello 10**: Rigidità massima, obiettivo da raggiungere per tutti i moduli.
 
 ```bash
-# Livello standard 
+# Livello standard
 ./vendor/bin/phpstan analyse Modules/NomeModulo --level=9
 
 # Livello avanzato

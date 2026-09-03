@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Notification;
 use Kreait\Firebase\Contract\Messaging;
 use Mockery;
+use Mockery\MockInterface;
 use Modules\Notify\Actions\EsendexSendAction;
 use Modules\Notify\Actions\SMS\SendNexmoSMSAction;
 use Modules\Notify\Actions\SMS\SendPlivoSMSAction;
@@ -28,7 +29,6 @@ use Modules\Notify\Notifications\Channels\FirebaseCloudMessagingChannel;
 use Modules\Notify\Notifications\RecordNotification;
 use Modules\Notify\Services\PushNotificationService;
 use Modules\Notify\Services\SmsService;
-use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use ReflectionClass;
 
@@ -118,7 +118,6 @@ describe('Notify gap attack — highest miss providers', function (): void {
     });
 
     test('PushNotificationService SmsService e FCM channel', function (): void {
-        /** @var TestCase $this */
         Http::fake(['*' => Http::response(['success' => 1], 200)]);
 
         try {
@@ -168,13 +167,13 @@ describe('Notify gap attack — highest miss providers', function (): void {
             Assert::assertTrue(class_exists(SmsService::class));
         }
 
-        $messaging = $this->createUnitMock(Messaging::class);
+        /** @var Messaging&MockInterface $messaging */
+        $messaging = Mockery::mock(Messaging::class);
         $channel = new FirebaseCloudMessagingChannel($messaging);
         Assert::assertInstanceOf(FirebaseCloudMessagingChannel::class, $channel);
     });
 
     test('SpatieEmail AppointmentMail RecordNotification ScheduledPush', function (): void {
-        /** @var TestCase $this */
         Mail::fake();
         Notification::fake();
 
@@ -200,12 +199,12 @@ describe('Notify gap attack — highest miss providers', function (): void {
         }
 
         try {
-            $recordModel = new class() extends Model
+            $recordModel = new class extends Model
             {
                 protected $guarded = [];
             };
             $record = new RecordNotification($recordModel, 'welcome');
-            $notifiable = new class()
+            $notifiable = new class
             {
                 public string $email = 'a@b.c';
 

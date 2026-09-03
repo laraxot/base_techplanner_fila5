@@ -10,16 +10,15 @@ use Modules\Notify\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
+use function Pest\Laravel\withoutExceptionHandling;
 use function Safe\json_encode;
 
 beforeEach(function (): void {
-    /** @var TestCase $this */
-    $this->disableExceptionHandling();
+    withoutExceptionHandling();
 });
 
 describe('Notification', function (): void {
     test('_can_create_notification', function (): void {
-        /** @var TestCase $this */
         $notification = NotificationFactory::new()->createOne([
             'message' => 'Test notification message',
             'type' => 'info',
@@ -49,7 +48,7 @@ describe('Notification', function (): void {
     });
 
     test('_has_correct_fillable_fields', function (): void {
-        $notification = new Notification();
+        $notification = new Notification;
 
         $expectedFillable = [
             'message',
@@ -68,7 +67,8 @@ describe('Notification', function (): void {
     });
 
     test('_has_correct_casts', function (): void {
-        $notification = new Notification();
+        $notification = new Notification;
+
         $expectedCasts = [
             'read_at' => 'datetime',
             'sent_at' => 'datetime',

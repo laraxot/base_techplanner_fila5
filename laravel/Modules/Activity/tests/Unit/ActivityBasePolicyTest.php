@@ -36,7 +36,7 @@ describe('Activity Base Policy', function (): void {
         $user->shouldReceive('hasRole')->with('super-admin')->andReturn(true);
 
         // Test the policy
-        $policy = new class() extends ActivityBasePolicy
+        $policy = new class extends ActivityBasePolicy
         {
             public function policyBefore(User $user): ?bool
             {

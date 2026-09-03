@@ -96,9 +96,9 @@ class ConfigValidator
             'cache.ttl' => 'required|integer|min:0',
             // ... altre regole
         ];
-        
+
         $validator = Validator::make($config, $rules);
-        
+
         return new ValidationResult($validator);
     }
 }
@@ -165,27 +165,3 @@ return array_merge(require __DIR__.'/../vendor/module/config/module.php', [
 * [structure.md](../../../cms/project_docs/structure.md)
 * [structure.md](../../../cms/project_docs/themes/structure.md)
 * [structure.md](../../../cms/project_docs/components/structure.md)
-
-- [Best Practices](../BEST-PRACTICES.md)
-- [Sicurezza](../security/README.md)
-- [Performance](../performance/README.md) 
-
-## Collegamenti tra versioni di structure.md
-* [structure.md](bashscripts/docs/structure.md)
-* [structure.md](../../../Gdpr/docs/structure.md)
-* [structure.md](../../../Notify/docs/structure.md)
-* [structure.md](../../../Xot/docs/structure.md)
-* [structure.md](../../../Xot/docs/base/structure.md)
-* [structure.md](../../../Xot/docs/config/structure.md)
-* [structure.md](../../../User/docs/structure.md)
-* [structure.md](../../../UI/docs/structure.md)
-* [structure.md](../../../Lang/docs/structure.md)
-* [structure.md](../../../Job/docs/structure.md)
-* [structure.md](../../../Media/docs/structure.md)
-* [structure.md](../../../Tenant/docs/structure.md)
-* [structure.md](../../../Activity/docs/structure.md)
-* [structure.md](../../../Cms/docs/structure.md)
-* [structure.md](../../../Cms/docs/themes/structure.md)
-* [structure.md](../../../Cms/docs/components/structure.md)
-
-

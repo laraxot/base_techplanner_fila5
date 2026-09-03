@@ -256,7 +256,7 @@ class OptimizeFilamentMemoryCommand extends Command
     /**
      * Mostra i risultati dell'analisi.
      *
-     * @param  array<string, array<int, string>>  $issues
+     * @param array<string, array<int, string>> $issues
      */
     private function displayAnalysisResults(array $issues): void
     {
@@ -298,7 +298,7 @@ class OptimizeFilamentMemoryCommand extends Command
     /**
      * Mostra dettagli sui problemi trovati.
      *
-     * @param  array<string, array<int, string>>  $issues
+     * @param array<string, array<int, string>> $issues
      */
     private function displayDetailedIssues(array $issues): void
     {

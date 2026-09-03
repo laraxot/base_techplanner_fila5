@@ -22,15 +22,16 @@ class LogFactory extends Factory
 
     /**
      * Define the model's default state.
-     *
+     */
+    /**
      * @return array<string, mixed>
      */
     public function definition(): array
     {
         return [
-            'key' => $this->faker->word,
-            'value' => $this->faker->text,
-            'expiration' => $this->faker->randomNumber(5),
+            // 'key' => $this->faker->word,
+            // 'value' => $this->faker->text,
+            // 'expiration' => $this->faker->randomNumber(5),
         ];
     }
 }

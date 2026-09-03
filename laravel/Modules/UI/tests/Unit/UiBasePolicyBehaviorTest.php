@@ -37,7 +37,7 @@ afterEach(function (): void {
 });
 
 test('UiBasePolicy before concede super-admin e ritorna null altrimenti', function (): void {
-    $policy = new UiBasePolicyBehaviorConcretePolicy();
+    $policy = new UiBasePolicyBehaviorConcretePolicy;
     $super = uiBehaviorUser(['super-admin']);
 
     Assert::assertTrue($policy->before($super, 'viewAny'));

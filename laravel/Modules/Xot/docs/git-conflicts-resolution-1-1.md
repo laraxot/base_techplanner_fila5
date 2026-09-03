@@ -94,5 +94,3 @@ $res=Locality::query()
 
 ### 1. Controllo Conflitti
 ```bash
-
-```

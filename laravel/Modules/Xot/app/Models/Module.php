@@ -5,40 +5,36 @@ declare(strict_types=1);
 namespace Modules\Xot\Models;
 
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
+use Modules\Xot\Contracts\ProfileContract;
+use Modules\Xot\Database\Factories\ModuleFactory;
 use Nwidart\Modules\Facades\Module as ModuleFacade;
 use Nwidart\Modules\Module as NModule;
-use Sushi\Sushi;
 
 use function Safe\json_encode;
 
+use Sushi\Sushi;
+
 /**
- * @property int $id
- * @property string|null $name
- * @property string|null $description
- * @property bool|null $status
- * @property int|null $priority
- * @property string|null $path
- * @property string|null $icon
- * @property array<array-key, mixed>|null $colors
- * @property string|null $slug
- * @property string|null $version
- * @property bool|null $enabled
- * @property array<array-key, mixed>|null $dependencies
- * @property \Carbon\Carbon|null $installation_date
- * @property \Carbon\Carbon|null $activation_date
- * @property \Carbon\Carbon|null $deactivation_date
- * @property array<array-key, mixed>|null $metadata
- * @property string|null $laravel_version
- * @property string|null $php_version
- * @property array<array-key, mixed>|null $permissions
- * @property array<array-key, mixed>|null $routes
- * @property array<array-key, mixed>|null $assets
- * @property array<array-key, mixed>|null $settings
- * @property array<array-key, mixed>|null $usage_statistics
- * @property array<array-key, mixed>|null $error_log
- * @property array<array-key, mixed>|null $update_history
+ * @property int                             $id
+ * @property string|null                     $name
+ * @property string|null                     $slug
+ * @property string|null                     $version
+ * @property string|null                     $description
+ * @property bool|null                       $status
+ * @property bool|null                       $enabled
+ * @property bool|null                       $is_active
+ * @property int|null                        $priority
+ * @property string|null                     $path
+ * @property string|null                     $icon
+ * @property array<array-key, mixed>|null    $colors
+ * @property array<array-key, mixed>|null    $dependencies
+ * @property array<array-key, mixed>|null    $config
+ * @property array<array-key, mixed>|null    $metadata
+ * @property \Illuminate\Support\Carbon|null $activation_date
+ * @property \Illuminate\Support\Carbon|null $deactivation_date
+ * @property \Illuminate\Support\Carbon|null $installation_date
+ * @property array<array-key, mixed>|null    $update_history
  *
  * @method static Builder<static>|Module newModelQuery()
  * @method static Builder<static>|Module newQuery()
@@ -52,39 +48,43 @@ use function Safe\json_encode;
  * @method static Builder<static>|Module wherePriority($value)
  * @method static Builder<static>|Module whereStatus($value)
  *
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $deleter
+ * @property ProfileContract|null $updater
+ *
+ * @method static ModuleFactory factory($count = null, $state = [])
+ *
  * @mixin \Eloquent
  */
-class Module extends Model
+final class Module extends BaseModel
 {
     use Sushi;
 
     protected $fillable = [
         'name',
-        // 'alias',
-        // 'description',
+        'slug',
+        'version',
+        'description',
         'status',
+        'enabled',
+        'is_active',
         'priority',
         'path',
         'icon',
         'colors',
-        'slug',
-        'version',
-        'enabled',
         'dependencies',
-        'installation_date',
+        'config',
+        'metadata',
         'activation_date',
         'deactivation_date',
-        'metadata',
-        'laravel_version',
-        'php_version',
-        'permissions',
-        'routes',
-        'assets',
-        'settings',
-        'usage_statistics',
-        'error_log',
+        'installation_date',
         'update_history',
     ];
+
+    /**
+     * @var string
+     */
+    protected $connection = 'xot';
 
     /**
      * @return array<int, array<string, mixed>>
@@ -111,8 +111,10 @@ class Module extends Model
             ];
         });
 
-        /** @var array<int, array<string, mixed>> */
-        return array_values($modules);
+        /** @var array<int, array<string, mixed>> $rows */
+        $rows = array_values($modules);
+
+        return $rows;
     }
 
     protected function casts(): array
@@ -121,11 +123,29 @@ class Module extends Model
             'name' => 'string',
             'description' => 'string',
             'status' => 'boolean',
-
+            'enabled' => 'boolean',
             'priority' => 'integer',
             'path' => 'string',
             'icon' => 'string',
             'colors' => 'array',
         ];
+    }
+
+    public function isEnabled(): bool
+    {
+        if (null !== $this->enabled) {
+            return (bool) $this->enabled;
+        }
+
+        if (null !== $this->status) {
+            return (bool) $this->status;
+        }
+
+        return (bool) ($this->is_active ?? false);
+    }
+
+    public function isDisabled(): bool
+    {
+        return ! $this->isEnabled();
     }
 }

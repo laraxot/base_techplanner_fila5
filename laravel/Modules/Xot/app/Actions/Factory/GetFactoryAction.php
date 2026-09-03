@@ -27,14 +27,13 @@ class GetFactoryAction
     use QueueableAction;
 
     /**
-     * @template TModel of Model
      * Execute the function with the given model class.
      *
-     * @param class-string<TModel> $model_class the class name of the model
+     * @param string $model_class the class name of the model
      *
      * @throws \Exception when the factory file cannot be loaded or generated
      *
-     * @return Factory<TModel>
+     * @return Factory<covariant Model>
      */
     public function execute(string $model_class): Factory
     {
@@ -48,10 +47,7 @@ class GetFactoryAction
         }
 
         if (class_exists($factory_class)) {
-            /** @var Factory<TModel> $factory */
-            $factory = $this->instantiateFactory($factory_class);
-
-            return $factory;
+            return $this->instantiateFactory($factory_class);
         }
 
         $this->createFactory($model_class);
@@ -67,10 +63,7 @@ class GetFactoryAction
             ),
         );
 
-        /** @var Factory<TModel> $factory */
-        $factory = $this->instantiateFactory($factory_class);
-
-        return $factory;
+        return $this->instantiateFactory($factory_class);
     }
 
     /**
@@ -102,7 +95,7 @@ class GetFactoryAction
     /**
      * Create a factory for the given model class.
      *
-     * @param  string  $model_class  The class name of the model to create the factory for
+     * @param string $model_class The class name of the model to create the factory for
      */
     public function createFactory(string $model_class): void
     {

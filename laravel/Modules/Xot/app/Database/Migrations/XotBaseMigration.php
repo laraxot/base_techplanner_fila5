@@ -10,7 +10,6 @@ use Illuminate\Database\Migrations\Migration as LaravelMigration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Schema\Builder;
 use Illuminate\Database\Schema\ForeignIdColumnDefinition;
-use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
@@ -237,32 +236,7 @@ abstract class XotBaseMigration extends LaravelMigration
 
         $result = $connection->selectOne($query, [$database, $table]);
 
-        $row = $this->constraintCountRow($result);
-        if ($row === null) {
-            return false;
-        }
-
-        return $this->extractPrimaryKeyCount($row) > 0;
-    }
-
-    public function hasForeignKey(string $constraint): bool
-    {
-        $connection = $this->getConn()->getConnection();
-        $table = $this->getTable();
-        $database = $connection->getDatabaseName();
-        $query = "SELECT COUNT(*) as count
-              FROM information_schema.table_constraints
-              WHERE table_schema = ?
-              AND table_name = ?
-              AND constraint_name = ?
-              AND constraint_type = 'FOREIGN KEY'";
-        $result = $connection->selectOne($query, [$database, $table, $constraint]);
-        $row = $this->constraintCountRow($result);
-        if ($row === null) {
-            return false;
-        }
-
-        return $this->extractPrimaryKeyCount($row) > 0;
+        return $this->extractPrimaryKeyCount($result) > 0;
     }
 
     /**
@@ -343,43 +317,19 @@ abstract class XotBaseMigration extends LaravelMigration
         $this->getConn()->table($tableName, $next);
     }
 
-    /**
-     * `selectOne()` è `mixed`. Si tiene solo oggetto o riga associativa.
-     *
-     * @return object|array<string, mixed>|null
-     */
-    private function constraintCountRow(mixed $result): object|array|null
-    {
-        if (is_object($result)) {
-            return $result;
-        }
-
-        if (! is_array($result)) {
-            return null;
-        }
-
-        $row = [];
-        foreach ($result as $key => $value) {
-            if (is_string($key)) {
-                $row[$key] = $value;
-            }
-        }
-
-        return $row;
-    }
-
-    /**
-     * @param  object|array<string, mixed>  $result
-     */
-    protected function extractPrimaryKeyCount(object|array $result): int
+    protected function extractPrimaryKeyCount(mixed $result): int
     {
         if (is_array($result)) {
             return isset($result['count']) ? SafeIntCastAction::cast($result['count']) : 0;
         }
 
-        $resultAsArray = (array) $result;
+        if (is_object($result)) {
+            $resultAsArray = (array) $result;
 
-        return isset($resultAsArray['count']) ? SafeIntCastAction::cast($resultAsArray['count']) : 0;
+            return isset($resultAsArray['count']) ? SafeIntCastAction::cast($resultAsArray['count']) : 0;
+        }
+
+        return 0;
     }
 
     public function updateTimestamps(Blueprint $table, bool $hasSoftDeletes = false): void

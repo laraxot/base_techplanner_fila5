@@ -24,7 +24,7 @@ class NotificationManagerTest extends TestCase
     protected function setUp(): void
     {
         parent::setUp();
-        $this->serviceManager = new NotificationManager();
+        $this->serviceManager = new NotificationManager;
     }
 
     protected function tearDown(): void
@@ -62,7 +62,7 @@ class NotificationManagerTest extends TestCase
 
     private function recipient(): Model
     {
-        return new class() extends Model
+        return new class extends Model
         {
             /** @var list<string> */
             protected $guarded = [];

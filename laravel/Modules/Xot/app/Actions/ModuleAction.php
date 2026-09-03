@@ -28,7 +28,7 @@ class ModuleAction
     public static function getInstance(): self
     {
         if (! self::$_instance instanceof self) {
-            self::$_instance = new self();
+            self::$_instance = new self;
         }
 
         return self::$_instance;
@@ -66,7 +66,7 @@ class ModuleAction
             $filename = $file->getRelativePathname();
             $ext = '.php';
             if (Str::endsWith($filename, $ext)) {
-                $tmp = new \stdClass();
+                $tmp = new \stdClass;
 
                 $name = mb_substr($filename, 0, -mb_strlen($ext));
 
@@ -84,7 +84,6 @@ class ModuleAction
                         $data[$tmp->name] = $tmp->class;
                     }
                 } catch (\Exception) {
-                    // Skip files whose class name does not resolve to an existing/valid class.
                 }
             }
         }

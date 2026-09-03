@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Relations\CustomRelation;
 use Modules\Xot\Tests\TestCase;
@@ -17,7 +16,7 @@ it('creates custom relation', function (): void {
         protected $table = 'related';
     };
 
-    $parentModel = new class() extends Model
+    $parentModel = new class extends Model
     {
         use HasCustomRelations;
 

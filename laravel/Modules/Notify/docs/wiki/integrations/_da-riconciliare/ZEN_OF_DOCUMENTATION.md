@@ -83,7 +83,7 @@ Ogni documento deve essere:
 
 ```bash
 # ❌ CATTIVO
-phpstan-analysis-2026-03-02.md
+phpstan-analysis.md
 session-report-january.md
 achievement-2025-10-10.md
 

@@ -1,12 +1,3 @@
----
-title: "Indice Documentazione Modulo Notify**"
-module: notify
-type: integration
-tags: [integrations, modules, notify]
-created: 2026-08-24
-updated: 2026-08-24
----
-
 # 📚 **Indice Documentazione Modulo Notify**
 
 **Status**: ✅ PHPStan Level 10 Compliant

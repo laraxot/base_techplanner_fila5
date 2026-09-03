@@ -70,7 +70,6 @@ Verify that changes made in module repositories sync correctly to the main repos
 
 ```bash
 # 1. Go to project root
-cd /var/www/_bases/base_fixcity_fila5
 cd /var/www/_bases/base_ptvx_fila5
 
 # 2. Run sync script
@@ -92,7 +91,6 @@ git commit -m "test: subtree sync test"
 git push origin dev
 
 # 2. Wait for GitHub Action
-# 3. Check: https://github.com/laraxot/base_fixcity_fila5/actions
 # 3. Check: https://github.com/laraxot/platform/actions
 # 4. Verify sync completed
 ```

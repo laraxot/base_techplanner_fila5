@@ -139,9 +139,6 @@ Ogni modulo può avere best practices specifiche per le migrazioni. Consultare l
 - [Best Practices per le Migrazioni nel Modulo Patient](/laravel/Modules/Patient/docs/MIGRATION_BEST_PRACTICES.md)
 - [Best Practices per le Migrazioni nel Modulo Tenant](/laravel/Modules/Tenant/docs/MIGRATION_BEST_PRACTICES.md)
 - [Best Practices per le Migrazioni nel Modulo User](/laravel/Modules/User/docs/MIGRATION_BEST_PRACTICES.md)
-- [Best Practices per le Migrazioni nel Modulo Patient](/laravel/modules/patient/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo Tenant](/laravel/modules/tenant/docs/migration_best_practices.md)
-- [Best Practices per le Migrazioni nel Modulo User](/laravel/modules/user/docs/migration_best_practices.md)
 
 ## Errori Comuni e Come Evitarli
 

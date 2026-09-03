@@ -89,6 +89,8 @@ class Password extends XotBasePage
 
             // $this->handleRecordUpdate($this->getUser(), $data);
         } catch (Halt $exception) {
+            dddx($exception->getMessage());
+
             return;
         }
         Notification::make()

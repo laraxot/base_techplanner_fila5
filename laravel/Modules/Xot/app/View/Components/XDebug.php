@@ -41,8 +41,6 @@ class XDebug extends Component
             'html' => $this->debugStack(),
         ];
 
-        dddx($view_params);
-
         return view($view, $view_params);
     }
 

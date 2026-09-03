@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources;
 
-use Exception;
 use Filament\Pages\Enums\SubNavigationPosition;
 use Filament\Resources\Pages\Page;
 use Filament\Resources\Pages\PageRegistration;
@@ -21,7 +20,6 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\HtmlString;
 use Illuminate\Support\Str;
-use LogicException;
 use Modules\Media\Actions\GetAttachmentsSchemaAction;
 use Modules\Xot\Actions\Filament\GetResourceClassNameByModelClassAction;
 use Modules\Xot\Actions\GetTransKeyAction;
@@ -109,12 +107,6 @@ abstract class XotBaseResource extends FilamentResource
     }
 
     /**
-     * Non `final`: 74 Resource dei moduli lo sovrascrivono ancora, e `final` su una classe
-     * base Laraxot produce un errore fatale al primo autoload della sottoclasse — non un
-     * avviso dell'analizzatore, la pagina bianca. Chi migra sposta lo schema in
-     * `Schemas\{Model}Form`; finche' non l'ha fatto, l'override deve restare possibile.
-     * Vedi docs/wiki/rules/final-method-override.md.
-     *
      * @return array<int|string, \Filament\Schemas\Components\Component>
      */
     public static function getFormSchema(): array

@@ -35,22 +35,22 @@ use PHPUnit\Framework\Assert;
 
 function makeEditContactTestProxy(): EditContactTestProxy
 {
-    return new EditContactTestProxy();
+    return new EditContactTestProxy;
 }
 
 function makePreviewMailTemplateTestProxy(): PreviewMailTemplateTestProxy
 {
-    return new PreviewMailTemplateTestProxy();
+    return new PreviewMailTemplateTestProxy;
 }
 
 function makeViewNotificationTestProxy(): ViewNotificationTestProxy
 {
-    return new ViewNotificationTestProxy();
+    return new ViewNotificationTestProxy;
 }
 
 function makePreviewNotificationTemplateTestProxy(): PreviewNotificationTemplate
 {
-    return new class() extends PreviewNotificationTemplate {};
+    return new class extends PreviewNotificationTemplate {};
 }
 
 test('contact resource form schema exposes expected fields', function (): void {

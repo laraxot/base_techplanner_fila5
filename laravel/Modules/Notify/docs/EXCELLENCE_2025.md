@@ -370,7 +370,6 @@ Grazie a tutti i contributor che hanno reso possibile questo progetto:
 ### Open Source
 FixCity è orgogliosamente open source:
 - **License**: MIT
-- **Repository**: github.com/laraxot/fixcity
 - **Repository**: github.com/laraxot/ptv
 - **Contributions**: Welcome!
 - **Code of Conduct**: Contributor Covenant

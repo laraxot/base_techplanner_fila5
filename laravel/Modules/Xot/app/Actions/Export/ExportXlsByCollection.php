@@ -69,7 +69,7 @@ class ExportXlsByCollection
             $rows = Collection::make($rows->toArray());
         }
 
-        $spreadsheet = new Spreadsheet();
+        $spreadsheet = new Spreadsheet;
         $sheet = $spreadsheet->getActiveSheet();
 
         $this->writeHeader($sheet, $fields);

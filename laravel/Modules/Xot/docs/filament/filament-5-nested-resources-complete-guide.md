@@ -48,13 +48,6 @@ use Filament\Resources\Resource;
 use Filament\Resources\Pages\Page;
 use Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons\LessonResource;
 
-namespace Modules\Quaeris\Filament\Resources\Courses;
-
-use Filament\Resources\Resource;
-use Filament\Resources\Pages\Page;
-use Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons\LessonResource;
-
-
 class CourseResource extends Resource
 {
     protected static ?string $model = Course::class;
@@ -96,13 +89,6 @@ use Filament\Resources\Resource;
 use Filament\Resources\Pages\Page;
 use Modules\healthcare_app\Filament\Resources\Courses\CourseResource;
 
-namespace Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons;
-
-use Filament\Resources\Resource;
-use Filament\Resources\Pages\Page;
-use Modules\Quaeris\Filament\Resources\Courses\CourseResource;
-
-
 class LessonResource extends Resource
 {
     protected static ?string $model = Lesson::class;
@@ -141,7 +127,6 @@ class LessonResource extends Resource
 <?php
 
 namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons;
-namespace Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons;
 
 use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Tables;
@@ -149,7 +134,6 @@ use Filament\Forms;
 use Filament\Tables\Table;
 use Filament\Forms\Form;
 use Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons\LessonResource;
-use Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons\LessonResource;
 
 class LessonsRelationManager extends RelationManager
 {
@@ -218,13 +202,6 @@ use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Resources\ParentResourceRegistration;
 use Modules\healthcare_app\Filament\Resources\Courses\CourseResource;
 
-namespace Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons;
-
-use Filament\Resources\RelationManagers\RelationManager;
-use Filament\Resources\ParentResourceRegistration;
-use Modules\Quaeris\Filament\Resources\Courses\CourseResource;
-
-
 class LessonResource extends Resource
 {
     protected static ?string $model = Lesson::class;
@@ -245,7 +222,6 @@ class LessonResource extends Resource
 <?php
 
 namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons;
-namespace Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons;
 
 use Filament\Resources\RelationManagers\RelationManager;
 use Illuminate\Database\Eloquent\Model;
@@ -273,7 +249,6 @@ class LessonsRelationManager extends RelationManager
 <?php
 
 namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons;
-namespace Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons;
 
 use Filament\Resources\RelationManagers\RelationManager;
 use Illuminate\Database\Eloquent\Model;
@@ -351,13 +326,6 @@ use Filament\Resources\Pages\CreateRecord;
 use Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons\LessonResource;
 use Modules\healthcare_app\Models\Course;
 
-namespace Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons\Pages;
-
-use Filament\Resources\Pages\CreateRecord;
-use Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons\LessonResource;
-use Modules\Quaeris\Models\Course;
-
-
 class CreateLesson extends CreateRecord
 {
     protected static string $resource = LessonResource::class;
@@ -385,12 +353,6 @@ namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons\Pa
 
 use Filament\Resources\Pages\CreateRecord;
 use Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons\LessonResource;
-
-namespace Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons\Pages;
-
-use Filament\Resources\Pages\CreateRecord;
-use Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons\LessonResource;
-
 use Illuminate\Validation\Rule;
 
 class CreateLesson extends CreateRecord
@@ -492,7 +454,6 @@ public function test_nested_resource_routing()
 {
     $course = Course::factory()->create();
     $response = $this->get(route('filament.healthcare_app.resources.courses.resources.lessons.list', [
-    $response = $this->get(route('filament.quaeris.resources.courses.resources.lessons.list', [
         'course' => $course,
     ]));
     
@@ -507,7 +468,6 @@ public function test_nested_resource_routing()
 - **Plugin Guava**: https://filamentphp.com/plugins/guava-nested-resources
 
 ## 🔄 **Integrazione con healthcare_app**
-## 🔄 **Integrazione con Quaeris**
 
 ### **Pattern di Integrazione**
 

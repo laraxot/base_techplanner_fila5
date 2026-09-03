@@ -11,7 +11,7 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * Schema canonico moderno (template_id, status_message, delivered/failed/opened/clicked).
  * Variante legacy (recipient/subject/message/type) rimossa con git rm — storia in git.
  */
-return new class() extends XotBaseMigration
+return new class extends XotBaseMigration
 {
     public function up(): void
     {

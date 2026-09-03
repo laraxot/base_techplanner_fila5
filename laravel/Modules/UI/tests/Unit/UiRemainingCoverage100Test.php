@@ -86,8 +86,8 @@ describe('UI remaining 100 — view e actions', function (): void {
         foreach ([
             (new Std('tpl'))->render(),
             (new Svg('tpl'))->render(),
-            (new Navbar())->render(),
-            (new WithSidebar())->render(),
+            (new Navbar)->render(),
+            (new WithSidebar)->render(),
         ] as $view) {
             Assert::assertInstanceOf(View::class, $view);
             Assert::assertSame('ui::empty', $view->name());
@@ -115,7 +115,7 @@ describe('UI remaining 100 — altri componenti', function (): void {
     });
 
     test('GetUserDataAction avatar da profile_photo_path', function (): void {
-        $user = new UiCoverageAuthUser();
+        $user = new UiCoverageAuthUser;
         $user->forceFill([
             'id' => 5,
             'name' => 'Path User',

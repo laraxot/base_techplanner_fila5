@@ -19,7 +19,7 @@
 - [Coding Standards](./conventions/README.md)
 
 ### Per AI Agents
-- [Project Context](./project/PROJECT.md)
+- [Project Context](./project/project.md)
 - [Agent Coordination](./MULTI_AGENT_COLLABORATION.md)
 - [OpenViking Context](../bashscripts/ai/openviking.md)
 

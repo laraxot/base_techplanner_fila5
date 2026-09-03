@@ -21,7 +21,7 @@ di eccellenza 2025 per la gestione delle segnalazioni urbane in Italia.
 3. ✅ **QUICK_START.md** - Guida rapida sviluppatori con regole Laraxot
 4. ✅ **PROJECT_COMPLETION_STATUS.md** - Tracking avanzamento progetto
 5. ✅ **EXCELLENCE_2025.md** - Visione eccellenza e obiettivi
-6. ✅ **WORK_COMPLETED_2025-10-01.md** - Riepilogo tecnico aggiornamenti
+6. ✅ **work-completed.md** - Riepilogo tecnico aggiornamenti
 
 ### 🎫 Modulo Fixcity (4)
 7. ✅ **API.md** - REST API completa (15+ endpoints, auth, examples)
@@ -100,7 +100,6 @@ di eccellenza 2025 per la gestione delle segnalazioni urbane in Italia.
 ## 🏗️ STRUTTURA DOCUMENTAZIONE FINALE
 
 ```
-base_fixcity_fila5_mono/
 base_ptv_fila5_mono/
 │
 ├── 📊 ROOT LEVEL (11 docs strategici)
@@ -110,7 +109,7 @@ base_ptv_fila5_mono/
 │   ├── EXCELLENCE_2025.md              ✅ Visione eccellenza
 │   ├── PROJECT_COMPLETION_STATUS.md    ✅ Tracking progetto
 │   ├── FINAL_SUMMARY.md                ✅ Questo file
-│   └── WORK_COMPLETED_2025-10-01.md    ✅ Riepilogo tecnico
+│   └── work-completed.md    ✅ Riepilogo tecnico
 │
 ├── 📁 project_docs/
 │   ├── DOCUMENTATION_STATUS.md         ✅ Stato docs
@@ -273,13 +272,11 @@ base_ptv_fila5_mono/
 ### Per Sviluppatori
 - **Quick Start**: [QUICK_START.md](./QUICK_START.md)
 - **Documentation Index**: [DOCUMENTATION_INDEX.md](./DOCUMENTATION_INDEX.md)
-- **Slack**: #fixcity-dev
 - **Slack**: #ptv-dev
 
 ### Per Utenti
 - **User Guide**: [USER_GUIDE.md](./laravel/Modules/Fixcity/docs/USER_GUIDE.md)
 - **Admin Guide**: [ADMIN_GUIDE.md](./laravel/Modules/Fixcity/docs/ADMIN_GUIDE.md)
-- **Support**: support@fixcity.it
 - **Support**: support@ptv.it
 
 ### Per API Developers
@@ -382,9 +379,6 @@ php artisan test --coverage
 ## 📞 CONTATTI
 
 **Team FixCity**
-- Email: dev@fixcity.it
-- Slack: #fixcity-dev
-- GitHub: github.com/laraxot/fixcity
 - Email: dev@ptv.it
 - Slack: #ptv-dev
 - GitHub: github.com/laraxot/ptv

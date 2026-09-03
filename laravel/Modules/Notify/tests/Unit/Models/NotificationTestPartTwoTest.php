@@ -30,11 +30,11 @@ use Modules\Notify\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
+use function Pest\Laravel\withoutExceptionHandling;
 use function Safe\json_encode;
 
 beforeEach(function (): void {
-    /** @var TestCase $this */
-    $this->disableExceptionHandling();
+    withoutExceptionHandling();
 });
 
 describe('Notification PartTwo', function (): void {

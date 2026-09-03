@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Widgets\Auth;
 
+use Filament\Schemas\Components\Component;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
@@ -20,6 +21,16 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 class SocialLoginWidget extends XotBaseSchemaWidget
 {
     protected string $view = 'user::filament.widgets.auth.social-login';
+
+    /**
+     * Widget senza form: schema vuoto.
+     *
+     * @return array<string, Component>
+     */
+    public function getFormSchema(): array
+    {
+        return [];
+    }
 
     /**
      * @return list<array{driver: string, label: string, icon: string, color: string}>

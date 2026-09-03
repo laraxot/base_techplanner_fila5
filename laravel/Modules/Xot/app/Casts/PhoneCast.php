@@ -15,7 +15,6 @@ class PhoneCast implements CastsAttributes
     /**
      * Cast the given value.
      *
-     * @param  string  $_key  The attribute key
      * @param  mixed  $_model  The Eloquent model instance
      * @param  string  $_key  The attribute key
      * @param  mixed  $value  The raw value from database
@@ -33,7 +32,6 @@ class PhoneCast implements CastsAttributes
     /**
      * Prepare the given value for storage.
      *
-     * @param  string  $_key  The attribute key
      * @param  mixed  $_model  The Eloquent model instance
      * @param  string  $_key  The attribute key
      * @param  mixed  $value  The value to be stored

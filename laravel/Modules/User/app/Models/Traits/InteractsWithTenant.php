@@ -68,12 +68,12 @@ trait InteractsWithTenant
      */
     protected static function bootInteractsWithTenant(): void
     {
-        static::addGlobalScope(new TenantScope());
+        static::addGlobalScope(new TenantScope);
 
-        static::creating(static function (Model $model): void {
+        static::creating(static function (mixed $model): void {
             // PHPStan Level 10: Verifica se il modello ha tenant_id
             // Uso isFillable() invece di property_exists() per Eloquent magic properties
-            if ($model->isFillable('tenant_id')) {
+            if ($model !== null && $model instanceof Model && $model->isFillable('tenant_id')) {
                 $tenant = Filament::getTenant();
                 if ($tenant !== null) {
                     // Usa setAttribute() invece di assegnazione diretta per PHPStan
@@ -115,7 +115,7 @@ trait InteractsWithTenant
         if ($tenant !== null) {
             $tenantId = $tenant->getKey();
             if ($tenantId !== null) {
-                static::addGlobalScope(new TenantScope());
+                static::addGlobalScope(new TenantScope);
             }
         }
     }

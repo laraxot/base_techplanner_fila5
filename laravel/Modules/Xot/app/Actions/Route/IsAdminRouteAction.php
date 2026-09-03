@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Route;
 
-use Modules\Xot\Datas\RouteParamsData;
 use Spatie\QueueableAction\QueueableAction;
 
 class IsAdminRouteAction

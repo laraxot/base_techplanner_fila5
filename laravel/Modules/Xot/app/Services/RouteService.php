@@ -78,7 +78,7 @@ class RouteService
         $route_params = [];
         if ($route_current instanceof \Illuminate\Routing\Route) {
             $route_params = $route_current->parameters();
-            $routename = $route_current->getName();
+            // $routename non utilizzata dopo l'assegnazione
         }
 
         /*
@@ -345,11 +345,10 @@ class RouteService
 
         return collect($tmp_arr)
             ->filter(static fn (string $item): bool => ! \in_array($item, ['Module', 'Item'], false))
-            ->map(static function (string $item) use ($params): string {
+            ->map(static function (string $item) use ($params): mixed {
                 $item = Str::snake($item);
-                $value = $params[$item] ?? $item;
 
-                return is_scalar($value) ? (string) $value : $item;
+                return $params[$item] ?? $item;
             })
             ->implode('.');
     }

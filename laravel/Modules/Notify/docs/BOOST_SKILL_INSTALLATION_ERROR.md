@@ -13,7 +13,6 @@ php laravel/artisan boost:add-skill jeffallan/claude-skills --skill laravel-spec
 The command fails with:
 ```
 PHP Fatal error: Uncaught Error: Class "Illuminate\Foundation\Application" not found
-in /var/www/_bases/base_fixcity_fila5/laravel/app/Application.php:9
 in /var/www/_bases/base_ptv_fila5/laravel/app/Application.php:9
 ```
 
@@ -66,9 +65,6 @@ Retry the `boost:add-skill` command.
 
 ## Files Affected
 
-1. `/var/www/_bases/base_fixcity_fila5/laravel/composer.json` - **NEEDS FIX**
-2. `/var/www/_bases/base_fixcity_fila5/laravel/app/Application.php` - depends on Illuminate
-3. `/var/www/_bases/base_fixcity_fila5/laravel/bootstrap/app.php` - bootstrap process
 1. `/var/www/_bases/base_ptv_fila5/laravel/composer.json` - **NEEDS FIX**
 2. `/var/www/_bases/base_ptv_fila5/laravel/app/Application.php` - depends on Illuminate
 3. `/var/www/_bases/base_ptv_fila5/laravel/bootstrap/app.php` - bootstrap process

@@ -15,7 +15,7 @@ it('SendAgiletelecomSMSAction can be instantiated', function () {
 });
 
 it('SendAgiletelecomSMSAction has execute method with correct signature', function () {
-    $action = new SendAgiletelecomSMSAction();
+    $action = new SendAgiletelecomSMSAction;
     $reflection = new ReflectionClass($action);
     $method = $reflection->getMethod('execute');
 
@@ -24,7 +24,7 @@ it('SendAgiletelecomSMSAction has execute method with correct signature', functi
 });
 
 it('SendAgiletelecomSMSAction execute accepts SmsData parameter', function () {
-    $action = new SendAgiletelecomSMSAction();
+    $action = new SendAgiletelecomSMSAction;
     $reflection = new ReflectionClass($action);
     $method = $reflection->getMethod('execute');
     $params = $method->getParameters();
@@ -34,7 +34,7 @@ it('SendAgiletelecomSMSAction execute accepts SmsData parameter', function () {
 });
 
 it('SendAgiletelecomSMSAction execute returns array', function () {
-    $action = new SendAgiletelecomSMSAction();
+    $action = new SendAgiletelecomSMSAction;
     $reflection = new ReflectionClass($action);
     $method = $reflection->getMethod('execute');
     $returnType = $method->getReturnType();
@@ -43,7 +43,7 @@ it('SendAgiletelecomSMSAction execute returns array', function () {
 });
 
 it('SendAgiletelecomSMSAction uses strict types', function () {
-    $action = new SendAgiletelecomSMSAction();
+    $action = new SendAgiletelecomSMSAction;
     $reflection = new ReflectionClass($action);
     $filename = $reflection->getFileName();
 
@@ -54,14 +54,14 @@ it('SendAgiletelecomSMSAction uses strict types', function () {
 });
 
 it('SendAgiletelecomSMSAction has correct namespace', function () {
-    $action = new SendAgiletelecomSMSAction();
+    $action = new SendAgiletelecomSMSAction;
     $reflection = new ReflectionClass($action);
 
     expect($reflection->getNamespaceName())->toBe('Modules\\Notify\\Actions\\SMS');
 });
 
 it('SendAgiletelecomSMSAction has required imports', function () {
-    $action = new SendAgiletelecomSMSAction();
+    $action = new SendAgiletelecomSMSAction;
     $reflection = new ReflectionClass($action);
     $filename = $reflection->getFileName();
     /** @var string $filename */
@@ -72,7 +72,7 @@ it('SendAgiletelecomSMSAction has required imports', function () {
 });
 
 it('SendAgiletelecomSMSAction does not use QueueableAction trait', function () {
-    $action = new SendAgiletelecomSMSAction();
+    $action = new SendAgiletelecomSMSAction;
     $traits = \Safe\class_uses($action);
 
     expect($traits)->not->toContain('Spatie\\QueueableAction\\QueueableAction');

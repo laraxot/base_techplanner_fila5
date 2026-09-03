@@ -4,12 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Seo\Tests\Unit\Facades;
 
-use Modules\Seo\Adapters\MetatagManager;
 use Modules\Seo\Facades\Metatag;
-use Modules\Seo\Tests\TestCase;
+use Modules\Seo\Adapters\MetatagManager;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
+uses(\Modules\Seo\Tests\TestCase::class);
 
 it('resolves metatag service through facade accessor', function (): void {
     $service = app(MetatagManager::class);

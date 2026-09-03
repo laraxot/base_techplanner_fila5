@@ -46,7 +46,7 @@ describe('Theme Model', function (): void {
 
     test('it has fillable attributes', function (): void {
         /** @phpstan-ignore-next-line class.notFound (Theme model absent from artifact set) */
-        $theme = new Theme();
+        $theme = new Theme;
         $expected = ['name', 'description', 'is_active', 'config', 'parent_id', 'source_path', 'compiled_path', 'needs_compilation'];
 
         foreach ($expected as $field) {

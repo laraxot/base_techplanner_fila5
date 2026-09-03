@@ -50,7 +50,7 @@ describe('Notify zero-coverage actions boost', function (): void {
     });
 
     test('notification manager action throws when template missing', function (): void {
-        $recipient = new class() extends Model
+        $recipient = new class extends Model
         {
             use Notifiable;
 
@@ -72,7 +72,7 @@ describe('Notify zero-coverage actions boost', function (): void {
             'body' => 'World',
             'data' => ['k' => 'v']]);
         $notification = new FirebaseAndroidNotification($data);
-        $notifiable = new class()
+        $notifiable = new class
         {
             public function routeNotificationForFcm(): string
             {

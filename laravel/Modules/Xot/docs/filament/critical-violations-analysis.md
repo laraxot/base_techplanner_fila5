@@ -22,15 +22,6 @@ class NotificationTemplateResource extends XotBaseResource
     // ❌ VIOLAZIONE: navigationSort dichiarato
     protected static ?int $navigationSort = 48;
 
-
-    
-    // ❌ VIOLAZIONE: navigationGroup dichiarato  
-    protected static ?string $navigationGroup = 'Sistema';
-    
-    // ❌ VIOLAZIONE: navigationSort dichiarato
-    protected static ?int $navigationSort = 48;
-    
-
     // ❌ VIOLAZIONE: Override metodi gestiti da NavigationLabelTrait
     public static function getNavigationLabel(): string
     public static function getNavigationGroup(): string
@@ -53,15 +44,6 @@ class NotificationLogResource extends XotBaseResource
 
     // ❌ VIOLAZIONE: navigationSort dichiarato
     protected static ?int $navigationSort = 100;
-
-
-    
-    // ❌ VIOLAZIONE: navigationGroup dichiarato
-    protected static ?string $navigationGroup = 'Notifiche';
-    
-    // ❌ VIOLAZIONE: navigationSort dichiarato
-    protected static ?int $navigationSort = 100;
-    
 
     // ❌ VIOLAZIONE: Override metodi gestiti da NavigationLabelTrait
     public static function getNavigationLabel(): string
@@ -144,7 +126,6 @@ class NotificationLogResource extends XotBaseResource
 - [Notify Module README](../../../notify/docs/readme.md)
 - [User Module README](../../../user/docs/readme.md)
 - [<nome progetto> Module README](../../../<nome progetto>/docs/readme.md)
-- [SaluteOra Module README](../../../SaluteOra/docs/README.md)
 
 ### Standard di Riferimento
 - [NavigationLabelTrait](../traits/navigation-label-trait.md)
@@ -163,9 +144,9 @@ class NotificationLogResource extends XotBaseResource
 
 ### Mantra per il Futuro
 - **Prima di estendere**: Leggi la documentazione della classe base
-- **Prima di dichiarare**: Verifica se è già gestito automaticamente  
+- **Prima di dichiarare**: Verifica se è già gestito automaticamente
 - **Prima di sovrascrivere**: Comprendi il perché dell'implementazione esistente
 
 ---
 
-**Questo documento serve come promemoria permanente dell'importanza di seguire l'architettura stabilita e consultare sempre la documentazione prima di implementare soluzioni.** 
+**Questo documento serve come promemoria permanente dell'importanza di seguire l'architettura stabilita e consultare sempre la documentazione prima di implementare soluzioni.**

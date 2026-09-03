@@ -1096,7 +1096,6 @@ The frontend follows Italian Public Administration design guidelines:
 <x-ui.marketing.breadcrumbs :crumbs="[...]" />
 
 // Ticket List (AGID-compliant)
-<x-fixcity::blocks.ticket_list.agid />
 <x-ptv::blocks.ticket_list.agid />
 
 // Forms (Filament + Custom CSS)
@@ -1621,7 +1620,6 @@ Tasks:
 
 ### Recommended New Documentation
 ```
-1. ARCHITECTURE.md
 1. architecture.md
    - System architecture diagrams
    - Module dependency graph

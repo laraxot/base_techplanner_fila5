@@ -263,10 +263,3 @@ $variabile = $oggetto->proprietaNonStandard;
 ---
 
 *Guida consolidata che elimina duplicazioni e semplifica la manutenzione della documentazione PHPStan.*
-
-- [docs/PHPSTAN_LEVEL10_FIXES.md](../../../docs/phpstan_level10_fixes.md)
-
----
-
-*Guida consolidata che elimina duplicazioni e semplifica la manutenzione della documentazione PHPStan.*
-

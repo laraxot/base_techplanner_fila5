@@ -18,7 +18,6 @@ use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
@@ -52,9 +51,8 @@ class DomainsRelationManager extends XotBaseRelationManager
         return [
             'domain' => TextColumn::make('domain'),
             'full-domain' => TextColumn::make('full-domain')->getStateUsing(
-                static fn (Model|array|null $record): string => is_object($record) && isset($record->domain) && is_string($record->domain)
-                    ? (string) Str::of($record->domain)->append('.')->append(request()->getHost())
-                    : '',
+                static fn ($record) => is_object($record) && isset($record->domain) && is_string($record->domain) ?
+                    Str::of($record->domain)->append('.')->append(request()->getHost()) : '',
             ),
         ];
     }

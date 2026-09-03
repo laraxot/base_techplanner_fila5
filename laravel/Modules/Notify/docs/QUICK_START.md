@@ -29,8 +29,6 @@
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/laraxot/fixcity.git
-cd fixcity/laravel
 git clone https://github.com/laraxot/ptv.git
 cd ptv/laravel
 ```
@@ -57,7 +55,6 @@ php artisan key:generate
 DB_CONNECTION=pgsql
 DB_HOST=127.0.0.1
 DB_PORT=5432
-DB_DATABASE=fixcity
 DB_DATABASE=ptv
 DB_USERNAME=your_user
 DB_PASSWORD=your_password
@@ -229,7 +226,6 @@ return [
 ## 📁 STRUTTURA PROGETTO
 
 ```
-base_fixcity_fila5_mono/
 base_ptv_fila5_mono/
 ├── laravel/                    # Applicazione Laravel
 │   ├── Modules/               # Moduli Nwidart

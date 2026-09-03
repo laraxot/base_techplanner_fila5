@@ -127,7 +127,7 @@ cd /var/www/_bases/base_fixcity_fila5_mono/laravel
 ## 📂 DOCUMENTI IMPORTANTI DA LEGGERE
 
 ### Prima di Iniziare (5 minuti)
-1. **[Session Summary](./phpstan/session-summary-2025-10-01.md)** - Recap ieri
+1. **[Session Summary](./phpstan/session-summary.md)** - Recap ieri
 
 ### Durante il Lavoro (reference)
 2. **[Xot Roadmap](../Modules/Xot/docs/roadmap-and-issues.md)** - Errori dettagliati Xot
@@ -135,7 +135,7 @@ cd /var/www/_bases/base_fixcity_fila5_mono/laravel
 
 ### Fine Giornata (update)
 4. **[Master Roadmap](./roadmap-master-index.md)** - Aggiornare status
-5. **[Analisi Completa](./ANALISI-COMPLETA-2025-10-01.md)** - Executive summary
+5. **[Analisi Completa](./analisi-completa-progetto-fixcity.md)** - Executive summary
 
 ---
 

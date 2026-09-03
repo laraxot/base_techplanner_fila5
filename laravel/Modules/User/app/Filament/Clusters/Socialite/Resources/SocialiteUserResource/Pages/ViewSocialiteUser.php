@@ -32,7 +32,7 @@ class ViewSocialiteUser extends XotBaseViewRecord
                         ->schema([
                             'user_name' => TextEntry::make('user.name')
                                 ->url(function (mixed $state, ?SocialiteUser $record): ?string {
-                                    if ($record === null) {
+                                    if (null === $record) {
                                         return null;
                                     }
 
@@ -44,7 +44,7 @@ class ViewSocialiteUser extends XotBaseViewRecord
                                     return null;
                                 }),
                             'provider' => TextEntry::make('provider')
-                                ->formatStateUsing(fn (mixed $state): string => is_string($state) ? Str::title($state) : ''),
+                                ->formatStateUsing(fn ($state): string => is_string($state) ? Str::title($state) : ''),
                         ]),
 
                     'provider_grid' => Grid::make(2)
@@ -64,7 +64,7 @@ class ViewSocialiteUser extends XotBaseViewRecord
                                 ->copyable()
                                 ->copyMessage('Email copied'),
                             'avatar' => TextEntry::make('avatar')
-                                ->url(fn (mixed $state): ?string => is_string($state) && $state !== '' ? $state : null)
+                                ->url(fn (mixed $state): ?string => is_string($state) && '' !== $state ? $state : null)
                                 ->openUrlInNewTab(),
                         ]),
                 ])->columns(1),

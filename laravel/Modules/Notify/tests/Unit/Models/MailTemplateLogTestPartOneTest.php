@@ -23,16 +23,15 @@ use Modules\Notify\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
+use function Pest\Laravel\withoutExceptionHandling;
 use function Safe\json_encode;
 
 beforeEach(function (): void {
-    /** @var TestCase $this */
-    $this->disableExceptionHandling();
+    withoutExceptionHandling();
 });
 
 describe('Mail Template Log PartOne', function (): void {
     test('_can_create_mail_template_log', function (): void {
-        /** @var TestCase $this */
         $log = MailTemplateLog::create([
             'template_id' => 123,
             'mailable_type' => 'App\Mail\WelcomeMail',
@@ -61,7 +60,7 @@ describe('Mail Template Log PartOne', function (): void {
     });
 
     test('_has_correct_fillable_fields', function (): void {
-        $log = new MailTemplateLog();
+        $log = new MailTemplateLog;
 
         $expectedFillable = [
             'template_id',
@@ -81,7 +80,8 @@ describe('Mail Template Log PartOne', function (): void {
     });
 
     test('_has_correct_casts', function (): void {
-        $log = new MailTemplateLog();
+        $log = new MailTemplateLog;
+
         $expectedCasts = [
             'id' => 'string',
             'uuid' => 'string',

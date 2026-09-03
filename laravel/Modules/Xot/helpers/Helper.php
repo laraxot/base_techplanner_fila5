@@ -14,7 +14,6 @@ use Illuminate\Testing\TestResponse;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
 use Modules\Xot\Actions\File\FixPathAction;
-use Modules\Xot\Actions\Route\GetRouteParametersAction;
 use Webmozart\Assert\Assert;
 
 use function Safe\define;
@@ -34,28 +33,21 @@ if (! function_exists('dddx')) {
     function dddx(mixed $params): void
     {
         $tmp = debug_backtrace();
-        $startValue = defined('LARAVEL_START') ? LARAVEL_START : null;
-        $start = is_numeric($startValue) ? (float) $startValue : microtime(true);
+        $start = defined('LARAVEL_START') ? (float) LARAVEL_START : microtime(true);
         if (! defined('LARAVEL_START')) {
             define('LARAVEL_START', $start);
         }
-        $file = app(FixPathAction::class)->execute($tmp[0]['file'] ?? 'file-unknown');
-
         $data = [
             '_' => $params,
             'line' => $tmp[0]['line'] ?? 'line-unknows',
-            'file' => $file,
+            'file' => app(FixPathAction::class)->execute($tmp[0]['file'] ?? 'file-unknown'),
             'time' => microtime(true) - $start,
             'memory_taken' => round(memory_get_peak_usage() / (1024 * 1024), 2).' MB',
         ];
 
-        if (File::exists($data['file'])) {
-            $storagePath = app(FixPathAction::class)->execute(storage_path('framework/views'));
-            if (Str::startsWith($data['file'], $storagePath)) {
-                $content = File::get($data['file']);
-                $betweenResult = Str::between($content, '/**PATH ', ' ENDPATH**/');
-                $data['view_file'] = app(FixPathAction::class)->execute($betweenResult);
-            }
+        if (File::exists($data['file']) && Str::startsWith($data['file'], app(FixPathAction::class)->execute(storage_path('framework/views')))) {
+            $content = File::get($data['file']);
+            $data['view_file'] = app(FixPathAction::class)->execute(Str::between($content, '/**PATH ', ' ENDPATH**/'));
         }
 
         dd($data);
@@ -82,14 +74,9 @@ if (! function_exists('inAdmin')) {
             return true;
         }
 
-        /** @var iterable<int|string, string>|null $segments */
         $segments = Request::segments();
 
-        if (! is_array($segments) || count($segments) === 0) {
-            return false;
-        }
-
-        return $segments[0] === 'livewire' && session('in_admin') === true;
+        return (is_countable($segments) ? count($segments) : 0) > 0 && $segments[0] === 'livewire' && session('in_admin') === true;
     }
 }
 
@@ -112,12 +99,10 @@ if (! function_exists('params2ContainerItem')) {
         $item = [];
         foreach ($params as $k => $v) {
             $pattern = '/(container|item)(\d+)/';
-            if (preg_match($pattern, $k, $matches) !== 1) {
-                continue;
-            }
-            $sk = $matches[1] ?? '';
-            $sv = $matches[2] ?? '';
-            if ($sk !== '' && $sv !== '') {
+            preg_match($pattern, $k, $matches);
+            if (count($matches) >= 3) {
+                $sk = $matches[1];
+                $sv = $matches[2];
                 ${$sk}[$sv] = $v;
             }
         }
@@ -146,8 +131,8 @@ if (! function_exists('authId')) {
         try {
             $id = Filament::auth()->id() ?? auth()->guard()->id();
 
-            return $id === null ? null : strval($id);
-        } catch (Throwable) {
+            return $id === null ? null : (string) $id;
+        } catch (Throwable $e) {
             return null;
         }
     }
@@ -176,14 +161,6 @@ if (! function_exists('isJson')) {
     function isJson(string $string): bool
     {
         return json_validate($string);
-    }
-}
-
-if (! function_exists('getRouteParameters')) {
-    /** @return array<string, mixed> */
-    function getRouteParameters(): array
-    {
-        return app(GetRouteParametersAction::class)->execute();
     }
 }
 
@@ -290,19 +267,14 @@ if (! function_exists('followingRedirects')) {
 }
 
 if (! function_exists('xotSeedModelOnce')) {
-    require_once dirname(__DIR__).'/app/Helpers/xot.seed.helper.php';
-}
-
-if (! function_exists('xotSeedModelOnce')) {
     /**
-     * Fallback se il file app/Helpers non ha registrato la function.
      * Idempotent entity seeder — PHPStan-safe factory chain via GetFactoryAction.
      *
      * @param  class-string<Model>  $modelClass
      */
     function xotSeedModelOnce(string $modelClass): void
     {
-        (new GetFactoryAction())
+        (new GetFactoryAction)
             ->execute($modelClass)
             ->createOne();
     }

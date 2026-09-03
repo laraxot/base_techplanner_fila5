@@ -6,18 +6,11 @@ namespace Modules\Xot\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
-use Modules\TechPlanner\Models\Profile;
+use Modules\Xot\Contracts\ProfileContract;
+use Modules\Xot\Database\Factories\SessionFactory;
 
 /**
  * Modules\Xot\Models\Session.
- *
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
- *
- * @method static \Modules\Xot\Database\Factories\SessionFactory factory($count = null, $state = [])
- * @method static Builder<static>|Session newModelQuery()
- * @method static Builder<static>|Session newQuery()
- * @method static Builder<static>|Session query()
  *
  * @property string $id
  * @property string|null $user_id
@@ -31,7 +24,13 @@ use Modules\TechPlanner\Models\Profile;
  * @property string|null $created_by
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
  *
+ * @method static SessionFactory factory($count = null, $state = [])
+ * @method static Builder<static>|Session newModelQuery()
+ * @method static Builder<static>|Session newQuery()
+ * @method static Builder<static>|Session query()
  * @method static Builder<static>|Session whereCreatedAt($value)
  * @method static Builder<static>|Session whereCreatedBy($value)
  * @method static Builder<static>|Session whereDeletedAt($value)
@@ -44,6 +43,8 @@ use Modules\TechPlanner\Models\Profile;
  * @method static Builder<static>|Session whereUpdatedBy($value)
  * @method static Builder<static>|Session whereUserAgent($value)
  * @method static Builder<static>|Session whereUserId($value)
+ *
+ * @property ProfileContract|null $deleter
  *
  * @mixin \Eloquent
  */

@@ -1,18 +1,3 @@
----
-title: 'custom_casts'
-module: Xot
-type: reference
-slug: custom-casts
-description: '<!-- Contenuto migrato da _docs/custom_casts.txt -->'
-tags: [migrato-da-txt, xot]
-converted_from: custom_casts.txt
-created: 2026-08-24
-updated: 2026-08-24
----
-
-# custom_casts
-
-<!-- Contenuto migrato da _docs/custom_casts.txt -->
 
 php artisan make:cast Address
 

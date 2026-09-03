@@ -32,7 +32,7 @@
 
 ## 🪮 **Ponytail audit**
 - 📋 **[Over-engineering audit](./ponytail-audit-over-engineering.md)** - SMS multi-driver, policy stub, remediation `.bak`.
-- 🧾 **[SMS Actions consolidation decision](./wiki/decisions/sms-actions-consolidation-2026-06-30.md)** - Cosa è stato consolidato in `.bak`, cosa resta attivo (netfun/smsfactor raggiungibili da Filament `SendSmsPage`) e perché.
+- 🧾 **[SMS Actions consolidation decision](./wiki/decisions/sms-actions-consolidation.md)** - Cosa è stato consolidato in `.bak`, cosa resta attivo (netfun/smsfactor raggiungibili da Filament `SendSmsPage`) e perché.
 
 ## 🧹 **Manutenzione**
 - 🗑️ **[Cleanup Plan](./translation-cleanup-plan.md)** - Rimozione dei 500+ file obsoleti accumulati.

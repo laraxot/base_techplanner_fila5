@@ -49,7 +49,8 @@ class BuildMailMessageAction
         $viewParams['body_html'] = $bodyHtml;
         $viewParams['subject'] = $subject;
 
-        $email = (new MailMessage())->from($fromAddress, $fromName)
+        $email = (new MailMessage)
+            ->from($fromAddress, $fromName)
             ->subject($subject)
             ->view($view_html, $viewParams);
 

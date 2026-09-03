@@ -89,32 +89,47 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 class UserResource extends XotBaseResource
 {
     protected static ?string $model = User::class;
-    
-    // Il metodo table() e form() NON devono essere sovrascritti
-    // se non per aggiungere logica specifica, ma la base
-    // è già fornita da XotBaseResource.
+    // table() and form() inherited from base
 }
 ```
 
-### 🔧 **Traits Ecosystem**
-Xot fornisce un ricco ecosistema di Trait per aggiungere funzionalità comuni ai modelli e ad altre classi.
-- **HasXotTable**: Aggiunge funzionalità avanzate alle tabelle Filament.
-- **HasUuid**: Gestisce automaticamente UUID come chiavi primarie.
-- **HasMedia**: Integra Spatie Media Library con convenzioni standard.
-- **HasStates**: Fornisce una gestione degli stati per i modelli.
-- **TransTrait**: Semplifica le traduzioni dinamiche.
+### Traits Ecosystem
 
-### 📦 **Service Provider Pattern**
+Xot fornisce un ricco ecosistema di Trait per aggiungere funzionalità comuni ai modelli e ad altre classi:
+
+| Trait | Utilizzo | Scopo |
+|-------|----------|-------|
+| `HasXotTable` | Modelli | Aggiunge funzionalità avanzate alle tabelle Filament |
+| `HasUuid` | Modelli | Gestisce automaticamente UUID come chiavi primarie |
+| `HasMedia` | Modelli | Integra Spatie Media Library con convenzioni standard |
+| `HasStates` | Modelli | Fornisce gestione degli stati per i modelli |
+| `TransTrait` | Modelli | Semplifica le traduzioni dinamiche |
+| `InteractsWithForms` | Widget | Gestione form nei widget Filament |
+
+### Service Provider Pattern
+
 I Service Provider di ogni modulo estendono `XotBaseServiceProvider`, che automatizza la registrazione di:
-- Migrations, Views, Translations, e Config
+
+- Migrations, Views, Translations, Config
 - Routes (web.php, api.php)
-- Filament Resources, Pages, e Widgets
-- Comandi Artisan e Policies
+- Filament Resources, Pages, Widgets
+- Artisan Commands e Policies
 
-## 🎯 **Funzionalità Principali**
+```php
+use Modules\Xot\Providers\XotBaseServiceProvider;
 
-### ⚡ **Actions Framework**
+class MyModuleServiceProvider extends XotBaseServiceProvider
+{
+    // Automatically registers migrations, views, routes, etc.
+}
+```
+
+## 🎯 Core Features
+
+### Actions Framework
+
 Un pattern standardizzato per incapsulare la business logic in classi riutilizzabili e testabili.
+
 ```php
 use Modules\Xot\Actions\XotBaseAction;
 
@@ -123,15 +138,16 @@ class CreateUserAction extends XotBaseAction
     public function execute(array $data): User
     {
         $user = User::create($data);
-        $this->logActivity('user.created', $user); // Logging automatico
-        event(new UserCreated($user)); // Dispatching eventi
+        event(new UserCreated($user));
         return $user;
     }
 }
 ```
 
-### 🏷️ **Enums System**
-Le Enum di Xot implementano `XotBaseEnum`, che fornisce traduzioni automatiche e altri helper.
+### Enums System
+
+Le Enum di Xot implementano `XotBaseEnum`, che fornisce traduzioni automatiche:
+
 ```php
 use Modules\Xot\Enums\XotBaseEnum;
 
@@ -142,125 +158,137 @@ enum UserStatus: string implements XotBaseEnum
 
     public function getLabel(): string
     {
-        // Traduzione gestita centralmente
         return __('xot::enums.user_status.'.$this->value);
     }
 }
 ```
 
-## 🛠️ **Sviluppo e Qualità**
+### Filament Integration
+
+Xot fornisce wrapper base per tutti i componenti Filament:
+- `XotBaseResource`
+- `XotBaseWidget`
+- `XotBaseWizardWidget`
+- `XotBasePage`
+- `XotBaseAction`
+
+**Rule**: Never extend Filament classes directly. Always use Xot wrappers.
+
+## 🛠️ Development & Quality
+
+### PHPStan Level 10 Compliance
+
+Xot ha raggiunto la piena conformità PHPStan Level 10 senza compromessi:
+
+- ✅ Zero baseline entries
+- ✅ Nessuna modifica a phpstan.neon
+- ✅ Solo correzioni reali del codice
+- ✅ Type safety al 100%
+
+**Analizza con memoria illimitata**:
+```bash
+php -d memory_limit=-1 ./vendor/bin/phpstan analyse Modules/ --level=max
+```
+
+### Quality Standards
+
+| Tool | Standard | Config |
+|------|----------|--------|
+| **PHPStan** | Level 10 | `laravel/phpstan.neon` |
+| **Pest** | Tests in `tests/` | `phpunit.xml` |
+| **Pint** | PSR-12 + Laraxot | `.pint.json` |
+| **Coverage** | Minimum 80% | Via Pest |
 
 ### Convenzioni
-- **Namespace**: I namespace dei moduli **NON** devono includere il segmento `app`.
-- **Tipizzazione Forte**: Utilizzo di `declare(strict_types=1);` e type hints rigorosi in tutto il codice.
-- **File di Traduzione**: Seguire la struttura espansa `['label' => '...', 'tooltip' => '...']`.
 
-### Strumenti di Qualità
-- **PHPStan**: Livello 10. La configurazione è in `phpstan.neon`.
-- **Pest**: Utilizzato per i test della business logic nei moduli core.
-- **Laravel Pint**: Formattazione del codice secondo lo standard PSR-12 e le convenzioni Laraxot.
+- **Namespace**: `Modules\{ModuleName}` (NO `app` segment)
+- **Tipizzazione Forte**: `declare(strict_types=1);` in all files
+- **Traduzioni**: Structured format `['label' => '...', 'tooltip' => '...']`
+- **Migrations**: Anonymous classes only
 
-Esegui i controlli di qualità dalla root del progetto Laravel:
+### Run Quality Gate
+
 ```bash
-./vendor/bin/phpstan analyse Modules/Xot --level=max
-./vendor/bin/pest Modules/Xot/tests
+# From project root (laravel/)
+
+# PHPStan
+php -d memory_limit=-1 ./vendor/bin/phpstan analyse --level=max
+
+# Pest
+./vendor/bin/pest
+
+# Pint
 ./vendor/bin/pint
 ```
 
-### 🏆 PHPStan Level 10 Compliance (Dicembre 2025)
+## 📚 Architecture Patterns
 
-**Status**: ✅ **0 Errori** (16 → 0)
-**Approccio**: Fix, Don't Ignore
-**Baseline**: Nessuno
+### Module Dependency Graph
 
-Il modulo Xot ha raggiunto la piena conformità PHPStan Level 10 senza compromessi:
-- Zero baseline entries
-- Nessuna modifica a phpstan.neon
-- Solo correzioni reali del codice
-- Type safety al 100%
+```
+Xot (foundation)
+  ├── User (authentication, authorization)
+  ├── Lang (translations)
+  ├── Cms (content management)
+  ├── Tenant (multi-tenancy)
+  ├── Notify (notifications)
+  ├── Media (file management)
+  ├── Geo (geolocation)
+  ├── Activity (activity logging)
+  ├── Job (job management)
+  └── [Other modules]
+```
 
-**Documentazione dettagliata**:
-- [PHPStan Patterns Dec 2025](./phpstan-patterns-dec-2025.md)
-- [PHPStan Level 10 Success](../../../docs/phpstan-level-10-success.md)
+All modules depend on **Xot**. Never have circular dependencies.
 
-## 🗺️ **Roadmap**
-1.  **Consolidamento Documentazione**: Unificare e semplificare la documentazione di tutti i moduli (obiettivo: 500 → 120 file).
-2.  **Automazione Script di Merge**: Creare script per la gestione automatica dei conflitti comuni e la validazione pre-commit.
-3.  **Aumento Test Coverage**: Portare la copertura dei test per i moduli core sopra il 90%.
-4.  **Dashboard Health Check**: Introdurre una dashboard per monitorare lo stato di salute e la compliance di tutti i moduli.
+### Key Design Decisions
 
-## 🔗 **Link Utili**
+1. **Service Provider Automation**: Xot's `XotBaseServiceProvider` auto-registers all module components
+2. **Trait-Based Composition**: Prefer traits over inheritance for cross-cutting concerns
+3. **Enum Internationalization**: Enums handle their own translations
+4. **Action Classes**: Business logic encapsulated in reusable action classes
+5. **No Log Statements**: Let Laravel's exception handler manage logging
+
+## 🔗 Related Documentation
+
+- [Module Documentation Pattern](../../../../docs/wiki/rules/module-documentation-pattern.md)
+- [Architecture Rules](../../../docs/wiki/rules/)
+- [PHPStan Configuration](../../../phpstan.neon)
+- [Testing Guidelines](../../../docs/wiki/standards/)
+
+### Moduli Dipendenti
+
+- [User Module](../../User/docs/README.md) - Authentication & Authorization
+- [Cms Module](../../Cms/docs/README.md) - Content Management
+- [Tenant Module](../../Tenant/docs/README.md) - Multi-tenancy
+- [Lang Module](../../Lang/docs/README.md) - Translations
+- [Notify Module](../../Notify/docs/README.md) - Notifications
+
+## 🗺️ Roadmap
+
+1. **✅ Consolidamento Documentazione**: Unificare e semplificare la documentazione di tutti i moduli
+2. **📋 Automazione Script di Merge**: Creare script per la gestione automatica dei conflitti comuni
+3. **📈 Aumento Test Coverage**: Portare la copertura dei test per i moduli core sopra il 90%
+4. **📊 Dashboard Health Check**: Introdurre una dashboard per monitorare lo stato di salute di tutti i moduli
+
+## 🔗 Useful Links
+
 - [CHANGELOG](./CHANGELOG.md)
-- [CHANGELOG](./changelog.md)
-- [Guida alla Risoluzione dei Conflitti Git](../../../bashscripts/docs/git-conflict-resolution-guide.md)
-- [Convenzioni sui Namespace](./namespace_conventions.md)
-- [Linee Guida per il Testing](./testing.md)
-
+- [Git Conflict Resolution Guide](../../../bashscripts/docs/git-conflict-resolution-guide.md)
+- [Namespace Conventions](./namespace-conventions.md)
+- [Testing Best Practices](./testing.md)
 
 ---
 
-## Contenuto assorbito da `readme.md`
+## Standard Rules & Workflow
 
-# Modulo Xot - Documentazione Consolidata
----
-title: "Xot Module** - Il Cuore del Framework Laraxot"
-module: xot
-type: integration
-tags: [integrations, modules, xot]
-created: 2026-08-24
-updated: 2026-08-24
----
-
-# 🏗️ **Xot Module** - Il Cuore del Framework Laraxot
-
-## 🎯 Panoramica
-Modulo core del sistema Laraxot che fornisce classi base e funzionalità comuni per tutti gli altri moduli.
-
-## 📚 Documentazione Principale
-
-### **Core e Architettura**
-- [Architettura e Best Practices](core/architecture.md)
-- [Convenzioni di Naming](core/naming-conventions.md)
-- [Namespace e Autoload](core/namespace-rules.md)
-- [Struttura Moduli](core/module-structure.md)
-
-### **Filament e UI**
-- [Best Practices Filament](filament/best-practices.md)
-- [Risorse e Relation Manager](filament/resources.md)
-- [Azioni e Componenti](filament/actions.md)
-- [Dashboard e Pagine](filament/dashboard.md)
-
-### **Sviluppo e Qualità**
-- [PHPStan e Analisi Statica](development/phpstan-guide.md)
-- [Testing e Best Practices](development/testing.md)
-- [Migrazioni e Database](development/migrations.md)
-- [Service Provider](development/service-providers.md)
-
-### **Integrazione e Utilità**
-- [Traduzioni e Localizzazione](utils/translations.md)
-- [Gestione Errori](utils/error-handling.md)
-- [Eventi e Code](utils/events.md)
-- [Sicurezza](utils/security.md)
-
-### **Template e Esempi**
-- [Template Classi Base](templates/base-classes.md)
-- [Template Service Provider](templates/service-provider.md)
-- [Template Filament](templates/filament.md)
-
-## 🚀 Quick Start
-
-1. **Estendi le classi base appropriate**
-2. **Segui le convenzioni di naming**
-3. **Utilizza i template standardizzati**
-4. **Rispetta le regole PHPStan**
-
-## 🔗 Collegamenti
-
-- [Documentazione Root](../../docs/)
-- [Best Practices Sistema](../../docs/core/best-practices.md)
-- [Convenzioni Sistema](../../docs/core/conventions.md)
+- [[BMAD Method](../../../../docs/wiki/concepts/bmad-method.md)]
+- [[Context Engineering](../../../../docs/wiki/concepts/context-engineering.md)]
+- [[LLM Wiki Governance](../../../../docs/wiki/concepts/llm-wiki-governance.md)]
 
 ---
 
-**Ultimo aggiornamento:** Gennaio 2025  
-**Versione:** 2.0 - Consolidata DRY + KISS
+**Status**: ✅ Production  
+**Last Updated**: 2026-07-14  
+**Maintained by**: Laraxot Core Team  
+**PHPStan Level**: 10 (Compliant)

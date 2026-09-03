@@ -17,7 +17,7 @@ uses(TestCase::class);
 
 function createTestCalendarWidget(): UserCalendarWidget
 {
-    $widget = new class() extends UserCalendarWidget
+    $widget = new class extends UserCalendarWidget
     {
         public function getActionName(string $function): string
         {

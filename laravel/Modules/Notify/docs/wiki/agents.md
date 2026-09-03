@@ -1,16 +1,3 @@
----
-title: "Agent instructions"
-type: reference
-tags: [agents, coding-agent, llm-wiki]
-created: 2026-07-01
-updated: 2026-07-01
-qmd: "istruzioni agenti LLM wiki modulo"
-issues: []
-discussions: []
-related:
-  - ./coding-agent-manifests.md
----
-
 # LLM Wiki Agent Instructions
 
 > **Purpose**: This file transforms generic LLM agents into disciplined LLM Wiki maintainers
@@ -445,7 +432,7 @@ LLM Agent Actions:
 
 ```bash
 # Install
-npm install -g qmd
+npm install -g --prefix "$HOME/.npm-global" @tobilu/qmd
 
 # Serve wiki for web access
 cd docs/wiki
@@ -514,10 +501,10 @@ sources: ["raw/articles/karpathy-llm-wiki.md", "raw/papers/lmsr-original.pdf"]
 confidence: high
 created: 2026-04-15
 updated: 2026-04-15
-tags: [prediction-market, lmsr, market-mechanics, algorithmic-trading]
+tags: [forecast-market, lmsr, market-mechanics, algorithmic-trading]
 related:
-  - concepts/prediction-market-design.md
-  - entities/predict-module.md
+  - concepts/forecast-market-design.md
+  - entities/forecast-module.md
   - sources/karpathy-llm-wiki.md
 ---
 
@@ -529,14 +516,14 @@ Logarithmic Market Scoring Rule (LMSR) is the core pricing mechanism...
 
 [Content...]
 
-## Implementation in Predict Module
+## Implementation in Forecast Module
 
-[Content with links to entities/predict-module.md]
+[Content with links to entities/forecast-module.md]
 
 ## Related Concepts
 
-- [[concepts/prediction-market-design]]
-- [[entities/predict-module]]
+- [[concepts/forecast-market-design]]
+- [[entities/forecast-module]]
 - [[concepts/normalisation-patterns]]
 ```
 

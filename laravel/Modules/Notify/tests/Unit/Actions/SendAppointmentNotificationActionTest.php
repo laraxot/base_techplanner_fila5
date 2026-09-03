@@ -11,7 +11,7 @@ use PHPUnit\Framework\Assert;
 
 function sendAppointmentNotificationTestModel(int $patientId = 1): Model
 {
-    $appointment = new class() extends Model
+    $appointment = new class extends Model
     {
         protected $guarded = [];
 

@@ -46,7 +46,6 @@ final class ModuleRemainingCoverage
     {
         Process::fake();
         Http::fake(['*' => Http::response(['ok' => true], 200)]);
-
     }
 
     public static function run(string $appRoot, string $moduleNamespace): void

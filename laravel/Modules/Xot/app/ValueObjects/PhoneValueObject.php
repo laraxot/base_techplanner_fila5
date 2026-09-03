@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\ValueObjects;
 
-use InvalidArgumentException;
-
 use function Safe\preg_match;
 
 /**

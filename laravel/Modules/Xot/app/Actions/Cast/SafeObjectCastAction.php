@@ -194,9 +194,9 @@ class SafeObjectCastAction
      * @param  string  $property  Il nome della proprietà
      * @param  string  $type  Il tipo di cast desiderato (string, int, float, bool, array)
      * @param  mixed  $default  Valore di default se la proprietà non esiste o è null
-     * @return string|int|float|bool|array<int|string, mixed> Il valore della proprietà convertito nel tipo specificato
+     * @return mixed Il valore della proprietà convertito nel tipo specificato
      */
-    public function getTypedProperty(object $object, string $property, string $type, mixed $default = null): string|int|float|bool|array
+    public function getTypedProperty(object $object, string $property, string $type, mixed $default = null): mixed
     {
         Assert::stringNotEmpty($property);
         Assert::inArray($type, ['string', 'int', 'float', 'bool', 'array']);

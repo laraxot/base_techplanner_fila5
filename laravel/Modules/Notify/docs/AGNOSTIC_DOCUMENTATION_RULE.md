@@ -37,8 +37,6 @@ Replace specific names with placeholders:
 | Instead Of | Use |
 |------------|-----|
 | `FixCity` | `[PROJECT_NAME]` or `[Platform Name]` |
-| `fixcity.local` | `[DOMAIN]` or `your-project.local` |
-| `fixcity::` | `module_name::` or `your_module::` |
 | `ptv.local` | `[DOMAIN]` or `your-project.local` |
 | `ptv::` | `module_name::` or `your_module::` |
 | `laravel/Modules/Fixcity` | `laravel/Modules/[ModuleName]` |
@@ -46,8 +44,6 @@ Replace specific names with placeholders:
 ### 3. File Naming
 
 **❌ WRONG**:
-- `fixcity-pages-content-blocks.md`
-- `fixcity-integration.md`
 - `ptv-pages-content-blocks.md`
 - `ptv-integration.md`
 - `project-name-setup.md`
@@ -62,8 +58,6 @@ Replace specific names with placeholders:
 **❌ WRONG**:
 ```php
 namespace Modules\Fixcity\Models;
-route('fixcity.tickets.index')
-config('fixcity.settings')
 route('ptv.tickets.index')
 config('ptv.settings')
 ```
@@ -81,7 +75,6 @@ When linking to other docs, use **relative paths** without project names:
 
 **❌ WRONG**:
 ```markdown
-- [FixCity Integration](../../fixcity/docs/roadmap.md)
 - [FixCity Integration](../../ptv/docs/roadmap.md)
 - [See Fixcity Module](../../../Modules/Fixcity/docs/)
 ```

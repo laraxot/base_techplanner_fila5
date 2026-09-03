@@ -68,6 +68,7 @@ use ReflectionClass;
 use ReflectionMethod;
 use Safe\DateTime;
 
+use function Pest\Laravel\artisan;
 use function Safe\file_put_contents;
 use function Safe\unlink;
 
@@ -206,7 +207,7 @@ describe('Notify highest-miss coverage', function (): void {
         Queue::fake();
         config(['cache.default' => 'array']);
 
-        $service = new PushNotificationService();
+        $service = new PushNotificationService;
         $notification = ['title' => 'Ciao', 'body' => 'Test'];
         $fcmToken = str_repeat('a', 80).':'.str_repeat('b', 40);
         $apnsToken = str_repeat('ab', 32);
@@ -255,7 +256,7 @@ describe('Notify highest-miss coverage', function (): void {
     });
 
     test('analyze translations artisan command runs against module lang', function (): void {
-        $pending = $this->artisan('notify:analyze-translations');
+        $pending = artisan('notify:analyze-translations');
         if ($pending instanceof PendingCommand) {
             $pending->assertExitCode(0);
 
@@ -278,15 +279,15 @@ describe('Notify highest-miss coverage', function (): void {
         $fcmToken = str_repeat('a', 80).':'.str_repeat('b', 40);
         $apnsToken = str_repeat('ab', 32);
 
-        $platform = (new SendPushToPlatformAction())->execute('fcm', $fcmToken, $notification);
+        $platform = (new SendPushToPlatformAction)->execute('fcm', $fcmToken, $notification);
         Assert::assertTrue($platform['success']);
-        Assert::assertTrue((new SendPushToPlatformAction())->execute('apns', $apnsToken, $notification)['success']);
-        Assert::assertTrue((new SendPushToPlatformAction())->execute('webpush', 'web-token', $notification)['success']);
+        Assert::assertTrue((new SendPushToPlatformAction)->execute('apns', $apnsToken, $notification)['success']);
+        Assert::assertTrue((new SendPushToPlatformAction)->execute('webpush', 'web-token', $notification)['success']);
 
-        $devices = (new SendPushToDevicesAction())->execute([$fcmToken, $apnsToken], $notification);
+        $devices = (new SendPushToDevicesAction)->execute([$fcmToken, $apnsToken], $notification);
         Assert::assertArrayHasKey('fcm', $devices);
 
-        $topic = (new SendPushToTopicAction())->execute('news', $notification);
+        $topic = (new SendPushToTopicAction)->execute('news', $notification);
         Assert::assertArrayHasKey('fcm', $topic);
     });
 
@@ -316,7 +317,7 @@ describe('Notify highest-miss coverage', function (): void {
             SendNutgramTelegramAction::class,
             SendOfficialTelegramAction::class] as $class) {
             try {
-                $action = new $class();
+                $action = new $class;
                 $data = str_contains($class, 'Telegram') ? $telegramData : $whatsappData;
                 $result = $action->execute($data);
                 Assert::assertNotEmpty($result);
@@ -359,7 +360,7 @@ describe('Notify highest-miss coverage', function (): void {
             SendPlivoSMSAction::class,
             SendGammuSMSAction::class] as $class) {
             try {
-                $action = new $class();
+                $action = new $class;
                 $action->execute($sms);
             } catch (\Throwable $e) {
                 Assert::assertNotSame('', $e->getMessage());
@@ -397,14 +398,16 @@ describe('Notify highest-miss coverage', function (): void {
         $recipient = notifyDummyRecipient(['email' => 'user@example.test']);
         Notification::fake();
 
-        $result = (new SendNotificationAction())->handle($recipient,
+        $result = (new SendNotificationAction)->handle(
+            $recipient,
             'welcome-template',
         );
 
         Assert::assertNull($result);
         Notification::assertSentTo($recipient, GenericNotification::class);
 
-        expect(fn (): mixed => (new SendNotificationAction())->handle($recipient,
+        expect(fn (): mixed => (new SendNotificationAction)->handle(
+            $recipient,
             'missing-template',
         ))->toThrow(\Exception::class);
     });
@@ -428,7 +431,8 @@ describe('Notify highest-miss coverage', function (): void {
         $recipient = notifyDummyRecipient(['phone' => '+393331112233']);
         Notification::fake();
 
-        (new SendNotificationAction())->handle($recipient,
+        (new SendNotificationAction)->handle(
+            $recipient,
             'sms-template',
         );
 
@@ -436,7 +440,7 @@ describe('Notify highest-miss coverage', function (): void {
     });
 
     test('notification template compiles previews and conditions in memory', function (): void {
-        $template = new NotificationTemplate();
+        $template = new NotificationTemplate;
         $template->forceFill([
             'subject' => 'Ciao Marco',
             'body_text' => 'Testo Marco',
@@ -498,7 +502,7 @@ describe('Notify highest-miss coverage', function (): void {
             'notify.tracking.links.enabled' => false,
             'notify.tracking.pixel.route' => 'login']);
 
-        $dummy = new NotifyTrackingDummy();
+        $dummy = new NotifyTrackingDummy;
         $html = '<p>Newsletter</p>';
         $tracked = $dummy->addTrackingPublic($html, 'track-uuid');
 
@@ -520,7 +524,8 @@ describe('Notify highest-miss coverage', function (): void {
 
         foreach ($cases as $payload) {
             try {
-                $result = (new SendFacebookWhatsAppAction())->execute(WhatsAppData::from($payload),
+                $result = (new SendFacebookWhatsAppAction)->execute(
+                    WhatsAppData::from($payload),
                 );
                 Assert::assertNotEmpty($result);
             } catch (\Throwable $e) {
@@ -541,11 +546,12 @@ describe('Notify highest-miss coverage', function (): void {
             'from' => 'APP']);
 
         try {
-            (new EsendexSendAction())->execute($sms);
+            (new EsendexSendAction)->execute($sms);
         } catch (\Throwable $e) {
             Assert::assertNotSame('', $e->getMessage());
         }
 
-        expect(fn (): array => (new TryDuocircleMailAction())->execute(['to' => 'user@example.test']))->toThrow(\Exception::class);
+        expect(fn (): array => (new TryDuocircleMailAction)->execute([
+            'to' => 'user@example.test']))->toThrow(\Exception::class);
     });
 });

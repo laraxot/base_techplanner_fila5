@@ -7,7 +7,6 @@ namespace Modules\Xot\Actions\Route;
 use Illuminate\Routing\Route;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Str;
-use Modules\Xot\Datas\RouteParamsData;
 use Spatie\QueueableAction\QueueableAction;
 
 class BuildActionUrlAction

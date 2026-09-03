@@ -11,7 +11,7 @@ use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 test('record notification data returns mail route', function (): void {
-    $user = new User();
+    $user = new User;
     $user->setAttribute('email', 'recipient@example.test');
 
     $data = RecordNotificationData::from([
@@ -23,7 +23,7 @@ test('record notification data returns mail route', function (): void {
 });
 
 test('record notification data returns normalized sms route', function (): void {
-    app()->instance(NormalizePhoneNumberAction::class, new class()
+    app()->instance(NormalizePhoneNumberAction::class, new class
     {
         public function execute(string $phone): string
         {
@@ -31,7 +31,7 @@ test('record notification data returns normalized sms route', function (): void 
         }
     });
 
-    $user = new User();
+    $user = new User;
     $user->setAttribute('phone', '3331234567');
 
     $data = RecordNotificationData::from([
@@ -42,7 +42,7 @@ test('record notification data returns normalized sms route', function (): void 
 });
 
 test('record notification data throws for unsupported channel', function (): void {
-    $user = new User();
+    $user = new User;
     $user->setAttribute('email', 'recipient@example.test');
 
     $data = RecordNotificationData::from([

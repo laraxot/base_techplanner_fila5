@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Exceptions\Handlers;
 
-use Closure;
-use ReflectionFunction;
-use Throwable;
-
 /**
  * The handlers repository.
  */

@@ -76,7 +76,7 @@ protected function getHeading(): ?string
     return __($this->getTranslationKey() . '.heading');
 }
 
-protected function getDescription(): ?string  
+protected function getDescription(): ?string
 {
     return __($this->getTranslationKey() . '.description');
 }
@@ -201,11 +201,11 @@ abstract class XotBaseMigration extends Migration
             $table->id();
             $schemaCallback($table);
             $table->timestamps();
-            
+
             // Standard indexes
             $this->addStandardIndexes($table);
         });
-        
+
         $this->addTableComment($tableName, $this->getTableComment());
     }
 }
@@ -267,12 +267,6 @@ abstract class XotBaseMigration extends Migration
 - [XotBaseWidget.php](Modules/Xot/app/Filament/Widgets/XotBaseWidget.php)
 - [XotBaseFormComponent.php](Modules/Xot/app/Filament/Forms/Components/XotBaseFormComponent.php)
 - [AnalyzePerformanceCommand.php](Modules/Xot/app/Console/Commands/AnalyzePerformanceCommand.php)
-
-- [XotBaseServiceProvider.php](/var/www/html/_bases/base_quaeris_fila3_mono/laravel/Modules/Xot/app/Providers/XotBaseServiceProvider.php)
-- [XotBaseWidget.php](/var/www/html/_bases/base_quaeris_fila3_mono/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php)
-- [XotBaseFormComponent.php](/var/www/html/_bases/base_quaeris_fila3_mono/laravel/Modules/Xot/app/Filament/Forms/Components/XotBaseFormComponent.php)
-- [AnalyzePerformanceCommand.php](/var/www/html/_bases/base_quaeris_fila3_mono/laravel/Modules/Xot/app/Console/Commands/AnalyzePerformanceCommand.php)
-
 
 ---
 *Analisi completata con principi DRY + KISS | Data: $(date)*

@@ -5,18 +5,17 @@ declare(strict_types=1);
 namespace Modules\Notify\Tests\Unit\Models;
 
 use Modules\Notify\Models\NotifyThemeable;
-use Modules\Notify\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
+use function Pest\Laravel\withoutExceptionHandling;
+
 beforeEach(function (): void {
-    /** @var TestCase $this */
-    $this->disableExceptionHandling();
+    withoutExceptionHandling();
 });
 
 describe('Notify Themeable', function (): void {
     test('_can_create_notify_themeable', function (): void {
-        /** @var TestCase $this */
         $themeable = NotifyThemeable::create([
             'model_type' => 'App\Models\User',
             'model_id' => 123,

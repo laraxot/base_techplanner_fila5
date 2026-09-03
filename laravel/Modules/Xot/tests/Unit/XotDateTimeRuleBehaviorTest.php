@@ -14,7 +14,7 @@ uses(TestCase::class)->group('no-xot-db');
 test('DateTimeRule accepts the documented day month year format', function (): void {
     $validator = Validator::make(
         ['published_at' => '10/10/2019 13:43'],
-        ['published_at' => [new DateTimeRule()]],
+        ['published_at' => [new DateTimeRule]],
     );
 
     Assert::assertFalse($validator->fails());

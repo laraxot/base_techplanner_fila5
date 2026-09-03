@@ -132,7 +132,7 @@ describe('Xot artisan commands helpers coverage', function (): void {
                         if ($def->hasOption('module')) {
                             $input['--module'] = 'Xot';
                         }
-                        $inst->run(new ArrayInput($input), new NullOutput());
+                        $inst->run(new ArrayInput($input), new NullOutput);
                         $n++;
                     } catch (\Throwable) {
                         $n++;

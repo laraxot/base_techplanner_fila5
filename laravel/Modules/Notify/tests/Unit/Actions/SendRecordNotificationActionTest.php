@@ -32,7 +32,7 @@ function makeDummyRecordForNotify(array $attributes = []): Model
 }
 
 test('send record notification routes valid mail channel', function () {
-    app()->instance(SafeEloquentCastAction::class, new class()
+    app()->instance(SafeEloquentCastAction::class, new class
     {
         public function getStringAttribute(Model $record, string $attribute, string $default = ''): string
         {

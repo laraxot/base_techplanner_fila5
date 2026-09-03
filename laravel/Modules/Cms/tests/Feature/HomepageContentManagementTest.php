@@ -6,9 +6,10 @@ use Illuminate\Http\Response;
 use Illuminate\Testing\TestResponse;
 use Modules\Cms\Tests\TestCase;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-use PHPUnit\Framework\Assert;
 
 use function Pest\Laravel\get;
+
+use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 

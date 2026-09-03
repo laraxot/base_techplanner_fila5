@@ -326,7 +326,7 @@ function fakeSocialiteUser(string $email): Laravel\Socialite\Contracts\User
 
 function makeIsUserAllowedAction(): IsUserAllowedAction
 {
-    return new IsUserAllowedAction();
+    return new IsUserAllowedAction;
 }
 
 /**
@@ -654,7 +654,7 @@ function teamMgmtCreateInvitation(Team $team, array $attributes = []): TeamInvit
         'role' => 'member',
     ], $attributes);
 
-    $invitation = new TeamInvitation();
+    $invitation = new TeamInvitation;
     $invitation->forceFill($payload);
     $invitation->save();
     $fresh = $invitation->fresh();
@@ -779,7 +779,7 @@ function teamMgmtBizCreateInvitation(Team $team, array $attributes = []): TeamIn
         'role' => 'member',
     ], $attributes);
 
-    $invitation = new TeamInvitation();
+    $invitation = new TeamInvitation;
     $invitation->forceFill($payload);
     $invitation->save();
     $fresh = $invitation->fresh();

@@ -34,7 +34,7 @@ function makeThemeNotificationDummy(): ThemeNotification
 
 function makeTelegramNotificationDummy(): Notification
 {
-    return new class() extends Notification
+    return new class extends Notification
     {
         /** @return array{text: string} */
         public function toTelegram(object $notifiable): array
@@ -46,7 +46,7 @@ function makeTelegramNotificationDummy(): Notification
 
 function makeTelegramNotifiableDummy(): object
 {
-    return new class()
+    return new class
     {
         public function routeNotificationForTelegram(): string
         {
@@ -59,7 +59,7 @@ test('netfun notifications channel sends and increases counter', function () {
     config()->set('sms.default', 'smsfactor');
     config()->set('sms.drivers.smsfactor.token', 'token-123');
 
-    app()->instance(SendSmsFactorSMSAction::class, new class() implements SmsActionContract
+    app()->instance(SendSmsFactorSMSAction::class, new class implements SmsActionContract
     {
         /** @return array{status_code: int, status_txt: string} */
         public function execute(SmsData $smsData): array
@@ -68,8 +68,8 @@ test('netfun notifications channel sends and increases counter', function () {
         }
     });
 
-    $channel = new NetfunChannel();
-    $notifiable = new NetfunChannelNotifiableDummy();
+    $channel = new NetfunChannel;
+    $notifiable = new NetfunChannelNotifiableDummy;
     $notification = makeThemeNotificationDummy();
 
     $channel->send($notifiable, $notification);
@@ -84,14 +84,15 @@ test('telegram notifications channel logs when recipient and method are valid', 
     });
     Log::shouldReceive('info')->zeroOrMoreTimes();
 
-    $channel = new TelegramChannel();
+    $channel = new TelegramChannel;
     $channel->send(makeTelegramNotifiableDummy(), makeTelegramNotificationDummy());
 });
 
 test('telegram notifications channel throws when notification has no toTelegram method', function () {
-    $channel = new TelegramChannel();
+    $channel = new TelegramChannel;
 
     XotBasePest::assertThrows(
-        fn () => $channel->send(makeTelegramNotifiableDummy(), new class() extends Notification {}), \Exception::class,
+        fn () => $channel->send(makeTelegramNotifiableDummy(), new class extends Notification {}),
+        \Exception::class,
     );
 });

@@ -83,7 +83,6 @@ related:
 |---------|----|----|----|
 | Pennant Rules | [pennant-rules.md](pennant-rules.md) | 8 | Laravel Pennant feature flags |
 | Theme Build | [theme-build-rules.md](theme-build-rules.md) | 33 | Theme build process (CRITICAL) |
-| Project Architecture | [project-architecture.md](project-architecture.md) | 130 | FixCity project architecture |
 | Project Architecture | [project-architecture.md](project-architecture.md) | 130 | Notify project architecture |
 
 ---

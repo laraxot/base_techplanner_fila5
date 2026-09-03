@@ -10,8 +10,6 @@ namespace Modules\Xot\Exceptions;
 
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Jsonable;
-use JsonSerializable;
-use Override;
 
 use function Safe\json_encode;
 

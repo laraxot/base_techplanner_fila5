@@ -5,8 +5,8 @@ tags: [readme, new]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "readme-new user module - authentication & authorization"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -987,7 +987,7 @@ test('user can switch teams', function () {
 - **Fixed**: File locking pattern implementation
 - **Improved**: Security alert widgets
 
-See [changelog.md](./CHANGELOG.md) for full history.
+See [CHANGELOG.md](./changelog.md) for full history.
 
 ---
 

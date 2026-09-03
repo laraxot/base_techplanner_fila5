@@ -1,37 +1,34 @@
----
-title: "PHPStan config immutability — Xot"
-type: guideline
-module: Xot
-updated: 2026-08-28
-related:
-  - ../../../../docs/wiki/guidelines/phpstan-config-immutability.md
-  - ../../../../docs/wiki/rules/phpstan-neon-immutable.md
-  - ../../../../docs/wiki/memories/phpstan-neon-immutable.md
----
+# PHPStan Config Immutability (Global Project Rule)
 
-# PHPStan Config Immutability (Xot)
+- File target: `phpstan.neon`
+- File target: `phpstan.neon`
+- File target: `phpstan.neon`
+- Status: IMMUTABLE — never modify this file via automation or PRs. Only the user may edit it manually.
 
-- File: `laravel/phpstan.neon`
-- Status: **IMMUTABLE per agenti** — solo l’**utente umano** lo modifica.
+## Rationale
+- Single source of truth for static analysis settings.
+- Prevents wide-impact accidental changes.
 
-## Come analizzare senza toccare il neon
+## How to adjust analysis without editing phpstan.neon
+- Scope via CLI paths and flags, e.g.:
 
 ```bash
-cd laravel
-./vendor/bin/phpstan analyse Modules --memory-limit=-1 --no-progress
-./vendor/bin/phpstan analyse Modules/User --memory-limit=-1 --no-progress
+# Per-module
+./vendor/bin/phpstan analyze Modules/User Modules/Geo --level=9 --no-progress --memory-limit=2G
+
+# Full Modules with debug
+./vendor/bin/phpstan analyze Modules --level=9 --no-progress --debug -vvv
+
+# Exclude heavy module via shell (do not touch config)
+find Modules -maxdepth 2 -type d -name app ! -path 'Modules/Activity/*' -print0 \
+  | xargs -0 ./vendor/bin/phpstan analyze --level=9 --no-progress --memory-limit=2G
 ```
 
-Vietato: `--level`, `-c`, nuovi `.neon`, restore/edit del config.
+## Enforcement
+- Assistants, scripts, and CI MUST NOT patch `phpstan.neon`.
+- Prefer per-run options and per-module execution.
 
-Errori → tipizza e correggi il **codice**. Neon sbagliato → chiedi all’utente.
-
-## Contratto utente nel neon
-
-| Sezione | Regola |
-|---------|--------|
-| `ignoreErrors:` | **vuoto** |
-| `excludePaths` | **no** `Modules/*/tests/**` · **no** `Modules/*/tests/*` |
-| `includes` | **no** `pest-internal-ignore.neon` |
-
-Vedi [phpstan-neon-user-contract.md](../../../../docs/wiki/memories/phpstan-neon-user-contract.md).
+## Cross-References
+- `.ai/guidelines/phpstan-config-immutability.md`
+- `.cursor/rules/phpstan-config-immutability.mdc`
+- `.windsurf/rules/phpstan-config-immutability.mdc`

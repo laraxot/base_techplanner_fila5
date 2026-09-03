@@ -30,7 +30,6 @@ Filament è gestito dai moduli.
 
 ```json
 {
-    "name": "fixcity/module-name",
     "name": "ptv/module-name",
     "require": {
         "php": "^8.2",

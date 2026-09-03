@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Models\XotBaseModel;
+use Modules\Xot\Tests\TestCase;
 use Modules\Xot\Traits\Updater;
 use PHPUnit\Framework\Assert;
-use ReflectionNamedType;
 
-use function Safe\file_get_contents;
+uses(TestCase::class);
 
 test('xot base model extends eloquent model', function (): void {
     $reflection = new ReflectionClass(XotBaseModel::class);

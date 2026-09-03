@@ -18,8 +18,13 @@ return [
     'forcessl' => false,
 ];
 ~~~
+### Versione HEAD
 
 ## Collegamenti tra versioni di xra.md
 * [xra.md](../../../xot/project_docs/install/xra.md)
 * [xra.md](../../../tenant/project_docs/it/xra.md)
 * [xra.md](../../../tenant/project_docs/it/config/xra.md)
+
+### Versione Incoming
+
+---

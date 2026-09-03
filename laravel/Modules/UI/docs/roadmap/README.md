@@ -1,34 +1,67 @@
 # UI Module Roadmap
 
-[![Module](https://img.shields.io/badge/Module-UI Module Roadmap-8B0000.svg)]()
-[![Laravel 12](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)
-[![Filament 5](https://img.shields.io/badge/Filament-5-ffab00.svg)](https://filamentphp.com/)
-[![PHP 8.4+](https://img.shields.io/badge/PHP-8.4+-777BB4.svg)](https://php.net/)
-[![PHPStan Level 10](https://img.shields.io/badge/PHPStan-Level%2010-brightgreen.svg)](https://phpstan.org/)
-[![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue.svg)](https://www.php-fig.org/psr/psr-12/)
-[![Architecture-Modular](https://img.shields.io/badge/Architecture-Modular-purple.svg)]()
-[![FixCity Platform](https://img.shields.io/badge/Platform-FixCity-008758.svg)]()
+> "UI components and design system for the Laraxot ecosystem with reusable components and design tokens."
 
-> **"UI components and design system for the Laraxot ecosystem with reusable components and design tokens."**
+## 🎯 Vision
 
-## Perché esiste
+Provide a **comprehensive UI toolkit** that includes:
 
-"UI components and design system for the Laraxot ecosystem with reusable components and design tokens."
+- ✅ Reusable components
+- ✅ Design system
+- ✅ Theme support
+- ✅ Responsive design
+- ✅ Accessibility features
+- ✅ Component documentation
 
-## Superpoteri
+## 📊 Current Status
 
-- Modular component with XotBase patterns
-- Professional-grade implementation
-- Integrated with FixCity Platform
+### Overall Progress: 60% Complete
 
-## Documentazione
+| Category | Status | Progress |
+|----------|--------|----------|
+| Components | 🔄 In Progress | 70% |
+| Design System | 🔄 In Progress | 60% |
+| Theme Support | ✅ Complete | 100% |
+| Responsive Design | 🔄 In Progress | 50% |
+| Accessibility | 🔄 In Progress | 40% |
+| Documentation | 🔄 In Progress | 30% |
 
-| Lingua | Link |
-|--------|------|
-| 🇮🇹 Presentazione | Questo file (`README.md`) |
-| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
-| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
+## 🏗️ Key Features
+
+### 1. Components
+- Button components
+- Form components
+- Card components
+- Navigation components
+- Modal components
+
+### 2. Design System
+- Color palette
+- Typography scale
+- Spacing system
+- Border radius
+- Shadow system
+
+### 3. Theme Support
+- Light theme
+- Dark theme
+- Custom themes
+- Theme switching
+- Theme persistence
+
+### 4. Responsive Design
+- Mobile-first design
+- Breakpoint system
+- Grid system
+- Responsive components
+- Touch-friendly
+
+### 5. Accessibility
+- ARIA labels
+- Keyboard navigation
+- Screen reader support
+- Color contrast
+- Focus indicators
 
 ---
 
-**Modulo** `UI` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5

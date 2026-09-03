@@ -59,6 +59,4 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
-    'plural' => ['label' => 'xot base manage related records.plural'],
-    'test' => 'xot base manage related records',
 ];

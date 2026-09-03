@@ -133,9 +133,6 @@ FIXCITY_ANALYTICS_ENABLED=true
 /comune/eventi             # Eventi
 
 // API Fixcity
-/api/fixcity/tickets       # Gestione ticket
-/api/fixcity/map/tickets   # Mappa ticket
-/api/fixcity/statistics    # Statistiche
 /api/ptv/tickets       # Gestione ticket
 /api/ptv/map/tickets   # Mappa ticket
 /api/ptv/statistics    # Statistiche

@@ -43,7 +43,7 @@ function collisionGroups(): int
     try {
         /** @var array{identical?: array<mixed>, differing?: array<mixed>} $payload */
         $payload = json_decode($process->getOutput(), true);
-    } catch (Throwable) {
+    } catch (\Throwable) {
         return -1;
     }
 

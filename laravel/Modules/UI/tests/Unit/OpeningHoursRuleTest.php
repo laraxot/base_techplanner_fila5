@@ -32,7 +32,7 @@ function uiOpeningHoursFailures(mixed $value): array
         return new PotentiallyTranslatedString($message, app('translator'));
     };
 
-    (new OpeningHoursRule())->validate('orari', $value, $collect);
+    (new OpeningHoursRule)->validate('orari', $value, $collect);
 
     return $failures;
 }

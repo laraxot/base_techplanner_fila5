@@ -54,6 +54,21 @@ trait Updater
     }
 
     /**
+     * Get the user who deleted the model.
+     *
+     * @return BelongsTo<Model&ProfileContract, $this>
+     *
+     * @phpstan-return BelongsTo<Model&ProfileContract, $this>
+     */
+    public function deleter(): BelongsTo
+    {
+        /** @var class-string<ProfileContract&Model> $profileClass */
+        $profileClass = XotData::make()->getProfileClass();
+
+        return $this->belongsTo($profileClass, 'deleted_by', 'user_id');
+    }
+
+    /**
      * bootUpdater function.
      */
     protected static function bootUpdater(): void

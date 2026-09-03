@@ -313,6 +313,7 @@ Modules/ModuleName/
 ✅ ### H3 Header
 ❌ H1 Header
 ❌ H1 Header
+   ==========
 ```
 
 **Code Blocks**: Always specify language

@@ -212,7 +212,7 @@ class ArtisanAction
     }
 
     /**
-     * @param array<string, mixed> $arguments
+     * @param  array<string, mixed>  $arguments
      */
     public static function exe(string $command, array $arguments = []): string
     {
@@ -227,7 +227,5 @@ class ArtisanAction
         }
     }
 
-    public function execute(): void
-    {
-    }
+    public function execute(): void {}
 }

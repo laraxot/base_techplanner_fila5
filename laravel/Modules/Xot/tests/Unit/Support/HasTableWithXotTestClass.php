@@ -16,8 +16,6 @@ class HasTableWithXotTestClass
 {
     use HasXotTable;
 
-    public ?string $tableSearch = null;
-
     public function getLayoutView(): mixed
     {
         $mock = \Mockery::mock();
@@ -27,8 +25,9 @@ class HasTableWithXotTestClass
         return $mock;
     }
 
-    /** @return array<string, mixed> */
-    protected function getTableColumns(): array
+    #[\Override]
+    /** @return array<int, mixed> */
+    public function getTableColumns(): array
     {
         return [];
     }
@@ -121,7 +120,7 @@ class HasTableWithXotTestClass
     /** @return Collection<int, mixed> */
     public function getSelectedTableRecords(bool $_shouldFetchSelectedRecords = true): Collection
     {
-        return new Collection();
+        return new Collection;
     }
 
     public function getAllTableRecordsCount(): int

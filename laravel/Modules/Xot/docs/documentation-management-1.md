@@ -5,9 +5,9 @@
 La documentazione del progetto è organizzata in modo gerarchico:
 
 ```
-<nome repository>/
+base_predict_fila5_mono/
 ├── docs/                           # Documentazione globale del progetto
-│   ├── architecture.md            # Architettura generale
+│   ├── ARCHITECTURE.md            # Architettura generale
 │   ├── MODULES.md                 # Panoramica dei moduli
 │   ├── PHPSTAN_WORKFLOW.md        # Workflow analisi PHPStan
 │   └── ...

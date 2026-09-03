@@ -1,12 +1,3 @@
----
-title: "Correzioni Critiche PHPMD - Analisi e Piano"
-module: xot
-type: integration
-tags: [integrations, modules, xot]
-created: 2026-08-24
-updated: 2026-08-24
----
-
 # Correzioni Critiche PHPMD - Analisi e Piano
 
 **Data**: 2025-12-23

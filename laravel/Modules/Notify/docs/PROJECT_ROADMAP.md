@@ -489,7 +489,6 @@ Funzionalità:
 - [ ] Report performance mensili
 
 **File da creare**:
-- `config/fixcity-sla.php`
 - `config/ptv-sla.php`
 - `Modules/Fixcity/app/Services/SlaTrackingService.php`
 - `Modules/Fixcity/app/Jobs/CheckSlaViolationsJob.php`

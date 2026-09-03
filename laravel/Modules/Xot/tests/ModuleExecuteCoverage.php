@@ -406,7 +406,7 @@ final class ModuleExecuteCoverage
 
     public static function testXotBaseMigrationHelpers(): void
     {
-        $migration = new class() extends XotBaseMigration
+        $migration = new class extends XotBaseMigration
         {
             protected ?string $model_class = Cache::class;
 

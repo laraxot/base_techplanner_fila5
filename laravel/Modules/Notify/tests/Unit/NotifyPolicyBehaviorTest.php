@@ -38,7 +38,7 @@ afterEach(function (): void {
 });
 
 test('NotifyBasePolicy before: super-admin bypass, altri passano a viewAny false', function (): void {
-    $policy = new NotifyPolicyBehaviorConcretePolicy();
+    $policy = new NotifyPolicyBehaviorConcretePolicy;
     $super = notifyBehaviorUser(['super-admin']);
     Assert::assertTrue($policy->before($super, 'viewAny'));
 
@@ -49,10 +49,10 @@ test('NotifyBasePolicy before: super-admin bypass, altri passano a viewAny false
 
 test('policy Notify vuote ereditano before super-admin da XotBasePolicy', function (): void {
     foreach ([
-        new ContactPolicy(),
-        new NotificationPolicy(),
-        new MailTemplatePolicy(),
-        new NotificationTemplatePolicy()] as $policy) {
+        new ContactPolicy,
+        new NotificationPolicy,
+        new MailTemplatePolicy,
+        new NotificationTemplatePolicy] as $policy) {
         Assert::assertTrue($policy->before(notifyBehaviorUser(['super-admin']), 'viewAny'));
         Assert::assertNull($policy->before(notifyBehaviorUser(), 'viewAny'));
     }

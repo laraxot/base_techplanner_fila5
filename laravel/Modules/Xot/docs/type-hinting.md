@@ -1,19 +1,3 @@
----
-title: 'type_hinting'
-module: Xot
-type: reference
-slug: type-hinting
-description: '<!-- Contenuto migrato da _docs/type_hinting.txt -->'
-tags: [migrato-da-txt, xot]
-converted_from: type_hinting.txt
-created: 2026-08-24
-updated: 2026-08-24
----
-
-# type_hinting
-
-<!-- Contenuto migrato da _docs/type_hinting.txt -->
-
 https://mlocati.github.io/articles/php-type-hinting.html
 https://howto.webarea.it/php/type-hinting-php-e-controllo-wake-strict-mode_170
 https://wiki.php.net/rfc/scalar_type_hints
@@ -30,7 +14,9 @@ https://packagist.org/packages/maksi/laravel-idea-type-hinting
      * @Route("/types")
      */
 
+
 declare(strict_types = 1);
+
 
 protected ClassName $classType;
 

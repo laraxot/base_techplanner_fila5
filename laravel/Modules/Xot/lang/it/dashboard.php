@@ -66,22 +66,6 @@ return [
             ],
         ],
         'export' => [
-
-            'label' => 'Esporta Dati',
-            'icon' => 'heroicon-o-arrow-down-tray',
-            'color' => 'success',
-            'tooltip' => 'Esporta dati in formato file',
-            'modal' => [
-                'heading' => 'Esporta Dati',
-                'description' => 'Seleziona il formato di esportazione',
-                'confirm' => 'Esporta',
-                'cancel' => 'Annulla',
-            ],
-            'messages' => [
-                'success' => 'Dati esportati con successo',
-                'error' => 'Errore durante l\'esportazione',
-            ],
-
             'filename_prefix' => 'Aree al',
             'columns' => [
                 'name' => 'Nome area',

@@ -10,7 +10,7 @@ use PHPUnit\Framework\Assert;
 
 function makeHasContactDummyModel(): HasContactDummyModel
 {
-    return new HasContactDummyModel();
+    return new HasContactDummyModel;
 }
 
 test('has contact trait appends contact type fields to fillable', function (): void {

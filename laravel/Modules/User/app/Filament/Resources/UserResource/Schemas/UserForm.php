@@ -14,7 +14,6 @@ use Filament\Schemas\Components\Section;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\HtmlString;
-use Livewire\Component;
 use Modules\User\Filament\Forms\Components\UserSection;
 use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
@@ -38,19 +37,19 @@ class UserForm extends XotBaseResourceForm
                     TextInput::make('name')->required(),
                     TextInput::make('password')
                         ->password()
-                        ->dehydrateStateUsing(function (mixed $state): ?string {
+                        ->dehydrateStateUsing(function ($state): ?string {
                             if (! is_string($state) || empty($state)) {
                                 return null;
                             }
 
                             return Hash::make($state);
                         })
-                        ->required(fn (Component $livewire): bool => $livewire instanceof CreateUser),
+                        ->required(fn ($livewire) => $livewire instanceof CreateUser),
                 ])
                 ->columnSpan(8),
             'section02' => Section::make()
                 ->schema([
-                    TextEntry::make('created_at')->html()->state(static function (Model|array|null $record) {
+                    TextEntry::make('created_at')->state(static function ($record) {
                         if (! $record instanceof Model) {
                             return new HtmlString('&mdash;');
                         }

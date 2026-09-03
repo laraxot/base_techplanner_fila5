@@ -17,6 +17,8 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
+require_once __DIR__.'/../Support/team-management-helpers.php';
+
 test('can create a team', function (): void {
     ['owner' => $owner] = teamMgmtBootstrap();
     $name = 'New Team '.uniqid();

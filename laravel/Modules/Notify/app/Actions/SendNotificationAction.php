@@ -141,7 +141,7 @@ class SendNotificationAction
     ): NotificationModel {
         $bodyHtml = $compiled['body_html'];
         $message = $compiled['body_text'] ?? ($bodyHtml !== null ? strip_tags($bodyHtml) : '');
-        $notification = new NotificationModel();
+        $notification = new NotificationModel;
         $notification->forceFill([
             'type' => is_string($template->type) && $template->type !== '' ? $template->type : 'generic',
             'message' => $message,

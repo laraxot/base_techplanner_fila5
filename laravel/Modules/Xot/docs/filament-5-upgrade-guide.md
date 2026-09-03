@@ -14,12 +14,6 @@ Per una guida completa e dettagliata su tutti i breaking changes e le procedure 
 - Livewire v4.0+ ⚠️ (Upgrade da v3 in corso)
 - Tailwind CSS v4.1+ ⚠️ (Da verificare)
 
-- PHP 8.2+ ✅ (Il progetto ha 8.3.6)
-- Laravel v11.28+ ⚠️ (Da verificare)
-- Livewire v4.0+ ⚠️ (Attualmente 3.7.6)
-- Tailwind CSS v4.0+ ⚠️ (Da verificare)
-
-
 ## 🔑 Punto Fondamentale
 
 **Filament 5 esiste PRINCIPALMENTE per supportare Livewire 4.**
@@ -62,9 +56,6 @@ file, import morto) — rimosso insieme all'import altrettanto inutilizzato di
 `Filament\Schemas\Schema`. Verificato con
 `grep -rl "use Filament\\\\Forms\\\\Form;\|use Filament\\\\Infolists\\\\Infolist;" laravel/Modules --include="*.php"`:
 nessun'altra occorrenza nel resto del progetto.
-
-- **Schemas**: Form, Table, Infolist continuano a funzionare
-- **Resources**: Tutti i pattern esistenti rimangono validi
 
 ### Cosa Cambia (Livewire 4)
 
@@ -128,8 +119,6 @@ Nel progetto: verificare `filament/spatie-laravel-media-library-plugin` e altri 
 - **Documentazione**: dopo l’upgrade, verificare [filament.md](filament.md), [filament-v4-migration-guide.md](filament-v4-migration-guide.md) e [filament-best-practices.md](filament-best-practices.md) per eventuali adattamenti a v5.
 - **Configurazioni globali**: se in XotServiceProvider o AdminPanelProvider ci sono `configureUsing()` per Section/Grid/Fieldset/Table (es. v4), confrontare con il comportamento v5 e adattare se necessario.
 
-## Stato upgrade (<nome repository>)
-## Stato upgrade (base_laravelpizza)
 ## Stato upgrade (base_workorder_fila5)
 
 - [x] Documentazione creata (filament-5-upgrade-guide.md)
@@ -141,9 +130,6 @@ Nel progetto: verificare `filament/spatie-laravel-media-library-plugin` e altri 
 - [x] `composer remove filament/upgrade --dev` completato (assente da `composer.json`, verificato 2026-07-27)
 - [ ] **Config Livewire 4 NON ancora rinominata**: `config/livewire.php` usa ancora le chiavi legacy `'layout' => 'components.layouts.app'` e `'lazy_placeholder' => null` invece di `component_layout`/`component_placeholder` (verificato 2026-07-27). L'app funziona comunque (probabile compat legacy in Livewire 4.3), ma va allineato quando si tocca quel file.
 - [x] `Filament\Forms\Form` / `Filament\Infolists\Infolist` audit completato (2026-07-27): rimossi da `XotBaseEditRecord.php`, nessun'altra occorrenza nel progetto — vedi sezione sopra.
-- [ ] **Composer update**: completare `composer update -W` (può fallire per errore filesystem su vendor, es. "Could not delete .../sebastianbergmann-phpunit-..."). **Soluzione**: chiudere IDE e processi che usano `vendor/`; dalla root laravel: `rm -rf vendor composer.lock` poi `composer install -W`. In alternativa riprovare `composer update -W` dopo aver chiuso tutto.
-- [ ] Dopo update: `composer remove filament/upgrade --dev`
-- [ ] Config Livewire 4: verificare `config/livewire.php` (layout → component_layout, lazy_placeholder → component_placeholder) se pubblicato
 - [ ] PHPStan livello 10 su moduli Filament
 - [ ] Verificare pannello admin Filament (login, risorse, widget)
 

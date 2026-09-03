@@ -87,17 +87,6 @@
         "created_at": "2026-09-01T10:22:21.685997Z"
     },
     {
-        "regione": "\"Lombardia\"",
-        "provincia": "\"Milano\"",
-        "nome": "Bresso",
-        "cap": "\"20091\"",
-        "lat": 45.5389,
-        "lng": 9.19,
-        "id": 6,
-        "updated_at": "2026-09-01T10:22:55.300316Z",
-        "created_at": "2026-09-01T10:22:55.300336Z"
-    },
-    {
         "nome": "Torino",
         "codice": 4574,
         "regione": "\"Piemonte\"",

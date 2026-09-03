@@ -3,20 +3,6 @@
 declare(strict_types=1);
 
 return [
-    // MODEL INFORMATION
-    'model' => [
-        'label' => 'Pulsante',
-        'plural' => 'Pulsanti',
-        'description' => 'Etichette e testi per pulsanti e controlli dell\'interfaccia',
-    ],
-    // MESSAGES - FEEDBACK UTENTE
-    'messages' => [
-        'empty_state' => 'Nessun pulsante configurato',
-        'loading' => 'Caricamento interfaccia...',
-        'error_general' => 'Si è verificato un errore dell\'interfaccia',
-        'success_operation' => 'Operazione dell\'interfaccia completata',
-    ],
-    // LEGACY SUPPORT - Compatibilità con codice esistente
     'backend' => [
         'access' => [
             'users' => [

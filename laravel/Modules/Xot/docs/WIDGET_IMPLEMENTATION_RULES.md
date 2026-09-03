@@ -1,7 +1,5 @@
 > **SSoT minuscolo:** [widget-implementation-rules.md](./widget-implementation-rules.md). Questo file viola la convenzione dei nomi (maiuscole). Non duplicare il contenuto: aggiorna solo il SSoT.
 
-> **SSoT minuscolo:** [widget-implementation-rules.md](./widget-implementation-rules.md). Questo file viola la convenzione dei nomi (maiuscole). Non duplicare il contenuto: aggiorna solo il SSoT.
-
 # Widget Implementation Rules - Xot Module
 
 ## 🎯 Regole Fondamentali per Widget
@@ -418,7 +416,6 @@ class MyTableWidget extends XotBaseTableWidget
 - [XotBaseWidget Implementation](./xotbasewidget_implementation.md)
 - [XotBaseTableWidget Implementation](./xotbasetablewidget_implementation.md)
 - [Laraxot Architecture Rules](./laraxot_architecture_rules.md)
-- [Laraxot Architecture Rules](./LARAXOT_ARCHITECTURE_RULES.md)
 
 Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
 

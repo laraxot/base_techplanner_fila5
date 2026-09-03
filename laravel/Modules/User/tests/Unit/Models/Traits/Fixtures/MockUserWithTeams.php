@@ -47,7 +47,7 @@ class MockUserWithTeams extends Model
     {
         $id = $this->attributes['id'] ?? 'mock-user-1';
 
-        return \is_string($id) ? $id : 'mock-user-1';
+        return is_scalar($id) ? (string) $id : 'mock-user-1';
     }
 
     public function hasPermissionTo(string|int|Permission $permission, ?string $guardName = null): bool

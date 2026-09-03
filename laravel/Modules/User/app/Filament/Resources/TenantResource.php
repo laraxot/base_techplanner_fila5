@@ -11,6 +11,7 @@ namespace Modules\User\Filament\Resources;
 use Filament\Forms\Components\ColorPicker;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Section;
+use Filament\Support\Components\Component;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Modules\User\Filament\Resources\TenantResource\Pages\CreateTenant;
@@ -37,10 +38,10 @@ class TenantResource extends XotBaseResource
     }
 
     /**
-     * @return array<string, mixed>
+     * @return array<string, Component>
      */
-    // #[\Override]
-    public static function getFormSchemaOld(): array
+    #[\Override]
+    public static function getFormSchema(): array
     {
         return [
             'main' => Section::make()
@@ -52,7 +53,7 @@ class TenantResource extends XotBaseResource
                             ignoreRecord: true,
                         )
                         ->live(onBlur: true)
-                        ->afterStateUpdated(function (callable $set, mixed $state): void {
+                        ->afterStateUpdated(function (callable $set, $state): void {
                             if (is_string($state)) {
                                 $set('slug', Str::slug($state));
                                 $set('domain', Str::slug($state));
@@ -63,7 +64,7 @@ class TenantResource extends XotBaseResource
                         ->helperText('Inserisci il nome del tenant'),
                     TextInput::make('slug')
                         ->required()
-                        ->disabled(fn (string $context): bool => $context !== 'create')
+                        ->disabled(fn ($context) => $context !== 'create')
                         ->unique(
                             table: 'tenants',
                             ignoreRecord: true,
@@ -71,7 +72,7 @@ class TenantResource extends XotBaseResource
                         ->helperText('Lo slug verrà generato automaticamente dal nome'),
                     TextInput::make('domain')
                         ->required()
-                        ->visible(fn (string $context): bool => $context === 'create')
+                        ->visible(fn ($context) => $context === 'create')
                         ->unique(
                             table: 'domains',
                             ignoreRecord: true,

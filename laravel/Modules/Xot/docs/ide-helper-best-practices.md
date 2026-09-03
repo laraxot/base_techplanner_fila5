@@ -65,18 +65,8 @@ php artisan ide-helper:models --write
 
 **Opzioni**:
 - `--write` - Scrive nei file (default)
-- `--nowrite` - Genera solo `_ide_helper_models.php` (consigliato in CI / risposta `no` al prompt)
+- `--nowrite` - Genera solo `_ide_helper_models.php`
 - `--reset` - Rimuove PHPDoc esistenti prima di rigenerare
-- `--no-interaction` - Evita prompt interattivo
-
-### Troubleshooting ide-helper:models
-
-| Errore | Causa | Fix |
-|--------|-------|-----|
-| `No team model configured` | `permission.php` tenant senza `models.team` o registrar non sincronizzato | `models.team` in ogni `config/*/permission.php`; `UserServiceProvider::syncPermissionRegistrarTeamModel()` |
-| `Could not analyze Comune` / Sushi INSERT colonne | Righe JSON Sushi con chiavi diverse | `Comune::getRows()` uniforma colonne; `comuni.json` intatto |
-
-Story: [5.50.ide-helper-models-team-comune-sushi.story.md](./stories/5.50.ide-helper-models-team-comune-sushi.story.md)
 
 ### 2. Generate Facades Helper
 

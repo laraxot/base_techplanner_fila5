@@ -93,7 +93,6 @@ TOTALE: ~2,500 righe  ✅ Organizzate, navigabili, mantenibili
 
 ### Da File Originali a Moduli
 ```markdown
-# AGENTS.md (compatto)
 # agents.md (compatto)
 ## Contenuto Diviso
 | Sezione | File |
@@ -107,7 +106,6 @@ TOTALE: ~2,500 righe  ✅ Organizzate, navigabili, mantenibili
 ```markdown
 # .agents/docs/overview/agents-overview.md
 ## Riferimenti
-- [AGENTS.md](../../AGENTS.md) - File originale compatto
 - [agents.md](../../agents.md) - File originale compatto
 - [QWEN.md](../../QWEN.md) - Contesto Qwen Code
 ```

@@ -1,24 +1,3 @@
----
-module: theme
-topic: model-inheritance-fixes
-canonical: ../../../Themes/docs/shared-components/model-inheritance-fixes.md
-related:
-  - "./00-index-1.md"
-  - "./00-index.md"
-  - "./2fa-guide.md"
-  - "./2fa.md"
-  - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-  - "./actions-path-convention.md"
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/model-inheritance-fixes.md
-
----
-
-<!-- Merged from MODEL-INHERITANCE-FIXES.md, which collided with this file on case-insensitive filesystems. -->
-
 # Correzioni Ereditarietà Modelli - Modulo User
 
 ## Data Implementazione
@@ -208,7 +187,7 @@ cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
 
 ## Collegamenti
 
-- [Analisi Completa](./model_inheritance_analysis.md)
+- [Analisi Completa](./MODEL_INHERITANCE_ANALYSIS.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)

@@ -15,7 +15,7 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * Ultimo bump: 2026_06_10_134000
  * Contratto: laravel/Modules/Notify/docs/wiki/concepts/notifications-database-contract.md
  */
-return new class() extends XotBaseMigration
+return new class extends XotBaseMigration
 {
     /** @var class-string<UserDatabaseNotification> */
     protected ?string $model_class = UserDatabaseNotification::class;

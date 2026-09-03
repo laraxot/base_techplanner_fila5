@@ -51,40 +51,6 @@ protected int|string|array $columnSpan = 'full';  // Larghezza del widget
 
 ## Form Schema
 
-`XotBaseWidget` espone **`getFormSchema()`** (default `[]`). **Non esiste** `getFormSchemaOld()` sui widget: quello è il ponte delle **Resource**.
-
-`#[Override]` su un metodo assente nel parent è fatal PHP 8.3 all'autoload e interrompe `phpstan analyse Modules`.
-
-Chi lo usa: login `/it/auth/login`, firma valutatore, dropdown utente. Un widget con solo `getFormSchemaOld()` ha form vuoto a runtime e PHPStan non lo vede.
-
-```php
-public function getFormSchema(): array
-{
-    return [
-        // componenti; niente ->label()
-    ];
-}
-```
-
-`form()` sulla base chiama `getFormSchema()` e imposta `statePath('data')`. Non è `abstract` nel codice attuale.
-
-## Form Schema
-
-Ogni widget deve implementare il proprio schema di form:
-
-`#[Override]` su un metodo assente nel parent è fatal PHP 8.3 all'autoload e interrompe `phpstan analyse Modules`.
-
-Chi lo usa: login `/it/auth/login`, firma valutatore, dropdown utente. Un widget con solo `getFormSchemaOld()` ha form vuoto a runtime e PHPStan non lo vede.
-
-```php
-public function getFormSchema(): array
-{
-    return [
-        // componenti; niente ->label()
-    ];
-}
-```
-
 Ogni widget deve implementare il proprio schema di form:
 
 ```php
@@ -204,7 +170,6 @@ Questo trait permette al widget di aggiornarsi automaticamente a intervalli rego
 
 ## Collegamenti Bidirezionali
 
-- [README.md](../../README.md) - Indice principale della documentazione
 - [README.md](../../readme.md) - Indice principale della documentazione
 - [DIRECTORY-CASE-SENSITIVITY.md](../../directory-case-sensitivity.md) - Regole per la case sensitivity delle directory
 - [NAMESPACE-RULES.md](../../namespace-rules.md) - Regole per i namespace nei moduli
@@ -215,5 +180,4 @@ Questo trait permette al widget di aggiornarsi automaticamente a intervalli rego
 - [NAMESPACE-RULES.md](namespace-rules.md) - Regole per i namespace nei moduli
 - [FOLIO_VOLT_FILAMENT_INTEGRATION.md](../../FOLIO_VOLT_FILAMENT_INTEGRATION.md) - Integrazione Folio, Volt e Filament
 - [MODULE_STRUCTURE.md](../../MODULE_STRUCTURE.md) - Struttura standard dei moduli
-- [Documentazione Filament](https://filamentphp.com/docs/3.x/widgets/installation)
 - [Documentazione Filament](https://filamentphp.com/docs/3.x/widgets/installation)

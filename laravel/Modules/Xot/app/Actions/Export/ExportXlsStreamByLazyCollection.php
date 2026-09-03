@@ -22,9 +22,7 @@ class ExportXlsStreamByLazyCollection
     /**
      * Esporta una LazyCollection in un file CSV streamed.
      *
-     * @template TRow
-     *
-     * @param  LazyCollection<int, TRow>  $data  I dati da esportare
+     * @param  LazyCollection<int, mixed>  $data  I dati da esportare
      * @param  string  $filename  Nome del file CSV
      * @param  string|null  $transKey  Chiave di traduzione per le intestazioni
      * @param  array<string>|null  $_fields  Campi da includere nell'export (attualmente non utilizzato)
@@ -89,9 +87,7 @@ class ExportXlsStreamByLazyCollection
     /**
      * Ottiene le intestazioni per l'export.
      *
-     * @template TRow
-     *
-     * @param  LazyCollection<int, TRow>  $data  I dati da cui estrarre le intestazioni
+     * @param  LazyCollection<int, mixed>  $data  I dati da cui estrarre le intestazioni
      * @param  string|null  $transKey  Chiave di traduzione per le intestazioni
      * @return array<string>
      */

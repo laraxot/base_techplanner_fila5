@@ -13,7 +13,7 @@ uses(TestCase::class);
 
 describe('Component', function (): void {
     test('ui components can be rendered', function (): void {
-        $component = new class() extends Component
+        $component = new class extends Component
         {
             public function render(): View
             {

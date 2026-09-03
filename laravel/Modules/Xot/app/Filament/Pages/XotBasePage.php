@@ -10,7 +10,6 @@ use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
 use Filament\Pages\Page;
 // use Filament\Resources\Pages\Page;
-use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Contracts\Auth\Authenticatable;
@@ -330,7 +329,7 @@ abstract class XotBasePage extends Page implements HasForms
     {
         return [
             Action::make('save')
-                // ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
+                ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
                 ->submit('save'),
         ];
     }

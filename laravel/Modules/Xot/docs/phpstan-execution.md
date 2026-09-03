@@ -6,7 +6,6 @@ PHPStan deve **sempre** essere eseguito dalla cartella principale dell'applicazi
 
 ```bash
 cd laravel
-cd /var/www/html/_bases/base_<nome progetto>_fila3/laravel
 ./vendor/bin/phpstan analyse --level=9 --memory-limit=2G Modules/NomeModulo
 ```
 
@@ -48,6 +47,3 @@ In ambiente CI/CD, utilizzare:
 cd laravel
 ./vendor/bin/phpstan analyse --level=9 --memory-limit=2G --no-progress --error-format=json Modules/NomeModulo > phpstan_results.json
 ```
-cd /var/www/html/_bases/base_<nome progetto>_fila3/laravel
-./vendor/bin/phpstan analyse --level=9 --memory-limit=2G --no-progress --error-format=json Modules/NomeModulo > phpstan_results.json
-``` 

@@ -8,10 +8,10 @@ use Modules\Seo\Data\MetatagData;
 use Modules\Seo\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(\Modules\Seo\Tests\TestCase::class);
 
 it('returns sane defaults for empty data', function (): void {
-    $data = new MetatagData();
+    $data = new MetatagData;
 
     Assert::assertSame('', $data->getTitle());
     Assert::assertSame('', $data->getDescription());

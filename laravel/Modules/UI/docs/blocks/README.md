@@ -1,34 +1,28 @@
 # Block Components
 
-[![Module](https://img.shields.io/badge/Module-Block Components-8B0000.svg)]()
-[![Laravel 12](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)
-[![Filament 5](https://img.shields.io/badge/Filament-5-ffab00.svg)](https://filamentphp.com/)
-[![PHP 8.4+](https://img.shields.io/badge/PHP-8.4+-777BB4.svg)](https://php.net/)
-[![PHPStan Level 10](https://img.shields.io/badge/PHPStan-Level%2010-brightgreen.svg)](https://phpstan.org/)
-[![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue.svg)](https://www.php-fig.org/psr/psr-12/)
-[![Architecture-Modular](https://img.shields.io/badge/Architecture-Modular-purple.svg)]()
-[![FixCity Platform](https://img.shields.io/badge/Platform-FixCity-008758.svg)]()
+This document provides guidelines and documentation for theme block components used in the frontend architecture.
 
-> **Core module for the FixCity Platform.**
+## Overview
 
-## Perché esiste
+Block components are modular UI elements used to build sections in the frontend. They're typically rendered through JSON configuration data and integrated into the theme's template system.
 
-Core module for the FixCity Platform.
+## Key Concepts
 
-## Superpoteri
+1. **Data Passing**: Block data is passed from JSON configurations to blade templates
+2. **Props Definition**: Components must define all expected props using `@props` directive
+3. **Modularity**: Each block handles a specific UI concern
+4. **Reusability**: Blocks are designed to be reused across different sections
 
-- Modular component with XotBase patterns
-- Professional-grade implementation
-- Integrated with FixCity Platform
+## Common Block Types
 
-## Documentazione
+| Block Type | Description | Documentation |
+|------------|-------------|---------------|
+| Logo | Site logo with optional text | [Logo Component](./logo.md) |
+| Navigation | Site navigation menu | [Navigation Component](./navigation.md) |
+| User Dropdown | User authentication UI | [User Dropdown Component](./user-dropdown.md) |
 
-| Lingua | Link |
-|--------|------|
-| 🇮🇹 Presentazione | Questo file (`README.md`) |
-| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
-| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
+## Related Documentation
 
----
-
-**Modulo** `UI` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+- [Section Architecture](../sections/readme.md)
+- [Theme Components](../components/readme.md)
+- [Data Handling in Blade](../blade-data-handling.md)

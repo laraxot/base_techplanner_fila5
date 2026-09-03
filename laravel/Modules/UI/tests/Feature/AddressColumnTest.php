@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\UI\Tests\Feature;
 
-use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Modules\UI\Filament\Tables\Columns\AddressColumn;
 use PHPUnit\Framework\Assert;
@@ -33,7 +32,7 @@ describe('AddressColumn — controparte di AddressField', function (): void {
 
     it('names each child column with the relationship dot-path', function (): void {
         $column = AddressColumn::make('address');
-        $names = array_map(static fn (Column $field): string => $field->getName(), $column->getFields());
+        $names = array_map(static fn (\Filament\Tables\Columns\Column $field): string => $field->getName(), $column->getFields());
 
         Assert::assertSame([
             'address.country',
@@ -46,7 +45,7 @@ describe('AddressColumn — controparte di AddressField', function (): void {
 
     it('restricts the field set via fields()', function (): void {
         $column = AddressColumn::make()->fields(['city', 'zip']);
-        $names = array_map(static fn (Column $field): string => $field->getName(), $column->getFields());
+        $names = array_map(static fn (\Filament\Tables\Columns\Column $field): string => $field->getName(), $column->getFields());
 
         Assert::assertSame(['address.city', 'address.zip'], $names);
     });

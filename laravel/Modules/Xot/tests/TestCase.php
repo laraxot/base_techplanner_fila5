@@ -4,19 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\ServiceProvider;
-use Mockery;
 use Mockery\MockInterface;
-use Modules\User\Contracts\UserContract;
-use Modules\User\Database\Factories\UserFactory;
-use Modules\User\Models\User;
-use Modules\Xot\Datas\XotData;
 use PHPUnit\Framework\Assert;
 
 use function Safe\rmdir;
@@ -187,110 +180,5 @@ abstract class TestCase extends XotBaseTestCase
         }
 
         rmdir($dir);
-    }
-
-    /**
-     * Create a test user via XotData pattern with proper architecture.
-     *
-     * @param  array<string, mixed>  $attributes
-     */
-    protected static function createTestUser(array $attributes = []): UserContract
-    {
-        $defaultData = [
-            'email' => static::generateUniqueEmail(),
-            'password' => Hash::make('password123'),
-            'name' => fake()->name(),
-        ];
-
-        $userData = array_merge($defaultData, $attributes);
-
-        /** @var Factory<Model&UserContract> $factory */
-        $factory = UserFactory::new();
-        /** @var UserContract&Model $user */
-        $user = $factory->create($userData);
-
-        return $user;
-    }
-
-    /**
-     * Mock XotData for widget testing (Gold Standard Pattern).
-     *
-     * Prevents "Class not found" errors and provides consistent behavior
-     * across all widget tests.
-     */
-    protected static function mockXotData(): void
-    {
-        $mockXotData = Mockery::mock(XotData::class)->makePartial();
-
-        // Mock dei metodi critici con fallback sicuri
-        $mockXotData->shouldReceive('getUserClass')->andReturn(User::class);
-
-        $mockXotData
-            ->shouldReceive('getUserResourceClassByType')
-            ->with('patient')
-            ->andReturn('\\Modules\\User\\Filament\\Resources\\PatientResource');
-
-        $mockXotData
-            ->shouldReceive('getUserResourceClassByType')
-            ->with('doctor')
-            ->andReturn('\\Modules\\User\\Filament\\Resources\\DoctorResource');
-
-        $mockXotData
-            ->shouldReceive('getUserResourceClassByType')
-            ->with(Mockery::any())
-            ->andReturn('\\Modules\\User\\Filament\\Resources\\UserResource');
-
-        $mockXotData->shouldReceive('make')->andReturn($mockXotData);
-
-        // ✅ CRITICO: Bind nel container per risoluzione automatica
-        app()->instance(XotData::class, $mockXotData);
-    }
-
-    /**
-     * Create test user with specific type for multi-type testing.
-     *
-     * @param  array<string, mixed>  $attributes
-     */
-    protected static function createTestUserWithType(string $type, array $attributes = []): UserContract
-    {
-        $attributes['type'] = $type;
-
-        return static::createTestUser($attributes);
-    }
-
-    /**
-     * Generate test data array with common fields.
-     *
-     * @param  array<string, mixed>  $overrides
-     * @return array<string, mixed>
-     */
-    protected static function generateTestData(array $overrides = []): array
-    {
-        $defaultData = [
-            'name' => fake()->name(),
-            'email' => static::generateUniqueEmail(),
-            'password' => 'password123',
-            'password_confirmation' => 'password123',
-        ];
-
-        return array_merge($defaultData, $overrides);
-    }
-
-    /**
-     * Assert that user is authenticated with correct type.
-     */
-    protected function assertUserAuthenticated(?string $expectedType = null): void
-    {
-        $this->assertAuthenticated();
-
-        if ($expectedType !== null) {
-            /** @var UserContract|null $user */
-            $user = auth()->user();
-            $this->assertNotNull($user);
-
-            if ($user && method_exists($user, 'type')) {
-                $this->assertEquals($expectedType, $user->type ?? null);
-            }
-        }
     }
 }

@@ -25,18 +25,17 @@ namespace Modules\Notify\Tests\Unit\Models;
 
 use Modules\Notify\Database\Factories\ContactFactory;
 use Modules\Notify\Models\Contact;
-use Modules\Notify\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
+use function Pest\Laravel\withoutExceptionHandling;
+
 beforeEach(function (): void {
-    /** @var TestCase $this */
-    $this->disableExceptionHandling();
+    withoutExceptionHandling();
 });
 
 describe('Contact PartOne', function (): void {
     test('_can_create_contact', function (): void {
-        /** @var TestCase $this */
         $contact = ContactFactory::new()->createOne([
             'model_type' => 'App\Models\User',
             'model_id' => '123',
@@ -91,7 +90,7 @@ describe('Contact PartOne', function (): void {
     });
 
     test('_has_correct_fillable_fields', function (): void {
-        $contact = new Contact();
+        $contact = new Contact;
 
         $expectedFillable = [
             'model_id',
@@ -110,7 +109,8 @@ describe('Contact PartOne', function (): void {
     });
 
     test('_has_correct_casts', function (): void {
-        $contact = new Contact();
+        $contact = new Contact;
+
         $expectedCasts = [
             'id' => 'string',
             'uuid' => 'string',
@@ -212,7 +212,6 @@ describe('Contact PartOne', function (): void {
     });
 
     test('_can_update_contact', function (): void {
-        /** @var TestCase $this */
         $contact = ContactFactory::new()->createOne([
             'model_type' => 'App\Models\User',
             'model_id' => '123',
@@ -259,7 +258,6 @@ describe('Contact PartOne', function (): void {
     });
 
     test('_can_find_by_contact_type', function (): void {
-        /** @var TestCase $this */
         ContactFactory::new()->createOne([
             'model_type' => 'App\Models\User',
             'model_id' => '123',
@@ -336,5 +334,4 @@ describe('Contact PartOne', function (): void {
         Assert::assertEquals($contact->id, $foundContact->id);
         Assert::assertEquals('test@example.com', $foundContact->value);
     });
-
 });

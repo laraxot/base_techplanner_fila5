@@ -47,9 +47,6 @@ DELETE: /var/www/_bases/base_ptv_fila5/laravel/Modules/User/docs/archive/volt_er
 
 **Example 2: Xot Module - 4 duplicates**
 ```
-KEEP: /var/www/_bases/base_fixcity_fila5/laravel/Modules/Xot/docs/archive/historical/general-rules.md
-DELETE: /var/www/_bases/base_fixcity_fila5/laravel/Modules/Xot/docs/archive/historical/general-rules-1.md
-DELETE: /var/www/_bases/base_fixcity_fila5/laravel/Modules/Xot/docs/archive/general-rules-1.md
 KEEP: /var/www/_bases/base_ptv_fila5/laravel/Modules/Xot/docs/archive/historical/general-rules.md
 DELETE: /var/www/_bases/base_ptv_fila5/laravel/Modules/Xot/docs/archive/historical/general-rules-1.md
 DELETE: /var/www/_bases/base_ptv_fila5/laravel/Modules/Xot/docs/archive/general-rules-1.md
@@ -211,7 +208,6 @@ Xot/docs/
 
 **Multiple index files serving same purpose:**
 ```
-Xot/docs/00-INDEX.md
 Xot/docs/00-index.md
 Xot/docs/00-index.md
 Xot/docs/index.md
@@ -287,7 +283,7 @@ docs/master/
 ### 5.2 Date-Based Naming (Anti-Pattern)
 
 **Examples:**
-- `phpstan-analysis-2026-03-02.md`
+- `phpstan-analysis.md`
 - `documentation-improvement-summary-2026-03-13.md`
 - `bugfix-report-2025-01-14.md`
 

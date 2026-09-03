@@ -13,12 +13,9 @@ use Maatwebsite\Excel\Concerns\FromIterator;
 use Maatwebsite\Excel\Concerns\WithHeadings;
 use Maatwebsite\Excel\Concerns\WithMapping;
 use Modules\Lang\Actions\TransCollectionAction;
-use Traversable;
 
 /**
- * @template TRow
- *
- * @implements WithMapping<TRow>
+ * @implements WithMapping<mixed>
  */
 class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, WithMapping
 {
@@ -33,7 +30,7 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
     public array $fields = [];
 
     /**
-     * @param  LazyCollection<int, TRow>  $collection
+     * @param  LazyCollection<int, mixed>  $collection
      * @param  array<int, string>  $fields
      */
     public function __construct(
@@ -139,7 +136,7 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
             return $row;
         }
 
-        if ($row instanceof Traversable) {
+        if ($row instanceof \Traversable) {
             return iterator_to_array($row);
         }
 

@@ -57,7 +57,7 @@ describe('Notify coverage boost', function (): void {
                 Assert::assertInstanceOf($class, app($class));
             } catch (\Throwable) {
                 try {
-                    Assert::assertInstanceOf($class, new $class());
+                    Assert::assertInstanceOf($class, new $class);
                 } catch (\Throwable) {
                     Assert::assertTrue($ref->hasMethod('execute') || $ref->hasMethod('handle'));
                 }

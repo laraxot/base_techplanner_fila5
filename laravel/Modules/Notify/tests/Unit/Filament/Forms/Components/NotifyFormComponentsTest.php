@@ -27,7 +27,7 @@ test('html layout path select exposes expected default name via method signature
 });
 
 test('contact section returns text inputs schema from enum', function () {
-    $proxy = new ContactSectionTestProxy();
+    $proxy = new ContactSectionTestProxy;
     $schema = $proxy->exposedFormSchema();
     foreach ($schema as $component) {
         Assert::assertInstanceOf(TextInput::class, $component);

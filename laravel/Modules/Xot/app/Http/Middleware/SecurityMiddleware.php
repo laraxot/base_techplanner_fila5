@@ -74,7 +74,6 @@ class SecurityMiddleware
         $key = "rate_limit:ip:{$ip}";
         $limit = $this->getRateLimitForEndpoint($endpoint);
 
-        /** @var int $current */
         $current = SafeIntCastAction::cast(cache()->get($key, 0));
 
         if ($current >= $limit) {
@@ -99,7 +98,6 @@ class SecurityMiddleware
         $key = 'rate_limit:ua:'.md5($userAgent);
         $limit = $this->getRateLimitForEndpoint($endpoint);
 
-        /** @var int $current */
         $current = SafeIntCastAction::cast(cache()->get($key, 0));
 
         if ($current >= $limit) {
@@ -124,7 +122,6 @@ class SecurityMiddleware
         $key = "rate_limit:endpoint:{$endpoint}";
         $limit = $this->getRateLimitForEndpoint($endpoint);
 
-        /** @var int $current */
         $current = SafeIntCastAction::cast(cache()->get($key, 0));
 
         if ($current >= $limit) {

@@ -10,7 +10,6 @@ Analisi completa dell'architettura dei modelli Eloquent nel monorepo Laravel con
 - **Linee di codice eliminate**: ~200+
 - **Moduli interessati**: 4 (Geo, Cms, healthcare_app, User)
 - **Moduli interessati**: 4 (Geo, Cms, ModuloEsempio, User)
-- **Moduli interessati**: 4 (Geo, Cms, Quaeris, User)
 - **Impatto**: Riduzione drastica della duplicazione, miglioramento della manutenibilità
 
 ---
@@ -25,17 +24,8 @@ namespace Modules\healthcare_app\Models;
 ### 1. ❌ ModuloEsempio\Models\BaseModel estendeva Model invece di XotBaseModel
 
 **Prima** (VIOLAZIONE CRITICA):
-```
-
 ```php
 namespace Modules\ModuloEsempio\Models;
-
-### 1. ❌ Quaeris\Models\BaseModel estendeva Model invece di XotBaseModel
-
-**Prima** (VIOLAZIONE CRITICA):
-```php
-namespace Modules\Quaeris\Models;
-
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -50,7 +40,6 @@ abstract class BaseModel extends Model
     public $incrementing = true;
     public $timestamps = true;
     protected $connection = 'healthcare_app';
-    protected $connection = 'quaeris';
     protected $casts = ['published_at' => 'datetime', ...];
     protected $primaryKey = 'id';
     protected $hidden = [];
@@ -66,7 +55,6 @@ abstract class BaseModel extends Model
 ```php
 namespace Modules\healthcare_app\Models;
 namespace Modules\ModuloEsempio\Models;
-namespace Modules\Quaeris\Models;
 
 use Modules\Xot\Models\XotBaseModel;
 
@@ -77,7 +65,6 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
     use InteractsWithMedia;
 
     protected $connection = 'healthcare_app';
-    protected $connection = 'quaeris';
     protected $with = ['extra'];
 }
 ```
@@ -364,7 +351,6 @@ BaseModel → BaseModelLang → Post
 |--------|--------|-------------|------------|-----------|
 | healthcare_app | BaseModel | 66 | 20 | -70% |
 | ModuloEsempio | BaseModel | 66 | 20 | -70% |
-| Quaeris | BaseModel | 66 | 20 | -70% |
 | Geo | BasePivot | 59 | 8 | -86% |
 | Geo | BaseMorphPivot | 67 | 8 | -88% |
 | Cms | BasePivot | 60 | 8 | -87% |

@@ -43,13 +43,11 @@ Defines:
 ### ✅ 2. Example Conversions
 
 #### File Renamed
-- **Before**: `laravel/Modules/Cms/docs/fixcity-pages-content-blocks.md`
 - **Before**: `laravel/Modules/Cms/docs/ptv-pages-content-blocks.md`
 - **After**: `laravel/Modules/Cms/docs/pages-content-blocks.md`
 
 #### Content Updated
 - Replaced `FixCity` → `[PROJECT_NAME]`
-- Replaced `fixcity` → `[project_name]`
 - Replaced `ptv` → `[project_name]`
 - Added contextual notes for users
 - Made examples generic with placeholders
@@ -59,8 +57,6 @@ Defines:
 
 Changes:
 - Removed "FixCity PTVX ecosystem" → "PTVX ecosystem"
-- Replaced `base_fixcity_fila5/` → `<project_root>/`
-- Replaced `fixcity.local` → `[YOUR_DOMAIN]`
 - Replaced `base_ptv_fila5/` → `<project_root>/`
 - Replaced `ptv.local` → `[YOUR_DOMAIN]`
 - Replaced GitHub repo reference → `your-org/your-repo`
@@ -168,7 +164,6 @@ git commit -m "docs(Cms): make documentation agnostic"
 ### Pre-Commit Checklist
 
 For each module/theme:
-- [ ] No `FixCity`, `Fixcity`, `fixcity` in content
 - [ ] No `FixCity`, `Fixcity`, `ptv` in content
 - [ ] No project-specific filenames
 - [ ] Placeholders used consistently:
@@ -218,7 +213,6 @@ fi
 # FixCity Blog Module
 
 This module provides blog functionality for FixCity platform.
-Access at: fixcity.local/blog
 Access at: ptv.local/blog
 ```
 
@@ -240,10 +234,10 @@ Access at: `[YOUR_DOMAIN]/blog`
 
 1. Add to Fixcity config:
    ```php
-   config('fixcity.blog.settings')
+   config('ptv.blog.settings')
    ```
 
-2. Routes available at fixcity.local/admin/blog
+2. Routes available at ptv.local/admin/blog
 ```
 
 **After**:
@@ -299,7 +293,6 @@ git revert <commit-hash>
 
 ### Quantitative
 - ✅ 0 occurrences of "FixCity" in module/theme docs
-- ✅ 0 occurrences of "fixcity" in module/theme docs
 - ✅ 0 occurrences of "ptv" in module/theme docs
 - ✅ 100% of filenames are project-agnostic
 - ✅ 100% of cross-references use relative paths
@@ -375,7 +368,6 @@ A: Consider keeping it in the project root, not in the reusable Modules director
 A: Use generic names: "Blog Module" instead of "FixCity Blog Module".
 
 **Q: Can I still mention FixCity in examples?**  
-A: Yes, but clearly mark them as examples: "e.g., 'fixcity' for a civic platform".
 A: Yes, but clearly mark them as examples: "e.g., 'ptv' for a civic platform".
 
 ---

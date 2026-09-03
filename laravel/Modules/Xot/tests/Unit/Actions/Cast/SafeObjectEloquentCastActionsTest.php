@@ -65,7 +65,7 @@ test('safe object cast action works', function (): void {
 
 test('safe eloquent cast action works', function (): void {
     $action = app(SafeEloquentCastAction::class);
-    $model = new class() extends XotBaseModel
+    $model = new class extends XotBaseModel
     {
         protected $attributes = [
             'str' => 'test',

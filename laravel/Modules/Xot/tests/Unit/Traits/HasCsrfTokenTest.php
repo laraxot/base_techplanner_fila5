@@ -16,7 +16,7 @@ it('sets csrf token on mount', function (): void {
     $session->allows(['token' => $token]);
     App::instance('session', $session);
 
-    $class = new class()
+    $class = new class
     {
         public string $_token = '';
 
@@ -40,7 +40,7 @@ it('sets csrf token on mount', function (): void {
 it('verifies csrf token', function (): void {
     $token = 'secret-token';
 
-    $class = new class()
+    $class = new class
     {
         public string $_token = '';
 

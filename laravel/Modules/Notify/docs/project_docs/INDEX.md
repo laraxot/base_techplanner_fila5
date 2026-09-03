@@ -1,12 +1,10 @@
 ---
-title: "📚 Documentation Index - FixCity Project"
 title: "📚 Documentation Index - Notify Project"
 type: index
 tags: [notify, docs, project_docs]
 module: Notify
 created: 2026-07-20
 updated: 2026-07-20
-qmd: "notify documentazione project_docs index 📚 documentation index - fixcity project index readme frontmatter qmd search"
 qmd: "notify documentazione project_docs index 📚 documentation index - laraxot project index readme frontmatter qmd search"
 issues:
   - "https://github.com/laraxot/module_notify_fila5/issues/56"
@@ -19,7 +17,6 @@ related:
   - ../integrations/readme.md
   - ../templates/readme.md
 ---
-# 📚 Documentation Index - FixCity Project
 # 📚 Documentation Index - Notify Project
 
 **Last Updated:** 2025-10-01 21:47  
@@ -33,7 +30,6 @@ related:
 
 1. [**README.md**](../README.md) - Project overview and quick start
 2. [**CONTRIBUTING.md**](../CONTRIBUTING.md) - How to contribute
-3. [**ARCHITECTURE.md**](./ARCHITECTURE.md) - System architecture
 3. [**ARCHITECTURE.md**](./architecture.md) - System architecture
 4. [**QUALITY_DASHBOARD.md**](./QUALITY_DASHBOARD.md) - Real-time metrics
 
@@ -71,7 +67,6 @@ related:
 - Commit guidelines
 - PR process
 
-### 3. ARCHITECTURE.md
 ### 3. architecture.md
 **Purpose:** System architecture documentation  
 **Audience:** Developers, architects  
@@ -170,7 +165,6 @@ Each module has a `docs/` directory containing:
 - [Extensive documentation](../Modules/User/docs/)
 
 #### Other Modules
-- AI, Activity, Blog, Cms, Comment, Fixcity, Gdpr, Geo, Job, Lang, Media, Notify, Rating, Seo, UI
 - AI, Activity, Blog, Cms, Comment, App, Gdpr, Geo, Job, Lang, Media, Notify, Rating, Seo, UI
 - Each with cyclomatic complexity report
 
@@ -231,7 +225,6 @@ Each module has a `docs/` directory containing:
 ### For Developers
 - README.md
 - CONTRIBUTING.md
-- ARCHITECTURE.md
 - architecture.md
 - Module documentation
 - Refactoring reports
@@ -280,7 +273,6 @@ Each module has a `docs/` directory containing:
 ### By Topic
 
 **Architecture & Design:**
-- ARCHITECTURE.md
 - architecture.md
 - Design patterns section
 - Module structure
@@ -414,7 +406,6 @@ All documents include:
 ## 📅 Recent Updates
 
 ### 2025-10-01
-- ✅ Created INDEX.md
 - ✅ Created index.md
 - ✅ Completed MISSION_ACCOMPLISHED.md
 - ✅ Finalized PROJECT_COMPLETION_CERTIFICATE.md
@@ -422,7 +413,6 @@ All documents include:
 - ✅ Enhanced README.md
 
 ### 2025-09-30
-- ✅ Created ARCHITECTURE.md
 - ✅ Created architecture.md
 - ✅ Created QUALITY_DASHBOARD.md
 - ✅ Created 2025_EXCELLENCE_ACHIEVEMENT.md
@@ -450,7 +440,6 @@ All documents include:
 ## 📞 Contact
 
 ### Documentation Team
-- **Email:** docs@fixcity.com
 - **Email:** docs@laraxot.com
 - **GitHub:** Open an issue
 - **Slack:** #documentation

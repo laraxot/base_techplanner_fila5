@@ -92,7 +92,6 @@ class FileAction
 
         $ns_after0 = Str::before($ns_after, '/');
         $ns_after1 = Str::after($ns_after, '/');
-        /** @var string $ns_after0 */
         $ns_after = str_replace('.', '/', (string) $ns_after0).'/'.$ns_after1;
 
         if (Str::startsWith($ns_after, '/')) {

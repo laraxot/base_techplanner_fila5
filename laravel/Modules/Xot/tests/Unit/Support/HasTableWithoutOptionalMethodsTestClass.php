@@ -15,8 +15,6 @@ class HasTableWithoutOptionalMethodsTestClass
 {
     use HasXotTable;
 
-    public ?string $tableSearch = null;
-
     public function getLayoutView(): mixed
     {
         $mock = \Mockery::mock();
@@ -26,8 +24,9 @@ class HasTableWithoutOptionalMethodsTestClass
         return $mock;
     }
 
-    /** @return array<string, mixed> */
-    protected function getTableColumns(): array
+    #[\Override]
+    /** @return array<int, mixed> */
+    public function getTableColumns(): array
     {
         return [];
     }

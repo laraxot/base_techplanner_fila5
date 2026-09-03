@@ -11,17 +11,20 @@ use PHPUnit\Framework\Assert;
 
 describe('AnalyzeTranslationFiles', function () {
     it('has correct signature', function () {
-        $command = new AnalyzeTranslationFiles();
+        $command = new AnalyzeTranslationFiles;
+
         Assert::assertSame('notify:analyze-translations', $command->getName());
     });
 
     it('has description', function () {
-        $command = new AnalyzeTranslationFiles();
+        $command = new AnalyzeTranslationFiles;
+
         Assert::assertNotEmpty($command->getDescription());
     });
 
     it('extends command', function () {
-        $command = new AnalyzeTranslationFiles();
+        $command = new AnalyzeTranslationFiles;
+
         Assert::assertInstanceOf(Command::class, $command);
     });
 
@@ -62,7 +65,8 @@ describe('AnalyzeTranslationFiles', function () {
     });
 
     it('flatten array handles nested arrays', function () {
-        $command = new AnalyzeTranslationFiles();
+        $command = new AnalyzeTranslationFiles;
+
         $reflection = new \ReflectionClass($command);
         $method = $reflection->getMethod('flattenArray');
         $method->setAccessible(true);
@@ -80,7 +84,8 @@ describe('AnalyzeTranslationFiles', function () {
     });
 
     it('flatten array handles empty array', function () {
-        $command = new AnalyzeTranslationFiles();
+        $command = new AnalyzeTranslationFiles;
+
         $reflection = new \ReflectionClass($command);
         $method = $reflection->getMethod('flattenArray');
         $method->setAccessible(true);
@@ -91,7 +96,8 @@ describe('AnalyzeTranslationFiles', function () {
     });
 
     it('flatten array handles nested levels', function () {
-        $command = new AnalyzeTranslationFiles();
+        $command = new AnalyzeTranslationFiles;
+
         $reflection = new \ReflectionClass($command);
         $method = $reflection->getMethod('flattenArray');
         $method->setAccessible(true);
@@ -108,7 +114,8 @@ describe('AnalyzeTranslationFiles', function () {
     });
 
     it('flatten array handles prefix parameter', function () {
-        $command = new AnalyzeTranslationFiles();
+        $command = new AnalyzeTranslationFiles;
+
         $reflection = new \ReflectionClass($command);
         $method = $reflection->getMethod('flattenArray');
         $method->setAccessible(true);

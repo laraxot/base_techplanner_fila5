@@ -178,7 +178,6 @@ Tutti i modelli devono passare la validazione PHPStan livello 9+:
 
 ```bash
 cd laravel
-cd /var/www/html/ptvx/laravel
 ./vendor/bin/phpstan analyse --level=9 --memory-limit=2G Modules/Sigma/app/Models/Integparam.php
 ```
 

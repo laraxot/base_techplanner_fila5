@@ -35,8 +35,9 @@ abstract class TestCase extends XotBaseTestCase
      * namespace, e function_exists senza namespace cerca quella globale. Il secondo
      * file caricato faceva fallire l'intera suite con un "Cannot redeclare".
      *
-     * Il tipo dichiarato era Expectation, ma shouldReceive() restituisce una
-     * CompositeExpectation: entrambe implementano ExpectationInterface.
+     * Con un singolo metodo shouldReceive() restituisce una Expectation
+     * (il PHPDoc Mockery lo garantisce: `$methodNames is list{} ? HigherOrderMessage : Expectation`),
+     * che espone with()/andReturnUsing() ecc. — ExpectationInterface no.
      */
     public static function expectMethod(LegacyMockInterface|MockInterface $mock, string $method): Expectation
     {

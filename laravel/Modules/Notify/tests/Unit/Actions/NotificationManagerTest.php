@@ -13,7 +13,7 @@ use Modules\Notify\Models\NotificationTemplate;
 
 function actionsNotificationManagerRecipient(): Model
 {
-    return new class() extends Model
+    return new class extends Model
     {
         protected $guarded = [];
 
@@ -26,7 +26,7 @@ afterEach(function (): void {
 });
 
 it('can send notification to single recipient', function (): void {
-    $notificationManager = new NotificationManager();
+    $notificationManager = new NotificationManager;
     $recipient = actionsNotificationManagerRecipient();
     $templateCode = 'test_template';
     $data = ['key' => 'value'];
@@ -47,7 +47,7 @@ it('can send notification to single recipient', function (): void {
 });
 
 it('can send notification to multiple recipients', function (): void {
-    $notificationManager = new NotificationManager();
+    $notificationManager = new NotificationManager;
     $recipients = [
         actionsNotificationManagerRecipient(),
         actionsNotificationManagerRecipient()];
@@ -70,7 +70,7 @@ it('can send notification to multiple recipients', function (): void {
 });
 
 it('can get template by code', function (): void {
-    $notificationManager = new NotificationManager();
+    $notificationManager = new NotificationManager;
     $code = 'test_template';
 
     $template = typedMock(NotificationTemplate::class);
@@ -83,7 +83,7 @@ it('can get template by code', function (): void {
 });
 
 it('can get templates by category', function (): void {
-    $notificationManager = new NotificationManager();
+    $notificationManager = new NotificationManager;
     $category = 'test_category';
 
     $result = $notificationManager->getTemplatesByCategory($category);
@@ -92,7 +92,7 @@ it('can get templates by category', function (): void {
 });
 
 it('throws exception when template not found', function (): void {
-    $notificationManager = new NotificationManager();
+    $notificationManager = new NotificationManager;
     $recipient = actionsNotificationManagerRecipient();
     $templateCode = 'invalid_template';
 
@@ -101,7 +101,7 @@ it('throws exception when template not found', function (): void {
 });
 
 it('returns array from send method', function (): void {
-    $notificationManager = new NotificationManager();
+    $notificationManager = new NotificationManager;
     $recipient = actionsNotificationManagerRecipient();
     $templateCode = 'test_template';
 
@@ -114,7 +114,7 @@ it('returns array from send method', function (): void {
 });
 
 it('returns array from send multiple method', function (): void {
-    $notificationManager = new NotificationManager();
+    $notificationManager = new NotificationManager;
     $recipients = [actionsNotificationManagerRecipient()];
     $templateCode = 'test_template';
 

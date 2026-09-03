@@ -175,6 +175,5 @@
 
 **Report Generated**: 2025-01-01  
 **Next Update**: 2025-01-15  
-**Contact**: development@fixcity.io
 **Contact**: development@ptv.io
 

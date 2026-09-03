@@ -31,7 +31,7 @@ class TicketAssignedNotification extends Notification
 
     public function toMail(object $notifiable): MailMessage
     {
-        return (new MailMessage())
+        return (new MailMessage)
             ->subject('New Ticket Assigned')
             ->line("A new ticket has been assigned to you by {$this->assignedBy->name}")
             ->action('View Ticket', url('/'));
@@ -43,7 +43,6 @@ class TicketAssignedNotification extends Notification
     public function toArray(object $notifiable): array
     {
         return [
-            'assigned_by' => (string) $this->assignedBy->id,
-        ];
+            'assigned_by' => $this->assignedBy->id];
     }
 }

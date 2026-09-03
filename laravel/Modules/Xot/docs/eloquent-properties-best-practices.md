@@ -146,11 +146,11 @@ public function getDisplayName(): string
     if (isset($this->full_name) && $this->full_name) {
         return $this->full_name;
     }
-    
+
     if (isset($this->first_name) && $this->first_name) {
         return $this->first_name;
     }
-    
+
     return 'Utente';
 }
 ```
@@ -187,7 +187,6 @@ Tutti i file devono passare la validazione PHPStan livello 9+:
 
 ```bash
 cd laravel
-cd /var/www/html/ptvx/laravel
 ./vendor/bin/phpstan analyze Modules --level=9
 ```
 

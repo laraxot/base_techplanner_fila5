@@ -86,7 +86,6 @@ Creare componenti compatibili Bootstrap Italia.
 ### Fase 3: Testing
 
 ```bash
-curl http://fixcity.local/it/tests/homepage | grep -o '<section[^>]*>' | head -10
 curl http://ptv.local/it/tests/homepage | grep -o '<section[^>]*>' | head -10
 ```
 

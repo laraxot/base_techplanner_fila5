@@ -423,11 +423,11 @@ docs/
 ├── README.md (✅ Project Overview)
 ├── MASTER_PLAN.md (✅ This document)
 ├── PROJECT_STATUS.md (✅ Status Report)
-├── ARCHITECTURE.md (📋 Technical Architecture)
+├── architecture.md (📋 Technical Architecture)
 ├── API_REFERENCE.md (📋 API Documentation)
 ├── DEPLOYMENT.md (📋 Deployment Guide)
 └── modules/
-    ├── fixcity/ (✅ Business Logic + Roadmap)
+    ├── ptv/ (✅ Business Logic + Roadmap)
     ├── user/ (✅ IAM + Roadmap)
     ├── notify/ (✅ Notifications + Roadmap)
     ├── geo/ (✅ Geolocation + Roadmap)
@@ -482,6 +482,5 @@ FixCity è posizionata per diventare la **piattaforma leader europea** per il ci
 - *Technical capabilities e constraints*
 - *Team composition e roadmap feasibility*
 
-**Per domande o approfondimenti**: development@fixcity.io
 **Per domande o approfondimenti**: development@ptv.io
 

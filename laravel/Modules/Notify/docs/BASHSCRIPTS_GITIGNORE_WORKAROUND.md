@@ -22,7 +22,6 @@ Questo significa che:
 ### Opzione 1: Commit Forzato
 
 ```bash
-cd /var/www/_bases/base_fixcity_fila5
 cd /var/www/_bases/base_ptv_fila5
 
 # Aggiungi forzatamente bashscripts
@@ -137,7 +136,6 @@ git commit -m "fix: Description of fix"
 git push origin dev
 
 # 6. Monitora
-gh run list --repo laraxot/base_fixcity_fila5
 gh run list --repo laraxot/base_ptv_fila5
 ```
 

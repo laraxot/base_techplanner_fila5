@@ -59,7 +59,7 @@ test('send records notification bulk action exposes expected schema components',
 });
 
 test('send records notification bulk action delegates to send records action', function (): void {
-    $spy = new SendRecordsNotificationBulkActionSpy();
+    $spy = new SendRecordsNotificationBulkActionSpy;
     app()->instance(SendRecordsNotificationAction::class, $spy);
 
     $action = SendRecordsNotificationBulkAction::make();

@@ -5,10 +5,12 @@ declare(strict_types=1);
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 use Modules\Xot\Tests\Unit\Support\DummyTestModel;
 use PHPUnit\Framework\Assert;
-use PHPUnit\Framework\TestCase;
 
-uses(TestCase::class);
+uses(PHPUnit\Framework\TestCase::class);
 
+/**
+ * @param object $instance
+ */
 function invokeProtectedSortHook(object $instance, string $method): mixed
 {
     $reflection = new ReflectionMethod($instance, $method);
@@ -17,7 +19,7 @@ function invokeProtectedSortHook(object $instance, string $method): mixed
 }
 
 test('getTableSortColumn default su XotBaseResourceTable', function (): void {
-    $table = new class() extends XotBaseResourceTable
+    $table = new class extends XotBaseResourceTable
     {
         public function getTableColumns(): array
         {
@@ -35,7 +37,7 @@ test('getTableSortColumn default su XotBaseResourceTable', function (): void {
 });
 
 test('getTableSortColumn override su XotBaseResourceTable', function (): void {
-    $table = new class() extends XotBaseResourceTable
+    $table = new class extends XotBaseResourceTable
     {
         public function getTableColumns(): array
         {

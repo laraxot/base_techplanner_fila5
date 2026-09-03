@@ -15,10 +15,11 @@ discussions:
 
 # Activity Log — Xot
 
-## [2026-07-22] cleanup | Support + Services.old
+## [2026-07-24] architecture | no domain Actions in Xot
 
-- Cancellati `app/Support/` (orfani già migrati ad Actions/Adapters) e `app/Services.old/` (archivio confuso).
-- Canon: [no-services-no-support-queueable-actions](./concepts/no-services-no-support-queueable-actions.md) · [no-app-support-queueable-actions](./concepts/no-app-support-queueable-actions.md).
+- Concept: [no-domain-actions-in-xot.md](concepts/no-domain-actions-in-xot.md)
+- Rimosse/spostate: AI/Ollama → AI, ContextCompressor → AI, Geo duplicati eliminati
+- Root: `domain-actions-belong-to-domain-module` · skill `xot-is-framework-base`
 
 ## [2026-06-30] governance | no legacy folders + model seeder parity
 
@@ -31,6 +32,29 @@ discussions:
 - Hub: [module-model-migration-seeder-parity.md](../../../../docs/wiki/concepts/module-model-migration-seeder-parity.md)
 - Seeder parity: User 37/37, Job 15/15, Predict 16/16, Lang OK
 - Backlog: consolidamento migrazioni duplicate (GAP migration)
+
+title: "Activity Log"
+type: log
+module: Xot
+tags: [xot, phpstan, pest, qmd, ponytail-audit]
+created: 2026-04-20
+updated: 2026-06-30
+qmd: "Xot log phpstan pest bridge discipline ponytail audit"
+issues:
+  - "https://github.com/laraxot/module_xot_fila5/issues/28"
+  - "https://github.com/laraxot/base_predict_fila5/issues/237"
+title: "Activity Log"
+type: log
+module: Xot
+tags: [xot, phpstan, pest, qmd, ponytail-audit]
+created: 2026-04-20
+updated: 2026-06-30
+qmd: "Xot log phpstan pest bridge discipline ponytail audit"
+issues:
+  - "https://github.com/laraxot/module_xot_fila5/issues/28"
+discussions:
+  - "https://github.com/laraxot/module_xot_fila5/discussions/29"
+---
 
 ## [2026-06-30] ponytail audit remediation — repo-wide
 
@@ -138,15 +162,14 @@ discussions:
 
 - `start.txt` v6: hub [llm-wiki.md](../../../../../../docs/wiki/index/llm-wiki.md), [sacred-artifacts-never-delete.md](../../../../../../docs/wiki/concepts/sacred-artifacts-never-delete.md), [quality-gate-canonical-commands.md](../../../../../../docs/wiki/concepts/quality-gate-canonical-commands.md).
 - Gate §1.5 `guard-model-policy-delete.sh`; §1.4 `laravel-model-policies-sacred.mdc`; fallback `grep` se `rg` assente.
-- Prompt fratelli: PHPStan exit 124 timeout documentato; `find` cartelle root PHP mirato (esclude legacy `Config/`).
+- Prompt fratelli con `- PHPStan: exit 124 timeout documentato; `find` cartelle root PHP mirato (esclude legacy `Config/`).
 - `prompts/README.md`: `start.txt` come primo step Quick Start.
 
 ## [2026-06-30] prompts | start.txt v5 — gate infrastruttura e igiene
 
 - `start.txt` v5: sezioni `.claude` junction, ponytail, ponytail-audit hub, policy/actions protetti, fallback PHPStan modulo/file, anti-append ricorsivo.
 - `rules.txt`: conflitti Git risolti forward-only; allineato a policy stub + Queueable Actions + migrations.
-- Gate sessione: git pulito; conflitti PHP ok; 16 prompt fratelli ancora con marker di conflitto.
-
+- Gate sessione: git pulito; conflitti PHP ok; 16 prompt fratelli ancora con `
 ## [2026-06-30] prompts | start.txt v4 — gate one-shot e igiene prompt
 
 - `start.txt` v4: blocco **gate rapido one-shot**, regola igiene (no append query utente), `find -mindepth 1` per audit cartelle, link a `module-root-php-folders-forbidden.md`, `start.txt` canonico se `rules.txt` in conflitto.
@@ -161,7 +184,7 @@ discussions:
 - Verificato: `laravel/composer.json` Predict gia' skeleton (piu' stretto di FixCity: no responsecache/phpmd/seeders nel root).
 - Nuova pagina progetto: [`docs/wiki/concepts/composer-root-minimal-nwidart.md`](../../../../../../docs/wiki/concepts/composer-root-minimal-nwidart.md).
 - Nuova pagina Xot: [`composer-merge-plugin-modules-only.md`](concepts/composer-merge-plugin-modules-only.md).
-- Raw confronto aggiornato: [`composer-root-skeleton-ptv-comparison-2026-06-30.md`](../raw/notes/composer-root-skeleton-ptv-comparison-2026-06-30.md).
+- Raw confronto aggiornato: [`composer-root-skeleton-fixcity-comparison-2026-06-30.md`](../raw/notes/composer-root-skeleton-fixcity-comparison-2026-06-30.md).
 
 ## [2026-06-30] composer | gate start.txt + autoload runtime temi
 
@@ -175,7 +198,7 @@ discussions:
 - Rimosso merge di `Themes/*/composer.json`; vietato anche PSR-4 root per temi e `Database\\Seeders\\`.
 - Pagina corretta: [`theme-psr4-autoload-without-merge.md`](concepts/theme-psr4-autoload-without-merge.md).
 - Aggiornata: [`composer-root-skeleton-modular.md`](concepts/composer-root-skeleton-modular.md).
-- Raw: [`composer-root-skeleton-ptv-comparison-2026-06-30.md`](../raw/notes/composer-root-skeleton-ptv-comparison-2026-06-30.md).
+- Raw: [`composer-root-skeleton-fixcity-comparison-2026-06-30.md`](../raw/notes/composer-root-skeleton-fixcity-comparison-2026-06-30.md).
 
 ## [2026-06-29] phpstan | HasXotTable grid label/state normalization
 
@@ -207,9 +230,9 @@ discussions:
 ## [2026-06-13] docs | Hub platform-completion-roadmap + gate PHPStan zero
 
 - Creato [overviews/platform-completion-roadmap.md](overviews/platform-completion-roadmap.md) — SSoT completamento 16 moduli + 4 temi.
-- Aggiornati [PHPSTAN-BEST-PRACTICES.md](phpstan-best-practices.md), [phpstan-pest-bridge-discipline.md](concepts/phpstan-pest-bridge-discipline.md).
+- Aggiornati [PHPSTAN-BEST-PRACTICES.md](PHPSTAN-BEST-PRACTICES.md), [phpstan-pest-bridge-discipline.md](concepts/phpstan-pest-bridge-discipline.md).
 - Fix test: `FileActionsTest`, `GetClassNameByPathActionTest` (pattern `@var` / `assertIsString`).
-- Base [#372](https://github.com/laraxot/base_ptv_fila5/issues/372).
+- Base [#372](https://github.com/laraxot/base_fixcity_fila5/issues/372).
 
 ## [2026-06-12] testing | Pest global class imports
 
@@ -249,8 +272,8 @@ discussions:
 
 ## [2026-06-05] docs | HackerNoon harness — tips 001-022 in wiki locale
 
-- Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-ptv-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt)
-- GitHub: [#272](https://github.com/laraxot/base_ptv_fila5/issues/272) / [D#273](https://github.com/laraxot/base_ptv_fila5/discussions/273)
+- Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt)
+- GitHub: [#272](https://github.com/laraxot/base_fixcity_fila5/issues/272) / [D#273](https://github.com/laraxot/base_fixcity_fila5/discussions/273)
 
 ## [2026-06-05] docs | AI harness canon + stub moduli allineati
 
@@ -265,7 +288,7 @@ discussions:
 ## [2026-05-25] docs | audit profondo ridondanze — second brain ripulito da merge-marker
 
 - **Obiettivo**: consolidare osservabilità delle ripetizioni (codice + documentazione) senza toccare applicativo.
-- **Deliverable**: [`redundancy/audit-profondo-ridondanze-holistic.md`](redundancy/audit-profondo-ridondanze-holistic.md); aggiornato [`byte-identical-files-static-scan.md`](redundancy/byte-identical-files-static-scan.md) (riesame numeri SHA256 rigorosi `.php` vs `.blade.php`); sistemati hub [`concepts/ridondanze-cross-cutting-codebase.md`](concepts/ridondanze-cross-cutting-codebase.md) e [`concepts/redundancy-catalog.md`](concepts/redundancy-catalog.md) (prima gravemente corrotti da merge-marker).
+- **Deliverable**: [`redundancy/audit-profondo-ridondanze-holistic.md`](redundancy/audit-profondo-ridondanze-holistic.md); aggiornato [`byte-identical-files-static-scan.md`](redundancy/byte-identical-files-static-scan.md) (riesame numeri SHA256 rigorosi `.php` vs `.blade.php`); sistemati hub [`concepts/ridondanze-cross-cutting-codebase.md`](concepts/ridondanze-cross-cutting-codebase.md) e [`concepts/redundancy-catalog.md`](concepts/redundancy-catalog.md) (prima gravemente corrotti da `- **Nota modulo Fixcity tema**: superfici duplicate cross-modulo in [`fixcity-cross-module-duplicate-surfaces.md`](../../../Fixcity/docs/wiki/redundancy/fixcity-cross-module-duplicate-surfaces.md).
 
 ## [2026-05-24] refactor | wizard — normalizzazione stato **rimossa dalla base**
 
@@ -301,7 +324,7 @@ discussions:
 ## [2026-05-22] docs | DRY second brain + merge doc wizard HasWizard
 
 - **`second-brain-local-discipline`:** solo [`concepts/second-brain-local-discipline.md`](concepts/second-brain-local-discipline.md) mantiene il corpo; negli altri nove moduli stesso basename → stub puntatore canonica.
-- **Wizard refactor:** contenuto consolidato in [`filament-wizard-refactoring.md`](filament-wizard-refactoring.md); [`XotBaseWizardWidget-HasWizard-refactor.md`](xotbasewizardwidget-haswizard-refactor.md) ridotto a stub (permalink storici).
+- **Wizard refactor:** contenuto consolidato in [`filament-wizard-refactoring.md`](filament-wizard-refactoring.md); [`XotBaseWizardWidget-HasWizard-refactor.md`](XotBaseWizardWidget-HasWizard-refactor.md) ridotto a stub (permalink storici).
 - Hub aggiornato: [`concepts/ridondanze-cross-cutting-codebase.md`](concepts/ridondanze-cross-cutting-codebase.md).
 
 ## [2026-05-21] docs | inventario ridondanze codebase + scaffold docs
@@ -332,10 +355,10 @@ discussions:
 
 ## [2026-06-30] governance | Composer root skeleton modulare
 
-- Confrontato `base_ptv_fila5/laravel/composer.json` con Predict.
+- Confrontato `base_fixcity_fila5/laravel/composer.json` con Predict.
 - Aggiornata la regola: root minimo con `php`, `laravel/framework`, `nwidart/laravel-modules`; merge solo `Modules/*/composer.json`.
 - Chiariti anti-pattern: niente `Modules\\`, `Database\\Seeders\\` o `Themes\\*\\` nell'autoload root, niente merge dei temi, niente dipendenze funzionali nel root.
-- Raw note: `docs/raw/notes/composer-root-skeleton-ptv-comparison-2026-06-30.md`.
+- Raw note: `docs/raw/notes/composer-root-skeleton-fixcity-comparison-2026-06-30.md`.
 - Wiki: `docs/wiki/concepts/composer-root-skeleton-modular.md`.
 
 ## [2026-04-27] governance | policy module matrix

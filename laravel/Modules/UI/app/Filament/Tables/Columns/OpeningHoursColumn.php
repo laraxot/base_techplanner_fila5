@@ -6,10 +6,9 @@ namespace Modules\UI\Filament\Tables\Columns;
 
 use Filament\Tables\Columns\TextColumn;
 use Modules\UI\Actions\Datetime\GetDaysMappingAction;
-use Modules\UI\Filament\Forms\Components\OpeningHoursField;
 
 /**
- * Controparte in lista di {@see OpeningHoursField}.
+ * Controparte in lista di {@see \Modules\UI\Filament\Forms\Components\OpeningHoursField}.
  *
  * Stesso fatto di dominio (orari settimanali per fascia mattina/pomeriggio), due
  * superfici diverse per forma: il form edita ogni giorno con `TimePicker` dedicati
@@ -65,7 +64,8 @@ class OpeningHoursColumn extends TextColumn
     }
 
     /**
-     * @param  array<array-key, mixed>  $day
+     * @param array<array-key, mixed> $day
+     *
      * @return list<string>
      */
     private static function formatSlots(array $day): array
@@ -74,7 +74,7 @@ class OpeningHoursColumn extends TextColumn
         foreach (['morning', 'afternoon'] as $period) {
             $from = $day["{$period}_from"] ?? null;
             $until = $day["{$period}_to"] ?? null;
-            if (is_string($from) && is_string($until) && $from !== '' && $until !== '') {
+            if (is_string($from) && is_string($until) && '' !== $from && '' !== $until) {
                 $slots[] = "{$from}-{$until}";
             }
         }

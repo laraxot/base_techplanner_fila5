@@ -16,7 +16,7 @@ describe('Login Listener', function (): void {
     });
 
     test('listener has handle method', function (): void {
-        $listener = new LoginListener();
+        $listener = new LoginListener;
         $reflection = new \ReflectionClass($listener);
 
         Assert::assertTrue($reflection->hasMethod('handle'));

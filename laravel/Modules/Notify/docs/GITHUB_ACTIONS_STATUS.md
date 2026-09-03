@@ -8,7 +8,6 @@
 
 ## Summary
 
-Analisi e fix delle GitHub Actions del repository base_fixcity_fila5.
 Analisi e fix delle GitHub Actions del repository base_ptv_fila5.
 
 ---

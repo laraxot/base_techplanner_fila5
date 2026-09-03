@@ -7,12 +7,12 @@ namespace Modules\User\Models;
 // // use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Str;
 use Modules\Media\Models\Media;
+use Modules\User\Models\Traits\IsProfileTrait;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Parental\HasChildren;
@@ -23,34 +23,32 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
 
 /**
- * @property int $id
- * @property string $uuid
- * @property \Spatie\SchemalessAttributes\SchemalessAttributes $extra
- * @property string $avatar
- * @property Collection<int, DeviceUser> $deviceUsers
- * @property int|null $device_users_count
- * @property Collection<int, Device> $devices
- * @property int|null $devices_count
- * @property string|null $email
- * @property string|null $first_name
- * @property string|null $full_name
- * @property bool $is_active
- * @property string|null $last_name
- * @property string|null $lang
- * @property MediaCollection<int, Media> $media
- * @property int|null $media_count
- * @property Collection<int, DeviceUser> $mobileDeviceUsers
- * @property int|null $mobile_device_users_count
- * @property Collection<int, Device> $mobileDevices
- * @property int|null $mobile_devices_count
+ * @property int                                                       $id
+ * @property string                                                    $uuid
+ * @property \Spatie\SchemalessAttributes\SchemalessAttributes         $extra
+ * @property string                                                    $avatar
+ * @property Collection<int, DeviceUser>                               $deviceUsers
+ * @property int|null                                                  $device_users_count
+ * @property Collection<int, Device>                                   $devices
+ * @property int|null                                                  $devices_count
+ * @property string|null                                               $first_name
+ * @property string|null                                               $full_name
+ * @property string|null                                               $last_name
+ * @property string|null                                               $lang
+ * @property MediaCollection<int, Media>                               $media
+ * @property int|null                                                  $media_count
+ * @property Collection<int, DeviceUser>                               $mobileDeviceUsers
+ * @property int|null                                                  $mobile_device_users_count
+ * @property Collection<int, Device>                                   $mobileDevices
+ * @property int|null                                                  $mobile_devices_count
  * @property DatabaseNotificationCollection<int, DatabaseNotification> $notifications
- * @property int|null $notifications_count
- * @property Collection<int, Permission> $permissions
- * @property int|null $permissions_count
- * @property Collection<int, Role> $roles
- * @property int|null $roles_count
- * @property UserContract|null $user
- * @property string|null $user_name
+ * @property int|null                                                  $notifications_count
+ * @property Collection<int, Permission>                               $permissions
+ * @property int|null                                                  $permissions_count
+ * @property Collection<int, Role>                                     $roles
+ * @property int|null                                                  $roles_count
+ * @property UserContract|null                                         $user
+ * @property string|null                                               $user_name
  *
  * @method static Builder<static> newModelQuery()
  * @method static Builder<static> newQuery()
@@ -72,6 +70,7 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
 
     // use HasUuids;
     use InteractsWithMedia;
+    use IsProfileTrait;
     use Notifiable;
     use SchemalessAttributesTrait;
 
@@ -121,7 +120,8 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
     /**
      * Scope per lookup da API/Android/Postgres (usa uuid, non id).
      *
-     * @param  Builder<static>  $query
+     * @param Builder<static> $query
+     *
      * @return Builder<static>
      */
     public function scopeByUuid(Builder $query, string $uuid): Builder
@@ -133,35 +133,6 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
     // Il trait SchemalessAttributesTrait lo fornisce automaticamente!
     // NOTA: BaseProfile ha attributo 'extra' diretto, non relazione 'extra'
 
-    public function getFullNameAttribute(?string $value): string
-    {
-        if ($value !== null) {
-            return $value;
-        }
-
-        $fullName = trim(($this->first_name ?? '').' '.($this->last_name ?? ''));
-
-        return $fullName !== '' ? $fullName : ($this->email ?? 'User');
-    }
-
-    public function toggleSuperAdmin(): void
-    {
-        $this->is_active = !($this->is_active ?? false);
-    }
-
-    /**
-     * @return BelongsTo<User, $this>
-     */
-    public function user(): BelongsTo
-    {
-        return $this->belongsTo(User::class);
-    }
-
-    public function isSuperAdmin(): bool
-    {
-        return $this->is_active === true || $this->hasRole('super-admin');
-    }
-
     /**
      * Ottiene l'URL dell'avatar dell'utente.
      *
@@ -170,7 +141,7 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
     public function getAvatarUrl(): string
     {
         $avatar = $this->getFirstMediaUrl('avatar');
-        if ($avatar !== '') {
+        if ('' !== $avatar) {
             return $avatar;
         }
 
@@ -202,13 +173,13 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
         $locale = config('app.locale');
         $defaultLocale = 'it';
 
-        if ($locale === null || ! is_string($locale)) {
+        if (null === $locale || ! is_string($locale)) {
             $locale = $defaultLocale;
         }
 
         $userLang = $this->lang;
 
-        if ($userLang === null || ! is_string($userLang)) {
+        if (null === $userLang || ! is_string($userLang)) {
             return $locale;
         }
 

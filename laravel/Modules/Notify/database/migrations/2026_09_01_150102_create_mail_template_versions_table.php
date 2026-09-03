@@ -9,7 +9,7 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * Owner migration `Notify::mail_template_versions` (consolidamento 2026-09-01).
  * Colonne unione viste nei duplicati non presenti qui: nessuna.
  */
-return new class() extends XotBaseMigration
+return new class extends XotBaseMigration
 {
     public function up(): void
     {

@@ -8,10 +8,6 @@ Baseline STORY-287: 282 errori → 0. Pattern: Contracts `Model` generics, Cast/
 
 Baseline sessione 2026-07-06: 1 → 0. `Modules\Xot\Contracts\UserContract::membershipTeams()` era disallineato con `HasTeams::teams()` (secondo parametro generico di `BelongsToMany` — `$this` non è un sottotipo valido di `Model` nel bound del contratto). Allineato a `Model`. `HasSchemalessAttributesTest.php` chiamava un metodo mai esistito (`getSchemalessAttributes()`) invece dell'accesso magico `$model->extra_attributes`; corretto il test.
 
-**Status**: ✅ FULLY COMPLIANT (0 errors)
-
-**Status**: ✅ FULLY COMPLIANT (0 errors)
-
 ## Summary
 The Xot module is now fully compliant with PHPStan Level 10 analysis. All static analysis errors have been resolved, ensuring type safety and code quality.
 

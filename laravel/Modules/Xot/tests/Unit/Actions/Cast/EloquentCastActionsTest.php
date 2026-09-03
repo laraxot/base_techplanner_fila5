@@ -28,7 +28,7 @@ test('safe array by model cast action works', function () {
 });
 
 test('safe attribute cast action works', function () {
-    $model = new class() extends XotBaseModel
+    $model = new class extends XotBaseModel
     {
         protected $attributes = [
             'str' => 'test',

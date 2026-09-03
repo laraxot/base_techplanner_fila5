@@ -5,8 +5,8 @@ tags: [auth, logout, blade]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "auth-logout-blade implementazione corretta di logout.blade.php"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -29,7 +29,7 @@ related:
 - [Logout Page Fix](./logout-page-fix.md)
 - [Documentazione centrale](../../../../docs/readme.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
-- [README modulo User](./README.md)
+- [README modulo User](./readme.md)
 - [Convenzioni Path](./path-conventions-2.md)
 - [Struttura moduli](../../../../docs/architecture/modules-structure.md)
 - [Logout Page Fix](./logout-page-fix-2.md)

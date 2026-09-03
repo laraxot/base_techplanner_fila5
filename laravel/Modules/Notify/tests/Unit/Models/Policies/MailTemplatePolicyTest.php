@@ -10,7 +10,7 @@ use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 
 test('mail template policy denies view any', function () {
-    $policy = new MailTemplatePolicy();
+    $policy = new MailTemplatePolicy;
     $user = UserFactory::new()->createOne();
     Assert::assertInstanceOf(UserContract::class, $user);
 

@@ -14,7 +14,7 @@ use PHPUnit\Framework\Assert;
 
 function makeDummyNotificationForRecipient(): IlluminateNotification
 {
-    return new class() extends IlluminateNotification
+    return new class extends IlluminateNotification
     {
         /** @return list<string> */
         public function via(object $notifiable): array
