@@ -10,7 +10,6 @@ use Modules\Xot\Models\Traits\RelationX;
 
 /**
  * Modello di supporto per i test del trait HasTeams.
- *
  */
 class MockUserWithTeams extends Model
 {

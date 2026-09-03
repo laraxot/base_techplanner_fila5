@@ -106,7 +106,7 @@ class UserServiceProvider extends XotBaseServiceProvider
             $app_name = '';
         }
 
-        ResetPassword::toMailUsing(function ($notifiable, string $token): SpatieEmail {
+        ResetPassword::toMailUsing(function (mixed $notifiable, string $token): SpatieEmail {
             /*
              * return (new MailMessage)
              * ->template('user::notifications.email')
@@ -163,7 +163,7 @@ class UserServiceProvider extends XotBaseServiceProvider
          * ->salutation($salutation);
          * });
          */
-        VerifyEmail::toMailUsing(function ($notifiable, string $url): SpatieEmail {
+        VerifyEmail::toMailUsing(function (mixed $notifiable, string $url): SpatieEmail {
             Assert::isInstanceOf($notifiable, Model::class);
             $email = new SpatieEmail($notifiable, 'verify-email');
             $email->mergeData([

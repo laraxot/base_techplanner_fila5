@@ -23,11 +23,15 @@ return [
         'from' => ['label' => 'from', 'placeholder' => 'from', 'helper_text' => 'from', 'description' => 'from'],
         'recipient' => ['label' => 'recipient', 'placeholder' => 'recipient', 'helper_text' => 'recipient', 'description' => 'recipient'],
         'subject' => ['label' => 'subject', 'placeholder' => 'subject', 'helper_text' => 'subject', 'description' => 'subject'],
-        'body_html' => ['placeholder' => 'body_html']],
+        'body_html' => ['placeholder' => 'body_html', 'label' => 'body_html', 'helper_text' => 'body_html', 'description' => 'body_html'],
+    ],
     'actions' => [
         'send_test_email' => ['label' => 'Invia email di test'],
         'test_connection' => ['label' => 'Test connessione'],
-        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save']],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+    ],
     'sections' => [
         'SMTP' => ['label' => 'SMTP', 'heading' => 'SMTP'],
-        'MAIL' => ['label' => 'MAIL', 'heading' => 'MAIL']]];
+        'MAIL' => ['label' => 'MAIL', 'heading' => 'MAIL'],
+    ],
+];

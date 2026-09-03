@@ -11,6 +11,7 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\BaseFilter;
 use Filament\Tables\Filters\TernaryFilter;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
 use Modules\User\Filament\Resources\BaseProfileResource;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -32,7 +33,7 @@ class ListProfiles extends XotBaseListRecords
             'user.name' => TextColumn::make('user.name')
                 ->sortable()
                 ->searchable()
-                ->default(function ($record) {
+                ->default(function (Model|array|null $record) {
                     if (! is_object($record)) {
                         return '--';
                     }
@@ -44,9 +45,7 @@ class ListProfiles extends XotBaseListRecords
                         $emailValue = $record->email ?? null;
 
                         if ($emailValue === null) {
-                            if (method_exists($record, 'update')) {
-                                $record->update(['email' => fake()->email()]);
-                            }
+                            $record->update(['email' => fake()->email()]);
                             $emailValue = $record->email ?? '';
                         }
 
@@ -68,7 +67,7 @@ class ListProfiles extends XotBaseListRecords
                     // PHPStan Level 10: isset() per magic properties di User model
                     $userId = $userValue->id ?? null;
 
-                    if ($userId !== null && method_exists($record, 'update')) {
+                    if ($userId !== null) {
                         $record->update(['user_id' => $userId]);
                     }
 

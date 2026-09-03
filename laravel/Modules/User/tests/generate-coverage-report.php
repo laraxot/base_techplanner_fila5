@@ -123,7 +123,7 @@ echo "Top 30 Covered Files (by element coverage, min 5 elements):\n";
 echo "─────────────────────────────────────────────────────────────────\n";
 
 $sortedFiles = $allFiles;
-uksort($sortedFiles, function ($a, $b) use ($allFiles) {
+uksort($sortedFiles, function (string $a, string $b) use ($allFiles): int {
     $aStats = $allFiles[$a];
     $bStats = $allFiles[$b];
     $aPercent = $aStats['elements']['total'] > 0
@@ -182,7 +182,7 @@ foreach ($sortedFiles as $fileName => $stats) {
 echo "\n";
 
 // Files with no coverage
-$uncoveredFiles = array_filter($allFiles, fn ($stats) => $stats['elements']['covered'] === 0 && $stats['elements']['total'] > 0);
+$uncoveredFiles = array_filter($allFiles, fn (array $stats): bool => $stats['elements']['covered'] === 0 && $stats['elements']['total'] > 0);
 
 if (count($uncoveredFiles) > 0) {
     echo 'Files with NO coverage ('.count($uncoveredFiles)." files):\n";

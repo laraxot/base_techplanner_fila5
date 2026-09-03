@@ -27,14 +27,14 @@ class ViewSocialProvider extends XotBaseViewRecord
             'provider_info' => Section::make()->schema([
                 'id' => TextEntry::make('id'),
                 'name' => TextEntry::make('name'),
-                'scopes' => TextEntry::make('scopes')->formatStateUsing(function ($state): string {
+                'scopes' => TextEntry::make('scopes')->formatStateUsing(function (mixed $state): string {
                     if (is_array($state)) {
                         return json_encode($state);
                     }
 
                     return SafeStringCastAction::cast($state);
                 }),
-                'parameters' => TextEntry::make('parameters')->formatStateUsing(function ($state): string {
+                'parameters' => TextEntry::make('parameters')->formatStateUsing(function (mixed $state): string {
                     if (is_array($state)) {
                         return json_encode($state);
                     }

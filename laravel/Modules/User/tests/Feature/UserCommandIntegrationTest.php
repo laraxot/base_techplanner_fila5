@@ -55,7 +55,7 @@ describe('User Command Integration', function (): void {
     test('integrates with illuminate support arr', function (): void {
         $testArray = ['a' => 1, 'b' => 2, 'c' => 3];
 
-        $result = Arr::mapWithKeys($testArray, fn ($value, $key) => [
+        $result = Arr::mapWithKeys($testArray, fn (int $value, string $key): array => [
             $key.'_mapped' => $value * 2,
         ]);
         Assert::assertSame(2, $result['a_mapped']);

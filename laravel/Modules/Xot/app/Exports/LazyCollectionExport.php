@@ -16,7 +16,9 @@ use Modules\Lang\Actions\TransCollectionAction;
 use Traversable;
 
 /**
- * @implements WithMapping<mixed>
+ * @template TRow
+ *
+ * @implements WithMapping<TRow>
  */
 class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, WithMapping
 {
@@ -31,7 +33,7 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
     public array $fields = [];
 
     /**
-     * @param  LazyCollection<int, mixed>  $collection
+     * @param  LazyCollection<int, TRow>  $collection
      * @param  array<int, string>  $fields
      */
     public function __construct(
@@ -137,7 +139,7 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
             return $row;
         }
 
-        if ($row instanceof \Traversable) {
+        if ($row instanceof Traversable) {
             return iterator_to_array($row);
         }
 

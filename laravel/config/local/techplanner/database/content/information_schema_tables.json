@@ -1,1 +1,52 @@
-[]
+[
+    {
+        "table_schema": ":memory:",
+        "model_class": "Modules\\Xot\\Models\\CacheLock",
+        "table_name": "cache_locks",
+        "id": 1,
+        "updated_at": "2026-09-03T12:58:46.974274Z",
+        "created_at": "2026-09-03T12:58:46.974295Z"
+    },
+    {
+        "table_schema": ":memory:",
+        "model_class": "Modules\\Xot\\Models\\Cache",
+        "table_name": "cache",
+        "id": 2,
+        "updated_at": "2026-09-03T12:58:46.980436Z",
+        "created_at": "2026-09-03T12:58:46.980452Z"
+    },
+    {
+        "table_schema": ":memory:",
+        "model_class": "Modules\\Xot\\Models\\Extra",
+        "table_name": "extras",
+        "id": 3,
+        "updated_at": "2026-09-03T12:58:46.986311Z",
+        "created_at": "2026-09-03T12:58:46.986327Z"
+    },
+    {
+        "table_schema": ":memory:",
+        "model_class": "Modules\\Xot\\Models\\Log",
+        "table_name": "logs",
+        "id": 4,
+        "updated_at": "2026-09-03T12:58:46.994183Z",
+        "created_at": "2026-09-03T12:58:46.993420Z",
+        "table_rows": 2
+    },
+    {
+        "table_schema": ":memory:",
+        "model_class": "Modules\\Xot\\Models\\Module",
+        "table_name": "modules",
+        "id": 5,
+        "updated_at": "2026-09-03T12:58:47.002655Z",
+        "created_at": "2026-09-03T12:58:47.001769Z",
+        "table_rows": 16
+    },
+    {
+        "table_schema": ":memory:",
+        "model_class": "Modules\\Xot\\Models\\Session",
+        "table_name": "sessions",
+        "id": 6,
+        "updated_at": "2026-09-03T12:58:47.007966Z",
+        "created_at": "2026-09-03T12:58:47.007986Z"
+    }
+]

@@ -46,7 +46,7 @@ class DeviceData extends Data
 
     public static function make(): self
     {
-        $headers = collect(request()->header())->mapWithKeys(static function ($item, $key): array {
+        $headers = collect(request()->header())->mapWithKeys(static function (mixed $item, string $key): array {
             if (Str::startsWith($key, 'X-')) {
                 // $key = Str::afterFirst($key, 'X-');
                 $key = Str::after($key, 'X-');

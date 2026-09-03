@@ -345,10 +345,11 @@ class RouteService
 
         return collect($tmp_arr)
             ->filter(static fn (string $item): bool => ! \in_array($item, ['Module', 'Item'], false))
-            ->map(static function (string $item) use ($params): mixed {
+            ->map(static function (string $item) use ($params): string {
                 $item = Str::snake($item);
+                $value = $params[$item] ?? $item;
 
-                return $params[$item] ?? $item;
+                return is_scalar($value) ? (string) $value : $item;
             })
             ->implode('.');
     }

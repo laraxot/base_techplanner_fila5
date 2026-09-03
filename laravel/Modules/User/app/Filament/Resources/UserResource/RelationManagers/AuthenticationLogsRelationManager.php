@@ -44,10 +44,10 @@ class AuthenticationLogsRelationManager extends XotBaseRelationManager
                 ->dateTime()
                 ->sortable(),
             'location' => TextColumn::make('location')
-                ->formatStateUsing(function ($state) {
+                ->formatStateUsing(function (mixed $state) {
                     if (is_array($state)) {
                         return collect($state)
-                            ->map(fn ($value, $key): string => SafeStringCastAction::cast($key).': '.SafeStringCastAction::cast($value))
+                            ->map(fn (mixed $value, int|string $key): string => SafeStringCastAction::cast($key).': '.SafeStringCastAction::cast($value))
                             ->join(', ');
                     }
 

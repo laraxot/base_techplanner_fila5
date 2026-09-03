@@ -499,7 +499,7 @@ function verifyTwoFactorRecoveryCode(User $user, string $code): bool
         return false;
     }
 
-    $codes = array_values(array_filter($codes, static fn ($storedCode): bool => $storedCode !== $code));
+    $codes = array_values(array_filter($codes, static fn (mixed $storedCode): bool => $storedCode !== $code));
     $user->two_factor_recovery_codes = encrypt(json_encode($codes));
     $user->save();
 

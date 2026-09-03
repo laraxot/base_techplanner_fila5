@@ -24,25 +24,25 @@ namespace Modules\AI\Models{
  * @property int $id
  * @property string $public_id
  * @property int $ai_thread_id
- * @property int $proposed_by_user_id
+ * @property string $proposed_by_user_id
  * @property string $type
  * @property array<string, mixed> $payload
  * @property string|null $preview
  * @property string $status
- * @property int|null $confirmed_by_user_id
+ * @property string|null $confirmed_by_user_id
  * @property Carbon|null $confirmed_at
  * @property Carbon|null $executed_at
  * @property array<string, mixed>|null $result
  * @property string|null $error
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- * @property-read Profile|null $creator
  * @property-read AiThread|null $thread
- * @property-read Profile|null $updater
  * @method static Builder<static>|AiActionProposal newModelQuery()
  * @method static Builder<static>|AiActionProposal newQuery()
  * @method static Builder<static>|AiActionProposal query()
  * @mixin \Eloquent
+ * @property-read \Modules\TechPlanner\Models\Profile|null $creator
+ * @property-read \Modules\TechPlanner\Models\Profile|null $updater
  */
 	class AiActionProposal extends \Eloquent {}
 }
@@ -53,13 +53,13 @@ namespace Modules\AI\Models{
  *
  * A single message (user|assistant|tool|system) within an AiThread.
  *
- * @property-read Profile|null $creator
  * @property-read AiThread|null $thread
- * @property-read Profile|null $updater
  * @method static Builder<static>|AiMessage newModelQuery()
  * @method static Builder<static>|AiMessage newQuery()
  * @method static Builder<static>|AiMessage query()
  * @mixin \Eloquent
+ * @property-read \Modules\TechPlanner\Models\Profile|null $creator
+ * @property-read \Modules\TechPlanner\Models\Profile|null $updater
  */
 	class AiMessage extends \Eloquent {}
 }
@@ -70,18 +70,26 @@ namespace Modules\AI\Models{
  *
  * A persisted conversation thread between a user and the AI assistant.
  *
- * @property-read Profile|null $creator
+ * @property int $id
+ * @property string $public_id
+ * @property string $created_by_user_id
+ * @property string $panel_id
+ * @property Carbon|null $last_message_at
+ * @property array<string, mixed>|null $meta
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property-read Collection<int, AiMessage> $messages
  * @property-read int|null $messages_count
  * @property-read Collection<int, AiActionProposal> $proposals
  * @property-read int|null $proposals_count
  * @property-read Collection<int, AiToolLog> $toolLogs
  * @property-read int|null $tool_logs_count
- * @property-read Profile|null $updater
  * @method static Builder<static>|AiThread newModelQuery()
  * @method static Builder<static>|AiThread newQuery()
  * @method static Builder<static>|AiThread query()
  * @mixin \Eloquent
+ * @property-read \Modules\TechPlanner\Models\Profile|null $creator
+ * @property-read \Modules\TechPlanner\Models\Profile|null $updater
  */
 	class AiThread extends \Eloquent {}
 }
@@ -92,14 +100,14 @@ namespace Modules\AI\Models{
  *
  * Audit trail of tool calls performed by the AI assistant.
  *
- * @property-read Profile|null $creator
  * @property-read AiActionProposal|null $proposal
  * @property-read AiThread|null $thread
- * @property-read Profile|null $updater
  * @method static Builder<static>|AiToolLog newModelQuery()
  * @method static Builder<static>|AiToolLog newQuery()
  * @method static Builder<static>|AiToolLog query()
  * @mixin \Eloquent
+ * @property-read \Modules\TechPlanner\Models\Profile|null $creator
+ * @property-read \Modules\TechPlanner\Models\Profile|null $updater
  */
 	class AiToolLog extends \Eloquent {}
 }
@@ -110,26 +118,15 @@ namespace Modules\Activity\Models{
  *
  * This class extends the BaseActivity model to represent activities in the application.
  *
- * @property \Spatie\SchemalessAttributes\SchemalessAttributes $properties
- * @property-read Model $causer
- * @property-read Model $subject
- * @method static Builder<static>|Activity causedBy(\Illuminate\Database\Eloquent\Model $causer)
- * @method static \Modules\Activity\Database\Factories\ActivityFactory factory($count = null, $state = [])
- * @method static Builder<static>|Activity forBatch(string $batchUuid)
- * @method static Builder<static>|Activity forEvent(\Spatie\Activitylog\Enums\ActivityEvent|string $event)
- * @method static Builder<static>|Activity forSubject(\Illuminate\Database\Eloquent\Model $subject)
- * @method static Builder<static>|Activity hasBatch()
- * @method static Builder<static>|Activity inLog(\BackedEnum|array<int|string, mixed>|string ...$logNames)
- * @method static Builder<static>|Activity newModelQuery()
- * @method static Builder<static>|Activity newQuery()
- * @method static Builder<static>|Activity query()
  * @property int $id
  * @property string|null $log_name
  * @property string $description
  * @property string|null $subject_type
- * @property int|null $subject_id
+ * @property string|null $subject_id
  * @property string|null $causer_type
  * @property string|null $causer_id
+ * @property array<string, mixed>|Collection<array-key, mixed>|null $properties
+ * @property Collection<int, mixed>|null $attribute_changes
  * @property string|null $batch_uuid
  * @property string|null $event
  * @property Carbon|null $created_at
@@ -138,6 +135,18 @@ namespace Modules\Activity\Models{
  * @property string|null $created_by
  * @property string|null $deleted_at
  * @property string|null $deleted_by
+ * @property-read Model|null $causer
+ * @property-read Collection<int, mixed> $changes
+ * @property-read Model|null $subject
+ * @method static ActivityFactory factory($count = null, $state = [])
+ * @method static Builder<static>|Activity forBatch(string $batchUuid)
+ * @method static Builder<static>|Activity forEvent(string $event)
+ * @method static Builder<static>|Activity forSubject(Model $subject)
+ * @method static Builder<static>|Activity hasBatch()
+ * @method static Builder<static>|Activity inLog(...$logNames)
+ * @method static Builder<static>|Activity newModelQuery()
+ * @method static Builder<static>|Activity newQuery()
+ * @method static Builder<static>|Activity query()
  * @method static Builder<static>|Activity whereBatchUuid($value)
  * @method static Builder<static>|Activity whereCauserId($value)
  * @method static Builder<static>|Activity whereCauserType($value)
@@ -154,6 +163,44 @@ namespace Modules\Activity\Models{
  * @method static Builder<static>|Activity whereSubjectType($value)
  * @method static Builder<static>|Activity whereUpdatedAt($value)
  * @method static Builder<static>|Activity whereUpdatedBy($value)
+ * @method static Builder<static>|Activity where($column, $operator = null, $value = null, $boolean = 'and')
+ * @method static Activity create(array<string, mixed> $attributes = [])
+ * @method static Builder<static>|Activity clone()
+ * @method static Builder<static>|Activity selectRaw(string $expression)
+ * @method static Builder<static>|Activity whereDate(string $column, string $operator, mixed $value = null)
+ * @method static Builder<static>|Activity whereBetween(string $column, array<int, mixed> $values)
+ * @method static Builder<static>|Activity whereMonth(string $column, string $operator, mixed $value = null)
+ * @method static Builder<static>|Activity whereYear(string $column, string $operator, mixed $value = null)
+ * @method static Builder<static>|Activity latest(string $column = 'created_at')
+ * @method static Builder<static>|Activity limit(int $value)
+ * @method static Builder<static>|Activity with(array<string, mixed>|string $relations)
+ * @method static int sum(string $column)
+ * @method static Collection<int, static> get(array<string>|string $columns = ['*'])
+ * @method static static|null first(array<string>|string $columns = ['*'])
+ * @method static static find(mixed $id, array<string>|string $columns = ['*'])
+ * @method static static|null firstWhere(string $column, mixed $operator = null, mixed $value = null)
+ * @method static Builder<static>|Activity orderBy(string $column, string $direction = 'asc')
+ * @method static Builder<static>|Activity groupBy(array<string>|string $groups)
+ * @method static Builder<static>|Activity having(string $column, string $operator, mixed $value)
+ * @method static Builder<static>|Activity orWhere(string $column, mixed $operator = null, mixed $value = null)
+ * @method static Builder<static>|Activity whereIn(string $column, array<int, mixed> $values)
+ * @method static Builder<static>|Activity whereNotIn(string $column, array<int, mixed> $values)
+ * @method static Builder<static>|Activity whereNull(string $column)
+ * @method static Builder<static>|Activity whereNotNull(string $column)
+ * @method static int count(string $columns = '*')
+ * @method static Collection<int, mixed> pluck(string $column, string|null $key = null)
+ * @method static mixed max(string $column)
+ * @method static mixed min(string $column)
+ * @method static mixed avg(string $column)
+ * @method static int sum(string $column)
+ * @method static bool exists()
+ * @method static bool doesntExist()
+ * @method static Builder<static>|Activity distinct()
+ * @method static Builder<static>|Activity join(string $table, string $first, string $operator = null, string $second = null)
+ * @method static Builder<static>|Activity leftJoin(string $table, string $first, string $operator = null, string $second = null)
+ * @method static Builder<static>|Activity rightJoin(string $table, string $first, string $operator = null, string $second = null)
+ * @method static Builder<static>|Activity crossJoin(string $table)
+ * @method static Builder<static>|Activity causedBy(Model $causer)
  * @mixin \Eloquent
  */
 	class Activity extends \Eloquent {}
@@ -163,11 +210,6 @@ namespace Modules\Activity\Models{
 /**
  * Modules\Activity\Models\Snapshot.
  *
- * @method static \Modules\Activity\Database\Factories\SnapshotFactory factory($count = null, $state = [])
- * @method static Builder<static>|Snapshot newModelQuery()
- * @method static Builder<static>|Snapshot newQuery()
- * @method static Builder<static>|Snapshot query()
- * @method static Builder<static>|Snapshot uuid(string $uuid)
  * @property int $id
  * @property string $aggregate_uuid
  * @property int $aggregate_version
@@ -176,6 +218,10 @@ namespace Modules\Activity\Models{
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
+ * @method static Builder<static>|Snapshot newModelQuery()
+ * @method static Builder<static>|Snapshot newQuery()
+ * @method static Builder<static>|Snapshot query()
+ * @method static Builder<static>|Snapshot uuid(string $uuid)
  * @method static Builder<static>|Snapshot whereAggregateUuid($value)
  * @method static Builder<static>|Snapshot whereAggregateVersion($value)
  * @method static Builder<static>|Snapshot whereCreatedAt($value)
@@ -184,6 +230,7 @@ namespace Modules\Activity\Models{
  * @method static Builder<static>|Snapshot whereState($value)
  * @method static Builder<static>|Snapshot whereUpdatedAt($value)
  * @method static Builder<static>|Snapshot whereUpdatedBy($value)
+ * @method static SnapshotFactory factory($count = null, $state = [])
  * @mixin \Eloquent
  */
 	class Snapshot extends \Eloquent {}
@@ -195,11 +242,19 @@ namespace Modules\Activity\Models{
  *
  * Represents a stored event in the activity module.
  *
+ * @property int $id
+ * @property string|null $aggregate_uuid
+ * @property int|null $aggregate_version
+ * @property int $event_version
+ * @property string $event_class
+ * @property array<array-key, mixed> $event_properties
  * @property \Spatie\SchemalessAttributes\SchemalessAttributes $meta_data
+ * @property string $created_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
  * @property-read ShouldBeStored|null $event
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent afterVersion(int $version)
  * @method static EloquentStoredEventCollection<static> all($columns = ['*'])
- * @method static \Modules\Activity\Database\Factories\StoredEventFactory factory($count = null, $state = [])
  * @method static EloquentStoredEventCollection<static> get($columns = ['*'])
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent lastEvent(string ...$eventClasses)
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent newModelQuery()
@@ -207,31 +262,23 @@ namespace Modules\Activity\Models{
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent query()
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent startingFrom(int $storedEventId)
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent whereAggregateRoot(string $uuid)
- * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent whereEvent(string ...$eventClasses)
- * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent wherePropertyIs(string $property, ?mixed $value)
- * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent wherePropertyIsNot(string $property, ?mixed $value)
- * @method static \Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder<static>|StoredEvent withMetaDataAttributes()
- * @property int $id
- * @property string|null $aggregate_uuid
- * @property int|null $aggregate_version
- * @property int $event_version
- * @property string $event_class
- * @property array<array-key, mixed> $event_properties
- * @property string $created_at
- * @property string|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent whereAggregateUuid($value)
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent whereAggregateVersion($value)
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent whereCreatedAt($value)
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent whereCreatedBy($value)
+ * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent whereEvent(string ...$eventClasses)
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent whereEventClass($value)
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent whereEventProperties($value)
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent whereEventVersion($value)
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent whereId($value)
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent whereMetaData($value)
- * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent whereUpdatedAt($value)
+ * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent wherePropertyIs(string $property, ?mixed $value)
+ * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent wherePropertyIsNot(string $property, ?mixed $value)
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent whereUpdatedBy($value)
+ * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent withMetaDataAttributes()
+ * @method static StoredEventFactory factory($count = null, $state = [])
+ * @property string|null $updated_at
+ * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 	class StoredEvent extends \Eloquent {}
@@ -241,9 +288,17 @@ namespace Modules\Activity\Models{
 /**
  * Test model for Activity module tests.
  *
+ * @property string|null $name
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TestModel newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TestModel newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TestModel query()
+ * @property int $id
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|TestModel whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|TestModel whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|TestModel whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|TestModel whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 	final class TestModel extends \Eloquent {}
@@ -263,12 +318,11 @@ namespace Modules\Cms\Models{
  * @property Carbon|null $updated_at
  * @property string|null $created_by
  * @property string|null $updated_by
- * @property-read Profile|null $creator
- * @property-read array<int|string, mixed> $translatable_columns_from
- * @property-read MediaCollection<int, Media> $media
- * @property-read int|null $media_count
- * @property-read mixed $translations
- * @property-read Profile|null $updater
+ * @property ProfileContract|null $creator
+ * @property MediaCollection<int, Media> $media
+ * @property int|null $media_count
+ * @property mixed $translations
+ * @property ProfileContract|null $updater
  * @method static Builder<static>|Attachment newModelQuery()
  * @method static Builder<static>|Attachment newQuery()
  * @method static Builder<static>|Attachment query()
@@ -278,15 +332,20 @@ namespace Modules\Cms\Models{
  * @method static Builder<static>|Attachment whereDescription($value)
  * @method static Builder<static>|Attachment whereDisk($value)
  * @method static Builder<static>|Attachment whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Attachment whereJsonContainsLocale(string $column, string $locale, ?mixed $value, string $operand = '=')
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Attachment whereJsonContainsLocales(string $column, array<int|string, mixed> $locales, ?mixed $value, string $operand = '=')
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Attachment whereLocale(string $column, string $locale)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Attachment whereLocales(string $column, array<int|string, mixed> $locales)
+ * @method static Builder<static>|Attachment whereJsonContainsLocale(string $column, string $locale, ?mixed $value, string $operand = '=')
+ * @method static Builder<static>|Attachment whereJsonContainsLocales(string $column, array<int, string> $locales, ?mixed $value, string $operand = '=')
+ * @method static Builder<static>|Attachment whereLocale(string $column, string $locale)
+ * @method static Builder<static>|Attachment whereLocales(string $column, array<int, string> $locales)
  * @method static Builder<static>|Attachment whereSlug($value)
  * @method static Builder<static>|Attachment whereTitle($value)
  * @method static Builder<static>|Attachment whereUpdatedAt($value)
  * @method static Builder<static>|Attachment whereUpdatedBy($value)
+ * @method static static|null firstWhere(string $column, mixed $operator = null, mixed $value = null)
+ * @property ProfileContract|null $deleter
+ * @method static AttachmentFactory factory($count = null, $state = [])
+ * @method array<int, array<string, mixed>> getSushiRows()
  * @mixin \Eloquent
+ * @property-read array $translatable_columns_from
  */
 	class Attachment extends \Eloquent implements \Spatie\MediaLibrary\HasMedia {}
 }
@@ -295,15 +354,18 @@ namespace Modules\Cms\Models{
 /**
  * Modules\Cms\Models\Conf.
  *
- * @property string $id
+ * @property int $id
  * @property string|null $name
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
  * @method static Builder<static>|Conf newModelQuery()
  * @method static Builder<static>|Conf newQuery()
  * @method static Builder<static>|Conf query()
  * @method static Builder<static>|Conf whereId($value)
  * @method static Builder<static>|Conf whereName($value)
+ * @method static int count()
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $deleter
+ * @property ProfileContract|null $updater
+ * @method static ConfFactory factory($count = null, $state = [])
  * @mixin \Eloquent
  */
 	class Conf extends \Eloquent {}
@@ -315,19 +377,35 @@ namespace Modules\Cms\Models{
  *
  * @property string $id
  * @property string|null $title
+ * @property array<int, mixed>|null $items
  * @property int|null $parent_id
  * @property string|null $created_at
  * @property string|null $updated_at
  * @property string|null $created_by
  * @property string|null $updated_by
- * @property-read Collection<int, Menu> $children
- * @property-read int|null $children_count
- * @property-read Profile|null $creator
- * @property-read Menu|null $parent
- * @property-read Profile|null $updater
- * @property-read int $depth
- * @property-read string $path
- * @property-read Collection<int, Menu> $ancestors The model's recursive parents.
+ * @property Collection<int, Menu> $children
+ * @property int|null $children_count
+ * @property ProfileContract|null $creator
+ * @property Menu|null $parent
+ * @property ProfileContract|null $updater
+ * @property int $depth
+ * @property string $path
+ * @property Collection<int, Menu> $ancestors The model's recursive parents.
+ * @property string $id
+ * @property string|null $title
+ * @property int|null $parent_id
+ * @property string|null $created_at
+ * @property string|null $updated_at
+ * @property string|null $created_by
+ * @property string|null $updated_by
+ * @property Collection<int, Menu> $children
+ * @property int|null $children_count
+ * @property ProfileContract|null $creator
+ * @property Menu|null $parent
+ * @property ProfileContract|null $updater
+ * @property int $depth
+ * @property string $path
+ * @property Collection<int, Menu> $ancestors The model's recursive parents.
  * @property-read int|null $ancestors_count
  * @property-read Collection<int, Menu> $ancestorsAndSelf The model's recursive parents and itself.
  * @property-read int|null $ancestors_and_self_count
@@ -360,7 +438,7 @@ namespace Modules\Cms\Models{
  * @method static Builder<static>|Menu newQuery()
  * @method static Builder<static>|Menu query()
  * @method static Builder<static>|Menu tree($maxDepth = null)
- * @method static Builder<static>|Menu treeOf(\Illuminate\Database\Eloquent\Model|callable $constraint, $maxDepth = null)
+ * @method static Builder<static>|Menu treeOf((Model|callable) $constraint, $maxDepth = null)
  * @method static Builder<static>|Menu whereCreatedAt($value)
  * @method static Builder<static>|Menu whereCreatedBy($value)
  * @method static Builder<static>|Menu whereDepth($operator, $value = null)
@@ -369,8 +447,76 @@ namespace Modules\Cms\Models{
  * @method static Builder<static>|Menu whereTitle($value)
  * @method static Builder<static>|Menu whereUpdatedAt($value)
  * @method static Builder<static>|Menu whereUpdatedBy($value)
+ * @method static Builder<static>|Menu whereDepth($operator, $value = null)
  * @method static Builder<static>|Menu withGlobalScopes(array<string, mixed> $scopes)
  * @method static Builder<static>|Menu withRelationshipExpression($direction, callable $constraint, $initialDepth, $from = null, $maxDepth = null)
+ * @method static static firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
+ * @method static static create(array<string, mixed> $attributes = [])
+ * @method static static updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
+ * @method static Builder<static>|Menu delete()
+ * @method static Builder<static>|Menu where($column, $operator = null, $value = null, $boolean = 'and')
+ * @method static Builder<static>|Menu whereIn($column, $values, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Menu whereNotIn($column, $values, $boolean = 'and')
+ * @method static Builder<static>|Menu whereNull($columns, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Menu whereNotNull($columns, $boolean = 'and')
+ * @method static Builder<static>|Menu whereBetween($column, array<int, mixed> $values, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Menu whereNotBetween($column, array<int, mixed> $values, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Menu whereDate($column, string $operator, string $value, $boolean = 'and')
+ * @method static Builder<static>|Menu whereMonth($column, string $operator, string $value, $boolean = 'and')
+ * @method static Builder<static>|Menu whereDay($column, string $operator, string $value, $boolean = 'and')
+ * @method static Builder<static>|Menu whereYear($column, string $operator, string $value, $boolean = 'and')
+ * @method static Builder<static>|Menu whereTime($column, string $operator, string $value, $boolean = 'and')
+ * @method static Builder<static>|Menu whereColumn($column, string $operator, mixed $value, $boolean = 'and')
+ * @method static Builder<static>|Menu orderBy($column, $direction = 'asc')
+ * @method static Builder<static>|Menu latest($column = 'created_at')
+ * @method static Builder<static>|Menu oldest($column = 'created_at')
+ * @method static Builder<static>|Menu limit($value)
+ * @method static Builder<static>|Menu take($value)
+ * @method static Builder<static>|Menu skip($value)
+ * @method static Builder<static>|Menu offset($value)
+ * @method static int count()
+ * @method static int max($column)
+ * @method static int min($column)
+ * @method static int sum($column)
+ * @method static float avg($column)
+ * @method static mixed pluck($column, $key = null)
+ * @method static Builder<static>|Menu join($table, $first, $operator = null, $second = null)
+ * @method static Builder<static>|Menu leftJoin($table, $first, $operator = null, $second = null)
+ * @method static Builder<static>|Menu rightJoin($table, $first, $operator = null, $second = null)
+ * @method static Builder<static>|Menu crossJoin($table, $first, $operator = null, $second = null)
+ * @method static Builder<static>|Menu having($column, $operator = null, $value = null, $boolean = 'and')
+ * @method static Builder<static>|Menu orWhere($column, $operator = null, $value = null, $boolean = 'and')
+ * @method static Builder<static>|Menu whereExists($callback, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Menu whereNotExists($callback, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Menu whereHas($relation, $operator = '>=', $count = 1, $boolean = 'and', $callback = null)
+ * @method static Builder<static>|Menu whereDoesntHave($relation, $operator = '<', $count = 1, $boolean = 'and', $callback = null)
+ * @method static Builder<static>|Menu whereJsonContains($column, mixed $value, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Menu whereJsonLength($column, $operator, $value, $boolean = 'and')
+ * @method static Builder<static>|Menu whereJsonPath($path, $operator, $value, $boolean = 'and')
+ * @method static Builder<static>|Menu whereJsonOverlaps($column, $value, $boolean = 'and')
+ * @method static Builder<static>|Menu with($relations)
+ * @method static Builder<static>|Menu without($relations)
+ * @method static Builder<static>|Menu withCount($relations)
+ * @method static Builder<static>|Menu withSum($relation, $column)
+ * @method static Builder<static>|Menu withAvg($relation, $column)
+ * @method static Builder<static>|Menu withMin($relation, $column)
+ * @method static Builder<static>|Menu withMax($relation, $column)
+ * @method static Builder<static>|Menu findOrFail($id, $columns = ['*'])
+ * @method static static findOrFail($id, $columns = ['*'])
+ * @method static static firstOrFail($columns = ['*'])
+ * @method static static update($attributes)
+ * @method static int increment($column, $amount = 1, $extra = [])
+ * @method static int decrement($column, $amount = 1, $extra = [])
+ * @method static bool truncate()
+ * @method static static destroy($ids)
+ * @method static static restore()
+ * @method static static forceDelete()
+ * @method static static onlyTrashed()
+ * @method static static withTrashed()
+ * @method static static withoutTrashed()
+ * @property ProfileContract|null $deleter
+ * @method static MenuFactory factory($count = null, $state = [])
+ * @method array<int, array<string, mixed>> getSushiRows()
  * @mixin \Eloquent
  */
 	class Menu extends \Eloquent implements \Modules\Xot\Contracts\HasRecursiveRelationshipsContract {}
@@ -382,13 +528,16 @@ namespace Modules\Cms\Models{
  *
  * @property string $id
  * @property string|null $name
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
  * @method static Builder<static>|Module newModelQuery()
  * @method static Builder<static>|Module newQuery()
  * @method static Builder<static>|Module query()
  * @method static Builder<static>|Module whereId($value)
  * @method static Builder<static>|Module whereName($value)
+ * @method static int count()
+ * @property ProfileContract|null $deleter
+ * @method static ModuleFactory factory($count = null, $state = [])
  * @mixin \Eloquent
  */
 	class Module extends \Eloquent {}
@@ -398,7 +547,10 @@ namespace Modules\Cms\Models{
 /**
  * Modules\Cms\Models\Page.
  *
- * @property string|null $id
+ * @property string $id
+ * @method static array<int, array<string, mixed>> getMiddlewareBySlug(string $slug)
+ * @method static array<string, \Modules\Cms\Datas\BlockData> getBlocksBySlug(string $slug, ?string $side = null)
+ * @property string $id
  * @property array<array-key, mixed>|null $title
  * @property string|null $slug
  * @property array<array-key, mixed>|null $middleware
@@ -412,10 +564,313 @@ namespace Modules\Cms\Models{
  * @property Carbon|null $updated_at
  * @property string|null $created_by
  * @property string|null $updated_by
- * @property-read Profile|null $creator
- * @property-read array<int|string, mixed> $translatable_columns_from
- * @property-read mixed $translations
- * @property-read Profile|null $updater
+ * @property string|null $deleted_by
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ * @property ProfileContract|null $deleter
+ * @property mixed $translations
+ * @method static Builder<static>|Page newModelQuery()
+ * @method static Builder<static>|Page newQuery()
+ * @method static Builder<static>|Page query()
+ * @method static Builder<static>|Page whereContent($value)
+ * @method static Builder<static>|Page whereContentBlocks($value)
+ * @method static Builder<static>|Page whereCreatedAt($value)
+ * @method static Builder<static>|Page whereCreatedBy($value)
+ * @method static Builder<static>|Page whereDescription($value)
+ * @method static Builder<static>|Page whereFooterBlocks($value)
+ * @method static Builder<static>|Page whereId($value)
+ * @method static Builder<static>|Page whereJsonContainsLocale(string $column, string $locale, ?mixed $value, string $operand = '=')
+ * @method static Builder<static>|Page whereJsonContainsLocales(string $column, array<int, string> $locales, ?mixed $value, string $operand = '=')
+ * @method static Builder<static>|Page whereLocale(string $column, string $locale)
+ * @method static Builder<static>|Page whereLocales(string $column, array<int, string> $locales)
+ * @method static Builder<static>|Page whereMiddleware($value)
+ * @method static Builder<static>|Page whereSidebarBlocks($value)
+ * @method static Builder<static>|Page whereSlug($value)
+ * @method static Builder<static>|Page whereTitle($value)
+ * @method static Builder<static>|Page whereUpdatedAt($value)
+ * @method static Builder<static>|Page whereUpdatedBy($value)
+ * @method static Builder<static>|Page where($column, $operator = null, $value = null, $boolean = 'and')
+ * @method static static|null first(array|string $columns = ['*'])
+ * @method static static|null firstWhere(string $column, mixed $operator = null, mixed $value = null)
+ * @method static static firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
+ * @method static static create(array<string, mixed> $attributes = [])
+ * @method static static updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
+ * @method static Builder<static>|Page delete()
+ * @method static Builder<static>|Page whereIn($column, $values, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Page whereNotIn($column, $values, $boolean = 'and')
+ * @method static Builder<static>|Page whereNull($columns, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Page whereNotNull($columns, $boolean = 'and')
+ * @method static Builder<static>|Page whereBetween($column, array<int, mixed> $values, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Page whereNotBetween($column, array<int, mixed> $values, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Page whereDate($column, string $operator, string $value, $boolean = 'and')
+ * @method static Builder<static>|Page whereMonth($column, string $operator, string $value, $boolean = 'and')
+ * @method static Builder<static>|Page whereDay($column, string $operator, string $value, $boolean = 'and')
+ * @method static Builder<static>|Page whereYear($column, string $operator, string $value, $boolean = 'and')
+ * @method static Builder<static>|Page whereTime($column, string $operator, string $value, $boolean = 'and')
+ * @method static Builder<static>|Page whereColumn($column, string $operator, mixed $value, $boolean = 'and')
+ * @method static Builder<static>|Page orderBy($column, $direction = 'asc')
+ * @method static Builder<static>|Page latest($column = 'created_at')
+ * @method static Builder<static>|Page oldest($column = 'created_at')
+ * @method static Builder<static>|Page limit($value)
+ * @method static Builder<static>|Page take($value)
+ * @method static Builder<static>|Page skip($value)
+ * @method static Builder<static>|Page offset($value)
+ * @method static int count()
+ * @method static int max($column)
+ * @method static int min($column)
+ * @method static int sum($column)
+ * @method static float avg($column)
+ * @method static mixed pluck($column, $key = null)
+ * @method static Builder<static>|Page join($table, $first, $operator = null, $second = null)
+ * @method static Builder<static>|Page leftJoin($table, $first, $operator = null, $second = null)
+ * @method static Builder<static>|Page rightJoin($table, $first, $operator = null, $second = null)
+ * @method static Builder<static>|Page crossJoin($table, $first, $operator = null, $second = null)
+ * @method static Builder<static>|Page having($column, $operator = null, $value = null, $boolean = 'and')
+ * @method static Builder<static>|Page orWhere($column, $operator = null, $value = null, $boolean = 'and')
+ * @method static Builder<static>|Page whereExists($callback, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Page whereNotExists($callback, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Page whereHas($relation, $operator = '>=', $count = 1, $boolean = 'and', $callback = null)
+ * @method static Builder<static>|Page whereDoesntHave($relation, $operator = '<', $count = 1, $boolean = 'and', $callback = null)
+ * @method static Builder<static>|Page whereJsonContains($column, mixed $value, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Page whereJsonLength($column, $operator, $value, $boolean = 'and')
+ * @method static Builder<static>|Page whereJsonPath($path, $operator, $value, $boolean = 'and')
+ * @method static Builder<static>|Page whereJsonOverlaps($column, $value, $boolean = 'and')
+ * @method static Builder<static>|Page with($relations)
+ * @method static Builder<static>|Page without($relations)
+ * @method static Builder<static>|Page withCount($relations)
+ * @method static Builder<static>|Page withSum($relation, $column)
+ * @method static Builder<static>|Page withAvg($relation, $column)
+ * @method static Builder<static>|Page withMin($relation, $column)
+ * @method static Builder<static>|Page withMax($relation, $column)
+ * @method static Builder<static>|Page findOrFail($id, $columns = ['*'])
+ * @method static static findOrFail($id, $columns = ['*'])
+ * @method static static firstOrFail($columns = ['*'])
+ * @method static static firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
+ * @method static static create(array<string, mixed> $attributes = [])
+ * @method static static updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
+ * @method static static update($attributes)
+ * @method static Builder<static>|Page where($column, $operator = null, $value = null, $boolean = 'and')
+ * @method static Builder<static>|Page whereIn($column, $values, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Page whereNotIn($column, $values, $boolean = 'and')
+ * @method static Builder<static>|Page whereNull($columns, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Page whereNotNull($columns, $boolean = 'and')
+ * @method static Builder<static>|Page whereBetween($column, array<int, mixed> $values, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Page whereNotBetween($column, array<int, mixed> $values, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Page whereDate($column, string $operator, string $value, $boolean = 'and')
+ * @method static Builder<static>|Page whereMonth($column, string $operator, string $value, $boolean = 'and')
+ * @method static Builder<static>|Page whereDay($column, string $operator, string $value, $boolean = 'and')
+ * @method static Builder<static>|Page whereYear($column, string $operator, string $value, $boolean = 'and')
+ * @method static Builder<static>|Page whereTime($column, string $operator, string $value, $boolean = 'and')
+ * @method static Builder<static>|Page whereColumn($column, string $operator, mixed $value, $boolean = 'and')
+ * @method static Builder<static>|Page orderBy($column, $direction = 'asc')
+ * @method static Builder<static>|Page latest($column = 'created_at')
+ * @method static Builder<static>|Page oldest($column = 'created_at')
+ * @method static Builder<static>|Page limit($value)
+ * @method static Builder<static>|Page take($value)
+ * @method static Builder<static>|Page skip($value)
+ * @method static Builder<static>|Page offset($value)
+ * @method static int count()
+ * @method static int max($column)
+ * @method static int min($column)
+ * @method static int sum($column)
+ * @method static float avg($column)
+ * @method static mixed pluck($column, $key = null)
+ * @method static Builder<static>|Page join($table, $first, $operator = null, $second = null)
+ * @method static Builder<static>|Page leftJoin($table, $first, $operator = null, $second = null)
+ * @method static Builder<static>|Page rightJoin($table, $first, $operator = null, $second = null)
+ * @method static Builder<static>|Page crossJoin($table, $first, $operator = null, $second = null)
+ * @method static Builder<static>|Page having($column, $operator = null, $value = null, $boolean = 'and')
+ * @method static Builder<static>|Page orWhere($column, $operator = null, $value = null, $boolean = 'and')
+ * @method static Builder<static>|Page whereExists($callback, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Page whereNotExists($callback, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Page whereHas($relation, $operator = '>=', $count = 1, $boolean = 'and', $callback = null)
+ * @method static Builder<static>|Page whereDoesntHave($relation, $operator = '<', $count = 1, $boolean = 'and', $callback = null)
+ * @method static Builder<static>|Page whereJsonContains($column, mixed $value, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Page whereJsonLength($column, $operator, $value, $boolean = 'and')
+ * @method static Builder<static>|Page whereJsonPath($path, $operator, $value, $boolean = 'and')
+ * @method static Builder<static>|Page whereJsonOverlaps($column, $value, $boolean = 'and')
+ * @method static Builder<static>|Page with($relations)
+ * @method static Builder<static>|Page without($relations)
+ * @method static Builder<static>|Page withCount($relations)
+ * @method static Builder<static>|Page withSum($relation, $column)
+ * @method static Builder<static>|Page withAvg($relation, $column)
+ * @method static Builder<static>|Page withMin($relation, $column)
+ * @method static Builder<static>|Page withMax($relation, $column)
+ * @method static Builder<static>|Page findOrFail($id, $columns = ['*'])
+ * @method static static findOrFail($id, $columns = ['*'])
+ * @method static static firstOrFail($columns = ['*'])
+ * @method static static firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
+ * @method static static create(array<string, mixed> $attributes = [])
+ * @method static static updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
+ * @method static static update($attributes)
+ * @method static int increment($column, $amount = 1, $extra = [])
+ * @method static int decrement($column, $amount = 1, $extra = [])
+ * @method static bool truncate()
+ * @method static static destroy($ids)
+ * @method static static restore()
+ * @method static static forceDelete()
+ * @method static static onlyTrashed()
+ * @method static static withTrashed()
+ * @method static static withoutTrashed()
+ * @method static Collection<int, static> all($columns = ['*'])
+ * @method static Collection<int, static> get($columns = ['*'])
+ * @method static static|null first($columns = ['*'])
+ * @method static static|null find($id, $columns = ['*'])
+ * @method static Builder<static>|Page newModelQuery()
+ * @method static Builder<static>|Page newQuery()
+ * @method static Builder<static>|Page query()
+ * @method static Builder<static>|Page whereContent($value)
+ * @method static Builder<static>|Page whereContentBlocks($value)
+ * @method static Builder<static>|Page whereCreatedAt($value)
+ * @method static Builder<static>|Page whereCreatedBy($value)
+ * @method static Builder<static>|Page whereDescription($value)
+ * @method static Builder<static>|Page whereFooterBlocks($value)
+ * @method static Builder<static>|Page whereId($value)
+ * @method static Builder<static>|Page whereJsonContainsLocale(string $column, string $locale, ?mixed $value, string $operand = '=')
+ * @method static Builder<static>|Page whereJsonContainsLocales(string $column, array<int, string> $locales, ?mixed $value, string $operand = '=')
+ * @method static Builder<static>|Page whereLocale(string $column, string $locale)
+ * @method static Builder<static>|Page whereLocales(string $column, array<int, string> $locales)
+ * @method static Builder<static>|Page whereMiddleware($value)
+ * @method static Builder<static>|Page whereSidebarBlocks($value)
+ * @method static Builder<static>|Page whereSlug($value)
+ * @method static Builder<static>|Page whereTitle($value)
+ * @method static Builder<static>|Page whereUpdatedAt($value)
+ * @method static Builder<static>|Page whereUpdatedBy($value)
+ * @method static Builder<static>|Page where($column, $operator = null, $value = null, $boolean = 'and')
+ * @method static static|null first(array|string $columns = ['*'])
+ * @method static static|null firstWhere(string $column, mixed $operator = null, mixed $value = null)
+ * @method static static firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
+ * @method static static create(array<string, mixed> $attributes = [])
+ * @method static static updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
+ * @method static Builder<static>|Page delete()
+ * @method static Builder<static>|Page whereIn($column, $values, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Page whereNotIn($column, $values, $boolean = 'and')
+ * @method static Builder<static>|Page whereNull($columns, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Page whereNotNull($columns, $boolean = 'and')
+ * @method static Builder<static>|Page whereBetween($column, array<int, mixed> $values, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Page whereNotBetween($column, array<int, mixed> $values, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Page whereDate($column, string $operator, string $value, $boolean = 'and')
+ * @method static Builder<static>|Page whereMonth($column, string $operator, string $value, $boolean = 'and')
+ * @method static Builder<static>|Page whereDay($column, string $operator, string $value, $boolean = 'and')
+ * @method static Builder<static>|Page whereYear($column, string $operator, string $value, $boolean = 'and')
+ * @method static Builder<static>|Page whereTime($column, string $operator, string $value, $boolean = 'and')
+ * @method static Builder<static>|Page whereColumn($column, string $operator, mixed $value, $boolean = 'and')
+ * @method static Builder<static>|Page orderBy($column, $direction = 'asc')
+ * @method static Builder<static>|Page latest($column = 'created_at')
+ * @method static Builder<static>|Page oldest($column = 'created_at')
+ * @method static Builder<static>|Page limit($value)
+ * @method static Builder<static>|Page take($value)
+ * @method static Builder<static>|Page skip($value)
+ * @method static Builder<static>|Page offset($value)
+ * @method static int count()
+ * @method static int max($column)
+ * @method static int min($column)
+ * @method static int sum($column)
+ * @method static float avg($column)
+ * @method static mixed pluck($column, $key = null)
+ * @method static Builder<static>|Page join($table, $first, $operator = null, $second = null)
+ * @method static Builder<static>|Page leftJoin($table, $first, $operator = null, $second = null)
+ * @method static Builder<static>|Page rightJoin($table, $first, $operator = null, $second = null)
+ * @method static Builder<static>|Page crossJoin($table, $first, $operator = null, $second = null)
+ * @method static Builder<static>|Page having($column, $operator = null, $value = null, $boolean = 'and')
+ * @method static Builder<static>|Page orWhere($column, $operator = null, $value = null, $boolean = 'and')
+ * @method static Builder<static>|Page whereExists($callback, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Page whereNotExists($callback, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Page whereHas($relation, $operator = '>=', $count = 1, $boolean = 'and', $callback = null)
+ * @method static Builder<static>|Page whereDoesntHave($relation, $operator = '<', $count = 1, $boolean = 'and', $callback = null)
+ * @method static Builder<static>|Page whereJsonContains($column, mixed $value, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Page whereJsonLength($column, $operator, $value, $boolean = 'and')
+ * @method static Builder<static>|Page whereJsonPath($path, $operator, $value, $boolean = 'and')
+ * @method static Builder<static>|Page whereJsonOverlaps($column, $value, $boolean = 'and')
+ * @method static Builder<static>|Page with($relations)
+ * @method static Builder<static>|Page without($relations)
+ * @method static Builder<static>|Page withCount($relations)
+ * @method static Builder<static>|Page withSum($relation, $column)
+ * @method static Builder<static>|Page withAvg($relation, $column)
+ * @method static Builder<static>|Page withMin($relation, $column)
+ * @method static Builder<static>|Page withMax($relation, $column)
+ * @method static Builder<static>|Page findOrFail($id, $columns = ['*'])
+ * @method static static findOrFail($id, $columns = ['*'])
+ * @method static static firstOrFail($columns = ['*'])
+ * @method static static firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
+ * @method static static create(array<string, mixed> $attributes = [])
+ * @method static static updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
+ * @method static static update($attributes)
+ * @method static Builder<static>|Page where($column, $operator = null, $value = null, $boolean = 'and')
+ * @method static Builder<static>|Page whereIn($column, $values, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Page whereNotIn($column, $values, $boolean = 'and')
+ * @method static Builder<static>|Page whereNull($columns, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Page whereNotNull($columns, $boolean = 'and')
+ * @method static Builder<static>|Page whereBetween($column, array<int, mixed> $values, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Page whereNotBetween($column, array<int, mixed> $values, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Page whereDate($column, string $operator, string $value, $boolean = 'and')
+ * @method static Builder<static>|Page whereMonth($column, string $operator, string $value, $boolean = 'and')
+ * @method static Builder<static>|Page whereDay($column, string $operator, string $value, $boolean = 'and')
+ * @method static Builder<static>|Page whereYear($column, string $operator, string $value, $boolean = 'and')
+ * @method static Builder<static>|Page whereTime($column, string $operator, string $value, $boolean = 'and')
+ * @method static Builder<static>|Page whereColumn($column, string $operator, mixed $value, $boolean = 'and')
+ * @method static Builder<static>|Page orderBy($column, $direction = 'asc')
+ * @method static Builder<static>|Page latest($column = 'created_at')
+ * @method static Builder<static>|Page oldest($column = 'created_at')
+ * @method static Builder<static>|Page limit($value)
+ * @method static Builder<static>|Page take($value)
+ * @method static Builder<static>|Page skip($value)
+ * @method static Builder<static>|Page offset($value)
+ * @method static int count()
+ * @method static int max($column)
+ * @method static int min($column)
+ * @method static int sum($column)
+ * @method static float avg($column)
+ * @method static mixed pluck($column, $key = null)
+ * @method static Builder<static>|Page join($table, $first, $operator = null, $second = null)
+ * @method static Builder<static>|Page leftJoin($table, $first, $operator = null, $second = null)
+ * @method static Builder<static>|Page rightJoin($table, $first, $operator = null, $second = null)
+ * @method static Builder<static>|Page crossJoin($table, $first, $operator = null, $second = null)
+ * @method static Builder<static>|Page having($column, $operator = null, $value = null, $boolean = 'and')
+ * @method static Builder<static>|Page orWhere($column, $operator = null, $value = null, $boolean = 'and')
+ * @method static Builder<static>|Page whereExists($callback, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Page whereNotExists($callback, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Page whereHas($relation, $operator = '>=', $count = 1, $boolean = 'and', $callback = null)
+ * @method static Builder<static>|Page whereDoesntHave($relation, $operator = '<', $count = 1, $boolean = 'and', $callback = null)
+ * @method static Builder<static>|Page whereJsonContains($column, mixed $value, $boolean = 'and', $not = false)
+ * @method static Builder<static>|Page whereJsonLength($column, $operator, $value, $boolean = 'and')
+ * @method static Builder<static>|Page whereJsonPath($path, $operator, $value, $boolean = 'and')
+ * @method static Builder<static>|Page whereJsonOverlaps($column, $value, $boolean = 'and')
+ * @method static Builder<static>|Page with($relations)
+ * @method static Builder<static>|Page without($relations)
+ * @method static Builder<static>|Page withCount($relations)
+ * @method static Builder<static>|Page withSum($relation, $column)
+ * @method static Builder<static>|Page withAvg($relation, $column)
+ * @method static Builder<static>|Page withMin($relation, $column)
+ * @method static Builder<static>|Page withMax($relation, $column)
+ * @method static Builder<static>|Page findOrFail($id, $columns = ['*'])
+ * @method static static findOrFail($id, $columns = ['*'])
+ * @method static static firstOrFail($columns = ['*'])
+ * @method static static firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
+ * @method static static create(array<string, mixed> $attributes = [])
+ * @method static static updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
+ * @method static static update($attributes)
+ * @method static int increment($column, $amount = 1, $extra = [])
+ * @method static int decrement($column, $amount = 1, $extra = [])
+ * @method static bool truncate()
+ * @method static static destroy($ids)
+ * @method static static restore()
+ * @method static static forceDelete()
+ * @method static static onlyTrashed()
+ * @method static static withTrashed()
+ * @method static static withoutTrashed()
+ * @method static \Illuminate\Database\Eloquent\Collection<int, static> all($columns = ['*'])
+ * @method static \Illuminate\Database\Eloquent\Collection<int, static> get($columns = ['*'])
+ * @method static static|null first($columns = ['*'])
+ * @method static static|null find($id, $columns = ['*'])
+ * @property ProfileContract|null $deleter
+ * @method static PageFactory factory($count = null, $state = [])
+ * @property array<array-key, mixed>|null $blocks
+ * @method static Builder<static>|Page whereBlocks($value)
+ * @method array<int, array<string, mixed>> getSushiRows()
+ * @method static array<string, \Modules\Cms\Datas\BlockData> getBlocksBySlug(string $slug, ?string $side = null)
+ * @method static array<int, string> getMiddlewareBySlug(string $slug)
+ * @method static PageFactory factory($count = null, $state = [])
  * @method static Builder<static>|Page newModelQuery()
  * @method static Builder<static>|Page newQuery()
  * @method static Builder<static>|Page query()
@@ -427,17 +882,25 @@ namespace Modules\Cms\Models{
  * @method static Builder<static>|Page whereDescription($value)
  * @method static Builder<static>|Page whereFooterBlocks($value)
  * @method static Builder<static>|Page whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Page whereJsonContainsLocale(string $column, string $locale, ?mixed $value, string $operand = '=')
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Page whereJsonContainsLocales(string $column, array<int|string, mixed> $locales, ?mixed $value, string $operand = '=')
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Page whereLocale(string $column, string $locale)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Page whereLocales(string $column, array<int|string, mixed> $locales)
  * @method static Builder<static>|Page whereMiddleware($value)
  * @method static Builder<static>|Page whereSidebarBlocks($value)
  * @method static Builder<static>|Page whereSlug($value)
  * @method static Builder<static>|Page whereTitle($value)
  * @method static Builder<static>|Page whereUpdatedAt($value)
  * @method static Builder<static>|Page whereUpdatedBy($value)
+ * @method static Builder<static>|Page whereJsonContainsLocale(string $column, string $locale, ?mixed $value, string $operand = '=')
+ * @method static Builder<static>|Page whereJsonContainsLocales(string $column, array<int, string> $locales, ?mixed $value, string $operand = '=')
+ * @method static Builder<static>|Page whereLocale(string $column, string $locale)
+ * @method static Builder<static>|Page whereLocales(string $column, array<int, string> $locales)
+ * @method static Collection<int, static> all($columns = ['*'])
+ * @method static Collection<int, static> get($columns = ['*'])
+ * @method static static|null first($columns = ['*'])
+ * @method static static|null find($id, $columns = ['*'])
+ * @method static array<string, \Modules\Cms\Datas\BlockData> getBlocksBySlug(string $slug, ?string $side = null)
+ * @method static array<int, string> getMiddlewareBySlug(string $slug)
+ * @method array<int, array<string, mixed>> getSushiRows()
  * @mixin \Eloquent
+ * @property-read array $translatable_columns_from
  */
 	class Page extends \Eloquent {}
 }
@@ -446,7 +909,7 @@ namespace Modules\Cms\Models{
 /**
  * Modules\Cms\Models\PageContent.
  *
- * @property string|null $id
+ * @property string $id
  * @property array<array-key, mixed>|null $name
  * @property string|null $slug
  * @property array<array-key, mixed>|null $blocks
@@ -454,10 +917,9 @@ namespace Modules\Cms\Models{
  * @property Carbon|null $updated_at
  * @property string|null $created_by
  * @property string|null $updated_by
- * @property-read Profile|null $creator
- * @property-read array<int|string, mixed> $translatable_columns_from
- * @property-read mixed $translations
- * @property-read Profile|null $updater
+ * @property ProfileContract|null $creator
+ * @property mixed $translations
+ * @property ProfileContract|null $updater
  * @method static Builder<static>|PageContent newModelQuery()
  * @method static Builder<static>|PageContent newQuery()
  * @method static Builder<static>|PageContent query()
@@ -466,14 +928,19 @@ namespace Modules\Cms\Models{
  * @method static Builder<static>|PageContent whereCreatedBy($value)
  * @method static Builder<static>|PageContent whereId($value)
  * @method static Builder<static>|PageContent whereJsonContainsLocale(string $column, string $locale, ?mixed $value, string $operand = '=')
- * @method static Builder<static>|PageContent whereJsonContainsLocales(string $column, array<int|string, mixed> $locales, ?mixed $value, string $operand = '=')
+ * @method static Builder<static>|PageContent whereJsonContainsLocales(string $column, array<int, string> $locales, ?mixed $value, string $operand = '=')
  * @method static Builder<static>|PageContent whereLocale(string $column, string $locale)
- * @method static Builder<static>|PageContent whereLocales(string $column, array<int|string, mixed> $locales)
+ * @method static Builder<static>|PageContent whereLocales(string $column, array<int, string> $locales)
  * @method static Builder<static>|PageContent whereName($value)
  * @method static Builder<static>|PageContent whereSlug($value)
  * @method static Builder<static>|PageContent whereUpdatedAt($value)
  * @method static Builder<static>|PageContent whereUpdatedBy($value)
+ * @method static int count()
+ * @property ProfileContract|null $deleter
+ * @method static PageContentFactory factory($count = null, $state = [])
+ * @method array<int, array<string, mixed>> getSushiRows()
  * @mixin \Eloquent
+ * @property-read array $translatable_columns_from
  */
 	class PageContent extends \Eloquent {}
 }
@@ -482,7 +949,9 @@ namespace Modules\Cms\Models{
 /**
  * Modules\Cms\Models\Section.
  *
- * @property string|null $id
+ * @property string $id
+ * @method static array<string, \Modules\Cms\Datas\BlockData> getBlocksBySlug(string $slug, ?string $side = null)
+ * @property string $id
  * @property array<array-key, mixed>|null $name
  * @property string|null $slug
  * @property array<array-key, mixed>|null $blocks
@@ -490,10 +959,9 @@ namespace Modules\Cms\Models{
  * @property Carbon|null $updated_at
  * @property string|null $created_by
  * @property string|null $updated_by
- * @property-read Profile|null $creator
- * @property-read array<int|string, mixed> $translatable_columns_from
- * @property-read mixed $translations
- * @property-read Profile|null $updater
+ * @property ProfileContract|null $creator
+ * @property mixed $translations
+ * @property ProfileContract|null $updater
  * @method static Builder<static>|Section newModelQuery()
  * @method static Builder<static>|Section newQuery()
  * @method static Builder<static>|Section query()
@@ -501,15 +969,21 @@ namespace Modules\Cms\Models{
  * @method static Builder<static>|Section whereCreatedAt($value)
  * @method static Builder<static>|Section whereCreatedBy($value)
  * @method static Builder<static>|Section whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Section whereJsonContainsLocale(string $column, string $locale, ?mixed $value, string $operand = '=')
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Section whereJsonContainsLocales(string $column, array<int|string, mixed> $locales, ?mixed $value, string $operand = '=')
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Section whereLocale(string $column, string $locale)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Section whereLocales(string $column, array<int|string, mixed> $locales)
+ * @method static Builder<static>|Section whereJsonContainsLocale(string $column, string $locale, ?mixed $value, string $operand = '=')
+ * @method static Builder<static>|Section whereJsonContainsLocales(string $column, array<int, string> $locales, ?mixed $value, string $operand = '=')
+ * @method static Builder<static>|Section whereLocale(string $column, string $locale)
+ * @method static Builder<static>|Section whereLocales(string $column, array<int, string> $locales)
  * @method static Builder<static>|Section whereName($value)
  * @method static Builder<static>|Section whereSlug($value)
  * @method static Builder<static>|Section whereUpdatedAt($value)
  * @method static Builder<static>|Section whereUpdatedBy($value)
+ * @method static int count()
+ * @method static Builder<static>|Section where($column, $operator = null, $value = null, $boolean = 'and')
+ * @property ProfileContract|null $deleter
+ * @method static SectionFactory factory($count = null, $state = [])
+ * @method array<int, array<string, mixed>> getSushiRows()
  * @mixin \Eloquent
+ * @property-read array $translatable_columns_from
  */
 	class Section extends \Eloquent {}
 }
@@ -524,28 +998,29 @@ namespace Modules\Employee\Models{
  * @property int $id
  * @property int $user_id
  * @property string $type
- * @property Carbon|null $starts_at
- * @property Carbon|null $ends_at
+ * @property Carbon $starts_at
+ * @property Carbon $ends_at
  * @property string|null $notes
  * @property string $status
- * @property int|null $decided_by_user_id
+ * @property string|null $decided_by_user_id
  * @property Carbon|null $decided_at
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property Carbon|null $deleted_at
- * @property-read Profile|null $creator
- * @property-read Employee|null $decidedBy
- * @property-read Profile|null $updater
  * @property-read Employee|null $user
- * @method static Builder<static>|AbsenceRequest forUser(int $userId)
+ * @property-read Employee|null $decidedBy
+ * @method static AbsenceRequestFactory factory($count = null, $state = [])
  * @method static Builder<static>|AbsenceRequest newModelQuery()
  * @method static Builder<static>|AbsenceRequest newQuery()
- * @method static Builder<static>|AbsenceRequest onlyTrashed()
- * @method static Builder<static>|AbsenceRequest pending()
  * @method static Builder<static>|AbsenceRequest query()
- * @method static Builder<static>|AbsenceRequest withTrashed(bool $withTrashed = true)
- * @method static Builder<static>|AbsenceRequest withoutTrashed()
  * @mixin \Eloquent
+ * @property-read \Modules\TechPlanner\Models\Profile|null $creator
+ * @property-read \Modules\TechPlanner\Models\Profile|null $updater
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|AbsenceRequest forUser(string|int $userId)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|AbsenceRequest onlyTrashed()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|AbsenceRequest pending()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|AbsenceRequest withTrashed(bool $withTrashed = true)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|AbsenceRequest withoutTrashed()
  */
 	class AbsenceRequest extends \Eloquent {}
 }
@@ -558,114 +1033,185 @@ namespace Modules\Employee\Models{
  * Dichiararlo qui è ridondante e può causare warning o confusione.
  * Vedi docs/DRY-model-traits.md
  *
+ * @property string $id
+ * @property string $user_id
+ * @property string|null $date_of_birth
+ *                                      Employee Module Admin Model
+ *
+ * Admin user type using Single Table Inheritance with Parental package.
+ * Child class of User model for administrative users.
+ * @property int $id
+ * @property string $name
+ * @property string $email
+ * @property string $password
+ * @property string $type
+ * @property string|null $first_name
+ * @property string|null $last_name
+ * @property Carbon|null $date_of_birth
+ * @property string|null $gender
+ * @property string|null $address
+ * @property string|null $phone
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property string|null $created_by
+ * @property string|null $updated_by
+ * @property-read \Modules\User\Models\User|null $user
+ * @method static Builder|Admin newModelQuery()
+ * @method static Builder|Admin newQuery()
+ * @method static Builder|Admin query()
+ * @method static Builder|Admin whereAddress($value)
+ * @method static Builder|Admin whereCreatedAt($value)
+ * @method static Builder|Admin whereCreatedBy($value)
+ * @method static Builder|Admin whereDateOfBirth($value)
+ * @method static Builder|Admin whereGender($value)
+ * @method static Builder|Admin whereId($value)
+ * @method static Builder|Admin wherePhone($value)
+ * @method static Builder|Admin whereUpdatedAt($value)
+ * @method static Builder|Admin whereUpdatedBy($value)
+ * @method static Builder|Admin whereUserId($value)
+ * @property string|null $name
+ * @property string|null $first_name
+ * @property string|null $last_name
+ * @property string $email
+ * @property string|null $city
+ * @property string|null $registration_number
+ * @property string|null $status
+ * @property array<array-key, mixed>|null $certifications
+ * @property \Illuminate\Support\Carbon|null $email_verified_at
+ * @property string|null $password
+ * @property string|null $remember_token
+ * @property int|null $current_team_id
+ * @property string|null $profile_photo_path
+ * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property string|null $state
+ * @property array<array-key, mixed>|null $moderation_data
+ * @property string|null $lang
+ * @property string|null $type
+ * @property bool $is_active
+ * @property bool $is_otp
+ * @property \Illuminate\Support\Carbon|null $password_expires_at
+ * @property string|null $uuid
+ * @property string|null $full_name
+ * @property string|null $deleted_by
  * @property-read Collection<int, Consent> $activeConsents
  * @property-read int|null $active_consents_count
- * @property-read Collection<int, AuthenticationLog> $authentications
+ * @property-read Collection<int, Activity> $activities
+ * @property-read int|null $activities_count
+ * @property-read Collection<int, Authentication> $authentications
  * @property-read int|null $authentications_count
- * @property-read Collection<int, OauthClient> $clients
+ * @property-read Collection<int, Client> $clients
  * @property-read int|null $clients_count
  * @property-read Collection<int, Consent> $consents
  * @property-read int|null $consents_count
  * @property-read Team|null $currentTeam
- * @property-read TenantUser|TeamUser|DeviceUser|null $pivot
- * @property-read Collection<int, Device> $devices
- * @property-read int|null $devices_count
- * @property-read Collection<int, User> $all_team_users
- * @property-read string $full_name
- * @property-read string $name
+ * @property-read Collection<int, Model> $all_team_users
  * @property-read AuthenticationLog|null $latestAuthentication
  * @property-read MediaCollection<int, Media> $media
  * @property-read int|null $media_count
- * @property-read Collection<int, Team> $membershipTeams
- * @property-read int|null $membership_teams_count
  * @property-read DatabaseNotificationCollection<int, Notification> $notifications
  * @property-read int|null $notifications_count
- * @property-read Collection<int, OauthClient> $oauthApps
- * @property-read int|null $oauth_apps_count
  * @property-read Collection<int, Team> $ownedTeams
  * @property-read int|null $owned_teams_count
  * @property-read Collection<int, Permission> $permissions
  * @property-read int|null $permissions_count
- * @property-read Profile|null $profile
+ * @property-read ProfileContract|null $profile
  * @property-read Collection<int, Role> $roles
  * @property-read int|null $roles_count
- * @property-write mixed $password
  * @property-read Collection<int, SocialiteUser> $socialiteUsers
  * @property-read int|null $socialite_users_count
- * @property-read Collection<int, TeamUser> $teamUsers
- * @property-read int|null $team_users_count
- * @property-read Collection<int, Tenant> $tenants
- * @property-read int|null $tenants_count
- * @property-read Collection<int, OauthToken> $tokens
+ * @property-read mixed|null $pivot
+ * @property-read Collection<int, Team> $teams
+ * @property-read int|null $teams_count
+ * @property-read Collection<int, Token> $tokens
  * @property-read int|null $tokens_count
  * @property-read Collection<int, Treatment> $treatments
  * @property-read int|null $treatments_count
- * @method static Builder<static>|Admin childrenWith(array<int, string> $relations)
- * @method static Builder<static>|Admin childrenWithCount(array<int, string> $relations)
- * @method static \Modules\Employee\Database\Factories\AdminFactory factory($count = null, $state = [])
- * @method static Builder<static>|Admin newModelQuery()
- * @method static Builder<static>|Admin newQuery()
+ * @method static Builder<static>|Admin admins()
+ * @method static Builder<static>|Admin doctors()
+ * @method static UserFactory factory($count = null, $state = [])
  * @method static Builder<static>|Admin orWhereNotState(string $column, $states)
  * @method static Builder<static>|Admin orWhereState(string $column, $states)
- * @method static Builder<static>|Admin permission($permissions, bool $without = false)
- * @method static Builder<static>|Admin query()
- * @method static Builder<static>|Admin role($roles, ?string $guard = null, bool $without = false)
- * @method static Builder<static>|Admin team($teams, bool $without = false)
- * @method static Builder<static>|Admin whereNotState(string $column, $states)
- * @method static Builder<static>|Admin whereState(string $column, $states)
- * @method static Builder<static>|Admin withoutPermission($permissions)
- * @method static Builder<static>|Admin withoutRole($roles, ?string $guard = null)
- * @method static Builder<static>|Admin withoutTeam($teams)
- * @property string $id
- * @property string|null $first_name
- * @property string|null $last_name
- * @property string $email
- * @property Carbon|null $email_verified_at
- * @property string|null $two_factor_secret
- * @property string|null $two_factor_recovery_codes
- * @property string|null $two_factor_confirmed_at
- * @property string|null $remember_token
- * @property int|null $current_team_id
- * @property string|null $profile_photo_path
- * @property Carbon|null $deleted_at
- * @property string|null $lang
- * @property bool $is_active
- * @property bool $is_otp
- * @property Carbon|null $password_expires_at
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
- * @property string|null $deleted_by
- * @property string|null $type
- * @property string|null $state
- * @method static Builder<static>|Admin whereCreatedAt($value)
- * @method static Builder<static>|Admin whereCreatedBy($value)
+ * @method static Builder<static>|Admin patients()
+ * @method static Builder<static>|Admin permission($permissions, $without = false)
+ * @method static Builder<static>|Admin role($roles, $guard = null, $without = false)
+ * @method static Builder<static>|Admin whereCertifications($value)
+ * @method static Builder<static>|Admin whereCity($value)
  * @method static Builder<static>|Admin whereCurrentTeamId($value)
  * @method static Builder<static>|Admin whereDeletedAt($value)
  * @method static Builder<static>|Admin whereDeletedBy($value)
  * @method static Builder<static>|Admin whereEmail($value)
  * @method static Builder<static>|Admin whereEmailVerifiedAt($value)
  * @method static Builder<static>|Admin whereFirstName($value)
- * @method static Builder<static>|Admin whereId($value)
+ * @method static Builder<static>|Admin whereFullName($value)
  * @method static Builder<static>|Admin whereIsActive($value)
  * @method static Builder<static>|Admin whereIsOtp($value)
  * @method static Builder<static>|Admin whereLang($value)
  * @method static Builder<static>|Admin whereLastName($value)
+ * @method static Builder<static>|Admin whereModerationData($value)
  * @method static Builder<static>|Admin whereName($value)
+ * @method static Builder<static>|Admin whereNotState(string $column, $states)
  * @method static Builder<static>|Admin wherePassword($value)
  * @method static Builder<static>|Admin wherePasswordExpiresAt($value)
  * @method static Builder<static>|Admin whereProfilePhotoPath($value)
+ * @method static Builder<static>|Admin whereRegistrationNumber($value)
  * @method static Builder<static>|Admin whereRememberToken($value)
- * @method static Builder<static>|Admin whereTwoFactorConfirmedAt($value)
- * @method static Builder<static>|Admin whereTwoFactorRecoveryCodes($value)
- * @method static Builder<static>|Admin whereTwoFactorSecret($value)
+ * @method static Builder<static>|Admin whereState($value)
+ * @method static Builder<static>|Admin whereStatus($value)
  * @method static Builder<static>|Admin whereType($value)
- * @method static Builder<static>|Admin whereUpdatedAt($value)
- * @method static Builder<static>|Admin whereUpdatedBy($value)
+ * @method static Builder<static>|Admin whereUuid($value)
+ * @method static Builder<static>|Admin withoutPermission($permissions)
+ * @method static Builder<static>|Admin withoutRole($roles, $guard = null)
+ * @property-read Collection<int, Device> $devices
+ * @property-read int|null $devices_count
+ * @property string|null $dental_problems
+ * @property string|null $last_dental_visit
+ * @property string|null $pregnancy_certificate
+ * @property string|null $isee_certificate
+ * @property string|null $identity_document
+ * @property string|null $health_card
+ * @property string|null $certificates
+ * @property-read Collection<int, Membership> $teamUsers
+ * @property-read int|null $team_users_count
+ * @method static Builder<static>|Admin whereCertificates($value)
+ * @method static Builder<static>|Admin whereDentalProblems($value)
+ * @method static Builder<static>|Admin whereHealthCard($value)
+ * @method static Builder<static>|Admin whereIdentityDocument($value)
+ * @method static Builder<static>|Admin whereIseeCertificate($value)
+ * @method static Builder<static>|Admin whereLastDentalVisit($value)
+ * @method static Builder<static>|Admin wherePregnancyCertificate($value)
+ * @property string|null $country_code
+ * @property string|null $children_count
+ * @property string|null $family_members
+ * @property string|null $years_in_italy
+ * @property string|null $nationality
+ * @property string|null $fiscal_code
+ * @property string|null $data_privacy_form
+ * @property string|null $doctor_certificate
+ * @property array<array-key, mixed>|null $certification
+ * @property string|null $last_dental_visit_period
+ * @method static Builder<static>|Admin whereCertification($value)
+ * @method static Builder<static>|Admin whereChildrenCount($value)
+ * @method static Builder<static>|Admin whereCountryCode($value)
+ * @method static Builder<static>|Admin whereDataPrivacyForm($value)
+ * @method static Builder<static>|Admin whereDoctorCertificate($value)
+ * @method static Builder<static>|Admin whereFamilyMembers($value)
+ * @method static Builder<static>|Admin whereFiscalCode($value)
+ * @method static Builder<static>|Admin whereLastDentalVisitPeriod($value)
+ * @method static Builder<static>|Admin whereNationality($value)
+ * @method static Builder<static>|Admin whereYearsInItaly($value)
+ * @property string|null $age_range
+ * @method static Builder<static>|Admin whereAgeRange($value)
+ * @property-read Collection<int, Tenant> $tenants
+ * @property-read int|null $tenants_count
  * @mixin \Eloquent
- * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Team> $teams
- * @property-read int|null $teams_count
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Team> $membershipTeams
+ * @property-read int|null $membership_teams_count
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\OauthClient> $oauthApps
+ * @property-read int|null $oauth_apps_count
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin childrenWith(array $relations)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin childrenWithCount(array $relations)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin team($teams, bool $without = false)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin withoutTeam($teams)
  */
 	class Admin extends \Eloquent {}
 }
@@ -674,10 +1220,19 @@ namespace Modules\Employee\Models{
 /**
  * Class Department.
  *
- * @property-read Profile|null $creator
+ * @property int $id
+ * @property string $name
+ * @property string|null $description
+ * @property int|null $manager_id
+ * @property bool $is_active
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property-read Collection<int, Employee> $employees
  * @property-read int|null $employees_count
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $deleter
+ * @property-read ProfileContract|null $updater
+ * @method static DepartmentFactory factory($count = null, $state = [])
  * @method static Builder<static>|Department newModelQuery()
  * @method static Builder<static>|Department newQuery()
  * @method static Builder<static>|Department query()
@@ -690,89 +1245,29 @@ namespace Modules\Employee\Models{
 /**
  * Class Employee.
  *
- * @property string|null $employee_code
- * @property array<string, mixed>|null $personal_data
- * @property array<string, mixed>|null $contact_data
- * @property array<string, mixed>|null $work_data
- * @property array<string, mixed>|null $documents
+ * @property int $id
+ * @property int|null $user_id
+ * @property string $employee_code
+ * @property array<string, mixed> $personal_data
+ * @property array<string, mixed> $contact_data
+ * @property array<string, mixed> $work_data
+ * @property array<string, mixed> $documents
  * @property string|null $photo_url
- * @property string|null $status
+ * @property string $status
  * @property int|null $department_id
- * @property string|null $manager_id
+ * @property int|null $manager_id
  * @property int|null $position_id
- * @property array<string, mixed>|null $salary_data
- * @property-read Collection<int, Consent> $activeConsents
- * @property-read int|null $active_consents_count
- * @property-read Collection<int, AuthenticationLog> $authentications
- * @property-read int|null $authentications_count
- * @property-read Collection<int, OauthClient> $clients
- * @property-read int|null $clients_count
- * @property-read Collection<int, Consent> $consents
- * @property-read int|null $consents_count
- * @property-read Team|null $currentTeam
- * @property-read TenantUser|TeamUser|DeviceUser|null $pivot
- * @property-read Collection<int, Device> $devices
- * @property-read int|null $devices_count
- * @property-read Collection<int, User> $all_team_users
- * @property-read string $full_name
- * @property-read string $name
- * @property-read string $status_label
- * @property-read AuthenticationLog|null $latestAuthentication
- * @property-read Employee|null $manager
- * @property-read MediaCollection<int, Media> $media
- * @property-read int|null $media_count
- * @property-read Collection<int, Team> $membershipTeams
- * @property-read int|null $membership_teams_count
- * @property-read DatabaseNotificationCollection<int, Notification> $notifications
- * @property-read int|null $notifications_count
- * @property-read Collection<int, OauthClient> $oauthApps
- * @property-read int|null $oauth_apps_count
- * @property-read Collection<int, Team> $ownedTeams
- * @property-read int|null $owned_teams_count
- * @property-read Collection<int, Permission> $permissions
- * @property-read int|null $permissions_count
- * @property-read Profile|null $profile
- * @property-read Collection<int, Role> $roles
- * @property-read int|null $roles_count
- * @property-write mixed $password
- * @property-read Collection<int, SocialiteUser> $socialiteUsers
- * @property-read int|null $socialite_users_count
- * @property-read Collection<int, Employee> $subordinates
- * @property-read int|null $subordinates_count
- * @property-read Collection<int, TeamUser> $teamUsers
- * @property-read int|null $team_users_count
- * @property-read Collection<int, Tenant> $tenants
- * @property-read int|null $tenants_count
- * @property-read Collection<int, OauthToken> $tokens
- * @property-read int|null $tokens_count
- * @property-read Collection<int, Treatment> $treatments
- * @property-read int|null $treatments_count
+ * @property array<string, mixed> $salary_data
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property-read \Modules\User\Models\User|null $user
  * @property-read Collection<int, WorkHour> $workHours
- * @property-read int|null $work_hours_count
- * @method static Builder<static>|Employee childrenWith(array<int, string> $relations)
- * @method static Builder<static>|Employee childrenWithCount(array<int, string> $relations)
- * @method static \Modules\Employee\Database\Factories\EmployeeFactory factory($count = null, $state = [])
- * @method static Builder<static>|Employee newModelQuery()
- * @method static Builder<static>|Employee newQuery()
- * @method static Builder<static>|Employee orWhereNotState(string $column, $states)
- * @method static Builder<static>|Employee orWhereState(string $column, $states)
- * @method static Builder<static>|Employee permission($permissions, bool $without = false)
- * @method static Builder<static>|Employee query()
- * @method static Builder<static>|Employee role($roles, ?string $guard = null, bool $without = false)
- * @method static Builder<static>|Employee team($teams, bool $without = false)
- * @method static Builder<static>|Employee whereNotState(string $column, $states)
- * @method static Builder<static>|Employee whereState(string $column, $states)
- * @method static Builder<static>|Employee withoutPermission($permissions)
- * @method static Builder<static>|Employee withoutRole($roles, ?string $guard = null)
- * @method static Builder<static>|Employee withoutTeam($teams)
- * @property string $id
+ * @property string|null $name
  * @property string|null $first_name
  * @property string|null $last_name
  * @property string $email
  * @property string|null $email_verified_at
- * @property string|null $two_factor_secret
- * @property string|null $two_factor_recovery_codes
- * @property string|null $two_factor_confirmed_at
+ * @property string|null $password
  * @property string|null $remember_token
  * @property int|null $current_team_id
  * @property string|null $profile_photo_path
@@ -781,13 +1276,61 @@ namespace Modules\Employee\Models{
  * @property int $is_active
  * @property int $is_otp
  * @property string|null $password_expires_at
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_by
  * @property string|null $type
- * @property string|null $state
+ * @property-read Collection<int, Consent> $activeConsents
+ * @property-read int|null $active_consents_count
+ * @property-read Collection<int, Activity> $activities
+ * @property-read int|null $activities_count
+ * @property-read Collection<int, AuthenticationLog> $authentications
+ * @property-read int|null $authentications_count
+ * @property-read Collection<int, Client> $clients
+ * @property-read int|null $clients_count
+ * @property-read Collection<int, Consent> $consents
+ * @property-read int|null $consents_count
+ * @property-read Team|null $currentTeam
+ * @property-read TenantUser|Membership|DeviceUser|null $pivot
+ * @property-read Collection<int, Device> $devices
+ * @property-read int|null $devices_count
+ * @property-read Collection<int, \Modules\User\Models\User> $all_team_users
+ * @property-read string|null $full_name
+ * @property-read string $status_label
+ * @property-read AuthenticationLog|null $latestAuthentication
+ * @property-read MediaCollection<int, Media> $media
+ * @property-read int|null $media_count
+ * @property-read DatabaseNotificationCollection<int, Notification> $notifications
+ * @property-read int|null $notifications_count
+ * @property-read Collection<int, Team> $ownedTeams
+ * @property-read int|null $owned_teams_count
+ * @property-read Collection<int, Permission> $permissions
+ * @property-read int|null $permissions_count
+ * @property-read ProfileContract|null $profile
+ * @property-read Collection<int, Role> $roles
+ * @property-read int|null $roles_count
+ * @property-read Collection<int, SocialiteUser> $socialiteUsers
+ * @property-read int|null $socialite_users_count
+ * @property-read int|null $subordinates_count
+ * @property-read Collection<int, Membership> $teamUsers
+ * @property-read int|null $team_users_count
+ * @property-read Collection<int, Team> $teams
+ * @property-read int|null $teams_count
+ * @property-read Collection<int, Domain> $tenants
+ * @property-read int|null $tenants_count
+ * @property-read Collection<int, Token> $tokens
+ * @property-read int|null $tokens_count
+ * @property-read Collection<int, Treatment> $treatments
+ * @property-read int|null $treatments_count
+ * @property-read int|null $work_hours_count
+ * @method static EmployeeFactory factory($count = null, $state = [])
+ * @method static Builder<static>|Employee newModelQuery()
+ * @method static Builder<static>|Employee newQuery()
+ * @method static Builder<static>|Employee orWhereNotState(string $column, $states)
+ * @method static Builder<static>|Employee orWhereState(string $column, $states)
+ * @method static Builder<static>|Employee permission($permissions, $without = false)
+ * @method static Builder<static>|Employee query()
+ * @method static Builder<static>|Employee role($roles, $guard = null, $without = false)
  * @method static Builder<static>|Employee whereCreatedAt($value)
  * @method static Builder<static>|Employee whereCreatedBy($value)
  * @method static Builder<static>|Employee whereCurrentTeamId($value)
@@ -802,19 +1345,28 @@ namespace Modules\Employee\Models{
  * @method static Builder<static>|Employee whereLang($value)
  * @method static Builder<static>|Employee whereLastName($value)
  * @method static Builder<static>|Employee whereName($value)
+ * @method static Builder<static>|Employee whereNotState(string $column, $states)
  * @method static Builder<static>|Employee wherePassword($value)
  * @method static Builder<static>|Employee wherePasswordExpiresAt($value)
  * @method static Builder<static>|Employee whereProfilePhotoPath($value)
  * @method static Builder<static>|Employee whereRememberToken($value)
- * @method static Builder<static>|Employee whereTwoFactorConfirmedAt($value)
- * @method static Builder<static>|Employee whereTwoFactorRecoveryCodes($value)
- * @method static Builder<static>|Employee whereTwoFactorSecret($value)
+ * @method static Builder<static>|Employee whereState(string $column, $states)
  * @method static Builder<static>|Employee whereType($value)
  * @method static Builder<static>|Employee whereUpdatedAt($value)
  * @method static Builder<static>|Employee whereUpdatedBy($value)
+ * @method static Builder<static>|Employee withoutPermission($permissions)
+ * @method static Builder<static>|Employee withoutRole($roles, $guard = null)
+ * @property-read Employee|null $manager
+ * @property-read Collection<int, Employee> $subordinates
  * @mixin \Eloquent
- * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Team> $teams
- * @property-read int|null $teams_count
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Team> $membershipTeams
+ * @property-read int|null $membership_teams_count
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\OauthClient> $oauthApps
+ * @property-read int|null $oauth_apps_count
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Employee childrenWith(array $relations)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Employee childrenWithCount(array $relations)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Employee team($teams, bool $without = false)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Employee withoutTeam($teams)
  */
 	class Employee extends \Eloquent {}
 }
@@ -823,10 +1375,20 @@ namespace Modules\Employee\Models{
 /**
  * Class Position.
  *
- * @property-read Profile|null $creator
+ * @property int $id
+ * @property string $title
+ * @property string|null $description
+ * @property string|null $department
+ * @property int|null $level
+ * @property bool $is_active
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property-read Collection<int, Employee> $employees
  * @property-read int|null $employees_count
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $deleter
+ * @property-read ProfileContract|null $updater
+ * @method static PositionFactory factory($count = null, $state = [])
  * @method static Builder<static>|Position newModelQuery()
  * @method static Builder<static>|Position newQuery()
  * @method static Builder<static>|Position query()
@@ -849,9 +1411,9 @@ namespace Modules\Employee\Models{
  * @property float|null $total_hours
  * @property float|null $regular_hours
  * @property float|null $overtime_hours
- * @property array<mixed>|null $location_in
- * @property array<mixed>|null $location_out
- * @property array<mixed>|null $device_info
+ * @property array<string, mixed>|null $location_in
+ * @property array<string, mixed>|null $location_out
+ * @property array<string, mixed>|null $device_info
  * @property string|null $notes
  * @property string|null $employee_notes
  * @property string|null $supervisor_notes
@@ -859,16 +1421,55 @@ namespace Modules\Employee\Models{
  * @property int|null $approved_by
  * @property Carbon|null $approved_at
  * @property string|null $rejection_reason
- * @property array<mixed>|null $anomalies
+ * @property array<string, mixed>|null $anomalies
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property-read Employee $employee
  * @property-read Employee|null $approvedBy
- * @property-read Profile|null $creator
- * @property-read Employee|null $employee
- * @property-read Profile|null $updater
+ * @property string $type Type of time entry
+ * @property string $timestamp Exact time of entry
+ * @property numeric|null $location_lat GPS latitude coordinate
+ * @property numeric|null $location_lng GPS longitude coordinate
+ * @property string|null $location_name Human readable location name
+ * @property string|null $photo_path Path to verification photo
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $deleter
+ * @property-read ProfileContract|null $updater
+ * @method static TimeEntryFactory factory($count = null, $state = [])
  * @method static Builder<static>|TimeEntry forEmployee(int $employeeId)
  * @method static Builder<static>|TimeEntry newModelQuery()
  * @method static Builder<static>|TimeEntry newQuery()
  * @method static Builder<static>|TimeEntry pending()
  * @method static Builder<static>|TimeEntry query()
+ * @method static Builder<static>|TimeEntry whereApprovedAt($value)
+ * @method static Builder<static>|TimeEntry whereApprovedBy($value)
+ * @method static Builder<static>|TimeEntry whereClockIn($value)
+ * @method static Builder<static>|TimeEntry whereClockOut($value)
+ * @method static Builder<static>|TimeEntry whereBreakStart($value)
+ * @method static Builder<static>|TimeEntry whereBreakEnd($value)
+ * @method static Builder<static>|TimeEntry whereBreakDuration($value)
+ * @method static Builder<static>|TimeEntry whereTotalHours($value)
+ * @method static Builder<static>|TimeEntry whereRegularHours($value)
+ * @method static Builder<static>|TimeEntry whereOvertimeHours($value)
+ * @method static Builder<static>|TimeEntry whereLocationIn($value)
+ * @method static Builder<static>|TimeEntry whereLocationOut($value)
+ * @method static Builder<static>|TimeEntry whereDeviceInfo($value)
+ * @method static Builder<static>|TimeEntry whereNotes($value)
+ * @method static Builder<static>|TimeEntry whereEmployeeNotes($value)
+ * @method static Builder<static>|TimeEntry whereSupervisorNotes($value)
+ * @method static Builder<static>|TimeEntry whereStatus($value)
+ * @method static Builder<static>|TimeEntry whereRejectionReason($value)
+ * @method static Builder<static>|TimeEntry whereAnomalies($value)
+ * @method static Builder<static>|TimeEntry whereCreatedAt($value)
+ * @method static Builder<static>|TimeEntry whereUpdatedAt($value)
+ * @method static Builder<static>|TimeEntry whereId($value)
+ * @method static Builder<static>|TimeEntry whereEmployeeId($value)
+ * @method static Builder<static>|TimeEntry whereLocationLat($value)
+ * @method static Builder<static>|TimeEntry whereLocationLng($value)
+ * @method static Builder<static>|TimeEntry whereLocationName($value)
+ * @method static Builder<static>|TimeEntry wherePhotoPath($value)
+ * @method static Builder<static>|TimeEntry whereTimestamp($value)
+ * @method static Builder<static>|TimeEntry whereType($value)
  * @method static Builder<static>|TimeEntry withAnomalies()
  * @mixin \Eloquent
  */
@@ -880,32 +1481,37 @@ namespace Modules\Employee\Models{
  * Class TimeRecord.
  *
  * @property int $id
- * @property \Illuminate\Support\Carbon $timestamp
+ * @property int $user_id
+ * @property Carbon $timestamp
  * @property string $type
- * @property bool $is_manual
- * @property string|null $method
- * @property float|null $latitude
- * @property float|null $longitude
+ * @property string $method
+ * @property string|null $latitude
+ * @property string|null $longitude
  * @property string|null $address
  * @property string|null $notes
- * @property string|null $status
+ * @property string $status
+ * @property bool $is_manual
  * @property int|null $created_by
  * @property int|null $updated_by
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property-read User $user
  * @property-read User|null $createdBy
- * @property-read Profile|null $creator
+ * @property-read User|null $updatedBy
+ * @property-read ProfileContract|null $creator
  * @property-read string $formatted_date
  * @property-read string $formatted_time
  * @property-read string $formatted_timestamp
- * @property-read User|null $updatedBy
- * @property-read Profile|null $updater
- * @property-read User|null $user
+ * @property-read ProfileContract|null $updater
  * @method static Builder<static>|TimeRecord forDate(\Carbon\Carbon $date)
- * @method static Builder<static>|TimeRecord forUser(int $userId)
+ * @method static Builder<static>|TimeRecord forUser(int|string $userId)
  * @method static Builder<static>|TimeRecord newModelQuery()
  * @method static Builder<static>|TimeRecord newQuery()
  * @method static Builder<static>|TimeRecord ofType(string $type)
  * @method static Builder<static>|TimeRecord query()
  * @method static Builder<static>|TimeRecord valid()
+ * @property-read ProfileContract|null $deleter
+ * @method static TimeRecordFactory factory($count = null, $state = [])
  * @mixin \Eloquent
  */
 	class TimeRecord extends \Eloquent {}
@@ -918,87 +1524,80 @@ namespace Modules\Employee\Models{
  * Extends BaseUser with Single Table Inheritance for Employee module.
  * Parent class for Admin and Employee models using Parental STI.
  *
+ * @property int $id
+ * @property string $name
+ * @property string $email
+ * @property string $password
+ * @property string $type
+ * @property string|null $first_name
+ * @property string|null $last_name
+ * @property Carbon|null $date_of_birth
+ * @property string|null $gender
+ * @property string|null $address
+ * @property string|null $city
+ * @property string|null $phone
+ * @property string|null $lang
+ * @property int|null $current_team_id
+ * @property bool $is_active
+ * @property bool $is_otp
+ * @property Carbon|null $password_expires_at
+ * @property Carbon|null $email_verified_at
+ * @property Carbon $created_at
+ * @property Carbon $updated_at
+ * @property string|null $remember_token
+ * @property string|null $profile_photo_path
+ * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property string|null $deleted_by
  * @property-read Collection<int, Consent> $activeConsents
  * @property-read int|null $active_consents_count
+ * @property-read Collection<int, Activity> $activities
+ * @property-read int|null $activities_count
  * @property-read Collection<int, AuthenticationLog> $authentications
  * @property-read int|null $authentications_count
- * @property-read Collection<int, OauthClient> $clients
+ * @property-read Collection<int, Client> $clients
  * @property-read int|null $clients_count
  * @property-read Collection<int, Consent> $consents
  * @property-read int|null $consents_count
  * @property-read Team|null $currentTeam
- * @property-read TenantUser|TeamUser|DeviceUser|null $pivot
+ * @property-read TenantUser|Membership|DeviceUser|null $pivot
  * @property-read Collection<int, Device> $devices
  * @property-read int|null $devices_count
  * @property-read Collection<int, User> $all_team_users
  * @property-read string $full_name
- * @property-read string $name
  * @property-read AuthenticationLog|null $latestAuthentication
  * @property-read MediaCollection<int, Media> $media
  * @property-read int|null $media_count
- * @property-read Collection<int, Team> $membershipTeams
- * @property-read int|null $membership_teams_count
  * @property-read DatabaseNotificationCollection<int, Notification> $notifications
  * @property-read int|null $notifications_count
- * @property-read Collection<int, OauthClient> $oauthApps
- * @property-read int|null $oauth_apps_count
  * @property-read Collection<int, Team> $ownedTeams
  * @property-read int|null $owned_teams_count
  * @property-read Collection<int, Permission> $permissions
  * @property-read int|null $permissions_count
- * @property-read Profile|null $profile
+ * @property-read ProfileContract|null $profile
  * @property-read Collection<int, Role> $roles
  * @property-read int|null $roles_count
- * @property-write mixed $password
  * @property-read Collection<int, SocialiteUser> $socialiteUsers
  * @property-read int|null $socialite_users_count
- * @property-read Collection<int, TeamUser> $teamUsers
+ * @property-read Collection<int, Membership> $teamUsers
  * @property-read int|null $team_users_count
+ * @property-read Collection<int, Team> $teams
+ * @property-read int|null $teams_count
  * @property-read Collection<int, Tenant> $tenants
  * @property-read int|null $tenants_count
- * @property-read Collection<int, OauthToken> $tokens
+ * @property-read Collection<int, Token> $tokens
  * @property-read int|null $tokens_count
  * @property-read Collection<int, Treatment> $treatments
  * @property-read int|null $treatments_count
- * @method static Builder<static>|User childrenWith(array<int, string> $relations)
- * @method static Builder<static>|User childrenWithCount(array<int, string> $relations)
- * @method static \Modules\Employee\Database\Factories\UserFactory factory($count = null, $state = [])
+ * @method static UserFactory factory($count = null, $state = [])
  * @method static Builder<static>|User newModelQuery()
  * @method static Builder<static>|User newQuery()
  * @method static Builder<static>|User orWhereNotState(string $column, $states)
  * @method static Builder<static>|User orWhereState(string $column, $states)
- * @method static Builder<static>|User permission($permissions, bool $without = false)
- * @method static Builder<static>|User query()
- * @method static Builder<static>|User role($roles, ?string $guard = null, bool $without = false)
- * @method static Builder<static>|User team($teams, bool $without = false)
- * @method static Builder<static>|User whereNotState(string $column, $states)
- * @method static Builder<static>|User whereState(string $column, $states)
- * @method static Builder<static>|User withoutPermission($permissions)
- * @method static Builder<static>|User withoutRole($roles, ?string $guard = null)
- * @method static Builder<static>|User withoutTeam($teams)
- * @property string $id
- * @property string|null $first_name
- * @property string|null $last_name
- * @property string $email
- * @property Carbon|null $email_verified_at
- * @property string|null $two_factor_secret
- * @property string|null $two_factor_recovery_codes
- * @property string|null $two_factor_confirmed_at
- * @property string|null $remember_token
- * @property int|null $current_team_id
- * @property string|null $profile_photo_path
- * @property Carbon|null $deleted_at
- * @property string|null $lang
- * @property bool $is_active
- * @property bool $is_otp
- * @property Carbon|null $password_expires_at
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
- * @property string|null $deleted_by
- * @property string|null $type
- * @property string|null $state
+ * @method static Builder<User> permission($permissions, $without = false)
+ * @method static Builder<User> query()
+ * @method static Builder<User> role($roles, $guard = null, $without = false)
  * @method static Builder<static>|User whereCreatedAt($value)
  * @method static Builder<static>|User whereCreatedBy($value)
  * @method static Builder<static>|User whereCurrentTeamId($value)
@@ -1013,19 +1612,26 @@ namespace Modules\Employee\Models{
  * @method static Builder<static>|User whereLang($value)
  * @method static Builder<static>|User whereLastName($value)
  * @method static Builder<static>|User whereName($value)
+ * @method static Builder<static>|User whereNotState(string $column, $states)
  * @method static Builder<static>|User wherePassword($value)
  * @method static Builder<static>|User wherePasswordExpiresAt($value)
  * @method static Builder<static>|User whereProfilePhotoPath($value)
  * @method static Builder<static>|User whereRememberToken($value)
- * @method static Builder<static>|User whereTwoFactorConfirmedAt($value)
- * @method static Builder<static>|User whereTwoFactorRecoveryCodes($value)
- * @method static Builder<static>|User whereTwoFactorSecret($value)
+ * @method static Builder<static>|User whereState(string $column, $states)
  * @method static Builder<static>|User whereType($value)
  * @method static Builder<static>|User whereUpdatedAt($value)
  * @method static Builder<static>|User whereUpdatedBy($value)
+ * @method static Builder<User> withoutPermission($permissions)
+ * @method static Builder<User> withoutRole($roles, $guard = null)
  * @mixin \Eloquent
- * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Team> $teams
- * @property-read int|null $teams_count
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Team> $membershipTeams
+ * @property-read int|null $membership_teams_count
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\OauthClient> $oauthApps
+ * @property-read int|null $oauth_apps_count
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User childrenWith(array $relations)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User childrenWithCount(array $relations)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User team($teams, bool $without = false)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User withoutTeam($teams)
  */
 	class User extends \Eloquent implements \Spatie\ModelStates\HasStatesContract {}
 }
@@ -1035,29 +1641,29 @@ namespace Modules\Employee\Models{
  * Class WorkHour.
  *
  * @property int $id
- * @property string $employee_id
+ * @property int $employee_id
  * @property WorkHourTypeEnum $type
- * @property WorkHourStatusEnum $status
- * @property \Illuminate\Support\Carbon $timestamp
- * @property numeric-string|null $location_lat
- * @property numeric-string|null $location_lng
+ * @property Carbon $timestamp
+ * @property float|null $location_lat
+ * @property float|null $location_lng
  * @property string|null $location_name
  * @property array<string, mixed>|null $device_info
  * @property string|null $photo_path
  * @property string|null $notes
+ * @property WorkHourStatusEnum $status
  * @property int|null $approved_by
- * @property \Illuminate\Support\Carbon|null $approved_at
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $approved_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property-read Employee $employee
  * @property-read User|null $approvedBy
- * @property-read Profile|null $creator
- * @property-read User|null $employee
+ * @property-read ProfileContract|null $creator
  * @property-read string $formatted_date
  * @property-read string $formatted_date_time
  * @property-read string $formatted_time
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $updater
  * @method static Builder<static>|WorkHour forDate(\Carbon\Carbon $date)
- * @method static Builder<static>|WorkHour forEmployee(string $employeeId)
+ * @method static Builder<static>|WorkHour forEmployee(int $employeeId)
  * @method static Builder<static>|WorkHour newModelQuery()
  * @method static Builder<static>|WorkHour newQuery()
  * @method static Builder<static>|WorkHour ofType(string $type)
@@ -1078,6 +1684,8 @@ namespace Modules\Employee\Models{
  * @method static Builder<static>|WorkHour whereTimestamp($value)
  * @method static Builder<static>|WorkHour whereType($value)
  * @method static Builder<static>|WorkHour whereUpdatedAt($value)
+ * @property-read ProfileContract|null $deleter
+ * @method static WorkHourFactory factory($count = null, $state = [])
  * @mixin \Eloquent
  */
 	class WorkHour extends \Eloquent {}
@@ -1087,48 +1695,64 @@ namespace Modules\Gdpr\Models{
 /**
  * Modules\Gdpr\Models\Consent.
  *
- * @property-read Profile|null $creator
- * @property-read Treatment|null $treatment
- * @property-read Profile|null $updater
- * @method static Builder<static>|Consent newModelQuery()
- * @method static Builder<static>|Consent newQuery()
- * @method static Builder<static>|Consent query()
  * @property string $id
  * @property string|null $treatment_id
  * @property string|null $subject_id
- * @property string $user_type
- * @property int $user_id
- * @property string|null $type
- * @property Carbon|null $accepted_at
- * @property string|null $ip_address
- * @property string|null $user_agent
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- * @property string|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
- * @property array<array-key, mixed>|null $metadata
- * @property Carbon|null $revoked_at
- * @property string|null $revoked_ip_address
+ * @property string $user_type
+ * @property string|null $user_id
+ * @property string|null $type
+ * @property string|null $accepted_at
+ * @property ProfileContract|null $creator
+ * @property Treatment|null $treatment
+ * @property string $id
+ * @property string|null $treatment_id
+ * @property string|null $subject_id
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property Carbon|null $deleted_at
+ * @property string|null $deleted_by
+ * @property string $user_type
+ * @property string|null $user_id
+ * @property string|null $type
+ * @property string|null $accepted_at
+ * @property ProfileContract|null $creator
+ * @property Treatment|null $treatment
+ * @property ProfileContract|null $updater
+ * @method static Builder<static>|Consent newModelQuery()
+ * @method static Builder<static>|Consent newQuery()
+ * @method static Builder<static>|Consent query()
  * @method static Builder<static>|Consent whereAcceptedAt($value)
  * @method static Builder<static>|Consent whereCreatedAt($value)
  * @method static Builder<static>|Consent whereCreatedBy($value)
  * @method static Builder<static>|Consent whereDeletedAt($value)
  * @method static Builder<static>|Consent whereDeletedBy($value)
  * @method static Builder<static>|Consent whereId($value)
- * @method static Builder<static>|Consent whereIpAddress($value)
- * @method static Builder<static>|Consent whereMetadata($value)
- * @method static Builder<static>|Consent whereRevokedAt($value)
- * @method static Builder<static>|Consent whereRevokedIpAddress($value)
  * @method static Builder<static>|Consent whereSubjectId($value)
  * @method static Builder<static>|Consent whereTreatmentId($value)
  * @method static Builder<static>|Consent whereType($value)
  * @method static Builder<static>|Consent whereUpdatedAt($value)
  * @method static Builder<static>|Consent whereUpdatedBy($value)
- * @method static Builder<static>|Consent whereUserAgent($value)
  * @method static Builder<static>|Consent whereUserId($value)
  * @method static Builder<static>|Consent whereUserType($value)
+ * @property ProfileContract|null $deleter
+ * @property string|null $ip_address
+ * @property string|null $user_agent
+ * @method static \Modules\Gdpr\Database\Factories\ConsentFactory factory($count = null, $state = [])
+ * @method static Builder<static>|Consent whereIpAddress($value)
+ * @method static Builder<static>|Consent whereUserAgent($value)
+ * @property string|null $ip_address
+ * @property string|null $user_agent
+ * @method static \Modules\Gdpr\Database\Factories\ConsentFactory factory($count = null, $state = [])
+ * @method static Builder<static>|Consent whereIpAddress($value)
+ * @method static Builder<static>|Consent whereUserAgent($value)
  * @mixin \Eloquent
  */
 	class Consent extends \Eloquent {}
@@ -1138,25 +1762,109 @@ namespace Modules\Gdpr\Models{
 /**
  * Modules\Gdpr\Models\Event.
  *
- * @property-read Consent|null $consent
- * @property-read Profile|null $creator
- * @property string|null $ip
- * @property string|null $payload
- * @property-read Profile|null $updater
- * @method static Builder<static>|Event newModelQuery()
- * @method static Builder<static>|Event newQuery()
- * @method static Builder<static>|Event query()
  * @property string $id
  * @property string|null $treatment_id
  * @property string|null $consent_id
  * @property string $subject_id
+ * @property string $ip
  * @property string $action
+ * @property string $payload
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- * @property string|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
+ * @property Consent|null $consent
+ * @property string $id
+ * @property string|null $treatment_id
+ * @property string|null $consent_id
+ * @property string $subject_id
+ * @property string $ip
+ * @property string $action
+ * @property string $payload
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property Carbon|null $deleted_at
+ * @property string|null $deleted_by
+ * @property Consent|null $consent
+ * @property string $id
+ * @property string|null $treatment_id
+ * @property string|null $consent_id
+ * @property string $subject_id
+ * @property string $ip
+ * @property string $action
+ * @property string $payload
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property Carbon|null $deleted_at
+ * @property string|null $deleted_by
+ * @property Consent|null $consent
+ * @property string $id
+ * @property string|null $treatment_id
+ * @property string|null $consent_id
+ * @property string $subject_id
+ * @property string $ip
+ * @property string $action
+ * @property string $payload
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property Carbon|null $deleted_at
+ * @property string|null $deleted_by
+ * @property Consent|null $consent
+ * @property string $id
+ * @property string|null $treatment_id
+ * @property string|null $consent_id
+ * @property string $subject_id
+ * @property string $ip
+ * @property string $action
+ * @property string $payload
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property Carbon|null $deleted_at
+ * @property string|null $deleted_by
+ * @property Consent|null $consent
+ * @property string $id
+ * @property string|null $treatment_id
+ * @property string|null $consent_id
+ * @property string $subject_id
+ * @property string $ip
+ * @property string $action
+ * @property string $payload
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property Carbon|null $deleted_at
+ * @property string|null $deleted_by
+ * @property Consent|null $consent
+ * @property string $id
+ * @property string|null $treatment_id
+ * @property string|null $consent_id
+ * @property string $subject_id
+ * @property string $ip
+ * @property string $action
+ * @property string $payload
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property Carbon|null $deleted_at
+ * @property string|null $deleted_by
+ * @property Consent|null $consent
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ * @method static Builder<static>|Event newModelQuery()
+ * @method static Builder<static>|Event newQuery()
+ * @method static Builder<static>|Event query()
  * @method static Builder<static>|Event whereAction($value)
  * @method static Builder<static>|Event whereConsentId($value)
  * @method static Builder<static>|Event whereCreatedAt($value)
@@ -1170,6 +1878,8 @@ namespace Modules\Gdpr\Models{
  * @method static Builder<static>|Event whereTreatmentId($value)
  * @method static Builder<static>|Event whereUpdatedAt($value)
  * @method static Builder<static>|Event whereUpdatedBy($value)
+ * @property ProfileContract|null $deleter
+ * @method static \Modules\Gdpr\Database\Factories\EventFactory factory($count = null, $state = [])
  * @mixin \Eloquent
  */
 	class Event extends \Eloquent {}
@@ -1179,47 +1889,132 @@ namespace Modules\Gdpr\Models{
 /**
  * Modules\Gdpr\Models\Profile.
  *
+ * @property string $id
+ * @property string|null $post_type
+ * @property string|null $bio
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $created_by
+ * @property string|null $updated_by
+ * @property string|null $deleted_by
+ * @property string|null $first_name
+ * @property string|null $surname
+ * @property string|null $email
+ * @property string|null $phone
+ * @property string|null $address
+ * @property string|null $user_id
+ * @property string|null $last_name
+ * @property string|null $tax_code
+ * @property string|null $vat_number
+ * @property Carbon|null $deleted_at
  * @property SchemalessAttributes $extra
- * @property-read string $avatar
- * @property-read \Modules\TechPlanner\Models\Profile|null $creator
- * @property-read Collection<int, DeviceUser> $deviceUsers
- * @property-read int|null $device_users_count
- * @property-read DeviceProfile|null $pivot
- * @property-read Collection<int, Device> $devices
- * @property-read int|null $devices_count
- * @property-read string|null $first_name
- * @property-read string|null $full_name
- * @property-read string|null $last_name
- * @property-read MediaCollection<int, Media> $media
- * @property-read int|null $media_count
- * @property-read Collection<int, DeviceUser> $mobileDeviceUsers
- * @property-read int|null $mobile_device_users_count
- * @property-read Collection<int, Device> $mobileDevices
- * @property-read int|null $mobile_devices_count
- * @property-read DatabaseNotificationCollection<int, DatabaseNotification> $notifications
- * @property-read int|null $notifications_count
- * @property-read Collection<int, Permission> $permissions
- * @property-read int|null $permissions_count
- * @property-read Collection<int, Role> $roles
- * @property-read int|null $roles_count
- * @property-read \Modules\TechPlanner\Models\Profile|null $updater
- * @property-read User|null $user
- * @property-read string|null $user_name
- * @method static Builder<static>|Profile byUuid(string $uuid)
- * @method static Builder<static>|Profile childrenWith(array<int|string, mixed> $relations)
- * @method static Builder<static>|Profile childrenWithCount(array<int|string, mixed> $relations)
+ * @property string $avatar
+ * @property ProfileContract|null $creator
+ * @property Collection<int, DeviceUser> $deviceUsers
+ * @property int|null $device_users_count
+ * @property DeviceProfile|null $pivot
+ * @property Collection<int, Device> $devices
+ * @property int|null $devices_count
+ * @property string|null $full_name
+ * @property MediaCollection<int, Media> $media
+ * @property int|null $media_count
+ * @property Collection<int, DeviceUser> $mobileDeviceUsers
+ * @property int|null $mobile_device_users_count
+ * @property Collection<int, Device> $mobileDevices
+ * @property int|null $mobile_devices_count
+ * @property DatabaseNotificationCollection<int, DatabaseNotification> $notifications
+ * @property string $id
+ * @property string|null $post_type
+ * @property string|null $bio
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $created_by
+ * @property string|null $updated_by
+ * @property string|null $deleted_by
+ * @property string|null $first_name
+ * @property string|null $surname
+ * @property string|null $email
+ * @property string|null $phone
+ * @property string|null $address
+ * @property string|null $user_id
+ * @property string|null $last_name
+ * @property string|null $tax_code
+ * @property string|null $vat_number
+ * @property Carbon|null $deleted_at
+ * @property SchemalessAttributes $extra
+ * @property string $avatar
+ * @property ProfileContract|null $creator
+ * @property Collection<int, DeviceUser> $deviceUsers
+ * @property int|null $device_users_count
+ * @property DeviceProfile|null $pivot
+ * @property Collection<int, Device> $devices
+ * @property int|null $devices_count
+ * @property string|null $full_name
+ * @property MediaCollection<int, Media> $media
+ * @property int|null $media_count
+ * @property Collection<int, DeviceUser> $mobileDeviceUsers
+ * @property int|null $mobile_device_users_count
+ * @property Collection<int, Device> $mobileDevices
+ * @property int|null $mobile_devices_count
+ * @property DatabaseNotificationCollection<int, DatabaseNotification> $notifications
+ * @property int|null $notifications_count
+ * @property Collection<int, Permission> $permissions
+ * @property int|null $permissions_count
+ * @property Collection<int, Role> $roles
+ * @property int|null $roles_count
+ * @property ProfileContract|null $updater
+ * @property User|null $user
+ * @property string|null $user_name
+ * @property int|null $notifications_count
+ * @property Collection<int, Permission> $permissions
+ * @property int|null $permissions_count
+ * @property Collection<int, Role> $roles
+ * @property int|null $roles_count
+ * @property ProfileContract|null $updater
+ * @property User|null $user
+ * @property string|null $user_name
  * @method static Builder<static>|Profile newModelQuery()
  * @method static Builder<static>|Profile newQuery()
- * @method static Builder<static>|Profile permission($permissions, bool $without = false)
+ * @method static Builder<static>|Profile permission($permissions, $without = false)
  * @method static Builder<static>|Profile query()
- * @method static Builder<static>|Profile role($roles, ?string $guard = null, bool $without = false)
- * @method static Builder<static>|Profile team($teams, bool $without = false)
+ * @method static Builder<static>|Profile role($roles, $guard = null, $without = false)
+ * @method static Builder<static>|Profile whereAddress($value)
+ * @method static Builder<static>|Profile whereBio($value)
+ * @method static Builder<static>|Profile whereCreatedAt($value)
+ * @method static Builder<static>|Profile whereCreatedBy($value)
+ * @method static Builder<static>|Profile whereDeletedAt($value)
+ * @method static Builder<static>|Profile whereDeletedBy($value)
+ * @method static Builder<static>|Profile whereEmail($value)
+ * @method static Builder<static>|Profile whereFirstName($value)
+ * @method static Builder<static>|Profile whereId($value)
+ * @method static Builder<static>|Profile whereLastName($value)
+ * @method static Builder<static>|Profile wherePhone($value)
+ * @method static Builder<static>|Profile wherePostType($value)
+ * @method static Builder<static>|Profile whereSurname($value)
+ * @method static Builder<static>|Profile whereTaxCode($value)
+ * @method static Builder<static>|Profile whereUpdatedAt($value)
+ * @method static Builder<static>|Profile whereUpdatedBy($value)
+ * @method static Builder<static>|Profile whereUserId($value)
+ * @method static Builder<static>|Profile whereVatNumber($value)
+ * @method static Builder<static>|Profile withExtraAttributes()
  * @method static Builder<static>|Profile withoutPermission($permissions)
- * @method static Builder<static>|Profile withoutRole($roles, ?string $guard = null)
- * @method static Builder<static>|Profile withoutTeam($teams)
+ * @method static Builder<static>|Profile withoutRole($roles, $guard = null)
+ * @property ProfileContract|null $deleter
+ * @property string|null $fiscal_code
+ * @property string|null $notes
+ * @property string|null $fiscal_code
+ * @property string|null $notes
+ * @method static Builder<static>|Profile childrenWith(array<int|string, mixed> $relations)
+ * @method static Builder<static>|Profile childrenWithCount(array<int|string, mixed> $relations)
+ * @method static \Modules\Gdpr\Database\Factories\ProfileFactory factory($count = null, $state = [])
+ * @method static Builder<static>|Profile whereFiscalCode($value)
+ * @method static Builder<static>|Profile whereNotes($value)
+ * @method static Builder<static>|Profile byUuid(string $uuid)
  * @mixin \Eloquent
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Team> $teams
  * @property-read int|null $teams_count
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile team($teams, bool $without = false)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile withoutTeam($teams)
  */
 	class Profile extends \Eloquent {}
 }
@@ -1228,11 +2023,6 @@ namespace Modules\Gdpr\Models{
 /**
  * Modules\Gdpr\Models\Treatment.
  *
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
- * @method static Builder<static>|Treatment newModelQuery()
- * @method static Builder<static>|Treatment newQuery()
- * @method static Builder<static>|Treatment query()
  * @property string $id
  * @property int $active
  * @property int $required
@@ -1245,8 +2035,97 @@ namespace Modules\Gdpr\Models{
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- * @property string|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
+ * @property string $id
+ * @property int $active
+ * @property int $required
+ * @property string $name
+ * @property string $description
+ * @property string|null $documentVersion
+ * @property string|null $documentUrl
+ * @property int $weight
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property Carbon|null $deleted_at
+ * @property string|null $deleted_by
+ * @property string $id
+ * @property int $active
+ * @property int $required
+ * @property string $name
+ * @property string $description
+ * @property string|null $documentVersion
+ * @property string|null $documentUrl
+ * @property int $weight
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property Carbon|null $deleted_at
+ * @property string|null $deleted_by
+ * @property string $id
+ * @property int $active
+ * @property int $required
+ * @property string $name
+ * @property string $description
+ * @property string|null $documentVersion
+ * @property string|null $documentUrl
+ * @property int $weight
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property Carbon|null $deleted_at
+ * @property string|null $deleted_by
+ * @property string $id
+ * @property int $active
+ * @property int $required
+ * @property string $name
+ * @property string $description
+ * @property string|null $documentVersion
+ * @property string|null $documentUrl
+ * @property int $weight
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property Carbon|null $deleted_at
+ * @property string|null $deleted_by
+ * @property string $id
+ * @property int $active
+ * @property int $required
+ * @property string $name
+ * @property string $description
+ * @property string|null $documentVersion
+ * @property string|null $documentUrl
+ * @property int $weight
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property Carbon|null $deleted_at
+ * @property string|null $deleted_by
+ * @property string $id
+ * @property int $active
+ * @property int $required
+ * @property string $name
+ * @property string $description
+ * @property string|null $documentVersion
+ * @property string|null $documentUrl
+ * @property int $weight
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property Carbon|null $deleted_at
+ * @property string|null $deleted_by
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ * @method static Builder<static>|Treatment newModelQuery()
+ * @method static Builder<static>|Treatment newQuery()
+ * @method static Builder<static>|Treatment query()
  * @method static Builder<static>|Treatment whereActive($value)
  * @method static Builder<static>|Treatment whereCreatedAt($value)
  * @method static Builder<static>|Treatment whereCreatedBy($value)
@@ -1261,6 +2140,8 @@ namespace Modules\Gdpr\Models{
  * @method static Builder<static>|Treatment whereUpdatedAt($value)
  * @method static Builder<static>|Treatment whereUpdatedBy($value)
  * @method static Builder<static>|Treatment whereWeight($value)
+ * @property ProfileContract|null $deleter
+ * @method static \Modules\Gdpr\Database\Factories\TreatmentFactory factory($count = null, $state = [])
  * @mixin \Eloquent
  */
 	class Treatment extends \Eloquent {}
@@ -1295,11 +2176,11 @@ namespace Modules\Geo\Models{
  * @property bool $is_primary
  * @property array<string, mixed>|null $extra_data
  * @property-read Model $addressable
- * @property-read Profile|null $creator
+ * @property-read ProfileContract|null $creator
  * @property-read string $full_address
  * @property-read string $street_address
  * @property-read Model $model
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $updater
  * @method static Builder<static>|Address nearby(float $latitude, float $longitude, float $radiusKm = 10)
  * @method static Builder<static>|Address newModelQuery()
  * @method static Builder<static>|Address newQuery()
@@ -1417,8 +2298,8 @@ namespace Modules\Geo\Models{
 /**
  * Suddivisione tipo “county” (contesto USA / geonames), non il comune italiano.
  *
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $updater
  * @method static Builder<static>|County newModelQuery()
  * @method static Builder<static>|County newQuery()
  * @method static Builder<static>|County query()
@@ -1453,8 +2334,8 @@ namespace Modules\Geo\Models{
 /**
  * Modules\Geo\Models\GeoNamesCap.
  *
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $updater
  * @method static Builder<static>|GeoNamesCap newModelQuery()
  * @method static Builder<static>|GeoNamesCap newQuery()
  * @method static Builder<static>|GeoNamesCap query()
@@ -1507,9 +2388,9 @@ namespace Modules\Geo\Models{
  * @property int|null $province_id
  * @property int $id
  * @property string|null $name
- * @property array<array-key, mixed>|null $postal_code
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
+ * @property array<array-key, string>|null $postal_code
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $updater
  * @method static Builder<static>|Locality newModelQuery()
  * @method static Builder<static>|Locality newQuery()
  * @method static Builder<static>|Locality query()
@@ -1538,9 +2419,9 @@ namespace Modules\Geo\Models{
  * @property string|null $formatted_address
  * @property bool $processed
  * @property string|null $description
- * @property-read Profile|null $creator
+ * @property-read ProfileContract|null $creator
  * @property-read array<string, mixed> $location
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $updater
  * @method static Builder<static>|Location newModelQuery()
  * @method static Builder<static>|Location newQuery()
  * @method static Builder<static>|Location query()
@@ -1580,7 +2461,7 @@ namespace Modules\Geo\Models{
 namespace Modules\Geo\Models{
 /**
  * @property-read Address|null $address
- * @property-read Profile|null $creator
+ * @property-read ProfileContract|null $creator
  * @property-read string $formatted_address
  * @property-read float|null $latitude
  * @property-read float|null $longitude
@@ -1588,7 +2469,7 @@ namespace Modules\Geo\Models{
  * @property string|null $name
  * @property string|null $description
  * @property-read PlaceType|null $placeType
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $updater
  * @method static Builder<static>|Place newModelQuery()
  * @method static Builder<static>|Place newQuery()
  * @method static Builder<static>|Place query()
@@ -1623,8 +2504,8 @@ namespace Modules\Geo\Models{
 
 namespace Modules\Geo\Models{
 /**
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $updater
  * @method static \Modules\Geo\Database\Factories\PlaceTypeFactory factory($count = null, $state = [])
  * @method static Builder<static>|PlaceType newModelQuery()
  * @method static Builder<static>|PlaceType newQuery()
@@ -1649,11 +2530,11 @@ namespace Modules\Geo\Models{
  * @property int|null $region_id
  * @property int $id
  * @property string|null $name
- * @property-read Profile|null $creator
+ * @property-read ProfileContract|null $creator
  * @property-read Collection<int, Locality> $localities
  * @property-read int|null $localities_count
  * @property-read Region|null $region
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $updater
  * @method static \Modules\Geo\Database\Factories\ProvinceFactory factory($count = null, $state = [])
  * @method static Builder<static>|Province newModelQuery()
  * @method static Builder<static>|Province newQuery()
@@ -1670,10 +2551,10 @@ namespace Modules\Geo\Models{
 /**
  * @property int|null $id
  * @property string|null $name
- * @property-read Profile|null $creator
+ * @property-read ProfileContract|null $creator
  * @property-read Collection<int, Province> $provinces
  * @property-read int|null $provinces_count
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $updater
  * @method static \Modules\Geo\Database\Factories\RegionFactory factory($count = null, $state = [])
  * @method static Builder<static>|Region newModelQuery()
  * @method static Builder<static>|Region newQuery()
@@ -1687,8 +2568,8 @@ namespace Modules\Geo\Models{
 
 namespace Modules\Geo\Models{
 /**
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $updater
  * @method static Builder<static>|State newModelQuery()
  * @method static Builder<static>|State newQuery()
  * @method static Builder<static>|State query()
@@ -1717,10 +2598,6 @@ namespace Modules\Geo\Models{
 
 namespace Modules\Job\Models{
 /**
- * @property-read Model|Eloquent $user
- * @method static Builder<static>|Export newModelQuery()
- * @method static Builder<static>|Export newQuery()
- * @method static Builder<static>|Export query()
  * @property string $id
  * @property Carbon|null $completed_at
  * @property string $file_disk
@@ -1729,7 +2606,6 @@ namespace Modules\Job\Models{
  * @property int $processed_rows
  * @property int $total_rows
  * @property int $successful_rows
- * @property string|null $user_type
  * @property string|null $user_id
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
@@ -1737,6 +2613,11 @@ namespace Modules\Job\Models{
  * @property string|null $created_by
  * @property string|null $deleted_at
  * @property string|null $deleted_by
+ * @property string|null $user_type
+ * @property-read Model|Eloquent|null $user
+ * @method static Builder<static>|Export newModelQuery()
+ * @method static Builder<static>|Export newQuery()
+ * @method static Builder<static>|Export query()
  * @method static Builder<static>|Export whereCompletedAt($value)
  * @method static Builder<static>|Export whereCreatedAt($value)
  * @method static Builder<static>|Export whereCreatedBy($value)
@@ -1760,11 +2641,6 @@ namespace Modules\Job\Models{
 
 namespace Modules\Job\Models{
 /**
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
- * @method static Builder<static>|FailedImportRow newModelQuery()
- * @method static Builder<static>|FailedImportRow newQuery()
- * @method static Builder<static>|FailedImportRow query()
  * @property string $id
  * @property array<array-key, mixed> $data
  * @property int $import_id
@@ -1773,6 +2649,12 @@ namespace Modules\Job\Models{
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $updater
+ * @method static FailedImportRowFactory factory($count = null, $state = [])
+ * @method static Builder<static>|FailedImportRow newModelQuery()
+ * @method static Builder<static>|FailedImportRow newQuery()
+ * @method static Builder<static>|FailedImportRow query()
  * @method static Builder<static>|FailedImportRow whereCreatedAt($value)
  * @method static Builder<static>|FailedImportRow whereCreatedBy($value)
  * @method static Builder<static>|FailedImportRow whereData($value)
@@ -1781,6 +2663,7 @@ namespace Modules\Job\Models{
  * @method static Builder<static>|FailedImportRow whereUpdatedAt($value)
  * @method static Builder<static>|FailedImportRow whereUpdatedBy($value)
  * @method static Builder<static>|FailedImportRow whereValidationError($value)
+ * @property-read ProfileContract|null $deleter
  * @mixin \Eloquent
  */
 	class FailedImportRow extends \Eloquent {}
@@ -1790,11 +2673,6 @@ namespace Modules\Job\Models{
 /**
  * Modules\Job\Models\FailedJob.
  *
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
- * @method static Builder<static>|FailedJob newModelQuery()
- * @method static Builder<static>|FailedJob newQuery()
- * @method static Builder<static>|FailedJob query()
  * @property string $id
  * @property string $uuid
  * @property string $connection
@@ -1802,6 +2680,12 @@ namespace Modules\Job\Models{
  * @property array<array-key, mixed> $payload
  * @property string $exception
  * @property string $failed_at
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $updater
+ * @method static FailedJobFactory factory($count = null, $state = [])
+ * @method static Builder<static>|FailedJob newModelQuery()
+ * @method static Builder<static>|FailedJob newQuery()
+ * @method static Builder<static>|FailedJob query()
  * @method static Builder<static>|FailedJob whereConnection($value)
  * @method static Builder<static>|FailedJob whereException($value)
  * @method static Builder<static>|FailedJob whereFailedAt($value)
@@ -1809,6 +2693,7 @@ namespace Modules\Job\Models{
  * @method static Builder<static>|FailedJob wherePayload($value)
  * @method static Builder<static>|FailedJob whereQueue($value)
  * @method static Builder<static>|FailedJob whereUuid($value)
+ * @property-read ProfileContract|null $deleter
  * @mixin \Eloquent
  */
 	class FailedJob extends \Eloquent {}
@@ -1818,22 +2703,23 @@ namespace Modules\Job\Models{
 /**
  * Modules\Job\Models\Frequency.
  *
- * @property-read Profile|null $creator
- * @property-read Collection<int, Parameter> $parameters
- * @property-read int|null $parameters_count
- * @property-read Task|null $task
- * @property-read Profile|null $updater
- * @method static Builder<static>|Frequency newModelQuery()
- * @method static Builder<static>|Frequency newQuery()
- * @method static Builder<static>|Frequency query()
- * @property int $id
+ * @property string $id
  * @property int $task_id
  * @property string $label
  * @property string $interval
+ * @property string|null $created_by
+ * @property string|null $updated_by
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
+ * @property-read ProfileContract|null $creator
+ * @property-read Collection<int, Parameter> $parameters
+ * @property-read int|null $parameters_count
+ * @property-read Task|null $task
+ * @property-read ProfileContract|null $updater
+ * @method static FrequencyFactory factory($count = null, $state = [])
+ * @method static Builder<static>|Frequency newModelQuery()
+ * @method static Builder<static>|Frequency newQuery()
+ * @method static Builder<static>|Frequency query()
  * @method static Builder<static>|Frequency whereCreatedAt($value)
  * @method static Builder<static>|Frequency whereCreatedBy($value)
  * @method static Builder<static>|Frequency whereId($value)
@@ -1842,6 +2728,7 @@ namespace Modules\Job\Models{
  * @method static Builder<static>|Frequency whereTaskId($value)
  * @method static Builder<static>|Frequency whereUpdatedAt($value)
  * @method static Builder<static>|Frequency whereUpdatedBy($value)
+ * @property-read ProfileContract|null $deleter
  * @mixin \Eloquent
  */
 	class Frequency extends \Eloquent {}
@@ -1849,11 +2736,6 @@ namespace Modules\Job\Models{
 
 namespace Modules\Job\Models{
 /**
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
- * @method static Builder<static>|Import newModelQuery()
- * @method static Builder<static>|Import newQuery()
- * @method static Builder<static>|Import query()
  * @property string $id
  * @property Carbon|null $completed_at
  * @property string $file_name
@@ -1870,6 +2752,12 @@ namespace Modules\Job\Models{
  * @property string|null $created_by
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $updater
+ * @method static ImportFactory factory($count = null, $state = [])
+ * @method static Builder<static>|Import newModelQuery()
+ * @method static Builder<static>|Import newQuery()
+ * @method static Builder<static>|Import query()
  * @method static Builder<static>|Import whereCompletedAt($value)
  * @method static Builder<static>|Import whereCreatedAt($value)
  * @method static Builder<static>|Import whereCreatedBy($value)
@@ -1886,6 +2774,7 @@ namespace Modules\Job\Models{
  * @method static Builder<static>|Import whereUpdatedBy($value)
  * @method static Builder<static>|Import whereUserId($value)
  * @method static Builder<static>|Import whereUserType($value)
+ * @property-read ProfileContract|null $deleter
  * @mixin \Eloquent
  */
 	class Import extends \Eloquent {}
@@ -1895,13 +2784,6 @@ namespace Modules\Job\Models{
 /**
  * Modules\Job\Models\Job.
  *
- * @property-read Profile|null $creator
- * @property-read string|null $display_name
- * @property-read string $status
- * @property-read Profile|null $updater
- * @method static Builder<static>|Job newModelQuery()
- * @method static Builder<static>|Job newQuery()
- * @method static Builder<static>|Job query()
  * @property int $id
  * @property string $queue
  * @property array<array-key, mixed> $payload
@@ -1909,9 +2791,17 @@ namespace Modules\Job\Models{
  * @property int|null $reserved_at
  * @property int $available_at
  * @property Carbon $created_at
- * @property Carbon|null $updated_at
- * @property string|null $updated_by
  * @property string|null $created_by
+ * @property string|null $updated_by
+ * @property Carbon|null $updated_at
+ * @property-read ProfileContract|null $creator
+ * @property-read string|null $display_name
+ * @property-read string $status
+ * @property-read ProfileContract|null $updater
+ * @method static JobFactory factory($count = null, $state = [])
+ * @method static Builder<static>|Job newModelQuery()
+ * @method static Builder<static>|Job newQuery()
+ * @method static Builder<static>|Job query()
  * @method static Builder<static>|Job whereAttempts($value)
  * @method static Builder<static>|Job whereAvailableAt($value)
  * @method static Builder<static>|Job whereCreatedAt($value)
@@ -1922,6 +2812,7 @@ namespace Modules\Job\Models{
  * @method static Builder<static>|Job whereReservedAt($value)
  * @method static Builder<static>|Job whereUpdatedAt($value)
  * @method static Builder<static>|Job whereUpdatedBy($value)
+ * @property-read ProfileContract|null $deleter
  * @mixin \Eloquent
  */
 	class Job extends \Eloquent {}
@@ -1931,11 +2822,6 @@ namespace Modules\Job\Models{
 /**
  * Modules\Job\Models\JobBatch.
  *
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
- * @method static Builder<static>|JobBatch newModelQuery()
- * @method static Builder<static>|JobBatch newQuery()
- * @method static Builder<static>|JobBatch query()
  * @property string $id
  * @property string $name
  * @property int $total_jobs
@@ -1946,6 +2832,12 @@ namespace Modules\Job\Models{
  * @property Carbon|null $cancelled_at
  * @property Carbon $created_at
  * @property Carbon|null $finished_at
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $updater
+ * @method static JobBatchFactory factory($count = null, $state = [])
+ * @method static Builder<static>|JobBatch newModelQuery()
+ * @method static Builder<static>|JobBatch newQuery()
+ * @method static Builder<static>|JobBatch query()
  * @method static Builder<static>|JobBatch whereCancelledAt($value)
  * @method static Builder<static>|JobBatch whereCreatedAt($value)
  * @method static Builder<static>|JobBatch whereFailedJobIds($value)
@@ -1956,6 +2848,7 @@ namespace Modules\Job\Models{
  * @method static Builder<static>|JobBatch whereOptions($value)
  * @method static Builder<static>|JobBatch wherePendingJobs($value)
  * @method static Builder<static>|JobBatch whereTotalJobs($value)
+ * @property-read ProfileContract|null $deleter
  * @mixin \Eloquent
  */
 	class JobBatch extends \Eloquent {}
@@ -1963,12 +2856,6 @@ namespace Modules\Job\Models{
 
 namespace Modules\Job\Models{
 /**
- * @property-read Profile|null $creator
- * @property-read string $status
- * @property-read Profile|null $updater
- * @method static Builder<static>|JobManager newModelQuery()
- * @method static Builder<static>|JobManager newQuery()
- * @method static Builder<static>|JobManager query()
  * @property string $id
  * @property string $job_id
  * @property string|null $name
@@ -1979,6 +2866,13 @@ namespace Modules\Job\Models{
  * @property int $attempt
  * @property int|null $progress
  * @property string|null $exception_message
+ * @property-read ProfileContract|null $creator
+ * @property-read string $status
+ * @property-read ProfileContract|null $updater
+ * @method static JobManagerFactory factory($count = null, $state = [])
+ * @method static Builder<static>|JobManager newModelQuery()
+ * @method static Builder<static>|JobManager newQuery()
+ * @method static Builder<static>|JobManager query()
  * @method static Builder<static>|JobManager whereAttempt($value)
  * @method static Builder<static>|JobManager whereExceptionMessage($value)
  * @method static Builder<static>|JobManager whereFailed($value)
@@ -1989,6 +2883,7 @@ namespace Modules\Job\Models{
  * @method static Builder<static>|JobManager whereProgress($value)
  * @method static Builder<static>|JobManager whereQueue($value)
  * @method static Builder<static>|JobManager whereStartedAt($value)
+ * @property-read ProfileContract|null $deleter
  * @mixin \Eloquent
  */
 	class JobManager extends \Eloquent {}
@@ -1998,13 +2893,6 @@ namespace Modules\Job\Models{
 /**
  * Modules\Job\Models\JobsWaiting.
  *
- * @property-read Profile|null $creator
- * @property-read string|null $display_name
- * @property-read string $status
- * @property-read Profile|null $updater
- * @method static Builder<static>|JobsWaiting newModelQuery()
- * @method static Builder<static>|JobsWaiting newQuery()
- * @method static Builder<static>|JobsWaiting query()
  * @property int $id
  * @property string $queue
  * @property array<array-key, mixed> $payload
@@ -2012,9 +2900,17 @@ namespace Modules\Job\Models{
  * @property int|null $reserved_at
  * @property int $available_at
  * @property Carbon $created_at
- * @property Carbon|null $updated_at
- * @property string|null $updated_by
  * @property string|null $created_by
+ * @property string|null $updated_by
+ * @property Carbon|null $updated_at
+ * @property-read ProfileContract|null $creator
+ * @property-read string|null $display_name
+ * @property-read string $status
+ * @property-read ProfileContract|null $updater
+ * @method static JobsWaitingFactory factory($count = null, $state = [])
+ * @method static Builder<static>|JobsWaiting newModelQuery()
+ * @method static Builder<static>|JobsWaiting newQuery()
+ * @method static Builder<static>|JobsWaiting query()
  * @method static Builder<static>|JobsWaiting whereAttempts($value)
  * @method static Builder<static>|JobsWaiting whereAvailableAt($value)
  * @method static Builder<static>|JobsWaiting whereCreatedAt($value)
@@ -2025,6 +2921,7 @@ namespace Modules\Job\Models{
  * @method static Builder<static>|JobsWaiting whereReservedAt($value)
  * @method static Builder<static>|JobsWaiting whereUpdatedAt($value)
  * @method static Builder<static>|JobsWaiting whereUpdatedBy($value)
+ * @property-read ProfileContract|null $deleter
  * @mixin \Eloquent
  */
 	class JobsWaiting extends \Eloquent {}
@@ -2034,20 +2931,21 @@ namespace Modules\Job\Models{
 /**
  * Modules\Job\Models\Parameter.
  *
- * @property-read Profile|null $creator
- * @property-read Frequency|null $task
- * @property-read Profile|null $updater
- * @method static Builder<static>|Parameter newModelQuery()
- * @method static Builder<static>|Parameter newQuery()
- * @method static Builder<static>|Parameter query()
- * @property int $id
+ * @property string $id
  * @property int $frequency_id
  * @property string $name
  * @property string $value
+ * @property string|null $created_by
+ * @property string|null $updated_by
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
+ * @property-read ProfileContract|null $creator
+ * @property-read Frequency|null $task
+ * @property-read ProfileContract|null $updater
+ * @method static ParameterFactory factory($count = null, $state = [])
+ * @method static Builder<static>|Parameter newModelQuery()
+ * @method static Builder<static>|Parameter newQuery()
+ * @method static Builder<static>|Parameter query()
  * @method static Builder<static>|Parameter whereCreatedAt($value)
  * @method static Builder<static>|Parameter whereCreatedBy($value)
  * @method static Builder<static>|Parameter whereFrequencyId($value)
@@ -2056,6 +2954,7 @@ namespace Modules\Job\Models{
  * @method static Builder<static>|Parameter whereUpdatedAt($value)
  * @method static Builder<static>|Parameter whereUpdatedBy($value)
  * @method static Builder<static>|Parameter whereValue($value)
+ * @property-read ProfileContract|null $deleter
  * @mixin \Eloquent
  */
 	class Parameter extends \Eloquent {}
@@ -2065,21 +2964,22 @@ namespace Modules\Job\Models{
 /**
  * Modules\Job\Models\Result.
  *
- * @property-read Profile|null $creator
- * @property-read Task|null $task
- * @property-read Profile|null $updater
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Result newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Result newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Result query()
  * @property string $id
  * @property int $task_id
  * @property Carbon $ran_at
- * @property numeric $duration
+ * @property string $duration
  * @property string $result
+ * @property string|null $created_by
+ * @property string|null $updated_by
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
+ * @property-read ProfileContract|null $creator
+ * @property-read Task|null $task
+ * @property-read ProfileContract|null $updater
+ * @method static Factory<static> factory($count = null, $state = [])
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Result newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Result newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Result query()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Result whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Result whereCreatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Result whereDuration($value)
@@ -2089,6 +2989,7 @@ namespace Modules\Job\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Result whereTaskId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Result whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Result whereUpdatedBy($value)
+ * @property-read ProfileContract|null $deleter
  * @mixin \Eloquent
  */
 	class Result extends \Eloquent {}
@@ -2098,24 +2999,14 @@ namespace Modules\Job\Models{
 /**
  * Modules\Job\Models\Schedule.
  *
- * @property Status $status
- * @property-read Profile|null $creator
- * @property-read \Illuminate\Database\Eloquent\Collection<int, ScheduleHistory> $histories
- * @property-read int|null $histories_count
- * @property-read Profile|null $updater
- * @method static Builder<static>|Schedule active()
- * @method static Builder<static>|Schedule inactive()
- * @method static Builder<static>|Schedule newModelQuery()
- * @method static Builder<static>|Schedule newQuery()
- * @method static Builder<static>|Schedule query()
  * @property string $id
  * @property string $command
  * @property string|null $command_custom
- * @property array<array-key, mixed>|null $params
+ * @property array<array-key, array{name?: string, value?: bool|float|int|string|null, required?: bool, type?: string}>|null $params
  * @property string $expression
- * @property array<array-key, mixed>|null $environments
- * @property array<array-key, mixed>|null $options
- * @property array<array-key, mixed>|null $options_with_value
+ * @property array<array-key, bool|float|int|string|null>|null $environments
+ * @property array<array-key, array{name?: string, value?: bool|float|int|string|null}|bool|float|int|string|null>|null $options
+ * @property array<array-key, array{name?: string, value?: bool|float|int|string|null, required?: bool, type?: string}>|null $options_with_value
  * @property string|null $log_filename
  * @property int $even_in_maintenance_mode
  * @property int $without_overlapping
@@ -2126,14 +3017,26 @@ namespace Modules\Job\Models{
  * @property int $sendmail_error
  * @property int $log_success
  * @property int $log_error
+ * @property Status $status
  * @property int $run_in_background
  * @property int $sendmail_success
- * @property Carbon|null $deleted_at
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
+ * @property Carbon|null $deleted_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_by
+ * @property ProfileContract|null $creator
+ * @property \Illuminate\Database\Eloquent\Collection<int, ScheduleHistory> $histories
+ * @property int|null $histories_count
+ * @property ProfileContract|null $updater
+ * @method static Builder<static>|Schedule active()
+ * @method static ScheduleFactory factory($count = null, $state = [])
+ * @method static Builder<static>|Schedule inactive()
+ * @method static Builder<static>|Schedule newModelQuery()
+ * @method static Builder<static>|Schedule newQuery()
+ * @method static Builder<static>|Schedule onlyTrashed()
+ * @method static Builder<static>|Schedule query()
  * @method static Builder<static>|Schedule whereCommand($value)
  * @method static Builder<static>|Schedule whereCommandCustom($value)
  * @method static Builder<static>|Schedule whereCreatedAt($value)
@@ -2161,6 +3064,9 @@ namespace Modules\Job\Models{
  * @method static Builder<static>|Schedule whereWebhookAfter($value)
  * @method static Builder<static>|Schedule whereWebhookBefore($value)
  * @method static Builder<static>|Schedule whereWithoutOverlapping($value)
+ * @method static Builder<static>|Schedule withTrashed(bool $withTrashed = true)
+ * @method static Builder<static>|Schedule withoutTrashed()
+ * @property-read ProfileContract|null $deleter
  * @mixin \Eloquent
  */
 	class Schedule extends \Eloquent {}
@@ -2170,23 +3076,24 @@ namespace Modules\Job\Models{
 /**
  * Modules\Job\Models\ScheduleHistory.
  *
- * @property-read Schedule|null $command
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
- * @method static Builder<static>|ScheduleHistory newModelQuery()
- * @method static Builder<static>|ScheduleHistory newQuery()
- * @method static Builder<static>|ScheduleHistory query()
  * @property string $id
+ * @property Schedule|null $command
  * @property array<array-key, mixed>|null $params
  * @property string $output
  * @property array<array-key, mixed>|null $options
- * @property int|null $schedule_id
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
+ * @property int|null $schedule_id
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $updater
+ * @method static ScheduleHistoryFactory factory($count = null, $state = [])
+ * @method static Builder<static>|ScheduleHistory newModelQuery()
+ * @method static Builder<static>|ScheduleHistory newQuery()
+ * @method static Builder<static>|ScheduleHistory query()
  * @method static Builder<static>|ScheduleHistory whereCommand($value)
  * @method static Builder<static>|ScheduleHistory whereCreatedAt($value)
  * @method static Builder<static>|ScheduleHistory whereCreatedBy($value)
@@ -2199,6 +3106,7 @@ namespace Modules\Job\Models{
  * @method static Builder<static>|ScheduleHistory whereScheduleId($value)
  * @method static Builder<static>|ScheduleHistory whereUpdatedAt($value)
  * @method static Builder<static>|ScheduleHistory whereUpdatedBy($value)
+ * @property-read ProfileContract|null $deleter
  * @mixin \Eloquent
  */
 	class ScheduleHistory extends \Eloquent {}
@@ -2208,24 +3116,7 @@ namespace Modules\Job\Models{
 /**
  * Modules\Job\Models\Task.
  *
- * @property-read Profile|null $creator
- * @property-read Collection<int, Frequency> $frequencies
- * @property-read int|null $frequencies_count
- * @property-read bool $activated
- * @property-read float $average_runtime
- * @property-read Result|null $last_result
- * @property-read string $upcoming
- * @property-read DatabaseNotificationCollection<int, DatabaseNotification> $notifications
- * @property-read int|null $notifications_count
- * @property-read Collection<int, Result> $results
- * @property-read int|null $results_count
- * @property-read Profile|null $updater
- * @method static \Modules\Job\Database\Factories\TaskFactory factory($count = null, $state = [])
- * @method static Builder<static>|Task newModelQuery()
- * @method static Builder<static>|Task newQuery()
- * @method static Builder<static>|Task query()
- * @method static Builder<static>|Task sortableBy(array<string> $sortableColumns, array<string, 'asc'|'desc'> $defaultSort = [])
- * @property int $id
+ * @property string $id
  * @property string $description
  * @property string $command
  * @property string|null $parameters
@@ -2241,19 +3132,31 @@ namespace Modules\Job\Models{
  * @property string|null $auto_cleanup_type
  * @property int $run_on_one_server
  * @property int $run_in_background
+ * @property string|null $created_by
+ * @property string|null $updated_by
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
- * @property string|null $deleted_at
- * @property string|null $deleted_by
+ * @property-read ProfileContract|null $creator
+ * @property-read Collection<int, Frequency> $frequencies
+ * @property-read int|null $frequencies_count
+ * @property-read bool $activated
+ * @property-read float $average_runtime
+ * @property-read Result|null $last_result
+ * @property-read string $upcoming
+ * @property-read DatabaseNotificationCollection<int, DatabaseNotification> $notifications
+ * @property-read int|null $notifications_count
+ * @property-read Collection<int, Result> $results
+ * @property-read int|null $results_count
+ * @property-read ProfileContract|null $updater
+ * @method static Builder<static>|Task newModelQuery()
+ * @method static Builder<static>|Task newQuery()
+ * @method static Builder<static>|Task query()
+ * @method static Builder<static>|Task sortableBy(array<string> $sortableColumns, array<string, 'asc'|'desc'> $defaultSort = [])
  * @method static Builder<static>|Task whereAutoCleanupNum($value)
  * @method static Builder<static>|Task whereAutoCleanupType($value)
  * @method static Builder<static>|Task whereCommand($value)
  * @method static Builder<static>|Task whereCreatedAt($value)
  * @method static Builder<static>|Task whereCreatedBy($value)
- * @method static Builder<static>|Task whereDeletedAt($value)
- * @method static Builder<static>|Task whereDeletedBy($value)
  * @method static Builder<static>|Task whereDescription($value)
  * @method static Builder<static>|Task whereDontOverlap($value)
  * @method static Builder<static>|Task whereExpression($value)
@@ -2269,6 +3172,12 @@ namespace Modules\Job\Models{
  * @method static Builder<static>|Task whereTimezone($value)
  * @method static Builder<static>|Task whereUpdatedAt($value)
  * @method static Builder<static>|Task whereUpdatedBy($value)
+ * @property Carbon|null $deleted_at
+ * @property string|null $deleted_by
+ * @property-read ProfileContract|null $deleter
+ * @method static TaskFactory factory($count = null, $state = [])
+ * @method static Builder<static>|Task whereDeletedAt($value)
+ * @method static Builder<static>|Task whereDeletedBy($value)
  * @mixin \Eloquent
  */
 	class Task extends \Eloquent {}
@@ -2278,13 +3187,18 @@ namespace Modules\Job\Models{
 /**
  * Class TaskComment.
  *
- * @property-read Profile|null $creator
- * @property-read Task|null $task
- * @property-read Profile|null $updater
- * @property-read User|null $user
+ * @property ProfileContract|null $creator
+ * @property Task|null $task
+ * @property ProfileContract|null $updater
+ * @property User|null $user
  * @method static Builder<static>|TaskComment newModelQuery()
  * @method static Builder<static>|TaskComment newQuery()
+ * @method static Builder<static>|TaskComment onlyTrashed()
  * @method static Builder<static>|TaskComment query()
+ * @method static Builder<static>|TaskComment withTrashed(bool $withTrashed = true)
+ * @method static Builder<static>|TaskComment withoutTrashed()
+ * @property-read ProfileContract|null $deleter
+ * @method static TaskCommentFactory factory($count = null, $state = [])
  * @mixin \Eloquent
  */
 	class TaskComment extends \Eloquent {}
@@ -2294,30 +3208,30 @@ namespace Modules\Lang\Models{
 /**
  * Modules\Lang\Models\LanguageLine.
  *
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
- * @method static EloquentBuilder<static>|LanguageLine newModelQuery()
- * @method static EloquentBuilder<static>|LanguageLine newQuery()
- * @method static EloquentBuilder<static>|LanguageLine query()
  * @property int $id
  * @property string $group
  * @property string $key
  * @property array<array-key, mixed> $text
  * @property string $locale
+ * @property string|null $created_by
+ * @property string|null $updated_by
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
- * @method static EloquentBuilder<static>|LanguageLine whereCreatedAt($value)
- * @method static EloquentBuilder<static>|LanguageLine whereCreatedBy($value)
- * @method static EloquentBuilder<static>|LanguageLine whereGroup($value)
+ * @method static EloquentBuilder<static>|LanguageLine newModelQuery()
+ * @method static EloquentBuilder<static>|LanguageLine newQuery()
+ * @method static EloquentBuilder<static>|LanguageLine query()
  * @method static EloquentBuilder<static>|LanguageLine whereId($value)
+ * @method static EloquentBuilder<static>|LanguageLine whereGroup($value)
  * @method static EloquentBuilder<static>|LanguageLine whereKey($value)
- * @method static EloquentBuilder<static>|LanguageLine whereLocale($value)
  * @method static EloquentBuilder<static>|LanguageLine whereText($value)
+ * @method static EloquentBuilder<static>|LanguageLine whereLocale($value)
+ * @method static EloquentBuilder<static>|LanguageLine whereCreatedAt($value)
  * @method static EloquentBuilder<static>|LanguageLine whereUpdatedAt($value)
+ * @method static EloquentBuilder<static>|LanguageLine whereCreatedBy($value)
  * @method static EloquentBuilder<static>|LanguageLine whereUpdatedBy($value)
  * @mixin \Eloquent
+ * @property-read \Modules\TechPlanner\Models\Profile|null $creator
+ * @property-read \Modules\TechPlanner\Models\Profile|null $updater
  */
 	class LanguageLine extends \Eloquent {}
 }
@@ -2326,41 +3240,91 @@ namespace Modules\Lang\Models{
 /**
  * Modules\Lang\Models\Post.
  *
- * @property-read Profile|null $creator
- * @property-read string|null $guid
- * @property string|null $title
- * @property-read string|null $txt
- * @property-read Model $linkable
- * @property-read Profile|null $updater
- * @property string|null $id
- * @property int|string|null $user_id
- * @property int|string|null $post_id
- * @property string|null $lang
- * @property string|null $subtitle
+ * @property string $id
+ * @property int|null $user_id
  * @property string|null $post_type
+ * @property int|null $post_id
+ * @property string|null $lang
+ * @property string|null $title
+ * @property string|null $subtitle
+ * @property string|null $guid
+ * @property string|null $txt
+ * @property string|null $image_src
+ * @property string|null $image_alt
+ * @property string|null $image_title
+ * @property string|null $meta_description
+ * @property string|null $meta_keywords
+ * @property int|null $author_id
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property int|null $category_id
+ * @property string|null $image
  * @property string|null $content
+ * @property int|null $published
+ * @property string|null $created_by
+ * @property string|null $updated_by
+ * @property string|null $url
+ * @property array<array-key, mixed>|null $url_lang
+ * @property array<array-key, mixed>|null $image_resize_src
+ * @property string|null $linked_count
+ * @property string|null $related_count
+ * @property string|null $relatedrev_count
+ * @property string|null $linkable_type
+ * @property int|null $views_count
+ * @property ProfileContract|null $creator
+ * @property Model|null $linkable
+ * @property ProfileContract|null $updater
+ * @method static Builder<static>|Post newModelQuery()
+ * @method static Builder<static>|Post newQuery()
+ * @method static Builder<static>|Post query()
+ * @method static Builder<static>|Post whereAuthorId($value)
+ * @method static Builder<static>|Post whereCategoryId($value)
+ * @method static Builder<static>|Post whereContent($value)
+ * @method static Builder<static>|Post whereCreatedAt($value)
+ * @method static Builder<static>|Post whereCreatedBy($value)
+ * @method static Builder<static>|Post whereGuid($value)
+ * @method static Builder<static>|Post whereId($value)
+ * @method static Builder<static>|Post whereImage($value)
+ * @method static Builder<static>|Post whereImageAlt($value)
+ * @method static Builder<static>|Post whereImageResizeSrc($value)
+ * @method static Builder<static>|Post whereImageSrc($value)
+ * @method static Builder<static>|Post whereImageTitle($value)
+ * @method static Builder<static>|Post whereLang($value)
+ * @method static Builder<static>|Post whereLinkableType($value)
+ * @method static Builder<static>|Post whereLinkedCount($value)
+ * @method static Builder<static>|Post whereMetaDescription($value)
+ * @method static Builder<static>|Post whereMetaKeywords($value)
+ * @method static Builder<static>|Post wherePostId($value)
+ * @method static Builder<static>|Post wherePostType($value)
+ * @method static Builder<static>|Post wherePublished($value)
+ * @method static Builder<static>|Post whereRelatedCount($value)
+ * @method static Builder<static>|Post whereRelatedrevCount($value)
+ * @method static Builder<static>|Post whereSubtitle($value)
+ * @method static Builder<static>|Post whereTitle($value)
+ * @method static Builder<static>|Post whereTxt($value)
+ * @method static Builder<static>|Post whereUpdatedAt($value)
+ * @method static Builder<static>|Post whereUpdatedBy($value)
+ * @method static Builder<static>|Post whereUrl($value)
+ * @method static Builder<static>|Post whereUrlLang($value)
+ * @method static Builder<static>|Post whereUserId($value)
+ * @method static Builder<static>|Post whereViewsCount($value)
+ * @property ProfileContract|null $deleter
+ * @method static PostFactory factory($count = null, $state = [])
+ * @mixin Model
  * @property string|null $excerpt
  * @property string|null $slug
  * @property string|null $status
  * @property Carbon|null $published_at
  * @property string|null $locale
  * @property string|null $category
- * @property string|null $image_src
- * @property string|null $image_alt
- * @property string|null $image_title
  * @property string|null $meta_title
- * @property string|null $meta_description
- * @property string|null $meta_keywords
- * @property int|string|null $author_id
- * @property string|null $url
- * @property array<array-key, mixed>|null $url_lang
- * @property array<array-key, mixed>|null $image_resize_src
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @method static \Modules\Lang\Database\Factories\PostFactory factory($count = null, $state = [])
- * @method static Builder<static>|Post newModelQuery()
- * @method static Builder<static>|Post newQuery()
- * @method static Builder<static>|Post query()
+ * @method static Builder<static>|Post whereCategory($value)
+ * @method static Builder<static>|Post whereExcerpt($value)
+ * @method static Builder<static>|Post whereLocale($value)
+ * @method static Builder<static>|Post whereMetaTitle($value)
+ * @method static Builder<static>|Post wherePublishedAt($value)
+ * @method static Builder<static>|Post whereSlug($value)
+ * @method static Builder<static>|Post whereStatus($value)
  * @mixin \Eloquent
  */
 	class Post extends \Eloquent {}
@@ -2370,25 +3334,42 @@ namespace Modules\Lang\Models{
 /**
  * Modules\Lang\Models\Translation.
  *
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
- * @property string|null $id
- * @property int|string|null $user_id
+ * @property string $id
+ * @property string|null $lang
  * @property string|null $key
  * @property string|null $value
- * @property string|null $locale
- * @property string|null $lang
- * @property string|null $namespace
- * @property string|null $group
- * @property string|null $item
+ * @property string|null $created_by
+ * @property string|null $updated_by
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
+ * @property string $namespace
+ * @property string $group
+ * @property string|null $item
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ * @method static TranslationFactory factory($count = null, $state = [])
  * @method static EloquentBuilder<static>|Translation newModelQuery()
  * @method static EloquentBuilder<static>|Translation newQuery()
  * @method static EloquentBuilder<static>|Translation ofTranslatedGroup(string $group)
  * @method static EloquentBuilder<static>|Translation orderByGroupKeys(bool $ordered)
  * @method static EloquentBuilder<static>|Translation query()
  * @method static EloquentBuilder<static>|Translation selectDistinctGroup()
+ * @method static EloquentBuilder<static>|Translation whereCreatedAt($value)
+ * @method static EloquentBuilder<static>|Translation whereCreatedBy($value)
+ * @method static EloquentBuilder<static>|Translation whereGroup($value)
+ * @method static EloquentBuilder<static>|Translation whereId($value)
+ * @method static EloquentBuilder<static>|Translation whereItem($value)
+ * @method static EloquentBuilder<static>|Translation whereKey($value)
+ * @method static EloquentBuilder<static>|Translation whereLang($value)
+ * @method static EloquentBuilder<static>|Translation whereNamespace($value)
+ * @method static EloquentBuilder<static>|Translation whereUpdatedAt($value)
+ * @method static EloquentBuilder<static>|Translation whereUpdatedBy($value)
+ * @method static EloquentBuilder<static>|Translation whereValue($value)
+ * @property ProfileContract|null $deleter
+ * @property string|null $locale
+ * @property int|null $user_id
+ * @method static EloquentBuilder<static>|Translation whereLocale($value)
+ * @method static EloquentBuilder<static>|Translation whereUserId($value)
  * @mixin \Eloquent
  */
 	class Translation extends \Eloquent {}
@@ -2396,16 +3377,23 @@ namespace Modules\Lang\Models{
 
 namespace Modules\Lang\Models{
 /**
- * @property int $id
- * @property string|null $name
+ * @property string|null $key
  * @property string|null $path
- * @property array<array-key, mixed>|string|null $content
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
+ * @property string|null $id
+ * @property string|null $name
+ * @property array<array-key, mixed>|null $content
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ * @method static TranslationFileFactory factory($count = null, $state = [])
  * @method static Builder<static>|TranslationFile newModelQuery()
  * @method static Builder<static>|TranslationFile newQuery()
  * @method static Builder<static>|TranslationFile query()
+ * @method static Builder<static>|TranslationFile whereContent($value)
  * @method static Builder<static>|TranslationFile whereId($value)
+ * @method static Builder<static>|TranslationFile whereKey($value)
+ * @method static Builder<static>|TranslationFile whereName($value)
+ * @method static Builder<static>|TranslationFile wherePath($value)
+ * @property ProfileContract|null $deleter
  * @mixin \Eloquent
  */
 	class TranslationFile extends \Eloquent {}
@@ -2425,7 +3413,7 @@ namespace Modules\Media\Models{
  * @property-read mixed $preview_url
  * @property-read TemporaryUpload|null $temporaryUpload
  * @property-read mixed $type
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $updater
  * @method static MediaCollection<int, static> all($columns = ['*'])
  * @method static \Modules\Media\Database\Factories\MediaFactory factory($count = null, $state = [])
  * @method static MediaCollection<int, static> get($columns = ['*'])
@@ -2485,12 +3473,12 @@ namespace Modules\Media\Models{
 
 namespace Modules\Media\Models{
 /**
- * @property-read Profile|null $creator
+ * @property-read ProfileContract|null $creator
  * @property-read string|null $converted_file
  * @property-read string|null $disk
  * @property-read string|null $file
  * @property-read Media|null $media
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $updater
  * @method static Builder<static>|MediaConvert newModelQuery()
  * @method static Builder<static>|MediaConvert newQuery()
  * @method static Builder<static>|MediaConvert query()
@@ -2545,10 +3533,10 @@ namespace Modules\Media\Models{
 /**
  * Modules\Media\Models\TemporaryUpload.
  *
- * @property-read Profile|null $creator
+ * @property-read ProfileContract|null $creator
  * @property-read MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property-read int|null $media_count
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $updater
  * @method static \Modules\Media\Database\Factories\TemporaryUploadFactory factory($count = null, $state = [])
  * @method static Builder<static>|TemporaryUpload newModelQuery()
  * @method static Builder<static>|TemporaryUpload newQuery()
@@ -2588,10 +3576,10 @@ namespace Modules\Notify\Models{
 /**
  * Modules\Notify\Models\Contact.
  *
- * @property-read Profile|null $creator
+ * @property-read ProfileContract|null $creator
  * @property-read MediaCollection<int, Media> $media
  * @property-read int|null $media_count
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $updater
  * @method static Builder<static>|Contact newModelQuery()
  * @method static Builder<static>|Contact newQuery()
  * @method static Builder<static>|Contact query()
@@ -2715,17 +3703,17 @@ namespace Modules\Notify\Models{
  * @property string|null $status_message
  * @property array<string, mixed>|null $data
  * @property array<string, mixed>|null $metadata
- * @property \Illuminate\Support\Carbon|null $sent_at
- * @property \Illuminate\Support\Carbon|null $delivered_at
- * @property \Illuminate\Support\Carbon|null $failed_at
- * @property \Illuminate\Support\Carbon|null $opened_at
- * @property \Illuminate\Support\Carbon|null $clicked_at
- * @property-read Profile|null $creator
+ * @property Carbon|null $sent_at
+ * @property Carbon|null $delivered_at
+ * @property Carbon|null $failed_at
+ * @property Carbon|null $opened_at
+ * @property Carbon|null $clicked_at
+ * @property-read ProfileContract|null $creator
  * @property-read Model $mailable
  * @property-read MediaCollection<int, Media> $media
  * @property-read int|null $media_count
  * @property-read MailTemplate|null $template
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $updater
  * @method static Builder<static>|MailTemplateLog newModelQuery()
  * @method static Builder<static>|MailTemplateLog newQuery()
  * @method static Builder<static>|MailTemplateLog query()
@@ -2736,11 +3724,11 @@ namespace Modules\Notify\Models{
 
 namespace Modules\Notify\Models{
 /**
- * @property-read Profile|null $creator
+ * @property-read ProfileContract|null $creator
  * @property-read MediaCollection<int, Media> $media
  * @property-read int|null $media_count
  * @property-read MailTemplate|null $template
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $updater
  * @method static Builder<static>|MailTemplateVersion newModelQuery()
  * @method static Builder<static>|MailTemplateVersion newQuery()
  * @method static Builder<static>|MailTemplateVersion onlyTrashed()
@@ -2784,8 +3772,8 @@ namespace Modules\Notify\Models{
 /**
  * Notification model for the Notify module.
  *
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $updater
  * @method static \Modules\Notify\Database\Factories\NotificationFactory factory($count = null, $state = [])
  * @method static Builder<static>|Notification newModelQuery()
  * @method static Builder<static>|Notification newQuery()
@@ -2834,10 +3822,10 @@ namespace Modules\Notify\Models{
  * @property array<string, mixed>|null $config
  * @property bool $is_enabled
  * @property int|null $priority
- * @property-read Profile|null $creator
+ * @property-read ProfileContract|null $creator
  * @property-read MediaCollection<int, Media> $media
  * @property-read int|null $media_count
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $updater
  * @method static \Illuminate\Database\Eloquent\Builder<static>|NotificationChannel newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|NotificationChannel newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|NotificationChannel query()
@@ -2848,12 +3836,12 @@ namespace Modules\Notify\Models{
 
 namespace Modules\Notify\Models{
 /**
- * @property-read Profile|null $creator
+ * @property-read ProfileContract|null $creator
  * @property-read MediaCollection<int, Media> $media
  * @property-read int|null $media_count
  * @property-read Model $notifiable
  * @property-read NotificationTemplate|null $template
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $updater
  * @method static Builder<static>|NotificationLog forChannel(string $channel)
  * @method static Builder<static>|NotificationLog forNotifiable(\Illuminate\Database\Eloquent\Model $notifiable)
  * @method static Builder<static>|NotificationLog newModelQuery()
@@ -2919,13 +3907,13 @@ namespace Modules\Notify\Models{
  * @property array<string, mixed>|null $preview_data
  * @property array<string, mixed>|null $grapesjs_data
  * @property NotificationTypeEnum $type
- * @property-read Profile|null $creator
+ * @property-read ProfileContract|null $creator
  * @property-read string $channels_label
  * @property-read list<string> $translatable_columns_from
  * @property-read MediaCollection<int, Media> $media
  * @property-read int|null $media_count
  * @property-read mixed $translations
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $updater
  * @method static Builder<static>|NotificationTemplate active()
  * @method static Builder<static>|NotificationTemplate forCategory(string $category)
  * @method static Builder<static>|NotificationTemplate forChannel(string $channel)
@@ -2951,11 +3939,11 @@ namespace Modules\Notify\Models{
  * @property array<string, mixed>|null $variables
  * @property array<string, mixed>|null $conditions
  * @property int|string|null $version
- * @property-read Profile|null $creator
+ * @property-read ProfileContract|null $creator
  * @property-read MediaCollection<int, Media> $media
  * @property-read int|null $media_count
  * @property-read NotificationTemplate|null $template
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $updater
  * @method static Builder<static>|NotificationTemplateVersion newModelQuery()
  * @method static Builder<static>|NotificationTemplateVersion newQuery()
  * @method static Builder<static>|NotificationTemplateVersion query()
@@ -2988,12 +3976,12 @@ namespace Modules\Notify\Models{
  * Modules\Notify\Models\NotifyTheme.
  *
  * @method static NotifyThemeFactory factory($count = null, $state = [])
- * @property-read Profile|null $creator
+ * @property-read ProfileContract|null $creator
  * @property-read array{path: string, width: int, height: int} $logo
  * @property-read Model $linkable
  * @property-read MediaCollection<int, Media> $media
  * @property-read int|null $media_count
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $updater
  * @method static Builder<static>|NotifyTheme newModelQuery()
  * @method static Builder<static>|NotifyTheme newQuery()
  * @method static Builder<static>|NotifyTheme query()
@@ -3048,8 +4036,8 @@ namespace Modules\Notify\Models{
 /**
  * Modules\Notify\Models\NotifyThemeable.
  *
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $updater
  * @method static Builder<static>|NotifyThemeable newModelQuery()
  * @method static Builder<static>|NotifyThemeable newQuery()
  * @method static Builder<static>|NotifyThemeable query()
@@ -3865,8 +4853,8 @@ namespace Modules\TechPlanner\Models{
 
 namespace Modules\Tenant\Models{
 /**
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
+ * @property-read User|null $creator
+ * @property-read User|null $updater
  * @method static \Illuminate\Database\Eloquent\Builder<static>|DatabaseConfig newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|DatabaseConfig newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|DatabaseConfig query()
@@ -3879,8 +4867,8 @@ namespace Modules\Tenant\Models{
 /**
  * @property string|null $id
  * @property string|null $name
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
+ * @property-read User|null $creator
+ * @property-read User|null $updater
  * @method static \Modules\Tenant\Database\Factories\DomainFactory factory($count = null, $state = [])
  * @method static Builder<static>|Domain newModelQuery()
  * @method static Builder<static>|Domain newQuery()
@@ -3896,7 +4884,7 @@ namespace Modules\Tenant\Models{
 /**
  * Modello Tenant per la gestione multi-tenant dell'applicazione.
  *
- * @property-read Profile|null $creator
+ * @property-read User|null $creator
  * @property string|null $name
  * @property string|null $domain
  * @property string|null $database
@@ -3915,7 +4903,7 @@ namespace Modules\Tenant\Models{
  * @property string|null $tax_code
  * @property string|null $vat_number
  * @property-read string $url
- * @property-read Profile|null $updater
+ * @property-read User|null $updater
  * @property-read Collection<int, User> $users
  * @property-read int|null $users_count
  * @method static \Modules\Tenant\Database\Factories\TenantFactory factory($count = null, $state = [])
@@ -3937,8 +4925,8 @@ namespace Modules\Tenant\Models{
  * @property string|null $status
  * @property string|null $verification_token
  * @property Carbon|null $verified_at
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
+ * @property-read User|null $creator
+ * @property-read User|null $updater
  * @method static Builder<static>|TenantDomain newModelQuery()
  * @method static Builder<static>|TenantDomain newQuery()
  * @method static Builder<static>|TenantDomain query()
@@ -3955,9 +4943,9 @@ namespace Modules\Tenant\Models{
  * @property string|null $key
  * @property mixed $value
  * @property string|null $type
- * @property-read Profile|null $creator
+ * @property-read User|null $creator
  * @property-read Tenant|null $tenant
- * @property-read Profile|null $updater
+ * @property-read User|null $updater
  * @method static Builder<static>|TenantSetting newModelQuery()
  * @method static Builder<static>|TenantSetting newQuery()
  * @method static Builder<static>|TenantSetting query()
@@ -3979,9 +4967,9 @@ namespace Modules\Tenant\Models{
  * @property float|null $billing_amount
  * @property Carbon|null $next_billing_date
  * @property Carbon|null $expires_at
- * @property-read Profile|null $creator
+ * @property-read User|null $creator
  * @property-read Tenant|null $tenant
- * @property-read Profile|null $updater
+ * @property-read User|null $updater
  * @method static Builder<static>|TenantSubscription newModelQuery()
  * @method static Builder<static>|TenantSubscription newQuery()
  * @method static Builder<static>|TenantSubscription query()
@@ -4001,8 +4989,8 @@ namespace Modules\Tenant\Models{
  * @property Carbon|null $updated_at
  * @property int|null $created_by
  * @property int|null $updated_by
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
+ * @property-read User|null $creator
+ * @property-read User|null $updater
  * @method static \Modules\Tenant\Database\Factories\TestSushiModelFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TestSushiModel newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TestSushiModel newQuery()
@@ -4032,13 +5020,13 @@ namespace Modules\UI\Models{
  * @property string|null $icon
  * @property bool $is_active
  * @property int $sort_order
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
  * @method static \Modules\UI\Database\Factories\CategoryFactory factory($count = null, $state = [])
  * @method static Builder<static>|Category newModelQuery()
  * @method static Builder<static>|Category newQuery()
  * @method static Builder<static>|Category query()
  * @mixin \Eloquent
+ * @property-read \Modules\TechPlanner\Models\Profile|null $creator
+ * @property-read \Modules\TechPlanner\Models\Profile|null $updater
  */
 	class Category extends \Eloquent {}
 }
@@ -4056,13 +5044,13 @@ namespace Modules\UI\Models{
  * @property int|null $theme_id
  * @property bool $is_active
  * @property int|null $order
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
  * @method static \Modules\UI\Database\Factories\CollectionFactory factory($count = null, $state = [])
  * @method static Builder<static>|Collection newModelQuery()
  * @method static Builder<static>|Collection newQuery()
  * @method static Builder<static>|Collection query()
  * @mixin \Eloquent
+ * @property-read \Modules\TechPlanner\Models\Profile|null $creator
+ * @property-read \Modules\TechPlanner\Models\Profile|null $updater
  */
 	class Collection extends \Eloquent {}
 }
@@ -4073,13 +5061,13 @@ namespace Modules\UI\Models{
  *
  * FormBuilder module not available - extending from XotBaseModel instead.
  *
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
  * @method static \Modules\UI\Database\Factories\FieldOptionFactory factory($count = null, $state = [])
  * @method static Builder<static>|FieldOption newModelQuery()
  * @method static Builder<static>|FieldOption newQuery()
  * @method static Builder<static>|FieldOption query()
  * @mixin \Eloquent
+ * @property-read \Modules\TechPlanner\Models\Profile|null $creator
+ * @property-read \Modules\TechPlanner\Models\Profile|null $updater
  */
 	class FieldOption extends \Eloquent {}
 }
@@ -4768,7 +5756,7 @@ namespace Modules\User\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Permission permission($permissions, bool $without = false)
  * @method static Builder<static>|Permission query()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Permission role($roles, ?string $guard = null, bool $without = false)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Permission team($teams, bool $without = false)
+ * @method static Builder<static>|Permission team($teams, bool $without = false)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Permission withoutPermission($permissions)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Permission withoutRole($roles, ?string $guard = null)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Permission withoutTeam($teams)
@@ -5607,22 +6595,20 @@ namespace Modules\Xot\Models{
 /**
  * Model Extra.
  *
- * @property SchemalessAttributes $extra_attributes
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
- * @method static \Modules\Xot\Database\Factories\ExtraFactory factory($count = null, $state = [])
+ * @property string                    $id
+ * @property string                    $model_type
+ * @property string                    $model_id
+ * @property SchemalessAttributes|null $extra_attributes
+ * @property Carbon|null               $created_at
+ * @property Carbon|null               $updated_at
+ * @property string|null               $updated_by
+ * @property string|null               $created_by
+ * @property Carbon|null               $deleted_at
+ * @property string|null               $deleted_by
+ * @method static ExtraFactory          factory($count = null, $state = [])
  * @method static Builder<static>|Extra newModelQuery()
  * @method static Builder<static>|Extra newQuery()
  * @method static Builder<static>|Extra query()
- * @property string $id
- * @property string $model_type
- * @property string $model_id
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
- * @property Carbon|null $deleted_at
- * @property string|null $deleted_by
  * @method static Builder<static>|Extra whereCreatedAt($value)
  * @method static Builder<static>|Extra whereCreatedBy($value)
  * @method static Builder<static>|Extra whereDeletedAt($value)
@@ -5633,9 +6619,13 @@ namespace Modules\Xot\Models{
  * @method static Builder<static>|Extra whereModelType($value)
  * @method static Builder<static>|Extra whereUpdatedAt($value)
  * @method static Builder<static>|Extra whereUpdatedBy($value)
+ * @method static Builder<static>|Extra withExtraAttributes()
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $deleter
+ * @property ProfileContract|null $updater
  * @mixin \Eloquent
  */
-	class Extra extends \Eloquent {}
+	final class Extra extends \Eloquent {}
 }
 
 namespace Modules\Xot\Models{
@@ -5753,6 +6743,23 @@ namespace Modules\Xot\Models{
  * @property string|null $path
  * @property string|null $icon
  * @property array<array-key, mixed>|null $colors
+ * @property string|null $slug
+ * @property string|null $version
+ * @property bool|null $enabled
+ * @property array<array-key, mixed>|null $dependencies
+ * @property \Carbon\Carbon|null $installation_date
+ * @property \Carbon\Carbon|null $activation_date
+ * @property \Carbon\Carbon|null $deactivation_date
+ * @property array<array-key, mixed>|null $metadata
+ * @property string|null $laravel_version
+ * @property string|null $php_version
+ * @property array<array-key, mixed>|null $permissions
+ * @property array<array-key, mixed>|null $routes
+ * @property array<array-key, mixed>|null $assets
+ * @property array<array-key, mixed>|null $settings
+ * @property array<array-key, mixed>|null $usage_statistics
+ * @property array<array-key, mixed>|null $error_log
+ * @property array<array-key, mixed>|null $update_history
  * @method static Builder<static>|Module newModelQuery()
  * @method static Builder<static>|Module newQuery()
  * @method static Builder<static>|Module query()

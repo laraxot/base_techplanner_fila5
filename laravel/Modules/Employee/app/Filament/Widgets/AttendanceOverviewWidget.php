@@ -6,8 +6,8 @@ namespace Modules\Employee\Filament\Widgets;
 
 use Carbon\Carbon;
 use Filament\Actions\Action;
-use Filament\Infolists\Components\TextEntry;
 use Filament\Forms\Components\Select;
+use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Actions;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
@@ -47,7 +47,7 @@ class AttendanceOverviewWidget extends XotBaseSchemaWidget
                         ->options($this->getDepartmentOptions())
                         ->default($this->selectedDepartment)
                         ->live()
-                        ->afterStateUpdated(function ($state): void {
+                        ->afterStateUpdated(function (mixed $state): void {
                             if (is_string($state) || $state === null) {
                                 $this->selectedDepartment = $state;
                             }

@@ -7,6 +7,7 @@ namespace Modules\Cms\Tests\Feature;
 use Modules\Cms\Tests\TestCase;
 use Modules\UI\Actions\Block\GetAllBlocksAction;
 use Modules\UI\View\Components\Render\Blocks;
+use Modules\Xot\Datas\ComponentFileData;
 use PHPUnit\Framework\Assert;
 use Spatie\LaravelData\DataCollection;
 
@@ -92,9 +93,9 @@ describe('Homepage Filament Builder Blocks - CMS Module', function () {
         expect($allBlocks->count())->toBeGreaterThan(0);
 
         // Verify CMS blocks are discovered
-        $cmsBlocks = $allBlocks->toCollection()->filter(fn ($block) => $block->module === 'Cms');
+        $cmsBlocks = $allBlocks->toCollection()->filter(fn (ComponentFileData $block): bool => $block->module === 'Cms');
         if ($cmsBlocks->count() > 0) {
-            $cmsBlocks->each(function ($block) {
+            $cmsBlocks->each(function (ComponentFileData $block): void {
                 expect($block->toArray())->toHaveKeys(['name', 'class', 'module', 'path']);
                 expect(class_exists($block->class))->toBeTrue();
             });

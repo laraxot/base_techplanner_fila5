@@ -74,6 +74,7 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  */
 class Team extends BaseTeam
 {
+    /** @use HasXotFactory<Team> */
     use HasXotFactory;
 
     // use SoftDeletes;

@@ -21,15 +21,22 @@ class HasManyAction
     /**
      * Execute the HasMany relation update.
      *
-     * @throws \InvalidArgumentException
+     * @throws InvalidArgumentException
      */
     public function execute(Model $model, RelationData $relationDTO): void
     {
         Assert::isInstanceOf($relation = $relationDTO->rows, HasMany::class);
 
+        $parentKey = $model->getAttribute($relation->getLocalKeyName());
+        if (! is_int($parentKey) && ! is_string($parentKey)) {
+            throw new InvalidArgumentException(
+                'The local key ['.$relation->getLocalKeyName().'] of ['.$model::class.'] must be an int or a string.'
+            );
+        }
+
         $updateData = new HasManyUpdateData(
             foreignKey: $relation->getForeignKeyName(),
-            parentKey: $model->getAttribute($relation->getLocalKeyName()),
+            parentKey: $parentKey,
         );
 
         match (true) {

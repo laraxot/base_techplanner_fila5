@@ -16,6 +16,7 @@ use Filament\Schemas\Components\Section;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\HtmlString;
+use Livewire\Component;
 use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\Xot\Filament\Resources\XotBaseResource;
@@ -51,17 +52,17 @@ abstract class BaseUserResource extends XotBaseResource
                 'email' => TextInput::make('email')->required()->unique(ignoreRecord: true),
                 'password' => TextInput::make('password')
                     ->password()
-                    ->dehydrateStateUsing(function ($state) {
+                    ->dehydrateStateUsing(function (mixed $state) {
                         if (empty($state)) {
                             return;
                         }
 
                         return is_string($state) ? Hash::make($state) : null;
                     })
-                    ->required(fn ($livewire) => $livewire instanceof CreateUser),
+                    ->required(fn (Component $livewire): bool => $livewire instanceof CreateUser),
             ])->columnSpan(8),
             'section02' => Section::make([
-                'created_at' => TextEntry::make('created_at')->html()->state(static function ($record) {
+                'created_at' => TextEntry::make('created_at')->html()->state(static function (Model|array|null $record) {
                     if ($record === null || ! $record instanceof Model) {
                         return new HtmlString('&mdash;');
                     }
