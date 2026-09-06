@@ -65,7 +65,7 @@ test('the video codec offers both vp9 and vp8', function (): void {
 });
 
 test('the table lists the identifier and both timestamps', function (): void {
-    $columns = (new MediaConvertsTable)->getTableColumns();
+    $columns = (new MediaConvertsTable())->getTableColumns();
 
     Assert::assertSame(['id', 'created_at', 'updated_at'], array_keys($columns));
 
@@ -76,10 +76,7 @@ test('the table lists the identifier and both timestamps', function (): void {
 });
 
 test('the table offers view, edit and convert row actions', function (): void {
-    // Reflection: il contratto sotto test e' quello del modulo, non il prototipo
-    // deprecato ereditato da HasXotTable (`@deprecated override the table() method`).
-    $actions = (new \ReflectionMethod(MediaConvertsTable::class, 'getTableActions'))->invoke(new MediaConvertsTable);
-    Assert::assertIsArray($actions);
+    $actions = (new MediaConvertsTable())->getTableActions();
 
     Assert::assertCount(3, $actions);
     Assert::assertArrayHasKey('view', $actions);
@@ -92,7 +89,7 @@ test('the table offers view, edit and convert row actions', function (): void {
 });
 
 test('the table exposes bulk actions keyed by name', function (): void {
-    $bulk = (new MediaConvertsTable)->getTableBulkActions();
+    $bulk = (new MediaConvertsTable())->getTableBulkActions();
 
     Assert::assertNotSame([], $bulk);
     Assert::assertArrayHasKey('delete', $bulk);

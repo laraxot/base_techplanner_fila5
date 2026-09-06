@@ -71,8 +71,7 @@ class TemporaryUpload extends BaseModel implements HasMedia
 {
     use HasUuids;
 
-    /** @phpstan-ignore generics.notGeneric */
-    /** @phpstan-ignore generics.notGeneric */
+    /** @use HasXotFactory<TemporaryUploadFactory> */
     use HasXotFactory;
 
     use InteractsWithMedia;
