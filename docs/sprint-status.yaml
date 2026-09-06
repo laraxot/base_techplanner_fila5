@@ -54,6 +54,15 @@
 
 **Status**: IN PROGRESS (Phase 2A-C)
 
+### Story 9.1: PHPStan L10 Phase 2 — Global 61-Error Fix Orchestration
+- **Status**: READY_FOR_DEV
+- **Baseline**: 61 remaining errors (post-Phase-2A estimate)
+- **Scope**: All 16 modules (Xot, Activity, Job, Lang, Cms, User, Notify, AI, Geo, Employee, Gdpr, Media, Seo, TechPlanner, Tenant, UI)
+- **Strategy**: Cast errors (mixed→types), generics (HasXotFactory→@template), typeCoverage (explicit constants), deprecated (Filament v5 API)
+- **Acceptance Criteria**: 10 ACs defined (baseline audit, fix strategy, per-module clean, PHPMD baseline, PHPInsights, Pest coverage++, git sync, root commit, coverage.md update)
+- **File**: bmad-output/stories/9.1.phpstan-l10-phase2-fixes.story.md
+- **Next**: Execute per-module (recommend parallel: Geo, Seo, Tenant, UI parallel; Lang/Activity/Job sequential per deps)
+
 **Scope**: Fix PHPStan errors (108 found), resolve module blockers, upgrade dependencies, full module closure (PHPMD + Pest + docs).
 
 **Phase 1 (2026-09-06)** ✅ COMPLETED:

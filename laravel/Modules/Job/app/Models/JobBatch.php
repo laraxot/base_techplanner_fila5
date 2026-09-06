@@ -15,6 +15,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
 use Modules\Job\Database\Factories\JobBatchFactory;
+use Modules\Xot\Actions\Cast\SafeEloquentCastAction;
 use Modules\Xot\Contracts\ProfileContract;
 use Override;
 
@@ -33,7 +34,6 @@ use Override;
  * @property Carbon|null $finished_at
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $updater
- *
  * @method static JobBatchFactory factory($count = null, $state = [])
  * @method static Builder<static>|JobBatch newModelQuery()
  * @method static Builder<static>|JobBatch newQuery()
@@ -48,9 +48,7 @@ use Override;
  * @method static Builder<static>|JobBatch whereOptions($value)
  * @method static Builder<static>|JobBatch wherePendingJobs($value)
  * @method static Builder<static>|JobBatch whereTotalJobs($value)
- *
  * @property-read ProfileContract|null $deleter
- *
  * @mixin \Eloquent
  */
 class JobBatch extends BaseModel
@@ -79,10 +77,11 @@ class JobBatch extends BaseModel
      *
      * @return int
      */
-    public function processedJobs(): int|float
+    public function processedJobs(): int
     {
-        $totalJobs = (int) ($this->attributes['total_jobs'] ?? 0);
-        $pendingJobs = (int) ($this->attributes['pending_jobs'] ?? 0);
+        $caster = app(SafeEloquentCastAction::class);
+        $totalJobs = $caster->getIntAttribute($this, 'total_jobs');
+        $pendingJobs = $caster->getIntAttribute($this, 'pending_jobs');
 
         return $totalJobs - $pendingJobs;
     }
@@ -92,7 +91,7 @@ class JobBatch extends BaseModel
      */
     public function progress(): int
     {
-        $totalJobs = (int) ($this->attributes['total_jobs'] ?? 0);
+        $totalJobs = app(SafeEloquentCastAction::class)->getIntAttribute($this, 'total_jobs');
         $progress = $totalJobs > 0 ? round($this->processedJobs() / $totalJobs * 100) : 0;
 
         return (int) $progress;
@@ -103,7 +102,7 @@ class JobBatch extends BaseModel
      */
     public function hasPendingJobs(): bool
     {
-        $pendingJobs = (int) ($this->attributes['pending_jobs'] ?? 0);
+        $pendingJobs = app(SafeEloquentCastAction::class)->getIntAttribute($this, 'pending_jobs');
 
         return $pendingJobs > 0;
     }
@@ -121,7 +120,7 @@ class JobBatch extends BaseModel
      */
     public function hasFailures(): bool
     {
-        $failedJobs = (int) ($this->attributes['failed_jobs'] ?? 0);
+        $failedJobs = app(SafeEloquentCastAction::class)->getIntAttribute($this, 'failed_jobs');
 
         return $failedJobs > 0;
     }
@@ -131,8 +130,8 @@ class JobBatch extends BaseModel
      */
     public function failed(): bool
     {
-        $failedJobs = (int) ($this->attributes['failed_jobs'] ?? 0);
-        $totalJobs = (int) ($this->attributes['total_jobs'] ?? 0);
+        $failedJobs = app(SafeEloquentCastAction::class)->getIntAttribute($this, 'failed_jobs');
+        $totalJobs = app(SafeEloquentCastAction::class)->getIntAttribute($this, 'total_jobs');
 
         return $failedJobs === $totalJobs;
     }

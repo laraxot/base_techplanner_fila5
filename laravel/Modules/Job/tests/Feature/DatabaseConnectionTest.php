@@ -7,7 +7,7 @@ namespace Modules\Job\Tests\Feature;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Job\Tests\TestCase::class);
+uses(TestCase::class);
 
 test('default database connection is configured', function () {
     Assert::assertNotEmpty(config('database.default'));

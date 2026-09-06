@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Columns;
 
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Tables\Columns\XotBaseTextColumn;
 use Webmozart\Assert\Assert;
 
@@ -78,12 +79,14 @@ class ScheduleArguments extends XotBaseTextColumn
                         $name = isset($value['name']) && is_string($value['name'])
                             ? $value['name']
                             : (string) $key;
-                        $val = isset($value['value']) ? (string) $value['value'] : '';
+                        /** @var mixed $arrValue */
+                        $arrValue = $value['value'] ?? null;
+                        $val = isset($arrValue) ? SafeStringCastAction::cast($arrValue) : '';
 
                         return $name.'='.$val;
                     }
 
-                    return (string) $key.'='.(string) $value;
+                    return SafeStringCastAction::cast((string) $key).'='.SafeStringCastAction::cast($value);
                 },
             )
             ->values()

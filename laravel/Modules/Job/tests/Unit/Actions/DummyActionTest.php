@@ -3,17 +3,19 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Actions;
-use function Safe\class_uses;
+
 use Modules\Job\Actions\DummyAction;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+use function Safe\class_uses;
 use function Safe\file_get_contents;
 
-uses(\Modules\Job\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('DummyAction', function (): void {
     test('can be instantiated', function (): void {
-        $action = new DummyAction;
+        $action = new DummyAction();
         Assert::assertInstanceOf(DummyAction::class, $action);
     });
 

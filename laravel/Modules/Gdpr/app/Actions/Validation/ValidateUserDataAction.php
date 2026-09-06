@@ -15,9 +15,7 @@ class ValidateUserDataAction
     use QueueableAction;
 
     /**
-     * @param array<string, mixed> $formData
-     * @param array<string, mixed> $formData
-     * @param array<string, mixed> $formData
+     * @param array<string, string> $formData
      *
      * @return array<string, mixed>
      */

@@ -20,7 +20,6 @@ use PHPUnit\Framework\Assert;
  */
 function gdprTest(): TestCase
 {
-    // @phpstan-ignore-next-line Pest's test() returns mixed in static analysis
     $test = test();
     // @phpstan-ignore-next-line HigherOrderTapProxy is a Pest internal class
     if ($test instanceof HigherOrderTapProxy) {

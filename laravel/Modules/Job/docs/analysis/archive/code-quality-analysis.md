@@ -5,7 +5,7 @@ type: concept
 tags: [code, quality, analysis]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "code quality analysis"
+qmd: "code quality analysis "
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
@@ -92,4 +92,5 @@ The current analysis is incomplete and only shows partial results from PHPMD bef
 ---
 
 **Report Generated**: 2025-11-11
+**Next Review**: After fixing syntax errors
 **Target Completion**: 2025-11-15

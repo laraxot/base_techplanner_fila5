@@ -45,7 +45,6 @@ use Modules\Xot\Datas\XotData;
  * @property ProfileContract|null $creator
  * @property Treatment|null       $treatment
  * @property ProfileContract|null $updater
- *
  * @method static Builder<static>|Consent newModelQuery()
  * @method static Builder<static>|Consent newQuery()
  * @method static Builder<static>|Consent query()
@@ -62,22 +61,23 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder<static>|Consent whereUpdatedBy($value)
  * @method static Builder<static>|Consent whereUserId($value)
  * @method static Builder<static>|Consent whereUserType($value)
- *
  * @property ProfileContract|null $deleter
  * @property string|null          $ip_address
  * @property string|null          $user_agent
- *
  * @method static \Modules\Gdpr\Database\Factories\ConsentFactory factory($count = null, $state = [])
  * @method static Builder<static>|Consent                         whereIpAddress($value)
  * @method static Builder<static>|Consent                         whereUserAgent($value)
- *
  * @property string|null $ip_address
  * @property string|null $user_agent
- *
  * @method static \Modules\Gdpr\Database\Factories\ConsentFactory factory($count = null, $state = [])
  * @method static Builder<static>|Consent                         whereIpAddress($value)
  * @method static Builder<static>|Consent                         whereUserAgent($value)
- *
+ * @property array<array-key, mixed>|null $metadata
+ * @property Carbon|null $revoked_at
+ * @property string|null $revoked_ip_address
+ * @method static Builder<static>|Consent whereMetadata($value)
+ * @method static Builder<static>|Consent whereRevokedAt($value)
+ * @method static Builder<static>|Consent whereRevokedIpAddress($value)
  * @mixin \Eloquent
  */
 class Consent extends BaseModel

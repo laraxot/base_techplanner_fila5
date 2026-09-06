@@ -14,6 +14,7 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Carbon;
 use Modules\Job\Database\Factories\TaskFactory;
 use Modules\Job\Models\Traits\FrontendSortable;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Webmozart\Assert\Assert;
@@ -55,7 +56,6 @@ use function Safe\json_decode;
  * @property-read Collection<int, Result> $results
  * @property-read int|null $results_count
  * @property-read ProfileContract|null $updater
- *
  * @method static Builder<static>|Task newModelQuery()
  * @method static Builder<static>|Task newQuery()
  * @method static Builder<static>|Task query()
@@ -80,15 +80,12 @@ use function Safe\json_decode;
  * @method static Builder<static>|Task whereTimezone($value)
  * @method static Builder<static>|Task whereUpdatedAt($value)
  * @method static Builder<static>|Task whereUpdatedBy($value)
- *
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
  * @property-read ProfileContract|null $deleter
- *
  * @method static TaskFactory factory($count = null, $state = [])
  * @method static Builder<static>|Task whereDeletedAt($value)
  * @method static Builder<static>|Task whereDeletedBy($value)
- *
  * @mixin \Eloquent
  */
 class Task extends BaseModel
@@ -150,8 +147,13 @@ class Task extends BaseModel
         if ($forScheduler) {
             /** @var array<int|string, string> $result */
             $result = [];
+            /** @var mixed $value */
             foreach ($parameters as $key => $value) {
-                $result[$key] = is_bool($value) ? ($value ? '1' : '0') : ((string) $value);
+                /** @var string $stringValue */
+                $stringValue = is_bool($value)
+                    ? ($value ? '1' : '0')
+                    : SafeStringCastAction::cast($value);
+                $result[$key] = $stringValue;
             }
 
             return $result;

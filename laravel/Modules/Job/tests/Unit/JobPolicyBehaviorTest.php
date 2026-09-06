@@ -30,7 +30,7 @@ use Modules\User\Models\Team;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Job\Tests\TestCase::class)->group('no-job-db');
+uses(TestCase::class)->group('no-job-db');
 
 /**
  * @param  list<string>  $permissions
