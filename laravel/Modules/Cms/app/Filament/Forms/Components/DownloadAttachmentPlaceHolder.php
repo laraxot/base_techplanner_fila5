@@ -4,13 +4,20 @@ declare(strict_types=1);
 
 namespace Modules\Cms\Filament\Forms\Components;
 
+use Filament\Forms\Components\Placeholder;
 use Illuminate\Support\HtmlString;
 use Modules\Cms\Models\Attachment;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+<<<<<<< .merge_file_Hkv30N
 use Modules\Xot\Filament\Forms\Components\XotBaseTextEntry;
 use Webmozart\Assert\Assert;
 
 class DownloadAttachmentPlaceHolder extends XotBaseTextEntry
+=======
+use Webmozart\Assert\Assert;
+
+class DownloadAttachmentPlaceHolder extends Placeholder
+>>>>>>> .merge_file_B7SUsZ
 {
     protected function setUp(): void
     {
