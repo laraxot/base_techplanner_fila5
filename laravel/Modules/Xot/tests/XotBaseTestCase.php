@@ -4,10 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests;
 
-<<<<<<< HEAD
-=======
 use Illuminate\Contracts\Support\Htmlable;
->>>>>>> 7f6cf6be (.)
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
@@ -18,10 +15,7 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Translation\ArrayLoader;
 use Illuminate\Translation\Translator;
 use Mockery\MockInterface;
-<<<<<<< HEAD
-=======
 use Modules\Lang\Actions\SaveTransAction;
->>>>>>> 7f6cf6be (.)
 use Modules\User\Database\Factories\TenantFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Tenant;
@@ -31,10 +25,7 @@ use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Module;
 use Modules\Xot\Providers\XotServiceProvider;
 use PHPUnit\Framework\MockObject\MockObject;
-<<<<<<< HEAD
 use Modules\User\Models\User;
-=======
->>>>>>> 7f6cf6be (.)
 
 /**
  * Class XotBaseTestCase.
@@ -151,11 +142,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     {
         $this->expectException($exceptionClass);
         if ($message !== null) {
-<<<<<<< HEAD
             $this->expectExceptionMessageIsOrContains($message);
-=======
-            $this->expectExceptionMessage($message);
->>>>>>> 7f6cf6be (.)
         }
     }
 
@@ -177,27 +164,18 @@ abstract class XotBaseTestCase extends BaseTestCase
         // i blade con @vite renderizzano senza asset invece di lanciare ViewException.
         $this->withoutVite();
 
-<<<<<<< HEAD
+        $this->stopTranslationsFromBeingWritten();
+
         if (! $this->app->bound('translator')) {
             $this->app->singleton('translator', function (Application $app) {
                 return new Translator(
                     new ArrayLoader,
-=======
-        $this->stopTranslationsFromBeingWritten();
-
-        if (! $this->app->bound('translator')) {
-            $this->app->singleton('translator', function ($app) {
-                return new Translator(
-                    new ArrayLoader(),
->>>>>>> 7f6cf6be (.)
                     'en'
                 );
             });
         }
     }
 
-<<<<<<< HEAD
-=======
     /**
      * AutoLabelAction, incontrando una chiave di traduzione che non esiste, la crea
      * e la scrive nel file del modulo. In test questo significa che una suite
@@ -218,7 +196,6 @@ abstract class XotBaseTestCase extends BaseTestCase
         });
     }
 
->>>>>>> 7f6cf6be (.)
     protected function tearDown(): void
     {
         try {
@@ -319,12 +296,8 @@ abstract class XotBaseTestCase extends BaseTestCase
         // (DB_DATABASE_USER vuoto) ripiega su sqlite condiviso: stesso fallback di
         // XotBaseMigration::resolveConnectionName(), altrimenti ogni insert su users
         // fallisce con "No database selected" sulle macchine senza il DB dedicato.
-<<<<<<< HEAD
         $userDatabase = config('database.connections.user.database');
         if (! is_string($userDatabase) || $userDatabase === '') {
-=======
-        if ((string) config('database.connections.user.database') === '') {
->>>>>>> 7f6cf6be (.)
             $this->app['config']->set('database.connections.user', [
                 'driver' => 'sqlite',
                 'database' => $database,
@@ -404,11 +377,7 @@ abstract class XotBaseTestCase extends BaseTestCase
 
     public function expectThrowableMessage(string $message): void
     {
-<<<<<<< HEAD
         $this->expectExceptionMessageIsOrContains($message);
-=======
-        $this->expectExceptionMessage($message);
->>>>>>> 7f6cf6be (.)
     }
 
     public function expectThrowableMessageMatches(string $pattern): void

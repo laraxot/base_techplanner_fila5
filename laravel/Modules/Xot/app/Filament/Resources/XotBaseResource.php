@@ -20,10 +20,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\HtmlString;
 use Illuminate\Support\Str;
-<<<<<<< HEAD
-=======
 use LogicException;
->>>>>>> 7f6cf6be (.)
 use Modules\Media\Actions\GetAttachmentsSchemaAction;
 use Modules\Xot\Actions\Filament\GetResourceClassNameByModelClassAction;
 use Modules\Xot\Actions\GetTransKeyAction;
@@ -113,7 +110,6 @@ abstract class XotBaseResource extends FilamentResource
     /**
      * @return array<int|string, \Filament\Schemas\Components\Component>
      */
-<<<<<<< HEAD
     public static function getFormSchema(): array
     {
         return static::getFormSchemaOld();
@@ -135,9 +131,6 @@ abstract class XotBaseResource extends FilamentResource
     {
         return [];
     }
-=======
-    abstract public static function getFormSchema(): array;
->>>>>>> 7f6cf6be (.)
 
     final public static function form(Schema $schema): Schema
     {
@@ -160,29 +153,12 @@ abstract class XotBaseResource extends FilamentResource
     }
 
     /**
-<<<<<<< HEAD
-=======
      * Resolve the dedicated table configurator for the current resource.
      *
->>>>>>> 7f6cf6be (.)
      * @return class-string<XotBaseResourceTable>
      */
     public static function getTableClass(): string
     {
-<<<<<<< HEAD
-        $class = static::class.'\Tables\\'.Str::plural(class_basename(static::getModel())).'Table';
-        if (class_exists($class)) {
-            Assert::subclassOf($class, XotBaseResourceTable::class);
-
-            return $class;
-        }
-
-        $class1 = app(GetResourceClassNameByModelClassAction::class)->execute(static::getModel());
-        $class1 = $class1.'\Tables\\'.Str::plural(class_basename(static::getModel())).'Table';
-        Assert::subclassOf($class1, XotBaseResourceTable::class);
-
-        return $class1;
-=======
         $modelTableClass = static::class.'\Tables\\'.Str::plural(class_basename(static::getModel())).'Table';
         if (class_exists($modelTableClass)) {
             Assert::subclassOf($modelTableClass, XotBaseResourceTable::class);
@@ -211,18 +187,26 @@ abstract class XotBaseResource extends FilamentResource
         Assert::subclassOf($fallbackTableClass, XotBaseResourceTable::class);
 
         return $fallbackTableClass;
->>>>>>> 7f6cf6be (.)
+        $class = static::class.'\Tables\\'.Str::plural(class_basename(static::getModel())).'Table';
+        if (class_exists($class)) {
+            Assert::subclassOf($class, XotBaseResourceTable::class);
+
+            return $class;
+        }
+
+        $class1 = app(GetResourceClassNameByModelClassAction::class)->execute(static::getModel());
+        $class1 = $class1.'\Tables\\'.Str::plural(class_basename(static::getModel())).'Table';
+        Assert::subclassOf($class1, XotBaseResourceTable::class);
+
+        return $class1;
     }
 
     public static function table(Table $table): Table
     {
-<<<<<<< HEAD
-        $class = static::getTableClass();
-        $configured = $class::configure($table);
-=======
         $tableClass = static::getTableClass();
         $configured = $tableClass::configure($table);
->>>>>>> 7f6cf6be (.)
+        $class = static::getTableClass();
+        $configured = $class::configure($table);
         Assert::isInstanceOf($configured, Table::class);
 
         return $configured;
