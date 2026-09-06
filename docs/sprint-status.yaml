@@ -130,3 +130,17 @@
 
 **Standing Order Violation #1** ACKNOWLEDGED: Will use BMAD protocol exclusively from now on.
 
+
+---
+
+## ⚠️ BLOCKER: User Module Merge Conflict (2026-09-06)
+
+**Issue**: User modulo (separate repo laraxot/module_user_fila5) has large divergence from laraxot/dev.
+- **Conflict count**: 200+ add/add conflicts (full codebase)
+- **Root cause**: Unknown — likely parallel edits between sessions
+- **Status**: DEFERRED (requires manual conflict resolution)
+- **Action**: Next session: git merge-base analysis + manual conflict triage
+
+**PHPStan Status**: 
+- ✅ 1/5 User errors fixed (SetCurrentTeamCommand type cast)
+- ⏳ 4/5 deferred (HasXotFactory generic specs — architectural issue)
