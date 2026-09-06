@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+---
+title: "Type hinting"
+type: reference
+status: active
+created: 2026-08-27
+updated: 2026-08-27
+note: "Convertito da type_hinting.txt (documento) da convert-docs-txt-to-md.py."
+---
+
+# type_hinting
+
+<!-- Contenuto migrato da _docs/type_hinting.txt -->
+
+=======
+>>>>>>> 7f6cf6be (.)
 https://mlocati.github.io/articles/php-type-hinting.html
 https://howto.webarea.it/php/type-hinting-php-e-controllo-wake-strict-mode_170
 https://wiki.php.net/rfc/scalar_type_hints
@@ -5,7 +21,10 @@ https://wiki.php.net/rfc/return_types
 
 https://packagist.org/packages/maksi/laravel-idea-type-hinting
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 7f6cf6be (.)
 /** @var $post Post */
 
 /** @var $posts Post[] */
@@ -14,10 +33,15 @@ https://packagist.org/packages/maksi/laravel-idea-type-hinting
      * @Route("/types")
      */
 
+<<<<<<< HEAD
+declare(strict_types = 1);
+
+=======
 
 declare(strict_types = 1);
 
 
+>>>>>>> 7f6cf6be (.)
 protected ClassName $classType;
 
  // Types are also legal on static properties
@@ -57,7 +81,10 @@ function iterable_map(iterable $list, callable $operation) : iterable
   }
 }
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 7f6cf6be (.)
 public static function byArray(iterable $data)
     {
         $results = [];
@@ -77,9 +104,12 @@ public static function byArray(iterable $data)
         return $slug;
     }
 
+<<<<<<< HEAD
+=======
 
 
 
+>>>>>>> 7f6cf6be (.)
 https://sodocumentation.net/it/php/topic/504/classi-e-oggetti
 
  private static $instance = null;
@@ -92,9 +122,12 @@ https://sodocumentation.net/it/php/topic/504/classi-e-oggetti
         return self::$instance;
     }
 
+<<<<<<< HEAD
+=======
 
 
 
+>>>>>>> 7f6cf6be (.)
 class ClassName
 {
     public function foo(): self
@@ -106,7 +139,10 @@ class ClassName
 $instance = new ClassName();
 $instance->foo();
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 7f6cf6be (.)
 ublic function foo(): ?stdClass
     {
         return new stdClass();
@@ -117,14 +153,20 @@ ublic function foo(): ?stdClass
         return null;
     }
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 7f6cf6be (.)
 function foo(): object
 {
     return new stdClass();
 }
 
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> 7f6cf6be (.)
 Relazioni
 https://github.com/larastan/larastan/issues/689
 
@@ -137,7 +179,11 @@ public function articles(): HasMany {
     return $this->hasMany(Article::class);
 }
 
+<<<<<<< HEAD
+https://github.com/oucil/Code-Hint-Aggregator
+=======
 
 
 
 https://github.com/oucil/Code-Hint-Aggregator
+>>>>>>> 7f6cf6be (.)

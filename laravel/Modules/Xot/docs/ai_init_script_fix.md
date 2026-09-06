@@ -1,5 +1,24 @@
 # Aggiornamento Importante: ai_init.sh Script
 
+<<<<<<< HEAD
+## Nota di deprecazione
+
+Questo documento riflette il modello legacy "un path reale per ogni tool" ed e'
+da considerare superato.
+
+## Modello corretto
+
+Tutti gli adapter di root devono puntare a un solo backend condiviso:
+
+```text
+.claude   -> bashscripts/ai/.agents
+.cursor   -> bashscripts/ai/.agents
+.codex    -> bashscripts/ai/.agents
+.gemini   -> bashscripts/ai/.agents
+.iflow    -> bashscripts/ai/.agents
+.windsurf -> bashscripts/ai/.agents
+.zai      -> bashscripts/ai/.agents
+=======
 ## Problema Risolto
 Lo script `./bashscripts/ai/ai_init.sh` non creava correttamente tutti i collegamenti simbolici richiesti. Alcune directory esistevano già come cartelle reali invece di collegamenti simbolici.
 
@@ -30,6 +49,7 @@ Lo script `ai_init.sh` ha una logica di sicurezza che non sovrascrive directory 
 Per verificare che tutto funzioni correttamente:
 ```bash
 file ./.ai ./.cursor ./.claude ./.windsurf ./.gemini
+>>>>>>> 7f6cf6be (.)
 ```
 
 Tutti dovrebbero mostrare "symbolic link to bashscripts/ai/..."

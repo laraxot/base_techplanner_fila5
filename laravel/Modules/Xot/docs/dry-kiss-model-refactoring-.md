@@ -10,6 +10,10 @@ Analisi completa dell'architettura dei modelli Eloquent nel monorepo Laravel con
 - **Linee di codice eliminate**: ~200+
 - **Moduli interessati**: 4 (Geo, Cms, healthcare_app, User)
 - **Moduli interessati**: 4 (Geo, Cms, ModuloEsempio, User)
+<<<<<<< HEAD
+- **Moduli interessati**: 4 (Geo, Cms, Quaeris, User)
+=======
+>>>>>>> 7f6cf6be (.)
 - **Impatto**: Riduzione drastica della duplicazione, miglioramento della manutenibilità
 
 ---
@@ -24,9 +28,23 @@ namespace Modules\healthcare_app\Models;
 ### 1. ❌ ModuloEsempio\Models\BaseModel estendeva Model invece di XotBaseModel
 
 **Prima** (VIOLAZIONE CRITICA):
+<<<<<<< HEAD
+```
+
 ```php
 namespace Modules\ModuloEsempio\Models;
 
+### 1. ❌ Quaeris\Models\BaseModel estendeva Model invece di XotBaseModel
+
+**Prima** (VIOLAZIONE CRITICA):
+```php
+namespace Modules\Quaeris\Models;
+
+=======
+```php
+namespace Modules\ModuloEsempio\Models;
+
+>>>>>>> 7f6cf6be (.)
 use Illuminate\Database\Eloquent\Model;
 
 abstract class BaseModel extends Model
@@ -40,6 +58,10 @@ abstract class BaseModel extends Model
     public $incrementing = true;
     public $timestamps = true;
     protected $connection = 'healthcare_app';
+<<<<<<< HEAD
+    protected $connection = 'quaeris';
+=======
+>>>>>>> 7f6cf6be (.)
     protected $casts = ['published_at' => 'datetime', ...];
     protected $primaryKey = 'id';
     protected $hidden = [];
@@ -55,6 +77,10 @@ abstract class BaseModel extends Model
 ```php
 namespace Modules\healthcare_app\Models;
 namespace Modules\ModuloEsempio\Models;
+<<<<<<< HEAD
+namespace Modules\Quaeris\Models;
+=======
+>>>>>>> 7f6cf6be (.)
 
 use Modules\Xot\Models\XotBaseModel;
 
@@ -65,6 +91,10 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
     use InteractsWithMedia;
 
     protected $connection = 'healthcare_app';
+<<<<<<< HEAD
+    protected $connection = 'quaeris';
+=======
+>>>>>>> 7f6cf6be (.)
     protected $with = ['extra'];
 }
 ```
@@ -351,6 +381,10 @@ BaseModel → BaseModelLang → Post
 |--------|--------|-------------|------------|-----------|
 | healthcare_app | BaseModel | 66 | 20 | -70% |
 | ModuloEsempio | BaseModel | 66 | 20 | -70% |
+<<<<<<< HEAD
+| Quaeris | BaseModel | 66 | 20 | -70% |
+=======
+>>>>>>> 7f6cf6be (.)
 | Geo | BasePivot | 59 | 8 | -86% |
 | Geo | BaseMorphPivot | 67 | 8 | -88% |
 | Cms | BasePivot | 60 | 8 | -87% |
@@ -515,4 +549,8 @@ Il refactoring ha applicato con successo i principi DRY e KISS alla gerarchia de
 
 *Refactoring completato: 15 ottobre 2025*
 *Analizzato da: Claude Code*
+<<<<<<< HEAD
 *Validato: ✅ Test passed, PHPStan level 9 passed*
+=======
+*Validato: ✅ Test passed, PHPStan level 9 passed*
+>>>>>>> 7f6cf6be (.)

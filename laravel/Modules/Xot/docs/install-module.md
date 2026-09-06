@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+---
+title: "Install module"
+type: reference
+status: active
+created: 2026-08-27
+updated: 2026-08-27
+note: "Convertito da install_module.txt (documento) da convert-docs-txt-to-md.py."
+---
+
+# Install module
+
+=======
+>>>>>>> 7f6cf6be (.)
  public function test(){
 
         $vendor_name='laraxot/module_formx';
@@ -30,4 +44,8 @@
         $new_dir=$module_json->name;
 
         rename(base_path('Modules/'.$old_dir),base_path('Modules/'.$new_dir));
+<<<<<<< HEAD
     }
+=======
+    }
+>>>>>>> 7f6cf6be (.)

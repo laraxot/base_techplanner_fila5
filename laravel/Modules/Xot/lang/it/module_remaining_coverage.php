@@ -35,5 +35,6 @@ return [
         'grid' => ['label' => 'grid', 'icon' => 'grid', 'tooltip' => 'grid'],
         'link' => ['label' => 'link', 'icon' => 'link', 'tooltip' => 'link'],
         'textColor' => ['label' => 'textColor', 'icon' => 'textColor', 'tooltip' => 'textColor'],
+        'attachAnother' => ['label' => 'attachAnother', 'icon' => 'attachAnother', 'tooltip' => 'attachAnother'],
     ],
 ];

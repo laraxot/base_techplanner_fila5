@@ -1,4 +1,20 @@
 ---
+<<<<<<< HEAD
+title: "Machine learning"
+type: reference
+status: active
+created: 2026-08-27
+updated: 2026-08-27
+note: "Convertito da machine_learning.txt (documento) da convert-docs-txt-to-md.py."
+---
+
+# Machine learning
+
+----------------------------------------
+https://laravel-news.com/google-natural-language-api-for-laravel   !!!!!!!!!!!!!!!!
+
+----------------------------------------
+=======
 title: 'Machine learning'
 module: Xot
 type: reference
@@ -11,6 +27,7 @@ updated: 2026-08-24
 ---
 
 -------------------------------------
+>>>>>>> 7f6cf6be (.)
 rephrasing
 https://cloudmersive.com/nlp-api  !!!!!!!!!!!!!!!
 
@@ -51,6 +68,10 @@ https://nocodeapi.net/
 https://www.refinitiv.com/en/products/intelligent-tagging-text-analytics
 
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 7f6cf6be (.)
 //--------------------------------------------------------------------------------------------------------
 PHP extension wrapping the MITIE data extraction C++ library. For named entity extraction in PHP.
 https://github.com/rjjakes/MITIE-PHP

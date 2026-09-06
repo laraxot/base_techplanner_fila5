@@ -6,6 +6,22 @@ return [
     'navigation' => [
         'name' => 'Salute',
         'plural' => 'Salute',
+<<<<<<< HEAD
+        'group' => ['name' => 'Admin'],
+    ],
+    'pages' => [
+        'health_check_results' => [
+            'buttons' => ['refresh' => 'Refresh'],
+            'heading' => 'Application Health',
+            'navigation' => ['group' => 'Settings', 'label' => 'Application Health'],
+            'notifications' => ['check_results' => 'Check results from'],
+        ],
+    ],
+    'actions' => [
+        'refresh' => ['label' => 'refresh', 'tooltip' => 'refresh', 'icon' => 'refresh'],
+        'logout' => ['tooltip' => 'logout'],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+=======
         'group' => [
             'name' => 'Admin',
         ],
@@ -34,10 +50,16 @@ return [
         'logout' => [
             'tooltip' => 'logout',
         ],
+>>>>>>> 7f6cf6be (.)
     ],
     'label' => 'Health',
     'plural_label' => 'Health (Plurale)',
     'fields' => [
+<<<<<<< HEAD
+        'id' => ['label' => 'Identificativo', 'tooltip' => 'Identificativo univoco del record', 'helper_text' => '', 'description' => ''],
+        'created_at' => ['label' => 'Data Creazione', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
+        'updated_at' => ['label' => 'Ultima Modifica', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
+=======
         'id' => [
             'label' => 'Identificativo',
             'tooltip' => 'Identificativo univoco del record',
@@ -56,5 +78,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+>>>>>>> 7f6cf6be (.)
     ],
 ];
