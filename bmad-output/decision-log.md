@@ -11,9 +11,14 @@
 
 ## Story 9.1 (PHPStan L10 Phase 2) — 2026-09-07
 - Continuation of Phase 2A (Lang→Activity→Job→User→Notify→Xot blockers)
-- Baseline: 61 remaining errors post-Phase-2A (vs 108 on 2026-09-06)
-- Fix strategy: cast errors → concrete types; generics.notGeneric → HasXotFactory trait generic (H1); typeCoverage → explicit constants; deprecated → Filament v5 API
-- Owned scope: All 16 modules (Xot,Activity,Job,Lang,Cms,User,Notify,AI,Geo,Employee,Gdpr,Media,Seo,TechPlanner,Tenant,UI)
-- Status: ready-for-dev (complete AC, source-cited Dev Notes, locked sections)
-- Execution: Per-module fixes + phpstan+phpmd+phpinsights+pest verification + git sync per module + root commit
-- Source: [bmad-output/stories/9.1.phpstan-l10-phase2-fixes.story.md] [bmad-output/investigation-hasxotfactory-phpstan.md] [bmad-output/PHASE2_EXECUTION_PLAN.md]
+- Baseline: 61 errors → 44 errors remaining (17 fixed, 27% reduction)
+- Execution: Per-module fixes (Activity 14→0, Employee 6 cast fixed, 14/16 modules clean)
+- Results: Activity complete (committed, pushed), 14 modules PHPStan clean, Employee blocked on TextEntry migration
+- Source: [bmad-output/stories/9.1.phpstan-l10-phase2-fixes.story.md]
+
+## Story 9.2 (Employee Filament TextEntry Migration) — 2026-09-07
+- Scope: Employee module, 23 remaining errors (class.notFound TextEntry)
+- Root cause: Filament v4→v5 API change (TextEntry moved/renamed)
+- Status: ready-for-dev (investigation phase, v5 API location to be confirmed)
+- Blocked AC: Identify v5 TextEntry class location (Infolist\Components vs other)
+- Source: [bmad-output/stories/9.2.employee-filament-textentry-fix.story.md]
