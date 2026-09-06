@@ -32,11 +32,9 @@ class TeamPresenceWidget extends XotBaseSchemaWidget
     public ?string $selectedDepartment = 'SVILUPPO';
 
     /**
-     * Get the form schema for the widget.
-     *
+     * @param array<string, array<int, array<string, mixed>>> $presenceData
      * @return array<int, Component>
      */
-    #[Override]
     public function getFormSchema(): array
     {
         $presenceData = $this->getPresenceData();

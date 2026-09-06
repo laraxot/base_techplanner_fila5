@@ -8,23 +8,17 @@ use Filament\Forms\Components\Placeholder;
 use Illuminate\Support\HtmlString;
 use Modules\Cms\Models\Attachment;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-<<<<<<< .merge_file_Hkv30N
 use Modules\Xot\Filament\Forms\Components\XotBaseTextEntry;
 use Webmozart\Assert\Assert;
 
 class DownloadAttachmentPlaceHolder extends XotBaseTextEntry
-=======
-use Webmozart\Assert\Assert;
-
-class DownloadAttachmentPlaceHolder extends Placeholder
->>>>>>> .merge_file_B7SUsZ
 {
     protected function setUp(): void
     {
         parent::setUp();
         // `Placeholder::content()` accettava un HtmlString e lo rendeva come HTML;
         // `TextEntry::state()` no, serve `html()` esplicito.
-        $this->label('')->html()->state($this->generateContent(...))->columnSpanFull();
+        $this->label('')->html()->state($this->generateContent())->columnSpanFull();
     }
 
     protected function generateContent(): HtmlString
