@@ -50,6 +50,37 @@
 
 ---
 
+## Epic: Media Modulo Core Dependencies (2026-09-06)
+
+**Status**: READY_FOR_DEV
+
+**Scope**: Add missing core dependencies to Media modulo.
+
+**Deliverables**:
+- ✅ Story 16.5: Install and integrate spatie/laravel-medialibrary (READY_FOR_DEV)
+
+### Story 16.5: spatie/laravel-medialibrary Integration
+
+- **Scope**: Add polymorphic media collections, automatic image conversions (WebP, AVIF, thumbnails), CDN abstraction
+- **Owner**: Media modulo
+- **Status**: READY_FOR_DEV
+- **GitHub Issue**: https://github.com/laraxot/base_techplanner_fila5/issues/56
+- **Story File**: laravel/Modules/Media/docs/stories/16.5.spatie-medialibrary.story.md
+- **Deliverables**:
+  - `composer.json`: add `spatie/laravel-medialibrary:^11.0`
+  - ServiceProvider integration (publish config + migrations)
+  - Filament MediaInput component for forms
+  - `docs/RECOMMENDED_PACKAGES.md` with usage examples
+- **Verification**:
+  - [ ] PHPStan L10: 0 new errors
+  - [ ] Pest: integration tests + coverage passing
+  - [ ] coverage.md updated (2026-09-06)
+  - [ ] Module commit + push (both Media repo + root)
+
+**Blockers**: None
+
+---
+
 ## ⚠️ CRITICAL: Missing BMAD Protocol (2026-09-06)
 
 **Issue**: Work done WITHOUT BMAD stories. Should have used `bmad create story` + tracked in sprint-status.yaml.
