@@ -127,6 +127,31 @@
 
 **Cross-epic dependencies:**
 - Blocked by: Epic 4 — requires git sync to be complete
+- Blocks: Epic 6 (Cms Module Fixes)
+
+---
+
+## Epic 6: Cms Module Fixes
+
+**Goal:** Fix PHPStan errors in Cms module (argument.type, cast.string) found in test suite.
+
+**In scope (cited):**
+- PHPStan error: argument.type in PublicProfileRouteTest.php:22 (strval parameter)
+- PHPStan errors: cast.string + function.alreadyNarrowedType in HomepageContentManagementTest.php (lines 130, 131, 142, 143, 161, 162)
+
+**Architecture touchpoints:** Cms module tests, type safety, PHPStan validation [Source: tech-spec.md#Technical-Approach]
+
+**Out of scope:** Changes to other modules, feature additions
+
+**Stories (ordered):**
+
+| ID | Slug | Intent | Status |
+|------|------|--------|--------|
+| 6.1 | cms-phpstan-argument-type | Fix strval() parameter type issue in PublicProfileRouteTest | backlog |
+| 6.2 | cms-phpstan-cast-string | Fix cast.string errors in HomepageContentManagementTest | backlog |
+
+**Cross-epic dependencies:**
+- Blocked by: Epic 5 — sequential order in delivery
 - Blocks: None
 
 ---
@@ -135,9 +160,9 @@
 
 No story points, velocity, or burndown. Track by COUNT only:
 
-- Total stories: 9
+- Total stories: 11 (Activity 1, Employee 4, Validation 1, Git 2, Docs 1, Cms 2)
 - Done: 0
-- Remaining: 9
+- Remaining: 11
 - Completion rate: 0%
 
 ## Notes
