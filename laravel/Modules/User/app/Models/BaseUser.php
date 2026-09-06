@@ -142,6 +142,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     }
     use HasUuids;
 
+    /** @use HasXotFactory<UserFactory> */
     use HasXotFactory;
 
     use InteractsWithMedia;

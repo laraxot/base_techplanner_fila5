@@ -20,6 +20,10 @@ php -d memory_limit=3G -d xdebug.mode=coverage \
 ```
 
 Eseguita il 27 agosto 2026.
+## Status
+
+**2026-09-06**: philosophy.md created. PHPStan analyzed (OK). Pest suite (TBD). Coverage target: +5% per module.
+
 
 | Metrica | Valore |
 |---|---:|

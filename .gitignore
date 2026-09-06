@@ -131,3 +131,4 @@ bmad/upstream/claude-code-bmad-skills/
 bmad/upstream/claude-code-bmad-skills
 .token-optimizer
 .serena
+laravel/config/local/techplanner/database/content/information_schema_tables.json

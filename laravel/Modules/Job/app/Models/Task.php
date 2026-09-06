@@ -97,6 +97,7 @@ class Task extends BaseModel
     // use HasFrequencies;
     use FrontendSortable;
 
+    /** @use HasXotFactory<\Modules\Job\Database\Factories\TaskFactory> */
     use HasXotFactory;
 
     use Notifiable;

@@ -20,6 +20,10 @@ endor/laravel/framework/src/Illuminate/Container/Container.php:1415
 
       [2m+8 vendor frames [22m
   9   Modules/Xot/app/Filament/Widgets/XotBaseWidget.php:233
+## Status
+
+**2026-09-06**: philosophy.md created. PHPStan analyzed (OK). Pest suite (TBD). Coverage target: +5% per module.
+
   10  Modules/Xot/app/Filament/Widgets/XotBaseWidget.php:69
 
   ──────────────────────────────────────────────────────────────────────────────────────  

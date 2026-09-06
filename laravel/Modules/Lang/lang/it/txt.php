@@ -119,6 +119,9 @@ return [
         'staticf' => ['label' => 'staticf', 'placeholder' => 'staticf', 'helper_text' => 'staticf', 'description' => 'staticf'],
         'country' => ['label' => 'country', 'placeholder' => 'country', 'helper_text' => 'country', 'description' => 'country'],
         'content' => ['label' => 'content', 'placeholder' => 'content', 'helper_text' => 'content', 'description' => 'content'],
+        'allegato' => ['label' => 'allegato'],
+        'fattura' => ['label' => 'fattura'],
+        'video' => ['label' => 'video'],
     ],
     'actions' => [
         'authenticate' => ['label' => 'Autentica', 'tooltip' => 'Effettua il login nel sistema', 'icon' => 'ui-login', 'color' => 'primary'],
@@ -151,6 +154,7 @@ return [
         'locale' => ['label' => 'locale', 'icon' => 'locale', 'tooltip' => 'locale'],
         'locale2' => ['label' => 'locale2', 'icon' => 'locale2', 'tooltip' => 'locale2'],
         'profile' => ['label' => 'profile', 'icon' => 'profile', 'tooltip' => 'profile'],
+        'convert' => ['label' => 'convert', 'icon' => 'convert', 'tooltip' => 'convert'],
     ],
     'sections' => [
         'address' => ['label' => 'address', 'heading' => 'address'],

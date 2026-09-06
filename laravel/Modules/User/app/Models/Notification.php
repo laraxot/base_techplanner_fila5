@@ -31,6 +31,7 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  */
 class Notification extends BaseNotification
 {
+    /** @use HasXotFactory<\Modules\User\Database\Factories\NotificationFactory> */
     use HasXotFactory;
 
     protected $connection = 'user';

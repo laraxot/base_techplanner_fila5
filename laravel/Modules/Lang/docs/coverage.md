@@ -20,6 +20,10 @@ related:
 
 ## Output
 
+## Status
+
+**2026-09-06**: philosophy.md created. PHPStan analyzed (OK). Pest suite (TBD). Coverage target: +5% per module.
+
 ```text
 ──────────────────────────────────────────────────  
    FAILED  Modules\Lang\tests\Feature\LangBusinessLogicTest > `Lang Business Lo…  Error   
