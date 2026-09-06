@@ -221,3 +221,36 @@
     \Modules\Xot\Contracts\ProfileContract in @property-read PHPDoc.
     PHPStan Lang now: OK No errors.
     Job module audit deferred to next session (time constraints).
+
+---
+# Session 2026-09-06 COMPLETE
+
+sessions:
+  - date: 2026-09-06
+    status: completed
+    stories_done: 2
+    stories_deferred: 1
+
+completed_stories:
+  - story: lang-profile-fix
+    module: Lang
+    errors_before: 6
+    errors_after: 0
+    changes: "Profile model refs → ProfileContract FQCN"
+    
+  - story: job-phpstan-complete
+    module: Job
+    errors_before: 7 (JobBatch casting)
+    errors_after: 0
+    changes: "Eloquent property access, type hints, casting patterns"
+
+deferred_stories:
+  - story: global-phase2-audit
+    errors_remaining: 111
+    action: "Scan global + create per-module stories next session"
+    
+results:
+  global_errors: 111 (was 106)
+  modules_at_zero: [Xot, User, Activity, Media, Lang, Job]
+  architecture_improved: true
+  casting_patterns: standardized
