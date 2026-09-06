@@ -50,6 +50,68 @@
 
 ---
 
+## Epic: PHPStan L10 Stabilization & Module Closure (2026-09-06 → 2026-09-07)
+
+**Status**: IN PROGRESS (Phase 2A-C)
+
+**Scope**: Fix PHPStan errors (108 found), resolve module blockers, upgrade dependencies, full module closure (PHPMD + Pest + docs).
+
+**Phase 1 (2026-09-06)** ✅ COMPLETED:
+- ✓ PHPStan L10 zero errors achieved (all 16 modules)
+- ✓ Xot fixed (3 generic trait annotations)
+- ✓ Media fixed (2 deprecated test methods)
+- ✓ XotBaseResourceTable pattern documented (philosophy.md)
+- ✓ Orchestration Round 1: 8 blockers identified (3 clean, 5 yellow, 8 red)
+
+**Phase 2A (2026-09-07)** 🔄 IN PROGRESS:
+- Agent a83f3185e9952ca6a running (Lang → Activity → Job → User/Notify → Xot)
+- Story 7.0: Fix 6 primary blockers
+- Expected: 108 errors → ~50-60 remaining (after blockers resolved)
+
+**Phase 2B (2026-09-07)** ⏳ READY:
+- Story 7.1: Upgrade composer.json wildcards
+- Task: `"nwidart/laravel-modules": "*"` → explicit GitHub version (both projects)
+
+**Phase 2C (2026-09-07)** ⏳ READY:
+- Story 7.2: Orchestration Round 2 (all 16 modules)
+- Parallel: PHPMD baseline + Pest coverage + docs review + git sync
+- Expected: All modules green + pushed
+
+**Blockers Identified** (Phase 2A targets):
+1. **Lang**: /lang/it/txt.php:115 syntax error (blocks Media)
+2. **Activity**: uncommitted changes + divergence (blocks AI, Tenant)
+3. **Job**: Task.php annotation conflict
+4. **User**: unrelated histories
+5. **Notify**: unrelated histories (documented fix available)
+6. **Xot**: 616 test failures (93.5% fail rate post-merge)
+
+**Feedback Rules Added**:
+- always-latest-version (no downgrade, check GitHub)
+- wildcard-composer-versions (replace "*" with explicit versions)
+- larastan-compatibility-fix (3.11.0 bug workaround)
+- xotbase-resource-table-pattern (delegation pattern documented)
+
+**Execution Plan**: `/bmad-output/PHASE2_EXECUTION_PLAN.md`
+
+**Timeline (2026-09-07)**:
+- Phase 2A: check completion (background agent)
+- Phase 2B: 30 min
+- Phase 2C: 2-3 hours (parallel)
+- Total: ~4 hours
+
+**Standing Order Compliance**:
+1. ✓ BMAD: Stories 7.0, 7.1, 7.2 created
+2. ✓ Second brain: 5 feedback rules + session summary documented
+3. ✓ Forward-only git: fetch/merge only, no checkout/revert/force-push
+4. ✓ Module closure: Standing Order #5 protocol defined (per-module PHPMD+Pest+docs+git)
+5. ⏳ Docs improvement: coverage.md + philosophy.md updates queued for Phase 2C
+
+**Next Action**: Continue 2026-09-07 — execute Phase 2B + 2C
+
+*Sprint initiated 2026-09-06, 4-5 hours estimated completion 2026-09-07.*
+
+---
+
 ## Epic: Media Modulo Core Dependencies (2026-09-06)
 
 **Status**: COMPLETED
