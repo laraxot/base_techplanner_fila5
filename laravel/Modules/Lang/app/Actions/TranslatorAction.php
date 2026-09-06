@@ -8,6 +8,8 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Actions;
 
+use Spatie\QueueableAction\ActionJob;
+
 use Illuminate\Events\Dispatcher;
 use Illuminate\Translation\Translator as LaravelTranslator;
 use Modules\Lang\Models\Translation;
@@ -17,13 +19,11 @@ class TranslatorAction extends LaravelTranslator
 {
     use QueueableAction;
 
-    /** @var Dispatcher */
-    protected $events;
-
     /**
      * Get the translation for the given key.
      *
-     * @param  array<string, mixed>  $replace
+     * @param array<string, mixed> $replace
+     *
      * @return string|array<array-key, mixed>
      */
     public function get(mixed $key, array $replace = [], mixed $locale = null, mixed $fallback = true): string|array
@@ -45,18 +45,22 @@ class TranslatorAction extends LaravelTranslator
         return $result;
     }
 
-    public function execute(): void {}
+    public function execute(): void
+    {
+    }
 
     protected function notifyMissingKey(string $key): void
     {
         $lang = app()->getLocale();
         [$namespace, $group, $item] = $this->parseKey($key);
+
         $data = [
             'lang' => $lang,
             'namespace' => $namespace,
             'group' => $group,
             'item' => $item,
         ];
+
         Translation::firstOrCreate($data);
     }
 }

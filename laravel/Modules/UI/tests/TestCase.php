@@ -8,7 +8,6 @@ use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\DB;
 use Mockery\Expectation;
-use Mockery\LegacyMockInterface;
 use Mockery\MockInterface;
 use Modules\UI\Providers\UIServiceProvider;
 use Modules\User\Models\User;
@@ -35,14 +34,24 @@ abstract class TestCase extends XotBaseTestCase
      * namespace, e function_exists senza namespace cerca quella globale. Il secondo
      * file caricato faceva fallire l'intera suite con un "Cannot redeclare".
      *
-     * Con un singolo metodo shouldReceive() restituisce una Expectation
-     * (il PHPDoc Mockery lo garantisce: `$methodNames is list{} ? HigherOrderMessage : Expectation`),
-     * che espone with()/andReturnUsing() ecc. — ExpectationInterface no.
+     * Mockery restituisce una CompositeExpectation anche per un singolo nome, ma
+     * l'ExpectationDirector conserva l'Expectation concreta che espone l'intera
+     * fluent API (`with`, `andReturnUsing`, ...).
      */
-    public static function expectMethod(LegacyMockInterface|MockInterface $mock, string $method): Expectation
+    public static function expectMethod(MockInterface $mock, string $method): Expectation
     {
-        /** @var Expectation $expectation */
-        $expectation = $mock->shouldReceive($method);
+        $mock->shouldReceive($method);
+
+        $director = $mock->mockery_getExpectationsFor($method);
+        if ($director === null) {
+            throw new \LogicException(sprintf('No expectation director registered for [%s].', $method));
+        }
+
+        $expectations = $director->getExpectations();
+        $expectation = end($expectations);
+        if (! $expectation instanceof Expectation) {
+            throw new \LogicException(sprintf('No concrete expectation registered for [%s].', $method));
+        }
 
         return $expectation;
     }

@@ -1,0 +1,3484 @@
+
+  [39;41;1m FAIL [39;49;22m[39m Modules\Tenant\tests\Feature\TenantBusinessLogicTest[39m
+  [31;1m⨯[39;22m[90m [39m[90mit can create and manage tenants[39m
+  [31;1m⨯[39;22m[90m [39m[90mit can manage tenant domains[39m
+  [31;1m⨯[39;22m[90m [39m[90mit can manage tenant settings[39m
+  [31;1m⨯[39;22m[90m [39m[90mit can manage tenant subscriptions[39m
+  [31;1m⨯[39;22m[90m [39m[90mit can validate tenant slug uniqueness[39m
+  [31;1m⨯[39;22m[90m [39m[90mit can manage tenant status workflow[39m
+  [31;1m⨯[39;22m[90m [39m[90mit can handle tenant domain verification[39m
+  [31;1m⨯[39;22m[90m [39m[90mit can manage tenant storage limits[39m
+  [31;1m⨯[39;22m[90m [39m[90mit can manage tenant user limits[39m
+  [31;1m⨯[39;22m[90m [39m[90mit can handle tenant subscription expiration[39m
+  [31;1m⨯[39;22m[90m [39m[90mit can manage tenant settings hierarchy[39m
+  [31;1m⨯[39;22m[90m [39m[90mit can validate tenant domain formats[39m
+  [31;1m⨯[39;22m[90m [39m[90mit can track tenant activity[39m
+  [31;1m⨯[39;22m[90m [39m[90mit can manage tenant billing cycles[39m
+
+  [39;41;1m FAIL [39;49;22m[39m Modules\Tenant\tests\Feature\TenantConfigIsolationTest[39m
+  [31;1m⨯[39;22m[90m [39m[90mit isolates tenant file paths per tenant context[39m
+  [31;1m⨯[39;22m[90m [39m[90mit rejects path traversal in tenant filename[39m
+  [31;1m⨯[39;22m[90m [39m[90mit rejects malicious server name with path traversal[39m
+
+  [39;41;1m FAIL [39;49;22m[39m Modules\Tenant\tests\Integration\SushiToJsonIntegrationTest[39m
+  [31;1m⨯[39;22m[90m [39m[90mcreates json file with tenant isolation[39m
+  [31;1m⨯[39;22m[90m [39m[90mloads data with tenant isolation[39m
+  [31;1m⨯[39;22m[90m [39m[90mhandles complex data structures[39m
+  [31;1m⨯[39;22m[90m [39m[90mhandles large datasets efficiently[39m
+  [31;1m⨯[39;22m[90m [39m[90mworks with different tenant configurations[39m
+
+  [39;41;1m FAIL [39;49;22m[39m Modules\Tenant\tests\Integration\Traits\SushiToJsonIntegrationTest[39m
+  [31;1m⨯[39;22m[90m [39m[90mit creates json file with tenant isolation[39m
+  [31;1m⨯[39;22m[90m [39m[90mit loads data with tenant isolation[39m
+  [31;1m⨯[39;22m[90m [39m[90mit handles large datasets efficiently[39m
+  [31;1m⨯[39;22m[90m [39m[90mit works with different tenant configurations[39m
+
+  [39;41;1m FAIL [39;49;22m[39m Modules\Tenant\tests\Integration\Traits\SushiToJsonTraitIntegrationTest[39m
+  [31;1m⨯[39;22m[90m [39m[37mSushi To Json Trait Integration[39m[90m → creates json file with tenant isolation[39m
+  [31;1m⨯[39;22m[90m [39m[37mSushi To Json Trait Integration[39m[90m → loads data with tenant isolation[39m
+  [31;1m⨯[39;22m[90m [39m[37mSushi To Json Trait Integration[39m[90m → handles complex data structures[39m
+  [31;1m⨯[39;22m[90m [39m[37mSushi To Json Trait Integration[39m[90m → manages file permissions correctly[39m
+  [31;1m⨯[39;22m[90m [39m[37mSushi To Json Trait Integration[39m[90m → handles concurrent access safely[39m
+  [31;1m⨯[39;22m[90m [39m[37mSushi To Json Trait Integration[39m[90m → handles large datasets efficiently[39m
+  [31;1m⨯[39;22m[90m [39m[37mSushi To Json Trait Integration[39m[90m → handles unicode and special characters[39m
+  [31;1m⨯[39;22m[90m [39m[37mSushi To Json Trait Integration[39m[90m → handles empty and null values[39m
+  [31;1m⨯[39;22m[90m [39m[37mSushi To Json Trait Integration[39m[90m → works with different tenant configurations[39m
+
+  [39;41;1m FAIL [39;49;22m[39m Modules\Tenant\tests\Performance\SushiToJsonPerformanceTest[39m
+  [31;1m⨯[39;22m[90m [39m[90mit handles small datasets efficiently[39m
+  [31;1m⨯[39;22m[90m [39m[90mit handles medium datasets efficiently[39m
+  [31;1m⨯[39;22m[90m [39m[90mit handles large datasets efficiently[39m
+  [31;1m⨯[39;22m[90m [39m[90mit manages memory usage efficiently[39m
+  [31;1m⨯[39;22m[90m [39m[90mit handles different file sizes efficiently[39m
+  [31;1m⨯[39;22m[90m [39m[90mit handles concurrent access efficiently[39m
+  [31;1m⨯[39;22m[90m [39m[90mit parses json efficiently[39m
+  [31;1m⨯[39;22m[90m [39m[90mit normalizes data efficiently[39m
+  [31;1m⨯[39;22m[90m [39m[90mit handles errors efficiently[39m
+  [31;1m⨯[39;22m[90m [39m[90mit performs file operations efficiently[39m
+  [31;1m⨯[39;22m[90m [39m[90mit scales efficiently with data size[39m
+  [31;1m⨯[39;22m[90m [39m[90mit meets performance benchmarks[39m
+  [31;1m⨯[39;22m[90m [39m[90mit does not create memory leaks[39m
+
+  [30;42;1m PASS [39;49;22m[39m Modules\Tenant\tests\Unit\Actions\Config\FilterConfigStringKeysActionTest[39m
+  [32;1m✓[39;22m[90m [39m[90mit keeps only string keys[39m[90m                                           [39m [90m0.01s[39m  
+  [32;1m✓[39;22m[90m [39m[90mit returns an empty array for empty input[39m
+
+  [39;41;1m FAIL [39;49;22m[39m Modules\Tenant\tests\Unit\Actions\Config\GetTenantConfigArrayActionTest[39m
+  [31;1m⨯[39;22m[90m [39m[90mit returns empty array for non-existent config[39m
+  [31;1m⨯[39;22m[90m [39m[90mit returns array with string keys[39m
+
+  [39;41;1m FAIL [39;49;22m[39m Modules\Tenant\tests\Unit\Actions\Config\GetTenantConfigNamesActionTest[39m
+  [31;1m⨯[39;22m[90m [39m[90mit gets tenant config names[39m
+
+  [39;41;1m FAIL [39;49;22m[39m Modules\Tenant\tests\Unit\Actions\Config\GetTenantConfigPathActionTest[39m
+  [31;1m⨯[39;22m[90m [39m[90mit gets tenant config path[39m
+  [31;1m⨯[39;22m[90m [39m[90mit gets tenant config path with forward slashes replaced[39m
+
+  [39;41;1m FAIL [39;49;22m[39m Modules\Tenant\tests\Unit\Actions\Config\GetTenantFilePathActionTest[39m
+  [31;1m⨯[39;22m[90m [39m[90mit gets tenant file path[39m
+
+  [39;41;1m FAIL [39;49;22m[39m Modules\Tenant\tests\Unit\Actions\Config\ResolveTenantConfigValueActionTest[39m
+  [31;1m⨯[39;22m[90m [39m[90mit resolves tenant config value by merging with tenant overrides[39m
+  [31;1m⨯[39;22m[90m [39m[90mit throws exception for empty config key[39m
+  [31;1m⨯[39;22m[90m [39m[90mit returns default value if config not found[39m
+
+  [39;41;1m FAIL [39;49;22m[39m Modules\Tenant\tests\Unit\Actions\Config\SaveTenantConfigActionTest[39m
+  [31;1m⨯[39;22m[90m [39m[90mit saves tenant config by merging with existing data[39m
+  [31;1m⨯[39;22m[90m [39m[90mit saves tenant config when file does not exist[39m
+
+  [39;41;1m FAIL [39;49;22m[39m Modules\Tenant\tests\Unit\Actions\Domains\GetDomainsArrayActionTest[39m
+  [31;1m⨯[39;22m[90m [39m[90mit gets domains array by scanning config directory[39m
+  [31;1m⨯[39;22m[90m [39m[90mit collapses nested directory structure into dot notation[39m
+
+  [39;41;1m FAIL [39;49;22m[39m Modules\Tenant\tests\Unit\Actions\GetTenantNameActionTest[39m
+  [31;1m⨯[39;22m[90m [39m[90mget tenant name action returns correct tenant name from server name[39m
+  [31;1m⨯[39;22m[90m [39m[90mget tenant name action handles www prefix correctly[39m
+  [31;1m⨯[39;22m[90m [39m[90mget tenant name action falls back to default when server name is localhost[39m
+  [31;1m⨯[39;22m[90m [39m[90mget tenant name action uses app url config when server name not set[39m
+  [31;1m⨯[39;22m[90m [39m[90mget tenant name action handles empty app url config[39m
+
+  [39;41;1m FAIL [39;49;22m[39m Modules\Tenant\tests\Unit\Actions\Markdown\GetLocalizedMarkdownPathActionTest[39m
+  [31;1m⨯[39;22m[90m [39m[90mit gets localized markdown path if it exists[39m
+  [31;1m⨯[39;22m[90m [39m[90mit gets fallback markdown path if localized does not exist[39m
+  [31;1m⨯[39;22m[90m [39m[90mit returns hash if no path exists[39m
+
+  [39;41;1m FAIL [39;49;22m[39m Modules\Tenant\tests\Unit\Actions\Models\ResolveTenantModelClassActionTest[39m
+  [31;1m⨯[39;22m[90m [39m[90mit resolves tenant model class from config[39m
+  [31;1m⨯[39;22m[90m [39m[90mit resolves tenant model class by scanning modules if not in config[39m
+  [31;1m⨯[39;22m[90m [39m[90mit throws exception for unknown model[39m
+
+  [39;41;1m FAIL [39;49;22m[39m Modules\Tenant\tests\Unit\Actions\TenantAdditionalActionsTest[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant Additional Actions Coverage[39m[90m → GetTenantModulesAction is accessible[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant Additional Actions Coverage[39m[90m → TranslateTenantKeyAction is accessible[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant Additional Actions Coverage[39m[90m → ResolveTenantModelInstanceAction is accessible[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant Additional Actions Coverage[39m[90m → GetTenantModulesAction has execute method[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant Additional Actions Coverage[39m[90m → TranslateTenantKeyAction has execute method[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant Additional Actions Coverage[39m[90m → ResolveTenantModelInstanceAction has execute method[39m
+
+  [39;41;1m FAIL [39;49;22m[39m Modules\Tenant\tests\Unit\ApplicationPublicPathCoverageTest[39m
+  [31;1m⨯[39;22m[90m [39m[90mit returns real path when requested public path exists[39m
+  [31;1m⨯[39;22m[90m [39m[90mit returns base real path plus requested segment when segment does not exist[39m
+  [31;1m⨯[39;22m[90m [39m[90mit returns plain fallback path when public_html base path does not exist[39m
+
+  [39;41;1m FAIL [39;49;22m[39m Modules\Tenant\tests\Unit\DomainModelTest[39m
+  [31;1m⨯[39;22m[90m [39m[37mDomain Model[39m[90m → _domain_model_can_be_instantiated[39m
+  [31;1m⨯[39;22m[90m [39m[37mDomain Model[39m[90m → _get_rows_method_works_correctly[39m
+
+  [39;41;1m FAIL [39;49;22m[39m Modules\Tenant\tests\Unit\DomainTest[39m
+  [31;1m⨯[39;22m[90m [39m[90mdomain model can be instantiated[39m
+  [31;1m⨯[39;22m[90m [39m[90mget rows method works correctly[39m
+
+  [39;41;1m FAIL [39;49;22m[39m Modules\Tenant\tests\Unit\Models\BaseModelTest[39m
+  [31;1m⨯[39;22m[90m [39m[90mbase model extends eloquent model[39m
+  [31;1m⨯[39;22m[90m [39m[90mbase model has correct table name[39m
+  [31;1m⨯[39;22m[90m [39m[90mbase model can be instantiated[39m
+  [31;1m⨯[39;22m[90m [39m[90mbase model has timestamps enabled[39m
+
+  [39;41;1m FAIL [39;49;22m[39m Modules\Tenant\tests\Unit\SushiToJsonTraitPestTest[39m
+  [31;1m⨯[39;22m[90m [39m[90mit uses isolated json path in testing environment[39m
+  [31;1m⨯[39;22m[90m [39m[90mit returns empty rows when json file is missing[39m
+  [31;1m⨯[39;22m[90m [39m[90mit loads rows from valid json file[39m
+  [31;1m⨯[39;22m[90m [39m[90mit throws when json file is not an array[39m
+
+  [39;41;1m FAIL [39;49;22m[39m Modules\Tenant\tests\Unit\SushiToJsonTraitTest[39m
+  [31;1m⨯[39;22m[90m [39m[37mSushiToJson Trait[39m[90m → it returns correct json file path[39m
+  [31;1m⨯[39;22m[90m [39m[37mSushiToJson Trait[39m[90m → it loads existing data from json file[39m
+  [31;1m⨯[39;22m[90m [39m[37mSushiToJson Trait[39m[90m → it returns empty array when file not exists[39m
+  [31;1m⨯[39;22m[90m [39m[37mSushiToJson Trait[39m[90m → it throws exception with malformed json[39m
+  [31;1m⨯[39;22m[90m [39m[37mSushiToJson Trait[39m[90m → it throws exception with non array data[39m
+  [31;1m⨯[39;22m[90m [39m[37mSushiToJson Trait[39m[90m → it normalizes nested arrays to json strings[39m
+  [31;1m⨯[39;22m[90m [39m[37mSushiToJson Trait[39m[90m → it saves data successfully to json file[39m
+  [31;1m⨯[39;22m[90m [39m[37mSushiToJson Trait[39m[90m → it creates directory if not exists[39m
+  [31;1m⨯[39;22m[90m [39m[37mSushiToJson Trait[39m[90m → it handles save errors gracefully[39m
+  [31;1m⨯[39;22m[90m [39m[37mSushiToJson Trait[39m[90m → it handles creating event correctly[39m
+  [31;1m⨯[39;22m[90m [39m[37mSushiToJson Trait[39m[90m → it integrates with tenant service correctly[39m
+  [31;1m⨯[39;22m[90m [39m[37mSushiToJson Trait[39m[90m → it handles large datasets efficiently[39m
+  [31;1m⨯[39;22m[90m [39m[37mSushiToJson Trait[39m[90m → it maintains data integrity during operations[39m
+
+  [39;41;1m FAIL [39;49;22m[39m Modules\Tenant\tests\Unit\TenantCoverageBoostTest[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant coverage boost — Config actions[39m[90m → FilterConfigStringKeysAction keeps only string keys[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant coverage boost — Config actions[39m[90m → MergeRecursiveStringKeyConfigAction merges nested configs[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant coverage boost — Domain sushi[39m[90m → Domain getRows loads from GetDomainsArrayAction[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant coverage boost — Models and resolvers[39m[90m → Tenant isActive reflects is_active attribute[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant coverage boost — Models and resolvers[39m[90m → StandardConfigResolver resolves existing config keys[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant coverage boost — TenantService facade[39m[90m → TenantService delegates to actions[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant coverage boost — Filament and policy surface[39m[90m → domain resource schemas and tables are executable[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant coverage boost — Filament and policy surface[39m[90m → tenant policies and config helpers enforce business rules[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant coverage boost — Filament and policy surface[39m[90m → config resolver registry prefers matching resolvers and database config casts[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant coverage boost — Sushi file traits[39m[90m → sushi to jsons collects rows from tenant json files[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant coverage boost — Sushi file traits[39m[90m → sushi to csv reads rows and header from tenant csv file[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant coverage boost — Sushi file traits[39m[90m → sushi to php array normalizes tenant config rows[39m
+
+  [39;41;1m FAIL [39;49;22m[39m Modules\Tenant\tests\Unit\TenantGapsCoverageTest[39m
+  [31;1m⨯[39;22m[90m [39m[90mGetTenantNameAction hits shortened parts when nested host config exists[39m
+  [31;1m⨯[39;22m[90m [39m[90mTranslateTenantKeyAction returns key when lang file missing[39m
+  [31;1m⨯[39;22m[90m [39m[90mTranslateTenantKeyAction returns resolved string translation[39m
+  [31;1m⨯[39;22m[90m [39m[90mGetTenantModulesAction wraps invalid json decode errors[39m
+  [31;1m⨯[39;22m[90m [39m[90mMorphMapConfigResolver throws on missing module segment and invalid result type[39m
+  [31;1m⨯[39;22m[90m [39m[90mDatabaseConfigResolver covers empty original config and skip branches[39m
+  [31;1m⨯[39;22m[90m [39m[90mStandardConfigResolver database path when resolver returns non-array[39m
+  [31;1m⨯[39;22m[90m [39m[90mSushiToJson private helpers cover early returns and audit nulls[39m
+  [31;1m⨯[39;22m[90m [39m[90mSushiToCsv private helpers cover scalar id and header skip[39m
+  [31;1m⨯[39;22m[90m [39m[90mSushiToJsons covers empty schema map and glob false path via reflection[39m
+  [31;1m⨯[39;22m[90m [39m[90mGetTenantNameAction covers null parts and default-host miss/hit[39m
+  [31;1m⨯[39;22m[90m [39m[90mSushi audit fields with named auth model and csv scalar id[39m
+  [31;1m⨯[39;22m[90m [39m[90mTenantServiceProvider load user connection and filter model classes[39m
+  [31;1m⨯[39;22m[90m [39m[90mfinal remaining statement branches[39m
+
+  [39;41;1m FAIL [39;49;22m[39m Modules\Tenant\tests\Unit\TenantModelsTest[39m
+  [31;1m⨯[39;22m[90m [39m[90mit can create a tenant[39m
+  [31;1m⨯[39;22m[90m [39m[90mit can create a tenant with settings[39m
+  [31;1m⨯[39;22m[90m [39m[90mit exposes users relationship[39m
+  [31;1m⨯[39;22m[90m [39m[90mit can create multiple users for a tenant[39m
+  [31;1m⨯[39;22m[90m [39m[90mit reports active state via isActive[39m
+
+  [39;41;1m FAIL [39;49;22m[39m Modules\Tenant\tests\Unit\TenantStatementCoverageTest[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant statement coverage — resolvers[39m[90m → DatabaseConfigResolver covers null extra, defaults and module connections[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant statement coverage — resolvers[39m[90m → MorphMapConfigResolver covers admin and tenant morph paths[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant statement coverage — resolvers[39m[90m → StandardConfigResolver covers database merge, missing key and invalid types[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant statement coverage — resolvers[39m[90m → ConfigResolverRegistry falls back when no resolver matches[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant statement coverage — actions and service[39m[90m → SaveTenantConfigAction merges recursively on real filesystem[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant statement coverage — actions and service[39m[90m → GetTenantFilePathAction rejects traversal and uses tenant path[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant statement coverage — actions and service[39m[90m → GetTenantNameAction resolves shortened and default host paths[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant statement coverage — actions and service[39m[90m → TranslateTenantKeyAction returns key when missing or non-string[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant statement coverage — actions and service[39m[90m → GetTenantModulesAction handles invalid json payload and missing modules[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant statement coverage — actions and service[39m[90m → GetTenantConfigArrayAction coerces non-array require to empty[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant statement coverage — actions and service[39m[90m → ResolveTenantConfigValueAction rejects invalid value types[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant statement coverage — actions and service[39m[90m → ResolveTenantModelInstanceAction and TenantService::model delegate[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant statement coverage — actions and service[39m[90m → artisan tenant:test command prints tenant name[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant statement coverage — models and policies[39m[90m → Tenant mutators relations and url without database writes[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant statement coverage — models and policies[39m[90m → TenantDomain TenantSetting TenantSubscription relation helpers[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant statement coverage — models and policies[39m[90m → DomainPolicy covers all abilities and TenantBasePolicy null branch[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant statement coverage — models and policies[39m[90m → DomainResource getFormSchema is executable[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant statement coverage — models and policies[39m[90m → TestSushiModel non-testing path builds tenant json file[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant statement coverage — TenantServiceProvider private paths[39m[90m → provider helpers for morph map migrate and reconnect[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant statement coverage — SushiToJson named model[39m[90m → json trait read write audit and private helpers[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant statement coverage — SushiToCsv named model[39m[90m → csv trait read write create update delete helpers[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant statement coverage — SushiToJsons named model[39m[90m → jsons trait collect schema create update delete[39m
+  [31;1m⨯[39;22m[90m [39m[37mTenant statement coverage — SushiToPhpArray named model[39m[90m → php array trait normalizes rows and boots listeners[39m
+
+  [39;41;1m FAIL [39;49;22m[39m Modules\Tenant\tests\Unit\Traits\SushiToJsonTest[39m
+  [31;1m⨯[39;22m[90m [39m[90mit returns correct json file path[39m
+  [31;1m⨯[39;22m[90m [39m[90mit returns empty array when json file not exists[39m
+  [31;1m⨯[39;22m[90m [39m[90mit throws exception when json data is invalid[39m
+  [31;1m⨯[39;22m[90m [39m[90mit loads valid json data correctly[39m
+  [31;1m⨯[39;22m[90m [39m[90mit normalizes nested arrays in json data[39m
+  [31;1m⨯[39;22m[90m [39m[90mit saves data to json file successfully[39m
+  [31;1m⨯[39;22m[90m [39m[90mit creates directory if not exists when saving[39m
+  [31;1m⨯[39;22m[90m [39m[90mit returns false when saving fails[39m
+  [31;1m⨯[39;22m[90m [39m[90mit loads existing data correctly[39m
+  [31;1m⨯[39;22m[90m [39m[90mit returns empty array when no existing data[39m
+  [31;1m⨯[39;22m[90m [39m[90mit works with sushi package integration[39m
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Feature\TenantBusinessLogicTest[22m…  [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Feature\TenantBusinessLogicTest[22m…  [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Feature\TenantBusinessLogicTest[22m…  [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Feature\TenantBusinessLogicTest[22m…  [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Feature\TenantBusinessLogicTest[22m…  [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Feature\TenantBusinessLogicTest[22m…  [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Feature\TenantBusinessLogicTest[22m…  [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Feature\TenantBusinessLogicTest[22m…  [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Feature\TenantBusinessLogicTest[22m…  [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Feature\TenantBusinessLogicTest[22m…  [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Feature\TenantBusinessLogicTest[22m…  [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Feature\TenantBusinessLogicTest[22m…  [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Feature\TenantBusinessLogicTest[22m…  [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Feature\TenantBusinessLogicTest[22m…  [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Feature\TenantConfigIsolationTes[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Feature\TenantConfigIsolationTes[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Feature\TenantConfigIsolationTes[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Integration\SushiToJsonIntegrati[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Integration\SushiToJsonIntegrati[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Integration\SushiToJsonIntegrati[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Integration\SushiToJsonIntegrati[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Integration\SushiToJsonIntegrati[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Integration\Traits\SushiToJsonIn[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Integration\Traits\SushiToJsonIn[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Integration\Traits\SushiToJsonIn[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Integration\Traits\SushiToJsonIn[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Integration\Traits\SushiToJsonTr[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Integration\Traits\SushiToJsonTr[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Integration\Traits\SushiToJsonTr[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Integration\Traits\SushiToJsonTr[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Integration\Traits\SushiToJsonTr[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Integration\Traits\SushiToJsonTr[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Integration\Traits\SushiToJsonTr[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Integration\Traits\SushiToJsonTr[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Integration\Traits\SushiToJsonTr[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Performance\SushiToJsonPerforman[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Performance\SushiToJsonPerforman[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Performance\SushiToJsonPerforman[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Performance\SushiToJsonPerforman[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Performance\SushiToJsonPerforman[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Performance\SushiToJsonPerforman[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Performance\SushiToJsonPerforman[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Performance\SushiToJsonPerforman[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Performance\SushiToJsonPerforman[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Performance\SushiToJsonPerforman[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Performance\SushiToJsonPerforman[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Performance\SushiToJsonPerforman[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Performance\SushiToJsonPerforman[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Actions\Config\GetTenantCon[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Actions\Config\GetTenantCon[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Actions\Config\GetTenantCon[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Actions\Config\GetTenantCon[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Actions\Config\GetTenantCon[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Actions\Config\GetTenantFil[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Actions\Config\ResolveTenan[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Actions\Config\ResolveTenan[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Actions\Config\ResolveTenan[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Actions\Config\SaveTenantCo[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Actions\Config\SaveTenantCo[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Actions\Domains\GetDomainsA[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Actions\Domains\GetDomainsA[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Actions\GetTenantNameAction[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Actions\GetTenantNameAction[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Actions\GetTenantNameAction[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Actions\GetTenantNameAction[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Actions\GetTenantNameAction[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Actions\Markdown\GetLocaliz[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Actions\Markdown\GetLocaliz[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Actions\Markdown\GetLocaliz[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Actions\Models\ResolveTenan[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Actions\Models\ResolveTenan[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Actions\Models\ResolveTenan[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Actions\TenantAdditionalAct[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Actions\TenantAdditionalAct[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Actions\TenantAdditionalAct[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Actions\TenantAdditionalAct[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Actions\TenantAdditionalAct[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Actions\TenantAdditionalAct[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\ApplicationPublicPathCovera[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\ApplicationPublicPathCovera[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\ApplicationPublicPathCovera[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\DomainModelTest[22m [90m>[39m `Domain M… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\DomainModelTest[22m [90m>[39m `Domain M… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\DomainTest[22m [90m>[39m domain model c… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\DomainTest[22m [90m>[39m get rows metho… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Models\BaseModelTest[22m [90m>[39m base… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Models\BaseModelTest[22m [90m>[39m base… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Models\BaseModelTest[22m [90m>[39m base… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Models\BaseModelTest[22m [90m>[39m base… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\SushiToJsonTraitPestTest[22m [90m>[39m…  [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\SushiToJsonTraitPestTest[22m [90m>[39m…  [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\SushiToJsonTraitPestTest[22m [90m>[39m…  [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\SushiToJsonTraitPestTest[22m [90m>[39m…  [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\SushiToJsonTraitTest[22m [90m>[39m `Sus… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\SushiToJsonTraitTest[22m [90m>[39m `Sus… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\SushiToJsonTraitTest[22m [90m>[39m `Sus… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\SushiToJsonTraitTest[22m [90m>[39m `Sus… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\SushiToJsonTraitTest[22m [90m>[39m `Sus… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\SushiToJsonTraitTest[22m [90m>[39m `Sus… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\SushiToJsonTraitTest[22m [90m>[39m `Sus… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\SushiToJsonTraitTest[22m [90m>[39m `Sus… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\SushiToJsonTraitTest[22m [90m>[39m `Sus… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\SushiToJsonTraitTest[22m [90m>[39m `Sus… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\SushiToJsonTraitTest[22m [90m>[39m `Sus… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\SushiToJsonTraitTest[22m [90m>[39m `Sus… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\SushiToJsonTraitTest[22m [90m>[39m `Sus… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantCoverageBoostTest[22m [90m>[39m `… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantCoverageBoostTest[22m [90m>[39m `… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantCoverageBoostTest[22m [90m>[39m `… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantCoverageBoostTest[22m [90m>[39m `… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantCoverageBoostTest[22m [90m>[39m `… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantCoverageBoostTest[22m [90m>[39m `… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantCoverageBoostTest[22m [90m>[39m `… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantCoverageBoostTest[22m [90m>[39m `… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantCoverageBoostTest[22m [90m>[39m `… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantCoverageBoostTest[22m [90m>[39m `… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantCoverageBoostTest[22m [90m>[39m `… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantCoverageBoostTest[22m [90m>[39m `… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantGapsCoverageTest[22m [90m>[39m Ge… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantGapsCoverageTest[22m [90m>[39m Tr… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantGapsCoverageTest[22m [90m>[39m Tr… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantGapsCoverageTest[22m [90m>[39m Ge… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantGapsCoverageTest[22m [90m>[39m Mo… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantGapsCoverageTest[22m [90m>[39m Da… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantGapsCoverageTest[22m [90m>[39m St… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantGapsCoverageTest[22m [90m>[39m Su… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantGapsCoverageTest[22m [90m>[39m Su… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantGapsCoverageTest[22m [90m>[39m Su… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantGapsCoverageTest[22m [90m>[39m Ge… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantGapsCoverageTest[22m [90m>[39m Su… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantGapsCoverageTest[22m [90m>[39m Te… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantGapsCoverageTest[22m [90m>[39m fi… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantModelsTest[22m [90m>[39m it can c… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantModelsTest[22m [90m>[39m it can c… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantModelsTest[22m [90m>[39m it expos… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantModelsTest[22m [90m>[39m it can c… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantModelsTest[22m [90m>[39m it repor… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantStatementCoverageTest[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantStatementCoverageTest[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantStatementCoverageTest[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantStatementCoverageTest[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantStatementCoverageTest[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantStatementCoverageTest[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantStatementCoverageTest[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantStatementCoverageTest[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantStatementCoverageTest[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantStatementCoverageTest[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantStatementCoverageTest[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantStatementCoverageTest[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantStatementCoverageTest[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantStatementCoverageTest[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantStatementCoverageTest[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantStatementCoverageTest[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantStatementCoverageTest[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantStatementCoverageTest[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantStatementCoverageTest[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantStatementCoverageTest[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantStatementCoverageTest[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantStatementCoverageTest[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\TenantStatementCoverageTest[22m… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Traits\SushiToJsonTest[22m [90m>[39m it… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Traits\SushiToJsonTest[22m [90m>[39m it… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Traits\SushiToJsonTest[22m [90m>[39m it… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Traits\SushiToJsonTest[22m [90m>[39m it… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Traits\SushiToJsonTest[22m [90m>[39m it… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Traits\SushiToJsonTest[22m [90m>[39m it… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Traits\SushiToJsonTest[22m [90m>[39m it… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Traits\SushiToJsonTest[22m [90m>[39m it… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Traits\SushiToJsonTest[22m [90m>[39m it… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Traits\SushiToJsonTest[22m [90m>[39m it… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mModules\Tenant\tests\Unit\Traits\SushiToJsonTest[22m [90m>[39m it… [41;1m ParseError [49;22m  
+[39;1m  syntax error, unexpected token "<<", expecting "function"[39;22m
+
+  at [32mModules/Activity/app/Models/StoredEvent.php[39m:[32m67[39m
+     63▕  */
+     64▕ // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+     65▕ class StoredEvent extends SpatieStoredEvent
+     66▕ {
+  ➜  67▕ <<<<<<< .merge_file_fzPFS8
+     68▕     /** @use HasXotFactory<StoredEventFactory> */
+     69▕ =======
+     70▕     /** @phpstan-use HasXotFactory<Factory<static>> */
+     71▕ >>>>>>> .merge_file_3vbLWT
+
+  [33m1   [39m[39;1mModules/Activity/app/Models/StoredEvent.php[39;22m:[39;1m67[39;22m
+      [2m+30 vendor frames [22m
+  [33m32  [39m[39;1mModules/Xot/tests/CreatesApplication.php[39;22m:[39;1m54[39;22m
+
+
+  [90mTests:[39m    [31;1m171 failed[39;22m[90m,[39m[39m [39m[32;1m2 passed[39;22m[90m (2 assertions)[39m
+  [90mDuration:[39m [39m85.04s[39m
+

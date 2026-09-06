@@ -9,11 +9,10 @@ use Modules\UI\Filament\Traits\HasTableLayoutPage;
 use Modules\UI\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(\Modules\UI\Tests\TestCase::class);
 
 test('exposes table layout page trait for cross-module consumers', function (): void {
-    $page = new class
-    {
+    $page = new class {
         use HasTableLayoutPage;
     };
 

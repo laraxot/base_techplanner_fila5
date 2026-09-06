@@ -3,20 +3,18 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Actions\Command;
-
+use function Safe\class_uses;
 use Modules\Job\Actions\Command\GetCommandArgumentsActions;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Symfony\Component\Console\Command\Command;
-
-use function Safe\class_uses;
 use function Safe\file_get_contents;
 
-uses(TestCase::class);
+uses(\Modules\Job\Tests\TestCase::class);
 
 describe('GetCommandArgumentsActions', function (): void {
     test('can be instantiated', function (): void {
-        $action = new GetCommandArgumentsActions();
+        $action = new GetCommandArgumentsActions;
         Assert::assertInstanceOf(GetCommandArgumentsActions::class, $action);
     });
 
@@ -28,7 +26,7 @@ describe('GetCommandArgumentsActions', function (): void {
     });
 
     test('returns array of arguments', function (): void {
-        $action = new GetCommandArgumentsActions();
+        $action = new GetCommandArgumentsActions;
         $command = new Command('test');
         $result = $action->execute($command);
         Assert::assertCount(0, $result);

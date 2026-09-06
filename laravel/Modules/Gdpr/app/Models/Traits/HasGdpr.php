@@ -8,11 +8,9 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Support\Facades\Cache;
-use Stringable;
 use Modules\Gdpr\Enums\ConsentType;
 use Modules\Gdpr\Models\Consent;
 use Modules\Gdpr\Models\Treatment;
-use Modules\Gdpr\Tests\Unit\Traits\HasGdprTraitTest;
 
 /**
  * Trait HasGdpr.
@@ -22,7 +20,7 @@ use Modules\Gdpr\Tests\Unit\Traits\HasGdprTraitTest;
  * @property Collection<int, Consent> $consents
  * @property Collection<int, Consent> $activeConsents
  *
- * @see HasGdprTraitTest
+ * @see \Modules\Gdpr\Tests\Unit\Traits\HasGdprTraitTest
  */
 trait HasGdpr
 {
@@ -65,7 +63,7 @@ trait HasGdpr
     public function hasGivenConsent(ConsentType|string $type): bool
     {
         $type = $type instanceof ConsentType ? $type->value : $type;
-        $cacheKey = $this->consentCacheKey($type);
+        $cacheKey = 'user_'.(string) $this->getKey().'_consent_'.$type;
 
         if (Cache::has($cacheKey)) {
             return (bool) Cache::get($cacheKey);
@@ -80,7 +78,7 @@ trait HasGdpr
     public function hasGivenConsentWithoutCache(ConsentType|string $type): bool
     {
         $type = $type instanceof ConsentType ? $type->value : $type;
-        $cacheKey = $this->consentCacheKey($type);
+        $cacheKey = 'user_'.(string) $this->getKey().'_consent_'.$type;
 
         $hasConsent = $this->activeConsents()->where('type', $type)->exists();
 
@@ -92,8 +90,8 @@ trait HasGdpr
     /**
      * Give consent for a specific type.
      *
-     * @param  array<string, mixed>  $metadata
-     * @param  array<string, mixed>  $metadata
+     * @param array<string, mixed> $metadata
+     * @param array<string, mixed> $metadata
      */
     public function giveConsent(ConsentType|string $type, array $metadata = []): Consent
     {
@@ -168,17 +166,7 @@ trait HasGdpr
      */
     protected function clearConsentCache(string $type): void
     {
-        Cache::forget($this->consentCacheKey($type));
-    }
-
-    private function consentCacheKey(string $type): string
-    {
-        $key = $this->getKey();
-
-        if (! is_scalar($key) && ! $key instanceof Stringable) {
-            throw new \LogicException('The model key must be scalar or stringable.');
-        }
-
-        return 'user_'.(string) $key.'_consent_'.$type;
+        $cacheKey = 'user_'.(string) $this->getKey().'_consent_'.$type;
+        Cache::forget($cacheKey);
     }
 }

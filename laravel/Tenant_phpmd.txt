@@ -1,0 +1,4 @@
+/var/www/_bases/base_techplanner_fila5/laravel/Modules/Tenant/app/Providers/RouteServiceProvider.php:9    CamelCasePropertyName  The property $module_dir is not named in camelCase.
+/var/www/_bases/base_techplanner_fila5/laravel/Modules/Tenant/app/Providers/RouteServiceProvider.php:9    CamelCasePropertyName  The property $module_ns is not named in camelCase.
+/var/www/_bases/base_techplanner_fila5/laravel/Modules/Tenant/app/Providers/TenantServiceProvider.php:22  CamelCasePropertyName  The property $module_dir is not named in camelCase.
+/var/www/_bases/base_techplanner_fila5/laravel/Modules/Tenant/app/Providers/TenantServiceProvider.php:22  CamelCasePropertyName  The property $module_ns is not named in camelCase.

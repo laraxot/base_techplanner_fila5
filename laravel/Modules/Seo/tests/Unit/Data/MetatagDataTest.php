@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Seo\Tests\Unit\Data;
 
 use Modules\Seo\Data\MetatagData;
-use Modules\Seo\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(\Modules\Seo\Tests\TestCase::class);

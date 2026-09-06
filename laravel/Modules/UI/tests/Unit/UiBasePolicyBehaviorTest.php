@@ -21,13 +21,9 @@ function uiBehaviorUser(array $roles = []): UserContract
 {
     /** @var MockInterface&UserContract $user */
     $user = Mockery::mock(UserContract::class);
-    TestCase::expectMethod($user, 'hasRole')
-        ->andReturnUsing(static function (array|string $richiesti) use ($roles): bool {
-            /** @var list<string> $normalizzati */
-            $normalizzati = is_array($richiesti) ? $richiesti : [$richiesti];
-
-            return array_intersect($normalizzati, $roles) !== [];
-        });
+    $user->allows([
+        'hasRole' => static fn (string $richiesto): bool => in_array($richiesto, $roles, true),
+    ]);
 
     return $user;
 }
@@ -37,7 +33,7 @@ afterEach(function (): void {
 });
 
 test('UiBasePolicy before concede super-admin e ritorna null altrimenti', function (): void {
-    $policy = new UiBasePolicyBehaviorConcretePolicy;
+    $policy = new UiBasePolicyBehaviorConcretePolicy();
     $super = uiBehaviorUser(['super-admin']);
 
     Assert::assertTrue($policy->before($super, 'viewAny'));

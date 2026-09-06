@@ -9,12 +9,11 @@ use Modules\Gdpr\Models\BaseModel;
 use Modules\Gdpr\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(\Modules\Gdpr\Tests\TestCase::class);
 
 function makeGdprBaseModel(): BaseModel
 {
-    return new class() extends BaseModel
-    {
+    return new class extends BaseModel {
         protected $table = 'test_gdpr_table';
     };
 }

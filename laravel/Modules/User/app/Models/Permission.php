@@ -63,7 +63,6 @@ use Webmozart\Assert\Assert;
  */
 class Permission extends SpatiePermission
 {
-    /** @use HasXotFactory<Factory<static>> */
     use HasXotFactory;
 
     use RelationX;

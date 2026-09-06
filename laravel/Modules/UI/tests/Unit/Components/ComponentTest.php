@@ -9,12 +9,11 @@ use Illuminate\View\Component;
 use Modules\UI\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(\Modules\UI\Tests\TestCase::class);
 
 describe('Component', function (): void {
     test('ui components can be rendered', function (): void {
-        $component = new class extends Component
-        {
+        $component = new class extends Component {
             public function render(): View
             {
                 return view('ui::components.ui.button');

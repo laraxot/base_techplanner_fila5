@@ -32,3 +32,5 @@ return [
 // blade files
 $page->navigation
 ```
+=======
+>>>>>>> origin/develop
