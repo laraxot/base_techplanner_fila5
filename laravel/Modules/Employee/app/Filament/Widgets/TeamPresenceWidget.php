@@ -6,7 +6,7 @@ namespace Modules\Employee\Filament\Widgets;
 
 use Exception;
 use Filament\Actions\Action;
-use Filament\Forms\Components\TextEntry;
+use Filament\Schemas\Components\TextEntry;
 use Filament\Forms\Components\Select;
 use Filament\Schemas\Components\Actions;
 use Filament\Schemas\Components\Component;

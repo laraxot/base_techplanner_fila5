@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Modules\Employee\Filament\Widgets;
 
 use Carbon\Carbon;
-use Filament\Forms\Components\TextEntry;
+use Filament\Schemas\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Tabs;

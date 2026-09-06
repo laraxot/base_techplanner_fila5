@@ -62,12 +62,13 @@
 - **File**: bmad-output/stories/9.1.phpstan-l10-phase2-fixes.story.md
 
 ### Story 9.2: Employee Module — Filament TextEntry Migration (v4→v5)
-- **Status**: READY_FOR_DEV
-- **Scope**: Employee module, 23 remaining errors (class.notFound TextEntry)
-- **Root Cause**: Filament v4→v5 API migration (TextEntry moved/renamed)
-- **Blocker**: v5 TextEntry class location must be identified (likely Infolist\Components\TextEntry)
+- **Status**: IN PROGRESS / BLOCKED
+- **Scope**: Employee module, 30 remaining errors (TextEntry content() pattern)
+- **Root Cause**: Filament v5 Schemas component API changed; custom content(fn: View) pattern incompatible
+- **Findings**: TextEntry exists in Filament\Schemas\Components, but content() method signature/behavior changed
+- **Blocker**: Requires Filament v5 Schemas documentation review to find replacement pattern for custom View rendering
 - **File**: bmad-output/stories/9.2.employee-filament-textentry-fix.story.md
-- **Next**: Identify v5 API, apply migration, verify PHPStan clean
+- **Impact**: 30 errors (14 argument.type + 7 method.nonObject + 7 class.notFound + 1 cast.int + 1 deprecated)
 
 **Scope**: Fix PHPStan errors (108 found), resolve module blockers, upgrade dependencies, full module closure (PHPMD + Pest + docs).
 
