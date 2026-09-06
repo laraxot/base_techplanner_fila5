@@ -40,7 +40,7 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  */
 class PersonalAccessToken extends Model
 {
-    /** @use HasXotFactory<\Modules\User\Database\Factories\PersonalAccessTokenFactory> */
+    /** @use HasXotFactory<Factory<static>> */
     use HasXotFactory;
 
     protected $connection = 'user';
