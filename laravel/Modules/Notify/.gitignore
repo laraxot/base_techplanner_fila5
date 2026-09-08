@@ -175,3 +175,5 @@ reports
 .vscode/
 reports/
 graphify-out/
+docs/_archive
+docs/archived
