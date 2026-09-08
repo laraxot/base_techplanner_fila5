@@ -9,6 +9,7 @@ declare(strict_types=1);
 namespace Modules\Job\Console\Commands;
 
 use Illuminate\Console\Command;
+use Log;
 
 class TestJobCommand extends Command
 {

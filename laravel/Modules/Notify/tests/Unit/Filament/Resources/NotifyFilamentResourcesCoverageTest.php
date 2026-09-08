@@ -13,7 +13,6 @@ use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Group;
-use Filament\Schemas\Components\Section;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
@@ -24,11 +23,11 @@ use Modules\Notify\Filament\Resources\MailTemplateResource;
 use Modules\Notify\Filament\Resources\MailTemplateResource\Pages\ListMailTemplates;
 use Modules\Notify\Filament\Resources\NotificationResource;
 use Modules\Notify\Filament\Resources\NotificationResource\Pages\ListNotifications;
+use Modules\Notify\Filament\Resources\NotificationResource\Schemas\NotificationInfolist;
 use Modules\Notify\Filament\Resources\NotificationTemplateResource;
 use Modules\Notify\Filament\Resources\NotificationTemplateResource\Pages\PreviewNotificationTemplate;
 use Modules\Notify\Tests\Fixtures\EditContactTestProxy;
 use Modules\Notify\Tests\Fixtures\PreviewMailTemplateTestProxy;
-use Modules\Notify\Tests\Fixtures\ViewNotificationTestProxy;
 use Modules\Notify\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
@@ -43,18 +42,13 @@ function makePreviewMailTemplateTestProxy(): PreviewMailTemplateTestProxy
     return new PreviewMailTemplateTestProxy;
 }
 
-function makeViewNotificationTestProxy(): ViewNotificationTestProxy
-{
-    return new ViewNotificationTestProxy;
-}
-
 function makePreviewNotificationTemplateTestProxy(): PreviewNotificationTemplate
 {
     return new class extends PreviewNotificationTemplate {};
 }
 
 test('contact resource form schema exposes expected fields', function (): void {
-    $schema = TestCase::assertNotifyArray(ContactResource::getFormSchema());
+    $schema = TestCase::assertNotifyArray(app(ContactResource::class)->getFormSchema());
 
     Assert::assertArrayHasKey('name', $schema);
     Assert::assertArrayHasKey('email', $schema);
@@ -119,26 +113,20 @@ test('list notifications page exposes expected columns and filters', function ()
     Assert::assertInstanceOf(SelectFilter::class, $filters['type']);
 });
 
-test('view notification page infolist schema contains section with text entries', function (): void {
-    $page = makeViewNotificationTestProxy();
-    $schema = $page->exposedInfolistSchema();
+test('notification resource infolist schema exposes expected text entries', function (): void {
+    $schema = app(NotificationInfolist::class)->getInfolistSchema();
 
-    Assert::assertCount(1, $schema);
-    Assert::assertInstanceOf(Section::class, $schema[0]);
-
-    $reflection = new \ReflectionClass($schema[0]);
-    $prop = $reflection->getProperty('childComponents');
-    $prop->setAccessible(true);
-    $components = XotBasePest::assertArray($prop->getValue($schema[0]));
-
-    Assert::assertNotEmpty($components);
+    Assert::assertArrayHasKey('id', $schema);
+    Assert::assertArrayHasKey('type', $schema);
+    Assert::assertArrayHasKey('read_at', $schema);
+    Assert::assertNotEmpty($schema);
 });
 
 test('mail template resource form schema exposes expected components', function (): void {
     // Nessuna fixture da creare: HtmlLayoutPathSelect legge
     // XotData::make()->getMailHtmlLayoutPath(), cioe' Themes/<pub_theme>/resources/mail-layouts,
     // e in questo progetto pub_theme e' 'Zero', che i suoi layout ce li ha gia'.
-    $schema = XotBasePest::assertArray(MailTemplateResource::getFormSchema());
+    $schema = XotBasePest::assertArray(app(MailTemplateResource::class)->getFormSchema());
 
     Assert::assertArrayHasKey('mailable_slug_group', $schema);
     Assert::assertInstanceOf(Group::class, $schema['mailable_slug_group']);
@@ -153,7 +141,7 @@ test('mail template resource form schema exposes expected components', function 
 });
 
 test('notification resource form schema exposes expected components', function (): void {
-    $schema = TestCase::assertNotifyArray(NotificationResource::getFormSchema());
+    $schema = TestCase::assertNotifyArray(app(NotificationResource::class)->getFormSchema());
 
     Assert::assertArrayHasKey('type', $schema);
     Assert::assertInstanceOf(TextInput::class, $schema['type']);
@@ -164,7 +152,7 @@ test('notification resource form schema exposes expected components', function (
 });
 
 test('notification template resource form schema and pages are configured', function (): void {
-    $schema = TestCase::assertNotifyArray(NotificationTemplateResource::getFormSchema());
+    $schema = TestCase::assertNotifyArray(app(NotificationTemplateResource::class)->getFormSchema());
     $pages = TestCase::assertNotifyArray(NotificationTemplateResource::getPages());
 
     Assert::assertArrayHasKey('name', $schema);

@@ -8,7 +8,7 @@ use Modules\User\Models\Notification as UserDatabaseNotification;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 /*
- * Owner Notify — UNICA migrazione per `notifications` (connessione user / fixcity_user).
+ * Owner Notify — UNICA migrazione per `notifications` (connessione `user` del progetto ospite).
  * Runtime Eloquent: Modules\User\Models\Notification (DatabaseNotification).
  * Schema: uuid PK + uuidMorphs — users.id è UUID/ULID string.
  * Evoluzione: edit QUESTO file + bump timestamp — vietato secondo create_* in User/.

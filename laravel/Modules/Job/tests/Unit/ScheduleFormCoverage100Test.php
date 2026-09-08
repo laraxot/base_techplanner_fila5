@@ -43,7 +43,7 @@ describe('ScheduleForm coverage', function (): void {
         expectMethod($action, 'execute')->andReturn($commands);
         app()->instance(GetCommandsAction::class, $action);
 
-        $schema = ScheduleForm::getFormSchema();
+        $schema = (new ScheduleForm())->getFormSchema();
         Assert::assertArrayHasKey('main_section', $schema);
         Assert::assertNotEmpty($schema);
     });

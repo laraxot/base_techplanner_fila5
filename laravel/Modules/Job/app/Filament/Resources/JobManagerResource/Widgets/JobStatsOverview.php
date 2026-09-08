@@ -53,8 +53,8 @@ class JobStatsOverview extends XotBaseStatsOverviewWidget
         return [
             Stat::make(
                 (string) __('jobs::translations.total_jobs'),
-                $aggregatedInfo instanceof JobManager
-                    ? app(SafeEloquentCastAction::class)->getIntAttribute($aggregatedInfo, 'count')
+                $aggregatedInfo
+                    ? app(SafeEloquentCastAction::class)->getIntAttribute($aggregatedInfo, 'count', 0)
                     : 0,
             ),
             Stat::make((string) __('jobs::translations.execution_time'), (string) $totalTime),

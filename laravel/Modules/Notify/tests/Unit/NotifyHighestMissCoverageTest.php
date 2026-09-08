@@ -174,22 +174,22 @@ describe('Notify highest-miss coverage', function (): void {
 
     test('resources expose model pages and legacy form schema', function (): void {
         Assert::assertSame(NotificationTemplate::class, NotificationTemplateResource::getModel());
-        Assert::assertArrayHasKey('name', NotificationTemplateResource::getFormSchema());
+        Assert::assertArrayHasKey('name', app(NotificationTemplateResource::class)->getFormSchema());
         Assert::assertNotEmpty(NotificationTemplateResource::getPages());
 
         Assert::assertSame(NotifyTheme::class, NotifyThemeResource::getModel());
-        Assert::assertArrayHasKey('subject', NotifyThemeResource::getFormSchema());
+        Assert::assertArrayHasKey('subject', app(NotifyThemeResource::class)->getFormSchema());
         Assert::assertNotEmpty(NotifyThemeResource::getPages());
 
         Assert::assertSame(MailTemplate::class, MailTemplateResource::getModel());
-        Assert::assertNotEmpty(MailTemplateResource::getFormSchema());
+        Assert::assertNotEmpty(app(MailTemplateResource::class)->getFormSchema());
         Assert::assertNotEmpty(MailTemplateResource::getPages());
 
         Assert::assertSame(\Modules\Notify\Models\Notification::class, NotificationResource::getModel());
-        Assert::assertNotEmpty(NotificationResource::getFormSchema());
+        Assert::assertNotEmpty(app(NotificationResource::class)->getFormSchema());
 
         Assert::assertSame(Contact::class, ContactResource::getModel());
-        Assert::assertNotEmpty(ContactResource::getFormSchema());
+        Assert::assertNotEmpty(app(ContactResource::class)->getFormSchema());
         Assert::assertNotEmpty(ContactResource::getPages());
     });
 
@@ -371,11 +371,11 @@ describe('Notify highest-miss coverage', function (): void {
     test('notification template and theme forms expose keyed schema', function (): void {
         Assert::assertArrayHasKey(
             'name',
-            NotificationTemplateForm::getFormSchema(),
+            app(NotificationTemplateForm::class)->getFormSchema(),
         );
         Assert::assertArrayHasKey(
             'subject',
-            NotifyThemeForm::getFormSchema(),
+            app(NotifyThemeForm::class)->getFormSchema(),
         );
     });
 

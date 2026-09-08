@@ -17,29 +17,5 @@ class ConsentResource extends XotBaseResource
 
     protected static ?string $cluster = ProfileCluster::class;
 
-    /**
-     * Schema legacy del form: la sorgente di verità è ConsentForm::getFormSchema().
-     *
-     * @return array<string, \Filament\Schemas\Components\Component>
-     */
-    public static function getFormSchemaOld(): array
-    {
-        return [];
-    }
-
-    #[\Override]
-    public static function getRelations(): array
-    {
-        return [];
-    }
-
-    #[\Override]
-    public static function getPages(): array
-    {
-        return [
-            'index' => ListConsents::route('/'),
-            'create' => CreateConsent::route('/create'),
-            'edit' => EditConsent::route('/{record}/edit'),
-        ];
-    }
+    
 }

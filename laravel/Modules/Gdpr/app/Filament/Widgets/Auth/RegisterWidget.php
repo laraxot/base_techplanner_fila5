@@ -106,7 +106,7 @@ class RegisterWidget extends XotBaseWidget
     }
 
     /**
-     * @param array<string, string> $formData
+     * @param array<string, mixed> $formData
      */
     protected function logRegistrationAttempt(array $formData): void
     {

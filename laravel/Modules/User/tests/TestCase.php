@@ -71,7 +71,7 @@ abstract class TestCase extends XotBaseTestCase
         // Ambiente locale senza MariaDB dedicato: redirige le connessioni
         // sqlite sulla fixture condivisa; le tabelle user assenti fanno
         // scattare gli skipUnless* già previsti da questa TestCase.
-        $this->prepareSharedFixcitySqliteForTesting();
+        $this->prepareSharedSqliteForTesting();
 
         if (config('database.default') === 'sqlite') {
             $this->connectionsToTransact = ['user'];

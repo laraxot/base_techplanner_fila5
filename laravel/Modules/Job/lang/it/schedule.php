@@ -104,6 +104,6 @@ return [
         'delete' => ['label' => 'Elimina Schedule'],
     ],
     'sections' => [
-        'empty' => ['label' => 'empty', 'heading' => 'empty'],
+        'empty' => ['label' => '', 'heading' => ''],
     ],
 ];

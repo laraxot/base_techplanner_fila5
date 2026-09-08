@@ -31,29 +31,6 @@ class OauthAuthCodeResource extends XotBaseResource
     protected static ?string $recordTitleAttribute = 'id';
 
     /**
-     * Get the form schema for the resource.
-     *
-     * @return array<string, Select|TextInput>
-     */
-    #[\Override]
-    public static function getFormSchema(): array
-    {
-        return [
-            'user_id' => Select::make('user_id')
-                ->relationship('user', 'name')
-                ->searchable(),
-            'client_id' => Select::make('client_id')
-                ->relationship('client', 'name')
-                ->searchable()
-                ->required(),
-            'scopes' => TextInput::make('scopes'),
-            'revoked' => TextInput::make('revoked')
-                ->numeric()
-                ->required(),
-        ];
-    }
-
-    /**
      * Extend table callback for the resource.
      *
      * @return array<string, mixed>

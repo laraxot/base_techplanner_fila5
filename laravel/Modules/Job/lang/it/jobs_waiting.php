@@ -13,7 +13,6 @@ return [
         'available_at' => ['label' => 'Available At', 'description' => 'When the job becomes available for processing', 'helper_text' => 'Timestamp when job becomes available for execution', 'tooltip' => ''],
         'created_at' => ['label' => 'Created At', 'description' => 'When the job was created', 'helper_text' => 'Timestamp when job was added to queue', 'tooltip' => ''],
         'display_name' => ['label' => 'display_name'],
-        'status' => ['label' => 'status'],
         'updated_at' => ['label' => 'updated_at'],
     ],
     'actions' => [

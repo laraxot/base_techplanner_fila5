@@ -29,6 +29,32 @@ use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
  */
 class UserForm extends XotBaseResourceForm
 {
+
+/**
+     * FO auth login — SSoT campi per `LoginWidget`.
+     *
+     * @return array<string, Component>
+     */
+    public  function getFormSchema(): array
+    {
+        return [
+            'email' => TextInput::make('email')
+                ->email()
+                ->required()
+                ->autofocus()
+                ->autocomplete('username')
+                ->extraInputAttributes(['class' => 'fo-auth-input']),
+            'password' => TextInput::make('password')
+                ->password()
+                ->revealable()
+                ->required()
+                ->autocomplete('current-password')
+                ->extraInputAttributes(['class' => 'fo-auth-input']),
+            'remember' => Checkbox::make('remember')
+                ->label(__('user::login.fields.remember.label'))
+                ->extraInputAttributes(['class' => 'fo-auth-checkbox']),
+        ];
+    }
     /**
      * FO auth login — SSoT campi per `LoginWidget`.
      *

@@ -276,7 +276,7 @@ describe('User execute coverage floor 50', function (): void {
     });
 
     test('Filament UserResource legacy schema e pages', function (): void {
-        Assert::assertNotEmpty(UserResource::getFormSchema());
+        Assert::assertNotEmpty(app(UserResource::class)->getFormSchema());
         Assert::assertNotEmpty(UserResource::getPages());
         Assert::assertTrue(class_exists(UserResource::getModel()));
     });
@@ -366,7 +366,7 @@ describe('User execute coverage floor 50', function (): void {
         Assert::assertNotEmpty(OauthAccessTokenResource::getTableFilters());
         Assert::assertNotEmpty(OauthAccessTokenResource::getTableActions());
         Assert::assertNotEmpty(OauthAccessTokenResource::getTableBulkActions());
-        Assert::assertNotEmpty(OauthAccessTokenResource::getFormSchema());
+        Assert::assertNotEmpty(app(OauthAccessTokenResource::class)->getFormSchema());
 
         $resource = new OauthAccessTokenResource;
         $columns = $resource->getTableColumns();
@@ -751,7 +751,7 @@ describe('User execute coverage — Socialite settings e OAuth resource', functi
 
 describe('User execute coverage — UserResource form schemas', function (): void {
     test('resource user form deidrata password e created_at entry', function (): void {
-        $schema = ResourceUserForm::getFormSchema();
+        $schema = app(ResourceUserForm::class)->getFormSchema();
         Assert::assertArrayHasKey('section01', $schema);
 
         $password = userFindNamedComponent($schema, 'password');

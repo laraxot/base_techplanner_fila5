@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Job\Actions;
 
-use BadMethodCallException;
 use Spatie\QueueableAction\QueueableAction;
 
 class ExecuteTaskAction
@@ -15,7 +14,7 @@ class ExecuteTaskAction
     {
         // TODO: Implement task execution
         // See ROADMAP-2026.md Phase 1 - Critical Fixes
-        throw new BadMethodCallException(
+        throw new \BadMethodCallException(
             'Method ExecuteTaskAction::execute() not implemented yet. See ROADMAP-2026.md'
         );
     }

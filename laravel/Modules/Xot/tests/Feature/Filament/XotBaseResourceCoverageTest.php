@@ -148,11 +148,6 @@ it('covers get attachments schema branches', function (): void {
     $resourceNoAttachments = new class extends XotBaseResource
     {
         protected static ?string $model = Probe::class;
-
-        public static function getFormSchema(): array
-        {
-            return [];
-        }
     };
 
     Assert::assertSame([], $resourceNoAttachments::getAttachmentsSchema());
@@ -163,11 +158,6 @@ it('covers get attachments schema branches', function (): void {
     $resourceBadAttachments = new class extends XotBaseResource
     {
         protected static ?string $model = ProbeBadAttachments::class;
-
-        public static function getFormSchema(): array
-        {
-            return [];
-        }
     };
 
     Assert::assertSame([], $resourceBadAttachments::getAttachmentsSchema());
@@ -194,11 +184,6 @@ it('covers get attachments schema branches', function (): void {
     $resourceGoodAttachments = new class extends XotBaseResource
     {
         protected static ?string $model = ProbeGoodAttachments::class;
-
-        public static function getFormSchema(): array
-        {
-            return [];
-        }
     };
 
     Assert::assertSame(['schema'], $resourceGoodAttachments::getAttachmentsSchema());
@@ -225,10 +210,10 @@ it('covers step builder branches', function (): void {
 it('covers simple base helpers', function (): void {
     $resource = new ProbeResource;
 
-    Assert::assertSame([], ProbeResource::getInfolistSchema());
+    Assert::assertSame([], $resource->getInfolistSchema());
     Assert::assertSame([], ProbeResource::extendTableCallback());
     Assert::assertSame([], ProbeResource::extendFormCallback());
     Assert::assertStringStartsWith('Xot', ProbeResource::getModuleName());
     Assert::assertTrue($resource->hasCombinedRelationManagerTabsWithContent());
-    Assert::assertGreaterThan(0, ProbeResource::getFormSchemaColumns());
+    Assert::assertGreaterThan(0, ProbeResource::getFormColumns());
 });

@@ -57,7 +57,7 @@ describe('Job ScheduleForm full schema coverage', function (): void {
             }
         });
 
-        $schema = ScheduleForm::getFormSchema();
+        $schema = (new ScheduleForm())->getFormSchema();
         Assert::assertArrayHasKey('main_section', $schema);
 
         // Invoke nested closures via ModuleRemainingCoverage-style property walk

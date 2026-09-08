@@ -6,8 +6,9 @@ namespace Modules\Xot\Filament\Resources\Tables;
 
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Table;
+use Illuminate\Support\Str;
+use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Xot\Filament\Traits\HasXotTable;
-use Modules\Xot\Filament\Traits\TransTrait;
 use Webmozart\Assert\Assert;
 
 /**
@@ -19,7 +20,6 @@ use Webmozart\Assert\Assert;
 abstract class XotBaseResourceTable
 {
     use HasXotTable;
-    use TransTrait;
 
     public static function configure(Table $table): Table
     {
@@ -37,4 +37,20 @@ abstract class XotBaseResourceTable
      * @return array<int|string, Column>
      */
     abstract public function getTableColumns(): array;
+
+
+     /**
+     * La Resource proprietaria, dedotta dal namespace `{Resource}\Schemas\{Model}Form`.
+     *
+     * @return class-string<XotBaseResource>
+    */ 
+    public static function getResource(): string
+    {
+        $resource = Str::of(static::class)->before('\\Tables\\')->toString();
+        Assert::classExists($resource);
+        Assert::subclassOf($resource, XotBaseResource::class);
+
+        return $resource;
+    }
+        
 }

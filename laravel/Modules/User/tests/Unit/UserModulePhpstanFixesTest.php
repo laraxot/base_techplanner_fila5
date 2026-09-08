@@ -165,5 +165,5 @@ it('password data get validation messages method exists', function (): void {
 });
 
 it('password data get form schema method exists', function (): void {
-    PasswordData::getFormSchema();
+    app(PasswordData::class)->getFormSchema();
 });

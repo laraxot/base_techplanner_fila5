@@ -17,6 +17,28 @@ use Modules\User\Models\Team;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+
+/**
+ * Nome della connessione su cui vive il model Profile.
+ *
+ * I moduli sono condivisi fra progetti: il nome della connessione lo dichiara il model,
+ * non il test. Cablarlo qui rende il test verde in un progetto e cieco in tutti gli altri
+ * — `Schema::connection('<nome di un altro progetto>')` non esiste e il ramo non gira mai.
+ */
+function profileConnectionName(): string
+{
+    $profileClass = \Modules\Xot\Datas\XotData::make()->getProfileClass();
+    $connection = (new $profileClass)->getConnectionName();
+
+    if (is_string($connection) && $connection !== '') {
+        return $connection;
+    }
+
+    $default = config('database.default');
+
+    return is_string($default) ? $default : 'sqlite';
+}
+
 uses(TestCase::class);
 
 describe('User Business Logic', function (): void {
@@ -89,12 +111,12 @@ describe('User Business Logic', function (): void {
 
     test('enforces age restrictions for certain operations', function (): void {
         /* @var TestCase $this */
-        if (! Schema::connection('fixcity')->hasColumn('profiles', 'uuid')) {
+        if (! Schema::connection(profileConnectionName())->hasColumn('profiles', 'uuid')) {
             $this->skipTest('profiles.uuid column missing — Profile model requires uuid.');
         }
 
-        if (! Schema::connection('fixcity')->hasColumn('profiles', 'birth_date')) {
-            $this->skipTest('profiles.birth_date column missing on fixcity connection.');
+        if (! Schema::connection(profileConnectionName())->hasColumn('profiles', 'birth_date')) {
+            $this->skipTest('profiles.birth_date column missing on the profile connection.');
         }
 
         $underageBirthDate = now()->subYears(16)->toDateString();
@@ -225,7 +247,7 @@ describe('User Business Logic', function (): void {
 
     test('enforces referential integrity for user relationships', function (): void {
         /* @var TestCase $this */
-        if (! Schema::connection('fixcity')->hasColumn('profiles', 'uuid')) {
+        if (! Schema::connection(profileConnectionName())->hasColumn('profiles', 'uuid')) {
             $this->skipTest('profiles.uuid column missing — Profile model requires uuid.');
         }
 

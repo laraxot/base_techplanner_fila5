@@ -135,7 +135,7 @@ abstract class TestCase extends XotBaseTestCase
 
     protected function setUp(): void
     {
-        $this->prepareSharedFixcitySqliteForTesting();
+        $this->prepareSharedSqliteForTesting();
 
         parent::setUp();
 
@@ -197,7 +197,7 @@ abstract class TestCase extends XotBaseTestCase
 
     /**
      * Il sqlite condiviso non contiene sempre le tabelle notify complete: i test DB vanno saltati, non falliti.
-     * Se la connessione punta a fixcity_data.sqlite (offline condiviso) trattiamo il dominio come unavailable
+     * Se la connessione punta a il file sqlite condiviso (offline) trattiamo il dominio come unavailable
      * salvo override esplicito NOTIFY_DB_TESTS=1.
      */
     public static function notifyDbUnavailable(): bool
@@ -240,7 +240,7 @@ abstract class TestCase extends XotBaseTestCase
     {
         try {
             if (DB::connection('notify')->getDriverName() === 'sqlite') {
-                // Qualsiasi sqlite (fixcity, XOT_TEST_SQLITE, :memory:) è offline rispetto a MySQL notify.
+                // Qualsiasi sqlite (file condiviso, XOT_TEST_SQLITE, :memory:) è offline rispetto a MySQL notify.
                 return ! self::notifyDbTestsEnabled();
             }
 
@@ -250,7 +250,7 @@ abstract class TestCase extends XotBaseTestCase
             $default = is_string($defaultRaw) ? $defaultRaw : '';
 
             foreach ([$database, $default] as $path) {
-                if ($path !== '' && str_contains($path, 'fixcity_data.sqlite')) {
+                if ($path !== '' && str_contains($path, basename(self::sharedSqlitePath()))) {
                     return true;
                 }
             }

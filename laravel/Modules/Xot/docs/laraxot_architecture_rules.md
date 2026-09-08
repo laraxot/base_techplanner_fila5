@@ -6,6 +6,8 @@ canonical: ../../../Themes/docs/shared-components/LARAXOT_ARCHITECTURE_RULES.md
 
 See canonical documentation: ../../../Themes/docs/shared-components/LARAXOT_ARCHITECTURE_RULES.md
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 
 ---
 
@@ -60,7 +62,7 @@ class MyResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
     
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
     {
         return [
             // Form components
@@ -275,7 +277,7 @@ class QuestionChartResource extends XotBaseResource
 {
     protected static ?string $model = QuestionChart::class;
 
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
     {
         return [
             // Form components
@@ -429,7 +431,7 @@ class MyResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
     
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
     {
         return [
             // Form components
@@ -644,7 +646,7 @@ class QuestionChartResource extends XotBaseResource
 {
     protected static ?string $model = QuestionChart::class;
 
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
     {
         return [
             // Form components
@@ -745,3 +747,4 @@ BadgeColumn::make('status')
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
 =======
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev

@@ -3,20 +3,18 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Actions\Command;
-
+use function Safe\class_uses;
 use Modules\Job\Actions\Command\GetCommandOptionsActions;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Symfony\Component\Console\Command\Command;
-
-use function Safe\class_uses;
 use function Safe\file_get_contents;
 
-uses(TestCase::class);
+uses(\Modules\Job\Tests\TestCase::class);
 
 describe('GetCommandOptionsActions', function (): void {
     test('can be instantiated', function (): void {
-        $action = new GetCommandOptionsActions();
+        $action = new GetCommandOptionsActions;
         Assert::assertInstanceOf(GetCommandOptionsActions::class, $action);
     });
 
@@ -28,7 +26,7 @@ describe('GetCommandOptionsActions', function (): void {
     });
 
     test('returns array with structure', function (): void {
-        $action = new GetCommandOptionsActions();
+        $action = new GetCommandOptionsActions;
         $command = new Command('test');
         $result = $action->execute($command);
 
@@ -37,7 +35,7 @@ describe('GetCommandOptionsActions', function (): void {
     });
 
     test('includes default options in withoutValue', function (): void {
-        $action = new GetCommandOptionsActions();
+        $action = new GetCommandOptionsActions;
         $command = new Command('test');
         $result = $action->execute($command);
 

@@ -8,14 +8,8 @@ use Filament\Actions\Action;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
-use Filament\Forms\Components\DateTimePicker;
-use Filament\Forms\Components\Select;
-use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\PageRegistration;
-use Filament\Schemas\Components\Component;
-use Filament\Schemas\Components\Grid;
-use Filament\Schemas\Components\Section;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
@@ -32,32 +26,6 @@ class OauthRefreshTokenResource extends XotBaseResource
     protected static ?string $cluster = Passport::class;
 
     protected static ?string $model = OauthRefreshToken::class;
-
-    /**
-     * Get the form schema for the resource.
-     *
-     * @return array<string, Component>
-     */
-    #[\Override]
-    public static function getFormSchema(): array
-    {
-        return [
-            'oauth_refresh_token_info' => Section::make(static::trans('label'))
-                ->schema([
-                    'grid_1' => Grid::make(2)
-                        ->schema([
-                            'access_token_id' => Select::make('access_token_id')
-                                ->relationship('accessToken', 'id')
-                                ->searchable()
-                                ->required(),
-                            'revoked' => TextInput::make('revoked')
-                                ->numeric()
-                                ->required(),
-                            'expires_at' => DateTimePicker::make('expires_at'),
-                        ]),
-                ]),
-        ];
-    }
 
     public static function table(Table $table): Table
     {

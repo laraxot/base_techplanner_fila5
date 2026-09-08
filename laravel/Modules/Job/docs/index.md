@@ -1,6 +1,7 @@
-# Docs Index — Job
+# Documentation Index
 
-Canoni: README.md, architecture.md, rules-index.md
+Modulo: Job
 
-Duplicati: *.variant.md, *.sumy.md, *-variant-*.md, *.archive-*.md (ignorati da index)
-Deprecated: ignorati per questa sessione.
+## File disponibili
+
+<!-- auto-generato: elencare i file .md presenti -->
