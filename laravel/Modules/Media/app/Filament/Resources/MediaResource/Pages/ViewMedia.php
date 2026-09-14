@@ -16,6 +16,8 @@ use Filament\Schemas\Components\Section;
 use Modules\Media\Datas\ConvertData;
 use Modules\Media\Filament\Infolists\VideoEntry;
 use Modules\Media\Filament\Resources\MediaConvertResource;
+use Filament\Actions\DeleteAction;
+use Filament\Actions\DeleteAction;
 use Modules\Media\Filament\Resources\MediaResource;
 use Modules\Media\Filament\Resources\MediaResource\Widgets\ConvertWidget;
 use Modules\Media\Models\Media;
@@ -25,6 +27,8 @@ use Override;
 class ViewMedia extends XotBaseViewRecord
 {
     protected static string $resource = MediaResource::class;
+
+    
 
     
 

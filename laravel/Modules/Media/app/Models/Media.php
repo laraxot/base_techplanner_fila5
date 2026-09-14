@@ -16,6 +16,12 @@ use Illuminate\Support\Carbon;
 use Modules\Media\Database\Factories\MediaFactory;
 use Modules\User\Models\User;
 use Modules\Xot\Contracts\ProfileContract;
+use Modules\Media\Database\Factories\MediaFactory;
+use Modules\User\Models\User;
+use Modules\Xot\Contracts\ProfileContract;
+use Modules\User\Models\User;
+use Modules\Xot\Contracts\ProfileContract;
+use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Traits\Updater;
@@ -24,6 +30,9 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media as SpatieMedia;
 
 /**
  * @property-read User|null $creator
+ * @property-read User|null $creator
+ * @property-read \Modules\User\Models\User|null $creator
+ * @property-read \Modules\User\Models\User|null $creator
  * @property-read mixed $extension
  * @property-read array<int, array{name: string, generated: bool, src: string}> $entry_conversions
  * @property-read string $path
@@ -100,6 +109,8 @@ class Media extends SpatieMedia
     /** @use HasXotFactory<Factory<static>> */
     use HasXotFactory;
 
+    use HasXotFactory;
+    use HasXotFactory;
     use Updater;
 
     /** @var string */
@@ -139,6 +150,11 @@ class Media extends SpatieMedia
     public function creator(): BelongsTo
     {
         /** @var class-string<Model> $userClass */
+     * @return BelongsTo<User, $this>
+     */
+    public function creator(): BelongsTo
+    {
+        /** @var class-string<User> $userClass */
         $userClass = XotData::make()->getUserClass();
 
         return $this->belongsTo($userClass, 'created_by');

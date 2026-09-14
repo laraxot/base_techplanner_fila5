@@ -24,6 +24,8 @@ class MediaResource extends XotBaseResource
 
     
 
+    
+
     /**
      * @psalm-return array<never, never>
      */

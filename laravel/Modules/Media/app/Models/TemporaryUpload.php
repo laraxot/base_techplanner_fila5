@@ -17,6 +17,12 @@ use Modules\Media\Exceptions\CouldNotAddUpload;
 use Modules\Media\Exceptions\TemporaryUploadDoesNotBelongToCurrentSession;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Models\Traits\HasXotFactory;
+use Illuminate\Database\Eloquent\MassPrunable;
+use Illuminate\Http\UploadedFile;
+use Illuminate\Support\Carbon;
+use Modules\Media\Exceptions\CouldNotAddUpload;
+use Modules\Media\Exceptions\TemporaryUploadDoesNotBelongToCurrentSession;
+use Modules\Xot\Contracts\ProfileContract;
 use Spatie\Image\Enums\Fit;
 use Spatie\MediaLibrary\Conversions\Conversion;
 use Spatie\MediaLibrary\HasMedia;
@@ -77,6 +83,9 @@ class TemporaryUpload extends BaseModel implements HasMedia
     /** @use HasXotFactory<Factory<static>> */
     use HasXotFactory;
 
+
+
+    use HasXotFactory;
     use InteractsWithMedia;
     use MassPrunable;
 

@@ -27,6 +27,8 @@ class TemporaryUploadResource extends XotBaseResource
 
     
 
+    
+
     /**
      * @psalm-return array<never, never>
      */

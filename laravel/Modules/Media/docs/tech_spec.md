@@ -23,7 +23,15 @@ Technical implementation details for the Media module.
 - PHPMD: 0 violations
 
 ## Dependencies
+<<<<<<< HEAD
+<<<<<<< HEAD
 - Laravel 12.x
+=======
+- Laravel 13.x
+>>>>>>> laraxot/dev
+=======
+- Laravel 13.x
+>>>>>>> laraxot/dev
 - Filament 5.x
 - Xot Module
 
