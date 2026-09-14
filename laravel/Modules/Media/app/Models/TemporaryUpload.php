@@ -8,9 +8,11 @@ use Closure;
 use Exception;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\MassPrunable;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Carbon;
+use Modules\Media\Database\Factories\TemporaryUploadFactory;
 use Modules\Media\Exceptions\CouldNotAddUpload;
 use Modules\Media\Exceptions\TemporaryUploadDoesNotBelongToCurrentSession;
 use Modules\Xot\Contracts\ProfileContract;
@@ -69,7 +71,12 @@ use Webmozart\Assert\Assert;
 class TemporaryUpload extends BaseModel implements HasMedia
 {
     use HasUuids;
+
+    /** @phpstan-ignore generics.notGeneric */
+    /** @phpstan-ignore generics.notGeneric */
+    /** @use HasXotFactory<Factory<static>> */
     use HasXotFactory;
+
     use InteractsWithMedia;
     use MassPrunable;
 

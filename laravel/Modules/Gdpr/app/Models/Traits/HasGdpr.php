@@ -12,7 +12,6 @@ use Modules\Gdpr\Enums\ConsentType;
 use Modules\Gdpr\Models\Consent;
 use Modules\Gdpr\Models\Treatment;
 use Modules\Gdpr\Tests\Unit\Traits\HasGdprTraitTest;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
 /**
  * Trait HasGdpr.
@@ -65,7 +64,7 @@ trait HasGdpr
     public function hasGivenConsent(ConsentType|string $type): bool
     {
         $type = $type instanceof ConsentType ? $type->value : $type;
-        $cacheKey = 'user_'.SafeStringCastAction::cast($this->getKey()).'_consent_'.$type;
+        $cacheKey = $this->consentCacheKey($type);
 
         if (Cache::has($cacheKey)) {
             return (bool) Cache::get($cacheKey);
@@ -80,7 +79,7 @@ trait HasGdpr
     public function hasGivenConsentWithoutCache(ConsentType|string $type): bool
     {
         $type = $type instanceof ConsentType ? $type->value : $type;
-        $cacheKey = 'user_'.SafeStringCastAction::cast($this->getKey()).'_consent_'.$type;
+        $cacheKey = $this->consentCacheKey($type);
 
         $hasConsent = $this->activeConsents()->where('type', $type)->exists();
 
@@ -168,7 +167,17 @@ trait HasGdpr
      */
     protected function clearConsentCache(string $type): void
     {
-        $cacheKey = 'user_'.SafeStringCastAction::cast($this->getKey()).'_consent_'.$type;
-        Cache::forget($cacheKey);
+        Cache::forget($this->consentCacheKey($type));
+    }
+
+    private function consentCacheKey(string $type): string
+    {
+        $key = $this->getKey();
+
+        if (! is_scalar($key) && ! $key instanceof \Stringable) {
+            throw new \LogicException('The model key must be scalar or stringable.');
+        }
+
+        return 'user_'.(string) $key.'_consent_'.$type;
     }
 }
