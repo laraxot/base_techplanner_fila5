@@ -69,7 +69,7 @@ Xot provides interfaces that define contracts:
 - Should be implementable by any module
 - Should follow Interface Segregation Principle
 
-## 🔧 Filament 5 Compliance
+## 🔧 Filament 4 Compliance
 
 ### 1. Base Widget Class
 ```php
@@ -381,7 +381,7 @@ public function canAccess($user): bool
 }
 ```
 
-## 🔧 Laravel 13 Compliance
+## 🔧 Laravel 12 Compliance
 
 ### 1. Type Declarations
 Use proper type hints and return types:

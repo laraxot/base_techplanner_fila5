@@ -136,7 +136,7 @@ XotBaseResource → Filament Resources
 - Service container integration
 
 ### Filament Integration
-- Complete Filament 5.x compatibility
+- Complete Filament 4.x compatibility
 - Resource system integration
 - Widget system support
 - Admin panel integration

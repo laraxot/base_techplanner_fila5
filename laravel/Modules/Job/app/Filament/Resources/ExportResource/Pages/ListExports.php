@@ -13,6 +13,10 @@ use Override;
 class ListExports extends XotBaseListRecords
 {
     protected static string $resource = ExportResource::class;
+<<<<<<< HEAD
+}
+=======
+<<<<<<< HEAD
 
     /**
      * @return array<string, Column>
@@ -38,3 +42,7 @@ class ListExports extends XotBaseListRecords
         ];
     }
 }
+=======
+}
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

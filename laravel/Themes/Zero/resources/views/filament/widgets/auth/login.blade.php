@@ -3,6 +3,7 @@
 
 <x-filament-widgets::widget>
     <div class="space-y-6">
+<<<<<<< .merge_file_0BHTnh
         {{-- Header del form --}}
         <div class="text-center">
             <h2 class="text-xl font-semibold text-gray-900">
@@ -13,6 +14,8 @@
             </p>
         </div>
 
+=======
+>>>>>>> .merge_file_H4e15K
         {{-- Form renderizzato dal widget --}}
         <form wire:submit="login" class="space-y-4">
             {{ $this->form }}
@@ -65,23 +68,41 @@
             </div>
         </div>
 
+<<<<<<< .merge_file_0BHTnh
         {{-- Social Login (se implementato) --}}
         <div class="grid grid-cols-2 gap-3">
             <button 
                 type="button"
+=======
+        {{-- Social Login --}}
+        <div class="grid grid-cols-2 gap-3">
+            <a
+                href="{{ route('socialite.oauth.fo.redirect', ['provider' => 'google']) }}"
+>>>>>>> .merge_file_H4e15K
                 class="w-full inline-flex justify-center items-center gap-2 py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"
             >
                 <x-filament::icon icon="ui-google" class="w-5 h-5 flex-shrink-0" />
                 <span>{{ __('Google') }}</span>
+<<<<<<< .merge_file_0BHTnh
             </button>
 
             <button 
                 type="button"
+=======
+            </a>
+
+            <a
+                href="{{ route('socialite.oauth.fo.redirect', ['provider' => 'github']) }}"
+>>>>>>> .merge_file_H4e15K
                 class="w-full inline-flex justify-center items-center gap-2 py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"
             >
                 <x-filament::icon icon="ui-brands.github" class="w-5 h-5 flex-shrink-0" />
                 <span>{{ __('GitHub') }}</span>
+<<<<<<< .merge_file_0BHTnh
             </button>
+=======
+            </a>
+>>>>>>> .merge_file_H4e15K
         </div>
     </div>
 </x-filament-widgets::widget> 

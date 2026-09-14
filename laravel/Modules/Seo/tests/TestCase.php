@@ -6,8 +6,9 @@ namespace Modules\Seo\Tests;
 
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\DB;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Tests\XotBaseTestCase;
+use Modules\User\Models\User;
 
 /**
  * Base test case for Seo module.
@@ -49,7 +50,7 @@ abstract class TestCase extends XotBaseTestCase
             }
         }
 
-        config(['auth.providers.users.model' => User::class]);
+        config(['auth.providers.users.model' => \Modules\User\Models\User::class]);
         config(['xra.pub_theme' => 'Meetup']);
         config(['xra.main_module' => 'Seo']);
     }

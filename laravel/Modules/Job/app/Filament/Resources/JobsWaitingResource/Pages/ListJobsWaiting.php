@@ -25,6 +25,10 @@ class ListJobsWaiting extends XotBaseListRecords
         ];
     }
 
+<<<<<<< HEAD
+   
+=======
+<<<<<<< HEAD
     #[Override]
     /*
      * @return array<string, mixed>
@@ -54,4 +58,8 @@ class ListJobsWaiting extends XotBaseListRecords
             'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable(),
         ];
     }
+=======
+   
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 }

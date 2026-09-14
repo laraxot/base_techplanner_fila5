@@ -18,9 +18,9 @@ return [
     ],
     'actions' => [
         'create' => ['label' => 'Nuovo Team', 'tooltip' => 'Crea un nuovo team', 'icon' => 'create'],
-        'edit' => ['label' => 'Modifica', 'tooltip' => 'Modifica i dati del team'],
+        'edit' => ['label' => 'Modifica', 'tooltip' => 'Modifica i dati del team', 'icon' => 'edit'],
         'delete' => ['label' => 'Elimina', 'tooltip' => 'Elimina il team', 'icon' => 'delete'],
-        'view' => ['label' => 'Visualizza', 'tooltip' => 'Visualizza i dettagli del team'],
+        'view' => ['label' => 'Visualizza', 'tooltip' => 'Visualizza i dettagli del team', 'icon' => 'view'],
         'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
     ],
     'messages' => [

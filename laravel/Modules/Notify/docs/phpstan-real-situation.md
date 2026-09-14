@@ -1,10 +1,10 @@
 ---
-title: "phpstan-real-situation-2025-10-10"
+title: "phpstan-real-situation-2025-10-10.deprecated"
 type: concept
 tags: [deprecated]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "phpstan-real-situation-2025-10-10 deprecated"
+qmd: "phpstan-real-situation-2025-10-10.deprecated deprecated"
 status: deprecated
 related:
   - "./00-index-1.md"
@@ -17,4 +17,4 @@ related:
   - "./action-plan-immediate.md"
 ---
 
-> Questo file è stato rinominato in [phpstan-real-situation.md](phpstan-real-situation.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+> Questo file è stato rinominato in [phpstan-real-situation-.deprecated.md](phpstan-real-situation-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.

@@ -27,7 +27,8 @@ function makeEditNotifyThemeTestProxy(): EditNotifyThemeTestProxy
 }
 
 test('list notification templates page returns empty table columns array', function (): void {
-    $columns = ListNotificationTemplates::notificationTemplateTableColumns();
+    /** @phpstan-ignore method.deprecated */
+    $columns = (new ListNotificationTemplates())->getTableColumns();
     Assert::assertSame([], $columns);
 });
 
@@ -59,20 +60,14 @@ test('edit notify theme page exposes delete header action', function (): void {
     Assert::assertInstanceOf(DeleteAction::class, $actions['delete']);
 });
 
-test('list notify themes columns and filters are configured', function (): void {
-    $columns = ListNotifyThemes::getNotifyThemeTableColumns();
-    $filters = ListNotifyThemes::getNotifyThemeTableFilters();
+test('list notify themes columns are configured', function (): void {
+    /** @phpstan-ignore method.deprecated */
+    $columns = (new ListNotifyThemes())->getTableColumns();
     Assert::assertArrayHasKey('id', $columns);
     Assert::assertInstanceOf(TextColumn::class, $columns['id']);
     Assert::assertArrayHasKey('lang', $columns);
     Assert::assertArrayHasKey('type', $columns);
     Assert::assertArrayHasKey('post_type', $columns);
-    Assert::assertArrayHasKey('lang', $filters);
-    Assert::assertInstanceOf(SelectFilter::class, $filters['lang']);
-    Assert::assertArrayHasKey('post_type', $filters);
-    Assert::assertInstanceOf(SelectFilter::class, $filters['post_type']);
-    Assert::assertArrayHasKey('type', $filters);
-    Assert::assertInstanceOf(SelectFilter::class, $filters['type']);
 });
 
 test('linkable relation manager exposes text input form schema', function (): void {

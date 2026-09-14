@@ -32,6 +32,7 @@ return [
         'is_active' => ['label' => 'is_active'],
         'created_at' => ['label' => 'created_at'],
         'updated_at' => ['label' => 'updated_at'],
+        'trial_ends_at' => ['label' => 'trial_ends_at'],
     ],
     'navigation' => [
         'name' => 'Tenants',
@@ -45,8 +46,9 @@ return [
     'plural_label' => 'Tenants (Plurale)',
     'actions' => [
         'create' => ['label' => 'Crea Tenants', 'icon' => 'create', 'tooltip' => 'create'],
-        'edit' => ['label' => 'Modifica Tenants'],
+        'edit' => ['label' => 'Modifica Tenants', 'icon' => 'edit', 'tooltip' => 'edit'],
         'delete' => ['label' => 'Elimina Tenants', 'icon' => 'delete', 'tooltip' => 'delete'],
         'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
     ],
 ];

@@ -1,5 +1,6 @@
 # Raw LLM Wiki Sources
 
+<<<<<<< .merge_file_dRF8LY
 [![Module](https://img.shields.io/badge/Module-Raw LLM Wiki Sources-8B0000.svg)]()
 [![Laravel 12](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)
 [![Filament 5](https://img.shields.io/badge/Filament-5-ffab00.svg)](https://filamentphp.com/)
@@ -32,3 +33,12 @@ Core module for the FixCity Platform.
 ---
 
 **Modulo** `Zero` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+Append-only staging area for source material that must be preserved before it is summarized into the local wiki.
+
+Rules:
+- keep raw captures close to the original source;
+- prefer Markdown when possible;
+- do not rewrite raw material to make it look cleaner;
+- promote stable knowledge into `../wiki/`.
+>>>>>>> .merge_file_1pV5L7

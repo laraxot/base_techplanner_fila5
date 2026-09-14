@@ -67,11 +67,14 @@
     <main id="main-content" class="flex-1">
         @if(isset($slot))
             {{ $slot }}
+<<<<<<< .merge_file_1eVgPY
         @else
             <!-- Default content area -->
             <div class="container mx-auto px-4 py-8">
                 @yield('content')
             </div>
+=======
+>>>>>>> .merge_file_67i5Im
         @endif
     </main>
 
@@ -79,6 +82,7 @@
     <footer class="bg-gray-800 text-white py-8 mt-auto">
         @if(isset($footer))
             {{ $footer }}
+<<<<<<< .merge_file_1eVgPY
         @else
             <div class="container mx-auto px-4">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -115,10 +119,13 @@
                     <p>&copy; {{ date('Y') }} {{ config('app.name', 'Laravel') }}. {{ __('All rights reserved.') }}</p>
                 </div>
             </div>
+=======
+>>>>>>> .merge_file_67i5Im
         @endif
     </footer>
 
     <!-- Scripts -->
+<<<<<<< .merge_file_1eVgPY
     @filamentScripts(withCore: true)
     @stack('scripts')
     
@@ -129,3 +136,11 @@
     @stack('custom-scripts')
 </body>
 </html> 
+=======
+    @livewireScriptConfig
+    @filamentScripts
+    @vite(['resources/js/app.js'], 'themes/Zero')
+    @stack('scripts')
+</body>
+</html>
+>>>>>>> .merge_file_67i5Im

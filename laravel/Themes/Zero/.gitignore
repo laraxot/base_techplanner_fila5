@@ -173,6 +173,7 @@ extras
 tests/AuditCoverage/
 
 # Laraxot — quality tool configs forbidden in module/theme root (use laravel/phpinsights.php, laravel/rector.php)
+<<<<<<< .merge_file_84M0VH
 phpinsights.php
 rector.php
 docs/graphify/graphify-out/
@@ -181,3 +182,5 @@ docs/graphify/graphify-out/
 =======
 >>>>>>> .merge_file_iR93P9
 >>>>>>> .merge_file_THc08r
+=======
+>>>>>>> .merge_file_M5mQpE

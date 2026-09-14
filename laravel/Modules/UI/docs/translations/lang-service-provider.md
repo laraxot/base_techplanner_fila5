@@ -138,6 +138,7 @@ return [
 ];
 
 // Modules/Patient/Filament/Resources/DoctorResource.php
+public static function getFormSchema(): array
 public function getFormSchema(): array
 {
     return [

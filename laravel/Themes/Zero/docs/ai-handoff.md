@@ -15,8 +15,12 @@ related:
 ## regole non negoziabili
 
 - tests solo pest
+<<<<<<< .merge_file_aSNa5g
 - nei tests **MAI** `RefreshDatabase` / `DatabaseMigrations`
 - **MAI** `migrate:fresh`, `migrate --force`, `db:wipe` — i dati sono sacri
+=======
+- nei tests MAI RefreshDatabase
+>>>>>>> .merge_file_F6ZIEp
 - i tests devono leggere `.env.testing`
 
 ## stato lavori (ultimo)

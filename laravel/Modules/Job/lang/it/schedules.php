@@ -7,6 +7,19 @@ return [
         'id' => ['label' => 'id'],
         'created_at' => ['label' => 'created_at'],
         'updated_at' => ['label' => 'updated_at'],
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+        'command' => ['label' => 'command'],
+        'expression' => ['label' => 'expression'],
+        'status' => ['label' => 'status'],
+        'command_custom' => ['label' => 'command_custom'],
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     ],
     'actions' => [
         'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],

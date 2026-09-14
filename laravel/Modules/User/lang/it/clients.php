@@ -14,6 +14,10 @@ return [
         'revoked' => ['label' => 'revoked'],
         'created_at' => ['label' => 'created_at'],
         'updated_at' => ['label' => 'updated_at'],
+        'grant_types' => ['label' => 'grant_types'],
+        'redirect_uris' => ['label' => 'redirect_uris'],
+        'owner_id' => ['label' => 'owner_id'],
+        'owner_type' => ['label' => 'owner_type'],
     ],
     'navigation' => [
         'name' => 'Clients',

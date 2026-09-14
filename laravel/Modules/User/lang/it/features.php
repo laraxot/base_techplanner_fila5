@@ -35,8 +35,9 @@ return [
     'plural_label' => 'Features (Plurale)',
     'actions' => [
         'create' => ['label' => 'Crea Features', 'icon' => 'create', 'tooltip' => 'create'],
-        'edit' => ['label' => 'Modifica Features'],
+        'edit' => ['label' => 'Modifica Features', 'icon' => 'edit', 'tooltip' => 'edit'],
         'delete' => ['label' => 'Elimina Features', 'icon' => 'delete', 'tooltip' => 'delete'],
         'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
     ],
 ];

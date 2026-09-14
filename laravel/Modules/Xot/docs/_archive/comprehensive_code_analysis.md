@@ -1,7 +1,7 @@
 # Analisi Completa del Codice - Sistema Laraxot
 
 ## Panoramica
-Analisi sistematica di tutti i moduli del progetto per identificare violazioni dei principi DRY, KISS, SOLID e problemi di performance in ottica Laravel 13 + PHP 8.3 + Filament 5.
+Analisi sistematica di tutti i moduli del progetto per identificare violazioni dei principi DRY, KISS, SOLID e problemi di performance in ottica Laravel 12 + PHP 8.3 + Filament 4.
 
 ## 🔴 CRITICI - Violazioni Principi e Errori
 
@@ -176,7 +176,7 @@ try {
 
 ```php
 // ContactResource.php
-public function getFormSchema(): array
+public static function getFormSchema(): array
 {
     return [
         TextInput::make('first_name'),
@@ -185,7 +185,7 @@ public function getFormSchema(): array
 }
 
 // CustomerResource.php - PATTERN SIMILE
-public function getFormSchema(): array
+public static function getFormSchema(): array
 {
     return [
         TextInput::make('name')->required(),
@@ -262,7 +262,7 @@ public function execute(Contact $contact): void
  */
 ```
 
-### 2. Laravel 13 Compatibility
+### 2. Laravel 12 Compatibility
 
 #### Casts Method
 ```php
@@ -275,13 +275,13 @@ protected function casts(): array
 }
 ```
 
-### 3. Filament 5 Patterns
+### 3. Filament 4 Patterns
 
 #### XotBaseResource Usage
 ```php
 class ContactResource extends XotBaseResource
 {
-    public function getFormSchema(): array
+    public static function getFormSchema(): array
     {
         return [
             TextInput::make('first_name'),
@@ -415,7 +415,7 @@ return [
 ## 🔗 Collegamenti Correlati
 
 - [Architettura Moduli](architecture.md)
-- [Best Practices Laravel 13](./LARAVEL_12_GUIDE.md)
+- [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
 - [Performance Optimization](./PERFORMANCE_GUIDE.md)
 

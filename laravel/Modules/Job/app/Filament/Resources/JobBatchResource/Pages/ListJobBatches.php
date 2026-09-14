@@ -25,6 +25,10 @@ use Webmozart\Assert\Assert;
 class ListJobBatches extends XotBaseListRecords
 {
     protected static string $resource = JobBatchResource::class;
+<<<<<<< HEAD
+    
+=======
+<<<<<<< HEAD
 
     /**
      * @return array<string, Tables\Columns\Column>
@@ -77,6 +81,10 @@ class ListJobBatches extends XotBaseListRecords
                 ->toggleable(isToggledHiddenByDefault: true),
         ];
     }
+=======
+    
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
     /**
      * @return array<string, Action|ActionGroup>

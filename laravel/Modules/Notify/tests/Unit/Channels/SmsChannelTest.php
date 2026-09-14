@@ -10,7 +10,7 @@ use PHPUnit\Framework\Assert;
 
 describe('SmsChannel', function () {
     it('can be instantiated', function () {
-        // SmsChannel requires SendSmsFactorSMSAction in constructor
+        // SmsChannel requires SmsActionFactory in constructor
         // but we can test structure via reflection
         $reflection = new \ReflectionClass(SmsChannel::class);
         Assert::assertTrue($reflection->isInstantiable());
@@ -35,10 +35,21 @@ describe('SmsChannel', function () {
         Assert::assertStringContainsString('declare(strict_types=1)', $content);
     });
 
-    it('has private action property', function () {
+    it('has private factory property', function () {
         $reflection = new \ReflectionClass(SmsChannel::class);
-        $property = $reflection->getProperty('action');
+        $property = $reflection->getProperty('factory');
 
         Assert::assertTrue($property->isPrivate());
+    });
+
+    it('resolves the driver from config via SmsActionFactory', function () {
+        $reflection = new \ReflectionClass(SmsChannel::class);
+        $param = $reflection->getConstructor()?->getParameters()[0] ?? null;
+
+        Assert::assertNotNull($param);
+        Assert::assertSame(
+            \Modules\Notify\Factories\SmsActionFactory::class,
+            $param->getType() instanceof \ReflectionNamedType ? $param->getType()->getName() : null,
+        );
     });
 });

@@ -11,6 +11,76 @@ related:
   - "./stories/01.Job-phpstan-fix.story.md"
 ---
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+## 2026-09-11 — Dead Table class + `$model` bug follow-up (`JobBatchResource`/`JobsWaitingResource`)
+
+Scope (story root, righe Job):
+`docs/stories/xotbaseresourcetable-dead-code-duplicate-table-classes-followup.story.md`.
+
+1. `app/Filament/Resources/JobBatchResource/Tables/JobBatchsTable.php` (typo di
+   pluralizzazione, mai risolta da `XotBaseResource::getTableClass()`): confermato
+   dead code via `git log --follow` (creato nello stesso commit `a1d95ea2` di
+   `JobBatchesTable.php`, contenuto sempre un sottoinsieme — nessuna
+   `getTableHeaderActions()`/`getTableBulkActions()` — mai divergente/mid-refactor) e
+   `grep -rn JobBatchsTable` repo-wide (zero riferimenti in codice, solo docs).
+   **Cancellato.**
+2. `JobsWaitingResource::$model` era `Job::class` invece di `JobsWaiting::class` — bug
+   reale, non solo un file morto: `JobsWaiting` è un model reale (estende `Job`,
+   stessa tabella) con una `JobsWaitingFactory` dedicata e una `JobsWaitingPolicy`
+   dedicata mai raggiunta (`Gate::getPolicyFor()` risolveva `JobPolicy` invece di
+   `JobsWaitingPolicy`, verificato via tinker prima/dopo il fix). `JobResource` possiede
+   già `Job::class` con CRUD completo (`BoardJobs`, `JobStatsOverview`); far puntare
+   `JobsWaitingResource` allo stesso model lo rendeva un doppione accidentale.
+   **Fix**: `$model = JobsWaiting::class`. Conseguenza verificata via tinker:
+   `getTableClass()` ora risolve `JobsWaitingsTable` (prima dead code, ora vivo) invece
+   di `JobsWaitingResource\Tables\JobsTable` (byte-identico a
+   `JobResource\Tables\JobsTable`, creato nello stesso commit `a1d95ea2` — duplicato,
+   non mid-refactor). `JobsTable.php` in `JobsWaitingResource/Tables/` **cancellato**
+   (diventato dead code dal fix); `JobsWaitingsTable::$model` aggiornato da `Job::class`
+   a `JobsWaiting::class` (property non usata da `XotBaseResourceTable` — verificato
+   `grep -n model` sul base — ma fuorviante se lasciata sbagliata).
+3. Guard test nuovo: `tests/Unit/Filament/Resources/JobsWaitingResourceModelTest.php`
+   (4 assert, gruppo `no-job-db`) — blocca la regressione di entrambi i casi:
+   `JobsWaitingResource::getModel() === JobsWaiting::class`,
+   `JobsWaitingResource::getTableClass() === JobsWaitingsTable::class`,
+   `JobBatchResource::getModel() === JobBatch::class`,
+   `JobBatchResource::getTableClass() === JobBatchesTable::class`.
+
+Verifica:
+- `vendor/bin/phpstan analyse Modules/Job --no-progress`: **[OK] No errors**.
+- `tools/phpmd.sh` (ruleset `docs/phpmd.ruleset.xml`) sui 4 file toccati: **0 violazioni**
+  (unico finding pre-esistente, non toccato da questo diff:
+  `JobsWaitingResource.php:24 LongVariable $shouldRegisterNavigation`, proprietà
+  standard Filament, non rinominabile).
+- `XDEBUG_MODE=coverage vendor/bin/pest Modules/Job`: **323 passed, 27 failed (976
+  assertions, 180.23s)**. I 27 fallimenti sono **pre-esistenti e non toccati da questo
+  diff** (verificato leggendo ogni stack trace):
+  - `JobExecuteCoverage50Test`/`JobPolicyBehaviorTest`/`JobPolicyTest`/
+    `JobScheduleFormCoverageTest`/`ScheduleFormCoverage100Test` (23 test):
+    `Modules\Job\Tests\Unit\expectMethod(): Return value must be of type
+    Mockery\Expectation, Mockery\CompositeExpectation returned` — incompatibilità di
+    versione Mockery nell'helper condiviso `JobExecuteCoverage50Test.php:70`, e un
+    secondo bug indipendente nello stesso file (`getFormSchemaOld()` chiamato
+    staticamente su un metodo non statico di `XotBaseResource`, fallisce già sul primo
+    elemento dell'array `$classi`, prima di arrivare a `JobBatchResource`/
+    `JobsWaitingResource`).
+  - `JobBatchBusinessLogicTest`/`ScheduleBusinessLogicTest`/`JobModelsCoverageTest`/
+    `Enums\StatusTest` (4 test): asserzioni su stato DB/trait di `Task`/`Status`, nulla
+    a che fare con `JobBatch`/`JobsWaiting`/le Table toccate.
+  - Prima run del giorno: 193 failed/153 passed per un crash di bootstrap
+    (`Modules\Notify\...\ListNotificationLogs not found`) causato da un altro agente
+    in scrittura concorrente su `Modules/Notify` nello stesso momento (pattern
+    "misurare mentre un altro scrive"); risolto da solo al retry + `composer
+    dump-autoload`, non è mai stato un problema del modulo Job.
+
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ## 2026-09-06 — PHPStan zero-errors pass (this session)
 
 Scope: `app/Filament/Columns/ScheduleArguments.php`,

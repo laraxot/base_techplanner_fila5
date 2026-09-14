@@ -320,7 +320,7 @@ public function canAccess($user): bool
 }
 ```
 
-## 🔧 Filament 5 Compliance Issues
+## 🔧 Filament 4 Compliance Issues
 
 ### 1. Static Method Violations
 **Problem**: Making non-static methods static
@@ -328,7 +328,7 @@ public function canAccess($user): bool
 // ❌ ANTI-PATTERN
 class MyWidget extends XotBaseWidget
 {
-    public function getFormSchema(): array
+    public static function getFormSchema(): array
     {
         // Filament methods should not be static
     }

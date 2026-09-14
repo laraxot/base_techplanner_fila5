@@ -8,7 +8,6 @@ use Filament\Actions\Action;
 use Filament\Actions\BulkAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\ExportBulkAction;
-use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\BaseFilter;
 use Modules\User\Filament\Actions\ChangePasswordAction;
 use Modules\User\Filament\Resources\UserResource;
@@ -18,20 +17,6 @@ use Modules\Xot\Contracts\UserContract;
 class ListUsers extends BaseListUsers
 {
     protected static string $resource = UserResource::class;
-
-    #[\Override]
-    public function getTableColumns(): array
-    {
-        return [
-            // 'id' => TextColumn::make('id'),
-            'name' => TextColumn::make('name')->searchable(),
-            'email' => TextColumn::make('email')->searchable(),
-            // 'email_verified_at' => TextColumn::make('email_verified_at')
-            //    ->dateTime(),
-            // 'created_at' => TextColumn::make('created_at')
-            //    ->dateTime(),
-        ];
-    }
 
     /**
      * @return array<BaseFilter>

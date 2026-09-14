@@ -149,6 +149,14 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static Builder<static>|Profile                         whereNotes($value)
  * @method static Builder<static>|Profile                         byUuid(string $uuid)
  *
+ * @property string|null                                $uuid
+ * @property Collection<int, \Modules\User\Models\Team> $teams
+ * @property int|null                                   $teams_count
+ *
+ * @method static Builder<static>|Profile team($teams, bool $without = false)
+ * @method static Builder<static>|Profile whereUuid($value)
+ * @method static Builder<static>|Profile withoutTeam($teams)
+ *
  * @mixin \Eloquent
  */
 class Profile extends BaseProfile

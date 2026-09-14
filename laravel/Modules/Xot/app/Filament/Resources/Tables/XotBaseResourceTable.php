@@ -34,16 +34,15 @@ abstract class XotBaseResourceTable
     }
 
     /**
-     * @return array<int|string, Column>
+     * @return array<string, Column>
      */
     abstract public function getTableColumns(): array;
 
-
-     /**
+    /**
      * La Resource proprietaria, dedotta dal namespace `{Resource}\Schemas\{Model}Form`.
      *
      * @return class-string<XotBaseResource>
-    */ 
+     */
     public static function getResource(): string
     {
         $resource = Str::of(static::class)->before('\\Tables\\')->toString();
@@ -52,5 +51,4 @@ abstract class XotBaseResourceTable
 
         return $resource;
     }
-        
 }

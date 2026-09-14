@@ -78,6 +78,14 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder<static>|Consent                         whereIpAddress($value)
  * @method static Builder<static>|Consent                         whereUserAgent($value)
  *
+ * @property array<array-key, mixed>|null $metadata
+ * @property Carbon|null                  $revoked_at
+ * @property string|null                  $revoked_ip_address
+ *
+ * @method static Builder<static>|Consent whereMetadata($value)
+ * @method static Builder<static>|Consent whereRevokedAt($value)
+ * @method static Builder<static>|Consent whereRevokedIpAddress($value)
+ *
  * @mixin \Eloquent
  */
 class Consent extends BaseModel

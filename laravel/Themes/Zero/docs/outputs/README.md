@@ -1,5 +1,6 @@
 # LLM Wiki Outputs
 
+<<<<<<< .merge_file_5aPOu3
 [![Module](https://img.shields.io/badge/Module-LLM Wiki Outputs-8B0000.svg)]()
 [![Laravel 12](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)
 [![Filament 5](https://img.shields.io/badge/Filament-5-ffab00.svg)](https://filamentphp.com/)
@@ -32,3 +33,8 @@ Core module for the FixCity Platform.
 ---
 
 **Modulo** `Zero` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+Persistent answers, research reports, and generated summaries derived from this package wiki belong here.
+
+Outputs should cite the wiki or raw files they used, so later agents can audit the reasoning.
+>>>>>>> .merge_file_UphQk2
