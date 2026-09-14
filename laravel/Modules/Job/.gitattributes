@@ -1,28 +1,14 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 # Prototype: laravel/Modules/* e laravel/Themes/*
 # Canon: docs/wiki/rules/no-git-lfs.md
 # Sync: bash bashscripts/templates/sync-gitattributes-modules.sh
 #
 # Git LFS VIETATO. Binari = blob git normali.
 
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 * text=auto
 *.css linguist-vendored
 *.scss linguist-vendored
 *.js linguist-vendored
 CHANGELOG.md export-ignore
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 # Binary files (regular git blobs — NO git-lfs)
 # `binary` + `!filter` azzera eventuali filtri LFS ereditati
 *.png binary !filter
@@ -49,7 +35,3 @@ CHANGELOG.md export-ignore
 *.jpeg !text !filter !merge !diff
 *.gif !text !filter !merge !diff
 *.webp !text !filter !merge !diff
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

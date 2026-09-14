@@ -85,15 +85,7 @@ use Override;
  *
  * @mixin \Eloquent
  */
-<<<<<<< HEAD
 final class JobManager extends BaseModel
-=======
-<<<<<<< HEAD
-class JobManager extends BaseModel
-=======
-final class JobManager extends BaseModel
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 {
     // protected $table = 'job_manager';
 
@@ -109,22 +101,10 @@ final class JobManager extends BaseModel
         'exception_message',
     ];
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    public static function getJobId(JobContract $job): string|int
-    {
-        if ($jobId = $job->getJobId()) {
-=======
->>>>>>> laraxot/dev
     public static function getJobId(JobContract $job): string
     {
         $jobId = $job->getJobId();
         if ($jobId !== '') {
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
             return $jobId;
         }
 
@@ -180,23 +160,6 @@ final class JobManager extends BaseModel
     public function prunable(): Builder
     {
         if (config('jobs.pruning.activate')) {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            $retention_days = config('jobs.pruning.retention_days');
-            if (! is_int($retention_days)) {
-                $retention_days = 365;
-            }
-
-            return static::query()->where('created_at', '<=', now()->subDays($retention_days));
-        }
-
-        /** @var Builder<static> $query */
-        $query = static::query();
-
-        return $query;
-=======
->>>>>>> laraxot/dev
             $retentionDays = config('jobs.pruning.retention_days');
             if (! is_int($retentionDays)) {
                 $retentionDays = 365;
@@ -208,10 +171,6 @@ final class JobManager extends BaseModel
         }
 
         return self::query()->whereNotNull('id');
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     }
 
     #[Override]

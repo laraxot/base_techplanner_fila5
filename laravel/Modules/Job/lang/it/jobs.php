@@ -11,13 +11,6 @@ return [
         'created_at' => ['label' => 'created_at'],
         'status' => ['label' => 'status'],
         'name' => ['label' => 'name'],
-<<<<<<< HEAD
         'reserved_at' => ['label' => 'reserved_at'],
-=======
-<<<<<<< HEAD
-=======
-        'reserved_at' => ['label' => 'reserved_at'],
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     ],
 ];

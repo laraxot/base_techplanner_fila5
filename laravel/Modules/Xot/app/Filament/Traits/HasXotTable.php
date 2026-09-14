@@ -124,7 +124,6 @@ trait HasXotTable
      *
      * In content-grid ogni riga mostra label e valore sulla stessa linea (es. «Ente: 123»).
      *
-     * @phpstan-ignore deadCode.unreachable, foreach.emptyArray, booleanAnd.alwaysFalse, notIdentical.alwaysFalse, instanceof.alwaysFalse
      * @return array<int, Column|ColumnGroup|LayoutComponent>
      */
     public function getGridTableColumns(): array
