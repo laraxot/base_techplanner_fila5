@@ -83,3 +83,5 @@
 {"schemaVersion":2,"id":"6-1e507eae","kind":"capture","ref":"0180e90a736f699a","tool":"wiki_write","command":null,"shape":"json","costMs":7,"bytes":193,"anchors":[],"sessionId":"mcp-1087086-mtllkbgm","anchorHashes":[],"at":1788450798255}
 {"schemaVersion":2,"id":"7-b0caf2cc","episodeId":"mcp-1087086-mtllkbgm","sessionId":"mcp-1087086-mtllkbgm","arm":"full","client":"kilo","clientVersion":"7.4.23","kind":"mcp-tool","toolName":"wiki_write","durationMs":11,"success":true,"at":1788450798264}
 {"schemaVersion":2,"id":"1-5713881c","episodeId":"mcp-1469777-mtlt53nx","sessionId":"mcp-1469777-mtlt53nx","arm":"full","client":"kilo","clientVersion":"7.4.23","kind":"mcp-client","clientTitle":null,"at":1788457035511}
+{"schemaVersion":2,"id":"1-3c08985e","episodeId":"mcp-92669-mu1nb5v1","sessionId":"mcp-92669-mu1nb5v1","arm":"full","client":"rmcp","clientVersion":"3.1.0","kind":"mcp-client","clientTitle":null,"at":1789414698641}
+{"schemaVersion":2,"id":"1-ddeb4f52","episodeId":"mcp-12150-mu4h72f2","sessionId":"mcp-12150-mu4h72f2","arm":"full","client":"rmcp","clientVersion":"3.1.0","kind":"mcp-client","clientTitle":null,"at":1789585828551}
