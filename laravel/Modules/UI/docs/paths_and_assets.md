@@ -12,7 +12,11 @@
 
 ## Collegamenti correlati
 - [README modulo UI](/laravel/Modules/UI/docs/README.md)
+<<<<<<< HEAD
 - [Architettura Modulare](/laravel/Modules/UI/docs/ARCHITECTURE.md)
+=======
+- [Architettura Modulare](/laravel/Modules/UI/docs/architecture.md)
+>>>>>>> 92912795 (.)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Percorsi Corretti per gli Asset
@@ -22,8 +26,29 @@
 , è fondamentale rispettare la struttura corretta delle directory per gli asset pubblici:
 
 ```
+<<<<<<< HEAD
 /var/www/html/saluteora/
+<<<<<<< HEAD
 [project-root]/
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+/var/www/html/saluteora/
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+[project-root]/
+=======
+/var/www/html/saluteora/
+>>>>>>> f6fcbb6f (Fix merge conflict in .gitattributes by removing redundant lines and ensuring proper exclusion of image formats from text processing.)
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 92912795 (.)
+>>>>>>> laraxot/dev
 ├── laravel/                 # Applicazione Laravel (codice sorgente)
 │   ├── Modules/             # Moduli dell'applicazione
 │   ├── resources/           # Risorse non compilate
@@ -41,14 +66,45 @@
 
 | Tipo di Asset | ✅ Percorso Corretto | ❌ Percorso Errato |
 |---------------|---------------------|-------------------|
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 | Immagini | `[project-root]/public_html/images/` | `[project-root]/laravel/public/images/` |
 | CSS | `[project-root]/public_html/css/` | `[project-root]/laravel/public/css/` |
 | JavaScript | `[project-root]/public_html/js/` | `[project-root]/laravel/public/js/` |
 | SVG | `[project-root]/public_html/images/` | `[project-root]/laravel/public/images/` |
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 92912795 (.)
+>>>>>>> laraxot/dev
 | Immagini | `/var/www/html/saluteora/public_html/images/` | `/var/www/html/saluteora/laravel/public/images/` |
 | CSS | `/var/www/html/saluteora/public_html/css/` | `/var/www/html/saluteora/laravel/public/css/` |
 | JavaScript | `/var/www/html/saluteora/public_html/js/` | `/var/www/html/saluteora/laravel/public/js/` |
 | SVG | `/var/www/html/saluteora/public_html/images/` | `/var/www/html/saluteora/laravel/public/images/` |
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f6fcbb6f (Fix merge conflict in .gitattributes by removing redundant lines and ensuring proper exclusion of image formats from text processing.)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> f6fcbb6f (Fix merge conflict in .gitattributes by removing redundant lines and ensuring proper exclusion of image formats from text processing.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 92912795 (.)
 
 ## Utilizzo degli Asset nei Componenti Blade
 
@@ -79,8 +135,29 @@ Per garantire una buona esperienza utente, implementare sempre un fallback per l
 Gli SVG utilizzati come icone o componenti UI dovrebbero essere implementati come componenti Blade in:
 
 ```
+<<<<<<< HEAD
 /var/www/html/saluteora/laravel/Themes/One/resources/views/components/ui/
+<<<<<<< HEAD
 [project-root]/laravel/Themes/One/resources/views/components/ui/
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+/var/www/html/saluteora/laravel/Themes/One/resources/views/components/ui/
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+[project-root]/laravel/Themes/One/resources/views/components/ui/
+=======
+/var/www/html/saluteora/laravel/Themes/One/resources/views/components/ui/
+>>>>>>> f6fcbb6f (Fix merge conflict in .gitattributes by removing redundant lines and ensuring proper exclusion of image formats from text processing.)
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 92912795 (.)
+>>>>>>> laraxot/dev
 ```
 
 ### SVG come Asset Pubblici
@@ -88,8 +165,29 @@ Gli SVG utilizzati come icone o componenti UI dovrebbero essere implementati com
 Gli SVG utilizzati come immagini (avatar, loghi, ecc.) dovrebbero essere posizionati in:
 
 ```
+<<<<<<< HEAD
 /var/www/html/saluteora/public_html/images/
+<<<<<<< HEAD
 [project-root]/public_html/images/
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+/var/www/html/saluteora/public_html/images/
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+[project-root]/public_html/images/
+=======
+/var/www/html/saluteora/public_html/images/
+>>>>>>> f6fcbb6f (Fix merge conflict in .gitattributes by removing redundant lines and ensuring proper exclusion of image formats from text processing.)
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 92912795 (.)
+>>>>>>> laraxot/dev
 ```
 
 ## Gestione dei Componenti UI
@@ -99,15 +197,57 @@ Gli SVG utilizzati come immagini (avatar, loghi, ecc.) dovrebbero essere posizio
 Il componente avatar è implementato in:
 
 ```
+<<<<<<< HEAD
 /var/www/html/saluteora/laravel/Themes/One/resources/views/components/ui/avatar.blade.php
+<<<<<<< HEAD
 [project-root]/laravel/Themes/One/resources/views/components/ui/avatar.blade.php
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+/var/www/html/saluteora/laravel/Themes/One/resources/views/components/ui/avatar.blade.php
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+[project-root]/laravel/Themes/One/resources/views/components/ui/avatar.blade.php
+=======
+/var/www/html/saluteora/laravel/Themes/One/resources/views/components/ui/avatar.blade.php
+>>>>>>> f6fcbb6f (Fix merge conflict in .gitattributes by removing redundant lines and ensuring proper exclusion of image formats from text processing.)
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 92912795 (.)
+>>>>>>> laraxot/dev
 ```
 
 E utilizza gli avatar SVG dalla directory pubblica:
 
 ```
+<<<<<<< HEAD
 /var/www/html/saluteora/public_html/images/avatars/
+<<<<<<< HEAD
 [project-root]/public_html/images/avatars/
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+/var/www/html/saluteora/public_html/images/avatars/
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+[project-root]/public_html/images/avatars/
+=======
+/var/www/html/saluteora/public_html/images/avatars/
+>>>>>>> f6fcbb6f (Fix merge conflict in .gitattributes by removing redundant lines and ensuring proper exclusion of image formats from text processing.)
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 92912795 (.)
+>>>>>>> laraxot/dev
 ```
 
 ### Componente Icon
@@ -115,8 +255,29 @@ E utilizza gli avatar SVG dalla directory pubblica:
 Il componente icon è implementato in:
 
 ```
+<<<<<<< HEAD
 /var/www/html/saluteora/laravel/Themes/One/resources/views/components/ui/icon.blade.php
+<<<<<<< HEAD
 [project-root]/laravel/Themes/One/resources/views/components/ui/icon.blade.php
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+/var/www/html/saluteora/laravel/Themes/One/resources/views/components/ui/icon.blade.php
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+[project-root]/laravel/Themes/One/resources/views/components/ui/icon.blade.php
+=======
+/var/www/html/saluteora/laravel/Themes/One/resources/views/components/ui/icon.blade.php
+>>>>>>> f6fcbb6f (Fix merge conflict in .gitattributes by removing redundant lines and ensuring proper exclusion of image formats from text processing.)
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 92912795 (.)
+>>>>>>> laraxot/dev
 ```
 
 E include le definizioni SVG direttamente nel componente.
@@ -157,8 +318,29 @@ E include le definizioni SVG direttamente nel componente.
 
 ## Errori Comuni
 
+<<<<<<< HEAD
 1. **Utilizzo del percorso Laravel public**: Utilizzare `/var/www/html/saluteora/laravel/public/` invece di `/var/www/html/saluteora/public_html/`
+<<<<<<< HEAD
 1. **Utilizzo del percorso Laravel public**: Utilizzare `[project-root]/laravel/public/` invece di `[project-root]/public_html/`
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+1. **Utilizzo del percorso Laravel public**: Utilizzare `/var/www/html/saluteora/laravel/public/` invece di `/var/www/html/saluteora/public_html/`
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+1. **Utilizzo del percorso Laravel public**: Utilizzare `[project-root]/laravel/public/` invece di `[project-root]/public_html/`
+=======
+1. **Utilizzo del percorso Laravel public**: Utilizzare `/var/www/html/saluteora/laravel/public/` invece di `/var/www/html/saluteora/public_html/`
+>>>>>>> f6fcbb6f (Fix merge conflict in .gitattributes by removing redundant lines and ensuring proper exclusion of image formats from text processing.)
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 92912795 (.)
+>>>>>>> laraxot/dev
 2. **Riferimenti diretti ai file**: Utilizzare percorsi assoluti invece dell'helper `asset()`
 3. **Mancanza di fallback**: Non fornire alternative quando un'immagine non è disponibile
 4. **Inconsistenza nei nomi dei file**: Utilizzare convenzioni di naming diverse per file simili

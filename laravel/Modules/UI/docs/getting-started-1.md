@@ -77,6 +77,10 @@ npm run dev
 ```
 ### Versione HEAD
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 ## Collegamenti tra versioni di getting-started.md
 * [getting-started.md](../../../Gdpr/docs/getting-started.md)
 * [getting-started.md](../../../Xot/docs/getting-started.md)
@@ -90,6 +94,9 @@ npm run dev
 
 ---
 
+<<<<<<< HEAD
 ### Versione Incoming
 
 ---
+=======
+>>>>>>> laraxot/dev

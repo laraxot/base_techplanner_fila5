@@ -286,6 +286,8 @@ trait HasXotTable
             $table = $table->poll($pollInterval);
         }
 
+        $table = $this->applyReorderable($table);
+
         return $table;
     }
 
@@ -683,5 +685,48 @@ trait HasXotTable
     protected function hasSearch(): bool
     {
         return true;
+    }
+
+    /**
+     * Check if model has a specific column via schema introspection.
+     * Generic, reusable method for any column check.
+     */
+    protected function hasColumn(string $column): bool
+    {
+        $modelClass = $this->getModelClass();
+        $model = app($modelClass);
+        Assert::isInstanceOf($model, Model::class);
+
+        return $model->getConnection()
+            ->getSchemaBuilder()
+            ->hasColumn($model->getTable(), $column);
+    }
+
+    /**
+     * Get the column name used for table reordering.
+     * Returns 'order_column' if it exists in the model's table, null otherwise.
+     */
+    protected function getOrderColumn(): ?string
+    {
+        if ($this->hasColumn('order_column')) {
+            return 'order_column';
+        }
+    
+        return null;
+    }
+
+    /**
+     * Apply reorderable to table if order column is available.
+     */
+    protected function applyReorderable(Table $table): Table
+    {
+        $orderColumn = $this->getOrderColumn();
+       
+
+        if ($orderColumn !== null) {
+            return $table->reorderable($orderColumn);
+        }
+
+        return $table;
     }
 }

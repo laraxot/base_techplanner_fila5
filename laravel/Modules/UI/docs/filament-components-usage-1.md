@@ -132,6 +132,9 @@ Filament fornisce un componente `x-filament::dropdown` che può essere utilizzat
         </x-filament::button>
     </x-slot>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     
     <x-filament::dropdown.item wire:click="action">
         Azione 1
@@ -145,6 +148,7 @@ Filament fornisce un componente `x-filament::dropdown` che può essere utilizzat
 
 ## Best Practices
 
+<<<<<<< HEAD
 =======
     <x-filament::dropdown.item wire:click="action">
         Azione 1
@@ -155,6 +159,8 @@ Filament fornisce un componente `x-filament::dropdown` che può essere utilizzat
 ```
 ## Best Practices
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 1. **SEMPRE utilizzare i componenti Filament** quando disponibili invece di creare componenti personalizzati
 2. **SEMPRE utilizzare il prefisso corretto** `x-filament::` per accedere ai componenti Filament
 3. **MAI modificare direttamente i componenti Filament**, ma estenderli se necessario
@@ -162,11 +168,17 @@ Filament fornisce un componente `x-filament::dropdown` che può essere utilizzat
 5. **SEMPRE utilizzare le classi Tailwind** fornite da Filament per mantenere la coerenza visiva
 6. **SEMPRE verificare il percorso corretto** dei componenti e degli asset
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ## Errori Comuni
 
 =======
 ## Errori Comuni
+>>>>>>> laraxot/dev
+=======
+
+## Errori Comuni
+
 >>>>>>> laraxot/dev
 1. **Utilizzo del prefisso errato**: Utilizzare `x-ui-icon` invece di `x-filament::icon`
 2. **Percorso errato del provider**: Utilizzare `/var/www/html/saluteora/laravel/Modules/UI/Providers/UIServiceProvider.php` invece di `/var/www/html/saluteora/laravel/Modules/UI/app/Providers/UIServiceProvider.php`

@@ -16,5 +16,5 @@ class ListContacts extends XotBaseListRecords
 {
     protected static string $resource = ContactResource::class;
 
-   
+
 }

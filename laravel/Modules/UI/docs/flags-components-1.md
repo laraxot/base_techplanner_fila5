@@ -19,6 +19,9 @@ I file SVG delle bandiere sono archiviati in:
 /var/www/html/saluteora/laravel/Modules/UI/resources/svg/flags/
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 Ogni bandiera è rappresentata da un file SVG con il codice ISO del paese come nome file (ad esempio, `it.svg` per l'Italia, `gb.svg` per il Regno Unito).
 
@@ -26,10 +29,13 @@ Ogni bandiera è rappresentata da un file SVG con il codice ISO del paese come n
 
 I componenti SVG sono autoregistrati tramite il metodo `registerBladeIcons()` nel `XotBaseServiceProvider`. Questo metodo configura i set di icone Blade con il prefisso del modulo, consentendo di utilizzare i componenti SVG delle bandiere in qualsiasi vista Blade.
 
+<<<<<<< HEAD
 =======
 Ogni bandiera è rappresentata da un file SVG con il codice ISO del paese come nome file (ad esempio, `it.svg` per l'Italia, `gb.svg` per il Regno Unito).
 ## Registrazione Automatica
 I componenti SVG sono autoregistrati tramite il metodo `registerBladeIcons()` nel `XotBaseServiceProvider`. Questo metodo configura i set di icone Blade con il prefisso del modulo, consentendo di utilizzare i componenti SVG delle bandiere in qualsiasi vista Blade.
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ```php
 public function registerBladeIcons(): void
@@ -37,6 +43,9 @@ public function registerBladeIcons(): void
     // ...
     $svgPath = module_path($this->name, $relativePath.'/../svg');
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     // ...
     Config::set('blade-icons.sets.'.$this->nameLower.'.path', $svgPath);
     Config::set('blade-icons.sets.'.$this->nameLower.'.prefix', $this->nameLower);
@@ -49,6 +58,7 @@ public function registerBladeIcons(): void
 
 I componenti SVG delle bandiere possono essere utilizzati con la seguente sintassi:
 
+<<<<<<< HEAD
 =======
     Config::set('blade-icons.sets.'.$this->nameLower.'.path', $svgPath);
     Config::set('blade-icons.sets.'.$this->nameLower.'.prefix', $this->nameLower);
@@ -57,28 +67,41 @@ I componenti SVG delle bandiere possono essere utilizzati con la seguente sintas
 ### Sintassi Base
 I componenti SVG delle bandiere possono essere utilizzati con la seguente sintassi:
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 ```blade
 <x-ui-flags.it class="h-5 w-5" />
 <x-ui-flags.gb class="h-5 w-5" />
 <x-ui-flags.fr class="h-5 w-5" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 ```
 
 =======
+>>>>>>> laraxot/dev
+=======
+```
+
 >>>>>>> laraxot/dev
 Dove:
 - `ui` è il prefisso del modulo (in minuscolo)
 - `flags` è la sottodirectory all'interno della cartella `svg`
 - `it`, `gb`, `fr` sono i codici ISO dei paesi
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 ### Attributi Supportati
 
 I componenti SVG supportano tutti gli attributi HTML standard, inclusi:
 
+<<<<<<< HEAD
 =======
 ### Attributi Supportati
 I componenti SVG supportano tutti gli attributi HTML standard, inclusi:
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 - `class`: Per applicare classi CSS
 - `style`: Per applicare stili inline
@@ -86,12 +109,18 @@ I componenti SVG supportano tutti gli attributi HTML standard, inclusi:
 - `title`: Per aggiungere un titolo accessibile
 - `aria-*`: Per migliorare l'accessibilità
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 ### Esempio con Attributi
 
 ```blade
+<<<<<<< HEAD
 =======
 ### Esempio con Attributi
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 <x-ui-flags.it 
     class="h-6 w-6 rounded-full shadow-sm" 

@@ -1,14 +1,3 @@
----
-title: "PHPStan Level 10 Compliance Status"
-module: "Job"
-type: concept
-tags: [phpstan, compliance, status]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan compliance status"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
 # PHPStan Level 10 Compliance Status
 
 

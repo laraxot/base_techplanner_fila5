@@ -34,14 +34,21 @@ La struttura corretta per le risorse pubbliche  è la seguente:
 
 Le immagini devono essere posizionate in `/var/www/html/saluteora/public_html/images/` e organizzate in sottocartelle per tipologia:
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> laraxot/dev
+=======
+
 >>>>>>> laraxot/dev
 - `/images/avatars/` - Avatar utenti
 - `/images/logos/` - Loghi
 - `/images/icons/` - Icone
 - `/images/backgrounds/` - Sfondi
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 ### CSS e JavaScript
 
@@ -103,6 +110,7 @@ I font devono essere posizionati in `/public_html/fonts/` e organizzati per fami
 ### Avatar Utente
 
 ```blade
+<<<<<<< HEAD
 =======
 ### CSS e JavaScript
 I file CSS e JavaScript compilati devono essere posizionati in:
@@ -133,6 +141,8 @@ I font devono essere posizionati in `/public_html/fonts/` e organizzati per fami
    - Fornire fallback per browser più vecchi
 ## Esempi di Utilizzo
 ### Avatar Utente
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 <img 
     src="{{ $user->avatar ? asset('images/avatars/' . $user->avatar) : asset('images/default-avatar.svg') }}" 

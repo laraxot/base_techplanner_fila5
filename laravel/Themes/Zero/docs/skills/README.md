@@ -1,39 +1,5 @@
 # Skills per il Tema Zero
 
-<<<<<<< .merge_file_802KHC
-[![Module](https://img.shields.io/badge/Module-Skills per il Tema Zero-8B0000.svg)]()
-[![Laravel 12](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)
-[![Filament 5](https://img.shields.io/badge/Filament-5-ffab00.svg)](https://filamentphp.com/)
-[![PHP 8.4+](https://img.shields.io/badge/PHP-8.4+-777BB4.svg)](https://php.net/)
-[![PHPStan Level 10](https://img.shields.io/badge/PHPStan-Level%2010-brightgreen.svg)](https://phpstan.org/)
-[![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue.svg)](https://www.php-fig.org/psr/psr-12/)
-[![Architecture-Modular](https://img.shields.io/badge/Architecture-Modular-purple.svg)]()
-[![FixCity Platform](https://img.shields.io/badge/Platform-FixCity-008758.svg)]()
-
-> **Core module for the FixCity Platform.**
-
-## Perché esiste
-
-Core module for the FixCity Platform.
-
-## Superpoteri
-
-- Modular component with XotBase patterns
-- Professional-grade implementation
-- Integrated with FixCity Platform
-
-## Documentazione
-
-| Lingua | Link |
-|--------|------|
-| 🇮🇹 Presentazione | Questo file (`README.md`) |
-| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
-| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
-
----
-
-**Modulo** `Zero` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
-=======
 ## Panoramica
 
 Questo documento fornisce informazioni sulle skills disponibili per il tema Zero. Le skills permettono agli agenti AI di specializzarsi in aree specifiche del tema e migliorare la produttivita' nello sviluppo frontend.
@@ -252,4 +218,3 @@ public function getClasses(): string
 ## Conclusione
 
 Le skills per il tema Zero sono fondamentali per mantenere coerenza visiva e qualità del codice nel frontend. Con l'implementazione corretta di queste skills, il team può creare UI moderne, accessibili e performanti che rispettino il design system del tema.
->>>>>>> .merge_file_I7dyLB

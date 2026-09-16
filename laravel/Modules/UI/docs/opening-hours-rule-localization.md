@@ -128,7 +128,29 @@ App::setLocale('it');
 $rule = new OpeningHoursRule();
 // Verificare messaggi in italiano
 
+<<<<<<< HEAD
+// Test inglese  
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 // Test inglese
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+// Test inglese  
+=======
+// Test inglese
+>>>>>>> laraxot/dev
+=======
+// Test inglese  
+>>>>>>> f6fcbb6f (Fix merge conflict in .gitattributes by removing redundant lines and ensuring proper exclusion of image formats from text processing.)
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 92912795 (.)
 App::setLocale('en');
 $rule = new OpeningHoursRule();
 // Verificare messaggi in inglese
@@ -182,6 +204,22 @@ $rule = new OpeningHoursRule();
 - [Validation System](./validation_system.md)
 - [Localization Guidelines](./localization_guidelines.md)
 
+<<<<<<< HEAD
+*Correzione completata: gennaio 2025*
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+*Correzione completata: gennaio 2025*
+=======
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+*Correzione completata: gennaio 2025*
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 *Correzione completata: gennaio 2025*
 # Localizzazione OpeningHoursRule - Modulo UI
 ## Problema Identificato
@@ -317,3 +355,22 @@ App::setLocale('de');
 - [Opening Hours Field](./opening_hours_field.md)
 - [Validation System](./validation_system.md)
 - [Localization Guidelines](./localization_guidelines.md)
+<<<<<<< HEAD
+=======
+
+*Correzione completata: gennaio 2025*
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+*Correzione completata: gennaio 2025*
+>>>>>>> f6fcbb6f (Fix merge conflict in .gitattributes by removing redundant lines and ensuring proper exclusion of image formats from text processing.)
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 92912795 (.)
+>>>>>>> laraxot/dev

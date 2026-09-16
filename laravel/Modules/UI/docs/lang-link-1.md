@@ -28,3 +28,7 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](../../../Activity/docs/lang-link.md)
 * [lang-link.md](../../../Patient/docs/lang-link.md)
 * [lang-link.md](../../../Cms/docs/lang-link.md)
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev

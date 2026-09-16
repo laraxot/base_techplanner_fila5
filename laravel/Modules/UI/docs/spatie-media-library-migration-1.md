@@ -112,13 +112,19 @@ Ogni tipo di documento dovrà avere la sua collection specifica:
 'isee_certificate' => 'certificazioni_isee'
 'pregnancy_certificate' => 'certificati_gravidanza'
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 // Doctor Documents Collections  
 'certifications' => 'certificazioni_professionali'
 
+<<<<<<< HEAD
 =======
 // Doctor Documents Collections  
 'certifications' => 'certificazioni_professionali'
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 // UI/Appearance Collections
 'logos' => 'loghi_sistema'
@@ -126,11 +132,17 @@ Ogni tipo di documento dovrà avere la sua collection specifica:
 'headers' => 'intestazioni'
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 #### 1.2 Configurazione Media Collections
 
 =======
 #### 1.2 Configurazione Media Collections
+>>>>>>> laraxot/dev
+=======
+
+#### 1.2 Configurazione Media Collections
+
 >>>>>>> laraxot/dev
 ```php
 // In ogni modello che usa media
@@ -175,9 +187,13 @@ class SpatieDocumentUpload
             ->acceptedFileTypes(['image/jpeg', 'image/png', 'application/pdf']);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
+>>>>>>> laraxot/dev
+=======
+    
 >>>>>>> laraxot/dev
     public static function forHealthCard(): SpatieMediaLibraryFileUpload
     {
@@ -186,9 +202,13 @@ class SpatieDocumentUpload
             ->maxSize(5120); // 5MB per documenti leggeri
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
+>>>>>>> laraxot/dev
+=======
+    
 >>>>>>> laraxot/dev
     public static function forCertifications(): SpatieMediaLibraryFileUpload
     {
@@ -218,9 +238,13 @@ class SpatieImageUpload
             ->singleFile();
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
+>>>>>>> laraxot/dev
+=======
+    
 >>>>>>> laraxot/dev
     public static function forBackground(string $collection = 'backgrounds'): SpatieMediaLibraryFileUpload
     {
@@ -255,6 +279,9 @@ class SpatieImageUpload
     ->helperText(trans('saluteora::patients.fields.health_card.help')),
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 #### 3.2 UI Blocks - Standardizzazione Architettura
 
@@ -264,6 +291,7 @@ class SpatieImageUpload
 // PRIMA
 FileUpload::make('image'),
 
+<<<<<<< HEAD
 =======
 #### 3.2 UI Blocks - Standardizzazione Architettura
 ```php
@@ -271,11 +299,16 @@ FileUpload::make('image'),
 // PRIMA
 FileUpload::make('image'),
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 // DOPO  
 \Modules\UI\Filament\Components\SpatieImageUpload::make('image', 'content_images')
     ->imagePreviewHeight('250')
     ->conversion('thumbnail'),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ```
 
 ### **Fase 4: Migrazione Database e Conversioni**
@@ -283,9 +316,12 @@ FileUpload::make('image'),
 #### 4.1 Migrazione Dati Esistenti
 
 ```php
+<<<<<<< HEAD
 =======
 ### **Fase 4: Migrazione Database e Conversioni**
 #### 4.1 Migrazione Dati Esistenti
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 // Database/Migrations/migrate_file_uploads_to_media_library.php
 public function up(): void
@@ -293,8 +329,12 @@ public function up(): void
     // Migrazione automatica dei file esistenti
     $patients = Patient::whereNotNull('health_card')->get();
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
+>>>>>>> laraxot/dev
+=======
+    
 >>>>>>> laraxot/dev
     foreach($patients as $patient) {
         if($patient->health_card && Storage::exists($patient->health_card)) {
@@ -302,6 +342,9 @@ public function up(): void
                 ->toMediaCollection('tessere_sanitarie');
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     }
 }
 ```
@@ -309,8 +352,11 @@ public function up(): void
 #### 4.2 Rimozione Campi Database Obsoleti
 
 ```php
+<<<<<<< HEAD
 =======
 #### 4.2 Rimozione Campi Database Obsoleti
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 // Dopo migrazione completa - rimuovere colonne file paths
 Schema::table('users', function (Blueprint $table) {
@@ -323,6 +369,9 @@ Schema::table('users', function (Blueprint $table) {
     ]);
 });
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ```
 
 ---
@@ -336,12 +385,15 @@ Schema::table('users', function (Blueprint $table) {
 
 public function registerMediaCollections(): void
 {
+<<<<<<< HEAD
 =======
 ---
 ## 🔧 Implementazione Tecnica Dettagliata
 ### **Media Collections Configuration**
 // Modules/SaluteOra/app/Models/User.php - Aggiunta registerMediaCollections
 public function registerMediaCollections(): void
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
     // Documenti paziente
     $this->addMediaCollection('tessere_sanitarie')
@@ -349,6 +401,9 @@ public function registerMediaCollections(): void
         ->singleFile()
         ->useDisk('private');
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         
     $this->addMediaCollection('documenti_identita')
         ->acceptsMimeTypes(['image/jpeg', 'image/png', 'application/pdf'])
@@ -373,6 +428,7 @@ public function registerMediaCollections(): void
 
 public function registerMediaConversions(Media $media = null): void
 {
+<<<<<<< HEAD
 =======
     $this->addMediaCollection('documenti_identita')
     $this->addMediaCollection('certificazioni_isee')
@@ -382,12 +438,17 @@ public function registerMediaConversions(Media $media = null): void
     $this->addMediaCollection('certificazioni_professionali')
 public function registerMediaConversions(Media $media = null): void
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
     $this->addMediaConversion('thumbnail')
         ->width(300)
         ->height(300)
         ->sharpen(10)
         ->performOnCollections('tessere_sanitarie', 'documenti_identita');
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         
     $this->addMediaConversion('preview')
         ->width(600)
@@ -401,6 +462,7 @@ public function registerMediaConversions(Media $media = null): void
 ```php
 // Modules/SaluteOra/app/Models/User.php - Accessors di transizione
 
+<<<<<<< HEAD
 =======
     $this->addMediaConversion('preview')
         ->width(600)
@@ -408,12 +470,17 @@ public function registerMediaConversions(Media $media = null): void
 ### **Accessors per Backward Compatibility**
 // Modules/SaluteOra/app/Models/User.php - Accessors di transizione
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 /**
  * Accessor per compatibilità con codice esistente.
  * Restituisce URL del primo media nella collection health_card.
  */
 public function getHealthCardAttribute(): ?string
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 {
     return $this->getFirstMediaUrl('tessere_sanitarie');
 }
@@ -431,6 +498,7 @@ public function getCertificationsAttribute(): array
 
 ### **View Components Integration**
 
+<<<<<<< HEAD
 =======
     return $this->getFirstMediaUrl('tessere_sanitarie');
  * Accessor per array di certificazioni (dottori).
@@ -439,6 +507,8 @@ public function getCertificationsAttribute(): array
         ->map(fn($media) => $media->getUrl())
         ->toArray();
 ### **View Components Integration**
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ```blade
 {{-- resources/views/components/patient-documents.blade.php --}}
@@ -530,9 +600,13 @@ public function downloadDocument(Media $media): Response
 {
     $this->authorize('download', $media);
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
+>>>>>>> laraxot/dev
+=======
+    
 >>>>>>> laraxot/dev
     if($media->collection_name === 'tessere_sanitarie') {
         // Log accesso a documento sensibile
@@ -541,9 +615,13 @@ public function downloadDocument(Media $media): Response
             ->log('downloaded_health_card');
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
+>>>>>>> laraxot/dev
+=======
+    
 >>>>>>> laraxot/dev
     return response()->download($media->getPath());
 }
@@ -612,7 +690,11 @@ public function downloadDocument(Media $media): Response
 *Ultimo aggiornamento: Dicembre 2024*  
 *Versione: 1.0*  
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Compatibilità: Laraxot SaluteOra, Spatie Media Library 11.x, Filament 3.x* 
+=======
+*Compatibilità: Laraxot SaluteOra, Spatie Media Library 11.x, Filament 3.x* 
+>>>>>>> laraxot/dev
 =======
 *Compatibilità: Laraxot SaluteOra, Spatie Media Library 11.x, Filament 3.x* 
 >>>>>>> laraxot/dev

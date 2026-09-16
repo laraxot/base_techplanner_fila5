@@ -1,3 +1,18 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> f6fcbb6f (Fix merge conflict in .gitattributes by removing redundant lines and ensuring proper exclusion of image formats from text processing.)
+>>>>>>> 92912795 (.)
+>>>>>>> laraxot/dev
 # Documentation
 
 This directory contains documentation for the module.
@@ -14,6 +29,17 @@ Documentation should be:
 - Example-driven
 - Updated with code changes
 - Use Markdown format (.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ---
 title: "UI Module Documentation"
 type: documentation
@@ -22,6 +48,9 @@ created: 2026-06-05
 updated: 2026-06-05
 ---
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 # Modulo UI - Componenti Condivisi
 
 ## Overview
@@ -29,6 +58,11 @@ updated: 2026-06-05
 Il modulo **UI** fornisce componenti Blade, widget Filament e asset condivisi per tutti i moduli e temi.
 
 ## Struttura Componenti
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 This directory contains documentation for the module.
 
 ## Structure
@@ -37,6 +71,13 @@ This directory contains documentation for the module.
 - **README.md** - This file
 
 ## Guidelines
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ```
 resources/views/components/ui/
@@ -142,6 +183,7 @@ MIT
 - [QMD Setup](./qmd-setup.md) — Configurazione ricerca locale
 - [Performance](./performance-optimization.md) — Metriche e best practice
 - [Project Structure](./project-structure.md) — Directory layout
+<<<<<<< HEAD
 
     public function getTableContentGrid(): array
     {
@@ -1174,3 +1216,18 @@ L'ecosistema ha 40+ moduli che condividono l'interfaccia admin. Senza un design 
 ---
 
 *Documento generato secondo le convenzioni del progetto — modulo `UI` — data 2026-05-27*
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> f6fcbb6f (Fix merge conflict in .gitattributes by removing redundant lines and ensuring proper exclusion of image formats from text processing.)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> f6fcbb6f (Fix merge conflict in .gitattributes by removing redundant lines and ensuring proper exclusion of image formats from text processing.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 92912795 (.)
+>>>>>>> laraxot/dev

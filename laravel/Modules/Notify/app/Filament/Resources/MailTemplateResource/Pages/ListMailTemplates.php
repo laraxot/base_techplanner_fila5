@@ -13,7 +13,7 @@ class ListMailTemplates extends LangBaseListRecords
 {
     protected static string $resource = MailTemplateResource::class;
 
-   
 
-  
+
+
 }

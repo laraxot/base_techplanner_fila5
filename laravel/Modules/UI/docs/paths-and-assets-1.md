@@ -10,6 +10,9 @@
 
 # Gestione dei Percorsi e degli Asset 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 ## Collegamenti correlati
 - [README modulo UI](/laravel/Modules/UI/docs/README.md)
@@ -22,6 +25,7 @@
 
 , è fondamentale rispettare la struttura corretta delle directory per gli asset pubblici:
 
+<<<<<<< HEAD
 =======
 ## Collegamenti correlati
 - [README modulo UI](/laravel/Modules/UI/docs/README.md)
@@ -30,6 +34,8 @@
 ## Percorsi Corretti per gli Asset
 ### Struttura delle Directory
 , è fondamentale rispettare la struttura corretta delle directory per gli asset pubblici:
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ```
 /var/www/html/saluteora/
@@ -41,6 +47,9 @@
     ├── images/              # Immagini pubbliche
     │   ├── avatars/         # Avatar utenti
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     │   └── ...
     ├── css/                 # File CSS compilati
     ├── js/                  # File JavaScript compilati
@@ -49,11 +58,14 @@
 
 ### Percorsi Corretti vs Percorsi Errati
 
+<<<<<<< HEAD
 =======
     ├── css/                 # File CSS compilati
     ├── js/                  # File JavaScript compilati
     └── ...
 ### Percorsi Corretti vs Percorsi Errati
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 | Tipo di Asset | ✅ Percorso Corretto | ❌ Percorso Errato |
 |---------------|---------------------|-------------------|
@@ -94,15 +106,21 @@ Gli SVG utilizzati come icone o componenti UI dovrebbero essere implementati com
 /var/www/html/saluteora/laravel/Themes/One/resources/views/components/ui/
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 ### SVG come Asset Pubblici
 
 Gli SVG utilizzati come immagini (avatar, loghi, ecc.) dovrebbero essere posizionati in:
 
 ```
+<<<<<<< HEAD
 =======
 ### SVG come Asset Pubblici
 Gli SVG utilizzati come immagini (avatar, loghi, ecc.) dovrebbero essere posizionati in:
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 /var/www/html/saluteora/public_html/images/
 ```
@@ -117,12 +135,18 @@ Il componente avatar è implementato in:
 /var/www/html/saluteora/laravel/Themes/One/resources/views/components/ui/avatar.blade.php
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 E utilizza gli avatar SVG dalla directory pubblica:
 
 ```
+<<<<<<< HEAD
 =======
 E utilizza gli avatar SVG dalla directory pubblica:
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 /var/www/html/saluteora/public_html/images/avatars/
 ```
@@ -135,14 +159,20 @@ Il componente icon è implementato in:
 /var/www/html/saluteora/laravel/Themes/One/resources/views/components/ui/icon.blade.php
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 E include le definizioni SVG direttamente nel componente.
 
 ## Regola sui Componenti Blade UI
 
+<<<<<<< HEAD
 =======
 E include le definizioni SVG direttamente nel componente.
 ## Regola sui Componenti Blade UI
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 > **IMPORTANTE:** Tutti i componenti Blade UI condivisi (es. logo, button, badge, ecc.) devono essere posizionati esclusivamente in:
 >
@@ -164,15 +194,21 @@ E include le definizioni SVG direttamente nel componente.
 ```
 **✅ Corretto:**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ```
 /var/www/html/ptvx/laravel/Modules/UI/resources/views/components/ui/logo.blade.php
 ```
 
 ## Best Practices
 
+<<<<<<< HEAD
 =======
 /var/www/html/ptvx/laravel/Modules/UI/resources/views/components/ui/logo.blade.php
 ## Best Practices
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 1. **MAI utilizzare percorsi assoluti hardcoded** nei componenti Blade
 2. **SEMPRE utilizzare l'helper `asset()`** per riferirsi agli asset pubblici
@@ -181,11 +217,17 @@ E include le definizioni SVG direttamente nel componente.
 5. **Seguire le convenzioni di naming** per mantenere la coerenza
 6. **Documentare i percorsi corretti** per evitare confusione
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ## Errori Comuni
 
 =======
 ## Errori Comuni
+>>>>>>> laraxot/dev
+=======
+
+## Errori Comuni
+
 >>>>>>> laraxot/dev
 1. **Utilizzo del percorso Laravel public**: Utilizzare `/var/www/html/saluteora/laravel/public/` invece di `/var/www/html/saluteora/public_html/`
 2. **Riferimenti diretti ai file**: Utilizzare percorsi assoluti invece dell'helper `asset()`

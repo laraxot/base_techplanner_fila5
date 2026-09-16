@@ -112,6 +112,22 @@ composer format        # Formatta il codice
 - File upload
 
 ## Changelog
+<<<<<<< HEAD
+Le modifiche vengono tracciate nel repository GitHub. 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+Le modifiche vengono tracciate nel repository GitHub. 
+=======
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Le modifiche vengono tracciate nel repository GitHub. 
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 Le modifiche vengono tracciate nel repository GitHub.
 # Modulo UI
 ## Informazioni Generali
@@ -205,3 +221,21 @@ composer format        # Formatta il codice
 - Date pickers
 - File upload
 ## Changelog
+<<<<<<< HEAD
+=======
+Le modifiche vengono tracciate nel repository GitHub.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+Le modifiche vengono tracciate nel repository GitHub. 
+>>>>>>> f6fcbb6f (Fix merge conflict in .gitattributes by removing redundant lines and ensuring proper exclusion of image formats from text processing.)
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 92912795 (.)
+>>>>>>> laraxot/dev

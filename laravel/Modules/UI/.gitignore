@@ -214,3 +214,14 @@ phpmd.ruleset.xml
 phpmd.ruleset.xml.bak
 graphify-out
 docs/_archive
+
+phpinsights.php
+
+# Laraxot — forbidden at module/theme root (rector.php, phpinsights.php, .cursor, .windsurf, .vscode)
+/rector.php
+/phpinsights.php
+/.cursor
+/.windsurf
+/.vscode
+.cursor~*
+.windsurf~*

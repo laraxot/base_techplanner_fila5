@@ -200,6 +200,22 @@ TextInput::make('full_name')
 
 ## Vedi Anche
 - [VSCode PHP Setup](vscode-php-setup.md)
+<<<<<<< HEAD
+- [Development Tools](development-tools.md)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Development Tools](development-tools.md)
+=======
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Development Tools](development-tools.md)
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Development Tools](development-tools.md)
 - [Filament Documentation](https://filamentphp.com/docs)
 # Plugin VSCode per Filament
@@ -337,5 +353,26 @@ TextInput::make('full_name')
 - [Translation System](../../Lang/project_docs/translation-system.md)
 ## Vedi Anche
 - [VSCode PHP Setup](vscode-php-setup.md)
+<<<<<<< HEAD
 
 ```
+=======
+- [Development Tools](development-tools.md)
+- [Filament Documentation](https://filamentphp.com/docs)
+- [Filament Documentation](https://filamentphp.com/docs)
+- [Filament Documentation](https://filamentphp.com/docs)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+- [Development Tools](development-tools.md)
+>>>>>>> f6fcbb6f (Fix merge conflict in .gitattributes by removing redundant lines and ensuring proper exclusion of image formats from text processing.)
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> 92912795 (.)
+>>>>>>> laraxot/dev

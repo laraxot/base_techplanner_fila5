@@ -25,76 +25,123 @@ class StudioCardSelector extends Field
     // Dati studios da visualizzare
     protected Collection|Closure|null $studios = null;
     
+<<<<<<< HEAD
 
     // Dati studios da visualizzare
     protected Collection|Closure|null $studios = null;
 
+=======
+>>>>>>> laraxot/dev
     // Personalizzazioni UI
     protected bool $showDistance = false;
     protected bool $showSpecializations = false;
     protected bool $showPhone = false;
     protected string $cardLayout = 'default'; // 'default', 'compact', 'detailed'
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> laraxot/dev
     // Configure studios data source
     public function studios(Collection|Closure $studios): static
     {
         $this->studios = $studios;
         return $this;
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> laraxot/dev
     // Enable/disable features
     public function showDistance(bool $show = true): static
     {
         $this->showDistance = $show;
         return $this;
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> laraxot/dev
     public function showSpecializations(bool $show = true): static
     {
         $this->showSpecializations = $show;
         return $this;
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> laraxot/dev
     public function showPhone(bool $show = true): static
     {
         $this->showPhone = $show;
         return $this;
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> laraxot/dev
     // Layout variants
     public function compact(): static
     {
         $this->cardLayout = 'compact';
         return $this;
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> laraxot/dev
     public function detailed(): static
     {
         $this->cardLayout = 'detailed';
         return $this;
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> laraxot/dev
     // Data getters for view
     public function getStudios(): Collection
     {
         return $this->evaluate($this->studios) ?? collect();
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> laraxot/dev
     public function getCardLayout(): string
     {
         return $this->cardLayout;
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> laraxot/dev
     public function shouldShowDistance(): bool
     {
         return $this->showDistance;
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> laraxot/dev
     public function shouldShowSpecializations(): bool
     {
         return $this->showSpecializations;
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> laraxot/dev
     public function shouldShowPhone(): bool
     {
         return $this->showPhone;
@@ -131,6 +178,7 @@ private function getStudiosForLocation(Get $get): Collection
     }
     
     return \Modules\SaluteOra\Models\Studio::whereHas('address', function($q) use ($cap, $province, $region) {
+<<<<<<< HEAD
     $province = $get('province');
     $region = $get('region');
 
@@ -139,6 +187,8 @@ private function getStudiosForLocation(Get $get): Collection
     }
 
     return \Modules\<nome progetto>\Models\Studio::whereHas('address', function($q) use ($cap, $province, $region) {
+=======
+>>>>>>> laraxot/dev
         $q->where('postal_code', $cap)
           ->where('administrative_area_level_3', $province)
           ->where('administrative_area_level_2', $region);
@@ -197,6 +247,7 @@ return [
 
 **Component Status**: 📋 Documented - Ready for Implementation  
 **Reusability**: 🔄 High - Cross-module compatible  
+<<<<<<< HEAD
 **Last Updated**: January 2025 
 ### Modulo <nome progetto>
 - [Widget Analysis](../<nome progetto>/docs/widgets/find-doctor-widget-studio-step-analysis.md)
@@ -206,3 +257,6 @@ return [
 **Component Status**: 📋 Documented - Ready for Implementation
 **Reusability**: 🔄 High - Cross-module compatible
 **Last Updated**: January 2025
+=======
+**Last Updated**: January 2025 
+>>>>>>> laraxot/dev

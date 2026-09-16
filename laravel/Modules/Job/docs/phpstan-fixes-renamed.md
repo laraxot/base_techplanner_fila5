@@ -1,14 +1,3 @@
----
-title: "🔧 PHPStan Fixes - Modulo Job - Gennaio 2025"
-module: "Job"
-type: concept
-tags: [phpstan, fixes, renamed]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan fixes renamed"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
 # 🔧 PHPStan Fixes - Modulo Job - Gennaio 2025
 
 **Status**: ✅ COMPLETATO CON SUCCESSO
@@ -193,7 +182,7 @@ public function __construct(string $output)
 ## 📚 **Riferimenti**
 
 ### **Documentazione Correlata**
-- [README.md Modulo Job](README.md)
+- [README.md Modulo Job](./readme.md)
 - [Queue Management](./queue/readme.md)
 - [Best Practices](./best-practices.md)
 

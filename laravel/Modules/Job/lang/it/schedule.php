@@ -33,7 +33,7 @@ return [
         'reorderRecords' => ['label' => 'reorderRecords', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'resetFilters' => ['label' => 'resetFilters', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'params' => ['label' => 'params', 'placeholder' => 'params', 'helper_text' => 'params', 'description' => 'params'],
-        'value' => ['label' => 'value', 'placeholder' => 'value', 'helper_text' => 'value', 'description' => 'value'],
+        'value' => ['label' => 'value', 'placeholder' => 'value', 'helper_text' => '', 'description' => 'value'],
         'options_with_value' => ['label' => 'options_with_value', 'placeholder' => 'options_with_value', 'helper_text' => 'options_with_value', 'description' => 'options_with_value'],
         'type' => ['label' => 'type', 'placeholder' => 'type', 'helper_text' => 'type', 'description' => 'type'],
         'environments' => ['label' => 'environments', 'placeholder' => 'environments', 'helper_text' => 'environments', 'description' => 'environments'],

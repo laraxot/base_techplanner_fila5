@@ -148,11 +148,7 @@ Anche se i temi sono principalmente presentation layer, alcune parti contengono 
 **Fix** ✅:
 ```php
 // In Folio page or controller
-<<<<<<< .merge_file_jULGnR
-use Modules\User\Models\User;
-=======
 use Modules\Xot\Contracts\UserContract;
->>>>>>> .merge_file_5Ugkpf
 
 render(fn (User $user) => view('pub_theme::pages.users.show', [
     'user' => $user,
@@ -182,11 +178,7 @@ render(fn (User $user) => view('pub_theme::pages.users.show', [
 ```php
 <?php
 
-<<<<<<< .merge_file_jULGnR
-use Modules\User\Models\User;
-=======
 use Modules\Xot\Contracts\UserContract;
->>>>>>> .merge_file_5Ugkpf
 use Illuminate\Database\Eloquent\Collection;
 use function Laravel\Folio\{name, render};
 
@@ -473,11 +465,7 @@ Themes/Zero/
 <?php
 // resources/views/pages/dashboard.blade.php
 
-<<<<<<< .merge_file_jULGnR
-use Modules\User\Models\User;
-=======
 use Modules\Xot\Contracts\UserContract;
->>>>>>> .merge_file_5Ugkpf
 use Modules\Analytics\Services\StatsService;
 use function Laravel\Folio\{name, render};
 

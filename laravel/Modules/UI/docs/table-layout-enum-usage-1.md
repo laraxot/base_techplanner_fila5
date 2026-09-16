@@ -12,19 +12,31 @@ use Modules\UI\Enums\TableLayoutEnum;
 class ListUsers extends ListRecords
 {
     protected TableLayoutEnum $layout;
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> laraxot/dev
     public function mount(): void
     {
         $this->layout = TableLayoutEnum::LIST;
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> laraxot/dev
     public function table(Table $table): Table
     {
         return $table
             ->columns($this->getColumnsForLayout())
             ->contentGrid($this->layout->getTableContentGrid());
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> laraxot/dev
     /**
      * Restituisce le colonne appropriate per il layout corrente
      */
@@ -35,7 +47,11 @@ class ListUsers extends ListRecords
             Tables\Columns\TextColumn::make('email'),
             Tables\Columns\TextColumn::make('created_at'),
         ];
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> laraxot/dev
         $gridColumns = [
             Tables\Columns\Layout\Stack::make([
                 Tables\Columns\TextColumn::make('name')
@@ -47,10 +63,13 @@ class ListUsers extends ListRecords
         return $this->layout->getTableColumns($listColumns, $gridColumns);
     }
     
+<<<<<<< HEAD
 
         return $this->layout->getTableColumns($listColumns, $gridColumns);
     }
 
+=======
+>>>>>>> laraxot/dev
     /**
      * Toggle del layout tramite action
      */
@@ -78,4 +97,8 @@ class ListUsers extends ListRecords
 
 Il metodo `getTableColumns()` ora richiede due parametri:
 - `$listColumns`: Array delle colonne per layout lista
+<<<<<<< HEAD
 - `$gridColumns`: Array delle colonne per layout griglia
+=======
+- `$gridColumns`: Array delle colonne per layout griglia 
+>>>>>>> laraxot/dev

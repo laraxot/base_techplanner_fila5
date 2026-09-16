@@ -5,6 +5,7 @@ canonical: ../../../Themes/docs/shared-components/selectstatecolumn-confirmation
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/selectstatecolumn-confirmation-modal-1.md
+<<<<<<< HEAD
 # SelectStateColumn - Aggiunta Modal di Conferma
 
 ## Panoramica
@@ -57,3 +58,5 @@ Verificare che:
 3. La modale si chiuda in entrambi gli scenari
 4. Lo stato venga aggiornato correttamente nel database
 5. Gli errori vengano gestiti in modo appropriato
+=======
+>>>>>>> laraxot/dev

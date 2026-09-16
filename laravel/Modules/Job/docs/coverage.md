@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Code Coverage: Job"
 module: "Job"
@@ -10,6 +11,7 @@ related:
   - "./phpstan-fixes-archive-2.md"
   - "./stories/01.Job-phpstan-fix.story.md"
 ---
+<<<<<<< HEAD
 
 ## 2026-09-11 — Dead Table class + `$model` bug follow-up (`JobBatchResource`/`JobsWaitingResource`)
 
@@ -113,6 +115,10 @@ Scope: `app/Filament/Columns/ScheduleArguments.php`,
   `SafeEloquentCastAction` helpers already used elsewhere in this module for
   identical semantics.
 
+=======
+=======
+>>>>>>> af4545e (.)
+>>>>>>> laraxot/dev
 # Code Coverage: Job
 
 **Lines Coverage:** N/A (Failed to parse)

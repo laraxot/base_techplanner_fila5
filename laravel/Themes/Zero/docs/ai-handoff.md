@@ -15,12 +15,8 @@ related:
 ## regole non negoziabili
 
 - tests solo pest
-<<<<<<< .merge_file_aSNa5g
 - nei tests **MAI** `RefreshDatabase` / `DatabaseMigrations`
 - **MAI** `migrate:fresh`, `migrate --force`, `db:wipe` — i dati sono sacri
-=======
-- nei tests MAI RefreshDatabase
->>>>>>> .merge_file_F6ZIEp
 - i tests devono leggere `.env.testing`
 
 ## stato lavori (ultimo)
@@ -32,8 +28,12 @@ related:
 ## dove scambiarci le informazioni
 
 - questo file (`Themes/Zero/docs/ai-handoff.md`) contiene handoff cross-agente lato tema
+- **coordinamento lavoro prodotto/moduli:** BMAD stories sotto `Modules/*/docs/bmad/` +
+  `docs/sprint-status.yaml` + `bashscripts/lock/` — **non** `docs/chat/`
 - per lo stato tecnico e regole dettagliate, vedere:
   - `../../Modules/Xot/docs/ai-handoff.md`
+  - pack Rating attivo: `../../Modules/Rating/docs/bmad/README.md`
+  - pack filtri schede: `../../Modules/Ptv/docs/bmad/architecture/scheda-lista-filtri-layout.md`
 
 ## cosa va scritto prima di lavorare
 

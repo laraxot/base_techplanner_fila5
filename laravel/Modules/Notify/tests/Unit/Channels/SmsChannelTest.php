@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Notify\Tests\Unit\Channels;
 
 use Modules\Notify\Channels\SmsChannel;
+use Modules\Notify\Factories\SmsActionFactory;
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -48,7 +49,7 @@ describe('SmsChannel', function () {
 
         Assert::assertNotNull($param);
         Assert::assertSame(
-            \Modules\Notify\Factories\SmsActionFactory::class,
+            SmsActionFactory::class,
             $param->getType() instanceof \ReflectionNamedType ? $param->getType()->getName() : null,
         );
     });
