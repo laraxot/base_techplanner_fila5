@@ -1,8 +1,3 @@
-<?php
-
-declare(strict_types=1);
-
-?>
 {{-- Testimonials Block - Theme Zero (Fallback) --}}
 <section style="padding: 40px 20px; background: white;">
     <div style="max-width: 1000px; margin: 0 auto;">

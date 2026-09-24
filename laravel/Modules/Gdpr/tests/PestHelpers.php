@@ -25,7 +25,7 @@ function gdprTest(): TestCase
         return TestCase::$currentTest;
     }
 
-    throw new \RuntimeException('gdprTest() richiede un test attivo (TestCase::$currentTest).');
+    throw new RuntimeException('gdprTest() richiede un test attivo (TestCase::$currentTest).');
 }
 
 /**
@@ -39,8 +39,9 @@ function gdprGet(string $uri, array $headers = []): TestResponse
 }
 
 /**
- * @param  array<string, mixed>  $data
- * @param  array<string, string>  $headers
+ * @param array<string, mixed>  $data
+ * @param array<string, string> $headers
+ *
  * @return TestResponse<Response>
  */
 function gdprPost(string $uri, array $data = [], array $headers = []): TestResponse
@@ -54,7 +55,7 @@ function gdprActingAs(Authenticatable $user, ?string $driver = null): void
 }
 
 /**
- * @param  array<string, mixed>  $parameters
+ * @param array<string, mixed> $parameters
  */
 function gdprArtisan(string $command, array $parameters = []): int
 {
@@ -63,11 +64,11 @@ function gdprArtisan(string $command, array $parameters = []): int
 
 function gdprSkipTest(string $message = ''): void
 {
-    Assert::markTestSkipped($message !== '' ? $message : 'Skipped');
+    Assert::markTestSkipped('' !== $message ? $message : 'Skipped');
 }
 
 /**
- * @param  array<string, mixed>  $where
+ * @param array<string, mixed> $where
  */
 function assertGdprTableHas(string $table, array $where, ?string $connection = 'gdpr'): void
 {
@@ -81,7 +82,7 @@ function assertGdprTableHas(string $table, array $where, ?string $connection = '
 }
 
 /**
- * @param  array<string, mixed>  $data
+ * @param array<string, mixed> $data
  */
 function gdprAssertDatabaseHas(string $table, array $data, ?string $connection = null): void
 {
@@ -94,7 +95,7 @@ function gdprAssertDatabaseHas(string $table, array $data, ?string $connection =
 }
 
 /**
- * @param  array<string, mixed>  $where
+ * @param array<string, mixed> $where
  */
 function assertGdprTableMissing(string $table, array $where, ?string $connection = 'gdpr'): void
 {
@@ -108,7 +109,7 @@ function assertGdprTableMissing(string $table, array $where, ?string $connection
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function createGdprConsent(array $attributes = []): Consent
 {
@@ -125,26 +126,26 @@ function gdprAssertDatabaseAvailable(): void
 }
 
 /**
- * @param  class-string<Throwable>  $exceptionClass
+ * @param class-string<Throwable> $exceptionClass
  */
 function gdprAssertThrows(string $exceptionClass, callable $callback): void
 {
     try {
         $callback();
         Assert::fail('Expected '.$exceptionClass);
-    } catch (\Throwable $e) {
+    } catch (Throwable $e) {
         Assert::assertInstanceOf($exceptionClass, $e);
     }
 }
 
 /**
- * @param  class-string<Throwable>  $exceptionClass
+ * @param class-string<Throwable> $exceptionClass
  */
 function gdprAssertDoesNotThrow(string $exceptionClass, callable $callback): void
 {
     try {
         $callback();
-    } catch (\Throwable $e) {
+    } catch (Throwable $e) {
         if ($e instanceof $exceptionClass) {
             Assert::fail('Unexpected '.$exceptionClass.': '.$e->getMessage());
         }
@@ -154,8 +155,8 @@ function gdprAssertDoesNotThrow(string $exceptionClass, callable $callback): voi
 }
 
 /**
- * @param  list<string>  $fields
- * @param  array<string>  $fillable
+ * @param list<string>  $fields
+ * @param array<string> $fillable
  */
 function assertFillableContains(array $fields, array $fillable): void
 {

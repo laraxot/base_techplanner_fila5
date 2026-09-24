@@ -1,8 +1,3 @@
-<?php
-
-declare(strict_types=1);
-
-?>
 {{-- Hero Section Block - Theme Zero (Fallback) --}}
 <section style="background: linear-gradient(135deg, #1e293b 0%, #475569 100%); color: white; padding: 60px 20px; text-align: center;">
     @if(isset($title))

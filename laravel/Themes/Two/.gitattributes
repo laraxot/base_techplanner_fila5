@@ -30,6 +30,25 @@ CHANGELOG.md export-ignore
 *.phar binary !filter
 *.db binary !filter
 *.sqlite binary !filter
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+* text=auto
+
+>>>>>>> laraxot/dev
+*.blade.php diff=html
+*.css diff=css
+*.html diff=html
+*.md diff=markdown
+*.php diff=php
+/.github export-ignore
+<<<<<<< HEAD
+=======
+CHANGELOG.md export-ignore
+>>>>>>> laraxot/dev
+.styleci.yml export-ignore
+=======
+>>>>>>> eade870 (fix: .gitattributes con marker riallineato al prototipo no-LFS)
 *.png !text !filter !merge !diff
 *.svg !text !filter !merge !diff
 *.jpg !text !filter !merge !diff

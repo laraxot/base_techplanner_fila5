@@ -1,6 +1,5 @@
 # Story: Reduce mixed type usage — Gdpr
 
-<<<<<<< HEAD
 **Fase BMAD**: Qualita del codice (type-safety). Nessun PrivacyPolicyWidget. Nessun tocco a User 10.4.
 
 **Contesto**: convenzione di progetto ("cerchiamo di non usare mixed, quando lo troviamo cerchiamo di
@@ -38,10 +37,8 @@ l'unica descrizione onesta.
 **Fuori scope (esplicito)**: nessun `PrivacyPolicyWidget` creato o modificato; User 10.4 non toccato.
 
 **Verifica**: PHPStan senza `--level` (livello da `phpstan.neon`) e PHPMD sul modulo, dopo lock/unlock.
-=======
 **Fase BMAD**: Qualita del codice (type-safety), nessuna modifica di comportamento applicativo.
 
-**Contesto**: convenzione di progetto ("cerchiamo di non usare mixed, quando lo troviamo cerchiamo di
 sostituirlo con qualcosa di adeguato"). Il modulo Gdpr aveva 21 occorrenze di `mixed` in 11 file, tutte
 in PHPDoc (nessun type-hint nativo `mixed` in firma di metodo).
 
@@ -102,4 +99,3 @@ stesso pattern gia' documentato e verificato in `Modules/Notify/phpunit.xml`.
 
 **Dettaglio numerico**: 21 occorrenze di `mixed` trovate in 11 file; 8 sostituite/ristrette in 6 file
 (1 param narrowing consolidato da 3 righe duplicate a 1); 13 lasciate invariate con motivazione in 5 file.
->>>>>>> laraxot/dev

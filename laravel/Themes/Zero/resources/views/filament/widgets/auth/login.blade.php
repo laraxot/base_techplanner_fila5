@@ -1,8 +1,3 @@
-<?php
-
-declare(strict_types=1);
-
-?>
 {{-- Vista per il LoginWidget nel tema Zero --}}
 {{-- Questa vista è minimalista e focalizzata solo sul layout/styling --}}
 

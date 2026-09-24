@@ -1,8 +1,3 @@
-<?php
-
-declare(strict_types=1);
-
-?>
 <x-layouts.app>
     <div class="content">
         <h2>Welcome to Zero Theme</h2>

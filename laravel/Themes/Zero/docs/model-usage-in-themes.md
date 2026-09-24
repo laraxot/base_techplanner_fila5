@@ -61,6 +61,7 @@ Widgets encapsulate both logic and data access, passing only the necessary data 
 
 namespace Modules\User\Filament\Widgets\Auth;
 
+use Modules\User\Models\User;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
@@ -113,6 +114,7 @@ For Folio pages that need data, use route model binding or controller-like logic
 ```php
 <?php
 
+use Modules\User\Models\User;
 use Modules\Xot\Contracts\UserContract;
 use function Laravel\Folio\{name, render};
 
@@ -132,6 +134,7 @@ render(fn (User $user) => view('pub_theme::pages.users.show', [
 ```
 
 **Key Points:**
+- ✅ Import model from module: `use Modules\User\Models\User;`
 - ✅ Import model from module: `use Modules\Xot\Contracts\UserContract;`
 - ✅ Use route model binding for automatic loading
 - ✅ Pass data to view as variables
@@ -144,6 +147,7 @@ For data needed across multiple views (e.g., navigation, user info).
 **Service Provider (Modules/User/Providers/UserServiceProvider.php):**
 ```php
 use Illuminate\Support\Facades\View;
+use Modules\User\Models\User;
 use Modules\Xot\Contracts\UserContract;
 
 public function boot(): void
@@ -268,6 +272,7 @@ render(fn (User $user) => view('pub_theme::pages.users.show', [
 **✅ Use Folio for Simple Lists:**
 ```php
 // Folio page
+use Modules\User\Models\User;
 use Modules\Xot\Contracts\UserContract;
 
 render(fn () => view('pub_theme::pages.users.index', [
@@ -294,6 +299,7 @@ render(fn () => view('pub_theme::pages.users.index', [
 
 1. **Import Models from Modules**
    ```php
+   use Modules\User\Models\User;
    use Modules\Xot\Contracts\UserContract;
    use Modules\Cms\Models\Post;
    ```
@@ -413,6 +419,7 @@ test('login widget provides form to theme view', function () {
 ### Test 2: Verify Folio Page Data Binding
 
 ```php
+use Modules\User\Models\User;
 use Modules\Xot\Contracts\UserContract;
 
 test('user profile page displays user data', function () {
@@ -516,6 +523,7 @@ use Modules\User\Models\CustomUser;  // ✅ NEW
 
 **Solution:** Import at top of Folio page or pass via widget:
 ```php
+use Modules\User\Models\User;
 use Modules\Xot\Contracts\UserContract;
 ```
 

@@ -1,8 +1,3 @@
-<?php
-
-declare(strict_types=1);
-
-?>
 {{-- CTA Banner Block - Theme Zero (Fallback) --}}
 <section style="padding: 40px 20px; background: #1e40af; color: white; text-align: center;">
     <div style="max-width: 800px; margin: 0 auto;">

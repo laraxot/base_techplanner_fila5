@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Code Coverage: Gdpr
 
 **Lines Coverage:** N/A (Failed to parse)
@@ -77,13 +76,10 @@
 
   1   Modules/Gdpr/tests/Unit/Models/GdprConsentTest.php:44
 
-
   Tests:    24 failed, 4 warnings, 2 passed (10 assertions)
   Duration: 4.04s
 
-
 ```
-=======
 # Coverage — Gdpr
 
 ## 2026-09-04 — Riduzione uso di `mixed`
@@ -119,4 +115,3 @@ PHPDoc, verificato via `git diff`): includono un bug pre-esistente in `ValidateU
 si aspettano una chiave `state` mai impostata dal metodo `execute()`), collisioni su vincolo unique nel
 DB MySQL di test condiviso, e risposte 500 su rotte di registrazione. Non dichiarato "verde" perche' non
 lo e'; onesto: 167/249 test eseguiti passano, indipendentemente da questa modifica.
->>>>>>> laraxot/dev
