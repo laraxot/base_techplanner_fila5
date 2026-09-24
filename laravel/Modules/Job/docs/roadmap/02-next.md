@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ---
 title: "Next (Module Job)"
 module: "Job"
@@ -9,6 +13,11 @@ qmd: "02 next"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> af4545e (.)
+>>>>>>> laraxot/dev
 # Next (Module Job)
 
 ## Features

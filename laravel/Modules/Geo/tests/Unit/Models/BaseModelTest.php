@@ -9,7 +9,12 @@ use Modules\Geo\Models\BaseModel;
 use PHPUnit\Framework\Assert;
 
 test('base model extends eloquent model', function () {
+<<<<<<< HEAD
     $baseModel = new class extends BaseModel {
+=======
+    $baseModel = new class() extends BaseModel
+    {
+>>>>>>> laraxot/dev
         protected $table = 'test_geo_table';
     };
 
@@ -17,7 +22,12 @@ test('base model extends eloquent model', function () {
 });
 
 test('base model has correct table name', function () {
+<<<<<<< HEAD
     $baseModel = new class extends BaseModel {
+=======
+    $baseModel = new class() extends BaseModel
+    {
+>>>>>>> laraxot/dev
         protected $table = 'test_geo_table';
     };
 
@@ -25,7 +35,12 @@ test('base model has correct table name', function () {
 });
 
 test('base model can be instantiated', function () {
+<<<<<<< HEAD
     $baseModel = new class extends BaseModel {
+=======
+    $baseModel = new class() extends BaseModel
+    {
+>>>>>>> laraxot/dev
         protected $table = 'test_geo_table';
     };
 
@@ -33,7 +48,12 @@ test('base model can be instantiated', function () {
 });
 
 test('base model has proper inheritance chain', function () {
+<<<<<<< HEAD
     $baseModel = new class extends BaseModel {
+=======
+    $baseModel = new class() extends BaseModel
+    {
+>>>>>>> laraxot/dev
         protected $table = 'test_geo_table';
     };
 
@@ -42,7 +62,12 @@ test('base model has proper inheritance chain', function () {
 });
 
 test('base model has timestamps enabled', function () {
+<<<<<<< HEAD
     $baseModel = new class extends BaseModel {
+=======
+    $baseModel = new class() extends BaseModel
+    {
+>>>>>>> laraxot/dev
         protected $table = 'test_geo_table';
     };
 

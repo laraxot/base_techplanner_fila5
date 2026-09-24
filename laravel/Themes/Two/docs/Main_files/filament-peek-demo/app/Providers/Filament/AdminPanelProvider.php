@@ -3,20 +3,27 @@
 namespace App\Providers\Filament;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Pages\Dashboard;
 use Filament\Widgets\AccountWidget;
 use Filament\Widgets\FilamentInfoWidget;
 =======
 >>>>>>> c34c6d1 (.)
+=======
+>>>>>>> laraxot/dev
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use Filament\Navigation\NavigationGroup;
 use Filament\Pages\Dashboard;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Filament\Pages\Dashboard;
 >>>>>>> c34c6d1 (.)
+=======
+use Filament\Pages\Dashboard;
+>>>>>>> laraxot/dev
 use Filament\Panel;
 use Filament\PanelProvider;
 use Filament\Support\Assets\Js;
@@ -24,10 +31,15 @@ use Filament\Support\Colors\Color;
 use Filament\Support\Facades\FilamentAsset;
 use Filament\Widgets\AccountWidget;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Filament\Widgets\AccountWidget;
 use Filament\Widgets\FilamentInfoWidget;
 >>>>>>> c34c6d1 (.)
+=======
+use Filament\Widgets\AccountWidget;
+use Filament\Widgets\FilamentInfoWidget;
+>>>>>>> laraxot/dev
 use Filament\Widgets\FilamentInfoWidget;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
@@ -97,7 +109,10 @@ class AdminPanelProvider extends PanelProvider
     }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
 >>>>>>> c34c6d1 (.)
+=======
+>>>>>>> laraxot/dev

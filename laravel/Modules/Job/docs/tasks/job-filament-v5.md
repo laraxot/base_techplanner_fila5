@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ---
 title: "Task: Job Filament v5 Alignment (Clusters)"
 module: "Job"
@@ -9,6 +13,11 @@ qmd: "job filament v5"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> af4545e (.)
+>>>>>>> laraxot/dev
 # Task: Job Filament v5 Alignment (Clusters)
 
 ## 📋 Obiettivo

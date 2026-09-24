@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "🔧 PHPStan Fixes - Modulo User - Gennaio 2025"
 type: concept
 tags: [phpstan, fixes, gennaio]
@@ -250,6 +251,8 @@ $subject = Lang::get('user::email.password_reset_subject');
 **🚀 Performance**: 95/100 score
 **✨ Test Coverage**: 85% ✅
 ---
+=======
+>>>>>>> laraxot/dev
 module: theme
 topic: phpstan-fixes-gennaio
 canonical: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio.md

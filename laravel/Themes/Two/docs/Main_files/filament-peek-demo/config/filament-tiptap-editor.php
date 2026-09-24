@@ -85,7 +85,10 @@ return [
     'floating_menu_tools' => ['media', 'grid', 'grid-builder', 'details', 'table', 'oembed', 'code-block'],
 ];
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
 >>>>>>> c34c6d1 (.)
+=======
+>>>>>>> laraxot/dev

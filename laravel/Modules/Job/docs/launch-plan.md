@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ---
 title: "Product Launch Plan: Job Module"
 module: "Job"
@@ -9,6 +13,11 @@ qmd: "launch plan"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> af4545e (.)
+>>>>>>> laraxot/dev
 # Product Launch Plan: Job Module
 
 ## 🚀 Launch Overview

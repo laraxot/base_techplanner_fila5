@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ---
 title: "Testing in Job"
 module: "Job"
@@ -9,6 +13,11 @@ qmd: "testing"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> af4545e (.)
+>>>>>>> laraxot/dev
 # Testing in Job
 
 Questo componente segue lo standard globale di progetto per il testing.

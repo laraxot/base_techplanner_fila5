@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Services;
+<<<<<<< HEAD
 
 use Modules\Job\Services\ScheduleService;
 use Modules\Job\Tests\TestCase;
@@ -11,6 +12,14 @@ use PHPUnit\Framework\Assert;
 use function Safe\file_get_contents;
 
 uses(TestCase::class);
+=======
+use Modules\Job\Services\ScheduleService;
+use Modules\Job\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+use function Safe\file_get_contents;
+
+uses(\Modules\Job\Tests\TestCase::class);
+>>>>>>> laraxot/dev
 
 describe('ScheduleService', function () {
     it('can be instantiated', function () {
@@ -40,7 +49,11 @@ describe('ScheduleService', function () {
         $filename = $reflection->getFileName();
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
+<<<<<<< HEAD
         Assert::assertStringContainsString('declare(strict_types=1);', $content);
+=======
+        Assert::assertStringContainsString('', $content);
+>>>>>>> laraxot/dev
     });
 
     it('has correct namespace', function () {

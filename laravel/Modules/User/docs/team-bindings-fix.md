@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Fix Binding Team Models nel Modulo User
 
 ## Panoramica
@@ -172,6 +173,8 @@ $this->assertTrue($user->belongsToTeam($team));
 **Autore**: AI Assistant  
 **Data**: Gennaio 2025  
 **Versione**: 1.0  
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: team-bindings-fix

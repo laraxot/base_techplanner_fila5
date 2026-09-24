@@ -6,6 +6,7 @@ declare(strict_types=1);
 // claude-audit static: split from icon_state_group.php for maintainability (<500 LOC).
 // Canon: Modules/UI/docs/wiki/concepts/claude-audit-static.md
 // File: lang/it/icon_state_group_actions.php
+<<<<<<< HEAD
 return array (
   'actions' => 
   array (
@@ -23,3 +24,18 @@ return array (
     ),
   ),
 );
+=======
+return [
+    'actions' => [
+        'create' => [
+            'label' => 'Crea Icon State Group',
+        ],
+        'edit' => [
+            'label' => 'Modifica Icon State Group',
+        ],
+        'delete' => [
+            'label' => 'Elimina Icon State Group',
+        ],
+    ],
+];
+>>>>>>> laraxot/dev

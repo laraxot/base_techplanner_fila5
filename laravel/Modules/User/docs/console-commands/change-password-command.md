@@ -379,3 +379,8 @@ php artisan test --filter=ChangePasswordCommandIntegrationTest
 - ✅ **Interfaccia Console**: Input interattivo
 - ✅ **Gestione Password**: Hash e scadenza
 - ✅ **Eventi**: Dispatched NewPasswordSet
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> laraxot/dev

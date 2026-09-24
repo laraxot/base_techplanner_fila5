@@ -269,8 +269,12 @@ it('can handle task status transitions', function (): void {
     $task->update(['is_active' => 0]);
     Assert::assertSame(0, $task->is_active);
     // Ripristina is_active a 1
+<<<<<<< HEAD
     $task->is_active = 1;
     $task->save();
+=======
+    $task->update(['is_active' => 1]);
+>>>>>>> laraxot/dev
     Assert::assertSame(1, $task->is_active);
 });
 

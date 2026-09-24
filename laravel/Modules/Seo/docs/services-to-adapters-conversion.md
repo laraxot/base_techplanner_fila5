@@ -7,6 +7,7 @@ created: 2026-07-16
 updated: 2026-07-16
 related:
   - ../../../laravel/Modules/Xot/docs/wiki/concepts/queueable-action-trait-mandatory.md
+<<<<<<< HEAD
   - ./wiki/concepts/metatag-data-contract.md
 ---
 
@@ -20,6 +21,10 @@ related:
 > [wiki/concepts/metatag-data-contract.md](./wiki/concepts/metatag-data-contract.md)
 > for the current, canonical wiring. Kept here as history, not deleted.
 
+=======
+---
+
+>>>>>>> laraxot/dev
 # Seo — conversione Services/Support → Actions/Adapters
 
 ## Contesto

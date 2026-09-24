@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ---
 title: "Docs Health - Job"
 module: "Job"
@@ -9,6 +13,11 @@ qmd: "docs health"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> af4545e (.)
+>>>>>>> laraxot/dev
 # Docs Health - Job
 
 ## Snapshot

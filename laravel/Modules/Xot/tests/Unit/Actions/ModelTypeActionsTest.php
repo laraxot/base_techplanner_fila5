@@ -12,7 +12,10 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 it('resolves model types correctly', function (): void {
     Config::set('morph_map', ['log' => Log::class]);
 
@@ -20,7 +23,11 @@ it('resolves model types correctly', function (): void {
     Assert::assertSame(Log::class, $classAction->execute('log'));
 
     $typeAction = app(GetModelTypeByModelAction::class);
+<<<<<<< HEAD
     $result = $typeAction->execute(new class extends Log implements ModelContract {
     });
+=======
+    $result = $typeAction->execute(new class extends Log implements ModelContract {});
+>>>>>>> laraxot/dev
     Assert::assertIsString($result);
 });

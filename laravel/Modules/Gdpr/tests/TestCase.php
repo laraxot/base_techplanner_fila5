@@ -16,9 +16,12 @@ use PHPUnit\Framework\Assert;
 /**
  * Base test case for Gdpr module.
  *
+<<<<<<< HEAD
  * Uses shared fixcity_data.sqlite (no RefreshDatabase / migrate:fresh).
  * Uses shared sqlite (no RefreshDatabase / migrate:fresh).
  * Uses shared fixcity_data.sqlite (no RefreshDatabase / migrate:fresh).
+=======
+>>>>>>> laraxot/dev
  * Uses shared sqlite (no RefreshDatabase / migrate:fresh).
  * prepareSharedSqliteForTesting() runs before transactions begin.
  */

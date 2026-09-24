@@ -10,6 +10,7 @@ use Illuminate\Support\Carbon;
 /**
  * Modules\Xot\Contracts\ModelContract.
  *
+<<<<<<< HEAD
  *
  * @property int                $id
  * @property int|null           $user_id
@@ -21,6 +22,8 @@ use Illuminate\Support\Carbon;
  * @property string|null        $title
  * @property bool               $is_reclamed
  * @property bool               $table_enable
+=======
+>>>>>>> laraxot/dev
  * @property int                $id
  * @property int|null           $user_id
  * @property string|null        $post_type
@@ -40,6 +43,7 @@ use Illuminate\Support\Carbon;
  * @property string             $sms_body
  * @property string             $sms_count
  *
+<<<<<<< HEAD
  *
  * @method int|string|null                              getKey()
  * @method string                                       getRouteKey()
@@ -80,6 +84,21 @@ use Illuminate\Support\Carbon;
  * @method int                                                             detach($params)
  * @method void                                                            attach($params)
  * @method bool                                                            save($params)
+=======
+ * @method mixed                                                           getKey()
+ * @method string                                                          getRouteKey()
+ * @method string                                                          getRouteKeyName()
+ * @method string                                                          getTable()
+ * @method mixed                                                           with($array)
+ * @method array<string, mixed>                                            getFillable()
+ * @method mixed                                                           fill($array)
+ * @method mixed                                                           getConnection()
+ * @method mixed                                                           update($params)
+ * @method mixed                                                           delete()
+ * @method mixed                                                           detach($params)
+ * @method mixed                                                           attach($params)
+ * @method mixed                                                           save($params)
+>>>>>>> laraxot/dev
  * @method array<string, mixed>                                            treeLabel()
  * @method array<string, mixed>                                            treeSons()
  * @method array<string, mixed>                                            toArray()
@@ -99,7 +118,10 @@ interface ModelContactContract
     public function sendEmailCallback(): void;
 
     /**
+<<<<<<< HEAD
      *
+=======
+>>>>>>> laraxot/dev
      * @param array<string, mixed> $data
      */
     public function increase(string $what, array $data): void;

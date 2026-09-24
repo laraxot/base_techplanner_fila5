@@ -3,7 +3,10 @@
 declare(strict_types=1);
 
 use Filament\Tables\Table;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Tests\TestCase;
 use Modules\Xot\Tests\Unit\Fixtures\XotBaseResourceTableConfigureFixture;
 use Modules\Xot\Tests\Unit\Fixtures\XotTableConfigureLivewireHarness;
@@ -24,6 +27,11 @@ test('XotBaseResourceTable configure su classe astratta solleva LogicException',
     $livewire = new XotTableConfigureLivewireHarness();
     $table = Table::make($livewire);
 
+<<<<<<< HEAD
     expect(fn (): Table => XotBaseResourceTable::configure($table))
         ->toThrow(LogicException::class);
+=======
+    expect(fn (): Table => \Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable::configure($table))
+        ->toThrow(\LogicException::class);
+>>>>>>> laraxot/dev
 });

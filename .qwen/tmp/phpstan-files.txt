@@ -1,0 +1,145 @@
+16	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/tests/Unit/Models/XotBaseModelTest.php
+15	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/tests/Feature/ModuleBusinessLogicTest.php
+12	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/app/Traits/HasSchemalessAttributes.php (in context of class Modules\Xot\Tests\Fixtures\Models\SchemalessTestModel)
+7	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Employee/app/Filament/Widgets/AttendanceOverviewWidget.php
+7	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Employee/app/Models/AbsenceRequest.php
+7	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Job/app/Models/JobBatch.php
+7	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/tests/Feature/UserModelTest.php
+6	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Activity/tests/Feature/FilamentTest.php
+6	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/app/Models/Traits/HasTeams.php
+6	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/app/Models/Traits/RelationX.php (in context of class Modules\User\Models\BaseModel)
+6	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/app/Models/Traits/RelationX.php (in context of class Modules\User\Models\BaseUser)
+6	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/app/Models/Traits/RelationX.php (in context of class Modules\User\Models\Permission)
+6	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/app/Models/Traits/RelationX.php (in context of class Modules\User\Models\Role)
+6	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/app/Models/Traits/RelationX.php (in context of class Modules\User\Tests\Unit\Models\Traits\Fixtures\MockUserWithTeams)
+6	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/app/Models/Traits/RelationX.php (in context of class Modules\User\Tests\Unit\Models\Traits\MockUserWithTeams)
+6	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/app/Models/Traits/RelationX.php (in context of class Modules\User\Tests\Unit\Traits\Fixtures\HasRolesTraitFixture)
+5	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Activity/app/Filament/Pages/ListLogActivities.php
+5	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Employee/app/Filament/Widgets/LeaveBalanceWidget.php
+4	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/tests/Feature/HomepageFilamentBlocksArchitectureTest.php
+4	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Employee/app/Filament/Widgets/TeamPresenceWidget.php
+4	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Employee/app/Filament/Widgets/WorkHoursBoardWidget.php
+4	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Employee/app/Models/TimeEntry.php
+4	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Employee/app/Models/TimeRecord.php
+4	/var/www/_bases/base_techplanner_fila5/laravel/Modules/UI/tests/Unit/UiFilamentComponentsCoverageTest.php
+4	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/tests/Unit/Enums/UserEnumsTest.php
+4	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/app/Filament/Traits/HasXotTable.php (in context of class@anonymous/Xot/tests/Unit/HasXotTableLayoutHooksTest.php
+3	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/tests/Feature/CmsContentManagementTest.php
+3	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/tests/Feature/HomepageContentManagementTest.php
+3	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/tests/Unit/Datas/HeadernavDataTest.php
+3	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/tests/Unit/View/Components/PageComponentTest.php
+3	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Employee/app/Filament/Resources/WorkHourResource/Pages/TimeClockPage.php
+3	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Employee/database/factories/WorkHourFactory.php
+3	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Gdpr/app/Models/Traits/HasGdpr.php (in context of class Modules\Employee\Models\User)
+3	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Gdpr/app/Models/Traits/HasGdpr.php (in context of class Modules\Gdpr\Tests\Fixtures\HasGdprDummy)
+3	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Job/app/Models/Schedule.php
+3	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Lang/app/Filament/Forms/Components/NationalFlagSelect.php
+3	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Lang/app/Models/TranslationFile.php
+3	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/app/Filament/Resources/BaseUserResource.php
+3	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/app/Filament/Resources/RoleResource/Pages/EditRole.php
+3	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/app/Filament/Resources/TenantResource.php
+3	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/app/Filament/Resources/TenantResource/Schemas/CustomerForm.php
+3	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/app/Filament/Resources/TenantResource/Schemas/TenantForm.php
+3	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/app/Filament/Resources/UserResource/RelationManagers/AuthenticationLogsRelationManager.php
+3	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/app/Filament/Resources/UserResource/Schemas/UserForm.php
+3	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/tests/Unit/Models/TenantTest.php
+3	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/tests/generate-coverage-report.php
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Activity/tests/Feature/ActivityEventSourcingTest.php
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Activity/tests/Feature/ActivityIntegrationTest.php
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/app/Filament/Forms/Components/DownloadAttachmentPlaceHolder.php
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/tests/Feature/HeaderNavJsonTest.php
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Employee/app/Actions/BuildWeeklyTimeTableAction.php
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Employee/app/Models/WorkHour.php
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Job/app/Actions/Command/GetCommandsAction.php
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Job/app/Filament/Columns/ScheduleArguments.php
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Job/app/Filament/Resources/ScheduleResource.php
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Job/app/Filament/Resources/ScheduleResource/Schemas/ScheduleForm.php
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Lang/app/Filament/Forms/Components/TranslationEditor.php
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Lang/app/Filament/Resources/TranslationFileResource/Pages/EditTranslationFile.php
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Lang/app/Models/Translation.php
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Lang/tests/Unit/Actions/ReadTranslationFileActionTest.php
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/app/Datas/DeviceData.php
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/app/Filament/Clusters/Socialite/Resources/SocialProviderResource/Pages/ViewSocialProvider.php
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/app/Filament/Resources/RoleResource/Pages/CreateRole.php
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/app/Filament/Resources/SocialProviderResource/Pages/ViewSocialProvider.php
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/app/Filament/Resources/SocialiteUserResource/Pages/ViewSocialiteUser.php
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/app/Filament/Resources/TenantResource/RelationManagers/ProfilesRelationManager.php
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/app/Filament/Resources/TenantResource/RelationManagers/UsersRelationManager.php
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/app/Models/Traits/HasModules.php
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/app/Providers/UserServiceProvider.php
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/database/migrations/2026_08_06_150000_create_team_permissions_table.php
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/tests/Feature/UserCommandIntegrationTest.php
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/tests/Unit/Models/Traits/Fixtures/MockUserWithTeams.php
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/app/Database/Migrations/XotBaseMigration.php
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/app/Models/Traits/HasXotFactory.php (in context of class Modules\User\Models\BaseUser)
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/app/Models/Traits/HasXotFactory.php (in context of class Modules\User\Models\Notification)
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/app/Models/Traits/HasXotFactory.php (in context of class Modules\User\Models\Permission)
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/app/Models/Traits/HasXotFactory.php (in context of class Modules\User\Models\PersonalAccessToken)
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/app/Models/Traits/HasXotFactory.php (in context of class Modules\User\Models\Role)
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/app/Models/Traits/HasXotFactory.php (in context of class Modules\User\Models\Team)
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/lang/it/buttons.php
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/tests/TestCase.php
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/tests/Unit/XotExecuteCoverage50Test.php
+2	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/tests/Unit/XotRelationManageStatesCoverageTest.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Activity/app/Actions/RedactModelAttributesAction.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Activity/app/Models/BaseModel.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Activity/tests/Feature/BaseModelBusinessLogicPestTest.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Activity/tests/Unit/Providers/ActivityServiceProviderTest.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/app/Actions/BuildPageSchemaAction.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/app/Filament/Resources/PageContentResource/Pages/ListPageContents.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/app/Http/Middleware/PageSlugMiddleware.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/app/Providers/Filament/FrontPanelProvider.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/app/Providers/RouteServiceProvider.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/tests/Feature/FilamentBuilderBlocksTest.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/tests/Feature/Frontoffice/FolioRoutes/PublicProfileRouteTest.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/tests/TestHelper.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/tests/Unit/Http/Volt/RegisterComponentTest.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/tests/Unit/Support/PageSchemaBuilderTest.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Employee/app/Actions/BuildTimelineVisualizationAction.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Employee/app/Filament/Widgets/WorkHoursSummaryWidget.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Job/app/Actions/GetTaskCommandsAction.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Job/app/Filament/Resources/JobBatchResource/Pages/ListJobBatches.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Job/app/Filament/Resources/JobManagerResource/Widgets/JobStatsOverview.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Job/app/Models/Task.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Lang/app/Actions/Filament/AutoLabelAction.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Lang/app/Models/Post.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Lang/app/Providers/LangServiceProvider.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Lang/app/View/Composers/ThemeComposer.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Lang/database/seeders/LanguageLineSeeder.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Lang/database/seeders/TranslationSeeder.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Lang/tests/Unit/Models/BaseModelLangTest.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/UI/tests/Feature/ComponentReorganizationTest.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/UI/tests/Unit/UiBasePolicyBehaviorTest.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/app/Filament/Clusters/Socialite/Resources/SocialiteUserResource/Pages/ViewSocialiteUser.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/app/Filament/Resources/BaseProfileResource/Pages/ListProfiles.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/app/Filament/Resources/PermissionResource/Pages/ViewPermission.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/app/Filament/Resources/TenantResource/Pages/ListTenants.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/app/Filament/Resources/TenantResource/RelationManagers/DomainsRelationManager.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/app/Filament/Resources/UserResource/RelationManagers/OauthTokensRelationManager.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/app/Http/Livewire/Auth/Login.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/app/Models/BaseUser.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/app/Models/Notification.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/app/Models/Permission.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/app/Models/PersonalAccessToken.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/app/Models/Role.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/app/Models/Team.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/app/Models/Traits/InteractsWithTenant.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/tests/Helpers.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/User/tests/Support/helpers-extended.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/app/Filament/Traits/HasXotTable.php (in context of class Modules\Xot\Filament\Resources\Pages\XotBaseListRecords)
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/app/Filament/Traits/HasXotTable.php (in context of class Modules\Xot\Filament\Resources\Pages\XotBaseManageRelatedRecords)
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/app/Filament/Traits/HasXotTable.php (in context of class Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager)
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/app/Filament/Traits/HasXotTable.php (in context of class Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable)
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/app/Filament/Traits/HasXotTable.php (in context of class Modules\Xot\Filament\Resources\XotBaseResource\Pages\XotBaseManageRelatedRecords)
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/app/Filament/Traits/HasXotTable.php (in context of class Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager)
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/app/Filament/Traits/HasXotTable.php (in context of class Modules\Xot\Filament\Widgets\XotBaseTableWidget)
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/app/Filament/Traits/HasXotTable.php (in context of class Modules\Xot\Tests\Unit\Fixtures\LegacyTableNameFixture)
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/app/Filament/Traits/HasXotTable.php (in context of class Modules\Xot\Tests\Unit\HasTableWithXotTestClass)
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/app/Filament/Traits/HasXotTable.php (in context of class Modules\Xot\Tests\Unit\HasTableWithoutOptionalMethodsTestClass)
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/app/Filament/Traits/HasXotTable.php (in context of class Modules\Xot\Tests\Unit\Support\HasTableWithXotTestClass)
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/app/Filament/Traits/HasXotTable.php (in context of class Modules\Xot\Tests\Unit\Support\HasTableWithoutOptionalMethodsTestClass)
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/app/Filament/Traits/HasXotTable.php (in context of class@anonymous/Xot/tests/Unit/XotTableLegacyNameResolutionTest.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/app/Models/BaseModel.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/app/States/XotBaseState.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/tests/Unit/SimpleModelsTest.php
+1	/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/tests/Unit/XotMigrationDeepBranchesTest.php

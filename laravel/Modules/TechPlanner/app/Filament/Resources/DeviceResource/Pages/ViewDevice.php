@@ -8,7 +8,10 @@ use Filament\Actions\DeleteAction;
 use Filament\Actions\EditAction;
 use Modules\TechPlanner\Filament\Resources\DeviceResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
+<<<<<<< HEAD
 use Modules\TechPlanner\Filament\Resources\DeviceResource\Schemas\DeviceInfolist;
+=======
+>>>>>>> laraxot/dev
 
 class ViewDevice extends XotBaseViewRecord
 {
@@ -21,6 +24,7 @@ class ViewDevice extends XotBaseViewRecord
             'delete' => DeleteAction::make(),
         ];
     }
+<<<<<<< HEAD
 
     /**
      * @return array<string, \Filament\Schemas\Components\Component>
@@ -30,4 +34,6 @@ class ViewDevice extends XotBaseViewRecord
     {
         return app(DeviceInfolist::class)->getInfolistSchema();
     }
+=======
+>>>>>>> laraxot/dev
 }

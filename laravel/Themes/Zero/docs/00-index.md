@@ -64,8 +64,14 @@ related:
 
 ### Related Resources
 
+<<<<<<< HEAD
 - [UI Module](../../../Modules/UI/docs/README.md) - Shared UI components
 - [Xot Module](../../../Modules/Xot/docs/00-index.md) - Base classes
+=======
+- [Restaurant Module](../../Modules/Restaurant/docs/00-INDEX.md) - Floor plan, competitor analysis
+- [UI Module](../../Modules/UI/docs/00-index.md) - Shared UI components
+- [Xot Module](../../Modules/Xot/docs/00-index.md) - Core utilities
+>>>>>>> laraxot/dev
 - [AGENTS.md](../../../AGENTS.md) - Project guidelines
 
 ---

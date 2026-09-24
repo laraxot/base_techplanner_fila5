@@ -11,7 +11,11 @@ return [
     'labels' => ['morning' => 'Mattino', 'afternoon' => 'Pomeriggio', 'from' => 'Dalle', 'to' => 'Alle', 'closed' => 'Chiuso'],
     'descriptions' => ['day_schedule' => 'Configura gli orari di apertura per questo giorno'],
     'placeholders' => ['morning_hours' => 'Orari del mattino', 'afternoon_hours' => 'Orari del pomeriggio'],
+<<<<<<< HEAD
     'notes' => ['format_hint' => 'Utilizzare il formato 24 ore (es. 14:30 per le 2:30 del pomeriggio)', 'empty_hint' => 'Lasciare vuoto significa "chiuso"'],
+=======
+    'notes' => ['format_hint' => 'Utilizzare il formato 24 ore (es. 14:30 per le 2:30 del pomeriggio]', 'empty_hint' => 'Lasciare vuoto significa "chiuso"'],
+>>>>>>> laraxot/dev
     'validation' => [
         'invalid_format' => 'Formato orario non valido. Utilizzare HH:MM-HH:MM',
         'invalid_time_range' => 'L\'orario di apertura deve essere precedente all\'orario di chiusura',
@@ -25,6 +29,7 @@ return [
         'opening_before_closing' => 'L\'orario di apertura del :session per :day deve essere precedente a quello di chiusura.',
         'morning' => 'mattino',
         'afternoon' => 'pomeriggio',
+<<<<<<< HEAD
         'opening_hours' => [
             'morning_before_afternoon' => 'Per :day, l\'orario di chiusura del mattino deve essere precedente all\'apertura del pomeriggio.',
             'missing_closing_time' => 'Se specifichi l\'orario di apertura del :session  :day, devi specificare anche quello di chiusura.',
@@ -33,6 +38,9 @@ return [
             'morning' => 'mattino',
             'afternoon' => 'pomeriggio',
         ],
+=======
+        'opening_hours' => ['morning_before_afternoon' => 'Per :day, l\'orario di chiusura del mattino deve essere precedente all\'apertura del pomeriggio.', 'missing_closing_time' => 'Se specifichi l\'orario di apertura del :session  :day, devi specificare anche quello di chiusura.', 'missing_opening_time' => 'Se specifichi l\'orario di chiusura del :session  :day, devi specificare anche quello di apertura.', 'opening_before_closing' => 'L\'orario di apertura del :session  :day deve essere precedente a quello di chiusura.', 'morning' => 'mattino', 'afternoon' => 'pomeriggio'],
+>>>>>>> laraxot/dev
     ],
     'label' => 'Opening Hours',
     'plural_label' => 'Opening Hours (Plurale)',

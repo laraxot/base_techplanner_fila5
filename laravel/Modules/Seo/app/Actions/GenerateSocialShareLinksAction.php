@@ -4,7 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Seo\Actions;
 
+<<<<<<< HEAD
 use Modules\Seo\Data\SocialShareData;
+=======
+use Modules\Seo\Datas\SocialShareData;
+>>>>>>> laraxot/dev
 use Spatie\QueueableAction\QueueableAction;
 
 /**

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Guida Completa ai Trait del Modulo User - AGGIORNATO POST-IMPLEMENTAZIONE
 
 ## Stato Implementazione ✅ COMPLETATO
@@ -106,6 +107,8 @@ trait HasTeams
 {
     use RelationX;
 
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: traits-complete-guide

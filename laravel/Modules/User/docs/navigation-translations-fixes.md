@@ -219,4 +219,8 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 - Sort order allineato con i Resource corrispondenti
 
 *Intervento completato il: 2026-01-22*
+<<<<<<< HEAD
 *Conforme alle regole DRY + KISS*
+=======
+*Conforme alle regole DRY + KISS*
+>>>>>>> laraxot/dev

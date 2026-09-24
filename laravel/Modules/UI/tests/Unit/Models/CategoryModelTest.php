@@ -12,7 +12,11 @@ uses(TestCase::class);
 
 describe('Category Model', function (): void {
     test('it can hydrate a category with valid data in memory', function (): void {
+<<<<<<< HEAD
         $category = new Category();
+=======
+        $category = new Category;
+>>>>>>> laraxot/dev
         $category->forceFill([
             'title' => 'Test Category',
             'slug' => 'test-category',
@@ -26,7 +30,11 @@ describe('Category Model', function (): void {
     });
 
     test('it has fillable attributes', function (): void {
+<<<<<<< HEAD
         $category = new Category();
+=======
+        $category = new Category;
+>>>>>>> laraxot/dev
         $expected = ['name', 'description', 'icon', 'parent_id', 'is_active', 'sort_order'];
 
         foreach ($expected as $field) {
@@ -35,7 +43,11 @@ describe('Category Model', function (): void {
     });
 
     test('category has timestamps enabled', function (): void {
+<<<<<<< HEAD
         $category = new Category();
+=======
+        $category = new Category;
+>>>>>>> laraxot/dev
 
         Assert::assertTrue($category->timestamps);
     });

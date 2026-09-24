@@ -14,7 +14,10 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 it('gets model label from property', function (): void {
     Assert::assertSame('Custom Label', ModelLabelFromPropertyProbe::getModelLabel());
 });

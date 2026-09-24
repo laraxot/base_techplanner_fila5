@@ -4,12 +4,18 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\UserResource\Tables;
 
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Modules\User\Filament\Resources\UserResource\Actions\VerifyEmailAction;
+=======
+use Filament\Tables\Columns\Column;
+use Filament\Tables\Columns\IconColumn;
+use Filament\Tables\Columns\TextColumn;
+>>>>>>> laraxot/dev
 use Modules\User\Models\User;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
@@ -21,6 +27,7 @@ class UsersTable extends XotBaseResourceTable
     protected static string $model = User::class;
 
     /**
+<<<<<<< HEAD
      * @return array<int|string, Action|ActionGroup>
      */
     #[\Override]
@@ -33,6 +40,8 @@ class UsersTable extends XotBaseResourceTable
     }
 
     /**
+=======
+>>>>>>> laraxot/dev
      * @return array<string, Column>
      */
     public function getTableColumns(): array

@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ---
 title: "Job Module PDF Reports"
 module: "Job"
@@ -9,6 +13,11 @@ qmd: "job reports"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> af4545e (.)
+>>>>>>> laraxot/dev
 # Job Module PDF Reports
 
 ## 📋 Overview
@@ -848,7 +857,15 @@ public function generateWithErrorHandling(array $options = []): string
 ## 📚 References
 
 - [HTML2PDF Best Practices](../xot/docs/html2pdf-best-practices.md)
+<<<<<<< HEAD
 - [Job Module README](README.md)
+=======
+<<<<<<< HEAD
+- [Job Module README](README.md)
+=======
+- [Job Module README](./readme.md)
+>>>>>>> af4545e (.)
+>>>>>>> laraxot/dev
 - [Laravel Queue Documentation](https://laravel.com/docs/queues)
 - [Filament Actions Documentation](https://filamentphp.com/docs/3.x/actions/overview)
 

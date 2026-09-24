@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Forms\Components\Field;
@@ -115,7 +119,11 @@ function pestSkip(string $message): never
  * Narrows the wide return type of Mockery's shouldReceive()/allows() to the
  * concrete Expectation class so chained calls like andReturn()/with() resolve.
  */
+<<<<<<< HEAD
 function mockeryExpect(object $expectation): Expectation
+=======
+function mockeryExpect(mixed $expectation): Expectation
+>>>>>>> laraxot/dev
 {
     \assert($expectation instanceof Expectation);
 

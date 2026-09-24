@@ -57,17 +57,25 @@ final class RedirectWidget extends XotBaseSchemaWidget
     /**
      * Vista di default per il widget.
      * Può essere sovrascritta dalla configurazione con la chiave 'view'.
+<<<<<<< HEAD
      *
      * @phpstan-var view-string
      */
     /** @phpstan-ignore property.defaultValue */
+=======
+     */
+>>>>>>> laraxot/dev
     protected string $view = 'ui::filament.widgets.redirect-widget';
 
     /**
      * Implementazione richiesta da XotBaseWidget.
      * Per questo widget non abbiamo form, quindi restituiamo array vuoto.
      *
+<<<<<<< HEAD
      * @return array<string, mixed>
+=======
+     * @return array<string, Component>
+>>>>>>> laraxot/dev
      */
     public function getFormSchema(): array
     {

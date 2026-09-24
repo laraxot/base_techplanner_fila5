@@ -4,8 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
+<<<<<<< HEAD
 // use Symfony\Component\Console\Output\BufferedOutput;
 
+=======
+>>>>>>> laraxot/dev
 class Clock extends XotBaseWidget
 {
     public string $start = '';

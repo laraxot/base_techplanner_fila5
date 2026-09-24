@@ -311,3 +311,13 @@ dump($variable);
 - [Factory e Seeder](../models/factory-seeder-status.md)
 
 ---
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+>>>>>>> laraxot/dev

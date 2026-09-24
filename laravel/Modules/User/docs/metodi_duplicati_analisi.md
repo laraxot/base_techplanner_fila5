@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "ANALISI METODI DUPLICATI - SUPER MUCCA EDITION"
 module: user
 type: integration
@@ -557,6 +558,8 @@ public function getTableFilters(): array
 <!-- Merged from METODI_DUPLICATI_ANALISI.md, which collided with this file on case-insensitive filesystems. -->
 
 ---
+=======
+>>>>>>> laraxot/dev
 module: User
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]

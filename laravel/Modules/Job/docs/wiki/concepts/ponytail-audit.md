@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ---
 title: "Ponytail audit — Job"
 module: "Job"
@@ -18,6 +22,7 @@ related:
 - [Findings Job](../../ponytail-audit-over-engineering.md)
 
 Aggiornare solo finding e stato specifici di questo modulo.
+<<<<<<< HEAD
 
 ## Findings
 
@@ -26,3 +31,18 @@ Aggiornare solo finding e stato specifici di questo modulo.
 - `Config.bak/` — duplicato di `config/`
 - `TaskInterface` — già rinominato `.bak` (run precedente)
 - ~~policy stub~~ — **rimosso da perimetro**: policy modello sono contratto Laravel (vedi [model-policy-laravel-contract.md](./model-policy-laravel-contract.md))
+=======
+=======
+# Ponytail audit — Job
+
+**Run:** 2026-06-30
+
+Documento canonico: [ponytail-audit-over-engineering.md](../../ponytail-audit-over-engineering.md)
+
+## Findings
+
+- `Config.bak/` — duplicato di `config/`
+- `TaskInterface` — già rinominato `.bak` (run precedente)
+- ~~policy stub~~ — **rimosso da perimetro**: policy modello sono contratto Laravel (vedi [model-policy-laravel-contract.md](./model-policy-laravel-contract.md))
+>>>>>>> af4545e (.)
+>>>>>>> laraxot/dev

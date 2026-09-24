@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ---
 title: "Job Module Testing Refactor - The Journey to Zen"
 module: "Job"
@@ -9,6 +13,11 @@ qmd: "testing philosophy refactor"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> af4545e (.)
+>>>>>>> laraxot/dev
 # Job Module Testing Refactor - The Journey to Zen
 
 ## The Problem (Before Refactor)

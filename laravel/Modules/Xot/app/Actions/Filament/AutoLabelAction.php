@@ -1,10 +1,18 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> laraxot/dev
 /**
  * -WIP.
  */
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> laraxot/dev
 namespace Modules\Xot\Actions\Filament;
 
 use Filament\Forms\Components\Field;
@@ -25,12 +33,16 @@ class AutoLabelAction
     /**
      * Applica automaticamente le etichette ai componenti Filament.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      * @param Field|Component $component Il componente a cui applicare l'etichetta
      *                                   =======
      * @param Field|Component $component Il componente a cui applicare l'etichetta
      *
      * >>>>>>> laraxot/dev
+=======
+     * @param Field|Component $component Il componente a cui applicare l'etichetta
+>>>>>>> laraxot/dev
      *
      * @return Field|Component Il componente con l'etichetta applicata
      */
@@ -102,12 +114,16 @@ class AutoLabelAction
     /**
      * Get the component name based on its actual type.
      *
+<<<<<<< HEAD
      * <<<<<<< HEAD
      * @param Field|Component $component Il componente di cui ottenere il nome
      *                                   =======
      * @param Field|Component $component Il componente di cui ottenere il nome
      *
      * >>>>>>> laraxot/dev
+=======
+     * @param Field|Component $component Il componente di cui ottenere il nome
+>>>>>>> laraxot/dev
      *
      * @return string Il nome del componente
      */

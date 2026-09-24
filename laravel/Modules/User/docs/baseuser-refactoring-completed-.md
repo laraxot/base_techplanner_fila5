@@ -5,9 +5,12 @@ tags: [baseuser, refactoring, completed]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "baseuser-refactoring-completed- baseuser refactoring - completato"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 
+=======
+>>>>>>> laraxot/dev
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -261,18 +264,24 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 ### Modulo User
 - [BaseUser Model](./models/baseuser.md)
 - [Roles & Permissions](./roles-permissions.md)
+<<<<<<< HEAD
 - [User Module README](./README.md)
 
+=======
+>>>>>>> laraxot/dev
 - [User Module README](./readme.md)
 
 ### Root Progetto
 - [Code Quality](../../../docs/code-quality-analysis.md)
 - [DRY Violations](../../../docs/dry-violations-analysis.md)
+<<<<<<< HEAD
 - [User Module README](./readme.md)
 
 ### Root Progetto
 - [Code Quality](../../docs/code-quality-analysis.md)
 - [DRY Violations](../../docs/dry-violations-analysis.md)
+=======
+>>>>>>> laraxot/dev
 
 ### Spatie Documentation
 - [Laravel Permission](https://spatie.be/docs/laravel-permission/v6/introduction)

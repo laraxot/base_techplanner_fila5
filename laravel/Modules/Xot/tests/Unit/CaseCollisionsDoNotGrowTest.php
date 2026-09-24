@@ -23,7 +23,10 @@ use function Safe\file_get_contents;
 use function Safe\file_put_contents;
 use function Safe\json_decode;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 function repoRoot(): string
 {
     return \dirname(__DIR__, 5);

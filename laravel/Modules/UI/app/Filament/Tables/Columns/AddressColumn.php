@@ -50,9 +50,13 @@ class AddressColumn extends GroupColumn
     /**
      * Sostituisce l'elenco dei campi mostrati.
      *
+<<<<<<< HEAD
      *
      * @param list<string> $fields
      * @param list<string> $fields
+=======
+     * @param  list<string>  $fields
+>>>>>>> laraxot/dev
      */
     public function fields(array $fields): static
     {

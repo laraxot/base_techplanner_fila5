@@ -23,7 +23,11 @@ use SplFileInfo;
 uses(TestCase::class);
 
 afterEach(function (): void {
+<<<<<<< HEAD
     \Mockery::close();
+=======
+    Mockery::close();
+>>>>>>> laraxot/dev
 });
 
 describe('UI Filament widgets and components coverage', function (): void {

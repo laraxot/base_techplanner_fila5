@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 ?>
 @props([
     'type' => 'primary', 
@@ -30,6 +34,7 @@ declare(strict_types=1);
         'warning' => 'bg-amber-500 text-white hover:bg-amber-500/90 focus:ring-2 focus:ring-offset-2 dark:focus:ring-offset-gray-900 focus:bg-amber-600/90 focus:ring-amber-600',
         'danger' => 'bg-red-600 text-white hover:bg-red-600/90 focus:ring-2 focus:ring-offset-2 dark:focus:ring-offset-gray-900 focus:bg-red-700/90 focus:ring-red-700',
     };
+<<<<<<< HEAD
     $isLink = ($tag ?? 'button') === 'a';
     $hrefValue = (string) ($href ?? '/');
     $safeHref = $isLink && ! preg_match('#^\s*javascript:#i', $hrefValue) ? $hrefValue : '/';
@@ -45,6 +50,8 @@ declare(strict_types=1);
     {{ $slot }}
 </button>
 @endif
+=======
+>>>>>>> laraxot/dev
 @endphp
 
 @php

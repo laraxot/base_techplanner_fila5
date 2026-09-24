@@ -7,6 +7,10 @@ namespace Modules\Tenant\Models;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\File;
 use Modules\Tenant\Actions\Config\GetTenantFilePathAction;
+<<<<<<< HEAD
+=======
+use Modules\Tenant\Database\Factories\TestSushiModelFactory;
+>>>>>>> laraxot/dev
 use Modules\Tenant\Models\Traits\SushiToJson;
 
 /**
@@ -38,6 +42,10 @@ use Modules\Tenant\Models\Traits\SushiToJson;
  */
 class TestSushiModel extends BaseModel
 {
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
     use SushiToJson;
 
     /**

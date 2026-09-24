@@ -258,3 +258,7 @@ Modules/User/
 - [ ] Validazione input avanzata
 - [ ] Logging strutturato
 - [ ] Metriche di utilizzo
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev

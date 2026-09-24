@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 ?>
 {{-- resources/views/forms/components/radio-collection-item.blade.php --}}
 {{-- Template di esempio per un item - personalizzalo secondo le tue esigenze --}}

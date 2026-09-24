@@ -7,8 +7,11 @@ namespace Modules\Seo\Tests\Unit\Adapters;
 use Modules\Seo\Adapters\MetatagFacadeAdapter;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(\Modules\Seo\Tests\TestCase::class);
 
+=======
+>>>>>>> laraxot/dev
 it('sets all optional seo fields through adapter', function (): void {
     $adapter = app(MetatagFacadeAdapter::class);
     $published = now()->subDay();

@@ -14,7 +14,10 @@ use Illuminate\Support\Facades\Schema;
 use Modules\Tenant\Actions\Config\FilterConfigStringKeysAction;
 use Modules\Tenant\Actions\Config\GetTenantConfigNamesAction;
 use Modules\Tenant\Actions\Config\ResolveTenantConfigValueAction;
+<<<<<<< HEAD
 use Modules\Xot\Datas\XotData;
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Providers\XotBaseServiceProvider;
 use Nwidart\Modules\Facades\Module;
 use Nwidart\Modules\Laravel\Module as LaravelModule;
@@ -192,6 +195,7 @@ class TenantServiceProvider extends XotBaseServiceProvider
             $typedMap[$alias] = $modelClass;
         }
 
+<<<<<<< HEAD
         // The 'user' morph alias must always resolve to the canonical user class
         // (XotData::getUserClass()), never to a stale per-domain config entry:
         // polymorphic pivot rows (e.g. model_has_role.model_type) are written
@@ -202,6 +206,8 @@ class TenantServiceProvider extends XotBaseServiceProvider
             $typedMap['user'] = $userClass;
         }
 
+=======
+>>>>>>> laraxot/dev
         return $typedMap;
     }
 }

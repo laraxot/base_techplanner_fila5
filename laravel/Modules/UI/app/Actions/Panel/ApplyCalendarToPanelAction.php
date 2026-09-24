@@ -15,7 +15,13 @@ use Spatie\QueueableAction\QueueableAction;
  */
 final class ApplyCalendarToPanelAction
 {
+<<<<<<< HEAD
     public function execute(Panel $panel, string $calendar_class): Panel
+=======
+    use QueueableAction;
+
+    public function execute(Panel $panel, string $calendarClass): Panel
+>>>>>>> laraxot/dev
     {
         // TODO: Reimplementare quando sarà disponibile un pacchetto FullCalendar compatibile con Filament v4
         // Per ora ritorniamo il panel senza modifiche per evitare errori

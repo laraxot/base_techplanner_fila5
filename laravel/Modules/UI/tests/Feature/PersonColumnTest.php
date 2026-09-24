@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\UI\Tests\Feature;
 
+<<<<<<< HEAD
 use Filament\Tables\Columns\Column;
+=======
+>>>>>>> laraxot/dev
 use Filament\Tables\Columns\TextColumn;
 use Modules\UI\Filament\Tables\Columns\PersonColumn;
 use PHPUnit\Framework\Assert;

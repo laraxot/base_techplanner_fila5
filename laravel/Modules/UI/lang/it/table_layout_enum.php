@@ -2,10 +2,13 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 // UI translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
 // claude-audit static: ≥5% comment lines on files >100 LOC.
 // Canon: Modules/UI/docs/wiki — domain i18n only.
 // File: lang/it/table_layout_enum.php
+=======
+>>>>>>> laraxot/dev
 return [
     'values' => [
         'list' => [
@@ -25,6 +28,7 @@ return [
             'helper_text' => 'Ideale per visualizzare pochi dati con focus visivo',
         ],
     ],
+<<<<<<< HEAD
     // Chiavi flat lette da TableLayoutEnum::getTooltip()/getHelperText() ("{value}.tooltip").
     'list' => [
         'label' => 'Lista',
@@ -42,6 +46,8 @@ return [
         'tooltip' => 'Visualizza i dati in formato card responsive',
         'helper_text' => 'Ideale per visualizzare pochi dati con focus visivo',
     ],
+=======
+>>>>>>> laraxot/dev
     'label' => 'Table Layout Enum',
     'plural_label' => 'Table Layout Enum (Plurale)',
     'navigation' => [
@@ -53,7 +59,11 @@ return [
         ],
         'label' => 'Table Layout Enum',
         'sort' => 1,
+<<<<<<< HEAD
         'icon' => 'heroicon-o-collection',
+=======
+        'icon' => 'heroicon-o-rectangle-stack',
+>>>>>>> laraxot/dev
     ],
     'fields' => [
         'id' => [

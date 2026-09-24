@@ -16,6 +16,7 @@ class GetUserTeamsOptionAction
      */
     public function execute(): array
     {
+<<<<<<< HEAD
         $teams = TeamUser::with('team')->where('user_id', authId())->get();
         $result = [];
         foreach ($teams as $teamUser) {
@@ -25,5 +26,27 @@ class GetUserTeamsOptionAction
         }
 
         return $result;
+=======
+        $teams = TeamUser::where('user_id', authId())->get();
+
+        /** @var array<int|string, string> $options */
+        $options = ['' => '--- Select ---'];
+
+        foreach ($teams as $teamUser) {
+            $team = $teamUser->team;
+            if (null === $team) {
+                continue;
+            }
+
+            $key = $team->getKey();
+            if (! \is_int($key) && ! \is_string($key)) {
+                continue;
+            }
+
+            $options[(string) $key] = $team->name;
+        }
+
+        return $options;
+>>>>>>> laraxot/dev
     }
 }

@@ -261,4 +261,8 @@ $this->redirect(LaravelLocalization::getLocalizedURL($locale, route('home')));
 - [Documentazione Laravel Authentication](https://laravel.com/docs/10.x/authentication)
 - [Documentazione Livewire Volt](https://livewire.laravel.com/docs/volt)
 - [Documentazione Laravel Folio](https://laravel.com/docs/10.x/folio)
+<<<<<<< HEAD
 - [Documentazione Laravel Localization](https://github.com/mcamara/laravel-localization)
+=======
+- [Documentazione Laravel Localization](https://github.com/mcamara/laravel-localization)
+>>>>>>> laraxot/dev

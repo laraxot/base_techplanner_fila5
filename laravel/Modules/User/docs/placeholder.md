@@ -14,4 +14,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/placeholder.txt
+<<<<<<< HEAD
 https://jsonplaceholder.typicode.com/users
+=======
+>>>>>>> laraxot/dev

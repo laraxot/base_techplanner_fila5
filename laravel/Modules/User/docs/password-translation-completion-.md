@@ -5,9 +5,12 @@ tags: [password, translation, completion]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "password-translation-completion- completamento traduzioni password - 2025"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 
+=======
+>>>>>>> laraxot/dev
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -262,4 +265,8 @@ Durante l'audit delle traduzioni del modulo User, sono state identificate traduz
 
 ---
 *Ultimo aggiornamento: 2025-01-06*
+<<<<<<< HEAD
 *Autore: Sistema di Audit Traduzioni*
+=======
+*Autore: Sistema di Audit Traduzioni*
+>>>>>>> laraxot/dev

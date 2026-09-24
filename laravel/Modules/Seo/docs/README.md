@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Seo Module Documentation"
 type: documentation
@@ -7,6 +8,9 @@ updated: 2026-06-05
 ---
 
 # Seo Module
+=======
+# 🎯 SEO Module - Search Engine Optimization
+>>>>>>> laraxot/dev
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
 [![Filament 4.x](https://img.shields.io/badge/Filament-4.x-blue.svg)](https://filamentphp.com/)
@@ -15,6 +19,11 @@ updated: 2026-06-05
 
 The **Seo Module** provides a comprehensive search engine optimization toolkit for Laravel applications, integrating advanced metadata management, sitemaps, structured data, and AI-powered content analysis.
 
+<<<<<<< HEAD
+=======
+**Metatag facade (canone):** `MetatagFacadeAdapter` + `MetatagState` + Actions — vedi [conflict-resolution.md](./conflict-resolution.md) e [metatag-data-contract.md](./wiki/concepts/metatag-data-contract.md).
+
+>>>>>>> laraxot/dev
 ## 🚀 Features
 
 ### ✅ Completed
@@ -39,6 +48,24 @@ php artisan module:enable Seo
 php artisan migrate
 ```
 
+<<<<<<< HEAD
+=======
+> **🚀 Modulo SEO**: Sistema completo per ottimizzazione motori di ricerca, gestione meta tags, sitemap e structured data.
+
+## 📋 **Panoramica**
+
+Il modulo **SEO** fornisce strumenti avanzati per l'ottimizzazione SEO:
+
+- 🎯 **Meta Tags** - Gestione meta tags dinamici
+- 🗺️ **Sitemap** - Generazione sitemap automatica
+- 📊 **Structured Data** - Schema.org markup
+- 🔍 **Robots.txt** - Configurazione robots.txt
+- 🎨 **Open Graph** - Meta tags social media
+- 🌐 **Multi-lingua** - SEO multilingua
+
+## ⚡ **Funzionalità Core**
+
+>>>>>>> laraxot/dev
 ### 🎯 **Meta Tags Management**
 ```php
 // Impostazione meta tags
@@ -286,6 +313,10 @@ php artisan seo:validate-schema
 
 
 
+<<<<<<< HEAD
+=======
+Developers are encouraged to contribute to this documentation to keep it accurate and up-to-date.
+>>>>>>> laraxot/dev
 ## ⚙️ Configuration
 
 Publish the configuration file to set up API keys (e.g., OpenAI) and defaults:
@@ -318,6 +349,7 @@ For Filament resources, use the provided SEO trait to add configuration fields t
 Please verify all changes with:
 - `phpstan analyse Modules/Seo` (Level 10)
 - `pest` (Test Suite)
+<<<<<<< HEAD
 
 
 ## Standard Rules & Workflow
@@ -332,3 +364,6 @@ Please verify all changes with:
 - [QMD Setup](./QMD-SETUP.md) — Configurazione ricerca locale
 - [Performance](./PERFORMANCE-OPTIMIZATION.md) — Metriche e best practice
 - [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout
+=======
+- [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout
+>>>>>>> laraxot/dev

@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ---
 title: "DRY & KISS Analysis - Modulo Job"
 module: "Job"
@@ -9,6 +13,11 @@ qmd: "dry kiss"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> af4545e (.)
+>>>>>>> laraxot/dev
 # DRY & KISS Analysis - Modulo Job
 
 **Data:** 15 Ottobre 2025  

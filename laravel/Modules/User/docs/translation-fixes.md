@@ -14,6 +14,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-fixes.md
+<<<<<<< HEAD
 - `>>>>>>> 199538c (.)`
 
 **Soluzione**: Rimossi tutti i marcatori di conflitto e mantenuto solo il contenuto corretto.
@@ -106,3 +107,5 @@ Il file ora segue la struttura espansa obbligatoria per le regole Laraxot:
 ---
 
 *Ultimo aggiornamento: 2025-01-06*
+=======
+>>>>>>> laraxot/dev

@@ -4,8 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources;
 
+<<<<<<< HEAD
 use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\TextInput;
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\CacheResource\Pages\CreateCache;
 use Modules\Xot\Filament\Resources\CacheResource\Pages\EditCache;
 use Modules\Xot\Filament\Resources\CacheResource\Pages\ListCaches;
@@ -15,6 +18,7 @@ class CacheResource extends XotBaseResource
 {
     protected static ?string $model = Cache::class;
 
+<<<<<<< HEAD
     public function getFormSchemaOld(): array
     {
         return [
@@ -24,6 +28,8 @@ class CacheResource extends XotBaseResource
         ];
     }
 
+=======
+>>>>>>> laraxot/dev
     #[\Override]
     public static function getRelations(): array
     {

@@ -4,6 +4,7 @@ namespace App\Filament\Resources;
 
 use App\Filament\Fields\PostContent;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use App\Filament\Fields\PostFooter;
 use App\Filament\Resources\PostResource\Pages\CreatePost;
 use App\Filament\Resources\PostResource\Pages\EditPost;
@@ -57,6 +58,8 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Support\Str;
 =======
+=======
+>>>>>>> laraxot/dev
 use App\Filament\Fields\PostContent;
 use App\Filament\Fields\PostFooter;
 use App\Filament\Fields\PostFooter;
@@ -106,7 +109,10 @@ use Illuminate\Support\Str;
 use Illuminate\Support\Str;
 use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
 use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
+<<<<<<< HEAD
 >>>>>>> c34c6d1 (.)
+=======
+>>>>>>> laraxot/dev
 use Pboivin\FilamentPeek\Forms\Actions\InlinePreviewAction;
 use Pboivin\FilamentPeek\Tables\Actions\ListPreviewAction;
 
@@ -235,9 +241,12 @@ class PostResource extends Resource
     }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
 
 =======
 >>>>>>> c34c6d1 (.)
+=======
+>>>>>>> laraxot/dev

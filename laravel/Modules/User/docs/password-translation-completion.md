@@ -4,7 +4,11 @@ type: concept
 tags: [password, translation, completion]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< HEAD
 qmd: "password-translation-completion- completamento traduzioni password - 2025"
+=======
+qmd: "password-translation-completion completamento traduzioni password - 2025"
+>>>>>>> laraxot/dev
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -123,6 +127,7 @@ Durante l'audit delle traduzioni del modulo User, sono state identificate traduz
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Documentazione Modulo User](../readme.md)
 - [Best Practices Traduzioni](../../lang/docs/translation_standards.md)
 - [Sicurezza Password](../security/password_policies.md)
@@ -242,6 +247,8 @@ Durante l'audit delle traduzioni del modulo User, sono state identificate traduz
 
 ## Collegamenti
 
+=======
+>>>>>>> laraxot/dev
 - [Documentazione Modulo User](../README.md)
 - [Best Practices Traduzioni](../../Lang/docs/translation_standards.md)
 - [Documentazione Modulo User](../readme.md)
@@ -257,4 +264,8 @@ Durante l'audit delle traduzioni del modulo User, sono state identificate traduz
 
 ---
 *Ultimo aggiornamento: 2025-01-06*
+<<<<<<< HEAD
 *Autore: Sistema di Audit Traduzioni*
+=======
+*Autore: Sistema di Audit Traduzioni*
+>>>>>>> laraxot/dev

@@ -118,13 +118,21 @@ describe('Geocoding Business Logic', function () {
         it('validates Italian regional hierarchy', function () {
             $address = italianAddressFixture();
 
+<<<<<<< HEAD
             if ('Milano' === $address['city']) {
+=======
+            if ($address['city'] === 'Milano') {
+>>>>>>> laraxot/dev
                 Assert::assertSame('Lombardia', $address['region']);
                 Assert::assertSame('MI', $address['province']);
             }
 
             $lombardyProvinces = ['MI', 'BG', 'BS', 'CO', 'CR', 'MN', 'PV', 'SO', 'VA'];
+<<<<<<< HEAD
             if ('Lombardia' === $address['region']) {
+=======
+            if ($address['region'] === 'Lombardia') {
+>>>>>>> laraxot/dev
                 Assert::assertContains($address['province'], $lombardyProvinces);
             }
         });
@@ -271,12 +279,20 @@ describe('Geocoding Business Logic', function () {
         it('validates population data for cities', function () {
             $place = placeFixture();
 
+<<<<<<< HEAD
             if ('city' === $place['type']) {
+=======
+            if ($place['type'] === 'city') {
+>>>>>>> laraxot/dev
                 Assert::assertArrayHasKey('population', $place);
                 Assert::assertGreaterThan(0, $place['population']);
             }
 
+<<<<<<< HEAD
             if ('Milano' === $place['name']) {
+=======
+            if ($place['name'] === 'Milano') {
+>>>>>>> laraxot/dev
                 Assert::assertGreaterThan(1000000, $place['population']);
                 Assert::assertLessThan(2000000, $place['population']);
             }
@@ -371,12 +387,20 @@ describe('Geocoding Business Logic', function () {
 
             $score = 0;
             foreach ($requiredFields as $field) {
+<<<<<<< HEAD
                 if (isset($address[$field]) && '' !== $address[$field]) {
+=======
+                if (isset($address[$field]) && $address[$field] !== '') {
+>>>>>>> laraxot/dev
                     $score += 40;
                 }
             }
             foreach ($optionalFields as $field) {
+<<<<<<< HEAD
                 if (isset($address[$field]) && '' !== $address[$field]) {
+=======
+                if (isset($address[$field]) && $address[$field] !== '') {
+>>>>>>> laraxot/dev
                     $score += 20 / count($optionalFields);
                 }
             }

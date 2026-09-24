@@ -9,14 +9,20 @@ use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\TextInput;
+<<<<<<< HEAD
 use Modules\Xot\Actions\Filament\Block\GetViewBlocksOptionsByTypeAction;
+=======
+>>>>>>> laraxot/dev
 
 final class Hero
 {
     public static function make(string $name = 'hero', string $context = 'form'): Block
     {
+<<<<<<< HEAD
         $options = app(GetViewBlocksOptionsByTypeAction::class)->execute('hero', true);
 
+=======
+>>>>>>> laraxot/dev
         // ---------------
         return Block::make($name)->schema([
             TextInput::make('title'),

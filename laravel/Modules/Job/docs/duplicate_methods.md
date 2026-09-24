@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ---
 title: "Metodi duplicati — Job"
 module: "Job"
@@ -9,6 +13,11 @@ qmd: "duplicate methods"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> af4545e (.)
+>>>>>>> laraxot/dev
 # Metodi duplicati — Job
 
 Analisi sintetica dei metodi PHP con lo stesso nome all’interno di questo ambito.

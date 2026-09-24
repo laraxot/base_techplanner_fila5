@@ -15,6 +15,7 @@ use Modules\Xot\Models\Traits\HasXotFactory;
 use Sushi\Sushi;
 
 /**
+<<<<<<< HEAD
  * @property int|null                  $id
  * @property string|null               $name
  * @property ProfileContract|null      $creator
@@ -28,6 +29,21 @@ use Sushi\Sushi;
  * @method static Builder<static>|Region                        query()
  * @method static Builder<static>|Region                        whereId($value)
  * @method static Builder<static>|Region                        whereName($value)
+=======
+ * @property int|null $id
+ * @property string|null $name
+ * @property-read ProfileContract|null $creator
+ * @property-read Collection<int, Province> $provinces
+ * @property-read int|null $provinces_count
+ * @property-read ProfileContract|null $updater
+ *
+ * @method static \Modules\Geo\Database\Factories\RegionFactory factory($count = null, $state = [])
+ * @method static Builder<static>|Region newModelQuery()
+ * @method static Builder<static>|Region newQuery()
+ * @method static Builder<static>|Region query()
+ * @method static Builder<static>|Region whereId($value)
+ * @method static Builder<static>|Region whereName($value)
+>>>>>>> laraxot/dev
  *
  * @mixin \Eloquent
  */
@@ -83,7 +99,11 @@ class Region extends BaseModel
                 continue;
             }
 
+<<<<<<< HEAD
             if (null === $id || null === $name) {
+=======
+            if ($id === null || $name === null) {
+>>>>>>> laraxot/dev
                 continue;
             }
 

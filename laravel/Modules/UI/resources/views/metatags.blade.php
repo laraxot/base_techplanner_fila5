@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 ?>
 <meta charset="utf-8">
 <meta name="application-name" content="{{ $_theme->metatag('sitename') }}">

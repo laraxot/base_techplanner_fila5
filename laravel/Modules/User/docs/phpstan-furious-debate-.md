@@ -183,10 +183,18 @@ Ogni modulo corretto è un traguardo.
 
 - [PHPStan Errors Philosophy](./phpstan-errors-philosophy.md)
 - [Filament 4 Actions Namespace](./filament-4-actions-namespace.md)
+<<<<<<< HEAD
 - [DRY/KISS Principles](../../../docs/architecture/dry-kiss-principles.md)
+=======
+- [DRY/KISS Principles](../../../../docs/architecture/dry-kiss-principles.md)
+>>>>>>> laraxot/dev
 
 ---
 
 *"La type safety non è un optional - è un REQUISITO. Ogni errore PHPStan è un bug potenziale. Correggiamoli tutti, uno alla volta, con pazienza e determinazione."*
 
+<<<<<<< HEAD
 **Il Purista ha vinto. La type safety è sacra. Non profanarla mai.**
+=======
+**Il Purista ha vinto. La type safety è sacra. Non profanarla mai.**
+>>>>>>> laraxot/dev

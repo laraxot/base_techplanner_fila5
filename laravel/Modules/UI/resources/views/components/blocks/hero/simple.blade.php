@@ -1,7 +1,15 @@
+<<<<<<< HEAD
 @php
 // UI Blade view — see Modules/UI/docs/wiki.
 @endphp
 
+=======
+<?php
+
+declare(strict_types=1);
+
+?>
+>>>>>>> laraxot/dev
 @props([
     'title' => 'title 1',
     'description' => 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.',

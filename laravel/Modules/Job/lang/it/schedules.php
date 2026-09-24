@@ -18,7 +18,10 @@ return [
         'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
         'forceDelete' => ['label' => 'forceDelete', 'icon' => 'forceDelete', 'tooltip' => 'forceDelete'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+<<<<<<< HEAD
         'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
         'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
+=======
+>>>>>>> laraxot/dev
     ],
 ];

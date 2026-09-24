@@ -64,7 +64,11 @@ describe('Change Profile Password', function (): void {
             ])
             ->call('updatePassword');
 
+<<<<<<< HEAD
         $testable->assertHasErrors();
+=======
+        $testable->assertHasErrors(['passwordData.current_password']);
+>>>>>>> laraxot/dev
 
         $errors = $testable->errors();
         Assert::assertIsArray($errors);

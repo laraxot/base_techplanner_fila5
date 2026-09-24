@@ -6,7 +6,10 @@ namespace Modules\Xot\Filament\Resources\CacheResource\Pages;
 
 use Filament\Actions\Action;
 use Filament\Actions\CreateAction;
+<<<<<<< HEAD
 use Filament\Tables\Columns\Column;
+=======
+>>>>>>> laraxot/dev
 use Filament\Tables\Columns\Layout\Stack;
 use Filament\Tables\Columns\TextColumn;
 use Modules\UI\Enums\TableLayoutEnum;
@@ -25,6 +28,7 @@ class ListCaches extends XotBaseListRecords
 
     public function getHeaderWidgets(): array
     {
+<<<<<<< HEAD
         return [];
     }
 
@@ -66,6 +70,15 @@ class ListCaches extends XotBaseListRecords
         ];
     }
 
+=======
+        return [
+            // Clock::make(),
+        ];
+    }
+
+    
+   
+>>>>>>> laraxot/dev
     /**
      * @return array<string, Action>
      */

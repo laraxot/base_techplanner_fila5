@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ---
 title: "Risks and dependencies (Module Job)"
 module: "Job"
@@ -9,6 +13,11 @@ qmd: "04 risks"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> af4545e (.)
+>>>>>>> laraxot/dev
 # Risks and dependencies (Module Job)
 
 ## Risks

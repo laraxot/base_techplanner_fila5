@@ -8,11 +8,18 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use Illuminate\Support\Collection;
 use Modules\Geo\Datas\LocationData;
+<<<<<<< HEAD
 
 use function Safe\json_decode;
 
 use Spatie\QueueableAction\QueueableAction;
 
+=======
+use Spatie\QueueableAction\QueueableAction;
+
+use function Safe\json_decode;
+
+>>>>>>> laraxot/dev
 /**
  * Action per cercare luoghi usando Nominatim.
  */
@@ -35,9 +42,16 @@ class SearchPlacesAction
     /**
      * Cerca luoghi usando una query di ricerca.
      *
+<<<<<<< HEAD
      * @throws \RuntimeException Se la richiesta fallisce
      *
      * @return Collection<int, LocationData>
+=======
+     *
+     * @return Collection<int, LocationData>
+     *
+     * @throws \RuntimeException Se la richiesta fallisce
+>>>>>>> laraxot/dev
      */
     public function execute(string $query, ?string $country = null, int $limit = 10): Collection
     {
@@ -78,9 +92,15 @@ class SearchPlacesAction
     }
 
     /**
+<<<<<<< HEAD
      * @throws \RuntimeException Se la risposta non è nel formato atteso
      *
      * @return Collection<int, LocationData>
+=======
+     * @return Collection<int, LocationData>
+     *
+     * @throws \RuntimeException Se la risposta non è nel formato atteso
+>>>>>>> laraxot/dev
      */
     private function parseResponse(string $response): Collection
     {

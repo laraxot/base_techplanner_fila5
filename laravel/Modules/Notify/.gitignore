@@ -177,6 +177,7 @@ reports/
 graphify-out/
 docs/_archive
 docs/archived
+<<<<<<< HEAD
 
 # Module-root dumps / quality configs (SSoT: laravel/phpunit.xml)
 phpunit.xml
@@ -188,3 +189,5 @@ phpunit.xml.dist
 !/CHANGELOG.md
 !/LICENSE.md
 
+=======
+>>>>>>> laraxot/dev

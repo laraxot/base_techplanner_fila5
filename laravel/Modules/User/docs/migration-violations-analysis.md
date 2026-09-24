@@ -160,4 +160,8 @@ These violations directly contravene the Laraxot migration philosophy:
 - ❌ Maintenance simplicity
 - ❌ Clear schema definition
 
+<<<<<<< HEAD
 The violations demonstrate a clear gap in understanding and implementation of the core Laraxot migration philosophy that emphasizes: **ONE TABLE, ONE MIGRATION, ONE MODULE**.
+=======
+The violations demonstrate a clear gap in understanding and implementation of the core Laraxot migration philosophy that emphasizes: **ONE TABLE, ONE MIGRATION, ONE MODULE**.
+>>>>>>> laraxot/dev

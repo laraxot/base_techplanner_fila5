@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
+=======
+>>>>>>> laraxot/dev
 <div {{ $attributes->merge(['class' => 'min-h-screen bg-gray-100']) }}>
     <!-- Page Heading -->
     @if (isset($header))

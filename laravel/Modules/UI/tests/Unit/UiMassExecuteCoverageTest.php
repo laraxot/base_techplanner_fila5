@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\UI\Tests\Unit;
 
+<<<<<<< HEAD
+=======
+use Mockery;
+>>>>>>> laraxot/dev
 use Modules\UI\Tests\TestCase;
 use Modules\Xot\Tests\ModuleExecuteCoverage;
 use PHPUnit\Framework\Assert;
@@ -11,7 +15,11 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 afterEach(function (): void {
+<<<<<<< HEAD
     \Mockery::close();
+=======
+    Mockery::close();
+>>>>>>> laraxot/dev
 });
 
 describe('UI ModuleExecuteCoverage floor sweep', function (): void {

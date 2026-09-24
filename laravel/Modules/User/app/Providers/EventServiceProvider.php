@@ -20,6 +20,13 @@ class EventServiceProvider extends XotBaseEventServiceProvider
 {
     public string $name = 'User';
 
+<<<<<<< HEAD
+=======
+    public string $nameLower = 'user';
+
+    protected string $module_dir = __DIR__;
+
+>>>>>>> laraxot/dev
     protected string $module_ns = __NAMESPACE__;
 
     /**

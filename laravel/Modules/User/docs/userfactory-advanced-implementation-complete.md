@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # UserFactory Advanced Implementation - COMPLETE ✅
 
 ## 🎉 Mission Accomplished
@@ -297,6 +298,8 @@ $gdprTests = [
 - [Cross-Module Relations](../laravel/Modules/SaluteOra/docs/models/doctor-studio-relationship.md)
 
 **🎉 MISSION ACCOMPLISHED - UserFactory Advanced Implementation Complete! 🎉** 
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: userfactory-advanced-implementation-complete

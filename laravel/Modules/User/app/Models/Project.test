@@ -32,3 +32,8 @@ class Project extends Model
     }
 
 }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> laraxot/dev

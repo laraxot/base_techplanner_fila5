@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ---
 title: "Job Module - Product Launch Plan"
 module: "Job"
@@ -92,11 +96,15 @@ related:
 ---
 
 *Last Updated: March 12, 2026*
+<<<<<<< HEAD
 
 ---
 
 ## Versione italiana (piano di lancio con readiness stimata)
 
+=======
+=======
+>>>>>>> laraxot/dev
 # Job - Product Launch Plan
 
 > Piano di lancio. Modulo.
@@ -153,3 +161,7 @@ Rilasciare **Job** in modo controllato, misurabile e coerente con il suo ruolo: 
 - [PRD](prd.md)
 - [User Research](user-research.md)
 - [Indice centrale](../../../../docs/project/PRODUCT_DOCS_INDEX_2026_03_12.md)
+<<<<<<< HEAD
+=======
+>>>>>>> af4545e (.)
+>>>>>>> laraxot/dev

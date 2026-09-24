@@ -1,0 +1,313 @@
+Modules/Geo/app/Filament/Forms/Components/Support/CoordinatePickerHelpers.php:71:            $filtered = array_values(array_filter($data, static fn (mixed $item): bool => \is_array($item)));
+Modules/Geo/app/Filament/Forms/Components/Support/CoordinatePickerHelpers.php:178:    public static function normalizeCoordinate(mixed $value): ?float
+Modules/Geo/app/Filament/Forms/Components/AddressesField.php:112:            ->afterStateUpdated(function (mixed $state, Set $set, Get $get, Component $component): void {
+Modules/Geo/app/Filament/Forms/Components/AddressesField.php:136:            ->dehydrateStateUsing(function (mixed $state, Get $get): bool {
+Modules/Geo/app/Filament/Forms/Components/Traits/HasCoordinatePicker.php:49:        $this->afterStateHydrated(static function (self $component, mixed $state): void {
+Modules/Geo/app/Filament/Forms/Components/Traits/HasCoordinatePicker.php:243:            $filtered = array_values(array_filter($data, static fn (mixed $item): bool => \is_array($item)));
+Modules/Geo/app/Filament/Forms/Components/Traits/HasCoordinatePicker.php:371:    private static function normalizeCoordinate(mixed $value): ?float
+Modules/Geo/app/Filament/Forms/Components/XotBaseCoordinateField.php:50:        $this->afterStateHydrated(static function (self $component, mixed $state): void {
+Modules/Geo/app/Filament/Forms/Components/AddressInput.php:40:        $this->afterStateHydrated(function (AddressInput $component, mixed $state): void {
+Modules/Geo/app/Filament/Widgets/OSMMapWidget.php:92:        $latitudes = $places->pluck('latitude')->filter(fn (mixed $lat) => is_float($lat));
+Modules/Geo/app/Filament/Widgets/OSMMapWidget.php:93:        $longitudes = $places->pluck('longitude')->filter(fn (mixed $lng) => is_float($lng));
+Modules/Geo/app/Actions/GoogleMaps/GetAddressFromGoogleMapsAction.php:125:            ->first(function (mixed $component) use ($types) {
+Modules/Geo/app/Actions/Maps/BuildGeoMapWidgetPayloadAction.php:150:        $latitudes = $places->pluck('latitude')->filter(static fn (mixed $value): bool => \is_float($value) || \is_int($value));
+Modules/Geo/app/Actions/Maps/BuildGeoMapWidgetPayloadAction.php:151:        $longitudes = $places->pluck('longitude')->filter(static fn (mixed $value): bool => \is_float($value) || \is_int($value));
+Modules/Geo/app/Models/GeoJsonModel.php:58:        /** @var array<int, array<string, mixed>>|mixed $data */
+Modules/Geo/app/Models/Locality.php:62:        /** @var array<string, array{region_id: int|string, province_id: int|string, id: int|string, name: string, postal_code: mixed}> $unique */
+Modules/Geo/app/Models/ComuneJson.php:322:            ->each(static function (mixed $_nome, int|string $code) use (&$clearedKeys): void {
+Modules/Geo/app/Models/ComuneJson.php:332:            ->each(static function (mixed $_nome, int|string $code) use (&$clearedKeys): void {
+Modules/Geo/app/Models/ComuneJson.php:450:                static function (string $_attribute, mixed $value, \Closure $fail): void {
+Modules/Geo/app/Models/ComuneJson.php:459:                static function (string $_attribute, mixed $value, \Closure $fail): void {
+Modules/Geo/app/Models/ComuneJson.php:468:                static function (string $_attribute, mixed $value, \Closure $fail): void {
+Modules/Geo/app/Models/ComuneJson.php:477:                static function (string $_attribute, mixed $value, \Closure $fail): void {
+Modules/Geo/app/Models/Traits/GeoTrait.php:180:    public function getLatitudeAttribute(mixed $value): ?float
+Modules/Geo/app/Models/Traits/GeoTrait.php:229:    public function setAddressAttribute(mixed $value): void
+Modules/Geo/app/Models/Traits/SushiToJsons.php:169:    protected function findIndex(mixed $id): ?int
+Modules/Geo/app/Rules/FilterCoordinatesInRadius.php:31:    public function validate(string $attribute, mixed $value, Closure $fail): void
+Modules/Geo/app/Rules/FilterCoordinatesInRadius.php:40:        $coordinates = array_map(static function (mixed $coordinate): array {
+Modules/AI/app/Actions/ContextCompressorAction.php:72:    private static function extractCompressedText(mixed $response): ?string
+Modules/AI/app/Actions/GeneratePredictionsAction.php:187:    private function extractCompletionText(mixed $payload): string
+Modules/AI/app/Actions/Predict/GeneratePredictionDraftsAction.php:127:        /** @var mixed $decoded */
+Modules/AI/app/Actions/Predict/GeneratePredictionDraftsAction.php:191:    private function toNormalizedString(mixed $value): string
+Modules/AI/app/Actions/Predict/GeneratePredictionDraftsAction.php:199:    private function normalizeOptions(mixed $value): array
+Modules/Employee/app/Filament/Widgets/WorkHoursBoardWidget.php:147:                    static fn (mixed $duration): float => is_numeric($duration) ? (float) $duration : 0.0,
+Modules/Employee/app/Filament/Widgets/AttendanceOverviewWidget.php:50:                        ->afterStateUpdated(function (mixed $state): void {
+Modules/Employee/app/Filament/Widgets/TeamPresenceWidget.php:53:                            fn (mixed $state) => $this->selectedDepartment = is_string($state) ? $state : null,
+Modules/Xot/helpers/Helper.php:34:    function dddx(mixed $params): void
+Modules/Xot/helpers/Helper.php:226:    function post(string $uri, mixed $data = [], array $options = []): TestResponse
+Modules/Xot/helpers/Helper.php:236:    function put(string $uri, mixed $data = []): TestResponse
+Modules/Xot/helpers/Helper.php:246:    function patch(string $uri, mixed $data = []): TestResponse
+Modules/Xot/app/Relations/CustomRelation.php:88:    public function initRelation(array $models, mixed $relation): array
+Modules/Xot/app/Relations/CustomRelation.php:112:    public function match(array $models, Collection $collection, mixed $relation): array
+Modules/Xot/app/Database/Migrations/XotBaseMigration.php:351:    private function constraintCountRow(mixed $result): object|array|null
+Modules/Xot/app/Filament/Actions/Table/ExportXlsTableAction.php:32:                    static fn (mixed $value): string => is_scalar($value) ? (string) $value : '',
+Modules/Xot/app/Filament/Actions/Header/ExportXlsLazyAction.php:50:                            static function (mixed $field): string {
+Modules/Xot/app/Filament/Actions/Header/ExportTreeXlsAction.php:58:                        static fn (mixed $field): string => SafeStringCastAction::cast($field),
+Modules/Xot/app/Filament/Actions/Header/ExportXlsAction.php:50:                            static function (mixed $field): string {
+Modules/Xot/app/Filament/Actions/Form/FieldRefreshAction.php:26:            ->action(function (mixed $record, Set $set): void {
+Modules/Xot/app/Filament/Resources/LogResource/Pages/ViewLog.php:34:                        fn (mixed $state) => json_encode($state, JSON_PRETTY_PRINT),
+Modules/Xot/app/Filament/Resources/LogResource/Pages/ViewLog.php:37:                        fn (mixed $state) => json_encode($state, JSON_PRETTY_PRINT),
+Modules/Xot/app/Filament/Builders/FilterBuilder.php:102:                        fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '>=', SafeStringCastAction::cast($date)),
+Modules/Xot/app/Filament/Builders/FilterBuilder.php:106:                        fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '<=', SafeStringCastAction::cast($date)),
+Modules/Xot/app/Filament/Support/ColumnBuilder.php:75:            ->tooltip(static fn (mixed $record) => \is_object($record) && isset($record->title) ? SafeStringCastAction::cast($record->title) : '')
+Modules/Xot/app/Filament/Support/ColumnBuilder.php:114:            ->tooltip(static fn (mixed $record) => \is_object($record) && isset($record->description) ? SafeStringCastAction::cast($record->description) : '')
+Modules/Xot/app/Filament/Support/ColumnBuilder.php:189:            ->color(static function (mixed $record) {
+Modules/Xot/app/Filament/Traits/HasXotTable.php:145:                    static function (mixed $state) use ($labelText): string {
+Modules/Xot/app/Filament/Traits/HasXotTable.php:556:    private function invokeTableHook(string $method, mixed $default): mixed
+Modules/Xot/app/Filament/Widgets/XotBaseWidget.php:123:                    $merge1 = Arr::map($merge1, static function (mixed $value, string|int $key) use ($defaults) {
+Modules/Xot/app/Filament/Widgets/XotBaseWidget.php:149:        $fields = array_fill_keys(array_map(static fn (mixed $f): string => SafeStringCastAction::cast($f), $fields), null);
+Modules/Xot/app/Filament/Widgets/XotBaseSchemaWidget.php:150:        $keys = array_values(array_map(static fn (mixed $f): string => SafeStringCastAction::cast($f), array_merge($fillable, $appends)));
+Modules/Xot/app/Filament/Widgets/ModelTrendChartWidget.php:45:                        'data' => $data->map(fn (mixed $value) => $value instanceof TrendValue
+Modules/Xot/app/Filament/Widgets/ModelTrendChartWidget.php:54:                'labels' => $data->map(fn (mixed $value) => $value instanceof TrendValue
+Modules/Xot/app/Actions/Export/XlsByModelClassAction.php:71:            $rows = $rows->map(function (mixed $item) use ($excludes) {
+Modules/Xot/app/Actions/Export/ExportXlsByCollection.php:41:        $stringFields = array_map(fn (mixed $field): string => (string) $field, array_values($fields));
+Modules/Xot/app/Actions/Export/ExportXlsByCollection.php:123:    protected function extractValue(mixed $data, string $field): mixed
+Modules/Xot/app/Actions/File/GetModulePathAction.php:37:            $foundModule = collect($files)->filter(static function (mixed $item) use ($moduleNameLower): bool {
+Modules/Xot/app/Actions/File/FileAction.php:47:                    fn (mixed $item): bool => is_string($item) && Str::lower($item) === Str::lower($moduleName)
+Modules/Xot/app/Actions/Filament/Block/GetViewBlocksOptionsByTypeAction.php:52:        $opts = Arr::mapWithKeys($files, function (mixed $path) use ($img, $type, $fixPathAction): array {
+Modules/Xot/app/Actions/Filament/PlainTextFromFilamentValueAction.php:18:    public function execute(mixed $value, mixed $fallback = ''): string
+Modules/Xot/app/Actions/Filament/PlainTextFromFilamentValueAction.php:43:    public static function cast(mixed $value, mixed $fallback = ''): string
+Modules/Xot/app/Actions/RouteDynAction.php:231:                static fn (mixed $method): bool => is_string($method),
+Modules/Xot/app/Actions/Dummy/GetProductsArrayDummyAction.php:36:        $mapped = array_values(Arr::map($products['products'], function (mixed $item) {
+Modules/Xot/app/Actions/Model/Store/BelongsToManyAction.php:33:            $to = array_map(static fn (mixed $id): string => SafeStringCastAction::cast($id), $to);
+Modules/Xot/app/Actions/Model/Update/MorphOneAction.php:63:        return array_filter($data, static fn (mixed $value): bool => $value !== null);
+Modules/Xot/app/Actions/Model/Update/MorphToOneAction.php:58:        return array_filter($data, static fn (mixed $value) => $value !== null);
+Modules/Xot/app/Actions/Trend/BuildTrendCollectionAction.php:52:            ->map(static function (mixed $value): TrendData {
+Modules/Xot/app/Actions/Collection/TransCollectionAction.php:43:    public function trans(mixed $item): string
+Modules/Xot/app/Actions/Route/GetCurrentRouteViewAction.php:33:            static fn (mixed $value): string => is_scalar($value) ? (string) $value : '',
+Modules/Xot/app/Actions/Arrays/DiffAssocRecursiveAction.php:22:        $collection = collect($data)->map(static function (mixed $item) {
+Modules/Xot/app/Actions/Arrays/DiffAssocRecursiveAction.php:27:            return collect($item)->map(static function (mixed $item0) {
+Modules/Xot/app/Actions/Arrays/DiffAssocRecursiveAction.php:49:        $ris = $coll_1->filter(static function (mixed $value, int|string $key) use ($arr_2) {
+Modules/Xot/app/Actions/Arrays/ArrayToRawJsAction.php:53:    private function jsValue(mixed $value): string
+Modules/Xot/app/Actions/Debug/MeasureAction.php:24:    public function execute(Closure $closure, string $label = ''): mixed
+Modules/Xot/app/Actions/Arr/DiffAssocRecursiveAction.php:22:        return collect($data)->map(static function (mixed $item): array {
+Modules/Xot/app/Actions/Arr/DiffAssocRecursiveAction.php:37:        return collect($data)->map(static function (mixed $value) {
+Modules/Xot/app/Actions/Arr/DiffAssocRecursiveAction.php:73:                    static fn (mixed $item): bool => ! \in_array($item, $rightList, false)
+Modules/Xot/app/Actions/Array/DiffAssocRecursiveAction.php:22:        $collection = collect($data)->map(static function (mixed $item) {
+Modules/Xot/app/Actions/Array/DiffAssocRecursiveAction.php:27:            return collect($item)->map(static function (mixed $item0) {
+Modules/Xot/app/Actions/Array/DiffAssocRecursiveAction.php:49:        $ris = $coll_1->filter(static function (mixed $value, int|string $key) use ($arr_2) {
+Modules/Xot/app/Actions/Array/ArrayToRawJsAction.php:54:    private function jsValue(mixed $value): string
+Modules/Xot/app/Datas/MetatagData.php:419:                    static fn (mixed $color): string => (string) $color,
+Modules/Xot/app/Datas/Transformers/AssetTransformer.php:28:    public function transform(DataProperty $_property, mixed $value, TransformationContext $_context): string
+Modules/Xot/app/Datas/RouteParamsData.php:20:    public mixed $row = null;
+Modules/Xot/app/Datas/TrendData.php:16:    public mixed $aggregate;
+Modules/Xot/app/Casts/PhoneCast.php:24:    public function get(mixed $_model, string $_key, mixed $value, array $_attributes): PhoneValueObject
+Modules/Xot/app/Casts/PhoneCast.php:42:    public function set(mixed $_model, string $_key, mixed $value, array $_attributes): string
+Modules/Xot/app/Exceptions/Handlers/HandlerDecorator.php:40:    public function __call(string $name, array $parameters): mixed
+Modules/Xot/app/Console/Commands/SearchTextInDbCommand.php:98:                                ->map(fn (mixed $value, int|string $key) => [
+Modules/Xot/app/Console/Commands/ListFilamentPanels.php:31:                ->filter(function (mixed $file): bool {
+Modules/Xot/app/Services/RouteService.php:342:            static fn (mixed $value): string => is_scalar($value) ? (string) $value : '',
+Modules/Xot/app/QueryBuilders/BaseQueryBuilder.php:81:    public function where(string $column, mixed $value): static
+Modules/Xot/app/QueryBuilders/BaseQueryBuilder.php:91:    public function whereOperator(string $column, string $operator, mixed $value): static
+Modules/Xot/app/Models/Traits/HasCommonScopes.php:95:    public function scopeCreatedAfter(Builder $query, mixed $date): Builder
+Modules/Xot/app/Models/Traits/HasCommonScopes.php:106:    public function scopeCreatedBefore(Builder $query, mixed $date): Builder
+Modules/Xot/app/Models/Traits/HasCommonScopes.php:117:    public function scopeUpdatedAfter(Builder $query, mixed $date): Builder
+Modules/Xot/app/Rules/DateTimeRule.php:23:    public function validate(string $attribute, mixed $value, \Closure $fail): void
+Modules/Xot/app/View/Composers/XotComposer.php:31:    public function __call(string $name, array $arguments): mixed
+Modules/Xot/app/View/Composers/XotComposer.php:35:        $module = Arr::first($modules, static function (mixed $module) use ($name): bool {
+Modules/Xot/app/Contracts/HasRecursiveRelationshipsContract.php:52:    public static function withMaxDepth(int $maxDepth, callable $query): mixed;
+Modules/Xot/app/Providers/RouteServiceProvider.php:139:        $models_collect->map(fn (mixed $item) => Str::plural(is_string($item) ? $item : ((string) $item)))->implode('|');
+Modules/Xot/app/Traits/HasSchemalessAttributes.php:80:    public function scopeWhereExtraAttribute(Builder $query, string $key, mixed $value): Builder
+Modules/Xot/app/Traits/HasSchemalessAttributes.php:88:    public function getExtraAttribute(string $key, mixed $default = null): mixed
+Modules/Xot/app/Traits/HasSchemalessAttributes.php:96:    public function setExtraAttribute(string $key, mixed $value): void
+Modules/Xot/app/Exports/LazyCollectionExport.php:51:    public function map(mixed $row): array
+Modules/Xot/app/Exports/LazyCollectionExport.php:128:    private function normalizeRow(mixed $row): array
+Modules/Xot/app/Exports/CollectionExport.php:88:    public function map(mixed $row): array
+Modules/Xot/app/Exports/CollectionExport.php:94:            return array_values(Arr::map($res, function (mixed $value, string $_key): string {
+Modules/Xot/app/Exports/QueryExport.php:59:                    static fn (mixed $heading): int|string => \is_int($heading) ? $heading : (string) $heading
+Modules/Xot/app/Exports/QueryExport.php:74:                static fn (mixed $heading): int|string => \is_int($heading) ? $heading : (string) $heading
+Modules/Xot/app/Exports/QueryExport.php:125:    public function map(mixed $row): array
+Modules/Xot/app/Exports/QueryExport.php:134:            ->mapWithKeys(static function (mixed $field, int|string $_key) use ($rowArray): array {
+Modules/Xot/app/Exports/QueryExport.php:145:    private function normalizeRow(mixed $row): array
+Modules/Seo/app/Datas/MetatagData.php:213:    public function get(string $key, mixed $default = null): mixed
+Modules/Seo/app/Datas/MetatagData.php:249:    public static function fromLivewire(mixed $value): self
+Modules/Seo/app/Data/MetatagData.php:212:    public function get(string $key, mixed $default = null): mixed
+Modules/Seo/app/Data/MetatagData.php:248:    public static function fromLivewire(mixed $value): self
+Modules/Seo/app/Interfaces/MetatagDataInterface.php:86:    public function get(string $key, mixed $default = null): mixed;
+Modules/Seo/app/Contracts/MetatagDataContract.php:48:    public function get(string $key, mixed $default = null): mixed;
+Modules/UI/app/Filament/Tables/Columns/GroupColumn.php:43:        $filtered = array_filter($form, static function (mixed $item): bool {
+Modules/UI/app/Filament/Tables/Columns/IconStateColumn.php:86:                            return Arr::mapWithKeys($statesArray, static function (mixed $stateItem) use ($record): array {
+Modules/UI/app/Filament/Tables/Columns/IconStateColumn.php:143:                ->action(function (mixed $record, array $data): void {
+Modules/UI/app/Filament/Tables/Columns/OpeningHoursColumn.php:36:        return $column->formatStateUsing(static fn (mixed $state): string => self::summarizeOpeningHours($state));
+Modules/UI/app/Filament/Tables/Columns/OpeningHoursColumn.php:44:    public static function summarizeOpeningHours(mixed $state): string
+Modules/UI/app/Filament/Tables/Columns/IDColumn.php:28:            ->formatStateUsing(static fn (mixed $state): HtmlString => static::renderAnchor($state));
+Modules/UI/app/Filament/Tables/Columns/IDColumn.php:36:    public static function renderAnchor(mixed $state): HtmlString
+Modules/UI/app/Filament/Tables/Columns/SelectStateColumn.php:18:        $this->options(function (Model $record, mixed $state): array {
+Modules/UI/app/Filament/Tables/Columns/SelectStateColumn.php:75:            $statesFiltered = array_filter($states, static function (mixed $item): bool {
+Modules/UI/app/Filament/Tables/Columns/SelectStateColumn.php:82:        $this->beforeStateUpdated(static function (Model $record, mixed $stateRaw): void {
+Modules/UI/app/Filament/Tables/Columns/SelectStateColumn.php:110:            static fn (mixed $key): string => SafeStringCastAction::cast($key),
+Modules/UI/app/Filament/Tables/Columns/SelectStateColumn.php:114:            static fn (mixed $value): string => SafeStringCastAction::cast($value),
+Modules/UI/app/Filament/Blocks/VideoSpatie.php:26:                    ->formatStateUsing(static function (mixed $state): string {
+Modules/UI/app/Filament/Blocks/Title.php:29:                ->afterStateHydrated(static function (TextInput $component, mixed $state): void {
+Modules/UI/app/Filament/Blocks/ImageSpatie.php:26:                    ->formatStateUsing(static function (mixed $state): string {
+Modules/UI/app/Filament/Forms/Components/IconPicker.php:56:                                static fn (mixed $v): string => SafeStringCastAction::cast($v),
+Modules/UI/app/Filament/Forms/Components/IconPicker.php:61:                                static fn (mixed $k): string => SafeStringCastAction::cast($k),
+Modules/UI/app/Filament/Forms/Components/SelectState.php:64:            static fn (mixed $key): string => SafeStringCastAction::cast($key),
+Modules/UI/app/Filament/Forms/Components/SelectState.php:68:            static fn (mixed $value): string => SafeStringCastAction::cast($value),
+Modules/UI/app/Filament/Forms/Components/RadioCollection.php:95:    public function isOptionSelected(mixed $option, mixed $stateOverride = null): bool
+Modules/UI/app/Filament/Forms/Components/InlineDatePicker.php:52:        $this->afterStateHydrated(static function (self $component, mixed $state): void {
+Modules/UI/app/Filament/Forms/Components/InlineDatePicker.php:63:        $this->dehydrateStateUsing(static function (self $_component, mixed $state): ?string {
+Modules/UI/app/Filament/Forms/Components/InlineDatePicker.php:150:        $result = collect($dates)->map(static function (mixed $date): string {
+Modules/UI/app/Filament/Forms/Components/EnumSelect.php:88:    public function convertToEnum(mixed $value): ?\BackedEnum
+Modules/UI/app/Filament/Widgets/UserCalendarWidget.php:98:    private static function normalizeEventsArray(mixed $value): array
+Modules/UI/app/Filament/Widgets/UserCalendarWidget.php:129:    private static function normalizeFormSchema(mixed $value): array
+Modules/UI/app/Rules/OpeningHoursRule.php:20:    public function validate(string $_attribute, mixed $value, \Closure $fail): void
+Modules/UI/app/Rules/OpeningHoursRule.php:143:    private function cleanTimeValue(mixed $value): ?string
+Modules/UI/app/View/Components/Render/Block.php:67:    private function normalizeViewData(mixed $data): array
+Modules/UI/resources/views/components/blocks/widget/simple.blade.php:17:        ], static fn (mixed $value): bool => $value !== null && $value !== '');
+Modules/TechPlanner/app/Filament/Resources/MailTemplateResource/Schemas/MailTemplateForm.php:62:                ->viewData(fn (mixed $record): array => [
+Modules/TechPlanner/app/Filament/Resources/MailTemplateResource/Schemas/MailTemplateForm.php:66:                ->visible(fn (mixed $record): bool => is_object($record) && isset($record->params) && ! empty($record->params)),
+Modules/TechPlanner/app/Models/Worker.php:232:    private function safeStringCast(mixed $value): string
+Modules/Activity/app/Filament/Pages/ListLogActivities.php:234:            ->filter(static fn (mixed $field): bool => $field instanceof Field)
+Modules/Activity/app/Filament/Pages/ListLogActivities.php:276:    private function toTranslationString(mixed $value): string
+Modules/Activity/app/Filament/Pages/ListLogActivities.php:283:            return implode(' ', array_map(static fn (mixed $item): string => is_scalar($item) || $item instanceof \Stringable ? (string) $item : '', $value));
+Modules/Activity/app/Actions/ActivityLogger.php:31:        mixed $user = null,
+Modules/Activity/app/Adapters/ActivityLogger.php:36:        mixed $user = null,
+Modules/Activity/app/Listeners/LogoutListener.php:35:            /** @var mixed $lastLoginRaw */
+Modules/Job/app/Filament/Resources/JobBatchResource/Pages/ListJobBatches.php:52:                    static function (mixed $record): string {
+Modules/Job/app/Filament/Columns/ScheduleArguments.php:65:                static function (mixed $value): bool {
+Modules/Job/app/Filament/Columns/ScheduleArguments.php:77:                function (mixed $value, int|string $key): string {
+Modules/Job/app/Rules/Corn.php:20:    public function validate(string $_attribute, mixed $value, Closure $fail): void
+Modules/Notify/app/Filament/Clusters/Test/Pages/SendPushNotificationPage.php:65:        $callback = static function (mixed $item): array {
+Modules/Notify/app/Filament/Clusters/Test/Pages/SendPushNotificationPage.php:98:        $filterCallback = static function (mixed $item): bool {
+Modules/Notify/app/Filament/Clusters/Test/Pages/SendPushNotification.php:64:        $callback = static function (mixed $item): array {
+Modules/Notify/app/Filament/Clusters/Test/Pages/SendPushNotification.php:97:        $filterCallback = static function (mixed $item): bool {
+Modules/Notify/app/Actions/Mail/Engines/Duocircle/TryDuocircleMailAction.php:96:    private function invoke(object|string $target, string $method, mixed ...$arguments): mixed
+Modules/Notify/app/Actions/SendNotificationAction.php:107:        /** @var mixed $email */
+Modules/Notify/app/Actions/SendNotificationAction.php:179:        /** @var mixed $phone */
+Modules/Notify/app/Actions/SendNotificationAction.php:198:    protected function normalizeModelKey(mixed $value): ?int
+Modules/Notify/app/Helpers/ConfigHelper.php:40:    public static function get(string $key, mixed $default = null): mixed
+Modules/Notify/app/Notifications/TicketAssignedNotification.php:20:        public mixed $ticket, // Using mixed type since Ticket model doesn't exist
+Modules/Notify/app/Notifications/RecordNotification.php:23:    /** @var array<int, array{path?: string, data?: mixed, as?: string|null, mime?: string|null}> */
+Modules/User/app/Filament/Resources/UserResource/RelationManagers/AuthenticationLogsRelationManager.php:47:                ->formatStateUsing(function (mixed $state) {
+Modules/User/app/Filament/Resources/UserResource/RelationManagers/AuthenticationLogsRelationManager.php:50:                            ->map(fn (mixed $value, int|string $key): string => SafeStringCastAction::cast($key).': '.SafeStringCastAction::cast($value))
+Modules/User/app/Filament/Resources/UserResource/RelationManagers/OauthTokensRelationManager.php:62:                ->formatStateUsing(function (mixed $state) {
+Modules/User/app/Filament/Resources/UserResource/RelationManagers/SocialiteUsersRelationManager.php:37:                ->formatStateUsing(function (mixed $state): string {
+Modules/User/app/Filament/Resources/UserResource/Schemas/UserForm.php:40:                        ->dehydrateStateUsing(function (mixed $state): ?string {
+Modules/User/app/Filament/Resources/UserResource/Schemas/UserForm.php:47:                        ->required(fn (mixed $livewire): bool => $livewire instanceof CreateUser),
+Modules/User/app/Filament/Resources/UserResource/Schemas/UserForm.php:52:                    TextEntry::make('created_at')->html()->state(static function (mixed $record) {
+Modules/User/app/Filament/Resources/SocialiteUserResource/Pages/ViewSocialiteUser.php:34:                                ->url(function (mixed $state, ?SocialiteUser $record): ?string {
+Modules/User/app/Filament/Resources/SocialiteUserResource/Pages/ViewSocialiteUser.php:47:                                ->formatStateUsing(fn (mixed $state): string => is_string($state) ? Str::title($state) : ''),
+Modules/User/app/Filament/Resources/SocialiteUserResource/Pages/ViewSocialiteUser.php:67:                                ->url(fn (mixed $state): mixed => $state)
+Modules/User/app/Filament/Resources/BaseProfileResource/Pages/ListProfiles.php:35:                ->default(function (mixed $record) {
+Modules/User/app/Filament/Resources/RoleResource/Pages/EditRole.php:33:        $this->permissions->each(static function (mixed $permission) use ($permissionModels, $data): void {
+Modules/User/app/Filament/Resources/RoleResource/Pages/EditRole.php:55:                static fn (mixed $_permission, string $key): bool => ! \in_array($key, ['name', 'guard_name', 'select_all'], false) && Str::contains($key, '_'),
+Modules/User/app/Filament/Resources/RoleResource/Pages/CreateRole.php:24:                static fn (mixed $_permission, string $key): bool => ! in_array($key, ['name', 'guard_name', 'select_all'], false) && Str::contains($key, '_'),
+Modules/User/app/Filament/Resources/BaseUserResource.php:54:                    ->dehydrateStateUsing(function (mixed $state) {
+Modules/User/app/Filament/Resources/BaseUserResource.php:61:                    ->required(fn (mixed $livewire): bool => $livewire instanceof CreateUser),
+Modules/User/app/Filament/Resources/BaseUserResource.php:64:                'created_at' => TextEntry::make('created_at')->html()->state(static function (mixed $record) {
+Modules/User/app/Filament/Resources/PermissionResource/Pages/ViewPermission.php:26:                ->formatStateUsing(fn (mixed $state): string => $state ? __('user::common.yes') : __('user::common.no')),
+Modules/User/app/Filament/Resources/OauthAuthCodeResource.php:71:                    ->formatStateUsing(function (mixed $state): string {
+Modules/User/app/Filament/Resources/TenantResource.php:55:                        ->afterStateUpdated(function (callable $set, mixed $state): void {
+Modules/User/app/Filament/Resources/TenantResource.php:66:                        ->disabled(fn (mixed $context): bool => $context !== 'create')
+Modules/User/app/Filament/Resources/TenantResource.php:74:                        ->visible(fn (mixed $context): bool => $context === 'create')
+Modules/User/app/Filament/Resources/AuthenticationLogResource/Pages/ViewAuthenticationLog.php:42:                                ->url(function (mixed $state, AuthenticationLog $record): ?string {
+Modules/User/app/Filament/Resources/AuthenticationLogResource/Pages/ViewAuthenticationLog.php:93:                        ->formatStateUsing(function (mixed $state): string {
+Modules/User/app/Filament/Resources/TenantResource/Pages/ListTenants.php:34:                ->default(function (mixed $record) {
+Modules/User/app/Filament/Resources/TenantResource/RelationManagers/ProfilesRelationManager.php:36:                ->required(fn (mixed $context): bool => $context === 'create')
+Modules/User/app/Filament/Resources/TenantResource/RelationManagers/ProfilesRelationManager.php:43:                ->required(fn (mixed $context): bool => $context === 'create')
+Modules/User/app/Filament/Resources/TenantResource/RelationManagers/UsersRelationManager.php:36:                ->required(fn (mixed $context): bool => $context === 'create')
+Modules/User/app/Filament/Resources/TenantResource/RelationManagers/UsersRelationManager.php:43:                ->required(fn (mixed $context): bool => $context === 'create')
+Modules/User/app/Filament/Resources/TenantResource/RelationManagers/DomainsRelationManager.php:54:                static fn (mixed $record): string => is_object($record) && isset($record->domain) && is_string($record->domain)
+Modules/User/app/Filament/Resources/TenantResource/Schemas/TenantForm.php:31:                        ->afterStateUpdated(function (callable $set, mixed $state): void {
+Modules/User/app/Filament/Resources/TenantResource/Schemas/TenantForm.php:42:                        ->disabled(fn (mixed $context): bool => $context !== 'create')
+Modules/User/app/Filament/Resources/TenantResource/Schemas/TenantForm.php:50:                        ->visible(fn (mixed $context): bool => $context === 'create')
+Modules/User/app/Filament/Resources/TenantResource/Schemas/CustomerForm.php:31:                        ->afterStateUpdated(function (callable $set, mixed $state): void {
+Modules/User/app/Filament/Resources/TenantResource/Schemas/CustomerForm.php:42:                        ->disabled(fn (mixed $context): bool => $context !== 'create')
+Modules/User/app/Filament/Resources/TenantResource/Schemas/CustomerForm.php:50:                        ->visible(fn (mixed $context): bool => $context === 'create')
+Modules/User/app/Filament/Resources/SocialProviderResource/Pages/ViewSocialProvider.php:30:                'scopes' => TextEntry::make('scopes')->formatStateUsing(function (mixed $state): string {
+Modules/User/app/Filament/Resources/SocialProviderResource/Pages/ViewSocialProvider.php:37:                'parameters' => TextEntry::make('parameters')->formatStateUsing(function (mixed $state): string {
+Modules/User/app/Filament/Resources/OauthAccessTokenResource.php:82:                    ->tooltip(function (mixed $state): ?string {
+Modules/User/app/Filament/Resources/OauthAccessTokenResource.php:105:                    ->formatStateUsing(function (mixed $state): string {
+Modules/User/app/Filament/Pages/SocialiteProviderSettingsPage.php:91:                            ->dehydrateStateUsing(fn (mixed $state): string => $this->dehydrateSecret($state, 'services.google.client_secret'))
+Modules/User/app/Filament/Pages/SocialiteProviderSettingsPage.php:119:                            ->dehydrateStateUsing(fn (mixed $state): string => $this->dehydrateSecret($state, 'services.github.client_secret'))
+Modules/User/app/Filament/Pages/SocialiteProviderSettingsPage.php:147:                            ->dehydrateStateUsing(fn (mixed $state): string => $this->dehydrateSecret($state, 'services.microsoft.client_secret'))
+Modules/User/app/Filament/Pages/SocialiteProviderSettingsPage.php:306:    private function maskSecret(mixed $secret): string
+Modules/User/app/Filament/Pages/SocialiteProviderSettingsPage.php:327:    private function dehydrateSecret(mixed $state, string $configKey): string
+Modules/User/app/Filament/Pages/SocialiteProviderSettingsPage.php:351:    private function resolveSecret(mixed $newValue, mixed $existingValue): string
+Modules/User/app/Filament/Pages/SocialiteProviderSettingsPage.php:399:    private function providerData(mixed $value): array
+Modules/User/app/Filament/Pages/SocialiteProviderSettingsPage.php:418:    private function stringList(mixed $value): array
+Modules/User/app/Filament/Pages/SocialiteProviderSettingsPage.php:426:            static fn (mixed $item): bool => is_string($item) && $item !== '',
+Modules/User/app/Filament/Clusters/Socialite/Resources/SocialiteUserResource/Pages/ViewSocialiteUser.php:34:                                ->url(function (mixed $state, ?SocialiteUser $record): ?string {
+Modules/User/app/Filament/Clusters/Socialite/Resources/SocialiteUserResource/Pages/ViewSocialiteUser.php:47:                                ->formatStateUsing(fn (mixed $state): string => is_string($state) ? Str::title($state) : ''),
+Modules/User/app/Filament/Clusters/Socialite/Resources/SocialiteUserResource/Pages/ViewSocialiteUser.php:67:                                ->url(fn (mixed $state): ?string => is_string($state) && $state !== '' ? $state : null)
+Modules/User/app/Filament/Clusters/Socialite/Resources/SocialProviderResource/Pages/ViewSocialProvider.php:30:                'scopes' => TextEntry::make('scopes')->formatStateUsing(function (mixed $state): string {
+Modules/User/app/Filament/Clusters/Socialite/Resources/SocialProviderResource/Pages/ViewSocialProvider.php:37:                'parameters' => TextEntry::make('parameters')->formatStateUsing(function (mixed $state): string {
+Modules/User/app/Filament/Clusters/Passport/Resources/OauthDeviceCodeResource/Pages/ViewOauthDeviceCode.php:38:                                ->formatStateUsing(fn (mixed $state): string => Str::limit(SafeStringCastAction::cast($state), 15, '...')),
+Modules/User/app/Filament/Clusters/Passport/Resources/OauthDeviceCodeResource/Pages/ViewOauthDeviceCode.php:41:                                ->url(function (mixed $state, OauthDeviceCode $record): ?string {
+Modules/User/app/Filament/Clusters/Passport/Resources/OauthDeviceCodeResource/Pages/ViewOauthDeviceCode.php:54:                                ->url(function (mixed $state, OauthDeviceCode $record): ?string {
+Modules/User/app/Filament/Clusters/Passport/Resources/OauthDeviceCodeResource/Pages/ViewOauthDeviceCode.php:68:                        ->formatStateUsing(function (mixed $state): string {
+Modules/User/app/Filament/Clusters/Passport/Resources/OauthDeviceCodeResource/Pages/ViewOauthDeviceCode.php:71:                                return implode(', ', array_map(fn (mixed $item): string => SafeStringCastAction::cast($item), $state));
+Modules/User/app/Filament/Clusters/Passport/Resources/OauthAuthCodeResource/Pages/ViewOauthAuthCode.php:38:                                ->formatStateUsing(fn (mixed $state): string => Str::limit(SafeStringCastAction::cast($state), 15, '...')),
+Modules/User/app/Filament/Clusters/Passport/Resources/OauthAuthCodeResource/Pages/ViewOauthAuthCode.php:40:                                ->url(function (mixed $state, OauthAuthCode $record): ?string {
+Modules/User/app/Filament/Clusters/Passport/Resources/OauthAuthCodeResource/Pages/ViewOauthAuthCode.php:53:                                ->url(function (mixed $state, OauthAuthCode $record): ?string {
+Modules/User/app/Filament/Clusters/Passport/Resources/OauthAuthCodeResource/Pages/ViewOauthAuthCode.php:67:                        ->formatStateUsing(function (mixed $state): string {
+Modules/User/app/Filament/Clusters/Passport/Resources/OauthAuthCodeResource/Pages/ViewOauthAuthCode.php:71:                                    fn (mixed $item): string => SafeStringCastAction::cast($item),
+Modules/User/app/Filament/Clusters/Passport/Resources/OauthClientResource/RelationManagers/TokensRelationManager.php:47:                ->tooltip(function (mixed $state): ?string {
+Modules/User/app/Filament/Clusters/Passport/Resources/OauthClientResource/RelationManagers/TokensRelationManager.php:57:                ->formatStateUsing(function (mixed $state): string {
+Modules/User/app/Filament/Clusters/Passport/Resources/OauthClientResource/RelationManagers/TokensRelationManager.php:59:                        return implode(', ', array_map(fn (mixed $s): string => SafeStringCastAction::cast($s), $state));
+Modules/User/app/Filament/Clusters/Passport/Resources/OauthClientResource/RelationManagers/TokensRelationManager.php:73:                ->formatStateUsing(function (mixed $state): string {
+Modules/User/app/Filament/Clusters/Passport/Resources/OauthAccessTokenResource.php:74:                    ->tooltip(function (mixed $state): ?string {
+Modules/User/app/Filament/Clusters/Passport/Resources/OauthAccessTokenResource.php:97:                    ->formatStateUsing(function (mixed $state): string {
+Modules/User/app/Filament/Clusters/Passport/Resources/OauthAccessTokenResource.php:194:                ->tooltip(function (mixed $state): ?string {
+Modules/User/app/Filament/Clusters/Passport/Resources/OauthAccessTokenResource.php:217:                ->formatStateUsing(function (mixed $state): string {
+Modules/User/app/Filament/Widgets/RegistrationWidget.php:148:    private static function normalizeFormSchema(mixed $schema): array
+Modules/User/app/Filament/Widgets/UserTypeRegistrationsChartWidget.php:66:                        'data' => $data->map(fn (mixed $value) => $value instanceof TrendValue
+Modules/User/app/Filament/Widgets/UserTypeRegistrationsChartWidget.php:75:                'labels' => $data->map(fn (mixed $value) => $value instanceof TrendValue
+Modules/User/app/Filament/Widgets/UserTypeRegistrationsChartWidget.php:103:    private static function parseFilterDate(mixed $value): ?Carbon
+Modules/User/app/Actions/Shield/ShieldUtilsAction.php:134:            static fn (mixed $item): string => Assert::string($item),
+Modules/User/app/Actions/Shield/ShieldUtilsAction.php:216:            static fn (mixed $item): string => Assert::string($item),
+Modules/User/app/Actions/Shield/ShieldUtilsAction.php:229:            static fn (mixed $item): string => Assert::string($item),
+Modules/User/app/Actions/Shield/ShieldUtilsAction.php:242:            static fn (mixed $item): string => Assert::string($item),
+Modules/User/app/Actions/Shield/ShieldUtilsAction.php:289:            static fn (mixed $item): string => Assert::string($item),
+Modules/User/app/Actions/Shield/ResolveExclusionsConfigurationAction.php:68:            static fn (mixed $item): string => is_string($item) ? $item : '',
+Modules/User/app/Actions/Shield/ResolveExclusionsConfigurationAction.php:85:            static fn (mixed $item): string => is_string($item) ? $item : '',
+Modules/User/app/Actions/Shield/ResolveExclusionsConfigurationAction.php:102:            static fn (mixed $item): string => is_string($item) ? $item : '',
+Modules/User/app/Actions/Socialite/GetProviderScopesAction.php:37:            static fn (mixed $scope): string => SafeStringCastAction::cast($scope),
+Modules/User/app/Actions/Socialite/GetDomainAllowListAction.php:37:                static fn (mixed $item): string => SafeStringCastAction::cast($item),
+Modules/User/app/Datas/UserContextData.php:34:            static fn (mixed $role): string => SafeStringCastAction::cast($role),
+Modules/User/app/Datas/DeviceData.php:49:        $headers = collect(request()->header())->mapWithKeys(static function (mixed $item, string $key): array {
+Modules/User/app/Http/Livewire/Auth/Login.php:116:                ->afterStateUpdated(fn (mixed $_state): mixed => $this->validateOnly('email'))
+Modules/User/app/Models/Traits/HasModules.php:22:        $filteredModules = Arr::where($modules, function (mixed $module, int|string $key): bool {
+Modules/User/app/Models/Traits/HasTeams.php:169:        $users = $this->teamUsers->map(static function (TeamUser $membership): mixed {
+Modules/User/app/Rules/CheckOtpExpiredRule.php:26:    public function validate(string $_attribute, mixed $_value, \Closure $fail): void
+Modules/User/app/Providers/UserServiceProvider.php:109:        ResetPassword::toMailUsing(function (mixed $notifiable, string $token): SpatieEmail {
+Modules/User/app/Providers/UserServiceProvider.php:166:        VerifyEmail::toMailUsing(function (mixed $notifiable, string $url): SpatieEmail {
+Modules/User/app/Application/UseCases/Owners/SaveOwnershipRelationUseCaseContract.php:14:    public function execute(Client $client, int $ownerId, mixed $actor): void;
+Modules/Tenant/app/Actions/Config/ResolveTenantConfigValueAction.php:68:    private function assertValidConfigValue(mixed $res): float|int|string|array|null
+Modules/Tenant/app/Models/Traits/SushiToJson.php:451:    private static function intValue(mixed $value): int
+Modules/Tenant/app/Models/Traits/SushiToCsv.php:153:    private static function resolveRowIdKey(mixed $id): int|string
+Modules/Tenant/app/Models/Traits/SushiToCsv.php:217:    private static function csvValue(mixed $value): float|int|string|null
+Modules/Media/app/Filament/Resources/MediaResource/Tables/MediaTable.php:88:                ->url(static function (mixed $record): string {
+Modules/Media/app/Filament/Resources/MediaResource/Pages/ListMedia.php:84:                ->action(static function (mixed $record) {
+Modules/Media/app/Filament/Resources/MediaResource/Pages/ListMedia.php:99:                ->url(static function (mixed $record): string {
+Modules/Media/app/Filament/Tables/Columns/CloudFrontIconMediaColumn.php:18:        $this->default(static function (mixed $record) use ($attachment) {
+Modules/Media/app/Filament/Tables/Columns/CloudFrontIconMediaColumn.php:24:            ->color(static function (mixed $record) use ($attachment): string {
+Modules/Media/app/Filament/Tables/Columns/CloudFrontIconMediaColumn.php:31:            ->tooltip(static function (mixed $record) use ($attachment): string {
+Modules/Media/app/Filament/Tables/Columns/CloudFrontIconMediaColumn.php:41:            ->url(static function (mixed $record) use ($attachment): ?string {
+Modules/Media/app/Filament/Tables/Columns/IconMediaColumn.php:19:        $this->default(static function (mixed $record) use ($attachment) {
+Modules/Media/app/Filament/Tables/Columns/IconMediaColumn.php:25:            ->color(static function (mixed $record) use ($attachment): string {
+Modules/Media/app/Filament/Tables/Columns/IconMediaColumn.php:32:            ->tooltip(static function (mixed $record) use ($attachment): string {
+Modules/Media/app/Actions/Diagnostic/S3/FormatDebugOutputAction.php:80:    private function formatDataLine(string $key, mixed $value): string
+Modules/Media/app/Actions/Ffmpeg/ResolveMediaExporterAction.php:15:    public function execute(mixed $value): MediaExporter
+Modules/Media/app/Actions/GetAttachmentsSchemaAction.php:36:                ->afterStateUpdated(function (mixed $state, Set $set) use ($attachment): void {
+Modules/Media/app/Rules/FileExtensionRule.php:32:    public function validate(string $_attribute, mixed $value, Closure $fail): void
+Modules/Media/app/Support/Ffmpeg/MediaExporterResolver.php:19:    public static function from(mixed $value): MediaExporter
+Modules/Lang/app/Filament/Resources/TranslationFileResource/Pages/EditTranslationFile.php:32:            Section::make('content')->schema(function (mixed $record): array {
+Modules/Lang/app/Filament/Forms/Components/NationalFlagSelect.php:43:        $countries = Arr::sort($countries, function (mixed $c) {
+Modules/Lang/app/Filament/Forms/Components/NationalFlagSelect.php:91:        $filteredCountries = array_filter($countries, function (mixed $country) use ($searchLower) {
+Modules/Lang/app/Filament/Forms/Components/NationalFlagSelect.php:123:        $filteredCountries = Arr::sort($filteredCountries, function (mixed $c) {
+Modules/Lang/app/Filament/Forms/Components/TranslationEditor.php:22:        $this->afterStateHydrated(function (TranslationEditor $component, mixed $state): void {
+Modules/Lang/app/Actions/TranslatorAction.php:29:    public function get(mixed $key, array $replace = [], mixed $locale = null, mixed $fallback = true): string|array
+Modules/Lang/app/Actions/TransArrayAction.php:63:    public function trans(mixed $item): string
+Modules/Lang/app/Actions/TransCollectionAction.php:43:    public function trans(mixed $item): string
+Modules/Lang/app/Casts/LangField.php:22:    public function get(Model $model, string $key, mixed $value, array $attributes): mixed
+Modules/Lang/app/Casts/LangField.php:37:    public function set(Model $model, string $key, mixed $value, array $attributes): array
+Modules/Lang/app/Services/TranslatorService.php:29:    public function get(mixed $key, array $replace = [], mixed $locale = null, mixed $fallback = true): string|array
+Modules/Lang/app/Adapters/TranslatorAdapter.php:33:    public function get(mixed $key, array $replace = [], mixed $locale = null, mixed $fallback = true): string|array
+Modules/Lang/app/Models/TranslationFile.php:101:        $result = Arr::map($files, function (mixed $item) {
+Modules/Lang/app/View/Composers/ThemeComposer.php:39:        $languages = collect($langs)->map(function (mixed $item, string $locale): array {
+Modules/Cms/app/docs/config.php:81:    /* @param object{id: mixed} $page */
+Modules/Cms/app/Http/Volt/Password/ResetComponent.php:37:                    static fn (mixed $item): string => is_scalar($item) ? (string) $item : '',
+Modules/Cms/app/Http/Middleware/SetFolioLocale.php:20:    public function handle(Request $request, \Closure $next): mixed
+Modules/Cms/app/Models/Page.php:462:        $result = array_values(array_filter($middleware, static fn (mixed $value): bool => \is_string($value)));

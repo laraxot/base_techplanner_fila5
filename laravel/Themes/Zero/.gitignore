@@ -126,7 +126,10 @@ laravel/.phpstorm.meta.php
 laravel/_ide_helper.php
 laravel/_ide_helper_models.php
 
+<<<<<<< HEAD
 # -----------------------------------------------------------------------------
+=======
+>>>>>>> laraxot/dev
 # PHP / static analysis / quality tools
 
 phpstan*.json
@@ -137,6 +140,7 @@ rector.php
 
 docs/screenshots/
 .cursor
+<<<<<<< HEAD
 .devcontainer
 .vscode
 .windsurf
@@ -164,10 +168,20 @@ node_modules/
 .cursor/
 .vscode/
 .windsurf/
+=======
+.vscode
+.windsurf
+public_html/vendor/*
+laravel/stubs
+logs
+public_html/
+# PHPStan output files
+>>>>>>> laraxot/dev
 tests/AuditCoverage
 # AI/TOOL SCAFFOLD — must never exist in module tree (see docs/wiki/rules/module-theme-root-cleanup.md)
 
 # Laraxot — IDE folders forbidden at module/theme root (see module-theme-root-hygiene)
+<<<<<<< HEAD
 .devcontainer/
 extras
 tests/AuditCoverage/
@@ -175,6 +189,11 @@ tests/AuditCoverage/
 # Laraxot — quality tool configs forbidden in module/theme root (use laravel/phpinsights.php, laravel/rector.php)
 phpinsights.php
 rector.php
+=======
+extras
+
+# Laraxot — quality tool configs forbidden in module/theme root (use laravel/phpinsights.php, laravel/rector.php)
+>>>>>>> laraxot/dev
 docs/graphify/graphify-out/
 .opencode
 

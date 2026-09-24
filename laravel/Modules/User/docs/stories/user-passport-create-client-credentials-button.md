@@ -13,7 +13,11 @@ language: it-IT
 ecosystem: Laraxot
 priority: medium
 created_at: '2026-09-03'
+<<<<<<< HEAD
 updated_at: '2026-09-17'
+=======
+updated_at: '2026-09-03'
+>>>>>>> laraxot/dev
 tags: [bmad, story, user, passport, oauth, admin, super-admin, invii]
 related:
   - ../../laravel/Modules/User/app/Filament/Clusters/Passport/Pages/PassportDashboard.php
@@ -241,6 +245,7 @@ Claude Sonnet 5
      discussione con l'utente: il database sulla connessione `user`
      (dove vive `oauth_clients`, separata dal DB applicativo principale)
      potrebbe non essere stato ripristinato da un backup reale durante il
+<<<<<<< HEAD
      trasloco server" — **falsa**. Verificato con una query diretta
      sull'ambiente di produzione: `Admin`, `ATS`, `Vivaservizi`, `smat`
      esistono tutti in `oauth_clients`, con date di creazione reali
@@ -346,6 +351,9 @@ Claude Sonnet 5
        esercitare il bottone/comando reale (stesso pattern di
        `ClientsRelationManagerAssociateTest.php`), o rimosso/rivisto se il
        suo scenario non ha più senso con la decisione presa.
+=======
+     trasloco server, a differenza del DB principale.
+>>>>>>> laraxot/dev
 
 ### File List
 
@@ -363,5 +371,8 @@ Repository del modulo, letto con `cd laravel/Modules/User && git remote -v`:
 |---|---|---|
 | Issue (modulo) | aperta | https://github.com/laraxot/module_user_fila5/issues/85 |
 | Issue (root, mirror) | aperta | https://github.com/laraxot/base_quaeris_fila5/issues/181 |
+<<<<<<< HEAD
 | Issue correlata (gestione manuale associazione client↔utente, 2026-09-15) | aperta | https://github.com/laraxot/module_user_fila5/issues/97 |
 | Issue correlata (bottone "Nuove credenziali" scomparso, cancellato da commit 9d2362d94, 2026-09-15) | aperta | https://github.com/laraxot/module_user_fila5/issues/98 |
+=======
+>>>>>>> laraxot/dev

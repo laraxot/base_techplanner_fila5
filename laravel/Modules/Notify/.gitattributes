@@ -24,7 +24,10 @@ CHANGELOG.md export-ignore
 *.ttf binary !filter
 *.eot binary !filter
 *.otf binary !filter
+<<<<<<< HEAD
 *.mp4 binary !filter
+=======
+>>>>>>> laraxot/dev
 *.phar binary !filter
 *.db binary !filter
 *.sqlite binary !filter

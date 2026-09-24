@@ -59,7 +59,10 @@ trait HasPostPreview
     }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
 >>>>>>> c34c6d1 (.)
+=======
+>>>>>>> laraxot/dev

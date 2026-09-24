@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 // UI Blade view — see Modules/UI/docs/wiki.
+=======
+>>>>>>> laraxot/dev
 ?>
 @props([
     'title' => 'Data to enrich your online business',

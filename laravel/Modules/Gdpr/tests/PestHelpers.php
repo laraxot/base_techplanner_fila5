@@ -10,14 +10,35 @@ use Illuminate\Testing\TestResponse;
 use Modules\Gdpr\Database\Factories\ConsentFactory;
 use Modules\Gdpr\Models\Consent;
 use Modules\Gdpr\Tests\TestCase;
+<<<<<<< HEAD
+=======
+use Pest\Support\HigherOrderTapProxy;
+>>>>>>> laraxot/dev
 use PHPUnit\Framework\Assert;
 
 /**
  * Helper Pest/PHPStan — modulo Gdpr.
  *
+<<<<<<< HEAD
  * HTTP via Pest\Laravel. Skip via Assert::markTestSkipped / gdprSkipTest.
  * assertDatabaseHasRow via gdprAssertDatabaseHas (delega a query DB).
  */
+=======
+ * @see Modules/Media/tests/Feature/MediaBusinessLogicTest.php (assertMediaTableHas)
+ */
+function gdprTest(): TestCase
+{
+    $test = test();
+    // @phpstan-ignore-next-line HigherOrderTapProxy is a Pest internal class
+    if ($test instanceof HigherOrderTapProxy) {
+        $test = $test->target;
+    }
+
+    Assert::assertInstanceOf(TestCase::class, $test);
+
+    return $test;
+}
+>>>>>>> laraxot/dev
 
 /**
  * @param array<string, string> $headers
@@ -26,7 +47,11 @@ use PHPUnit\Framework\Assert;
  */
 function gdprGet(string $uri, array $headers = []): TestResponse
 {
+<<<<<<< HEAD
     return \Pest\Laravel\get($uri, $headers);
+=======
+    return gdprTest()->get($uri, $headers);
+>>>>>>> laraxot/dev
 }
 
 /**
@@ -37,12 +62,21 @@ function gdprGet(string $uri, array $headers = []): TestResponse
  */
 function gdprPost(string $uri, array $data = [], array $headers = []): TestResponse
 {
+<<<<<<< HEAD
     return \Pest\Laravel\post($uri, $data, $headers);
 }
 
 function gdprActingAs(Authenticatable $user, ?string $driver = null): void
 {
     \Pest\Laravel\actingAs($user, $driver);
+=======
+    return gdprTest()->post($uri, $data, $headers);
+}
+
+function gdprActingAs(Authenticatable $user, ?string $driver = null): TestCase
+{
+    return gdprTest()->actingAs($user, $driver);
+>>>>>>> laraxot/dev
 }
 
 /**
@@ -55,7 +89,11 @@ function gdprArtisan(string $command, array $parameters = []): int
 
 function gdprSkipTest(string $message = ''): void
 {
+<<<<<<< HEAD
     Assert::markTestSkipped($message !== '' ? $message : 'Skipped');
+=======
+    gdprTest()->markTestSkipped($message);
+>>>>>>> laraxot/dev
 }
 
 /**
@@ -73,6 +111,7 @@ function assertGdprTableHas(string $table, array $where, ?string $connection = '
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $data
  */
 function gdprAssertDatabaseHas(string $table, array $data, ?string $connection = null): void
@@ -87,6 +126,9 @@ function gdprAssertDatabaseHas(string $table, array $data, ?string $connection =
 
 /**
  * @param  array<string, mixed>  $where
+=======
+ * @param array<string, mixed> $where
+>>>>>>> laraxot/dev
  */
 function assertGdprTableMissing(string $table, array $where, ?string $connection = 'gdpr'): void
 {

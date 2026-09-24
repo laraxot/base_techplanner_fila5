@@ -7,13 +7,20 @@ namespace Modules\UI\Filament\Blocks;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\TextInput;
+<<<<<<< HEAD
 use Filament\Schemas\Components\Component;
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Blocks\XotBaseBlock;
 
 final class Post extends XotBaseBlock
 {
     /**
+<<<<<<< HEAD
      * @return array<int, Component>
+=======
+     * @return array<int, \Filament\Schemas\Components\Component>
+>>>>>>> laraxot/dev
      */
     public static function getFormSchema(): array
     {

@@ -19,7 +19,10 @@ related:
 ---
 
 # Implementazione del Logout
+<<<<<<< HEAD
 # Implementazione del Logout 
+=======
+>>>>>>> laraxot/dev
 
 ## Indice
 - [Panoramica](#panoramica)
@@ -223,11 +226,14 @@ mount(function() {
         // Evento post-logout
         Event::dispatch('auth.logout.successful');
     }
+<<<<<<< HEAD
         
         // Evento post-logout
         Event::dispatch('auth.logout.successful');
     }
     
+=======
+>>>>>>> laraxot/dev
 
     $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 });

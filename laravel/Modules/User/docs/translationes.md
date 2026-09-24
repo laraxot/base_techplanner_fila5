@@ -115,3 +115,7 @@ Il file ora segue la struttura espansa obbligatoria per le regole Laraxot:
 **Status**: Completato
 
 ---
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev

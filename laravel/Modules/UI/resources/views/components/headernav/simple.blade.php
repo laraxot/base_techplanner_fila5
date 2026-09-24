@@ -1,13 +1,21 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 ?>
 <header class="w-full">
     <div class="relative z-20 flex items-center justify-between w-full h-12 px-6 mx-auto">
         <div x-data="{ mobileMenuOpen: false }" class="relative flex items-center md:space-x-2 text-neutral-800">
             <div class="relative z-50 flex items-center w-auto h-full">
                 <a href="{{ route('home') }}" class="flex items-center mr-0 md:mr-5 shrink-0">
+<<<<<<< HEAD
                     <img src="{{ asset('assets/predict/img/logo-ft.svg') }}" alt="{{ config('app.name') }}" class="h-8 w-auto" />
+=======
+                    <img src="{{ asset('assets/branding/img/logo-ft.svg') }}" alt="{{ config('app.name') }}" class="h-8 w-auto" />
+>>>>>>> laraxot/dev
                 </a>
 
                 {{-- Hamburger Menu Button --}}
@@ -56,7 +64,11 @@ declare(strict_types=1);
 
         {{-- Right Menu --}}
         <div class="relative z-50 flex items-stretch space-x-3 text-neutral-800">
+<<<<<<< HEAD
             @livewire(\Modules\Lang\Filament\Widgets\LanguageSwitcherWidget::class)
+=======
+            <livewire:lang.change></livewire:lang.change>
+>>>>>>> laraxot/dev
             <div x-data class="flex-shrink-0 hidden w-[38px] overflow-hidden rounded-full h-[38px] sm:block" x-cloak>
                 <x-ui.light-dark-switch></x-ui.light-dark-switch>
             </div>

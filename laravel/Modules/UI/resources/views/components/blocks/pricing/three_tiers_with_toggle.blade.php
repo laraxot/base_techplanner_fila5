@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 ?>
 {{-- Requires js --}}
 <div class="bg-white py-24 sm:py-32">

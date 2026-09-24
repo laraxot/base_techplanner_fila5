@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Support;
 
 /**
+<<<<<<< HEAD
  * PHPStan bridge for Pest `uses(...)->group()` / `->beforeEach()` chaining.
  */
 final class PestUsesChain
@@ -13,6 +14,12 @@ final class PestUsesChain
     {
     }
 
+=======
+ * PHPStan bridge for Pest `uses(...)->beforeEach()` chaining.
+ */
+final class PestUsesChain
+{
+>>>>>>> laraxot/dev
     public function beforeEach(\Closure $closure): self
     {
         return $this;
@@ -27,9 +34,12 @@ final class PestUsesChain
     {
         return $this;
     }
+<<<<<<< HEAD
 
     public function skip(mixed ...$arguments): self
     {
         return $this;
     }
+=======
+>>>>>>> laraxot/dev
 }

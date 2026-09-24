@@ -197,8 +197,12 @@ Log::channel('auth')->info('Logout effettuato', [
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Gestione Sessione](./session-management.md)
 - [Documentazione Volt](./volt-blade-implementation.md)
+<<<<<<< HEAD
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Gestione Sessione](./SESSION_MANAGEMENT.md)
 - [Documentazione Volt](./VOLT_BLADE_IMPLEMENTATION.md)
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
+=======
+- [Tema One Documentation](../../Themes/One/docs/README.md) 
+>>>>>>> laraxot/dev

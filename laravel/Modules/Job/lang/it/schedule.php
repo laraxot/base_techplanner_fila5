@@ -99,6 +99,7 @@ return [
     'label' => 'Schedule',
     'plural_label' => 'Schedule (Plurale)',
     'actions' => [
+<<<<<<< HEAD
         'create' => ['label' => 'Crea Schedule', 'icon' => 'create', 'tooltip' => 'create'],
         'edit' => ['label' => 'Modifica Schedule', 'icon' => 'edit', 'tooltip' => 'edit'],
         'delete' => ['label' => 'Elimina Schedule', 'icon' => 'delete', 'tooltip' => 'delete'],
@@ -114,6 +115,11 @@ return [
         'reorderRecords' => ['label' => 'reorderRecords', 'icon' => 'reorderRecords', 'tooltip' => 'reorderRecords'],
         'profile' => ['label' => 'profile', 'icon' => 'profile', 'tooltip' => 'profile'],
         'logout' => ['label' => 'logout', 'icon' => 'logout', 'tooltip' => 'logout'],
+=======
+        'create' => ['label' => 'Crea Schedule'],
+        'edit' => ['label' => 'Modifica Schedule'],
+        'delete' => ['label' => 'Elimina Schedule'],
+>>>>>>> laraxot/dev
     ],
     'sections' => [
         'empty' => ['label' => '', 'heading' => ''],

@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Bug Fix: ParseError - Metodi Orfani Fuori dalla Classe"
 type: concept
 tags: [parse, error, orphan, methods]
@@ -162,6 +163,8 @@ Questo bug fix ha permesso di completare il miglioramento della qualità del cod
 - Notifiche utente
 - Verifica email
 ---
+=======
+>>>>>>> laraxot/dev
 module: theme
 topic: parse-error-orphan-methods
 canonical: ../../../../Themes/docs/shared-components/parse-error-orphan-methods.md

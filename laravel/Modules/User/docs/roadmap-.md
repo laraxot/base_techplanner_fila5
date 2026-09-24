@@ -5,9 +5,12 @@ tags: [roadmap]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "roadmap- user module - complete roadmap 2026"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 
+=======
+>>>>>>> laraxot/dev
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -955,8 +958,11 @@ User Module
 
 ## 🔗 INTEGRATION POINTS
 
+<<<<<<< HEAD
 ### 🎫 <nome progetto> Module
 
+=======
+>>>>>>> laraxot/dev
 ### 🎫 Fixcity Module
 - [ ] User-ticket relationships
 - [ ] Profile-ticket associations

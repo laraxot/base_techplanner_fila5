@@ -5,9 +5,12 @@ tags: [translation, city, field, refactor]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "translation-city-field-refactor- refactor completo campi "città" - modulo user"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 
+=======
+>>>>>>> laraxot/dev
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:

@@ -188,4 +188,8 @@ grep -r "Database/seeders" .
   - 29 factory files
   - 23 migration files
   - 5 seeder files
+<<<<<<< HEAD
   - Total: 57 duplicate files eliminated
+=======
+  - Total: 57 duplicate files eliminated
+>>>>>>> laraxot/dev

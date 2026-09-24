@@ -48,15 +48,20 @@ return [
     'navigation' => [
         'name' => 'Icon State Split',
         'plural' => 'Icon State Split',
+<<<<<<< HEAD
         'group' => [
             'name' => 'General',
             'description' => 'General Settings',
         ],
+=======
+        'group' => ['name' => 'General', 'description' => 'General Settings'],
+>>>>>>> laraxot/dev
         'label' => 'Icon State Split',
         'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
     ],
     'actions' => [
+<<<<<<< HEAD
         'create' => [
             'label' => 'Crea Icon State Split',
         ],
@@ -71,5 +76,11 @@ return [
             'icon' => 'prova',
             'tooltip' => 'prova',
         ],
+=======
+        'create' => ['label' => 'Crea Icon State Split'],
+        'edit' => ['label' => 'Modifica Icon State Split'],
+        'delete' => ['label' => 'Elimina Icon State Split'],
+        'prova' => ['label' => 'prova', 'icon' => 'prova', 'tooltip' => 'prova'],
+>>>>>>> laraxot/dev
     ],
 ];

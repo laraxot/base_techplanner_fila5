@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ---
 title: "Directory Structure Rules"
 module: "Job"
@@ -9,6 +13,11 @@ qmd: "directory structure rules"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> af4545e (.)
+>>>>>>> laraxot/dev
 # Directory Structure Rules
 
 Per il modulo Job valgono queste regole:

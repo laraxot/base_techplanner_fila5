@@ -11,10 +11,17 @@ use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Session;
+<<<<<<< HEAD
 use Themes\Sixteen\Events\SpidAuthenticated;
 use Themes\Sixteen\Events\SpidLoggedOut;
 use Themes\Sixteen\Models\User;
 use Themes\Sixteen\Actions\SpidAuthAction;
+=======
+use Themes\Sixteen\Actions\SpidAuthAction;
+use Themes\Sixteen\Events\SpidAuthenticated;
+use Themes\Sixteen\Events\SpidLoggedOut;
+use Themes\Sixteen\Models\User;
+>>>>>>> laraxot/dev
 
 /**
  * Controller per l'autenticazione SPID

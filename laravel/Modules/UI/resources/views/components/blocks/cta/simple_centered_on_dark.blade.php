@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 ?>
 <div class="relative isolate overflow-hidden bg-gray-900">
     <div class="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">

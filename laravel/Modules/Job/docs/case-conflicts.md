@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ---
 title: "Case-Insensitive File Conflicts"
 module: "Job"
@@ -9,6 +13,11 @@ qmd: "case conflicts"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> af4545e (.)
+>>>>>>> laraxot/dev
 # Case-Insensitive File Conflicts
 
 File duplicati nel modulo `Job` che differiscono solo per la capitalizzazione:

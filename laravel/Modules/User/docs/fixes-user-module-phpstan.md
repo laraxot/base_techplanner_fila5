@@ -193,4 +193,7 @@ Ri-verificato con `phpstan analyse Modules/User --memory-limit=-1` (cache pulita
 
 Dettagli completi: `docs/chat/phpstan-modules-progress-2026-07-06-pm.md` (root del repo) e `docs/wiki/second-brain/phpstan-journey.md`.
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: dicembre 2024*
+=======
+>>>>>>> laraxot/dev

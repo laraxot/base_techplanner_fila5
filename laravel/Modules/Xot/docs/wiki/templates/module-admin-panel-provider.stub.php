@@ -6,8 +6,11 @@ namespace Modules\Xot\Providers\Filament;
 
 use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 
+<<<<<<< HEAD
 use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 
+=======
+>>>>>>> laraxot/dev
 class AdminPanelProvider extends XotBasePanelProvider
 {
     protected string $module = 'Xot';

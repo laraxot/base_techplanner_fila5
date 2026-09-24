@@ -13,10 +13,13 @@ return [
         'name' => ['label' => 'name'],
         'reserved_at' => ['label' => 'reserved_at'],
     ],
+<<<<<<< HEAD
     'actions' => [
         'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
         'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
         'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
     ],
+=======
+>>>>>>> laraxot/dev
 ];

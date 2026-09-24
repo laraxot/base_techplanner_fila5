@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
+=======
+>>>>>>> laraxot/dev
 {{-- Stats Overview Block - Theme Zero (Fallback) --}}
 <section style="padding: 40px 20px; background: #f9fafb;">
     <div style="max-width: 1000px; margin: 0 auto;">

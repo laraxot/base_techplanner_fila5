@@ -11,6 +11,7 @@ use Modules\Geo\Filament\Widgets\GeoMapWidget;
 use Modules\Geo\Filament\Widgets\LatLngWidget;
 use Modules\Geo\Filament\Widgets\LocationWidget;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 use ReflectionClass;
 
 test('AddressField can be instantiated', function (): void {
@@ -44,4 +45,39 @@ test('UpdateCoordinatesBulkAction can be instantiated', function (): void {
     $action = UpdateCoordinatesBulkAction::make('update_coordinates');
 
     Assert::assertNotNull($action->getName());
+=======
+
+test('AddressField can be instantiated', function () {
+    $field = AddressField::make('address');
+});
+
+test('MapPicker can be instantiated', function () {
+    $field = MapPicker::make('map_picker')
+        ->latitudeColumn('latitude')
+        ->longitudeColumn('longitude');
+    Assert::assertInstanceOf(MapPicker::class, $field);
+    Assert::assertInstanceOf(MapPicker::class, $field);
+    Assert::assertInstanceOf(MapPicker::class, $field);
+    Assert::assertInstanceOf(MapPicker::class, $field);
+    Assert::assertInstanceOf(MapPicker::class, $field);
+    Assert::assertInstanceOf(MapPicker::class, $field);
+    Assert::assertInstanceOf(MapPicker::class, $field);
+    Assert::assertInstanceOf(MapPicker::class, $field);
+});
+
+test('LocationWidget can be instantiated', function () {
+    Assert::assertTrue(class_exists(LocationWidget::class));
+});
+
+test('LatLngWidget can be instantiated', function () {
+    Assert::assertTrue(class_exists(LatLngWidget::class));
+});
+
+test('GeoMapWidget can be instantiated', function () {
+    Assert::assertTrue(class_exists(GeoMapWidget::class));
+});
+
+test('UpdateCoordinatesBulkAction can be instantiated', function () {
+    $action = UpdateCoordinatesBulkAction::make('update_coordinates');
+>>>>>>> laraxot/dev
 });

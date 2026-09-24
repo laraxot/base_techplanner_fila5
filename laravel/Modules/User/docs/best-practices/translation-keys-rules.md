@@ -137,4 +137,8 @@ return [
 - [Convenzioni di Codice](CODE_CONVENTIONS.md)
 - [Best Practices per le Traduzioni](translation-best-practices-2.md)
 - [Struttura del Modulo](module-structure-2.md)
+<<<<<<< HEAD
 - [Convenzioni di Codice](code-conventions.md)
+=======
+- [Convenzioni di Codice](code-conventions.md)
+>>>>>>> laraxot/dev

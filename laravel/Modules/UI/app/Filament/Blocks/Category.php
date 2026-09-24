@@ -6,13 +6,20 @@ namespace Modules\UI\Filament\Blocks;
 
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
+<<<<<<< HEAD
 use Filament\Schemas\Components\Component;
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Blocks\XotBaseBlock;
 
 final class Category extends XotBaseBlock
 {
     /**
+<<<<<<< HEAD
      * @return array<int, Component>
+=======
+     * @return array<int, \Filament\Schemas\Components\Component>
+>>>>>>> laraxot/dev
      */
     public static function getFormSchema(): array
     {

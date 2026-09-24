@@ -3,8 +3,36 @@ title: "Test"
 type: concept
 tags: [test]
 created: 2026-07-14
+<<<<<<< HEAD
 updated: 2026-09-24
 qmd: "test ui docs stub"
 ---
 
 Stub di test per la cartella `docs/root-md-files`. Non usare in produzione.
+=======
+updated: 2026-07-14
+qmd: "test test"
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<nome repository>/issues/124"]
+discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
+=======
+=======
+issues: ["https://github.com/provtv/<nome repository>/issues/124"]
+discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
+>>>>>>> 92912795 (.)
+>>>>>>> laraxot/dev
+related:
+  - "./api-relocated.md"
+  - "./api.md"
+  - "./blocks-relocated.md"
+  - "./blocks.md"
+  - "./carousel-slider.md"
+  - "./changelog.md"
+  - "./chunk.md"
+  - "./ci.md"
+---
+
+>>>>>>> laraxot/dev

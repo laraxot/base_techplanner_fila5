@@ -22,7 +22,10 @@ use Modules\Activity\Actions\Query\GetRecentActivitiesAction;
 use Modules\Activity\Actions\Query\GetUserActivitiesAction;
 use Modules\Activity\Models\Activity;
 use Modules\User\Models\User;
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
+=======
+>>>>>>> laraxot/dev
 
 /**
  * Coordinator — delegates to single-purpose QueueableActions (not an Action: multi-method API).
@@ -59,6 +62,7 @@ class ActivityLogger
         return $activity;
     }
 
+<<<<<<< HEAD
     public function created(Model $model, ?UserContract $user = null): Activity
     {
         return (new LogModelCreatedAction($model, $user instanceof Model ? $user : null))->execute();
@@ -75,11 +79,33 @@ class ActivityLogger
     }
 
     public function login(UserContract $user): Activity
+=======
+    public function created(Model $model, ?User $user = null): Activity
+    {
+        return (new LogModelCreatedAction($model, $user))->execute();
+    }
+
+    public function updated(Model $model, ?User $user = null): Activity
+    {
+        return (new LogModelUpdatedAction($model, $user))->execute();
+    }
+
+    public function deleted(Model $model, ?User $user = null): Activity
+    {
+        return (new LogModelDeletedAction($model, $user))->execute();
+    }
+
+    public function login(User $user): Activity
+>>>>>>> laraxot/dev
     {
         return (new LogUserLoginAction($user))->execute();
     }
 
+<<<<<<< HEAD
     public function logout(UserContract $user): Activity
+=======
+    public function logout(User $user): Activity
+>>>>>>> laraxot/dev
     {
         return (new LogUserLogoutAction($user))->execute();
     }

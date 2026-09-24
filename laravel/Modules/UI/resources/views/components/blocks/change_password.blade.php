@@ -1,7 +1,15 @@
+<<<<<<< HEAD
 @php
 // UI Blade view — see Modules/UI/docs/wiki.
 @endphp
 
+=======
+<?php
+
+declare(strict_types=1);
+
+?>
+>>>>>>> laraxot/dev
 @props(['title' => 'Cambia Password'])
 
 <div class="bg-white p-6 rounded-lg shadow-md">

@@ -4,6 +4,7 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\MenuResource\Pages;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use App\Filament\Resources\MenuResource\Pages\EditMenu;
 use App\Filament\Resources\MenuResource\Pages\ListMenus;
 use App\Models\Menu;
@@ -34,6 +35,8 @@ use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
 =======
+=======
+>>>>>>> laraxot/dev
 use App\Filament\Resources\MenuResource\Pages;
 use App\Filament\Resources\MenuResource\Pages\EditMenu;
 use App\Filament\Resources\MenuResource\Pages\EditMenu;
@@ -61,7 +64,10 @@ use Filament\Tables\Table;
 use Filament\Tables\Table;
 use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
 use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
+<<<<<<< HEAD
 >>>>>>> c34c6d1 (.)
+=======
+>>>>>>> laraxot/dev
 
 class MenuResource extends Resource
 {
@@ -133,9 +139,12 @@ class MenuResource extends Resource
     }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
 
 =======
 >>>>>>> c34c6d1 (.)
+=======
+>>>>>>> laraxot/dev

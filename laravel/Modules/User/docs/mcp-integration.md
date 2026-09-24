@@ -370,4 +370,8 @@ class EditUser extends EditRecord
 
 ## Conclusione
 
+<<<<<<< HEAD
 L'integrazione dei server MCP con il modulo User consente di migliorare significativamente le funzionalità del modulo, fornendo memorizzazione efficiente delle preferenze degli utenti, interazione con API esterne per la verifica dei dati, operazioni complesse sul database e gestione avanzata della cache. Seguendo le linee guida e gli esempi forniti in questo documento, è possibile implementare queste funzionalità in modo conforme alle regole di sviluppo stabilite per i progetti base_<nome progetto>_fila5_mono.
+=======
+L'integrazione dei server MCP con il modulo User consente di migliorare significativamente le funzionalità del modulo, fornendo memorizzazione efficiente delle preferenze degli utenti, interazione con API esterne per la verifica dei dati, operazioni complesse sul database e gestione avanzata della cache. Seguendo le linee guida e gli esempi forniti in questo documento, è possibile implementare queste funzionalità in modo conforme alle regole di sviluppo stabilite per i progetti base_<nome progetto>_fila5_mono.
+>>>>>>> laraxot/dev

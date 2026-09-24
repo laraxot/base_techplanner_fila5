@@ -4,14 +4,23 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Filament;
 
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Modules\Xot\Tests\TestCase;
 use Webmozart\Assert\Assert as WebmozartAssert;
+=======
+use Modules\Xot\Tests\TestCase;
+>>>>>>> laraxot/dev
 
 use function Safe\file_get_contents;
 use function Safe\glob;
 use function Safe\preg_match;
 
+<<<<<<< HEAD
+=======
+use Webmozart\Assert\Assert as WebmozartAssert;
+
+>>>>>>> laraxot/dev
 uses(TestCase::class)->group('no-db');
 
 /**
@@ -215,7 +224,11 @@ test('nessuna List page dichiara getTableColumns()', function (): void {
 });
 
 test('XotBaseListRecords::getTableColumns() e\' final', function (): void {
+<<<<<<< HEAD
     $method = new \ReflectionMethod(XotBaseListRecords::class, 'getTableColumns');
+=======
+    $method = new \ReflectionMethod(\Modules\Xot\Filament\Resources\Pages\XotBaseListRecords::class, 'getTableColumns');
+>>>>>>> laraxot/dev
 
     expect($method->isFinal())->toBeTrue();
 });

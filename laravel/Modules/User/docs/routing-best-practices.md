@@ -494,4 +494,8 @@ public function logout()
 - [Gestione Errori](./error-handling.md) 
 - [Documentazione Volt](./volt-logout-2.md)
 - [Struttura Directory](./directory-structure-checklist.md)
+<<<<<<< HEAD
 - [Gestione Errori](./error-handling.md) 
+=======
+- [Gestione Errori](./error-handling.md) 
+>>>>>>> laraxot/dev

@@ -10,10 +10,13 @@ use Modules\Xot\Filament\Schemas\Components\XotBaseSection;
 
 /**
  * Controparte in form di {@see \Modules\UI\Filament\Tables\Columns\PersonColumn}.
+<<<<<<< HEAD
 use Modules\UI\Filament\Tables\Columns\PersonColumn;
 
 /**
  * Controparte in form di {@see PersonColumn}.
+=======
+>>>>>>> laraxot/dev
  *
  * Stessi campi anagrafici + contatto (`first_name`, `last_name`, `email`,
  * `mobile_phone`, `language`), due superfici: qui li edita, la colonna li mostra

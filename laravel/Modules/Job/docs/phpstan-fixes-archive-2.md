@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ---
 title: "PHPStan Fixes - Gennaio 2025"
 module: "Job"
@@ -9,6 +13,11 @@ qmd: "phpstan fixes archive 2"
 related:
   - "./navigation-translations-completion-roadmap.md"
 ---
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # PHPStan Fixes - Gennaio 2025
 
 ## Modulo Job - Correzioni Completate

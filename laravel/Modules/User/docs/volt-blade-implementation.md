@@ -592,6 +592,9 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Gestione Sessione](./session-management-2.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md)
+<<<<<<< HEAD
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Gestione Sessione](./SESSION_MANAGEMENT.md)
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
+=======
+>>>>>>> laraxot/dev

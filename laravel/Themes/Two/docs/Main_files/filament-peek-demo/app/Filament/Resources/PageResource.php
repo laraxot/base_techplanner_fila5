@@ -4,6 +4,7 @@ namespace App\Filament\Resources;
 
 use App\Filament\Fields\PageContent;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use App\Filament\Resources\PageResource\Pages\CreatePage;
 use App\Filament\Resources\PageResource\Pages\EditPage;
 use App\Filament\Resources\PageResource\Pages\ListPages;
@@ -39,6 +40,8 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Support\Str;
 =======
+=======
+>>>>>>> laraxot/dev
 use App\Filament\Fields\PageContent;
 use App\Filament\Resources\PageResource\Pages\CreatePage;
 use App\Filament\Resources\PageResource\Pages\CreatePage;
@@ -70,7 +73,10 @@ use Illuminate\Support\Str;
 use Illuminate\Support\Str;
 use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
 use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
+<<<<<<< HEAD
 >>>>>>> c34c6d1 (.)
+=======
+>>>>>>> laraxot/dev
 use Pboivin\FilamentPeek\Forms\Actions\InlinePreviewAction;
 use Pboivin\FilamentPeek\Tables\Actions\ListPreviewAction;
 
@@ -145,9 +151,12 @@ class PageResource extends Resource
     }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
 
 =======
 >>>>>>> c34c6d1 (.)
+=======
+>>>>>>> laraxot/dev

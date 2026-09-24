@@ -102,6 +102,7 @@ Questo documento fornisce linee guida per la gestione delle sessioni utente all'
 - [Best Practices per il Routing](./routing-best-practices.md)
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Documentazione Volt](./volt-blade-implementation.md)
+<<<<<<< HEAD
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
 - [Indice del Modulo Utente](./INDEX.md)
 - [Modello BaseUser](./BaseUser.md)
@@ -111,3 +112,6 @@ Questo documento fornisce linee guida per la gestione delle sessioni utente all'
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Documentazione Volt](./VOLT_BLADE_IMPLEMENTATION.md)
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
+=======
+- [Tema One Documentation](../../Themes/One/docs/README.md) 
+>>>>>>> laraxot/dev

@@ -9,10 +9,18 @@ use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+<<<<<<< HEAD
 use Symfony\Component\Process\Process;
 
 use function Safe\preg_match;
 
+=======
+
+use function Safe\preg_match;
+
+use Symfony\Component\Process\Process;
+
+>>>>>>> laraxot/dev
 /**
  * Comando per ottimizzare la memory usage di Filament.
  * SuperMucca Memory Optimizer Command 🐄.
@@ -133,10 +141,17 @@ class OptimizeFilamentMemoryCommand extends Command
         $files = File::allFiles(base_path('Modules'));
 
         foreach ($files as $file) {
+<<<<<<< HEAD
             if ($file->getExtension() === 'php' && str_contains($file->getPathname(), '/Models/')) {
                 $content = File::get($file->getPathname());
 
                 if (preg_match('/protected\s+\$with\s*=\s*\[([^\]]+)\]/', $content, $matches) === 1) {
+=======
+            if ('php' === $file->getExtension() && str_contains($file->getPathname(), '/Models/')) {
+                $content = File::get($file->getPathname());
+
+                if (1 === preg_match('/protected\s+\$with\s*=\s*\[([^\]]+)\]/', $content, $matches)) {
+>>>>>>> laraxot/dev
                     $withContent = $matches[1] ?? '';
                     // Controlla se ha relazioni pesanti
                     if (str_contains($withContent, 'roles')

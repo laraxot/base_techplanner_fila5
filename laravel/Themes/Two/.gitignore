@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> laraxot/dev
 # Auto-generated forbidden paths — do not edit manually
 # Reason: root cleanup policy (see docs/wiki/rules/root-cleanup-policy.md)
 
@@ -19,7 +22,10 @@ docs/workbench
 scripts
 test-results
 tests/.claude-audit
+<<<<<<< HEAD
 >>>>>>> c34c6d1 (.)
+=======
+>>>>>>> laraxot/dev
 # Logs
 logs
 *.log
@@ -29,17 +35,23 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> c34c6d1 (.)
+=======
+>>>>>>> laraxot/dev
 node_modules
 dist
 dist-ssr
 *.local
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> c34c6d1 (.)
+=======
+>>>>>>> laraxot/dev
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -54,6 +66,7 @@ dist-ssr
 package-lock.json
 .php-cs-fixer.cache
 <<<<<<< HEAD
+<<<<<<< HEAD
 package-lock.json
 .git-rewrite/
 .php-cs-fixer.cache
@@ -63,6 +76,9 @@ node_modules
 =======
 .git-rewrite/
 >>>>>>> c34c6d1 (.)
+=======
+.git-rewrite/
+>>>>>>> laraxot/dev
 # Standard ignores (auto)
 node_modules/
 vendor/
@@ -72,6 +88,7 @@ vendor/
 *.bakcup
 *.backup.*
 <<<<<<< HEAD
+<<<<<<< HEAD
 node_modules
 *.*Zone.Identifier
 _docs/
@@ -79,8 +96,13 @@ _docs/
 .windsurf/
 .devcontainer/
 =======
+=======
+>>>>>>> laraxot/dev
 *.*Zone.Identifier
 .cursor/
 .windsurf/
 tests/AuditCoverage
+<<<<<<< HEAD
 >>>>>>> c34c6d1 (.)
+=======
+>>>>>>> laraxot/dev

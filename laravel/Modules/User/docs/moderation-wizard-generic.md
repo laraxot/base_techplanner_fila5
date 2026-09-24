@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Moderazione e Wizard di Registrazione Generici per User
 
 ## Premessa
@@ -81,6 +82,8 @@ class ApproveUserAction {
 **Nota:**
 - Tutte le label, i messaggi e le notifiche devono essere localizzati e privi di riferimenti hard-coded a domini specifici.
 - La documentazione e gli esempi devono essere neutrali e riutilizzabili in qualsiasi progetto che utilizza il modulo User. 
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: moderation-wizard-generic

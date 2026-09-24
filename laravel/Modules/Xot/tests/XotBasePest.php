@@ -43,7 +43,11 @@ final class XotBasePest
     /**
      * Riga presente sulla connessione indicata.
      *
+<<<<<<< HEAD
      * @param array<string, mixed> $where
+=======
+     * @param  array<string, mixed>  $where
+>>>>>>> laraxot/dev
      */
     public static function assertTableHas(string $connection, string $table, array $where): void
     {
@@ -53,7 +57,11 @@ final class XotBasePest
     /**
      * Riga assente sulla connessione indicata.
      *
+<<<<<<< HEAD
      * @param array<string, mixed> $where
+=======
+     * @param  array<string, mixed>  $where
+>>>>>>> laraxot/dev
      */
     public static function assertTableMissing(string $connection, string $table, array $where): void
     {
@@ -61,7 +69,11 @@ final class XotBasePest
     }
 
     /**
+<<<<<<< HEAD
      * @param array<string, mixed> $where
+=======
+     * @param  array<string, mixed>  $where
+>>>>>>> laraxot/dev
      */
     public static function tableQueryExists(string $connection, string $table, array $where): bool
     {
@@ -79,9 +91,14 @@ final class XotBasePest
      *
      * @template T of Model
      *
+<<<<<<< HEAD
      * @param T               $model
      * @param class-string<T> $class
      *
+=======
+     * @param  T  $model
+     * @param  class-string<T>  $class
+>>>>>>> laraxot/dev
      * @return T
      */
     public static function assertFreshModel(Model $model, string $class)
@@ -95,9 +112,14 @@ final class XotBasePest
     /**
      * @template T of Model
      *
+<<<<<<< HEAD
      * @param EloquentCollection<int, T>|Collection<int, T> $collection
      * @param class-string<T>                               $class
      *
+=======
+     * @param  EloquentCollection<int, T>|Collection<int, T>  $collection
+     * @param  class-string<T>  $class
+>>>>>>> laraxot/dev
      * @return T
      */
     public static function assertFirstModel(EloquentCollection|Collection $collection, string $class)
@@ -127,6 +149,7 @@ final class XotBasePest
      */
     public static function assertArray(mixed $value): array
     {
+<<<<<<< HEAD
         if (! \is_array($value)) {
             Assert::fail('Expected array, got '.get_debug_type($value).'.');
         }
@@ -140,6 +163,12 @@ final class XotBasePest
         }
 
         return $result;
+=======
+        Assert::assertNotEmpty($value);
+
+        /** @var array<string, mixed> $value */
+        return $value;
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -154,7 +183,11 @@ final class XotBasePest
     public static function assertString(mixed $value, string $message = ''): string
     {
         if (! \is_string($value)) {
+<<<<<<< HEAD
             Assert::fail('' !== $message ? $message : 'Expected string, got '.get_debug_type($value).'.');
+=======
+            Assert::fail($message !== '' ? $message : 'Expected string, got '.get_debug_type($value).'.');
+>>>>>>> laraxot/dev
         }
 
         return $value;
@@ -169,14 +202,22 @@ final class XotBasePest
     public static function assertModelKey(mixed $value, string $message = ''): int|string
     {
         if (! \is_int($value) && ! \is_string($value)) {
+<<<<<<< HEAD
             Assert::fail('' !== $message ? $message : 'Expected model key (int|string), got '.get_debug_type($value).'.');
+=======
+            Assert::fail($message !== '' ? $message : 'Expected model key (int|string), got '.get_debug_type($value).'.');
+>>>>>>> laraxot/dev
         }
 
         return $value;
     }
 
     /**
+<<<<<<< HEAD
      * @param class-string<\Throwable> $exceptionClass
+=======
+     * @param  class-string<\Throwable>  $exceptionClass
+>>>>>>> laraxot/dev
      */
     public static function assertThrows(callable $callback, string $exceptionClass): void
     {
@@ -192,7 +233,11 @@ final class XotBasePest
     }
 
     /**
+<<<<<<< HEAD
      * @param list<string>|array<int, string> $haystack
+=======
+     * @param  list<string>|array<int, string>  $haystack
+>>>>>>> laraxot/dev
      */
     public static function assertListContains(string $needle, array $haystack): void
     {
@@ -216,7 +261,11 @@ final class XotBasePest
      * Path del file che dichiara la classe: `getFileName()` può tornare `false`
      * per le classi interne, quindi l'assert è parte del contratto.
      *
+<<<<<<< HEAD
      * @param class-string $class
+=======
+     * @param  class-string  $class
+>>>>>>> laraxot/dev
      */
     public static function reflectionFilename(string $class): string
     {
@@ -230,7 +279,11 @@ final class XotBasePest
     /**
      * Sorgente della classe, per gli assert "il codice non contiene X".
      *
+<<<<<<< HEAD
      * @param class-string $class
+=======
+     * @param  class-string  $class
+>>>>>>> laraxot/dev
      */
     public static function reflectionSource(string $class): string
     {

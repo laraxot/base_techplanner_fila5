@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 use Modules\Xot\Services\ModuleService;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -39,6 +43,10 @@ describe('ModuleService', function () {
 
     it('returns array from getModels method', function () {
         $result = xotModuleServiceTestInstance()->getModels();
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
     });
 
     it('getModels returns correct array structure', function () {
@@ -58,6 +66,10 @@ describe('ModuleService', function () {
 
     it('handles reflection exceptions gracefully', function () {
         $result = xotModuleServiceTestInstance()->getModels();
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
     });
 
     it('processes model names correctly', function () {
@@ -127,6 +139,10 @@ describe('ModuleService', function () {
 
     it('processes file extensions correctly', function () {
         $result = xotModuleServiceTestInstance()->getModels();
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
     });
 
     it('validates string utilities usage', function () {
@@ -139,5 +155,9 @@ describe('ModuleService', function () {
 
     it('has proper error handling', function () {
         $result = xotModuleServiceTestInstance()->getModels();
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
     });
 });

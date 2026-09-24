@@ -254,4 +254,8 @@ $this->tableCreate(function (Blueprint $table) {
 
 **Integration Status**: ✅ Fully compatible with Spatie package architecture
 **Maintenance**: Low - leverages package maintenance
+<<<<<<< HEAD
 **Security**: High - benefits from package security updates
+=======
+**Security**: High - benefits from package security updates
+>>>>>>> laraxot/dev

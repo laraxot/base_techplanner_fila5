@@ -1,0 +1,29 @@
+[
+    {
+        "table_schema": "techplanner_data",
+        "model_class": "Modules\\Media\\Models\\MediaConvert",
+        "table_name": "media_converts",
+        "id": 1,
+        "updated_at": "2026-09-06T13:45:41.000000Z",
+        "created_at": "2026-09-06T13:45:41.000000Z",
+        "table_rows": 0
+    },
+    {
+        "table_schema": "techplanner_data",
+        "model_class": "Modules\\Media\\Models\\Media",
+        "table_name": "media",
+        "id": 2,
+        "updated_at": "2026-09-06T13:45:41.000000Z",
+        "created_at": "2026-09-06T13:45:41.000000Z",
+        "table_rows": 0
+    },
+    {
+        "table_schema": "techplanner_data",
+        "model_class": "Modules\\Media\\Models\\TemporaryUpload",
+        "table_name": "temporary_uploads",
+        "id": 3,
+        "updated_at": "2026-09-06T13:45:41.000000Z",
+        "created_at": "2026-09-06T13:45:41.000000Z",
+        "table_rows": 0
+    }
+]

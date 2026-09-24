@@ -6,11 +6,18 @@ namespace Modules\Geo\Actions\GeoData;
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\File;
+<<<<<<< HEAD
 
 use function Safe\json_decode;
 
 use Spatie\QueueableAction\QueueableAction;
 
+=======
+use Spatie\QueueableAction\QueueableAction;
+
+use function Safe\json_decode;
+
+>>>>>>> laraxot/dev
 /**
  * Carica e valida il file JSON dei dati geografici (regioni/province/città).
  */
@@ -21,9 +28,15 @@ class LoadGeoDataAction
     private const string JSON_PATH = 'Modules/Geo/resources/json/comuni.json';
 
     /**
+<<<<<<< HEAD
      * @throws \RuntimeException
      *
      * @return Collection<int, array<string, mixed>>
+=======
+     * @return Collection<int, array<string, mixed>>
+     *
+     * @throws \RuntimeException
+>>>>>>> laraxot/dev
      */
     public function execute(): Collection
     {

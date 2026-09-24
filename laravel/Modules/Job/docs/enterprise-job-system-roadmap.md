@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ---
 title: "Job Module - Comprehensive Job Management System"
 module: "Job"
@@ -9,6 +13,11 @@ qmd: "enterprise job system roadmap"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> af4545e (.)
+>>>>>>> laraxot/dev
 # Job Module - Comprehensive Job Management System
 
 ## Overview

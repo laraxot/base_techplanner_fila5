@@ -20,8 +20,12 @@ uses(TestCase::class);
  * poi cammina il filesystem: mockarla toglierebbe di mezzo esattamente ciò che c'è da
  * verificare. Qui il set è reale, i file SVG sono reali, e si asserisce il risultato.
  *
+<<<<<<< HEAD
  * @param array<int, string> $relativeFiles
  *
+=======
+ * @param  array<int, string>  $relativeFiles
+>>>>>>> laraxot/dev
  * @return array{dir: string, prefix: string, set: string}
  */
 function uiRegisterProbeIconSet(array $relativeFiles): array

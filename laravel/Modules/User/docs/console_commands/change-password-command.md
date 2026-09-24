@@ -383,9 +383,12 @@ php artisan test --filter=ChangePasswordCommandIntegrationTest
 - ✅ **Gestione Password**: Hash e scadenza
 - ✅ **Eventi**: Dispatched NewPasswordSet
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-27*
 
 
 
 
+=======
+>>>>>>> laraxot/dev
 

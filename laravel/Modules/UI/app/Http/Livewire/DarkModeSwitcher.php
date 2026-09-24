@@ -26,9 +26,13 @@ final class DarkModeSwitcher extends Component
 
     public function render(): View
     {
+<<<<<<< HEAD
         /** @phpstan-var view-string */
         $viewName = 'ui::livewire.dark-mode.switcher';
 
         return view($viewName);
+=======
+        return view('ui::livewire.dark-mode.switcher');
+>>>>>>> laraxot/dev
     }
 }

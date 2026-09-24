@@ -4,8 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\UI\Filament\Forms\Components;
 
+<<<<<<< HEAD
 use Filament\Infolists\Components\TextEntry;
 use Filament\Forms\Components\TimePicker;
+=======
+use Filament\Forms\Components\TimePicker;
+use Filament\Infolists\Components\TextEntry;
+>>>>>>> laraxot/dev
 use Filament\Schemas\Components\Component;
 use Modules\UI\Actions\Datetime\GetDaysMappingAction;
 use Modules\UI\Rules\OpeningHoursRule;
@@ -34,7 +39,11 @@ final class OpeningHoursField extends XotBaseField
         $this->schema($form)->columns(5);
 
         $this->rules([
+<<<<<<< HEAD
             new OpeningHoursRule(),
+=======
+            new OpeningHoursRule,
+>>>>>>> laraxot/dev
         ]);
     }
 

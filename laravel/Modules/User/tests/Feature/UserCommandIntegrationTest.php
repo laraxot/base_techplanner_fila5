@@ -45,9 +45,13 @@ describe('User Command Integration', function (): void {
         Assert::assertTrue(function_exists('Laravel\Prompts\select'));
     });
 
+<<<<<<< HEAD
     it('validates webmozart assert integration', function (): void {
     \PHPUnit\Framework\Assert::markTestSkipped('validates webmozart assert integration');
 });
+=======
+    it('validates webmozart assert integration')->todo();
+>>>>>>> laraxot/dev
 
     test('integrates with illuminate support arr', function (): void {
         $testArray = ['a' => 1, 'b' => 2, 'c' => 3];
@@ -167,9 +171,13 @@ describe('User Command Integration', function (): void {
         Assert::assertSame('user:change-type', $command->getName());
     });
 
+<<<<<<< HEAD
     it('can access laravel facades', function (): void {
     \PHPUnit\Framework\Assert::markTestSkipped('can access laravel facades');
 });
+=======
+    it('can access laravel facades')->todo();
+>>>>>>> laraxot/dev
 
     test('handles reflection operations correctly', function (): void {
         /** @var TestCase $this */

@@ -24,7 +24,11 @@ use Modules\User\Models\Team;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('no-job-db');
+=======
+uses(\Modules\Job\Tests\TestCase::class)->group('no-job-db');
+>>>>>>> laraxot/dev
 
 /**
  * @param  list<string>  $permissions

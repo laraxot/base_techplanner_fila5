@@ -175,3 +175,7 @@ done
 **🚨 ERRORE GRAVISSIMO DA NON RIPETERE MAI PIÙ**
 
 Ogni model DEVE avere la sua factory. È obbligatorio per il corretto funzionamento del sistema.
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev

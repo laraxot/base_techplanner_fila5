@@ -7,11 +7,18 @@ namespace Modules\Geo\Actions\TimeZone;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use Modules\Geo\Datas\TimeZoneData;
+<<<<<<< HEAD
 
 use function Safe\json_decode;
 
 use Spatie\QueueableAction\QueueableAction;
 
+=======
+use Spatie\QueueableAction\QueueableAction;
+
+use function Safe\json_decode;
+
+>>>>>>> laraxot/dev
 /**
  * Action per ottenere il fuso orario da coordinate geografiche.
  */
@@ -47,7 +54,11 @@ class GetTimeZoneAction
         /** @var array{status: string, timeZoneId: string, timeZoneName: string, rawOffset: int, dstOffset: int, countryCode?: string} $data */
         $data = json_decode($response->getBody()->getContents(), true);
 
+<<<<<<< HEAD
         if ('OK' !== $data['status']) {
+=======
+        if ($data['status'] !== 'OK') {
+>>>>>>> laraxot/dev
             throw new \RuntimeException('Failed to get timezone: '.($data['errorMessage'] ?? $data['status']));
         }
 

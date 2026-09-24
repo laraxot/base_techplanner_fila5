@@ -37,9 +37,12 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 - [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/Modules/User/docs/widgets-structure-2.md)
 - [BaseUser Documentation](/laravel/Modules/User/docs/BaseUser.md)
+<<<<<<< HEAD
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth_components_best_practices.md)
 - [Filament Widgets Structure](/laravel/modules/user/docs/widgets_structure.md)
 - [BaseUser Documentation](/laravel/modules/user/docs/baseuser.md)
+=======
+>>>>>>> laraxot/dev
 
 ## File Risolti
 
@@ -335,4 +338,8 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - [ ] Aggiornare esempi in documentazione
 - [ ] Creare test di regressione per prevenire conflitti futuri
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> laraxot/dev

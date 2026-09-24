@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 # Auto-generated forbidden paths — do not edit manually
 # Reason: root cleanup policy (see docs/wiki/rules/root-cleanup-policy.md)
 
@@ -27,6 +31,10 @@ tests/.claude-audit
 *.rej
 *~head
 tests/AuditCoverage
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 /vendor/
 node_modules/
 npm-debug.log
@@ -82,3 +90,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

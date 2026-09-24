@@ -1,3 +1,36 @@
+<<<<<<< HEAD
+=======
+---
+title: "Flip Cards"
+type: concept
+tags: [flip, cards]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "flip-cards flip cards"
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<nome repository>/issues/124"]
+discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
+=======
+=======
+issues: ["https://github.com/provtv/<nome repository>/issues/124"]
+discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
+>>>>>>> 92912795 (.)
+>>>>>>> laraxot/dev
+related:
+  - "./api-relocated.md"
+  - "./api.md"
+  - "./blocks-relocated.md"
+  - "./blocks.md"
+  - "./carousel-slider.md"
+  - "./changelog.md"
+  - "./chunk.md"
+  - "./ci.md"
+---
+
+>>>>>>> laraxot/dev
 https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/3d-responsive-flip-card-effect
 
 
@@ -11,4 +44,8 @@ https://www.smashingmagazine.com/2020/02/magic-flip-cards-common-sizing-problem/
 
 
 
+<<<<<<< HEAD
 https://helpcenter.flourish.studio/hc/en-us/articles/8761537838095-How-to-create-flip-cards-with-custom-HTML
+=======
+https://helpcenter.flourish.studio/hc/en-us/articles/8761537838095-How-to-create-flip-cards-with-custom-HTML
+>>>>>>> laraxot/dev

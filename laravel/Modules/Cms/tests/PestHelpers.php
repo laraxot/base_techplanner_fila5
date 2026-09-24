@@ -30,9 +30,20 @@ use function Safe\json_decode;
 if (! function_exists('cmsTest')) {
     function cmsTest(): TestCase
     {
+<<<<<<< HEAD
         Assert::assertInstanceOf(TestCase::class, TestCase::$currentTest);
 
         return TestCase::$currentTest;
+=======
+        if (null !== TestCase::$currentTest) {
+            return TestCase::$currentTest;
+        }
+
+        $test = test();
+        Assert::assertInstanceOf(TestCase::class, $test);
+
+        return $test;
+>>>>>>> laraxot/dev
     }
 }
 

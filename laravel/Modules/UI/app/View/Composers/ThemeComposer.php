@@ -19,12 +19,22 @@ final class ThemeComposer
         return view($view);
     }
 
+<<<<<<< HEAD
     public function metatag(string $index): mixed
+=======
+    public function metatag(string $index): string|bool|null
+>>>>>>> laraxot/dev
     {
         // $ris = self::__getStatic($index);
         // echo '<br/>['.$index.']['.$ris.']';
         // if ('' === $ris || null === $ris) {
+<<<<<<< HEAD
         return config('metatag.'.$index);
+=======
+        $value = config('metatag.'.$index);
+
+        return is_string($value) || is_bool($value) ? $value : null;
+>>>>>>> laraxot/dev
     }
 
     public function showScripts(): string
@@ -36,7 +46,11 @@ final class ThemeComposer
     {
         $view = "ui::svg.flags.{$lang}";
         if (! view()->exists($view)) {
+<<<<<<< HEAD
             throw new \Exception('view not exits ['.$view.']');
+=======
+            throw new Exception('view not exits ['.$view.']');
+>>>>>>> laraxot/dev
         }
 
         return view($view);

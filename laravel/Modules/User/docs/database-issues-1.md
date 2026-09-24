@@ -41,4 +41,8 @@ related:
 - [Team Management](./team_management.md)
 - [BaseUser Model](./baseuser.md)
 - [Database Structure](../database_structure.md)
+<<<<<<< HEAD
 - [Migration Guidelines](../../../../../docs/collegamenti-documentazione.md)
+=======
+- [Migration Guidelines](../../../../../docs/collegamenti-documentazione.md)
+>>>>>>> laraxot/dev

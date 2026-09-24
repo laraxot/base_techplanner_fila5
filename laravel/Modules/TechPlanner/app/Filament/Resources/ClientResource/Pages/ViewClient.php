@@ -8,7 +8,10 @@ use Filament\Actions\DeleteAction;
 use Filament\Actions\EditAction;
 use Modules\TechPlanner\Filament\Resources\ClientResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
+<<<<<<< HEAD
 use Modules\TechPlanner\Filament\Resources\ClientResource\Schemas\ClientInfolist;
+=======
+>>>>>>> laraxot/dev
 
 class ViewClient extends XotBaseViewRecord
 {
@@ -21,6 +24,7 @@ class ViewClient extends XotBaseViewRecord
             'delete' => DeleteAction::make(),
         ];
     }
+<<<<<<< HEAD
 
     /**
      * @return array<string, \Filament\Schemas\Components\Component>
@@ -30,4 +34,6 @@ class ViewClient extends XotBaseViewRecord
     {
         return app(ClientInfolist::class)->getInfolistSchema();
     }
+=======
+>>>>>>> laraxot/dev
 }

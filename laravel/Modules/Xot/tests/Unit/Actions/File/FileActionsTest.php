@@ -13,7 +13,10 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 test('fix path action works', function (): void {
     $action = app(FixPathAction::class);
     $path = 'some/path/with/mixed/slashes';
@@ -23,10 +26,18 @@ test('fix path action works', function (): void {
 
 test('view path action works', function (): void {
     // Replace GetViewNameSpacePathAction with a spy that returns test path
+<<<<<<< HEAD
     $getViewNameSpacePathAction = new class extends GetViewNameSpacePathAction {
         public function execute(string $namespace): string
         {
             return 'test_ns' === $namespace ? '/view/path' : '';
+=======
+    $getViewNameSpacePathAction = new class extends GetViewNameSpacePathAction
+    {
+        public function execute(string $namespace): string
+        {
+            return $namespace === 'test_ns' ? '/view/path' : '';
+>>>>>>> laraxot/dev
         }
     };
 
@@ -45,7 +56,11 @@ test('asset path action works', function (): void {
     // Spy on Module facade
     Module::partialMock()->allows([
         'getModulePath' => function (string $module): string {
+<<<<<<< HEAD
             return 'test_module' === $module ? '/module/path/' : '';
+=======
+            return $module === 'test_module' ? '/module/path/' : '';
+>>>>>>> laraxot/dev
         },
     ]);
 

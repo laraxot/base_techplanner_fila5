@@ -4,6 +4,7 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\CategoryResource\Pages\ManageCategories;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use App\Models\Category;
 use Filament\Actions\ActionGroup;
 use Filament\Actions\DeleteAction;
@@ -31,6 +32,8 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Support\Str;
 =======
+=======
+>>>>>>> laraxot/dev
 use App\Filament\Resources\CategoryResource\Pages\ManageCategories;
 use App\Models\Category;
 use App\Models\Category;
@@ -54,7 +57,10 @@ use Illuminate\Support\Str;
 use Illuminate\Support\Str;
 use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
 use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
+<<<<<<< HEAD
 >>>>>>> c34c6d1 (.)
+=======
+>>>>>>> laraxot/dev
 
 class CategoryResource extends Resource
 {
@@ -120,9 +126,12 @@ class CategoryResource extends Resource
     }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
 
 =======
 >>>>>>> c34c6d1 (.)
+=======
+>>>>>>> laraxot/dev

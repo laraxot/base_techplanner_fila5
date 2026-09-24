@@ -13,12 +13,15 @@ use Modules\UI\Filament\Actions\Table\TableLayoutTrait;
  * @property TableLayoutEnum $layoutView
  *
  * Usato da: Modules\Xot\Filament\Traits\HasXotTable (cross-module, PHPStan non rileva il consumer analizzando solo UI)
+<<<<<<< HEAD
  *
  * Usato da: Modules\Xot\Filament\Traits\HasXotTable (cross-module, PHPStan non rileva il consumer analizzando solo UI)
  *
  * Usato da: Modules\Xot\Filament\Traits\HasXotTable (cross-module, PHPStan non rileva il consumer analizzando solo UI)
  *
  * Usato da: Modules\Xot\Filament\Traits\HasXotTable (cross-module, PHPStan non rileva il consumer analizzando solo UI)
+=======
+>>>>>>> laraxot/dev
  */
 trait HasTableLayoutPage
 {

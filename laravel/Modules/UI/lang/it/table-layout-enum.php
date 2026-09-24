@@ -21,6 +21,7 @@ return [
             'helper_text' => 'Ideale per visualizzare pochi dati con focus visivo',
         ],
     ],
+<<<<<<< HEAD
     'list' => [
         'label' => 'Lista',
         'color' => 'primary',
@@ -37,6 +38,8 @@ return [
         'tooltip' => 'Visualizza i dati in formato card responsive',
         'helper_text' => 'Ideale per visualizzare pochi dati con focus visivo',
     ],
+=======
+>>>>>>> laraxot/dev
     'label' => 'Table Layout Enum',
     'plural_label' => 'Table Layout Enum (Plurale)',
     'navigation' => [
@@ -48,7 +51,11 @@ return [
         ],
         'label' => 'Table Layout Enum',
         'sort' => 1,
+<<<<<<< HEAD
         'icon' => 'heroicon-o-collection',
+=======
+        'icon' => 'heroicon-o-rectangle-stack',
+>>>>>>> laraxot/dev
     ],
     'fields' => [
         'id' => [

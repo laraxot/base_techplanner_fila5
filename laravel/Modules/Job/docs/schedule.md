@@ -1,4 +1,8 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 title: "Schedule"
 module: "Job"
 type: concept
@@ -38,3 +42,16 @@ https://www.thisprogrammingthing.com/what-the-f-ck-is-with-all-the-artisan-comma
 https://github.com/robersonfaria/laravel-database-schedule
 https://github.com/spatie/laravel-schedule-monitor
 https://github.com/hmazter/laravel-schedule-list
+<<<<<<< HEAD
+=======
+
+
+=======
+module: theme
+topic: schedule
+canonical: ../../../Themes/docs/shared-components/schedule.txt
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/schedule.txt
+>>>>>>> af4545e (.)
+>>>>>>> laraxot/dev

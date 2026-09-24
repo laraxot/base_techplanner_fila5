@@ -57,11 +57,14 @@ class AddStrictTypesDeclarationCommand extends Command
                     }
                     $this->info("Verrebbe processato: {$fileName}");
                     ++$count;
+<<<<<<< HEAD
                     if ($fileName === false) {
                         $fileName = $file->getPathname();
                     }
                     $this->info("Verrebbe processato: {$fileName}");
                     $count++;
+=======
+>>>>>>> laraxot/dev
 
                     continue;
                 }

@@ -26,6 +26,7 @@ class GetViewByClassAction
     public function execute(string $class, array $params = [], ?string $viewName = null): View
     {
         $viewName ??= $this->getViewNameFromClass($class);
+<<<<<<< HEAD
 
         if (! ViewFacade::exists($viewName)) {
             throw new \InvalidArgumentException(sprintf('View [%s] not found for class [%s].', $viewName, $class));
@@ -34,6 +35,11 @@ class GetViewByClassAction
         $path = ViewFacade::getFinder()->find($viewName);
 
         return ViewFacade::file($path, $params);
+=======
+        /** @var view-string $viewName */
+
+        return ViewFacade::make($viewName, $params);
+>>>>>>> laraxot/dev
     }
 
     /**

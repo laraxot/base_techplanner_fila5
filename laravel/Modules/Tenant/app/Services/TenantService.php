@@ -17,7 +17,10 @@ use Modules\Tenant\Actions\Models\ResolveTenantModelInstanceAction;
 use Modules\Tenant\Actions\Modules\GetTenantModulesAction;
 use Modules\Tenant\Actions\Translations\TranslateTenantKeyAction;
 use ReflectionException;
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
+=======
+>>>>>>> laraxot/dev
 
 /**
  * TenantService - Facade sottile per operazioni tenant-aware.
@@ -34,8 +37,11 @@ use Spatie\QueueableAction\QueueableAction;
  */
 class TenantService
 {
+<<<<<<< HEAD
     use QueueableAction;
 
+=======
+>>>>>>> laraxot/dev
     /**
      * Ottiene il nome del tenant corrente basato sul server name.
      *
@@ -159,6 +165,9 @@ class TenantService
     {
         return app(GetTenantModulesAction::class)->execute();
     }
+<<<<<<< HEAD
 
     public function execute(): void {}
+=======
+>>>>>>> laraxot/dev
 }

@@ -1,8 +1,13 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 ?>
 {{-- UI Blade view — see Modules/UI/docs/wiki. --}}
+=======
+
+?>
+>>>>>>> laraxot/dev
 <div class="bg-white">
     {{--
     <header>

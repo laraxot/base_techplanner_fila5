@@ -238,4 +238,8 @@ class CustomModel extends VendorModelAlias
 
 ---
 
+<<<<<<< HEAD
 *Questa è la Via Laraxot: Rispettare la natura di ogni cosa, non forzarla in forme innaturali.*
+=======
+*Questa è la Via Laraxot: Rispettare la natura di ogni cosa, non forzarla in forme innaturali.*
+>>>>>>> laraxot/dev

@@ -338,7 +338,10 @@ grep -r "extends Model" laravel/Modules/*/app/Models/*.php | grep -v "BaseModel\
 **Deploy:** ✅ Ready for Production  
 **Breaking Changes:** Nessuna (backward compatible)
 
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> laraxot/dev

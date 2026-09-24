@@ -1,6 +1,9 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> laraxot/dev
 /**
  * The `Blocks` component is responsible for rendering a set of blocks on a view.
  *
@@ -11,7 +14,11 @@ declare(strict_types=1);
  * passes the `$view`, `$blocks`, and `$model` parameters to the view for rendering.
  */
 
+<<<<<<< HEAD
 
+=======
+declare(strict_types=1);
+>>>>>>> laraxot/dev
 
 namespace Modules\UI\View\Components\Render;
 
@@ -38,12 +45,20 @@ final class Blocks extends Component
          * @phpstan-var view-string
          */
         $view = app(GetViewAction::class)->execute($this->view);
+<<<<<<< HEAD
         $view_params = [
+=======
+        $viewParams = [
+>>>>>>> laraxot/dev
             'view' => $view,
             'blocks' => $this->blocks,
             'model' => $this->model,
         ];
 
+<<<<<<< HEAD
         return view($view, $view_params);
+=======
+        return view($view, $viewParams);
+>>>>>>> laraxot/dev
     }
 }

@@ -12,15 +12,23 @@ use Illuminate\Support\Collection;
  */
 final class UiCoverageAuthUser extends AuthenticatableUser
 {
+<<<<<<< HEAD
     public ?object $profile = null;
 
+=======
+    public mixed $profile = null;
+>>>>>>> laraxot/dev
     public function relationLoaded($key): bool
     {
         if (! is_string($key)) {
             return false;
         }
 
+<<<<<<< HEAD
         return 'profile' === $key && null !== $this->profile;
+=======
+        return $key === 'profile' && $this->profile !== null;
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -30,4 +38,8 @@ final class UiCoverageAuthUser extends AuthenticatableUser
     {
         return collect(['admin']);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> laraxot/dev

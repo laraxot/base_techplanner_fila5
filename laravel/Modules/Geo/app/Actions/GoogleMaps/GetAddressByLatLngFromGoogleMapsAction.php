@@ -8,12 +8,20 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use Illuminate\Support\Facades\Log;
 use Modules\Geo\Datas\LocationData;
+<<<<<<< HEAD
 
 use function Safe\json_decode;
 
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+=======
+use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
+
+use function Safe\json_decode;
+
+>>>>>>> laraxot/dev
 /**
  * Action per ottenere l'indirizzo da coordinate tramite Google Maps.
  *
@@ -28,8 +36,12 @@ class GetAddressByLatLngFromGoogleMapsAction
 
     public function __construct(
         private readonly Client $client,
+<<<<<<< HEAD
     ) {
     }
+=======
+    ) {}
+>>>>>>> laraxot/dev
 
     /**
      * Ottiene l'indirizzo dalle coordinate.
@@ -105,7 +117,11 @@ class GetAddressByLatLngFromGoogleMapsAction
          * } $data */
         $data = json_decode($response, true);
 
+<<<<<<< HEAD
         if ('OK' !== $data['status'] || empty($data['results'][0])) {
+=======
+        if ($data['status'] !== 'OK' || empty($data['results'][0])) {
+>>>>>>> laraxot/dev
             throw new \RuntimeException('No address found for coordinates');
         }
 

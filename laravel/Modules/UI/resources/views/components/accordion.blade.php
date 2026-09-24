@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 ?>
+=======
+>>>>>>> laraxot/dev
 @props([
     'id' => 'accordion-' . uniqid(),
     'flush' => false,

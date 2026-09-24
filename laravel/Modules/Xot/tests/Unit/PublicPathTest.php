@@ -1,7 +1,11 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 use App\Application;
+=======
+
+>>>>>>> laraxot/dev
 use Modules\Xot\Tests\TestCase;
 use Webmozart\Assert\Assert;
 

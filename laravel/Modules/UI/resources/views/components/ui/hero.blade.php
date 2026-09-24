@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 ?>
+=======
+>>>>>>> laraxot/dev
 @props([
     'title' => '',
     'subtitle' => '',
@@ -116,4 +119,8 @@ declare(strict_types=1);
     <!-- Decorative Elements -->
     <div class="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
     <div class="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
+<<<<<<< HEAD
 </section>
+=======
+</section>
+>>>>>>> laraxot/dev

@@ -6,6 +6,12 @@ declare(strict_types=1);
 // claude-audit static: split from icon_state_group.php for maintainability (<500 LOC).
 // Canon: Modules/UI/docs/wiki/concepts/claude-audit-static.md
 // File: lang/it/icon_state_group_label.php
+<<<<<<< HEAD
 return array (
   'label' => 'Icon State Group',
 );
+=======
+return [
+    'label' => 'Icon State Group',
+];
+>>>>>>> laraxot/dev

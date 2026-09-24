@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi dell'Errore di Implementazione Volt/Blade
 
 ## Collegamenti correlati
@@ -91,6 +92,8 @@ Come correttamente indicato, per i form è preferibile utilizzare un widget Fila
 4. **Coerenza**: Mantiene uno stile coerente con il resto dell'applicazione
 
 Questo approccio sarà documentato in dettaglio nel file `VOLT_BLADE_IMPLEMENTATION.md`.
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: volt-blade-implementation-error

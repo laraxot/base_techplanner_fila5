@@ -16,6 +16,7 @@ use Modules\Geo\Providers\GeoServiceProvider;
 use Modules\User\Providers\UserServiceProvider;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Tests\XotBaseTestCase;
+<<<<<<< HEAD
 
 /**
  * @property object|null           $action
@@ -28,6 +29,21 @@ use Modules\Xot\Tests\XotBaseTestCase;
  * @property array<string, mixed>  $geocodingResult
  * @property array<string, mixed>  $weatherData
  * @property array<string, mixed>  $place
+=======
+use Modules\User\Models\User;
+
+/**
+ * @property object|null $action
+ * @property MockHandler|null $mockHandler
+ * @property GoogleMapsAction|null $service
+ * @property Address|null $address
+ * @property BaseModel|null $baseModel
+ * @property array<string, mixed> $testData
+ * @property array<string, mixed> $italianAddress
+ * @property array<string, mixed> $geocodingResult
+ * @property array<string, mixed> $weatherData
+ * @property array<string, mixed> $place
+>>>>>>> laraxot/dev
  */
 abstract class TestCase extends XotBaseTestCase
 {
@@ -68,8 +84,11 @@ abstract class TestCase extends XotBaseTestCase
 
     protected function setUp(): void
     {
+<<<<<<< HEAD
         $this->prepareSharedSqliteForTesting();
 
+=======
+>>>>>>> laraxot/dev
         parent::setUp();
 
         config(['xra.pub_theme' => 'Meetup']);

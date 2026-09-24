@@ -1,6 +1,7 @@
 # User Module - Business Logic Analysis
 
 ## Overview
+<<<<<<< HEAD
 The User module provides comprehensive user management, authentication, authorization, and team-based access control for the Quaeris platform. It serves as the foundation for all user-related operations across the entire application.
 
 ## Business Purpose
@@ -481,6 +482,8 @@ class ApiRateLimitingMiddleware
 # User Module - Business Logic Analysis
 
 ## Overview
+=======
+>>>>>>> laraxot/dev
 The User module provides comprehensive user management, authentication, authorization, and team-based access control for the healthcare_app platform. It serves as the foundation for all user-related operations across the entire application.
 
 ## Business Purpose
@@ -952,4 +955,8 @@ class ApiRateLimitingMiddleware
 - Permission errors (minimize)
 - User satisfaction scores
 - Security incident reduction
+<<<<<<< HEAD
 - Team collaboration effectiveness
+=======
+- Team collaboration effectiveness
+>>>>>>> laraxot/dev

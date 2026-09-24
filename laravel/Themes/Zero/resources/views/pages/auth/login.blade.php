@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
+=======
+>>>>>>> laraxot/dev
 <x-layouts.main>
     <x-slot name="title">
         {{ __('Accedi') }} - {{ config('app.name', 'Laravel') }}

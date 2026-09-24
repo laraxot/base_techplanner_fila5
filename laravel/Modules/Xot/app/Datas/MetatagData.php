@@ -171,8 +171,13 @@ class MetatagData extends Data implements Wireable
             $path = app(AssetAction::class)->execute($this->logo_header);
 
             return asset($path);
+<<<<<<< HEAD
         } catch (\Throwable) {
             return $this->fallbackPublicAssetUrl($this->logo_header);
+=======
+        } catch (\Throwable $e) {
+            return asset($this->logo_header);
+>>>>>>> laraxot/dev
         }
     }
 
@@ -192,12 +197,18 @@ class MetatagData extends Data implements Wireable
             $path = app(AssetAction::class)->execute($this->logo_header_dark);
 
             return asset($path);
+<<<<<<< HEAD
         } catch (\Throwable) {
             return $this->fallbackPublicAssetUrl($this->logo_header_dark);
+=======
+        } catch (\Throwable $e) {
+            return asset($this->logo_header_dark);
+>>>>>>> laraxot/dev
         }
     }
 
     /**
+<<<<<<< HEAD
      * Never turn `module::img/x.png` into an HTTP path: browsers 404 on it.
      * If AssetAction already copied the file, reuse the public relative path.
      */
@@ -222,6 +233,8 @@ class MetatagData extends Data implements Wireable
     }
 
     /**
+=======
+>>>>>>> laraxot/dev
      * Get the brand logo height.
      * This method reflects the semantic purpose of getting the brand logo height.
      */
@@ -288,10 +301,13 @@ class MetatagData extends Data implements Wireable
     }
 
     /**
+<<<<<<< HEAD
      * Get the theme colors.
      * This method reflects the semantic purpose of getting theme colors,
      * rather than exposing the raw color data structure.
      *
+=======
+>>>>>>> laraxot/dev
      * @return array<string, string>
      */
     public function getThemeColors(): array

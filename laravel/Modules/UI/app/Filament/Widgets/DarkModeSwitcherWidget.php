@@ -15,8 +15,11 @@ final class DarkModeSwitcherWidget extends XotBaseSchemaWidget
 
     public bool $darkMode = false;
 
+<<<<<<< HEAD
     /** @phpstan-var view-string */
     /** @phpstan-ignore property.defaultValue */
+=======
+>>>>>>> laraxot/dev
     protected string $view = 'ui::filament.widgets.dark-mode-switcher';
 
     public function mount(): void

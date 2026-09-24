@@ -470,3 +470,8 @@ private function getPasswordLegacy(): string
 - ✅ **Security Framework**: Validazione, audit trail e controlli accesso
 - ✅ **Testing Strategy**: Test unitari, integrazione e performance
 - ✅ **Maintenance Policy**: Versioning, changelog e deprecation
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> laraxot/dev

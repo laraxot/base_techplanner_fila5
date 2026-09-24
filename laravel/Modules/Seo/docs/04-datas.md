@@ -13,6 +13,7 @@ Located in `Seo/app/Datas/`:
 
 ### Creating Meta Tag Data
 ```php
+<<<<<<< HEAD
 use Modules\Seo\Datas\MetatagData;
 
 // Verified against app/Datas/MetatagData.php: the constructor takes a single
@@ -23,11 +24,20 @@ use Modules\Seo\Datas\MetatagData;
 $metatag = new MetatagData([
     'title' => 'Page Title',
     'description' => 'Page Description',
+=======
+use Modules\Seo\app\Datas\MetatagData;
+
+$metatag = MetatagData::from([
+    'title' => 'Page Title',
+    'description' => 'Page Description',
+    'keywords' => ['keyword1', 'keyword2'],
+>>>>>>> laraxot/dev
 ]);
 ```
 
 ### Social Sharing Data
 ```php
+<<<<<<< HEAD
 use Modules\Seo\Datas\SocialShareData;
 
 // SocialShareData has named constructor properties: url (required), title,
@@ -37,14 +47,24 @@ $sharing = SocialShareData::from([
     'url' => 'https://example.com/page',
     'title' => 'Shared Title',
     'text' => 'Shared description',
+=======
+use Modules\Seo\app\Datas\SocialShareData;
+
+$sharing = SocialShareData::from([
+    'title' => 'Shared Title',
+    'description' => 'Shared Description',
+>>>>>>> laraxot/dev
     'image' => 'https://example.com/image.jpg',
 ]);
 ```
 
+<<<<<<< HEAD
 > Namespace note: the correct namespace is `Modules\Seo\Datas` (module root maps
 > to `app/` via PSR-4 — do not include an `app\` segment). An earlier revision
 > of this doc had `Modules\Seo\app\Datas\...`, which does not exist.
 
+=======
+>>>>>>> laraxot/dev
 ## Migration Notes
 
 Previously located in `app/Data/` folder, all data classes were migrated to `app/Datas/` following the Laraxot standard:

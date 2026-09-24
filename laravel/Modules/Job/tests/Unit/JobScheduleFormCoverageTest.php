@@ -86,11 +86,14 @@ describe('Job ScheduleForm full schema coverage', function (): void {
     });
 });
 
+<<<<<<< HEAD
 /**
  * Percorre ricorsivamente il grafo di $value invocando le Closure trovate.
  *
  * @param  mixed  $value  Nodo eterogeneo del grafo: Closure|array|object|scalar|null.
  */
+=======
+>>>>>>> laraxot/dev
 function jobInvokeClosures(mixed $value, object $set, object $get, int $depth = 0): void
 {
     if ($depth > 8) {

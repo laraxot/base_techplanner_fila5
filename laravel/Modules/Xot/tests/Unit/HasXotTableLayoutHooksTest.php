@@ -1,7 +1,11 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 use Filament\Tables\Columns\Column;
+=======
+
+>>>>>>> laraxot/dev
 use Filament\Tables\Enums\FiltersLayout;
 use Filament\Tables\Enums\RecordActionsPosition;
 use Modules\Xot\Filament\Traits\HasXotTable;

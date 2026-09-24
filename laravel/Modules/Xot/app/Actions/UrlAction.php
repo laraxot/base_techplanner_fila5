@@ -14,7 +14,13 @@ class UrlAction
     use QueueableAction;
     private static ?self $instance = null;
 
+<<<<<<< HEAD
     public function __construct() {}
+=======
+    public function __construct()
+    {
+    }
+>>>>>>> laraxot/dev
 
     public static function getInstance(): self
     {
@@ -32,8 +38,17 @@ class UrlAction
 
     public function checkValidUrl(string $url): bool
     {
+<<<<<<< HEAD
         return filter_var($url, FILTER_VALIDATE_URL) !== false;
     }
 
     public function execute(): void {}
+=======
+        return false !== filter_var($url, FILTER_VALIDATE_URL);
+    }
+
+    public function execute(): void
+    {
+    }
+>>>>>>> laraxot/dev
 }

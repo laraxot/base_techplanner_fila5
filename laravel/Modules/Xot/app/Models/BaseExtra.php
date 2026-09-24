@@ -14,6 +14,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
 /**
  * Model Extra.
  *
+<<<<<<< HEAD
  * <<<<<<< HEAD
  *
  * @property int                                               $id
@@ -21,6 +22,8 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
  * @property string|null                                       $model_type
  *                                                                               =======
  *                                                                               <<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  * @property int                                               $id
  * @property int|null                                          $model_id
  * @property string|null                                       $model_type
@@ -33,6 +36,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
  * @method static Builder|Extra     query()
  * @method static Builder|BaseModel withCacheCooldownSeconds(?int $seconds = null)
  * @method static Builder|Extra     withExtraAttributes()
+<<<<<<< HEAD
  *                                                                                 =======
  *
  * @property int                                               $id
@@ -48,6 +52,8 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
  * @method static Builder|BaseModel withCacheCooldownSeconds(?int $seconds = null)
  * @method static Builder|Extra     withExtraAttributes()
  *                                                                                 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
  *
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at

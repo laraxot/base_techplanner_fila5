@@ -25,20 +25,36 @@ final class GetFieldnamesByTablenameAction
      */
     public function execute(string $table, ?string $connectionName = null): array
     {
+<<<<<<< HEAD
+=======
+        // Validate table name
+>>>>>>> laraxot/dev
         if (empty(trim($table))) {
             throw new \InvalidArgumentException('Table name cannot be empty.');
         }
 
+<<<<<<< HEAD
         Assert::string($connectionName ??= config('database.default'));
 
+=======
+        // Use default connection if none is provided
+        Assert::string($connectionName ??= config('database.default'));
+
+        // Validate database connection
+>>>>>>> laraxot/dev
         if (! $this->isValidConnection($connectionName)) {
             throw new \InvalidArgumentException(sprintf('Invalid database connection: %s', $connectionName));
         }
 
+<<<<<<< HEAD
+=======
+        // Check if table exists in the database
+>>>>>>> laraxot/dev
         if (! Schema::connection($connectionName)->hasTable($table)) {
             throw new \InvalidArgumentException(sprintf('Table "%s" does not exist in connection "%s".', $table, $connectionName));
         }
 
+<<<<<<< HEAD
         try {
             $columns = Schema::connection($connectionName)->getColumnListing($table);
 
@@ -50,11 +66,26 @@ final class GetFieldnamesByTablenameAction
                 },
                 $columns,
             ));
+=======
+        // Get and return column listing
+        try {
+            $columns = Schema::connection($connectionName)->getColumnListing($table);
+
+            return array_values($columns);
+            // $columns = array_map('strval', $columns);
+            // return array_values(array_map(static fn ($value): string => is_string($value) ? $value : (string) $value, $columns));
+>>>>>>> laraxot/dev
         } catch (\Throwable $e) {
             throw new \InvalidArgumentException(sprintf('Error fetching columns from table "%s": %s', $table, $e->getMessage()));
         }
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * Check if a given database connection is valid.
+     */
+>>>>>>> laraxot/dev
     private function isValidConnection(string $connectionName): bool
     {
         try {

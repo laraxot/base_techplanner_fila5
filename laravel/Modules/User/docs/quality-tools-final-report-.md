@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Quality Tools Final Report - 2025-01-22
 
 ## Obiettivo
@@ -161,6 +162,8 @@ $user_class = XotData::make()->getUserClass();
 ---
 
 **Status**: ✅ **COMPLETATO** - Modulo User: 0 errori PHPStan, 0 errori critici PHPMD, warning PHP Insights accettabili.
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: quality-tools-final-report-

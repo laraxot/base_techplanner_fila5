@@ -13,6 +13,7 @@ use Spatie\ModelStatus\Status;
 /**
  * Modules\Xot\Contracts\ModelWithStatusContract.
  *
+<<<<<<< HEAD
  *
  * @property int                     $id
  * @property int|null                $user_id
@@ -26,6 +27,8 @@ use Spatie\ModelStatus\Status;
  * @property string                  $tennant_name
  * @property UserContract|null       $user
  * @property string                  $status
+=======
+>>>>>>> laraxot/dev
  * @property int                     $id
  * @property int|null                $user_id
  * @property string|null             $post_type
@@ -41,6 +44,7 @@ use Spatie\ModelStatus\Status;
  * @property Collection<int, Status> $statuses
  * @property int|null                $statuses_count
  *
+<<<<<<< HEAD
  *
  * @method int|string|null                              getKey()
  * @method string                                       getRouteKey()
@@ -75,6 +79,21 @@ use Spatie\ModelStatus\Status;
  * @method int                                                             detach($params)
  * @method void                                                            attach($params)
  * @method bool                                                            save($params)
+=======
+ * @method mixed                                                           getKey()
+ * @method string                                                          getRouteKey()
+ * @method string                                                          getRouteKeyName()
+ * @method string                                                          getTable()
+ * @method mixed                                                           with($array)
+ * @method array<string, mixed>                                            getFillable()
+ * @method mixed                                                           fill($array)
+ * @method mixed                                                           getConnection()
+ * @method mixed                                                           update($params)
+ * @method mixed                                                           delete()
+ * @method mixed                                                           detach($params)
+ * @method mixed                                                           attach($params)
+ * @method mixed                                                           save($params)
+>>>>>>> laraxot/dev
  * @method array<string, mixed>                                            treeLabel()
  * @method array<string, mixed>                                            treeSons()
  * @method array<string, mixed>                                            toArray()

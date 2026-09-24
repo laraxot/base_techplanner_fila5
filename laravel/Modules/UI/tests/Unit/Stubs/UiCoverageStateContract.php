@@ -16,6 +16,10 @@ class UiCoverageStateContract implements StateContract
 {
     public string $name = 'pending';
 
+<<<<<<< HEAD
+=======
+    /** @param array<array-key, mixed>|Model|string|null $record */
+>>>>>>> laraxot/dev
     /**
      * @param  Model|array<string, mixed>|string|null  $record
      */

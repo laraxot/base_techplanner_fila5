@@ -6,6 +6,12 @@ declare(strict_types=1);
 // claude-audit static: split from opening_hours_field.php for maintainability (<500 LOC).
 // Canon: Modules/UI/docs/wiki/concepts/claude-audit-static.md
 // File: lang/it/opening_hours_field_label.php
+<<<<<<< HEAD
 return array (
   'label' => 'Opening Hours Field',
 );
+=======
+return [
+    'label' => 'Opening Hours Field',
+];
+>>>>>>> laraxot/dev

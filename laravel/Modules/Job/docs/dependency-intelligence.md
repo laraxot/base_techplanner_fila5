@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ---
 title: "Dependency Intelligence - Module Job"
 module: "Job"
@@ -9,6 +13,11 @@ qmd: "dependency intelligence"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> af4545e (.)
+>>>>>>> laraxot/dev
 # Dependency Intelligence - Module Job
 
 Aggiornato da `composer show` il 2026-03-02.

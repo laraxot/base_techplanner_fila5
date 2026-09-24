@@ -6,7 +6,10 @@ namespace Modules\Lang\Actions;
 
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\Arr;
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Config;
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Arr\SaveArrayAction;
 use Spatie\QueueableAction\QueueableAction;
@@ -16,6 +19,7 @@ class SaveTransAction
     use QueueableAction;
 
     /**
+<<<<<<< HEAD
      * @param array<string, mixed>|int|string|Htmlable|null $data
      */
     public function execute(string $key, int|string|array|Htmlable|null $data): void
@@ -31,6 +35,12 @@ class SaveTransAction
             return;
         }
 
+=======
+     * @param  array<string, mixed>|int|string|Htmlable|null  $data
+     */
+    public function execute(string $key, int|string|array|Htmlable|null $data): void
+    {
+>>>>>>> laraxot/dev
         $cont = [];
 
         $filename = app(GetTransPathAction::class)->execute($key);
@@ -58,7 +68,11 @@ class SaveTransAction
         }
 
         $piece = implode('.', array_slice(explode('.', $key), 1));
+<<<<<<< HEAD
         if ('' !== $piece) {
+=======
+        if ($piece !== '') {
+>>>>>>> laraxot/dev
             Arr::set($cont, $piece, $data);
         } else {
             $cont = $data;

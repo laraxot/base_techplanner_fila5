@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ---
 title: "Cyclomatic Complexity Report - Module: Job"
 module: "Job"
@@ -9,6 +13,11 @@ qmd: "cyclomatic complexity report"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> af4545e (.)
+>>>>>>> laraxot/dev
 # Cyclomatic Complexity Report - Module: Job
 
 **Analyzer:** Super Mucca 🐮

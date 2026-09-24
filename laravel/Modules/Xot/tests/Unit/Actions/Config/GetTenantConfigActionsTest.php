@@ -5,6 +5,10 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit\Actions\Config;
 
 use Illuminate\Support\Facades\File;
+<<<<<<< HEAD
+=======
+use Mockery;
+>>>>>>> laraxot/dev
 use Mockery\MockInterface;
 use Modules\Tenant\Actions\Config\GetTenantFilePathAction;
 use Modules\Xot\Actions\Config\GetTenantConfigArrayAction;
@@ -13,7 +17,12 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\tempnam;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('xot');
+=======
+uses(TestCase::class);
+
+>>>>>>> laraxot/dev
 describe('Get Tenant Config Actions', function (): void {
     test('gets tenant config array correctly', function (): void {
         $configName = 'test_config';
@@ -23,7 +32,11 @@ describe('Get Tenant Config Actions', function (): void {
         File::put($tempPath, 'return '.var_export($configData, true).';');
 
         /** @var GetTenantFilePathAction&MockInterface $mock */
+<<<<<<< HEAD
         $mock = \Mockery::mock(GetTenantFilePathAction::class);
+=======
+        $mock = Mockery::mock(GetTenantFilePathAction::class);
+>>>>>>> laraxot/dev
         $mock->shouldReceive('execute')
             ->with($configName.'.php')
             ->andReturn($tempPath);
@@ -41,7 +54,11 @@ describe('Get Tenant Config Actions', function (): void {
         $configName = 'non_existent';
 
         /** @var GetTenantFilePathAction&MockInterface $mock */
+<<<<<<< HEAD
         $mock = \Mockery::mock(GetTenantFilePathAction::class);
+=======
+        $mock = Mockery::mock(GetTenantFilePathAction::class);
+>>>>>>> laraxot/dev
         $mock->shouldReceive('execute')
             ->andReturn('/path/to/nothing.php');
 

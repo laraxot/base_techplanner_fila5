@@ -4,6 +4,7 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\ContactEntryResource\Pages;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use App\Filament\Resources\ContactEntryResource\Pages\ListContactEntries;
 use App\Filament\Resources\ContactEntryResource\Pages\ViewContactEntry;
 use App\Models\ContactEntry;
@@ -32,6 +33,8 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Support\HtmlString;
 =======
+=======
+>>>>>>> laraxot/dev
 use App\Filament\Resources\ContactEntryResource\Pages;
 use App\Filament\Resources\ContactEntryResource\Pages\ListContactEntries;
 use App\Filament\Resources\ContactEntryResource\Pages\ListContactEntries;
@@ -57,7 +60,10 @@ use Illuminate\Support\HtmlString;
 use Illuminate\Support\HtmlString;
 use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
 use Modules\Xot\Filament\Resources\XotBaseResource as Resource;
+<<<<<<< HEAD
 >>>>>>> c34c6d1 (.)
+=======
+>>>>>>> laraxot/dev
 
 class ContactEntryResource extends Resource
 {
@@ -118,9 +124,12 @@ class ContactEntryResource extends Resource
     }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
 
 =======
 >>>>>>> c34c6d1 (.)
+=======
+>>>>>>> laraxot/dev

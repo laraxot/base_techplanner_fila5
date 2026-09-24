@@ -5,9 +5,12 @@ tags: [dry, kiss, analysis]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "dry-kiss-analysis- dry & kiss analysis - modulo user"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 
+=======
+>>>>>>> laraxot/dev
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -139,6 +142,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 - [Architecture](./core/architecture.md)
 - [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
 - [DRY/KISS Global](../../../docs/dry_kiss_analysis_2025-10-15.md)
+<<<<<<< HEAD
 - [Base Classes Corrections](./fixes/base-classes-corrections-2025-10-15.md)
 - [Architecture](./core/architecture.md)
 - [DRY/KISS Global](../../docs/dry_kiss_analysis_2025-10-15.md)
@@ -154,3 +158,9 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 ---
 
 **Conclusione:** Modulo User ha architettura solida, DRY eccellente, e complessità giustificata.
+=======
+
+---
+
+**Conclusione:** Modulo User ha architettura solida, DRY eccellente, e complessità giustificata.
+>>>>>>> laraxot/dev

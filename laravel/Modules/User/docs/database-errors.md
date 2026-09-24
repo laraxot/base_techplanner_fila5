@@ -51,4 +51,8 @@ related:
 - [Migration File](../database/migrations/2025_05_17_000001_create_doctor_team_table.php)
 - [Xot Module Database Guidelines](../../../Modules/Xot/docs/DATABASE_GUIDELINES.md)
 - [Root Documentation](../../../../docs/collegamenti-documentazione.md)
+<<<<<<< HEAD
 - [Xot Module Database Guidelines](../../../modules/xot/docs/database_guidelines.md)
+=======
+- [Xot Module Database Guidelines](../../../modules/xot/docs/database_guidelines.md)
+>>>>>>> laraxot/dev

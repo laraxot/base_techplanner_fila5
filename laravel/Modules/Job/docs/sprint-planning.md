@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ---
 title: "Job Module - Sprint Planning"
 module: "Job"
@@ -76,3 +80,12 @@ Implement core job queue infrastructure with basic processing and retry capabili
 ---
 
 *Last Updated: March 12, 2026*
+<<<<<<< HEAD
+=======
+=======
+# Sprint Planning: Job Module
+
+## 🏁 Sprint Goal
+Finalize documentation and validation for Job.
+>>>>>>> af4545e (.)
+>>>>>>> laraxot/dev

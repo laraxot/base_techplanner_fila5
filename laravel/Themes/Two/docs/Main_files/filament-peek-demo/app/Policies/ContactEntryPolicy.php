@@ -4,6 +4,7 @@ namespace App\Policies;
 
 use App\Models\ContactEntry;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Auth\Access\HandlesAuthorization;
 use Illuminate\Auth\Access\Response;
 use Modules\User\Models\User;
@@ -12,6 +13,8 @@ use App\Models\ContactEntry;
 use Modules\User\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 =======
+=======
+>>>>>>> laraxot/dev
 use App\Models\ContactEntry;
 use Illuminate\Auth\Access\HandlesAuthorization;
 use Illuminate\Auth\Access\HandlesAuthorization;
@@ -19,7 +22,10 @@ use Illuminate\Auth\Access\Response;
 use Illuminate\Auth\Access\Response;
 use Modules\User\Models\User;
 use Modules\User\Models\User;
+<<<<<<< HEAD
 >>>>>>> c34c6d1 (.)
+=======
+>>>>>>> laraxot/dev
 
 class ContactEntryPolicy
 {
@@ -96,8 +102,11 @@ class ContactEntryPolicy
     }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
 =======
 >>>>>>> c34c6d1 (.)
+=======
+>>>>>>> laraxot/dev

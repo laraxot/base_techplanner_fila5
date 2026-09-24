@@ -16,6 +16,7 @@ discussions:
 
 # TechPlanner LLM Wiki Log
 
+<<<<<<< HEAD
 ## 2026-09-24
 
 - **fix `return.internalClass` su `Xot/helpers/Helper.php::test()`** — stub non deve tipizzare `TestCall`/`HigherOrderTapProxy` (`@internal`); pest-plugin-phpstan ignora solo method/property.internalClass. Stub `test`/`describe`/`it` → `void` (Helper + PestStubs). Canon: `rules/pest-internal-class-phpstan.md`.
@@ -27,6 +28,8 @@ discussions:
 - **phpstan Modules → 0 errori (swarm)** — blocker: merge `d332cf84` (Xot, `ca880316` ⟷ laraxot/dev `4c0c8a08`) aveva **committato marker** in 577 file Xot + 7 Seo + 1 Meetup. 476 hunk banali (whitespace / un lato vuoto) risolti via script; 662 hunk reali risolti da 8 subagent in batch random (default: lato laraxot/dev per tipi/PHPDoc più precisi, feature di entrambi i lati preservate). Merge silenzioso aveva perso `HasSpatiePermission::hasPermissionToOrCreate()` (User) richiesto da `UserContract` upstream → ripristinato verbatim da `3518623c`. 31 `declare(strict_types=1)` duplicati rimossi. 85 `alreadyNarrowedType` nei test Pest (Geo MapPicker, Lang, Job, UI, Tenant, Xot) riscritti con asserzioni reali. Pest non eseguibile: DB test `Access denied for user 'marco'`.
 - **Lezione**: `git merge -s resolve --allow-unrelated-histories` + `git add -A` committa i marker → prima di `commit` eseguire `grep -rlE '^<<<<<<< ' --include='*.php' Modules Themes`.
 
+=======
+>>>>>>> laraxot/dev
 ## 2026-09-03
 
 - **Marker di conflitto COMMITTATI in Xot/Notify (story XOT-5.52)** — variante nuova dell'incidente: non conflitti unmerged nel working tree, ma merge commit (`Xot 25b12f2f`, `Notify 52abdac1`) creati con i marker DENTRO i blob; working tree "pulito", `git status` muto, PHPStan morto al primo parse error. Genitori dei merge sani → fusione ricostruibile con `git show <parent>:<path>`. Upstream `laraxot/dev` ugualmente contaminato (673 file identici). Censimento fence-aware per enumerazione (non grep): **2.209 file, 792 con marker orfani**, seconda famiglia `.merge_file_*` pre-merge con blocchi malformati. Tooling nuovo: `bashscripts/git/conflict-marker-census.py` (fence-aware, surrogateescape, orfani) + `bashscripts/git/conflict-autoresolve.py` (auto-fix conservativo dei soli blocchi identici: 33 file). `.gitattributes` Xot rotto da conflitto (riga `>>>>>>> laraxot/dev` letta come attributo) inquinava ogni comando git del submodulo: risolto per primo. Story validata da 2 revisori AI (architect+QA) prima del dev. Regola nuova: story BMAD nel modulo di lavoro (`rules/bmad-story-location.md`). Pagina sweep `how-to/git-merge-marker-sweep.md` de-corrotta (aveva essa stessa marker orfani + doppia policy LFS).

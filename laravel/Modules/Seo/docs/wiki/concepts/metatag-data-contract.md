@@ -62,12 +62,22 @@ public function get(): MetatagDataContract
 
 `Metatag` Facade espone `@method static MetatagDataContract get()` — i consumer type-hintano il contratto, non la concrete class.
 
+<<<<<<< HEAD
 ## Stato verifica (2026-07-12; ricontrollato 2026-09-17)
 
 - `app/Support/` **assente**
 - Consumer canonici: `MetatagData` (`app/Datas/`), `MetatagFacadeAdapter` (`app/Adapters/`), Actions `GetMetatagDataAction`/`MergeMetatagDataAction`/`ReplaceMetatagDataAction`, Facade `Metatag`
 - **Correzione 2026-09-17**: `app/Interfaces/MetatagDataInterface.php` (+ `.php.bak`) e `app/Services/MetatagService.php` (+ `.php.bak`) **esistono ancora** nel modulo — non sono stati rimossi dal refactor verso `Contracts/`+`Adapters/`+`Actions/`. Non risultano più referenziati da `SeoServiceProvider` né dal `Metatag` facade (che punta a `MetatagFacadeAdapter`), ma restano nel tree come codice morto/legacy; `Modules/Seo/tests/Unit/Services/MetatagServiceExtendedTest.php` istanzia ancora `MetatagService` direttamente. Rimozione fuori scope per una modifica solo-docs — vedi finding dedicato.
 - Test: `Modules/Seo/tests/Unit/Datas/MetatagDataTest.php` → `MetatagDataContract` (esiste anche un `Unit/Data/MetatagDataTest.php` legacy, stesso namespace pre-refactor)
+=======
+## Stato verifica (2026-07-12)
+
+- `app/Interfaces/` **assente** nel modulo Seo
+- `app/Support/` **assente** (2026-07-12)
+- Consumer canonici: `MetatagData`, `MetatagFacadeAdapter` (`app/Adapters/`), Actions `GetMetatagDataAction`, Facade `Metatag`
+- Audit: `bash bashscripts/tools/check-module-contracts-naming.sh` → OK
+- Test: `Modules/Seo/tests/Unit/Data/MetatagDataTest.php` → `MetatagDataContract`
+>>>>>>> laraxot/dev
 
 ## Checklist nuovo contratto nel modulo Seo
 

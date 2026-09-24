@@ -10,7 +10,12 @@ use Modules\Xot\Actions\Pdf\GetPdfContentByRecordAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('xot');
+=======
+uses(TestCase::class);
+
+>>>>>>> laraxot/dev
 // $this dentro le closure Pest e' tipizzato da Pest come TestCall, non come
 // Modules\Xot\Tests\TestCase: PHPStan vieta di ritipizzare $this via @var, quindi
 // l'action del test vive in una variabile locale condivisa per riferimento. Per lo
@@ -19,7 +24,11 @@ uses(TestCase::class)->group('xot');
 $action = null;
 
 beforeEach(function () use (&$action): void {
+<<<<<<< HEAD
     $action = new GetPdfContentByRecordAction();
+=======
+    $action = new GetPdfContentByRecordAction;
+>>>>>>> laraxot/dev
 });
 
 describe('Get Pdf Content By Record Action', function () use (&$action): void {
@@ -47,7 +56,10 @@ describe('Get Pdf Content By Record Action', function () use (&$action): void {
         $user = UserFactory::new()->createOne();
 
         // Use reflection to test protected method
+<<<<<<< HEAD
         $action = $this->action;
+=======
+>>>>>>> laraxot/dev
         Assert::assertInstanceOf(GetPdfContentByRecordAction::class, $action);
         $reflection = new \ReflectionClass($action);
         $method = $reflection->getMethod('generateViewName');
@@ -65,7 +77,10 @@ describe('Get Pdf Content By Record Action', function () use (&$action): void {
         $user = UserFactory::new()->createOne(['id' => 123, 'name' => 'Test User']);
 
         // Use reflection to test protected method
+<<<<<<< HEAD
         $action = $this->action;
+=======
+>>>>>>> laraxot/dev
         Assert::assertInstanceOf(GetPdfContentByRecordAction::class, $action);
         $reflection = new \ReflectionClass($action);
         $method = $reflection->getMethod('generateFilename');
@@ -80,7 +95,12 @@ describe('Get Pdf Content By Record Action', function () use (&$action): void {
 
     test('it generates enhanced filename for performance models', function () use (&$action): void {
         // Arrange - Create a mock model with performance fields
+<<<<<<< HEAD
         $record = new class extends Model {
+=======
+        $record = new class extends Model
+        {
+>>>>>>> laraxot/dev
             protected $table = 'test_performance';
 
             protected $fillable = ['id', 'matr', 'cognome', 'nome'];
@@ -96,7 +116,10 @@ describe('Get Pdf Content By Record Action', function () use (&$action): void {
         $record->setAttribute('nome', 'Mario');
 
         // Use reflection to test protected method
+<<<<<<< HEAD
         $action = $this->action;
+=======
+>>>>>>> laraxot/dev
         Assert::assertInstanceOf(GetPdfContentByRecordAction::class, $action);
         $reflection = new \ReflectionClass($action);
         $method = $reflection->getMethod('generateFilename');
@@ -114,7 +137,10 @@ describe('Get Pdf Content By Record Action', function () use (&$action): void {
         $user = UserFactory::new()->createOne(['name' => 'Test User']);
 
         // Use reflection to test protected method
+<<<<<<< HEAD
         $action = $this->action;
+=======
+>>>>>>> laraxot/dev
         Assert::assertInstanceOf(GetPdfContentByRecordAction::class, $action);
         $reflection = new \ReflectionClass($action);
         $method = $reflection->getMethod('prepareViewParameters');

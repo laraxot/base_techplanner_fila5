@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 // UI Blade view — see Modules/UI/docs/wiki.
+=======
+>>>>>>> laraxot/dev
 ?>
 <!--
   This example requires some changes to your config:

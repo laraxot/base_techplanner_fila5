@@ -10,6 +10,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 class ViewAbsenceRequest extends XotBaseViewRecord
 {
     protected static string $resource = AbsenceRequestResource::class;
+<<<<<<< HEAD
 
     /**
      * @return array<string, \Filament\Schemas\Components\Component>
@@ -20,4 +21,6 @@ class ViewAbsenceRequest extends XotBaseViewRecord
         return [];
     }
 
+=======
+>>>>>>> laraxot/dev
 }

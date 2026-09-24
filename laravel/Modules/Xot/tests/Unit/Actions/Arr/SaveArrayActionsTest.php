@@ -14,7 +14,10 @@ use function Safe\tempnam;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 it('saves array as php file', function (): void {
     $data = ['foo' => 'bar', 'baz' => 123];
     $filename = tempnam(sys_get_temp_dir(), 'test_save_').'.php';
