@@ -53,11 +53,7 @@ class IconPicker extends XotBaseTextInput
                             );
                             /** @var array<int|string, mixed> $optsRaw */
                             $optsValues = array_map(
-<<<<<<< HEAD
                                 SafeStringCastAction::cast(...),
-=======
-                                static fn (mixed $v): string => SafeStringCastAction::cast($v),
->>>>>>> laraxot/dev
                                 array_values($optsRaw),
                             );
                             /** @var array<int|string> $optsKeys */

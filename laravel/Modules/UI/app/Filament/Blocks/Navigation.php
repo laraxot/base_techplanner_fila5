@@ -14,10 +14,6 @@ final class Navigation extends XotBaseBlock
     /**
      * @return array<string, Component>
      */
-<<<<<<< HEAD
-    #[\Override]
-=======
->>>>>>> laraxot/dev
     public static function getBlockSchema(): array
     {
         return [

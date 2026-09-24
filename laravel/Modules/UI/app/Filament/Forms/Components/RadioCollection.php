@@ -26,11 +26,7 @@ final class RadioCollection extends XotBaseField
      * Set the options collection for the radio buttons.
      */
     /**
-<<<<<<< HEAD
-     * @param \Closure|Collection<int|string, mixed>|null $options
-=======
      * @param  \Closure|Collection<int|string, mixed>|null  $options
->>>>>>> laraxot/dev
      */
     public function options(\Closure|Collection|null $options): static
     {
@@ -94,20 +90,12 @@ final class RadioCollection extends XotBaseField
     /**
      * Comparazione type-safe per determinare se un'opzione è selezionata.
      *
-<<<<<<< HEAD
-     * @param mixed $stateOverride stato esplicito (test/offline senza container Livewire)
-=======
      * @param  mixed  $stateOverride  stato esplicito (test/offline senza container Livewire)
->>>>>>> laraxot/dev
      */
     public function isOptionSelected(mixed $option, mixed $stateOverride = null): bool
     {
         $state = $stateOverride ?? $this->getState();
-<<<<<<< HEAD
-        $currentValue = SafeStringCastAction::cast($state);
-=======
         $currentValue = (string) SafeStringCastAction::cast($state);
->>>>>>> laraxot/dev
 
         // PHPStan L10: data_get restituisce mixed, SafeStringCastAction accetta mixed
         $optionData = data_get($option, $this->getValueKey());

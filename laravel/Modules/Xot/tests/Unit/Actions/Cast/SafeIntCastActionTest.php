@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -34,12 +30,8 @@ it('casts various values to integer correctly', function (): void {
     Assert::assertSame(15, $action->execute(['15']));
     Assert::assertSame(2, $action->execute(['a', 'b'], 2));
     // Objects with toString
-<<<<<<< HEAD
-    $obj = new class {
-=======
     $obj = new class
     {
->>>>>>> laraxot/dev
         public function __toString()
         {
             return '20';

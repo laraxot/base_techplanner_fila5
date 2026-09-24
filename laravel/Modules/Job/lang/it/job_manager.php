@@ -84,7 +84,6 @@ return [
             'messages' => ['success' => 'Job Manager eliminato con successo'],
             'icon' => 'trash',
             'color' => 'danger',
-<<<<<<< HEAD
             'tooltip' => 'delete',
         ],
         'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
@@ -97,9 +96,6 @@ return [
         'reorderRecords' => ['label' => 'reorderRecords', 'icon' => 'reorderRecords', 'tooltip' => 'reorderRecords'],
         'profile' => ['label' => 'profile', 'icon' => 'profile', 'tooltip' => 'profile'],
         'logout' => ['label' => 'logout', 'icon' => 'logout', 'tooltip' => 'logout'],
-=======
-        ],
->>>>>>> laraxot/dev
     ],
     'messages' => ['no_jobs' => 'Nessun Job Manager presente', 'manager_started' => 'Job Manager avviato', 'manager_paused' => 'Job Manager in pausa', 'manager_resumed' => 'Job Manager ripreso', 'manager_completed' => 'Job Manager completato', 'manager_failed' => 'Job Manager fallito'],
     'statuses' => ['active' => 'Attivo', 'paused' => 'In Pausa', 'completed' => 'Completato', 'failed' => 'Fallito'],

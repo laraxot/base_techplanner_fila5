@@ -1,18 +1,10 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> laraxot/dev
 namespace Modules\Xot\Filament\Actions\Header;
 
 // Header actions must be an instance of Filament\Actions\Action, or Filament\Actions\ActionGroup.
@@ -38,14 +30,10 @@ class ExportTreeXlsAction extends XotBaseAction
     {
         parent::setUp();
         $this->translateLabel()
-<<<<<<< HEAD
             //->tooltip(__('xot::actions.export_xls'))
-=======
-            ->tooltip(__('xot::actions.export_xls'))
->>>>>>> laraxot/dev
             // ->icon('heroicon-o-cloud-arrow-down')
             // ->icon('fas-file-excel')
-            ->icon('heroicon-o-arrow-down-tray')
+            ->icon('xot-files.xls')
             ->action(static function (Page $livewire, Model $record, array $_data) {
                 $tableFilters = [
                     'id' => $record->getKey(),

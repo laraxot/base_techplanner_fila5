@@ -6,12 +6,8 @@ namespace Modules\Xot\Tests\Feature;
 
 use Modules\Xot\Tests\TestCase;
 
-<<<<<<< HEAD
-uses(TestCase::class)->group('xot');
-=======
 uses(TestCase::class);
 
->>>>>>> laraxot/dev
 it('loads xot config correctly', function () {
     $config = config('xot');
 

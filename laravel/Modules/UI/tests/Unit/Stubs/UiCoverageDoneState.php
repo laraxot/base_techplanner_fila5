@@ -10,14 +10,9 @@ use Modules\Xot\Contracts\StateContract;
 
 final class UiCoverageDoneState implements StateContract
 {
-<<<<<<< HEAD
-    /**
-     * @param  Model|array<array-key, mixed>|string|null  $record
-=======
     /** @param array<array-key, mixed>|Model|string|null $record */
     /**
      * @param  Model|array<string, mixed>|string|null  $record
->>>>>>> laraxot/dev
      */
     public function __construct(
         public Model|array|string|null $record = null,

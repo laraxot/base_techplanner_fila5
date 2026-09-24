@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
 ?>
 <section class="bg-indigo-800">
     <div class="mx-auto max-w-7xl md:grid md:grid-cols-2 md:px-6 lg:px-8">

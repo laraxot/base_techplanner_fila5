@@ -28,15 +28,9 @@ class GoogleMapsHttpAction
     private const string ELEVATION_URL = 'https://maps.googleapis.com/maps/api/elevation/json';
 
     /**
-<<<<<<< HEAD
-     * @throws GoogleMapsApiException
-     *
-     * @return array<string, mixed>
-=======
      * @return array<string, mixed>
      *
      * @throws GoogleMapsApiException
->>>>>>> laraxot/dev
      */
     public function executeReverseGeocode(float $latitude, float $longitude): array
     {
@@ -74,15 +68,9 @@ class GoogleMapsHttpAction
     }
 
     /**
-<<<<<<< HEAD
-     * @throws GoogleMapsApiException
-     *
-     * @return array<string, mixed>
-=======
      * @return array<string, mixed>
      *
      * @throws GoogleMapsApiException
->>>>>>> laraxot/dev
      */
     public function executeElevation(float $latitude, float $longitude): array
     {

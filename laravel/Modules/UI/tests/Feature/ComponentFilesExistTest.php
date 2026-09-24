@@ -99,11 +99,7 @@ describe('Component Files Exist', function (): void {
             static fn (string $relativePath): bool => file_exists($themeBasePath.$relativePath),
         ));
 
-<<<<<<< HEAD
-        if ([] !== $legacyPresent) {
-=======
         if ($legacyPresent !== []) {
->>>>>>> laraxot/dev
             Assert::markTestSkipped('Legacy root components still present: '.implode(', ', $legacyPresent));
         }
 

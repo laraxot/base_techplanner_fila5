@@ -1081,11 +1081,7 @@ final class ModuleExecuteCoverage
 
     /**
      * @param  ReflectionClass<Model>  $ref
-<<<<<<< HEAD
      * @return array<string, list<int>>
-=======
-     * @return array<string, list<mixed>>
->>>>>>> laraxot/dev
      */
     private static function discoverLocalScopes(ReflectionClass $ref): array
     {
@@ -1118,11 +1114,7 @@ final class ModuleExecuteCoverage
     }
 
     /**
-<<<<<<< HEAD
      * @return array<string, int|string>
-=======
-     * @return array<string, mixed>
->>>>>>> laraxot/dev
      */
     private static function defaultModelAttributes(): array
     {

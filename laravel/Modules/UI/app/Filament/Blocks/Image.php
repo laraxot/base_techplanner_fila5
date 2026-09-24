@@ -21,35 +21,20 @@ class Image
                 TextInput::make('url'),
                 Select::make('ratio')
                     ->options(static::getRatios())
-<<<<<<< HEAD
-                    ->afterStateHydrated(function (mixed $state, mixed $set): void {
-                        if (! $state && is_callable($set)) {
-=======
                     ->afterStateHydrated(static function (?string $state, Set $set): void {
                         if (! $state) {
->>>>>>> laraxot/dev
                             $set('ratio', '4-3');
                         }
                     }),
                 TextInput::make('alt')->columnSpanFull(),
                 TextInput::make('caption')->columnSpanFull(),
             ])
-<<<<<<< HEAD
-            ->columns('form' === $context ? 2 : 1);
-=======
             ->columns($context === 'form' ? 2 : 1);
->>>>>>> laraxot/dev
     }
 
     /**
      * @return array<string, string>
      */
-<<<<<<< HEAD
-    /**
-     * @return array<string, string>
-     */
-=======
->>>>>>> laraxot/dev
     public static function getRatios(): array
     {
         return [
@@ -69,11 +54,7 @@ class Image
     }
 
     /**
-<<<<<<< HEAD
-     * @return array<int, \Filament\Schemas\Components\Component>
-=======
      * @return array<int, Component>
->>>>>>> laraxot/dev
      */
     public static function getFormSchema(): array
     {

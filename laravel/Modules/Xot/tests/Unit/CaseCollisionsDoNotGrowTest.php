@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * Guardia a cricchetto sulle collisioni case-insensitive.
  *
@@ -23,10 +22,6 @@ use function Safe\file_get_contents;
 use function Safe\file_put_contents;
 use function Safe\json_decode;
 
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
 function repoRoot(): string
 {
     return \dirname(__DIR__, 5);
@@ -47,7 +42,7 @@ function collisionGroups(): int
     try {
         /** @var array{identical?: array<mixed>, differing?: array<mixed>} $payload */
         $payload = json_decode($process->getOutput(), true);
-    } catch (\Throwable) {
+    } catch (Throwable) {
         return -1;
     }
 

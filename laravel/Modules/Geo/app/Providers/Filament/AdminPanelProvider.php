@@ -17,11 +17,8 @@ use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 class AdminPanelProvider extends XotBasePanelProvider
 {
     protected string $module = 'Geo';
-<<<<<<< HEAD
 
     #[\Override]
-=======
->>>>>>> laraxot/dev
     public function panel(Panel $panel): Panel
     {
         $panel = parent::panel($panel);

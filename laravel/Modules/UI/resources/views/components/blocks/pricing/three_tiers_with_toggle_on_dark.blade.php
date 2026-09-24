@@ -1,15 +1,7 @@
-<<<<<<< HEAD
-@php
-// UI Blade view — see Modules/UI/docs/wiki.
-@endphp
-
-=======
 <?php
 
 declare(strict_types=1);
-
 ?>
->>>>>>> laraxot/dev
 {{-- Requires js --}}
 <div class="bg-gray-900 py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">

@@ -15,17 +15,17 @@ test('DownloadAttachmentPlaceHolder extends XotBaseTextEntry', function () {
 });
 
 <<<<<<< HEAD
-test('DownloadAttachmentPlaceHolder has setUp method', function (): void {
-        \PHPUnit\Framework\Assert::markTestSkipped('Serve una asserzione di comportamento: method_exists() su una classe nota e\' decidibile staticamente, quindi non prova niente.');
-    });
-
-test('DownloadAttachmentPlaceHolder has generateContent method', function (): void {
-        \PHPUnit\Framework\Assert::markTestSkipped('Serve una asserzione di comportamento: method_exists() su una classe nota e\' decidibile staticamente, quindi non prova niente.');
-    });
-=======
 test('DownloadAttachmentPlaceHolder has setUp method', function () {
 })->todo('Serve una asserzione di comportamento: method_exists() su una classe nota e\' decidibile staticamente, quindi non prova niente.');
 
 test('DownloadAttachmentPlaceHolder has generateContent method', function () {
 })->todo('Serve una asserzione di comportamento: method_exists() su una classe nota e\' decidibile staticamente, quindi non prova niente.');
+=======
+test('DownloadAttachmentPlaceHolder has setUp method', function (): void {
+    Assert::markTestSkipped('Serve una asserzione di comportamento: method_exists() su una classe nota e\' decidibile staticamente, quindi non prova niente.');
+});
+
+test('DownloadAttachmentPlaceHolder has generateContent method', function (): void {
+    Assert::markTestSkipped('Serve una asserzione di comportamento: method_exists() su una classe nota e\' decidibile staticamente, quindi non prova niente.');
+});
 >>>>>>> laraxot/dev

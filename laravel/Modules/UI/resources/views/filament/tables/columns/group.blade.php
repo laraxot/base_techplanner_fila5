@@ -1,9 +1,6 @@
 @php
-<<<<<<< HEAD
-=======
     declare(strict_types=1);
 
->>>>>>> laraxot/dev
     use Filament\Tables\Columns\ColorColumn;
     use Filament\Tables\Columns\IconColumn;
     use Filament\Tables\Columns\ImageColumn;
@@ -67,10 +64,6 @@
                 }
             }
 
-<<<<<<< HEAD
-            // Resolve the label leveraging LangServiceProvider auto translations
-=======
->>>>>>> laraxot/dev
             $rawLabel = $field->getLabel();
 
             if ($rawLabel instanceof \Closure) {

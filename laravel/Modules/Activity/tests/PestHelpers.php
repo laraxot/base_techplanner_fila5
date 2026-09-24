@@ -1,15 +1,9 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 use Modules\Activity\Database\Factories\ActivityFactory;
 use Modules\Activity\Models\Activity;
 use Modules\User\Contracts\UserContract;
-=======
-
-use Modules\Activity\Database\Factories\ActivityFactory;
-use Modules\Activity\Models\Activity;
->>>>>>> laraxot/dev
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 
@@ -25,7 +19,7 @@ use Modules\User\Models\User;
 function activityCreateUser(array $attributes = []): User
 {
     $user = UserFactory::new()->createOne($attributes);
-    assert($user instanceof User);
+    assert($user instanceof UserContract);
 
     return $user;
 }

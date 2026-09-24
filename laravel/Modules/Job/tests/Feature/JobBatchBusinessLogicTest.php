@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Modules\Job\Models\Job;
 use Modules\Job\Models\JobBatch;
 use Modules\Job\Tests\TestCase;
@@ -10,7 +9,7 @@ use PHPUnit\Framework\Assert;
 use function Safe\json_decode;
 use function Safe\json_encode;
 
-uses(\Modules\Job\Tests\TestCase::class);
+uses(TestCase::class);
 
 function uniqueJobBatchId(string $prefix = 'batch'): string
 {

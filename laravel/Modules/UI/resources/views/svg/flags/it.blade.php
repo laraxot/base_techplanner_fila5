@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
 ?>
 <svg xmlns="http://www.w3.org/2000/svg" class="size-5" id="flag-icons-it" viewBox="0 0 640 480">
     <g fill-rule="evenodd" stroke-width="1pt">

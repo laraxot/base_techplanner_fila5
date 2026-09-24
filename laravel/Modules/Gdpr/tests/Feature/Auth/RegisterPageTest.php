@@ -45,11 +45,7 @@ it('can register a new user', function (): void {
         ->call('register')
         ->assertRedirect('/en/home');
 
-<<<<<<< HEAD
     gdprAssertDatabaseHas('users', [
-=======
-    gdprTest()->assertDatabaseHasRow('users', [
->>>>>>> laraxot/dev
         'email' => 'test@example.com',
     ]);
 });

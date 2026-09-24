@@ -21,11 +21,7 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
     /**
      * Ascolta evento di aggiornamento filtri.
      *
-<<<<<<< HEAD
-     * @param array<string, mixed> $filters
-=======
      * @param  array<string, mixed>  $filters
->>>>>>> laraxot/dev
      */
     #[On('filterUpdate')]
     public function updateFilters(array $filters): void
@@ -49,20 +45,4 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
 
         return SafeStringCastAction::cast($record->_id ?? $record->id ?? '');
     }
-<<<<<<< HEAD
-
-    public function getTableSearch(): ?string
-    {
-        $search = $this->tableSearch;
-
-        if (! \is_string($search)) {
-            return null;
-        }
-
-        $search = trim($search);
-
-        return '' !== $search ? $search : null;
-    }
-=======
->>>>>>> laraxot/dev
 }

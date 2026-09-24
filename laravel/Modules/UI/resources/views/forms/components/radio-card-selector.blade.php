@@ -1,15 +1,7 @@
-<<<<<<< HEAD
-@php
-// UI Blade view — see Modules/UI/docs/wiki.
-@endphp
-
-=======
 <?php
 
 declare(strict_types=1);
-
 ?>
->>>>>>> laraxot/dev
 {{-- Radio Card Selector Component --}}
 @php
     $cards = $getCards();

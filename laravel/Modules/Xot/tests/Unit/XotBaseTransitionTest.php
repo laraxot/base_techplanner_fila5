@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
 use Modules\Notify\Datas\RecordNotificationData;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\Xot\States\Transitions\XotBaseTransition;
@@ -47,20 +43,11 @@ describe('XotBaseTransition', function (): void {
     it('can send notifications without errors', function (): void {
         $record = UserFactory::new()->createOne();
 
-<<<<<<< HEAD
-        $transition = new class($record) extends XotBaseTransition {
-            public static string $name = 'test_transition';
-
-            public function sendRecipientNotification(RecordNotificationData $recipient, array $data): void
-            {
-            }
-=======
         $transition = new class($record) extends XotBaseTransition
         {
             public static string $name = 'test_transition';
 
             public function sendRecipientNotification(RecordNotificationData $recipient, array $data): void {}
->>>>>>> laraxot/dev
         };
 
         $transition->sendNotifications();
@@ -75,12 +62,8 @@ describe('XotBaseTransition', function (): void {
     it('returns correct notification recipients structure', function (): void {
         $record = UserFactory::new()->createOne();
 
-<<<<<<< HEAD
-        $transition = new class($record) extends XotBaseTransition {
-=======
         $transition = new class($record) extends XotBaseTransition
         {
->>>>>>> laraxot/dev
             public static string $name = 'test_transition';
         };
 
@@ -99,12 +82,8 @@ describe('XotBaseTransition', function (): void {
     it('processes recipients correctly in sendNotifications', function (): void {
         $record = UserFactory::new()->createOne();
 
-<<<<<<< HEAD
-        $transition = new class($record) extends XotBaseTransition {
-=======
         $transition = new class($record) extends XotBaseTransition
         {
->>>>>>> laraxot/dev
             public static string $name = 'test_mixed_transition';
 
             /**
@@ -117,13 +96,7 @@ describe('XotBaseTransition', function (): void {
                 ];
             }
 
-<<<<<<< HEAD
-            public function sendRecipientNotification(RecordNotificationData $recipient, array $data): void
-            {
-            }
-=======
             public function sendRecipientNotification(RecordNotificationData $recipient, array $data): void {}
->>>>>>> laraxot/dev
         };
 
         $transition->sendNotifications();

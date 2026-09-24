@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 ?>
 <div class="bg-gray-900">
     <div class="px-6 pt-12 lg:px-8 lg:pt-20">

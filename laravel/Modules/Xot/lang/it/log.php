@@ -12,12 +12,9 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
-<<<<<<< HEAD
         'label' => 'log.navigation',
         'icon' => 'log.navigation',
         'sort' => 61,
-=======
->>>>>>> laraxot/dev
     ],
     'fields' => [
         'name' => [
@@ -65,7 +62,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-<<<<<<< HEAD
         'id' => [
             'label' => 'id',
         ],
@@ -99,17 +95,6 @@ return [
         'file-content' => [
             'label' => 'file-content',
         ],
-=======
-        'id' => ['label' => 'id'],
-        'message' => ['label' => 'message'],
-        'level' => ['label' => 'level'],
-        'level_name' => ['label' => 'level_name'],
-        'context' => ['label' => 'context'],
-        'created_at' => ['label' => 'created_at'],
-        'path' => ['label' => 'path', 'placeholder' => 'path', 'helper_text' => 'path', 'description' => 'path'],
-        'content' => ['label' => 'content', 'placeholder' => 'content', 'helper_text' => 'content', 'description' => 'content'],
-        'file-content' => ['label' => 'file-content'],
->>>>>>> laraxot/dev
     ],
     'actions' => [
         'import' => [
@@ -124,7 +109,6 @@ return [
                 'parent_name' => 'Nome area livello superiore',
             ],
         ],
-<<<<<<< HEAD
         'create' => [
             'label' => 'create',
             'icon' => 'create',
@@ -155,13 +139,6 @@ return [
             'icon' => 'logout',
             'label' => 'logout',
         ],
-=======
-        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
-        'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
-        'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
-        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
-        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
->>>>>>> laraxot/dev
     ],
     'label' => 'Log',
     'plural_label' => 'Log (Plurale)',

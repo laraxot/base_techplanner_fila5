@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
 ?>
 {{-- https://flowbite.com/docs/components/carousel/#animation --}}
 <div id="animation-carousel" class="relative w-full" data-carousel="static">

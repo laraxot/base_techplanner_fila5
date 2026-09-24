@@ -23,16 +23,14 @@ class ViewPageContent extends XotBaseViewRecord
         ];
     }
 <<<<<<< HEAD
+=======
 
     /**
      * @return array<string, \Filament\Schemas\Components\Component>
      */
-    #[\Override]
-    protected function getInfolistSchema(): array
     {
         return [];
     }
 
-=======
 >>>>>>> laraxot/dev
 }

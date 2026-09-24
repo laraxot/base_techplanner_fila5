@@ -1,18 +1,10 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
 /**
  * ---.
  */
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> laraxot/dev
 namespace Modules\Xot\Contracts;
 
 use Illuminate\Database\Eloquent\Model;
@@ -55,17 +47,7 @@ interface PassportHasApiTokensContract
     /**
      * Create a new personal access token for the user.
      *
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-     * @param array<int, string> $scopes
-     *                                   =======
-     * @param array<int, string> $scopes
-     *
-     * >>>>>>> laraxot/dev
-=======
-     * @param array<int, string> $scopes
->>>>>>> laraxot/dev
-     *
+     * @param  array<int, string>  $scopes
      * @return PersonalAccessTokenResult<Token>
      */
     public function createToken(string $name, array $scopes = []): PersonalAccessTokenResult;

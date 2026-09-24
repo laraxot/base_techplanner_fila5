@@ -37,18 +37,6 @@ test('Home page has items property', function () {
 });
 
 <<<<<<< HEAD
-test('Home page has mount method', function (): void {
-        \PHPUnit\Framework\Assert::markTestSkipped('Serve una asserzione di comportamento: method_exists() su una classe nota e\' decidibile staticamente, quindi non prova niente.');
-    });
-
-test('Home page has getViewData method', function (): void {
-        \PHPUnit\Framework\Assert::markTestSkipped('Serve una asserzione di comportamento: method_exists() su una classe nota e\' decidibile staticamente, quindi non prova niente.');
-    });
-
-test('Home page has initView method', function (): void {
-        \PHPUnit\Framework\Assert::markTestSkipped('Serve una asserzione di comportamento: method_exists() su una classe nota e\' decidibile staticamente, quindi non prova niente.');
-    });
-=======
 test('Home page has mount method', function () {
 })->todo('Serve una asserzione di comportamento: method_exists() su una classe nota e\' decidibile staticamente, quindi non prova niente.');
 
@@ -57,6 +45,18 @@ test('Home page has getViewData method', function () {
 
 test('Home page has initView method', function () {
 })->todo('Serve una asserzione di comportamento: method_exists() su una classe nota e\' decidibile staticamente, quindi non prova niente.');
+=======
+test('Home page has mount method', function (): void {
+    Assert::markTestSkipped('Serve una asserzione di comportamento: method_exists() su una classe nota e\' decidibile staticamente, quindi non prova niente.');
+});
+
+test('Home page has getViewData method', function (): void {
+    Assert::markTestSkipped('Serve una asserzione di comportamento: method_exists() su una classe nota e\' decidibile staticamente, quindi non prova niente.');
+});
+
+test('Home page has initView method', function (): void {
+    Assert::markTestSkipped('Serve una asserzione di comportamento: method_exists() su una classe nota e\' decidibile staticamente, quindi non prova niente.');
+});
 >>>>>>> laraxot/dev
 
 // Rimosso `test('Home page has url method')`: la closure era vuota e il metodo non

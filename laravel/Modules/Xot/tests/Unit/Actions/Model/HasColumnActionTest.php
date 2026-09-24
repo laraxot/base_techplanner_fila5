@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
 use Modules\Xot\Actions\Model\HasColumnAction;
 use Modules\Xot\Models\BaseModel;
 use Modules\Xot\Tests\TestCase;
@@ -15,12 +11,8 @@ uses(TestCase::class);
 $action = app(HasColumnAction::class);
 
 it('executes without errors', function () use ($action): void {
-<<<<<<< HEAD
-    $model = new class extends BaseModel {
-=======
     $model = new class extends BaseModel
     {
->>>>>>> laraxot/dev
         protected $table = 'users';
     };
 
@@ -33,12 +25,8 @@ it('executes without errors', function () use ($action): void {
 });
 
 it('handles different tables', function () use ($action): void {
-<<<<<<< HEAD
-    $model = new class extends BaseModel {
-=======
     $model = new class extends BaseModel
     {
->>>>>>> laraxot/dev
         protected $table = 'migrations';
     };
 
@@ -51,12 +39,8 @@ it('handles different tables', function () use ($action): void {
 });
 
 it('returns boolean result', function () use ($action): void {
-<<<<<<< HEAD
-    $model = new class extends BaseModel {
-=======
     $model = new class extends BaseModel
     {
->>>>>>> laraxot/dev
         protected $table = 'users';
     };
 

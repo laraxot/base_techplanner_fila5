@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 ?>
-=======
->>>>>>> laraxot/dev
 @php
     use \Illuminate\Support\Js;
 @endphp

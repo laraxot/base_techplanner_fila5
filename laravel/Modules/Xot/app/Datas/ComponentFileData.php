@@ -25,27 +25,7 @@ class ComponentFileData extends Data
     public ?string $ns = null;
 
     /**
-<<<<<<< HEAD
-     * <<<<<<< HEAD.
-     *
-     * @param EloquentCollection<int, object>|Collection<int, object>|array<int, array<array-key, mixed>> $data
-     *                                                                                                          =======
-     * @param EloquentCollection<int, object>|Collection<int, object>|array<int, array<array-key, mixed>> $data
-     *
-     * >>>>>>> laraxot/dev
-     * =======
-     * <<<<<<< HEAD
-     * @param EloquentCollection<int, object>|Collection<int, object>|array<int, array<array-key, mixed>> $data
-     *                                                                                                          =======
-     * @param EloquentCollection<int, object>|Collection<int, object>|array<int, array<array-key, mixed>> $data
-     *
-     * >>>>>>> laraxot/dev
-     *
-     * >>>>>>> .merge_file_3hHL6w
-=======
-     * @param EloquentCollection<int, object>|Collection<int, object>|array<int, array<array-key, mixed>> $data
->>>>>>> laraxot/dev
-     *
+     * @param  EloquentCollection<int, object>|Collection<int, object>|array<int, array<array-key, mixed>>  $data
      * @return DataCollection<int, static>
      */
     public static function collection(EloquentCollection|Collection|array $data): DataCollection

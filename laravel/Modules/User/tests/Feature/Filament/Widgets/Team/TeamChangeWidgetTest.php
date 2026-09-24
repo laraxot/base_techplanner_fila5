@@ -12,11 +12,10 @@ use Modules\User\Http\Livewire\Team\Change;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
-
-use function Pest\Laravel\actingAs;
-
 use PHPUnit\Framework\Assert;
 use Symfony\Component\HttpKernel\Exception\HttpException;
+
+use function Pest\Laravel\actingAs;
 
 uses(TestCase::class);
 
@@ -32,7 +31,7 @@ require_once __DIR__.'/../../../../Support/team-management-helpers.php';
  * fuori dall'Owned File/Module Scope di questa story (TeamFactory.php non e' elencato).
  * Bypass locale scoped a questo file, nessuna migrazione/factory toccata.
  *
- * @param array<string, mixed> $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function teamChangeWidgetCreateTeam(User $owner, array $attributes = []): Team
 {
@@ -91,7 +90,7 @@ describe('TeamChangeWidget mount + render', function (): void {
 
 describe('TeamChangeWidget switchTeam', function (): void {
     test('switching to a team the user belongs to updates current_team_id, fires TeamSwitched, notifies and redirects 303', function (): void {
-        /* @var TestCase $this */
+        /** @var TestCase $this */
         NotificationFacade::fake();
         $owner = teamMgmtCreateUser();
         $teamA = teamChangeWidgetCreateTeam($owner, ['name' => 'Team Alpha '.uniqid()]);
@@ -113,7 +112,7 @@ describe('TeamChangeWidget switchTeam', function (): void {
         $team = teamChangeWidgetCreateTeam($owner);
         actingAs($owner);
 
-        $widget = new TeamChangeWidget();
+        $widget = new TeamChangeWidget;
         $widget->mount();
 
         $response = $widget->switchTeam($team->id);
@@ -130,7 +129,7 @@ describe('TeamChangeWidget switchTeam', function (): void {
         $otherOwnerTeam = teamChangeWidgetCreateTeam($stranger);
         actingAs($owner);
 
-        $widget = new TeamChangeWidget();
+        $widget = new TeamChangeWidget;
         $widget->mount();
 
         try {
@@ -151,7 +150,7 @@ describe('TeamChangeWidget switchTeam', function (): void {
         teamChangeWidgetCreateTeam($owner);
         actingAs($owner);
 
-        $widget = new TeamChangeWidget();
+        $widget = new TeamChangeWidget;
         $widget->mount();
 
         try {

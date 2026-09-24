@@ -19,7 +19,6 @@ class ViewDevice extends XotBaseViewRecord
     protected static string $resource = DeviceResource::class;
 
    
-<<<<<<< HEAD
 
     /**
      * @return array<string, \Filament\Schemas\Components\Component>
@@ -29,6 +28,4 @@ class ViewDevice extends XotBaseViewRecord
     {
         return [];
     }
-=======
->>>>>>> laraxot/dev
 }

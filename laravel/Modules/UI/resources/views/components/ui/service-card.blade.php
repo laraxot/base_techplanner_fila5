@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
 ?>
 {{--
     Service Card Component - Card servizio riutilizzabile per servizi comunali/aziendali

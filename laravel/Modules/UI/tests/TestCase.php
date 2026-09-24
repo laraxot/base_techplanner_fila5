@@ -11,20 +11,11 @@ use Mockery\Expectation;
 use Mockery\LegacyMockInterface;
 use Mockery\MockInterface;
 use Modules\UI\Providers\UIServiceProvider;
-<<<<<<< HEAD
-use Modules\UI\Tests\Support\EnsuresUiDatabaseSchema;
 use Modules\User\Models\User;
-=======
-use Modules\Xot\Contracts\UserContract;
->>>>>>> laraxot/dev
 use Modules\User\Providers\UserServiceProvider;
 use Modules\Xot\Tests\XotBaseTestCase;
 
 use function Safe\file_get_contents;
-<<<<<<< HEAD
-=======
-use Modules\User\Models\User;
->>>>>>> laraxot/dev
 
 /**
  * Base test case for UI module.
@@ -35,10 +26,6 @@ use Modules\User\Models\User;
 abstract class TestCase extends XotBaseTestCase
 {
     use DatabaseTransactions;
-<<<<<<< HEAD
-    use EnsuresUiDatabaseSchema;
-=======
->>>>>>> laraxot/dev
 
     /**
      * Restringe il tipo di ritorno unione di shouldReceive() per PHPStan.
@@ -83,11 +70,6 @@ abstract class TestCase extends XotBaseTestCase
 
         config(['auth.providers.users.model' => User::class]);
 
-<<<<<<< HEAD
-        $this->ensureUiSchema();
-
-=======
->>>>>>> laraxot/dev
         if ($this->shouldSkipForMissingUiDb()) {
             $this->markTestSkipped('DB `ui` (themes/categories) non disponibile in ambiente test condiviso.');
         }
@@ -105,11 +87,7 @@ abstract class TestCase extends XotBaseTestCase
 
         $testFile = $this->resolvePestTestFile();
 
-<<<<<<< HEAD
-        if (null !== $testFile && is_file($testFile)) {
-=======
         if ($testFile !== null && is_file($testFile)) {
->>>>>>> laraxot/dev
             $source = file_get_contents($testFile);
             if (str_contains($source, "group('no-ui-db')")) {
                 return false;
@@ -119,11 +97,7 @@ abstract class TestCase extends XotBaseTestCase
             }
         }
 
-<<<<<<< HEAD
-        if (null !== $testFile && str_contains($testFile, '/tests/Unit/')) {
-=======
         if ($testFile !== null && str_contains($testFile, '/tests/Unit/')) {
->>>>>>> laraxot/dev
             return false;
         }
 
@@ -143,11 +117,7 @@ abstract class TestCase extends XotBaseTestCase
 
         $file = (new \ReflectionClass($this))->getFileName();
 
-<<<<<<< HEAD
-        return false !== $file ? $file : null;
-=======
         return $file !== false ? $file : null;
->>>>>>> laraxot/dev
     }
 
     /**
@@ -177,8 +147,4 @@ abstract class TestCase extends XotBaseTestCase
             return true;
         }
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> laraxot/dev

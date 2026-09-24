@@ -34,7 +34,7 @@ class TableLayoutToggleHeaderAction extends XotBaseAction
                     $layoutViewRaw = $livewire->layoutView;
                     $layoutView = is_string($layoutViewRaw) ? $layoutViewRaw : '';
 
-                    return 'list' === $layoutView ? $this->listIcon : $this->gridIcon;
+                    return $layoutView === 'list' ? $this->listIcon : $this->gridIcon;
                 }
 
                 return $this->listIcon; // default icon
@@ -51,7 +51,7 @@ class TableLayoutToggleHeaderAction extends XotBaseAction
                 $layoutViewRaw = $livewire->layoutView;
                 $layoutView = is_string($layoutViewRaw) ? $layoutViewRaw : '';
 
-                $livewire->layoutView = 'grid' === $layoutView ? 'list' : 'grid';
+                $livewire->layoutView = $layoutView === 'grid' ? 'list' : 'grid';
             });
     }
 

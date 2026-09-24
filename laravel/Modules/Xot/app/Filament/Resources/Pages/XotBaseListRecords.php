@@ -31,11 +31,7 @@ use Webmozart\Assert\Assert;
 abstract class XotBaseListRecords extends FilamentListRecords
 {
     /**
-<<<<<<< HEAD
-     * @param array<string, bool|float|int|string|null> $params
-=======
      * @param  array<string, bool|float|int|string|null>  $params
->>>>>>> laraxot/dev
      */
     public static function trans(string $key, array $params = []): string
     {
@@ -62,10 +58,7 @@ abstract class XotBaseListRecords extends FilamentListRecords
     {
         $resource = static::getResource();
         $model = $resource::getModel();
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
         return $model;
     }
 

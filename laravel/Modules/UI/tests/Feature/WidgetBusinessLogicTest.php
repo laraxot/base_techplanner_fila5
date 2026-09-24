@@ -23,26 +23,11 @@ uses(TestCase::class, DatabaseTransactions::class);
 
 function concreteRowWidget(): RowWidget
 {
-<<<<<<< HEAD
-    return new class extends RowWidget {
-    };
-=======
     return new class extends RowWidget {};
->>>>>>> laraxot/dev
 }
 
 it('widgets instantiate and extend filament base', function (): void {
     $widgets = [
-<<<<<<< HEAD
-        new StatWithIconWidget(),
-        new OverlookWidget(),
-        new HeroWidget(),
-        new TestChartWidget(),
-        new StatsOverviewWidget(),
-        new GroupWidget(),
-        new RedirectWidget(),
-        new UserCalendarWidget(),
-=======
         new StatWithIconWidget,
         new OverlookWidget,
         new HeroWidget,
@@ -51,7 +36,6 @@ it('widgets instantiate and extend filament base', function (): void {
         new GroupWidget,
         new RedirectWidget,
         new UserCalendarWidget,
->>>>>>> laraxot/dev
         concreteRowWidget(),
     ];
 
@@ -62,15 +46,9 @@ it('widgets instantiate and extend filament base', function (): void {
 
 it('schema widgets expose empty form schema by default', function (): void {
     $widgets = [
-<<<<<<< HEAD
-        new StatWithIconWidget(),
-        new GroupWidget(),
-        new RedirectWidget(),
-=======
         new StatWithIconWidget,
         new GroupWidget,
         new RedirectWidget,
->>>>>>> laraxot/dev
         concreteRowWidget(),
     ];
 

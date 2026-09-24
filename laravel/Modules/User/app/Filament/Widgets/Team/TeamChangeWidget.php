@@ -8,6 +8,7 @@ use Filament\Facades\Filament;
 use Filament\Notifications\Notification;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\View\View;
+use InvalidArgumentException;
 use Livewire\Features\SupportRedirects\Redirector;
 use Modules\User\Contracts\HasTeamsContract;
 use Modules\User\Contracts\TeamContract;
@@ -39,7 +40,7 @@ class TeamChangeWidget extends XotBaseWidget
         Assert::notNull($authUser, '['.__LINE__.']['.class_basename($this).']');
 
         if (! $authUser instanceof UserContract || ! $authUser instanceof HasTeamsContract) {
-            throw new \InvalidArgumentException('L\'utente deve implementare UserContract e HasTeamsContract');
+            throw new InvalidArgumentException('L\'utente deve implementare UserContract e HasTeamsContract');
         }
 
         $this->user = $authUser;
@@ -99,7 +100,7 @@ class TeamChangeWidget extends XotBaseWidget
         /** @var view-string $viewName */
         $viewName = 'user::filament.widgets.team.change';
 
-        if ([] === $this->teams) {
+        if ($this->teams === []) {
             $viewName = 'ui::livewire.empty';
         }
 

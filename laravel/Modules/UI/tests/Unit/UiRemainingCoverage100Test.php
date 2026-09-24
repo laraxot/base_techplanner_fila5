@@ -26,15 +26,9 @@ use Modules\UI\View\Components\Std;
 use Modules\UI\View\Components\Svg;
 use Modules\Xot\Actions\GetViewAction;
 use PHPUnit\Framework\Assert;
-<<<<<<< HEAD
-
-use function Safe\mkdir;
-=======
 use ReflectionClass;
 
 use function Safe\mkdir;
-use Modules\User\Models\User;
->>>>>>> laraxot/dev
 
 uses(TestCase::class)->group('no-ui-db');
 
@@ -92,13 +86,8 @@ describe('UI remaining 100 — view e actions', function (): void {
         foreach ([
             (new Std('tpl'))->render(),
             (new Svg('tpl'))->render(),
-<<<<<<< HEAD
-            (new Navbar())->render(),
-            (new WithSidebar())->render(),
-=======
             (new Navbar)->render(),
             (new WithSidebar)->render(),
->>>>>>> laraxot/dev
         ] as $view) {
             Assert::assertInstanceOf(View::class, $view);
             Assert::assertSame('ui::empty', $view->name());
@@ -113,11 +102,7 @@ describe('UI remaining 100 — altri componenti', function (): void {
         File::put($tmp.'/sample.svg', '<svg></svg>');
 
         $factory = App::make(IconFactory::class);
-<<<<<<< HEAD
-        $prop = (new \ReflectionClass($factory))->getProperty('sets');
-=======
         $prop = (new ReflectionClass($factory))->getProperty('sets');
->>>>>>> laraxot/dev
         $prop->setAccessible(true);
         $prop->setValue($factory, [
             'test' => ['paths' => [$tmp], 'prefix' => 't'],
@@ -130,11 +115,7 @@ describe('UI remaining 100 — altri componenti', function (): void {
     });
 
     test('GetUserDataAction avatar da profile_photo_path', function (): void {
-<<<<<<< HEAD
-        $user = new UiCoverageAuthUser();
-=======
         $user = new UiCoverageAuthUser;
->>>>>>> laraxot/dev
         $user->forceFill([
             'id' => 5,
             'name' => 'Path User',
@@ -151,15 +132,9 @@ describe('UI remaining 100 — altri componenti', function (): void {
 
 function uiRemainingSetProperty(object $target, string $name, mixed $value): void
 {
-<<<<<<< HEAD
-    $ref = new \ReflectionClass($target);
-
-    while (false !== $ref) {
-=======
     $ref = new ReflectionClass($target);
 
     while ($ref !== false) {
->>>>>>> laraxot/dev
         if ($ref->hasProperty($name)) {
             $prop = $ref->getProperty($name);
             $prop->setAccessible(true);
@@ -176,15 +151,9 @@ function uiRemainingSetProperty(object $target, string $name, mixed $value): voi
 
 function uiRemainingGetProperty(object $target, string $name): mixed
 {
-<<<<<<< HEAD
-    $ref = new \ReflectionClass($target);
-
-    while (false !== $ref) {
-=======
     $ref = new ReflectionClass($target);
 
     while ($ref !== false) {
->>>>>>> laraxot/dev
         if ($ref->hasProperty($name)) {
             $prop = $ref->getProperty($name);
             $prop->setAccessible(true);

@@ -1,9 +1,6 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
 /**
  * The `Blocks` component is responsible for rendering a set of blocks on a view.
  *
@@ -13,12 +10,6 @@ declare(strict_types=1);
  * The `render()` method retrieves the appropriate view based on the `$tpl` parameter, and then
  * passes the `$view`, `$blocks`, and `$model` parameters to the view for rendering.
  */
-
-<<<<<<< HEAD
-
-=======
-declare(strict_types=1);
->>>>>>> laraxot/dev
 
 namespace Modules\UI\View\Components\Render;
 
@@ -30,14 +21,13 @@ use Modules\Xot\Actions\GetViewAction;
 final class Blocks extends Component
 {
     /**
-     * @param array<int|string, mixed> $blocks
+     * @param  array<int|string, mixed>  $blocks
      */
     public function __construct(
         public string $view,
         public array $blocks = [],
         public ?Model $model = null,
-    ) {
-    }
+    ) {}
 
     public function render(): View
     {
@@ -45,20 +35,12 @@ final class Blocks extends Component
          * @phpstan-var view-string
          */
         $view = app(GetViewAction::class)->execute($this->view);
-<<<<<<< HEAD
-        $view_params = [
-=======
         $viewParams = [
->>>>>>> laraxot/dev
             'view' => $view,
             'blocks' => $this->blocks,
             'model' => $this->model,
         ];
 
-<<<<<<< HEAD
-        return view($view, $view_params);
-=======
         return view($view, $viewParams);
->>>>>>> laraxot/dev
     }
 }

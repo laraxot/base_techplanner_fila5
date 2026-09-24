@@ -110,12 +110,9 @@ return [
             'label' => 'Ripristina',
             'tooltip' => 'Ripristina stato precedente',
         ],
-<<<<<<< HEAD
         'logout' => [
             'tooltip' => 'logout',
         ],
-=======
->>>>>>> laraxot/dev
     ],
     'messages' => [
         'no_activities' => 'Nessuna attività trovata',

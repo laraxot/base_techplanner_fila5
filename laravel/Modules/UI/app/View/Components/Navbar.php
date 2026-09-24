@@ -13,9 +13,7 @@ use Modules\Xot\Actions\GetViewAction;
  */
 final class Navbar extends Component
 {
-    public function __construct()
-    {
-    }
+    public function __construct() {}
 
     public function render(): Renderable
     {

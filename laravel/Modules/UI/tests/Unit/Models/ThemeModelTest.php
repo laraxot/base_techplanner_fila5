@@ -31,13 +31,8 @@ beforeEach(function (): void {
 });
 
 describe('Theme Model', function (): void {
-<<<<<<< HEAD
-    test('it can create atheme with valid data', function (): void {
-        /** @phpstan-ignore-next-line class.notFound, method.nonObject (Theme model absent from artifact set) */
-=======
     test('it can create a theme with valid data', function (): void {
         /** @phpstan-ignore-next-line class.notFound, method.nonObject (Theme model absent from artifact set (test skipped at runtime)) */
->>>>>>> laraxot/dev
         $theme = Theme::factory()->createOne([
             'name' => 'Test Theme',
             'is_active' => true,
@@ -78,11 +73,7 @@ describe('Theme Model', function (): void {
 
         /* @phpstan-ignore-next-line property.nonObject (Theme model absent from artifact set) */
         Assert::assertIsArray($theme->config);
-<<<<<<< HEAD
-        /* @phpstan-ignore-next-line property.nonObject, offsetAccess.nonOffsetAccessible (Theme model absent from artifact set) */
-=======
         /* @phpstan-ignore-next-line property.nonObject (Theme model absent from artifact set) */
->>>>>>> laraxot/dev
         Assert::assertSame('#ff0000', $theme->config['primary_color']);
     });
 

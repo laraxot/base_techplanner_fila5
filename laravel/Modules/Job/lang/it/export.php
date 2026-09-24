@@ -35,7 +35,6 @@ return [
         'download' => ['label' => 'Scarica', 'icon' => 'download', 'color' => 'primary', 'tooltip' => 'Scarica il file esportato'],
         'cancel' => ['label' => 'Annulla', 'icon' => 'times', 'color' => 'danger', 'tooltip' => 'Annulla l\'operazione corrente'],
         'delete' => ['label' => 'Elimina', 'icon' => 'trash', 'color' => 'danger', 'tooltip' => 'Elimina l\'esportazione selezionata'],
-<<<<<<< HEAD
         'applyFilters' => ['label' => 'applyFilters', 'icon' => 'applyFilters', 'tooltip' => 'applyFilters'],
         'openFilters' => ['label' => 'openFilters', 'icon' => 'openFilters', 'tooltip' => 'openFilters'],
         'resetFilters' => ['label' => 'resetFilters', 'icon' => 'resetFilters', 'tooltip' => 'resetFilters'],
@@ -45,8 +44,6 @@ return [
         'reorderRecords' => ['label' => 'reorderRecords', 'icon' => 'reorderRecords', 'tooltip' => 'reorderRecords'],
         'profile' => ['label' => 'profile', 'icon' => 'profile', 'tooltip' => 'profile'],
         'logout' => ['label' => 'logout', 'icon' => 'logout', 'tooltip' => 'logout'],
-=======
->>>>>>> laraxot/dev
     ],
     'messages' => ['export_queued' => 'Esportazione in coda', 'export_processing' => 'Esportazione in corso', 'export_completed' => 'Esportazione completata', 'export_failed' => 'Esportazione fallita', 'export_started' => 'Esportazione avviata', 'no_exports' => 'Nessuna esportazione presente', 'file_not_found' => 'File non trovato', 'invalid_format' => 'Formato non valido'],
     'statuses' => ['pending' => 'In Attesa', 'processing' => 'In Elaborazione', 'completed' => 'Completato', 'failed' => 'Fallito', 'downloaded' => 'Scaricato'],

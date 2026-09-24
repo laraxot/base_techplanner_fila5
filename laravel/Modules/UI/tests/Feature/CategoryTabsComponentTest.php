@@ -9,33 +9,20 @@ use Modules\UI\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
-<<<<<<< HEAD
-// Laraxot module file — see docs/wiki for domain contract.
-=======
->>>>>>> laraxot/dev
 
 /**
  * @param  array<string, mixed>  $data
  */
 function renderCategoryTabsHtml(array $data = []): ?string
 {
-<<<<<<< HEAD
-    /** @var view-string $viewName pub_theme namespace is registered at runtime only */
-    $viewName = 'pub_theme::components.blocks.navigation.category-tabs';
-
-    if (! View::exists($viewName)) {
-=======
     if (! View::exists('pub_theme::components.blocks.navigation.category-tabs')) {
->>>>>>> laraxot/dev
         return null;
     }
 
     try {
-<<<<<<< HEAD
-=======
         /** @var view-string $viewName */
         $viewName = 'pub_theme::components.blocks.navigation.category-tabs';
->>>>>>> laraxot/dev
+
         return View::make($viewName, $data)->render();
     } catch (\Throwable) {
         return null;
@@ -43,20 +30,12 @@ function renderCategoryTabsHtml(array $data = []): ?string
 }
 
 /**
-<<<<<<< HEAD
- * @param array<string, mixed> $data
-=======
  * @param  array<string, mixed>  $data
->>>>>>> laraxot/dev
  */
 function requireCategoryTabsHtml(array $data = []): string
 {
     $html = renderCategoryTabsHtml($data);
-<<<<<<< HEAD
-    if (null === $html) {
-=======
     if ($html === null) {
->>>>>>> laraxot/dev
         Assert::markTestSkipped('pub_theme category-tabs view not available in this install.');
     }
 

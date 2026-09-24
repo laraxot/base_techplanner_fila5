@@ -41,10 +41,7 @@ class NotifyThemesTable extends XotBaseResourceTable
             'id' => TextColumn::make('id')->sortable(),
             'lang' => TextColumn::make('lang')->sortable(),
             'type' => TextColumn::make('type')->sortable(),
-<<<<<<< HEAD
             'post_type' => TextColumn::make('post_type')->sortable(),
-=======
->>>>>>> laraxot/dev
             'subject' => TextColumn::make('subject')->searchable()->sortable()->wrap(),
             'theme' => TextColumn::make('theme')->searchable()->sortable(),
             'from_email' => TextColumn::make('from_email')->searchable()->sortable(),

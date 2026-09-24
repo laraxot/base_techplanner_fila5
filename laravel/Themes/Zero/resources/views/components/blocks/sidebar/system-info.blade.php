@@ -1,11 +1,8 @@
-<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
 ?>
-=======
->>>>>>> laraxot/dev
 {{-- System Info Sidebar - Theme Zero (Fallback) --}}
 <div style="background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 4px; padding: 1rem; margin-bottom: 1rem;">
     @if(isset($title))

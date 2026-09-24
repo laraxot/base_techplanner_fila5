@@ -1,10 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://github.com/husam-tariq/filament-database-schedule/blob/v2.0.0/src/Filament/Columns/ActionGroup.php
  */
-
-declare(strict_types=1);
 
 namespace Modules\Job\Filament\Tables\Columns;
 

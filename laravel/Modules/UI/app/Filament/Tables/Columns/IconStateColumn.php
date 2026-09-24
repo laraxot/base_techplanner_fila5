@@ -4,10 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\UI\Filament\Tables\Columns;
 
-<<<<<<< HEAD
-=======
 use Exception;
->>>>>>> laraxot/dev
 use Filament\Actions\Action;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
@@ -47,11 +44,7 @@ class IconStateColumn extends XotBaseIconColumn
                         ->options(function (Model $record, string $_state): array {
                             $name = $this->getName();
                             $state = $record->getAttribute($name);
-<<<<<<< HEAD
-                            if (null === $state) {
-=======
                             if ($state === null) {
->>>>>>> laraxot/dev
                                 if (! method_exists($record, 'getDefaultStateFor')) {
                                     return [];
                                 }
@@ -76,11 +69,7 @@ class IconStateColumn extends XotBaseIconColumn
                             try {
                                 /** @var array<int|string, mixed> $statesArray */
                                 $statesArray = $state->transitionableStates();
-<<<<<<< HEAD
-                            } catch (\Exception $e) {
-=======
                             } catch (Exception $e) {
->>>>>>> laraxot/dev
                                 if (! method_exists($record, 'getStatesFor')) {
                                     return [];
                                 }
@@ -154,11 +143,7 @@ class IconStateColumn extends XotBaseIconColumn
                 ->action(function (Model $record, array $data): void {
                     /** @var array<string, mixed> $data */
                     if (! isset($data['state']) || ! is_string($data['state'])) {
-<<<<<<< HEAD
-                        throw new \Exception('State is required and must be a string');
-=======
                         throw new Exception('State is required and must be a string');
->>>>>>> laraxot/dev
                     }
                     $state = $data['state'];
                     $model = Str::of(class_basename($record))->slug()->toString();
@@ -167,11 +152,7 @@ class IconStateColumn extends XotBaseIconColumn
 
                     $currentState = $record->getAttribute($this->getName());
                     if (! is_object($currentState) || ! method_exists($currentState, 'transitionTo')) {
-<<<<<<< HEAD
-                        throw new \Exception('Current state is not a valid State instance');
-=======
                         throw new Exception('Current state is not a valid State instance');
->>>>>>> laraxot/dev
                     }
 
                     /** @var string|null $message */

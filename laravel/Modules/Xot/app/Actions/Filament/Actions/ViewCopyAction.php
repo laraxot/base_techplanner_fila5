@@ -39,19 +39,8 @@ class ViewCopyAction extends XotBaseAction
     }
 
     /**
-<<<<<<< HEAD
-     * <<<<<<< HEAD.
-     *
-     * @param array<string, mixed> $arguments
-     * @param array<string, mixed> $data
-     *                                        =======
-     * @param array<string, mixed> $arguments
-     * @param array<string, mixed> $data
-     *                                        >>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $arguments
-     * @param array<string, mixed> $data
->>>>>>> laraxot/dev
+     * @param  array<string, mixed>  $arguments
+     * @param  array<string, mixed>  $data
      */
     public function execute(array $arguments, array $data): void
     {

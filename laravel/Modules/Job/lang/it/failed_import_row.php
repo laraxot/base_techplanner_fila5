@@ -62,7 +62,6 @@ return [
             'modal' => ['heading' => 'Pulisci Jobs Falliti', 'description' => 'Sei sicuro di voler eliminare tutti i jobs falliti?'],
             'messages' => ['success' => 'Jobs puliti con successo', 'error' => 'Errore durante la pulizia dei jobs'],
         ],
-<<<<<<< HEAD
         'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
         'applyFilters' => ['label' => 'applyFilters', 'icon' => 'applyFilters', 'tooltip' => 'applyFilters'],
         'openFilters' => ['label' => 'openFilters', 'icon' => 'openFilters', 'tooltip' => 'openFilters'],
@@ -73,8 +72,6 @@ return [
         'reorderRecords' => ['label' => 'reorderRecords', 'icon' => 'reorderRecords', 'tooltip' => 'reorderRecords'],
         'profile' => ['label' => 'profile', 'icon' => 'profile', 'tooltip' => 'profile'],
         'logout' => ['label' => 'logout', 'icon' => 'logout', 'tooltip' => 'logout'],
-=======
->>>>>>> laraxot/dev
     ],
     'messages' => ['no_jobs' => 'Nessun job fallito trovato', 'import_success' => 'Importazione completata con successo', 'import_error' => 'Errore durante l\'importazione', 'row_error' => 'Errore nella riga :row: :error'],
     'status' => ['pending' => 'In attesa', 'processing' => 'In elaborazione', 'failed' => 'Fallito', 'completed' => 'Completato'],

@@ -13,13 +13,12 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Filament\Widgets\Profile\SuperAdminWidget;
 use Modules\User\Models\Role;
 use Modules\User\Models\User;
-use Modules\User\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
+use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
+use PHPUnit\Framework\Assert;
 
 use function Pest\Laravel\actingAs;
-
-use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
@@ -33,9 +32,9 @@ uses(TestCase::class);
 function superAdminWidgetProfileConnectionName(): string
 {
     $profileClass = XotData::make()->getProfileClass();
-    $connection = (new $profileClass())->getConnectionName();
+    $connection = (new $profileClass)->getConnectionName();
 
-    if (is_string($connection) && '' !== $connection) {
+    if (is_string($connection) && $connection !== '') {
         return $connection;
     }
 
@@ -67,7 +66,7 @@ function grantSuperAdminWidgetRole(User $user, string $roleName): void
         ['team_id' => null],
     );
 
-    $role = 'super-admin' === $roleName ? $superAdminRole : $negateSuperAdminRole;
+    $role = $roleName === 'super-admin' ? $superAdminRole : $negateSuperAdminRole;
 
     $user->assignRole($role);
 }
@@ -197,7 +196,7 @@ describe('SuperAdminWidget toggle', function (): void {
         grantSuperAdminWidgetRole($user, 'super-admin');
         actingAs($user);
 
-        $widget = new SuperAdminWidget();
+        $widget = new SuperAdminWidget;
         $widget->mount();
 
         $response = $widget->toggleSuperAdmin();

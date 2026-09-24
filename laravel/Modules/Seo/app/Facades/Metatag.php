@@ -7,11 +7,7 @@ namespace Modules\Seo\Facades;
 use DateTimeInterface;
 use Illuminate\Support\Facades\Facade;
 use Modules\Seo\Adapters\MetatagFacadeAdapter;
-<<<<<<< HEAD
-use Modules\Seo\Data\MetatagData;
-=======
 use Modules\Seo\Datas\MetatagData;
->>>>>>> laraxot/dev
 
 /**
  * @method static MetatagData get()

@@ -15,10 +15,7 @@ return [
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
         'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
         'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
-<<<<<<< HEAD
         'retry_all' => ['label' => 'retry_all', 'icon' => 'retry_all', 'tooltip' => 'retry_all'],
         'delete_all' => ['label' => 'delete_all', 'icon' => 'delete_all', 'tooltip' => 'delete_all'],
-=======
->>>>>>> laraxot/dev
     ],
 ];

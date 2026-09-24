@@ -2,13 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-// UI translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/UI/docs/wiki — domain i18n only.
-// File: lang/en/widgets.php
-=======
->>>>>>> laraxot/dev
 return [
     'dark_mode_switcher' => [
         'toggle_aria_label' => 'Toggle theme',

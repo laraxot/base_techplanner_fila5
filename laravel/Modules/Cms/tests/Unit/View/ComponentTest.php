@@ -28,12 +28,12 @@ test('Metatags can be instantiated', function () {
 });
 
 <<<<<<< HEAD
-test('Page can be instantiated', function (): void {
-        \PHPUnit\Framework\Assert::markTestSkipped('A differenza degli altri componenti, Page vuole uno slug esistente: serve una pagina di fixture, non una istanza nuda.');
-    });
-=======
 test('Page can be instantiated', function () {
 })->todo('A differenza degli altri componenti, Page vuole uno slug esistente: serve una pagina di fixture, non una istanza nuda.');
+=======
+test('Page can be instantiated', function (): void {
+    Assert::markTestSkipped('A differenza degli altri componenti, Page vuole uno slug esistente: serve una pagina di fixture, non una istanza nuda.');
+});
 >>>>>>> laraxot/dev
 
 test('PageContent can be instantiated with slug', function () {

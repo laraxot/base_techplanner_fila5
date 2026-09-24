@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 ?>
-=======
->>>>>>> laraxot/dev
 @extends('activity::layouts.master')
 
 @section('content')

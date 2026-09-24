@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 ?>
 <x-filament::modal on-submit="save" :content-padding="false">
     <x-slot name="title">Add Schedule</x-slot>

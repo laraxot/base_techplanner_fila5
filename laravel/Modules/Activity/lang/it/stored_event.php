@@ -248,12 +248,9 @@ return [
             'confirmation' => 'ATTENZIONE: Vuoi eseguire il replay di tutti gli eventi selezionati? Questa è un\'operazione critica.',
             'requires_permission' => 'events.bulk_replay',
         ],
-<<<<<<< HEAD
         'logout' => [
             'tooltip' => 'logout',
         ],
-=======
->>>>>>> laraxot/dev
     ],
     'messages' => [
         'no_events' => 'Nessun evento trovato',
@@ -286,11 +283,7 @@ return [
                 'label' => 'Excel',
                 'mime_type' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
                 'extension' => 'xlsx',
-<<<<<<< HEAD
                 'icon' => 'xot-files.xlsx',
-=======
-                'icon' => 'heroicon-o-table-cells',
->>>>>>> laraxot/dev
             ],
         ],
         'columns' => [

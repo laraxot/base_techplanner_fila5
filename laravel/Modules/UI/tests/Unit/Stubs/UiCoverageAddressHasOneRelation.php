@@ -26,11 +26,7 @@ final class UiCoverageAddressHasOneRelation extends HasOne
     }
 
     /**
-<<<<<<< HEAD
-     * @param array<int, string>|string $columns
-=======
      * @param  array<int, string>|string  $columns
->>>>>>> laraxot/dev
      */
     public function first($columns = ['*']): ?Model
     {

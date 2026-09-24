@@ -10,77 +10,41 @@ use Illuminate\Testing\TestResponse;
 use Modules\Gdpr\Database\Factories\ConsentFactory;
 use Modules\Gdpr\Models\Consent;
 use Modules\Gdpr\Tests\TestCase;
-<<<<<<< HEAD
-=======
-use Pest\Support\HigherOrderTapProxy;
->>>>>>> laraxot/dev
 use PHPUnit\Framework\Assert;
 
 /**
  * Helper Pest/PHPStan — modulo Gdpr.
  *
-<<<<<<< HEAD
  * HTTP via Pest\Laravel. Skip via Assert::markTestSkipped / gdprSkipTest.
  * assertDatabaseHasRow via gdprAssertDatabaseHas (delega a query DB).
  */
-=======
- * @see Modules/Media/tests/Feature/MediaBusinessLogicTest.php (assertMediaTableHas)
- */
-function gdprTest(): TestCase
-{
-    $test = test();
-    // @phpstan-ignore-next-line HigherOrderTapProxy is a Pest internal class
-    if ($test instanceof HigherOrderTapProxy) {
-        $test = $test->target;
-    }
-
-    Assert::assertInstanceOf(TestCase::class, $test);
-
-    return $test;
-}
->>>>>>> laraxot/dev
 
 /**
- * @param array<string, string> $headers
- *
+ * @param  array<string, string>  $headers
  * @return TestResponse<Response>
  */
 function gdprGet(string $uri, array $headers = []): TestResponse
 {
-<<<<<<< HEAD
     return \Pest\Laravel\get($uri, $headers);
-=======
-    return gdprTest()->get($uri, $headers);
->>>>>>> laraxot/dev
 }
 
 /**
- * @param array<string, mixed>  $data
- * @param array<string, string> $headers
- *
+ * @param  array<string, mixed>  $data
+ * @param  array<string, string>  $headers
  * @return TestResponse<Response>
  */
 function gdprPost(string $uri, array $data = [], array $headers = []): TestResponse
 {
-<<<<<<< HEAD
     return \Pest\Laravel\post($uri, $data, $headers);
 }
 
 function gdprActingAs(Authenticatable $user, ?string $driver = null): void
 {
     \Pest\Laravel\actingAs($user, $driver);
-=======
-    return gdprTest()->post($uri, $data, $headers);
-}
-
-function gdprActingAs(Authenticatable $user, ?string $driver = null): TestCase
-{
-    return gdprTest()->actingAs($user, $driver);
->>>>>>> laraxot/dev
 }
 
 /**
- * @param array<string, mixed> $parameters
+ * @param  array<string, mixed>  $parameters
  */
 function gdprArtisan(string $command, array $parameters = []): int
 {
@@ -89,15 +53,11 @@ function gdprArtisan(string $command, array $parameters = []): int
 
 function gdprSkipTest(string $message = ''): void
 {
-<<<<<<< HEAD
     Assert::markTestSkipped($message !== '' ? $message : 'Skipped');
-=======
-    gdprTest()->markTestSkipped($message);
->>>>>>> laraxot/dev
 }
 
 /**
- * @param array<string, mixed> $where
+ * @param  array<string, mixed>  $where
  */
 function assertGdprTableHas(string $table, array $where, ?string $connection = 'gdpr'): void
 {
@@ -111,7 +71,6 @@ function assertGdprTableHas(string $table, array $where, ?string $connection = '
 }
 
 /**
-<<<<<<< HEAD
  * @param  array<string, mixed>  $data
  */
 function gdprAssertDatabaseHas(string $table, array $data, ?string $connection = null): void
@@ -126,9 +85,6 @@ function gdprAssertDatabaseHas(string $table, array $data, ?string $connection =
 
 /**
  * @param  array<string, mixed>  $where
-=======
- * @param array<string, mixed> $where
->>>>>>> laraxot/dev
  */
 function assertGdprTableMissing(string $table, array $where, ?string $connection = 'gdpr'): void
 {
@@ -142,7 +98,7 @@ function assertGdprTableMissing(string $table, array $where, ?string $connection
 }
 
 /**
- * @param array<string, mixed> $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function createGdprConsent(array $attributes = []): Consent
 {
@@ -159,7 +115,7 @@ function gdprAssertDatabaseAvailable(): void
 }
 
 /**
- * @param class-string<Throwable> $exceptionClass
+ * @param  class-string<Throwable>  $exceptionClass
  */
 function gdprAssertThrows(string $exceptionClass, callable $callback): void
 {
@@ -172,7 +128,7 @@ function gdprAssertThrows(string $exceptionClass, callable $callback): void
 }
 
 /**
- * @param class-string<Throwable> $exceptionClass
+ * @param  class-string<Throwable>  $exceptionClass
  */
 function gdprAssertDoesNotThrow(string $exceptionClass, callable $callback): void
 {
@@ -188,8 +144,8 @@ function gdprAssertDoesNotThrow(string $exceptionClass, callable $callback): voi
 }
 
 /**
- * @param list<string>  $fields
- * @param array<string> $fillable
+ * @param  list<string>  $fields
+ * @param  array<string>  $fillable
  */
 function assertFillableContains(array $fields, array $fillable): void
 {

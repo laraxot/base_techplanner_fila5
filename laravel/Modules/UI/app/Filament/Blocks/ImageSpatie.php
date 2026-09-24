@@ -43,13 +43,8 @@ final class ImageSpatie
                     ->openable()
                     ->downloadable()
                     // ->rules(Rule::dimensions()->maxWidth(600)->maxHeight(800))
-<<<<<<< HEAD
-                    ->collection(fn (Get $get) => $get('img_uuid'))
-                    ->afterStateUpdated(function (
-=======
                     ->collection(static fn (Get $get) => $get('img_uuid'))
                     ->afterStateUpdated(static function (
->>>>>>> laraxot/dev
                         HasForms $_livewire,
                         SpatieMediaLibraryFileUpload $_component,
                         TemporaryUploadedFile $state,
@@ -66,10 +61,6 @@ final class ImageSpatie
                     }),
                 TextInput::make('caption'),
             ])
-<<<<<<< HEAD
-            ->columns('form' === $context ? 2 : 1);
-=======
             ->columns($context === 'form' ? 2 : 1);
->>>>>>> laraxot/dev
     }
 }
