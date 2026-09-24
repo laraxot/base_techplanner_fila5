@@ -79,7 +79,6 @@
 - [avatar-implementation.md](./archive/avatar-implementation.md)
 - [baseuser-refactoring-completed-.md](./archive/baseuser-refactoring-completed-.md)
 - [baseuser-refactoring-completed-1.md](./archive/baseuser-refactoring-completed-1.md)
-<<<<<<< HEAD
 - [baseuser-refactoring-completed-2025-10-15.deprecated.md](./archive/baseuser-refactoring-completed-2025-10-15.deprecated.md)
 - [baseuser-refactoring-completed.md](./archive/baseuser-refactoring-completed.md)
 - [baseuser-refactoring.md](./archive/baseuser-refactoring.md)
@@ -3575,8 +3574,6 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [avatar-implementation.md](./archive/avatar-implementation.md)
 - [baseuser-refactoring-completed-.md](./archive/baseuser-refactoring-completed-.md)
 - [baseuser-refactoring-completed-1.md](./archive/baseuser-refactoring-completed-1.md)
-=======
->>>>>>> laraxot/dev
 - [baseuser-refactoring-completed.deprecated.md](./archive/baseuser-refactoring-completed.deprecated.md)
 - [baseuser-refactoring-completed.md](./archive/baseuser-refactoring-completed.md)
 - [baseuser-refactoring.md](./archive/baseuser-refactoring.md)

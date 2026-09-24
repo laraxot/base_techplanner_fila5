@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Gestione coerente di roles, permissions e guard_name
 
 ## Regola fondamentale
@@ -30,8 +29,6 @@ UPDATE permissions SET guard_name = 'web' WHERE guard_name = '' OR guard_name IS
 
 ## Collegamento regole generali
 Vedi anche: ../../Xot/docs/roles-permissions.md
-=======
->>>>>>> laraxot/dev
 ---
 module: theme
 topic: roles-permissions

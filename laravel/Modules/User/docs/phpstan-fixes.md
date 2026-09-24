@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: "User Module - PHPStan Fixes Session 2025-10-01"
 type: concept
 tags: [phpstan, fixes]
@@ -850,8 +849,6 @@ After applying fixes:
 - All Filament components should extend XotBase classes for consistency
 - Type system improvements enhance code reliability and maintainability 
 ---
-=======
->>>>>>> laraxot/dev
 title: "PHPStan Compliance — User Module"
 type: concept
 tags: [phpstan, fixes]

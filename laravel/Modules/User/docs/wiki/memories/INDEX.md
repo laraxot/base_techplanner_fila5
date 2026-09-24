@@ -36,11 +36,8 @@ Le Memories progettuali vivono qui, nel wiki del Module **User**, e vengono cari
 - Non embeddare Memories nei prompt di avvio
 - Per Memories globali, consulta il [wiki root](../../docs/wiki/memories/index.md)
 
-<<<<<<< HEAD
 - Per Memories globali, consulta il [wiki root](../../docs/wiki/memories/INDEX.md)
 
-=======
->>>>>>> laraxot/dev
 ## Aggiungere una Nuova MEMORIES
 
 1. Crea `../memories/<nome>.md` con contenuto completo

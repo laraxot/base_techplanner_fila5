@@ -1,3 +1,11 @@
+---
+title: "Skills per il Tema Zero"
+type: index
+tags: [theme, zero, readme]
+created: 2026-07-01
+updated: 2026-09-02
+qmd: "zero theme skills per il tema zero"
+---
 # Skills per il Tema Zero
 
 ## Panoramica

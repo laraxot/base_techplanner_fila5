@@ -3,17 +3,15 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Events;
-
+use function Safe\class_uses;
 use Illuminate\Broadcasting\PrivateChannel;
 use Modules\Job\Events\BroadcastingEvent;
 use Modules\Job\Events\TaskEvent;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-
-use function Safe\class_uses;
 use function Safe\file_get_contents;
 
-uses(TestCase::class);
+uses(\Modules\Job\Tests\TestCase::class);
 
 describe('BroadcastingEvent', function () {
     it('extends TaskEvent', function () {

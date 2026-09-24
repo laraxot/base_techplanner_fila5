@@ -66,6 +66,7 @@ Sempre estendere classi astratte con prefisso `XotBase` che rispettano il vecchi
 | ❌ SBAGLIATO | ✅ CORRETTO |
 |-------------|------------|
 | `Filament\Actions\ActionGroup` | `Modules\Xot\Filament\Actions\XotBaseActionGroup` |
+| `Filament\Actions\ExportAction` | `Modules\Xot\Filament\Actions\XotBaseExportAction` |
 
 ### Resources
 
@@ -622,13 +623,9 @@ class UserResource extends XotBaseResource
      * @return array<int|string, \Filament\Schemas\Components\Component>
      */
 <<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
-<<<<<<< HEAD
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [

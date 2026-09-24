@@ -56,8 +56,4 @@ public function getTableColumns(): array
 
 ---
 
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
 **Link bidirezionale:** Aggiornare anche la root docs e la docs di Xot per riferimenti e cross-link.

@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: "User Module - Sprint Planning"
 module: user
 type: integration
@@ -79,8 +78,6 @@ Implement core user authentication system with registration, login, and basic pr
 ---
 
 *Last Updated: March 12, 2026*
-=======
->>>>>>> laraxot/dev
 title: "Sprint Planning: User Auth"
 type: concept
 tags: [sprint, planning]

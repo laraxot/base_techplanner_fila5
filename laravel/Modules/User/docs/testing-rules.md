@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Testing Rules & Strategy
 
 ## Strict Guidelines (Super Mucca / Laraxot)
@@ -142,8 +141,6 @@ Ogni modulo e tema deve documentare:
 4. Errori comuni da evitare
 
 I file di documentazione vanno nelle cartelle `docs/` dentro ogni modulo/tema.
-=======
->>>>>>> laraxot/dev
 ---
 module: theme
 topic: testing-rules

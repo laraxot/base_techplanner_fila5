@@ -158,25 +158,6 @@ $spacers: (
 ## 🔗 Collegamenti
 - [Performance](./standards/performance.md)
 - [Accessibilità](./standards/accessibility.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-- [UI Standards](./standards/ui-standards.md) 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [UI Standards](./standards/ui-standards.md) 
-=======
-=======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [UI Standards](./standards/ui-standards.md) 
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [UI Standards](./standards/ui-standards.md)
 # Componenti Base
 ## 🎨 Design System
@@ -281,28 +262,5 @@ $spacers: (
 ## 🔗 Collegamenti
 - [Performance](./standards/performance.md)
 - [Accessibilità](./standards/accessibility.md)
-<<<<<<< HEAD
 
 ```
-=======
-<<<<<<< HEAD
-
-```
-=======
-- [UI Standards](./standards/ui-standards.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [UI Standards](./standards/ui-standards.md) 
->>>>>>> f6fcbb6f (Fix merge conflict in .gitattributes by removing redundant lines and ensuring proper exclusion of image formats from text processing.)
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> 92912795 (.)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

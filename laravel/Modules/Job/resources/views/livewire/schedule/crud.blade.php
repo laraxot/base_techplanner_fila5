@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 ?>
 <div>
     <div class="uk-flex uk-flex-between uk-flex-middle">

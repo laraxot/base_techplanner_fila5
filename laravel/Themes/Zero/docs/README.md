@@ -8,7 +8,7 @@ Tema alternativo/sperimentale. Hub: [gestionale-docs-index.md](../../docs/gestio
 
 ## Overview
 
-Il tema **Zero** è il tema principale di default per l'applicazione Laraxot PTVX.
+Il tema **Zero** è il tema principale di default per l'applicazione Laraxot.
 
 ## Scopo (business)
 

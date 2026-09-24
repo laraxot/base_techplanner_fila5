@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 title: "Product Requirements Document (PRD)"
 module: "Job"
@@ -13,11 +9,6 @@ qmd: "product requirements"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
-=======
-=======
->>>>>>> af4545e (.)
->>>>>>> laraxot/dev
 # Product Requirements Document (PRD)
 
 ## Metadata

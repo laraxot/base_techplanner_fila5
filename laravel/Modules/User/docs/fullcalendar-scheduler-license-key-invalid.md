@@ -18,8 +18,4 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-=======
- 
->>>>>>> laraxot/dev
  

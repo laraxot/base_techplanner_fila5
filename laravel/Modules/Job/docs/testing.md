@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 title: "Testing Documentation"
 module: "Job"
@@ -13,11 +9,6 @@ qmd: "testing"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
-=======
-=======
->>>>>>> af4545e (.)
->>>>>>> laraxot/dev
 # Testing Documentation
 
 ## Overview

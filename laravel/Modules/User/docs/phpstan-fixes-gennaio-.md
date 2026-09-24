@@ -231,10 +231,6 @@ $subject = Lang::get('user::email.password_reset_subject');
 ## 📚 **Riferimenti**
 
 ### **Documentazione Correlata**
-<<<<<<< HEAD
-=======
-- [README.md Modulo User](./README.md)
->>>>>>> laraxot/dev
 - [README.md Modulo User](./readme.md)
 - [Authentication Guide](./authentication.md)
 - [Best Practices](./best-practices.md)
@@ -251,8 +247,4 @@ $subject = Lang::get('user::email.password_reset_subject');
 **🐛 PHPStan Level**: 9 ✅
 **🌐 Translation Standards**: IT/EN complete ✅
 **🚀 Performance**: 95/100 score
-<<<<<<< HEAD
 **✨ Test Coverage**: 85% ✅
-=======
-**✨ Test Coverage**: 85% ✅
->>>>>>> laraxot/dev

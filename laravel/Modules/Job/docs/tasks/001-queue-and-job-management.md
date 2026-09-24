@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 title: "Task 001: Implement Queue and Job Management System"
 module: "Job"
@@ -13,11 +9,6 @@ qmd: "001 queue and job management"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
-=======
-=======
->>>>>>> af4545e (.)
->>>>>>> laraxot/dev
 # Task 001: Implement Queue and Job Management System
 
 ## Description

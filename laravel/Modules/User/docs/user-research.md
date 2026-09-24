@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: "User Module - User Research"
 module: user
 type: integration
@@ -96,8 +95,6 @@ Users want data control.
 ---
 
 *Last Updated: March 12, 2026*
-=======
->>>>>>> laraxot/dev
 title: "User Research: User Module"
 type: concept
 tags: [user, research]

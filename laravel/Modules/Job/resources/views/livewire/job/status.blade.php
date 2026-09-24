@@ -1,7 +1,3 @@
-<?php
-
-declare(strict_types=1);
-?>
 <div>
     {{-- <x-filament::section></x-filament::section>
     <x-filament::section>

@@ -1,4 +1,0 @@
-# Robots
-
-User-agent: *
-Disallow:

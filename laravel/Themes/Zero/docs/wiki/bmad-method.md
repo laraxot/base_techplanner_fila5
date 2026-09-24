@@ -8,7 +8,6 @@ qmd: "bmad method v63 operativo nel progetto"
 related:
   - "./schema.md"
 
-  - "./SCHEMA.md"
   - "./bmad-method.md"
   - "./log.md"
 ---

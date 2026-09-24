@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 # Laraxot Philosophy - Complete Summary
 
 ## Core Principles
@@ -163,13 +159,9 @@ composer dump-autoload
 ---
 
 **Philosophy Summary**: Laraxot values simplicity, consistency, and predictability above all else. Follow these principles to build maintainable, scalable applications with minimal technical debt.
-<<<<<<< HEAD
 
 ---
 
-=======
-=======
->>>>>>> laraxot/dev
 # Riassunto Filosofia Laraxot - Gennaio 2026
 
 **Data**: 8 Gennaio 2026
@@ -361,7 +353,3 @@ Questo documento rappresenta la sintesi delle conoscenze acquisite attraverso:
 **Ultimo Aggiornamento**: 8 Gennaio 2026
 **Stato**: Documento Vivo - Aggiornare con nuove scoperte
 **Principio**: La documentazione è la memoria viva del sistema
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

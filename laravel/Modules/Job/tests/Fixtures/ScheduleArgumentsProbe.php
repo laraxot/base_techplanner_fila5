@@ -20,15 +20,9 @@ use Modules\Job\Filament\Columns\ScheduleArguments;
  */
 final class ScheduleArgumentsProbe extends ScheduleArguments
 {
-    /**
-     * @var array<int|string, mixed>|string|null
-     */
-    public array|string|null $fakeState = null;
+    public mixed $fakeState = null;
 
-    /**
-     * @return array<int|string, mixed>|string|null
-     */
-    public function getState(): array|string|null
+    public function getState(): mixed
     {
         return $this->fakeState;
     }

@@ -555,7 +555,6 @@ class UserResource extends XotBaseResource
 - [Ottimizzazioni Master](../../../docs/ottimizzazioni-modulari-master.md)
 - [Modulo Xot](../xot/docs/ottimizzazioni-dry-kiss.md)
 
-<<<<<<< HEAD
 ---
 - [Template Standardizzato](../../docs/template-modulo-standardizzato.md)
 - [Ottimizzazioni Master](../../docs/ottimizzazioni-modulari-master.md)
@@ -564,6 +563,3 @@ class UserResource extends XotBaseResource
 ---
 
 *Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS User Module*
-=======
----
->>>>>>> laraxot/dev

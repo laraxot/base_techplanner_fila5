@@ -14,8 +14,5 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan_report.txt
-<<<<<<< HEAD
 
  [OK] No errors        
-=======
->>>>>>> laraxot/dev

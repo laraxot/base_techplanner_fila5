@@ -215,8 +215,4 @@ return [
 **🔄 Ultimo aggiornamento**: 27 Gennaio 2025  
 **📦 Versione**: 3.1.0  
 **🎯 Obiettivo**: Zero ->label() hardcoded  
-<<<<<<< HEAD
 **✅ Status**: Prevenzione attiva e monitorata
-=======
-**✅ Status**: Prevenzione attiva e monitorata
->>>>>>> laraxot/dev

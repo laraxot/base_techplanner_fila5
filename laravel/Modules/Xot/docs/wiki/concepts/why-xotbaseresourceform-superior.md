@@ -35,13 +35,9 @@ class DepartmentForm {
 // TicketForm.php (Our Pattern)
 class TicketForm extends XotBaseResourceForm {
 <<<<<<< HEAD
-    public static function getFormSchema(): array {
-=======
-<<<<<<< HEAD
     public function getFormSchema(): array {
 =======
     public function getFormSchema(): array {
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
         return [
             TextInput::make('name'), // ✅ No label - LangServiceProvider owns it

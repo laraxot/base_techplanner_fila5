@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Errore nel Logout con Volt e Folio
 
 ## Il Problema
@@ -164,8 +163,6 @@ use function Livewire\Volt\{state, mount};
 ---
 
 **Errore risolto: aggiungi `@volt` come prima riga!**
-=======
->>>>>>> laraxot/dev
 ---
 module: theme
 topic: volt-folio-logout-error

@@ -23,12 +23,12 @@ use PHPUnit\Framework\Assert;
 
 function makeEditNotifyThemeTestProxy(): EditNotifyThemeTestProxy
 {
-    return new EditNotifyThemeTestProxy();
+    return new EditNotifyThemeTestProxy;
 }
 
 test('list notification templates page returns empty table columns array', function (): void {
     $reflection = new \ReflectionMethod(ListNotificationTemplates::class, 'getTableColumns');
-    $columns = $reflection->invoke(new ListNotificationTemplates());
+    $columns = $reflection->invoke(new ListNotificationTemplates);
     Assert::assertSame([], $columns);
 });
 
@@ -70,7 +70,7 @@ test('list notify themes columns are configured', function (): void {
 });
 
 test('linkable relation manager exposes text input form schema', function (): void {
-    $manager = new LinkableRelationManager();
+    $manager = new LinkableRelationManager;
     $schema = $manager->getFormSchema();
     Assert::assertNotEmpty($schema);
     Assert::assertInstanceOf(TextInput::class, $schema[0]);

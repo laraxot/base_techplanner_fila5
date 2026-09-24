@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 title: "Job - Sprint Planning Meeting"
 module: "Job"
@@ -13,11 +9,6 @@ qmd: "sprint planning meeting"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
-=======
-=======
->>>>>>> af4545e (.)
->>>>>>> laraxot/dev
 # Job - Sprint Planning Meeting
 
 > Documento operativo per sprint planning. Modulo.

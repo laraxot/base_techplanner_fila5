@@ -21,19 +21,9 @@ related:
 # Analisi dell'Errore negli Eventi di Logout
 
 ## Collegamenti correlati
-<<<<<<< HEAD
 # Analisi dell'Errore negli Eventi di Logout
 
 ## Collegamenti correlati
-=======
-- [Documentazione centrale](/docs/readme.md)
-- [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-- [Implementazione Auth Pages](auth-pages-implementation.md)
-- [Implementazione Logout](logout-blade-implementation-2.md)
-- [Analisi Errore Logout](logout-blade-error-analysis-3.md)
-- [Widget Filament Corretto](logout-filament-widget-corrected-3.md)
-- [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
->>>>>>> laraxot/dev
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](AUTH_PAGES_IMPLEMENTATION.md)
@@ -44,11 +34,7 @@ related:
 
 ## Errore Identificato
 
-<<<<<<< HEAD
 L'implementazione attuale del file `/var/www/html/saluteora/laravel/Themes/One/resources/views/pages/auth/logout.blade.php` causa un errore quando viene eseguito il logout:
-=======
-L'implementazione attuale del file `Themes/One/resources/views/pages/auth/logout.blade.php` causa un errore quando viene eseguito il logout:
->>>>>>> laraxot/dev
 
 ```
 Call to a member function getAuthIdentifier() on null
@@ -104,13 +90,10 @@ try {
     // Dispatch dell'evento prima del logout
     Event::dispatch('auth.logout.attempting', [$user]);
 
-<<<<<<< HEAD
     
     // Dispatch dell'evento prima del logout
     Event::dispatch('auth.logout.attempting', [$user]);
     
-=======
->>>>>>> laraxot/dev
     // Esegui il logout
     Auth::logout();
     request()->session()->invalidate();
@@ -119,13 +102,10 @@ try {
     // Dispatch dell'evento dopo il logout, passando l'utente salvato
     Event::dispatch('auth.logout.successful', [$user]);
 
-<<<<<<< HEAD
     
     // Dispatch dell'evento dopo il logout, passando l'utente salvato
     Event::dispatch('auth.logout.successful', [$user]);
     
-=======
->>>>>>> laraxot/dev
     // Reindirizzamento con localizzazione
     $locale = app()->getLocale();
     return redirect()->to('/' . $locale)
@@ -175,11 +155,7 @@ public function handle(Logout $event): void
                 ]);
             }
         }
-<<<<<<< HEAD
         
-=======
-
->>>>>>> laraxot/dev
         // Resto del codice...
     } catch (\Exception $e) {
         Log::error('Errore durante la gestione dell\'evento di logout', [
@@ -349,8 +325,4 @@ Si raccomanda di implementare l'**Opzione 1** perché:
 2. Evita di modificare il `LogoutListener` che potrebbe essere utilizzato da altre parti dell'applicazione
 3. Garantisce che gli eventi di logout abbiano sempre accesso all'utente che si è disconnesso
 
-<<<<<<< HEAD
 Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier() on null` e garantirà un corretto funzionamento del processo di logout.
-=======
-Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier() on null` e garantirà un corretto funzionamento del processo di logout.
->>>>>>> laraxot/dev

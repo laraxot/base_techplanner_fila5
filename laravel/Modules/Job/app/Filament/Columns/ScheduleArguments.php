@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Columns;
 
-use Illuminate\Support\Collection;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Tables\Columns\XotBaseTextColumn;
 use Webmozart\Assert\Assert;
@@ -59,12 +58,11 @@ class ScheduleArguments extends XotBaseTextColumn
      */
     protected function formatArrayTags(array $tags): array
     {
-        /** @var Collection<int|string, array<array-key, mixed>|bool|float|int|string|null> $collection */
         $collection = collect($tags);
 
         if ($this->withValue) {
             $collection = $collection->filter(
-                static function (array|bool|float|int|string|null $value): bool {
+                static function (mixed $value): bool {
                     if (! is_array($value)) {
                         return false;
                     }
@@ -76,7 +74,7 @@ class ScheduleArguments extends XotBaseTextColumn
 
         return $collection
             ->map(
-                function (array|bool|float|int|string|null $value, int|string $key): string {
+                function (mixed $value, int|string $key): string {
                     if ($this->withValue && is_array($value)) {
                         $name = isset($value['name']) && is_string($value['name'])
                             ? $value['name']

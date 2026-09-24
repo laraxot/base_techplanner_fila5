@@ -9,6 +9,8 @@ use Filament\Actions\ActionGroup;
 use Filament\Actions\BulkAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
+use Filament\Tables;
+use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\BaseFilter;
 use Modules\Job\Filament\Resources\ImportResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -17,6 +19,7 @@ use Override;
 class ListImports extends XotBaseListRecords
 {
     protected static string $resource = ImportResource::class;
+   
 
     /**
      * @return array<string, BaseFilter>

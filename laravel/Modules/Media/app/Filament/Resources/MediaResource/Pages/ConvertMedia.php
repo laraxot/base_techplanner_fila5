@@ -8,6 +8,7 @@ use Filament\Schemas\Components\Component;
 use Modules\Media\Filament\Resources\MediaResource;
 use Modules\Media\Filament\Resources\MediaResource\Schemas\MediaInfolist;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
+use Override;
 
 class ConvertMedia extends XotBaseViewRecord
 {
@@ -16,7 +17,6 @@ class ConvertMedia extends XotBaseViewRecord
     /**
      * @return array<string, Component>
      */
-    #[\Override]
     protected function getInfolistSchema(): array
     {
         return app(MediaInfolist::class)->getInfolistSchema();

@@ -4,7 +4,6 @@ type: concept
 tags: [dry, kiss, analysis]
 created: 2026-07-14
 updated: 2026-07-14
-<<<<<<< HEAD
 qmd: "dry-kiss-analysis- dry & kiss analysis - modulo user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
@@ -152,8 +151,6 @@ type: concept
 tags: [dry, kiss, analysis]
 created: 2026-07-14
 updated: 2026-07-14
-=======
->>>>>>> laraxot/dev
 qmd: "dry-kiss-analysis dry & kiss analysis - modulo user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
@@ -188,19 +185,14 @@ abstract class BaseModel extends XotBaseModel
     protected function casts(): array
     {
         return array_merge(parent::casts(), [
-<<<<<<< HEAD
             'id' => 'string',
             'uuid' => 'string',
             'verified_at' => 'datetime',
-=======
-            'verified_at' => 'datetime',  // Domain-specific
->>>>>>> laraxot/dev
         ]);
     }
 }
 ```
 
-<<<<<<< HEAD
 **Righe:** 12
 **DRY Level:** ✅ 98%
 
@@ -545,8 +537,6 @@ find docs/ -name "*old*" -o -name "*backup*" -o -name "*deprecated*"
 **Overall:** Buona architettura ma troppo complesso
 
 🐄 **MU-UU-UU!** 🐄
-=======
->>>>>>> laraxot/dev
 **Righe:** 12  
 **DRY Level:** ✅ 98%
 

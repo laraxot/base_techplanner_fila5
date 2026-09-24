@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 title: "Struttura del Modulo Job"
 module: "Job"
@@ -13,11 +9,6 @@ qmd: "structure"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
-=======
-=======
->>>>>>> af4545e (.)
->>>>>>> laraxot/dev
 # Struttura del Modulo Job
 
 ## Panoramica
@@ -27,11 +18,7 @@ Il modulo Job è responsabile della gestione dei processi in background e delle 
 
 ```
 Job/
-<<<<<<< HEAD
 ├── config/
-=======
-├── Config/
->>>>>>> laraxot/dev
 │   └── config.php           # Configurazione base del modulo
 ├── Http/
 │   └── Controllers/

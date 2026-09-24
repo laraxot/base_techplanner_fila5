@@ -1,16 +1,22 @@
 ---
-title: "Riepilogo Risoluzione Conflitti Git - Filament 4"
-type: guide
+title: "CONFLICT-RESOLUTION-SUMMARY (deprecated)"
+type: reference
+status: deprecated
 tags: ['filament', 'laravel', 'testing', 'phpstan']
 created: 2026-07-14
-updated: 2026-07-14
-qmd: "riepilogo risoluzione conflitti git - filament 4"
+updated: 2026-09-11
+qmd: "deprecated case-variant of conflict-resolution-summary.md"
 related:
-  - "./00-index.md"
-
-  - "./00-INDEX.md"
-  - "./00-index.md"
+  - "./conflict-resolution-summary.md"
 ---
+
+> Variante `UPPERCASE` non canonica, quasi identica a
+> [conflict-resolution-summary.md](conflict-resolution-summary.md) (canonica,
+> kebab-case). Non era marcata deprecata nonostante le altre 3 varianti
+> (`conflict_resolution_summary.md`, `CONFLICT_RESOLUTION_SUMMARY.md`) lo
+> fossero gia' — corretto 2026-09-11, vedi
+> [stories/docs-theme-zero-audit-2026-09-11.story.md](./stories/docs-theme-zero-audit-2026-09-11.story.md).
+> Contenuto storico lasciato intatto sotto, non cancellato.
 
 # Riepilogo Risoluzione Conflitti Git - Filament 4
 

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # User Module Metrics Dashboard
 
 ## Overview
@@ -71,8 +70,6 @@ gantt
 2. Implement security enhancements
 3. Develop user analytics
 4. Enhance audit logging 
-=======
->>>>>>> laraxot/dev
 ---
 module: theme
 topic: metrics-dashboard

@@ -40,7 +40,7 @@ describe('ScheduleService', function () {
         $filename = $reflection->getFileName();
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
-        Assert::assertStringContainsString('', $content);
+        Assert::assertStringContainsString('declare(strict_types=1);', $content);
     });
 
     it('has correct namespace', function () {

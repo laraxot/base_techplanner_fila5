@@ -11,7 +11,6 @@ related:
 
 # Media redundancy audit 2026-05-21
 
-<<<<<<< HEAD
 Scope: static audit from repo root over module PHP, Blade, and docs.
 
 High-risk findings:
@@ -31,6 +30,3 @@ Suggested cleanup order:
 2. Pick one canonical performance doc and redirect the variants.
 3. Move historical evidence out of forbidden archive paths only under a dedicated docs cleanup issue.
 4. Re-run `php artisan optimize:clear` and Composer autoload checks after any namespace cleanup.
-=======
-Vedi il file canonico: [redundancy-audit.md](./redundancy-audit.md)
->>>>>>> laraxot/dev

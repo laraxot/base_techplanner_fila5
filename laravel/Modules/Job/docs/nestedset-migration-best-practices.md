@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 title: "NestedSet Migration Best Practices - Job Module"
 module: "Job"
@@ -13,11 +9,6 @@ qmd: "nestedset migration best practices"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
-=======
-=======
->>>>>>> af4545e (.)
->>>>>>> laraxot/dev
 # NestedSet Migration Best Practices - Job Module
 
 ## Overview

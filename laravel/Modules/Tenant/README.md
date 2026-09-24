@@ -1,8 +1,5 @@
 ---
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 id: module-tenant-readme
 title: "Tenant — Multi-tenancy e Isolamento Organizzativo"
 type: module-readme
@@ -20,15 +17,12 @@ discussions:
 related:
   - "./docs/"
 sources: []
-<<<<<<< HEAD
-=======
 =======
 title: Tenant
 module: tenant
 related: Xot, User
 status: production
 last_updated: 2026-07-28
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ---
 
@@ -37,14 +31,10 @@ last_updated: 2026-07-28
 <<<<<<< HEAD
 > **Multi-tenancy e isolamento organizzativo.**
 =======
-<<<<<<< HEAD
-> **Multi-tenancy e isolamento organizzativo.**
-=======
 **Module**: `tenant`
 **Namespace**: `Modules\Tenant\`
 **Status**: ✅ Production  
 **Last updated**: 2026-07-28
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 Tenant, domini, configurazione e appartenenza degli utenti.
@@ -52,18 +42,10 @@ Tenant, domini, configurazione e appartenenza degli utenti.
 ## Cosa offre
 
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 - **Identificazione** – tenancy ID e ruoli
 - **Config organizzativa** – impostazioni per entità
 - **Utenti/tenant** – membership e permessi
 - **Isolamento dati**
-<<<<<<< HEAD
-
-## Confini architetturali
-
-=======
 =======
 Il modulo Tenant gestisce la multi-tenancy dell'applicazione in modo completo e robusto. Ogni tenant ha il proprio dominio (o sottodominio), le proprie configurazioni e i propri dati completamente isolati. L'isolamento avviene a livello di connessione database: ogni modulo usa automaticamente la connessione corretta basandosi sul namespace del modello.
 >>>>>>> laraxot/dev
@@ -71,7 +53,6 @@ Il modulo Tenant gestisce la multi-tenancy dell'applicazione in modo completo e 
 ## Confini architetturali
 
 <<<<<<< HEAD
->>>>>>> laraxot/dev
 This module publishes contracts usable by other modules. Logic lives in `Actions`; admin UI follows Laraxot/XotBase.
 
 ## Integrazione rapida
@@ -80,8 +61,6 @@ This module publishes contracts usable by other modules. Logic lives in `Actions
 cd laravel
 php artisan module:list
 ./vendor/bin/phpstan analyse Modules/Tenant
-<<<<<<< HEAD
-=======
 =======
 - **Tenant Isolation**: Complete data separation per tenant via database/schema/scoping strategies
 - **Multi-Domain Support**: Ogni tenant può essere raggiunto da più domini/sottodomini
@@ -108,21 +87,10 @@ php artisan module:list
 # Publish migrations (if needed)
 php artisan migrate
 >>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```
 
 See local docs for integration patterns.
 
-<<<<<<< HEAD
-## Documentazione
-
-The technical map is in [docs/README.md](./docs/README.md).
-
-- [Story BMAD del modulo](./docs/stories/)
-- [Regole del progetto](../../../docs/wiki/)
-- [README del progetto](../../README.md)
-
-=======
 <<<<<<< HEAD
 ## Documentazione
 
@@ -148,7 +116,6 @@ $setting = $tenant->settings['key'] ?? null;
 - [README del progetto../../README.md]
 
 <<<<<<< HEAD
->>>>>>> laraxot/dev
 ## Qualità e manutenzione
 
 Keep `declare(strict_types=1);` in PHP, respect project PHPStan config, and update docs when contracts evolve.
@@ -156,8 +123,6 @@ Keep `declare(strict_types=1);` in PHP, respect project PHPStan config, and upda
 ---
 
 **Modulo** `tenant` · **Laraxot ecosystem** · **Project-agnostic**
-<<<<<<< HEAD
-=======
 =======
 Configuration files:
 - `config/config.php` — Module configuration, navigation, routes, providers
@@ -379,5 +344,4 @@ See [Contributing Guide](../../docs/wiki/how-to/contributing.md) for details.
 ---
 
 Navigation: [Project Home](../../docs/index.md) | [Modules](../../docs/modules/README.md) | [Documentation Index](index.md)
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

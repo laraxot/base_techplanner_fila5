@@ -1,9 +1,10 @@
 <?php
 
-declare(strict_types=1);
 /**
  * @see https://www.freshleafmedia.co.uk/blog/streaming-laravel-command-output-to-the-browser
  */
+
+declare(strict_types=1);
 
 namespace Modules\Job\Filament\Widgets;
 

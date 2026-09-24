@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # FullCalendar Scheduler Documentation - README
 
 ## 🎯 Obiettivo
@@ -226,8 +225,6 @@ Log::info('FullCalendar configured', [
 **Versione FullCalendar**: v6.1.17  
 **Versione Filament**: v3.x  
 **Progetto**: SaluteOra Multi-Tenant Healthcare Platform 
-=======
->>>>>>> laraxot/dev
 ---
 module: theme
 topic: readme-fullcalendar-scheduler

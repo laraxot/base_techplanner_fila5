@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Struttura Navigazione
 
 ## Overview
@@ -143,8 +142,6 @@ Event::dispatch('user.action', [
 - [Header Components](./HEADER_COMPONENTS.md)
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
 - [Session Management](./SESSION_MANAGEMENT.md) 
-=======
->>>>>>> laraxot/dev
 ---
 module: theme
 topic: navigation-structure

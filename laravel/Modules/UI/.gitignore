@@ -212,11 +212,7 @@ phpmd*
 rector.php
 phpmd.ruleset.xml
 phpmd.ruleset.xml.bak
-<<<<<<< HEAD
 graphify-out/
-=======
-graphify-out
->>>>>>> laraxot/dev
 docs/_archive
 
 phpinsights.php

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Errore VoltDirectiveMissingException
 
 ## Descrizione
@@ -31,8 +30,6 @@ Dopo la modifica, rigenerare la cache delle viste:
 ```bash
 php artisan view:clear && php artisan route:clear
 ```
-=======
->>>>>>> laraxot/dev
 ---
 module: theme
 topic: volt-missing-directive

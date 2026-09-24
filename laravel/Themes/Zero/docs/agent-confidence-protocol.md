@@ -15,7 +15,7 @@ related:
 # Massima confidenza agente
 
 Stub DRY. Regola canonica: [../../../../docs/wiki/rules/agent-confidence-protocol.md](../../../../docs/wiki/rules/agent-confidence-protocol.md).
-Stub DRY. Regola canonica: [../../../../../docs/wiki/rules/agent-confidence-protocol.md](../../../../../docs/wiki/rules/agent-confidence-protocol.md).
+Stub DRY. Regola canonica: [../../../../../docs/wiki/rules/agent-confidence-protocol.md](../../../../docs/wiki/rules/agent-confidence-protocol.md).
 Stub DRY. Regola canonica: [../../../../docs/wiki/rules/agent-confidence-protocol.md](../../../../docs/wiki/rules/agent-confidence-protocol.md).
 Stub DRY. Regola canonica: [../../../../../docs/wiki/rules/agent-confidence-protocol.md](../../../../../docs/wiki/rules/agent-confidence-protocol.md).
 

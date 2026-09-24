@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: "PHPStan Corrections Summary - Modulo User"
 type: concept
 tags: [phpstan, corrections, summary]
@@ -288,8 +287,6 @@ return $this->hasAnyPermission($permissions);
 
 *Progresso: 6.8% completato (15/221 errori corretti)*
 ---
-=======
->>>>>>> laraxot/dev
 module: theme
 topic: phpstan-corrections-summary
 canonical: ../../../Themes/docs/shared-components/phpstan-corrections-summary-Modules.md

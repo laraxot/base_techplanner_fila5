@@ -5,11 +5,11 @@ declare(strict_types=1);
 namespace Modules\Notify\Tests\Unit\Factories;
 
 use Modules\Notify\Actions\SMS\SendSmsFactorSMSAction;
-use Modules\Notify\Models\Contracts\SmsActionContract;
 use Modules\Notify\Contracts\TelegramProviderActionInterface;
 use Modules\Notify\Contracts\WhatsAppProviderActionInterface;
 use Modules\Notify\Factories\TelegramActionFactory;
 use Modules\Notify\Factories\WhatsAppActionFactory;
+use Modules\Notify\Models\Contracts\SmsActionContract;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 

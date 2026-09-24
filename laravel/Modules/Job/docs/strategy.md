@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 title: "Product Strategy: Job Module"
 module: "Job"
@@ -13,11 +9,6 @@ qmd: "strategy"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
-=======
-=======
->>>>>>> af4545e (.)
->>>>>>> laraxot/dev
 # Product Strategy: Job Module
 
 ## 🌍 Market Context

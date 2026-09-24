@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 title: "Visione - Job Module"
 module: "Job"
@@ -13,11 +9,6 @@ qmd: "vision"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
-=======
-=======
->>>>>>> af4545e (.)
->>>>>>> laraxot/dev
 # Visione - Job Module
 
 Fornire un'infrastruttura robusta e scalabile per:

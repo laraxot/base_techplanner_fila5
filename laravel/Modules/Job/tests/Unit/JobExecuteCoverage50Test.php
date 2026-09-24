@@ -31,6 +31,8 @@ use Modules\Job\Filament\Resources\JobBatchResource;
 use Modules\Job\Filament\Resources\JobManagerResource;
 use Modules\Job\Filament\Resources\JobResource;
 use Modules\Job\Filament\Resources\JobsWaitingResource;
+use Modules\Job\Filament\Resources\ScheduleResource;
+use Modules\Job\Http\Livewire\Broad;
 use Modules\Job\Http\Requests\ScheduleRequest;
 use Modules\Job\Models\FailedJob;
 use Modules\Job\Models\Job;
@@ -57,6 +59,9 @@ use Modules\User\Models\Team;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 
+use function Safe\ob_get_clean;
+use function Safe\ob_start;
+
 /**
  * Narrows Mockery's shouldReceive() union return type for PHPStan.
  */
@@ -68,10 +73,7 @@ function expectMethod(LegacyMockInterface|MockInterface $mock, string $method): 
     return $expectation;
 }
 
-use function Safe\ob_get_clean;
-use function Safe\ob_start;
-
-uses(TestCase::class)->group('no-job-db');
+uses(\Modules\Job\Tests\TestCase::class)->group('no-job-db');
 
 afterEach(function (): void {
     Mockery::close();
@@ -123,12 +125,11 @@ describe('Job execute coverage — Filament resources', function (): void {
             Assert::assertTrue(class_exists($classe::getModel()));
         }
     });
-
 });
 
 describe('Job execute coverage — policies', function (): void {
     test('JobBasePolicy before apre super-admin e lascia gli altri', function (): void {
-        $policy = new ResultPolicy;
+        $policy = new ResultPolicy();
 
         Assert::assertTrue($policy->before(jobUser(true), 'viewAny'));
         Assert::assertNull($policy->before(jobUser(false), 'viewAny'));
@@ -141,7 +142,7 @@ describe('Job execute coverage — policies', function (): void {
             SchedulePolicy::class,
             TaskPolicy::class,
         ] as $class) {
-            $policy = new $class;
+            $policy = new $class();
             Assert::assertNull($policy->before(jobUser(false), 'update'));
             Assert::assertTrue($policy->before(jobUser(true), 'delete'));
         }
@@ -150,7 +151,7 @@ describe('Job execute coverage — policies', function (): void {
 
 describe('Job execute coverage — Task e notification', function (): void {
     test('compileParameters gestisce null, json e formatter scheduler', function (): void {
-        $task = new Task;
+        $task = new Task();
         Assert::assertSame([], $task->compileParameters());
 
         $task->parameters = json_encode(['env' => true, 'name' => 'foo'], JSON_THROW_ON_ERROR);
@@ -159,7 +160,7 @@ describe('Job execute coverage — Task e notification', function (): void {
     });
 
     test('accessor e routeNotification non toccano il database', function (): void {
-        $task = new Task;
+        $task = new Task();
         $task->is_active = 1;
         $task->notification_email_address = 'a@b.c';
         $task->notification_phone_number = '333';
@@ -177,13 +178,13 @@ describe('Job execute coverage — Task e notification', function (): void {
     test('TaskCompleted via e toMail coprono i canali configurati', function (): void {
         $notification = new TaskCompleted('done');
 
-        $empty = new Task;
+        $empty = new Task();
         $empty->notification_email_address = null;
         $empty->notification_phone_number = null;
         $empty->notification_slack_webhook = '0';
         Assert::assertSame([], $notification->via($empty));
 
-        $full = new Task;
+        $full = new Task();
         $full->description = 'Nightly';
         $full->notification_email_address = 'ops@example.com';
         $full->notification_phone_number = '111';
@@ -195,7 +196,7 @@ describe('Job execute coverage — Task e notification', function (): void {
     });
 
     test('autoCleanup no-op quando num è zero', function (): void {
-        $task = new Task;
+        $task = new Task();
         $task->auto_cleanup_num = 0;
         $task->autoCleanup();
         Assert::assertSame(0, $task->auto_cleanup_num);
@@ -204,10 +205,10 @@ describe('Job execute coverage — Task e notification', function (): void {
 
 describe('Job execute coverage — events request rules columns', function (): void {
     test('eventi di broadcast espongono i canali', function (): void {
-        Assert::assertSame('public', (new PublicEvent)->broadcastOn()->name);
+        Assert::assertSame('public', (new PublicEvent())->broadcastOn()->name);
         Assert::assertStringContainsString('private.', (new PrivateEvent('ciao'))->broadcastOn()->name);
 
-        $task = new Task;
+        $task = new Task();
         $event = new BroadcastingEvent($task);
         Assert::assertStringContainsString('task.events', $event->broadcastOn()->name);
         Assert::assertTrue($event->broadcastWhen());
@@ -224,7 +225,7 @@ describe('Job execute coverage — events request rules columns', function (): v
     });
 
     test('Corn valida espressione cron e rifiuta valori non stringa', function (): void {
-        $rule = new Corn;
+        $rule = new Corn();
         $failed = false;
         $rule->validate('expression', ['not-string'], static function (string $message, ?string $attribute = null) use (&$failed): PotentiallyTranslatedString {
             $failed = true;
@@ -259,12 +260,12 @@ describe('Job execute coverage — events request rules columns', function (): v
 describe('Job execute coverage — actions enums commands livewire', function (): void {
     test('DummyAction e GetCommandsAction eseguono', function (): void {
         ob_start();
-        (new DummyAction)->execute();
+        (new DummyAction())->execute();
         $out = (string) ob_get_clean();
         Assert::assertStringContainsString('hello', $out);
 
         jobBindArtisan();
-        $commands = (new GetCommandsAction)->execute();
+        $commands = (new GetCommandsAction())->execute();
         Assert::assertGreaterThan(0, $commands->count());
     });
 
@@ -277,7 +278,7 @@ describe('Job execute coverage — actions enums commands livewire', function ()
     });
 
     test('FormatSeconds copre giorni ore minuti secondi', function (): void {
-        $probe = new class
+        $probe = new class()
         {
             use FormatSeconds;
         };
@@ -296,25 +297,25 @@ describe('Job execute coverage — actions enums commands livewire', function ()
         $schedule->assertExitCode(0);
     });
 
-    test('Livewire Broad ritirato: classe e vista assenti', function (): void {
-        Assert::assertFalse(class_exists('Modules\\Job\\Http\\Livewire\\Broad', false));
-        Assert::assertFileDoesNotExist(base_path('Modules/Job/app/Http/Livewire/Broad.php'));
-        Assert::assertFileDoesNotExist(base_path('Modules/Job/resources/views/livewire/broad.blade.php'));
+    test('Livewire Broad try flasha sessione senza dd', function (): void {
+        $component = new Broad();
+        $component->try();
+        Assert::assertTrue(session()->has('message'));
     });
 
     test('modelli foglia espongono tabella', function (): void {
-        Assert::assertSame('jobs', (new Job)->getTable());
-        Assert::assertSame('failed_jobs', (new FailedJob)->getTable());
-        Assert::assertSame('job_batches', (new JobBatch)->getTable());
-        Assert::assertSame('schedules', (new Schedule)->getTable());
-        Assert::assertSame('results', (new Result)->getTable());
+        Assert::assertSame('jobs', (new Job())->getTable());
+        Assert::assertSame('failed_jobs', (new FailedJob())->getTable());
+        Assert::assertSame('job_batches', (new JobBatch())->getTable());
+        Assert::assertSame('schedules', (new Schedule())->getTable());
+        Assert::assertSame('results', (new Result())->getTable());
     });
 
     test('policy CRUD con Team e hasPermissionTo', function (): void {
         $user = jobUser(false);
-        $team = new Team;
+        $team = new Team();
 
-        $failed = new FailedJobPolicy;
+        $failed = new FailedJobPolicy();
         Assert::assertFalse($failed->viewAny($user));
         Assert::assertTrue($failed->view($user, $team));
         Assert::assertTrue($failed->create($user));
@@ -324,20 +325,20 @@ describe('Job execute coverage — actions enums commands livewire', function ()
         Assert::assertTrue($failed->removeTeamMember($user, $team));
         Assert::assertTrue($failed->delete($user, $team));
 
-        $jobPolicy = new JobPolicy;
+        $jobPolicy = new JobPolicy();
         Assert::assertFalse($jobPolicy->viewAny($user));
         Assert::assertTrue($jobPolicy->view($user, $team));
         Assert::assertTrue($jobPolicy->create($user));
         Assert::assertFalse($jobPolicy->update($user));
         Assert::assertTrue($jobPolicy->delete($user, $team));
 
-        $batch = new JobBatchPolicy;
+        $batch = new JobBatchPolicy();
         Assert::assertFalse($batch->viewAny($user));
         Assert::assertTrue($batch->create($user));
         Assert::assertFalse($batch->update($user));
 
-        $schedule = new Schedule;
-        $schedulePolicy = new SchedulePolicy;
+        $schedule = new Schedule();
+        $schedulePolicy = new SchedulePolicy();
         Assert::assertTrue($schedulePolicy->viewAny($user));
         Assert::assertTrue($schedulePolicy->view($user, $schedule));
         Assert::assertTrue($schedulePolicy->create($user));
@@ -346,8 +347,8 @@ describe('Job execute coverage — actions enums commands livewire', function ()
         Assert::assertTrue($schedulePolicy->restore($user, $schedule));
         Assert::assertTrue($schedulePolicy->forceDelete($user, $schedule));
 
-        $comment = new TaskComment;
-        $commentPolicy = new TaskCommentPolicy;
+        $comment = new TaskComment();
+        $commentPolicy = new TaskCommentPolicy();
         $commentPolicy->viewAny($user);
         $commentPolicy->view($user, $comment);
         $commentPolicy->create($user);
@@ -356,8 +357,8 @@ describe('Job execute coverage — actions enums commands livewire', function ()
         $commentPolicy->restore($user, $comment);
         $commentPolicy->forceDelete($user, $comment);
 
-        $historyPolicy = new ScheduleHistoryPolicy;
-        $history = new ScheduleHistory;
+        $historyPolicy = new ScheduleHistoryPolicy();
+        $history = new ScheduleHistory();
         foreach (['viewAny', 'create'] as $m) {
             if (method_exists($historyPolicy, $m)) {
                 $historyPolicy->{$m}($user);
@@ -374,27 +375,27 @@ describe('Job execute coverage — actions enums commands livewire', function ()
         $q = Task::query()->sortableBy(['description'], ['description' => 'asc']);
         Assert::assertInstanceOf(Builder::class, $q);
 
-        $job = new Job;
+        $job = new Job();
         $job->setRawAttributes(['reserved_at' => 10, 'payload' => json_encode(['displayName' => 'Foo'], JSON_THROW_ON_ERROR)]);
         Assert::assertSame('running', $job->status);
         Assert::assertSame('Foo', $job->display_name);
 
-        $waiting = new Job;
+        $waiting = new Job();
         $waiting->setRawAttributes(['reserved_at' => null, 'payload' => json_encode(['displayName' => 'Bar'], JSON_THROW_ON_ERROR)]);
         Assert::assertSame('waiting', $waiting->status);
 
-        $result = new Result;
+        $result = new Result();
         Assert::assertInstanceOf(BelongsTo::class, $result->task());
         $result->getLastRun();
         $result->getAverageRunTime();
 
         config(['job::cache.enabled' => false]);
-        $observer = new ScheduleObserver;
+        $observer = new ScheduleObserver();
         $observer->created();
-        $observer->updated(new Schedule);
-        $observer->saved(new Schedule);
+        $observer->updated(new Schedule());
+        $observer->saved(new Schedule());
 
-        $lw = new \Modules\Job\Http\Livewire\Schedule\Status;
+        $lw = new \Modules\Job\Http\Livewire\Schedule\Status();
         Assert::assertCount(0, $lw->getScheduledJobs());
     });
 });

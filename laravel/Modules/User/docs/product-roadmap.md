@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # User Module - Product Roadmap
 
 **Module:** User  
@@ -109,8 +108,6 @@ To build a **comprehensive user management system** that provides secure authent
 ---
 
 *Last Updated: March 12, 2026*
-=======
->>>>>>> laraxot/dev
 ---
 title: "User - Product Roadmap"
 type: concept

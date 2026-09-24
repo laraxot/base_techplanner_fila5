@@ -15,7 +15,6 @@ class ViewLegalRepresentative extends XotBaseViewRecord
     /**
      * @return array<string, \Filament\Schemas\Components\Component>
      */
-    #[\Override]
     protected function getInfolistSchema(): array
     {
         return app(LegalRepresentativeInfolist::class)->getInfolistSchema();

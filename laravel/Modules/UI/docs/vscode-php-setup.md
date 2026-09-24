@@ -133,26 +133,7 @@
             "request": "launch",
             "port": 9003,
             "pathMappings": {
-<<<<<<< HEAD
                 "/ tasks.json
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-                "/ tasks.json
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> f6fcbb6f (Fix merge conflict in .gitattributes by removing redundant lines and ensuring proper exclusion of image formats from text processing.)
->>>>>>> 92912795 (.)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                 "/var/www/html/base_<nome progetto>": "${workspaceFolder}"
             }
         }
@@ -164,27 +145,7 @@
 
 ```json
 // tasks.json
-<<<<<<< HEAD
                 "/ tasks.json
-=======
-<<<<<<< HEAD
-                "/ tasks.json
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-                "/ tasks.json
->>>>>>> laraxot/dev
-=======
->>>>>>> f6fcbb6f (Fix merge conflict in .gitattributes by removing redundant lines and ensuring proper exclusion of image formats from text processing.)
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> 92912795 (.)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 {
     "version": "2.0.0",
     "tasks": [
@@ -280,25 +241,6 @@
 ## Vedi Anche
 - [VSCode Documentation](https://code.visualstudio.com/docs)
 - [PHP Intelephense](https://intelephense.com)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-- [Filament Documentation](https://filamentphp.com/docs) 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Filament Documentation](https://filamentphp.com/docs) 
-=======
-=======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Filament Documentation](https://filamentphp.com/docs) 
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [Filament Documentation](https://filamentphp.com/docs)
 # Configurazione VSCode per PHP e Filament
 ## Estensioni Essenziali
@@ -468,10 +410,6 @@
 - [VSCode Documentation](https://code.visualstudio.com/docs)
 - [PHP Intelephense](https://intelephense.com)
 - [Filament Documentation](https://filamentphp.com/docs)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 # Configurazione VSCode per PHP e Filament
 ## Estensioni Essenziali
 ### 1. PHP
@@ -633,22 +571,3 @@
 - [PHP Intelephense](https://intelephense.com)
 
 ```
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [Filament Documentation](https://filamentphp.com/docs) 
->>>>>>> f6fcbb6f (Fix merge conflict in .gitattributes by removing redundant lines and ensuring proper exclusion of image formats from text processing.)
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> 92912795 (.)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

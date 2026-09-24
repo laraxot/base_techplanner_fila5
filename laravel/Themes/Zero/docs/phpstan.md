@@ -32,7 +32,7 @@ niente `--level`, baseline, esclusioni o `@phpstan-ignore`. I test fanno parte d
 ## Permesso
 
 - Fixare **codice** del tema se un consumer in `Modules/` lo analizza
-- PHP del tema: risalire al tipo al boundary; `mixed` non è una scorciatoia — [Xot phpstan-rules](../../../../Modules/Xot/docs/quality/phpstan-rules.md)
+- PHP del tema: risalire al tipo al boundary; `mixed` non è una scorciatoia — [Xot phpstan-rules](../../../Modules/Xot/docs/quality/phpstan-rules.md)
 - Dettaglio storico: [phpstan-level10-analysis.md](./phpstan-level10-analysis.md)
 
 ## Stato e prove
@@ -48,7 +48,7 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "phpstan configuration - theme zero"
 related:
-  - "./00-INDEX.md"
+  - "./00-index.md"
   - "./00-index.md"
 ---
 

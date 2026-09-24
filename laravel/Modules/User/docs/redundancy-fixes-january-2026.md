@@ -134,12 +134,8 @@ Prima di committare, verifica:
 - [XotBaseRelationManager Documentation](../../Xot/docs/filament/relation-managers.md)
 
 *Ultimo aggiornamento: Gennaio 2026*
-<<<<<<< HEAD
 *Ultimo aggiornamento: Gennaio 2026*
 - [Service Provider Architecture](./service_provider_architecture.md)
 - [XotBaseRelationManager Documentation](../../xot/docs/filament/relation-managers.md)
 
 *Ultimo aggiornamento: Gennaio 2026*
-=======
-*Ultimo aggiornamento: Gennaio 2026*
->>>>>>> laraxot/dev

@@ -1,3 +1,11 @@
+---
+title: "Zero Theme — Mappa Graphify"
+type: guide
+tags: [theme, zero, graphify]
+created: 2026-08-03
+updated: 2026-08-03
+qmd: "zero theme zero theme   mappa graphify"
+---
 # Zero Theme — Mappa Graphify
 
 **Versione:** 1.0.0 | **Tema:** Zero | **Data:** 2026-08-02

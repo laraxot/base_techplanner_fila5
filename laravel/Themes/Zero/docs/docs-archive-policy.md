@@ -14,7 +14,7 @@ Policy globale: [../../../../docs/wiki/concepts/second-brain-continuous-improvem
 `docs/legacy/` è solo scratch locale; non fonte canonica. Vedi [module-docs-deduplication](../../../../docs/wiki/how-to/module-docs-deduplication.md).
 Policy globale: [../../../../../docs/wiki/concepts/second-brain-continuous-improvement.md](../../../../../docs/wiki/concepts/second-brain-continuous-improvement.md).
 
-`docs/legacy/` è solo scratch locale; non fonte canonica. Vedi [module-docs-deduplication](../../../../../docs/wiki/how-to/module-docs-deduplication.md).
+`docs/legacy/` è solo scratch locale; non fonte canonica. Vedi [module-docs-deduplication](../../../../docs/wiki/how-to/module-docs-deduplication.md).
 Policy globale: [../../../../docs/wiki/concepts/second-brain-continuous-improvement.md](../../../../docs/wiki/concepts/second-brain-continuous-improvement.md).
 
 `docs/legacy/` è solo scratch locale; non fonte canonica. Vedi [module-docs-deduplication](../../../../docs/wiki/how-to/module-docs-deduplication.md).
@@ -23,4 +23,4 @@ Policy globale: [../../../../docs/wiki/concepts/second-brain-continuous-improvem
 `docs/legacy/` è solo scratch locale; non fonte canonica. Vedi [module-docs-deduplication](../../../../docs/wiki/how-to/module-docs-deduplication.md).
 Policy globale: [../../../../../docs/wiki/concepts/second-brain-continuous-improvement.md](../../../../../docs/wiki/concepts/second-brain-continuous-improvement.md).
 
-`docs/legacy/` è solo scratch locale; non fonte canonica. Vedi [module-docs-deduplication](../../../../../docs/wiki/how-to/module-docs-deduplication.md).
+`docs/legacy/` è solo scratch locale; non fonte canonica. Vedi [module-docs-deduplication](../../../../docs/wiki/how-to/module-docs-deduplication.md).

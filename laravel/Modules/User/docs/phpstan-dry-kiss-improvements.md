@@ -4,11 +4,7 @@ type: concept
 tags: [phpstan, dry, kiss, improvements]
 created: 2026-07-14
 updated: 2026-07-14
-<<<<<<< HEAD
 qmd: "phpstan-dry-kiss-improvements- phpstan level 10 + dry/kiss improvements - user module"
-=======
-qmd: "phpstan-dry-kiss-improvements phpstan level 10 + dry/kiss improvements - user module"
->>>>>>> laraxot/dev
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -259,8 +255,4 @@ When creating new models in User module:
 ---
 
 *Last Updated: 17 October 2025*
-<<<<<<< HEAD
 *Status: ✅ PHPStan Level 10 Compliant*
-=======
-*Status: ✅ PHPStan Level 10 Compliant*
->>>>>>> laraxot/dev

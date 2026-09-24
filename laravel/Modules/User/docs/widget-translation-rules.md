@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Widget Translation Rules - SaluteOra Project
 # Widget Translation Rules - FixCity Project
 
@@ -349,8 +348,6 @@ This document serves as a reference for:
 - Documentation standards
 
 All widget development should follow these rules to maintain consistency and quality across the SaluteOra project.
-=======
->>>>>>> laraxot/dev
 ---
 module: theme
 topic: widget-translation-rules

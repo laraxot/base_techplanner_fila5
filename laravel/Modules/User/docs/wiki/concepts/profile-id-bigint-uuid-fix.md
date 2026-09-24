@@ -55,7 +55,6 @@ Vedi [WorkOrder profile-schema-ownership](../../../WorkOrder/docs/profile-schema
 php artisan migrate
 # SHOW COLUMNS: id bigint unsigned auto_increment
 ```
-<<<<<<< HEAD
 
 ## Fix restaurant_fila5 (2026-09-04)
 
@@ -85,5 +84,3 @@ Correzioni:
 6. Config `Modules/Cms/app/Config/xra.php` + lowercase duplicato: aggiunto `use Modules\User\Models\User; use Modules\User\Models\Profile;` per `::class` literals
 
 Verifica login funzionante → composer/pint/phpstan green sui file chiave.
-=======
->>>>>>> laraxot/dev

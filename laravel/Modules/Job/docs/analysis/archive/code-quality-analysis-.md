@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "⚙️ Job Module - Code Quality Analysis Report"
 module: "Job"
@@ -10,8 +9,6 @@ qmd: "code quality analysis "
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-=======
->>>>>>> laraxot/dev
 # ⚙️ Job Module - Code Quality Analysis Report
 
 **Date**: 2025-11-11

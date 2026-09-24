@@ -143,7 +143,3 @@ $this->tableCreate(static function (Blueprint $table): void {
 ✅ **Fix implementato e testato**
 ✅ **Migrazione funzionante**
 ✅ **Documentazione aggiornata**
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "User - Filosofia Completa: Logica, Religione, Politica, Zen"
 type: concept
@@ -109,8 +108,6 @@ class Doctor extends User
 {
     use HasParent;
     // Type-specific logic
-=======
->>>>>>> laraxot/dev
 # User Module: Philosophy, Architecture & Zen
 
 > **Identity & Authorization** — Who you are, what you can do, which tenant you belong to. User module is the backbone of Laraxot's security and multi-tenancy.
@@ -423,7 +420,6 @@ class UserResource extends XotBaseResource {
 
 ---
 
-<<<<<<< HEAD
 ## 📜 Religione (Religion)
 
 ### Comandamenti Sacri
@@ -590,8 +586,6 @@ class DoctorScope implements Scope
 ---
 
 **Filosofia**: STI Unity, RBAC Standard, Multi-Tenant Isolation, Identity Foundation
-=======
->>>>>>> laraxot/dev
 ## 8. Summary Card
 
 ```

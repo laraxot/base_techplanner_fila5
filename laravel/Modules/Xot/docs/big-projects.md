@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-https://laraveldaily.com/larger-laravel-projects-12-things-to-take-care-of/
-
-
-
-https://readme.so/it/editor
-=======
->>>>>>> laraxot/dev
 ---
 title: 'big_projects'
 module: Xot
@@ -27,7 +17,3 @@ updated: 2026-08-24
 https://laraveldaily.com/larger-laravel-projects-12-things-to-take-care-of/
 
 https://readme.so/it/editor
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

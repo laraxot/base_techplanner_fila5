@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Filament\Facades\Filament;
 use Illuminate\Support\Facades\Route;
 use Modules\Notify\Tests\Unit\Traits\NotifyRateLimitDummy;
@@ -29,7 +28,7 @@ describe('Notify Traits Coverage', function (): void {
 
             $dummy->reset($key);
             Assert::assertTrue($dummy->shouldSend($key));
-        } catch (Throwable $e) {
+        } catch (\Throwable $e) {
             Assert::markTestSkipped('Rate limiter/cache non disponibile offline: '.$e->getMessage());
         }
     });
@@ -85,7 +84,7 @@ describe('Notify Traits Coverage', function (): void {
             Assert::assertStringContainsString('tenant_id', $dummy->applyForTenantScope($dummy->newQuery())->toSql());
 
             Filament::setTenant(null, isQuiet: true);
-        } catch (Throwable $e) {
+        } catch (\Throwable $e) {
             Assert::markTestSkipped('Tenant/Filament non disponibile offline: '.$e->getMessage());
         }
     });

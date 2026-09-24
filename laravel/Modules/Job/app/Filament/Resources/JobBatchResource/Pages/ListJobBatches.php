@@ -1,9 +1,10 @@
 <?php
 
-declare(strict_types=1);
 /**
  * @see https://gitlab.com/amvisor/filament-failed-jobs/-/blob/master/src/resources/JobBatchesResource/Pages/ListJobBatches.php?ref_type=heads
  */
+
+declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources\JobBatchResource\Pages;
 
@@ -12,14 +13,19 @@ use Filament\Actions\ActionGroup;
 use Filament\Actions\BulkAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Notifications\Notification;
+use Filament\Tables;
+use Filament\Tables\Columns\TextColumn;
 use Illuminate\Support\Facades\Artisan;
 use Modules\Job\Filament\Resources\JobBatchResource;
+use Modules\Job\Models\JobBatch;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Override;
+use Webmozart\Assert\Assert;
 
 class ListJobBatches extends XotBaseListRecords
 {
     protected static string $resource = JobBatchResource::class;
+    
 
     /**
      * @return array<string, Action|ActionGroup>

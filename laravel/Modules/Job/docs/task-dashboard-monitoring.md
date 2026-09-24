@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 title: "Task: Migliorare Dashboard Monitoring - Job"
 module: "Job"
@@ -13,11 +9,6 @@ qmd: "task dashboard monitoring"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
-=======
-=======
->>>>>>> af4545e (.)
->>>>>>> laraxot/dev
 # Task: Migliorare Dashboard Monitoring - Job
 
 **Modulo**: Job

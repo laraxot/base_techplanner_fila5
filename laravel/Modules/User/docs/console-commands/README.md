@@ -57,11 +57,7 @@ Current modules for admin@example.com: User, Xot, UI
 
 Select modules (checked = assigned, unchecked = will be revoked):
  ◉ User
-<<<<<<< HEAD
  ◉ Xot
-=======
- ◉ Xot  
->>>>>>> laraxot/dev
  ◉ UI
  ◯ Performance
  ◯ Patient
@@ -210,7 +206,6 @@ Modules/User/
 
 ## Collegamenti
 - [Console Commands Philosophy](console-commands-philosophy.md)
-<<<<<<< HEAD
 - [User Models](../models/README.md)
 - [Role Management](../models/role-management.md)
 - [Password Management](../password.md)
@@ -486,8 +481,6 @@ Modules/User/
 - [Password Management](../password.md)
 - [README.md](../README.md)
 
-=======
->>>>>>> laraxot/dev
 - [User Models](../models/readme.md)
 - [Role Management](../models/role-management.md)
 - [Password Management](../password.md)
@@ -525,8 +518,4 @@ Modules/User/
 - [ ] Logging strutturato
 - [ ] Metriche di utilizzo
 
-<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-27* 
-=======
-*Ultimo aggiornamento: 2025-01-27* 
->>>>>>> laraxot/dev

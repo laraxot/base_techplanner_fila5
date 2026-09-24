@@ -254,10 +254,7 @@ Secondo le regole di <nome progetto>, si devono utilizzare SEMPRE i componenti B
     required
 >
     <x-filament::input
-<<<<<<< HEAD
     <x-filament::input 
-=======
->>>>>>> laraxot/dev
         type="email"
         id="email"
         name="email"

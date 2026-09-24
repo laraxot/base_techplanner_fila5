@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # PHPStan Roadmap: User Module
 
 **Date**: 2026-01-12
@@ -57,8 +56,6 @@ The **User** module is fully compliant with PHPStan Level 10. No errors were rep
 ## Future Goals
 - Clean up legacy documentation files to reduce clutter.
 - Maintain 0 errors.
-=======
->>>>>>> laraxot/dev
 ---
 module: theme
 topic: phpstan-roadmap

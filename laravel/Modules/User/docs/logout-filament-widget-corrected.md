@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Implementazione Corretta del Logout con Widget Filament
 
 ## Collegamenti correlati
@@ -255,8 +254,6 @@ name('logout');
 ## Alternativa: Logout Immediato
 
 Se non è necessaria una conferma per il logout, è preferibile utilizzare l'approccio "Folio con PHP puro" come descritto in [LOGOUT_BLADE_IMPLEMENTATION.md](LOGOUT_BLADE_IMPLEMENTATION.md), che esegue il logout immediatamente senza richiedere conferma.
-=======
->>>>>>> laraxot/dev
 ---
 module: theme
 topic: logout-filament-widget-corrected

@@ -189,12 +189,9 @@ class NavigationTest extends TestCase
 - [Header Components](./header-components.md)
 - [Navigation Structure](./navigation-structure-2.md)
 - [Security Best Practices](./security_best_practices.md)
-<<<<<<< HEAD
 - [Header Components](./HEADER_COMPONENTS.md)
 - [Navigation Structure](./NAVIGATION_STRUCTURE.md)
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
-=======
->>>>>>> laraxot/dev
 
 ## Timeline
 
@@ -226,8 +223,4 @@ class NavigationTest extends TestCase
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md) 
 - [Header Components](./header-components.md)
 - [Navigation Structure](./navigation-structure-2.md)
-<<<<<<< HEAD
 - [Security Best Practices](./security_best_practices.md) 
-=======
-- [Security Best Practices](./security_best_practices.md) 
->>>>>>> laraxot/dev

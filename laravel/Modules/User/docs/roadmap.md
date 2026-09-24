@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: "User Module - Complete Roadmap 2026"
 type: concept
 tags: [roadmap]
@@ -1022,8 +1021,6 @@ Diventare un identity provider completo (IdP) che supporta standard moderni come
 **Maintainer**: User Module Team
 **Status**: 🚧 In Development (70% completo)
 ---
-=======
->>>>>>> laraxot/dev
 title: "Product Roadmap - User Module"
 type: concept
 tags: [roadmap]

@@ -19,10 +19,7 @@ related:
 ---
 
 # Database Analysis Commands and Tools for app_survey
-<<<<<<< HEAD
 # Database Analysis Commands and Tools for quaeris_survey
-=======
->>>>>>> laraxot/dev
 
 ## Essential Database Queries
 

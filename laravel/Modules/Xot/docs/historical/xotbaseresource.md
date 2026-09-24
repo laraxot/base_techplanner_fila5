@@ -26,13 +26,9 @@ Questo significa che:
 
 ```php
 <<<<<<< HEAD
-abstract public static function getFormSchema(): array;
-=======
-<<<<<<< HEAD
 abstract public function getFormSchema(): array;
 =======
 abstract public function getFormSchema(): array;
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ```
 
@@ -68,13 +64,9 @@ class NotificationResource extends XotBaseResource
     protected static ?string $model = 'Modules\Notify\Models\Notification';
 
 <<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
-<<<<<<< HEAD
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [

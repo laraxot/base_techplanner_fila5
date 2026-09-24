@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 title: "Task: Consolidare Documentazione - Job"
 module: "Job"
@@ -13,11 +9,6 @@ qmd: "task consolidare documentazione"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
-=======
-=======
->>>>>>> af4545e (.)
->>>>>>> laraxot/dev
 # Task: Consolidare Documentazione - Job
 
 **Modulo**: Job

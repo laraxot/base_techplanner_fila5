@@ -1,8 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 title: "Progress"
 module: "Job"
 type: concept
@@ -14,15 +10,3 @@ related:
   - "./phpstan-fixes-archive-2.md"
 ---
 https://philo.dev/laravel-batches-and-real-time-progress-with-livewire/
-<<<<<<< HEAD
-=======
-
-=======
-module: theme
-topic: progress
-canonical: ../../../Themes/docs/shared-components/progress.txt
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/progress.txt
->>>>>>> af4545e (.)
->>>>>>> laraxot/dev

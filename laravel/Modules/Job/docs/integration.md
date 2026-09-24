@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 title: "Integrazione Documentazione"
 module: "Job"
@@ -13,11 +9,6 @@ qmd: "integration"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
-=======
-=======
->>>>>>> af4545e (.)
->>>>>>> laraxot/dev
 # Integrazione Documentazione
 
 ## Documentazione Collegata

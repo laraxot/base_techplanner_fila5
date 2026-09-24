@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 title: "MCP Server Configuration - Job Module"
 module: "Job"
@@ -13,11 +9,6 @@ qmd: "mcp configuration"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
-=======
-=======
->>>>>>> af4545e (.)
->>>>>>> laraxot/dev
 # MCP Server Configuration - Job Module
 
 

@@ -18,7 +18,7 @@ use Spatie\Translatable\HasTranslations;
 /**
  * @property-read list<string> $translatable_columns_from
  * @property-read array<string, mixed> $variables
- * @property-read mixed $translations
+ * @property-read array<string, array<string, mixed>> $translations
  *
  * @method static Builder<static>|MailTemplate forMailable(\Illuminate\Contracts\Mail\Mailable $mailable)
  * @method static Builder<static>|MailTemplate newModelQuery()

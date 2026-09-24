@@ -9,7 +9,6 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\Xot\Datas\XotData;
 use Spatie\QueueableAction\QueueableAction as QueueableActionTrait;
-use Throwable;
 use Webmozart\Assert\Assert;
 
 class AssetAction
@@ -149,7 +148,7 @@ class AssetAction
 
         try {
             $copied = File::copy($from, $to);
-        } catch (Throwable $e) {
+        } catch (\Throwable $e) {
             $this->handleCopyFailure($e, $path, $from, $to);
 
             return;
@@ -171,7 +170,7 @@ class AssetAction
      * If the public dest is already readable, keep serving it.
      * Otherwise rethrow so the caller can fail loudly.
      */
-    private function handleCopyFailure(Throwable $e, string $path, string $from, string $to): void
+    private function handleCopyFailure(\Throwable $e, string $path, string $from, string $to): void
     {
         if (File::exists($to) && File::isReadable($to)) {
             return;

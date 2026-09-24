@@ -1,8 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 title: "Optimization"
 module: "Job"
 type: concept
@@ -14,15 +10,3 @@ related:
   - "./phpstan-fixes-archive-2.md"
 ---
 https://filamentphp.com/community/danharrin-fast-table-pagination
-<<<<<<< HEAD
-=======
-
-=======
-module: theme
-topic: optimization
-canonical: ../../../Themes/docs/shared-components/optimization.txt
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/optimization.txt
->>>>>>> af4545e (.)
->>>>>>> laraxot/dev

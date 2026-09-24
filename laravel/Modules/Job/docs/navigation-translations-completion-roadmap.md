@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 title: "Navigation Translations Completion Roadmap - Job Module"
 module: "Job"
@@ -13,11 +9,6 @@ qmd: "navigation translations completion roadmap"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
-=======
-=======
->>>>>>> af4545e (.)
->>>>>>> laraxot/dev
 # Navigation Translations Completion Roadmap - Job Module
 
 **Modulo**: Job  

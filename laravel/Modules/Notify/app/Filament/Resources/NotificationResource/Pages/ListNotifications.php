@@ -10,7 +10,6 @@ use Filament\Tables\Filters\SelectFilter;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\Notify\Filament\Resources\NotificationResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
-use Override;
 
 class ListNotifications extends XotBaseListRecords
 {
@@ -51,6 +50,7 @@ class ListNotifications extends XotBaseListRecords
                     'error' => 'Error'])
                 ->multiple()];
     }
+
     public function getTableFilters(): array
     {
         return self::notificationTableFilters();

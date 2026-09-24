@@ -380,8 +380,4 @@ class User extends Model
 **Responsabile:** Team User
 **Data:** 2025-01-XX
 **Stato:** In Analisi
-<<<<<<< HEAD
 **Priorità:** CRITICA
-=======
-**Priorità:** CRITICA
->>>>>>> laraxot/dev

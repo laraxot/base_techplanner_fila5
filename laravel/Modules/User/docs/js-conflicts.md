@@ -119,8 +119,4 @@ Dopo la risoluzione, sono state eseguite le seguenti verifiche:
 
 - [Documentazione Modulo User](module_user.md)
 - [Best Practices per la Gestione dei Conflitti Git](../../../../../docs/risoluzione_conflitti_git.md)
-<<<<<<< HEAD
 - [Alpine.js](https://alpinejs.dev/) 
-=======
-- [Alpine.js](https://alpinejs.dev/) 
->>>>>>> laraxot/dev

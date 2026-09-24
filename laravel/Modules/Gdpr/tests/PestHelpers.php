@@ -15,12 +15,22 @@ use PHPUnit\Framework\Assert;
 /**
  * Helper Pest/PHPStan — modulo Gdpr.
  *
- * HTTP via Pest\Laravel. Skip via Assert::markTestSkipped / gdprSkipTest.
- * assertDatabaseHasRow via gdprAssertDatabaseHas (delega a query DB).
+ * @see Modules/Media/tests/Feature/MediaBusinessLogicTest.php (assertMediaTableHas)
  */
+function gdprTest(): TestCase
+{
+    // Stub Pest tipizzano test(): void → non usare il return value.
+    // Stesso pattern Cms: TestCase::$currentTest impostato in setUp().
+    if (TestCase::$currentTest instanceof TestCase) {
+        return TestCase::$currentTest;
+    }
+
+    throw new \RuntimeException('gdprTest() richiede un test attivo (TestCase::$currentTest).');
+}
 
 /**
- * @param  array<string, string>  $headers
+ * @param array<string, string> $headers
+ *
  * @return TestResponse<Response>
  */
 function gdprGet(string $uri, array $headers = []): TestResponse
@@ -122,7 +132,7 @@ function gdprAssertThrows(string $exceptionClass, callable $callback): void
     try {
         $callback();
         Assert::fail('Expected '.$exceptionClass);
-    } catch (Throwable $e) {
+    } catch (\Throwable $e) {
         Assert::assertInstanceOf($exceptionClass, $e);
     }
 }
@@ -134,7 +144,7 @@ function gdprAssertDoesNotThrow(string $exceptionClass, callable $callback): voi
 {
     try {
         $callback();
-    } catch (Throwable $e) {
+    } catch (\Throwable $e) {
         if ($e instanceof $exceptionClass) {
             Assert::fail('Unexpected '.$exceptionClass.': '.$e->getMessage());
         }

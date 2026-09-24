@@ -3,6 +3,7 @@
 
 # -----------------------------------------------------------------------------
 # Root-level forbidden directories
+# -----------------------------------------------------------------------------
 
 bashscripts/
 _bmad-output/
@@ -22,19 +23,25 @@ test-results/
 tests/.claude-audit/
 tests/AuditCoverage/
 
+# -----------------------------------------------------------------------------
 # IDE / AI tools
+# -----------------------------------------------------------------------------
 
 .cursor/
 .vscode/
 .windsurf/
 .agents/
 
+# -----------------------------------------------------------------------------
 # AI / local tooling output
+# -----------------------------------------------------------------------------
 
 graphify-out/
 .headroom/
 
+# -----------------------------------------------------------------------------
 # Logs, caches and temporary files
+# -----------------------------------------------------------------------------
 
 *.log
 *.phar
@@ -51,13 +58,17 @@ logs/
 /cache/
 .git-rewrite/
 
+# -----------------------------------------------------------------------------
 # Environment files
+# -----------------------------------------------------------------------------
 
 .env
 .env.docker
 .env.latest
 
+# -----------------------------------------------------------------------------
 # Dependencies / generated assets
+# -----------------------------------------------------------------------------
 
 vendor/
 node_modules/
@@ -65,11 +76,15 @@ uploads/
 limesurvey/
 build/
 
+# -----------------------------------------------------------------------------
 # Package manager files
+# -----------------------------------------------------------------------------
 
 package-lock.json
 
+# -----------------------------------------------------------------------------
 # Public HTML generated/vendor assets
+# -----------------------------------------------------------------------------
 
 public_html/vendor/
 public_html/js/
@@ -78,7 +93,9 @@ public_html/storage/
 public_html/error_log
 public_html/chart/
 
+# -----------------------------------------------------------------------------
 # Laravel generated / local files
+# -----------------------------------------------------------------------------
 
 laravel/
 laravel/*.lock
@@ -126,21 +143,20 @@ laravel/.phpstorm.meta.php
 laravel/_ide_helper.php
 laravel/_ide_helper_models.php
 
-<<<<<<< HEAD
 # -----------------------------------------------------------------------------
-=======
->>>>>>> laraxot/dev
 # PHP / static analysis / quality tools
+# -----------------------------------------------------------------------------
 
 phpstan*.json
 phpinsights.php
 rector.php
 
+# -----------------------------------------------------------------------------
 # Documentation / generated screenshots
+# -----------------------------------------------------------------------------
 
 docs/screenshots/
 .cursor
-<<<<<<< HEAD
 .devcontainer
 .vscode
 .windsurf
@@ -168,20 +184,10 @@ node_modules/
 .cursor/
 .vscode/
 .windsurf/
-=======
-.vscode
-.windsurf
-public_html/vendor/*
-laravel/stubs
-logs
-public_html/
-# PHPStan output files
->>>>>>> laraxot/dev
 tests/AuditCoverage
 # AI/TOOL SCAFFOLD — must never exist in module tree (see docs/wiki/rules/module-theme-root-cleanup.md)
 
 # Laraxot — IDE folders forbidden at module/theme root (see module-theme-root-hygiene)
-<<<<<<< HEAD
 .devcontainer/
 extras
 tests/AuditCoverage/
@@ -189,11 +195,6 @@ tests/AuditCoverage/
 # Laraxot — quality tool configs forbidden in module/theme root (use laravel/phpinsights.php, laravel/rector.php)
 phpinsights.php
 rector.php
-=======
-extras
-
-# Laraxot — quality tool configs forbidden in module/theme root (use laravel/phpinsights.php, laravel/rector.php)
->>>>>>> laraxot/dev
 docs/graphify/graphify-out/
 .opencode
 

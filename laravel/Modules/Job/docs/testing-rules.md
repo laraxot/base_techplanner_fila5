@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 title: "Testing Rules Summary"
 module: "Job"
@@ -13,11 +9,6 @@ qmd: "testing rules"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
-=======
-=======
->>>>>>> af4545e (.)
->>>>>>> laraxot/dev
 # Testing Rules Summary
 
 ## Regole Fondamentali dei Test

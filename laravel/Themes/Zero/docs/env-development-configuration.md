@@ -6,7 +6,6 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "configurazione envdevelopment - ambiente di sviluppo"
 related:
-  - "./00-INDEX.md"
   - "./00-index.md"
 ---
 
@@ -106,8 +105,8 @@ MAIL_FROM_NAME="${APP_NAME}"
 - **Log Mailer**: Output mail in log per debugging
 - **Array Cache**: Performance ottimizzata per sviluppo rapido
 
-### 3. Compatibilità con Laravel 12.x
-- Configurazione conforme alle best practices Laravel 12.x
+### 3. Compatibilità con Laravel 13.x
+- Configurazione conforme alle best practices Laravel 13.x
 - Variabili d'ambiente ottimizzate per ambiente di sviluppo
 - Supporto completo per tutte le funzionalità di Laravel
 
@@ -216,16 +215,16 @@ DEBUGBAR_ENABLED=true
 LOG_LEVEL=debug
 ```
 
-## Compatibilità con Laravel 12.x
+## Compatibilità con Laravel 13.x
 
 ### ✅ Compatibile
-- Tutte le funzionalità Laravel 12.x
+- Tutte le funzionalità Laravel 13.x
 - Configurazione database SQLite standard
 - Supporto completo per Redis
 - Compatibilità con Filament 5.x
 
 ### 🔄 Configurazioni Automatiche
-- Laravel 12.x riconosce automaticamente SQLite
+- Laravel 13.x riconosce automaticamente SQLite
 - Configurazione Redis ottimizzata
 - Supporto per tutte le funzionalità di sviluppo
 

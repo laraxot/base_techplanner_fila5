@@ -15,6 +15,12 @@ discussions:
 
 # Activity Log — Xot
 
+## [2026-09-24] phpstan | Modules zero dopo sync churn
+
+- `cd laravel && ./vendor/bin/phpstan analyse Modules --memory-limit=-1` → **`[OK] No errors` EXIT 0** (verifica testuale, non JSON).
+- Restore critico: `helpers/Helper.php`, `XotBaseViewRecord::getInfolistSchema()` default `[]`, 29 file `app/` parse-broken da `fe544a49`; `GetComponentsAction` continua su classi non caricabili; `ExecuteComposerDumpAutoloadAction` `use Event` Facade.
+- Causa dominante della sera: `merge_remote_repo_2.sh` reinietta marker/duplicati mentre si analizza.
+
 ## [2026-09-21] phpstan | zero certificato + wiki hygiene
 
 - `phpstan analyse` (senza path CLI) e `analyse Modules` entrambi 0, `totals.file_errors: 0`.

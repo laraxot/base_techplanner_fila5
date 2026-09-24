@@ -61,26 +61,22 @@ class SendPushNotification extends XotBasePage
         /**
          * Callback per mappare i dispositivi in opzioni per il select.
          */
-        $callback = static function (mixed $item): array {
-            if (! is_object($item)) {
-                return [];
-            }
-
+        $callback = static function (DeviceUser $item): array {
             // Relations & attributes in a Laravel-safe way
-            $profile = method_exists($item, 'getRelationValue') ? $item->getRelationValue('profile') : null;
+            $profile = $item->getRelationValue('profile');
             if (! is_object($profile)) {
                 return [];
             }
             $fullNameRaw = data_get($profile, 'full_name');
             $fullName = is_scalar($fullNameRaw) ? (string) $fullNameRaw : 'Utente';
 
-            $tokenAttr = method_exists($item, 'getAttribute') ? $item->getAttribute('push_notifications_token') : null;
+            $tokenAttr = $item->getAttribute('push_notifications_token');
             $token = is_string($tokenAttr) ? $tokenAttr : '';
             if ($token === '' || $token === 'unknown') {
                 return [];
             }
 
-            $device = method_exists($item, 'getRelationValue') ? $item->getRelationValue('device') : null;
+            $device = $item->getRelationValue('device');
             $robotVal = data_get($device, 'robot');
             $robot = is_string($robotVal) ? $robotVal : null;
 
@@ -94,13 +90,8 @@ class SendPushNotification extends XotBasePage
         /**
          * Callback per filtrare i dispositivi.
          */
-        $filterCallback = static function (mixed $item): bool {
-            if (! is_object($item)) {
-                return false;
-            }
-            $profile = method_exists($item, 'getRelationValue') ? $item->getRelationValue('profile') : null;
-
-            return is_object($profile);
+        $filterCallback = static function (DeviceUser $item): bool {
+            return is_object($item->getRelationValue('profile'));
         };
 
         $to = $devices->filter($filterCallback)->mapWithKeys($callback)->toArray();

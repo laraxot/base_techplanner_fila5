@@ -26,7 +26,6 @@ license: project-internal
 
 # Zero — perché esiste
 
-<<<<<<< HEAD
 > **Correzione verificata 2026-09-17, non applicabile a questo repo (`base_restaurant_fila5`)**:
 > questo file descrive un altro checkout dell'ecosistema Laraxot (issue/discussion linkati sotto
 > puntano a `provtv/theme_zero_fila5` e `provtv/base_ptv_fila5`, non a questo repo). Verificato
@@ -46,8 +45,6 @@ license: project-internal
 > Contenuto originale conservato sotto senza modifiche (nessuna cancellazione), per non perdere
 > lo storico — ma va letto come descrizione di un altro progetto, non di `base_restaurant_fila5`.
 
-=======
->>>>>>> laraxot/dev
 ## Lo scopo in una frase
 
 **Zero è il tema che l'applicazione sta effettivamente servendo**: `xra.pub_theme` e
@@ -101,7 +98,6 @@ CONFLICT_RESOLUTION_SUMMARY.md + conflict-resolution-summary.md
 ```
 
 La seconda coppia è una **collisione di case nella root**: su un filesystem
-<<<<<<< HEAD
 ### 2. Igiene della root: una violazione risolta, una resta aperta
 
 ```
@@ -122,8 +118,6 @@ CONFLICT_RESOLUTION_SUMMARY.md + conflict-resolution-summary.md
 ```
 
 La seconda coppia è una **collisione di case nella root**: su un filesystem
-=======
->>>>>>> laraxot/dev
 case-insensitive i due file sono lo stesso file. È la regola
 `case_sensitive_naming_critical`, e in root è più grave che in `docs/` perché la root è
 ciò che si clona.

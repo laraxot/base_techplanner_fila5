@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 title: "Job Module Performance Bottlenecks"
 module: "Job"
@@ -13,11 +9,6 @@ qmd: "bottlenecks"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
-=======
-=======
->>>>>>> af4545e (.)
->>>>>>> laraxot/dev
 # Job Module Performance Bottlenecks
 
 ## Queue Management

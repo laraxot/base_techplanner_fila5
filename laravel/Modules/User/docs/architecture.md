@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: "User Module Architecture"
 type: architecture
 tags: [module, architecture, design]
@@ -117,8 +116,6 @@ For strict coding standards, Filament extension rules, and PHPStan guidelines, p
 3.  **XotBase**: Always extend `XotBase` classes, never Filament classes directly.
 4.  **Translations**: Use `LangServiceProvider` for automatic label resolution.
 ---
-=======
->>>>>>> laraxot/dev
 module: theme
 topic: architecture
 canonical: ../../../Themes/docs/shared-components/architecture-rules-Modules.md

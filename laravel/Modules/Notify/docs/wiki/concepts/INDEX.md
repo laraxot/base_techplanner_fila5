@@ -10,6 +10,10 @@ updated: 2026-06-10
 
 Concetti specifici del modulo Notify. Carica on-demand via `qmd search` o consulta il [trigger map root](/docs/wiki/rules/00-TRIGGER_MAP.md).
 
+## SMS (2026-09-10 / 2026-09-17)
+
+- [sms-channel-driver-selection.md](sms-channel-driver-selection.md) — `SmsChannel`/`SmsActionFactory` scelgono il driver da `config('sms.default')` (env `SMS_DRIVER`); come cambiarlo in produzione senza SSH/FTP via `EnvWidget`
+
 ## Schema notifications (2026-06-10)
 
 - [notifications-database-contract.md](notifications-database-contract.md) — owner migrazione, `XotBaseMigration`, conn `user` via `User\Models\Notification`

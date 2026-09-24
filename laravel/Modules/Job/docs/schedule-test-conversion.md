@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 title: "ScheduleBusinessLogicTest Conversion - PHPUnit to Pest"
 module: "Job"
@@ -13,11 +9,6 @@ qmd: "schedule test conversion"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
-=======
-=======
->>>>>>> af4545e (.)
->>>>>>> laraxot/dev
 # ScheduleBusinessLogicTest Conversion - PHPUnit to Pest
 
 ## Problem

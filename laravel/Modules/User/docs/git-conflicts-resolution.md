@@ -646,8 +646,4 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - [ ] Aggiornare esempi in documentazione
 - [ ] Creare test di regressione per prevenire conflitti futuri
 
-<<<<<<< HEAD
 --- 
-=======
---- 
->>>>>>> laraxot/dev

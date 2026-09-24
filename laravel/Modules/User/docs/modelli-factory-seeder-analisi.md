@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Analisi Modelli, Factory e Seeder - Modulo User
 
 ## Panoramica
@@ -189,8 +188,6 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 
 *Ultimo aggiornamento: Gennaio 2025*
 *Analisi completa di 35+ modelli attivi, sistema completo authentication/authorization*
-=======
->>>>>>> laraxot/dev
 ---
 module: theme
 topic: modelli-factory-seeder-analisi

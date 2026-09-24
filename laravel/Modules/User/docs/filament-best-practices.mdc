@@ -81,8 +81,4 @@ class PasswordExpired extends XotBasePage implements HasForms
 class PasswordExpired extends XotBasePage
 {
 }
-<<<<<<< HEAD
 ```
-=======
-```
->>>>>>> laraxot/dev

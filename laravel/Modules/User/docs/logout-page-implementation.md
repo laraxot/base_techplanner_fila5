@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Implementazione della Pagina di Logout nel Tema One
 
 ## Struttura Corretta
@@ -103,8 +102,6 @@ Il file `logout.blade.php` deve essere implementato come una pagina Folio static
 - [Best Practices Folio](./ROUTING_BEST_PRACTICES.md)
 - [Gestione Sessione](./SESSION_MANAGEMENT.md)
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
-=======
->>>>>>> laraxot/dev
 ---
 module: theme
 topic: logout-page-implementation

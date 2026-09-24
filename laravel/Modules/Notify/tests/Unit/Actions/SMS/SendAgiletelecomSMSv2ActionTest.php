@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Modules\Notify\Tests\Unit\Actions\SMS;
 
 use Modules\Notify\Actions\SMS\SendAgiletelecomSMSv2Action;
-use Modules\Notify\Models\Contracts\SmsActionContract;
 use Modules\Notify\Datas\SmsData;
+use Modules\Notify\Models\Contracts\SmsActionContract;
 use PHPUnit\Framework\Assert;
 use ReflectionClass;
 use ReflectionNamedType;

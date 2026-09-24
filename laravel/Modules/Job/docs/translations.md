@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 title: "Traduzioni del Modulo Job"
 module: "Job"
@@ -13,11 +9,6 @@ qmd: "translations"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
-=======
-=======
->>>>>>> af4545e (.)
->>>>>>> laraxot/dev
 # Traduzioni del Modulo Job
 
 ## Collegamenti

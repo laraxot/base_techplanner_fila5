@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 title: "Copilot Redundancy Audit"
 module: "Job"
@@ -13,11 +9,6 @@ qmd: "copilot redundancy audit"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
-=======
-=======
->>>>>>> af4545e (.)
->>>>>>> laraxot/dev
 Copilot Redundancy Audit — 2026-05-25
 
 Sintesi

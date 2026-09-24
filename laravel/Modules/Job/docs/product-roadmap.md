@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 title: "Job Module - Product Roadmap"
 module: "Job"
@@ -116,15 +112,11 @@ To build a **comprehensive job queue and background processing system** that ens
 ---
 
 *Last Updated: March 12, 2026*
-<<<<<<< HEAD
 
 ---
 
 ## Versione italiana (roadmap con maturita' stimata)
 
-=======
-=======
->>>>>>> laraxot/dev
 # Job - Product Roadmap
 
 > Documento vivente. Modulo.
@@ -171,7 +163,3 @@ Questo roadmap traduce il PRD in sequenza di rilascio per **Job**, che nel proge
 - [Product Strategy](product-strategy.md)
 - [Sprint Planning Meeting](sprint-planning-meeting.md)
 - [Indice centrale](../../../../docs/project/PRODUCT_DOCS_INDEX_2026_03_12.md)
-<<<<<<< HEAD
-=======
->>>>>>> af4545e (.)
->>>>>>> laraxot/dev

@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: "User Module Quality Status"
 type: "quality-report"
 date: 2026-07-08
@@ -220,8 +219,6 @@ After fixes:
 *Status: IN PROGRESS*
 *Priority: CRITICAL*
 ---
-=======
->>>>>>> laraxot/dev
 module: theme
 topic: quality-status
 canonical: ../../../Themes/docs/shared-components/quality-status.md

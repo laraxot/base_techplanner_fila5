@@ -83,8 +83,4 @@ class SocialProvider extends BaseModel
 - **Eliminating Redundancy:** Providing an explicit `$schema` gives Sushi a single source of truth for the in-memory table definition.
 - **Clarity and Correctness:** The fix improves correctness, ensuring that the model's behavior with `Sushi` is <nome progetto>able and free from runtime errors during schema inference.
 
-<<<<<<< HEAD
 This resolution ensures that the `SocialProvider` model can be properly analyzed by static analysis tools and functions as intended within the application.
-=======
-This resolution ensures that the `SocialProvider` model can be properly analyzed by static analysis tools and functions as intended within the application.
->>>>>>> laraxot/dev

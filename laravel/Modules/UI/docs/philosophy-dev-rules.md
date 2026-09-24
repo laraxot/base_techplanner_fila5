@@ -114,13 +114,8 @@ If you think a rule is wrong:
 
 ## See Also
 
-<<<<<<< HEAD
 - `architecture.md` — component organization and Filament patterns
 - `testing.md` — component testing strategies
-=======
-- `ARCHITECTURE.md` — component organization and Filament patterns
-- `TESTING.md` — component testing strategies
->>>>>>> laraxot/dev
 - `docs/filament-patterns.md` — Filament resource best practices
 - `docs/folio-volt-integration.md` — Folio+Volt workflow
 - `docs/theme-system.md` — multi-tenant theming

@@ -1,11 +1,10 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://medium.com/modulr/send-telegram-notifications-with-laravel-9-342cc87b406
  * @see https://laravel-notification-channels.com/telegram/#usage
  */
-
-declare(strict_types=1);
 
 namespace Modules\Notify\Filament\Clusters\Test\Pages;
 

@@ -4,12 +4,13 @@ type: concept
 status: canonical
 module: Notify
 created: 2026-09-10
-updated: 2026-09-11
-tags: [sms, channel, driver, netfun, smsfactor, factory, config, gotcha, contracts, datas]
-qmd: "smschannel sms driver selection factory config sms.default SMS_DRIVER netfun smsfactor SendNetfunSMSAction SmsActionFactory hardcoded regression b8321c567 SmsActionContract Models/Contracts SmsData Spatie LaravelData Data"
+updated: 2026-09-17
+tags: [sms, channel, driver, netfun, smsfactor, factory, config, gotcha, contracts, datas, env-widget, no-ssh]
+qmd: "smschannel sms driver selection factory config sms.default SMS_DRIVER netfun smsfactor SendNetfunSMSAction SmsActionFactory hardcoded regression b8321c567 SmsActionContract Models/Contracts SmsData Spatie LaravelData Data EnvWidget no ssh production"
 related:
   - ./one-migration-consolidamento-wave2.md
   - ../../../../Quaeris/docs/stories/quaeris-send-invite-migrate-to-record-notification.md
+  - ../../../../Xot/docs/wiki/concepts/env-widget-no-ssh-env-editor.md
 ---
 
 # `SmsChannel` sceglie il driver da `config('sms.default')`
@@ -29,6 +30,40 @@ su `Modules\Notify\Channels\SmsChannel`. `SmsChannel`:
 Quindi **`SMS_DRIVER=netfun`** + `config('sms.drivers.netfun')` valorizzato
 (`NETFUN_TOKEN`) fa passare gli SMS — inclusi quelli di invito survey — da
 **Netfun**, senza toccare codice. Default: `smsfactor`.
+
+## Cambiare `SMS_DRIVER` in produzione senza SSH/FTP
+
+Il `.env` di produzione ha già `NETFUN_TOKEN` valorizzato ma non `SMS_DRIVER`
+(vedi [issue module_quaeris_fila5#38](https://github.com/laraxot/module_quaeris_fila5/issues/38)
+e la sezione "Stato dell'invio automatico" nella
+[story quaeris-send-invite-migrate-to-record-notification.md](../../../../Quaeris/docs/stories/quaeris-send-invite-migrate-to-record-notification.md))
+— finché resta assente, `SmsActionFactory` usa il default `smsfactor`, non
+configurato, e l'invio SMS fallisce. Nessun accesso SSH/FTP disponibile su
+quel server per editare il file a mano.
+
+Soluzione (2026-09-17): pagina **Notify → Impostazioni** (`SettingPage`), campo
+"SMS driver" — usa `EnvWidget` (modulo Xot) per scrivere `SMS_DRIVER` dentro
+`.env` direttamente dal pannello admin. Meccanismo generale, come aggiungere
+altre variabili e il passo di `config:cache` successivo (necessario se la
+config è cache-ata in produzione, altrimenti la scrittura su `.env` resta
+invisibile all'app):
+[Xot — env-widget-no-ssh-env-editor](../../../../Xot/docs/wiki/concepts/env-widget-no-ssh-env-editor.md).
+
+Il campo è un `Select` con le sole opzioni mappate in `SmsActionFactory`
+(`smsfactor`/`netfun`/`twilio`/`nexmo`/`plivo`/`gammu`/`agiletelecom`), non un
+testo libero — evita refusi che farebbero fallire l'invio silenziosamente
+fino al primo tentativo reale.
+
+Stessa pagina, campo **"Netfun token"** (`TextInput`, valore libero — il token
+è fornito dal provider, non un enum) per `NETFUN_TOKEN`: serve non solo a
+correggerlo ma soprattutto a **verificare cosa c'è già in produzione** senza
+SSH, dato che il campo arriva pre-compilato col valore corrente del `.env`
+all'apertura della pagina (nessuna azione aggiuntiva richiesta per vederlo).
+
+**Non ancora fatto**: il codice dei campi è stato aggiunto e verificato
+(PHPStan pulito), ma nessuno ha ancora selezionato "Netfun" e salvato sul
+`.env` di produzione — resta il blocco #1 della lista "Manca ancora" nella
+story, in attesa di deploy e di un click dell'utente.
 
 ## `SmsActionFactory`: mappa esplicita, non convenzione
 

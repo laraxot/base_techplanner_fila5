@@ -477,8 +477,4 @@ jobs:
 ---
 
 *User Module Testing - Ensuring reliable and secure user management functionality*
-<<<<<<< HEAD
 *Testing del Modulo User: DRY + KISS + SOLID + ROBUST + LARAXOT*
-=======
-*Testing del Modulo User: DRY + KISS + SOLID + ROBUST + LARAXOT*
->>>>>>> laraxot/dev

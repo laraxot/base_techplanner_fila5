@@ -189,8 +189,4 @@ public function register()
 - [Struttura Directory](./directory-structure-checklist.md) 
 - [Documentazione Volt](./volt-logout-2.md)
 - [Best Practices Routing](./routing-best-practices-2.md)
-<<<<<<< HEAD
 - [Struttura Directory](./directory-structure-checklist.md) 
-=======
-- [Struttura Directory](./directory-structure-checklist.md) 
->>>>>>> laraxot/dev

@@ -34,15 +34,9 @@ related:
 - **[wiki/TenantIdentification.md](./wiki/tenantidentification.md)** — How tenants are identified
 - **[wiki/ConfigurationDistribution.md](./wiki/configurationdistribution.md)** — Config per tenant
 =======
-<<<<<<< HEAD
-- **[wiki/Architecture.md](./wiki/architecture.md)** — Multi-tenant system design
-- **[wiki/TenantIdentification.md](./wiki/tenantidentification.md)** — How tenants are identified
-- **[wiki/ConfigurationDistribution.md](./wiki/configurationdistribution.md)** — Config per tenant
-=======
 - **[wiki/Architecture.md](./wiki/Architecture.md)** — Multi-tenant system design
 - **[wiki/TenantIdentification.md](./wiki/TenantIdentification.md)** — How tenants are identified
 - **[wiki/ConfigurationDistribution.md](./wiki/ConfigurationDistribution.md)** — Config per tenant
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - **[wiki/schema.md](./wiki/schema.md)** — Database schema reference
 

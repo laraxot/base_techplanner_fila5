@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 title: "Fasi di sviluppo - Job Module"
 module: "Job"
@@ -13,11 +9,6 @@ qmd: "phases"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
-=======
-=======
->>>>>>> af4545e (.)
->>>>>>> laraxot/dev
 # Fasi di sviluppo - Job Module
 
 ## Fase 1: Infrastruttura Core (Completata)

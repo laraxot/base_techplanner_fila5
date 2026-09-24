@@ -345,9 +345,6 @@ $this->mock(DomainResolver::class)
 - [Testing Guide](../tests/Feature/README.md)
 - [Contributing Guidelines](./.github/CONTRIBUTING.md)
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 
 ---
 
@@ -604,8 +601,5 @@ Per-tenant configuration files override system defaults, enabling customization 
 - [Troubleshooting](troubleshooting.md)
 - [Best Practices](./BEST_PRACTICES.md)
 - Module Tests: `tests/Feature/TenantBusinessLogicTest.php`, `tests/Unit/Actions/`
-<<<<<<< HEAD
 =======
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

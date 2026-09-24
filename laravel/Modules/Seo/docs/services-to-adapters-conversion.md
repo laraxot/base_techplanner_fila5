@@ -7,24 +7,8 @@ created: 2026-07-16
 updated: 2026-07-16
 related:
   - ../../../laravel/Modules/Xot/docs/wiki/concepts/queueable-action-trait-mandatory.md
-<<<<<<< HEAD
-  - ./wiki/concepts/metatag-data-contract.md
 ---
 
-> **Superseded (2026-09-17):** a later refactor moved the facade accessor again,
-> from `MetatagManager::class` to `MetatagFacadeAdapter::class`, with the
-> per-setter logic delegated to `Actions/Metatag/*` (`GetMetatagDataAction`,
-> `MergeMetatagDataAction`, `ReplaceMetatagDataAction`) instead of living inside
-> the adapter. `app/Adapters/MetatagManager.php` (documented below) still
-> exists in the tree but is no longer bound in `SeoServiceProvider` and no
-> longer referenced by the `Metatag` facade — see
-> [wiki/concepts/metatag-data-contract.md](./wiki/concepts/metatag-data-contract.md)
-> for the current, canonical wiring. Kept here as history, not deleted.
-
-=======
----
-
->>>>>>> laraxot/dev
 # Seo — conversione Services/Support → Actions/Adapters
 
 ## Contesto

@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 title: "Task: Aumentare Copertura Test - Job"
 module: "Job"
@@ -13,11 +9,6 @@ qmd: "task aumentare copertura test"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
-=======
-=======
->>>>>>> af4545e (.)
->>>>>>> laraxot/dev
 # Task: Aumentare Copertura Test - Job
 
 **Modulo**: Job

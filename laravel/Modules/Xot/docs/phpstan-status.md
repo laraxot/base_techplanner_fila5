@@ -1,23 +1,24 @@
-<<<<<<< HEAD
 # PHPStan Status — Xot
 
 Stato vivo del gate. Non copiare numeri da report storici: rimisura.
 
-## Misura 2026-09-21 (comando che certifica)
+## Misura 2026-09-23 (story 5.224 — comando utente)
 
 ```bash
 cd laravel
-php -d memory_limit=-1 ./vendor/bin/phpstan analyse --no-progress --memory-limit=-1
-# EXIT 0
-# totals.file_errors: 0
-# stderr: solo "Note: Using configuration file .../phpstan.neon"
-# nessun "Result is incomplete because of severe errors"
+rm -rf /tmp/phpstan && mkdir -p /tmp/phpstan
+php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules --memory-limit=2G
+# EXIT 0 — [OK] No errors — 9421 file
+# phpstan.neon immutato (level max, ignoreErrors vuoto)
 ```
 
-`analyse Modules` nello stesso momento è anch'esso a 0. I due conteggi coincidono:
-non resta residuo `typeCoverage` visibile sul full-tree.
+Pest **non** eseguito: host `10.100.200.15` (personale2022).
 
-Stesso giorno, dopo la verifica 18.59: un `analyse` su file Media caricava Setting e
+Misura precedente 2026-09-21: `analyse` senza path e `analyse Modules` entrambi a 0
+(story 18.59). Path CLI spegne `type-coverage`; il certify «siamo a zero» resta
+il comando senza argomenti. Oggi l'utente ha chiesto esplicitamente `analyse Modules`.
+
+Il 2026-09-21, dopo la verifica 18.59: un `analyse` su file Media caricava Setting e
 il bootstrap Filament andava in fatal (`Cannot override final method
 XotBaseResource::getFormSchema()`), poi 25 errori Setting, poi marker `<<<<<<<`
 in `Activity/LogViewer.php` (mute-gate). Tutto chiuso. Rilancio certifying: ancora 0.
@@ -55,85 +56,3 @@ Per dichiarare «siamo a zero» serve il comando senza argomenti.
 - [phpstan-best-practices.md](./wiki/phpstan-best-practices.md) — pattern Pest
 - [18.59](./stories/18.59.phpstan-repo-wide-zero-2026-09-21.story.md) — drift 23→0 del 2026-09-21
 - [phpstan-journey.md](../../../../docs/wiki/second-brain/phpstan-journey.md) — second brain
-=======
-# PHPStan Status - Xot Module
-
-## Current Status: ✅ PASSED
-- **PHPStan Level**: 10
-- **Errors**: 0
-- **Last Checked**: 2025-11-17
-
-## Module Overview
-The Xot module provides core functionality and base classes for the entire application framework.
-
-## Key Components
-
-### Base Classes
-- `XotBaseRouteServiceProvider` - Enhanced route service provider
-- `XotBaseResource` - Base resource class for Filament
-- `BaseModel` - Base model with common functionality
-
-### Service Providers
-- Core service providers with proper dependency injection
-- Type-safe service registration
-
-### Utilities
-- Common helper functions
-- Framework utilities
-
-## PHPStan Compliance
-
-All files in the Xot module pass PHPStan Level 10 analysis:
-
-```bash
-./vendor/bin/phpstan analyse Modules/Xot/ --level=10 --no-progress
-# Result: [OK] No errors
-```
-
-## Type Safety Features
-
-1. **Base Class Typing**
-   - All base classes have proper type hints
-   - Generic type parameters where applicable
-
-2. **Service Provider Safety**
-   - Dependency injection with proper types
-   - Interface contracts enforced
-
-3. **Helper Functions**
-   - All utility functions are typed
-   - Proper return type declarations
-
-## Framework Integration
-
-The Xot module serves as the foundation for:
-- All other modules in the system
-- Laravel framework enhancements
-- Common application patterns
-
-## Best Practices Applied
-
-1. **Strict Typing** - All code uses strict types declaration
-2. **Interface Contracts** - Proper interface implementation
-3. **Dependency Injection** - Type-safe DI throughout
-4. **Generic Programming** - Proper use of generics where needed
-
-## Custom Patterns
-
-1. **Enhanced Service Providers**
-   - Custom base classes for better type safety
-   - Consistent naming conventions
-
-2. **Model Base Classes**
-   - Common functionality centralized
-   - Type-safe property access
-
-3. **Resource Extensions**
-   - Filament resource enhancements
-   - Proper inheritance chains
-
----
-
-*Status: ✅ PHPStan Level 10 Compliant*
-*Last Updated: 2025-11-17*
->>>>>>> laraxot/dev

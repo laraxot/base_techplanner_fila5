@@ -175,13 +175,9 @@ namespace Modules\NewModule\Filament\Resources;
 class ProductResource extends XotBaseResource
 {
 <<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
-<<<<<<< HEAD
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -194,13 +190,9 @@ class ProductResource extends XotBaseResource
     }
 
 <<<<<<< HEAD
-    public static function getInfolistSchema(): array
-=======
-<<<<<<< HEAD
     public function getInfolistSchema(): array
 =======
     public function getInfolistSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [

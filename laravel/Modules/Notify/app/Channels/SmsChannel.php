@@ -55,7 +55,7 @@ class SmsChannel
         $driver = null;
         if (method_exists($notification, 'getProvider')) {
             $provider = $notification->getProvider();
-            $driver = \is_string($provider) && '' !== $provider ? $provider : null;
+            $driver = \is_string($provider) && $provider !== '' ? $provider : null;
         }
 
         return $this->factory->create($driver)->execute($smsData);

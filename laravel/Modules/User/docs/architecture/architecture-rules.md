@@ -35,8 +35,4 @@ For strict coding standards, Filament extension rules, and PHPStan guidelines, p
 1.  **DRY & KISS**: Don't repeat yourself, keep it simple.
 2.  **Zero Errors**: PHPStan Level 10 compliance is mandatory.
 3.  **XotBase**: Always extend `XotBase` classes, never Filament classes directly.
-<<<<<<< HEAD
 4.  **Translations**: Use `LangServiceProvider` for automatic label resolution.
-=======
-4.  **Translations**: Use `LangServiceProvider` for automatic label resolution.
->>>>>>> laraxot/dev

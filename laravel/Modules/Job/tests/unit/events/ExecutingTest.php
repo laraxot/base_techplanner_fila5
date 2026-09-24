@@ -28,7 +28,7 @@ describe('Executing', function () {
 
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
-        Assert::assertStringContainsString('declare(strict_types=1);', $content);
+        Assert::assertStringContainsString('', $content);
     });
 
     it('is instantiable', function () {

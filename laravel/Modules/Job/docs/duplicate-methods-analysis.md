@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 title: "Analisi Metodi Duplicati - Modulo Job"
 module: "Job"
@@ -13,11 +9,6 @@ qmd: "duplicate methods analysis"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
-=======
-=======
->>>>>>> af4545e (.)
->>>>>>> laraxot/dev
 # Analisi Metodi Duplicati - Modulo Job
 
 **Totale Gruppi di Duplicati**:

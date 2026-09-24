@@ -1,7 +1,4 @@
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 title: "Tenant — Multi-Tenancy"
 description: "Modulo per il multi-tenancy, isolamento dati per tenant"
@@ -70,8 +67,6 @@ Le applicazioni SaaS moderne hanno bisogno di multi-tenancy per servire più cli
 ---
 
 *Documento generato secondo le convenzioni del progetto — modulo `Tenant` — data 2026-05-27*
-<<<<<<< HEAD
-=======
 =======
 # Documentation
 
@@ -89,5 +84,4 @@ Documentation should be:
 - Example-driven
 - Updated with code changes
 - Use Markdown format (.md)
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

@@ -47,13 +47,9 @@ protected $fillable = ['id', 'categoria', 'lista_propro', 'lista_propro_sup', 'p
 
 // RISORSA SBAGLIATA (PRIMA):
 <<<<<<< HEAD
-public static function getFormSchema(): array
-=======
-<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -70,13 +66,9 @@ public function getFormSchema(): array
 ```php
 // RISORSA CORRETTA (DOPO):
 <<<<<<< HEAD
-public static function getFormSchema(): array
-=======
-<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [

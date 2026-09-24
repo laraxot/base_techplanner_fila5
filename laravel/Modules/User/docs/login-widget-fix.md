@@ -184,7 +184,3 @@ Tutti i widget Filament che estendono `XotBaseWidget` e usano `statePath('data')
 - [x] Documentazione aggiornata
 
 ---
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev

@@ -1,8 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 title: "Filament"
 module: "Job"
 type: concept
@@ -19,17 +15,3 @@ https://gitlab.com/amvisor/filament-failed-jobs/-/blob/master/src/FilamentFailed
 https://github.com/croustibat/filament-jobs-monitor
 
 https://medium.com/@laravelprotips/laravel-filament-top-12-plugins-simplified-with-demonstrations-a87aa3b63a6d
-<<<<<<< HEAD
-=======
-
-
-
-=======
-module: theme
-topic: filament
-canonical: ../../../Themes/docs/shared-components/filament-Modules.txt
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/filament-Modules.txt
->>>>>>> af4545e (.)
->>>>>>> laraxot/dev

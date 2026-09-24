@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 title: "Checklist qualità - Job Module"
 module: "Job"
@@ -13,11 +9,6 @@ qmd: "quality"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
-=======
-=======
->>>>>>> af4545e (.)
->>>>>>> laraxot/dev
 # Checklist qualità - Job Module
 
 - [x] PHPStan Level 10

@@ -15,7 +15,6 @@ class ViewAppointment extends XotBaseViewRecord
     /**
      * @return array<string, \Filament\Schemas\Components\Component>
      */
-    #[\Override]
     protected function getInfolistSchema(): array
     {
         return app(AppointmentInfolist::class)->getInfolistSchema();

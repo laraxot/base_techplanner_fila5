@@ -10,6 +10,18 @@ use Modules\Media\Filament\Resources\MediaResource;
 use Modules\Media\Filament\Resources\MediaResource\Schemas\MediaInfolist;
 use Modules\Media\Filament\Resources\MediaResource\Widgets\ConvertWidget;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
+use Filament\Actions\Action;
+use Filament\Infolists\Components\ImageEntry;
+use Filament\Infolists\Components\RepeatableEntry;
+use Filament\Infolists\Components\TextEntry;
+use Filament\Schemas\Components\Actions;
+use Filament\Schemas\Components\Grid;
+use Filament\Schemas\Components\Section;
+use Modules\Media\Datas\ConvertData;
+use Modules\Media\Filament\Infolists\VideoEntry;
+use Modules\Media\Filament\Resources\MediaConvertResource;
+use Modules\Media\Models\Media;
+use Override;
 
 class ViewMedia extends XotBaseViewRecord
 {
@@ -18,7 +30,6 @@ class ViewMedia extends XotBaseViewRecord
     /**
      * @return array<string, Component>
      */
-    #[\Override]
     protected function getInfolistSchema(): array
     {
         return app(MediaInfolist::class)->getInfolistSchema();
