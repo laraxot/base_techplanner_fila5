@@ -1,0 +1,86 @@
+<<<<<<< HEAD
+=======
+# Auto-generated forbidden paths — do not edit manually
+# Reason: root cleanup policy (see docs/wiki/rules/root-cleanup-policy.md)
+
+bashscripts
+_bmad-output
+.circleci
+.claude-audit
+.devcontainer
+_docs
+docs/archive
+docs/archived
+docs/legacy
+docs/workbench
+.kilocode
+.kiro
+.ralph
+scripts
+test-results
+tests/.claude-audit
+>>>>>>> c34c6d1 (.)
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+<<<<<<< HEAD
+
+=======
+>>>>>>> c34c6d1 (.)
+node_modules
+dist
+dist-ssr
+*.local
+<<<<<<< HEAD
+
+=======
+>>>>>>> c34c6d1 (.)
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.git-blame-ignore-revs
+package-lock.json
+.php-cs-fixer.cache
+<<<<<<< HEAD
+package-lock.json
+.git-rewrite/
+.php-cs-fixer.cache
+node_modules
+node_modules
+
+=======
+.git-rewrite/
+>>>>>>> c34c6d1 (.)
+# Standard ignores (auto)
+node_modules/
+vendor/
+*.old
+*.old1
+*.bak
+*.bakcup
+*.backup.*
+<<<<<<< HEAD
+node_modules
+*.*Zone.Identifier
+_docs/
+.cursor/
+.windsurf/
+.devcontainer/
+=======
+*.*Zone.Identifier
+.cursor/
+.windsurf/
+tests/AuditCoverage
+>>>>>>> c34c6d1 (.)

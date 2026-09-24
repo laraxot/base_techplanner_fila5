@@ -1,0 +1,1009 @@
+parameters:
+	ignoreErrors:
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\User::$state.
+			identifier: property.notFound
+			count: 1
+			path: Modules/Gdpr/tests/Feature/RegisterWidgetTest.php
+
+		-
+			rawMessage: 'Method Modules\Notify\Notifications\TicketAssignedNotification::toArray() should return array{assigned_by: string} but returns array{assigned_by: string|null}.'
+			identifier: return.type
+			count: 1
+			path: Modules/Notify/app/Notifications/TicketAssignedNotification.php
+
+		-
+			rawMessage: 'Parameter #2 $hashedValue of method Illuminate\Contracts\Hashing\Hasher::check() expects string, string|null given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/User/app/Actions/User/DeleteUserAction.php
+
+		-
+			rawMessage: 'Call to an undefined method Illuminate\Database\Eloquent\Model::canAccessSocialite().'
+			identifier: method.notFound
+			count: 2
+			path: Modules/User/app/Http/Controllers/Socialite/ProcessCallbackController.php
+
+		-
+			rawMessage: 'Parameter #2 $userModel of method Modules\User\Actions\Socialite\SetDefaultRolesBySocialiteUserAction::execute() expects Modules\Xot\Contracts\UserContract, Illuminate\Database\Eloquent\Model given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/User/app/Http/Controllers/Socialite/ProcessCallbackController.php
+
+		-
+			rawMessage: 'Method Modules\User\Models\BaseIsTenant::users() should return Illuminate\Database\Eloquent\Relations\BelongsToMany<Illuminate\Database\Eloquent\Model&Modules\Xot\Contracts\UserContract, $this(Modules\User\Models\BaseIsTenant), Illuminate\Database\Eloquent\Relations\Pivot, ''pivot''> but returns Illuminate\Database\Eloquent\Relations\BelongsToMany<Illuminate\Database\Eloquent\Model, $this(Modules\User\Models\BaseIsTenant), Illuminate\Database\Eloquent\Relations\Pivot, ''pivot''>.'
+			identifier: return.type
+			count: 1
+			path: Modules/User/app/Models/BaseIsTenant.php
+
+		-
+			rawMessage: Variable $thisTable in PHPDoc tag @var does not exist.
+			identifier: varTag.variableNotFound
+			count: 1
+			path: Modules/User/app/Models/BaseModel.php
+
+		-
+			rawMessage: 'Method Modules\User\Models\BaseProfile::profile() should return Illuminate\Database\Eloquent\Relations\BelongsTo<Modules\User\Models\Profile, $this(Modules\User\Models\BaseProfile)> but returns Illuminate\Database\Eloquent\Relations\HasOne<Modules\User\Models\Profile, $this(Modules\User\Models\BaseProfile)>.'
+			identifier: return.type
+			count: 1
+			path: Modules/User/app/Models/BaseProfile.php
+
+		-
+			rawMessage: Property 'full_name' does not exist in model.
+			identifier: rules.modelAppends
+			count: 1
+			path: Modules/User/app/Models/BaseProfile.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\AuthenticationLog::$ip_address.
+			identifier: property.notFound
+			count: 3
+			path: Modules/User/app/Models/BaseUser.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\AuthenticationLog::$login_at.
+			identifier: property.notFound
+			count: 3
+			path: Modules/User/app/Models/BaseUser.php
+
+		-
+			rawMessage: 'Class Modules\User\Models\BaseUser uses generic trait Modules\Xot\Models\Traits\RelationX but does not specify its types: TRelatedModel'
+			identifier: missingType.generics
+			count: 1
+			path: Modules/User/app/Models/BaseUser.php
+
+		-
+			rawMessage: 'Method Modules\User\Models\BaseUser::devices() has invalid return type Modules\User\Models\Traits\Pivot.'
+			identifier: class.notFound
+			count: 1
+			path: Modules/User/app/Models/BaseUser.php
+
+		-
+			rawMessage: 'Method Modules\User\Models\BaseUser::lastLoginAt() should return Illuminate\Support\Carbon|null but returns mixed.'
+			identifier: return.type
+			count: 1
+			path: Modules/User/app/Models/BaseUser.php
+
+		-
+			rawMessage: 'Method Modules\User\Models\BaseUser::lastLoginIp() should return string|null but returns mixed.'
+			identifier: return.type
+			count: 1
+			path: Modules/User/app/Models/BaseUser.php
+
+		-
+			rawMessage: 'Method Modules\User\Models\BaseUser::lastSuccessfulLoginAt() should return Illuminate\Support\Carbon|null but returns mixed.'
+			identifier: return.type
+			count: 1
+			path: Modules/User/app/Models/BaseUser.php
+
+		-
+			rawMessage: 'Method Modules\User\Models\BaseUser::lastSuccessfulLoginIp() should return string|null but returns mixed.'
+			identifier: return.type
+			count: 1
+			path: Modules/User/app/Models/BaseUser.php
+
+		-
+			rawMessage: 'Method Modules\User\Models\BaseUser::previousLoginAt() should return Illuminate\Support\Carbon|null but returns mixed.'
+			identifier: return.type
+			count: 1
+			path: Modules/User/app/Models/BaseUser.php
+
+		-
+			rawMessage: 'Method Modules\User\Models\BaseUser::previousLoginIp() should return string|null but returns mixed.'
+			identifier: return.type
+			count: 1
+			path: Modules/User/app/Models/BaseUser.php
+
+		-
+			rawMessage: PHPDoc tag @var contains unknown class Modules\User\Models\Traits\Pivot.
+			identifier: class.notFound
+			count: 1
+			path: Modules/User/app/Models/BaseUser.php
+
+		-
+			rawMessage: The @use tag of class Modules\User\Models\BaseUser describes Modules\User\Models\RelationX but the class uses Modules\Xot\Models\Traits\RelationX.
+			identifier: generics.wrongParent
+			count: 1
+			path: Modules/User/app/Models/BaseUser.php
+
+		-
+			rawMessage: 'Type Modules\User\Models\Traits\Pivot in generic type Illuminate\Database\Eloquent\Relations\BelongsToMany<Modules\User\Models\Device, $this(Modules\User\Models\BaseUser), Modules\User\Models\Traits\Pivot, string> in PHPDoc tag @return is not subtype of template type TPivotModel of Illuminate\Database\Eloquent\Relations\Pivot = Illuminate\Database\Eloquent\Relations\Pivot of class Illuminate\Database\Eloquent\Relations\BelongsToMany.'
+			identifier: generics.notSubtype
+			count: 1
+			path: Modules/User/app/Models/BaseUser.php
+
+		-
+			rawMessage: 'Type Modules\User\Models\Traits\Pivot in generic type Illuminate\Database\Eloquent\Relations\BelongsToMany<Modules\User\Models\Device, $this(Modules\User\Models\BaseUser), Modules\User\Models\Traits\Pivot, string> in PHPDoc tag @var is not subtype of template type TPivotModel of Illuminate\Database\Eloquent\Relations\Pivot = Illuminate\Database\Eloquent\Relations\Pivot of class Illuminate\Database\Eloquent\Relations\BelongsToMany.'
+			identifier: generics.notSubtype
+			count: 1
+			path: Modules/User/app/Models/BaseUser.php
+
+		-
+			rawMessage: Variable $thisTable in PHPDoc tag @var does not exist.
+			identifier: varTag.variableNotFound
+			count: 1
+			path: Modules/User/app/Models/BaseUser.php
+
+		-
+			rawMessage: Variable $thisTable in PHPDoc tag @var does not exist.
+			identifier: varTag.variableNotFound
+			count: 1
+			path: Modules/User/app/Models/Permission.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\AuthenticationLog::$authenticatable_id.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/app/Models/Policies/AuthenticationLogPolicy.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Profile::$bio.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/app/Models/Profile.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Profile::$is_active.
+			identifier: property.notFound
+			count: 2
+			path: Modules/User/app/Models/Profile.php
+
+		-
+			rawMessage: 'Method Modules\User\Models\Profile::teams() should return Illuminate\Database\Eloquent\Relations\BelongsToMany<Modules\User\Models\Team, $this(Modules\User\Models\Profile), Illuminate\Database\Eloquent\Relations\Pivot, ''pivot''> but returns Illuminate\Database\Eloquent\Relations\BelongsToMany<Illuminate\Database\Eloquent\Model, $this(Modules\User\Models\Profile), Illuminate\Database\Eloquent\Relations\Pivot, ''pivot''>.'
+			identifier: return.type
+			count: 1
+			path: Modules/User/app/Models/Profile.php
+
+		-
+			rawMessage: 'Return type (Illuminate\Database\Eloquent\Relations\BelongsTo<Modules\User\Models\User, $this(Modules\User\Models\Profile)>) of method Modules\User\Models\Profile::user() should be compatible with return type (Illuminate\Database\Eloquent\Relations\BelongsTo<Illuminate\Database\Eloquent\Model&Modules\Xot\Contracts\UserContract, Illuminate\Database\Eloquent\Model>) of method Modules\Xot\Contracts\ProfileContract::user()'
+			identifier: method.childReturnType
+			count: 2
+			path: Modules/User/app/Models/Profile.php
+
+		-
+			rawMessage: 'Class Modules\User\Models\Role uses generic trait Modules\Xot\Models\Traits\HasXotFactory but does not specify its types: TModel'
+			identifier: missingType.generics
+			count: 1
+			path: Modules/User/app/Models/Role.php
+
+		-
+			rawMessage: 'Method Modules\User\Models\Role::permissions() should return Illuminate\Database\Eloquent\Relations\BelongsToMany<Modules\User\Models\Permission, $this(Modules\User\Models\Role), Illuminate\Database\Eloquent\Relations\Pivot, ''pivot''> but returns Illuminate\Database\Eloquent\Relations\BelongsToMany<Illuminate\Database\Eloquent\Model, $this(Modules\User\Models\Role), Illuminate\Database\Eloquent\Relations\Pivot, ''pivot''>.'
+			identifier: return.type
+			count: 1
+			path: Modules/User/app/Models/Role.php
+
+		-
+			rawMessage: Variable $thisTable in PHPDoc tag @var does not exist.
+			identifier: varTag.variableNotFound
+			count: 1
+			path: Modules/User/app/Models/Role.php
+
+		-
+			rawMessage: Cannot access offset string on mixed.
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: Modules/User/app/Models/SsoProvider.php
+
+		-
+			rawMessage: 'Parameter #2 $haystack of function in_array expects array, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/User/app/Models/SsoProvider.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\TeamInvitation::$role.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/app/Models/TeamInvitation.php
+
+		-
+			rawMessage: 'Call to an undefined method Illuminate\Database\Eloquent\Model::users().'
+			identifier: method.notFound
+			count: 1
+			path: Modules/User/app/Models/TeamInvitation.php
+
+		-
+			rawMessage: 'Cannot call method attach() on mixed.'
+			identifier: method.nonObject
+			count: 1
+			path: Modules/User/app/Models/TeamInvitation.php
+
+		-
+			rawMessage: 'Property Modules\User\Models\BaseUser::$current_team_id (string|null) does not accept int.'
+			identifier: assign.propertyType
+			count: 1
+			path: Modules/User/app/Observers/UserObserver.php
+
+		-
+			rawMessage: 'Parameter #2 $hashedValue of static method Illuminate\Support\Facades\Hash::check() expects string, string|null given.'
+			identifier: argument.type
+			count: 3
+			path: Modules/User/app/View/Pages/ProfileEditVoltComponent.php
+
+		-
+			rawMessage: 'Parameter #1 $user of method Modules\User\Actions\Passport\RevokeAllUserTokensAction::execute() expects Modules\Xot\Contracts\UserContract|string, string|null given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/User/tests/Feature/Actions/Passport/RevokeAllUserTokensActionTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\SocialiteUser::$provider.
+			identifier: property.notFound
+			count: 2
+			path: Modules/User/tests/Feature/Actions/Socialite/LoginUserActionTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\SocialiteUser::$provider_id.
+			identifier: property.notFound
+			count: 2
+			path: Modules/User/tests/Feature/Actions/Socialite/LoginUserActionTest.php
+
+		-
+			rawMessage: Access to an undefined property Illuminate\Database\Eloquent\Model::$email.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Feature/Actions/Socialite/RegisterOauthUserActionTest.php
+
+		-
+			rawMessage: Access to an undefined property Illuminate\Database\Eloquent\Model::$name.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Feature/Actions/Socialite/RegisterOauthUserActionTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\SocialiteUser::$avatar.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Feature/Actions/Socialite/RegisterOauthUserActionTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\SocialiteUser::$email.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Feature/Actions/Socialite/RegisterOauthUserActionTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\SocialiteUser::$provider.
+			identifier: property.notFound
+			count: 5
+			path: Modules/User/tests/Feature/Actions/Socialite/RegisterOauthUserActionTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\SocialiteUser::$provider_id.
+			identifier: property.notFound
+			count: 3
+			path: Modules/User/tests/Feature/Actions/Socialite/RegisterOauthUserActionTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\SocialiteUser::$user_id.
+			identifier: property.notFound
+			count: 4
+			path: Modules/User/tests/Feature/Actions/Socialite/RegisterOauthUserActionTest.php
+
+		-
+			rawMessage: Cannot cast mixed to string.
+			identifier: cast.string
+			count: 1
+			path: Modules/User/tests/Feature/Actions/Socialite/RegisterOauthUserActionTest.php
+
+		-
+			rawMessage: 'Parameter #1 $username of static method Modules\User\Models\BaseUser::findForPassport() expects string, string|null given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/User/tests/Feature/Authentication/UserAuthenticationTest.php
+
+		-
+			rawMessage: 'Parameter #2 $hashedValue of static method Illuminate\Support\Facades\Hash::check() expects string, string|null given.'
+			identifier: argument.type
+			count: 3
+			path: Modules/User/tests/Feature/Authentication/UserAuthenticationTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\SocialiteUser::$provider.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Feature/Models/UserModelTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\TeamInvitation::$email.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Feature/TeamManagementBusinessLogicTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\TeamInvitation::$team_id.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Feature/TeamManagementBusinessLogicTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\TeamInvitation::$user_id.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Feature/TeamManagementBusinessLogicTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\TeamUser::$permissions.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Feature/TeamManagementBusinessLogicTest.php
+
+		-
+			rawMessage: Cannot cast mixed to string.
+			identifier: cast.string
+			count: 1
+			path: Modules/User/tests/Feature/TeamManagementBusinessLogicTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Team::$avatar_path.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Feature/TeamManagementInvitationsTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Team::$settings.
+			identifier: property.notFound
+			count: 2
+			path: Modules/User/tests/Feature/TeamManagementInvitationsTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\TeamInvitation::$email.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Feature/TeamManagementInvitationsTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\TeamInvitation::$role.
+			identifier: property.notFound
+			count: 2
+			path: Modules/User/tests/Feature/TeamManagementInvitationsTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\TeamInvitation::$team_id.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Feature/TeamManagementInvitationsTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\TeamPermission::$team_id.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Feature/TeamManagementInvitationsTest.php
+
+		-
+			rawMessage: Cannot cast mixed to string.
+			identifier: cast.string
+			count: 2
+			path: Modules/User/tests/Feature/TeamManagementInvitationsTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Team::$avatar_path.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Feature/TeamManagementTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Team::$description.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Feature/TeamManagementTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Team::$settings.
+			identifier: property.notFound
+			count: 2
+			path: Modules/User/tests/Feature/TeamManagementTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Team::$slug.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Feature/TeamManagementTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\TeamInvitation::$email.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Feature/TeamManagementTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\TeamInvitation::$role.
+			identifier: property.notFound
+			count: 2
+			path: Modules/User/tests/Feature/TeamManagementTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\TeamInvitation::$team_id.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Feature/TeamManagementTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\TeamPermission::$team_id.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Feature/TeamManagementTest.php
+
+		-
+			rawMessage: Cannot cast mixed to string.
+			identifier: cast.string
+			count: 2
+			path: Modules/User/tests/Feature/TeamManagementTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\User::$two_factor_confirmed_at.
+			identifier: property.notFound
+			count: 5
+			path: Modules/User/tests/Feature/TwoFactorServiceTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\User::$two_factor_recovery_codes.
+			identifier: property.notFound
+			count: 2
+			path: Modules/User/tests/Feature/TwoFactorServiceTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\User::$two_factor_secret.
+			identifier: property.notFound
+			count: 3
+			path: Modules/User/tests/Feature/TwoFactorServiceTest.php
+
+		-
+			rawMessage: Cannot cast mixed to string.
+			identifier: cast.string
+			count: 1
+			path: Modules/User/tests/Feature/TwoFactorServiceTest.php
+
+		-
+			rawMessage: 'Parameter #1 $string of function rawurlencode expects string, string|null given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/User/tests/Feature/TwoFactorServiceTest.php
+
+		-
+			rawMessage: 'Parameter #1 $value of function decrypt expects string, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/User/tests/Feature/TwoFactorServiceTest.php
+
+		-
+			rawMessage: 'Call to an undefined method Illuminate\Database\Eloquent\Relations\MorphMany<Modules\User\Models\AuthenticationLog, Modules\User\Models\User>::isEmpty().'
+			identifier: method.notFound
+			count: 1
+			path: Modules/User/tests/Feature/UserAuthenticationTest.php
+
+		-
+			rawMessage: 'Parameter #2 $haystack of static method PHPUnit\Framework\Assert::assertCount() expects Countable|iterable, Illuminate\Database\Eloquent\Relations\MorphMany<Modules\User\Models\AuthenticationLog, Modules\User\Models\User> given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/User/tests/Feature/UserAuthenticationTest.php
+
+		-
+			rawMessage: 'Parameter #1 $key of method Illuminate\Support\Collection<int,Modules\User\Models\User>::every() expects (callable(Modules\User\Models\User, int): bool)|Modules\User\Models\User|string, Closure(mixed): (bool|null) given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/User/tests/Feature/UserModelTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\User::$two_factor_confirmed_at.
+			identifier: property.notFound
+			count: 2
+			path: Modules/User/tests/Helpers.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\User::$two_factor_recovery_codes.
+			identifier: property.notFound
+			count: 5
+			path: Modules/User/tests/Helpers.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\User::$two_factor_secret.
+			identifier: property.notFound
+			count: 3
+			path: Modules/User/tests/Helpers.php
+
+		-
+			rawMessage: 'Call to an undefined static method Modules\User\Models\Profile::factory().'
+			identifier: staticMethod.notFound
+			count: 1
+			path: Modules/User/tests/Helpers.php
+
+		-
+			rawMessage: 'Parameter #1 $value of function decrypt expects string, mixed given.'
+			identifier: argument.type
+			count: 3
+			path: Modules/User/tests/Helpers.php
+
+		-
+			rawMessage: 'Parameter #2 $holder of method PragmaRX\Google2FA\Google2FA::getQRCodeUrl() expects string, string|null given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/User/tests/Helpers.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\User::$two_factor_confirmed_at.
+			identifier: property.notFound
+			count: 2
+			path: Modules/User/tests/Support/helpers-extended.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\User::$two_factor_recovery_codes.
+			identifier: property.notFound
+			count: 5
+			path: Modules/User/tests/Support/helpers-extended.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\User::$two_factor_secret.
+			identifier: property.notFound
+			count: 3
+			path: Modules/User/tests/Support/helpers-extended.php
+
+		-
+			rawMessage: 'Call to an undefined static method Modules\User\Models\Profile::factory().'
+			identifier: staticMethod.notFound
+			count: 1
+			path: Modules/User/tests/Support/helpers-extended.php
+
+		-
+			rawMessage: 'Parameter #1 $value of function decrypt expects string, mixed given.'
+			identifier: argument.type
+			count: 3
+			path: Modules/User/tests/Support/helpers-extended.php
+
+		-
+			rawMessage: 'Parameter #2 $holder of method PragmaRX\Google2FA\Google2FA::getQRCodeUrl() expects string, string|null given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/User/tests/Support/helpers-extended.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\User::$two_factor_confirmed_at.
+			identifier: property.notFound
+			count: 2
+			path: Modules/User/tests/Support/helpers.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\User::$two_factor_recovery_codes.
+			identifier: property.notFound
+			count: 5
+			path: Modules/User/tests/Support/helpers.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\User::$two_factor_secret.
+			identifier: property.notFound
+			count: 3
+			path: Modules/User/tests/Support/helpers.php
+
+		-
+			rawMessage: 'Call to an undefined static method Modules\User\Models\Profile::factory().'
+			identifier: staticMethod.notFound
+			count: 1
+			path: Modules/User/tests/Support/helpers.php
+
+		-
+			rawMessage: 'Parameter #1 $value of function decrypt expects string, mixed given.'
+			identifier: argument.type
+			count: 3
+			path: Modules/User/tests/Support/helpers.php
+
+		-
+			rawMessage: 'Parameter #2 $holder of method PragmaRX\Google2FA\Google2FA::getQRCodeUrl() expects string, string|null given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/User/tests/Support/helpers.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Device::$is_robot.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Unit/Actions/GetCurrentDeviceActionTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Device::$mobile_id.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Unit/Actions/GetCurrentDeviceActionTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Device::$robot.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Unit/Actions/GetCurrentDeviceActionTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\SocialiteUser::$email.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Unit/Actions/RegisterOauthUserActionTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\SocialiteUser::$user_id.
+			identifier: property.notFound
+			count: 2
+			path: Modules/User/tests/Unit/Actions/RegisterOauthUserActionTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\SocialiteUser::$provider.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Unit/Actions/Socialite/SocialiteCoreActionsCoverageTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\SocialiteUser::$provider_id.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Unit/Actions/Socialite/SocialiteCoreActionsCoverageTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\SocialiteUser::$user_id.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Unit/Actions/Socialite/SocialiteCoreActionsCoverageTest.php
+
+		-
+			rawMessage: Cannot cast mixed to string.
+			identifier: cast.string
+			count: 1
+			path: Modules/User/tests/Unit/Actions/Socialite/SocialiteCoreActionsCoverageTest.php
+
+		-
+			rawMessage: 'Property Modules\User\Models\BaseUser::$current_team_id (string|null) does not accept int.'
+			identifier: assign.propertyType
+			count: 3
+			path: Modules/User/tests/Unit/CurrentTeamInfiniteLoopFixTest.php
+
+		-
+			rawMessage: 'Property Modules\User\Models\BaseUser::$current_team_id (string|null) does not accept int.'
+			identifier: assign.propertyType
+			count: 3
+			path: Modules/User/tests/Unit/HasTeamsTraitCurrentTeamTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Device::$browser.
+			identifier: property.notFound
+			count: 3
+			path: Modules/User/tests/Unit/Models/DeviceTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Device::$device.
+			identifier: property.notFound
+			count: 2
+			path: Modules/User/tests/Unit/Models/DeviceTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Device::$is_desktop.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Unit/Models/DeviceTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Device::$is_mobile.
+			identifier: property.notFound
+			count: 3
+			path: Modules/User/tests/Unit/Models/DeviceTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Device::$is_phone.
+			identifier: property.notFound
+			count: 2
+			path: Modules/User/tests/Unit/Models/DeviceTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Device::$is_robot.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Unit/Models/DeviceTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Device::$is_tablet.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Unit/Models/DeviceTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Device::$languages.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Unit/Models/DeviceTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Device::$mobile_id.
+			identifier: property.notFound
+			count: 2
+			path: Modules/User/tests/Unit/Models/DeviceTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Device::$platform.
+			identifier: property.notFound
+			count: 2
+			path: Modules/User/tests/Unit/Models/DeviceTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Device::$robot.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Unit/Models/DeviceTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Device::$uuid.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Unit/Models/DeviceTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Device::$version.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Unit/Models/DeviceTest.php
+
+		-
+			rawMessage: Cannot cast mixed to string.
+			identifier: cast.string
+			count: 1
+			path: Modules/User/tests/Unit/Models/DeviceTest.php
+
+		-
+			rawMessage: 'Parameter #2 $haystack of static method PHPUnit\Framework\Assert::assertContains() expects iterable, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/User/tests/Unit/Models/DeviceTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Profile::$bio.
+			identifier: property.notFound
+			count: 2
+			path: Modules/User/tests/Unit/Models/ProfileTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Profile::$locale.
+			identifier: property.notFound
+			count: 2
+			path: Modules/User/tests/Unit/Models/ProfileTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Profile::$phone.
+			identifier: property.notFound
+			count: 3
+			path: Modules/User/tests/Unit/Models/ProfileTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Profile::$preferences.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Unit/Models/ProfileTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Profile::$status.
+			identifier: property.notFound
+			count: 2
+			path: Modules/User/tests/Unit/Models/ProfileTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Profile::$timezone.
+			identifier: property.notFound
+			count: 3
+			path: Modules/User/tests/Unit/Models/ProfileTest.php
+
+		-
+			rawMessage: Cannot cast mixed to string.
+			identifier: cast.string
+			count: 1
+			path: Modules/User/tests/Unit/Models/ProfileTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Team::$code.
+			identifier: property.notFound
+			count: 2
+			path: Modules/User/tests/Unit/Models/TeamTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Tenant::$database.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Unit/Models/TenantTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Tenant::$domain.
+			identifier: property.notFound
+			count: 2
+			path: Modules/User/tests/Unit/Models/TenantTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Tenant::$is_active.
+			identifier: property.notFound
+			count: 2
+			path: Modules/User/tests/Unit/Models/TenantTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Tenant::$name.
+			identifier: property.notFound
+			count: 2
+			path: Modules/User/tests/Unit/Models/TenantTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Tenant::$settings.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Unit/Models/TenantTest.php
+
+		-
+			rawMessage: Cannot cast mixed to string.
+			identifier: cast.string
+			count: 2
+			path: Modules/User/tests/Unit/Models/TenantTest.php
+
+		-
+			rawMessage: Variable $thisTable in PHPDoc tag @var does not exist.
+			identifier: varTag.variableNotFound
+			count: 1
+			path: Modules/User/tests/Unit/Models/Traits/Fixtures/MockUserWithTeams.php
+
+		-
+			rawMessage: Variable $thisTable in PHPDoc tag @var does not exist.
+			identifier: varTag.variableNotFound
+			count: 1
+			path: Modules/User/tests/Unit/Models/Traits/MockUserWithTeams.php
+
+		-
+			rawMessage: 'Property Modules\User\Models\BaseUser::$current_team_id (string|null) does not accept int.'
+			identifier: assign.propertyType
+			count: 1
+			path: Modules/User/tests/Unit/Models/UserBusinessLogicTest.php
+
+		-
+			rawMessage: 'Parameter #2 $hashedValue of static method Illuminate\Support\Facades\Hash::check() expects string, string|null given.'
+			identifier: argument.type
+			count: 4
+			path: Modules/User/tests/Unit/Models/UserTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Tenant::$address.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Unit/TenantTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Tenant::$email_address.
+			identifier: property.notFound
+			count: 2
+			path: Modules/User/tests/Unit/TenantTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Tenant::$is_active.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Unit/TenantTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Tenant::$mobile.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Unit/TenantTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Tenant::$name.
+			identifier: property.notFound
+			count: 5
+			path: Modules/User/tests/Unit/TenantTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Tenant::$phone.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Unit/TenantTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Tenant::$primary_color.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Unit/TenantTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Tenant::$secondary_color.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Unit/TenantTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Tenant::$slug.
+			identifier: property.notFound
+			count: 4
+			path: Modules/User/tests/Unit/TenantTest.php
+
+		-
+			rawMessage: Cannot cast mixed to string.
+			identifier: cast.string
+			count: 1
+			path: Modules/User/tests/Unit/TenantTest.php
+
+		-
+			rawMessage: 'Parameter #1 $title of static method Illuminate\Support\Str::slug() expects string, mixed given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/User/tests/Unit/TenantTest.php
+
+		-
+			rawMessage: 'Method Modules\User\Tests\Unit\Traits\Fixtures\HasRolesTraitFixture::roles() should return Illuminate\Database\Eloquent\Relations\BelongsToMany<Modules\User\Models\Role, $this(Modules\User\Tests\Unit\Traits\Fixtures\HasRolesTraitFixture<TRelatedModel of Illuminate\Database\Eloquent\Model>), Illuminate\Database\Eloquent\Relations\Pivot, ''pivot''> but returns Illuminate\Database\Eloquent\Relations\BelongsToMany<Illuminate\Database\Eloquent\Model, $this(Modules\User\Tests\Unit\Traits\Fixtures\HasRolesTraitFixture<TRelatedModel of Illuminate\Database\Eloquent\Model>), Illuminate\Database\Eloquent\Relations\Pivot, ''pivot''>.'
+			identifier: return.type
+			count: 1
+			path: Modules/User/tests/Unit/Traits/Fixtures/HasRolesTraitFixture.php
+
+		-
+			rawMessage: Variable $thisTable in PHPDoc tag @var does not exist.
+			identifier: varTag.variableNotFound
+			count: 1
+			path: Modules/User/tests/Unit/Traits/Fixtures/HasRolesTraitFixture.php
+
+		-
+			rawMessage: 'Call to an undefined static method Modules\User\Models\Device::factory().'
+			identifier: staticMethod.notFound
+			count: 2
+			path: Modules/User/tests/Unit/Traits/HasDevicesTraitTest.php
+
+		-
+			rawMessage: 'Cannot call method createOne() on mixed.'
+			identifier: method.nonObject
+			count: 2
+			path: Modules/User/tests/Unit/Traits/HasDevicesTraitTest.php
+
+		-
+			rawMessage: 'Cannot call method getKey() on mixed.'
+			identifier: method.nonObject
+			count: 4
+			path: Modules/User/tests/Unit/Traits/HasDevicesTraitTest.php
+
+		-
+			rawMessage: 'Parameter #2 $haystack of static method PHPUnit\Framework\Assert::assertCount() expects Countable|iterable, Illuminate\Database\Eloquent\Relations\MorphMany<Modules\User\Models\AuthenticationLog, Modules\User\Models\User> given.'
+			identifier: argument.type
+			count: 1
+			path: Modules/User/tests/Unit/UserModelTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\SocialiteUser::$provider.
+			identifier: property.notFound
+			count: 1
+			path: Modules/User/tests/Unit/UserModelsTest.php
+
+		-
+			rawMessage: Access to an undefined property Modules\User\Models\Tenant::$name.
+			identifier: property.notFound
+			count: 2
+			path: Modules/User/tests/Unit/UserModelsTest.php
+
+		-
+			rawMessage: 'Parameter #2 $hashedValue of static method Illuminate\Support\Facades\Hash::check() expects string, string|null given.'
+			identifier: argument.type
+			count: 4
+			path: Modules/User/tests/Unit/UserTest.php
+
+		-
+			rawMessage: 'Class Modules\Xot\Tests\Fixtures\Stubs\XotCovRelationHost uses generic trait Modules\Xot\Models\Traits\RelationX but does not specify its types: TRelatedModel'
+			identifier: missingType.generics
+			count: 1
+			path: Modules/Xot/tests/Fixtures/Stubs/XotCovRelationHost.php
+
+		-
+			rawMessage: 'PHPDoc tag @phpstan-use has invalid value (\\Modules\\Xot\\Models\\Traits\\RelationX<\\Illuminate\\Database\\Eloquent\\Model>): Unexpected token "\\\\Modules\\\\Xot\\\\Models\\\\Traits\\\\RelationX<\\\\Illuminate\\\\Database\\\\Eloquent\\\\Model>", expected type at offset 87 on line 3'
+			identifier: phpDoc.parseError
+			count: 1
+			path: Modules/Xot/tests/Fixtures/Stubs/XotCovRelationHost.php

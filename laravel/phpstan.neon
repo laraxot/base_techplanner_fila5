@@ -1,0 +1,31 @@
+includes:
+    # - ./phpstan-baseline.neon
+    # - vendor/larastan/larastan/extension.neon
+    # - vendor/nesbot/carbon/extension.neon
+    - ./vendor/phpstan/phpstan/conf/bleedingEdge.neon
+    
+
+parameters:
+    level: max
+    paths:
+        - ./Modules/
+    ignoreErrors:
+        
+    excludePaths:
+        - ./*/vendor/*
+        - ./*/build/*
+        - ./*/docs/*
+        - ./*/packages/*
+        - ./*/tests/AuditCoverage/*
+        - ./*/*.blade.php
+        - ./_ide_helper.php
+        - ./_ide_helper_models.php
+    bootstrapFiles:
+        - ./phpstan_bootstrap.php
+        - ./phpstan_constants.php
+    scanFiles:
+        - ./Modules/Xot/helpers/Helper.php
+    editorUrl: 'vscode://file/%%file%%:%%line%%'
+    tmpDir: /tmp/phpstan
+    treatPhpDocTypesAsCertain: false
+    reportUnmatchedIgnoredErrors: false

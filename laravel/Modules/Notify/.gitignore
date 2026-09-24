@@ -1,0 +1,190 @@
+/.ai*
+/_bmad
+_bmad
+/bashscripts
+/_docs
+/docs/archive
+/docs/legacy
+
+!.env.example
+# -----------------------------------------------------------------------------
+# ==============================================
+# BACKUP FILES
+# BUILD & COMPILED FILES
+# CACHE & TEMPORARY FILES
+# Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
+# DEPENDENCIES & PACKAGES
+# DEVELOPMENT TOOLS
+# DOCUMENTATION CACHE
+# END OF NOTIFY .GITIGNORE
+# ENVIRONMENT & CONFIGURATION
+# File di configurazione locale
+# File di test notifiche
+# GIT SPECIFIC
+# LARAVEL SPECIFIC
+# LARAXOT MODULE NOTIFY - .GITIGNORE
+# LOG FILES
+# MODULE ROOT FORBIDDEN DIRS
+# MODULE SPECIFIC - NOTIFY
+# Modulo Notify Laraxot - Template standardizzato
+# OLD DIRECTORIES (LEGACY CLEANUP)
+# Queue e notifiche
+# SYSTEM FILES
+# Second brain: no-docs-archive (wiki) — non tracciare albero legacy docs/archive/
+# Ultimo aggiornamento: 2025-01-06
+# 🚫 File specifici del progetto
+*.backup
+*.backup.*
+*.bak
+*.bakcup
+*.cache
+*.exe
+*.fila2
+*.jar
+*.lock
+*.log
+*.new
+*.old
+*.old*
+*.old1
+*.old2
+*.orig
+*.phar
+*.rej
+*.stackdump
+*.swo
+*.swp
+*.tmp
+*:Zone.Identifier
+*~BASE
+*~HEAD
+*~LOCAL
+*~REMOTE
+*~head
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+._*
+.agent*
+.agent*/
+.ai*
+.c*
+.claude*
+.cursor/
+.env
+.env.*
+.git-blame-ignore-revs
+.git-rewrite
+.git-rewrite/
+.i*
+.j*
+.p*
+.php-cs-fixer.cache
+.phpintel
+.phpstorm.meta.php
+.phpunit.result.cache
+.planning/
+.ralph
+.w*
+.windsurf/
+.z*
+/.idea
+/.vagrant
+/build
+/build/
+/docs/vendor/
+/node_modules/
+/vendor/
+Homestead.json
+Homestead.yaml
+Thumbs.db
+_bmad-output/
+_docs
+_docs/
+app/storage/
+archive/
+bashscripts/
+bootstrap/compiled.php
+build/
+cache/
+composer.lock
+config/Config
+config/config
+config/development.php
+config/local.php
+database/Factories_
+database/Factories_old
+database/Factories_old/
+database/Migrations_old
+database/Migrations_old/
+database/Seeders_old
+database/Seeders_old/
+database_old
+database_old/
+dist/
+docs/**/*-[0-9].md
+docs/archive/
+docs/archive/**
+docs/cache/
+docs/phpstan/
+ehthumbs.db
+error_log
+lang/lang/
+laravel
+laravel/
+legacy/
+lerna-debug.log*
+node_modules/
+notification_test_data.json
+npm-debug.log
+npm-debug.log*
+package-lock.json
+phpmd.ruleset.xml
+phpmd.ruleset.xml.bak
+phpmd.xml
+phpstan*
+public/hot
+public/storage
+public_html
+public_html/hot
+public_html/storage
+rector.php
+resources/views/Components_old
+resources/views/Components_old/
+storage/*.key
+storage/notifications/
+storage/queue/
+test_notifications.sql
+v8-compile-cache-*
+vendor/
+workbench
+workbench/
+yarn-error.log
+yarn-error.log*
+yarn.lock
+
+# Root quality tool configs forbidden in module root
+phpmd*
+reports
+
+# Cartelle di configurazione IDE: non stanno nella root di un modulo o di un tema.
+# Sono impostazioni personali di chi sviluppa, non contratto del modulo, e su un
+# repository condiviso fra basi diverse producono conflitti a ogni sync (XOT-5.38).
+.devcontainer/
+.vscode/
+reports/
+graphify-out/
+docs/_archive
+docs/archived
+
+# Module-root dumps / quality configs (SSoT: laravel/phpunit.xml)
+phpunit.xml
+phpunit.xml.dist
+*.code-workspace
+.github/DISCUSSION_CONTENT/
+/*.md
+!/README.md
+!/CHANGELOG.md
+!/LICENSE.md
+

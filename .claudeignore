@@ -1,0 +1,33 @@
+# .claudeignore — keeps large/noisy paths out of context window (not code exclusion, only context)
+# Same syntax as .gitignore. Added 2026-07-24 per token-efficiency research.
+
+# Dependencies (huge, regenerable via composer/npm)
+laravel/vendor/
+laravel/node_modules/
+node_modules/
+
+# Compiled/build output (regenerable, never hand-edited)
+laravel/public/build/
+laravel/bootstrap/cache/
+laravel/storage/framework/
+laravel/storage/logs/
+laravel/storage/pail/
+public/build/
+*.min.js
+*.min.css
+*.map
+
+# Lock files (huge, rarely need full read — grep specific package instead)
+composer.lock
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Caches
+.phpunit.result.cache
+/build/
+.qmd/
+node_modules/.cache/
+
+# VCS internals
+.git/

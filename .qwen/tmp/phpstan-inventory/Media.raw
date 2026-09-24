@@ -1,0 +1,2 @@
+/var/www/_bases/base_techplanner_fila5/laravel/Modules/Media/app/Models/Media.php:99:Class Modules\Media\Models\Media uses generic trait Modules\Xot\Models\Traits\HasXotFactory but does not specify its types: TModel
+/var/www/_bases/base_techplanner_fila5/laravel/Modules/Media/app/Models/TemporaryUpload.php:74:Class Modules\Media\Models\TemporaryUpload uses generic trait Modules\Xot\Models\Traits\HasXotFactory but does not specify its types: TModel
