@@ -1,4 +1,7 @@
 ---
+qmd: "phpstan probe model removal"
+issues: []
+discussions: []
 title: "Rimozione probe model PHPStan (GdprPhpstanTraitProbe)"
 type: concept
 module: Gdpr

@@ -1,3 +1,9 @@
+---
+title: "Xot - array-keys-rule.md"
+module: Xot
+bmad: true
+status: active
+---
 # Array Keys Rule for Filament Schemas
 
 ## Regola
@@ -82,7 +88,11 @@ public static function getTableColumns(): array
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< HEAD
 public function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -98,7 +108,11 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public function getInfolistSchema(): array
 =======
+<<<<<<< HEAD
 public function getInfolistSchema(): array
+=======
+public function getInfolistSchema(): array
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [

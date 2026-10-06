@@ -25,11 +25,11 @@ final class SendPushNotificationAction
     private PushNotificationPlatformDelivery $delivery;
 
     /** @var list<string> */
-    private array $platformNames = ["fcm", "apns", "webpush"];
+    private array $platformNames = ['fcm', 'apns', 'webpush'];
 
     public function __construct(?PushNotificationPlatformDelivery $delivery = null)
     {
-        $this->delivery = $delivery ?? new PushNotificationPlatformDelivery();
+        $this->delivery = $delivery ?? new PushNotificationPlatformDelivery;
     }
 
     /**
@@ -46,8 +46,8 @@ final class SendPushNotificationAction
     /**
      * @param  array<string, mixed>  $notification
      * @param  array<string, mixed>  $data
-     * @param array<string, mixed> $notification
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $notification
+     * @param  array<string, mixed>  $data
      * @return array<string, array<string, mixed>>
      */
     public function sendToDevice(string $token, array $notification, array $data = []): array
@@ -295,4 +295,3 @@ final class SendPushNotificationAction
         return $this->sendToDevices($tokens, $notification, $data);
     }
 }
-    

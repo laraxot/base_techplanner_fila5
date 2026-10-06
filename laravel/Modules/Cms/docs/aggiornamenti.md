@@ -1,4 +1,18 @@
 ---
+qmd: "aggiornamenti"
+issues: []
+discussions: []
+title: "Aggiornamenti"
+---
+
+---
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "aggiornamenti"
+issues: []
+discussions: []
 title: Aggiornamenti
 description: Aggiornamenti
 extends: _layouts.documentation

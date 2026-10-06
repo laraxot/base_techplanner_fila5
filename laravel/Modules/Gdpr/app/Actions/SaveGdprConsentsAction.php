@@ -18,14 +18,13 @@ class SaveGdprConsentsAction
      * Save all GDPR consents for a user.
      *
      * @param array<string, bool> $consents Associative array of consent properties (privacy_accepted, terms_accepted, etc.)
-     * @param array<string, bool> $consents Associative array of consent properties (privacy_accepted, terms_accepted, etc.)
      */
     public function execute(User $user, array $consents, ?string $ipAddress = null, ?string $userAgent = null): void
     {
         $ipAddress ??= request()->ip();
         $userAgent ??= request()->userAgent();
 
-        $treatments = Treatment::whereIn('name', [
+        $treatments = Treatment::query()->whereIn('name', [
             'privacy_policy',
             'terms_conditions',
             'marketing_consent',
@@ -42,7 +41,7 @@ class SaveGdprConsentsAction
             $treatment = $treatments->get($treatmentName);
 
             if ($treatment) {
-                Consent::create([
+                Consent::query()->create([
                     'user_id' => $user->id,
                     'user_type' => $user::class,
                     'treatment_id' => $treatment->id,

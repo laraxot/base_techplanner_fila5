@@ -26,6 +26,7 @@ tests/AuditCoverage/
 # -----------------------------------------------------------------------------
 # IDE / AI tools
 # -----------------------------------------------------------------------------
+# IDE / AI tools
 
 .cursor/
 .vscode/
@@ -35,6 +36,7 @@ tests/AuditCoverage/
 # -----------------------------------------------------------------------------
 # AI / local tooling output
 # -----------------------------------------------------------------------------
+# AI / local tooling output
 
 graphify-out/
 .headroom/
@@ -42,6 +44,7 @@ graphify-out/
 # -----------------------------------------------------------------------------
 # Logs, caches and temporary files
 # -----------------------------------------------------------------------------
+# Logs, caches and temporary files
 
 *.log
 *.phar
@@ -61,6 +64,7 @@ logs/
 # -----------------------------------------------------------------------------
 # Environment files
 # -----------------------------------------------------------------------------
+# Environment files
 
 .env
 .env.docker
@@ -69,6 +73,7 @@ logs/
 # -----------------------------------------------------------------------------
 # Dependencies / generated assets
 # -----------------------------------------------------------------------------
+# Dependencies / generated assets
 
 vendor/
 node_modules/
@@ -85,6 +90,11 @@ package-lock.json
 # -----------------------------------------------------------------------------
 # Public HTML generated/vendor assets
 # -----------------------------------------------------------------------------
+# Package manager files
+
+package-lock.json
+
+# Public HTML generated/vendor assets
 
 public_html/vendor/
 public_html/js/
@@ -96,6 +106,7 @@ public_html/chart/
 # -----------------------------------------------------------------------------
 # Laravel generated / local files
 # -----------------------------------------------------------------------------
+# Laravel generated / local files
 
 laravel/
 laravel/*.lock
@@ -154,6 +165,7 @@ rector.php
 # -----------------------------------------------------------------------------
 # Documentation / generated screenshots
 # -----------------------------------------------------------------------------
+# Documentation / generated screenshots
 
 docs/screenshots/
 .cursor
@@ -209,3 +221,10 @@ docs/graphify/graphify-out/
 /.vscode/
 .cursor~*
 .windsurf~*
+
+# Artefatti audit vietati (rule: tests-auditcoverage-forbidden)
+audit-coverage/
+
+/.github/skills/
+.github/skills
+/docs/graphify/

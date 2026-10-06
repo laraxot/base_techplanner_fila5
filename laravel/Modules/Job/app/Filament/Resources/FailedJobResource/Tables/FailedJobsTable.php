@@ -9,6 +9,7 @@ use Filament\Notifications\Notification;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\DB;
 use Modules\Job\Models\FailedJob;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
@@ -53,7 +54,7 @@ class FailedJobsTable extends XotBaseResourceTable
                 ->requiresConfirmation()
                 ->color('danger')
                 ->action(static function (): void {
-                    FailedJob::truncate();
+                    DB::table((new FailedJob())->getTable())->truncate();
                     Notification::make()
                         ->title('All failed jobs have been removed.')
                         ->success()

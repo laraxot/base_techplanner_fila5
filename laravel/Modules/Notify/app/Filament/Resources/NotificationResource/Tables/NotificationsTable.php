@@ -46,8 +46,11 @@ class NotificationsTable extends XotBaseResourceTable
             'type' => TextColumn::make('type')->searchable()->sortable()->badge()->wrap(),
             'notifiable_type' => TextColumn::make('notifiable_type')->searchable()->sortable()->toggleable(isToggledHiddenByDefault: true),
             'notifiable_id' => TextColumn::make('notifiable_id')->searchable()->sortable(),
+            'notifiable' => TextColumn::make('notifiable.name')->toggleable(isToggledHiddenByDefault: true),
+            'data' => TextColumn::make('data')->toggleable(isToggledHiddenByDefault: true),
             'read_at' => TextColumn::make('read_at')->dateTime()->sortable(),
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
+            'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable()->toggleable(isToggledHiddenByDefault: true),
             'id' => TextColumn::make('id')->searchable()->sortable()->toggleable(isToggledHiddenByDefault: true),
         ];
     }

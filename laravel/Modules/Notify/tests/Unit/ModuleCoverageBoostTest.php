@@ -62,7 +62,7 @@ describe('Notify coverage boost', function (): void {
                     Assert::assertTrue($ref->hasMethod('execute') || $ref->hasMethod('handle'));
                 }
             }
-            Assert::assertStringContainsString('', XotBasePest::reflectionSource($class));
+            Assert::assertStringContainsString('declare(strict_types=1);', XotBasePest::reflectionSource($class));
         }
     });
 

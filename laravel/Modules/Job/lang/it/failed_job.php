@@ -84,6 +84,6 @@ return [
         'sort' => 93,
         'icon' => 'job-failed-job',
     ],
-    'label' => 'failed job',
+    'label' => 'Job fallito',
     'plural_label' => 'Failed Job (Plurale)',
 ];

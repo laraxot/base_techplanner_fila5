@@ -1,4 +1,7 @@
 ---
+qmd: "index"
+issues: []
+discussions: []
 title: "concepts index — Gdpr"
 type: index
 tags: [concepts, Gdpr]

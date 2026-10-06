@@ -5,7 +5,7 @@ declare(strict_types=1);
 return [
     'fields' => [
         'address' => [
-            'label' => 'address',
+            'label' => 'Indirizzo',
             'country' => ['label' => 'address.country'],
             'street' => ['label' => 'address.street'],
             'city' => ['label' => 'address.city'],

@@ -92,6 +92,18 @@
                 $displayValue = $field->formatState($value);
                 $isHtmlValue = $field->isHtml();
             }
+
+            // PHP 8.4: enum/oggetti senza __toString() non possono essere castati in stringa da Blade.
+            if ($displayValue instanceof \UnitEnum) {
+                $enumLabel = $displayValue instanceof \Filament\Support\Contracts\HasLabel
+                    ? $displayValue->getLabel()
+                    : ($displayValue instanceof \BackedEnum ? $displayValue->value : $displayValue->name);
+                $displayValue = $enumLabel instanceof \Illuminate\Contracts\Support\Htmlable
+                    ? $enumLabel->toHtml()
+                    : (string) $enumLabel;
+            } elseif (is_object($displayValue) && ! method_exists($displayValue, '__toString')) {
+                $displayValue = $displayValue::class;
+            }
         @endphp
 
         @if ($isInteractiveColumn)

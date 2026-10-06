@@ -1,3 +1,9 @@
+---
+bmad_status: active
+scope: ui-docs
+updated: 2026-10-06
+---
+
 # Correzione Errori PHPStan - RadioBadge.php
 
 ## Data Aggiornamento

@@ -17,13 +17,13 @@ use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Schema;
 use Illuminate\Filesystem\FilesystemAdapter;
 use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\Lang;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 use Modules\Media\Actions\CloudFront\GetCloudFrontSignedUrlAction;
 use Modules\Media\Filament\Clusters\Test;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Pages\XotBasePage;
-use Override;
 use Webmozart\Assert\Assert;
 
 use function Safe\file_put_contents;
@@ -168,7 +168,7 @@ class S3Test extends XotBasePage
         $this->updateDebugOutput();
 
         Notification::make()
-            ->title(__('media::s3test.notifications.credentials_tested'))
+            ->title(Lang::string('media::s3test.notifications.credentials_tested'))
             ->success()
             ->send();
     }
@@ -182,7 +182,7 @@ class S3Test extends XotBasePage
         $this->updateDebugOutput();
 
         Notification::make()
-            ->title(__('media::s3test.notifications.bucket_policy_tested'))
+            ->title(Lang::string('media::s3test.notifications.bucket_policy_tested'))
             ->success()
             ->send();
     }
@@ -196,7 +196,7 @@ class S3Test extends XotBasePage
         $this->updateDebugOutput();
 
         Notification::make()
-            ->title(__('media::s3test.notifications.file_operations_tested'))
+            ->title(Lang::string('media::s3test.notifications.file_operations_tested'))
             ->success()
             ->send();
     }
@@ -210,7 +210,7 @@ class S3Test extends XotBasePage
         $this->updateDebugOutput();
 
         Notification::make()
-            ->title(__('media::s3test.notifications.config_debugged'))
+            ->title(Lang::string('media::s3test.notifications.config_debugged'))
             ->success()
             ->send();
     }
@@ -224,7 +224,7 @@ class S3Test extends XotBasePage
         $this->updateDebugOutput();
 
         Notification::make()
-            ->title(__('media::s3test.notifications.results_cleared'))
+            ->title(Lang::string('media::s3test.notifications.results_cleared'))
             ->success()
             ->send();
     }
@@ -239,8 +239,8 @@ class S3Test extends XotBasePage
         if (! $filePath) {
             Notification::make()
                 ->warning()
-                ->title(__('media::s3test.notifications.no_attachment'))
-                ->body(__('media::s3test.notifications.upload_file_first'))
+                ->title(Lang::string('media::s3test.notifications.no_attachment'))
+                ->body(Lang::string('media::s3test.notifications.upload_file_first'))
                 ->send();
 
             return;
@@ -259,7 +259,7 @@ class S3Test extends XotBasePage
             'signed_url' => $signedUrl,
         ]);
         Notification::make()
-            ->title(__('media::s3test.notifications.config_debugged'))
+            ->title(Lang::string('media::s3test.notifications.config_debugged'))
             ->success()
             ->send();
     }
@@ -590,7 +590,7 @@ class S3Test extends XotBasePage
     private function getDebugOutput(): string
     {
         if (empty($this->debugResults)) {
-            return __('media::s3test.debug.run_tests_message');
+            return Lang::string('media::s3test.debug.run_tests_message');
         }
 
         $output = [];
@@ -641,8 +641,8 @@ class S3Test extends XotBasePage
             if (! $filePath) {
                 Notification::make()
                     ->warning()
-                    ->title(__('media::s3test.notifications.no_attachment'))
-                    ->body(__('media::s3test.notifications.upload_file_first'))
+                    ->title(Lang::string('media::s3test.notifications.no_attachment'))
+                    ->body(Lang::string('media::s3test.notifications.upload_file_first'))
                     ->send();
 
                 return;
@@ -660,8 +660,8 @@ class S3Test extends XotBasePage
 
             Notification::make()
                 ->success()
-                ->title(__('media::s3test.notifications.email_sent'))
-                ->body(__('media::s3test.notifications.email_with_attachment'))
+                ->title(Lang::string('media::s3test.notifications.email_sent'))
+                ->body(Lang::string('media::s3test.notifications.email_with_attachment'))
                 ->send();
         } catch (Exception $e) {
             Log::error('S3 Test Email Failed', [
@@ -672,7 +672,7 @@ class S3Test extends XotBasePage
 
             Notification::make()
                 ->danger()
-                ->title(__('media::s3test.notifications.email_failed'))
+                ->title(Lang::string('media::s3test.notifications.email_failed'))
                 ->body($e->getMessage())
                 ->send();
         }
@@ -804,8 +804,8 @@ class S3Test extends XotBasePage
 
             Notification::make()
                 ->success()
-                ->title(__('media::s3test.notifications.s3_test_successful'))
-                ->body(__('media::s3test.notifications.operations_completed'))
+                ->title(Lang::string('media::s3test.notifications.s3_test_successful'))
+                ->body(Lang::string('media::s3test.notifications.operations_completed'))
                 ->send();
 
             // Log results for debugging
@@ -813,7 +813,7 @@ class S3Test extends XotBasePage
         } catch (Exception $e) {
             Notification::make()
                 ->danger()
-                ->title(__('media::s3test.notifications.test_failed'))
+                ->title(Lang::string('media::s3test.notifications.test_failed'))
                 ->body($e->getMessage())
                 ->send();
 

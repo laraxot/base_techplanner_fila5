@@ -59,6 +59,8 @@ return [
         'close_menu' => 'Chiudi menu principale',
         'home' => 'Home',
         'dashboard' => 'Dashboard',
+        'primary' => 'Navigazione principale',
+        'learn_more' => 'Scopri di più',
         'profile' => 'Profilo',
         'settings' => 'Impostazioni',
     ],

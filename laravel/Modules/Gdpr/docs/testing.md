@@ -1,3 +1,18 @@
+---
+qmd: "testing"
+issues: []
+discussions: []
+title: "Testing"
+type: documentation
+tags: [gdpr, module]
+created: 2026-10-06
+updated: 2026-10-06
+title: "Gdpr — testing"
+type: guide
+module: Gdpr
+updated: 2026-09-24
+---
+
 # Testing Documentation
 
 ## Overview
@@ -370,3 +385,12 @@ Remember: Good tests are the foundation of reliable software development.
 ---
 
 *
+
+## Quick reference (migrato da `TESTING.md` in root, 2026-09-24)
+
+```bash
+./vendor/bin/pest Modules/Gdpr/tests --filter="TestName"
+```
+
+- Coverage report: [coverage.md](./coverage.md) (auto-generated). Target: >= 85% coverage.
+- Base test patterns: Xot module docs (`Modules/Xot/docs/testing.md`).

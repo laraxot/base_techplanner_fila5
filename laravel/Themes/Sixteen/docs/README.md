@@ -1,3 +1,14 @@
+---
+title: "README"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "README"
+issues: []
+discussions: []
+---
+
 # Sixteen
 
 [![Module](https://img.shields.io/badge/Module-Sixteen-8B0000.svg)]()
@@ -11,8 +22,11 @@
 
 > **🇮🇹 Biglietto da visita (IT) · 🇬🇧 Business card (EN)**
 
-## Overview
-The Sixteen theme is the primary frontend theme for the Fixcity application, built on top of Bootstrap Italia (Design Comuni) framework. It provides a modern, accessible, and responsive interface for all application features.
+## Perché esiste
+
+🇮🇹 [Biglietto da visita (IT)](../README.md) · 🇬🇧 [Business card (EN)](./readme-en.md)
+
+## Superpoteri
 
 - **Bootstrap Italia**: Complete Bootstrap Italia framework integration
 - **Design System**: Consistent design language across all components
@@ -30,4 +44,12 @@ The Sixteen theme is the primary frontend theme for the Fixcity application, bui
 
 ---
 
+title: "README"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "README"
+issues: []
+discussions: []
 **Modulo** `Sixteen` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5

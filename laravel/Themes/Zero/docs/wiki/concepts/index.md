@@ -20,7 +20,11 @@ qmd search "Zero concepts" --limit 5
 
 ## See Also
 
+<<<<<<< HEAD
 - [Root Trigger Map](../../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
+=======
+- [Root Trigger Map](../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
+>>>>>>> laraxot/dev
 - [Filament 5 Schema (non Form)](./filament-v5-schema-not-form.md) — correzione vs docs legacy Schema→Form
 - [Wiki index](../index.md)
 
@@ -31,6 +35,7 @@ qmd search "Zero concepts" --limit 5
 
 - [jpgraph-guide.md](jpgraph-guide.md) — guida JpGraph 4.4.2 (charts server-side)
 - [filament-nested-resources.md](filament-nested-resources.md) — nested resources Filament 5
+<<<<<<< HEAD
 
 
 ---
@@ -53,3 +58,5 @@ qmd search "Zero concepts" --limit 5
 
 ---
 *Updated: 2026-05-11*
+=======
+>>>>>>> laraxot/dev

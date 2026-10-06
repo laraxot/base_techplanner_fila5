@@ -1,0 +1,12 @@
+{
+  "title": "TechPlanner",
+  "slug": "techplanner",
+  "status": "published",
+  "order": 9,
+  "content": {
+    "hero": {
+      "title": "TechPlanner",
+      "subtitle": "Pianificazione tecnologica avanzata"
+    }
+  }
+}

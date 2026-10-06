@@ -30,7 +30,11 @@ Se una Blade/report mescola i due, la soglia di diritto e i totali PDF divergono
 
 Il tema **non** ricalcola né scrive colonne: consuma il valore già materializzato dall’accessor Sigma / form Filament.
 
+<<<<<<< HEAD
 Audit moduli (replica vs unione): [criteri-gg-theme-boundary-audit](./criteri-gg-theme-boundary-audit.md) · [Ptv taxonomy](../../../../../Modules/Ptv/docs/wiki/concepts/criteri-esclusione-action-taxonomy.md).
+=======
+Audit moduli (replica vs unione): [criteri-gg-theme-boundary-audit](./criteri-gg-theme-boundary-audit.md) · [Ptv taxonomy](../../../../Modules/Ptv/docs/wiki/concepts/criteri-esclusione-action-taxonomy.md).
+>>>>>>> laraxot/dev
 
 ## Regola tema
 
@@ -41,5 +45,9 @@ Audit moduli (replica vs unione): [criteri-gg-theme-boundary-audit](./criteri-gg
 ## Collegamenti
 
 - [performance-actions-reference](../../performance-actions-reference.md)
+<<<<<<< HEAD
 - [Sigma gg-integ-params-no-asz](../../../../../Modules/Sigma/docs/wiki/concepts/gg-integ-params-no-asz.md)
+=======
+- [Sigma gg-integ-params-no-asz](../../../../Modules/Sigma/docs/wiki/concepts/gg-integ-params-no-asz.md)
+>>>>>>> laraxot/dev
 - [Regola isomorfismo](../../../../../../docs/wiki/rules/criterio-esclusione-field-isomorphism.md)

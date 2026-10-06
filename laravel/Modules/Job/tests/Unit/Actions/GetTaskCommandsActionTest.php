@@ -3,14 +3,16 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Actions;
-use function Safe\class_uses;
+
 use Illuminate\Support\Collection;
 use Modules\Job\Actions\GetTaskCommandsAction;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+use function Safe\class_uses;
 use function Safe\file_get_contents;
 
-uses(\Modules\Job\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('GetTaskCommandsAction', function (): void {
     test('can be instantiated', function (): void {

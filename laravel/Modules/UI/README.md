@@ -1,4 +1,19 @@
 ---
+<<<<<<< .merge_file_OyTMki
+<<<<<<< .merge_file_AxADFU
+title: "UI — componenti condivisi"
+type: module-readme
+module: UI
+status: active
+tags: [ui, components, filament, module]
+created: 2026-09-26
+updated: 2026-09-28
+qmd: "README"
+issues: []
+discussions: []
+=======
+=======
+>>>>>>> .merge_file_0H5dxY
 id: module-ui-readme
 title: "UI — Componenti Visuali Condivisi"
 type: module-readme
@@ -16,10 +31,23 @@ discussions:
 related:
   - "./docs/"
 sources: []
+<<<<<<< .merge_file_OyTMki
+>>>>>>> .merge_file_B9TIk1
+=======
+>>>>>>> .merge_file_0H5dxY
 ---
 
 # 🎨 UI
 
+<<<<<<< .merge_file_OyTMki
+<<<<<<< .merge_file_AxADFU
+[![Domain-UI](https://img.shields.io/badge/Domain-UI%20Kit-7B1FA2.svg)](#)
+[![Laravel 13](https://img.shields.io/badge/Laravel-13-red.svg)](https://laravel.com/)
+[![Filament 5](https://img.shields.io/badge/Filament-5-ffab00.svg)](https://filamentphp.com/)
+[![PHP 8.3+](https://img.shields.io/badge/PHP-8.3+-777BB4.svg)](https://php.net/)
+=======
+=======
+>>>>>>> .merge_file_0H5dxY
 [![Stars](https://img.shields.io/github/stars/laraxot/module_ui_fila5?style=plastic&color=yellow)]()
 [![Forks](https://img.shields.io/github/forks/laraxot/module_ui_fila5?style=plastic&color=green)]()
 [![Issues](https://img.shields.io/github/issues/laraxot/module_ui_fila5?style=plastic&color=red)]()
@@ -30,6 +58,10 @@ sources: []
 [![Filament](https://img.shields.io/badge/Filament-5-ffab00?style=for-the-badge)](https://filamentphp.com/)
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)
 [![Architecture](https://img.shields.io/badge/Architecture-Modular-purple?style=plastic)]()
+<<<<<<< .merge_file_OyTMki
+>>>>>>> .merge_file_B9TIk1
+=======
+>>>>>>> .merge_file_0H5dxY
 [![PHPStan Level 10](https://img.shields.io/badge/PHPStan-Level%2010-brightgreen.svg)](https://phpstan.org/)
 [![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue.svg)](https://www.php-fig.org/psr/psr-12/)
 [![Strict Types](https://img.shields.io/badge/PHP-strict__types-1-informational.svg)](#)
@@ -37,6 +69,35 @@ sources: []
 > **Componenti UI riutilizzabili e design system**
 > Componenti UI, layout, temi e pattern di design per Filament v5, senza logica di dominio.
 
+<<<<<<< .merge_file_OyTMki
+<<<<<<< .merge_file_AxADFU
+## Perché esiste
+=======
+## 🎯 La Visione
+
+Crediamo che il software debba essere **chiaro, modulare e potente**. Ogni modulo è stato pensato per risolvere problemi reali con soluzioni eleganti.
+>>>>>>> .merge_file_B9TIk1
+
+## Perché esiste questo modulo?
+
+**Componenti UI, layout, temi e pattern di design per Filament v5.**
+
+In un mondo dove la complessità è l'avere, abbiamo scritto codice semplice. Questo modulo non è solo una libreria: è una **promessa di qualità** mantenuta.
+
+## Cosa offre
+
+- **Blade/Livewire** — componenti riusabili
+- **Filament XotBase** — base per admin
+- **Accessibilità** — a11y conforme
+- **Tailwind/DaisyUI** — design system
+
+## Confini architetturali
+
+Questo modulo pubblica contratti usabili da altri moduli. La logica vive nelle `Actions`; la UI admin segue Laraxot/XotBase. Nessuna logica di dominio: quella resta nei moduli che la possiedono (vedi [docs/purpose.md](./docs/purpose.md)).
+
+## 🧘 I Principi Zen (e la nostra filosofia)
+
+=======
 ## 🎯 La Visione
 
 Crediamo che il software debba essere **chiaro, modulare e potente**. Ogni modulo è stato pensato per risolvere problemi reali con soluzioni eleganti.
@@ -60,6 +121,7 @@ Questo modulo pubblica contratti usabili da altri moduli. La logica vive nelle `
 
 ## 🧘 I Principi Zen (e la nostra filosofia)
 
+>>>>>>> .merge_file_0H5dxY
 1. **Semplicità vince sulla complessità** - Il codice chiaro è più potente di mille righe di commenti.
 2. **Modulare è dare vita** - Ogni pezzo può vivere da solo, ma insieme diventa un universo.
 3. **Documentare è onniscienza** - La mancanza di documentazione è la paura del futuro.
@@ -88,6 +150,7 @@ composer dev
 ./vendor/bin/pest Modules/UI/tests
 ./vendor/bin/phpstan analyse Modules/UI --memory-limit=-1
 ```
+<<<<<<< .merge_file_OyTMki
 
 Configuration is in `config/config.php`. Adjust as needed.
 
@@ -100,6 +163,20 @@ composer dev
 ./vendor/bin/phpstan analyse Modules/UI --memory-limit=-1
 ```
 
+=======
+
+Configuration is in `config/config.php`. Adjust as needed.
+
+## 🤝 Contributing
+
+```bash
+cd laravel
+composer dev
+./vendor/bin/pest Modules/UI/tests
+./vendor/bin/phpstan analyse Modules/UI --memory-limit=-1
+```
+
+>>>>>>> .merge_file_0H5dxY
 **Before submitting:**
 - [ ] Tests pass
 - [ ] PHPStan L10 passes
@@ -119,7 +196,12 @@ See [docs/architecture.md](./docs/architecture.md) for design decisions.
 | 🎯 Esempi | [docs/examples/](./docs/examples/) |
 | 📋 Story BMAD | [docs/stories/](./docs/stories/) |
 | 🏗️ Architettura | [docs/architecture.md](./docs/architecture.md) |
+<<<<<<< HEAD
 | 🧪 Testing | [docs/root-md-files/testing.md](./docs/root-md-files/testing.md) |
+=======
+| 🧪 Testing | [docs/testing.md](./docs/testing.md) |
+| 🧭 Filosofia | [docs/philosophy.md](./docs/philosophy.md) |
+>>>>>>> laraxot/dev
 | 📜 Changelog | [CHANGELOG.md](./CHANGELOG.md) |
 | 📐 Regole del progetto | [../../../docs/wiki/](../../../docs/wiki/) |
 | 🏠 README del progetto | [../../../README.md](../../../README.md) |
@@ -136,4 +218,38 @@ Mantenere `declare(strict_types=1);` in PHP, aderire alla configurazione PHPStan
 
 ---
 
+<<<<<<< .merge_file_OyTMki
+<<<<<<< .merge_file_AxADFU
+**Modulo** `ui` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+---
+
+## Scheda tecnica verificata (2026-09-28)
+
+| Voce | Valore |
+|---|---|
+| Nome dichiarato | `UI` |
+| Namespace | `Modules\\UI\\` |
+| File PHP (escluso vendor) | 737 |
+| File PHP di test | 77 |
+| Aree `app/` rilevate | Actions, Adapters, Contracts, Data, Datas, Enums, Filament, Forms, Http, Models, Providers, Rules, Services, Traits, View |
+| Migrazioni PHP | 11 |
+| SSoT locale | [`docs/`](docs/) e [`docs/bmad/`](docs/bmad/) |
+
+Questa scheda è un inventario statico, non una dichiarazione di qualità. Per ogni
+modifica eseguire i gate dal progetto Laravel:
+
+```bash
+cd laravel
+php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/UI
+./vendor/bin/pest Modules/UI
+```
+
+La responsabilità del modulo, le decisioni architetturali e le opportunità sono
+documentate negli artefatti BMAD sotto [`docs/bmad/`](docs/bmad/). I numeri vanno
+rigenerati quando il modulo cambia; non copiarli in badge non verificati.
+=======
 **Modulo** `UI` · **Laraxot ecosystem** · **Project-agnostic** · PHPStan 10 · Filament 5
+>>>>>>> .merge_file_B9TIk1
+=======
+**Modulo** `UI` · **Laraxot ecosystem** · **Project-agnostic** · PHPStan 10 · Filament 5
+>>>>>>> .merge_file_0H5dxY

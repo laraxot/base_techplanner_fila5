@@ -7,7 +7,7 @@ module: Notify
 status: active
 tags: [notify, notifications, channels, templates]
 created: 2026-09-14
-updated: 2026-09-14
+updated: 2026-09-28
 qmd: "notify notifications mail push sms templates queue module documentation"
 issues:
   - "https://github.com/laraxot/module_notify_fila5/issues/68"
@@ -62,3 +62,29 @@ Le modifiche devono mantenere `declare(strict_types=1);` nel codice PHP, rispett
 ---
 
 **Modulo** `notify` · **Laraxot ecosystem** · **Project-agnostic**
+---
+
+## Scheda tecnica verificata (2026-09-28)
+
+| Voce | Valore |
+|---|---|
+| Nome dichiarato | `Notify` |
+| Namespace | `Modules\\Notify\\` |
+| File PHP (escluso vendor) | 755 |
+| File PHP di test | 158 |
+| Aree `app/` rilevate | Actions, Channels, Console, Contracts, Datas, Emails, Enums, Facades, Factories, Filament, Helpers, Http, Jobs, Mail, Models, Notifications, Phpstan, Providers, Services, Support, Traits |
+| Migrazioni PHP | 57 |
+| SSoT locale | [`docs/`](docs/) e [`docs/bmad/`](docs/bmad/) |
+
+Questa scheda è un inventario statico, non una dichiarazione di qualità. Per ogni
+modifica eseguire i gate dal progetto Laravel:
+
+```bash
+cd laravel
+php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/Notify
+./vendor/bin/pest Modules/Notify
+```
+
+La responsabilità del modulo, le decisioni architetturali e le opportunità sono
+documentate negli artefatti BMAD sotto [`docs/bmad/`](docs/bmad/). I numeri vanno
+rigenerati quando il modulo cambia; non copiarli in badge non verificati.

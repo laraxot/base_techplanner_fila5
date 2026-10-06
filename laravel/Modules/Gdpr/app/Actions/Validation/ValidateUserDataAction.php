@@ -15,7 +15,14 @@ class ValidateUserDataAction
     use QueueableAction;
 
     /**
+     * <<<<<<< HEAD.
+     *
      * @param array<string, string> $formData
+     *                                        =======
+     * @param array<string, mixed>  $formData
+     * @param array<string, mixed>  $formData
+     * @param array<string, mixed>  $formData
+     *                                        >>>>>>> 12e4ae8 (chore: remove obsolete configuration and documentation files)
      *
      * @return array<string, mixed>
      */
@@ -25,7 +32,7 @@ class ValidateUserDataAction
 
         // Prevent duplicate email before hitting DB unique constraint.
         // User model already uses 'user' connection via $connection property
-        if (User::where('email', $email)->exists()) {
+        if (User::query()->where('email', $email)->exists()) {
             throw ValidationException::withMessages(['email' => [__('validation.unique', ['attribute' => 'email'])]]);
         }
 

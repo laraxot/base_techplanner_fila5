@@ -22,7 +22,7 @@ use function Safe\preg_replace;
  * Questo trait implementa la relazione polimorfica con il modello Address
  * e offre metodi di utilità per la gestione degli indirizzi.
  *
- * @template TModel of Model
+ * @template TModel of \Illuminate\Database\Eloquent\Model
  *
  * @property Collection<int, Address> $addresses
  * @property string|null $route
@@ -32,9 +32,7 @@ use function Safe\preg_replace;
  * @property string|null $province
  * @property string|int $id
  *
- * @phpstan-require-extends Model
- *
- * @phpstan-ignore trait.unused
+ * @phpstan-require-extends \Illuminate\Database\Eloquent\Model
  */
 trait HasAddress
 {
@@ -186,22 +184,24 @@ trait HasAddress
 
     /**
      * Imposta un indirizzo come principale e rimuove il flag da tutti gli altri.
+     *
+     * Non è un setter fluent: side-effect su più record Address. Nome storico `set*`;
+     * ritorno void (symplify.noReturnSetterMethod) e fallimento esplicito via exception.
+     *
+     * @throws \InvalidArgumentException se l'indirizzo non appartiene a questo modello
      */
-    public function setAsPrimaryAddress(Address $address): bool
+    public function setAsPrimaryAddress(Address $address): void
     {
-        // Verifica che l'indirizzo appartenga a questo modello
         if ($address->model_id !== $this->id || $address->model_type !== static::class) {
-            return false;
+            throw new \InvalidArgumentException('L\'indirizzo non appartiene a questo modello');
         }
 
-        // Rimuovi il flag is_primary da tutti gli altri indirizzi
         $this->addresses()
             ->where('id', '!=', $address->id)
             ->where('is_primary', true)
             ->update(['is_primary' => false]);
 
-        // Imposta questo indirizzo come principale
-        return $address->update(['is_primary' => true]);
+        $address->update(['is_primary' => true]);
     }
 
     /**
@@ -257,10 +257,9 @@ trait HasAddress
     /**
      * Scope: modelli con almeno un indirizzo nella città indicata (`locality`).
      *
-     * @param  Builder<static>  $query
-     * @return Builder<static>
+     * @param  Builder<TModel>  $query
+     * @return Builder<TModel>
      */
-    // @phpstan-ignore-next-line missingType.generics
     public function scopeInCity(Builder $query, string $city): Builder
     {
         return $query->whereHas(

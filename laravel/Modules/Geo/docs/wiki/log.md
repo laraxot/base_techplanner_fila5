@@ -1,3 +1,14 @@
+---
+title: "log"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "log"
+issues: []
+discussions: []
+---
+
 ## [2026-06-30] ponytail-audit | Phase 3 Finding 2 — BaseGeoService inlined into GoogleMapsService
 
 - **BaseGeoService eliminated** ✅
@@ -16,11 +27,23 @@
 - GitHub: [#272](https://github.com/laraxot/base_fixcity_fila5/issues/272) / [D#273](https://github.com/laraxot/base_fixcity_fila5/discussions/273)
 
 ---
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "log"
+issues: []
+discussions: []
 title: "Geo Wiki Activity Log"
 module: "Geo"
 ---
 
 # Geo - Wiki Activity Log
+
+## [2026-10-06] quality | GeoTrait coordinate validation
+
+- `scopeWithDistance` ora accetta coordinate valide negli emisferi sud/ovest e rifiuta solo valori non finiti o fuori range.
+- PHPStan `Modules`: 0 errori; Pint: OK.
 
 ## [2026-06-03] bmad | STORY-132 — filename JS solo inglese
 

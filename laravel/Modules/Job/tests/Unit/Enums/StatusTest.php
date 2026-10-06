@@ -3,12 +3,14 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Enums;
+
 use Modules\Job\Enums\Status;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
 use function Safe\file_get_contents;
 
-uses(\Modules\Job\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('Status', function () {
     it('is an enum', function () {

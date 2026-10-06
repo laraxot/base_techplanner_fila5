@@ -5,10 +5,13 @@ declare(strict_types=1);
 namespace Modules\Seo\Tests\Unit\Data;
 
 use Modules\Seo\Data\MetatagData;
+use Modules\Seo\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+uses(TestCase::class);
+
 it('returns sane defaults for empty data', function (): void {
-    $data = new MetatagData();
+    $data = new MetatagData;
 
     Assert::assertSame('', $data->getTitle());
     Assert::assertSame('', $data->getDescription());
@@ -87,7 +90,7 @@ it('returns explicit locale from data payload', function (): void {
 
     $data = new MetatagData(['url' => 123]);
     $url = $data->getUrl();
-    expect($url)->toBeString();
+    Assert::assertIsString($url);
 });
 
 it('falls back to en when app locale is not a string', function (): void {

@@ -35,16 +35,16 @@ abstract class TestCase extends XotBaseTestCase
             $driver = config("database.connections.{$connection}.driver");
 
             if ($driver === 'sqlite') {
-                $this->app['config']->set("database.connections.{$connection}.database", $database);
+                config(["database.connections.{$connection}.database" => $database]);
                 DB::purge($connection);
 
                 continue;
             }
 
             if ($driver === 'mysql') {
-                $this->app['config']->set("database.connections.{$connection}.driver", 'sqlite');
-                $this->app['config']->set("database.connections.{$connection}.database", $database);
-                $this->app['config']->set("database.connections.{$connection}.prefix", '');
+                config(["database.connections.{$connection}.driver" => 'sqlite']);
+                config(["database.connections.{$connection}.database" => $database]);
+                config(["database.connections.{$connection}.prefix" => '']);
                 DB::purge($connection);
             }
         }

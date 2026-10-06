@@ -24,6 +24,6 @@ declare(strict_types=1);
     </head>
     <body class="min-h-screen antialiased bg-white dark:bg-gradient-to-b dark:from-gray-950 dark:to-gray-900">
         {{ $slot }}
-        <livewire:toast />
+        @livewire(\Modules\UI\Filament\Widgets\ToastWidget::class)
     </body>
 </html>

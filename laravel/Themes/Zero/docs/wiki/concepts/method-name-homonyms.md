@@ -38,6 +38,7 @@ La ridondanza di business logic da monitorare sta nei **moduli** Laravel (`Sigma
 
 - [Indice censimento progetto](../../../docs/wiki/method-name-homonym-census.md)
 - [Ridondanza tema](./code-redundancy-theme.md)
+<<<<<<< HEAD
 - [Sigma — omonimi relazioni](../../../../../Modules/Sigma/docs/wiki/concepts/method-name-homonyms.md)
 - [Indice censimento progetto](../../../../../../docs/wiki/method-name-homonym-census.md)
 - [Ridondanza tema](./code-redundancy-theme.md)
@@ -49,11 +50,28 @@ La ridondanza di business logic da monitorare sta nei **moduli** Laravel (`Sigma
 - [Ridondanza tema](./code-redundancy-theme.md)
 - [Sigma — omonimi relazioni](../../../../../Modules/Sigma/docs/wiki/concepts/method-name-homonyms.md)
 - [Indice censimento progetto](../../../../../../docs/wiki/method-name-homonym-census.md)
+=======
+- [Sigma — omonimi relazioni](../../../../laravel/Modules/Sigma/docs/wiki/concepts/method-name-homonyms.md)
+- [Indice censimento progetto](../../../docs/wiki/method-name-homonym-census.md)
+>>>>>>> laraxot/dev
 - [Ridondanza tema](./code-redundancy-theme.md)
 - [Sigma — omonimi relazioni](../../../../laravel/Modules/Sigma/docs/wiki/concepts/method-name-homonyms.md)
 - [Indice censimento progetto](../../../../docs/wiki/method-name-homonym-census.md)
 - [Ridondanza tema](./code-redundancy-theme.md)
+<<<<<<< HEAD
 - [Sigma — omonimi relazioni](../../../../../Modules/Sigma/docs/wiki/concepts/method-name-homonyms.md)
+=======
+- [Sigma — omonimi relazioni](../../../Modules/Sigma/docs/wiki/concepts/method-name-homonyms.md)
+- [Indice censimento progetto](../../../docs/wiki/method-name-homonym-census.md)
+- [Ridondanza tema](./code-redundancy-theme.md)
+- [Sigma — omonimi relazioni](../../../../laravel/Modules/Sigma/docs/wiki/concepts/method-name-homonyms.md)
+- [Indice censimento progetto](../../../docs/wiki/method-name-homonym-census.md)
+- [Ridondanza tema](./code-redundancy-theme.md)
+- [Sigma — omonimi relazioni](../../../../laravel/Modules/Sigma/docs/wiki/concepts/method-name-homonyms.md)
+- [Indice censimento progetto](../../../../docs/wiki/method-name-homonym-census.md)
+- [Ridondanza tema](./code-redundancy-theme.md)
+- [Sigma — omonimi relazioni](../../../Modules/Sigma/docs/wiki/concepts/method-name-homonyms.md)
+>>>>>>> laraxot/dev
 
 ## Rigenerazione
 

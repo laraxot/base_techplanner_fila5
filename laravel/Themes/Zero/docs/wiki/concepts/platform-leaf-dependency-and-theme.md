@@ -35,6 +35,11 @@ sicure operazioni come lo spostamento CriteriPrecedenza → Ptv (2026-07-22): ze
 
 ## Canon
 
+<<<<<<< HEAD
 - [Legge completa](../../../../../../docs/wiki/rules/ptv-leaf-dependency-direction.md)
 - [Pattern Base* (Ptv)](../../../../../Modules/Ptv/docs/wiki/concepts/base-criteri-precedenza.md)
+=======
+- [Legge completa](../../../../../docs/wiki/rules/ptv-leaf-dependency-direction.md)
+- [Pattern Base* (Ptv)](../../../../Modules/Ptv/docs/wiki/concepts/base-criteri-precedenza.md)
+>>>>>>> laraxot/dev
 - [Confine struttura tema](./module-directory-structure-boundary.md)

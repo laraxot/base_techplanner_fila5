@@ -28,7 +28,7 @@ class SeoServiceProvider extends XotBaseServiceProvider
         $this->app->singleton(MetatagFacadeAdapter::class);
 
         $this->app->singleton(MetatagManager::class, function () {
-            return new MetatagManager();
+            return new MetatagManager;
         });
     }
 

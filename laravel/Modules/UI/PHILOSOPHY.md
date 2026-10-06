@@ -1,3 +1,14 @@
+---
+title: "PHILOSOPHY"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "PHILOSOPHY"
+issues: []
+discussions: []
+---
+
 # UI Module Philosophy
 
 Reusable components, design system, and patterns for Filament, Folio, and Volt across all 47 modules.

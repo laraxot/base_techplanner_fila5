@@ -125,7 +125,7 @@ function assertNotifyThrows(callable $callback, string $exceptionClass): void
 {
     try {
         $callback();
-    } catch (\Throwable $exception) {
+    } catch (Throwable $exception) {
         Assert::assertInstanceOf($exceptionClass, $exception);
 
         return;

@@ -1,3 +1,7 @@
+---
+title: Architecture
+module: Job
+---
 # Job Module Architecture
 
 ## Overview

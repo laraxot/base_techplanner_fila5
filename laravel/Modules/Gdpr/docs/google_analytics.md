@@ -1,9 +1,0 @@
-# Google Analytics
-
----
-module: theme
-topic: google_analytics
-canonical: ../../../Themes/docs/shared-components/google-analytics.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/google-analytics.md

@@ -10,13 +10,4 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 class ViewAbsenceRequest extends XotBaseViewRecord
 {
     protected static string $resource = AbsenceRequestResource::class;
-
-    /**
-     * @return array<string, \Filament\Schemas\Components\Component>
-     */
-    protected function getInfolistSchema(): array
-    {
-        return [];
-    }
-
 }

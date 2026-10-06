@@ -1,13 +1,12 @@
 <?php
 
 declare(strict_types=1);
-
 use Modules\Job\Models\Result;
 use Modules\Job\Models\Task;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Job\Tests\TestCase::class);
+uses(TestCase::class);
 
 it('can create result with basic information', function (): void {
     $task = Task::create([

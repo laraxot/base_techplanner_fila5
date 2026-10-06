@@ -1,3 +1,14 @@
+---
+title: "00 INDEX"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "00 INDEX"
+issues: []
+discussions: []
+---
+
 # AI Module - Documentation Index
 
 **Path**: `laravel/Modules/AI/docs/`
@@ -17,7 +28,7 @@
 ### Development
 | File | Scopo |
 |---|---|
-| [GSD_WORKFLOW.md](./GSD_WORKFLOW.md) | Workflow GSD locale al modulo |
+| [gsd-workflow.md](./gsd-workflow.md) | Workflow GSD locale al modulo |
 | [SPRINT_PLANNING.md](./SPRINT_PLANNING.md) | Sprint planning |
 | [USER_RESEARCH.md](./USER_RESEARCH.md) | User research |
 

@@ -24,7 +24,7 @@ describe('NetfunSendAction', function () {
     it('uses strict types', function () {
         $filename = (new ReflectionClass(NetfunSendAction::class))->getFileName();
         Assert::assertNotFalse($filename);
-        Assert::assertStringContainsString('', file_get_contents($filename));
+        Assert::assertStringContainsString('declare(strict_types=1);', file_get_contents($filename));
     });
 
     it('uses QueueableAction trait', function () {

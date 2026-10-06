@@ -8,6 +8,10 @@ qmd: "bmad method v63 operativo nel progetto"
 related:
   - "./schema.md"
 
+<<<<<<< HEAD
+=======
+  - "./SCHEMA.md"
+>>>>>>> laraxot/dev
   - "./bmad-method.md"
   - "./log.md"
 ---

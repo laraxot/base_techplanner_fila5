@@ -36,7 +36,11 @@ Dopo l’audit moduli (Ptv/Sigma/Progressioni): il tema **non** è il posto dove
 
 ## `MinGg*` = A_config (non consolidare nel tema né nei moduli)
 
+<<<<<<< HEAD
 Corpi *simili* ma campi diversi → **A_config**, non B_business. Il tema mostra valori materializzati; non unisce né ricalcola. Dettaglio: [duplicate-method-bodies Progressioni](../../../../../Modules/Progressioni/docs/wiki/concepts/duplicate-method-bodies.md) · [tassonomia Ptv](../../../../../Modules/Ptv/docs/wiki/concepts/criteri-esclusione-action-taxonomy.md).
+=======
+Corpi *simili* ma campi diversi → **A_config**, non B_business. Il tema mostra valori materializzati; non unisce né ricalcola. Dettaglio: [duplicate-method-bodies Progressioni](../../../../Modules/Progressioni/docs/wiki/concepts/duplicate-method-bodies.md) · [tassonomia Ptv](../../../../Modules/Ptv/docs/wiki/concepts/criteri-esclusione-action-taxonomy.md).
+>>>>>>> laraxot/dev
 
 ## Replica “giusta” vs “sbagliata” lato UI
 
@@ -47,6 +51,12 @@ Corpi *simili* ma campi diversi → **A_config**, non B_business. Il tema mostra
 
 - [gg-integ theme boundary](./gg-integ-params-no-asz-theme-boundary.md)
 - [performance-actions-reference](../../performance-actions-reference.md)
+<<<<<<< HEAD
 - [Ptv taxonomy](../../../../../Modules/Ptv/docs/wiki/concepts/criteri-esclusione-action-taxonomy.md)
 - [Progressioni duplicate bodies (A vs B)](../../../../../Modules/Progressioni/docs/wiki/concepts/duplicate-method-bodies.md)
 - [Sigma getter audit](../../../../../Modules/Sigma/docs/wiki/concepts/scheda-gg-getter-duplication-audit.md)
+=======
+- [Ptv taxonomy](../../../../Modules/Ptv/docs/wiki/concepts/criteri-esclusione-action-taxonomy.md)
+- [Progressioni duplicate bodies (A vs B)](../../../../Modules/Progressioni/docs/wiki/concepts/duplicate-method-bodies.md)
+- [Sigma getter audit](../../../../Modules/Sigma/docs/wiki/concepts/scheda-gg-getter-duplication-audit.md)
+>>>>>>> laraxot/dev

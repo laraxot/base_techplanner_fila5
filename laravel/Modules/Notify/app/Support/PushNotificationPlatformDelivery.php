@@ -24,9 +24,9 @@ final class PushNotificationPlatformDelivery
     public function __construct()
     {
         $this->config = [
-            "fcm" => ["server_key" => config("notify.fcm.server_key"), "url" => "https://fcm.googleapis.com/fcm/send"],
-            "apns" => ["certificate" => config("notify.apns.certificate"), "passphrase" => config("notify.apns.passphrase"), "url" => config("notify.apns.url")],
-            "webpush" => ["vapid_public" => config("notify.webpush.vapid_public"), "vapid_private" => config("notify.webpush.vapid_private"), "vapid_subject" => config("notify.webpush.vapid_subject")],
+            'fcm' => ['server_key' => config('notify.fcm.server_key'), 'url' => 'https://fcm.googleapis.com/fcm/send'],
+            'apns' => ['certificate' => config('notify.apns.certificate'), 'passphrase' => config('notify.apns.passphrase'), 'url' => config('notify.apns.url')],
+            'webpush' => ['vapid_public' => config('notify.webpush.vapid_public'), 'vapid_private' => config('notify.webpush.vapid_private'), 'vapid_subject' => config('notify.webpush.vapid_subject')],
         ];
     }
 

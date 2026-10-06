@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 id: module-media-readme
 title: "Media — File, Immagini, Video e Documenti"
@@ -8,7 +7,7 @@ module: Media
 status: active
 tags: [media, files, images, video, storage]
 created: 2026-09-14
-updated: 2026-09-14
+updated: 2026-09-28
 qmd: "media files images video ffmpeg storage cdn module documentation"
 issues:
   - "https://github.com/laraxot/module_media_fila5/issues/57"
@@ -32,6 +31,40 @@ Upload, storage, trasformazioni e distribuzione media locale o cloud.
 - **Video/FFmpeg** – transcodifica e processing
 - **S3/CDN** – distribuzione e caching
 
+<<<<<<< .merge_file_Aw7Iuk
+<<<<<<< .merge_file_HjRo7a
+## Funzionalità chiave
+
+### Upload & storage
+- Upload temporanei con tracciamento di sessione
+- Validazione automatica (MIME type, dimensione, estensioni)
+- Supporto multi-disk (local, S3, Minio, CloudFront)
+- Operazioni di attach atomiche
+
+### Elaborazione immagini
+- Trasformazioni Intervention Image (resize, crop, optimize)
+- Conversione formato (WebP, fallback AVIF)
+- Generazione thumbnail
+- Preservazione e sanitizzazione dati EXIF
+
+### Video
+- Pipeline di conversione FFmpeg (MP4, WebM, HLS)
+- Generazione ed embedding sottotitoli
+- Estrazione frame per thumbnail
+
+### Cloud
+- Supporto nativo AWS S3, URL firmati CloudFront per contenuti privati
+- Compatibilità Minio per deployment self-hosted
+
+## Dipendenze
+
+- `pbmedia/laravel-ffmpeg` e `intervention/image` (vedi `composer.json` per i vincoli correnti)
+- Pacchetti di sistema: `ffmpeg`, `imagemagick` o `gd`
+
+=======
+>>>>>>> .merge_file_Su0kLD
+=======
+>>>>>>> .merge_file_GKhRUC
 ## Confini architetturali
 
 This module publishes contracts usable by other modules. Logic lives in `Actions`; admin UI follows Laraxot/XotBase.
@@ -51,6 +84,17 @@ See local docs for integration patterns.
 The technical map is in [docs/README.md](./docs/README.md).
 
 - [Story BMAD del modulo](./docs/stories/)
+<<<<<<< .merge_file_Aw7Iuk
+<<<<<<< .merge_file_HjRo7a
+
+- [Architettura](./docs/architecture.md) · [Pattern](./docs/patterns.md) · [Troubleshooting](./docs/troubleshooting.md)
+- [FFmpeg](./docs/ffmpeg-usage.md) · [Performance](./docs/PERFORMANCE-OPTIMIZATION.md) · [Migrazioni](./docs/MIGRATIONS.md) · [Testing](./docs/testing-guidelines.md)
+- [Changelog](./CHANGELOG.md) · [Semantic release config](./.releaserc.json)
+
+=======
+>>>>>>> .merge_file_Su0kLD
+=======
+>>>>>>> .merge_file_GKhRUC
 - [Regole del progetto](../../../docs/wiki/)
 - [README del progetto](../../README.md)
 
@@ -61,7 +105,10 @@ Maintain `declare(strict_types=1);` in PHP, adhere to project PHPStan config, an
 ---
 
 **Modulo** `media` · **Laraxot ecosystem** · **Project-agnostic**
-=======
+<<<<<<< .merge_file_Aw7Iuk
+<<<<<<< .merge_file_HjRo7a
+
+---
 # Media Module — File Storage & Transformation
 
 **Last updated:** 2026-07-28
@@ -148,4 +195,33 @@ Complete media management for the Laraxot ecosystem: image optimization, video e
 ---
 
 **Quick links:** [Index](./docs/INDEX.md) | [Patterns](./docs/PATTERNS.md) | [Troubleshooting](./docs/TROUBLESHOOTING.md) | [Contributing](./docs/CONTRIBUTING.md)
->>>>>>> laraxot/dev
+---
+
+## Scheda tecnica verificata (2026-09-28)
+
+| Voce | Valore |
+|---|---|
+| Nome dichiarato | `Media` |
+| Namespace | `Modules\\Media\\` |
+| File PHP (escluso vendor) | 263 |
+| File PHP di test | 56 |
+| Aree `app/` rilevate | Actions, Console, Contracts, Conversions, Datas, Enums, Exceptions, Filament, Http, Models, Providers, Rules, Services, Support, View, conversions |
+| Migrazioni PHP | 13 |
+| SSoT locale | [`docs/`](docs/) e [`docs/bmad/`](docs/bmad/) |
+
+Questa scheda è un inventario statico, non una dichiarazione di qualità. Per ogni
+modifica eseguire i gate dal progetto Laravel:
+
+```bash
+cd laravel
+php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/Media
+./vendor/bin/pest Modules/Media
+```
+
+La responsabilità del modulo, le decisioni architetturali e le opportunità sono
+documentate negli artefatti BMAD sotto [`docs/bmad/`](docs/bmad/). I numeri vanno
+rigenerati quando il modulo cambia; non copiarli in badge non verificati.
+=======
+>>>>>>> .merge_file_Su0kLD
+=======
+>>>>>>> .merge_file_GKhRUC

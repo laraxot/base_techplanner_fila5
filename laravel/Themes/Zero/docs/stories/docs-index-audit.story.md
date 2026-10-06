@@ -16,6 +16,7 @@ snake_case stubs, uppercase/lowercase twins, redundant index files, historic con
 family) and grouped them under "Storico / da consolidare" in the new index, each still linked
 at its original path per `docs-archive-policy.md`. Verified via link-vs-filesystem diff that
 all 213 files are reachable from `index.md`.
+<<<<<<< HEAD
 
 ## Update 2026-09-11
 
@@ -38,3 +39,5 @@ brain del monorepo diffida di fidarsi ciecamente della documentazione esistente
 come inventario completo verificato (235 file, tutti i link controllati contro
 il filesystem), stavolta con provenienza scriptata (non a mano) cosi' e'
 riproducibile: vedere quella story per il comando esatto.
+=======
+>>>>>>> laraxot/dev

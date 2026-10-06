@@ -14,6 +14,7 @@ use Illuminate\View\ComponentAttributeBag;
 use Mockery\Expectation;
 use Mockery\MockInterface;
 use Modules\UI\Filament\Tables\Columns\GroupColumn;
+use Modules\UI\Tests\Fixtures\UiGroupColumnTypeEnum;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use PHPUnit\Framework\Assert;
 
@@ -43,6 +44,21 @@ function groupColumnViewTableBag(): array
     return [
         'getTable' => static fn (): Table => $table,
     ];
+}
+
+// Local test enum for testing BackedEnum with HasLabel
+enum TestWorkerType: string
+{
+    case Dip = 'dip';
+    case Fun = 'fun';
+
+    public function getLabel(): string
+    {
+        return match ($this) {
+            self::Dip => 'Dipendente',
+            self::Fun => 'Funzionario',
+        };
+    }
 }
 
 // Test GroupColumn class
@@ -329,5 +345,33 @@ describe('GroupColumn view rendering', function (): void {
             str_contains($html, 'select') || str_contains($html, 'fi-ta-select'),
             'Expected SelectColumn embedded HTML, got: '.$html
         );
+    });
+
+    it('renders BackedEnum with HasLabel using translated label not raw value', function (): void {
+        $record = ['type' => UiGroupColumnTypeEnum::Dip];
+        $fields = [
+            TextColumn::make('type'),
+        ];
+
+        if (! app()->bound('view')) {
+            $value = data_get($record, 'type');
+            Assert::assertInstanceOf(UiGroupColumnTypeEnum::class, $value);
+            Assert::assertSame('Dipendente', $value->getLabel());
+
+            return;
+        }
+
+        $html = view('ui::filament.tables.columns.group', [
+            'getFields' => fn () => $fields,
+            'getRecord' => fn () => $record,
+            'attributes' => new ComponentAttributeBag,
+            'getExtraAttributes' => fn () => [],
+            'isInline' => fn () => false,
+            ...groupColumnViewTableBag(),
+        ])->render();
+
+        $html = (string) $html;
+        Assert::assertStringContainsString('Dipendente', $html);
+        Assert::assertStringNotContainsString('class="fi-ta-group-value"> dip', $html);
     });
 });

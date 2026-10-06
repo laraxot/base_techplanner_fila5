@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Modules\Job\Database\Factories\JobBatchFactory;
 use Modules\Job\Database\Factories\JobFactory;
 use Modules\Job\Models\Job;

@@ -12,13 +12,10 @@ use Modules\Gdpr\Actions\Validation\ValidateGdprConsentAction;
 use Modules\Gdpr\Actions\Validation\ValidateUserDataAction;
 use Modules\Gdpr\Models\Consent;
 use Modules\Gdpr\Models\Treatment;
-use Modules\Gdpr\Tests\TestCase;
 use Modules\User\Actions\User\CreateUserAction;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
 
 /*
  * Registration Flow Integration Tests.

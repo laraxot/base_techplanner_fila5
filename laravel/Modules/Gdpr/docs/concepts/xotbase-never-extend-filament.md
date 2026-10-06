@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Gdpr — mai Filament\*, sempre XotBase*"
 type: concept
 module: Gdpr

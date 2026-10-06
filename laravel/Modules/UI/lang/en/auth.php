@@ -61,6 +61,8 @@ return [
         'close_menu' => 'Close main menu',
         'home' => 'Home',
         'dashboard' => 'Dashboard',
+        'primary' => 'Primary navigation',
+        'learn_more' => 'Learn more',
         'profile' => 'Profile',
         'settings' => 'Settings',
     ],

@@ -4,10 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Gdpr\Tests\Feature;
 
-use Modules\Gdpr\Tests\TestCase;
 use Modules\User\Database\Factories\UserFactory;
-
-uses(TestCase::class);
 
 // ---------------------------------------------------------------------------
 // Page rendering tests
@@ -98,8 +95,7 @@ it('has meta description in English', function (): void {
 it('redirects authenticated users away from registration', function (): void {
     $user = UserFactory::new()->createOne();
 
-    gdprActingAs($user);
-    $response = gdprGet('/en/auth/register');
+    $response = gdprActingAs($user)->get('/en/auth/register');
 
     // Authenticated users should be redirected (to home or dashboard)
     $response->assertRedirect();

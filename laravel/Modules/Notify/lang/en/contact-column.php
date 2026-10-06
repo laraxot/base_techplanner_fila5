@@ -17,7 +17,7 @@ return [
         'contact_link' => 'Contact link',
         'no_contacts' => 'No contacts available'],
     'navigation' => [
-        'label' => 'Missing Navigation Label',
+        'label' => 'Contacts',
         'plural_label' => 'Missing Navigation Plural Label',
         'group' => 'Missing Group',
         'icon' => 'heroicon-o-puzzle-piece',

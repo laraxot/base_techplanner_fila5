@@ -1,4 +1,8 @@
 ---
+type: note
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "00 index"
 title: "AI — indice della documentazione"
 description: "Documentazione del modulo AI: integrazione modelli linguistici."
 module: AI
@@ -32,7 +36,7 @@ discussions: https://github.com/laraxot/module_ai_fila5/discussions
 ### Development
 | File | Scopo |
 |---|---|
-| [GSD_WORKFLOW.md](./GSD_WORKFLOW.md) | Workflow GSD locale al modulo |
+| [gsd-workflow.md](./gsd-workflow.md) | Workflow GSD locale al modulo |
 | [SPRINT_PLANNING.md](./SPRINT_PLANNING.md) | Sprint planning |
 | [USER_RESEARCH.md](./USER_RESEARCH.md) | User research |
 

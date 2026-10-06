@@ -1,3 +1,14 @@
+---
+title: "block data flow"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-10-06
+qmd: "block data flow"
+issues: []
+discussions: []
+---
+
 # Block Data Flow Architecture
 
 This document describes how data flows from the JSON configuration to the final Blade components in the CMS module.
@@ -57,6 +68,14 @@ This automatically:
 4. Passes the `$blocks` collection and context to the view.
 
 ### Theme Namespace (`pub_theme`)
+
+## Duplicate slug diagnostics
+
+HasBlocks::getBlocksBySlug() requires exactly one JSON record for each slug.
+If duplicate records exist, the exception includes the model, slug, side, and
+the conflicting record IDs. Resolve the duplicate JSON files instead of hiding
+the problem with first(), because choosing an arbitrary record can render stale
+or incomplete content.
 The CMS module registers a `pub_theme` view namespace that dynamically points to the currently active theme. This allows the same `x-section` component to work across different themes.
 
 > [!TIP]

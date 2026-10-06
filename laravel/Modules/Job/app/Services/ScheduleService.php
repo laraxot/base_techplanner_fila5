@@ -31,7 +31,10 @@ class ScheduleService
             return $this->getFromCache();
         }
 
-        return $this->model->active()->get();
+        /** @var Collection<int, Schedule> $result */
+        $result = $this->model->newQuery()->active()->get();
+
+        return $result;
     }
 
     public function clearCache(): void
@@ -50,7 +53,10 @@ class ScheduleService
         Assert::string($store = config('job::cache.store'), '['.__LINE__.']['.class_basename($this).']');
         Assert::string($key = config('job::cache.key'), '['.__LINE__.']['.class_basename($this).']');
 
-        $result = Cache::store($store)->rememberForever($key, fn (): Collection => $this->model->active()->get());
+        $result = Cache::store($store)->rememberForever(
+            $key,
+            fn (): Collection => $this->model->newQuery()->active()->get()
+        );
         Assert::isInstanceOf($result, Collection::class);
 
         /** @var Collection<int, Schedule> $result */

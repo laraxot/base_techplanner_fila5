@@ -9,9 +9,9 @@ use Modules\Tenant\Models\Traits\SushiToJsons;
 use Modules\Xot\Actions\Tree\GetTreeOptionsByModelClassAction;
 use Modules\Xot\Contracts\HasRecursiveRelationshipsContract;
 use Modules\Xot\Contracts\ProfileContract;
+use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\Builder;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\Collection;
-use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
 
 /**
  * Modules\Cms\Models\Menu.
@@ -77,11 +77,12 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
  * @method static Builder<static>|Menu    withRelationshipExpression($direction, callable $constraint, $initialDepth, $from = null, $maxDepth = null)
  *
  * @mixin \Eloquent
+ * @implements HasRecursiveRelationshipsContract<Menu>
  */
 class Menu extends BaseModel implements HasRecursiveRelationshipsContract
 {
-    use HasRecursiveRelationships;
     use SushiToJsons;
+    use HasRecursiveRelationships;
 
     /** @var list<string> */
     protected $fillable = [
@@ -107,7 +108,7 @@ class Menu extends BaseModel implements HasRecursiveRelationshipsContract
     public static function getTreeMenuOptions(): array
     {
         /** @var class-string<HasRecursiveRelationshipsContract> $className */
-        $className = self::class;
+        $className = self::class; // @phpstan-ignore-line missingType.generics
 
         return app(GetTreeOptionsByModelClassAction::class)->execute($className);
     }

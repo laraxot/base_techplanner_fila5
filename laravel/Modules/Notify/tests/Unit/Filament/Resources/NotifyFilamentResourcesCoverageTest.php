@@ -25,9 +25,9 @@ use Modules\Notify\Filament\Resources\NotificationLogResource;
 use Modules\Notify\Filament\Resources\NotificationLogResource\Schemas\NotificationLogForm;
 use Modules\Notify\Filament\Resources\NotificationLogResource\Schemas\NotificationLogInfolist;
 use Modules\Notify\Filament\Resources\NotificationLogResource\Tables\NotificationLogsTable;
-use Modules\Notify\Filament\Resources\NotificationResource\Pages\ListNotifications;
 use Modules\Notify\Filament\Resources\NotificationResource\Schemas\NotificationForm;
 use Modules\Notify\Filament\Resources\NotificationResource\Schemas\NotificationInfolist;
+use Modules\Notify\Filament\Resources\NotificationResource\Tables\NotificationsTable;
 use Modules\Notify\Filament\Resources\NotificationTemplateResource;
 use Modules\Notify\Filament\Resources\NotificationTemplateResource\Pages\PreviewNotificationTemplate;
 use Modules\Notify\Filament\Resources\NotificationTemplateResource\Schemas\NotificationTemplateForm;
@@ -98,8 +98,8 @@ test('preview mail template page title and header actions are configured', funct
 });
 
 test('list notifications page exposes expected columns and filters', function (): void {
-    $columns = XotBasePest::assertArray(ListNotifications::notificationTableColumns());
-    $filters = XotBasePest::assertArray(ListNotifications::notificationTableFilters());
+    $columns = XotBasePest::assertArray(app(NotificationsTable::class)->getTableColumns());
+    $filters = XotBasePest::assertArray(app(NotificationsTable::class)->getTableFilters());
 
     Assert::assertArrayHasKey('id', $columns);
     Assert::assertInstanceOf(TextColumn::class, $columns['id']);

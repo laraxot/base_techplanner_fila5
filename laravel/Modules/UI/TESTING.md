@@ -1,6 +1,14 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+---
+title: "TESTING"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "TESTING"
+issues: []
+discussions: []
+---
+
 # Testing $MOD
 
 ## Quick Start
@@ -17,8 +25,15 @@ Coverage report: docs/coverage.md (auto-generated).
 Target: ≥85% coverage.
 
 See Xot module (TESTING.md) for base test patterns.
-=======
->>>>>>> laraxot/dev
+---
+title: "TESTING"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "TESTING"
+issues: []
+discussions: []
 # UI Module Testing
 
 ## Component Testing
@@ -40,7 +55,3 @@ See Xot module (TESTING.md) for base test patterns.
 ```bash
 ./vendor/bin/pest Modules/UI/tests
 ```
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

@@ -1,3 +1,9 @@
+---
+bmad_status: active
+scope: ui-docs
+updated: 2026-10-06
+---
+
 # Correzioni PHPStan - Modulo UI
 
 Questo documento traccia gli errori PHPStan identificati nel modulo UI e le relative soluzioni implementate.

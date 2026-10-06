@@ -7,7 +7,6 @@ namespace Modules\Geo\Services;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\File;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
 use function Safe\json_decode;
 
@@ -108,8 +107,8 @@ class GeoDataService
                     $code = $province['code'] ?? '';
 
                     return [
-                        'name' => SafeStringCastAction::cast($name),
-                        'code' => SafeStringCastAction::cast($code),
+                        'name' => \is_scalar($name) ? (string) $name : '',
+                        'code' => \is_scalar($code) ? (string) $code : '',
                     ];
                 })
                 ->values();

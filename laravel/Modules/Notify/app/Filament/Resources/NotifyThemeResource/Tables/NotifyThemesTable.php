@@ -42,6 +42,8 @@ class NotifyThemesTable extends XotBaseResourceTable
             'lang' => TextColumn::make('lang')->sortable(),
             'type' => TextColumn::make('type')->sortable(),
             'post_type' => TextColumn::make('post_type')->sortable(),
+            'post_id' => TextColumn::make('post_id')->sortable()->toggleable(isToggledHiddenByDefault: true),
+            'logo_src' => TextColumn::make('logo_src')->sortable()->toggleable(isToggledHiddenByDefault: true),
             'subject' => TextColumn::make('subject')->searchable()->sortable()->wrap(),
             'theme' => TextColumn::make('theme')->searchable()->sortable(),
             'from_email' => TextColumn::make('from_email')->searchable()->sortable(),

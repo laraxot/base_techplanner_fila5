@@ -9,8 +9,6 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Modules\Gdpr\Filament\Widgets\Auth\RegisterWidget;
 use Modules\Gdpr\Tests\TestCase;
 
-uses(TestCase::class);
-
 beforeEach(function (): void {
     /* @var \Modules\Gdpr\Tests\TestCase $this */
     LaravelLocalization::setLocale('en');
@@ -45,7 +43,7 @@ it('can register a new user', function (): void {
         ->call('register')
         ->assertRedirect('/en/home');
 
-    gdprAssertDatabaseHas('users', [
+    gdprTest()->assertDatabaseHasRow('users', [
         'email' => 'test@example.com',
     ]);
 });

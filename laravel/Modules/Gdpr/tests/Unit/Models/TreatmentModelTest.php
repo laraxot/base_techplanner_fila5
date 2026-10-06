@@ -7,10 +7,7 @@ namespace Modules\Gdpr\Tests\Unit\Models;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Modules\Gdpr\Models\BaseModel;
 use Modules\Gdpr\Models\Treatment;
-use Modules\Gdpr\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
 
 test('treatment_fillable_attributes', function (): void {
     $treatment = new Treatment();

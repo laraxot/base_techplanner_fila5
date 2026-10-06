@@ -5,11 +5,8 @@ declare(strict_types=1);
 namespace Modules\Gdpr\Tests\Unit\Providers;
 
 use Modules\Gdpr\Providers\GdprServiceProvider;
-use Modules\Gdpr\Tests\TestCase;
 use Modules\Xot\Providers\XotBaseServiceProvider;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
 
 test('gdpr_service_provider_extends_xot_base_service_provider', function (): void {
     $provider = new GdprServiceProvider(app());

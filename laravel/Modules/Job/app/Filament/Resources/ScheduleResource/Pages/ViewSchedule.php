@@ -5,18 +5,11 @@ declare(strict_types=1);
 namespace Modules\Job\Filament\Resources\ScheduleResource\Pages;
 
 use Filament\Forms\Concerns\InteractsWithForms;
-use Filament\Tables\Columns\Layout\Panel;
-use Filament\Tables\Columns\Layout\Split;
-use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Concerns\InteractsWithTable;
 use Filament\Tables\Contracts\HasTable;
-use Illuminate\Support\Carbon;
-use Illuminate\Support\HtmlString;
 use Livewire\Attributes\Url;
 use Modules\Job\Filament\Resources\ScheduleResource;
-use Modules\Job\Models\ScheduleHistory;
 use Modules\Xot\Filament\Resources\Pages\XotBaseResourcePage;
-use Webmozart\Assert\Assert;
 
 class ViewSchedule extends XotBaseResourcePage implements HasTable
 {

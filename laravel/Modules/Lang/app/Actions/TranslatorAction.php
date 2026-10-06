@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * @see https://github.com/barryvdh/laravel-translation-manager/blob/master/src/Translator.php
  */
@@ -22,11 +21,10 @@ class TranslatorAction extends LaravelTranslator
      * I parametri nativi restano `mixed` per compatibilita' LSP con
      * `Illuminate\Translation\Translator::get()`, che non dichiara tipi.
      *
-     * @param string               $key
-     * @param array<string, mixed> $replace
-     * @param string|null          $locale
-     * @param bool                 $fallback
-     *
+     * @param  string  $key
+     * @param  array<string, mixed>  $replace
+     * @param  string|null  $locale
+     * @param  bool  $fallback
      * @return string|array<array-key, mixed>
      */
     public function get(mixed $key, array $replace = [], mixed $locale = null, mixed $fallback = true): string|array
@@ -48,9 +46,7 @@ class TranslatorAction extends LaravelTranslator
         return $result;
     }
 
-    public function execute(): void
-    {
-    }
+    public function execute(): void {}
 
     protected function notifyMissingKey(string $key): void
     {

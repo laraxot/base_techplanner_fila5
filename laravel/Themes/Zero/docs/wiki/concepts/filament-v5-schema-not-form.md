@@ -14,7 +14,11 @@ related:
 
 ## Correzione storica
 
+<<<<<<< HEAD
 Documenti legacy Zero (`conflict-resolution-summary`, ecc.) descrivono una migrazione **Schema → Form** tipica di conflitti Git su Filament 5 intermedi. Su **Filament 5** il canon ufficiale è:
+=======
+Documenti legacy Zero (`conflict-resolution-summary`, ecc.) descrivono una migrazione **Schema → Form** tipica di conflitti Git su Filament 4 intermedi. Su **Filament 5** il canon ufficiale è:
+>>>>>>> laraxot/dev
 
 | Corretto (v5) | Errato (legacy) |
 |---------------|-----------------|

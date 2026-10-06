@@ -8,8 +8,11 @@ use Modules\Seo\Adapters\MetatagFacadeAdapter;
 use Modules\Seo\Adapters\MetatagState;
 use Modules\Seo\Providers\EventServiceProvider;
 use Modules\Seo\Providers\SeoServiceProvider;
+use Modules\Seo\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use ReflectionClass;
+
+uses(TestCase::class);
 
 it('registers metatag adapter and state singletons', function (): void {
     $provider = new SeoServiceProvider(app());

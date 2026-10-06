@@ -92,7 +92,7 @@ return [
         'error_message' => ['label' => 'Messaggio di Errore', 'placeholder' => 'Dettagli dell\'errore', 'help' => 'Messaggio di errore in caso di fallimento', 'tooltip' => 'Errore del job', 'helper_text' => '', 'description' => ''],
         'retry_count' => ['label' => 'Conteggio Riprova', 'help' => 'Numero di tentativi di riprova', 'tooltip' => 'Tentativi di riprova', 'helper_text' => '', 'description' => ''],
         'max_retries' => ['label' => 'Max Riprova', 'placeholder' => 'Numero massimo di riprove', 'help' => 'Numero massimo di tentativi di riprova', 'tooltip' => 'Massimo tentativi', 'helper_text' => '', 'description' => ''],
-        'value' => ['label' => 'value', 'placeholder' => 'value', 'helper_text' => 'value', 'description' => 'value'],
+        'value' => ['label' => 'value', 'placeholder' => 'value', 'helper_text' => '', 'description' => 'value'],
     ],
     'actions' => [
         'create' => ['label' => 'Crea Job', 'icon' => 'heroicon-o-plus', 'tooltip' => 'Crea un nuovo job'],
