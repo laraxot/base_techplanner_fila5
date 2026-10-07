@@ -11,12 +11,11 @@ use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
+use Modules\Notify\Actions\Push\LogSimulatedPushDeliveryAction;
 use Modules\Notify\Jobs\SendScheduledPushNotification;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
-
-use function Safe\json_encode;
 
 /**
  * Servizio per notifiche push avanzate.
@@ -288,6 +287,8 @@ class PushNotificationService
      */
     private function sendAPNSNotification(string $token, array $notification, array $data): array
     {
+        app(LogSimulatedPushDeliveryAction::class)->execute('apns', $token, ['notification' => $notification, 'data' => $data]);
+
         return [
             'success' => true,
             'message' => 'APNS notification sent (simulated)',
@@ -301,7 +302,7 @@ class PushNotificationService
      */
     private function sendWebPushNotification(string $token, array $notification, array $data): array
     {
-        json_encode([
+        $payload = [
             'title' => $notification['title'],
             'body' => $notification['body'],
             'icon' => $notification['icon'] ?? '/icons/icon-192x192.png',
@@ -309,7 +310,9 @@ class PushNotificationService
             'data' => $data,
             'actions' => $notification['actions'] ?? [],
             'requireInteraction' => $notification['requireInteraction'] ?? false,
-            'silent' => $notification['silent'] ?? false]);
+            'silent' => $notification['silent'] ?? false];
+
+        app(LogSimulatedPushDeliveryAction::class)->execute('webpush', $token, $payload);
 
         return [
             'success' => true,
@@ -505,6 +508,9 @@ class PushNotificationService
      */
     private function getTokensByCriteria(array $criteria): array
     {
+        // Nessuno store dei device token e' ancora implementato: il targeting non puo' risolvere token.
+        Log::warning('Push targeting: nessuno store dei device token configurato, nessun token risolto.', ['criteria' => $criteria]);
+
         return [];
     }
 
@@ -515,9 +521,12 @@ class PushNotificationService
      */
     private function sendAPNSTopicNotification(string $topic, array $notification, array $data): array
     {
+        app(LogSimulatedPushDeliveryAction::class)->execute('apns', $topic, ['notification' => $notification, 'data' => $data]);
+
         return [
             'success' => true,
             'message' => 'APNS topic notification sent (simulated)',
+            'topic' => $topic,
             'platform' => 'apns'];
     }
 
@@ -528,9 +537,12 @@ class PushNotificationService
      */
     private function sendWebPushTopicNotification(string $topic, array $notification, array $data): array
     {
+        app(LogSimulatedPushDeliveryAction::class)->execute('webpush', $topic, ['notification' => $notification, 'data' => $data]);
+
         return [
             'success' => true,
             'message' => 'Web Push topic notification sent (simulated)',
+            'topic' => $topic,
             'platform' => 'webpush'];
     }
 }

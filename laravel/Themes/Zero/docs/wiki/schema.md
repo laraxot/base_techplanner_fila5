@@ -7,7 +7,7 @@ updated: 2026-07-14
 qmd: "theme zero wiki schema e convenzioni"
 related:
   - "./schema.md"
-  - "./bmad-method.md"
+  - "./concepts/bmad-method.md"
   - "./log.md"
 ---
 
@@ -16,6 +16,34 @@ related:
 ## Dominio
 Tema Zero per la piattaforma PTVX. Tema base/default con layout, stili e componenti Blade per l'interfaccia pubblica e amministrativa.
 
+## Directory Standard
+
+| Directory | Purpose |
+|-----------|---------|
+| `commands/` | Command documentation and CLI entry points |
+| `concepts/` | Concept explanations and architectural overviews |
+| `decisions/` | Architectural decision records (ADRs) |
+| `glossary/` | Term definitions and glossary entries |
+| `how-to/` | Step-by-step how-to guides |
+| `memories/` | Memory entries and historical notes |
+| `overviews/` | Overview documents and summaries |
+| `queries/` | Scratchpad and query entries |
+| `reference/` | Reference documentation |
+| `rules/` | Rules, guidelines, and constraints |
+| `skills/` | Skill definitions and reusable AI skills |
+| `summaries/` | Summary and report documents |
+| `entities/` | Entity documentation (classes, patterns) |
+| `lint/` | Lint results and quality checks |
+| `comparisons/` | Comparison documents (A vs B) |
+
+## Directory di supporto (non-standard)
+
+| Directory | Purpose |
+|-----------|---------|
+| `screenshots/` | Image assets and visual documentation |
+| `raw/` | Raw source documents awaiting ingestion |
+| `sources/` | Source summaries and external references |
+
 ## Tipi di Entità
 - **Class**: Classi PHP, traits, interfacce specifiche del modulo
 - **Pattern**: Pattern architetturali usati nel modulo
@@ -23,10 +51,13 @@ Tema Zero per la piattaforma PTVX. Tema base/default con layout, stili e compone
 - **Decision**: Decisioni architetturali con relativa motivazione
 
 ## Entità Principali
-- ZeroThemeServiceProvider: Provider del tema\n- ZeroLayout: Layout principale\n- ZeroComponent: Componenti Blade specifici
+- ZeroThemeServiceProvider: Provider del tema
+- ZeroLayout: Layout principale
+- ZeroComponent: Componenti Blade specifici
 
 ## Pattern Rilevanti
-- Theme Pattern: override view Laravel\n- Component Pattern: componenti Blade riutilizzabili
+- Theme Pattern: override view Laravel
+- Component Pattern: componenti Blade riutilizzabili
 
 ## Protocollo di Ingest
 1. Leggere il documento sorgente raw
@@ -42,6 +73,7 @@ Tema Zero per la piattaforma PTVX. Tema base/default con layout, stili e compone
 - `entities/{ClassName}.md`
 - `comparisons/{a}-vs-{b}.md`
 - `sources/{source-filename}.md`
+- Tutti i nomi file seguono `{lowercase-kebab-case}.md`
 
 ## Regola Cross-linking
 Ogni pagina DEVE linkare almeno un'altra pagina wiki.

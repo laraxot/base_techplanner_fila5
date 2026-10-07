@@ -8,6 +8,7 @@ use Exception;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Notification as NotificationFacade;
+use Modules\Notify\Enums\NotificationStatusEnum;
 use Modules\Notify\Models\Notification as NotificationModel;
 use Modules\Notify\Models\NotificationTemplate;
 use Modules\Notify\Notifications\GenericNotification;
@@ -154,7 +155,7 @@ class SendNotificationAction
             'notifiable_id' => $this->normalizeModelKey($recipientKey),
             'user_id' => $this->normalizeModelKey($userId),
             'channels' => ['database'],
-            'status' => 'sent',
+            'status' => NotificationStatusEnum::SENT->value,
             'sent_at' => now(),
             'data' => [
                 'subject' => $compiled['subject'],

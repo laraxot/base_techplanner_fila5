@@ -12,6 +12,7 @@ test('it exposes all expected statuses', function () {
 
     Assert::assertSame([
         'pending',
+        'processing',
         'sent',
         'delivered',
         'failed',
@@ -27,7 +28,7 @@ test('it returns expected label color and icon', function () {
         $case->getColor();
         $case->getIcon();
     }
-    Assert::assertCount(6, NotificationLogStatusEnum::cases());
+    Assert::assertCount(7, NotificationLogStatusEnum::cases());
 });
 
 test('it reports completed pending and failed states correctly', function () {

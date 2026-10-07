@@ -7,7 +7,6 @@ namespace Modules\Notify\Filament\Resources\NotificationLogResource\Schemas;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Modules\Notify\Enums\ChannelEnum;
-use Modules\Notify\Enums\NotificationLogStatusEnum;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
 
 class NotificationLogInfolist extends XotBaseResourceInfolist
@@ -22,9 +21,8 @@ class NotificationLogInfolist extends XotBaseResourceInfolist
             'channel' => TextEntry::make('channel')
                 ->badge()
                 ->formatStateUsing(fn (string $state): string => ChannelEnum::from($state)->getLabel() ?? $state),
-            'status' => TextEntry::make('status')
-                ->badge()
-                ->formatStateUsing(fn (string $state): string => NotificationLogStatusEnum::from($state)->getLabel() ?? $state),
+            // `status` e' castato a NotificationLogStatusEnum: Filament ricava label/colore/icona dall'enum.
+            'status' => TextEntry::make('status')->badge(),
             'notifiable_type' => TextEntry::make('notifiable_type'),
             'notifiable_id' => TextEntry::make('notifiable_id'),
             'status_message' => TextEntry::make('status_message'),

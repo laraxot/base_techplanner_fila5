@@ -190,6 +190,12 @@ it('saves gdpr consents for a user when treatments exist', function (): void {
         Assert::assertSame('PestTest/1.0', $privacyConsent->user_agent);
     }
 
+    // Terms consent should be accepted (terms_accepted => terms_conditions)
+    $termsConsent = $savedConsents->where('treatment_id', $termsTreatment->id)->first();
+    if ($termsConsent) {
+        Assert::assertNotNull($termsConsent->accepted_at);
+    }
+
     // Marketing consent should NOT be accepted
     $marketingConsent = $savedConsents->where('treatment_id', $marketingTreatment->id)->first();
     if ($marketingConsent) {

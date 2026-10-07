@@ -96,12 +96,6 @@ class Schedule extends BaseModel
 {
     use ManagesFrequencies;
 
-    public const int STATUS_INACTIVE = 0;
-
-    public const int STATUS_ACTIVE = 1;
-
-    public const int STATUS_TRASHED = 2;
-
     protected $fillable = [
         'command',
         'command_custom',
@@ -163,7 +157,7 @@ class Schedule extends BaseModel
      */
     public function scopeInactive(Builder $query): Builder
     {
-        return $query->where('status', self::STATUS_INACTIVE);
+        return $query->where('status', Status::Inactive);
     }
 
     /**
@@ -174,7 +168,7 @@ class Schedule extends BaseModel
      */
     public function scopeActive(Builder $query): Builder
     {
-        return $query->where('status', self::STATUS_ACTIVE);
+        return $query->whereIn('status', Status::activeCases());
     }
 
     /**

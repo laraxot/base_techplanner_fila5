@@ -71,11 +71,11 @@ describe('FormatSmsMessageAction', function () {
         $reflection = new \ReflectionClass($action);
         $content = TestCase::notifyReflectionSource($reflection);
         Assert::assertStringContainsString('declare(strict_types=1)', $content);
+        Assert::assertStringContainsString('use Spatie\\QueueableAction\\QueueableAction;', $content);
+        Assert::assertStringContainsString('use function Safe\\preg_split;', $content);
     });
 
-    it('is not using QueueableAction trait', function () {
-        $action = new FormatSmsMessageAction;
-
+    it('uses QueueableAction trait', function () {
         $traits = class_uses(FormatSmsMessageAction::class);
 
         Assert::assertArrayHasKey(QueueableAction::class, $traits);

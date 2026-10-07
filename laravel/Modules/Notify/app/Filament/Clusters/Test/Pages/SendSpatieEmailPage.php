@@ -93,25 +93,8 @@ class SendSpatieEmailPage extends XotBasePage
          *
          */
         $user = $this->getUser();
-        $attachments = [
-            [
-                'path' => public_path('images/avatars/default-3.svg'),
-                'as' => 'logo.png',
-                'mime' => 'image/png'],
-            [
-                'path' => public_path('images/avatars/default-3.svg'),
-                'as' => 'logo.png',
-                'mime' => 'image/png']];
-        // Mail::to($data['recipient'])->locale('it')->send((new SpatieEmail($user,'due'))->addAttachments($attachments));
-        /*
-         * // Create and send the email
-         * $email = new SpatieEmail($user, 'uno');
-         * $email->addAttachments($attachments);
-         *
-         * Mail::to($data['recipient'])
-         * ->locale('it')
-         * ->send($email);
-         */
+        // Allegati: RecordNotification::addAttachments() li supporta, ma l'asset di prova
+        // (public/images/avatars/default-3.svg) non esiste: nessun allegato in questa pagina di test.
         $mail_template_slug = $data['mail_template_slug'];
         Assert::string($mail_template_slug, __FILE__.':'.__LINE__.' - '.class_basename(__CLASS__));
         // RecordNotification resolves MailTemplate internally from slug (lazy resolution)

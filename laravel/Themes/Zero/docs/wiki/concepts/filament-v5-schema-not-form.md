@@ -7,18 +7,14 @@ created: 2026-07-24
 updated: 2026-07-24
 related:
   - ../../../../../../docs/wiki/concepts/filament-v5-form-in-blade.md
-  - ../../root-md-files/conflict-resolution-summary.md
+  - ../../bmad/conflict-resolution-summary.md
 ---
 
 # Filament 5 — `Schema`, non `Form`
 
 ## Correzione storica
 
-<<<<<<< HEAD
 Documenti legacy Zero (`conflict-resolution-summary`, ecc.) descrivono una migrazione **Schema → Form** tipica di conflitti Git su Filament 5 intermedi. Su **Filament 5** il canon ufficiale è:
-=======
-Documenti legacy Zero (`conflict-resolution-summary`, ecc.) descrivono una migrazione **Schema → Form** tipica di conflitti Git su Filament 4 intermedi. Su **Filament 5** il canon ufficiale è:
->>>>>>> laraxot/dev
 
 | Corretto (v5) | Errato (legacy) |
 |---------------|-----------------|

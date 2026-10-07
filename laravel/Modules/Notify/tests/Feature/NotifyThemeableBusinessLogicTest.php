@@ -126,7 +126,17 @@ describe('Notify Themeable Business Logic', function () {
             'model_id' => 123,
             'notify_theme_id' => $theme3->id]);
 
-        Assert::assertCount(3, NotifyThemeable::where('model_type', 'App\Models\NotificationTemplate')->where('model_id', 123)->get());
+        $assignments = NotifyThemeable::where('model_type', 'App\Models\NotificationTemplate')->where('model_id', 123)->get();
+
+        Assert::assertCount(3, $assignments);
+        Assert::assertEqualsCanonicalizing(
+            [$themeable1->id, $themeable2->id, $themeable3->id],
+            $assignments->pluck('id')->all(),
+        );
+        Assert::assertEqualsCanonicalizing(
+            [$theme1->id, $theme2->id, $theme3->id],
+            $assignments->pluck('notify_theme_id')->all(),
+        );
     });
 
     it('can handle theme switching', function () {
@@ -269,5 +279,8 @@ describe('Notify Themeable Business Logic', function () {
         foreach ($theme2Assignments as $assignment) {
             Assert::assertSame('admin@'.notifyThemeableTestDomain(), $assignment->updated_by);
         }
+
+        // Il terzo tema non e' coinvolto nello spostamento: non deve ricevere assegnazioni.
+        Assert::assertCount(0, NotifyThemeable::where('notify_theme_id', $theme3->id)->get());
     });
 });

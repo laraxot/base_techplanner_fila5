@@ -7,12 +7,6 @@ updated: 2026-07-14
 qmd: "report metodi con nome duplicato nei moduli e nei temi"
 related:
   - "./00-index.md"
-<<<<<<< HEAD
-=======
-
-  - "./00-INDEX.md"
-  - "./00-index.md"
->>>>>>> laraxot/dev
 ---
 
 # Report: Metodi con nome duplicato nei moduli e nei temi

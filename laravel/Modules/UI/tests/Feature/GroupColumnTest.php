@@ -137,10 +137,13 @@ describe('GroupColumn view rendering', function (): void {
             TextColumn::make('cognome'),
         ];
 
-        $value = data_get($record, 'matr');
-        Assert::assertSame('12345', $value);
-        $value = data_get($record, 'cognome');
-        Assert::assertSame('Rossi', $value);
+        // Ogni campo del gruppo risolve il proprio valore dal record tramite il nome della colonna.
+        $values = [];
+        foreach ($fields as $field) {
+            $values[$field->getName()] = data_get($record, $field->getName());
+        }
+
+        Assert::assertSame(['matr' => '12345', 'cognome' => 'Rossi'], $values);
     });
 
     it('renders nested relation values with dot notation', function (): void {

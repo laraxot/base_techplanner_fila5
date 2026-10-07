@@ -8,7 +8,7 @@ qmd: "guida completa multiple labels con chartjs-plugin-datalabels in filament 5
 related:
 <<<<<<< HEAD
 =======
-  - "./00-INDEX.md"
+  - "./00-index.md"
 >>>>>>> laraxot/dev
   - "./00-index.md"
 ---

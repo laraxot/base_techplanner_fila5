@@ -14,8 +14,8 @@ status: approved
 tags: [version, history, releases, changelog]
 updated: "2026-06-18"
 related:
-  - README.md
-  - ../README.md
+  - ./readme.md
+  - ../readme.md
 ---
 
 # Changelog — Zero Theme
@@ -189,8 +189,8 @@ When preparing a release:
 - [ ] Update version in `composer.json` (if applicable)
 - [ ] Update version in `package.json`
 - [ ] Update `CHANGELOG.md` (this file) with new version
-- [ ] Update `../README.md` with release notes (marketing)
-- [ ] Update `docs/README.md` with index of new docs (if added)
+- [ ] Update `../readme.md` with release notes (marketing)
+- [ ] Update `docs/readme.md` with index of new docs (if added)
 - [ ] Run `npm run build` to generate optimized assets
 - [ ] Run `composer audit` for security vulnerabilities
 - [ ] Run tests (if applicable)
@@ -235,8 +235,8 @@ Current known issues:
 
 ## Related Files
 
-- [README.md](./README.md) — Theme overview
+- [README.md](./readme.md) — Theme overview
 - [Component Guide](./component-guide.md) — Components reference
 - [Customization Guide](./customization.md) — How to extend
-- [../README.md](../README.md) — Root theme README (marketing)
+- [../readme.md](../readme.md) — Root theme README (marketing)
 - [../../docs/wiki/themes/](../../../../docs/wiki/themes/) — Project-wide theme docs

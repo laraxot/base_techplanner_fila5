@@ -73,3 +73,7 @@ discussions: https://github.com/laraxot/module_gdpr_fila5/discussions
 ## Dependency Intelligence
 
 - [Dependency intelligence](dependency-intelligence.md)
+
+## Stories PHPStan
+
+- [2026-10-06 PHPStan cleanup — Gdpr](./stories/2026-10-06-phpstan-cleanup-gdpr.story.md) · [dev](./stories/2026-10-06-phpstan-cleanup-gdpr.dev.md)

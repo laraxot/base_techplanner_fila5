@@ -47,6 +47,7 @@ class TestSmtpPage extends XotBasePage
     {
         Assert::isArray($mail_config = config('mail'));
         $smtpConfig = Arr::get($mail_config, 'mailers.smtp');
+        Assert::isArray($smtpConfig, 'Config mail.mailers.smtp mancante: impossibile precompilare il form SMTP');
 
         $this->emailData['subject'] = 'test';
         $defaultEmail = XotData::make()->super_admin;
@@ -54,28 +55,24 @@ class TestSmtpPage extends XotBasePage
         return $schema->components([
             Section::make('SMTP')
                 ->schema([
-                    TextInput::make('host'),
-                    // ->default($smtpConfig['host'])
-                    TextInput::make('port')->numeric(),
-                    // ->default($smtpConfig['port'])
-                    TextInput::make('username'),
-                    // ->default($smtpConfig['username'])
-                    TextInput::make('password'),
-                    // ->default($smtpConfig['password'])
-                    TextInput::make('encryption'),
-                    // ->default($smtpConfig['encryption'])
+                    TextInput::make('host')->default(Arr::get($smtpConfig, 'host')),
+                    TextInput::make('port')->numeric()->default(Arr::get($smtpConfig, 'port')),
+                    TextInput::make('username')->default(Arr::get($smtpConfig, 'username')),
+                    // Il segreto SMTP non viene mai precompilato nel browser: va digitato per il test.
+                    TextInput::make('password')->password()->revealable(),
+                    // Laravel 11+ usa `scheme`, le config legacy `encryption`.
+                    TextInput::make('encryption')->default(Arr::get($smtpConfig, 'scheme', Arr::get($smtpConfig, 'encryption'))),
                 ])
                 ->columns(3),
             Section::make('MAIL')
                 ->schema([
                     TextInput::make('from_email')
-                        // ->default(config('mail.from.address', $defaultEmail))
+                        ->default(config('mail.from.address', $defaultEmail))
                         ->email()
                         ->required(),
-                    TextInput::make('from'),
-                    // ->default(config('mail.from.name'))
+                    TextInput::make('from')->default(config('mail.from.name')),
                     TextInput::make('recipient')
-                        // ->default($defaultEmail)
+                        ->default($defaultEmail)
                         ->email()
                         ->required(),
                     TextInput::make('subject')->default('test')->required(),

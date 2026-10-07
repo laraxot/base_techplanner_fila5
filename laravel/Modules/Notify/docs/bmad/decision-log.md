@@ -72,6 +72,7 @@ updated: 2026-10-06
 - FCM: token lungo >100 con `:`
 - WebPush: fallback per tutto il resto
 - APNs e WebPush sono "simulated" (nessuna chiamata API reale) — ritornano sempre `success: true`
+- 2026-10-06: ogni consegna simulata viene tracciata da `Actions\Push\LogSimulatedPushDeliveryAction` (`Log::notice`, token abbreviato) e i risultati topic includono `topic`; resta aperta la decisione se implementare il transport o far fallire (vedi `stories/2026-10-06-phpstan-cleanup-notify.dev.md`)
 
 ### 2026-09-29
 **Decisione:** Notifiche programmate tramite Cache + Job (`SendScheduledPushNotification`)

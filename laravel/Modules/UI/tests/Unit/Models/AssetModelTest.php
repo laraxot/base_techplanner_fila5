@@ -33,10 +33,8 @@ beforeEach(function (): void {
 
 describe('Asset Model', function (): void {
     test('can be instantiated', function (): void {
-        /** @phpstan-ignore-next-line class.notFound (Asset model absent from artifact set) */
-        $asset = new Asset;
-        /* @phpstan-ignore-next-line class.notFound (Asset model absent from artifact set) */
-        Assert::assertInstanceOf(Asset::class, $asset);
+        $asset = new Asset; /** @phpstan-ignore class.notFound */
+        Assert::assertInstanceOf(Asset::class, $asset); /** @phpstan-ignore class.notFound */
     });
 
     test('has fillable attributes', function (): void {

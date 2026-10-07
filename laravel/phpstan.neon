@@ -9,12 +9,14 @@ parameters:
     level: max
     paths:
         - ./Modules/
+    phpVersion: 80400
     ignoreErrors:
         
     excludePaths:
         - ./*/vendor/*
         - ./*/build/*
-        - ./*/docs/*
+        - ./*/docs/**/*
+        - ./*/docs-archive-*/**/*
         - ./*/packages/*
         - ./*/tests/AuditCoverage/*
         - ./*/*.blade.php

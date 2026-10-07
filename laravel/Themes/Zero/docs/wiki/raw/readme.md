@@ -1,19 +1,3 @@
-<<<<<<< HEAD
----
-title: "Raw LLM Wiki Sources"
-type: index
-tags: [theme, zero, readme]
-created: 2026-07-01
-updated: 2026-07-01
-qmd: "zero theme raw llm wiki sources"
----
-# Raw LLM Wiki Sources
-
-=======
-# Raw LLM Wiki Sources
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 [![Module](https://img.shields.io/badge/Module-Raw LLM Wiki Sources-8B0000.svg)]()
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
 [![Filament](https://img.shields.io/badge/Filament-5-ffab00?style=for-the-badge)](https://filamentphp.com/)](https://filamentphp.com/)
@@ -46,10 +30,6 @@ Core module for the FixCity Platform.
 ---
 
 **Modulo** `Zero` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 Append-only staging area for source material that must be preserved before it is summarized into the local wiki.
 
 Rules:
@@ -57,7 +37,3 @@ Rules:
 - prefer Markdown when possible;
 - do not rewrite raw material to make it look cleaner;
 - promote stable knowledge into `../wiki/`.
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

@@ -8,8 +8,4 @@ related:
 
 # Struttura directory — confine tema vs modulo
 
-<<<<<<< HEAD
 Stub DRY → [Themes/One/docs/wiki/concepts/module-directory-structure-boundary.md](../../../../One/docs/wiki/concepts/module-directory-structure-boundary.md)
-=======
-Stub DRY → [Themes/One/docs/wiki/concepts/module-directory-structure-boundary.md](../../One/docs/wiki/concepts/module-directory-structure-boundary.md)
->>>>>>> laraxot/dev

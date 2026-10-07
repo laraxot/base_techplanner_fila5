@@ -239,7 +239,9 @@ describe('Mail Template', function (): void {
         $foundTemplates = MailTemplate::where('subject', 'like', '%Welcome%')->get();
 
         Assert::assertCount(1, $foundTemplates);
-        Assert::assertEquals('Welcome to our platform', \assertFirstModel($foundTemplates, MailTemplate::class)->subject);
+        $found = \assertFirstModel($foundTemplates, MailTemplate::class);
+        Assert::assertEquals($template->id, $found->id);
+        Assert::assertEquals('Welcome to our platform', $found->subject);
     });
 
     test('_can_find_by_params', function (): void {

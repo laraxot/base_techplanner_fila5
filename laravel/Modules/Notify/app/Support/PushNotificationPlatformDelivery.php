@@ -8,11 +8,10 @@ use Exception;
 use GuzzleHttp\Promise\PromiseInterface;
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Http;
+use Modules\Notify\Actions\Push\LogSimulatedPushDeliveryAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
-
-use function Safe\json_encode;
 
 final class PushNotificationPlatformDelivery
 {
@@ -104,6 +103,8 @@ final class PushNotificationPlatformDelivery
      */
     private function sendAPNSNotification(string $token, array $notification, array $data): array
     {
+        app(LogSimulatedPushDeliveryAction::class)->execute('apns', $token, ['notification' => $notification, 'data' => $data]);
+
         return [
             'success' => true,
             'message' => 'APNS notification sent (simulated)',
@@ -118,7 +119,7 @@ final class PushNotificationPlatformDelivery
      */
     private function sendWebPushNotification(string $token, array $notification, array $data): array
     {
-        json_encode([
+        $payload = [
             'title' => $notification['title'],
             'body' => $notification['body'],
             'icon' => $notification['icon'] ?? '/icons/icon-192x192.png',
@@ -127,7 +128,9 @@ final class PushNotificationPlatformDelivery
             'actions' => $notification['actions'] ?? [],
             'requireInteraction' => $notification['requireInteraction'] ?? false,
             'silent' => $notification['silent'] ?? false,
-        ]);
+        ];
+
+        app(LogSimulatedPushDeliveryAction::class)->execute('webpush', $token, $payload);
 
         return [
             'success' => true,
@@ -233,6 +236,7 @@ final class PushNotificationPlatformDelivery
             return [
                 'success' => true,
                 'message_id' => is_array($responseData) && isset($responseData['message_id']) ? $responseData['message_id'] : null,
+                'topic' => $topic,
             ];
         }
 
@@ -344,9 +348,12 @@ final class PushNotificationPlatformDelivery
      */
     private function sendAPNSTopicNotification(string $topic, array $notification, array $data): array
     {
+        app(LogSimulatedPushDeliveryAction::class)->execute('apns', $topic, ['notification' => $notification, 'data' => $data]);
+
         return [
             'success' => true,
             'message' => 'APNS topic notification sent (simulated)',
+            'topic' => $topic,
             'platform' => 'apns',
         ];
     }
@@ -358,9 +365,12 @@ final class PushNotificationPlatformDelivery
      */
     private function sendWebPushTopicNotification(string $topic, array $notification, array $data): array
     {
+        app(LogSimulatedPushDeliveryAction::class)->execute('webpush', $topic, ['notification' => $notification, 'data' => $data]);
+
         return [
             'success' => true,
             'message' => 'Web Push topic notification sent (simulated)',
+            'topic' => $topic,
             'platform' => 'webpush',
         ];
     }

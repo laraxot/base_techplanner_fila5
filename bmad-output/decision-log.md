@@ -38,3 +38,17 @@
 - Stories 6.1 and 6.2 marked ready-for-dev
 
 **Impact:** Closes quality gaps in Cms test suite; establishes pattern for cast.string fixes across all modules
+
+## Investigation: CMS Duplicate Page Slug Diagnostics — 2026-10-06
+
+- Symptom: CMS home rendering exposed only "2 records were found."
+- Root cause: Page JSON-backed data contains duplicate home rows (id=3, id=1).
+- Decision: Keep sole() fail-fast semantics and add model/slug/side/ID context; remove arbitrary first() fallback.
+- Artifacts: bmad-output/investigation-cms-duplicate-page-slug-2026-10-06.md and story 8.5.cms-duplicate-page-slug-diagnostics.
+
+# Domain enums over Employee model constants — 2026-10-06
+
+- Decision: replace finite Employee status vocabularies with backed enums.
+- Scope: absence-request status/type and time-entry status; technical constants remain constants.
+- Rationale: improve domain typing and preserve the existing persisted string contract without turning URLs, cache keys or limits into artificial enums.
+- Story: bmad-output/stories/8.6.domain-enums-over-model-constants.story.md.

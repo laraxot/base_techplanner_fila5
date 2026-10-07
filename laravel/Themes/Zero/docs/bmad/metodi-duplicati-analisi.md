@@ -2,7 +2,7 @@
 theme: Zero
 topic: metodi-duplicati-analisi
 tags: [metodi-duplicati, refactoring]
-canonical: ../Zero/docs/shared-components/METODI-DUPLICATI-ANALISI.md
+canonical: ../../bmad/metodi-duplicati-analisi.md
 ---
 
 # Metodi Duplicati — Analisi Tema Zero

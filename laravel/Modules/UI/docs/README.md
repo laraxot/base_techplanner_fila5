@@ -14,3 +14,7 @@ Stale archive moved to `docs-archive/` at module root.
 - `wiki/` — Active reference (actions, concepts, integration, standards)
 - `legacy/` — Legacy notes
 - Root .md files — PHPStan fixes, PRD, module status
+
+## Stories PHPStan
+
+- [2026-10-06 PHPStan cleanup — UI](./stories/2026-10-06-phpstan-cleanup-ui.story.md) · [dev](./stories/2026-10-06-phpstan-cleanup-ui.dev.md)

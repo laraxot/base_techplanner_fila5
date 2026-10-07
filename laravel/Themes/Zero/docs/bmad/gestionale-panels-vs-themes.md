@@ -20,7 +20,7 @@ discussions:
   - "https://github.com/laraxot/base_workorder_fila5/discussions/15"
 >>>>>>> laraxot/dev
 related:
-  - "./README.md"
+  - "./readme.md"
   - "../../docs/gestionale-panels-vs-themes.md"
   - "../../docs/gestionale-docs-index.md"
   - "../../docs/gc-modules-runtime-matrix.md"

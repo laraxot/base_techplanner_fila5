@@ -20,12 +20,12 @@ Ogni modulo/tema deve essere pubblicabile, comprensibile e desiderabile: workflo
 
 ## File canonici locali
 
-- `../README.md`
+- `../readme.md`
 - `../.github/workflows/semantic-release.yml`
 - `../.releaserc.json`
 - `../changelog.md`
 
-- `../CHANGELOG.md`
+- `../changelog.md`
 
 ## Confidenza
 

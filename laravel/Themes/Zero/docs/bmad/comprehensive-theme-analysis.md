@@ -8,7 +8,7 @@ qmd: "analisi completa tema zero - tema minimalista laravel"
 related:
 <<<<<<< HEAD
 =======
-  - "./00-INDEX.md"
+  - "./00-index.md"
 >>>>>>> laraxot/dev
   - "./00-index.md"
 ---

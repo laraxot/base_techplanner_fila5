@@ -21,7 +21,7 @@ use PHPUnit\Framework\Assert;
 function gdprTest(): TestCase
 {
     $test = test();
-    // @phpstan-ignore-next-line HigherOrderTapProxy is a Pest internal class
+    /* @phpstan-ignore-next-line HigherOrderTapProxy is a Pest internal class */
     if ($test instanceof HigherOrderTapProxy) {
         $test = $test->target;
     }

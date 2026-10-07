@@ -118,11 +118,11 @@ class NotificationManager
 
         // return [
         //     'total' => $logs->count(),
-        //     'sent' => $logs->where('status', NotificationLog::STATUS_SENT)->count(),
-        //     'delivered' => $logs->where('status', NotificationLog::STATUS_DELIVERED)->count(),
-        //     'failed' => $logs->where('status', NotificationLog::STATUS_FAILED)->count(),
-        //     'opened' => $logs->where('status', NotificationLog::STATUS_OPENED)->count(),
-        //     'clicked' => $logs->where('status', NotificationLog::STATUS_CLICKED)->count(),
+        //     'sent' => $logs->where('status', NotificationLogStatusEnum::SENT->value)->count(),
+        //     'delivered' => $logs->where('status', NotificationLogStatusEnum::DELIVERED->value)->count(),
+        //     'failed' => $logs->where('status', NotificationLogStatusEnum::FAILED->value)->count(),
+        //     'opened' => $logs->where('status', NotificationLogStatusEnum::OPENED->value)->count(),
+        //     'clicked' => $logs->where('status', NotificationLogStatusEnum::CLICKED->value)->count(),
         // ];
 
         return [
@@ -146,11 +146,11 @@ class NotificationManager
 
         // return [
         //     'total' => $logs->count(),
-        //     'sent' => $logs->where('status', NotificationLog::STATUS_SENT)->count(),
-        //     'delivered' => $logs->where('status', NotificationLog::STATUS_DELIVERED)->count(),
-        //     'failed' => $logs->where('status', NotificationLog::STATUS_FAILED)->count(),
-        //     'opened' => $logs->where('status', NotificationLog::STATUS_OPENED)->count(),
-        //     'clicked' => $logs->where('status', NotificationLog::STATUS_CLICKED)->count(),
+        //     'sent' => $logs->where('status', NotificationLogStatusEnum::SENT->value)->count(),
+        //     'delivered' => $logs->where('status', NotificationLogStatusEnum::DELIVERED->value)->count(),
+        //     'failed' => $logs->where('status', NotificationLogStatusEnum::FAILED->value)->count(),
+        //     'opened' => $logs->where('status', NotificationLogStatusEnum::OPENED->value)->count(),
+        //     'clicked' => $logs->where('status', NotificationLogStatusEnum::CLICKED->value)->count(),
         // ];
 
         return [

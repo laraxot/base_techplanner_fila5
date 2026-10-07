@@ -8,7 +8,7 @@ qmd: "filament 5x nested resources - guida completa 2024"
 related:
 <<<<<<< HEAD
 =======
-  - "./00-INDEX.md"
+  - "./00-index.md"
 >>>>>>> laraxot/dev
   - "./00-index.md"
 ---

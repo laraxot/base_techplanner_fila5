@@ -10,6 +10,7 @@ use Modules\Notify\Database\Factories\NotificationChannelFactory;
 use Modules\Notify\Database\Factories\NotificationFactory;
 use Modules\Notify\Database\Factories\NotificationLogFactory;
 use Modules\Notify\Database\Factories\NotificationTemplateFactory;
+use Modules\Notify\Enums\NotificationLogStatusEnum;
 use Modules\Notify\Models\Notification;
 use Modules\Notify\Models\NotificationChannel;
 use Modules\Notify\Models\NotificationLog;
@@ -66,11 +67,12 @@ it('can make a notification channel without persisting', function () {
 
 it('can create a notification log', function () {
     $log = NotificationLogFactory::new()->createOne([
-        'status' => 'sent',
-        'content' => 'Notification sent successfully']);
+        'status' => NotificationLogStatusEnum::SENT,
+        'status_message' => 'Notification sent successfully']);
 
     Assert::assertInstanceOf(NotificationLog::class, $log);
-    Assert::assertSame('sent', $log->status);
+    Assert::assertSame(NotificationLogStatusEnum::SENT, $log->status);
+    Assert::assertSame('Notification sent successfully', $log->status_message);
 });
 
 it('can create a notification with custom data', function () {

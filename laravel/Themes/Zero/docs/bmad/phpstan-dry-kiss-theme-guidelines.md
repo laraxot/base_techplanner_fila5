@@ -8,7 +8,7 @@ qmd: "phpstan level 10 drykiss guidelines for themes"
 related:
 <<<<<<< HEAD
 =======
-  - "./00-INDEX.md"
+  - "./00-index.md"
 >>>>>>> laraxot/dev
   - "./00-index.md"
 ---

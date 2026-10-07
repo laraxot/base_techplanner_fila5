@@ -8,7 +8,7 @@ qmd: "analisi phpstan livello 10 - tema"
 related:
 <<<<<<< HEAD
 =======
-  - "./00-INDEX.md"
+  - "./00-index.md"
 >>>>>>> laraxot/dev
   - "./00-index.md"
 ---
@@ -48,7 +48,7 @@ Se sono presenti cartelle legacy o extra non in target, specificare le esclusion
 - [code quality improvements](./code-quality-improvements.md)
 - [theme documentation](./theme-documentation.md)
 - [theme architecture](./theme-architecture-best-practices.md)
-- [README](./README.md)
+- [README](./readme.md)
 # PHPStan Level 10 Analysis - Theme Zero
 
 ## Status

@@ -69,6 +69,11 @@ This automatically:
 
 ### Theme Namespace (`pub_theme`)
 
+The CMS module registers a `pub_theme` view namespace that dynamically points to the currently active theme. This allows the same `x-section` component to work across different themes.
+
+> [!TIP]
+> Always use `isset()` or null coalescing operator when accessing `$block->data` keys, as the JSON structure might vary between themes.
+
 ## Duplicate slug diagnostics
 
 HasBlocks::getBlocksBySlug() requires exactly one JSON record for each slug.
@@ -76,7 +81,3 @@ If duplicate records exist, the exception includes the model, slug, side, and
 the conflicting record IDs. Resolve the duplicate JSON files instead of hiding
 the problem with first(), because choosing an arbitrary record can render stale
 or incomplete content.
-The CMS module registers a `pub_theme` view namespace that dynamically points to the currently active theme. This allows the same `x-section` component to work across different themes.
-
-> [!TIP]
-> Always use `isset()` or null coalescing operator when accessing `$block->data` keys, as the JSON structure might vary between themes.

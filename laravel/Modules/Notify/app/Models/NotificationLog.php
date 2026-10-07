@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Carbon;
 use Modules\Media\Models\Media;
+use Modules\Notify\Enums\NotificationLogStatusEnum;
 use Modules\Xot\Contracts\ProfileContract;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 
@@ -26,14 +27,14 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder<static>|NotificationLog newModelQuery()
  * @method static Builder<static>|NotificationLog newQuery()
  * @method static Builder<static>|NotificationLog query()
- * @method static Builder<static>|NotificationLog withStatus(string $status)
+ * @method static Builder<static>|NotificationLog withStatus(NotificationLogStatusEnum $status)
  *
  * @property string $id
  * @property string|null $template_id
  * @property string $notifiable_type
  * @property string $notifiable_id
  * @property string $channel
- * @property string $status
+ * @property NotificationLogStatusEnum $status
  * @property string|null $status_message
  * @property array<array-key, mixed>|null $data
  * @property array<array-key, mixed>|null $metadata
@@ -72,20 +73,6 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  */
 class NotificationLog extends BaseModel
 {
-    public const string STATUS_PENDING = 'pending';
-
-    public const string STATUS_PROCESSING = 'processing';
-
-    public const string STATUS_SENT = 'sent';
-
-    public const string STATUS_DELIVERED = 'delivered';
-
-    public const string STATUS_FAILED = 'failed';
-
-    public const string STATUS_OPENED = 'opened';
-
-    public const string STATUS_CLICKED = 'clicked';
-
     protected $table = 'notification_logs';
 
     protected $fillable = [
@@ -120,9 +107,9 @@ class NotificationLog extends BaseModel
      * @param  Builder<static>  $query
      * @return Builder<static>
      */
-    public function scopeWithStatus(Builder $query, string $status): Builder
+    public function scopeWithStatus(Builder $query, NotificationLogStatusEnum $status): Builder
     {
-        return $query->where('status', $status);
+        return $query->where('status', $status->value);
     }
 
     /**
@@ -148,7 +135,7 @@ class NotificationLog extends BaseModel
     public function markAsOpened(): self
     {
         $this->update([
-            'status' => self::STATUS_OPENED,
+            'status' => NotificationLogStatusEnum::OPENED,
             'opened_at' => now()]);
 
         return $this;
@@ -157,7 +144,7 @@ class NotificationLog extends BaseModel
     public function markAsClicked(): self
     {
         $this->update([
-            'status' => self::STATUS_CLICKED,
+            'status' => NotificationLogStatusEnum::CLICKED,
             'clicked_at' => now()]);
 
         return $this;
@@ -166,6 +153,7 @@ class NotificationLog extends BaseModel
     protected function casts(): array
     {
         return array_merge(parent::casts(), [
+            'status' => NotificationLogStatusEnum::class,
             'data' => 'array',
             'metadata' => 'array',
             'sent_at' => 'datetime',

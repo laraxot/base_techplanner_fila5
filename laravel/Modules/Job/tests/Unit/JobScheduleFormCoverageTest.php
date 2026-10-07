@@ -10,6 +10,7 @@ use Mockery;
 use Modules\Job\Actions\Command\GetCommandsAction;
 use Modules\Job\Datas\CommandData;
 use Modules\Job\Filament\Resources\ScheduleResource\Schemas\ScheduleForm;
+use Modules\Job\Tests\Fixtures\StubGetCommandsAction;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\LaravelData\DataCollection;
@@ -45,17 +46,7 @@ describe('Job ScheduleForm full schema coverage', function (): void {
         ]);
 
         $collection = new DataCollection(CommandData::class, [$command]);
-        app()->instance(GetCommandsAction::class, new class($collection)
-        {
-            /** @param DataCollection<int, CommandData> $commands */
-            public function __construct(private DataCollection $commands) {}
-
-            /** @return DataCollection<int, CommandData> */
-            public function execute(): DataCollection
-            {
-                return $this->commands;
-            }
-        });
+        app()->instance(GetCommandsAction::class, new StubGetCommandsAction($collection));
 
         $schema = (new ScheduleForm)->getFormSchema();
         Assert::assertArrayHasKey('main_section', $schema);

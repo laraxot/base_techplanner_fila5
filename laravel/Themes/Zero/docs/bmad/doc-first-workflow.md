@@ -8,7 +8,7 @@ qmd: "theme zero - doc-first workflow"
 related:
 <<<<<<< HEAD
 =======
-  - "./00-INDEX.md"
+  - "./00-index.md"
 >>>>>>> laraxot/dev
   - "./00-index.md"
 ---

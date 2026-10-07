@@ -130,6 +130,7 @@ describe('Job Providers Coverage', function () {
             $reflection = new \ReflectionProperty(AdminPanelProvider::class, 'module');
             Assert::assertTrue($reflection->isProtected());
             Assert::assertSame('Job', $reflection->getDefaultValue());
+            Assert::assertSame('Job', $reflection->getValue($provider));
         });
 
         it('has panel method', function () {

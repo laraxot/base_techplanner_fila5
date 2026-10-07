@@ -194,6 +194,7 @@ class InlineDatePicker extends XotBaseDatePicker
 
         $weeks = collect();
         $currentDay = $firstDay->copy();
+        $selectedDate = $this->getSelectedDate();
 
         while ($currentDay->lte($lastDay)) {
             $week = collect();
@@ -202,16 +203,7 @@ class InlineDatePicker extends XotBaseDatePicker
                 $isCurrentMonth = $currentDay->month === $targetMonth->month;
                 $isToday = $currentDay->isToday();
 
-                $isSelected = false;
-                try {
-                    $state = $this->getState();
-                    if ($state && \is_string($state)) {
-                        $isSelected = $currentDay->isSameDay(Carbon::parse($state));
-                    }
-                } catch (\Throwable $e) {
-                    $isSelected = false;
-                }
-
+                $isSelected = $selectedDate?->isSameDay($currentDay) ?? false;
                 $isEnabled = $this->isDateEnabled($currentDay->format('Y-m-d')) && $isCurrentMonth;
 
                 $week->push([
@@ -237,6 +229,21 @@ class InlineDatePicker extends XotBaseDatePicker
             'year' => $targetMonth->year,
             'weekdays' => $this->getLocalizedWeekdays(),
         ];
+    }
+
+    /**
+     * Data selezionata nello stato del campo, null se vuota o non interpretabile come data.
+     */
+    private function getSelectedDate(): ?Carbon
+    {
+        try {
+            $state = $this->getState();
+
+            return $state && \is_string($state) ? Carbon::parse($state) : null;
+        } catch (\Throwable) {
+            // Stato non leggibile o data non valida: il calendario resta senza giorno selezionato.
+            return null;
+        }
     }
 
     /**

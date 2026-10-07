@@ -8,7 +8,7 @@ qmd: "performance actions reference"
 related:
 <<<<<<< HEAD
 =======
-  - "./00-INDEX.md"
+  - "./00-index.md"
 >>>>>>> laraxot/dev
   - "./00-index.md"
 ---
@@ -101,7 +101,7 @@ ridefinirlo.
 - [Documentazione modulo Performance](../../Modules/Performance/docs/action-update-gg-presenza-dalal.md)
 - [Documentazione modulo Performance](../../../laravel/Modules/Performance/docs/action-update-gg-presenza-dalal.md)
 - [Documentazione modulo Performance](../../Modules/Performance/docs/action-update-gg-presenza-dalal.md)
-- [README tema Zero](./README.md)
+- [README tema Zero](./readme.md)
 - [Index documentazione tema Zero](./index.md)
 
 ## UpdatepercParttimepondDalal
@@ -216,5 +216,5 @@ TextColumn::make('gg_anno')
 - [Documentazione modulo Performance - giorni presenza](../../Modules/Performance/docs/action-update-gg-presenza-dalal.md)
 - [Documentazione modulo Performance - giorni anno](../../Modules/Performance/docs/action-update-gg-anno.md)
 - [Documentazione modulo Performance - part-time ponderato](../../Modules/Performance/docs/action-update-perc-parttimepond-dalal.md)
-- [README tema Zero](./README.md)
+- [README tema Zero](./readme.md)
 - [Index documentazione tema Zero](./index.md)

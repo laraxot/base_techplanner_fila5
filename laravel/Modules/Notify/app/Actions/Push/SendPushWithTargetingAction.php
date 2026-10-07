@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Notify\Actions\Push;
 
+use Illuminate\Support\Facades\Log;
 use Modules\Notify\Datas\PushCriteriaData;
 use Modules\Notify\Datas\PushNotificationData;
 use Spatie\QueueableAction\QueueableAction;
@@ -37,6 +38,9 @@ class SendPushWithTargetingAction
      */
     private function getTokensByCriteria(PushCriteriaData $criteria): array
     {
+        // Nessuno store dei device token e' ancora implementato: il targeting non puo' risolvere token.
+        Log::warning('Push targeting: nessuno store dei device token configurato, nessun token risolto.', ['criteria' => $criteria->toArray()]);
+
         return [];
     }
 }
