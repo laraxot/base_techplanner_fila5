@@ -6,6 +6,8 @@ module: Notify
 scope: documentation
 bmad_version: 1.0
 updated: 2026-10-06
+tags: [docs, notify, bmad]
+qmd: "notify   english presentation notify"
 ---
 
 # 📬 Notify — English presentation
@@ -49,7 +51,7 @@ Closes the feedback loop: state changes become traceable messages.
 
 Reliable **communication** builds institutional trust. Build it here.
 
-Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5** — see [STORY-133](../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
+Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5** — see [STORY-133](../../../../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
 
 ---
 

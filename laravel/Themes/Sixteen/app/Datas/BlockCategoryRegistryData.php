@@ -12,8 +12,7 @@ final class BlockCategoryRegistryData
     /**
      * @var list<string>
      */
-    /** @var array<mixed> */
-    public const LEGACY_FOLDERS = [
+    public const array LEGACY_FOLDERS = [
         'administration',
         'application',
         'booking',
@@ -61,8 +60,7 @@ final class BlockCategoryRegistryData
     /**
      * @var list<string>
      */
-    /** @var array<mixed> */
-    public const CANONICAL_FOLDERS = [
+    public const array CANONICAL_FOLDERS = [
         'accordion',
         'alert',
         'alerts',
@@ -88,7 +86,6 @@ final class BlockCategoryRegistryData
         'faq',
         'feature',
         'features',
-        'grid',
         'feed',
         'feedback',
         'filters',

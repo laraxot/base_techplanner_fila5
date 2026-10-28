@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\AI\Enums\AiToolLogStatusEnum;
 use Modules\Xot\Contracts\ProfileContract;
+use Modules\Xot\Models\XotBaseModel;
 
 /**
  * Class AiToolLog.
@@ -26,7 +27,7 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @mixin \Eloquent
  */
-class AiToolLog extends BaseModel
+class AiToolLog extends XotBaseModel
 {
     /**
      * @var list<string>

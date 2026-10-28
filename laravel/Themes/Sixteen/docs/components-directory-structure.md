@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "components directory structure"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Components Directory Structure
@@ -17,15 +18,6 @@ discussions: []
 **Related**: [[00-index]], [[layout-hierarchy]], [[README]]
 
 ---
-
-title: "components directory structure"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "components directory structure"
-issues: []
-discussions: []
 ## 📁 Directory Overview
 
 ```
@@ -99,7 +91,7 @@ laravel/Themes/Sixteen/resources/views/components/
 
 ### Documentation
 - **[Layout Hierarchy](./layout-hierarchy.md)** - Complete architecture guide
-- **[00-index](./00-index.md)** - Main documentation index
+- **[00-index](./00-INDEX.md)** - Main documentation index
 
 ---
 

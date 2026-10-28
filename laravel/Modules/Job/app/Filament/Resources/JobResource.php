@@ -34,6 +34,7 @@ class JobResource extends XotBaseResource
         ];
     }
 
+    #[Override]
     public static function getWidgets(): array
     {
         return [

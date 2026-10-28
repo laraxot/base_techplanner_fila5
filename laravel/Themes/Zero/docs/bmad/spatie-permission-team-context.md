@@ -6,11 +6,15 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "spatie permission team context"
 related:
-<<<<<<< HEAD
-=======
   - "./00-index.md"
->>>>>>> laraxot/dev
-  - "./00-index.md"
+id: zero-docs-bmad-spatie-permission-team-context
+slug: spatie-permission-team-context
+description: "Theme Zero renders authentication and dashboard UI. It must not configure Spatie Permission models."
+document_type: guide
+category: architecture
+status: active
+issues: []
+discussions: []
 ---
 
 # Spatie Permission Team Context

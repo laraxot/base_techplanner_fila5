@@ -12,7 +12,6 @@ use PHPUnit\Framework\Assert;
 describe('AddressColumn — controparte di AddressField', function (): void {
     it('can be instantiated with make() using the default name', function (): void {
         $column = AddressColumn::make();
-        Assert::assertInstanceOf(AddressColumn::class, $column);
         Assert::assertSame('address', $column->getName());
     });
 

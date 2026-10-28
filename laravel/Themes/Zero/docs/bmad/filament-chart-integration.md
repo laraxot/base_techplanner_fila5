@@ -6,11 +6,15 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "filament installation and chart widget integration guide for zero theme"
 related:
-<<<<<<< HEAD
-=======
   - "./00-index.md"
->>>>>>> laraxot/dev
-  - "./00-index.md"
+id: zero-docs-bmad-filament-chart-integration
+slug: filament-chart-integration
+description: "This document provides comprehensive guidance on integrating Filament 5.x components and ChartWidgets with the Zero theme, following Laraxot architectural patterns and best..."
+document_type: how-to
+category: ui-frontend
+status: active
+issues: []
+discussions: []
 ---
 
 # Filament Installation and Chart Widget Integration Guide for Zero Theme

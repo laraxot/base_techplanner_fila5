@@ -32,19 +32,18 @@ function createTestCalendarWidget(): UserCalendarWidget
 }
 
 beforeEach(function (): void {
-    /** @var MockInterface&SaveTransAction $mock */
-    $mock = \Mockery::mock(SaveTransAction::class);
-    /** @var ExpectationInterface $expectation */
-    $expectation = $mock->shouldReceive('execute');
-    $expectation->andReturn(null);
-
-    app()->instance(SaveTransAction::class, $mock);
+    /* @var \Modules\UI\Tests\TestCase $this */
+    $this->mockService(SaveTransAction::class, static function (MockInterface $mock): void {
+        /** @var ExpectationInterface $expectation */
+        $expectation = $mock->shouldReceive('execute');
+        $expectation->andReturn(null);
+    });
 });
 
 describe('Base Calendar Widget', function (): void {
     test('is auser calendar widget', function (): void {
-        /* @var \Modules\UI\Tests\TestCase $this */
-        Assert::assertInstanceOf(UserCalendarWidget::class, createTestCalendarWidget());
+        $widget = new UserCalendarWidget;
+        Assert::assertSame(UserCalendarWidget::class, $widget::class);
     });
 
     test('returns empty events if action class does not exist', function (): void {

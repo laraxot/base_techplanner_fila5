@@ -2,6 +2,10 @@
 title: "UI Module: Philosophy, Purpose, and Design Principles"
 description: "Filosofia, regole e principi di design del modulo UI"
 updated: 2026-09-24
+type: note
+status: draft
+tags: [docs, ui, bmad]
+qmd: "ui module: philosophy, purpose, and design principles ui"
 ---
 
 # UI Module: Philosophy, Purpose, and Design Principles

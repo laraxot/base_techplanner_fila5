@@ -7,6 +7,14 @@ updated: 2026-07-14
 qmd: "report metodi con nome duplicato nei moduli e nei temi"
 related:
   - "./00-index.md"
+id: zero-docs-bmad-duplicate-methods-report
+slug: duplicate-methods-report
+description: "Questo documento elenca i metodi PHP presenti nei sotto‑directory laravel/Modules e laravel/Themes che compaiono più di una volta nel codicebase."
+document_type: guide
+category: static-analysis
+status: active
+issues: []
+discussions: []
 ---
 
 # Report: Metodi con nome duplicato nei moduli e nei temi

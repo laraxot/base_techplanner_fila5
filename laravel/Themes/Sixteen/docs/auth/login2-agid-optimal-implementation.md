@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "login2 agid optimal implementation"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Login2.blade.php - Implementazione AGID Ottimale
@@ -337,23 +338,14 @@ window.announceToScreenReader = function(message) {
 
 ## 🔗 **Collegamenti Documentazione**
 
-- [Regole Critiche](./critical-rules.md)
+- [Regole Critiche](../critical-rules.md)
 - [Regole Naming AGID](./sixteen-agid-naming-rules.md)
-- [Layout Usage Rules](./layout-usage-rules.md)
-- [Bootstrap Italia Examples](./bootstrap-italia-examples.md)
-- [Accessibility Guidelines](./accessibility.md)
-- [Vite Configuration](./vite-configuration-rules.md)
+- [Layout Usage Rules](../layout-usage-rules.md)
+- [Bootstrap Italia Examples](../bootstrap-italia-examples.md)
+- [Accessibility Guidelines](../accessibility.md)
+- [Vite Configuration](../build/vite-configuration-rules.md)
 
 ---
-
-title: "login2 agid optimal implementation"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "login2 agid optimal implementation"
-issues: []
-discussions: []
 **Creato**: 01 Agosto 2025  
 **Autore**: Sistema Implementazione AGID  
 **Versione**: 1.0  

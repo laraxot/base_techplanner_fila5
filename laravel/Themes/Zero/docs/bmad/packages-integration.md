@@ -6,11 +6,15 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "integrazione pacchetti nel tema zero"
 related:
-<<<<<<< HEAD
-=======
   - "./00-index.md"
->>>>>>> laraxot/dev
-  - "./00-index.md"
+id: zero-docs-bmad-packages-integration
+slug: packages-integration
+description: "Il tema Zero utilizza le ultime tecnologie dell'ecosistema Laravel per offrire un'esperienza utente moderna e accessibile."
+document_type: guide
+category: architecture
+status: active
+issues: []
+discussions: []
 ---
 
 # Integrazione Pacchetti nel Tema Zero

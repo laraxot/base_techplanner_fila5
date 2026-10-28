@@ -8,6 +8,14 @@ qmd: "metodi duplicati zero"
 related:
   - "./00-index.md"
   - "./duplicate-methods-report.md"
+id: zero-docs-bmad-duplicate-methods
+slug: duplicate-methods
+description: "Analisi sintetica dei metodi PHP con lo stesso nome all'interno di questo tema."
+document_type: guide
+category: static-analysis
+status: active
+issues: []
+discussions: []
 ---
 
 # Metodi duplicati — Zero

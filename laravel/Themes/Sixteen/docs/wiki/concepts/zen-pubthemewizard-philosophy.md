@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "zen pubthemewizard philosophy"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Filosofia Zen: PubThemeWizard Architecture
@@ -19,7 +20,7 @@ discussions: []
 PubThemeWizard.php (PHP) = LOGICA + VESTITO DEFAULT
     ↓ (line 18: protected string $view = 'pub_theme::components.wizard';)
     ↓
-ticket-create-wizard.blade.php (NON USATO — fallback only)
+create-ticket-wizard.blade.php (shell del widget: USATO, risolto da GetViewByClassAction in `pub_theme::filament.widgets.create-ticket-wizard`; correzione verificata 2026-10-13)
     ↓
 pub_theme::components.wizard (VESTITO ATTUALE — nostro Design Comuni)
     ↓
@@ -51,15 +52,6 @@ PubThemeWizard::make(static::getSteps())  // ← USA QUESTO!
 **Perché?** `PubThemeWizard` setta già il view giusto (`pub_theme::components.wizard`).
 
 ---
-
-title: "zen pubthemewizard philosophy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "zen pubthemewizard philosophy"
-issues: []
-discussions: []
 ## 🏛️ Zen dell'Header Dynamic
 
 ### Architecture Chain (Recap)

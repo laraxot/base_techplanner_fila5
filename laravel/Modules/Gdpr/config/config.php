@@ -5,6 +5,7 @@ declare(strict_types=1);
 return [
     'name' => 'Gdpr',
     'description' => 'Modulo per il Gdpr',
+    // 'icon' => 'heroicon-o-clock',
     'icon' => 'gdpr-icon',
     'navigation' => [
         'enabled' => true,
@@ -28,24 +29,11 @@ return [
      * |
      */
     'cookie' => [
-        'consent_lifetime' => 365, // giorni
-        'categories' => [
-            'necessary' => [
-                'name' => 'Necessari',
-                'description' => 'Cookie tecnici essenziali per il funzionamento del sito',
-                'required' => true,
-            ],
-            'analytics' => [
-                'name' => 'Analitici',
-                'description' => 'Cookie per analisi statistiche anonime',
-                'required' => false,
-            ],
-            'marketing' => [
-                'name' => 'Marketing',
-                'description' => 'Cookie per marketing e profilazione',
-                'required' => false,
-            ],
-        ],
+        // giorni di validita' della scelta: il Garante (linee guida cookie, provv. 10.6.2021 n. 231) non ammette di riproporre il banner prima di 6 mesi
+        'consent_lifetime' => 180,
+        // Cookie NON tecnici (analitici, marketing) impostati da un modulo: [name, category (analytics|marketing), purpose, duration]
+        // purpose e duration sono chiavi di traduzione o testi. Vuoto = solo cookie tecnici: il banner informa e non chiede consenso.
+        'extra' => [],
     ],
     /*
      * |--------------------------------------------------------------------------

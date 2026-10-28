@@ -40,8 +40,9 @@ docs/phpstan/
 /docs/vendor/
 # Documentation and cache
 .DS_Store
--e
 .env
+.env.*
+!.env.example
 error_log
 *.exe
 *.fila2
@@ -101,23 +102,9 @@ vendor/
 .windsurf/
 yarn-error.log
 *:Zone.Identifier
+# graphify-out: generated AST/knowledge graph — never commit (no git-lfs; rebuild with graphify update)
 graphify-out/
 .claude/
 .claude-audit/
 test-results/
 gdpr.code-workspace
-/.docs-archive/
-*~head
-
-agentdb.rvf
-
-# Laraxot — IDE folders forbidden at module/theme root (see module-theme-root-hygiene)
-.cursor/
-.devcontainer/
-.vscode/
-.windsurf/
-tests/AuditCoverage/
-
-# Artefatti audit vietati (rule: tests-auditcoverage-forbidden)
-audit-coverage/
-.claude-audit/

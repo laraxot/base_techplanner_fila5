@@ -1,11 +1,17 @@
 ---
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "livewire widget prd"
+issues: []
+discussions: []
 title: "PRD — Tenant"
 type: prd
 module: Tenant
 related:
   - ./livewire-inventory.md
+status: draft
 ---
-tags: [docs, tenant, bmad]
 
 # PRD Tenant
 

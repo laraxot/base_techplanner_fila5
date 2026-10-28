@@ -11,6 +11,7 @@ title: "Gdpr — contributing"
 type: guide
 module: Gdpr
 updated: 2026-09-24
+status: draft
 ---
 
 # Contributing to Gdpr

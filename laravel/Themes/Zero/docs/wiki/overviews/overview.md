@@ -4,6 +4,16 @@ module: "Zero"
 type: overview
 created: "2026-04-15T08:28:52Z"
 updated: "2026-04-15T08:28:52Z"
+id: zero-docs-wiki-overviews-overview
+slug: overview
+description: "This is a self-maintaining knowledge base for the Zero module. AI agents ingest raw documents, synthesize wiki pages, and keep everything organized."
+document_type: overview
+category: documentation
+status: active
+tags: []
+qmd: "wiki overview"
+issues: []
+discussions: []
 ---
 
 # Zero Wiki Overview

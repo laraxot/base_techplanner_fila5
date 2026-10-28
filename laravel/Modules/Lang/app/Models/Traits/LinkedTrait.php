@@ -1,6 +1,5 @@
 <?php
 
-declare(strict_types=1);
 /**
  * ---.
  */
@@ -18,6 +17,8 @@ use Modules\Xot\Contracts\UserContract;
  * Modules\Lang\Models\Traits\LinkedTrait.
  *
  * @property UserContract|null $user
- * @property Post $post
+ * @property Post              $post
  */
-trait LinkedTrait {}
+trait LinkedTrait
+{
+}

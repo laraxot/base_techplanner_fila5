@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "git conflict resolution"
 issues: []
 discussions: []
+status: superseded
+superseded_by: ../git/git-conflict-resolution.md
 ---
 
 # Risoluzione dei Conflitti Git

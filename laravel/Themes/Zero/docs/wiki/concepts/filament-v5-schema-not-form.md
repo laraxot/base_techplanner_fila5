@@ -8,6 +8,15 @@ updated: 2026-07-24
 related:
   - ../../../../../../docs/wiki/concepts/filament-v5-form-in-blade.md
   - ../../bmad/conflict-resolution-summary.md
+id: zero-docs-wiki-concepts-filament-v5-schema-not-form
+slug: filament-v5-schema-not-form
+description: "Documenti legacy Zero (conflict-resolution-summary, ecc.) descrivono una migrazione Schema Form tipica di conflitti Git su Filament 5 intermedi. Su Filament 5 il canon ufficiale è"
+document_type: concept
+category: database
+status: active
+qmd: "filament 5 - schema api (non tornare a forms\\\\form)"
+issues: []
+discussions: []
 ---
 
 # Filament 5 — `Schema`, non `Form`

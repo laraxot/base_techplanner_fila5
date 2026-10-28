@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "components update 2025 10"
 issues: []
 discussions: []
+status: superseded
+superseded_by: components-update.md
 ---
 
 # Sixteen Theme - Components Update Ottobre 2025
@@ -302,15 +304,6 @@ Per aggiornare componenti esistenti:
    - Verificare accessibilità
 
 ---
-
-title: "components update 2025 10"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "components update 2025 10"
-issues: []
-discussions: []
 **Autore**: Claude Code
 **Data**: 2025-10-15
 **Versione Tema**: 1.x

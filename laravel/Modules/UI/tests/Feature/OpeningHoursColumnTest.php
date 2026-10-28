@@ -10,7 +10,6 @@ use PHPUnit\Framework\Assert;
 describe('OpeningHoursColumn — controparte di OpeningHoursField', function (): void {
     it('can be instantiated with make() using the default name', function (): void {
         $column = OpeningHoursColumn::make();
-        Assert::assertInstanceOf(OpeningHoursColumn::class, $column);
         Assert::assertSame('opening_hours', $column->getName());
     });
 

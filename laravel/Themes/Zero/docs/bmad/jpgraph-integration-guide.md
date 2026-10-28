@@ -6,11 +6,15 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "jpgraph integration guide - zero theme"
 related:
-<<<<<<< HEAD
-=======
   - "./00-index.md"
->>>>>>> laraxot/dev
-  - "./00-index.md"
+id: zero-docs-bmad-jpgraph-integration-guide
+slug: jpgraph-integration-guide
+description: "This guide describes how the Zero theme integrates JpGraph-generated chart images into PDF reports. The theme provides PDF templates, Blade components, and print-optimized CSS..."
+document_type: how-to
+category: ui-frontend
+status: active
+issues: []
+discussions: []
 ---
 
 # JpGraph Integration Guide - Zero Theme

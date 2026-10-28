@@ -14,13 +14,13 @@
                         </a>
                         <div class="it-header-slim-right-zone" role="navigation">
                             <div class="nav-item dropdown">
-                                <button type="button" class="nav-link dropdown-toggle btn btn-primary btn-full" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="languages" aria-haspopup="true" x-data="{ open: false }" @click="open = !open" @click.away="open = false">
+                                <button id="languages-toggle" type="button" class="nav-link dropdown-toggle btn btn-primary btn-full" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="languages" aria-haspopup="true" x-data="{ open: false }" @click="open = !open" @click.away="open = false">
                                     <span class="visually-hidden">Lingua attiva:</span>
                                     <span>ITA</span>
                                     <x-ui::icon name="chevron-down" class="w-4 h-4 ml-1" x-show="!open" />
                                     <x-ui::icon name="chevron-up" class="w-4 h-4 ml-1" x-show="open" />
                                 </button>
-                                <div x-show="open"
+                                <div id="languages" x-show="open"
                                      x-transition:enter="transition ease-out duration-200"
                                      x-transition:enter-start="opacity-0 transform scale-95"
                                      x-transition:enter-end="opacity-100 transform scale-100"
@@ -30,7 +30,7 @@
                                      class="dropdown-menu dropdown-menu-right show"
                                      role="menu"
                                      aria-orientation="vertical"
-                                     aria-labelledby="lang-dropdown-button">
+                                     aria-labelledby="languages-toggle">
                                     <ul class="link-list">
                                         <li><a class="dropdown-item list-item" href="#"><span>ITA <span class="visually-hidden">selezionata</span></span></a></li>
                                         <li><a class="dropdown-item list-item" href="#"><span>ENG</span></a></li>
@@ -106,7 +106,7 @@
 
                                         <div class="dropdown-divider"></div>
 
-                                        <a href="{{ route('logout') }}" class="dropdown-item text-danger" role="menuitem">
+                                        <a href="{{ url('/'.app()->getLocale().'/auth/logout') }}" class="dropdown-item text-danger" role="menuitem">
                                             <x-ui::icon name="arrow-right-on-rectangle" class="w-4 h-4 mr-2" />
                                             {{ __('pub_theme::header.user.dropdown.logout.label') }}
                                         </a>
@@ -184,8 +184,8 @@
                                     </ul>
                                 </div>
                                 <div class="it-search-wrapper">
-                                    <span class="d-none d-md-block">Cerca</span>
-                                    <button class="search-link rounded-icon" type="button" aria-label="Cerca nel sito">
+                                    <span class="d-none d-md-block">{{ __('sixteen::header.center.search.label') }}</span>
+                                    <button class="search-link rounded-icon" type="button" aria-label="{{ __('sixteen::header.center.search.toggle_aria.label') }}">
                                         <x-filament::icon icon="heroicon-o-magnifying-glass" class="icon" />
                                     </button>
                                 </div>

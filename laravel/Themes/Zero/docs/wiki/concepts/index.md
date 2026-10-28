@@ -4,6 +4,15 @@ type: reference
 tags: [wiki, no-frontmatter-fix]
 created: 2026-08-24
 updated: 2026-08-24
+id: zero-docs-wiki-concepts-index
+slug: index
+description: "Indice dei concetti wiki del tema Zero."
+document_type: reference
+category: documentation
+status: active
+qmd: "index"
+issues: []
+discussions: []
 ---
 
 # Zero Theme - concepts Index
@@ -20,7 +29,7 @@ qmd search "Zero concepts" --limit 5
 
 ## See Also
 
-- [Root Trigger Map](../../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
+- [Root Trigger Map](../../../../../../bashscripts/ai/wiki/rules/00-TRIGGER_MAP.md)
 - [Filament 5 Schema (non Form)](./filament-v5-schema-not-form.md) — correzione vs docs legacy Schema→Form
 - [Wiki index](../index.md)
 

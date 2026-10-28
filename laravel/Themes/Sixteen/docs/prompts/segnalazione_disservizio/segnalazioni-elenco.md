@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "segnalazioni elenco"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Segnalazioni elenco
@@ -133,7 +134,7 @@ Dobbiamo utilizzare le stesse classi bootstrap, poi con tailwind @apply  le util
     Files Aggiornati:
       ✅ .windsurfrules - Regole corrette
       ✅ QWEN.md - Memories corrette
-      ✅ BLOCK_IMPLEMENTATION_GUIDE.md - Documentazione corretta
+      ✅ block-implementation-guide.md - Documentazione corretta
 
 Regola: parità HTML strutturale ESSENZIALE (≥90% match, esclusi script/style).
 Dopo: parità visiva/funzionale con TailwindCSS (@apply) + Alpine.js (mai Bootstrap Italia CSS/JS).

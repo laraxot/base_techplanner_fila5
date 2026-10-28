@@ -14,10 +14,6 @@ use function Safe\file_get_contents;
 uses(TestCase::class);
 
 describe('GetCommandsAction', function (): void {
-    test('can be instantiated', function (): void {
-        $action = new GetCommandsAction;
-        Assert::assertInstanceOf(GetCommandsAction::class, $action);
-    });
 
     test('has correct method signature', function (): void {
         $reflection = new \ReflectionClass(GetCommandsAction::class);
@@ -28,7 +24,7 @@ describe('GetCommandsAction', function (): void {
 
     test('can be resolved from container', function (): void {
         $actionFromContainer = app(GetCommandsAction::class);
-        Assert::assertInstanceOf(GetCommandsAction::class, $actionFromContainer);
+        Assert::assertSame(GetCommandsAction::class, $actionFromContainer::class);
     });
 
     test('uses strict types', function (): void {

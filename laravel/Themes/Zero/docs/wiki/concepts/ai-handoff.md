@@ -7,6 +7,14 @@ updated: 2026-07-14
 qmd: "ai handoff"
 related:
   - "./00-index.md"
+id: zero-docs-wiki-concepts-ai-handoff
+slug: ai-handoff
+description: "Handoff tra agenti sul tema: regole non negoziabili sui test, stato dei lavori e file di coordinamento."
+document_type: guide
+category: documentation
+status: active
+issues: []
+discussions: []
 ---
 
 # ai handoff

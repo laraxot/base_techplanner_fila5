@@ -7,8 +7,16 @@ updated: 2026-07-14
 qmd: "accessibilita e standard cross-browser"
 related:
   - "./accessibility-standards.md"
-  - "./advanced-features.md"
-  - "./component-library.md"
+  - "../overviews/advanced-features.md"
+  - "../concepts/component-library.md"
+id: zero-docs-wiki-rules-accessibility-standards
+slug: accessibility-standards
+description: "Rendere il tema conforme agli standard di accessibilita e compatibile con i principali browser."
+document_type: rule
+category: architecture
+status: active
+issues: []
+discussions: []
 ---
 
 # Accessibilita e standard cross-browser
@@ -70,7 +78,7 @@ Rendere il tema conforme agli standard di accessibilita e compatibile con i prin
 ## Collegamenti correlati
 
 - [`Roadmap tema Zero`](../../bmad/roadmap.md)
-- [`component-library.md`](component-library.md)
-- [`responsive-system.md`](responsive-system.md)
+- [`component-library.md`](../concepts/component-library.md)
+- [`responsive-system.md`](../concepts/responsive-system.md)
 - [`theme-documentation-standard.md`](../../bmad/theme-documentation-standard.md)
 - [`architecture.md`](../../bmad/architecture.md)

@@ -8,7 +8,7 @@ declare(strict_types=1);
         <div class="mx-auto max-w-3xl space-y-2 lg:max-w-none">
           <h2 class="text-xl font-semibold leading-6 text-gray-300">Pricing</h2>
           <p class="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">The right price for you, whoever you are</p>
-          <p class="text-xl text-gray-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum sequi unde repudiandae natus.</p>
+          <p class="text-xl text-gray-300">Il portale comunale offre accesso ai servizi digitali, alla trasparenza amministrativa e alla partecipazione attiva dei cittadini.</p>
         </div>
       </div>
     </div>
@@ -26,7 +26,7 @@ declare(strict_types=1);
                   $49
                   <span class="ml-1 text-2xl font-medium tracking-normal text-gray-500">/mo</span>
                 </div>
-                <p class="mt-5 text-lg text-gray-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <p class="mt-5 text-lg text-gray-500">Servizi digitali, trasparenza e partecipazione per una città moderna e inclusiva.</p>
               </div>
               <div class="flex flex-1 flex-col justify-between space-y-6 bg-gray-50 px-6 pb-8 pt-6 sm:p-10 sm:pt-6">
                 <ul role="list" class="space-y-4">
@@ -77,7 +77,7 @@ declare(strict_types=1);
                   $79
                   <span class="ml-1 text-2xl font-medium tracking-normal text-gray-500">/mo</span>
                 </div>
-                <p class="mt-5 text-lg text-gray-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <p class="mt-5 text-lg text-gray-500">Servizi digitali, trasparenza e partecipazione per una città moderna e inclusiva.</p>
               </div>
               <div class="flex flex-1 flex-col justify-between space-y-6 bg-gray-50 px-6 pb-8 pt-6 sm:p-10 sm:pt-6">
                 <ul role="list" class="space-y-4">

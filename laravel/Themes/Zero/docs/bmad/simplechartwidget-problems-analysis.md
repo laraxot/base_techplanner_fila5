@@ -6,11 +6,15 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "simplechartwidget - analisi problemi e miglioramenti uiux"
 related:
-<<<<<<< HEAD
-=======
   - "./00-index.md"
->>>>>>> laraxot/dev
-  - "./00-index.md"
+id: zero-docs-bmad-simplechartwidget-problems-analysis
+slug: simplechartwidget-problems-analysis
+description: "Questo documento analizza le problematiche identificate nel widget SimpleChartWidget e propone soluzioni per migliorare l'esperienza utente e l'esperienza visiva. L'analisi si..."
+document_type: guide
+category: ui-frontend
+status: active
+issues: []
+discussions: []
 ---
 
 # SimpleChartWidget - Analisi Problemi e Miglioramenti UI/UX

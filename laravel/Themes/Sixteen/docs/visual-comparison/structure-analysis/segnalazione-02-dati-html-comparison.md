@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "segnalazione 02 dati html comparison"
 issues: []
 discussions: []
+status: superseded
+superseded_by: ticket-02-dati-html-comparison.md
 ---
 
 # HTML Structure Comparison: segnalazione-02-dati
@@ -16,15 +18,6 @@ discussions: []
 **Local**: http://127.0.0.1:8000/it/tests/segnalazione-02-dati
 
 ---
-
-title: "segnalazione 02 dati html comparison"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "segnalazione 02 dati html comparison"
-issues: []
-discussions: []
 ## Summary
 
 | Metric | Reference | Local | Difference |
@@ -137,7 +130,7 @@ Based on the comparison:
 
 **Related Docs**:
 - [Visual Parity Report](../screenshots/VISUAL-PARITY-REPORT.md)
-- [CSS/JS Plan](../design-comuni-html-match-css-js-plan.md)
+- [CSS/JS Plan](../../design-comuni-html-match-css-js-plan.md)
 - [Screenshot Tools](../../../../bashscripts/docs/SCREENSHOT-TOOLS.md)
 
 ## Aggiornamento header mobile overlay (story 7-10, 2026-04-20)

@@ -8,10 +8,10 @@ use Modules\Gdpr\Providers\Filament\AdminPanelProvider;
 use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 use PHPUnit\Framework\Assert;
 
-test('admin_panel_provider_extends_xot_base_panel_provider', function (): void {
-    $provider = new AdminPanelProvider(app());
+use function Safe\class_parents;
 
-    Assert::assertInstanceOf(XotBasePanelProvider::class, $provider);
+test('admin_panel_provider_extends_xot_base_panel_provider', function (): void {
+    Assert::assertArrayHasKey(XotBasePanelProvider::class, class_parents(AdminPanelProvider::class));
 });
 
 test('admin_panel_provider_has_module_property', function (): void {

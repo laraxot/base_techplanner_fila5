@@ -14,6 +14,7 @@ related:
   - "./form-standards.md"
   - "./performance.md"
   - "./ui-standards.md"
+status: draft
 ---
 # Standard Form di Autenticazione
 

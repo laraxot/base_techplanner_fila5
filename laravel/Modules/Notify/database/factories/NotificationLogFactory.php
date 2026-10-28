@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Notify\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Modules\Notify\Enums\ChannelEnum;
 use Modules\Notify\Enums\NotificationLogStatusEnum;
 use Modules\Notify\Models\NotificationLog;
 use Modules\User\Models\User;
@@ -27,11 +26,11 @@ class NotificationLogFactory extends Factory
     {
         return [
             'notifiable_type' => User::class,
-            'notifiable_id' => '1',
-            'channel' => ChannelEnum::Mail->value,
-            'status' => NotificationLogStatusEnum::SENT,
-            'status_message' => null,
+            'notifiable_id' => 1,
+            'channel' => 'mail',
             'data' => ['message' => $this->faker->sentence()],
-            'sent_at' => now()];
+            'sent_at' => now(),
+            'status' => NotificationLogStatusEnum::SENT->value,
+            'status_message' => null];
     }
 }

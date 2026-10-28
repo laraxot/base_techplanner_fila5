@@ -3,11 +3,19 @@ title: 'JpGraph 4.4.2 Guide'
 module: Zero
 type: reference
 slug: jpgraph-guide
-description: "$graph = new Graph(800, 600); $graph->SetScale('intint');"
+description: "Guida a JpGraph 4.4.2: installazione e uso per generare grafici lato server con esportazione PDF."
 tags: [migrato-da-txt, zero]
 converted_from: jpgraph-guide.txt
 created: 2026-08-24
 updated: 2026-08-24
+id: zero-docs-bmad-jpgraph-guide
+document_type: reference
+category: ui-frontend
+status: superseded
+qmd: "jpgraph 4.4.2 guide"
+issues: []
+discussions: []
+superseded_by: ../wiki/concepts/jpgraph-guide.md
 ---
 
 # JpGraph 4.4.2 Guide

@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit;
 
+use Filament\Forms\Components\Field;
+use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Utilities\Get;
 use Filament\Schemas\Components\Utilities\Set;
 use Mockery;
@@ -51,6 +53,37 @@ describe('Job ScheduleForm full schema coverage', function (): void {
         $schema = (new ScheduleForm)->getFormSchema();
         Assert::assertArrayHasKey('main_section', $schema);
 
+        // I campi dello schedule, nell'ordine in cui li dichiara ScheduleForm.
+        $section = $schema['main_section'];
+        Assert::assertInstanceOf(Section::class, $section);
+        $children = $section->getDefaultChildComponents();
+        Assert::assertIsArray($children);
+        $fieldNames = [];
+        foreach ($children as $child) {
+            if ($child instanceof Field) {
+                $fieldNames[] = $child->getName();
+            }
+        }
+        Assert::assertSame([
+            'command',
+            'params',
+            'options_with_value',
+            'expression',
+            'environments',
+            'log_filename',
+            'webhook_before',
+            'webhook_after',
+            'email_output',
+            'sendmail_success',
+            'sendmail_error',
+            'log_success',
+            'log_error',
+            'even_in_maintenance_mode',
+            'without_overlapping',
+            'on_one_server',
+            'run_in_background',
+        ], $fieldNames);
+
         // Invoke nested closures via ModuleRemainingCoverage-style property walk
         $set = Mockery::mock(Set::class);
         expectMethod($set, '__invoke')->andReturnNull();
@@ -72,8 +105,6 @@ describe('Job ScheduleForm full schema coverage', function (): void {
             }
             jobInvokeClosures($val, $set, $get);
         }
-
-        Assert::assertNotEmpty($schema);
     });
 });
 

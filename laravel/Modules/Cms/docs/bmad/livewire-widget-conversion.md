@@ -1,11 +1,4 @@
 ---
-qmd: "livewire-widget-conversion"
-issues: []
-discussions: []
-title: "Livewire Widget Conversion"
----
-
----
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
@@ -17,6 +10,7 @@ type: pointer
 module: Cms
 related:
   - ./livewire-inventory.md
+status: draft
 ---
 
 # Cms — canone

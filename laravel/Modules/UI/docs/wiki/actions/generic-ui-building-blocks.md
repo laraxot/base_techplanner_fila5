@@ -3,17 +3,13 @@ title: "Generic UI Building Blocks: Category, Collection, FieldOption"
 type: concept
 tags: [models, actions, category, collection, field-option]
 created: 2026-07-20
-updated: 2026-07-20
+updated: 2026-10-23
 qmd: "generic-ui-building-blocks category collection fieldoption"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./table-layout-toggle.md"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-related:
-  - "./table-layout-toggle.md"
-  - "../geo-boundary.md"
+status: draft
 ---
 
 # Generic UI Building Blocks: Category, Collection, FieldOption
@@ -83,20 +79,13 @@ unico entrypoint `execute()`). Azioni presenti, raggruppate per sotto-cartella:
   `Panel` senza modifiche. C'è un file gemello `.disabled` nella stessa cartella da rimuovere
   quando il pacchetto sarà aggiornato.
 
-## Violazione regola di dipendenza — SOLO SEGNALAZIONE
-`app/Filament/Forms/Components/LocationSelector.php` importa `Modules\Geo\Models\Comune`
-(riga 11). La regola del progetto è che `Modules/UI` non deve mai dipendere da `Modules/Geo`
-(la direzione corretta è Geo → UI). Esiste anche un file gemello
-`LocationSelector.php.to_geo` con lo stesso import, che sembra un'indicazione che il file va
-spostato nel modulo Geo ma non è stato ancora fatto. Non corretto in questo task (fuori scope,
-solo documentazione) — richiede intervento separato per spostare/rifattorizzare il componente.
-## Violazione regola di dipendenza — chiusa
+## Violazione regola di dipendenza (LocationSelector) — chiusa
 
-`LocationSelector` importava `Modules\Geo\Models\Comune`: era una classe **Geo** messa in UI. In questo monorepo Geo è spento: il file attivo **non c’è** più (`test ! -f app/Filament/Forms/Components/LocationSelector.php`). Non ricrearlo, né come null-adapter, né con suffisso `.to_geo`.
+`LocationSelector` e' una classe **Geo** finita in UI: importava `Modules\Geo\Models\Comune` (per stringa, dietro `class_exists`). La regola del progetto e' che `Modules/UI` non dipende da `Modules/Geo` (direzione corretta: Geo verso UI). La versione canonica vive in `Modules\Geo\Filament\Forms\Components\LocationSelector` (chiavi lingua `geo::location_selector.*`).
+
+Storia: cancellato da UI il 2026-10-08 (`616345f9`, poi `0ecaedc4`), riportato dal pull del 2026-10-20 (commit `294bbc20`, con `LocationSelector.php.to_geo` e `lang/*/location_selector.php`), cancellato di nuovo il 2026-10-21: `.to_geo` e le lang in `83cc85a8`, `LocationSelector.php` in `4934d4c9` (verificato 2026-10-23: `test ! -f app/Filament/Forms/Components/LocationSelector.php`). Dettagli in [phpstan-test-wave-ui](../../stories/phpstan-test-wave-ui.story.md). Non ricrearlo in UI, ne' come stub che estende la classe Geo, ne' come null-adapter, ne' con suffisso `.to_geo`.
 
 Le Action di questo modulo restano quelle elencate sopra (icone, datetime, blocchi, user header). Niente Action di geocoding/mappe qui: quelle, se un giorno serviranno, sono `QueueableAction` in `Modules/Geo`.
-
-Canon: [../geo-boundary.md](../geo-boundary.md).
 
 ## Config path
 

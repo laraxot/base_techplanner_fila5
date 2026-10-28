@@ -2,11 +2,12 @@
 title: "Notify — copertura dei test"
 module: notify
 type: reference
-status: active
 tags: [coverage, testing, pest, notify]
 created: 2026-08-24
 updated: 2026-09-11
 qmd: "notify coverage pest unit 6.3 percento misurato xdebug db irraggiungibile; notificationlogresource completato 2026-09-11"
+status: superseded
+superseded_by: ../coverage.md
 ---
 
 # Notify — copertura dei test

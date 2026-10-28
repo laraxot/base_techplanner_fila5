@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "tailwind themes"
 issues: []
 discussions: []
+status: draft
 ---
 
 # tailwind_themes

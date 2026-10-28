@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "xot"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Xot
@@ -143,7 +144,7 @@ trait HasXotTable
 ```
 
 ## Documentazione Essenziale
-- [XotBaseModel](../../Xot/docs/models.md)
+- [XotBaseModel](../../architecture/models.md)
 - [XotBaseResource](../../Xot/docs/resources.md)
 - [XotBaseServiceProvider](../../Xot/docs/providers.md)
 

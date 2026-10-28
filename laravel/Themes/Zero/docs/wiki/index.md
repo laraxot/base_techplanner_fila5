@@ -1,7 +1,19 @@
 ---
 title: "Wiki Index"
 module: "Zero"
-updated: "2026-05-12T10:15:00Z"
+updated: "2026-10-20"
+id: zero-docs-wiki-index
+slug: index
+description: "Replaces embedding-based RAG at moderate scale (100 sources)."
+document_type: index
+type: index
+category: documentation
+status: active
+tags: []
+created: "2026-09-24"
+qmd: "wiki index"
+issues: []
+discussions: []
 ---
 
 # Wiki Index — Zero
@@ -18,6 +30,21 @@ updated: "2026-05-12T10:15:00Z"
 - [method-name-homonyms](./concepts/method-name-homonyms.md) — censimento omonimi metodi (0 nel tema; logica nei moduli)
 - [component-library](./concepts/component-library.md) — libreria componenti e integrazione UI
 - [responsive-system](./concepts/responsive-system.md) — sistema responsive e grid
+- [code-redundancy-theme](./concepts/code-redundancy-theme.md) - quando due temi simili sono debito e quando no
+- [context-overflow-prevention](./concepts/context-overflow-prevention.md) - stub verso la wiki del modulo Xot
+- [criteri-gg-theme-boundary-audit](./concepts/criteri-gg-theme-boundary-audit.md) - confine tema/moduli dopo l'audit Ptv, Sigma, Progressioni
+- [duplicate-method-bodies](./concepts/duplicate-method-bodies.md) - metodi PHP duplicati nel tema (strato di presentazione)
+- [filament-nested-resources](./concepts/filament-nested-resources.md) - risorse annidate Filament 5 (canonico)
+- [filament-v5-schema-not-form](./concepts/filament-v5-schema-not-form.md) - Schema al posto di Form su Filament 5
+- [gg-integ-params-no-asz-theme-boundary](./concepts/gg-integ-params-no-asz-theme-boundary.md) - il tema mostra valori calcolati dai moduli
+- [jpgraph-guide](./concepts/jpgraph-guide.md) - guida JpGraph 4.4.2 (canonico)
+- [module-directory-structure-boundary](./concepts/module-directory-structure-boundary.md) - stub sulla struttura delle directory dei moduli
+- [organizzativa-money](./concepts/organizzativa-money.md) - stub verso la wiki del modulo Xot
+- [php-method-name-homonyms-theme-impact](./concepts/php-method-name-homonyms-theme-impact.md) - impatto degli omonimi di metodo sui temi
+- [platform-leaf-dependency-and-theme](./concepts/platform-leaf-dependency-and-theme.md) - gerarchia piattaforma e foglie rispetto al tema
+- [ponytail-audit](./concepts/ponytail-audit.md) - delta del tema nell'audit ponytail
+- [ponytail-docs-lifecycle](./concepts/ponytail-docs-lifecycle.md) - ciclo di vita delle docs del tema
+- [second-brain-local-discipline](./concepts/second-brain-local-discipline.md) - stub verso la wiki del modulo Xot
 
 ## Entities
 
@@ -31,7 +58,6 @@ _No entities tracked yet._
 
 ## On-Demand References
 
-- [contract-interface-stacking](../../../../../docs/wiki/rules/contract-interface-stacking.md) — pattern contratti compositi (modelli backend)
 - [rules-index](./rules/index.md) — entry point per regole condivise e theme-facing da caricare on demand
 - [skills-index](./skills/index.md) — entry point per skill riusabili lato tema e Xot
 
@@ -63,6 +89,16 @@ _No entities tracked yet._
 ## Overviews
 
 - [overview](./overviews/overview.md) — Zero Wiki Overview
+- [advanced-features](./overviews/advanced-features.md) - funzionalita avanzate (dark mode, export)
+
+## Pagine di servizio della wiki
+
+- [README](./README.md) - a cosa serve la cartella `wiki/`
+- [schema](./schema.md) - schema e convenzioni della wiki del tema
+- [agents](./agents.md) - istruzioni per gli agenti che mantengono la wiki (ex `AGENTS.md`; il blocco YAML nel corpo e' un modello da copiare, non un frontmatter)
+- [log](./log.md) - registro cronologico delle attivita'
+- [raw/readme](./raw/readme.md) - cartella delle fonti grezze, sola lettura
+- Sotto-indici: [concepts/index](./concepts/index.md), [memories/index](./memories/index.md), [rules/index](./rules/index.md), [skills/index](./skills/index.md), [commands/index](./commands/index.md)
 
 ## How-To
 

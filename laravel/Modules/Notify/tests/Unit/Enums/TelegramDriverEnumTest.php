@@ -49,7 +49,6 @@ it('get default returns default driver', function (): void {
 
     $default = TelegramDriverEnum::getDefault();
 
-    Assert::assertInstanceOf(TelegramDriverEnum::class, $default);
     Assert::assertContains($default, TelegramDriverEnum::cases());
 });
 
@@ -65,7 +64,7 @@ it('cases returns all enum instances', function (): void {
     Assert::assertCount(3, $cases);
 
     foreach ($cases as $case) {
-        Assert::assertInstanceOf(TelegramDriverEnum::class, $case);
+        Assert::assertNotSame('', $case->value);
     }
 });
 

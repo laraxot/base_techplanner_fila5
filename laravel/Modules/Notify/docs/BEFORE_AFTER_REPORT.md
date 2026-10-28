@@ -1,9 +1,12 @@
 ---
 title: "Notify Docs Organization — Before/After Report"
 type: report
-status: completed
 module: Notify
 updated: 2026-10-06
+tags: [docs, notify]
+qmd: "before/after report   notify module docs notify"
+status: superseded
+superseded_by: before-after-report.md
 ---
 
 # Before/After Report — Notify Module Docs

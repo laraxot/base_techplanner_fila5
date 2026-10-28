@@ -6,11 +6,15 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "theme architecture and best practices"
 related:
-<<<<<<< HEAD
-=======
   - "./00-index.md"
->>>>>>> laraxot/dev
-  - "./00-index.md"
+id: zero-docs-bmad-theme-architecture-best-practices
+slug: theme-architecture-best-practices
+description: "This document outlines the architectural improvements and best practices implemented for theme development, focusing on the Zero theme and its integration with the modular..."
+document_type: pattern
+category: architecture
+status: active
+issues: []
+discussions: []
 ---
 
 # Theme Architecture and Best Practices

@@ -74,21 +74,15 @@ class Appointment extends Model
         'metadata',
     ];
 
-    /**
-     * @return array<string, string>
-     */
-    protected function casts(): array
-    {
-        return [
-            'appointment_date' => 'date',
-            'start_time' => 'datetime',
-            'end_time' => 'datetime',
-            'status' => AppointmentStatusEnum::class,
-            'required_documents' => 'array',
-            'reminder_sent' => 'boolean',
-            'metadata' => 'array',
-        ];
-    }
+    protected $casts = [
+        'appointment_date' => 'date',
+        'start_time' => 'datetime',
+        'end_time' => 'datetime',
+        'required_documents' => 'array',
+        'reminder_sent' => 'boolean',
+        'metadata' => 'array',
+        'status' => AppointmentStatusEnum::class,
+    ];
 
     /**
      * Relazione con l'utente che ha prenotato
@@ -202,33 +196,23 @@ class Appointment extends Model
     }
 
     /**
-     * Stati validi come [valore => label tradotta].
+     * Array di stati validi
      *
      * @return array<string, string>
      */
     public static function getStatuses(): array
     {
-        $statuses = [];
-        foreach (AppointmentStatusEnum::cases() as $status) {
-            $statuses[$status->value] = $status->getLabel();
-        }
-
-        return $statuses;
+        return AppointmentStatusEnum::options();
     }
 
     /**
-     * Tipi di servizio come [valore => label tradotta].
+     * Array di tipi servizio
      *
      * @return array<string, string>
      */
     public static function getServiceTypes(): array
     {
-        $types = [];
-        foreach (AppointmentServiceTypeEnum::cases() as $type) {
-            $types[$type->value] = $type->getLabel();
-        }
-
-        return $types;
+        return AppointmentServiceTypeEnum::options();
     }
 
     /**

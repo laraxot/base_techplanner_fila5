@@ -11,6 +11,11 @@ related:
   - "./enum-select-best-practices.md"
   - "./enum-select-component.md"
   - "./enum-select-contract-and-false-friends.md"
+title: "XotBaseField – No `$view` Property Rule"
+status: draft
+updated: 2026-10-07
+tags: [docs, ui, wiki]
+qmd: "xotbasefield   no `$view` property rule ui"
 ---
 
 # XotBaseField – No `$view` Property Rule

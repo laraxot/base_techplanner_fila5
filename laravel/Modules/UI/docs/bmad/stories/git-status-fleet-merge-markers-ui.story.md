@@ -5,7 +5,10 @@ module: UI
 epic: quality
 status: done
 related:
-  - ../../../Xot/docs/bmad/stories/merge-marker-fleet-residue.story.md
+  - ../../../../Xot/docs/bmad/stories/merge-marker-fleet-residue.story.md
+updated: 2026-10-23
+tags: [docs, ui, bmad]
+qmd: "git-status-fleet-merge-markers-ui ui"
 ---
 
 # git-status-fleet-merge-markers-ui
@@ -173,7 +176,7 @@ concatenate o interleaved** (2-9 copie dello stesso doc): in quei casi tenuta un
 
 ### Altri duplicati stale eliminati (convenzione kebab, canonico presente)
 
-`blade-data-handling_1.md`, `_integration/{carousel_slider,custom_firm_fields,custom_theme,
+`blade-data-handling.md`, `_integration/{carousel_slider,custom_firm_fields,custom_theme,
 flip_cards,page_builder,tailwind_themes}.md`, `standards/{form_standards,auth_form_standards}.md`,
 `svg_icons_automatic_registration.md`, `DESIGN_COMUNI_IMPLEMENTATION.md`,
 `_archive/{svg_icons_automatic_registration,brands_icons_integration}.md`,
@@ -187,7 +190,7 @@ Tutti verificati come sottoinsiemi/duplicati del canonico kebab (0 righe uniche 
 righe stale `saluteora`/`fixcity`/`project_docs`). Refs rotte verso i file eliminati corrette
 in `architecture-patterns.md`, `svg-icons-automatic-registration.md`,
 `_archive/svg-icons-automatic-registration.md`, `filament-components-usage.md`,
-`legacy/filament-components-usage.md`, `roadmap/2025-q4-roadmap.md`, `conflitti_merge_risolti.md`,
+`legacy/filament-components-usage.md`, `roadmap/roadmap.md`, `conflitti_merge_risolti.md`,
 `_archive/conflitti_merge_risolti.md`, `_archive/filament_components_usage.md`.
 
 ### Esito verifica

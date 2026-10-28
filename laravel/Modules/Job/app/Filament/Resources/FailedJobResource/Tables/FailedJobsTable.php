@@ -9,17 +9,11 @@ use Filament\Notifications\Notification;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Support\Facades\Artisan;
-use Illuminate\Support\Facades\DB;
 use Modules\Job\Models\FailedJob;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 class FailedJobsTable extends XotBaseResourceTable
 {
-    /**
-     * @var class-string<FailedJob>
-     */
-    protected static string $model = FailedJob::class;
-
     /**
      * @return array<string, Column>
      */
@@ -27,10 +21,8 @@ class FailedJobsTable extends XotBaseResourceTable
     {
         return [
             'id' => TextColumn::make('id')->sortable(),
-            'uuid' => TextColumn::make('uuid')->searchable()->copyable()->toggleable(isToggledHiddenByDefault: true),
             'connection' => TextColumn::make('connection')->searchable()->sortable(),
             'queue' => TextColumn::make('queue')->searchable()->sortable(),
-            'exception' => TextColumn::make('exception')->searchable()->wrap()->limit(120),
             'failed_at' => TextColumn::make('failed_at')->dateTime()->sortable(),
         ];
     }
@@ -54,7 +46,7 @@ class FailedJobsTable extends XotBaseResourceTable
                 ->requiresConfirmation()
                 ->color('danger')
                 ->action(static function (): void {
-                    DB::table((new FailedJob())->getTable())->truncate();
+                    FailedJob::truncate();
                     Notification::make()
                         ->title('All failed jobs have been removed.')
                         ->success()

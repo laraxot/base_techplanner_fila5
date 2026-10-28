@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "code quality report"
 issues: []
 discussions: []
+status: superseded
+superseded_by: ../code-quality-report.md
 ---
 
 # Code quality — modulo Gdpr

@@ -6,11 +6,15 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "guida completa multiple labels con chartjs-plugin-datalabels in filament 5x tema zero"
 related:
-<<<<<<< HEAD
-=======
   - "./00-index.md"
->>>>>>> laraxot/dev
-  - "./00-index.md"
+id: zero-docs-bmad-chartjs-datalabels-multiple-labels-complete-guide
+slug: chartjs-datalabels-multiple-labels-complete-guide
+description: "Questa guida è specifica per l'uso di multiple labels con chartjs-plugin-datalabels nel Tema Zero in Filament 5.x."
+document_type: guide
+category: ui-frontend
+status: active
+issues: []
+discussions: []
 ---
 
 # Guida Completa: Multiple Labels con chartjs-plugin-datalabels in Filament 5.x (Tema Zero)
@@ -21,10 +25,10 @@ related:
 **Livello:** Guida "a prova di stupido" - passo dopo passo
 
 > **Riferimento Ufficiale:** [chartjs-plugin-datalabels - Multiple Labels Sample](https://chartjs-plugin-datalabels.netlify.app/samples/advanced/multiple-labels.html)  
-> **Guida Generale:** [Guida Completa Chart Module](../../../laravel/Modules/Chart/docs/chartjs-datalabels-multiple-labels-complete-guide.md)
-> **Guida Generale:** [Guida Completa Chart Module](../../Modules/Chart/docs/chartjs-datalabels-multiple-labels-complete-guide.md)
-> **Guida Generale:** [Guida Completa Chart Module](../../../laravel/Modules/Chart/docs/chartjs-datalabels-multiple-labels-complete-guide.md)
-> **Guida Generale:** [Guida Completa Chart Module](../../Modules/Chart/docs/chartjs-datalabels-multiple-labels-complete-guide.md)
+> **Guida Generale:** [Guida Completa Chart Module](./chartjs-datalabels-multiple-labels-complete-guide.md)
+> **Guida Generale:** [Guida Completa Chart Module](./chartjs-datalabels-multiple-labels-complete-guide.md)
+> **Guida Generale:** [Guida Completa Chart Module](./chartjs-datalabels-multiple-labels-complete-guide.md)
+> **Guida Generale:** [Guida Completa Chart Module](./chartjs-datalabels-multiple-labels-complete-guide.md)
 
 ---
 
@@ -526,22 +530,22 @@ class ZeroPanelProvider extends PanelProvider
 
 ### Documentazione Generale
 
-- [Guida Completa Chart Module](../../../../laravel/Modules/Chart/docs/chartjs-datalabels-multiple-labels-complete-guide.md)
+- [Guida Completa Chart Module](./chartjs-datalabels-multiple-labels-complete-guide.md)
 - [QuestionChartAnswersChartWidget (doughnut/pie)](../../../laravel/Modules/healthcare_app/docs/question-chart-answers-chart-widget.md) – implementazione doughnut con clip false, anchor/display, label+percentuale
 - [SimpleChartWidget con Sfondi](../../../laravel/Modules/healthcare_app/docs/simplechartwidget-labels-backgrounds.md) - ⭐ Esempio completo con sfondi ottimizzati per UI/UX
-- [Guida Completa Chart Module](../../../../laravel/Modules/Chart/docs/chartjs-datalabels-multiple-labels-complete-guide.md)
+- [Guida Completa Chart Module](./chartjs-datalabels-multiple-labels-complete-guide.md)
 - [QuestionChartAnswersChartWidget (doughnut/pie)](../../../laravel/Modules/healthcare_app/docs/question-chart-answers-chart-widget.md) – implementazione doughnut con clip false, anchor/display, label+percentuale
 - [SimpleChartWidget con Sfondi](../../../laravel/Modules/healthcare_app/docs/simplechartwidget-labels-backgrounds.md) - ⭐ Esempio completo con sfondi ottimizzati per UI/UX
-- [Guida Completa Chart Module](../../../Modules/Chart/docs/chartjs-datalabels-multiple-labels-complete-guide.md)
+- [Guida Completa Chart Module](./chartjs-datalabels-multiple-labels-complete-guide.md)
 - [QuestionChartAnswersChartWidget (doughnut/pie)](../../../Modules/healthcare_app/docs/question-chart-answers-chart-widget.md) – implementazione doughnut con clip false, anchor/display, label+percentuale
 - [SimpleChartWidget con Sfondi](../../../Modules/healthcare_app/docs/simplechartwidget-labels-backgrounds.md) - ⭐ Esempio completo con sfondi ottimizzati per UI/UX
-- [Guida Completa Chart Module](../../../../laravel/Modules/Chart/docs/chartjs-datalabels-multiple-labels-complete-guide.md)
+- [Guida Completa Chart Module](./chartjs-datalabels-multiple-labels-complete-guide.md)
 - [QuestionChartAnswersChartWidget (doughnut/pie)](../../../laravel/Modules/healthcare_app/docs/question-chart-answers-chart-widget.md) – implementazione doughnut con clip false, anchor/display, label+percentuale
 - [SimpleChartWidget con Sfondi](../../../laravel/Modules/healthcare_app/docs/simplechartwidget-labels-backgrounds.md) - ⭐ Esempio completo con sfondi ottimizzati per UI/UX
-- [Guida Completa Chart Module](../../../../laravel/Modules/Chart/docs/chartjs-datalabels-multiple-labels-complete-guide.md)
+- [Guida Completa Chart Module](./chartjs-datalabels-multiple-labels-complete-guide.md)
 - [QuestionChartAnswersChartWidget (doughnut/pie)](../../../laravel/Modules/healthcare_app/docs/question-chart-answers-chart-widget.md) – implementazione doughnut con clip false, anchor/display, label+percentuale
 - [SimpleChartWidget con Sfondi](../../../laravel/Modules/healthcare_app/docs/simplechartwidget-labels-backgrounds.md) - ⭐ Esempio completo con sfondi ottimizzati per UI/UX
-- [Guida Completa Chart Module](../../../Modules/Chart/docs/chartjs-datalabels-multiple-labels-complete-guide.md)
+- [Guida Completa Chart Module](./chartjs-datalabels-multiple-labels-complete-guide.md)
 - [QuestionChartAnswersChartWidget (doughnut/pie)](../../../Modules/healthcare_app/docs/question-chart-answers-chart-widget.md) – implementazione doughnut con clip false, anchor/display, label+percentuale
 - [SimpleChartWidget con Sfondi](../../../Modules/healthcare_app/docs/simplechartwidget-labels-backgrounds.md) - ⭐ Esempio completo con sfondi ottimizzati per UI/UX
 - [Filament 5.x Charts](https://filamentphp.com/docs/5.x/widgets/charts)

@@ -119,7 +119,7 @@ test('notification resource infolist schema exposes expected text entries', func
     Assert::assertArrayHasKey('id', $schema);
     Assert::assertArrayHasKey('type', $schema);
     Assert::assertArrayHasKey('read_at', $schema);
-    Assert::assertNotEmpty($schema);
+    Assert::assertGreaterThanOrEqual(1, count($schema));
 });
 
 test('mail template resource form schema exposes expected components', function (): void {
@@ -199,7 +199,7 @@ test('notification log infolist schema exposes expected entries', function (): v
     Assert::assertArrayHasKey('status', $schema);
     Assert::assertArrayHasKey('notifiable_type', $schema);
     Assert::assertArrayHasKey('sent_at', $schema);
-    Assert::assertNotEmpty($schema);
+    Assert::assertGreaterThanOrEqual(1, count($schema));
 });
 
 test('notification log table columns match the notification_logs schema', function (): void {

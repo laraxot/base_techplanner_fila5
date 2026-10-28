@@ -8,9 +8,10 @@ created: 2026-06-04
 updated: 2026-06-04
 tags: [ux, wcag, auth, register, sixteen]
 related:
-  - register-ux-audit-2026-06-04.md
-  - login-ux-fixes-2026-06-04.md
+  - register-ux-audit.md
+  - login-ux-fixes.md
   - ../architecture/fo-pa-tokens-uniformity.md
+status: draft
 ---
 
 # `/it/auth/register` — handoff UX (BMAD create-ux-design)

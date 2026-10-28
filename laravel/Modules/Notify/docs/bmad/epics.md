@@ -6,6 +6,8 @@ module: Notify
 scope: documentation
 bmad_version: 1.0
 updated: 2026-10-06
+tags: [docs, notify, bmad]
+qmd: "epics e user stories - modulo notify notify"
 ---
 
 # Epics e User Stories - Modulo Notify

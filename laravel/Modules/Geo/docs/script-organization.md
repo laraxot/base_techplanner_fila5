@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "script organization"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Organizzazione Script - Regole Fondamentali
@@ -136,7 +137,7 @@ Ogni script deve includere:
 ## Collegamenti
 
 - [Regole Cursor](../.cursor/rules/script-positioning-rule.mdc)
-- [Memorie Cursor](../.cursor/memories/script-positioning.mdc)
+- [Memorie Cursor](../../../../.cursor/memories/script-positioning.mdc)
 - [Struttura Progetto](project-structure.md)
 - [Database Seeding](database-seeding.md)
 

@@ -10,6 +10,7 @@ type: ux-design
 module: Gdpr
 related:
   - ./livewire-inventory.md
+status: draft
 ---
 
 # UX

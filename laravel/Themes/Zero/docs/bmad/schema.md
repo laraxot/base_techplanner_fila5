@@ -2,6 +2,18 @@
 title: "Module Schema"
 module: "Zero"
 created: "2026-04-15T08:28:52Z"
+id: zero-docs-bmad-schema
+slug: schema
+description: "Schema della docs del tema Zero: cartelle, standard di front matter e flussi di lavoro per gli agenti."
+document_type: guide
+type: guide
+category: database
+status: active
+tags: []
+updated: "2026-10-08"
+qmd: "module schema"
+issues: []
+discussions: []
 ---
 
 # Zero Module Schema

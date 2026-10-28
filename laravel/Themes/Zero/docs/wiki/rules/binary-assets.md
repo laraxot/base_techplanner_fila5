@@ -5,6 +5,14 @@ tags: [theme, zero, binary, assets]
 created: 2026-07-29
 updated: 2026-07-29
 qmd: "zero theme asset binari"
+id: zero-docs-wiki-rules-binary-assets
+slug: binary-assets
+description: "Gli asset binari sono file normali del repository."
+document_type: guide
+category: architecture
+status: active
+issues: []
+discussions: []
 ---
 # Asset binari
 

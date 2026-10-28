@@ -58,18 +58,31 @@ class SendPushToTopicAction
     {
         return match ($platform) {
             'fcm' => $this->sendFCMTopicNotification($topic, $notification, $data),
-            'apns' => [
-                'success' => true,
-                'message' => 'APNS topic notification sent (simulated)',
-                'topic' => $topic,
-                'platform' => 'apns'],
-            'webpush' => [
-                'success' => true,
-                'message' => 'Web Push topic notification sent (simulated)',
-                'topic' => $topic,
-                'platform' => 'webpush'],
+            'apns' => $this->simulateTopicDelivery('apns', 'APNS topic notification sent (simulated)', $topic, $notification, $data),
+            'webpush' => $this->simulateTopicDelivery('webpush', 'Web Push topic notification sent (simulated)', $topic, $notification, $data),
             default => throw new Exception("Unsupported platform: {$platform}")
         };
+    }
+
+    /**
+     * APNs non ha topic pub/sub e Web Push non ha topic: senza una tabella sottoscrizioni topic -> token
+     * non c'e' nulla da consegnare. La consegna e' simulata e tracciata nel log.
+     *
+     * @param  array<string, mixed>  $data
+     * @return array<string, mixed>
+     */
+    private function simulateTopicDelivery(string $platform, string $message, string $topic, PushNotificationData $notification, array $data): array
+    {
+        app(LogSimulatedPushDeliveryAction::class)->execute($platform, $topic, [
+            'topic' => $topic,
+            'notification' => $notification->toArray(),
+            'data' => $data]);
+
+        return [
+            'success' => true,
+            'message' => $message,
+            'topic' => $topic,
+            'platform' => $platform];
     }
 
     /**

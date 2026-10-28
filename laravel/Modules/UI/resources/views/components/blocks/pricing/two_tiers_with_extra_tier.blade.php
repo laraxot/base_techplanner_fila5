@@ -9,7 +9,7 @@ declare(strict_types=1);
         <p class="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">The right price for you, <br class="hidden sm:inline lg:hidden">whoever you are</p>
       </div>
       <div class="relative mt-6">
-        <p class="mx-auto max-w-2xl text-lg leading-8 text-white/60">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos odit doloribus molestiae voluptatum.</p>
+        <p class="mx-auto max-w-2xl text-lg leading-8 text-white/60">Servizi pubblici efficienti, trasparenza e partecipazione attiva dei cittadini.</p>
         <svg viewBox="0 0 1208 1024" class="absolute -top-10 left-1/2 -z-10 h-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:-top-12 md:-top-20 lg:-top-12 xl:top-0">
           <ellipse cx="604" cy="512" fill="url(#6d1bd035-0dd1-437e-93fa-59d316231eb0)" rx="604" ry="512" />
           <defs>

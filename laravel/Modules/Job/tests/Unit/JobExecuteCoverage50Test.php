@@ -8,8 +8,6 @@ use Illuminate\Console\Application;
 use Illuminate\Contracts\Console\Kernel;
 use Illuminate\Contracts\Translation\Translator;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Testing\PendingCommand;
 use Illuminate\Translation\PotentiallyTranslatedString;
 use Mockery;
@@ -169,8 +167,6 @@ describe('Job execute coverage — Task e notification', function (): void {
         Assert::assertSame('a@b.c', $task->routeNotificationForMail());
         Assert::assertSame('333', $task->routeNotificationForNexmo());
         Assert::assertSame('https://hooks.slack.test', $task->routeNotificationForSlack());
-        Assert::assertInstanceOf(HasMany::class, $task->frequencies());
-        Assert::assertInstanceOf(HasMany::class, $task->results());
     });
 
     test('TaskCompleted via e toMail coprono i canali configurati', function (): void {
@@ -386,7 +382,6 @@ describe('Job execute coverage — actions enums commands livewire', function ()
         Assert::assertSame('waiting', $waiting->status);
 
         $result = new Result;
-        Assert::assertInstanceOf(BelongsTo::class, $result->task());
         $result->getLastRun();
         $result->getAverageRunTime();
 

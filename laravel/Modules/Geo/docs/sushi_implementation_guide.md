@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "sushi implementation guide"
 issues: []
 discussions: []
+status: superseded
+superseded_by: sushi-implementation-guide.md
 ---
 
 # Sushi Implementation for Comune Model

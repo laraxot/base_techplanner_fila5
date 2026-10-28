@@ -43,6 +43,8 @@ Canon: [multi-agent-coordination-discipline.md](../wiki/how-to/multi-agent-coord
 
 | Data | File | Argomento | Issue |
 |------|------|-----------|-------|
+| corrente | [handoff-gitattributes-no-lfs.md](./handoff-gitattributes-no-lfs.md) | Normalizzazione `.gitattributes` e policy no Git LFS | — |
+| corrente | [handoff-phpstan-modules-current.md](./handoff-phpstan-modules-current.md) | PHPStan Modules: stato reale, lane concluse e ripartenza | — |
 | 2026-07-24 | [handoff-token-efficiency.md](./handoff-token-efficiency.md) | Token efficiency 2026: query wrapper, context-mode, write-back AI/Xot/Sixteen, Obsidian lean | — |
 | 2026-07-24 | [handoff-second-brain-max.md](./handoff-second-brain-max.md) | Second brain max + write-back docs AI/Xot/Sixteen | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
 | 2026-07-24 | [handoff-git-sync-modules.md](./handoff-git-sync-modules.md) | Sync git moduli/temi post-PHPStan + bridge Xot rigenerato | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |

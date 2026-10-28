@@ -18,7 +18,6 @@ describe('Job Business Logic', function () {
 
         Assert::assertSame('default', $job->queue);
         Assert::assertSame(0, $job->attempts);
-        Assert::assertInstanceOf(Job::class, $job);
     });
 
     it('returns waiting status when not reserved', function () {

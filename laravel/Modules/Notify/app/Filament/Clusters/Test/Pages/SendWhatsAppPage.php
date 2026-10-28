@@ -102,7 +102,6 @@ class SendWhatsAppPage extends XotBasePage
     {
         try {
             $data = $this->whatsappForm->getState();
-
             $message = is_string($data['message']) ? $data['message'] : '';
 
             Notification::route('whatsapp', $data['recipient'])->notify(

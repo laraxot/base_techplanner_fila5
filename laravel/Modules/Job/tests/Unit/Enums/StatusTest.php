@@ -19,10 +19,6 @@ describe('Status', function () {
         Assert::assertTrue($reflection->isEnum());
     });
 
-    it('is a backed enum', function () {
-        Assert::assertInstanceOf(\BackedEnum::class, Status::Active);
-    });
-
     it('has correct cases', function () {
         Assert::assertCount(4, Status::cases());
         Assert::assertSame('active', Status::Active->value);
@@ -83,6 +79,13 @@ describe('Status', function () {
     });
 
     it('can be used in match expressions', function () {
+        $expected = [
+            Status::Active->name => 'active',
+            Status::Inactive->name => 'inactive',
+            Status::Trashed->name => 'trashed',
+            Status::One->name => 'one',
+        ];
+
         foreach (Status::cases() as $status) {
             $result = match ($status) {
                 Status::Active => 'active',
@@ -91,7 +94,7 @@ describe('Status', function () {
                 Status::One => 'one',
             };
 
-            Assert::assertNotEmpty($result);
+            Assert::assertSame($expected[$status->name], $result);
         }
     });
 });

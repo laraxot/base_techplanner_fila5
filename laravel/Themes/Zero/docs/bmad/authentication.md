@@ -6,11 +6,15 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "autenticazione - tema zero"
 related:
-<<<<<<< HEAD
-=======
   - "./00-index.md"
->>>>>>> laraxot/dev
-  - "./00-index.md"
+id: zero-docs-bmad-authentication
+slug: authentication
+description: "Il tema Zero fornisce un sistema completo di autenticazione seguendo le convenzioni del progetto e le best practices di UX/UI. Le pagine di autenticazione sono progettate per..."
+document_type: guide
+category: ui-frontend
+status: active
+issues: []
+discussions: []
 ---
 
 # Autenticazione - Tema Zero

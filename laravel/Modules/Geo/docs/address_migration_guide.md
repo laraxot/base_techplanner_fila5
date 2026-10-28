@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "address migration guide"
 issues: []
 discussions: []
+status: superseded
+superseded_by: address-migration-guide.md
 ---
 
 # Guida alla Migrazione del Modello Address

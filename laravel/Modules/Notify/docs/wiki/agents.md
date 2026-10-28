@@ -1,11 +1,13 @@
 ---
-title: "Notify Module — Document"
-type: docs/bmad
-status: active
-module: Notify
-scope: documentation
-bmad_version: 1.0
-updated: 2026-10-06
+title: "agents"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "agents"
+issues: []
+discussions: []
+status: draft
 ---
 
 # LLM Wiki Agent Instructions
@@ -93,6 +95,9 @@ Themes/{Name}/docs/llm-wiki/
 
 ```yaml
 ---
+qmd: "agents"
+issues: []
+discussions: []
 title: "Descriptive Title"
 type: concept  # concept | entity | source | comparison | decision | troubleshooting
 sources: ["raw/articles/source-filename.md"]
@@ -442,7 +447,7 @@ LLM Agent Actions:
 
 ```bash
 # Install
-npm install -g qmd
+npm install -g --prefix "$HOME/.npm-global" @tobilu/qmd
 
 # Serve wiki for web access
 cd docs/wiki

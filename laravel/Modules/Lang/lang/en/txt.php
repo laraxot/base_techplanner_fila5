@@ -6,7 +6,7 @@ return [
             'label' => 'Email',
             'placeholder' => 'Enter your email',
             'tooltip' => 'Use a valid email address',
-            'icon' => 'heroicon-o-envelope',
+            'icon' => 'heroicon-o-mail',
             'description' => 'email',
             'helper_text' => '',
         ],
@@ -510,6 +510,12 @@ return [
             'placeholder' => 'location',
             'helper_text' => 'location',
             'description' => 'location',
+            'address' => [
+                'label' => 'location.address',
+                'placeholder' => 'location.address',
+                'helper_text' => 'location.address',
+                'description' => 'location.address',
+            ],
         ],
         'coordinates' => [
             'label' => 'coordinates',
@@ -996,6 +1002,15 @@ return [
         ],
         'ratings' => [
         ],
+        'indennitaTipoDettaglio' => [
+            'label' => 'indennitaTipoDettaglio',
+        ],
+        'author' => [
+            'label' => 'author',
+            'placeholder' => 'author',
+            'helper_text' => 'author',
+            'description' => 'author',
+        ],
     ],
     'actions' => [
         'authenticate' => [
@@ -1126,6 +1141,7 @@ return [
         'logout' => [
             'tooltip' => 'logout',
             'icon' => 'logout',
+            'label' => 'logout',
         ],
         'profile' => [
             'label' => 'profile',
@@ -1167,18 +1183,38 @@ return [
             'icon' => 'export_pdf',
             'tooltip' => 'export_pdf',
         ],
+        'export_flusso' => [
+            'label' => 'export_flusso',
+            'icon' => 'export_flusso',
+            'tooltip' => 'export_flusso',
+        ],
+        'ImportAction' => [
+            'label' => 'ImportAction',
+            'icon' => 'ImportAction',
+            'tooltip' => 'ImportAction',
+        ],
+        'next' => [
+            'label' => 'next',
+            'icon' => 'next',
+            'tooltip' => 'next',
+        ],
+        'previous' => [
+            'label' => 'previous',
+            'icon' => 'previous',
+            'tooltip' => 'previous',
+        ],
+        'billing' => [
+            'label' => 'billing',
+            'icon' => 'billing',
+            'tooltip' => 'billing',
+        ],
     ],
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
-        'group' => [
-            'name' => 'General',
-            'description' => 'General Settings',
-        ],
+        'group' => 'Missing Group',
         'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => '100',
-        'name' => 'Txt',
-        'plural' => 'Txt',
+        'sort' => 100,
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
@@ -1223,10 +1259,31 @@ return [
             'label' => 'field',
             'heading' => 'field',
         ],
+        'Luogo' => [
+            'label' => 'Luogo',
+            'heading' => 'Luogo',
+        ],
+        'Disservizio' => [
+            'label' => 'Disservizio',
+            'heading' => 'Disservizio',
+        ],
+        'Autore della segnalazione' => [
+            'label' => 'Autore della segnalazione',
+            'heading' => 'Autore della segnalazione',
+        ],
     ],
     'steps' => [
         'test' => [
             'label' => 'test',
+        ],
+        'Informativa sulla privacy' => [
+            'label' => 'Informativa sulla privacy',
+        ],
+        'Dati di segnalazione' => [
+            'label' => 'Dati di segnalazione',
+        ],
+        'Riepilogo' => [
+            'label' => 'Riepilogo',
         ],
     ],
 ];

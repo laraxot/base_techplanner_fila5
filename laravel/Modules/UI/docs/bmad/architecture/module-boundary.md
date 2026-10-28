@@ -6,6 +6,7 @@ module: UI
 created: 2026-09-28
 updated: 2026-09-28
 qmd: "UI architettura confini componenti PHP Laravel Filament"
+tags: [docs, ui, bmad]
 ---
 # UI — architettura
 

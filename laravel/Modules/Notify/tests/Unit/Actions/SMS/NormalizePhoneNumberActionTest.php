@@ -60,9 +60,9 @@ describe('SMS\NormalizePhoneNumberAction', function () {
         Assert::assertStringContainsString('use function Safe\preg_replace', $content);
     });
 
-    it('is not using QueueableAction trait', function () {
+    it('uses QueueableAction trait', function () {
         $traits = class_uses(NormalizePhoneNumberAction::class);
 
-        Assert::assertArrayNotHasKey(QueueableAction::class, $traits);
+        Assert::assertArrayHasKey(QueueableAction::class, $traits);
     });
 });

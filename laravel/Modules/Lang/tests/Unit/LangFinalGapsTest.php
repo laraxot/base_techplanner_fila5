@@ -7,7 +7,6 @@ namespace Modules\Lang\Tests\Unit;
 use Filament\Actions\Action;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Section;
-use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\File;
@@ -21,7 +20,6 @@ use Mockery\MockInterface;
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Lang\Actions\SyncTranslationsAction;
 use Modules\Lang\Actions\Translation\RecordMissingTranslationAction;
-use Modules\Lang\Actions\TranslatorAction;
 use Modules\Lang\Actions\WriteTranslationFileAction;
 use Modules\Lang\Adapters\TranslatorAdapter;
 use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
@@ -59,15 +57,15 @@ use function Safe\unlink;
 uses(TestCase::class);
 
 /**
- * Locale dell'app dopo applyLocale(), partendo ogni volta da 'it': un 'en' letto
- * dopo la chiamata prova il fallback, non un locale rimasto da quella precedente.
+ * Locale dell'app dopo normalizeLocale()+applyLocale(), partendo ogni volta da 'it':
+ * un 'en' letto dopo la chiamata prova il fallback, non un locale rimasto da prima.
  *
  * @param  array<string, mixed>  $data
  */
 function langLocaleAfterApplying(LocaleSwitcherRefresh $action, array $data): string
 {
     app()->setLocale('it');
-    $action->applyLocale($data);
+    $action->applyLocale(LocaleSwitcherRefresh::normalizeLocale($data['locale'] ?? null));
 
     return app()->getLocale();
 }
@@ -95,7 +93,7 @@ test('LocaleSwitcherRefresh applyLocale covers string and non-string locale', fu
     Assert::assertSame('en', langLocaleAfterApplying($action, []));
 });
 
-test('TranslatorAction and Adapter coerce non-string loaded values', function (): void {
+test('TranslatorAdapter coerces non-string loaded values', function (): void {
     // Qui c'era `TestCase::forceSqliteTranslations()`, un helper invocato e mai
     // scritto. Non e' stato scritto ma rimosso: il test non tocca il database.
     // Carica le traduzioni da un `ArrayLoader`, scrive la property `loaded` per
@@ -104,15 +102,11 @@ test('TranslatorAction and Adapter coerce non-string loaded values', function ()
     // connessione a SQLite avrebbe dato l'impressione di proteggere qualcosa
     // che non e' in pericolo, e avrebbe contraddetto la regola per cui i test
     // girano sulle repliche MySQL. Story LANG-17.4.
-    $loader = new ArrayLoader;
-    $action = new TranslatorAction($loader, 'it');
+    $loader = new ArrayLoader();
+    $adapter = new TranslatorAdapter($loader, 'it');
     $loaded = new ReflectionProperty(LaravelTranslator::class, 'loaded');
     $loaded->setAccessible(true);
     // JSON translation path returns non-string/non-array values without notifyMissingKey/DB
-    $loaded->setValue($action, ['*' => ['*' => ['it' => ['json.int.key' => 42]]]]);
-    Assert::assertSame('42', $action->get('json.int.key', [], 'it', false));
-
-    $adapter = new TranslatorAdapter($loader, 'it');
     $loaded->setValue($adapter, ['*' => ['*' => ['it' => ['json.int.key' => 99]]]]);
     $this->mockService(RecordMissingTranslationAction::class, static function (MockInterface $mock): void {
         $mock->allows('execute');
@@ -226,7 +220,6 @@ test('LanguageSwitcherWidget falls back when getLocalizedURL returns non-string 
 
 test('Post linkable and accessor edge branches', function (): void {
     $post = new Post;
-    Assert::assertInstanceOf(MorphTo::class, $post->linkable());
 
     $post->setRawAttributes(['post_type' => 123, 'post_id' => ['x']], true);
     Assert::assertIsString($post->getTitleAttribute(null));

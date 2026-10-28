@@ -80,7 +80,10 @@ class JobBatch extends BaseModel
      */
     public function processedJobs(): int|float
     {
-        return $this->total_jobs - $this->pending_jobs;
+        $totalJobs = $this->integerAttribute('total_jobs');
+        $pendingJobs = $this->integerAttribute('pending_jobs');
+
+        return $totalJobs - $pendingJobs;
     }
 
     /**
@@ -88,7 +91,7 @@ class JobBatch extends BaseModel
      */
     public function progress(): int
     {
-        $totalJobs = $this->total_jobs;
+        $totalJobs = $this->integerAttribute('total_jobs');
         $progress = $totalJobs > 0 ? round($this->processedJobs() / $totalJobs * 100) : 0;
 
         return (int) $progress;
@@ -99,7 +102,9 @@ class JobBatch extends BaseModel
      */
     public function hasPendingJobs(): bool
     {
-        return $this->pending_jobs > 0;
+        $pendingJobs = $this->integerAttribute('pending_jobs');
+
+        return $pendingJobs > 0;
     }
 
     /**
@@ -115,7 +120,9 @@ class JobBatch extends BaseModel
      */
     public function hasFailures(): bool
     {
-        return $this->failed_jobs > 0;
+        $failedJobs = $this->integerAttribute('failed_jobs');
+
+        return $failedJobs > 0;
     }
 
     /**
@@ -123,7 +130,10 @@ class JobBatch extends BaseModel
      */
     public function failed(): bool
     {
-        return $this->failed_jobs === $this->total_jobs;
+        $failedJobs = $this->integerAttribute('failed_jobs');
+        $totalJobs = $this->integerAttribute('total_jobs');
+
+        return $failedJobs === $totalJobs;
     }
 
     /**
@@ -132,6 +142,13 @@ class JobBatch extends BaseModel
     public function cancelled(): bool
     {
         return $this->cancelled_at !== null;
+    }
+
+    private function integerAttribute(string $attribute): int
+    {
+        $value = $this->getAttribute($attribute);
+
+        return is_numeric($value) ? (int) $value : 0;
     }
 
     /**  @return array<string, string>  */

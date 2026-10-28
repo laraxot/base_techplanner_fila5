@@ -1,11 +1,4 @@
 ---
-qmd: "livewire-widget-tech-spec"
-issues: []
-discussions: []
-title: "Livewire Widget Tech Spec"
----
-
----
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
@@ -17,6 +10,7 @@ type: tech-spec
 module: Cms
 related:
   - ./livewire-widget-prd.md
+status: draft
 ---
 
 # Tech spec Cms

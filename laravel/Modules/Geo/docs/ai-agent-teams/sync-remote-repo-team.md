@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "sync remote repo team"
 issues: []
 discussions: []
+status: draft
 ---
 
 # AI Agent Team: Sync Remote Repo
@@ -19,15 +20,6 @@ discussions: []
 > **Status:** Active
 
 ---
-
-title: "sync remote repo team"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "sync remote repo team"
-issues: []
-discussions: []
 ## Team Members
 
 ### Agent Roles
@@ -244,8 +236,8 @@ bashscripts/git/subtrees/
 ### Related Documentation
 
 - [Git Subtrees Guide](../../docs/git/subtrees.md)
-- [GitHub Actions Guide](../../docs/github/actions.md)
-- [AI Agent Coordination](../../docs/ai-agent-coordination.md)
+- [GitHub Actions Guide](../raw/history/actions.md)
+- [AI Agent Coordination](../raw/history/ai-agent-coordination.md)
 
 ### External Resources
 

@@ -18,6 +18,7 @@ related:
   - "./enum-select-best-practices.md"
   - "./enum-select-component.md"
   - "./enum-select-contract-and-false-friends.md"
+status: draft
 ---
 
 # Module Filament Component Autoload Rule

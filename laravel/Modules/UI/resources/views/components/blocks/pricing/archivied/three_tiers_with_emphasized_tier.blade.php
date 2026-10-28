@@ -7,7 +7,7 @@ declare(strict_types=1);
       <div class="text-center">
         <h2 class="text-xl font-semibold leading-6 text-gray-300">Pricing</h2>
         <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">The right price for you, whoever you are</p>
-        <p class="mx-auto mt-3 max-w-4xl text-xl text-gray-300 sm:mt-5 sm:text-2xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos odit doloribus molestiae voluptatum.</p>
+        <p class="mx-auto mt-3 max-w-4xl text-xl text-gray-300 sm:mt-5 sm:text-2xl">Servizi comunali trasparenti, digitali e partecipativi.</p>
       </div>
     </div>
 

@@ -1,20 +1,17 @@
 # Prototipo .gitattributes per laravel/Modules/* e laravel/Themes/*
-# Canon: bashscripts/ai/wiki/rules/no-git-lfs.md
+# Canon: repository binary attribute policy.
 # Sync:  bash bashscripts/templates/sync-gitattributes-modules.sh
 #
-# Git LFS VIETATO. I binari sono blob git normali.
-# Mai: filter=lfs / diff=lfs / merge=lfs
+# I binari restano blob Git normali.
 
 * text=auto
 *.css linguist-vendored
 *.scss linguist-vendored
 *.js linguist-vendored
 CHANGELOG.md export-ignore
-# Binari come blob git normali — NIENTE git-lfs.
+# Binari come blob Git normali.
 # `binary` disattiva diff e normalizzazione di fine riga.
-# `!filter` annulla un eventuale filter.lfs ereditato dalla configurazione di sistema:
-# e' questa la protezione vera, perche' filter.lfs.* puo' restare installato sulla
-# macchina per altri progetti e senza `!filter` verrebbe applicato anche qui.
+# `!filter` annulla eventuali filtri ereditati dalla configurazione di sistema.
 *.png binary !filter
 *.jpg binary !filter
 *.jpeg binary !filter

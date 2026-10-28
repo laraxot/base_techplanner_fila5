@@ -414,7 +414,7 @@
 
 - [Product Requirements Document](prd.md)
 - [Product Strategy](product_strategy.md)
-- [Sprint Planning](sprint_planning.md)
+- [Sprint Planning](sprint-planning.md)
 - [Architecture Guide](architecture.md)
 
 ### Change Log

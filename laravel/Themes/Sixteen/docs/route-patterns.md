@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "route patterns"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Pattern Route - Tema Sixteen
@@ -226,5 +227,5 @@ foreach ($pages as $page) {
 - [Layout Usage Patterns](layout-usage-patterns.md)
 - [AGID Login Implementation](agid-login-implementation.md)
 - [Route Contract](./page-directory-structure.md)
-- [CMS Module](../../../laravel/Modules/Cms/)
+- [CMS Module](../../../Modules/Cms)
 

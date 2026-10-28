@@ -1,11 +1,14 @@
 ---
 title: "Notify Module — Document"
 type: docs/bmad
-status: active
 module: Notify
 scope: documentation
 bmad_version: 1.0
 updated: 2026-10-06
+tags: [docs, notify, bmad]
+qmd: "fixcity - diamond coverage report notify"
+status: superseded
+superseded_by: ../diamond-coverage-report.md
 ---
 
 # 💎 FIXCITY - DIAMOND COVERAGE REPORT

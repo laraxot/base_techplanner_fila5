@@ -2,11 +2,6 @@
 
 declare(strict_types=1);
 
-use Illuminate\Http\Response;
-use Illuminate\Testing\TestResponse;
-
-use function Pest\Laravel\get;
-
 use PHPUnit\Framework\Assert;
 
 beforeEach(function (): void {
@@ -54,7 +49,7 @@ describe('Registration Page Content', function () use ($userTypes): void {
 
         test("{$type} registration page has proper HTML structure", function () use ($type): void {
             $response = get("/it/auth/{$type}/register");
-            /** @var TestResponse<Response> $response */
+            /** @var Illuminate\Testing\TestResponse<Illuminate\Http\Response> $response */
             $content = (string) $response->getContent();
             Assert::assertStringContainsString('<!DOCTYPE html>', $content);
             Assert::assertStringContainsString('<html', $content);
@@ -85,7 +80,7 @@ describe('Registration Page Performance', function () use ($userTypes): void {
             $startTime = microtime(true);
 
             $response = get("/it/auth/{$type}/register");
-            /** @var TestResponse<Response> $response */
+            /** @var Illuminate\Testing\TestResponse<Illuminate\Http\Response> $response */
             $loadTime = microtime(true) - $startTime;
 
             Assert::assertSame(200, $response->status());

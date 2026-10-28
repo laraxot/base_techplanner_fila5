@@ -135,7 +135,7 @@ class NotificationLog extends BaseModel
     public function markAsOpened(): self
     {
         $this->update([
-            'status' => NotificationLogStatusEnum::OPENED,
+            'status' => NotificationLogStatusEnum::OPENED->value,
             'opened_at' => now()]);
 
         return $this;
@@ -144,7 +144,7 @@ class NotificationLog extends BaseModel
     public function markAsClicked(): self
     {
         $this->update([
-            'status' => NotificationLogStatusEnum::CLICKED,
+            'status' => NotificationLogStatusEnum::CLICKED->value,
             'clicked_at' => now()]);
 
         return $this;

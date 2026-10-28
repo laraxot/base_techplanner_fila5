@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "navigation translations fixes"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Correzioni Traduzioni Navigation - Modulo Geo
@@ -86,9 +87,9 @@ discussions: []
 ## Collegamenti
 
 - [Audit Generale Traduzioni Navigation](../../../docs/navigation-translations-audit.md)
-- [Documentazione Modulo Geo](readme.md)
+- [Documentazione Modulo Geo](README.md)
 - [Struttura Geo](structure.md)
-- [Regole Traduzioni Laraxot](../xot/docs/translation-rules.md)
+- [Regole Traduzioni Laraxot](../../Xot/docs/translation-rules.md)
 
 ## Note Tecniche
 

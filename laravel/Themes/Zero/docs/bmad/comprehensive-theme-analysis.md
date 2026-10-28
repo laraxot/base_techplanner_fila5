@@ -6,11 +6,15 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "analisi completa tema zero - tema minimalista laravel"
 related:
-<<<<<<< HEAD
-=======
   - "./00-index.md"
->>>>>>> laraxot/dev
-  - "./00-index.md"
+id: zero-docs-bmad-comprehensive-theme-analysis
+slug: comprehensive-theme-analysis
+description: "Il tema Zero rappresenta un tema minimalista e pulito per Laravel, progettato come base di partenza per applicazioni moderne. È caratterizzato da un design semplice, elegante e..."
+document_type: guide
+category: documentation
+status: active
+issues: []
+discussions: []
 ---
 
 # Analisi Completa Tema Zero - Tema Minimalista Laravel

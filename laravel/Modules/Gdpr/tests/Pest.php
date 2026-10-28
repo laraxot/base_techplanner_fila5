@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-/**
+/*
  * Bootstrap Pest — modulo Gdpr.
  * Il binding a \Modules\Gdpr\Tests\TestCase e' fatto solo qui sotto: i file test NON devono
  * dichiarare uses(TestCase::class) (altrimenti Pest\Exceptions\TestCaseAlreadyInUse).

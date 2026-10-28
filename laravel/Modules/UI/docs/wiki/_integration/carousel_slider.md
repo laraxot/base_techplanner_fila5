@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "carousel slider"
 issues: []
 discussions: []
+status: draft
 ---
 
 # carousel_slider

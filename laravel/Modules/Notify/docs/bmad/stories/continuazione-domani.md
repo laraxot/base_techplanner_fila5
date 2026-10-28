@@ -1,4 +1,10 @@
 ---
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "continuazione domani"
+issues: []
+discussions: []
 title: "Continuazione BMAD — Domani (Notify)"
 type: module-fix
 scope: Notify
@@ -8,8 +14,8 @@ updated_at: '2026-09-22'
 status: in-progress
 related:
   - ./netfun-conflict-markers.story.md
-  - ./cleanup-notify-2026-09-22.story.md
-  - ../../../Xot/docs/bmad/stories/cleanup-all-modules.story.md
+  - ./cleanup-notify.story.md
+  - ../../../../Xot/docs/bmad/stories/cleanup-all-modules.story.md
 ---
 
 # Notify — Continuazione Domani
@@ -88,7 +94,7 @@ esistente copre `docs/wiki/`.
 4. **`HasContact.php:19`** — aggiungere la motivazione inline mancante
    all'`@phpstan-ignore trait.unused` (uniformare alle altre 3), solo dopo
    una run PHPStan fleet-wide che confermi che è davvero unused.
-5. **`cleanup-notify-2026-09-22.story.md`** — template generico mai
+5. **`cleanup-notify.story.md`** — template generico mai
    eseguito, valutare chiusura o contenuto reale.
 
 ## Second brain

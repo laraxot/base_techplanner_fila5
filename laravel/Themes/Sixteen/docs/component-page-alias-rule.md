@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "component page alias rule"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Page Component Alias Rule
@@ -46,4 +47,4 @@ Questo mantiene le blade piu semplici e coerenti con il resto del CMS.
 
 - [layout-runtime-contract.md](./layout-runtime-contract.md)
 - [architecture/component-namespace.md](./architecture/component-namespace.md)
-- [../../Modules/Cms/docs/component-page-alias-rule.md](../../Modules/Cms/docs/component-page-alias-rule.md)
+- [../../Modules/Cms/docs/component-page-alias-rule.md](../../../Modules/Cms/docs/component-page-alias-rule.md)

@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\AI\Enums\AiMessageRoleEnum;
 use Modules\Xot\Contracts\ProfileContract;
+use Modules\Xot\Models\XotBaseModel;
 
 /**
  * Class AiMessage.
@@ -25,7 +26,7 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @mixin \Eloquent
  */
-class AiMessage extends BaseModel
+class AiMessage extends XotBaseModel
 {
     /**
      * @var list<string>

@@ -1,11 +1,22 @@
 ---
-title: "Notify Module — Document"
-type: docs/bmad
-status: active
-module: Notify
-scope: documentation
-bmad_version: 1.0
-updated: 2026-10-06
+title: "🐄 Analisi Metodi Duplicati - Guida Rapida"
+type: concept
+tags: [readme, analisi, duplicati]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "readme-analisi-duplicati 🐄 analisi metodi duplicati - guida rapida"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-documentation.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-completamento-assoluto.md"
+  - "./acronym-naming-conventions.md"
+  - "./acronym-naming-conventions.md"
+  - "./acronym-naming-conventions.md"
+  - "./action-plan-immediate.md"
+status: draft
 ---
 
 # 🐄 Analisi Metodi Duplicati - Guida Rapida
@@ -13,7 +24,7 @@ updated: 2026-10-06
 ## 📍 Dove Trovare i Documenti
 
 ### Documento Master
-**Location**: `/docs/ANALISI_METODI_DUPLICATI_MASTER.md`
+**Location**: `/docs/analisi-metodi-duplicati-master.md`
 
 Questo è il documento PRINCIPALE con:
 - ✅ Analisi REALE basata su dati estratti dal codice
@@ -23,26 +34,26 @@ Questo è il documento PRINCIPALE con:
 - ✅ Piano di implementazione dettagliato
 
 ### Copie nei Moduli
-Ogni modulo ha una copia in `Modules/{ModuleName}/docs/METODI_DUPLICATI_ANALISI.md`:
+Ogni modulo ha una copia in `Modules/{ModuleName}/docs/metodi-duplicati-analisi.md`:
 
-- `Modules/AI/docs/METODI_DUPLICATI_ANALISI.md`
-- `Modules/Activity/docs/METODI_DUPLICATI_ANALISI.md`
-- `Modules/Blog/docs/METODI_DUPLICATI_ANALISI.md`
-- `Modules/Cms/docs/METODI_DUPLICATI_ANALISI.md`
-- `Modules/Comment/docs/METODI_DUPLICATI_ANALISI.md`
-- `Modules/Fixcity/docs/METODI_DUPLICATI_ANALISI.md`
-- `Modules/Gdpr/docs/METODI_DUPLICATI_ANALISI.md`
-- `Modules/Geo/docs/METODI_DUPLICATI_ANALISI.md`
-- `Modules/Job/docs/METODI_DUPLICATI_ANALISI.md`
-- `Modules/Lang/docs/METODI_DUPLICATI_ANALISI.md`
-- `Modules/Media/docs/METODI_DUPLICATI_ANALISI.md`
-- `Modules/Notify/docs/METODI_DUPLICATI_ANALISI.md`
-- `Modules/Rating/docs/METODI_DUPLICATI_ANALISI.md`
-- `Modules/Seo/docs/METODI_DUPLICATI_ANALISI.md`
-- `Modules/Tenant/docs/METODI_DUPLICATI_ANALISI.md`
-- `Modules/UI/docs/METODI_DUPLICATI_ANALISI.md`
-- `Modules/User/docs/METODI_DUPLICATI_ANALISI.md`
-- `Modules/Xot/docs/METODI_DUPLICATI_ANALISI.md`
+- `Modules/AI/docs/metodi-duplicati-analisi.md`
+- `Modules/Activity/docs/metodi-duplicati-analisi.md`
+- `Modules/Blog/docs/metodi-duplicati-analisi.md`
+- `Modules/Cms/docs/metodi-duplicati-analisi.md`
+- `Modules/Comment/docs/metodi-duplicati-analisi.md`
+- `Modules/Fixcity/docs/metodi-duplicati-analisi.md`
+- `Modules/Gdpr/docs/metodi-duplicati-analisi.md`
+- `Modules/Geo/docs/metodi-duplicati-analisi.md`
+- `Modules/Job/docs/metodi-duplicati-analisi.md`
+- `Modules/Lang/docs/metodi-duplicati-analisi.md`
+- `Modules/Media/docs/metodi-duplicati-analisi.md`
+- `Modules/Notify/docs/metodi-duplicati-analisi.md`
+- `Modules/Rating/docs/metodi-duplicati-analisi.md`
+- `Modules/Seo/docs/metodi-duplicati-analisi.md`
+- `Modules/Tenant/docs/metodi-duplicati-analisi.md`
+- `Modules/UI/docs/metodi-duplicati-analisi.md`
+- `Modules/User/docs/metodi-duplicati-analisi.md`
+- `Modules/Xot/docs/metodi-duplicati-analisi.md`
 
 ### Copie nei Temi
 - `Themes/Sixteen/docs/analisi-metodi-duplicati.md`
@@ -52,7 +63,7 @@ Ogni modulo ha una copia in `Modules/{ModuleName}/docs/METODI_DUPLICATI_ANALISI.
 
 ### 1. Leggi il Documento Master
 ```bash
-cat docs/ANALISI_METODI_DUPLICATI_MASTER.md
+cat docs/analisi-metodi-duplicati-master.md
 ```
 
 ### 2. Verifica i Dati Reali
@@ -226,7 +237,7 @@ A: Sì, è basato su dati reali e calcoli conservativi.
 A: 5 settimane totali, ma benefici visibili già dopo Fase 1.
 
 ### Contatti
-- **Documento Master**: `/docs/ANALISI_METODI_DUPLICATI_MASTER.md`
+- **Documento Master**: `/docs/analisi-metodi-duplicati-master.md`
 - **Issue Tracker**: GitHub Issues
 - **Team Lead**: [Da definire]
 

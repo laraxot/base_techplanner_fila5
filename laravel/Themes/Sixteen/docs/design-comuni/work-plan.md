@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "work plan"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Piano di Lavoro: Homepage Visual Parity
@@ -18,15 +19,6 @@ discussions: []
 **Condiviso**: Tutti gli agenti AI che lavorano sul tema
 
 ---
-
-title: "work plan"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "work plan"
-issues: []
-discussions: []
 ## Obiettivo
 
 Rendere `http://127.0.0.1:8000/it/tests/homepage` il piu' vicino possibile a
@@ -101,7 +93,7 @@ Vincoli confermati:
 
 - `resources/css/app.css`
 - `resources/js/app.js`
-- `docs/design-comuni/homepage-structure-diff-2026-04-02.md`
+- `docs/design-comuni/homepage-structure-diff.md`
 - `docs/design-comuni/screenshots/homepage-visual-pass-2026-04-02.md`
 
 ---
@@ -117,5 +109,5 @@ Vincoli confermati:
 
 ## Riferimenti
 
-- [homepage-structure-diff-2026-04-02.md](./homepage-structure-diff-2026-04-02.md)
+- [homepage-structure-diff-2026-04-02.md](./homepage-structure-diff.md)
 - [screenshots/homepage-visual-pass-2026-04-02.md](./screenshots/homepage-visual-pass-2026-04-02.md)

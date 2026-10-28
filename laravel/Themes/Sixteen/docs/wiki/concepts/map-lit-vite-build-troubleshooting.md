@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "map lit vite build troubleshooting"
 issues: []
 discussions: []
+status: draft
 ---
 
 # map-lit — build Vite e mappa non visibile
@@ -66,7 +67,7 @@ Dopo deploy: Ctrl+Shift+R — cache preload manifest.
 
 ## Collegamenti
 
-- [vite-configuration-guide.md](../../vite-configuration-guide.md)
+- [vite-configuration-guide.md](../../build/vite-configuration-guide.md)
 - [build-issues-resolution.md](../../build-issues-resolution.md)
 - Themes shared: [map-lit-tickets-json-ssot.md](../../../../../Themes/docs/shared-components/map-lit-tickets-json-ssot.md)
 - GitHub: [module_geo_fila5#23](https://github.com/laraxot/module_geo_fila5/issues/23)

@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "agid login implementation"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Implementazione Login AGID-Compliant - Tema Sixteen
@@ -194,5 +195,5 @@ I seguenti testi sono **intenzionalmente hardcoded** per garantire conformità A
 - [Layout Usage Patterns](layout-usage-patterns.md)
 - [Theme Namespace Issue](theme-namespace-issue.md)
 - [Layout Guest](resources/views/layouts/guest.blade.php)
-- [Login Component](../../../laravel/Modules/User/app/Http/Livewire/Auth/Login.php)
+- [Login Component](../../../Modules/User/app/Http/Livewire/Auth/Login.php)
 

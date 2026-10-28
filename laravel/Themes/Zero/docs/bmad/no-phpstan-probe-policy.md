@@ -1,5 +1,18 @@
 ---
 description: Divieto di creare cartelle o file probe per PHPStan anche nei temi.
+id: zero-docs-bmad-no-phpstan-probe-policy
+slug: no-phpstan-probe-policy
+title: "No PHPStan probe files in themes"
+document_type: guide
+type: guide
+category: static-analysis
+status: active
+tags: []
+created: "2026-10-06"
+updated: "2026-10-08"
+qmd: "no phpstan probe files in themes"
+issues: []
+discussions: []
 ---
 
 # No PHPStan probe files in themes

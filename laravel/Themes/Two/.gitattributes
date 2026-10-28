@@ -1,17 +1,16 @@
 # Prototype: laravel/Modules/* e laravel/Themes/*
-# Canon: docs/wiki/rules/no-git-lfs.md
+# Canon: repository binary attribute policy.
 # Sync: bash bashscripts/templates/sync-gitattributes-modules.sh
 #
-# Git LFS VIETATO. Binari = blob git normali.
-# Mai: filter=lfs / diff=lfs / merge=lfs
+# I binari restano blob Git normali.
 
 * text=auto
 *.css linguist-vendored
 *.scss linguist-vendored
 *.js linguist-vendored
 CHANGELOG.md export-ignore
-# Binary files (regular git blobs — NO git-lfs)
-# `binary` + `!filter` azzera eventuali filtri LFS ereditati
+# Binary files as regular Git blobs.
+# `binary` + `!filter` disables inherited filters.
 *.png binary !filter
 *.jpg binary !filter
 *.jpeg binary !filter
@@ -30,25 +29,15 @@ CHANGELOG.md export-ignore
 *.phar binary !filter
 *.db binary !filter
 *.sqlite binary !filter
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 * text=auto
-
->>>>>>> laraxot/dev
 *.blade.php diff=html
 *.css diff=css
 *.html diff=html
 *.md diff=markdown
 *.php diff=php
 /.github export-ignore
-<<<<<<< HEAD
-=======
 CHANGELOG.md export-ignore
->>>>>>> laraxot/dev
 .styleci.yml export-ignore
-=======
->>>>>>> eade870 (fix: .gitattributes con marker riallineato al prototipo no-LFS)
 *.png !text !filter !merge !diff
 *.svg !text !filter !merge !diff
 *.jpg !text !filter !merge !diff

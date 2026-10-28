@@ -74,7 +74,7 @@ Il tema può essere personalizzato in diversi modi:
 
 ## Troubleshooting
 Per problemi comuni, consulta la documentazione nella cartella `docs`:
-- [Vite Manifest Error](vite_manifest_error.md)
+- [Vite Manifest Error](vite-manifest-error.md)
 - [Vite Error](vite-error.md)
 - [Publishing](publishing.md)
 - [Section Template Contract](section-template-contract.md)
@@ -110,4 +110,4 @@ Questo tema è rilasciato sotto la licenza MIT. Vedi il file [LICENSE](../LICENS
 - [On-Demand Pattern](./ON-DEMAND-PATTERN.md) — Pattern per caricamento efficiente
 - [QMD Setup](./QMD-SETUP.md) — Configurazione ricerca locale
 - [Performance](./PERFORMANCE-OPTIMIZATION.md) — Metriche e best practice
-- [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout
+- [Project Structure](./project-structure.md) — Directory layout

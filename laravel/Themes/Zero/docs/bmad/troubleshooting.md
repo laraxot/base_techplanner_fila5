@@ -6,11 +6,15 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "zero theme troubleshooting guide"
 related:
-<<<<<<< HEAD
-=======
   - "./00-index.md"
->>>>>>> laraxot/dev
-  - "./00-index.md"
+id: zero-docs-bmad-troubleshooting
+slug: troubleshooting
+description: "JpGraph is the primary PHP charting library for PDF generation in Zero theme"
+document_type: how-to
+category: documentation
+status: active
+issues: []
+discussions: []
 ---
 
 # Zero Theme Troubleshooting Guide

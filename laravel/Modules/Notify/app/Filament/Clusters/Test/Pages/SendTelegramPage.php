@@ -91,7 +91,6 @@ class SendTelegramPage extends XotBasePage
     {
         try {
             $data = $this->telegramForm->getState();
-
             $message = is_string($data['text']) ? $data['text'] : '';
 
             Notification::route('telegram', $data['chat_id'])->notify(

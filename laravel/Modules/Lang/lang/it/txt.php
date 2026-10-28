@@ -512,6 +512,12 @@ return [
             'placeholder' => 'location',
             'helper_text' => 'location',
             'description' => 'location',
+            'address' => [
+                'label' => 'location.address',
+                'placeholder' => 'location.address',
+                'helper_text' => 'location.address',
+                'description' => 'location.address',
+            ],
         ],
         'coordinates' => [
             'label' => 'coordinates',
@@ -908,6 +914,9 @@ return [
         ],
         'allegato' => [
             'label' => 'allegato',
+            'placeholder' => 'allegato',
+            'helper_text' => 'allegato',
+            'description' => 'allegato',
         ],
         'fattura' => [
             'label' => 'fattura',
@@ -1016,6 +1025,18 @@ return [
         ],
         'indennitaTipoDettaglio' => [
             'label' => 'indennitaTipoDettaglio',
+        ],
+        'author' => [
+            'label' => 'author',
+            'placeholder' => 'author',
+            'helper_text' => 'author',
+            'description' => 'author',
+        ],
+        'images' => [
+            'label' => 'images',
+            'placeholder' => 'images',
+            'helper_text' => 'images',
+            'description' => 'images',
         ],
     ],
     'actions' => [
@@ -1147,6 +1168,7 @@ return [
         'logout' => [
             'tooltip' => 'logout',
             'icon' => 'logout',
+            'label' => 'logout',
         ],
         'profile' => [
             'label' => 'profile',
@@ -1198,6 +1220,21 @@ return [
             'icon' => 'ImportAction',
             'tooltip' => 'ImportAction',
         ],
+        'next' => [
+            'label' => 'next',
+            'icon' => 'next',
+            'tooltip' => 'next',
+        ],
+        'previous' => [
+            'label' => 'previous',
+            'icon' => 'previous',
+            'tooltip' => 'previous',
+        ],
+        'billing' => [
+            'label' => 'billing',
+            'icon' => 'billing',
+            'tooltip' => 'billing',
+        ],
     ],
     'sections' => [
         'address' => [
@@ -1240,6 +1277,18 @@ return [
             'label' => 'field',
             'heading' => 'field',
         ],
+        'Luogo' => [
+            'label' => 'Luogo',
+            'heading' => 'Luogo',
+        ],
+        'Disservizio' => [
+            'label' => 'Disservizio',
+            'heading' => 'Disservizio',
+        ],
+        'Autore della segnalazione' => [
+            'label' => 'Autore della segnalazione',
+            'heading' => 'Autore della segnalazione',
+        ],
     ],
     'label' => 'Txt',
     'plural_label' => 'Txt (Plurale)',
@@ -1257,6 +1306,15 @@ return [
     'steps' => [
         'test' => [
             'label' => 'test',
+        ],
+        'Informativa sulla privacy' => [
+            'label' => 'Informativa sulla privacy',
+        ],
+        'Dati di segnalazione' => [
+            'label' => 'Dati di segnalazione',
+        ],
+        'Riepilogo' => [
+            'label' => 'Riepilogo',
         ],
     ],
 ];

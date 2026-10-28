@@ -8,6 +8,14 @@ qmd: zero theme quality roadmap folio minimal
 related:
   - ./folio-pages-structure.md
   - ../../docs/progetto-perfezione-roadmap.md
+id: zero-docs-bmad-quality-roadmap
+slug: quality-roadmap
+description: "Tema modello Folio minimo: auth/ + home/index documentati in folio-pages-structure.md."
+document_type: concept
+category: static-analysis
+status: active
+issues: []
+discussions: []
 ---
 
 # Quality roadmap — Theme Zero

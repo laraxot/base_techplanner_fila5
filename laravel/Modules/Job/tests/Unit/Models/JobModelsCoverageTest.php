@@ -26,7 +26,7 @@ describe('Job Models Coverage', function () {
     describe('Task Model', function () {
         it('can be instantiated', function () {
             $task = new Task;
-            Assert::assertInstanceOf(Task::class, $task);
+            Assert::assertFalse($task->exists);
         });
 
         it('uses HasXotFactory trait', function () {
@@ -94,7 +94,7 @@ describe('Job Models Coverage', function () {
     describe('Frequency Model', function () {
         it('can be instantiated', function () {
             $model = new Frequency;
-            Assert::assertInstanceOf(Frequency::class, $model);
+            Assert::assertFalse($model->exists);
         });
 
         it('extends BaseModel', function () {
@@ -114,7 +114,7 @@ describe('Job Models Coverage', function () {
     describe('Result Model', function () {
         it('can be instantiated', function () {
             $model = new Result;
-            Assert::assertInstanceOf(Result::class, $model);
+            Assert::assertFalse($model->exists);
         });
 
         it('extends BaseModel', function () {
@@ -134,7 +134,7 @@ describe('Job Models Coverage', function () {
     describe('Schedule Model', function () {
         it('can be instantiated', function () {
             $model = new Schedule;
-            Assert::assertInstanceOf(Schedule::class, $model);
+            Assert::assertFalse($model->exists);
         });
 
         it('extends BaseModel', function () {
@@ -154,7 +154,7 @@ describe('Job Models Coverage', function () {
     describe('Import Model', function () {
         it('can be instantiated', function () {
             $model = new Import;
-            Assert::assertInstanceOf(Import::class, $model);
+            Assert::assertFalse($model->exists);
         });
 
         it('extends BaseModel', function () {
@@ -174,7 +174,7 @@ describe('Job Models Coverage', function () {
     describe('Export Model', function () {
         it('can be instantiated', function () {
             $model = new Export;
-            Assert::assertInstanceOf(Export::class, $model);
+            Assert::assertFalse($model->exists);
         });
 
         it('extends Filament Export', function () {
@@ -194,7 +194,7 @@ describe('Job Models Coverage', function () {
     describe('JobBatch Model', function () {
         it('can be instantiated', function () {
             $model = new JobBatch;
-            Assert::assertInstanceOf(JobBatch::class, $model);
+            Assert::assertFalse($model->exists);
         });
 
         it('extends BaseModel', function () {
@@ -214,7 +214,7 @@ describe('Job Models Coverage', function () {
     describe('JobManager Model', function () {
         it('can be instantiated', function () {
             $model = new JobManager;
-            Assert::assertInstanceOf(JobManager::class, $model);
+            Assert::assertFalse($model->exists);
         });
 
         it('extends BaseModel', function () {
@@ -234,7 +234,7 @@ describe('Job Models Coverage', function () {
     describe('FailedJob Model', function () {
         it('can be instantiated', function () {
             $model = new FailedJob;
-            Assert::assertInstanceOf(FailedJob::class, $model);
+            Assert::assertFalse($model->exists);
         });
 
         it('extends BaseModel', function () {

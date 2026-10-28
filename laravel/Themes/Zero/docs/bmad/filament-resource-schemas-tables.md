@@ -1,7 +1,6 @@
 ---
 title: "Filament Resource: Schemas e Tables (tema Zero)"
 type: guide
-<<<<<<< HEAD
 description: "Convenzione Schemas/Tables Filament per tema Zero; eccezione scheda BaseSchedaForm/Infolist."
 status: stable
 tags: [filament, schemas, tables, theme-zero]
@@ -15,16 +14,15 @@ related:
   - ../../Modules/IndennitaResponsabilita/docs/base-scheda-infolist-inheritance.md
   - ../One/docs/filament-resource-schemas-tables.md
   - ../../../docs/wiki/rules/markdown-file-naming-and-frontmatter.md
-=======
-tags: ['filament']
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament resource schemas e tables tema zero"
-related:
-  - "./00-index.md"
-  - "./00-index.md"
->>>>>>> laraxot/dev
+id: zero-docs-bmad-filament-resource-schemas-tables
+slug: filament-resource-schemas-tables
+document_type: guide
+category: database
+issues: []
+discussions: []
 ---
+
+> Nota di verifica 2026-10-20 (docs-temi): questa pagina cita i moduli `IndennitaResponsabilita`, `Progressioni`, `Ptv`, che non esistono in `laravel/Modules` di questo repository (controllato con `ls`). Il contenuto viene da un altro progetto della famiglia Laraxot e non e' stato riscritto: leggilo come pattern di riferimento, non come descrizione di codice presente. I link verso quei moduli non risolvono.
 
 # Filament Resource: Schemas e Tables (tema Zero)
 
@@ -58,35 +56,27 @@ Per il dettaglio infolist vedi anche [filament-infolist-pattern](./filament-info
 
 ### Copia metodi tabella Page → `*Table`
 
-Spostando la config dalla Page alla `*Table`: `getHeaderActions()` → `getTableHeaderActions()`, `$this->getModel()` → FQCN esplicito, `$this->tableFilters ?? []`, niente `#[Override]`. **NON** creare metodi `return parent::getTableXxx();` (passthrough) o `return [];` (vuoto): equivalgono al default `HasXotTable` (DRY+KISS). Dettaglio: [Progressioni](../../../laravel/Modules/Progressioni/docs/filament-resource-schemas-tables.md#copia-metodi-tabella-page--classe-table-override-utili-vs-inutili).
+Spostando la config dalla Page alla `*Table`: `getHeaderActions()` → `getTableHeaderActions()`, `$this->getModel()` → FQCN esplicito, `$this->tableFilters ?? []`, niente `#[Override]`. **NON** creare metodi `return parent::getTableXxx();` (passthrough) o `return [];` (vuoto): equivalgono al default `HasXotTable` (DRY+KISS). Dettaglio: [Progressioni](./filament-resource-schemas-tables.md#copia-metodi-tabella-page--classe-table-override-utili-vs-inutili).
 
 ## Riferimenti
 
 - [Xot – Filament v5 hybrid pattern](../../../laravel/Modules/Xot/docs/wiki/concepts/filament-v5-hybrid-pattern.md)
-- [Progressioni – inventario scaffold](../../../laravel/Modules/Progressioni/docs/filament-resource-schemas-tables.md)
-Spostando la config dalla Page alla `*Table`: `getHeaderActions()` → `getTableHeaderActions()`, `$this->getModel()` → FQCN esplicito, `$this->tableFilters ?? []`, niente `#[Override]`. **NON** creare metodi `return parent::getTableXxx();` (passthrough) o `return [];` (vuoto): equivalgono al default `HasXotTable` (DRY+KISS). Dettaglio: [Progressioni](../../Modules/Progressioni/docs/filament-resource-schemas-tables.md#copia-metodi-tabella-page--classe-table-override-utili-vs-inutili).
+- [Progressioni – inventario scaffold](./filament-resource-schemas-tables.md)
+Spostando la config dalla Page alla `*Table`: `getHeaderActions()` → `getTableHeaderActions()`, `$this->getModel()` → FQCN esplicito, `$this->tableFilters ?? []`, niente `#[Override]`. **NON** creare metodi `return parent::getTableXxx();` (passthrough) o `return [];` (vuoto): equivalgono al default `HasXotTable` (DRY+KISS). Dettaglio: [Progressioni](./filament-resource-schemas-tables.md#copia-metodi-tabella-page--classe-table-override-utili-vs-inutili).
 
 ## Riferimenti
 
 - [Xot – Filament v5 hybrid pattern](../../Modules/Xot/docs/wiki/concepts/filament-v5-hybrid-pattern.md)
-- [Progressioni – inventario scaffold](../../Modules/Progressioni/docs/filament-resource-schemas-tables.md)
-Spostando la config dalla Page alla `*Table`: `getHeaderActions()` → `getTableHeaderActions()`, `$this->getModel()` → FQCN esplicito, `$this->tableFilters ?? []`, niente `#[Override]`. **NON** creare metodi `return parent::getTableXxx();` (passthrough) o `return [];` (vuoto): equivalgono al default `HasXotTable` (DRY+KISS). Dettaglio: [Progressioni](../../../laravel/Modules/Progressioni/docs/filament-resource-schemas-tables.md#copia-metodi-tabella-page--classe-table-override-utili-vs-inutili).
+- [Progressioni – inventario scaffold](./filament-resource-schemas-tables.md)
+Spostando la config dalla Page alla `*Table`: `getHeaderActions()` → `getTableHeaderActions()`, `$this->getModel()` → FQCN esplicito, `$this->tableFilters ?? []`, niente `#[Override]`. **NON** creare metodi `return parent::getTableXxx();` (passthrough) o `return [];` (vuoto): equivalgono al default `HasXotTable` (DRY+KISS). Dettaglio: [Progressioni](./filament-resource-schemas-tables.md#copia-metodi-tabella-page--classe-table-override-utili-vs-inutili).
 
 ## Riferimenti
 
 - [Xot – Filament v5 hybrid pattern](../../../laravel/Modules/Xot/docs/wiki/concepts/filament-v5-hybrid-pattern.md)
-- [Progressioni – inventario scaffold](../../../laravel/Modules/Progressioni/docs/filament-resource-schemas-tables.md)
+- [Progressioni – inventario scaffold](./filament-resource-schemas-tables.md)
 - [Progressioni – wire pilota Assenze](../../Modules/Progressioni/docs/filament-resource-wire-assenze.md)
-<<<<<<< HEAD
-- [One – stesso pattern](../../One/docs/filament-resource-schemas-tables.md)
-- [Three – stesso pattern](../../Three/docs/filament-resource-schemas-tables.md)
+- [One – stesso pattern](./filament-resource-schemas-tables.md)
+- [Three – stesso pattern](./filament-resource-schemas-tables.md)
 - [Cursor rule](../../../.cursor/rules/filament-resource-schemas-tables.mdc)
 
 *Ultimo aggiornamento: 2026-09-01*
-=======
-- [One – stesso pattern](../One/docs/filament-resource-schemas-tables.md)
-- [Three – stesso pattern](../Three/docs/filament-resource-schemas-tables.md)
-- [Cursor rule](../../../.cursor/rules/filament-resource-schemas-tables.mdc)
-
-*Ultimo aggiornamento: giugno 2025*
->>>>>>> laraxot/dev

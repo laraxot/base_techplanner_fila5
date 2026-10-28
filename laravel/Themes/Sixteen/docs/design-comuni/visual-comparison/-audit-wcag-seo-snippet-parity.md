@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: " audit wcag seo snippet parity"
 issues: []
 discussions: []
+status: superseded
+superseded_by: audit-wcag-seo-snippet-parity.md
 ---
 
 # Audit `/it` — WCAG, SEO, Rich Snippet, Visual Parity (2026-05-29)
@@ -16,15 +18,6 @@ discussions: []
 **Tool:** pa11y 9.1.1 (WCAG2AA), HTML structure diff, visual comparison
 
 ---
-
-title: " audit wcag seo snippet parity"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: " audit wcag seo snippet parity"
-issues: []
-discussions: []
 ## WCAG2AA (pa11y) — Issues Reali
 
 ### CRITICAL (bloccante)

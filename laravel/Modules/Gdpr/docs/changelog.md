@@ -1,16 +1,4 @@
 ---
-qmd: "changelog"
-issues: []
-discussions: []
-title: "Changelog"
-type: documentation
-tags: [gdpr, module]
-created: 2026-10-06
-updated: 2026-10-06
----
-
-<<<<<<< HEAD
----
 title: "changelog"
 type: note
 tags: [documentation]
@@ -22,13 +10,7 @@ discussions: []
 module: theme
 topic: CHANGELOG
 canonical: ../../../Themes/docs/shared-components/CHANGELOG.md
+status: stub
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/CHANGELOG.md
-=======
-# Changelog
-
-All notable changes to this project will be documented in this file.
-
-## [Unreleased]
->>>>>>> 12e4ae8 (chore: remove obsolete configuration and documentation files)

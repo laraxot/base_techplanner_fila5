@@ -4,6 +4,16 @@ type: report
 theme: Zero
 updated: 2026-09-01
 qmd: "audit qualita zero phpstan phpmd phpinsights pest coverage soppressioni collisioni case"
+id: zero-docs-bmad-quality-audit
+slug: quality-audit
+description: "Misurato il 1 settembre 2026 a tree fermo. Ogni numero viene da un comando"
+document_type: analysis
+category: static-analysis
+status: active
+tags: []
+created: "2026-10-06"
+issues: []
+discussions: []
 ---
 
 # Audit di qualita — tema Zero
@@ -50,15 +60,12 @@ da `ignoreErrors` e non vengono contate da nessun gate.
 del tema. In root ci sono anche `phpstan_themes_zero_filtered.json`, artefatto di una run
 vecchia, e `gitmodules.ini`, che non e' un file che git legge.
 
-<<<<<<< HEAD
 Risolto il 2 settembre 2026 (story 5.77): resta `_theme_zero.code-workspace` (i due
 differivano solo per il newline finale); i due riassunti in root erano sottoinsiemi
 riga per riga di `docs/conflict-resolution-summary.md`; `phpstan_themes_zero_filtered.json`
 e `gitmodules.ini` rimossi. In `docs/` collassati 18 gruppi di gemelli (maiuscolo/underscore)
 e rinominati 6 file: `bashscripts/docs-audit-naming.sh Zero` → 0/0/0.
 
-=======
->>>>>>> laraxot/dev
 ### Nessun test
 
 0 file di test su 28 file PHP.
@@ -118,5 +125,5 @@ scrivendo sul tree, altrimenti la misura e falsa e diversa a ogni run.
 /usr/bin/find Modules -newermt '-70 seconds' -type f | wc -l   # deve dare 0
 ```
 
-Audit complessivo e confronto fra tutte le unita: [`docs/quality-audit.md`](../../../../docs/quality-audit.md) nella root del progetto.
+Audit complessivo e confronto fra tutte le unita: [`docs/quality-audit.md`](./quality-audit.md) nella root del progetto.
 

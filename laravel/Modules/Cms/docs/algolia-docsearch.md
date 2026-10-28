@@ -1,11 +1,4 @@
 ---
-qmd: "algolia-docsearch"
-issues: []
-discussions: []
-title: "Algolia Docsearch"
----
-
----
 title: "algolia docsearch"
 type: note
 tags: [documentation]
@@ -17,6 +10,7 @@ discussions: []
 module: theme
 topic: algolia-docsearch
 canonical: ../../../Themes/docs/shared-components/algolia-docsearch-old.md
+status: stub
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/algolia-docsearch-old.md

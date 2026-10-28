@@ -32,7 +32,6 @@ use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 use function Pest\Laravel\withoutExceptionHandling;
-use function Safe\json_encode;
 
 beforeEach(function (): void {
     withoutExceptionHandling();
@@ -294,8 +293,8 @@ describe('Notify Theme PartTwo', function (): void {
             'subject' => 'Empty Params Theme',
             'view_params' => []]);
         XotBasePest::assertTableHas('notify', 'notify_themes', [
-            'id' => $theme->id,
-            'view_params' => json_encode([])]);
+            'id' => $theme->id, ]);
+        TestCase::assertNotifyJsonColumn('notify_themes', $theme->id, 'view_params', []);
         Assert::assertEmpty($theme->view_params);
     });
 
@@ -345,8 +344,8 @@ describe('Notify Theme PartTwo', function (): void {
             'subject' => 'Complex Params Theme',
             'view_params' => $complexParams]);
         XotBasePest::assertTableHas('notify', 'notify_themes', [
-            'id' => $theme->id,
-            'view_params' => json_encode($complexParams)]);
+            'id' => $theme->id, ]);
+        TestCase::assertNotifyJsonColumn('notify_themes', $theme->id, 'view_params', $complexParams);
 
         Assert::assertEquals('/images/logo.png', TestCase::notifyArrayGet($theme->view_params, 'branding', 'logo', 'url'));
         Assert::assertEquals('#3b82f6', TestCase::notifyArrayGet($theme->view_params, 'branding', 'colors', 'primary'));

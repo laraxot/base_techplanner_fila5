@@ -16,6 +16,7 @@ class UserCalendarWidget extends XotBaseSchemaWidget
 {
     public string $type;
 
+    /** @var view-string */
     protected string $view = 'ui::filament.widgets.user-calendar';
 
     public function getActionName(string $function): string
@@ -32,7 +33,6 @@ class UserCalendarWidget extends XotBaseSchemaWidget
     }
 
     /**
-     * @param  array<string, mixed>  $fetchInfo
      * @param  array<string, mixed>  $fetchInfo
      * @return array<int, array<string, mixed>>
      */

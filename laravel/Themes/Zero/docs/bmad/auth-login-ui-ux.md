@@ -7,7 +7,16 @@ updated: 2026-09-17
 tags: [auth, ui, ux, accessibilita, motion]
 related:
   - ./navigation-integration.md
-  - ../../Modules/User/docs/wiki/concepts/login-page-design-comuni.md
+  - ../../../../Modules/User/docs/wiki/concepts/login-page-design-comuni.md
+id: zero-docs-bmad-auth-login-ui-ux
+slug: auth-login-ui-ux
+description: "La pagina usa una direzione hospitality premium: fondo caldo, accento"
+document_type: decision
+category: ui-frontend
+status: active
+qmd: "ui/ux della pagina di accesso restaurant"
+issues: []
+discussions: []
 ---
 
 # UI/UX della pagina di accesso Restaurant

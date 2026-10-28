@@ -5,6 +5,10 @@ module: UI
 related:
   - ./livewire-inventory.md
   - ./livewire-widget-architecture.md
+status: draft
+updated: 2026-10-07
+tags: [docs, ui, bmad]
+qmd: "prd ui ui"
 ---
 
 # PRD UI

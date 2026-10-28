@@ -10,7 +10,6 @@ use PHPUnit\Framework\Assert;
 describe('SortableIdColumn — colonna id standard del progetto', function (): void {
     it('can be instantiated with make() using the default name', function (): void {
         $column = SortableIdColumn::make();
-        Assert::assertInstanceOf(SortableIdColumn::class, $column);
         Assert::assertSame('id', $column->getName());
     });
 

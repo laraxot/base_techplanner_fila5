@@ -5,14 +5,18 @@ declare(strict_types=1);
 namespace Modules\Seo\Tests\Unit\Filament\Widgets;
 
 use Modules\Seo\Filament\Widgets\SocialShareWidget;
-use Modules\Seo\Tests\Fixtures\ExposedSocialShareWidget;
-use Modules\Seo\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
+uses(\Modules\Seo\Tests\TestCase::class);
 
 it('builds social links and exposes platforms in widget view data', function (): void {
-    $widget = new ExposedSocialShareWidget;
+    $widget = new class extends SocialShareWidget
+    {
+        /** @return array<string, mixed> */
+        public function exposeViewData(): array
+        {
+            return $this->getViewData();
+        }
+    };
 
     $widget->data = [
         'url' => 'https://example.test/page',

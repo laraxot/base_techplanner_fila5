@@ -2,12 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Modules\Job\Tests\Unit\Actions;
+namespace Tests\Modules\Job\Unit\Actions;
 
 use Modules\Job\Actions\GetActiveSchedulesAction;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use Spatie\QueueableAction\QueueableAction;
 
 uses(TestCase::class);
 
@@ -24,7 +23,7 @@ describe('GetActiveSchedulesAction', function () {
 
     it('uses QueueableAction trait', function () {
         $reflection = new \ReflectionClass(GetActiveSchedulesAction::class);
-        Assert::assertContains(QueueableAction::class, $reflection->getTraitNames());
+        Assert::assertContains(\Spatie\QueueableAction\QueueableAction::class, $reflection->getTraitNames());
     });
 
     it('has private getFromCache method', function () {

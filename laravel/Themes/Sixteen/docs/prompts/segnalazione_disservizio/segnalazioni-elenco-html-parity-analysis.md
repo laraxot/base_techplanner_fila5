@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "segnalazioni elenco html parity analysis"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Fase 1: HTML Body Structure Parity
@@ -20,7 +21,7 @@ discussions: []
 
 ## Correzioni di governance recepite
 
-- La Blade target resta [`resources/views/pages/tests/[slug].blade.php`](../../../../resources/views/pages/tests/[slug].blade.php).
+- La Blade target resta [`resources/views/pages/tests/[slug].blade.php`](../../../resources/views/pages/tests/[slug].blade.php).
 - Gli output del confronto NON vengono salvati dentro `bashscripts` (agnostico).
 - `local_segnalazioni.html` e questa analisi stanno sotto `docs/prompts/segnalazione_disservizio/`.
 - La locazione canonica del comparer Python è `bashscripts/html/compare-html-body.py`.

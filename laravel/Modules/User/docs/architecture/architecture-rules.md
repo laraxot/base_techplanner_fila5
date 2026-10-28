@@ -11,11 +11,12 @@ related:
   - "./architecture.md"
   - "./auth-blade-structure.md"
   - "./component-registration.md"
-  - "./readme.md"
+  - "./README.md"
   - "./structure.md"
   - "./testing-structure.md"
   - "./user-gdpr-decoupling.md"
   - "./user-gdpr-oupling.md"
+status: draft
 ---
 
 # Architectural Rules & Guidelines
@@ -35,4 +36,5 @@ For strict coding standards, Filament extension rules, and PHPStan guidelines, p
 1.  **DRY & KISS**: Don't repeat yourself, keep it simple.
 2.  **Zero Errors**: PHPStan Level 10 compliance is mandatory.
 3.  **XotBase**: Always extend `XotBase` classes, never Filament classes directly.
+4.  **Translations**: Use `LangServiceProvider` for automatic label resolution.
 4.  **Translations**: Use `LangServiceProvider` for automatic label resolution.

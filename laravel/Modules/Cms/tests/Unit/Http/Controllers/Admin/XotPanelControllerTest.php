@@ -2,29 +2,19 @@
 
 declare(strict_types=1);
 
-use Modules\Cms\Http\Controllers\Admin\XotPanelController;
-use Modules\Cms\Http\Controllers\BaseController;
+use Illuminate\Support\Facades\File;
 use PHPUnit\Framework\Assert;
 
-describe('XotPanelController', function (): void {
-    test('xot panel controller extends base controller', function (): void {
-        $controller = new XotPanelController();
+/*
+ * `XotPanelController` e `BaseController` sono stati rimossi di proposito (regola di progetto: nessun Controller HTTP,
+ * la logica sta nelle Actions e le pagine in Folio/Volt/Filament). Il test dichiara la regola invece del vecchio controller.
+ */
+describe('Cms senza Controller HTTP', function (): void {
+    test('app/Http/Controllers non contiene classi', function (): void {
+        $dir = dirname(__DIR__, 5).'/app/Http/Controllers';
 
-        Assert::assertInstanceOf(BaseController::class, $controller);
-    });
+        $files = is_dir($dir) ? File::allFiles($dir) : [];
 
-    test('xot panel controller has __call method', function (): void {
-    })->todo('Serve una asserzione di comportamento: l\'esistenza di un metodo su una classe nota e\' decidibile staticamente, quindi non prova niente.');
-
-    test('xot panel controller uses correct namespace', function (): void {
-        $reflector = new ReflectionClass(XotPanelController::class);
-
-        Assert::assertSame('Modules\Cms\Http\Controllers\Admin', $reflector->getNamespaceName());
-    });
-
-    test('xot panel controller is instantiable without constructor params', function (): void {
-        $controller = new XotPanelController();
-
-        Assert::assertInstanceOf(XotPanelController::class, $controller);
+        Assert::assertCount(0, $files);
     });
 });

@@ -10,6 +10,8 @@ discussions: []
 module: theme
 topic: advanced-features-backup
 canonical: ../../../Themes/docs/shared-components/ADVANCED_FEATURES.md
+status: superseded
+superseded_by: advanced-features.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/ADVANCED_FEATURES.md

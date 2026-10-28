@@ -7,6 +7,14 @@ updated: 2026-07-14
 qmd: "simplechartwidget - analisi qualit del codice e best practices"
 related:
   - "./00-index.md"
+id: zero-docs-bmad-simplechartwidget-quality-analysis
+slug: simplechartwidget-quality-analysis
+description: "Questo documento fornisce un'analisi approfondita della qualità del codice del widget SimpleChartWidget, identificando pattern di codice debole, violazioni di principi DRY+KISS..."
+document_type: guide
+category: static-analysis
+status: active
+issues: []
+discussions: []
 ---
 
 # SimpleChartWidget - Analisi Qualità del Codice e Best Practices

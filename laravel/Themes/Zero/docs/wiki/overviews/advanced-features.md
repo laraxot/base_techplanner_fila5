@@ -6,9 +6,17 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "funzionalita avanzate dark mode export"
 related:
-  - "./accessibility-standards.md"
+  - "../rules/accessibility-standards.md"
   - "./advanced-features.md"
-  - "./component-library.md"
+  - "../concepts/component-library.md"
+id: zero-docs-wiki-overviews-advanced-features
+slug: advanced-features
+description: "Introdurre funzionalita avanzate mantenendo coerenza visiva e controllo delle dipendenze."
+document_type: guide
+category: documentation
+status: active
+issues: []
+discussions: []
 ---
 
 # Funzionalita avanzate (dark mode, export)
@@ -69,8 +77,8 @@ Introdurre funzionalita avanzate mantenendo coerenza visiva e controllo delle di
 
 ## Collegamenti correlati
 
-- [`Roadmap tema Zero`](../roadmap.md)
-- [`theme-customization.md`](theme-customization.md)
-- [`performance-optimization.md`](performance-optimization.md)
-- [`theme-documentation.md`](../theme-documentation.md)
-- [`themes-system-complete-guide.md`](../themes-system-complete-guide.md)
+- [`Roadmap tema Zero`](../../bmad/roadmap.md)
+- [`theme-customization.md`](../how-to/theme-customization.md)
+- [`performance-optimization.md`](../rules/performance-optimization.md)
+- [`theme-documentation.md`](../../bmad/theme-documentation.md)
+- [`themes-system-complete-guide.md`](../../bmad/themes-system-complete-guide.md)

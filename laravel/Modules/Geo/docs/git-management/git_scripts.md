@@ -13,6 +13,7 @@ discussions: []
 
 > **Backlink:** [README globale](./README.md) · [scripts_conflict_resolution.md](./scripts_conflict_resolution.md)
 
+status: draft
 ---
 
 ## Obiettivo
@@ -44,11 +45,11 @@ Funzione centralizzata (in `custom.sh`) per impostare:
 - Validare i log e aggiornare `gitmodules.ini`
 
 ## Risoluzione conflitti
-- In caso di merge, usare script di backup e seguire la strategia documentata in [scripts_conflict_resolution.md](./scripts_conflict_resolution.md)
+- In caso di merge, usare script di backup e seguire la strategia documentata in [scripts_conflict_resolution.md](../utils/scripts_conflict_resolution.md)
 
 ## Collegamenti
 - [README globale](./README.md)
-- [scripts_conflict_resolution.md](./scripts_conflict_resolution.md)
+- [scripts_conflict_resolution.md](../utils/scripts_conflict_resolution.md)
 - [git_subtree_conflicts.md](./git_subtree_conflicts.md)
 
 ---

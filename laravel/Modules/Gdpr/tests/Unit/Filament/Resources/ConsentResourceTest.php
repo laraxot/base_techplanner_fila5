@@ -9,12 +9,14 @@ use Modules\Gdpr\Models\Consent;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use PHPUnit\Framework\Assert;
 
+use function Safe\class_parents;
+
 test('consent_resource_extends_xot_base_resource', function (): void {
-    Assert::assertInstanceOf(XotBaseResource::class, new ConsentResource());
+    Assert::assertArrayHasKey(XotBaseResource::class, class_parents(ConsentResource::class));
 });
 
 test('consent_resource_model_is_consent', function (): void {
-    $resource = new ConsentResource();
+    $resource = new ConsentResource;
 
     Assert::assertSame(Consent::class, $resource->getModel());
 });

@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "contact"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Contact Block
@@ -134,6 +135,6 @@ Non usare `<x-pub_theme::components.blocks.contact.info />`, perche' `view:cache
 ## Collegamenti
 
 - [Documentazione Filament Forms](../filament-forms.md)
-- [UI Components](../ui/components.md)
+- [UI Components](../components.md)
 - [Maps Integration](../integrations/maps.md)
 - [Schema.org Guidelines](../seo/schema-org.md)

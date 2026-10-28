@@ -1,11 +1,4 @@
 ---
-qmd: "architecture_xotdata_pattern"
-issues: []
-discussions: []
-title: "Architecture Xotdata Pattern"
----
-
----
 title: "architecture xotdata pattern"
 type: note
 tags: [documentation]
@@ -17,6 +10,8 @@ discussions: []
 module: theme
 topic: architecture_xotdata_pattern
 canonical: ../../../Themes/docs/shared-components/architecture-xotdata-pattern.md
+status: superseded
+superseded_by: architecture-xotdata.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/architecture-xotdata-pattern.md

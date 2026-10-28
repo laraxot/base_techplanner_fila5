@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Modules\UI\Filament\Tables\Columns;
 
 use Illuminate\Support\HtmlString;
-use Modules\Xot\Filament\Support\RecordAnchor;
+use Modules\Xot\Filament\Links\RecordAnchor;
 use Modules\Xot\Filament\Tables\Columns\XotBaseTextColumn;
 
 /**

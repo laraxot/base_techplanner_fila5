@@ -4,7 +4,21 @@ type: architecture
 tags: [theme, architecture, zero]
 created: 2026-08-04
 updated: 2026-08-04
+id: zero-docs-bmad-architecture
+slug: architecture
+description: "Zero theme architecture and design patterns for Laraxot PTVX."
+document_type: reference
+category: architecture
+status: active
+qmd: "zero theme architecture architettura del tema zero"
+related:
+  - ./00-index.md
+issues: []
+discussions: []
 ---
+
+> Nota di verifica 2026-10-20 (docs-temi): `laravel/Themes/Zero/app/` contiene solo `.gitkeep` e nessuna classe `*ThemeServiceProvider` vive nel tema (`rg ThemeServiceProvider` trova solo `XotBaseThemeServiceProvider` e un test nel modulo Xot). Le righe su `ThemeServiceProvider` e `ZeroThemeServiceProvider` descrivono quindi il modulo base, non codice del tema. La pagina inoltre fonde tre bozze (due scheletri in inglese e la guida italiana): contenuto non riscritto.
+
 # Zero Theme — Architecture
 
 ## Purpose
@@ -302,13 +316,6 @@ public function test_login_widget_validation()
 
 <!-- Merged from ARCHITECTURE.md, which collided with this file on case-insensitive filesystems. -->
 
----
-title: "Zero Theme Architecture"
-type: architecture
-tags: [theme, architecture, zero, frontend]
-created: 2026-08-04
-updated: 2026-08-04
----
 # Zero Theme — Architecture
 
 ## Purpose

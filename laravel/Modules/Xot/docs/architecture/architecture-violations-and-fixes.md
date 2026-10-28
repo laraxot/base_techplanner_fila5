@@ -338,8 +338,8 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 
 ### **Esempi Implementazione**
 - [CreateUserAction](../app/Actions/Socialite/CreateUserAction.php)
-- [XotBaseMigration](../app/Database/Migrations/XotBaseMigration.php)
-- [IsTenant Trait](../../User/app/Models/Traits/IsTenant.php)
+- [XotBaseMigration](../../app/Database/Migrations/XotBaseMigration.php)
+- [IsTenant Trait](../../../User/app/Models/Traits/IsTenant.php)
 
 ### **Documentazione Moduli**
 - [Cms Architecture](../../Cms/project_docs/architecture-xotdata-pattern.md)
@@ -347,7 +347,6 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 - [Testing Strategy](../../<nome progetto>/project_docs/testing/real-data-testing-strategy.md)
 
 ---
-
 **Ultimo Aggiornamento**: Gennaio 2025
 **Stato**: ✅ Pattern Documentato e Implementato
 ---

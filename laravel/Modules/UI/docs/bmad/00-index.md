@@ -8,9 +8,12 @@ repository: https://github.com/laraxot/module_ui_fila5
 related:
   - ./00-index.md
   - ./index.md
-  - ../../../../docs/wiki/audits/docs-redundancy-audit.md
+  - ../../../../../docs/wiki/audits/docs-redundancy-audit.md
 issues: https://github.com/laraxot/module_ui_fila5/issues
 discussions: https://github.com/laraxot/module_ui_fila5/discussions
+type: index
+updated: 2026-10-15
+qmd: "**indice documentazione modulo ui** ui"
 ---
 
 # 📚 **Indice Documentazione Modulo UI**
@@ -21,7 +24,7 @@ discussions: https://github.com/laraxot/module_ui_fila5/discussions
 
 ## 🎯 **Lettura Essenziale**
 1. [README.md](./README.md) - Design System e overview componenti.
-2. [roadmap.md](./roadmap.md) - Evoluzione 2026: Tailwind v4 e Flux UI integration.
+2. [roadmap.md](../_archive/roadmap.md) - Evoluzione 2026: Tailwind v4 e Flux UI integration.
 3. [philosophy.md](./philosophy.md) - "La Bellezza è Funzionale": filosofia del design in Laraxot.
 
 ## 🏗️ **Core Design System**
@@ -31,7 +34,7 @@ discussions: https://github.com/laraxot/module_ui_fila5/discussions
 
 ## 🧱 **Componenti & Widget**
 - 🧩 **[Blade Components](./blade-components.md)** - Libreria di componenti atomici riutilizzabili.
-- ⚡ **[Filament Components](./filament-components-usage.md)** - Custom columns, fields e widgets per l'Admin Panel.
+- ⚡ **[Filament Components](../legacy/filament-components-usage.md)** - Custom columns, fields e widgets per l'Admin Panel.
 - 📍 **[Location Selector](./filament-components-location-studio.md)** - Componente avanzato per la selezione geografica.
 
 ## 🛠️ **Integrazioni Tecniche**
@@ -47,12 +50,12 @@ discussions: https://github.com/laraxot/module_ui_fila5/discussions
 - 🗑️ **[Cleanup Plan](./consolidation-plan.md)** - Strategia per ridurre i 280+ file di documentazione.
 
 ## 📦 **Pacchetti Composer**
-- [Riferimento composer packages](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md)
+- [Riferimento composer packages](../../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md)
 - `owenvoke/blade-fontawesome` - Icone FontAwesome
 
 ## 🔗 **Moduli Correlati**
-- [Xot](../../Xot/docs/README.md) - Base framework per i widget.
-- [Cms](../../Cms/docs/README.md) - Layout dei contenuti e blocchi.
+- [Xot](../../../Xot/docs/README.md) - Base framework per i widget.
+- [Cms](../../../Cms/docs/README.md) - Layout dei contenuti e blocchi.
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
@@ -168,7 +171,7 @@ Componenti UI riutilizzabili per tutti i temi e moduli.
 
 | Da | A | Tipo |
 |----|---|------|
-| [Theme Index](../../Themes/TwentyOne/docs/00-index.md) | UI Components | Dependency |
+| [Theme Index](../../../../Themes/TwentyOne/docs/00-INDEX.md) | UI Components | Dependency |
 | [Predict Module Index](../../Modules/<nome modulo>/docs/00-index.md) | UI Components | Reference |
 | [forecast Module Index](../../Modules/Domain/docs/00-index.md) | UI Components | Reference |
 

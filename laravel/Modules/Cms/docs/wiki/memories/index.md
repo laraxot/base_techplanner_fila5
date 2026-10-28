@@ -2,13 +2,6 @@
 qmd: "index"
 issues: []
 discussions: []
-title: "Index"
----
-
----
-qmd: "index"
-issues: []
-discussions: []
 title: "Memories Index"
 type: index
 created: 2026-05-11
@@ -17,6 +10,7 @@ tags: [memories, index, on-demand]
 related:
   - ../rules/00-TRIGGER_MAP.md
   - ../rules/on-demand-pattern.md
+status: draft
 ---
 
 # Memories Index

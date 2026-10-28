@@ -1,4 +1,10 @@
 ---
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "livewire widget architecture"
+issues: []
+discussions: []
 title: "Architecture — Tenant"
 type: architecture
 module: Tenant
@@ -6,8 +12,8 @@ related:
   - ./livewire-inventory.md
   - ./livewire-widget-prd.md
   - ../../Xot/docs/bmad/livewire-widget-project-context.md
+status: draft
 ---
-tags: [docs, tenant, bmad]
 
 # Architecture Tenant
 

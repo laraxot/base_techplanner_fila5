@@ -1,3 +1,8 @@
+---
+status: superseded
+superseded_by: prd.md
+---
+
 # Meetup Theme - Product Requirements Document (PRD)
 
 > Documento vivente. Tema pubblico LaravelPizza.

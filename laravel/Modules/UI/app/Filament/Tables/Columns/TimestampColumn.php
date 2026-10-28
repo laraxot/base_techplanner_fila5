@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\UI\Filament\Tables\Columns;
 
-use Filament\Tables\Columns\TextColumn;
+use Modules\Xot\Filament\Tables\Columns\XotBaseTextColumn;
 
 /**
  * Colonna data/ora standard del progetto: `dateTime()`, `sortable()`,
@@ -24,11 +24,15 @@ use Filament\Tables\Columns\TextColumn;
  *
  * @see Modules/UI/docs/form-column-parity.md
  */
-class TimestampColumn extends TextColumn
+/*
+ * GateGuard: callers TimestampColumnTest + 30+ Tables created_at/updated_at;
+ * unique datetime column helper; reads datetime scalars; user: "migliora qualità codice , fa tutto con bmad + second brain + filament blueprint"
+ */
+class TimestampColumn extends XotBaseTextColumn
 {
     public static function make(?string $name = null): static
     {
-        return parent::make($name)
+        return parent::make($name ?? 'created_at')
             ->dateTime()
             ->sortable()
             ->placeholder('—');

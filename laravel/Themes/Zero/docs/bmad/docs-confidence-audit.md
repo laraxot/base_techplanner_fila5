@@ -6,11 +6,15 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "zero theme docs confidence audit - 2026-03-07"
 related:
-<<<<<<< HEAD
-=======
   - "./00-index.md"
->>>>>>> laraxot/dev
-  - "./00-index.md"
+id: zero-docs-bmad-docs-confidence-audit
+slug: docs-confidence-audit
+description: "Audit della documentazione tema Zero con focus su coerenza e affidabilita operativa."
+document_type: guide
+category: static-analysis
+status: active
+issues: []
+discussions: []
 ---
 
 # Zero Theme Docs Confidence Audit - 2026-03-07

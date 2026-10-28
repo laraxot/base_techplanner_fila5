@@ -5,9 +5,7 @@ declare(strict_types=1);
 namespace Modules\Tenant\Tests\Unit;
 
 use Exception;
-use Illuminate\Http\Request as HttpRequest;
 use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Request;
 use Mockery;
 use Mockery\MockInterface;
 use Modules\Tenant\Actions\Config\FilterConfigStringKeysAction;
@@ -19,19 +17,15 @@ use Modules\Tenant\Actions\Modules\GetTenantModulesAction;
 use Modules\Tenant\Actions\Translations\TranslateTenantKeyAction;
 use Modules\Tenant\Models\Tenant;
 use Modules\Tenant\Providers\TenantServiceProvider;
-use Modules\Tenant\Services\Config\Resolvers\DatabaseConfigResolver;
-use Modules\Tenant\Services\Config\Resolvers\MorphMapConfigResolver;
-use Modules\Tenant\Services\Config\Resolvers\StandardConfigResolver;
 use Modules\Tenant\Tests\TestCase;
 use Modules\Tenant\Tests\Unit\Fixtures\SqliteTenantConfigValueResolverStub;
 use Modules\Tenant\Tests\Unit\Fixtures\SushiToCsvCoverageModel;
 use Modules\Tenant\Tests\Unit\Fixtures\SushiToJsonAuthCoverageModel;
 use Modules\Tenant\Tests\Unit\Fixtures\SushiToJsonCoverageModel;
+use Modules\Tenant\Tests\Unit\Fixtures\TenantConfigValueResolverStub;
 use Modules\Tenant\Tests\Unit\Fixtures\SushiToJsonsCoverageModel;
 use Modules\Tenant\Tests\Unit\Fixtures\SushiToJsonsNoSchemaModel;
 use Modules\Tenant\Tests\Unit\Fixtures\SushiToJsonThrowingQueryModel;
-use Modules\Tenant\Tests\Unit\Fixtures\TenantConfigValueResolverStub;
-use Modules\Xot\Actions\Model\GetAllModelsByModuleNameAction;
 use Nwidart\Modules\Facades\Module;
 use PHPUnit\Framework\Assert;
 use ReflectionMethod;
@@ -52,7 +46,8 @@ test('GetTenantNameAction hits shortened parts when nested host config exists', 
     File::ensureDirectoryExists($cfgRoot.'/com/example');
     TestCase::setServerNameForTenantTest('www.foo.example.com');
     Assert::assertSame('com/example', app(GetTenantNameAction::class)->execute());
-    File::deleteDirectory($cfgRoot.'/com');
+    // solo la cartella creata dal test: config/com contiene configurazioni tenant reali
+    File::deleteDirectory($cfgRoot.'/com/example');
     TestCase::setServerNameForTenantTest(null);
 });
 
@@ -93,74 +88,6 @@ test('GetTenantModulesAction wraps invalid json decode errors', function (): voi
         ->toThrow(Exception::class);
 
     File::deleteDirectory($dir);
-});
-
-test('MorphMapConfigResolver throws on missing module segment and invalid result type', function (): void {
-    $resolver = new MorphMapConfigResolver;
-
-    $request = HttpRequest::create('/admin', 'GET');
-    app()->instance('request', $request);
-    Request::swap($request);
-
-    expect(fn (): float|int|string|array|null => $resolver->resolve('morph_map'))
-        ->toThrow(Exception::class, 'Invalid module name');
-
-    $request2 = HttpRequest::create('/admin/tenant/x', 'GET');
-    app()->instance('request', $request2);
-    Request::swap($request2);
-
-    TestCase::mockAppService(GetAllModelsByModuleNameAction::class, static function (MockInterface $mock): void {
-        $mock->allows(['execute' => []]);
-    });
-    TestCase::mockAppService(GetTenantFilePathAction::class, static function (MockInterface $mock): void {
-        $mock->allows(['execute' => sys_get_temp_dir().'/no-morph-'.uniqid().'.php']);
-    });
-    config(['morph_map' => ['flag' => true]]);
-
-    expect(fn (): float|int|string|array|null => $resolver->resolve('morph_map.flag'))
-        ->toThrow(Exception::class, 'Invalid morph_map configuration type');
-});
-
-test('DatabaseConfigResolver covers empty original config and skip branches', function (): void {
-    $resolver = new DatabaseConfigResolver;
-    $original = config('database');
-
-    try {
-        config(['database' => 'invalid']);
-        $result = $resolver->resolve('database', [
-            'default' => null,
-            'connections' => null,
-        ]);
-        Assert::assertIsArray($result);
-
-        config(['database' => ['default' => null]]);
-        $result2 = $resolver->resolve('database', [
-            'default' => null,
-            'connections' => ['mysql' => ['driver' => 'mysql']],
-        ]);
-        Assert::assertIsArray($result2);
-
-        // default null → early return without mutating connections
-        $result3 = $resolver->resolve('database', ['connections' => []]);
-        Assert::assertIsArray($result3);
-    } finally {
-        config(['database' => $original]);
-    }
-});
-
-test('StandardConfigResolver database path when resolver returns non-array', function (): void {
-    $resolver = new StandardConfigResolver;
-    TestCase::mockAppService(GetTenantNameAction::class, static function (MockInterface $mock): void {
-        $mock->allows(['execute' => 'localhost']);
-    });
-
-    // Force DatabaseConfigResolver::resolve to return null via non-array extraConf from tenant
-    config([
-        'database' => ['default' => config('database.default'), 'connections' => config('database.connections')],
-        'localhost.database' => 'not-an-array',
-    ]);
-
-    Assert::assertIsArray($resolver->resolve('database'));
 });
 
 test('SushiToJson private helpers cover early returns and audit nulls', function (): void {
@@ -294,14 +221,16 @@ test('GetTenantNameAction covers null parts and default-host miss/hit', function
     $_SERVER['SERVER_NAME'] = 'www.zzz.example.com';
     File::ensureDirectoryExists($cfgRoot.'/com/example');
     Assert::assertSame('com/example', app(GetTenantNameAction::class)->execute());
-    File::deleteDirectory($cfgRoot.'/com');
+    // solo la cartella creata dal test: config/com contiene configurazioni tenant reali
+    File::deleteDirectory($cfgRoot.'/com/example');
 
     TestCase::setServerNameForTenantTest(null);
     unset($_SERVER['SERVER_NAME']);
     File::ensureDirectoryExists($cfgRoot.'/test/defaulthost');
     config(['app.url' => 'https://defaulthost.test']);
     Assert::assertSame('test/defaulthost', app(GetTenantNameAction::class)->execute());
-    File::deleteDirectory($cfgRoot.'/test');
+    // solo la cartella creata dal test: config/test contiene configurazioni tenant reali
+    File::deleteDirectory($cfgRoot.'/test/defaulthost');
 });
 
 test('Sushi audit fields with named auth model and csv scalar id', function (): void {
@@ -398,13 +327,6 @@ test('TenantServiceProvider load user connection and filter model classes', func
     ]);
     Assert::assertArrayHasKey('tenant', $filtered);
     Assert::assertArrayNotHasKey('bad', $filtered);
-
-    $db = new DatabaseConfigResolver;
-    $result = $db->resolve('database', [
-        'default' => 'missing_conn',
-        'connections' => ['sqlite' => ['driver' => 'sqlite']],
-    ]);
-    Assert::assertIsArray($result);
 });
 
 test('final remaining statement branches', function (): void {

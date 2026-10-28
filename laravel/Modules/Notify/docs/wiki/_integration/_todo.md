@@ -1,16 +1,13 @@
 ---
 title: "Notify Module — Document"
-type: docs/bmad
-status: active
-module: Notify
-scope: documentation
-bmad_version: 1.0
-updated: 2026-10-06
+type: alias
+status: superseded
+canonical: "wiki/_integration/todo.md"
+qmd: "_todo alias superseded"
 ---
 
-# _todo
+# Notify Module — Document
 
-<!-- Contenuto migrato da _docs/_todo.txt -->
+Documento identico al canonico: [todo.md](todo.md).
 
-http://laradevsbd.com/story/laravel-notifications-with-database
-
+Canonico: `laravel/Modules/Notify/docs/wiki/_integration/todo.md`. Qui non ci sono istruzioni: seguire il file collegato.

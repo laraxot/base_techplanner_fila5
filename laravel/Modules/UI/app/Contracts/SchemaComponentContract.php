@@ -12,7 +12,7 @@ namespace Modules\UI\Contracts;
 interface SchemaComponentContract
 {
     /**
-     * @param string|null $prefix prefixo punto-andato per i nomi campo (es. "author.name")
+     * @param  string|null  $prefix  prefixo punto-andato per i nomi campo (es. "author.name")
      * @return array<int, mixed> array di campi Filament
      */
     public static function make(?string $prefix = null): array;

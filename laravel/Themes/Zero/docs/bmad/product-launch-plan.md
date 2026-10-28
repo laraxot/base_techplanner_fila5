@@ -7,6 +7,14 @@ updated: 2026-07-14
 qmd: "product launch plan - theme zero"
 related:
   - "./00-index.md"
+id: zero-docs-bmad-product-launch-plan
+slug: product-launch-plan
+description: "This document outlines the launch plan for Theme Zero v1.0, marking the transition from pre-alpha to production-ready status. The launch positions Theme Zero as the..."
+document_type: guide
+category: product-planning
+status: active
+issues: []
+discussions: []
 ---
 
 # Product Launch Plan - Theme Zero

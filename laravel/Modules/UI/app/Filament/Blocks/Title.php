@@ -27,7 +27,7 @@ class Title // extends XotBaseBlock
                         'h3' => 'h3',
                         'h4' => 'h4',
                     ])
-                    ->afterStateHydrated(static function (TextInput $component, mixed $state): void {
+                    ->afterStateHydrated(static function (Select $component, ?string $state): void {
                         if ($state === null || $state === '') {
                             $component->state('h2');
                         }

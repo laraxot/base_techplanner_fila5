@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "segnalazione riepilogo reference gap plan"
 issues: []
 discussions: []
+status: superseded
+superseded_by: ticket-riepilogo-reference-gap-plan.md
 ---
 
 # Segnalazione Riepilogo Reference Gap Plan

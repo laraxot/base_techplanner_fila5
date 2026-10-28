@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "address resource"
 issues: []
 discussions: []
+status: superseded
+superseded_by: address-resource-risorsa-filament.md
 ---
 
 # Risorsa Filament per il Modello Address

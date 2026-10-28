@@ -7,6 +7,14 @@ updated: 2026-07-14
 qmd: "product strategy - theme zero"
 related:
   - "./00-index.md"
+id: zero-docs-bmad-product-strategy
+slug: product-strategy
+description: "Theme Zero occupies a unique position as the ultra-minimalist option in the Laravel Themes ecosystem. While other themes focus on completeness or specific frameworks, Zero..."
+document_type: guide
+category: product-planning
+status: active
+issues: []
+discussions: []
 ---
 
 # Product Strategy - Theme Zero

@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "readme en"
 issues: []
 discussions: []
+status: draft
 ---
 
 # 🔒 Gdpr — English presentation
@@ -24,15 +25,6 @@ discussions: []
 > **Privacy is not a checkbox.** Consent, user rights, policies — compliance that survives a PA audit.
 
 ---
-
-title: "readme en"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "readme en"
-issues: []
-discussions: []
 ## Why it exists
 
 Mandatory for digital public services and citizen trust.
@@ -58,7 +50,7 @@ Mandatory for digital public services and citizen trust.
 
 Protect data **for real** — in code and process.
 
-Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5** — see [STORY-133](../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
+Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5** — see [STORY-133](../../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
 
 ---
 
@@ -66,7 +58,7 @@ Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 
 | Language | Link |
 |----------|------|
-| 🇮🇹 Presentation | [../readme.md](../readme.md) |
+| 🇮🇹 Presentation | [../README.md](../README.md) |
 | 🇬🇧 Business card | This file |
 | 📚 Technical wiki | [./](./) |
 

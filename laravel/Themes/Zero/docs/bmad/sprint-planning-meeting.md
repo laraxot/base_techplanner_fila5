@@ -6,11 +6,15 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "zero - sprint planning meeting"
 related:
-<<<<<<< HEAD
-=======
   - "./00-index.md"
->>>>>>> laraxot/dev
-  - "./00-index.md"
+id: zero-docs-bmad-sprint-planning-meeting
+slug: sprint-planning-meeting
+description: "Documento operativo per sprint planning. Tema."
+document_type: guide
+category: product-planning
+status: active
+issues: []
+discussions: []
 ---
 
 # Zero - Sprint Planning Meeting

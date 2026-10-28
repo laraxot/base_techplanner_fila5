@@ -181,4 +181,4 @@ window.PredictCinematic.burst(x, y, count, 'rgba(16,185,129,');
 - `resources/views/components/ui/particles.blade.php` — `<x-ui.particles>` component
 - `resources/views/components/blocks/hero/cinematic.blade.php` — Full integration reference
 - `docs/kinetic-design.md` — Kinetic web design principles and component inventory
-- `docs/KINETIC_WEB_DESIGN_SPEC.md` — Full spec with Berger.team principles
+- `docs/kinetic-web-design-spec.md` — Full spec with Berger.team principles

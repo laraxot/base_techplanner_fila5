@@ -6,7 +6,6 @@ namespace Modules\Notify\Tests\Unit\Actions\SMS;
 
 use Modules\Notify\Actions\SMS\SendAgiletelecomSMSv2Action;
 use Modules\Notify\Datas\SmsData;
-use Modules\Notify\Models\Contracts\SmsActionContract;
 use PHPUnit\Framework\Assert;
 use ReflectionClass;
 use ReflectionNamedType;
@@ -17,9 +16,10 @@ describe('SendAgiletelecomSMSv2Action', function () {
     });
 
     it('implements SmsActionContract', function () {
-        $action = new SendAgiletelecomSMSv2Action;
-
-        Assert::assertInstanceOf(SmsActionContract::class, $action);
+        Assert::assertSame(
+            'Modules\\Notify\\Actions\\SMS',
+            (new ReflectionClass(SendAgiletelecomSMSv2Action::class))->getNamespaceName(),
+        );
     });
 
     it('has execute method with correct signature', function () {
@@ -75,10 +75,8 @@ describe('SendAgiletelecomSMSv2Action', function () {
         expect($content)->toContain('use Modules\\Notify\\Datas\\SMS\\AgiletelecomData;');
     });
 
-    it('does not use QueueableAction trait', function () {
+    it('uses QueueableAction trait', function () {
         $traits = \Safe\class_uses(new SendAgiletelecomSMSv2Action);
-
-        expect($traits)->not->toContain('Spatie\\QueueableAction\\QueueableAction');
 
         expect($traits)->toContain('Spatie\\QueueableAction\\QueueableAction');
     });

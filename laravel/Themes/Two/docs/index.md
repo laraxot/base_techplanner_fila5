@@ -167,7 +167,7 @@ File non cancellati né rinominati, ma segnalati come duplicati o come versioni 
 - [product-launch-plan.md](product-launch-plan.md) / [product_launch_plan.md](product_launch_plan.md)
 - [product-strategy.md](product-strategy.md) / [product_strategy.md](product_strategy.md)
 - [user-research.md](user-research.md) / [user_research.md](user_research.md)
-- [sprint_planning.md](sprint_planning.md) / [sprint-planning-meeting.md](sprint-planning-meeting.md)
+- [sprint_planning.md](sprint-planning.md) / [sprint-planning-meeting.md](sprint-planning-meeting.md)
 - [product_roadmap.md](product_roadmap.md) — variante underscore di [product-roadmap.md](product-roadmap.md)
 
 ### Piani di implementazione sovrapposti
@@ -227,8 +227,8 @@ File non cancellati né rinominati, ma segnalati come duplicati o come versioni 
 - [site-replication-strategy.md](site-replication-strategy.md)
 - [stato-replica.md](stato-replica.md)
 - [replikate/replicate.md](replikate/replicate.md)
-- [replikate/replikate_footer.md](replikate/replikate_footer.md)
-- [replikate/replikate_home.md](replikate/replikate_home.md)
+- [replikate/replikate_footer.md](replikate/replikate-footer.md)
+- [replikate/replikate_home.md](replikate/replikate-home.md)
 
 ### Footer — iterazioni multiple sovrapposte
 
@@ -238,7 +238,7 @@ File non cancellati né rinominati, ma segnalati come duplicati o come versioni 
 - [footer-final-complete.md](footer-final-complete.md)
 - [footer-fix-complete.md](footer-fix-complete.md)
 - [footer-implementation-complete.md](footer-implementation-complete.md)
-- [footer_replication.md](footer_replication.md)
+- [footer_replication.md](footer-replication.md)
 - [footer-replication-plan.md](footer-replication-plan.md)
 - [footer-problem-resolved.md](footer-problem-resolved.md)
 - [footer-screenshot-analysis.md](footer-screenshot-analysis.md)
@@ -284,10 +284,10 @@ File non cancellati né rinominati, ma segnalati come duplicati o come versioni 
 
 - [Main_files/filament-peek-demo/public/robots.md](Main_files/filament-peek-demo/public/robots.md)
 - [Main_files/filament-peek-demo/README.md](Main_files/filament-peek-demo/README.md)
-- [Main_files/js_snippet.md](Main_files/js_snippet.md)
+- [Main_files/js_snippet.md](Main_files/js-snippet.md)
 - [Main_files/lightseagreen-dogfish-560272.hostingersite.com/lightseagreen-dogfish-560272.hostingersite.com/robots.md](Main_files/lightseagreen-dogfish-560272.hostingersite.com/lightseagreen-dogfish-560272.hostingersite.com/robots.md)
 - [Main_files/lightseagreen-dogfish-560272.hostingersite.com/robots.md](Main_files/lightseagreen-dogfish-560272.hostingersite.com/robots.md)
-- [Main_files/root_innerHTML.md](Main_files/root_innerHTML.md)
+- [Main_files/root_innerHTML.md](Main_files/root-innerhtml.md)
 - [root-txt-files/test111.md](root-txt-files/test111.md)
 - [walk01.md](walk01.md)
 

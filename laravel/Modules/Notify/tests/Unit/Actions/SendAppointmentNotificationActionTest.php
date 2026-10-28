@@ -22,8 +22,8 @@ function sendAppointmentNotificationTestModel(int $patientId = 1): Model
     return $appointment;
 }
 
-test('send appointment notification returns false and logs info when models are missing', function () {
-    Log::shouldReceive('info')->once();
+test('send appointment notification returns false and logs debug when models are missing', function () {
+    Log::shouldReceive('debug')->once();
 
     $result = app(SendAppointmentNotificationAction::class)->execute(
         appointment: sendAppointmentNotificationTestModel(),

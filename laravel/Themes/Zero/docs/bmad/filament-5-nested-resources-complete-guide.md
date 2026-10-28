@@ -6,11 +6,15 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "filament 5x nested resources - guida completa 2024"
 related:
-<<<<<<< HEAD
-=======
   - "./00-index.md"
->>>>>>> laraxot/dev
-  - "./00-index.md"
+id: zero-docs-bmad-filament-5-nested-resources-complete-guide
+slug: filament-5-nested-resources-complete-guide
+description: "I Nested Resources in Filament 5.x forniscono un modo potente per creare relazioni gerarchiche tra le risorse, permettendo di gestire entità figlio come risorse complete con le..."
+document_type: guide
+category: ui-frontend
+status: active
+issues: []
+discussions: []
 ---
 
 # 🎯 Filament 5.x Nested Resources - Guida Completa 2024

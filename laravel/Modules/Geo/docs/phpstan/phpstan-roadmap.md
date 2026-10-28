@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "phpstan roadmap"
 issues: []
 discussions: []
+status: superseded
+superseded_by: ../phpstan-roadmap.md
 ---
 
 # PHPStan Roadmap - Geo Module
@@ -84,14 +86,5 @@ return $this->state(
 - Monitor Laravel factory best practices.
 
 ---
-
-title: "phpstan roadmap"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan roadmap"
-issues: []
-discussions: []
 **Status**: ✅ Fully Compliant (Level 10)
 **Next**: Monitor for any future regressions

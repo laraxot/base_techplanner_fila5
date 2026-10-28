@@ -6,9 +6,17 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "personalizzazione tema e varianti"
 related:
-  - "./accessibility-standards.md"
-  - "./advanced-features.md"
-  - "./component-library.md"
+  - "../rules/accessibility-standards.md"
+  - "../overviews/advanced-features.md"
+  - "../concepts/component-library.md"
+id: zero-docs-wiki-how-to-theme-customization
+slug: theme-customization
+description: "Introdurre un sistema di personalizzazione con varianti di colore, tipografia e layout."
+document_type: guide
+category: ui-frontend
+status: active
+issues: []
+discussions: []
 ---
 
 # Personalizzazione tema e varianti
@@ -69,8 +77,8 @@ Introdurre un sistema di personalizzazione con varianti di colore, tipografia e 
 
 ## Collegamenti correlati
 
-- [`Roadmap tema Zero`](../roadmap.md)
-- [`component-library.md`](component-library.md)
-- [`performance-optimization.md`](performance-optimization.md)
-- [`customization.md`](../customization.md)
-- [`theme-documentation-standard.md`](../theme-documentation-standard.md)
+- [`Roadmap tema Zero`](../../bmad/roadmap.md)
+- [`component-library.md`](../concepts/component-library.md)
+- [`performance-optimization.md`](../rules/performance-optimization.md)
+- [`customization.md`](../../bmad/customization.md)
+- [`theme-documentation-standard.md`](../../bmad/theme-documentation-standard.md)

@@ -122,6 +122,6 @@ Contenuto da `config/local/predict/database/content/pages/home.json`.
 ## Riferimenti
 
 - [homepage-governance.md](homepage-governance.md)
-- [INDEX_BLADE_ERROR_FIX.md](INDEX_BLADE_ERROR_FIX.md)
+- [INDEX_BLADE_ERROR_FIX.md](index-blade-error-fix.md)
 - [docs/project/translation-prototype-rule.md](../../docs/project/translation-prototype-rule.md)
 - [ItalianTeamMultiOutcomeSeeder](../../Modules/Predict/docs/italian-team-multi-outcome-seeder.md)

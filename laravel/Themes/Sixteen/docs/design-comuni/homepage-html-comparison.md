@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "homepage html comparison"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Homepage HTML Structure Comparison Analysis
@@ -232,8 +233,8 @@ Both have identical footer structure with:
 
 ## Related Documentation
 - [Design Comuni Block Analysis](../../../../_bmad-output/design-comuni-block-analysis.md)
-- [Page Component Architecture](../../../../Modules/Cms/docs/PAGE_COMPONENT_ARCHITECTURE.md)
-- [Page Routing Architecture](../architecture/PAGE_ROUTING_ARCHITECTURE.md)
+- [Page Component Architecture](../../../../Modules/Cms/docs/page-component-architecture.md)
+- [Page Routing Architecture](../architecture/page-routing-architecture.md)
 
 ## CSS Fix Progress Report (2026-04-07)
 

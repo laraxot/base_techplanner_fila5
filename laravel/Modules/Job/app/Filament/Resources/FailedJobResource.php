@@ -17,6 +17,12 @@ class FailedJobResource extends XotBaseResource
     protected static ?string $model = FailedJob::class;
 
     #[Override]
+    public function getFormSchemaOld(): array
+    {
+        return [];
+    }
+
+    #[Override]
     public static function getRelations(): array
     {
         return [];

@@ -1,7 +1,12 @@
 ---
-bmad_status: active
-scope: ui-docs
-updated: 2026-10-06
+title: "TableLayoutToggleTableAction"
+type: note
+status: draft
+created: 2026-01-20
+updated: 2026-10-15
+module: UI
+tags: [docs, ui, wiki]
+qmd: "tablelayouttoggletableaction ui"
 ---
 
 # TableLayoutToggleTableAction
@@ -56,8 +61,8 @@ class MyListRecords extends ListRecords
 4. Mantenere la persistenza dello stato
 
 ## Collegamenti alla Documentazione
-- [Risoluzione Conflitti UI](../CONFLITTI_MERGE_RISOLTI.md): Documentazione dei conflitti risolti
-- [Test di Risoluzione Conflitti](../test_conflicts_resolution.md): Test automatici che verificano la corretta risoluzione
+- [Risoluzione Conflitti UI](../../conflitti-merge-risolti.md): Documentazione dei conflitti risolti
+- [Test di Risoluzione Conflitti](../../test-conflicts-resolution.md): Test automatici che verificano la corretta risoluzione
 
 [Torna alla documentazione UI](/docs/modules/module_ui.md#actions)
 ---
@@ -127,8 +132,8 @@ class MyListRecords extends ListRecords
 3. Gestire correttamente gli eventi di refresh
 4. Mantenere la persistenza dello stato
 ## Collegamenti alla Documentazione
-- [Risoluzione Conflitti UI](../CONFLITTI_MERGE_RISOLTI.md): Documentazione dei conflitti risolti
-- [Test di Risoluzione Conflitti](../test_conflicts_resolution.md): Test automatici che verificano la corretta risoluzione
+- [Risoluzione Conflitti UI](../../conflitti-merge-risolti.md): Documentazione dei conflitti risolti
+- [Test di Risoluzione Conflitti](../../test-conflicts-resolution.md): Test automatici che verificano la corretta risoluzione
 - **Non** spostare il toggle in `HasTableLayoutPage` — duplicazione inutile.
 - **Non** rimuovere `TableLayoutTrait` dall’Action — è il punto che scrive sessione al click.
 - **Non** refactorare icona/tooltip in closure se non c’è bug visivo.
@@ -136,6 +141,6 @@ class MyListRecords extends ListRecords
 Vedi [bugfix](../bugfix-table-layout-toggle-not-working.md): bastano `resetTable()` + `$wire.$refresh()` dopo `setTableLayout()`.
 ## Collegamenti
 - [Bugfix doppio click](../bugfix-table-layout-toggle-not-working.md)
-- [Disciplina agente](../../../docs/wiki/memories/agent-table-layout-toggle-discipline.md)
+- [Disciplina agente](../../../../../../docs/wiki/memories/agent-table-layout-toggle-discipline.md)
 - [Contratto Xot](../../Xot/docs/filament/table-layout-toggle-contract.md)
 - [Tema One — tabelle](../../../Themes/One/docs/filament-resource-schemas-tables.md)

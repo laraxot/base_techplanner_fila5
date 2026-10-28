@@ -29,9 +29,17 @@ Molte "variabili mai lette" erano logica persa in refactor (fallback email Cms, 
 - [ ] Pest in ambiente sqlite (asserzioni nuove non ancora eseguite)
 - [ ] Issue/Discussion GitHub (`gh` non installato)
 
-## Stories per modulo (`laravel/Modules/<M>/docs/stories/2026-10-06-phpstan-cleanup-<m>.{story,dev}.md`)
+## Stories per modulo (`laravel/Modules/<M>/docs/stories/phpstan-cleanup-<m>.{story,dev}.md`)
 xot-app · xot-rest · cms · lang · user · geo · notify · tenant · activity · media · ai · ui · job · gdpr · techplanner · seo ·
-tema: `laravel/Themes/Sixteen/docs/stories/2026-10-06-const-to-enum-sixteen-appointment.*`
+tema: `laravel/Themes/Sixteen/docs/stories/const-to-enum-sixteen-appointment.*`
+
+## Seconda passata (2026-10-28): 1600 → 1 errore
+Baseline `phpstan analyse Modules` = **1600 errori in 181 file** (Activity 383, Media 292, Lang 213, Cms 168, Job 165, Seo 131, Xot 110, AI 65, altri 73).
+Run completo a cache pulita a fine passata: **1 errore** (`Xot/.../TypedHasRecursiveRelationships.php` `trait.unused`, residuo di un merge Xot aperto; chiuderlo = cancellare un file morto o scegliere l'altro design: decide l'utente).
+**Causa radice**: non deriva di qualita', ma rebase/merge interrotti nei repo dei moduli e commit «.» con conflitti salvati a meta' (`use` persi, fixture e classi cancellate, versioni vecchie riapparse). Lo zero vale per il working tree a meta' rebase.
+Storie per modulo: `phpstan-zero-errors-<m>.{story,dev}.md` (o storia esistente aggiornata). Procedura e pre-flight: `docs/wiki/how-to/phpstan-modules-swarm.md`.
+- [ ] Pest: il DB `techplanner_data_test` non esiste su questa macchina; `TestDatabaseGuard` impone `*_test`. Servono creazione + migrazioni additive dell'utente.
+- [ ] Rebase/merge aperti (AI, Activity, Cms, Gdpr, UI, Media, Xot): decide l'utente.
 
 ## GitHub (tracciamento)
 ### Issues

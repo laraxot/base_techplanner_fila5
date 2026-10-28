@@ -6,11 +6,15 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "tema zero - mail layouts"
 related:
-<<<<<<< HEAD
-=======
   - "./00-index.md"
->>>>>>> laraxot/dev
-  - "./00-index.md"
+id: zero-docs-bmad-mail-layouts
+slug: mail-layouts
+description: "Il tema Zero utilizza un layout email basato sul Design System Italiano (italia/design-comuni-pagine-statiche) e integrato con spatie/laravel-database-mail-templates per..."
+document_type: guide
+category: ui-frontend
+status: active
+issues: []
+discussions: []
 ---
 
 # Tema Zero - Mail Layouts
@@ -231,11 +235,11 @@ Il sistema implementa una strategia di fallback a cascata:
 
 ### Documentazione Correlata
 
-- [Mail Layouts Theme Integration](../../../Modules/Notify/docs/mail-layouts-theme-integration.md)
-- [Spatie Database Mail Templates](../../../Modules/Notify/docs/spatie-database-mail-templates-deep-dive.md)
-- [Email Best Practices](../../../Modules/Notify/docs/email-html-best-practices.md)
+- [Mail Layouts Theme Integration](../../../../Modules/Notify/docs/mail-layouts-theme-integration.md)
+- [Spatie Database Mail Templates](../../../../Modules/Notify/docs/spatie-database-mail-templates-deep-dive.md)
+- [Email Best Practices](../../../../Modules/Notify/docs/email-html-best-practices.md)
 
-- [Email Best Practices](../../../Modules/Notify/docs/email_html_best_practices.md)
+- [Email Best Practices](../../../../Modules/Notify/docs/email_html_best_practices.md)
 
 ### Repository di Riferimento
 

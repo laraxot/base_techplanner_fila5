@@ -6,11 +6,15 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "zero theme - filosofia completa"
 related:
-<<<<<<< HEAD
-=======
   - "./00-index.md"
->>>>>>> laraxot/dev
-  - "./00-index.md"
+id: zero-docs-bmad-philosophy
+slug: philosophy
+description: "Filosofia del tema Zero come tema baseline: presentazione pura, il dominio resta nei moduli."
+document_type: guide
+category: product-planning
+status: active
+issues: []
+discussions: []
 ---
 
 # Zero Theme - Filosofia Completa

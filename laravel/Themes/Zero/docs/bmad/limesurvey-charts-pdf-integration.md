@@ -6,11 +6,15 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "limesurvey charts pdf integration - zero theme"
 related:
-<<<<<<< HEAD
-=======
   - "./00-index.md"
->>>>>>> laraxot/dev
-  - "./00-index.md"
+id: zero-docs-bmad-limesurvey-charts-pdf-integration
+slug: limesurvey-charts-pdf-integration
+description: "Before code changes on PDF/chart flows, module and theme docs must be reviewed and improved."
+document_type: guide
+category: ui-frontend
+status: active
+issues: []
+discussions: []
 ---
 
 # LimeSurvey Charts PDF Integration - Zero Theme

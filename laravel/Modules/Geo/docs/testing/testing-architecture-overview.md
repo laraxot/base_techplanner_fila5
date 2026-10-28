@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "testing architecture overview"
 issues: []
 discussions: []
+status: superseded
+superseded_by: ../testing-architecture-overview.md
 ---
 
 # Architettura di Testing - <nome progetto>

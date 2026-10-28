@@ -21,7 +21,7 @@ return [
             'label' => 'In elaborazione',
             'color' => 'warning',
             'icon' => 'heroicon-o-arrow-path',
-            'description' => 'Presa in carico dal worker, invio in corso',
+            'description' => 'Invio in corso presso il provider',
         ],
         'sent' => [
             'label' => 'Inviata',

@@ -7,13 +7,8 @@ created: 2026-07-17
 updated: 2026-07-27
 qmd: "code quality baseline PHPStan Pest strict types Laraxot Zero git remote"
 story: STORY-001
-<<<<<<< HEAD
 # GRAVE: issue/discussion del tema — mai base_techplanner / base_<nome progetto> / mono.
 # GRAVE: issue/discussion del tema — mai base_ptvx / base_<nome progetto> / mono.
-=======
-# GRAVE: issue/discussion del tema — mai base_techplanner / base_workorder / mono.
-# GRAVE: issue/discussion del tema — mai base_ptvx / base_workorder / mono.
->>>>>>> laraxot/dev
 # Resolve: cd laravel/Themes/Zero && git remote -v → laraxot/theme_zero_fila5
 issues: []
 discussions: []
@@ -21,6 +16,12 @@ related:
   - "../../../../docs/stories/STORY-001-code-quality-moduli-temi.md"
   - "../../../../docs/wiki/memories/module-github-remote-discipline.md"
 module: "Zero"
+id: zero-docs-bmad-code-quality-improvement-report
+slug: code-quality-improvement-report
+description: "Baseline statica riproducibile per orientare il miglioramento. I conteggi sono segnali, non sostituiscono PHPStan, Pest o la review del flusso reale."
+document_type: analysis
+category: static-analysis
+status: active
 ---
 
 # Code Quality Improvement Report — Zero
@@ -35,13 +36,8 @@ cd laravel/Themes/Zero && git remote -v
 # atteso: laraxot/theme_zero_fila5
 ```
 
-<<<<<<< HEAD
 **Lezione grave:** in un conflitto Git, *entrambe* le parti possono essere sbagliate (`base_techplanner_*` vs `base_<nome progetto>_*`). Non scegliere a caso: `git remote -v` nella cartella del modulo/tema.
 **Lezione grave:** in un conflitto Git, *entrambe* le parti possono essere sbagliate (`base_ptvx_*` vs `base_<nome progetto>_*`). Non scegliere a caso: `git remote -v` nella cartella del modulo/tema.
-=======
-**Lezione grave:** in un conflitto Git, *entrambe* le parti possono essere sbagliate (`base_techplanner_*` vs `base_workorder_*`). Non scegliere a caso: `git remote -v` nella cartella del modulo/tema.
-**Lezione grave:** in un conflitto Git, *entrambe* le parti possono essere sbagliate (`base_ptvx_*` vs `base_workorder_*`). Non scegliere a caso: `git remote -v` nella cartella del modulo/tema.
->>>>>>> laraxot/dev
 
 ## Baseline
 

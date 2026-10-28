@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "case sensitivity rules"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Case Sensitivity Rules - Gdpr Module

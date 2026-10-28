@@ -8,6 +8,13 @@ tags: [migrato-da-txt, zero]
 converted_from: push.txt
 created: 2026-08-24
 updated: 2026-08-24
+id: zero-docs-wiki-how-to-git-push
+document_type: reference
+category: git-workflow
+status: active
+qmd: "push"
+issues: []
+discussions: []
 ---
 
 Obiettivo: sincronizzare il tema Zero su tutti i remote GitHub configurati.

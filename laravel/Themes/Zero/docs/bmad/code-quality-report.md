@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Code quality — tema Zero"
 type: report
@@ -6,9 +5,15 @@ tags: [theme, zero, code, quality, report]
 created: 2026-07-24
 updated: 2026-07-24
 qmd: "zero theme code quality   tema zero"
+id: zero-docs-bmad-code-quality-report
+slug: code-quality-report
+description: "Report locale (2026-07-17). Metodo: phpstan analyse (sweep repo-wide, incluso nei Themes), phpmd (codesize+unusedcode), grep mirati (TODO/FIXME, dd()/dump() nei .blade.php,..."
+document_type: analysis
+category: static-analysis
+status: active
+issues: []
+discussions: []
 ---
-=======
->>>>>>> laraxot/dev
 # Code quality — tema Zero
 
 Report locale (2026-07-17). Metodo: `phpstan analyse` (sweep repo-wide, incluso nei Themes), `phpmd` (codesize+unusedcode), grep mirati (TODO/FIXME, dd()/dump() nei .blade.php, facade dirette in app/Actions).

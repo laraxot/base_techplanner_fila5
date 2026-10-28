@@ -11,6 +11,7 @@ module: Gdpr
 related:
   - ./livewire-inventory.md
   - ../../Xot/docs/bmad/livewire-widget-project-context.md
+status: draft
 ---
 
 # Context Gdpr

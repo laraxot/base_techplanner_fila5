@@ -6,11 +6,15 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "theme zero docs governance"
 related:
-<<<<<<< HEAD
-=======
   - "./00-index.md"
->>>>>>> laraxot/dev
-  - "./00-index.md"
+id: zero-docs-bmad-model-docs-governance
+slug: model-docs-governance
+description: "Regole di governance della docs: nomi di modello al singolare, indici accurati tra moduli e temi."
+document_type: guide
+category: architecture
+status: active
+issues: []
+discussions: []
 ---
 
 # Theme Zero Docs Governance

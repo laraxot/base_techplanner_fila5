@@ -6,8 +6,16 @@ created: 2026-08-03
 updated: 2026-08-03
 qmd: "graphify headroom caveman tema Zero blade indicizzazione scaffold"
 related:
-  - ./no-ai-tool-scaffold-dirs.md
+  - ../../bmad/no-ai-tool-scaffold-dirs.md
   - ../../../Modules/Xot/docs/ai-tooling-stack.md
+id: zero-docs-wiki-concepts-ai-tooling
+slug: ai-tooling
+description: "Canonico dello stack (versioni, installazione, configurazione)"
+document_type: guide
+category: documentation
+status: active
+issues: []
+discussions: []
 ---
 
 # Strumenti AI nel tema Zero
@@ -31,7 +39,7 @@ graphify query "quali componenti usano il layout app" \
 ## La trappola: scaffold nel tema
 
 `graphify update <path>` scrive `<path>/graphify-out/`. Su un tema questo crea esattamente la
-categoria di cartella che [no-ai-tool-scaffold-dirs](./no-ai-tool-scaffold-dirs.md) vieta: il tema
+categoria di cartella che [no-ai-tool-scaffold-dirs](../../bmad/no-ai-tool-scaffold-dirs.md) vieta: il tema
 vive anche come repo Git indipendente, e uno strumento lanciato nella sua root ci deposita la
 propria cache ignorando le convenzioni del monorepo.
 

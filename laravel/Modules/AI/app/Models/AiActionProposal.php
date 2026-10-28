@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
 use Modules\AI\Enums\AiActionProposalStatusEnum;
 use Modules\Xot\Contracts\ProfileContract;
+use Modules\Xot\Models\XotBaseModel;
 
 /**
  * Class AiActionProposal.
@@ -44,7 +45,7 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @mixin \Eloquent
  */
-class AiActionProposal extends BaseModel
+class AiActionProposal extends XotBaseModel
 {
     /**
      * @var list<string>

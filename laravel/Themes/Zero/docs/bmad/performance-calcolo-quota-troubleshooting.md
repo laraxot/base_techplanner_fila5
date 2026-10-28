@@ -6,12 +6,18 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "troubleshooting calcolo quota performance"
 related:
-<<<<<<< HEAD
-=======
   - "./00-index.md"
->>>>>>> laraxot/dev
-  - "./00-index.md"
+id: zero-docs-bmad-performance-calcolo-quota-troubleshooting
+slug: performance-calcolo-quota-troubleshooting
+description: "Nel report calcolo quota appare una discrepanza tra"
+document_type: guide
+category: performance
+status: active
+issues: []
+discussions: []
 ---
+
+> Nota di verifica 2026-10-20 (docs-temi): questa pagina cita il modulo `Performance`, che non esiste in `laravel/Modules` di questo repository (controllato con `ls`). Il contenuto viene da un altro progetto della famiglia Laraxot e non e' stato riscritto: leggilo come pattern di riferimento, non come descrizione di codice presente. I link verso quei moduli non risolvono.
 
 # Troubleshooting Calcolo Quota Performance
 

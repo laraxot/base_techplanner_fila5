@@ -55,6 +55,7 @@
     "laravel-notification-channels/telegram": "*",
     "phpdocumentor/type-resolver": "*",
     "spatie/laravel-database-mail-templates": "*",
+    "spatie/laravel-queueable-action": "*",
     "symfony/http-client": "*",
     "symfony/postmark-mailer": "*"
   },

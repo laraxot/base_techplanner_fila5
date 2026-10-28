@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "DESIGN COMUNI ITALIA INTEGRATION"
 issues: []
 discussions: []
+status: superseded
+superseded_by: design-comuni-italia-integration.md
 ---
 
 # 🇮🇹 Design Comuni Italia - Integration Analysis
@@ -16,15 +18,6 @@ discussions: []
 **Status:** Analysis & Implementation Plan
 
 ---
-
-title: "DESIGN COMUNI ITALIA INTEGRATION"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "DESIGN COMUNI ITALIA INTEGRATION"
-issues: []
-discussions: []
 ## 📋 Executive Summary
 
 **Design Comuni Italia** è il modello ufficiale per i siti web dei Comuni Italiani, sviluppato da Designers Italia e basato su Bootstrap Italia. Il nostro tema Sixteen è già allineato con Bootstrap Italia, rendendo l'integrazione naturale e completa.

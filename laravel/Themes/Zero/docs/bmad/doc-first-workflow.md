@@ -6,11 +6,15 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "theme zero - doc-first workflow"
 related:
-<<<<<<< HEAD
-=======
   - "./00-index.md"
->>>>>>> laraxot/dev
-  - "./00-index.md"
+id: zero-docs-bmad-doc-first-workflow
+slug: doc-first-workflow
+description: "Regola doc-first: ogni modifica al tema parte dallo studio e dall'aggiornamento della docs, anche come handoff tra agenti."
+document_type: how-to
+category: documentation
+status: active
+issues: []
+discussions: []
 ---
 
 # Theme Zero - Doc-First Workflow

@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "segnalazione 01 privacy css js parity"
 issues: []
 discussions: []
+status: superseded
+superseded_by: ticket-01-privacy-css-js-parity.md
 ---
 
 # segnalazione-01-privacy — CSS/JS Visual Parity Report
@@ -18,15 +20,6 @@ discussions: []
 **Local**: http://127.0.0.1:8000/it/tests/segnalazione-01-privacy
 
 ---
-
-title: "segnalazione 01 privacy css js parity"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "segnalazione 01 privacy css js parity"
-issues: []
-discussions: []
 ## Visual Parity Score: ~95%
 
 ### Font Parity (CRITICAL FIX)

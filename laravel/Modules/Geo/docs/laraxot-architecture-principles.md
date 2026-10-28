@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "laraxot architecture principles"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Principi Architetturali Laraxot: DRY + KISS + SOLID + ROBUST + INTELLIGENT
@@ -81,20 +82,12 @@ laravel/.ai/guidelines/
 **SEMPRE DRY + KISS + SOLID + ROBUST + INTELLIGENT + LARAXOT!**
 
 ## Collegamenti
-- [Testing Priority Rule](testing/testing-priority-rule.md)
-- [Model Testing Philosophy](models/model-testing-philosophy.md)
-- [No RefreshDatabase Rule](testing/no-refresh-database-rule.md)
-- [Laraxot Framework](../../laravel/modules/xot/docs/laraxot-framework.md)
+- [Testing Priority Rule](testing-priority-rule.md)
+- [Model Testing Philosophy](model-testing-philosophy.md)
+- [No RefreshDatabase Rule](no-refresh-database-rule.md)
+- [Laraxot Framework](../../Xot/docs/laraxot-framework.md)
 
 ---
-title: "laraxot architecture principles"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "laraxot architecture principles"
-issues: []
-discussions: []
 **Versione**: 1.0
 **Compatibilità**: Laraxot <nome progetto>, Architecture Principles
 **Compatibilità**: Laraxot <nome progetto>, Architecture Principles

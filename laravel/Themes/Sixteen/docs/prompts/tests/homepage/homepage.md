@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "homepage"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Homepage
@@ -17,15 +18,6 @@ discussions: []
 # Status: 🔄 IN IMPLEMENTATION - Comprehensive Design Parity Fix
 
 ---
-
-title: "homepage"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "homepage"
-issues: []
-discussions: []
 ## 📋 EXECUTIVE SUMMARY
 
 **Obiettivo**: Allineare homepage locale completamente a Design Comuni reference design
@@ -364,8 +356,8 @@ laravel/Themes/Sixteen/resources/views/
 laravel/Themes/Sixteen/resources/css/
 └── homepage-parity-v2.css ✅
 
-laravel/Themes/Sixteen/resources/views/
-└── layouts/design-comuni.blade.php ✅
+laravel/Themes/Sixteen/resources/views/components/layouts/
+└── app.blade.php ✅
 
 laravel/Themes/Sixteen/resources/views/
 └── components/sections/header/v1.blade.php ✅
@@ -725,7 +717,7 @@ curl -s "http://127.0.0.1:8000/it/tests/homepage" | grep -A 3 "personal-area-log
    - CSS: calendar header, rating, contact styling
 
 2. **`7b64de0e`** - `docs: add homepage fix analysis documentation`
-   - Creato HOMEPAGE-FIX-ANALYSIS.md con analisi completa
+   - Creato homepage-fix-analysis.md con analisi completa
 
 3. **`7ff2c0eb`** - `feat: hero section green colors (chip, link, title)`
    - Aggiunto chip-green class con background verde
@@ -1560,7 +1552,7 @@ Ogni agent deve:
 ### Documenti Correlati:
 - [Homepage Screenshot Analysis](./homepage-screenshot-analysis.md) - Analisi screenshot comparativi
 - [Homepage Fix Prompt](./homepage.txt) - Prompt completo per fix
-- [Replikate Guide](../replikate.txt) - Guida replication Design Comuni
+- [Replikate Guide](../../replikate.txt) - Guida replication Design Comuni
 
 ---
 
@@ -1569,14 +1561,14 @@ Ogni agent deve:
 ### File di Analisi
 - [Homepage Screenshot Analysis](./homepage-screenshot-analysis.md) - Analisi screenshot comparativi
 - [Homepage Fix Prompt](./homepage.txt) - Prompt completo per fix
-- [Replikate Guide](../replikate.txt) - Guida replication Design Comuni
+- [Replikate Guide](../../replikate.txt) - Guida replication Design Comuni
 
 ### File Implementati
 - [Header Component](../../components/bootstrap-italia/header.blade.php)
 - [Governance Cards](../../components/blocks/governance/cards.blade.php)
 - [Topics Highlight](../../components/blocks/topics/highlight.blade.php)
 - [Rating Widget](../../components/blocks/feedback/rating.blade.php)
-- [Design Comuni CSS](../../resources/css/design-comuni.css)
+- [Design Comuni CSS](../../../../resources/css/design-comuni.css)
 
 ### Riferimenti Esterni
 - [Design Comuni Reference](https://italia.github.io/design-comuni-pagine-statiche/sito/homepage.html)
@@ -1621,7 +1613,7 @@ Ogni agent deve:
    - CSS: calendar header, rating, contact styling
 
 2. **`7b64de0e`** - `docs: add homepage fix analysis documentation`
-   - Creato HOMEPAGE-FIX-ANALYSIS.md con analisi completa
+   - Creato homepage-fix-analysis.md con analisi completa
 
 3. **`7ff2c0eb`** - `feat: hero section green colors (chip, link, title)`
    - Aggiunto chip-green class con background verde
@@ -1645,7 +1637,7 @@ Ogni agent deve:
 9. **`[NEW]`** - `fix: governance cards horizontal layout (Screenshot 7)`
    - Mario Rossi card: horizontal layout (content left, image right)
    - CSS: card-flex row, card-image-rounded styling
-   - Docs: updated homepage.txt e HOMEPAGE-FIX-ANALYSIS.md
+   - Docs: updated homepage.txt e homepage-fix-analysis.md
 
 9. **`4cc35247`** - `fix: align rating CSS with rating-green-bg class name`
    - Allineamento CSS rating con classe rating-green-bg
@@ -2472,7 +2464,7 @@ Ogni agent deve:
 ### Documenti Correlati:
 - [Homepage Screenshot Analysis](./homepage-screenshot-analysis.md) - Analisi screenshot comparativi
 - [Homepage Fix Prompt](./homepage.txt) - Prompt completo per fix
-- [Replikate Guide](../replikate.txt) - Guida replication Design Comuni
+- [Replikate Guide](../../replikate.txt) - Guida replication Design Comuni
 
 ---
 
@@ -2481,14 +2473,14 @@ Ogni agent deve:
 ### File di Analisi
 - [Homepage Screenshot Analysis](./homepage-screenshot-analysis.md) - Analisi screenshot comparativi
 - [Homepage Fix Prompt](./homepage.txt) - Prompt completo per fix
-- [Replikate Guide](../replikate.txt) - Guida replication Design Comuni
+- [Replikate Guide](../../replikate.txt) - Guida replication Design Comuni
 
 ### File Implementati
 - [Header Component](../../components/bootstrap-italia/header.blade.php)
 - [Governance Cards](../../components/blocks/governance/cards.blade.php)
 - [Topics Highlight](../../components/blocks/topics/highlight.blade.php)
 - [Rating Widget](../../components/blocks/feedback/rating.blade.php)
-- [Design Comuni CSS](../../resources/css/design-comuni.css)
+- [Design Comuni CSS](../../../../resources/css/design-comuni.css)
 
 ### Riferimenti Esterni
 - [Design Comuni Reference](https://italia.github.io/design-comuni-pagine-statiche/sito/homepage.html)

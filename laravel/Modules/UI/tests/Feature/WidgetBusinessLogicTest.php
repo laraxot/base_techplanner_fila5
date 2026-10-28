@@ -16,8 +16,9 @@ use Modules\UI\Filament\Widgets\StatWithIconWidget;
 use Modules\UI\Filament\Widgets\TestChartWidget;
 use Modules\UI\Filament\Widgets\UserCalendarWidget;
 use Modules\UI\Tests\TestCase;
-use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 use PHPUnit\Framework\Assert;
+
+use function Safe\class_parents;
 
 uses(TestCase::class, DatabaseTransactions::class);
 
@@ -39,8 +40,9 @@ it('widgets instantiate and extend filament base', function (): void {
         concreteRowWidget(),
     ];
 
+    Assert::assertCount(9, $widgets);
     foreach ($widgets as $widget) {
-        Assert::assertInstanceOf(Widget::class, $widget);
+        Assert::assertArrayHasKey(Widget::class, class_parents($widget));
     }
 });
 
@@ -53,7 +55,6 @@ it('schema widgets expose empty form schema by default', function (): void {
     ];
 
     foreach ($widgets as $widget) {
-        Assert::assertInstanceOf(XotBaseSchemaWidget::class, $widget);
         Assert::assertSame([], $widget->getFormSchema());
     }
 });

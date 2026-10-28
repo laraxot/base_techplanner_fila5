@@ -5,7 +5,6 @@ use Modules\Job\Models\Job;
 use Modules\Job\Models\JobBatch;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-
 use function Safe\json_decode;
 use function Safe\json_encode;
 
@@ -17,7 +16,7 @@ function uniqueJobBatchId(string $prefix = 'batch'): string
 }
 
 it('can create job batch with basic information', function (): void {
-    /** @var TestCase $this */
+        /** @var TestCase $this */
     $batchId = uniqueJobBatchId('basic');
     $batchData = [
         'id' => $batchId,
@@ -52,7 +51,7 @@ it('can create job batch with basic information', function (): void {
 });
 
 it('can manage batch job progression', function (): void {
-    /** @var TestCase $this */
+        /** @var TestCase $this */
     $batch = JobBatch::create([
         'id' => uniqueJobBatchId('progression'),
         'name' => 'Test progressione',
@@ -75,7 +74,7 @@ it('can manage batch job progression', function (): void {
 });
 
 it('can handle batch job failures', function (): void {
-    /** @var TestCase $this */
+        /** @var TestCase $this */
     $batch = JobBatch::create([
         'id' => uniqueJobBatchId('failure'),
         'name' => 'Test fallimenti',
@@ -100,7 +99,7 @@ it('can handle batch job failures', function (): void {
 });
 
 it('can manage batch completion status', function (): void {
-    /** @var TestCase $this */
+        /** @var TestCase $this */
     $batch = JobBatch::create([
         'id' => uniqueJobBatchId('completion'),
         'name' => 'Test completamento',
@@ -124,7 +123,7 @@ it('can manage batch completion status', function (): void {
 });
 
 it('can handle batch cancellation', function (): void {
-    /** @var TestCase $this */
+        /** @var TestCase $this */
     $batch = JobBatch::create([
         'id' => uniqueJobBatchId('cancellation'),
         'name' => 'Test cancellazione',
@@ -145,7 +144,7 @@ it('can handle batch cancellation', function (): void {
 });
 
 it('can manage batch options and configuration', function (): void {
-    /** @var TestCase $this */
+        /** @var TestCase $this */
     $options = [
         'priority' => 'high',
         'notify_on_completion' => true,
@@ -167,12 +166,12 @@ it('can manage batch options and configuration', function (): void {
 
     $storedOptions = $batch->options?->all() ?? [];
     Assert::assertSame($options, $storedOptions);
-    Assert::assertSame('high', $storedOptions['priority']);
+    Assert::assertArrayHasKey('priority', $storedOptions);
     Assert::assertArrayHasKey('notify_on_completion', $storedOptions);
 });
 
 it('can calculate batch progress percentage', function (): void {
-    /** @var TestCase $this */
+        /** @var TestCase $this */
     $batch = JobBatch::create([
         'id' => uniqueJobBatchId('progress'),
         'name' => 'Test progresso',
@@ -192,7 +191,7 @@ it('can calculate batch progress percentage', function (): void {
 });
 
 it('can handle batch job relationships', function (): void {
-    /** @var TestCase $this */
+        /** @var TestCase $this */
     $batch = JobBatch::create([
         'id' => uniqueJobBatchId('relationships'),
         'name' => 'Test relazioni',
@@ -230,7 +229,7 @@ it('can handle batch job relationships', function (): void {
 });
 
 it('can manage batch cleanup and maintenance', function (): void {
-    /** @var TestCase $this */
+        /** @var TestCase $this */
     $batch = JobBatch::create([
         'id' => uniqueJobBatchId('cleanup'),
         'name' => 'Test pulizia',
@@ -249,7 +248,7 @@ it('can manage batch cleanup and maintenance', function (): void {
 });
 
 it('can handle batch retry logic', function (): void {
-    /** @var TestCase $this */
+        /** @var TestCase $this */
     $batch = JobBatch::create([
         'id' => uniqueJobBatchId('retry'),
         'name' => 'Test retry',
@@ -266,7 +265,7 @@ it('can handle batch retry logic', function (): void {
 
     Assert::assertSame(3, $batch->failed_jobs);
     $retryOptions = $batch->options?->all() ?? [];
-    Assert::assertSame(true, $retryOptions['retry_failed_jobs'] ?? null);
+    Assert::assertTrue($retryOptions['retry_failed_jobs'] ?? false);
     // Simula retry dei job falliti
     $batch->update([
         'pending_jobs' => 3,
@@ -281,7 +280,7 @@ it('can handle batch retry logic', function (): void {
 });
 
 it('can handle batch notification settings', function (): void {
-    /** @var TestCase $this */
+        /** @var TestCase $this */
     $batch = JobBatch::create([
         'id' => uniqueJobBatchId('notification'),
         'name' => 'Test notifiche',
@@ -298,14 +297,14 @@ it('can handle batch notification settings', function (): void {
     ]);
 
     $options = $batch->options?->all() ?? [];
-    Assert::assertSame(true, $options['notify_on_completion'] ?? null);
-    Assert::assertSame(true, $options['notify_on_failure'] ?? null);
+    Assert::assertTrue($options['notify_on_completion'] ?? false);
+    Assert::assertTrue($options['notify_on_failure'] ?? false);
     Assert::assertSame('admin@example.com', $options['notification_email'] ?? null);
     Assert::assertSame('https://hooks.slack.com/...', $options['notification_slack'] ?? null);
 });
 
 it('can handle batch bulk operations', function (): void {
-    /** @var TestCase $this */
+        /** @var TestCase $this */
     // Crea un batch di batch per testare operazioni bulk
     $batchList = [];
     $priorities = ['active', 'completed', 'failed'];
@@ -332,7 +331,7 @@ it('can handle batch bulk operations', function (): void {
 });
 
 it('can validate batch integrity', function (): void {
-    /** @var TestCase $this */
+        /** @var TestCase $this */
     // Test con batch valido
     $validBatch = JobBatch::create([
         'id' => uniqueJobBatchId('valid'),

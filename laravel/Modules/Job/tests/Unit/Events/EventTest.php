@@ -14,10 +14,6 @@ use function Safe\file_get_contents;
 uses(TestCase::class);
 
 describe('Event', function () {
-    it('can be instantiated', function () {
-        $event = new class extends Event {};
-        Assert::assertInstanceOf(Event::class, $event);
-    });
 
     it('uses Dispatchable trait', function () {
         $traits = class_uses(Event::class);

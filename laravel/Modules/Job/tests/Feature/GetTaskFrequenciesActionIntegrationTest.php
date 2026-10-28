@@ -67,7 +67,7 @@ describe('GetTaskFrequenciesAction Integration', function () {
 
     it('integrates with Laravel service container', function () {
         $actionFromContainer = app(GetTaskFrequenciesAction::class);
-        Assert::assertInstanceOf(GetTaskFrequenciesAction::class, $actionFromContainer);
+        Assert::assertSame(GetTaskFrequenciesAction::class, $actionFromContainer::class);
     });
 
     it('handles configuration changes dynamically', function () {
@@ -103,7 +103,7 @@ describe('GetTaskFrequenciesAction Integration', function () {
         Assert::assertSame('string_value', $result['string_key']);
         Assert::assertSame(['nested', 'array'], $result['another_key']);
         Assert::assertSame(123, $result['numeric_key']);
-        Assert::assertSame(true, $result['boolean_key']);
+        Assert::assertTrue($result['boolean_key']);
     });
 
     it('preserves array key types', function () {

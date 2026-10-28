@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Zero Theme — Mappa Graphify"
 type: guide
@@ -6,9 +5,15 @@ tags: [theme, zero, graphify]
 created: 2026-08-03
 updated: 2026-08-03
 qmd: "zero theme zero theme   mappa graphify"
+id: zero-docs-bmad-graphify-map
+slug: graphify-map
+description: "Mappa Graphify del tema Zero: cosa fornisce, architettura essenziale e punti di ingresso."
+document_type: guide
+category: documentation
+status: active
+issues: []
+discussions: []
 ---
-=======
->>>>>>> laraxot/dev
 # Zero Theme — Mappa Graphify
 
 **Versione:** 1.0.0 | **Tema:** Zero | **Data:** 2026-08-02

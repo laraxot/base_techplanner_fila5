@@ -212,6 +212,7 @@ phpmd*
 rector.php
 phpmd.ruleset.xml
 phpmd.ruleset.xml.bak
+# graphify-out: generated AST/knowledge graph — never commit (no git-lfs; rebuild with graphify update)
 graphify-out/
 docs/_archive
 
@@ -227,7 +228,6 @@ phpinsights.php
 .windsurf~*
 
 # Cartelle vietate nella root del modulo (direttiva root-cleanup)
-/graphify-out/
 /tools/
 /.agents/
 /.claude/
@@ -235,7 +235,6 @@ phpinsights.php
 /.opencode/
 /tests/graphify-out/
 bashscripts
-graphify-out
 tools
 scripts
 .agents

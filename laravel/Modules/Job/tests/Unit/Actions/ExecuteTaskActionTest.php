@@ -14,10 +14,6 @@ use function Safe\file_get_contents;
 uses(TestCase::class);
 
 describe('ExecuteTaskAction', function (): void {
-    test('can be instantiated', function (): void {
-        $action = new ExecuteTaskAction;
-        Assert::assertInstanceOf(ExecuteTaskAction::class, $action);
-    });
 
     test('has correct method signature', function (): void {
         $reflection = new \ReflectionClass(ExecuteTaskAction::class);

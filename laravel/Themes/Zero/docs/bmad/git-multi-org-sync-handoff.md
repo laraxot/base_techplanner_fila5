@@ -10,11 +10,14 @@ module: "Zero"
 issues:
   - "https://github.com/provtv/theme_zero_fila5/issues/12"
 discussions:
-<<<<<<< HEAD
   - "https://github.com/provtv/<repo progetto>/discussions/204"
-=======
-  - "https://github.com/provtv/base_ptv_fila5/discussions/204"
->>>>>>> laraxot/dev
+id: zero-docs-bmad-git-multi-org-sync-handoff
+slug: git-multi-org-sync-handoff
+description: "Allineare questo owner ai remote raggiungibili (0 0, working tree clean) e documentare decisioni di sessione 2026-07-21."
+document_type: coordination
+category: git-workflow
+status: active
+qmd: "handoff multi-org sync (story-003)"
 ---
 
 # Handoff — multi-org sync (STORY-003)
@@ -32,15 +35,9 @@ Un tree dirty o un remote dietro/avanti **non** è sincronizzato, anche se l’a
 | Tipo | URL |
 |------|-----|
 | Issue owner | https://github.com/provtv/theme_zero_fila5/issues/12 |
-<<<<<<< HEAD
 | Discussion | https://github.com/provtv/<repo progetto>/discussions/204 |
 | Hub base issue | https://github.com/provtv/<repo progetto>/issues/203 |
 | Hub base discussion | https://github.com/provtv/<repo progetto>/discussions/204 |
-=======
-| Discussion | https://github.com/provtv/base_ptv_fila5/discussions/204 |
-| Hub base issue | https://github.com/provtv/base_ptv_fila5/issues/203 |
-| Hub base discussion | https://github.com/provtv/base_ptv_fila5/discussions/204 |
->>>>>>> laraxot/dev
 | Story monorepo | `docs/stories/STORY-003-multi-org-sync-geo-boundary-bashscripts.md` |
 
 ## Regole rapide
@@ -56,17 +53,14 @@ Tema: sync multi-org + handoff docs.
 
 ### Playbook push dual-remote (2026-07-22)
 
-<<<<<<< HEAD
-=======
 Se unpack fallisce → `git push --no-thin`. Se GH008 / LFS missing e un remote sibling ha già il tip → `git lfs fetch <sibling> --all` + `git lfs push <target> --all` + push.
 Canon (caso UI `b874935`): [../../../Modules/UI/docs/wiki/troubleshooting/git-push-lfs-missing-objects.md](../../../Modules/UI/docs/wiki/troubleshooting/git-push-lfs-missing-objects.md).
 Forward-only: niente reset/squash/force per aggirare LFS.
->>>>>>> laraxot/dev
 
 ### Caso User 2026-07-23 (unrelated)
 
 `merge-base` vuoto vs un org → STOP. User: laraxot `3ea7273a` OK; provtv unrelated.
-[../../../Modules/User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md](../../../Modules/User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md).
+[../../../Modules/User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md](../../../../Modules/User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md).
 
 ### Sync 2026-07-23 (batch 5-item)
 

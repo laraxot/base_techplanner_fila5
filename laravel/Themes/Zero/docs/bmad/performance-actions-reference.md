@@ -6,12 +6,18 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "performance actions reference"
 related:
-<<<<<<< HEAD
-=======
   - "./00-index.md"
->>>>>>> laraxot/dev
-  - "./00-index.md"
+id: zero-docs-bmad-performance-actions-reference
+slug: performance-actions-reference
+description: "Questo documento spiega cosa deve sapere il tema Zero dell'action"
+document_type: guide
+category: performance
+status: active
+issues: []
+discussions: []
 ---
+
+> Nota di verifica 2026-10-20 (docs-temi): questa pagina cita il modulo `Performance`, che non esiste in `laravel/Modules` di questo repository (controllato con `ls`). Il contenuto viene da un altro progetto della famiglia Laraxot e non e' stato riscritto: leggilo come pattern di riferimento, non come descrizione di codice presente. I link verso quei moduli non risolvono.
 
 # Performance actions reference
 
@@ -101,7 +107,7 @@ ridefinirlo.
 - [Documentazione modulo Performance](../../Modules/Performance/docs/action-update-gg-presenza-dalal.md)
 - [Documentazione modulo Performance](../../../laravel/Modules/Performance/docs/action-update-gg-presenza-dalal.md)
 - [Documentazione modulo Performance](../../Modules/Performance/docs/action-update-gg-presenza-dalal.md)
-- [README tema Zero](./readme.md)
+- [README tema Zero](./theme-overview.md)
 - [Index documentazione tema Zero](./index.md)
 
 ## UpdatepercParttimepondDalal
@@ -216,5 +222,5 @@ TextColumn::make('gg_anno')
 - [Documentazione modulo Performance - giorni presenza](../../Modules/Performance/docs/action-update-gg-presenza-dalal.md)
 - [Documentazione modulo Performance - giorni anno](../../Modules/Performance/docs/action-update-gg-anno.md)
 - [Documentazione modulo Performance - part-time ponderato](../../Modules/Performance/docs/action-update-perc-parttimepond-dalal.md)
-- [README tema Zero](./readme.md)
+- [README tema Zero](./theme-overview.md)
 - [Index documentazione tema Zero](./index.md)

@@ -7,6 +7,7 @@ tags: [bmad, documentation]
 created: 2026-10-06
 updated: 2026-10-06
 qmd: "bmad-note"
+status: active
 ---
 
 # Seo — BMAD Status

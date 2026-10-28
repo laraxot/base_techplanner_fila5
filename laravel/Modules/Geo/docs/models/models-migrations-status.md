@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "models migrations status"
 issues: []
 discussions: []
+status: superseded
+superseded_by: ../models-migrations-status.md
 ---
 
 # Geo — Stato Modelli / Migration / Seeder / Factory
@@ -64,6 +66,6 @@ Tutte le migration seguono lo stile `XotBaseMigration` (forward-only): schema in
 ## Vincolo dipendenze (nota, fuori scope)
 
 Regola: `Modules/UI` NON deve importare `Modules\Geo\*` (direzione consentita: Geo → UI).
-Rilevata **violazione preesistente** (non introdotta qui, non modificabile in questo task limitato a Geo):
-`Modules/UI/app/Filament/Forms/Components/LocationSelector.php:11` → `use Modules\Geo\Models\Comune;`.
+La violazione preesistente (`LocationSelector` in UI con `use Modules\Geo\Models\Comune;`) e' risolta:
+il componente vive ora in `Modules/Geo/app/Filament/Forms/Components/LocationSelector.php`.
 Nessuna dipendenza inversa introdotta da queste modifiche.

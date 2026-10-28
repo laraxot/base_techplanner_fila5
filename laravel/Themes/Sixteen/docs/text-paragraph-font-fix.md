@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "text paragraph font fix"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Text-Paragraph Font Fix
@@ -85,4 +86,4 @@ npm run build && npm run copy
 
 ## See Also
 - [CSS/JS Parity Phase](../css-js-parity.md)
-- [Bootstrap Italia Classes](../../resources/css/components/bootstrap-italia-classes.css)
+- [Bootstrap Italia Classes](../resources/css/components/bootstrap-italia-classes.css)

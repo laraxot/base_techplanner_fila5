@@ -1,3 +1,21 @@
+---
+id: zero-docs-archive-00-index
+slug: 00-index
+title: "00 index"
+description: "Zero is a minimal theme variant providing core layout and styling structures without heavy customization."
+document_type: index
+type: index
+category: documentation
+status: archived
+tags: []
+created: "2026-10-08"
+updated: "2026-10-08"
+qmd: "00 index"
+issues: []
+discussions: []
+canonical: ../bmad/00-index.md
+---
+
 **Path**: `laravel/Themes/Zero/docs/`  
 **Last updated**: 2026-06-30
 

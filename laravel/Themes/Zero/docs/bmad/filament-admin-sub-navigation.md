@@ -7,6 +7,14 @@ updated: 2026-08-05
 qmd: "filament admin record sub navigation theme ownership"
 related:
   - "./00-index.md"
+id: zero-docs-bmad-filament-admin-sub-navigation
+slug: filament-admin-sub-navigation
+description: "Le tab che compaiono sopra una pagina di record (Modifica, Compila, Assenze e simili) sono"
+document_type: reference
+category: ui-frontend
+status: active
+issues: []
+discussions: []
 ---
 
 # Sub navigation del pannello admin

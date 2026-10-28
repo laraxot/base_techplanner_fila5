@@ -12,9 +12,10 @@ discussions:
   - "https://github.com/laraxot/theme_sixteen_fila5/discussions/55"
 related:
   - ./ai-harness-theme-sixteen.md
-  - ../../../docs/wiki/concepts/second-brain-operating-model.md
+  - ../../../../../../docs/wiki/concepts/second-brain-operating-model.md
   - ../../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
   - ../../../../../../bashscripts/tools/prompts/llm-wiki.txt
+status: draft
 ---
 
 # Second Brain Theme Boundary

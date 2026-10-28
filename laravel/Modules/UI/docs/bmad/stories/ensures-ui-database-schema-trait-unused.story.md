@@ -7,7 +7,10 @@ status: done
 related:
   - ../../../../Xot/docs/stories/17.1.phpstan-modules-202-errors-fix.story.md
   - ../../wiki/concepts/testing.md
-  - ../../../../../docs/wiki/memories/ensures-ui-database-schema-trait-deleted.md
+  - ../../../../../../docs/wiki/memories/ensures-ui-database-schema-trait-deleted.md
+updated: 2026-10-15
+tags: [docs, ui, bmad]
+qmd: "ensures-ui-database-schema-trait-unused ui"
 ---
 
 # ensures-ui-database-schema-trait-unused

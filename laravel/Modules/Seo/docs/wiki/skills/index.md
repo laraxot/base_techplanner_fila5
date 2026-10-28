@@ -8,15 +8,16 @@ created: 2026-05-11
 updated: 2026-05-11
 tags: [skills, index, on-demand]
 related:
-  - ../rules/00-TRIGGER_MAP.md
-  - ../rules/on-demand-pattern.md
+  - ../rules/00-TRIGGER_MAP.md  # target mancante, verificato 2026-10-08
+  - ../rules/on-demand-pattern.md  # target mancante, verificato 2026-10-08
+status: active
 ---
 
 # Skills Index
 
 Le Skills progettuali vivono qui, nel wiki del Module **Seo**, e vengono caricate **on-demand**.
 
-> Vedi anche → [Trigger Map](../rules/00-TRIGGER_MAP.md)
+> Vedi anche → [Trigger Map](../rules/00-TRIGGER_MAP.md) _(target mancante, verificato 2026-10-08)_
 
 ## Regola
 
@@ -37,7 +38,7 @@ Le Skills progettuali vivono qui, nel wiki del Module **Seo**, e vengono caricat
 
 - La sorgente di verita' per le Skills e' sempre il wiki locale
 - Non embeddare Skills nei prompt di avvio
-- Per Skills globali, consulta il [wiki root](../../docs/wiki/skills/INDEX.md)
+- Per Skills globali, consulta il [wiki root](../../../../../../docs/wiki/skills/INDEX.md)
 
 ## Aggiungere una Nuova SKILLS
 

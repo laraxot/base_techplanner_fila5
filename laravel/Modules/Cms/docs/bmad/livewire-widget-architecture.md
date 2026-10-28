@@ -1,11 +1,4 @@
 ---
-qmd: "livewire-widget-architecture"
-issues: []
-discussions: []
-title: "Livewire Widget Architecture"
----
-
----
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
@@ -17,6 +10,7 @@ type: architecture
 module: Cms
 related:
   - ./livewire-widget-prd.md
+status: draft
 ---
 
 # Architecture Cms

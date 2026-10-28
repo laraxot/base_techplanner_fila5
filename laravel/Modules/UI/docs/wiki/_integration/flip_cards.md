@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "flip cards"
 issues: []
 discussions: []
+status: draft
 ---
 
 # flip_cards

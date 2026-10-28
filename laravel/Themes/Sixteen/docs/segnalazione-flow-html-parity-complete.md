@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "segnalazione flow html parity complete"
 issues: []
 discussions: []
+status: superseded
+superseded_by: ticket-flow-html-parity-complete.md
 ---
 
 # Segnalazione Flow — HTML Parity Complete Report
@@ -17,15 +19,6 @@ discussions: []
 **Threshold**: >80% to pass
 
 ---
-
-title: "segnalazione flow html parity complete"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "segnalazione flow html parity complete"
-issues: []
-discussions: []
 ## Results Summary
 
 | # | Page | HTML Parity | Ref Lines | Local Lines | Status |

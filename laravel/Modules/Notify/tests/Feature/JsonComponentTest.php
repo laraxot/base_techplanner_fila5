@@ -19,7 +19,8 @@ describe('Json Component', function (): void {
         $content = File::get($filePath);
         $decoded = json_decode($content, true);
         Assert::assertIsArray($decoded);
-        Assert::assertCount(2, $decoded, 'Il file _components.json non contiene i 2 componenti attesi');
+        $commandFiles = File::glob(dirname($filePath).'/*.php');
+        Assert::assertCount(count($commandFiles), $decoded, 'Il file _components.json non elenca un componente per ogni comando');
 
         $names = [];
         $classes = [];

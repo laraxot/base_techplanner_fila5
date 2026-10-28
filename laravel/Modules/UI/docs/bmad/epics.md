@@ -2,6 +2,11 @@
 bmad_status: active
 scope: ui-docs
 updated: 2026-10-06
+title: "Epics e User Stories - Modulo UI"
+type: note
+status: draft
+tags: [docs, ui, bmad]
+qmd: "epics e user stories - modulo ui ui"
 ---
 
 # Epics e User Stories - Modulo UI

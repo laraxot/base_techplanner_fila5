@@ -10,6 +10,8 @@ discussions: []
 module: theme
 topic: README
 canonical: ../../../../../Themes/docs/shared-components/README-Modules.md
+status: superseded
+superseded_by: ../overviews/README.md
 ---
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/README-Modules.md

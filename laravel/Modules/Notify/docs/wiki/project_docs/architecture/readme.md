@@ -16,6 +16,11 @@ related:
   - ../../notifications/readme.md
   - ../../integrations/readme.md
   - ../../templates/readme.md
+  - ../../index.md
+  - ../../../notifications/readme.md
+  - ../../../integrations/readme.md
+  - ../../../templates/readme.md
+status: draft
 ---
 # Architettura del Sistema
 
@@ -59,6 +64,8 @@ Standard e convenzioni architetturali.
 - [Standard e Convenzioni](./standards/)
 - [Guida Sviluppo](../development/)
 - [Troubleshooting](../troubleshooting/)
+- [Guida Sviluppo](../../../development)
+- [Troubleshooting](../../troubleshooting)
 
 ---
 

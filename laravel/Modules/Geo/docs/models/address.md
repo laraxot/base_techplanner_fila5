@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "address"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Modello Address
@@ -187,7 +188,6 @@ Per dettagli sull'utilizzo della risorsa Filament, vedere la [documentazione di 
 ## Best Practices
 
 - Utilizzare sempre il trait `HasAddress` per modelli che necessitano di indirizzi
-- Per distanza/ordinamento Haversine sul modello Address usare `GeoTrait` (`distance()`, `withDistance`)
 - Preferire l'utilizzo dei metodi accessori per ottenere componenti dell'indirizzo
 - Utilizzare il metodo `toSchemaOrg()` per integrazioni con SEO e schema.org
 - Quando possibile, sfruttare `createFromGoogleMaps()` per creare indirizzi precisi
@@ -196,7 +196,6 @@ Per dettagli sull'utilizzo della risorsa Filament, vedere la [documentazione di 
 ## Riferimenti
 
 - [Trait HasAddress](../traits/hasaddress-implementation.md)
-- [Trait GeoTrait](../traits/geo-trait.md)
 - [Risorse Filament](../filament/address-resource.md)
 - [Schema.org PostalAddress](https://schema.org/PostalAddress)
 - [Pattern Relazioni Polimorfe](../morphs-relationship-patterns.md)

@@ -10,7 +10,6 @@ use PHPUnit\Framework\Assert;
 describe('OrderColumn (Form) — order_column badge with move up/down arrows', function (): void {
     it('can be instantiated with make() using the default name', function (): void {
         $field = OrderColumn::make();
-        Assert::assertInstanceOf(OrderColumn::class, $field);
         Assert::assertSame('order_column', $field->getName());
     });
 

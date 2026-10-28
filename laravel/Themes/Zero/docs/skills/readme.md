@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Skills per il Tema Zero"
 type: index
@@ -6,14 +5,17 @@ tags: [theme, zero, readme]
 created: 2026-07-01
 updated: 2026-09-02
 qmd: "zero theme skills per il tema zero"
+id: zero-docs-skills-readme
+slug: readme
+description: "![Laravel](https://laravel.com/)](https://laravel.com/)"
+document_type: index
+category: documentation
+status: active
+issues: []
+discussions: []
 ---
 # Skills per il Tema Zero
 
-=======
-# Skills per il Tema Zero
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 [![Module](https://img.shields.io/badge/Module-Skills per il Tema Zero-8B0000.svg)]()
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
 [![Filament](https://img.shields.io/badge/Filament-5-ffab00?style=for-the-badge)](https://filamentphp.com/)](https://filamentphp.com/)
@@ -40,16 +42,12 @@ Core module for the FixCity Platform.
 | Lingua | Link |
 |--------|------|
 | 🇮🇹 Presentazione | Questo file (`README.md`) |
-| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
-| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
+| 🇬🇧 Business card | [docs/readme-en.md](../bmad/readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](..) |
 
 ---
 
 **Modulo** `Zero` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 ## Panoramica
 
 Questo documento fornisce informazioni sulle skills disponibili per il tema Zero. Le skills permettono agli agenti AI di specializzarsi in aree specifiche del tema e migliorare la produttivita' nello sviluppo frontend.
@@ -268,7 +266,3 @@ public function getClasses(): string
 ## Conclusione
 
 Le skills per il tema Zero sono fondamentali per mantenere coerenza visiva e qualità del codice nel frontend. Con l'implementazione corretta di queste skills, il team può creare UI moderne, accessibili e performanti che rispettino il design system del tema.
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

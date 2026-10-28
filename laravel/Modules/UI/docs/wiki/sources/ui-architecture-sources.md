@@ -5,6 +5,9 @@ type: source
 created: "2026-04-29T00:00:00Z"
 updated: "2026-04-29T00:00:00Z"
 related:
+status: draft
+tags: [docs, ui, wiki]
+qmd: "ui architecture sources ui"
 ---
 
 # UI Architecture Sources
@@ -15,7 +18,7 @@ related:
 
 - `README.md`
 - `architecture-1.md`
-- `product-strategy-1.md`
+- `product-strategy-documentation-themes.md`
 - `architecture/structure.md`
 
 ## Main Signals

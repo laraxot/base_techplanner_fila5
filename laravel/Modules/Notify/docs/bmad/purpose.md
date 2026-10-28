@@ -1,7 +1,6 @@
 ---
 title: "Notify — scopo del modulo e come raggiungerlo meglio"
 type: concept
-status: active
 created: 2026-09-02
 tags: [notify, purpose, notifiche, template, canali, comunicazione]
 qmd: "notify scopo modulo notifiche template canali email sms comunicazione tracciabilita"
@@ -13,6 +12,8 @@ issues:
 discussions:
   # DA CREARE — vedi sopra.
   - "https://github.com/provtv/module_notify_fila5/discussions/"
+status: superseded
+superseded_by: ../purpose.md
 ---
 
 # Notify — perche' esiste

@@ -19,7 +19,7 @@ describe('Job Providers Coverage', function () {
     describe('JobServiceProvider', function () {
         it('can be instantiated', function () {
             $provider = new JobServiceProvider(app());
-            Assert::assertInstanceOf(JobServiceProvider::class, $provider);
+            Assert::assertSame('Job', $provider->name);
         });
 
         it('has correct name', function () {
@@ -55,7 +55,7 @@ describe('Job Providers Coverage', function () {
     describe('EventServiceProvider', function () {
         it('can be instantiated', function () {
             $provider = new EventServiceProvider(app());
-            Assert::assertInstanceOf(EventServiceProvider::class, $provider);
+            Assert::assertFalse((new \ReflectionClass($provider))->isAbstract());
         });
 
         it('extends BaseEventServiceProvider', function () {
@@ -90,7 +90,7 @@ describe('Job Providers Coverage', function () {
     describe('RouteServiceProvider', function () {
         it('can be instantiated', function () {
             $provider = new RouteServiceProvider(app());
-            Assert::assertInstanceOf(RouteServiceProvider::class, $provider);
+            Assert::assertSame('Job', $provider->name);
         });
 
         it('has correct name', function () {
@@ -120,10 +120,6 @@ describe('Job Providers Coverage', function () {
     });
 
     describe('AdminPanelProvider', function () {
-        it('can be instantiated', function () {
-            $provider = new AdminPanelProvider(app());
-            Assert::assertInstanceOf(AdminPanelProvider::class, $provider);
-        });
 
         it('has module property', function () {
             $provider = new AdminPanelProvider(app());

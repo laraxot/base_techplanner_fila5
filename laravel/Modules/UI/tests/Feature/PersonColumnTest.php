@@ -12,7 +12,6 @@ use PHPUnit\Framework\Assert;
 describe('PersonColumn — controparte di PersonSection', function (): void {
     it('can be instantiated with make() using the default name', function (): void {
         $column = PersonColumn::make();
-        Assert::assertInstanceOf(PersonColumn::class, $column);
         Assert::assertSame('person', $column->getName());
     });
 

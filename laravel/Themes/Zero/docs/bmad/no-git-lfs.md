@@ -4,6 +4,16 @@ type: guideline
 theme: Zero
 updated: 2026-09-01
 qmd: "git lfs vietato gitattributes prototipo binari blob normali zero puntatori immagini"
+id: zero-docs-bmad-no-git-lfs
+slug: no-git-lfs
+description: "Vale per il repo root, per bashscripts/ e per ogni modulo e tema. Questo tema non fa"
+document_type: rule
+category: git-workflow
+status: active
+tags: []
+created: "2026-10-06"
+issues: []
+discussions: []
 ---
 
 # Git LFS non si usa in questo progetto
@@ -91,11 +101,7 @@ CHANGELOG.md export-ignore
 LFS di intervenire. `!filter` annulla per path qualunque `filter.lfs` ereditato.
 
 Serve davvero: su questa macchina `filter.lfs.*` e' installato a livello **system**
-<<<<<<< HEAD
 (`git config --system`) e serve ad altri progetti — `<repo progetto>` ha 38 file
-=======
-(`git config --system`) e serve ad altri progetti — `base_predict_fila5` ha 38 file
->>>>>>> laraxot/dev
 legittimamente in LFS. Non si disinstalla il pacchetto. Cio' che tiene questo monorepo
 fuori da LFS non e' l'assenza del filtro, e' il `!filter` del prototipo.
 

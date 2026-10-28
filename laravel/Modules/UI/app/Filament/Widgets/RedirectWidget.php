@@ -57,6 +57,8 @@ final class RedirectWidget extends XotBaseSchemaWidget
     /**
      * Vista di default per il widget.
      * Può essere sovrascritta dalla configurazione con la chiave 'view'.
+     *
+     * @var view-string
      */
     protected string $view = 'ui::filament.widgets.redirect-widget';
 

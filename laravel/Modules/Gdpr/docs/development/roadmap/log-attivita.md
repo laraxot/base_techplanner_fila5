@@ -10,6 +10,8 @@ discussions: []
 module: theme
 topic: log-attivita
 canonical: ../../../../../Themes/docs/shared-components/.gitkeep
+status: superseded
+superseded_by: backup-dati.md
 ---
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/.gitkeep

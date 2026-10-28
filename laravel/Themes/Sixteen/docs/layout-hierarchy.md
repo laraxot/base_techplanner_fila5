@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "layout hierarchy"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Layout Hierarchy - Sixteen Theme
@@ -17,15 +18,6 @@ discussions: []
 **Related**: [[00-index]], [[components]], [[vite-configuration-rules]]
 
 ---
-
-title: "layout hierarchy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "layout hierarchy"
-issues: []
-discussions: []
 ## 🎯 Overview
 
 The Sixteen theme uses a **layered layout architecture** following **DRY (Don't Repeat Yourself)** and **KISS (Keep It Simple, Stupid)** principles.
@@ -133,12 +125,6 @@ The Sixteen theme uses a **layered layout architecture** following **DRY (Don't 
 **Purpose**: Navigation-specific layouts  
 **Extends**: `x-layouts.main`
 
-#### x-layouts.design-comuni
-**File**: `components/layouts/design-comuni.blade.php`  
-**Purpose**: Design Comuni template (DEPRECATED - use app.blade.php)  
-**Extends**: `x-layouts.main`  
-**Note**: Should be replaced with `<x-layouts.app>` + sections
-
 ---
 
 ## 📁 File Locations
@@ -151,7 +137,8 @@ laravel/Themes/Sixteen/resources/views/components/layouts/
 ├── auth.blade.php             → Protected pages
 ├── guest.blade.php            → Authentication pages
 ├── navigation.blade.php       → Navigation layouts
-└── design-comuni.blade.php    → Design Comuni (legacy)
+├── design-comuni-authenticated.blade.php → Test pages with signed-in chrome
+└── design-comuni-bare.blade.php → Test catalog without shared chrome
 ```
 
 ### Layouts Directory (Traditional Laravel)
@@ -162,7 +149,6 @@ laravel/Themes/Sixteen/resources/views/layouts/
 ├── auth.blade.php             → Auth pages
 ├── guest.blade.php            → Guest pages
 ├── navigation.blade.php       → Navigation
-├── design-comuni.blade.php    → Design Comuni
 ├── bootstrap-italia-1to1.blade.php → Exact Bootstrap replica
 └── bootstrap-italia-exact.blade.php → Bootstrap exact
 ```
@@ -175,7 +161,7 @@ laravel/Themes/Sixteen/resources/views/layouts/
 
 ### Example 1: Public Page with Sections
 ```blade
-{{-- pages/tests/homepage.blade.php --}}
+{{-- pages/tests/[slug].blade.php: vale per /it/tests/{slug} --}}
 <x-layouts.app>
     <x-section slug="header" />
     <main id="main-container">
@@ -184,6 +170,12 @@ laravel/Themes/Sixteen/resources/views/layouts/
     <x-section slug="footer" tpl="full" />
 </x-layouts.app>
 ```
+
+`homepage`, `segnalazione-dettaglio`, `segnalazioni-elenco` e ogni altro
+segmento dopo `/tests/` sono valori di slug, non nomi di file Blade. Non creare
+quindi `pages/tests/homepage.blade.php`, `pages/tests/segnalazioni/` o altri
+sotto-router semantici: il CMS risolve `tests.<slug>` dal JSON tenant e i
+blocchi riutilizzabili appartengono a `resources/views/components/blocks/`.
 
 ### Example 2: Custom Structure
 ```blade

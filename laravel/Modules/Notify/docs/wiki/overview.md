@@ -1,11 +1,13 @@
 ---
-title: "Notify Module — Document"
-type: docs/bmad
-status: active
-module: Notify
-scope: documentation
-bmad_version: 1.0
-updated: 2026-10-06
+title: "overview"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "overview"
+issues: []
+discussions: []
+status: draft
 ---
 
 # Wiki Overview
@@ -15,7 +17,6 @@ updated: 2026-10-06
 > **Updated**: 2026-04-15
 
 ---
-
 ## What is This Wiki?
 
 This is a **Karpathy-style LLM Wiki** — a persistent, LLM-maintained knowledge base where knowledge compounds over time. Instead of re-deriving answers from raw documents per query, the LLM incrementally builds structured, interlinked markdown files.

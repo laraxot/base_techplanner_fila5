@@ -9,7 +9,15 @@ related:
   - "./schema.md"
 
   - "./bmad-method.md"
-  - "./log.md"
+  - "../log.md"
+id: zero-docs-wiki-concepts-bmad-method
+slug: bmad-method
+description: "BMAD non e' un generatore casuale di codice: e' il processo di delivery. Prima si sceglie il track, poi si produce il minimo artefatto utile, poi si implementa con story..."
+document_type: guide
+category: documentation
+status: active
+issues: []
+discussions: []
 ---
 
 # BMAD Method v6.3 operativo nel progetto

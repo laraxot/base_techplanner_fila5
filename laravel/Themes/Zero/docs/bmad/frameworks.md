@@ -5,6 +5,14 @@ tags: [theme, zero, frameworks, caveman, graphify, bmad, headroom, ponytail]
 created: 2026-09-02
 updated: 2026-09-02
 qmd: "zero theme framework integration notes"
+id: zero-docs-bmad-frameworks
+slug: frameworks
+description: "Integration guidelines for caveman, graphify, bmad-method, headroom, ponytail."
+document_type: guide
+category: architecture
+status: active
+issues: []
+discussions: []
 ---
 # Zero — Framework Integration Notes
 

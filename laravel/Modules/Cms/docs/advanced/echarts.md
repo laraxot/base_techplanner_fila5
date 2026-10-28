@@ -1,11 +1,4 @@
 ---
-qmd: "echarts"
-issues: []
-discussions: []
-title: "Echarts"
----
-
----
 type: note
 tags: [documentation]
 created: 2026-09-26
@@ -18,6 +11,7 @@ description: Echarts
 extends: _layouts.documentation
 section: content
 path: it/docs/advanced/
+status: draft
 ---
 
 # Echarts {#echarts}

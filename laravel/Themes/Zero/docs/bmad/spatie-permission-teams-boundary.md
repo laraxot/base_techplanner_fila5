@@ -6,11 +6,15 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "spatie permission teams boundary"
 related:
-<<<<<<< HEAD
-=======
   - "./00-index.md"
->>>>>>> laraxot/dev
-  - "./00-index.md"
+id: zero-docs-bmad-spatie-permission-teams-boundary
+slug: spatie-permission-teams-boundary
+description: "Theme Zero must not configure Spatie Permission directly. Team, role, and permission behavior belongs to modules"
+document_type: guide
+category: architecture
+status: active
+issues: []
+discussions: []
 ---
 
 # Spatie Permission teams boundary

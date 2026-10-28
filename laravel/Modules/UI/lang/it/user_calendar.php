@@ -23,7 +23,7 @@ return [
         'delete' => ['label' => 'Elimina', 'confirm' => 'Sei sicuro di voler eliminare questo evento?', 'success' => 'Evento eliminato con successo', 'error' => 'Errore durante l\'eliminazione dell\'evento'],
         'edit' => ['label' => 'Modifica', 'success' => 'Modifiche salvate con successo', 'error' => 'Errore durante il salvataggio delle modifiche'],
         'create' => ['label' => 'Nuovo evento', 'success' => 'Evento creato con successo', 'error' => 'Errore durante la creazione dell\'evento'],
-        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+        'save' => ['label' => 'Salva', 'icon' => 'heroicon-o-check', 'tooltip' => 'Salva'],
     ],
     'validation' => ['required' => 'Questo campo è obbligatorio', 'date' => 'Inserisci una data valida', 'after' => 'La data di fine deve essere successiva alla data di inizio'],
     'label' => 'User Calendar',

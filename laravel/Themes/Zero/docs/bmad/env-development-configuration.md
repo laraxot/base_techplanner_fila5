@@ -6,11 +6,15 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "configurazione envdevelopment - ambiente di sviluppo"
 related:
-<<<<<<< HEAD
-=======
   - "./00-index.md"
->>>>>>> laraxot/dev
-  - "./00-index.md"
+id: zero-docs-bmad-env-development-configuration
+slug: env-development-configuration
+description: "Il file .env.development è la configurazione di sviluppo standard per l'ambiente locale di healthcareapp Fila5 Mono. Questa configurazione è ottimizzata per lo sviluppo rapido..."
+document_type: rule
+category: architecture
+status: active
+issues: []
+discussions: []
 ---
 
 # Configurazione .env.development - Ambiente di Sviluppo
@@ -109,13 +113,8 @@ MAIL_FROM_NAME="${APP_NAME}"
 - **Log Mailer**: Output mail in log per debugging
 - **Array Cache**: Performance ottimizzata per sviluppo rapido
 
-<<<<<<< HEAD
 ### 3. Compatibilità con Laravel 13.x
 - Configurazione conforme alle best practices Laravel 13.x
-=======
-### 3. Compatibilità con Laravel 12.x
-- Configurazione conforme alle best practices Laravel 12.x
->>>>>>> laraxot/dev
 - Variabili d'ambiente ottimizzate per ambiente di sviluppo
 - Supporto completo per tutte le funzionalità di Laravel
 
@@ -224,27 +223,16 @@ DEBUGBAR_ENABLED=true
 LOG_LEVEL=debug
 ```
 
-<<<<<<< HEAD
 ## Compatibilità con Laravel 13.x
 
 ### ✅ Compatibile
 - Tutte le funzionalità Laravel 13.x
-=======
-## Compatibilità con Laravel 12.x
-
-### ✅ Compatibile
-- Tutte le funzionalità Laravel 12.x
->>>>>>> laraxot/dev
 - Configurazione database SQLite standard
 - Supporto completo per Redis
 - Compatibilità con Filament 5.x
 
 ### 🔄 Configurazioni Automatiche
-<<<<<<< HEAD
 - Laravel 13.x riconosce automaticamente SQLite
-=======
-- Laravel 12.x riconosce automaticamente SQLite
->>>>>>> laraxot/dev
 - Configurazione Redis ottimizzata
 - Supporto per tutte le funzionalità di sviluppo
 
@@ -262,7 +250,7 @@ DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=healthcare_app_data
 DB_USERNAME=marco
-DB_PASSWORD=marco
+DB_PASSWORD=<password-locale>
 ```
 
 ### 2. Cache e Queue

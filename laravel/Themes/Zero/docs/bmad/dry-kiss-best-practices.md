@@ -7,6 +7,14 @@ updated: 2026-07-14
 qmd: "dry kiss best practices - tema zero"
 related:
   - "./00-index.md"
+id: zero-docs-bmad-dry-kiss-best-practices
+slug: dry-kiss-best-practices
+description: "Principi DRY e KISS applicati al tema Zero, con esempi e linee guida."
+document_type: how-to
+category: static-analysis
+status: active
+issues: []
+discussions: []
 ---
 
 # DRY & KISS Best Practices - Tema Zero

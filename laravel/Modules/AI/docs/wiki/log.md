@@ -1,6 +1,13 @@
 ---
-title: LOG
-module: AI
+title: "log"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "log"
+issues: []
+discussions: []
+status: draft
 ---
 
 ## [2026-07-24] architecture | Ollama Actions ownership in AI
@@ -82,8 +89,8 @@ module: AI
 - `GetPredictionFallbackTemplatesAction` espone template con ` list<array{...}>`, non `array<string,mixed>`.
 - `CastScalarToStringListAction::execute()` usa return nativo `array` con PHPDoc `list<string>`: `list<string>` non e un return type PHP valido.
 
-## [2026-09-24] git | rebase shallow no-op risolto con merge
+## [2026-10-14] docs | verifica degli ingressi contro il codice
 
-- Rebase `dev` → `laraxot/dev` fermo con 82 conflitti add/add: i commit replicati erano snapshot senza parent (clone shallow). Tree di `dev` e `laraxot/dev` identici (`a722379`), quindi `git rebase --abort && git merge laraxot/dev`, senza cambi di contenuto.
-- Regola: prima di risolvere a mano dei conflitti "AA" di massa, confrontare `git rev-parse A^{tree} B^{tree}`.
-- PHPStan `Modules/AI` (level max): 0 errori, dopo aver rimosso i marker committati in User/Gdpr che bloccavano il bootstrap.
+- Riscritti `README.md` (non e' un modulo MCP) e `00-INDEX.md` (indice canonico, con sezione Piani). `index.md` aggiornato; `ollama-actions-moved-from-xot.md` e `00-index.md` segnati `stale`, `INDEX.md` `stub`.
+- Verificato: nessun codice MCP nel modulo, `laravel/routes/ai.php` solo commenti; nessun consumatore fuori da `config/app.php`; copie Ollama ancora in Xot; 11 rotte Filament `ai/admin`; Pest si ferma con `Cannot redeclare class OpenAI`.
+- Link rotti negli indici (criterio audit): 21 -> 0; blocchi spuri: 168 righe rimosse in 35 file. Story: `stories/docs-ai-verifica-ingressi.story.md`.

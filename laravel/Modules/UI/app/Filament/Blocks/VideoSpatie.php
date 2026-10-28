@@ -23,11 +23,7 @@ final class VideoSpatie
             ->schema([
                 Hidden::make('img_uuid')
                     ->default(Str::uuid()->toString(...))
-                    ->formatStateUsing(static function (mixed $state): string {
-                        $value = $state ?? Str::uuid()->toString();
-
-                        return \is_string($value) ? $value : Str::uuid()->toString();
-                    })
+                    ->formatStateUsing(static fn (?string $state): string => $state ?? Str::uuid()->toString())
                     ->live(),
                 // ->required(),
 

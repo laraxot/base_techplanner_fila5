@@ -17,14 +17,10 @@ use Filament\Schemas\Schema;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Log;
-use Kreait\Firebase\Contract\Messaging;
-use Kreait\Firebase\Messaging\CloudMessage;
-use Kreait\Firebase\Messaging\Notification as FirebaseNotification;
 use Modules\Notify\Datas\FirebaseNotificationData;
 use Modules\Notify\Filament\Clusters\Test;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Pages\XotBasePage;
-use Webmozart\Assert\Assert;
 
 /**
  * @property Schema $pushForm
@@ -108,31 +104,10 @@ class SendFirebasePushNotificationPage extends XotBasePage
         $data = $this->pushForm->getState();
 
         try {
-            // Creare i dati della notifica Firebase
-            $notificationData = FirebaseNotificationData::from([
-                'type' => $data['notification_type'] ?? 'message',
-                'title' => $data['title'] ?? '',
-                'body' => $data['body'] ?? '',
-                'data' => $data['custom_data'] ?? []]);
-
-            // Inviare la notifica push al token indicato (FCM via kreait/laravel-firebase)
-            $token = SafeStringCastAction::cast($data['token'] ?? '');
-            Assert::stringNotEmpty($token, 'Il token del dispositivo non può essere vuoto');
-
-            $message = CloudMessage::new()
-                ->withToken($token)
-                ->withNotification(FirebaseNotification::create(
-                    $notificationData->title,
-                    $notificationData->body,
-                    SafeStringCastAction::cast($data['image_url'] ?? '') ?: null,
-                ))
-                ->withData($this->getMessageData($notificationData));
-
-            if (! empty($data['high_priority'])) {
-                $message = $message->withHighestPossiblePriority();
-            }
-
-            app(Messaging::class)->send($message);
+            // TODO: Implementare PushNotification class
+            // Inviare la notifica push
+            // Notification::route('firebase', $data['token'])
+            //     ->notify(new PushNotification($notificationData));
 
             // Notificare il successo
             FilamentNotification::make()

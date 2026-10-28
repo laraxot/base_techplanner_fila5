@@ -1,11 +1,18 @@
 ---
+issues: []
+discussions: []
 title: "Tenant {{TYPE^}} LLM Wiki Agent Instructions"
-type: reference
-tags: [wiki, no-frontmatter-fix]
-created: 2026-10-06
-updated: 2026-10-06
+module: "Tenant"
+type: concept
+tags: [AGENTS]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "agents"
+related:
+  - "../phpstan-corrections-january.md"
+status: superseded
+superseded_by: ../llm-wiki/AGENTS.md
 ---
-
 # Tenant {{TYPE^}} LLM Wiki Agent Instructions
 
 > **Module/Theme:** Tenant
@@ -30,9 +37,6 @@ You are the **Tenant Wiki Maintainer**. Your job is to:
 
 ```yaml
 ---
-qmd: "AGENTS"
-issues: []
-discussions: []
 title: "Page Title"
 type: concept|entity|source|comparison|decision|troubleshooting
 sources: ["raw/articles/filename.md"]

@@ -1,5 +1,18 @@
 ---
 title: No AI/tool scaffold directories in theme tree
+id: zero-docs-bmad-no-ai-tool-scaffold-dirs
+slug: no-ai-tool-scaffold-dirs
+description: "Rimosse in questo tema (dove presenti): scripts/, bashscripts/, test-results/, docs/archive/, .devcontainer/. Aggiunte al .gitignore del tema."
+document_type: guide
+type: guide
+category: static-analysis
+status: active
+tags: []
+created: "2026-10-06"
+updated: "2026-10-08"
+qmd: "no ai/tool scaffold directories in theme tree"
+issues: []
+discussions: []
 ---
 
 # Perché queste cartelle non devono esistere qui

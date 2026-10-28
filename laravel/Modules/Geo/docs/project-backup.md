@@ -10,6 +10,8 @@ discussions: []
 module: theme
 topic: project-backup
 canonical: ../../../Themes/docs/shared-components/PROJECT.md
+status: superseded
+superseded_by: project.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/PROJECT.md

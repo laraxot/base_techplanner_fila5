@@ -4,6 +4,16 @@ type: guideline
 theme: Zero
 updated: 2026-09-29
 qmd: "tabella filament resource table class getTableFilters XotBaseResourceTable HasXotTable list page zero"
+id: zero-docs-bmad-filament-table-architecture
+slug: filament-table-architecture
+description: "Il modulo User applica questa regola anche alle Resource di identità: le pagine"
+document_type: rule
+category: architecture
+status: active
+tags: []
+created: "2026-10-06"
+issues: []
+discussions: []
 ---
 
 # La tabella si configura nella Table class, non nella pagina

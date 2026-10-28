@@ -1,10 +1,30 @@
+---
+id: zero-docs-wiki-how-to-mysql-remote
+slug: mysql-remote
+title: "MySQL/MariaDB Remoto - Configurazione"
+description: "Operativo - connessione remota confermata da esterno."
+document_type: how-to
+type: how-to
+category: database
+status: active
+tags: []
+created: "2026-10-08"
+updated: "2026-10-20"
+qmd: "mysql/mariadb remoto - configurazione"
+issues: []
+discussions: []
+---
+
 # MySQL/MariaDB Remoto — Configurazione
 
 **Data:** 2026-09-10
 **IP macchina:** 192.168.1.35
 **Utente:** marco
-**Password:** marco
+**Password:** rimossa dalla docs il 2026-10-20 (era in chiaro); usare il valore del file `.env` della macchina
 **Host:** % (qualsiasi IP)
+
+> Nota di verifica 2026-10-20: la password era scritta in chiaro e debole. E' stata tolta da questo file,
+> ma resta nella cronologia git del repository del tema: va ruotata sul server MariaDB.
 
 ## Stato
 
@@ -15,7 +35,7 @@
 | Parametro | Valore | Dove |
 |-----------|--------|------|
 | bind-address | 0.0.0.0 | `/etc/mysql/mariadb.conf.d/50-server.cnf` |
-| utente | marco@% | `CREATE USER 'marco'@'%' IDENTIFIED BY 'marco'` |
+| utente | marco@% | `CREATE USER 'marco'@'%' IDENTIFIED BY '<password>'` |
 | privilegi | ALL PRIVILEGES | `GRANT ALL PRIVILEGES ON *.* TO 'marco'@'%' WITH GRANT OPTION` |
 | firewall | UFW inattivo | Nessun blocco porta 3306 |
 
@@ -25,13 +45,13 @@
 # Da qualsiasi IP nella rete:
 mysql -h 192.168.1.35 -u marco -p
 
-# Test locale:
-mysql -h 192.168.1.35 -u marco -pmarco -e "SELECT VERSION(), CURRENT_USER();"
+# Test locale (la password viene chiesta, mai scritta sulla riga di comando):
+mysql -h 192.168.1.35 -u marco -p -e "SELECT VERSION(), CURRENT_USER();"
 ```
 
 ## Note di sicurezza
 
-- Utente `marco@%` con password `marco` — accetta connessioni da **qualsiasi** IP
+- Utente `marco@%` con password debole (da ruotare) e `ALL PRIVILEGES ... WITH GRANT OPTION` — accetta connessioni da **qualsiasi** IP
 - UFW inattivo — nessun filtro firewall sulla porta 3306
 - Per ambiente produzione: usare password forte, host specifici, SSL/TLS
 

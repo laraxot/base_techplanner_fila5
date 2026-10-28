@@ -7,6 +7,14 @@ updated: 2026-07-14
 qmd: "product roadmap - theme zero"
 related:
   - "./00-index.md"
+id: zero-docs-bmad-product-roadmap
+slug: product-roadmap
+description: "Become the minimalist's choice for Laravel applications - proving that less truly is more, with the smallest footprint, cleanest code, and maximum developer control."
+document_type: guide
+category: product-planning
+status: active
+issues: []
+discussions: []
 ---
 
 # Product Roadmap - Theme Zero

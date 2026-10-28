@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "login analysis summary"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Riepilogo Analisi Pagina Login - Problemi e Soluzioni
@@ -240,5 +241,5 @@ Una pagina di login **pulita**, **accessibile**, **performante** e **conforme al
 - [Piano Rifattorizzazione](login-refactoring-plan.md)
 - [AGID Login Implementation](agid-login-implementation.md)
 - [Layout Usage Patterns](layout-usage-patterns.md)
-- [Vite Theme Integration](vite-theme-integration.md)
+- [Vite Theme Integration](build/vite-theme-integration.md)
 

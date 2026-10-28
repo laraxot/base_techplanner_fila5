@@ -16,6 +16,11 @@ related:
   - ../conventions/README.md
   - ../rules/README.md
   - ../best-practices/naming-conventions.md
+  - ../../conventions/README.md
+  - ../../rules/README.md
+  - ../../best-practices/naming-conventions.md
+status: superseded
+superseded_by: ../../architecture/dto-structure-conventions.md
 ---
 # Convenzioni per la Struttura dei DTO nel Modulo Notify
 

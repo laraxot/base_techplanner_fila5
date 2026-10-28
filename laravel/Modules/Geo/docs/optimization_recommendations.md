@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "optimization recommendations"
 issues: []
 discussions: []
+status: superseded
+superseded_by: optimization-recommendations.md
 ---
 
 # Raccomandazioni di Ottimizzazione - Modulo Geo

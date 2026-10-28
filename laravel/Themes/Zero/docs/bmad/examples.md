@@ -6,11 +6,15 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "esempi di utilizzo - tema zero"
 related:
-<<<<<<< HEAD
-=======
   - "./00-index.md"
->>>>>>> laraxot/dev
-  - "./00-index.md"
+id: zero-docs-bmad-examples
+slug: examples
+description: "Questa sezione fornisce esempi pratici di come utilizzare il Tema Zero in diverse situazioni. Tutti gli esempi sono funzionanti e possono essere utilizzati come punto di..."
+document_type: guide
+category: ui-frontend
+status: active
+issues: []
+discussions: []
 ---
 
 # Esempi di Utilizzo - Tema Zero

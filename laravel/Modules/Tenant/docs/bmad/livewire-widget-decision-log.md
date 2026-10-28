@@ -1,11 +1,17 @@
 ---
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "livewire widget decision log"
+issues: []
+discussions: []
 title: "Decision log — Tenant"
 type: decision-log
 module: Tenant
 related:
   - ./livewire-inventory.md
+status: draft
 ---
-tags: [docs, tenant, bmad]
 
 # Decision log Tenant
 

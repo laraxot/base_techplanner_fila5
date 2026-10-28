@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "missing data classes fixes"
 issues: []
 discussions: []
+status: superseded
+superseded_by: ../missing-data-classes-fixes.md
 ---
 
 # Correzione Classi Data Mancanti in Laraxot

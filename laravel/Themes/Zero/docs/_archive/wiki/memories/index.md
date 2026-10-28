@@ -1,3 +1,21 @@
+---
+id: zero-docs-archive-wiki-memories-index
+slug: index
+title: "Zero Theme - memories Index"
+description: "Indice archiviato delle memorie wiki del tema Zero; il canonico e' wiki/memories/index.md."
+document_type: index
+type: index
+category: documentation
+status: archived
+tags: []
+created: "2026-10-08"
+updated: "2026-10-08"
+qmd: "zero theme - memories index"
+issues: []
+discussions: []
+canonical: ../../../wiki/memories/index.md
+---
+
 # Zero Theme - memories Index
 
 ## Purpose

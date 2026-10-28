@@ -4,9 +4,19 @@ type: documentation
 tags: [module, documentation]
 created: 2026-06-05
 updated: 2026-08-02
+status: draft
+qmd: "documentation notify"
 ---
 
 # Documentation
+
+## Kit BMAD owner (canonico)
+
+- [BMAD Planning](../bmad-planning.md)
+- [BMAD Brainstorming](../bmad-brainstorming.md)
+- [Filament blueprint](./filament-blueprint.md)
+- [Project context](./project-context.md)
+- [Decision log](./decision-log.md)
 
 This directory contains documentation for the Notify module.
 
@@ -52,8 +62,8 @@ Modules\Notify\Models\NotificationTemplateVersion
 
 ## Collegamenti
 
-- [Xot Base](../Xot/docs/) - Core framework
-- [User Module](../User/docs/) - User management integration
+- [Xot Base](../../../Xot/docs) - Core framework
+- [User Module](../../../User/docs) - User management integration
 
 ## Risorse
 
@@ -127,24 +137,24 @@ Supporta template dinamici, allegati binari, multi-canale e integrazione complet
 ### Guide Complete
 
 #### Email System
-- **[Email Attachments Usage](./email-sending/attachments_usage.md)** ⭐  
+- **[Email Attachments Usage](../email-sending/attachments_usage.md)** ⭐  
   Guida completa agli allegati email (path e binary data)
 
-- **[Spatie Mail Templates Deep Dive](./spatie-database-mail-templates-deep-dive.md)**  
+- **[Spatie Mail Templates Deep Dive](../spatie-database-mail-templates-deep-dive.md)**  
   Sistema template email database
 
-- **[Email Layouts Best Practices](./mail-templates/EMAIL_LAYOUTS_BEST_PRACTICES.md)**  
+- **[Email Layouts Best Practices](../mail-templates/email_layouts_best_practices.md)**  
   Best practices layout email
 
 #### Notifications
-- **[Notifications Implementation Guide](./notifications/notifications_implementation_guide.md)**  
+- **[Notifications Implementation Guide](../notifications/notifications_implementation_guide.md)**  
   Come implementare notifiche custom
 
-- **[RecordNotification Usage](./notifications/record-notification.md)**  
+- **[RecordNotification Usage](../notifications/record-notification.md)**  
   Notifiche basate su record Eloquent
 
 #### SMS & WhatsApp
-- **[WhatsApp Provider Architecture](./whatsapp_provider_architecture.md)**  
+- **[WhatsApp Provider Architecture](../whatsapp_provider_architecture.md)**  
   Architettura provider WhatsApp
 
 ---
@@ -324,7 +334,7 @@ Notification::route('mail', 'to@example.com')->notify($notify);
 **Versione**: 1.1  
 **Stato**: PSR-4 compliant, test business logic completati (95% copertura)  
 **Prossimi passi**: Completamento test modelli base  
-**Changelog**: [changelog.md](./CHANGELOG.md)
+**Changelog**: [changelog.md](./CHANGELOG.MD)
 
 ## 🔗 Collegamenti
 
@@ -341,18 +351,18 @@ Notification::route('mail', 'to@example.com')->notify($notify);
 - **[GetPdfContentByRecordAction](../../Xot/docs/actions/pdf-content-generation-technical.md)**  
   Generazione PDF binario da record
 
-- **[PDF Actions](../../Xot/app/Actions/Pdf/)**  
+- **[PDF Actions](../../../Xot/app/Actions/Pdf)**  
   Actions per gestione PDF
 
 ### Documentazione Interna
 
 #### Email System
-- [Email Layouts Best Practices](./mail-templates/EMAIL_LAYOUTS_BEST_PRACTICES.md)
-- [Spatie Mail Templates Structure](./mail-templates/SPATIE_MAIL_TEMPLATES_STRUCTURE.md)
-- [Email Troubleshooting](./email-sending/EMAIL_TROUBLESHOOTING.md)
+- [Email Layouts Best Practices](../mail-templates/email_layouts_best_practices.md)
+- [Spatie Mail Templates Structure](../mail-templates/spatie_mail_templates_structure.md)
+- [Email Troubleshooting](../email-sending/email_troubleshooting.md)
 
 #### Notifications
-- [Notifications Implementation Guide](./notifications/notifications_implementation_guide.md)
+- [Notifications Implementation Guide](../notifications/notifications_implementation_guide.md)
 - [Notification Management Business Logic](./notifications/notification-management-business-logic.md)
 
 ---

@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "07 ai integration"
 issues: []
 discussions: []
+status: superseded
+superseded_by: ai-integration.md
 ---
 
 

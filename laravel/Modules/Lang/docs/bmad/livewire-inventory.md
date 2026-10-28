@@ -1,4 +1,11 @@
 ---
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+updated: 2026-10-20
+qmd: "livewire inventory"
+issues: []
+discussions: []
 title: "Inventario Lang — Livewire HTTP → widget"
 type: inventory
 module: Lang
@@ -12,16 +19,18 @@ related:
   - ./livewire-widget-epics.md
   - ./livewire-widget-decision-log.md
   - ../../Xot/docs/bmad/livewire-widget-project-context.md
-  - ../../Cms/docs/bmad/livewire-inventory.md
-  - ../../UI/docs/bmad/livewire-widget-project-context.md
+  - ../../../Cms/docs/bmad/livewire-inventory.md
+  - ../../../UI/docs/bmad/livewire-widget-project-context.md
   - ../stories/12.1.retire-lang-http-switchers.story.md
+  - ../../../Xot/docs/bmad/livewire-to-filament-widgets-inventory.md
+  - ../../../Xot/docs/bmad/stories/livewire-to-filament-widgets-fleet.story.md
 ---
 
 # Inventario: Livewire HTTP → Filament (Lang)
 
 **Solo documentazione. Nessun PHP toccato in questo audit.**
 
-SSoT del modulo Lang per la campagna Livewire → Filament widget; formato e metodo come [Modules/Cms/docs/bmad/livewire-inventory.md](../../Cms/docs/bmad/livewire-inventory.md).
+SSoT del modulo Lang per la campagna Livewire → Filament widget; formato e metodo come [Modules/Cms/docs/bmad/livewire-inventory.md](../../../Cms/docs/bmad/livewire-inventory.md).
 
 > **Stato 2026-09-21 (post 12.1):** HTTP `Switcher`/`Change` ritirati. Header FO monta `LanguageSwitcherWidget` via FQCN. `View\Components\LanguageSwitcher` resta inerte. Story [12.1](../stories/12.1.retire-lang-http-switchers.story.md) `done`.
 

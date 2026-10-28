@@ -6,6 +6,7 @@ module: UI
 created: 2026-09-28
 updated: 2026-09-28
 qmd: "UI epic roadmap qualità architettura test documentazione"
+tags: [docs, ui, bmad]
 ---
 # UI — epic roadmap
 

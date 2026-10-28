@@ -5,10 +5,9 @@ declare(strict_types=1);
 namespace Modules\Seo\Tests\Unit\Adapters;
 
 use Modules\Seo\Adapters\MetatagFacadeAdapter;
-use Modules\Seo\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(\Modules\Seo\Tests\TestCase::class);
 
 it('sets all optional seo fields through adapter', function (): void {
     $adapter = app(MetatagFacadeAdapter::class);

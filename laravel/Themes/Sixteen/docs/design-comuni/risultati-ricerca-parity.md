@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "risultati ricerca parity"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Risultati Ricerca Parity Report
@@ -80,6 +81,6 @@ Quindi il prossimo step corretto e:
 
 ## Tooling e riferimenti
 
-- [Analisi storica precedente](./RISULTATI_RICERCA_ANALISI.md)
+- [Analisi storica precedente](./risultati-ricerca-analisi.md)
 - [Screenshot folder](./screenshots/risultati-ricerca-parity/)
-- [CMS note](../../../Modules/Cms/docs/design-comuni-risultati-ricerca.md)
+- [CMS note](../../../../Modules/Cms/docs/design-comuni-risultati-ricerca.md)

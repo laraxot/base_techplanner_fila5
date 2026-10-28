@@ -399,15 +399,15 @@ it('meets performance benchmarks', function (): void {
         $saveTime = microtime(true) - $startTime;
 
         expect($result)->toBeTrue();
-        Assert::assertLessThan($benchmark['max_save'], $saveTime, "Salvataggio dataset {$category} oltre il benchmark");
+        expect($saveTime)->toBeLessThan($benchmark['max_save'], "Salvataggio dataset {$category} oltre il benchmark");
 
         // Benchmark caricamento
         $startTime = microtime(true);
         $loadedData = $this->sushiModel()->getSushiRows();
         $loadTime = microtime(true) - $startTime;
 
-        expect($loadedData)->toHaveCount($benchmark['size']);
-        Assert::assertLessThan($benchmark['max_load'], $loadTime, "Caricamento dataset {$category} oltre il benchmark");
+        expect($loadedData)->toHaveCount($benchmark['size'], "Righe caricate dataset {$category}");
+        expect($loadTime)->toBeLessThan($benchmark['max_load'], "Caricamento dataset {$category} oltre il benchmark");
     }
 });
 

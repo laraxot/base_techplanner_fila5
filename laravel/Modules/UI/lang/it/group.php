@@ -27,6 +27,6 @@ return [
         'create' => ['label' => 'Crea Group'],
         'edit' => ['label' => 'Modifica Group'],
         'delete' => ['label' => 'Elimina Group'],
-        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+        'save' => ['label' => 'Salva', 'icon' => 'heroicon-o-check', 'tooltip' => 'Salva'],
     ],
 ];

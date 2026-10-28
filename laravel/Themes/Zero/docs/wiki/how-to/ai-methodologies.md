@@ -7,6 +7,14 @@ updated: 2026-07-14
 qmd: "ai methodologies handbook"
 related:
   - "../../bmad/00-index.md"
+id: zero-docs-wiki-how-to-ai-methodologies
+slug: ai-methodologies
+description: "This file is a DRY local index for AI workflows in this module or theme."
+document_type: how-to
+category: documentation
+status: active
+issues: []
+discussions: []
 ---
 
 # AI Methodologies Handbook
@@ -15,8 +23,8 @@ This file is a DRY local index for AI workflows in this module or theme.
 
 ## Canonical Sources
 
-- [OpenViking Integration Guide](../../../docs/openviking-integration.md)
-- [AI Methodologies Integration](../../../docs/project/ai-methodologies-integration.md)
+- [OpenViking Integration Guide](../../../../../../docs/openviking-integration.md)
+- [AI Methodologies Integration](../../../../../../docs/project/ai-methodologies-integration.md)
 
 ## Local Workflow
 

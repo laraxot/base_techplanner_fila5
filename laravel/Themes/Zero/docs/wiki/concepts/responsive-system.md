@@ -6,9 +6,17 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "sistema responsive e grid"
 related:
-  - "./accessibility-standards.md"
-  - "./advanced-features.md"
+  - "../rules/accessibility-standards.md"
+  - "../overviews/advanced-features.md"
   - "./component-library.md"
+id: zero-docs-wiki-concepts-responsive-system
+slug: responsive-system
+description: "Definire un sistema responsive coerente con griglie, breakpoint e layout riutilizzabili."
+document_type: guide
+category: documentation
+status: active
+issues: []
+discussions: []
 ---
 
 # Sistema responsive e grid

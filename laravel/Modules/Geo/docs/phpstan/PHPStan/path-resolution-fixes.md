@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "path resolution fixes"
 issues: []
 discussions: []
+status: superseded
+superseded_by: ../path-resolution-fixes.md
 ---
 
 # Path Resolution Fixes per Filament

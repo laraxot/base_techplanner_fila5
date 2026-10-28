@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "css js parity"
 issues: []
 discussions: []
+status: draft
 ---
 
 # CSS/JS Parity Audit - 2026-04-04
@@ -64,7 +65,7 @@ The reference is a long textual sitemap with grouped lists and anchors. The loca
 
 ## Changes Applied
 
-First CSS-only pass on `lista-risorse` in [../resources/css/app.css](../resources/css/app.css):
+First CSS-only pass on `lista-risorse` in [../resources/css/app.css](../../resources/css/app.css):
 
 - stronger heading hierarchy and summary styling
 - grey background and spacing alignment for featured and search-result sections
@@ -81,5 +82,5 @@ First CSS-only pass on `lista-risorse` in [../resources/css/app.css](../resource
 
 ## Related
 
-- [BATCH_BODY_PARITY_REPORT.md](./BATCH_BODY_PARITY_REPORT.md)
-- [REPLICATION_MASTER_PLAN.md](./REPLICATION_MASTER_PLAN.md)
+- [BATCH_BODY_PARITY_REPORT.md](./batch-body-parity-report.md)
+- [REPLICATION_MASTER_PLAN.md](./replication-master-plan.md)

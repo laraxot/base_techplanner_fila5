@@ -1,35 +1,48 @@
 ---
-title: "index"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "index"
+title: "Seo module: indice documentazione"
+type: index
+status: active
+canonical: true
+updated: 2026-10-14
+tags: [seo, docs, index, canonical]
+qmd: "seo module docs index master catalogo canonico superseded duplicati stub stale pilot docs-organization"
+related:
+  - ./stories/docs-organization-pilot.story.md
+  - ./stories/docs-index-audit.story.md
+  - ../../../../bmad-output/docs-organization-audit.md
 issues: []
 discussions: []
 ---
 
-# Documentation Index
-
-Modulo: Seo
-
-## File disponibili
-
-<!-- auto-generato: elencare i file .md presenti -->
----
-title: "index"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "index"
-issues: []
-discussions: []
 # Seo module — documentation index
 
 Master index of `docs/` for the Seo module, organized by topic. Every `.md` file under `docs/` is linked from here, either directly or inside the "Storico / da consolidare" section. No file was renamed, moved, or deleted while building this index.
 
+**Indice canonico: questo file.** Gli altri indici di radice (`00-INDEX.md`, `00-index.md`, `INDEX.md`) sono `status: superseded` con `superseded_by: index.md` dal 2026-10-08. `README.md` resta la presentazione del modulo (regola `theme-module-docs-readme-mandatory`), non un secondo indice.
+
+Legenda `status` nel frontmatter: `active` (valido), `stub` (rimanda a un canonico), `superseded` (copia di un altro file, `superseded_by` dice quale), `stale` (obsoleto, con nota datata sotto il frontmatter), `draft` (segnaposto da compilare). Nessun file e' stato cancellato, spostato o rinominato.
+
 Related entry points: [README.md](./README.md) (module overview), [docs/wiki/index.md](./wiki/index.md) (second-brain wiki), [docs/roadmap/README.md](./roadmap/README.md) (roadmap hub).
+
+## Stato verificato e mappa delle directory (2026-10-14)
+
+Il codice del modulo e' piccolo: facade `Metatag` con tre Actions in `app/Actions/Metatag/`, link di condivisione social (`GenerateSocialShareLinksAction`, widget, componente Blade). Non ci sono Model, migration, rotte, comandi Artisan, Resource Filament ne' sitemap, e nessun altro modulo importa `Modules\Seo`. Prove e quick start in [README.md](./README.md). I documenti di prodotto (PRD, roadmap, strategy, sprint, launch, research, `task-*`, `seo-optimization-*`) descrivono funzioni previste (sitemap, Schema.org, analisi AI, report PDF) che oggi non esistono: vanno letti come piani, non come stato.
+
+Nota di contratto: `bmad-output/docs-architecture/module-theme-docs-contract.md` indica `00-INDEX.md` come indice operativo, ma in Seo la scelta del 2026-10-08 (pilota) e' `index.md`, con `00-INDEX.md`, `00-index.md` e `INDEX.md` marcati `superseded`. Decisione aperta: vedi la story [2026-10-14-docs-seo-studio](./stories/docs-seo-studio.story.md).
+
+| Directory | Ruolo | Note |
+|---|---|---|
+| `wiki/` | canonica (concetti, regole, log) | 33 .md; `wiki/log.md` e' il registro cronologico |
+| `stories/` | evidence BMAD | 6 file; la story del 2026-10-14 e' l'ultima |
+| `bmad/` | evidence | dossier e status (3 file) |
+| `investigation/` | diagnosi non risolte | 1 file segnaposto, `draft` |
+| `roadmap/` | piani, non stato | 28 file, molti paralleli |
+| `concepts/` | residuo | 1 file (`xotbase-never-extend-filament.md`); il canone e' `wiki/concepts/` |
+| `llm-wiki/` | legacy | precede `wiki/`, cataloghi quasi vuoti |
+| `raw/` | sorgenti immutabili | non si riscrive |
+| `screenshots/` | evidence | 1 PNG |
+
+File con `status: stale` per codice inesistente o contenuto estraneo (2026-10-14): `getting-started.md`, `navigation.md`, `custom-404-page.md`, `customizing-your-site.md`, `algolia-docsearch.md` (template Jigsaw), `configuration.md`, `testing.md`, `docs-health.md`, `project-structure.md`.
 
 ## Overview and getting started
 
@@ -38,6 +51,7 @@ Related entry points: [README.md](./README.md) (module overview), [docs/wiki/ind
 - [getting-started.md](./getting-started.md)
 - [configuration.md](./configuration.md)
 - [04-datas.md](./04-datas.md) — data/model notes
+- [module.md](./module.md) - module doctrine (scope, religion, policy)
 - [filament.md](./filament.md) — reference link (ralphjsmit/laravel-filament-seo)
 - [structure.md](./structure.md) — legacy auto-generated structure dump (2025-04-23, contains stale merge-conflict markers; superseded in spirit by `project-structure.md` but kept as-is)
 
@@ -52,8 +66,11 @@ Related entry points: [README.md](./README.md) (module overview), [docs/wiki/ind
 - [on-demand-pattern.md](./on-demand-pattern.md) — canonical (see duplicate `ON-DEMAND-PATTERN.md` below)
 - [performance-optimization.md](./performance-optimization.md) — canonical (see duplicate `PERFORMANCE-OPTIMIZATION.md` below)
 - [no-ai-tool-scaffold-dirs.md](./no-ai-tool-scaffold-dirs.md)
+- [PHILOSOPHY.md](philosophy-religion.md) - long philosophy document (stale: cites files that do not exist); [philosophy.md](./philosophy.md) is a different, short introduction
 
 ## SEO features
+
+Attenzione: questa sezione elenca documenti, non funzioni. Esistono nel codice solo i metatag (facade) e la condivisione social; sitemap, Schema.org e analisi non sono implementati.
 
 - [sitemap.md](./sitemap.md) — reference link
 - [navigation.md](./navigation.md)
@@ -121,27 +138,29 @@ Related entry points: [README.md](./README.md) (module overview), [docs/wiki/ind
 
 - [mcp-configuration.md](./mcp-configuration.md)
 - [qmd-setup.md](./qmd-setup.md) — canonical (see duplicate `QMD-SETUP.md` below)
-- [mcp_server_consigliati.md](./mcp_server_consigliati.md) — canonical IT variant (see duplicate `MCP_SERVER_CONSIGLIATI.md` below)
-- [mcp_server_recommended.md](./mcp_server_recommended.md) — canonical EN variant (see duplicate `MCP_SERVER_RECOMMENDED.md` below)
-- [root-file-policy.md](./root-file-policy.md) — root hygiene status snapshot
-- [root-files-hygiene.md](./root-files-hygiene.md) — root hygiene changelog (distinct from `root-file-policy.md`, not a duplicate)
+- [mcp_server_consigliati.md](mcp-server-consigliati.md) — canonical IT variant (see duplicate `MCP_SERVER_CONSIGLIATI.md` below)
+- [mcp_server_recommended.md](mcp-server-recommended.md) — canonical EN variant (see duplicate `MCP_SERVER_RECOMMENDED.md` below)
+- `root-file-policy.md` - file assente al 2026-10-08 (link rimosso; esiste solo nel tema Meetup)
+- `root-files-hygiene.md` - file assente al 2026-10-08 (link rimosso)
 - [links.md](./links.md) — raw link dump (SEO packages/tutorials)
-- [action-sentinel-main-to-module-20260313T132007Z.md](./action-sentinel-main-to-module-20260313T132007Z.md) — canonical (see lowercase-timestamp duplicate below)
+- [action-sentinel-main-to-module-20260313T132007Z.md](./action-sentinel-main-to-module-Z.md) — canonical (see lowercase-timestamp duplicate below)
 
 ## Fixes, conflicts and incident reports
 
 - [conflict-resolution.md](./conflict-resolution.md)
 - [boost-skill-fix-summary.md](./boost-skill-fix-summary.md)
-- [redundancy-audit-2026-05-21.md](./redundancy-audit-2026-05-21.md) — dated audit, distinct from the `redundancy_analysis.md`/`REDUNDANCY_ANALYSIS.md` stub pair (see Storico)
-- [wiki/troubleshooting/git-merge-conflict-inventory-2026-04-28.md](./wiki/troubleshooting/git-merge-conflict-inventory-2026-04-28.md)
+- [redundancy-audit.md](./redundancy-audit.md) - audit del 2026-05-21 (ex `redundancy-audit-2026-05-21.md`), distinct from the `redundancy_analysis.md`/`REDUNDANCY_ANALYSIS.md` stub pair (see Storico)
+- [wiki/troubleshooting/git-merge-conflict-inventory.md](./wiki/troubleshooting/git-merge-conflict-inventory.md) (ex `...-2026-04-28.md`)
 
 ## Wiki / second brain (`docs/wiki/`)
 
 - [wiki/README.md](./wiki/README.md)
 - [wiki/index.md](./wiki/index.md) — wiki master catalog
 - [wiki/schema.md](./wiki/schema.md)
+- [wiki/module-purpose.md](./wiki/module-purpose.md) - module purpose (BMAD, 2026-10-06)
+- [wiki/readme.md](./wiki/README.md) - lowercase copy of `wiki/README.md`, superseded
 - [wiki/log.md](./wiki/log.md) — append-only activity log
-- [wiki/agents.md](./wiki/agents.md) — canonical (see duplicate `wiki/AGENTS.md` below)
+- [wiki/agents.md](wiki/AGENTS.md) — canonical (see duplicate `wiki/AGENTS.md` below)
 - [wiki/overviews/seo-module.md](./wiki/overviews/seo-module.md)
 - [wiki/concepts/composer-go-quality-gates.md](./wiki/concepts/composer-go-quality-gates.md)
 - [wiki/concepts/composer-root-minimal-nwidart.md](./wiki/concepts/composer-root-minimal-nwidart.md)
@@ -164,7 +183,7 @@ Related entry points: [README.md](./README.md) (module overview), [docs/wiki/ind
 Predates `docs/wiki/`; mostly empty catalogs today. Kept as-is, not merged.
 
 - [llm-wiki/index.md](./llm-wiki/index.md)
-- [llm-wiki/agents.md](./llm-wiki/agents.md) — canonical (see duplicate `llm-wiki/AGENTS.md` below)
+- [llm-wiki/agents.md](llm-wiki/AGENTS.md) — canonical (see duplicate `llm-wiki/AGENTS.md` below)
 - [llm-wiki/log.md](./llm-wiki/log.md)
 - [llm-wiki/_templates/concept.md](./llm-wiki/_templates/concept.md)
 - [llm-wiki/_templates/entity.md](./llm-wiki/_templates/entity.md)
@@ -182,49 +201,59 @@ Test/sync artifacts under `raw/root-import/` are listed in Storico below.
 
 ## Root-archived files (`docs/root-md-files/`)
 
-Root `.md` files archived here per the root-file-policy (max root `.md` count).
+La directory `root-md-files/` non esiste piu' al 2026-10-08. Il changelog archiviato e' `raw/root-import/changelog.md` (elencato sopra).
 
-- [root-md-files/changelog.md](./root-md-files/changelog.md) — canonical (see duplicate `root-md-files/CHANGELOG.md` below)
+## BMAD, stories and decision records
 
-## BMAD stories (`docs/stories/`)
+- [stories/docs-index-audit.story.md](./stories/docs-index-audit.story.md) - first documentation-index audit (2026-09-26)
+- [stories/phpstan-cleanup-seo.story.md](./stories/phpstan-cleanup-seo.story.md) and [.dev.md](./stories/phpstan-cleanup-seo.dev.md) - PHPStan cleanup
+- [stories/phpstan-Seo-fix.md](./stories/phpstan-Seo-fix.md) - earlier PHPStan fix note
+- [stories/2026-10-08-docs-organization-pilot.story.md](./stories/docs-organization-pilot.story.md) - this reorganization pilot (frontmatter, links, superseded markers)
+- [stories/services-to-actions-seo.story.md](./stories/services-to-actions-seo.story.md) - Services to Actions (removal of `MetatagService`); the docs that cite `app/Services/MetatagService.php` become stale after it
+- [bmad/README.md](./bmad/README.md), [bmad/bmad-dossier.md](./bmad/bmad-dossier.md), [bmad/status.md](./bmad/status.md) - BMAD dossier
+- [decision-log.md](./decision-log.md) - decision log (empty template, `draft`)
+- [investigation/investigation.md](./investigation/investigation.md) - Schema.org auto-generation investigation (placeholder, `draft`)
 
-- [stories/docs-index-audit.story.md](./stories/docs-index-audit.story.md) — this documentation-index audit
+## Related modules and themes
+
+- [Xot docs](../../Xot/docs/README.md) - core framework and base classes
+- [Geo docs](../../Geo/docs/README.md) - Schema.org Place integration
+- [Meetup theme docs](../../../Themes/Meetup/docs/00-INDEX.md) - Schema.org Event integration (Meetup is a theme, not a module)
 
 ---
 
 ## Storico / da consolidare
 
-Nothing below was deleted, renamed, or edited. Grouped here only so the index above stays readable. Consolidation (if ever done) is a separate, deliberate task.
+Nothing below was deleted, renamed, or moved. From 2026-10-08 every copy listed in section A carries `status: superseded` and `superseded_by` in its frontmatter (body untouched, except a visible note on the three superseded root indexes); the stubs in section B carry `status: stub`. Grouped here only so the index above stays readable. Consolidation (if ever done) is a separate, deliberate task.
 
 ### A. Duplicate content (same or near-identical text, different case/separator in the filename)
 
 | Topic | Files | Note |
 |---|---|---|
-| Top-level index (pre-audit) | [`00-index.md`](./00-index.md), [`00-INDEX.md`](./00-INDEX.md) | Near-identical (1 link differs: `README.md` vs `readme.md`); superseded in role by this `index.md`, kept for history |
-| On-demand pattern | [`ON-DEMAND-PATTERN.md`](./ON-DEMAND-PATTERN.md) | Byte-identical to `on-demand-pattern.md` |
-| Performance optimization | [`PERFORMANCE-OPTIMIZATION.md`](./PERFORMANCE-OPTIMIZATION.md) | Byte-identical to `performance-optimization.md` |
-| PRD | [`PRD.md`](./PRD.md) | Byte-identical to `prd.md` |
-| Project structure | [`PROJECT-STRUCTURE.md`](./PROJECT-STRUCTURE.md) | Byte-identical to `project-structure.md` |
-| QMD setup | [`QMD-SETUP.md`](./QMD-SETUP.md) | Byte-identical to `qmd-setup.md` |
-| Product launch plan | [`PRODUCT_LAUNCH_PLAN.md`](./PRODUCT_LAUNCH_PLAN.md) | Byte-identical to `product_launch_plan.md` |
-| Product roadmap | [`PRODUCT_ROADMAP.md`](./PRODUCT_ROADMAP.md) | Byte-identical to `product_roadmap.md` |
-| Product strategy | [`PRODUCT_STRATEGY.md`](./PRODUCT_STRATEGY.md) | Byte-identical to `product_strategy.md` |
-| Sprint planning | [`SPRINT_PLANNING.md`](./SPRINT_PLANNING.md) | Byte-identical to `sprint_planning.md` |
-| User research | [`USER_RESEARCH.md`](./USER_RESEARCH.md) | Byte-identical to `user_research.md` |
-| Roadmap 2025 (top-level) | [`ROADMAP.md`](./ROADMAP.md), [`roadmap-2025.md`](./roadmap-2025.md), [`ROADMAP-2025.md`](./ROADMAP-2025.md), [`ROADMAP_2025.md`](./ROADMAP_2025.md) | All near-identical to `roadmap.md` (only a trailing "Last Updated" line differs) |
-| Roadmap sub-index | [`roadmap/00-INDEX.md`](./roadmap/00-INDEX.md) | Byte-identical to `roadmap/00-index.md` |
-| Action sentinel log | [`action-sentinel-main-to-module-20260313t132007z.md`](./action-sentinel-main-to-module-20260313t132007z.md) | Byte-identical to the uppercase-`T` filename, only timestamp casing differs |
-| MCP server consigliati (IT) | [`MCP_SERVER_CONSIGLIATI.md`](./MCP_SERVER_CONSIGLIATI.md) | Byte-identical to `mcp_server_consigliati.md` |
-| MCP server recommended (EN) | [`MCP_SERVER_RECOMMENDED.md`](./MCP_SERVER_RECOMMENDED.md) | Byte-identical to `mcp_server_recommended.md` |
+| Top-level index (pre-audit) | [`00-index.md`](./00-index.md), [`00-INDEX.md`](./00-index.md) | Near-identical (1 link differs: `README.md` vs `readme.md`); superseded by this `index.md` (`status: superseded`), kept for history |
+| On-demand pattern | [`ON-DEMAND-PATTERN.md`](on-demand-pattern.md) | Byte-identical to `on-demand-pattern.md` |
+| Performance optimization | [`PERFORMANCE-OPTIMIZATION.md`](performance-optimization.md) | Byte-identical to `performance-optimization.md` |
+| PRD | [`PRD.md`](prd.md) | Byte-identical to `prd.md` |
+| Project structure | [`PROJECT-STRUCTURE.md`](project-structure.md) | Byte-identical to `project-structure.md` |
+| QMD setup | [`QMD-SETUP.md`](qmd-setup.md) | Byte-identical to `qmd-setup.md` |
+| Product launch plan | [`PRODUCT_LAUNCH_PLAN.md`](product_launch_plan.md) | Byte-identical to `product_launch_plan.md` |
+| Product roadmap | [`PRODUCT_ROADMAP.md`](product_roadmap.md) | Byte-identical to `product_roadmap.md` |
+| Product strategy | [`PRODUCT_STRATEGY.md`](product_strategy.md) | Byte-identical to `product_strategy.md` |
+| Sprint planning | [`SPRINT_PLANNING.md`](sprint_planning.md) | Byte-identical to `sprint_planning.md` |
+| User research | [`USER_RESEARCH.md`](user_research.md) | Byte-identical to `user_research.md` |
+| Roadmap 2025 (top-level) | [`ROADMAP.md`](roadmap.md), [`roadmap-2025.md`](./roadmap-2025.md), [`ROADMAP-2025.md`](./ROADMAP-2025.md), [`ROADMAP_2025.md`](./ROADMAP_2025.md) | All near-identical to `roadmap.md` (only a trailing "Last Updated" line differs). Dal 2026-10-08 `ROADMAP-2025.md` e `ROADMAP_2025.md` sono `superseded_by: roadmap-2025.md` (identici nel corpo); `ROADMAP.md` non e' un duplicato esatto e resta `active` |
+| Roadmap sub-index | [`roadmap/00-INDEX.md`](./roadmap/00-index.md) | Byte-identical to `roadmap/00-index.md` |
+| Action sentinel log | [`action-sentinel-main-to-module-t132007z.md`](./action-sentinel-main-to-module-t132007z.md) | Byte-identical to the uppercase-`T` filename, only timestamp casing differs |
+| MCP server consigliati (IT) | [`MCP_SERVER_CONSIGLIATI.md`](mcp-server-consigliati.md) | Byte-identical to `mcp_server_consigliati.md` |
+| MCP server recommended (EN) | [`MCP_SERVER_RECOMMENDED.md`](mcp-server-recommended.md) | Byte-identical to `mcp_server_recommended.md` |
 | Wiki agents | [`wiki/AGENTS.md`](./wiki/AGENTS.md) | Byte-identical to `wiki/agents.md` (both contain an unrendered `{{TYPE^}}` template placeholder) |
 | LLM-wiki agents | [`llm-wiki/AGENTS.md`](./llm-wiki/AGENTS.md) | Byte-identical to `llm-wiki/agents.md` |
-| Wiki commands index | [`wiki/commands/INDEX.md`](./wiki/commands/INDEX.md) | Byte-identical to `wiki/commands/index.md` |
-| Wiki concepts index | [`wiki/concepts/INDEX.md`](./wiki/concepts/INDEX.md) | Byte-identical to `wiki/concepts/index.md` |
-| Wiki memories index | [`wiki/memories/INDEX.md`](./wiki/memories/INDEX.md) | Byte-identical to `wiki/memories/index.md` |
-| Wiki rules index | [`wiki/rules/INDEX.md`](./wiki/rules/INDEX.md) | Byte-identical to `wiki/rules/index.md` |
-| Wiki skills index | [`wiki/skills/INDEX.md`](./wiki/skills/INDEX.md) | Byte-identical to `wiki/skills/index.md` |
-| Root-archived changelog | [`root-md-files/CHANGELOG.md`](./root-md-files/CHANGELOG.md) | Byte-identical to `root-md-files/changelog.md` |
-| Docs root indices (not exact dup, overlapping role) | [`INDEX.md`](./INDEX.md) | Thin placeholder describing naming conventions for duplicates; different content than `index.md`/`00-index.md`, kept for reference |
+| Wiki commands index | [`wiki/commands/INDEX.md`](./wiki/commands/index.md) | Byte-identical to `wiki/commands/index.md` |
+| Wiki concepts index | [`wiki/concepts/INDEX.md`](./wiki/concepts/index.md) | Byte-identical to `wiki/concepts/index.md` |
+| Wiki memories index | [`wiki/memories/INDEX.md`](./wiki/memories/index.md) | Byte-identical to `wiki/memories/index.md` |
+| Wiki rules index | [`wiki/rules/INDEX.md`](./wiki/rules/index.md) | Byte-identical to `wiki/rules/index.md` |
+| Wiki skills index | [`wiki/skills/INDEX.md`](./wiki/skills/index.md) | Byte-identical to `wiki/skills/index.md` |
+| Docs root index placeholder | [`INDEX.md`](./INDEX.md) | Thin placeholder, superseded by this `index.md` since 2026-10-08, kept for reference |
 
 ### B. Stub pointers to Themes shared docs (`module: theme` frontmatter — not Seo-specific content)
 
@@ -240,13 +269,13 @@ These files only contain a `canonical: ../../../Themes/docs/shared-components/..
 - [merge-conflicts-list.md](./merge-conflicts-list.md) — points to a different canonical topic than the file above; not a duplicate of it
 - [metodi-duplicati-analisi.md](./metodi-duplicati-analisi.md)
 - [metodi_duplicati_analisi.md](./metodi_duplicati_analisi.md)
-- [METODI-DUPLICATI-ANALISI.md](./METODI-DUPLICATI-ANALISI.md)
-- [METODI_DUPLICATI_ANALISI.md](./METODI_DUPLICATI_ANALISI.md)
+- [METODI-DUPLICATI-ANALISI.md](metodi-duplicati-analisi.md)
+- [METODI_DUPLICATI_ANALISI.md](metodi_duplicati_analisi.md)
 - [phpstan.md](./phpstan.md)
 - [product-launch-plan.md](./product-launch-plan.md)
 - [product-roadmap.md](./product-roadmap.md)
 - [redundancy_analysis.md](./redundancy_analysis.md)
-- [REDUNDANCY_ANALYSIS.md](./REDUNDANCY_ANALYSIS.md)
+- [REDUNDANCY_ANALYSIS.md](redundancy_analysis.md)
 - [roadmap/current-state.md](./roadmap/current-state.md)
 - [roadmap/goals.md](./roadmap/goals.md)
 - [roadmap/index.md](./roadmap/index.md)
@@ -272,9 +301,9 @@ Residue from doc-sync tooling tests. No informational content.
 
 - [sync-test-file.md](./sync-test-file.md)
 - [sync_test_file.md](./sync_test_file.md)
-- [SYNC_TEST_FILE.md](./SYNC_TEST_FILE.md)
-- [test_2025_03_24.md](./test_2025_03_24.md)
-- [test_2025_03_24_bb.md](./test_2025_03_24_bb.md)
+- [SYNC_TEST_FILE.md](sync_test_file.md)
+- [test_2025_03_24.md](./test-vuoto-nessun.md)
+- [test_2025_03_24_bb.md](./test-bb-vuoto-nessun.md)
 - [test-bb.md](./test-bb.md)
 - [test.md](./test.md)
 - [raw/root-import/sync-test-file.md](./raw/root-import/sync-test-file.md)

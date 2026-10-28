@@ -10,6 +10,8 @@ use Filament\Support\Contracts\HasLabel;
 use Modules\Notify\Enums\SmsDriverEnum;
 use PHPUnit\Framework\Assert;
 
+use function Safe\class_implements;
+
 it('has correct cases', function (): void {
     Assert::assertCount(1, SmsDriverEnum::cases());
 
@@ -17,9 +19,11 @@ it('has correct cases', function (): void {
 });
 
 it('implements filament contracts', function (): void {
-    Assert::assertInstanceOf(HasLabel::class, SmsDriverEnum::SMSFACTOR);
-    Assert::assertInstanceOf(HasIcon::class, SmsDriverEnum::SMSFACTOR);
-    Assert::assertInstanceOf(HasColor::class, SmsDriverEnum::SMSFACTOR);
+    $interfaces = class_implements(SmsDriverEnum::class) ?: [];
+
+    Assert::assertArrayHasKey(HasLabel::class, $interfaces);
+    Assert::assertArrayHasKey(HasIcon::class, $interfaces);
+    Assert::assertArrayHasKey(HasColor::class, $interfaces);
 });
 
 it('has enum trait', function (): void {
@@ -32,8 +36,8 @@ it('has enum trait', function (): void {
 it('get default returns default driver', function (): void {
     $default = SmsDriverEnum::getDefault();
 
-    Assert::assertInstanceOf(SmsDriverEnum::class, $default);
     Assert::assertContains($default, SmsDriverEnum::cases());
+    Assert::assertSame('smsfactor', $default->value);
 });
 
 it('each case has unique value', function (): void {
@@ -46,10 +50,7 @@ it('each case has unique value', function (): void {
 it('cases returns all enum instances', function (): void {
     $cases = SmsDriverEnum::cases();
     Assert::assertCount(1, $cases);
-
-    foreach ($cases as $case) {
-        Assert::assertInstanceOf(SmsDriverEnum::class, $case);
-    }
+    Assert::assertSame('smsfactor', $cases[0]->value);
 });
 
 it('all cases expose non empty description', function (): void {

@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "modules analysis and optimization"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Analisi e Ottimizzazioni Moduli Laraxot - <nome progetto>
@@ -341,6 +342,6 @@ public static function getProjectBasePath(): string
 
 - [Piano Implementazione Riusabilità](module_reusability_implementation_plan.md)
 - [Linee Guida Riusabilità](module_reusability_guidelines.md)
-- [Architettura Testing](testing/testing-architecture-overview.md)
-- [Best Practices Testing](testing/testing-best-practices.md)
+- [Architettura Testing](testing-architecture-overview.md)
+- [Best Practices Testing](testing-best-practices.md)
 

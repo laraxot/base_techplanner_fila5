@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "comune model"
 issues: []
 discussions: []
+status: superseded
+superseded_by: comune-model.md
 ---
 
 # Modello Comune

@@ -2,8 +2,12 @@
 title: "Xot - docs-consolidation-orphan-files.story.md"
 module: Xot
 bmad: true
-status: active
+status: in-progress
+updated: 2026-10-23
+tags: [docs, xot, bmad]
+qmd: "docs consolidation   orphan files + structure normalization   2026-10-06 xot"
 ---
+
 # Docs consolidation — orphan files + structure normalization — 2026-10-06
 
 ## Epic
@@ -65,4 +69,3 @@ Per ogni modulo:
 
 ## Note
 Questa è una story di **consolidamento**, non rewriting. Files spostati, non ricreati. Data integrity non negoziabile. Se un file ha contenuto spurio/duplicato, documentar motivo della dedup nella story.
-

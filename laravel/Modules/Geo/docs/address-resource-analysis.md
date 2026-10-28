@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "address resource analysis"
 issues: []
 discussions: []
+status: superseded
+superseded_by: addressresource-analysis.md
 ---
 
 # Analisi AddressResource.php

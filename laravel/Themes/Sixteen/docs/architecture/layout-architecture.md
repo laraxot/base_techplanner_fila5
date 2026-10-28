@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "layout architecture"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Layout Architecture - DRY + KISS
@@ -18,15 +19,6 @@ discussions: []
 Questo documento spiega l'architettura dei layout nel tema Sixteen, seguendo i principi **DRY** (Don't Repeat Yourself) e **KISS** (Keep It Simple, Stupid).
 
 ---
-
-title: "layout architecture"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "layout architecture"
-issues: []
-discussions: []
 ## 🎯 Obiettivo
 
 Separare chiaramente:
@@ -441,7 +433,7 @@ Ogni file fa UNA cosa sola, nel modo più semplice possibile.
 
 - [Replikate.txt](./prompts/replikate.txt) - Guida operativa
 - [Product Brief](./design-comuni/product-brief.md) - Panoramica progetto
-- [Pages Census](./design-comuni/pages-census.md) - Censimento 38 pagine
+- [Pages Census](../design-comuni/pages-census.md) - Censimento 38 pagine
 - [Blocks System](./design-comuni/blocks/00-index.md) - Blocchi universali
 
 ### Documenti Esterni

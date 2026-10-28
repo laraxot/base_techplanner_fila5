@@ -6,11 +6,15 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "chartjs export integration - tema zero"
 related:
-<<<<<<< HEAD
-=======
   - "./00-index.md"
->>>>>>> laraxot/dev
-  - "./00-index.md"
+id: zero-docs-bmad-chartjs-export-theme-integration
+slug: chartjs-export-theme-integration
+description: "Il Tema Zero fornisce una base solida e professionale per Chart.js Export!"
+document_type: guide
+category: ui-frontend
+status: active
+issues: []
+discussions: []
 ---
 
 # 🎨 CHART.JS EXPORT INTEGRATION - TEMA ZERO

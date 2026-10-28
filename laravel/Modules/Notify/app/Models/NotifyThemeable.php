@@ -44,5 +44,13 @@ use Modules\Xot\Contracts\ProfileContract;
  */
 class NotifyThemeable extends BaseMorphPivot
 {
-    // ...
+    /** @var list<string> */
+    protected $fillable = [
+        'id',
+        'model_type',
+        'model_id',
+        'notify_theme_id',
+        'created_by',
+        'updated_by',
+    ];
 }

@@ -24,7 +24,7 @@ final class OrganizationColumn extends GroupColumn
 
     public static function make(?string $name = null): static
     {
-        $column = parent::make($name ?? static::DEFAULT_NAME);
+        $column = parent::make($name ?? self::DEFAULT_NAME);
 
         return $column->schema($column->getSchema());
     }

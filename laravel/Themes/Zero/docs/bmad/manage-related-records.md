@@ -6,11 +6,15 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "managerelatedrecords styling - zero theme"
 related:
-<<<<<<< HEAD
-=======
   - "./00-index.md"
->>>>>>> laraxot/dev
-  - "./00-index.md"
+id: zero-docs-bmad-manage-related-records
+slug: manage-related-records
+description: "The 'Zero' theme provides the clean, standard foundations for the Laraxot ecosystem. For related record pages, it focuses on clarity, readability, and semantic structure."
+document_type: rule
+category: ui-frontend
+status: active
+issues: []
+discussions: []
 ---
 
 # ManageRelatedRecords Styling - Zero Theme

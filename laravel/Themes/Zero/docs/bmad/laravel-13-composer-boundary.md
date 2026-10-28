@@ -6,11 +6,15 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "laravel 13 composer boundary for theme zero"
 related:
-<<<<<<< HEAD
-=======
   - "./00-index.md"
->>>>>>> laraxot/dev
-  - "./00-index.md"
+id: zero-docs-bmad-laravel-13-composer-boundary
+slug: laravel-13-composer-boundary
+description: "Theme Zero is presentation. Business logic and Laravel packages belong to modules, not to the theme."
+document_type: rule
+category: architecture
+status: active
+issues: []
+discussions: []
 ---
 
 # Laravel 13 Composer boundary for Theme Zero

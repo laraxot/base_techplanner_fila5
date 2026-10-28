@@ -15,7 +15,7 @@ class ConvertController extends BaseController
     {
         /** @var view-string $view */
         $view = 'media::convert';
-        return view($view, []);
 
+        return view($view, []);
     }
 }

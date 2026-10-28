@@ -4,6 +4,16 @@ type: report
 theme: Zero
 updated: 2026-09-01
 qmd: "cosa migliorare zero phpstan phpmd phpinsights coverage debito priorita"
+id: zero-docs-wiki-summaries-cosa-migliorare
+slug: cosa-migliorare
+description: "Ogni affermazione qui sotto viene da un comando eseguito il 1 settembre 2026, dopo il"
+document_type: analysis
+category: documentation
+status: active
+tags: []
+created: "2026-10-08"
+issues: []
+discussions: []
 ---
 
 # Cosa migliorare — tema Zero
@@ -63,5 +73,5 @@ Prima di fidarsi di qualunque numero: il tree deve essere fermo e `vendor/` comp
 php -r 'echo count(require "vendor/composer/autoload_classmap.php");'   # ~25358, non 13041
 ```
 
-Quadro comparativo di tutte le unità: [`docs/quality-audit.md`](../../../../docs/quality-audit.md).
+Quadro comparativo di tutte le unità: [`docs/quality-audit.md`](../../bmad/quality-audit.md).
 

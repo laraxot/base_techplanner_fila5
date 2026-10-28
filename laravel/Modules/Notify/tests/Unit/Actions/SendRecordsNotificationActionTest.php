@@ -41,7 +41,7 @@ test('send records notification action counts successful sends', function (): vo
 
     Assert::assertSame(4, $result->successCount);
     Assert::assertSame(0, $result->errorCount);
-    Assert::assertSame(0, $result->errors->count());
+    Assert::assertCount(0, $result->errors);
     Assert::assertSame(4, $result->totalProcessed);
 });
 
@@ -61,7 +61,7 @@ test('send records notification action accumulates errors per channel', function
 
     Assert::assertSame(2, $result->successCount);
     Assert::assertSame(2, $result->errorCount);
-    Assert::assertSame(2, $result->errors->count());
+    Assert::assertCount(2, $result->errors);
     Assert::assertSame('Fail Record', $result->errors->first()['record'] ?? null);
     Assert::assertSame(4, $result->totalProcessed);
 });

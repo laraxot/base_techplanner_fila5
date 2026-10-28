@@ -11,7 +11,8 @@ module: Gdpr
 related:
   - ./livewire-inventory.md
   - ../stories/12.1.gdpr-owns-legal-pages.story.md
-  - ../../User/docs/stories/10.4.retire-gdpr-profile-livewire.story.md
+  - ../../../User/docs/stories/10.4.retire-gdpr-profile-livewire.story.md
+status: draft
 ---
 
 # Epic 12

@@ -1,3 +1,21 @@
+---
+id: zero-docs-archive-frameworks
+slug: frameworks
+title: "Zero - Framework Integration Notes"
+description: "Integration guidelines for caveman, graphify, bmad-method, headroom, ponytail."
+document_type: guide
+type: guide
+category: architecture
+status: archived
+tags: []
+created: "2026-10-08"
+updated: "2026-10-08"
+qmd: "zero - framework integration notes"
+issues: []
+discussions: []
+canonical: ../bmad/frameworks.md
+---
+
 # Zero — Framework Integration Notes
 
 Integration guidelines for caveman, graphify, bmad-method, headroom, ponytail.

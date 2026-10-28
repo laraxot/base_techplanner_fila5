@@ -21,7 +21,7 @@ describe('Component', function (): void {
             }
         };
 
-        Assert::assertInstanceOf(Component::class, $component);
+        Assert::assertStringContainsString('button', (string) $component->render()->render());
     });
 
     test('ui button component has correct attributes', function (): void {

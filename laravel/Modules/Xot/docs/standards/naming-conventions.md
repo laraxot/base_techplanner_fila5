@@ -4,4 +4,3 @@ module: Xot
 bmad: true
 status: active
 ---
-

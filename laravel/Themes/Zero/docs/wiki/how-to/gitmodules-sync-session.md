@@ -11,6 +11,12 @@ discussions: []
 related:
   - "../../../../../../docs/stories/STORY-003-gitmodules-sync-conflict-sweep.md"
   - "../../../../../../docs/chat/gitmodules-sync.md"
+id: zero-docs-wiki-how-to-gitmodules-sync-session
+slug: gitmodules-sync-session
+description: "Sessione orchestrata dal prompt bashscripts/tools/prompts/02-gitmodules-sync.md (v5.1) e da STORY-003."
+document_type: how-to
+category: git-workflow
+status: active
 ---
 
 # Gitmodules sync session

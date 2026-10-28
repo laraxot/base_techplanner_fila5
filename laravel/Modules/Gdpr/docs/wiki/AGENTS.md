@@ -1,9 +1,13 @@
 ---
-title: "Gdpr {{TYPE^}} LLM Wiki Agent Instructions"
-type: reference
-tags: [wiki, no-frontmatter-fix]
-created: 2026-10-06
-updated: 2026-10-06
+title: "AGENTS"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "AGENTS"
+issues: []
+discussions: []
+status: draft
 ---
 
 # Gdpr {{TYPE^}} LLM Wiki Agent Instructions

@@ -294,7 +294,7 @@ it('has all required English translation keys', function (): void {
 
     foreach ($requiredKeys as $key) {
         $translated = __($key);
-        Assert::assertNotSame($key, "Translation key [{$key}] is missing", $translated);
+        Assert::assertNotSame($key, $translated, "Translation key [{$key}] is missing");
     }
 });
 
@@ -322,7 +322,7 @@ it('has all required Italian translation keys', function (): void {
 
     foreach ($requiredKeys as $key) {
         $translated = __($key);
-        Assert::assertNotSame($key, "Italian translation key [{$key}] is missing", $translated);
+        Assert::assertNotSame($key, $translated, "Italian translation key [{$key}] is missing");
     }
 });
 
@@ -334,11 +334,11 @@ it('widget is not visible to authenticated users', function (): void {
     $user = UserFactory::new()->createOne(['type' => 'customer_user']);
 
     gdprActingAs($user);
-    $widget = new RegisterWidget();
+    $widget = new RegisterWidget;
     Assert::assertFalse($widget->canView());
 });
 
 it('widget is visible to guest users', function (): void {
-    $widget = new RegisterWidget();
+    $widget = new RegisterWidget;
     Assert::assertTrue($widget->canView());
 });

@@ -9,13 +9,14 @@ discussions: []
 name: concepts
 description: Central hub for geo module architectural rules and patterns.
 type: directory
+status: draft
 ---
 
 # Geolocation Component Rules
 
 ## Final Constructor Rule
 - Prevent overriding final `__construct()` from `Filament\Forms\Components\Field`
-- Details: [final-constructor-rule.md](concepts/final-constructor-rule.md)
+- Details: [final-constructor-rule.md](final-constructor-rule.md)
 
 ## Blade Template Location Rule
 - No dedicated Blade files for dynamic wizard pages

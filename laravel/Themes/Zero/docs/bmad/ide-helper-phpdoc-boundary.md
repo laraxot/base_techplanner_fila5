@@ -9,6 +9,15 @@ related:
   - "../../Modules/Xot/docs/ide-helper-philosophy.md"
   - "./phpstan-dry-kiss-theme-guidelines.md"
   - "../One/docs/ide-helper-phpdoc-boundary.md"
+id: zero-docs-bmad-ide-helper-phpdoc-boundary
+slug: ide-helper-phpdoc-boundary
+description: "Zero è il tema operativo principale (Tailwind, Filament, Performance UI). Le view e le Folio page leggono model di Progressioni, Ptv, User, Sigma. ide-helper:models sui moduli..."
+document_type: concept
+category: architecture
+status: active
+qmd: "ide helper - confine phpdoc tema zero"
+issues: []
+discussions: []
 ---
 
 # ide helper — confine PHPDoc tema Zero
@@ -48,10 +57,5 @@ Dettaglio: [ide-helper-philosophy](../../Modules/Xot/docs/ide-helper-philosophy.
 ## Collegamenti
 
 - [phpstan dry kiss theme guidelines](./phpstan-dry-kiss-theme-guidelines.md)
-<<<<<<< HEAD
-- [One — confine PHPDoc](../../One/docs/ide-helper-phpdoc-boundary.md)
-- [User — oauth ide helper](../../../Modules/User/docs/oauth-token-relations-ide-helper.md)
-=======
-- [One — confine PHPDoc](../One/docs/ide-helper-phpdoc-boundary.md)
-- [User — oauth ide helper](../../Modules/User/docs/oauth-token-relations-ide-helper.md)
->>>>>>> laraxot/dev
+- [One — confine PHPDoc](./ide-helper-phpdoc-boundary.md)
+- [User — oauth ide helper](../../../../Modules/User/docs/oauth-token-relations-ide-helper.md)

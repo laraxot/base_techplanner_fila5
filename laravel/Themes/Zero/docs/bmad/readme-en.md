@@ -5,6 +5,14 @@ tags: [theme, zero, readme, english]
 created: 2026-09-02
 updated: 2026-09-02
 qmd: "zero theme readme english overview"
+id: zero-docs-bmad-readme-en
+slug: readme-en
+description: "Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel..."
+document_type: guide
+category: documentation
+status: active
+issues: []
+discussions: []
 ---
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
@@ -72,11 +80,7 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-<<<<<<< HEAD
 # <repo progetto>
-=======
-# base_healthcare_app_fila5_mono
->>>>>>> laraxot/dev
 # healthcare_app Fila3 Mono Project
 
 ## Overview
@@ -228,7 +232,7 @@ Tables\Actions\EditAction::make()
 ## Documentation
 
 - [Policy Implementation Guide](docs/policies_implementation.md)
-- [User Module Documentation](../../../Modules/User/docs/README.md)
+- [User Module Documentation](../../../../Modules/User/docs/README.md)
 - [Module-specific documentation in each module's docs folder]
 
 ## Contributing
@@ -248,10 +252,5 @@ This project is proprietary software. All rights reserved.
 For support and questions, please refer to the project documentation or contact the development team.
 
 *Last updated: January 2025*
-<<<<<<< HEAD
 # <repo progetto>
 # <repo progetto>
-=======
-# base_healthcare_app_fila5_mono
-# base_healthcare_app_fila5_mono
->>>>>>> laraxot/dev

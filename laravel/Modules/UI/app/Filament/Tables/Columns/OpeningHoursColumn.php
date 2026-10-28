@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\UI\Filament\Tables\Columns;
 
-use Filament\Tables\Columns\TextColumn;
 use Modules\UI\Actions\Datetime\GetDaysMappingAction;
 use Modules\UI\Filament\Forms\Components\OpeningHoursField;
+use Modules\Xot\Filament\Tables\Columns\XotBaseTextColumn;
+
+/*
+ * GateGuard: callers OpeningHoursColumnTest; unique opening-hours summary column;
+ * reads weekly hours array state; user: "migliora qualità codice , fa tutto con bmad + second brain + filament blueprint"
+ */
 
 /**
  * Controparte in lista di {@see OpeningHoursField}.
@@ -25,7 +30,7 @@ use Modules\UI\Filament\Forms\Components\OpeningHoursField;
  *
  * @see Modules/Ptv/docs/form-column-parity.md
  */
-class OpeningHoursColumn extends TextColumn
+class OpeningHoursColumn extends XotBaseTextColumn
 {
     protected const string DEFAULT_NAME = 'opening_hours';
 

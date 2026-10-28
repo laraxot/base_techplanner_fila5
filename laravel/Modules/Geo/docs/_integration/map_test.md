@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "map test"
 issues: []
 discussions: []
+status: superseded
+superseded_by: map-test.md
 ---
 
 # map_test

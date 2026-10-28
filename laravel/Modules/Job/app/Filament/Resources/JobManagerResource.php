@@ -35,6 +35,7 @@ class JobManagerResource extends XotBaseResource
         ];
     }
 
+    #[Override]
     public static function getWidgets(): array
     {
         return [

@@ -9,6 +9,14 @@ related:
   - "./schema.md"
   - "./concepts/bmad-method.md"
   - "./log.md"
+id: zero-docs-wiki-schema
+slug: schema
+description: "Tema Zero per la piattaforma PTVX. Tema base/default con layout, stili e componenti Blade per l'interfaccia pubblica e amministrativa."
+document_type: guide
+category: database
+status: active
+issues: []
+discussions: []
 ---
 
 # Theme Zero Wiki — Schema e Convenzioni

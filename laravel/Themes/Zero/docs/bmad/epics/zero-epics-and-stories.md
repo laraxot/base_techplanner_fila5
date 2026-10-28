@@ -4,6 +4,15 @@ type: user_stories
 tags: [user stories, epics, theme, zero]
 created: 2026-08-04
 updated: 2026-08-04
+id: zero-docs-bmad-epics-zero-epics-and-stories
+slug: zero-epics-and-stories
+description: "As a Developer, I want a clean theme base so that I can extend it consistently."
+document_type: story
+category: bmad-story
+status: active
+qmd: "zero theme epics and user stories"
+issues: []
+discussions: []
 ---
 # Zero Theme Epics and User Stories
 

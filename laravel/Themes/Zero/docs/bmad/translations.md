@@ -5,6 +5,14 @@ tags: [translations, i18n, theme]
 created: 2026-08-06
 updated: 2026-08-06
 qmd: "zero theme translations traduzioni tema"
+id: zero-docs-bmad-translations
+slug: translations
+description: "Themes/Zero/lang/{locale}/ contiene solo le stringhe del front-office che appartengono al"
+document_type: reference
+category: documentation
+status: active
+issues: []
+discussions: []
 ---
 
 # Traduzioni del tema Zero
@@ -25,7 +33,7 @@ modulo. Lingue presenti: `it`, `en`, `de`.
 `Themes/*/lang/*/navigation.php` riguarda la **navigazione del sito pubblico**. Non ha
 nulla a che vedere con `navigation.group` dei file di traduzione dei moduli, che governa i
 gruppi del menu Filament (vedi
-[gruppi di navigazione del modulo User](../../../Modules/User/docs/navigation-groups.md)).
+[gruppi di navigazione del modulo User](../../../../Modules/User/docs/navigation-groups.md)).
 Sono due sistemi distinti che condividono solo la parola "navigation".
 
 Regola: una stringa che descrive un'entita' di dominio (utente, team, grafico) sta nel file

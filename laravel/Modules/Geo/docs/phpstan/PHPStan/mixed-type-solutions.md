@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "mixed type solutions"
 issues: []
 discussions: []
+status: superseded
+superseded_by: ../mixed-type-solutions.md
 ---
 
 # Gestione del tipo `mixed` in PHP e Soluzioni per PHPStan

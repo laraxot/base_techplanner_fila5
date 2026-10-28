@@ -7,6 +7,7 @@ updated: 2026-10-01
 qmd: "coverage"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Code Coverage: Gdpr

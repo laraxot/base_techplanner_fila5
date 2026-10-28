@@ -1,3 +1,8 @@
+---
+status: superseded
+superseded_by: ui-ux-improvement-plan.md
+---
+
 # 🎯 Piano Miglioramento UI/UX - TechPlanner
 
 ## 📊 Analisi Comparativa

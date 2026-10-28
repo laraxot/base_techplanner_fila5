@@ -104,3 +104,18 @@ Come Xot, Notify e Activity: un `index.md` a una schermata, un canonico per argo
 - `laravel/Modules/Ptv/docs/form-column-parity.md` — la parita' come regola
 - `docs/wiki/rules/filament-form-components-vocabulary.md` — quando estrarre
 - `./architecture.md` — architettura tecnica del modulo (componenti, Filament, Blocks)
+
+## Verifica del 2026-10-14
+
+Il testo sopra non e' stato riscritto; i numeri e due collegamenti sono superati.
+
+- "Zero Resource" e' ancora vero (`app/Filament/Resources/` ha solo `Pages/BaseListRecords.php`). I widget sono 12 (non 11) e i file PHP
+  in `app/` 123 (non 107).
+- I documenti in `docs/` sono 294 file `.md` (327 file in tutto), non 779: il riordino del 2026-10 ha ridotto il volume, ma 148 `.md`
+  stanno ancora in `_archive/`.
+- `./architecture.md` non esiste in `wiki/`; la mappa del codice e' [../bmad/architecture.md](../bmad/architecture.md).
+- `laravel/Modules/Ptv/docs/form-column-parity.md`: il modulo Ptv non esiste in questo repo (moduli presenti: AI, Activity, Blog, Cms,
+  Comment, Fixcity, Gdpr, Geo, Job, Lang, Media, Mobile, Notify, Rating, Seo, Tenant, UI, User, Xot).
+- Dei punti "come raggiungerlo meglio" non risulta realizzato il catalogo dei componenti ne' un test automatico di contrasto sui token:
+  nei test del modulo l'unico riferimento al contrasto e' un test in `DarkModeToggleTest`.
+- Una copia identica di questo file e' `bmad/purpose.md`; il canonico e' questo.

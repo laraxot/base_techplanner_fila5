@@ -47,6 +47,6 @@ it('has all required translation keys used by the register page', function (): v
 
     foreach ($requiredKeys as $key) {
         $translated = __($key);
-        Assert::assertNotSame($key, "Translation key [{$key}] is missing or returns raw key", $translated);
+        Assert::assertNotSame($key, $translated, "Translation key [{$key}] is missing or returns raw key");
     }
 });

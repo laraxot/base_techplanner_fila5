@@ -2,6 +2,17 @@
 title: agent edit discipline — puntatore
 type: reference
 updated: 2026-05-21
+id: zero-docs-wiki-rules-agent-edit-discipline
+slug: agent-edit-discipline
+description: "Puntatore alla regola canonica sulla disciplina di edit e validazione post-modifica degli agenti."
+document_type: reference
+category: architecture
+status: active
+tags: []
+created: "2026-10-08"
+qmd: "agent edit discipline - puntatore"
+issues: []
+discussions: []
 ---
 
 # Disciplina edit e qualità (puntatore)

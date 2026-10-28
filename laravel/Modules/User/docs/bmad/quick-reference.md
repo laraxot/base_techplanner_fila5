@@ -5,6 +5,11 @@ module: "User"
 alias: "user"
 documentation_date: "2026-05-27"
 bmad_version: "6.2.0"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "user   bmad quick reference user"
 ---
 
 # User — BMAD Quick Reference
@@ -47,10 +52,6 @@ bmad-code-review          # Review
 | Winston (architect) | `skill: "bmad-agent-architect"` | architettura DB |
 | Amelia (dev) | `skill: "bmad-agent-dev"` | implementazione login |
 | Quinn (qa) | `skill: "bmad-agent-qa"` | test sicurezza |
-
-## Campagna widget-only (2026-09-21)
-
-Canon: [README.md](README.md). Inventario: [livewire-inventory.md](livewire-inventory.md). SuperAdmin hook: [tech-spec.md](tech-spec.md). GitHub #100 / #101.
 
 ## Quick Flow
 

@@ -1,6 +1,18 @@
 ---
 title: Pandoc Documentation Generation Guide
 description: Generate theme documentation in multiple formats using Pandoc
+id: zero-docs-bmad-pandoc-guide
+slug: pandoc-guide
+document_type: guide
+type: guide
+category: ui-frontend
+status: active
+tags: []
+created: "2026-10-06"
+updated: "2026-10-08"
+qmd: "pandoc documentation generation guide"
+issues: []
+discussions: []
 ---
 
 # Pandoc Documentation Generation — Theme

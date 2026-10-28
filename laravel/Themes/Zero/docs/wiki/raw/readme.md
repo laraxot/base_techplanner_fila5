@@ -1,3 +1,20 @@
+---
+id: zero-docs-wiki-raw-readme
+slug: readme
+title: "readme"
+description: "![Laravel](https://laravel.com/)](https://laravel.com/)"
+document_type: index
+type: index
+category: documentation
+status: active
+tags: []
+created: "2026-10-08"
+updated: "2026-10-08"
+qmd: "readme"
+issues: []
+discussions: []
+---
+
 [![Module](https://img.shields.io/badge/Module-Raw LLM Wiki Sources-8B0000.svg)]()
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
 [![Filament](https://img.shields.io/badge/Filament-5-ffab00?style=for-the-badge)](https://filamentphp.com/)](https://filamentphp.com/)
@@ -24,7 +41,7 @@ Core module for the FixCity Platform.
 | Lingua | Link |
 |--------|------|
 | 🇮🇹 Presentazione | Questo file (`README.md`) |
-| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
+| 🇬🇧 Business card | [docs/readme-en.md](../../bmad/readme-en.md) |
 | 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
 
 ---

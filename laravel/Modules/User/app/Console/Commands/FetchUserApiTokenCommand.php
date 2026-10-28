@@ -7,6 +7,7 @@ namespace Modules\User\Console\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
 use Modules\User\Enums\FetchUserApiTokenExitCode;
+use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
 
@@ -34,7 +35,9 @@ class FetchUserApiTokenCommand extends Command
         // query diretta (non getUserByEmail, che lancia eccezione): serve il ramo "User not found" con exit code dedicato
         $user = XotData::make()->getUserClass()::query()->where('email', $userEmail)->first();
 
-        if ($user === null) {
+        // instanceof e non `=== null`: query() fa perdere a PHPStan l'intersezione Model&UserContract,
+        // e createToken() e' dichiarato su UserContract.
+        if (! $user instanceof UserContract) {
             $this->error('User not found!');
 
             return FetchUserApiTokenExitCode::UserNotFound->value;

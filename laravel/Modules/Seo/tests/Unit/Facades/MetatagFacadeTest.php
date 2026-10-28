@@ -6,10 +6,8 @@ namespace Modules\Seo\Tests\Unit\Facades;
 
 use Modules\Seo\Adapters\MetatagFacadeAdapter;
 use Modules\Seo\Facades\Metatag;
-use Modules\Seo\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
+uses(\Modules\Seo\Tests\TestCase::class);
 
 it('resolves metatag adapter through facade accessor', function (): void {
     $adapter = app(MetatagFacadeAdapter::class);

@@ -8,6 +8,15 @@ updated: "2026-06-18"
 related:
   - component-guide.md
   - customization.md
+id: zero-docs-bmad-naming-conventions
+slug: naming-conventions
+description: "Convenzioni di naming per mantenere coerenza e leggibilità del tema Zero in Laraxot PTVX."
+document_type: reference
+category: documentation
+created: "2026-10-06"
+qmd: "naming conventions - zero theme"
+issues: []
+discussions: []
 ---
 
 # Naming Conventions — Zero Theme

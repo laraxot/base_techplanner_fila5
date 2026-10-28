@@ -7,6 +7,7 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources\JobsWaitingResource\Widgets;
 
+use Modules\Xot\Filament\Widgets\XotBaseStatsOverviewWidget as BaseWidget;
 use Filament\Widgets\StatsOverviewWidget\Stat;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
@@ -14,12 +15,11 @@ use Modules\Job\Models\Job;
 use Modules\Job\Models\JobManager;
 use Modules\Job\Traits\FormatSeconds;
 use Modules\Xot\Actions\Cast\SafeEloquentCastAction;
-use Modules\Xot\Filament\Widgets\XotBaseStatsOverviewWidget;
 
 /**
  * --....
  */
-class JobsWaitingOverview extends XotBaseStatsOverviewWidget
+class JobsWaitingOverview extends BaseWidget
 {
     use FormatSeconds;
 

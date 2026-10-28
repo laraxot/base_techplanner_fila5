@@ -2,6 +2,11 @@
 bmad_status: active
 scope: ui-docs
 updated: 2026-10-06
+title: "status"
+type: note
+status: draft
+tags: [docs, ui, bmad]
+qmd: "status ui"
 ---
 
 BMAD STATUS — UI

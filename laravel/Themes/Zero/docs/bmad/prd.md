@@ -8,6 +8,14 @@ qmd: "prd zero theme"
 related:
   - "./00-index.md"
   - "./00-index.md"
+id: zero-docs-bmad-prd
+slug: prd
+description: "Specialized logic for Zero needs a dedicated, type-safe Theme to ensure maintainability."
+document_type: guide
+category: product-planning
+status: active
+issues: []
+discussions: []
 ---
 
 # PRD: Zero Theme
@@ -57,14 +65,6 @@ Theme Zero is the lightweight, performance-first foundation theme for the PTVX s
 
 <!-- Merged from PRD.md, which collided with this file on case-insensitive filesystems. -->
 
----
-title: "Product Requirements Document (PRD) - Zero Theme"
-theme: "Zero"
-type: concept
-tags: [PRD, theme, zero, frontend]
-created: 2026-08-04
-updated: 2026-08-04
----
 # Product Requirements Document (PRD) - Zero Theme
 
 **Theme**: Zero
@@ -138,11 +138,7 @@ The Zero theme provides a consistent, maintainable frontend experience using Bla
 ## 5. Technical Considerations
 
 ### Dependencies
-<<<<<<< HEAD
 - Laravel 13+
-=======
-- Laravel 12+
->>>>>>> laraxot/dev
 - Blade templates
 - Tailwind CSS v4
 - Vite build tool

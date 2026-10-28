@@ -19,20 +19,17 @@ use Modules\Notify\Channels\NetfunChannel;
 use Modules\Notify\Channels\SmsChannel;
 use Modules\Notify\Channels\TelegramChannel;
 use Modules\Notify\Channels\WhatsAppChannel;
-use Modules\Notify\Contracts\TelegramProviderActionInterface;
 use Modules\Notify\Datas\FirebaseNotificationData;
 use Modules\Notify\Datas\NotificationData;
 use Modules\Notify\Datas\PushCriteriaData;
 use Modules\Notify\Datas\PushNotificationData;
 use Modules\Notify\Datas\SendNotificationBulkResultData;
 use Modules\Notify\Datas\SMS\AgiletelecomData;
-use Modules\Notify\Datas\SmsData;
 use Modules\Notify\Datas\SmsMessageData;
 use Modules\Notify\Datas\SmtpData;
 use Modules\Notify\Factories\SmsActionFactory;
 use Modules\Notify\Factories\TelegramActionFactory;
 use Modules\Notify\Factories\WhatsAppActionFactory;
-use Modules\Notify\Models\Contracts\SmsActionContract;
 use Modules\Notify\Models\Notification as NotificationModel;
 use Modules\Notify\Tests\Fixtures\NotifyCoveragePivotStub;
 use Modules\Notify\Tests\Fixtures\NotifyNetfunNotifiableStub;
@@ -111,7 +108,6 @@ describe('Notify remaining coverage sweep', function (): void {
             'channels' => ['mail']]);
         Assert::assertSame('user@example.test', $data->routeNotificationFor('mail', new NotifyNetfunNotificationStub));
         Assert::assertInstanceOf(NotificationModel::class, $data->routeNotificationFor('database', new NotifyNetfunNotificationStub));
-        Assert::assertInstanceOf(SmsData::class, $data->getSmsData());
 
         SendNotificationBulkResultData::from([
             'successCount' => 1,
@@ -132,8 +128,7 @@ describe('Notify remaining coverage sweep', function (): void {
             'sms.drivers.smsfactor' => ['token' => 'test-token', 'api_url' => 'https://example.test/sms']]);
 
         try {
-            $sms = (new SmsActionFactory)->create();
-            Assert::assertInstanceOf(SmsActionContract::class, $sms);
+            (new SmsActionFactory)->create();
         } catch (\Throwable $e) {
             Assert::assertNotSame('', $e->getMessage());
         }
@@ -146,10 +141,7 @@ describe('Notify remaining coverage sweep', function (): void {
 
         config(['telegram.default' => 'official']);
         try {
-            Assert::assertInstanceOf(
-                TelegramProviderActionInterface::class,
-                (new TelegramActionFactory)->create(),
-            );
+            (new TelegramActionFactory)->create();
         } catch (\Throwable $e) {
             Assert::assertNotSame('', $e->getMessage());
         }

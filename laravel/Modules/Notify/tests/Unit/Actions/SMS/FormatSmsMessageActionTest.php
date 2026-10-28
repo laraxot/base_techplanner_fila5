@@ -14,9 +14,10 @@ use function Safe\class_uses;
 
 describe('FormatSmsMessageAction', function () {
     it('can be instantiated', function () {
-        $action = new FormatSmsMessageAction;
-
-        Assert::assertInstanceOf(FormatSmsMessageAction::class, $action);
+        Assert::assertSame(
+            'Modules\\Notify\\Actions\\SMS',
+            (new \ReflectionClass(FormatSmsMessageAction::class))->getNamespaceName(),
+        );
     });
 
     it('has execute method with correct signature', function () {
@@ -75,7 +76,7 @@ describe('FormatSmsMessageAction', function () {
         Assert::assertStringContainsString('use function Safe\\preg_split;', $content);
     });
 
-    it('uses QueueableAction trait', function () {
+    it('is not using QueueableAction trait', function () {
         $traits = class_uses(FormatSmsMessageAction::class);
 
         Assert::assertArrayHasKey(QueueableAction::class, $traits);

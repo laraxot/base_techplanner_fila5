@@ -1,8 +1,11 @@
 ---
-title: deep-recon-user
-module: User
+title: "User Module — Deep Recon (BMAD Deep Dive)"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "user module   deep recon (bmad deep dive) user"
 ---
-
 # User Module — Deep Recon (BMAD Deep Dive)
 
 **Status**: ⏳ In Progress

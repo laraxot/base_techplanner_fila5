@@ -14,9 +14,10 @@ use function Safe\class_uses;
 
 describe('GetMailLayoutAction', function () {
     it('can be instantiated', function () {
-        $action = new GetMailLayoutAction;
-
-        Assert::assertInstanceOf(GetMailLayoutAction::class, $action);
+        Assert::assertSame(
+            'Modules\\Notify\\Actions\\Mail',
+            (new \ReflectionClass(GetMailLayoutAction::class))->getNamespaceName(),
+        );
     });
 
     it('uses QueueableAction trait', function () {

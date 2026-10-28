@@ -6,11 +6,15 @@ tags: [code-audit, redundancy, dry, second-brain, theme]
 created: "2026-05-26"
 updated: "2026-05-26"
 owner: "Zero"
-<<<<<<< HEAD
 issue: "https://github.com/provtv/<repo progetto>/issues/150"
-=======
-issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/150"
->>>>>>> laraxot/dev
+id: zero-docs-bmad-code-redundancy-audit
+slug: code-redundancy-audit
+description: "Ridurre rumore, duplicazione e ambiguita' nel codice di questo theme, senza perdere conoscenza storica."
+document_type: source
+category: static-analysis
+qmd: "code redundancy audit - zero"
+issues: []
+discussions: []
 ---
 
 # Code redundancy audit — Zero

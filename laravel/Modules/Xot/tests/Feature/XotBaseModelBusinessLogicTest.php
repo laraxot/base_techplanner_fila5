@@ -14,6 +14,7 @@ use Modules\Xot\Models\Module;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Models\Traits\RelationX;
 use Modules\Xot\Models\XotBaseModel;
+use Modules\Xot\Tests\Fixtures\Models\TestConcreteBaseModel;
 use Modules\Xot\Tests\TestCase;
 use Modules\Xot\Traits\Updater;
 use PHPUnit\Framework\Assert;
@@ -23,9 +24,12 @@ use function Safe\unserialize;
 
 uses(TestCase::class);
 
+/**
+ * Classe concreta con nome: PHP non permette di serializzare classi anonime.
+ */
 function createXotBaseModelFixture(): BaseModel
 {
-    return new class extends BaseModel {};
+    return new TestConcreteBaseModel;
 }
 
 /**
@@ -43,8 +47,7 @@ describe('Xot Base Model Business Logic', function (): void {
         $baseModel = createXotBaseModelFixture();
 
         // Assert
-        Assert::assertInstanceOf(XotBaseModel::class, $baseModel);
-        Assert::assertInstanceOf(Model::class, $baseModel);
+        Assert::assertSame('id', $baseModel->getKeyName());
     });
 
     test('it has required traits', function (): void {
@@ -62,7 +65,7 @@ describe('Xot Base Model Business Logic', function (): void {
         $baseModel = createXotBaseModelFixture();
 
         // Assert
-        Assert::assertInstanceOf(BaseModel::class, $baseModel);
+        Assert::assertFalse($baseModel->exists);
     });
 
     test('it supports table name override', function (): void {
@@ -106,8 +109,7 @@ describe('Xot Base Model Business Logic', function (): void {
         $module = new Module;
 
         // Act & Assert
-        Assert::assertInstanceOf(XotBaseModel::class, $module);
-        Assert::assertInstanceOf(Model::class, $module);
+        Assert::assertSame('modules', $module->getTable());
     });
 
     test('it supports model configuration', function (): void {
@@ -198,19 +200,20 @@ describe('Xot Base Model Business Logic', function (): void {
 
         // Assert
         Assert::assertNotEmpty($json);
-        Assert::assertNotFalse($json);
     });
 
     test('it supports array conversion', function (): void {
         // Arrange
         $baseModel = createXotBaseModelFixture();
 
+        $baseModel->setAttribute('name', 'Test Model');
+
         // Act
         $array = $baseModel->toArray();
 
         // Assert
         Assert::assertIsArray($array);
-        Assert::assertNotEmpty($array);
+        Assert::assertSame('Test Model', $array['name']);
     });
 
     test('it supports json conversion', function (): void {

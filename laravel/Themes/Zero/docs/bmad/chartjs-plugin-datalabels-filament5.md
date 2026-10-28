@@ -6,11 +6,15 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "chartjs-plugin-datalabels with filament 5 chartwidget multiple labels"
 related:
-<<<<<<< HEAD
-=======
   - "./00-index.md"
->>>>>>> laraxot/dev
-  - "./00-index.md"
+id: zero-docs-bmad-chartjs-plugin-datalabels-filament5
+slug: chartjs-plugin-datalabels-filament5
+description: "This guide explains how to use chartjs-plugin-datalabels with Filament v5 chart widgets in the Zero theme context."
+document_type: how-to
+category: ui-frontend
+status: active
+issues: []
+discussions: []
 ---
 
 # chartjs-plugin-datalabels with Filament 5 ChartWidget (multiple labels)

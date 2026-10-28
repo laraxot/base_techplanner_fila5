@@ -5,6 +5,10 @@ module: UI
 related:
   - ./livewire-inventory.md
   - ../../Xot/docs/bmad/livewire-widget-project-context.md
+status: draft
+updated: 2026-10-07
+tags: [docs, ui, bmad]
+qmd: "context ui ui"
 ---
 
 # Context UI

@@ -6,11 +6,15 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "product requirements document prd"
 related:
-<<<<<<< HEAD
-=======
   - "./00-index.md"
->>>>>>> laraxot/dev
-  - "./00-index.md"
+id: zero-docs-bmad-product-requirements
+slug: product-requirements
+description: "Zero è il tema frontend principale per l'applicazione Laraxot PTVX. Fornisce un'interfaccia moderna, responsive e accessibile utilizzando Tailwind CSS, Vite, Flowbite e Alpine.js."
+document_type: guide
+category: product-planning
+status: active
+issues: []
+discussions: []
 ---
 
 # Product Requirements Document (PRD)

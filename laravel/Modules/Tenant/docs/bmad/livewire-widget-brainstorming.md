@@ -1,11 +1,17 @@
 ---
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "livewire widget brainstorming"
+issues: []
+discussions: []
 title: "Brainstorming — Tenant"
 type: brainstorming
 module: Tenant
 related:
   - ./livewire-inventory.md
+status: draft
 ---
-tags: [docs, tenant, bmad]
 
 # Brainstorming Tenant
 

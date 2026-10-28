@@ -11,7 +11,6 @@ use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Columns\ViewColumn;
 use Modules\Notify\Filament\Resources\NotificationTemplateResource\Pages\ListNotificationTemplates;
 use Modules\Notify\Filament\Resources\NotifyThemeResource;
 use Modules\Notify\Filament\Resources\NotifyThemeResource\RelationManagers\LinkableRelationManager;
@@ -79,6 +78,5 @@ test('linkable relation manager exposes text input form schema', function (): vo
 test('contact column is a view column with expected name', function (): void {
     $column = ContactColumn::make('contact');
 
-    Assert::assertInstanceOf(ViewColumn::class, $column);
     Assert::assertSame('contact', $column->getName());
 });

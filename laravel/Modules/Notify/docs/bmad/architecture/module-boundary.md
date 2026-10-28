@@ -6,6 +6,7 @@ module: Notify
 created: 2026-09-28
 updated: 2026-09-28
 qmd: "Notify architettura confini componenti PHP Laravel Filament"
+tags: [docs, notify, bmad]
 ---
 # Notify — architettura
 

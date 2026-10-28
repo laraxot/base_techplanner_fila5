@@ -4,6 +4,16 @@ type: "index"
 tags: [rules, theme, on-demand]
 module: "Zero"
 updated: 2026-05-12
+id: zero-docs-wiki-rules-index
+slug: index
+description: "Regole condivise rilevanti per il tema. Load on-demand."
+document_type: index
+category: documentation
+status: active
+created: "2026-09-24"
+qmd: "rules index"
+issues: []
+discussions: []
 ---
 
 # Rules — Zero Theme Wiki
@@ -11,11 +21,11 @@ updated: 2026-05-12
 > Regole condivise rilevanti per il tema. Load on-demand.
 
 ## Available Rules
-- [context-overflow-prevention](../../../../../../docs/wiki/rules/context-overflow-prevention.md) — prevenzione 262K token overflow; file vietati; tool output compression
+- [context-overflow-prevention](../concepts/context-overflow-prevention.md) — prevenzione 262K token overflow; file vietati; tool output compression
 
-- [filament-resource-property](../../../../../../docs/wiki/rules/filament-resource-property.md) — `$resource` nelle page Filament è `protected static string`, non `public static`
-- [xotbase-critical-rules](../../../../../../docs/wiki/rules/xotbase-critical-rules.md) — il tema riusa i guardrail XotBase/Laraxot, senza estensioni Filament dirette
-- [filament-rules-summary](../../../../../../docs/wiki/rules/filament-rules-summary.md) — riepilogo rapido su `->label()`, array key tipizzate e convenzioni schema
+- [filament-resource-property](../../../../../../bashscripts/ai/wiki/rules/filament-resource-property.md) — `$resource` nelle page Filament è `protected static string`, non `public static`
+- [xotbase-critical-rules](../../../../../../bashscripts/ai/wiki/rules/xotbase-critical-rules.md) — il tema riusa i guardrail XotBase/Laraxot, senza estensioni Filament dirette
+- [filament-rules-summary](../../../../../../bashscripts/ai/wiki/rules/filament-rules-summary.md) — riepilogo rapido su `->label()`, array key tipizzate e convenzioni schema
 
 ## Usage
 
@@ -25,4 +35,4 @@ qmd search "Zero theme rule filament" --limit 5
 
 ---
 
-**Upstream:** [Root Trigger Map](../../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
+**Upstream:** [Root Trigger Map](../../../../../../bashscripts/ai/wiki/rules/00-TRIGGER_MAP.md)

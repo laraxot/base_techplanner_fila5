@@ -212,5 +212,9 @@ ehthumbs.db
 
 # Root quality tools
 phpstan*
+# Le story di lane PHPStan stanno in stories/ e vanno versionate
+!stories/phpstan-*.story.md
+# Anche le story PHPStan fuori da stories/ (radice di docs/) vanno versionate
+!phpstan-*.story.md
 phpmd*
 rector.php

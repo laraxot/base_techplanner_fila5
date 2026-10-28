@@ -8,7 +8,9 @@ namespace Modules\Notify\Models;
 use Exception;
 use Illuminate\Contracts\Mail\Mailable;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Support\Carbon;
+use Modules\Notify\Database\Factories\MailTemplateFactory;
 use Spatie\MailTemplates\Interfaces\MailTemplateInterface;
 use Spatie\MailTemplates\Models\MailTemplate as SpatieMailTemplate;
 use Spatie\Sluggable\HasSlug;
@@ -73,6 +75,8 @@ use Spatie\Translatable\HasTranslations;
  */
 class MailTemplate extends SpatieMailTemplate implements MailTemplateInterface
 {
+    /** @use HasFactory<MailTemplateFactory> */
+    use HasFactory;
     use HasSlug;
 
     // use SoftDeletes;

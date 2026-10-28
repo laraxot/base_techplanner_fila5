@@ -1,12 +1,18 @@
 ---
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "livewire widget project context"
+issues: []
+discussions: []
 title: "Project context — Tenant"
 type: constitution
 module: Tenant
 related:
   - ./livewire-inventory.md
   - ../../Xot/docs/bmad/livewire-widget-project-context.md
+status: draft
 ---
-tags: [docs, tenant, bmad]
 
 # Context Tenant
 

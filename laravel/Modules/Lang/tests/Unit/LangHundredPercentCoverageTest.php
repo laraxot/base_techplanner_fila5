@@ -5,14 +5,9 @@ declare(strict_types=1);
 namespace Modules\Lang\Tests\Unit;
 
 use Filament\Actions\Action;
-use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
-use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Section;
-use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Filters\Filter;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
@@ -36,7 +31,6 @@ use Modules\Lang\Actions\SyncTranslationsAction;
 use Modules\Lang\Actions\TransArrayAction;
 use Modules\Lang\Actions\TransCollectionAction;
 use Modules\Lang\Actions\Translation\RecordMissingTranslationAction;
-use Modules\Lang\Actions\TranslatorAction;
 use Modules\Lang\Actions\WriteTranslationFileAction;
 use Modules\Lang\Adapters\TranslatorAdapter;
 use Modules\Lang\Casts\LangField;
@@ -176,6 +170,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         Assert::assertNotEmpty($moduleRows);
         Assert::assertSame($moduleRows[0]['path'], $sample);
         Assert::assertNotEmpty($allRows);
+        Assert::assertIsString($allRows[0]['key']);
         Assert::assertStringContainsString('lang::', $allRows[0]['key']);
     });
 
@@ -286,7 +281,7 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         Assert::assertTrue(Translation::query()->where('namespace', '*')->where('group', 'lonely')->whereNull('item')->exists());
     });
 
-    test('TranslatorAction and TranslatorAdapter cover missing keys and array results', function (): void {
+    test('TranslatorAdapter covers missing keys and array results', function (): void {
         langForceSqliteTranslations();
 
         $loader = new ArrayLoader;
@@ -296,17 +291,10 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
             'num' => 7,
         ]);
 
-        $action = new TranslatorAction($loader, 'it');
-        Assert::assertSame('Ciao', $action->get('messages.known'));
-        Assert::assertSame(['a' => 'b'], $action->get('messages.tree'));
-        Assert::assertSame('messages.num', $action->get('messages.num'));
-        $missingKey = 'messages.missing_'.uniqid('', true);
-        Assert::assertSame($missingKey, $action->get($missingKey));
-        $action->execute();
-
         $adapter = new TranslatorAdapter($loader, 'it');
         Assert::assertSame('Ciao', $adapter->get('messages.known'));
         Assert::assertSame(['a' => 'b'], $adapter->get('messages.tree'));
+        Assert::assertSame('messages.num', $adapter->get('messages.num'));
         $adapterMissingKey = 'messages.missing_'.uniqid('', true);
         Assert::assertSame($adapterMissingKey, $adapter->get($adapterMissingKey));
         Assert::assertGreaterThan(0, Translation::query()->count());
@@ -764,7 +752,6 @@ describe('Lang 100% — Models policies providers views', function (): void {
     test('Post linkable slug options and accessors without persistence', function (): void {
         $post = new Post;
         Assert::assertSame('guid', $post->getSlugOptions()->slugField);
-        Assert::assertInstanceOf(MorphTo::class, $post->linkable());
 
         $post->setRawAttributes(['post_type' => 'article', 'post_id' => '9']);
         Assert::assertSame('article 9', $post->getTitleAttribute(null));
@@ -883,13 +870,6 @@ describe('Lang 100% — Models policies providers views', function (): void {
         Assert::assertInstanceOf(TranslatorAdapter::class, app('translator'));
 
         $provider->registerFilamentLabel();
-        Assert::assertInstanceOf(Select::class, Select::make('s'));
-        Assert::assertInstanceOf(TextInput::class, TextInput::make('t'));
-        Assert::assertInstanceOf(TextEntry::class, TextEntry::make('e'));
-        Assert::assertInstanceOf(Section::class, Section::make('sec'));
-        Assert::assertInstanceOf(Filter::class, Filter::make('f'));
-        Assert::assertInstanceOf(TextColumn::class, TextColumn::make('c'));
-        Assert::assertInstanceOf(Action::class, Action::make('act'));
     });
 
     test('TranslatorTrait registerTranslator via probe', function (): void {

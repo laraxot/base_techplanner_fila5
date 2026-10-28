@@ -5,10 +5,23 @@ status: active
 module: Notify
 scope: documentation
 bmad_version: 1.0
-updated: 2026-10-06
+updated: 2026-10-20
+tags: [docs, notify, bmad]
+qmd: "decision log - modulo notify notify"
+related:
+  - ./filament-blueprint.md
+  - ../bmad-planning.md
 ---
 
 # Decision Log - Modulo Notify
+
+**Scopo:** consegnare messaggi multi-canale (mail, SMS, push, Telegram, WhatsApp) preference-aware con esiti osservabili, cosi' Fixcity e gli altri owner invocano Actions/canali invece di reinventare transport e template.
+
+## Hub (solo link)
+
+- Standing PHPStan: [phpstan-modules-zero-standing-order](../../../Xot/docs/wiki/memories/phpstan-modules-zero-standing-order.md)
+- `graphify-out/`: [graphify-out-gitignore](../../../Xot/docs/bmad/graphify-out-gitignore.md)
+- UI admin: [filament-blueprint.md](./filament-blueprint.md)
 
 ## Formato
 
@@ -20,6 +33,17 @@ updated: 2026-10-06
 - **Conseguenze:** Implicazioni della decisione
 
 ## Registro delle decisioni
+
+### 2026-10-20 — Allineamento no-Services (census sera)
+
+- **Stato:** `Modules/Notify/app/Services/` **assente** (0 file); invio/canali = Actions + Factory/Channel (decisione 2026-09-29 confermata). Campione `laraxot/dev` Notify = **0** sotto `app/Services/`. Merge che riesuma `SmsService` / `NotificationManager` → **delete-again**, ratchet Xot [NoServicesTest](../../../Xot/tests/Unit/Architecture/NoServicesTest.php).
+- **Track:** [Xot census BMAD](../../../Xot/docs/bmad/services-to-queueable-actions-census.md), [services-to-queueable-actions-filament-blueprint](../../../Xot/docs/bmad/services-to-queueable-actions-filament-blueprint.md).
+
+### 2026-10-20 — Gate PHPStan Modules — rieseguito OK
+
+- **Verifica:** `cd laravel && php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/Notify` (batch audit con User, Comment, Activity) → exit 0.
+- **Docs:** `md-filenames.py check` su `docs/` → 0 date/suffissi; ~646 file legacy con maiuscole in radice/storico — solo segnalazione, no rinomina automatica.
+- **Track:** [00-INDEX.md](../00-index.md), [phpstan-fixes.md](../phpstan-fixes.md), [phpstan-modules-zero-gate](../../../Xot/docs/stories/phpstan-modules-zero-gate.story.md), hub sopra.
 
 ### 2026-09-29
 **Decisione:** Usare Spatie Queueable Actions (`QueueableAction`) come pattern per tutta la logica di invio, migrando i precedenti Service
@@ -72,10 +96,11 @@ updated: 2026-10-06
 - FCM: token lungo >100 con `:`
 - WebPush: fallback per tutto il resto
 - APNs e WebPush sono "simulated" (nessuna chiamata API reale) — ritornano sempre `success: true`
-- 2026-10-06: ogni consegna simulata viene tracciata da `Actions\Push\LogSimulatedPushDeliveryAction` (`Log::notice`, token abbreviato) e i risultati topic includono `topic`; resta aperta la decisione se implementare il transport o far fallire (vedi `stories/2026-10-06-phpstan-cleanup-notify.dev.md`)
+- 2026-10-06: ogni consegna simulata viene tracciata da `Actions\Push\LogSimulatedPushDeliveryAction` (`Log::notice`, token abbreviato) e i risultati topic includono `topic`; resta aperta la decisione se implementare il transport o far fallire (vedi `stories/phpstan-cleanup-notify-dev.dev.md`)
+- 2026-10-06: ogni consegna simulata viene tracciata da `Actions\Push\LogSimulatedPushDeliveryAction` (`Log::notice`, token abbreviato) e i risultati topic includono `topic`; resta aperta la decisione se implementare il transport o far fallire (vedi `stories/phpstan-cleanup-notify.dev.md`)
 
 ### 2026-09-29
-**Decisione:** Notifiche programmate tramite Cache + Job (`SendScheduledPushNotification`)
+**Decisione:** Notifiche programmate tramite Cache + Queueable Action (`SendScheduledPushNotificationAction`)
 **Stato:** APPROVATA
 **Impatto:** Medio
 **Alternatives considerate:**
@@ -83,8 +108,8 @@ updated: 2026-10-06
 - Laravel Scheduler con query
 **Consegnenze:**
 - `SchedulePushNotificationAction` scrive payload in `Cache::put` con chiave `scheduled_push:{jobId}` e scadenza
-- `SendScheduledPushNotification::dispatch($jobId)->delay(...)`
-- Il Job legge dalla cache, invia, poi `Cache::forget()`
+- `ActionJob::dispatch(new SendScheduledPushNotificationAction, [$jobId])->delay(...)`
+- L'Action legge dalla cache, invia, poi `Cache::forget()`
 - Richiede sistema di cache configurato (non funziona con `array` driver in produzione)
 
 ### 2026-09-29

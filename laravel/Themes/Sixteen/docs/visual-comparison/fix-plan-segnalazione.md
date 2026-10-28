@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "fix plan segnalazione"
 issues: []
 discussions: []
+status: superseded
+superseded_by: fix-plan-ticket.md
 ---
 
 # Visual Parity Fix Plan - Segnalazione Pages
@@ -15,15 +17,6 @@ discussions: []
 **Goal**: Achieve ≥90% visual parity with design.comuni.it reference pages
 
 ---
-
-title: "fix plan segnalazione"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "fix plan segnalazione"
-issues: []
-discussions: []
 ## Executive Summary
 
 After analyzing all 8 pages, the main issues are:

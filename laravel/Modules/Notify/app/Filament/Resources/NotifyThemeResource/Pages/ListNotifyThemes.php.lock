@@ -1,0 +1,6 @@
+LOCKED at 2026-10-05T08:33:14+02:00
+Task: phpstan-modules-fix
+Agent: opencode
+Session: unknown
+PID: 15569
+PID note: subshell di lock.sh, gia' terminato — NON usarlo per giudicare il lock stale, guarda 'LOCKED at'

@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "implementation summary"
 issues: []
 discussions: []
+status: superseded
+superseded_by: implementation-sumy.md
 ---
 
 # Riepilogo Implementazione AddressesField
@@ -291,15 +293,6 @@ L'implementazione del componente `AddressesField` rappresenta un **caso esemplar
 Il componente non solo elimina duplicazione, ma stabilisce un **pattern replicabile** per futuri componenti riutilizzabili, creando una **culture of reusability** nel team di sviluppo.
 
 ---
-
-title: "implementation summary"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "implementation summary"
-issues: []
-discussions: []
 ## Collegamenti
 
 ### Documentazione Correlata

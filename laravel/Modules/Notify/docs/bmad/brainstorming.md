@@ -1,10 +1,9 @@
-<<<<<<< .merge_file_SfgyaG
 ---
 title: "Notify — brainstorming"
 type: brainstorming
 tags: [notify, brainstorming, risks, open-questions, decisions, channels]
 created: 2026-09-28
-updated: 2026-09-28
+updated: 2026-10-23
 qmd: "Notify brainstorming decisioni aperte scartate rischi canali notifica"
 related:
   - ./README.md
@@ -12,6 +11,7 @@ related:
   - ./brainstorming/module-opportunities.md
   - ./epics/module-roadmap.md
   - ./epics/notification-channels.epic.md
+status: draft
 ---
 
 # Notify — brainstorming
@@ -38,8 +38,8 @@ related:
 | `NotifyTheme` usa `linkable()` MorphTo | approvata | `app/Models/NotifyTheme.php:121` |
 | Canali esterni in `app/Channels/` (SMS, Telegram, WhatsApp, Netfun) | approvati | `app/Channels/` |
 | Merge config da env in `MergesNotifyConfigFromEnv` | approvato | `app/Providers/Concerns/MergesNotifyConfigFromEnv.php` |
-| Notifiche in coda tramite `SendNotificationJob` | approvato | `app/Jobs/SendNotificationJob.php` |
-| Push programmato in `SendScheduledPushNotification` | approvato | `app/Jobs/SendScheduledPushNotification.php` |
+| Notifiche in coda con la Queueable Action stessa (`->onQueue()->execute(...)`), senza Job: `SendNotificationJob` rimosso (story 4.27, [regola](../../../../../bashscripts/ai/wiki/rules/no-module-jobs-queueable-action.md)) | approvato | `app/Actions/SendNotificationAction.php`, `app/Actions/SendRecordsNotificationAction.php` |
+| Push programmato: `SchedulePushNotificationAction` accoda `SendScheduledPushNotificationAction` con `ActionJob::dispatch(...)->delay(...)` | approvato | `app/Actions/Push/SchedulePushNotificationAction.php` |
 | Migrazioni obsolete in `_archive_redundant/` non applicate | approvato | `database/migrations/_archive_redundant/` |
 
 ## Domande aperte
@@ -69,6 +69,49 @@ related:
 |---|---|
 | Refactor proposto in architettura | da marcare esplicitamente come proposta non applicata |
 
+## Idee, problemi e soluzioni (bozza integrata)
+
+Spunti provenienti da una bozza concorrente del file, ricontrollati sul codice il 2026-10-07.
+Percorsi relativi a `laravel/Modules/Notify/app`.
+
+### Idee
+
+- Un canale unico che colleghi record Eloquent, destinatario e template, usando `ChannelEnum` per risolvere l'indirizzo di consegna.
+- Selezione del driver tramite factory (`Factories/SmsActionFactory.php`, `TelegramActionFactory.php`, `WhatsAppActionFactory.php`): mappano config su classe senza `match()` nel codice chiamante.
+- Template a strati: `MailTemplate` (Spatie, DB), `NotificationTemplate` (compilazione Blade) e `NotifyTheme` (segnaposto `##var##`).
+- Push multipiattaforma (FCM, APNs, WebPush) con piattaforma dedotta dal formato del token.
+- Log di consegna centralizzato in `NotificationLog` (`STATUS_PENDING`, `STATUS_PROCESSING`, `STATUS_SENT`, `STATUS_DELIVERED`, `STATUS_FAILED`, `STATUS_OPENED`, `STATUS_CLICKED`).
+
+### Problemi aperti (ancora veri)
+
+| Problema | Evidenza |
+|---|---|
+| `SendSmsAction` cerca `Actions\SMS\SmsEngines\{Driver}Engine`, namespace senza engine: lancia sempre `RuntimeException` | `Actions/SMS/SendSmsAction.php` (docblock: comportamento preservato dalla migrazione Services a Actions, nessun fix funzionale) |
+| Engine Duocircle non implementato | `Actions/Mail/Engines/Duocircle/SendDuocircleMailAction.php` lancia `RuntimeException('WIP ...')` |
+| Notifica appuntamento ridotta a stub: i modelli `Patient`/`Appointment` non esistono nel progetto | `Actions/SendAppointmentNotificationAction.php` (import commentati, solo `Log::debug`) |
+| `SmtpMailSendAction` lancia subito `RuntimeException('Removed debug dddx')`; il resto del corpo e' commentato | `Actions/SmtpMailSendAction.php` righe 15 e seguenti |
+| `WhatsAppNotification::via()` ritorna la stringa `'whatsapp'` e non la classe del canale | `Notifications/WhatsAppNotification.php` riga 67 |
+| `getTemplateStats()` e `getRecipientStats()` hanno il corpo commentato, quindi non calcolano nulla | `Actions/NotificationManager.php` righe 117 e 146; stessa situazione nella copia `Services/NotificationManager.php` |
+| APNs e WebPush restano simulati (`success => true` con messaggio "simulated") | `Actions/PushNotificationPlatformDelivery.php` righe 118 e 143 (e varianti topic) |
+| Possibile duplicazione tra `SendPushNotificationAction` e le `Push/SendPushTo*Action` | da verificare: `Actions/SendPushNotificationAction.php` vs `Actions/Push/SendPushToPlatformAction.php` (quest'ultima e' usata da `SendPushToDeviceAction` e `SendPushToDevicesAction`) |
+
+### Soluzioni proposte (non applicate)
+
+- Sostituire `SendSmsAction` con `SmsActionFactory` e driver che implementano `SmsActionContract` (le action `Actions/SMS/Send*SMSAction.php` esistono gia').
+- Implementare o rimuovere `SendDuocircleMailAction`.
+- Rimuovere `SendAppointmentNotificationAction` oppure iniettare i modelli dipendenti tramite contract.
+- Riscrivere `SmtpMailSendAction` con `Symfony\Component\Mailer\Transport::fromDsn()`.
+- Far ritornare a `WhatsAppNotification::via()` la classe `WhatsAppChannel::class`.
+- Scegliere una action push primaria (con `PushNotificationPlatformDelivery`) e deprecare le duplicate.
+- Implementare le statistiche di `NotificationManager` con query reali su `NotificationLog`.
+
+### Domande aperte
+
+- Il canale `mail` ha due percorsi: `NotificationResource` via `GenericNotification` e `RecordNotification` via `SpatieEmail` (TemplateMailable). Sono paralleli per scelta o da unificare?
+- `NotificationTemplate` (Blade) e `MailTemplate` (Spatie DB) coesistono: doppio motore voluto o uno e' legacy? Stessa domanda per `NotifyTheme` con `##var##`.
+- APNs e WebPush simulati sono accettabili per un MVP o sono un gap da colmare?
+- `MergesNotifyConfigFromEnv` e `ResolveTenantConfigValueAction` suggeriscono multi-tenant: il fallback `Mail::alwaysTo()` di `NotifyServiceProvider::boot()` (riga 37) vale per tutti i tenant?
+
 ## Vedi anche
 
 - [README](./README.md)
@@ -76,42 +119,3 @@ related:
 - [Epic roadmap](./epics/module-roadmap.md)
 - [Epic channels](./epics/notification-channels.epic.md)
 - [Module opportunities (shard)](./brainstorming/module-opportunities.md)
-=======
-# Brainstorming - Modulo Notify
-
-## Idee iniziali
-
-- [IDEA 1] Un canale unico di notifica che colleghi record Eloquent → destinatario → template, usando `ChannelEnum` per risolvere l'indirizzo di consegna
-- [IDEA 2] Factory-driven driver selection: `SmsActionFactory`, `WhatsAppActionFactory`, `TelegramActionFactory` mappano config→classe senza `match()` in codice
-- [IDEA 3] Template engine a strati: `MailTemplate` (Spatie DB), `NotificationTemplate` (Blade inline), `NotifyTheme` (Mustache ##var##)
-- [IDEA 4] Notifica push multi-piattaforma (FCM, APNs, WebPush) con rilevamento automatico della piattaforma dal formato del token
-- [IDEA 5] Logging di consegna centralizzato: `NotificationLog` con stati PENDING → SENT → DELIVERED → OPENED → CLICKED
-
-## Problemi da risolvere
-
-- [PROBLEMA 1] `SendSmsAction` risolve `SmsEngines\{Driver}Engine` namespace inesistente — genera sempre `RuntimeException`
-- [PROBLEMA 2] `SendDuocircleMailAction` lancia `RuntimeException('WIP')` — engine Duocircle non implementato
-- [PROBLEMA 3] `SendAppointmentNotificationAction` è uno stub — i modelli `Patient`/`Appointment` non esistono nel progetto
-- [PROBLEMA 4] `SmtpMailSendAction` lancia `RuntimeException('Removed debug dddx')` — log
-- [PROBLEMA 5] `WhatsAppNotification::via()` restituisce hardcoded `['whatsapp']` invece della classe `WhatsAppChannel::class`
-- [PROBLEMA 6] `NotificationManager::getTemplateStats()` e `getRecipientStats()` sono commentati — restituiscono sempre 0
-- [PROBLEMA 7] `SendPushNotificationAction` e `SendPushToPlatformAction` sono duplicati — entrambi gestiscono FCM/APNs/WebPush con logica sovrapposta
-
-## Soluzioni proposte
-
-- [SOLUZIONE 1] Sostituire `SendSmsAction` con `SmsActionFactory` + driver actions implementanti `SmsActionContract`
-- [SOLUZIONE 2] Rimuovere `SendDuocircleMailAction` o implementarlo; il pattern `Engines/{Driver}/Send{Driver}MailAction` è corretto ma Duocircle è WIP
-- [SOLUZIONE 3] Rimuovere `SendAppointmentNotificationAction` o iniettare i modelli dipendenti come contract
-- [SOLUZIONE 4] Implementare `SmtpMailSendAction` con `Symfony\Component\Mailer\Transport::fromDsn()`
-- [SOLUZIONE 5] Correggere `WhatsAppNotification::via()` per restituire `[WhatsAppChannel::class]`
-- [SOLUZIONE 6] Unificare le notifiche push: scegliere `SendPushNotificationAction` (con `PushNotificationPlatformDelivery`) come action primaria, deprecare le `SendPushTo*Action` duplicate
-- [SOLUZIONE 7] Implementare `NotificationManager::getTemplateStats()` usando `NotificationLog` query reali
-
-## Domande aperte
-
-- [DOMANDA 1] Qual è la strategia per la coerenza del canale `mail`? `NotificationResource` usa `mail` via `GenericNotification`, mentre `RecordNotification` usa `SpatieEmail` (TemplateMailable) — i due percorsi sono paralleli o uno debolezza da unificare?
-- [DOMANDA 2] `NotificationTemplate` (Blade compile) e `MailTemplate` (Spatie DB) coesistono — vero doppio motore di template o uno è legacy?
-- [DOMANDA 3] APNS e WebPush sono "simulated" (ritornano sempre `success: true` senza chiamata API) — questo è voluto per MVP o è un gap da riempire?
-- [DOMANDA 4] `NotifyTheme::Get` usa `##var##` Mustache, `NotificationTemplate::compile` usa `Blade::render` — si unifica su un motore?
-- [DOMANDA 5] Il `MergesNotifyConfigFromEnv` trait e `ResolveTenantConfigValueAction` suggeriscono multi-tenant — il fallback `Mail::alwaysTo()` configurato in `NotifyServiceProvider::boot()` applica a tutti i tenant?
->>>>>>> .merge_file_bJd1u0

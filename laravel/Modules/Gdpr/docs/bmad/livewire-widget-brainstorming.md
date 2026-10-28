@@ -10,6 +10,7 @@ type: brainstorming
 module: Gdpr
 related:
   - ./livewire-inventory.md
+status: draft
 ---
 
 # Brainstorming

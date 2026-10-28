@@ -14,7 +14,7 @@ use Modules\Xot\Providers\XotBaseServiceProvider;
  * per garantire la corretta risoluzione dei path secondo la struttura dei moduli.
  *
  * Nessun binding Geo/Map/Location: dominio geografico non appartiene a UI
- * (vedi docs/geo-boundary.md). In questo progetto il modulo Geo non è presente.
+ * (vedi docs/geo-boundary.md): vive nel modulo Geo, che può dipendere da UI e non il contrario.
  *
  * @phpstan-type ModuleConfig array{name: string, alias: string, description: string, keywords: array<int, string>, priority: int, providers: array<int, class-string>}
  */

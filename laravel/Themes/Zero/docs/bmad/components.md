@@ -6,11 +6,15 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "componenti del tema zero"
 related:
-<<<<<<< HEAD
-=======
   - "./00-index.md"
->>>>>>> laraxot/dev
-  - "./00-index.md"
+id: zero-docs-bmad-components
+slug: components
+description: "Il tema Zero fornisce una serie di componenti Blade riutilizzabili per costruire interfacce consistenti e moderne. Tutti i componenti sono progettati per essere accessibili,..."
+document_type: guide
+category: ui-frontend
+status: active
+issues: []
+discussions: []
 ---
 
 # Componenti del Tema Zero

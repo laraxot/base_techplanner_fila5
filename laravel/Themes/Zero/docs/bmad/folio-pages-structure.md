@@ -6,15 +6,9 @@ created: 2026-07-22
 updated: 2026-07-22
 qmd: "folio pages structure theme zero ptvx auth home index no semantic directories"
 issues:
-<<<<<<< HEAD
   - https://github.com/provtv/<repo progetto>/issues/124
 discussions:
   - https://github.com/laraxot/<repo progetto>/discussions/273
-=======
-  - https://github.com/provtv/base_ptv_fila5/issues/124
-discussions:
-  - https://github.com/laraxot/base_fixcity_fila5/discussions/273
->>>>>>> laraxot/dev
   - https://github.com/laraxot/platform/discussions/273
 related:
   - ./architecture.md
@@ -22,6 +16,12 @@ related:
   - ../../One/docs/folio-pages-structure.md
   - ../../../../docs/wiki/rules/no-semantic-folio-page-directories.md
   - ../../../../bashscripts/tools/verify-no-semantic-folio-pages.sh
+id: zero-docs-bmad-folio-pages-structure
+slug: folio-pages-structure
+description: "Stesso contratto FO di Theme One su ptvx: pages/ = shell tema, non albero di domini editoriali."
+document_type: concept
+category: ui-frontend
+status: active
 ---
 
 # Folio pages — Theme Zero (ptvx)
@@ -43,32 +43,22 @@ resources/views/pages/
 
 - **DRY:** login/home restano nel tema; business logic nei moduli.
 - **KISS:** niente `pages/dashboard` / `pages/profile` come cartelle — esempi storici nei docs Zero non sono licenza a crearli.
-<<<<<<< HEAD
 - <nome progetto>/Sixteen (`[container0]`) **non** è presente in questo repo; non forzarlo qui.
 
 ## Provenienza
 
 Studiato (read-only) lo script/canon progetto corrente Sixteen; su Zero si applica forward-only lo stesso divieto semantic dirs senza forzare `container0`/`tests` — il pattern `[container0]` di Sixteen **non** è presente in questo repo, non va forzato qui.
-=======
-- Fixcity/Sixteen (`[container0]`) **non** è presente in questo repo; non forzarlo qui.
-
-## Provenienza
-
->>>>>>> laraxot/dev
 Studiato (read-only) lo script/canon Fixcity Sixteen; su Zero si applica forward-only lo stesso divieto semantic dirs senza forzare `container0`/`tests`.  
 - progetto corrente/Sixteen (`[container0]`) **non** è presente in questo repo; non forzarlo qui.
 
 ## Provenienza
 
 Studiato (read-only) lo script/canon progetto corrente Sixteen; su Zero si applica forward-only lo stesso divieto semantic dirs senza forzare `container0`/`tests`.  
-<<<<<<< HEAD
 Studiato (read-only) lo script/canon progetto corrente Sixteen; su Zero si applica forward-only lo stesso divieto semantic dirs senza forzare `container0`/`tests` — il pattern `[container0]` di Sixteen **non** è presente in questo repo, non va forzato qui.
-=======
->>>>>>> laraxot/dev
 Git: `git show` / basi sibling — **mai** restore ([git-forward-only](../../../../docs/wiki/rules/git-forward-only.md)).
 
 ## Enforcement
 
 [`verify-no-semantic-folio-pages.sh`](../../../../bashscripts/tools/verify-no-semantic-folio-pages.sh) — greppa **tutti** i temi con `pages/`, fallisce solo su cartelle semantiche vietate; richiede `[container0]` solo se tema = Sixteen o pattern già adottato.
 
-Dettaglio parallelo: [One folio-pages-structure](../../One/docs/folio-pages-structure.md).
+Dettaglio parallelo: [One folio-pages-structure](./folio-pages-structure.md).

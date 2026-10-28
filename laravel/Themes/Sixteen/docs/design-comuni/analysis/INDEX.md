@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "INDEX"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Design Comuni Pages - HTML Structure Analysis Index
@@ -117,5 +118,5 @@ Analizzate tutte le pagine di test confrontando:
 
 ## Extra Reports
 
-- [live-parity-2026-04-04.md](../live-parity-2026-04-04.md) - live screenshot findings for lista-risorse, amministrazione, ticket-list
-- [LIVE_BODY_PARITY_REPORT.md](../LIVE_BODY_PARITY_REPORT.md) - current live body audit from the running app
+- [live-parity-2026-04-04.md](../live-parity.md) - live screenshot findings for lista-risorse, amministrazione, ticket-list
+- [LIVE_BODY_PARITY_REPORT.md](../live-body-parity-report.md) - current live body audit from the running app

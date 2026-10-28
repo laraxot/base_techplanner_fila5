@@ -46,21 +46,6 @@ function groupColumnViewTableBag(): array
     ];
 }
 
-// Local test enum for testing BackedEnum with HasLabel
-enum TestWorkerType: string
-{
-    case Dip = 'dip';
-    case Fun = 'fun';
-
-    public function getLabel(): string
-    {
-        return match ($this) {
-            self::Dip => 'Dipendente',
-            self::Fun => 'Funzionario',
-        };
-    }
-}
-
 // Test GroupColumn class
 describe('GroupColumn class', function (): void {
     it('can be instantiated with make()', function (): void {

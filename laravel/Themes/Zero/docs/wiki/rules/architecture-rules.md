@@ -2,6 +2,17 @@
 title: architecture rules — Theme Zero
 type: reference
 updated: 2026-06-18
+id: zero-docs-wiki-rules-architecture-rules
+slug: architecture-rules
+description: "Themes follow the same directory structure standards as Modules."
+document_type: reference
+category: architecture
+status: active
+tags: []
+created: "2026-10-08"
+qmd: "architecture rules - theme zero"
+issues: []
+discussions: []
 ---
 
 # Architecture Rules — Theme Zero

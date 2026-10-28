@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Datas;
 
-use Illuminate\Support\Collection;
 use Modules\Notify\Datas\FirebaseNotificationData;
 use Modules\Notify\Datas\NetfunSmsData;
 use Modules\Notify\Datas\NetfunSmsMessage;
@@ -91,7 +90,6 @@ test('send notification bulk result data keeps counters and errors collection', 
         totalProcessed: 4,
     );
 
-    Assert::assertInstanceOf(Collection::class, $result->errors);
     Assert::assertSame(3, $result->successCount);
     Assert::assertSame(4, $result->totalProcessed);
     Assert::assertSame(1, $result->errorCount);
@@ -105,5 +103,5 @@ test('firebase notification data fromType fills type and translations structure'
     Assert::assertSame('ticket_created', $data->type);
     Assert::assertNotSame('', $data->title);
     Assert::assertNotSame('', $data->body);
-    Assert::assertNotEmpty($data->data);
+    Assert::assertSame([], $data->data);
 });

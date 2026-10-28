@@ -4,6 +4,10 @@ type: decision-log
 module: UI
 related:
   - ./livewire-inventory.md
+status: draft
+updated: 2026-10-07
+tags: [docs, ui, bmad]
+qmd: "decision log ui"
 ---
 
 # Decision log

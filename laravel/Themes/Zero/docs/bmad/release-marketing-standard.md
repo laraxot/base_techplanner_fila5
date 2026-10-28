@@ -5,11 +5,15 @@ status: approved
 tags: [release, semantic-versioning, changelog, readme, marketing]
 created: "2026-05-26"
 updated: "2026-05-26"
-<<<<<<< HEAD
 issue: "https://github.com/provtv/<repo progetto>/issues/153"
-=======
-issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/153"
->>>>>>> laraxot/dev
+id: zero-docs-bmad-release-marketing-standard
+slug: release-marketing-standard
+description: "Ogni modulo/tema deve essere pubblicabile, comprensibile e desiderabile: workflow release, changelog automatico e README vetrina."
+document_type: reference
+category: product-planning
+qmd: "release e readme marketing - zero"
+issues: []
+discussions: []
 ---
 
 # Release e README marketing — Zero

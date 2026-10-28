@@ -11,7 +11,7 @@ use Modules\Seo\Actions\Metatag\ReplaceMetatagDataAction;
 use Modules\Seo\Contracts\MetatagDataContract;
 
 /**
- * Facade adapter: delega ogni setter a QueueableAction, mantiene API legacy MetatagService.
+ * Facade adapter: delega ogni setter a QueueableAction, mantiene la stessa API dell'ex MetatagService (rimosso).
  */
 final class MetatagFacadeAdapter
 {
@@ -21,7 +21,7 @@ final class MetatagFacadeAdapter
     }
 
     /**
-     * @param  array<string, mixed>  $data
+     * @param array<string, mixed> $data
      */
     public function set(array $data): void
     {
@@ -44,7 +44,7 @@ final class MetatagFacadeAdapter
     }
 
     /**
-     * @param  array<string, string>  $colors
+     * @param array<string, string> $colors
      */
     public function setColors(array $colors): void
     {

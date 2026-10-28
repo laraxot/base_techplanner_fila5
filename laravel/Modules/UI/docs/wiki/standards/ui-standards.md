@@ -16,6 +16,7 @@ related:
   - "./form-standards-1.md"
   - "./form-standards.md"
   - "./performance.md"
+status: draft
 ---
 
 # Standard UI
@@ -176,4 +177,4 @@ $spacers: (
 ## 🔗 Collegamenti
 - [Performance](./performance.md)
 - [Accessibilità](./accessibility.md)
-- [Componenti Base](../base-components.md)
+- [Componenti Base](../../base-components.md)

@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "07 documentation"
 issues: []
 discussions: []
+status: superseded
+superseded_by: documentation.md
 ---
 
 

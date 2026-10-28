@@ -20,6 +20,7 @@ Root wiki per regole e concetti riusabili dagli agenti AI su TechPlanner.
 
 ## Concepts
 
+- [Contratto persistente degli agenti](./concepts/agent-persistence-contract.md)
 - [Git collision prevention and repair](./how-to/git-merge-marker-sweep.md) (how-to + recovery)
 - Public theme resolution: `laravel/docs/wiki/concepts/public-theme-resolution-and-vite-assets.md` (se presente) oppure `docs/pub_theme_namespace_rule.md`
 

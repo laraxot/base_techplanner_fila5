@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "phpstan return type errors"
 issues: []
 discussions: []
+status: superseded
+superseded_by: phpstan-return-type-errors.md
 ---
 
 # PHPStan Return Type Mismatch Errors
@@ -265,5 +267,5 @@ grep -n "Attribute.*string" Modules/*/Models/*.php | grep -v "SafeStringCastActi
 
 - [Root PHPStan Rules](../../../../docs/project/phpstan_rules.md)
 - [Geo Module Structure](./structure.md)
-- [Class Not Found Errors](./class_not_found_errors.md)
+- [Class Not Found Errors](../class_not_found_errors.md)
 

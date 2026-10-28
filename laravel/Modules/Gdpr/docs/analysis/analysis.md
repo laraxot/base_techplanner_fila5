@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "analysis"
 issues: []
 discussions: []
+status: superseded
+superseded_by: ../analysis.md
 ---
 
 # Gdpr Module Analysis

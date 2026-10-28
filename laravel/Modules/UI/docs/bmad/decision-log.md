@@ -2,6 +2,11 @@
 bmad_status: active
 scope: ui-docs
 updated: 2026-10-06
+title: "Decision Log - Modulo UI"
+type: note
+status: draft
+tags: [docs, ui, bmad]
+qmd: "decision log - modulo ui ui"
 ---
 
 # Decision Log - Modulo UI

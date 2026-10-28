@@ -5,6 +5,10 @@ module: UI
 related:
   - ./livewire-inventory.md
   - ./livewire-widget-prd.md
+status: draft
+updated: 2026-10-07
+tags: [docs, ui, bmad]
+qmd: "architecture ui ui"
 ---
 
 # Architecture UI

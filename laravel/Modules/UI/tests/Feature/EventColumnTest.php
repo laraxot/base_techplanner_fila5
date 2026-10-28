@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Modules\UI\Filament\Tables\Columns\EventColumn;
 
@@ -17,6 +18,6 @@ it('allows a smaller event projection', function (): void {
     $fields = EventColumn::make()->fields(['name', 'start_date'])->getFields();
 
     expect($fields)->toHaveCount(2)
-        ->and(array_map(static fn ($column): string => $column->getName(), $fields))
+        ->and(array_map(static fn (Column $column): string => $column->getName(), $fields))
         ->toBe(['name', 'start_date']);
 });

@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Cms\Actions;
 
-use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Mcamara\LaravelLocalization\LaravelLocalization as LaravelLocalizationManager;
 
 use function Safe\preg_match;

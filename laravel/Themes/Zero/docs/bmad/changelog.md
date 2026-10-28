@@ -1,3 +1,21 @@
+---
+id: zero-docs-bmad-changelog
+slug: changelog
+title: "Changelog"
+description: "Tutte le variazioni importanti di Zero saranno generate automaticamente da semantic-release."
+document_type: guide
+type: guide
+category: documentation
+status: superseded
+tags: []
+created: "2026-10-06"
+updated: "2026-10-08"
+qmd: "changelog"
+issues: []
+discussions: []
+superseded_by: ../changelog.md
+---
+
 # Changelog
 
 Tutte le variazioni importanti di Zero saranno generate automaticamente da semantic-release.
@@ -6,17 +24,6 @@ Tutte le variazioni importanti di Zero saranno generate automaticamente da seman
 
 <!-- Merged from changelog.md, which collided with this file on case-insensitive filesystems. -->
 
----
-title: Changelog — Zero Theme
-module: Zero
-type: reference
-status: approved
-tags: [version, history, releases, changelog]
-updated: "2026-06-18"
-related:
-  - ./readme.md
-  - ../readme.md
----
 
 # Changelog — Zero Theme
 
@@ -235,8 +242,8 @@ Current known issues:
 
 ## Related Files
 
-- [README.md](./readme.md) — Theme overview
+- [README.md](./theme-overview.md) — Theme overview
 - [Component Guide](./component-guide.md) — Components reference
 - [Customization Guide](./customization.md) — How to extend
-- [../readme.md](../readme.md) — Root theme README (marketing)
+- [../readme.md](../README.md) — Root theme README (marketing)
 - [../../docs/wiki/themes/](../../../../docs/wiki/themes/) — Project-wide theme docs

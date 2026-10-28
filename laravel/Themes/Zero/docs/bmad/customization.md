@@ -6,11 +6,15 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "personalizzazione del tema zero"
 related:
-<<<<<<< HEAD
-=======
   - "./00-index.md"
->>>>>>> laraxot/dev
-  - "./00-index.md"
+id: zero-docs-bmad-customization
+slug: customization
+description: "Il tema Zero è progettato per essere altamente personalizzabile. Questa guida ti aiuterà a personalizzare l'aspetto e il comportamento del tema secondo le tue esigenze."
+document_type: guide
+category: ui-frontend
+status: active
+issues: []
+discussions: []
 ---
 
 # Personalizzazione del Tema Zero

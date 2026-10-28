@@ -119,7 +119,7 @@ class NotifyTheme extends BaseModel
     /** @return MorphTo<Model, $this> */
     public function linkable(): MorphTo
     {
-        return $this->morphTo('post');
+        return $this->morphTo(__FUNCTION__, 'post_type', 'post_id');
     }
 
     /** @return array<string, string> */

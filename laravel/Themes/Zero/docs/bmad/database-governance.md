@@ -6,11 +6,15 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "documentation"
 related:
-<<<<<<< HEAD
-=======
   - "./00-index.md"
->>>>>>> laraxot/dev
-  - "./00-index.md"
+id: zero-docs-bmad-database-governance
+slug: database-governance
+description: "Una sola migration per tabella di dominio; le nuove colonne passano da tableUpdate() o da una alter con nome esplicito."
+document_type: guide
+category: database
+status: active
+issues: []
+discussions: []
 ---
 
 ## migrazioni allineate con laraxot

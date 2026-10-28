@@ -1,11 +1,4 @@
 ---
-qmd: "livewire-widget-brainstorming"
-issues: []
-discussions: []
-title: "Livewire Widget Brainstorming"
----
-
----
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
@@ -17,6 +10,7 @@ type: brainstorming
 module: Cms
 related:
   - ./livewire-inventory.md
+status: draft
 ---
 
 # Brainstorming

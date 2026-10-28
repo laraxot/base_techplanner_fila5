@@ -8,8 +8,8 @@ use Modules\Gdpr\Providers\EventServiceProvider;
 use Modules\Xot\Providers\XotBaseEventServiceProvider;
 use PHPUnit\Framework\Assert;
 
-test('event_service_provider_extends_xot_base_event_service_provider', function (): void {
-    $provider = new EventServiceProvider(app());
+use function Safe\class_parents;
 
-    Assert::assertInstanceOf(XotBaseEventServiceProvider::class, $provider);
+test('event_service_provider_extends_xot_base_event_service_provider', function (): void {
+    Assert::assertArrayHasKey(XotBaseEventServiceProvider::class, class_parents(EventServiceProvider::class));
 });

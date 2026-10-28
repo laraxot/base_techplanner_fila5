@@ -97,6 +97,18 @@ class RegisterDynamicRoutesAction
         return $prefix;
     }
 
+    private function stripPattern(string $input, string $pattern): string
+    {
+        $replaced = preg_replace($pattern, '', $input);
+
+        return is_string($replaced) ? $replaced : $input;
+    }
+
+    private function stripCurlyBraces(string $value): string
+    {
+        return str_replace(['{', '}'], '', $value);
+    }
+
     /**
      * @param  array<string, mixed>  $v
      */
@@ -111,10 +123,8 @@ class RegisterDynamicRoutesAction
         Assert::string($name = $v['name']);
         $as = mb_strtolower($name);
         $as = str_replace('/', '.', $as);
-
-        $replaced = preg_replace('/{.*}./', '', $as);
-        $as = is_string($replaced) ? $replaced : $as;
-        $as = str_replace(['{', '}'], '', $as);
+        $as = $this->stripPattern($as, '/{.*}./');
+        $as = $this->stripCurlyBraces($as);
 
         return $as.'.';
     }
@@ -131,7 +141,7 @@ class RegisterDynamicRoutesAction
         }
 
         Assert::string($namespace = $v['name']);
-        $namespace = str_replace(['{', '}'], '', $namespace);
+        $namespace = $this->stripCurlyBraces($namespace);
         if ($namespace === '') {
             return null;
         }
@@ -154,13 +164,11 @@ class RegisterDynamicRoutesAction
         Assert::nullOrString($v['act']);
 
         $act = (string) ($v['act'] ?? '');
-
-        $replaced = preg_replace('/{.*}\//', '', $act);
-        $act = is_string($replaced) ? $replaced : $act;
+        $act = $this->stripPattern($act, '/{.*}\//');
         $act = str_replace('/', '_', $act);
 
         $camelCase = Str::camel($act);
-        $act = str_replace(['{', '}'], '', $camelCase);
+        $act = $this->stripCurlyBraces($camelCase);
 
         return Str::camel($act);
     }
@@ -178,7 +186,7 @@ class RegisterDynamicRoutesAction
 
         Assert::string($name = $v['name']);
         $paramName = 'id_'.$name;
-        $paramName = str_replace(['{', '}'], '', $paramName);
+        $paramName = $this->stripCurlyBraces($paramName);
 
         return mb_strtolower($paramName);
     }
@@ -235,7 +243,8 @@ class RegisterDynamicRoutesAction
         }
 
         Assert::string($v['controller'] = $v['name']);
-        $v['controller'] = str_replace(['/', '{', '}'], ['_', '', ''], $v['controller']);
+        $v['controller'] = str_replace('/', '_', $v['controller']);
+        $v['controller'] = $this->stripCurlyBraces($v['controller']);
         $v['controller'] = Str::studly($v['controller']);
         $v['controller'] .= 'Controller';
 

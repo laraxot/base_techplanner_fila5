@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "homepage structure"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Struttura della Homepage
@@ -36,6 +37,13 @@ La homepage di test e' composta da quattro livelli:
 - `laravel/Themes/Sixteen/resources/views/pages/tests/[slug].blade.php`
 
 Questo file gestisce gli URL `/it/tests/*` e costruisce lo slug Cms in forma `tests.<slug>`.
+Non va creato un file `pages/tests/homepage.blade.php`: `homepage` è soltanto
+un valore di slug e segue lo stesso percorso di ogni altra pagina.
+Quando lo slug è vuoto, il contratto CMS è `tests.index`, non `tests`, perché
+la pagina indice usa `tests.index.json`.
+
+L'unica eccezione è `pages/tests/index.blade.php`, riservata al catalogo
+`/it/tests`; non è il renderer della homepage.
 
 ### Content source
 - `laravel/config/local/fixcity/database/content/pages/tests.homepage.json`
@@ -95,6 +103,6 @@ Per il lavoro corrente, la distinzione e' fondamentale:
 
 ### Theme Sixteen
 - [../../../../Themes/Sixteen/docs/design-comuni/00-index.md](../../../../Themes/Sixteen/docs/design-comuni/00-index.md)
-- [../../../../Themes/Sixteen/docs/design-comuni/homepage-structure-diff-2026-04-02.md](../../../../Themes/Sixteen/docs/design-comuni/homepage-structure-diff-2026-04-02.md)
+- [../../../../Themes/Sixteen/docs/design-comuni/homepage-structure-diff.md](../../../../Themes/Sixteen/docs/design-comuni/homepage-structure-diff.md)
 - [../../../../Themes/Sixteen/docs/design-comuni/work-plan.md](../../../../Themes/Sixteen/docs/design-comuni/work-plan.md)
 - [../../../../Themes/Sixteen/docs/design-comuni/screenshots/homepage-visual-pass-2026-04-02.md](../../../../Themes/Sixteen/docs/design-comuni/screenshots/homepage-visual-pass-2026-04-02.md)

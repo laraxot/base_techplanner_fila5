@@ -2,20 +2,42 @@
 
 declare(strict_types=1);
 
-use function Laravel\Folio\middleware;
-use function Laravel\Folio\name;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\View\View;
+use Livewire\Attributes\Locked;
 use Livewire\Volt\Component;
 use Modules\Cms\Http\Middleware\PageSlugMiddleware;
+use Themes\Sixteen\Actions\Folio\ResolveContainer0IndexAction;
+
+use function Laravel\Folio\middleware;
+use function Laravel\Folio\name;
+use function Laravel\Folio\render;
 
 name('container0.index');
 middleware(PageSlugMiddleware::class);
 
+/**
+ * Shell sottile: alias / area-personale / 404 vivono in ResolveContainer0IndexAction
+ * (riutilizzabile, testabile). Qui solo trasporto View|Redirect.
+ */
+render(function (View $view, string $container0): View|RedirectResponse {
+    $redirect = app(ResolveContainer0IndexAction::class)->execute($container0);
+    if ($redirect instanceof RedirectResponse) {
+        return $redirect;
+    }
+
+    return $view;
+});
+
 new class extends Component {
+    #[Locked]
     public string $container0 = '';
 
+    #[Locked]
     public string $pageSlug = '';
 
     /** @var array<string, mixed> */
+    #[Locked]
     public array $data = [];
 
     public function mount(string $container0): void
@@ -27,39 +49,28 @@ new class extends Component {
 };
 ?>
 
+{{--
+  D20 shell sottile: mount lineare, no CmsPage/title/meta nel Component.
+  data-dc sempre (Sixteen FO = Design Comuni CSS scope).
+  body-page: opzionale da JSON parity_page — letto fuori @volt (mai $this lì).
+--}}
 @php
-    $cmsPage = \Modules\Cms\Models\Page::findUniqueBySlug(request()->segment(2).'.index');
-    $utilityPage = match ($container0) {
-        'domande-frequenti' => 'faq',
-        'mappa-sito' => 'sitemap',
-        default => null,
-    };
-    abort_if($cmsPage === null && $utilityPage === null && $container0 !== 'lista-categorie', 404);
-    $pageTitle = match (true) {
-        $container0 === 'lista-categorie' => __('pub_theme::services.categories.title'),
-        $utilityPage === 'faq' => __('pub_theme::faq.meta.title'),
-        $utilityPage === 'sitemap' => __('pub_theme::sitemap.meta.title'),
-        default => $cmsPage?->getTranslation('title', app()->getLocale(), false) ?? config('app.name'),
-    };
-    $pageDescription = match (true) {
-        $container0 === 'lista-categorie' => __('pub_theme::services.categories.subtitle'),
-        $utilityPage === 'faq' => __('pub_theme::faq.meta.description'),
-        $utilityPage === 'sitemap' => __('pub_theme::sitemap.meta.description'),
-        default => $cmsPage?->getAttribute('description') ?? '',
-    };
+    $bodyPage = '';
+    $cmsForParity = \Modules\Cms\Models\Page::findUniqueBySlug($container0.'.index');
+    $parityPage = data_get($cmsForParity?->content_blocks, '0.data.parity_page', '');
+    if (is_string($parityPage)) {
+        $bodyPage = $parityPage;
+    }
+    $heading = $cmsForParity?->getTranslation('title', app()->getLocale(), false);
+    $summary = \Themes\Sixteen\Presentation\Metadata\PageDescription::resolve(
+        $cmsForParity?->getAttribute('description'),
+        app()->getLocale(),
+    );
 @endphp
-<x-layouts.app :title="$pageTitle" :meta-description="$pageDescription">
+<x-layouts.app :body-page="$bodyPage" :title="is_string($heading) ? $heading : ''" :meta-description="$summary">
     @volt('container0.index')
-    <div class="page-content content" data-slug="{{ $pageSlug }}" data-side="content">
-        @if ($container0 === 'lista-categorie')
-            @include('pub_theme::pages.services.categories-content')
-        @elseif ($container0 === 'domande-frequenti')
-            @include('pub_theme::components.pages.faq')
-        @elseif ($container0 === 'mappa-sito')
-            @include('pub_theme::components.pages.sitemap')
-        @else
-            <x-page side="content" :slug="$pageSlug" :data="$data" />
-        @endif
-    </div>
+        <div class="page-content content" data-dc data-slug="{{ $this->pageSlug }}" data-side="content">
+            <x-page side="content" :slug="$this->pageSlug" :data="$this->data" />
+        </div>
     @endvolt
 </x-layouts.app>

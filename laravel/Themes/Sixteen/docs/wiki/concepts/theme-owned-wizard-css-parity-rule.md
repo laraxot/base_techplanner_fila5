@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "theme owned wizard css parity rule"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Theme-Owned Wizard CSS Parity Rule
@@ -15,7 +16,7 @@ discussions: []
 
 Il tema Sixteen e' l'owner degli stili Design Comuni riusabili per wizard e form.
 
-Quando il markup arriva da `laravel/Modules/Fixcity/resources/views/filament/widgets/ticket-create-wizard.blade.php`, il tema deve applicare parity tramite CSS in:
+Quando il markup arriva da `laravel/Modules/Fixcity/resources/views/filament/widgets/create-ticket-wizard.blade.php`, il tema deve applicare parity tramite CSS in:
 
 - `resources/css/app.css`;
 - oppure file dedicati importati da `resources/css/app.css`.

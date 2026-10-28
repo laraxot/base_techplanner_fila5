@@ -9,9 +9,8 @@ use function Safe\glob;
 /**
  * Script raffinato per identificare VERI testi italiani in file di traduzione non italiani
  * Esclude falsi positivi come "email", "password" che sono termini internazionali.
- *
- * @return array<string, list<array{pattern: string, line: int, content: string, language: string}>>
  */
+/** @return array<string, list<array{pattern: string, line: int, content: string, language: string}>> */
 function auditRealItalianText(string $basePath): array
 {
     $issues = [];
@@ -26,12 +25,8 @@ function auditRealItalianText(string $basePath): array
     ];
 
     foreach ($patterns as $pattern) {
-        // Safe\glob dichiara list<mixed>: teniamo solo i percorsi (stringhe).
-        foreach (glob($pattern) as $file) {
-            if (is_string($file)) {
-                $nonItalianFiles[] = $file;
-            }
-        }
+        $files = glob($pattern);
+        $nonItalianFiles = array_merge($nonItalianFiles, $files);
     }
 
     // Pattern italiani REALI (escludendo termini internazionali)
@@ -217,9 +212,11 @@ function auditRealItalianText(string $basePath): array
     ];
 
     foreach ($nonItalianFiles as $file) {
-        // Safe\file_get_contents lancia in caso di errore: qui resta solo il file vuoto.
+        if (! is_string($file)) {
+            continue;
+        }
         $content = file_get_contents($file);
-        if ($content === '') {
+        if (! $content) {
             continue;
         }
 
@@ -229,17 +226,17 @@ function auditRealItalianText(string $basePath): array
         foreach ($realItalianPatterns as $pattern) {
             $lineNumber = 0;
             foreach ($lines as $line) {
-                $lineNumber++;
-                if (stripos($line, $pattern) !== false) {
+                ++$lineNumber;
+                if (false !== stripos($line, $pattern)) {
                     // Verifica che non sia un falso positivo
                     $isExcluded = false;
                     foreach ($excludePatterns as $exclude) {
-                        // La riga contiene gia' $pattern (if esterno): basta che contenga anche
-                        // il termine escluso e che il pattern ne sia parte.
-                        if (stripos($line, $exclude) !== false
-                            && str_contains(strtolower($exclude), strtolower(trim($pattern)))) {
-                            $isExcluded = true;
-                            break;
+                        if (false !== stripos($line, $exclude)) {
+                            // Controlla se il pattern è parte del termine escluso
+                            if (str_contains(strtolower($exclude), strtolower(trim($pattern)))) {
+                                $isExcluded = true;
+                                break;
+                            }
                         }
                     }
 
@@ -281,9 +278,7 @@ function getLanguageFromPath(string $file): string
     return 'Unknown';
 }
 
-/**
- * @param  array<string, list<array{pattern: string, line: int, content: string, language: string}>>  $issues
- */
+/** @param array<string, list<array{pattern: string, line: int, content: string, language: string}>> $issues */
 function generateRefinedReport(array $issues): string
 {
     $report = "# Refined Italian Text Audit Report\n\n";

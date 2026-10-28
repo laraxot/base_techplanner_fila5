@@ -7,11 +7,21 @@ created: 2026-07-22
 updated: 2026-07-22
 qmd: "theme zero gg_integ_params_no_asz gg_esperienza_no_asz FieldRefresh display"
 related:
-  - ../../performance-actions-reference.md
+  - ../../bmad/performance-actions-reference.md
   - ./method-name-homonyms.md
   - ../../../../Modules/Sigma/docs/wiki/concepts/gg-integ-params-no-asz.md
   - ../../../../../../docs/wiki/rules/criterio-esclusione-field-isomorphism.md
+id: zero-docs-wiki-concepts-gg-integ-params-no-asz-theme-boundary
+slug: gg-integ-params-no-asz-theme-boundary
+description: "Il tema mostra valori già calcolati dai moduli (Sigma/Ptv/Progressioni/Performance). Non inventa sinonimi tra campi."
+document_type: concept
+category: architecture
+status: active
+issues: []
+discussions: []
 ---
+
+> Nota di verifica 2026-10-20 (docs-temi): questa pagina cita i moduli `Ptv`, `Sigma`, che non esistono in `laravel/Modules` di questo repository (controllato con `ls`). Il contenuto viene da un altro progetto della famiglia Laraxot e non e' stato riscritto: leggilo come pattern di riferimento, non come descrizione di codice presente. I link verso quei moduli non risolvono.
 
 # Campi gg integ vs esperienza (tema Zero)
 
@@ -40,6 +50,6 @@ Audit moduli (replica vs unione): [criteri-gg-theme-boundary-audit](./criteri-gg
 
 ## Collegamenti
 
-- [performance-actions-reference](../../performance-actions-reference.md)
+- [performance-actions-reference](../../bmad/performance-actions-reference.md)
 - [Sigma gg-integ-params-no-asz](../../../../../Modules/Sigma/docs/wiki/concepts/gg-integ-params-no-asz.md)
 - [Regola isomorfismo](../../../../../../docs/wiki/rules/criterio-esclusione-field-isomorphism.md)

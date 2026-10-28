@@ -89,10 +89,10 @@ it('completes full registration with privacy and terms accepted', function (): v
 
     // Verify consents saved
     $savedConsents = Consent::where('subject_id', $user->id)->get();
-    Assert::assertSame(3, $savedConsents->count());
+    Assert::assertCount(3, $savedConsents);
     // Privacy and terms should be accepted
     $acceptedConsents = $savedConsents->whereNotNull('accepted_at');
-    Assert::assertSame(2, $acceptedConsents->count());
+    Assert::assertCount(2, $acceptedConsents);
     // Marketing should be declined
     $marketingConsent = $savedConsents->where('type', 'marketing_consent')->first();
     Assert::assertNotNull($marketingConsent);
@@ -129,8 +129,8 @@ it('completes registration with all consents including marketing', function (): 
 
     // All 3 consents should be accepted
     $savedConsents = Consent::where('subject_id', $user->id)->get();
-    Assert::assertSame(3, $savedConsents->count());
-    Assert::assertSame(3, $savedConsents->whereNotNull('accepted_at')->count());
+    Assert::assertCount(3, $savedConsents);
+    Assert::assertCount(3, $savedConsents->whereNotNull('accepted_at'));
 });
 
 // ---------------------------------------------------------------------------
@@ -181,7 +181,7 @@ it('hashes password during validation', function (): void {
 
     // Password must be hashed
     Assert::assertNotSame('MyP@ssword123!', $result['password']);
-    $hashed = is_string($result['password'] ?? null) ? $result['password'] : '';
+    $hashed = is_string($result['password']) ? $result['password'] : '';
     Assert::assertTrue(Hash::check('MyP@ssword123!', $hashed));
 });
 

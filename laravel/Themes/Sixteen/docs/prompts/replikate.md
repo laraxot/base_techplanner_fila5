@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "replikate"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Replikate
@@ -15,15 +16,6 @@ discussions: []
 *Version: 3.0.0 — Ultimo aggiornamento: 2026-04-07*
 
 ---
-
-title: "replikate"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "replikate"
-issues: []
-discussions: []
 ## 🎯 GOAL
 
 Replica ogni pagina di Design Comuni rendendo:
@@ -535,17 +527,17 @@ Per ogni pagina:
 
 ### Documentazione Design Comuni
 - [Master Index](../design-comuni/00-index.md)
-- [Status Report](../design-comuni/STATUS.md)
+- [Status Report](../design-comuni/status.md)
 - [Screenshots](../design-comuni/screenshots/)
 - [Pages Docs](../design-comuni/pages/)
 
 ### Script & Automazione
-- [Bashscripts Design Comuni](../../../bashscripts/design-comuni/)
-- [Bashscripts Docs](../../../bashscripts/docs/design-comuni/)
+- [Bashscripts Design Comuni](../../../../../bashscripts/design-comuni)
+- [Bashscripts Docs](../../../../../bashscripts/docs/design-comuni)
 
 ### Moduli Correlati
-- [Cms Module](../../../Modules/Cms/docs/DESIGN_COMUNI_INDEX.md)
-- [UI Module](../../../Modules/UI/docs/00-index.md)
+- [Cms Module](../../../../Modules/Cms/docs/design-comuni-index.md)
+- [UI Module](../../../../Modules/UI/docs/00-INDEX.md)
 
 ### Esterni
 - [Design Comuni Reference](https://italia.github.io/design-comuni-pagine-statiche/)

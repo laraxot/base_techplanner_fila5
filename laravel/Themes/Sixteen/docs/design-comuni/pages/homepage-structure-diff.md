@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "homepage structure diff"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Homepage - Analisi Strutturale Dettagliata
@@ -16,15 +17,6 @@ discussions: []
 **Local**: http://127.0.0.1:8000/it/tests/homepage  
 
 ---
-
-title: "homepage structure diff"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "homepage structure diff"
-issues: []
-discussions: []
 ## 📊 Statistiche Strutturali
 
 | Metrica | Reference | Local | Differenza |
@@ -285,7 +277,7 @@ Assicurare che il button togglerdei della navbar abbia la struttura esatta della
 
 ## 🔗 Riferimenti
 
-- [REPLIKATE Protocol](../prompts/replikate.txt)
+- [REPLIKATE Protocol](../../prompts/replikate.txt)
 - [Reference Homepage](https://italia.github.io/design-comuni-pagine-statiche/sito/homepage.html)
 - [Local Homepage](http://127.0.0.1:8000/it/tests/homepage)
 - [Component Catalog](../COMPONENT_CATALOG.md)

@@ -8,6 +8,14 @@ tags: [migrato-da-txt, zero]
 converted_from: filament-5-nested-resources.txt
 created: 2026-08-24
 updated: 2026-08-24
+id: zero-docs-bmad-filament-5-nested-resources
+document_type: reference
+category: ui-frontend
+status: superseded
+qmd: "filament 5.x nested resources guide"
+issues: []
+discussions: []
+superseded_by: ../wiki/concepts/filament-nested-resources.md
 ---
 
 # Filament 5.x Nested Resources Guide

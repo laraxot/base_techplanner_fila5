@@ -8,6 +8,14 @@ qmd: "f1 world champion 2026 - theme zero integration"
 related:
   - "./f1-world-champion-2026-theme-analysis.md"
   - "./f1-world-champion-theme-analysis.md"
+id: zero-docs-wiki-comparisons-f1-world-champion-theme-analysis
+slug: f1-world-champion-theme-analysis
+description: "Gli screenshot della forecast detail page sono disponibili in"
+document_type: guide
+category: documentation
+status: active
+issues: []
+discussions: []
 ---
 
 # 🏎️ F1 World Champion 2026 - Theme Zero Integration
@@ -152,7 +160,7 @@ small: text-sm (14px)
 
 ## 🔗 Riferimenti
 
-- [Theme Zero Docs](../../bmad/readme.md)
+- [Theme Zero Docs](../../bmad/theme-overview.md)
 - [Architecture](../../bmad/architecture.md)
 
 ---

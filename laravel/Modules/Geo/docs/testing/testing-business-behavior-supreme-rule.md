@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "testing business behavior supreme rule"
 issues: []
 discussions: []
+status: draft
 ---
 
 # 🎯 REGOLA SUPREMA: TESTING BUSINESS BEHAVIOR ONLY
@@ -159,20 +160,11 @@ Quando sistemo un test esistente che non funziona:
 
 - [Testing Priority Rule](testing-priority-rule.md)
 - [Model Testing Philosophy](model-testing-philosophy.md)
-- [Anti-patterns](anti-patterns.md)
+- [Anti-patterns](../anti-patterns.md)
 - [Laravel Boost Guidelines](../laravel/.ai/guidelines/testing-business-behavior.md)
 - [Testing Fundamental Rule](../laravel/.ai/guidelines/testing-fundamental-rule.md)
 
 ---
-
-title: "testing business behavior supreme rule"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "testing business behavior supreme rule"
-issues: []
-discussions: []
 **Questa regola è SUPREMA e ha precedenza su qualsiasi altra considerazione di testing.**
 
 **Status**: REGOLA ASSOLUTA E NON NEGOZIABILE

@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "mcp tools integration"
 issues: []
 discussions: []
+status: superseded
+superseded_by: mcp-tools-integration.md
 ---
 
 # MCP Tools Integration — Geo Module
@@ -16,15 +18,6 @@ discussions: []
 **Related:** `docs/mcp-tools-master-guide.md`
 
 ---
-
-title: "mcp tools integration"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "mcp tools integration"
-issues: []
-discussions: []
 ## Overview
 
 This document describes how MCP (Model Context Protocol) tools integrate with the Geo module for enhanced UI/UX development.

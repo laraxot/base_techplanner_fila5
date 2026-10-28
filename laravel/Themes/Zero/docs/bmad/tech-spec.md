@@ -4,6 +4,15 @@ type: technical_spec
 tags: [tech spec, zero, themes]
 created: 2026-08-04
 updated: 2026-08-04
+id: zero-docs-bmad-tech-spec
+slug: tech-spec
+description: "Frontend theme implementation using Blade, Tailwind CSS, and Vite."
+document_type: reference
+category: documentation
+status: active
+qmd: "technical specification - zero theme"
+issues: []
+discussions: []
 ---
 # Technical Specification - Zero Theme
 

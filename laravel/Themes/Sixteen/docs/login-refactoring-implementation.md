@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "login refactoring implementation"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Implementazione Rifattorizzazione Pagina Login - AGID Compliance
@@ -215,5 +216,5 @@ discussions: []
 - [Piano Rifattorizzazione](login-refactoring-plan.md)
 - [AGID Login Implementation](agid-login-implementation.md)
 - [Layout Usage Patterns](layout-usage-patterns.md)
-- [Vite Theme Integration](vite-theme-integration.md)
+- [Vite Theme Integration](build/vite-theme-integration.md)
 

@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "DAISYUI"
 issues: []
 discussions: []
+status: superseded
+superseded_by: daisyui.md
 ---
 
 # daisyUI — Documentazione Progetto Sixteen
@@ -98,15 +100,6 @@ export default {
 | `app.css` | Entry CSS principale con `@import "tailwindcss"` |
 
 ---
-
-title: "DAISYUI"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "DAISYUI"
-issues: []
-discussions: []
 ## Pro & Contro
 
 ### ✅ Pro

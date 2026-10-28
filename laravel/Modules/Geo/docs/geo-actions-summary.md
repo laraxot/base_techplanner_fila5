@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "geo actions summary"
 issues: []
 discussions: []
+status: superseded
+superseded_by: geo-actions-sumy.md
 ---
 
 # Geo Actions Summary

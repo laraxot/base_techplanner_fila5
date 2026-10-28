@@ -4,4 +4,4 @@ declare(strict_types=1);
 ?>
 @props(['text'])
 
-{!! $text !!}
+{!! str($text)->sanitizeHtml() !!}

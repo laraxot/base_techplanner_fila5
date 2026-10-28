@@ -1,8 +1,11 @@
 ---
-title: prd
-module: User
+title: "User Module PRD (Product Requirements Document)"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user, bmad]
+qmd: "user module prd (product requirements document) user"
 ---
-
 # User Module PRD (Product Requirements Document)
 
 **Status**: ✅ Finalized

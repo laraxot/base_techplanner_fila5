@@ -8,6 +8,8 @@ updated: 2026-07-14
 qmd: "readme en"
 related:
   - "./webm.md"
+status: superseded
+superseded_by: ../wiki/readme-en.md
 ---
 # 🖼️ Media — English presentation
 
@@ -50,7 +52,7 @@ Digital assets tied to tickets, profiles, and CMS content.
 
 Every pixel **tracked and secure** — media done right.
 
-Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5** — see [STORY-133](../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
+Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5** — see [STORY-133](../../../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
 
 ---
 

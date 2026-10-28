@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "documentation philosophy"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Documentation Philosophy - PTVX
@@ -16,15 +17,6 @@ discussions: []
 **Style**: DRY + KISS
 
 ---
-
-title: "documentation philosophy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "documentation philosophy"
-issues: []
-discussions: []
 ## 🎯 What to Document
 
 ### Focus On
@@ -257,7 +249,7 @@ Line 52: Returns value
 ## 🔗 Related
 
 - [Documentation Naming Rules](../../.cursor/rules/documentation-naming.mdc)
-- [Git Forward-Only](../../.cursor/rules/git-forward-only.mdc)
+- [Git Forward-Only](../../../../../.cursor/rules/git-forward-only.mdc)
 - [Scripts Location](../../.cursor/rules/scripts-location-mandatory.mdc)
 
 ---

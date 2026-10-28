@@ -7,6 +7,9 @@ related:
   - ./livewire-inventory.md
   - ./livewire-widget-prd.md
   - ../../Xot/docs/bmad/livewire-widget-project-context.md
+updated: 2026-10-07
+tags: [docs, ui, bmad]
+qmd: "ui   canone (non l’analisi 2026-08-25) ui"
 ---
 
 # UI — canone (non l’analisi 2026-08-25)

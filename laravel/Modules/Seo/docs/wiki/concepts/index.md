@@ -7,6 +7,7 @@ type: index
 tags: [concepts, Seo]
 created: 2026-05-11
 updated: 2026-05-11
+status: active
 ---
 
 # concepts Index — Seo

@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "backup disk"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Funzione backup_disk
@@ -61,7 +62,7 @@ backup_disk() {
 - [GitHub Actions](../git/github-actions.md) - Automazione sync remoto
 
 ## Vedi Anche
-- [Documentazione Principale](../../docs/INDEX.md) - Indice della documentazione
+- [Documentazione Principale](../index.md) - Indice della documentazione
 - [Best Practices](best-practices.md) - Linee guida e best practices
 - [Testing](testing.md) - Documentazione dei test
 - [Convenzioni di Naming](../../docs/standards/file_naming_conventions.md) - Standard per la nomenclatura dei file

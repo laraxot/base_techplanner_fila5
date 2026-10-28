@@ -25,8 +25,6 @@ describe('Job Business Logic', function () {
 
         $job = Job::create($jobData);
 
-        Assert::assertInstanceOf(Job::class, $job);
-
         Assert::assertSame('default', $job->queue);
 
         Assert::assertSame(0, $job->attempts);

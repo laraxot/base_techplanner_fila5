@@ -10,6 +10,8 @@ related:
   - ../livewire-inventory.md
   - ../../architecture.md
   - ../../../../Xot/docs/bmad/stories/cleanup-all-modules.story.md
+type: story
+tags: [docs, ui, bmad]
 ---
 
 # UI — marker nidificati in README + igiene root

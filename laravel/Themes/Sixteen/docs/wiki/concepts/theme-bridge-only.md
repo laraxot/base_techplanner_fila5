@@ -14,6 +14,7 @@ related:
   - ./x-page-data-bag-only.md
   - ../../ponytail-audit-over-engineering.md
   - ../../../../../docs/project/ponytail-audit-themes.md
+status: draft
 ---
 
 # Theme bridge-only — Sixteen `app/` remediation
@@ -31,7 +32,7 @@ Riferimento produzione Predict: **TwentyOne** (bridge-only). Hub: [ponytail-audi
 | `Providers/ThemeServiceProvider` | Viste `pub_theme`, config, composer, publish |
 | `View/Composers/SixteenComposer` | Inietta `config('sixteen')` e menu statici |
 | `Support/FrontofficeUrl` | URL CMS/nav (testati) |
-| `Support/BlockCategoryRegistry` | Catalogo sottocartelle blocchi (testati) |
+| `Datas/BlockCategoryRegistryData` | Catalogo sottocartelle blocchi, interrogato da `Actions/Block/*` (testati) |
 | `Console/Commands/*` | Install/publish tema |
 | `Http/Controllers/ComuneController` | **Legacy** — route `comune.*`; migrare a Fixcity/Folio |
 
@@ -101,4 +102,4 @@ cd laravel && ./vendor/bin/phpstan analyse Modules --memory-limit=-1
 
 - [no-controllers-folio-volt-filament.md](./no-controllers-folio-volt-filament.md)
 - [ponytail-audit-over-engineering.md](../../ponytail-audit-over-engineering.md)
-- [ponytail-audit-remediation.md](../../../../../docs/project/ponytail-audit-remediation.md)
+- [ponytail-audit-remediation.md](../../../../../../docs/project/ponytail-audit-remediation.md)

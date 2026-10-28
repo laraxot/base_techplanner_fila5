@@ -1,7 +1,5 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
+> **Documentazione:** usare l’indice mantenuto in [`docs/README.md`](./docs/README.md); gli elenchi legacy qui sotto sono da riallineare separatamente.
+
 # ⚪ Zero
 
 [![Stars](https://img.shields.io/github/stars/laraxot/theme_zero_fila5?style=plastic&color=yellow)]()
@@ -66,10 +64,6 @@ Attiva il tema e il gioco è fatto.
 ---
 
 **Tema** `Zero` · **Laraxot** · PHPStan 10 · Filament 5
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
 # Zero: il tema che trasforma complessita in vantaggio operativo
 
 Zero theme for Laraxot PTVX: frontend theme with Tailwind, Vite, Flowbite and Alpine.js integration.
@@ -102,17 +96,12 @@ Questo tema non e solo codice: e una vetrina operativa. Mostra dove intervenire,
 - [Protocollo confidenza](./docs/agent-confidence-protocol.md)
 - [Disciplina agenti](./docs/agent-edit-discipline.md)
 - [00 Index](./docs/00-index.md)
-<<<<<<< HEAD
 - [Conflict Resolution Summary](./docs/conflict-resolution-summary.md)
-=======
-- [Conflict Resolution Summary](./docs/CONFLICT_RESOLUTION_SUMMARY.md)
->>>>>>> laraxot/dev
 - [Accessor Delegation Pattern](./docs/accessor-delegation-pattern.md)
 - [Ai Development Guide](./docs/ai-development-guide.md)
 - [Ai Handoff](./docs/ai-handoff.md)
 - [Analisi Completa Tema](./docs/analisi-completa-tema.md)
 
-<<<<<<< HEAD
 ## Scopo e confini
 
 Zero è il guscio pubblico del portale: il markup di pagina, i token di stile e la
@@ -130,9 +119,3 @@ Misure e cinque mosse concrete: [`docs/scopo.md`](./docs/scopo.md).
 ## Filosofia
 
 Scopo prima del codice. DRY prima dell'orgoglio. KISS prima dell'astrazione. La release automatica non sostituisce il giudizio: lo rende tracciabile.
-=======
-## Filosofia
-
-Scopo prima del codice. DRY prima dell'orgoglio. KISS prima dell'astrazione. La release automatica non sostituisce il giudizio: lo rende tracciabile.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

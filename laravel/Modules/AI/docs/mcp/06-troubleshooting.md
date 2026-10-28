@@ -7,6 +7,8 @@ updated: 2026-09-26
 qmd: "06 troubleshooting"
 issues: []
 discussions: []
+status: superseded
+superseded_by: troubleshooting.md
 ---
 
 # Risoluzione dei Problemi dei Server MCP
@@ -49,15 +51,6 @@ Se hai problemi con le migrazioni:
 Per ulteriori dettagli, vedi il file `AVVISO_MIGRAZIONI.mdc` nella root del progetto.
 
 ---
-
-title: "06 troubleshooting"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "06 troubleshooting"
-issues: []
-discussions: []
 ## Problemi Comuni e Soluzioni
 
 ### 1. Server MCP non Disponibile
@@ -391,7 +384,6 @@ Per una migliore diagnostica dei problemi, è consigliabile configurare un loggi
 declare(strict_types=1);
 
 namespace Modules\AI\Services\Servers;
-use Modules\User\Models\User;
 
 use Modules\AI\Services\Contracts\SequentialThinkingServerContract;
 use Illuminate\Support\Facades\Http;

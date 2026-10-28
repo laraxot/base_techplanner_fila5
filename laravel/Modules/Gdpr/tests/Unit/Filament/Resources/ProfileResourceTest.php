@@ -9,12 +9,14 @@ use Modules\Gdpr\Models\Profile;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use PHPUnit\Framework\Assert;
 
+use function Safe\class_parents;
+
 test('profile_resource_extends_xot_base_resource', function (): void {
-    Assert::assertInstanceOf(XotBaseResource::class, new ProfileResource());
+    Assert::assertArrayHasKey(XotBaseResource::class, class_parents(ProfileResource::class));
 });
 
 test('profile_resource_model_is_profile', function (): void {
-    $resource = new ProfileResource();
+    $resource = new ProfileResource;
 
     Assert::assertSame(Profile::class, $resource->getModel());
 });

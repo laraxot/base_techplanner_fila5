@@ -3,37 +3,61 @@ title: "Xot - index.md"
 module: Xot
 bmad: true
 status: active
+type: index
+updated: 2026-10-23
+tags: [docs, xot, bmad, graphify, phpstan]
+qmd: "xot module documentation index bmad graphify-out gitignore phpstan decision-log"
 ---
+
 # Xot Module — Documentation Index
 
-## Core Purpose
+## Scopo
 
 - **[purpose.md](purpose.md)** — Module scope: architectural foundation and base classes
 
-## Architecture & Design
+# Xot Module — Documentation Index
 
-- **[architecture.md](architecture.md)** — Technical framework patterns
-- **[framework/](framework/)** — Framework-specific documentation
+## Scopo
 
-## Base Classes & Contracts
+Xot fornisce fondazioni Laraxot, classi base, contratti e regole condivise.
 
-- `XotBaseModel` — Eloquent model foundation
-- `XotBaseResource` — Filament resource foundation
-- `XotBasePage` — Filament page foundation
-- `XotBaseTable` — Filament table foundation
-- Contracts for type safety across modules
+## Architettura e regole
 
-## Patterns & Best Practices
+- [purpose.md](purpose.md) — responsabilità del modulo
+- [architecture.md](architecture.md) — architettura tecnica
+- [wiki/rules/](../wiki/rules/) — regole e convenzioni
+- [wiki/patterns/](../wiki/patterns/) _(target mancante, verificato 2026-10-14)_ — pattern riusabili, quando presenti
 
-- **[wiki/patterns/](wiki/patterns/)** — Reusable patterns
-- **[wiki/rules/](wiki/rules/)** — Rules and conventions
+## BMAD e conoscenza
 
-## Active Work
+- [decision-log.md](./decision-log.md) — decisioni cross-modulo (PHPStan zero, Services→Actions, graphify)
+- [graphify-out-gitignore.md](./graphify-out-gitignore.md) — `graphify-out/` obbligatorio in ogni `.gitignore` modulo/tema (no LFS)
+- [filament-blueprint.md](./filament-blueprint.md) — contratto UI admin XotBase*
+- [phpstan-status.md](./phpstan-status.md) — stato gate Modules
+- [stories/](stories/) — story BMAD del modulo
+- [brainstorming.md](brainstorming.md) — esplorazione opportunità
+- [wiki/](../wiki/) — knowledge base
+- [raw/](../raw/) — note grezze, se presenti
 
-- **[bmad/](bmad/)** — BMAD methodology directory
-- **[bmad/stories/](bmad/stories/)** — Completed work
+Xot fornisce fondazioni Laraxot, classi base, contratti e regole condivise.
 
-## Knowledge Base
+## Architettura e regole
 
-- **[wiki/](wiki/)** — Long-term knowledge base
-- **[raw/](raw/)** — Raw documentation and notes
+- [purpose.md](purpose.md) — responsabilità del modulo
+- [architecture.md](architecture.md) — architettura tecnica
+- [wiki/rules/](../wiki/rules/) — regole e convenzioni
+- [wiki/patterns/](../wiki/patterns/) _(target mancante, verificato 2026-10-14)_ — pattern riusabili, quando presenti
+
+## BMAD e conoscenza
+
+- [decision-log.md](./decision-log.md) — decisioni cross-modulo (PHPStan zero, Services→Actions, graphify)
+- [graphify-out-gitignore.md](./graphify-out-gitignore.md) — `graphify-out/` obbligatorio in ogni `.gitignore` modulo/tema (no LFS)
+- [filament-blueprint.md](./filament-blueprint.md) — contratto UI admin XotBase*
+- [phpstan-status.md](./phpstan-status.md) — stato gate Modules
+- [stories/](stories/) — story BMAD del modulo
+- [brainstorming.md](brainstorming.md) — esplorazione opportunità
+- [wiki/](../wiki/) — knowledge base
+- [raw/](../raw/) — note grezze, se presenti
+
+Questo è l'indice canonico BMAD del modulo Xot. I file con prefisso `legacy-`
+presenti in `docs/stories/` sono riferimenti storici e non SSoT.

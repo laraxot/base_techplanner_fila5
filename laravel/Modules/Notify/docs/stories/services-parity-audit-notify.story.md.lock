@@ -1,0 +1,6 @@
+LOCKED at 2026-10-20T12:42:52+00:00
+Task: services-epic-w0
+Agent: lane-svc-docs
+Session: unknown
+PID: 2789386
+PID note: subshell di lock.sh, gia' terminato — NON usarlo per giudicare il lock stale, guarda 'LOCKED at'

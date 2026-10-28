@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "custom firm fields"
 issues: []
 discussions: []
+status: draft
 ---
 
 # custom_firm_fields

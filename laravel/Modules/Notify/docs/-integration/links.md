@@ -1,11 +1,13 @@
 ---
-title: "Notify Module — Document"
-type: docs/bmad
-status: active
-module: Notify
-scope: documentation
-bmad_version: 1.0
-updated: 2026-10-06
+title: "links"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "links"
+issues: []
+discussions: []
+status: draft
 ---
 
 # links
