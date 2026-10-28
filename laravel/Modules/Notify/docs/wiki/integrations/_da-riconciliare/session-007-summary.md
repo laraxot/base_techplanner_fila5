@@ -202,7 +202,7 @@ Total Characters: ~63,000
 - gsd-phase-1-execution.md (19,499 chars)
 - bashscripts/docs/html/index.md (8,531 chars)
 - bashscripts/html/extract-body-html.py (4,156 chars)
-- 00-index-1.md (12,926 chars)
+- 00-index.md (12,926 chars)
 
 ### Phase 1 (Execution) - IN PROGRESS 🟠
 Documents Created This Session: 8

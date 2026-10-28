@@ -14,8 +14,7 @@ use PHPUnit\Framework\Assert;
 uses(\Modules\AI\Tests\TestCase::class);
 
 afterEach(function (): void {
-Mockery::close();
-
+    Mockery::close();
 });
 
 describe('Completion Action', function (): void {

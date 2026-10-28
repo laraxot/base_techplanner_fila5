@@ -181,18 +181,19 @@ test('una voce di configurazione che non e un modello viene ignorata', function 
 });
 
 test('blog ed events restano serviti dal finder dei soli contenuti pubblicati', function (): void {
+    // Blog e' un modulo opzionale (ResolvePageAction usa il finder solo se Article e ThemeComposer esistono): la classe si risolve per nome.
     $article = app('Modules\\Blog\\Models\\Article');
-    Assert::assertIsObject($article);
+    Assert::assertInstanceOf(Model::class, $article);
     $composer = new class($article)
     {
-        public function __construct(private readonly object $article) {}
+        public function __construct(private readonly Model $article) {}
 
-        public function findPublishedPostBySlug(string $slug): ?object
+        public function findPublishedPostBySlug(string $slug): ?Model
         {
             return $slug === 'post-pubblicato' ? $this->article : null;
         }
 
-        public function findPublishedEventBySlug(string $slug): ?object
+        public function findPublishedEventBySlug(string $slug): ?Model
         {
             return $slug === 'evento-pubblicato' ? $this->article : null;
         }
@@ -206,4 +207,7 @@ test('blog ed events restano serviti dal finder dei soli contenuti pubblicati', 
     Assert::assertNull($action->execute('blog', 'evento-pubblicato')->item, 'un evento non si legge come post');
     Assert::assertNull($action->execute('events', 'post-pubblicato')->item, 'un post non si legge come evento');
     Assert::assertNull($action->execute('blog', 'inesistente')->item);
-})->skip(! class_exists('Modules\\Blog\\Models\\Article'), 'Il modulo Blog e opzionale e qui non e installato.');
+})->skip(
+    ! class_exists('Modules\\Blog\\Models\\Article') || ! class_exists('Modules\\Blog\\View\\Composers\\ThemeComposer'),
+    'Modulo Blog non installato: ResolvePageAction non usa il finder dei contenuti pubblicati.'
+);

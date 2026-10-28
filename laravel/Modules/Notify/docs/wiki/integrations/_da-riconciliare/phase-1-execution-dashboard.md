@@ -326,7 +326,7 @@ Phase 2 planning can begin
 - [ ] PHASE-1-COMPLETION-REPORT.md created
 - [ ] Metrics documented
 - [ ] Lessons learned captured
-- [ ] 00-index-1.md updated
+- [ ] 00-index.md updated
 - [ ] Phase 2 strategy outlined
 
 ---

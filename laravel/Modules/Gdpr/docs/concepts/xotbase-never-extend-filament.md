@@ -1,7 +1,7 @@
 ---
 issues: []
 discussions: []
-title: "Gdpr — mai Filament\*, sempre XotBase*"
+title: "Gdpr — mai Filament*, sempre XotBase*"
 type: concept
 module: Gdpr
 tags: [gdpr, filament, xotbase, architecture]

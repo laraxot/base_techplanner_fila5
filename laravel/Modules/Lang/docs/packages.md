@@ -22,6 +22,9 @@ status: draft
 - [laraxot/module_tenant_fila3](../Tenant/docs/packages.md) - Gestione multi-tenant
 - [laraxot/module_xot_fila5](../Xot/docs/packages.md) - Modulo base per funzionalità comuni
 - [laraxot/module_ui](../UI/docs/packages.md) - Componenti UI e temi
+- [laraxot/module_tenant_fila3](../Tenant/docs/packages.md) - Gestione multi-tenant
+- [laraxot/module_xot_fila5](../Xot/docs/packages.md) - Modulo base per funzionalità comuni
+- [laraxot/module_ui](../UI/docs/packages.md) - Componenti UI e temi
 - [laraxot/module_tenant_fila5](../Tenant/docs/packages.md) - Gestione multi-tenant
 - [laraxot/module_tenant_fila3](../../Tenant/docs/packages.md) - Gestione multi-tenant
 - [laraxot/module_xot_fila5](../Xot/docs/packages.md) - Modulo base per funzionalità comuni
@@ -107,4 +110,8 @@ status: draft
 
 ### Versione Incoming
 
+---
+---
+---
+---
 ---

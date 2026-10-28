@@ -4,7 +4,6 @@ type: concept
 tags: [master, plan]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "master-plan fixcity platform - master plan 🚀"
 qmd: "master-plan ptv platform - master plan 🚀"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]

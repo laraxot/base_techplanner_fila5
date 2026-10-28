@@ -3,7 +3,6 @@ title: second brain — puntatore modulo
 type: reference
 qmd: second brain modulo wiki locale laravel
 updated: 2026-07-29
-updated: 2026-05-21
 id: zero-docs-bmad-second-brain
 slug: second-brain
 description: "Puntatore al second brain: strati input, wiki compilata e regole globali, con la disciplina nella wiki di progetto."

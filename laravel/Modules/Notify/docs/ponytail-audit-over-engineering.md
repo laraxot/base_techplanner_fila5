@@ -100,7 +100,7 @@ Utility mantenute: `NormalizePhoneNumberAction`, `FormatSmsMessageAction`.
 
 ## Collegamenti
 
-- [wiki/decisions/sms-actions-consolidation-2026-06-30.md](./wiki/decisions/sms-actions-consolidation-2026-06-30.md)
+- [wiki/decisions/sms-actions-consolidation.md](./wiki/decisions/sms-actions-consolidation.md)
 - [wiki/decisions/sms-actions-consolidation-consolidamento-contracts-ponytail-audit.md](./wiki/decisions/sms-actions-consolidation-consolidamento-contracts-ponytail-audit.md)
 - [provider-actions-architecture.md](./provider-actions-architecture.md)
 - [Xot Notify hub](../../Xot/docs/ponytail-audit-over-engineering.md)

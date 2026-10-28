@@ -82,8 +82,6 @@ test('doctor can login successfully', function (): void {
     
     // Test complete authentication flow...
 
-    // Test complete authentication flow...
-
     expect(Auth::user()->type)->toBe(UserTypeEnum::DOCTOR);
 });
 ```
@@ -130,7 +128,6 @@ test('successful login regenerates session', function (): void {
 # Complete test suite
 ./vendor/bin/pest Modules/Cms/tests/Feature/Auth/LoginTest.php
 
-# Specific functionality group  =======
 # Specific functionality group
 ./vendor/bin/pest --filter="Authentication Logic"
 

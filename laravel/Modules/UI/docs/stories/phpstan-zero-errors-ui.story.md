@@ -36,7 +36,7 @@ Una sola causa: `typeCoverage.paramTypeCoverage`, soglia 99 % **di progetto** (n
 ## Decisioni aperte
 
 - `EventColumnTest` e `OrganizationColumnTest` differiscono solo per classe, nomi e numeri attesi: candidati a un dataset Pest unico (non fatto: fuori dallo scopo degli errori).
-- `.md` con suffisso numerico nel nome (`phpstan-fixes-2.md`, `phpstan-radio-badge-fix-1.md`, `wiki/_integration/*-1.md`): rinomina non fatta (collisioni con i file senza suffisso, da unire a mano).
+- `.md` con suffisso numerico nel nome (`phpstan-fixes.md`, `phpstan-radio-badge-fix.md`, `wiki/_integration/*-1.md`): rinomina non fatta (collisioni con i file senza suffisso, da unire a mano).
 
 ## GitHub (tracciamento)
 

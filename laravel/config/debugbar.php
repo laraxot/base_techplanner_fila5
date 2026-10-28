@@ -1,8 +1,7 @@
 <?php
 
 return [
-    'enabled' => env('DEBUGBAR_ENABLED', false) && env('APP_DEBUG', false),
-    'enabled' => env('DEBUGBAR_ENABLED', env('APP_DEBUG', false)),
+    // Mai debugbar attiva con APP_DEBUG=false (regola: bashscripts/docs/prompts/debugbar-rule.md)
     'enabled' => env('DEBUGBAR_ENABLED', false) && env('APP_DEBUG', false),
     'except' => [
         'telescope*',

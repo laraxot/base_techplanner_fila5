@@ -128,7 +128,7 @@ related:
   - "./action-plan-immediate.md"
 ---
 
-> Questo file è stato rinominato in [analisi-completa-1.md](analisi-completa-1.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+> Questo file è stato rinominato in [analisi-completa.md](../../analisi-completa.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 ---
 

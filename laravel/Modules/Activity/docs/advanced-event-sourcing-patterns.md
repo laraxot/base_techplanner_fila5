@@ -110,8 +110,6 @@ class ScheduleAppointmentHandler
         
         $this->appointments->save($appointment);
 
-        $this->appointments->save($appointment);
-
         $this->eventBus->publish(new AppointmentScheduled(
             $appointment->id,
             $appointment->patientId,

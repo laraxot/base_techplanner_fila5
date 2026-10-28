@@ -1,7 +1,7 @@
 ---
 type: decision-log
 title: "Decision Log — Notify"
-links: {github_issue: #XXX, discussion: #XXX}
+links: {github_issue: "#XXX", discussion: "#XXX"}
 status: draft
 updated: 2026-10-08
 tags: [docs, notify]
@@ -12,7 +12,7 @@ qmd: "decision log   notify notify"
 ## Decisions
 
 ### 2026-10-08: Riallineamento dell'intero modulo all'ultimo commit buono `ad85f0b08`
-- **Choose**: Confronto a tre vie dell'intero modulo (app, config, routes, resources, lang, database, tests) con l'ultimo commit buono prima degli eventi del 07/10, `ad85f0b08` (07/10 06:38, story `2026-10-06-phpstan-cleanup-notify`, enum `NotificationStatusEnum`/`NotificationLogStatusEnum`).
+- **Choose**: Confronto a tre vie dell'intero modulo (app, config, routes, resources, lang, database, tests) con l'ultimo commit buono prima degli eventi del 07/10, `ad85f0b08` (07/10 06:38, story `phpstan-cleanup-notify`, enum `NotificationStatusEnum`/`NotificationLogStatusEnum`).
 - **Over**: Ripristino file per file rispetto allo stato del monorepo al 06/10, come nelle due voci precedenti: non vedeva le modifiche fatte nel sotto-repo dopo il 06/10 (per Notify contava 34 file regrediti, erano 338).
 - **Because**: Il 07/10 la linea buona è stata fusa con una copia vecchia (`6d3d7794a` + merge `29f6307a3`, 11:13) e poi re-importata da zero (`89ae0b10a`, 12:12). Classificazione dei file diversi da `ad85f0b08`:
   - 322 toccati solo da quegli eventi: riportati ad `ad85f0b08`. Per 138 resta una differenza di solo permesso (`100755` nel commit), con `core.fileMode=false` non modificabile dal working tree.

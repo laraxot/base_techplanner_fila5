@@ -33,7 +33,7 @@ describe('ActivityLogger', function (): void {
     test('logs created event', function (): void {
         $user = createUser();
         $logger = new ActivityLogger;
-        $model = (new UserFactory)->createOne();
+        $model = activityCreateUser();
 
         $activity = $logger->created($model, $user);
 
@@ -44,7 +44,7 @@ describe('ActivityLogger', function (): void {
     test('logs updated event', function (): void {
         $user = createUser();
         $logger = new ActivityLogger;
-        $model = (new UserFactory)->createOne();
+        $model = activityCreateUser();
 
         $activity = $logger->updated($model, $user);
 
@@ -55,7 +55,7 @@ describe('ActivityLogger', function (): void {
     test('logs deleted event', function (): void {
         $user = createUser();
         $logger = new ActivityLogger;
-        $model = (new UserFactory)->createOne();
+        $model = activityCreateUser();
 
         $activity = $logger->deleted($model, $user);
 

@@ -20,19 +20,19 @@
 
 ### Clean Modules (Verification Only)
 
-1. **`story-activity-phpstan-2026-09-06.story.md`**
+1. **`story-activity-phpstan.story.md`**
    - Status: ✅ No errors
    - Action: Verification only
    - Effort: 2 minutes
    - Key Verification: `./vendor/bin/phpstan analyse Modules/Activity --no-progress --memory-limit=-1`
 
-2. **`story-job-phpstan-2026-09-06.story.md`**
+2. **`story-job-phpstan.story.md`**
    - Status: ✅ No errors
    - Action: Verification only
    - Effort: 2 minutes
    - Key Verification: `./vendor/bin/phpstan analyse Modules/Job --no-progress --memory-limit=-1`
 
-3. **`story-lang-phpstan-2026-09-06.story.md`**
+3. **`story-lang-phpstan.story.md`**
    - Status: ✅ No errors
    - Action: Verification only
    - Effort: 2 minutes
@@ -40,7 +40,7 @@
 
 ### Modules with Actionable Errors
 
-4. **`story-geo-phpstan-2026-09-06.story.md`** ⚠️
+4. **`story-geo-phpstan.story.md`** ⚠️
    - Status: ❌ 4 errors across 2 files
    - Error Type: `generics.notSubtype` + `class.notFound` (HasXotFactory @use annotations)
    - Files to Fix:
@@ -50,7 +50,7 @@
    - Effort: 5 minutes
    - Complexity: Low (mechanical change, 2 files)
 
-5. **`story-tenant-phpstan-2026-09-06.story.md`** ⚠️
+5. **`story-tenant-phpstan.story.md`** ⚠️
    - Status: ❌ 2 errors across 2 files
    - Error Type: `missingType.generics` (missing @use annotations)
    - Files to Fix:

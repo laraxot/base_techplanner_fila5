@@ -1,5 +1,4 @@
 ---
-title: "UI — Architettura"
 title: "UI — Architettura BMAD"
 type: architecture
 tags: [bmad, ui, architecture, design-system]

@@ -12,10 +12,6 @@ discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
 related:
   - ../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
-discussions:
-  - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
-related:
-  - ../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
   - ../../../../../docs/wiki/bmad/architecture.md
   - ../../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md
   - ../../docs/wiki/concepts/ai-harness-module-discipline.md

@@ -10,7 +10,6 @@ use Illuminate\Testing\TestResponse;
 use Modules\Gdpr\Database\Factories\ConsentFactory;
 use Modules\Gdpr\Models\Consent;
 use Modules\Gdpr\Tests\TestCase;
-use Pest\Support\HigherOrderTapProxy;
 use PHPUnit\Framework\Assert;
 
 /**

@@ -4,7 +4,6 @@ type: concept
 tags: [final, master, report]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "final-master-report 🏆 fixcity - final master report"
 qmd: "final-master-report 🏆 ptv - final master report"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]

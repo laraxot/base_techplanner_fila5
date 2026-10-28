@@ -1,5 +1,5 @@
 ---
-title: "Two — mai Filament\*, sempre XotBase*"
+title: "Two — mai Filament*, sempre XotBase*"
 type: concept
 theme: Two
 tags: [two, filament, xotbase, architecture]

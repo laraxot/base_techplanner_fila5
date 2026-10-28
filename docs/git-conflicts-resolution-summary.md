@@ -97,7 +97,7 @@ I seguenti file hanno conflitti Git ma non bloccano PHPStan per l'analisi di alt
 
 ## Collegamenti
 
-- [Git Conflicts Resolution](./git-conflicts-resolution-2025-01-06.md)
+- [Git Conflicts Resolution](./git-conflicts-resolution.md)
 *Ultimo aggiornamento: 2025-01-06*
 
 - [Module Improvement Workflow](./module-improvement-workflow.md)

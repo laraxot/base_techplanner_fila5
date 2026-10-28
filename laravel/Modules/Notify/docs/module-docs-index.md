@@ -4,7 +4,6 @@ type: concept
 tags: [module, docs, index]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "module-docs-index master documentation index - fixcity fila5"
 qmd: "module-docs-index master documentation index - ptv fila5"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]

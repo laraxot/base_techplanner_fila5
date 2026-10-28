@@ -151,8 +151,8 @@ Creato script `scripts/analyze-all-modules.sh` per automatizzare l'analisi di tu
 
 ## Collegamenti
 
-- [PHPStan Level 10 Fixes](./phpstan-level10-fixes-2025-01-06.md)
-- [Server Setup and Fixes](./server-setup-and-fixes-2025-01-06.md)
+- [PHPStan Level 10 Fixes](./phpstan-level10-fixes.md)
+- [Server Setup and Fixes](./server-setup-and-fixes.md)
 - [Notify Module PHPStan Analysis](../Modules/Notify/docs/phpstan-level10-analysis.md)
 - [Xot Module PHPStan Fixes](../Modules/Xot/docs/phpstan-level10-fixes.md)
 

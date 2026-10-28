@@ -1,7 +1,7 @@
 ---
 type: investigation
 title: "Investigation Multi-Agency Job Board Sync"
-links: {github_issue: #XXX}
+links: {github_issue: "#XXX"}
 status: draft
 updated: 2026-10-08
 tags: [docs, job, investigation]

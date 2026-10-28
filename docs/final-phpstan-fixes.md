@@ -122,8 +122,8 @@ Alcuni errori potrebbero essere ancora presenti in altri file non inclusi nella 
 
 ## Collegamenti
 
-- [Module Analysis Report](./module-analysis-report-2025-01-06.md)
+- [Module Analysis Report](./module-analysis-report.md)
 - [Complete Analysis Summary](./complete-analysis-summary.md)
-- [PHPStan Level 10 Fixes](./phpstan-level10-fixes-2025-01-06.md)
+- [PHPStan Level 10 Fixes](./phpstan-level10-fixes.md)
 
 

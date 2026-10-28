@@ -1,7 +1,6 @@
 ---
 title: "Notify Module — Document"
 type: docs/bmad
-status: active
 module: Notify
 scope: documentation
 bmad_version: 1.0
@@ -49,19 +48,19 @@ qmd: "**indice documentazione modulo notify** notify"
 
 ## 🧪 **Qualità e Sviluppo**
 - ✅ **[PHPStan Analysis](./phpstan-fixes.md)** - Report di conformità Level 10.
-- 🚨 **[PHPStan Cluster 2026-03-10](./phpstan-cluster-2026-03-10.md)** - Modelli canonici mancanti per log/canali e impatto su factory/controller.
+- 🚨 **[PHPStan Cluster 2026-03-10](../phpstan-cluster.md)** - Modelli canonici mancanti per log/canali e impatto su factory/controller.
 - 🧭 **[No Orphan Http Controllers](./no-orphan-http-controllers.md)** - I controller web senza route o boundary chiaro non devono restare nel modulo.
 - 🚫 **[No NotificationTrackingController](./no-notification-tracking-controller.md)** - Il tracking notifiche non deve vivere in un controller HTTP legacy.
-- 🧹 **[PHPStan cleanup Notify 2026-10-06](../stories/phpstan-cleanup-notify-dev.dev.md)** - NotificationLog ripristinato + enum, stub push, pagine Test Filament ([story](../stories/2026-10-06-phpstan-cleanup-notify.story.md)).
+- 🧹 **[PHPStan cleanup Notify 2026-10-06](../stories/phpstan-cleanup-notify.dev.md)** - NotificationLog ripristinato + enum, stub push, pagine Test Filament ([story](../stories/phpstan-cleanup-notify.story.md)).
 - 🧹 **[PHPStan Notify push delivery 2026-10-08](../stories/2026-10-08-phpstan-notify-push-delivery.story.md)** - Tre copie del recapito push ridotte alle Action `Actions/Push/*` (il facade residuo e' stato poi eliminato).
-- 🧹 **[Notify senza Services 2026-10-08](../stories/2026-10-08-services-to-actions-notify.story.md)** - `app/Services` eliminata (test sulle Action), `STATUS_*` -> `NotificationLogStatusEnum`, consegne push simulate tracciate.
+- 🧹 **[Notify senza Services 2026-10-08](../stories/services-to-actions-notify.story.md)** - `app/Services` eliminata (test sulle Action), `STATUS_*` -> `NotificationLogStatusEnum`, consegne push simulate tracciate.
 - 🔬 **[Testing Guidelines](./testing.md)** - Mocking dei canali e verifica invio.
 - 📘 **[Docs-First Workflow](./docs-first-workflow.md)** - Sequenza obbligatoria docs -> codice -> tracking GitHub.
 - 🧪 **PSR-4 Test Helpers** - Nei file Pest usare helper anonimi o support file dedicati; evitare classi top-level extra che rompono `composer dump-autoload`.
 
 ## 🪮 **Ponytail audit**
 - 📋 **[Over-engineering audit](./ponytail-audit-over-engineering.md)** - SMS multi-driver, policy stub, remediation `.bak`.
-- 🧾 **[SMS Actions consolidation decision](./wiki/decisions/sms-actions-consolidation-2026-06-30.md)** - Cosa è stato consolidato in `.bak`, cosa resta attivo (netfun/smsfactor raggiungibili da Filament `SendSmsPage`) e perché.
+- 🧾 **[SMS Actions consolidation decision](./decisions/sms-actions-consolidation.md)** - Cosa è stato consolidato in `.bak`, cosa resta attivo (netfun/smsfactor raggiungibili da Filament `SendSmsPage`) e perché.
 
 ## 🧹 **Manutenzione**
 - 🗑️ **[Cleanup Plan](./translation-cleanup-plan.md)** - Rimozione dei 500+ file obsoleti accumulati.

@@ -1,7 +1,7 @@
 ---
 type: investigation
 title: "Investigation Email Deliverability"
-links: {github_issue: #XXX}
+links: {}
 status: draft
 updated: 2026-10-08
 tags: [docs, notify, investigation]

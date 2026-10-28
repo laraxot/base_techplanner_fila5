@@ -16,6 +16,9 @@ related:
 
 ## Stato verificato
 
+- Verifica 2026-10-28: `cd laravel && ./vendor/bin/phpstan analyse Modules --memory-limit=-1 --no-progress --error-format=table` completata con exit code 0 e `[OK] No errors`.
+- La configurazione effettivamente usata è `/mnt/nas07/var/www/_bases/base_techplanner_fila5/laravel/phpstan.neon`; non è stata modificata.
+
 - Worktree fortemente modificato e non isolato: non usare rollback/reset o cancellazioni massive.
 - I marker di conflitto PHP sotto `laravel/Modules` sono stati rimossi; `rg` non ne trova più.
 - La causa iniziale era un merge incompleto in `Modules/Xot`, non un problema PHPStan di tipo.
@@ -38,3 +41,11 @@ related:
 - Ogni lane ha scope disgiunto; controllare `git status` prima di integrare.
 - I nomi `.md` nuovi sono lowercase-kebab-case senza date/timestamp; date solo nel frontmatter.
 - Nessun commit automatico.
+
+## Chiusura corrente
+
+- Verifica 2026-10-28 ripetuta dopo le correzioni documentali: `./vendor/bin/phpstan analyse Modules --memory-limit=-1 --no-progress` resta verde con la configurazione centrale.
+- Allineati i prompt operativi Markdown a `laravel/phpstan.neon`: rimossi i flag `--level` dai comandi attivi, corretti i riferimenti a Filament 5 e reso esplicito che commit/push richiedono richiesta dell'utente.
+- Corrette tre destinazioni wiki ad alta confidenza: indice Activity, livello PHPStan del modulo Job e riferimenti PHPStan/casts nell'indice Xot.
+- QMD aggiornato con `bashscripts/docs/llm-wiki-qmd.sh update`; l'embedding è già gestito da un processo concorrente.
+- I prompt `.txt` storici e le migliaia di link legacy non sono stati riscritti in massa: richiedono owner/canonical mapping per evitare perdita di contesto.

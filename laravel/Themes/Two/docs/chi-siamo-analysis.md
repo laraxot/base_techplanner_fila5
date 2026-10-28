@@ -169,7 +169,7 @@ Risolvere il problema dell'immagine mancante
 1. **Hero Section** - Titolo, subtitle e CTAs funzionanti
 2. **Struttura Base** - Content section con testo descrittivo
 3. **Componenti Blade** - Tutti creati e testati
-4. **Routing** - `/about` → `PagesController@about` funzionante
+4. **Routing** - `/about` servita da Folio (nessun `PagesController`, il tema non ha Controller)
 5. **Footer** - Struttura completa e professionale
 
 ### Cosa Mancante Critico ❌
@@ -261,7 +261,7 @@ Risolvere il problema dell'immagine mancante
 - **Dati Aziendali**: Completi (P.IVA, REA, PEC, Sede)
 
 ### Pagina Locale (TechPlanner)
-- **URL**: http://127.0.0.1:8000/it/about (routes to PagesController@about)
+- **URL**: http://127.0.0.1:8000/it/about (servita da Folio, nessun Controller)
 - **Tecnologia**: Laravel Blade + Folio
 - **Brand**: TechPlanner Radioprotezione
 - **Specializzazione**: Radioprotezione generale

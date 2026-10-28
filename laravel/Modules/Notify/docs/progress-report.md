@@ -4,7 +4,6 @@ type: concept
 tags: [progress, report]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "progress-report 📊 fixcity project - progress report"
 qmd: "progress-report 📊 ptv project - progress report"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]

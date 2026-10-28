@@ -47,7 +47,7 @@ Nove file `*.php.up` — backup pre-migrazione Filament 3/5, **duplicano** class
 ## P1 — documentazione rumorosa
 
 - Coppie `filament-pages.md` / `filament_pages.md`, `index.md` / `INDEX.md`.
-- Decine di guide migrazione Filament (`migrazione-filament-4.md`, `filament4-migration.md`, …).
+- Decine di guide migrazione Filament (`migrazione-filament.md`, `filament4-migration.md`, …).
 
 **Politica:** tenere **una** guida canonica in wiki; resto on-demand o `docs/wiki/_archive/` se previsto da convenzione Xot.
 

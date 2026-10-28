@@ -11,7 +11,7 @@ related:
 
 # TwentyOne redundancy audit
 
-Audit eseguito il 2026-05-21 (ex `redundancy-audit-2026-05-21.md`); addendum Copilot CLI del 2026-05-25 unito in fondo (ex `copilot-redundancy-audit-2026-05-25.md`).
+Audit eseguito il 2026-05-21 (ex `redundancy-audit.md`); addendum Copilot CLI del 2026-05-25 unito in fondo (ex `copilot-redundancy-audit.md`).
 
 High-risk findings:
 - Header/footer sections are duplicated between `layouts/...` and `components/sections/...`: auth, language, links, links_dropdown, notifications, search, socials, crypto.

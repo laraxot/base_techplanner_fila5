@@ -2,11 +2,8 @@
 qmd: "contributing"
 issues: []
 discussions: []
-title: "Contributing"
-type: documentation
 tags: [gdpr, module]
 created: 2026-10-06
-updated: 2026-10-06
 title: "Gdpr — contributing"
 type: guide
 module: Gdpr

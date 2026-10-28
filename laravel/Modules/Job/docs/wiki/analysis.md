@@ -33,7 +33,7 @@ Modules/Job/
 ### Models
 - Must extend BaseModel from the module's namespace
 - Follow Laravel Model Array Properties Rules
-- PHPStan Level 7 compliance required
+- PHPStan compliance is governed by the central `laravel/phpstan.neon` configuration (`level: max`)
 
 ### Features
 1. Core Job Management

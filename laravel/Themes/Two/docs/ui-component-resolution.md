@@ -1,5 +1,7 @@
 # 🚨 SOLUZIONE DEFINITIVA: Componenti UI nel Modulo Errato
 
+> Correzione regola: la "Verifica 1" su `PagesController` e la rotta `pages.services` sono superate. Il tema non ha Controller ne' rotte per le pagine (Folio), vedi [architecture-data-driven-pages.md](./architecture-data-driven-pages.md).
+
 ## 📋 **Problema Identificato**
 
 Il problema è chiaro: il nostro tema attivo è **Sixteen**, ma stiamo cercando componenti nel modulo **UI**. Questo causa l'errore "Unable to locate a class or view for component [ui.service-card]".

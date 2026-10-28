@@ -25,16 +25,7 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 class LanguageSwitcherWidget extends XotBaseSchemaWidget
 {
     /** @var view-string */
-    protected string $view;
-
-    public function __construct()
-    {
-        /** @var view-string $view */
-        $view = 'lang::filament.widgets.language-switcher';
-        $this->view = $view;
-
-        parent::__construct();
-    }
+    protected string $view = 'lang::filament.widgets.language-switcher';
 
     /**
      * Non è una dashboard card: si monta esplicitamente nel tema
@@ -161,8 +152,6 @@ class LanguageSwitcherWidget extends XotBaseSchemaWidget
      */
     protected function isValidLocale(string $locale): bool
     {
-        $availableLocales = $this->getAvailableLocales();
-
-        return $availableLocales->contains('code', $locale);
+        return $this->getAvailableLocales()->contains('code', $locale);
     }
 }

@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * @see https://github.com/barryvdh/laravel-translation-manager/blob/master/src/Models/Translation.php
  */
@@ -73,6 +72,7 @@ class Translation extends BaseModel
     ];
 
     // protected $table = 'ltm_translations';
+    /** @var list<string> */
     protected $guarded = ['id', 'created_at', 'updated_at'];
 
     /**

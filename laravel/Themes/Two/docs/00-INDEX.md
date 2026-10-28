@@ -1,5 +1,7 @@
 # Two Theme - Documentation Index
 
+> Indice storico, superato: l'indice canonico e' [index.md](./index.md) (ingresso: [README.md](./README.md)). `00-index.md` e' il gemello con la sola maiuscola diversa.
+
 **Theme Version**: 2.0
 
 ## 📚 Quick Navigation
@@ -43,9 +45,9 @@
 
 ### 🔗 Related Resources
 
-- [Cms Module](../../Modules/Cms/docs/README.md)
-- [UI Module](../../Modules/UI/docs/README.md)
-- [Xot Module](../../Modules/Xot/docs/README.md)
+- [Cms Module](../../../Modules/Cms/docs/README.md)
+- [UI Module](../../../Modules/UI/docs/README.md)
+- [Xot Module](../../../Modules/Xot/docs/README.md)
 
 ---
 

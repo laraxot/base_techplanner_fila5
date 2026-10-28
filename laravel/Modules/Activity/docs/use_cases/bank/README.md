@@ -48,6 +48,13 @@ L'obiettivo è fornire una panoramica neutra e riutilizzabile dei pattern, dei v
 - Audit trail limitato (richiede log manuali)
 - Semplice da implementare, difficile da estendere
 
+### 2. Event Sourcing con Projectors
+- Ogni operazione genera un evento persistito
+- Lo stato attuale è una proiezione degli eventi
+- Projectors aggiornano viste leggibili (es. saldo, storico)
+- Audit trail completo, facile rollback
+- Più complesso, ma molto flessibile
+
 | Lingua | Link |
 |--------|------|
 | 🇮🇹 Presentazione | Questo file (`README.md`) |

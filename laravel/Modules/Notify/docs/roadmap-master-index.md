@@ -43,7 +43,7 @@ status: draft
 | **Notify** | 344 | ✅ 0 | [→ Roadmap](../Modules/Notify/docs/roadmap-and-issues.md) ⭐ |
 | **Activity** | 73 | ✅ 0 | [→ Roadmap](../Modules/Activity/docs/roadmap-and-issues.md) |
 | **Cms** | 293 | ✅ 0 | [→ Roadmap](../Modules/Cms/docs/roadmap-and-issues.md) |
-| **Gdpr** | 81 | ✅ 0 | [→ PHPStan Fixes](../Modules/Gdpr/docs/phpstan-fixes-2025-10-01.md) |
+| **Gdpr** | 81 | ✅ 0 | [→ PHPStan Fixes](../../Gdpr/docs/phpstan-fixes.md) |
 | **AI** | 19 | ✅ 0 | [→ Roadmap](../../AI/docs/roadmap-and-issues.md) ⭐ |
 | **Geo** | ~100 | ✅ 0 | [→ Roadmap](../../Geo/docs/roadmap-and-issues.md) |
 | **Notify** | 344 | ✅ 0 | [→ Roadmap](roadmap-and-issues.md) ⭐ |

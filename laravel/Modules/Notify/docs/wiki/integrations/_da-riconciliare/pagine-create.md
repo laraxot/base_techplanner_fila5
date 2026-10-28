@@ -1,11 +1,9 @@
 ---
-title: "Pagine Create - Notify Sixteen Theme"
 title: "Pagine Create - <nome progetto> Sixteen Theme"
 type: concept
 tags: [pagine, create]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "pagine-create pagine create - laraxot sixteen theme"
 qmd: "pagine-create pagine create - <nome progetto> sixteen theme"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]

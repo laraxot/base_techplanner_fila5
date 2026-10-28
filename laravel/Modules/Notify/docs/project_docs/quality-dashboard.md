@@ -1,11 +1,9 @@
 ---
-title: "📊 Quality Dashboard - FixCity Project"
 title: "📊 Quality Dashboard - Notify Project"
 type: concept
 tags: [quality, dashboard]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "quality-dashboard 📊 quality dashboard - fixcity project"
 qmd: "quality-dashboard 📊 quality dashboard - laraxot project"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]

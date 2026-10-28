@@ -42,9 +42,9 @@ discussions: []
 
 ### Sviluppo
 - [filament-chart-integration.md](./filament-chart-integration.md)
-- [phpstan.md](./phpstan.md) — gate agenti su **Modules** (vietato analyse solo-tema; policy [single-neon](../../../../Modules/Xot/docs/wiki/memories/phpstan-single-neon-config.md))
-- [phpstan-dry-kiss-theme-guidelines.md](./phpstan-dry-kiss-theme-guidelines.md)
-- Evidenza gate Modules: [Xot phpstan-modules-zero-wave3](../../../../Modules/Xot/docs/stories/phpstan-modules-zero-wave3.story.md) — il tema non ha PHP di dominio in `app/`
+- [phpstan.md](./phpstan.md) — gate agenti su **Modules** (vietato analyse solo-tema; policy [phpstan-neon-user-only](../../../../../docs/wiki/rules/phpstan-neon-user-only.md))
+- [dry-kiss-best-practices.md](./dry-kiss-best-practices.md)
+- Il tema non ha PHP di dominio in `app/`: il gate Modules non lo copre.
 - **Boy scout post-zero:** dopo Modules a zero continua solo igiene docs/viste/asset (`app/` vuota); niente PHPStan theme-only. Story: [docs-temi-audit-organizzazione](../stories/docs-temi-audit-organizzazione.story.md). Ingresso: [../README.md](../README.md).
 - [authentication.md](./authentication.md) / [mail-layouts.md](./mail-layouts.md)
 

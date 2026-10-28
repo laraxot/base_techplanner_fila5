@@ -9,7 +9,7 @@ discussions: []
 id: "2026-10-14-dcp-164"
 epic: 164
 title: "Registrazione con consenso privacy/termini obbligatori (PA)"
-slug:registrazione-consenso-obbligatorio-PA
+slug: registrazione-consenso-obbligatorio-PA
 status: ready-for-dev
 scope: module:User, theme:Sixteen
 github:

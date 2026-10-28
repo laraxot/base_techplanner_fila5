@@ -17,6 +17,7 @@ Tema **Two** — secondo tema del progetto.
 
 | Cartella | Contenuto |
 |----------|-----------|
-| [concepts/](./concepts/) | Pattern funzionanti (ponytail-audit, theme-root-uppercase) |
-| [rules/](./rules/) | Regole del tema |
-| [skills/](./skills/) | Skill specifiche |
+| [concepts/](./concepts/) | [filament-xotbase-boundary](./concepts/filament-xotbase-boundary.md), [json-content-religion](./concepts/json-content-religion.md), [ponytail-audit](./concepts/ponytail-audit.md), [theme-root-uppercase-folders](./concepts/theme-root-uppercase-folders.md) |
+| `decisions/`, `glossary/`, `how-to/`, `index/`, `reference/` | cartelle vuote (solo `.gitkeep`) |
+
+Altro: [log.md](./log.md), [AGENTS.md](./AGENTS.md) (istruzioni per chi mantiene la wiki). Indice di tutta la docs del tema: [../index.md](../index.md). Le cartelle `rules/` e `skills/` citate dal log iniziale non esistono.

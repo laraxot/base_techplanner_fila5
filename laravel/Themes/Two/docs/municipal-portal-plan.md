@@ -1,5 +1,7 @@
 # 📚 Progettazione Portale Municipale - TechPlanner
 
+> Correzione regola: la sezione "Controller Avanzato" sotto e' superata. Il tema non ha Controller ne' rotte per le pagine: routing con Folio e contenuto JSON, vedi [architecture-data-driven-pages.md](./architecture-data-driven-pages.md) e [folio-page-file-rules.md](./folio-page-file-rules.md).
+
 ## 🎯 Obiettivo
 
 Creare un portale municipale completo che rappresenti l'eccellenza nel design di portali governativi italiani, superando il sito target in ogni aspetto.

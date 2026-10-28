@@ -68,16 +68,13 @@ Indice operativo: [00-INDEX.md](./00-index.md). Wiki: [wiki/index.md](./wiki/ind
 
 ## Dipendenze / Moduli Correlati
 
-- [Xot - Framework Base](../Xot/docs/README.md) — Always dependency
-- [UI - Components](../UI/docs/README.md) — For UI components library
-- [Lang - Translations](../Lang/docs/README.md) — For i18n support
-- [Media - File Management](../Media/docs/README.md) — For image/file handling
+- [Xot - Framework Base](../../Xot/docs/README.md) — Always dependency
+- [UI - Components](../../UI/docs/README.md) — For UI components library
+- [Lang - Translations](../../Lang/docs/README.md) — For i18n support
+- [Media - File Management](../../Media/docs/README.md) — For image/file handling
 
 ## Documenti Correlati
 
-- [Content Management Best Practices](../../../docs/wiki/standards/content-management.md)
-- [Block System Patterns](../../../docs/wiki/standards/block-patterns.md)
-- [Frontend Architecture](../../../docs/architecture/frontend.md)
 - [PHPStan Configuration](../../../phpstan.neon)
 
 ## Regole Critiche
@@ -92,9 +89,9 @@ Indice operativo: [00-INDEX.md](./00-index.md). Wiki: [wiki/index.md](./wiki/ind
 
 ## Standard Rules & Workflow
 
-- [[BMAD Method](../../../docs/wiki/concepts/bmad-method.md)]
-- [[Context Engineering](../../../docs/wiki/concepts/context-engineering.md)]
-- [[LLM Wiki Governance](../../../docs/wiki/concepts/llm-wiki-governance.md)]
+- [[BMAD Method](../../../../docs/wiki/concepts/bmad-method.md)]
+- [[Context Engineering](../../../../docs/wiki/concepts/context-engineering.md)]
+- [[LLM Wiki Governance](../../../../docs/wiki/concepts/llm-wiki-governance.md)]
 
 ---
 

@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Tests\Unit;
 
+use Tests\TestCase;
+
+uses(TestCase::class);
+
 test('HasBlocks getBlocksBySlug handles MultipleRecordsFoundException', function (): void {
     $reflectionClass = new \ReflectionClass(\Modules\Cms\Models\Traits\HasBlocks::class);
     $method = $reflectionClass->getMethod('getBlocksBySlug');

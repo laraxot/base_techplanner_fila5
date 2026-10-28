@@ -40,6 +40,9 @@ Indice operativo del wiki Xot (core framework).
 - [module-directory-structure-rule.md](../module-directory-structure-rule.md) _(target mancante, verificato 2026-10-14)_ — regola cartelle modulo (PHP solo in `app/`)
 - [concepts/](./concepts/): Pattern architetturali e metodologie Xot/Laraxot.
 - [entities/](./entities/): Modelli e componenti chiave.
+- [architettura](./concepts/xot-module-architecture-overview.md): Panoramica architetturale del modulo Xot (sovrapponibile a `bmad/architecture.md`).
+- [rules/](./rules/): Regole operative e contratti.
+- [overviews/](./overviews/): Viste panoramiche.
 - [sources/](./sources/): Dati di ricerca e link esterni.
 - [comparisons/](./comparisons/): Implementazioni alternative.
 - [decisions/](./decisions/): ADL (Architectural Decision Log).
@@ -47,7 +50,7 @@ Indice operativo del wiki Xot (core framework).
 - [_archive/](./_archive/): Documentazione legacy.
 - [_templates/](./_templates/): Template standard.
 
-## Architettura Canonica (BMAD)
+## Regole collegate
 
 - [ai-harness-xot-discipline.md](./concepts/ai-harness-xot-discipline.md) — harness agenti (canon moduli)
 - [module-testcase-xotbase-hierarchy.md](./rules/module-testcase-xotbase-hierarchy.md) — TestCase dei moduli estendono `XotBaseTestCase`; nWidart Tests e' dev-only nel package installato
@@ -67,14 +70,14 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 ## Completamento piattaforma
 
 - [overviews/platform-completion-roadmap.md](./overviews/platform-completion-roadmap.md) — **SSoT** roadmap 16 moduli + 4 temi (2026-06-13)
-- [phpstan-best-practices.md](./phpstan-best-practices.md)
+- [PHPStan troubleshooting](../troubleshooting/phpstan.md)
 
 ## Compiled Pages
 
 | Pagina | Tipo | Argomento | Data |
 |--------|------|-----------|------|
 | [platform-completion-roadmap](./overviews/platform-completion-roadmap.md) | Overview | Hub completamento progetto Fixcity | 2026-06-13 |
-| [phpstan-best-practices](./phpstan-best-practices.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
+| [PHPStan troubleshooting](../troubleshooting/phpstan.md) | Guideline | Pattern test PHPStan maximum | 2026-06-13 |
 | [ridondanze-cross-cutting-codebase](./concepts/ridondanze-cross-cutting-codebase.md) | Concept | DRY codebase + doc duplicazioni cross-moduli | 2026-05-21 |
 | [policy-inheritance-boundary](../User/docs/wiki/concepts/policy-inheritance-boundary.md) | Decision | Cross-module | 2026-04-27 |
 | [redundancy-catalog](./concepts/redundancy-catalog.md) | Concept | Indice ridondanza e link report trasversale | 2026-05-21 |
@@ -95,8 +98,8 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 
 - Ogni modulo Nwidart deve avere `config/config.php` (vedi [module-config-php-religion](./concepts/module-config-php-religion.md))
 - Usare Actions non Services (vedi [actions-over-services-governance](https://github.com/laraxot/base_fixcity_fila5/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
-- Implementare `casts()` method non `$casts` property (vedi [model-casts-phpstan](../../../../docs/wiki/concepts/model-casts-phpstan.md))
-- PHPStan Level 10 enforcement (vedi [phpstan-level10](../../../../docs/wiki/concepts/phpstan-level10.md))
+- Implementare `casts()` method non `$casts` property (vedi [custom-casts](../-integration/custom-casts.md))
+- PHPStan enforcement (vedi [PHPStan troubleshooting](../troubleshooting/phpstan.md))
 - Test PHPStan remediation: Pest resta Pest; bridge/helper condivisi solo quando riducono duplicazione cross-modulo.
 
 ## Bad Practices
@@ -132,11 +135,11 @@ Aggiornato: 2026-07-27
 
 ## Lezioni 2026-10-06 — PHPStan cleanup Xot/app
 
-- [dev-story](../stories/2026-10-06-phpstan-cleanup-xot-app.dev.md) — scopo prima dell'errore: variabili orfane = logica tolta (`RelationX`, `RouteService`), costanti tipizzate vs `composer.json` `php ^8.2`, result-cache PHPStan stale tra agenti paralleli. Story: [story](../stories/2026-10-06-phpstan-cleanup-xot-app.story.md).
+- [dev-story](../stories/phpstan-cleanup-xot-app.dev.md) — scopo prima dell'errore: variabili orfane = logica tolta (`RelationX`, `RouteService`), costanti tipizzate vs `composer.json` `php ^8.2`, result-cache PHPStan stale tra agenti paralleli. Story: [story](../stories/phpstan-cleanup-xot-app.story.md).
 
 ## Lezioni 2026-10-06 — PHPStan cleanup Xot (tests, helpers, stub Pest)
 
-- [dev-story](../stories/2026-10-06-phpstan-cleanup-xot-rest.dev.md) — test segnaposto con variabile non letta = asserzione persa; stub `Pest\Laravel\*` risolti da `tests/PestStubs.php` prima del vendor (firme intoccabili, parametri resi utili con `xotPestStubFailure()`); classe anonima annidata = PHPDoc non risolto, serve una classe nominata. Story: [story](../stories/2026-10-06-phpstan-cleanup-xot-rest.story.md).
+- [dev-story](../stories/phpstan-cleanup-xot-rest.dev.md) — test segnaposto con variabile non letta = asserzione persa; stub `Pest\Laravel\*` risolti da `tests/PestStubs.php` prima del vendor (firme intoccabili, parametri resi utili con `xotPestStubFailure()`); classe anonima annidata = PHPDoc non risolto, serve una classe nominata. Story: [story](../stories/phpstan-cleanup-xot-rest.story.md).
 
 ## Decisioni in discussione — 2026-09-11
 

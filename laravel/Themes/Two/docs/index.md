@@ -158,9 +158,13 @@ File non cancellati né rinominati, ma segnalati come duplicati o come versioni 
 
 ### Duplicati esatti (stesso contenuto, nome case-variant)
 
+Le copie in maiuscolo differiscono solo per il frontmatter `status: superseded`; la fonte e' la versione minuscola.
+
 - [ui-ux-improvement-plan.md](ui-ux-improvement-plan.md) / [UI-UX-improvement-plan.md](UI-UX-improvement-plan.md)
 - [final-summary.md](final-summary.md) / [FINAL-SUMMARY.md](FINAL-SUMMARY.md)
 - [replication-complete.md](replication-complete.md) / [REPLICATION-COMPLETE.md](REPLICATION-COMPLETE.md)
+- [comparative-analysis.md](comparative-analysis.md) / [comparative-analysis-2025.md](comparative-analysis-2025.md) (identiche; la seconda e' `superseded`)
+- `prompts/fix/{contact,headernav,layout,login-alpine}.md`: copie identiche di `fix/*.md` (fonte: `fix/`)
 
 ### Duplicati per naming (hyphen vs underscore), stesso argomento
 
@@ -282,9 +286,7 @@ File non cancellati né rinominati, ma segnalati come duplicati o come versioni 
 
 ### File grezzi / scraping (non documentazione narrativa)
 
-- [Main_files/filament-peek-demo/public/robots.md](Main_files/filament-peek-demo/public/robots.md)
-- [Main_files/filament-peek-demo/README.md](Main_files/filament-peek-demo/README.md)
-- [Main_files/js_snippet.md](Main_files/js-snippet.md)
+- [Main_files/js-snippet.md](Main_files/js-snippet.md)
 - [Main_files/lightseagreen-dogfish-560272.hostingersite.com/lightseagreen-dogfish-560272.hostingersite.com/robots.md](Main_files/lightseagreen-dogfish-560272.hostingersite.com/lightseagreen-dogfish-560272.hostingersite.com/robots.md)
 - [Main_files/lightseagreen-dogfish-560272.hostingersite.com/robots.md](Main_files/lightseagreen-dogfish-560272.hostingersite.com/robots.md)
 - [Main_files/root_innerHTML.md](Main_files/root-innerhtml.md)

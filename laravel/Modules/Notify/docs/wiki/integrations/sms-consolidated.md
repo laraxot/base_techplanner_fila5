@@ -7534,7 +7534,7 @@ class NetfunSMSTest extends TestCase
 
 ## sms-provider-configuration-1
 
-*Consolidated from: `sms-provider-configuration-1.md`*
+*Consolidated from: `sms-provider-configuration.md`*
 
 
 This file is deprecated.

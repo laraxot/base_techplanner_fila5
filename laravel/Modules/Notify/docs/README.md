@@ -1,13 +1,9 @@
 ---
-qmd: "README"
 qmd: "notify docs README ownership mappa del codice canali limiti verificati"
 issues: []
 discussions: []
 title: "Notify Module Documentation"
 type: documentation
-tags: [module, documentation]
-created: 2026-06-05
-updated: 2026-08-02
 status: active
 tags: [module, documentation]
 created: 2026-06-05

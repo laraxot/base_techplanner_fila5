@@ -1,7 +1,7 @@
 ---
 type: decision-log
 title: "Decision Log — Seo"
-links: {github_issue: #XXX, discussion: #XXX}
+links: {github_issue: "#XXX", discussion: "#XXX"}
 updated: 2026-10-07
 tags: [docs, seo]
 qmd: "decision log seo seo"

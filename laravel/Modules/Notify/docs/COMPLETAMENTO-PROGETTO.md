@@ -292,8 +292,8 @@ public function execute(string $prompt, int $cacheDurationMinutes = 60): string
 18. ✅ [Cms/docs/roadmap-and-issues.md](../Modules/Cms/docs/roadmap-and-issues.md)
 
 ### Module PHPStan Fixes (3)
-19. ✅ [Gdpr/docs/phpstan-fixes-2025-10-01.md](../Modules/Gdpr/docs/phpstan-fixes-2025-10-01.md)
-20. ✅ [AI/docs/phpstan-fixes-2025-10-01.md](../Modules/AI/docs/phpstan-fixes-2025-10-01.md)
+19. ✅ [Gdpr/docs/phpstan-fixes.md](../../Gdpr/docs/phpstan-fixes.md)
+20. ✅ [AI/docs/phpstan-fixes.md](../../AI/docs/phpstan-fixes.md)
 21. ✅ [User/docs/phpstan-fixes-2025-10-01.md](../Modules/User/docs/phpstan-fixes-2025-10-01.md)
 
 ### Theme Docs

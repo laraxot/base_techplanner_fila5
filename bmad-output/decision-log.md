@@ -44,7 +44,7 @@
 - Symptom: CMS home rendering exposed only "2 records were found."
 - Root cause: Page JSON-backed data contains duplicate home rows (id=3, id=1).
 - Decision: Keep sole() fail-fast semantics and add model/slug/side/ID context; remove arbitrary first() fallback.
-- Artifacts: bmad-output/investigation-cms-duplicate-page-slug-2026-10-06.md and story 8.5.cms-duplicate-page-slug-diagnostics.
+- Artifacts: bmad-output/investigation-cms-duplicate-page-slug.md and story 8.5.cms-duplicate-page-slug-diagnostics.
 
 # Domain enums over Employee model constants — 2026-10-06
 

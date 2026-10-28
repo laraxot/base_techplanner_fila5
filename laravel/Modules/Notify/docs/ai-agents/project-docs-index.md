@@ -3765,7 +3765,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Media/docs/module-analysis.md` — Media Module - Comprehensive Analysis
 - `laravel/Modules/Media/docs/module-media.md` — Modulo Media
 - `laravel/Modules/Media/docs/module-media-modulo.md` — Modulo Media
-- `laravel/Modules/Media/docs/module-media-root-symlink-1.md` — module-media-root-symlink-1
+- `laravel/Modules/Media/docs/module-media-root-symlink.md` — module-media-root-symlink-1
 - `laravel/Modules/Media/docs/module-media-root-symlink.md` — module-media-root-symlink
 - `laravel/Modules/Media/docs/module-media.md` — Modulo Media
 - `laravel/Modules/Media/docs/module-overview.md` — Media module overview
@@ -5885,7 +5885,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/UI/docs/phpstan-errors-roadmap.md` — PHPStan Level 10 Errors Roadmap - UI Module
 - `laravel/Modules/UI/docs/phpstan-fixes-.md` — Correzioni PHPStan - Modulo UI
 - `laravel/Modules/UI/docs/phpstan-fixes-1.md` — Correzioni PHPStan Livello 7 - Modulo UI
-- `laravel/Modules/UI/docs/phpstan-fixes-2.md` — Correzioni PHPStan - Modulo UI
+- `laravel/Modules/UI/docs/phpstan-fixes.md` — Correzioni PHPStan - Modulo UI
 - `laravel/Modules/UI/docs/phpstan-fixes.md` — Correzioni PHPStan - Modulo UI
 - `laravel/Modules/UI/docs/phpstan-fixes-2025.md` — phpstan-fixes-2025
 - `laravel/Modules/UI/docs/phpstan-fixes-conflict-d41d8c.md` — phpstan-fixes-conflict-d41d8c
@@ -5906,7 +5906,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/UI/docs/phpstan-namespace-correction.md` — Correzione Namespace nel Modulo UI
 - `laravel/Modules/UI/docs/phpstan-patterns.md` — PHPStan Level 10 - Pattern Riutilizzabili
 - `laravel/Modules/UI/docs/phpstan-property-exists-elimination.md` — PHPStan Property Exists Elimination - UI Module
-- `laravel/Modules/UI/docs/phpstan-radio-badge-fix-1.md` — Correzione Errori PHPStan - RadioBadge.php
+- `laravel/Modules/UI/docs/phpstan-radio-badge-fix.md` — Correzione Errori PHPStan - RadioBadge.php
 - `laravel/Modules/UI/docs/phpstan-radio-badge-fix.md` — Correzione Errori PHPStan - RadioBadge.php
 - `laravel/Modules/UI/docs/phpstan-radio-badge-fix.md` — Correzione Errori PHPStan - RadioBadge.php
 - `laravel/Modules/UI/docs/phpstan-roadmap.md` — PHPStan Roadmap - UI Module

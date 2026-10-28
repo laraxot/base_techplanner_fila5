@@ -64,7 +64,7 @@ status: draft
 |----------|---------|-----------|
 | **phase-1-strategy.md** | Complete research & strategy | 20 min |
 | **gsd-phase-1-execution.md** | Execution plan with all 6 subtasks | 15 min |
-| **00-index-1.md** | Master documentation index | 10 min |
+| **00-index.md** | Master documentation index | 10 min |
 
 ### 🔧 TOOLS & SCRIPTS
 | Document | Purpose | Read Time |
@@ -83,7 +83,7 @@ status: draft
 laravel/Themes/Sixteen/docs/
 ├─ phase-1-strategy.md                    (strategy)
 ├─ gsd-phase-1-execution.md               (execution plan)
-├─ 00-index-1.md                            (master index)
+├─ 00-index.md                            (master index)
 ├─ phase-1-execution-status.md            (progress tracking)
 ├─ body-structure-comparison/
 │  └─ segnalazioni-elenco/
@@ -136,7 +136,7 @@ laravel/Themes/Sixteen/docs/
 **Subtask 6** (LATER):
 - ⏳ Input: Final comparison results from Subtask 5
 - 📝 Create: PHASE-1-COMPLETION-REPORT.md
-- 🔄 Update: 00-index-1.md with Phase 1 status
+- 🔄 Update: 00-index.md with Phase 1 status
 
 **Read First**:
 1. phase-1-execution-status.md (overview)
@@ -373,7 +373,7 @@ Before starting your subtask:
 |------|------|----------|--------|
 | Strategy | phase-1-strategy.md | laravel/Themes/Sixteen/docs/ | ✅ DONE |
 | Execution Plan | gsd-phase-1-execution.md | laravel/Themes/Sixteen/docs/ | ✅ DONE |
-| Master Index | 00-index-1.md | laravel/Themes/Sixteen/docs/ | ✅ DONE |
+| Master Index | 00-index.md | laravel/Themes/Sixteen/docs/ | ✅ DONE |
 | Tool Docs | bashscripts/docs/html/index.md | bashscripts/docs/html/ | ✅ DONE |
 | Comparison Script | html-structure-compare.sh | bashscripts/body/ | ✅ READY |
 | Blade Fixes | [slug].blade.php | laravel/Themes/Sixteen/resources/views/pages/tests/ | ⏳ PENDING |

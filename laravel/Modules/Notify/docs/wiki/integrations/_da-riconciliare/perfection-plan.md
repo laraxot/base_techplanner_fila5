@@ -1,11 +1,9 @@
 ---
-title: "🎯 NOTIFY - PERFECTION PLAN"
 title: "🎯 <nome progetto> - PERFECTION PLAN"
 type: concept
 tags: [perfection, plan]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "perfection-plan 🎯 laraxot - perfection plan"
 qmd: "perfection-plan 🎯 <nome progetto> - perfection plan"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]

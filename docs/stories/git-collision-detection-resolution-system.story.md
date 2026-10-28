@@ -220,3 +220,12 @@ docs/wiki/rules/git-collision-detection-resolution.md
 **Generated with Devin**  
 **BMAD Story Approach**  
 **Visionary Eccentric Programmer Mode: ON**
+
+## Incidente 2026-10-28: marker committati da rebase aperti
+
+- **Fatto:** 10 moduli con `rebase-merge` aperto e Xot con `MERGE_HEAD`; i marker erano dentro commit `.` (nessun file `unmerged`, per questo `ls-files -u` non li vedeva).
+- **Causa:** `dummy_push()` in `bashscripts/lib/custom.sh` fa `git add -A` + `git commit -am "."` + push senza controllare se c'è un rebase o merge aperto.
+- **Correzione:** guardia in `dummy_push` (`return 0` con `rebase-merge`, `rebase-apply`, `MERGE_HEAD`, `CHERRY_PICK_HEAD` o `REVERT_HEAD` aperti), provata su un repo fixture.
+- **Esito (17:15):** un'altra sessione ha chiuso rebase e merge; i marker rigiocati sono scesi da 208 a 15 `.md` (Activity, blocchi con contenuto diverso), risolti con `bashscripts/tools/resolve_merge_blocks.py` e, per i `REVIEW`, da un agent per modulo.
+- **Nuovo controllo:** `bashscripts/tools/docs/frontmatter-check.py` (`check`, `dedupe`, `selftest`). Un'unione di righe produce chiavi YAML duplicate e frontmatter invalidi che nessun gate vedeva: 172 file, 121 corretti con `dedupe`. Va lanciato dopo ogni bonifica di marker (`check --since 60 laravel docs`); è il candidato naturale per l'AC4 (quality gate).
+- **Aperto:** la logica `pull --rebase --strategy-option=ours` dei sync; più composer concorrenti su `laravel/vendor` (visti alle 17:11). Stato e decisioni: [handoff-git-collisions-rebase-markers](../chat/handoff-git-collisions-rebase-markers.md).

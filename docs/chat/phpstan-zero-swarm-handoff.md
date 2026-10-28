@@ -133,7 +133,7 @@ per-file `phpstan analyse <file>` on all 10 changed files, all showing 0 `missin
 no new errors. Commit: `635876a2` on branch `dev`.
 
 Second-brain: no new pattern beyond what's already in
-`bashscripts/ai/wiki/memories/phpstan-missing-type-patterns-2026-06.md` (the "bare array inside a
+`bashscripts/ai/wiki/memories/phpstan-missing-type-patterns.md` (the "bare array inside a
 union type hint" case is a direct instance of the documented `param/return generico array` row, just
 spelled out for scalar unions specifically for future search-ability).
 
@@ -199,7 +199,7 @@ again. Worth noting in second-brain: **a syntax error in ANY module can block ph
 ANY other module**, because Larastan's bootstrap eagerly loads all Filament panel providers app-wide.
 
 Second-brain: the "Spatie LaravelData class-level vs constructor-level @param" pattern is new and not
-yet in `bashscripts/ai/wiki/memories/phpstan-missing-type-patterns-2026-06.md` — worth adding since
+yet in `bashscripts/ai/wiki/memories/phpstan-missing-type-patterns.md` — worth adding since
 Xot/Blog/Cms all use this Data pattern heavily and other modules will likely hit the same silent-ignore
 issue.
 
@@ -256,7 +256,7 @@ issue.
   `Modules/UI/**` mid-edit — not caused by this session, resolved itself once that agent's
   edit completed; retried until clean. No `Modules/UI` files touched here.
 - No new second-brain pattern needed; the existing `missingType.iterableValue` memory entry
-  and `phpstan-modules-sweep-2026-07-01.md` already cover this fix category.
+  and `phpstan-modules-sweep.md` already cover this fix category.
 - `laravel/Modules/Cms` has its own remote (`laraxot/module_cms_fila5`); posted a status comment
   on the relevant open issue [laraxot/module_cms_fila5#11](https://github.com/laraxot/module_cms_fila5/issues/11)
   ("COPILOT: Redundancy & phpstan — Cms").
@@ -330,7 +330,7 @@ issue.
   baseline estimate).
 - Pattern: all 9 were `@method static <Model> create(array $attributes = [])` /
   `firstOrCreate(array $attributes = [], array $values = [])` PHPDoc tags with bare `array` — same known
-  pattern already documented in `bashscripts/ai/wiki/memories/phpstan-missing-type-patterns-2026-06.md` (not
+  pattern already documented in `bashscripts/ai/wiki/memories/phpstan-missing-type-patterns.md` (not
   a new pattern, no wiki update needed). Fixed to `array<string, mixed>`.
 - Files: `Modules/Comment/app/Models/CommentNotificationOptOut.php`,
   `Modules/Comment/app/Models/CommentNotificationSubscription.php`, `Modules/Comment/app/Models/Reaction.php`.

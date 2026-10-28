@@ -2,11 +2,8 @@
 qmd: "testing"
 issues: []
 discussions: []
-title: "Testing"
-type: documentation
 tags: [gdpr, module]
 created: 2026-10-06
-updated: 2026-10-06
 title: "Gdpr — testing"
 type: guide
 module: Gdpr

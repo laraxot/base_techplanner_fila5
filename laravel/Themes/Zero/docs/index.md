@@ -62,7 +62,7 @@ storico e' in [`_archive/index-legacy.md`](./_archive/index-legacy.md).
 - [Concepts](./concepts/README.md)
 - [Skills](./skills/readme.md)
 - [Archivio](./_archive/README.md)
-- [Epics](./epics/)
+- [Epics](./bmad/epics/)
 
 ## Regole
 

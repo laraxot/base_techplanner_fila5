@@ -1,12 +1,12 @@
 ---
-title: "Two {{TYPE^}} LLM Wiki Agent Instructions"
+title: "Two LLM Wiki Agent Instructions"
 type: reference
 tags: [wiki, no-frontmatter-fix]
 created: 2026-10-06
 updated: 2026-10-06
 ---
 
-# Two {{TYPE^}} LLM Wiki Agent Instructions
+# Two LLM Wiki Agent Instructions
 
 > **Module/Theme:** Two
 > **Scope:** Two-specific knowledge only
@@ -146,6 +146,5 @@ Related:
 
 ## Related Documentation
 
-- [Project Wiki Integration](../../docs/wiki/README.md)
-- [Project Wiki Agent Instructions](../../docs/wiki/AGENTS.md)
-- [Theme Documentation](../README.md)
+- [Project Wiki](../../../../../docs/wiki/index.md)
+- [Theme Documentation](../index.md)

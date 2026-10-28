@@ -23,9 +23,9 @@ related:
   - ./stories/docs-temi-audit-organizzazione.story.md
   - ../../../Modules/Cms/docs/scopo.md
   - ../../../Modules/Lang/docs/scopo.md
-  - ../../../Modules/Xot/docs/wiki/memories/phpstan-single-neon-config.md
+  - ../../../../docs/wiki/rules/phpstan-neon-user-only.md
   - ../../../Modules/Xot/docs/conventions/docs-organization.md
-  - ./INDEX.md
+  - ./index.md
 ---
 
 <!--
@@ -64,7 +64,8 @@ Il tema non contiene logica di dominio. Survey, autorizzazione e dati Pulse appa
 | [`bmad/`](bmad/) | guide, architettura, report e pianificazione del tema (la parte piu' grande) | [`bmad/00-index.md`](bmad/00-index.md), [`bmad/README.md`](bmad/README.md), panoramica lunga [`bmad/theme-overview.md`](bmad/theme-overview.md) |
 | [`wiki/`](wiki/) | conoscenza curata per gli agenti: concetti, regole, how-to, memorie, fonti | [`wiki/index.md`](wiki/index.md), [`wiki/README.md`](wiki/README.md) |
 | [`stories/`](stories/) | story BMAD del tema | [`stories/README.md`](stories/README.md) |
-| [`bmad/stories/`](bmad/stories/) | altre due story, nate prima della policy | vedi sotto |
+| [`bmad/stories/`](bmad/stories/) | altre story, nate prima della policy | vedi sotto |
+| [`architecture/`](architecture/) | solo ingresso verso l'architettura (il contenuto sta in `bmad/architecture.md` e `wiki/rules/`) | [`architecture/README.md`](architecture/README.md) |
 | [`concepts/`](concepts/) | vincoli e concetti specifici del tema | [`concepts/README.md`](concepts/README.md) |
 | [`skills/`](skills/) | note sulle skill del tema | [`readme.md`](skills/readme.md) |
 | [`_archive/`](_archive/) | copie storiche, non canoniche; ogni file ha `canonical:` verso il documento vivo | [`README.md`](_archive/README.md) (tabella copia e canonico) |
@@ -76,13 +77,13 @@ File nella radice: [`changelog.md`](changelog.md) (cronologia), [`inventory.md`]
 - Architettura: [`bmad/architecture.md`](bmad/architecture.md), [`wiki/rules/architecture-rules.md`](wiki/rules/architecture-rules.md), [`concepts/xotbase-never-extend-filament.md`](concepts/xotbase-never-extend-filament.md).
 - Viste e UI: [`bmad/layouts.md`](bmad/layouts.md), [`bmad/components.md`](bmad/components.md), [`bmad/customization.md`](bmad/customization.md), [`bmad/mail-layouts.md`](bmad/mail-layouts.md).
 - Grafici: [`bmad/filament-chart-integration.md`](bmad/filament-chart-integration.md), [`wiki/concepts/jpgraph-guide.md`](wiki/concepts/jpgraph-guide.md).
-- Qualita': [`bmad/phpstan.md`](bmad/phpstan.md) (gate **Modules**, non analyse sul solo tema), [`bmad/phpstan-dry-kiss-theme-guidelines.md`](bmad/phpstan-dry-kiss-theme-guidelines.md), [`bmad/php-quality-gates-rule.md`](bmad/php-quality-gates-rule.md). Gate unico: solo `laravel/phpstan.neon` — [phpstan-single-neon-config](../../../Modules/Xot/docs/wiki/memories/phpstan-single-neon-config.md). Evidenza foundation: [Xot phpstan-modules-zero-wave3](../../../Modules/Xot/docs/stories/phpstan-modules-zero-wave3.story.md); religione **scopo → fix** + Services→Actions in [services-to-actions-global-wave](../../../Modules/Xot/docs/stories/services-to-actions-global-wave.story.md).
+- Qualita': [`bmad/phpstan.md`](bmad/phpstan.md) (gate **Modules**, non analyse sul solo tema), [`bmad/dry-kiss-best-practices.md`](bmad/dry-kiss-best-practices.md), [`bmad/php-quality-gates-rule.md`](bmad/php-quality-gates-rule.md). Gate unico: solo `laravel/phpstan.neon`, modificabile solo dall'utente — [phpstan-neon-user-only](../../../../docs/wiki/rules/phpstan-neon-user-only.md). Religione **scopo → fix** + Services→Actions in [services-to-actions-global-wave](../../../Modules/Xot/docs/stories/services-to-actions-global-wave.story.md).
 - **Boy scout post-zero (continua):** dopo il gate Modules a zero non c'e' PHP di dominio da tipizzare nel tema (`app/` vuota). Il miglioramento continuo resta su docs/viste/asset (indice = questo README; story [docs-temi-audit-organizzazione](stories/docs-temi-audit-organizzazione.story.md) wave 4+).
 
 ## Story
 
 - In `stories/`: [audit e organizzazione delle docs dei temi, 2026-10-20](stories/docs-temi-audit-organizzazione.story.md), [salute della docs, 2026-10-08](stories/zero-docs-health.story.md), [audit documentazione](stories/docs-theme-zero-audit.story.md), [audit indice](stories/docs-index-audit.story.md), [pulizia marker di conflitto](stories/zero-conflict-markers-cleanup.story.md), [restyling login](stories/auth-login-ui-ux-redesign.story.md).
-- In `bmad/stories/`: [gate PHPStan e swarm](bmad/stories/quality-gates-phpstan-swarm.story.md), [dedup e frontmatter](bmad/stories/theme-docs-dedup-frontmatter.story.md).
+- In `bmad/stories/`: [gate PHPStan e swarm](bmad/stories/quality-gates-phpstan-swarm.story.md), [gate PHPStan, run themes-zero](bmad/stories/quality-gates-phpstan-swarm-gate-themes-zero-run.story.md), [dedup e frontmatter](bmad/stories/theme-docs-dedup-frontmatter.story.md), [organizzazione docs](bmad/stories/docs-organization.story.md).
 
 ## Regole di manutenzione
 

@@ -4,7 +4,6 @@ type: concept
 tags: [documentation, ecosystem]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "documentation-ecosystem fixcity documentation ecosystem - visual map"
 qmd: "documentation-ecosystem ptv documentation ecosystem - visual map"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]

@@ -92,7 +92,7 @@ Nessun file `rector.php` trovato nei temi. Possibile creare configurazione stand
 
 ## Collegamenti
 
-- [Module Analysis Report](./module-analysis-report-2025-01-06.md)
+- [Module Analysis Report](./module-analysis-report.md)
 - [Sixteen Theme Docs](../Themes/Sixteen/docs/README.md)
 - [Two Theme Docs](../Themes/Two/docs/README.md)
 - [Zero Theme Docs](../Themes/Zero/docs/README.md)

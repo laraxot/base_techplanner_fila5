@@ -52,6 +52,8 @@ test('Welcome page has getViewData method', function () {})->todo('Serve una ass
 
 test('Welcome page has initView method', function () {})->todo('Serve una asserzione di comportamento: method_exists() su una classe nota e\' decidibile staticamente, quindi non prova niente.');
 
-test('Welcome page has url method', function () {})->todo();
-
-test('Welcome page has setModel method', function () {})->todo();
+// Rimossi `test('Welcome page has url method')` e `test('... setModel method')`: le
+// closure erano vuote e nessuno dei due metodi esiste. `Welcome` dichiara solo `mount`,
+// `getViewData` e `initView`; la catena `XotBasePage` -> `Filament\Pages\Page` espone
+// `getUrl()` statico, non `url()`, e non ha `setModel()`. Riempirli li avrebbe resi
+// rossi, rinominarli sarebbe stato inventare l'intento.

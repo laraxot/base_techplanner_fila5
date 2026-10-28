@@ -1,7 +1,7 @@
 ---
 issues: []
 discussions: []
-title: "Notify — mai Filament\*, sempre XotBase*"
+title: 'Notify — mai Filament*, sempre XotBase*'
 type: concept
 module: Notify
 tags: [notify, filament, xotbase, architecture]

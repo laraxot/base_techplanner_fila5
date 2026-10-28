@@ -367,10 +367,6 @@ return [
 ## Riferimenti
 
 - [Responsive Email Templates](./responsive-email-templates.md)
-- [Email Best Practices](./mail-templates/email-best-practices.md)
-- [HTML Email Compatibility](./mail-templates/html-email-compatibility-1.md)
-- [Spatie Email Integration](./spatie-email-usage-guide.md)
-- [Responsive Email Templates](./responsive-email-templates.md)
-- [Email Best Practices](./mail-templates/EMAIL_BEST_PRACTICES.md)
-- [HTML Email Compatibility](./mail-templates/HTML_EMAIL_COMPATIBILITY.md)
+- [Email Best Practices](../mail-templates/email-best-practices.md)
+- [HTML Email Compatibility](../mail-templates/html-email-compatibility.md)
 - [Spatie Email Integration](./spatie-email-usage-guide.md)

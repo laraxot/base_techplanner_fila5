@@ -52,7 +52,7 @@ Connects all theme docs with bidirectional links and visual architecture.
 ```
 Sixteen/
 ├── docs/                          ← 200+ documentation files
-│   ├── 00-index-1.md               ← MASTER INDEX
+│   ├── 00-index.md               ← MASTER INDEX
 │   ├── architecture/             ← Diagrams & architecture
 │   ├── design-comuni/            ← Design Comuni project
 │   ├── components/               ← Component docs

@@ -1,11 +1,9 @@
 ---
-title: "📸 Verifica Visiva Homepage Notify"
 title: "📸 Verifica Visiva Homepage <nome progetto>"
 type: concept
 tags: [verifica, homepage]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "verifica-homepage 📸 verifica visiva homepage laraxot"
 qmd: "verifica-homepage 📸 verifica visiva homepage <nome progetto>"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]

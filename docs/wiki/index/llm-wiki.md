@@ -57,7 +57,7 @@ Contiene le mappe/percorsi di lettura del progetto — non conoscenza sintetizza
 
 - Il wrapper `bashscripts/docs/llm-wiki-qmd.sh` ha (o ha avuto) un bug di
   `XDG_CACHE_HOME` che lo fa puntare a una cache vuota — vedi
-  `docs/chat/second-brain-qmd-cache-bug-2026-07-06.md`. Se il wrapper non
+  `docs/chat/second-brain-qmd-cache-bug.md`. Se il wrapper non
   trova risultati per query ovvie (es. "phpstan"), chiamare `qmd` diretto per
   confermare se è il wrapper o l'indice il problema.
 - L'embedding vettoriale è un processo lungo su migliaia di file

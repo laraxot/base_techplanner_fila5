@@ -19,6 +19,8 @@ discussions: []
 
 # Zero Theme Documentation
 
+> Nota di verifica 2026-10-28 (docs-temi): guida generica, non descrive solo il codice presente. In Zero non esistono `components/ui/card.blade.php`, `<x-zero.navigation>` (il componente reale e' `<x-navigation>`), `resources/js/components/navigation.js`, la cartella `tests/` ne' vitest. Per i componenti reali vedi [components.md](./components.md) e [layouts.md](./layouts.md).
+
 ## Overview
 
 The Zero theme is the foundational theme for the Laraxot ecosystem, providing a clean, minimal starting point for custom theme development.

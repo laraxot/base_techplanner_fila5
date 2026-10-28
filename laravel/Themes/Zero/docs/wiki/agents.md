@@ -1,5 +1,5 @@
 ---
-title: "Zero {{TYPE^}} LLM Wiki Agent Instructions"
+title: "Zero LLM Wiki Agent Instructions"
 type: reference
 tags: [wiki, no-frontmatter-fix]
 created: 2026-10-06
@@ -15,7 +15,7 @@ issues: []
 discussions: []
 ---
 
-# Zero {{TYPE^}} LLM Wiki Agent Instructions
+# Zero LLM Wiki Agent Instructions
 
 > **Module/Theme:** Zero
 > **Scope:** Zero-specific knowledge only

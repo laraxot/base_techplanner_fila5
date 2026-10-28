@@ -1,12 +1,10 @@
 ---
-title: "GitHub Issues & Discussions - FixCity Platform"
 title: "GitHub Issues & Discussions - Notify Platform"
 type: index
 tags: [notify, docs, github]
 module: Notify
 created: 2026-07-20
 updated: 2026-07-20
-qmd: "notify documentazione github readme github issues & discussions - fixcity platform index readme frontmatter qmd search"
 qmd: "notify documentazione github readme github issues & discussions - laraxot platform index readme frontmatter qmd search"
 issues:
   - "https://github.com/laraxot/module_notify_fila5/issues/56"

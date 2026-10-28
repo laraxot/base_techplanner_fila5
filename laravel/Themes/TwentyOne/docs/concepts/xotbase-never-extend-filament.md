@@ -1,5 +1,5 @@
 ---
-title: "TwentyOne — mai Filament\*, sempre XotBase*"
+title: "TwentyOne — mai Filament*, sempre XotBase*"
 type: concept
 theme: TwentyOne
 tags: [twentyone, filament, xotbase, architecture]

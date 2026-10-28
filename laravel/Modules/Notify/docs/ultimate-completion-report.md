@@ -4,7 +4,6 @@ type: concept
 tags: [ultimate, completion, report]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "ultimate-completion-report 🏆 fixcity - ultimate completion report"
 qmd: "ultimate-completion-report 🏆 ptv - ultimate completion report"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]

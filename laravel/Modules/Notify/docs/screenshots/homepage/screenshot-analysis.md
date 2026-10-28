@@ -1,11 +1,9 @@
 ---
-title: "📸 Screenshot Analysis - Homepage FixCity"
 title: "📸 Screenshot Analysis - Homepage Notify"
 type: concept
 tags: [screenshot, analysis]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "screenshot-analysis 📸 screenshot analysis - homepage fixcity"
 qmd: "screenshot-analysis 📸 screenshot analysis - homepage laraxot"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]

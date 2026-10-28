@@ -1,9 +1,4 @@
 ---
-title: "Epic 1 — Consolidamento primitive Form/Table del modulo UI"
-type: epic
-tags: [bmad, ui, epic, design-system, form, table]
-created: 2026-09-28
-updated: 2026-09-28
 title: "Epic 1 - Consolidamento primitive Form/Table del modulo UI"
 type: epic
 tags: [bmad, ui, epic, design-system, form, table]

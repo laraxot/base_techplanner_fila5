@@ -4,7 +4,6 @@ type: concept
 tags: [documentation, index]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "documentation-index 📚 indice generale documentazione - fixcity"
 qmd: "documentation-index 📚 indice generale documentazione - ptv"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]

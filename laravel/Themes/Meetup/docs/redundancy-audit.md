@@ -11,7 +11,7 @@ related:
 
 # Meetup redundancy audit
 
-Audit eseguito il 2026-05-21 (ex `redundancy-audit-2026-05-21.md`, la data sta nel frontmatter).
+Audit eseguito il 2026-05-21 (ex `redundancy-audit.md`, la data sta nel frontmatter).
 
 Static metrics: 24 files scanned, 0 case-only groups, 0 duplicate hash groups, 0 duplicate FQCN.
 

@@ -12,3 +12,6 @@ qmd: "phpmd analysis activity"
 
 See canonical documentation: ../../../Themes/docs/shared-components/PHPMD-ANALYSIS.md*
 *Status: In Progress - Complexity Fixes*
+See canonical documentation: ../../../Themes/docs/shared-components/PHPMD-ANALYSIS.md
+See canonical documentation: ../../../Themes/docs/shared-components/PHPMD-ANALYSIS.md
+See canonical documentation: ../../../Themes/docs/shared-components/PHPMD-ANALYSIS.md
