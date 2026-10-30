@@ -1,7 +1,7 @@
 ---
 title: "Seo Head component implementation"
 type: story
-status: in-progress
+status: superseded
 priority: P1
 owner: agent
 created: 2026-10-30
@@ -9,9 +9,16 @@ updated: 2026-10-30
 qmd: "seo head component meta tags schema alpine dark-mode"
 tags: [seo, head, component, blade, meta-tags, schema, dark-mode]
 supersedes: 
+superseded_by: seo-head-maximum-schema-org-hreflang.story.md
 ---
 
 # Seo Head component implementation
+
+> **Superseded.** Questa story conserva il contesto storico della proposta iniziale
+> nel modulo Seo. La fonte operativa canonica è
+> [SEO al massimo del front office](seo-head-maximum-schema-org-hreflang.story.md),
+> che assegna il contratto del componente a Cms, la politica SEO a Seo e
+> l'integrazione visuale a Theme Two.
 
 ## Context
 

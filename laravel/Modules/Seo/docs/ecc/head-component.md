@@ -2,16 +2,23 @@
 title: "Seo Head component — ECC documentazione"
 type: reference
 module: Seo
-status: active
+status: superseded
 created: 2026-10-30
 updated: 2026-10-30
 tags: [ecc, seo, head, component, blade, meta-tags]
 related:
-  - ../bmad/stories/seo-head-component.story.md
-  - ../00-INDEX.md
+  - ../../../../docs/stories/seo-head-maximum-schema-org-hreflang.story.md
+  - ../../Cms/docs/seo-head-architecture.md
 ---
 
 # Seo Head component — ECC documentazione
+
+> **Superseded.** Questo documento descrive una proposta storica di un
+> componente `Head` appartenente a Seo. Nel contratto attuale Seo mantiene
+> politica e dati SEO, mentre la composizione del document head appartiene a
+> Cms. Consultare la [story canonica](../../../../docs/stories/seo-head-maximum-schema-org-hreflang.story.md)
+> e l'[architettura Cms](../../Cms/docs/seo-head-architecture.md) prima di
+> modificare la documentazione o implementare nuove integrazioni.
 
 Questo documento descrive il componente Blade `Head` del modulo `Seo`, utilizzato per generare l'intera sezione `<head>` con meta tag SEO, dati strutturati schema.org, dark mode, Alpine.js e prevenzione FOUC.
 

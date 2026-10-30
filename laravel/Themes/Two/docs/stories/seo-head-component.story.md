@@ -7,6 +7,7 @@ created: 2026-10-30
 updated: 2026-10-30
 tags: [bmad, seo, head, blade, accessibility, mobile]
 related:
+  - "../../../../../docs/stories/seo-head-maximum-schema-org-hreflang.story.md"
   - "../../../Modules/Cms/docs/stories/seo-head-component.story.md"
   - "../seo-multilingual-guide.md"
 ---
@@ -15,6 +16,11 @@ related:
 
 > Theme Two usa un solo componente Head condiviso: il layout conserva la parità
 > visuale e il modulo CMS conserva un contratto SEO unico.
+
+Questa è la story di integrazione del tema, non la fonte della politica SEO.
+La story root [SEO al massimo del front office](../../../../../docs/stories/seo-head-maximum-schema-org-hreflang.story.md)
+è la SSoT per canonical, hreflang, robots e schema.org; questa story documenta
+solo il confine e la verifica di Theme Two.
 
 ## Decisione
 

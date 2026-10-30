@@ -112,6 +112,12 @@ Vedi anche: [wiki/index.md](wiki/index.md) — indice del wiki interno del tema 
 - [adsense-integration-guide.md](adsense-integration-guide.md)
 - [brand-contacts-update.md](brand-contacts-update.md)
 
+### SEO document head
+
+- [stories/seo-head-component.story.md](stories/seo-head-component.story.md) — integrazione di Theme Two con il componente Head condiviso
+- [stories/head-seo-visual-verification.story.md](stories/head-seo-visual-verification.story.md) — verifica visuale e responsive del document head
+- [../../../../docs/stories/seo-head-maximum-schema-org-hreflang.story.md](../../../../docs/stories/seo-head-maximum-schema-org-hreflang.story.md) — story root canonica per politica SEO, schema e hreflang
+
 ## Conversion e ottimizzazione homepage
 
 - [conversion-analysis-report.md](conversion-analysis-report.md)

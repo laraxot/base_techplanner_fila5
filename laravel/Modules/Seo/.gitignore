@@ -1,113 +1,199 @@
+# Auto-generated forbidden paths — do not edit manually
+# Reason: root cleanup policy (see docs/wiki/rules/root-cleanup-policy.md)
 
-._*
-audit-coverage/
-# --- Audit coverage bridge (never commit) ---
-*.backup
-*.backup_*
-*.backup-*
-*.backup.*
-# --- Backup files ---
-*.bak
-/build/
-# --- Build & compiled ---
-*.cache
-cache/
-# --- Cache & temporary ---
+bashscripts
+_bmad-output
+.circleci
+.claude-audit
+.devcontainer
+_docs
+docs/archive
+docs/archived
+docs/legacy
+docs/archive/
+docs/workbench
+.kilocode
+.kiro
+.ralph
+scripts
+test-results
+tests/.claude-audit
+# ==============================================
+# LARAXOT MODULE SEO - .GITIGNORE
+# ==============================================
+# Modulo Seo Laraxot - Template standardizzato
+# ==============================================
+
+# ==============================================
+# DEPENDENCIES & PACKAGES
+# ==============================================
+/vendor/
+/vendor
+/node_modules/
+/node_modules
+/docs/vendor/
+package-lock.json
+yarn.lock
 composer.lock
-config/development.php
-config/local.php
-.cursor/
-database/Factories_old/
-database/Migrations_old/
-database_old/
-database/Seeders_old/
-# --- Dependencies & packages ---
-.devcontainer/
-# --- Development tools / quality configs (forbidden at module root) ---
-/dist/
-docs/**/archive/
-docs/**/archived/
-docs/**/bashscripts/
+yarn-error.log
+npm-debug.log
+
+# ==============================================
+# BUILD & COMPILED FILES
+# ==============================================
+/build
+/build/
+build/
+dist/
 docs/cache/
-docs/**/legacy/
-docs/phpstan/
-docs/**/scripts/
-docs/vendor/
-docs/**/workbench/
-# --- Documentation cache ---
-.DS_Store
-.DS_Store?
-ehthumbs.db
-# --- End of SEO .gitignore ---
+cache/
+
+# ==============================================
+# CACHE & TEMPORARY FILES
+# ==============================================
+*.cache
+*.lock
+*.phar
+*.jar
+*.tmp
+*.swp
+*.swo
+*.stackdump
+*:Zone.Identifier
+v8-compile-cache-*
+.php-cs-fixer.cache
+.phpunit.result.cache
+
+# ==============================================
+# LOG FILES
+# ==============================================
+*.log
+error_log
+npm-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# ==============================================
+# LARAVEL SPECIFIC
+# ==============================================
+bootstrap/compiled.php
+app/storage/
+public/storage
+public/hot
+public_html/storage
+public_html/hot
+storage/*.key
 .env
 .env.*
 !.env.example
-# --- Environment & configuration ---
-error_log
-*.fila2
-.git-blame-ignore-revs
-.git-rewrite/
-# --- Git specific ---
-# graphify-out: generated AST/knowledge graph — never commit (no git-lfs; rebuild with graphify update)
-graphify-out/
-# Grouped, deduped. See docs/wiki/rules/module-theme-root-cleanup.md
-Homestead.json
+
+# ==============================================
+# ENVIRONMENT & CONFIGURATION
+# ==============================================
 Homestead.yaml
+Homestead.json
+/.vagrant
 /.idea
-# --- IDE / dev folders (personal, never commit) ---
-*.jar
-lang/lang/
-laravel
-# LARAXOT MODULE: SEO — .gitignore (organized)
-# --- Legacy directories (historic cleanup) ---
-*.lock
-*.log
-# --- Log files ---
-# --- Module specific ---
-*.new
-node_modules/
-npm-debug.log*
+.phpintel
+.vscode/
+
+# ==============================================
+# GIT SPECIFIC
+# ==============================================
+.git-rewrite/
+.git-rewrite
+.git-blame-ignore-revs
+
+# ==============================================
+# SYSTEM FILES
+# ==============================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# ==============================================
+# BACKUP FILES
+# ==============================================
 *.old
 *.old1
 *.old2
-# --- Old directories (legacy cleanup) ---
-package-lock.json
-*.phar
-php-cs-fixer.cache
-phpinsights.php
-.phpintel
-.phpstorm.meta.php
-phpunit.result.cache
-# --- Project specific ---
-public_html
-rector.php
-resources/views/Components_old/
-.Spotlight-V100
-*.stackdump
-*.swo
-*.swp
-# --- System files ---
-tests/AuditCoverage/
-Thumbs.db
-*.tmp
-.Trashes
-v8-compile-cache-*
-/.vagrant
-vendor/
-.vscode/
+*.backup
+*.backup.*
+*.backup-*
+*.backup_*
+*.bak
+*.bakcup
+*.new
+
+# ==============================================
+# DEVELOPMENT TOOLS
+# ==============================================
 .windsurf/
-yarn-error.log*
-yarn.lock
-*:Zone.Identifier
-test-results/
-seo.code-workspace
+.cursor/
+.phpstorm.meta.php
 
-# Forbidden parallel documentation archive
-docs/archive/
-**/docs/archive/
+# ==============================================
+# DOCUMENTATION CACHE
+# ==============================================
+docs/phpstan/
+docs/cache/
+docs/legacy/
+docs/legacy/**
+
+# ==============================================
+# LANGUAGE FILES
+# ==============================================
+lang/lang/
+resources/lang/
+
+# ==============================================
+# OLD DIRECTORIES (LEGACY CLEANUP)
+# ==============================================
+resources/views/Components_old/
+database/Migrations_old/
+database/Seeders_old/
+database/Factories_old/
+database_old/
+
+# ==============================================
+# MODULE SPECIFIC - SEO
+# ==============================================
+# File di configurazione locale
+config/local.php
+config/development.php
+
+# Cache seo
+storage/seo/
+storage/logs/
+
+# File di test seo
+seo_test_data.json
+test_seo.sql
+
+# ==============================================
+# END OF SEO .GITIGNORE
+# ==============================================
+
+# File specifici del progetto
+*.fila2
+laravel
+public_html
+tests/coverage
+lang/lang/
 _docs/
+_docs/
+tests/coverage/
+tests/coverage.xml/
+seo_coverage.xml
 
+# -----------------------------------------------------------------------------
 # Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
+# -----------------------------------------------------------------------------
 *~HEAD
 *~BASE
 *~LOCAL
@@ -116,3 +202,52 @@ _docs/
 *.rej
 *~head
 agentdb.rvf
+tests/coverage/
+tests/coverage.xml/
+seo_coverage.xml
+*~head
+agentdb.rvf
+tests/AuditCoverage
+audit-coverage/
+# AI/TOOL SCAFFOLD — must never exist in module tree (see docs/wiki/rules/module-theme-root-cleanup.md)
+
+# Laraxot — IDE folders forbidden at module/theme root (see module-theme-root-hygiene)
+.devcontainer/
+tests/AuditCoverage/
+
+# Laraxot — quality tool configs forbidden in module/theme root (use laravel/phpinsights.php, laravel/rector.php)
+phpinsights.php
+rector.php
+# graphify-out: generated AST/knowledge graph — never commit (no git-lfs; rebuild with graphify update)
+graphify-out/
+.agents
+tools
+workbench
+.claude*
+.codex*
+.gitmodules
+.opencode
+.agents~HEAD
+.opencode~HEAD
+workbench/
+.cursor
+.windsurf
+.vscode
+
+# Laraxot — forbidden at module/theme root (rector.php, phpinsights.php, .cursor, .windsurf, .vscode)
+/rector.php
+/phpinsights.php
+/.cursor
+/.cursor/
+/.windsurf
+/.windsurf/
+/.vscode
+/.vscode/
+.cursor~*
+.windsurf~*
+tests/seo_coverage.xml
+
+# module-root-hygiene (story module-root-hygiene)
+/.github/skills/
+docs/graphify
+resources/lang
