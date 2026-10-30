@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Links;
 
 use Livewire\Livewire;
+use Safe\Exceptions\UrlException;
 
 use function Safe\parse_url;
 use function Safe\preg_match;
@@ -17,6 +18,13 @@ final class RecordAnchor
     public const string PREFIX = 'record-';
 
     public const string RETURN_TO_PARAMETER = 'return_to';
+
+    /**
+     * Caratteri che il browser legge in modo diverso da `parse_url()`: `\` vale `/`, tab, a capo e
+     * spazi iniziali vengono ignorati. `/\evil.example` e `/<TAB>/evil.example` non hanno host per
+     * `parse_url()` ma il browser li apre come `//evil.example`.
+     */
+    private const string UNSAFE_URL_CHARACTERS = '/[\x00-\x20\x7f\\\\]/';
 
     public static function id(int|string $key): string
     {
@@ -59,25 +67,38 @@ final class RecordAnchor
 
     public static function resolveReturnTo(?string $returnTo, int|string $key): ?string
     {
-        if (! is_string($returnTo) || $returnTo === '') {
+        if (! is_string($returnTo) || $returnTo === '' || preg_match(self::UNSAFE_URL_CHARACTERS, $returnTo) === 1) {
             return null;
         }
 
-        $parsed = parse_url($returnTo);
-        $scheme = isset($parsed['scheme']) && is_string($parsed['scheme'])
-            ? strtolower($parsed['scheme'])
-            : null;
-        $host = isset($parsed['host']) && is_string($parsed['host']) ? $parsed['host'] : null;
+        try {
+            $parsed = parse_url($returnTo);
+        } catch (UrlException) {
+            return null;
+        }
+
         $fragment = isset($parsed['fragment']) && is_string($parsed['fragment']) ? $parsed['fragment'] : null;
 
         if (
-            ($scheme !== null && ! in_array($scheme, ['http', 'https'], true))
-            || ($host !== null && $host !== request()->getHost())
+            ! self::isSameOrigin($returnTo)
             || ($fragment !== null && preg_match('/^record-[A-Za-z0-9._~-]+$/', $fragment) !== 1)
         ) {
             return null;
         }
 
         return self::appendTo($returnTo, $key);
+    }
+
+    /**
+     * Stessa origine = schema, host e porta della richiesta: confrontare solo l'host lascia passare
+     * `https://host/` su un'app in http e `host:8080`. Un percorso relativo vale se inizia con una sola `/`.
+     */
+    private static function isSameOrigin(string $url): bool
+    {
+        if (str_starts_with($url, '/')) {
+            return ! str_starts_with($url, '//');
+        }
+
+        return str_starts_with($url, request()->getSchemeAndHttpHost().'/');
     }
 }

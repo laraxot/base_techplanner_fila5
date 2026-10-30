@@ -50,8 +50,10 @@ Contiene le mappe/percorsi di lettura del progetto — non conoscenza sintetizza
    per la ricerca ibrida, una volta completato l'embedding). La collezione
    root `wiki` resta separata e continua a coprire solo il SSoT
    `bashscripts/ai/wiki/`.
-5. **Coordinamento multi-agente**: `docs/chat/` (non wiki, bacheca volatile).
-   Leggere `docs/chat/INDEX.md` prima di lavoro non banale condiviso.
+5. **Coordinamento multi-agente**: la BMAD story canonica dell’owner (`docs/stories/`,
+   `laravel/Modules/*/docs/stories/` o `laravel/Themes/*/docs/stories/`) è la SSoT
+   operativa per scope, handoff, decisioni e prove. `docs/chat/` è solo archivio
+   storico e non va usata per nuovi coordinamenti.
 
 ## Problemi noti (verificare prima di fidarsi ciecamente della ricerca)
 

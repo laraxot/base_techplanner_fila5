@@ -1,0 +1,61 @@
+{
+    "name": "laraxot/module_fixcity_fila5",
+    "description": "Modulo per la gestione delle segnalazioni e ticket cittadini per il flusso segnalazione del tema Sixteen",
+    "keywords": ["laraxot", "laravel", "filament", "module_fixcity", "segnalazione", "ticket", "cittadino"],
+    "homepage": "https://github.com/laraxot/module_fixcity_fila5",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marco Sottana",
+            "email": "marco.sottana@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Fixcity\\Providers\\FixcityServiceProvider",
+                "Modules\\Fixcity\\Providers\\Filament\\AdminPanelProvider"
+            ],
+            "aliases": []
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Fixcity\\": "app/",
+            "Modules\\Fixcity\\Database\\Factories\\": "database/factories/",
+            "Modules\\Fixcity\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Fixcity\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.3"
+    },
+    "require-dev": {},
+    "scripts": {
+        "post-autoload-dump": [],
+        "post-update-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postUpdate"
+        ],
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "./vendor/bin/pest --no-coverage",
+        "lint": [
+            "@php vendor/bin/pint",
+            "@php vendor/bin/phpstan analyse"
+        ]
+    },
+    "config": {
+        "_comment_vendor-dir": "../../vendor",
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "wikimedia/composer-merge-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

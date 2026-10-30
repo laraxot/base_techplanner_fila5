@@ -1,7 +1,7 @@
 ---
 title: "Handoff: attributi data e parità Design Comuni"
 type: handoff
-status: active
+status: superseded
 created: 2026-10-29
 updated: 2026-10-29
 tags: [design-comuni, html-parity, mobile, data-attributes, sixteen, two]
@@ -11,6 +11,8 @@ discussions: []
 ---
 
 # Attributi `data-*` e parità Design Comuni
+
+> **Archivio legacy.** Dal 2026-09-09 `docs/chat/` non si scrive piu' (vedi `AGENTS.md`). Decisione, causa, verifica e decisioni aperte stanno nella story [data-attribute-parity](../../laravel/Themes/Sixteen/docs/stories/data-attribute-parity.story.md), che contiene tutto questo testo e di piu'. Questo file resta per la cronologia e non si aggiorna.
 
 ## Decisione
 

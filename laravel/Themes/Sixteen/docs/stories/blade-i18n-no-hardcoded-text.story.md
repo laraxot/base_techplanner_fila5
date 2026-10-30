@@ -59,3 +59,7 @@ Testi in PHP: non cercati in questa campagna sul tema, quindi non toccati.
 ## Riferimenti
 
 Metodo e regola completa: [story del tema Two](../../../Two/docs/stories/blade-i18n-no-hardcoded-text.story.md); protocollo a cinque elementi: [regola 008](../../../../../docs/wiki/rules/008-translation-5-level-protocol.md). Regola completa dei link e motivi: [§2 del promemoria sul protocollo di traduzione](../../../../../docs/wiki/memories/translation-protocol-memory-aid.md). Il dettaglio per file e' nel repo privato di audit.
+
+## Seguito: forma delle chiavi
+
+Le chiavi a 2-3 segmenti create da questa campagna sono state in parte portate a `ns::file.collezione.chiave.tipo`: **5 chiavi spostate** in questo proprietario (stesso testo, tutte le lingue, usi riscritti, nessun uso della vecchia chiave rimasto). Le altre sono bloccate da file lingua con commenti o gia' in HEAD: vedi [la story dei residui di Sixteen](pub-theme-keys-and-route-names-residuals.story.md). La frase sui «tre o quattro elementi» qui sopra descrive lo stato precedente: le chiavi rimaste a 3-4 elementi non sono state verificate una per una; la misura assoluta, lo strumento e i residui sono in [la story di Lang](../../../../Modules/Lang/docs/stories/translation-key-shape-rekey.story.md).

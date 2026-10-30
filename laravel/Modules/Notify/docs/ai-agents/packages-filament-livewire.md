@@ -192,7 +192,7 @@ abstract class XotBaseChartWidget extends FilamentChartWidget
     protected function getMaxHeight(): ?string { } // 'px-300'
 
     // NON toccare
-    protected static bool $isLazy = true;
+    protected static ?bool $isLazyLoaded = true;
     protected ?string $pollingInterval = null;
 }
 ```

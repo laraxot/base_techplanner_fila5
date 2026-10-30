@@ -3,6 +3,9 @@
 declare(strict_types=1);
 
 return [
+    'state_icons' => [
+        'no_transitions' => 'No hay transiciones disponibles',
+    ],
     'actions' => [
         'close' => [
             'label' => 'Cerrar',

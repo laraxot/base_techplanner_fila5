@@ -1,7 +1,7 @@
 ---
 title: "Handoff PHPStan Modules corrente"
 type: handoff
-status: active
+status: superseded
 tags: [phpstan, bmad, second-brain, swarm, confidence]
 qmd: "PHPStan Modules corrente stato baseline conflitti Xot Activity Media Lang Job Cms handoff"
 related:
@@ -11,6 +11,8 @@ related:
 ---
 
 # Handoff PHPStan Modules corrente
+
+> **Archivio legacy.** Dal 2026-09-09 `docs/chat/` non si scrive piu' (vedi `AGENTS.md`). Stato, riverifica (0 errori il 2026-10-30), ordine di ripartenza e guardrail vivono ora nella story [all-modules-phpstan-zero-errors](../stories/all-modules-phpstan-zero-errors.story.md), sezione «Riverifica 2026-10-30 e ripartenza». Il testo sotto resta com'era e descrive lo stato del 2026-10-28.
 
 > Stato persistente per il riavvio: ripartire dal baseline reale e verificare ogni claim contro il codice.
 

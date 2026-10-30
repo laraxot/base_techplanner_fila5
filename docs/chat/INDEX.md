@@ -26,32 +26,29 @@ related:
 
 Era il **bus locale** tra agenti AI che ricevevano lo **stesso task**. Non sostituisce `docs/wiki/` (SSoT versionata) né le **GitHub issues** (audit persistente).
 
-## Regola standing (utente)
+## Dove si scrive ora
 
-Prima di ogni task condiviso:
+Ogni voce che qui era un file vive in una sezione della story BMAD dell'owner (modulo, tema o `docs/stories/` per il lavoro trasversale):
 
-1. Leggi questo indice + handoff del topic
-2. `git remote -v` → commenta issue/discussion sulla repo owner
-3. Aggiorna handoff a fine sessione se altri agenti seguiranno
+| Prima in `docs/chat/` | Ora nella story |
+|---|---|
+| data, agente, scope | frontmatter e `## Owned File/Module Scope` |
+| file o aree rivendicate, rischio di collisione | `## Claim` (tabella Chi, Scope, Stato) e lock di `bashscripts/lock/` |
+| progressi, blocker, decisioni | `## Dev Agent Record`, `## Esito`, `## Decisioni aperte` |
+| prossimo passo | `## Ripartenza` o i task non spuntati |
+| issue e discussion | `## GitHub (tracciamento)` |
 
-Canon: [multi-agent-coordination-discipline.md](../wiki/how-to/multi-agent-coordination-discipline.md) · Issue [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) · Discussion [#19](https://github.com/laraxot/base_techplanner_fila5/discussions/19)
+Bootstrap: `docs/wiki/concepts/agent-bootstrap-compact.md`, poi `python3 -I bashscripts/tools/claims-open.py` (story `in-progress` e lock), poi `bashscripts/docs/llm-wiki-qmd.sh search "<topic>" -n 5 --files` e la riga del dominio in `docs/wiki/rules/00-TRIGGER_MAP.md`. Canon: [multi-agent-coordination-standing](../wiki/memories/multi-agent-coordination-standing.md) e [disciplina di coordinamento](../wiki/how-to/multi-agent-coordination-discipline.md). La memoria standing chiede di committare subito la story; `AGENTS.md` dice commit solo su richiesta dell'utente. In pratica la story si scrive nel working tree condiviso e a committarla ci pensa il sync, a meno che l'utente non chieda un commit.
 
-## Bootstrap sessione
-
-1. `docs/wiki/concepts/agent-bootstrap-compact.md`
-2. **`docs/chat/INDEX.md`** (questo file) + handoff topic
-3. `bashscripts/docs/llm-wiki-qmd.sh search "<topic>" -n 5 --files`
-4. `docs/wiki/rules/00-TRIGGER_MAP.md` — una riga dominio
-
-## Handoff attivi
+## Archivio handoff (sola lettura)
 
 | Data | File | Argomento | Issue |
 |------|------|-----------|-------|
-| corrente | [handoff-gitattributes-no-lfs.md](./handoff-gitattributes-no-lfs.md) | Normalizzazione `.gitattributes` e policy no Git LFS | — |
-| corrente | [handoff-git-collisions-rebase-markers.md](./handoff-git-collisions-rebase-markers.md) | Collisioni git: marker committati da rebase interrotti nei moduli, guard in `dummy_push`, decisioni aperte | — |
-| corrente | [handoff-phpstan-modules-current.md](./handoff-phpstan-modules-current.md) | PHPStan Modules: stato reale, lane concluse e ripartenza | — |
-| corrente | [handoff-design-comuni-data-attributes.md](./handoff-design-comuni-data-attributes.md) | Parità HTML Design Comuni e convenzione `data-*` tra Sixteen e Two | — |
-| corrente | [handoff-idcolumn-row-anchor.md](./handoff-idcolumn-row-anchor.md) | `IDColumn` e ancora di riga (`return_to`): lacuna colonna nascosta di default; aree Blade/lang e Two in modifica da altri agenti | — |
+| migrato | [handoff-gitattributes-no-lfs.md](./handoff-gitattributes-no-lfs.md) | Normalizzazione `.gitattributes` e policy no Git LFS. Ora nella story [git-collision-detection-resolution-system](../stories/git-collision-detection-resolution-system.story.md) | — |
+| migrato | [handoff-git-collisions-rebase-markers.md](./handoff-git-collisions-rebase-markers.md) | Collisioni git: marker committati da rebase interrotti nei moduli, guard in `dummy_push`, decisioni aperte. Ora nella story [git-collision-detection-resolution-system](../stories/git-collision-detection-resolution-system.story.md) | — |
+| migrato | [handoff-phpstan-modules-current.md](./handoff-phpstan-modules-current.md) | PHPStan Modules: stato reale, lane concluse e ripartenza. Ora nella story [all-modules-phpstan-zero-errors](../stories/all-modules-phpstan-zero-errors.story.md) | — |
+| migrato | [handoff-design-comuni-data-attributes.md](./handoff-design-comuni-data-attributes.md) | Parità HTML Design Comuni e convenzione `data-*` tra Sixteen e Two. Ora nella story [data-attribute-parity](../../laravel/Themes/Sixteen/docs/stories/data-attribute-parity.story.md) | — |
+| migrato | [handoff-idcolumn-row-anchor.md](./handoff-idcolumn-row-anchor.md) | `IDColumn` e ancora di riga (`return_to`): colonna nascosta di default, validazione del ritorno. Ora nella story [idcolumn-record-anchor-return-to](../../laravel/Modules/Xot/docs/stories/idcolumn-record-anchor-return-to.story.md) | — |
 | corrente | [../audits/project-complete-audit.md](../audits/project-complete-audit.md) | Audit completo sito, moduli, temi, quality gates, sicurezza e docs | — |
 | 2026-07-24 | [handoff-token-efficiency.md](./handoff-token-efficiency.md) | Token efficiency 2026: query wrapper, context-mode, write-back AI/Xot/Sixteen, Obsidian lean | — |
 | 2026-07-24 | [handoff-second-brain-max.md](./handoff-second-brain-max.md) | Second brain max + write-back docs AI/Xot/Sixteen | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |

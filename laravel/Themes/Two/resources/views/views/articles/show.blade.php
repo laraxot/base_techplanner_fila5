@@ -17,9 +17,9 @@
 
             <hr>
 
-            <x-article.meta :article="$article" />
+            <x-post-meta :post="$article" />
 
-            <x-article.footer :article="$article" :blocks="$article->footer_blocks" />
+            <x-post-footer :blocks="$article->footer_blocks" />
 
         </div>
     </x-std>

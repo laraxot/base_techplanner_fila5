@@ -61,5 +61,14 @@ Esito: `clear-result-cache` + `heavy-slot.sh phpstan analyse Modules` → **exit
 ### Debito aperto: `@phpstan-ignore` nel codice (misurato 2026-10-28 17:20)
 80 annotazioni in `Modules/*/app` (Xot 44, Media 15, User 6, Geo 6, Notify 4, Lang 2, Activity 2, Tenant 1), contro la regola «mai `@phpstan-ignore`»: lo zero è in parte coperto da loro. `laravel/phpstan.neon` ha `ignoreErrors` vuoto e nessuna baseline (a norma). Per tipo: `trait.unused` 20 (trait di libreria Xot, scopo da verificare caso per caso), `method.deprecated` 16 (hook di progetto omonimi a nomi deprecati di Filament), `*.alreadyNarrowedType` 6, `-next-line` generici 15, `method.notFound` 3, `missingType` 1. Procedura: togliere l'annotazione, rieseguire PHPStan sul modulo, correggere la causa (tipo reale, rinomina, trait da collegare o da non dichiarare) senza `mixed`; richiede `vendor/` stabile. Un agent per modulo (Xot da solo).
 
+### Riverifica 2026-10-30 e ripartenza (portato qui da `docs/chat/handoff-phpstan-modules-current.md`)
+
+- `cd laravel && ./vendor/bin/phpstan analyse Modules --memory-limit=-1 --no-progress` → **exit 0, 0 errori**, con `laravel/phpstan.neon` invariato. Una corsa precedente nella stessa giornata, a merge Tenant ancora aperto (`SushiToJsons.php`), ne dava 108 tutti in `Modules/TechPlanner/config/*.php` (`env()` fuori dalla cartella config, chiavi duplicate, classi `Orbit` assenti): erano sotto il claim di un altro agente e sono stati chiusi da lui.
+- Lo zero vale per il working tree corrente. Le dichiarazioni di lane verdi dei giorni scorsi sono storiche: rieseguire prima di usarle come baseline.
+- Ordine di ripartenza: (1) fermare ogni sync concorrente e rilanciare PHPStan; (2) raggruppare gli errori residui per causa e modulo e correggere la sorgente funzionale; (3) Pest sullo scope modificato, documentando ogni blocco ambientale; (4) auditare prompt e docs con mappa dei riferimenti solo dopo aver isolato il worktree, senza rinomine o cancellazioni di massa.
+- Guardrail: nessun `mixed`, `@phpstan-ignore` o baseline per nascondere errori; ogni lane con scope disgiunto e `git status` prima di integrare; nomi `.md` nuovi in kebab-case senza date; nessun commit automatico.
+- QMD: la collezione `techplanner-wiki` non esiste; usare il nome restituito da `qmd collection list` o dal wrapper `bashscripts/docs/llm-wiki-qmd.sh`.
+- Non verificato: Pest (il `.env.testing` punta a MySQL con dati veri); i prompt `.txt` storici e i link legacy non sono stati riscritti in massa (servono owner e mappa canonica).
+
 Dependencies: gdpr-sync-phpstan-complete, activity-constant-type-coverage-fix, cms-merge-conflict-resolution
 Owner: AI Agent (BMAD sprint)

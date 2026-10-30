@@ -1,3 +1,9 @@
+<?php
+use function Laravel\Folio\middleware;
+
+middleware(['auth']);
+?>
+
 @volt('profile.index')
 <?php
 

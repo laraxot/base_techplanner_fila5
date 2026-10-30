@@ -165,7 +165,9 @@ php artisan schedule:clear-cache
 ## Related Documentation
 
 - **Pattern docs:** `docs/wiki/patterns/services-support-to-actions-migration-pattern.md`
-- **Coordination hub:** `docs/chat/services-support-to-actions-refactoring-coordination.md`
+- **Coordinamento operativo:** [story owner del refactoring Actions](stories/job-services-to-actions.story.md).
+  La story contiene scope, decisioni, handoff e verifiche; `docs/chat/` resta archivio
+  storico e non è una fonte operativa.
 - **Spatie library:** https://github.com/spatie/laravel-queueable-action
 
 ---

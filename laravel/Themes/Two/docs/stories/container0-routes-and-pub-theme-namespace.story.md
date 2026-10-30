@@ -54,7 +54,8 @@ quindi `pub_theme::theme.nav.home`). Dettaglio e misure: `docs/wiki/memories/tra
   `Post` che non esiste): non montati, lasciati come sono. Il sottoalbero duplicato `resources/views/views/` ha le stesse copie.
 - Altri temi (Sixteen, TwentyOne, Meetup) e moduli hanno nomi rotta di pagina o URL fissi: contati per classe dal rilevatore
   privato (`url-literal`, `route-page-name`, `route-unknown`, `ns-theme`), non corretti qui.
-- `/it/cookie`, `/it/faq`, `/it/profile` e `/it/auth/register` rispondono ancora 500: cause note, fuori da questa story.
+- `/it/cookie`, `/it/faq`, `/it/profile`, `/it/auth/register`, `/it/auth/forgot-password` e `/it/auth/reset-password` rispondevano 500 e ora rispondono 200 (`/profile` 302 al login): blocchi mancanti creati, guardia `auth`, wrapper `<x-layouts.base>`. Resta 500 `/it/auth/verify-email` (widget Livewire inesistente, flusso di verifica da decidere). Misure, cause e decisioni in [public-pages-500-faq-cookie-profile-register.story.md](public-pages-500-faq-cookie-profile-register.story.md).
+- Forma delle chiavi `pub_theme` (namespace + 4 segmenti): in Two spostate 93 chiavi; vedi [la story di Lang](../../../../Modules/Lang/docs/stories/translation-key-shape-rekey.story.md).
 
 ## Verifica
 

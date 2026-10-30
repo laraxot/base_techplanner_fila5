@@ -30,6 +30,13 @@ return [
         'save' => 'Salva',
         'update' => 'Aggiorna',
         'logout' => 'Abmelden',
+        'password_requirements' => [
+            'title' => 'Passwortanforderungen',
+            'min_length' => 'Mindestens 8 Zeichen',
+            'uppercase' => 'Mindestens ein Großbuchstabe',
+            'number' => 'Mindestens eine Zahl',
+            'special' => 'Mindestens ein Sonderzeichen',
+        ],
     ],
     'user_dropdown' => [
         'manage_account' => 'Gestione Account',

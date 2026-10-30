@@ -55,3 +55,36 @@ Testi in PHP (`->label()` e simili): non cercati in questa campagna sul modulo, 
 ## Riferimenti
 
 Metodo e regola completa: [story del tema Two](../../../../Themes/Two/docs/stories/blade-i18n-no-hardcoded-text.story.md); protocollo a cinque elementi: [regola 008](../../../../../docs/wiki/rules/008-translation-5-level-protocol.md). Il dettaglio per file e' nel repo privato di audit.
+
+## Seguito: forma delle chiavi
+
+Le chiavi a 2-3 segmenti create da questa campagna sono state in parte portate a `ns::file.collezione.chiave.tipo`: **62 chiavi spostate** in questo proprietario (stesso testo, tutte le lingue, usi riscritti, nessun uso della vecchia chiave rimasto). La frase sui «tre o quattro elementi» qui sopra descrive lo stato precedente: le chiavi rimaste a 3-4 elementi non sono state verificate una per una; la misura assoluta, lo strumento e i residui sono in [la story di Lang](../../../Lang/docs/stories/translation-key-shape-rekey.story.md).
+
+## Chiavi mancanti colmate
+
+Il controllo statico `bashscripts/tools/i18n/check-blade-keys.php` (solo `Modules/UI`, 300 Blade, 2.909 usi) segnalava 36 chiavi distinte usate dalle Blade e assenti dai file lingua, tutte anteriori alla campagna. Una chiave assente mostra la chiave grezza (o l'italiano, se manca solo in `en`/`de`/`es`).
+
+| Lingua | Prima | Dopo |
+|---|---:|---:|
+| `it` | 14 | 0 |
+| `en` | 17 | 2 |
+| `de` | 23 | 2 |
+| `es` | 36 | 2 |
+
+Aggiunti i valori alle chiavi cosi' come le usano le Blade (nessuna rinominata, nessuna Blade toccata). Le chiavi a 3-4 elementi di `studio_selector`, `widgets.user-calendar`, `aws_test` e `pages.s3test` restano nella forma gia' in uso.
+
+| Chiave (famiglia) | Blade | File lingua toccati |
+|---|---|---|
+| `ui::studio_selector.*` (11) | `ui/studio-selector` | `studio_selector.php` nuovo in `it`, `en`, `de`, `es` |
+| `ui::widgets.user-calendar.*` (3) | `filament/widgets/user-calendar` | `widgets.php` in `it`, `en`, `de`, `es` |
+| `ui::auth.profile.*`, `ui::auth.logout.cancel_button` (10) | `components/blocks/change_password` | `auth.php` in `de` (requisiti password) e `es` |
+| `ui::components.state_icons.no_transitions` | `components/ui/state-icons-split` | `components.php` in `de`, `es` |
+| `ui::aws_test.no_results` | `awstest`, `test-results` | `aws_test.php` nuovo in `en`, `de`, `es` (in `it` c'era gia') |
+| `ui::pages.s3test.*` (2) | `filament/clusters/test/pages/s3test` | `pages.php` nuovo in `es` |
+| `ui::opening_hours.*` (6) | `filament/forms/components/opening-hours-field` | `opening_hours.php` nuovo in `es` |
+
+Note sui valori: `it` e' l'italiano naturale (nessuna Blade aveva un testo di riserva); `en`, `de`, `es` sono traduzioni, con `:studio_name` e `:count` invariati. `doctors_count` e' letto con `trans_choice` e usa il formato `{1} ...|[2,*] ...`. Per `studio_selector` in `es` la parola e' «clinica» e in `de` «Praxis», come nel `studio-selector.php` esistente.
+
+Restano 2 chiavi, fuori dal perimetro di questa passata (non sono in `Modules/UI/lang`): `user::login.page.title` e `user::login.page.subtitle`, usate da `components/layouts/auth-split` e assenti in `en`, `de`, `es` del modulo User.
+
+Da sapere, non toccato: `de/auth.php` ha ancora in italiano `register.*`, la maggior parte di `profile.*` (anche `update_password`, usata da `change_password`), `user_dropdown.*` e `logout.*` (il controllo le conta come presenti perche' la chiave esiste); `en/studio-selector.php` e `de/studio-selector.php` hanno ancora in italiano le voci `actions`, `empty`, `fields`, `accessibility`. Il controllo e' euristico e non cerca chiavi costruite a runtime; nessuna pagina e' stata guardata in un browser.

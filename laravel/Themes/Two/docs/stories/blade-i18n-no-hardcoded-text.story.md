@@ -49,3 +49,7 @@ Il sito risponde in italiano, inglese, tedesco e spagnolo. Un testo scritto dent
 ## Come non reintrodurre il difetto
 
 Prima di chiudere una Blade: `python3 -I bashscripts/tools/i18n/find-hardcoded-blade-text.py <cartella>` dalla radice del repo e controllo che ogni chiave nuova esista in tutte e quattro le lingue.
+
+## Seguito: forma delle chiavi
+
+Le chiavi a 2-3 segmenti create da questa campagna sono state in parte portate a `ns::file.collezione.chiave.tipo`: **93 chiavi spostate** in questo proprietario (stesso testo, tutte le lingue, usi riscritti, nessun uso della vecchia chiave rimasto). Quattordici chiavi non sono state spostate: `coming-soon.*` (il file lingua ha commenti) e due chiavi del footer usate anche da Sixteen. La frase sui «tre o quattro elementi» qui sopra descrive lo stato precedente: le chiavi rimaste a 3-4 elementi non sono state verificate una per una; la misura assoluta, lo strumento e i residui sono in [la story di Lang](../../../../Modules/Lang/docs/stories/translation-key-shape-rekey.story.md).

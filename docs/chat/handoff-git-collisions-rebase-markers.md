@@ -1,7 +1,7 @@
 ---
 title: "Handoff collisioni git: rebase aperti e marker committati"
 type: handoff
-status: active
+status: superseded
 created: 2026-10-28
 updated: 2026-10-28
 tags: [git, rebase, conflitti, sync, bmad, second-brain]
@@ -15,6 +15,8 @@ related:
 ---
 
 # Handoff collisioni git: rebase aperti e marker committati
+
+> **Archivio legacy.** Dal 2026-09-09 `docs/chat/` non si scrive piu' (vedi `AGENTS.md`). Stato, recupero, nomi `.md`, decisioni aperte e ripartenza sono stati portati nella story [git-collision-detection-resolution-system](../stories/git-collision-detection-resolution-system.story.md) (sezione «Incidente 2026-10-28» e sottosezioni). Questo file resta per la cronologia e non si aggiorna.
 
 > Stato verificato il 2026-10-28 con comandi di sola lettura; ogni claim va riverificato sul checkout corrente (altre sessioni scrivono in parallelo).
 >

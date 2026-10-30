@@ -1,7 +1,7 @@
 ---
 title: "Handoff gitattributes senza Git LFS"
 type: handoff
-status: active
+status: superseded
 tags: [git, gitattributes, no-lfs, ecc, bmad, second-brain]
 qmd: "gitattributes no LFS marker merge binary blob check"
 related:
@@ -10,6 +10,8 @@ related:
 ---
 
 # Handoff gitattributes senza Git LFS
+
+> **Archivio legacy.** Dal 2026-09-09 `docs/chat/` non si scrive piu' (vedi `AGENTS.md`). Stato verificato, comandi di controllo e limiti vivono ora nella story [git-collision-detection-resolution-system](../stories/git-collision-detection-resolution-system.story.md), sezione «`.gitattributes` senza Git LFS». Il testo sotto resta com'era.
 
 > La policy esiste per evitare pointer orfani e asset rotti: gli asset piccoli restano blob Git normali.
 

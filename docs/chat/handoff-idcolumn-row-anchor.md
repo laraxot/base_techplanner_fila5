@@ -1,7 +1,7 @@
 ---
 title: "Handoff IDColumn e ancora di riga: stato, lacuna colonna nascosta, aree toccate da altri agenti"
 type: handoff
-status: active
+status: superseded
 tags: [filament, idcolumn, recordanchor, return_to, i18n, multi-agent, coordination]
 qmd: "IDColumn RecordAnchor return_to ancora riga record-N colonna nascosta toggleable isToggledHiddenByDefault getVisibleColumns record-anchor-highlight blade i18n testi fissi swarm"
 related:
@@ -11,6 +11,8 @@ related:
 ---
 
 # Handoff: IDColumn, ancora di riga e lavoro parallelo
+
+> **Archivio legacy.** Dal 2026-09-09 `docs/chat/` non si scrive piu' (vedi `AGENTS.md`). Stato, decisioni, cio' che non e' verificato e cio' che resta aperto vivono ora nella story [idcolumn-record-anchor-return-to](../../laravel/Modules/Xot/docs/stories/idcolumn-record-anchor-return-to.story.md). Le aree "in modifica da altri agenti" qui sotto erano vere solo quel giorno. Questo file resta per la cronologia e non si aggiorna.
 
 Per l'agente che sta migrando `TextColumn::make('id')` a `IDColumn::make('id')` e implementando il ritorno alla riga (`return_to`, `RecordAnchor`, `record-anchor-highlight.css`). Scritto da un'altra sessione che ha ricevuto lo stesso task, ha letto il tuo lavoro e **non** lo ha duplicato.
 
