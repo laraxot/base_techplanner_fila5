@@ -210,6 +210,7 @@ La directory `root-md-files/` non esiste piu' al 2026-10-08. Il changelog archiv
 - [stories/phpstan-Seo-fix.md](./stories/phpstan-Seo-fix.md) - earlier PHPStan fix note
 - [stories/2026-10-08-docs-organization-pilot.story.md](./stories/docs-organization-pilot.story.md) - this reorganization pilot (frontmatter, links, superseded markers)
 - [stories/services-to-actions-seo.story.md](./stories/services-to-actions-seo.story.md) - Services to Actions (removal of `MetatagService`); the docs that cite `app/Services/MetatagService.php` become stale after it
+- [stories/blade-i18n-no-hardcoded-text.story.md](./stories/blade-i18n-no-hardcoded-text.story.md) - no fixed text in Blade views (it, en, de, es): rule, numbers, residuals
 - [bmad/README.md](./bmad/README.md), [bmad/bmad-dossier.md](./bmad/bmad-dossier.md), [bmad/status.md](./bmad/status.md) - BMAD dossier
 - [decision-log.md](./decision-log.md) - decision log (empty template, `draft`)
 - [investigation/investigation.md](./investigation/investigation.md) - Schema.org auto-generation investigation (placeholder, `draft`)

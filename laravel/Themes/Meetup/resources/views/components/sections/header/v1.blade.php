@@ -7,8 +7,8 @@
 --}}
 <nav class="bg-slate-900/95 backdrop-blur-md border-b border-slate-700 sticky top-0 z-50" role="navigation" aria-label="{{ __('pub_theme::navigation.main') }}" id="main-navigation">
     @php
-        $loginLabel = __('pub_theme::navigation.auth.login');
-        $registerLabel = __('pub_theme::navigation.auth.register');
+        $loginLabel = __('pub_theme::navigation.auth.login.label');
+        $registerLabel = __('pub_theme::navigation.auth.register.label');
     @endphp
     <div class="container mx-auto px-4">
         <div class="flex items-center justify-between h-16">
@@ -30,11 +30,11 @@
                 </a>
                 <a href="{{ LaravelLocalization::localizeUrl('/events') }}" class="text-slate-100 hover:text-white transition-colors flex items-center gap-2 group focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-slate-900" data-nav-link>
                     <x-filament::icon icon="meetup-icon-calendar" class="w-4 h-4 text-red-500 group-hover:scale-110 transition-transform" />
-                    <span>{{ __('pub_theme::navigation.events') }}</span>
+                    <span>{{ __('pub_theme::navigation.sections.events.label') }}</span>
                 </a>
                 <a href="#" class="text-slate-100 hover:text-white transition-colors flex items-center gap-2 group focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-slate-900" data-nav-link>
                     <x-filament::icon icon="meetup-icon-chat" class="w-4 h-4 text-red-500 group-hover:scale-110 transition-transform" />
-                    <span>{{ __('pub_theme::navigation.community_chat') }}</span>
+                    <span>{{ __('pub_theme::navigation.sections.community_chat.label') }}</span>
                 </a>
                 
                 {{-- Language Switcher Component --}}
@@ -61,7 +61,7 @@
                     @click="mobileMenuOpen = !mobileMenuOpen"
                     x-data="{ mobileMenuOpen: false }"
                     class="md:hidden text-slate-100 hover:text-white p-2 rounded-lg hover:bg-slate-700/50 transition-colors focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-slate-900" 
-                    aria-expanded="false" aria-controls="mobile-menu" aria-label="{{ __('Toggle mobile menu') }}">
+                    aria-expanded="false" aria-controls="mobile-menu" aria-label="{{ __('pub_theme::navigation.sections.toggle_mobile_menu.label') }}">
                 <x-filament::icon icon="meetup-icon-menu" class="w-6 h-6" aria-hidden="true" />
             </button>
         </div>
@@ -72,7 +72,7 @@
                 <a href="{{ LaravelLocalization::localizeUrl('/') }}" class="text-slate-300 hover:text-white px-4 py-3 hover:bg-slate-700/50 rounded-xl transition-colors font-medium" data-nav-link>{{ __('pub_theme::navigation.home') }}</a>
                 <a href="{{ LaravelLocalization::localizeUrl('/events') }}" class="text-slate-300 hover:text-white px-4 py-3 hover:bg-slate-700/50 rounded-xl transition-colors flex items-center gap-3 font-medium" data-nav-link>
                     <x-filament::icon icon="meetup-icon-calendar" class="w-5 h-5 text-red-500" />
-                    <span>{{ __('pub_theme::navigation.events') }}</span>
+                    <span>{{ __('pub_theme::navigation.sections.events.label') }}</span>
                 </a>
                 
                 <div class="px-4 py-4 border-t border-slate-700/30 mt-2">
@@ -99,19 +99,19 @@
                         </div>
                         <a href="{{ LaravelLocalization::localizeUrl('/dashboard') }}" class="flex items-center space-x-3 text-slate-300 hover:text-white px-4 py-3 hover:bg-slate-700/50 rounded-xl transition-colors font-medium block">
                             <x-heroicon-o-squares-2x2 class="h-5 w-5 text-slate-500" />
-                            <span>{{ __('pub_theme::navigation.user_menu.dashboard') }}</span>
+                            <span>{{ __('pub_theme::navigation.user_menu.dashboard.label') }}</span>
                         </a>
                         <a href="{{ LaravelLocalization::localizeUrl('/events-my') }}" class="flex items-center space-x-3 text-slate-300 hover:text-white px-4 py-3 hover:bg-slate-700/50 rounded-xl transition-colors font-medium block">
                             <x-heroicon-o-calendar class="h-5 w-5 text-slate-500" />
-                            <span>{{ __('pub_theme::navigation.user_menu.my_events') }}</span>
+                            <span>{{ __('pub_theme::navigation.user_menu.my_events.label') }}</span>
                         </a>
                         <a href="{{ LaravelLocalization::localizeUrl('/events-near-me') }}" class="flex items-center space-x-3 text-slate-300 hover:text-white px-4 py-3 hover:bg-slate-700/50 rounded-xl transition-colors font-medium block">
                             <x-heroicon-o-map-pin class="h-5 w-5 text-slate-500" />
-                            <span>{{ __('pub_theme::navigation.user_menu.nearby_events') }}</span>
+                            <span>{{ __('pub_theme::navigation.user_menu.nearby_events.label') }}</span>
                         </a>
                         <a href="{{ LaravelLocalization::localizeUrl('/profile') }}" class="flex items-center space-x-3 text-slate-300 hover:text-white px-4 py-3 hover:bg-slate-700/50 rounded-xl transition-colors font-medium block">
                             <x-heroicon-o-user class="h-5 w-5 text-slate-500" />
-                            <span>{{ __('pub_theme::navigation.user_menu.my_profile') }}</span>
+                            <span>{{ __('pub_theme::navigation.user_menu.my_profile.label') }}</span>
                         </a>
                         
                         {{-- In Folio projects, we redirect to localized paths, not named routes --}}
@@ -120,7 +120,7 @@
                             <input type="hidden" name="_method" value="POST"> {{-- logout often needs a form --}}
                             <button type="submit" class="flex w-full items-center space-x-3 text-red-400 hover:text-red-300 px-4 py-3 hover:bg-red-500/10 rounded-xl transition-colors font-bold block">
                                 <x-heroicon-o-arrow-right-start-on-rectangle class="h-5 w-5" />
-                                <span>{{ __('pub_theme::navigation.user_menu.logout') }}</span>
+                                <span>{{ __('pub_theme::navigation.user_menu.logout.label') }}</span>
                             </button>
                         </form>
                     </div>

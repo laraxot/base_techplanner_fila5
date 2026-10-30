@@ -56,11 +56,11 @@ $headerClasses = collect([
                 @if($enteUrl && $enteUrl !== '#')
                     <a href="{{ $enteUrl }}" 
                        class="hover:underline transition-colors"
-                       title="Vai al sito dell'ente"
+                       title="{{ __('pub_theme::layout.entity_site.link.label') }}"
                        target="_blank"
                        rel="noopener noreferrer">
-                        <span class="hidden sm:inline">Vai al sito dell'ente</span>
-                        <span class="sm:hidden">Sito ente</span>
+                        <span class="hidden sm:inline">{{ __('pub_theme::layout.entity_site.link.label') }}</span>
+                        <span class="sm:hidden">{{ __('pub_theme::layout.entity_site.short.label') }}</span>
                     </a>
                 @endif
                 

@@ -7,19 +7,19 @@
 <div class="sr-only focus:not-sr-only focus:outline-none focus:ring-2 focus:ring-primary-500">
     @if($showMain)
         <a href="#main" class="absolute top-4 left-4 z-50 bg-primary-600 text-white px-4 py-2 rounded-md font-medium hover:bg-primary-700 transition-colors">
-            {{ __('Vai al contenuto principale') }}
+            {{ __('pub_theme::navigation.actions.skip_to_main.label') }}
         </a>
     @endif
     
     @if($showContent)
         <a href="#content" class="absolute top-12 left-4 z-50 bg-primary-600 text-white px-4 py-2 rounded-md font-medium hover:bg-primary-700 transition-colors">
-            {{ __('Vai al contenuto') }}
+            {{ __('pub_theme::navigation.actions.skip_to_content.label') }}
         </a>
     @endif
     
     @if($showFooter)
         <a href="#footer" class="absolute top-20 left-4 z-50 bg-primary-600 text-white px-4 py-2 rounded-md font-medium hover:bg-primary-700 transition-colors">
-            {{ __('Vai al footer') }}
+            {{ __('pub_theme::navigation.actions.skip_to_footer.label') }}
         </a>
     @endif
 </div>

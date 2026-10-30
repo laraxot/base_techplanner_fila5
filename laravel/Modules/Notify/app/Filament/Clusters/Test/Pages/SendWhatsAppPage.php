@@ -21,12 +21,15 @@ use Modules\Notify\Enums\WhatsAppDriverEnum;
 use Modules\Notify\Filament\Clusters\Test;
 use Modules\Notify\Notifications\WhatsAppNotification;
 use Modules\Xot\Filament\Pages\XotBasePage;
+use Modules\Xot\Filament\Traits\SuperAdminOnlyTrait;
 
 /**
  * @property Schema $whatsappForm
  */
 class SendWhatsAppPage extends XotBasePage
 {
+    use SuperAdminOnlyTrait;
+
     /** @var array<string, mixed>|null */
     public ?array $whatsappData = [];
 
@@ -100,6 +103,8 @@ class SendWhatsAppPage extends XotBasePage
 
     public function sendWhatsApp(): void
     {
+        abort_unless(static::canAccess(), 403);
+
         try {
             $data = $this->whatsappForm->getState();
             $message = is_string($data['message']) ? $data['message'] : '';

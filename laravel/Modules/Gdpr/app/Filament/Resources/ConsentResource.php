@@ -9,6 +9,7 @@ use Modules\Gdpr\Filament\Resources\ConsentResource\Pages\CreateConsent;
 use Modules\Gdpr\Filament\Resources\ConsentResource\Pages\EditConsent;
 use Modules\Gdpr\Filament\Resources\ConsentResource\Pages\ListConsents;
 use Modules\Gdpr\Models\Consent;
+use Modules\UI\Filament\Tables\Columns\IDColumn;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class ConsentResource extends XotBaseResource
@@ -21,7 +22,7 @@ class ConsentResource extends XotBaseResource
     public function getTableColumns(): array
     {
         return [
-            'id' => TextColumn::make('id')->searchable(),
+            'id' => IDColumn::make('id')->searchable(),
             TextColumn::make('treatment.name')->searchable(),
             'subject_id' => TextColumn::make('subject_id')->searchable(),
             'created_at' => TextColumn::make('created_at')

@@ -163,4 +163,10 @@ return [
     ],
     'label' => 'Send Push Notification',
     'plural_label' => 'Send Push Notification (Plurale)',
+    'sections' => [
+        'page' => [
+            'title' => 'Test Invio Notifiche Push',
+            'description' => 'Utilizza questo form per testare l\'invio di notifiche push ai dispositivi mobili tramite diversi servizi.',
+        ],
+    ],
 ];

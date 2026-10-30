@@ -9,6 +9,7 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
 use Modules\Notify\Filament\Resources\NotifyThemeResource;
 use Modules\Notify\Models\NotifyTheme;
+use Modules\UI\Filament\Tables\Columns\IDColumn;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 class NotifyThemesTable extends XotBaseResourceTable
@@ -38,7 +39,7 @@ class NotifyThemesTable extends XotBaseResourceTable
     public function getTableColumns(): array
     {
         return [
-            'id' => TextColumn::make('id')->sortable(),
+            'id' => IDColumn::make('id')->sortable(),
             'lang' => TextColumn::make('lang')->sortable(),
             'type' => TextColumn::make('type')->sortable(),
             'post_type' => TextColumn::make('post_type')->sortable(),

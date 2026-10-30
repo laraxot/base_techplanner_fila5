@@ -34,7 +34,7 @@
         @click="$dispatch('mobile-menu-toggle')"
         class="{{ $padding }} rounded-xl text-slate-600 dark:text-slate-300 bg-gray-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-red-500/20 transition-all duration-200"
         :class="{ 'bg-red-50 dark:bg-red-950/20 border-red-500/50': isMenuOpen }"
-        aria-label="Toggle mobile menu"
+        aria-label="{{ __('pub_theme::navigation.sections.toggle_mobile_menu.label') }}"
         x-data="{ isMenuOpen: false }"
         @mobile-menu-toggle.window="isMenuOpen = !isMenuOpen">
     

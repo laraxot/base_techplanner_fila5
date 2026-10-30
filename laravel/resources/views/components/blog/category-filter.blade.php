@@ -1,12 +1,12 @@
 @php
     $categories = $categories ?? [
-        'all' => ['name' => 'Tutti gli Articoli', 'count' => 0, 'color' => 'gray'],
-        'radioprotezione' => ['name' => 'Radioprotezione', 'count' => 24, 'color' => 'blue'],
-        'normativa' => ['name' => 'Normativa', 'count' => 18, 'color' => 'green'],
-        'elettromedicali' => ['name' => 'Elettromedicali', 'count' => 15, 'color' => 'orange'],
-        'veterinaria' => ['name' => 'Veterinaria', 'count' => 12, 'color' => 'purple'],
-        'guide-pratiche' => ['name' => 'Guide Pratiche', 'count' => 32, 'color' => 'teal'],
-        'novita' => ['name' => 'Novità', 'count' => 8, 'color' => 'indigo'],
+        'all' => ['name' => __('blog.categories.all'), 'count' => 0, 'color' => 'gray'],
+        'radioprotezione' => ['name' => __('blog.categories.radioprotezione'), 'count' => 24, 'color' => 'blue'],
+        'normativa' => ['name' => __('blog.categories.normativa'), 'count' => 18, 'color' => 'green'],
+        'elettromedicali' => ['name' => __('blog.categories.elettromedicali'), 'count' => 15, 'color' => 'orange'],
+        'veterinaria' => ['name' => __('blog.categories.veterinaria'), 'count' => 12, 'color' => 'purple'],
+        'guide-pratiche' => ['name' => __('blog.categories.guide_pratiche'), 'count' => 32, 'color' => 'teal'],
+        'novita' => ['name' => __('blog.categories.novita'), 'count' => 8, 'color' => 'indigo'],
     ];
     
     $selectedCategory = $selectedCategory ?? 'all';
@@ -109,7 +109,7 @@
             <div>
                 <h4 class="font-medium text-blue-900">{{ $categories[$selectedCategory]['name'] }}</h4>
                 <p class="text-sm text-blue-700 mt-1">
-                    {{ $categories[$selectedCategory]['count'] }} articoli trovati in questa categoria.
+                    {{ __('blog.category_filter.articles_found', ['count' => $categories[$selectedCategory]['count']]) }}
                 </p>
             </div>
         </div>

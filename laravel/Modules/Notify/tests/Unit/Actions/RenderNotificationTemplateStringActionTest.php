@@ -8,13 +8,10 @@ use Illuminate\Support\Facades\Log;
 use Modules\Notify\Actions\RenderNotificationTemplateStringAction;
 use Modules\Notify\Models\NotificationTemplate;
 use Modules\Notify\Tests\Fixtures\NotifyNotificationTemplateProxy;
-use Modules\Xot\Tests\XotBaseTestCase;
 use Monolog\Handler\TestHandler;
 use Monolog\Level;
 use Monolog\Logger as Monolog;
 use PHPUnit\Framework\Assert;
-
-uses(XotBaseTestCase::class);
 
 /*
  * DCP-283 (C-08): i template di notifica sono letti dal database. Blade::render eseguiva PHP (`{{ system('id') }}`,

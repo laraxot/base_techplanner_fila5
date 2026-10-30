@@ -33,6 +33,13 @@ return [
         'practices' => 'Le mie pratiche',
         'notifications' => 'Notifiche',
         'logout' => 'Esci',
+        'password_requirements' => [
+            'title' => 'Requisiti della password',
+            'min_length' => 'Almeno 8 caratteri',
+            'uppercase' => 'Almeno una lettera maiuscola',
+            'number' => 'Almeno un numero',
+            'special' => 'Almeno un carattere speciale',
+        ],
     ],
     'user_dropdown' => [
         'manage_account' => 'Gestione Account',

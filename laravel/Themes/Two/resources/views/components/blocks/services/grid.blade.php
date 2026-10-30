@@ -29,7 +29,7 @@
                     $imgSrc = str_starts_with($service['image'], '/themes/Two/') ? asset(ltrim($service['image'], '/')) : $service['image'];
                 @endphp
                 <div class="aspect-w-16 aspect-h-9 bg-gradient-to-br from-{{ $bgColors[$ci] }} to-gray-100">
-                    <img src="{{ $imgSrc }}" alt="{{ $service['title'] ?? '' }}" class="w-full h-48 object-cover" loading="lazy">
+                    <img src="{{ $imgSrc }}" alt="" class="w-full h-48 object-cover" loading="lazy">
                 </div>
                 @else
                 <div class="w-full h-48 {{ $bgColors[$ci] }} flex items-center justify-center">
@@ -42,13 +42,13 @@
                             $validIcons = ['bolt', 'lightning-bolt', 'check-circle', 'light-bulb', 'heart', 'user-group', 'shield-check', 'academic-cap', 'fire', 'star', 'home', 'information-circle'];
                         @endphp
                         @if(in_array($iconName, $validIcons))
-                            <x-dynamic-component :component="$componentName" class="w-16 h-16 {{ $textColors[$ci] }}" />
+                            <x-dynamic-component :component="$componentName" aria-hidden="true" class="w-16 h-16 {{ $textColors[$ci] }}" />
                         @else
                             <!-- Fallback icon for invalid heroicon components -->
-                            <svg class="w-16 h-16 {{ $textColors[$ci] }}" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                            <svg aria-hidden="true" class="w-16 h-16 {{ $textColors[$ci] }}" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                         @endif
                     @else
-                        <svg class="w-16 h-16 {{ $textColors[$ci] }}" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                        <svg aria-hidden="true" class="w-16 h-16 {{ $textColors[$ci] }}" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                     @endif
                 </div>
                 @endif
@@ -57,11 +57,13 @@
                     <h3 class="text-xl font-bold text-gray-900 mb-3">{{ $service['title'] ?? '' }}</h3>
                     <p class="text-gray-600 mb-6 leading-relaxed text-sm">{{ $service['description'] ?? '' }}</p>
 
-                    <a href="{{ $service['url'] ?? '#' }}"
-                       class="inline-flex items-center {{ $textColors[$ci] }} font-semibold text-sm hover:underline group-hover:translate-x-1 transform transition-all duration-300">
-                        {{ $service['cta'] ?? 'Scopri di più' }}
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    @if(!empty($service['url']) && $service['url'] !== '#')
+                    <a href="{{ $service['url'] }}"
+                       class="inline-flex items-center min-h-11 {{ $textColors[$ci] }} font-semibold text-sm hover:underline group-hover:translate-x-1 transform transition-all duration-300">
+                        {{ $service['cta'] ?? __('pub_theme::ui.sections.learn_more.label') }}<span class="sr-only"> {{ __('pub_theme::ui.sections.learn_more_about.label', ['title' => $service['title'] ?? '']) }}</span>
+                        <svg aria-hidden="true" class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                     </a>
+                    @endif
                 </div>
             </div>
             @endforeach

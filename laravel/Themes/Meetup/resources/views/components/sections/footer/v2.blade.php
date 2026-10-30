@@ -6,23 +6,23 @@
             <div>
                 <h3 class="text-white font-bold mb-4">Laravel Pizza Meetups</h3>
                 <p class="text-gray-400 text-sm">
-                    La community italiana di Laravel che si incontra davanti ad una pizza per condividere conoscenze e passioni.
+                    {{ __('pub_theme::footer.about.description.message') }}
                 </p>
             </div>
 
             {{-- Links --}}
             <div>
-                <h4 class="text-white font-semibold mb-4">Links</h4>
+                <h4 class="text-white font-semibold mb-4">{{ __('pub_theme::footer.links.title.title') }}</h4>
                 <ul class="space-y-2">
-                    <li><a href="{{ LaravelLocalization::localizeUrl('/') }}" class="text-gray-400 hover:text-white text-sm transition-colors">Home</a></li>
-                    <li><a href="{{ LaravelLocalization::localizeUrl('/events') }}" class="text-gray-400 hover:text-white text-sm transition-colors">Eventi</a></li>
-                    <li><a href="{{ LaravelLocalization::localizeUrl('/dashboard') }}" class="text-gray-400 hover:text-white text-sm transition-colors">Dashboard</a></li>
+                    <li><a href="{{ LaravelLocalization::localizeUrl('/') }}" class="text-gray-400 hover:text-white text-sm transition-colors">{{ __('pub_theme::navigation.home') }}</a></li>
+                    <li><a href="{{ LaravelLocalization::localizeUrl('/events') }}" class="text-gray-400 hover:text-white text-sm transition-colors">{{ __('pub_theme::navigation.sections.events.label') }}</a></li>
+                    <li><a href="{{ LaravelLocalization::localizeUrl('/dashboard') }}" class="text-gray-400 hover:text-white text-sm transition-colors">{{ __('pub_theme::navigation.user_menu.dashboard.label') }}</a></li>
                 </ul>
             </div>
 
             {{-- Community --}}
             <div>
-                <h4 class="text-white font-semibold mb-4">Community</h4>
+                <h4 class="text-white font-semibold mb-4">{{ __('pub_theme::navigation.footer.community.label') }}</h4>
                 <ul class="space-y-2">
                     <li><a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">GitHub</a></li>
                     <li><a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Discord</a></li>
@@ -32,10 +32,10 @@
 
             {{-- Legal --}}
             <div>
-                <h4 class="text-white font-semibold mb-4">Legal</h4>
+                <h4 class="text-white font-semibold mb-4">{{ __('pub_theme::footer.legal.title.title') }}</h4>
                 <ul class="space-y-2">
-                    <li><a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">{{ __('pub_theme::footer.legal.privacy.label') }}</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">{{ __('pub_theme::footer.legal.terms.label') }}</a></li>
                 </ul>
             </div>
         </div>

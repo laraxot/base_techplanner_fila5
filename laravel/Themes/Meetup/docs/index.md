@@ -45,6 +45,7 @@ Indice per argomento di tutti i file `.md` sotto `Themes/Meetup/docs/`. Punto di
 
 - [code-quality-improvement-report.md](./code-quality-improvement-report.md) — baseline qualita' corrente (STORY-001, 2026-07-17)
 - [redundancy-audit.md](./redundancy-audit.md) — audit ridondanza tema (2026-05-21)
+- [stories/blade-i18n-no-hardcoded-text.story.md](./stories/blade-i18n-no-hardcoded-text.story.md) — niente testi fissi nelle Blade: chiavi `pub_theme::` in it, en, de, es
 
 ## LLM wiki / agent instructions
 

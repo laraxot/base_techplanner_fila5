@@ -19,7 +19,7 @@
                     "primary_cta_label": "Richiedi Consulenza",
                     "primary_cta_url": "/it/contatti",
                     "secondary_cta_label": "Scopri i Servizi",
-                    "secondary_cta_url": "/it/servizi",
+                    "secondary_cta_url": "/it/services",
                     "image": "/images/hero-bg.jpg"
                 }
             },
@@ -36,21 +36,21 @@
                             "title": "Autorizzazioni Sanitarie",
                             "description": "Supporto completo per ottenere e mantenere le autorizzazioni sanitarie necessarie per studi dentistici e cliniche veterinarie con apparecchiature radiologiche.",
                             "icon": "heroicon-o-shield-check",
-                            "url": "/it/servizi",
+                            "url": "/it/services",
                             "cta": "Scopri di più"
                         },
                         {
                             "title": "Controllo Apparecchi RX ed Elettromedicali",
                             "description": "Verifiche periodiche di sicurezza e funzionalità su apparecchiature radiologiche (RX, OPT, CBCT) e dispositivi elettromedicali (IEC 62353).",
                             "icon": "heroicon-o-wrench-screwdriver",
-                            "url": "/it/servizi",
+                            "url": "/it/services",
                             "cta": "Scopri di più"
                         },
                         {
                             "title": "Documenti di Valutazione del Rischio",
                             "description": "Redazione e aggiornamento di tutti i documenti obbligatori: DVR, relazioni tecniche, nomine degli esperti di radioprotezione e registri di controllo.",
                             "icon": "heroicon-o-clipboard-document",
-                            "url": "/it/servizi",
+                            "url": "/it/services",
                             "cta": "Scopri di più"
                         }
                     ]

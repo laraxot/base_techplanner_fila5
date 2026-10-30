@@ -22,7 +22,7 @@
     <div class="container mx-auto px-4">
         <div class="flex flex-wrap items-center gap-3">
             <button class="px-5 py-2.5 rounded-lg text-sm font-semibold bg-[#1E5A96] text-white shadow-sm transition-all">
-                Tutti
+                {{ __('pub_theme::ui.sections.all.label') }}
             </button>
             @foreach($categories as $category)
                 <button class="px-5 py-2.5 rounded-lg text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 border border-gray-200 transition-all">

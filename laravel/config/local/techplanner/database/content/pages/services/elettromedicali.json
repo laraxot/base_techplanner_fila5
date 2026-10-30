@@ -4,7 +4,7 @@
         "it": "Elettromedicali - Sottana Service",
         "en": "Electromedical Equipment - Sottana Service"
     },
-    "slug": "services/elettromedicali",
+    "slug": "elettromedicali",
     "content_blocks": {
         "it": [
             {
@@ -36,7 +36,7 @@
                     "title": "Metti in sicurezza il tuo parco macchine",
                     "subtitle": "Pianifica oggi stesso le verifiche periodiche per i tuoi elettromedicali.",
                     "cta_label": "Richiedi Info",
-                    "cta_url": "/it/contact"
+                    "cta_url": "/it/contatti"
                 }
             }
         ]

@@ -33,7 +33,7 @@
             @click="open = !open" 
             aria-haspopup="true"
             :aria-expanded="open"
-            aria-label="{{ __('Select Language') }}"
+            aria-label="{{ __('pub_theme::layout.language.select.label') }}"
             class="{{ $isMobile ? 'p-2' : 'hidden sm:flex items-center gap-2 px-3 py-2' }} rounded-xl text-sm font-medium text-slate-700 dark:text-slate-300 bg-gray-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 hover:border-red-500/50 dark:hover:border-red-500/50 hover:bg-red-50 dark:hover:bg-red-950/20 focus:outline-none focus:ring-2 focus:ring-red-500/20 transition-all duration-200 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-900">
         
         @if($isMobile)
@@ -56,7 +56,7 @@
          x-transition:leave-start="opacity-100 translate-y-0"
          x-transition:leave-end="opacity-0 translate-y-1"
          role="listbox"
-         aria-label="{{ __('Available Languages') }}"
+         aria-label="{{ __('pub_theme::layout.language.available.label') }}"
          class="{{ $isMobile ? 'left-0' : 'right-0' }} absolute mt-2 w-52 py-2 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 shadow-xl dark:shadow-black/20 z-50 lang-dropdown">
         @foreach($locales as $code => $locale)
             <a href="{{ LaravelLocalization::getLocalizedURL($code, null, [], true) }}" 

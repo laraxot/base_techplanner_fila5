@@ -29,11 +29,11 @@ declare(strict_types=1);
 @endphp
 
 @if(empty($contacts))
-    <span class="text-gray-400 text-sm italic" role="status" aria-label="Nessun contatto">
-        Nessun contatto
+    <span class="text-gray-400 text-sm italic" role="status" aria-label="{{ __('notify::columns.contact.empty_state') }}">
+        {{ __('notify::columns.contact.empty_state') }}
     </span>
 @else
-    <div class="flex flex-wrap gap-2 items-center" role="list" aria-label="Lista contatti">
+    <div class="flex flex-wrap gap-2 items-center" role="list" aria-label="{{ __('notify::contact-column.aria_labels.contact_list') }}">
         @foreach($contacts as $contact)
             @php
                 try {

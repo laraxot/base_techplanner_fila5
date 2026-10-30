@@ -39,7 +39,7 @@ $containerClasses = implode(' ', [
 @endphp
 
 @if($label)
-    <p class="text-tertiary text-sm mb-6">{{ __('Follow us for updates') }}</p>
+    <p class="text-tertiary text-sm mb-6">{{ __('pub_theme::coming-soon.follow_us') }}</p>
 @endif
 
 <div class="{{ $containerClasses }}">

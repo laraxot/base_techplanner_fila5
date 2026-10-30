@@ -17,7 +17,7 @@
 
     $inventory = app(GetCookieInventoryAction::class)->execute();
     $withConsent = $inventory->requiresConsent();
-    $policyUrl = \Themes\Sixteen\Infrastructure\Url\FrontofficeUrl::fromStoredUrl('/cookie-policy');
+    $policyUrl = \Themes\Sixteen\Infrastructure\Url\FrontofficeUrl::fromStoredUrl((string) config('gdpr.config.cookie.policy_path', '/cookie-policy'));
     $t = static fn (string $key): string => (string) trans('cookie-consent::texts.'.$key);
     $categories = [
         ['id' => 'analytics', 'case' => CookieCategory::Analytics, 'label' => 'setting_analytics', 'text' => 'setting_analytics_text'],
@@ -26,7 +26,7 @@
 @endphp
 <style>
     .gdpr-cookiebar, .gdpr-cookiedialog { font-family: inherit; font-size: 1rem; line-height: 1.5; color: #1a1a1a; }
-    .gdpr-cookiebar { position: fixed; z-index: 2147483000; left: 0; right: 0; bottom: 0; background: #fff; border-top: 3px solid var(--bs-primary, #0066cc); box-shadow: 0 -2px 12px rgba(0, 0, 0, .15); padding: 1rem; }
+    .gdpr-cookiebar { position: fixed; z-index: 2147483000; left: 0; right: 0; bottom: 0; background: #fff; border-top: 3px solid var(--bs-primary, #0057ad); box-shadow: 0 -2px 12px rgba(0, 0, 0, .15); padding: 1rem; }
     .gdpr-cookiebar[hidden] { display: none; }
     /* Il testo della pagina non deve restare sotto la barra fissa (bug FO blog dettaglio). */
     body:has(.gdpr-cookiebar:not([hidden])) { padding-bottom: 11rem; }
@@ -43,10 +43,10 @@
     .gdpr-cookiebar__text { flex: 1 1 24rem; min-width: 0; }
     .gdpr-cookiebar__title { margin: 0 0 .25rem; font-weight: 700; }
     .gdpr-cookiebar__body { margin: 0; }
-    .gdpr-cookiebar a, .gdpr-cookiedialog a { color: var(--bs-primary, #0066cc); text-decoration: underline; }
+    .gdpr-cookiebar a, .gdpr-cookiedialog a { color: var(--bs-primary, #0057ad); text-decoration: underline; }
     .gdpr-cookiebar__actions { display: flex; flex-wrap: wrap; gap: .75rem; }
-    .gdpr-cookiebar .gdpr-btn.gdpr-btn, .gdpr-cookiedialog .gdpr-btn.gdpr-btn { appearance: none; cursor: pointer; font: inherit; font-weight: 600; min-height: 2.75rem; padding: .5rem 1.25rem; border-radius: .25rem; border: 2px solid var(--bs-primary, #0066cc); background: var(--bs-primary, #0066cc); color: #fff; text-decoration: none; }
-    .gdpr-cookiebar .gdpr-btn.gdpr-btn--outline, .gdpr-cookiedialog .gdpr-btn.gdpr-btn--outline { background: #fff; color: var(--bs-primary, #0066cc); }
+    .gdpr-cookiebar .gdpr-btn.gdpr-btn, .gdpr-cookiedialog .gdpr-btn.gdpr-btn { appearance: none; cursor: pointer; font: inherit; font-weight: 600; min-height: 2.75rem; padding: .5rem 1.25rem; border-radius: .25rem; border: 2px solid var(--bs-primary, #0057ad); background: var(--bs-primary, #0057ad); color: #fff; text-decoration: none; }
+    .gdpr-cookiebar .gdpr-btn.gdpr-btn--outline, .gdpr-cookiedialog .gdpr-btn.gdpr-btn--outline { background: #fff; color: var(--bs-primary, #0057ad); }
     .gdpr-cookiebar .gdpr-btn.gdpr-btn:focus-visible, .gdpr-cookiedialog .gdpr-btn.gdpr-btn:focus-visible, .gdpr-cookiebar .gdpr-close.gdpr-close:focus-visible, .gdpr-cookiedialog .gdpr-close.gdpr-close:focus-visible { outline: 3px solid #1a1a1a; outline-offset: 2px; }
     .gdpr-cookiebar .gdpr-close.gdpr-close, .gdpr-cookiedialog .gdpr-close.gdpr-close { appearance: none; position: absolute; top: -.25rem; right: -.25rem; width: 2.75rem; height: 2.75rem; border: 0; background: transparent; color: #1a1a1a; font: inherit; font-size: 1.75rem; line-height: 1; cursor: pointer; }
     .gdpr-cookiedialog { width: min(40rem, calc(100vw - 2rem)); max-height: calc(100vh - 2rem); padding: 1.5rem; border: 0; border-radius: .5rem; background: #fff; box-shadow: 0 8px 32px rgba(0, 0, 0, .35); }
@@ -56,20 +56,27 @@
     .gdpr-cookiedialog label { display: flex; align-items: center; gap: .75rem; font-weight: 700; cursor: pointer; }
     /* Casella disegnata qui: il CSS del tema azzera `appearance` e il bordo, e una casella nativa risulterebbe invisibile. */
     .gdpr-cookiedialog input.gdpr-check.gdpr-check { appearance: none; -webkit-appearance: none; box-sizing: border-box; flex: none; width: 1.5rem; height: 1.5rem; margin: 0; padding: 0; border: 2px solid #1a1a1a; border-radius: .25rem; background: #fff center / 80% no-repeat; cursor: pointer; }
-    .gdpr-cookiedialog input.gdpr-check.gdpr-check:checked { border-color: var(--bs-primary, #0066cc); background-color: var(--bs-primary, #0066cc); background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23fff' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round' d='M3.5 8.5l3 3 6-7'/%3E%3C/svg%3E"); }
+    .gdpr-cookiedialog input.gdpr-check.gdpr-check:checked { border-color: var(--bs-primary, #0057ad); background-color: var(--bs-primary, #0057ad); background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23fff' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round' d='M3.5 8.5l3 3 6-7'/%3E%3C/svg%3E"); }
     .gdpr-cookiedialog input.gdpr-check.gdpr-check:disabled { cursor: not-allowed; opacity: .55; }
     .gdpr-cookiedialog input.gdpr-check.gdpr-check:focus-visible { outline: 3px solid #1a1a1a; outline-offset: 2px; }
     .gdpr-cookiedialog h2:focus { outline: none; }
     .gdpr-cookiedialog fieldset p { margin: .35rem 0 0 2.25rem; }
     .gdpr-cookiedialog .gdpr-cookiedialog__actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.25rem; }
     @media (max-width: 575.98px) {
-        .gdpr-cookiebar { padding: .75rem; }
+        .gdpr-cookiebar { padding: .5rem .75rem; }
         .gdpr-cookiebar__inner { gap: .5rem; padding-right: 0; }
         .gdpr-cookiebar__title { margin: 0 2.5rem .15rem 0; font-size: 1rem; }
-        .gdpr-cookiebar__body { font-size: .9375rem; line-height: 1.4; }
+        .gdpr-cookiebar__body { font-size: .875rem; line-height: 1.4; }
+        /* modalita' info: il titolo ripete il testo, resta per gli screen reader (nome del gruppo) ma non occupa schermo */
+        .gdpr-cookiebar[data-cookiebar="info"] .gdpr-cookiebar__title { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; }
         .gdpr-cookiebar__actions { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; width: 100%; }
         .gdpr-cookiebar .gdpr-btn.gdpr-btn { padding: .4rem .5rem; }
         .gdpr-cookiebar__actions .gdpr-btn:only-child, .gdpr-cookiebar__actions .gdpr-btn[data-cookie-action="settings"] { grid-column: 1 / -1; }
+    }
+    @media (min-width: 360px) and (max-width: 575.98px) {
+        .gdpr-cookiebar[data-cookiebar="info"] .gdpr-cookiebar__inner { flex-wrap: nowrap; align-items: center; }
+        .gdpr-cookiebar[data-cookiebar="info"] .gdpr-cookiebar__text { flex: 1 1 auto; }
+        .gdpr-cookiebar[data-cookiebar="info"] .gdpr-cookiebar__actions { display: block; width: auto; flex: none; }
     }
 </style>
 
@@ -157,7 +164,7 @@
     // chi stava con la tastiera sulla barra (o nel suo dialogo) passa al prossimo stop della pagina invece di cadere sul body
     const leave = (hadFocus) => {
         if (!hadFocus) return;
-        const next = () => (document.querySelector('.skiplink a') ?? document.getElementById('main-container'))?.focus();
+        const next = () => (document.querySelector('.skiplink a') ?? document.getElementById('main-container') ?? document.getElementById('main-content'))?.focus();
         dialog.open ? dialog.addEventListener('close', next, { once: true }) : next();
     };
     window.addEventListener('resize', pad);
@@ -177,6 +184,12 @@
         actions[trigger.dataset.cookieAction]?.();
     });
     dialog.addEventListener('click', (e) => { if (e.target === dialog) dialog.close(); });
-    if (read() === null) { document.body.prepend(bar); bar.hidden = false; pad(); }
+    if (read() === null) {
+        // dopo lo skip link (primo figlio del body), non prima: il link per saltare i blocchi deve essere il primo stop di Tab
+        const skip = document.querySelector('body > a[href^="#"], body > .skiplink');
+        skip ? skip.after(bar) : document.body.prepend(bar);
+        bar.hidden = false;
+        pad();
+    }
 })();
 </script>

@@ -24,6 +24,7 @@ use Modules\Notify\Filament\Clusters\Test;
 use Modules\Notify\Models\MailTemplate;
 use Modules\Notify\Notifications\RecordNotification;
 use Modules\Xot\Filament\Pages\XotBasePage;
+use Modules\Xot\Filament\Traits\SuperAdminOnlyTrait;
 use Webmozart\Assert\Assert;
 
 /**
@@ -31,6 +32,8 @@ use Webmozart\Assert\Assert;
  */
 class SendSpatieEmailPage extends XotBasePage
 {
+    use SuperAdminOnlyTrait;
+
     /** @var array<string, mixed>|null */
     public ?array $emailData = [];
 
@@ -83,6 +86,8 @@ class SendSpatieEmailPage extends XotBasePage
 
     public function sendEmail(): void
     {
+        abort_unless(static::canAccess(), 403);
+
         $data = $this->emailForm->getState();
         /*
          * $email_data = EmailData::from($data);

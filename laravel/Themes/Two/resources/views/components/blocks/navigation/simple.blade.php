@@ -2,7 +2,7 @@
     'brand' => 'Sottana Service',
     'brand_subtitle' => '',
     'items' => [],
-    'cta_label' => 'Richiedi Consulenza',
+    'cta_label' => __('pub_theme::block_defaults.nav_simple.cta.label'),
     'cta_url' => '/contatti',
     'cta_icon' => 'phone',
 ])
@@ -44,7 +44,7 @@
             </a>
 
             {{-- Desktop Navigation --}}
-            <nav class="hidden lg:flex items-center space-x-8" role="navigation" aria-label="Menu principale">
+            <nav class="hidden lg:flex items-center space-x-8" role="navigation" aria-label="{{ __('pub_theme::header.menu.main.aria_label') }}">
                 @foreach($items as $item)
                     <a href="{{ $item['url'] ?? '#' }}" 
                        class="font-medium transition-colors relative group py-2"
@@ -76,7 +76,7 @@
             <button @click="mobileMenuOpen = !mobileMenuOpen"
                     class="lg:hidden p-2 rounded-lg transition-colors"
                     :class="scrolled ? 'text-gray-700 hover:bg-gray-100' : 'text-white hover:bg-white/10'"
-                    aria-label="Toggle menu">
+                    aria-label="{{ __('pub_theme::header.menu.toggle.aria_label') }}">
                 <svg x-show="!mobileMenuOpen" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>

@@ -5,7 +5,7 @@
 ])
 
 @if(!empty($steps))
-<div class="progress-indicators" aria-label="Progresso">
+<div class="progress-indicators" aria-label="{{ __('pub_theme::ui.sections.progress.label') }}">
     <div class="flex items-center justify-between">
         @foreach($steps as $index => $step)
             <div class="flex items-center flex-1 {{ $index < count($steps) - 1 ? 'pr-8' : '' }}">

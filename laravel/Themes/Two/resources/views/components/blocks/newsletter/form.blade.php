@@ -1,7 +1,7 @@
 @props([
     'title' => '',
     'description' => '',
-    'cta_label' => 'Iscriviti',
+    'cta_label' => __('pub_theme::blocks.newsletter.form.cta_label'),
     'privacy_note' => '',
 ])
 
@@ -20,11 +20,11 @@
             <form class="max-w-xl mx-auto" @submit.prevent>
                 <div class="flex flex-col sm:flex-row gap-3">
                     <input type="email"
-                           placeholder="La tua email professionale"
+                           placeholder="{{ __('pub_theme::blocks.newsletter.form.email_placeholder') }}"
                            class="flex-1 px-5 py-3.5 rounded-lg text-gray-900 placeholder-gray-400 bg-white focus:outline-none focus:ring-2 focus:ring-[#E67E22]"
                            required>
                     <button type="submit"
-                            class="px-8 py-3.5 bg-[#E67E22] hover:bg-[#d35400] text-white font-bold rounded-lg transition-colors duration-200 shadow-lg">
+                            class="px-8 py-3.5 bg-[#E67E22] hover:bg-[#d35400] text-black font-bold rounded-lg transition-colors duration-200 shadow-lg">
                         {{ $cta_label }}
                     </button>
                 </div>

@@ -28,7 +28,7 @@ declare(strict_types=1);
     </div>
     <div class="lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
         <div class="relative h-56 sm:h-72 md:h-96 lg:h-full">
-            <img class="absolute inset-0 w-full h-full object-cover" src="{{ $image }}" alt="Hero background">
+            <img class="absolute inset-0 w-full h-full object-cover" src="{{ $image }}" alt="{{ __('ui::blocks_hero.v1.hero_background.alt') }}">
         </div>
     </div>
 </section>

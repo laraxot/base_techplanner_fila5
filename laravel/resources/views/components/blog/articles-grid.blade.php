@@ -36,16 +36,16 @@
             @if($show_filters)
                 <div class="mb-8 flex flex-wrap items-center justify-center gap-2">
                     <button class="px-4 py-2 rounded-full bg-blue-600 text-white font-medium text-sm">
-                        Tutti
+                        {{ __('blog.filters.all') }}
                     </button>
                     <button class="px-4 py-2 rounded-full bg-gray-100 text-gray-700 font-medium text-sm hover:bg-gray-200 transition-colors">
-                        Più Recenti
+                        {{ __('blog.filters.latest') }}
                     </button>
                     <button class="px-4 py-2 rounded-full bg-gray-100 text-gray-700 font-medium text-sm hover:bg-gray-200 transition-colors">
-                        Più Popolari
+                        {{ __('blog.filters.popular') }}
                     </button>
                     <button class="px-4 py-2 rounded-full bg-gray-100 text-gray-700 font-medium text-sm hover:bg-gray-200 transition-colors">
-                        In Evidenza
+                        {{ __('blog.filters.featured') }}
                     </button>
                 </div>
             @endif

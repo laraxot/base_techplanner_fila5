@@ -53,7 +53,7 @@
             @if($featured)
                 <div class="absolute top-2 left-2">
                     <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-blue-600 text-white">
-                        In evidenza
+                        {{ __('pub_theme::common.badges.featured.label') }}
                     </span>
                 </div>
             @endif
@@ -87,7 +87,7 @@
             <a 
                 href="{{ $url }}" 
                 class="hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded"
-                aria-label="Visualizza dettagli evento: {{ $title }}"
+                aria-label="{{ __('pub_theme::cards.event.details_aria.label', ['title' => $title]) }}"
             >
                 {{ $title }}
             </a>
@@ -121,9 +121,9 @@
             <a 
                 href="{{ $url }}" 
                 class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded"
-                aria-label="Visualizza dettagli evento: {{ $title }}"
+                aria-label="{{ __('pub_theme::cards.event.details_aria.label', ['title' => $title]) }}"
             >
-                Dettagli
+                {{ __('pub_theme::common.actions.details.label') }}
                 <x-heroicon-o-arrow-right class="w-4 h-4 ml-1" />
             </a>
         </div>

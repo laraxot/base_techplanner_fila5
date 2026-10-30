@@ -1,10 +1,10 @@
 <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 pt-16 pb-8" role="contentinfo" aria-labelledby="footer-heading">
-    <h2 id="footer-heading" class="sr-only">{{ __('Footer') }}</h2>
+    <h2 id="footer-heading" class="sr-only">{{ __('pub_theme::footer.ui.heading.label') }}</h2>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="xl:grid xl:grid-cols-3 xl:gap-8">
             <!-- Brand -->
             <div class="space-y-8 xl:col-span-1">
-                <a href="{{ url('/') }}" class="flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-red-500 rounded-lg p-1" aria-label="{{ config('app.name') }} - {{ __('Home') }}">
+                <a href="{{ url('/') }}" class="flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-red-500 rounded-lg p-1" aria-label="{{ config('app.name') }} - {{ __('pub_theme::navigation.home') }}">
                     <x-filament::icon
                         icon="meetup-logo"
                         class="h-10 w-10 text-red-600"
@@ -12,8 +12,8 @@
                     <span class="text-xl font-bold text-slate-900 dark:text-white">{{ config('app.name') }}</span>
                 </a>
                 <p class="text-base text-slate-500 dark:text-slate-400 max-w-sm">
-                    {{ __('Piattaforma per la gestione delle segnalazioni cittadine.') }}
-                    {{ __('Miglioriamo insieme la nostra città.') }}
+                    {{ __('pub_theme::footer.ui.description.message') }}
+                    {{ __('pub_theme::footer.ui.slogan.message') }}
                 </p>
                 <div class="flex space-x-6">
                     <!-- Social Links -->
@@ -31,7 +31,7 @@
                            class="text-slate-400 hover:text-slate-500 dark:hover:text-slate-300 focus:outline-none focus:ring-2 focus:ring-red-500 rounded-lg p-1"
                            target="_blank" 
                            rel="noopener noreferrer"
-                           aria-label="{{ $social['name'] }} - {{ __('Apre in nuova finestra') }}">
+                           aria-label="{{ $social['name'] }} - {{ __('pub_theme::footer.ui.opens_new_window.label') }}">
                             <span class="sr-only">{{ $social['name'] }}</span>
                             <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path fill-rule="evenodd" d="{{ $social['path'] }}" clip-rule="evenodd" />
@@ -46,7 +46,7 @@
                 <div class="md:grid md:grid-cols-2 md:gap-8">
                     <div>
                         <h3 class="text-sm font-semibold text-slate-400 tracking-wider uppercase">
-                            {{ __('Link Utili') }}
+                            {{ __('pub_theme::footer.ui.useful_links.title') }}
                         </h3>
                         <ul role="list" class="mt-4 space-y-4">
                             @foreach(['Amministrazione Trasparente', 'Privacy Policy', 'Note Legali', 'Cookie Policy', 'Dichiarazione di Accessibilità', 'Mappa del Sito'] as $link)
@@ -60,7 +60,7 @@
                     </div>
                     <div class="mt-12 md:mt-0">
                         <h3 class="text-sm font-semibold text-slate-400 tracking-wider uppercase">
-                            {{ __('Contatti') }}
+                            {{ __('pub_theme::navigation.contact') }}
                         </h3>
                         <ul role="list" class="mt-4 space-y-4">
                            <li>
@@ -87,7 +87,7 @@
         
         <div class="mt-12 border-t border-slate-200 dark:border-slate-800 pt-8">
             <p class="text-base text-slate-400 xl:text-center">
-                &copy; {{ date('Y') }} {{ config('app.name') }}. {{ __('Tutti i diritti riservati.') }}
+                &copy; {{ date('Y') }} {{ config('app.name') }}. {{ __('pub_theme::navigation.footer.all_rights_reserved.label') }}
             </p>
         </div>
     </div>

@@ -3,11 +3,16 @@
 
 @theme {
     /* Original Brand Colors */
-    --color-brand-blue: #1E5A96;
-    --color-brand-green: #2D8659;
+    /* Token a contrasto >= 7:1 (WCAG 1.4.6 AAA) sia come testo su bianco/orange-50/gray-50 sia con testo bianco sopra. */
+    --color-brand-blue: #1C548C;
+    --color-brand-green: #205F3F;
+    /* Hover del bottone verde: bianco su #184A31 = 10,2:1 (con /90 sul bianco scendeva sotto 7:1). */
+    --color-brand-green-dark: #184A31;
     --color-brand-orange: #E67E22;
-    /* Darker orange for WCAG AA contrast on light backgrounds (4.5:1+) */
-    --color-brand-orange-dark: #B85C00;
+    /* Arancio scuro per testo su sfondi chiari: 7,6:1 su bianco. */
+    --color-brand-orange-dark: #844200;
+    /* text-orange-700 e' usato nelle Blade per testo/avvisi: 7,6:1 su bianco, 7,1:1 su orange-50. */
+    --color-orange-700: #9E2900;
     
     /* Target Website Color Palette */
     --color-primary-light: oklch(0.65 0.15 250);
@@ -104,6 +109,55 @@
 
 @variant dark (&:where(.dark, .dark *));
 
+/*
+ * Header pubblico `fixed`: esce dal flusso, quindi lo spazio che occupa si riserva UNA volta sola,
+ * sul contenitore principale (layouts/main.blade.php, classe pt-[var(--site-header-h)]) e non hero per hero.
+ * --site-header-h = altezza dell'header, vedi sections/header/v1.blade.php:
+ *   - sotto lg (mobile/tablet) l'header e' SEMPRE compatto: py-2 (1rem) + riga h-16 (4rem) = 5rem. Meno schermo perso e nessun
+ *     salto di altezza allo scroll;
+ *   - da lg a inizio pagina: py-4 (2rem) + riga h-20 (5rem) = 7rem; da scrollato si riduce a 5rem (non cresce mai).
+ * NON sovrascrivere il padding-top dell'header (py-4/py-2): una regola `.fixed[data-mobile-nav]{padding-top:env(...)}`
+ * lo azzerava e l'header scendeva da 112 a 96px. La safe-area serve solo con viewport-fit=cover, che il tema non usa.
+ */
+:root {
+    --site-header-h: 5rem;
+}
+
+@media (min-width: 64rem) {
+    :root {
+        --site-header-h: 7rem;
+    }
+}
+
+/* WCAG 2.4.11 / 2.4.12: ancore e focus da tastiera non finiscono sotto l'header fisso (altezza + 1rem di margine). */
+html {
+    scroll-padding-top: calc(var(--site-header-h) + 1rem);
+}
+
+/*
+ * Barra cookie (Modules/Gdpr) sui viewport bassi (stessa soglia, 30rem): li' sta nel flusso, in cima al body, e
+ * l'header fisso la copriva (restavano visibili 15px e "Ho capito" era irraggiungibile). La si fa partire sotto
+ * l'header e, finche' e' visibile, il main non aggiunge un secondo offset.
+ */
+@media (max-height: 30rem) {
+    body:has(> header[data-mobile-nav]) > .gdpr-cookiebar {
+        margin-top: var(--site-header-h);
+    }
+
+    body:has(> header[data-mobile-nav]):has(> .gdpr-cookiebar:not([hidden])) #main-content {
+        padding-top: 0;
+    }
+}
+
+.fixed[data-mobile-nav] [data-mobile-nav-panel] {
+    max-height: calc(100dvh - var(--site-header-h) - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+    padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}
+
+[x-cloak] {
+    display: none !important;
+}
+
 /* WCAG 2.1 AA Accessibility Improvements */
 
 /* Screen reader only content */
@@ -128,15 +182,50 @@
     margin: inherit;
     overflow: visible;
     clip: auto;
+    clip-path: none; /* Tailwind v4: .sr-only usa clip-path: inset(50%), non solo clip */
     white-space: normal;
 }
 
-/* Enhanced Focus Indicators for WCAG 2.1 AA compliance */
+/*
+ * Skip link (WCAG 2.4.1, 2.4.11/12): nascosto finche' non riceve il focus, poi fisso in alto a sinistra SOPRA l'header fisso.
+ * La regola `.sr-only:focus` qui sopra lo rimette `static`: senza questo blocco restava nel flusso, sotto l'header (z-50) e coperto.
+ * Fondo bianco + testo brand-blue (7,5:1); l'anello a due toni sotto lo rende visibile su qualunque sfondo.
+ */
+.skip-link:focus,
+.skip-link:focus-visible {
+    position: fixed;
+    top: 0.75rem;
+    left: 0.75rem;
+    z-index: 10000;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0.75rem 1rem;
+    overflow: visible;
+    clip: auto;
+    clip-path: none; /* Tailwind v4: .sr-only usa clip-path: inset(50%), non solo clip */
+    white-space: normal;
+    background: #fff;
+    color: var(--color-brand-blue);
+    font-weight: 700;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+/*
+ * Anello di focus a due toni (WCAG 2.4.7, 1.4.11, 2.4.13 AAA): blu interno (7,5:1 su bianco) + alone bianco esterno
+ * (>= 9:1 sul blu #164575 degli sfondi scuri). Con un solo colore l'anello era invisibile sugli sfondi blu (1,0-1,9:1).
+ * Niente border-radius forzato: l'outline segue gia' la forma dell'elemento (prima i pulsanti rotondi diventavano rettangoli).
+ */
 :where(a, button, input, select, textarea, summary, [tabindex]:not([tabindex="-1"])):focus-visible {
-    outline: 3px solid #1E5A96 !important;
-    outline-offset: 3px !important;
-    border-radius: 0.25rem;
-    box-shadow: 0 0 0 2px rgba(30, 90, 150, 0.3) !important;
+    outline: 3px solid var(--color-brand-blue) !important;
+    outline-offset: 2px !important;
+    box-shadow: 0 0 0 8px #fff !important;
+}
+
+/* Bersaglio di focus programmatico (skip link -> <main tabindex="-1">): contenitore, non controllo; nessun anello. */
+main[tabindex="-1"]:focus {
+    outline: none;
 }
 
 /* Ensure minimum touch target size (44x44px) for mobile */
@@ -149,37 +238,27 @@ input[type="button"] {
 }
 
 /* Improve color contrast for text - WCAG 2.1 AA compliance */
-.text-white\/80 {
-    color: rgba(255, 255, 255, 0.95); /* Improved from 0.8 to 0.95 for better contrast */
-}
+@layer utilities {
+    /*
+     * Testo chiaro su fondo scuro: bianco pieno. AAA (1.4.6) chiede 7:1 e il bianco al 95% sul blu #1D568F scende a 6,98:1;
+     * il testo "attenuato" resta distinguibile per peso e dimensione, non per trasparenza.
+     */
+    .text-white\/60,
+    .text-white\/70,
+    .text-white\/80,
+    .text-white\/90,
+    .text-white\/95 {
+        color: #fff;
+    }
 
-.text-white\/90 {
-    color: rgba(255, 255, 255, 1); /* Improved from 0.9 to 1.0 */
-}
-
-.text-white\/95 {
-    color: rgba(255, 255, 255, 0.98); /* High contrast for footer text */
-}
-
-/* Ensure sufficient contrast for non-text elements (icons, borders) */
-.text-blue-100\/80 {
-    color: rgba(255, 255, 255, 0.95); /* Changed to white for better contrast on dark background */
-}
-
-.text-blue-100\/90 {
-    color: rgba(255, 255, 255, 0.98); /* Changed to white for better contrast */
-}
-
-.text-blue-200 {
-    color: rgba(255, 255, 255, 0.95); /* Changed to white for better contrast */
-}
-
-.text-blue-200\/70 {
-    color: rgba(255, 255, 255, 0.95); /* Changed to white for better contrast */
-}
-
-.text-gray-200 {
-    color: rgba(255, 255, 255, 0.95); /* Changed to white for better contrast on dark footer */
+    /* Ensure sufficient contrast for non-text elements (icons, borders) */
+    .text-blue-100\/80,
+    .text-blue-100\/90,
+    .text-blue-200,
+    .text-blue-200\/70,
+    .text-gray-200 {
+        color: #fff; /* tonalita' chiare usate su fondo scuro (hero, footer): bianco per il 7:1 */
+    }
 }
 
 /* Footer / contentinfo: ensure orange and gray text meet 4.5:1 on dark blue */
@@ -204,6 +283,64 @@ footer .text-gray-400 {
 }
 .border-t-brand-orange:not(.bg-white):not(.bg-gray-50):not(.bg-brand-blue):not(.bg-brand-green) {
     border-top-color: var(--color-brand-orange-dark) !important;
+}
+
+/*
+ * WCAG AAA (1.4.6, 1.4.11, 2.4.7): regole trasversali per classi usate in Blade che questo file non possiede.
+ * Dentro @layer utilities: a parita' di specificita' le varianti (hover:, focus:) della stessa classe restano piu' forti; fuori layer
+ * le avrebbero battute. Selettori mirati, non globali: i placeholder chiari su campi scuri (newsletter su fondo blu) non cambiano.
+ */
+@layer utilities {
+    /* Hover del bottone verde: /90 sul bianco dava 3,8-5,9:1; il token scuro tiene >= 10:1 con testo bianco. */
+    .hover\:bg-brand-green\/90:hover {
+        background-color: var(--color-brand-green-dark);
+    }
+
+    /* Esadecimali di marca scritti a mano nelle Blade: portati sul token a 7:1 (il #2D8659 con testo bianco era 4,5:1, il #1E5A96 su blue-50 6,5:1). */
+    .bg-\[\#2D8659\] {
+        background-color: var(--color-brand-green);
+    }
+
+    .text-\[\#2D8659\] {
+        color: var(--color-brand-green);
+    }
+
+    .text-\[\#1E5A96\] {
+        color: var(--color-brand-blue);
+    }
+
+    /* Testo gray-500 = 4,6-4,8:1 su bianco/gray-50 (Filament mappa gray su zinc): gray-600 = 7,2-7,7:1. */
+    .text-gray-500 {
+        color: var(--color-gray-600);
+    }
+
+    /* Titoli-card con link (blog, servizi): il link e' un bersaglio a se', almeno 44px (2.5.5). */
+    :where(h2, h3, h4) > a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 2.75rem;
+    }
+
+    /* Placeholder su campo bianco: gray-400/500 = 2,6/4,8:1; gray-600 = 7,7:1 (1.4.6). */
+    .placeholder-gray-400::placeholder,
+    .placeholder-gray-500::placeholder,
+    .placeholder\:text-gray-400::placeholder,
+    .placeholder\:text-gray-500::placeholder {
+        color: var(--color-gray-600);
+        opacity: 1;
+    }
+
+    /* Bordo dei campi: border-gray-300 su bianco = 1,5:1 (richiesto 3:1 per 1.4.11); gray-500 = 4,8:1. */
+    input.border-gray-300,
+    select.border-gray-300,
+    textarea.border-gray-300 {
+        border-color: var(--color-gray-500);
+    }
+
+    /* Etichetta che compare solo con hover (mappa nel footer): compare anche al focus da tastiera. */
+    .group:focus-visible .group-hover\:opacity-100 {
+        opacity: 1;
+    }
 }
 
 /* Reflow support - ensure content doesn't require horizontal scrolling at 320px */
@@ -321,4 +458,17 @@ html {
 
 .skip-to-content:focus {
     top: 0;
+}
+
+/* Mobile / vestibolare (WCAG 2.3.3): chi chiede meno movimento non riceve transizioni, rimbalzi
+   (animate-bounce del footer), pulse, zoom hover ne' scroll animato. Prima il tema non aveva alcuna regola. */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }

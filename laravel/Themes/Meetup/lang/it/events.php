@@ -99,4 +99,15 @@ return [
         'label' => 'Share this event',
         'description' => 'Label for share button',
     ],
+    'status' => [
+        'all' => [
+            'label' => 'Tutti gli eventi',
+        ],
+        'upcoming' => [
+            'label' => 'In arrivo',
+        ],
+        'past' => [
+            'label' => 'Eventi passati',
+        ],
+    ],
 ];

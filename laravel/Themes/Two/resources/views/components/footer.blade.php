@@ -18,17 +18,17 @@
                 </h3>
                 <ul class="space-y-2">
                     <li>
-                        <a href="{{ route('privacy') }}" class="text-gray-600 hover:text-gray-900">
+                        <a href="{{ route('container0', ['container0' => 'privacy']) }}" class="text-gray-600 hover:text-gray-900">
                             {{ __('theme::footer.links.privacy') }}
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('terms') }}" class="text-gray-600 hover:text-gray-900">
+                        <a href="{{ route('container0', ['container0' => 'terms']) }}" class="text-gray-600 hover:text-gray-900">
                             {{ __('theme::footer.links.terms') }}
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('contact') }}" class="text-gray-600 hover:text-gray-900">
+                        <a href="{{ route('container0', ['container0' => 'contatti']) }}" class="text-gray-600 hover:text-gray-900">
                             {{ __('theme::footer.links.contact') }}
                         </a>
                     </li>

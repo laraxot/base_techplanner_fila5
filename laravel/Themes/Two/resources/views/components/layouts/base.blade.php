@@ -3,12 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        @hasSection('title')
-
-            <title>@yield('title') - {{ config('app.name') }}</title>
-        @else
-            <title>{{ config('app.name') }}</title>
-        @endif
+        {{-- Mobile: barra del browser in tinta con il brand. --}}
+        <meta name="theme-color" content="#0f2b46">
+        {{-- Titolo (WCAG 2.4.2): sezione `title` o prop `title` (layouts/guest), poi il marchio del tema (non app.name = "Laravel"). --}}
+        @php
+            $baseTitle = trim((string) ($__env->yieldContent('title') ?: ($title ?? '')));
+            $baseBrand = (string) __('pub_theme::header.brand.name');
+        @endphp
+        <title>{{ $baseTitle !== '' ? $baseTitle.' — '.$baseBrand : $baseBrand }}</title>
 
         <!-- Favicon -->
 		<link rel="shortcut icon" href="{{ url(asset('favicon.ico')) }}">

@@ -38,18 +38,18 @@ $breadcrumbClasses = collect([
 ])->filter()->implode(' ');
 @endphp
 
-<nav class="{{ $breadcrumbClasses }}" aria-label="Percorso di navigazione" role="navigation">
+<nav class="{{ $breadcrumbClasses }}" aria-label="{{ __('pub_theme::layout.breadcrumb.nav.label') }}" role="navigation">
     <div class="container mx-auto px-4">
         <ol class="flex items-center space-x-2 text-sm">
             @if($showHome)
                 <li>
                     <a href="{{ $homeUrl }}" 
                        class="text-blue-600 hover:text-blue-800 transition-colors focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded px-1"
-                       aria-label="Torna alla home">
+                       aria-label="{{ __('pub_theme::layout.breadcrumb.home.label') }}">
                         <svg class="w-4 h-4 inline mr-1" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
                         </svg>
-                        Home
+                        {{ __('pub_theme::navigation.home') }}
                     </a>
                 </li>
                 @if(count($items) > 0 || $currentPage)

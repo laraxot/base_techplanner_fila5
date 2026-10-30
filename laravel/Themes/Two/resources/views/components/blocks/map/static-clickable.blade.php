@@ -1,5 +1,5 @@
 @props([
-    'title' => 'Dove Siamo',
+    'title' => __('pub_theme::blocks.sections.map.title'),
     'address' => '',
     'coordinates' => [],
 ])
@@ -39,11 +39,11 @@
                 rel="noopener noreferrer"
                 class="block bg-white rounded-xl shadow-lg overflow-hidden group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2"
             >
-                <span class="sr-only">Apri {{ $displayAddress }} su Google Maps</span>
+                <span class="sr-only">{{ __('pub_theme::blocks.map.open_sr.label', ['address' => $displayAddress]) }}</span>
                 @if($hasLocalImage)
                     <img
                         src="{{ $imageUrl }}"
-                        alt="Mappa: {{ $displayAddress }}"
+                        alt="{{ __('pub_theme::blocks.fields.map.alt', ['address' => $displayAddress]) }}"
                         class="w-full h-auto transition-opacity duration-200 group-hover:opacity-90"
                         loading="lazy"
                     />
@@ -51,7 +51,7 @@
                     <div class="w-full h-[450px] flex items-center justify-center bg-gray-50">
                         <div class="text-center px-6">
                             <p class="text-gray-900 font-semibold">{{ $displayAddress }}</p>
-                            <p class="text-gray-600 text-sm mt-2">Apri la posizione su Google Maps</p>
+                            <p class="text-gray-600 text-sm mt-2">{{ __('pub_theme::blocks.map.open.helper_text') }}</p>
                         </div>
                     </div>
                 @endif
@@ -69,7 +69,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
-                    Ottieni Indicazioni su Google Maps
+                    {{ __('pub_theme::blocks.map.directions.label') }}
                 </a>
             </div>
         </div>

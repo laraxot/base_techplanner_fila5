@@ -22,6 +22,7 @@ use Modules\Notify\Filament\Clusters\Test;
 use Modules\User\Models\DeviceUser;
 use Modules\Xot\Filament\Pages\XotBasePage;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
+use Modules\Xot\Filament\Traits\SuperAdminOnlyTrait;
 use Webmozart\Assert\Assert;
 
 use function Safe\json_encode;
@@ -31,6 +32,8 @@ use function Safe\json_encode;
  */
 class SendPushNotification extends XotBasePage
 {
+    use SuperAdminOnlyTrait;
+
     // use NavigationLabelTrait;
 
     /** @var array<string, mixed>|null */
@@ -113,6 +116,8 @@ class SendPushNotification extends XotBasePage
 
     public function sendNotification(): void
     {
+        abort_unless(static::canAccess(), 403);
+
         $data = $this->notificationForm->getState();
         $deviceToken = $data['deviceToken'] ?? '';
 

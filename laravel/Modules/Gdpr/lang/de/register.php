@@ -16,6 +16,14 @@ return [
         'cta_title' => 'Erstelle dein KOSTENLOSES Konto',
         'cta_subtitle' => 'Keine Kreditkarte erforderlich - 100% KOSTENLOS!',
         'terms_notice' => 'Mit der Registrierung akzeptierst du unsere AGB und Datenschutzerklärung',
+        'first_name' => 'Vorname',
+        'last_name' => 'Nachname',
+        'email' => 'E-Mail',
+        'password' => 'Passwort',
+        'hide_password' => 'Passwort verbergen',
+        'show_password' => 'Passwort anzeigen',
+        'password_confirmation' => 'Passwort bestätigen',
+        'submit' => 'Konto erstellen',
     ],
     'benefits' => [
         'community' => [
@@ -99,6 +107,9 @@ return [
         'marketing_label' => 'Ich möchte Neuigkeiten und Einladungen erhalten (optional)',
         'marketing_hint' => 'Die Zustimmung ist freiwillig und kann jederzeit ohne Folgen widerrufen werden.',
         'required_consent_missing' => 'Sie müssen alle erforderlichen Zustimmungen akzeptieren, um mit der Registrierung fortzufahren.',
+        'privacy_policy' => 'Ich habe die Datenschutzerklärung gelesen und akzeptiere sie',
+        'terms' => 'Ich akzeptiere die Nutzungsbedingungen',
+        'marketing' => 'Ich möchte Marketing-Mitteilungen erhalten (optional)',
     ],
     'actions' => [
         'read_privacy_policy' => 'Datenschutzerklärung lesen',
@@ -146,4 +157,5 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+    'already_have_account' => 'Sie haben bereits ein Konto?',
 ];

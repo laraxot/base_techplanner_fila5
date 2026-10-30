@@ -64,9 +64,9 @@
 
                         @if(isset($service['url']))
                             <a href="{{ $service['url'] }}"
-                               class="inline-flex items-center gap-1.5 text-{{ $color }}-600 font-semibold hover:text-{{ $color }}-700 group-hover:gap-2.5 transition-all duration-300 text-sm">
-                                {{ $service['link_label'] ?? 'Scopri di più' }}
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                               class="inline-flex items-center min-h-11 gap-1.5 text-{{ $color }}-600 font-semibold hover:text-{{ $color }}-700 group-hover:gap-2.5 transition-all duration-300 text-sm">
+                                {{ $service['link_label'] ?? __('pub_theme::ui.sections.learn_more.label') }}<span class="sr-only"> {{ __('pub_theme::ui.sections.learn_more_about.label', ['title' => $service['title'] ?? '']) }}</span>
+                                <svg aria-hidden="true" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                             </a>
                         @endif
                     </div>

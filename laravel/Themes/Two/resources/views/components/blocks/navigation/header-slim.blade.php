@@ -16,13 +16,13 @@
             <!-- Navigation Links -->
             <div class="hidden md:flex items-center space-x-8">
                 <a href="{{ route('home') }}" class="text-gray-700 hover:text-primary-600 transition-colors">
-                    {{ __('Home') }}
+                    {{ __('pub_theme::navigation.home') }}
                 </a>
-                <a href="{{ route('pages.services') }}" class="text-gray-700 hover:text-primary-600 transition-colors">
-                    {{ __('Servizi') }}
+                <a href="{{ route('container0', ['container0' => 'services']) }}" class="text-gray-700 hover:text-primary-600 transition-colors">
+                    {{ __('pub_theme::navigation.services') }}
                 </a>
-                <a href="{{ route('pages.blog') }}" class="text-gray-700 hover:text-primary-600 transition-colors">
-                    {{ __('Blog') }}
+                <a href="{{ route('blog') }}" class="text-gray-700 hover:text-primary-600 transition-colors">
+                    {{ __('pub_theme::navigation.blog') }}
                 </a>
             </div>
             
@@ -31,21 +31,21 @@
                 <div class="flex items-center space-x-4">
                     @guest
                         <a href="{{ route('login') }}" class="text-gray-700 hover:text-primary-600 transition-colors">
-                            {{ __('Login') }}
+                            {{ __('pub_theme::navigation.actions.login.label') }}
                         </a>
                         @if(Route::has('register'))
                             <a href="{{ route('register') }}" class="bg-primary-600 text-white px-4 py-2 rounded-lg hover:bg-primary-700 transition-colors">
-                                {{ __('Registrati') }}
+                                {{ __('pub_theme::navigation.actions.register.label') }}
                             </a>
                         @endif
                     @else
-                        <a href="{{ route('profile.index') }}" class="text-gray-700 hover:text-primary-600 transition-colors">
-                            {{ __('Profilo') }}
+                        <a href="{{ route('container0', ['container0' => 'profile']) }}" class="text-gray-700 hover:text-primary-600 transition-colors">
+                            {{ __('pub_theme::navigation.sections.profile.label') }}
                         </a>
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
                             <button type="submit" class="text-gray-700 hover:text-primary-600 transition-colors">
-                                {{ __('Logout') }}
+                                {{ __('pub_theme::navigation.actions.logout.label') }}
                             </button>
                         </form>
                     @endguest

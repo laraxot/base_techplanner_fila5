@@ -74,7 +74,7 @@
                     x-data="{ open: false }"
                     @click="open = !open"
                 >
-                    <span class="sr-only">Apri menu principale</span>
+                    <span class="sr-only">{{ __('pub_theme::layout.navbar.open_menu.label') }}</span>
                     <x-heroicon-o-bars-3 class="h-6 w-6" />
                 </button>
             </div>

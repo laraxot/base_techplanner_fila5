@@ -23,14 +23,14 @@ mount(function () {
     <x-filament::page>
         <x-slot name="header">
             <h2 class="text-2xl font-bold">
-                Dashboard
+                {{ __('pub_theme::dashboard.page.heading.title') }}
             </h2>
         </x-slot>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <x-laraxot::card>
                 <x-slot name="title">
-                    Utenti Totali
+                    {{ __('pub_theme::dashboard.stats.users_total.title') }}
                 </x-slot>
                 <div class="text-3xl font-bold">
                     {{ $stats['users'] }}
@@ -39,7 +39,7 @@ mount(function () {
 
             <x-laraxot::card>
                 <x-slot name="title">
-                    Post Totali
+                    {{ __('pub_theme::dashboard.stats.posts_total.title') }}
                 </x-slot>
                 <div class="text-3xl font-bold">
                     {{ $stats['posts'] }}
@@ -48,7 +48,7 @@ mount(function () {
 
             <x-laraxot::card>
                 <x-slot name="title">
-                    Utenti Attivi
+                    {{ __('pub_theme::dashboard.stats.users_active.title') }}
                 </x-slot>
                 <div class="text-3xl font-bold">
                     {{ $stats['active_users'] }}
@@ -59,7 +59,7 @@ mount(function () {
         <div class="mt-6">
             <x-laraxot::card>
                 <x-slot name="title">
-                    Ultimi Post
+                    {{ __('pub_theme::dashboard.latest.posts.title') }}
                 </x-slot>
 
                 <div class="space-y-4">

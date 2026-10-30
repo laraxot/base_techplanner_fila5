@@ -10,11 +10,13 @@ export default defineConfig({
             //buildDirectory: 'themes/Two',
             outDir: './public',
             buildDirectory: '.',
-            emptyOutDir: false,
             manifest: 'manifest.json',
             refresh: true,
         }),
         tailwindcss(),
     ],
+    build: {
+        emptyOutDir: false,
+    },
 })
 

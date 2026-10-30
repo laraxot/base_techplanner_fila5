@@ -1,9 +1,9 @@
 @props([
-    'title' => 'Richiedi una Consulenza',
-    'subtitle' => 'Compila il form e ti ricontatteremo entro 24 ore',
+    'title' => __('pub_theme::blocks.contact.form.title'),
+    'subtitle' => __('pub_theme::blocks.contact.form.subtitle'),
     'fields' => [],
-    'submit_label' => 'Invia Richiesta',
-    'privacy_text' => 'Inviando questo form accetti la nostra Privacy Policy.',
+    'submit_label' => __('pub_theme::blocks.contact.form.submit_label'),
+    'privacy_text' => __('pub_theme::blocks.contact.form.privacy_text'),
 ])
 
 @php
@@ -24,13 +24,29 @@
             <form method="POST" action="/it/contact/submit" class="space-y-6">
                 @csrf
 
+                {{-- Esiti del server: role=status/alert li annuncia agli screen reader (4.1.3, 3.3.1). --}}
+                @if(session('status'))
+                    <p role="status" class="rounded-lg bg-green-50 p-4 text-green-800">{{ session('status') }}</p>
+                @endif
+                @if($errors->any())
+                    <div role="alert" class="rounded-lg bg-red-50 p-4 text-red-800">
+                        <ul class="list-disc">
+                            @foreach($errors->all() as $errorMessage)
+                                <li>{{ $errorMessage }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+
+                <p class="text-sm text-gray-600">{{ __('pub_theme::blocks.contact.form.required_note') }}</p>
+
                 {{-- Name --}}
                 @if($nameField = collect($fields)->firstWhere('name', 'nome'))
                     <div>
                         <label for="nome" class="block text-sm font-medium text-gray-700 mb-2">
-                            {{ $nameField['label'] ?? 'Nome e Cognome' }}
+                            {{ $nameField['label'] ?? __('pub_theme::blocks.contact.form.fields.name.label') }}
                             @if($nameField['required'] ?? false)
-                                <span class="text-red-500">*</span>
+                                <span class="text-red-700" aria-hidden="true">*</span>
                             @endif
                         </label>
                         <input
@@ -38,12 +54,12 @@
                             name="nome"
                             id="nome"
                             autocomplete="name"
-                            {{ $nameField['required'] ?? false ? 'required aria-required="true"' : '' }}
+                            @required($nameField['required'] ?? false)
                             aria-describedby="nome-help"
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent transition-colors"
-                            placeholder="{{ $nameField['placeholder'] ?? 'Inserisci il tuo nome completo' }}"
+                            class="w-full px-4 py-3 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent transition-colors"
+                            placeholder="{{ $nameField['placeholder'] ?? __('pub_theme::blocks.contact.form.fields.name.placeholder') }}"
                         >
-                        <p id="nome-help" class="sr-only">Inserisci il tuo nome e cognome completo</p>
+                        <p id="nome-help" class="sr-only">{{ __('pub_theme::blocks.contact.form.fields.name.help') }}</p>
                     </div>
                 @endif
 
@@ -51,9 +67,9 @@
                 @if($emailField = collect($fields)->firstWhere('name', 'email'))
                     <div>
                         <label for="email" class="block text-sm font-medium text-gray-700 mb-2">
-                            {{ $emailField['label'] ?? 'Email' }}
+                            {{ $emailField['label'] ?? __('pub_theme::blocks.contact.form.fields.email.label') }}
                             @if($emailField['required'] ?? false)
-                                <span class="text-red-500">*</span>
+                                <span class="text-red-700" aria-hidden="true">*</span>
                             @endif
                         </label>
                         <input
@@ -61,12 +77,12 @@
                             name="email"
                             id="email"
                             autocomplete="email"
-                            {{ $emailField['required'] ?? false ? 'required aria-required="true"' : '' }}
+                            @required($emailField['required'] ?? false)
                             aria-describedby="email-help"
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent transition-colors"
+                            class="w-full px-4 py-3 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent transition-colors"
                             placeholder="{{ $emailField['placeholder'] ?? 'esempio@email.com' }}"
                         >
-                        <p id="email-help" class="sr-only">Inserisci il tuo indirizzo email</p>
+                        <p id="email-help" class="sr-only">{{ __('pub_theme::blocks.contact.form.fields.email.help') }}</p>
                     </div>
                 @endif
 
@@ -74,9 +90,9 @@
                 @if($phoneField = collect($fields)->firstWhere('name', 'telefono'))
                     <div>
                         <label for="telefono" class="block text-sm font-medium text-gray-700 mb-2">
-                            {{ $phoneField['label'] ?? 'Telefono' }}
+                            {{ $phoneField['label'] ?? __('pub_theme::blocks.contact.form.fields.phone.label') }}
                             @if($phoneField['required'] ?? false)
-                                <span class="text-red-500">*</span>
+                                <span class="text-red-700" aria-hidden="true">*</span>
                             @endif
                         </label>
                         <input
@@ -84,12 +100,12 @@
                             name="telefono"
                             id="telefono"
                             autocomplete="tel"
-                            {{ $phoneField['required'] ?? false ? 'required aria-required="true"' : '' }}
+                            @required($phoneField['required'] ?? false)
                             aria-describedby="telefono-help"
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent transition-colors"
+                            class="w-full px-4 py-3 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent transition-colors"
                             placeholder="{{ $phoneField['placeholder'] ?? '+39 347 58 96 127' }}"
                         >
-                        <p id="telefono-help" class="sr-only">Inserisci il tuo numero di telefono</p>
+                        <p id="telefono-help" class="sr-only">{{ __('pub_theme::blocks.contact.form.fields.phone.help') }}</p>
                     </div>
                 @endif
 
@@ -97,9 +113,9 @@
                 @if($studioField = collect($fields)->firstWhere('name', 'studio'))
                     <div>
                         <label for="studio" class="block text-sm font-medium text-gray-700 mb-2">
-                            {{ $studioField['label'] ?? 'Nome Studio' }}
+                            {{ $studioField['label'] ?? __('pub_theme::blocks.contact.form.fields.studio.label') }}
                             @if($studioField['required'] ?? false)
-                                <span class="text-red-500">*</span>
+                                <span class="text-red-700" aria-hidden="true">*</span>
                             @endif
                         </label>
                         <input
@@ -107,12 +123,12 @@
                             name="studio"
                             id="studio"
                             autocomplete="organization"
-                            {{ $studioField['required'] ?? false ? 'required aria-required="true"' : '' }}
+                            @required($studioField['required'] ?? false)
                             aria-describedby="studio-help"
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent transition-colors"
-                            placeholder="{{ $studioField['placeholder'] ?? 'Nome del tuo studio' }}"
+                            class="w-full px-4 py-3 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent transition-colors"
+                            placeholder="{{ $studioField['placeholder'] ?? __('pub_theme::blocks.contact.form.fields.studio.placeholder') }}"
                         >
-                        <p id="studio-help" class="sr-only">Inserisci il nome del tuo studio professionale</p>
+                        <p id="studio-help" class="sr-only">{{ __('pub_theme::blocks.contact.form.fields.studio.help') }}</p>
                     </div>
                 @endif
 
@@ -120,25 +136,25 @@
                 @if($tipoField = collect($fields)->firstWhere('name', 'tipo'))
                     <div>
                         <label for="tipo" class="block text-sm font-medium text-gray-700 mb-2">
-                            {{ $tipoField['label'] ?? 'Tipo di Studio' }}
+                            {{ $tipoField['label'] ?? __('pub_theme::blocks.contact.form.fields.type.label') }}
                             @if($tipoField['required'] ?? false)
-                                <span class="text-red-500">*</span>
+                                <span class="text-red-700" aria-hidden="true">*</span>
                             @endif
                         </label>
                         <select
                             name="tipo"
                             id="tipo"
-                            autocomplete="organization-title"
-                            {{ $tipoField['required'] ?? false ? 'required aria-required="true"' : '' }}
+                            autocomplete="off"
+                            @required($tipoField['required'] ?? false)
                             aria-describedby="tipo-help"
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent transition-colors bg-white"
+                            class="w-full px-4 py-3 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent transition-colors bg-white"
                         >
-                            <option value="">Seleziona tipo di studio</option>
+                            <option value="">{{ __('pub_theme::blocks.contact.form.fields.type.placeholder') }}</option>
                             @foreach($tipoField['options'] ?? [] as $option)
                                 <option value="{{ $option }}">{{ $option }}</option>
                             @endforeach
                         </select>
-                        <p id="tipo-help" class="sr-only">Seleziona il tipo di studio professionale</p>
+                        <p id="tipo-help" class="sr-only">{{ __('pub_theme::blocks.contact.form.fields.type.help') }}</p>
                     </div>
                 @endif
 
@@ -146,9 +162,9 @@
                 @if($messageField = collect($fields)->firstWhere('name', 'messaggio'))
                     <div>
                         <label for="messaggio" class="block text-sm font-medium text-gray-700 mb-2">
-                            {{ $messageField['label'] ?? 'Messaggio' }}
+                            {{ $messageField['label'] ?? __('pub_theme::blocks.contact.form.fields.message.label') }}
                             @if($messageField['required'] ?? false)
-                                <span class="text-red-500">*</span>
+                                <span class="text-red-700" aria-hidden="true">*</span>
                             @endif
                         </label>
                         <textarea
@@ -156,17 +172,18 @@
                             id="messaggio"
                             rows="5"
                             autocomplete="off"
-                            {{ $messageField['required'] ?? false ? 'required aria-required="true"' : '' }}
+                            @required($messageField['required'] ?? false)
                             aria-describedby="messaggio-help"
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent transition-colors resize-none"
-                            placeholder="{{ $messageField['placeholder'] ?? 'Descrivi la tua richiesta...' }}"
+                            class="w-full px-4 py-3 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent transition-colors resize-none"
+                            placeholder="{{ $messageField['placeholder'] ?? __('pub_theme::blocks.contact.form.fields.message.placeholder') }}"
                         ></textarea>
-                        <p id="messaggio-help" class="sr-only">Descrivi la tua richiesta di consulenza</p>
+                        <p id="messaggio-help" class="sr-only">{{ __('pub_theme::blocks.contact.form.fields.message.help') }}</p>
                     </div>
                 @endif
 
                 {{-- Privacy Checkbox --}}
-                <div class="flex items-start">
+                {{-- Mobile: checkbox 24px (era 16px) e label con py-3 => area di tocco >= 44px (tutta la riga e' cliccabile via for=). --}}
+                <div class="flex items-start gap-3">
                     <input
                         id="privacy"
                         name="privacy"
@@ -174,19 +191,19 @@
                         required
                         aria-required="true"
                         aria-describedby="privacy-help"
-                        class="w-4 h-4 text-[#1E5A96] border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#1E5A96] mt-1"
+                        class="h-6 w-6 shrink-0 mt-3 text-[#1E5A96] border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-[#1E5A96]"
                     >
-                    <label for="privacy" class="ml-3 text-sm text-gray-600">
+                    <label for="privacy" class="py-3 text-sm text-gray-600">
                         {{ $privacyText }}
                     </label>
-                    <p id="privacy-help" class="sr-only">Devi accettare la privacy policy per inviare il form</p>
+                    <p id="privacy-help" class="sr-only">{{ __('pub_theme::blocks.contact.form.privacy_help') }}</p>
                 </div>
 
                 {{-- Submit Button --}}
                 <div>
                     <button
                         type="submit"
-                        aria-label="{{ $submitLabel }} - {{ __('Invia il form di contatto') }}"
+                        aria-label="{{ $submitLabel }} - {{ __('pub_theme::blocks.contact.form.submit_aria') }}"
                         class="w-full px-8 py-4 bg-[#1E5A96] text-white font-semibold rounded-lg hover:bg-[#164575] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1E5A96] transition-all duration-200 transform hover:scale-[1.02]"
                     >
                         <span class="flex items-center justify-center">

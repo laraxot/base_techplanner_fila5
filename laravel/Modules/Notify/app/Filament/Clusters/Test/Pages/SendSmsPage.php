@@ -22,6 +22,7 @@ use Modules\Notify\Models\MailTemplate;
 use Modules\Notify\Notifications\RecordNotification;
 use Modules\Notify\Notifications\SmsNotification;
 use Modules\Xot\Filament\Pages\XotBasePage;
+use Modules\Xot\Filament\Traits\SuperAdminOnlyTrait;
 use Webmozart\Assert\Assert;
 
 /**
@@ -29,6 +30,8 @@ use Webmozart\Assert\Assert;
  */
 class SendSmsPage extends XotBasePage
 {
+    use SuperAdminOnlyTrait;
+
     /** @var array<string, mixed>|null */
     public ?array $smsData = [];
 
@@ -95,6 +98,8 @@ class SendSmsPage extends XotBasePage
 
     public function sendSMS(): void
     {
+        abort_unless(static::canAccess(), 403);
+
         try {
             $data = $this->smsForm->getState();
             $user = $this->getUser();

@@ -2,8 +2,8 @@
 @props([
     'title' => '',
     'description' => '',
-    'cta_primary' => ['label' => 'Inizia', 'url' => '#'],
-    'cta_secondary' => ['label' => 'Scopri', 'url' => '#'],
+    'cta_primary' => ['label' => __('pub_theme::blocks.cta.banner.primary'), 'url' => '#'],
+    'cta_secondary' => ['label' => __('pub_theme::blocks.cta.banner.secondary'), 'url' => '#'],
     'background_gradient' => 'from-primary to-secondary',
     'text_color' => 'text-primary-content'
 ])
@@ -29,14 +29,14 @@
         @endif
 
         <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            @if(isset($cta_primary['label']))
+            @if(isset($cta_primary['label']) && ! in_array($cta_primary['url'] ?? '#', ['', '#'], true))
                 <a href="{{ $cta_primary['url'] }}" 
                    class="btn btn-lg btn-neutral px-10 shadow-2xl hover:scale-105 transition-all duration-300">
                     {{ $cta_primary['label'] }}
                 </a>
             @endif
 
-            @if(isset($cta_secondary['label']))
+            @if(isset($cta_secondary['label']) && ! in_array($cta_secondary['url'] ?? '#', ['', '#'], true))
                 <a href="{{ $cta_secondary['url'] }}" 
                    class="btn btn-lg btn-outline border-white text-white hover:bg-white hover:text-primary px-10 transition-all duration-300">
                     {{ $cta_secondary['label'] }}

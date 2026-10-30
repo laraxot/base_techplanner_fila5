@@ -4,7 +4,7 @@
         "it": "Radioprotezione - Sottana Service",
         "en": "Radiation Protection - Sottana Service"
     },
-    "slug": "services/radioprotezione",
+    "slug": "radioprotezione",
     "content_blocks": {
         "it": [
             {
@@ -65,7 +65,7 @@
                     "title": "Hai bisogno di una consulenza sulla radioprotezione?",
                     "subtitle": "Contattaci oggi stesso per un preventivo gratuito o per pianificare il tuo prossimo controllo.",
                     "cta_label": "Contattaci Ora",
-                    "cta_url": "/it/contact"
+                    "cta_url": "/it/contatti"
                 }
             }
         ],

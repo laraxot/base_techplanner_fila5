@@ -35,6 +35,7 @@ Indice operativo canonico del modulo: [00-INDEX.md](./00-index.md) (ruolo delle 
 - [_integration/cookie-consent.md](_integration/cookie-consent.md) — integrazione cookie consent con altri moduli
 - [concepts/xotbase-never-extend-filament.md](concepts/xotbase-never-extend-filament.md) — regola XotBase applicata al modulo
 - [concepts/phpstan-probe-model-removal.md](concepts/phpstan-probe-model-removal.md) — nota tecnica su rimozione probe model
+- [stories/blade-i18n-no-hardcoded-text.story.md](stories/blade-i18n-no-hardcoded-text.story.md) — niente testi fissi nelle Blade: chiavi `gdpr::` in it, en, de, es
 
 ## Pacchetti integrati (packages/)
 

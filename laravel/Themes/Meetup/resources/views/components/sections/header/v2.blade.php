@@ -12,18 +12,18 @@
 
             <!-- Desktop Navigation -->
             <div class="hidden md:flex items-center space-x-6">
-                <a href="index.html" class="text-gray-300 hover:text-white transition-colors" data-nav-link>Home</a>
+                <a href="index.html" class="text-gray-300 hover:text-white transition-colors" data-nav-link>{{ __('pub_theme::navigation.home') }}</a>
                 <a href="events.html" class="text-gray-300 hover:text-white transition-colors flex items-center" data-nav-link>
                     <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                     </svg>
-                    Events
+                    {{ __('pub_theme::navigation.sections.events.label') }}
                 </a>
                 <a href="chat.html" class="text-gray-300 hover:text-white transition-colors flex items-center" data-nav-link>
                     <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
                     </svg>
-                    Community Chat
+                    {{ __('pub_theme::navigation.sections.community_chat.label') }}
                 </a>
                 <!-- Language Dropdown -->
                 <div class="relative" id="language-dropdown">
@@ -75,8 +75,8 @@
 
             <!-- Auth Buttons -->
             <div class="hidden md:flex items-center space-x-4">
-                <a href="login.html" class="text-gray-300 hover:text-white transition-colors">Login</a>
-                <a href="register.html" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-medium transition-colors">Sign Up</a>
+                <a href="login.html" class="text-gray-300 hover:text-white transition-colors">{{ __('pub_theme::navigation.auth.login.label') }}</a>
+                <a href="register.html" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-medium transition-colors">{{ __('pub_theme::navigation.auth.register.label') }}</a>
             </div>
 
             <!-- Mobile menu button -->
@@ -90,11 +90,11 @@
         <!-- Mobile menu -->
         <div id="mobile-menu" class="hidden md:hidden pb-4">
             <div class="flex flex-col space-y-3">
-                <a href="index.html" class="text-gray-300 hover:text-white" data-nav-link>Home</a>
-                <a href="events.html" class="text-gray-300 hover:text-white" data-nav-link>Events</a>
-                <a href="chat.html" class="text-gray-300 hover:text-white" data-nav-link>Community Chat</a>
-                <a href="login.html" class="text-gray-300 hover:text-white">Login</a>
-                <a href="register.html" class="bg-red-600 text-white px-4 py-2 rounded-lg text-center">Sign Up</a>
+                <a href="index.html" class="text-gray-300 hover:text-white" data-nav-link>{{ __('pub_theme::navigation.home') }}</a>
+                <a href="events.html" class="text-gray-300 hover:text-white" data-nav-link>{{ __('pub_theme::navigation.sections.events.label') }}</a>
+                <a href="chat.html" class="text-gray-300 hover:text-white" data-nav-link>{{ __('pub_theme::navigation.sections.community_chat.label') }}</a>
+                <a href="login.html" class="text-gray-300 hover:text-white">{{ __('pub_theme::navigation.auth.login.label') }}</a>
+                <a href="register.html" class="bg-red-600 text-white px-4 py-2 rounded-lg text-center">{{ __('pub_theme::navigation.auth.register.label') }}</a>
             </div>
         </div>
     </div>

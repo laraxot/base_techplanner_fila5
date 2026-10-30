@@ -20,6 +20,14 @@ return [
         'cta_title' => 'Create Your FREE Account',
         'cta_subtitle' => 'No credit card required - 100% FREE forever!',
         'terms_notice' => 'By registering you agree to our Terms and Privacy Policy',
+        'first_name' => 'First name',
+        'last_name' => 'Last name',
+        'email' => 'Email',
+        'password' => 'Password',
+        'hide_password' => 'Hide password',
+        'show_password' => 'Show password',
+        'password_confirmation' => 'Confirm password',
+        'submit' => 'Create account',
     ],
     'benefits' => [
         'community' => [
@@ -102,6 +110,9 @@ return [
         'marketing_label' => 'Send me updates and invitations (optional)',
         'marketing_hint' => 'The consent is optional and you can withdraw it at any time without consequences.',
         'required_consent_missing' => 'You must accept all required consents to proceed.',
+        'privacy_policy' => 'I have read and accept the privacy policy',
+        'terms' => 'I accept the terms and conditions of use',
+        'marketing' => 'I would like to receive marketing communications (optional)',
     ],
     'actions' => [
         'read_privacy_policy' => 'Read privacy policy',
@@ -149,4 +160,8 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+    'already_have_account' => 'Already have an account?',
+    'links' => [
+        'and' => 'and',
+    ],
 ];

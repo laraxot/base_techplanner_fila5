@@ -1,5 +1,5 @@
 @props([
-    'title' => 'Articoli in Evidenza',
+    'title' => __('pub_theme::blocks.blog.featured_articles.label'),
     'subtitle' => '',
     'articles' => [],
 ])
@@ -85,7 +85,7 @@
                             </div>
 
                             <a href="{{ $article['url'] ?? '#' }}" class="inline-flex items-center text-[#1E5A96] hover:text-[#164575] font-semibold transition-colors">
-                                Leggi Articolo
+                                {{ __('pub_theme::blocks.blog.read_article.label') }}
                                 <svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                     <path d="M5 12h14"></path>
                                     <path d="m12 5 7 7-7 7"></path>

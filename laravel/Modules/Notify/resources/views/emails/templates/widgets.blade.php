@@ -164,15 +164,15 @@ declare(strict_types=1);
 												<table cellpadding="0" cellspacing="0" border="0">
 													<tr>
 														@if (isset($flickr))
-															<td><a href="https://www.flickr.com/photos/{{ $flickr }}"><img border="0" src="{{ Request::getSchemeAndHttpHost() }}/img/flickr.gif" width="42" height="32" alt="See our photos on Flickr"></a></td>
+															<td><a href="https://www.flickr.com/photos/{{ $flickr }}"><img border="0" src="{{ Request::getSchemeAndHttpHost() }}/img/flickr.gif" width="42" height="32" alt="{{ __('notify::email_templates.social.flickr.label') }}"></a></td>
 														@endif
 
 														@if (isset($twitter))
-															<td><a href="https://twitter.com/{{ $twitter }}"><img border="0" src="{{ Request::getSchemeAndHttpHost() }}/img/twitter.gif" width="42" height="32" alt="Follow us on Twitter"></a></td>
+															<td><a href="https://twitter.com/{{ $twitter }}"><img border="0" src="{{ Request::getSchemeAndHttpHost() }}/img/twitter.gif" width="42" height="32" alt="{{ __('notify::email_templates.social.twitter.label') }}"></a></td>
 														@endif
 
 														@if (isset($facebook))
-															<td><a href="https://www.facebook.com/{{ $facebook }}"><img border="0" src="{{ Request::getSchemeAndHttpHost() }}/img/facebook.gif" width="32" height="32" alt="Visit us on Facebook"></a></td>
+															<td><a href="https://www.facebook.com/{{ $facebook }}"><img border="0" src="{{ Request::getSchemeAndHttpHost() }}/img/facebook.gif" width="32" height="32" alt="{{ __('notify::email_templates.social.facebook.label') }}"></a></td>
 														@endif
 
 													</tr>

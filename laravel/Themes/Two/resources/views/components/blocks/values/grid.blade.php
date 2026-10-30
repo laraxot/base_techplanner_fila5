@@ -3,8 +3,8 @@
 <section class="py-20 bg-white">
     <div class="container mx-auto px-4">
         <div class="text-center max-w-3xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold mb-4 text-gray-900">I Nostri Valori</h2>
-            <p class="text-lg text-gray-600">I principi cardine che guidano ogni nostra azione e consulenza.</p>
+            <h2 class="text-3xl font-bold mb-4 text-gray-900">{{ __('pub_theme::blocks.sections.values.title') }}</h2>
+            <p class="text-lg text-gray-600">{{ __('pub_theme::blocks.sections.values.description') }}</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

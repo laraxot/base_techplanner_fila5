@@ -5,19 +5,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ __("We're working hard to launch our amazing website. Stay tuned for something special!") }}">
+    <meta name="description" content="{{ __('pub_theme::coming-soon.description') }}">
     
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="{{ __('Coming Soon') }} - {{ config('app.name') }}">
-    <meta property="og:description" content="{{ __("We're working hard to launch our amazing website. Stay tuned for something special!") }}">
+    <meta property="og:title" content="{{ __('pub_theme::coming-soon.title') }} - {{ config('app.name') }}">
+    <meta property="og:description" content="{{ __('pub_theme::coming-soon.description') }}">
     <meta property="og:type" content="website">
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ __('Coming Soon') }} - {{ config('app.name') }}">
-    <meta name="twitter:description" content="{{ __("We're working hard to launch our amazing website. Stay tuned for something special!") }}">
+    <meta name="twitter:title" content="{{ __('pub_theme::coming-soon.title') }} - {{ config('app.name') }}">
+    <meta name="twitter:description" content="{{ __('pub_theme::coming-soon.description') }}">
     
-    <title>{{ __('Coming Soon') }} - {{ config('app.name') }}</title>
+    <title>{{ __('pub_theme::coming-soon.title') }} - {{ config('app.name') }}</title>
     
     <!-- Styles -->
     @vite(['themes/Two/resources/css/app.css'])
@@ -46,12 +46,12 @@
             
             <!-- Main Heading -->
             <h1 class="text-4xl md:text-6xl font-bold text-primary mb-6 leading-tight">
-                {{ __('Coming Soon') }}
+                {{ __('pub_theme::coming-soon.title') }}
             </h1>
             
             <!-- Description -->
             <p class="text-lg md:text-xl text-secondary leading-relaxed mb-12 max-w-lg mx-auto">
-                {{ __("We're working hard to launch our amazing website. Stay tuned for something special!") }}
+                {{ __('pub_theme::coming-soon.description') }}
             </p>
             
             <!-- Countdown Timer -->
@@ -61,17 +61,17 @@
             
             <!-- Additional Information -->
             <div class="mb-8 text-tertiary text-sm">
-                <p>{{ __('Expected launch: ') }} {{ now()->addDays(30)->format('F j, Y') }}</p>
+                <p>{{ __('pub_theme::coming-soon.expected_launch') }} {{ now()->addDays(30)->format('F j, Y') }}</p>
             </div>
         </x-coming-soon.container>
         
         <!-- Footer Information -->
         <footer class="text-center mt-12 text-tertiary text-sm">
-            <p>&copy; {{ date('Y') }} {{ config('app.name') }}. {{ __('All rights reserved.') }}</p>
+            <p>&copy; {{ date('Y') }} {{ config('app.name') }}. {{ __('pub_theme::coming-soon.footer.all_rights_reserved') }}</p>
             <div class="mt-4 flex justify-center gap-6">
-                <a href="#" class="hover:text-primary-light transition-colors">{{ __('Privacy') }}</a>
-                <a href="#" class="hover:text-primary-light transition-colors">{{ __('Terms') }}</a>
-                <a href="mailto:{{ config('app.email') }}" class="hover:text-primary-light transition-colors">{{ __('Contact') }}</a>
+                <a href="#" class="hover:text-primary-light transition-colors">{{ __('pub_theme::coming-soon.footer.privacy') }}</a>
+                <a href="#" class="hover:text-primary-light transition-colors">{{ __('pub_theme::coming-soon.footer.terms') }}</a>
+                <a href="mailto:{{ config('app.email') }}" class="hover:text-primary-light transition-colors">{{ __('pub_theme::coming-soon.footer.contact') }}</a>
             </div>
         </footer>
     </main>

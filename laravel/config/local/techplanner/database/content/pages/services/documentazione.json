@@ -4,7 +4,7 @@
         "it": "Documentazione - Sottana Service",
         "en": "Documentation - Sottana Service"
     },
-    "slug": "services/documentazione",
+    "slug": "documentazione",
     "content_blocks": {
         "it": [
             {
@@ -36,7 +36,7 @@
                     "title": "Semplifica la tua gestione documentale",
                     "subtitle": "Scegli un partner che si occupa della burocrazia per te.",
                     "cta_label": "Richiedi Consulenza",
-                    "cta_url": "/it/contact"
+                    "cta_url": "/it/contatti"
                 }
             }
         ]

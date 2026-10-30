@@ -1,0 +1,72 @@
+<?php
+
+declare(strict_types=1);
+
+return [
+    'article' => [
+        'read_more' => 'Weiterlesen',
+        'comments_count' => ':count Kommentare',
+        'share_on' => 'Auf :network teilen',
+    ],
+    'filters' => [
+        'all' => 'Alle',
+        'latest' => 'Neueste',
+        'popular' => 'Beliebteste',
+        'featured' => 'Empfohlen',
+    ],
+    'categories' => [
+        'all' => 'Alle Artikel',
+        'all_categories' => 'Alle Kategorien',
+        'radioprotezione' => 'Strahlenschutz',
+        'normativa' => 'Vorschriften',
+        'elettromedicali' => 'Elektromedizinische Geräte',
+        'veterinaria' => 'Tiermedizin',
+        'guide_pratiche' => 'Praxisleitfäden',
+        'novita' => 'Neuigkeiten',
+    ],
+    'category_filter' => [
+        'articles_found' => ':count Artikel in dieser Kategorie gefunden.',
+    ],
+    'tags' => [
+        'articles_count' => ':count Artikel',
+    ],
+    'pagination' => [
+        'aria_label' => 'Artikelnavigation',
+        'pages_aria_label' => 'Seitennavigation',
+        'first_page' => 'Erste Seite',
+        'previous_page' => 'Vorherige Seite',
+        'next_page' => 'Nächste Seite',
+        'last_page' => 'Letzte Seite',
+        'showing_results' => 'Zeige :from bis :to von :total Ergebnissen',
+        'articles_range' => 'Artikel :from bis :to von :total',
+        'previous' => 'Zurück',
+        'next' => 'Weiter',
+        'go_to_page' => 'Gehe zu Seite:',
+        'go' => 'Los',
+        'of_pages' => 'von :total',
+    ],
+    'search' => [
+        'placeholder' => 'Artikel suchen ...',
+        'no_results' => 'Keine Artikel gefunden für „:query“',
+        'no_results_hint' => 'Versuche andere Suchbegriffe',
+        'view_all' => 'Alle Ergebnisse für „:query“ anzeigen',
+        'advanced' => 'Erweiterte Suche',
+        'results_count' => ':count Ergebnisse',
+        'searching' => 'Suche läuft ...',
+        'filters_title' => 'Filter der erweiterten Suche',
+        'category' => 'Kategorie',
+        'period' => 'Zeitraum',
+        'any_period' => 'Beliebiger Zeitraum',
+        'today' => 'Heute',
+        'last_week' => 'Letzte Woche',
+        'last_month' => 'Letzter Monat',
+        'last_year' => 'Letztes Jahr',
+        'sort_by' => 'Sortieren nach',
+        'relevance' => 'Relevanz',
+        'date_desc' => 'Datum (neueste zuerst)',
+        'date_asc' => 'Datum (älteste zuerst)',
+        'title_asc' => 'Titel (A–Z)',
+        'reset_filters' => 'Filter zurücksetzen',
+        'apply_filters' => 'Filter anwenden',
+    ],
+];

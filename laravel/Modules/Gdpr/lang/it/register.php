@@ -20,6 +20,14 @@ return [
         'cta_title' => 'Crea il tuo account gratuito',
         'cta_subtitle' => 'Nessuna carta di credito richiesta',
         'terms_notice' => 'Registrandoti accetti i nostri Termini e Privacy Policy',
+        'first_name' => 'Nome',
+        'last_name' => 'Cognome',
+        'email' => 'Email',
+        'password' => 'Password',
+        'hide_password' => 'Nascondi password',
+        'show_password' => 'Mostra password',
+        'password_confirmation' => 'Conferma password',
+        'submit' => 'Crea account',
     ],
     'benefits' => [
         'community' => [
@@ -100,6 +108,9 @@ return [
         'terms_required' => 'Devi accettare i termini e condizioni',
         'marketing_label' => 'Voglio ricevere aggiornamenti e inviti (facoltativo)',
         'marketing_hint' => 'Puoi revocarlo in qualsiasi momento',
+        'privacy_policy' => 'Ho letto e accetto l\'informativa sulla privacy',
+        'terms' => 'Accetto i termini e le condizioni d\'uso',
+        'marketing' => 'Desidero ricevere comunicazioni di marketing (facoltativo)',
     ],
     'actions' => [
         'read_privacy_policy' => 'Leggi privacy policy',
@@ -124,5 +135,9 @@ return [
         'label' => 'Register',
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
+    ],
+    'already_have_account' => 'Hai già un account?',
+    'links' => [
+        'and' => 'e',
     ],
 ];

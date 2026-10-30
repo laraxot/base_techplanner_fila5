@@ -1,5 +1,5 @@
 @props([
-    'title' => 'Orari di Lavoro',
+    'title' => __('pub_theme::block_defaults.hours.title.title'),
     'schedule' => [],
 ])
 

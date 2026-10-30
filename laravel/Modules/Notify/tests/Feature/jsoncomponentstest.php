@@ -2,13 +2,10 @@
 
 declare(strict_types=1);
 
-use Tests\TestCase;
 use Illuminate\Support\Facades\File;
 use PHPUnit\Framework\Assert;
 
 use function Safe\json_decode;
-
-uses(TestCase::class);
 
 test('components json is valid and contains expected components', function (): void {
     // Percorso del file

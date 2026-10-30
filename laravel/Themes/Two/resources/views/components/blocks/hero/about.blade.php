@@ -1,5 +1,5 @@
 @props([
-    'title' => 'Chi Siamo',
+    'title' => __('pub_theme::header.navigation.about'),
     'subtitle' => '',
     'stats' => [],
     'primary_cta' => null,
@@ -25,10 +25,10 @@
     </div>
     
     {{-- Content --}}
-    <div class="container mx-auto px-4 relative z-10 py-20">
+    <div class="container mx-auto px-4 relative z-10 py-12 sm:py-20">
         <div class="max-w-4xl">
             {{-- Title --}}
-            <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 class="text-3xl min-[480px]:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight break-words">
                 {{ $title }}
             </h1>
             
@@ -44,16 +44,16 @@
                 <div class="flex flex-col sm:flex-row gap-4 mb-12">
                     @if($primaryCta)
                         <a href="{{ $primaryCta['url'] ?? '#' }}" 
-                           class="inline-flex items-center justify-center bg-brand-green hover:bg-brand-green/90 text-white text-lg px-8 py-4 rounded-lg font-semibold shadow-xl transition-all group">
+                           class="inline-flex items-center justify-center bg-brand-green hover:bg-brand-green-dark text-white text-lg px-8 py-4 rounded-lg font-semibold shadow-xl transition-all group">
                             <x-filament::icon icon="heroicon-o-users" class="w-5 h-5 mr-2" />
-                            {{ $primaryCta['label'] ?? 'Scopri di più' }}
+                            {{ $primaryCta['label'] ?? __('pub_theme::ui.sections.learn_more.label') }}
                         </a>
                     @endif
                     @if($secondaryCta)
                         <a href="{{ $secondaryCta['url'] ?? '#' }}" 
                            class="inline-flex items-center justify-center bg-white/10 text-white hover:bg-white hover:text-brand-blue border-2 border-white text-lg px-8 py-4 rounded-lg backdrop-blur-sm transition-all">
                             <x-filament::icon icon="heroicon-o-phone" class="w-5 h-5 mr-2" />
-                            {{ $secondaryCta['label'] ?? 'Contattaci' }}
+                            {{ $secondaryCta['label'] ?? __('pub_theme::ui.sections.contact_us.label') }}
                         </a>
                     @endif
                 </div>

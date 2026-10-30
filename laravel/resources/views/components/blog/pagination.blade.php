@@ -11,17 +11,15 @@
 @endphp
 
 @if($totalPages > 1)
-    <nav class="flex items-center justify-between" aria-label="Navigazione articoli">
+    <nav class="flex items-center justify-between" aria-label="{{ __('blog.pagination.aria_label') }}">
         {{-- Results Count --}}
         <div class="flex-1 flex justify-between sm:hidden">
             <p class="text-sm text-gray-700">
-                Mostrando 
-                <span class="font-medium">{{ min(($currentPage - 1) * $itemsPerPage + 1, $totalItems) }}</span> 
-                a 
-                <span class="font-medium">{{ min($currentPage * $itemsPerPage, $totalItems) }}</span> 
-                di 
-                <span class="font-medium">{{ $totalItems }}</span> 
-                risultati
+                {!! __('blog.pagination.showing_results', [
+                    'from' => '<span class="font-medium">'.e(min(($currentPage - 1) * $itemsPerPage + 1, $totalItems)).'</span>',
+                    'to' => '<span class="font-medium">'.e(min($currentPage * $itemsPerPage, $totalItems)).'</span>',
+                    'total' => '<span class="font-medium">'.e($totalItems).'</span>',
+                ]) !!}
             </p>
         </div>
         
@@ -29,23 +27,22 @@
         <div class="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
             <div>
                 <p class="text-sm text-gray-700">
-                    Articoli da 
-                    <span class="font-medium">{{ min(($currentPage - 1) * $itemsPerPage + 1, $totalItems) }}</span> 
-                    a 
-                    <span class="font-medium">{{ min($currentPage * $itemsPerPage, $totalItems) }}</span> 
-                    di 
-                    <span class="font-medium">{{ $totalItems }}</span>
+                    {!! __('blog.pagination.articles_range', [
+                        'from' => '<span class="font-medium">'.e(min(($currentPage - 1) * $itemsPerPage + 1, $totalItems)).'</span>',
+                        'to' => '<span class="font-medium">'.e(min($currentPage * $itemsPerPage, $totalItems)).'</span>',
+                        'total' => '<span class="font-medium">'.e($totalItems).'</span>',
+                    ]) !!}
                 </p>
             </div>
             
             <div>
-                <nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
+                <nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px" aria-label="{{ __('blog.pagination.pages_aria_label') }}">
                     {{-- First Page --}}
                     @if($showFirstLast && $currentPage > 1)
                         <a 
                             href="{{ $baseUrl }}?{{ $pageParam }}=1"
                             class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 transition-colors"
-                            aria-label="Prima pagina"
+                            aria-label="{{ __('blog.pagination.first_page') }}"
                         >
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19l-7-7 7-7m8 14l-7-7 7-7"/>
@@ -58,7 +55,7 @@
                         <a 
                             href="{{ $baseUrl }}?{{ $pageParam }}={{ $currentPage - 1 }}"
                             class="relative inline-flex items-center px-2 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 transition-colors"
-                            aria-label="Pagina precedente"
+                            aria-label="{{ __('blog.pagination.previous_page') }}"
                         >
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
@@ -129,7 +126,7 @@
                         <a 
                             href="{{ $baseUrl }}?{{ $pageParam }}={{ $currentPage + 1 }}"
                             class="relative inline-flex items-center px-2 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 transition-colors"
-                            aria-label="Pagina successiva"
+                            aria-label="{{ __('blog.pagination.next_page') }}"
                         >
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
@@ -142,7 +139,7 @@
                         <a 
                             href="{{ $baseUrl }}?{{ $pageParam }}={{ $totalPages }}"
                             class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 transition-colors"
-                            aria-label="Ultima pagina"
+                            aria-label="{{ __('blog.pagination.last_page') }}"
                         >
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"/>
@@ -161,11 +158,11 @@
                     href="{{ $baseUrl }}?{{ $pageParam }}={{ $currentPage - 1 }}"
                     class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 transition-colors"
                 >
-                    Precedente
+                    {{ __('blog.pagination.previous') }}
                 </a>
             @else
                 <span class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-300 bg-gray-100 cursor-not-allowed">
-                    Precedente
+                    {{ __('blog.pagination.previous') }}
                 </span>
             @endif
             
@@ -175,11 +172,11 @@
                     href="{{ $baseUrl }}?{{ $pageParam }}={{ $currentPage + 1 }}"
                     class="relative ml-3 inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 transition-colors"
                 >
-                    Successivo
+                    {{ __('blog.pagination.next') }}
                 </a>
             @else
                 <span class="relative ml-3 inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-300 bg-gray-100 cursor-not-allowed">
-                    Successivo
+                    {{ __('blog.pagination.next') }}
                 </span>
             @endif
         </div>
@@ -188,7 +185,7 @@
     {{-- Jump to Page --}}
     <div class="mt-6 flex items-center justify-center">
         <div class="flex items-center space-x-2 text-sm text-gray-600">
-            <span>Vai alla pagina:</span>
+            <span>{{ __('blog.pagination.go_to_page') }}</span>
             <form action="{{ $baseUrl }}" method="GET" class="flex items-center space-x-1">
                 <input 
                     type="number" 
@@ -199,10 +196,10 @@
                     class="w-16 px-2 py-1 border border-gray-300 rounded text-center focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 >
                 <button type="submit" class="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">
-                    Vai
+                    {{ __('blog.pagination.go') }}
                 </button>
             </form>
-            <span>di {{ $totalPages }}</span>
+            <span>{{ __('blog.pagination.of_pages', ['total' => $totalPages]) }}</span>
         </div>
     </div>
 @endif

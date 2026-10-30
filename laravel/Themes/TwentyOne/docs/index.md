@@ -38,6 +38,7 @@ Indici correlati gia' esistenti (non sostituiti da questo file):
 - [quality-tools.md](./quality-tools.md) — strumenti di qualita' usati nel tema
 - [actions.md](./actions.md) — azioni (Spatie Queueable Actions) del tema
 - [CODE_QUALITY_ANALYSIS.md](./code-quality-analysis.md) — analisi qualita' del codice (riferimento corrente; altre analisi datate in Storico)
+- [stories/blade-i18n-no-hardcoded-text.story.md](./stories/blade-i18n-no-hardcoded-text.story.md) — niente testi fissi nelle Blade: chiavi `pub_theme::` in it, en, de, es (prima meta' del tema)
 
 ## Regole strutturali e naming
 

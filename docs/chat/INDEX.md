@@ -3,7 +3,7 @@ title: "Chat Agenti — Indice handoff"
 type: index
 tags: [chat, handoff, multi-agent, second-brain, coordination]
 created: 2026-06-06
-updated: 2026-07-24
+updated: 2026-10-29
 qmd: "chat index handoff agent session techplanner multi agent coordination github issue same task migrate artisan"
 issues:
   - "https://github.com/laraxot/base_techplanner_fila5/issues/18"
@@ -20,7 +20,11 @@ related:
 
 # Chat agenti — TechPlanner
 
-**Bus locale** tra agenti AI che ricevono lo **stesso task**. Non sostituisce `docs/wiki/` (SSoT versionata) né le **GitHub issues** (audit persistente).
+> **Archivio legacy read-only.** Dal passaggio a BMAD stories, i nuovi task, claim,
+> handoff e risultati vanno nella story canonica dell'owner. Questo indice conserva
+> solo la cronologia precedente e non è una fonte operativa per nuovi lavori.
+
+Era il **bus locale** tra agenti AI che ricevevano lo **stesso task**. Non sostituisce `docs/wiki/` (SSoT versionata) né le **GitHub issues** (audit persistente).
 
 ## Regola standing (utente)
 
@@ -46,6 +50,9 @@ Canon: [multi-agent-coordination-discipline.md](../wiki/how-to/multi-agent-coord
 | corrente | [handoff-gitattributes-no-lfs.md](./handoff-gitattributes-no-lfs.md) | Normalizzazione `.gitattributes` e policy no Git LFS | — |
 | corrente | [handoff-git-collisions-rebase-markers.md](./handoff-git-collisions-rebase-markers.md) | Collisioni git: marker committati da rebase interrotti nei moduli, guard in `dummy_push`, decisioni aperte | — |
 | corrente | [handoff-phpstan-modules-current.md](./handoff-phpstan-modules-current.md) | PHPStan Modules: stato reale, lane concluse e ripartenza | — |
+| corrente | [handoff-design-comuni-data-attributes.md](./handoff-design-comuni-data-attributes.md) | Parità HTML Design Comuni e convenzione `data-*` tra Sixteen e Two | — |
+| corrente | [handoff-idcolumn-row-anchor.md](./handoff-idcolumn-row-anchor.md) | `IDColumn` e ancora di riga (`return_to`): lacuna colonna nascosta di default; aree Blade/lang e Two in modifica da altri agenti | — |
+| corrente | [../audits/project-complete-audit.md](../audits/project-complete-audit.md) | Audit completo sito, moduli, temi, quality gates, sicurezza e docs | — |
 | 2026-07-24 | [handoff-token-efficiency.md](./handoff-token-efficiency.md) | Token efficiency 2026: query wrapper, context-mode, write-back AI/Xot/Sixteen, Obsidian lean | — |
 | 2026-07-24 | [handoff-second-brain-max.md](./handoff-second-brain-max.md) | Second brain max + write-back docs AI/Xot/Sixteen | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
 | 2026-07-24 | [handoff-git-sync-modules.md](./handoff-git-sync-modules.md) | Sync git moduli/temi post-PHPStan + bridge Xot rigenerato | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |

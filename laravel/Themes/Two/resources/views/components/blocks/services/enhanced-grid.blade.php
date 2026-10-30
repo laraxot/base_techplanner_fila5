@@ -47,14 +47,14 @@
             @if($showSearch)
             <div class="lg:col-span-2">
                 <div class="relative">
-                    <label for="search-{{ $gridId }}" class="sr-only">Cerca servizi</label>
+                    <label for="search-{{ $gridId }}" class="sr-only">{{ __('pub_theme::services.grid_search.field.label') }}</label>
                     <input 
                         type="text" 
                         id="search-{{ $gridId }}"
                         name="search"
-                        placeholder="Cerca servizi..."
+                        placeholder="{{ __('pub_theme::services.grid_search.field.placeholder') }}"
                         autocomplete="off"
-                        aria-label="Cerca servizi per nome o descrizione"
+                        aria-label="{{ __('pub_theme::services.grid_search.field_description.label') }}"
                         class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent"
                     />
                     <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -68,13 +68,13 @@
             <div class="flex gap-2">
                 {{-- Category Filter --}}
                 @if($showFilters && $categories)
-                <label for="category-filter-{{ $gridId }}" class="sr-only">Filtra per categoria</label>
+                <label for="category-filter-{{ $gridId }}" class="sr-only">{{ __('pub_theme::services.grid_filter.category.label') }}</label>
                 <select id="category-filter-{{ $gridId }}" 
                         name="category"
                         autocomplete="off"
-                        aria-label="Filtra servizi per categoria"
+                        aria-label="{{ __('pub_theme::services.grid_filter.category_description.label') }}"
                         class="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent">
-                    <option value="">Tutte le categorie</option>
+                    <option value="">{{ __('pub_theme::common.filters.all_categories.label') }}</option>
                     @foreach($categories as $category)
                     <option value="{{ $category['id'] ?? $category }}">{{ $category['name'] ?? $category }}</option>
                     @endforeach
@@ -82,17 +82,17 @@
                 @endif
                 
                 {{-- Sort --}}
-                <label for="sort-{{ $gridId }}" class="sr-only">Ordina servizi</label>
+                <label for="sort-{{ $gridId }}" class="sr-only">{{ __('pub_theme::services.grid_sort.field.label') }}</label>
                 <select id="sort-{{ $gridId }}" 
                         name="sort"
                         autocomplete="off"
-                        aria-label="Ordina servizi"
+                        aria-label="{{ __('pub_theme::services.grid_sort.field.label') }}"
                         class="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent">
-                    <option value="name">Nome (A-Z)</option>
-                    <option value="name-desc">Nome (Z-A)</option>
-                    <option value="category">Categoria</option>
-                    <option value="popular">Più popolari</option>
-                    <option value="recent">Recenti</option>
+                    <option value="name">{{ __('pub_theme::services.grid_sort.name_asc.label') }}</option>
+                    <option value="name-desc">{{ __('pub_theme::services.grid_sort.name_desc.label') }}</option>
+                    <option value="category">{{ __('pub_theme::common.filters.category.label') }}</option>
+                    <option value="popular">{{ __('pub_theme::services.grid_sort.popular.label') }}</option>
+                    <option value="recent">{{ __('pub_theme::services.grid_sort.recent.label') }}</option>
                 </select>
                 
                 {{-- View Toggle --}}
@@ -100,7 +100,7 @@
                     <button 
                         type="button" 
                         onclick="changeView('{{ $gridId }}', 'grid')"
-                        aria-label="Mostra servizi in vista griglia"
+                        aria-label="{{ __('pub_theme::services.grid_view.grid.label') }}"
                         class="px-3 py-2 text-sm font-medium rounded-l-md {{ $currentView === 'grid' ? 'bg-primary-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-50' }} border-r border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#1E5A96]"
                     >
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -110,7 +110,7 @@
                     <button 
                         type="button" 
                         onclick="changeView('{{ $gridId }}', 'list')"
-                        aria-label="Mostra servizi in vista elenco"
+                        aria-label="{{ __('pub_theme::services.grid_view.list.label') }}"
                         class="px-3 py-2 text-sm font-medium -ml-px {{ $currentView === 'list' ? 'bg-primary-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-50' }} border-r border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#1E5A96]"
                     >
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -124,14 +124,14 @@
         {{-- Active Filters --}}
         <div id="active-filters-{{ $gridId }}" class="mt-4 hidden">
             <div class="flex items-center gap-2">
-                <span class="text-sm text-gray-600">Filtri attivi:</span>
+                <span class="text-sm text-gray-600">{{ __('pub_theme::services.grid_active.title.label') }}</span>
                 <div class="flex flex-wrap gap-2">
                     <!-- Active filter chips will be added here -->
                 </div>
                 <button onclick="clearAllFilters('{{ $gridId }}')" 
-                        aria-label="Rimuovi tutti i filtri attivi"
+                        aria-label="{{ __('pub_theme::services.grid_active.clear_description.label') }}"
                         class="text-sm text-primary-600 hover:text-primary-700 focus:outline-none focus:ring-2 focus:ring-[#1E5A96] rounded-md px-1">
-                    Rimuovi tutti
+                    {{ __('pub_theme::services.grid_active.clear.label') }}
                 </button>
             </div>
         </div>
@@ -142,15 +142,15 @@
     <div class="results-summary mb-6 flex justify-between items-center">
         <div class="results-count">
             <span class="text-sm text-gray-600">
-                Mostrando <span id="showing-count-{{ $gridId }}">{{ count($filteredServices) }}</span> 
-                di <span id="total-count-{{ $gridId }}">{{ count($services) }}</span> servizi
+                {{ __('pub_theme::services.grid_summary.showing.label') }} <span id="showing-count-{{ $gridId }}">{{ count($filteredServices) }}</span> 
+                {{ __('pub_theme::common.pagination.of.label') }} <span id="total-count-{{ $gridId }}">{{ count($services) }}</span> {{ __('pub_theme::services.grid_summary.services.label') }}
             </span>
         </div>
         
         @if($showPagination && $totalPages > 1)
         <div class="pagination-info">
             <span class="text-sm text-gray-600">
-                Pagina <span id="current-page-{{ $gridId }}">{{ $currentPage }}</span> di <span>{{ $totalPages }}</span>
+                {{ __('pub_theme::common.pagination.page.label') }} <span id="current-page-{{ $gridId }}">{{ $currentPage }}</span> {{ __('pub_theme::common.pagination.of.label') }} <span>{{ $totalPages }}</span>
             </span>
         </div>
         @endif
@@ -181,7 +181,7 @@
                                     </span>
                                     @if($service['featured'] ?? false)
                                     <span class="inline-block px-2 py-1 bg-yellow-100 text-yellow-800 text-xs font-medium rounded-full">
-                                        In evidenza
+                                        {{ __('pub_theme::services.grid_item.featured.label') }}
                                     </span>
                                     @endif
                                 </div>
@@ -204,13 +204,13 @@
                                             <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
                                             </svg>
-                                            Autenticazione richiesta
+                                            {{ __('pub_theme::services.auth.required.label') }}
                                         </span>
                                         @endif
                                     </div>
                                     
                                     <a href="{{ $service['url'] ?? '#' }}" class="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium">
-                                        Accedi
+                                        {{ __('pub_theme::services.grid_item.access.label') }}
                                         <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                                         </svg>
@@ -229,12 +229,12 @@
             <svg class="w-16 h-16 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
             </svg>
-            <h3 class="text-lg font-medium text-gray-900 mb-2">Nessun servizio trovato</h3>
-            <p class="text-gray-600 mb-4">Prova a modificare i filtri o la ricerca</p>
+            <h3 class="text-lg font-medium text-gray-900 mb-2">{{ __('pub_theme::services.grid_empty.title.title') }}</h3>
+            <p class="text-gray-600 mb-4">{{ __('pub_theme::services.grid_empty.hint.message') }}</p>
             <button onclick="clearAllFilters('{{ $gridId }}')" 
-                    aria-label="Rimuovi tutti i filtri e mostra tutti i servizi"
+                    aria-label="{{ __('pub_theme::services.grid_empty.reset_description.label') }}"
                     class="text-primary-600 hover:text-primary-700 font-medium focus:outline-none focus:ring-2 focus:ring-[#1E5A96] rounded-md px-2 py-1">
-                Rimuovi filtri
+                {{ __('pub_theme::services.grid_empty.reset.label') }}
             </button>
         </div>
     </div>
@@ -242,11 +242,11 @@
     {{-- Pagination --}}
     @if($showPagination && $totalPages > 1)
     <div id="pagination-{{ $gridId }}" class="pagination mt-8 flex justify-center">
-        <nav class="flex items-center gap-2" role="navigation" aria-label="Paginazione">
+        <nav class="flex items-center gap-2" role="navigation" aria-label="{{ __('pub_theme::common.pagination.nav.label') }}">
             {{-- Previous Button --}}
             <button 
                 onclick="changePage('{{ $gridId }}', {{ $currentPage - 1 }})"
-                aria-label="Vai alla pagina precedente"
+                aria-label="{{ __('pub_theme::common.pagination.previous.label') }}"
                 class="px-3 py-2 text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-[#1E5A96] {{ $currentPage === 1 ? 'bg-gray-100 text-gray-400 cursor-not-allowed' : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300' }}"
                 {{ $currentPage === 1 ? 'disabled aria-disabled="true"' : '' }}
             >
@@ -260,7 +260,7 @@
                 @if($i === 1 || $i === $totalPages || ($i >= $currentPage - 2 && $i <= $currentPage + 2))
                     <button 
                         onclick="changePage('{{ $gridId }}', {{ $i }})"
-                        aria-label="Vai alla pagina {{ $i }}"
+                        aria-label="{{ __('pub_theme::common.pagination.goto.label', ['page' => $i]) }}"
                         @if($i === $currentPage) aria-current="page" @endif
                         class="px-3 py-2 text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-[#1E5A96] {{ $i === $currentPage ? 'bg-primary-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300' }}"
                     >
@@ -274,7 +274,7 @@
             {{-- Next Button --}}
             <button 
                 onclick="changePage('{{ $gridId }}', {{ $currentPage + 1 }})"
-                aria-label="Vai alla pagina successiva"
+                aria-label="{{ __('pub_theme::common.pagination.next.label') }}"
                 class="px-3 py-2 text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-[#1E5A96] {{ $currentPage === $totalPages ? 'bg-gray-100 text-gray-400 cursor-not-allowed' : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300' }}"
                 {{ $currentPage === $totalPages ? 'disabled aria-disabled="true"' : '' }}
             >
@@ -446,14 +446,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="flex-1">
                         <div class="flex items-center gap-2 mb-2">
                             <span class="inline-block px-2 py-1 bg-primary-100 text-primary-700 text-xs font-medium rounded-full">
-                                ${service.category || 'Servizio'}
+                                ${service.category || @js(__('pub_theme::booking.defaults.service.label'))}
                             </span>
-                            ${service.featured ? '<span class="inline-block px-2 py-1 bg-yellow-100 text-yellow-800 text-xs font-medium rounded-full">In evidenza</span>' : ''}
+                            ${service.featured ? '<span class="inline-block px-2 py-1 bg-yellow-100 text-yellow-800 text-xs font-medium rounded-full">' + @js(__('pub_theme::services.grid_item.featured.label')) + '</span>' : ''}
                         </div>
                         <h3 class="text-lg font-semibold text-gray-900 mb-2">${service.title}</h3>
                         <p class="text-gray-600 mb-4">${service.description}</p>
                         <a href="${service.url || '#'}" class="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium">
-                            Accedi al servizio
+                            ${@js(__('pub_theme::services.js_results.access.label'))}
                             <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                             </svg>

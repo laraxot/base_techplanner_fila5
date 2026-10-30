@@ -14,7 +14,7 @@ declare(strict_types=1);
                 <button
                     @click="mobileMenuOpen = !mobileMenuOpen"
                     class="relative flex items-center justify-center w-8 h-8 ml-5 overflow-hidden text-gray-500 bg-gray-100 rounded cursor-pointer md:hidden hover:text-gray-700 hover:bg-gray-200"
-                    aria-label="Toggle menu"
+                    aria-label="{{ __('ui::components.header.toggle_menu.label') }}"
                 >
                     <div class="flex flex-col items-center justify-center w-4 h-4">
                         <span
@@ -46,7 +46,7 @@ declare(strict_types=1);
                 :class="{ 'flex': mobileMenuOpen, 'hidden md:flex': !mobileMenuOpen }"
             >
                 <nav class="flex flex-col w-full p-6 space-y-2 bg-white md:p-0 md:flex-row md:space-x-2 md:space-y-0 md:w-auto md:bg-transparent">
-                    <x-ui.nav-link href="/">Home</x-ui.nav-link>
+                    <x-ui.nav-link href="/">{{ __('ui::auth.navigation.home') }}</x-ui.nav-link>
                     @foreach ($_theme->getMenu('headernav_right') as $item)
                         <x-ui.nav-link href="{{ $_theme->getMenuUrl($item) }}">{{ $item['title'] }}</x-ui.nav-link>
                     @endforeach
@@ -75,7 +75,7 @@ declare(strict_types=1);
                             icon="heroicon-m-user"
                             :href="route('profile.show')"
                         >
-                            {{ __('Profile') }}
+                            {{ __('ui::components_shell.user_menu.profile.label') }}
                         </x-filament::dropdown.list.item>
 
                         <x-filament::dropdown.list.item
@@ -83,7 +83,7 @@ declare(strict_types=1);
                             icon="heroicon-m-cog"
                             :href="route('profile.show')"
                         >
-                            {{ __('Settings') }}
+                            {{ __('ui::components_shell.user_menu.settings.label') }}
                         </x-filament::dropdown.list.item>
 
                         <div class="border-t border-gray-200 dark:border-gray-700 my-1"></div>
@@ -94,7 +94,7 @@ declare(strict_types=1);
                                 icon="heroicon-m-arrow-right-on-rectangle"
                                 type="submit"
                             >
-                                {{ __('Log Out') }}
+                                {{ __('ui::components_shell.user_menu.logout.label') }}
                             </x-filament::dropdown.list.item>
                         </form>
                     </x-filament::dropdown.list>
@@ -102,12 +102,12 @@ declare(strict_types=1);
             @else
                 <div class="flex items-center w-auto">
                     <x-ui.button type="secondary" submit="true" tag="a" href="{{ route('login') }}">
-                        Login
+                        {{ __('ui::auth.login.link') }}
                     </x-ui.button>
                 </div>
                 <div class="flex items-center w-auto">
                     <x-ui.button type="primary" submit="true" tag="a" href="{{ route('register') }}">
-                        Sign Up
+                        {{ __('ui::auth.register.link') }}
                     </x-ui.button>
                 </div>
             @endauth

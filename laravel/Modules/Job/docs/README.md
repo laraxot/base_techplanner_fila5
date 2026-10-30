@@ -13,6 +13,7 @@ related:
   - "./00-index.md"
   - "./stories/02.Job-merge-conflict-resolution.story.md"
   - "./stories/docs-ingressi-job.story.md"
+  - "./stories/job-admin-authorization.story.md"
 status: active
 ---
 
@@ -111,6 +112,8 @@ questi due comandi non e' stato rieseguito per questa revisione dei docs.
 - [2026-10-06 PHPStan cleanup - Job](./stories/phpstan-cleanup-job.story.md) | [dev](./stories/phpstan-cleanup-job.dev.md)
 - [2026-10-08 Services -> Actions (ScheduleService eliminato)](./stories/services-to-actions-job.story.md)
 - [2026-10-14 Ingressi docs rivisti sul codice](./stories/docs-ingressi-job.story.md)
+- [2026-10-29 Autorizzazione pagina e widget operativi (super-admin, allowlist, .env)](./stories/job-admin-authorization.story.md)
+- [2026-10-30 Niente testi fissi nelle Blade (it, en, de, es)](./stories/blade-i18n-no-hardcoded-text.story.md)
 
 ## Stato dell'organizzazione della cartella
 

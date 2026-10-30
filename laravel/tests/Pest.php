@@ -21,7 +21,7 @@ if (! function_exists('pest')) {
 }
 
 pest()->extend(Tests\TestCase::class)
-    ->in('Feature');
+    ->in(__DIR__.'/Feature');
 
 /*
 |--------------------------------------------------------------------------

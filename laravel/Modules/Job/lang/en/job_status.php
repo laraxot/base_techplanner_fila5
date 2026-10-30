@@ -134,4 +134,9 @@ return [
     'title' => 'Job status',
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+    'widget' => [
+        'heading' => 'Job status',
+        'queue_connection' => 'Queue connection',
+        'dummy_action' => '1000 Dummy Action',
+    ],
 ];

@@ -26,6 +26,8 @@ marcati `superseded` o `stale`, non cancellati (regola BMAD).
 ## Storie correlate
 
 - [Configurazione ECC e gate PHPStan](./bmad/stories/ecc-codex-plugin-setup.story.md)
+- [Pagine operative e scrittura di `.env` riservate al super-admin](./stories/superadmin-only-operational-pages.story.md)
+- [Niente testi fissi nelle Blade (it, en, de, es)](./stories/blade-i18n-no-hardcoded-text.story.md)
 
 ## Non toccare
 

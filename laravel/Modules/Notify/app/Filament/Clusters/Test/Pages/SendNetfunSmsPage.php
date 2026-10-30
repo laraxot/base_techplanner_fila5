@@ -21,12 +21,15 @@ use Modules\Notify\Datas\SmsData;
 use Modules\Notify\Filament\Clusters\Test;
 use Modules\Notify\Notifications\SmsNotification;
 use Modules\Xot\Filament\Pages\XotBasePage;
+use Modules\Xot\Filament\Traits\SuperAdminOnlyTrait;
 
 /**
  * @property Schema $smsForm
  */
 class SendNetfunSmsPage extends XotBasePage
 {
+    use SuperAdminOnlyTrait;
+
     /** @var array<string, mixed>|null */
     public ?array $smsData = [];
 
@@ -106,6 +109,8 @@ class SendNetfunSmsPage extends XotBasePage
 
     public function sendSMS(): void
     {
+        abort_unless(static::canAccess(), 403);
+
         $data = $this->smsForm->getState();
 
         $smsData = SmsData::from([

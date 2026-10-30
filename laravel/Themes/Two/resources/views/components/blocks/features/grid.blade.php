@@ -58,7 +58,7 @@
                                 <div class="card-actions justify-end mt-auto">
                                     <a href="{{ $feature['url'] }}" 
                                        class="btn btn-ghost btn-sm gap-2 hover:bg-primary/10 text-primary transition-all duration-300">
-                                        Scopri di più
+                                        {{ __('pub_theme::ui.sections.learn_more.label') }}
                                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                                         </svg>

@@ -1,6 +1,6 @@
-<x-layouts.main title="Contact">
+<x-layouts.main :title="__('pub_theme::contact_form.page.meta.title')">
     <x-banner>
-        <h1>Contact Us</h1>
+        <h1>{{ __('pub_theme::contact_form.page.heading.title') }}</h1>
     </x-banner>
 
     <x-container>

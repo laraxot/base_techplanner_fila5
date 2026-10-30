@@ -109,10 +109,10 @@
     @if($max-size || $allowed-types)
         <div class="mt-1 text-xs text-gray-500">
             @if($max-size)
-                <p>Dimensione massima: {{ $max-size }}</p>
+                <p>{{ __('pub_theme::forms.file_upload.max_size.message', ['size' => $max-size]) }}</p>
             @endif
             @if($allowed-types)
-                <p>Tipi consentiti: {{ $allowed-types }}</p>
+                <p>{{ __('pub_theme::forms.file_upload.allowed_types.message', ['types' => $allowed-types]) }}</p>
             @endif
         </div>
     @endif

@@ -58,6 +58,7 @@ Vedi anche: [wiki/index.md](wiki/index.md) — indice del wiki interno del tema 
 
 ## Header e navigazione
 
+- [wiki/concepts/mobile-navigation-contract.md](wiki/concepts/mobile-navigation-contract.md) — hook generici `data-mobile-nav-*` per il menu mobile
 - [header-auth-button.md](header-auth-button.md)
 - [header-background-fix-ux-improvement.md](header-background-fix-ux-improvement.md)
 - [header-background-improvements.md](header-background-improvements.md)
@@ -296,6 +297,13 @@ Le copie in maiuscolo differiscono solo per il frontmatter `status: superseded`;
 ## Story BMAD
 
 - [stories/docs-index-audit.story.md](stories/docs-index-audit.story.md)
+- [stories/mobile-ux-pass.story.md](stories/mobile-ux-pass.story.md) — passata UX mobile: menu header leggibile, footer tappabile, hero senza tagli, login a 360 px
+- [stories/mobile-hero-header-offset.story.md](stories/mobile-hero-header-offset.story.md) — hero non coperta dall'header fisso: offset unico `--site-header-h` nel layout, `scroll-padding-top`, barra cookie sui viewport bassi
+- [stories/wcag-aaa-site-audit.story.md](stories/wcag-aaa-site-audit.story.md) — audit WCAG 2.2 AAA di tutto il sito: metodo, esito prima/dopo, correzioni nei blocchi e nel footer
+- [stories/blog-article-page.story.md](stories/blog-article-page.story.md) — pagina articolo del blog servita dal CMS (`<x-page>`), non più da una vista Volt con modello inesistente: 500 risolto, slug sconosciuto → 404
+- [stories/cms-pages-slug-folder-prefix.story.md](stories/cms-pages-slug-folder-prefix.story.md) — pagine CMS in sottocartella (slug con prefisso doppio) e pagine inesistenti: contenuto dei servizi, 404 vero al posto del 200 vuoto, link `/it/servizi` e `/it/contact` corretti
+- [stories/blade-i18n-no-hardcoded-text.story.md](stories/blade-i18n-no-hardcoded-text.story.md) — niente testi fissi nelle Blade: chiavi `pub_theme::` a cinque elementi in it/en/de/es, `@js()` negli script, `route()` al posto di `/it/...`
+- [stories/container0-routes-and-pub-theme-namespace.story.md](stories/container0-routes-and-pub-theme-namespace.story.md) — link con `route('container0.view', [...])` e non con nomi di pagina o `url('/...')`, namespace `pub_theme::` e mai `two::`/`theme::`; in Two l'indice si chiama `container0`
 
 ---
 

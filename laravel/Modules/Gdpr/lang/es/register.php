@@ -16,6 +16,14 @@ return [
         'cta_title' => 'Crea Tu Cuenta GRATUITA',
         'cta_subtitle' => 'No se requiere tarjeta - ¡100% gratuito para siempre!',
         'terms_notice' => 'Al registrarte aceptas nuestros Términos y Política de Privacidad',
+        'first_name' => 'Nombre',
+        'last_name' => 'Apellidos',
+        'email' => 'Correo electrónico',
+        'password' => 'Contraseña',
+        'hide_password' => 'Ocultar contraseña',
+        'show_password' => 'Mostrar contraseña',
+        'password_confirmation' => 'Confirmar contraseña',
+        'submit' => 'Crear cuenta',
     ],
     'benefits' => [
         'community' => [
@@ -99,6 +107,9 @@ return [
         'marketing_label' => 'Quiero recibir novedades e invitaciones (opcional)',
         'marketing_hint' => 'El consentimiento es opcional y puedes revocarlo en cualquier momento sin consecuencias.',
         'required_consent_missing' => 'Debes aceptar todos los consentimientos obligatorios para proceder.',
+        'privacy_policy' => 'He leído y acepto la política de privacidad',
+        'terms' => 'Acepto los términos y condiciones de uso',
+        'marketing' => 'Deseo recibir comunicaciones de marketing (opcional)',
     ],
     'actions' => [
         'read_privacy_policy' => 'Leer política de privacidad',
@@ -146,4 +157,5 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+    'already_have_account' => '¿Ya tienes una cuenta?',
 ];

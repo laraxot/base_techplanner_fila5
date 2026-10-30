@@ -1,7 +1,7 @@
 @props([
-    'title' => 'Rimani Aggiornato',
-    'description' => 'Iscriviti per ricevere gli ultimi articoli e aggiornamenti normativi direttamente nella tua casella email.',
-    'cta_label' => 'Iscriviti alla Newsletter',
+    'title' => __('pub_theme::blocks.newsletter.blog.title'),
+    'description' => __('pub_theme::blocks.newsletter.blog.description'),
+    'cta_label' => __('pub_theme::blocks.newsletter.blog.cta_label'),
 ])
 
 @php
@@ -24,7 +24,7 @@
                 <input 
                     type="email" 
                     name="email" 
-                    placeholder="La tua email" 
+                    placeholder="{{ __('pub_theme::blocks.newsletter.blog.email_placeholder') }}" 
                     required
                     class="flex-1 px-6 py-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:border-transparent"
                 >
@@ -37,7 +37,7 @@
             </form>
             
             <p class="mt-4 text-sm text-gray-500">
-                Niente spam, solo contenuti di qualità. Puoi disiscriverti quando vuoi.
+                {{ __('pub_theme::blocks.newsletter.blog.privacy_note') }}
             </p>
         </div>
     </div>

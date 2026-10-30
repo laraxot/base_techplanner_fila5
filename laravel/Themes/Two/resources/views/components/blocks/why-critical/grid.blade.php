@@ -1,5 +1,5 @@
 @props([
-    'pre_title' => 'Sicurezza e Compliance',
+    'pre_title' => __('pub_theme::block_defaults.why_critical.pre_title.title'),
     'title' => '',
     'subtitle' => '',
     'points' => [],

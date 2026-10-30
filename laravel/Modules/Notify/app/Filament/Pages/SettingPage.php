@@ -5,10 +5,13 @@ declare(strict_types=1);
 namespace Modules\Notify\Filament\Pages;
 
 use Modules\Xot\Filament\Pages\XotBasePage;
+use Modules\Xot\Filament\Traits\SuperAdminOnlyTrait;
 use Modules\Xot\Filament\Widgets\EnvWidget;
 
 class SettingPage extends XotBasePage
 {
+    use SuperAdminOnlyTrait;
+
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-document-text';
 
     protected string $view = 'notify::filament.pages.setting';

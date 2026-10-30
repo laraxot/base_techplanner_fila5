@@ -6,6 +6,7 @@ Tema attivo per Sottana Service: presentazione only (pagine Folio in `resources/
 - Note operative (stack, build): [theme.md](./theme.md).
 - Regole pagine Folio: [folio-page-file-rules.md](./folio-page-file-rules.md); mai estendere `Filament*`: [concepts/xotbase-never-extend-filament.md](./concepts/xotbase-never-extend-filament.md).
 - Wiki interna: [wiki/index.md](./wiki/index.md).
+- Audit mobile misurato sul sito servito (axe, reflow 320 px, correzioni verificate, build mancante): [mobile-live-audit.md](./mobile-live-audit.md).
 
 ## Aggiornamenti
 - Brand: Sottana Service

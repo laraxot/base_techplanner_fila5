@@ -21,12 +21,15 @@ use Modules\Notify\Filament\Clusters\Test;
 use Modules\Notify\Notifications\TelegramNotification;
 use Modules\Xot\Filament\Pages\XotBasePage;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
+use Modules\Xot\Filament\Traits\SuperAdminOnlyTrait;
 
 /**
  * @property Schema $telegramForm
  */
 class SendTelegramPage extends XotBasePage
 {
+    use SuperAdminOnlyTrait;
+
     // use NavigationLabelTrait;
 
     /** @var array<string, mixed>|null */
@@ -89,6 +92,8 @@ class SendTelegramPage extends XotBasePage
 
     public function sendTelegram(): void
     {
+        abort_unless(static::canAccess(), 403);
+
         try {
             $data = $this->telegramForm->getState();
             $message = is_string($data['text']) ? $data['text'] : '';

@@ -29,6 +29,7 @@ return [
         'confirm_password' => 'Conferma Password',
         'save' => 'Salva',
         'update' => 'Aggiorna',
+        'logout' => 'Abmelden',
     ],
     'user_dropdown' => [
         'manage_account' => 'Gestione Account',
@@ -57,6 +58,8 @@ return [
         'dashboard' => 'Dashboard',
         'profile' => 'Profilo',
         'settings' => 'Impostazioni',
+        'learn_more' => 'Mehr erfahren',
+        'primary' => 'Hauptnavigation',
     ],
     'failed' => 'Le credenziali non corrispondono ai nostri record.',
     'throttle' => 'Troppi tentativi di accesso. Riprova tra :seconds secondi.',

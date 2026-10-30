@@ -23,4 +23,4 @@ new class extends Component
 
 ?>
 
-<h1 wire:init="logout">goodbye</h1>
+<h1 wire:init="logout">{{ __('pub_theme::auth.logout.goodbye.message') }}</h1>

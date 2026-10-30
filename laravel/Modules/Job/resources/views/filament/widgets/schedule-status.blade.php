@@ -5,7 +5,7 @@ declare(strict_types=1);
 ?>
 <x-filament-widgets::widget>
     <x-filament::section>
-        <x-slot name="heading">Schedule status</x-slot>
+        <x-slot name="heading">{{ __('job::schedule_status_widget.sections.status.title') }}</x-slot>
 
         <pre>{!! $out !!}</pre>
 

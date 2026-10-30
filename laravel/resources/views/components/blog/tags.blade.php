@@ -127,7 +127,7 @@
                 
                 <div class="flex items-center space-x-3">
                     @if($showCount)
-                        <span class="text-sm text-gray-500">{{ $tag['count'] }} articoli</span>
+                        <span class="text-sm text-gray-500">{{ __('blog.tags.articles_count', ['count' => $tag['count']]) }}</span>
                     @endif
                     
                     <button 

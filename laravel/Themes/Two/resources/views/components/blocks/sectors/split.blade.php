@@ -50,7 +50,7 @@
 
                         @if($hasFocusAreas)
                         <div class="mb-6">
-                            <h4 class="text-md font-semibold text-gray-900 mb-3">Aree di Focus:</h4>
+                            <h4 class="text-md font-semibold text-gray-900 mb-3">{{ __('pub_theme::blocks.sectors.focus_areas.label') }}</h4>
                             <ul class="space-y-2">
                                 @foreach ($sector['focus_areas'] as $focus_area)
                                 <li class="flex items-start">
@@ -77,7 +77,7 @@
                         <div class="bg-white/50 p-4 rounded-lg border border-{{ $brandColor }}/20">
                             <h4 class="text-sm font-semibold text-{{ $brandColor }} mb-2 flex items-center">
                                 <x-heroicon-o-shield-check class="w-4 h-4 mr-2" />
-                                Conformità:
+                                {{ __('pub_theme::blocks.sectors.compliance.label') }}
                             </h4>
                             <p class="text-sm text-gray-600">{{ $sector['compliance'] }}</p>
                         </div>

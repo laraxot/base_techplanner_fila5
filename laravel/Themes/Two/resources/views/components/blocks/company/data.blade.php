@@ -6,7 +6,7 @@
             
             {{-- Data List --}}
             <div class="space-y-6">
-                <h2 class="text-3xl font-bold text-gray-900 mb-6">Dati Aziendali</h2>
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">{{ __('pub_theme::blocks.sections.company.title') }}</h2>
                 <div class="bg-white rounded-xl shadow-sm p-6 space-y-4">
                     @foreach($data as $item)
                         <div class="flex items-start border-b border-gray-100 last:border-0 pb-4 last:pb-0">

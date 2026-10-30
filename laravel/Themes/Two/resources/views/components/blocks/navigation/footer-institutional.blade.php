@@ -37,33 +37,33 @@
                 
                 @if($vatNumber)
                     <p class="text-gray-400 text-sm">
-                        {{ __('P.IVA') }}: {{ $vatNumber }}
+                        {{ __('pub_theme::footer.contact.vat.abbr') }}: {{ $vatNumber }}
                     </p>
                 @endif
             </div>
             
             <!-- Quick Links -->
             <div class="space-y-4">
-                <h3 class="text-lg font-semibold">{{ __('Link Utili') }}</h3>
+                <h3 class="text-lg font-semibold">{{ __('pub_theme::footer.useful_links') }}</h3>
                 <ul class="space-y-2 text-sm">
                     <li>
                         <a href="{{ route('home') }}" class="text-gray-400 hover:text-white transition-colors">
-                            {{ __('Home') }}
+                            {{ __('pub_theme::navigation.home') }}
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('pages.services') }}" class="text-gray-400 hover:text-white transition-colors">
-                            {{ __('Servizi') }}
+                        <a href="{{ route('container0', ['container0' => 'services']) }}" class="text-gray-400 hover:text-white transition-colors">
+                            {{ __('pub_theme::navigation.services') }}
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('pages.about') }}" class="text-gray-400 hover:text-white transition-colors">
-                            {{ __('Chi Siamo') }}
+                        <a href="{{ route('container0', ['container0' => 'about']) }}" class="text-gray-400 hover:text-white transition-colors">
+                            {{ __('pub_theme::navigation.about') }}
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('pages.contacts') }}" class="text-gray-400 hover:text-white transition-colors">
-                            {{ __('Contatti') }}
+                        <a href="{{ route('container0', ['container0' => 'contatti']) }}" class="text-gray-400 hover:text-white transition-colors">
+                            {{ __('pub_theme::navigation.contact') }}
                         </a>
                     </li>
                 </ul>
@@ -71,28 +71,28 @@
             
             <!-- Legal Links -->
             <div class="space-y-4">
-                <h3 class="text-lg font-semibold">{{ __('Informazioni Legali') }}</h3>
+                <h3 class="text-lg font-semibold">{{ __('pub_theme::footer.sections.legal_info.label') }}</h3>
                 <ul class="space-y-2 text-sm">
                     @if($showPrivacy && Route::has('pages.view'))
                         <li>
-                            <a href="{{ route('pages.view', ['slug' => 'privacy']) }}" class="text-gray-400 hover:text-white transition-colors">
-                                {{ __('Privacy Policy') }}
+                            <a href="{{ route('container0', ['container0' => 'privacy']) }}" class="text-gray-400 hover:text-white transition-colors">
+                                {{ __('pub_theme::footer.legal.privacy.label') }}
                             </a>
                         </li>
                     @endif
                     
                     @if($showTerms && Route::has('pages.view'))
                         <li>
-                            <a href="{{ route('pages.view', ['slug' => 'terms']) }}" class="text-gray-400 hover:text-white transition-colors">
-                                {{ __('Termini e Condizioni') }}
+                            <a href="{{ route('container0', ['container0' => 'terms']) }}" class="text-gray-400 hover:text-white transition-colors">
+                                {{ __('pub_theme::footer.legal.terms.label') }}
                             </a>
                         </li>
                     @endif
                     
                     @if($showCookie && Route::has('pages.view'))
                         <li>
-                            <a href="{{ route('pages.view', ['slug' => 'cookie']) }}" class="text-gray-400 hover:text-white transition-colors">
-                                {{ __('Cookie Policy') }}
+                            <a href="{{ route('container0', ['container0' => 'cookies']) }}" class="text-gray-400 hover:text-white transition-colors">
+                                {{ __('pub_theme::footer.sections.cookie_policy.label') }}
                             </a>
                         </li>
                     @endif
@@ -104,7 +104,7 @@
         <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
             <p>
                 &copy; {{ date('Y') }} {{ $companyName }}. 
-                {{ __('Tutti i diritti riservati.') }}
+                {{ __('pub_theme::footer.all_rights_reserved') }}
             </p>
         </div>
     </div>

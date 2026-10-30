@@ -17,11 +17,11 @@ declare(strict_types=1);
           <img class="h-12 w-auto" src="https://tailwindui.com/img/logos/workcation-logo-white.svg" alt="">
           <figure>
             <blockquote class="mt-6 text-lg font-semibold text-white sm:text-xl sm:leading-8">
-              <p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”</p>
+              <p>{{ __('ui::blocks_testimonials.quotes.quote_03.description') }}</p>
             </blockquote>
             <figcaption class="mt-6 text-base text-white">
               <div class="font-semibold">Judith Black</div>
-              <div class="mt-1">CEO of Workcation</div>
+              <div class="mt-1">{{ __('ui::blocks_testimonials.roles.ceo_of.label', ['company' => 'Workcation']) }}</div>
             </figcaption>
           </figure>
         </div>
