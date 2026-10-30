@@ -33,4 +33,12 @@ return [
             'label' => 'Campo de búsqueda',
         ],
     ],
+    'social' => [
+        'facebook' => [
+            'label' => 'Facebook',
+        ],
+        'twitter' => [
+            'label' => 'Twitter',
+        ],
+    ],
 ];

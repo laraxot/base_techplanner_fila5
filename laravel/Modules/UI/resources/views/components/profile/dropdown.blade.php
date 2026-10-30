@@ -49,8 +49,6 @@ declare(strict_types=1);
                 </x-filament::dropdown.list.item>
             </form>
         @else
-            <x-filament::dropdown.list.item tag="a" :href="route('login')" >
-                {{-- icon="heroicon-o-login" --}}
             <x-filament::dropdown.list.item tag="a" :href="route('login')" icon="ui-login">
                 {{ __('ui::navigation.login') }}
             </x-filament::dropdown.list.item>

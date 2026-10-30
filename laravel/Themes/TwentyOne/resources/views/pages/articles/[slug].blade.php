@@ -30,7 +30,7 @@ render(function (View $view, string $slug) {
         <div class="max-w-[calc(100%-30px)] sm:max-w-[calc(100%-80px)] lg:max-w-[996px] mx-auto pb-12">
             @if($article)
                 <!-- play money markets -->
-                <section class="pt-8" aria-label="Play Money Markets" {{-- x-data="playmarkets"id="playmarkets" --}}>
+                <section class="pt-8" aria-label="{{ __('pub_theme::pages_misc.article.play_money_markets.aria_label') }}" {{-- x-data="playmarkets"id="playmarkets" --}}>
                 <!-- list of markets -->
                 <div class="flex flex-wrap w-full lg:flex-nowrap ">
                         @include('pub_theme::article.show.content')
@@ -70,7 +70,7 @@ render(function (View $view, string $slug) {
                         <img class="max-w-lg" src="https://error404.fun/img/full-preview/1x/3.png" alt="">
                     </div>
                     <div class="space-y-2 text-center">
-                        <h2 class="text-2xl font-bold md:text-4xl lg:text-6xl">Whooops!</h2>
+                        <h2 class="text-2xl font-bold md:text-4xl lg:text-6xl">{{ __('pub_theme::pages_misc.article.whoops.title') }}</h2>
                         <p class="text-gray-400">
                             {{ __('pub_theme::404.no_article') }}
                             {{-- It appears the article you seek doesn't exist. This is not the page you're looking for. --}}

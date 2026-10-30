@@ -94,4 +94,20 @@ return [
         'gps_location' => 'Automatischer GPS-Standort',
         'describe_detail' => 'Problem ausführlich beschreiben',
     ],
+    'header_area_personale' => [
+        'settings' => [
+            'label' => 'Einstellungen',
+            'description' => 'Kontoeinstellungen und Präferenzen',
+        ],
+        'my_practices' => [
+            'label' => 'Meine Vorgänge',
+            'description' => 'Liste der laufenden Vorgänge',
+            'empty' => 'Sie haben noch keine Meldung eingereicht.',
+            'new_report' => 'Neue Meldung einreichen',
+        ],
+        'my_services' => [
+            'label' => 'Meine Dienste',
+            'description' => 'Liste der für den Benutzer verfügbaren Dienste',
+        ],
+    ],
 ];

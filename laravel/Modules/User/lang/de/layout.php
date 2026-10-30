@@ -28,4 +28,9 @@ return [
             'contacts' => 'Kontakt',
         ],
     ],
+    'brand' => [
+        'project' => [
+            'label' => 'das Projekt',
+        ],
+    ],
 ];

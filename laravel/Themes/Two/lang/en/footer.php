@@ -83,6 +83,9 @@ return [
         'terms' => [
             'label' => 'Terms and Conditions',
         ],
+        'notice' => [
+            'label' => 'Copyright © :year :name',
+        ],
     ],
     'quick_actions' => [
         'call' => [

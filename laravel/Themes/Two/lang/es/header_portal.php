@@ -40,5 +40,40 @@ return [
         'secondary' => [
             'label' => 'Secundaria',
         ],
+        'admin' => [
+            'label' => 'Administración',
+        ],
+        'news' => [
+            'label' => 'Novedades',
+        ],
+        'services' => [
+            'label' => 'Servicios',
+        ],
+        'live' => [
+            'label' => 'Vivir el municipio',
+        ],
+        'enrollment' => [
+            'label' => 'Inscripciones',
+        ],
+        'summer' => [
+            'label' => 'Verano en la ciudad',
+        ],
+        'local_police' => [
+            'label' => 'Policía local',
+        ],
+        'all_topics' => [
+            'label' => 'Todos los temas',
+        ],
+    ],
+    'brand' => [
+        'municipality' => [
+            'title' => 'Mi Ayuntamiento',
+        ],
+        'tagline' => [
+            'description' => 'Un municipio para vivir',
+        ],
+        'menu_municipality' => [
+            'title' => 'Nombre del municipio',
+        ],
     ],
 ];

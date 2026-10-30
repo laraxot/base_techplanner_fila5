@@ -47,3 +47,11 @@ Testi in PHP: non cercati in questa campagna sul modulo, quindi non toccati.
 ## Riferimenti
 
 Metodo e regola completa: [story del tema Two](../../../../Themes/Two/docs/stories/blade-i18n-no-hardcoded-text.story.md); protocollo a cinque elementi: [regola 008](../../../../../docs/wiki/rules/008-translation-5-level-protocol.md). Il dettaglio per file e' nel repo privato di audit.
+
+### Passata 2026-10-30 (sessione 97f16a39, i18n-small-modules: Job)
+
+Scanner `Modules/Job`: prima 8 occorrenze in 5 file (8 text), dopo 8 in 5 file (invariato).
+
+- Nessuna modifica. `check-blade-keys` su `Modules/Job`: 25 usi, 0 mancanti; compilazione 25 file OK.
+- Residui (8): nomi dei driver della coda `sync` e `database` e prefisso `queue:` davanti al nome dell'artisan in `filament/widgets/job-status` (3, valori tecnici), pulsante di prova `zibibbo` in `filament/pages/job-status` (1, chiama `zibibbo()`, pagina di sviluppo), frammento `getTasks())` in `filament/widgets/schedule-crud` (1, falso positivo), stub `index` e `layouts/master` (3).
+- Non verificato: nessuna pagina guardata.

@@ -83,6 +83,9 @@ return [
         'terms' => [
             'label' => 'Allgemeine Geschäftsbedingungen',
         ],
+        'notice' => [
+            'label' => 'Copyright © :year :name',
+        ],
     ],
     'quick_actions' => [
         'call' => [

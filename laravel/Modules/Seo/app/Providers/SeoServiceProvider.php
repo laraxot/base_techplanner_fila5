@@ -15,6 +15,10 @@ class SeoServiceProvider extends XotBaseServiceProvider
 {
     public string $name = 'Seo';
 
+    protected string $module_dir = __DIR__;
+
+    protected string $module_ns = __NAMESPACE__;
+
     /**
      * Register the service provider.
      */

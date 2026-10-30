@@ -7,7 +7,7 @@ declare(strict_types=1);
         <div class="space-y-6">
             <div>
                 <h3 class="text-lg font-medium text-gray-900 dark:text-gray-100">
-                    {{ __('notify::mail.template.preview.subject') }}
+                    {{ __('notify::preview_mail_template.sections.subject.title') }}
                 </h3>
                 <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
                     {{ $this->record->subject }}
@@ -17,7 +17,7 @@ declare(strict_types=1);
             <div class="space-y-4">
                 <div>
                     <h4 class="text-sm font-medium text-gray-900 dark:text-gray-100">
-                        {{ __('notify::mail.template.preview.html_version') }}
+                        {{ __('notify::preview_mail_template.sections.html_version.title') }}
                     </h4>
                     <div class="mt-2 prose dark:prose-invert max-w-none">
                         {!! $this->record->body_html !!}
@@ -26,7 +26,7 @@ declare(strict_types=1);
 
                 <div>
                     <h4 class="text-sm font-medium text-gray-900 dark:text-gray-100">
-                        {{ __('notify::mail.template.preview.text_version') }}
+                        {{ __('notify::preview_mail_template.sections.text_version.title') }}
                     </h4>
                     <pre class="mt-2 text-sm text-gray-600 dark:text-gray-300 whitespace-pre-wrap">{{ $this->record->body_text }}</pre>
                 </div>
@@ -34,7 +34,7 @@ declare(strict_types=1);
                 @if (! empty($this->record->variables))
                     <div>
                         <h4 class="text-sm font-medium text-gray-900 dark:text-gray-100">
-                            {{ __('notify::mail.template.preview.variables') }}
+                            {{ __('notify::preview_mail_template.sections.variables.title') }}
                         </h4>
 
                         <dl class="mt-2 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">

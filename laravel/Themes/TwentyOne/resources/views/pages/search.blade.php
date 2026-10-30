@@ -33,17 +33,17 @@ render(function (View $view) {
             @include('ui::svg.illustrations.search')
         </div>
         <div class="space-y-2 text-center">
-            <div class="text-4xl font-bold">Search anything you want</div>
-            <p class="text-gray-500">Find out more articles, categories, tags, or everything in one place.</p>
+            <div class="text-4xl font-bold">{{ __('pub_theme::pages_search.hero.title.title') }}</div>
+            <p class="text-gray-500">{{ __('pub_theme::pages_search.hero.description.description') }}</p>
         </div>
         <form action="{{ route('search', ['lang' => $lang]) }}" method="get" class="flex items-center max-w-4xl mx-auto space-x-2">
             <div class="grow">
-                <input name="search" class="w-full bg-gray-200 border-0 rounded-lg ring-0 focus:ring focus:ring-blue-200 focus:bg-white pe-8" type="text" placeholder="Search anything ..." value="aaa{{-- $query --}}">
+                <input name="search" class="w-full bg-gray-200 border-0 rounded-lg ring-0 focus:ring focus:ring-blue-200 focus:bg-white pe-8" type="text" placeholder="{{ __('pub_theme::pages_search.form.query.placeholder') }}" value="aaa{{-- $query --}}">
             </div>
             <div>
                 <button type="submit" class="flex items-center px-3 py-2 space-x-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600">
                     <x-heroicon-o-magnifying-glass class="size-5" />
-                    <span class="hidden sm:block">Search</span>
+                    <span class="hidden sm:block">{{ __('pub_theme::pages_search.form.submit.label') }}</span>
                 </button>
             </div>
         </form>
@@ -51,7 +51,7 @@ render(function (View $view) {
         @if(count($articles))
             <div class="max-w-6xl p-4 mx-auto bg-white border border-gray-100 rounded-lg">
                 <div class="space-y-4">
-                    <h5 class="font-semibold">Markets</h5>
+                    <h5 class="font-semibold">{{ __('pub_theme::pages_search.results.markets.title') }}</h5>
                     <ul class="space-y-2">
                         @foreach($articles as $article)
                             <li>

@@ -55,7 +55,7 @@
         </div>
 
         <div class="border-t border-slate-800 mt-8 pt-8 text-center text-gray-400 text-sm">
-            <p>&copy; {{ date('Y') }} Laravel Pizza Meetups. Built with Laravel, Filament, and Livewire.</p>
+            <p>&copy; {{ date('Y') }} Laravel Pizza Meetups. {{ __('pub_theme::footer.credits.built_with.message') }}</p>
         </div>
     </div>
 </footer>

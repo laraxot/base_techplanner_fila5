@@ -20,7 +20,7 @@ middleware(['guest']);
     Chiamata widget: @livewire(ClassName::class) — come da docs Filament.
     https://filamentphp.com/docs/widgets/adding-a-widget-to-a-blade-view
 --}}
-<x-layouts.base>
+<x-layouts.base :title="__('user::auth.login.title.label')">
 
     {{-- Full-screen split layout: brand panel sx + form panel dx --}}
     {{-- Mobile: min-h-dvh (non 100vh: la barra URL di iOS/Android non deve coprire il fondo). --}}

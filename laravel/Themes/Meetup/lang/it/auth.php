@@ -58,6 +58,12 @@ return [
         'send_link' => [
             'label' => 'Invia il link per reimpostare la password',
         ],
+        'or' => [
+            'label' => 'Oppure',
+        ],
+        'back_to_login' => [
+            'label' => 'torna al login',
+        ],
     ],
     'sections' => [
         'verify' => [

@@ -58,6 +58,12 @@ return [
         'send_link' => [
             'label' => 'Send password reset link',
         ],
+        'or' => [
+            'label' => 'Or',
+        ],
+        'back_to_login' => [
+            'label' => 'return to login',
+        ],
     ],
     'sections' => [
         'verify' => [

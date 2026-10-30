@@ -42,7 +42,7 @@
 
         <div class="border-t border-slate-800 mt-8 pt-8 text-center">
             <p class="text-gray-400 text-sm">
-                &copy; {{ date('Y') }} Laravel Pizza Meetups. Made with ❤️ and Laravel.
+                &copy; {{ date('Y') }} Laravel Pizza Meetups. {{ __('pub_theme::footer.credits.made_with.message', ['heart' => '❤️']) }}
             </p>
         </div>
     </div>

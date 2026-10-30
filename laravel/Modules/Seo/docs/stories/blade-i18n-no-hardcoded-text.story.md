@@ -47,3 +47,11 @@ Testi in PHP non toccati: circa 1 chiamata `->label()`, `->placeholder()`, `->to
 ## Riferimenti
 
 Metodo e regola completa: [story del tema Two](../../../../Themes/Two/docs/stories/blade-i18n-no-hardcoded-text.story.md); protocollo a cinque elementi: [regola 008](../../../../../docs/wiki/rules/008-translation-5-level-protocol.md). Il dettaglio per file e' nel repo privato di audit.
+
+### Passata 2026-10-30 (sessione 97f16a39, i18n-small-modules: Seo)
+
+Scanner `Modules/Seo`: prima 7 occorrenze in 3 file (7 text), dopo 7 in 3 file (invariato).
+
+- Nessuna modifica. `check-blade-keys` su `Modules/Seo`: 6 usi, 0 mancanti; compilazione 12 file OK.
+- Residui (7): frammenti `@break @case('twitter')` ecc. in `components/social-share` (4, falsi positivi), stub `index` e `layouts/master` (3).
+- Non verificato: nessuna pagina guardata.

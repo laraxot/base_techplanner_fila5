@@ -46,8 +46,8 @@ new class extends Component
                 {{ __('pub_theme::auth.password.reset.title') }}
             </h2>
             <div class="text-sm leading-5 text-center text-gray-600 dark:text-gray-400 space-x-0.5">
-                <span>Or</span>
-                <x-ui.text-link href="{{ route('login') }}">return to login</x-ui.text-link>
+                <span>{{ __('pub_theme::auth.password.or.label') }}</span>
+                <x-ui.text-link href="{{ route('login') }}">{{ __('pub_theme::auth.password.back_to_login.label') }}</x-ui.text-link>
             </div>
         </div>
 

@@ -7,9 +7,9 @@
         <a href="#" class="text-blue-700 text-sm font-bold uppercase pb-4">Technology</a>
         <a href="#" class="text-3xl font-bold hover:text-gray-700 pb-4">{{ $getRecord()->question_txt }}</a>
         <p href="#" class="text-sm pb-3">
-            By <a href="#" class="font-semibold hover:text-gray-800">David Grzyb</a>, Published on April 25th, 2020
+            {{ __('pub_theme::blog.article_card.byline_by.label') }} <a href="#" class="font-semibold hover:text-gray-800">David Grzyb</a>{{ __('pub_theme::blog.article_card.published_on.message', ['date' => 'April 25th, 2020']) }}
         </p>
         <a href="#" class="pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis porta dui. Ut eu iaculis massa. Sed ornare ligula lacus, quis iaculis dui porta volutpat. In sit amet posuere magna..</a>
-        <a href="#" class="uppercase text-gray-800 hover:text-black">Continue Reading <i class="fas fa-arrow-right"></i></a>
+        <a href="#" class="uppercase text-gray-800 hover:text-black">{{ __('pub_theme::blog.article_card.read_more.label') }} <i class="fas fa-arrow-right"></i></a>
     </div>
 </article>

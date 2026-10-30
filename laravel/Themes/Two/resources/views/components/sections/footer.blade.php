@@ -58,7 +58,7 @@
                 <span class="text-lg font-semibold mb-4 block">{{ $services['title'] ?? __('pub_theme::footer_section.services.title.title') }}</span>
                 <ul class="space-y-2 text-gray-300 text-sm">
                     @foreach($services['items'] ?? [] as $item)
-                        <li><a class="hover:text-brand-green transition-colors" href="/it/servizi">{{ $item }}</a></li>
+                        <li><a class="hover:text-brand-green transition-colors" href="{{ route('container0', ['container0' => 'servizi']) }}">{{ $item }}</a></li>
                     @endforeach
                 </ul>
             </div>
@@ -124,7 +124,7 @@
                         <span>WhatsApp</span>
                     </a>
                     @endif
-                    <a href="/it/contacts" class="flex items-center gap-2 px-5 py-3 bg-orange-500 hover:bg-orange-600 text-white rounded-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg" aria-label="{{ __('pub_theme::footer_section.quick.book_description.label') }}">
+                    <a href="{{ route('container0', ['container0' => 'contacts']) }}" class="flex items-center gap-2 px-5 py-3 bg-orange-500 hover:bg-orange-600 text-white rounded-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg" aria-label="{{ __('pub_theme::footer_section.quick.book_description.label') }}">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                         </svg>

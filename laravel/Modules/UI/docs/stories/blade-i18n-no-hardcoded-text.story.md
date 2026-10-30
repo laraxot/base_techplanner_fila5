@@ -88,3 +88,14 @@ Note sui valori: `it` e' l'italiano naturale (nessuna Blade aveva un testo di ri
 Restano 2 chiavi, fuori dal perimetro di questa passata (non sono in `Modules/UI/lang`): `user::login.page.title` e `user::login.page.subtitle`, usate da `components/layouts/auth-split` e assenti in `en`, `de`, `es` del modulo User.
 
 Da sapere, non toccato: `de/auth.php` ha ancora in italiano `register.*`, la maggior parte di `profile.*` (anche `update_password`, usata da `change_password`), `user_dropdown.*` e `logout.*` (il controllo le conta come presenti perche' la chiave esiste); `en/studio-selector.php` e `de/studio-selector.php` hanno ancora in italiano le voci `actions`, `empty`, `fields`, `accessibility`. Il controllo e' euristico e non cerca chiavi costruite a runtime; nessuna pagina e' stata guardata in un browser.
+
+### Passata 2026-10-30 (sessione 97f16a39, i18n-geo-ui: UI)
+
+Scanner `Modules/UI`: prima 162 occorrenze in 57 file (126 text, 9 attr, 3 route-page-name, 24 route-unknown), dopo 162 in 57 file: nessuna Blade toccata, ogni voce valutata.
+
+- Falsi positivi dello scanner (nessun testo da tradurre): direttive Blade e frammenti Alpine (`@error`, `@csrf`, `@method`, `@svg`, `@teleport`, `@break @case`, `, 'disabled': currentStep` in `stepper`, `aria-label` con `getDayAriaLabel(day)` e con `@js(__('ui::auth.navigation.*'))`).
+- Demo Tailwind lasciate: nomi di persona e di luogo («San Francisco, CA»), lorem ipsum, `USD`, marchi (Facebook, Twitter, WhatsApp, loghi `alt` Tuple/Mirage/StaticKit/Transistor/Workcation), nomi di file nei pannelli di codice.
+- Scaffold: `index` («Hello World»), `layouts/master` («Module UI»), `components/nav-link` («nav-link»), `filament/table/collapsible-row-content` («AAAAAAA»), `filament/widgets/stat-with-icon` («BBB», la Blade non compila gia' prima: la corregge un altro agente).
+- Non toccate per decisione dell'utente: 24 `route-unknown` e 3 `route-page-name` (`profile.edit` in `patient_dashboard`, `user_profile`, `ui/app/header`).
+- Controlli: `check-blade-keys` su `Modules/UI`: restano 2 chiavi mancanti, entrambe `user::login.page.*` (modulo User); le altre erano gia' state colmate dalla sezione «Chiavi mancanti colmate» qui sopra (task `ui-missing-lang-keys`), non da questa passata.
+- Non verificato: il confronto `en == it` sulle 944 chiavi usate dalle Blade trova 173 (en), 169 (de) e 157 (es) valori uguali all'italiano; la gran parte e' lorem ipsum, nomi di prodotto o termini uguali (Blog, Video, Logo); le voci italiane vere in `de/auth.php` sono gia' elencate sopra e non sono state toccate.

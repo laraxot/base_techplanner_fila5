@@ -4,7 +4,7 @@ type: story
 status: done
 priority: high
 created: 2026-06-06
-updated: 2026-10-06
+updated: 2026-10-30
 tags: [phpstan, quality, enum, bmad, swarm]
 ---
 # Story: Full PHPStan pass on all Modules
@@ -58,8 +58,18 @@ Dopo il rifacimento di `vendor/` (phpstan 2.3.0→2.3.3, larastan 3.12.3→3.13.
 - **Employee, 1**: `QueueableAction::onQueue()` restituisce un proxy anonimo che PHPStan vede `mixed` (stessa causa già documentata in `Media/MediaConvertsTable`); `exportData()` ora accoda direttamente `ActionJob` con `->onQueue('exports')`, stesso comportamento.
 Esito: `clear-result-cache` + `heavy-slot.sh phpstan analyse Modules` → **exit 0, 0 errori**. Pest non eseguito (`.env.testing` = MySQL, DB `*_test` assente).
 
-### Debito aperto: `@phpstan-ignore` nel codice (misurato 2026-10-28 17:20)
-80 annotazioni in `Modules/*/app` (Xot 44, Media 15, User 6, Geo 6, Notify 4, Lang 2, Activity 2, Tenant 1), contro la regola «mai `@phpstan-ignore`»: lo zero è in parte coperto da loro. `laravel/phpstan.neon` ha `ignoreErrors` vuoto e nessuna baseline (a norma). Per tipo: `trait.unused` 20 (trait di libreria Xot, scopo da verificare caso per caso), `method.deprecated` 16 (hook di progetto omonimi a nomi deprecati di Filament), `*.alreadyNarrowedType` 6, `-next-line` generici 15, `method.notFound` 3, `missingType` 1. Procedura: togliere l'annotazione, rieseguire PHPStan sul modulo, correggere la causa (tipo reale, rinomina, trait da collegare o da non dichiarare) senza `mixed`; richiede `vendor/` stabile. Un agent per modulo (Xot da solo).
+### Debito aperto: `@phpstan-ignore` nel codice (da 80 a 7, misurato 2026-10-30)
+Il 2026-10-28 le annotazioni in `Modules/*/app` erano 80 (Xot 44, Media 15, User 6, Geo 6, Notify 4, Lang 2, Activity 2, Tenant 1), contro la regola «mai `@phpstan-ignore`»: lo zero era in parte coperto da loro. Il 2026-10-30 sei lane disgiunte (Geo/Lang/Activity, Xot trait vari, Xot tabella, Media, User/Notify, chiavi lang UI) ne hanno tolte 66 (restavano 14); un giro successivo ha tolto le ultime 7 `method.deprecated` di `HasXotTable`: restano **7** (Xot 2, Media 2, User 1, Tenant 1, Activity 1). `analyse Modules` dà **0 errori** con cache dei risultati svuotata e di nuovo dopo l'ultimo giro; `laravel/phpstan.neon` è invariato (`ignoreErrors` vuoto, nessuna baseline). Procedura seguita: togliere l'annotazione, rianalizzare la **cartella** (non il singolo file: `trait.unused` scatta solo così), correggere la causa senza `mixed`. Le story delle lane sono `phpstan-ignore-removal` in `Modules/{Geo,Lang,Activity,Xot,Media,User}/docs/stories/`.
+
+Cosa ha chiuso le annotazioni: la maggior parte era obsoleta (PHPStan non segnalava più nulla); `method.deprecated` (hook di progetto omonimi a metodi deprecati di Filament) si risolve con `@not-deprecated` sull'hook; i `trait.unused` si risolvono dove il trait è davvero usato (anche solo da fixture/probe di test: se escono dal perimetro analizzato l'errore torna); `Media\Actions\Image\Merge` è stata riscritta sull'API di Intervention Image 4 (`decodePath`, `createImage`, `insert`) perché con la 4.4.0 installata il vecchio codice non girava.
+
+Le sette `method.deprecated` di `Xot/app/Filament/Traits/HasXotTable.php` si sono chiuse aggiungendo `@not-deprecated` agli override di `XotBaseRelationManager` (le due varianti), `XotBaseResource/Pages/XotBaseManageRelatedRecords` e `XotBaseListRecords` (quattro stub) e dichiarando `getTableColumns()` in `XotBaseTableWidget`. Togliere la deprecazione ha fatto emergere due segnalazioni prima nascoste (dentro un metodo deprecato le chiamate a metodi deprecati non si segnalano): `disableCreateAnother()` di Filament, sostituito dall'equivalente `createAnother(false)`, e la chiamata di `TenantsRelationManager` a `ListTenants::getTableColumns()`, chiusa dal tag su `XotBaseListRecords`.
+
+Restano, con il motivo:
+- `trait.unused` su trait senza consumatori nel repo: `Activity/.../HasSnapshots` (trait vuoto), `Xot/.../HasUuid`, `User/.../HasTeamsMembershipAdministration`, `Tenant/.../SushiToPhpArray` (merge Tenant aperto, non toccato). Cancellarli è una decisione dell'utente.
+- `Xot/.../EnumIntegerTrait`: API di piattaforma senza consumatori nel repo.
+- `method.notFound` ×2 in `Media/Actions/Video/ConvertVideoBy{Data,MediaConvert}Action`: `MediaExporter::save()` accetta un solo argomento, quindi il formato WebM non viene mai applicato; serve scegliere il formato.
+- Non verificato: Pest (`.env.testing` punta a MySQL con dati veri); le modifiche a `InteractsWithTenant` (ora `Assert::subclassOf`: con `tenant.tenant_model` non valido lancia `InvalidArgumentException` invece dell'errore Eloquent; la chiave non è definita in nessuna config, il default è `Tenant::class`) e a `Merge.php` (provata solo con una sonda GD) non hanno test eseguiti.
 
 ### Riverifica 2026-10-30 e ripartenza (portato qui da `docs/chat/handoff-phpstan-modules-current.md`)
 

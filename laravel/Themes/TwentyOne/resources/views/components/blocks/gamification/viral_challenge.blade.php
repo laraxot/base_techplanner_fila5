@@ -33,7 +33,7 @@
     $progressBar = $currentChallenge['progress_bar'] ?? null;
     $progressPercent = 0;
     
-    if ($progressBar && isset($progressBar['current'], $progressBar['total']) {
+    if ($progressBar && isset($progressBar['current'], $progressBar['total'])) {
         $progressPercent = round(($progressBar['current'] / $progressBar['total']) * 100);
     }
 @endphp

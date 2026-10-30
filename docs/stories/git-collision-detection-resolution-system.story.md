@@ -253,7 +253,7 @@ Un'altra sessione ha tolto i marker alle 16:34, spesso tenendo il lato upstream.
 3. Da scegliere la copia canonica: `Activity/docs/module.md` (stub di 14 righe contro 318 scartate), `Activity/docs/module-analysis.md`, `Lang/docs/00-index.md` contro `00-INDEX.md`, stile del README di Gdpr e Job, impostazioni IDE nei `_*.code-workspace`.
 4. Emerso dagli agent di docs, non toccato da nessuno:
    - `mixed`: `00-master-prompt.md`, `25-services-to-actions.md` e il README dicono «ultima spiaggia» (come l'utente); valgono i prompt, il brief che diceva «mai» era sbagliato.
-   - `@phpstan-ignore`: 80 nel codice di `Modules/*/app` contro la regola; il debito e' in [all-modules-phpstan-zero-errors](./all-modules-phpstan-zero-errors.story.md).
+   - `@phpstan-ignore`: 80 nel codice di `Modules/*/app` contro la regola il 2026-10-28, 7 il 2026-10-30; il debito residuo e' in [all-modules-phpstan-zero-errors](./all-modules-phpstan-zero-errors.story.md).
    - Duplicati esatti: Employee 66 gruppi (68 copie), Geo 41 gruppi (88 file), 43 coppie `.md`/`.txt` nei prompt. Trasformarli in rimandi di 1-2 righe richiede di decidere quale copia e' canonica.
    - Docs di altri progetti dentro i moduli: User cita Fixcity (58 file), SaluteOra (86), Patient (82); Geo e Sixteen citano Fixcity; Zero, Cms e Quaeris.
    - Issue e URL: una issue di `base_fixcity_fila5` citata da un file di Activity; User ha 792 `issues:` boilerplate verso `provtv/base_ptv_fila5#124` e 403 `canonical:` verso `Themes/docs/shared-components/`, che non esiste.

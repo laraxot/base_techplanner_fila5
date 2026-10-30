@@ -37,7 +37,7 @@
                           <a href="#" class="hover:underline">{{ __('pub_theme::footer.legal.privacy.label') }}</a>
                       </li>
                       <li>
-                          <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                          <a href="#" class="hover:underline">{{ __('pub_theme::footer.legal.terms.label') }}</a>
                       </li>
                   </ul>
               </div>

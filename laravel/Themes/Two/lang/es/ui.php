@@ -94,4 +94,20 @@ return [
         'gps_location' => 'Ubicación automática por GPS',
         'describe_detail' => 'Describe el problema en detalle',
     ],
+    'header_area_personale' => [
+        'settings' => [
+            'label' => 'Ajustes',
+            'description' => 'Ajustes de la cuenta y preferencias',
+        ],
+        'my_practices' => [
+            'label' => 'Mis trámites',
+            'description' => 'Lista de trámites en curso',
+            'empty' => 'Todavía no has enviado ninguna incidencia.',
+            'new_report' => 'Enviar una nueva incidencia',
+        ],
+        'my_services' => [
+            'label' => 'Mis servicios',
+            'description' => 'Lista de los servicios disponibles para el usuario',
+        ],
+    ],
 ];

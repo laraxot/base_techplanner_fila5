@@ -49,3 +49,11 @@ Testi in PHP: non cercati in questa campagna sul modulo, quindi non toccati.
 ## Riferimenti
 
 Metodo e regola completa: [story del tema Two](../../../../Themes/Two/docs/stories/blade-i18n-no-hardcoded-text.story.md); protocollo a cinque elementi: [regola 008](../../../../../docs/wiki/rules/008-translation-5-level-protocol.md). Il dettaglio per file e' nel repo privato di audit.
+
+### Passata 2026-10-30 (sessione 97f16a39, i18n-small-modules: Gdpr)
+
+Scanner `Modules/Gdpr`: prima 14 occorrenze in 6 file (13 text, 1 attr), dopo 14 in 6 file (invariato): tutte falsi positivi o stub.
+
+- Nessuna Blade toccata. Chiave nuova in `de` ed `es` (`register.links.and`: «und», «y»): la usa `components/consent-label.blade.php` e mancava. `check-blade-keys` su `Modules/Gdpr` da 1 chiave mancante a 0; compilazione 9 file OK; `php -l` pulito sui due file lingua.
+- Residui (14): direttive `@error` in `filament/widgets/auth/register` (7, falsi positivi), stub `index` e `layouts/master` (3), sigle `SSL` e `GDPR` in `components/already-registered` (2), «WIP» in `filament/pages/profile` (pagina Filament senza classe che la richiami), `title=__('gdpr::account.delete.heading.title')` in `account/delete` (1, e' gia' una chiave).
+- Non verificato: nessuna pagina guardata.

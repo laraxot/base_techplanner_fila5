@@ -52,8 +52,8 @@
                         <image xlink:href="../assets/images/logo-comune.svg"/>
                       </svg>
                       <div class="it-brand-text">
-                        <div class="it-brand-title">Il mio Comune</div>
-                        <div class="it-brand-tagline d-none d-md-block">Un comune da vivere </div>
+                        <div class="it-brand-title">{{ __('pub_theme::header_portal.brand.municipality.title') }}</div>
+                        <div class="it-brand-tagline d-none d-md-block">{{ __('pub_theme::header_portal.brand.tagline.description') }}</div>
                       </div>
                     </a>
                 </div>
@@ -146,29 +146,29 @@
                         <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-pa"></use>
                       </svg>
                       <div class="it-brand-text">
-                        <div class="it-brand-title">Nome del Comune</div>
+                        <div class="it-brand-title">{{ __('pub_theme::header_portal.brand.menu_municipality.title') }}</div>
                       </div>
                     </a>
                     <nav aria-label="{{ __('pub_theme::header_portal.nav.main.label') }}">
                       <ul class="navbar-nav" data-element="main-navigation">
                         <li class="nav-item">
                           <a class="nav-link" href="../sito/amministrazione.html" data-element="management">
-                            <span>Amministrazione</span>
+                            <span>{{ __('pub_theme::header_portal.nav.admin.label') }}</span>
                           </a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="../sito/novita.html" data-element="news">
-                            <span>Novità</span>
+                            <span>{{ __('pub_theme::header_portal.nav.news.label') }}</span>
                           </a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="../sito/servizi.html" data-element="all-services">
-                            <span>Servizi</span>
+                            <span>{{ __('pub_theme::header_portal.nav.services.label') }}</span>
                           </a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="../sito/eventi.html" data-element="live">
-                            <span>Vivere il Comune</span>
+                            <span>{{ __('pub_theme::header_portal.nav.live.label') }}</span>
                           </a>
                         </li>
                       </ul>
@@ -176,17 +176,17 @@
                     <nav aria-label="{{ __('pub_theme::header_portal.nav.secondary.label') }}">
                       <ul class="navbar-nav navbar-secondary">
                         <li class="nav-item">
-                          <a class="nav-link" href="../sito/argomento.html">Iscrizioni</a>
+                          <a class="nav-link" href="../sito/argomento.html">{{ __('pub_theme::header_portal.nav.enrollment.label') }}</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="../sito/argomento.html">Estate in città</a>
+                          <a class="nav-link" href="../sito/argomento.html">{{ __('pub_theme::header_portal.nav.summer.label') }}</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="../sito/argomento.html">Polizia locale</a>
+                          <a class="nav-link" href="../sito/argomento.html">{{ __('pub_theme::header_portal.nav.local_police.label') }}</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="argomenti.html" data-element="all-topics">
-                            <span>Tutti gli argomenti 
+                            <span>{{ __('pub_theme::header_portal.nav.all_topics.label') }}
                               <svg class="icon icon-sm">
                                 <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-chevron-right"></use>
                               </svg>

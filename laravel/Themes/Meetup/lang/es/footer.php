@@ -64,4 +64,12 @@ return [
             'title' => 'Enlaces útiles',
         ],
     ],
+    'credits' => [
+        'built_with' => [
+            'message' => 'Creado con Laravel, Filament y Livewire.',
+        ],
+        'made_with' => [
+            'message' => 'Hecho con :heart y Laravel.',
+        ],
+    ],
 ];

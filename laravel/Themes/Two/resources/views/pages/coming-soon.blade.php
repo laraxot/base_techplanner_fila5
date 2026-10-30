@@ -2,29 +2,12 @@
 
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ __('pub_theme::coming-soon.description') }}">
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="{{ __('pub_theme::coming-soon.title') }} - {{ config('app.name') }}">
-    <meta property="og:description" content="{{ __('pub_theme::coming-soon.description') }}">
-    <meta property="og:type" content="website">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ __('pub_theme::coming-soon.title') }} - {{ config('app.name') }}">
-    <meta name="twitter:description" content="{{ __('pub_theme::coming-soon.description') }}">
-    
-    <title>{{ __('pub_theme::coming-soon.title') }} - {{ config('app.name') }}</title>
-    
-    <!-- Styles -->
-    @vite(['themes/Two/resources/css/app.css'])
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}">
-</head>
+<x-cms::head
+    :title="__('pub_theme::coming-soon.title')"
+    :description="__('pub_theme::coming-soon.description')"
+    :homepage="false"
+    theme-color="#0f2b46"
+/>
 <body class="bg-gradient-primary min-h-screen flex items-center justify-center p-4 md:p-8 relative overflow-hidden">
     
     <!-- Background Decorative Elements -->
@@ -77,6 +60,6 @@
     </main>
     
     <!-- Scripts -->
-    @vite(['themes/Two/resources/js/app.js'])
+    @vite(['resources/js/app.js'], 'themes/Two')
 </body>
 </html>

@@ -58,6 +58,12 @@ return [
         'send_link' => [
             'label' => 'Enviar enlace para restablecer la contraseña',
         ],
+        'or' => [
+            'label' => 'O',
+        ],
+        'back_to_login' => [
+            'label' => 'volver al inicio de sesión',
+        ],
     ],
     'sections' => [
         'verify' => [

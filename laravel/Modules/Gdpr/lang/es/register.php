@@ -158,4 +158,7 @@ return [
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'already_have_account' => '¿Ya tienes una cuenta?',
+    'links' => [
+        'and' => 'y',
+    ],
 ];

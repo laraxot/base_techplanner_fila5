@@ -58,6 +58,12 @@ return [
         'send_link' => [
             'label' => 'Link zum Zurücksetzen des Passworts senden',
         ],
+        'or' => [
+            'label' => 'Oder',
+        ],
+        'back_to_login' => [
+            'label' => 'zurück zur Anmeldung',
+        ],
     ],
     'sections' => [
         'verify' => [

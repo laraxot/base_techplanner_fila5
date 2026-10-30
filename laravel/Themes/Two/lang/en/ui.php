@@ -94,4 +94,20 @@ return [
         'gps_location' => 'Automatic GPS location',
         'describe_detail' => 'Describe the problem in detail',
     ],
+    'header_area_personale' => [
+        'settings' => [
+            'label' => 'Settings',
+            'description' => 'Account settings and preferences',
+        ],
+        'my_practices' => [
+            'label' => 'My cases',
+            'description' => 'List of your ongoing cases',
+            'empty' => 'You have not submitted any report yet.',
+            'new_report' => 'Submit a new report',
+        ],
+        'my_services' => [
+            'label' => 'My services',
+            'description' => 'List of the services available to the user',
+        ],
+    ],
 ];

@@ -17,6 +17,11 @@ return [
             'contacts' => 'Contact',
         ],
     ],
+    'brand' => [
+        'project' => [
+            'label' => 'the project',
+        ],
+    ],
     'app_header' => [
         'dashboard' => [
             'label' => 'Dashboard',
