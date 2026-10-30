@@ -134,3 +134,4 @@ bmad/upstream/claude-code-bmad-skills
 laravel/config/local/techplanner/database/content/information_schema_tables.json
 archive
 .playwright-mcp/
+artifacts/
