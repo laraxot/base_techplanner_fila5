@@ -195,9 +195,12 @@ final class Head extends Component
 
     private function applyIcons(MetatagData $meta): void
     {
-        $favicon = $this->themeAssetUrl($meta, 'favicon.ico');
+        // Il favicon applicativo vive nel public root; il manifest invece può essere
+        // generato dal build del tema con il nome standard Vite `manifest.json`.
+        $favicon = $this->themeAssetUrl($meta, 'favicon.ico') ?? $this->publicAssetUrl('favicon.ico');
         $appleTouchIcon = $this->themeAssetUrl($meta, 'favicon-180x180.png');
-        $manifest = $this->themeAssetUrl($meta, 'site.webmanifest');
+        $manifest = $this->themeAssetUrl($meta, 'site.webmanifest')
+            ?? $this->themeAssetUrl($meta, 'manifest.json');
 
         if (null !== $favicon) {
             HeadManager::favicon($favicon);
@@ -219,6 +222,13 @@ final class Head extends Component
         $path = parse_url($url, PHP_URL_PATH);
 
         return is_string($path) && is_file(public_path(ltrim($path, '/'))) ? $url : null;
+    }
+
+    private function publicAssetUrl(string $file): ?string
+    {
+        $url = asset($file);
+
+        return is_file(public_path($file)) ? $url : null;
     }
 
     /**
