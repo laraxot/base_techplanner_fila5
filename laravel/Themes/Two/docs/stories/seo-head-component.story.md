@@ -8,7 +8,7 @@ updated: 2026-10-30
 tags: [bmad, seo, head, blade, accessibility, mobile]
 related:
   - "../../../../../docs/stories/seo-head-maximum-schema-org-hreflang.story.md"
-  - "../../../Modules/Cms/docs/stories/seo-head-component.story.md"
+  - "../../../../Modules/Cms/docs/stories/seo-head-component.story.md"
   - "../seo-multilingual-guide.md"
 ---
 

@@ -7,6 +7,8 @@ namespace Modules\Cms\Tests\Unit\Actions\Head;
 use Modules\Cms\Actions\Head\BuildHeadSchemaAction;
 use Modules\Cms\Actions\Head\ResolveHreflangAlternatesAction;
 use Modules\Cms\Actions\Head\ResolveRobotsPolicyAction;
+use Modules\Cms\Actions\BuildPageSchemaAction;
+use Modules\Xot\Datas\MetatagData;
 use Laravel\Head\Schema\SchemaObject;
 use PHPUnit\Framework\Assert;
 
@@ -79,4 +81,15 @@ test('head schema separates homepage identity from page breadcrumbs', function (
 
     Assert::assertSame('WebPage', schemaType($page[0]));
     Assert::assertSame('BreadcrumbList', schemaType($page[1]));
+});
+
+test('page schema accepts the canonical URL rendered by the head component', function (): void {
+    $schema = (new BuildPageSchemaAction())->execute(
+        meta: MetatagData::make(),
+        routeName: 'home',
+        path: '/',
+        canonical: 'https://example.test/it',
+    );
+
+    Assert::assertSame('https://example.test/it', $schema['url'] ?? null);
 });

@@ -205,6 +205,7 @@ La directory `root-md-files/` non esiste piu' al 2026-10-08. Il changelog archiv
 
 ## BMAD, stories and decision records
 
+- [stories/seo-site-defaults-hreflang-schema.story.md](./stories/seo-site-defaults-hreflang-schema.story.md) — policy ownership and shared CMS SEO actions
 - [stories/docs-index-audit.story.md](./stories/docs-index-audit.story.md) - first documentation-index audit (2026-09-26)
 - [stories/phpstan-cleanup-seo.story.md](./stories/phpstan-cleanup-seo.story.md) and [.dev.md](./stories/phpstan-cleanup-seo.dev.md) - PHPStan cleanup
 - [stories/phpstan-Seo-fix.md](./stories/phpstan-Seo-fix.md) - earlier PHPStan fix note

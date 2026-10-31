@@ -99,4 +99,27 @@ sono 123x20 e «Leggi» 57x16.
 AUDIT_BASE=http://192.168.1.40:8000 node bashscripts/tools/mobile-audit.mjs /tmp/two-audit 12
 ```
 
+## Verifica di chiusura
+
+La correzione del deployment ha riallineato `laravel/public/themes/Two/` e
+`public_html/themes/Two/`: le immagini `hero-bg.jpg`, `medical-equipment.jpg`
+e `service-odontoiatria.jpg` rispondono ora con HTTP 200 al percorso emesso
+dal tema (`/themes/Two/images/*`). Il build non usa più il vecchio symlink
+annidato; il contratto è documentato in
+[`wiki/concepts/public-asset-deployment.md`](wiki/concepts/public-asset-deployment.md).
+
+Audit finale locale su `/it`, `/it/about`, `/it/services`, `/it/blog`,
+`/it/contacts` e `/it/auth/login`:
+
+- tutte le pagine rispondono 200;
+- nessun overflow orizzontale a 320, 390, 768 e 1280 px;
+- axe WCAG 2.2 AA/AAA: nessuna violazione sulle pagine pubbliche;
+- il login conserva un `h1` mobile, il checkbox «ricordami» raggiunge 24 px e
+  l'errore AAA del testo descrittivo è stato corretto.
+
+Il login mantiene ancora alcuni controlli sotto 44 px nell'audit euristico:
+sono link/testi inline, non violazioni axe 2.5.8 dopo la correzione del
+checkbox. Non si applica padding indiscriminato ai link inline perché
+altererebbe il layout Filament e la leggibilità del form.
+
 Per axe: iniettare `axe.min.js` (in `~/.npm/_npx/*/node_modules/axe-core/`) con Playwright ed escludere `.phpdebugbar`.

@@ -422,6 +422,16 @@ footer .text-gray-400 {
     outline: 3px solid #1E5A96 !important;
     outline-offset: 2px !important;
 }
+
+/* Filament rende il checkbox del login come controllo nativo di 16px.
+   Manteniamo la semantica del campo e portiamo il bersaglio reale a 24px,
+   soglia WCAG 2.2 AA 2.5.8, senza alterare gli altri checkbox del sito. */
+.fo-auth-checkbox {
+    width: 1.5rem;
+    height: 1.5rem;
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+}
 /* WCAG 1.4.12 - Text Spacing (C21) - line-height minimo */
 body {
     line-height: 1.5;

@@ -8,7 +8,6 @@ export default defineConfig({
             input: ['resources/css/app.css', 'resources/js/app.js'],
             //publicDirectory: '../../../public_html',
             //buildDirectory: 'themes/Two',
-            outDir: './public',
             buildDirectory: '.',
             manifest: 'manifest.json',
             refresh: true,
@@ -16,6 +15,9 @@ export default defineConfig({
         tailwindcss(),
     ],
     build: {
+        // Il web root canonico e' laravel/public; public_html viene sincronizzato
+        // da `npm run sync-public` e non deve diventare un symlink al tema.
+        outDir: '../../../public/themes/Two',
         emptyOutDir: false,
     },
 })

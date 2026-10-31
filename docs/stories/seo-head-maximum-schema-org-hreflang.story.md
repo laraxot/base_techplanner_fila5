@@ -1,13 +1,14 @@
 ---
 title: "SEO al massimo del front office: <x-cms::head>, laravel/head, schema.org e hreflang"
 type: story
-status: in-progress
+status: review
 priority: high
 created: 2026-10-30
 updated: 2026-10-30
 tags: [seo, head, laravel-head, schema-org, hreflang, canonical, open-graph, theme-two, multilingual, playwright, bmad]
 qmd: "seo head laravel/head schema.org hreflang canonical open graph theme two x-cms::head seo cms defaults precedence"
 related:
+  - ../wiki/concepts/laravel-head-layers-and-seo-checklist.md
   - ../../laravel/Modules/Cms/docs/stories/seo-head-component.story.md
   - ../../laravel/Modules/Cms/docs/seo-head-architecture.md
   - ../../laravel/Modules/Seo/docs/stories/seo-site-defaults-hreflang-schema.story.md
@@ -88,24 +89,27 @@ Da verificare: `/en` e `/it/faq` contengono due occorrenze di `<title` (probabil
 
 ## Acceptance criteria
 
-- [ ] Ogni pagina pubblica indicizzabile ha: un solo `<title>` e una sola `description` univoci e senza segnaposto; un `canonical`
+- [~] Ogni pagina pubblica indicizzabile ha: un solo `<title>` e una sola `description` univoci e senza segnaposto; un `canonical`
       assoluto con lo schema realmente servito; `og:*` e `twitter:*` completi; `og:locale` nel formato `ll_RR`.
-- [ ] hreflang per le 4 lingue più `x-default`, auto-riferito e reciproco su tutte le pagine che hanno una traduzione.
-- [ ] JSON-LD valido (parse + vocabolario schema.org): `Organization` e `WebSite` sulla home, `BreadcrumbList` sulle pagine interne,
-      `FAQPage` su `/faq`.
-- [ ] Login, registrazione, profilo e pagine di errore sono `noindex, follow` e non compaiono nella sitemap.
-- [ ] Nessuna chiave grezza (`metatag.*`) né segnaposto nell'HTML, in nessuna lingua.
-- [ ] Una pagina può sovrascrivere un solo campo (`Head::title()`, `->withHead()`) senza perdere gli altri (test del pacchetto + del componente).
-- [ ] Nessuna regressione visiva e funzionale su Two: screenshot prima/dopo a 390×844 e 1280×800, chiaro e scuro, console senza errori, axe 0
-      violazioni, hero non coperta dall'header.
-- [ ] `phpstan analyse Modules` a 0 errori, nessun `@phpstan-ignore`, nessuna baseline.
+      Misurato tutto tranne `og:image` (manca l'asset); le descrizioni non sono univoche per pagina (vedi «Aperto» 3).
+- [x] hreflang per le lingue scritte (`it`, `en`) più `x-default`, auto-riferito e reciproco su tutte le pagine che hanno una traduzione (misurato con GET).
+- [x] JSON-LD valido (parse + vocabolario schema.org): `Organization` e `WebSite` sulla home, `BreadcrumbList` sulle pagine interne.
+      `FAQPage` tolto dai requisiti (Google non lo mostra più dal 7-5-2026).
+- [x] Login, registrazione, profilo e pagine di errore sono `noindex, follow`; la sitemap esclude le stesse pagine (36 URL, solo `it` ed `en`).
+- [x] Nessuna chiave grezza (`metatag.*`) né segnaposto nell'HTML, in nessuna lingua.
+- [~] Una pagina può sovrascrivere un solo campo (`Head::title()`, `->withHead()`) senza perdere gli altri: `flush()` rimosso, ma manca un test che lo provi.
+- [~] Nessuna regressione visiva e funzionale su Two: screenshot a 390×844 e 1280×800, chiaro e scuro, console pulita, hero non coperta (header a 112/80 px,
+      stato finale identico alla misura precedente). axe: 0 violazioni su 4 pagine su 5; il login ha 5 regole preesistenti. Il confronto pixel «prima/dopo» non è possibile:
+      lo screenshot scuro di prima era una pagina 500 causata da un'altra sessione.
+- [x] `phpstan analyse Modules` a 0 errori, nessun `@phpstan-ignore`, nessuna baseline.
 
 ## Claim
 
 | Chi | Scope | Stato |
 |---|---|---|
-| agente `unknown` (task «implement reusable SEO Head component for Theme Two») | corsia A: `Cms` `Head.php`, view, test, provider, layout `main`/`base` di Two, story Cms | in lock, in corso |
-| sessione 56da8100 (claude) | documenti, ricerca web, strumento di audit, politica/dati/schema in Seo (file nuovi), revisione di A a lock caduti | in corso |
+| agente `unknown` (task «implement reusable SEO Head component for Theme Two») | corsia A: `Cms` `Head.php`, view, test, provider, layout `main`/`base` di Two, story Cms | chiusa alle ~16:00 UTC (story `implemented`, lock caduti) |
+| sessione 56da8100 (claude) | documenti, ricerca web, strumento di audit, Action in `Cms/Actions/Head/`, revisione del componente e dei layout `main`/`base`/login di Two, `errors/minimal`, `Seo` `BuildSitemapAction` (solo la regola delle lingue scritte) | fatto, in `review`; lock rilasciati |
+| sessione 56da8100 (claude) — secondo giro «va piu' a fondo» | dopo due revisioni indipendenti (codice e SEO) e l'audit su tutte le 36 URL della sitemap: `Cms/Actions/Head/*` (policy robots: maiuscole/percent-encoding e regole pagina condivise con la sitemap; lingue scritte = titolo **e** blocchi; risoluzione della `Page` dal percorso; titolo senza doppio brand; descrizione per pagina dal `subtitle` dell'hero), `Head.php` (canonical unico, nessun canonical sui `noindex`), `BuildHeadSchemaAction` (`@id`, breadcrumb brevi), `Seo` `BuildSitemapAction` (stessa policy), titoli delle pagine di autenticazione di Two, test puri | fatto, in `review` (esiti in «Secondo giro»); lock rilasciati a fine giro |
 | sessione 97f16a39 (claude) — corsia C | solo raggiungibilita' di `/sitemap.xml` e `/robots.txt` su Two (rotte in `Seo/routes/web.php`, `BuildSitemapAction` esiste gia'); nessun file di A o B; non scrive un secondo audit ne' una seconda story | chiusa alle 15:55 UTC (esiti nella sezione «Esiti della corsia C») |
 
 Nota della corsia C (2026-10-30): la sessione 97f16a39 ha ricevuto la stessa richiesta, ha riconosciuto le corsie A e B, **ha ritirato** la propria story e il proprio strumento di audit per non duplicarli (il lock sul file della sua story e' stato rilasciato, il file non e' mai stato scritto). Le sue misure indipendenti (stesse di B: `metatag.*` grezzo, descrizione segnaposto, `og:locale` senza paese, nessun hreflang, JSON-LD minimo) confermano i difetti 1-8. Misure in piu': `/sitemap.xml` e `/robots.txt` rispondono 404 (la rotta di Xot `web_seo.php` ha il `@require` commentato in `Xot/routes/web.php`, `Seo/routes/web.php` e' vuoto); `og:image` `/images/logo.png`, `favicon.ico`, `site.webmanifest` e `favicon-180x180.png` del tema rispondono 404 (in `public/themes/Two/` c'e' solo `images/`). Una ricerca web indipendente e' in corso nella stessa sessione: il suo rapporto serve da secondo parere per quello di B, non da documento parallelo.
@@ -144,12 +148,128 @@ Fatto e misurato su Two (solo GET):
 - Per la corsia A, a lock caduti (la misura delle ~15:43 mostrava ancora due `<head>` e due `<title>` nella home; dopo i lock non rimisurata): `@vite` e' ancora a fine `<body>` in `main.blade.php` (da misurare se va nell'head),
   e il default `index, follow` arriva da `MetatagData` senza politica per le pagine riservate.
 
+**Aggiornamento 16:10 UTC (sitemap coerente con il `<head>`).** Rileggendo l'audit: i titoli CMS esistono solo in `it`/`en`, quindi `/de` e `/es` sono `noindex` (giusto) ma la sitemap li elencava (38 URL su 76).
+`Seo\Actions\Sitemap\BuildSitemapAction` ora elenca solo le lingue con titolo scritto e scarta le URL che `Cms\Actions\Head\ResolveRobotsPolicyAction::isIndexable()` esclude.
+Misurato: 36 URL (18 `it`, 18 `en`), hreflang reciproco, tutte 200 con `index, follow, max-image-preview:large`; PHPStan `Modules/Seo` a 0 errori.
+**Dipendenza per la corsia A:** `BuildSitemapAction` chiama `ResolveRobotsPolicyAction::isIndexable($path, $localeCodes)`; se la firma o il nome cambiano, `/sitemap.xml` va in 500.
+La regola «lingue con titolo scritto» e' duplicata (privata in `Head::translatedLocales()` e in `BuildSitemapAction::writtenLocales()`): quando A ha finito conviene estrarla in una Action di Cms e farla usare a entrambi.
+Per A: `ResolveRobotsPolicyAction::HIDDEN_SEGMENTS` non contiene `area-personale` ne' `notifications`, che `robots.txt` chiude (`BuildRobotsTxtAction::PRIVATE_SEGMENTS`): i due elenchi vanno unificati (pagine dietro login, quindi anche `noindex`).
+Durante la verifica, dalle 16:05 alle 16:06 UTC tredici pagine (`/it/services`, `/it/privacy`, `/it/terms`, ...) hanno risposto 500 per `Modules/Seo/app/View/Components/Head.php` con un import errato (`Illuminate\View\Components\Component`); il file e' sparito subito dopo (bozza di un'altra sessione) e le pagine sono tornate 200. La scansione automatica dei componenti Blade di un modulo carica ogni classe in `app/View/Components`: una bozza con un import sbagliato rompe le pagine che risolvono un componente.
+
 Errore mio da sapere: la prima versione delle rotte (classe senza array dentro un gruppo con `namespace()`) ha fatto rispondere 500 «Invalid route action» a `/sitemap.xml` e `/robots.txt`
 (probabilmente a tutto il sito di sviluppo per qualche minuto, non misurato). Corretto e rimisurato: `/it` e `/en` 200.
 
 Non fatto da questa corsia, di proposito: nessun secondo strumento di audit, nessuna modifica a `Head.php`, `head.blade.php` o ai layout di Two, nessuna asset (logo, favicon, manifest: servono file veri).
 
+## Esiti della revisione del componente (sessione 56da8100, 2026-10-30, lock di A caduti)
+
+Misurato con `bashscripts/tools/head-audit.mjs` su Two (`192.168.1.40:8000`, solo GET): 8 pagine × 390/1280 px × chiaro/scuro = 32 misure.
+
+| Misura | Controlli falliti | Tipi | Note |
+|---|---|---|---|
+| prima (componente di A, run 2) | 254 | 19 | `<head>` annidato, descrizione segnaposto, chiavi `metatag.*`, nessun hreflang/Organization/BreadcrumbList |
+| dopo (run 7) | 28 | 1 | solo `og:image` mancante (serve l'asset 1200×630) |
+
+CLS massimo 0,022 (pagina di login), console pulita e nessuna risorsa fallita su tutte le pagine; `phpstan analyse Modules` 0 errori;
+Pest isolato (senza avviare Laravel né toccare MySQL) 6 test / 24 asserzioni verdi sulle quattro Action.
+Le misure 4 e 6 sono state falsate da 500 transitori di un'altra sessione (rotta sitemap e un `Seo/View/Components/Head.php` con un import inesistente, poi
+rimosso): sono state ripetute a server stabile.
+
+Difetti 1–10: tutti chiusi tranne il numero 8.
+
+| # | Esito |
+|---|---|
+| 1 | `keywords`/`author` tolti (Google li ignora); `og:site_name` e `application-name` dal brand `pub_theme::header.brand.name` |
+| 2 | descrizione del sito dal tema (`pub_theme::seo.site.description`, 4 lingue); se manca il tag si omette |
+| 3 | `/auth/*`, `profile`, `dashboard`, `area-personale`, `notifications`, `coming-soon`, `preview-content` sono `noindex, follow`; titolo del login «Accedi al tuo account — Sottana Service» |
+| 4 | canonical con `forceHttps: false`: stesso schema della URL servita, uguale a `og:url` |
+| 5 | `og:locale` `it_IT`/`en_GB` da `LaravelLocalization`; hreflang `it`, `en` e `x-default` con auto-riferimento, URL assolute, reciprocità verificata con GET |
+| 6 | un solo brand («Sottana Service») |
+| 7 | home: `Organization` + `WebSite`; interne: `WebPage` + `BreadcrumbList`; nessun `FAQPage` (vedi D6) |
+| 8 | **aperto**: `og:image` omessa perché `/images/logo.png` dava 404; serve `public/themes/Two/images/social-share.jpg` 1200×630 |
+| 9 | `flush()` tolto; i valori di pagina restano a runtime |
+| 10 | `theme-color` passato dal layout (`theme-color="#0f2b46"`); qualcuno ha lasciato in classe un valore di ripiego uguale, accettato per i layout che non lo passano |
+
+Altre correzioni nate dalla misura:
+
+- **`<head>` annidato**: i layout `components/layouts/main` e `base` di Two avvolgevano `<x-cms::head>` in un `<head>`, e la vista ne emette uno proprio, quindi
+  l'HTML grezzo aveva `<head><head>`, due `</head>` e due `csrf-token` (il DOM li unisce: per questo il controllo in browser di A non lo vedeva). Ora è il componente a possedere `<head>`.
+- **Pagine di errore**: `laravel/resources/views/errors/minimal.blade.php` aveva `<html lang="en">` fisso con testo italiano e nessun `robots`; ora lingua corrente e `noindex, follow`.
+- **Lingue non tradotte**: `/de` e `/es` servono contenuto italiano (i titoli CMS esistono solo in `it` e `en`). Sono `noindex`, senza hreflang e fuori dalla sitemap; quando si
+  scrive il titolo in quella lingua diventano indicizzabili da sole. La regola è in `Cms/Actions/Head/ResolveWrittenLocalesAction`, usata da `<x-cms::head>` e dalla sitemap.
+- Elenco dei segmenti riservati unico: `ResolveRobotsPolicyAction::HIDDEN_SEGMENTS` (letto da `<head>` e sitemap).
+
+### Decisioni riviste dopo la ricerca e il sorgente
+
+- **D2 corretta**: `Head::defaults()` è eager (gira al boot), quindi **non** può contenere nulla che dipenda da lingua o richiesta. I valori di sito dipendenti dalla lingua
+  si scrivono a runtime dal componente; in `defaults()` si può mettere solo ciò che è fisso. Per ora non si usa `defaults()`.
+- **D1 spostata**: le Action (robots, hreflang, schema, lingue scritte) stanno in `Cms/app/Actions/Head/`, non in `Seo`: `Seo` dipende già da `Cms`
+  (sitemap) e una dipendenza inversa sarebbe circolare. `Seo` le legge.
+- **D6 corretta**: niente `FAQPage` (rich result terminato il 7-5-2026), niente `SearchAction`, niente `ProfessionalService`. `Organization` finché non ci sono indirizzo e telefono reali.
+- **Nuova D9**: lingua non scritta ⇒ `noindex`, niente hreflang, fuori sitemap.
+- **Nuova D10**: gli asset (favicon, manifest, icona Apple, immagine social) si emettono solo se il file esiste.
+
+### Aperto, per l'utente o per altre corsie
+
+1. **Asset mancanti** in `public/themes/Two/`: `images/social-share.jpg` (1200×630), `favicon.ico` (quello in radice è vuoto, 0 byte), `favicon-180x180.png`, `site.webmanifest`. Senza, `og:image` e le icone restano omessi.
+2. **`robots.txt`** (corsia C, `Seo/Actions/Robots/BuildRobotsTxtAction`): chiude con `Disallow` le stesse aree che il `<head>` marca `noindex`. Con `Disallow` il crawler non legge il `noindex` e l'URL
+   può restare in indice: conviene togliere dal `robots.txt` le aree già `noindex` e tenere `Disallow` solo per i pannelli `/admin`. L'elenco unico è `ResolveRobotsPolicyAction::HIDDEN_SEGMENTS`.
+3. **Descrizione per pagina**: le pagine CMS non hanno un campo `description`, quindi tutte le pagine pubbliche ripetono la descrizione del sito. Serve un campo (o un estratto) per pagina.
+4. **Login in tema scuro** (difetto preesistente, non del `<head>`): le etichette dei campi sono invisibili (testo chiaro su scheda bianca) e axe segnala 5 regole (`landmark-one-main`,
+   `page-has-heading-one`, `region`, `color-contrast-enhanced`, `target-size`). Le altre quattro pagine misurate: 0 violazioni. Gli altri titoli delle pagine `auth` (registrazione, password) restano «Sottana Service».
+5. **Contenuto `de`/`es`**: da tradurre (titoli CMS, poi contenuto) per entrare in indice.
+6. **`wire:navigate`**: Livewire non rimuove gli `<script>`, quindi i JSON-LD delle pagine visitate si accumulano nel DOM del browser; ai crawler non importa. Non coperto dall'audit.
+7. **Non eseguiti**: Lighthouse, Rich Results Test e Schema Markup Validator (richiedono una URL pubblica), `og:locale:alternate` (la libreria sovrascrive i meta con la stessa chiave).
+8. **Tipo schema dell'organizzazione**: `Organization`; `LocalBusiness`/sottotipo solo con indirizzo e telefono reali del tenant (decisione dell'utente).
+
 ## Ripartenza
 
-Leggere `claims-open.py`; se i lock di A sono caduti, rimisurare l'output con l'audit e aprire la revisione dei difetti 1–10; altrimenti procedere
-con le sole parti in file nuovi di Seo e con lo strumento di audit.
+`AUDIT_BASE=http://192.168.1.40:8000 node bashscripts/tools/head-audit.mjs <cartella>` deve dare 1 tipo di controllo fallito (`og-completo`) finché manca l'immagine social. Se un altro tema monta
+`<x-cms::head>`: non avvolgerlo in `<head>`, passare `theme-color` e creare `lang/<lingua>/seo.php` con `site.description`. Conoscenza durevole:
+[laravel-head-layers-and-seo-checklist](../wiki/concepts/laravel-head-layers-and-seo-checklist.md).
+
+## Revisione profonda successiva
+
+- Il fallback della description ora normalizza anche una traduzione vuota usando `MetatagData`, evitando OG/Twitter vuoti.
+- Il canonical forza HTTPS solo in produzione; in sviluppo mantiene lo schema realmente servito.
+- `BuildPageSchemaAction` riceve il canonical già renderizzato dal componente e localizza gli URL di `Event` e `Person`.
+- Il layout base di Two espone skip-link e landmark `main`; il componente Head espone anche `@stack('head')`.
+- Verificato con Playwright: login 200, un solo `main#main-content`, un solo skip-link e un solo `h1`.
+- Il run globale PHPStan è temporaneamente bloccato da file Fixcity non ancora completati da un altro agente (154 errori su classi/factory/migration mancanti); PHPStan mirato Cms+Seo resta verde.
+
+## Secondo giro «va piu' a fondo» (sessione 56da8100, 2026-10-30)
+
+Metodo: revisione di codice indipendente, ricerca SEO indipendente, Lighthouse e prova di `wire:navigate` da sotto-agenti, audit su **tutte** le URL della sitemap (non solo 8 pagine). Dettagli sensibili solo in `bashscripts/docs/audit/` (repo riservato).
+
+| Misura | Prima | Dopo |
+|---|---|---|
+| Sitemap | 36 URL | 32 URL (fuori le 4 pagine con titolo inglese ma corpo solo italiano) |
+| Audit su tutta la sitemap (42 percorsi) | 50 controlli falliti / 7 tipi | 41 / 3 tipi; i residui sono `og:image` mancante (asset) e il 500 preesistente di una pagina non del `<head>` |
+| Audit 8 pagine × 390/1280 × chiaro/scuro | 28 / 1 tipo | 28 / 1 tipo (`og:image`) |
+| Pest isolato (senza Laravel, senza MySQL) | 6 test | 63 test / 119 asserzioni + 1 test `Seo` |
+| `phpstan analyse Modules` | 0 | 0 |
+
+Cosa e' cambiato:
+
+- **Policy robots**: il percorso si normalizza (minuscole, percent-encoding, prefisso lingua) prima del confronto, quindi `/IT/Dashboard` o `/it/%61uth` non aggirano piu' il `noindex`. Le regole *per pagina* (slug `tests.*`, `auth.*`, `*.view`, middleware `auth`, slug riservati) stanno in `ResolveRobotsPolicyAction::isPageIndexable()` e le usano **sia** `<x-cms::head>` **sia** `BuildSitemapAction`: pagina nel `<head>` indicizzabile ⇔ pagina in sitemap (controllo dell'audit).
+- **Lingua scritta = titolo *e* contenuto** (`ResolveWrittenLocalesAction::fromRaw`): una pagina con titolo inglese ma senza blocchi inglesi serviva testo italiano sotto `/en/`; ora e' `noindex`, senza canonical, hreflang e JSON-LD, ed e' fuori sitemap.
+- **`noindex` ⇒ nessun canonical, nessun hreflang, nessun JSON-LD** (segnali contraddittori eliminati).
+- **Titolo**: `ComposeDocumentTitleAction` produce sempre `Pagina — Brand`, brand una sola volta anche se il titolo CMS lo contiene gia' (`Contatti - SOTTANA SERVICE` ⇒ `Contatti — Sottana Service`). Le pagine di autenticazione di Two (registrazione, password dimenticata, reimposta, verifica e-mail) usano `title-key` sul layout `base`, senza ripiego su un'altra lingua.
+- **Descrizione per pagina**: `ResolvePageDescriptionAction` ricava il testo dal `subtitle`/`description` del primo blocco della lingua corrente (20–160 caratteri, parola intera); la home mantiene la descrizione curata del sito. Controllo dell'audit: nessuna descrizione ripetuta tra pagine.
+- **Pagina CMS dal percorso**: `ResolveCmsPageAction` risolve come il middleware delle pagine (`home`, `a.b`, `.index`, nome rotta) e non fa cadere la pagina su slug duplicati.
+- **Schema**: `Organization` con `@id` `…/#organization` e `WebSite` con `@id` `…/#website` e `inLanguage` (stringa o elenco delle lingue scritte); le pagine interne hanno `isPartOf` verso il `WebSite` e briciole brevi (`Home` / titolo breve, non il brand lungo). Il JSON-LD non riceve **mai** l'utente della sessione (un'intera classe di fughe di dati personali e' chiusa per costruzione) e un errore di schema non toglie piu' la pagina (`try/catch` + `report()`).
+- **Canonical unico**: una sola stringa per `rel=canonical`, `og:url` e JSON-LD.
+- Lo strumento `bashscripts/tools/head-audit.mjs` legge `/sitemap.xml` e controlla: indicizzabile ⇔ in sitemap, hreflang del `<head>` = hreflang della sitemap, `x-default`, `noindex` senza canonical/hreflang, brand una volta nel titolo, descrizione unica.
+
+Lighthouse mobile (dev, con debugbar): SEO 92 su 4 pagine; l'unica regola fallita (`crawlable-anchors`) viene dalla barra di debug, quindi in produzione e' atteso 100. Nessun link del sito usa `wire:navigate` (navigazione a pagina intera); provando `Livewire.navigate()` a mano titolo, canonical, descrizione, og, hreflang, robots e `lang` si aggiornano e il Back li ripristina; i blocchi JSON-LD si accumulano nel DOM (basso rischio, i crawler non eseguono la navigazione SPA).
+
+### Aperto, per l'utente (non inventato da me)
+
+1. **Alias duplicati** (`faq`/`faqs`, `cookie`/`cookies`, `contatti`/`contacts`, `about`/`chi-siamo`, in entrambe le lingue): URL distinti, tutti indicizzabili con canonical su se stessi. Serve una scelta: uno slug canonico + 301 e fuori dalla sitemap/navigazione.
+2. **Titolo della home** diverso dall'`h1`: proposta del SEO specialist «Radioprotezione per Studi Dentistici e Veterinari | Sottana Service» (testo, decisione di contenuto).
+3. **Corpo inglese mancante** per blog e due servizi (oggi `noindex` per regola, non indicizzati): tradurre per farli entrare in indice; idem contenuto `de`/`es`.
+4. **Asset**: immagine social 1200×630, favicon/manifest, logo raster quadrato ≥ 512×512 per `Organization` (oggi SVG 200×50, sotto il minimo di Google).
+5. **Schema**: `sameAs` dell'organizzazione e `LocalBusiness` con indirizzo/telefono reali (nel footer ci sono profili personali: non li ho pubblicati come `sameAs`); `Article` per il blog (autore, data).
+6. **Host attendibili in produzione** e `robots.txt` (`Disallow` + `noindex` si annullano): dettagli nella nota riservata.
+7. **Prestazioni** (fuori dal `<head>`, storia a parte): CSS del tema pesante (~970 KB, in gran parte inutilizzato), immagine hero di alcuni MB, LCP alto in dev.
+8. Difetti preesistenti non del `<head>` trovati durante l'audit: nota riservata.

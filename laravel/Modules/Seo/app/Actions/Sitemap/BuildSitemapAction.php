@@ -8,13 +8,12 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Response;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Modules\Cms\Actions\Head\ResolveRobotsPolicyAction;
+use Modules\Cms\Actions\Head\ResolveWrittenLocalesAction;
 use Modules\Cms\Models\Page;
 use Modules\Seo\Contracts\SitemapPathsContract;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-use Safe\Exceptions\JsonException;
 use Spatie\QueueableAction\QueueableAction;
 
-use function Safe\json_decode;
 use function Safe\preg_replace;
 
 /**
@@ -30,14 +29,6 @@ use function Safe\preg_replace;
 final class BuildSitemapAction
 {
     use QueueableAction;
-
-    /**
-     * `segnalazioni.index` e' l'alias Design Comuni di `tickets` (301 a /{lang}/tickets, FrontofficeContainerAliases del tema):
-     * in sitemap va solo l'URL finale, un reindirizzamento e' un «URL non seguito» per Search Console (DCP-272).
-     *
-     * @var list<string>
-     */
-    private const array NOT_INDEXABLE = ['tickets.confirmation', 'segnalazione-dettaglio', 'segnalazioni.index'];
 
     /** Risposta HTTP della rotta `/sitemap.xml` (invokable: `route:cache` non ammette closure). */
     public function __invoke(): Response
@@ -82,7 +73,7 @@ final class BuildSitemapAction
 
     /**
      * `path`: percorso senza lingua ('' per la home, 'privacy', 'tickets/track', 'blog/{slug}', 'tickets/{id}').
-     * `written`: lingue in cui la pagina CMS ha un titolo scritto; `null` = nessuna restrizione (URL di dettaglio dei moduli).
+     * `written`: lingue in cui la pagina CMS e' scritta (titolo e contenuto); `null` = nessuna restrizione (URL di dettaglio dei moduli).
      *
      * @return list<array{path: string, written: list<string>|null}>
      */
@@ -92,17 +83,12 @@ final class BuildSitemapAction
         $entries = [];
         foreach ($this->indexableCmsPages() as $page) {
             $slug = app(SafeStringCastAction::class)->execute($page->getAttribute('slug'));
-            $middleware = $page->getAttribute('middleware');
-            // `auth.login` e `auth.register` sono pagine per ospiti (senza middleware `auth`) ma robots.txt chiude /{lang}/auth.
-            // `<contenitore>.view` (blog.view, events.view, services.view) e' il modello del dettaglio: /blog/view risponde 200 senza contenuto.
-            if ($slug === '' || $slug === 'tests' || str_starts_with($slug, 'tests.') || str_starts_with($slug, 'auth.') || str_ends_with($slug, '.view') || in_array($slug, self::NOT_INDEXABLE, true)) {
-                continue;
-            }
-            if (is_array($middleware) && in_array('auth', $middleware, true)) {
+            // Stessa regola del <head> (pagine di prova, `auth.*`, modello di dettaglio `*.view`, alias che reindirizzano, pagine dietro `auth`).
+            if (! app(ResolveRobotsPolicyAction::class)->isPageIndexable($slug, $page->getAttribute('middleware'))) {
                 continue;
             }
             $path = $this->pathOf($slug);
-            $entries['/'.$path] = ['path' => $path, 'written' => $this->writtenLocales($page)];
+            $entries['/'.$path] = ['path' => $path, 'written' => app(ResolveWrittenLocalesAction::class)->execute($page)];
         }
 
         foreach (app()->tagged(SitemapPathsContract::TAG) as $source) {
@@ -119,30 +105,6 @@ final class BuildSitemapAction
         ksort($entries, SORT_STRING);
 
         return array_values($entries);
-    }
-
-    /**
-     * Lingue in cui la pagina ha un titolo scritto davvero: le altre ripiegano sulla lingua predefinita e il `<head>` le marca `noindex`
-     * (stessa regola di `Modules\Cms\View\Components\Head`). `null` se il titolo non e' leggibile: nessuna restrizione.
-     *
-     * @return list<string>|null
-     */
-    private function writtenLocales(Page $page): ?array
-    {
-        $raw = $page->getRawOriginal('title');
-        try {
-            $titles = is_string($raw) && str_starts_with(ltrim($raw), '{') ? json_decode($raw, true) : $raw;
-        } catch (JsonException) {
-            return null;
-        }
-        if (! is_array($titles)) {
-            return null;
-        }
-
-        // Valori di un JSON decodificato: non c'e' un tipo piu' stretto di `mixed` da dichiarare.
-        $written = array_filter($titles, static fn (mixed $text): bool => is_string($text) && trim($text) !== '');
-
-        return array_values(array_map(strval(...), array_keys($written)));
     }
 
     /**

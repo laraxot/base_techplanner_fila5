@@ -63,3 +63,15 @@ Cose che la sitemap mostra e che non sono state toccate (dati del CMS, non codic
 - Non verificato: contenuto delle URL di dettaglio di blog e servizi oltre lo stato 200; AC di `dcp-274` sui ticket (modulo Fixcity assente in questa copia).
 
 Errore di questa sessione: con la prima versione delle rotte (classe senza array) `/sitemap.xml` e `/robots.txt` hanno risposto 500 «Invalid route action», lanciato dal gruppo di rotte del provider mentre si registrano le rotte. Per come e' fatto l'errore e' probabile che abbia colpito anche le altre pagine del sito di sviluppo per qualche minuto; non l'ho misurato in quel momento. Dopo la correzione `/it` e `/en` rispondono 200.
+
+### Seconda passata: sitemap coerente con il `<head>` (stessa sessione, 16:10 UTC)
+
+Problema trovato rileggendo l'audit del `<head>`: tutti i titoli delle pagine CMS esistono solo in `it` ed `en`, quindi le URL `/de/...` ed `/es/...` mostrano il testo italiano di ripiego e il `<head>` le marca `noindex`; la sitemap le elencava comunque (76 URL, meta' `noindex`), e dichiarava hreflang per quattro lingue mentre le pagine ne dichiarano due. Per Search Console sono «URL inviate ma con noindex» e hreflang non reciproci.
+
+Correzione in `BuildSitemapAction` (Seo): per ogni pagina si elencano solo le lingue con titolo scritto (stessa regola di `Cms\View\Components\Head`) e si scartano le URL che la politica `Cms\Actions\Head\ResolveRobotsPolicyAction::isIndexable()` considera non indicizzabili (`profile`, `auth`, `dashboard`, ...). Gli hreflang collegano solo le lingue elencate e `x-default` compare solo se la lingua predefinita e' fra quelle. Le URL di dettaglio dei moduli (`SitemapPathsContract`) restano senza restrizione di lingua. Seo importa ora una classe di Cms: `Cms` e' gia' nell'elenco ammesso da `SitemapOwnershipTest`.
+
+Misurato: 36 URL (18 `it`, 18 `en`), nessuna pagina riservata, hreflang reciproco su tutte, **tutte e 36 rispondono 200 con `meta robots` `index, follow, max-image-preview:large`**. PHPStan `Modules/Seo`: nessun errore; Pint passato. Test: nessun test esistente verifica la forma hreflang della sitemap; non ne ho scritto uno nuovo (Pest non eseguibile e `BuildSitemapAction` legge il database).
+
+Dipendenza da sapere: la sitemap ora dipende da `ResolveRobotsPolicyAction`. Se la corsia A lo rinomina o lo sposta, `/sitemap.xml` risponde 500: l'hub lo segnala.
+
+Rimane vero che `cookie`/`cookies`, `faq`/`faqs`, `contacts`/`contatti`, `about`/`chi-siamo` sono alias con contenuto doppio (qui sono in sitemap tutti e due).
