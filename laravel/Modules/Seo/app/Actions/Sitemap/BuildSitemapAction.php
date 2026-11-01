@@ -88,6 +88,10 @@ final class BuildSitemapAction
                 continue;
             }
             $path = $this->pathOf($slug);
+            // Un alias risponde 301 alla pagina canonica (`seo.config.path_aliases`): in sitemap va solo l'URL finale.
+            if (array_key_exists($path, (array) config('seo.config.path_aliases', []))) {
+                continue;
+            }
             $entries['/'.$path] = ['path' => $path, 'written' => app(ResolveWrittenLocalesAction::class)->execute($page)];
         }
 

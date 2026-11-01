@@ -9,7 +9,7 @@
                 <div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
                     {{-- Image --}}
                     <div class="relative h-48 overflow-hidden">
-                        <img src="{{ $service['image'] ?? 'https://images.unsplash.com/photo-1629909615957-be38d48fbbe6?w=600' }}"
+                        <img src="{{ $service['image'] ?? '/images/stock/unsplash-1629909615957-be38d48fbbe6-600.jpg' }}"
                              alt=""
                              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#1E5A96]/80 to-transparent"></div>

@@ -8,7 +8,7 @@ priority: P1
 owner: module:Seo
 module: Seo
 created: 2026-10-26
-updated: 2026-10-26
+updated: 2026-11-01
 qmd: "verifica sitemap copertura completa ticket blog eventi folio generico dcp-166 dcp-273"
 related: [dcp-166, dcp-273, dcp-272]
 ---
@@ -46,32 +46,12 @@ Come motore di ricerca, voglio trovare in `sitemap.xml` **tutte** le pagine pubb
 ## Note implementazione
 Nessun nuovo codice. Solo verifica dati e conferma test verdi. Se dati non pubblici, creare contenuto di test o accettare che sitemap sia corretta per il dataset corrente.
 
-## Passata 2026-10-30 (sessione 97f16a39, progetto techplanner / tema Two)
+## Cause e correzioni nel modulo (indipendenti dal sito)
 
-In questo progetto `/sitemap.xml` rispondeva 404: la rotta stava nel modulo Fixcity (assente da questa copia) e `Modules/Xot/routes/web_seo.php` ha il `@require` commentato.
-Cause trovate e corrette in Seo:
+Verificate su un'installazione dove `/sitemap.xml` rispondeva 404. Le misure del singolo sito (numero di URL, alias, pagine del tema) stanno nei docs del progetto che lo ospita, non qui: questo modulo e' condiviso.
 
-- `SeoServiceProvider` non ridefiniva `$module_dir` e `$module_ns` (lo fanno Cms, User, Notify e altri): `XotBaseServiceProvider` registrava il `RouteServiceProvider` di Xot e non quello di Seo, quindi `Modules/Seo/routes/web.php` (vuoto) non veniva mai caricato. Aggiunte le due proprieta' a `SeoServiceProvider` e a `Seo\Providers\RouteServiceProvider`. Il modulo non ha migrazioni e `api.php` e' vuoto: nessun effetto sul database.
-- `routes/web.php` ora registra `GET /sitemap.xml` (`seo.sitemap`) e `GET /robots.txt` (`seo.robots`) con la sintassi ad array `[Classe::class, '__invoke']`: la sola classe, dentro il gruppo con `namespace()` del provider, viene prefissata e lancia «Invalid route action» (errore reale commesso e corretto in questa sessione, vedi sotto).
-- Nuovo `Actions/Robots/BuildRobotsTxtAction` (aree riservate chiuse in ogni lingua, `Disallow: /*/admin`, riga `Sitemap:`). Test `tests/Unit/Actions/Robots/BuildRobotsTxtActionTest.php`: scritto, **non eseguito** (Pest vietato: database di test inesistente).
-
-Esito misurato (GET su Two, 2026-10-30): `/sitemap.xml` 200 `application/xml`, XML ben formato, 76 URL distinti in 4 lingue con `hreflang` reciproco e `x-default`; le 19 URL in `it` rispondono tutte 200. `/robots.txt` 200 `text/plain`. PHPStan `Modules/Seo`: nessun errore.
-
-Cose che la sitemap mostra e che non sono state toccate (dati del CMS, non codice):
-- `/it/profile` e' in sitemap ma e' una pagina riservata (da ospite reindirizza al login): va esclusa o resa `noindex` dalla politica robots della corsia B.
-- Coppie di alias con lo stesso contenuto: `cookie`/`cookies`, `faq`/`faqs`, `contacts`/`contatti`, `about`/`chi-siamo`: rischio di contenuto duplicato, serve un canonical o un solo URL.
-- Non verificato: contenuto delle URL di dettaglio di blog e servizi oltre lo stato 200; AC di `dcp-274` sui ticket (modulo Fixcity assente in questa copia).
-
-Errore di questa sessione: con la prima versione delle rotte (classe senza array) `/sitemap.xml` e `/robots.txt` hanno risposto 500 «Invalid route action», lanciato dal gruppo di rotte del provider mentre si registrano le rotte. Per come e' fatto l'errore e' probabile che abbia colpito anche le altre pagine del sito di sviluppo per qualche minuto; non l'ho misurato in quel momento. Dopo la correzione `/it` e `/en` rispondono 200.
-
-### Seconda passata: sitemap coerente con il `<head>` (stessa sessione, 16:10 UTC)
-
-Problema trovato rileggendo l'audit del `<head>`: tutti i titoli delle pagine CMS esistono solo in `it` ed `en`, quindi le URL `/de/...` ed `/es/...` mostrano il testo italiano di ripiego e il `<head>` le marca `noindex`; la sitemap le elencava comunque (76 URL, meta' `noindex`), e dichiarava hreflang per quattro lingue mentre le pagine ne dichiarano due. Per Search Console sono «URL inviate ma con noindex» e hreflang non reciproci.
-
-Correzione in `BuildSitemapAction` (Seo): per ogni pagina si elencano solo le lingue con titolo scritto (stessa regola di `Cms\View\Components\Head`) e si scartano le URL che la politica `Cms\Actions\Head\ResolveRobotsPolicyAction::isIndexable()` considera non indicizzabili (`profile`, `auth`, `dashboard`, ...). Gli hreflang collegano solo le lingue elencate e `x-default` compare solo se la lingua predefinita e' fra quelle. Le URL di dettaglio dei moduli (`SitemapPathsContract`) restano senza restrizione di lingua. Seo importa ora una classe di Cms: `Cms` e' gia' nell'elenco ammesso da `SitemapOwnershipTest`.
-
-Misurato: 36 URL (18 `it`, 18 `en`), nessuna pagina riservata, hreflang reciproco su tutte, **tutte e 36 rispondono 200 con `meta robots` `index, follow, max-image-preview:large`**. PHPStan `Modules/Seo`: nessun errore; Pint passato. Test: nessun test esistente verifica la forma hreflang della sitemap; non ne ho scritto uno nuovo (Pest non eseguibile e `BuildSitemapAction` legge il database).
-
-Dipendenza da sapere: la sitemap ora dipende da `ResolveRobotsPolicyAction`. Se la corsia A lo rinomina o lo sposta, `/sitemap.xml` risponde 500: l'hub lo segnala.
-
-Rimane vero che `cookie`/`cookies`, `faq`/`faqs`, `contacts`/`contatti`, `about`/`chi-siamo` sono alias con contenuto doppio (qui sono in sitemap tutti e due).
+- `SeoServiceProvider` e `Seo\Providers\RouteServiceProvider` devono definire `$module_dir` e `$module_ns`: senza, `XotBaseServiceProvider` registra il `RouteServiceProvider` di Xot e le `routes/web.php` di Seo non si caricano mai.
+- `routes/web.php` registra `GET /sitemap.xml` (`seo.sitemap`) e `GET /robots.txt` (`seo.robots`) con la sintassi `[Classe::class, '__invoke']`: la sola classe, dentro il gruppo con `namespace()` del provider, viene prefissata e lancia «Invalid route action».
+- `Actions/Robots/BuildRobotsTxtAction` chiude in ogni lingua i segmenti riservati e `/admin`, e scrive la riga `Sitemap:`. `PRIVATE_SEGMENTS` deve restare un sottoinsieme di `Cms\Actions\Head\ResolveRobotsPolicyAction::HIDDEN_SEGMENTS` (lo verifica `RobotsSegmentsMatchHeadPolicyTest`). `BuildRobotsTxtActionTest` e' scritto ma non eseguito: usa il TestCase di Seo, che richiede un database.
+- `BuildSitemapAction` elenca per ogni pagina solo le lingue con titolo scritto (stessa regola di `Cms\View\Components\Head`) e scarta le URL che `ResolveRobotsPolicyAction::isIndexable()` considera non indicizzabili; gli hreflang collegano solo le lingue elencate e `x-default` compare solo se la lingua predefinita e' fra quelle. Le URL di dettaglio dei moduli (`SitemapPathsContract`) restano senza restrizione di lingua. Dipendenza da sapere: se `ResolveRobotsPolicyAction` viene rinominata o spostata, `/sitemap.xml` risponde 500. `Cms` e' nell'elenco ammesso da `SitemapOwnershipTest`.
+- Non verificato qui: le AC sui ticket (richiedono un modulo di dominio che registri una fonte `SitemapPathsContract`) e il contenuto delle URL di dettaglio oltre lo stato 200.

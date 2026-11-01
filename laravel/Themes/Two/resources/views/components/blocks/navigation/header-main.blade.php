@@ -19,16 +19,16 @@
                 <a href="{{ route('home') }}" class="text-gray-700 hover:text-primary-600 font-medium transition-colors">
                     {{ __('pub_theme::navigation.home') }}
                 </a>
-                <a href="{{ route('container0', ['container0' => 'services']) }}" class="text-gray-700 hover:text-primary-600 font-medium transition-colors">
+                <a href="{{ route('container0.index', ['container0' => 'services']) }}" class="text-gray-700 hover:text-primary-600 font-medium transition-colors">
                     {{ __('pub_theme::navigation.services') }}
                 </a>
-                <a href="{{ route('container0', ['container0' => 'about']) }}" class="text-gray-700 hover:text-primary-600 font-medium transition-colors">
+                <a href="{{ route('container0.index', ['container0' => 'about']) }}" class="text-gray-700 hover:text-primary-600 font-medium transition-colors">
                     {{ __('pub_theme::navigation.about') }}
                 </a>
                 <a href="{{ route('blog') }}" class="text-gray-700 hover:text-primary-600 font-medium transition-colors">
                     {{ __('pub_theme::navigation.blog') }}
                 </a>
-                <a href="{{ route('container0', ['container0' => 'contatti']) }}" class="text-gray-700 hover:text-primary-600 font-medium transition-colors">
+                <a href="{{ route('container0.index', ['container0' => 'contacts']) }}" class="text-gray-700 hover:text-primary-600 font-medium transition-colors">
                     {{ __('pub_theme::navigation.contact') }}
                 </a>
             </nav>
@@ -56,7 +56,7 @@
                             </a>
                         @endif
                     @else
-                        <a href="{{ route('container0', ['container0' => 'profile']) }}" class="flex items-center space-x-2 text-gray-700 hover:text-primary-600 transition-colors">
+                        <a href="{{ route('container0.index', ['container0' => 'profile']) }}" class="flex items-center space-x-2 text-gray-700 hover:text-primary-600 transition-colors">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
                             </svg>

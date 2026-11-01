@@ -16,6 +16,25 @@ related:
 
 # Two: verifica visiva e funzionale dopo il nuovo `<head>` SEO
 
+## Verifica profonda successiva
+
+Il controllo seriale su 13 URL del tema Two, a 390px in modalità chiara, ha inizialmente trovato un difetto reale su
+`/it/auth/password/reset`: la pagina rispondeva 500 perché il modulo User chiamava il contratto
+`pub_theme::components.pages.auth-password-reset`, ma Theme Two non forniva quel componente. Il contratto è stato
+implementato nel tema attivo con il widget `ForgotPasswordWidget`, titoli e testi tradotti, heading semantico e link di
+rientro al login. Dopo la correzione la pagina risponde 200, mantiene `lang="it"`, `noindex, follow` e passa il controllo
+del `<head>`.
+
+Audit ripetuto:
+
+```text
+Pagine: 13 x larghezze 390 x temi light = 13 misure
+Controlli falliti: 0
+```
+
+La verifica Playwright della home conferma un solo `<head>`, un solo titolo e description, canonical coerente, tre
+alternate (`it`, `en`, `x-default`), Open Graph image 1200×630, manifest Web App reale e JSON-LD valido.
+
 Corsia C della story [SEO al massimo del front office](../../../../../docs/stories/seo-head-maximum-schema-org-hreflang.story.md).
 Il cambio del `<head>` tocca ogni pagina: font, CSS, anti-FOUC, Alpine/Livewire, `theme-color`, cookie bar. Qui si dimostra, con misure e
 screenshot, che Two continua a funzionare e a sembrare uguale.
@@ -109,3 +128,14 @@ poi coprire `wire:navigate` e il titolo delle altre pagine di autenticazione.
 - **Audit su tutta la sitemap** (42 percorsi, 1280 px) e su 8 pagine × 390/1280 × chiaro/scuro: unico controllo ricorrente fallito `og:image` (serve `public/themes/Two/images/social-share.jpg` 1200×630). Schermate `it-1280-light` e `it-390-dark` controllate a occhio: intestazione, hero e barra cookie a posto.
 - **Lighthouse mobile** (dev, con debugbar): SEO 92 su `/it`, `/it/faq`, `/it/cookie`, `/en`; l'unica regola fallita viene dalla barra di debug (`crawlable-anchors`). Accessibilita' 96–97. Da correggere (storia a parte, non del `<head>`): il CSS di `app-*.css` pesa ~970 KB con grande parte inutilizzata, l'immagine hero e' di alcuni MB, `/en` carica un'immagine esterna da ~650 KB, `/it/faq` ha LCP alto in dev; il pulsante del cambio lingua ha un nome accessibile diverso dall'etichetta visibile (`label-content-name-mismatch`).
 - **`wire:navigate`**: nessun link del tema lo usa. Con `Livewire.navigate()` da script titolo, canonical, descrizione, `og:*`, hreflang, robots e `lang` si aggiornano e il tasto Indietro li ripristina; i blocchi JSON-LD si accumulano nel DOM.
+
+## Terzo giro (2026-10-31)
+
+- **`components/blocks/cta/simple`**: la vista dichiara `description`, `primary_cta_label`, `primary_cta_url`; quattro pagine (articolo del blog e servizi documentazione, elettromedicali, radioprotezione) la alimentavano con `subtitle`, `cta_label`, `cta_url` e uscivano con un pulsante senza testo e `href="#"` (Lighthouse `crawlable-anchors`, WCAG 2.4.4). Dati allineati al contratto della vista (copia nel modulo TechPlanner e copia del tenant); la vista non emette piu' sottotitolo e pulsante se non hanno un valore reale. Le altre viste `cta.*` hanno contratti propri (`consultation` usa `subtitle`), da non unificare alla cieca.
+- Canonical e hreflang ora puliti anche su `/index.php/...` e sui percorsi con segmenti-punto: dettagli nella story di Cms.
+
+## GitHub (tracciamento)
+
+- Issue: https://github.com/laraxot/base_techplanner_fila5/issues/18 (coordinamento multi-agente del repo base)
+- Discussion: https://github.com/laraxot/base_techplanner_fila5/discussions/54
+- Nota: riusate le due di coordinamento del repo base; nessuna issue o discussion nuova creata da questa passata (decisione dell'utente se aprirne una per modulo/tema owner).

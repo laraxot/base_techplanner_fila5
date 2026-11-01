@@ -9,6 +9,8 @@ scope: "Sito, Laravel, moduli, temi, quality gates, sicurezza, frontend e docume
 
 # Audit completo progetto, moduli e temi
 
+Ownership documentale: [shared-wiki-ownership-audit.md](./shared-wiki-ownership-audit.md).
+
 ## Esito esecutivo
 
 Audit statico/read-only eseguito sul repository completo, con verifiche locali e sei

@@ -13,8 +13,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Modules\\Seo\\Providers\\SeoServiceProvider",
-                "Modules\\Seo\\Providers\\Filament\\AdminPanelProvider"
+                "Modules\\Seo\\Providers\\SeoServiceProvider"
             ],
             "aliases": {
 

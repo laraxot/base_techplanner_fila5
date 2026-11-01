@@ -9,6 +9,8 @@
     - almeno un cookie non tecnico dichiarato in gdpr.config.cookie.extra: "Accetta tutti" e "Rifiuta tutti" con lo stesso peso, "Personalizza",
       chiusura con la X = rifiuto. Nessuna casella preselezionata.
     Il markup della barra segue il contratto di Bootstrap Italia (regione con aria-label, due controlli), senza Bootstrap.
+    Posizione: fissa in basso, salvo che copra un controllo del primo schermo (o il viewport sia basso): allora data-layout="flow" la mette in
+    flusso in cima alla pagina. Un tema con header fisso aggancia quell'attributo per spostarla sotto l'header (vedi Themes/Two/resources/css/app.css).
     Se un layout usa CSP con nonce, aggiungere il nonce a <style> e <script>.
 --}}
 @php
@@ -26,19 +28,17 @@
 @endphp
 <style>
     .gdpr-cookiebar, .gdpr-cookiedialog { font-family: inherit; font-size: 1rem; line-height: 1.5; color: #1a1a1a; }
-    .gdpr-cookiebar { position: fixed; z-index: 2147483000; left: 0; right: 0; bottom: 0; background: #fff; border-top: 3px solid var(--bs-primary, #0057ad); box-shadow: 0 -2px 12px rgba(0, 0, 0, .15); padding: 1rem; }
+    .gdpr-cookiebar { --gdpr-pad-y: 1rem; --gdpr-pad-x: 1rem; position: fixed; z-index: 2147483000; left: 0; right: 0; bottom: 0; background: #fff; border-top: 3px solid var(--bs-primary, #0057ad); box-shadow: 0 -2px 12px rgba(0, 0, 0, .15); /* area sicura (notch, barra dei gesti) solo con viewport-fit=cover: altrimenti env() vale 0 */ padding: var(--gdpr-pad-y) max(var(--gdpr-pad-x), env(safe-area-inset-right, 0px)) calc(var(--gdpr-pad-y) + env(safe-area-inset-bottom, 0px)) max(var(--gdpr-pad-x), env(safe-area-inset-left, 0px)); }
     .gdpr-cookiebar[hidden] { display: none; }
-    /* Il testo della pagina non deve restare sotto la barra fissa (bug FO blog dettaglio). */
-    body:has(.gdpr-cookiebar:not([hidden])) { padding-bottom: 11rem; }
+    /* Il testo della pagina non deve restare sotto la barra fissa (bug FO blog dettaglio). In flusso la barra occupa il suo spazio: niente riserva. */
+    body:has(.gdpr-cookiebar:not([hidden], [data-layout="flow"])) { padding-bottom: 11rem; }
     /* WCAG 2.4.11 (DCP-291): il campo che prende il focus viene portato sopra la barra, non lasciato sotto. Valore esatto aggiornato da pad(). */
-    html:has(.gdpr-cookiebar:not([hidden])) { scroll-padding-bottom: 11rem; }
+    html:has(.gdpr-cookiebar:not([hidden], [data-layout="flow"])) { scroll-padding-bottom: 11rem; }
     @media print { .gdpr-cookiebar { display: none; } }
-    /* A 400% di zoom (320x256) la barra alta 255 px riempiva lo schermo: su viewport bassi sta nel flusso, in cima alla pagina, e scorre via. */
-    @media (max-height: 30rem) {
-        .gdpr-cookiebar { position: static; }
-        body:has(.gdpr-cookiebar:not([hidden])) { padding-bottom: 0; }
-        html:has(.gdpr-cookiebar:not([hidden])) { scroll-padding-bottom: 0; }
-    }
+    /* In flusso (data-layout="flow", deciso da place() nello script): la barra sta in cima alla pagina e scorre via, senza coprire nulla.
+       Succede quando la barra fissa coprirebbe un controllo del primo schermo e sui viewport bassi (400% di zoom, 320x256: alta 255 px
+       riempiva lo schermo). Un tema con header fisso la sposta sotto l'header con `margin-top`. */
+    .gdpr-cookiebar[data-layout="flow"] { position: static; border-top-width: 0; border-bottom: 3px solid var(--bs-primary, #0057ad); box-shadow: none; padding-bottom: var(--gdpr-pad-y); }
     .gdpr-cookiebar__inner { position: relative; max-width: 72rem; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; padding-right: 2rem; }
     .gdpr-cookiebar__text { flex: 1 1 24rem; min-width: 0; }
     .gdpr-cookiebar__title { margin: 0 0 .25rem; font-weight: 700; }
@@ -63,7 +63,7 @@
     .gdpr-cookiedialog fieldset p { margin: .35rem 0 0 2.25rem; }
     .gdpr-cookiedialog .gdpr-cookiedialog__actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.25rem; }
     @media (max-width: 575.98px) {
-        .gdpr-cookiebar { padding: .5rem .75rem; }
+        .gdpr-cookiebar { --gdpr-pad-y: .5rem; --gdpr-pad-x: .75rem; }
         .gdpr-cookiebar__inner { gap: .5rem; padding-right: 0; }
         .gdpr-cookiebar__title { margin: 0 2.5rem .15rem 0; font-size: 1rem; }
         .gdpr-cookiebar__body { font-size: .875rem; line-height: 1.4; }
@@ -161,13 +161,35 @@
         document.body.style.paddingBottom = space;
         document.documentElement.style.scrollPaddingBottom = space;
     };
+    // La barra resta fissa in basso solo se non copre nessun controllo del primo schermo (WCAG 2.4.11, e il CTA sotto il fold non e' piu'
+    // raggiungibile finche' la barra e' li'); altrimenti va in flusso, in cima, e occupa il proprio spazio. Sui viewport bassi (zoom 400%) sempre in flusso.
+    const controls = 'a[href], button, input:not([type="hidden"]), select, textarea, summary, [tabindex]:not([tabindex="-1"])';
+    const shown = (el) => (el.checkVisibility ? el.checkVisibility({ checkOpacity: true, checkVisibilityCSS: true }) : el.getClientRects().length > 0);
+    const covers = () => {
+        const top = bar.getBoundingClientRect().top;
+        return [...document.querySelectorAll(controls)].some((el) => {
+            if (bar.contains(el) || dialog.contains(el) || !shown(el)) return false;
+            const r = el.getBoundingClientRect();
+            return r.width > 1 && r.height > 1 && r.top < innerHeight && r.bottom - top > 4; // 4 px: il bordo della barra non conta
+        });
+    };
+    // Decide solo a pagina in cima (primo caricamento, rotazione): chi ha gia' scorso non deve vedere la barra sparire verso l'alto.
+    const place = () => {
+        if (bar.hidden) return;
+        const short = matchMedia('(max-height: 30rem)').matches;
+        if (short || scrollY < 1) {
+            bar.removeAttribute('data-layout');
+            if (short || covers()) bar.dataset.layout = 'flow';
+        }
+        pad();
+    };
     // chi stava con la tastiera sulla barra (o nel suo dialogo) passa al prossimo stop della pagina invece di cadere sul body
     const leave = (hadFocus) => {
         if (!hadFocus) return;
         const next = () => (document.querySelector('.skiplink a') ?? document.getElementById('main-container') ?? document.getElementById('main-content'))?.focus();
         dialog.open ? dialog.addEventListener('close', next, { once: true }) : next();
     };
-    window.addEventListener('resize', pad);
+    window.addEventListener('resize', place);
     const valueFor = (a, m) => (a && m ? d.cookieValueBoth : a ? d.cookieValueAnalytics : m ? d.cookieValueMarketing : d.cookieValueNone);
     const sync = () => { const v = read(); boxes.forEach((b) => { b.checked = !b.disabled && (v === d.cookieValueBoth || v === (b.dataset.cookieCategory === 'analytics' ? d.cookieValueAnalytics : d.cookieValueMarketing)); }); };
     const actions = {
@@ -189,7 +211,7 @@
         const skip = document.querySelector('body > a[href^="#"], body > .skiplink');
         skip ? skip.after(bar) : document.body.prepend(bar);
         bar.hidden = false;
-        pad();
+        place();
     }
 })();
 </script>

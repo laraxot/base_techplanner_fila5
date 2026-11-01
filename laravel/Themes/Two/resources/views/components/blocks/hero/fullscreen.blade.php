@@ -10,14 +10,14 @@
 ])
 
 {{-- Header fixed compensato una volta sola da <main> (pt-[var(--site-header-h)]): qui solo l'altezza sotto l'header. --}}
-<section class="relative min-h-[calc(100dvh-var(--site-header-h))] flex items-center justify-center overflow-hidden py-8 sm:py-12 bg-gradient-to-br from-gray-900 via-brand-blue/95 to-black">
+<section class="hero-fill relative min-h-[calc(100dvh-var(--site-header-h))] flex items-center justify-center overflow-hidden py-8 sm:py-12 bg-gradient-to-br from-gray-900 via-brand-blue/95 to-black">
     <div class="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.05)_1px,transparent_1px)] [background-size:24px_24px] opacity-40"></div>
     @if($image)
         <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
              style="background-image: url('{{ $image }}');"></div>
     @endif
 
-    <div class="container mx-auto px-4 relative z-10 text-center">
+    <div @class(['container mx-auto px-4 relative z-10 text-center', 'pb-16' => !empty($stats)])>
         <div class="max-w-4xl mx-auto">
             @if($title)
                 <h1 class="text-3xl min-[480px]:text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight break-words">{{ $title }}</h1>
@@ -27,7 +27,7 @@
                 <p class="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 sm:mb-10 leading-relaxed max-w-3xl mx-auto">{{ $subtitle }}</p>
             @endif
 
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <div class="hero-ctas flex flex-col sm:flex-row gap-4 justify-center">
                 @if($primary_cta_label)
                     <a href="{{ $primary_cta_url }}"
                        class="inline-flex items-center justify-center font-semibold rounded-lg bg-brand-green hover:bg-brand-green-dark text-white text-lg px-8 py-4 group shadow-xl transition-all hover:-translate-y-1">

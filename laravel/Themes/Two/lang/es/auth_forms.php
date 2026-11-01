@@ -47,6 +47,11 @@ return [
         'submit' => [
             'label' => 'Registrarse',
         ],
+        'errors' => [
+            'summary' => [
+                'title' => 'Revisa los campos indicados',
+            ],
+        ],
     ],
     'reset' => [
         'title' => [

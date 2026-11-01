@@ -1,17 +1,38 @@
 ---
 title: "fixcity::segnalazione missing module and translation keys"
 type: story
-status: in-progress
+status: superseded
 priority: P1
 owner: agent
 created: 2026-10-30
-updated: 2026-10-30
+updated: 2026-11-01
 qmd: "fixcity segnalazione module missing translation keys routes blades"
 tags: [documentation, fixcity, segnalazione, module-missing]
 supersedes: 
 ---
 
 # fixcity::segnalazione - Missing Module and Translation Keys
+
+## Esito (2026-11-01): premessa errata, story chiusa come `superseded`
+
+L'utente: «su questo progetto il modulo laravel/Modules/Fixcity dovrebbe non servire». La story sotto parte da un presupposto sbagliato e **non va eseguita**.
+
+**Cosa e' successo.** Il progetto condivide base, temi e documentazione con il progetto gemello che gestisce le segnalazioni dei cittadini. Nel tema Sixteen (clone del riferimento Design Comuni, non e' il tema di questo sito) e nei documenti restano chiavi `fixcity::…` e rotte `fixcity::…` che qui non hanno un proprietario. La story le ha lette come un difetto («modulo mancante») invece di chiedersi se **questo** sito abbia mai avuto bisogno della funzione. Risposta: no.
+
+**Prove (verificate il 2026-11-01).**
+- `laravel/modules_statuses.json` non elenca Fixcity: il modulo non viene caricato.
+- L'unico tenant di questo progetto e' `techplanner`; i contenuti CMS non hanno alcuna pagina di segnalazione/ticket.
+- Nessun codice dei moduli attivi importa `Modules\Fixcity\…`; i riferimenti stanno nel tema Sixteen (non attivo), in test e in documentazione.
+- Lo scheletro del modulo e' stato creato il 2026-10-30 (modelli `Ticket`, `TicketData`, `TicketStatus`, migrazioni, factory, provider) per far sparire gli errori, non per un bisogno del sito. L'analisi PHPStan include `./Modules/`, quindi lo scheletro viene analizzato e corretto come se servisse (modifiche del 2026-11-01).
+
+**Cosa non fare.** Non completare i criteri di accettazione qui sotto. Non estendere il modulo. Non cancellarlo di propria iniziativa: la rimozione e' una decisione dell'utente (vedi sotto) e va fatta in avanti, con una story propria.
+
+**Decisioni che spettano all'utente.**
+1. Rimuovere `laravel/Modules/Fixcity/` (18 file tracciati) con un commit in avanti, oppure tenerlo come scheletro inattivo.
+2. In ogni caso, escluderlo da PHPStan (`excludePaths` in `laravel/phpstan.neon`, file che modifica solo l'utente) per smettere di spendere lavoro su codice che il sito non usa.
+3. I riferimenti `fixcity::…` del tema Sixteen non vanno «riparati» qui: appartengono al progetto gemello.
+
+**Regola appresa.** Un riferimento che non si risolve non e' di per se' un difetto di questo progetto. Prima di creare o riparare qualcosa si verifica a chi serve (attivazione del modulo, tenant, contenuti, codice che lo usa). Se non serve a questo sito, si documenta e si lascia la decisione a chi possiede la funzione.
 
 ## Context
 

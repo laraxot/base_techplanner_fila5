@@ -5,7 +5,7 @@ use Livewire\Volt\Component;
 use Modules\Cms\Http\Middleware\PageSlugMiddleware;
 use Modules\Cms\Models\Page;
 
-name('container0');
+name('container0.index');
 middleware(PageSlugMiddleware::class);
 
 new class extends Component {
@@ -23,7 +23,7 @@ new class extends Component {
 ?>
 
 <x-layouts.app>
-    @volt('container0')
+    @volt('container0.index')
     <div>
         <x-page side="content" :slug="$container0" />
     </div>

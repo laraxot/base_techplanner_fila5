@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9456d3835d2d6f1f81564ed20473a8db",
+    "content-hash": "9e153e9c9edb70f67f70bb1215a9ee5d",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -8172,16 +8172,16 @@
         },
         {
             "name": "nwidart/laravel-modules",
-            "version": "v13.2.0",
+            "version": "v13.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nWidart/laravel-modules.git",
-                "reference": "59714840708a2aece19e810764473f53227c35fe"
+                "reference": "abfa48cc11eba3bd30f4a07f903c2c0235973045"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nWidart/laravel-modules/zipball/59714840708a2aece19e810764473f53227c35fe",
-                "reference": "59714840708a2aece19e810764473f53227c35fe",
+                "url": "https://api.github.com/repos/nWidart/laravel-modules/zipball/abfa48cc11eba3bd30f4a07f903c2c0235973045",
+                "reference": "abfa48cc11eba3bd30f4a07f903c2c0235973045",
                 "shasum": ""
             },
             "require": {
@@ -8244,7 +8244,7 @@
             ],
             "support": {
                 "issues": "https://github.com/nWidart/laravel-modules/issues",
-                "source": "https://github.com/nWidart/laravel-modules/tree/v13.2.0"
+                "source": "https://github.com/nWidart/laravel-modules/tree/v13.3.0"
             },
             "funding": [
                 {
@@ -8256,7 +8256,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-10-25T18:32:55+00:00"
+            "time": "2026-10-28T20:16:53+00:00"
         },
         {
             "name": "openai-php/client",
@@ -15309,16 +15309,16 @@
         },
         {
             "name": "symfony/mime",
-            "version": "v8.1.7",
+            "version": "v8.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/mime.git",
-                "reference": "773ac57f20e2795bdadb65b5b1b5f4850d498283"
+                "reference": "8d1232052c9cdef170ed9608b3147bca4f61ff69"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/mime/zipball/773ac57f20e2795bdadb65b5b1b5f4850d498283",
-                "reference": "773ac57f20e2795bdadb65b5b1b5f4850d498283",
+                "url": "https://api.github.com/repos/symfony/mime/zipball/8d1232052c9cdef170ed9608b3147bca4f61ff69",
+                "reference": "8d1232052c9cdef170ed9608b3147bca4f61ff69",
                 "shasum": ""
             },
             "require": {
@@ -15371,7 +15371,7 @@
                 "mime-type"
             ],
             "support": {
-                "source": "https://github.com/symfony/mime/tree/v8.1.7"
+                "source": "https://github.com/symfony/mime/tree/v8.1.10"
             },
             "funding": [
                 {
@@ -15391,7 +15391,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-09-04T11:02:17+00:00"
+            "time": "2026-10-28T17:58:38+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",

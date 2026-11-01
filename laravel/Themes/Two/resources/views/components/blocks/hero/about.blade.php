@@ -13,7 +13,7 @@
 @endphp
 
 @php
-    $heroImage = $image ?? asset('themes/Two/images/hero-bg.jpg');
+    $heroImage = $image ?? asset('images/hero-bg-2000.jpg');
 @endphp
 <section class="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
     {{-- Background --}}

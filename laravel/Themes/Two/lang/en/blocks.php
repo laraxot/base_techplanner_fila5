@@ -12,6 +12,9 @@ return [
             'required_note' => 'Fields marked with * are required.',
             'submit_aria' => 'Submit the contact form',
             'privacy_help' => 'You must accept the privacy policy to submit the form',
+            'privacy_link' => [
+                'label' => 'Read the privacy notice',
+            ],
             'fields' => [
                 'name' => [
                     'label' => 'Full Name',
@@ -21,10 +24,12 @@ return [
                 'email' => [
                     'label' => 'Email',
                     'help' => 'Enter your email address',
+                    'placeholder' => 'name@example.com',
                 ],
                 'phone' => [
                     'label' => 'Phone',
                     'help' => 'Enter your phone number',
+                    'placeholder' => '+39 000 000 0000',
                 ],
                 'studio' => [
                     'label' => 'Practice Name',
@@ -41,6 +46,24 @@ return [
                     'placeholder' => 'Describe your request...',
                     'help' => 'Describe your consultation request',
                 ],
+            ],
+            'sent' => [
+                'message' => 'Thank you, your message has been sent.',
+            ],
+            'received' => [
+                'message' => 'We have recorded your message but could not forward it by email, so a reply may take longer. If it is urgent, call us or write to us using the contact details on this page.',
+            ],
+            'failed' => [
+                'message' => 'Your message could not be sent. Please try again later or contact us using the contact details on this page.',
+            ],
+            'errors_summary' => [
+                'title' => 'Please check the form fields:',
+            ],
+            'error_prefix' => [
+                'label' => 'Error:',
+            ],
+            'honeypot' => [
+                'label' => 'Leave this field empty',
             ],
         ],
         'info' => [
@@ -116,6 +139,11 @@ return [
         'banner' => [
             'primary' => 'Get started',
             'secondary' => 'Discover',
+        ],
+    ],
+    'share' => [
+        'links' => [
+            'title' => 'Share this article',
         ],
     ],
     'blog' => [

@@ -72,54 +72,35 @@
         ]
     ];
     
-    // Extract contact data from items array structure
+    // Dati d'impresa: unica fonte e' sections/footer.json. Nessun valore di ripiego nel codice: se un dato manca, la riga non si mostra.
     $contactRaw = $footerBlock['contact'] ?? [];
-    $contactItems = $contactRaw['items'] ?? [];
-    
-    // Helper to find value by type
-    $findContactValue = function($type) use ($contactItems) {
-        foreach ($contactItems as $item) {
-            if (($item['type'] ?? '') === $type) return $item['value'] ?? null;
-        }
-        return null;
-    };
+    $contactItems = array_values(array_filter(
+        $contactRaw['items'] ?? [],
+        static fn ($item): bool => is_array($item) && trim((string) ($item['value'] ?? '')) !== ''
+    ));
 
-    // Use values from block or defaults
-    $address = $findContactValue('address') ?? 'Via Vanzo 86, 31021 Mogliano Veneto TV';
-    $phone = $findContactValue('phone') ?? '+39 041 455552';
-    $mobile = $findContactValue('mobile') ?? '+39 347 58 96 127';
-    $email = $findContactValue('email') ?? 'studio@sottana.com';
-    
-    // Prepare items for the view loop if they don't exist in block data
-    if (empty($contactItems)) {
-        $contactItems = [
-            ['type' => 'address', 'value' => $address],
-            ['type' => 'email', 'value' => $email],
-            ['type' => 'phone', 'value' => $phone, 'label' => __('pub_theme::footer.contact.labels.landline')],
-            ['type' => 'mobile', 'value' => $mobile, 'label' => __('pub_theme::footer.contact.labels.mobile')],
-        ];
+    $address = null;
+    foreach ($contactItems as $item) {
+        if (($item['type'] ?? '') === 'address') {
+            $address = (string) $item['value'];
+            break;
+        }
     }
-    
+
     $contact = [
         'title' => $contactRaw['title'] ?? __('pub_theme::header.navigation.contact'),
         'items' => $contactItems,
-        'piva' => $contactRaw['piva'] ?? '05532540266',
-        'rea' => $contactRaw['rea'] ?? 'TV - 451911'
+        'legal_name' => $contactRaw['legal_name'] ?? null,
+        'piva' => $contactRaw['piva'] ?? null,
+        'rea' => $contactRaw['rea'] ?? null,
     ];
     
     $legal = $footerBlock['legal'] ?? [
         'copyright' => __('pub_theme::footer.legal.copyright.description'),
         'links' => [
-             ['label' => __('pub_theme::footer.legal.privacy.label'), 'url' => '/it/privacy'],
-             ['label' => __('pub_theme::footer.legal.terms.label'), 'url' => '/it/terms']
+             ['label' => __('pub_theme::footer.legal.privacy.label'), 'url' => route('container0.index', ['container0' => 'privacy'])],
+             ['label' => __('pub_theme::footer.legal.terms.label'), 'url' => route('container0.index', ['container0' => 'terms'])]
         ]
-    ];
-
-    // Extract quick actions for the view
-    $quickActions = $footerBlock['quick_actions'] ?? [
-        'call' => ['phone' => $phone, 'label' => __('pub_theme::footer.quick_actions.call.label')],
-        'whatsapp' => ['number' => $mobile, 'label' => 'WhatsApp'],
-        'appointment' => ['url' => '/it/contatti', 'label' => __('pub_theme::footer.quick_actions.appointment.label')]
     ];
 @endphp
 
@@ -253,7 +234,7 @@
                                     // Mobile: telefono ed e-mail devono essere tappabili (tel:/mailto:), non testo semplice.
                                     $contactHref = match ($itemType) {
                                         'phone', 'mobile', 'phone_mobile' => 'tel:'.preg_replace('/[^\d+]/', '', $contactValue),
-                                        'email' => 'mailto:'.$contactValue,
+                                        'email', 'pec' => 'mailto:'.$contactValue,
                                         default => null,
                                     };
                                 @endphp
@@ -268,17 +249,19 @@
                     @endforeach
                 </ul>
                 
-                {{-- P.IVA & REA --}}
-                @if(!empty($contact['piva']) || !empty($contact['rea']))
+                {{-- Denominazione, P.IVA & REA --}}
+                @if(!empty($contact['legal_name']) || !empty($contact['piva']) || !empty($contact['rea']))
                 <div class="mt-4 pt-4 border-t border-white/30 text-xs text-gray-100">
+                    @if(!empty($contact['legal_name']))<p class="text-gray-100 font-semibold">{{ $contact['legal_name'] }}</p>@endif
                     @if(!empty($contact['piva']))<p class="text-gray-100"><abbr title="{{ __('pub_theme::footer.contact.vat.title') }}">{{ __('pub_theme::footer.contact.vat.abbr') }}</abbr>: {{ $contact['piva'] }}</p>@endif
                     @if(!empty($contact['rea']))<p class="text-gray-100"><abbr title="{{ __('pub_theme::footer.contact.rea.title') }}">{{ __('pub_theme::footer.contact.rea.abbr') }}</abbr>: {{ $contact['rea'] }}</p>@endif
                 </div>
                 @endif
 
-                {{-- Mappa Statica (gratuita) --}}
+                {{-- Mappa Statica (gratuita): il link segue l'indirizzo del JSON, senza richieste a terzi finche' non si clicca. --}}
+                @if($address)
                 <div class="mt-4">
-                    <a href="https://www.google.com/maps/search/?api=1&query=Via+Vanzo+86,+Mogliano+Veneto+TV" 
+                    <a href="https://www.google.com/maps/search/?api=1&query={{ urlencode($address) }}"
                        target="_blank"
                        rel="noopener noreferrer"
                        class="block w-full h-32 rounded-lg overflow-hidden border border-white/20 hover:border-white/40 transition-colors relative group focus:outline-none focus:ring-2 focus:ring-white">
@@ -288,7 +271,6 @@
                             loading="lazy" decoding="async" width="400" height="128"
                             alt="{{ __('pub_theme::footer.fields.map.alt') }}"
                             class="w-full h-full object-cover grayscale-[30%] contrast-[1.1] group-hover:grayscale-0 transition-all duration-500"
-                            onerror="this.src='https://placehold.co/400x150?text=Mappa+Via+Vanzo+86'"
                         >
                         <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors flex items-center justify-center">
                             <span class="text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity bg-blue-600 px-2 py-1 rounded">{{ __('pub_theme::footer.map.view_on_google.label') }}<span class="sr-only"> {{ __('pub_theme::ui.sections.new_window.label') }}</span></span>
@@ -296,6 +278,7 @@
                     </a>
                     <p class="text-xs text-gray-100 mt-1">{{ __('pub_theme::footer.fields.map.helper_text') }}</p>
                 </div>
+                @endif
             </div>
         </div>
     </div>

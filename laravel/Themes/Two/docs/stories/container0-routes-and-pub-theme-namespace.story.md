@@ -30,8 +30,10 @@ progetto); il nome generico dice l'azione e i valori passano nei parametri, quin
 solo; il prefisso lingua lo mette Folio, mentre `url('/...')` e `href="/it/..."` lo perdono; un parametro mancante e' un errore
 immediato, non un 404 a runtime. Il parametro si chiama `container0`.
 
-**In Two l'indice si chiama `container0`** (non `container0.index`, che esiste in Sixteen e TwentyOne). Le pagine a un solo segmento
-(`/it/about`, `/it/contatti`) passano da li'. Nomi Folio propri di Two: `home`, `login`, `blog`, `blog.show`.
+**In Two l'indice si chiama `container0.index`**. Le pagine a un solo segmento
+(`/it/about`, `/it/contacts`) passano da lì. Il nome descrive l'azione indice e
+resta uniforme tra i temi attivi. Nomi Folio propri di Two: `home`, `login`,
+`blog`, `blog.show`.
 
 **Chiavi di traduzione.** Nelle Blade dei temi si usa `pub_theme::` (tema attivo), con cinque elementi
 `<namespace>::<contesto>.<collezione>.<chiave>.<tipo>`. `two::` non e' registrato; `theme::` non esiste (`theme` e' un file lingua,
@@ -41,7 +43,7 @@ quindi `pub_theme::theme.nav.home`). Dettaglio e misure: `docs/wiki/memories/tra
 
 - 24 chiamate `route()` con nomi di pagina inesistenti (`pages.about`, `pages.contacts`, `pages.services`, `pages.blog`, `about`,
   `contact`, `terms`, `privacy`, `blog.search`, `profile.index`, `page.show`, `pages.view`) nei componenti `navbar`, `footer`,
-  `header-main`, `header-slim`, `footer-institutional`, `page_card` e nella ricerca blog: ora `route('container0', [...])` o `route('blog')`.
+  `header-main`, `header-slim`, `footer-institutional`, `page_card` e nella ricerca blog: ora `route('container0.index', [...])` o `route('blog')`.
   Sono componenti non montati da nessuna pagina: l'errore sarebbe comparso al primo uso.
 - `navbar`: 14 chiavi `theme::nav.*` portate a `pub_theme::navigation.*` (esistono in it/en/de/es).
 - Modulo User, pagina di login usata da Two: aggiunte in en/de/es le voci `login.title.label`, `login.subtitle.text`,

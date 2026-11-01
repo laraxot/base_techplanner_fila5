@@ -26,7 +26,10 @@ The contract is encoded in `package.json`:
 
 1. Vite builds into `../../../public/themes/Two`.
 2. `resources/images/` is synchronized into the canonical public image folder.
-3. `sync-public` copies the complete canonical tree to `public_html`.
+3. The theme Web App Manifest and Apple touch icon are synchronized; Vite's
+   `manifest.json` remains only a build index and is never advertised as a
+   browser Web App Manifest.
+4. `sync-public` copies the complete canonical tree to `public_html`.
 
 After a build, verify both the manifest and a representative image:
 

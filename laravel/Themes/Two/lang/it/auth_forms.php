@@ -47,6 +47,11 @@ return [
         'submit' => [
             'label' => 'Registrati',
         ],
+        'errors' => [
+            'summary' => [
+                'title' => 'Controlla i campi indicati',
+            ],
+        ],
     ],
     'reset' => [
         'title' => [

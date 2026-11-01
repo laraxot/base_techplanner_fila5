@@ -1,5 +1,7 @@
 @import 'tailwindcss';
 @plugin "daisyui";
+/* Classi `prose` delle Blade (pagine legali, articoli): Tailwind v4 non legge il `require()` di tailwind.config.js. */
+@plugin "@tailwindcss/typography";
 
 @theme {
     /* Original Brand Colors */
@@ -135,18 +137,22 @@ html {
 }
 
 /*
- * Barra cookie (Modules/Gdpr) sui viewport bassi (stessa soglia, 30rem): li' sta nel flusso, in cima al body, e
- * l'header fisso la copriva (restavano visibili 15px e "Ho capito" era irraggiungibile). La si fa partire sotto
- * l'header e, finche' e' visibile, il main non aggiunge un secondo offset.
+ * Barra cookie (Modules/Gdpr): quando copre un controllo del primo schermo, o il viewport e' basso (30rem), lo script
+ * del modulo la mette in flusso, in cima al body (data-layout="flow"), e l'header fisso la copriva (restavano visibili
+ * 15px e "Ho capito" era irraggiungibile). La si fa partire sotto l'header e, finche' e' visibile, il main non aggiunge
+ * un secondo offset.
  */
-@media (max-height: 30rem) {
-    body:has(> header[data-mobile-nav]) > .gdpr-cookiebar {
-        margin-top: var(--site-header-h);
-    }
+body:has(> header[data-mobile-nav]) > .gdpr-cookiebar[data-layout="flow"] {
+    margin-top: var(--site-header-h);
+}
 
-    body:has(> header[data-mobile-nav]):has(> .gdpr-cookiebar:not([hidden])) #main-content {
-        padding-top: 0;
-    }
+body:has(> header[data-mobile-nav]):has(> .gdpr-cookiebar[data-layout="flow"]:not([hidden])) #main-content {
+    padding-top: 0;
+}
+
+/* Menu mobile aperto: il pannello sta nell'header (z-50) e la barra fissa, a z-index massimo, ne copriva le ultime voci (320x568). */
+body:has([data-mobile-nav-toggle][aria-expanded="true"]) .gdpr-cookiebar {
+    z-index: 40;
 }
 
 .fixed[data-mobile-nav] [data-mobile-nav-panel] {

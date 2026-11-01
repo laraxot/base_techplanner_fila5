@@ -230,7 +230,7 @@ This story should be coordinated with:
 
 ## Links
 
-- Related story: `fixcity-segnalazione-missing-module.story.md` (Fixcity module implementation)
+- Story chiusa (`superseded`, premessa errata: questo sito non usa Fixcity): `fixcity-segnalazione-missing-module.story.md`
 - Related module: `laravel/Modules/Cms/docs/stories/cms-merge-conflict-resolution.story.md` (CMS conflict resolution)
 - Related tool: `bashscripts/docs/llm-wiki-qmd.sh search "seo head component"` (search for more references)
 - Related skill: `laravel-head` package documentation
@@ -238,3 +238,9 @@ This story should be coordinated with:
 ## Conclusion
 
 The SEO Head component is a critical missing piece for modern web application SEO and social sharing. This story documents the implementation and provides a clear plan for creating the component with all necessary functionality. The component should be reusable across the application and integrate seamlessly with existing Laravel, Filament, and Livewire infrastructure.
+
+## GitHub (tracciamento)
+
+- Issue: https://github.com/laraxot/base_techplanner_fila5/issues/18 (coordinamento multi-agente del repo base)
+- Discussion: https://github.com/laraxot/base_techplanner_fila5/discussions/54
+- Nota: riusate le due di coordinamento del repo base; nessuna issue o discussione nuova creata da questa passata (decisione dell'utente se aprirne una per modulo/tema owner).

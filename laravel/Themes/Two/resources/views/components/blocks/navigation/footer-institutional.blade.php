@@ -52,17 +52,17 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('container0', ['container0' => 'services']) }}" class="text-gray-400 hover:text-white transition-colors">
+                        <a href="{{ route('container0.index', ['container0' => 'services']) }}" class="text-gray-400 hover:text-white transition-colors">
                             {{ __('pub_theme::navigation.services') }}
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('container0', ['container0' => 'about']) }}" class="text-gray-400 hover:text-white transition-colors">
+                        <a href="{{ route('container0.index', ['container0' => 'about']) }}" class="text-gray-400 hover:text-white transition-colors">
                             {{ __('pub_theme::navigation.about') }}
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('container0', ['container0' => 'contatti']) }}" class="text-gray-400 hover:text-white transition-colors">
+                        <a href="{{ route('container0.index', ['container0' => 'contacts']) }}" class="text-gray-400 hover:text-white transition-colors">
                             {{ __('pub_theme::navigation.contact') }}
                         </a>
                     </li>
@@ -75,7 +75,7 @@
                 <ul class="space-y-2 text-sm">
                     @if($showPrivacy && Route::has('pages.view'))
                         <li>
-                            <a href="{{ route('container0', ['container0' => 'privacy']) }}" class="text-gray-400 hover:text-white transition-colors">
+                            <a href="{{ route('container0.index', ['container0' => 'privacy']) }}" class="text-gray-400 hover:text-white transition-colors">
                                 {{ __('pub_theme::footer.legal.privacy.label') }}
                             </a>
                         </li>
@@ -83,7 +83,7 @@
                     
                     @if($showTerms && Route::has('pages.view'))
                         <li>
-                            <a href="{{ route('container0', ['container0' => 'terms']) }}" class="text-gray-400 hover:text-white transition-colors">
+                            <a href="{{ route('container0.index', ['container0' => 'terms']) }}" class="text-gray-400 hover:text-white transition-colors">
                                 {{ __('pub_theme::footer.legal.terms.label') }}
                             </a>
                         </li>
@@ -91,7 +91,7 @@
                     
                     @if($showCookie && Route::has('pages.view'))
                         <li>
-                            <a href="{{ route('container0', ['container0' => 'cookies']) }}" class="text-gray-400 hover:text-white transition-colors">
+                            <a href="{{ route('container0.index', ['container0' => 'cookies']) }}" class="text-gray-400 hover:text-white transition-colors">
                                 {{ __('pub_theme::footer.sections.cookie_policy.label') }}
                             </a>
                         </li>

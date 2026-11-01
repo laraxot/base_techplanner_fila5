@@ -7,6 +7,7 @@
     'cta_label' => '',
     'cta_url' => '/contatti',
     'image' => '',
+    'image_alt' => '',
     'reversed' => false,
     'bg' => 'bg-white',
 ])
@@ -17,7 +18,7 @@
             {{-- Image --}}
             <div class="{{ $reversed ? 'lg:order-2' : '' }}">
                 <img src="{{ $image }}"
-                     alt="{{ $title }}"
+                     alt="{{ $image_alt }}"
                      class="rounded-xl shadow-2xl w-full h-[400px] object-cover">
             </div>
 

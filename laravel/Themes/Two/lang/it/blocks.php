@@ -12,6 +12,9 @@ return [
             'required_note' => 'I campi contrassegnati con * sono obbligatori.',
             'submit_aria' => 'Invia il form di contatto',
             'privacy_help' => 'Devi accettare la privacy policy per inviare il form',
+            'privacy_link' => [
+                'label' => 'Leggi l\'informativa sulla privacy',
+            ],
             'fields' => [
                 'name' => [
                     'label' => 'Nome e Cognome',
@@ -21,10 +24,12 @@ return [
                 'email' => [
                     'label' => 'Email',
                     'help' => 'Inserisci il tuo indirizzo email',
+                    'placeholder' => 'esempio@email.com',
                 ],
                 'phone' => [
                     'label' => 'Telefono',
                     'help' => 'Inserisci il tuo numero di telefono',
+                    'placeholder' => '+39 000 000 0000',
                 ],
                 'studio' => [
                     'label' => 'Nome Studio',
@@ -41,6 +46,24 @@ return [
                     'placeholder' => 'Descrivi la tua richiesta...',
                     'help' => 'Descrivi la tua richiesta di consulenza',
                 ],
+            ],
+            'sent' => [
+                'message' => 'Grazie, il messaggio è stato inviato.',
+            ],
+            'received' => [
+                'message' => 'Abbiamo registrato il tuo messaggio, ma non siamo riusciti a inoltrarlo via e-mail: la risposta potrebbe richiedere più tempo. Se è urgente, chiamaci o scrivici usando i recapiti indicati in questa pagina.',
+            ],
+            'failed' => [
+                'message' => 'Non è stato possibile inviare il messaggio. Riprova più tardi oppure contattaci usando i recapiti indicati in questa pagina.',
+            ],
+            'errors_summary' => [
+                'title' => 'Controlla i campi del modulo:',
+            ],
+            'error_prefix' => [
+                'label' => 'Errore:',
+            ],
+            'honeypot' => [
+                'label' => 'Lascia vuoto questo campo',
             ],
         ],
         'info' => [
@@ -116,6 +139,11 @@ return [
         'banner' => [
             'primary' => 'Inizia',
             'secondary' => 'Scopri',
+        ],
+    ],
+    'share' => [
+        'links' => [
+            'title' => 'Condividi questo articolo',
         ],
     ],
     'blog' => [

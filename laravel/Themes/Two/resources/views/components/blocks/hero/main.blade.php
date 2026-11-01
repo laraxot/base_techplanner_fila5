@@ -12,7 +12,7 @@
     
     {{-- Background Image Overlay --}}
     <div class="absolute inset-0 z-0">
-        <img src="{{ $backgroundImage ?: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1920&q=80' }}" 
+        <img src="{{ $backgroundImage ?: '/images/stock/unsplash-1581091226825-a6a2a5aee158-1920.jpg' }}"
              alt="{{ $title }}"
              fetchpriority="high"
              loading="eager"

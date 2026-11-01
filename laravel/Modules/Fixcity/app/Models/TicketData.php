@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Fixcity\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 
@@ -12,6 +13,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  * @property ProfileContract|null $deleter
+ * @property Ticket|null $ticket
  * @method static Builder<static>|TicketData newModelQuery()
  * @method static Builder<static>|TicketData newQuery()
  * @method static Builder<static>|TicketData query()
@@ -26,8 +28,8 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|TicketData whereFieldName($value)
  * @method static Builder<static>|TicketData whereTicketId($value)
  * @method static Builder<static>|TicketData whereUpdatedAt($value)
- * @method static Builder<static>|TicketData whereFieldName($value)
  * @method static Builder<static>|TicketData whereFieldValue($value)
+ * @method string getFieldValueFormatted()
  */
 class TicketData extends BaseModel
 {
@@ -37,4 +39,34 @@ class TicketData extends BaseModel
         'field_value',
         'ticket_id',
     ];
+
+    /**
+     * Get the ticket this data belongs to.
+     *
+     * @return BelongsTo<Ticket, $this>
+     */
+    public function ticket(): BelongsTo
+    {
+        return $this->belongsTo(Ticket::class);
+    }
+
+    /**
+     * Get formatted field value for display.
+     *
+     * @return string
+     */
+    public function getFieldValueFormattedAttribute(): string
+    {
+        return $this->field_value ?? 'N/A';
+    }
+
+    /**
+     * Gemello method for formatted field value.
+     *
+     * @return string
+     */
+    public function getFieldValueFormatted(): string
+    {
+        return $this->field_value_formatted ?? $this->getFieldValueFormattedAttribute();
+    }
 }

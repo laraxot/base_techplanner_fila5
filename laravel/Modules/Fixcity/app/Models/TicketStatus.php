@@ -24,12 +24,12 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property Carbon|null $updated_at
  *
  * @method static Builder<static>|TicketStatus whereCreatedAt($value)
- * @method static Builder<static>|TicketStatus whereDeletedAt($value)
  * @method static Builder<static>|TicketStatus whereDescription($value)
  * @method static Builder<static>|TicketStatus whereId($value)
  * @method static Builder<static>|TicketStatus whereName($value)
  * @method static Builder<static>|TicketStatus whereOrder($value)
  * @method static Builder<static>|TicketStatus whereUpdatedAt($value)
+ * @method string getColorBadge()
  */
 class TicketStatus extends BaseModel
 {
@@ -40,4 +40,31 @@ class TicketStatus extends BaseModel
         'color',
         'order',
     ];
+
+    /**
+     * Get color badge CSS class for UI.
+     *
+     * @return string
+     */
+    public function getColorBadgeAttribute(): string
+    {
+        return match ($this->color) {
+            'primary' => 'badge-primary',
+            'success' => 'badge-success',
+            'warning' => 'badge-warning',
+            'danger' => 'badge-danger',
+            'info' => 'badge-info',
+            default => 'badge-secondary',
+        };
+    }
+
+    /**
+     * Gemello method for color badge.
+     *
+     * @return string
+     */
+    public function getColorBadge(): string
+    {
+        return $this->color_badge ?? $this->getColorBadgeAttribute();
+    }
 }

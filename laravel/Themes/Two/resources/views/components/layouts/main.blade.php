@@ -2,7 +2,8 @@
     'title' => '',
 ])
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-theme="light">
+    <x-pub_theme::ui.cookie-bar-space />
     <x-cms::head :title="$title !== '' ? $title : null" theme-color="#0f2b46" />
     <body class="antialiased font-sans bg-white text-gray-900">
         <a href="#main-content" class="skip-link sr-only">{{ __('pub_theme::navigation.actions.skip_to_main.label') }}</a>

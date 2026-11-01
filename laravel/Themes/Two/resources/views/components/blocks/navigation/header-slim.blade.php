@@ -18,7 +18,7 @@
                 <a href="{{ route('home') }}" class="text-gray-700 hover:text-primary-600 transition-colors">
                     {{ __('pub_theme::navigation.home') }}
                 </a>
-                <a href="{{ route('container0', ['container0' => 'services']) }}" class="text-gray-700 hover:text-primary-600 transition-colors">
+                <a href="{{ route('container0.index', ['container0' => 'services']) }}" class="text-gray-700 hover:text-primary-600 transition-colors">
                     {{ __('pub_theme::navigation.services') }}
                 </a>
                 <a href="{{ route('blog') }}" class="text-gray-700 hover:text-primary-600 transition-colors">
@@ -39,7 +39,7 @@
                             </a>
                         @endif
                     @else
-                        <a href="{{ route('container0', ['container0' => 'profile']) }}" class="text-gray-700 hover:text-primary-600 transition-colors">
+                        <a href="{{ route('container0.index', ['container0' => 'profile']) }}" class="text-gray-700 hover:text-primary-600 transition-colors">
                             {{ __('pub_theme::navigation.sections.profile.label') }}
                         </a>
                         <form method="POST" action="{{ route('logout') }}">

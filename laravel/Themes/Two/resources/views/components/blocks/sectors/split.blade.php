@@ -92,7 +92,7 @@
                     <div class="{{ $loop->odd ? 'order-2 lg:order-1' : 'order-2' }}">
                         <div class="relative overflow-hidden rounded-2xl shadow-lg">
                             <img src="{{ $sectorImgSrc }}"
-                                 alt="{{ $sector['title'] }}"
+                                 alt="{{ $sector['image_alt'] ?? '' }}"
                                  class="w-full h-80 object-cover hover:scale-105 transition-transform duration-500"
                                  loading="lazy">
                         </div>

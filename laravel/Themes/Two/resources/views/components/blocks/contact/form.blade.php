@@ -9,8 +9,26 @@
 @php
     $submitLabel = $submit_label;
     $privacyText = $privacy_text;
+
+    // Il blocco si mostra solo se esiste la rotta che lo riceve (modulo TechPlanner attivo): senza, sarebbe un form
+    // che non consegna. L'esito vero (inviato / ricevuto ma non inoltrato / non riuscito) arriva dal server.
+    $formAvailable = \Illuminate\Support\Facades\Route::has('techplanner.contact.submit');
+    $outcome = $formAvailable ? \Modules\TechPlanner\Enums\ContactOutcomeEnum::tryFrom((string) session('contact_outcome')) : null;
+    $honeypotField = $formAvailable ? \Modules\TechPlanner\Actions\Contact\SubmitContactFormAction::HONEYPOT_FIELD : '';
+
+    // Campi che il server sa ricevere: `name` e' il nome del campo nel JSON del blocco, `lang` il gruppo di chiavi di traduzione.
+    $controls = [
+        'nome' => ['kind' => 'input', 'type' => 'text', 'autocomplete' => 'name', 'lang' => 'name'],
+        'email' => ['kind' => 'input', 'type' => 'email', 'autocomplete' => 'email', 'lang' => 'email'],
+        'telefono' => ['kind' => 'input', 'type' => 'tel', 'autocomplete' => 'tel', 'lang' => 'phone'],
+        'studio' => ['kind' => 'input', 'type' => 'text', 'autocomplete' => 'organization', 'lang' => 'studio'],
+        'tipo' => ['kind' => 'select', 'type' => 'select', 'autocomplete' => 'off', 'lang' => 'type'],
+        'messaggio' => ['kind' => 'textarea', 'type' => 'textarea', 'autocomplete' => 'off', 'lang' => 'message'],
+    ];
+    $inputClass = 'w-full px-4 py-3 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent transition-colors';
 @endphp
 
+@if($formAvailable)
 <section class="py-16 bg-white">
     <div class="container mx-auto px-4">
         {{-- Section Title --}}
@@ -19,184 +37,128 @@
             <p class="text-lg text-gray-600">{{ $subtitle }}</p>
         </div>
 
-        {{-- Contact Form --}}
         <div class="max-w-2xl mx-auto">
-            <form method="POST" action="/it/contact/submit" class="space-y-6">
+            {{-- Esiti del server: role=status/alert li annuncia agli screen reader (4.1.3, 3.3.1); l'id e' il punto d'arrivo del redirect. --}}
+            @if($outcome !== null || $errors->any())
+                <div id="contact-form-feedback" tabindex="-1" class="mb-6 space-y-4 focus:outline-none">
+                    @if($outcome === \Modules\TechPlanner\Enums\ContactOutcomeEnum::Sent)
+                        <p role="status" class="rounded-lg bg-green-50 p-4 text-green-800">{{ __('pub_theme::blocks.contact.form.sent.message') }}</p>
+                    @elseif($outcome === \Modules\TechPlanner\Enums\ContactOutcomeEnum::Received)
+                        <p role="status" class="rounded-lg bg-amber-50 p-4 text-amber-900">{{ __('pub_theme::blocks.contact.form.received.message') }}</p>
+                    @elseif($outcome === \Modules\TechPlanner\Enums\ContactOutcomeEnum::Failed)
+                        <p role="alert" class="rounded-lg bg-red-50 p-4 text-red-800">{{ __('pub_theme::blocks.contact.form.failed.message') }}</p>
+                    @endif
+                    @if($errors->any())
+                        <div role="alert" class="rounded-lg bg-red-50 p-4 text-red-800">
+                            <p class="font-semibold">{{ __('pub_theme::blocks.contact.form.errors_summary.title') }}</p>
+                            <ul class="list-disc pl-5 mt-2">
+                                @foreach($errors->messages() as $errorField => $errorMessages)
+                                    <li><a href="#{{ $errorField }}" class="underline">{{ $errorMessages[0] }}</a></li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+                </div>
+            @endif
+
+            <form method="POST" action="{{ route('techplanner.contact.submit', ['lang' => app()->getLocale()]) }}" class="space-y-6">
                 @csrf
 
-                {{-- Esiti del server: role=status/alert li annuncia agli screen reader (4.1.3, 3.3.1). --}}
-                @if(session('status'))
-                    <p role="status" class="rounded-lg bg-green-50 p-4 text-green-800">{{ session('status') }}</p>
-                @endif
-                @if($errors->any())
-                    <div role="alert" class="rounded-lg bg-red-50 p-4 text-red-800">
-                        <ul class="list-disc">
-                            @foreach($errors->all() as $errorMessage)
-                                <li>{{ $errorMessage }}</li>
-                            @endforeach
-                        </ul>
-                    </div>
-                @endif
+                {{-- Honeypot: non visibile, non raggiungibile da tastiera, ignorato dagli screen reader. Un umano non lo compila. --}}
+                <div hidden aria-hidden="true">
+                    <label for="{{ $honeypotField }}">{{ __('pub_theme::blocks.contact.form.honeypot.label') }}</label>
+                    <input type="text" name="{{ $honeypotField }}" id="{{ $honeypotField }}" value="" tabindex="-1" autocomplete="off">
+                </div>
 
                 <p class="text-sm text-gray-600">{{ __('pub_theme::blocks.contact.form.required_note') }}</p>
 
-                {{-- Name --}}
-                @if($nameField = collect($fields)->firstWhere('name', 'nome'))
-                    <div>
-                        <label for="nome" class="block text-sm font-medium text-gray-700 mb-2">
-                            {{ $nameField['label'] ?? __('pub_theme::blocks.contact.form.fields.name.label') }}
-                            @if($nameField['required'] ?? false)
-                                <span class="text-red-700" aria-hidden="true">*</span>
+                @foreach($controls as $name => $control)
+                    @php
+                        $field = collect($fields)->firstWhere('name', $name);
+                        $langKey = 'pub_theme::blocks.contact.form.fields.'.$control['lang'];
+                        $fieldError = $errors->first($name);
+                        $describedBy = $name.'-help'.($fieldError !== '' ? ' '.$name.'-error' : '');
+                    @endphp
+                    @if($field)
+                        <div>
+                            <label for="{{ $name }}" class="block text-sm font-medium text-gray-700 mb-2">
+                                {{ $field['label'] ?? __($langKey.'.label') }}
+                                @if($field['required'] ?? false)
+                                    <span class="text-red-700" aria-hidden="true">*</span>
+                                @endif
+                            </label>
+                            @if($control['kind'] === 'select')
+                                <select
+                                    name="{{ $name }}"
+                                    id="{{ $name }}"
+                                    autocomplete="{{ $control['autocomplete'] }}"
+                                    @required($field['required'] ?? false)
+                                    @if($fieldError !== '') aria-invalid="true" @endif
+                                    aria-describedby="{{ $describedBy }}"
+                                    class="{{ $inputClass }} bg-white"
+                                >
+                                    <option value="">{{ __($langKey.'.placeholder') }}</option>
+                                    @foreach($field['options'] ?? [] as $option)
+                                        <option value="{{ $option }}" @selected(old($name) === $option)>{{ $option }}</option>
+                                    @endforeach
+                                </select>
+                            @elseif($control['kind'] === 'textarea')
+                                <textarea
+                                    name="{{ $name }}"
+                                    id="{{ $name }}"
+                                    rows="5"
+                                    autocomplete="{{ $control['autocomplete'] }}"
+                                    @required($field['required'] ?? false)
+                                    @if($fieldError !== '') aria-invalid="true" @endif
+                                    aria-describedby="{{ $describedBy }}"
+                                    class="{{ $inputClass }} resize-none"
+                                    placeholder="{{ $field['placeholder'] ?? __($langKey.'.placeholder') }}"
+                                >{{ old($name) }}</textarea>
+                            @else
+                                <input
+                                    type="{{ $field['type'] ?? $control['type'] }}"
+                                    name="{{ $name }}"
+                                    id="{{ $name }}"
+                                    value="{{ old($name) }}"
+                                    autocomplete="{{ $control['autocomplete'] }}"
+                                    @required($field['required'] ?? false)
+                                    @if($fieldError !== '') aria-invalid="true" @endif
+                                    aria-describedby="{{ $describedBy }}"
+                                    class="{{ $inputClass }}"
+                                    placeholder="{{ $field['placeholder'] ?? __($langKey.'.placeholder') }}"
+                                >
                             @endif
-                        </label>
-                        <input
-                            type="{{ $nameField['type'] ?? 'text' }}"
-                            name="nome"
-                            id="nome"
-                            autocomplete="name"
-                            @required($nameField['required'] ?? false)
-                            aria-describedby="nome-help"
-                            class="w-full px-4 py-3 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent transition-colors"
-                            placeholder="{{ $nameField['placeholder'] ?? __('pub_theme::blocks.contact.form.fields.name.placeholder') }}"
-                        >
-                        <p id="nome-help" class="sr-only">{{ __('pub_theme::blocks.contact.form.fields.name.help') }}</p>
-                    </div>
-                @endif
-
-                {{-- Email --}}
-                @if($emailField = collect($fields)->firstWhere('name', 'email'))
-                    <div>
-                        <label for="email" class="block text-sm font-medium text-gray-700 mb-2">
-                            {{ $emailField['label'] ?? __('pub_theme::blocks.contact.form.fields.email.label') }}
-                            @if($emailField['required'] ?? false)
-                                <span class="text-red-700" aria-hidden="true">*</span>
+                            <p id="{{ $name }}-help" class="sr-only">{{ __($langKey.'.help') }}</p>
+                            @if($fieldError !== '')
+                                <p id="{{ $name }}-error" class="mt-2 text-sm text-red-700"><span class="sr-only">{{ __('pub_theme::blocks.contact.form.error_prefix.label') }} </span>{{ $fieldError }}</p>
                             @endif
-                        </label>
-                        <input
-                            type="{{ $emailField['type'] ?? 'email' }}"
-                            name="email"
-                            id="email"
-                            autocomplete="email"
-                            @required($emailField['required'] ?? false)
-                            aria-describedby="email-help"
-                            class="w-full px-4 py-3 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent transition-colors"
-                            placeholder="{{ $emailField['placeholder'] ?? 'esempio@email.com' }}"
-                        >
-                        <p id="email-help" class="sr-only">{{ __('pub_theme::blocks.contact.form.fields.email.help') }}</p>
-                    </div>
-                @endif
-
-                {{-- Phone --}}
-                @if($phoneField = collect($fields)->firstWhere('name', 'telefono'))
-                    <div>
-                        <label for="telefono" class="block text-sm font-medium text-gray-700 mb-2">
-                            {{ $phoneField['label'] ?? __('pub_theme::blocks.contact.form.fields.phone.label') }}
-                            @if($phoneField['required'] ?? false)
-                                <span class="text-red-700" aria-hidden="true">*</span>
-                            @endif
-                        </label>
-                        <input
-                            type="{{ $phoneField['type'] ?? 'tel' }}"
-                            name="telefono"
-                            id="telefono"
-                            autocomplete="tel"
-                            @required($phoneField['required'] ?? false)
-                            aria-describedby="telefono-help"
-                            class="w-full px-4 py-3 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent transition-colors"
-                            placeholder="{{ $phoneField['placeholder'] ?? '+39 347 58 96 127' }}"
-                        >
-                        <p id="telefono-help" class="sr-only">{{ __('pub_theme::blocks.contact.form.fields.phone.help') }}</p>
-                    </div>
-                @endif
-
-                {{-- Studio Name --}}
-                @if($studioField = collect($fields)->firstWhere('name', 'studio'))
-                    <div>
-                        <label for="studio" class="block text-sm font-medium text-gray-700 mb-2">
-                            {{ $studioField['label'] ?? __('pub_theme::blocks.contact.form.fields.studio.label') }}
-                            @if($studioField['required'] ?? false)
-                                <span class="text-red-700" aria-hidden="true">*</span>
-                            @endif
-                        </label>
-                        <input
-                            type="{{ $studioField['type'] ?? 'text' }}"
-                            name="studio"
-                            id="studio"
-                            autocomplete="organization"
-                            @required($studioField['required'] ?? false)
-                            aria-describedby="studio-help"
-                            class="w-full px-4 py-3 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent transition-colors"
-                            placeholder="{{ $studioField['placeholder'] ?? __('pub_theme::blocks.contact.form.fields.studio.placeholder') }}"
-                        >
-                        <p id="studio-help" class="sr-only">{{ __('pub_theme::blocks.contact.form.fields.studio.help') }}</p>
-                    </div>
-                @endif
-
-                {{-- Studio Type --}}
-                @if($tipoField = collect($fields)->firstWhere('name', 'tipo'))
-                    <div>
-                        <label for="tipo" class="block text-sm font-medium text-gray-700 mb-2">
-                            {{ $tipoField['label'] ?? __('pub_theme::blocks.contact.form.fields.type.label') }}
-                            @if($tipoField['required'] ?? false)
-                                <span class="text-red-700" aria-hidden="true">*</span>
-                            @endif
-                        </label>
-                        <select
-                            name="tipo"
-                            id="tipo"
-                            autocomplete="off"
-                            @required($tipoField['required'] ?? false)
-                            aria-describedby="tipo-help"
-                            class="w-full px-4 py-3 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent transition-colors bg-white"
-                        >
-                            <option value="">{{ __('pub_theme::blocks.contact.form.fields.type.placeholder') }}</option>
-                            @foreach($tipoField['options'] ?? [] as $option)
-                                <option value="{{ $option }}">{{ $option }}</option>
-                            @endforeach
-                        </select>
-                        <p id="tipo-help" class="sr-only">{{ __('pub_theme::blocks.contact.form.fields.type.help') }}</p>
-                    </div>
-                @endif
-
-                {{-- Message --}}
-                @if($messageField = collect($fields)->firstWhere('name', 'messaggio'))
-                    <div>
-                        <label for="messaggio" class="block text-sm font-medium text-gray-700 mb-2">
-                            {{ $messageField['label'] ?? __('pub_theme::blocks.contact.form.fields.message.label') }}
-                            @if($messageField['required'] ?? false)
-                                <span class="text-red-700" aria-hidden="true">*</span>
-                            @endif
-                        </label>
-                        <textarea
-                            name="messaggio"
-                            id="messaggio"
-                            rows="5"
-                            autocomplete="off"
-                            @required($messageField['required'] ?? false)
-                            aria-describedby="messaggio-help"
-                            class="w-full px-4 py-3 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent transition-colors resize-none"
-                            placeholder="{{ $messageField['placeholder'] ?? __('pub_theme::blocks.contact.form.fields.message.placeholder') }}"
-                        ></textarea>
-                        <p id="messaggio-help" class="sr-only">{{ __('pub_theme::blocks.contact.form.fields.message.help') }}</p>
-                    </div>
-                @endif
+                        </div>
+                    @endif
+                @endforeach
 
                 {{-- Privacy Checkbox --}}
                 {{-- Mobile: checkbox 24px (era 16px) e label con py-3 => area di tocco >= 44px (tutta la riga e' cliccabile via for=). --}}
-                <div class="flex items-start gap-3">
-                    <input
-                        id="privacy"
-                        name="privacy"
-                        type="checkbox"
-                        required
-                        aria-required="true"
-                        aria-describedby="privacy-help"
-                        class="h-6 w-6 shrink-0 mt-3 text-[#1E5A96] border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-[#1E5A96]"
-                    >
-                    <label for="privacy" class="py-3 text-sm text-gray-600">
-                        {{ $privacyText }}
-                    </label>
-                    <p id="privacy-help" class="sr-only">{{ __('pub_theme::blocks.contact.form.privacy_help') }}</p>
+                <div>
+                    <div class="flex items-start gap-3">
+                        <input
+                            id="privacy"
+                            name="privacy"
+                            type="checkbox"
+                            required
+                            aria-required="true"
+                            @if($errors->has('privacy')) aria-invalid="true" @endif
+                            aria-describedby="privacy-help{{ $errors->has('privacy') ? ' privacy-error' : '' }}"
+                            class="h-6 w-6 shrink-0 mt-3 text-[#1E5A96] border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-[#1E5A96]"
+                        >
+                        <label for="privacy" class="py-3 text-sm text-gray-600">
+                            {{ $privacyText }}
+                            <a href="{{ route('container0.index', ['container0' => 'privacy']) }}" class="font-medium text-[#1E5A96] underline" target="_blank" rel="noopener">{{ __('pub_theme::blocks.contact.form.privacy_link.label') }}<span class="sr-only"> {{ __('pub_theme::ui.sections.new_window.label') }}</span></a>
+                        </label>
+                        <p id="privacy-help" class="sr-only">{{ __('pub_theme::blocks.contact.form.privacy_help') }}</p>
+                    </div>
+                    @if($errors->has('privacy'))
+                        <p id="privacy-error" class="mt-2 text-sm text-red-700"><span class="sr-only">{{ __('pub_theme::blocks.contact.form.error_prefix.label') }} </span>{{ $errors->first('privacy') }}</p>
+                    @endif
                 </div>
 
                 {{-- Submit Button --}}
@@ -218,3 +180,4 @@
         </div>
     </div>
 </section>
+@endif

@@ -9,6 +9,13 @@
     $items = [];
     $ctaLabel = __('pub_theme::header.cta.label');
     $ctaUrl = LaravelLocalization::getLocalizedURL(app()->getLocale(), '/contatti');
+
+    // Avatar di ripiego generato in locale: nessun nome utente viene inviato a servizi esterni.
+    $avatarFallback = static fn (?string $name): string => 'data:image/svg+xml;utf8,'.rawurlencode(
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="#EBF4FF"/>'
+        .'<text x="16" y="21" font-size="14" text-anchor="middle" fill="#1E5A96" font-family="sans-serif">'
+        .e(Str::upper(Str::substr(trim((string) $name) ?: 'U', 0, 1))).'</text></svg>'
+    );
 @endphp
 
 {{-- Extract nav1 block data, render other blocks (alerts/banners) --}}
@@ -201,7 +208,7 @@
                         >
                             <div class="relative">
                                 <img
-                                    src="{{ auth()->user()->avatar_url ?? 'https://ui-avatars.com/api/?name='.urlencode(auth()->user()->name ?? 'U').'&color=7F9CF5&background=EBF4FF&size=32' }}"
+                                    src="{{ auth()->user()->avatar_url ?? $avatarFallback(auth()->user()->name) }}"
                                     alt="{{ __('pub_theme::header.user.avatar.alt', ['name' => auth()->user()->name ?? __('pub_theme::header.user.default_name.label')]) }}"
                                     class="w-8 h-8 rounded-full border-2 transition-colors object-cover"
                                     :class="scrolled ? 'border-gray-300 group-hover:border-[#1E5A96]' : 'border-white/30 group-hover:border-white/60'"
@@ -370,7 +377,7 @@
             @auth
                 <div class="border-t border-white/10 pt-4 mt-3">
                     <div class="flex items-center px-4 mb-3">
-                        <img class="w-10 h-10 rounded-full border-2 border-white/20" src="{{ auth()->user()->avatar_url ?? 'https://ui-avatars.com/api/?name='.urlencode(auth()->user()->name ?? 'U').'&color=7F9CF5&background=EBF4FF' }}" alt="{{ __('pub_theme::header.user.avatar.alt', ['name' => auth()->user()->name ?? __('pub_theme::header.user.default_name.label')]) }}">
+                        <img class="w-10 h-10 rounded-full border-2 border-white/20" src="{{ auth()->user()->avatar_url ?? $avatarFallback(auth()->user()->name) }}" alt="{{ __('pub_theme::header.user.avatar.alt', ['name' => auth()->user()->name ?? __('pub_theme::header.user.default_name.label')]) }}">
                         <div class="ml-3">
                             <p class="text-sm font-semibold text-white">{{ auth()->user()->name ?? '' }}</p>
                             <p class="text-xs text-white/80">{{ auth()->user()->email ?? '' }}</p>

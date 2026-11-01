@@ -41,3 +41,9 @@ Open Graph, canonical o Schema.org.
 
 Nessun asset o selettore `Sixteen` è stato introdotto. La pagina usa la locale
 attiva e le traduzioni `pub_theme::`; i testi SEO provengono da `MetatagData`.
+
+## GitHub (tracciamento)
+
+- Issue: https://github.com/laraxot/base_techplanner_fila5/issues/18 (coordinamento multi-agente del repo base)
+- Discussion: https://github.com/laraxot/base_techplanner_fila5/discussions/54
+- Nota: riusate le due di coordinamento del repo base; nessuna issue o discussion nuova creata da questa passata (decisione dell'utente se aprirne una per modulo/tema owner).

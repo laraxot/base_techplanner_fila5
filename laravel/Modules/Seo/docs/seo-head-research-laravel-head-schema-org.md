@@ -1,5 +1,5 @@
 ---
-title: "Ricerca: laravel/head, SEO 2026 e schema.org per il head di Two"
+title: "Ricerca: laravel/head, SEO 2026 e schema.org per il head"
 type: research
 module: Seo
 status: active
@@ -14,8 +14,8 @@ related:
 
 # Ricerca: laravel/head, SEO 2026 e schema.org
 
-Secondo parere indipendente (sessione 97f16a39, corsia C) per le corsie A (componente `<x-cms::head>` in Cms) e B (politica e dati in Seo)
-dell'hub `docs/stories/seo-head-maximum-schema-org-hreflang.story.md`. Letto dal sorgente di `laravel/head` v0.2.2 e dalle pagine ufficiali
+Secondo parere indipendente per il componente `<x-cms::head>` (Cms) e per la politica e i dati del `<head>` (Seo),
+nato dall'hub `docs/stories/seo-head-maximum-schema-org-hreflang.story.md`. Letto dal sorgente di `laravel/head` v0.2.2 e dalle pagine ufficiali
 indicate; [Inference] segna una deduzione. Non sostituisce l'hub: ne corregge alcune ipotesi (vedi «Correzioni al piano»).
 
 ## 1. Cosa fa davvero `laravel/head` 0.2.2
@@ -78,7 +78,7 @@ Regole di Google: preferire JSON-LD, marcare solo contenuto visibile e veritiero
   omettere finche' non c'e' un file vero. I `sameAs` dai campi social del tenant, solo se non vuoti.
 - **LocalBusiness** (https://developers.google.com/search/docs/appearance/structured-data/local-business): obbligatori `name` e `address`; sottotipo piu' specifico.
   Senza un indirizzo pubblico dal tenant resta `Organization`. `ProfessionalService` e' marcato come deprecato su schema.org (https://schema.org/ProfessionalService);
-  `Dentist` non va: il dentista e' il cliente, non Sottana.
+  `Dentist` non va se il sito e' di un fornitore di servizi agli studi: il dentista e' il cliente, non l'organizzazione che pubblica il sito.
 - **WebSite** (https://developers.google.com/search/docs/appearance/site-names): `name` e `url`, solo in home, nome coerente con `og:site_name` e title.
   `SearchAction`/sitelinks searchbox e' stato rimosso da Google (29-11-2024): non aggiungerlo (https://developers.google.com/search/docs/appearance/structured-data/sitelinks-searchbox).
 - **WebPage, AboutPage, ContactPage, CollectionPage:** nessun rich result, servono a collegare il grafo (`isPartOf`, `about`, `publisher`, `breadcrumb`, `inLanguage`).

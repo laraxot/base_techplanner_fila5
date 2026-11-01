@@ -17,7 +17,7 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 final class BuildRobotsTxtAction
 {
     /**
-     * Segmenti dopo la lingua: pagine Folio riservate di Two e del modulo User.
+     * Segmenti dopo la lingua: pagine Folio riservate dei temi e del modulo User.
      *
      * @var list<string>
      */

@@ -45,7 +45,7 @@ middleware(['guest']);
                 <a href="{{ url('/'.app()->getLocale()) }}"
                    class="inline-flex items-center gap-3 mb-12 group focus:outline-none focus:ring-2 focus:ring-white/50 rounded-lg"
                    aria-label="{{ __('pub_theme::ui.actions.back_to_home.label') }}">
-                    <x-pub_theme::ui.logo class="h-14 w-auto" color="white" />
+                    <x-pub_theme::ui.brand tone="light" class="h-14 w-14" />
                 </a>
 
                 <h1 class="text-4xl xl:text-5xl font-bold leading-tight mb-6">
@@ -54,20 +54,6 @@ middleware(['guest']);
                 <p class="text-lg leading-relaxed max-w-sm" style="color: rgba(255,255,255,0.8);">
                     {{ __('user::auth.login.welcome_message.text') }}
                 </p>
-
-                {{-- Decorative trust badges --}}
-                <div class="mt-16 grid grid-cols-2 gap-6">
-                    <div class="rounded-2xl px-5 py-4"
-                         style="background: rgba(255,255,255,0.08); backdrop-filter: blur(8px);">
-                        <p class="text-2xl font-bold">ISO 9001</p>
-                        <p class="text-sm mt-1" style="color: rgba(255,255,255,0.6);">{{ __('pub_theme::ui.sections.quality_certification.label') }}</p>
-                    </div>
-                    <div class="rounded-2xl px-5 py-4"
-                         style="background: rgba(255,255,255,0.08); backdrop-filter: blur(8px);">
-                        <p class="text-2xl font-bold">GDPR</p>
-                        <p class="text-sm mt-1" style="color: rgba(255,255,255,0.6);">{{ __('pub_theme::ui.sections.regulatory_compliance.label') }}</p>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -81,7 +67,7 @@ middleware(['guest']);
                 <div class="mb-8 flex justify-center lg:hidden">
                     <a href="{{ url('/'.app()->getLocale()) }}"
                        class="focus:outline-none focus:ring-2 rounded-lg" style="outline-color: #1E5A96;">
-                        <x-pub_theme::ui.logo class="h-12 w-auto" />
+                        <x-pub_theme::ui.brand tone="dark" class="h-12 w-12" />
                     </a>
                 </div>
 
@@ -117,6 +103,18 @@ middleware(['guest']);
                                 {{ __('pub_theme::ui.actions.back_to_home.label') }}
                             </a>
                         </div>
+
+                        {{-- Informativa e cookie policy raggiungibili dal punto in cui si inseriscono le credenziali (le pagine auth non hanno footer). --}}
+                        <nav class="mt-2 flex flex-wrap justify-center gap-x-2 text-center" aria-label="{{ __('pub_theme::footer.sections.legal_info.label') }}">
+                            <a href="{{ route('container0.index', ['container0' => 'privacy']) }}"
+                               class="inline-flex min-h-11 items-center px-3 text-sm text-gray-600 underline transition-colors hover:text-gray-900 focus:outline-none focus:ring-2 rounded">
+                                {{ __('pub_theme::footer.legal.privacy.label') }}
+                            </a>
+                            <a href="{{ route('container0.index', ['container0' => 'cookies']) }}"
+                               class="inline-flex min-h-11 items-center px-3 text-sm text-gray-600 underline transition-colors hover:text-gray-900 focus:outline-none focus:ring-2 rounded">
+                                {{ __('pub_theme::footer.sections.cookie_policy.label') }}
+                            </a>
+                        </nav>
 
                     </div>
                 </div>

@@ -7,8 +7,8 @@ created: 2026-10-30
 updated: 2026-10-30
 tags: [ecc, seo, head, component, blade, meta-tags]
 related:
-  - ../../../../docs/stories/seo-head-maximum-schema-org-hreflang.story.md
-  - ../../Cms/docs/seo-head-architecture.md
+  - ../../../../../docs/stories/seo-head-maximum-schema-org-hreflang.story.md
+  - ../../../Cms/docs/seo-head-architecture.md
 ---
 
 # Seo Head component — ECC documentazione
@@ -16,8 +16,8 @@ related:
 > **Superseded.** Questo documento descrive una proposta storica di un
 > componente `Head` appartenente a Seo. Nel contratto attuale Seo mantiene
 > politica e dati SEO, mentre la composizione del document head appartiene a
-> Cms. Consultare la [story canonica](../../../../docs/stories/seo-head-maximum-schema-org-hreflang.story.md)
-> e l'[architettura Cms](../../Cms/docs/seo-head-architecture.md) prima di
+> Cms. Consultare la [story canonica](../../../../../docs/stories/seo-head-maximum-schema-org-hreflang.story.md)
+> e l'[architettura Cms](../../../Cms/docs/seo-head-architecture.md) prima di
 > modificare la documentazione o implementare nuove integrazioni.
 
 Questo documento descrive il componente Blade `Head` del modulo `Seo`, utilizzato per generare l'intera sezione `<head>` con meta tag SEO, dati strutturati schema.org, dark mode, Alpine.js e prevenzione FOUC.
@@ -170,4 +170,4 @@ Per verificare il componente:
 
 - Story BMAD: `docs/stories/seo-head-component.story.md`
 - Componente Cms Head: `laravel/Modules/Cms/app/View/Components/Head.php`
-- Fixcity module story: `docs/stories/fixcity-segnalazione-missing-module.story.md`
+- Story chiusa (`superseded`, premessa errata: questo sito non usa Fixcity): `docs/stories/fixcity-segnalazione-missing-module.story.md`

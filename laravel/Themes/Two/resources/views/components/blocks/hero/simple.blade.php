@@ -7,12 +7,19 @@
     'secondary_cta_url' => '#',
     'image' => '',
     'stats' => [],
+    'compact' => null,
 ])
+
+@php
+    // Variante compatta: una hero senza immagine, senza secondo CTA e senza statistiche e' solo una testata di pagina (privacy, cookie, termini):
+    // a tutta altezza spingeva il testo sotto il fold. `compact` esplicito (true/false) vince sulla deduzione.
+    $compact = $compact ?? (blank($image) && blank($secondary_cta_label) && empty($stats));
+@endphp
 
 {{-- Mobile: min-h (non h-screen + overflow-hidden): con titolo/sottotitolo/2 CTA/stats su 360x640 il contenuto superava l'altezza fissa
      e CTA e stats venivano tagliati senza scroll; dvh perche' 100vh eccede l'area visibile con la barra URL.
      L'header fixed NON si compensa qui: <main> ha gia' pt-[var(--site-header-h)] (layouts/main), quindi l'hero riempie lo schermo SOTTO l'header. --}}
-<section class="relative min-h-[calc(100dvh-var(--site-header-h))] flex items-center justify-center overflow-hidden py-8 sm:py-12">
+<section @class(['relative flex items-center justify-center overflow-hidden', 'py-12 sm:py-20' => $compact, 'hero-fill min-h-[calc(100dvh-var(--site-header-h))] py-8 sm:py-12' => ! $compact])>
     {{-- Background logic --}}
     <div class="absolute inset-0 z-0 bg-gradient-to-br from-brand-blue via-brand-blue/90 to-black">
         <div class="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.05)_1px,transparent_1px)] [background-size:24px_24px] opacity-30"></div>
@@ -23,18 +30,18 @@
     </div>
 
     {{-- Content --}}
-    <div class="container mx-auto px-4 relative z-10">
+    <div @class(['container mx-auto px-4 relative z-10', 'pb-16' => !empty($stats)])>
         <div class="max-w-4xl">
             @if($title)
-                <h1 class="text-3xl min-[480px]:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight break-words">{{ $title }}</h1>
+                <h1 @class(['font-bold text-white mb-4 leading-tight break-words', 'text-3xl md:text-4xl lg:text-5xl' => $compact, 'text-3xl min-[480px]:text-4xl sm:text-5xl md:text-6xl lg:text-7xl sm:mb-6' => ! $compact])>{{ $title }}</h1>
             @endif
 
             @if($subtitle)
-                <p class="text-lg sm:text-xl md:text-2xl text-gray-200 mb-6 sm:mb-8 leading-relaxed max-w-2xl">{{ $subtitle }}</p>
+                <p @class(['text-gray-200 mb-6 leading-relaxed max-w-2xl', 'text-lg md:text-xl' => $compact, 'text-lg sm:text-xl md:text-2xl sm:mb-8' => ! $compact])>{{ $subtitle }}</p>
             @endif
 
             {{-- CTA Buttons --}}
-            <div class="flex flex-col sm:flex-row gap-4">
+            <div class="hero-ctas flex flex-col sm:flex-row gap-4">
                 @if($primary_cta_label)
                     <a href="{{ $primary_cta_url }}"
                        class="inline-flex items-center justify-center font-semibold rounded-lg bg-brand-green hover:bg-brand-green-dark text-white text-lg px-8 py-4 group shadow-xl transition-all hover:-translate-y-1">

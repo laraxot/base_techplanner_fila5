@@ -34,6 +34,8 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|Ticket whereTitle($value)
  * @method static Builder<static>|Ticket whereCategory($value)
  * @method static Builder<static>|Ticket whereStatus($value)
+ * @method static string getStatusLabel()
+ * @method static string getPriorityLabel()
  */
 class Ticket extends BaseModel
 {
@@ -47,4 +49,56 @@ class Ticket extends BaseModel
         'due_date',
         'assignee_id',
     ];
+
+    /**
+     * Get the human-readable status label.
+     *
+     * @return string
+     */
+    public function getStatusLabelAttribute(): string
+    {
+        return match ($this->status) {
+            'open' => 'Aperto',
+            'in_progress' => 'In corso',
+            'closed' => 'Chiuso',
+            'pending' => 'In attesa',
+            'rejected' => 'Rifiutato',
+            default => ucfirst($this->status),
+        };
+    }
+
+    /**
+     * Get the human-readable priority label.
+     *
+     * @return string
+     */
+    public function getPriorityLabelAttribute(): string
+    {
+        return match ($this->priority) {
+            'low' => 'Bassa',
+            'medium' => 'Media',
+            'high' => 'Alta',
+            default => ucfirst($this->priority),
+        };
+    }
+
+    /**
+     * Get the gemello method for status label.
+     *
+     * @return string
+     */
+    public function getStatusLabel(): string
+    {
+        return $this->status_label ?? $this->getStatusLabelAttribute();
+    }
+
+    /**
+     * Get the gemello method for priority label.
+     *
+     * @return string
+     */
+    public function getPriorityLabel(): string
+    {
+        return $this->priority_label ?? $this->getPriorityLabelAttribute();
+    }
 }

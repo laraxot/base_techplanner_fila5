@@ -11,10 +11,10 @@
                     <a href="{{ route('home') }}" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                         {{ __('pub_theme::navigation.home') }}
                     </a>
-                    <a href="{{ route('container0', ['container0' => 'about']) }}" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                    <a href="{{ route('container0.index', ['container0' => 'about']) }}" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                         {{ __('pub_theme::navigation.about') }}
                     </a>
-                    <a href="{{ route('container0', ['container0' => 'contatti']) }}" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                    <a href="{{ route('container0.index', ['container0' => 'contacts']) }}" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                         {{ __('pub_theme::navigation.contact') }}
                     </a>
                 </div>
@@ -54,10 +54,10 @@
             <a href="{{ route('home') }}" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
                 {{ __('pub_theme::navigation.home') }}
             </a>
-            <a href="{{ route('container0', ['container0' => 'about']) }}" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+            <a href="{{ route('container0.index', ['container0' => 'about']) }}" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
                 {{ __('pub_theme::navigation.about') }}
             </a>
-            <a href="{{ route('container0', ['container0' => 'contatti']) }}" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+            <a href="{{ route('container0.index', ['container0' => 'contacts']) }}" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
                 {{ __('pub_theme::navigation.contact') }}
             </a>
         </div>

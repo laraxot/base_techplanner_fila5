@@ -47,6 +47,11 @@ return [
         'submit' => [
             'label' => 'Registrieren',
         ],
+        'errors' => [
+            'summary' => [
+                'title' => 'Bitte prüfen Sie die folgenden Felder',
+            ],
+        ],
     ],
     'reset' => [
         'title' => [

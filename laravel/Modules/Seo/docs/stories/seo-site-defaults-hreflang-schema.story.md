@@ -10,7 +10,7 @@ tags: [seo, laravel-head, hreflang, robots, schema-org, defaults, queueable-acti
 qmd: "Seo Head::defaults hreflang alternates robots noindex schema Organization WebSite BreadcrumbList laravel/head actions Cms dipendenza circolare"
 related:
   - ../../../../../docs/stories/seo-head-maximum-schema-org-hreflang.story.md
-  - ../../../../Cms/docs/stories/seo-head-component.story.md
+  - ../../../Cms/docs/stories/seo-head-component.story.md
   - ./inbound-article-event-schema.story.md
   - ../wiki/concepts/metatag-data-contract.md
 ---
@@ -97,3 +97,9 @@ mancanti (hreflang, schema, `Head::title` che non cancella le altre voci).
 ## Secondo giro (2026-10-30)
 
 `BuildSitemapAction` non ha piu' una propria costante di pagine escluse: chiama `Cms\Actions\Head\ResolveRobotsPolicyAction::isPageIndexable($slug, $middleware)`, la stessa regola del `<head>`. Una pagina e' in sitemap se la sua lingua e' scritta (titolo **e** contenuto), non ha middleware `auth` e non e' una pagina di prova/riservata. Effetto misurato: 36 → 32 URL (fuori le due pagine di blog e due servizi con titolo inglese ma corpo italiano, ora `noindex`). Il test `tests/Unit/Actions/Robots/RobotsSegmentsMatchHeadPolicyTest.php` garantisce che ogni segmento chiuso da `robots.txt` (`BuildRobotsTxtAction::PRIVATE_SEGMENTS`) sia anche `noindex` nel `<head>`.
+
+## GitHub (tracciamento)
+
+- Issue: https://github.com/laraxot/base_techplanner_fila5/issues/18 (coordinamento multi-agente del repo base)
+- Discussion: https://github.com/laraxot/base_techplanner_fila5/discussions/54
+- Nota: riusate le due di coordinamento del repo base; nessuna issue o discussion nuova creata da questa passata (decisione dell'utente se aprirne una per modulo/tema owner).

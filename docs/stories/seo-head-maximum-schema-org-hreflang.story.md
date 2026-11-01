@@ -273,3 +273,53 @@ Lighthouse mobile (dev, con debugbar): SEO 92 su 4 pagine; l'unica regola fallit
 6. **Host attendibili in produzione** e `robots.txt` (`Disallow` + `noindex` si annullano): dettagli nella nota riservata.
 7. **Prestazioni** (fuori dal `<head>`, storia a parte): CSS del tema pesante (~970 KB, in gran parte inutilizzato), immagine hero di alcuni MB, LCP alto in dev.
 8. Difetti preesistenti non del `<head>` trovati durante l'audit: nota riservata.
+
+## Terzo giro «piu a fondo» (corsia C, sessione 97f16a39, 2026-10-31)
+
+Scansione dei link interni e delle risorse di tutte le pagine della sitemap (32 URL, solo GET su Two): 75 link unici, 53 risorse; nessuna risorsa non 2xx, nessuna `<img>` senza `alt`, nessun `target="_blank"` senza `noopener`.
+
+**Corretti (dati dei contenuti, non codice).** Il pulsante principale dell'intestazione in inglese e in tedesco puntava a pagine inesistenti (`/en/contact`, `/de/kontakt`, 404 su ogni pagina), come altri sei link in `services.json` e quattro `/contacts` senza lingua in `about.json` e `faqs.json`. Ora puntano a `/en/contacts`, `/de/contacts`, `/it/contacts`: le pagine che il menu della stessa lingua gia' usa. Corretti i JSON del tenant letto dal sito (`config/local/techplanner/database/content`) e la copia identica in `Modules/TechPlanner/config/database/content`, che restano uguali; corretto anche `Themes/Two/docs/header-multilingual-implementation.md`, che dava gli URL sbagliati come previsti. Dopo la correzione i link interni non 200 sono 1.
+
+**Aperto, contenuti da fornire (non inventati):**
+- La card inglese del blog «Safety in Dental Practices: Complete Guide 2026» punta a un articolo che non esiste: scrivere l'articolo o togliere la card.
+- Lingua `es`: l'intestazione ha blocchi solo per `it`, `en`, `de`, quindi `/es` mostra menu e pulsanti italiani verso `/it/...`; `/de` ha un link a `/it/contatti` nel corpo.
+- Immagine esterna (`images.unsplash.com`) negli articoli: meglio una copia locale.
+
+**Verificato senza difetti:** canonical senza query string, slash finale e maiuscole nella lingua con 301 all'URL canonico, 404 reali con `noindex, follow`, description ora per pagina (la misura precedente «tutte uguali» non vale piu'), sitemap coerente con la politica del `<head>` (36 -> 32 URL: tolte da sola quattro pagine inglesi senza testo inglese).
+
+Dettagli e misure: audit del modulo TechPlanner in `laravel/Modules/TechPlanner/docs/wiki/audits/seo-head-deep-verification.md` (sezioni 2 e 6).
+
+## Terzo giro «piu a fondo» (sessione 56da8100, 2026-10-31)
+
+Metodo: sonde GET sulle varianti dello stesso URL (slash finale, query, maiuscole, doppio slash, segmenti-punto, percent-encoding, `index.php` nel percorso) e crawl di tutti i link interni delle 32 pagine in sitemap (stato, redirect, `noindex`, fuori sitemap, orfane, `alt`, `h1`, `rel`).
+
+- **Una sola forma del percorso**: nuova `Cms\Actions\Head\CollapsePathSegmentsAction` (senza segmenti vuoti né punto, `..` risale). La usano la policy robots (`pathSegments`, quindi anche `ResolveCmsPageAction`) e il canonical: due URL che il router serve come la stessa pagina hanno la stessa decisione di indicizzazione e lo stesso canonical. Prima la policy guardava il solo primo segmento *grezzo*.
+- **Canonical, `og:url` e `@id` dello schema nascono da una sola radice** (`Head::siteRoot()`): senza `index.php` (come `asset()`), https in produzione. Prima `rootUrl`/`homeUrl` non seguivano l'upgrade a https del canonical.
+- **hreflang solo dalla forma canonica**: le alternative linguistiche derivano dall'URL richiesto, quindi su una variante non canonica le dichiara solo l'URL pulito a cui punta il canonical.
+- **Crawl dei link interni**: 0 pagine orfane, 1 `h1` per pagina, nessuna immagine senza `alt`, nessun `target=_blank` senza `noopener`, nessun link verso pagine fuori sitemap (le alias sono in sitemap, vedi «Aperto»). Trovati e chiusi:
+  - blocco `cta.simple` di 4 pagine (articolo del blog e 3 servizi): il contenuto usava `subtitle`/`cta_label`/`cta_url`, la vista legge `description`/`primary_cta_label`/`primary_cta_url` (come `chi-siamo`). Risultato: pulsante verde senza testo e `href="#"`, sottotitolo vuoto, nessun link interno ai contatti. Allineati i dati (8 file JSON: modulo TechPlanner e copia del tenant) e la vista Two omette ora pulsante e sottotitolo se non hanno un valore reale.
+  - il link dell'intestazione a `/en/contact` (404, 14 pagine) e un `/contacts` senza lingua (404) li sta correggendo un'altra sessione (task `cta-links-404`): non toccati qui.
+- **Misure**: Pest isolato 77 test / 133 asserzioni (14 nuovi); `phpstan analyse Modules/Cms/app Modules/Seo/app` 0 errori; varianti di URL e CTA verificate con GET sul server.
+
+Aperto (oltre al secondo giro): la lista dei difetti di contenuto con URL e file e' nella nota riservata; il contenuto inglese del blog e' da decidere con chi scrive i testi.
+
+**Esito finale del terzo giro:** `head-audit` su 8 pagine × 390/1280 × chiaro/scuro = 32 misure: **0 controlli falliti** (prima `og:image` mancante). Gli asset li ha aggiunti un'altra sessione come file **non tracciati** (`public/themes/Two/images/social-share.jpg` 1200×630, `site.webmanifest`, `apple-touch-icon.png` e le copie in `laravel/Themes/Two/resources/` e `resources/`): vanno rivisti e versionati dall'utente. Il resto di «Aperto, per l'utente» del secondo giro non cambia, tolti l'immagine social e il manifest.
+
+## Quarto giro: re-audit del sito su 12 aspetti (sessione 56da8100, 2026-11-01)
+
+Metodo: un agente per aspetto (accessibilita', responsive/visuale, markup e dati strutturati, codice del front office, resilienza, regressioni sul baseline, i18n e link, documentazione, sicurezza, produzione, dipendenze, privacy), solo GET su un server di sviluppo. Sintesi pubblica e piano: `laravel/Modules/TechPlanner/docs/wiki/audits/site-reaudit.md`; il dettaglio resta nei rapporti riservati.
+
+- **Una lingua e' «scritta»** solo con titolo e almeno un blocco non `hero`: cinque pagine inglesi vuote fuori dalla sitemap (32 a 27), `noindex`, nessun hreflang. Test isolati 79, PHPStan 0.
+- **Chiavi JSON ignorate dalla vista** (home, banner dei servizi) corrette lato JSON; guardia `PageBlockContractTest` (debito noto, solo in calo). Storia: `laravel/Themes/Two/docs/stories/blocks-json-contract-and-share.story.md`.
+- **Condivisione degli articoli**: blocco `share` in Two sul componente `x-seo::social-share`, 4 lingue, bersagli a 44 px, axe 0.
+- **Modo scuro del sistema e contrasti** (`data-theme="light"`, eyebrow, hero, banner, login, link di recupero, mappa dei contatti): storia `laravel/Themes/Two/docs/stories/a11y-color-scheme-and-contrast.story.md`.
+- **Fixcity**: la storia che chiedeva di «riparare» il modulo e' chiusa `superseded` (premessa errata: questo sito non lo usa).
+- **Misure**: `phpstan analyse Modules` 0 errori; compilazione Blade 11 viste senza errori; 22 pagine pubbliche 200.
+
+Aperto per il titolare: invio di form contatti e newsletter (destinazione, conservazione, informativa), e-mail unica, testi cookie e privacy, alias duplicati, de/es, plugin tipografico (ricompilazione degli asset), azioni su esposizioni e credenziali nei rapporti riservati. Prestazioni (Core Web Vitals) da misurare su server tranquillo.
+
+## GitHub (tracciamento)
+
+- Issue: https://github.com/laraxot/base_techplanner_fila5/issues/18 (coordinamento multi-agente del repo base)
+- Discussion: https://github.com/laraxot/base_techplanner_fila5/discussions/54
+- Nota: riusate le due di coordinamento del repo base; nessuna issue o discussion nuova creata da questa passata (decisione dell'utente se aprirne una per modulo/tema owner).

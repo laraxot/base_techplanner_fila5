@@ -39,5 +39,8 @@ return [
             'icon' => 'authenticate',
             'tooltip' => 'authenticate',
         ],
+        'request' => [
+            'tooltip' => 'request',
+        ],
     ],
 ];

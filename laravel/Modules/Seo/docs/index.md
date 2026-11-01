@@ -28,6 +28,8 @@ Related entry points: [README.md](./README.md) (module overview), [docs/wiki/ind
 
 Il codice del modulo e' piccolo: facade `Metatag` con tre Actions in `app/Actions/Metatag/`, link di condivisione social (`GenerateSocialShareLinksAction`, widget, componente Blade). Non ci sono Model, migration, rotte, comandi Artisan, Resource Filament ne' sitemap, e nessun altro modulo importa `Modules\Seo`. Prove e quick start in [README.md](./README.md). I documenti di prodotto (PRD, roadmap, strategy, sprint, launch, research, `task-*`, `seo-optimization-*`) descrivono funzioni previste (sitemap, Schema.org, analisi AI, report PDF) che oggi non esistono: vanno letti come piani, non come stato.
 
+**Aggiornamento 2026-11-01:** il paragrafo sopra descrive lo stato del 2026-10-14. Oggi il modulo ha anche `GET /sitemap.xml` (`seo.sitemap`) e `GET /robots.txt` (`seo.robots`) in `routes/web.php`, `Actions/Sitemap/BuildSitemapAction`, `Actions/Robots/BuildRobotsTxtAction` e `Actions/Url/NormalizeLocalizedPathAction`; `SeoServiceProvider` definisce `$module_dir` e `$module_ns`. Seo importa l'Action di Cms `ResolveRobotsPolicyAction` (non il contrario). Il componente `<head>` sta in Cms. Cause e correzioni: [story dcp-274](./stories/dcp-274-sitemap-completeness-verification.story.md).
+
 Nota di contratto: `bmad-output/docs-architecture/module-theme-docs-contract.md` indica `00-INDEX.md` come indice operativo, ma in Seo la scelta del 2026-10-08 (pilota) e' `index.md`, con `00-INDEX.md`, `00-index.md` e `INDEX.md` marcati `superseded`. Decisione aperta: vedi la story [2026-10-14-docs-seo-studio](./stories/docs-seo-studio.story.md).
 
 | Directory | Ruolo | Note |

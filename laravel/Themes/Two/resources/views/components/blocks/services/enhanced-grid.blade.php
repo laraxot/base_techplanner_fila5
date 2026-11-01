@@ -308,11 +308,8 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentCategory = '';
     let currentSearch = '';
     
-    // Initialize services data
-    @php
-    $servicesJson = json_encode($services);
-    ?>
-    services = {!! $servicesJson !!};
+    // Initialize services data (escaped for a script context: CMS text cannot close the tag)
+    services = @js($services);
     filteredServices = [...services];
     
     // Search functionality

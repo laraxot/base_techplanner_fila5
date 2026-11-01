@@ -136,7 +136,7 @@
             </div>
 
             {{-- Map Preview (Google Maps - preciso per indirizzi italiani) --}}
-            <div class="bg-gray-200 rounded-lg overflow-hidden h-96 flex items-center justify-center">
+            <div class="bg-gray-200 rounded-lg overflow-hidden">
                 @include('pub_theme::components.blocks.map.static-clickable', [
                     'title' => __('pub_theme::blocks.sections.map.title'),
                     'address' => $mapAddress,

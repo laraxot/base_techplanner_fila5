@@ -4,7 +4,7 @@
     'description' => '',
     'cta_primary' => ['label' => __('pub_theme::blocks.cta.banner.primary'), 'url' => '#'],
     'cta_secondary' => ['label' => __('pub_theme::blocks.cta.banner.secondary'), 'url' => '#'],
-    'background_gradient' => 'from-primary to-secondary',
+    'background_gradient' => 'from-[#1E5A96] via-[#164575] to-[#0f2b46]',
     'text_color' => 'text-primary-content'
 ])
 

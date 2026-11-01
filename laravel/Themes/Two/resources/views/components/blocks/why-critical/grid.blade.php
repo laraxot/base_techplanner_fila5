@@ -13,7 +13,7 @@
 <section class="py-20 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white scroll-mt-20">
     <div class="container mx-auto px-4">
         <div class="text-center mb-16">
-            <p class="text-sm font-semibold uppercase tracking-widest text-brand-green mb-3">{{ $pre_title }}</p>
+            <p class="text-sm font-semibold uppercase tracking-widest text-green-400 mb-3">{{ $pre_title }}</p>
             <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">{{ $title }}</h2>
             <p class="text-xl text-gray-300 max-w-3xl mx-auto">{{ $subtitle }}</p>
         </div>

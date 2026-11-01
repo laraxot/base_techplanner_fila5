@@ -12,6 +12,9 @@ return [
             'required_note' => 'Mit * gekennzeichnete Felder sind Pflichtfelder.',
             'submit_aria' => 'Kontaktformular absenden',
             'privacy_help' => 'Zum Absenden des Formulars müssen Sie die Datenschutzerklärung akzeptieren',
+            'privacy_link' => [
+                'label' => 'Datenschutzerklärung lesen',
+            ],
             'fields' => [
                 'name' => [
                     'label' => 'Vor- und Nachname',
@@ -21,10 +24,12 @@ return [
                 'email' => [
                     'label' => 'E-Mail',
                     'help' => 'Geben Sie Ihre E-Mail-Adresse ein',
+                    'placeholder' => 'name@beispiel.de',
                 ],
                 'phone' => [
                     'label' => 'Telefon',
                     'help' => 'Geben Sie Ihre Telefonnummer ein',
+                    'placeholder' => '+39 000 000 0000',
                 ],
                 'studio' => [
                     'label' => 'Name der Praxis',
@@ -41,6 +46,24 @@ return [
                     'placeholder' => 'Beschreiben Sie Ihr Anliegen...',
                     'help' => 'Beschreiben Sie Ihre Beratungsanfrage',
                 ],
+            ],
+            'sent' => [
+                'message' => 'Vielen Dank, Ihre Nachricht wurde gesendet.',
+            ],
+            'received' => [
+                'message' => 'Wir haben Ihre Nachricht gespeichert, konnten sie aber nicht per E-Mail weiterleiten; eine Antwort kann daher länger dauern. Wenn es dringend ist, rufen Sie uns an oder schreiben Sie uns über die Kontaktdaten auf dieser Seite.',
+            ],
+            'failed' => [
+                'message' => 'Ihre Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es später erneut oder kontaktieren Sie uns über die Kontaktdaten auf dieser Seite.',
+            ],
+            'errors_summary' => [
+                'title' => 'Bitte prüfen Sie die Formularfelder:',
+            ],
+            'error_prefix' => [
+                'label' => 'Fehler:',
+            ],
+            'honeypot' => [
+                'label' => 'Dieses Feld leer lassen',
             ],
         ],
         'info' => [
@@ -116,6 +139,11 @@ return [
         'banner' => [
             'primary' => 'Loslegen',
             'secondary' => 'Entdecken',
+        ],
+    ],
+    'share' => [
+        'links' => [
+            'title' => 'Diesen Artikel teilen',
         ],
     ],
     'blog' => [

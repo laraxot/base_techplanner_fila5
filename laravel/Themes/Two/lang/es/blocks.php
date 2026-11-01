@@ -12,6 +12,9 @@ return [
             'required_note' => 'Los campos marcados con * son obligatorios.',
             'submit_aria' => 'Enviar el formulario de contacto',
             'privacy_help' => 'Debes aceptar la política de privacidad para enviar el formulario',
+            'privacy_link' => [
+                'label' => 'Lee la información sobre privacidad',
+            ],
             'fields' => [
                 'name' => [
                     'label' => 'Nombre y apellidos',
@@ -21,10 +24,12 @@ return [
                 'email' => [
                     'label' => 'Correo electrónico',
                     'help' => 'Introduce tu dirección de correo electrónico',
+                    'placeholder' => 'nombre@ejemplo.com',
                 ],
                 'phone' => [
                     'label' => 'Teléfono',
                     'help' => 'Introduce tu número de teléfono',
+                    'placeholder' => '+39 000 000 0000',
                 ],
                 'studio' => [
                     'label' => 'Nombre de la consulta',
@@ -41,6 +46,24 @@ return [
                     'placeholder' => 'Describe tu solicitud...',
                     'help' => 'Describe tu solicitud de asesoramiento',
                 ],
+            ],
+            'sent' => [
+                'message' => 'Gracias, tu mensaje ha sido enviado.',
+            ],
+            'received' => [
+                'message' => 'Hemos registrado tu mensaje, pero no hemos podido reenviarlo por correo electrónico, por lo que la respuesta puede tardar más. Si es urgente, llámanos o escríbenos con los datos de contacto de esta página.',
+            ],
+            'failed' => [
+                'message' => 'No se ha podido enviar el mensaje. Inténtalo de nuevo más tarde o contáctanos con los datos de contacto de esta página.',
+            ],
+            'errors_summary' => [
+                'title' => 'Revisa los campos del formulario:',
+            ],
+            'error_prefix' => [
+                'label' => 'Error:',
+            ],
+            'honeypot' => [
+                'label' => 'Deja este campo vacío',
             ],
         ],
         'info' => [
@@ -116,6 +139,11 @@ return [
         'banner' => [
             'primary' => 'Empieza',
             'secondary' => 'Descubre',
+        ],
+    ],
+    'share' => [
+        'links' => [
+            'title' => 'Compartir este artículo',
         ],
     ],
     'blog' => [
