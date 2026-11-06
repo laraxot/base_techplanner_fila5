@@ -124,6 +124,8 @@ return [
         ],
         'cancel' => [
             'tooltip' => 'cancel',
+            'label' => 'cancel',
+            'icon' => 'cancel',
         ],
         'importDevice' => [
             'label' => 'importDevice',
@@ -179,6 +181,11 @@ return [
             'label' => 'resetColumnManager',
             'icon' => 'resetColumnManager',
             'tooltip' => 'resetColumnManager',
+        ],
+        'createAnother' => [
+            'label' => 'createAnother',
+            'icon' => 'createAnother',
+            'tooltip' => 'createAnother',
         ],
     ],
     'messages' => [
